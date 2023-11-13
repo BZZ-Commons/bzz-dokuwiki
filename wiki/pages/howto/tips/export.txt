@@ -1,0 +1,36 @@
+====== Saubere Grafiken und Tabellen ======
+Bei den meisten Aufgaben müssen Sie eine Grafik- oder PDF-Datei abgeben.
+Zu oft werde dabei unlesbare oder schlecht formatierte Lösungen hochgeladen.
+Besonders bei Leistungsbeurteilungen verlieren Sie so schnell die eine oder andere halbe Note.
+
+<WRAP tip>Hässliche Lösungen sind eines Profis unwürdig!</WRAP>
+
+Hier einige Tipps für bessere Resultate (und Noten):
+===== Excel => PDF =====
+In Excel kann man ein Arbeitsblatt über ''Datei'' => ''Exportieren'' als PDF-Datei speichern.
+Passt der Inhalt nicht auf eine Seite, wird das Blatt auf mehrere A4-Seiten umgebrochen.
+**Das führt meistens zu einer miserablen Darstellung**.
+
+==== Seitenumbrüche selber definieren ====
+Legen Sie explizit die Seitenumbrüche fest [[https://support.microsoft.com/de-de/office/einf%C3%BCgen-verschieben-oder-l%C3%B6schen-von-seitenumbr%C3%BCchen-auf-einem-arbeitsblatt-ad3dc726-beec-4a4c-861f-ed640612bdc2]].
+
+==== Drucken statt Exportieren ====
+Viel einfacher, flexibler und meistens besser ist es, das Arbeitsblatt als PDF-Datei zu **drucken**.
+Öffnen Sie das Menu zum Drucken und wählen Sie ''Microsoft Print to PDF'' als Drucker.
+Nun können Sie über das Seitenformat und die Skalierung die Darstellung konfigurieren.
+
+{{:howto:tips:excelpdf.png?400|}}
+
+===== Visio => PNG =====
+In Visio lässt sich ein Diagramm sehr einfach in eine Grafikdatei exportieren:
+''Datei'' => ''Exportieren'' => ''Dateityp ändern''
+
+Wählen Sie als Dateityp ''PNG'' aus und legen Sie den Speicherpfad und Dateinamen fest.
+Im letzten Schritt können Sie die Auflösung und Grösse festlegen.
+Wählen Sie bei Auflösung **Drucker** an.
+
+{{:howto:tips:visiopng.png?600|}}
+
+===== Screenshots =====
+Egal ob Sie ein spezielles Tool oder einfach die PrintScreen-Taste Ihrer Tastatur verwenden:
+Screenshots sind das letzte Mittel, falls keine andere Möglichkeit existiert.

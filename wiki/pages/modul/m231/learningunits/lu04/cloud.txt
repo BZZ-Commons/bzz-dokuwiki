@@ -1,0 +1,47 @@
+====== LU04g - Cloudspeicher ======
+<WRAP center round info 60%>
+Beim Cloudspeicher werden meine Daten auf "irgendeinem" Computer im Internet gespeichert.
+Dabei habe ich in der Regel keine Kontrolle darüber, wo meine Daten gespeichert sind.
+</WRAP>
+
+===== Public Cloud: OneDrive, iCloud, GoogleDrive, Dropbox, etc. =====
+
+Das Speichern von Daten in einer kommerziellen Cloud ist günstig, einfach einzurichten und bequem in der Verwendung.
+Wenn ich zusätzlich ein Programm zum Synchronisieren der Daten einsetze, werden meine Daten in Echtzeit zwischen meinem PC und der Cloud synchronisiert.
+Auf den ersten Blick scheint ein Cloudspeicher ein idealer Ersatz für mein Backup zu sein.
+
+Es gibt aber einige Aspekte, weshalb Cloud nicht gleich Backup ist.
+Als fiktives Beispiel nehme ich an, dass ich beim Anbieter //OneCloudDrive// ein Konto habe.
+Meine Daten werden automatisch synchronisiert.
+
+==== Ort der Datenspeicherung ====
+Als Privatperson habe ich keinerlei Kontrolle darüber, wo meine Daten gespeichert werden.
+Das kann ein Datencenter in Europa, den USA, China oder sonstwo auf der Welt sein.
+Sobald mein Cloudspeicher auch Personendaten (z.B. Bilder) enthält, ist aber ein Export in andere Länder problematisch.
+
+==== Versionierung ====
+Ich muss mich informieren, ob //OneCloudDrive// nur die aktuellste Version meiner Dateien speichert oder ob es auch Backups von früheren Versionen gibt.
+Besonders bei Dateien die sich häufig ändern, will ich mehrere ältere Versionen sichern.
+Das betrifft z.B. Sourcecode an dem ich arbeite, Datenbanken, ... 
+
+==== Zugriff ====
+Welche Garantien habe ich, dass ich im Bedarfsfall wirklich auf die Daten zugreifen kann?
+Vielleicht geht der Anbieter Konkurs und meine vermeintliche Datensicherung ist plötzlich verschwunden.
+
+Übrigens: Wenn Sie Ihre Ausbildung beenden oder abbrechen, verlieren Sie den Zugriff auf alle Daten, die Sie auf OneDrive mit Ihrem BZZ-Konto gespeichert haben.
+
+<WRAP center round info 60%>
+Ein öffentlicher Cloudspeicher erleichtert das Arbeiten an mehreren Geräten und den Austausch von Daten.
+Er ersetzt aber nicht das Backup meiner Daten.
+</WRAP>
+
+===== Private Cloud =====
+
+Ein privater Cloudspeicher wird von einer Organisation oder Firma für den eigenen Gebrauch betrieben.
+Ein solcher Speicher bietet die volle Kontrolle über alle Aspekte und kann als Teil einer Backupstrategie genutzt werden.
+Allerdings ist die Anschaffung der Hardware und der Betrieb sehr aufwändig.
+
+
+----
+{{tag>m231-AnG}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

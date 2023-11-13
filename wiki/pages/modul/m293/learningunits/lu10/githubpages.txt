@@ -1,0 +1,41 @@
+====== LU10c - GitHub Pages ======
+<WRAP center round info 60%>
+Mit GitHub Pages können wir eine Webseite direkt aus unserem GitHub Repository veröffentlichen.
+</WRAP>
+
+===== Einsatzmöglichkeiten =====
+GitHub Pages eignet sich zur Veröffentlichung einer Homepage mit der Beschreibung eines Projekts, dass wir auf GitHub ablegen.
+Dadurch benötigen wir keinen separaten Webspace für die Projektbeschreibung.
+
+Eine andere Einsatzmöglichkeit ist GitHub Pages als Live Test Umgebung zu verwenden.
+Dadurch können wir nach jedem Push unsere Webseiten auf einem Webserver testen.
+
+===== Einrichtung =====
+Sie können GitHub Pages direkt in Ihrem Repository auf GitHub aktivieren.
+
+Im Menu "Settings" => "Pages" geben Sie an, welche Datei(en) für GitHub Pages verwendet werden sollen.
+
+{{:modul:m293:learningunits:lu10:ghpages01.png?400|}}
+
+Die hier gezeigten Einstellungen funktionieren für die meisten einfacheren Projekte:
+
+  * Source: "Deploy from branch"
+  * Branch:  "main" / "/ (root)"
+
+Nach einem Klick auf [Save] wird unsere Webseite erstellt und veröffentlicht.
+Wenn Sie nach einem Moment erneut die Einstellungen "Pages" öffnen, sehen Sie die URL Ihrer Webseite.
+
+Diese URL lautet: **//GITHUBUSER//**.github.io/**//REPOSITORY//** (wobei natürlich GITHUBUSER und REPOSITORY variabel sind).
+
+===== Änderungen veröffentlichen =====
+Nachdem Sie GitHub Pages eingerichtet haben, wird die Webseite bei jedem Push aktualisiert.
+Dazu läuft ein Workflow ''pages build and deployment" ab.
+
+{{:modul:m293:learningunits:lu10:ghpages02.png?400|}}
+
+Es kann 1-2 Minuten dauern, bis der Workflow fertig ist.
+Prüfen Sie den Status im Reiter "Actions".
+
+----
+{{tag>m293-LU10 m293-I1E}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Kevin Maurizi, Marcel Suter

@@ -1,0 +1,20 @@
+==== Aufgabe 1 - Objekte kommunizieren====
+=== Ziel ===
+Sie können durch Methodenaufrufe Daten zwischen Objekten austauschen.
+=== Auftrag === 
+  - Akzeptieren Sie das Assignment im GitHub Classroom und klonen Sie Ihr Repository in die Entwicklungsumgebung.
+  - Führen Sie die ''main''-Routine aus und überlegen Sie sich, wie die Kommunikation zwischen den Objekten abläuft.
+  - Ändern Sie die Kommunikation, in dem Sie in ''main'' eigene Objekte erstellen und einen Dialog kreieren. Wichtig dabei: den Namen der Objekte müssen Sie immer über den getter ''name'' lesen.
+
+=== Dauer ===
+10 Minuten
+
+=== Abgabe ===
+Führen Sie einen Push Ihres Repositories durch.
+Zeigen Sie Ihrer Lehrperson den von Ihnen erstellten Dialog und erklären Sie, wie die Kommunikation genau abläuft.
+ 
+
+
+----
+<nodisp>GitHub Repo: https://github.com/templates-python/M320_LU04_A1_MiniChat.git</nodisp>
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) René Probst

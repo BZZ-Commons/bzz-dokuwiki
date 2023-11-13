@@ -1,0 +1,17 @@
+====== LU08a - Einleitung ======
+
+Als Einleitung stellen wir uns die Frage, was ein Netzwerkprotokoll ist? Ein Netzwerkprotokoll ist eine genormte Regel, welche die Kommunikation zwischen den Arbeitsstationen bzw. Systemen in einem Netzwerk ermöglicht. Eine solche Regel enthält alle Informationen, die zwei Systemen bekannt sein müssen, um miteinander Daten austauschen zu können. Folgende Informationen bzw. verbindliche Vorgaben werden in einem Netzwerkprotokoll definiert:
+  * Struktur eines Datenpakets: z. B. minimale und maximale Länge eines Datenpakets
+  * Ablaufsteuerung: z. B. wie wird eine Verbindung aufgebaut, wie wird diese wieder beendet?
+  * Verwendung bestimmter Statusinformationen: z. B. was bedeutet das «SYN-Flag» beim TCP-Protokoll?
+  * Vorgehen bei Ausnahmesituationen: z. B. was ist zu machen, wenn ein Fehler auftritt, bei einem Verbindungsunterbruch?
+
+Es existiert eine Vielzahl verschiedener Netzwerkprotokolle, da die Kommunikation in heutigen Datennetzwerken ein sehr komplexer Vorgang ist. Bei der Datenübertragung zwischen zwei oder mehreren Stationen kommen immer mehrere Protokolle zum Einsatz. Um das Zusammenspiel, also die Interaktion zwischen den einzelnen Protokollen, besser zu verstehen, verwendet man das OSI-Referenzmodell, auch OSI-Modell genannt. Das OSI-Modell unterteilt die Datenkommunikation in 7 Schichten (Layers).
+
+
+----
+
+{{tag>m117}}
+
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Andre Probst
+

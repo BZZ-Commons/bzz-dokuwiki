@@ -1,0 +1,145 @@
+====== Lösungsvorschlag: Hallo Welt ======
+
+===== Variante 1: 5 Befehle =====
+<code java>
+ 
+/**
+ * Write the text "Hallo Welt! a number of times
+ *
+ * @author Marcel Suter
+ * @version 1.0
+ * @since 2018-06-09
+ */
+
+public class Universe {
+
+    /**
+     * create object and run
+     *
+     * @param args command line arguments
+     */
+    public static void main (String[] args) {
+        Universe program = new Universe ();
+        program.run ();
+    }
+
+    /**
+     * print the text 5 times
+     */
+    private void run() {
+        // ------ start of processing ------
+        System.out.println ("Hallo Welt!");
+        System.out.println ("Hallo Welt!");
+        System.out.println ("Hallo Welt!");
+        System.out.println ("Hallo Welt!");
+        System.out.println ("Hallo Welt!");
+    }
+}
+</code>
+
+===== Variante 2: Iteration =====
+Etwas eleganter ist es, eine Schleife (Iteration) zu verwenden.
+Dieses Konstrukt werden Sie später im Detail kennen lernen.
+Trotzdem schadet ein kurzer Blick nie.
+
+In diesem Sourcecode finden Sie drei verschiedene Varianten zur Ausgabe des Textes:
+  * Als Sequenz fünfmal hintereinander codiert
+  * while-Schleife: Eine klassische Iteration
+  * for-Schleife: Eine alternative Möglichkeit für Iterationen
+
+Ausserdem gibt es noch eine Variante mit Benutzereingabe. Der Benutzer gibt an, welchen Text er wie oft ausgeben möchte.
+Um die verschiedenen Varianten auszuprobieren, können Sie im ''run ()'' die Aufrufe der einzelnen Programmteile mittels Kommentarzeichen ein/ausschalten.
+
+<code java>
+import java.util.Scanner;
+
+/**
+ * Write the text "Hallo Welt" a number of times
+ *
+ * @author Marcel Suter
+ * @version 1.0
+ * @since 2018-06-09
+ */
+
+public class Universe {
+
+    /**
+     * create object and run
+     *
+     * @param args command line arguments
+     */
+    public static void main (String[] args) {
+        Universe program = new Universe ();
+        program.run ();
+    }
+
+    /**
+     * run the program by calling the appropriate method
+     */
+    private void run() {
+        sequence ();
+        //whileLoop ();
+        //forLoop ();
+        //extended ();
+    }
+
+    /**
+     * basic version with a sequence of 5 statements
+     */
+    private void sequence () {
+
+        // ------ start of processing ------
+        System.out.println ("Hallo Welt!");
+        System.out.println ("Hallo Welt!");
+        System.out.println ("Hallo Welt!");
+        System.out.println ("Hallo Welt!");
+        System.out.println ("Hallo Welt!");
+    }
+
+    /**
+     * basic version with a while-iteration
+     */
+    private void whileLoop () {
+        int count = 0;
+        while (count < 5) {
+            System.out.println ("Hallo Welt!");
+            count = count + 1;
+        }
+    }
+
+    /**
+     * basic version with a for-loop
+     */
+    private void forLoop () {
+        // ------ start of processing ------
+        for (int count = 0; count < 5; count++) {
+            System.out.println ("Hallo Welt!");
+        }
+    }
+
+    /**
+     * extended version: the user enters what text will be shown how many times
+     */
+    private void extended () {
+        // ------ declare and initialize variables ------
+        String text;
+        int repeat;
+        // ------ start of processing ------
+        Scanner scanner = new Scanner (System.in);
+        System.out.print ("Text >");
+        text = scanner.nextLine();
+
+        System.out.print ("Wiederholung >");
+        repeat = scanner.nextInt();
+
+        for (int count = 0; count < repeat; count++) {
+            System.out.println (text);
+        }
+
+        scanner.close ();
+    }
+}
+</code>
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/ch/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Marcel Suter 

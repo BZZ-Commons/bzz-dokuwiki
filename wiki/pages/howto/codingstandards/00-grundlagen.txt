@@ -1,0 +1,16 @@
+====== 00 - Grundlagen ======
+Diese Codingstandards basieren auf PEP 8 (https://peps.python.org/pep-0008/). \\
+Sie gelten für alle Pythonskripts, die Sie im Rahmen des Unterrichts erstellen.
+
+<WRAP center round box 60%>
+//„The first thing I would say is that when you write a program, think of it primarily as a work of literature. You're trying to write something that human beings are going to read. 
+Don't think of it primarily as something a computer is going to follow. The more effective you are at making your program readable, the more effective it's going to be: You'll understand it today, you'll understand it next week, and your successors who are going to maintain and modify it will understand it.“//
+
+[[wp>Donald_E._Knuth|Donald E. Knuth]]
+</WRAP>
+
+=== Symbole ===
+
+|{{:howto:codingstandards:zwingend.png?30|}}|Zwingende Vorschriften|
+|{{:howto:codingstandards:empfehlung.png?30|}}|Empfehlungen          |
+|{{:howto:codingstandards:ausnahme.png?30|}}|Begründete Ausnahmen  |

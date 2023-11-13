@@ -1,0 +1,30 @@
+====== LU04.A03 - Quadrate aller geraden Zahlen ======
+
+<WRAP center round todo 60%>
+Erstelle eine Liste von Quadraten aller geraden Zahlen von 1 bis 100.
+Nutze List Comprehensions in Python.
+</WRAP>
+
+===== Aufgabenstellung =====
+Du bist aufgefordert, eine Liste der Quadrate aller geraden Zahlen zwischen 1 und 100 zu erstellen. Dies ist eine perfekte Gelegenheit, um List Comprehensions in Python zu verwenden!
+
+==== Schrittweises Vorgehen ====
+
+  * **Schritt 1:** Erstelle eine Range von 1 bis 100.
+  * **Schritt 2:** Nutze eine List Comprehension, um die geraden Zahlen zu filtern und ihre Quadrate zu berechnen.
+  * **Schritt 3:** Drucke die fertige Liste, um das Ergebnis zu überprüfen.
+
+==== Vorlage ====
+<code python>
+def squares_of_even_numbers():
+    # TODO: Erstelle eine Liste der Quadrate aller geraden Zahlen von 1 bis 100
+    return []
+
+if __name__ == '__main__':
+    result = squares_of_even_numbers()
+    print(result)
+</code>
+
+----
+<nodisp>https://github.com/templates-python/m323-lu04-a03-comprehensions</nodisp>
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/ch/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Kevin Maurizi 

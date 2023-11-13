@@ -1,0 +1,104 @@
+===5. Die Wahrheitstabelle===
+Eine Wahrheitstabelle (**WHT**) zeigt die Werte der Eingangs- und Ausgangsvariablen in einer Tabelle an. Man sieht, für welche Kombination von Eingangswerten welcher Ausgangswert resultiert.\\
+----
+//Beispiele://\\
+WHT der NICHT-Opertion
+<WRAP left>
+|  IN   |   ¦   |  OUT  |
+^   A   ^   ¦   ^   C   ^
+|   0   |   ¦   |   1   |
+|   1   |   ¦   |   0   |
+| \(\neg\)A   | \(\rightarrow\)|  C  |
+</WRAP>
+<WRAP clear></WRAP>
+WHT der UND-Operation
+<WRAP left>
+|      IN       ||  ¦   |  OUT  |
+^   A   ^   B   ^   ¦   ^   C   ^
+|   0   |   0   |   ¦   |   0   |
+|   0   |   1   |   ¦   |   0   |
+|   1   |   0   |   ¦   |   0   |
+|   1   |   1   |   ¦   |   1   |
+|  A \(\wedge\) B || \(\rightarrow\) |  C  |
+</WRAP>
+<WRAP clear></WRAP>
+
+WHT der ODER-Operation
+<WRAP left>
+|      IN       ||  ¦   |  OUT  |
+^   A   ^   B   ^   ¦   ^   C   ^
+|   0   |   0   |   ¦   |   0   |
+|   0   |   1   |   ¦   |   1   |
+|   1   |   0   |   ¦   |   1   |
+|   1   |   1   |   ¦   |   1   |
+|  A \(\vee\) B || \(\rightarrow\) |  C  |
+</WRAP>
+<WRAP clear></WRAP>
+
+----
+Es lassen sich somit logische Aussagen für alle Kombinationen der Eingangswerte übersichtlich darstellen.\\
+----
+//Beispiel://\\
+C = A \(\wedge\) \(\neg\)B\\
+<WRAP left>
+|      IN       ||  ¦   |  OUT  |
+^   A   ^   B   ^   ¦   ^   C   ^
+|   0   |   0   |   ¦   |   0   |
+|   0   |   1   |   ¦   |   0   |
+|   1   |   0   |   ¦   |   1   |
+|   1   |   1   |   ¦   |   0   |
+</WRAP>
+Da hier die Variable B negiert (\(\neg\)B) in die Berechnung von C eingeht, ergibt die Aussage 1 \(\wedge\) \(\neg\)0 eine 1 während 1 \(\wedge\) \(\neg\)1 eine 0 ergibt.\\
+Für A = 0 ist C immer 0. Dies auf Grund der UND-Operation, die ja nur für 1 \(\wedge\) 1 einen Ausgangswert von 1 ergibt.
+<WRAP clear></WRAP>
+
+----
+Es können beliebig komplexe Aussagen in einer WHT abgebildet werden. Die Anzahl der Zeilen entspricht \(2^{n}\), wobei n für die Anzahl der Eingangsvariablen steht.\\
+----
+//Beispiele://\\
+Für eine gegeben Aussage kann die WHT erstellt werden.\\
+
+X = (\(\neg\)A\(\wedge\)\(\neg\)B\(\wedge\)\(\neg\)C) \(\vee\) (\(\neg\)A\(\wedge\)B\(\wedge\)\(\neg\)C) \(\vee\) (A\(\wedge\)\(\neg\)B\(\wedge\)\(\neg\)C) \(\vee\) 
+(A\(\wedge\)B\(\wedge\)\(\neg\)C)       \\
+<WRAP left>
+|      IN               |||    ¦   |  OUT  |  ¦|   Aussage |
+^   A   ^   B   ^   C   ^  ¦   ^   X   ^  ¦|               |
+|   0   |   0   |   0   |  ¦   |   1   |      ¦| <color #ed1c24>\(\neg\)A\(\wedge\)\(\neg\)B\(\wedge\)\(\neg\)C</color> |
+|   0   |   0   |   1   |  ¦   |   0   |      ¦|  |
+|   0   |   1   |   0   |  ¦   |   1   |      ¦| <color #ed1c24>\(\neg\)A\(\wedge\)B\(\wedge\)\(\neg\)C</color> |
+|   0   |   1   |   1   |  ¦   |   0   |      ¦|  |
+|   1   |   0   |   0   |  ¦   |   1   |      ¦| <color #ed1c24>A\(\wedge\)\(\neg\)B\(\wedge\)\(\neg\)C</color> |
+|   1   |   0   |   1   |  ¦   |   0   |      ¦|  |
+|   1   |   1   |   0   |  ¦   |   1   |      ¦| <color #ed1c24>A\(\wedge\)B\(\wedge\)\(\neg\)C</color> |
+|   1   |   1   |   1   |  ¦   |   0   |      ¦|  |
+</WRAP>  
+<WRAP clear></WRAP>
+
+Für eine gegebene WHT kann die entsprechende Aussage formuliert werden.
+<WRAP left>
+|      IN               |||    ¦   |  OUT  |  ¦| Aussage |
+^   A   ^   B   ^   C   ^  ¦   ^   X   ^  ¦|               |
+|   0   |   0   |   0   |  ¦   |   0   |      ¦|  |
+|   0   |   0   |   1   |  ¦   |   0   |      ¦|  |
+|   0   |   1   |   0   |  ¦   |   <color #ed1c24>1</color>   |      ¦| \(\neg\)A\(\wedge\)B\(\wedge\)\(\neg\)C |
+|   0   |   1   |   1   |  ¦   |   <color #ed1c24>1</color>   |      ¦| \(\neg\)A\(\wedge\)B\(\wedge\)C|
+|   1   |   0   |   0   |  ¦   |   0   |      ¦|  |
+|   1   |   0   |   1   |  ¦   |   0   |      ¦|  |
+|   1   |   1   |   0   |  ¦   |   0   |      ¦|  |
+|   1   |   1   |   1   |  ¦   |   <color #ed1c24>1</color>   |      ¦| A\(\wedge\)B\(\wedge\)C |
+</WRAP>  
+<WRAP clear></WRAP>
+X =  (\(\neg\)A\(\wedge\)B\(\wedge\)\(\neg\)C) \(\vee\) (\(\neg\)A\(\wedge\)B\(\wedge\)C) \(\vee\) (A\(\wedge\)B\(\wedge\)C)
+----
+Lösen Sie nun die [[modul:mathe:ma1:thema:lu04logik:aufgaben:leitprogramm:k6:u5:start|Übung 5]]
+
+----
+Überprüfen Sie Ihre Antworten. [[modul:mathe:ma1:thema:lu04logik:aufgaben:leitprogramm:k6:l5:start|Lösung 5]]\\
+Sollten Sie Fehler haben, schauen Sie sich die Theorie noch einmal genau an, besprechen Sie offene Fragen mit Ihren Kolleginnen und/oder Kollegen. Fragen Sie auch Ihre Lehrperson, wenn Sie weiterführende Hilfe brauchen.
+
+
+----
+[[modul:mathe:ma1:thema:lu04logik:aufgaben:leitprogramm:k7:start|nächstes Kapitel]]
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) René Probst

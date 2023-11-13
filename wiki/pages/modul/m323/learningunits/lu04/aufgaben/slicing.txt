@@ -1,0 +1,40 @@
+====== LU04.A18 - Slicing ======
+
+<WRAP center round todo 60%>
+Verwende Python's Slicing-Mechanismus, um bestimmte Teile einer Liste oder eines Strings zu extrahieren und zu manipulieren. Dabei sollen alle Spezialfälle abgedeckt werden.
+</WRAP>
+
+===== Aufgabenstellung =====
+Erstelle eine Python-Funktion namens ''slicing_special_cases'', die folgende Aufgaben erledigt:
+
+  - Extrahiere die ersten drei Elemente der Liste ''[1, 2, 3, 4, 5]''. Die Ausgabe sollte ''[1, 2, 3]'' sein.
+  - Extrahiere die letzten zwei Elemente der Liste ''[1, 2, 3, 4, 5]''. Die Ausgabe sollte ''[4, 5]'' sein.
+  - Kehre die Liste ''[1, 2, 3, 4, 5]'' um. Die Ausgabe sollte ''[5, 4, 3, 2, 1]'' sein.
+  - Extrahiere jeden zweiten Wert der Liste ''[1, 2, 3, 4, 5]''. Die Ausgabe sollte ''[1, 3, 5]'' sein.
+  - Extrahiere die Elemente zwischen den Indizes ''-4'' und ''-1'' der Liste ''[1, 2, 3, 4, 5]''. Die Ausgabe sollte ''[2, 3, 4]'' sein.
+  - Extrahiere die ersten drei Elemente der Liste ''[1, 2, 3, 4, 5]'' und kehre sie um. Die Ausgabe sollte ''[3, 2, 1]'' sein.
+  - Extrahiere die letzten zwei Elemente der Liste ''[1, 2, 3, 4, 5]'' und kehre sie um. Die Ausgabe sollte ''[5, 4]'' sein.
+  - Kehre die Liste ''[1, 2, 3, 4, 5]'' um und nimm nur jeden zweiten Wert. Die Ausgabe sollte ''[5, 3, 1]'' sein.
+  - Extrahiere die Elemente zwischen den Indizes -4 und -1 der Liste ''[1, 2, 3, 4, 5]'', kehre sie um und nimm nur jeden zweiten Wert. Die Ausgabe sollte ''[4, 2]'' sein.
+
+==== Code Vorlage ====
+{{gh>https://github.com/templates-python/m323-lu04-a18-slicing/blob/main/main.py}}
+
+===== Vorgehen =====
+  - Akzeptiere das GitHub Classroom Assignment
+  - Klone dein persönliches Repository in die Entwicklungsumgebung
+  - Implementiere die Funktion `slicing_special_cases`
+
+===== Abgabe =====
+Die Abgabe der Lösung erfolgt als Push in das persönliche GitHub-Repository.
+
+----
+
+<details>
+<summary>//=> GitHub Repo für externe Besucher//</summary>
+GitHub Repository https://github.com/templates-python/m323-lu04-a18-slicing
+
+//Lernende am BZZ **müssen** den Link zum GitHub Classroom Assignment verwenden//
+</details>
+
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Kevin Maurizi

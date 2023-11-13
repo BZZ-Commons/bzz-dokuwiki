@@ -1,0 +1,51 @@
+~~NOTOC~~
+====== LU02.A03: Seconds in a day ======
+
+===== Auftrag =====
+
+Implementieren Sie in der Übungsvorlage ein Programm, das den Benutzer nach der Anzahl der Tage fragt. Danach gibt das Programm die Anzahl der Sekunden in der angegebenen Anzahl von Tagen aus.
+
+Im Kursmaterial haben wir gelernt, eine Eingabe auf folgende Weise zu lesen:
+<code python>
+number = int(input('Give a number:'))
+</code>
+
+Beispiele für erwartete Ausgaben:
+
+<code>
+How many days would you like to convert to seconds?
+*1*
+86400
+</code>
+
+<code>
+How many days would you like to convert to seconds?
+*3*
+259200
+</code>
+
+<code>
+How many days would you like to convert to seconds?
+*7*
+604800
+</code>
+
+Verwenden Sie folgende Programmiervorlage:
+
+
+
+<code python>
+def main():
+    #write your code below this line
+
+if __name__ == '__main__':
+    main()
+</code>
+
+
+Anmerkung: Kümmern Sie sich im Moment nicht zu sehr um ''if %%__%%name%%__%% == '%%__%%main%%__'%%:''. Wir brauchen es technisch gesehen nicht für dieses Programm, aber es ist eine gute Übung, es einzubauen, und es wird in späteren Übungen klarer werden.
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/ch/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Kevin Maurizi 
+
+Diese Aufgabe ist eine übersetzte und angepasste Aufgabe von [[https://scott3142.uk/|Scott Morgan]], verwendet unter CC BY NC SA.

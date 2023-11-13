@@ -1,0 +1,12 @@
+====== LU05.L07 - Summe und Durchschnitt ======
+
+{{gh>https://github.com/templates-python/m323-lu05-a07-inner2/blob/solution/main.py}}
+
+
+===== Erklärung =====
+
+  * Die äußere Funktion ''sum_and_average'' nimmt eine Liste von Zahlen als Argument.
+  * Zwei innere Funktionen, ''calculate_sum'' und ''calculate_average'', werden innerhalb der äußeren Funktion definiert.
+  * ''calculate_sum'' berechnet die Summe der Liste mit der eingebauten Python-Funktion ''sum()''.
+  * ''calculate_average'' berechnet den Durchschnitt, indem sie die Summe durch die Länge der Liste teilt.
+  * Beide berechneten Werte werden als Tupel zurückgegeben.

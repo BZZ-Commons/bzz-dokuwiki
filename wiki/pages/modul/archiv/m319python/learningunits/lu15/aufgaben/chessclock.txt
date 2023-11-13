@@ -1,0 +1,80 @@
+====== LU15.A02 - Schachuhr ======
+
+===== Auftrag =====
+
+Erstellen Sie ein Programm, dass wie eine [[https://de.wikipedia.org/wiki/Schachuhr|Schachuhr]] funktioniert.
+Ihr Programm soll dazu auf die Leertaste ihrer Tastatur reagieren. Jedesmal wenn ''Enter'' gedrückt wird, wird die Zeit zwischen dem letzten und dem aktuellen Drücken ausgerechnet und entweder Spieler A oder Spieler B dazugerechnet. Damit kann die Gesamt-Bedenkzeit während eines Schachturnieres gemessen werden.
+
+===== Ablauf in der Konsole =====
+<WRAP center round box 60%>
+<code>
+[Für Start Enter drücken]
+
+Spieler A ist dran
+
+Zeit Spieler A: 0:00:01
+Zeit Spieler B: 0:00:00
+Aktueller Spieler: B
+
+Zeit Spieler A: 0:00:01
+Zeit Spieler B: 0:00:03
+Aktueller Spieler: A
+
+Zeit Spieler A: 0:00:03
+Zeit Spieler B: 0:00:03
+Aktueller Spieler: B
+
+
+</code>
+</WRAP>
+
+===== Lösungsschritte =====
+
+==== 1. Entertaste ====
+Schreiben Sie ein Programm, dass jedes mal ''Enter'' printet, wenn die Entertaste gedrückt wird.
+
+1. Start endlosschleife
+  1.1 Lese input
+  1.2 Wenn input == ''
+    1.2.1 printe: 'Enter'
+
+==== 2. Aktuelle Zeit ====
+Recherchiren Sie nun, wie sie die aktuelle Uhrzeit in eine Variable speichern können. 
+Speichern Sie nun die aktuelle Uhrzeit in eine Variable nachdem Sie dem User geprintet haben wie er das Spiel starten kann:
+
+  1 Printe: '[Für Start Enter drücken]'
+  2 Lese input
+  3 Speichere die aktuell Uhrzeit in eine Variable ''time_start''
+  4 Start endlosschleife
+    4.1 Lese input
+    4.2 Wenn input == ''
+      4.2.1 Printe: 'Enter'
+
+Speichern Sie anschliessend die Zeit, wenn er zum zweiten mal ''Enter'' drückt und ziehen Sie diese voneinander ab um die Zeitdifferenz zu erhalten. Drucken Sie diesen Wert anschliessend aus.
+
+  1 Printe: '[Für Start Enter drücken]'
+  2 Lese input
+  3 Speichere die aktuell Uhrzeit in eine Variable ''time_start''
+  4 Start endlosschleife
+    4.1 Lese input
+    4.2 Wenn input == ''
+      4.2.1 Speichere die Uhrzeit in eine neue Variable ''time_end''
+      4.2.2 Ziehe die Uhrzeit ''time_start'' von ''time_end'' ab und speichern sie den Wert.
+      4.2.3 Speichere den Wert in eine Variable vom Typ ''timedelta'' mit dem Namen ''playtime''
+      4.2.4 Printe 'Spielzeit ...'
+==== 3. Umbauen für 2 Personen ====
+
+**Gratulation, Sie haben jetzt einen Timer für eine Person erstellt!**
+
+Um auf zwei Personen auszubauen brauchen Sie nun folgendes: 
+  * Eine Variable in welche Sie speichern können, welche Person gerade am Zug ist.
+  * Eine weitere Variable für die Spielzeit der Person 2
+
+Versuchen Sie nun die Schachuhr zu vervollständigen!
+
+<WRAP center round tip 60%>
+In den [[modul:m319python:learningunits:lu15:loesungen:chessclock|Lösungen]] habe ich nebst der Python-Lösung auch den Ablauf nochmals genau beschriben.
+</WRAP>
+
+
+

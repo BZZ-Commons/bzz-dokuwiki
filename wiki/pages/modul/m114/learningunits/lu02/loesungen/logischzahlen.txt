@@ -1,0 +1,35 @@
+====== LU02.L03b - Logische Operationen mit Zahlen ======
+
+===== 27 AND 102 =====
+27<sub>10</sub> AND 102<sub>10</sub> = 2<sub>10</sub>
+
+<code>
+     0001 1011
+AND  0110 0110
+     ---------
+     0000 0010
+</code>
+
+===== 1E3 XOR 8A =====
+1E3<sub>16</sub> XOR 8A<sub>16</sub> = 169<sub>16</sub>
+
+<code>
+     0001 1110 0011
+XOR  0000 1000 1010
+     --------------
+     0001 0110 1001
+</code>
+
+===== -34 OR 92 =====
+-34<sub>10</sub> OR 92<sub>10</sub> = 222<sub>10</sub>
+
+<code>
+     1101 1110
+OR   0101 1100
+     ---------
+     1101 1110
+</code>
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

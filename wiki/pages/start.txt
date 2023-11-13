@@ -1,0 +1,27 @@
+====== BZZ Modul Wiki ======
+
+====== Module ======
+~~NOCACHE~~
+
+[[:modul:progaufgabe]]
+
+<nspages :modul -subns -exclude -exclude:archiv: -h1 -textNS="" -simplelist -nopages>
+
+===== Modularchiv =====
+<nspages :modul:archiv -subns -exclude -h1 -textNS="" -simplelist -nopages>
+
+
+===== Berufsbeschreibung =====
+<nspages :berufsbeschreibung -exclude -h1 -textNS="" -simplelist -textPages="">
+<nspages :lernenden-info -exclude -h1 -textNS="" -simplelist -textPages="">
+
+
+===== Links =====
+  * [[http://openbook.galileo-press.de/it_handbuch/|IT-Handbuch für Fachinformatiker - Galileo OpenBooks]]
+
+====== Anleitungen ======
+
+<nspages :howto -subns -exclude -h1 -textNS="" -simplelist -nopages>
+
+===== Impressum =====
+Hostmaster: [[http://www.bzz.ch|BZZ Horgen]], WebMaster: Kevin Maurizi <kevin.maurizi@bzz.ch>, Marcel Suter <marcel.suter@bzz.ch>

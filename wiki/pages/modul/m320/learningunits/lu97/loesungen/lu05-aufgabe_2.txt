@@ -1,0 +1,22 @@
+==== Lösung 2 - UML mit Delegation ====
+
+=== Beispiel Restaurant ===
+
+Der Kellner delegiert das Zubereiten des Menüs an die Küche. Er verlässt sich darauf, dass die Bestellung von der Küche ausgeführt wird und er benachrichtigt wird, wenn die Menus fertig sind. Alles Weitere spielt für ihn keine Rolle (d.h. wie die Küche intern organisiert ist mit einem Küchenchef, der die Menus auf seine Köche verteilt -> s.a. Abb. 3+4). Auch der Gast delegiert übrigens, nämlich das Aufnehmen der Bestellung an den Kellner. Dieser nimmt die Wünsche der Gäste am Tisch entgegen und leitet sie weiter 😉
+
+**Bewertung bezgl. IOSP**
+^ Bsp. für reine Operation       ^ Bsp. für reine Integration         ^ Bsp. für Mix (sowohl Logik als auch Aufrufe) ^
+| Kellner -> Bestellung erfassen | Gast -> bestellen                  | Kellner -> Bestellung aufnehmen              |
+| Koch -> Menu zubereiten        | Kellner -> Bestellung weiterleiten | -                                            |
+
+{{modul:m320:learningunits:lu97:loesungen:restaurant_class_simple.png?nolink&400|Abb. 1: Statischer Entwurf}}\\
+Abb. 1: Statischer Entwurf
+
+{{modul:m320:learningunits:lu97:loesungen:restaurant_sequence_simple.png?nolink&400|Abb. 2: Dynamischer Entwurf}}\\
+Abb. 2: Dynamischer Entwurf
+
+{{modul:m320:learningunits:lu97:loesungen:restaurant_class.png?nolink&400|Abb. 1: Statischer Entwurf detalliert}}\\
+Abb. 3: Statischer Entwurf detalliert
+
+{{modul:m320:learningunits:lu97:loesungen:restaurant_sequence.png?nolink&400|Abb. 2: Dynamischer Entwurf detalliert}}\\
+Abb. 4: Dynamischer Entwurf detalliert

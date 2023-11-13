@@ -1,0 +1,40 @@
+====== LU04.L04 - Filtere Studenten nach Noten ======
+
+<code python>
+def filter_students_by_grade(students):
+    """
+    Nutze eine List Comprehension, um Studenten zu filtern, deren Note kleiner als 4.0 ist.
+    
+    Parameters:
+    - students (list): Liste der Studenten und ihrer Noten.
+    
+    Returns:
+    - list: Liste der gefilterten Studenten.
+    """
+    return [student for student in students if student[1] < 4.0]
+    # oder: return [(name, grade) for name, grade in students if grade < 4.0]
+
+
+if __name__ == '__main__':
+    students = [
+        ('Alice', 4.0),
+        ('Bob', 3.5),
+        ('Charlie', 4.25),
+        ('David', 5.5),
+        ('Manuel', 3.75)
+    ]
+    result = filter_students_by_grade(students)
+    print(result)
+</code>
+
+In dieser Musterlösung:
+
+  - Die Funktion ''filter_students_by_grade'' nimmt eine Liste von Studenten und ihren Noten als Eingabe und verwendet eine List Comprehension, um die Studenten zu filtern, deren Note kleiner als 4.0 ist.
+  - Die List Comprehension ''[(name, grade) for name, grade in students if grade < 4.0]'' führt die folgenden Schritte aus:
+    * Sie geht durch jede Tupel ''(name, grade)'' in der Liste ''students''.
+    * Sie überprüft, ob die Note (''grade'') kleiner als 4.0 ist.
+    * Wenn ja, wird das Tupel (''name, grade'') zur Liste der gefilterten Studenten hinzugefügt.
+  - Schließlich gibt die Funktion die Liste der gefilterten Studenten zurück, und das Ergebnis wird mit ''print'' ausgegeben.
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/ch/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Kevin Maurizi 

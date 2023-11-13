@@ -1,0 +1,37 @@
+====== LU14.A03: Rotation-Chiffre ======
+Die [[https://www.cryptool.org/de/cto/rotation|Rotation-Chiffre]] ist eine Methode zur Verschlüsselung von Nachrichten.
+
+===== Auftrag =====
+Erstellen Sie ein Programm, das einen Klartext verschlüsselt und den Chiffretext ausgibt.
+
+  - Zerlegen Sie die Aufgabe in sinnvolle Funktionen.
+  - Realisieren Sie eine Funktion
+  - Testen Sie die Funktion
+  - Zurück zu 2.
+
+=== Begriffe ===
+  * **Klartext**: Dies ist der ursprüngliche Text, der verschlüsselt werden soll.
+  * **Chiffretext**: Der verschlüsselte Text
+  * **Blocklänge**: Die Länge eines Textblocks für die Verschlüsselung
+===== Programmablauf =====
+<code>
+1. Der Benutzer gibt den Klartext ein.
+2. Der Benutzer gibt die Blocklänge ein.
+3. Das Programm fügt dem Klartext so viele Leerzeichen hinzu, wie die Blocklänge angibt.
+4. Zeilenzähler = 0
+5. Position = 0
+6. Solange (Position + Blocklänge) kleiner als die Länge des Klartextes ist
+  6.1. Übertrage die Buchstaben von Position bis Position+Blocklänge in eine Liste beim Index Zeilenzähler
+  6.2. Zeilenzähler + 1
+  6.3. Position + Blocklänge
+7. Position = 0
+8. Chiffretext = ""
+9. Solange die Position kleiner als die Blocklänge ist
+  9.1. Zeilenzähler = Anzahl Zeilen in der Liste - 1
+  9.2. Solange der Zeilenzähler grösser oder gleich 0 ist
+    9.2.1. Nimm aus der Liste beim Index [Zeilenzähler] den Buchstaben an [Position] und füge ihn zum Chiffretext hinzu
+    9.2.2. Zeilenzähler - 1
+  9.3. Position + 1
+10. Gib den Chiffretext aus
+  
+</code>

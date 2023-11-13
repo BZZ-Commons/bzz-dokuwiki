@@ -1,0 +1,38 @@
+====== LU02c - Client/Server======
+
+==== Einführung ====
+Der Begriff „Client Server Netzwerk“ setzt sich aus drei Wörtern zusammen. Sie haben hier die folgenden Bedeutungen:
+  * Client: Ein Client oder zu Deutsch Kunde ist ein PC, der als „Kunde“ Dienste auf dem Server nutzt, z. B. die Dateiablage.
+  * Server: Ein Server ist der zentrale Teil eines Netzwerkes, welcher Dienste für Clients zur Verfügung stellt, z. B. die vorher erwähnte Dateiablage oder den Internetzugang etc. Die Gründe, ein Client Server Modell einzusetzen, sind vielfältig. Der wichtigste Vorteil ist die gemeinsame Nutzung von Geräten und Anwendungen (Netzwerkressourcen) mit zentral geregelten Zutrittsberechtigungen. In der Regel haben Computer, die als Server eingesetzt werden, eine spezielle Ausstattung (z.B. schnellere oder mehrere CPU's, mehr Arbeitsspeicher, größere Festplattenkapazitäten usw.) und ein spezielles Betriebssystem, welches die Dienste und Datenzugriffe wesentlich beschleunigt. Server sind oft auch mit zusätzlichen Peripheriegeräten wie z.B. Bandlaufwerke, Drucker, usw. ausgerüstet.
+  * Netzwerk: Das Netzwerk ist auf die Client Server Aufgabenteilung ausgerichtet. Im Gegensatz zum Peer to Peer Netzwerk ist es streng zentralistisch organisiert
+
+==== Merkmale ====
+Client Server Netzwerke Sie sind grundsätzlich darauf ausgerichtet, mehrere Anfragen aus dem Netzwerk gleichzeitig zu bearbeiten. Normalerweise ist es nicht vorgesehen, einen Server zusätzlich als Arbeitsplatz für irgendwelche Applikationen zu verwenden, er dient ausschließlich dem Bereitstellen von Diensten oder Daten.
+
+{{:modul:m117:learningunits:lu02:clientserver.jpg?400|}}
+
+==== Grundsätzliche Funktionsweise ====
+Der Client stellt eine Anfrage an den Server. Der Server reagiert darauf mit einer Antwort.
+
+Beispiel: Der Client möchte eine Datei haben, die sich auf der zentralisierten Ablage auf dem
+Server befindet.
+
+{{:modul:m117:learningunits:lu02:clientservermodell.jpg?400|}}
+
+==== Vorteile ====
+  * Server basierende Netzwerke ermöglichen eine zentrale Überprüfung der Benutzerkonten und Passwörter, d.h. jeder Benutzer muss sich nur einmal am Netzwerk anmelden. Die Anmeldung kann auf unterschiedlichen Rechnern stattfinden. Dadurch wird der Zugriff auf alle Ressourcen innerhalb eines Netzwerkes mit einer einzigen Anmeldeprozedur gesteuert. Im Gegensatz zu Peer to Peer Netzwerken ist es nicht notwendig, jede Ressource mit einem Passwort zu belegen.
+  * Ein weiterer Vorteil dieses Modells ist die einfachere Erweiterbarkeit. Peer to Peer Netzwerke werden immer langsamer, je mehr Computer am Netzwerk teilnehmen. Server basierte Netze können einfach erweitert werden. Es spielt keine wesentliche Rolle, ob zehn oder mehrere hundert Benutzer an das Netz angeschlossen sind (abgesehen von den Hardwareanforderungen und der Anzahl der Server, die benötigt werden).
+
+
+==== Nachteile ====
+  * Nachteilig sind in diesem Modell vorrangig der Preis der Anschaffung und der Aufwand für Wartung und Administration. Bei größeren Netzwerken wird in der Regel mindestens eine umfassend ausgebildete Person für die Betreuung der Server und des Netzwerkes benötigt (Netzwerkadministrator).
+  * Ein weiterer Nachteil ist, dass bei kleineren Netzwerken mit nur einem Server dessen Ausfall den Stillstand des gesamten Netzwerks verursacht. Bei Netzen mit mehreren Servern bedeutet ein Ausfall lediglich, dass die vom ausgefallenen Server betreuten Ressourcen nicht zur Verfügung stehen
+
+==== Video ====
+[[https://www.youtube.com/watch?v=iAMMCXb1AXY]]
+
+----
+
+{{tag>m117}}
+
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Andre Probst

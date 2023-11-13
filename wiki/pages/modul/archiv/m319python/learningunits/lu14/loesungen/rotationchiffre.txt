@@ -1,0 +1,21 @@
+====== LU14.L03: Rotation-Chiffre ======
+
+===== Funktionen =====
+==== read_input ====
+  * Aufgabe: Liest die Eingaben des Benutzers (Blocklänge, Klartext). \\ Der Klartext wird um Leerzeichen ergänzt.
+  * Returnwert: Blocklänge, Klartext
+
+==== split_blocks ====
+  * Aufgabe: Zerlegt den Klartext in Blöcke anhand der Blocklänge
+  * Parameter:
+    * Blocklänge
+    * Klartext
+  * Returnwert: Liste mit den Textblöcken
+
+==== create_chiffre ====
+  * Aufgabe: Erzeugt den Chiffretext
+  * Parameter:
+    * Liste mit den Textblöcken
+  * Returnwert: Chiffretext
+
+ 

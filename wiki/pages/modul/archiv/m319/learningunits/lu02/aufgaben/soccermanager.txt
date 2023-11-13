@@ -1,0 +1,116 @@
+====== Aufgabe: Soccer Manager ======
+
+===== Beschreibung =====
+Mit dem vorliegenden Programm können die Spieler einer Mannschaft erfasst und Ihre Leistung bewertet werden.
+Zu jedem Spieler werden folgende Angaben benötigt:
+  * Trikotnummer (1 - 99)
+  * Bewertung (1.0 - 6.0)
+
+Gibt der Benutzer die Ziffer ''0'' ein, so wird das Programm beendet.
+===== Auftrag =====
+Die Logik des Programmablaufs ist bereits vollständig umgesetzt.
+Sie sollen alle verwendeten Variablen deklarieren und initialisieren.
+
+===== Vorgehen =====
+  - Erstellen Sie ein neues Projekt (Ordner) in Ihrem Workspace.
+  - Laden Sie die Datei "Soccer.java" herunter und speichern Sie die Datei im oben erstellten Ordner.
+  - Passen Sie den Programmkopf (Autor, Datum) an.
+  - Identifizieren Sie die Variablen im Programmablauf.
+  - Ergänzen Sie die Deklaration der Variablen zwischen den Kommentarzeilen ''TODO start declaration'' und ''TODO end declaration''.
+
+<WRAP center round important 60%>
+Lassen Sie die Programmlogik unverändert.
+</WRAP>
+
+
+== Ziel ==
+  * Das Programm wird ohne Fehler kompiliert.
+  * Das Programm berechnet den Durchschnitt für jeden Spieler korrekt.
+
+===== Abgabe =====
+Laden Sie die Datei mit dem Sourcecode ("Soccer.java") hoch.
+
+===== Sourcecode =====
+
+== Hinweis ==
+Der Befehl ''variable = scanner.nextInt()'' bzw. ''variable = scanner.nextDouble()'' liest eine Benutzereingabe von der Konsole und speichert den eingegebenen Wert in der ''variable''.
+
+<file java Soccer.java>
+import java.util.Scanner;
+
+/**
+ * enter and rate soccer players
+ *
+ * @author Ibid umm
+ * @version 1.0
+ * @since jjjj-mm-dd
+ */
+public class Soccer {
+
+    Scanner scanner;
+
+    /**
+     * constructor
+     */
+    public Soccer () {
+        scanner = new Scanner (System.in);
+    }
+
+    /**
+     * starts the execution
+     *
+     * @param args command line arguments
+     */
+    public static void main (String[] args) {
+        Soccer program = new Soccer ();
+
+        System.out.println ("Willkommen beim Soccer Manager");
+        program.ratePlayers ();
+        System.out.println ("c u l8er, aligator");
+    }
+
+    /**
+     * enter the rating for the players
+     */
+    private void ratePlayers () {
+
+        // TODO start declaration
+
+        // TODO end declaration
+
+        System.out.print ("Trikotnummer (1 - 99 / 0=Ende) >");
+        shirtNo = scanner.nextInt();
+        scanner.nextLine(); // Scanner leeren
+
+        while (shirtNo != 0) {
+            totalRating = 0.0;
+            countRating = 0;
+            System.out.print ("Bewertung (1.0 - 6.0 / 0=Ende) >");
+            rating = scanner.nextDouble ();
+            scanner.nextLine(); // Scanner leeren
+
+
+            while (rating > 0) {
+                totalRating = totalRating + rating;
+                countRating = countRating + 1;
+                System.out.print ("Bewertung (1.0 - 6.0 / 0=Ende) >");
+                rating = scanner.nextDouble ();
+                scanner.nextLine(); // Scanner leeren
+
+            }
+            System.out.println ("Spieler: " + shirtNo + " / Durchschnitt: " + (totalRating / countRating));
+
+            System.out.print ("Trikotnummer (1 - 99 / 0=Ende) >");
+            shirtNo = scanner.nextInt ();
+            scanner.nextLine(); // Scanner leeren
+
+        }
+
+        scanner.close ();
+    }
+}
+</file>
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Marcel Suter

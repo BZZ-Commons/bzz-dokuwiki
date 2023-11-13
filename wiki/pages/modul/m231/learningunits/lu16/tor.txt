@@ -1,0 +1,44 @@
+====== LU16e - Tor Netzwerk======
+<WRAP center round info 60%>
+Tor ist ein Netzwerk zu Anonymisierung von Verbindungsdaten.
+Es schützt den Nutzer vor Analyse seines Datenverkehrs.
+</WRAP>
+
+=== Weiteres Material ===
+  * [[wpde>Tor_(Netzwerk)]]
+  * [[https://www.avast.com/de-de/c-tor-dark-web-browser#:~:text=Tor%20(The%20Onion%20Router)%20ist,den%20so%20genannten%20Nodes%2C%20umleitet.]]
+
+
+===== Funktionsweise =====
+Beim "normalen" Datenverkehr im Internet wird jedes Datenpaket über mehrere Server bis zum Ziel weitergeleitet.
+Dabei kennt jeder dieser Server die IP-Adresse des Absenders und des Ziels.
+Selbst wenn die Inhalte der Datenpakete verschlüsselt sind, kann die Analyse der Zieladressen und Datenmengen sehr viele Informationen liefern.
+
+Beim Tor-Netzwerk werden die Datenpakete über eine zufällig gewählte Route, die mindestens 3 Tor-Server umfasst, gesendet.
+Dabei kennt nur der erste Server dieser Route den Absender und der letzte Server kennt die Zieladresse. 
+Alle weiteren Server kennen nur ihren Vorgänger und Nachfolger innerhalb der Route.
+
+[[https://www.youtube.com/watch?v=QSxUG7kBjPQ|Video: Wie funktioniert das Tor Netzwerk]]
+
+==== Tor-Browser ====
+Ein Tor-Browser ist ein Webbrowser der automatisch alle Verbindungen über das Tor-Netzwerk aufbaut.
+Der bekannte [[https://www.chip.de/downloads/Tor-Browser_22479695.html|Tor Browser]] basiert auf Mozilla Firefox.
+
+===== Der Unterschied zu VPN =====
+Auch bei einer VPN-Verbindung werden meine Datenpakete anonymisiert über einen oder mehrere Routen geschickt.
+Der wesentliche Unterschied ist, dass der VPN-Anbieter meinen ganzen Datenverkehr kennt.
+Damit kann der VPN-Anbieter meinen Datenverkehr speichern, analysieren und gegebenenfalls verkaufen.
+Ich reduziere also nur die Anzahl von Servern, die meinen Datenverkehr kennen.
+
+===== Legalität und Dark Net =====
+Oftmals wird das Tor Netzwerk bzw. ein Tor Browser in einem Atemzug mit illegalen Aktivitäten im Dark Net genannt.
+Es kann nicht abgestritten werden, dass im Dark Net illegale Inhalte und Dienste angeboten werden.
+Trotzdem wäre es falsch, jeden Nutzer eines Tor Browsers unter Generalverdacht zu stellen.
+Der Wunsch nach Privatsphäre ist ein Grundrecht, welches in der Bundesverfassung (BV) garantiert wird.
+
+In einigen totalitären Staaten wird die Verwendung des Tor-Netzwerks verboten.
+Dadurch wollen diese Staaten das Internetverhalten ihrer Bürger überwachen und kontrollieren.
+
+----
+{{tag>m231-AnG}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

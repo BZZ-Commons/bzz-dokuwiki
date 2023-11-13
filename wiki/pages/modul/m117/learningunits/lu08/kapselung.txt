@@ -1,0 +1,22 @@
+====== LU08c - Daten-Kapselung ======
+
+Beim Senden fügt jedes Protokoll dabei seinen eigenen Header vor dem Paket an. Diese sehen Sie in der nachfolgenden Abbildung grau dargestellt. Die Nutzdaten, also z. B. die HTML-Seite eines Webservers, kommen zuhinterst. Dieser Vorgang des Einpackens der Daten in ein neues Paket mit dem eigenen Header vorangestellt wird Data Encapsulation genannt. Eine Ausnahme bildet der Layer 2. Dort wird die Checksumme zum Überprüfen auf Übertragungsfehler in einem Trailer am Schluss angehängt. So können die Netzwerkgeräte die Checksumme schneller verarbeiten und müssen sie nicht vom Paketanfang her zwischenspeichern.
+
+{{:modul:m117:learningunits:lu08:kapselung1.jpg?500|}}
+
+Sie können sich die Data Encapsulation auch vorstellen wie eine Serie von Briefumschlägen: Jede Schicht packt das, was sie von der übergeordneten Schicht erhält, wieder in einen neuen Umschlag, schreibt die Adresse (IP-Adresse, MAC-Adresse) und die übrigen Headerdaten auf den Umschlag und gibt ihn an die nächste Schicht weiter. Nachfolgend sehen Sie eine Darstellung dieses Vorgangs mit den drei Protokollen Ethernet (Schicht 1 + 2), IP (Schicht 3) und TCP (Schicht 4).
+
+Beim Empfangen wertet jede Schicht ihren Header aus, z. B. überprüft sie, ob sich darin ihre eigene Adresse befindet, und gibt danach die restlichen Daten ohne ihren eigenen Header an die nächstobere
+Schicht weiter. Dieser Vorgang des Auspackens der Daten wird Data Decapsulation genannt. Nach unserem Bild mit den Briefumschlägen würde bei der Decapsulation also jede Schicht die Adresse und die anderen Headerdaten auf ihrem Briefumschlag lesen, diesen öffnen und den darin befindlichen Umschlag weitergeben.
+
+{{:modul:m117:learningunits:lu08:kapselung2.jpg?200|}}
+
+Weitere Informationen finden Sie [[https://de.wikipedia.org/wiki/Netzwerkprotokoll|hier]]
+
+
+----
+
+{{tag>m117}}
+
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Andre Probst
+

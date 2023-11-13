@@ -1,0 +1,197 @@
+====== LU14a - Listen mit Python ======
+//Siehe auch [[https://docs.python.org/3/tutorial/datastructures.html#|Python - 5. Data Structures]]//
+
+<WRAP center round info 60%>
+Eine Liste ist eine Datenstruktur in Python.
+Sie enthält mehrere Einträge, die mit einem Index identifiziert werden.
+</WRAP>
+
+===== Verarbeitungen mit Listen =====
+==== Anlegen ====
+<WRAP center round info 60%>
+Wir definieren eine Liste, indem wir die eckigen Klammern **''['' '']''** verwenden.
+Die Reihenfolge der Elemente bestimmt den Index, beginnend mit Index=0.
+</WRAP>
+
+Um die Übersicht zu vereinfachen, **können** wir jedes Element auf eine eigene Zeile schreiben.
+
+<code python>
+animals = [
+            'Löwe',   # index = 0
+            'Gepard', # index = 1
+            'Adler'   # index = 2
+          ]
+print(animals)
+</code>
+== Output ==
+
+<code>
+['Löwe', 'Gepard', 'Adler']
+</code>
+
+==== Elemente einfügen ====
+<WRAP center round info 60%>
+Mit der Funktion **append** wird ein zusätzliches Element am Ende der Liste eingefügt.
+</WRAP>
+
+<code python>
+animals = ['Löwe', 'Gepard', 'Adler']
+animals.append('Hecht')    # index = 3
+print(animals)
+</code>
+== Output ==
+<code>
+['Löwe', 'Gepard', 'Adler', 'Hecht']
+</code>
+
+<WRAP center round info 60%>
+Mit der Funktion **insert** können wir ein neues Element an einer bestimmten Stelle in die Liste einfügen.
+</WRAP>
+Der Index aller Elemente hinter dem neuen Element, wird um 1 erhöht.
+<code python>
+ animals = ['Löwe', 'Gepard', 'Adler']
+    animals.insert(2, 'Eule')  
+    print(animals)
+</code>
+
+== Output ==
+
+<code>
+['Löwe', 'Gepard', 'Eule', 'Adler']
+</code>
+
+==== Elemente ändern ====
+
+<WRAP center round info 60%>
+Wir können den Wert eines Elements ändern, indem wir über den Index darauf zugreifen.
+</WRAP>
+
+<code python>
+animals = ['Löwe', 'Gepard', 'Adler']
+animals[1] = 'Tiger'
+print(animals)
+</code>
+
+== Output ==
+
+<code>
+['Löwe', 'Tiger', 'Adler']
+</code>
+==== Elemente löschen ====
+
+<WRAP center round info 60%>
+Mit der Funktion **pop** können wir ein bestimmtes Element anhand des Index aus einer Liste löschen.
+
+Mit der Funktion **remove** können wir ein Element anhand seines Werts aus der Liste löschen.
+</WRAP>
+
+<code python>
+animals = ['Löwe', 'Gepard', 'Adler', 'Hecht', 'Python']
+animals.pop(2)          # removes element with index=2
+animals.remove('Löwe')  # removes element with value='Löwe'
+print(animals)
+</code>
+
+== Output ==
+
+<code>
+['Gepard', 'Hecht', 'Python']
+</code>
+
+==== Einzelne Elemente lesen ====
+
+<WRAP center round info 60%>
+Wir können einzelne Element anhand ihres Index lesen.
+</WRAP>
+
+<code python>
+animals = ['Löwe', 'Gepard', 'Adler']
+print(animals[1])
+</code>
+
+== Output ==
+<code>
+Gepard
+</code>
+
+<WRAP center round info 60%>
+Die Funktion **index** sucht die Position eines Elements mit einem bestimmten Wert.
+</WRAP>
+
+<code python>
+animals = ['Löwe', 'Gepard', 'Adler']
+print(animals.index('Adler'))
+</code>
+
+== Output ==
+<code>
+2
+</code>
+
+<WRAP center round important 60%>
+**Vorsicht**: Falls kein Element mit dem gesuchten Wert existiert, wird eine ''ValueException'' ausgelöst.
+Diese Situation müssen wir mit ''try'' / ''except'' abfangen.
+</WRAP>
+
+<code python>
+animals = ['Löwe', 'Gepard', 'Adler']
+try:
+    print(animals.index('Wolpertinger'))
+except ValueError:
+    print('Kein Wolpertinger in der Liste vorhanden')
+</code>
+
+== Output ==
+<code>
+Kein Wolpertinger in der Liste vorhanden
+</code>
+==== Alle Elemente verarbeiten ====
+
+<WRAP center round info 60%>
+Mit einem **for**-Loop können wir alle Elemente einer Liste verarbeiten.
+</WRAP>
+
+<code python>
+animals = ['Löwe', 'Gepard', 'Adler']
+for animal in animals:
+    print(animal)
+</code>
+
+== Output ==
+<code>
+Löwe
+Gepard
+Adler
+</code>
+
+<WRAP center round info 60%>
+Die Funktion **sort** sortiert die Liste aufsteigend anhand der Werte.
+Mit dem Argument ''reverse=True'' können wir die Liste absteigend sortieren.
+</WRAP>
+
+<code python>
+animals = ['Löwe', 'Gepard', 'Adler']
+animals.sort()
+for animal in animals:
+    print(animal)
+
+print('------')
+animals.sort(reverse=True)
+for animal in animals:
+    print(animal)
+</code>
+
+== Output ==
+<code>
+Adler
+Gepard
+Löwe
+------
+Löwe
+Gepard
+Adler
+</code>
+----
+{{tag>M319-C1G M319-C1F M319-C1E}}
+
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter 

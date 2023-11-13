@@ -1,0 +1,125 @@
+====== LU03e - Programmablaufplan erstellen ======
+
+===== Einleitung =====
+Das Ablaufdiagramm ist eine graphische Übersicht der Programmlogik.
+Um ein Ablaufdiagramm zu erstellen, sollten Sie die folgenden Tipps beherzigen:
+
+  * Stellen Sie zuerst die zentrale Steuerungslogik dar:
+    * Iterationen
+    * Wichtige Selektionen
+  * Stellen Sie jede Operation einzeln dar:
+    * Fassen Sie nicht mehrere Einzelschritte in einer Sequenz zusammen.
+    * Vermischen Sie nicht Bedingungen mit Befehlen.
+
+Solange Sie noch wenig Erfahrung haben, kann es einfacher sein wenn Sie ähnlich wie bei einem Puzzle vorgehen:
+  * Suchen Sie zuerst im Programmablauf alle Iterationen und erstellen Sie ein entsprechendes Element je Iteration
+  * Suchen Sie nun im Programmablauf alle Selektionen und erstellen Sie ebenso pro Selektion ein entsprechendes Element
+  * Suchen Sie zuletzt alle Sequenzen und pro Sequenz erstellen Sie wiederum ein entsprechendes Element
+  * Beginnen Sie nun damit, alle erstellten Elemente in eine korrekte Reihenfolge zu bringen
+
+Dieses Vorgehen hat den Vorteil, dass weniger oft ein Element vergessen geht, als wenn man gleich mit dem eigentlichen Ablauf zu zeichnen beginnt.
+Insbesondere bei der Verwendung einer Zeichen-Software (z.B. Visio) ist es einfach, zuerst alle Elemente unabhängig voneinander zu zeichnen
+und dann an die korrekte Position zu verschieben.
+
+
+===== Vorgehen =====
+  - Ausgangslage / Aufgabe des Programmes verstehen.
+  - Ablaufplan entwerfen
+  - Ablaufplan durchspielen
+  - Sind noch Fehler vorhanden?
+    - Ablaufplan ergänzen, korrigieren.
+    - Zurück zu 3.
+
+
+===== Ausgangslage =====
+Am Anfang steht die Beschreibung des Programms.
+In dieser Beschreibung finden Sie alle nötigen Angaben um die Aufgabe des Programmes zu verstehen.
+
+  * Welchen Zweck soll das Programm erfüllen?
+  * Welche Daten stehen zur Verfügung?
+  * Welches Resultat soll das Programm liefern?
+
+<WRAP center round box 60%>
+**Beispiel "Hasen und Hühner"**
+
+Ein Bauer auf seinem Hof eine unbekannte Anzahl von Hühnern und Hasen.
+Diese Tiere haben sich in den letzten Jahren stark vermehrt.
+Deshalb möchte der Bauer wissen, wie viele Hasen und wie viele Hühner auf seinem Hof leben.
+Der Bauer kennt nur die Anzahl der Tiere und die Anzahl der Beine.
+
+__Aufgabe des Programmes__
+  * Das Programm soll ermitteln, wie viele Hasen und wie viele Hühner auf dem Hof leben. 
+  * Verfügbare Daten: Anzahl Tiere, Anzahl Beine.
+  * Resultat: n Hühner und n Hasen.
+
+</WRAP>
+
+
+
+
+
+
+
+===== Ablaufplan entwerfen =====
+Beim Entwurf der Ablaufplans gehen wir nicht einfach von oben nach unten vor.
+Stattdessen suchen wir die zentralen Steuerelemente im Ablauf.
+Diese Elemente bestimmen den Ablauf und die Logik des Programms:
+  * Haupt-Iteration welche den Ablauf steuert.
+  * Wichtige Selektion welche bestimmt, welche Verarbeitung durchgeführt wird.
+
+>> Entwerfen Sie zunächst diese zentralen Elemente.
+
+Die restlichen Befehle lassen sich dann relativ einfach im Ablauf platzieren.
+
+<WRAP center round box 60%>
+**Beispiel "Hasen und Hühner"**
+
+Der Benutzer gibt die Anzahl der Tiere und die Anzahl der Beine ein.
+Das Programm nimmt zunächst an, dass alle Tiere Hasen sind:
+  * Hasen = Anzahl Tiere
+  * Hühner = 0
+
+Nun berechnet das Programm die Anzahl der Beine ''(Hasen * 4) + (Hühner * 2)''.
+Ist die berechnete Anzahl der Beine grösser als die eingegebene Anzahl Beine,
+dann reduziert das Programm die Anzahl der Hasen um 1 und erhöht die Anzahl der Hühner um 1.
+Nun berechnet das Programm die neue Anzahl der Beine und vergleicht erneut die berechnete mit der eingegebenen Anzahl der Beine.
+
+__Zentrale Elemente__
+
+Das zentrale Element dieses Programms ist der Vergleich **''berechnete Beine > eingegebene Beine''**.
+Es handelt sich dabei um eine Iteration, da dieser Vergleich eine unbekannte Anzahl mal (0 - n)  durchgeführt wird.
+
+{{:modul:m319:learningunits:lu03:pap_hauptiteration.png|}}
+
+__Weitere Elemente__
+
+  * Eingabe: Anzahl Tiere
+  * Eingabe: Anzahl Beine
+  * Hasen = Anzahl Tiere
+  * Hasen = Hasen - 1
+  * Hühner = 0
+  * Hühner = Hühner + 1
+  * Berechnete Beine = (Hasen * 4) + (Hühner * 2)
+  * Ausgabe: Hasen & Hühner
+
+Diese Elemente lassen sich relativ einfach rund um die zentrale Iteration anordnen.
+
+{{:modul:m319:learningunits:lu03:pap_hasenhuehner1.png?400|}}
+</WRAP>
+
+
+
+
+
+
+===== Ablaufplan durchspielen =====
+Nach dem Entwurf müssen Sie prüfen, ob der Ablaufplan korrekt ist.
+Dazu bestimmt man verschiedene Werte für die Daten und geht Schritt für Schritt durch den Ablaufplan.
+Auf einem Notizblatt hält man die Werte der verschiedenen Variablen fortlaufend fest.
+
+=== Übung Ablaufplan durchspielen ===
+Wir nehmen an, dass 10 Tiere mit 32 Beinen auf dem Hof sind. Spielen Sie auf Papier den Ablauf durch.
+Bestimmen Sie nach jeder Iteration die entsprechenden Werte.
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Marcel Suter

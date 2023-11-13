@@ -1,0 +1,13 @@
+====== LU11.A02 - Testprotokoll "Lager" ======
+===== Auftrag =====
+Führen Sie die Testfälle für das Programm „Lager“ durch und erstellen Sie ein Testprotokoll.
+  * Sie können Ihre eigenen Testfälle aus der [[modul:m431:learningunits:lu11:aufgaben:pandemie|Aufgabe LU11.A01]] verwenden.
+  * Alternativ verwenden Sie die Testfälle aus der [[modul:m431:learningunits:lu11:loesungen:pandemie|Lösung LU11.L01]].
+
+==== Vorgehen ====
+
+  * Laden Sie das Archiv **lagertest.zip** aus Moodle herunter oder nehmen Sie die Aufgabe [[https://classroom.github.com/a/8Vb2CIef|Aufgabe_M431_Lagerverwaltung]] in Github-Classroom an.
+  * Führen Sie das File lagertest.py in der Konsole oder via PyCharm aus.
+    ''python lagertest.py''
+
+  * Erstellen Sie einen Testprotokolleintrag für jeden Testfall.

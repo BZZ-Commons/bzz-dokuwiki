@@ -1,0 +1,80 @@
+====== 04 - Kommentare und Dokumentation ======
+
+//Zur Dokumentation des Sourcecodes verwenden wir Docstring. Dadurch ersparen wir uns eine separate Beschreibung der Klassen und Methoden in einem Textdokument.//
+
+===== Klassen =====
+
+//Der Docstring einer Klasse ist die Visitenkarte einer Klasse. Er informiert den Programmierer über Aufgabe und Version dieser Klasse.//
+
+|{{:howto:codingstandards:zwingend.png?30|}}| Jede Klasse hat Beschreibung als Docstring. Dieser enthält mindestens die Angaben zu: |
+| ::: | * Kurzbeschreibung |
+| ::: | * Attribute |
+| ::: | * Methoden (ausser Standard-Getter, -Setter, -Deleter) |
+
+=== Beispiel ===
+<code python>
+class Category:
+    """
+    the category to which a project is assigned
+
+    Attributes
+    ----------
+    category_id : int
+        unique key for a category
+    title : str
+        the title of a category
+
+    Methods
+    -------
+    compare(self, other):
+        compares the title of this category with another category
+    """
+</code>
+
+===== Funktion =====
+
+Der Docstring liefert alle Angaben über die Aufgabe und Schnittstelle einer Funktion.
+
+|{{:howto:codingstandards:zwingend.png?30|}}| Jede Methode hat einen Docstring mit den Angaben:· Kurzbeschreibung· Beschreibung der Parameter (falls vorhanden)· Beschreibung des Returnwerts (falls vorhanden)· Beschreibung der Exceptions (falls vorhanden) |
+
+=== Beispiel ===
+<code python>
+def load_project(project_id, category)
+    """
+    loads a project from the database
+    
+        :param project_id (int): the unique id of a project
+        :param category (str):   the category title to be searched
+
+        :return: result_code(str): a resultcode (SUCCESS, NOT FOUND, ERROR)
+    """
+</code>
+
+===== Kommentare =====
+
+Kommentare sind wie das Salz in der Suppe: Zuwenig und es schmeckt nicht, zu viel und es ist ungeniessbar.
+
+|{{:howto:codingstandards:zwingend.png?30|}}| Jeder Programmblock, dessen Aufgabe nicht offensichtlich ist, wird in einem Kommentar beschrieben. |
+|{{:howto:codingstandards:empfehlung.png?30|}}| Ein kurzer Blockkommentar ist oftmals sinnvoller als Zeilenkommentare, die über den Bildschirm hinausreichen. |
+
+=== Beispiel: Blockkommentar ===
+
+<code python>
+# create a new connector, if not exists
+# and establish connection if needed
+
+
+if self._connector == None:
+    self._connector = Connector
+if self._connector.get_handle == None:
+    self._connector.connect
+</code>
+
+=== Beispiel: Zeilenkommentar ===
+Kurze Kommentare können auch hinter den Befehl geschrieben werden.
+<code python>
+self._school_class = None  # this reference follows later in time
+self._name         = name
+self._report       = report # immediately establish the two-way relationship here
+report.set_student(self)
+</code>

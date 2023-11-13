@@ -1,0 +1,248 @@
+====== LU04a - HTML Styleguide ======
+
+In der Webentwicklung spielt HTML eine zentrale Rolle bei der Strukturierung von Inhalten auf Webseiten. Wie bei jeder Programmiersprache ist es auch hier wichtig, einen konsistenten und effizienten Coding-Stil zu pflegen. In diesem Artikel werden wir einen einheitlichen Coding-Stil für HTML aufzeugen und gute und schlechte Beispiele für HTML-Code präsentieren.
+
+===== Dateinamen in Kleinbuchstaben schreiben =====
+Einige Webserver (Apache, Unix) unterscheiden bei Dateinamen zwischen Groß- und Kleinschreibung: Auf "london.jpg" kann nicht als "London.jpg" zugegriffen werden.
+
+Andere Webserver (Microsoft, IIS) unterscheiden nicht zwischen Groß- und Kleinschreibung: auf "london.jpg" kann als "London.jpg" zugegriffen werden.
+
+Wenn Sie eine Mischung aus Groß- und Kleinbuchstaben verwenden, müssen Sie sich dessen bewusst sein. Wenn Sie von einem Server, der Groß- und Kleinschreibung nicht beachtet, zu einem Server wechseln, der Groß- und Kleinschreibung beachtet, werden selbst kleine Fehler Ihre Applikation zerstören!
+
+Um diese Probleme zu vermeiden, sollten Sie Dateinamen immer in Kleinbuchstaben schreiben!
+
+
+==== Elementnamen in Kleinbuchstaben schreiben ====
+HTML erlaubt die Mischung von Groß- und Kleinbuchstaben in Elementnamen.
+
+Wir empfehlen jedoch, Elementnamen in Kleinbuchstaben zu verwenden, denn:
+
+  * Die Vermischung von Groß- und Kleinbuchstaben sieht schlecht aus
+  * Entwickler verwenden normalerweise Kleinbuchstaben
+  * Kleinbuchstaben sehen sauberer aus
+  * Kleinschreibung ist einfacher zu schreiben
+
+<WRAP center round box 60%>
+**Good:**
+<code html4strict>
+<body>
+<p>This is a paragraph.</p>
+</body>
+</code>
+**Bad:**
+<code html4strict>
+<BODY>
+<P>This is a paragraph.</P>
+</BODY>
+</code>
+</WRAP>
+
+
+
+
+==== Kleinbuchstaben für Attributnamen verwenden ====
+HTML erlaubt die Mischung von Groß- und Kleinbuchstaben in Attributnamen.
+
+Wir empfehlen jedoch die Verwendung von Attributnamen in Kleinbuchstaben, denn:
+
+  * Die Vermischung von Groß- und Kleinbuchstaben sieht schlecht aus
+  * Entwickler verwenden normalerweise Kleinbuchstaben
+  * Kleinbuchstaben sehen sauberer aus
+  * Kleinschreibung ist einfacher zu schreiben
+
+<WRAP center round box 60%>
+**Good:**
+<code html4strict>
+<a href='https://www.w3schools.com/html/'>Visit our HTML tutorial</a>
+</code>
+**Bad:**
+<code html4strict>
+<a HREF='https://www.w3schools.com/html/'>Visit our HTML tutorial</a>
+</code>
+</WRAP>
+
+==== Attributwerte immer in Hochkomma setzen ====
+HTML erlaubt Attributwerte ohne Hochkomma((In den Kursunterlagen verwenden wir Hochkomma, da wir dies von Python gewohnt sind. Sie dürfen auch Anführungszeichen verwenden, nutzen Sie aber immer den gleichen Codingstyle.))  oder Anführungszeichen.
+
+Wir empfehlen jedoch, Attributwerte in Hochkomma zu setzen, denn:
+
+  * Entwickler sind es sich gewohnt Attributwerte in Hochkomma zu setzen
+  * in Hochkomma gesetzte Werte sind leichter zu lesen
+  * Sie MÜSSEN sowieso Hochkomma verwenden, wenn der Wert Leerzeichen enthält
+
+<WRAP center round box 60%>
+**Good:**
+<code html4strict>
+<table class='striped'>
+</code>
+**Bad:**
+<code html4strict>
+<table class=striped>
+</code>
+**Very Bad:**
+<code html4strict>
+<table class=table striped>
+</code>
+</WRAP>
+
+==== Alle HTML-Elemente schließen ====
+In HTML müssen Sie nicht alle Elemente schließen (zum Beispiel das ''<p>''-Element).
+
+Wir empfehlen jedoch dringend, alle HTML-Elemente zu schließen, etwa so:
+
+<WRAP center round box 60%>
+**Good:**
+<code html4strict>
+<section>
+  <p>This is a paragraph.</p>
+  <p>This is a paragraph.</p>
+</section>
+</code>
+**Bad:**
+<code html4strict>
+<section>
+  <p>This is a paragraph.
+  <p>This is a paragraph.
+</section>
+</code>
+</WRAP>
+
+==== alt, width und height für Bilder angeben ====
+Geben Sie immer das ''alt''-Attribut für Bilder an. Dieses Attribut ist wichtig, wenn das Bild aus irgendeinem Grund nicht angezeigt werden kann.
+
+Geben Sie außerdem immer die Breite ''width'' und Höhe ''height'' von Bildern an. Dies verringert das Flackern, da der Browser vor dem Laden Platz für das Bild reservieren kann.
+
+<WRAP center round box 60%>
+**Good:**
+<code html4strict>
+<img src='html5.gif' alt='HTML5' width='128px' height='128px'>
+</code>
+**Bad:**
+<code html4strict>
+<img src='html5.gif'>
+</code>
+</WRAP>
+
+==== Leerzeichen und Gleichheitszeichen ====
+HTML erlaubt Leerzeichen um Gleichheitszeichen. Ein Text ohne Leerzeichen ist jedoch leichter zu lesen und gruppiert Einheiten besser zusammen.
+
+<WRAP center round box 60%>
+**Good:**
+<code html4strict>
+<link rel='stylesheet' href='styles.css'>
+</code>
+**Bad:**
+<code html4strict>
+<link rel = 'stylesheet' href = 'styles.css'>
+</code>
+</WRAP>
+
+==== Vermeiden Sie lange Codezeilen ====
+Wenn Sie einen HTML-Editor verwenden, ist es NICHT bequem, nach rechts und links zu scrollen, um den HTML-Code zu lesen.
+
+Versuchen Sie, zu lange Codezeilen zu vermeiden.
+
+==== Leerzeilen und Einrückungen ====
+Fügen Sie keine Leerzeilen, Leerzeichen oder Einrückungen ohne Grund ein.
+Fügen Sie zur besseren Lesbarkeit Leerzeilen ein, um große oder logische Codeblöcke zu trennen.
+Fügen Sie zur besseren Lesbarkeit zwei Leerzeichen als Einrückung ein. 
+
+**Hinweis**: Webstorm ersetze einen Tabulator automatisch mit Leerzeichen
+
+<WRAP center round box 60%>
+**Good:**
+<code html4strict>
+<body>
+
+<h1>Famous Cities</h1>
+
+<h2>Tokyo</h2>
+<p>Tokyo is the capital of Japan, the center of the Greater Tokyo Area, and the most populous metropolitan area in the world.</p>
+
+<h2>London</h2>
+<p>London is the capital city of England. It is the most populous city in the United Kingdom.</p>
+
+<h2>Paris</h2>
+<p>Paris is the capital of France. The Paris area is one of the largest population centers in Europe.</p>
+
+</body>
+</code>
+**Bad:**
+<code html4strict>
+<body>
+<h1>Famous Cities</h1>
+<h2>Tokyo</h2><p>Tokyo is the capital of Japan, the center of the Greater Tokyo Area, and the most populous metropolitan area in the world.</p>
+<h2>London</h2><p>London is the capital city of England. It is the most populous city in the United Kingdom.</p>
+<h2>Paris</h2><p>Paris is the capital of France. The Paris area is one of the largest population centers in Europe.</p>
+</body>
+</code>
+**Good Table Example:**
+<code html4strict>
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>A</td>
+    <td>Description of A</td>
+  </tr>
+  <tr>
+    <td>B</td>
+    <td>Description of B</td>
+  </tr>
+</table>
+</code>
+**Good List Example:**
+<code html4strict>
+<ul>
+  <li>London</li>
+  <li>Paris</li>
+  <li>Tokyo</li>
+</ul>
+</code>
+</WRAP>
+
+==== <title>-Element immer angeben====
+Das ''<title>''-Element ist in HTML erforderlich.
+
+Der Inhalt eines Seitentitels ist sehr wichtig für die Suchmaschinenoptimierung (SEO)! Der Seitentitel wird von den Algorithmen der Suchmaschinen verwendet, um die Reihenfolge bei der Auflistung der Seiten in den Suchergebnissen zu bestimmen.
+
+Das ''<title>''-Element:
+
+  * definiert einen Titel in der Browser-Symbolleiste
+  * liefert einen Titel für die Seite, wenn sie zu den Favoriten hinzugefügt wird
+  * zeigt einen Titel für die Seite in den Suchergebnissen der Suchmaschinen an
+  * Versuchen Sie also, den Titel so genau und aussagekräftig wie möglich zu gestalten:
+
+<WRAP center round box 60%>
+<code html4strict>
+<title>HTML Style Guide and Coding Conventions</title>
+</code>
+</WRAP>
+
+==== HTML-Kommentare====
+Kurze Kommentare sollten in einer Zeile geschrieben werden, etwa so:
+
+<WRAP center round box 60%>
+<code html4strict>
+<!-- This is a comment -->
+</code>
+</WRAP>
+
+Kommentare, die sich über mehr als eine Zeile erstrecken, sollten wie folgt geschrieben werden:
+
+<WRAP center round box 60%>
+<code html4strict>
+<!--
+  This is a long comment example. This is a long comment example.
+  This is a long comment example. This is a long comment example.
+--></code>
+</WRAP>
+Lange Kommentare sind besser zu erkennen, wenn sie mit zwei Leerzeichen eingerückt sind.
+
+----
+
+{{tag>m293-LU04 m293-H2G m293-H2F}}
+
+Frei nach den Beispielen von [[https://www.w3schools.com|w3school]]

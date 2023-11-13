@@ -1,0 +1,14 @@
+====== Lösungsvorschlag: PAP - Iterationen ======
+
+===== Aufgabe 1 : Zufallszahl =====
+
+{{:modul:m319:learningunits:lu03:loesungen:pap_zahlraten.png|}}
+
+Die Eingabe erfolgt 1x **vor** der Iteration und 1x **am Ende** der Iteration.
+Diese Technik wird als **read ahead** bezeichnet.
+
+Würden wir die Eingabe nur 1x am Anfang der Iteration setzen, so würde bei einer korrekten Eingabe "Falsch" "Richtig" ausgegeben.
+
+===== Aufgabe 2 : Passwort =====
+
+{{:modul:m319:learningunits:lu03:loesungen:pap_passwort.png|}}

@@ -1,0 +1,38 @@
+====== LU07c - Postman ======
+<WRAP center round info 60%>
+[[https://www.postman.com/|Postman]] ist eine Plattform zum Entwickeln und Testen von Programmierschnittstellen (API).
+In unserem Unterricht nutzen wir Postman um die API einer Webapplikation zu testen.
+</WRAP>
+
+Postman ermöglicht es uns, API-Tests zu definieren und manuell oder automatisiert durchzuführen.
+Dadurch können wir unsere API fortlaufend überprüfen und Fehler entdecken.
+
+===== Postman nutzen =====
+Postman ist für den persönlichen Einsatz gratis verfügbar.
+Erst wenn du mit einem Team gemeinsame Tests verwalten willst, musst du eine bezahlte Lizenz lösen.
+
+Du kannst Postman herunterladen und installieren oder als webbasierte Applikation nutzen.
+In beiden Fällen lohnt es sich, eine Benutzerkonto zu erstellen.
+Dadurch werden deine Testfälle auf der Platform von Postman gespeichert.
+
+===== Wichtige Begriffe =====
+==== Workspace ====
+Ein Workspace ist der Ablageort für alle deine Komponenten in Postman.
+Als Gratisnutzer steht dir mit "My Workspace" ein persönlicher Ablageort zur Verfügung.
+
+==== Collection / Folder ====
+Eine Collection ist eine Sammlung von Tests.
+Du kannst z.B. für jede zu testende Applikation eine Collection erstellen.
+
+Innerhalb einer Collection können die Tests mittels Folder (Ordner) weiter organisiert werden.
+
+==== Request ====
+Ein Request ist ein einzelner Testfall.
+Er enthält den Aufruf der API mit allen benötigten Daten.
+Zudem kann der Request über Javascript gesteuert werden und du kannst du Resultate automatisiert auswerten (mehr dazu in der LU08).
+
+===== Dokumentation =====
+Im [[https://learning.postman.com/docs/introduction/overview/|Postman Learning Center]] findest du alle Funktionen von Postman beschrieben und mit Beispielen erklärt.
+----
+{{tag>M450-LU07}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

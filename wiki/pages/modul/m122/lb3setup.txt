@@ -1,0 +1,39 @@
+====== Setup für die LB3 im Modul 122 ======
+Führen Sie die folgenden Befehle im Terminal ihrer **Linux**-Umgebung durch:
+
+<code>
+wget https://it.bzz.ch/wikiV2/_media/modul/m122/vmwares2.tar.gz
+tar xf ./vmware.tar.gz -C ~/
+ls -R ~/vmware
+</code>
+
+Als Resultat sollten Sie folgendes sehen.
+
+//Anstelle von ''marcel'' steht ihr Benutzername//
+<code>
+/home/marcel/vmware:
+vmCopy  vmcopy.sh  vmTemplate
+
+/home/marcel/vmware/vmCopy:
+vmLinux  vmWindows
+
+/home/marcel/vmware/vmCopy/vmLinux:
+
+/home/marcel/vmware/vmCopy/vmWindows:
+
+/home/marcel/vmware/vmTemplate:
+vmLinux  vmWindows
+
+/home/marcel/vmware/vmTemplate/vmLinux:
+vmLinux.nvram  vmLinux-s001.vmdk  vmLinux-s002.vmdk  vmLinux-s003.vmdk  vmLinux.vmdk  vmLinux.vmsd  vmLinux.vmx  vmLinux.vmxf  vmware-1.log  vmware.log
+
+/home/marcel/vmware/vmTemplate/vmWindows:
+vmware-1.log  vmware.log  vmWindows.nvram  vmWindows-s001.vmdk  vmWindows-s002.vmdk  vmWindows-s003.vmdk  vmWindows.vmdk  vmWindows.vmsd  vmWindows.vmx  vmWindows.vmxf
+</code>
+
+
+<WRAP center round important 60%>
+Laden Sie diese Dateien auf keinen Fall unter Windows herunter.
+
+{{ :modul:m122:vmwares2.tar.gz |}}
+</WRAP>

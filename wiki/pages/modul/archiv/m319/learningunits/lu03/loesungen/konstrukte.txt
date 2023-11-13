@@ -1,0 +1,36 @@
+====== Lösungsvorschlag: Fehlerhafte PAP-Konstrukte ======
+
+===== Beispiel 1 =====
+Die Sequenz "Alkohol erlaubt" muss einen Nachfolger haben.
+
+{{:modul:m319:learningunits:lu03:loesungen:pap_verboten_2l.png|}}
+
+===== Beispiel 2 =====
+Die Sequenz "anzahl = 1" darf nur einen Nachfolger haben.
+
+{{:modul:m319:learningunits:lu03:loesungen:pap_verboten_4l.png|}}
+
+===== Beispiel 3 =====
+Die Iteration "Solange zahl < 100" hat keinen Nachfolger, wenn die Bedingung nicht mehr erfüllt ist.
+
+{{:modul:m319:learningunits:lu03:loesungen:pap_verboten_6l.png|}}
+
+===== Beispiel 4 =====
+Die Iteration "Solange zahl < 100" hat zwei Ausgänge:
+  * Wenn die Zahl grösser/gleich 100 wird die Iteration korrekt beendet.
+  * Wenn die Zahl gleich 32 ist, gibt es einen verbotenen "Notausgang".
+
+{{:modul:m319:learningunits:lu03:loesungen:pap_verboten_3l.png|}}
+
+===== Beispiel 5 =====
+Dieses Konstrukt ist formal korrekt.
+
+===== Beispiel 6 =====
+Die Selektion "Falls Ferrari" springt zum Inhalt der Selektion "Deutsches Auto".
+Ein solcher Sprung in einen anderen Programmblock ist nicht zulässig.
+
+{{:modul:m319:learningunits:lu03:loesungen:pap_verboten_7l.png|}}
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Marcel Suter

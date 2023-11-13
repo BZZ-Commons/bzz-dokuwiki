@@ -1,0 +1,49 @@
+====== LU06.A04: Kleinste und grösste Zahl ======
+<WRAP center round todo 60%>
+Erstelle ein Programm, welches aus einer Liste von 15 Zahlen die kleinste und die grösste Zahl findet.
+</WRAP>
+ 
+<HTML>
+<iframe src="https://trinket.io/embed/python3/44dd1a4054?outputOnly=true&start=result" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+   </HTML> 
+
+===== Auftrag =====
+
+  - Erstelle eine Liste mit 15 zufälligen Ganzzahlen zwischen -999 und +999. \\ Diese Liste lässt sich am einfachsten mit ''random.sample(range(n,m),x)'' erzeugen. 
+    * ''n'' = kleinstmögliche Zufallszahl.
+    * ''m'' = grösstmögliche Zufallszahl.
+    * ''x'' = Anzahl der Zufallszahlen.
+  - Definiere eine Variable ''smallest'' mit einer Zahl, die grösser als die grösstmögliche Zufallszahl ist (z.B. 10000) und eine Variable ''biggest'' mit einer Zahl, die kleiner als die kleinstmögliche Zufallszahl ist (z.B. -10000)
+  - Iteration über alle Zahlen in der Liste
+    - Falls die aktuelle Zahl kleiner als ''smallest'' ist
+      - Speichern Sie die aktuelle Zahl in ''smallest''
+    - Falls die aktuelle Zahl grösser als ''biggest'' ist
+      - Speichern Sie die aktuelle Zahl in ''biggest''
+  - Gib ''smallest'' und ''biggest'' aus
+  - Gib die Liste mit den Zahlen als Returnwert zurück.
+
+==== Erweiterung ====
+Beim Start des Programmes gibt der Benutzer an, wie viele Zahlen in der Liste stehen sollen.
+Die Liste wird mit so vielen Zufallszahlen gefüllt, wie der Benutzer angegeben hat.
+
+===== Vorgehen =====
+
+  - Akzeptiere das GitHub Classroom Assignment im Moodlekurs.
+  - Klone das Repository in PyCharm.
+  - Codiere die Programmlogik in ''minmax.py''.
+  - Teste dein Programm mit den Testfällen in ''minmax_test.py''.
+  - Führe einen Commit und einen Push durch.
+
+=== Abgabe ===
+Die Abgabe erfolgt durch den Push ins GitHub Repository.
+In Moodle ist keine Abgabe vorgesehen oder möglich.
+----
+<details>
+<summary>//=> GitHub Repo für externe Besucher//</summary>
+
+GitHub-Repo: https://github.com/templates-python/m319-lu06-a04-minmax
+
+//Lernende am BZZ **müssen** den Link zum GitHub Classroom Assignment verwenden//
+</details>
+{{tag>M319-LU06}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

@@ -1,0 +1,44 @@
+====== LU07b - Anforderungen ======
+===== Funktionale Anforderungen =====
+Funktionale Anforderungen beschreiben gewünschte Funktionalitäten (was soll das System tun/können) eines Systems bzw. Produkts, dessen Daten oder Verhalten.  Um funktionale Anforderungen vollständig zu erheben, können verschiedene Methoden herangezogen werden. In benutzerorientierten Systemen können beispielsweise Usecases eingesetzt werden.
+Ziel ist es, die funktionalen Anforderungen an ein System zu erheben, um eine optimale Unterstützung der Benutzer bei der Erfüllung individueller Aufgaben zu ermöglichen. Nachfolgend einige Beispiele für funktionale Anforderungen:
+  * Datum
+  * Funktion (Was soll es grundsätzlich tun?)
+  * Verhalten
+
+===== Nichtfunktionale Anforderungen =====
+Im Gegensatz zu funktionalen Anforderungen, die beschreiben, WAS ein System leisten soll (funktional), geben nichtfunktionale Anforderungen an, WIE GUT ein System etwas leisten soll (qualitativ). Die nichtfunktionalen Anforderungen an ein System können unterschiedlichster Art sein. So wurden im Rahmen des ISO Standards 9126 unter anderem folgende Typen von nichtfunktionalen Anforderungen (Qualitätsattribute) identifiziert:
+  * Performanz
+  * Funktionalität (Feature)
+  * Usability
+  * Portabilität
+  * Sicherheit
+
+Ziel ist es, klare Qualitätsvorgaben an die systemunterstützten Geschäftsprozesse und Benutzeraufgaben zu erheben und schließlich umsetzen zu können. Folglich ist die zentrale Frage:
+
+**«Welche Restriktionen/Einschränkung muss die Lösung einhalten?». **
+
+**Beispiel**: „Das Produkt soll dem Anwender innerhalb von einer Sekunde antworten.“
+
+==== Beispiele für Nichtfunktionale Anforderungen ====
+Leistungsanforderung (performance requirements) – eine Anforderung,
+deren zu Grunde liegendes Bedürfnis ein Leistungsmerkmal ist.
+
+Formen von Leistungsanforderungen
+  * Zeit
+      * für die Erledigung einer Aufgabe
+      * für eine Reaktion
+      * Minimum? Maximum? Innerhalb eines gegebenen Intervalls? Im Mittel? Tole-rierte Abweichungen?
+  * Menge
+      * von Daten
+      * Minimum? Maximum?
+  * Raten
+      * Transaktionsrate
+      * Häufigkeit der Verwendung einer Funktion
+      * im Mittel? Maximal? Verteilung bekannt?
+  * Ressourcenverbrauch
+      * Rechnerkapazität
+      * Speicherkapazität
+      * Übertragungskapazität
+  * Genauigkeit* (von Berechnungen)
+      * Auf wie viel Stellen genau? Festkomma oder Gleitkomma?

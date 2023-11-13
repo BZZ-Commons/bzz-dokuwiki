@@ -1,0 +1,36 @@
+===== LU04 Python Lists =====
+
+==== Ablauf ====
+
+  * Theoretische Grundlagen von LU03 kurz repetieren
+  * Lernziele studieren und gezielt in Theorie über [[https://www.w3schools.com/python/python_lists.asp|Lists]] nach Antworten suchen
+  * Übungen 1-4 unten lösen (2 Übungen = 1 Tomato à 20’)
+  * 8 Exercises lösen bezgl. [[https://www.w3schools.com/python/exercise.asp?filename=exercise_variables1|Lists]] (-> Screenshot an LP schicken via Teams)
+
+==== Lernziele: Ich kann ====
+
+  * mind. eine allgemein zugängliche Quelle nennen, wo ich Informationen rund um Python Lists finde.
+  * mind. fünf Funktionen zu Python Lists auswendig aufzählen.
+  * eine Liste erstellen und abfüllen.
+  * ein bestimmtes Element auslesen, verändern oder löschen.
+  * die ganze Liste löschen.
+
+==== Theoretische Grundlagen ====
+
+  * [[https://www.w3schools.com/python/python_lists.asp|Lists]] (s.a. [[modul:s4f:organisation:cheatsheets|Cheat Sheets]] oder [[https://overapi.com/python|OverAPI.com]])
+  * [[https://www.w3schools.com/python/python_arrays.asp|Arrays]], [[https://www.w3schools.com/python/numpy_intro.asp|NumPy]] (optional)
+
+==== Aufgaben ====
+
+  * Übungen 1-4 (aus [[https://github.com/bzz-fgict/s4f/tree/b981b13e593240ea19f60b69069c323d935e69d8/py-basics/src/lectures/lists|GitHub]] jeweils Datei ''exercise?.py'' in IDE kopieren)
+  * 5kyu [[https://www.codewars.com/kata/523a86aa4230ebb5420001e1/python|Anagrams]]
+
+----
+
+<WRAP box 100%>
+**Exkurs [[https://learnpython.com/blog/python-array-vs-list/|Arrays vs. Lists]]**
+  * Arrays müssen deklariert werden. Listen nicht.
+  * Arrays können Daten sehr kompakt speichern.
+  * Arrays eignen sich hervorragend für numerische Operationen.
+  * Arrays und Lists verfügen über dieselben built-in Methoden (siehe [[https://www.w3schools.com/python/python_arrays.asp|Array Methods]]).
+</WRAP>

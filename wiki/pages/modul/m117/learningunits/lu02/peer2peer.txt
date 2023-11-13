@@ -1,0 +1,37 @@
+====== LU02b - Peer to Peer ======
+
+==== Einführung ====
+Das „kleinste“ aller Netzwerke ist das Peer to Peer Netzwerk. Hier sind alle Rechner
+gleichgestellt, d.h. sie können sowohl als Client als auch als Server funktionieren. Eine zentrale
+Kontrolle über die Ressourcen im Netzwerk ist nicht vorgesehen.
+
+==== Merkmale ====
+Jeder einzelne Computer kann seine Ressourcen im Netzwerk mit anderen Computern teilen.
+Die Entscheidung, welche Ressourcen geteilt werden, liegt beim jeweiligen Benutzer, der auch
+gleichzeitig Netzwerkadministrator dieses Computers ist. Die Konsequenz der Gleichrangigkeit
+bedeutet jedoch, dass es keine Zugriffsberechtigungen und Prioritätensteuerung gibt. Es
+bedeutet, dass jeder alles darf und das schwächste Glied in der Kette die Sicherheit und
+Leistungsfähigkeit des Netzwerkes bestimmt.
+
+{{:modul:m117:learningunits:lu02:peertopeer.jpg?400|}}
+
+==== Vorteile ====
+Das Peer to Peer Netzwerk bietet einige Vorteile, auf Grund derer solche Netzwerke eingesetzt
+werden:
+  * Die Installation und Konfiguration ist einfach und erfordert wenig Spezialkenntnisse.
+  * Das Netzwerk ist billig in der Anschaffung und im Betrieb. Mit den gängigen Betriebssystemen lassen sich solche Netzwerke aufbauen und betreiben. Eine spezielle Person für die Wartung und den Betrieb des Netzwerkes ist nicht erforderlich. Im Allgemeinen empfehlen sich Peer to Peer Netzwerke bis zu einer maximalen Anzahl von zehn Rechnern. Aus Gründen der Sicherheit und der Zugriffskontrolle werden teilweise bereits kleinere Netzwerke als Client Server Netzwerke betrieben.
+
+
+==== Nachteile ====
+  * In einem Peer to Peer Netzwerk ist es schwierig, Daten übersichtlich zu organisieren. Daten können irgendwo im Netzwerk sein. Sind Dokumente mehrfach vorhanden, so stellt sich die Frage, welches die aktuelleren Daten sind.
+  * Ein grosser Nachteil kann darin bestehen, dass die verwendeten Rechner in einem Peer to Peer Netzwerken von ihrer Hardware-Ausstattung nicht optimal geeignet sind für ihren Einsatz als Netzwerkkomponenten.
+  * Der Benutzer des Rechners muss unter Umständen mit einer reduzierten Leistung auskommen, wenn seine Maschine fortwährend Anfragen aus dem Netzwerk bearbeiten muss. Dies trifft besonders auf Rechner mit angeschlossenem Drucker zu. Hier kann es zu Performanceproblemen kommen, wenn fortwährend Clients ihre Druckaufträge über das Netzwerk zu diesem Rechner schicken. Im schlimmsten Fall kann dies zum Zusammenbruch des gesamten Netzwerkes führen.
+
+==== Video ====
+[[https://www.youtube.com/watch?v=YguEUt8KUuc]]
+
+----
+
+{{tag>m117}}
+
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Andre Probst

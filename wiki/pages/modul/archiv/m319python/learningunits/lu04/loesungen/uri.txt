@@ -1,0 +1,19 @@
+====== LU04.L04: U = R * I ======
+==== Blockly ====
+{{:modul:m319python:learningunits:lu04:loesungen:lu04_blockly_uri.png?400|}}
+
+==== Python ====
+<code python>
+volt = input('U > ')
+ohm = input('R > ')
+ampere = input('I > ')
+if volt == '?':
+    volt = float(ohm) * float(ampere)
+    print('Resultat U = ', volt, ' Volt')
+elif ohm == '?':
+    ohm = float(volt) / float(ampere)
+    print('Resultat R = ', ohm, ' Ohm')
+else:
+    ampere = float(volt) / float(ohm)
+    print('Resultat I = ', ampere, ' Ampere')
+</code>

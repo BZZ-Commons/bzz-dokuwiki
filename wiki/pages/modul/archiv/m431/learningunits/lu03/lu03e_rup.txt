@@ -1,0 +1,24 @@
+===== LU03e - Rational Unified Prozess (RUP) =====
+{{modul:m431:learningunits:lu03:rup.jpg?200|}}
+
+Die RUP-Methode wurde von der Firma Rational entwickelt und eignet sich besonders für die Führung von Softwareprojekten, da sie stark auf die Bedürfnisse der Softwareentwicklung ausgerichtet ist und entsprechende Softwareunterstützung bietet. RUP umfasst diverse Richtlinien, Vorgaben und Checklisten und eine automatisierte Tool-Unterstütz., Die Methode unterscheidet die Beschreibungsobjekte **Rolle, Aktivität und Ergebnis** und gliedert die Projektführung in die Dimensionen Disziplinen und Phasen. Disziplinen sind wichtige (grössere) Aufgabenbereiche in einem Projekt während die Phasen einzelne r Sequenzen des Projektablaufs darstellen. Letztere haben folgende Bedeutungen:
+
+  * **Inception: **Beginn bzw. Initialisierung des Projekts mit den Kernprozessen «Fachliche Aufgabenstellung verstehen und modellieren»
+  * **Elaboration: **Ausarbeitung des Projekts mit den Kernprozessen «Anforderungen analysieren und Lösung entwerfen»
+  * **Transition: **Inbetriebnahme der Projektergebnisse mit den Kernprozessen «Lösungen implementieren und testen und ausliefern»
+
+Je nach Phase sind die einzelnen Disziplinen in unterschiedlicher **Intensität **auszuführen.
+
+{{modul:m431:learningunits:lu03:rup_intensitaet.jpg?600|}}
+
+//Abbildung 4: Intensität bei den Kern- und Supportprozessen nach RUP//
+
+
+=== Erläuterungen zur Grafik ===
+
+  * Die Intensität des Kernprozesses **Business Modelling** ist bei Projektbeginn hoch und nimmt danach kontinuierlich ab.
+  * Der Supportprozess **Project Management** ist eine Disziplin, die in allen Phasen eine zu- und abnehmende Intensität aufweisen.
+  * Die Phase **Inception** dient als Vorlaufphase. Danach wird iterativ entwickelt. Iteration 1 bis Iteration N bedeutet, dass in jeder Phase entworfen, programmiert und getestet wird, damit möglichst schnell vorzeigbare Zwischenergebnisse entstehen (z.B. eine lauffähige Applikation mit bestimmten Funktionen).
+
+Der Anwendung eines iterativen Vorgehensmodells bei der Softwareentwicklung liegt die Erfahrung zugrunde, dass es kaum möglich ist, gleich zu Beginn alle Funktionen genau so zu definieren, dass sie bis zum Ende des Realisierungsprozesses gültig sind. Vielmehr zeigt die Praxis, dass im Verlauf eines Entwicklungsprojekts immer wieder neue Wünsche aufkommen und neue Anforderungen zu berücksichtigen sind. Entsprechend spielen die Supportprozesse **Change- & Configuration Management**von Beginn an eine wichtige Rolle und deren Bedeutung nimmt in der Phase «Construction» laufend zu, wenn früh erste Lösungsansätze zu erkennen sind.
+

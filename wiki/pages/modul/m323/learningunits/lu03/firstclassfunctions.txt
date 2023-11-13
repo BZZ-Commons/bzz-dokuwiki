@@ -1,0 +1,83 @@
+====== LU03d - First-Class Functions ======
+
+In der funktionalen Programmierung sind Funktionen First-Class Citizens. Dies bedeutet, dass Funktionen genauso behandelt werden wie andere Werte wie Zahlen, Strings oder Listen. Sie können als Argumente an andere Funktionen übergeben, von Funktionen zurückgegeben und in Variablen gespeichert werden.
+
+=== Definition von First-Class Functions ===
+
+First-Class Functions haben die folgenden Eigenschaften:
+
+  - **Sie können in Variablen gespeichert werden:** Eine Funktion kann einer Variablen zugewiesen und später über diese Variable aufgerufen werden.
+  - **Sie können als Argumente übergeben werden:** Funktionen können als Parameter an andere Funktionen übergeben werden.
+  - **Sie können von anderen Funktionen zurückgegeben werden:** Funktionen können andere Funktionen erstellen und zurückgeben.
+  - **Sie können in Datenstrukturen gespeichert werden:** Funktionen können in Listen, Dictionaries und anderen Datenstrukturen gespeichert werden.
+
+=== Beispiele für First-Class Functions ===
+
+Hier sind einige Beispiele, die die Konzepte von First-Class Functions in Python demonstrieren.
+
+==== Funktionen in Variablen Speichern ====
+
+<code python>
+def say_hello(name):
+    return f'Hello, {name}!'
+
+if __name__ == '__main__':
+    greeting = say_hello
+    print(greeting('Alice'))  # Ausgabe: Hello, Alice!
+</code>
+
+==== Funktionen als Argumente Übergeben ====
+
+<code python>
+def add(x, y):
+    return x + y
+
+
+def subtract(x, y):
+    return x - y
+
+
+def operate(func, x, y):
+    return func(x, y)
+
+
+if __name__ == '__main__':
+    print(operate(add, 3, 4))  # Ausgabe: 7
+    print(operate(subtract, 10, 3))  # Ausgabe: 7
+</code>
+
+==== Funktionen von anderen Funktionen zurückgeben lassen ====
+
+<code python>
+def add(x, y):
+    return x + y
+
+
+def subtract(x, y):
+    return x - y
+
+
+def get_operation(operator):
+    if operator == '+':
+        return add
+    else:
+        return subtract
+
+
+if __name__ == '__main__':
+    operation = get_operation('+')
+    print(operation(5, 3))  # Ausgabe: 8
+
+</code>
+
+=== Bedeutung in der Funktionalen Programmierung ===
+
+First-Class Functions sind ein zentraler Bestandteil der funktionalen Programmierung und ermöglichen Konzepte wie Higher-Order Functions, Closures und die allgemeine Nutzung von Funktionen als Daten. Sie fördern einen deklarativen Programmierstil, der den Code oft leichter verständlich, testbar und wartbar macht.
+
+<WRAP center round tip 60%>
+First-Class Functions erweitern das Konzept von Funktionen über einfache Aktionen hinaus und machen sie zu vollwertigen Objekten innerhalb der Programmiersprache. Dieses Konzept ist eine Säule der funktionalen Programmierung und findet Anwendung in vielen modernen Programmiersprachen.
+</WRAP>
+
+----
+{{tag>M323-LU03}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/ch/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Kevin Maurizi 

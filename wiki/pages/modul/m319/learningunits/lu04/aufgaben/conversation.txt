@@ -1,0 +1,48 @@
+====== LU04.A02 - Conversation ======
+<WRAP center round todo 60%>
+Schreiben Sie ein Programm das eine Konversation führt.
+</WRAP>
+
+===== Auftrag =====
+
+Schreiben Sie ein Programm, das mit Ihnen eine Konversation führt, die wie folgt aussieht:
+
+<HTML>
+<iframe src="https://trinket.io/embed/python3/670fd5b71b?outputOnly=true&start=result" width="100%" height="200" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+</HTML>
+
+<code>
+Greetings! How are you doing?
+*Good thank you!*
+Oh, how interesting. Tell me more!
+*Well, there's really nothing to tell.*
+Thanks for sharing!
+</code>
+
+Die Eingaben des Users sind hier fürs Verständnis mit Sternen eingefasst *...* 
+
+<code>
+Greetings! How are you doing?
+*Nice and dandy like cotton candy!*
+Oh, how interesting. Tell me more!
+*Just went shopping.*
+Thanks for sharing!
+</code>
+
+===== Vorgehen =====
+
+  - Akzeptiere das GitHub Classroom Assignment im Moodlekurs.
+  - Klone das Repository in PyCharm.
+  - Codiere die Programmlogik in ''main.py''.
+  - Teste dein Programm mit den Testfällen in ''main_test.py''.
+  - Führe einen Commit und einen Push durch.
+
+
+Anmerkung: Kümmern Sie sich im Moment nicht zu sehr um ''if %%__%%name%%__%% == '%%__%%main%%__'%%:''. Wir brauchen es technisch gesehen nicht für dieses Programm, aber es ist eine gute Übung, es einzubauen, und es wird in späteren Übungen klarer werden.
+
+----
+<nodisp>GitHub-Repo: https://github.com/templates-python/m319-lu04-a02-conversation</nodisp>
+
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/ch/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Kevin Maurizi 
+
+Diese Aufgabe ist eine übersetzte und angepasste Aufgabe von [[https://scott3142.uk/|Scott Morgan]], verwendet unter CC BY NC SA.

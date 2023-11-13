@@ -1,0 +1,116 @@
+====== LU07a - Auswahllisten ======
+//siehe auch [[https://wiki.selfhtml.org/wiki/HTML/Tutorials/Formulare/Auswahllisten|selfhtml - Auswahllisten]]//
+
+<WRAP center round info 60%>
+Auf dieser Seite befassen wir uns mit ''select'', ''option'' und ''optgroup'' für Auswahllisten in unseren Formularen.
+</WRAP>
+
+===== Aufbau einer Auswahlliste =====
+Sie können dem Anwender mit dem ''select''-Element eine Auswahliste mit festen Einträgen anbieten, aus der er einen Eintrag auswählen kann. Diese Einträge werden innerhalb eines ''option''-Elements notiert. Der Text des ausgewählten Eintrags wird übertragen, wenn der Anwender das Formular abschickt.
+
+{{:modul:m293:learningunits:lu07:select.png?200 |}}
+
+<code html4strict>
+<form action='#'>
+  <label>Anreise:
+    <select name='anreise' size='5'>
+      <option>Auto</option>
+      <option>Zug</option>
+      <option>Bus</option>
+      <option>Fahrrad</option>
+      <option>Schiff</option>
+    </select>
+  </label>
+</form>
+</code>
+
+Es ist möglich, die folgenden Attribute hinzuzufügen:
+
+{{:modul:m293:learningunits:lu07:dropdown.png?200 |}}
+  * ''name'' Der interner Bezeichnername des Formular-Elements, damit kann das Zielsystem das Element identifizieren.
+  * ''size'' Die Größe der Liste bestimmt die Anzahl der Zeilen oder Einträge, die **gleichzeitig angezeigt** werden können. Der Benutzer kann in der Liste scrollen, wenn mehr Einträge existieren als angezeigt werden. Es ist möglich, eine **Dropdown-Liste** zu erstellen, indem Sie size="1" angeben oder das Attribut ganz weglassen.
+
+==== Auswahllisten mit Mehrfachauswahl ====
+Wenn Sie es nicht explizit spezifizieren, kann der Benutzer aus einer Liste genau **einen Eintrag** auswählen. Das ''multiple''-Attribut ermöglicht eine Mehrfachauswahl. Durch die Mehrfachauswahl soll das ''select'' Element auf der Server auch als Array erkannt werden, dazu muss der ''name'' des Elementes mit eckigen Klammern abgeschlossen werden ''[]''.
+
+{{:modul:m293:learningunits:lu07:multiple.png?200 |}}
+<code html4strict>
+<form action='#'>
+  <label>Anreise:
+    <select name='anreise[]' size='5' multiple>
+      <option>Auto</option>
+      <option>Zug</option>
+      <option>Bus</option>
+      <option>Fahrrad</option>
+      <option>Schiff</option>
+    </select>
+  </label>
+</form>
+</code>
+
+<WRAP center round important 60%>
+Ein ''select'' Element mit Mehrfachauswahl soll wie ein Array interpretiert werden. Damit ''php'' auf dem Server das ''select'' Element auch als Array erkennt, muss der ''name'' des Elementes mit eckigen Klammern abgeschlossen werden ''[]''.
+</WRAP>
+
+<WRAP center round tip 60%>
+Es ist nicht direkt erkennbar, dass die Liste eine Mehrfachauswahl zulässt. Es ist ebenfalls nicht allen Benutzern bekannt, wie man mehrere Einträge auswählen kann. Aus diesem Grund empfiehlt es sich, bei Auswahllisten [[modul:m293:learningunits:lu07:checkbox|Checkboxen]] zu verwenden.
+</WRAP>
+
+==== Einträge vorselektieren ====
+Standardmässig ist kein Eintrag in einer Auswahlliste vorselektiert. Sie können einen Eintrag mit dem ''select'' Attribut vorauswählen. Ein Markierungsbalken ist dann für ausgewählte Einträge sichtbar.
+
+{{:modul:m293:learningunits:lu07:select_selected.png?200 |}}
+
+<code html4strict>
+<form action='#'>
+  <label>Anreise:
+    <select name='anreise' size='5'>
+      <option selected>Auto</option>
+      <option>Zug</option>
+      <option>Bus</option>
+      <option>Fahrrad</option>
+      <option>Schiff</option>
+    </select>
+  </label>
+</form>
+</code>
+
+==== Auswahllisten mit Menüstruktur definieren ====
+Die Verwendung von ''<optgroup>''-Tags in HTML ermöglicht es, Auswahllisten (Select-Menüs) hierarchisch zu strukturieren und Kategorien zu erstellen. Dies kann sinnvoll sein, um eine klare und intuitive Organisation von Optionen in der Benutzeroberfläche zu ermöglichen. 
+
+{{:modul:m293:learningunits:lu07:optgroup.png?200 |}} 
+<code html4strict>
+<form>
+  <label>Vorname
+    <select name='Namen' size='6'>
+      <optgroup label='Namen mit A'>
+        <option label='Anna'>Anna</option>
+        <option label='Achim'>Achim</option>
+        <option label='August'>August</option>
+      </optgroup>
+      <optgroup label='Namen mit B'>
+        <option label='Berta'>Berta</option>
+        <option label='Barbara'>Barbara</option>
+        <option label='Bernhard'>Bernhard</option>
+      </optgroup>
+      <optgroup label='Namen mit C'>
+        <option label='Caesar'>Caesar</option>
+        <option label='Christiane'>Christiane</option>
+        <option label='Christian'>Christian</option>
+      </optgroup>
+    </select>
+  </label>
+</form>
+</code>
+
+Um eine verschachtelte Menüstruktur zu erstellen, verwenden Sie in HTML das ''<optgroup>''-Element, um Untergruppen von Auswahllisten zu definieren. Innerhalb der ''<select>''-Tags notieren Sie für jede gewünschte Untergruppe ein ''<optgroup>''-Element. Zwischen dem öffnenden ''<optgroup>''-Tag und dem abschließenden ''</optgroup>''-Tag notieren Sie die Einträge für die jeweilige Untergruppe.
+
+Verwenden Sie das Attribut ''label'' im öffnenden ''<optgroup>''-Tag, um eine Beschriftung für die Gruppe von Einträgen festzulegen. Diese Beschriftung wird als nicht auswählbare Überschrift angezeigt.
+
+Für die Einträge innerhalb einer Untergruppe verwenden Sie das ''<option>''-Element. Hierbei können Sie das Attribut label verwenden, um den angezeigten Menüeintrag festzulegen.
+----
+{{tag>m293-LU07 m293-F2F m293-F2E}}
+Inhalte teilweise unter CC-BY-SA-3.0 von [[https://wiki.selfhtml.org/wiki/SELFHTML|SELFHTML]] kopiert.
+
+
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Kevin Maurizi, Marcel Suter

@@ -1,0 +1,15 @@
+====== Lösung LU01.A05 ======
+<code python>
+def message_three_times():
+    message = input('Write a message...\n')
+    # Write your code here
+    print(message)
+    print(message)
+    print(message)
+
+    # oder
+    print(message+'\n'+message+'\n'+message)
+
+if __name__ == '__main__':
+    message_three_times()
+</code>

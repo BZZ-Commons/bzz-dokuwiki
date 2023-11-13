@@ -1,0 +1,84 @@
+====== Übungen: Datentypen ======
+
+Erstellen sie einen eigenen Datentypen mit dem Namen ''Person''.
+Für diese Person sollen folgende Eigenschaften gespeichert werden können.
+  * Name
+  * Vorname
+  * Telefonnummer
+  * Strasse
+  * Hausnummer
+  * Land
+  * Postleitzahl
+  * Ort
+
+===== Aufgabe 1: Datentypen bestimmen =====
+
+Bestimmen Sie den jeweiligen Variablenname und den Datentyp für die oben aufgeführten Eigenschaften (auch Attribute genannt).
+
+===== Aufgabe 2: Datentyp erstellen =====
+
+Erstellen Sie die Klasse ''Person.java'' und fügen Sie sämtliche Attribute hinzu.
+
+===== Aufgabe 3: Eigenen Datentyp verwenden =====
+
+Verwenden Sie die Vorlage und erstellen Sie einen Userdialog. Fragen Sie den User nach sämtlichen Angaben um eine Person zu erstellen und erstellen Sie ein Personen-Objekt. Geben Sie im Anschluss alle Informationen wieder aus.
+
+<file java PersonenVerwaltung.java>
+import java.util.Scanner;
+
+/**
+ * short description of this program
+ *
+ * @author Ibid umm
+ * @date yyyy-mm-dd
+ * @version 1.0
+ */
+public class PersonenVerwaltung {
+    // declare attributes 
+    static Scanner scanner;
+
+    /**
+     * constructor: initialize attributes
+     */
+    public PersonenVerwaltung() {
+        scanner = new Scanner(System.in);
+    }
+
+    /**
+     * starts the execution
+     *
+     * @param args
+     *            command line arguments
+     */
+    public static void main(String[] args) {
+        PersonenVerwaltung program = new PersonenVerwaltung();
+        program.run();
+
+        scanner.close();
+    }
+
+    /**
+     * description
+     */
+    private void run() {
+
+        Person person;
+        
+        // TODO:
+        // 0. Person erstellen
+        // 1. User nach jedem Attribut einer Person fragen und diese im Objekt person speichern.
+        // 2. Alle Informationen auf dem Bildschirm ausgeben.
+        
+    }
+}
+
+</file>
+
+===== Aufgabe 4: Informationen verschachteln =====
+Ihre Person hat folgende Attribute: Name, Vorname, Geburtsdatum, AHV-Nummer, Strasse, Hausnummer, Land, Postleitzahl, Ort, Telefonnummer
+Fassen Sie nun alle Attribute die zu der Adresse gehören zusammen und erstellen Sie dafür einen eigenen Datentyp mit dem Namen ''Adresse''. Ersetzen Sie nun die Attribute in der ''Person'' durch einen Attribut vom Typ ''Adresse''. Überarbeiten Sie die die Lösung der Aufgabe 3, so dass diese nun auch mit ''Adresse'' und ''Person'' funktioniert.
+
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Kevin Maurizi

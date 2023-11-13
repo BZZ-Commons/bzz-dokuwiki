@@ -1,0 +1,24 @@
+==== Prüfungssituationen für LU98====
+^A1E: ^ ^
+|Ich kann komplexere Situationsbeschreibungen analysieren und Klassenkandidaten, Attribute und Methoden definieren und diese in einer Vererbungshierarchie abbilden.| Aus einem Text mit diversen Klassen-Kandidaten eine Hierarchie erkennen und korrekt umsetzen. |
+| |Eine bestehende (kleine) Anwendung analysieren und mögliche Vererbungshierarchien erkennen. Daraus die Anwendung überarbeiten und mittels Vererbung umsetzen.|
+| |...|
+^B1E: ^ ^
+|Ich kann das Modell einer Software analysieren, kritische Punkte erkennen und Korrekturen vorschlagen. (z.B. statische und dynamische Aspekte, Vererbung, Assoziationen)| In einer gegebenen Vererbung aufzeigen, wo mittels erweitern/überschreiben die Lösung verbessert werden kann. |
+| |Eine bestehende (kleine) Anwendung analysieren und mögliche Vererbungshierarchien erkennen. Daraus die Anwendung überarbeiten und mittels Vererbung umsetzen.|
+| |...|
+^D1G: ^ ^
+|Ich kann Klassen und deren Super-Klassen implementieren und deren Objekte instanziieren.|Ein vorgegebenes Klassendiagramm implementieren. |
+| |Anhand eines Sequenzdiagramms eine Abfolge von Instanziierungen realisieren. |
+| |...|
+^D1F: ^ ^
+|Ich kann Methoden in den Sub-Klassen ergänzen oder überschreiben, um so die Fähigkeiten der Klasse zu erweitern oder anzupassen.|Eine Klasse im Vererbungsbaum durch zusätzliche Fähigkeiten erweitern. |
+| |In einer Vererbungshierarchie eine Fähigkeit durch überschreiben anpassen. |
+| |...|
+^D2E: ^ ^
+|Ich kann Lösungsansätze für komplexe Problemstellungen durch Anwendung der Polymorphie effizient umsetzen.| Eine Liste von Objekten traversieren und ein bestimmte Fähigkeit ausführen lassen.|
+| |Eine Klasse in Abhängigkeit einer Werteingabe instanziieren und eine bestimmte Fähigkeit ausführen lassen.|
+| |...|
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) René Probst

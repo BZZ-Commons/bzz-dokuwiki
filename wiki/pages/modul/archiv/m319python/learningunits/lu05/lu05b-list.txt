@@ -1,0 +1,65 @@
+====== LU05b - Listen ======
+<WRAP center round info 60%>
+Eine Liste ist eine Sammlung (engl. Collection) von gleichartigen Variablen oder Objekten.
+Listen sind die einfachste Form einer Collection.
+</WRAP>
+
+===== Liste definieren =====
+| 1. Definieren Sie zunächst eine Variable (z.B. ''numbers'') welche die Liste speichern soll. | {{:modul:m319python:learningunits:lu05:lu05_blockly_list01.png?400|}} |
+| 2. Wählen Sie dann den ''set''-Befehl für die oben erstellte Variable. | ::: |
+| 3. Danach benötigen Sie den Befehl ''create list with''. | ::: |
+| 4. Über das Zahnradsymbol öffnet sich ein Popup. | {{:modul:m319python:learningunits:lu05:lu05_blockly_list02.png?400|}} |
+| 5. In diesem Popup können Sie nun der Liste beliebige Werte zuweisen. | ::: |
+
+
+===== Listenelemente =====
+
+==== Element lesen ====
+Jedes Element in der Liste hat eine Position (auch Index genannt).
+Beim Zählen der Elemente beginnt Python mit 0, somit gilt:
+  * Das erste Element hat den Index 0
+  * Das zweite Element hat den Index 1
+  * ...
+
+Ein bestimmtes Element einer Liste kann über seinen Index ausgewählt werden.
+Im Blockly-Editor von Codingrooms benötigen Sie dazu ein Element aus "Subscripting". 
+
+{{:modul:m319python:learningunits:lu05:lu05_blockly_list03.png?400|}}
+
+In dieser Abbildung wird der Wert des ersten Elements der Liste ''numbers'' in die Variable ''smallest'' gespeichert.
+
+==== Element hinzufügen ====
+Mit dem Befehl ''to list ... append ...'' können Sie weitere Elemente am Ende der Liste anfügen.
+
+{{:modul:m319python:learningunits:lu05:lu05_blockly_list04.png?400|}}
+
+==== Element ändern ====
+Sie können den Wert eines bestimmten Elements der Liste ändern.
+Dazu benötigen Sie den Index dieses Elements.
+
+{{:modul:m319python:learningunits:lu05:lu05_blockly_list05.png?400|}}
+==== Element löschen ====
+Der Befehl ''pop'' entfernt das letzte Element aus einer Liste.
+
+{{:modul:m319python:learningunits:lu05:lu05_blockly_list06.png?350|}}
+
+===== Nützliche Funktionen für Listen =====
+==== Iteration über alle Listenelemente ====
+Der Befehl ''for each item ... in list ...'' erzeugt eine Iteration über alle Elemente der Liste.
+Bei jedem Durchlauf wird das jeweils nächste Element der Liste in einer Variable gespeichert.
+
+{{:modul:m319python:learningunits:lu05:lu05_blockly_list07.png?400|}}
+
+In dieser Abbildung wird bei jedem Durchlauf ein Element aus der Liste ''numbers'' genommen und in die Variable ''number'' gespeichert.
+
+==== Anzahl Elemente der Liste ====
+Die Funktion ''len(...)'' ermittelt die Anzahl der Elemente in einer Liste.
+
+{{:modul:m319python:learningunits:lu05:lu05_blockly_list08.png?400|}}
+
+In diesem Beispiel wird die Anzahl Elemente in der Variable ''count'' gespeichert.
+
+----
+{{tag>M319-C1G M319-C1F M319-C1E}}
+
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter  

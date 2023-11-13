@@ -1,0 +1,48 @@
+====== Aufgabe: Schachturnier ======
+
+Wir möchten das Programm aus der letzten Übung realisieren. 
+Die beiden Spieler werden genau 5x gegeneinander spielen.
+Wer danach am meisten Punkte hat, ist der Sieger.
+Zunächst überlegen wir uns, wie denn der Programmablauf aussehen soll:
+
+  - Zu Beginn haben beide Spieler 0 Punkte (2 Befehle)
+  - Bisher wurden 0 Partien gespielt
+  - Wiederhole solange die Anzahl gespielter Partien kleiner 5 ist
+    - Eingabe: "Sieger der Partie?"
+    - Falls Spieler 1 gewonnen hat
+      * Spieler 1 erhält einen Punkt
+    - Falls Spieler 2 gewonnen hat
+      * Spieler 2 erhält einen Punkt
+    - Sonst
+      * Spieler 1 und Spieler 2 erhalten je 1/2 Punkt
+  - Falls Spieler 1 mehr Punkte hat als Spieler 2?
+    - Ausgabe: "Spieler 1 hat gewonnen"
+  - Falls Spieler 2 mehr Punkte hat als Spieler 1?
+    - Ausgabe: "Spieler 2 hat gewonnen"
+  - Sonst
+    - Ausgabe: "Unentschieden"
+
+=== Variablen für das Programm ===
+Welche Werte muss unser Programm speichern können?
+  * Punktestand Spieler 1: ''punkte1''
+  * Punktestand Spieler 2: ''punkte2''
+  * Eingabe des Siegers: ''sieger''
+  * Zähler für die Anzahl Partien: ''partie''
+
+=== Konstanten ===
+  * 1
+  * 0.5
+  * 5
+
+
+==== Übung ====
+
+Ergänzen Sie den Programmablauf, damit wir die verwendeten Variablen und Konstanten erkennen.
+Dies ist eine wichtige Vorarbeit für das Programmieren.
+
+== Programmablaufplan ==
+{{:modul:m319:learningunits:lu02:aufgaben:pap_schach.png?600|}}
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Marcel Suter

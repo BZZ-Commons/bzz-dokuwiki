@@ -1,0 +1,36 @@
+====== LU06.A02 - Buch======
+<WRAP center round todo 60%>
+Erstellen Sie eine HTML-Seite mit einem Formular zum Erfassen eines Buchs.
+Dabei verwenden Sie verschiedene, teilweise neue Attribute für die Eingabefelder.
+</WRAP>
+===== Vorgehen =====
+  - Akzeptieren Sie das GitHub Classroom Assignment über den Link im Moodle-Kurs.
+  - Klonen Sie Ihre persönliches Repository.
+  - Erstellen Sie die HTML-Webseite in der Datei ''book.html''.
+    * Recherchieren Sie die benötigten Attribute auf SelfHTML oder W3CSchools.
+  - Validieren Sie Ihren HTML-Code auf Einhaltung der Standards.
+  - Geben Sie Ihre Lösung mittels Push ins Repository ab.
+
+===== Formular =====
+
+Ihr Formular muss folgende Vorgaben einhalten:
+
+^ Zieladresse: | https://it.bzz.ch/demo/formdata/index.php |
+^ Eingabefelder: ^ Regeln ^
+| * Buchtitel | Text, 2 - 30 Zeichen (nicht leer) |
+| * Autoren | Text, 5 - 40 Zeichen |
+| * Preis | Dezimalzahl, 0.05 - 99.95 |
+| * Erscheinungsdatum | Datum tt.mm.jjjj |
+| * Auflage | Bereich, 1-9 |
+^ Buttons ||
+| * Absenden ||
+| * Zurücksetzen ||
+
+===== Testen =====
+Testen Sie Ihr Formular mit verschiedenen ungültigen Eingaben.
+Solange noch Fehler vorhanden sind, darf der Submit nicht durchgeführt werden.
+
+----
+<nodisp>[[https://github.com/templates-html/M293_LU06|Repository]]</nodisp>
+
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Kevin Maurizi, Marcel Suter

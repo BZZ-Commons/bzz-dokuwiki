@@ -1,0 +1,93 @@
+====== 03 - Darstellung und Formatierung ======
+
+Eine klare und einheitliche Programmierung erleichtert das Lesen eines Sourcecodes.
+
+===== Programmblöcke =====
+
+|{{:howto:codingstandards:zwingend.png?30| }}| Die Codezeilen innerhalb eines Programmblocks werden um 4 Stellen eingerückt. |
+
+=== Beispiel ===
+
+<code python>
+if anredeCode == 1:
+    print ('Herr')
+else:
+    print ('Frau')
+
+print ('Ende')
+</code>
+
+===== Codezeilen =====
+
+Eine Codezeile sollte immer auf einen Blick erfasst werden können.
+
+|{{:howto:codingstandards:zwingend.png?30| }}| Eine Codezeile ist maximal 120 Zeichen lang. Längere Zeilen werden umgebrochen. |
+|{{:howto:codingstandards:empfehlung.png?30| }}| Ordnen Sie gleiche Elemente wie Klammern, Bezeichner oder Bedingungen untereinander an. |
+
+=== Beispiel ===
+<code python>
+if input_value >= minimum or
+   input_value <= maximum or 
+   input_value > 0        and client.client_type.equals('Stammkunde'):
+</code>
+<code python>
+def __init(self, name, age, gender):
+    self.__name   = name
+    self.__age    = age
+    self.__gender = gender
+</code>
+
+Bemerkung: Die Anordnung von Codezeilen wird i.d.R. nicht durch die automatische Formattierung einer IDE unterstützt. Es muss jedoch damit gerechnet werden, dass automatische Formattierungen durch die Entwickler durchgeführt werden können, welche solche Anordnungen überschreiben.
+
+===== Leerzeilen =====
+
+Leerzeilen erleichtern das Erkennen von zusammengehörenden Teilen des Codes.
+
+|{{:howto:codingstandards:zwingend.png?30| }}| Klassen und Funktion werden durch zwei Leerzeilen vom restlichen Code getrennt. |
+|{{:howto:codingstandards:zwingend.png?30| }}| Vor einer Methode in einer Klasse wird eine Leerzeile eingefügt. |
+|{{:howto:codingstandards:empfehlung.png?30| }}| Logisch zusammengehörende Blöcke in einer Funktion können mit einer Leerzeile getrennt werden. Setze dies sparsam ein. |
+
+=== Beispiel ===
+<code python>
+def foobar:
+    print ('foo bar')
+
+
+class Movie:
+    def __init__(self, title):
+        self._title = title
+
+    @property
+    def tile(self):
+        return self._title
+
+</code>
+===== Konstruktoren =====
+
+//Konstruktoren versetzen ein neu erzeugtes Objekt in einen definierten Anfangszustand.//
+
+|{{:howto:codingstandards:zwingend.png?30| }}| Die Konstruktor-Methode steht an erster Stelle, um die Übersichtlichkeit zu erhöhen. |
+
+=== Beispiel ===
+<code python>
+class Celsius:
+    def __init__(self, temperature=0):
+        self._temperature = temperature
+
+…
+
+</code>
+
+===== Anordnung der Methoden =====
+
+//Durch eine geeignete Reihenfolge fällt es leichter, die richtige Methode effizient zu finden.//
+
+|{{:howto:codingstandards:empfehlung.png?30| }}| Ähnliche Methoden sollen immer in der gleichen Reihenfolge angeordnet werden. |
+
+=== Beispiel ===
+
+  - Konstruktor
+  - Methoden die eine Verarbeitung auslösen (z.B. save_person)
+  - Methoden die auf ein Ereignis reagieren (Listener, Events)
+  - Getter/Setter-Methoden
+

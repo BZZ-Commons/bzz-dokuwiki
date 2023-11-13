@@ -1,0 +1,71 @@
+====== Kopiervorlagen ======
+===== Startseite Modul oder Fach =====
+  - Erstelle ein neues Modul in dem du in der URL ''FIXME'' durch dein Modul/Fach ersetzt ''https://it.bzz.ch/wikiV2/modul/FIXME/start?do=edit''.
+  - Kopiere die Vorlage in die neue Seite.
+  - Passe die Modulnummer, Titel, ... an.
+<code wiki>
+====== M??? : FIXME ======
+
+^Modulidentifikation |[[https://www.modulbaukasten.ch/module/FIXME|FIXME]] |
+^Kompetenzraster |[[.:kompetenzraster|Kompetenzraster]]|
+
+===== Literatur =====
+  * 
+===== Inhalte =====
+
+Der Inhalt des Modul ist ist Learningunits gegliedert.
+
+<nspages .:learningunits -subns -nopages -exclude -h1 -textNS="" -simplelist>
+
+</code>
+
+===== Startseite pro LearningUnit oder Thema =====
+<code wiki>
+====== LU?? - FIXME ======
+
+<nspages . -h1  -exclude -simpleList -textPages=""> 
+
+===== Aufgaben =====
+<nspages .:aufgaben -h1  -exclude -simpleList -textPages=""> 
+
+===== Lösungen =====
+<nspages .:loesungen -h1  -exclude -simpleList -textPages=""> 
+
+</code>
+
+===== Inhaltsseite =====
+Für Seiten mit der Theorie, den Aufgaben und Lösungen kannst du diese Vorlage verwenden.
+<code wiki>
+===== FIXME Seitentitel =====
+...
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) FIXME
+{{tag>tag1 tag2 tag_nummer_3 ...}}
+</code>
+
+=== Hinweise zu den Fusszeilen ===
+Die Fusszeilen werden durch eine horizontale Linie (''----'') vom Inhalt getrennt.
+=== Autor, Lizenz ===
+
+Jede Theorie-, Aufgaben- oder Lösungsseite sollte eine Fusszeile mit dem Autor und der Lizenz haben.
+<code wiki>
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) AUTOR, AUTOR
+</code>
+
+Wenn du keine Angabe zur Lizenz machst, gilt für die Inhalte in diesem Wiki [[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]].
+Mehr zu Creative Commons findest du unter [[https://creativecommons.org/use-remix/]]
+=== Tags ===
+Mittels Tags können Inhalte zu ähnlichen Themen über verschiedene Module und Learningunits hinweg gefunden werden.
+Füge eine solche Tagzeile am Ende deiner Seite unterhalb der Lizenzangaben ein.
+  * Verwende Substantive im Singular als Tag
+  * Zwischen zwei Tags steht ein Leerzeichen
+  * Ein Tag aus mehreren Wörtern muss mit Underline verbunden werden
+<code wiki>
+{{tag>tag1 tag2 tag_nummer_3 ...}}
+</code>
+
+----
+{{tag>Template Vorlage Wiki}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Marcel Suter

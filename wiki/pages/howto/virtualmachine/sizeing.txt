@@ -1,0 +1,29 @@
+====== Anzeige zu klein ======
+Besonders bei 4k Bildschirmen können die Schrift und Icons zu klein sein.
+
+===== Linux MINT (Cinnamon) =====
+Diese Tipps gelten für Linux Mint mit dem Cinnamon Desktop Manager wie er in der VM "bzzDevJava_V3.x_MINT" zum Einsatz kommt.
+
+==== Schrift vergrössern ====
+Unter "Schriftauswahl" können Sie die Standardschriftgrössen anpassen.
+
+{{:howto:virtualmachine:fontsize01.png?400|}}
+
+{{:howto:virtualmachine:fontsize02.png?400|}}
+
+===== Icon-Grösse ändern =====
+Leider bietet Cinnamon kaum Möglichkeiten die Icongrösse über das GUI zu ändern.
+
+  * Öffnen Sie das Terminal.
+  * Geben Sie den Befehl ''sudo nano /usr/share/cinnamon/applets/menu@cinnamon.org/applet.js'' ein.
+  * Suchen Sie die folgenden Zeilen und passen Sie die Grösse an:
+
+<code>
+ const MAX_FAV_ICON_SIZE = 32;
+ const CATEGORY_ICON_SIZE = 32;
+ const APPLICATION_ICON_SIZE = 24;
+</code>
+
+  * Speichern Sie den Editor mit Ctrl-O und schliessen Sie den Editor mit Ctrl-X.
+
+>>Quelle: https://sdbillin.com/customise-linux-mint-cinnamon-menu/

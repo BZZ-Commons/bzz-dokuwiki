@@ -1,0 +1,25 @@
+==== Aufgabe 7 - Formelle Schnittstellen für Delegation ====
+
+=== Ziel === 
+Sie können eine formelle Schnittstelle in Python definieren und implementieren.  
+
+=== Hinweise === 
+  * Diese Übungen müsste Ihnen bekannt sein aus der LU05, Aufgabe 1.
+  * Hier soll es nun darum gehen, formelle Schnittstellen für die delegierten Aufrufe zu definieren.
+  * Achtung: An der Funktionalität wird sich dadurch nichts ändern.
+
+=== Auftrag ===
+Führen Sie die vier Aufträge gemäss ''README.md'' resp. ''%%doc/auftrag.pdf%%'' aus: [[https://github.com/bzz-fgict/M320_LU08_Aufgabe_3.git]]:
+  - Ausgabe kontrollieren
+  - Schnittstelle definieren (gemäss Abb. 2)
+  - Schnittstellen anwenden (gemäss Abb. 2)
+  - Programm laufen lassen
+  
+=== Abgabe ===
+Geben Sie die beiden modifizierten Python-Dateien via Moodle ab.
+
+{{modul:m320:learningunits:lu99:aufgaben:lu08.aufg3_circle_cuboid_simplified.png?nolink&400|Abb. 1: Vereinfachtes Klassendiagramm}}\\
+Abb. 1: Vereinfachtes Klassendiagramm
+
+{{modul:m320:learningunits:lu99:aufgaben:lu08.aufg3_interfaces_applied.png?nolink&400|Abb. 2: Klassendiagramm mit formellen Schnittstellen}}\\
+Abb. 2: Klassendiagramm mit formellen Schnittstellen

@@ -1,0 +1,138 @@
+====== LU02c - Primitive Datentypen ======
+== Quellen ==
+  * Java als erste Programmiersprache / 7. Auflage: 1.6 Datentypen
+  * [[http://openbook.rheinwerk-verlag.de/javainsel/02_003.html#u2.3|Java ist auch eine Insel: 2.3 Datentypen, Typisierung, Variablen und Zuweisungen]]
+
+===== Einführung =====
+
+Der Datentyp einer Variable bestimmt die Art der Speicherung und Verarbeitung der Daten.
+Der Datentyp legt fest
+  * welcher Wertebereich (z.B. Ganzzahlen, Buchstaben, ...) in einer Variablen gespeichert werden kann,
+  * wie die Daten im Speicher abgelegt werden (Codierung),
+  * welche Verarbeitungen mit den Daten durchgeführt werden können.
+
+Die primitiven Datentypen sind die grundlegenden Arten von Datenspeichern.
+  * Sie können zu einem bestimmten Zeitpunkt nur einen Wert abspeichern.
+  * Sie können nur mit einigen wenigen Operationen bearbeitet werden.
+
+{{:modul:m319:learningunits:lu02:primitiv.jpg?400|}}
+
+==== Variablen im Programmcode ====
+
+Bei der Verwendung von Variablen in einem Programm müssen Sie sich für den jeweils richtigen Datentyp entscheiden.
+Diese Entscheidung treffen Sie bei der Deklaration (Vereinbarung) der Variable.
+
+<code java>
+int zaehler;
+</code>
+
+| 1. | ''int ...'' | Der Datentyp ''int'' zeigt an, dass es sich um eine Deklaration handelt. |
+| 2. | ''... zaehler ...'' | Anschliessend folgt der Name der Variable |
+| 3. | ''... ;'' | Jeder Befehl wird mit einem Semikolon abgeschlossen. |
+
+==== Zahlen ====
+
+=== Ganzzahlen ===
+Diese Variablen können nur ganze Zahlen speichern.
+Der Unterschied zwischen den vier Datentypen besteht im Wertebereich den die Variablen abbilden können.
+Dabei sollten Sie auch beachten, dass ein grösserer Wertebereich auch immer mehr Speicherplatz benötigt.
+
+^ Datentyp ^ Wertebereich ^ Speicherbedarf ^ 
+| byte | -128 ... +127 | 1 Byte |
+| short | -32'768 ... +32'767 | 2 Byte |
+| int | -2.147.483.648 ... +2.147.483.647 | 4 Byte |
+| long | -9.223.372.036.854.775.808 ... +9.223.372.036.854.775.807 | 8 Byte |
+
+<WRAP center round tip 60%>
+Variablen für Ganzzahlen speichern keine Nachkommastellen ab.
+Ein Dezimalbruch wird nicht etwa gerundet, sondern die Stellen nach dem Komma werden abgeschnitten.
+
+''note = 4.9;  /* In der Variable note steht der Wert 4 */'' \\
+</WRAP>
+
+
+=== Dezimalzahlen ===
+Zahlen mit Dezimalbrüchen werden als Fliesskommazahlen gespeichert.
+Bei einer Fliesskommazahl ist nur vorgegeben, wie viele Stellen gespeichert werden.
+Wie viele Stellen vor und nach dem Komma benötigt werden, wird während der Programmausführung dynamisch angepasst.
+Dabei gilt:
+  * Genügend Stellen vor dem Komma, um die Zahl zu speichern.
+  * Alle anderen Stellen sind nach dem Komma, um die Genauigkeit so gross wie möglich zu halten.
+
+^ Datentyp ^ Wertebereich ^ Speicherbedarf ^
+| float | +/-1,4E-45 ... +/-3,4E+38 | 4 Byte |
+| double | +/-4,9E-324 ... +/-1,7E+308 | 8 Byte |
+
+<WRAP center round tip 60%>
+Eine Fliesskommazahl besteht immer aus 3 Elementen:
+  * Das Vorzeichen + oder -
+  * Ein Dezimalbruch zwischen 0.1 und 0.99
+  * Ein Faktor als Zehnerpotenz
+
+''+0.372 * 10<sup>5</sup> = 37'200 = +0.372E5''
+</WRAP>
+
+
+==== Buchstaben / Zeichen ====
+Zum Speichern von Buchstaben steht der Datentyp ''char'' zur Verfügung.
+Die Buchstaben werden mittels der UTF-16-Codierung in binäre Werte umgewandelt.
+
+^ Datentyp ^ Wertebereich ^ Speicherbedarf ^ 
+| char | 0 ... 65'535 | 2 Byte |
+
+<code java>
+char kurz;
+kurz = 'X';
+</code>
+Einzelne Buchstaben (z.B. 'X') müssen zwischen Hochkommas stehen.
+
+<WRAP center round tip 60%>
+Was der Benutzer als Buchstaben wahrnimmt, wird vom Computer als Zahl verarbeitet.
+In Java werden ''char''-Variablen für die Verarbeitung wie ''int''-Variablen behandelt.
+Daher können Sie mit ''char''-Variablen auch mathematische Operationen und Vergleiche anstellen.
+
+''char buchstabe = 'D';'' \\
+''int ganzzahl;'' \\
+''ganzzahl = buchstabe + 2;'' \\
+''System.out.println(ganzzahl + "");  /* Gibt "F" aus.*/''
+</WRAP>
+
+Eine Fliesskommazahl besteht immer aus 3 Elementen:
+  * Das Vorzeichen + oder -
+  * Ein Dezimalbruch zwischen 0.1 und 0.99
+  * Ein Faktor als Zehnerpotenz
+
+''+0.372 * 10<sup>5</sup> = 37'200 = +0.372E5''
+
+
+Ein Computer kann zwar Buchstaben darstellen, aber eigentlich nur Zahlen verarbeiten.
+Schliesslich basiert alles im Computer auf dem binären Zahlensystem 0 und 1.
+Daher werden Zeichen anhand der ASCII-Codetabelle als binäre Zahl abgespeichert.
+
+== Auszug aus der ASCII-Codetabelle ==
+
+^ Code ^ Zeichen ^
+| 65 | A |
+| 66 | B |
+| 67 | C |
+| ... | ... |
+| 90 | Z |
+| ... | ... |
+| 97 | a |
+| 98 | b |
+| 99 | c |
+| ... | ... |
+| 122 | z |
+
+\\
+[[http://www.ascii-code.com/|Gesamte Codetabelle]]
+
+==== Bool'scher Wert ====
+Ein bool'scher Wert kann nur zwei Zustände annehmen: ''true'' oder ''false''.
+Eine solche Variable hält in der Regel fest, ob eine bestimmte Bedingung zu trifft oder nicht.
+^ Datentyp ^ Wertebereich ^ Speicherbedarf ^ 
+| boolean | true, false | Abhängig von der Umgebung |
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Marcel Suter

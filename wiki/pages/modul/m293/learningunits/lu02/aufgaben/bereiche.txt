@@ -1,0 +1,29 @@
+====== LU02.A01 - Bereiche einsetzen ======
+
+<WRAP center round todo 60%>
+Ergänzen Sie den HTML-Code um die Bereichselemente ''header'', ''footer'', ''nav'', ''main'', ''section'' und ''article''.
+</WRAP>
+
+Als Vorlage erhalten Sie eine HTML-Datei ''bereiche.html''  mit verschiedenen Inhalten.
+Sie sollen diese Inhalte mit den Bereichselementen sauber strukturieren.
+
+Einige der verwendeten Elemente, Tags und Attribute werden Ihnen neu vorkommen, da wir diese noch nicht behandelt haben. 
+Lassen Sie die bestehenden Codezeilen so wie sie in der Vorlage sind.
+Ergänzen Sie nur die öffnenden und schliessenden Tags für die Bereiche.
+
+Die fertige Webseite im Browser soll wie in diesem Screenshot aussehen:
+
+{{:modul:m293:learningunits:lu02:aufgaben:lu02_bereiche.png?400|}}
+
+Die verschiedenen Hintergrundfarben sollen helfen, das Resultat zu prüfen. 
+===== Vorgehen =====
+  - Akzeptieren Sie das Assignment im Moodle-Kurs. \\ => Sie erhalten ein persönliches Repository.
+  - Klonen Sie das Repository in Webstorm.
+  - Ergänzen Sie die fehlenden Bereichselemente.
+  - Geben Sie Ihre Lösung mittels Commit & Push ins Github-Repository ab.
+
+----
+{{tag>m293-LU02}}
+[[https://github.com/teacher-html/m293_lu02_bereiche|Repository]]
+
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Kevin Maurizi, Marcel Suter

@@ -1,0 +1,30 @@
+===== LU06 Tuples and Sets =====
+
+==== Theoretische Grundlagen ====
+  * [[https://studyflix.de/informatik/python-liste-3165?topic_id=429|Lists]] | [[https://studyflix.de/informatik/python-dictionary-3170?topic_id=429|Dictionaries]] (Studyflix-Videos als Repetition)
+  * [[https://www.w3schools.com/python/python_tuples.asp|Tuples]] | [[https://www.w3schools.com/python/python_sets.asp|Sets]] | [[https://www.w3schools.com/python/ref_func_sorted.asp|sorted() Function]]
+  * [[https://towardsdatascience.com/which-python-data-structure-should-you-use-fa1edd82946c|Artikel]] über die Wahl der richtigen Datenstruktur
+
+==== Aufgaben ====
+  * 6kyu [[https://www.codewars.com/kata/5e8dd197c122f6001a8637ca/python|Duplicates. Duplicates Everywhere.]]
+
+----
+
+<WRAP box 100%>
+**Ablauf**\\
+L1:
+  * 05' Lösung [[https://github.com/bzz-fgict/s4f/blob/main/py-basics/src/lectures/dictionaries/roman_numbers.py|Roman Numerals Decoder]]
+  * 10' Repetition mit Videos als Intro
+  * 20' Theorie Tuples, Sets (ohne Suche) 
+    * Tuples -> sind ähnlich wie List
+    * Sets -> sind Teil von Dictionary (Keys)
+  * 10' [[https://kahoot.it|Kahoot]] als Abschluss von Python Tuples und Sets
+
+L2:
+  * 05' Intro Aufgabe "Duplicates..."
+  * 20' ...eigenständig lösen in IDE
+  * 20' entweder 1, 2 oder 3 lösen:
+    - Exercise [[https://www.w3schools.com/python/exercise.asp?filename=exercise_dictionaries1|Dictionaries]], [[https://www.w3schools.com/python/exercise.asp?filename=exercise_tuples1|Tuples]] und [[https://www.w3schools.com/python/exercise.asp?filename=exercise_sets1|Sets]]
+    - Übung [[https://www.codewars.com/kata/526c7363236867513f0005ca/python|Leap Years]] (siehe LU05)
+    - Übung [[https://www.codewars.com/kata/525caa5c1bf619d28c000335/python|Tic-Tac-Toe Checker]] (siehe LU07)
+</WRAP>

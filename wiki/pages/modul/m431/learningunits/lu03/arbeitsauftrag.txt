@@ -1,0 +1,41 @@
+====== LU03d - Arbeitspaket ======
+//Quelle: https://t2informatik.de/wissen-kompakt/arbeitspaket/ //
+<WRAP center round info 60%>
+Wissen kompakt: Ein Arbeitspaket definiert eine Leistung, die im Zuge eines Projekts zu einem definierten Termin und mit einem geplanten Aufwand erbracht werden soll.
+</WRAP>
+
+===== Arbeitspaket als eine zu erbringende Leistung in einem Projekt =====
+
+Der Begriff selbst deutet es bereits an: ein Arbeitspaket es ist ein Paket an Arbeit. 
+Es ist eine definierte Leistung, die im Zuge eines Projekts zu einem definierten Termin und mit einem geplanten Aufwand erbracht werden soll. 
+Sie kann eine interne Struktur haben und in kleinere Arbeitsschritte gegliedert werden. 
+Da es immer einen Verantwortlichen gibt (oder geben sollte), muss sich die Projektleitung nicht mit allen Arbeitsschritten auseinandersetzen, sondern kann sich auf grössere Planungseinheiten wie eben bspw. Arbeitspakete oder Projektphasen konzentrieren.
+
+Nach PRINCE2 ist ein Arbeitspaket lediglich eine Art Arbeitsauftrag, den der Projektleiter einem Teamleiter erteilt. 
+Nach dem [[https://t2informatik.de/wissen-kompakt/pmbok/|PMBOK]] Guide handelt es sich um ein Element im Projektstrukturplan, das mittels Arbeit (work) ein Arbeitsergebnis (deliverable) produziert, und das in Vorgänge aufgeteilt werden kann. 
+Die Leistung kann dabei von einem einzelnen Mitarbeiter oder einem Team erbracht werden.
+
+Der Umfang einer zu erbringenden Leistung ist nicht grundsätzlich festgelegt. 
+Die 69901-5:2009-1 “Projektmanagement – Projektmanagementsysteme – Teil 5 sagt dazu lediglich: 
+“Ein Arbeitspaket ist das kleinste Element des Projektstrukturplans, das in diesem nicht weiter aufgegliedert werden kann und auf einer beliebigen Gliederungsebene liegt. 
+Allerdings kann ein Arbeitspaket zur besseren Strukturierung und bei der Erstellung eines Ablaufplans in Vorgänge aufgegliedert werden, die dabei untereinander in Beziehung gesetzt werden.”
+
+Theoretisch könnte die zu erbringende Leistung in wenigen Minuten zu erledigen sein oder einem Teilprojekt entsprechen. 
+Für Organisationen und Ihre Projekte ist es daher wichtig, ein gemeinsames Verständnis der Begriffe zu haben, die verwendet werden: Projekt, Teilprojekt, Vorgang, Aktivität, Teilaktivität, Arbeitspaket, Aufgabe, Task etc.
+
+===== Eigenschaften von Arbeitspaketen =====
+
+Grundsätzlich lassen sich folgende Eigenschaften festhalten:
+
+  * Pro Arbeitspaket gibt es einen verantwortlichen Mitarbeiter und weitere Mitarbeiter können mitwirken. Hier kann eine Zuordnung über das Ressourcenmanagement und ein Visualisierung bspw. per Gantt-Chart erfolgen.
+  * Auch wenn ein Arbeitspaket theoretisch ein Teilprojekt sein könnte, so wird es meist in Projektphasen eingeplant. Grundsätzlich ist es immer einem Projekt zugeordnet, wobei ein Projekt natürlich auch zahlreiche Arbeitspakete umfassen kann.
+  * Inhaltlich muss eine zu erbringende Leistung einen klaren Arbeitsauftrag umfassen, inklusive Beschreibung der Aufgabenstellung und des erwarteten Ergebnisses, sowie Starttermin, Endtermin, geplanter Aufwand und ggf. auch einem Budget und geplante Kosten.
+  * Die geleisteten Aufwände werden per Zeiterfassung dokumentiert. Und natürlich lassen sich auch Fertigstellungsgrade und Statusinformationen erfassen.
+  * Ähnlich wie bei den Projektphasen ergibt es Sinn, die Dauer und den Umfang von Arbeitspaketen relativ gleichmäßig zu planen.
+  * Gibt es Beziehungen zu anderen Arbeitsergebnissen sollte Einigkeit über die genutzte Schnittstelle und die Übergabe der Arbeitsergebnisse herrschen.
+  * Natürlich können Änderungen bzw. Änderungsanträge im Laufe eines Projekts Auswirkungen auf Arbeitspakete haben. Es empfiehlt sich diese Auswirkungen zu dokumentieren.
+
+{{:modul:m431:learningunits:lu03:arbeitspaket.png?400|}}
+
+----
+{{tag>M319-A1G M319-LU03}}

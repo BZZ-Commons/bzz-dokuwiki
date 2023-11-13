@@ -1,0 +1,28 @@
+====== LU10b - Automatisiertes Deployment mit Webstorm ======
+<WRAP center round info 60%>
+Webstorm bietet uns die Option unsere Codeänderungen automatisch in einen Webspace zu übertragen.
+</WRAP>
+
+===== Webspace konfigurieren =====
+Zunächst müssen Sie die Verbindung zum Webspace konfigurieren.
+Die Beschreibung dazu finden Sie unter [[../lu09/werkzeuge]].
+
+Das automatische Deployment ist nur für die Default-Konfiguration möglich.
+Wählen Sie daher **immer** die Konfiguration für den Live Test Server aus.
+
+===== Automatic Upload =====
+Im Menu "Tools" => "Deployment" => "Options" können Sie das automatische Hochladen der Dateien konfigurieren.
+
+{{:modul:m293:learningunits:lu10:webstorm04.png?400|}}
+
+Beachten Sie vor allem diese Einstellungen:
+  * Exclude items by name: Eine Liste von Dateienamen, die nie hochgeladen werden. |
+  * Upload changed files automatically ...: Wann sollen die Dateien automatisch hochgeladen werden:
+    * Never => Kein automatisches Deployment
+    * On explicit save ... => Sie müssen Ctrl+S drücken
+    * Always => Jede Änderung wird automatisch übertragen
+
+
+----
+{{tag>m293-LU10 m293-I1E}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Kevin Maurizi, Marcel Suter

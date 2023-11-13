@@ -1,0 +1,60 @@
+===6. Erste Schritte mit LogicTraffic===
+Sie werden in der Folge diverse logische Problemstellungen anhand der Anwendung LogicTraffic selbständig lösen. Zu Beginn werden wir das an einer einfachen Situation durchspielen, damit Sie das Programm und sein Verhalten erlernen können. Danach (in den folgende Kapiteln) werden die Problemstellungen etwas schwieriger.\\
+Sie haben im 2. Kapitel bereits einen ersten Blick auf die Anwendung und deren Bereiche geworfen. Nun werden wir erste Eingaben tätigen. Starten Sie dazu das Programm in Ihrem Browser.\\
+
+[[https://logictraffic.ch/|LogicTraffic]]\\
+
+<WRAP left>
+{{:modul:mathe:ma1:thema:lu04logik:ma1_logik_kap6-situation-1.png?150|}}\\
+</WRAP>
+Achten Sie darauf, dass die Auswahl der Kreuzungssituationen auf Situation 1 steht.\\
+<WRAP clear></WRAP>
+
+<WRAP left>
+{{:modul:mathe:ma1:thema:lu04logik:ma1_logik_kap6-situation-2.png?200|}}
+</WRAP>
+Aus der gezeigten Situation geht hervor, dass
+  * bei <color #ed1c24>rot</color> für A und <color #ed1c24>rot</color> für B die Situation sicher ist, da beide Spuren stehen. \(\rightarrow \) 1
+  * bei <color #ed1c24>rot</color> für A und <color #22b14c>grün</color> für B die Situation sicher ist, da nur die Spur B fährt. \(\rightarrow \) 1
+  * bei <color #22b14c>grün</color> für A und <color #ed1c24>rot</color> für B die Situation sicher ist, da nur die Spur A fährt. \(\rightarrow \) 1
+  * bei <color #22b14c>grün</color> für A und <color #22b14c>grün</color> für B die Situation unsicher ist, da beide Spuren fahren und so eine Kollision resultiert. \(\rightarrow \) 0
+<WRAP clear></WRAP>
+
+<WRAP left>
+{{:modul:mathe:ma1:thema:lu04logik:aufgaben:leitprogramm:k7:ma1_logik_kap6-situation-wht.png?150|}}
+</WRAP>
+Diese Lösung übertragen wir nun in die Wahrheitstabelle der Anwendung und starten die Simulation über die Schaltfläche [Testen].\\
+Um zu sehen, was passiert, wenn eine unsichere Situation vorliegt, ändern wir den letzten Eintrag auf 1 ab und führen die Simulation noch einmal durch.
+<WRAP clear></WRAP>
+Nun löschen wir die Einträge der WHT und geben die Formel über den Formeleditor ein. Dazu setzen wir die Tabelle wie in Kaptiel 5 gezeigt in einen logischen Ausdruck um.\\
+<WRAP left>
+|      IN       ||  ¦   |  OUT  |
+^   A   ^   B   ^   ¦   ^   C   ^
+|   0   |   0   |   ¦   |   1   | \(\neg\)A \(\wedge\) \(\neg\)B |
+|   0   |   1   |   ¦   |   1   | \(\neg\)A \(\wedge\) B |
+|   1   |   0   |   ¦   |   1   | A \(\wedge\) \(\neg\)B |
+|   1   |   1   |   ¦   |   0   |
+</WRAP>
+<WRAP clear></WRAP>
+out = (\(\neg\)A \(\wedge\) \(\neg\)B) \(\vee\) (\(\neg\)A \(\wedge\) B) \(\vee\) (A \(\wedge\) \(\neg\)B)
+<WRAP left>
+{{:modul:mathe:ma1:thema:lu04logik:aufgaben:leitprogramm:k7:ma1_logik_kap6-situation-editor.png?200|}}
+</WRAP>
+Diesen Ausdruck (ohne out= !) geben wir also im Editor ein und laden damit die Wahrheitstabelle.\\
+Das Ergebnis ist das gleiche wie oben.
+<WRAP clear></WRAP>
+Die restlichen Bereiche der Anwendung (Parsebaum, DNFv) betrachten wir (noch) nicht!
+\\
+\\
+Lösen Sie nun die [[modul:mathe:ma1:thema:lu04logik:aufgaben:leitprogramm:k7:u6:start|Übung 6]]
+
+----
+Überprüfen Sie Ihre Antworten. [[modul:mathe:ma1:thema:lu04logik:aufgaben:leitprogramm:k7:l6:start|Lösung 6]]\\
+Sollten Sie Fehler haben, schauen Sie sich die Theorie noch einmal genau an, besprechen Sie offene Fragen mit Ihren Kolleginnen und/oder Kollegen. Fragen Sie auch Ihre Lehrperson, wenn Sie weiterführende Hilfe brauchen.
+
+
+----
+[[modul:mathe:ma1:thema:lu04logik:aufgaben:leitprogramm:k8:start|nächstes Kapitel]]
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) René Probst

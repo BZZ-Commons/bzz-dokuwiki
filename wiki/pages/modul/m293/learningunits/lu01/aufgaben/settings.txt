@@ -1,0 +1,42 @@
+====== LU01.A02 - Einstellungen anpassen ======
+<WRAP center round info 60%>
+Die meisten Einstellungen können und wollen wir nach unseren Wünschen anpassen.
+Dadurch sparen wir Zeit und vermeiden Fehler.
+</WRAP>
+
+===== Einrückung =====
+Das einheitliche Einrücken von Zeilen ist für die Lesbarkeit des HTML-Codes sehr wichtig.
+Dadurch erkennen wir den Anfang und das Ende der einzelnen Blöcke.
+
+Gehen Sie zu den Einstellungen für den HTML-Editor
+  - File => Settings
+  - Editor => Code Style => HTML
+  - Tabs and Indents
+
+{{:modul:m293:learningunits:lu01:aufgaben:settingstabs.png?400|}}
+
+=== Auftrag ===
+
+Ändern Sie die Werte von ''Tab size'' und ''Indent'' auf **2** und wieder zurück auf **4**.
+Auf der rechten Seite des Fensters sehen Sie eine Vorschau, wie der Code aussehen wird.
+
+Wählen Sie die Einstellung, die für Sie am besten erscheint.
+
+===== HTML-Vorlage =====
+Wenn Sie eine neue HTML-Datei erstellen, erzeugt Webstorm eine Grundstruktur.
+Diese Grundstruktur ist für unsere Zwecke noch nicht optimal:
+  * Die Sprache der Webseite auf englisch festgelegt: ''<html lang="en">''
+  * Die Vorlage verwendet double quotes (Anführungszeichen) statt single quotes (Hochkomma)
+
+
+=== Auftrag ===
+Ändern Sie die Spracheinstellung in der Vorlage zu Deutsch ''lang='de' '' oder Schweizerdeutsch ''lang='de-CH' ''.
+Sie finden die Vorlage in den Einstellungen unter **Editor => File and Code Templates => HTML File**.
+
+Stellen Sie ein, dass Webstorm single quotes statt double quotes generiert.
+Die Einstellung **Generated quote marks** finden Sie unter Editor => Code Style => HTML => Other
+
+<WRAP center round tip 60%>
+Wenn Sie den Namen einer Einstellung wissen, können Sie auch einfach danach Suchen.
+Das erspart Ihnen die Navigation durch alle Einstellungen.
+</WRAP>

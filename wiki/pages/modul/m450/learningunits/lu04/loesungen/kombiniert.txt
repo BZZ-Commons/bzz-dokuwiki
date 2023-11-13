@@ -1,0 +1,44 @@
+====== LU01.L04 - Library ======
+
+===== test_book.py =====
+
+<code python>
+import pytest
+from _pytest.fixtures import fixture
+
+from book import Book
+
+@fixture
+def sample_book1():
+    return Book('Ein Buch', '998877')
+
+
+def sample_book2():
+    return Book('Zweites Buch', '112233')
+
+
+def test_init(sample_book1):
+    book = Book('Ein Buch', '998877')
+    assert book == sample_book1
+
+@pytest.mark.xfail(reason='this is expected to fail')
+def test_init_wrong():
+    wrong = Book('falsch')
+    assert True
+
+
+def test_print(capsys):
+    assert False
+
+
+def test_location(sample_book1):
+    assert sample_book1.location is None
+
+def test_forced_location():
+    book = Book(title='Komisch', isbn='88', location='Hier')
+    assert book.location is None
+    
+</code>
+----
+{{tag>M450-LU04}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

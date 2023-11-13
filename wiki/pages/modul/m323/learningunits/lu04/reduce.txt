@@ -1,0 +1,63 @@
+====== LU04f - Die reduce-Funktion in Python ======
+
+Die ''reduce''-Funktion ist eine nützliche eingebaute Funktion in Python, die in der Standardbibliothek ''functools'' verfügbar ist. Die Funktion nimmt eine Funktion und ein Iterable als Argumente und reduziert das Iterable auf einen einzelnen Wert, indem die Funktion auf die Elemente des Iterables angewendet wird.
+
+===== Syntax =====
+
+Die Syntax der ''reduce''-Funktion ist wie folgt:
+
+<code python>
+from functools import reduce
+
+result = reduce(function, iterable, [initial])
+</code>
+
+  * **function**: Eine Funktion, die zwei Argumente nimmt und einen Wert zurückgibt.
+  * **iterable**: Das Iterable, das reduziert werden soll.
+  * **initial**: Ein optionaler Startwert, der als erstes Element für die Reduzierung verwendet wird.
+
+===== Beispiel =====
+
+Ein einfaches Beispiel für die Verwendung der ''reduce''-Funktion ist die Summierung aller Elemente einer Liste:
+
+<code python>
+from functools import reduce
+
+numbers = [1, 2, 3, 4]
+product_of_numbers = reduce(lambda x, y: x * y, numbers)
+print(product_of_numbers)  # Output: 24
+</code>
+
+Die Funktion, die an ''reduce'' übergeben wird, muss nicht notwendigerweise eine Lambda-Funktion sein. Sie kann auch eine reguläre Funktion sein, die zwei Argumente nimmt und einen Wert zurückgibt.
+
+<code python>
+from functools import reduce
+
+def multiply(x, y):
+    return x * y
+
+numbers = [1, 2, 3, 4]
+product_of_numbers = reduce(multiply, numbers)
+print(product_of_numbers)  # Output: 24
+</code>
+====== Vergleich mit for-Schleife ======
+
+Das gleiche Ergebnis könnte auch mit einer for-Schleife erreicht werden, aber die ''reduce''-Funktion bietet eine kompaktere und oft lesbarere Lösung.
+
+<code python>
+numbers = [1, 2, 3, 4]
+product_of_numbers = 1  # Initialer Wert muss 1 sein, damit die Multiplikation funktioniert
+
+for num in numbers:
+    product_of_numbers *= num
+
+print(product_of_numbers)  # Output: 24
+</code>
+
+===== Einsatzgebiete =====
+
+Die ''reduce''-Funktion ist besonders nützlich, wenn Sie eine Liste oder ein anderes Iterable auf einen einzelnen Wert reduzieren möchten. Beispiele dafür sind Summierung, Produktbildung oder das Finden des maximalen Elements in einer Liste.
+
+----
+{{tag>M323-LU04}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/ch/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Kevin Maurizi 

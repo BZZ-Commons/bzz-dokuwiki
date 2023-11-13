@@ -1,0 +1,48 @@
+====== LU02a - HTML Grundgerüst ======
+//Siehe auch [[https://wiki.selfhtml.org/wiki/HTML/Tutorials/Grundger%C3%BCst|selfhtml - Grundgerüst]]//
+
+<WRAP center round info 60%>
+Jede HTML-Datei besteht aus dem gleichen Grundgerüst.
+Dieses Grundgerüst definiert den Dateityp und die wichtigsten Blöcke.
+</WRAP>
+
+Webstorm erzeugt für jede neue HTML-Datei dieses Grundgerüst:
+<code html>
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8'>
+    <title>Title</title>
+  </head>
+  <body>
+    
+  </body>
+</html>
+</code>
+
+===== <!DOCTYPE html> =====
+Auf der ersten Zeile legen wir die Dokumentenart (engl. Document Type Definition (DTD) fest.
+Durch den ''<!DOCTYPE html>'' weiss der Browser, wie er diese Webseite darstellen soll.
+
+DOCTYPE sieht einem HTML-Tag ähnlich, ist aber kein HTML-Tag.
+Es gibt zum Beispiel kein schliessendes Tag.
+
+===== <html> ... </html> =====
+Das ganze HTML-Dokument muss zwischen diesen beiden Tags stehen.
+Für die Benutzbarkeit der Seite, muss das Attribut ''lang=??'' angegeben werden.
+
+===== <head> ... </head> =====
+Der ''head''-Block enthält Informationen über den Inhalt der Seite.
+Diese Angaben werden im Webbrowser nicht angezeigt.
+
+  * Die Angabe eines Titels (''<title>...</title>'') ist zwingend.
+  * Durch die Angabe der Zeichencodierung (''<meta charset='utf-8'>'') vermeiden wir Fehler bei der Darstellung von Umlauten und Sonderzeichen.
+
+===== <body> ... </body> =====
+Der Inhalt unserer Webseite wird im ''body''-Block geschrieben.
+Dieser Bereich des HTML-Dokuments wird vom Browser angezeigt.
+
+----
+{{tag>m293-LU02 m293-E1G}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Kevin Maurizi, Marcel Suter
+

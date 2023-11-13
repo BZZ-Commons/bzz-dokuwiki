@@ -1,0 +1,233 @@
+====== Website-Layout mit Bootstrap ======
+
+<HTML>
+<div class="alert alert-info">
+Diese Seite wurde aktualisiert für <a href="https://getbootstrap.com/" class="alert-link">Bootstrap 4</a>. 
+</div>
+</HTML>
+
+Standardmässig werden HTML-Elemente auf zwei Arten angeordnet:
+
+**Blockelemente** beginnen immer in einer neuen Zeile. Beispiele für Blockelemente sind ''%%<div>%%'', ''%%<h1>%%'', ''%%<p>%%'' und ''%%<li>%%''.
+
+{{block-elements.png?nolink|Blockelemente}}
+
+**Inline-Elemente** stehen in der gleichen Zeile. Beispiele für Inline-Elemente sind ''%%<span>%%'', ''%%<a>%%'', ''%%<strong>%%'', ''%%<em>%%'' und ''%%<img>%%''.
+
+{{inline-elements.png?nolink|Inline-Elemente}}
+
+Diese zwei Möglichkeiten reichen jedoch nicht, um ein richtiges Layout für eine Webseite zu erstellen.
+
+Die meisten Webseiten haben entweder ein Layout mit **zwei Spalten** ...
+
+{{two-columns.png?nolink|Zwei-Spalten Layout}}
+
+... oder ein Layout mit **drei Spalten**.
+
+{{three-columns.png?nolink|Drei-Spalten Layout}}
+
+So etwas hinzubekommen ohne ein CSS-Framework wie //Bootstrap// wäre eine rechte Herausforderung. Mit Bootstrap wird es einfacher.
+
+Zusätzlich wird das Layout in Bootstrap automatisch auf die Bilschirmgrösse angepasst (sogenanntes [[http://de.wikipedia.org/wiki/Responsive_Webdesign|Responsive Layout]]). Wir können zum Beispiel angeben, dass auf kleinen Bilschirmen die Spalten untereinander angezeigt werden sollen, weil sie nebeneinander nicht mehr Platz hätten.
+
+===== Das Bootstrap Raster =====
+
+<HTML>
+<div class="alert alert-warning">
+Falls Sie Bootstrap in Ihrem Projekt noch nicht integriert haben, lesen Sie zuerst den Teil über <a href="/de/library/html-css/part7/" class="alert-link">Bootstrap Framework verwenden</a> aus dem HTML &amp; CSS Tutorial.
+</div>
+</HTML>
+
+Bootstrap beinhaltet ein **12-spaltiges Rastersystem** für das Layout (siehe [[https://getbootstrap.com/docs/4.1/layout/grid/|Dokumentation des Bootstrap-Rasters]]). Ein Raster kann man sich vorstellen wie eine unsichtbare Tabelle mit zwölf Spalten:
+
+{{bootstrap-twelve-columns.png?nolink|Zwölf Spalten}}
+
+Wir können nun unsere eigenen Spalten definieren, indem wir angeben, wie breit sie in diesem Raster sein sollen.
+
+==== Beispiel für ein 2-spaltiges Layout ====
+
+In diesem Beispiel definieren wir eine linke Spalte mit der Breite von 4 und eine rechte Spalte mit der Breite von 8. Links könnte man zum Beispiel eine Navigation einfügen und rechts den Seiteninhalt.
+
+{{bootstrap-two-columns.png?nolink|2-Spalten Layout}}
+
+Im HTML-Code würde dieses Layout wie folgt aussehen:
+
+<HTML>
+<pre class="prettyprint lang-html">
+&lt;div class="<mark>container</mark>">
+  &lt;div class="<mark>row</mark>">
+    &lt;div class="<mark>col-sm-4</mark>">
+      Hier kommt der Inhalt der linken Spalte.
+    &lt;/div>
+    &lt;div class="<mark>col-sm-8</mark>">
+      Hier kommt der Inhalt der rechten Spalte.
+    &lt;/div>
+  &lt;/div>
+&lt;/div>
+</pre>
+<div class="alert alert-info">
+<strong>Zu Beachten beim Bootstrap-Raster:</strong>
+
+<ul>
+  <li>Das Raster sollte immer in einem <code>&lt;div></code> mit einer <code>container</code>-Klasse sein. (Wenn die Breite immer bis ganz zum Rand ausgefüllt werden soll, kann man alternativ die <code>container-fluid</code>-Klasse verwenden.)</li>
+  <li>Innerhalb des Containers kommt ein <code>&lt;div></code> mit der Klasse <code>row</code>. Damit definieren wir eine Zeile im Raster.</li>
+  <li>Innerhalb der Zeilen kommen schliesslich die Spalten mit den <code>col</code>-Klassen.  </li>
+</ul>
+</div>
+</HTML>
+
+==== Bildschirmgrössen ====
+
+Eine Spaltenangabe beinhaltet jeweils eine Angabe über die Bildschirmgrösse. Es gibt die folgenden vier Bildschirmgrössen:
+
+  * ''%%col%%'' - Spalte für Extra-Small-Geräte (Smartphones, schmaler als 576px)
+  * ''%%col-sm%%'' - Spalte für Small-Geräte (Smartphones, breiter als 576px)
+  * ''%%col-md%%'' - Spalte für Medium-Geräte (Tablets, breiter als 768px)
+  * ''%%col-lg%%'' - Spalte für Large-Geräte (Desktops, breiter als 992px)
+  * ''%%col-xl%%'' - Spalte für Extra-Large-Geräte (grosse Desktops, breiter als 1200px)
+
+Die Angabe ''%%col-sm-4%%'' aus unserem Beispiel oben bedeutet also, dass ungefähr ab der Grösse eines Tablets eine Spalte der Breite 4 dargestellt wird.
+
+Alle Bildschirme, welche kleiner sind als die angegebene Grösse, stellen die Spalten automatisch untereinander dar.
+
+So sieht unser Beispiel für das 2-spaltige Layout auf einem Smartphone aus:
+
+{{bootstrap-two-columns-smartphone.png?nolink|2-Spalten Layout Smartphone}}
+
+==== Beispiel für ein 3-spaltiges Layout ====
+
+In diesem Beispiel definieren wir drei Spalten.
+
+{{bootstrap-three-columns.png?nolink|3-Spalten Layout}}
+
+Im HTML-Code würde dieses Layout wie folgt aussehen:
+
+<HTML>
+<pre class="prettyprint lang-html">
+&lt;div class="<mark>container</mark>">
+  &lt;div class="<mark>row</mark>">
+    &lt;div class="<mark>col-sm-3</mark>">
+      Hier kommt der Inhalt der linken Spalte.
+    &lt;/div>
+    &lt;div class="<mark>col-sm-6</mark>">
+      Hier kommt der Inhalt der mittleren Spalte.
+    &lt;/div>
+    &lt;div class="<mark>col-sm-3</mark>">
+      Hier kommt der Inhalt der rechten Spalte.
+    &lt;/div>
+  &lt;/div>
+&lt;/div>
+</pre>
+</HTML>
+
+===== Anwendung auf Portfolio-Blog =====
+
+Im [[modul:m293:tutorials:html-css:start|HTML & CSS Tutorial]] haben wir ein Portfolio entwickelt mit einer Blog-Seite. Das folgende Beispiel zeigt ein **2-Spalten-Layout** für diese Blog-Seite. In der linken Spalte ist der bisherige Inhalt. In der rechten Spalte haben wir neu Platz zum Beispiel für ein paar Links.
+
+{{portfolio-two-columns.de.png?nolink|Portfolio}}
+
+== blog/index.html ==
+
+<HTML>
+<pre class="prettyprint lang-html">
+&lt;div class="container">
+  &lt;h1 class="title">Blog&lt;/h1>
+
+  &lt;p>Hier schreibe ich über alles, was mir beim Lernen von Webprogrammierung begegnet.&lt;/p>
+
+  &lt;div class="<mark>row</mark>">
+    &lt;div class="<mark>col-sm-8</mark>">
+      &lt;h2>Blogeinträge&lt;/h2>
+      &lt;ul>
+        &lt;li>Weitere Einträge folgen...&lt;/li>
+        &lt;li>&lt;a href="zweiter-eintrag/">Zweiter Eintrag&lt;/a>&lt;/li>
+        &lt;li>&lt;a href="erster-eintrag/">Erster Eintrag&lt;/a>&lt;/li>
+      &lt;/ul>
+    &lt;/div>
+
+    &lt;div class="<mark>col-sm-3 offset-sm-1</mark>">
+      &lt;h3>Empfehlungen&lt;/h3>
+      &lt;p>
+        Die folgenden Blogs von Kollegen kann ich sehr empfehlen:
+      &lt;/p>
+      &lt;ul class="list-unstyled">
+        &lt;li>&lt;a href="#">Blog 1&lt;/a>&lt;/li>
+        &lt;li>&lt;a href="#">Blog 2&lt;/a>&lt;/li>
+        &lt;li>&lt;a href="#">Blog 3&lt;/a>&lt;/li>
+        &lt;li>&lt;a href="#">Blog 4&lt;/a>&lt;/li>
+      &lt;/ul>
+    &lt;/div>
+  &lt;/div>
+
+&lt;/div>
+</pre>
+</HTML>
+
+=== Hinweise ===
+
+  * Bei der rechten Spalte wurde noch eine zweite CSS-Klasse hinzugefügt: ''%%offset-sm-1%%''. Dies bedeutet, dass die rechte Spalte um eins nach rechts gerückt werden soll. Damit erhalten wir einen etwas grösseren Abstand zwischen den beiden Spalten.
+  * Testen Sie das Layout in unterschiedlichen Browsergrössen.
+  * Die Klasse ''%%list-unstyled%%'' bewirkt, dass die Listenelemente ohne Punkt angezeigt werden (siehe [[https://getbootstrap.com/docs/4.1/content/typography/#unstyled|Bootstrap Listen]]).
+
+===== Weitere Informationen zu Layout =====
+
+Lesen Sie den Abschnitt über das [[https://getbootstrap.com/docs/4.1/layout/grid/|Raster-System]] in der Bootstrap Dokumentation.
+
+Eine ausführliche Erklärung, wie das Raster-System funktioniert, finden Sie in [[https://uxplanet.org/how-the-bootstrap-4-grid-works-a1b04703a3b7|How the Bootstrap 4 Grid Works]].
+
+----
+
+<html>
+  <nav>
+    <div class="article-paging">
+      <ul class="pagination">
+        <li>
+          <a href="/wikiV2/modul/m293/tutorials/more-html-css/" data-toggle="tooltip" title="" data-original-title="Mehr HTML & CSS">
+          Intro
+          </a>
+        </li>
+        
+        <li class="active">
+          <a href="/wikiV2/modul/m293/tutorials/more-html-css/website-layout/" data-toggle="tooltip" title="" data-original-title="Website-Layout mit Bootstrap">
+            1
+          </a>
+        </li>
+        
+        <li>
+          <a href="/wikiV2/modul/m293/tutorials/more-html-css/icons/" data-toggle="tooltip" title="" data-original-title="Icons auf Website verwenden">
+            2
+          </a>
+        </li>
+        
+        <li>
+          <a href="/wikiV2/modul/m293/tutorials/more-html-css/image-bootstrap/" data-toggle="tooltip" title="" data-original-title="Bilder mit Bootstrap verwenden">
+            3
+          </a>
+        </li>
+        
+        <li>
+          <a href="/wikiV2/modul/m293/tutorials/more-html-css/image-editing/" data-toggle="tooltip" title="" data-original-title="Bilder gestalten">
+            4
+          </a>
+        </li>
+        
+        <li>
+          <a href="/wikiV2/modul/m293/tutorials/more-html-css/image-sources/" data-toggle="tooltip" title="" data-original-title="Kostenlose Bilder">
+            5
+          </a>
+        </li>
+        
+        <li>
+          <a href="/wikiV2/modul/m293/tutorials/more-html-css/text/" data-toggle="tooltip" title="" data-original-title="Textformatierung">
+            6
+          </a>
+        </li>
+        
+      </ul>
+    </div>
+  </nav>
+</html>
+
+----
+Diese Seite ist abgeleitet von [[https://code.makery.ch/|code.makery]] von [[https://code.makery.ch/about/|Marco Jakob]], verwendet unter [[https://creativecommons.org/licenses/by/4.0/|CC BY]].\\ 
+Sie ist lizenziert unter [[https://creativecommons.org/licenses/by-nc-sa/4.0/|CC BY-NC-SA]] von Daniel Fahrni <daniel.fahrni@bzz.ch>.

@@ -1,0 +1,10 @@
+====== LU08.L04: Fakultät ======
+
+<code python>
+def main():
+    number = int(input(''))
+    result = 1
+    for counter in range(2, number+1):
+        result = result * counter
+    print (result)
+</code>

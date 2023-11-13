@@ -1,0 +1,83 @@
+====== LU05.A03: Grades and Points ======
+<WRAP center round info 60%>
+Schreibe ein Programm, das anhand der Punktzahl die Note anzeigt. 
+</WRAP>
+===== Auftrag =====
+Erstelle die Programmlogik für das Programm:
+  - Der Benutzer gibt die Punktzahl ein.
+  - Das Programm ermittelt die passende Note und gibt diese aus.
+
+=== Notentabelle ===
+
+Die folgende Tabelle beschreibt, wie die Note ermittelt wird.
+Schreibe die nötigen Selektionen für die verschiedenen Punktzahlen.
+
+^ points     ^ grade       ^
+| < 0    | impossible! |
+| 0-49   | failed      |
+| 50-59  | 1           |
+| 60-69  | 2           |
+| 70-79  | 3           |
+| 80-89  | 4           |
+| 90-100 | 5           |
+| > 100  | incredible! |
+
+
+==== Beispiele ====
+
+<code>
+Give points [0-100]:
+*37*
+failed
+</code>
+<code>
+Give points [0-100]:
+*76*
+3
+</code>
+<code>
+Give points [0-100]:
+*-3*
+impossible!
+</code>
+
+
+===== Vorgehen =====
+
+  - Akzeptiere das GitHub Classroom Assignment im Moodlekurs.
+  - Klone das Repository in PyCharm.
+  - Codiere die Programmlogik in ''grade.py''.
+    - Schreibe zunächst nur die Eingabe der Punkte und die Bedingung für eine Notenstufe.
+    - Teste dein Programm.
+    - Schreibe die Bedingung für eine weitere Notenstufe und teste dein Programm. Wiederhole diesen Schritt, bis alle Bedingungen korrekt sind.
+  - Teste dein Programm mit den Testfällen in ''grade_test.py''.
+  - Führe einen Commit und einen Push durch.
+
+=== Abgabe ===
+Die Abgabe erfolgt durch den Push ins GitHub Repository.
+In Moodle ist keine Abgabe vorgesehen oder möglich.
+
+=== Vorlage in grade.py ===
+<code python>
+def main():
+  # Write your program here and remove the line "pass"
+    pass
+
+if __name__ == '__main__':
+    main()
+</code>
+
+Anmerkung: Kümmere dich ich im Moment nicht zu sehr um ''if %%__%%name%%__%% == '%%__%%main%%__'%%:''. 
+Dieser Programmblock legt fest, welche Funktion beim Ausführen gestartet wird.
+Wir werden dies im Verlauf des Moduls noch genauer betrachten.
+
+
+
+<nodisp>GitHub-Repo: https://github.com/templates-python/m319-lu05-a03-grades</nodisp>
+----
+{{tag>M319-LU05}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/ch/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Kevin Maurizi 
+
+Diese Aufgabe ist eine übersetzte und angepasste Aufgabe von [[https://scott3142.uk/|Scott Morgan]], verwendet unter CC BY NC SA.
+
+

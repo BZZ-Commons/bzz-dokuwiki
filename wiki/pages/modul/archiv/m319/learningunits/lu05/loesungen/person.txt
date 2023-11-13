@@ -1,0 +1,247 @@
+====== Lösungsvorschlag: Datentypen ======
+
+Erstellen sie einen eigenen Datentypen mit dem Namen ''Person''.
+Für diese Person sollen folgende Eigenschaften gespeichert werden können.
+  * Name
+  * Vorname
+  * Telefonnummer
+  * Strasse
+  * Hausnummer
+  * Land
+  * Postleitzahl
+  * Ort
+
+
+===== Aufgabe 1: Datentypen bestimmen =====
+
+Bestimmen Sie den jeweiligen Datentyp für die oben aufgeführten Eigenschaften (auch Attribute genannt).
+^Eigenschaft^Attribut ^Datentyp^
+|Name|name|String|
+|Vorname|vorname|String|
+|Telefonnummer|telefonnummer|String|
+|Strasse|strasse|String|
+|Hausnummer|hausnummer|int|
+|Land|land|String|
+|Postleitzahl|plz|int|
+|Ort|ort|String|
+
+<WRAP center round tip 60%>
+Die Telefonnummer wird als String gespeichert, weil bei Zahlenwerten (long, int, short, byte) keine führenden Nullen angegeben werden können. Aus der Telefonnummer "0041796412525" würde einfach 41796412525 werden, im String bleiben diese Nullen jedoch erhalten.
+</WRAP>
+
+
+===== Aufgabe 2: Datentyp erstellen =====
+<file java Person.java>
+/**
+ * Datentyp Person
+ *
+ * @author Kevin Maurizi
+ */
+public class Person {
+    String name;
+    String vorname;
+    String telefonnummer;
+    String strasse;
+    int hausnummer;
+    String land;
+    int plz;
+    String ort;
+}
+
+</file>
+
+===== Aufgabe 3: Eigenen Datentyp verwenden =====
+
+Verwenden Sie die Vorlage und erstellen Sie einen Userdialog. Fragen Sie den User nach sämtlichen Angaben um eine Person zu erstellen und erstellen Sie ein Personen-Objekt. Geben Sie im Anschluss alle Informationen wieder aus.
+
+<file java PersonenVerwaltung.java>
+import java.util.Scanner;
+
+/**
+ * short description of this program
+ *
+ * @author Kevin Maurizi
+ */
+public class PersonenVerwaltung {
+    // declare attributes
+    static Scanner scanner;
+
+    /**
+     * constructor: initialize attributes
+     */
+    public PersonenVerwaltung() {
+        scanner = new Scanner(System.in);
+    }
+
+    /**
+     * starts the execution
+     *
+     * @param args
+     *            command line arguments
+     */
+    public static void main(String[] args) {
+        PersonenVerwaltung program = new PersonenVerwaltung();
+        program.run();
+
+        scanner.close();
+    }
+
+    /**
+     * description
+     */
+    private void run() {
+
+        // TODO:
+        // 0. Person erstellen
+        Person person = new Person();
+        // 1. User nach jedem Attribut einer Person fragen und diese im Objekt person speichern.
+        System.out.print("Vorname > ");
+        person.vorname = scanner.nextLine();
+
+        System.out.print("Nachname > ");
+        person.name = scanner.nextLine();
+
+        System.out.print("Strasse > ");
+        person.strasse = scanner.nextLine();
+
+        System.out.print("Hausnummer > ");
+        person.hausnummer = scanner.nextInt();
+        scanner.nextLine(); // Scanner leeren
+
+        System.out.print("Postleitzahl > ");
+        person.plz = scanner.nextInt();
+        scanner.nextLine(); // Scanner leeren
+
+        System.out.print("Ort > ");
+        person.ort = scanner.nextLine();
+
+        System.out.print("Land > ");
+        person.land = scanner.nextLine();
+
+        System.out.print("Telefonnummer > ");
+        person.telefonnummer = scanner.nextLine();
+
+        // 2. Alle Informationen auf dem Bildschirm ausgeben.
+
+        System.out.println("Die Person hat folgende Eigenschaften:");
+        System.out.println("Vorname :" + person.vorname);
+        System.out.println("Nachname :" + person.name);
+        System.out.println("etc...");
+    }
+}
+</file>
+
+===== Aufgabe 4: Informationen verschachteln =====
+<file java Adresse.java>
+/**
+ * Datentyp Adresse
+ *
+ * @author Kevin Maurizi
+ */
+public class Adresse {
+    String strasse;
+    String land;
+    String ort;
+    int hausnummer;
+    int plz;
+}
+</file>
+
+<file java Person.java>
+/**
+ * Datentyp Person
+ *
+ * @author Kevin Maurizi
+ */
+public class Person {
+    String name;
+    String vorname;
+    String telefonnummer;
+    Adresse adresse = new Adresse();
+}
+</file>
+
+<file java Personenverwaltung.java>
+import java.util.Scanner;
+
+/**
+ * short description of this program
+ *
+ * @author Kevin Maurizi
+ */
+public class PersonenVerwaltung {
+    // declare attributes
+    static Scanner scanner;
+
+    /**
+     * constructor: initialize attributes
+     */
+    public PersonenVerwaltung() {
+        scanner = new Scanner(System.in);
+    }
+
+    /**
+     * starts the execution
+     *
+     * @param args
+     *            command line arguments
+     */
+    public static void main(String[] args) {
+        PersonenVerwaltung program = new PersonenVerwaltung();
+        program.run();
+
+        scanner.close();
+    }
+
+    /**
+     * description
+     */
+    private void run() {
+
+        // TODO:
+        // 0. Person erstellen
+        Person person = new Person();
+        // 1. User nach jedem Attribut einer Person fragen und diese im Objekt person speichern.
+        System.out.print("Vorname > ");
+        person.vorname = scanner.nextLine();
+
+        System.out.print("Nachname > ");
+        person.name = scanner.nextLine();
+
+        System.out.print("Strasse > ");
+        person.adresse.strasse = scanner.nextLine();
+
+        System.out.print("Hausnummer > ");
+        person.adresse.hausnummer = scanner.nextInt();
+        scanner.nextLine(); // Scanner leeren
+
+        System.out.print("Postleitzahl > ");
+        person.adresse.plz = scanner.nextInt();
+        scanner.nextLine(); // Scanner leeren
+
+        System.out.print("Ort > ");
+        person.adresse.ort = scanner.nextLine();
+
+        System.out.print("Land > ");
+        person.adresse.land = scanner.nextLine();
+
+        System.out.print("Telefonnummer > ");
+        person.telefonnummer = scanner.nextLine();
+
+        // 2. Alle Informationen auf dem Bildschirm ausgeben.
+
+        System.out.println("Die Person hat folgende Eigenschaften:");
+        System.out.println("Vorname :" + person.vorname);
+        System.out.println("Nachname :" + person.name);
+        System.out.println("Strasse :" + person.adresse.strasse);
+        System.out.println("etc...");
+    }
+}
+</file>
+
+
+
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Kevin Maurizi

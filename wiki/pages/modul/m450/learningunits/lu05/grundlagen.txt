@@ -1,0 +1,26 @@
+====== LU05a - Grundlagen ======
+
+Bei einem Blackbox-Test werden Testfälle aufgrund der Anforderungen erstellt.
+Der Aufbau des Sourcecodes wird dabei nicht beachtet.
+Das Programm wird als Blackbox betrachtet, die auf einen bestimmten Input einen erwarteten Output liefern soll.
+
+Als Basis für die Testfälle dienen uns
+  * Spezifikation der Applikation
+  * Zustandsdiagramme
+
+==== Ablauf ====
+{{:modul:m450:learningunits:lu01:testablauf.png?400|}}
+
+  - In der Analyse werden die Anforderungen an das Programm ermittelt. Diese Anforderungen dienen als Grundlage zum Erstellen der Testfälle und des Programms.
+  - Der Tester definiert die Testdaten (Dateien, Datenbanken, ...) mit welchen die Tests durchgeführt werden.
+  - Nachdem der Programmierer den Sourcecode erstellt hat, wird das Programm nun systematisch getestet. In kleineren Projekten kann es sein, dass Programmierer und Tester die gleiche Person sind. Bessere Resultate erzielt man aber oft, wenn eine zweite Person die Testfälle durchführt.
+  - Dazu benötigt der Tester die schon früher erstellten Testfälle. Beim Testen starten Sie das Programm und geben dem Programm die festgelegten Testdaten ein.
+  - Ein Testdurchlauf besteht darin, dass Sie jeden Testfall einmal durchführen. Für jeden Testfall halten Sie das tatsächliche Ergebnis in einem Testprotokoll fest.
+  - Sind alle Testfälle durchgeführt, entscheidet der Tester:  
+    * das Programm muss noch einmal überarbeitet werden
+    * das Programm ist in Ordnung
+  - Muss das Programm überarbeitet werden, so geht es zurück an den Programmierer. Dieser wird die Verbesserungen vornehmen und die neue Programmversion wieder an den Tester übergeben. Nun führt der Tester erneut **alle** Testfälle durch und hält die Resultate in einem **neuen** Testprotokoll fest.
+
+----
+{{tag>M450-LU05}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

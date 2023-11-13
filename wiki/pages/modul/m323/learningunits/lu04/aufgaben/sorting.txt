@@ -1,0 +1,33 @@
+====== LU04.A12 - Sortieren grösserer Daten ======
+
+<WRAP center round todo 60%>
+Sortieren Sie die grosse Menge an Daten nach gegebenen Kriterien.
+</WRAP>
+
+===== Auftrag =====
+Sortieren Sie die Daten nach folgenden Kriterien:
+
+  * Sort countries by name, by capital, by population
+  * Sort out the ten most spoken languages by location.
+  * Sort out the ten most populated countries.
+
+Erstellen Sie jeweils eine eigene Funktion.
+
+===== Vorgehen =====
+
+  - Akzeptiere das GitHub Classroom Assignment im Moodlekurs.
+  - Klone das Repository in PyCharm.
+  - Codiere die Programmlogik in ''countries_data.py''.
+  - Teste dein Programm mit den Testfällen in ''countries_data_test.py''.
+  - Führe einen Commit und einen Push durch.
+
+=== Abgabe ===
+Die Abgabe erfolgt durch den Push ins GitHub Repository.
+In Moodle ist keine Abgabe vorgesehen oder möglich.
+
+
+----
+<nodisp>https://github.com/templates-python/m323-lu04-a12-sorting</nodisp>
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/ch/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Kevin Maurizi
+
+

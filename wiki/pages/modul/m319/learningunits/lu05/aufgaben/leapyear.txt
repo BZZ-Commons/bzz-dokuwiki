@@ -1,0 +1,106 @@
+====== LU05.A06: Leap year ======
+<WRAP center round todo 60%>
+Schreibe ein Programm, das die Schaltjahre korrekt erkennt.
+</WRAP>
+
+===== Auftrag =====
+Erstelle die Programmlogik für das Programm:
+  - Der Benutzer gibt eine Jahreszahl ein.
+  - Das Programm gibt aus, ob es sich um ein Schaltjahr handelt.
+
+
+<WRAP center round help 60%>
+Ein Jahr ist ein Schaltjahr, wenn es durch 4 teilbar ist. Wenn das Jahr jedoch durch 100 teilbar ist, dann ist es nur dann ein Schaltjahr, wenn es auch durch 400 teilbar ist.
+</WRAP>
+
+
+==== Beispiel ====
+
+<code>
+Give a year: 
+*2011*
+The year is not a leap year.
+</code>
+<code>
+Give a year: 
+*2012*
+The year is a leap year.
+</code>
+<code>
+Give a year: 
+*1800*
+The year is not a leap year.
+</code>
+<code>
+Give a year: 
+*2000*
+The year is a leap year.
+</code>
+
+=== Hinweis 1 ===
+Die Teilbarkeit durch eine bestimmte Zahl kann mit dem Modulo-Operator, auch bekannt als "%", auf folgende Weise überprüft werden.
+<WRAP center round box 60%>
+<code python>
+number = 5
+
+if (number % 5 == 0):
+    print("The number is divisible by five!")
+
+if (number % 6 != 0):
+    print("The number is not divisible by six!")
+</code>
+<code>
+The number is divisible by five!
+The number is not divisible by six!
+</code>
+</WRAP>
+
+=== Hinweis 2 === 
+Stelle dir die Programlogik als eine Kette von ''if''-, ''elif''-, ''elif''-, ... Vergleichen vor.
+Schreibe zuerst die Bedingung, ob das Jahr restlos durch 400 geteilt werden kann.
+
+
+===== Vorlage =====
+<code python>
+def main():
+  # Write your program here
+
+if __name__ == '__main__':
+    main()
+</code>
+
+===== Vorgehen =====
+
+  - Akzeptiere das GitHub Classroom Assignment im Moodlekurs.
+  - Klone das Repository in PyCharm.
+  - Codiere die Programmlogik in ''main.py''.
+  - Teste dein Programm mit den Testfällen in ''main_test.py''.
+  - Führe einen Commit und einen Push durch.
+
+=== Abgabe ===
+Die Abgabe erfolgt durch den Push ins GitHub Repository.
+In Moodle ist keine Abgabe vorgesehen oder möglich.
+
+=== Vorlage in main.py ===
+<code python>
+def main():
+  # Write your program here and remove the line "pass"
+    pass
+
+if __name__ == '__main__':
+    main()
+</code>
+
+Anmerkung: Kümmere dich ich im Moment nicht zu sehr um ''if %%__%%name%%__%% == '%%__%%main%%__'%%:''. 
+Dieser Programmblock legt fest, welche Funktion beim Ausführen gestartet wird.
+Wir werden dies im Verlauf des Moduls noch genauer betrachten.
+
+
+
+<nodisp>GitHub-Repo: https://github.com/templates-python/m319-lu05-a06-leapyear</nodisp>
+----
+{{tag>M319-LU05}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/ch/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Kevin Maurizi, Marcel Suter
+
+Diese Aufgabe ist eine übersetzte und angepasste Aufgabe von [[https://scott3142.uk/|Scott Morgan]], verwendet unter CC BY NC SA.
+

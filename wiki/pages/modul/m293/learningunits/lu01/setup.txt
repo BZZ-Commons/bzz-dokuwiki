@@ -1,0 +1,47 @@
+====== LU01b - Umgebung einrichten ======
+
+===== Webstorm installieren =====
+==== Benutzerkonto ====
+
+Damit Sie Webstorm unbeschränkt nutzen können, benötigen Sie ein Benutzerkonto bei Jetbrains.
+Falls Sie noch kein Benutzerkonto angelegt haben, finden Sie hier eine [[howto/tools/jetbrains|Anleitung]].
+
+Melden Sie sich mit Ihrem Benutzerkonto auf der Webseite von [[https://jetbrains.com]] an.
+Laden Sie Webstorm herunter und installieren Sie das Programm.
+
+===== Webstorm konfigurieren =====
+
+Im Verlauf des Unterrichts werden wir die Konfiguration von Webstorm an unsere Bedürfnisse anpassen.
+
+==== GitHub ====
+Es lohnt sich von Anfang an mit git bzw. GitHub zu arbeiten.
+Richten Sie dazu Ihr GitHub-Benutzerkonto in Webstorm ein.
+
+  - Melden Sie sich im Webbrowser auf [[https://github.com]] an.
+  - Öffnen Sie in Webstorm ''File'' => ''Settings''.
+  - Suchen Sie die Einstellung für ''GitHub''.
+  - Falls noch kein Benutzerkonto verbunden ist,
+    - Wählen Sie "Add account ..."
+    - ''Login via GitHub ...'' \\ => Im Webbrowser öffnet sich ein neuer Tab.
+    - Klicken Sie auf ''[Authorize]''
+    - Evtl. erscheint ein weiterer Schritt ''Single sign-on to you organization'', klicken Sie hier ebenfalls auf ''[Authorize]'' und melden Sie sich mit Ihrem BZZ-Benutzerkonto an.
+    - Zum Schluss sollte eine Bestätigung erscheinen: "You have been successfully authorized in GitHub".
+
+==== Wichtige Menus ====
+<WRAP center round info 60%>
+Es lohnt sich immer wieder mit den verschiedenen Funktionen einer IDE zu experimentieren.
+Nur so können Sie das Optimum aus Ihrem Werkzeug herausholen.
+</WRAP>
+
+Hier sind einige Menus, die Sie im Verlauf des Moduls sicher brauchen werden:
+
+| File => New | Neues Projekt erstellen |
+| File => Settings | Konfiguration anpassen, Plugins installieren |
+| Edit => Find | Suchen und Ersetzen von Textstellen |
+| Code => Code Reformat | Formattiert den Code einer Datei |
+| Code => Inspect Code ... | Prüft Ihr Projekt auf Einhaltung der Standards und Richtlinien |
+| VCS oder Git | Zugriff auf die Funktionen der Versionsverwaltung |
+
+----
+{{tag>m293-LU01 m293-D1G}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Marcel Suter

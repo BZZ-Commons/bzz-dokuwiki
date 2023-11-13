@@ -1,0 +1,52 @@
+====== LU08b - OSI-Modell ======
+
+Die Daten werden von den verschiedenen Protokollen eines Protokollstapels (ProtocolStack) verarbeitet und dann an das nächste Protokoll in der folgenden Schicht weitergegeben. Die oberste Schicht kommuniziert mit der Anwendung, z. B. mit dem Webbrowser oder dem Webserver, die unterste Schicht sendet oder empfängt die Signale auf dem Kabel, dazwischen werden alle übrigen nötigen Aufgaben durch bestimmte Protokolle übernommen.
+
+Liste der gebräuchlichsten Protokolle pro Schicht des OSI-Referenzmodells:
+
+=== 1. Physikalische Schicht (Layer 1) ===
+
+    Die physikalische Schicht ist die unterste Schicht im OSI-Referenzmodell und kümmert sich um die physische Übertragung von Bitsequenzen über das physische Medium, wie Kabel oder Funkwellen.
+    Gebäuchliche Protokolle: Ethernet, USB, HDMI, Bluetooth, WLAN.
+
+=== 2. Sicherungsschicht (Layer 2) ===
+
+    Diese Schicht ist für die Fehlererkennung und Fehlerkorrektur verantwortlich und stellt sicher, dass Datenpakete korrekt übertragen werden.
+    Gebäuchliche Protokolle: Ethernet, IEEE 802.1Q (VLAN), PPP (Point-to-Point Protocol).
+
+=== 3. Netzwerkschicht (Layer 3) ===
+
+    Die Netzwerkschicht ist verantwortlich für die Routenfindung und Weiterleitung von Datenpaketen zwischen verschiedenen Netzwerken.
+    Gebäuchliche Protokolle: IP (Internet Protocol), ICMP (Internet Control Message Protocol), OSPF (Open Shortest Path First), BGP (Border Gateway Protocol).
+
+=== 4. Transportschicht (Layer 4) ===
+
+    Die Transportschicht ermöglicht die Ende-zu-Ende-Kommunikation zwischen Geräten und stellt sicher, dass Daten zuverlässig und in der richtigen Reihenfolge übertragen werden.
+    Gebäuchliche Protokolle: TCP (Transmission Control Protocol), UDP (User Datagram Protocol), SCTP (Stream Control Transmission Protocol).
+
+=== 5. Sitzungsschicht (Layer 5) ===
+
+    Diese Schicht ermöglicht die Einrichtung, Aufrechterhaltung und Beendigung von Kommunikationssitzungen zwischen Geräten.
+    Gebäuchliche Protokolle: NetBIOS (Network Basic Input/Output System), RPC (Remote Procedure Call).
+
+=== 6. Präsentationsschicht (Layer 6) ===
+
+    Die Präsentationsschicht kümmert sich um die Umwandlung von Daten in ein geeignetes Format für die Anwendungsschicht und verschlüsselt die Daten bei Bedarf.
+    Gebäuchliche Protokolle: ssL/TLS (Secure Sockets Layer/Transport Layer Security).
+
+=== 7. Anwendungsschicht (Layer 7) ===
+
+    Die Anwendungsschicht ist die oberste Schicht und bietet Schnittstellen für Anwendungen, um auf Netzwerkressourcen zuzugreifen.
+    Gebäuchliche Protokolle: HTTP/HTTPS (Hypertext Transfer Protocol/Secure Hypertext Transfer Protocol), FTP (File Transfer Protocol), SMTP (Simple Mail Transfer Protocol), POP3 (Post Office Protocol 3), IMAP (Internet 
+    Message Access Protocol).
+
+
+{{:modul:m117:learningunits:lu08:osimodell.jpg?600|}}
+
+
+----
+
+{{tag>m117}}
+
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Andre Probst
+

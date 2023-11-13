@@ -1,0 +1,32 @@
+====== Checkliste für Überarbeitung ======
+===== Theorieseiten =====
+  * Tag für Kompetenz(en)  (m319_xy1)
+  * Tag für Learning Unit  (m319_lu99)
+
+===== Aufgaben, Lösungen =====
+  * Tag für Learning Unit (m319_lu99)
+  * ''WRAP center round todo 60%> Kurzbeschreibung des Auftrags /WRAP'' am Anfang der Aufgabe.
+  * PyTests für Teilfunktionalitäten, Gesamtfunktion 
+  * Linter einsetzen (Pylint)
+  * Template-Repo mit ''<nodisp>'' verlinken.
+
+===== GitHub =====
+  * Template-Repositorys in Organisation ''templates-python''.
+  * Branch "main" mit Vorlage
+  * Branch "solution" mit Lösung
+
+==== Issues ====
+Vorgehensschritte über Issues abbilden.
+Commit mit ''resolves #n'' fordern.
+
+Wenn es sinn macht in mehreren Teilschritten zu implementieren, wird das wenn möglich umgesetzt.
+
+==== GitHub Classroom ====
+  * Assignment in Classroom "M319_2023"
+  * Workflow mit Linter, Autograding, Moodle-Update
+  * Assignment-Name in Moodle-Aufgabe
+
+===== Sourcecode =====
+  * Konsequent f-Strings verwenden 
+    * ''print(f'foo {bar}')'' verwenden statt ''print('foo' + str(bar))''
+    * ''whatever = f'I am a {animal}' '' statt ''whatever = 'I am a ' + animal

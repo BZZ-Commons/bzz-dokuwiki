@@ -1,0 +1,65 @@
+====== LU04.A19 - Wissenstransfer in andere Programmiersprache ======
+
+<WRAP center round todo 60%>
+Transferieren Sie Ihre Kenntnisse der in LU04 erarbeiteten Python-Features in die Programmiersprachen Java und/oder JavaScript.
+</WRAP>
+
+===== Aufgabenstellung =====
+
+Ihr Ziel ist es, die in LU04 erarbeiteten Konzepte (Ternärer Bedingungsoperator, lambda-Funktionen, List Comprehensions, ''map'', ''filter'', ''reduce'', ''sorted'', Generatoren, Generator Expressions und Slicing) in einer anderen Programmiersprache (Java oder JavaScript) anzuwenden.
+
+  - Wählen Sie mindestens vier der in LU04 behandelten Konzepte aus.
+  - Implementieren Sie diese Konzepte in Java und/oder JavaScript.
+  - Vergleichen Sie die Implementierung mit der Python-Version und dokumentieren Sie etwaige Unterschiede und Ähnlichkeiten.
+
+==== Java-Beispiele ====
+
+**Ternärer Bedingungsoperator**: 
+
+<code java>
+int result = (a > b) ? a : b;
+</code>
+
+**Lambda-Funktionen**:
+
+<code java>
+(a, b) -> a + b;
+</code>
+
+**Stream API für map/filter/reduce**:
+
+<code java>
+List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5);
+int sum = numbers.stream().reduce(0, Integer::sum);
+</code>
+
+==== JavaScript-Beispiele ====
+
+**Ternärer Bedingungsoperator**: 
+<code javascript>
+const result = (a > b) ? a : b;
+</code>
+    
+**Lambda-Funktionen**:
+<code javascript>
+const add = (a, b) => a + b;
+</code>
+    
+**reduce**:
+<code javascript>
+const numbers = [1, 2, 3, 4, 5];
+const sum = numbers.reduce((a, b) => a + b, 0);
+</code>
+
+===== Vorgehen =====
+
+  - Implementieren Sie ihre ausgewählten Konzepte in Java und/oder JavaScript
+  - Dokumentieren Sie Ihre Implementierung und die Unterschiede zur Python-Version
+
+===== Abgabe =====
+
+Die Abgabe der Lösung erfolgt als PDF-Abgabe auf Moodle
+
+----
+
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/ch/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Kevin Maurizi

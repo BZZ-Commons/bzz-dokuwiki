@@ -1,0 +1,29 @@
+====== LU06.A06 -  Todo-Liste mit Blueprints ======
+
+<WRAP center round todo 60%>
+Unterteilen Sie Ihre bestehende Todo-Liste-Anwendung in Flask in Blueprints.
+</WRAP>
+
+
+
+===== Vorgehen =====
+  - Akzeptiere das GitHub Classroom Assignment
+  - Klone dein persönliches Repository in die Entwicklungsumgebung
+  - Erstellen Sie neue Python-Dateien für jeden Blueprint.
+  - In jeder Datei, importieren Sie Flask und erstellen Sie eine neue Blueprint-Instanz.
+  - Verschieben Sie die entsprechenden Routen aus der Hauptanwendung in die Blueprints.
+  - Registrieren Sie die Blueprints in der Hauptanwendung.
+
+
+===== Abgabe =====
+Die Abgabe der Lösung erfolgt als Push in das persönliche GitHub-Repository.
+
+----
+<details>
+<summary>//=> GitHub Repo für externe Besucher//</summary>
+GitHub Repository https://github.com/templates-python/m323-lu06-a06-blueprints
+
+//Lernende am BZZ müssen den Link zum GitHub Classroom Assignment verwenden//
+
+</details>
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/ch/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Kevin Maurizi 

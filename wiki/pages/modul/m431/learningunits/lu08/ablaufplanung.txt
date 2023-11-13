@@ -1,0 +1,58 @@
+====== LU08c - Ablauf und Terminplanung ======
+Wusstest du, dass der Projektstrukturplan auch als „Mutter aller Pläne“ bezeichnet wird? Das hat seinen Grund: Der **PSP** ist die **Ausgangsbasis für die Feinplanung** und damit für alle folgenden Planungsschritte.
+
+Die Ablauf- und Terminplanung besteht aus folgenden Schritten:
+
+  - Die **Vorgänge** eines Projekts werden **definiert**. Das sind alle Aufgaben, die im Projekt umgesetzt werden.
+  - Die **Vorgänge** werden in der Ablaufplanung **miteinander verknüpft**.
+  - Die **Zeitdauer** pro Vorgang wird **geschätzt**.
+  - Durch Anwenden eines Kalenders werden **konkrete Termine** festgelegt.
+
+{{ :modul:m431:learningunits:lu08:schritte-ablauf-terminplanung.png?500 |}}
+
+===== Definieren von Vorgängen =====
+Du erinnerst dich an die kleinste Einheit im Projektstrukturplan? Diese **Arbeitspakete** können entweder direkt in die Feinplanung übernommen oder **weiter in Vorgänge untergliedert** werden. Je kleiner das Projekt, desto häufiger entsprechen die Arbeitspakete den Vorgängen.
+
+{{ :modul:m431:learningunits:lu08:ap-vorgang.png?400 |}}
+
+
+===== Verknüfen von Vorgängen =====
+Alle **Vorgänge** nun werden in eine **logische Reihenfolge** gebracht und **Abhängigkeiten** definiert. In einer Projektmanagement-Software wird auch von „Verknüpfen“ der Vorgänge gesprochen. Die Kernfrage: Wie stehen die Vorgänge miteinander in Verbindung? Welche Abhängigkeiten gibt es?
+
+<WRAP center round tip 60%>
+**Beispiel:**
+Beim Hausbau kann das Dach erst gedeckt werden, wenn der Dachstuhl fertiggestellt wurde.
+</WRAP>
+
+===== Aufwandsschätzung =====
+Im nächsten Schritt werden für jeden Vorgang Zeitdauern geschätzt. Die Kernfrage lautet hier: Wie lange dauert es, diese Aufgabe zu erledigen? Aufwandsschätzungen gehören für viele Projektmanager nicht gerade zu den Lieblingsaufgaben. Wer lässt sich schon gern auf eine Zahl festnageln, wenn viele Faktoren die Schätzung nachträglich verändern könnten?
+
+Einige Tipps zur Aufwandschätzung:
+
+Trotz der genannten Schätzmethoden sind die Ergebnisse schlicht nur eines: Schätzungen! In der Natur der Sache liegen Abweichungen und Fehleinschätzungen. Deshalb gibt es zum Abschluss noch ein paar allgemeine Tipps:
+
+<WRAP center round box 60%>
+  * Nimm´s leicht! Schätzungen **aus dem Bauch heraus** sind oft die besten.
+  * Besonders bei komplexen Projekten **gleichen sich oft Fehleinschätzungen** in den einzelnen Arbeitspaketen nach oben oder unten in der Summe später **wieder aus**.
+  * Berücksichtige deine **Persönlichkeit**: Wenn du weißt, dass du ein grundsätzlich vorsichtiger Mensch bist, werden deine Schätzungen intuitiv zu hoch ausfallen. Andersherum verhält es sich mit dem Draufgänger und „Kein Problem!“-Typen, der vermutlich eher zu gering schätzt.
+  * **Vermeide Perfektionismus!** Der Anspruch, alle Einflüsse und Faktoren so genau zu berücksichtigen, dass die Schätzung genau ist, funktioniert in den meisten Fällen nicht. In der Realität kommt ohnehin oft alles anders als geplant.
+  * Nenne **Rahmenbedingungen**: Viele Personen tun sich mit Schätzungen schwer, weil sie nicht auf konkrete Zahlen festgenagelt wollen. Der Ausweg: Gib genau an, auf welcher Basis deine Schätzung basiert, auf welchen Annahmen. Ändern sich diese, gibt es auch Gründe zum Anpassen der Schätzungen.
+</WRAP>
+
+===== Terminplanung =====
+
+Beginne nun die Arbeitspakete nach deren Abhängikeiten sortiert auf einem Zeitstrahl anzuordnen. Indem du einen Starttermin oder Endtermin für dein Projekt vorgibst, ergeben sich die Termine basierend auf den Verknüpfungen und Zeitdauern der Vorgänge wie von selbst.
+
+Ein mächtiges Werkzeug für die Darstellung ist das GANTT-Diagramm.
+Im Gantt-Diagramm werden:
+  - die Aktivitäten eines Projektes in die erste Spalte einer Tabelle eingetragen.
+  - In der ersten Zeile der Tabelle wird die Zeitachse dargestellt.
+  - Die einzelnen Aktivitäten werden dann in den jeweiligen Zeilen mit einem waagerechten Balken visualisiert. Je länger der Balken, desto länger dauert die Aktivität. Sich
+überschneidende Aktivitäten werden durch überlappende Balken dargestellt.
+  - Das Gantt-Diagramm ermöglicht die Visualisierung des kritischen Pfades.
+  - Häufig wird mit Pfeilen versucht, Abhängigkeiten zwischen den Aktivitäten zu verdeutlichen.
+
+{{ :modul:m431:learningunits:lu08:gantt.png?800 |}}
+
+
+

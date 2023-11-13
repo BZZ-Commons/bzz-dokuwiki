@@ -1,0 +1,24 @@
+===== Aufgabe 6 - Duck-Typing nutzen =====
+
+=== Ziel ===  
+Sie wissen wie Sie Duck-Typing nutzen, um ein Objekt etwas tun zu lassen, falls es das kann.  
+  
+=== Hinweise ===
+  * Klonen Sie dieses Repository: [[https://github.com/bzz-fgict/M320_LU08_Aufgabe5]].  
+  * Führen Sie das Programm ''animals.py'' aus.  
+  * Kontrollieren Sie die Ausgabe (siehe ''output.txt'').  
+  
+=== Auftrag Code-Analyse ===
+  - Zählen Sie alle Methoden auf, worüber Duck-Typing erfolgt (Tipp: Es sind mehr als zwei 😉).   
+  - Finden Sie die beiden Funktionen, welche dem Duck-Typing hier zu einer sichereren Ausführung verhelfen und  erläutern Sie, wie das passiert.  
+  
+Halten Sie Ihre Antworten fest in der Datei ''code_analysis.md'' und geben Sie sie ab via Moodle.   
+
+Wie Sie sicher festgestellt haben, kommt die Methode ''who_are_you'' auf allen Klassen vor. Zudem ist sie jeweils  gleich implementiert. Es bietet sich also an, sie in eine neue Basisklasse auszulagern.  
+
+=== Auftrag Repetition Vererbung ===
+  - Vervollständigen Sie dafür die Klasse ''Animals'' mit der (nicht abstrakten!) Methode ''who_are_you''.  
+  - Sorgen Sie dafür, dass alle nötigen Klassen davon erben und entfernen Sie den obsoleten Code.  
+  - Führen Sie das Programm aus kontrollieren Sie dessen Ausgabe.  
+  
+Geben Sie die modifizierte Datei ''animals.py'' ab via Moodle.   

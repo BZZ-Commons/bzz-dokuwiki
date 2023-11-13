@@ -1,0 +1,54 @@
+====== LU06c - Hello World mit Flask ======
+
+Ein "Hello World"-Programm ist traditionell das erste Programm, das man schreibt, wenn man eine neue Programmiersprache oder ein neues Framework lernt. Es dient dazu, den einfachsten möglichen Code zu zeigen, der eine Ausgabe erzeugt. In diesem Fall werden wir sehen, wie man mit Flask ein einfaches Webprogramm erstellt, das "Hello World" in einem Webbrowser anzeigt.
+
+
+===== Schritte zur Erstellung eines Hello World-Programms mit Flask =====
+
+==== Importiere die notwendigen Bibliotheken ====
+Zuerst musst du Flask importieren, um es in deinem Programm verwenden zu können.
+<code python>
+from flask import Flask
+</code>
+
+==== Erstelle eine Flask-App-Instanz ====
+Die App-Instanz repräsentiert deine Webanwendung.
+<code python>
+app = Flask(__name__)
+</code>
+
+==== Definiere eine Route und eine zugehörige Funktion ====
+In Flask wird eine URL-Route mit einer Funktion verknüpft, die aufgerufen wird, wenn die Route angefordert wird. Für unser "Hello World"-Programm definieren wir eine Route für den Hauptpfad ('/').<code python>
+@app.route('/')
+def hello():
+    return 'Hello World'
+</code>
+
+==== Starte den Flask-Server ====
+Um die Webanwendung auszuführen und im Browser zugänglich zu machen, musst du den Flask-Server starten.<code python>
+if __name__ == '__main__':
+    app.run()
+</code>
+
+===== Gesamter Code =====
+
+Hier ist der gesamte Code für das "Hello World"-Programm mit Flask:
+
+<code python>
+from flask import Flask
+
+app = Flask(__name__)
+
+@app.route('/')
+def hello():
+    return 'Hello World'
+
+if __name__ == '__main__':
+    app.run()
+</code>
+
+Wenn du diesen Code ausführst und einen Webbrowser öffnest, um die Adresse ''http://127.0.0.1:5000/'' aufzurufen, solltest du die Nachricht "Hello World" sehen.
+
+----
+{{tag>M323-LU06}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/ch/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Kevin Maurizi 

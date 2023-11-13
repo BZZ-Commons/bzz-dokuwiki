@@ -1,0 +1,28 @@
+====== LU04.A09 - Fakultät mit reduce ======
+
+<WRAP center round todo 60%>
+Verwende die ''reduce''-Funktion, um die Fakultät einer gegebenen Zahl zu berechnen.
+</WRAP>
+
+===== Aufgabenstellung =====
+
+Verwende die ''reduce''-Funktion, um die Fakultät einer Zahl \( n \) zu berechnen. Die Fakultät von \( n \) ist \( n! = n \times (n-1) \times \ldots \times 2 \times 1 \).
+
+Denken Sie an den Sonderfall, die Fakultät von 0 ist 1.
+
+===== Vorlage =====
+<code python>
+from functools import reduce
+
+def factorial(n):
+    # Ihr Code hier
+    return 0
+
+if __name__ == '__main__':
+    result = factorial(5)
+    print(result)  # Sollte 120 ausgeben
+</code>
+
+----
+<nodisp>https://github.com/templates-python/m323-lu04-a09-reduce</nodisp>
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/ch/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Kevin Maurizi 

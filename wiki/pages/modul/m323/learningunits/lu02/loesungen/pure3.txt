@@ -1,0 +1,16 @@
+====== LU02.L03 - Durchschnitt von Zahlen ======
+
+<code python>
+def average(list):
+    if len(list) > 0:
+        return sum(list)/len(list)
+    else:
+        return 0
+
+if __name__ == '__main__':
+    numbers = [1, 2, 3, 4, 5]
+    print('The average of the numbers is:', average(numbers))
+</code>
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/ch/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Kevin Maurizi 

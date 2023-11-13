@@ -1,0 +1,24 @@
+==== Aufgabe 1 - Instanziierung abstrakter Klassen ====
+
+=== Ziel === 
+Sie können abstrakte Klassen in Python definieren, um damit deren Instanziierung zu verhindern.  
+
+=== Hinweise === 
+  * Abstrakte Klassen können nicht instanziiert werden.   
+  * Eine Klasse ist abstrakt, sobald eine ihrer Methoden als abstrakt deklariert ist (mit ''%%@abstractmethod%%'' Annotation).  
+  * Den Code dieser Übungen kennen Sie bereits. Er stammt aus der LU06, Aufgabe 5.
+
+=== Auftrag ===
+  - Laden Sie das Repo von github-classroom auf Ihren Rechner
+  - Modifizieren Sie die Klasse ''%%Animal%%'', so dass sie von ''ABC'' erbt.
+  - Deklarieren Sie zudem die Methode ''%%move%%'' als ''%%@abstractmethod%%''.
+  - Nehmen Sie die erforderlicben Imports auf dem Modul ''%%abc%%'' vor.
+  - Führen Sie die ''%%main%%'' Methode aus.  
+  - Was beobachten Sie?  
+  - Passen Sie nun den Code in der ''main''-Methode an, so dass es keine Fehlermeldung mehr gibt.
+  
+=== Abgabe ===
+Halten Sie Ihre Erkenntnis zu Frage 6. stichwortartig in Moodle fest.
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) René Probst

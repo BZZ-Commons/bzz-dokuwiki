@@ -1,0 +1,30 @@
+====== LU02.A04 - Tuples ======
+<WRAP center round todo 60%>
+Erstellen Sie eine Funktion, die Tuples verwendet, um Informationen über Studenten zu speichern. Jedes Tuple sollte den Namen ''str'', das Alter ''int'' und die Studentennummer ''int'' enthalten.
+</WRAP>
+
+
+===== Anleitung in Schritten =====
+
+  * **Schritt 1:** Definieren Sie eine Liste ''[]'' von drei Tuples, wobei jedes Tuple die Informationen eines Studenten enthält.
+  * **Schritt 2:** Erstellen Sie eine Funktion, die die Liste als Argument akzeptiert und die Informationen aller Studenten ausgibt. Verwenden Sie ''if name == 'main':'' zum Starten.
+  * **Schritt 3:** Testen Sie die Funktion mit Ihrer Liste von Tuples.
+
+===== Vorlage =====
+
+<code python>
+students = # Add students here as Tuples
+
+def print_students(student_list):
+    # Your code here
+
+if __name__ == '__main__':
+    print_students(students)
+</code>
+
+===== Zusammenfassung =====
+In dieser Aufgabe haben Sie gelernt, wie man Tuples in Python verwendet, um unveränderliche Datensätze zu erstellen und zu manipulieren.
+
+----
+<nodisp>https://github.com/templates-python/m323-lu02-a04-immutable1</nodisp>
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/ch/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Kevin Maurizi 

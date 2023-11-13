@@ -1,0 +1,37 @@
+====== LU01.L02 - Imperativer ggT Algorithmus ======
+
+Der Algorithmus zur Berechnung des größten gemeinsamen Teilers (GGT) von zwei Zahlen basiert auf dem euklidischen Algorithmus. Er ist eine effiziente Methode, den größten gemeinsamen Teiler zweier Zahlen zu finden. Hier ist die imperativ implementierte Musterlösung für den euklidischen Algorithmus in Python:
+
+<code python>
+def ggt(a, b):
+    while b != 0:
+        cache = a
+        a = b
+        b = cache % b
+        # a, b = b, a % b Das ist der ""pydantic"" Ansatz um Variablen zu vertauschen.
+    return a
+
+if __name__ == '__main__':
+    zahl1 = 56
+    zahl2 = 48
+    resultat = ggt(zahl1, zahl2)
+    print(f'Der GGT von {zahl1} und {zahl2} ist {resultat}')  # Ausgabe: Der GGT von 56 und 48 ist 8
+</code>
+
+
+===== Erklärung =====
+
+  - **Schleife:** Der Algorithmus verwendet eine Schleife, die so lange läuft, wie b nicht Null ist. In jedem Schritt der Schleife wird der Wert von b mit dem Rest der Division von a durch b ersetzt, und der Wert von a wird mit dem ursprünglichen Wert von b ersetzt.
+  - **Tausch:** In jedem Durchlauf der Schleife werden die Werte von a und b aktualisiert. Der Wert von a wird auf den Wert von b gesetzt, und der Wert von b wird auf den Rest der Division von a durch b gesetzt. Dieser Tausch wird in einer einzigen Zeile in Python durchgeführt.
+  - **Ergebnis:** Wenn b Null wird, ist der aktuelle Wert von a der größte gemeinsame Teiler der beiden ursprünglichen Zahlen, und die Schleife wird beendet. Dieser Wert wird dann zurückgegeben.
+
+<WRAP center round tip 60%>
+**Fazit**
+
+Der euklidische Algorithmus ist eine alte und effiziente Methode zur Berechnung des größten gemeinsamen Teilers. Er hat eine Laufzeitkomplexität von ''O(log(min(a,b)))'', was ihn für die Anwendung auf sehr große Zahlen geeignet macht.
+</WRAP>
+
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/ch/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Kevin Maurizi 

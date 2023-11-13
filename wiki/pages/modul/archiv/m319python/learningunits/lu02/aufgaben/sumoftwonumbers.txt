@@ -1,0 +1,50 @@
+~~NOTOC~~
+====== LU02.A04: Sum of two numbers ======
+
+===== Auftrag =====
+
+Schreiben Sie ein Programm, das den Benutzer nach zwei Zahlen fragt. Danach gibt das Programm die Summe der vom Benutzer angegebenen Zahlen aus.
+
+Wenn Sie nach mehreren Zahlen fragen, legen Sie für jede eine eigene Variable an:
+<code python>
+first = int(input('Give the first number:'))
+second = int(input('Give the second number:'))
+
+# do something with the numbers</code>
+
+Beispiele für erwartete Ausgaben:
+
+<code>
+Give the first number:
+*8*
+Give the second number:
+*3*
+The sum of the numbers is 11
+</code>
+
+<code>
+Give the first number:
+*3*
+Give the second number:
+*-1*
+The sum of the numbers is 2
+</code>
+
+
+Verwenden Sie folgende Programmiervorlage:
+
+<code python>
+def main():
+    #write your code below this line
+
+if __name__ == '__main__':
+    main()
+</code>
+
+
+Anmerkung: Kümmern Sie sich im Moment nicht zu sehr um ''if %%__%%name%%__%% == '%%__%%main%%__'%%:''. Wir brauchen es technisch gesehen nicht für dieses Programm, aber es ist eine gute Übung, es einzubauen, und es wird in späteren Übungen klarer werden.
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/ch/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Kevin Maurizi 
+
+Diese Aufgabe ist eine übersetzte und angepasste Aufgabe von [[https://scott3142.uk/|Scott Morgan]], verwendet unter CC BY NC SA.

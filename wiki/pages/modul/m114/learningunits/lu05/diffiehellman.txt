@@ -1,0 +1,69 @@
+====== LU05g - Diffie Hellman Schlüsselaustausch ======
+
+//siehe auch [[wpde>Diffie-Hellman-Schlüsselaustausch]]//
+<WRAP center round info 60%>
+Bei modernen Verschlüsselungsverfahren sind die Algorithmen allgemein bekannt.
+Daher ist der geheime Austausch des Schlüssels von grosser Bedeutung.
+
+Sofern sich beide Partner persönlich kennen, kann dies z.B. über einen Memorystick erfolgen.
+Bei der verschlüsselten Kommunikation mit einem Webserver wird dies aber schwieriger:
+  * Die beiden Kommunikationspartner (z.B. Web-Server und Web-Browser) müssen den Schlüssel im Klartext vereinbaren.
+  * Jeder Angreifer kann mitlesen, wenn der Schlüssel vereinbart wird.
+</WRAP> 
+
+Mit diesem Verfahren können zwei Partner über eine unsichere Leitung einen gemeinsamen, geheimen Schlüssel vereinbaren.
+Ein potentieller Lauscher kann die ganze Kommunikation mitlesen.
+Trotzdem kann der Lauscher den geheimen Schlüssel nicht ermitteln.
+
+===== Veranschaulichung mit Farben =====
+
+Die Funktionsweise lässt sich gut anhand von Farben erläutern.
+Dabei gehen wir davon aus, dass
+  * ... es einfach ist, zwei Farben zu mischen
+  * ... es sehr schwierig ist, aus einer Farbmischung die ursprünglichen Farben zu filtern.
+
+{{https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Diffie-Hellman_Key_Exchange_%28de%29.svg/330px-Diffie-Hellman_Key_Exchange_%28de%29.svg.png}}
+
+// Quelle: https://upload.wikimedia.org/wikipedia/commons //
+
+===== Umsetzung in der Informatik =====
+In der Informatik basieren die meisten Verfahren auf dem Division/Rest-Verfahren (modulo).
+Dabei gilt:
+  * Die Berechnung von Modulo ist sehr einfach. Zum Beispiel: **175348 mod 29 = 14** kann jeder bessere Taschenrechner.
+  * Die Umkehrung von Modulo kann nicht berechnet werden. Zum Beispiel: **x mod 29 = 14** lässt sich nicht berechnen, man müsste viele verschiedene Zahlen ausprobieren.
+
+  - Alice und Bob einigen sich auf eine grosse Primzahl **p** und eine natürliche Zahl **g**. Die Zahl **g** muss kleiner sein, als die Primzahl **p**.
+  - Alice erzeugt eine geheime Zufallszahl **a** und Bob erzeugt eine geheime Zufallszahl **b**.
+  - Alice berechnet: **A = g<sup>a</sup> mod p** und sendet **A** an Bob.
+  - Bob berechnet: **B = g<sup>b</sup> mod p** und sendet **B** an Alice.
+  - Beide können nun den geheimen Schlüssel berechnen:
+    * Alice rechnet: **K = B<sup>a</sup> mod p**
+    * Bob rechnet: **K = A<sup>b</sup> mod p**. 
+
+=== Beispiel (Quelle: Wikipedia): ===
+
+
+Das folgende Beispiel dient zur Veranschaulichung und benutzt deshalb sehr kleine Zahlen. 
+In der tatsächlichen Anwendung werden dagegen Zahlen mit mindestens mehreren hundert Stellen benutzt.
+
+^ Alice ^ Bob ^
+|  Beide einigen sich auf die beiden öffentlichen Schlüssel  ''p=13'' und ''g=2''.  ||
+| Wählt die Zufallszahl ''a=5'' als geheimen Schlüssel. | Wählt die Zufallszahl ''b=8'' als geheimen Schlüssel. |
+| Rechnet **A = 2<sup>5</sup> mod 13 = 6** und sendet ''A'' an Bob. | Rechnet **B = 2<sup>8</sup> mod 13 = 9** und sendet ''B'' an Alice. |
+| Berechnet **K = 9<sup>5</sup> mod 13 = 3**. | Berechnet **K = 6<sup>8</sup> mod 13 = 3**. |
+
+Beide erhalten das gleiche Ergebnis.
+Die Lauscherin Eve kann zwar die Zahlen 13, 2, 6 und 9 mithören, das eigentliche gemeinsame Geheimnis von Alice und Bob ''K=3'' bleibt ihr aber verborgen.
+
+===== The times they are a-changin' =====
+Wie schon Bob Dylan sang: Die Zeiten ändern sich.
+<WRAP center round info 60%>
+Mit der Einführung von Quanten-Computern könnten viele der heutigen Verschlüsselungstechnologien unsicher werden.
+Anstatt Jahrhunderte braucht ein Quanten-Computer vermutlich nur Sekunden um eine Verschlüsselung basierend auf Modulo zu knacken.
+</WRAP>
+
+//Siehe auch [[https://www.boxcryptor.com/de/blog/post/quantum_computing_vs_encryption/]] //
+
+----
+{{tag>m114-A0G}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

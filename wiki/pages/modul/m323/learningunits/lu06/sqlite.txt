@@ -1,0 +1,58 @@
+====== LU06e - Datenbankintegration mit SQLite ======
+
+SQLite ist eine in der C-Programmiersprache geschriebene eingebettete SQL-Datenbank. Sie ist leichtgewichtig und einfach zu konfigurieren, was sie zu einer beliebten Wahl für kleinere Webprojekte macht.
+
+===== Warum SQLite? =====
+
+  * **Leichtgewichtig**: Keine separate Server-Installation erforderlich.
+  * **Portabel**: Die gesamte Datenbank ist in einer einzigen Datei.
+  * **Einfach zu verwenden**: Unterstützt SQL und hat Python-Bibliotheken für den einfachen Zugriff.
+
+===== Integration in Flask =====
+
+Für die Integration von SQLite in eine Flask-Anwendung benötigen wir das ''sqlite3''-Modul, das in der Python-Standardbibliothek enthalten ist.
+
+==== 1. Importieren des sqlite3-Moduls ====
+
+Das erste, was wir tun müssen, ist das Importieren des ''sqlite3''-Moduls.
+
+<code python>
+import sqlite3
+</code>
+
+==== 2. Verbindung zur Datenbank herstellen ====
+
+Eine Verbindung zur SQLite-Datenbank wird mit der Methode ''connect()'' hergestellt. Wenn die Datenbankdatei nicht existiert, wird sie automatisch erstellt.
+
+<code python>
+conn = sqlite3.connect('example.db')
+</code>
+
+==== 3. Cursor-Objekt erstellen ====
+
+Ein Cursor-Objekt ermöglicht die Ausführung von SQL-Befehlen und das Abrufen von Daten.
+
+<code python>
+cursor = conn.cursor()
+</code>
+
+==== 4. SQL-Befehle ausführen ====
+
+Mit dem Cursor-Objekt können wir jetzt SQL-Befehle ausführen.
+
+<code python>
+cursor.execute('''CREATE TABLE IF NOT EXISTS users (id INTEGER PRIMARY KEY, username TEXT, email TEXT)''')
+</code>
+
+==== 5. Daten speichern und Verbindung schließen ====
+
+Nach der Ausführung von SQL-Befehlen sollten die Änderungen gespeichert und die Verbindung geschlossen werden.
+
+<code python>
+conn.commit()
+conn.close()
+</code>
+
+----
+{{tag>M323-LU06}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/ch/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Kevin Maurizi 

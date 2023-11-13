@@ -1,0 +1,79 @@
+====== LU01b - Netzwerkausdehnung ======
+
+Die geografische Ausdehnung von Netzwerken bezieht sich darauf, wie weit räumlich verteilt die Netzwerkkomponenten sind und wie sie miteinander kommunizieren. Nachstehend finden Sie eine Beschreibung zu jeder Ausdehnung, gegliedert von der kleinsten zur grössten:
+
+==== Privat Area Network (PAN) ====
+Ein PAN ist ein kleines Netzwerk, das dazu dient, Geräte in unmittelbarer Nähe einer einzelnen Person miteinander zu verbinden. Es handelt sich um eine drahtlose Technologie, die es ermöglicht, verschiedene elektronische Geräte miteinander zu verbinden, um Daten auszutauschen, Ressourcen zu teilen oder kooperative Aufgaben auszuführen.
+
+Ein typisches PAN umfasst normalerweise Geräte wie Smartphones, Laptops, Tablets, Smartwatches, Headsets und andere drahtlose Peripheriegeräte. Bluetooth ist eine der am häufigsten verwendeten Technologien zur Einrichtung von PANs. Es ermöglicht die drahtlose Kommunikation über kurze Distanzen, normalerweise innerhalb eines Radius von etwa 10 Metern.
+
+Einige Beispiele für PAN-Anwendungen sind:
+  * Datenübertragung: Sie können Bluetooth verwenden, um Dateien zwischen Ihrem Smartphone und Laptop drahtlos zu übertragen.
+  * Tastatur und Maus: Sie können eine drahtlose Tastatur und Maus mit Ihrem Computer verbinden, um sie ohne Kabel verwenden zu können.
+  * Verbindung zu Wearables: Smartwatches, Fitness-Tracker und andere Wearables können sich drahtlos mit Ihrem Smartphone verbinden, um Daten wie Benachrichtigungen, Gesundheitsdaten und mehr auszutauschen.
+  * Audiogeräte: Drahtlose Headsets, Lautsprecher und Kopfhörer können sich mit Ihrem Telefon verbinden, um Audio drahtlos zu übertragen.
+  * Heimautomatisierung: Smarte Heimgeräte wie intelligente Glühbirnen, Thermostate und Sicherheitssysteme können in einem PAN verbunden sein, um eine koordinierte Steuerung zu ermöglichen.
+
+PANs bieten den Vorteil der Mobilität und Flexibilität, da Geräte ohne Kabel miteinander kommunizieren können. Sie sind besonders nützlich in Situationen, in denen eine kurze Reichweite ausreicht und eine einfache drahtlose Verbindung benötigt wird.
+
+
+==== Lokal Area Network (LAN) ====
+Ein LAN ist ein Computernetzwerk, das sich auf einen begrenzten geografischen Bereich innerhalb eines einzelnen Gebäudes erstreckt. LANs dienen dazu, Computer, Geräte und Ressourcen miteinander zu verbinden, um die gemeinsame Nutzung von Informationen, Daten und Diensten zu ermöglichen.
+
+Ein typisches LAN umfasst folgende Komponenten:
+  * Endgeräte: Computer, Laptops, Drucker, Server, Smartphones und andere Geräte, die in das Netzwerk integriert sind und Daten senden oder empfangen können.
+  * Switches: Switches sind Geräte, die dazu dienen, Daten innerhalb des LANs effizient zu verteilen. Sie verbinden die verschiedenen Endgeräte im Netzwerk und leiten den Datenverkehr entsprechend weiter.
+  * Router: Router können verwendet werden, um mehrere LANs miteinander zu verbinden oder den Zugriff auf das Internet zu ermöglichen. Sie können auch die Kommunikation zwischen verschiedenen Netzwerken steuern.
+  * Verbindungstechnologien: LANs können über verschiedene Verbindungstechnologien realisiert werden, darunter Ethernet (kabelgebunden) und WLAN (drahtlos).
+  * Protokolle: Netzwerkprotokolle wie TCP/IP werden verwendet, um die Kommunikation und den Datenverkehr im LAN zu regeln.
+  * Ressourcenfreigabe: In einem LAN können Ressourcen wie Drucker, Dateien und Anwendungen gemeinsam genutzt werden, was die Zusammenarbeit und Effizienz steigert.
+
+LANs bieten mehrere Vorteile, darunter:
+  * Schnelle Datenübertragung: Da die Distanz im LAN begrenzt ist, ist die Datenübertragung in der Regel schnell und hat geringe Latenzzeiten.
+  * Einfache 
+  * Verwaltung: Die Verwaltung und Wartung eines LANs ist in der Regel einfacher als bei grösseren Netzwerken.
+  * Gemeinsame Ressourcennutzung: LANs ermöglichen die gemeinsame Nutzung von Ressourcen wie Druckern und Dateien, was die Effizienz erhöht.
+  * Sicherheit: Da LANs auf begrenzte geografische Bereiche beschränkt sind, kann die Sicherheit leichter kontrolliert werden.
+
+LANs finden sich in verschiedenen Umgebungen, darunter Unternehmen, Schulen, Heimnetzwerken und Institutionen. Sie sind die Grundlage für eine Vielzahl von IT- und Kommunikationsanwendungen.
+
+
+==== Campus Area Network (CAN) ====
+Ein CAN ist eine Art von Computernetzwerk, das eine mittlere geografische Ausdehnung hat und sich typischerweise über einen grösseren Bereich wie einen Universitäts-Campus oder ein grosses Unternehmensgelände erstreckt. Ein CAN kann aus einer Kombination von LANs bestehen, um die Kommunikation zwischen verschiedenen Gebäuden oder Standorten auf dem Gelände zu ermöglichen. 
+
+
+==== Metropolitan Area Network (MAN) ====
+Ein MAN ist ein Netzwerk, das sich über eine grössere geografische Region erstreckt, normalerweise über eine Stadt oder eine städtische Region. 
+
+Hier sind einige Merkmale von MANs:
+  * Grösse: Ein MAN hat eine grössere geografische Ausdehnung als ein LAN, kann jedoch immer noch auf eine begrenzte geografische Region wie eine Stadt oder eine Gemeinde beschränkt sein.
+  * Verbindungstechnologien: MANs nutzen normalerweise eine Kombination aus kabelgebundenen und drahtlosen Verbindungstechnologien, um die Kommunikation zwischen verschiedenen Standorten zu ermöglichen.
+  * Zweck: MANs werden oft von Unternehmen, Universitäten, Verwaltungen oder Telekommunikationsunternehmen genutzt. Sie dienen dazu, verschiedene Standorte innerhalb einer Stadt oder eines städtischen Gebiets miteinander zu verbinden und eine gemeinsame Ressourcennutzung sowie effiziente Kommunikation zu ermöglichen.
+  * Anwendungen: Ein MAN kann für verschiedene Anwendungen genutzt werden, darunter Internetdienste für Städte, die Verbindung von Unternehmensstandorten, Bildungseinrichtungen oder Forschungszentren innerhalb einer Stadt sowie die Bereitstellung von Kommunikationsdiensten für den öffentlichen Sektor.
+
+Ein Beispiel für die Anwendung eines MANs könnte sein, wenn eine Universität mehrere Campus-Standorte in einer Stadt hat und diese Standorte über ein gemeinsames Netzwerk verbinden möchte, um die Kommunikation zwischen Fakultäten, Studenten und Mitarbeitern zu erleichtern.
+
+
+==== Wide Area Network (WAN) ====
+Ein WAN ist ein Computernetzwerk, das sich über sehr große geografische Entfernungen erstreckt, oft sogar über Ländergrenzen hinweg, jedoch innerhalb eines Kontinents. WANs dienen dazu, entfernte Standorte miteinander zu verbinden und die Kommunikation über weite Entfernungen zu ermöglichen.
+
+Hier sind einige wichtige Merkmale von WANs:
+  * Größe: Sie können ganze Länder innerhalb eines Kontinents abdecken.
+  * Verbindungstechnologien: WANs nutzen verschiedene Technologien zur Verbindung über große Entfernungen, darunter Glasfaserkabel, Satellitenverbindungen und öffentliche Netzwerke wie das Internet.
+  * Dienste und Anwendungen: WANs ermöglichen die Bereitstellung einer Vielzahl von Diensten und Anwendungen, einschließlich Internetzugang, E-Mail-Kommunikation, Cloud-Diensten, Videoübertragung, Online-Banking und mehr.
+  * Zuverlässigkeit und Latenz: Aufgrund der großen Entfernungen können WANs höhere Latenzzeiten aufweisen als lokale Netzwerke. Zuverlässigkeit und Verfügbarkeit sind wichtige Faktoren in WANs, da sie oft für geschäftskritische Anwendungen genutzt werden.
+  * Router und Gateways: WANs erfordern spezialisierte Netzwerkgeräte wie Router und Gateways, um den Datenverkehr über verschiedene Netzwerke hinweg zu leiten und sicherzustellen, dass die Kommunikation zuverlässig erfolgt.
+
+Ein Beispiel für die Anwendung eines WANs könnte sein, wenn ein Unternehmen Bürostandorte in mehreren Ländern Europas hat und alle Standorte über ein gemeinsames Netzwerk miteinander verbunden werden müssen, um die Zusammenarbeit, Datenfreigabe und Kommunikation zu ermöglichen.
+
+
+==== Global Area Network (GAN) ====
+Ein GAN ist ein extrem erweitertes Netzwerk, das weltweit verteilt ist. Hierbei handelt es sich oft um eine Kombination aus öffentlichen und privaten Netzwerken, die es Unternehmen, Organisationen und sogar Einzelpersonen ermöglichen, globale Kommunikation und Zusammenarbeit zu realisieren. Das Internet selbst kann als das grösste globale Netzwerk angesehen werden.
+
+
+==== Fazit ====
+Die geografische Ausdehnung eines Netzwerks hat Auswirkungen auf Aspekte wie Latenzzeiten, Bandbreite, Kosten und Skalierbarkeit. Je grösser die geografische Ausdehnung, desto komplexer kann die Netzwerkinfrastruktur werden, weshalb die richtige Wahl der Technologien und Dienstleistungen entscheidend ist, um eine reibungslose Kommunikation und optimale Leistung sicherzustellen. Hierbei sind auch Sicherheitsaspekte zu berücksichtigen, da erweiterte Netzwerke anfälliger für Bedrohungen von aussen sind.
+
+----
+{{tag>M117-LU01}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Andre Probst

@@ -1,0 +1,46 @@
+====== LU04.A04 - Filtere Studenten nach Noten ======
+
+<WRAP center round todo 60%>
+Erstelle eine Liste von Studenten und deren Noten.
+Nutze List Comprehensions, um Studenten mit bestimmten Notenbereichen zu filtern.
+</WRAP>
+
+===== Aufgabenstellung =====
+Du hast eine Liste von Studenten und ihren Noten. Deine Aufgabe ist es, die Studenten zu filtern, die eine Note innerhalb eines bestimmten Bereichs haben (z.B. 4.0). Verwende List Comprehensions in Python, um die Liste effizient zu filtern.
+
+==== Schrittweises Vorgehen ====
+
+  * **Schritt 1:** Definiere eine Liste von Studenten und ihren Noten.
+  * **Schritt 2:** Nutze eine List Comprehension, um die Studenten zu filtern, deren Note größer kleiner als 4.0 ist.
+  * **Schritt 3:** Drucke die gefilterte Liste, um das Ergebnis zu überprüfen.
+
+==== Vorlage ====
+
+<code python>
+def filter_students_by_grade(students):
+    """
+    Nutze eine List Comprehension, um Studenten zu filtern, deren Note kleiner als 4.0 ist.
+ 
+    Parameters:
+    - students (list): Liste der Studenten und ihrer Noten.
+ 
+    Returns:
+    - list: Liste der gefilterten Studenten.
+    """    
+    return []
+
+if __name__ == '__main__':
+    students = [
+        ('Alice', 4.0),
+        ('Bob', 3.5),
+        ('Charlie', 4.25),
+        ('David', 5.5),
+        ('Manuel', 3.75)
+    ]
+    result = filter_students_by_grade(students)
+    print(result)
+</code>
+
+----
+<nodisp>https://github.com/templates-python/m323-lu04-a04-comprehensions</nodisp>
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/ch/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Kevin Maurizi 

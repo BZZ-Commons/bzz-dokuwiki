@@ -1,0 +1,62 @@
+====== LU07.A01 - Bedingte Ausdrücke ======
+<WRAP center round todo 60%>
+Lösen Sie folgende kleinen Aufgaben um sich mit dem ''Ternary''-Operator in Python vertraut zu machen.
+</WRAP>
+
+===== Aufgabe =====
+In der Vorlage findest du einige Funktionen mit vorgegebenem Code.
+Ergänze bzw. ersetze die Bedingungen gemäss den Angaben in den ''# TODO ...''-Kommentaren.
+
+Am Ende der Vorlage findest du den Codeblock, der die ganzen Funktionen aufruft.
+Du kannst den Aufruf einzelner Funktionen unterdrücken, wenn du ein ''# '' davor setze.
+<code python>
+if __name__ == '__main__':
+    larger()
+    boolean()
+    modulo()
+    nested()
+</code>
+=== 1. Grössere Zahl ===
+  * Funktion: ''larger()''
+  * Tests: ''test_larger()''
+  * Aufgabe: Finden Sie die grössere von zwei Zahlen mit **ternären** Operator und printen Sie diese aus:
+
+
+===  2. Wert des Boolean auf deutsch ausdrucken === 
+  * Funktion: ''boolean()''
+  * Tests: ''test_boolean()''
+  * Aufgabe: Für den Fall das der Boolean den Wert ''True'' hat soll am Bildschirm der Text ''Wahr'' erscheinen, im anderen Fall soll ''Falsch'' erscheinen.
+
+
+=== 3. Wandeln Sie die Vorlage um === 
+  * Funktion: ''modulo()''
+  * Tests: ''test_modulo1()'', ''test_modulo2()''
+  * Aufgabe: Verwenden Sie in der Lösung anstatt ein ''if..else''-Statement einen ''Ternary''-Operator.
+
+
+=== 4. Verschachtelte Ternary-Operatoren === 
+  * Funktion: ''nested()''
+  * Tests: ''test_nested1()'', ''test_nested2()'', ''test_nested3()''
+  * Aufgabe: Ersetze die verschachtelte ''If''-Anweisung durch eine ''Ternary''-Operation
+
+
+===== Vorgehen =====
+
+  - Akzeptiere das GitHub Classroom Assignment im Moodlekurs.
+  - Klone das Repository in PyCharm.
+  - Codiere die Programmlogik in ''main.py''.
+  - Teste dein Programm mit den Testfällen in ''main_test.py''.
+  - Führe einen Commit und einen Push durch.
+
+=== Abgabe ===
+Die Abgabe erfolgt durch den Push ins GitHub Repository.
+In Moodle ist keine Abgabe vorgesehen oder möglich.
+
+<details>
+<summary>//=> GitHub Repo für externe Besucher//</summary> https://github.com/templates-python/m319-lu07-a01-conditional
+//Lernende am BZZ **müssen** den Link zum GitHub Classroom Assignment verwenden//
+</details>
+
+----
+{{tag>M319-LU07}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/ch/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Kevin Maurizi, Marcel Suter

@@ -1,0 +1,15 @@
+====== LU06.A01 - gpg4usb ======
+<WRAP center round info 60%>
+Diese Aufgabe muss als Partnerarbeit durchgeführt werden.
+Beide Partner müssen gpg4usb heruntergeladen haben.
+</WRAP>
+
+===== Auftrag =====
+Dieser Auftrag geht davon aus, dass Sie gpd4usb noch nicht heruntergeladen haben.
+Falls Sie bereits mit gpg4usb gearbeitet haben, können Sie die ersten Schritte überspringen.
+  - Laden Sie die aktuellste Version von [[https://www.gpg4usb.org/|gpg4usb]] herunter.
+  - Entpacken Sie das Zip-Archiv und starten Sie gpg4usb.
+  - Erstellen Sie ein Schlüsselpaar (private / public key) und senden Sie den public key an Ihren Partner
+  - Schreiben Sie eine kurze Textnachricht.
+  - Senden Sie die signierte und verschlüsselte Nachricht an Ihren Partner.
+  - Entschlüsseln Sie die Nachricht von Ihrem Partner und prüfen Sie die Signatur.

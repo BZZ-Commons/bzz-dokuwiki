@@ -1,0 +1,65 @@
+~~NOTOC~~
+====== LU02.A01: Various Variables ======
+
+===== Auftrag =====
+
+Die Übungsvorlage wird mit einer Programmvorlage geliefert, die die Funktion und ihren Aufruf enthält.
+
+<code python>
+def main():
+    #write your code below this line
+    chicken_quantity = 3
+    bacon_quantity = 5.5
+    print("Chicken:")
+    print(chicken_quantity)
+    print("Bacon (kg):")
+    print(bacon_quantity)
+    print("Tractor:")
+    print("None!")
+    print()
+    print("And finally, a summary:")
+    print(chicken_quantity)
+    print(bacon_quantity)
+    print("None!")
+
+if __name__ == '__main__':
+    main()
+</code>
+
+<code>
+Chicken:
+3
+Bacon (kg):
+5.5
+Tractor:
+None!
+
+And finally, a summary:
+3
+5.5
+None!
+</code>
+
+Ändern Sie das Programm an den relevanten Stellen so ab, dass es folgendes ausgibt:
+
+<code>
+Chicken:
+9000
+Bacon (kg):
+0.1
+Tractor:
+Zero
+
+And finally, a summary:
+9000
+0.1
+Zero
+</code>
+
+
+Anmerkung: Kümmern Sie sich im Moment nicht zu sehr um ''if %%__%%name%%__%% == '%%__%%main%%__'%%:''. Wir brauchen es technisch gesehen nicht für dieses Programm, aber es ist eine gute Übung, es einzubauen, und es wird in späteren Übungen klarer werden.
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/ch/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Kevin Maurizi 
+
+Diese Aufgabe ist eine übersetzte und angepasste Aufgabe von [[https://scott3142.uk/|Scott Morgan]], verwendet unter CC BY NC SA.

@@ -1,0 +1,20 @@
+====== LU05.L06: Leap year ======
+
+<code python>
+def main():
+    year = int(input('Give a year:\n'))
+    if year % 400 == 0:
+        print('The year is a leap year.')
+    elif (year % 4 == 0) and (year % 100 != 0):
+        print('The year is a leap year.')
+    else:
+        print('The year is not a leap year.')
+
+
+if __name__ == '__main__':
+    main()
+</code>
+
+----
+{{tag>M319-LU05}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/ch/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Kevin Maurizi, Marcel Suter

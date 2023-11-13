@@ -1,0 +1,39 @@
+====== LU11.A01 - Testfälle "Lager" ======
+
+===== Ausgangslage =====
+
+Das Programm verwaltet die Bestände der Impfstoffe im Lager.
+
+  - Der Benutzer startet das Programm und gibt die Nummer des Impfstoffs ein.
+  - Das Programm zeigt darauf den aktuellen Bestand des Impfstoffs an.
+  - Danach erfasst der Benutzer einen Eingang (Menge positiv) oder Ausgang (Menge negativ).
+  - Das Programm zeigt den neuen Bestand des Impfstoffs an.
+
+==== Eingaben ====
+^Nummer des Impfstoffs |Ganzzahl von 1 bis 99 |
+^Menge des Ein- / Ausgangs |Ganzzahl von -9999 bis +9999|
+^::: |0 ist nicht zulässig|
+
+
+==== Ablauf im Terminal ====
+<code>
+Nr des Impfstoffs  > 15
+Aktueller Bestand  > 500 Dosen
+Menge              > -150
+Neuer Bestand      > 350 Dosen
+</code>
+
+===== Auftrag =====
+
+Sie erhalten den Auftrag, das Programm zu testen. Erstellen sie insgesamt 8 repräsentative Testfälle (Testcase). Diese Testfälle sollen ein möglichst breites Spektrum an Situationen abdecken:
+
+  * Ein Testfall mit korrekten Werten
+  * Ein Testfall mit Randwerten für die zulässigen Eingaben
+  * Für jede Eingabe 0-n Testfälle mit ungültigen Werten. Jeder Testfall darf nur einen ungültigen Wert enthalten, die anderen Werte müssen gültig sein.
+  * Formal falsche Werte
+  * Ungültige Werte (zu gross, zu klein)
+
+
+<WRAP center round info 60%>
+Eine mögliche Lösung finden Sie hier: [[modul:m431:learningunits:lu11:loesungen:pandemie|LU11.L01 - Aufgabe: Testfälle "Lager"]]
+</WRAP>

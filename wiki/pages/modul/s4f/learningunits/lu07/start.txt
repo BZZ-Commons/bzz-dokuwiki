@@ -1,0 +1,15 @@
+===== LU07 Python Functions =====
+
+==== Lernziele: Ich kann ====
+  * beschreiben was Funktionen sind und wofür diese eingesetzt werden.
+  * mindestens ein wichtiges Prinzip im Zusammenhang mit dem Design von Funktionen erläutern.
+  * mindestens drei sehr häufig gebrauchte Standardfunktionen nennen.
+  * diese drei Funktionen in Python verwenden (aufrufen).
+  * eigene, einfache Funktionen in Python planen und implementieren.
+
+==== Theoretische Grundlagen ====
+  * [[https://www.w3schools.com/python/python_functions.asp|Functions]] ([[https://www.w3schools.com/python/python_lambda.asp|Lambda]], [[https://www.w3schools.com/python/python_scope.asp|Scope]])
+
+==== Aufgaben ====
+  * [[https://github.com/bzz-fgict/s4f/blob/main/py-basics/src/lectures/functions/loops.py|Recursion vs. Iteration]]
+  * 5kyu [[https://www.codewars.com/kata/525caa5c1bf619d28c000335/python|Tic-Tac-Toe Checker]]

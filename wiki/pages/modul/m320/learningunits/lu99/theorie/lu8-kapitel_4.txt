@@ -1,0 +1,80 @@
+==== 3. Python Mixin (Mehrfachvererbung) ====
+
+=== Was ist ein Mixin in Python? ===
+
+Ein Mixin 
+  * ist eine Klasse, welche Methodenimplementierungen zur Wiederverwendung durch mehrere verwandte, untergeordnete Klassen bereitstellt. Die Vererbung impliziert jedoch keine Ist-ein-Beziehung.
+  * definiert keinen neuen Typen. Daher ist es nicht zur direkten Instanziierung vorgesehen.
+  * bündelt eine Reihe von Methoden zur Wiederverwendung. Jedes Mixin sollte ein einziges spezifisches Verhalten haben und eng verwandte Methoden implementieren.
+
+=== Python Mixin Beispiel ===
+
+Zunächst wird die Klasse ''Person'' implementiert:
+
+<code>
+class Person:
+    def __init__(self, name):
+        self.name = name
+</code>
+
+Dann wird eine Klasse ''Employee'' definiert, die von ''Person'' erbt:
+
+<code>
+class Employee(Person):
+    def __init__(self, name, skills, dependents):
+        super().__init__(name)
+        self.skills = skills
+        self.dependents = dependents
+</code>
+
+Zuletzt wird eine neue Instanz von ''Employee'' erzeugt:
+
+<code>
+if __name__ == '__main__':
+    e = Employee(
+        name='John',
+        skills=['Python Programming''Project Management'],
+        dependents={'wife': 'Jane', 'children': ['Alice', 'Bob']}
+    )
+</code>
+
+=== Mehrerer Mixin Klassen kombinieren ===
+
+Angenommen, Sie möchten das ''Employee'' Objekt zu JSON konvertieren. Dazu können Sie zunächst eine neue Mixin-Klasse definieren, die das Standardmodul ''json'' verwendet:
+
+<code>
+import json
+
+class JsonMixin:
+    def to_json(self):
+        return json.dumps(self.__dict__)
+</code>
+
+Ergänzen Sie dann die Klasse ''Employee'' so, dass sie zusätzlich von ''JsonMixin'' erbt, wodurch die Methode ''to_json'' auf ''Employee'' verfügbar wird:
+
+<code>
+class Employee(JsonMixin, Person):
+    def __init__(self, name, skills, dependents):
+        super().__init__(name)
+        self.skills = skills
+        self.dependents = dependents
+</code>
+
+Im Folgenden wird eine neue Instanz der Klasse ''Employee'' erstellt und nach JSON konvertiert:
+
+<code>
+if __name__ == '__main__':
+    e = Employee(
+        name='John',
+        skills=['Python Programming''Project Management'],
+        dependents={'wife': 'Jane', 'children': ['Alice', 'Bob']}
+    )
+
+    print(e.to_json())
+</code>
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Daniel Fahrni
+**Quellen**:
+  * [[https://www.pythontutorial.net/python-oop/python-mixin/|Python mixin | pythontutorial.net]]
+  * [[https://medium.com/the-techlife/python-up-your-code-mixins-3b26e76c0f45|Python Up Your Code: Mixins | medium.com]]

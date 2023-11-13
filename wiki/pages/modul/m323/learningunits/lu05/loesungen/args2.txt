@@ -1,0 +1,14 @@
+====== LU05.L02 - Listen ordnen ======
+
+{{gh>https://github.com/templates-python/m323-lu05-a02-args2/blob/solution/main.py}}
+
+<WRAP center round tip 80%>
+Das Slicing-Feature in Python ermöglicht es, Teile einer Liste, eines Strings oder anderer Sequenztypen zu extrahieren. Der Ausdruck ''merged_list[::-1]'' wendet das Slicing auf die Liste ''merged_list'' an und kehrt die Reihenfolge der Elemente um.
+
+Der Ausdruck kann zerlegt werden in:
+
+  * ''merged_list'': die Liste, die wir manipulieren wollen
+  * ''[::-1]'': der Slicing-Operator
+
+Im Slicing-Operator ''[::]'' gibt der erste Wert den Startindex, der zweite Wert den Endindex und der dritte Wert den Schritt an. Wenn der Schrittwert ''-1'' ist, wird die Liste rückwärts durchlaufen. Da Start- und Endindex leer sind, wird die gesamte Liste umgekehrt.
+</WRAP>

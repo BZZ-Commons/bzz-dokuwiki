@@ -1,0 +1,85 @@
+====== LU05.A09: Only positives ======
+<WRAP center round todo 60%>
+Schreibe ein Programm, das jede positive Zahl als Zweierpotenz ausgibt.
+</WRAP>
+
+===== Auftrag =====
+Erstelle die Programmlogik für das Programm:
+  - Solange der Benutzer nicht 0 eingibt
+    - Falls die Zahl positiv ist, gibt das Programm die Zweierpotenz aus.
+    - Sonst gibt das Programm "Unsuitable number" aus.
+
+<WRAP center round important 60%>
+Bei diesem Programm übst du die verschiedenen Möglichkeiten, um eine Iteration zu steuern.
+Jede Variante wird als eigene Programmfunktion umgesetzt.
+
+  * main_while(): Schleife mit Bedingung **ohne** ''break'' und ''continue''
+  * main_break(): Endlosschleife mit ''break''
+  * main_continue(): Schleife mit einer Bedingung und ''continue''
+ 
+</WRAP>
+==== Beispiel ====
+<code>
+Give a number:
+**5**
+25
+Give a number:
+**4**
+16
+Give a number:
+**-3**
+Unsuitable number
+Give a number:
+**1**
+1
+Give a number:
+**0**
+</code>
+
+
+===== Vorgehen =====
+
+  - Akzeptiere das GitHub Classroom Assignment im Moodlekurs.
+  - Klone das Repository in PyCharm.
+  - Codiere die Programmlogik in ''main.py''.
+  - Teste dein Programm mit den Testfällen in ''main_test.py''.
+  - Führe einen Commit und einen Push durch.
+
+=== Abgabe ===
+Die Abgabe erfolgt durch den Push ins GitHub Repository.
+In Moodle ist keine Abgabe vorgesehen oder möglich.
+
+===== Vorlage =====
+<code python>
+def main_while():
+    # Schleife mit Bedingung OHNE break und continue
+    pass
+    
+    
+def main_break():
+    # Endlosschleife mit break
+    pass
+
+def main_continue():
+    # Schleife mit Bedingung und continue
+    pass
+
+
+if __name__ == '__main__':
+    main()
+</code>
+
+
+
+nmerkung: Kümmere dich ich im Moment nicht zu sehr um ''if %%__%%name%%__%% == '%%__%%main%%__'%%:''. 
+Dieser Programmblock legt fest, welche Funktion beim Ausführen gestartet wird.
+Wir werden dies im Verlauf des Moduls noch genauer betrachten.
+
+
+
+<nodisp>GitHub-Repo: https://github.com/templates-python/m319-lu05-a09-positives</nodisp>
+----
+{{tag>M319-LU05}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/ch/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Kevin Maurizi, Marcel Suter
+
+Diese Aufgabe ist eine übersetzte und angepasste Aufgabe von [[https://scott3142.uk/|Scott Morgan]], verwendet unter CC BY NC SA.

@@ -1,0 +1,19 @@
+====== LU08.A01 - Resultate auswerten ======
+<WRAP center round todo 60%>
+Ergänze die Requests zum Testen der Bookshelf-Applikation mit Tests.
+</WRAP>
+
+Um die Ausführung und Auswertung der Requests zu automatisieren, ergänzen wir diese durch Tests.
+Jeder Request soll 1-2 Tests erhalten:
+  * Prüfen ob die Response den erwarteten http-Statuscode enthält.
+  * Wo sinnvoll: Prüfen ob die Daten in der Response korrekt sind.
+
+<WRAP center round info 60%>
+Der Request zum Lesen aller Bücher erwartet einen Array von 3 Büchern als Antwort.
+Dazu musst du im Postman Learning Center schauen, wie man eine solche Response korrekt verarbeitet.
+</WRAP>
+
+
+----
+{{tag>M450-LU08}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

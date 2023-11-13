@@ -1,0 +1,71 @@
+====== LU10c - Open Source ======
+
+<WRAP center round info 60%>
+
+Open source bedeutet nicht "free to do what ever i want"!
+
+</WRAP>
+
+===== Open Source Lizenzen =====
+Open Source Lizenzen erlauben es den Nutzern, den Quellcode einer Software einzusehen, zu modifizieren und zu verbreiten. Es gibt verschiedene Arten von Open Source Lizenzen, wie z.B. die GNU General Public License (GPL), die Apache License, die MIT License und viele weitere. Jede Lizenz hat unterschiedliche Bedingungen hinsichtlich der Verwendung und Weiterverbreitung der Software.
+
+Die 3 wichtigsten Open Source Lizenzarten werden nun kurz umschrieben.
+
+==== GNU General Public License (GPL) ====
+
+Die [[https://www.gnu.org/licenses/quick-guide-gplv3||GNU General Public License (GPL)]] ist eine weit verbreitete Open Source Lizenz, die von der [[https://www.fsf.org/|Free Software Foundation (FSF)]] entwickelt wurde. Sie ist eine sogenannte Copyleft-Lizenz, die darauf abzielt, die Freiheit von Software zu schützen und sicherzustellen, dass diese Freiheiten auch in abgeleiteten Werken erhalten bleiben.
+
+Dies sind einige Schlüsselprinzipien und -merkmale der GNU General Public License:
+
+  * Freiheit der Nutzung: Die GPL gewährt jedem die Freiheit, die lizenzierte Software für jeden Zweck zu nutzen, sei es privat oder kommerziell. Es gibt keine Beschränkungen hinsichtlich des Verwendungszwecks.
+  * Freiheit der Weitergabe: Sie erlaubt jedem, die lizenzierte Software an andere weiterzugeben, sei es als Original- oder modifizierte Version. Dabei müssen jedoch die Bedingungen der GPL eingehalten werden, insbesondere in Bezug auf die Weitergabe des Quellcodes.
+  * Quellcode-Zugänglichkeit: Die GPL fordert, dass der Quellcode der Software allen Benutzern zur Verfügung gestellt werden muss, die die Software erhalten haben. Dies ermöglicht es Benutzern, den Code einzusehen, zu verstehen, zu ändern und zu verbessern.
+  * Copyleft-Prinzip: Das Copyleft-Prinzip der GPL ist ein wichtiges Merkmal. Es besagt, dass abgeleitete Werke oder modifizierte Versionen der lizenzierten Software ebenfalls unter den Bedingungen der GPL veröffentlicht werden müssen. Dadurch wird sichergestellt, dass die Freiheiten der Software nicht eingeschränkt werden.
+  * Verbreitung der Lizenz: Wenn eine Software unter der GPL lizenziert ist, müssen alle Teile des Programms, einschliesslich der Lizenzbestimmungen, beibehalten und weitergegeben werden. Jeder, der die Software erhält, hat das Recht, sie unter den Bedingungen der GPL zu nutzen und zu verteilen.
+
+Es ist wichtig zu beachten, dass die GPL verschiedene Versionen hat, wie z.B. die GPL-2.0 und die GPL-3.0. Jede Version enthält spezifische Bestimmungen und Klauseln, die die Verwendung, Verteilung und Modifikation der Software regeln. Es ist ratsam, die genaue Version der GPL zu überprüfen, die für eine bestimmte Software verwendet wird.
+
+[[https://wss-redpoint.com/open-source-lizenzen-die-gpl-lizenz|Deutsche Beschreibung auf WSS-Redpoint]]
+
+==== Apache License ====
+
+Die Apache License ist eine Open Source Lizenz, die von der [[https://www.apache.org/licenses/LICENSE-2.0|Apache Software Foundation (ASF)]] entwickelt wurde. Sie ist eine weit verbreitete Lizenz und wird von vielen Open Source Projekten verwendet, darunter auch einige bekannte Software wie der Apache HTTP Server, Hadoop, Kafka und Tomcat.
+
+Dies sind einige Schlüsselprinzipien und -merkmale der Apache License:
+
+  * Freiheit der Nutzung: Die Apache License erlaubt es jedem, die lizenzierte Software für jeden Zweck zu nutzen, sei es privat oder kommerziell. Es gibt keine Beschränkungen hinsichtlich des Verwendungszwecks.
+  * Quellcode-Zugänglichkeit: Im Gegensatz zur GNU General Public License (GPL) erfordert die Apache License nicht zwingend die Veröffentlichung des Quellcodes der Software. Die Lizenz legt jedoch fest, dass bestimmte Hinweise und Copyright-Informationen beibehalten und weitergegeben werden müssen.
+  * Modifikation und Weitergabe: Die Apache License erlaubt es Entwicklern, die lizenzierte Software zu modifizieren und abgeleitete Werke zu erstellen. Diese modifizierten Versionen können unter einer anderen Lizenz veröffentlicht werden, solange die ursprünglichen Lizenzbestimmungen eingehalten werden.
+  * Patentrechte: Ein wichtiges Merkmal der Apache License ist die Einräumung von Patentlizenzen. Wenn ein Patentinhaber Code zur lizenzierten Software beiträgt, gewährt er anderen Benutzern eine Lizenz, dieses Patent im Zusammenhang mit der Nutzung, Modifikation und Verbreitung der Software zu nutzen. Dadurch wird ein gewisses Mass an Schutz vor Patentstreitigkeiten gewährleistet.
+  * Haftungsausschluss: Die Apache License enthält einen Haftungsausschluss, der den Entwickler von der Haftung für mögliche Schäden oder Konsequenzen, die aus der Nutzung der Software entstehen könnten, befreit.
+
+Die Apache License ist bestrebt, Entwicklern eine flexible Lizenzierungsoption zu bieten, die es ermöglicht, Softwareprojekte in verschiedenen Kontexten zu nutzen und weiterzuentwickeln. Sie fördert die Zusammenarbeit und den Austausch von Softwarelösungen innerhalb der Open Source Community.
+
+Es ist wichtig zu beachten, dass es verschiedene Versionen der Apache License gibt, wie z.B. die Apache License 2.0. Jede Version hat spezifische Bestimmungen und Klauseln, die die Verwendung, Verteilung und Modifikation der Software regeln. Es ist ratsam, die genaue Version der Apache License zu überprüfen, die für eine bestimmte Software verwendet wird.
+
+[[https://wss-redpoint.com/open-source-lizenzen-die-apache-lizenz|Deutsche Beschreibung auf WSS-Redpoint]]
+
+
+==== MIT License ====
+Die MIT-Lizenz ist eine Open Source Lizenz, die ihren Ursprung am Massachusetts Institute of Technology (MIT) hat. Sie ist eine sehr liberale und weit verbreitete Lizenz, die von vielen Open Source Projekten verwendet wird. Die MIT-Lizenz ermöglicht es Entwicklern, Software frei zu nutzen, zu modifizieren und zu verteilen, solange der Urheberrechtshinweis und die Lizenzbestimmungen beibehalten werden.
+
+Dies sind einige Schlüsselprinzipien und -merkmale der der MIT-Lizenz:
+
+  * Freiheit der Nutzung: Die MIT-Lizenz gewährt jedem die Freiheit, die lizenzierte Software für jeden Zweck zu nutzen, sei es privat oder kommerziell. Es gibt keine Beschränkungen hinsichtlich des Verwendungszwecks.
+  * Quellcode-Zugänglichkeit: Die MIT-Lizenz erfordert, dass der Urheberrechtshinweis und die Lizenzbestimmungen in allen Kopien der Software beibehalten werden. Dies beinhaltet normalerweise die Aufrechterhaltung des Urheberrechtshinweises im Quellcode und in der Dokumentation der Software.
+  * Modifikation und Weitergabe: Die MIT-Lizenz erlaubt es Entwicklern, die lizenzierte Software zu modifizieren und abgeleitete Werke zu erstellen. Die modifizierten Versionen können unter einer anderen Lizenz veröffentlicht werden, solange der Urheberrechtshinweis und die Lizenzbestimmungen der MIT-Lizenz beibehalten werden.
+  * Haftungsausschluss: Die MIT-Lizenz enthält einen Haftungsausschluss, der den Entwickler von der Haftung für mögliche Schäden oder Konsequenzen, die aus der Nutzung der Software entstehen könnten, befreit.
+
+Die MIT-Lizenz zeichnet sich durch ihre Einfachheit und Flexibilität aus. Sie ermöglicht es Entwicklern, Softwareprojekte frei zu nutzen und zu modifizieren, während sie gleichzeitig klare Anforderungen für die Beibehaltung von Urheberrechtshinweisen und Lizenzbestimmungen stellt. Diese Lizenz wird häufig von Entwicklern gewählt, die eine grosszügige und unkomplizierte Lizenzierungsoption für ihre Open Source Projekte suchen.
+
+Es ist wichtig zu beachten, dass die MIT-Lizenz keine Copyleft-Bestimmungen enthält, wie sie beispielsweise in der GPL vorkommen. Das bedeutet, dass modifizierter Code, der unter der MIT-Lizenz veröffentlicht wird, unter einer anderen Lizenz vertrieben werden kann, ohne die Freigabe des Quellcodes zu erfordern.
+
+[[https://wss-redpoint.com/open-source-lizenzen-die-mit-lizenz|Deutsche Beschreibung auf WSS-Redpoint]]
+
+
+----
+
+{{tag>m231-AnG}}
+
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter, Andre Probst
+

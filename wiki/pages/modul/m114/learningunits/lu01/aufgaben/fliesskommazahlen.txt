@@ -1,0 +1,43 @@
+====== LU01.A03 - Binär codierte Fliesskommazahlen ======
+
+Schreiben Sie die binäre Codierung der aufgeführten Zahlen als Fliesskommazahl im Short-Format auf.
+Halten Sie dabei den Lösungsweg gemäss Beispiel fest.
+
+==== Hilfsmittel ====
+  * Papier und Schreibzeug
+  * IEEE-Format:
+
+== 32 Bit Short-Format ==
+Dies entspricht dem Datentyp ''float''.
+
+
+  * Bit 0 - 22: Manitisse / Binäre Ganzzahl, immer positiv
+  * Bit 23 - 30: Exponent / Binäre Ganzzahl **von** 0000 0000<sub>2</sub> = -127<sub>10</sub> **bis** 1111 1111 = +128<sub>10</sub>
+  * Bit 31: Vorzeichen / 0=positiv, 1=negativ
+
+
+
+==== Beispiel ====
+
+-2548.7538<sub>10</sub>:
+
+^ Schritt ^ Aktion ^ Codierung ^ 
+| 1. |-2548.75384 = -2.54875384 * 10<sup>3</sup> | .... .... .... .... .... .... .... .... |
+| 2. | Negative Zahl | **1**... .... .... .... .... .... .... .... |
+| 3. | Exponent: 3 + 127 = 130<sub>10</sub> = 1000 0010<sub>2</sub> | 1**100 0001 0**... .... .... .... .... .... |
+| 4. | Mantisse: 254875384<sub>10</sub> = 1111 0011 0001 0001 0110 1111 1000<sub>2</sub> \\ Nur die 23 höchsten Bits werden übernommen. | 1100 0001 0**111 1001 1000 1000 1011 0111** |
+
+
+
+== Resultat ==
+-2548.7538<sub>10</sub> entspricht ''1100 0001 1111 1001 1000 1000 1011 0111''
+
+==== Aufträge ====
+
+  * 281.50<sub>10</sub>
+  * -0.000456<sub>10</sub>
+
+[[modul:m114:learningunits:lu01:loesungen:fliesskommazahlen|Lösungen]]
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

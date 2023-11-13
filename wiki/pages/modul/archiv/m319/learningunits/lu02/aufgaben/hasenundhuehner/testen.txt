@@ -1,0 +1,11 @@
+====== Testen ======
+Probieren Sie Ihr Programm mit unterschiedlichen Anzahlen von Tieren / Beinen aus.
+Durch das Ausprobieren verschiedener Kombinationen, versuchen wir Fehler in der Logik zu finden.
+
+  - Eine realistische Anzahl Beine (''(tiere*2) <''''= beine <''''= (tiere*4)'').
+  - Zu viele Beine (''beine > tiere*4'')
+  - Zu wenig Beine (''beine < tiere*2'')
+  - Eine ungerade Anzahl Beine
+
+  * Funktioniert das Programm mit allen vier Kombinationen von Tieren / Beinen?
+  * Erkennt das Programm unlogische Eingaben? z.B. 2 Tiere mit 5 Beinen?

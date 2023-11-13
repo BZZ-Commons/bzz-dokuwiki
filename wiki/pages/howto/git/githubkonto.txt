@@ -1,0 +1,35 @@
+====== GitHub - Konto erstellen und verknüpfen ======
+===== GitHub - Konto erstellen =====
+
+<WRAP center round info 60%>
+Damit wir Ihre Programme der richtigen Person zuweisen können, muss Ihr GitHub-Benutzername einem bestimmten Schema folgen.
+Achten Sie auf einen korrekten Benutzernamen.
+Andernfalls müssen Sie das Erstellen des Kontos wiederholen.
+</WRAP>
+
+Öffnen Sie den [[https://github.com/signup?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F&source=header-home|Link]] und melden Sie sich an.
+
+  * Erstellen Sie **ein neues** GitHub-Konto und verwenden Sie nicht ein bereits bestehendes Konto.
+  * Wählen Sie als Benutzernamen **//klasse-benutzername//**
+    * Die //**klasse**// ist Ihre Klassenbezeichnung am BZZ, z.B. IA23a oder IM23b
+    * //**username** //ist Ihr Benutzername am BZZ. Dieser entspricht Ihrer BZZ-Emailadresse ohne ''@bzz.ch''
+
+=== Beispiel ===
+Angenommen //Anna Beispiel// besucht die Klasse //IM23a// und hat die Emailadresse ''beispielan@bzz.ch''.
+Der GitHub-Benutzername für Anna ist: **im23a-beispielan**.
+
+{{:howto:git:github_join_01.png?200|}}
+
+Weitere Informationen: https://git-scm.com/book/de/v2/GitHub-Einrichten-und-Konfigurieren-eines-Kontos
+
+===== GitHub - Account mit Moodle Verknüpfen =====
+<WRAP center round todo 60%>
+[[.:github_moodle|Tragen Sie anschliessend den GitHub-Benutzernamen in Ihr Moodle-Profil ein]]
+</WRAP>
+
+===== GitHub - Konto mit BZZ verknüpfen =====
+Öffnen Sie https://github.com/bzz-fgict und nehmen Sie die Einladung an.
+
+{{:howto:git:invite.png?600|}}
+
+{{:howto:git:accept.png?600|}}

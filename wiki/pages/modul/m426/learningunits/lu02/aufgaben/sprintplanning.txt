@@ -1,0 +1,31 @@
+====== LU02.A01 : Sprint - Planning A ======
+
+===== Auftrag =====
+Führen Sie die Planung für den Sprint durch.
+
+
+===== Vorgehen =====
+==== Produkteigenschaften festlegen ====
+Das Ziel eines Sprints ist ein neues Produktinkrement zu erstellen.
+Wir wollen dem Product Owner eine potentiell einsetzbare Lösung liefern.
+
+=== User Storys ===
+Studieren Sie die User Storys im Product Backlog.
+Klären Sie mit dem Product Owner die Details und offenen Fragen. 
+Zum Beispiel:
+  * Welche Informationen müssen gespeichert / angezeigt werden?
+  * ...
+
+Halten Sie diese Details direkt auf den User Storys fest.
+
+Zusammen mit dem Product Owner entscheiden Sie, welche User Storys ins Sprint Backlog übernommen werden.
+Danach entwerfen Sie gemeinsam die Umsetzung:
+  * Datenmodell
+  * Klassendiagramm
+  * Zustandsdiagramm
+
+=== Definition of Done ===
+Mit der Definition of Done legen wir die Abnahmekriterien für den Sprint fest.
+Welche Anforderungen müssen erfüllt sein, damit das Produktinkrement fertig ist?
+Die Definition of Done wird bei jedem Sprint weiter entwickelt.
+Das Endziel eines reifen Scrum Teams ist eine griffige Definition, welche sich auf einen beliebigen Sprint anwenden lässt.

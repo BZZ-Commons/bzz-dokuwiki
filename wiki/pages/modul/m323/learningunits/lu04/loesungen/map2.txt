@@ -1,0 +1,34 @@
+====== LU04.L06 - Umwandlung von Strings in Großbuchstaben ======
+
+<code python>
+def to_uppercase(words):
+    """
+    Convert each word in the list to uppercase using the map function.
+    Args:
+    - words (list): List of words to be converted to uppercase.
+
+    Returns:
+    - list: List of words in uppercase.
+    """
+    uppercase_list = list(map(str.upper, words))
+    return uppercase_list
+
+if __name__ == '__main__':
+    words = ['apple', 'banana', 'cherry']
+    uppercase_list = to_uppercase(words)
+    print(uppercase_list)  # Output: ['APPLE', 'BANANA', 'CHERRY']
+</code>
+
+===== Erklärung der Codezeile: list(map(str.upper, words)) =====
+
+Die Codezeile ''list(map(str.upper, words))'' besteht ebenfalls aus mehreren Teilen:
+
+  - **list()**: Wie im ersten Beispiel wandelt diese Funktion das Map-Objekt in eine Liste um.
+  - **map()**: Die ''map''-Funktion wendet eine Funktion auf jedes Element eines Iterables an.
+  - **str.upper**: Diese ist die Funktion, die als erstes Argument an ''map'' übergeben wird. Sie nimmt einen String und wandelt alle seine Zeichen in Großbuchstaben um.
+  - **words**: Dies ist das Iterable (in diesem Fall eine Liste von Wörtern), auf das die ''str.upper''-Funktion angewendet wird.
+
+Zusammengefasst: Die ''map''-Funktion wendet die ''str.upper''-Funktion auf jedes Element der Liste ''words'' an und konvertiert es in Großbuchstaben. Anschließend wird das Map-Objekt in eine Liste umgewandelt und zurückgegeben.
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/ch/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Kevin Maurizi 

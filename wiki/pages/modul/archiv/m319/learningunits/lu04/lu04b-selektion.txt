@@ -1,0 +1,117 @@
+====== LU04b - Selektionen ======
+===== Entscheidung =====
+Eine Selektion ist eine Entscheidung, welche den weiteren Ablauf des Programms beeinflusst.
+Das Programm entscheidet anhand einer Bedingung, **ob** ein Programmblock ausgeführt wird oder nicht.
+
+Die Bedingung einer Selektion beginnt immer mit FALLS (engl. IF).
+Ist die Bedingung nicht erfüllt, so schreiben wir SONST (engl. ELSE). 
+Gibt es bei SONST nichts zu tun, kann man diesen Block auch weglassen.
+
+=== Beispiel aus dem Alltag ===
+<code>
+1. FALLS du einen Hausschlüssel hast:
+   1.1. Nimm den Hausschlüssel in die Hand.
+   1.2. Stecke den Hausschlüssel ins Schloss.
+   1.3. Drehe den Schlüssel im Uhrzeigersinn.
+   1.4. Öffne die Tür.
+2. SONST:
+   2.1. Drücke auf den Klingelknopf.
+   2.2. Warte bis jemand die Tür öffnet.
+3. Gehe ins Haus.
+4. Schliesse die Tür.
+</code>
+In der Fachliteratur findet man für „Selektion“ auch die Bezeichnungen „Entscheidung“ oder „Verzweigung“.
+
+
+===== Selektionen programmieren =====
+Der Aufbau einer Selektion ist in vielen Programmiersprachen identisch:
+  * Eine Selektion besteht aus dem Schlüsselwort **if**
+  * Danach folgt die Bedingung in runden Klammern.
+  * Die Befehle, die im Erfolgsfall (Bedingung erfüllt) ausgeführt werden, sind mit geschweiften Klammern eingefasst. 
+  * Falls die Bedingung nicht erfüllt ist, wird der Block mit dem Schlüsselwort **else** ausgeführt.
+  * Die Befehle, die im Misserfolgsfall (Bedingung **nicht** erfüllt) ausgeführt werden, sind mit geschweiften Klammern eingefasst. 
+
+
+<code java>
+...
+if (geschlecht == 'W') {
+    System.out.print ("Sehr geehrte Frau");
+} else {
+    System.out.print ("Sehr geehrter Herr");
+}
+</code>
+
+Falls der **else**-Block keine Befehle enthält, können Sie diesen Teil auch weglassen.
+Die beiden Beispiele führen zum gleichen Programmablauf.
+| <code java>
+if (alter > 18) {
+    eintritt = 'J';
+    kosten   = 25.00;
+} else {
+} 
+</code>|<code java>
+if (alter > 18) {
+    eintritt = 'J';
+    kosten   = 25.00;
+}
+</code> |
+
+//Siehe auch [[http://www.java-tutorial.org/if-anweisungen.html]]//
+
+===== Bedingungen =====
+Eine Bedingung besteht aus drei Teilen:
+  * Eine Variable (z.B. ''alter'')
+  * Ein Vergleichsoperator (z.B. ''>'')
+  * Eine Variable oder ein Wert (z.B. ''18'')
+
+
+==== Vergleichsoperatoren ====
+^ Operator ^ Die Bedingung ist erfüllt, wenn ...^
+| == | ... die beiden Werte gleich sind. |
+| != | ... die beiden Werte nicht gleich sind. |
+| > | ... der erste Wert grösser als der zweite Wert ist. |
+| >= | ... der erste Wert grösser oder gleich wie der zweite Wert ist. |
+| < | ... der erste Wert kleiner als der zweite Wert ist. |
+| <= | ... der erste Wert kleiner oder gleich wie der zweite Wert ist. |
+
+
+
+<WRAP center round important 60%>
+  * Achten Sie immer darauf, die Programmblöcke korrekt einzufassen.
+  * Der Befehle **''else''** hat **niemals** eine Bedingung.
+</WRAP>
+
+
+===== Mehrfach Selektion=====
+
+Wie Sie oben gelernt haben, gibt es bei der Bedingung einer "normalen" Selektion einen Ja- und einen Nein-Pfad.
+Bei einer Mehrfachselektion wird die Bedingung so formuliert, dass mehr als zwei Antworten möglich sind.
+
+In Java ist die Syntax für eine Mehrfachselektion wie folgt:
+
+<WRAP center round box 80%>
+<code java>
+if(Bedingung1){
+  // Wird ausgeführt wenn Bedingung1 zutrifft.
+}else if(Bedingung2){
+  // Wird ausgeführt wenn Bedingung2 zutrifft.
+}else if(Bedingung3){
+  // Wird ausgeführt wenn Bedingung3 zutrifft.
+  
+... }else if (BedingungX){ ... // Der Code kann um beliebig viele "else-if" ergänzt werden.
+
+}else{
+ // Wird ausgeführt wenn keine der Bedingungen zutreffen. 
+ // Der "else-Fall" kann wie bei der Einfach-Selektion aber auch komplett weggelassen werden.
+}
+</code>
+</WRAP>
+
+
+<WRAP center round important 60%>
+Der Code wird von oben nach unten ausgeführt, sobald eine Bedingung zutrifft, werden die anderen Bedingungen ignoriert.
+</WRAP>
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Marcel Suter, Kevin Maurizi

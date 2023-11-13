@@ -1,0 +1,12 @@
+==== Prüfungssituationen für LU03 ====
+^X1G: ^ ^
+|Ich kann bei der Benutzung von Methoden Exceptions abfangen und behandeln.|Ein Stück Code mit try-catch / try-except gegen Exception absichern.|
+| |...|
+^X1F: ^ ^
+|Ich kann in meinen Implementierungen im Fehlerfall geeignete Exceptions werfen.|Eine potentielle Fehlersituation prüfen und im Fehlerfall eine Exception werfen.|
+| |...|
+^X1E: ^ ^
+|Ich kann für eine Applikation die Fehlerbehandlung einheitlich umsetzen.|//Soll in M450 behandelt werden.//|
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) René Probst

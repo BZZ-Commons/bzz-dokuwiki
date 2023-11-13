@@ -1,0 +1,13 @@
+==== 2. Szenarien ====
+Ein Szenario ist eine textuelle Beschreibung eines Arbeitsablaufes. Die Formulierung soll vollständig lösungsneutral sein. Wichtig ist, festzuhaten **wer** handelt und was das **Ziel** der Handlung ist.\\
+Bei der Beschreibung der Szenarien muss zwischen dem "normalen" Ablauf (happy case) und den Sonderfällen (edge case) unterschieden werden.
+----
+//Beispiel 12: Lösen eines Parktickets//\\
+Sarah fährt in die Tiefgarage ein und stoppt vor der Barriere. Sie öffnet das Fenster und bezieht ein Parkticket, in dem sie den entsprechenden Knopf drückt.\\
+Wenn kein Ticket geliefert wird, drückt Sarah den SOS-Knopf und schildert per Gegensprechanlage die aktuelle Situation.\\
+----
+Im Beispiel wird der Begriff Knopf völlig offen verwendet. Das kann ein mechanischer Knopf sein, ein berührungsloser Sensor oder auch ein Touchscreen. Es wird also keinerlei Hinweis auf die Art der Lösung gegeben.
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) René Probst

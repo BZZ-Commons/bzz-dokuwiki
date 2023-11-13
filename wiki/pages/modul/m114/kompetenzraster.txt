@@ -1,0 +1,28 @@
+====== Kompetenzraster ======
+===== Handlungsziele und typische Handlungssituationen =====
+
+==== 1. Codierungen von Daten situationsbezogen auswählen und einsetzen. Aufzeigen, welche Auswirkung die Codierung auf die Darstellung von Daten hat. ====
+
+Hans Muster erhält eine Datei, in der einzelne Zeichen nicht korrekt dargestellt sind. Er erkennt als Ursache Probleme bei der Codierung der Zeichen. Er korrigiert die Codierung der Daten in der Datei oder die Interpretation durch die darstellende Applikation.
+
+Auf einer Einladung zu einem Firmenevent müssen zusätzliche Information (z. B. Ort, Datum, Zeit, Webseite, Sitzplatz) in einer maschinenlesbaren Form codiert werden. Hans Muster stellt die Daten zusammen, kreiert eine Codierung und wählt einen geeigneten Barcode, um die Codierung in eine maschinenlesbare Form zu bringen. (Hanok 1.1)
+
+In einer Berechnung in seinem Programm erhält Hans Muster unterwartet ein negatives Ergebnis auf Grund eines Werteüberlaufes. Hans Muster untersucht das Problem und setzt sich dabei mit der Codierung von Zahlen, den sich daraus ergebenden Wertebereichen auseinander. Er wählt einen anderen Datentyp und kann so das Problem lösen. (Hanok 1.4)
+
+==== 2. Kompressionsverfahren gemäss Vorgaben für die Aufbewahrung, Wiederherstellung und Übertragung von Daten auswählen und einsetzen. ====
+
+In eine neue Webseite sollen Multimediainhalte eingebunden werden. Das Problem dabei sind die recht grossen Datenmengen und die damit verbundenen Ladezeiten, wenn die Seite angezeigt wird. Hans Muster muss die Multimediainhalte (Bilder, Video, Audio) für die Webseite in Bezug auf die Speichergrösse und Qualität optimieren. Er wählt gezielt ein geeignetes verlustbehaftetes oder verlustfreies Kompressionsverfahren aus und wendet es an.
+
+==== 3. Verschlüsselungsverfahren zur Sicherung von Daten gemäss Vorgaben gegen unbefugten Zugriff auf Datenspeicher und Übertragungswegen auswählen und einsetzen. ====
+
+Für eine Kunden muss Hans Muster Dateien auf einem externen Speichermedium zusammenstellen. Er macht sich Gedanken, wie er die Daten vor fremden Zugriffen zu schützen kann. Hans Muster entschliesst sich die Daten zu verschlüsseln. Er wählt ein geeignetes Verschlüsselungsfahren aus und wendet es auf die Daten an. Die notwendigen Informationen für die Entschlüsselung sendet Hans Muster getrennt vom Speichermedium dem Kunden zu.
+
+==== 4. Gesicherte Übertragungsverfahren für Dateien mit asymmetrischen und symmetrischen Verschlüsselungsverfahren nutzen. Dabei Aspekte wie Public/Private Key, Zertifikate, Protokolle und Standards berücksichtigen. ====
+
+Die Firma von Hans Muster will Ihren E-Mail-Verkehr sicherer machen. Hans Muster setzt sich mit dem Unterschied von Signieren und Verschlüsseln auseinander. Er weiss nun, dass dankt dem Signieren Veränderungen von Dritter erkannt werden können. Und dass mit Hilfe einer Verschlüsselung Fremden das Lesen von E-Mails verunmöglicht wird. Er konfiguriert sein E-Mail Programm um E-Mail wahlweise signieren und verschlüsseln zu können. Um den Datenaustausch (z. B. E-Mail-Verkehr) abzusichern, wendet Hans Muster das Signieren und Verschlüsseln der Daten nun konsequent an.
+
+Nun wendet sich Hans Muster der Absicherung der Übertragung von Daten zwischen dem Webserver seiner Firma zu den Clients der Kunden auseinander. Er analysiert den Unterschied zwischen HTTP und HTTPS, setzt sich mit Zertifikaten und mit dem Schlüsselaustausch via Diffie-Hellman auseinander.
+
+==== 5. Verschiedene Verschlüsselungstechnologien hinsichtlich Aktualität, Verbreitung und Sicherheit bewerten. Schwachstellen erkennen und Vorschläge für alternative Technologien machen. ====
+
+Die Fima von Hans Muster setzt seit Jahren ein schon etwas in die Jahre gekommenes Verschlüsselungsprogramm ein, mit dem sensitive Daten verschlüsselt werden. Ist dieses Verfahren noch sicher? Gibt es neuere Verfahren? Was sind die aktuellen Empfehlungen? Hans Muster vergleicht und bewertet verschiedene Verschlüsselungstechnologien und macht einen Vorschlag, welche aktuelle Verschlüsselung eingesetzt werden soll.

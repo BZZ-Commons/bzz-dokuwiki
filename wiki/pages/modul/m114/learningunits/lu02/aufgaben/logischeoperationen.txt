@@ -1,0 +1,59 @@
+====== LU02.A03 - Logische Operationen ======
+
+===== Hilfsmittel =====
+  * Schreibzeug
+  * Taschenrechner mit Grundfunktionen
+
+===== Wahrheitstabellen =====
+Die fehlenden Angaben sind mit Hashtags (######) gekennzeichnet.
+Ergänzen Sie diese fehlenden Angaben.
+Beachten Sie, dass manche Zellen über mehr als eine Zeile gehen.
+
+==== Beispiel ====
+^ Wert 1 ^ Operation ^ Wert 2 ^ Resultat ^ 
+| false | **AND** | true | false |
+| false | ::: | false | false | 
+
+==== Aufträge ====
+
+^ Wert 1 ^ Operation ^ Wert 2 ^ Resultat ^ 
+| true | OR | false | ###### |
+| false | ::: | ###### | true |
+| true | ###### | false | true |
+| true | ::: | true | false |
+
+[[modul:m114:learningunits:lu02:loesungen:wahrheitstabelle|Lösung]]
+
+===== Logische Operationen mit Zahlen =====
+
+Verknüpfen Sie die beiden Zahlen mit dem angegebenen logischen Operator.
+  - Umwandeln der Zahl ins Binärsystem.
+  - Durchführen der logischen Operation.
+  - Umwandeln der Zahl ins vorgegebene Zahlensystem.
+
+==== Beispiel ====
+135<sub>10</sub> OR 87<sub>10</sub> = ???<sub>10</sub>
+
+
+  - Umwandeln ins Binärsystem
+    * 1000 0111<sub>2</sub> OR  0101 0111<sub>2</sub>
+  - Durchführen der logischen Operation OR \\ <code>
+    1000 0111
+OR  0101 0111
+    ---------
+    1101 0111
+    =========
+</code>
+  - Umwandeln der Zahl ins Dezimalsystem.
+    * 215<sub>10</sub>
+
+**Resultat: 135<sub>10</sub> OR 87<sub>10</sub> = 215<sub>10</sub>**
+==== Aufträge ====
+  * 27<sub>10</sub> AND 102<sub>10</sub> = ???<sub>10</sub>
+  * 1E3<sub>16</sub> XOR 8A<sub>16</sub> = ???<sub>16</sub>
+  * -34<sub>10</sub> OR 92<sub>10</sub> = ???<sub>10</sub>
+
+[[modul:m114:learningunits:lu02:loesungen:logischzahlen|Lösung]]
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

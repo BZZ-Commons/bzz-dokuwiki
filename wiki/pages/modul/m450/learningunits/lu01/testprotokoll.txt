@@ -1,0 +1,65 @@
+====== LU01d - Aufbau eines Testprotokolls ======
+
+===== Einführung =====
+Sobald das Programm fertig ist, führen wir einen Testdurchlauf mit allen Testfälle durch.
+Das Testprotokoll hält die Ergebnisse aus einem Testdurchlauf fest.
+
+In der Regel werden wir beim Testen noch Fehler entdecken.
+Diese Fehler kann der Programmierer **nach** dem Testdurchlauf anhand des Testprotokolls korrigieren.
+Anschliessend führen wir einen neuen Testdurchlauf mit allen Testfällen durch und erstellen ein **neues** Testprotokoll.
+
+
+Ein Testprotokoll enthält die Angaben:
+  * Name und Version des getesteten Programmes.
+  * Name der Person welche die Testfälle durchgeführt hat.
+  * Datum und Uhrzeit des Testdurchlaufs.
+  * Pro durchgeführtem Testfall eine Zeile mit
+    * Nr des Testfalls.
+    * Tatsächliches Resultat.
+    * Bewertung des Resultats (Korrekt, Hauptfehler oder Nebenfehler)
+    * Bemerkungen
+  * Fazit: Wie soll weiter vorgegangen werden. Zum Beispiel: Das Programm muss überarbeitet und erneut getestet werden.
+   
+   
+===== Aufbau =====
+^ Programm | Dreieckseite berechnen ^ Version | 1.2 |
+^ Datum | 15.10.2014 ^ Uhrzeit | 15:00 |
+^ Tester | Marcel Suter |||
+^ Nr ^ Effektives Resultat ^ Bewertung ^ Bemerkung ^
+| 1 | Seite c: 5.00 | N | Nachkommastellen überflüssig |
+| 2 | Seite a: 2.9998 | H | Resultat ungenau |
+| 3 | Absturz | H | Jede Seite mit Länge 0 führt zu einem Absturz. |
+| 4 | Alle drei Seiten wurden angegeben: Berechnung nicht möglich | OK | |
+^ Fazit | Das Programm funktioniert mit bestimmten Eingaben nicht korrekt. Es muss überarbeitet und neu getestet werden. |||
+
+===== Beschreibung =====
+==== Bewertung ====
+| OK | Das effektive Resultat ist identisch mit dem erwarteten Resultat. |
+| H | Hauptfehler: Die Funktion des Programms ist nicht korrekt. Der Fehler muss korrigiert werden. |
+| N | Nebenfehler: Das Programm arbeitet korrekt. Die Anzeige enthält Schönheitsfehler. Das Programm sollte bei Gelegenheit überarbeitet werden. |
+
+==== Bemerkung ====
+
+Im Feld "Bemerkung" können zusätzliche Angaben zu einem Fehler gemacht werden.
+Diese Bemerkungen können dem Programmierer helfen, den Fehler zu lokalisieren.
+
+Vielleicht erkennen Sie beim Testen, dass ein Fehler nur bei bestimmten Werten auftritt.
+
+**Beispiel:** "Rundungsfehler treten nur bei Seitenlängen > 50 auf."
+
+<WRAP center round info 60%>
+Das Bemerkungsfeld soll nur Beobachtungen des Testers enthalten.
+Vermeiden Sie es, dem Programmierer die Lösung auf's Auge zu drücken.
+</WRAP>
+
+==== Fazit ====
+
+Das Fazit fasst die Resultate zusammen und enthält die Empfehlung des Testers zum weiteren Vorgehen.
+
+  * Das Programm kann freigegeben werden
+  * Das Programm muss korrigiert werden. Ein erneuter Test ist nicht notwendig.
+  * Das Programm muss überarbeitet und erneut getestet werden.
+
+----
+{{tag>M450-LU01}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

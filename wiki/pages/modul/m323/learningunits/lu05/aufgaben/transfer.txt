@@ -1,0 +1,93 @@
+====== LU05.A12 - Wissenstransfer zu Java und JavaScript ======
+
+<WRAP center round todo 60%>
+Transferieren Sie Ihre Kenntnisse der in LU05 erarbeiteten Python-Features in die Programmiersprachen Java und/oder JavaScript.
+</WRAP>
+
+===== Aufgabenstellung =====
+
+Ihr Ziel ist es, die in LU05 erarbeiteten Konzepte (Verwendung von ''*args'' und ''%%**%%kwargs'', innere und äußere Funktionen, Closures, Decorators) in einer anderen Programmiersprache (Java oder JavaScript) anzuwenden.
+
+  - Wählen Sie mindestens drei der in LU05 behandelten Konzepte aus.
+  - Implementieren Sie diese Konzepte in Java und/oder JavaScript.
+  - Vergleichen Sie die Implementierung mit der Python-Version und dokumentieren Sie etwaige Unterschiede und Ähnlichkeiten.
+  
+==== Java-Beispiele ====
+
+**Variadic Functions (Äquivalent zu *args in Python)**: 
+<code java>
+public static void printNumbers(int... numbers) {
+    for (int number : numbers) {
+        System.out.print(number + " ");
+    }
+}
+</code>
+
+**Innere Klassen (Äquivalent zu inneren Funktionen in Python)**:
+<code java>
+public class OuterClass {
+    class InnerClass {
+        // ...
+    }
+}
+</code>
+
+**Annotations (Äquivalent zu Decorators in Python)**:
+<code java>
+@Retention(RetentionPolicy.RUNTIME)
+@Target(ElementType.METHOD)
+public @interface MyDecorator {
+    String value();
+}
+
+public class MyClass {
+    @MyDecorator("Hello, world!")
+    public void myMethod() {
+        // ...
+    }
+}
+</code>
+
+==== JavaScript-Beispiele ====
+
+**Rest Parameters (Äquivalent zu *args in Python)**:
+<code javascript>
+function printNumbers(...numbers) {
+    console.log(numbers);
+}
+</code>
+
+**Closures**:
+<code javascript>
+function outer() {
+    let x = 10;
+    function inner() {
+        console.log(x);
+    }
+    return inner;
+}
+</code>
+
+**Function Decorators**:
+<code javascript>
+function decorator(func) {
+    return function() {
+        console.log("Before");
+        func();
+        console.log("After");
+    }
+}
+</code>
+
+===== Vorgehen =====
+
+  - Implementieren Sie ihre ausgewählten Konzepte in Java und/oder JavaScript
+  - Dokumentieren Sie Ihre Implementierung und die Unterschiede zur Python-Version
+
+===== Abgabe =====
+
+Die Abgabe der Lösung erfolgt als PDF-Abgabe auf Moodle
+
+----
+
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/ch/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Kevin Maurizi

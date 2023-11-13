@@ -1,0 +1,46 @@
+===== Realisierung =====
+
+Codieren Sie das vollständige Programm anhand des Programmablaufs.
+Verwenden Sie dazu Ihren Ablaufplan (Kompetenz A) oder den Ablaufplan aus dem Lösungsvorschlag.
+
+Der Aufbau des Programms muss exakt der Logik im Programmablaufplan bzw. Struktogramm entsprechen.
+
+== Vorgehen ==
+  - Erstellen Sie ein neues Projekt (Ordner) in Ihrem Java-Workspace.
+  - Erstellen Sie eine neue Klasse ''Hoelzchen'' bzw. eine neue Datei ''Hoelzchen.java''.
+  - Kopieren Sie das Java-Programmgerüst inkl. Scanner für die Eingaben in diese Klasse (Datei).
+  - Kopieren Sie die unten stehende Vorgabe über die Methode ''private void run() { ... }''.
+  - Realisieren Sie das Programm schrittweise.
+    * Sie werden nicht alle Leerzeilen benötigen.
+
+== Vorgabe ==
+<code java>
+    private void run() {
+        // ------ Declare variables ------
+        int holz;
+        int anzahl;
+        int spieler;
+ 
+        // ------ Start of program------
+        ___________________
+        ___________________
+ 
+        while (______________________
+            ___________________________________________________________________
+            ___________________________________________________________________
+            ___________________________________________________________________
+            ______________________________________________ = scanner.nextInt();
+            ___________________________________________________________________
+            ___________________________________________________________________
+            ___________________________________________________________________
+        }
+        _______________________________________________________________________
+        _______________________________________________________________________
+    }
+</code>
+
+=== Erwartetes Resultat ===
+Vollständiger, fehlerfreier Sourcecode.
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Marcel Suter

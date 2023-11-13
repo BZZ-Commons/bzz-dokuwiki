@@ -1,0 +1,128 @@
+====== LU05a - Kontrollstrukturen ======
+
+<WRAP center round info 60%>
+Jedes Programm, egal wie gross und kompliziert es ist, besteht aus nur drei Kontrollstrukturen:
+  * Sequenz: Eine Anweisung die genau einmal durchgeführt wird
+  * Selektion: Eine Entscheidung ob ein Programmteil ausgeführt wird oder nicht (0-1)
+  * Iteration: Ein Programmteil der mehrfach durchgeführt wird (0-n)
+</WRAP>
+
+===== Sequenz =====
+Das Grundelement jedes Programms ist eine Anweisung. 
+Ein Befehl ist eine Anweisung eine bestimmte Verarbeitung auszuführen. 
+Eine Sequenz ist eine Abfolge von einem oder mehreren Befehlen, die nacheinander (also sequentiell) ausgeführt werden. 
+
+Andere Bezeichnungen für eine Anweisung sind "Befehl" oder "Statement". 
+Je nach Quelle wird eine Sequenz auch "Operation" oder "Tätigkeit" genannt. 
+Wir verwenden im Unterricht jedoch die Bezeichnungen "Befehl" und "Sequenz".
+
+=== Beispiel aus dem Alltag ===
+
+<code>
+1. Nimm den Hausschlüssel in die Hand.
+2. Stecke den Hausschlüssel ins Schloss.
+3. Drehe den Schlüssel im Uhrzeigersinn.
+4. Öffne die Tür.
+5. Gehe ins Haus.
+6. Schliesse die Tür.
+</code>
+
+=== Sequenz in einem Programm ===
+<code>
+1. Frage den Benutzer nach einer Zahl.
+2. Frage den Benutzer nach einer zweiten Zahl.
+3. Bilde die Summe aus beiden Zahlen.
+4. Gib die Summe aus.
+</code>
+Diese Art der Beschreibung nennen wir Pseudocode.
+Wir notieren jeden Befehl als kurze Anweisung in deutscher Sprache.
+Damit lässt sich die Logik eines Programms entwerfen, ohne dass wir uns um die genaue Schreibweise einer Programmiersprache kümmern müssen.
+
+=== Elementare Befehle ===
+Ein Computer kann nur ganz einfache (elementare) Befehle ausführen.
+Daher müssen wir einen Programmablauf bei der Planung in kleine, einfache Schritte zerlegen.
+
+<WRAP center round info 60%>
+Vermeiden Sie mehrere Schritte in einer Anweisung:
+  * Aufzählungen (gib Zahl1, Zahl2 ein)
+  * Mehrzahl (gib zwei Zahl**en** ein) 
+  * **und** (Bilde die Summe **und** gib die Summe aus)
+</WRAP>
+
+===== Selektion =====
+Eine Selektion ist eine Entscheidung, welche den weiteren Ablauf des Programms beeinflusst.
+Das Programm entscheidet anhand einer Bedingung, **ob** ein Programmblock ausgeführt wird oder nicht.
+
+Die Bedingung einer Selektion beginnt immer mit FALLS (engl. IF).
+Ist die Bedingung nicht erfüllt, so schreiben wir SONST (engl. ELSE). 
+Gibt es bei SONST nichts zu tun, kann man diesen Block auch weglassen.
+
+=== Beispiel aus dem Alltag ===
+<code>
+1. FALLS du einen Hausschlüssel hast:
+   1.1. Nimm den Hausschlüssel in die Hand.
+   1.2. Stecke den Hausschlüssel ins Schloss.
+   1.3. Drehe den Schlüssel im Uhrzeigersinn.
+   1.4. Öffne die Tür.
+2. SONST:
+   2.1. Drücke auf den Klingelknopf.
+   2.2. Warte bis jemand die Tür öffnet.
+3. Gehe ins Haus.
+4. Schliesse die Tür.
+</code>
+In der Fachliteratur findet man für "Selektion" auch die Bezeichnungen "Entscheidung" oder "Verzweigung".
+
+===== Bedingungen =====
+Eine Bedingung besteht in der Regel aus drei Teilen:
+  * Eine Variable (z.B. ''alter'')
+  * Ein Vergleichsoperator (z.B. ''>'')
+  * Eine Variable oder ein Wert (z.B. ''18'')
+
+<WRAP center round important 60%>
+  * Achten Sie immer darauf, die Programmblöcke korrekt einzufassen.
+  * Der Befehl **''else''** hat **niemals** eine Bedingung.
+</WRAP>
+
+===== Iteration =====
+Wird ein Teil eines Programmes mehrmals wiederholt, so sprechen wir von einer Iteration.
+Jede Iteration beinhaltet eine Bedingung.
+  * **SOLANGE** (engl. WHILE) die Bedingung zutrifft, wird der Programmteil ausgeführt.
+
+Danach geht der Programmablauf zurück zur Bedingung, die erneut geprüft wird.
+
+
+=== Beispiel aus dem Alltag ===
+
+<code>
+1. SOLANGE die Tür verschlossen ist
+   1.1. Nimm den nächsten Schlüssel
+   1.2. Stecke den Schlüssel ins Schloss
+   1.3. Drehe den Schlüssel im Uhrzeigersinn.
+2. Öffne die Tür.
+3. Gehe ins Haus.
+4. Schliesse die Tür.
+</code>
+
+Ist die Bedingung beim Schritt 1 erfüllt, so werden die Schritte 1.1, 1.2 und 1.3 ausgeführt.
+Anschliessend geht der Ablauf zurück zu Schritt 1.
+Ist die Bedingung noch immer erfüllt, so werden die Schritte 1.1, 1.2 und 1.3 erneut ausgeführt.
+
+=== Hello Universe ===
+<code>
+1. Der Benutzer gibt die Anzahl Wiederholungen ein.
+2. Der Zähler wird mit 0 initialisiert.
+3. SOLANGE der Zähler KLEINER als die Anzahl Wiederholungen ist:
+  3.1. Gib den Text "Hello Universe" aus.
+  3.2. Erhöhe den Zähler um 1
+</code>
+
+<WRAP center round info 60%>
+  * Steht die Bedigung am Anfang, so handelt es sich um eine kopfgesteuerte Iteration.
+  * Steht die Bedigung am Ende, so handelt es sich um eine fussgesteuerte Iteration (diese sollten jedoch wenn immer möglich vermieden werden!).
+</WRAP>
+
+In der Fachliteratur findet man für "Iteration" auch die Bezeichnung "Schleife". 
+
+----
+{{tag>M319-LU05 M319-E1G}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter, Kevin Maurizi

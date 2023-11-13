@@ -1,0 +1,102 @@
+===Übung 8===
+
+**Aufgabe 1**\\
+Gegeben ist die folgende WHT. Minimieren Sie diese nach den Regeln der boolschen Algebra. Nutzen Sie - wie in der Theorie gezeigt - die Idee der Substitution und folgende Gesetze:\\
+   * Kommutativgesetz
+   * Distributivgesetz
+   * Komplementärgesetz
+   * Neutralitätsgesetz
+<WRAP left>
+|     IN     |||¦|  OUT  |
+^  A  ^  B  ^  C  ^¦^  X  ^
+|  0  |  0  |  0  |¦|  1  |
+|  0  |  0  |  1  |¦|  0  |
+|  0  |  1  |  0  |¦|  1  |
+|  0  |  1  |  1  |¦|  0  |
+|  1  |  0  |  0  |¦|  1  |
+|  1  |  0  |  1  |¦|  0  |
+|  1  |  1  |  0  |¦|  0  |
+|  1  |  1  |  1  |¦|  1  |
+</WRAP>
+<WRAP clear></WRAP>
+**Aufgabe 2**\\
+Erstellen Sie anhand der WHT mittels KV-Diagramm einen minimierten boolschen Ausdruck für X. Sie können selber wählen, ob das Ergebnis als DNF oder KNF angeschreiben wird.
+<WRAP left>
+|    IN    ||¦|   OUT  |
+^  A  ^  B  ^¦^  X  ^
+|  0  |  0  |¦|  0  |
+|  0  |  1  |¦|  1  |
+|  1  |  0  |¦|  0  |
+|  1  |  1  |¦|  0  |
+</WRAP>
+<WRAP clear></WRAP>\\
+**Aufgabe 3**\\
+Erstellen Sie anhand der WHT mittels KV-Diagramm einen minimierten boolschen Ausdruck für X.Geben Sie das Ergebnis sowohl als DNF wie auch als KNF an.
+<WRAP left>
+|    IN    |||¦|  OUT  |
+^  A  ^  B  ^ C  ^¦^  X  ^
+|  0  |  0  |  0  |¦|  1  |
+|  0  |  0  |  1  |¦|  0  |
+|  0  |  1  |  0  |¦|  0  |
+|  0  |  1  |  1  |¦|  0  |
+|  1  |  0  |  0  |¦|  1  |
+|  1  |  0  |  1  |¦|  1  |
+|  1  |  1  |  0  |¦|  0  |
+|  1  |  1  |  1  |¦|  1  |
+</WRAP>
+<WRAP clear></WRAP>\\
+
+**Aufgabe 4**\\
+Erstellen Sie anhand der WHT mittels KV-Diagramm einen minimierten boolschen Ausdruck für X.Geben Sie das Ergebnis sowohl als DNF wie auch als KNF an.
+<WRAP left>
+|   IN   ||||¦|   OUT  |
+^  A  ^  B  ^  C   ^  D  ^¦^  X  ^
+|  0  |  0  |  0  |  0  |¦|  1  |
+|  0  |  0  |  0  |  1  |¦|  1  |
+|  0  |  0  |  1  |  0  |¦|  1  |
+|  0  |  0  |  1  |  1  |¦|  1  |
+|  0  |  1  |  0  |  0  |¦|  1  |
+|  0  |  1  |  0  |  1  |¦|  0  |
+|  0  |  1  |  1  |  0  |¦|  1  |
+|  0  |  1  |  1  |  1  |¦|  1  |
+|  1  |  0  |  0  |  0  |¦|  1  |
+|  1  |  0  |  0  |  1  |¦|  0  |
+|  1  |  0  |  1  |  0  |¦|  0  |
+|  1  |  0  |  1  |  1  |¦|  0  |
+|  1  |  1  |  0  |  0  |¦|  1  |
+|  1  |  1  |  0  |  1  |¦|  0  |
+|  1  |  1  |  1  |  0  |¦|  0  |
+|  1  |  1  |  1  |  1  |¦|  1  |
+</WRAP>
+<WRAP clear></WRAP>\\
+
+**Aufgabe 5**\\
+Gegeben ist ein Ausruck in kanonischer Form, konkret als KKNF. Minimieren Sie diesen unter Verwendung des KV-Diagramms.\\
+//Vorgehen://\\
+Sie können die einzelnen Terme direkt in die KV-Matritze übertragen oder aber zuerst eine WHT erstellen und den Übertrag so vornehmen.\\
+Ausdruck:\\
+X = (A\(\vee\)B\(\vee\)\(\neg\)C\(\vee\)D) \(\wedge\) (A\(\vee\)\(\neg\)B\(\vee\)\(\neg\)C\(\vee\)D) \(\wedge\) (\(\neg\)A\(\vee\)B\(\vee\)C\(\vee\)\(\neg\)D) \(\wedge\) (\(\neg\)A\(\vee\)B\(\vee\)C\(\vee\)D) \(\wedge\) (\(\neg\)A\(\vee\)B\(\vee\)\(\neg\)C\(\vee\)D) \(\wedge\) (\(\neg\)A\(\vee\)\(\neg\)B\(\vee\)\(\neg\)C\(\vee\)D)\\
+\\
+**Aufgabe 6**\\
+Lernende möchten ja gerne früher den Heimweg antreten, insbesondere dann, wenn sie so eine frühere Zugverbindung erreichen könnne. Das gilt erst recht in der Winterzeit, wenn die "Umweltbedingungen" das Leben mitunter ein wenig erschweren.\\
+\\
+Als Variable treten folgende Bedingungen auf:
+   * es regnet
+   * es ist dunkel
+   * der Zug fährt pünktlich
+   * es ist rutschig
+Damit man früher gehen kann, muss der Zug sicher pünktlich fahren (sonst hat man ja eh mehr Zeit). Weiter genügt es nicht, dass es nur dunkel ist, es braucuht schon auch Regen oder Glätte, damit die Bedingung für den Gehweg schlecht sind.\\
+\\
+Für die Ausgangsvariable gilt:
+   * 0 = nicht früher gehen
+   * 1 = früher gehen
+\\
+Erstellen Sie den Ausdruck für diese Konstellation. Wählen Sie dabei selber, ob das Ergebnis als DNF oder KNF wiedergegeben wird.\\
+
+----
+
+\\
+[[modul:mathe:ma1:thema:lu04logik:aufgaben:leitprogramm:k9:start|zum Leitprogramm]]
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) René Probst

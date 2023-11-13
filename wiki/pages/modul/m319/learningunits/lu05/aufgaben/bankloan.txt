@@ -1,0 +1,47 @@
+====== LU05.A13: Bank loan ======
+<WRAP center round info 60%>
+Schreibe ein Programm, das die Kreditvergabe einer Bank prüft.
+</WRAP>
+===== Auftrag =====
+Eine Bank bietet einem Kunden einen Kredit an, wenn er mindestens 21 Jahre alt ist und ein Jahreseinkommen von mindestens CHF 48'000  hat. 
+
+Erstelle die Programmlogik für das Programm.
+  - Das Programm fragt den Kunden nach Alter und Einkommen.
+  - Ist es der Bank möglich dem Kunden einen Kredit anzubietenm, soll der Text ''Wir sind in der Lage, Ihnen einen Kredit anzubieten.'' am Bildschirm angezeigt werden. 
+  - Andernfalls soll dem Kunden ''Leider können wir Ihnen zur Zeit keinen Kredit anbieten.'' angezeigt werden.
+
+===== Vorgehen =====
+
+  - Akzeptiere das GitHub Classroom Assignment im Moodlekurs.
+  - Klone das Repository in PyCharm.
+  - Codiere die Programmlogik in ''main.py''.
+  - Teste dein Programm mit den Testfällen in ''main_test.py''.
+  - Führe einen Commit und einen Push durch.
+
+=== Abgabe ===
+Die Abgabe erfolgt durch den Push ins GitHub Repository.
+In Moodle ist keine Abgabe vorgesehen oder möglich.
+
+=== Vorlage in main.py ===
+<code python>
+def main():
+  # Write your program here and remove the line "pass"
+    pass
+
+if __name__ == '__main__':
+    main()
+</code>
+
+Anmerkung: Kümmere dich ich im Moment nicht zu sehr um ''if %%__%%name%%__%% == '%%__%%main%%__'%%:''. 
+Dieser Programmblock legt fest, welche Funktion beim Ausführen gestartet wird.
+Wir werden dies im Verlauf des Moduls noch genauer betrachten.
+
+
+<nodisp>https://github.com/templates-python/m319-lu05-a13-bankloan</nodisp>
+----
+{{tag>M319-LU05}}
+
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/ch/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Kevin Maurizi, Marcel Suter
+
+Diese Aufgabe ist eine übersetzte und angepasste Aufgabe von [[https://scott3142.uk/|Scott Morgan]], verwendet unter CC BY NC SA.
+

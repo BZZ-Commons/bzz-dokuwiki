@@ -1,0 +1,28 @@
+====== LU04.L07 - Filtere gerade Zahlen ======
+
+<code python>
+def filter_even_numbers(numbers):
+    """
+    Filtert die geraden Zahlen aus der gegebenen Liste.
+    Args:
+    - numbers (list): Eine Liste von Zahlen.
+    Returns:
+    - even_numbers_list: Eine Liste der geraden Zahlen.
+    """
+    # Ihr Code hier
+    return list(filter(lambda x: x % 2 == 0, numbers))
+
+
+if __name__ == '__main__':
+    numbers = list(range(1, 51))
+    even_numbers = filter_even_numbers(numbers)
+    print(list(even_numbers))
+</code>
+
+<WRAP center round tip 60%>
+Die Funktion ''x % 2 == 0'' ist eine Modulo-Operation, immer wenn diese ''True'' ist, dann ist die Zahl durch 2 Teilbar und folglich eine gerade Zahl.
+</WRAP>
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/ch/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Kevin Maurizi 

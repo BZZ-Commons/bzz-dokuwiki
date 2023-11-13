@@ -1,0 +1,122 @@
+====== LU05c - Projekteigenschaften ======
+
+Einem Projekt werden typisch erweise folgende Eigenschaften zugeschrieben:
+
+  - Es ist zeitlich begrenzt.
+  - Es ist in seiner Ausprägung einmalig.
+  - Es birgt ein gewisses Risiko.
+  - Es liefert konkrete Ergebnisse.
+
+Ein Projekt ist demnach ein befristetes, einmaliges Vorhaben, das durch bestimmte Ziele und Risiken gekennzeichnet ist. 
+Im Rahmen der Projektarbeit wird etwas gemacht, das im betreffenden Unternehmen genauso vorher noch nicht gemacht wurde. 
+Entweder ist die Aufgabe einmalig oder die Rahmenbedingungen (z. B. Technologie, Zeitraum) sind es. 
+Aus diesem Grund ist auch nie sicher, ob ein Projekt erfolgreich sein wird, d. h. bei jedem Projekt ist grundsätzlich die Gefahr des Scheiterns vorhanden. 
+Umgekehrt ist ein Projekt kein unkalkulierbares Risiko oder ein waghalsiges Abenteuer. 
+Mit einer guten Vorbereitung und auf der Grundlage eines systematischen Projektvorgehens steigt die Chance, Erfolg zu haben. 
+Nachfolgend werden wichtige Projekteigenschaften beleuchtet, die es im Vorfeld näher abzuklären bzw. zu definieren gilt.
+
+==== Projekteigenschaften ====
+
+Wie Sie gesehen haben, wird von einem Projekt im Allgemeinen eine Lösung erwartet. 
+Die dem projektierenden Unternehmen nützt. 
+In der folgenden Tabelle werden mögliche Ausprägungen und typische Beispiele für Projektergebnisse im IT-Bereich aufgeführt:
+
+^ Erwartetes Ergebnis ^ Beispiele ^
+| Veränderte Organisation | Umwandlung der klassischen IT-Abteilung in ein modernes Service-Center |
+| Neue Systemkomponenten für Mitarbeitende im Verkauf | Tablet-PC mit Software zur dezentralen Kalkulation, Kundenerfassung und Vertragsgestaltung |
+| Neue Softwarelösung für Mitarbeitende in der Auftragsbearbeitung und Fakturierung | Erweiterung der ERP-Applikation um den neuen Baustein ABF |
+| Erweiterte Softwarelösung für das Finanzcontrolling. | Anpassung der RW-Applikation an Gesetze der Finanzmarktaufsicht (z. B. Basel 11) |
+
+Manchmal wird ein Projekt durch das erwartete **Ergebnis** charakterisiert (z. B. Organisationsprojekt oder Softwareentwicklungsprojekt), manchmal schlägt sich darin das gewählte Vorgehen nieder (z. B. Entwicklungs-, Evaluations-, Beschaffungsprojekt).
+
+==== Projektziele ====
+
+Das erwartete Projektergebnis muss zu einem bestimmten Termin bereitgestellt werden und einen definierten Kostenrahmen einhalten. Daher gibt es in jedem Projekt folgende **Ziele:**
+
+  * **Ergebnisqualität**: Es gibt eine (oder mehrere) Vorstellung(en), in welcher Qualität das Projektergebnis vorliegen muss. Daraus ergeben sich die Aufgaben, die im Rahmen der Projektarbeit gelöst werden müssen. Das Ergebnis des Projekts soll im Unternehmen einen Nutzen erzeugen, der finanziell ausgedrückt werden kann.
+  * **Endtermin**: Es gibt eine (oder mehrere) Vorstellung(en), bis wann das Projektergebnis vorliegen muss. Ab diesem Zeitpunkt will das Unternehmen das Ergebnis produktiv nutzen und damit den erwarteten Nutzen realisieren.
+  * **Kostenziel**: Es gibt eine (oder mehrere) Vorstellung(en), wie viel das Projekt kosten darf. Wenn das Projekt kurz- bis mittelfristig Gewinn abwerfen soll, wird das Kostenziel tiefer veranschlagt als der finanzielle Nutzen des Projekts.
+
+Die einzelnen Projektziele lassen sich (leider) nicht separat betrachten und unabhängig voneinander realisieren. Sie sind vielmehr direkt voneinander abhängig. Die wichtigsten **Abhängigkeiten zwischen den Projektzielen** lassen sich wie folgt beschreiben:
+
+  * Qualitativ bessere Projektergebnisse kosten i. d. R. mehr und/oder brauchen ggf. mehr Zeit für die Realisierung.
+  * Tiefere Projektkosten haben i. d. R. Abstriche beim Projektergebnis (Funktionsumfang, Qualität) und/oder beim Endtermin zur Folge.
+  * Ein früher Endtermin bedeutet i. d. R. Mehrkosten und/oder eine geringere Ergebnisqualität.
+
+Sie sehen: Die Änderung eines Projektziels beeinflusst meistens ein anderes Projektziel. Wenn Sie also an einem bestimmten Projektziel «schrauben», müssen Sie immer auch die Auswirkungen auf die beiden anderen Projektziele analysieren. Diese wechselseitigen Abhängigkeiten führen häufig zu **Zielkonflikten**. Dieser Sachverhalt lässt sich anhand der folgenden Grafik gut verdeutlichen:
+
+{{:modul:m431:learningunits:lu05:abhaengigkeiten_projektziele.jpg?400|}}
+
+//Abbildung 1: Abhängigkeit zwischen den Projektzielen//
+
+== Erläuterung zur Abbildung ==
+
+  * Jeder Pfosten stellt jeweils ein Projektziel dar.
+  * Ein Seil spannt sich fest um die einzelnen Pfosten.
+  * Ein bestimmter Pfosten kann nur verschoben werden, wenn mindestens ein anderer Pfosten bewegt wird.
+
+==== Projektumfang ====
+
+Projekte lassen sich von Kleinaufgaben beispielsweise dadurch unterscheiden, dass sie mindestens 15 Personentage Aufwand bedeuten oder mindestens 5000 Franken kosten. Doch auch Projekte sind nicht gleich umfangreich. Es gibt Projekte, die ein Vielfaches an Aufwand bedeuten oder viel höhere Kosten verursachen als andere. Entsprechend höher sind die Anforderungen an die Projektführung bzw. -durchführung. Manche Unternehmen tragen diesem Umstand Rechnung, indem sie ihre Projekte in mehrere **Projektklassen **einteilen und für umfangreiche Klassen strengere Vorschriften erlassen. Folgende Grafik soll diesen Sachverhalt verdeutlichen.
+
+{{:modul:m431:learningunits:lu05:projektklassen.jpg?400|}}
+
+//Abbildung 2: Projektklassen bilden//
+
+Hier wird der Projektumfang anhand der Faktoren Aufwand und Kosten bestimmt. Manche \\ Unternehmen berücksichtigen bei der Grössenbestimmung auch die Laufzeit und Risiken \\ eines Projekts. Weit verbreitet ist die Einteilung in folgende Projektklassen:
+
+  - **Kleinprojekt: **Hier werden der Aufwand auf 15 bis 150 Personentage und die Kosten auf 5000 bis 50000 Franken geschätzt.
+  - **Normalprojekt: **Hier werden der Aufwand auf 150 bis 1 000 Personentage und die Kosten auf 50000 bis 500000 Franken geschätzt.
+  - **Grossprojekt: **Hier werden der Aufwand auf mehr als 1 000 Personentage und die Kosten auf mehr als 500000 Franken geschätzt.
+
+=== Beispiel: Flug zum Mars ===
+
+| Die NASA und andere Raumforschungs-Organisationen haben es sich zum Ziel gemacht, die Grenzen des Planeten Erde zu überschreiten und sich ein bisschen weiter in den Weltraum hinauszuwagen. Nun ist das Projekt «Wir wollen zum Mars» ein Grossprojekt (Hauptprojekt), welches aus Dutzenden von Teilprojekten besteht. Erst die Summe aller Teilprojektergebnisse macht es möglich, eine Rakete zu bauen, zum Mars zu fliegen und dort ein Marsmobil zu landen, um Bodenuntersuchungen durchzuführen und die Analysen auch noch an die Erde zu übermitteln. | {{:modul:m431:learningunits:lu05:journeytomars.jpg?200|}} |
+
+Einige dieser Teilprojekte, die zum Gelingen des Marsfluges nötig sind:
+
+  * Diverse Raketenforschungsprojekte (richtiger Treibstoff, Start-/Landeprozedere, Material finden für hohe Stabilität //I //Hitze und kleines Gewicht usw.)
+  * Diverse Marsmobilprojekte (Robotergefährt, jedes Instrument wie Kamera usw., Sonnensegel für Energieversorgung usw.)
+  * Die ganze EDV-Unterstützung (Steuerung der Umlaufbahn, Sensor-Auswertung, Mars-Simulator usw.)
+
+=== Beispiel: PC von Windows auf Linux umrüsten ===
+
+Im Gegensatz zu einem Marsflug mutet das Umrüsten eines PCs als Kleinprojekt an. Oie notwendigen Arbeiten können rasch identifiziert werden:
+
+  * Inventarisierung der Programme, die der Chef zwingend für seine Aufgabe braucht
+  * Evaluation der gewünschten Linux-Distribution
+  * Installation der neuen Maschine
+  * Übernahme der Daten
+  * Schulung des Chefs auf seine neue Infrastruktur
+
+Dies ist ein typisches Kleinprojekt, welches in kurzer Zeit mit einem kleinen Team abgewickelt werden kann. Dennoch gilt auch hier, dass erst die Summe aller Teilaufgaben das Projektergebnis erbringt.
+
+==== Typische Herausforderungen bei Projekten ====
+
+**Grossprojekte** wie z. B. der oben erwähnte Flug zum Mars sind anspruchsvoll, da Hunderte oder gar Tausende von Personen parallel oder nacheinander zahlreiche Aufgaben erledigen müssen. Diese müssen nicht nur geplant und koordiniert, sondern auch laufend überwacht werden. Denn bereits eine kleine zeitliche Verzögerung einer Einzelaufgabe kann zu einem grossen Problem ausarten, wenn vielfältige Abhängigkeiten bestehen.
+
+**Kleinprojekte **sind naturgemäss weniger herausfordernd. Meist fallen jedoch die gleichen \\ Aufgaben wie bei Grossprojekten an, nur in einem kleineren Massstab:
+
+  * Die einzelnen Aufgaben müssen geplant und beauftragt werden.
+  * Die Ausführung der Arbeiten muss koordiniert werden.
+  * Allfällige Probleme müssen gelöst werden.
+  * Die Einhaltung der Termine und des Budgets muss überwacht werden.
+  * Abweichungen vom Plan müssen erkannt und kompensiert werden.
+  * Die Zusammenarbeit im Team müssen sichergestellt und gefördert werden.
+  * Auftraggeber und Kunden müssen mit den nötigen Informationen versorgt werden.
+
+Auch in Kleinprojekten gibt es für den Projektleiter also viel zu tun und Versäumnisse bei \\ den oben genannten Aufgaben können rasch zu Schwierigkeiten führen. Nachfolgend \\ einige **typische Schwierigkeiten**, die sich bei IT-Projekten immer wieder anzutreffen sind:
+
+| **Typische Schwierigkeiten** | **Mögliche Gründe** |
+| Eine Aufgabe stellt sich weit schwieriger heraus als ursprünglich angenommen. | Umfang und Komplexität des Projekts wurden unterschätzt. |
+| Die bereitgestellten finanziellen Mittel reichen nicht aus. | Kosten bzw. Aufwand wurden unterschätzt. |
+| Der verfügbare Zeitraum reicht nicht aus. | Kosten und Aufwand wurden unterschätzt. |
+| Aufgaben werden nicht effizient bzw. effektiv bearbeitet. | Das Projekt wurde schlecht geplant bzw. schlecht geführt oder das Projektteam arbeitet schlecht zusammen. |
+| (Zwischen-)Ergebnisse erfüllen die Anforderungen des Auftraggebers bzw. der Kunden nicht. | Die Anforderungen wurden nicht oder nur schlecht erhoben. |
+
+Solche Schwierigkeiten lassen sich auch in IT-Kleinprojekten nicht immer vermeiden. Doch wenn sie nicht erkannt und gelöst werden, muss das Unternehmen mit Folgeproblemen rechnen. So kann sich etwa durch höhere Projektkosten der Gewinn reduzieren oder durch \\ Verzögerungen entgehen dem Unternehmen wichtige Geschäfte bzw. geplante Umsätze \\ oder eine schlechte Ergebnisqualität führt zu einem Image-Schaden.
+
+=== Beispiel ===
+
+Die Auslieferung der neuen Version eines Betriebssystems verzögert sich um mehr ein halbes Jahr. Obwohl das Projekt zum Abschluss gebracht wird, entgehen dem Hersteller dadurch namhafte Umsätze und es entsteht für ihn ein nicht messbarer Imageschaden.
+

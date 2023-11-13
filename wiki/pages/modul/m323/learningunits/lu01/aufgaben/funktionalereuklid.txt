@@ -1,0 +1,40 @@
+====== LU01.A04 - Funktionaler ggT Algorithmus ======
+
+In der funktionalen Programmierung wird Rekursion als Ersatz für Schleifen verwendet, und der Zustand wird nicht durch Änderung von Variablen, sondern durch die Parameter der rekursiven Aufrufe gehandhabt.
+
+===== Euklidischer Algorithmus in funktionaler Programmierung =====
+<WRAP center round important 60%>
+Der Euklidische Algorithmus basiert auf der Beobachtung, dass der GGT von zwei Zahlen ''a'' und ''b'' auch der GGT von ''b'' und ''a % b'' ist.
+</WRAP>
+
+
+=== 1. Rekursive Struktur===
+Der Algorithmus ruft sich selbst mit neuen Parametern auf, bis eine Bedingung erfüllt ist (die Rekursionsbasis).
+Dies ersetzt die Verwendung einer Schleife in der imperativen Programmierung.
+
+===2. Rekursionsbasis===
+Die Rekursionsbasis ist der einfachste Fall, bei dem die Antwort bekannt ist: Wenn ''b'' ''0'' ist, ist der GGT ''a''.
+Die Rekursion muss immer eine Basis haben, um zu verhindern, dass sie unendlich weitergeht.
+
+===3. Unveränderlichkeit===
+In der funktionalen Programmierung werden Variablen nicht verändert. Stattdessen werden neue Werte als Parameter für die nächsten Funktionen oder rekursiven Aufrufe verwendet.
+Im Euklidischen Algorithmus wird dieser Ansatz genutzt, indem ''a'' und ''b'' durch ''b'' und ''a % b'' für den nächsten rekursiven Aufruf ersetzt werden.
+
+===4. Deklarative Natur===
+Der funktionale Code beschreibt, "was" zu tun ist, nicht "wie" es zu tun ist.
+Wir geben an, dass der GGT von ''a'' und ''b'' der GGT von ''b'' und ''a % b'' ist, wenn ''b'' nicht ''0'' ist, und ''a'', wenn ''b'' ''0'' ist. Die Implementierungsdetails des rekursiven Aufrufs und der Modulo-Operation werden dem Python-Interpreter überlassen.
+
+===5. Beispielablauf===
+Angenommen, wir möchten den GGT von ''56'' und ''48'' berechnen.
+Der erste Aufruf ist ''ggt(56, 48)'', der ''ggt(48, 8)'' aufruft.
+Dann ''ggt(8, 0)'' und schließlich wird die Rekursionsbasis erreicht, und ''8'' wird zurückgegeben.
+
+<WRAP center round tip 60%>
+**Fazit**
+
+Der funktionale Ansatz betont Unveränderlichkeit, Rekursion und eine deklarative Herangehensweise, die den Code oft einfacher zu verstehen und zu überprüfen macht, insbesondere in komplexeren Anwendungen. Dieses Beispiel zeigt, wie die Grundsätze der funktionalen Programmierung in einem praktischen Algorithmus umgesetzt werden können.
+</WRAP>
+
+----
+<nodisp>Github Repo: https://github.com/templates-python/m323-lu01-a04-funktionaler-ggt</nodisp>
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/ch/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Kevin Maurizi 

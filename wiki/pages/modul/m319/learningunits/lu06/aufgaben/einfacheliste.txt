@@ -1,0 +1,44 @@
+====== LU06.A01: Einfache Liste ======
+<WRAP center round todo 60%>
+Erstelle ein Programm, das eine Liste erstellt und einige Elemente einfügt.
+</WRAP>
+
+<nodisp>
+<HTML>
+<iframe src="https://trinket.io/embed/python3/b9bceddec9?outputOnly=true&start=result" width="100%" height="200" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+</HTML>
+</nodisp>
+===== Auftrag =====
+Das Programm erstellt eine Liste von Obstsorten.
+Füge in diese Liste die folgenden Elemente ein:
+  * Orange
+  * Kiwi
+  * Apfel
+  * Mango
+Am Ende des Programms wird die Liste als Returnwert zurückgegeben.
+Zum Beispiel ''return fruits''.
+
+Im Repository findest du zwei Python-Dateien:
+  * simplelist.py: Python-Skript mit den Aufträgen
+  * simplelist_test.py: Test-Funktionen
+
+===== Vorgehen =====
+
+  - Akzeptiere das GitHub Classroom Assignment im Moodlekurs.
+  - Klone das Repository in PyCharm.
+  - Codiere die Programmlogik in ''simplelist.py''.
+  - Teste dein Programm mit den Testfällen in ''simplelist_test.py''.
+  - Führe einen Commit und einen Push durch.
+
+=== Abgabe ===
+Die Abgabe erfolgt durch den Push ins GitHub Repository.
+In Moodle ist keine Abgabe vorgesehen oder möglich.
+
+-----
+<details>
+<summary>//=> GitHub Repo für externe Besucher//</summary> https://github.com/templates-python/m319-lu06-a01-simplelist
+//Lernende am BZZ **müssen** den Link zum GitHub Classroom Assignment verwenden//
+</details>
+
+{{tag>M319-LU06}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

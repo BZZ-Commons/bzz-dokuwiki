@@ -1,0 +1,52 @@
+====== LU04a - Bedeutung der Versionsverwaltung ======
+=== Quellen ===
+[[https://git-scm.com/book/de/v2/Erste-Schritte-Was-ist-Versionsverwaltung%3F|Pro Git - 1.1 Erste Schritte - Was ist Versionsverwaltung?]]
+
+<WRAP center round info 60%>
+Unter **Versionsverwaltung** verstehen wir jede Art von Handlung oder Technologie, welche die Änderungen an einer Datei verfolgt.
+</WRAP>
+
+===== Gründe für eine Versionsverwaltung =====
+==== Eine Software ist nie "fertig" ====
+
+In der Realität ist es selten so, dass eine Software "fertig" ist.
+Nehmen wir einmal an, dass meine Software als Version 1 beim Kunden im Einsatz ist.
+Aktuell bin ich dabei, einige zusätzliche Funktionen für Version 2 zu realisieren.
+Was mache ich nun, wenn in Version 1 ein Fehler auftritt, den ich sofort beheben muss?
+Soll ich meine unvollständigen Änderungen wieder löschen?
+
+Eine Möglichkeit wäre, dass ich regelmässig eine Sicherungskopie des aktuellen Stands meiner Software erstelle.
+Diese Lösung wird aber sehr bald zu einer solchen Menge von Dateien führen, dass ich den Überblick verliere.
+Viel einfacher ist es, wenn eine Software diese mühsame und fehleranfällige Arbeit für mich macht.
+
+==== Entwickler auf der ganzen Welt ====
+Bei grösseren Projekten sind häufig viele Entwickler auf der ganzen Welt beteiligt.
+Diese Entwickler arbeiten unabhängig an verschiedenen Teilen der Software.
+Es würde sehr viel Arbeit bedeuten, wenn man die Änderungen der verschiedenen Entwickler von Hand zusammenführen möchte.
+
+===== Version Control System (VCS) =====
+
+Ein **V**ersion **C**ontrol **S**ystem (kurz VCS) ist eine Software, welche sich für uns um die Verwaltung unserer Versionen kümmert.
+
+Ein VCS sollte mir folgende Funktionen bieten:
+  * Es erkennt Änderungen in den Dateien.
+  * Es erlaubt mir, einen bestimmten Zustand meines Projekts zu sichern.
+  * Es kann jederzeit einen früheren Zustand meines Projekt wiederherstellen. 
+
+==== git ====
+
+Im Unterricht am BZZ nutzen wir **git** als VCS.
+Git ist eine freie Versionsverwaltung die durch [[wp>Linus_Torvalds|Linus Torvalds]] initiiert wurde.
+Sie erleichert die verteilte Entwicklung von Software durch mehrere Entwickler, ohne dass ein zentraler Server benötigt wird.
+
+==== GitHub / GitLab / Bitbucket ====
+Es existieren eine Reihe von Plattformen für die Ablage von git-Repositories. 
+Dadurch wird die Zusammenarbeit als Team erleichtert, da die Entwickler ihre Änderungen am Projekt austauschen können. 
+
+Das BZZ ist Teil des [[https://education.github.com/|GitHub Global Campus]].
+Dadurch können Sie als Lernender alle Vorteile einer Enterprise Lizenz von GitHub kostenlos nutzen.
+Ausserdem haben wir mit GitHub Classroom eine nützliche Plattform zum Verteilen, Einziehen und Bewerten von Programmieraufgaben.
+
+----
+{{tag>319-E1F}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

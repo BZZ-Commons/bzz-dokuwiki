@@ -1,0 +1,18 @@
+====== LU05.L02 Kleinste und grösste Zahl finden ======
+
+===== Blockly =====
+{{:modul:m319python:learningunits:lu05:loesungen:lu05_zahlen_loesung.png?400|}}
+
+===== Python =====
+<code python>
+numbers = [18, 3, 21, 1, 79, 35, 7, 63, 4, 13, 31, 11, 71, 36, 19]
+smallest = 2147483647
+biggest = -2147483648
+for number in numbers:
+    if number < smallest:
+        smallest = number
+    if number > biggest:
+        biggest = number
+print (smallest)
+print (biggest)
+</code>

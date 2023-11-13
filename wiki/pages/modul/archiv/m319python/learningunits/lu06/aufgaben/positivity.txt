@@ -1,0 +1,34 @@
+====== LU06.A01: Positivity ======
+
+===== Auftrag =====
+Schreiben Sie ein Programm, das den Benutzer nach einer ganzen Zahl fragt und ihm mitteilt, ob sie positiv (größer als Null) ist oder nicht.
+
+<code>
+Give a number:
+*5*
+The number is positive.
+</code>
+
+
+<code>
+Give a number:
+*-2*
+The number is not positive.
+</code>
+
+===== Vorlage =====
+<code python>
+def main():
+  # Write your program here
+
+if __name__ == '__main__':
+    main()
+</code>
+
+Anmerkung: Kümmern Sie sich im Moment nicht zu sehr um ''if %%__%%name%%__%% == '%%__%%main%%__'%%:''. Wir brauchen es technisch gesehen nicht für dieses Programm, aber es ist eine gute Übung, es einzubauen, und es wird in späteren Übungen klarer werden.
+
+----
+{{tag>M319-F3G M319-F3F M319-F3E M319-F1F M319-F1F}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/ch/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Kevin Maurizi 
+
+Diese Aufgabe ist eine übersetzte und angepasste Aufgabe von [[https://scott3142.uk/|Scott Morgan]], verwendet unter CC BY NC SA.

@@ -1,0 +1,13 @@
+====== LU02.L01 - Summe einer Zahlenliste ======
+
+<code python>
+def sum_of_numbers(numbers):
+    return sum(numbers)
+
+if __name__ == '__main__':
+    numbers = [1, 2, 3, 4, 5]
+    print('The sum of the numbers is:', sum_of_numbers(numbers))
+</code>
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/ch/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Kevin Maurizi 

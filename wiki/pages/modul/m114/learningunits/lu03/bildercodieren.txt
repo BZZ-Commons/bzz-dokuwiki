@@ -1,0 +1,50 @@
+====== LU03c - Bilder codieren: Einführung  ======
+
+
+===== Grundlagen =====
+
+==== Bitmap ====
+In einem Bitmap-Format werden die Farbinformationen der einzelne Bildpunkte (Pixel) codiert.
+Diese Formate werden vor allem für Fotos und Bilder verwendet.
+
+{{http://1.bp.blogspot.com/-9PCHHP-gj70/UCQF2gBcDhI/AAAAAAAABJk/bqLeufzWpPE/s400/mario+template.PNG}}
+
+==== Vektor ====
+
+Im Gegensatz zu Bitmap-Grafiken speichert eine Vektorgrafik keine Pixel.
+Die einzelnen Bildelemente werden aus den geometrischen Figuren Strich, Kreis und Bogen zusammen gesetzt.
+Dadurch können Vektorgrafiken ohne Qualitätsverlust vergrössert und verkleinert werden.
+Zum Einsatz kommen Vektorgrafiken beim Offsetdruck und technischen Zeichnungen.
+
+
+{{https://heise.cloudimg.io/v7/_www-heise-de_/hdl/imgs/94/3/1/6/2/6/9/2/vergleich-grafik-vektor-gross-b24ee66356f7e224.jpg?600}}
+
+//Quelle: [[https://heise.cloudimg.io/v7/_www-heise-de_/hdl/imgs/94/3/1/6/2/6/9/2/vergleich-grafik-vektor-gross-b24ee66356f7e224.jpg]] //
+
+Das Bild zeigt den Vergleich von Vektorgrafik (links) und Bitmap (rechts) bei extremer Vergrösserung.
+
+==== Komprimierung ====
+
+Ein unkomprimiertes Bild verbraucht sehr viel Platz.
+Bei 20 Megapixeln und 24 Bit Farbtiefe entsteht eine Datei mit einer Grösse von rund 57 MByte.
+
+Je nach Dateiformat werden verschiedene Komprimierungsverfahren kombiniert.
+
+  * Weniger Farbtöne
+  * Reduktion der Auflösung
+  * Verwendung einer Farbpalette
+
+===== Aufbau einer Bilddatei =====
+Am Anfang jeder Bilddatei befinden sich einige Metainformationen zum Bild als Ganzes:
+  * Art des Bildes
+  * Höhe und Breite
+  * Farbtiefe
+  * Grösse der Bilddaten
+  * Komprimierungsverfahren
+
+
+Danach folgen die Daten zu den einzelnen Pixeln (Bitamp) bzw. Vektoren.
+
+----
+{{tag>m114-A0G}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

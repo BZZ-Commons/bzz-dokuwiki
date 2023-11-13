@@ -1,0 +1,97 @@
+====== Vorlage für Pycharm mit GitHub Classroom ======
+
+===== Repository / Projekt erstellen =====
+<WRAP center round tip 60%>
+Um Konflikte mit der Benennung im Classroom zu vermeiden, sollten die Repositories und Assignments
+  * alles in Kleinbuchstaben geschrieben sein
+  * Worttrennungen mit Bindestrichen sein
+
+Zum Beispiel: ''m399-lu19-a39-something''
+</WRAP>
+==== Variante A: Mit Template ====
+
+1. Erstelle ein neues GitHub-Repository. Wähle als Template "BZZ-Commons/python-template" aus.
+
+{{:howto:pycharm:github_create_repo.png?600}}
+
+<WRAP center round alert 60%>
+Beim Auswählen des Templates wird der Owner zu ''BZZ-Commons'' geändert.
+Du musst hier den korrekten Owner z.B. ''templates-python'' auswählen.
+</WRAP>
+
+2. Klone das neue Repository in PyCharm. 
+
+3. PyCharm fragt dich, ob du ein //Virtual Environment (venv)// erstellen willst, bestätige diese mit [OK].
+
+==== Variante B: Leeres Repository ====
+
+  - Erstelle ein neues, leeres Repository. Dieses Repo darf keine Dateien enthalten; auch kein README.md oder LICENSE!
+  - Erstelle ein neues Projekt in PyCharm.
+  - Erstelle die Dateien und Ordner in PyCharm.
+  - Führe einen Push ins GitHub Repository durch.
+
+===== Anpassungen =====
+
+==== README.md ====
+
+Lösche diese Datei oder passe die Beschreibung an.
+
+==== classroom.yml ====
+
+<code yml [enable_line_numbers="true"]>
+name: GitHub Classroom Workflow
+
+on: push
+
+permissions:
+  checks: write
+  issues: write
+  actions: read
+  contents: read
+
+jobs:
+  copy-issues:
+    if: ${{ contains(github.actor, 'classroom') }}
+    uses: BZZ-Commons/workflows/.github/workflows/setup.yml@main
+    with:
+      SOURCE_REPO: templates-python/m319_lu04_a00_classroom  # CHANGE owner/name of the repo with the issues
+      TARGET_REPO: ${{ github.repository }}
+      ADD_LABELS: "false"
+    secrets:
+      GHSECRET: ${{ secrets.GITHUB_TOKEN }}
+
+  grading:
+    if: ${{ !contains(github.actor, 'classroom') }}
+    uses: BZZ-Commons/workflows/.github/workflows/grading.yml@main
+    with:
+      MOODLE: false  # CHANGE true=export grade to moodle
+    secrets: inherit
+</code>
+
+Dieser Workflow umfasst 2 Jobs:
+
+=== copy-issues ===
+
+Kopiert die Issues aus einer Vorlage in das Repository des Lernenden. Wird nur durchgeführt, wenn ein Lernender das Assignment in GitHub Classroom akzeptiert.
+
+**Entweder** du passt bei ''SOURCE_REPO'' auf Zeile 16 den Besitzer und Namen des Vorlage-Repositories an.
+
+**Oder** du löschst diesen Job raus, indem du die Zeilen 12-20 entfernst.
+
+=== grading ===
+
+Führt automatisierte Tests durch und bewertet das Programm. Dieser Job wird bei jedem Push ausser beim Erstellen des Repositories durchgeführt.
+
+Auf Zeile 26 kannst du angeben, ob die Bewertung und das Feedback in Moodle exportiert werden soll. Ändere den Wert auf ''true'', damit der Export ausgeführt wird. 
+Lies dazu die Anleitung [[howto/git/grading/autograding2]]
+
+==== copyissues.yml ====
+
+Dies ist ein manueller Workflow, um die Issues aus einer Vorlage zu kopieren. Falls du bei diesem Projekt nicht mit Issues arbeitest, kannst du diesen Workflow löschen.
+
+===== Template =====
+
+[[https://github.com/bzz-fgict/M319_Template]]
+
+{{ :howto:pycharm:m319_template-master.zip }}
+

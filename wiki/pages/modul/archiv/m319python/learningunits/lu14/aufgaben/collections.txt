@@ -1,0 +1,16 @@
+====== LU14.A01: Collections ======
+===== Auftrag =====
+Im Projekt "M319_LU14_A01_Collections" finden Sie zwei Python-Skripts und zugehörige Test-Skripts:
+  * lists.py / lists_test.py
+  * dicts.py / dicts_test.py
+
+Beide Python-Skripts enthalten eine Reihe von Funktionen, die Elemente einfügen, suchen, löschen, ...
+
+Mit TODO-Kommentaren ist beschrieben, was Sie jeweils zu tun haben.
+
+<WRAP center round info 60%>
+Ändern Sie keine der vorhandenen Befehle, diese werden für die korrekten Testresultate benötigt.
+</WRAP>
+
+{{tag>M319-C1G M319-C1F M319-C1E M319-G1F}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

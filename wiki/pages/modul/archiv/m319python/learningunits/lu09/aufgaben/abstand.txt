@@ -1,0 +1,20 @@
+====== LU09.A05 - Abstand im Koordinatensystem ======
+
+Um die Länge der Luftlinie zwischen zwei Punkten auf der Landkarte zu berechnen, wird ein Programm benötigt. Schreiben Sie eine Subroutine, um den Abstand zweier Punkte in der Ebene zu berechnen.
+P1 = (x1, y1), P2 = (x2, y2). 
+
+Berechnen Sie damit unter anderem den (Kilometer-)Abstand der Orte Zell (704.4, 256.2) und Neuburg (693.3, 261.4), die hier in Schweizerischen Landeskoordinaten (CH1903) gegeben sind.
+ 
+<WRAP center round box 60%>
+<code python>
+#TODO create a function to calculate the distance between two points in CH1903-Coordinate-System
+
+def main():
+    #TODO: Call the function above.
+    distance = #TODO
+    print(f'Distance is: {distance}')
+
+if __name__ == '__main__':
+    main()
+</code>
+</WRAP>

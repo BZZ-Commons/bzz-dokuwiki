@@ -1,0 +1,46 @@
+====== 02 - Architektur ======
+
+===== Datenkapselung =====
+
+//Wir vermeiden direkte Zugriffe von ausserhalb auf die Attribute einer Klasse. Dadurch können wir das Prinzip der Datenkapselung sicherstellen.//
+
+|{{:howto:codingstandards:zwingend.png?30|}}| Jedes Attribut einer Klasse wird mit //@property// gekennzeichnet. |
+|{{:howto:codingstandards:zwingend.png?30|}}| Setter-Funktionen werden mittels //@name//((«//name//» ist der Name der Property; z.B. @temperature.setter))//.setter// gekennzeichnet. |
+
+=== Beispiel ===
+<code python>
+class Celsius:
+    def __init__(self, temperature=0):
+        self._temperature = temperature
+
+    @property
+    def temperature(self):
+        print('Getting value... ')
+        return self._temperature
+
+    @temperature.setter
+    def temperature(self, value):
+        print('Setting value... ')
+        if value < -273.15:
+            raise ValueError('Temperature below -273 is not possible')
+        self._temperature = value
+
+</code>
+
+
+===== Main =====
+
+//Zum Testen und zur Vermeidung von Fehlern kann ein Pythonskript unterscheiden, ob es direkt ausgeführt wurde oder als Import von einem anderen Skript aufgerufen wurde.//
+
+|{{:howto:codingstandards:zwingend.png?30|}}| Jedes Pythonskript prüft, ob es direkt ausgeführt wird. |
+
+=== Beispiel ===
+<code python>
+def hello():
+    print('Hello World')
+
+
+if __name__ == '__main__':
+    hello()
+</code>
+

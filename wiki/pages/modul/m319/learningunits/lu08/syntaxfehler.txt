@@ -1,0 +1,58 @@
+====== LU08b - Syntaxfehler suchen ======
+<WRAP center round info 60%>
+Ein Syntaxfehler bedeutet zunächst, dass der Computer meinen Sourcecode nicht versteht.
+Häufig Gründe sind:
+  * Fehlende Sonderzeichen wie Klammern, Doppelpunkte, Semikolons, ...
+  * Falsch geschriebene Bezeichner
+  * Falsche Einrückung (in Python)
+</WRAP>
+
+===== Meldungen im Editor =====
+Moderne Entwicklungsumgebungen (IDE) zeigen mir Syntaxfehler bereits im Editor.
+In der Regel wird der Code rot markiert.
+Ausserdem erscheint eine Meldung, die einen Hinweis auf das Problem gibt.
+
+{{:modul:m319python:learningunits:lu10:lu10_syntaxerror_01.png?600|}}
+
+Welche Syntaxfehler habe ich in diesem kurzen Codeabschnitt gemacht?
+
+==== Wer lesen kann, ist klar im Vorteil ====
+
+<WRAP center round important 60%>
+Analysieren Sie die Meldung und lesen Sie diese Meldungen nicht nur oberflächlich.
+</WRAP>
+
+Bittet mich jemand um Hilfe bei einem Syntaxfehler, ist meine erste Frage immer: "Wie lautet die Fehlermeldung?"
+Sehr oft höre ich dann: "So etwas ähnliches wie ...".
+Dann weiss ich bereits; der Fragende ist zu faul um die Meldung zu analysieren.
+Durch eine genaue Analyse der Fehlermeldung lassen sich die möglichen Fehlerursachen stark eingrenzen.
+Studieren Sie deshalb die genaue Meldung:
+  * Vergleichen Sie den Code mit einer ähnlichen Zeile in einem anderen Programm.
+  * Suchen Sie die Fehlermeldung in einer Suchmaschine, z.B. ''python unexpected indent''
+
+==== Schau nach oben ====
+<WRAP center round important 60%>
+Die Fehlermeldung steht an der Stelle, wo der Computer meinen Code nicht mehr versteht.
+Oftmals ist der eigentliche Fehler aber **vor** dieser Stelle. 
+</WRAP>
+Daher ist es meistens von Vorteil, die Fehler von oben nach unten zu beheben.
+
+===== Meldungen in der Konsole =====
+Vielleicht habe ich im Editor einen Fehler übersehen und versuche das Programm auszuführen.
+In diesem Fall sehe ich die Fehlermeldungen in der Konsole.
+
+{{:modul:m319python:learningunits:lu10:lu10_syntaxerror_02.png?600|}}
+
+In Python sehe ich in der Konsole immer nur einen Syntaxfehler auf einmal.
+Daher ist es einfacher, die Fehler im Editor zu suchen und zu beheben.
+
+<WRAP center round info 60%>
+Es gibt seltene Fehler bei denen ...
+  * ... der Editor einen Fehler anzeigt, das Programm aber korrekt ausgeführt wird.
+  * ... der Syntaxfehler erst beim Ausführen des Programms erscheint.
+
+Beide Situationen sind aber so selten, dass wir uns vorerst keine Sorgen darüber machen.
+</WRAP>
+----
+{{tag>m319-E2F, m319-E2E}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

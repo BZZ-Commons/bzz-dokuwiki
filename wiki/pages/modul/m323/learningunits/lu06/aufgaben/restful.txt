@@ -1,0 +1,60 @@
+====== LU06.A04 - Erstellen einer RESTful API für die ToDo-Liste mit Flask ======
+
+<WRAP center round todo 60%>
+Deine Aufgabe ist es, eine RESTful API mit Flask zu erstellen, um eine einfache ToDo-Liste zu verwalten. Du erhältst bereits implementierte Klassen für die ToDo-Elemente und die dazugehörige DAO-Klasse.
+</WRAP>
+
+===== Kurzzusammenfassung =====
+
+  * Implementiere die Endpunkte für CRUD-Operationen (Create, Read, Update, Delete)
+  * Verwende JSON für den Datenaustausch
+  * Implementiere passende HTTP-Statuscodes
+
+===== Vorgehen =====
+
+==== 0. Vorbereitungen ====
+  - Akzeptiere das GitHub Classroom Assignment
+  - Klone dein persönliches Repository in die Entwicklungsumgebung
+
+==== 1. Implementiere CRUD-Endpunkte ====
+  * Erstelle die folgenden REST-Endpunkte für die CRUD-Operationen. Diese sollten die Methoden der ''TodoDao''-Klasse verwenden.
+
+    - **POST** ''/todos'': Für das Hinzufügen eines neuen ToDo-Elements
+    - **GET** ''/todos'': Für das Abrufen aller ToDo-Elemente
+    - **GET** ''/todos/<id>'': Für das Abrufen eines einzelnen ToDo-Elements nach ID
+    - **PUT** ''/todos/<id>'': Für das Aktualisieren eines vorhandenen ToDo-Elements
+    - **DELETE** ''/todos/<id>'': Für das Löschen eines ToDo-Elements
+
+<code python>
+# Beispiel für einen Endpunkt zum Hinzufügen eines neuen ToDo-Elements
+@app.route('/todos', methods=['POST'])
+def add_todo():
+    # Dein Code hier
+</code>
+
+==== 2. Datenaustausch mit JSON ====
+  * Verwende JSON für den Datenaustausch zwischen Client und Server. Du kannst ''jsonify'' aus dem Flask-Paket verwenden, um Python-Objekte in JSON umzuwandeln.
+
+==== 3. HTTP-Statuscodes ====
+  * Implementiere passende HTTP-Statuscodes für erfolgreiche und fehlerhafte Anfragen. Zum Beispiel:
+    - ''201 Created'' für erfolgreich erstellte Ressourcen
+    - ''404 Not Found'' wenn eine Ressource nicht gefunden wird
+    - ''400 Bad Request'' für ungültige Anfragen
+
+==== 4. Teste deine API ====
+Via ''API-Testing.http''-File im Workspace 
+
+oder via: [[https://app.getpostman.com/run-collection/21916156-7e24c1ab-b771-4f36-9bf9-9efda9b55507?action=collection%2Ffork&source=rip_markdown&collection-url=entityId%3D21916156-7e24c1ab-b771-4f36-9bf9-9efda9b55507%26entityType%3Dcollection%26workspaceId%3D6159a5bd-9101-4933-a6c3-05d2eb3112fd|{{https://run.pstmn.io/button.svg|Run in Postman}}]]
+
+==== 5. Abgabe ====
+Die Abgabe der Lösung erfolgt als Push in das persönliche GitHub-Repository.
+
+----
+<details>
+<summary>//=> GitHub Repo für externe Besucher//</summary>
+GitHub Repository https://github.com/templates-python/m323-lu06-a04-restful
+
+//Lernende am BZZ müssen den Link zum GitHub Classroom Assignment verwenden//
+
+</details>
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/ch/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Kevin Maurizi 

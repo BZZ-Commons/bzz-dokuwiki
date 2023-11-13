@@ -1,0 +1,11 @@
+====== LU02.L03a - Wahrheitstabelle ======
+
+^ Wert 1 ^ Operation ^ Wert 2 ^ Resultat ^ 
+| true | OR | false | **true** |
+| false | ::: | **true**  | true |
+| true | **XOR** | false | true |
+| true | ::: | true | false |
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

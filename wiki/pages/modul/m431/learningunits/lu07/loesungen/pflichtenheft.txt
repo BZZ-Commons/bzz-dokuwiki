@@ -1,0 +1,65 @@
+====== LU07.L02 - Pflichtenheft vervollständigen ======
+
+<WRAP center round box 90%>
+====== Pflichtenheft "AlpenExperience WanderApp" ======
+
+**1. Einleitung:**
+
+Die "AlpenExperience WanderApp" ist ein Projekt, das darauf abzielt, Wanderern in der Alpenregion ein hilfreiches Tool zur Hand zu geben. Das Pflichtenheft dient als technische und funktionale Spezifikation des Projekts und definiert im Detail die Anforderungen und deren Umsetzung, die zuvor im Lastenheft grob umrissen wurden.
+
+**2. Globale Analyse:**
+
+Die App soll in einem Umfeld eingesetzt werden, das von Naturfreunden, Wanderern und Bergsteigern dominiert wird. Die Hauptzielgruppe sind Personen im Alter von 18 bis 65 Jahren, die entweder gelegentlich oder regelmäßig in den Alpen wandern. Sie benötigen ein zuverlässiges Tool, um Routen zu planen, sich über Wetterbedingungen zu informieren und andere Wanderer in der Nähe zu finden.
+
+**3. Zielbestimmung:**
+
+   - Bereitstellung von Informationen zu verschiedenen Wanderwegen, einschließlich Topographie und Schwierigkeitsgrad.
+   - Aktuelle Wetterberichte und -warnungen für den ausgewählten Wanderbereich.
+   - Aufbau einer Community von Wanderern zum Teilen von Erfahrungen und Empfehlungen.
+
+**4. Produkteinsatz:**
+
+Die App ist für den privaten Einsatz gedacht und soll auf mobilen Endgeräten wie Smartphones und Tablets laufen. Als Progressive Web App (PWA) ist sie plattformunabhängig und kann somit sowohl auf Android- als auch auf iOS-Geräten genutzt werden.
+
+**5. Produktübersicht:**
+
+Die "AlpenExperience WanderApp" besteht aus mehreren Modulen:
+
+  * Routenplaner: Zum Planen und Teilen von Wanderwegen.
+  * Wettervorhersage: Zeigt aktuelle Wetterdaten und Vorhersagen für den ausgewählten Bereich.
+  * Community-Forum: Bereich zum Teilen von Erfahrungen, Fotos und zum Vernetzen mit anderen Wanderern.
+  * Offline-Kartenmaterial: Karten, die ohne Internetverbindung zugänglich sind.
+  * Notruf-Funktion: Schnelle Möglichkeit, im Notfall Hilfe zu rufen und den aktuellen Standort zu teilen.
+
+**6. Produktfunktionen:**
+
+  * Kartenmaterial mit verschiedenen Wanderwegen, inklusive Topographie und Schwierigkeitsgrad.
+  * Aktuelle Wetterberichte und -warnungen für den gewählten Wanderbereich.
+  * Erstellung und Verwaltung von Benutzerprofilen.
+  * Community-Bereich für den Austausch von Erfahrungen.
+  * Bewertung und Feedback von Wanderwegen durch die Nutzer.
+
+**7. Produktdaten:**
+
+Die App soll folgende Daten verarbeiten und speichern können:
+
+  * Benutzerprofile (Name, E-Mail, Profilbild, bevorzugte Wanderrouten)
+  * Wanderrouten (Startpunkt, Endpunkt, Dauer, Schwierigkeitsgrad)
+  * Wetterdaten (Temperatur, Niederschlag, Windstärke, Vorhersage)
+  * Forenbeiträge (Text, Bilder, Datum, Autor)
+
+**8. Nicht-funktionale Anforderungen:**
+
+  * Performance: Die App sollte auch in Gebieten mit schlechter Netzabdeckung flüssig laufen.
+  * Sicherheit: Datenübertragung muss verschlüsselt sein; persönliche Daten der Benutzer müssen geschützt werden.
+  * Usability: Intuitive Benutzeroberfläche, die auch für unerfahrene Benutzer leicht verständlich ist.
+
+**9. Technische Umsetzung:**
+
+Als PWA wird die "AlpenExperience WanderApp" hauptsächlich mit Webtechnologien wie HTML, CSS und JavaScript realisiert. Für die Offline-Funktionalität und das Zwischenspeichern von Daten kommt der Service Worker zum Einsatz. Das Backend wird in Python geschrieben und verwendet eine SQL-Datenbank zur Datenhaltung.
+
+**10. Schnittstellen:**
+
+Die App wird mit externen Wetterdatendiensten über eine API kommunizieren. Außerdem wird eine Schnittstelle zu einem Notrufdienst für den Fall von Unfällen oder anderen Notfällen während des Wanderns integriert.
+
+</WRAP>

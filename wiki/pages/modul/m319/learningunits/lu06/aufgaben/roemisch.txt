@@ -1,0 +1,74 @@
+====== LU06.A07: Römische Zahlzeichen ======
+<WRAP center round todo 60%>
+Erstelle das Programm für die Umwandlung von positiven Ganzzahlen in römische Zahlzeichen.
+</WRAP>
+
+<HTML>
+<iframe src="https://trinket.io/embed/python3/3c7f7e6146?outputOnly=true&start=result" width="100%" height="200" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+</HTML>
+
+===== Römische Zahlen =====
+//[[https://de.wikipedia.org/wiki/R%C3%B6mische_Zahlschrift]]//
+
+Das römische Zahlensystem basiert ausschliesslich auf der Addition
+((Die Subtraktionsregel, dass man maximal 3 identische Symbole schreiben darf, stammt aus dem Mittelalter.)) der Symbole.
+Dabei werden immer möglichst wenige Symbole verwendet, um die Zahl zu notieren.
+
+=== Römische Zahlzeichen ===
+<WRAP center round 40%>
+| I | 1 |
+| V | 5 |
+| X | 10 |
+| L | 50 |
+| C | 100 |
+| D | 500 |
+| M | 1000 |
+</WRAP>
+==== Beispiele ====
+=== DCCXIIII ===
+''500 + 100 + 100 + 10 + 1 + 1 + 1 + 1 = 714''
+
+=== MMXXII ==
+''1000 + 1000 + 10 + 10 + 1 + 1 = 2022''
+
+===== Auftrag =====
+==== Hinweise zu den Variablen ====
+  - ''numerals'': Eine ''Liste'' mit den römischen Zahlzeichen. Fügen Sie die Zahlzeichen nach absteigendem Wert ein.
+  - ''decimals'': Eine ''Liste'' mit den entsprechenden Zahlenwerten (absteigend sortiert).
+  - ''count'': Ein Zähler für die Position innerhalb der beiden Listen.
+  - ''result'': Eine Variable um das Resultat zu speichern.
+
+==== Programmlogik ====
+<code>
+1. Setze count gleich 0
+2. Der Benutzer gibt eine natürliche Zahl ein => number
+3. Solange number grösser als 0 ist
+  3.1. Falls number grösser oder gleich decimals[count] ist
+    3.1.1. Füge das Zeichen aus numerals[count] zum result hinzu.
+    3.1.2. Subtrahiere decimals[count] von number
+  3.2. Sonst
+    3.3. Erhöhe den Wert von count um 1
+4. Gib das result aus
+5. Gib die Listen ''numerals'' und ''decimals'' als Returnwert zurück: ''return numerals, decimals''
+</code>
+
+===== Vorgehen =====
+
+  - Akzeptiere das GitHub Classroom Assignment im Moodlekurs.
+  - Klone das Repository in PyCharm.
+  - Realisiere die Programmlogik schrittweise und teste dein Programm.
+  - Führe einen Commit & Push durch.
+
+=== Abgabe ===
+Die Abgabe erfolgt durch den Push ins GitHub Repository.
+In Moodle ist keine Abgabe vorgesehen oder möglich.
+
+----
+<details>
+<summary>//=> GitHub Repo für externe Besucher//</summary>
+GitHub-Repo: https://github.com/templates-python/m319-lu06-a07-roman
+
+//Lernende am BZZ **müssen** den Link zum GitHub Classroom Assignment verwenden//
+</details>
+{{tag>M319-LU06}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

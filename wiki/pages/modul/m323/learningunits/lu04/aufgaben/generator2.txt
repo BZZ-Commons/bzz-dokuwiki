@@ -1,0 +1,40 @@
+====== LU04.A16 - Generator für gerade Zahlen ======
+
+<WRAP center round todo 60%>
+Erstellen Sie einen Generator, der alle geraden Zahlen bis zu einem gegebenen Wert ''m'' generiert.
+</WRAP>
+
+
+===== Aufgabenstellung =====
+
+  - Schreiben Sie eine Funktion namens ''even_numbers_generator'', die einen Parameter ''m'' akzeptiert.
+  - Die Funktion sollte alle geraden Zahlen bis zum Wert ''m'' generieren.
+  - Verwenden Sie das ''yield''-Schlüsselwort, um jeden geraden Wert zu generieren.
+
+===== Code-Vorlage =====
+<code python>
+def even_numbers_generator(m):
+    """
+    Generiert alle geraden Zahlen bis zum Wert m.
+    
+    Ein gerader Wert ist eine ganze Zahl, die ohne Rest durch 2 teilbar ist.
+    
+    :param m: Der maximale Wert, bis zu dem gerade Zahlen generiert werden sollen.
+    :return: Ein Generator für gerade Zahlen.
+    """
+    # TODO: Implementieren Sie den Generator für gerade Zahlen
+    pass
+
+if __name__ == '__main__':
+    # Testen Sie Ihren Generator
+    for num in even_numbers_generator(15):
+        print(num)
+</code>
+
+
+**Erwartete Ausgabe**:
+2, 4, 6, 8, 10, 12, 14
+
+----
+<nodisp>https://github.com/templates-python/m323-lu04-a16-generator</nodisp>
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/ch/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Kevin Maurizi 

@@ -1,0 +1,51 @@
+Durch das Klonen haben Sie den unten stehenden Code in Ihre IDE kopiert. 
+Arbeiten Sie sich nun durch die TODOs durch.
+
+<WRAP center round box 80%>
+<code java>
+import java.util.Scanner;
+/**
+ * Template Klasse für simple Java-Scanner-Programme
+ *
+ * @author Ibi dumm
+ * @since 2042.01.01
+ * @version 0.1
+ */
+public class AsciiArt {
+
+    static Scanner scanner;
+
+    public AsciiArt(){
+        scanner = new Scanner(System.in);
+    }
+
+    public static void main(String[] args) {
+        AsciiArt asciiArt = new AsciiArt();
+        asciiArt.run();
+        scanner.close();
+    }
+
+    private void run() {
+        // BEISPIEL
+        for (int j = 0; j < 26; j++) {
+            for (int i = 0; i < 6; i++) {
+                System.out.println(ArtText.getLineOfLetter(j,i));
+            }
+        }
+
+        // TODO 0: Setzen Sie einen Breakpoint auf Zeile 27 und versuchen Sie das Programm nachzuvollziehen.
+
+        // TODO 1: Schreiben Sie das Alphabet horizontal
+
+        // TODO 2: Lesen Sie einen Userinput und geben Sie diesen wieder als Ascii-Art aus.
+
+        // TODO 3: Lassen Sie den User entscheiden ob er vertikal oder horizontal den Text angezeigt haben möchte.
+
+        // TODO 4: Commiten und Pushen Sie.
+    }
+}
+
+</code>
+</WRAP>
+
+

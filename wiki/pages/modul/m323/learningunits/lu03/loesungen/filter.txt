@@ -1,0 +1,43 @@
+====== LU03.L04 - Datenfilterung mit First-Class Functions ======
+
+<code python>
+def filter_by_age(students, min_age):
+    result = []
+    for student in students:
+        if student['age'] >= min_age:
+            result.append(student)
+    return result
+
+def filter_by_class(students, class_name):
+    result = []
+    for student in students:
+        if student['class'] == class_name:
+            result.append(student)
+    return result
+
+def filter_students(students, filter_function, *args):
+    return filter_function(students, *args)
+
+if __name__ == '__main__':
+    students = [
+        {'name': 'Alice', 'age': 15, 'class': '10A'},
+        {'name': 'Bob', 'age': 16, 'class': '10B'},
+        {'name': 'Charlie', 'age': 14, 'class': '9A'}
+    ]
+
+    filtered_by_age = filter_students(students, filter_by_age, 15)
+    print('Filtered by age:', filtered_by_age)
+
+    filtered_by_class = filter_students(students, filter_by_class, '10A')
+    print('Filtered by class:', filtered_by_class)
+
+</code>
+
+===== Erklärung =====
+  * ''filter_by_age'' und ''filter_by_class'' sind Funktionen, die eine Liste von Studenten und einen Filterparameter (z.B. Mindestalter oder Klasse) entgegennehmen und die Studenten filtern, die das Kriterium erfüllen.
+  * ''filter_students'' ist eine höhergeordnete Funktion, die die Liste der Studenten, eine Filterfunktion und zusätzliche Argumente für die Filterfunktion (durch *args) akzeptiert. Sie ruft die übergebene Filterfunktion mit den Studenten und den zusätzlichen Argumenten auf.
+  * Im ''if %%__%%name%%__%% == '%%__%%main%%__%%':'' Block wird die Lösung getestet, indem die ''filter_students'' Funktion mit den entsprechenden Filterfunktionen und Argumenten aufgerufen wird.
+  * Der Code verwendet nun ''*args'', um eine variable Anzahl von Argumenten an die Filterfunktion zu übergeben, was die Flexibilität der Lösung erhöht und es ermöglicht, verschiedene Filterfunktionen mit unterschiedlichen Parametern zu verwenden.
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/ch/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Kevin Maurizi 

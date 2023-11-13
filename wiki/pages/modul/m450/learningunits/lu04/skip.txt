@@ -1,0 +1,63 @@
+====== LU04b - Test überspringen ======
+<nodisp>TODO SuMa</nodisp>
+<WRAP center round info 60%>
+Je nach Situation oder Umgebung wollen wir einzelne Tests nicht durchführen.
+Mittels ''skip'' können wir einen Test überspringen.
+</WRAP>
+
+//Siehe auch [[https://docs.pytest.org/en/6.2.x/skipping.html|PyTest - Skipping]]//
+
+Wenn wir im Terminal ''pytest'' eingeben, werden alle Tests innerhalb unseres Projekt durchgeführt.
+Es gibt jedoch gute Gründe, weshalb ein Test nicht ausgeführt werden soll.
+Vielleicht ist die Funktion die getestet werden soll noch gar nicht fertig programmiert.
+Dann würde der Test ständig als fehlerhaft angezeigt, obwohl wir dies schon im vorhinein wussten.
+Andere Tests machen vielleicht nur in einer bestimmten Umgebung überhaupt Sinn.
+Zum Beispiel könnte ein Test nur unter Windows relevant sind und kann unter Linux gar nicht ausgeführt werden.
+
+===== Decorator =====
+
+==== @pytest.mark.skip ====
+Die einfachste Möglichkeit zum Überspringen eines Tests ist der Decorator ''@pytest.mark.skip''
+Damit wird dieser Test in jedem Fall übersprungen.
+Dieser Dekorator ist sinnvoll, wenn die zu testende Funktion noch fehlerhaft ist und der Test aktuell immer scheitern würde.
+
+<code python>
+@pytest.mark.skip
+def test_foo():
+   ...
+   
+@pytest.mark.skip(reason='test currently impossible')
+def test_bar():
+    ...
+</code>
+
+''skip'' hat einen optionalen Parameter ''reason='...' '' mit dem wir eine Begründung angeben können.
+Diese Begründung wird dann in der Zusammenfassung von PyTest angezeigt.
+
+==== @pytest.mark.skipif ====
+Der Dekorator ''@pytest.mark.skipif'' erlaubt es uns eine Bedingung anzugeben.
+Ist diese Bedingung erfüllt, so wird der Test übersprungen.
+Dadurch können wir zum Beispiel einen Test abhängig von der Python-Version ausführen oder nicht.
+
+<code python>
+import sys
+
+
+@pytest.mark.skipif(sys.version_info < (3, 7), reason='requires python3.7 or higher')
+def test_function():
+    ...
+</code>
+
+===== Innerhalb der Funktion =====
+Nebst den Dekorators können wir ''pytest.skip'' auch innerhalb der Testfunktion aufrufen.
+Tritt zum Beispiel beim Vorbereiten des Tests ein Problem auf, können wir die weitere Ausführung des Tests überspringen.
+Auch bei relativ komplexen Bedingungen ist diese Variante besser geeignet als der Dekorator mit ''pytest.mark.skipif''.
+
+<nodisp>TODO SuMa - Beispiel</nodisp>
+<code python>
+
+</code>
+
+----
+{{tag>M450-LU04}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

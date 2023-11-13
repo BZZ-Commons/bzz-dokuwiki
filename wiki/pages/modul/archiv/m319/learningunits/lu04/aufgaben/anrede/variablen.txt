@@ -1,0 +1,27 @@
+===== Variablen deklarieren =====
+
+
+=== Einleitung ===
+Immer wenn ein Programm einen Wert speichern muss, benötigen wir eine Variable.
+Mit Variablen können wir:
+  * Eingaben des Benutzers speichern.
+  * Berechnungen durchführen und das Ergebnis festhalten.
+  * Bedingungen formulieren.
+
+=== Zur Erinnerung ===
+In Java werden Variablen durch Angabe eines Datentyps (''int, float, char, ...'') und eines Bezeichners deklariert.
+
+<code>
+int zahl;
+char buchstabe;
+</code> 
+
+=== Auftrag ===
+  - Bestimmen Sie alle benötigten Variablen für das Programm "Salutation":
+    * Bezeichner (Name) der Variable
+    * Datentyp (char, int, float, ...)
+
+  - Deklarieren Sie die Variablen im Programm (''TODO-1 Variablen deklarieren'')
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Marcel Suter

@@ -1,0 +1,17 @@
+====== LU05.L04 - Kryptoanalyse  ======
+
+Wir starten mit dem Schlüssel 1 und schauen, ob ein sinnvoller Text erscheint.
+Falls nicht, nehmen wir den nächst grösseren Schlüssel.
+
+===== Caesar =====
+^ Chiffretext: | HEWKILXVIGLXIMRJEGL |
+^ Schlüssel = 1 | GDVJHKWUHFKWHLQIDFK |
+^ Schlüssel = 2 | FCUIGJVTGEJVGKPHCEJ |
+^ Schlüssel = 3 | EBTHFIUSFDIUFJOGBDI |
+^ Schlüssel = 4 | DASGEHTRECHTEINFACH |
+
+
+=== Gartenzaun ===
+^ Chiffretext: | MEDMNZIGDLKMTAZMILTUOMUE |
+^ Schlüssel = 2 | MTEADZMMNIZLITGUDOLMKUME |
+^ Schlüssel = 3 | MITGEDULDKOMMTMANZUMZIEL |

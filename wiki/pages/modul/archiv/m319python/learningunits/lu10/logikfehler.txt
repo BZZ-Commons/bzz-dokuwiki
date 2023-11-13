@@ -1,0 +1,67 @@
+====== LU10c - Logikfehler suchen ======
+<WRAP center round info 60%>
+Logikfehler treten erst beim Ausführen meines Programms auf.
+Das Programm produziert nicht das erwartete Resultat.
+</WRAP>
+
+Im Gegensatz zu Syntaxfehlern zeigt mir meine IDE zunächst keinen Hinweis auf den fehlerhaften Code.
+Ich muss solche Fehler zunächst erkennen, die Ursache ermitteln und beheben.
+
+===== Programmabsturz =====
+<WRAP center round info 60%>
+Wenn ein Programm unerwartet beendet wird, sprechen wir von einem Absturz.
+</WRAP>
+
+Die meisten Programmabstürze geschehen, weil in einer Variable ein unerwarteter Wert steht:
+  * Die Variable hat (noch) gar keinen Wert.
+  * Eine Variable in einer Berechnung enthält Buchstaben (String)
+  * Das Programm will durch 0 dividieren
+  * ...
+
+==== Stack Trace ====
+Stürzt ein Programm ab, so erzeugt das System einen sogenannten **Stack Trace**.
+Dieser Stack Trace enthält wichtige Angaben zur Suche nach der Ursache:
+  * Welche Ausnahme (Exception) ist aufgetreten.
+  * Welcher Befehl führte zur Exception.
+  * In welcher Codezeile ist die Exception aufgetreten.
+  * Die Hierarchie der Funktionen welche diesen Codeblock aufgerufen haben. 
+ 
+=== Beispiel ===
+Ich führe mein Programm aus und gebe als gewüschten Betrag **13** ein.
+
+<code python [enable_line_numbers="true"]>
+def main():
+
+    input_string = input("Gewünschter Betrag > ")
+    amount = int(input_string)
+    give_bills(amount)
+
+
+def give_bills(amount):
+    bills = [200, 100, 75, 25, 3]
+    index = 0
+    while amount > 0:
+        if bills[index] > amount:
+            index += 1
+        else:
+            print(str(bills[index]) + ' KD')
+            amount = amount - bills[index]
+
+
+if __name__ == '__main__':
+    main()
+</code>
+
+Das Programm stürzt ab und zeigt mir diesen Stacktrace:
+
+{{:modul:m319python:learningunits:lu10:lu10_stacktrace.png?800|}}
+
+Lesen Sie den Stacktrace von unten nach oben:
+  * Grün: ''list index out of range'' / Ich versuche auf ein Element einer Liste zuzugreifen, das nicht exisiert.
+  * Türkis: Der verursachende Befehl ist ''if bills[index] > amount:''
+  * Gelb: Dieser Befehl steht in Zeile 12 in der Funktion ''give_bills''.
+  * Violett: ''give_bills'' wurde in Zeile 5 der Funktion ''main'' aufgerufen \\ ''main'' wurde in Zeile 20 aufgerufen. 
+
+----
+{{tag>m319-E2F, m319-E2E}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

@@ -1,0 +1,20 @@
+===== Ausgangslage =====
+
+Mit dem Programm können Artikel erfasst werden. 
+Dabei müssen die Eingaben des Benutzers auf ihre Gültigkeit geprüft werden.
+
+==== Validierungsregeln ====
+^ Artikelnummer | 5 stellig nummerisch, ganzzahlig | 
+^ Artikelbezeichnung | Mindestens 3 Zeichen, maximal 30 Buchstaben oder Ziffern, enthält keine Leerzeichen |
+^ Einheit | Stück, Kilogramm, Meter oder Pack |
+^ Preis pro Einheit | Nummerisch, 2 Nachkommastellen \\ zwischen 0 und 1'000 |
+
+==== Ausgabe ====
+Das Programm zeigt bei korrekten Eingaben eine Erfolgsmeldung an: \\ 
+''Eingaben korrekt. Daten gespeichert.''
+
+Bei falschen Eingaben wird die entsprechende Fehlermeldung angezeigt:
+  * ungültige Artikelnummer
+  * ungültige Artikelbezeichnung
+  * ungültige Einheit
+  * ungültiger Preis

@@ -1,0 +1,69 @@
+====== Lernnachweis zu Kompetenz X2G ======
+
+<WRAP center round box 60%>
+**Kompetenz:**
+Ich kann Selektionen und Iterationen (Kopf und Fussgesteuert) mit Bedingungen codieren.
+</WRAP>
+
+==== Lernnachweis: Codieren von Selektionen und Iterationen mit Bedingungen ====
+
+Im Verlauf dieses Lernfeldes habe ich mich eingehend mit den Konzepten von Selektionen und Iterationen in der Programmiersprache Python befasst. Die Herausforderung bestand darin, diese Konzepte nicht nur einzeln zu verstehen, sondern auch in der Kombination mit Bedingungen.
+Ich habe mich intensiv mit den Grundlagen von Selektionen und Iterationen in Python beschäftigt. Dabei habe ich insbesondere gelernt, wie man kopf- und fußgesteuerte Schleifen effektiv mit Bedingungen kombiniert.
+
+===== Selektionen =====
+Selektionen werden in Python mit den Schlüsselwörtern ''if'', ''elif'' und ''else'' durchgeführt. Hier ist ein einfaches Beispiel:
+
+<code python>
+num = int(input('Geben Sie eine Zahl ein: '))
+if num > 0:
+    print('Die Zahl ist positiv.')
+elif num < 0:
+    print('Die Zahl ist negativ.')
+else:
+    print('Die Zahl ist null.')
+</code>
+
+===== Kopfgesteuerte Iterationen =====
+Für kopfgesteuerte Iterationen verwende ich die ''for''-Schleife. Beispiel:
+
+<code python>
+summe = 0
+for i in range(1, 11):
+    summe += i
+print(f'Die Summe ist {summe}')
+</code>
+
+===== Fußgesteuerte Iterationen =====
+Fußgesteuerte Iterationen werden mit der ''while''-Schleife durchgeführt. Beispiel:
+
+<code python>
+n = int(input('Geben Sie eine Zahl für die Fakultät ein: '))
+result = 1
+while n > 0:
+    result *= n
+    n -= 1
+print(f'Die Fakultät ist {result}')
+</code>
+
+===== Bedingungen in Iterationen =====
+Man kann Bedingungen auch innerhalb von Iterationen verwenden. Beispiel:
+
+<code python>
+numbers = [1, 2, 3, 4, 5]
+even_squares = [x ** 2 for x in numbers if x % 2 == 0]
+print(even_squares)  # Ausgabe: [4, 16]
+</code>
+
+
+===== Lernprozess und Reflexion =====
+
+Zu Beginn fand ich die Syntax und die Verwendung von Schlüsselwörtern wie ''if'', ''elif'', ''else'', ''for'' und ''while'' verwirrend. Durch das regelmäßige Üben und die Anwendung in kleinen Projekten wurde mir jedoch schnell klar, wie mächtig diese Konstrukte sind. Besonders hilfreich waren für mich die Peer-Reviews und die konstruktive Kritik meiner Mitschüler. Sie halfen mir, meinen Code zu optimieren und best practices zu folgen.
+
+Was mir besonders geholfen hat, ist die Anwendung der Konzepte in realen Szenarien. Zum Beispiel habe ich ein kleines Programm geschrieben, das Benutzereingaben validiert und entsprechende Aktionen durchführt. Dies hat mir geholfen, die Bedeutung und Anwendung von Bedingungen in Iterationen besser zu verstehen.
+
+===== Zukünftige Schritte =====
+
+Ich plane, mein Wissen in diesem Bereich durch die Teilnahme an weiteren Projekten und Kursen zu vertiefen. Insbesondere möchte ich lernen, wie man diese Grundlagen in der Entwicklung komplexerer Algorithmen und Datenstrukturen anwendet.
+
+Mit den erworbenen Kenntnissen und Fähigkeiten fühle ich mich nun sicher im Umgang mit den Grundlagen der Programmierung in Python, insbesondere im Bereich der Selektionen und Iterationen. Ich bin in der Lage, diese Konzepte in verschiedenen Kontexten anzuwenden und bin gespannt darauf, wie ich sie in zukünftigen Projekten nutzen werde.
+

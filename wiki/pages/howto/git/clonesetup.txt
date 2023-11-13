@@ -1,0 +1,17 @@
+====== Repository klonen: Einrichtung ======
+<WRAP center round info 60%>
+In den folgenden Schritten wird das Projekt eingerichtet.
+Achte genau auf die Speicherpfade und den korrekten Ablauf.
+</WRAP>
+
+{{:howto:git:classroom_student_09.png?600|}}
+
+Trage im Dialog die Clone-**URL** deines Repositories ein.
+
+Das **Directory** wird von PyCharm automatisch vorgeschlagen.
+Stelle sicher, dass der Pfad ''C:\BZZ\Python\PROJEKTNAME'' lautet. 
+Wobei ''PROJEKTNAME'' der Name deines Projekts ist, also z.B. ''m999-lu99-a99-demo''.
+
+Klicke dann auf **[Clone]**.
+
+Anschliessend geht es **//[Weiter]//** in der Anleitung.

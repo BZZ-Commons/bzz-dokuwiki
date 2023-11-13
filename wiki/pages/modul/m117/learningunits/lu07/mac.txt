@@ -1,0 +1,22 @@
+====== LU07b - MAC-Adresse ======
+
+Die MAC-Adresse (Media Access Control Address) ist eine eindeutige Kennung, die jedem Netzwerkadapter, sei es eine Netzwerkkarte in einem Computer, ein Smartphone, ein Router oder ein anderes Gerät, zugewiesen wird. Diese Adresse dient dazu, Geräte in einem lokalen Netzwerk zu identifizieren und sicherzustellen, dass Datenpakete an das richtige Ziel gesendet werden. Hier sind einige wichtige Merkmale und Aspekte der MAC-Adresse:
+
+  * Einzigartige Kennung: Jede MAC-Adresse ist weltweit einzigartig. Dies wird durch die Hersteller von Netzwerkgeräten gewährleistet, die jeder Netzwerkkarte oder jedem Netzwerkadapter eine eindeutige Adresse zuweisen.
+  * Hexadezimales Format: Die MAC-Adresse besteht aus 12 alphanumerischen Zeichen, die in sechs Doppelpaaren (z.B. 00:1A:2B:3C:4D:5E) angeordnet sind. Diese Zeichenkombination repräsentiert die eindeutige Adresse des Geräts.
+  * Zweigeteilt: Die MAC-Adresse ist in zwei Teile unterteilt. Die erste Hälfte, die sogenannte OUI (Organizationally Unique Identifier), identifiziert den Hersteller des Netzwerkadapters. Die zweite Hälfte ist die individuelle Seriennummer des Geräts innerhalb dieser Herstellerkennung.
+  * Unveränderlich: Normalerweise ist die MAC-Adresse hardwarebasiert und kann nicht ohne spezielle Tools oder Firmware-Änderungen geändert werden. Dies stellt sicher, dass die Adresse während der Lebensdauer des Geräts eindeutig bleibt.
+  * Verwendung in Ethernet-Netzwerken: MAC-Adressen werden hauptsächlich in Ethernet-Netzwerken verwendet, um die Paketweiterleitung zu steuern. Router und Switches verwenden die MAC-Adresse, um zu entscheiden, wohin sie Datenpakete senden müssen.
+  * Lokales Netzwerk: Die MAC-Adresse ist auf das lokale Netzwerk beschränkt und wird normalerweise nicht über das lokale Netzwerk hinaus geroutet. Für den Internetverkehr wird die IP-Adresse verwendet.
+  * Sicherheitsrelevanz: Die MAC-Adresse kann in einigen Fällen für Sicherheitszwecke verwendet werden, z.B. zur Begrenzung des Zugriffs auf ein Netzwerk nur für bestimmte zugelassene Geräte (MAC-Filtering).
+
+Insgesamt spielt die MAC-Adresse eine entscheidende Rolle bei der Identifizierung von Geräten in lokalen Netzwerken und ermöglicht die effiziente Kommunikation zwischen ihnen. Sie ist ein wichtiger Bestandteil der Netzwerktechnologie und wird in verschiedenen Aspekten der Netzwerkkonfiguration und -verwaltung verwendet.
+
+Weitere Infos finden Sie [[https://www.wintotal.de/mac-adresse/|hier]]
+
+----
+
+{{tag>m117}}
+
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Andre Probst
+

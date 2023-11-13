@@ -1,0 +1,30 @@
+====== LU06.A02 - Testfälle durchführen "Artikeldaten" ======
+<WRAP center round todo 60%>
+Führe die Testfälle aus der Äquivalenzklassen-Analyse und Grenzwertanalyse aus.
+Erstelle ein Testprotokoll.
+</WRAP>
+
+===== Auftrag =====
+Führe deine Testfälle mit dem Formular unter [[https://it.bzz.ch/articles]] durch.
+Protokolliere die Resultate deiner Tests in einem [[..:..:lu01/testprotokoll|Testprotokoll]].
+
+Das Testprotokoll muss folgende Angaben enthalten:
+  * Kopfbereich
+    * Name und Version des Programms
+    * Datum und Uhrzeit des Testdurchlaufs
+    * Name des Testers
+  * Hauptteil
+    * Nummer des Testfalls
+    * Erwartetes Resultat
+    * Tatsächliches Resultat
+    * Bewertung (**OK**, **H**auptfehler oder **N**ebenfehler)
+    * Bemerkung zu allfälligen Fehlern
+  * Fusszeile
+    * Fazit über den Testdurchlauf
+
+===== Abgabe =====
+Dokument als PDF-Datei exportieren (drucken) und hier hochladen.
+
+----
+{{tag>M450-LU06}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

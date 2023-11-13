@@ -1,0 +1,40 @@
+====== LU03a - Farben codieren: Einführung======
+
+===== Farbmischung =====
+Unser Auge nimmt die verschiedenen Farben als eine Mischung aus den Grundfarben Rot, Gelb und Blau wahr.
+Der Computer speichert die Farben ebenfalls als eine Mischung.
+
+=== Bildschirm (RGB) ===
+//additive Farbmischung//
+
+Die Bezeichnung „additiv“ bedeutet, dass wir mit einem schwarzen Bildpunkt starten und die einzelnen Grundfarben (**R**ot, **G**rün, **B**lau) hinzufügen.
+Je höher der Anteil der einzelnen Farben ist, desto heller wird der Bildpunkt.
+
+=== Drucker (CMYK) ===
+
+//Subtraktive Farbmischung//
+
+Wir starten mit einem weissen Blatt und fügen die Farben **C**yan, **M**agenta, **Y**ellow (Gelb) und Blac**K** hinzu.
+Jede Farbe absorbiert einen Teil des Lichts (subtraktiv).
+
+===== Farbtiefe =====
+Die Farbtiefe bestimmt die Anzahl Bits, die zum Speichern eines Pixels verwendet werden.
+Zum Beispiel:
+  * 1 Bit: Schwarz oder Weiss
+  * 8 Bit: 256 Farben
+  * 24 Bit: 16.7 Millionen Farben
+
+===== Codierung =====
+
+CSS-Stylesheets verwenden eine Farbtiefe von 24 Bit und die additive Farbmischung.
+Damit steht für jede der Grundfarben Rot, Grün, Blau jeweils 8 Bits zur Verfügung.
+Dabei können wir Werte von ''00'' (kein Farbanteil) bis ''FF'' (maximaler Farbanteil) angeben.
+
+''80FF40'' =
+  * Rot: 50%
+  * Grün: 100%
+  * Blau: 25%
+
+----
+{{tag>m114-A0G}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

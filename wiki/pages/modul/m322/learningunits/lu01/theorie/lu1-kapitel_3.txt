@@ -1,0 +1,143 @@
+==== 3. Heuristiken zur GUI-Gestaltung ====
+GUI-Design ist keine wissenschaftlich festgelegte Domäne. Vieles ist hier im Fluss und richtet sich nach aktuellen Strömungen aber auch nach kulturellen Gepflogenheiten.\\
+Heuristische Verfahren basieren auf Erfahrungen und Vergleichen. In der Folge werden einige Aspekte näher betrachtet.
+
+===3.1 Verdichtete Information===
+<WRAP column 60%>
+Darstellung einer Vielzahl von gleichartigen und gleich bedeutsamen Daten. Der Anwender möchte sowohl den Überblick haben als auch Detailinformationen sehen. 
+   * Stellen Sie möglichst alle Informationen innerhalb einer Ansicht dar.
+   * Sparen Sie Platz durch Verwendung eines kleinen Fonts.
+   * Setzen Sie Farbe und Schrifttypen (z.B. fett, kursiv) zur Strukturierung ein. Der Anwender kann sich so schneller in der Informationsfülle orientieren.
+   * Wählen Sie eine grafische Darstellung, die der Informationsstruktur entspricht. 
+//Beispiele:<tab>Fahrplan, Landkarte, Organigramm//
+</WRAP>
+<WRAP column 35%>
+{{:modul:m322:learningunits:lu01:theorie:lu01-heuristik-verdichtet.png?300}}\\
+//Abb. 1-8: verdichtet Darstellung//
+</WRAP>
+<WRAP clear></WRAP>
+
+===3.2 Tabelle===
+<WRAP column 60%>
+Darstellung von verdichteten Daten in tabellarischer Form. Der Anwender möchte viele Informationen auf einmal sehen und Vergleiche anstellen. Ein einzelner Eintrag muss leicht aufzufinden sein.
+   * Sortieren Sie die Daten nach logischen Kriterien1
+   * Erleichtern Sie das Auffinden einzelner Werte durch optische Anker (z.B. bei einer alpha-betischen Sortierung durch Fettdruck für den ersten Eintrag eines neuen Buchstabens)
+   * Ordnen Sie die Spalten in absteigender Wichtigkeit von links nach rechts.
+//Beispiel:<tab>Adressbuch, Stückliste, Suchergebnis//
+</WRAP>
+<WRAP column 35%>
+{{:modul:m322:learningunits:lu01:theorie:lu01-heuristik-tabelle.png?300}}\\
+//Abb. 1-9: tabellarische Darstellung//
+</WRAP>
+<WRAP clear></WRAP>
+
+===3.3 Hierarchie===
+<WRAP column 60%>
+Darstellung verdichteter, hierarchisch geordneter Daten. Das Wissen über die Informationsstruktur ist für den Anwender von grosser Bedeutung. Es hilft ihm, Daten schnell wieder zu finden und Beziehungen zu erkennen.
+   * Stellen Sie die Daten in einer Baumstruktur dar.
+//Beispiel:<tab>Verzeichnisse (Dateien, Warengruppen etc.), Organigramm//
+</WRAP>
+<WRAP column 35%>
+{{:modul:m322:learningunits:lu01:theorie:lu01-heuristik-hierarchie.png?250}}\\
+//Abb. 1-10: hierarchische Darstellung//
+</WRAP>
+<WRAP clear></WRAP>
+
+===3.4 Formular===
+<WRAP column 60%>
+Standardisierte Dateneingabe.
+   * Heben Sie Pflichteingaben von optionalen Feldern optisch hervor (z.B. durch die Hinter-grundfarbe).
+   * Ausgabefelder müssen von Eingabefeldern klar zu unterscheiden sein.
+   * Machen Sie deutlich, welche Eingaben erwartet werden. Dies kann durch vorformatierte Felder oder Beispiele erfolgen.
+//Beispiel:<tab>Internet-Bestellung, Buchungssatz anlegen, Schadensanzeige//
+</WRAP>
+<WRAP column 35%>
+{{:modul:m322:learningunits:lu01:theorie:lu01-heuristik-formular.png?250}}\\
+//Abb. 1-11: tabellarische Darstellung//
+</WRAP>
+<WRAP clear></WRAP>
+
+===3.5 Expertensystem===
+<WRAP column 60%>
+Anwendung mit langer Lebenszeit, die von den Anwendern zur Bearbeitung komplexer Aufgaben verwendet wird. Der Benutzer will eine Vielzahl von Daten gleichzeitig sehen und bearbeiten. Längere Einarbeitungszeiten werden akzeptiert. 
+   * Lassen Sie viel Platz für die Darstellung der Arbeitsgegenstände.
+   * Platzieren Sie Statusinformationen und Werkzeuge an den Rändern.
+   * Die Aufgaben müssen performant und mit möglichst wenigen Arbeitsschritten zu erledigen sein.
+   * Bieten Sie Möglichkeiten zur benutzerspezifischen Konfiguration.
+//Beispiel:<tab>Tabellenkalkulation, Bildbearbeitung, Audio-Schnittplatz//
+</WRAP>
+<WRAP column 35%>
+{{:modul:m322:learningunits:lu01:theorie:lu01-heuristik-experte.png?300}}\\
+//Abb. 1-12: Experten Darstellung//
+</WRAP>
+<WRAP clear></WRAP>
+
+===3.6 Strukturelle Wiederholung===
+<WRAP column 60%>
+Darstellung und Navigation folgen stets dem gleichen visuellen und strukturellen Muster. Durch die permanente Wiederholung werden die Bedeutungen implizit erfasst und die Bedienung intuitiv.
+   * Verwenden Sie Symbole und Dialoge aus dem Betriebssystem-Standard, wann immer dies möglich ist.
+   * Bilden Sie gleichartige Aufgaben im gleichen Interaktionsstil ab.
+   * Führen Sie Standards für Buttons und Kontext-Menüs ein (Kombination, Anordnung, Beschriftungen, Default-Button). 
+   * Verwenden Sie gleiche Fonts und Farben zur Hervorhebung gleicher Bedeutung (Beschriftung, Erläuterung, Kontext der Bearbeitung etc.)
+//Beispiel:<tab>Buch mit gleichartigem Layout aller Kapitel, Standard-Menüs und Standard-Dialoge in Windows-Programmen//
+</WRAP>
+<WRAP column 35%>
+{{:modul:m322:learningunits:lu01:theorie:lu01-heuristik-wiederholung.png?300}}\\
+//Abb. 1-13: Strukturelle Wiederholung von Elementen//
+</WRAP>
+<WRAP clear></WRAP>
+
+===3.7 Gruppen verwandter Dinge===
+<WRAP column 60%>
+Darstellung zusammenhängender Informationen (nach der 7+/-2-Regel). Kleine Informationseinheiten können vom Anwender schnell erkannt werden.
+   * Verwenden Sie visuelle Muster für die Anordnung der Gruppen. 
+   * Setzen Sie die Gruppen durch breitere Zeilen- oder Spaltenabstände voneinander ab. 
+   * Beschränken Sie den Einsatz von Gruppierungsrahmen
+//Beispiel:<tab>Adressblock auf einer Kunden-Maske//
+</WRAP>
+<WRAP column 35%>
+{{:modul:m322:learningunits:lu01:theorie:lu01-heuristik.gruppen.png?200}}\\
+//Abb. 1-14: Gruppierung von Elementen//
+</WRAP>
+<WRAP clear></WRAP>
+
+===3.8 Rückkehr an einen sicheren Ort===
+<WRAP column 60%>
+Rückkehr zu einem konsistenten Ausgangspunkt. Der Anwender kann sich in der Anwendung "verirrt" haben.
+   * Bieten Sie eine Rückkehrmöglichkeit zum letzten konsistenten Zustand an (gesicherte Datei, aktuelle Konfiguration etc.).
+//Beispiel:<tab>Home-Button im Web-Browser, Zurücksetzen-Button in Eingabemasken, Standard-Button in Konfigurationsmasken//
+</WRAP>
+<WRAP column 35%>
+{{:modul:m322:learningunits:lu01:theorie:lu01-heuristik-home.png?200|}}\\
+//Abb. 1-15: Rückkehr an sicheren Ort//
+</WRAP>
+<WRAP clear></WRAP>
+
+===3.9 Statusanzeige===
+<WRAP column 60%>
+Darstellung eines Zustandes. Die Information ist für den Anwender nur gelegentlich interes-sant. Sie muss einfach zu finden sein, darf aber die Haupttätigkeit nicht stören.
+   * Verwenden Sie Symbole. 
+   * Betonen Sie Wichtiges (z.B. durch Farbe). 
+   * Stellen Sie die Information immer an der gleichen Stelle dar. Behalten Sie bei mehreren Statusinformationen stets die gleiche Anordnung bei.
+//Beispiel:<tab>Datei-Download, Installations-Prozedur//\\
+</WRAP>
+<WRAP column 35%>
+{{:modul:m322:learningunits:lu01:theorie:lu01-heuristik-status.png?100|}}\\
+//Abb. 1-16: Status der Bearbeitung//
+</WRAP>
+<WRAP clear></WRAP>
+
+===3.10 Mehrfach-Aktion===
+<WRAP column 60%>
+Auf mehrere gleichartige Objekte soll die gleiche Operation ausgeführt werden. Der Anwender möchte einzelne Bearbeitungsschritte nicht für jedes einzelne Element wiederholen.
+   * Wenn eine Operation dies zulässt, so geben Sie die Möglichkeit zur Mehrfachauswahl von Objekten
+//Beispiel:<tab>Löschen mehrerer Dateien, Verschieben mehrerer Objekte//
+</WRAP>
+<WRAP column 35%>
+{{:modul:m322:learningunits:lu01:theorie:lu01-heuristik-mehrfachfkt.png?250|}}\\
+//Abb. 1-17: Mehrfachaktion auf Dateien//
+</WRAP>
+<WRAP clear></WRAP>
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) René Probst

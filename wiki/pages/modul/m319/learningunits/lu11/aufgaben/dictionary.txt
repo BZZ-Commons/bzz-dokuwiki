@@ -1,0 +1,15 @@
+====== LU11.A01: Listen ======
+===== Auftrag =====
+Im Projekt "FIXME" finden Sie zwei Python-Dateien:
+  * dicts.py: Python-Skript mit den Aufträgen
+  * dicts_test.py: Test-Funktionen
+
+''dicts.py'' enthält eine Reihe von Funktionen, die Elemente einfügen, suchen, löschen, ...
+Mit TODO-Kommentaren ist beschrieben, was Sie jeweils zu tun haben.
+
+<WRAP center round info 60%>
+Ändern Sie keine der vorhandenen Befehle, diese werden für die korrekten Testresultate benötigt.
+</WRAP>
+
+{{tag>M319-C1G M319-C1F M319-C1E}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

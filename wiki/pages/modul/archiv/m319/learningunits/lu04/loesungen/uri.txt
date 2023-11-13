@@ -1,0 +1,76 @@
+====== Lösungsvorschlag: U = R * I======
+<code java>
+import java.util.Scanner;
+
+/**
+ * Calculate  U = R * I
+ *
+ * @author Kevin Maurizi
+ */
+public class URI {
+
+    static Scanner scanner;
+    /**
+     * constructor
+     */
+    public URI() {
+        scanner = new Scanner(System.in);
+    }
+
+    /**
+     * starts the execution
+     *
+     * @param args
+     *            command line arguments
+     */
+    public static void main(String[] args) {
+        URI program = new URI();
+
+        program.calculate();
+        scanner.close();
+    }
+
+    /**
+     * run the userdialog and calculate
+     */
+    private void calculate() {
+
+        String spannung;
+        String widerstand;
+        String stromstaerke;
+        String resultat = "";
+
+        System.out.print("U > ");
+        spannung = scanner.nextLine();
+
+        System.out.print("R > ");
+        widerstand = scanner.nextLine();
+
+        System.out.print("I > ");
+        stromstaerke = scanner.nextLine();
+
+        // Verarbeitung
+        if(spannung.equals("?")){
+            double i = Double.valueOf(stromstaerke);
+            double r = Double.valueOf(widerstand);
+            resultat = "Resultat U = " + i * r + " V";
+        }
+        if(stromstaerke.equals("?")){
+            double u = Double.valueOf(spannung);
+            double r = Double.valueOf(widerstand);
+            resultat = "Resultat I = " + u / r + " A";
+        }
+        if(widerstand.equals("?")){
+            double u = Double.valueOf(spannung);
+            double i = Double.valueOf(stromstaerke);
+            resultat = "Resultat R = " + u / i + " Ohm";
+        }
+
+        // Ausgabe
+        System.out.println(resultat);
+    }
+}
+</code>
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Kevin Maurizi

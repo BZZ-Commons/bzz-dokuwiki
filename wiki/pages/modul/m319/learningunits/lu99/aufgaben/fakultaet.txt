@@ -1,0 +1,42 @@
+====== LU99.A04: Fakultät ======
+//Quelle: [[https://projecteuler.net/problem=20]]//
+
+===== Aufgabe =====
+Der Benutzer gibt eine natürliche Zahl ein.
+Das Programm berechnet die Fakultät dieser Zahl.
+Von diesem Resultat wird die Quersumme berechnet.
+
+=== Mathematik ===
+  * Fakultät bedeutet, dass eine natürliche Zahl mit jeder kleineren natürlichen Zahl multipliziert wird.
+  * Die Quersumme ist die Summe aller Ziffern einer Zahl.
+
+Zum Beispiel: 
+<WRAP center round info 60%>
+10! = 10 * 9 * 8 * 7 * 6 * 5 * 4 * 3 * 2 * 1 = 3628800.
+3 + 6 + 2 + 8 + 8 + 0 + 0 = 27
+</WRAP>
+
+===== Programmlogik =====
+  - Fakultät = 1
+  - Der Benutzer gibt eine natürliche Zahl ein.
+  - Iteration mit einem Zähler von dieser Zahl bis 1:
+    - Multipliziere die Fakultät mit dem Zähler.
+  - Wandle die Fakultät in einen String um.
+  - Quersumme = 0.
+  - Iteration über alle Zeichen des Strings:
+    - Addiere die Ziffer zur Quersumme.
+  - Gib die Quersumme aus.
+
+===== Vorgehen =====
+  - Akzeptieren Sie die Aufgabe im Classroom über den Link im Moodle-Kurs.
+  - Clonen Sie die Aufgabe in PyCharm.
+  - Erstellen Sie das Programm in der Datei ''factorial.py'' mit Python.
+  - Führen Sie einen Commit & Push des fertigen Programms durch.
+
+<WRAP center round info 60%>
+In der Datei "factorial_test.py" finden Sie ein paar Tests.
+Diese können Sie nutzen, um ihre Lösung zu prüfen.
+</WRAP>
+
+{{tag>319-B1F 319-E1F 319-F1F}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

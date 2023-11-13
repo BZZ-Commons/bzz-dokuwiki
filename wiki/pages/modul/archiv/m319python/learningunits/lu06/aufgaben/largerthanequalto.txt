@@ -1,0 +1,46 @@
+====== LU06.A02: Larger Than or Equal To ======
+
+Schreiben Sie ein Programm, das den Benutzer nach zwei ganzen Zahlen fragt und die größere der beiden Zahlen ausgibt. Wenn die Zahlen gleich sind, informiert uns das Programm auch darüber.
+
+Beispielhafte Ausgaben:
+
+<code>
+Give the first number:
+*5*
+Give the second number:
+*3*
+Greater number is: 5
+</code>
+<code>
+Give the first number:
+*5*
+Give the second number:
+*8*
+Greater number is: 8
+</code>
+<code>
+Give the first number: 
+*5*
+Give the second number: 
+*5*
+The numbers are equal!
+</code>
+
+===== Vorlage =====
+<code python>
+def main():
+  # Write your program here
+
+if __name__ == '__main__':
+    main()
+</code>
+
+Anmerkung: Kümmern Sie sich im Moment nicht zu sehr um ''if %%__%%name%%__%% == '%%__%%main%%__'%%:''. Wir brauchen es technisch gesehen nicht für dieses Programm, aber es ist eine gute Übung, es einzubauen, und es wird in späteren Übungen klarer werden.
+
+----
+{{tag>M319-F3G M319-F3F M319-F3E M319-F1F M319-F1F}}
+
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/ch/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Kevin Maurizi 
+
+Diese Aufgabe ist eine übersetzte und angepasste Aufgabe von [[https://scott3142.uk/|Scott Morgan]], verwendet unter CC BY NC SA.
+

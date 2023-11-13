@@ -1,0 +1,55 @@
+====== LU04b - Kabelbasierende Netzwerke ======
+
+Für die Übertragung der Daten in einem Netzwerk wird ein sog. Übertragungsmedium benötigt. Bei einem Netzwerk, das auf Kabeln basiert, spricht man in diesem Fall von einer «gebundenen» Übertragung. Die Datenübertragung wird mittels elektrischer (Strom) oder optischer Signale vorgenommen. Diese Signale sind auf das jeweilige Übertragungsmedium gebunden. Für die Realisation eines Netzwerks stehen verschiedene Kabeltypen zur Auswahl. Jeder Kabeltyp bessitzt unterschiedliche spezifische Eigenschaften. Jede Übertragung im Kabel wird durch bestimmte Faktoren beeinflusst. Diese Faktoren müssen besonders beachtet werden
+
+==== Der Widerstand eines Übertragungsmediums (Dämpfung) ====
+
+Die Signale in einem Kabel sind entweder elektrischer Strom (Twisted Pair, Koaxialkabel) oder Licht (Glasfaserkabel). Jedes Übertragungsmedium besitzt einen inneren Widerstand, den sog. Leitungswiderstand (Einheit Ohm Ω). Je nach Material des Übertragungsmediums variiert der Leitungswiderstand recht deutlich. Je grösser der Widerstand, desto mehr Energie wird innerhalb des Übertragungsmediums während der Übertragung vernichtet, d. h., die Signalstärke nimmt ab, sprich wird gedämpft. Aus diesem Grund muss bei jedem Übertragungsmedium dessen maximal zulässige Länge beachtet werden.
+
+==== Elektromagnetische Störungen (Magnetfelder) ====
+
+Elektromagnetische Störfelder (Magnetfelder, EMI), können die Übertragung innerhalb eines Kupfer-Kabels (Twisted Pair, Koaxialkabel) empfindlich stören, im Extremfall sogar verunmöglichen. Die Signale in einem Übertragungsmedium können durch starke Magnetfelder «verformt» werden. Starke Magnetfelder entstehen durch grosse Elektromotoren (z. B. Liftmotor). Aber auch normale Handys verursachen Magnetfelder, sog. Elektrosmog, der zu Störungen bei der Datenübertragung führen kann.
+
+----
+
+=== Funktionsweise ===
+
+Fliesst elektrischer Strom durch einen metallischen Leiter (Draht), so bildet sich ein Magnetfeld um diesen Leiter. Dieses Magnetfeld kann die Übertragung in einem benachbarten Leiter (Ader) empfindlich stören. Dieser unerwünschte Effekt wird «Übersprechen» (Crosstalk, Abk. XT) genannt.
+
+{{:modul:m117:learningunits:lu04:magnetfeld.jpg?200|}}
+
+----
+
+=== 1. Massnahme: Verdrillen (nur bei Twisted Pair) ===
+
+Werden nun die Aderpaare Tx (Transmit, Senden) und Rx (Receive, Empfangen) miteinander verdrillt, so heben sich die Magnetfelder gegenseitig wieder auf.
+
+{{:modul:m117:learningunits:lu04:verdrillen.jpg?200|}}
+
+----
+
+=== 2. Massnahme: Abschirmung ===
+
+Der Fluss der Feldlinien, vom Nord- zum Süd-Pol eines Magneten, nimmt immer den Weg des geringsten Widerstands. {{:modul:m117:learningunits:lu04:abschirmung1.jpg?200|}}
+
+Befindet sich im Feldlinienfluss ein Körper aus Metall, so fliessen die Feldlinien durch diesen Körper. Der Widerstand des Flusses durch den Metallkörper ist bedeutend geringer als der Fluss durch die Luft. {{:modul:m117:learningunits:lu04:abschirmung2.jpg?200|}}
+
+Dieses physikalische Prinzip macht sich eine Abschirmung aus Metall zunutze. Der Fluss der Feldlinien wird durch das Metall bzw. die Abschirmung «umgeleitet». Die Fläche (F) innerhalb der Abschirmung ist somit frei von elektromagnetischen Feldlinien (sog. Faradaykäfig). {{:modul:m117:learningunits:lu04:abschirmung3.jpg?200|}}
+
+
+==== Gegenüberstellung: Twisted-Pair-/Glasfaserkabel ====
+^ Eigenschaft                               ^ Twisted Pair  ^ Glasfaser    ^ Bemerkung                                                                                          ^
+| Anfälligkeit gegen äussere Störeinflüsse  | Hoch          | Sehr gering  | LWL ist immun gegen Magnetfelder                                                                   |
+| Max. Übertragungskapazität                | Hoch          | Sehr hoch    |                                                                                                    |
+| Max. Übertragungsdistanz                  | Gering        | Sehr hoch    | TP ~100m; LWL > 300km                                                                              |
+| Anschaffungskosten                        | Tief          | Hoch         | LWL ca. doppelt so teuer wie TP                                                                    |
+| Kosten für Kabelverlegung                 | Mittel        | Hoch         | LWL empfindlich gegen mechanische Einwirkungen, keine enge Radien möglich.                         |
+| Abhörsicherheit                           | Gering        | Sehr hoch    | Auch ein LWL kann von aussen abgehört werden, der technische Aufwand dazu ist aber enorm hoch  |
+
+
+----
+
+{{tag>m117}}
+
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Andre Probst
+

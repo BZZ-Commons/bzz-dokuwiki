@@ -1,0 +1,27 @@
+====== LU06a - Versionskontrolle ======
+
+===== Was ist ein Versionskontrollsystem? =====
+Versionskontrollsysteme sind Werkzeuge, die von Softwareentwicklern verwendet werden, um Änderungen an einem Projekt zu verfolgen und zu verwalten. Mit diesen Tools wird festgehalten, welche Änderungen vorgenommen wurden, wer sie vorgenommen hat und wann sie vorgenommen wurden. Auf diese Weise ist es einfach, auf frühere Versionen eines Dokuments zurückzugreifen und eventuelle Fehler zu erkennen.
+
+Es gibt drei Haupttypen von VCS:
+  * Lokales Versionskontrollsystem
+  * Zentralisiertes Versionskontrollsystem
+  * Verteiltes Versionskontrollsystem
+
+==== Lokales VCS ====
+Ein lokales Versionskontrollsystem ist eine Art von VCS, das eine lokale Datenbank auf Ihrem Computer verwendet, um die vorgenommenen Änderungen zu speichern. Es speichert sie als Patch, wobei jeder Patch die Änderungen enthält, die seit den vorherigen Versionen an der Datei vorgenommen wurden, und nicht die gesamte Datei. Um zu sehen, wie die Datei zu einem bestimmten Zeitpunkt aussah, müssen Sie also alle relevanten Patches hinzufügen, um das Dokument zu erhalten.
+
+{{ :modul:m319:learningunits:lu06:localvcs.png?600 |}}
+
+==== Zentralisiertes VCS ====
+Ein zentralisiertes Versionskontrollsystem verwendet einen zentralen Server, um das Repository zu speichern. Daher muss jeder Entwickler mit dem zentralen Server verbunden sein, um auf das Repository zugreifen und Änderungen vornehmen zu können. Auch wenn es recht einfach ist, ein einzelnes Repository auf dem Server zu verwalten, besteht bei einem Ausfall des zentralen Servers die Gefahr, dass die Daten verloren gehen, was ein großer Nachteil ist. Ein Beispiel für ein zentralisiertes VCS ist Apache Subversion, abgekürzt SVN.
+
+{{ :modul:m319:learningunits:lu06:cvcs.png |}}
+
+
+==== Verteiltes VCS ====
+Im Gegensatz zum zentralisierten VCS hat jeder Mitwirkende seine eigene lokale Kopie des Haupt-Repositorys. So können sie Änderungen, Aktualisierungen und Übertragungen an ihrem lokalen Repository vornehmen, ohne das Haupt-Repository zu beeinträchtigen. Die Mitwirkenden kopieren das Haupt-Repository, indem sie es klonen. Außerdem müssen sie die Änderungen stagen, commiten und pushen, um sie für andere Mitwirkende zugänglich zu machen.
+
+{{ :modul:m319:learningunits:lu06:dvcs.png |}}
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Kevin Maurizi

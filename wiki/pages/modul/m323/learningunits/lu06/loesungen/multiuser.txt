@@ -1,0 +1,16 @@
+====== LU06.L07 - Multiuser Todo-Liste ======
+===== TodoItem  =====
+''todoItem'' angepasst um die ''user_id'' zu speichern.
+{{gh>https://github.com/templates-python/m323-lu06-a07-multiuser/blob/solution/todoItem.py}}
+
+===== TodoDao =====
+''todoDao'' angepasst um die ''user_id'' zu berücksichtigen.
+{{gh>https://github.com/templates-python/m323-lu06-a07-multiuser/blob/solution/todoDao.py}}
+
+===== todoBlueprint =====
+''todoBlueprint'' angepasst um jeweils die ''user_id'' zu übergeben und alle funktionen mit ''@login_required'' zu ergänzen.
+{{gh>https://github.com/templates-python/m323-lu06-a07-multiuser/blob/solution/todoBlueprint.py}}
+
+===== main =====
+''main'' angepasst die generierung der demo-daten korrekt zu machen.
+{{gh>https://github.com/templates-python/m323-lu06-a07-multiuser/blob/solution/main.py}}

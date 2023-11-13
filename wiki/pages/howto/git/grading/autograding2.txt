@@ -1,0 +1,182 @@
+====== Bewertung vom Autograding in Moodle übernehmen ======
+
+===== Voraussetzungen =====
+==== GitHub Benutzername im Moodle-Profil ====
+
+Die Lernenden müssen Ihren GitHub-Benutzernamen in ihrem Moodle-Profil eintragen.
+Unter "GitHub Classroom" befindet sich das Feld "GitHub Benutzername".
+
+{{:howto:git:grading:classroom_moodle_user.png?400|}}
+
+===== Workflow in Template =====
+  - Erstelle eine Kopie des Repositorys "BZZ-Common/pyhton-template" um alle benötigten Dateien zu erhalten:
+    * ''.github/workflows/classroom.yml''
+    * ''.github/workflows/copyissues.yml'' (wird für das automatische Bewerten nicht benötigt)
+    * ''.github/classroom/autograding.json''
+  - Alternativ kannst du die Dateien/Ordner auch manuell erstellen:
+    - Öffne das Repository mit dem Template für das Assignment.
+    - Erstelle die Ordner ''.github/classroom'' und ''.github/workflows''.
+    - Erstelle die Datei ''classroom.yml'' in ''.github/workflows''. \\ <code yml>
+name: GitHub Classroom Workflow
+
+on: push
+
+permissions:
+  checks: write
+  issues: write
+  actions: read
+  contents: read
+
+jobs:
+  copy-issues:
+    if: ${{ contains(github.actor, 'classroom') }}
+    uses: BZZ-Commons/workflows/.github/workflows/setup.yml@main
+    with:
+      SOURCE_REPO: templates-python/m319_lu04_a00_classroom  # CHANGE owner/name of the repo with the issues
+      TARGET_REPO: ${{ github.repository }}
+      ADD_LABELS: "false"
+    secrets:
+      GHSECRET: ${{ secrets.GITHUB_TOKEN }}
+
+  grading:
+    if: ${{ !contains(github.actor, 'classroom') }}
+    uses: BZZ-Commons/workflows/.github/workflows/grading.yml@main
+    with:
+      MOODLE: false  # CHANGE true=export grade to moodle
+    secrets: inherit
+</code>
+    - Erstelle die Datei ''autograding.json'' in ''.github/classroom''.
+    - Füge deine Testfälle in diese Datei ein.
+
+=== Beispiel für Testfälle ===
+<code json>
+{
+  "tests": [
+    {
+      "name": "test_main1",
+      "setup": "sudo -H pip3 install -r requirements.txt",
+      "run": "pytest -v  -k \"test_main1\"",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "test_main2",
+      "setup": "sudo -H pip3 install -r requirements.txt",
+      "run": "pytest -v  -k \"test_main2\"",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    }
+  ]
+}
+</code>
+
+===== Classroom Assignment =====
+  - Erstelle ein neues Assignment in GitHub Classroom.
+    * Der Name des Assignments wird in Kleinbuchstaben und snake_case geschrieben.
+    * GitHub Classroom zeigt den Prefix an, welcher für die Repositories der Lernenden verwendet wird: Zum Beispiel "m319-lu08-a01-multiply".
+    * Wähle das Template aus dem letzten Abschnitt aus.
+
+<WRAP center round alert 60%>
+Der Prefix für die Repos ist nicht immer 1:1 der Name des Classrooms.
+Aktuell (Juli 2023) werden offenbar Underscores durch Bindestriche ersetzt.
+</WRAP>
+
+===== Aufgabe in Moodle =====
+  - Erstelle eine Aufgabe in Moodle.
+  - Trage den Namen des Classroom Assignments unter "GitHub Classroom" => "Classroom Assignment" ein.
+
+{{:howto:git:grading:classroom_moodle_assignment.png?400|}}
+
+
+TODO Das Assignment sollte wie das Repo Kleingeschrieben werden.
+===== Technische Doku =====
+==== Activity modules ====
+^ Anzeige ^ Short name ^ fieldid ^
+| Classroom Assignment | classroom_assignment | 2 |
+| Classroom Template   | classroom_template | ? |
+| GitHub Template | gh_template | ? |
+| Classroom Link | classroom_link| ? |
+
+=== mdl_customfield_field ===
+  * id
+  * shortname
+
+=== mdl_customfield_data ===
+  * id
+  * fieldid (FK zu mdl_customfield_field)
+  * instanceid (FK courseid)
+  * value
+
+==== Course ====
+^ Anzeige ^ Short name ^ fieldid ^
+| GitHub Classroom | classroom_name | 1 |
+
+=== mdl_customfield_field ===
+  * id
+  * shortname
+
+=== mdl_customfield_data ===
+  * id
+  * fieldid (FK zu mdl_customfield_field)
+  * instanceid (FK courseid)
+  * value
+
+==== User ====
+^ Anzeige ^ Short name ^ fieldid ^
+| GitHub Benutzername | github_username | 1 |
+
+=== mdl_user_info_field ===
+  * id
+  * shortname
+
+=== mdl_user_info_data ===
+  * userid
+  * fieldid  (FK auf id in mdl_user_info_field)
+  * data
+
+=== mdl_assignfeedback_comments ===
+  * id
+  * assignment (FK auf id in mdl_assign)
+  * grade 
+  * commenttext
+  * commentformat
+
+
+===== Use Cases =====
+==== Bewertung aus Repo übernehmen (Umgesetzt) ====
+Lernender macht einen Push ins Repository.
+Die GitHub Actions bewerten die Abgabe und vergeben eine Punktzahl.
+
+  - Workflow-Step in GitHub Actions
+  - FGIT API
+  - Pythonscript via CRON
+
+==== Classroom anlegen ====
+Im Moodle-Kurs wird der Classroom-Name (''owner/name'') eingetragen.
+  - Prüfen ob der Classroom existiert
+  - Falls nein: Anlegen des Classrooms
+  - Loop über Teilnehmer
+    - In Classroom als Student eintragen (falls noch nicht existiert.
+
+=== Probleme ===
+  * Kein API / CLI von GitHub verfügbar
+  * Eintragen der Teilnehmer bei Änderungen an den Teilnehmern, z.B. neuer Lernender
+
+==== Assignment im Classroom erstellen ====
+
+In der Moodle-Aktivität (z.B. Aufgabe) wird ein Template-Repo eingetragen.
+  - Lesen des Classrooms aus Kurs
+  - Prüfen ob ein Assignement mit diesem Namen existiert
+  - Falls nein: 
+    - Assignment anlegen
+    - Link zum Assignment in Moodle-Aktivität übertragen
+
+
+=== Probleme ===
+  * Kein API / CLI von GitHub vorhanden

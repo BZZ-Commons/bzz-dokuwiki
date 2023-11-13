@@ -1,0 +1,77 @@
+====== LU01b - Teststufen ======
+===== Einleitung =====
+Die Teststufen oder Testzyklen eines Projekts, legen den Umfang der zu testenden Funktionalität fest.
+Dabei beginnen wir in der Regel beim kleinsten Baustein und testen nach und nach grössere Teile der Software.
+
+=== Metapher ===
+
+Zur Veranschaulichung vergleiche ich die unterschiedlichen Tests mit dem Testen einer mechanischen Armbanduhr.
+
+===== Komponententest (Unit-Test)=====
+=== Metapher ===
+{{http://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Mouvement_de_montre.jpg/120px-Mouvement_de_montre.jpg}}
+Bei einer Armbanduhr werden die Einzelteile wie Zahnräder, Federn, Zeiger, usw. geprüft.
+Der Komponententest eines Zahnrads prüft:
+  * Gibt es Abweichungen beim Umfang des Zahnrads, der Anzahl und Winkel der Zähne?
+  * Sind Fehler im Material vorhanden?
+  * Wie stark kann das Zahnrad belastet werden, bevor es bricht?
+
+=== Software ===
+
+Beim Komponententest werden einzelne Bausteine der Software getestet.
+Diese Tests werden vom Softwareentwickler durchgeführt, um die Lauffähigkeit und Korrektheit einzelner Teile der Software zu prüfen.
+Jede Methode, Iteration und Selektion wird beim Komponententest systematisch geprüft.
+Wir suchen Fehler in den Resultaten der einzelnen Komponenten.
+Teilweise werden sogar absichtlich technische Fehlersituationen erzwungen, um das Verhalten der Software zu prüfen.
+
+Die Testfälle und Testdaten werden aufgrund des inneren Aufbaus der Komponenten definiert (Glassbox Test).
+
+===== Integrationstest =====
+=== Metapher ===
+{{http://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Jean_Lassale_Calibre_2000_Back.JPG/120px-Jean_Lassale_Calibre_2000_Back.JPG}}
+Bei der Armbanduhr werden nun die verschiedenen Baugruppen wie Uhrwerk, Ziffernblatt, ... zusammen gebaut.
+Der Integrationstest prüft, ob die Zahnräder, Schrauben und Federn richtig zusammen arbeiten.
+  * Läuft das Uhrwerk gleichmässig und in der gewünschten Geschwindigkeit?
+  * Laufen die Zeiger ohne Widerstand über das Ziffernblatt?
+
+=== Software ===
+
+Nachdem die Komponenten einzeln getestet wurden, wird im Integrationstest die Zusammenarbeit der Komponenten getestet.
+In dieser Teststufe werden hauptsächlich die Schnittstellen zwischen den Komponenten geprüft.
+Wir suchen Fehler in den Ergebnissen über den ganzen Ablauf mehrere Teile hinweg.
+
+Beim Integrationstest werden sowohl Glassbox- als auch Blackbox-Tests angewandt.
+
+===== Systemtest =====
+=== Metapher ===
+{{http://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Modern_Classic_Back_View.jpg/120px-Modern_Classic_Back_View.jpg}}
+Der Systemtest erfolgt, nachdem die Uhr vollständig zusammen gebaut wurde.
+  * Läuft die Uhr korrekt und ohne übermässiges Ticken?
+  * Passt das vorgesehene Armband zum Gehäuse?
+  * Trägt sich die Uhr angenehm?
+
+=== Software ===
+
+Beim Systemtest wird die Zusammenarbeit zwischen unserer Software und den umliegenden Systemen getestet.
+Dabei werden auch nicht-funktionale Aspekte wie Benutzerfreundlichkeit, Performance, ... geprüft.
+
+Häufig wird der Systemtest durch ein unabhängiges Team von Spezialisten durchgeführt.
+Diese Test-Spezialisten definieren die Testfälle aufgrund der Anforderungen und technischen Spezifikationen.
+Dabei wird der Aufbau der Software und Ihrer Komponenten nicht berücksichtigt (Blackbox Test).
+
+
+===== Abnahmetest =====
+=== Metapher ===
+Beim Abnahmetest wird der Kunde die Uhr anprobieren.
+Er prüft ob die Uhr seinen Wünschen (Anforderungen) entspricht.
+Ist der Kunde zufrieden, wird er die Uhr kaufen.
+
+=== Software ===
+
+Beim Abnahmetest wird wie beim Systemtest die Software und ihr Umfeld als Ganzes geprüft.
+Im Gegensatz zu den bisherigen Teststufen, wird der Abnahmetest durch den Kunden bzw. Auftraggeber durchgeführt.
+In der Regel ist der Abnahmetest Voraussetzung für die Freigabe und Bezahlung der Software.
+
+----
+{{tag>M450-LU01}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

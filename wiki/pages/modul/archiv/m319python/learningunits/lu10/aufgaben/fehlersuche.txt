@@ -1,0 +1,47 @@
+====== LU10.A01: Syntaxfehler-1 ======
+
+===== Programmaufgabe =====
+
+Das Programm ''m319_lu10_marks'' berechnet die Durchschnittsnote aus mehreren Noten.
+Falls mehr als 1 Note eingegeben wird, so gilt die tiefste Note als Streichnote.
+
+Leider hat der Programmierer keine Ahnung von Python und das Programm ist voll von Syntaxfehlern.
+Nicht alle diese Fehler werden von Ihrer IDE erkannt.
+
+<code python>
+def main():
+    mark_count = '0'
+    mark_total = '0.0'
+    mark_minimum = '99.9'
+
+    mark = float(input('Note eingeben > ')
+    while mark > 0.0
+        mark_count += 1
+            mark_total += marks
+        if mark < mark_minimum:
+            mark_minimum = mark
+        mark = float(input('Note eingeben > ')))
+
+    if mark_count greater_than 1:
+        mark_total =- mark_minimum
+        mark_count =- 1
+    average = mark_totaL : mark_count
+
+    print 'Notenschnitt: ' & average
+
+
+
+
+if __name__ == '__main__':
+    main()
+</code>
+
+==== Vorgehen ====
+  - Akzeptieren Sie das Assignment im GitHub Classroom
+  - Klonen Sie ihr Repository in PyCharm.
+  - Korrigieren Sie den/die Fehler im Sourcecode.
+  - Führen Sie die Tests in ''mark_test.py'' aus.
+  - Falls alle Tests erfolgreich sind: Commit & Push
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

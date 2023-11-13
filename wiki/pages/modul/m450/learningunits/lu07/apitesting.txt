@@ -1,0 +1,12 @@
+====== LU07b - API-Tests ======
+<WRAP center round info 60%>
+Mit API-Tests prüfen wir die Leistung, Funktionalität, Zuverlässigkeit und Sicherheit unserer Programmierschnittstellen.
+</WRAP>
+
+Im Gegensatz zu Unit Tests prüfen wir bei API-Tests nicht den inneren Aufbau einer Software.
+Wir wollen herausfinden, ob die API bei einem bestimmten Aufruf die korrekte Antwort liefert.
+
+In diesem [[https://www.lucidchart.com/blog/de/api-tests-grundlagen-und-best-prectices|Blogartikel von Lucidchart]] findest du einen guten Überblick über die Bedeutung von API-Tests.
+----
+{{tag>M450-LU07}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

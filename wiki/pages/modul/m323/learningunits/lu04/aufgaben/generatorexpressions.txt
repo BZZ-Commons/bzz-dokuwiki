@@ -1,0 +1,46 @@
+====== LU04.A17 - Filtern mit Generator Expressions ======
+
+<WRAP center round todo 60%>
+Erstellen Sie eine Generator Expression, die einen Benutzer anhand seiner ID filtert.
+</WRAP>
+
+===== Code Vorlage =====
+
+Gegeben ist eine Liste von Benutzer-Dictionarys:
+
+<code python>
+
+def get_user_by_id(user_list, user_id):
+    """
+    Gibt das Benutzer-Dictionary zurück, das der angegebenen ID entspricht.
+    Verwenden Sie eine Generator-Expression und die Funktion next().
+    
+    Args:
+    - user_id (int): Die ID des gesuchten Benutzers.
+    - user_list (list): Die Liste der Benutzer-Dictionarys.
+
+    Returns:
+    - dict: Das Dictionary des Benutzers mit der angegebenen ID. Wenn kein Benutzer gefunden wird, gibt die Funktion None zurück.
+    """
+    pass
+
+
+if __name__ == '__main__':
+    users = [
+        {'id': 1, 'name': 'Alice'},
+        {'id': 2, 'name': 'Bob'},
+        {'id': 3, 'name': 'Charlie'},
+        {'id': 4, 'name': 'David'}
+    ]
+
+    # Testen Sie get_user_by_id
+    print(get_user_by_id(users,3))
+</code>
+
+===== Aufgabe =====
+
+Ihre Aufgabe ist es, eine Funktion zu schreiben, die mit Hilfe einer Generator Expression das ''users''-Array filtert und das passende Dictionary zurückliefert. Verwenden Sie die ''next()'' Funktion, um den gefilterten Benutzer auszugeben. Wenn kein Benutzer gefunden wird, sollte None zurückgegeben werden.
+
+----
+<nodisp>https://github.com/templates-python/m323-lu04-a17-generatorexpression</nodisp>
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/ch/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Kevin Maurizi 

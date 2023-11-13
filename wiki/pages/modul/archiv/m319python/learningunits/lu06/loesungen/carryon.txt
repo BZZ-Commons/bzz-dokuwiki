@@ -1,0 +1,11 @@
+====== LU06.L08: Carry on? ======
+<code python>
+def main():
+    carry_on = input('Carry on?\n')
+    while carry_on != 'no':
+        carry_on = input('Carry on?\n')
+
+
+if __name__ == '__main__':
+    main()
+</code>

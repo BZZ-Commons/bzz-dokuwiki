@@ -1,0 +1,309 @@
+====== LU09a - Funktionen ======
+
+===== Sinn von Funktionen =====
+
+Wieso soll man überhaupt ein Programm in Funktionen aufteilen? 
+Zunächst bedeutet das schreiben der Funktion scheinbar einen Mehraufwand. 
+Der Grund wird offensichtlich, wenn man ein wenig weiter schaut.
+
+==== Wiederhole Dich nicht (DRY) ====
+Das DRY-Prinzip lautet:  Don't repeat yourself!
+Jedesmal wenn Sie den gleichen Code mehrfach schreiben, erhöht sich das Risiko von Fehlern.
+Angenommen Sie haben in Ihrem Programm den gleichen Codeteil 5x geschrieben.
+Nun stellen Sie fest, dass ein Fehler in diesem Codeteil ist oder Sie wollen etwas ergänzen.
+So ist die Gefahr gross, dass Sie die Korrektur 4x vornehmen und die letzte Stelle vergessen.
+
+Daher wird alles, was Sie mehrfach benötigen, in eine Funktion gepackt.
+
+==== Teilaufgaben erhöhen die Übersicht ====
+Es ist einfacher ein Programm zu verstehen, wenn es in viele, klar definierte Teilaufgaben unterteilt ist.
+Ein Sourcecode mit mehreren hundert Zeilen an einem Stück, ist extrem schwer zu lesen.
+
+==== Wartung ====
+ 
+Nachdem ein Programm geschrieben wurde, ist es oftmals jahrelang im Einsatz. 
+Während dieser Zeit müssen Fehler korrigiert und weitere Funktionen eingebaut werden. 
+Durch die Abgrenzung von Teilaufgaben wird das Programm übersichtlicher. 
+Es ist auch Jahre später viel einfacher, Änderungen vorzunehmen. 
+
+==== Recycling ====
+
+Funktionen können sehr einfach wiederverwendet werden. 
+Sie müssen also nicht jedes mal das ganze Programm neu erfinden. 
+Vielmehr können sie Teile aus bestehenden Programmen übernehmen.
+ 
+Beispielsweise stehen in Python Dutzende von Bibliotheken mit vorgefertigten Funktionen zur Verfügung.
+Diese Funktiomnen hat ein anderer Softwareentwickler erstellt und wir können Sie nun nutzen.
+Damit ersparen wir uns viele Stunden Arbeit.
+
+===== Vorgehen =====
+<WRAP center round box 80%>
+
+=== Gedankenspiel: Auftrag einem Mitarbeiter erteilen ===
+
+Sie wollen einem Kollegen den Auftrag erteilen, ihnen einen Kaffee aus dem Automaten zu holen. 
+Dieser Kollege weiss, wo der Automat steht und wie man den Kaffeeautomaten bedient.
+  * Was müssen sie dem Kollegen alles mitteilen bzw. mitgeben?
+  * Was wollen sie erhalten, wenn der Auftrag erledigt ist?
+
+== Lösungsidee ==
+
+<WRAP center round box 60%>
+Was muss ich dem Kollegen mitteilen bzw. mitgeben?
+    * Ob ich einen Kaffee oder einen Espresso möchte.
+    * Ob ich Rahm und/oder Zucker möchte.
+    * Das Geld für den Automaten.
+    * Meine Kaffeetasse.
+Was will ich erhalten?
+    * Meine Kaffeetasse mit dem gewünschten Kaffee drin.
+</WRAP>
+
+Fassen wir das in Pseudocode zusammen könnte der Auftrag in etwa so aussehen:
+<WRAP center round box 60%>
+<code>
+money = 4.50
+size = "Espresso"
+cream = False
+sugar = True
+cup = Cup()
+
+coffee = colleague.bring_coffee(money, size, cream, sugar, cup)
+
+</code>
+</WRAP>
+</WRAP>
+
+  
+
+
+===== Funktion realisieren =====
+
+Nun gehen Sie daran, die Funktion zu realisieren.
+Dabei empfiehlt es sich, gezielt vorzugehen:
+
+  - Funktionsblock definieren
+  - Dokumentationszeichenkette (docstring)
+  - Logik programmieren
+
+==== 1. Funktionsblock definieren ====
+=== Bezeichner der Funktion definieren ===
+Als ersten Schritt überlegen Sie sich, welche Teilaufgabe diese Funktion erledigen soll.
+Diese Teilaufgabe muss sich in einem kurzen Satz prägnant umschreiben lassen.
+Unklare oder schwammig definierte Teilaufgaben führen in der Regel zu schlechten Funktionen.
+
+  * Vermeiden Sie Füllwörter wie Ding, etwas, machen, ...
+  * Eine Methode hat genau eine Aufgabe => Beschreibungen mit **und** bzw. **oder** vermeiden.
+
+Aus der Definition der Aufgabe lässt sich auch ein sinnvoller Name für die Funktion ableiten.
+
+==Beispiele:==
+  * Beschreibung: Die Methode gibt einen String an der aktuellen Cursorposition aus. 
+    * Name: ''put_string''
+
+  * Beschreibung: Die Methode prüft, ob die Eingabe des Benutzers eine Zahl ist.
+    * Name: ''is_number''
+
+Aus dem Namen der Funktion soll sich also auch der Zweck der Funktion herleiten lassen (Sprechend sein). Funktionsnamen sind klein geschrieben. Handelt es sich um mehr als ein Wort, so ist die snake_case_schreibweise angebracht. 
+Jede Funktionsdefinition beginnt mit dem Wort ''def'' um Python anzuzeigen, dass eine neue Funktion definiert wird.
+
+<code python>
+def put_string():
+    ...
+</code>
+
+
+=== Parameter festlegen ===
+Zur Schnittstelle gehören auch die Parameter/Argumente, welche der Aufrufer an die Funktion weiter gibt.
+Jeder Parameter benötigt einen einmaligen Bezeichner
+
+<code python>
+def check_login(username, password): # Korrekte Bezeichner
+    ...
+
+def check_name_identical(name, name): # führt zu einem Fehler, da die Parameter identische Bezeichner haben
+</code>
+ 
+Zu jedem Paramter in der Schnittstelle wird innerhalb der Funktion automatisch eine lokale Variable deklariert.
+Im Beispiel ''check_login'' stehen also innerhalb der Methode die Referenzvariablen ''username'' und ''password'' zur Verfügung.
+
+Beim Aufruf der Funktion gibt der Aufrufer die entsprechenden Werte für diese Variablen mit.
+Diese Werte werden automatisch in die entsprechenden lokalen Variablen gespeichert.
+
+Das ist die Codezeile mit ''def'', dem Bezeichner und eventuellen ''(''Parameter/n'')'' abgeschlossen mit einem '':'':
+
+<code python>
+def is_number(number):
+    ...
+</code>
+
+<WRAP center round tip 60%>
+Alles was jetzt in die Funktion gehört muss identisch eingerückt sein. Normalerweise werden dafür 4 Leerzeichen verwendet.
+</WRAP>
+
+
+
+==== 2. Dokumentationszeichenkette (docstring) ====
+Nun kommt der Kommentarblock mit den Angaben zur Funktion. 
+In vielen Entwicklungswerkzeugen wird ein Teil dieses Kommentarblocks [[howto:pycharm:docstring|automatisch]] erzeugt.
+Erstellen Sie dazu drei Anführungzeichen ''"""'' unterhalb der Funktionsdeklaration und drücken Sie ''enter''
+
+<code python>
+
+def is_big(number):
+    """
+    
+    :param number: 
+    :return: 
+    """
+
+}
+</code>
+
+Ergänzen Sie nun den generierten Docstring mit einer aussagekräftigen Beschreibung und der Beschreibung der Parameter und des Return-Wertes.
+Falls sie keinen Return-Wert geplant haben, schreiben Sie ''None'' hinter '':return:''
+
+<code python>
+def is_big(number):
+    """
+    Checks if a given number is a big number
+    :param number (int): the number to check
+    :return (bool): True or False depending on the size of the number
+    """
+    
+    
+def say_hello():
+    """
+    Just says 'Hello'
+    :return: None
+    """
+    
+    
+def multiply(factor1, factor2):
+    """
+    Multiplies the two numbers factor1 * factor2
+    :param factor1 (float): the first number
+    :param factor2 (float): the second number
+    :return product (float): product of the multiplication
+    """
+</code>
+
+<WRAP center round info 60%>
+Können Sie die ''docstrings'' nicht automatisch erzeugen, folgen Sie dieser [[howto:pycharm:docstring|Anleitung]].
+</WRAP>
+
+
+<WRAP center round tip 60%>
+Weitere Ergänzungen zu den Kommentaren finden Sie in [[https://peps.python.org/pep-0257/|PEP 257]] oder in den [[howto:codingstandards:04-kommentare|Coding-Guidelines]] des BZZ
+</WRAP>
+
+==== 3. Logik programmieren ====
+Zuletzt programmieren Sie die Logik der Funktion.
+Betrachten Sie jede Methode wie ein eigenständiges kleines Programm, mit:
+  * Variablen
+  * Anweisungen
+  * Returnwert
+
+<code python>
+def is_big(number):
+    """
+    Checks if a given number is a big number
+    :param number (int): the number to check
+    :return (bool): True or False depending on the size of the number
+    """
+    threshold = 1000000
+    
+    if number > threshold:
+        return True
+    else:
+        return False
+        
+        
+def say_hello():
+    """
+    Just says 'Hello'
+    :return: None
+    """
+    print('Hello')
+    
+    
+def multiply(factor1, factor2):
+    """
+    Multiplies the two numbers factor1 * factor2
+    :param factor1 (float): the first number
+    :param factor2 (float): the second number
+    :return product (float): product of the multiplication
+    """
+    product = factor1 * factor2
+    return product
+    
+</code>
+
+
+===== Methoden aufrufen =====
+Rufen wir die Funktion nun auf, so müssen wir darauf achten, dass die Funktion **vor** dem Aufruf deklariert (geschrieben) ist.
+
+Beispiel:
+<WRAP center round box 60%>
+<code python>
+def is_big(number):
+    """
+    Checks if a given number is a big number
+    :param number (int): the number to check
+    :return (bool): True or False depends on the size of the number
+    """
+    threshold = 1000000
+    
+    if number > threshold:
+        return True
+    else:
+        return False
+    
+def main():
+    is_it = is_big(123)
+    print(is_it)
+    
+if __name__ == '__main__':
+    main()
+</code>
+<code>
+False
+</code>
+</WRAP>
+
+<WRAP center round important 60%>
+**Hinweis:** In Python sollte die Funktionsdefinition immer vor dem Funktionsaufruf stehen. Andernfalls erhalten wir einen Fehler. Zum Beispiel:
+
+<WRAP center round box 90%>
+<code python>
+def main():
+    is_it = is_big(123)
+    print(is_it)
+
+
+if __name__ == '__main__':
+    main()
+    
+    
+def is_big(number):
+    """
+    Checks if a given number is a big number
+    :param number (int): the number to check
+    :return (bool): True or False depends on the size of the number
+    """
+    threshold = 1000000
+
+    if number > threshold:
+        return True
+    else:
+        return False
+</code>
+
+<color #ed1c24># NameError: name 'is_big' is not defined.</color> 
+</WRAP>
+</WRAP>
+
+
+----
+{{tag>M319-F2G M319-F2F M319-F2E}}
+
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/ch/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Kevin Maurizi 

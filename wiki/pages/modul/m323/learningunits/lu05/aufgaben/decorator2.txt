@@ -1,0 +1,29 @@
+====== LU05.A11 - Decorator mit Benutzerobjekten ======
+<WRAP center round todo 60%>
+Erstellen Sie einen Decorator mit Parametern, der eine Funktion nur dann ausführt, wenn das Berechtigungslevel des Benutzers ausreicht.
+</WRAP>
+
+===== Aufgabenstellung =====
+Ihr Ziel ist es, einen Decorator namens ''check_permission'' zu schreiben. Der Decorator nimmt einen Parameter ''required_permission'' und führt die dekorierte Funktion nur aus, wenn das Berechtigungslevel des Benutzerobjekts (''user.permission_level'') gleich oder höher als ''required_permission'' ist. Sie sollten auch eine Benutzerklasse ''User'' erstellen, die eine Eigenschaft für das Berechtigungslevel hat.
+
+==== Code Vorlage ====
+{{gh>https://github.com/templates-python/m323-lu05-a11-decorator2/blob/main/main.py}}
+
+===== Vorgehen =====
+  - Akzeptiere das GitHub Classroom Assignment
+  - Klone dein persönliches Repository in die Entwicklungsumgebung
+  - Implementiere die Benutzerklasse ''User'' und den Decorator ''check_permission'' gemäß der Anleitung
+
+===== Abgabe =====
+Die Abgabe der Lösung erfolgt als Push in das persönliche GitHub-Repository.
+
+
+----
+<details>
+<summary>//=> GitHub Repo für externe Besucher//</summary>
+GitHub Repository https://github.com/templates-python/m323-lu05-a11-decorator2
+
+//Lernende am BZZ müssen den Link zum GitHub Classroom Assignment verwenden//
+
+</details>
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/ch/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Kevin Maurizi 

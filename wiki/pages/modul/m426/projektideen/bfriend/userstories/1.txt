@@ -1,0 +1,14 @@
+====== User-Login ======
+As a Customer
+I want to login into the app
+so that I can handle my personal date securely.
+
+===== Acceptance Criteria=====
+  * User is checked for uniqueness.
+  * The app-features are according to the expected permissions.
+  * Presented data, lists, profile is according to user status.
+
+==== Priority ====
+ 5
+==== Work ====
+ 3

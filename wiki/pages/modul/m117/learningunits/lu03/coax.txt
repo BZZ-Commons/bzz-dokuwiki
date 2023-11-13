@@ -1,0 +1,40 @@
+====== LU03d - Koaxialkabel ======
+
+==== Aufbau und Funktionsweise ====
+Koaxialkabel, oft als Koaxkabel bezeichnet, bestehen aus einem zentralen Leiter, der von einer Isolationsschicht umgeben ist. Diese Isolationsschicht wird wiederum von einem Schirm und einer äusseren Isolationsschicht umgeben.
+
+==== Merkmale und Eigenschaften ====
+=== Leitertypen === 
+Es gibt zwei Haupttypen von Koaxialkabeln: dünnere Koaxialkabel (Thinnet) und dickere Koaxialkabel (Thicknet).
+
+=== Abschirmung === 
+Koaxialkabel bieten eine bessere Abschirmung gegenüber elektromagnetischen Interferenzen im Vergleich zu Twisted Pair Kabeln.
+
+=== Übertragungsdistanz === 
+Die Übertragungsdistanz von Koaxialkabeln hängt vom verwendeten Typ ab. Thicknet kann längere Entfernungen überbrücken als Thinnet.
+
+=== Anwendung === 
+Früher wurden Koaxialkabel für Kabelfernsehen, ältere Netzwerktechnologien und Basisbandübertragungen verwendet.
+
+=== Einsatzgebiete === 
+Koaxialkabel finden immer noch Anwendung in einigen speziellen Szenarien wie Kabelmodems und ältere Geräte.
+
+==== Vorteile ====
+  * Bessere Abschirmung: Koaxialkabel bieten eine stärkere Schirmung gegenüber elektromagnetischen Störungen im Vergleich zu ungeschirmten Twisted Pair Kabeln.
+  * Vielseitigkeit: Koaxialkabel können sowohl für Datenübertragungen als auch für die Übertragung von Video- und Audiosignalen verwendet werden.
+  * Stabilität: In bestimmten Anwendungen, wie älteren Geräten oder spezialisierten Netzwerken, können Koaxialkabel stabile Verbindungen bieten.
+
+==== Herausforderungen ====
+  * Begrenzte Geschwindigkeit: Im Vergleich zu moderneren Kabeltypen wie Twisted Pair und Glasfaser bieten Koaxialkabel begrenzte Übertragungsgeschwindigkeiten.
+  * Dämpfung: Signalverluste, die als Dämpfung bezeichnet werden, können über längere Distanzen auftreten.
+  * Einschränkungen: Aufgrund der Fortschritte in der Netzwerktechnologie und der weiten Verbreitung von Twisted Pair und Glasfaserkabeln sind Koaxialkabel in vielen modernen Netzwerkumgebungen nicht mehr so gebräuchlich.
+
+Insgesamt sind Koaxialkabel in speziellen Anwendungen, in denen eine bessere Abschirmung erforderlich ist oder ältere Geräte verwendet werden, nach wie vor relevant. Die begrenzten Geschwindigkeiten und die Entwicklung von moderneren Kabeltypen haben jedoch dazu geführt, dass Koaxialkabel in vielen Netzwerkumgebungen seltener anzutreffen sind.
+
+{{:modul:m117:learningunits:lu03:coaxaufbau.jpg?400|}}
+
+----
+
+{{tag>m117}}
+
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Daniel Garavaldi, Andre Probst

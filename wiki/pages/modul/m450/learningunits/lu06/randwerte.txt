@@ -1,0 +1,91 @@
+====== LU06a - Grenzwertanalyse ======
+
+<WRAP center round info 60%>
+Besonders an den Grenzen der Äquivalenzklassen treten häufig Fehler auf.
+Bei der Grenzwert-Analyse ermitteln Testfälle für diese Grenzen.
+</WRAP>
+
+
+===== Grenzwerte ermitteln =====
+Als Basis dienen uns die Äquivalenzklassen aus der [[modul:m450:learningunits:lu05:aequivalenzklassen|]].
+Dort sind die Grenzen der jeweils gültigen Werte definiert.
+Nun definieren wir Testfälle für jede Grenze.
+
+==== Zahlen ====
+Bei der Eingabe einer Zahl haben wir üblicherweise ein Minimum und ein Maximum der gültigen Eingaben.
+Die Grenzwerte sind:
+  * Die kleinste Zahl, die noch innerhalb der Grenzen liegt.
+  * Die grösste Zahl, die noch innerhalb der Grenzen liegt.
+  * Die grösste Zahl, die kleiner als das Minimum ist.
+  * Die kleinste Zahl, die grösser als das Maximum ist.
+
+==== Text ====
+Bei der Eingabe eines Textes haben wir in der Regeln zur Länge des Textes.
+Die Grenzwerte sind:
+  * Die Mindestanzahl von Zeichen für eine gültige Eingabe.
+  * Die Maximalanzahl von Zeichen für eine gültige Eingabe.
+  * Ein Zeichen weniger als das Minimum.
+  * Ein Zeichen mehr als das Maximum.
+
+
+
+===== Beispiel: Personalien =====
+==== Eingaben und Validerungsregeln ====
+
+^ Eingabe ^ Datentyp ^ Regeln ^ 
+| Vorname | Text | 3-50 Zeichen, Buchstaben und Umlaute |
+| Geschlecht | Auswahl | M, W oder D |
+| Alter | Ganzzahl | 0 - 150 |
+| Grösse in Meter | Dezimalzahl | 0.2 - 2.99 |
+
+==== Äquivalenzklassen ====
+
+^ Nr ^ Eingabe ^ Klasse ^
+^ Gültige Klassen ^^
+| 1 | Vorname | Text mit 3-50 Buchstaben und Umlauten |
+| 2 | Geschlecht | M |
+| 3 | Geschlecht | W |
+| 4 | Geschlecht | D |
+| 5 | Alter | Ganzzahl von 0 bis 150 |
+| 6 | Grösse | Dezimalzahl von 0.2 bis 2.99 |
+^ Ungültige Klassen ^^
+| 7 | Vorname | Text mit 2 Buchstaben oder weniger |
+| 8 | Vorname | Text mit mehr als 50 Buchstaben |
+| 9 | Vorname | Text mit ungültigen Zeichen |
+| 10 | Geschlecht | alle anderen Werte |
+| 11 | Alter | Ganzzahl kleiner 0 |
+| 12 | Alter | Ganzzahl grösser 150 |
+| 13 | Alter | Keine Ganzzahl |
+| 14 | Grösse | Dezimalzahl kleiner 0.2 |
+| 15 | Grösse | Dezimalzahl grösser 2.99 |
+| 16 | Grösse | Keine Zahl |
+
+===== Testfälle ableiten =====
+Wir ergänzen die Testfälle aus der Äquivalenzklassen-Analyse um weitere Testfälle für die Grenzwerte.
+Dabei gilt ebenfalls, dass wir jeden ungültigen Grenzwert einzeln testen.
+
+===== Beispiel: Personalien =====
+^ Nr || 10 |
+^ Klasse || 1,2,5,6 |
+^ Eingaben | Vorname | Bea |
+^ ::: | Geschlecht | M |
+^ ::: | Alter | 0 |
+^ ::: | Grösse | 0.2 |
+| |||
+^ Nr || 11 |
+^ Klasse || 1,3,5,6 |
+^ Eingaben | Vorname | Dieser Vorname ist genau fünfzig Zeichen langonis|
+^ ::: | Geschlecht | W |
+^ ::: | Alter | 150 |
+^ ::: | Grösse | 2.99 |
+| |||
+^ Nr || 3 |
+^ Klassen || 7 |
+^ Eingaben | Vorname | Bo |
+^ ::: | Geschlecht | D |
+^ ::: | Alter | 56 |
+^ ::: | Grösse | 0.76 |
+| |||
+----
+{{tag>M450-LU06}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

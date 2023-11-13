@@ -1,0 +1,41 @@
+====== LU09b - Linter ======
+
+<WRAP center round info 60%>
+**Lint** (engl. für Fussel) ist eine Software zur statischen Code-Analyse.
+Davon abgeleitet hat sich das Verb **linten** (englisch to lint) für das Durchführen der statischen Code-Analyse etabliert.
+
+//Quelle: [[wpde>Lint_(Programmierwerkzeug)]]//
+</WRAP>
+
+Ein Lint-Programm überprüft den Sourcecode auf Schwächen und mögliche Probleme.
+Im Gegensatz zum Testen wird das Programm nicht ausgeführt.
+Man kann dies mit der Rechtschreibehilfe in einem Textverarbeitungsprogramm vergleichen.
+
+Die wichtigsten Gründe für den Einsatz eines Lint-Programms sind:
+  * Weniger Fehler in der Software.
+  * Bessere Lesbarkeit und dadurch Wartbarkeit der Software.
+  * Durch einheitliche Codingstandards gibt es weniger Diskussionen über Codingstyle.
+  * Sicherheit und Performance des Codes.
+
+
+===== Lint in der IDE =====
+Jede moderne Entwicklungsumgebung enthält einen mehr oder weniger gründlichen Linter.
+Dieser zeigt vor allem Warnungen und Informationen, wenn bestimmte Codingstandards nicht eingehalten werden.
+Der integrierte Linter ist ein Werkzeug, dass wir auf jeden Fall verwenden sollten.
+
+===== Separate Lint-Programme =====
+Es existieren zu fast jeder Programmiersprache eine ganze Auswahl an Lint-Programmen.
+Diese arbeiten in der Regel gründlicher als der Lint in der IDE, benötigen aber mehr Zeit und Systemressourcen.
+Welches das richtige oder sogar beste Lint-Programm für dich und dein Team ist, musst du selber anhand verschiedener Kriterien entscheiden:
+
+  * Lassen sich die Lint-Regeln in der Konfiguration anpassen?
+  * Welche Arten von Fehlern (//code smells//) kann das Programm entdecken?
+  * Wie oft meldet das Programm einen Fehler, der gar keiner ist (//false positive//)?
+  * Kann das Lint-Programm in deiner IDE integriert werden?
+  * Wie hoch ist der Ressourcenbedarf des Programms?
+
+Auf [[https://geekflare.com/python-linter-platforms/|geekflare]] findest du eine Übersicht über 10 unterschiedliche Lint-Programme für Python.
+
+----
+{{tag>M450-LU09}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

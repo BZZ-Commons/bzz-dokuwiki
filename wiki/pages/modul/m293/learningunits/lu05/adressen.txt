@@ -1,0 +1,76 @@
+====== LU05c - Adressen im Web ======
+//Siehe auch [[https://wiki.selfhtml.org/wiki/HTML/Tutorials/Links/Referenzieren_in_HTML|selfhtml - Referenzieren]]//
+
+<WRAP center round info 60%>
+In unseren HTML-Dateien geben wir Adressen an, um zusätzliche Ressourcen wie Bilder, Stylesheets, ... zu laden.
+Dabei unterscheiden wir zwischen absoluten und relativen Adressen.
+</WRAP>
+
+===== Absolute Adressen =====
+<WRAP center round info 60%>
+Eine absolute Adresse gibt den vollständigen Pfad zu einer Ressource an, z.B. ''https://it.bzz.ch/wikiV2/_media/howto/pycharm/props01.png''
+Ein Beispiel aus der realen Welt: "Sie finden mich im Zimmer 105, 1. Stock, Seestrasse 110, 8810 Horgen, Schweiz."
+</WRAP>
+
+Absolute Adressen sind immer dann nötig, wenn ich auf Ressourcen einer anderen Webseite zugreifen will.
+
+===== Relative Adressen =====
+<WRAP center round info 60%>
+Eine relative Adresse gibt den Pfad ausgehend von einem bestimmten Punkt an, z.B. ''./img/props01.png''.
+Ein Beispiel aus der realen Welt: "Gehen Sie in den 1. Stock und suchen Sie das Zimmer 105."
+</WRAP>
+
+Ist die gesuchte Ressource Teil der gleichen Webseite, so ist ein relativer Pfad von Vorteil.
+
+==== Mit oder ohne Punkt und Schrägstrich? ====
+In verschiedenen Webseiten findet man unterschiedliche Schreibweisen für relative Adressen.
+  * Nur der Dateiname: ''props01.png'' bedeutet: Die Zieldatei liegt im gleichen Ordner.
+  * Mit einem Punkt: ''./img/props01.png'' bedeutet: Starte im aktuellen Verzeichnis und folge dem Pfad.
+  * Mit einem Schrägstrich ''/img/props01.png'' bedeutet: Starte im Wurzelverzeichnis und folge dem Pfad.
+
+Um die verschiedenen Variante zu verstehen, muss man die [[https://unkompliziert.eu/index.php/Pfade_unter_Linux|Pfade unter Linux]] verstehen.
+
+Je nachdem wo die gesuchte Ressource im Verhältnis zu meiner HTML-Datei liegt, ist die eine oder andere Schreibweise sinnvoll.
+=== Beispiele ===
+Wir gehen von der unten gezeigten Ordnerstruktur aus.
+In der HTML-Datei ''index.html'' möchten wir die verschiedenen Bilder einbinden.
+Wie sieht der jeweilige Pfad aus?
+<code>
+/var/www/html/    (Wurzelordner)
++-- pages/
+    +-- index.html
+    +-- image01.gif
+    +-- img
+        +-- image02.png
++-- images
+    +-- image03.jpg
+</code>
+
+Alle drei Pfade in den Codebeispielen zeigen jeweils auf die gleiche Datei. 
+Persönliche verwende ich in der Regel die erste Variante.
+
+== image01.gif ===
+<code html>
+<img src='./image01.gif' ...>
+<img src='image01.gif' ...>
+<img src='/pages/image01.gif' ...>
+</code>
+
+
+== image02.png ==
+<code html>
+<img src='./img/image02.png' ...>
+<img src='img/image02.png' ...>
+<img src='/pages/img/image02.png' ...>
+</code>
+
+== image03.jpg ==
+<code html>
+<img src='../images/image03.jpg' ...>
+<img src='/images/image03.png' ...>
+</code>
+
+
+----
+{{tag>m293-LU05 m293-XnY}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Kevin Maurizi, Marcel Suter

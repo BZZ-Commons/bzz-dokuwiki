@@ -1,0 +1,15 @@
+====== LU99.L02: Fibonacci-Folge ======
+<code python>
+def main():
+    position = int(input(''))
+    number1 = 0
+    number2 = 1
+    counter = 3
+    while counter <= position:
+        next_number = number1 + number2
+        number1 = number2
+        number2 = next_number
+        counter += 1
+
+    print(number2)
+</code>

@@ -1,0 +1,30 @@
+====== Steuerung von Tests ======
+ 
+[[https://docs.pytest.org/en/7.1.x/how-to/skipping.html|Quelle: https://docs.pytest.org/en/7.1.x/how-to/skipping.html]]
+
+===== Konstante im Programm =====
+Diese Beispiele basieren auf einer Konstante im Programm.
+==== Bedingtes Ausführen von Tests ====
+<code python>
+import pytest
+
+@pytest.mark.skipif(primes.TESTSTEP == 4, reason='Test not relevant for this step')
+def test_sieve_1a(monkeypatch, capsys):
+    ...
+</code>
+
+<WRAP center round info 60%>
+Bei Verwendung im **autograding** von GitHub Classroom wird dieser Test als erfolgreich gewertet.
+</WRAP>
+
+==== Erwarteter Fail des Tests ====
+<code python>
+import python
+@pytest.mark.xfail(primes.TESTSTEP!=4, reason='test only works for step 4')
+def test_sieve_4(monkeypatch, capsys):
+    ....
+</code>
+
+<WRAP center round info 60%>
+Bei Verwendung im **autograding** von GitHub Classroom wird dieser Test als gescheitert gewertet.
+</WRAP>

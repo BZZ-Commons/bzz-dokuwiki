@@ -1,0 +1,41 @@
+====== LU07.A02 - Eintrag in Liste ergänzen ======
+<WRAP center round info 60%>
+Fügen Sie eine Frucht in eine Liste ein, falls diese Frucht noch nicht in der Liste existiert.
+</WRAP>
+
+Das Programm hat eine Liste von Früchen ''my_list'' in dieser Liste sind bereits einige Früchte vorhanden.
+Der Benutzer gibt nun den Namen einer Frucht ein ''new_fruit''.
+  * Falls diese Frucht schon in der Liste existiert, gibt das Programm ''Frucht bereits vorhanden'' aus.
+  * Sonst fügt das Programm die neue Frucht in die Liste ein.
+
+Zum Schluss gibt das Programm die vollständige Liste mit den Früchten aus.
+
+{{gh>https://github.com/templates-python/m319-lu07-a02-listadd/blob/main/main.py}}
+
+
+=== while_else === 
+In der Funktion ''def while_else()'' suchen Sie die ''new_fruit'' mit Hilfe einer ''while-else''-Schleife.
+
+=== if_in ===
+In der Funktion ''def if_in()'' nutzen Sie die ''if-in''-Selektion um die ''new_fruit'' zu suchen.
+
+
+===== Vorgehen =====
+
+  - Akzeptiere das GitHub Classroom Assignment im Moodlekurs.
+  - Klone das Repository in PyCharm.
+  - Codiere die Programmlogik in ''main.py''.
+  - Teste dein Programm mit den Testfällen in ''main_test.py''.
+  - Führe einen Commit und einen Push durch.
+
+=== Abgabe ===
+Die Abgabe erfolgt durch den Push ins GitHub Repository.
+In Moodle ist keine Abgabe vorgesehen oder möglich.
+
+
+<nodisp>GitHub-Repo: https://github.com/templates-python/m319-lu07-a02-listadd.git</nodisp>
+----
+{{tag>M319-LU07}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/ch/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Kevin Maurizi, Marcel Suter
+
+ 

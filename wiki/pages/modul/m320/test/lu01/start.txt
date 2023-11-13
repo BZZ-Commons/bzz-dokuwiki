@@ -1,0 +1,22 @@
+==== Prüfungssituationen für LU01====
+^A1G: ^ ^
+|Ich kann aus einer einfachen Situationsbeschreibung auf mögliche Klassenkandidaten, Attribute und Methoden schliessen.|Gegeben ist die Textbeschreibung einer einfachen Situation. Diese wird als Klassendiagramm mit entsprechenden Attributen und Methoden aufskizziert.|
+| |...|
+^A1F: ^ ^
+|Ich kann unter Berücksichtigung von Delegation mögliche Klassenkandidaten, Attribute und Methoden aus einer einfachen Situationsbeschreibung eruieren und diese abbilden.|Gegeben ist die Textbeschreibung einer komplexeren Situation. Aus dieser werden Klassen und deren Verantwortlichkeiten identifiziert und beschrieben.|
+| |Aus einer Liste von Funktionen und Tätigkeiten kann eine Zuordnung von Funktion zu Tätigkeit vorgenommen werden. Weiter kann festgelegt werden, welche Funktion eine Tätigkeit delegiert und an wen.| 
+| |...|
+^B1G: ^ ^
+|Ich kann den Aufbau einer Applikation auf Grund vorhandener Unterlagen interpretieren und erläutern (z.B. anhand von UML Diagrammen)|Ein Klassendiagramm (oder Teile davon) in Code übersetzen und vice versa.|
+| |Aus einem Klassendiagramm die grundsätzliche Funktion einer (Teil)-Anwendung erkennen und beschreiben.|
+| |...|
+^B1F: ^ ^
+|Ich kann den Aufbau einer Software modellieren. (z.B. Klassen-, Aktivitäten- und Sequenzdiagramm)|Eine eng umschriebene Situation (Klassen, Attribute und Methoden sind klar erkennbar) als Klassendiagramm skizzieren.|
+| |Einen vorgegebenen Code analysieren und den statischen Aufbau (oder Teile davon) mit einem Klassendiagramm darstellen.|
+| |...|
+^E1G: ^ ^
+|Ich kenne Code Konventionen und kann den Quellcode dementsprechend implementieren.|Einen Code mit fehlenden und falschen Elementen gemäss Code Konvention korrigieren.|
+| |...|
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) René Probst

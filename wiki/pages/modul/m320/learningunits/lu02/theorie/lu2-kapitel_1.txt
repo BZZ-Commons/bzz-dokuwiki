@@ -1,0 +1,35 @@
+==== 1. Objekt und Referenz ====
+Bei der objektorientierten Programmierung sind zwei Begriffe für den Umgang mit den Objekten wichtig, nämlich
+  * Objekt
+  * Referenz
+Den Begriff Objekt haben Sie in der LU01 bereits kennen gelernt. Und auch mit Referenzen haben Sie schon gearbeitet. Aber was ist das nun genau und wie muss man sich das im Umfeld der Programmierung vorstellen?
+
+=== Objekte ===
+Ein Objekt ist ein zur Laufzeit vorhandenes Gebilde, das sich im Speicher befindet und dort einzigartig ist. 
+Es gibt keine zwei **identischen** Objekte. Aber es kann ganz viele **gleiche** Objekte geben, d.h. Objekte, die nach der gleichen Klasse gebildet wurden.\\
+{{:modul:m320:learningunits:lu02:theorie:lu02-abb2.1_instanzen.png?300|}}\\
+//Abb 2.1:// Instanzen einer Klasse\\
+
+Die drei Kühe Elsa, Frida und Vera sind wohl alle gleich - von der gleichen Klasse - aber sie sind nicht identisch. Jede Kuh ist ein eigenständiges Objekt mit spezifischen Eigenschaften (aber den gleichen Methoden). 
+Man nennt dies in der Fachsprache auch Instanz und den Vorgang der Erzeugung der Objekte dann Instanziierung.\\
+
+=== Referenz ===
+Um mit einem Objekt in Kontakt zu treten, muss man dieses kennen und ansprechen/kontaktieren können. Dies erfolgt mittels einer Referenz.
+-------
+//Beispiel 2.1: Referenz im Alltag//\\
+Sie buchen über Airbnb eine Unterkunft. Um mit dem Vermieter in Kontakt zu treten, erhalten Sie eine Mail-Adresse und/oder Telefon-Nummer. Beides sind Referenzen zur Person. Über diese Referenzen können Sie mit dem Vermieter dann Kontakt aufnehmen und sich austauschen (kommunizieren).\\
+Dazu müssen Sie das Objekt nicht direkt in Ihrer Nähe haben.
+-------
+-------
+//Beispiel 2.2: Frage "adressieren"//\\
+Ihre Lehrperson möchte einem Mitglied der Klasse eine Frage stellen. Dann wird das i.d.R. wie folgt ablaufen:
+  * Max  (das Objekt wird addressiert)
+  * Was ist ein Pulpo (beim Objekt wird eine Aktion abgerufen, nämlich eine Antwort zu geben)
+Würde keine Name - also kein Adressat - genannt, wüsste niemand, wer auf diese Frage Antwort geben soll.
+------
+Wie Sie an diesen beiden Beispiel erkennen könne, benötigt es immer eine Referenz, um ein Objekt anzusprechen. Das Objekt selber kann dabei "unsichtbar" sein. Was man aber kennen muss, ist die verfügbare Schnittstelle - die Summe aller Methoden/Fähigkeiten - des Objekts.\\
+Im Speicher des Computers findet sich genau diese Konstellation wieder. In einem definerten Speicherbereich sind die Daten und der Code des Objekts abgelegt, die dann durch eine Speicheradresse referenziert werden.\\
+{{:modul:m320:learningunits:lu02:theorie:lu02-abb2.2_speicheraufbau.png?200|}}\\
+//Abb. 2.2:// Objekt und Referenz im Speicher
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) René Probst

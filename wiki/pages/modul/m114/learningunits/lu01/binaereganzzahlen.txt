@@ -1,0 +1,159 @@
+====== LU01i - Binär codierte Ganzahlen ======
+
+//Siehe [[http://www.ulthryvasse.de/index.html]]//
+
+<WRAP center round important 60%>
+Auch wenn es oft geschrieben wird: Es gibt keine binären Zahlen;
+Genauso wenig wie es dezimale Zahlen gibt.
+Korrekt ausgedrückt handelt es sich um die binäre Darstellung oder binäre Codierung von Zahlen.
+
+Und damit wünsche ich viel Erfolg und Spass mit den binären Zahlen in diesem Kapitel. LOL
+</WRAP>
+
+===== Binär codierte Ganzzahlen =====
+Diese Codierung wird unter anderem für Variablen vom Typ ''int'', ''short'' und ''long'' verwendet.
+Die Zahlen werden einfach im binären Zahlensystem (siehe auch [[modul:m114:learningunits:lu01:zahlensysteme]]) gespeichert und verarbeitet.
+Auf das Speichern und Verarbeiten von Brüchen wird bewusst verzichtet.
+
+==== Positive Zahlen ====
+Im Speicher sind alle Zahlen als binäre Codes abgelegt.
+Um diesen binären Code als Dezimalzahl zu lesen, übertragen Sie den Wert einfach ins 10er System.
+
+1011 0010<sub>2</sub> = 178
+
+Wie das geht, erfahren Sie im Kapitel [[modul:m114:learningunits:lu01:umrechnentheorie]].
+
+==== Negative Zahlen als  Zweierkomplement ====
+//Siehe auch [[http://de.wikipedia.org/wiki/Zweierkomplement]]//
+
+In der Informatik wird für binäre Ganzzahlen das Zweierkomplement verwendet.
+Mit dieser Technik können Rechenoperationen ohne spezielle Regeln für positive und negative Zahlen eingesetzt werden.
+Mehr dazu erfahren Sie im Kapitel [[modul:m114:learningunits:lu02:binaermath]].
+
+Für positive Zahlen bedeutet das Zweierkomplement nur, dass die erste binäre Stelle Bit '0' sein muss.
+
+Für negative Zahlen gehen Sie wie folgt vor:
+
+    - Addieren Sie 1 zur Zahl: -13<sub>10</sub> + 1<sub>10</sub> = -12<sub>10</sub>
+    - Entfernen Sie das Vorzeichen der Zahl: -12<sub>10</sub> => 12<sub>10</sub>
+    - Übertragen Sie die Zahl ins Binärsystem: 12<sub>10</sub> = 0000 1100<sub>2</sub>
+    - Invertieren Sie alle Bits: 0000 1100<sub>2</sub> => **1111 0011<sub>2</sub>**
+
+Negative Zahlen haben immer Bit '1' an erster Stelle.
+
+Um eine negative binäre Ganzzahl ins Dezimalsystem zu übertragen, kehren Sie einfach das oben stehende Vorgehen um:
+  - Invertieren Sie alle Bits: 1111 0011<sub>2</sub> => 0000 1100<sub>2</sub>
+  - Übertragen Sie die Zahl ins Dezimalsystem: 0000 1100<sub>2</sub> = 12<sub>10</sub>
+  - Fügen Sie das Vorzeichen hinzu: 12<sub>10</sub> => -12<sub>10</sub>
+  - Subtrahieren Sie 1 von der Zahl: -12<sub>10</sub> - 1<sub>10</sub> = **-13<sub>10</sub>**
+
+== Umwandlung ins Zweierkomplement von Hand ==
+Dieser Programmablaufplan zeigt, wie Sie das Zweierkomplement einer binären Zahl ohne zu rechnen erhalten.
+Dies stellt eine Alternative zum oben beschriebenen Vorgehen dar:
+
+{{:modul:m114:learningunits:lu01:zweierkomplement.png?600|}}
+
+=== Wieso kein Vorzeichen? ===
+Auf den ersten Blick scheint die Lösung mit dem Zweierkomplement umständlich.
+Wäre es nicht einfacher, das erste Bit als Vorzeichen zu verwenden?
+Zum Beispiel: Das erste Bit ist ... 
+  * '0' => positive Zahl.
+  * '1' => negative Zahl.
+
+Zum Speichern der Zahlen ist diese Lösung problemlos.
+Weniger als 1 Bit um das Vorzeichen darzustellen, können wir gar nicht verwenden.
+
+Wie sieht es aber beim Rechnen mit diesen Zahlen aus?
+
+| <code>
+    6
+  + 9
+  ---
+   15 
+</code> | <code>
+  0000 0110
++ 0000 1001
+-----------
+  0000 1111
+</code> | <code>
+  12
+-  4
+----
+   8
+</code> | <code>
+  0000 1100
+- 0000 0100
+-----------
+  0000 1000
+</code> | 
+| <code>
+   18
++  -6
+-----
+   12
+</code> | <code>
+  0001 0010
++ 1000 0110
+-----------
+  0000 1100
+
+</code> | <code>
+  -5
+-  3
+----
+  -8
+</code> | <code>
+  1000 0101
+- 0000 0011
+-----------
+  1000 1000
+</code> |
+
+<WRAP center round info 60%>
+In der ersten Zeile konnten wir noch einfach wie im Dezimalsystem rechnen.
+Sobald negative Zahlen hinzu kommen, müssen wir aber das Vorzeichen separat behandeln.
+Wir stellen fest, dass wir unterschiedliche Rechenregeln für positive und negative Zahlen brauchen.
+Deshalb ist die Lösung mit dem ersten Bit als Vorzeichen nicht sinnvoll.
+</WRAP>
+
+===== Wrap around =====
+Mit Wrap around bezeichnen wir das Verhalten, wenn aus einer positiven Zahl plötzlich eine negative Zahl wird.
+Am Besten lässt sich das Verhalten an einem Beispiel erläutern.
+
+==== Beispiel ====
+
+Für unser Java-Beispiel verwenden wir den Datentyp ''byte'' mit 8 Bit Speicherplatz.
+In einer Endlosschleife (''while (true)'') addieren wir immer 1 zur Zahl.
+<code java>
+byte kleineZahl = 124;
+while (true) {
+    kleineZahl = kleineZahl + 1;
+    System.out.println(kleineZahl);
+}
+</code>
+== Ausgabe ==
+<code>
+125
+126
+127
+-128
+-127
+...
+</code>
+
+Wieso ergibt 127 + 1 = -128?
+Ein Blick in die binäre Codierung der Zahl lüftet das Geheimnis.
+
+{{:topics:ict:theory:binarynumbers:wraparound01.png?400|}}
+
+Addiert man zur Zahl 127<sub>10</sub> (binär 0111 1111<sub>2</sub>) Eins dazu, so erhält man ''1000 0000''<sub>2</sub>.
+Wie Sie gelernt haben, bedeutet die binäre Ziffer 1 an der ersten Stelle, dass es sich um eine negative Zahl handelt.
+Wir erhalten also -128<sub>10</sub>.
+
+Im Gegensatz zur Mathematik haben wir also keinen Zahlenstrahl, sondern einen Zahlenkreis.
+
+{{http://wvsg.schulen2.regensburg.de/joomla/images/Faecher/Informatik/Informatik_12/Bilder/3_2_Registermaschine/Zahlenkreis_8_Bit.png?400|}}
+
+----
+{{tag>m114-A1G m114-A1F}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

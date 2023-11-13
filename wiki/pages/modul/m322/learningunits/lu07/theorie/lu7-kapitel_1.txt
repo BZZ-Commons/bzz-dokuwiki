@@ -1,0 +1,21 @@
+==== 1. Wozu dient das Prototyping? ====
+Beim Prototyping geht es darum, die erstellten Konzepte zusammen mit möglichen Benutzern zu überprüfen. Diese Überprüfung kann auf verschiedenen Ebenen des Entwurfs geschehen.\\
+===Ausgestaltung der Benutzerinteraktionen===
+Dabei geht es darum, die Abfolge der einzelnen Screens "erlebbar" zu machen.\\
+Die Benutzer können Rückmeldung geben, wie verständlich die Benutzerführung ist, ob einzelne Arbeitsschritte selbsterklärend sind, wie gut auf Fehlmanipulationen reagiert wird usw.\\
+Je nach Ziel des Prottypen kann es sich hier um 
+   * einen **Papier-Prototypen** handel, wie sie schon in der Konzeptphase vorgstellt wurden. Der Aufwand ist hierbei sehr gering - die entsprechende Artefakte liegen meist schon vor. Der Erkenntnisgrad begrenzt sich aber auf die Akzeptanz eines bestimmten Ablaufs von Interaktionen.
+   * einen **Klick-Prototypen** handeln, der vorallem den Ablauf erleben lässt. Um das Verständnis der Abläufe zu überprüfen, genügt diese Art oftmals.
+   * einen **voll funktionsfähigen Prototypen** handlen, der auch Usabilty-Tests ermöglicht. Der Aufwand für die Erstellung ist jedoch erheblich und der Prototyp sehr nahe am Endprodukt. 
+===Visuelle Ausgestaltung===
+Hierzu muss ein Prototyp erstellt werden, der dem späteren Produkt  mehr oder weniger pixelgenau entspricht. Nebst den Ausprägungen von Schriften (Farbe, Grösse, Typ usw.) und Icons sind es die Platzierung der Elemente, deren Sichtbarkeit usw. die massgebend sind.\\
+Die Benutzer können Rückmeldung geben, wie stark sie sich vom Produkt angesprochen fühlen, wie sehr die gewählten Elemente dem Verstädnis der Anwendung dienen usw.
+===Inhaltliche Ausgestaltung===
+Die verwendeten Texte und Begriffe entsprechen denen der finalen Version und werden nicht durch Platzhalter ersetzt.\\
+Die Benutzer können Rückmeldung geben, wie gut die Anwendung sprachlich verstanden wird, wo Klärungen nötig sind usw.
+\\
+----
+===Validierung===
+Der Einsatz von Prtotypen macht aber nur Sinn, wenn im Voraus klar ist, was man untersuchen möchte. Analog zum Testen der Funktionalität einer Software (z.B. mit Unit-Test - vergl. dazu Modul 450) sollten die Kriterien zur Bewertung der Ergebnisse vor der Durchführung einer Validierung festgelegt werden.
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) René Probst

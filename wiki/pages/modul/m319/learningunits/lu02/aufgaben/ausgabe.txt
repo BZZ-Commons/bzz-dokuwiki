@@ -1,0 +1,35 @@
+====== LU02.A01 - Ausgaben ======
+<WRAP center round info 60%>
+Erstelle einen Programmablauf mit Blockly, der verschiedene Werte ausgibt.
+</WRAP>
+
+===== Auftrag =====
+Dein Programm muss verschiedene Werte speichern und ausgeben.
+  - Erstelle sinnvolle Variablen für diese Werte und weise den Variablen die angegebenen Werte zu:
+    * Der Vorname einer Person ist 'Luna'.
+    * Nachname einer Person ist 'Solaris'.
+    * Luna ist 25 Jahre alt.
+    * Sie ist 1.68 Meter gross.
+  - Erstelle die Ausgaben gemäss dem Beispielablauf.
+
+==== Beispielablauf ====
+<code>
+Luna
+Solaris
+25
+1.68
+Hallo Luna Solaris.
+Du bist 25 Jahre alt.
+Gemäss meinen Unterlagen bist du 1.68m gross.
+</code>
+
+==== Zu beachten ====
+  * Die Bezeichner (Namen) der Variablen müssen kleingeschrieben und englisch sein.
+  * Die Ausgabe muss genau dem Beispiel entsprechen.
+
+===== Abgabe =====
+Erstelle einen Screenshot des Blockly-Diagramms und lade diesen in der Moodle-Aufgabe hoch.
+
+----
+{{tag>M319-LU02}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter, Kevin Maurizi

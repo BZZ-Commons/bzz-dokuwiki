@@ -1,0 +1,48 @@
+====== LU09.A02 - Codereview: Planung bis Vorbereitung ======
+
+<WRAP center round todo 60%>
+Führe als 4er Gruppe einen Codereview durch.
+</WRAP>
+
+==== Planung ====
+  - Lies den Auftrag vollständig durch.
+  - Stelle sicher, dass du alle benötigten Dokumente hast:
+    * Sourcecode der Applikation im [[https://github.com/ghwalin/exam_api|GitHub Repository]]
+    * [[howto/codingstandards/start]]
+    * Eine Excel-Tabelle für deine Befunde.
+
+==== Kick off ====
+  - Bilde eine Gruppe mit 4 (evtl. 5) Personen.
+  - Bestimmt einen Moderator, der später die Reviewsitzung führen wird.
+  - Der Moderator meldet der Lehrperson die Namen der Gruppenmitglieder.
+  - Verteilt die 4 Kapitel der Codingstandards unter allen Gruppenmitgliedern:
+    * Jedes Gruppenmitglied erhält eine andere Kombination von Kapiteln.
+    * Jedes Kapitel wird von mindestens zwei Gruppenmitgliedern abgedeckt.
+
+===== Vorbereitung des Reviews =====
+<WRAP center round info 60%>
+**Hinweis**: Beschränke dich auf Dateien mit Python Sourcecode.
+Insbesondere die Ordner "files" und "output" enthalten keinen Pythoncode.
+</WRAP>
+Die Prüfung des Soucecodes erfolgt als individuelle Arbeit.
+Als Gutachter prüfts den Sourcecode im Hinblick auf die dir zugeteilten Standards.
+Halte alle Befunde in deiner persönlichen Excel-Tabelle fest.
+
+^ Dateiname ^ Zeile ^ Bewertung ^ Befund ^ Gutachter ^
+| xyz.py | nn | H/N/B | ... | ... |
+| | | | | |
+
+
+== Erläuterung ==
+  * Zeile: Die Zeilennummer mit der Codezeile auf die sich der Befund bezieht.
+  * Bewertung: Wie schwerwiegend ist dieser Befund
+    * H = Hauptfehler: Muss zwingend sofort korrigiert werden.
+    * N = Nebenfehler: Sollte bei Gelegenheit korrigiert werden.
+    * B = Bemerkung: Kann korrigiert werden, ist aber nicht zwingend.
+  * Befund: Eine kurze, **druckreife** Umschreibung des Befunds.
+  * Gutachter: Name oder Kürzel des Gutachters
+
+
+----
+{{tag>M450-LU09}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

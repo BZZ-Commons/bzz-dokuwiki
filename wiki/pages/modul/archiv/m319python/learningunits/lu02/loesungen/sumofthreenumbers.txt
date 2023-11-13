@@ -1,0 +1,13 @@
+====== Lösung LU02.A05 ======
+<code python>
+def main():
+    # write your code below this line
+    first = int(input('Give the first number:\n'))
+    second = int(input('Give the second number:\n'))
+    third = int(input('Give the third number:\n'))
+    # print('The sum of the numbers is ' + str(first+second+third))
+    print(f'The sum of the numbers is {first+second+third}') # using fstring
+
+if __name__ == '__main__':
+    main()
+</code>

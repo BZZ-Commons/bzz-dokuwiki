@@ -1,0 +1,48 @@
+====== LU03.A07 - Abschreibung von Anlagen======
+
+<WRAP center round todo 60%>
+Entwickeln Sie eine rekursive Funktion zur Berechnung der Abschreibung von Anlagen über eine gegebene Anzahl von Jahren.
+</WRAP>
+
+==== Detaillierte Aufgabenstellung ====
+Ihre Aufgabe ist es, eine rekursive Funktion mit dem Namen ''calculate_depreciation'' zu entwickeln, die den Restwert einer Anlage nach einer bestimmten Anzahl von Jahren berechnet.
+
+Die Funktion sollte die folgenden Argumente annehmen:
+  * ''initial_value'' (float): Der Anfangswert der Anlage.
+  * ''depreciation_rate'' (float): Der jährliche Abschreibungssatz als Dezimalzahl (z.B. 0.10 für 10%).
+  * ''years'' (int): Die Anzahl der Jahre, für die die Abschreibung berechnet werden soll.
+
+Die Funktion sollte einen Wert vom Typ ''float'' zurückgeben, der den Restwert der Anlage nach der gegebenen Anzahl von Jahren darstellt.
+
+==== Code-Vorlage ====
+<code python>
+def calculate_depreciation(initial_value, depreciation_rate, years):
+    """
+    Berechnet den Restwert einer Anlage nach einer bestimmten Anzahl von Jahren unter Berücksichtigung der jährlichen Abschreibung.
+
+    Args:
+    initial_value (float): Der Anfangswert der Anlage.
+    depreciation_rate (float): Der jährliche Abschreibungssatz als Dezimalzahl (z.B. 0.10 für 10%).
+    years (int): Die Anzahl der Jahre, für die die Abschreibung berechnet werden soll.
+
+    Returns:
+    float: Der Restwert der Anlage nach der gegebenen Anzahl von Jahren.
+
+    Raises:
+    ValueError: Wird geworfen, wenn der Abschreibungssatz nicht zwischen 0 und 1 liegt.
+    ValueError: Wird geworfen, wenn die Anzahl der Jahre negativ ist.
+    """
+    pass
+</code>
+
+
+==== Schritt-für-Schritt-Anleitung ====
+  - Überprüfen Sie, ob der Abschreibungssatz zwischen 0 und 1 liegt. Wenn nicht, werfen Sie eine ''ValueError''-Exception mit der Nachricht ''Der Abschreibungssatz muss zwischen 0 und 1 liegen.''
+  - Überprüfen Sie, ob die Anzahl der Jahre negativ ist. Wenn ja, werfen Sie eine ''ValueError''-Exception mit der Nachricht ''Die Anzahl der Jahre kann nicht negativ sein.''
+  - Implementieren Sie die rekursive Logik zur Berechnung der Abschreibung der Anlage.
+
+----
+<nodisp>https://github.com/templates-python/m323-lu03-a07-abschreibung</nodisp>
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/ch/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Kevin Maurizi 
+
+

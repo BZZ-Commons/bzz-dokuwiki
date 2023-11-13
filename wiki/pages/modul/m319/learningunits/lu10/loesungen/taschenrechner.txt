@@ -1,0 +1,80 @@
+====== LU10.L01 - Taschenrechner als Modul ======
+
+==== Teilaufgabe 1 ====
+<WRAP center round box 60%>
+<code python>
+#Add import statement for calc
+import calc
+
+def main():
+    print(calc.add(5,5))
+    print(calc.mul(5, 5))
+
+
+if __name__ == '__main__':
+    main()
+</code>
+</WRAP>
+ 
+==== Teilaufgabe 2 ====
+
+<WRAP center round box 60%>
+<code python>
+#Add import statement for calc
+import calc as c
+
+def main():
+    print(c.add(5,5))
+    print(c.mul(5, 5))
+
+
+if __name__ == '__main__':
+    main()
+</code>
+</WRAP>
+ 
+==== Teilaufgabe 3 ====
+
+<WRAP center round box 60%>
+<code python>
+#Add import statement for calc
+from calc import add, mul
+
+def main():
+    print(add(5,5))
+    print(mul(5, 5))
+
+if __name__ == '__main__':
+    main()
+</code>
+</WRAP>
+
+==== Teilaufgabe 5 ====
+<WRAP center round box 60%>
+<code python>
+#Add import statement for calculator in lib package
+from lib import calculator
+
+def main():
+    print(calculator.add(5,5)) # function add from module calc
+    print(calculator.mul(5,5)) # function mul from module calc
+
+if __name__ == '__main__':
+    main()
+</code>
+</WRAP>
+
+==== Teilaufgabe 6 ====
+<WRAP center round box 60%>
+<code python>
+#Add import statement for add and mul from calculator in lib package
+from lib.calculator import add, mul
+
+def main():
+    print(add(5,5)) # function add from lib.calculator calc
+    print(mul(5,5)) # function mul from lib.calculator calc
+
+if __name__ == '__main__':
+    main()
+</code>
+</WRAP>

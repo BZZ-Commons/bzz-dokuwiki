@@ -1,0 +1,13 @@
+====== LU01a - Java-Basics: Vom Programmcode zum ausführbaren Programm ======
+Das Prinzip der Erstellung eines Java-Programms wird am einfachsten deutlich, wenn man auf die folgende Abbildung blickt:
+
+{{ :modul:m319:learningunits:lu01:jvm.png?400 |}}
+
+Java-Quellcode kann mit einem beliebigen Texteditor oder, wie in der Praxis üblich, mit einer umfassenden und komfortablen **IDE** (Integrated Development Environment) erstellt werden. Der Quellcode wird von einem **Compiler** in den so genannten Zwischencode (**Java-Bytecode**) überführt, welcher später in der jeweiligen virtuellen Maschine auf dem Zielbetriebssystem ausgeführt wird.
+
+Java-Programme laufen also nicht nativ auf dem Rechner, sondern werden stets in einer Art „Sandbox“ ausgeführt. Diese Sandbox, oder auch Java Virtual Machine (**JVM**) genannt, kümmert sich um die plattformspezifische Umsetzung. Der Anwender muss nichts weiter tun, als Java in der Laufzeitversion (**Java Runtime Environment, JRE**) auf seinen Rechner zu installieren, und schon können in Java geschriebene Programme ausgeführt werden. In den meisten Fällen ist von Hause aus bereits eine Java-Version installiert.
+
+Durch die Wahl dieses Ansatzes braucht der Programmierer weitgehend keine Besonderheiten des Zielsystems zu berücksichtigen, auf dem seine Anwendung laufen soll, denn er kodiert gegen eine systemübergreifende Bibliothek. Die konkrete Umsetzung auf die Zielplattform, z.B. die grafische Benutzeroberfläche (UI), erledigt die Java-VM. Diese Aussage muss man natürlich etwas einschränken, denn komplexe Programme, welche systemspezifische Funktionen nutzen, bedürfen dennoch an der einen oder anderen Stelle die explizite Anpassung an das Zielbetriebssystem.
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Kevin Maurizi

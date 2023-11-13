@@ -1,0 +1,41 @@
+====== LU08.A01: Kleines Einmaleins ======
+===== Aufgabe =====
+Das Programm erwartet vom Benutzer die Eingabe einer Ganzzahl.
+Anschliessend multipliziert das Programm diese Zahl mit 0, 1, 2, ... 10 und gibt das Resultat aus.
+
+  * Ihr Programm braucht nicht zu prüfen, ob die Eingabe eine Ganzzahl ist.
+
+=== Beispiel ===
+<WRAP center round info 60%>
+Die erste Zeile mit ''*5*'' steht für die Eingabe des Benutzers.
+
+Achten Sie darauf, dass das Programm keine anderen Ausgaben als die Zahlen produziert.
+</WRAP>
+<code>
+*5*
+0
+5
+10
+15
+20
+25
+30
+35
+40
+45
+50
+</code>
+
+===== Vorgehen =====
+  - Akzeptieren Sie die Aufgabe im Classroom über den Link im Moodle-Kurs.
+  - Clonen Sie die Aufgabe in PyCharm.
+  - Erstellen Sie das Programm in der Datei ''multiply.py'' mit Python.
+  - Führen Sie einen Commit & Push des fertigen Programms durch.
+
+<WRAP center round info 60%>
+In der Datei "multiply_test.py" finden Sie ein paar Tests.
+Diese können Sie nutzen, um ihre Lösung zu prüfen.
+</WRAP>
+
+{{tag>319-B1F 319-E1F 319-F1F}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

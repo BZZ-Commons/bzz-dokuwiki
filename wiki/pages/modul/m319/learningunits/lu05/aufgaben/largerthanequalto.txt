@@ -1,0 +1,76 @@
+====== LU05.A02: Larger Than or Equal To ======
+
+<WRAP center round todo 60%>
+Schreibe ein Programm, das den Benutzer nach zwei ganzen Zahlen fragt und die grössere der beiden Zahlen ausgibt. 
+Wenn die Zahlen gleich sind, informiert uns das Programm auch darüber.
+</WRAP>
+
+===== Auftrag =====
+**Hinweis:** Variable Elemente der Ausgabe sind speziell ''formatiert''
+
+Erstelle die Programmlogik für das Programm:
+  - Das Programm fordert den Benutzer zweimal auf, eine Zahl einzugeben.
+  - Falls die erste Zahl grösser als die zweite Zahl ist, gibt das Programm "Greater number is: ''number_one''" aus. 
+  - Andernfalls die zweite Zahl grösser als die erste Zahl ist, gibt das Programm "Greater number is: ''number_two''" aus. 
+  - Sonst gibt das Programm "The numbers are equal!" aus.
+
+==== Beispiele ====
+
+<code>
+Give the first number:
+*5*
+Give the second number:
+*3*
+Greater number is: 5
+</code>
+<code>
+Give the first number:
+*5*
+Give the second number:
+*8*
+Greater number is: 8
+</code>
+<code>
+Give the first number: 
+*5*
+Give the second number: 
+*5*
+The numbers are equal!
+</code>
+
+===== Vorgehen =====
+
+  - Akzeptiere das GitHub Classroom Assignment im Moodlekurs.
+  - Klone das Repository in PyCharm.
+  - Codiere die Programmlogik in ''larger.py''.
+  - Teste dein Programm mit den Testfällen in ''larger_test.py''.
+  - Führe einen Commit und einen Push durch.
+
+=== Abgabe ===
+Die Abgabe erfolgt durch den Push ins GitHub Repository.
+In Moodle ist keine Abgabe vorgesehen oder möglich.
+
+=== Vorlage in larger.py ===
+<code python>
+def main():
+  # Write your program here and remove the line "pass"
+    pass
+
+if __name__ == '__main__':
+    main()
+</code>
+
+Anmerkung: Kümmere dich ich im Moment nicht zu sehr um ''if %%__%%name%%__%% == '%%__%%main%%__'%%:''. 
+Dieser Programmblock legt fest, welche Funktion beim Ausführen gestartet wird.
+Wir werden dies im Verlauf des Moduls noch genauer betrachten.
+
+
+
+<nodisp>GitHub-Repo: https://github.com/templates-python/m319-lu05-a02-larger</nodisp>
+----
+{{tag>M319-LU05}}
+
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/ch/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Kevin Maurizi, Marcel Suter
+
+Diese Aufgabe ist eine übersetzte und angepasste Aufgabe von [[https://scott3142.uk/|Scott Morgan]], verwendet unter CC BY NC SA.
+

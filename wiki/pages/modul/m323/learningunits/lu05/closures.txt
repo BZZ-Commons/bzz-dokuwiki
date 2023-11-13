@@ -1,0 +1,46 @@
+====== LU05c - Closures in Python ======
+
+Ein ''Closure'' ist eine innere Funktion, die sich an den Zustand ihrer äußeren umgebenden Funktion erinnert, selbst wenn die äußere Funktion ihren Ausführungskontext bereits verlassen hat. Closures sind ein Konzept, das in vielen Programmiersprachen, einschließlich Python, vorkommt.
+
+===== Grundlagen =====
+
+  * **Closure**: Eine innere Funktion, die Zugang zu den Variablen und dem Zustand ihrer äußeren Funktion hat, auch nachdem diese beendet wurde.
+  * **Äußere Funktion**: Die umschließende Funktion, die die innere Funktion definiert.
+  * **Innere Funktion**: Die Funktion, die als Closure dient, weil sie den Zustand der äußeren Funktion speichert.
+
+===== Beispiel =====
+
+Ein einfaches Beispiel für ein Closure:
+
+<code python>
+def outer_function(x):
+    def inner_function(y):
+        return x + y
+    return inner_function
+
+add_five = outer_function(5)
+print(add_five(3))  # Output: 8
+</code>
+
+In diesem Beispiel ist ''inner_function'' ein Closure, das den Wert von ''x'' speichert, selbst nachdem ''outer_function'' beendet wurde.
+
+===== Wie Closures arbeiten =====
+
+  * Innere Funktionen haben Zugriff auf die Variablen und den Zustand ihrer äußeren Funktion.
+  * Die innere Funktion ``erinnert`` sich an diesen Zustand, selbst wenn die äußere Funktion bereits beendet wurde.
+  * Das ermöglicht es, Zustand und Daten zwischen mehreren Aufrufen der inneren Funktion zu speichern.
+
+===== Verwendungszwecke =====
+
+  * **Zustandsspeicherung**: Zum Speichern von Zuständen zwischen verschiedenen Aufrufen.
+  * **Datenkapselung**: Zum Verbergen von Daten und Zuständen, die nur in einem bestimmten Kontext relevant sind.
+  * **Funktionsfabriken**: Zum Erzeugen von Funktionen mit bestimmten Eigenschaften oder Verhalten.
+  * **Decorators**: Closures sind die Grundlage für die Implementierung von Decorators in Python.
+
+<WRAP center round info 60%>
+Closures sind ein leistungsfähiges Konzept, das in vielen verschiedenen Kontexten in Python verwendet wird. Sie ermöglichen komplexere und modularere Programmstrukturen.
+</WRAP>
+
+----
+{{tag>M323-LU05}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/ch/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Kevin Maurizi 

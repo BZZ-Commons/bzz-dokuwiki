@@ -1,0 +1,39 @@
+==== Wichtig: Hinweis zu Property ===
+Unter Property versteht man eine Eigenschaft eines Objekts, also z.B. den Namen einer Person, das Nummernschild eines Autos usw.\\
+Ein Property wird durch eine Methode gelesen (getter) und geschrieben (setter). Im UML-Klassendiagramm wird dies wie folgt abgebildet:\\
+{{modul:m320:learningunits:lu04:aufgaben:lu03-aufgabe-hinweis.png?250|}}\\
+Der Umgang mit Properties ist in den verschiedenen OO-Sprachen unterschiedlich. In Python wird dies wie folgt umgesetzt:
+<code python>
+@property
+def product_name(self)
+  '''
+  getter des Proprtiy product_name
+  '''
+  return self._product_name
+
+
+@product_name.setter
+def product_name(self, name)
+  '''
+  Setter des Property product_name
+  '''
+  self._product_name = name
+</code>  
+Beim Aufruf des entsprechenden Setter bzw. Getter verhält sich Python so, wie wenn man das Attribut direkt schreiben bzw. lesen würde. 
+<code python>
+   # setter
+   a_chocolat_object.product_name = 'Toblerone'
+   
+   #getter
+   the_product = a_chocolat_object.product_name
+</code>
+Implizit wird aber die entsprechende Methode aufgerufen. So ist dann eben auch sichergestellt, dass Zusicherungen ausgeführt werden.
+
+Es gibt also eine Diskrepanz zwischen dem Diagramm und dem Code. Im Diagramm muss ja explizit mitgeteilt werden, ob es sich um einen Getter oder Setter handelt. Man kommt als um das Präfix set bzw. get nicht herum. Das zieht sich dann auch ins Sequenzdiagramm weiter.
+
+{{modul:m320:learningunits:lu04:aufgaben:lu03-aufgabe-hinweis-2.png?400|}}
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) René Probst
+

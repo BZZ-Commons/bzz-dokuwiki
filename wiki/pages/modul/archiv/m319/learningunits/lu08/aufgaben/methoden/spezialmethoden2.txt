@@ -1,0 +1,64 @@
+Durch das Klonen haben Sie den unten stehenden Code in Ihre IDE kopiert. 
+Arbeiten Sie sich nun durch die TODOs durch.
+
+<WRAP center round box 80%>
+<code java>
+import java.util.ArrayList;
+import java.util.Scanner;
+
+/**
+ * Bootsliste um eine Liste von Booten zu verwalten
+ *
+ * @author Ibi dumm
+ * @since 2042.01.01
+ * @version 0.1
+ */
+public class Bootsliste {
+
+    static Scanner scanner;
+
+    public Bootsliste(){
+        scanner = new Scanner(System.in);
+    }
+
+    public static void main(String[] args) {
+        Bootsliste bootsliste = new Bootsliste();
+        bootsliste.run();
+    }
+
+    private void run() {
+
+        Boot boot = new Boot("Bavaria","Blau",154000,"BAV25454ASD",true);
+        Boot boot1 = new Boot("Hallberg Rassy","Weiss",256000,"RASS458778",false);
+
+        ArrayList<Boot> boote = new ArrayList<>();
+        boote.add(boot);
+        boote.add(boot1);
+        boote.add(new Boot("Lagoon","Hellblau",348000,"LAG122225",true));
+
+
+
+        // TODO 1: Ergänzen Sie den Datentyp Boot um eine toString()-Methode, geben Sie darin alle Attribute aus.
+
+        // TODO 2: Passen Sie die Ausgabe an, dass nicht mehr printInfos() verwendet wird, sondern die toString() Methode
+        for (Boot b : boote) {
+            b.printInfos();
+        }
+
+        // TODO 3: Commiten und Pushen Sie die Lösung.
+
+        // TODO 4: Machen Sie das Boot vergleichbar. Vergleichen Sie die Boote nach deren Kaufpreis.
+
+        // TODO 5: Sortieren Sie die Boote nach ihrem Preis.
+
+        // TODO 6: Geben Sie die Liste der Boote hier aus.
+
+        // TODO 7: Commiten und Pushen Sie die Lösung.
+    }
+}
+
+
+</code>
+</WRAP>
+
+

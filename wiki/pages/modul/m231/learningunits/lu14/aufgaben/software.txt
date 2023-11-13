@@ -1,0 +1,64 @@
+====== LU14.A01 - Backup & Restore ======
+
+<WRAP center round warning 60%>
+WICHTIG: Stellen Sie sicher, dass sie nur mit Testdatenarbeiten um mögliche Datenverluste zu vermeiden!
+</WRAP>
+
+
+==== Formales =====
+
+Arbeitsform: Einzel-/Partnerarbeit
+
+Abgabe: Dokumentation als PDF (jeder)
+
+==== Auftrag ====
+
+Thema: Evaluation und Test eines Tools für Backup & Restore
+
+Beschreibung: Sie evaluieren, installieren und testen ein Tool für Backup & Restore. Sie dokumentieren alle Schritte nachvollziehbar.
+
+==== Ablauf ====
+
+  * Recherche
+Sie suchen sich ein ein Tool für die Backup & Restore aus. Sie und Ihr Partner dürfen nicht das gleiche Tool einsetzen!
+
+[[https://www.chip.de/download/39018_Backup-Software/leser-charts-freeware/|Hier]] finden Sie passende Tools. Schränken Sie die Suche auf "Freeware" ein und wählen Sie ein Tool mit guten Bewertungen. Falls Sie nicht über eine externe Harddisk oder einen USB-Stick verfügen, muss das Tool auch Backups auf der gleichen Harddisk ermöglichen (Source & Destination identisch).
+
+
+  * Installation
+Sie installieren das ausgewählte Tool auf ihrem Computer entsprechend den Anweisungen des Herstellers.
+
+
+
+  * Voll-Backup
+Erstellen Sie einen neuen Ordner und fügen Sie in diesen 3 bis 5 Dateien ein. 
+
+ACHTUNG: Es dürfen nur Testdaten sein, nichts produktives!
+
+Sie führen nun einen Voll-Backup des Ordners durch und dokumentieren den Prozess.
+
+
+  * Differentielles - oder Inkrementelles Backup
+Verändern Sie 2 der Testdaten (Dateien) und führen Sie nun ein differentielles - oder inkrementelles Backup durch. Diesen Schritt können Sie auch 2 oder 3 Mal durchführen.
+
+
+  * Restore
+Löschen Sie nun den gesamten Ordner mit Ihren Testdaten. Führen Sie einen Restore durch, so dass Sie zuletzt wieder alle Daten vollständig verfügbar haben.
+
+
+  * Auswertung
+Tauschen Sie sich mit Ihrem Partner aus. Welches Tool macht den besseren Eindruck und ist leichter zu bedienen?
+
+
+
+Good luck!
+
+
+===== Abgabe =====
+
+Geben Sie die Doku als PDF im Moodle ab
+
+----
+
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Andre Probst, Marcel Suter
+

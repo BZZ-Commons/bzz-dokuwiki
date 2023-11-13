@@ -1,0 +1,50 @@
+====== Authentifizieren mit GitHub ======
+<WRAP center round todo 60%>
+Sporadisch musst du die PyCharm die Berechtigung geben, auf deine GitHub Repositories zuzugreifen.
+</WRAP>
+
+===== Klonen scheitert =====
+Stelle sicher, dass du die korrekte Clone-URL hast:
+  * Öffne ein neues Browserfenster und kopiere die URL in die Adresszeile. Der Webbrowser muss nun dein Repository anzeigen.
+
+Wenn das Repository angezeigt wird, hast du die richtige Clone-URL.
+  - Öffne in PyCharm die Einstellungen mit Ctrl+Alt+S.
+  - Wähle unter "Version Control" den Eintrag "GitHub". \\ Dort müsste dein GitHub-Konto angezeigt werden.
+  - Klicke auf dein GitHub-Konto und danach auf das Symbol "-" oberhalb um die Verknüpfung zu entfernen.
+  - Versuche das Repository erneut zu klonen, es sollte nun das Fenster "Log In To GitHub" erscheinen.
+
+===== Fenster "Log In To GitHub" =====
+
+
+{{:howto:git:classroom_student_51.png?400|}}
+
+Klicke auf den Button **[Use Token ...]]**.
+
+{{:howto:git:classroom_student_52.png?400|}}
+
+Generiere ein neues Token mit **[Generate ...]**.
+Du wirst auf die Webseite von GitHub weitergeleitet, um ein Token zu generieren.
+
+{{:howto:git:classroom_student_54.png?600|}}
+
+Passe die Einstellung für "Expiration" an. Du kannst hier 90 Tage oder auch "unlimited" auswählen.
+Klicke auf **[Generate]** ganz unten auf der Seite.
+
+Das Token wird generiert und auf der nächsten Seite angezeigt.
+<WRAP center round important 60%>
+Behandle dieses Token wir ein Passwort:
+  * Teile es mit niemandem
+  * Speichere das Token in einem Passwortsafe
+</WRAP>
+
+{{:howto:git:classroom_student_55.png?600|}}
+
+Kopiere das Token und trage es in PyCharm ein.
+
+{{:howto:git:classroom_student_56.png?400|}}
+
+Klicke auf **[Login]** um das Token zu aktivieren.
+
+=== Nächster Schritt ===
+Folge nun dem Ablauf der Anleitung mit **//[Weiter]//**
+

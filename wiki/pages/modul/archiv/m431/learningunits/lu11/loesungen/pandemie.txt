@@ -1,0 +1,12 @@
+====== LU11.L01 - Aufgabe: Testfälle "Lager" ======
+
+^Nr	^Testfall	^Eingaben^	^Erwartetes Resultat^^
+^:::    ^:::            ^Nummer  ^Menge	^Neuer Bestand	^Meldungen^
+|1	|Gültige Werte	|35	|-125	|375           | |
+|2	|Randwerte	|99	|9999	|10499	|-
+|3	|Formal ungültige Nummer	|1a	|-	|-	|Nummer muss eine Ganzzahl sein.|
+|4	|Nummer zu gross	|123	|-	|-	|Impfstoffnummer muss eine Ganzzahl (1-99) sein.|
+|5	|Nummer zu klein	|0	|-	|-	|Impfstoffnummer muss eine Ganzzahl (1-99) sein.|
+|6	|Menge formal falsch	|16	|-65.7	|-	|Menge muss eine Ganzzahl (-9999 - 9999) sein.|
+|7	|Menge zu gross	|34	|12543	|-	|Menge muss eine Ganzzahl (-9999 - 9999) sein.|
+|8	|Menge zu klein	|47	|-22233	|-	|Menge muss eine Ganzzahl (-9999 - 9999) sein.|

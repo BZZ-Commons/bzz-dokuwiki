@@ -1,0 +1,33 @@
+====== LU04a - Die drei Kontrollstrukturen ======
+
+<WRAP center round info 60%>
+Jedes Programm, egal wie gross und kompliziert es ist, besteht aus nur drei Kontrollstrukturen:
+  * Sequenz: Eine Anweisung die genau einmal durchgeführt wird
+  * Selektion: Eine Entscheidung ob ein Programmteil ausgeführt wird oder nicht (0-1)
+  * Iteration: Ein Programmteil der mehrfach durchgeführt wird (0-n)
+</WRAP>
+
+===== Sequenz =====
+Als Sequenz bezeichnen wir eine Anweisung im Programm.
+
+=== Beispiele ===
+  * Speichere die Zahl 5 in einer Variable
+  * Gib einen Text am Bildschirm aus
+
+===== Selektion =====
+Eine Selektion entscheidet, ob ein bestimmter Teil des Programms ausgeführt wird oder nicht.
+
+=== Beispiele ===
+  * Falls das Total grösser als 5 ist
+  * Falls das Passwort korrekt ist
+
+===== Iteration =====
+Eine Iteration erlaubt es, einen Programmteil mehrmals durchzuführen.
+
+=== Beispiele ===
+  * Solange der Zähler kleiner als 51 ist
+  * Solange das Passwort falsch ist
+
+----
+{{tag>M319-D1F M319-F1G}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter  

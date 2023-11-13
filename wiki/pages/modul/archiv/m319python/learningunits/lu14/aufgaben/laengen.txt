@@ -1,0 +1,55 @@
+====== LU14.A02: Längenumrechner ======
+===== Ausgangslage =====
+Wir wollen ein Programm schreiben, dass eine Länge zwischen verschiedenen Einheiten umrechnen kann.
+Zum Beispiel sollte das Programm ''1 Meile = 1609.34 Meter'' umrechnen können.
+
+Wir verwenden einen Dictionary mit den Einheiten, um das Programm später möglichst einfach zu erweitern.
+Dieser Dictionary enthält den Namen der Einheit und den Faktor für die Umrechnung in Meter.
+
+===== Programmaufbau =====
+Zunächst erstellen wir einen Dictionary mit den Einheiten und dem Umrechnungsfaktor.
+^ Einheit ^ Faktor ^
+| Meter | 1 |
+| Zentimeter | 100 |
+| Meilen | 0.000621371 |
+| Seemeilen | 0.000539957 |
+
+Danach fragen wir den Benutzer nach dem Wert und die beiden Einheiten (Von/Nach) für die Umrechnung.
+Für die Eingabe der Einheit, zeigen wir dem Benutzer alle verfügbaren Einheiten an.
+Entspricht seine Eingabe nicht einer der verfügbaren Einheiten, so zeigen wir eine Fehlermeldung und der Benutzer kann seine Eingabe wiederholen.
+
+Zuletzt rechnen wir den Wert um.
+Dazu konvertieren wir zunächst in Meter und danach in die gewünschte Zieleinheit.
+Zum Beispiel:
+<code>
+1 Meilen => 1609.34 Meter => 0.868976 Seemeilen
+</code>
+
+===== Ablauf am Terminal =====
+<code>
+Länge > 15.74
+Verfügbare Einheiten: Meter, Zentimeter, Meilen, Seemeilen, 
+Einheit von > Zoll
+Bitte wählen Sie eine bekannte Einheit aus
+Einheit von > Meter
+Verfügbare Einheiten: Meter, Zentimeter, Meilen, Seemeilen, 
+Einheit nach > Schwimmbad
+Bitte wählen Sie eine bekannte Einheit aus
+Einheit nach > Seemeilen
+15.74 Meter = 0.00849892318 Seemeilen
+</code>
+
+===== Auftrag =====
+Erstellen Sie das Programm zur Umrechnung von Längeneinheiten.
+Es muss mindestens diese Längeneinheiten unterstützen:
+  * Meter
+  * Zentimeter
+  * Meilen
+  * Seemeilen
+
+==== Funktionen ====
+Überlegen Sie sich, wo sinnvolle Funktionen eingesetzt werden können.
+Wie sieht die Schnittstelle (Bezeichner, Argumente, Returnwert) dieser Funktionen aus?
+
+{{tag>M319-C1G M319-C1F M319-C1E}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

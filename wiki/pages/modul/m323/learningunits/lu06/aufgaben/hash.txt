@@ -1,0 +1,37 @@
+====== LU06.A08 - Passwort-Hashing in der Todo-Liste ======
+<WRAP center round todo 60%>
+Implementierung des Passwort-Hashings in der Todo-Liste Anwendung.
+</WRAP>
+
+===== Vorgehen =====
+
+==== 0. Vorbereitungen ====
+  * Akzeptiere das GitHub Classroom Assignment
+  * Klone dein persönliches Repository in die Entwicklungsumgebung
+
+==== 1. Installation der bcrypt-Bibliothek ====
+  * Fügen Sie ''bcrypt'' zu Ihrer ''requirements.txt''-Datei hinzu oder installieren Sie es direkt mit pip.
+
+==== 2. Anpassung der DAO-Klasse ====
+  * Modifizieren Sie die ''add_user''-Methode in der ''UserDao''-Klasse, um das Passwort zu hashen, bevor es in der Datenbank gespeichert wird.
+  
+==== 3. Anpassung des Login-Endpunkts ====
+  * Ändern Sie den Login-Endpunkt, um das gehashte Passwort für die Authentifizierung zu verwenden.
+
+==== 4. Teste deine API ====
+  * Überprüfen Sie, ob das Hashing korrekt funktioniert, indem Sie sich mit einem Benutzer anmelden.
+  * Testen Sie mit dem ''API-Testing.http''-File im Workspace oder mit Postman 
+  * [[https://app.getpostman.com/run-collection/21916156-7e24c1ab-b771-4f36-9bf9-9efda9b55507?action=collection%2Ffork&source=rip_markdown&collection-url=entityId%3D21916156-7e24c1ab-b771-4f36-9bf9-9efda9b55507%26entityType%3Dcollection%26workspaceId%3D6159a5bd-9101-4933-a6c3-05d2eb3112fd|{{https://run.pstmn.io/button.svg|Run in Postman}}]]
+
+==== 5. Abgabe ====
+  * Die Abgabe der Lösung erfolgt als Push in das persönliche GitHub-Repository.
+
+----
+<details>
+<summary>//=> GitHub Repo für externe Besucher//</summary>
+GitHub Repository https://github.com/templates-python/m323-lu06-a08-hashing
+
+//Lernende am BZZ müssen den Link zum GitHub Classroom Assignment verwenden//
+
+</details>
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/ch/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Kevin Maurizi

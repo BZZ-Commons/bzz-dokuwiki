@@ -1,0 +1,29 @@
+====== LU04.A05: Grösster gemeinsamer Teiler ======
+<WRAP center round info 60%>
+Lösen Sie die Aufgabe mit [[https://think.cs.vt.edu/blockpy/blockpy/|BlockPy]] oder [[https://www.codingrooms.com/compiler/python-block|Codingrooms]]
+
+Laden Sie einen Screenshot ihres Blockly-Ablaufs hoch.
+</WRAP>
+===== Aufgabe =====
+Bei mathematischen Programmen wird häufig der grösste gemeinsame Teiler (ggT) von zwei natürlichen Zahlen benötigt.
+Aus dem Mathematik-Unterricht kennen sie vermutlich die Methode mit der Primfaktorzerlegung.
+
+Diese Zerlegung ist sehr schwierig zu programmieren. 
+Wesentlich einfacher ist ein Algorithmus der ursprünglich von Euklid entwickelt wurde:
+  - Der Benutzer gibt die beiden Zahlen **''number1''** und **''number2''** ein.
+  - Solange die **''number2 ≠ 0''** ist, 
+    - berechnet das Programm den ganzzahligen **''rest''** aus **''number1 / number2''**,
+    - nun wird der Wert von **''number2''** wird in **''number1''** gespeichert,
+    - und der Wert von **''rest''** in **''number2''** gespeichert.
+  - Gib den Wert der Variable **''number1''** aus.
+
+<WRAP center round info 60%>
+Die mathematische Funktion //Modulo// berechnet den ganzzahligen Rest einer Division. 
+Zum Beispiel:
+
+342 geteilt in 5 ergibt 68 und den Rest 2, also ''342 Modulo 5 = 2''. 
+</WRAP>
+
+----
+{{tag>M319-D1F M319-F3G}} 
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Marcel Suter

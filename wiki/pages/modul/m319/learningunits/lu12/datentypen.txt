@@ -1,0 +1,41 @@
+====== LU12a - Eigene Datentypen ======
+===== Einführung =====
+==== Problematik ====
+
+Sie kennen bereits einzelne Variablen und Listen um Daten in einem Programm zu speichern.
+Wenn ihr Programm mit vielen Daten arbeiten, kann dies aber umständlich werden.
+Angenommen Sie möchten die Mitglieder eines Clubs verwalten.
+Für jedes Clubmitglied speichern Sie diese Angaben (**Attribute**):
+  * Vorname
+  * Nachname
+  * Adresse
+  * Ort
+  * Postleitzahl
+  * Eintrittsjahr
+  * Geburtsjahr
+  * Ehrenmitgliedschaft (Ja/Nein)
+
+Um diese Daten mit Hilfe von Listen zu verarbeiten, müssten Sie für jedes Attribut eine Liste erstellen.
+
+<code python>
+def main():
+  firstname_list = []
+  lastname_list = []
+  address_list = []
+  ...
+</code>
+Ausserdem müssen Sie sicherstellen, dass die Angaben eines Mitglieds in jeder dieser Listen an der genau gleichen Position steht.
+
+==== Klassen als Lösung ====
+In vielen modernen Programmiersprachen können wir einen eigenen Datentyp definieren, der aus mehreren bekannten Datentypen besteht.
+Der Fachbegriff für einen solchen Datentyp ist **Klasse**.
+Indem wir eine Klasse ''Member'' definieren, können wir alle Attribute eines Clubmitglieds zusammenfassen.
+
+{{:modul:m319python:learningunits:lu12:uml_member.png?300|}}
+
+Diese Grafik zeigt ein UML Klassendiagramm mit den Attributen und deren Datentyp.
+
+----
+{{tag>m319-C1F m319-C1E}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter
+

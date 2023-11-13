@@ -1,0 +1,63 @@
+====== LU02.L05 - Listen ======
+
+
+==== Schritt 1: Verwenden von List Comprehension oder ''map''-Funktion ====
+
+Wir können diese Aufgabe mit einer Schleife, einer List Comprehension oder der ''map''-Funktion lösen. Hier sind Beispiele für beide Ansätze:
+
+Mit Schleife:
+
+<code python>
+def increment_numbers(numbers):
+    new_numbers = [] # create an empty list to store the new numbers
+    for number in numbers:
+        new_numbers.append(number + 1) # append the incremented value to the new list
+    return new_numbers
+</code>
+
+<WRAP center round info 60%>
+**Diese Techniken werden wir im Verlauf des Kurses genauer kennenlernen.**
+
+Mit List Comprehension:
+
+<code python>
+def increment_numbers(numbers):
+    return [number + 1 for number in numbers]
+</code>
+Mit ''map''-Funktion:
+
+<code python>
+def increment_numbers(numbers):
+    return list(map(lambda x: x + 1, numbers))
+</code>
+</WRAP>
+
+==== Schritt 2: Rückgabe der neuen Liste ====
+
+Die Funktion gibt die neue Liste zurück, wie in den vorherigen Schritten gezeigt.
+
+==== Schritt 3: Testen der Funktion ====
+
+<code python>
+if __name__ == '__main__':
+    new_numbers = increment_numbers(numbers)
+    print('Original numbers:', numbers)
+    print('Incremented numbers:', new_numbers)
+</code>
+
+==== Schritt 4: Testen der Funktion ====
+
+Lassen Sie die Pytests laufen.
+
+==== Ausgabe ====
+
+<code>
+Original numbers: [1, 2, 3, 4, 5]
+Incremented numbers: [2, 3, 4, 5, 6]
+</code>
+
+===== Zusammenfassung =====
+Die Musterlösung zeigt zwei verschiedene Möglichkeiten, wie eine Funktion eine neue Liste erstellen kann, in der alle Elemente der Eingabeliste um eins erhöht wurden, ohne die ursprüngliche Liste zu verändern. Dies ist ein wichtiger Aspekt der funktionalen Programmierung und hilft dabei, den Code besser verständlich und vorhersagbar zu machen.
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/ch/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Kevin Maurizi 

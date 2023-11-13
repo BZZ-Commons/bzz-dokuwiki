@@ -1,0 +1,55 @@
+====== LU03.A02 - Zinseszins-Berechnung ======
+
+<WRAP center round todo 60%>
+Entwickeln Sie eine rekursive Funktion zur Berechnung des Zinseszinses, die auch eine `ValueError`-Exception wirft, falls die Laufzeit negativ ist.
+</WRAP>
+
+
+===== Detaillierte Aufgabenstellung =====
+
+Ihre Aufgabe ist es, eine rekursive Funktion mit dem Namen `compound_interest` zu entwickeln, die das Endguthaben einer Investition unter Berücksichtigung des Zinseszinses berechnet.
+
+Die Funktion sollte die folgenden Argumente annehmen:
+  * ''principal'' (float): Der Anfangsbetrag der Investition.
+  * ''rate'' (float): Der jährliche Zinssatz als Dezimalzahl (z.B. 0.05 für 5%).
+  * ''time'' (int): Die Laufzeit der Investition in Jahren.
+
+Die Funktion sollte einen Wert vom Typ ''float'' zurückgeben, der das Endguthaben der Investition darstellt.
+
+Wenn die Laufzeit negativ ist, sollte die Funktion eine ''ValueError''-Exception mit der Nachricht ''Die Laufzeit kann nicht negativ sein.'' werfen.
+
+==== Code-Vorlage ====
+<code python>
+  def compound_interest(principal, rate, time):
+      """
+      Berechnet das Endguthaben einer Investition unter Berücksichtigung des Zinseszinses.
+
+      Args:
+      principal (float): Der Anfangsbetrag der Investition.
+      rate (float): Der jährliche Zinssatz als Dezimalzahl (z.B. 0.05 für 5%).
+      time (int): Die Laufzeit der Investition in Jahren.
+
+      Returns:
+      float: Das Endguthaben der Investition.
+      
+      Raises:
+      ValueError: Wird geworfen, wenn die Laufzeit negativ ist.
+      """
+      # TODO: Implementieren Sie die Funktion rekursiv
+      pass
+</code>
+
+
+
+
+===== Schrittweise Vorgehen =====
+
+  - **Verstehen Sie die Formel**: Die Zinseszinsformel ist \( A = P (1 + r)^t \), wobei \( A \) der Endbetrag, \( P \) der Anfangsbetrag, \( r \) der Zinssatz und \( t \) die Zeit ist.
+  - **Rekursionsbasis**: Wenn die ''time'' gleich 0 ist, geben Sie den ''principal'' zurück.
+  - **Rekursionsschritt**: Berechnen Sie den neuen ''principal'' für das nächste Jahr als ''principal * (1 + rate)''.
+  - **Rückgabewert**: Geben Sie den Endbetrag zurück, nachdem alle Jahre berechnet wurden.
+
+----
+<nodisp>https://github.com/templates-python/m323-lu03-a02-zinseszins</nodisp>
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/ch/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Kevin Maurizi 
+

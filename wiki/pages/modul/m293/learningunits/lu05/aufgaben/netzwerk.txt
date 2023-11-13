@@ -1,0 +1,56 @@
+====== LU05.A01 - Netzwerk ======
+<WRAP center round todo 60%>
+Untersuchen Sie die Netzwerkzugriffe beim Aufruf der Webseite ''https://it.bzz.ch/demo/network''.
+Beantworten Sie die Fragen bei den einzelnen Schritten direkt in der Moodle-Aufgabe (Textfeld).
+</WRAP>
+
+Die meisten Webbrowser bieten nützliche Tools für Webentwickler.
+Nutzen Sie diese Tools um die Netzwerkzugriffe beim Zugriff auf eine Webseite zu analysieren.
+
+===== Vorgehen =====
+==== Seite laden ====
+
+1. Öffnen Sie in Ihrem Webbrowser die Entwicklertools:
+  * Taste F12
+  * Rechtsklick => Untersuchen
+
+2. Wählen Sie den Tab "Network" oder "Netzwerkanalyse" aus. 
+
+{{:modul:m293:learningunits:lu05:aufgaben:network01.png?600|}}
+
+3. Kopieren Sie nun die Adresse ''https://it.bzz.ch/demo/network''. \\ Falls Sie die Webseite bereits geöffnet haben, laden Sie die Seite neu.
+
+Sie sehen nun, welche Requests der Ihr Browser abgeschickt hat.
+Wählen Sie die einzelnen Requests aus und analysieren Sie die folgenden Elemente:
+  * HTTP-Statuscode
+  * Aufbau des Requests
+  * Inhalt der Response
+
+=== Fragen ===
+  - Auf welche Ressource greift der Browser als erstes zu? Welchen HTTP-Status sendet der Server?
+  - Welche Ressourcen liest der Client. Geben Sie alle Webadressen (URL) an.
+  - Was befindet sich in der Antwort des ersten erfolgreichen Requests?
+
+
+==== Daten senden ====
+In der Webseite sind zwei Eingabefelder und ein Button.
+Geben Sie Ihren Vor- und Nachnamen in die jeweiligen Eingabefelder ein.
+Klicken Sie den Button [Absenden].
+
+Suchen Sie in der Netzwerkanalyse den neuen Request, der die Daten an den Server geschickt hat.
+Analysieren Sie:
+  * HTTP-Statuscode
+  * Aufbau des Requests
+  * Inhalt der Response
+
+=== Fragen ===
+  - Welche HTTP-Methode wurde verwendet?
+  - Welche Daten wurden im Body des Requests mitgesendet?
+  - Welche Antwort (HTTP-Status, Daten) hat der Server geschickt?
+
+----
+<nodisp>[[https://github.com/teacher-html/demo]]</nodisp>
+
+{{tag>m293-LU05 m293-D1F}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Kevin Maurizi, Marcel Suter
+

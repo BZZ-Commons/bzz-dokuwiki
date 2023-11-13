@@ -1,0 +1,80 @@
+====== LU07b - Checkbox und Radiobutton ======
+//siehe auch [[https://wiki.selfhtml.org/wiki/HTML/Tutorials/Formulare/Radio-Buttons_und_Checkboxen|selfhtml - Radio-Buttons und Checkboxen]]//
+
+<WRAP center round info 60%>
+Auf dieser Seite befassen wir uns mit ''input type='radio' '', ''input type='checkbox' '' und den dazugeörigen Attributen für Radio-Buttons und Checkboxen in unseren Formularen.
+</WRAP>
+
+===== Radiobutton =====
+
+Radio-Buttons sind eine Gruppe von beschrifteten Schaltflächen, bei denen der Benutzer eine Option auswählen kann. Wenn ein Radio-Button markiert wird, wird eine eventuell vorhandene Markierung eines anderen Radio-Buttons derselben Gruppe gelöscht.
+
+Hier sind die möglichen Attribute für Radio-Buttons:
+
+  * ''name'': Alle Radio-Buttons mit demselben Namen gehören zu einer Gruppe. Der Benutzer kann nur einen Radio-Button innerhalb dieser Gruppe markieren.
+  * ''value'': Dieses Attribut bestimmt einen internen Wert für jeden Radio-Button (value = Wert). Wenn das Formular abgeschickt wird, wird der Wert des markierten Radio-Buttons übertragen.
+  * ''id'': Eindeutige ''id'' um mit einem ''label'' Element zu verknüpfen
+  * ''disabled'': Mit diesem Attribut kann eine Auswahlmöglichkeit als deaktiviert deklariert werden. Sie wird ausgegraut dargestellt und kann nicht angeklickt werden.
+  * ''checked'': Wenn Sie eine der Auswahlmöglichkeiten vorab auswählen möchten, können Sie das Attribut ''checked'' im entsprechenden ''<input>''-Tag des Radio-Buttons verwenden. Beispiel: ''<input type="radio" name="Typ" value="Kassenpatient" checked>''
+
+**Beachten Sie:** 
+Es ist nicht zulässig, mehr als eine Auswahlmöglichkeit bei Radio-Buttons vorab auszuwählen.
+
+{{:modul:m293:learningunits:lu07:radiobutton.png?200 |}}
+<code html4strict>
+  <form>
+    <input type='radio' id='mc' name='Zahlmethode' value='Mastercard'>
+    <label for='mc'> Mastercard</label>
+    <input type='radio' id='vi' name='Zahlmethode' value='Visa'>
+    <label for='vi'> Visa</label>
+    <input type='radio' id='ae' name='Zahlmethode' value='AmericanExpress'>
+    <label for='ae'> American Express</label>
+  </form>
+</code>
+
+Jeder ''<input type="radio">'' benötigt ein zugehöriges ''<label>'', das die Beschriftung für die entsprechende Option darstellt. Das ''<label>'' kann vor oder hinter dem Radio-Button positioniert werden und wird durch das ''for''-Attribut mit der ID des zugehörigen Radio-Buttons verknüpft.
+
+===== Checkbox =====
+Eine Checkbox ist ein ankreuzbares Kontrollfeld, das dem Benutzer ermöglicht, es auszuwählen oder die Auswahl zu entfernen.
+
+Folgende Attribute sind möglich:
+
+  * ''name'': Alle Checkboxen-mit demselben Namen gehören zu einer Gruppe. Damit ''php'' auf dem Server diese Werte auch als Array interpretieren kann muss das ''name'' Attribut mit eckigen Klammern abgeschlossen werden ''[]''
+  * ''value'': Dieses Attribut bestimmt einen internen Bezeichnerwert für jede Checkbox (value = Wert). Wenn der Benutzer das Formular abschickt, wird der Bezeichnerwert der markierten Checkbox(en) übertragen.
+  * ''id'': Eindeutige ''id'' um mit einem ''label'' Element zu verknüpfen
+  * ''checked'': Ein Boolean-Attribut. Wenn Sie eine oder mehrere Auswahlmöglichkeiten vorab markieren möchten, fügen Sie dem entsprechenden ''<input>''-Tag das Attribut checked hinzu. Beispiel: ''<input type='checkbox' name='Kenntnisse_in' value='HTML' checked>''.
+  
+Die Werte der ausgewählten Checkboxen werden beim Absenden des Formulars übertragen. Es ist auch möglich, Gruppen von Checkboxen mit demselben Namen (''name'') zu erstellen. Technisch gesehen ist dies nur für die Übertragung wichtig, da Checkboxen in einer Gruppe unabhängig voneinander ausgewählt werden können.
+
+{{:modul:m293:learningunits:lu07:checkbox.png?100 |}}
+
+<code html4strict>
+  <form>
+    <input type='checkbox' name='zutat[]' value='kaese' id='check1' checked>
+    <label for='check1'>Käse</label>
+    <input type='checkbox' name='zutat[]' value='schinken' id='check2'>
+    <label for='check2'>Schinken</label>
+    <input type='checkbox' name='zutat[]' value='salami' id='check3'>
+    <label for='check3'>Salami</label>
+    <input type='checkbox' name='zutat[]' value='oliven' id='check4'>
+    <label for='check4'>Oliven</label>
+    <input type='checkbox' name='zutat[]' value='paprika' id='check5'>
+    <label for='check5'>Paprika</label>
+    <input type='checkbox' name='zutat[]' value='pilze' id='check6' >
+    <label for='check6'>Pilze</label>
+  </form>
+</code>
+
+Jede ''<input type='checkbox'>'' benötigt ein zugehöriges ''<label>'', das die Beschriftung für die entsprechende Option darstellt. Das ''<label>'' kann vor oder hinter dem Ankreuzfeld positioniert werden und das ''for''-Attribut des ''<label>''-Elements verweist auf die ''id'' der entsprechenden Checkbox.
+
+<WRAP center round important 60%>
+Alle Checkboxen-mit demselben Namen gehören zu einer Gruppe. Damit ''php'' auf dem Server diese Werte auch als Array interpretieren kann muss das 'name'' Attribut mit eckigen Klammern abgeschlossen werden ''[]''
+</WRAP>
+
+
+
+----
+{{tag>m293-LU07 m293-F2F m293-F2E}}
+Inhalte teilweise unter CC-BY-SA-3.0 von [[https://wiki.selfhtml.org/wiki/SELFHTML|SELFHTML]] kopiert.
+
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Kevin Maurizi, Marcel Suter

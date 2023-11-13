@@ -1,0 +1,55 @@
+====== LU02.A03 - Summen ======
+<nodisp>TODO SuMA - Video</nodisp>
+<WRAP center round info 60%>
+Erstelle einen Programmablauf mit Blockly, der vom Benutzer die Eingabe von zwei Zahlen erwartet.
+</WRAP>
+
+===== Aufgabe =====
+Das Programm erwartet vom Benutzer die Eingabe von zwei Dezimalzahlen.
+Die Benutzereingaben müssen in den Datentyp ''float'' umgewandelt und zwischengespeichert werden.
+Anschliessend gibt das Programm die Summe der beiden Zahlen aus.
+
+==== Drei Zahlen ====
+Erweitere dein Programm so, dass der Benutzer 3 Zahlen eingeben muss.
+Das Programm gibt nun mehrere Summen aus:
+  * Die Summe der ersten und zweiten Zahl.
+  * Die Summe der ersten und dritten Zahl.
+  * Die Summe der zweiten und dritten Zahl.
+  * Die Summe aller drei Zahlen.
+
+===== Ablauf des Programms =====
+Hier siehst du zwei Beispiele, wie der Ablauf des Programms aussehen könnte:
+
+<HTML>
+<iframe src="https://trinket.io/embed/python3/0875d76d90?outputOnly=true&runOption=run&start=result" width="100%" height="200" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+</HTML>
+
+<code>
+Erste Zahl:
+*7.4*
+Zweite Zahl:
+*3.15*
+
+7.4 + 3.15 = 10.55
+</code>
+
+<code>
+Erste Zahl:
+*12.56*
+Zweite Zahl:
+*0.02*
+Dritte Zahl:
+*-6.8*
+
+12.56 + 0.02 = 12.58
+12.56 + -6.8 = 5.76
+0.02 + -6.8 = -6.75
+12.56 + 0.02 + -6.8 = 5.78
+</code>
+
+===== Abgabe =====
+Erstelle einen Screenshot des Blockly-Diagramms und lade diesen in der Moodle-Aufgabe hoch.
+
+----
+{{tag>M319-LU02}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter, Kevin Maurizi

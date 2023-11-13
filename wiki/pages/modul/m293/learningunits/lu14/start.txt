@@ -1,0 +1,9 @@
+====== LU14 - Bootstrap anpassen ======
+
+<nspages . -h1  -exclude -simpleList -textPages=""> 
+ 
+===== Aufgaben =====
+<nspages .:aufgaben -h1  -exclude -simpleList -textPages=""> 
+
+===== Lösungen =====
+<nspages .:loesungen -h1  -exclude -simpleList -textPages=""> 

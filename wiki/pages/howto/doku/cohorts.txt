@@ -1,0 +1,24 @@
+====== Moodle: Globale Gruppen  ======
+===== Beschreibung =====
+
+
+===== Umsetzung =====
+==== AZAD_Export ====
+[[https://github.com/marcel-suter-bzz/AZAD_Export.git]]
+
+Pythonscript das die Benutzer und Gruppen aus der Azure AD liest.
+
+=== Pfade ===
+  * Applikation: ''/opt/azad_export''
+  * Daten
+    * Personen: ''/data/exam/people2.json'' wird per Script nach ''people.json'' kopiert
+    * Gruppen: ''/data/groups.json''
+
+==== Mdl_Cohorts ====
+[[https://github.com/marcel-suter-bzz/MDL_Cohort.git]]
+
+Pythonscript welches die globalen Gruppen in Moodle erstellt und aktualisiert.
+
+=== Pfade ===
+  * Applikation: ''/opt/mdl_cohort''
+  * Daten: FIXME

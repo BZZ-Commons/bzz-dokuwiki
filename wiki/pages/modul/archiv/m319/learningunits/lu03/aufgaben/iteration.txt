@@ -1,0 +1,25 @@
+====== Übungen: PAP - Iterationen ======
+
+Stellen Sie die beschriebenen Abläufe mit einer kopfgesteuerten Iteration, Selektionen und Sequenzen dar.
+Beachten Sie: Die Bedingung einer Iteration muss mittels **Solange ...** formuliert werden.
+
+===== Aufgabe 1: Zahlen raten =====
+Der Computer generiert zu Beginn eine Zufallszahl (''Sequenz: zufall generieren'').
+Der Benutzer gibt nun einer Zahl ein.
+Solange die eingegebene Zahl nicht der Zufallszahl entspricht, gibt der Computer "falsch" aus und der Benutzer kann eine neue Zahl eingeben.
+Der Benutzer gibt nun solange Zahlen ein, bis er die Zufallszahl erraten hat.
+Am Schluss zeigt der Computer "Richtig" an.
+
+Hinweis: Die Sequenz "Eingabe: ..." kommt zweimal vor.
+
+===== Aufgabe 2: Passwort =====
+Der Benutzer soll sein Passwort eingeben.
+
+Solange das Passwort falsch ist, erscheint eine Fehlermeldung.
+Nach der Fehlermeldung soll der Benutzer sein Passwort erneut eingeben.
+
+Ist das Passwort korrekt, so gibt das Programm "Willkommen" aus.
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Marcel Suter

@@ -1,0 +1,13 @@
+====== LU05.L04 - Nichtfunktionale Anforderungen ======
+
+Folgende Anforderungen sind Beispiele für nichtfunktionale Anforderungen:
+
+  * **Performanz:** Die Ladezeit einer Webseite darf 3 Sekunden nicht überschreiten.
+  * **Sicherheit:** Das System muss alle Benutzerdaten verschlüsselt speichern und den neuesten Sicherheitsstandards entsprechen.
+  * **Usability:** Das System muss einfach und intuitiv bedienbar sein. Die Hauptfunktionen sollen innerhalb von zwei Klicks erreichbar sein.
+  * **Portabilität:** Das System muss auf verschiedenen Plattformen und Browsern funktionieren.
+  * **Skalierbarkeit:** Das System muss in der Lage sein, bei steigenden Benutzerzahlen stabil zu laufen.
+
+----
+{{tag>M431-LU05}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Kevin Maurizi

@@ -1,0 +1,50 @@
+====== LU06.A03 - ToDo-Liste mit SQLite und DAO-Klassen ======
+
+
+<WRAP center round todo 60%>
+In dieser Übung wirst du eine einfache ToDo-Liste implementieren, die SQLite als Datenbank verwendet. Du wirst eine DAO-Klasse erstellen, die die CRUD-Operationen (Create, Read, Update, Delete) für die ToDo-Elemente handhabt.
+</WRAP>
+
+
+===== Detaillierte Aufgabenstellung =====
+
+  * Erstelle eine ''TodoItem''-Klasse mit den Attributen ''item_id'', ''title'' und ''is_completed''.
+  * Verwende den ''@dataclass''-Dekorator für die ''TodoItem''-Klasse.
+  * Erstelle eine ''TodoDao''-Klasse, die die CRUD-Operationen für die ''TodoItem''-Elemente handhabt.
+  * Implementiere die folgenden Funktionen in der ''TodoDao''-Klasse:
+    - ''create_table()'': Erstellt die Tabelle, falls sie nicht existiert.
+    - ''add_item()'': Fügt ein neues ToDo-Element zur Datenbank hinzu.
+    - ''get_item()'': Ruft ein ToDo-Element anhand seiner ID ab.
+    - ''get_all_items()'': Ruft alle ToDo-Elemente aus der Datenbank ab.
+    - ''update_item()'': Aktualisiert ein bestehendes ToDo-Element.
+    - ''delete_item()'': Löscht ein ToDo-Element anhand seiner ID.
+    - ''close()'': Schließt die Datenbankverbindung.
+
+===== Code-Vorlage =====
+
+=== Main ===
+{{gh>https://github.com/templates-python/m323-lu06-a03-dao/blob/main/main.py}}
+=== todoDao ===
+{{gh>https://github.com/templates-python/m323-lu06-a03-dao/blob/main/todoDao.py}}
+=== todoItem ===
+{{gh>https://github.com/templates-python/m323-lu06-a03-dao/blob/main/todoItem.py}}
+===== Vorgehen =====
+  - Akzeptiere das GitHub Classroom Assignment
+  - Klone dein persönliches Repository in die Entwicklungsumgebung
+  - Beginne mit der Implementierung der ''TodoItem''-Klasse. Verwende den ''@dataclass''-Dekorator.
+  - Erstelle die ''TodoDao''-Klasse und implementiere die Methode ''create_table()''.
+  - Füge die Methoden ''add_item()'', ''get_item()'', ''get_all_items()'', ''update_item()'' und ''delete_item()'' zur ''TodoDao''-Klasse hinzu.
+  - Teste alle Methoden, um sicherzustellen, dass sie wie erwartet funktionieren.
+
+===== Abgabe =====
+Die Abgabe der Lösung erfolgt als Push in das persönliche GitHub-Repository.
+
+----
+<details>
+<summary>//=> GitHub Repo für externe Besucher//</summary>
+GitHub Repository https://github.com/templates-python/m323-lu06-a03-dao
+
+//Lernende am BZZ müssen den Link zum GitHub Classroom Assignment verwenden//
+
+</details>
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/ch/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Kevin Maurizi 

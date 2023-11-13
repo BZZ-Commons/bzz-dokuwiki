@@ -1,0 +1,40 @@
+====== LU03.L03 - Tabelle erstellen ======
+
+[[https://templates-html.github.io/M293_LU03_03_Table/table.html|Live Preview]]
+<code html4strict>
+  <table>
+    <tr>
+      <th>Marke</th>
+      <th colspan='2'>Modelle</th>
+    </tr>
+    <tr>
+      <td rowspan='2'>Ferrari</td>
+      <td>LaFerrari</td>
+      <td>Enzo</td>
+    </tr>
+    <tr>
+      <td>458 Italia</td>
+      <td>488 GTB</td>
+    </tr>
+    <tr>
+      <td>Lamborghini</td>
+      <td colspan='2'>Aventador</td>
+    </tr>
+    <tr>
+      <td rowspan='2'>Porsche</td>
+      <td>911</td>
+      <td>918 Spyder</td>
+    </tr>
+    <tr>
+      <td>Panamera</td>
+      <td>Cayman</td>
+    </tr>
+  </table>
+</code>
+
+---- 
+
+{{tag>m293-LU03}}
+[[https://github.com/templates-html/M293_LU03_03_Table|Repository]]
+
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Kevin Maurizi, Marcel Suter

@@ -1,0 +1,43 @@
+====== LU05.L01 - Netzwerk ======
+
+==== Auf welche Ressource greift der Browser als erstes zu? ====
+''https://it.bzz.ch/demo/network''
+
+=== Welchen HTTP-Status sendet der Server? ===
+''301 Moved Permanently''
+
+== Hintergründe ==
+Die angegebene Adresse ''https://it.bzz.ch/demo/network'' ist ein Ordner.
+Der Webserver kann aber keinen Ordner als Antwort auf einen Request senden.
+Deshalb schickt uns der Webserver weiter zur Datei ''index.html''.
+Diese Datei ist sozusagen die Default-Datei die angezeigt wird, wenn die Adresse im Browser auf einen Ordner und nicht eine Datei zeigt.
+
+==== Welche Ressourcen liest der Client. Geben Sie alle Webadressen (URL) an. ====
+  * ''https://it.bzz.ch/demo/network''
+  * ''https://it.bzz.ch/demo/network/duh.png''
+  * ''https://it.bzz.ch/demo/network/img/teachers.png''
+
+==== Was befindet sich in der Antwort des ersten erfolgreichen Requests? ====
+Die Antwort enthält den HTML-Code für die Anzeige der Seite.
+
+==== Welche HTTP-Methode wurde verwendet? ====
+''POST''
+
+==== Welche Daten wurden im Body des Requests mitgesendet? ====
+''firstname=Marcel&lastname=Suter''
+
+==== Welche Antwort (HTTP-Status, Daten) hat der Server geschickt? ====
+HTTP-Status: 200
+<code>
+HTTP-Methode:	POST
+Eingabefelder:
+ 	firstname	=	Marcel
+ 	lastname	=	Suter
+</code>
+
+----
+[[https://github.com/teacher-html/demo]]
+
+{{tag>m293-LU05}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Kevin Maurizi, Marcel Suter
+

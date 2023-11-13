@@ -1,0 +1,31 @@
+===== Ein- und Ausgaben realisieren (Sequenzen) =====
+
+=== Einleitung ===
+Eingaben und Ausgaben gehören zu den typischen Befehlen eines Programms.
+
+Zur Erinnerung:
+  * System.out.print("???") \\ //Gibt eine Zeichenkette aus.//
+  * System.out.println("???") \\ //Gibt eine Zeichenkette und anschliessend einen Zeilenumbruch aus.//
+  * variable = scanner.nextLine() \\ // Liest eine Zeichenkette und speichert diese in der Variable.//
+  * variable = scanner.nextLine().charAt(0) \\ // Liest eine Zeichenkette und speichert das erste Zeichen in der Variable.//
+
+=== Auftrag ===
+Realisieren Sie die Eingaben und Ausgaben im Programm.
+
+<WRAP center round info 60%>
+Das Scanner-Objekt (''static Scanner scanner'') wurde bereits deklariert. 
+Auch das Öffnen (''scanner = new Scanner(System.in)'') und Schliessen (''scanner.close()'') ist bereits in der Vorlage umgesetzt.
+</WRAP>
+
+== Vorgehen ==
+  - Ausgaben realisieren
+    - Ersetzen Sie im Programm die Kommentare für die Ausgaben (TODO-2.1) mit den korrekten Befehlen.
+    - Kompilieren Sie das Programm und korrigieren Sie allfällige Fehler.
+    - Führen Sie das Programm aus; Sie sehen die Ausgaben in der Konsole.
+  - Eingaben realisieren
+    - Ersetzen Sie die Kommentare für die Eingaben (TODO-2.2) mit den korrekten Befehlen.
+    - Kompilieren Sie das Programm und korrigieren Sie allfällige Fehler.
+    - Führen Sie das Programm aus; Sie können nun 2x ein Zeichen eingeben.
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Marcel Suter

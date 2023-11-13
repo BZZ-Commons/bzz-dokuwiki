@@ -1,0 +1,25 @@
+====== LU03.A03 - Tabelle erstellen ======
+
+<WRAP center round todo 60%>
+Erstellen Sie eine Tabelle, die identisch strukturiert ist wie die Tabelle in den Vorgaben.
+</WRAP>
+
+
+===== Vorgaben =====
+
+{{ :modul:m293:learningunits:lu03:aufgaben:table.png?600 |}}
+Als Vorlage erhalten Sie eine HTML-Datei ''table.html'' mit einem HTML-Template.
+
+
+===== Vorgehen =====
+  - Akzeptieren Sie das Assignment im Moodle-Kurs. \\ => Sie erhalten ein persönliches Repository.
+  - Klonen Sie das Repository in Webstorm.
+  - Lösen Sie die ToDo's
+  - Geben Sie Ihre Lösung mittels Commit & Push ins Github-Repository ab.
+
+---- 
+
+{{tag>m293-LU03}}
+<nodisp>[[https://github.com/templates-html/M293_LU03_03_Table|Repository]]</nodisp>
+
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Kevin Maurizi, Marcel Suter

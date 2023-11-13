@@ -1,0 +1,20 @@
+====== LU04.L03: Münzenspiel ======
+
+==== Blockly ====
+{{:modul:m319python:learningunits:lu04:loesungen:lu04_muenzenspiel_blockly.png?600|}}
+
+==== Python ====
+<code python>
+import random
+coin_total = random.randint(11, 20)
+player = 1
+print('Willkommen zum Münzenspiel')
+while coin_total > 0:
+    print('Es sind noch ' + str(coin_total) + ' Münzen auf dem Stapel')
+    input = input('Spieler ' + str(player) + ' nimm 1-3 Münzen >')
+    coin_take = int(input)
+    coin_total = coin_total - coin_take
+    player = 3 - player
+print('Spieler ' + str(player) + ' hat verloren')
+
+</code>

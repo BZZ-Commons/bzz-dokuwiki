@@ -1,0 +1,33 @@
+====== LU01.L02 - Vorlage erweitern ======
+Ihre neue Vorlage sollte so aussehen:
+<code html>
+<!doctype html>
+<html lang='de'>
+<head>
+  <meta charset='utf-8'>
+  <title>Title</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+    </nav>
+  </header>
+  
+  <main>
+    <article>
+      <section>
+      </section>
+      <section>
+      </section>
+    </article>
+  </main>
+
+  <footer>
+  </footer>
+</body>
+</html>
+</code>
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Kevin Maurizi, Marcel Suter

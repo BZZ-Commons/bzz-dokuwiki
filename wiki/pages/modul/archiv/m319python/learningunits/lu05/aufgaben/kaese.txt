@@ -1,0 +1,79 @@
+====== LU05.A03: Käsebank ======
+<WRAP center round info 60%>
+Lösen Sie die Aufgabe mit [[https://think.cs.vt.edu/blockpy/blockpy/|BlockPy]] oder [[https://www.codingrooms.com/compiler/python-block|Codingrooms]]
+
+Laden Sie einen Screenshot ihres Blockly-Ablaufs hoch.
+</WRAP>
+===== Beschreibung =====
+Die Mäuse in Käseland haben einen Geldautomaten entwickelt.
+Dadurch können Sie rund um die Uhr Käsedollar (KD) beziehen.
+
+Der Geldautomat kann Noten mit 5 unterschiedlichen Werten ausgeben.
+=== Beispiele ===
+
+^ Beispiel 1 ^ Beispiel 2 ^
+| 200 KD | 192 KD | 
+| 100 KD | 48 KD | 
+| 75 KD | 12 KD | 
+| 25 KD | 3 KD | 
+| 1 KD | 1 KD | 
+
+Zum Beziehen von Käsedollar gibt eine Maus den gewünschten Betrag ein.
+Der Automat wird immer die grösstmöglichen Noten ausgeben.
+
+=== Beispiele ===
+^ Beispiel 1 ^ Beispiel 2 ^ 
+| <code>
+Betrag: 80
+Ausgabe: 
+  75 KD 
+  1 KD
+  1 KD 
+  1 KD 
+  1 KD
+  1 KD 
+</code> | <code>
+Betrag: 80
+Ausgabe: 
+  48 KD
+  12 KD
+  12 KD
+  3 KD
+  3 KD
+  1 KD
+  1 KD 
+</code> | 
+| <code>
+Betrag: 26
+Ausgabe: 
+  25 KD
+  1 KD 
+</code> | <code>
+Betrag: 26
+Ausgabe: 
+  12 KD
+  12 KD
+  1 KD
+  1 KD 
+</code> |
+
+==== Programmablauf ====
+<WRAP center round info 60%>
+Sie können beliebige Ganzahlen für die verfügbaren Noten wählen.
+  * Die kleinste Note muss 1 sein.
+  * Tragen Sie die Zahlen von der grössten zur kleinsten Zahl in die Liste ein.
+</WRAP>
+
+  - Erzeuge eine Liste ''bills'' mit den verfügbaren Noten
+  - Der Benutzer gibt den gewünschten Betrag ein
+  - Index = 0
+  - Solange der Betrag grösser 0 ist
+    - Falls bills[Index] grösser als der Betrag ist
+      - Erhöhe den Index um 1
+    - Sonst
+      - Gib bills[Index] aus
+      - Reduziere den Betrag um bills[Index]
+
+----
+{{tag>319-C1G 319-C1F 319-C1E}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

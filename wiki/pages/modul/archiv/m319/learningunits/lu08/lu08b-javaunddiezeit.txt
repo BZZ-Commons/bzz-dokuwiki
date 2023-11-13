@@ -1,0 +1,274 @@
+====== LU08b - Java und die Zeit ======
+Das speichern von Zeit und Datumswerten ist in vielen Applikationen notwendig. Java bietet uns mit den Datentypen ''LocalDate'', ''LocalTime'',  ''LocalDateTime'', ''Period'' und ''Duration'' aus der Bibliothek ''java.time'' einen eifach zu benutzenden Datentyp dafür.
+
+===== Einfache Datumswerte - LocalDate =====
+Einfache Datumswerte beinhalten lediglich das Datum, ohne Zeitangabe.
+
+==== LocalDate erstellen ====
+
+Es gibt verschiedene Möglichkeiten ein ''LocalDate'' zu erstellen, das den ''8. Januar 2020'' darstellt: 
+
+
+Wir erstellen das ''LocalDate'' über den Aufruf der ''of()'' Methode.
+<code java>LocalDate date = LocalDate.of(2020, 1, 8);</code>
+
+
+Der Monat kann auch mit dem Enum Month angegeben werden:
+<code java>LocalDate date = LocalDate.of(2020, Month.JANUARY, 8)</code>
+
+
+Eine weitere Möglichkeit besteht darin, ein Datum durch Parsen einer Zeichenkette (String) zu erzeugen. Wir können die parse-Methode mit nur einem einzigen Argument verwenden, um ein Datum im Format yyyy-mm-dd zu analysieren:
+<code java>LocalDate date = LocalDate.parse("2020-01-08");</code>
+
+
+Wir können auch ein anderes Datumsformat angeben, dies mit Hilfe der DateTimeFormatter-Klasse als zweiten Parameter der Parse-Methode:
+<code java>LocalDate date = LocalDate.parse("8-Jan-2020", DateTimeFormatter.ofPattern("d-MMM-yyyy"));</code>
+
+==== LocalDate funktionen ====
+Hier sind einige Funktionen aufgelistet, die LocalDate bietet:
+
+Wir können vom LocalDate den heutige Tag erhalten:
+<code java>LocalDate date = LocalDate.now();</code>
+
+
+Wir können Tage/Wochen/Monate/Jahre hinzurechnen oder entfernen:
+<code java>
+LocalDate tomorrow = LocalDate.now().plusDays(1);
+LocalDate yesterday= LocalDate.now().minusDays(1);
+</code>
+Es gibt auch passend dazu die Funktionen ''plus/minusWeeks'', ''plus/minusMonths'' und ''plus/minusYears''
+
+
+Wir können Datumswerte vergleichen:
+<code java>
+boolean notBefore = LocalDate.parse("2042-06-12").isBefore(LocalDate.parse("2042-06-11"));
+boolean isAfter = LocalDate.parse("2042-06-12").isAfter(LocalDate.parse("2042-06-11"));
+</code>
+
+
+Wir können feststellen ob es ein Schaltjahr ist:
+<code java>boolean leapYear = LocalDate.now().isLeapYear();</code>
+
+
+Wir können die Zeit zwischen den Daten berechnen:
+<code java>
+LocalDate tomorrow = LocalDate.now().plusDays(1);
+LocalDate yesterday= LocalDate.now().minusDays(1);
+
+Period timeBetween = Period.between(yesterday, tomorrow); // Wir erhalten den Datentyp Period. Mehr dazu im Kapitel zu Period
+</code>
+
+Wir können einzelne Tage/Monate/Jahre abfragen.
+<code java>
+LocalDate today = LocalDate.now();
+int day = today.getDayOfMonth();
+int month = today.getMonthValue();
+int year = today.getYear();
+</code>
+
+<WRAP center round tip 60%>
+Es gibt noch viele weitere Funktionen die zur Verfügung stehen, eine Liste mit Beschreibung finden Sie im [[https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html|Java-API]]
+</WRAP>
+
+
+===== Einfache Zeitwerte - LocalTime =====
+Einfache Zeitwerte beinhalten lediglich die Zeit, ohne Datumsangabe.
+==== LocalTime erstellen ====
+Es gibt verschiedene Möglichkeiten eine ''LocalTime '' zu erstellen, die den ''7:30 Uhr'' darstellt: 
+
+Wir erstellen die ''LocalTime'' über den Aufruf der ''of()'' Methode.
+<code java>LocalTime time = LocalTime.of(7, 30);</code>
+
+Eine weitere Möglichkeit besteht darin, eine Zeit durch Parsen einer Zeichenkette (String) zu erzeugen. Wir können die parse-Methode mit nur einem einzigen Argument verwenden, um ein Datum im Format hh-mm zu analysieren:
+<code java>LocalTime time = LocalTime.parse("07:30");</code>
+
+==== LocalTime funktionen ====
+Hier sind einige Funktionen aufgelistet, die LocalTime bietet:
+
+Wir können eine LocalTime von der aktuellen Zeit erhalten:
+<code java>LocalTime now = LocalTime.now();</code>
+
+
+Wir können Sekunden/Minuten/Stunden hinzurechnen oder entfernen:
+<code java>
+LocalTime in5Minutes = LocalTime.now().plusMinutes(5);
+LocalTime before5Minutes = LocalTime.now().minusMinutes(5);
+</code>
+Es gibt auch passend dazu die Funktionen ''plus/minusSeconds'' und ''plus/minusHours''
+
+
+Wir können Zeitwerte vergleichen:
+<code java>
+boolean notBefore = LocalTime.parse("7:30").isBefore(LocalTime.parse("6:30"));
+// oder auch
+LocalTime time = LocalTime.parse("2:45");
+boolean isAfter = LocalTime.parse("7:30").isAfter(time);
+// oder auch
+LocalTime time0 = LocalTime.parse("2:45");
+LocalTime time1 = LocalTime.parse("7:30");
+boolean isAfter = time1.isAfter(time);
+</code>
+
+
+Wir können die Zeit zwischen zwei Uhrzeiten berechnen:
+<code java>
+LocalTime time0 = LocalTime.parse("2:45");
+LocalTime time1 = LocalTime.parse("7:30");
+
+Duration duration = Duration.between(time0, time1);  // Wir erhalten den Datentyp Duration. Mehr dazu im Kapitel zu Duration.
+</code>
+
+Wir können einzelne Stunden/Minuten/Sekunden abfragen.
+<code java>
+LocalTime now = LocalTime.now();
+int hour = now.getHour();
+int minute = now.getMinute();
+int second = now.getSecond();
+</code>
+
+<WRAP center round tip 60%>
+Es gibt noch viele weitere Funktionen die zur Verfügung stehen, eine Liste mit Beschreibung finden Sie im [[https://docs.oracle.com/javase/8/docs/api/java/time/LocalTime.html|Java-API]]
+</WRAP>
+
+===== Einfache Zeitdatumswerte - LocalDateTime =====
+LocalDateTime wird verwendet, um eine Kombination aus Datum und Uhrzeit darzustellen. Dies ist die am häufigsten verwendete Klasse, wenn wir eine Kombination aus Datum und Uhrzeit benötigen.
+==== LocalDateTime erstellen ====
+
+Es gibt verschiedene Möglichkeiten ein ''LocalDateTime'' zu erstellen, das den ''8. Januar 2020 13:30'' darstellt: 
+
+
+Wir erstellen das ''LocalDateTime'' über den Aufruf der ''of()'' Methode.
+<code java>LocalDateTime date = LocalDateTime.of(2020, 1, 8, 13, 30);</code>
+
+
+Der Monat kann auch mit dem Enum Month angegeben werden:
+<code java>LocalDate date = LocalDate.of(2020, Month.JANUARY, 8, 13, 30)</code>
+
+
+Eine weitere Möglichkeit besteht darin, ein Datum durch Parsen einer Zeichenkette (String) zu erzeugen. Wir können die parse-Methode mit nur einem einzigen Argument verwenden, um ein Datum im Format yyyy-mm-ddThh:mm zu analysieren:
+<code java>LocalDateTime dateTime= LocalDateTime.parse("2020-01-08T13:30");</code>
+
+
+Wir können auch ein anderes Datumszeitformat angeben, dies mit Hilfe der DateTimeFormatter-Klasse als zweiten Parameter der Parse-Methode:
+<code java>LocalDateTime dateTime = LocalDateTime.parse("08.01.2020 13:30", DateTimeFormatter.ofPattern("d.M.yyyy HH:mm"));</code>
+
+==== LocalDateTime funktionen ====
+Hier sind einige Funktionen aufgelistet, die LocalDateTime bietet:
+
+Wir können vom LocalDateTime den heutige Tag mit der Uhrzeit erhalten:
+<code java>LocalDateTime date = LocalDateTime.now();</code>
+
+
+Wir können Tage/Wochen/Monate/Jahre hinzurechnen oder entfernen:
+<code java>
+LocalDateTime tomorrow = LocalDateTime.now().plusDays(1);
+LocalDateTime yesterday = LocalDateTime.now().minusDays(1);
+</code>
+Es gibt auch passend dazu die Funktionen ''plus/minusSeconds'', ''plus/minusMinutes'', ''plus/minusHours'', ''plus/minusWeeks'', ''plus/minusMonths'' und ''plus/minusYears''
+
+
+Wir können Datumswerte vergleichen:
+<code java>
+boolean notBefore = LocalDateTime.parse("2042-06-12T13:30").isBefore(LocalDateTime.parse("2042-06-11T04:30"));
+boolean isAfter = LocalDateTime.parse("2042-06-12T13:30").isAfter(LocalDateTime.parse("2042-06-11T04:30"));
+</code>
+
+
+Wir können die Zeit zwischen den Daten berechnen:
+<code java>
+LocalDateTime tomorrow = LocalDateTime.now().plusDays(1);
+LocalDateTime yesterday = LocalDateTime.now().minusDays(1);
+        
+Duration timeBetween = Duration.between(yesterday, tomorrow); // Wir erhalten den Datentyp Duration. Mehr dazu im Kapitel zu Duration
+</code>
+
+Wir können einzelne Tage/Monate/Jahre abfragen.
+<code java>
+LocalDateTime today = LocalDateTime.now();
+int day = today.getDayOfMonth();
+int month = today.getMonthValue();
+int year = today.getYear();
+int hour = today.getHour();
+int minute = today.getMinute();
+</code>
+
+<WRAP center round tip 60%>
+Es gibt noch viele weitere Funktionen die zur Verfügung stehen, eine Liste mit Beschreibung finden Sie im [[https://docs.oracle.com/javase/8/docs/api/java/time/LocalDateTime.html|Java-API]]
+</WRAP>
+===== Period =====
+Die Klasse Period verwendet die Einheiten **Jahr, Monat und Tag** zur Darstellung eines Zeitraums.
+
+Wir können ein Period-Objekt als Differenz zwischen zwei Daten erhalten, indem wir die Methode between() verwenden:
+
+<code java>
+LocalDate startDate = LocalDate.of(2015, 2, 20);
+LocalDate endDate = LocalDate.of(2017, 1, 15);
+
+Period period = Period.between(startDate, endDate);
+</code>
+
+Anschließend können wir die Datumseinheiten des Zeitraums mit den Methoden ''getYears()'', ''getMonths()'', ''getDays()'' ermitteln:
+<code java>
+System.out.println("Years:" + period.getYears() + 
+  " Months:" + Zeitraum.getMonths() + 
+  " Days: "+Zeitraum.getTage());
+</code>
+
+Die Methode ''isNegative()'', die ''true'' zurückgibt wenn eine der Einheiten negativ ist, kann verwendet werden, um festzustellen, ob das Enddatum höher ist als das Startdatum:
+<code java>System.out.println(period.isNegative())</code>
+Wenn ''isNegative()'' den Wert false zurückgibt, dann liegt das Startdatum vor dem Enddatum.
+
+Eine andere Möglichkeit, ein Period-Objekt zu erstellen, basiert auf der Anzahl der Tage, Monate, Wochen oder Jahre unter Verwendung spezieller Methoden:
+
+<code java>
+Period fromUnits = Period.of(3, 10, 10);
+Period fromDays = Period.ofDays(50);
+Period fromMonths = Period.ofMonths(5);
+Period fromYears = Period.ofYears(10);
+Period fromWeeks = Period.ofWeeks(40);
+</code>
+
+<WRAP center round tip 60%>
+Es gibt noch viele weitere Funktionen die zur Verfügung stehen, eine Liste mit Beschreibung finden Sie im [[https://docs.oracle.com/javase/8/docs/api/java/time/Period.html|Java-API]]
+</WRAP>
+
+===== Duration =====
+Die Klasse Duration stellt ein Zeitintervall in Sekunden oder Nanosekunden dar und eignet sich am besten für die Handhabung kürzerer Zeitspannen in Fällen, die mehr Präzision erfordern.
+
+Wir können die Differenz zwischen zwei Zeitpunkten als Duration-Objekt mit der Methode ''between()'' bestimmen:
+<code java>
+LocalTime start = LocalTime.of(1, 20, 25, 1024); //(Stunde, Minute, Sekunde, Nanosekunden)
+LocalTime end = LocalTime.of(3, 22, 27, 1544);
+
+Duration.between(start, end).getSeconds();
+</code>
+Dann können wir die Methoden getSeconds() oder getNanoseconds() verwenden, um den Wert der Zeiteinheiten zu bestimmen:
+<code java>System.out.println(duration.getSeconds());</code>
+
+
+Die Methode isNegative() kann verwendet werden, um zu überprüfen, ob der Endzeitpunkt größer ist als der Startzeitpunkt:
+<code java>boolean isNegative = duration.isNegative();</code>
+
+
+Wir können auch ein Duration-Objekt auf der Grundlage mehrerer Zeiteinheiten erhalten, indem wir die Methoden ''ofDays()'', ''ofHours()'', ''ofMillis()'', ''ofMinutes()'', ''ofNanos()'' oder ''ofSeconds()'' verwenden:
+<code java>
+Duration fromDays = Duration.ofDays(1);
+Duration fromMinutes = Duration.ofMinutes(60);
+</code>
+
+Eine Dauer kann mit ''toDays()'', ''toHours()'', ''toMillis()'' und ''toMinutes()'' in andere Zeiteinheiten umgewandelt werden:
+<code java>long stunden = fromMinutes.toHours();</code>
+
+Ein Dauerwert kann durch Methoden der Form ''plusX()'' oder ''minusX()'' erhöht oder verringert werden, wobei X für Tage, Stunden, Millis, Minuten, Nanos oder Sekunden stehen kann:
+<code java>
+Duration fromSeconds = Duration.ofSeconds(60);
+fromSeconds.plusSeconds(60); // neu 120 Sekunden     
+fromSeconds.minusSeconds(30); // neu 90 Sekunden
+</code>
+
+<WRAP center round tip 60%>
+Es gibt noch viele weitere Funktionen die zur Verfügung stehen, eine Liste mit Beschreibung finden Sie im [[https://docs.oracle.com/javase/8/docs/api/java/time/Duration.html|Java-API]]
+</WRAP>
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Kevin Maurizi

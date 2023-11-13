@@ -1,0 +1,100 @@
+====== Erfolgreichen Linter-Run in Moodle übernehmen ======
+
+===== Voraussetzung =====
+Die Lernenden müssen Ihren GitHub-Benutzernamen in ihrem Moodle-Profil eintragen.
+Unter "Weitere Namen" befindet sich das Feld "Pseudonym".
+
+===== Workflow in Template =====
+  - Öffne das Repository mit dem Template für das Assignment.
+  - Erstelle die Ordner ''.github/linters'' und ''.github/workflows''.
+  - Erstelle die Datei ''report-to-moodle.yml'' in ''.github/workflows''. \\ <code yml>
+name: Report to Moodle Workflow incl Linter
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+permissions:
+  checks: write
+  actions: read
+  contents: read
+
+jobs:
+  run-lint:
+    if: ${{ !contains(github.actor, 'classroom') }}
+    name: Lint the Code which is committed
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+        with:
+          # Full git history is needed to get a proper list of changed files within `super-linter`
+          fetch-depth: 0
+      - name: Lint Code Base
+        uses: super-linter/super-linter/slim@v5
+        env:
+          VALIDATE_ALL_CODEBASE: true
+          DEFAULT_BRANCH: "main"
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  report-to-moodle:
+    needs: run-lint
+    if: ${{ !contains(github.actor, 'classroom') }}
+    name: Report to Moodle that Linter was successfully
+    runs-on: ubuntu-latest
+    steps:
+      - name: Call FGIT-API and send points to Moodle
+        if: always()
+        run: |
+          curl -X POST "https://it.bzz.ch/fgitapi/gh_grade/${{ github.repository }}/2/2"
+</code>
+  - Erstelle die Datei ''.htmlhintrc'' in ''.github/linters''.\\ <code>
+{
+  "doctype-first": true,
+  "doctype-html5": true,
+  "html-lang-require": true,
+  "head-script-disabled": true,
+  "style-disabled": true,
+  "script-disabled": true,
+  "attr-lowercase": true,
+  "attr-no-duplication": true,
+  "attr-no-unnecessary-whitespace": true,
+  "attr-unsafe-chars": true,
+  "attr-value-double-quotes": true,
+  "attr-value-single-quotes": false,
+  "attr-value-not-empty": false,
+  "attr-sorted": false,
+  "attr-whitespace": true,
+  "alt-require": true,
+  "input-requires-label": true,
+  "tags-check": false,
+  "tag-pair": true,
+  "tag-self-close": false,
+  "tagname-lowercase": true,
+  "tagname-specialchars": true,
+  "empty-tag-not-self-closed": false,
+  "src-not-empty": true,
+  "href-abs-or-rel": false,
+  "id-class-ad-disabled": true,
+  "id-class-value": "dash",
+  "id-unique": true,
+  "inline-script-disabled": true,
+  "inline-style-disabled": true,
+  "space-tab-mixed-disabled": "space",
+  "spec-char-escape": true
+}
+</code>
+
+
+===== Classroom Assignment =====
+  - Erstelle ein neues Assignment in GitHub Classroom.
+    * Der Name des Assignments darf **keinen Bindestrich** enthalten.
+    * Merke dir den Namen des Assignments, z.B. "m319_lU08_a01_multiply".
+    * Wähle das Template aus dem letzten Abschnitt aus.
+
+
+===== Aufgabe in Moodle =====
+  - Erstelle eine Aufgabe in Moodle.
+  - Trage den Namen des Classroom Assignments unter "Weitere Einstellungen" => "ID-Nummer" ein.
+

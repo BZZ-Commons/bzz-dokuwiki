@@ -1,0 +1,55 @@
+====== LU04.A10 - Größter gemeinsamer Teiler mit reduce ======
+
+<WRAP center round todo 60%>
+Verwende die ''reduce''-Funktion, um den größten gemeinsamen Teiler (GGT) einer Liste von Zahlen zu finden.
+</WRAP>
+
+===== Aufgabenstellung =====
+
+  * Gegeben ist eine Liste von Zahlen, z. B. ''[12, 15, 21]''.
+  * Verwende die ''reduce''-Funktion, um den größten gemeinsamen Teiler dieser Zahlen zu finden.
+
+
+<WRAP center round info 60%>
+In der [[modul:m323:learningunits:lu01:aufgaben:imperativereuklid|Aufgabe LU01.A02]] haben wir den Algorithmus von Euklid bereits kennengelernt.
+</WRAP>
+
+===== Vorlage =====
+<code python>
+from functools import reduce
+
+# Der Algorithmus von Euklid ist etwas zu lange um ihn nur als Lambda-Funktion zu schreiben.
+# Deshalb schreiben wir eine Funktion, die den Algorithmus implementiert.
+def euklid(a, b):
+    """
+    Berechnet den größten gemeinsamen Teiler von a und b.
+    Args:
+    - a (int): Eine Zahl.
+    - b (int): Eine Zahl.
+    Returns:
+    - int: Der größte gemeinsame Teiler von a und b.
+    """
+    return 0
+
+
+def gcd(numbers):
+    """
+    Berechnet den größten gemeinsamen Teiler einer Liste von Zahlen.
+    Benutzt dazu die Funktion euklid(a, b) mit reduce().
+    Args:
+    - numbers (list): Eine Liste von Zahlen.
+    Returns:
+    - int: Der größte gemeinsame Teiler der Liste.
+    """
+    return 0
+
+
+if __name__ == '__main__':
+    numbers = [12, 15, 21]
+    result = gcd(numbers)
+    print(result)  # Sollte 3 ausgeben
+</code>
+
+----
+<nodisp>https://github.com/templates-python/m323-lu04-a10-reduce</nodisp>
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/ch/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Kevin Maurizi 

@@ -1,0 +1,25 @@
+==== Aufgabe 2 - UML mit Delegation ====
+
+=== Ziel ===
+
+  * Sie wissen, wie Sie Delegation für den statischen und dynamischen Entwurf einsetzen.
+
+=== Auftrag ===
+
+  - Statischer Entwurf: 
+    * Wählen Sie aus den //Alltagsbeispielen// in der Theorie eines aus (oder erfinden Sie ggf. ein eigenes).
+    * Erstellen Sie dafür ein Klassendiagramm inkl. Attribute und Methoden.
+  - Dynamische Entwurf:
+    * Erstellen Sie ein Sequenzdiagramm und zeigen Sie die Kommunikation zwischen den Objekten anhand eines einfachen Beispiels.
+  - Bewertung bezgl. IOSP (optional): 
+    * Gibt es in Ihrem Entwurf öffentliche Methoden mit einer reinen Operation resp. Integration? 
+    * Nennen Sie je ein Beispiel.
+ 
+=== Hinweis ===
+
+  * reine Operation = keine Verwendung von anderem Code, nur eigene Logik
+  * reine Integration = Aufrufe von fremdem Code, ohne eigene Logik
+
+=== Abgabe ===
+
+Geben Sie Ihren Entwurf als PDF via Moodle ab.

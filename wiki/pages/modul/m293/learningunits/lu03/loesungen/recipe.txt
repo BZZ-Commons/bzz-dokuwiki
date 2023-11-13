@@ -1,0 +1,130 @@
+====== LU03.L02 - Rezept strukturieren ======
+
+[[https://templates-html.github.io/M293_LU03_02_Recipe/recipe.html|Live Preview]] 
+
+<code html4strict>
+
+<body>
+<main>
+    <section>
+        <h1>Gefüllte Tomaten mit Pappardelle</h1>
+        <img src='schnelle_kueche_gefuellte_tomaten_mit_papardelle_0103223.webp' alt='Gefüllte Tomaten mit Pappardelle'
+             width='400' height='auto'>
+        <h2>Ein elegantes Pastagericht, dass dennoch erstaunlich schnell zubereitet ist.</h2>
+    </section>
+
+    <section>
+        <h3>Zutaten:</h3>
+        <p>(FÜR 2−3 PERSONEN)</p>
+        <ul>
+            <li><strong>1 Bund</strong> Frühlingszwiebel</li>
+            <li><strong>1 Teelöffel</strong> Butter</li>
+            <li><strong>0.5</strong> unbehandelte Zitrone</li>
+            <li><strong>6</strong> kleinere Tomaten à je ca. 70 g, siehe Einleitung</li>
+            <li>Salz, schwarzer Pfeffer aus der Mühle</li>
+            <li><strong>150 g</strong> Ricotta</li>
+            <li><strong>3 Esslöffel</strong> geriebener Parmesan</li>
+            <li><strong>4 Zweige</strong> glattblättrige Petersilie</li>
+            <li><strong>2</strong> Esslöffel Paniermehl</li>
+            <li><strong>1.5 Esslöffel</strong> Olivenöl</li>
+            <li><strong>1.5 Esslöffel</strong> Butter</li>
+        </ul>
+    </section>
+
+    <section>
+        <h3>Zubereitung:</h3>
+        <ol>
+            <li>
+                Frühlingszwiebeln rüsten. Von 2 Zwiebeln die weissen Knollen fein hacken. Das Grün sowie die dritte
+                Frühlingszwiebel für die Zubereitung der Papardelle beiseitelegen.
+            </li>
+            <li>
+                In einer kleinen Pfanne Butter schmelzen und gehackte Zwiebeln darin glasig dünsten. Am Schluss die
+                gelbe Schale von 1 Zitrone fein dazu reiben. In eine Schüssel geben, 1 Esslöffel Saft der Zitrone
+                auspressen und beifügen. Leicht abkühlen lassen.
+            </li>
+            <li>Inzwischen von den Tomaten einen Deckel abschneiden (für einen Salat beiseitestellen) und die Tomaten
+                aushöhlen. Diese auf der Innenseite mit Salz und Pfeffer würzen und mit der Öffnung nach unten auf
+                Küchenpapier setzen.
+            </li>
+            <li>
+                Den Backofen auf 200 Grad Umluft vorheizen.
+            </li>
+            <li>
+                Ricotta und Parmesan zu den gedünsteten Zwiebeln geben, alles mischen, mit Salz und Pfeffer würzen und
+                in einen Spritzsack füllen. Die Ricottamasse leicht bergartig in die Tomaten füllen und diese in eine
+                Gratinform setzen. Petersilie fein hacken und mit dem Paniermehl und Olivenöl mischen. Über die Tomaten
+                verteilen. Die Tomaten im 200 Grad heissen Ofen auf der zweituntersten Rille etwa 20 Minuten backen.
+            </li>
+            <li>
+                In einer grossen Pfanne reichlich Salzwasser für die Papardelle aufkochen und diese nach Packungsangabe
+                bissfest garen.
+            </li>
+            <li>
+                Inzwischen die dritte Frühlingszwiebel rüsten und mitsamt Grün schräg in dünne Scheiben schneiden. Das
+                Grün der beiden anderen Zwiebeln schräg in Röllchen schneiden. In einer Pfanne die Butter schmelzen und
+                die Frühlingszwiebeln darin kurz dünsten. Mit Salz und Pfeffer würzen.
+            </li>
+        </ol>
+    </section>
+
+    <section>
+        <h3>Tipps:</h3>
+        <p>Elegant sieht dieses Pastagericht aus, und dennoch hält sich die Küchenarbeit in Grenzen. Wenn man es für
+            Gäste zubereiten möchte, kann man die Tomaten auch schon am Vorabend füllen und sie bis kurz vor dem
+            Überbacken mit Klarsichtfolie gedeckt im Kühlschrank aufbewahren. Gut geeignet sind kleinere Tomaten, z.B.
+            die Sorten Aromatico oder Merinda.</p>
+    </section>
+
+    <section>
+        <h3>Nährwerte:</h3>
+        <ul>
+            <li>Pro Portion</li>
+            <li>1033 kKalorien</li>
+            <li>4322 kJoule</li>
+            <li>36g Eiweiss</li>
+            <li>55g Fett</li>
+            <li>95g Kohlenhydrate</li>
+        </ul>
+    </section>
+
+    <section>
+        <h3>Tags:</h3>
+        <ul>
+            <li>Vegetarisch</li>
+            <li>Gäste</li>
+            <li>Brunch</li>
+            <li>Ganzes Jahr</li>
+            <li>Sommer</li>
+            <li>Herbst</li>
+            <li>Frühling</li>
+            <li>Winter</li>
+            <li>Schnell/einfach</li>
+            <li>Ohne Fleisch</li>
+        </ul>
+    </section>
+</main>
+</body>
+
+</code>
+
+
+  * **<body>**: Dieses Element umfasst den gesamten Inhalt der Webseite, der den Benutzern angezeigt wird.
+  * **<main>**: Dieses semantische HTML5-Element wird verwendet, um den Hauptinhalt der Webseite zu umschließen, der einzigartig für das einzelne Dokument ist.
+  * **<section>**: Dies ist ein weiteres semantisches HTML5-Element, das verwendet wird, um zusammenhängende Inhalte zu gruppieren. Jede Sektion des Rezepts (wie Name, Zutaten, Zubereitung, etc.) wurde in einem eigenen <section>-Element platziert.
+  * **<h1>, <h2>, <h3>**: Dies sind Überschriftenelemente, die zur Strukturierung des Inhalts verwendet werden. <h1> ist die höchste Ebene, <h3> ist eine untergeordnete Ebene.
+  * **<img>**: Dieses Element wird verwendet, um ein Bild in die Webseite einzufügen. Das src-Attribut gibt den Pfad zur Bilddatei an, und das alt-Attribut bietet eine textbasierte Alternative für den Fall, dass das Bild nicht geladen werden kann.
+  * **<p>**: Dieses Element wird verwendet, um einen Absatz Text darzustellen.
+  * **<ul> und <li>**: Diese Elemente werden verwendet, um eine ungeordnete (nicht nummerierte) Liste darzustellen. <ul> ist das umschließende Element für die Liste, und jedes <li> repräsentiert ein einzelnes Listenelement.
+  * **<ol>**: Dieses Element wird verwendet, um eine geordnete (nummerierte) Liste darzustellen. Es funktioniert ähnlich wie <ul>, aber die Elemente in der Liste (<li>) werden nummeriert.
+  * **<strong>**: Dieses Element wird verwendet, um Text stark hervorzuheben, in den meisten Browsern wird der Text fett dargestellt. Es wird verwendet, um Mengenangaben in der Zutatenliste hervorzuheben.
+
+Diese Elemente zusammen ergeben eine gut strukturierte, semantisch korrekte HTML-Seite, die das Rezept auf klare und ansprechende Weise darstellt.
+
+
+---- 
+
+{{tag>m293-LU03}}
+[[https://github.com/templates-html/M293_LU03_02_Recipe/tree/solution|Repository]]
+
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Kevin Maurizi, Marcel Suter

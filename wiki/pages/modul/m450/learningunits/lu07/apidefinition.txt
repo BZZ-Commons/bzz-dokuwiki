@@ -1,0 +1,20 @@
+====== LU07a - Application programming interface (API) ======
+<WRAP center round info 60%>
+Eine Programmierschnittstelle (engl. application programming interface) stellt anderen Programmen eine Schnittstelle zur Anbindung zu Verfügung.
+Sie dient der Kommunikation zwischen Programmen und Systemen, nicht mit dem Endnutzer.
+</WRAP>
+
+Moderne Applikationen bestehen in der Regel aus vielen verschiedenen Komponenten.
+Bei einer Webapplikation sind dies zum Beispiel:
+  * Webseiten mit HTML & Javascript
+  * Applikationslogik in PHP, Python, Java, ...
+  * Verwaltung und Speicherung der Daten in Datenbanken oder Dateien
+
+Diese Komponenten sollen möglichst unabhängig voneinander arbeiten.
+Für die Zusammenarbeit definieren wir Schnittstellen, welche die verfügbaren Funktionen und die Art der Daten festlegen.
+
+Lies dazu den Artikel aus [[https://www.computerweekly.com/de/definition/Programmierschnittstelle-API|Computerweekly]]
+
+----
+{{tag>M450-LU07}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

@@ -1,0 +1,39 @@
+====== LU06.A01 - Personalien ======
+<WRAP center round todo 60%>
+Erstellen Sie eine HTML-Seite mit einem Formular zum Erfassen der Personalien.
+</WRAP>
+===== Vorgehen =====
+  - Akzeptieren Sie das GitHub Classroom Assignment für die LU06.
+  - Klonen Sie das Repository.
+  - Erstellen Sie die HTML-Webseite in der Datei ''/a01/personal.html''.
+  - Validieren Sie Ihren HTML-Code auf Einhaltung der Standards.
+  - Geben Sie Ihre Lösung mittels Push ins Repository ab.
+
+===== Formular =====
+
+Ihr Formular muss folgende Vorgaben einhalten:
+  * Zieladresse: https://it.bzz.ch/demo/formdata/index.php
+  * Eingabefelder:
+    * Vorname
+    * Nachname
+    * Wohnort
+  * Buttons:
+    * Absenden
+    * Zurücksetzen
+
+===== Testen =====
+Sie können Ihre Formular testen, indem Sie die Daten absenden.
+Die Antwort des Servers muss wie folgt aussehen:
+
+<code>
+HTTP-Methode:   POST
+Eingabefelder:
+  givenname  =  a
+  surname    =  b
+  residence   =  c
+</code>
+
+----
+[[https://github.com/templates-html/M293_LU06|Repository]]
+
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Kevin Maurizi, Marcel Suter

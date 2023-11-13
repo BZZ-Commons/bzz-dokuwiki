@@ -1,0 +1,38 @@
+====== LU09a - Review-Grundlagen ======
+
+===== Einleitung =====
+Der Review ist eine statische Testmethode im Rahmen der Qualitätssicherung.
+Dabei werden die Arbeitsergebnisse wie Ablaufpläne, Sourcecode und Bedienungsanleitungen von einer anderen Person manuell geprüft.
+Das Ziel eines Reviews ist es einerseits Fehler in den Ergebnissen zu finden.
+Andererseits wird geprüft, ob das Ergebnis den Vorgaben und Standards im Projekt bzw. der Firma entspricht.
+
+Beim Review können unter anderem folgende Fehler entdeckt werden:
+  * Schlechte Wartbarkeit einer Software.
+  * Abweichungen von den Standards.
+  * Fehler im Design einer Applikation.
+  * Fehlerhafte Spezifikation von Schnittstellen.
+
+===== Code-Review =====
+Beim Code-Review wird der Sourcecode von einem oder mehreren Gutachtern geprüft.
+Die Gutachter prüfen den Sourcecode und halten Ihre Befunde fest.
+
+Als Gutachter eignen sich besonders langjährige Entwickler, die über viel Erfahrung verfügen.
+
+==== Mögliche Formen ====
+=== Technischer Review ===
+Bei einem technischen Review prüfen mehrere Gutachter selbständig den Sourcecode anhand eines Katalogs von Kriterien.
+Während der Review-Sitzung werden die Befunde zusammengetragen.
+ 
+=== Informeller Review ===
+Ein informeller Review soll den Zeitaufwand für den Review reduzieren.
+In der Regel wird auf eine Vorbereitung und auf einen formellen Kriterienkatalog verzichtet.
+Die Gutachter gehen gemeinsam den Sourcecode durch, während der Autor die Befunde notiert.
+
+===== Lint-Programme =====
+Ein Lint-Programm führt eine Art von automatisiertem Review durch.
+Das Programm prüft meinen Sourcecode anhand von Regeln und meldet alle verdächtigen Stellen.
+
+
+----
+{{tag>M450-LU09}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

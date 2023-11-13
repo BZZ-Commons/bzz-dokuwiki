@@ -1,0 +1,40 @@
+====== LU07.A03 - Reisebuchung ======
+
+<WRAP center round todo 60%>
+Ihre Aufgabe ist es, ein umfassendes HTML-Formular für ein Reisebuchungsportal zu erstellen. Dabei sollen Sie die Formularelemente ''select'', ''radiobutton'', ''checkbox'', ''input'', ''reset'' Button, ''submit'' Button und ''datalist'' verwenden.
+</WRAP>
+
+
+===== Vorgehen =====
+  - Akzeptieren Sie das GitHub Classroom Assignment für die LU07.A03
+  - Klonen Sie das Repository.
+  - Erstellen Sie die HTML-Webseite in der Datei ''/trip.html''. Halten Sie sich dabei an die Anforderungen.
+  - Validieren Sie Ihren HTML-Code auf Einhaltung der Standards.
+  - Geben Sie Ihre Lösung mittels Push ins Repository ab.
+
+==== Anforderungen an das Formular ====
+
+  - Verwenden Sie ein ''select'' Element, um den Kunden die Auswahl des Abflughafens zu ermöglichen. Hier sollten Sie ''optgroup'' Elemente verwenden, um die Flughäfen nach den Nachbarländern der Schweiz (Deutschland, Österreich, Italien und Frankreich) zu organisieren.
+  - Mit ''radiobutton'' Elementen sollen die Kunden die Art der Unterkunft auswählen können. Geben Sie ihnen dabei die Möglichkeit, zwischen Optionen wie Hotel, Ferienwohnung oder Hostel zu wählen.
+  - Nutzen Sie ''checkbox'' Elemente, um zusätzliche Dienstleistungen anzubieten, wie beispielsweise eine Reiseversicherung, Flughafentransfer oder zusätzliches Gepäck.
+  - Fügen Sie zwei ''input'' Elemente hinzu, damit die Kunden den Anfangs- und Endzeitpunkt ihres gewünschten Reisezeitraums eingeben können. Jedes ''input'' Element sollte den passenden ''type'' Attributwert haben (in diesem Fall wahrscheinlich ''date''). Ergänzen Sie ein weiteres ''input'' Element, das die Kunden dazu auffordert, die Dauer ihrer Reise in Tagen zwischen 1 und 21 anzugeben.
+  - Fügen Sie ein weiteres ''input'' Element hinzu, das die Kunden dazu auffordert, die Anzahl der reisenden Personen einzugeben.
+  - Verwenden Sie ein weiteres ''select'' Element, um den Kunden die Auswahl ihrer bevorzugten Fluggesellschaft zu ermöglichen.
+  - Nutzen Sie zusätzliche ''checkbox'' Elemente, um weitere optionale Dienstleistungen anzubieten, wie etwa Priority-Check-In, zusätzliches Handgepäck oder die Buchung eines Mietwagens.
+  - Schließlich soll das ''datalist'' Element in Kombination mit einem ''input'' Element eine vorausgefüllte Liste von Reisezielen zur Verfügung stellen, aus der die Kunden auswählen oder in die sie ihren eigenen Zielort eingeben können.
+  - Fügen Sie ein ''input'' Element hinzu, um die E-Mail-Adresse des Kunden aufzunehmen. Verwenden Sie das ''type'' Attribut mit dem Wert ''email'' für dieses Eingabeelement, um die Browser-basierte E-Mail-Validierung zu aktivieren.
+  - Ein ''reset'' Button soll den Kunden die Möglichkeit geben, alle bisher getroffenen Auswahlmöglichkeiten und Eingaben zurückzusetzen und das Formular neu zu beginnen.
+  - Ein ''submit'' Button wird benötigt, um die Formularinformationen zu senden.
+
+=== Zusätzliche Anforderungen: ===
+
+  * Überlegen Sie sich eine sinnvolle Reihenfolge für die Felder und ordnen Sie so an.
+  * Überlegen Sie sich, welche Felder als ''required'' markiert werden sollten und markieren sie diese.
+  * Fügen Sie ''label''-Elemente hinzu, um die verschiedenen Elementtypen und Optionen klar zu kennzeichnen.
+  * Verwenden Sie geeignete Formularelemente (z.B. ein ''fieldset'' und ''legend'' Element), um die verschiedenen Elementtypen visuell zu trennen und zu organisieren.
+  * Der ''submit'' Button soll die Formularinformationen an https://it.bzz.ch/demo/formdata/index.php senden.
+
+----
+<nodisp>[[https://github.com/templates-html/M293_LU07_03_tripplanner|Repository]]</nodisp>
+{{tag>m293-LU07}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Kevin Maurizi, Marcel Suter

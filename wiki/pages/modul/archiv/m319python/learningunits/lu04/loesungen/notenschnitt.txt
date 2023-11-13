@@ -1,0 +1,16 @@
+====== LU04.L02: Notenschnitt ======
+==== Blockly ====
+{{:modul:m319python:learningunits:lu04:loesungen:lu04_blockly_notenschnitt.png?400|}}
+==== Python ====
+<code python>
+num_marks = input('Anzahl Noten > ')
+count = 0
+total_marks = 0
+while count < num_marks:
+    mark = input('Note >')
+    total_marks = total_marks + int(mark)
+    count = count + 1
+average = total_marks / num_marks
+print('Durchschnitt:' + str(average))
+</code>
+

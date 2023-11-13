@@ -1,0 +1,12 @@
+====== Lösung LU02.A04 ======
+<code python>
+def main():
+    # write your code below this line
+    first = int(input('Give the first number:\n'))
+    second = int(input('Give the second number:\n'))
+    # print('The sum of the numbers is ' + str(first+second))
+    print(f'The sum of the numbers is {first+second}') # using fstring
+
+if __name__ == '__main__':
+    main()
+</code>

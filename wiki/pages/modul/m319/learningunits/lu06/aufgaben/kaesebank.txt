@@ -1,0 +1,100 @@
+====== LU06.A06: Käsebank ======
+<WRAP center round todo 60%>
+Erstelle das Programm für den Geldautomaten in Käseland.
+</WRAP>
+
+<HTML>
+<iframe src="https://trinket.io/embed/python3/658b38c16b?outputOnly=true&start=result" width="100%" height="200" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+</HTML>
+ 
+===== Auftrag =====
+Die Mäuse in Käseland haben einen Geldautomaten entwickelt.
+Dadurch können Sie rund um die Uhr Käsedollar (KD) beziehen.
+
+Der Geldautomat kann Noten mit 5 unterschiedlichen Werten ausgeben.
+=== Beispiele ===
+
+^ Beispiel 1 ^ Beispiel 2 ^
+| 200 KD | 192 KD | 
+| 100 KD | 48 KD | 
+| 75 KD | 12 KD | 
+| 25 KD | 3 KD | 
+| 1 KD | 1 KD | 
+
+Zum Beziehen von Käsedollar gibt eine Maus den gewünschten Betrag ein.
+Der Automat wird immer die grösstmöglichen Noten ausgeben.
+
+=== Beispiele ===
+^ Beispiel 1 ^ Beispiel 2 ^ 
+| <code>
+Betrag: 80
+Ausgabe: 
+  75 KD 
+  1 KD
+  1 KD 
+  1 KD 
+  1 KD
+  1 KD 
+</code> | <code>
+Betrag: 80
+Ausgabe: 
+  48 KD
+  12 KD
+  12 KD
+  3 KD
+  3 KD
+  1 KD
+  1 KD 
+</code> | 
+| <code>
+Betrag: 26
+Ausgabe: 
+  25 KD
+  1 KD 
+</code> | <code>
+Betrag: 26
+Ausgabe: 
+  12 KD
+  12 KD
+  1 KD
+  1 KD 
+</code> |
+
+==== Programmablauf ====
+<WRAP center round info 60%>
+Du kannst (fast) beliebige Ganzahlen für die verfügbaren Noten wählen.
+  * Die kleinste Note muss 1 sein.
+  * Trage die Zahlen von der grössten zur kleinsten Zahl in die Liste ein.
+</WRAP>
+
+  - Erzeuge eine Liste ''bills'' mit den verfügbaren Noten
+  - Der Benutzer gibt den gewünschten Betrag ein
+  - Index = 0
+  - Solange der Betrag grösser 0 ist
+    - Falls bills[Index] grösser als der Betrag ist
+      - Erhöhe den Index um 1
+    - Sonst
+      - Gib bills[Index] aus
+      - Reduziere den Betrag um bills[Index]
+  - Das Programm gibt die Liste ''bills'' als Returnwert zurück: ''return bills''
+
+
+===== Vorgehen =====
+
+  - Akzeptiere das GitHub Classroom Assignment im Moodlekurs.
+  - Klone das Repository in PyCharm. 
+  - Codiere die Programmlogik schrittweise und teste deinen Code.
+  - Führe einen Push durch.
+
+=== Abgabe ===
+Die Abgabe erfolgt durch den Push ins GitHub Repository.
+In Moodle ist keine Abgabe vorgesehen oder möglich.
+----
+<details>
+<summary>//=> GitHub Repo für externe Besucher//</summary>
+GitHub-Repo: https://github.com/templates-python/m319-lu06-a06-cheese
+
+//Lernende am BZZ **müssen** den Link zum GitHub Classroom Assignment verwenden//
+</details>
+{{tag>M319-LU06}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

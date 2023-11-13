@@ -1,0 +1,50 @@
+===== LU04a - Sequenz =====
+
+Das Grundelement jedes Programms ist der Befehl. 
+Ein Befehl ist eine Anweisung eine bestimmte Verarbeitung auszuführen. 
+Eine Sequenz ist eine Abfolge von einem oder mehreren Befehlen, die nacheinander (also sequentiell) ausgeführt werden. 
+
+Andere Bezeichnungen für einen Befehl sind „Anweisung“ oder „Statement“. 
+Je nach Quelle wird eine Sequenz auch „Operation“ oder „Tätigkeit“ genannt. 
+Wir verwenden im Unterricht jedoch die Bezeichnungen „Befehl“ und „Sequenz“.
+
+//[[http://www.java-tutorial.org/anweisungsbloecke.html]]//
+
+
+== Beispiel aus dem Alltag ==
+
+<code>
+1. Nimm den Hausschlüssel in die Hand.
+2. Stecke den Hausschlüssel ins Schloss.
+3. Drehe den Schlüssel im Uhrzeigersinn.
+4. Öffne die Tür.
+5. Gehe ins Haus.
+6. Schliesse die Tür.
+</code>
+
+== Sequenz in einem Programm ==
+<code>
+1. Frage den Benutzer nach einer Zahl.
+2. Frage den Benutzer nach einer zweiten Zahl.
+3. Bilde die Summe aus beiden Zahlen.
+4. Gib die Summe aus.
+</code>
+
+Diese Art der Beschreibung nennen wir Pseudocode.
+Wir notieren jeden Befehl als kurze Anweisung in deutscher Sprache.
+Damit lässt sich die Logik eines Programms entwerfen, ohne dass wir uns um die genaue Schreibweise einer Programmiersprache kümmern müssen.
+
+===== Elementare Befehle =====
+Ein Computer kann nur ganz einfache (elementare) Befehle ausführen.
+Daher verwenden wir auch im Pseudocode kleine Anweisungen, die nur einen einzigen Schritt durchführen.
+
+<WRAP center round info 60%>
+Vermeiden Sie mehrere Schritte in einer Anweisung:
+  * Aufzählungen (gib Zahl1, Zahl2 ein)
+  * Mehrzahl (gib zwei Zahl**en** ein) 
+  * **und** (Bilde die Summe **und** gib die Summe aus)
+</WRAP>
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Marcel Suter

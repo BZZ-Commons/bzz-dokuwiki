@@ -1,0 +1,97 @@
+====== Lösungsvorschlag: Autoliste ======
+
+Schreiben Sie ein Programm, das in einer Liste von Autos (Marke, Modell) speichert. Geben Sie dem Benutzer*in die Möglichkeit solange Autos zu erfassen, bis er die Erfassung beenden möchte. Jedes eingegebene Auto wird an eine Liste angefügt. Am Schluss wird über die Liste iteriert und alle Autos ausgegeben.
+
+===== Aufgabe 1: Programmablaufplan zeichnen =====
+
+Erstellen Sie einen PAP für diese Übung, gehen Sie dabei wie folgt vor:
+  * Suchen Sie zuerst im Programmablauf alle Iterationen und erstellen Sie ein entsprechendes Element je Iteration
+  {{:modul:m319:learningunits:lu05:loesungen:autoliste_schleifen.png?600|}}
+  * Suchen Sie zuletzt alle Sequenzen und pro Sequenz erstellen Sie wiederum ein entsprechendes Element
+{{:modul:m319:learningunits:lu05:loesungen:autoliste.png?600|}}
+
+===== Aufgabe 2: Datentyp erstellen =====
+
+<file java Auto.java>
+/**
+ * Datentyp Auto
+ *
+ * @author Kevin Maurizi
+ */
+public class Auto {
+    String marke;
+    String modell;
+}
+</file>
+
+===== Aufgabe 3: Implementieren =====
+
+Verwenden Sie die Vorlage um das Programm zu implementieren.
+
+<file java AutoListe.java>
+import java.util.ArrayList;
+import java.util.Scanner;
+
+/**
+ * Autoliste die eine Menge an Fahrzeugen verwaltet.
+ *
+ * @author Kevin Maurizi
+ */
+public class AutoListe {
+    // declare attributes
+    static Scanner scanner;
+
+    /**
+     * constructor: initialize attributes
+     */
+    public AutoListe() {
+        scanner = new Scanner(System.in);
+    }
+
+    /**
+     * starts the execution
+     *
+     * @param args
+     *            command line arguments
+     */
+    public static void main(String[] args) {
+        AutoListe program = new AutoListe();
+        program.run();
+
+        scanner.close();
+    }
+
+    /**
+     * description
+     */
+    private void run() {
+
+        ArrayList<Auto> autos = new ArrayList<>();
+
+        System.out.println("Willkommen bei der Autoliste");
+        System.out.println("============================");
+
+        char eingabe = 'y';
+
+        while(eingabe == 'y'){
+            Auto auto = new Auto();
+            System.out.print("Automarke >");
+            auto.marke = scanner.nextLine();
+            System.out.print("Modell >");
+            auto.modell = scanner.nextLine();
+            autos.add(auto);
+            System.out.print("Möchten Sie noch ein Auto erfassen? (y/n) > ");
+            eingabe = scanner.nextLine().charAt(0);
+        }
+
+        System.out.println("Inhalt der Liste:");
+        for (Auto auto : autos) {
+            System.out.println(auto.marke + " " + auto.modell);
+        }
+    }
+}
+</file>
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Kevin Maurizi

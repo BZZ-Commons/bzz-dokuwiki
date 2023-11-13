@@ -1,0 +1,35 @@
+====== LU07.A02 - Eintrag in Liste ergänzen ======
+Lösen Sie die folgenden zwei Aufgaben:
+
+**Aufgabe 1:**
+
+Iterieren Sie über die Liste der Früchte um zu überpürfen ob ''new_fruit'' bereits in der Liste ''my_list'' ist, ist die Frucht ''new_fruit'' vorhanden, geben Sie aus ''Frucht bereits vorhanden'', ist ''new_fruit'' nicht vorhanden, so fügen Sie diese der Liste ''my_list'' hinzu. Verwenden Sie dazu eine ''while-else''-Anweisung.
+
+
+<WRAP center round box 60%>
+<code python>
+def main():
+    # list of fruits
+    my_list = ['papaya', 'banana', 'pineapple', 'mango', 'grapes']
+    new_fruit = input('Welche Frucht möchten Sie der Liste ergänzen?\n')
+
+    
+    #TODO: Iterieren Sie über die Liste der Früchte um zu überprüfen ob new_fruit bereits in der Liste ist, 
+    # ist die Frucht new_fruit vorhanden, geben Sie aus 'Frucht bereits vorhanden' 
+    # ist new_fruit nicht vorhanden, so fügen Sie diese der Liste hinzu.
+    # Verwenden Sie dazu eine while-else-Anweisung
+    
+    
+    print(f'Inhalt der Liste: {my_list}')
+
+if __name__ == '__main__':
+    main()
+</code>
+</WRAP>
+
+**Aufgabe 2:**
+Verwenden Sie nun eine ''if..in''-Anweisung anstatt eine ''while..else''-Anweisung.
+
+-----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Kevin Maurizi
+ 

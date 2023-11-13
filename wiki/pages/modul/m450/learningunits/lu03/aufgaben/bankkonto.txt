@@ -1,0 +1,29 @@
+====== LU03.A02 - Bankkonto ======
+<WRAP center round info 60%>
+Teste die Klasse ''BankAccount'' im Programm "m450_lu03_a02_bankaccount".
+</WRAP>
+
+===== Beschreibung =====
+
+
+===== Auftrag =====
+Ergänze den Programmcode für die Unit Tests in ''test_BankAccount''.
+Die Kommentare ''# TODO ...'' beschreibt jeweils, welche Situation zu testen ist.
+
+===== Vorgehen =====
+
+  - Akzeptiere das GitHub Classroom Assignment im Moodlekurs.
+  - Klone das Repository in PyCharm.
+  - Codiere die Programmlogik in ''main.py''.
+  - Teste dein Programm mit den Testfällen in ''main_test.py''.
+  - Führe einen Commit und einen Push durch.
+
+
+=== Abgabe ===
+Die Abgabe erfolgt durch den Push ins GitHub Repository.
+In Moodle ist keine Abgabe vorgesehen oder möglich.
+
+----
+<nodisp>GitHub-Repo: https://github.com/templates-python/m450_lu03_a02_bankaccount</nodisp>
+{{tag>M450-LU03}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Daniel Fahrni, Marcel Suter

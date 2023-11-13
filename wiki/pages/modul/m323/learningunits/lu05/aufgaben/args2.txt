@@ -1,0 +1,42 @@
+====== LU05.A02 - Listen ordnen ======
+
+<WRAP center round todo 60%>
+Erstelle eine Funktion, die eine beliebige Anzahl von Listen akzeptiert und eine neue Liste zurückgibt, die die Elemente aller übergebenen Listen in umgekehrter Reihenfolge enthält.
+</WRAP>
+
+===== Aufgabenstellung =====
+Definiere eine Funktion namens ''reverse_merge''. Die Funktion sollte ''*args'' verwenden, um eine variable Anzahl von Listen als Positional-Argumente zu akzeptieren. Die Funktion sollte eine neue Liste zurückgeben, die die Elemente aller übergebenen Listen in umgekehrter Reihenfolge enthält.
+
+**Code-Vorlage**:
+<code python>
+def reverse_merge(*args):
+    """
+    Merges multiple lists and returns the merged list in reversed order.
+
+    Parameters:
+        *args (list): Variable number of lists to be merged.
+
+    Returns:
+        list: The merged list in reversed order.
+    """
+    # TODO: Implementiere die Funktion
+    ...
+
+
+if __name__ == '__main__':
+    # Teste deine Funktion
+    print(reverse_merge([1, 2], [3, 4], [5, 6]))  # Erwarteter Output: [6, 5, 4, 3, 2, 1]
+</code>
+
+===== Vorgehen =====
+  - Akzeptiere das GitHub Classroom Assignment
+  - Klone dein persönliches Repository in die Entwicklungsumgebung
+  - Implementiere die Funktion ''reverse_merge'' gemäß der Aufgabenstellung
+  - Teste die Funktion mit verschiedenen Listen
+
+===== Abgabe =====
+Die Abgabe der Lösung erfolgt als Push in das persönliche GitHub-Repository.
+
+----
+<nodisp> GitHub Repository https://github.com/templates-python/m323-lu05-a02-args2</nodisp>
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Kevin Maurizi

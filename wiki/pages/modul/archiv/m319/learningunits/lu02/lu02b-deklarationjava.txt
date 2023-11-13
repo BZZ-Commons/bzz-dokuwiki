@@ -1,0 +1,94 @@
+====== LU02b - Variablen in Java ======
+===== Syntax =====
+Betrachten wir einige Beispiele von Deklarationen in Java.
+<code java>
+int zaehler;
+</code>
+
+| 1. | ''int ...'' | Der Datentyp ''int'' zeigt an, dass es sich um eine Deklaration handelt. |
+| 2. | ''... zaehler ...'' | Anschliessend folgt der Name der Variable |
+| 3. | ''... ;'' | Jeder Befehl wird mit einem Semikolon abgeschlossen. |
+
+
+<code java>
+char geschlecht;
+</code>
+| 1. | ''char ...'' | Der Datentyp ''char'' zeigt an, dass es sich um eine Deklaration handelt. |
+| 2. | ''... geschlecht ...'' | Anschliessend folgt der Name der Variable |
+| 3. | ''... ;'' | Jeder Befehl wird mit einem Semikolon abgeschlossen. |
+
+<code java>
+float preis = 15.75;
+</code>
+| 1. | ''float ...'' | Der Datentyp ''float'' zeigt an, dass es sich um eine Deklaration handelt. |
+| 2. | ''... preis ...'' | Anschliessend folgt der Name der Variable |
+| 3. | '' ... = 15.75 ...'' | Die Variable wird mit dem Wert 15.75 initialisiert. |
+| 4. | ''... ;'' | Jeder Befehl wird mit einem Semikolon abgeschlossen. |
+
+<code java>
+String name = "Peter";
+</code>
+| 1. | ''String ...'' | Der Datentyp ''String'' zeigt an, dass es sich um eine Deklaration handelt. |
+| 2. | ''... name...'' | Anschliessend folgt der Name der Variable |
+| 3. | '' ... = "Peter" ...'' | Die Variable wird mit dem Wert "Peter" initialisiert. Beachten Sie die Hochkomma "" |
+| 4. | ''... ;'' | Jeder Befehl wird mit einem Semikolon abgeschlossen. |
+
+<code java>
+boolean gewonnen = true;
+</code>
+| 1. | ''boolean...'' | Der Datentyp ''boolean'' zeigt an, dass es sich um eine Deklaration handelt. |
+| 2. | ''... gewonnen...'' | Anschliessend folgt der Name der Variable |
+| 3. | '' ... = true ...'' | Die Variable wird mit dem Wert ''true'' (Wahr) initialisiert. Die alternative wäre ''false'' (Falsch) |
+| 4. | ''... ;'' | Jeder Befehl wird mit einem Semikolon abgeschlossen. |
+
+===== Schlussfolgerung =====
+Eine Deklaration einer Variable in Java hat immer den gleichen Aufbau:
+
+  - Angabe des Datentyps (char, short, int, long, float, double, boolean).
+  - Name der Variable.
+  - Intialisierung (sofern gewünscht)
+  - Semikolon
+
+===== Initialisierung in Java =====
+In Java haben die Variablen beim Programmstart einen zufälligen Wert.
+Je nach Verwendung einer Variable führt dieser zufällige Wert zu Problemen.
+Daher ist es von Vorteil, wenn Sie jeder Variable einen Initalwert geben.
+
+<WRAP center round tip 60%>
+Beim **Initialisieren** wird der Variable beim Deklarieren ein Wert zugewiesen. 
+Eine solche Variable erhält direkt beim Starten des Programmes den vorgegebenen Wert.</WRAP>
+
+
+Wird in Java eine Variable nicht mit einem Wert initialisiert und dann z.B. für eine Bedingung oder Ausgabe verwendet, so führt
+dies zu einem Kompilierfehler. Beispiel:
+
+<code>
+int zahl1;
+int zahl2;
+int resultat;
+
+resultat = zahl1 + zahl2;
+
+</code>
+===== Variablennamen =====
+Wie in jeder Programmiersprache gibt es auch in Java gewisse Konventionen, wie ein Variablenname geschrieben wird.
+
+  * Java unterscheidet zwischen Gross- und Kleinbuchstaben;
+    * ''vorname'' und ''vorName'' sind zwei verschiedene Variablen.
+  * Der Name einer Variable beginnt mit einem Kleinbuchstaben.
+  * Ist der Name aus mehreren Wörten zusammengesetzt, so verwenden wir CamelCase.
+
+=== Was ist CamelCase? ===
+CamelCase könnte man auf Deutsch mit "SchreibweiseDieWieEinKamelAussieht" umschreiben.
+Dabei werden zusammengesetzte Namen so verbunden, dass jedes neue Wort mit einem Grossbuchstaben beginnt.
+Die Grossbuchstaben wirken dabei wie die Höcker eines Kamels.
+
+=== Beispiele ===
+
+  * ''anzahlNoten'' - Zwei Wörter, deshalb CamelCase
+  * ''wohnort''     - Ein Wort
+  * ''preisTotal''
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Marcel Suter

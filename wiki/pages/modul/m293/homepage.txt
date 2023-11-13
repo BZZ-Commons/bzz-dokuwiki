@@ -1,0 +1,56 @@
+====== M293 - Persönliche Homepage ======
+
+Zur Anwendung und Vertiefung der Lerninhalte empfehlen wir Ihnen, eine persönliche Homepage zu erstellen.
+Nach jedem Unterrichtsblock erweitern Sie die HTML- und CSS-Dateien um die gelernten Elemente.
+
+===== Reale vs. fiktive Inhalte =====
+Sie können für die Homepage entweder Ihre realen Personalien und Hobbys verwenden oder Sie erstellen eine fiktive Persönlichkeit.
+Bedenken Sie dabei, dass wir diese Homepage im Verlauf des Moduls im Internet veröffentlichen werden.
+Der Webserver ist so konfiguriert, dass Suchmaschinen die Seiten nicht indexierten sollten, dies ist aber nie eine vollständige Garantie.
+Gehen Sie also davon aus, dass man Ihre Homepage finden kann.
+
+==== Vor/Nachteile realer Daten ====
+
+  * Eine technisch und inhaltlich gute Homepage mit Ihren realen Daten kann z.B. für Bewerbungen hilfreich sein.
+  * Ein unansehnlicher Haufen Text kann Nachteile nach sich ziehen.
+  * Sie veröffentlichen Personendaten im Internet. Ein solcher Schritt sollte immer gut überlegt erfolgen.
+
+<WRAP center round info 60%>
+Falls Sie sich unsicher sind, ob Sie reale Daten verwenden sollen:
+Erstellen Sie zunächst eine fiktive Person, Sie können die Angaben später immer noch ersetzen.
+</WRAP>
+
+===== Aufbau / Struktur =====
+==== Allgemein ====
+Ihre Homepage besteht aus mehreren einzelnen Seiten zu verschiedenen Themen.
+Auf jeder Seite soll eine Navigation zu den verschiedenen Themenseiten vorhanden sein.
+
+In der Fusszeile jeder Seite sind die Links zu Impressum, Disclaimer und Datenschutzerklärung.
+Auch Social Media-Konten können in der Fusszeile verlinkt werden.
+
+==== Themenseiten ====
+
+=== Startseite "index.html" ===
+Die Startseite soll kurz erklären, worum es bei dieser Homepage geht.
+
+=== Lebenslauf / Profil ===
+Der Lebenslauf enthält ein Profilbild, sowie Ihre bisherige Ausbildung und Abschlüsse.
+
+=== Hobbys ===
+Auf einer oder mehreren Seiten beschreiben Sie Ihre Hobbys.
+
+=== Kontaktformular ===
+Über das Kontaktformular können Besucher Ihnen Nachrichten hinterlassen.
+
+==== Technische Seiten ====
+=== Impressum ===
+Fügen Sie ein Impressum als separate Seite ein.
+
+=== Disclaimer ===
+Fügen Sie beim Impressum und der Datenschutzerklärung einen Disclaimer ein.
+
+=== Datenschutzerklärung ===
+Fügen Sie eine separate Seite mit einer Datenschutzerklärung ein.
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Kevin Maurizi, Marcel Suter

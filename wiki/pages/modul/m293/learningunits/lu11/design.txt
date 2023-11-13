@@ -1,0 +1,63 @@
+====== LU11c - Design erstellen ======
+
+===== Grüne Wiese - Style Tiles =====
+"Style Tiles" sind ein Designwerkzeug, das für die visuelle Erforschung von Benutzeroberflächen (User Interfaces, UIs) verwendet wird. Sie helfen dabei, eine einheitliche Designvision zwischen den Teammitgliedern und den Kunden in den frühen Stadien eines Projekts zu entwickeln und zu kommunizieren.
+
+Style Tiles sind keine vollständigen Designs, sondern konzentrieren sich auf die Darstellung von Farben, Schriften, Bildstilen und Oberflächenbehandlungen, die dann auf ein endgültiges Design angewendet werden. Sie können als flexible Ausgangspunkte angesehen werden, die dazu beitragen, Diskussionen und Feedback zum Design zu erleichtern.
+
+Die Hauptvorteile von Style Tiles sind ihre Effizienz und Anpassungsfähigkeit. Sie können relativ schnell erstellt werden und sind flexibel genug, um Änderungen und Iterationen im Designprozess aufzunehmen. Zudem helfen sie dabei, Missverständnisse und Fehlkommunikation zwischen Designern und Kunden oder anderen Stakeholdern zu vermeiden, indem sie eine klare visuelle Sprache bieten, um Designentscheidungen zu diskutieren.
+
+Style Tiles wurden von der Webdesignerin [[https://styletil.es/|Samantha Warren]] eingeführt und sind besonders in den Bereichen Webdesign und digitale Produktdesign beliebt.
+
+==== Style Tiles erstellen ====
+
+Alle für das Design relevanten Bestandteile (Module) werden in einer Ansicht zusammengefasst, ohne dass ein konkretes Layout gestaltet wird. Diese Bestandteile sind häufig:
+
+  * Logos
+  * Buttons
+  * Typografie
+  * Farben
+  * Muster & Hintergründe
+  * Icons
+  * Fotos und Bildsprache
+  * Linien, Zierelemente
+
+{{:modul:m293:learningunits:lu11:beispiel-style-tile.jpg?600|}}
+
+Ziel von Style Tiles ist es, ein allgemeines visuelles Konzept zu erarbeiten das für Kunden verständlich ist, ohne dass diese stark abstrahieren müssen. Webdesigner können in kurzer Zeit einen Look kreieren und verschiedene Stilrichtungen einfacher vergleichen.
+
+Da keine konkreten Layouts für bestimmte Displaygrößen gestaltet werden, verliert man sich nicht in Details und inhaltlichen Fragen, sondern konzentriert sich auf das visuelle Erscheinungsbild. Diese Vorgehensweise führt i.d.R. zu schnelleren Ergebnissen und zielgerichteter Kommunikation.
+
+
+===== CI/CD einer bestehenden Firma =====
+
+Das Corporate Identity/Corporate Design (CI/CD) einer Firma ist ein wichtiger Aspekt bei der Erstellung einer Webseite. Dies ist das visuelle Erscheinungsbild der Firma und oft auch ein wichtiges Element ihrer Markenstrategie. Es beinhaltet spezifische Farben, Schriftarten, Logos und andere Designelemente, die konsequent auf allen Medien und Plattformen verwendet werden, um eine einheitliche Markenerfahrung zu gewährleisten.
+
+Als Webentwickler müssen Sie beim Erstellen einer Website für ein Unternehmen mit einem bestehenden CI/CD auf Folgendes achten:
+
+  * **Farben**: Nutzen Sie die in der CI/CD festgelegten Farben. Diese sind oft in Form von RGB-, HEX- oder Pantone-Farbcodes angegeben.
+  * **Schriftarten**: Verwenden Sie die festgelegten Schriftarten. Beachten Sie, dass einige Schriftarten möglicherweise nicht web-sicher sind und eine Lizenz erfordern können. Prüfen Sie, ob es Web-Schriftarten gibt, die als Ersatz verwendet werden können, wenn die Originalschriftart nicht verfügbar ist.
+  * **Logo**: Nutzen Sie das offizielle Logo der Firma und stellen Sie sicher, dass es korrekt positioniert und skaliert wird. Es sollte auch in den korrekten Farben dargestellt werden und eine angemessene Qualität haben.
+  * **Bildsprache**: Viele Unternehmen haben Richtlinien für die Art von Bildern, die sie in ihrer Kommunikation verwenden. Achten Sie darauf, dass Sie sich an diese Richtlinien halten.
+
+==== Beispiel 1 ====
+
+Folgendes Beispiel ist das CD der [[https://zurich.jungegrunliberale.ch/ci/|Jungen Grünliberalen des Kanton Zürich]]:
+
+{{ :modul:m293:learningunits:lu11:ci_jglp.png?600 |}}
+
+Wie sie sehen, definiert das CD der Jungen Grünliberalen nur Schriftarten und Farben. Ebenfalls stehen die Logos der Partei zum Download zur Verfügung. Dieses CD ist sehr übersichtlich und ähnelt eher einem "Style Tile" als einem kompletten CD.
+
+==== Beispiel 2 ====
+
+Folgendes Beispiel ist das CD des [[https://www.zh.ch/de/webangebote-entwickeln-und-gestalten/inhalt/designsystem/design-grundlagen/logos.zhweb-noredirect.zhweb-cache.html|Kanton Zürich]]
+
+{{ :modul:m293:learningunits:lu11:ci_zh.png?600 |}}
+
+Das CI der Kanton Zürich ist sehr umfänglich. Es gibt Designvorlagen für Papier- und Webpublikationen, Vorlagen für App-Design, Aussehen von Formularen etc. Ein komplette Übersicht kann sich via [[https://www.figma.com/file/d6Pv21UVUbnBs3AdcZijHmbN/KTZH-Design-System?type=design&node-id=284-9649|CI-File auf Figma]] gemacht werden. Navigieren Sie via Menue durch die einzelnen Vorlagen.
+
+
+----
+{{tag>m293-LU11 m293-A1G m293-A1F}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Kevin Maurizi, Marcel Suter
+

@@ -1,0 +1,61 @@
+~~NOTOC~~
+====== LU02.A02: Different Inputs ======
+
+===== Auftrag =====
+
+Schreiben Sie ein Programm, das den Benutzer nach verschiedenen Werten fragt.
+  * Zuerst nach einer Zeichenkette.
+  * Als zweites fragt das Programm nach einer Ganzzahl. Wandeln Sie die Benutzereingabe in einen **''int''** um.
+  * Zuletzt fragt das Programm nach einer Gleitkommazahl und wandelt die Eingabe in einen **''float''** um.  
+Das Programm soll dann alle vom Benutzer angegebenen Werte ausgeben.
+
+Ein Beispiel für den Ausdruck des Programms ist unten zu sehen.
+<code>
+Give a string:
+*bye-bye*
+Give an integer:
+*11*
+Give a float:
+*4.2*
+You gave the string bye-bye
+You gave the integer 11
+You gave the float 4.2
+</code>
+
+<code>
+Give a string:
+*Oops!*
+Give an integer:
+*-4*
+Give a float:
+*3200.1*
+You gave the string Oops!
+You gave the integer -4
+You gave the float 3200.1
+</code>
+
+Verwenden Sie folgende Programmiervorlage:
+
+
+
+<code python>
+def main():
+    #write your code below this line
+
+if __name__ == '__main__':
+    main()
+</code>
+
+<WRAP center round info 60%>
+Falls der Benutzer eine ungültige Eingabe macht, z.B. Text statt Ganzzahl, wird das Programm abstürzen.
+Das ist für diese Aufgabe so gewollt.
+</WRAP>
+
+=== Anmerkung ===
+ Kümmern Sie sich im Moment nicht zu sehr um ''if %%__%%name%%__%% == '%%__%%main%%__'%%:''. Wir brauchen es technisch gesehen nicht für dieses Programm, aber es ist eine gute Übung, es einzubauen, und es wird in späteren Übungen klarer werden.
+
+----
+{{tag>M319-b1f}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/ch/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Kevin Maurizi 
+
+Diese Aufgabe ist eine übersetzte und angepasste Aufgabe von [[https://scott3142.uk/|Scott Morgan]], verwendet unter CC BY NC SA.

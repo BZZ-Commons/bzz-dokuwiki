@@ -1,0 +1,59 @@
+====== LU04d - Iteration ======
+
+===== Wiederholung =====
+Wird ein Teil eines Programmes mehrmals wiederholt, so sprechen wir von einer Iteration.
+Jede Iteration beinhaltet eine Bedingung.
+  * **SOLANGE** (engl. WHILE) die Bedingung zutrifft, wird der Programmteil ausgeführt.
+
+Danach geht der Programmablauf zurück zur Bedingung, die erneut geprüft wird.
+
+
+=== Beispiel aus dem Alltag ===
+
+<code>
+1. SOLANGE die Tür verschlossen ist
+   1.1. Nimm den nächsten Schlüssel
+   1.2. Stecke den Schlüssel ins Schloss
+   1.3. Drehe den Schlüssel im Uhrzeigersinn.
+2. Öffne die Tür.
+3. Gehe ins Haus.
+4. Schliesse die Tür.
+</code>
+
+Ist die Bedingung beim Schritt 1 erfüllt, so werden die Schritte 1.1, 1.2 und 1.3 ausgeführt.
+Anschliessend geht der Ablauf zurück zu Schritt 1.
+Ist die Bedingung noch immer erfüllt, so werden die Schritte 1.1, 1.2 und 1.3 erneut ausgeführt.
+
+=== Hello Universe ===
+<code>
+1. Der Benutzer gibt die Anzahl Wiederholungen ein.
+2. Der Zähler wird mit 0 initialisiert.
+3. SOLANGE der Zähler KLEINER als die Anzahl Wiederholungen ist:
+  3.1. Gib den Text "Hello Universe" aus.
+  3.2. Erhöhe den Zähler um 1
+</code>
+
+{{:modul:m319python:learningunits:lu04:lu04_blockly_iteration.png?600|}}
+
+=== Python ===
+<code python>
+number = input('Anzahl Wiederholungen: ')
+repeat = int(number)
+counter = 0
+while counter < repeat:
+    print('Hello Universe')
+    counter += 1
+</code>
+
+<WRAP center round info 60%>
+  * Eine Iteration kennt kein **''ELSE''**.
+  * Steht die Bedigung am Anfang, so handelt es sich um eine kopfgesteuerte Iteration.
+  * Steht die Bedigung am Ende, so handelt es sich um eine fussgesteuerte Iteration (diese sollten jedoch wenn immer möglich vermieden werden!).
+</WRAP>
+
+
+In der Fachliteratur findet man für „Iteration“ auch die Bezeichnung "Schleife“. 
+
+----
+{{tag>M319-D1F M319-F1G M319-F3G}} 
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Marcel Suter

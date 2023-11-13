@@ -1,0 +1,50 @@
+====== LU06c - Button ======
+//siehe auch [[https://wiki.selfhtml.org/wiki/HTML/Tutorials/Formulare/Was_ist_ein_Webformular%3F#Buttons|selfhtml - Buttons]]//
+
+<WRAP center round info 60%>
+Mit Buttons lösen wir die Verarbeitung der Daten aus.
+</WRAP>
+
+Ein Button löst eine Aktion bzw. Verarbeitung aus.
+Das Button-Element benötigt das Attribut ''type'' um die Art der Verarbeitung zu definieren.
+
+==== type='submit' ====
+<code html>
+...
+  <form action='./index.php' method='post'>
+    <label for='email'>Email</label>
+    <input id='email' name='email' type='text' />
+    <button type='submit'>Absenden</button>
+  </form>
+...
+</code>
+
+Klickt der Benutzer auf einen Button mit ''type='submit' '', so sendet der Webbrowser die Formulardaten an die Zieladresse.
+Dabei müssen Sie beachten:
+  * Der Button muss innerhalb eines ''form''-Elements stehen, andernfalls wird keine Verarbeitung ausgelöst.
+  * Die HTTP-Methode und Zieladresse werden im ''form''-Tag definiert.
+  * Falls Sie mehrere Formulare in einer Webseite haben, muss jedes Formular einen eigenen ''<button type='submit' ...'' haben.
+
+==== type='reset' ====
+<code html>
+...
+  <form action='./index.php' method='post'>
+    <label for='email'>Email</label>
+    <input id='email' name='email' type='text' />
+    <button type='submit'>Absenden</button>
+    <button type='reset'>Zurücksetzen</button>
+  </form>
+...
+</code>
+
+Ein Button mit ''type='reset' '' setzt das Formular zurück.
+Alle Eingaben des Benutzers in den Eingabefeldern werden rückgängig gemacht.
+Es findet keine Übertragung der Daten an den Server statt.
+
+==== type='button' ====
+Der Vollständigkeit halber soll auch dieser Type erwähnt werden.
+Mit diesem ''type'' definieren wir einen Button, der eine clientseitige Verarbeitung auslöst.
+Diese Verarbeitung müssen wir mit Javascript selber programmieren, was nicht Teil unseres Moduls ist.
+----
+{{tag>m293-LU06 m293-XnY}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Kevin Maurizi, Marcel Suter

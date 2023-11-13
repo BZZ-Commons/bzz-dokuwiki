@@ -1,0 +1,42 @@
+====== LU03d - Einstieg in die Programmierung ======
+
+===== Programmierer schreiben Quellcode =====
+Programmieren ist das Entwerfen und Implementieren von Software. Die Funktionalität wird auf der Grundlage der Wünsche und Anforderungen der Benutzer und Kunden implementiert. Programme werden in der Regel in einer Programmiersprache implementiert (d. h. geschrieben oder "codiert"), die für das Schreiben und Lesen durch Menschen gedacht ist.
+
+Es gibt Hunderte von Programmiersprachen, und dieser Kurs konzentriert sich auf eine von ihnen. Die in diesem Kurs verwendete Sprache ist Python, eine der am häufigsten verwendeten Programmiersprachen der Welt. Das Erlernen von Python macht es auch leicht, andere Programmiersprachen zu erlernen.
+
+Programmiersprachen wie Python verfügen über zahlreiche integrierte Befehle, die ein Programmierer bei der Entwicklung von Software verwendet. Das macht das Programmieren einfacher, da man nicht alles von Grund auf neu implementieren muss. So verfügen Programmiersprachen in der Regel über integrierte Optionen für verschiedene Menüs und Ansichten, die für die Erstellung grafischer Benutzeroberflächen verwendet werden. Ein großer Teil des Programmierens besteht darin, verfügbare Funktionen und Werkzeuge für die Lösung von Problemen zu nutzen - dies erfordert jedoch Programmiererfahrung, die man nur durch Programmieren erlangt.
+
+Der "Code", den Sie schreiben, wird Quellcode genannt. Der Quellcode besteht aus Anweisungen und Ausdrücken, die Zeile für Zeile von oben nach unten und von links nach rechts gelesen werden. Um z. B. '''Hallo Welt''' zu drucken, können Sie den vordefinierten Python-Befehl ''print()'' verwenden, dem Sie den zu druckenden Text innerhalb der Klammern übergeben müssen:
+
+<code python>
+print('Hello World')
+</code>
+
+Die obige Anweisung ist in Python vordefiniert und wird zum Drucken einer Zeichenkette verwendet. Die Anweisung sagt dem Computer, dass er die Zeichenkette ausgeben soll, die ihm zwischen den Anführungszeichen übergeben wurde.
+
+Viele der Programme, die Sie in diesem Kurs sehen werden, haben einen bestimmten Rahmen um den Code; die ''def main():'' Syntax und der ''if %%__%%name%%__%% == '%%__%%main%%__%%':'' Block. Machen Sie sich vorerst nicht zu viele Gedanken darüber, es wird Ihnen im Laufe des Kurses sehr vertraut werden. Technisch gesehen brauchen Sie die Umrahmung der ''print''-Anweisung oder des ''if %%__%%name%%__%% == '%%__%%main%%__%%':'' Blocks nicht, damit das Programm in Python laufen kann, aber es ist nützlich, sich das schon jetzt anzugewöhnen, damit es später einfacher wird.
+
+<code python>
+def main():
+    print('Welcome to the course - you will learn to program!')
+
+if __name__ == '__main__':
+    main()
+</code>
+
+<WRAP center round important 60%>
+An dieser Stelle ist es wichtig zu wissen, dass die Einrückungen in Python wichtig sind. Der folgende Codeschnipsel ist nicht derselbe wie der obige und würde zu einem Fehler führen.
+</WRAP>
+<code python>
+def main():
+print('Welcome to the course - you will learn to program!')
+
+if __name__ == '__main__':
+    main()
+</code>
+
+
+----
+{{tag>m319-LU03}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Kevin Maurizi

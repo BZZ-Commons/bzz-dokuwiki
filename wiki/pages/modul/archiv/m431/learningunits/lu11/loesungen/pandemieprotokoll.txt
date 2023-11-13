@@ -1,0 +1,16 @@
+====== LU11.L02 - Aufgabe: Testprotokoll "Lager" ======
+
+^ Programm | Lagerverwaltung ^ Version | 1.0 |
+^ Datum | 15.10.2025 ^ Uhrzeit | 15:00 |
+^ Tester | Kevin Maurizi |||
+^ Nr ^ Effektives Resultat ^ Bewertung ^ Bemerkung ^
+| 1 | Neuer Bestand     >625 | H | Addiert anstatt Subtrahiert |
+| 2 | Neuer Bestand     >-9599 | H | Addiert anstatt Subtrahiert |
+| 3 | "Keine gültige Zahl" | N | Falsche Fehlermeldung |
+| 4 | "Ungültige Impfstoffnummer" | N | Falsche Fehlermeldung |
+| 6 | "Keine gültige Zahl" | N | Falsche Fehlermeldung |
+| 7 | "Ungültige Impfstoffnummer" | N | Falsche Fehlermeldung |
+| 8 | "Ungültige Impfstoffnummer" | N | Falsche Fehlermeldung |
+
+^ Fazit | Das Programm funktioniert mit bestimmten Eingaben nicht korrekt. Es muss überarbeitet und neu getestet werden. |||
+

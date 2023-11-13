@@ -1,0 +1,99 @@
+====== 1. Ein paar Grundregeln ======
+Um algebraische Terme zu vereinfachen, müssen ein paar Grundregeln beachtet werden. Ohne diese Kenntnisse ist Algebra oft ein "Buch mit sieben Siegeln".\\
+----
+//Beispiel://\\
+\(\frac{8a^{2} + 8ab - 6b^{2}}{20a^{2} - 30ab + 10b^{2}} = \)?\\
+\\
+1. Schritt: Faktorisieren der Terme im Zähler und im Nenner.\\
+\(8a^{2} + 8ab - 6b^{2} = (xa + yb) · (za - wb)\)
+   * Da \(-6b^{2}\) steht, ist klar, dass die Terme mit + und - vorkommen müssen.
+   * Weiter gilt 
+      * \(x·z = 8\)
+      * \(y·(-w) = -6\)
+      * \(x·(-w) + y·z = 8\)
+   * \(\Rightarrow\) \(8a^{2} + 8ab - 6b^{2} = (2a + 3b) · (4a - 2b)\)
+\(20a^{2} - 30ab + 10b^{2} = (xa - yb) · (za - wb)\)
+   * Da \(ab\) negativ ist und \(b^{2}\) positiv, ist klar, dass die Terme mit - und - vorkommen müssen.
+   * Weiter gilt
+     * \(x·z = 20\)
+     * \((-y)·(-w) = 10\)
+     * \(x·(-w) + (-y)·z = -30\)
+   * \(\Rightarrow\) \(20a^{2} - 30ab + 10b^{2} = (4a - 2b) · (5a - 5b)\)
+\\
+2. Schritt: Kürzen des Bruches\\
+\(\frac{(2a + 3b) · (4a - 2b)}{(4a - 2b) · (5a - 5b)} = \frac{(2a + 3b)}{(5a - 5b)}\)\\
+\\
+3. Schritt: Ausklammern\\
+\(5a - 5b = 5 · (a - b) \Rightarrow \frac{(2a + 3b)}{(5a - 5b)} = \frac{(2a + 3b)}{5·(a - b)}= \frac{1}5\) · \(\frac{(2a + 3b)}{(a - b)}\)
+----
+Folgende Themen müssen "sitzen", um Algebraaufgaben stilsicher lösen zu können:
+   * Vorzeichenregel
+   * Punkt vor Strich
+   * Assoziativ-, Kommutativ- und Distributivgesetz
+   * Binome und Potenzen
+   * Pascal'sches Dreieck
+   * Faktorisieren
+   * Bruchrechnen
+
+==== Vorzeichenregel ====
+\((-)·(-) = (+)\) <tab>und<tab> \((-)·(-)·(-) = (-)\)\\
+<WRAP left>
+\(5 · 5 = 25\)\\
+\(5 · (-5) = -25\)\\
+\((-5) · (-5) = 25\)\\
+<tab>
+</WRAP>
+<tab>\(5 · 5 · 5 = 125\)\\
+<tab>\(5 · 5 · (-5) = -125\)\\
+<tab>\(5 · (-5) · (-5) = 125\)\\
+<tab>\((-5) · (-5) · (-5) = -125\)
+
+<WRAP clear></WRAP>
+Mehr dazu von [[https://studyflix.de/mathematik/minus-mal-minus-5372|Studyflix]]
+<WRAP important>Bei einer geraden Anzahl negativer Vorzeichen, wird das Produkt positiv und bei einer ungeraden Anzahl negativ.\\
+Das gilt auch bei der Division, da ja \(3 \div\ 5 = 3 · \frac{1}5 = \frac{3}5\)</WRAP>
+Weiter gilt\\
+\(+ (-) = -\) <tab><tab><tab><tab><tab>und<tab> \(- (-) = +\)\\
+\(5 + (-3) = 5 - 3 = 2\) <tab>und<tab> \(5 - (-3) = 5 + 3 = 8\)
+
+==== Punkt vor Strich ====
+Eine einfache Regel, die (leider) oft nicht beachtet wird, gerade dann beim Kürzen von Brüchen.\\
+\\
+5 + 3 · 4 = 17\\
+**Aber!** (5 + 3) · 4 = 32\\
+\\
+Was man leider immer wieder sieht...\\
+...\(\frac{5 + 3 · 4}{5 + 3} = 4\), was natürlich <color #ed1c24>falsch</color> ist, weil aus einer Strichoperation gekürzt wird. \\
+**Aber!** \(\frac{(5 + 3) · 4}{5 + 3} = 4\), weil hier aus einer Punktoperation gekürzt wird.\\
+Mehr dazu von [[https://studyflix.de/mathematik/punkt-vor-strich-2819|Studyflix]]
+
+====Kommutativ-, Assoziativ- und Distributivgesetz====
+So einfach, aber vielfach nicht bekannt.
+===Kommutativgesetz===
+\(5 + 3 = 3 + 5\) <tab>und<tab> \(5 · 3 = 3 · 5\) \\
+**Aber!** \(5 - 3 \neq 3 - 5\) <tab>und<tab> \(5 \div 3 \neq 3 \div 5\)\\
+Mehr dazu von [[https://studyflix.de/mathematik/kommutativgesetz-2733|Studyflix]]
+<WRAP important>Das Kommutativgesetz gilt nur für Addition und Multiplikation!</WRAP>
+===Assoziativgesetz===
+\((5 + 2) + 7 = 5 + (2 + 7) = 14 \) <tab>und<tab> \((5 · 3) · 7 = 5 · (3 · 7) = 105\)\\
+**Aber!** \((5 - 2) -7 \neq 5 - (2 - 7)\), da \((5 - 2) - 7 = 3 - 7 = -4\) und \(5 - (2 - 7) = 5 - (-5) = 10\)\\
+sowie \((16 \div 2) \div 4 \neq 16 \div (2 \div 4)\), da \((16 \div 2) \div 4 = 8 \div 4 = 2\) und \(16 \div (2 \div 4) = 16 \div 0.5 = 32\)\\
+Mehr dazu von [[https://studyflix.de/mathematik/assoziativgesetz-2735|Studyflix]]
+<WRAP important>Das Assoziativgesetz gilt nur für Addition und Multiplikation!</WRAP>
+===Distributivgesetz===
+\(5 · (7 + 3) = 5·7 + 5·3 = 50\) <tab>und<tab> \((15 + 20) \div 5 = 15 \div 5 + 20 \div 5 = 7\)\\
+**Aber!** \(20 \div (5 + 4) \neq 20 \div 5 + 20 \div 4\), da \(20 \div (4 + 5) = 20 \div 20 = 1\) und \(20 \div 5 + 20 \div 4 = 4 + 5 =9\)\\
+Mehr dazu von [[https://studyflix.de/mathematik/distributivgesetz-2734|Studyflix]]
+<WRAP important>Das Distibutivgesetz gilt bei der Division nur für den Zähler aber nicht für den Nenner!</WRAP>
+----
+Das Distributivgesetz wird oft auch als "Ausklammerregel" bezeichnet, weil ein Faktor aus einer Summe bzw. einer Differenz ausgeklammert wird.\\
+\(208 + 117 = 13·(16 + 9)\)\\
+Wie aber bestimmt man den ausgeklammerten Faktor, hier den Wert 13? Dazu dient der ggT (grösster gemeinsamer Teiler).\\
+Durch Primfaktorzerlegung erhält man:\\
+\(208 = 2 * 2 * 2 * 2 * 13\)\\
+\(117 = 3 * 3 * 13\)\\
+In beiden Zahlen ist 13 der grösste Teiler. Mehr dazu bei [[https://studyflix.de/mathematik/groesster-gemeinsamer-teiler-ggt-2642|Studyflix]]
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) René Probst
+ 

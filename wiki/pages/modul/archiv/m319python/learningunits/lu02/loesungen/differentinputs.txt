@@ -1,0 +1,14 @@
+====== Lösung LU02.A02 ======
+<code python>
+def main():
+    # write your code below this line
+    inString = input('Give a string:\n')
+    inInteger = int(input('Give an integer:\n'))
+    inFloat = float(input('Give a float:\n'))
+    print('You gave the string ' + inString)
+    print('You gave the integer ' + str(inInteger))
+    print('You gave the float ' + str(inFloat))
+
+if __name__ == '__main__':
+    main()
+</code>

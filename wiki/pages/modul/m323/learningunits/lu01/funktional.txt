@@ -1,0 +1,61 @@
+====== LU01c - Funktionale Programmierung ======
+===== Definition der Funktionalen Programmierung =====
+Funktionale Programmierung ist ein Paradigma, das Funktionen als primäre Bausteine verwendet, Unveränderlichkeit von Daten fördert und einen deklarativen Stil betont. Es zielt darauf ab, Code klarer und vorhersagbarer zu gestalten.
+
+==== Grundprinzipien der Funktionalen Programmierung ====
+
+**1. Funktionen als Erste Klasse:** Sie können wie jede andere Variable behandelt werden.
+
+**2. Unveränderlichkeit:** Einmal erstellte Daten werden nicht geändert.
+
+**3. Deklarative Natur:** Der Code beschreibt, was zu tun ist, nicht wie.
+
+===== Einführung in die Deklarative Programmierung =====
+Deklarative Programmierung ist ein übergeordnetes Konzept, das funktional, logisch und einigen anderen Paradigmen gemeinsam ist. Es betont die Beschreibung der gewünschten Ergebnisse, ohne spezifische Anweisungen zu geben, wie diese Ergebnisse erreicht werden sollen.
+
+==== Beispiel ====
+Quadrieren einer Liste in Python auf funktionale Weise:
+<code python>
+def quadrat(x):
+    return x**2
+
+zahlen = [1, 2, 3, 4, 5]
+quadrate = map(quadrat, zahlen)
+print(list(quadrate)) # Ausgabe: [1, 4, 9, 16, 25]
+</code>
+
+===== Fokus auf Funktionen, Unveränderlichkeit und Deklarativität =====
+==== Funktionen ====
+Funktionen sind das Herzstück der funktionalen Programmierung:
+<code python>
+def anwenden(f, wert):
+    return f(wert)
+
+quadrat = lambda x: x**2
+ergebnis = anwenden(quadrat, 5)
+print(ergebnis) # Ausgabe: 25
+</code>
+==== Unveränderlichkeit ====
+Die Unveränderlichkeit fördert sauberen, nachvollziehbaren Code:
+<code python>
+original_liste = [1, 2, 3]
+neue_liste = original_liste + [4] # Original bleibt unverändert
+</code>
+==== Deklarativität ====
+Ein deklarativer Ansatz beschreibt, was getan werden soll:
+<code python>
+# Deklarativ
+summe = sum(zahlen)
+</code>
+===== Zusammenführung der Deklarativen und Funktionalen Programmierung =====
+Deklarative Programmierung ist ein breiteres Konzept, das die funktionale Programmierung einschließt. Während die funktionale Programmierung sich auf die Verwendung von Funktionen und Unveränderlichkeit konzentriert, bezieht sich die deklarative Programmierung auf die Abstraktion des "wie" und konzentriert sich auf das "was".
+
+<WRAP center round tip 60%>
+**Schlussfolgerung**
+
+Die funktionale Programmierung, mit Schwerpunkt auf der Verwendung von Funktionen, Unveränderlichkeit und einem deklarativen Ansatz, bietet einen klaren und wartbaren Weg, um Code zu schreiben. Sie ist Teil der größeren deklarativen Paradigmenfamilie und findet in modernen Programmiersprachen wie Python Anwendung. Die Kombination von funktionalen und deklarativen Prinzipien führt zu Code, der einfacher zu lesen, zu verstehen und zu testen ist.
+</WRAP>
+
+----
+{{tag>M323-LU01}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/ch/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Kevin Maurizi 

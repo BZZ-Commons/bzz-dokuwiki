@@ -1,0 +1,61 @@
+====== LU01.L03 - Funktionaler Bubblesort ======
+
+Der Bubble-Sort-Algorithmus ist normalerweise mit einer imperativen Programmierweise verknüpft, aber es ist möglich, eine rekursive, funktionale Version dieses Sortieralgorithmus zu schreiben. Hier ist ein Beispiel in Python:
+
+Möglichkeit mit Counter ''n''
+<code python>
+
+def bubble_pass(lst):
+    if len(lst) <= 1:
+        return lst
+    if lst[0] > lst[1]:
+        return [lst[1]] + bubble_pass([lst[0]] + lst[2:])
+    return [lst[0]] + bubble_pass(lst[1:])
+
+
+def bubble_sort(lst, n=None):
+    if n is None:
+        n = len(lst)
+    if n == 1:
+        return lst
+    lst = bubble_pass(lst)
+    return bubble_sort(lst, n - 1)
+
+
+if __name__ == '__main__':
+    unsorted_list = [5, 2, 9, 1, 5, 6]
+    sorted_list = bubble_sort(unsorted_list, 3)
+    print(sorted_list)  # Ausgabe: [1, 2, 5, 5, 6, 9]
+
+</code>
+
+
+Mit Funktion ''is_sort()''
+<code python>
+def bubble_sort_rek(list):
+    if len(list) <= 1:
+        return list
+    if list[0] > list[1]:
+        return [list[1]] + bubble_sort_rek([list[0]]+list[2:])
+    return [list[0]] + bubble_sort_rek(list[1:])
+
+
+def run_bubble_sort_is_sort(list):
+    list = bubble_sort_rek(list)
+    if is_sort(list):
+        return list
+    return run_bubble_sort_is_sort(list)
+
+def is_sort(list):
+    return all(list[i] <= list[i+1] for i in range(len(list)-1))
+
+if __name__ == '__main__':
+    arr = [64, 34, 25, 12, 22, 11, 90]
+    arr_new = run_bubble_sort_is_sort(arr)
+    print(arr_new)
+
+</code>
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/ch/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Kevin Maurizi 

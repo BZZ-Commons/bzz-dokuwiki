@@ -1,0 +1,20 @@
+====== LU04.L01: Briefanrede ======
+[[https://youtu.be/xEZBmjMd0s4|YouTube - Video]]
+
+==== Blockly ====
+{{:modul:m319python:learningunits:lu04:loesungen:lu04_blockly_briefanrede.png?400|}}
+
+==== Python ====
+<code python>
+gender = input('Geschlecht (W oder M / X=Ende) > ')
+while gender != 'X':
+    if gender == 'W':
+        print('D: Sehr geehrte Frau')
+        print('F: Chère madame')
+        print('E: Dear Mrs.')
+    else:
+        print('D: Sehr geehrter Herr')
+        print('F: Cher monsieur')
+        print('E: Dear Mr.')
+    gender = input('Geschlecht (W oder M / X=Ende) > ')
+</code>

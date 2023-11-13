@@ -1,0 +1,32 @@
+====== LU16d - Virtual Private Network ======
+<WRAP center round info 60%>
+Ein VPN ist eine gesicherte Verbindung zwischen zwei Computern über das Internet.
+Die beiden Computer verhalten sich dabei so, als wären sie im gleichen Netzwerk.
+</WRAP>
+
+=== Weiteres Material ===
+  * [[wpde>Virtual_Private_Network]]
+  * [[https://praxistipps.chip.de/wie-funktioniert-vpn-einfach-erklaert_40812]]
+
+===== VPN im Firmennetz =====
+
+
+===== Anonymer Internetzugriff =====
+Im Zusammenhang mit anonymen Internetzugriff sind vor allem die VPN-Anbieter von Interesse.
+Dabei stellt mein Computer eine Verbindung zum Netzwerk des Anbieters her.
+In der Regel kann ich auch das Land oder die Region auswählen, mit dem ich mich verbinden will.
+Meine Internetzugriffe werden nun über das Netzwerk des VPN-Anbieter geleitet.
+Dieser anonymisiert meine Datenpakete und setzt seine eigene IP als Absender ein.
+Die Antwort des Servers wird dann vom VPN-Anbieter zurück an meinen Rechner geschickt.
+
+Dies bietet einerseits den Vorteil einer weitgehend anonymen Internetverbindung.
+Nur der VPN-Anbieter weiss, welcher Rechner auf welchen Server zugegriffen hat.
+Viele VPN-Anbieter geben auch an, dass sie die Verbindungen nicht speichern.
+Ob dies wirklich so ist, kann praktisch nicht überprüft werden.
+
+Ein anderer Vorteil ist der Zugriff auf Inhalte, die nur für bestimmte Länder freigegeben bzw. blockiert sind.
+Dadurch kann man z.B. Serien schauen, die in der Schweiz (noch) nicht verfügbar sind.
+
+----
+{{tag>m231-AnG}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

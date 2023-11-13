@@ -1,0 +1,40 @@
+====== LU05b - Domain Name System ======
+//siehe auch [[wpde>Domain_Name_System]] und [[https://wiki.selfhtml.org/wiki/Grundlagen/Namensaufl%C3%B6sung_im_Domain_Name_System|selfhtml - Namensauflösung]]//
+<WRAP center round info 60%>
+Das **D**omain **N**ame **S**ystem ist (etwas vereinfacht gesehen) das Telefonbuch des Internets.
+Es enthält den Domainnamen (z.B. it.bzz.ch) und die dazugehörige IP-Adresse (z.B. 94.176.239.144).
+</WRAP>
+
+===== Namensauflösung =====
+Im Internet wird ein Netzwerkgerät (Router, Server, PC, ...) über seine IP-Adresse adressiert.
+Für uns Menschen ist es aber sehr mühsam, sich die IP-Adressen aller Webserver zu merken.
+Viel einfacher ist es, wenn ich den Server über einen sprechenden Namen adressieren kann.
+
+Das Domain Name System übernimmt die Übersetzung von der lesbaren Web-Adresse (URL) zur dazugehörigen IP-Adresse.
+Dabei gibt es nicht etwa einen einzelnen Server, welcher alle Web-Adressen kennt.
+Vielmehr ist DNS ein verteiltes System aus tausenden von Servern, die sich die Aufgabe teilen.
+
+===== Begriffe =====
+<WRAP center round info 60%>
+Für das bessere Verständnis müssen Ihnen einige Begriffe geläufig sein.
+</WRAP>
+
+==== Domain, Domainname ====
+Eine Domain ist ein weltweit eindeutiger Name für einen bestimmten Rechner im Internet.
+Er setzt sich aus mehreren Teilen (Levels) zusammen, die mit einem Dezimalpunkt getrennt werden, z.B. ''it.bzz.ch''.
+Der Teil ganz rechts (im Beispiel ''ch'') ist die sogenannte Top Level Domain.
+Danach folgen von rechts nach links die //Second-Level-Domain// (''bzz''), //Third-Level-Domain// (''it''), und so weiter.
+
+Der vollständige Name einer Domain wird auch als Fully Qualified Domain Name (FQDN) bezeichnet.
+
+==== Uniform Resource Locator (URL) ====
+Zusätzlich zum FQDN enthält die URL auch das zu verwendende Netzwerkprotokoll.
+Will ich über HTTP/S auf meinen Webserver zugreifen, verwende ich die URL ''https://it.bzz.ch''.
+
+Da bei einem Webbrowser fast immer das gleiche Protokoll (https) verwendet wird, brauchen wir dies nicht mehr anzugeben.
+Falls Sie aber selber Webseiten oder Programme erstellen, ist die Angabe des Protokolls notwendig.
+
+
+----
+{{tag>m293-LU05 m293-XnY}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Kevin Maurizi, Marcel Suter

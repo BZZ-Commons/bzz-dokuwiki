@@ -1,0 +1,43 @@
+====== LU05.A01 - Verwendung von *args in Funktionen ======
+
+<WRAP center round todo 60%>
+Erstelle eine Funktion, die eine beliebige Anzahl von Zahlen akzeptiert und das Produkt dieser Zahlen zurückgibt.
+</WRAP>
+
+===== Aufgabenstellung =====
+Definiere eine Funktion namens ''multiply_all''. Die Funktion sollte ''*args'' verwenden, um eine variable Anzahl von Positional-Argumenten zu akzeptieren und das Produkt aller übergebenen Zahlen zurückgeben.
+
+**Code-Vorlage**:
+<code python>
+def multiply_all(*args):
+    """
+    Multiplies all the given numbers together and returns the product.
+
+    Parameters:
+        *args (float or int): Variable number of arguments to be multiplied.
+
+    Returns:
+        float or int: The product of all the given numbers.
+    """
+    # TODO: Implementiere die Funktion
+    ...
+
+
+if __name__ == '__main__':
+    # Teste deine Funktion
+    print(multiply_all(1, 2, 3))  # Erwarteter Output: 6
+</code>
+
+===== Vorgehen =====
+  - Akzeptiere das GitHub Classroom Assignment
+  - Klone dein persönliches Repository in die Entwicklungsumgebung
+  - Implementiere die Funktion ''multiply_all'' gemäß der Aufgabenstellung
+  - Teste die Funktion mit verschiedenen Mengen von Zahlen
+
+===== Abgabe =====
+Die Abgabe der Lösung erfolgt als Push in das persönliche GitHub-Repository.
+
+
+----
+<nodisp> GitHub Repository https://github.com/templates-python/m323-lu05-a01-args</nodisp>
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Kevin Maurizi

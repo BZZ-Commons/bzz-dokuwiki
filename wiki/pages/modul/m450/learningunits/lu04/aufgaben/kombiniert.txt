@@ -1,0 +1,54 @@
+====== LU01.A04 - Library ======
+
+<WRAP center round todo 60%>
+Erstelle die vollständigen Unittests für die Library-Applikation.
+Wende dabei alles aus den Learning Units 03 und 04 an.
+</WRAP>
+
+===== Auftrag 1 =====
+Die Library-Applikation enthält mehrere Klassen und zu jeder Klasse ein entsprechendes Testmodul.
+Das jeweilige Testmodul soll jede Funktion überprüfen.
+Dabei sollen nicht nur der korrekte Ablauf, sondern auch Fehler und Exceptions erzeugt werden.
+
+Viele Testfunktionen setzen voraus, dass bestimmte Objekte existieren.
+Erstelle diese Objekte in ''fixture''s und nicht innerhalb der Testfunktion.
+
+Objekte die innerhalb der Testfunktion erstellt werden, sind **fett** markiert.
+
+==== book.py / test_book.py ====
+  * Konstruktor
+    * Erzeuge ein **Book-Objekt** mit gültigem Titel und ISBN.
+    * Erzeuge ein **Book-Objekt** mit einem oder keinem Wert.
+  * Ausgabe
+    * Prüfe die korrekte Ausgabe eines Buchs.
+  * Location
+    * Prüfe, dass die ''location'' bei einem neuen **Book-Objekt** leer ist.
+    * Erzeuge ein **Book-Objekt** mit Titel, ISBN und Location. Prüfe, ob die ''location'' im Book-Objekt leer ist.
+
+==== library.py / test_library.py ====
+  * Konstruktor
+    * Erzeuge ein **Library-Objekt** und prüfe die Listen mit den Büchern und den Kunden.
+  * Kunden
+    * Füge zwei Kunden zur Bibliothek hinzu. Sind beide Kunden in der Liste vorhanden?
+    * Suche nach einem vorhandenen Kunden in der Bibliothek.
+    * Suche einen nicht vorhandenen Kunden in der Bibliothek.
+    * Lasse die Kundenliste ausgeben.
+  * Bücher
+    * Füge drei Bücher zur Bibliothek hinzu.
+    * Suche ein vorhandenes Buch in der Bibliothek.
+    * Suche ein unbekanntes Buch in der Bibliothek.
+    * Entferne ein existierendes Buch aus der Bibliothek.
+    * Entferne ein unbekanntes Buch aus der Bibliothek.
+    * Nimm ein Buch an einer bekannten Position aus der Bibliothek.
+    * Nimm ein Buch an einer unbekannten Position aus der Bibliothek.
+    * Stelle ein Buch mit einer korrekten Position zurück.
+    * Stelle ein Buch mit einer unbekannten Position zurück.
+    * Lasse eine Bücherliste anzeigen.
+
+===== Auftrag 2 =====
+Hast du erkannt, nach welchem System die Testfunktionen definiert werden?
+Versuche nun selber Testfunktionen für die Klassen ''Customer'' und ''Librarian'' zu definieren und umzusetzen.
+
+----
+{{tag>M450-LU04}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

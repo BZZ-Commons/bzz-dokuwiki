@@ -1,0 +1,66 @@
+====== LU09c - Werkzeuge ======
+<WRAP center round info 60%>
+Für das Deployment von Webseiten können wir verschiedene Werkzeuge nutzen.
+Diese Verbinden sich in der Regel via **F**ile **T**ransfer **P**rotocol mit dem Webserver und kopieren die Daten.
+</WRAP>
+
+===== FTP, FTP/s und SFTP =====
+//Siehe auch [[wpde>File_Transfer_Protocol]]//
+
+Das **F**ile **T**ransfer **P**rotocol ist ein Netzwerkprotokoll zur Übermittlung von Dateien.
+Wir nutzen es vor allem, um die Dateien (HTML, CSS, Bilder, ...) unserer Webseite auf einen Webserver zu übermitteln.
+
+FTP ist eines der ältesten Protokolle im Internet und kennt keinerlei Verschlüsselung.
+Dadurch kann der Inhalt der Datenpakete während der Übermittlung im Klartext gelesen werden.
+Bei einer öffentlichen Homepage ist das häufig kein Problem.
+
+Für eine sichere, verschlüsselte Übermittlung gibt es drei Weiterentwicklungen von FTP:
+  * AS3 (siehe [[wpde>AS3]])
+  * FTPS (siehe [[wpde>FTP_über_SSL]])
+  * SFTP (siehe [[wpde>SSH_File_Transfer_Protocol]])
+
+===== Entwicklungsumgebung =====
+Verschiedene Entwicklungsumgebungen (IDE) bieten uns die Möglichkeit, die Webseiten via FTP auf einen Webserver zu kopieren.
+
+==== Webstorm ====
+=== Zugangsdaten eintragen ===
+
+In Webstorm finden Sie im Menu "Tools" das Untermenu "Deployment".
+Hier können Sie die Zugangsdaten eingeben und das Deployment konfigurieren.
+
+{{:modul:m293:learningunits:lu09:aufgaben:webstorm01.png?400|}}
+
+Ausserdem müssen Sie im Reiter "Mappings" angeben, welchen Ordner auf Ihrem Rechner ("local path") mit welchem Ordner auf dem Webserver verbunden wird..
+Sie können den "local path" und "deployment path" manuell eingeben oder über das Ordnersymbol auf der rechten Seite suchen.
+
+{{:modul:m293:learningunits:lu09:webstorm03.png?400|}}
+
+=== Dateien und Ordner hochladen ===
+Mit einem Rechtsklick auf eine Datei oder einen Ordner finden Sie den Eintrag "Deployment" im Kontextmenu.
+
+{{:modul:m293:learningunits:lu09:webstorm02.png?400|}}
+
+Hier stehen Ihnen verschiedene Aktionen zur Verfügung:
+
+| Upload to... | Lädt die Datei/Ordner auf den Webserver hoch. |
+| Download from... | Lädt die Datei/Ordner vom Webserver herunter. |
+| Compare with Deployed... | Vergleicht die Datei auf Ihrem Rechner mit der Datei auf dem Webserver und meldet Unterschiede. |
+| Sync with Deployed ... | Synchronisiert die Dateien / Ordner zwischen Ihrem Rechner und dem Webserver. Dabei wird die jeweils neuere Datei hoch- bzw. runtergeladen. |
+
+
+===== FTP-Client =====
+Ein FTP-Client ist ein spezialisiertes Programm um Dateien mittels FTP zu übertragen.
+Nachdem wir uns mit dem Webserver verbunden haben, können wir die Dateien einfach per Drag&Drop zwischen dem Webserver und einem Ordner auf unserem PC kopieren.
+
+==== Filezilla ====
+Einer der beliebtesten FTP-Clients ist [[https://filezilla-project.org/|FileZilla]].
+Zu den Gründen für die Beliebtheit zählen:
+  * FileZilla ist ein "Free Open Source" Programm.
+  * FileZilla unterstützt FTP, FTPS und SFTP.
+  * FileZilla wird aktiv weiter entwickelt und es gibt eine grosse Community.
+
+{{https://filezilla-project.org/images/screenshots/fz3_win_main.png}}
+
+----
+{{tag>m293-LU09 m293-I1G m293-I1F}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Kevin Maurizi, Marcel Suter

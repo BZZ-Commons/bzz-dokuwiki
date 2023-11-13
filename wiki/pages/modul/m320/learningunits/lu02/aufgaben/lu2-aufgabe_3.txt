@@ -1,0 +1,30 @@
+==== Aufgabe 3 - Parametrisierte Konstruktoren ====
+===Ziel===
+Sie können eine Klasse gemäss UML-Diagramm mit parametrisiertem Konstruktor implementieren.
+
+===Auftrag 1===
+Gegeben ist das folgende Klassendiagramm\\
+{{:modul:m320:learningunits:lu02:aufgaben:lu02_-_aufg3-bicycle.png?300|}}
+  - Akzeptieren Sie das Assignment im GitHub Classroom und klonen Sie Ihr Repository in die Entwicklungsumgebung.
+  - Codieren Sie alle setter und getter; die im Diagramm mit //set_methodename// vermerkten Methoden implementieren Sie bitte als "Property" mit den Annotationen ''@property'' und ''@methodename.setter''!\\ Implementieren Sie die Klasse nach den Regeln des TDD!\\ - Zuerst den Konstruktor und diesen dann testen.\\ - Dann der Reihe nach die setter und getter eines Attributs (z.B. ''size'') und jedes Paar testen.\\ So ist sichergestellt, dass diese Grundfunktionen einwandfrei implementiert sind.
+  - Implementieren Sie nun die ''print''-Methode. Halten Sie sich an die Darstellung der Aufgabenstellung.\\ Hinweis: \\ · Seitenumbruch kann mit ''\n'' und Tabulator mit ''\t'' innerhalb der Zeichenkette implementiert werden (z.B. '\tFarbe:' bwirkt einen Tab vor dem Text)
+  - Implementieren Sie zuletzt die ''main'' Methode. Instanzieren Sie der Reihe nach 3 Fahrräder mit den entsprechenden Parametern. Nutzen Sie dabei das Wissen über parametrierte Konstruktoren und Default-Werte.\\
+  - Führen Sie einen Commit und einen Push durch.
+
+
+<tab10>{{:modul:m320:learningunits:lu02:aufgaben:lu02-aug3-output.png?300|}}\\
+
+===Auftrag 2===
+Passen Sie den Code so an, dass das Citybike die Farbe rot (red) aufweist. 
+Dabei dürfen Sie aber nur in der ''main''-Methode Hand anlegen. Konstruktoren oder Methoden dürfen nicht zugefügt oder geändert werden!
+
+===Dauer===
+30 Minuten inkl. Testen.
+
+===Abgabe===
+Die Abgabe erfolgt mittels Push in das GitHub Repository.
+In Moodle ist keine Abgabe möglich.
+
+----
+<nodisp>GitHub Repo: https://github.com/templates-python/M320_LU02_A3_Overloading.git</nodisp>
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) René Probst

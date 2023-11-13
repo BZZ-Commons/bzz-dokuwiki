@@ -1,0 +1,24 @@
+==== Aufgabe 4 - Kommunikation von Objekten ====
+
+=== Ziel ===
+Sie können Objekte nach Vorgabe eines Sequenzdiagramms erstellen und kommunizieren lassen.
+
+=== Auftrag 1 ===
+  - Akzeptieren Sie das Assignment im GitHub Classroom und klonen Sie Ihr Repository in die Entwicklungsumgebung.
+  - Öffnen Sie die Klasse ''main.py'' und ergänzen Sie den Code für die Instanzierung der Objekte sowie die Programmausführung gemäss dem unten gezeigten Sequenzdiagramm \\ {{:modul:m320:learningunits:lu04:aufgaben:lu03-aufg4_band-1.png?700|}}\\
+\\
+Das Ergebnis soll der gezeigten Ausgabe entsprechen.\\ {{:modul:m320:learningunits:lu04:aufgaben:lu03-aufg4_band-2.png?300|}}
+\\
+=== Auftrag 2 ===
+- Studieren Sie den Code der Klassen ''Musician'' und ''Instrument'' und ergänzen Sie Sequenzdiagramm mit den jeweiligen Aufrufen. (skizzieren Sie das Diagramm mit einem entsprechenden Tool) \\ {{modul:m320:learningunits:lu04:aufgaben:lu03-aufg4_band-3.png?600|}}
+
+=== Dauer ===
+20 Minuten
+=== Abgabe ===
+Zeigen Sie der Lehrperson die korrekte Ausführung des Programms.
+
+Das Sequenzdiagramm geben Sie als PDF-Datei in Moodle ab.
+
+----
+<nodisp>GitHub Repo: https://github.com/templates-python/M320_LU03_A4_ObjektKommunikation.git</nodisp>
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) René Probst

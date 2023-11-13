@@ -1,0 +1,33 @@
+====== LU14.A01 - Farben und Schriften anpassen ======
+
+<WRAP center round todo 60%>
+Setzen Sie ein individuelles Farbschema für eine Webseite mit Bootstrap um.
+</WRAP>
+
+===== Vorgehen =====
+==== Vorbereitung ====
+  - Akzeptieren Sie das GitHub Classroom Assignment.
+  - Klonen Sie das Repository in Webstorm.
+  - Öffnen Sie die Webseite [[https://coolors.co/generate]] um ein zufälliges Farbschema zu generieren.
+    * Sie können beliebig oft ein neues, zufälliges Farbeschema generieren lassen.
+  - Notieren Sie sich die Werte für die einzelnen Farben. Sie benötigen je einen Farbwert für
+    * Primäre Farbe
+    * Sekundäre Farbe
+    * Primärer Hintergrund
+    * Sekundärer Hintergrund   
+
+==== CSS anpassen ====
+Um die Variablen aus Bootstrap zu überschreiben, bearbeiten Sie die Datei ''style.css''.
+Überschreiben Sie alle Variablen, welche die primären, sekundären und tertiären Farben für Schrift, Hintergründe, Buttons, ... festlegen.
+Sie müssen dazu teilweise die hexadezimalen in dezimale Werte umrechnen.
+
+Prüfen Sie im Webbrowser, ob ihr individuelles Farbeschema korrekt umgesetzt ist.
+  * Expermimentieren Sie auch mit unterschiedlichen Einstellungen für die Transparenz.
+  * Sie können auch die Einstellungen für die Schriftarten anpassen.
+
+===== Abgabe =====
+Die Abgabe erfolgt mittels Push ins GitHub Repository.
+
+----
+{{tag>m293-LU14}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Kevin Maurizi, Marcel Suter

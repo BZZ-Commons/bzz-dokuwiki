@@ -1,0 +1,119 @@
+====== LU05c - Äquivalenzklassen-Analyse ======
+
+<WRAP center round info 60%>
+Die Äquivalenzklassen-Analyse ist eine Technik zur Definition von Testfällen.
+Bei der Äquivalenzklassen-Analyse definieren wir für jede Eingabe die Gruppen von Werten, die vom Programm gleich verarbeitet werden (sollten).
+</WRAP>
+
+Angenommen wir haben ein Eingabefeld für eine Ganzzahl zwischen 0 und 100.
+  * Wir können davon ausgehen, dass alle gültigen Eingaben gleich verarbeitet werden.
+  * Auch werden alle formal falschen Eingaben (Buchstaben, Sonderzeichen, ...) gleich verarbeitet werden.
+
+Anstatt nun jede Zahl von 0 bis 100 und jede Kombination von Buchstaben zu testen, brauchen wir nur je einen Testfall.
+
+===== Äquivalenzklassen definieren =====
+Je nach Art der Eingabe benötigen wir unterschiedliche Äquivalenzklassen.
+
+==== Zahlen ====
+  * 1 Klasse für gültige Eingaben
+  * 1 Klasse für eine zu kleine Zahl
+  * 1 Klasse für eine zu grosse Zahl
+  * 1 Klasse für formale falsche Eingaben
+
+==== Text ====
+  * 1 Klasse für gültige Eingaben
+  * 1 Klasse für eine zu kurze Eingabe
+  * 1 Klasse für eine zu lange Eingabe
+  * 1 Klasse für ungültige Zeichen
+
+==== Auswahl ====
+  * 1 Klasse pro gültigem Wert
+  * 1 Klasse für ungültige Werte
+
+
+===== Beispiel: Personalien =====
+==== Eingaben und Validerungsregeln ====
+
+^ Eingabe ^ Datentyp ^ Regeln ^ 
+| Vorname | Text | 3-50 Zeichen, Buchstaben und Umlaute |
+| Geschlecht | Auswahl | M, W oder D |
+| Alter | Ganzzahl | 0 - 150 |
+| Grösse in Meter | Dezimalzahl | 0.2 - 2.99 |
+
+==== Äquivalenzklassen ====
+
+^ Nr ^ Eingabe ^ Klasse ^
+^ Gültige Klassen ^^
+| 1 | Vorname | Text mit 3-50 Buchstaben und Umlauten |
+| 2 | Geschlecht | M |
+| 3 | Geschlecht | W |
+| 4 | Geschlecht | D |
+| 5 | Alter | Ganzzahl von 0 bis 150 |
+| 6 | Grösse | Dezimalzahl von 0.2 bis 2.99 |
+^ Ungültige Klassen ^^
+| 7 | Vorname | Text mit 2 Buchstaben oder weniger |
+| 8 | Vorname | Text mit mehr als 50 Buchstaben |
+| 9 | Vorname | Text mit ungültigen Zeichen |
+| 10 | Geschlecht | alle anderen Werte |
+| 11 | Alter | Ganzzahl kleiner 0 |
+| 12 | Alter | Ganzzahl grösser 150 |
+| 13 | Alter | Keine Ganzzahl |
+| 14 | Grösse | Dezimalzahl kleiner 0.2 |
+| 15 | Grösse | Dezimalzahl grösser 2.99 |
+| 16 | Grösse | Keine Zahl |
+
+===== Testfälle ableiten =====
+Aus den Äquivalenzklassen können wir nun die Testfälle ableiten.
+  * Testfälle mit ausschliesslich gültigen Klassen. Dabei muss jede gültige Klasse in mindesten einem gültigen Testfall vorkommen.
+  * Testfälle mit **einer** ungültigen Klasse.
+
+Als Eingabewerte wählen wir "typische" Werte die klar innerhalb der Klasse liegen.
+Die Grenzen der Klassen werden später in separaten Testfällen (Grenzwertanalyse) getestet.
+
+===== Beispiel: Personalien =====
+^ Nr || 1 |
+^ Klassen || 1,2,5,6 |
+^ Eingaben | Vorname | Hanna |
+^ ::: | Geschlecht | M |
+^ ::: | Alter | 35 |
+^ ::: | Grösse | 1.35 |
+| |||
+^ Nr || 2 |
+^ Klassen || 1,3,5,6 |
+^ Eingaben | Vorname | Peter |
+^ ::: | Geschlecht | W |
+^ ::: | Alter | 56 |
+^ ::: | Grösse | 0.76 |
+| |||
+^ Nr || 3 |
+^ Klassen || 1,4,5,6 |
+^ Eingaben | Vorname | Diego |
+^ ::: | Geschlecht | D |
+^ ::: | Alter | 15 |
+^ ::: | Grösse | 2.35 |
+| |||
+^ Nr || 4 |
+^ Klassen || 7 |
+^ Eingaben | Vorname | H |
+^ ::: | Geschlecht | M |
+^ ::: | Alter | 14 |
+^ ::: | Grösse | 1.86 |
+| |||
+^ Nr || 5 |
+^ Klassen || 8 |
+^ Eingaben | Vorname | Anna Maria Davide Juan Marco Julius William Bruce akodfaisdfhaosdihgaoisdgh |
+^ ::: | Geschlecht | M |
+^ ::: | Alter | 6 |
+^ ::: | Grösse | 1.33 |
+| |||
+^ Nr || 9 |
+^ Klassen || 9 |
+^ Eingaben | Vorname | Mar$el |
+^ ::: | Geschlecht | D |
+^ ::: | Alter | 19 |
+^ ::: | Grösse | 0.74 |
+| |||
+
+----
+{{tag>M450-LU05}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

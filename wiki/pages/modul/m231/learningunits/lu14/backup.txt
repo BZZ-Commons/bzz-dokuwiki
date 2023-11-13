@@ -1,0 +1,32 @@
+====== LU14b - Backup ======
+
+
+===== Varianten von Backups =====
+
+Es gibt verschiedene Varianten von Backups, die je nach den Anforderungen und Zielen einer Organisation eingesetzt werden können. Hier sind einige gängige Backup-Methoden:
+
+  * Vollbackup (Full Backup)
+Bei einem Vollbackup werden alle Daten in einem bestimmten System oder einer bestimmten Umgebung gesichert. Es umfasst sämtliche Daten und erstellt eine vollständige Kopie. Vollbackups bieten eine einfache Wiederherstellung, da alle benötigten Daten an einem Ort vorhanden sind. Allerdings erfordern Vollbackups mehr Speicherplatz und Zeit für die Durchführung. Durch Komprimierung der Daten während des Backups kann zwar Speicherplatz eingespart werden, die Durchführungszeit verlängert sich aber je nach Kompressionsrate erheblich
+
+  * Differentielles Backup (Differential Backup)
+Bei einem differentiellen Backup werden nur die Änderungen gesichert, die seit dem letzten Vollbackup vorgenommen wurden. Es erfasst alle Daten, die seit dem Vollbackup erstellt oder geändert wurden. Im Vergleich zum Vollbackup erfordert das differentielle Backup weniger Speicherplatz und Zeit, um durchgeführt zu werden.
+
+  * Inkrementelles Backup (Incremental Backup)
+Ein inkrementelles Backup erfasst nur die Änderungen, die seit dem letzten Backup (unabhängig davon, ob es ein Voll- oder inkrementelles Backup war) vorgenommen wurden. Es sichert nur die neuen oder geänderten Daten seit dem letzten Backup. Inkrementelle Backups erfordern im Vergleich mit Vollbackup und differentiellem Backup weniger Speicherplatz und Zeit für die Durchführung.
+
+  * Spiegelbackup (Mirror Backup)
+Ein Spiegelbackup erstellt eine exakte Kopie aller ausgewählten Daten. Es spiegelt die Quelldaten vollständig und ermöglicht eine schnelle Wiederherstellung. Spiegelbackups werden oft für kritische Systeme oder Daten eingesetzt, bei denen eine schnelle Verfügbarkeit im Falle eines Ausfalls erforderlich ist. Allerdings benötigen Spiegelbackups mehr Speicherplatz. Dies Form des Backups darf nicht mit einer synchronisation in eine Cloud verwechselt werden. Ein Cloud-Sync führt die Daten permanent nach, ein Spiegelbackup nur zu einem definierten Zeitpunkt.
+
+
+Die Auswahl der Backup-Variante hängt von Faktoren wie Datenmenge, verfügbarer Speicherkapazität, Wiederherstellungszeitzielen, Kosten und anderen spezifischen Anforderungen ab. Oft wird eine Kombination verschiedener Backup-Methoden verwendet (Hybrides Backup), um die bestmögliche Datensicherungsstrategie zu erreichen.
+
+
+{{:modul:m231:learningunits:lu14:backup-technologien.png?600|https://www.itwissen.info/Differentielles-Backup-differential-backup.html}}
+
+
+----
+
+{{tag>m231-AnG}}
+
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter, Andre Probst
+

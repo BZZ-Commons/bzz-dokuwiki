@@ -1,0 +1,79 @@
+====== LU06.A07: British Inheritance Tax ======
+
+===== Ausgangslage =====
+
+Personen, die Schenkungen erhalten, werden mit der Erbschaftssteuer belastet, wenn sie in den 7 Jahren vor dem Tod des Schenkers mehr als 325.000 £ erhalten.
+
+Wenn Erbschaftssteuer zu zahlen ist, wird sie zu 40 % auf Schenkungen erhoben, die in den letzten 3 Jahren vor dem Tod erfolgen.
+
+Schenkungen, die 3 bis 7 Jahre vor dem Tod erfolgen, werden nach einer gleitenden Skala besteuert, die als "taper relief" bekannt ist - https://www.gov.uk/inheritance-tax/gifts
+
+^ Jahre zwischen Schenkung und Tod  ^ Steuersatz  ^
+| weniger als 3                     | 40%         |
+| 3 bis 4                           | 32%         |
+| 4 bis 5                           | 24%         |
+| 5 bis 6                           | 16%         |
+| 6 bis 7                           | 8%          |
+| 7 bis 8                           | 0%          |
+
+**Beispiele:**
+  * Jenny starb am 1. Juli 2018. Sie war zum Zeitpunkt ihres Todes weder verheiratet noch in einer Lebenspartnerschaft.
+  * In den 7 Jahren vor ihrem Tod hinterließ Jenny 3 Schenkungen:
+  * 300'000 an ihren Bruder 6,5 Jahre vor ihrem Tod
+  * 50'000 an ihre Schwester 4,5 Jahre vor ihrem Tod
+  * 150'000 an ihren Freund 3,5 Jahre vor ihrem Tod
+  * Jenny hat keinen Anspruch auf andere Schenkungsbefreiungen oder -erleichterungen.
+  * Es gibt eine Erbschaftssteuergrenze von 325'000. Alles, was unter diesem Betrag liegt, ist steuerfrei.
+  * 300'000 sind durch das Geschenk, das Jenny ihrem Bruder gemacht hat, aufgebraucht. Auf sein Geschenk ist keine Steuer zu zahlen.
+  * Die verbleibenden 25'000 werden durch die Schenkung von 50'000 an ihre Schwester verbraucht. Auf den Betrag, der nicht durch den Schwellenwert abgedeckt ist, sind Steuern zu zahlen. Das bedeutet, dass auf die 25'000 der Schenkung an Jennys Schwester ein Steuersatz von 24 % zu zahlen ist.
+  * Die Schenkung von 150'000 an ihren Freund wird mit einem Steuersatz von 32 % besteuert.
+  * Jennys verbleibender Nachlass wurde mit 500'000 bewertet und mit dem üblichen Erbschaftssteuersatz von 40 % belastet. Jenny hat den Steuerfreibetrag für Schenkungen vor ihrem Tod ausgeschöpft.
+
+===== Aufgabe =====
+
+Schreiben Sie ein Programm, das die Erbschaftssteuer für eine Schenkung für eine Reihe von Jahren nach dem Tod berechnet. Berücksichtigen Sie dabei den Freibetrag von 325'000
+
+Das Programm sollte folgendermaßen funktionieren:
+
+<code>
+Inheritance:
+*500000*
+Years since death:
+*3*
+Tax: 56000
+</code>
+
+
+<code>
+Inheritance:
+*325000*
+Years since death:
+*2*
+Tax: 0
+</code>
+
+<code>
+Inheritance:
+*625000*
+Years since death:
+*6*
+Tax: 24000
+</code>
+
+
+===== Vorlage =====
+<code python>
+def main():
+  # Write your program here
+
+if __name__ == '__main__':
+    main()
+</code>
+
+Anmerkung: Kümmern Sie sich im Moment nicht zu sehr um ''if %%__%%name%%__%% == '%%__%%main%%__'%%:''. Wir brauchen es technisch gesehen nicht für dieses Programm, aber es ist eine gute Übung, es einzubauen, und es wird in späteren Übungen klarer werden.
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/ch/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Kevin Maurizi 
+
+Diese Aufgabe ist eine übersetzte und angepasste Aufgabe von [[https://scott3142.uk/|Scott Morgan]], verwendet unter CC BY NC SA.
+

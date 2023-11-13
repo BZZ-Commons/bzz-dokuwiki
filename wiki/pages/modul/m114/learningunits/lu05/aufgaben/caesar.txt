@@ -1,0 +1,37 @@
+====== LU05.A01 - Caesar ======
+Sie können Ihre Lösung mit [[https://www.cryptool.org/de/cto/caesar]] überprüfen.
+
+===== Hilfsmittel =====
+  * Papier und Schreibmaterial
+  * Dokument "Hilfsblätter"
+
+===== Aufgaben =====
+
+== Hinweise ==
+Verwenden Sie im Chiffretext ausschliesslich Grossbuchstaben.
+Lassen Sie Leerzeichen und Satzzeichen weg.
+
+==== Verschlüsseln ====
+=== Caesar ===
+Verschlüsseln Sie den Klartext mit dem Caesar-Verfahren.
+
+  * Klartext: **Haensel und Gretel verirrten sich im Wald.**
+  * Schlüssel: 4
+
+  * Klartext: **Diese Nachricht ist geheim**
+  * Schlüssel: 8
+
+==== Entschlüsseln ====
+
+=== Caesar ===
+Entschlüsseln Sie den Chiffretext mit dem Caesar-Verfahren.
+
+  * Chiffretext: **ZHUOHVHQNDQQLVWNODULPYRUWHLO**
+  * Schlüssel: **3**
+
+  * Chiffretext: **ZGAINKTOYZXUKZROIN**
+  * Schlüssel: **6**
+
+----
+{{tag>m114-A0G}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

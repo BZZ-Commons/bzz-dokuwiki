@@ -1,0 +1,55 @@
+====== LU07.A01 - Bedingte Ausdrücke ======
+**1. Grösste Zahl**
+<WRAP center round box 60%>
+<code python>
+num1 = 10
+num2 = 12
+
+#TODO: Please print the bigger number, only use one ternary-operator to do so
+print(num1,' is greater') if (num1>num2) else print(num2,' is Greater')
+
+</code>
+</WRAP>
+
+** 2. Wert des Boolean auf deutsch ausdrucken **
+
+<WRAP center round box 60%>
+<code python>
+value = True
+
+#TODO: Please print the boolean-value in german, only use one ternary-operator to do so
+print('Wahr' if value else 'Falsch')
+</code>
+</WRAP>
+
+**3. Wandeln Sie die Vorlage um**
+
+<WRAP center round box 60%>
+<code python>
+x = int(input("Please enter an integer:\n"))
+
+# TODO: replace the if..else with a ternary-operator
+int_type = 'odd' if x % 2 else 'even'
+
+print(f'You entered {x} which is an {int_type} integer.')
+
+</code>
+</WRAP>
+
+
+**4. Verschachtelte Ternary-Operatoren**
+<WRAP center round box 60%>
+<code python>
+def main():
+
+    number = int(input('Enter number between -100 and +200'))
+    
+    print('Less than zero' if number<0 else 'Between 0 and 100' if number>=0 and number<=100 else 'Greater than 100')
+
+if __name__ == '__main__':
+    main()
+</code>
+</WRAP>
+
+
+ 

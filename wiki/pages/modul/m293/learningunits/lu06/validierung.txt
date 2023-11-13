@@ -1,0 +1,28 @@
+====== LU06d - Validierung ======
+<WRAP center round info 60%>
+Unter Validierung verstehen wir das Überprüfen von Eingaben auf gültige Werte.
+Verschiedene Attribute im ''input''-Tag erlauben es, die Eingaben im Webbrowser zu prüfen, bevor diese an den Server geschickt werden.
+</WRAP> 
+
+Durch die Validierung der Eingaben im Formular erhält der Benutzer direktes Feedback, ob seine Eingaben gültig sind.
+Welche Attribute zum Einsatz kommen, hängt vom ''type'' des Eingabefeldes ab.
+Auf dieser Seite zeige ich Ihnen nur eine kleine Auswahl.
+
+
+^ Attribut ^ Beschreibung ^ types ^ 
+| required((required ist ein boolsches Attribut und benötigt keinen Wert))  | Pflichtfeld | alle ausser image, button |
+| minlength / maxlength | Minimal und maximale Anzahl Zeichen | text, email, search, password, tel, url |
+| min / max | Minimaler und maximaler Wert | number, date, time |
+
+Eine vollständige Liste aller Attribute finden Sie unter [[https://wiki.selfhtml.org/wiki/HTML/Elemente/input|selfhtml - input]].
+
+===== Beispiel =====
+<code html>
+...
+  <form action='./index.php' method='post'>
+    <label for='email'>Email</label>
+    <input id='email' name='email' type='text' minlength='10' required />
+    <button type='submit'>Absenden</button>
+  </form>
+...
+</code>

@@ -1,0 +1,18 @@
+====== LU04.L02 - Lambda - Fläche von Formen ======
+
+<code python>
+from math import pi
+
+# Lambda-Funktionen für die Flächenberechnung
+circle_area = lambda r: pi * r * r  # Kreisfläche
+square_area = lambda s: s * s       # Quadratfläche
+rectangle_area = lambda l, w: l * w # Rechteckfläche
+
+if __name__ == '__main__':
+    print(circle_area(5))
+    print(square_area(4))
+    print(rectangle_area(3, 5))
+</code>
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/ch/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Kevin Maurizi 

@@ -1,0 +1,24 @@
+====== LU01a - Eclipse, IntelliJ, NetBeans: Die Entwicklungsumgebung ======
+
+
+Es ist sinnvoll, von Anfang an eine „richtige“ Entwicklungsumgebung anzuwenden. Experimente mit einem Texteditor und das Aufrufen des Java-Compilers über die Kommandozeile sind zwar möglich, sind für das ernsthafte Arbeiten mit Java jedoch nicht zu empfehlen. Für die Programmierung von Java-Anwendungen stehen eine Reihe unterschiedlicher IDEs zur Verfügung. Bekannte, unter allen üblichen Betriebssystemen lauffähige Werkzeuge sind:
+
+  * Eclipse: Hier handelt es sich um eine universelle IDE für eine Vielzahl von Sprachen. Java wird direkt unterstützt. Mit Hilfe von Plug-ins kann man Eclipse sehr gut an seine Vorstellungen anpassen.
+  * IntelliJ IDEA: IntelliJ ist eine IDE des Softwareunternehmens JetBrains für die Programmiersprache Java. Eine kostenfreie Standardversion ist verfügbar.
+  * NetBeans: Diese IDE wurde hauptsächlich für die Programmiersprache Java entwickelt. Sie unterstützt jedoch auch C, C++ und dynamische Programmiersprachen. Sie kann ebenfalls kostenfrei heruntergeladen werden.
+In diesem Kurs werden wie die Entwicklungsumgebung IntelliJ IDEA verwenden.
+
+==== IntelliJ installieren ====
+ 
+Installieren Sie Intellij IDEA entweder mit der Paketverwaltung Chocolatey und dem Befehl:
+
+<code>choco install intellijidea-community</code>
+
+Oder laden und installieren Sie IntelliJ direkt von der Produkthomepage: [[https://www.jetbrains.com/de-de/idea/download/#section=windows]]
+
+<WRAP center round info 60%>
+Als Schüler des BZZ erhalten Sie gratis die Ultimate Edition, für die Module 319 und 320 reicht aber die Community Edition aus. Mehr Infos zur Ultimate Edition für Studenten erhalten Sie [[https://www.jetbrains.com/de-de/community/education/#students|hier]].
+</WRAP>
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Kevin Maurizi

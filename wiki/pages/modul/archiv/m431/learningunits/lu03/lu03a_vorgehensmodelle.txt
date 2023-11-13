@@ -1,0 +1,47 @@
+====== LU03a - Vorgehensmodelle für Projekte ======
+
+Wie Sie im Themenbereich Projektmerkmale erfahren haben, wird im Rahmen eines Projekts etwas Neues geschaffen und beispielsweise aus einer Idee ein neues Produkt entwickelt. Ein solches Vorhaben setzt ein strukturiertes Vorgehen voraus. Allgemein bedeutet dies, den Ablauf von der Idee zum neuen Produkt möglichst effizient und zielgerichtet zu gestalten. Dieser Ablauf wird üblicherweise als **Realisierungs- oder Entwicklungsprozess** bezeichnet. Während der erste Begriff für alle Projektarten verwendet werden kann, kommt der zweite Begriff meist bei Entwicklungsprojekten zum Einsatz.
+
+{{modul:m431:learningunits:lu03:realisierungsprozess.jpg?400}}
+
+//Abbildung 1:Realisierungsprozess als zentraler Prozess eines Projekts//
+
+Wenn beim Realisierungsprozess nicht strukturiert vorgegangen wird, müssen folgende Risiken in Kauf genommen werden:
+
+  * Ein Produkt wird realisiert, bevor das vom Auftraggeber erwartete Ergebnis klar ist.
+  * Wichtige Umsetzungsaufgaben bzw. -tätigkeiten werden vergessen.
+  * Dokumente, die für die Nutzung oder Weiterentwicklung des Produkts wichtig sind, werden gar nicht oder zu spät erstellt.
+
+Solche Versäumnisse können nicht nur zu zeitraubenden Nacharbeiten in einem Projekt führen. sondern sogar dazu, dass ein Projekt erfolglos abgebrochen werden muss.
+
+==== Beispiele aus der Softwareentwicklung ====
+
+  * Eine Anwendung wird allzu rasch programmiert, ohne dass vorher abgeklärt wird, was die Benutzer genau wollen. Folge: Eine Erhebung und Umsetzung der notwendigen Änderungen ist ähnlich aufwendig wie der bisherige Realisierungsprozess.
+  * Bei der Inbetriebnahme einer Anwendung wird keine Ausbildung der Benutzer vorgesehen. Folge: Das Ergebnis des Projekts kann nicht effektiv genutzt werden.
+  * Während der Entwicklung einer Anwendung werden keine Dokumente zur Wartung und I oder Weiterentwicklung erstellt. Folge: Die fehlenden Informationen müssen nachträglich gesammelt und festgehalten werden.
+
+**Vorgehensmodelle für Projekte** können als «Best Practices» aufgefasst werden, die Erfahrungen aus der Abwicklung zahlreicher Projekte zusammenfassen und für eigene Projekte (ggf. mit geringfügigen Anpassungen) übernommen werden können. Auf diese Weise kann Zeit gespart und verhindert werden, dass die gleichen oder gleichartige Fehler wiederholt werden. In den folgenden Unterkapiteln werden verschiedene Elemente und Typen von Vorgehensmodellen näher vorgestellt. Darüber hinaus lernen Sie Modelle für ein strukturiertes Vorgehen kennen, die bei IT-Projekten häufig zum Einsatz kommen
+
+===== a) Elemente von Vorgehensmodellen =====
+
+Mithilfe eines Vorgehensmodells kann der Realisierungsprozess in einzelne Schritte bzw. \\ Aufgaben zerlegt werden,  die so anzuordnen sind, dass die Idee möglichst effektiv und effizient in ein Ergebnis bzw. Produkt umgesetzt wird.  Zu diesem Zweck wird der gesamte \\ Prozess in mehrere Phasen aufgeteilt, wobei in jeder Phase bestimmte Aktivitäten ausgeführt und definierte Ergebnisse erarbeitet werden müssen.  Jede Phase endet mit einem so genannten Meilenstein.
+
+| **Element** | **Beschreibung** | **Beispiel** |
+| Phase | Zeitabschnitt, in dem ein bestimmter Teilprozess durchgeführt und bestimmte Ergebnisse erarbeitet werden. | Anforderungsanalyse |
+| Meilenstein | Abschluss einer Phase bzw. Zeitpunkt, zu dem bestimmte Ergebnisse erwartet werden. Mit einem Meilenstein ist oft eine Entscheidung über das weitere Vorgehen verbunden. | Spezifikation abgenommen |
+| Aktivität | Konkrete Tätigkeit während einer Phase. Aktivitäten beziehen sich immer auf konkrete Ergebnisse. | System abgrenzen |
+| Ergebnis | Erwartetes Lieferobjekt einer Aktivität oder Phase. Typische Lieferobjekte bei IT-Projekten sind Dokumente oder Programmcode. | Pflichtenheft |
+| Rolle | Funktionale Beschreibung der Personen, die an einer Aktivität bzw. an den jeweiligen Ergebnissen beteiligt sind. Anhand der Rollenbeschreibung kann ermittelt werden, welche Kompetenzen im Projektteam benötigt werden. | Business Analyst |
+
+Ein **Vorgehensmodell** beschreibt die Anordnung und Beziehungen dieser Elemente, d. h. den Ablauf der einzelnen Phasen und Aktivitäten, die zu liefernden Ergebnisse der einzelnen Phasen bzw. Aktivitäten sowie die dafür benötigten Rollen und Entscheidungen.
+
+===== b) Typen von Vorgehensmodellen =====
+
+In den letzten Jahrzehnten haben sich unterschiedliche Typen von Vorgehensmodellen herausgebildet, die ausführlich beschrieben und praktisch erprobt wurden. Entsprechend gross ist der Fundus an verfügbaren Vorgehensmodellen. Für Projekte in den Bereichen **System- und Softwareentwicklung** lassen sich diese Vorgehensmodelle heranziehen:
+
+  * **Sequenzielle Vorgehensmodelle** zeichnen sich dadurch aus, dass eine Phase weitgehend abgeschlossen wird, bevor die nächste Phase beginnt. Solche Modelle sind weit verbreitet, da sie leicht verständlich und relativ einfach anzuwenden sind.
+  * **Iterative Vorgehensmodelle** zeichnen sich dadurch aus, dass das Endprodukt schrittweise entwickelt wird und die einzelnen Phasen mehrfach, in unterschiedliche Intensität durchlaufen werden. Solche Modelle eignen sich besonders gut für grosse Entwicklungsprojekte
+  * **Agile Vorgehensmodelle** zeichnen sich durch ein iteratives Vorgehen sowie durch flexible Formen der Projekt- und Arbeitsorganisation aus. Solche Modelle sind in letzter Zeit bei Softwareprojekten sehr populär geworden, setzen aber von allen Beteiligten eine hohe Flexibilität voraus.
+
+Jedes Vorgehensmodell hat seine spezifischen **Vor- und Nachteile**.  Je nach Projekt bzw. Unternehmen wird ein bestimmtes Modell nicht in Reinkultur eingesetzt, sondern ggf. mit Elementen aus anderen Vorgehensmodellen angereichert.  Oft definieren Unternehmen ein «eigenes» Vorgehensmodell für Projekte und erklären es zum Standard.  Der Vorteil liegt darin, dass die Ausbildung der Projektleiter auf dieses Modell konzentriert werden kann.  Auch ist ein Wechsel in der Projektführung einfacher zu bewerkstelligen.  Als Projektleiter sollten Sie aber grundlegende Kenntnisse über alle Typen von Vorgehensmodellen haben.
+

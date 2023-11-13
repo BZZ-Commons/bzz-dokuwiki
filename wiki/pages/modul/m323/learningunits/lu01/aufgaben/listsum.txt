@@ -1,0 +1,35 @@
+====== LU01.A05 - Summe der Elemente einer Liste ======
+
+<WRAP center round todo 60%>
+Die Lernenden sollen eine rekursive Funktion schreiben, die die Summe der Zahlen in einer gegebenen Liste berechnet.
+</WRAP>
+
+===== Aufgabenstellung =====
+Es soll eine rekursive Funktion recursive_sum entwickelt werden, die die Summe der Zahlen in einer gegebenen Liste numbers berechnet. Die Funktion sollte rekursiv aufgerufen werden, bis die Liste leer ist, und dann die Summe der Elemente zurückgeben.
+
+===== Vorlage =====
+<code python>
+def recursive_sum(numbers):
+    """ 
+    This function calculates the sum of a list of numbers recursively.
+
+    :param numbers: List of numbers
+    :return: Sum of numbers
+    """
+    # TODO: Implement the recursive function to calculate the sum of numbers
+
+if __name__ == '__main__':
+    numbers = [5, 3, 9, 1, 7]
+    result = recursive_sum(numbers)
+    print('The sum of numbers is:', result)
+</code>
+
+===== Schrittweises Vorgehen =====
+  - Überprüfen Sie, ob die Liste ''numbers'' leer ist. Wenn ja, geben Sie 0 zurück.
+  - Nehmen Sie das erste Element aus der Liste und fügen Sie es zur Summe der restlichen Elemente in der Liste hinzu, die rekursiv berechnet wird.
+  - Rufen Sie die Funktion ''recursive_sum'' rekursiv mit dem Rest der Liste auf (ohne das erste Element).
+  - Kehren Sie die Summe der Elemente zurück.
+
+----
+<nodisp>Github Repo: https://github.com/templates-python/m323-lu01-a05-sum</nodisp>
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/ch/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Kevin Maurizi 

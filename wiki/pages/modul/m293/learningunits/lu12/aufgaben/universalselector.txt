@@ -1,0 +1,30 @@
+====== LU12.A03 - Universal-Selektor anwenden ======
+
+<WRAP center round todo 60%>
+Sie haben die Grundlagen zu den speziellen CSS-Selektoren respektive den Universal-Selektor gelesen. Wenden Sie diesen Selektor gekonnt in dieser Übung an. Dazu ist folgender HTML-Code und CSS-Code (zu Visualisierung der HTML-Elemente) gegeben.
+</WRAP>
+
+===== Vorgehen =====
+  - Akzeptieren Sie das GitHub Classroom Assignment über den Link im Moodle-Kurs.
+  - Klonen Sie Ihre persönliches Repository.
+  - Bearbeiten Sie das CSS-File ''style.css'' und stylen Sie damit die Website in ''index.html''.
+    * Importieren Sie ''style.css'' in ''index.html''
+    * Halten Sie sich an die beschriebenen Styling-Anforderungen
+    * Verwenden Sie so wenig CSS-Deklarationen wie möglich, um die Aufgabenstellung zu erfüllen.
+    * Recherchieren Sie die benötigten Selektoren, Eigenschaften und Werte auf SelfHTML oder W3CSchools.
+  - Validieren Sie Ihren HTML-Code auf Einhaltung der Standards.
+  - Geben Sie Ihre Lösung mittels Push ins Repository ab.
+
+===== Anforderungen =====
+  - Es soll einheitlich die Schriftfamilie ''Futura'' für alle Texte verwendet werden.
+  - ''header'' und ''footer'' besitzen die Hintergrund-Farbe ''cornflowerblue''.
+  - Die Elemente im ''<main>'' besitzen die Hintergrund-Farbe ''lawngreen''.
+  - Die Elemente im ''<nav>'' besitzen die Hintergrund-Farben ''gold'' und ''orangered''.
+
+{{:modul:m293:learningunits:lu12:aufgaben:ue_2_a1.png?600|}}
+----
+<nodisp>[[https://github.com/templates-html/M293_LU12_03_universalselector|Repository]]</nodisp>
+{{tag>m293-LU12}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Daniel Garavaldi, Kevin Maurizi
+
+

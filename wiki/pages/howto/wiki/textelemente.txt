@@ -1,0 +1,185 @@
+====== Textelemente ======
+
+Wir verwenden für Infoboxen etc. Elemente aus dem WRAP-Plugin. Dieses ist über die Toolbar zugänglich:
+
+{{:howto:wiki:screenshot_2022-02-08_at_15.02.53.png?1200}}
+
+==== Beispiele ====
+
+
+<WRAP box round center 60%>
+
+**//Einfache Box//**
+
+  <WRAP box round center 60%></WRAP>
+
+</WRAP>
+
+
+<WRAP info round center 60%>
+
+**//Info//**
+
+  <WRAP info round center 60%></WRAP>
+
+</WRAP>
+
+<WRAP tip round center 60%>
+
+**//Tip//**
+
+  <WRAP tip round center 60%></WRAP>
+
+</WRAP>
+
+<WRAP important round center 60%>
+
+**//Important//**
+
+  <WRAP important round center 60%></WRAP>
+
+</WRAP>
+
+<WRAP alert round center 60%>
+
+**//Alert//**
+
+  <WRAP alert round center 60%></WRAP>
+
+</WRAP>
+
+<WRAP help round center 60%>
+
+**//Help//**
+
+  <WRAP help round center 60%></WRAP>
+
+</WRAP>
+
+<WRAP download round center 60%>
+
+**//Download//**
+
+  <WRAP download></WRAP>
+
+</WRAP>
+
+<WRAP todo round center 60%>
+
+**//Todo//**
+
+  <WRAP todo round center 60%></WRAP>
+
+</WRAP>
+
+<WRAP clear>
+
+</WRAP>
+
+
+**Ohne Round**
+<WRAP box center 60%>
+
+**//Einfache Box//**
+
+  <WRAP box center 60%></WRAP>
+
+</WRAP>
+
+**Andere position:**
+''left, right, center''
+<WRAP box round left 40%>
+
+**//Einfache Box//**
+
+  <WRAP box round left 40%></WRAP>
+
+</WRAP>
+
+<WRAP box round right 40%>
+
+**//Einfache Box//**
+
+  <WRAP box round right 40%></WRAP>
+
+</WRAP>
+
+<WRAP clear></WRAP>
+
+**Oder auch Inline: ** 
+
+Einfach mit ''wrap'' anstat ''WRAP'' <wrap info>info</wrap>, <wrap help>help</wrap>, <wrap alert>alert</wrap>, <wrap important>important</wrap>, <wrap tip>tip</wrap>, <wrap download>download</wrap>, <wrap todo>todo</wrap> and <wrap round box>round box</wrap> and <wrap danger>danger</wrap>, <wrap warning>warning</wrap>, <wrap caution>caution</wrap>, <wrap notice>notice</wrap>, <wrap safety>safety</wrap>.
+
+  <wrap info>info</wrap>, <wrap help>help</wrap>, ...
+
+===== Code =====
+
+
+Der Code-Tag kann mit der Sprache ergänzt werden um Syntax highlighting zu aktivieren:
+
+''<code java> ... </code>''
+
+<code java>
+public class Fahrzeug {
+
+    private String bezeichnung;
+    private double geschwindigkeit;
+
+    public Fahrzeug(String bezeichnung, double geschwindigkeit){
+        this.bezeichnung = bezeichnung;
+        this.geschwindigkeit = geschwindigkeit;
+    }
+
+    public double getFahrtdauer(int fahrtstrecke){
+        double zeit = (fahrtstrecke / geschwindigkeit) * 60;
+        return zeit;
+    }
+}
+</code>
+
+Um Code etwas besser vom Fliesstext abzuheben, kann er sehr gut in WRAP-Elemente gepackt werden:
+
+<WRAP center box 80%>
+
+<code java>
+public class Fahrzeug {
+
+    private String bezeichnung;
+    private double geschwindigkeit;
+
+    public Fahrzeug(String bezeichnung, double geschwindigkeit){
+        this.bezeichnung = bezeichnung;
+        this.geschwindigkeit = geschwindigkeit;
+    }
+
+    public double getFahrtdauer(int fahrtstrecke){
+        double zeit = (fahrtstrecke / geschwindigkeit) * 60;
+        return zeit;
+    }
+}
+</code>
+</WRAP>
+
+==== Code als Files ====
+Möchte man Code direkt als herunterladbares File zur Verfügung stellen, so bietet sich der ''<file>''-Tag an.
+
+''<file java Fahrzeug.java>...</file>''
+
+
+<file java Fahrzeug.java>
+public class Fahrzeug {
+
+    private String bezeichnung;
+    private double geschwindigkeit;
+
+    public Fahrzeug(String bezeichnung, double geschwindigkeit){
+        this.bezeichnung = bezeichnung;
+        this.geschwindigkeit = geschwindigkeit;
+    }
+
+    public double getFahrtdauer(int fahrtstrecke){
+        double zeit = (fahrtstrecke / geschwindigkeit) * 60;
+        return zeit;
+    }
+}
+</file>

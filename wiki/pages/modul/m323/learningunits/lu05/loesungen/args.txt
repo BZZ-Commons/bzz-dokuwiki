@@ -1,0 +1,17 @@
+====== LU05.L01 - Verwendung von *args in Funktionen ======
+<code python>
+def multiply_all(*args):
+    """
+    Multiplies all the given numbers together and returns the product.
+    
+    Parameters:
+        *args (float or int): Variable number of arguments to be multiplied.
+        
+    Returns:
+        float or int: The product of all the given numbers.
+    """
+    product = 1
+    for num in args:
+        product *= num
+    return product
+</code>

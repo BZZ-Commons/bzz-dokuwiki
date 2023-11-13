@@ -1,0 +1,107 @@
+====== LU05.A07: British Inheritance Tax ======
+<WRAP center round info 60%>
+Erstelle ein Programm, dass die Erbschaftssteuer berechnet.
+</WRAP>
+
+===== Ausgangslage =====
+//Quelle: [[https://www.gov.uk/inheritance-tax/gifts]]//
+
+Verschenkt eine Person vor Ihrem Tod Geld, so muss eine Erbschaftssteuer bezahlt werden.
+Ausgenommen sind:
+  * Schenkungen die mehr als 7 Jahre oder mehr vor dem Tod erfolgt sind.
+  * Ein Betrag bis 325'000 £.
+
+Wenn Erbschaftssteuer zu zahlen ist, gilt der Steuersatz gemäss der folgenden Tabelle angewendet.
+
+^ Jahre zwischen Schenkung und Tod  ^ Steuersatz  ^
+| weniger als 3                     | 40%         |
+| 3 bis 4                           | 32%         |
+| 4 bis 5                           | 24%         |
+| 5 bis 6                           | 16%         |
+| 6 bis 7                           | 8%          |
+| 7 bis 8                           | 0%          |
+
+**Beispiele:**
+  * Jenny starb am 1. Juli 2018 und hinterlässt 500'000 £. Sie war zum Zeitpunkt ihres Todes weder verheiratet noch in einer Lebenspartnerschaft. \\ In den 7 Jahren vor ihrem Tod hinterliess Jenny 3 Schenkungen:
+    - 300'000 an ihren Bruder 6,5 Jahre vor ihrem Tod
+    - 500'000 an ihre Schwester 4,5 Jahre vor ihrem Tod
+    - 650'000 an ihren Freund 3,5 Jahre vor ihrem Tod
+  * Jenny hat keinen Anspruch auf andere Schenkungsbefreiungen oder -erleichterungen.
+
+  * Es gibt eine Erbschaftssteuergrenze von 325'000. Alles, was unter diesem Betrag liegt, ist steuerfrei.
+    - Die 300'000 die Jenny ihrem Bruder geschenkt hat, sind steuerfrei.
+    - Auf die 500'000 an Ihre Schwester müssen 42'000 Erbschaftssteuer bezahlt werden.
+    - Auf die 650'000 die Jenny Ihrem Freund geschenkt hat, müssen 104'000 Erbschaftssteuer bezahlt werden.
+    
+  * Jennys verbleibender Nachlass wurde mit 500'000 bewertet und mit dem üblichen Erbschaftssteuersatz von 40 % belastet. 
+
+
+===== Auftrag =====
+Erstelle die Programmlogik für das Programm:
+  - Der Benutzer gibt den Betrag ein.
+  - Der Benutzer gibt ein, vor wie vielen Jahren Schenkung erfolgt ist.
+  - Das Programm berechnet die Erbschaftssteuer und zeigt den Betrag an. \\ Die Anzeige erfolgt immer als ganze Zahl.
+
+
+==== Beispiel ====
+
+<code>
+Inheritance:
+*500000*
+Years since death:
+*3*
+Tax: 56000
+</code>
+
+
+<code>
+Inheritance:
+*325000*
+Years since death:
+*2*
+Tax: 0
+</code>
+
+<code>
+Inheritance:
+*625000*
+Years since death:
+*6*
+Tax: 24000
+</code>
+
+===== Vorgehen =====
+
+  - Akzeptiere das GitHub Classroom Assignment im Moodlekurs.
+  - Klone das Repository in PyCharm.
+  - Codiere die Programmlogik in ''main.py''.
+  - Teste dein Programm mit den Testfällen in ''main_test.py''.
+  - Führe einen Commit und einen Push durch.
+
+=== Abgabe ===
+Die Abgabe erfolgt durch den Push ins GitHub Repository.
+In Moodle ist keine Abgabe vorgesehen oder möglich.
+
+=== Vorlage in FIXME.py ===
+<code python>
+def main():
+  # Write your program here and remove the line "pass"
+    pass
+
+if __name__ == '__main__':
+    main()
+</code>
+
+Anmerkung: Kümmere dich ich im Moment nicht zu sehr um ''if %%__%%name%%__%% == '%%__%%main%%__'%%:''. 
+Dieser Programmblock legt fest, welche Funktion beim Ausführen gestartet wird.
+Wir werden dies im Verlauf des Moduls noch genauer betrachten.
+
+
+<nodisp>GitHub-Repo: https://github.com/templates-python/m319-lu05-a07-tax</nodisp>
+
+----
+{{tag>M319-LU05}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/ch/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Kevin Maurizi, Marcel Suter
+
+Diese Aufgabe ist eine übersetzte und angepasste Aufgabe von [[https://scott3142.uk/|Scott Morgan]], verwendet unter CC BY NC SA.
+

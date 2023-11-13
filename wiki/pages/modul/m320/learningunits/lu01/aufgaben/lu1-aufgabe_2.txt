@@ -1,0 +1,21 @@
+==== Aufgabe 2 - Objekt identifizieren ====
+=== Ziel ===
+Sie können aus einem einfachen Text ein beschriebenes Objekt erkennen und eine passende Abstraktion erstellen.
+=== Auftrag ===
+Um den Kunden der HiNoon-Bank jederzeit Aktivitäten auf deren Konto zu gewähren, soll eine einfache App bereitgestellt werden. 
+Die App soll nur die wichtigsten Funktionen umfassen.
+
+Ein Kunde soll einen begrenzten Betrag digital ein- und ausbuchen können. 
+Die App überwacht dabei die Transaktion und den Kontostand. 
+Bei der Transaktion kann ein vorgegebener Maximalwert nicht überschritten werden. 
+Sollte innerhalb von 24 Stunden 3 Mal der Maximalwert angefordert werden, wird das Konto gesperrt. 
+Weiter darf bei einer Transaktion kein Negativsaldo resultieren. 
+Ist das der Fall, wird die Transaktion nicht ausgeführt und der Kunde informiert. 
+Zudem kann der Kunde jederzeit den aktuellen Kontostand abfragen.\\
+\\
+Legen Sie die Eigenschaften, Fähigkeiten und Zustände des gewählten Objektes fest.
+
+=== Dauer ===
+20 Minuten
+=== Abgabe ===
+Halten Sie Ihre Beschreibung in einem Textdokument fest, das Sie dann als PDF-Datei im Moodle-Kurs abgeben.

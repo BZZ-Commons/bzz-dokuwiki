@@ -1,0 +1,24 @@
+====== LU02b - Testziele ======
+<WRAP center round info 60%>
+Globales Ziel des Softwaretestens ist das Messen der Qualität des Softwaresystems.
+Ein Testziel definiert eine Fragestellung, die mittels Testfällen zu beantworten bzw. zu überprüfen ist.
+</WRAP>
+
+Die Testzeile sind Teil der Teststrategie.
+Dabei definieren die Testziele Fragestellungen, zu der eine Überprüfung (Tests) eine Aussage treffen soll.
+
+Die Testziele eines Softwareprojekts sind abhängig von der Art der Applikation und den Anforderungen.
+
+===== Beispiele von Testzielen =====
+  * 80% aller Bedingungen werden je 1x mit ''true'' und ''false'' ausgewertet.
+  * Alle Use Cases werden in den Tests abgebildet.
+  * Die Testfälle mit Priorität "kritisch" und "hoch" werden erfolgreich durchgeführt.
+  * Fehler mit hoher Priorität werden zeitnah behoben:
+    * Priorität A: Innerhalb von 24 Stunden
+    * Priorität B: Innerhalb von 3 Arbeitstagen 
+  * Die Testdokumentation ist vollständig erstellt.
+
+
+----
+{{tag>M450-LU02}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

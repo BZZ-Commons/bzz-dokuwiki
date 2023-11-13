@@ -1,0 +1,24 @@
+====== LU01b - PyCharm, Visual Studio Code, Spyder: Die Entwicklungsumgebung ======
+
+
+Es ist sinnvoll, von Anfang an eine „richtige“ Entwicklungsumgebung anzuwenden. Experimente mit einem Texteditor und das Aufrufen des Python-Interpreters über die Kommandozeile sind zwar möglich, sind für das ernsthafte Arbeiten mit Python jedoch nicht zu empfehlen. Für die Programmierung von Python-Anwendungen stehen eine Reihe unterschiedlicher IDEs (Integrated Development Environment) zur Verfügung. Bekannte, unter allen üblichen Betriebssystemen lauffähige Werkzeuge sind:
+
+  * JetBrains PyCharm: PyCharm ist eine IDE des Softwareunternehmens JetBrains für die Programmiersprache Python. Eine kostenfreie Standardversion ist verfügbar.
+  * Visual Studio Code: Hier handelt es sich um eine universelle IDE für eine Vielzahl von Sprachen. Python wird direkt unterstützt. Mit Hilfe von Plug-ins kann man VSC sehr gut an seine Vorstellungen anpassen.
+  * Spyder: Spyder ist eine in Python geschriebene IDE für Python, die für Wissenschaftler, Ingenieure und Datenanalysten entwickelt wurde. Der Hauptfokus der IDE liegt dabei auf Bearbeitungs-, Analyse-, Debugging- und Profiling-Funktionen für grosse Datenmengen.
+
+==== PyCharm installieren ====
+ 
+Installieren Sie Intellij PyCharm entweder mit der Paketverwaltung Chocolatey und dem Befehl:
+
+<code>choco install pycharm-community</code>
+
+Oder laden und installieren Sie PyCharm direkt von der Produkthomepage: [[https://www.jetbrains.com/de-de/pycharm/]]
+
+<WRAP center round info 60%>
+Als Schüler des BZZ erhalten Sie kostenlos die Professional Edition, für die Programmiermodule reicht aber die Community Edition aus. Mehr Infos zur Professional Edition für Studenten erhalten Sie [[howto:tools:pycharm|hier]].
+</WRAP>
+
+----
+{{tag>M319-E1G}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Kevin Maurizi

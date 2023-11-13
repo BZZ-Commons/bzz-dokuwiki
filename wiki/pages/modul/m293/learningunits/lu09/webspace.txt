@@ -1,0 +1,47 @@
+====== LU09b - Webspace ======
+<WRAP center round info 60%>
+Ein Webspace ist ein Speicherplatz auf einem Webserver der im Internet erreichbar ist.
+Dazu schliessen Sie in der Regel einen Vertrag mit einem Anbieter ab.
+</WRAP>
+
+===== Webhosting =====
+Als Webhosting bezeichnet man die Dienstleistung, einen Webspace bereit zu stellen.
+Eine Suche im Internet nach dem Begriff "Webhosting" zeigt eine grosse Anzahl von Anbietern.
+Für die Wahl des "richtigen" Anbieters müssen Sie verschiedene Aspekte betrachten.
+
+  * Verfügbarer Speicherplatz
+  * Obergrenze für Traffic (Bandbreite)
+  * Kosten pro Monat/Jahr
+  * Sonstige Funktionen wie FTP-Upload, PHP, Datenbanken, Email
+
+==== Freehoster ====
+Für ein kleines, privates Projekt kann ein kostenloses Hosting durchaus interessant sein.
+Es gibt jedoch fast immer Einschränkungen oder versteckte Kosten.
+
+  * Wir können die Webseiten nicht selber codieren, sondern müssen die Seiten mit einem Werkzeug des Anbieters erstellen.
+  * Der Anbieter blendet Werbung auf unseren Seiten ein.
+  * Die Server laufen im Ausland und wir kommen mit dem Datenschutzgesetz in Konflikt.
+  * Das Gratisangebot umfasst nur wenig Speicherplatz und/oder Traffic.
+
+==== Kommerzielle Anbieter ====
+Soll mein Webauftritt langfristig im Internet verfügbar sein, ist ein kommerzieller Anbieter häufig die bessere Wahl.
+Wobei auch hier die Angebote sehr unterschiedlich sind.
+Beachten Sie genau, was im Angebot enthalten ist und welche zusätzlichen Kosten auf Sie zu kommen.
+Manche Anbieter locken mit sehr günstigen Preisen für den Webspace, verrechnen aber alle weiteren Leistungen zu relativ hohen Preisen.
+
+===== Webhosting für den Unterricht =====
+Für das Deployment Ihres Webauftritts im Unterricht am BZZ stellen wir Ihnen einen Webspace zur Verfügung.
+Dieser Webspace umfasst zwei Subdomains:
+  * **benutzername**.students.bzz.ch: Live System
+  * test**benutzername**.students.bzz.ch: Test System
+
+==== Froxlor ====
+Das Webhosting umfasst auch eine Verwaltungsseite, auf der Sie Ihre Einstellungen ansehen und anpassen können.
+Die Zugangsdaten haben Sie via Email erhalten.
+Melden Sie sich unter [[https://students.bzz.ch]] an und erkunden Sie die Verwaltungsseite.
+
+
+
+----
+{{tag>m293-LU09 m293-I1G}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Kevin Maurizi, Marcel Suter

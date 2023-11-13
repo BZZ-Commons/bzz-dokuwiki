@@ -1,0 +1,123 @@
+====== Lösungsvorschlag: "Hölzchenspiel" - Realisierung ======
+=== Java ===
+
+<code java>
+
+import java.util.Scanner;
+
+/**
+ * Zwei Spieler spielen ein Hölzchenspiel
+ *
+ * @author Marcel Suter
+ * @since 2017-11-09
+ * @version 2.0
+ */
+
+public class Stickgame {
+    static Scanner scanner;
+
+    /**
+     * constructor: initialize attributes
+     */
+    public Stickgame() {
+        scanner = new Scanner(System.in);
+    }
+
+    /**
+     * starts the execution
+     *
+     * @param args
+     *            command line arguments
+     */
+    public static void main(String[] args) {
+        Stickgame program = new Stickgame();
+        program.run();
+        scanner.close();
+    }
+
+    /**
+     * runs the game
+     */
+    private void run() {
+        // ------ Declare variables ------
+        int sticks;
+        int taken;
+        int player;
+
+        // ------ Start of program------
+        sticks = 21;
+        player = 1;
+
+        while (sticks > 0) {
+            System.out.println("Es sind noch " + sticks + " Hoelzchen auf dem Stapel");
+            System.out.print("Spieler " + player + " nimm 1-3 Hoelzchen >");
+            taken = scanner.nextInt();
+            sticks = sticks - taken;
+            player = 3 - player;
+        }
+
+        System.out.print("Spieler " + (3 - player) + " hat verloren");
+    }
+
+}
+</code>
+
+
+=== VBA ===
+
+<code vba>
+Dieses Programm prüft zusätzlich, dass die Eingabe zwischen 1-3 liegt.
+
+Option Explicit
+
+'**
+'* Ein Hölzchenspiel für zwischendurch
+'*
+'* @project:  BZZ Modul 103
+'* @plattform Codeblocks mit GCC / Windows XP SP3
+'* @author    Serafin Lüthi
+'* @date      13.12.2013
+'* @version   1.0
+'*
+'* History
+'* 1.0 Fertigstellung des Programms
+'**
+
+
+ Sub Hölzchenspiel()
+ 
+ 
+' ------ Deklarationen ------
+
+Dim holz As Integer
+Dim spieler As Integer
+Dim anzahl As Integer
+
+' ------  Start der Verarbeitung ------
+
+spieler = 1
+
+holz = InputBox("Mit wievielen Hölzchen willst du spielen?")
+anzahl = InputBox("Spieler " & spieler & " Nimm 1-3 Hölzer")
+holz = holz - anzahl
+
+
+    Do While holz > 0
+        spieler = 3 - spieler
+        anzahl = InputBox("Es sind noch " & holz & " Hölzchen übrig" & Chr(13) & "Spieler " & spieler & " Nimm 1-3 Hölzer")
+    
+        Do While anzahl > "3" Or anzahl < "1"
+        
+          MsgBox ("Bitte gib eine Zahl zwischen 1-3 an")
+          anzahl = InputBox("Es sind noch " & holz & " Hölzchen übrig" & Chr(13) & "Spieler " & spieler & " Nimm 1-3 Hölzer")
+          holz = holz - anzahl
+        Loop
+        holz = holz - anzahl
+    
+    Loop
+    MsgBox ("Spieler " & spieler & " hat verloren")
+
+
+End Sub
+
+</code>

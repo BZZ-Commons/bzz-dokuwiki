@@ -1,0 +1,157 @@
+====== LU09b - Ergänzedes Wissen ======
+===== Parameter mit Namen aufrufen =====
+In Python können wir auch beim Aufruf von Funktionen den Variablennamen mitgeben. Damit können wir unseren Code besser lesbar machen. 
+
+<WRAP center round box 60%>
+Wir haben diese Funktion und möchten sie verwenden.
+<code python>
+def value_beween(value, lower_bound, upper_bound):
+    '''
+    Returns True uf Value is between lower_bound and upper_bound
+    '''
+    return lower_bound <= value <= upper_bound
+</code>
+Wir können diese Funktion nun so aufrufen:
+<code python>
+value_beween(25,0,30) # True
+</code>
+Oder wir rufen die Funktion mit benennten Argumenten auf:
+<code>
+value_beween(value = 25, lower_bound = 0, upper_bound = 30) # True
+</code>
+
+</WRAP>
+
+
+
+===== Defaultwerte für Parameter =====
+
+Wenn Sie ''argument_name=default_value'' in der Funktionsdefinition verwenden, wird der Standardwert verwendet, wenn das entsprechende Argument weggelassen wird.
+<WRAP center round box 60%>
+<code python>
+def func_default(arg1, arg2='default_x', arg3='default_y'):
+    print(arg1)
+    print(arg2)
+    print(arg3)
+</code>
+<code python>
+func_default('a')
+</code>
+<code>
+a
+default_x
+default_y
+</code>
+<code python>
+func_default('a', 'b')
+</code>
+<code>
+a
+b
+default_y
+</code>
+<code python>
+func_default('a', arg3='c')
+</code>
+<code>
+a
+default_x
+c
+</code>
+</WRAP>
+
+<WRAP center round important 60%>
+**Beachte:** Das der Parameter ''arg1'' keinen default Wert hat, muss der Parameter ''arg1'' beim Funktionsaufruf immer angegeben werden.
+</WRAP>
+
+
+===== Mehrere Return-Werte =====
+Eine Funktion kann mehr als nur einen Return-Wert zurückgeben, indem sie einfach durch Kommas getrennt werden.
+
+Definieren wir zum Beispiel eine Funktion, die eine Zeichenkette und eine ganze Zahl zurückgibt, wie folgt:
+
+<WRAP center round box 60%>
+<code python>
+def test():
+    return 'abc', 100
+</code>
+</WRAP>
+
+In Python werden kommagetrennte Werte als ''Tupel'' (nicht veränderbare Liste) betrachtet. Aus diesem Grund gibt die Funktion im obigen Beispiel ein Tupel mit jedem Wert als Element zurück.
+<WRAP center round box 60%>
+<code python>
+result = test()
+
+print(result)
+print(type(result))
+</code>
+<code>
+('abc', 100)
+<class 'tuple'>
+</code>
+</WRAP>
+
+Jedes Element hat jedoch auch einen eigenen definierten Typ.
+<WRAP center round box 60%>
+<code python>
+print(result[0])
+print(type(result[0]))
+</code>
+<code>
+abc
+<class 'str'>
+</code>
+<code python>
+print(result[1])
+print(type(result[1]))
+</code>
+<code>
+100
+<class 'int'>
+</code>
+</WRAP>
+
+Die Angabe eines Index, der die Anzahl der definierten Rückgabewerte überschreitet, führt natürlich zu einem Fehler.
+<WRAP center round box 60%>
+<code python>
+print(result[2])
+</code>
+<code>
+IndexError: tuple index out of range
+</code>
+</WRAP>
+Sie können mehrere Rückgabewerte auch direkt an verschiedene Variablen vergeben.
+<WRAP center round box 60%>
+<code python>
+a, b = test()
+print(a)
+print(b)
+</code>
+<code>
+abc
+100
+</code>
+</WRAP>
+
+Dasselbe gilt für drei oder mehr Rückgabewerte.
+<WRAP center round box 60%>
+<code python>
+def test2():
+    return 'abc', 100, [0, 1, 2]
+
+a, b, c = test2()
+print(a)
+print(b)
+print(c)
+</code>
+<code>
+abc
+100
+[0, 1, 2]
+</code>
+</WRAP>
+
+----
+{{tag>M319-F2G M319-F2F M319-F2E}}
+
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/ch/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Kevin Maurizi 

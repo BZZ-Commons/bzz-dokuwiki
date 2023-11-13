@@ -1,0 +1,50 @@
+====== LU06.A03: Grades and Points ======
+
+Die folgende Tabelle beschreibt, wie die Note für einen bestimmten Kurs ermittelt wird. Schreiben Sie ein Programm, das eine Kursnote gemäss der Tabelle ermittelt.
+
+^ points     ^ grade       ^
+| < 0    | impossible! |
+| 0-49   | failed      |
+| 50-59  | 1           |
+| 60-69  | 2           |
+| 70-79  | 3           |
+| 80-89  | 4           |
+| 90-100 | 5           |
+| > 100  | incredible! |
+
+Beispielhafte Ausgaben:
+
+<code>
+Give points [0-100]:
+*37*
+Grade: failed
+</code>
+<code>
+Give points [0-100]:
+*76*
+Grade: 3
+</code>
+<code>
+Give points [0-100]:
+*-3*
+Grade: impossible!
+</code>
+
+===== Vorlage =====
+<code python>
+def main():
+  # Write your program here
+
+if __name__ == '__main__':
+    main()
+</code>
+
+Anmerkung: Kümmern Sie sich im Moment nicht zu sehr um ''if %%__%%name%%__%% == '%%__%%main%%__'%%:''. Wir brauchen es technisch gesehen nicht für dieses Programm, aber es ist eine gute Übung, es einzubauen, und es wird in späteren Übungen klarer werden.
+
+----
+{{tag>M319-F3G M319-F3F M319-F3E M319-F1F M319-F1F}}
+
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/ch/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Kevin Maurizi 
+
+Diese Aufgabe ist eine übersetzte und angepasste Aufgabe von [[https://scott3142.uk/|Scott Morgan]], verwendet unter CC BY NC SA.
+

@@ -1,0 +1,78 @@
+====== LU06b - Eingabefelder ======
+<WRAP center round info 60%>
+Auf dieser Seite befassen wir uns mit ''input'', ''textarea'' und ''label'' für die Eingabefelder unserer Formulare.
+</WRAP>
+
+===== input =====
+//Siehe auch [[https://wiki.selfhtml.org/wiki/HTML/Tutorials/Formulare/input|selfhtml - input]]//
+
+Das ''input''-Element zeigt dem Benutzer ein einzeiliges Eingabefeld an.
+Es benötigt die Attribute:
+  * ''id''
+  * ''name''
+  * ''type''
+
+''input'' ist ein Standalone-Tag, welches kein schliessendes Tag benötigt.
+<code html>
+...
+  <input id='title' name='title' type='text'>
+  <input id='title' name='title' type='text' />
+...
+</code>
+Beide Varianten sind korrekt.
+
+==== name ====
+Der Name eines Eingabefeldes wird für die Übermittelung der Daten an den Server benötigt.
+Der Client sendet die Eingaben des Benutzers als Schlüssel/Wert-Paar (engl. key/value-pair) an den Server.
+Zum Beispiel: ''email=hans@must.er''.
+
+Durch den Schlüssel (bzw. Namen) ''email'' weiss der Server, um welches Attribut es geht.
+
+==== type ====
+Das ''type''-Attribut legt die Art des Eingabefeldes fest.
+Dadurch wird einerseits das Aussehen des Feldes angepasst.
+Ausserdem kann der Browser anhand des Typs gültige von ungültigen Eingaben unterscheiden.
+
+Unter [[https://wiki.selfhtml.org/wiki/HTML/Tutorials/Formulare/input|selfhtml - input]] finden Sie eine Übersicht der verschiedenen Möglichkeiten für ''type''.
+Falls Sie keinen oder einen ungültigen ''type'' angeben (was ich beides nicht empfehle), so wird ''type='text' '' angenommen.
+
+==== Sonstige Attribute ====
+Jenachdem welchen ''type'' Sie angeben, gibt es unterschiedliche weitere Attribute.
+Einige Attribute können Sie nutzen, um Regeln für gültige Eingaben zu definieren.
+Zum Beispiel:
+  * minlength
+  * required
+  * max
+
+Stöbern Sie in den Beschreibungen des ''input''-Tags auf SelfHTML oder W3School um die verschiedenen Attribute kennenzulernen.
+
+===== textarea =====
+//siehe auch [[https://wiki.selfhtml.org/wiki/HTML/Tutorials/Formulare/textarea|selfhtml - textarea]]//
+Das Element ''textarea'' zeigt ein mehrzeiliges Eingabefeld an.
+Wir bei ''input'' benötigen wir die Attribute
+  * id
+  * name
+
+Zusätzlich können Sie über die Attribute ''cols'' und ''rows'' die Grösse der Anzeige in Spalten und Zeilen bestimmen.
+
+===== label =====
+//[[https://wiki.selfhtml.org/wiki/HTML/Elemente/label|selfhtml - label]]//
+
+Mit dem Element ''label'' ordnen wir den Eingabefeldern eine Beschriftung hinzu.
+Zu welchem Eingabefeld die Beschriftung gehört, legen wir über das Attribut ''for='...' '' fest.
+
+<code html>
+...
+  <form action='./index.php' method='post'>
+    <label for='email'>Email</label>
+    <input id='email' name='email_address' type='text' />
+    ...
+  </form>
+...
+</code>
+
+Beachten Sie, dass der Wert ''for='email' '' im Label mit ''id='email' '' im Input übereinstimmen muss.
+
+----
+{{tag>m293-LU06 m293-XnY}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Kevin Maurizi, Marcel Suter

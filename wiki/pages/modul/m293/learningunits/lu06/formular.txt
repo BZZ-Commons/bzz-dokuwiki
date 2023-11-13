@@ -1,0 +1,45 @@
+====== LU06a - Einstieg Formulare ======
+//siehe auch [[https://wiki.selfhtml.org/wiki/HTML/Tutorials/Formulare/Was_ist_ein_Webformular%3F|selfhtml - Webformular]]//
+<WRAP center round info 60%>
+In einem Formular kann der Benutzer Daten erfassen.
+Der Client sendet diese Daten zur Verarbeitung an den Server.
+</WRAP>
+
+===== Aufbau =====
+Ein Formular ist eine Element innerhalb unserer Webseite.
+Es besteht üblicherweise aus:
+  * ''form''-Tag, welches das Formular umschliesst.
+  * Ein oder mehrere Eingabefelder.
+  * Einen Button um die Daten an den Server zu senden.
+
+==== Beispiel ====
+<code html>
+...
+  <form action='./index.php' method='post'>
+    <label for='email'>Email</label>
+    <input id='email' name='email' type='text' />
+    <button type='submit'>Absenden</button>
+  </form>
+...
+</code>
+
+===== form-Tag =====
+Das Formular wird mit ''<form>'' ... ''</form>'' umschlossen.
+Ohne das form-Tag wüsste der Browser nicht, welche Daten er an den Server übermitteln soll.
+Jedes ''form''-Tag muss zumindest die Attribute ''action'' und ''method'' enthalten.
+
+==== action ====
+Das Attribut ''action'' legt fest, an welche URL die Daten gesendet werden.
+Im Beispiel werden die Daten an ein PHP-Skript ''index.php'' gesendet.
+Dieses Skript befindet sich auf dem gleichen Server und im gleichen Ordner wie die HTML-Datei.
+Sie können einen [[modul:m293:learningunits:lu05:adressen|absoluten oder relativen Pfad]] angeben.
+
+==== method ====
+Dieses Attribut legt die HTTP-Methode fest.
+In den meisten Fällen verwenden wir ''post''.
+
+Die Elemente ''label'', ''input'' und ''button'' behandle ich auf separaten Seiten.
+
+----
+{{tag>m293-LU06 m293-XnY}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Kevin Maurizi, Marcel Suter

@@ -1,0 +1,19 @@
+====== LU06a - Was ist Flask? ======
+
+Flask ist ein Mikro-Webframework, das in Python geschrieben ist. Es wurde entwickelt, um den Entwicklern die Erstellung von Webanwendungen zu erleichtern, ohne dass sie sich mit den Details der darunterliegenden Technologien beschäftigen müssen. Das "Mikro" in Mikro-Webframework bedeutet nicht, dass Flask nicht leistungsfähig ist, sondern dass es einfach und leichtgewichtig ist und keine standardmäßige Datenbankabstraktionsschicht, Formularvalidierung oder andere Komponenten bietet, die in größeren Frameworks enthalten sind. Stattdessen bietet Flask Erweiterungen, die diese Funktionen hinzufügen können, wenn sie benötigt werden.
+
+====== Warum Flask verwenden? ======
+
+Es gibt viele Gründe, warum Entwickler sich für Flask entscheiden:
+
+  * **Einfachheit**: Flask ist einfach zu verstehen und zu verwenden. Es hat eine klare und intuitive Syntax, die es besonders für Anfänger attraktiv macht.
+  * **Flexibilität**: Da Flask ein Mikro-Webframework ist, können Entwickler entscheiden, welche Erweiterungen und Tools sie verwenden möchten. Dies gibt ihnen die Freiheit, ihre Anwendung so zu gestalten, wie sie es möchten.
+  * **Erweiterbarkeit**: Es gibt eine Vielzahl von Erweiterungen, die für Flask entwickelt wurden, um zusätzliche Funktionalitäten wie Datenbankintegration, Benutzerauthentifizierung und vieles mehr hinzuzufügen.
+  * **Leistung**: Flask ist schnell und kann leicht skaliert werden, um den Anforderungen von großen und kleinen Projekten gerecht zu werden.
+  * **Gemeinschaft**: Flask hat eine aktive und unterstützende Gemeinschaft, die ständig neue Erweiterungen entwickelt und bestehende verbessert.
+
+Insgesamt bietet Flask eine solide Grundlage für die Entwicklung von Webanwendungen, von einfachen Webseiten bis hin zu komplexen Webanwendungen. Es ist eine ausgezeichnete Wahl für Entwickler, die nach einem leistungsfähigen, aber dennoch einfach zu verwendenden Tool suchen.
+
+----
+{{tag>M323-LU06}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/ch/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Kevin Maurizi 

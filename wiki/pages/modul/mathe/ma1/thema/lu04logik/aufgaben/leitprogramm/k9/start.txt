@@ -1,0 +1,169 @@
+=== 8. Audrucke minimieren mit dem KV-Diagramm ===
+**Was heisst minimieren?**\\
+Sie haben bis anhin die logischen Ausdrucke immer in kanonischer Form angeschrieben. Mit den Regeln der boolschen Algebra können aber gewisse Ausdrucke minimiert werden. Hier ein einfaches und wohl einleuchtendes Beispiel.\\
+Es liegt die Aussage X = (\(\neg\)A \(\wedge\) B) \(\vee\) (A \(\wedge\) B) vor. In die Wahrheitstabelle übertragen ergibt dies:
+<WRAP left>
+|      IN       ||  ¦   |  OUT  |
+^   A   ^   B   ^   ¦   ^   X   ^
+|   0   |   0   |   ¦   |   0   |
+|   0   |   1   |   ¦   |   1   |
+|   1   |   0   |   ¦   |   0   |
+|   1   |   1   |   ¦   |   1   |
+</WRAP>
+<WRAP clear></WRAP>
+Vergleichen wir nun die Eingangsvariabel B mit der Ausgangsvariable X so sehen wir, dass die Werte identisch sind. Es gilt demnach **X = B**. Die Variable A spielt keine Rolle, kann also gekürzt werden. Das Ergebnis ist ein minimierter Term.\\
+Zufall oder nicht? Dem gehen wir in der Folge etwas auf den Grund.\\
+\\
+**Gesetze der boolschen Algebra**\\
+Aus der "normalen" Mathematik sind verschieden Regeln wie z.B. "Punkt vor Strich", das Assoziativ- und Distributivgesetz und vieles mehr bekannt.\\
+Auch in der binären Logik gibt es solche Regeln. Eine erste davon haben Sie bereits kennegelernt, nämlich "UND vor ODER". Weitere boolschen Gesetzte finden Sie [[modul:mathe:ma1:thema:lu04logik:aufgaben:leitprogramm:regeln|hier]] in einer Übersicht. Diese Regeln benötigen wir, um komplexe Terme zu minimieren.\\
+\\
+Wir werden nun den Regeln folgend obiges Beispiel schrittweise auflösen.\\
+//1. Anwendung des Distributivgesetztes//
+<WRAP left>
+<tab>\\ \\ \\ \\
+</WRAP>
+Mittels **Substitution** (ersetzen einer Variablen) wandeln wir den Ausdruck (\(\neg\)A \(\wedge\) B) \(\vee\) (A \(\wedge\) B) in (C \(\wedge\) B) \(\vee\) (A \(\wedge\) B) um. Wir haben also \(\neg\)A durch C ersetzt und sehen nun eine bekannte Form, die wir umwandeln können.\\
+(C \(\wedge\) B) \(\vee\) (A \(\wedge\) B) = B \(\wedge\) (C \(\vee\) A)\\
+Nun ersetzen wir C wieder durch das Original (\(\neg\)A), was zu folgendem Ausdruck führt: **X = B \(\wedge\) (\(\neg\)A \(\vee\) A)**\\
+<WRAP clear></WRAP>
+//2. Anwendung des Komplementärgesetzes//
+<WRAP left>
+<tab>
+</WRAP>
+Der Ausdruck \(\neg\)A \(\vee\) A ergibt immer eine 1.\\
+<WRAP clear></WRAP>
+//3. Anwendung des Neutralitätsgesetzes//
+<WRAP left>
+<tab>\\ \\
+</WRAP>
+Die Erkenntnis aus Schritt 2 eingesetzt in die Formal aus Schrirtt 1 ergibt nun **X = B \(\wedge\) 1**.\\
+Dem Neutralitätsgesetz folgend ergibt sich somit die Formel **X = B**, was der oben hergeleiteten Überlegung entspricht.
+<WRAP clear></WRAP>
+\\
+Das Minimiern von Termen mittels boolscher Algebra ist möglich, bedarf aber einer grossen Präzision und genauen Überlegungen, der zu verwendenden Gesetze. Mit dem Karnaugh-Veitch-Diagramm (KV-Diagramm) lassen sich Ausdrucke mit bis zu 4 Variablen mit einem grafischen Verfahren minimieren.\\
+\\
+**Aufbau des KV-Diagramms**\\
+Das KV-Diagramm basiert auf einer n·n Matrix, wobei n für die Anzahl der Eingansgvariablen steht. In unserem Fall also 2, 3 oder 4. Jedem Feld des KV-Diagramms ist somit eine Bitkombination zugeordnet. Es wird also die Wahrheitstabelle in eine Matrix überführt.\\
+\\
+//2 Eingangsvariable//\\
+<WRAP left>
+| Zeilen-Nr. |¦| Bit-Muster ||
+|            |¦| A | B |
+|          0 |¦| 0 | 0 |
+|          1 |¦| 0 | 1 |
+|          2 |¦| 1 | 0 |
+|          3 |¦| 1 | 1 |
+</WRAP>
+KV-Matrix mit Eingangsvariablen A und B.
+<WRAP left>
+|                  | |\(\overline{B}\) |¦| \(B\)        |
+| \(\overline{A}\) |¦| \(_0\)          |¦| \(_1\)   |
+| \(A\)               |¦| \(_2\)          |¦| \(_3\)   |
+</WRAP> 
+Die Matrix ist wie folgt zu lesen:\\ 
+Im Feld 0 wird der Ausgangswert zum Bitmuster 00 angeschrieben, im Feld 1 jener des Musters 01 usw. Die Felder sind mit den entsprechenden Dezimalzahlen beschriftet, so dass die Zuordnung einfacher fällt. Es braucht lediglich das Wissen, welches Bitmuster welcher Dezimalzahl entspricht.
+<WRAP clear></WRAP>
+Sie finden hier die Vorlagen für die Matrizen mit 2, 3 und 4 Eingangsvariablen. Sie können diese durch klicken auf Ihren Rechner laden und dann für die Bearbeitung von Aufgaben nutzen.
+<WRAP left>
+|<html>
+<a href="https://it.bzz.ch/wikiV2/_media/modul/mathe/ma1/thema/lu04logik/kv-2var.png" download>
+  <img src="https://it.bzz.ch/wikiV2/_media/modul/mathe/ma1/thema/lu04logik/kv-2var.png" width="100">
+</a>
+</html> | <html>
+<a href="https://it.bzz.ch/wikiV2/_media/modul/mathe/ma1/thema/lu04logik/kv-3var.png" download>
+  <img src="https://it.bzz.ch/wikiV2/_media/modul/mathe/ma1/thema/lu04logik/kv-3var.png" width="150">
+</a>
+</html>| <html>
+<a href="https://it.bzz.ch/wikiV2/_media/modul/mathe/ma1/thema/lu04logik/kv-4var.png" download>
+  <img src="https://it.bzz.ch/wikiV2/_media/modul/mathe/ma1/thema/lu04logik/kv-4var.png" width="175">
+</a>
+</html>|
+
+</WRAP>
+<WRAP clear></WRAP>
+
+**Handhabung des KV-Diagramms zur Minimierung von boolschen Aussagen**\\
+----
+//Beispiel://
+Gegeben ist folgende Wahrheitstabelle:\\
+<WRAP left>
+|      IN       ||  ¦   |  OUT  |
+^   A   ^   B   ^   ¦   ^   C   ^
+|   0   |   0   |   ¦   |   <color #ff7f27>0</color>   |
+|   0   |   1   |   ¦   |   <color #22b14c>1</color>   |
+|   1   |   0   |   ¦   |   <color #ed1c24>0</color>   |
+|   1   |   1   |   ¦   |   <color #00a2e8>1</color>   |
+</WRAP>
+<WRAP clear></WRAP>
+Dies führt zu folgendem KV-Diagramm:\\
+<WRAP left>
+|                  | |\(\overline{B}\) |¦| \(B\)       |
+| \(\overline{A}\) |¦| \(_0\) <color #ff7f27>0</color>          |¦| \(_1\) <color #22b14c>1</color>  |
+| \(A\)            |¦| \(_2\) <color #ed1c24>0</color>          |¦| \(_3\) <color #00a2e8>1</color>  |
+</WRAP> 
+Die farbliche Hervorhebung verdeutlicht, wie die Ausgangswerte in das KV-Diagramm zu übertragen sind.
+<WRAP clear></WRAP>
+Nun werden Gruppen benachbarter Zellen mit gleichem Wert (0 oder 1) gesucht und zusammengefasst. Die Gruppen umfassen dabei 2, 4 oder 8 Werte.\\
+Werden 0er markiert, resultiert eine KNF, werden 1er markiert eine DNF.\\
+{{:modul:mathe:ma1:thema:lu04logik:kv-einstiegsbeispiel3.png?100|}}\\
+Das Ergebnis ist **X = B**, was zu erwarten war, nachem wir Eingangs dieses Beispiel durch Überlegen und mittels boolscher Algebra bereits gelöst haben. 
+----
+Es gilt folgendes Vorgehen, bei der Anwendung des KV-Diagramms:
+   - WHT erstellen (wenn sie nicht schon gegeben ist)
+   - KV-Diagramm gemäss der Anzahl der Eingangsvariablen erstellen bzw. passende Vorlage wählen (2x2, 2x4, 4x4)
+   - Ergebnisterme aus der WHT ins KV-Diagramm übertragen. Dabei gilt Zeile 0 in Feld 0, Zeile 1 in Feld 1 usw.
+   - Je nach Anzahl 0 oder 1 die Minterme bzw. Maxterme suchen.
+   - Gruppen mit \(2^n\) (2, 4, 8) benachbarten 1 (Minterm) bzw. 0 (Maxterm) bilden und farblich umranden. Überscheidungen sind erlaubt. Es muss jede 1 bzw. 0 mindestens einmal markiert werden. 
+   - Pro Gruppe den Term (DNF oder KNF) anschreiben. Es sind nur die Eingansgvariablen beteilgt, die als 1 (bei DNF) bzw. 0 (bei KNF) vorkommen.
+   - Den minimierten Gesamtausdruck anschreiben, wobei auch hier zu beachten ist, ob die DNF oder KNF gewählt wurde.
+//Hinweise://\\
+   * Steht eine 1 bzw. 0 alleine (ohne gleichen Nachbarn), so wird diese Stelle durch einen kanonischen Term beschrieben.
+   * Jede Stelle soll so wenig wie möglich - aber mindestens einmal - markiert werden.
+   * Es sind möglichst grosse aber so wenig wie möglich Gruppen zu bilden.
+
+----
+//Beispiel://\\
+<WRAP left>
+| |      IN               ||||     ¦   |  OUT  |
+^ ^   A   ^   B   ^   C   ^   D  ^ ¦   ^   X   ^
+|\(_0\) |   0   |   0   |   0   |   0  | ¦   |   1   |
+|\(_1\) |   0   |   0   |   0   |   1  | ¦   |   1   |
+|\(_2\) |   0   |   0   |   1   |   0  | ¦   |   1   |
+|\(_3\) |   0   |   0   |   1   |   1  | ¦   |   0   |
+|\(_4\) |   0   |   1   |   0   |   0  | ¦   |   1   |
+|\(_5\) |   0   |   1   |   0   |   1  | ¦   |   0   |
+|\(_6\) |   0   |   1   |   1   |   0  | ¦   |   0   |
+|\(_7\) |   0   |   1   |   1   |   1  | ¦   |   0   |
+|\(_8\) |   1   |   0   |   0   |   0  | ¦   |   1   |
+|\(_9\) |   1   |   0   |   0   |   1  | ¦   |   1   |
+|\(_1\)\(_0\)|   1   |   0   |   1   |   0  | ¦   |   1   |
+|\(_1\)\(_1\)|   1   |   0   |   1   |   1  | ¦   |   1   |
+|\(_1\)\(_2\)|   1   |   1   |   0   |   0  | ¦   |   1   |
+|\(_1\)\(_3\)|   1   |   1   |   0   |   1  | ¦   |   0   |
+|\(_1\)\(_4\)|   1   |   1   |   1   |   0  | ¦   |   0   |
+|\(_1\)\(_5\)|   1   |   1   |   1   |   1  | ¦   |   0   |
+</WRAP>
+<WRAP left>
+|   **Disjunktive-Normalform minimieren**   |   **Konjunktive-Normalform minimieren**   |
+|     übertragen der Terme ins KV-Diagramm     ||
+|     {{:modul:mathe:ma1:thema:lu04logik:aufgaben:leitprogramm:k9:kv-bsp_uebertragen.png?200|}}    ||
+| zusammenfassen aller 1er in Gruppen |      zusammenfassen aller 0er in Gruppen|
+| {{:modul:mathe:ma1:thema:lu04logik:aufgaben:leitprogramm:k9:kv-bsp_dnf.png?300|}} <tab> |<tab>   {{:modul:mathe:ma1:thema:lu04logik:aufgaben:leitprogramm:k9:kv-bsp_knf.png?290|}}|
+|    minimierte Aussagen für X    ||
+| X = (\(\neg\)A\(\wedge\)\(\neg\)B\(\wedge\)\(\neg\)D)\(\vee\)(A\(\wedge\)\(\neg\)B)\(\vee\)(\(\neg\)B\(\wedge\)\(\neg\)C)\(\vee\)(\(\neg\)C\(\wedge\)\(\neg\)D)  |    X = (A\(\vee\)\(\neg\)C\(\vee\)\(\neg\)D)\(\wedge\)(\(\neg\)B\(\vee\)\(\neg\)C)\(\wedge\)(\(\neg\)B\(\vee\)\(\neg\)D) |
+</WRAP>
+<WRAP clear></WRAP>
+
+----
+Lösen Sie nun die [[modul:mathe:ma1:thema:lu04logik:aufgaben:leitprogramm:k9:u8:start|Übung 8]]
+
+----
+Überprüfen Sie Ihre Antworten. [[modul:mathe:ma1:thema:lu04logik:aufgaben:leitprogramm:k9:l8:start|Lösung 8]]\\
+Sollten Sie Fehler haben, schauen Sie sich die Theorie noch einmal genau an, besprechen Sie offene Fragen mit Ihren Kolleginnen und/oder Kollegen. Fragen Sie auch Ihre Lehrperson, wenn Sie weiterführende Hilfe brauchen.
+----
+[[modul:mathe:ma1:thema:lu04logik:aufgaben:leitprogramm:k10:start|nächstes Kapitel]]
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) René Probst
+

@@ -1,0 +1,28 @@
+==== Aufgabe 1 - Delegation anwenden ====
+
+=== Ziel ===
+
+  * Sie können Interaktionen zwischen Objekten unter Berücksichtigung des dynamischen Entwurfs umsetzen (Delegation).
+
+==== Hinweise ====
+
+  * Der Parameter ''u'' entspricht dem Kreisradius resp. der halben Seitenlänge des Quadrats (s.a. Skizze in der Theorie).
+  * Die lauffähige Lösung ist der Lehrperson zu präsentieren.
+
+==== Aufträge ====
+
+  - Erstellen Sie die Klassen gemäss Klassendiagramm aber noch ohne Codierung des “Innenlebens“ der Methoden.
+  - Ergänzen Sie die ''get''- und ''set''-Methoden der Klassen mit dem entsprechenden Code (falls möglich Properties verwenden).
+  - Implementieren Sie die ''scale''-Methoden und sorgen Sie dafür, dass der Skalierungsfaktor f an die beteiligten Komponenten "deligiert" wird.
+  - Implementieren Sie die ''%%__str__%%''-Methoden auf den jeweiligen Klassen, so dass die Ausgabe derjenigen von Abb. 2 entspricht.
+  - Implementieren Sie nun die ''main''-Methode gemäss dem gezeigten Sequenzdiagramm.
+  - Führen Sie nun die ''main''-Methode aus und kontrollieren Sie, ob die Ausgabe den Erwartungen entspricht.
+
+{{modul:m320:learningunits:lu97:aufgaben:abb1.1.png?nolink&400|Abb. 1: Klassendiagramm}}\\
+Abb. 1: Klassendiagramm
+
+{{modul:m320:learningunits:lu97:aufgaben:abb1.2.png?nolink&400|Abb. 2: Ausgabe}}\\
+Abb. 2: Ausgabe
+
+{{modul:m320:learningunits:lu97:aufgaben:abb1.3.png?nolink&400|Abb. 3: Sequenzdiagramm}}\\
+Abb. 3: Sequenzdiagramm

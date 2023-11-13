@@ -1,0 +1,146 @@
+====== LU01b - Zahlensysteme: Einführung ======
+
+Ein Zahlensystem bestimmt die Symbole (0, 1, 2, ...) zur Notation von Zahlen und deren Bedeutung.
+Die heute verwendeten Zahlensysteme sind sogenannte Stellenwertsysteme.
+Das bedeutet: Der Wert eines Symbols ist abhängig davon, an welcher Stelle das Symbol steht.
+
+Hat man ein Stellenwertsystem verstanden, so können die Regeln auf jedes beliebige andere Stellenwertsystem übertragen.
+
+===== Dezimalsystem (10er-System) =====
+Am vertrautesten ist uns das 10er-System, da wir es im Alltag gebrauchen.
+Die Regeln für das 10er-System lauten:
+  * Es gibt 10 unterschiedliche Symbole für die Ziffern (0, 1, 2, 3, 4, 5, 6, 7, 8, 9).
+  * Der Wert des Symbols wird mit dem Wert der Stelle multipliziert.
+    * Die Stelle direkt **links** vom Dezimalpunkt hat den Stellenwert **1**.
+    * Nach links wird der Wert jeder Stelle mit 10 multipliziert.
+    * Nach rechts wird der Wert jeder Stelle durch 10 dividiert.
+
+=== Beispiel ===
+5'732.6<sub>10</sub> = 5*1'000 + 7*100 + 3*10 + 2*1 + 6*0.1
+
+===== Binärsystem (2er-System) =====
+Das Binärsystem dient zur Speicherung und Verarbeitung von Informationen.
+
+Die Regeln für das 2er-System lauten:
+  * Es gibt 2 unterschiedliche Symbole für die Ziffern (0, 1).
+  * Der Wert des Symbols wird mit dem Wert der Stelle multipliziert.
+    * Die Stelle direkt **links** vom Dezimalpunkt hat den Stellenwert **1**.
+    * Nach links wird der Wert jeder Stelle mit 2 multipliziert.
+    * Nach rechts wird der Wert jeder Stelle durch 2 dividiert.
+
+=== Beispiel ===
+01011100.1001<sub>2</sub>  =  1*64 + 1*16 + 1*8 + 1*4 + 1*1/2 + 1*1/16
+
+===== Hexadezimales System (16er-System) =====
+Zur Darstellung von binär codierten Zahlen, werden jeweils 4 binäre Ziffern zu einer hexadezimalen Ziffer zusammen gefasst.
+Dadurch können Informationen kompakter dargestellt werden.
+
+Die Regeln für das 16er-System lauten:
+  * Es gibt 16 unterschiedliche Symbole für die Ziffern (0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F).
+    * A entspricht dem Wert 10
+    * B entspricht dem Wert 11
+    * ...
+    * F entspricht dem Wert 15
+  * Der Wert des Symbols wird mit dem Wert der Stelle multipliziert.
+    * Die Stelle direkt **links** vom Dezimalpunkt hat den Stellenwert **1**.
+    * Nach links wird der Wert jeder Stelle mit 16 multipliziert.
+    * Nach rechts wird der Wert jeder Stelle durch 16 dividiert.
+
+==== Beispiele ====
+=== Hexadezimal in Dezimal umrechnen ===
+A3C2<sub>16</sub>  = 10*4096 + 3*256 + 12*16 + 2*1 = 41922<sub>10</sub>
+
+== Binär in Hexadezimal umrechnen ==
+<code>
+
+Binär: 0101 1100 1001 0011
+Hex:     5    C    9    3
+</code>
+
+
+===== Zahlensysteme umrechnen =====
+==== Umwandlung im 2er/8er/16er System ====
+Die Zahlensysteme Binär (2er), Oktal (8er) und Hexadezimal (16er) lassen sich recht einfach umwandeln.
+Das liegt daran, dass 2, 8 und 16 alles Potenzen der Zahl 2 sind:
+
+  * 2 = 2<sup>1</sup>
+  * 8 = 2<sup>3</sup>
+  * 16 = 2<sup>4</sup>
+
+Wollen wir eine Zahl vom Binär- ins Oktal-System umwandeln, so nehmen wir von rechts nach links jeweils 3 binäre Stellen und wandeln diese in 1 oktale Stelle um:
+<code>
+01 101 011 = 153
+</code>
+
+Vom Hexadezimalsystem ins Binärsystem wandeln wir 1 hexadezimale Stelle in 4 binäre Stellen um:
+
+<code>
+A31C = 1010 0011 0001 1100
+</code>
+
+==== Umrechnen von/nach Dezimalsystem ====
+Das Dezimalsystem basiert nicht auf einer Potenz der Zahl 2.
+Daher müssen wir die Zahlen umrechnen und können nicht einfach Stellen ersetzen.
+
+=== Dezimalzahl umrechnen ===
+Bei der Umrechnung einer Dezimalzahl divideren wir die Zahl immer wieder durch die neue Basis, z.B. 16.
+Bei jeder Division notieren wir den ganzzahligen Rest.
+
+253<sub>10</sub> = FD<sub>16</sub>
+<code>
+253 / 16 = 15  Rest 13   => Notiere D
+ 15 / 16 =  0  Rest 15   => Notiere F
+</code>
+
+253<sub>10</sub> = 375<sub>8</sub>
+<code>
+253 / 8 = 31  Rest 5
+ 31 / 8 =  3  Rest 7
+  3 / 8 =  0  Rest 3
+</code>
+
+=== Umrechnung ins Dezimalsystem ===
+== System Multiplikation ==
+
+Bei der Umrechnung in eine Dezimalzahl wenden wir wiederholt eine Multiplikation und Addition an.
+Dabei gehen wir von links nach rechts vor:
+
+375<sub>8</sub> = 253<sub>10</sub>
+<code>
+ 0 * 8 + 3 = 3
+ 3 * 8 + 7 = 31
+31 * 8 + 5 = 253
+</code>
+
+== System Stellenwertsystem ==
+Jede Zahl im Zehnersystem<sub>10</sub> hat einen bestimmten Stellenwert. 
+
+Schauen wir uns dazu die Zahl 732<sub>10</sub> an. 
+<code>
+732 ist die Summe aus:
+
+7*10^2  = 7 * 100 = 700 +
+3*10^1  = 3 * 10  =  30 +
+3*10^0  = 3 * 1   =   3 +
+                    732
+</code>
+
+Schauen wir uns dazu die Zahl A4B<sub>16</sub> an. 
+<code>
+A4B ist die Summe aus:
+
+A*16^2  = 10 * 256 = 2560 +
+4*16^1  = 4  * 16  =   64 +
+B*16^0  = 11 * 1   =   11 +
+                     2635
+</code>
+
+<WRAP center round tip 60%>
+Genaueres erfahren Sie auf den nächsten Theorieseiten!
+</WRAP>
+
+
+
+----
+{{tag>m114-A1G m114-A1F}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

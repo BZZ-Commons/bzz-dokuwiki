@@ -1,0 +1,12 @@
+====== Lösung LU02.A07 ======
+<code python>
+def main():
+    # write your code below this line
+    first = int(input('Give the first number:\n'))
+    second = int(input('Give the second number:\n'))
+    #print('The average is '+ str((first+second)/2))
+    print(f'The average is {(first+second)/2}') # using fstring
+
+if __name__ == '__main__':
+    main()
+</code>

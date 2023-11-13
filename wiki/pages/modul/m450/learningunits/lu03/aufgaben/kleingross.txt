@@ -1,0 +1,34 @@
+====== LU03.A01 - Kleinste und grösste Zahl finden ======
+<WRAP center round info 60%>
+Schreibe die Unit Tests für das Programm "m450_lu03_a01_minmax".
+</WRAP>
+
+===== Beschreibung =====
+
+Die Funktion ''minmax'' soll aus einer Liste von Zahlen die grösste und die kleinste Zahl finden.
+  * Argument: Liste von Zahlen
+  * Returnwert: Ein Tupel mit der kleinsten Zahl, grössten Zahl
+
+===== Auftrag =====
+Im Modul ''main_test.py'' sind bereits einige Funktionen für Unit Tests definiert.
+Der Kommentar ''# TODO ...'' beschreibt jeweils, welche Situation zu testen ist.
+
+Schreibe den jeweiligen Code für den Aufruf der Funktion ''minmax'' und die Auswertung des Resultats.
+
+===== Vorgehen =====
+
+  - Akzeptiere das GitHub Classroom Assignment im Moodlekurs.
+  - Klone das Repository in PyCharm.
+  - Codiere die Programmlogik in ''main.py''.
+  - Teste dein Programm mit den Testfällen in ''main_test.py''.
+  - Führe einen Commit und einen Push durch.
+
+
+=== Abgabe ===
+Die Abgabe erfolgt durch den Push ins GitHub Repository.
+In Moodle ist keine Abgabe vorgesehen oder möglich.
+
+----
+<nodisp>GitHub-Repo: https://github.com/templates-python/m450_lu03_a01_minmax</nodisp>
+{{tag>M450-LU03}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

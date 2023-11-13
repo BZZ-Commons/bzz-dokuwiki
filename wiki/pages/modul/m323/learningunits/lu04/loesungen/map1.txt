@@ -1,0 +1,35 @@
+====== LU04.L05 - Verdoppeln der Elemente in einer Liste ======
+
+<code python>
+def double_elements(numbers):
+    """
+    Double each element in the list using the map function.
+    Args:
+    - numbers (list): List of numbers to be doubled.
+
+    Returns:
+    - list: List of doubled numbers.
+    """
+    doubled_list = list(map(lambda x: x * 2, numbers))
+    return doubled_list
+
+if __name__ == '__main__':
+    numbers = [1, 2, 3, 4, 5]
+    doubled_list = double_elements(numbers)
+    print(doubled_list)  # Output: [2, 4, 6, 8, 10]
+</code>
+
+===== Erklärung der Codezeile: list(map(lambda x: x * 2, numbers)) =====
+
+Die Codezeile ''list(map(lambda x: x * 2, numbers))'' besteht aus mehreren Teilen:
+
+  - **list()**: Diese Funktion wandelt das Ergebnis der ''map''-Funktion in eine Liste um, da ''map'' ein Map-Objekt zurückgibt, das nicht direkt als Liste verwendet werden kann.
+  - **map()**: Die eingebaute ''map''-Funktion in Python nimmt eine Funktion und ein Iterable als Argumente und wendet die Funktion auf jedes Element des Iterables an.
+  - **lambda x: x * 2**: Dies ist eine anonyme Funktion (Lambda-Funktion), die als erstes Argument an ''map'' übergeben wird. Sie nimmt einen Wert ''x'' und verdoppelt ihn.
+  - **numbers**: Dies ist das Iterable (in diesem Fall eine Liste von Zahlen), auf das die Lambda-Funktion angewendet wird.
+
+Zusammengefasst: Die ''map''-Funktion wendet die Lambda-Funktion auf jedes Element der Liste ''numbers'' an und verdoppelt es. Anschließend wird das Map-Objekt in eine Liste umgewandelt und zurückgegeben.
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/ch/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Kevin Maurizi 

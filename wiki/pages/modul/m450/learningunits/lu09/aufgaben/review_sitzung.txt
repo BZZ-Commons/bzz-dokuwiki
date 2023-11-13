@@ -1,0 +1,42 @@
+====== LU09.A03 - Reviewsitzung ======
+
+<WRAP center round todo 60%>
+Führt als Gruppe eine Reviewsitzung durch und erstellt das Protokoll.
+</WRAP>
+
+===== Vorbereitung =====
+==== Befunde ====
+Führt die Befunde aller Gruppenmitglieder in einer Datei zusammen.
+Sortiert diese Befunde nach Dateiname und Zeilennummer.
+
+==== Rollen ====
+Der Moderator wurde bereits beim Bilden der Gruppe festgelegt.
+Zusätzlich muss ein Gruppenmitglied die Rolle des Autors übernehmen.
+Die restlichen Gruppenmitglieder behalten ihre Rolle als Gutachter.
+
+===== Durchführung =====
+
+=== 1 Moderator ===
+Der Moderator führt das Review-Meeting.
+Dazu geht er durch die Liste aller Befunde:
+  - Hole alle Befunde und Bewertungen zu dieser Zeile ein.
+  - Schlage eine Formulierung für den Befund vor.
+  - Gehe zu Schritt 1
+
+Er vermittelt bei Meinungsverschiedenheiten zwischen den Gutachtern bezüglich Bewertung und Formulierung eines Befunds.
+
+=== 1 Autor ===
+Der Autor dokumentiert die definitiven Befunde im Review-Protokoll.
+Während des Reviews wird er sich nicht verteidigen oder die Befunde hinterfragen.
+Er darf nur nachfragen, wenn er bei der Formulierung eines Befunds nicht sicher ist.
+
+=== 2-4 Gutachter ===
+Die Gutachter bestimmen gemeinsam die Befunde und Bewertungen, die im Review-Protokoll festgehalten werden.
+Sind Sie mit einem Befund nicht einverstanden oder haben eine andere Bewertung, so legen Sie Ihre Gründe dar.
+
+==== Abschluss =====
+Der Autor gibt das Review-Protokoll ab.
+
+----
+{{tag>M450-LU09}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

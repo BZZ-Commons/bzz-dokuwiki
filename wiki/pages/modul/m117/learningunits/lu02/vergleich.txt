@@ -1,0 +1,30 @@
+====== LU02c - Peer2Peer oder Client/Server? ======
+
+==== Vergleich Peer to Peer und Client Server Netzwerk ====
+Die folgende Tabelle zeigt die beiden Netzwerke im Vergleich:
+
+{{:modul:m117:learningunits:lu02:p2pvscs.jpg?600|}}
+
+==== Auswahl eines Netzwerkmodells ====
+Für kleinere Unternehmungen stellt sich die Frage, wann sich der Zusatzaufwand für ein Client Server Netzwerk lohnt. Die Auswahl des Netzwerkmodells hängt von der jeweiligen Situation ab, in welcher sich die
+Unternehmung befindet. Natürlich spielt die Zukunft der Unternehmung ebenso ein Rolle und muss berücksichtigt werden. So z.B. wenn bei einer KMU eine Kooperation mit einer grösseren Unternehmung ansteht. Um die richtige Auswahl zu erleichtern, können die folgende Überlegungen mit einbezogen werden.
+
+Ein Client Server Netzwerk ist nicht sinnvoll, wenn alle folgenden Bedingungen erfüllt sind:
+  * Es gibt nicht mehr als ca. 5 bis 10 Benutzer und Computer im Netzwerk
+  * Jeder Rechner kann selbständig arbeiten, auch wenn ein weiterer PC nicht online ist
+  * Man benötigt keine speziellen Dienste wie Datenbanken, FAX oder Kommunikation.
+  * Es bestehen keine Sicherheitsrisiken wie z. B. unbefugte Zugriffe auf Clients
+  * Es steht nur ein beschränktes Budget zur Verfügung.
+
+Dagegen sind Server basierende Netzwerke sinnvoll, wenn folgende Bedingungen zutreffen:
+  * Es sollen mehr als fünf Benutzer gleichzeitig auf das Netzwerk zugreifen können.
+  * Man benötigt eine zentrale Kontrolle über Sicherheit, Ressourcenverwaltung, Datensicherung und Zugangskontrolle.
+  * Man benötigt spezielle Serverdienste oder hat hohe Anforderungen an die Leistungsfähigkeit (Netzperformance).
+  * Man benötigt Zugriff auf Internet oder WAN-Leitungen.
+  * Voraussichtliche Expansion des Netzwerkes beziehungsweise des Unternehmens.
+
+----
+
+{{tag>m117}}
+
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Andre Probst

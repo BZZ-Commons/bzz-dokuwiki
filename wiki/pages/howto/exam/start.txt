@@ -1,0 +1,21 @@
+====== Nachprüfungen ======
+Die Webapplikation [[https://it.bzz.ch/exam]] zur Erfassung von Nachprüfungen ist online.
+Basierend auf den Erfahrungen und Anforderungen wird die Applikation um weitere Funktionen ergänzt.
+
+===== Inhalte =====
+<nspages . -h1  -exclude -simpleList -textPages=""> 
+
+===== Version 1.0 vom 31. März 2023 =====
+
+Die aktuelle Version umfasst die Funktionen
+  * Erfassen der Nachprüfung
+  * Versenden von Emails
+  * Erstellen des Deckblatts für die Prüfungsunterlagen
+
+===== Version 1.1 / geplant per Mitte Mai 2023 =====
+  * Optimierung des Formulars zur Erfassung der Nachprüfungen.
+  * Kopieren von Nachprüfungseinträgen. Dies erleichtert das Erfassen von mehreren Lernenden für die gleiche Prüfung.
+  * Sortierung der Einträge in der Ansicht für die Aufsicht.
+
+
+

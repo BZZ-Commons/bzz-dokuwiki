@@ -1,0 +1,80 @@
+====== LU06g - Was ist eine RESTful API? ======
+
+Eine RESTful API (Representational State Transfer) ist ein API-Design, das den Prinzipien von REST folgt. REST ist ein Architekturstil für verteilte Systeme und wurde erstmals 2000 von Roy Fielding in seiner Doktorarbeit vorgestellt. RESTful APIs ermöglichen die Interaktion zwischen verschiedenen Softwareanwendungen und Diensten und sind eine der populärsten Methoden für den Aufbau moderner Webdienste.
+
+===== Grundprinzipien von REST =====
+
+REST folgt einer Reihe von Grundprinzipien, die den Aufbau und die Interaktion mit APIs leiten:
+
+  * **Zustandslosigkeit**: Jede HTTP-Anfrage von einem Client an einen Server muss alle Informationen enthalten, die der Server benötigt, um die Anfrage zu verstehen und zu bearbeiten.
+  * **Client-Server-Architektur**: Die Client-Server-Architektur trennt die Benutzeroberfläche von der Datenlagerung, wodurch die Unabhängigkeit der beiden erhöht wird.
+  * **Cachebarkeit**: Antworten des Servers können als cachebar oder nicht-cachebar markiert werden, um die Leistung zu verbessern.
+  * **Uniforme Schnittstelle**: RESTful APIs haben eine einheitliche und konsistente Schnittstelle, die die Interaktion vereinfacht.
+  * **Zustandlose Kommunikation**: Jede Anfrage vom Client an den Server muss genug Informationen enthalten, um verstanden zu werden.
+
+===== HTTP-Methoden in RESTful APIs =====
+
+RESTful APIs verwenden HTTP-Methoden, um CRUD-Operationen (Create, Read, Update, Delete) auf Ressourcen durchzuführen:
+
+  * **GET**: Abrufen einer Ressource oder einer Sammlung von Ressourcen.
+  * **POST**: Erstellen einer neuen Ressource.
+  * **PUT**: Aktualisieren einer vorhandenen Ressource.
+  * **DELETE**: Löschen einer Ressource.
+
+===== Ressourcen und Endpunkte =====
+
+In RESTful APIs werden Daten als Ressourcen repräsentiert, auf die über URLs zugegriffen werden kann. Jede Ressource sollte durch einen eindeutigen Identifier, meistens eine URL, identifiziert werden.
+
+Beispiel:
+  * Abrufen aller Einkaufsartikel: ''GET /shoppingItems''
+  * Abrufen eines bestimmten Einkaufsartikels: ''GET /shoppingItems/1''
+  * Erstellen eines neuen Einkaufsartikels: ''POST /shoppingItems''
+  * Aktualisieren eines Einkaufsartikels: ''PUT /shoppingItems/1''
+  * Löschen eines Einkaufsartikels: ''DELETE /shoppingItems/1''
+===== Statuscodes =====
+
+RESTful APIs verwenden HTTP-Statuscodes, um den Erfolg oder Misserfolg einer Operation anzugeben. Einige gebräuchliche Statuscodes sind:
+
+  * **200 OK**: Erfolgreiche Anfrage
+  * **201 Created**: Ressource erfolgreich erstellt
+  * **400 Bad Request**: Die Anfrage war ungültig oder fehlerhaft
+  * **401 Unauthorized**: Authentifizierung erforderlich
+  * **403 Forbidden**: Keine Berechtigung für den Zugriff
+  * **404 Not Found**: Ressource wurde nicht gefunden
+  * **500 Internal Server Error**: Ein interner Serverfehler ist aufgetreten
+
+===== Datenaustauschformate =====
+
+RESTful APIs können verschiedene Formate für den Datenaustausch verwenden. Das gebräuchlichste und weitverbreitetste Format ist jedoch JSON (JavaScript Object Notation).
+
+==== JSON ====
+
+JSON ist ein schlankes Datenformat, das für den Datenaustausch zwischen einem Server und einem Client optimiert ist. Es ist einfach für Menschen zu lesen und zu schreiben und einfach für Maschinen zu analysieren und zu generieren. JSON ist weitgehend sprachneutral und wird von den meisten modernen Programmiersprachen unterstützt.
+
+  * **Einfache Syntax**: JSON hat eine sehr einfache und klare Syntax, die es einfach macht, Datenstrukturen darzustellen.
+  * **Schlüssel-Wert-Paare**: In JSON werden Daten als Schlüssel-Wert-Paare dargestellt. Ein Schlüssel ist immer ein String, während ein Wert ein String, eine Zahl, ein Boolean-Wert, ein Array oder ein anderes JSON-Objekt sein kann.
+  * **Arrays und Objekte**: JSON unterstützt verschachtelte Strukturen durch die Verwendung von Arrays (geordnete Listen) und Objekten (Sammlungen von Schlüssel-Wert-Paaren).
+
+=== JSON-Beispiel ===
+
+Ein einfaches JSON-Beispiel, das einen Einkaufsartikel repräsentiert, könnte so aussehen:
+
+<code javascript>
+{
+  "item_id": 1,
+  "item_name": "Apple",
+  "quantity": 5
+}
+</code>
+
+In diesem Beispiel enthält das JSON-Objekt drei Schlüssel (''item_id'', ''item_name'', ''quantity'') und ihre zugehörigen Werte.
+
+=== JSON und RESTful APIs ===
+
+In einer RESTful API werden JSON-Objekte häufig als Request- oder Response-Body verwendet. Zum Beispiel könnte ein POST-Request zum Hinzufügen eines neuen Benutzers den JSON-Body verwenden, um die Benutzerdaten zu übermitteln. Ebenso könnte die API-Antwort auf eine GET-Anfrage ein JSON-Objekt oder -Array mit den angeforderten Daten enthalten.
+
+----
+{{tag>M323-LU06}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/ch/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Kevin Maurizi 
+
+

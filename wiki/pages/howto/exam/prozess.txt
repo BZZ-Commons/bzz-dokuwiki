@@ -1,0 +1,88 @@
+====== 1) Prozessablauf ======
+
+{{:howto:exam:nachpruefung_status.png?600|}}
+
+===== Arbeitsschritte für die Fachlehrperson =====
+==== Nachprüfung erfassen ====
+<WRAP center round info 60%>
+Anmeldeschluss ist 2 Tage vor dem Termin der Nachprüfung.
+Dies ist in der Regel der Donnerstag.
+</WRAP>
+Fehlt ein Lernender bei einer Prüfung, erfasst du die Nachprüfung in der [[.:webapp|Webapplikation]].
+Setze den Status "pendent", falls der Lernende ein Arztzeugnis einreichen muss.
+Andernfalls setzt du den Status "offen".
+
+Sende direkt aus der Webapplikation eine Email mit dem weiteren Vorgehen an den Lernenden.
+
+==== Prüfungsunterlagen deponieren ====
+<WRAP center round info 60%>
+Die Unterlagen müssen spätestens 2 Tage **vor** dem Nachprüfungstermin (in der Regel Donnerstag) deponiert werden.
+</WRAP>
+=== Papierunterlagen oder Memorystick ===
+  - Drucke in der [[.:webapp|Webapplikation]] das Deckblatt aus.
+  - Ändere den Status der Nachprüfung zu "abgegeben".
+  - Lege das Deckblatt zusammen mit den Prüfungsunterlagen/Memorystick in ein Sichtmäppchen. 
+  - Deponiere das Sichtmäppchen im Fach "Nachprüfungen" im Lehrerzimmer Horgen.
+
+=== Elektronische Prüfung (Version 1.1 ab Mitte Mai 2023) ===
+Für elektronische Prüfungen ohne Papierunterlagen musst du sicherstellen, dass der Lernende am Nachprüfungstermin Zugriff auf die Prüfung hat.
+Es ist nicht die Verantwortung der Aufsichtsperson die Prüfung freizuschalten.
+
+  * Ändere den Status der Nachprüfung zu "elektronisch".
+
+==== Nach dem Nachprüfungstermin ====
+=== Prüfung absolviert ===
+
+Die Aufsichtsperson wird die ausgefüllten Prüfungsunterlagen in deinem Fach im Lehrerzimmer Horgen deponieren.
+Die Nachprüfung erhält den Status "absolviert".
+
+=== Prüfung nicht absolviert ===
+Erscheint der Lernende nicht zum Nachprüfungstermin, wird der Status "Pnab" gesetzt.
+Allfällige Unterlagen werden in dein Fach im Lehrerzimmer Horgen gelegt.
+
+===== Status =====
+
+Von der Erfassung bis zum Abschluss durchläuft eine Nachprüfung verschiedene Stati. 
+Je nach Status wird dieser von der Fach-Lehrperson oder der Nachprüfungs-Aufsicht gesetzt.
+
+| **Status** | **Beschreibung** | **Fach-LP** | **Aufsicht** |
+| Pendent | Das Arztzeugnis ist pendent. | X |  |
+| Offen | Prüfungsunterlagen wurden noch nicht abgegeben. | X |  |
+| Abgegeben | Die Fach-LP hat die Prüfungsunterlagen abgegeben. | X |  |
+| Elektronisch | Elektronische Prüfung ohne Papierunterlagen | X |  |
+| Erhalten | Die Prüfungsaufsicht hat die Unterlagen erhalten. |  | X |
+| Absolviert | Der Lernende hat die Nachprüfung absolviert. |  | X |
+| Pnab | Der Lernende hat die Prüfung nicht absolviert. |  | X |
+| Gelöscht | Nachprüfung wurde gelöscht. | X | X |
+
+===== Arbeitsschritte für die Aufsicht =====
+==== Eingang der Unterlagen prüfen ====
+Die Aufsicht prüft regelmässig, ob die Prüfungsunterlagen im Fach deponiert wurden.
+Sie stellt den Status auf "erhalten" und teilt dem Kandidaten ein Zimmer zu.
+
+==== Erinnerung / Mahnung ====
+10 Tage vor dem Prüfungstermin kontrolliert die Aufsicht, dass alle Nachprüfungseinträge den Status "erhalten" oder "elektronisch" haben. Bei Einträgen mit "pendent", "offen" sendet die Aufsicht eine Erinnerung an die Fachlehrperson.
+
+==== Aufgebot ====
+Am ??Mittwoch?? vor dem Termin versendet die Aufsicht die Aufgebote an die Lernenden.
+Die Webapplikation nimmt keine Prüfung vor, ob das Aufgebot abhängig vom Status sinnvoll ist.
+
+**Wichtig:** In der Regel sollten nur Einträge mit dem Status "erhalten" oder "elektronisch" aufgeboten werden.
+Die Gründe:
+  * pendent: Da noch kein Arztzeugnis vorliegt, ist es noch unsicher, ob der Lernende überhaupt zur Nachprüfung antreten darf. => Nimm Rücksprache mit der Fachlehrperson.
+  * offen: Die Unterlagen sind noch nicht eingetroffen. Bieten wir den Lernenden auf und die Unterlagen fehlen, ist das mehr als nur peinlich. => Nimm Rücksprache mit der Fachlehrperson.
+  * abgegeben: Kontrolliere zuerst ob die Unterlagen vorhanden sind und ändere den Status auf erhalten.
+
+Im Zweifelsfall muss die Fachlehrperson den Lernenden selber aufbieten.
+
+==== Am Nachprüfungstag ====
+Die Aufsichtspersonen ...
+  - ... weisen den Kandidaten ihr Zimmer / Sitzplatz zu. Sie drucken dazu die Deckblätter aus und verteilen diese auf die Tische.
+  - ... überprüfen die Identität der Kandidaten.
+  - ... geben die Prüfungsunterlagen ab und sammeln die Resultate ein.
+  - ... füllen die Angaben "abgemeldet", "nicht abgemeldet" auf dem Deckblatt aus.
+
+Tritt ein Kandidat zur Prüfung an, so ändere den Status zu **"absolviert"**.
+Andernfalls ändere den Status zu **"pnab"**.
+
+Am Ende des Nachprüfungstags legen die Aufsichtspersonen die ausgefüllten Prüfungsunterlagen und das Deckblatt ins Postfach der Fachlehrperson.

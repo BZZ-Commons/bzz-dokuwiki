@@ -1,0 +1,11 @@
+====== LU06.L06 -  Todo-Liste mit Blueprints ======
+
+===== main.py =====
+Alle Routes wurde ausgelagert.
+{{gh>https://github.com/templates-python/m323-lu06-a06-blueprints/blob/solution/main.py}}
+
+===== todoBlueprint.py =====
+{{gh>https://github.com/templates-python/m323-lu06-a06-blueprints/blob/solution/todoBlueprint.py}}
+
+===== userBlueprint.py =====
+{{gh>https://github.com/templates-python/m323-lu06-a06-blueprints/blob/solution/userBlueprint.py}}

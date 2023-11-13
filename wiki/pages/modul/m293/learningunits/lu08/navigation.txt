@@ -1,0 +1,86 @@
+====== LU08b - Navigation ======
+
+===== Navigation über mehrere Seiten =====
+Jede HTML-Seite hat ein eigenes ''<nav>'' in welchem die Links zu den jeweils anderen Seiten aufgeführt sind.
+
+^ home.html  ^ about.html  ^ contact.html  ^
+|<code html4strict><nav>
+  <a href='home.html'><b>Home</b></a>
+  <a href='about.html'>Über uns</a>
+  <a href='contact.html'>Kontakt</a>
+</nav>
+<main>
+  ...home...
+</main></code>           |<code html4strict><nav>
+  <a href='home.html'>Home</a>
+  <a href='about.html'><b>Über uns</b></a>
+  <a href='contact.html'>Kontakt</a>
+</nav>
+<main>
+  ...about...
+</main></code>            |<code html4strict><nav>
+  <a href='home.html'>Home</a>
+  <a href='about.html'>Über uns</a>
+  <a href='contact.html'><b>Kontakt</b></a>
+</nav>
+<main>
+  ...contact...
+</main></code>              |
+
+Alle drei Seiten liegen im selben Ordner auf dem Server. Die Links im Nav werden dazu verwendet diese bei bedarf zu laden.
+
+<WRAP center round info 60%>
+Auf modernen Websiten wird das die Navigation häuffig in einem eigenen ''nav'' in einem ''*.html''-File erstellt und dynamisch mit Javascript in jede Inhaltseite geladen. Javascript gehört nicht zum Umfang des Moduls 293 deshalb verwenden wir eigene ''nav'' auf jeder Seite.
+</WRAP>
+
+
+===== Navigation auf einer Seiten =====
+Ein ''<a>''-Element kann nicht nur auf neue Seiten oder Files verlinken sondern auch auf sogenannte Sprungmarken. Eine Sprungmarke ist ein bestimmter Bereich oder Punkt auf einer Webseite, zu dem ein Link direkt führt. Dies wird oft verwendet, um innerhalb einer langen Webseite schnell zu verschiedenen Abschnitten navigieren zu können.
+
+==== Grundlagen der Sprungmarken====
+Sprungmarken werden mit zwei HTML-Elementen erstellt: einem mit einem ''href''-Attribut, das auf die Sprungmarke zeigt, und einem mit einem ''id''-Attribut, das den Ort der Sprungmarke definiert.
+
+Das Element, das als Sprungziel dient, verwendet das ''id''-Attribut, um eine eindeutige ID für diesen Abschnitt der Seite zu erstellen. Beispielsweise könnte ein Abschnitt einer Seite, der einen bestimmten Artikel enthält, die ID ''article1'' haben:
+
+<code html4strict>
+<article id="article1">
+  <!-- Artikelinhalt hier -->
+</article>
+</code>
+
+Um zu dieser Sprungmarke zu verlinken, verwenden Sie ein anderes "a"-Element mit einem href-Attribut, das die ID der Sprungmarke enthält, vorangestellt von einem Rautenzeichen (#):
+
+<code html4strict>
+<a href="#article1">Gehe zu Artikel 1</a>
+</code>
+Wenn der Benutzer auf diesen Link klickt, wird er direkt zu dem Abschnitt der Seite mit der ID "article1" gescrollt.
+
+Beispiel für die Verwendung von Sprungmarken
+Angenommen, wir haben eine lange Webseite mit drei Artikeln. Wir könnten am Anfang der Seite ein Inhaltsverzeichnis erstellen, das Links zu jedem der Artikel enthält:
+
+<code html4strict>
+<nav>
+  <a href="#article1">Artikel 1</a>
+  <a href="#article2">Artikel 2</a>
+  <a href="#article3">Artikel 3</a>
+</nav>
+
+<article id="article1">
+  <!-- Artikel 1 Inhalt hier -->
+</article>
+
+<article id="article2">
+  <!-- Artikel 2 Inhalt hier -->
+</article>
+
+<article id="article3">
+  <!-- Artikel 3 Inhalt hier -->
+</article>
+</code>
+
+Mit diesem Setup kann der Benutzer auf einen Link im Inhaltsverzeichnis klicken, um direkt zu einem bestimmten Artikel zu gelangen. Dies verbessert die Benutzerfreundlichkeit, insbesondere auf längeren Webseiten.
+
+
+----
+{{tag>m293-LU08 m293-E1E}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Kevin Maurizi, Marcel Suter

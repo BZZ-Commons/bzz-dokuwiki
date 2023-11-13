@@ -1,0 +1,41 @@
+====== Classroom <=> Moodle ======
+===== Beschreibung =====
+Die Punkte aus dem Autograding des GitHub Classrooms können in eine Moodle-Aufgabe übertragen werden.
+Damit ist es einfacher zu sehen, wie erfolgreich die Lernenden eine Aufgabenstellung gelöst haben.
+
+===== Einrichtung =====
+Die Einrichtung des Autograding und der Moodle-Aufgabe findest du unter [[/howto/git/grading|Bewertung vom Classroom in Moodle übernehmen]]
+
+===== Umsetzung =====
+==== Webservice "FGIT_API" ====
+[[https://github.com/marcel-suter-bzz/FGIT_Api]]
+
+Webservice mit Python und Flask.
+Erstellt eine Datenbank (Shelve) mit den Moodle-Aufgaben pro Lernendem und den Punkten aus GitHub Classroom.
+
+=== Services ===
+| ''/gh_grade/<owner>/<repo>/<points>/<max>'' | Wird von der GitHub Action aufgerufen und speichert die Punktzahl |
+| ''/mdl_assign/<actor>/<repo>/<assignid>/<courseid>/<userid>'' | Wird vom Moodle-Plugin aufgerufen und erstellt die Einträge für die Aufgabe und Lernende |
+| ''/db_show'' | Zeigt den Inhalt der Datenbank an für Debugging |
+
+=== Pfade ===
+  * Applikation: ''/opt/fgitapi''
+  * Daten: ''/data/grading/grades.db''
+
+
+==== Plugin "mdl_assign_export" ====
+[[https://github.com/????]]
+
+Das Plugin enthält einen Observer, der beim Erstellen/Ändern einer Aufgabe (Assignment) aufgerufen wird.
+Es ruft den Webservice "FGIT_API" auf.
+
+==== mdl_autograde ====
+[[https://github.com/marcel-suter-bzz/Mdl_Autograde]]
+
+Python-Skript zum Übertragen der Punkte in die Moodle-Aufgabe.
+Wird regelmässig via Cron-Job angestossen.
+
+=== Pfade ===
+  * Applikation: ''/opt/mdlautograde''
+  * Daten: ''data/grading/grades.db''
+

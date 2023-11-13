@@ -1,0 +1,32 @@
+====== LU04.A01 - Auto ======
+<WRAP center round info 60%>
+Erstelle Tests für die Klasse "Car" mit Hilfe von Fixtures.
+</WRAP>
+
+===== Auftrag =====
+
+In einem Programm wir die Klasse "Car" realisiert.
+
+{{:modul:m450:learningunits:lu04:aufgabe:car_uml.png?400|}}
+((Die Getter/Setter-Funktionen für die Attribute wurden im Klassendiagramm nicht dargestellt))
+
+Du musst nun einige Tests für diese Klasse schreiben.
+Dazu nutzt du eigene Fixtures zum Erzeugen der Objekte und ''monkeypatch'' um Attributswerte zu manipulieren.
+
+===== Vorgehen =====
+
+  - Akzeptiere das GitHub Classroom Assignment im Moodlekurs.
+  - Klone das Repository in PyCharm.
+  - Codiere die Programmlogik in ''main.py''.
+  - Teste dein Programm mit den Testfällen in ''main_test.py''.
+  - Führe einen Commit und einen Push durch.
+
+=== Abgabe ===
+Die Abgabe erfolgt durch den Push ins GitHub Repository.
+In Moodle ist keine Abgabe vorgesehen oder möglich.
+
+
+----
+<nodisp>GitHub Repo</nodisp>
+{{tag>M450-LU04}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

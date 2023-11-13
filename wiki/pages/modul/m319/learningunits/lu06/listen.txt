@@ -1,0 +1,173 @@
+====== LU06b - Listen ======
+
+//Siehe auch [[https://docs.python.org/3/tutorial/datastructures.html#|Python - 5. Data Structures]]//
+
+<WRAP center round info 60%>
+Eine Liste ist eine Datenstruktur in Python.
+Sie enthält mehrere Einträge, die mit einem Index identifiziert werden.
+</WRAP>
+
+Du kannst dir eine Liste wie eine einfache Tabelle mit 2 Spalten vorstellen:
+
+^ Index ^ Wert ^
+| 0 | Apfel |
+| 1 | Banane |
+| 2 | Zitrone |
+| 3 | Erdbeere |
+
+Der Index ist eine automatische Nummerierung von 0 bis n.
+Wird ein neues Element in die Liste eingefügt, so wird der Index um 1 erhöht.
+
+
+===== Listen anlegen =====
+<WRAP center round info 60%>
+Wir definieren eine Liste, indem wir die eckigen Klammern **''['' '']''** verwenden.
+Alternativ kann auch ''variable = list()'' verwendet werden.
+Die Reihenfolge der Elemente bestimmt den Index, beginnend mit Index=0.
+</WRAP>
+
+Um die Übersicht zu vereinfachen, **können** wir jedes Element auf eine eigene Zeile schreiben.
+<WRAP center box 80%>
+<code python>
+fruit = ['Apfel', 'Banane', 'Zitrone', 'Erdbeere']
+print(fruit)
+animals = [
+            'Löwe',   # index = 0
+            'Gepard', # index = 1
+            'Adler'   # index = 2
+          ]
+print(animals)
+
+
+countries = list()    # Erstellt eine leere Liste
+</code>
+</WRAP>
+
+Beide Varianten erzeugen eine Liste von Elementen.
+
+=== Output ===
+<WRAP center box 80%>
+<code>
+['Apfel', 'Banane', 'Zitrone', 'Erdbeere']
+['Löwe', 'Gepard', 'Adler']
+</code>
+</WRAP>
+
+
+
+===== Elemente in eine Liste einfügen =====
+==== Am Ende einfügen ====
+<WRAP center round info 60%>
+Mit der Funktion **append** wird ein zusätzliches Element am Ende der Liste eingefügt.
+</WRAP>
+
+<WRAP center box 80%>
+<code python>
+animals = ['Löwe', 'Gepard', 'Adler']
+animals.append('Hecht')    # index = 3
+print(animals)
+</code>
+</WRAP>
+
+
+===  Output === 
+<WRAP center box 80%>
+<code>
+['Löwe', 'Gepard', 'Adler', 'Hecht']
+</code>
+</WRAP>
+
+==== Mittendrin einfügen ====
+<WRAP center round info 60%>
+Mit der Funktion **insert** kannst du ein neues Element an einer bestimmten Stelle in die Liste einfügen.
+</WRAP>
+Der Index aller Elemente hinter dem neuen Element, wird um 1 erhöht.
+Im Beispiel wird ''Eule'' bei Index=2 eingefügt und ''Adler'' hat neu den Index ''3''.
+
+<WRAP center box 80%>
+<code python>
+animals = ['Löwe', 'Gepard', 'Adler']
+animals.insert(2, 'Eule')  
+print(animals)
+</code>
+</WRAP>
+
+Beim Index **2** wird ein neues Element eingefügt.
+Der Index aller Elemente mit einem Index grösser/gleich **2** wird um **1** erhöht. 
+
+===  Output === 
+<WRAP center box 80%>
+<code>
+['Löwe', 'Gepard', 'Eule', 'Adler']
+</code>
+</WRAP>
+
+===== Ein bestimmtes Element lesen =====
+==== Element anhand des Index lesen ====
+
+<WRAP center round info 60%>
+Wir können einzelne Element anhand ihres Index lesen.
+</WRAP>
+
+<WRAP center box 80%>
+<code python>
+animals = ['Löwe', 'Gepard', 'Adler']
+print(animals[1])
+</code>
+</WRAP>
+
+===  Output === 
+<WRAP center box 80%>
+<code>
+Gepard
+</code>
+</WRAP>
+
+==== Element anhand des Wertes suchen ====
+
+<WRAP center round info 60%>
+Die Funktion **index** sucht die Position eines Elements mit einem bestimmten Wert.
+</WRAP>
+
+<WRAP center box 80%>
+<code python>
+animals = ['Löwe', 'Gepard', 'Adler']
+print(animals.index('Adler'))
+</code>
+</WRAP>
+
+===  Output === 
+<WRAP center box 80%>
+<code>
+2
+</code>
+</WRAP>
+
+==== Falls der Wert nicht existiert ====
+
+<WRAP center round important 60%>
+**Vorsicht**: Falls kein Element mit dem gesuchten Wert existiert, wird eine ''ValueException'' ausgelöst.
+Diese Situation müssen wir mit ''try'' / ''except'' abfangen.
+</WRAP>
+
+<WRAP center box 80%>
+<code python>
+animals = ['Löwe', 'Gepard', 'Adler']
+try:
+    print(animals.index('Wolpertinger'))
+except ValueError:
+    print('Kein Wolpertinger in der Liste vorhanden')
+</code>
+</WRAP>
+
+===  Output === 
+<WRAP center box 80%>
+<code>
+Kein Wolpertinger in der Liste vorhanden
+</code>
+</WRAP>
+
+----
+{{tag>M319-LU06 M319-C1E}}
+
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter 

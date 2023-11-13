@@ -1,0 +1,36 @@
+====== LU04.A02 - Lambda - Fläche von Formen ======
+
+<WRAP center round todo 60%>
+Schreiben Sie Lambda-Funktionen zum Berechnen der Fläche von verschiedenen geometrischen Formen wie Kreis, Quadrat und Rechteck.
+</WRAP>
+
+===== Detaillierte Aufgabenstellung =====
+
+  * Schreiben Sie eine Lambda-Funktion zum Berechnen der Fläche eines Kreises. Verwenden Sie die Formel ''pi * r * r''.
+  * Schreiben Sie eine Lambda-Funktion zum Berechnen der Fläche eines Quadrats. Verwenden Sie die Formel ''a * a''.
+  * Schreiben Sie eine Lambda-Funktion zum Berechnen der Fläche eines Rechtecks. Verwenden Sie die Formel ''l * b''.
+
+===== Vorgehen =====
+
+Definieren Sie die Lambda-Funktionen
+Testen Sie die Lambda-Funktionen, indem Sie Werte übergeben und die Ergebnisse überprüfen.
+
+<code python>
+from math import pi
+
+circle_area =  # Kreisfläche
+
+square_area =  # Quadratfläche
+
+rectangle_area =  # Rechteckfläche
+
+if __name__ == '__main__':
+
+    print(circle_area(5))
+    print(square_area(4))
+    print(rectangle_area(3, 5))
+</code>
+
+----
+<nodisp>https://github.com/templates-python/m323-lu04-a02-lambda</nodisp>
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/ch/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Kevin Maurizi 

@@ -1,0 +1,46 @@
+====== LU02a - Teststrategie ======
+
+=== Quellen ===
+  * [[wpde>Softwaretest]]
+  * [[https://www.andagon.com/blog/was-ist-software-teststrategie#:~:text=Die%20Software%2DTeststrategie%20beschreibt%20den,um%20die%20Projektziele%20zu%20erreichen.|andagon.com - Teststrategie]]
+
+
+<WRAP center round info 60%>
+Die Teststrategie eines Softwareprojekts definiert, wie die einzelnen Teststufen getestet werden.
+Für jede Teststufe wird die Art und Weise der Tests beschrieben.
+</WRAP>
+
+In der Teststrategie legen wir den Gesamtrahmen unserer Test fest.
+Für jeden Teil des Systems definieren wir:
+  * Die Testziele
+  * Die Intensität der Tests
+  * Testmethoden und -techniken
+  * Test-Infrastruktur
+  * Reihenfolge
+
+===== Prinzipien und Techniken =====
+==== top-down ====
+Beim Testen werden zunächst die Hauptfunktionen bzw. die Steuerung überprüft.
+Detailfunktionen werden ignoriert oder mittels **Stubs** simuliert.
+
+==== bottom-up ====
+Die Tests beginnen bei den kleinsten, atomaren Funktionen der Applikation.
+Die Aufrufe der Funktionen werden mittels **Driver** simuliert.
+
+==== hardest first ====
+Zuerst werden die komplexesten und/oder wichtigsten Teile der Applikation getestet.
+
+==== Risk based Testing ====
+Das Testvorgehen wird anhand der Risikoanalyse geplant.
+Wir machen eine Einschätzung, in welchen Komponenten ein nicht erkannter Fehler die grössten Schäden verursachen kann.
+Diese Komponenten werden zuerst und mit hoher Intensität getestet.
+
+==== Data driven Testing ====
+Bei dieser Technik wird mittels Scripts die Datenkonstellation gezielt verändert, um ganze Testfallsammlungen effizient und automatisiert zu testen.
+
+==== ISO/IEC 25000 ====
+Die [[wpde>ISO/IEC_25000|ISO/IEC-Norm 25000]] ist ein Standard für Qualitätskriterien sowie Bewertungsmethoden für Software und Systeme.
+
+----
+{{tag>M450-LU02}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

@@ -1,0 +1,33 @@
+==== Aufgabe 4b - Door ====
+=== Ziel ===
+<WRAP center round todo 60%>
+Üben Sie das Vorgehen mit dem GitHub Classroom.
+</WRAP>
+
+=== Auftrag ===
+Bei dieser Aufgabe stellen Sie sicher, dass Ihre Entwicklungsumgebung korrekt funktioniert.
+Achten Sie daher bei jedem Schritt genau auf allfällige Fehler- oder Warnmeldungen.
+
+=== Vorgehen ===
+  - Akzeptieren Sie das Assignment im GitHub Classroom.
+  - Klonen Sie das Repository in Ihre Entwicklungsumgebung.
+    * Wird das Virtual Environment (venv) korrekt angelegt?
+    * Erkennt PyCharm Ihren Python Interpreter?
+    * Zeigt PyCharm Fehler im Sourcecode (z.B. fehlende Imports) an?
+  - Führen Sie das Programm und allfällige Tests aus. 
+  - Nehmen Sie eine beliebige Änderung in einem Kommentar vor.
+  - Führen Sie einen Commit & Push durch.
+  - Prüfen Sie in GitHub, ob die [Action] korrekt durchgeführt wird.
+
+===Dauer===
+10 Minuten
+
+=== Abgabe ===
+Die Abgabe erfolgt mittels Push in Ihr GitHub Repository.
+
+
+
+
+----
+<nodisp>GitHub Repo: https://github.com/templates-python/m320_lu01_a04_doors</nodisp>
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]]

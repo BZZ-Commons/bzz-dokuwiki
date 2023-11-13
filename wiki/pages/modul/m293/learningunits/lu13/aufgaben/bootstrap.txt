@@ -1,0 +1,27 @@
+====== LU13.A01 - Bootstrap ======
+<WRAP center round todo 60%>
+Ergänzen Sie den HTML-Code um die benötigen Bootstrap-Klassen.
+Das Aussehen und Verhalten soll identisch zur Musterlösung unter [[https://templates-html.github.io/M293_LU13_A01_Bootstrap/]] sein.
+</WRAP>
+
+Sie erhalten ein Projekt mit 3 vollständigen HTML-Dateien:
+  * index.html
+  * marks.html
+  * form.html
+
+===== Vorgehen =====
+  - Öffnen Sie die Home-Seite (''index.html'') der [[https://templates-html.github.io/M293_LU13_A01_Bootstrap/|Musterlösung]] in einem Webbrowser.
+  - Beachten Sie die Darstellung (Farben, Schriften, ...) der verschiedenen Elemente.
+  - Probieren Sie unterschiedliche Fensterbreiten aus und beobachten Sie das Layout der Elemente.
+  - Ergänzen Sie in Ihrem Repository die benötigten Bootstrap-Klassen, um das identische Verhalten zu erreichen.
+
+<WRAP center round tip 60%>
+  * Kümmern Sie sich um ein Element nach dem anderen. Zum Beispiel könnten Sie zuerst die Navigation anpassen, danach die Artikel, ...
+  * **Weniger ist mehr**: Vermeiden Sie unnötig viele Klassen, die unter Umständen gar keinen Einfluss haben. Versuchen Sie das gewünschte Verhalten mit so wenig Klassen wie möglich zu erreichen.
+
+</WRAP>
+
+<nodisp>https://github.com/templates-html/M293_LU13_A01_Bootstrap</nodisp>
+----
+{{tag>m293-LU13}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Kevin Maurizi, Marcel Suter

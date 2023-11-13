@@ -1,0 +1,16 @@
+====== LU08.A02 - Pfadvariable ======
+<WRAP center round todo 60%>
+Nutze eine globale Umgebungsvariable im Pfad deiner Requests.
+</WRAP>
+
+In der Aufgabe "Bookshelf testen" hast du einige Requests erstellt.
+Diese verwenden aber einen hart codierten Pfad zur Webapplikation: ''https://it.bzz.ch/booksimple/...''.
+Stattdessen wollen wir den Zugriffspfad in eine Umgebungsvariable speichern.
+
+  - Definiere in deiner Collection eine Variable mit einem sprechenden Namen.
+  - Weise der Variable den Pfad zur Webapplikation als Wert zu.
+  - Ersetze in den Requests den Pfad ''https://it.bzz.ch/booksimple/'' durch diese Variable.
+
+----
+{{tag>M450-LU08}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

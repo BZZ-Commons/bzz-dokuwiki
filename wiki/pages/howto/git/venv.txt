@@ -1,0 +1,42 @@
+====== Virtual Environment ======
+<WRAP center round info 60%>
+Das Virtual Environment enthält alle Dateien, um dein Pythonprogramm auszuführen.
+</WRAP>
+
+Wird dir jetzt ein Dialog "Log In to GitHub" angezeigt? 
+
+{{:howto:git:classroom_student_51.png?400|}}
+
+Dann musst du zuerst PyCharm die Berechtigung für den Zugriff geben.
+Klicke unten in dieser Anleitung auf **//[Authentifizieren]//**.
+Du kommst danach wieder auf diese Seite zurück.
+
+===== Location für das Virtual Environment =====
+
+{{:howto:git:classroom_student_09.png?600|}}
+
+PyCharm lädt nun die Dateien aus dem Repository herunter. 
+Je nachdem wirst du zwei Fragedialoge sehen. 
+Es kann auch sein, dass nur einer oder gar keiner dieser Dialoge erscheint. 
+Das Fehlen der Dialoge ist kein Problem und du kannst weiter der Anleitung folgen.
+
+SCREENSHOT
+
+Wähle hier **[Trust Project]**
+
+{{:howto:git:classroom_student_14.png?400|}}
+
+Hier kannst du selber entscheiden, ob du ein zusätzliches PyCharm-Fenster möchtest oder nicht.
+
+===== Virtual Environment =====
+
+In diesem Dialogfeld legst du den Speicherort für das Virtual Environment fest.
+Der Pfad ist der gleiche wie für das ganze Projekt mit ''\venv'' am Schluss.
+Passe den Pfad falls nötig an.
+
+{{:howto:git:classroom_student_11.png?600|}}
+
+Klicke dann auf **[OK]** um die Einrichtung abzuschliessen.
+
+  * Wenn alles geklappt hat, kannst du unten auf **//[Weiter]//** klicken.
+  * Falls dieser Dialog nicht erscheint, klicke unten auf **//[Kein Venv]//**.

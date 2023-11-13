@@ -1,0 +1,260 @@
+====== LU07a - Erweiterung der if-Anweisung ======
+
+===== If .. in .. Anweisung =====
+
+Eine ''if <keyword> in <list>:''-Anweisung kann verwendet werden um:
+
+=== 1. Zu überprüfen ob das ''<keyword>'' bestandteil eines ''string'' ist ===
+<WRAP round box 60%>
+<code python>
+if 'aul' in 'grault':                # Truthy
+    print('yes')
+</code>
+<code>
+yes
+</code>
+</WRAP>
+
+
+=== 2. Zu überprüfen ob das ''<keyword>'' dem Element in einer Collection entspricht ===
+<WRAP round box 60%>
+<code python>
+if 'baz' in ['foo', 'bar', 'baz']:  
+    print('yes')
+</code>
+<code>
+yes
+</code>
+</WRAP>
+
+
+
+
+===== Bedingte Ausdrücke (Pythons ternärer Operator) =====
+Python unterstützt eine zusätzliche Entscheidungseinheit, den sogenannten bedingten Ausdruck. 
+(An verschiedenen Stellen in der Python-Dokumentation wird er auch als bedingter Operator oder ternärer Operator bezeichnet.)
+
+In seiner einfachsten Form sieht die Syntax des bedingten Ausdrucks wie folgt aus:
+<WRAP round box 60%>
+<code python>
+<value_1> if <expr> else <value_2>
+</code>
+</WRAP>
+
+Sie unterscheidet sich von den bisher gezeigten Formen der if-Anweisung, da sie keine Kontrollstruktur ist, die den Ablauf der Programmausführung steuert. 
+Sie verhält sich eher wie ein Operator, der einen Ausdruck definiert. 
+Im obigen Beispiel wird ''<expr>'' zuerst ausgewertet. Wenn er wahr ist, 
+wird der Ausdruck als ''<value_1>'' ausgewertet. Wenn er falsch ist, wird der Ausdruck zu ''<value_2>'' ausgewertet.
+
+Beachten Sie die nicht offensichtliche Reihenfolge: Der mittlere Ausdruck wird zuerst ausgewertet, und auf der Grundlage dieses Ergebnisses wird einer der Ausdrücke an den Enden zurückgegeben. Hier sind einige Beispiele, die hoffentlich zur Verdeutlichung beitragen:
+<WRAP round box 60%>
+<code python>
+raining = False
+print('Let\'s go to the', 'beach' if not raining else 'library')
+</code>
+<code>
+Let's go to the beach
+</code>
+<code python>
+raining = True
+print('Let\'s go to the', 'beach' if not raining else 'library')
+</code>
+<code>
+Let's go to the library
+</code>
+
+<code python>
+age = 12
+groups = 'minor' if age < 21 else 'adult'
+print(group)
+</code>
+<code>
+minor
+</code>
+
+<code python>
+print ('yes' if ('qux' in ['foo', 'bar', 'baz']) else 'no')
+</code>
+<code>
+no
+</code>
+</WRAP>
+
+<WRAP center round info 60%>
+**Hinweis:** Der bedingte Ausdruck in Python ähnelt der Syntax ''<expr> ? <value_1> : <value_2>'' Syntax, die von vielen anderen Sprachen verwendet wird - C, Perl und Java, um nur einige zu nennen. 
+Tatsächlich wird der ?: Operator in diesen Sprachen gemeinhin als ternärer Operator bezeichnet, was wahrscheinlich der Grund dafür ist, dass Pythons bedingter Ausdruck manchmal als ternärer Python-Operator bezeichnet wird.
+
+Sie können in PEP 308 sehen, dass der ''<expr> ? <value_1> : <value_2>'' für Python in Betracht gezogen, aber letztlich zugunsten der oben gezeigten Syntax verworfen wurde.
+</WRAP>
+
+Ein häufiger Verwendungszweck des bedingten Ausdrucks ist die Auswahl der Variablenzuweisung. 
+Nehmen wir zum Beispiel an, Sie möchten die grössere von zwei Zahlen ermitteln. 
+Natürlich gibt es eine eingebaute Funktion, max(), die genau das tut (und mehr), die Sie verwenden könnten. 
+Aber nehmen wir an, Sie wollen Ihren eigenen Code von Grund auf schreiben.
+
+Sie könnten eine standardmässige if-Anweisung mit einer else-Klausel verwenden:
+<WRAP round box 60%>
+<code python>
+if a > b:
+     m = a
+ else:
+     m = b
+</code>
+</WRAP>
+
+Aber ein bedingter Ausdruck ist kürzer:
+<WRAP round box 60%>
+<code python>
+m = a if a > b else b
+</code>
+</WRAP>
+
+Denken Sie daran, dass sich der bedingte Ausdruck syntaktisch wie ein Ausdruck verhält. 
+Er kann als Teil eines längeren Ausdrucks verwendet werden. 
+Der bedingte Ausdruck hat einen niedrigeren Vorrang als praktisch alle anderen Operatoren, so dass Klammern erforderlich sind, um ihn selbst zu gruppieren.
+
+Im folgenden Beispiel bindet der Operator + stärker als der bedingte Ausdruck, so dass 1 + x und y + 2 zuerst ausgewertet werden, gefolgt von dem bedingten Ausdruck. 
+Die Klammern im zweiten Fall sind unnötig und ändern das Ergebnis nicht:
+<WRAP round box 60%>
+<code python>
+x = 40
+y = 40
+
+z = 1 + x if x > y else y + 2
+print(z)
+</code>
+<code>
+42
+</code>
+
+<code python>
+z = (1 + x) if x > y else (y + 2)
+print(z)
+</code>
+<code>
+42
+</code>
+</WRAP>
+
+Wenn Sie möchten, dass der bedingte Ausdruck zuerst ausgewertet wird, müssen Sie ihn mit gruppierenden Klammern umgeben. 
+Im nächsten Beispiel wird ''(x if x > y else y)'' zuerst ausgewertet. 
+Das Ergebnis ist ''y'', das ''40'' ist, also wird ''z'' mit ''1 + 40 + 2 = 43'' belegt:
+<WRAP round box 60%>
+<code python>
+x = 40
+y = 40
+
+z = 1 + (x if x > y else y) + 2
+print(z)
+</code>
+<code>
+43
+</code>
+</WRAP>
+
+<WRAP center round tip 60%>
+Wenn Sie einen bedingten Ausdruck als Teil eines grösseren Ausdrucks verwenden, ist es wahrscheinlich eine gute Idee, gruppierende Klammern zur Verdeutlichung zu verwenden, auch wenn sie nicht benötigt werden.
+</WRAP>
+
+===== Einzeilige if-Anweisungen =====
+Es ist üblich, if ''<expr>'' in eine Zeile und ''<statement>'' eingerückt in die folgende Zeile zu schreiben, etwa so:
+<WRAP round box 60%>
+<code python>
+if <expr>:
+    <statement>
+</code>
+</WRAP>
+
+Es ist jedoch zulässig, eine komplette if-Anweisung in eine Zeile zu schreiben. Die folgende Anweisung ist funktional gleichwertig mit dem obigen Beispiel:
+<WRAP round box 60%>
+<code python>
+if <expr>: <statement>
+</code>
+</WRAP>
+
+Es kann sogar mehr als ein ''<statement>'' in der gleichen Zeile stehen, getrennt durch Semikolons:
+<WRAP round box 60%>
+<code python>
+if <expr>: <statement_1>; <statement_2>; ...; <statement_n>
+</code>
+</WRAP>
+
+Das Semikolon, das die ''<statements>'' trennt, hat eine höhere Priorität als der Doppelpunkt nach ''<expr>'' - im Computerjargon sagt man, das Semikolon bindet fester als der Doppelpunkt. 
+Die ''<statements>'' werden also als eine Folge von Anweisungen behandelt, und entweder werden alle ausgeführt, oder keine:
+
+<WRAP center round info 60%>
+''<expr>:'' Dies ist ein Platzhalter für einen "Ausdruck". Ein Ausdruck ist in der Programmierung eine Kombination von Variablen, Werten und Operatoren, die zu einem einzelnen Wert ausgewertet werden. Häufig zu ''True'' oder ''False''. Zum Beispiel könnte der Ausdruck x > 5 bedeuten, dass wir überprüfen, ob die Variable x größer als 5 ist.
+
+''<statement>:'' Dies ist ein Platzhalter für eine "Anweisung". Eine Anweisung ist eine einzelne Zeile Code, die eine bestimmte Aktion ausführt. Zum Beispiel könnte die Anweisung print("Hallo Welt") bedeuten, dass wir den Text "Hallo Welt" auf dem Bildschirm ausgeben wollen.
+</WRAP>
+
+
+<WRAP round box 60%>
+<code python>
+x = 2
+if x == 1: print('foo'); print('bar'); print('baz')
+elif x == 2: print('qux'); print('quux')
+else: print('corge'); print('grault')
+</code>
+<code>
+qux
+quux
+</code>
+
+<code python>
+x = 3
+if x == 1: print('foo'); print('bar'); print('baz')
+elif x == 2: print('qux'); print('quux')
+else: print('corge'); print('grault')
+</code>
+<code>
+corge
+grault
+</code>
+
+</WRAP>
+
+<WRAP round important 60%>
+Obwohl all dies funktioniert und der Interpreter es zulässt, wird im Allgemeinen davon abgeraten, da es zu einer schlechten Lesbarkeit führt, insbesondere bei komplexen if-Anweisungen. PEP 8 rät ausdrücklich davon ab.
+</WRAP>
+
+Wie üblich ist es eine Frage des Geschmacks. Die meisten Leute würden das folgende Beispiel optisch ansprechender und auf den ersten Blick leichter zu verstehen finden als das obige Beispiel:
+<WRAP round box 60%>
+<code python>
+x = 3
+if x == 1:
+     print('foo')
+     print('bar')
+     print('baz')
+elif x == 2:
+     print('qux')
+     print('quux')
+else:
+     print('corge')
+     print('grault')
+</code>
+<code>
+corge
+grault
+</code>
+</WRAP>
+
+Wenn eine if-Anweisung jedoch einfach genug ist, kann es sinnvoll sein, alles in eine Zeile zu packen. 
+So etwas würde wahrscheinlich niemanden zu sehr aufregen:
+<WRAP round box 60%>
+<code python>
+debugging = True  # Set to True to turn debugging on.
+
+    .
+    .
+    .
+
+if debugging: print('About to call function foo()')
+foo()
+</code>
+</WRAP>
+
+
+----
+{{tag>M319-LU07 M319-E1G M319-E1F}} 
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Kevin Maurizi, Marcel Suter

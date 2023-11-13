@@ -1,0 +1,47 @@
+====== LU02.A06 - Einkaufsliste ======
+
+<WRAP center round todo 60%>
+Entwickle eine Funktion, die in einer Einkaufsliste mit Produktdetails die Produktpreise anpasst. Die Aufgabe ist, die Preise der Produkte zu verändern, ohne die ursprüngliche Liste zu verändern. Die Preise werden in einem separaten Wörterbuch (Dictionary) gespeichert. Erstellen Sie ebenfalls eine Liste die die Gesamtkosten der Einkaufsliste mit den neuen und den alten Preisen berechnet und ausgibt.
+</WRAP>
+
+===== Anleitung in Schritten =====
+
+  - **Definieren der Einkaufsliste:** Definiere die ursprüngliche Einkaufsliste als Liste von Dictionaries, wobei jedes Dictionary ein Produkt enthält (z.B. {'Produkt': 'Apfel', 'Menge': 5, 'Preis': 2.3}).
+  - **Preisliste erstellen:** Erstelle ein separates Dictionary für die Preise der Produkte.
+  - **Funktion zur Preisanpassung:** Schreibe eine Funktion, die die Einkaufsliste und die Preisliste akzeptiert. Diese Funktion sollte eine neue, aktualisierte Liste erstellen, ohne die ursprünglichen Listen zu ändern.
+  - **Gesamtpreis berechnen:** Entwickle eine Funktion, die die Gesamtkosten der Einkaufsliste basierend auf den Preisen und den Mengen berechnet.
+  - **Testen Sie Ihre Funktionen:** Verwende den ''if %%__name__ == '__main__%%':'' Block, um verschiedene Produkte und Preise zu testen.
+
+===== Vorlage =====
+<code python>
+products = [
+    {'product': 'Apple', 'quantity': 5, 'price': 1.2},
+    {'product': 'Banana', 'quantity': 2, 'price': 0.8},
+    # Add more products as needed
+]
+
+new_prices = {
+    'Apple': 0.5,
+    'Banana': 0.3,
+    # Add more prices as needed
+}
+
+def update_prices(products, new_prices):
+    # Update the price in the new products dictionary
+    pass
+
+def calculate_total(products):
+    # Calculate the total cost based on products and prices
+    pass
+
+if __name__ == '__main__':
+    # Test your functions here
+    pass
+</code>
+===== Zusammenfassung =====
+
+Diese Aufgabe hilft, das Konzept der Unveränderlichkeit in Python zu verstehen, indem sie eine realistischere Situation nachahmt, in der Listen und Dictionaries zusammen verwendet werden. Die Verwendung von unveränderlichen Werten kann dazu beitragen, Fehler zu vermeiden und den Code klarer und verständlicher zu machen.
+
+----
+<nodisp>https://github.com/templates-python/m323-lu02-a06-immutable3</nodisp>
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/ch/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Kevin Maurizi 

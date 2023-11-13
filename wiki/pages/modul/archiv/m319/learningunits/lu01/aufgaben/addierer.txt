@@ -1,0 +1,41 @@
+~~NOTOC~~
+====== Aufgabe: Addierer======
+
+===== Auftrag =====
+Erstellen Sie ein Programm "Addierer.java".
+
+
+<WRAP center round important 60%>
+Denken Sie daran, dass wir pro Aufgabe ein neues Modul in IntelliJ machen!
+</WRAP>
+
+
+
+
+Erstellen Sie ein Programm, welches den Benutzer nach zwei Zahlenwerten fragt.
+Diese dann addiert und wieder ausgibt.
+
+
+===== Schritte=====
+  * Recherchieren Sie, wie sie Werte speichern können um diese dann miteinander zu verrechnen.
+  * Fragern Sie den User nach 2 Werten
+  * Speichern Sie diese Werte ab
+  * Addieren Sie die Werte
+  * Geben Sie das Resultat aus
+\\
+{{:modul:m319:learningunits:lu01:aufgaben:addierer.png?400|}}
+
+===== Abgabe =====
+Laden Sie die Datei mit dem Sourcecode (.java) hoch.
+
+
+===== Für Profis =====
+Ergänzen Sie ihr Programm so dass:
+  * Auch mehr wie zwei Zahlen addiert werden können.
+  * Das auch Kommazahlen addiert werden können.
+
+
+\\
+\\
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/ch/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Kevin Maurizi 

@@ -1,0 +1,56 @@
+====== LU04b - Antivirus ======
+//Siehe auch [[wpde>Antivirenprogramm]]//
+
+<WRAP center round info 60%>
+Ein Antivirenprogramm (auch Virenscanner oder Virenschutz-Programm) soll Schadsoftware wie Viren, Trojaner oder Würmer erkennen, blockieren und entfernen.
+</WRAP>
+
+===== Schadsoftware =====
+Die ersten Computerviren wurden in den 1980er Jahren über Disketten weitergegeben und beschränkten sich darauf, sich weiter zu verbreiten.
+Im Verlauf der letzten 40 Jahren haben sich eine Vielzahl unterschiedlicher Schadprogramme entwickelt.
+Diese wird hauptsächlich über das Internet verbreitet:
+  * Anhänge von Emails.
+  * Webseiten
+  * Bilder und Videos, z.B. in Discord-Gruppen
+
+===== Typen von Antivirus =====
+Die meisten Antivirus-Programme kombinieren verschiedene Strategien, um unsere Computer zu schützen.
+
+==== Echtzeitscanner ====
+Ein Echtzeitscanner prüft im Hintegrund Dateien, Programme und den Hauptspeicher.
+Diese Prüfung kann sowohl beim Lesen, als auch beim Schreiben einer Datei erfolgen.
+Dabei werden "nur" Daten geprüft, die aktuell verarbeitet werden.
+
+==== Manueller Scanner ====
+Dieser Scanner wird entweder einmalig manuell oder in regelmässigen Abständen zeitgesteuert gestartet.
+Bei einem manuellen Scan werden alle Dateien auf allen Datenträgern geprüft, was entsprechend einige Zeit dauern kann.
+
+==== Online-Virenscanner ====
+Hier handelt es sich um Antivirenprogramme die auf einem Server oder einer Webseite laufen.
+Ein Online-Virenscanner erlaubt es, im Verdachtsfall eine bestimmte Datei zu prüfen.
+
+==== Netzwerk-Scanner ====
+Eine weitere Gruppe von Antivirenprogramme überprüfen den Netzwerkverkehr.
+Zum Beispiel werden Emails zunächst auf Schadsoftware geprüft, bevor sie im Postfach des Empfängers landen.
+
+===== Antivirusprogramme =====
+Es gibt eine grosse Auswahl an Antivirusprogrammen.
+Diese unterscheiden sich in einigen Merkmalen:
+
+  * Welche Kosten entstehen mir? ((In der Regel "bezahlen" Sie für kostenlose Programme in Form von Werbung, die eingeblendet wird)). Einmalig Kosten? Abokosten?
+  * Wie zuverlässig werden Viren erkannt?
+  * Wie oft meldet das Programm einer harmlose Datei fälschlicherweise als Virus?
+  * Wie häufig werden die Virensignaturen aktualisiert? Erfolgt die Aktualisierung automatisch oder muss ich ein Update durchführen?
+  * Wie lange dauert es, bis die Software einen neu entdeckten Virus erkennt?
+  * Wie zuverlässig kann das Programm erkannte Viren entfernen?
+  * Wieviele Ressourcen (CPU, RAM) benötigt das Antivirusprogramm?
+
+=== Vergleichstests ===
+Im Internet finden Sie eine Reihe von Vergleichstests für Antivirenprogramme.
+Zum Beispiel: 
+[[https://www.chip.de/bestenlisten/Bestenliste-Antivirenprogramme-Windows--index/index/id/1451/|CHIP - Vergleichstest]]
+
+
+----
+{{tag>m231-AnG}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

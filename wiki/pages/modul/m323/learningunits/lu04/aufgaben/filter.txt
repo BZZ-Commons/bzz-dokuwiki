@@ -1,0 +1,34 @@
+====== LU04.A07 - Filtere gerade Zahlen ======
+
+<WRAP center round todo 60%>
+Verwende die ''filter''-Funktion, um alle geraden Zahlen aus einer Liste von 1 bis 50 zu filtern.
+</WRAP>
+
+===== Aufgabenstellung =====
+
+  * Erstelle eine Liste von Zahlen von 1 bis 50.
+  * Verwende die ''filter''-Funktion, um alle geraden Zahlen aus dieser Liste zu filtern.
+
+
+===== Vorlage =====
+<code python>
+def filter_even_numbers(numbers):
+    """
+    Filtert die geraden Zahlen aus der gegebenen Liste.
+    Args:
+    - numbers (list): Eine Liste von Zahlen.
+    Returns:
+    - even_numbers_list: Eine Liste der geraden Zahlen.
+    """
+    # Ihr Code hier
+    return even_numbers_list
+
+if __name__ == '__main__':
+    numbers = list(range(1, 51))
+    even_numbers = filter_even_numbers(numbers)
+    print(list(even_numbers))
+</code>
+
+----
+<nodisp>https://github.com/templates-python/m323-lu04-a07-filter</nodisp>
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/ch/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Kevin Maurizi 

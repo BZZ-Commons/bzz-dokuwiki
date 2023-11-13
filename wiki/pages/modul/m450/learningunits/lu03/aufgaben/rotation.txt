@@ -1,0 +1,38 @@
+====== LU03.A03 - Rotation-Chiffre ======
+<WRAP center round info 60%>
+Schreibe die Unit Tests für das Programm "m450_lu03_a03_rotation".
+</WRAP>
+
+===== Beschreibung =====
+Die [[https://www.cryptool.org/de/cto/rotation|Rotation-Chiffre]] ist eine Methode zur Verschlüsselung von Nachrichten.
+
+=== Begriffe ===
+  * **Klartext**: Dies ist der ursprüngliche Text, der verschlüsselt werden soll.
+  * **Chiffretext**: Der verschlüsselte Text
+  * **Blocklänge**: Die Länge eines Textblocks für die Verschlüsselung
+
+===== Auftrag =====
+Das Programm ist in mehrere Funktionen zerlegt.
+Du musst für jede Funktion die Unit Tests schreiben.
+Erstelle Testfunktionen für
+  * Gültige Werte
+  * Formal falsche Werte (je 1 Test pro Fehlersituation)
+  * Formal korrekte aber logisch ungültige Werte (je 1 Test pro Fehlersituation)
+
+===== Vorgehen =====
+
+  - Akzeptiere das GitHub Classroom Assignment im Moodlekurs.
+  - Klone das Repository in PyCharm.
+  - Codiere die Programmlogik in ''main.py''.
+  - Teste dein Programm mit den Testfällen in ''main_test.py''.
+  - Führe einen Commit und einen Push durch.
+
+
+=== Abgabe ===
+Die Abgabe erfolgt durch den Push ins GitHub Repository.
+In Moodle ist keine Abgabe vorgesehen oder möglich.
+
+----
+<nodisp>GitHub-Repo: https://github.com/templates-python/m450_lu03_a03_rotation</nodisp>
+{{tag>M450-LU03}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

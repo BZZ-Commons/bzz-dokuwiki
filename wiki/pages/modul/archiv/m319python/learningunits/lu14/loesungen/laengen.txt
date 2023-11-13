@@ -1,0 +1,61 @@
+====== LU14.L02: Längenumrechner ======
+<code python>
+def main():
+    units_dict = {
+        'Meter': 1,
+        'Zentimeter': 100,
+        'Meilen': 0.000621371,
+        'Seemeilen': 0.000539957
+    }
+    value = read_float('Länge > ')
+    from_unit = read_unit('Einheit von > ', units_dict)
+    to_unit = read_unit('Einheit nach > ', units_dict)
+
+    result = value * units_dict[to_unit] / units_dict[from_unit]
+    print(f'{value} {from_unit} = {result} {to_unit}')
+
+
+def read_float(prompt):
+    """
+    reads a floating point number
+    :param prompt: the prompt to be shown to the user
+    :return: the number entered by the user
+    """
+    while True:
+        try:
+            value = float(input(prompt))
+            return value
+        except ValueError:
+            print('Bitte geben Sie eine Zahl ein')
+
+
+def read_unit(prompt, units_dict):
+    """
+    reads a valid unit from the user
+    :param prompt: the prompt to be shown to the user
+    :param units_dict: a dictionary with the valid units as keys
+    :return: the unit entered by the user
+    """
+    show_units(units_dict)
+    while True:
+        input_unit = input(prompt)
+        if input_unit in units_dict:
+            return input_unit
+        else:
+            print('Bitte wählen Sie eine bekannte Einheit aus')
+
+
+def show_units(units_dict):
+    """
+    shows the available units
+    :param units_dict: a dictionary with the valid units as keys
+    :return: None
+    """
+    print('Verfügbare Einheiten: ', end='')
+    for unit in units_dict.keys():
+        print(unit, end=', ')
+    print()
+</code>
+
+{{tag>M319-C1G M319-C1F M319-C1E}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

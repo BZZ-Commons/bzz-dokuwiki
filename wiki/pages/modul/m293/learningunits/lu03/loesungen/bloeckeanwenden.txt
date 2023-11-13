@@ -1,0 +1,62 @@
+====== LU03.L01 - Portfolio Seite ======
+
+[[https://templates-html.github.io/M293_LU03_01_Portfolio/portfolio.html|Live Preview]]
+
+<code html4strict>
+  <body>
+    <h1>Mein Portfolio</h1>
+
+    <section>
+      <h2>Über mich</h2>
+      <img src='meinBild.jpg' alt='Ein Bild von mir' width='200' height='200'>
+      <p>Ich bin ein professioneller Entwickler, spezialisiert auf das <strong>Durchsuchen</strong> von Code anderer Entwickler nach <strong>Fehlern</strong> und <strong>Sicherheitslücken</strong>. Ich liebe es, meine Fähigkeiten zu nutzen, um Software sicherer und effizienter zu machen.</p>
+    </section>
+
+    <section>
+      <h2>Meine Hobbys</h2>
+      <ul>
+        <li>Programmieren</li>
+        <li>Musik hören</li>
+        <li>Wandern</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Lieblingsessen</h2>
+      <ol>
+        <li>Pizza</li>
+        <li>Sushi</li>
+        <li>Steak</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>Soziale Medien</h2>
+      <ul>
+        <li><a href='https://www.facebook.com/meinProfil' target='_blank'>Facebook</a></li>
+        <li><a href='https://www.twitter.com/meinProfil' target='_blank'>Twitter</a></li>
+        <li><a href='https://www.linkedin.com/meinProfil' target='_blank'>LinkedIn</a></li>
+      </ul>
+    </section>
+
+  </body>
+</code>
+
+
+Dieser Code enthält die folgenden neu hinzugefügten Elemente:
+
+  * <section>: Jeder Abschnitt des Inhalts ist in einem <section>-Tag enthalten, um den Code besser strukturieren und organisieren zu können.
+  * <h1>, <h2>: Überschriften verschiedener Ebenen zur Strukturierung des Inhalts.
+  * <img>: Um ein Bild hinzuzufügen. Achten Sie darauf, dass Sie "meinBild.jpg" durch den tatsächlichen Pfad zu Ihrem Bild ersetzen müssen.
+  * <p>: Ein Absatz, der die Beschreibung über Sie enthält.
+  * <strong>: Dieses Tag wird verwendet, um wichtige Wörter im Text hervorzuheben.
+  * <ul>, <li>: Diese Tags werden verwendet, um eine ungeordnete Liste (für die Hobbys und Social Media Links) zu erstellen.
+  * <ol>: Dieses Tag wird verwendet, um eine geordnete Liste (für die Lieblingsessen) zu erstellen.
+  * <a>: Dieses Tag wird verwendet, um Links zu Ihren Social-Media-Profilen hinzuzufügen. Die href-Attribute sollten durch die tatsächlichen URLs Ihrer Profile ersetzt werden. Das target='_blank'-Attribut sorgt dafür, dass der Link in einem
+
+---- 
+
+{{tag>m293-LU03}}
+[[https://github.com/templates-html/M293_LU03_01_Portfolio/tree/solution|Repository]]
+
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Kevin Maurizi, Marcel Suter

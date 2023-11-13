@@ -1,0 +1,19 @@
+====== Zusatzaufgabe ======
+
+Beim Testen ist Ihnen aufgefallen, dass Ihr Programm noch fehleranfällig ist. Versuchen Sie das Programm so umzuschreiben, dass der Benutzer nur eine realistische Anzahl Beine eintragen kann, so dass die Berechnung immer möglich ist.
+
+
+Vielleicht hilft ihnen dieses Code-Schnipsel weiter:
+<code java>
+
+int minumumFuerZahl = ?;
+int maximumFuerZahl = ?;
+
+int zahl = scanner.nextInt();
+
+while(zahl >= minumumFuerZahl || zahl <= maximumFuerZahl){
+  System.out.print("Zahl nicht möglich, bitte erneut eingeben >");
+  zahl = scanner.nextInt();
+}
+
+</code>

@@ -1,0 +1,35 @@
+===== LU03f - Scrum =====
+{{modul:m431:learningunits:lu03:scrum.png?200|}}
+
+Sequenzielle Vorgehensmodelle setzen voraus, dass ein Projekt von Anfang bis Ende planbar ist und die Projektergebnisse frühzeitig und weitgehend vollständig spezifiziert werden können. 
+Agile Vorgehensmodelle wie **Scrum** dagegen gehen davon aus, dass bei Beginn eines Projekts vieles noch unsicher ist und erst während des Projekts geklärt werden kann. 
+Sie eignen sich daher besonders gut für komplexe IT-Projekte.
+
+Eine Besonderheit des Scrum-Verfahrens besteht darin, dass sich die **Entwicklerteams selber organisieren** und kein Projektleiter vorgesehen ist. 
+Entsprechend hoch sind die Anforderungen an alle Projektbeteiligten.
+
+Bei Scrum wird der Projektverlauf in feste Zeitabschnitte, sogenannte «Sprints» unterteilt. 
+In jedem Sprint wird das Endprodukt inkrementell weiterentwickelt. 
+Ein Sprint kann erst abgeschlossen werden, wenn die für diesen Zeitabschnitt geplante Funktionalität fertig entwickelt und abgenommen worden ist. 
+Gleichzeitig gelten bei Scrum die in der Softwareentwicklung bewährten Schritte «Anforderungsspezifikation - Design - Implementierung - Test». Diese stellen aber keine eigenen Phasen dar, sondern finden jeweils innerhalb eines Sprints statt.
+
+Die spezifizierten Anforderungen werden im **"Product Backlog"** festgehalten. Dieser umfasst somit die komplette Funktionalität des erwarteten Endprodukts. Funktionen oder Teilfunktionen, die in einem bestimmten Sprint zu realisieren sind, werden in den **«Sprint Backlog»** übernommen. Folgende Grafik verdeutlicht dieses Arbeitsprinzip:
+
+{{modul:m431:learningunits:lu03:scrumprozess.jpg?600|}}
+
+//Abbildung 5: Arbeitsprinzip bei Scrum//
+
+Ein Sprint-Zyklus dauert typischerweise **30 Arbeitstage, **wobei täglich (im «Dailv Scrum») die Aktivitäten der nächsten **24 Stunden **geplant werden.
+
+Ein Projekt, das nach Serum abgewickelt wird, muss folgende **Rollen **besetzen:
+
+  * Der **Product Owner **trägt die Verantwortung für das Projektergebnis, definiert dessen Eigenschaften und füllt den Sprint-Backlog entsprechend seinen Prioritäten.
+  * Das **Scrum-Entwickerteam **realisiert das Projektergebnis unter Einhaltung der vereinbarten Qualitatsstandards.
+  * Der **Scrum Master **stellt sicher, dass die Regeln des Scrum-Verfahrens eingehaltenwerden und räumt allfällige Hindernisse aus dem Weg.
+
+Ohne Planung und Koordination geht es auch bei einem Scrum-Projekt nicht. An die Stelle von Projektsitzungen treten hier folgende **«Zeremonien»:**
+  * Beim **Sprint Planning **wird der nächste Sprint geplant, Der Planungsprozess findet in zwei Sitzungen statt, Im ersten Meeting werden die Anforderungen aus dem Product Backlog vorgestellt. Dabei stehen **«User Stories» **im Vordergrund, die die gewünschte Funktionalität aus Kundensicht beschreiben, Im zweiten Meeting bespricht das Team Aspekte der Umsetzung und zerlegt die Entwicklungsarbeiten in Einheiten, die nicht länger als einen Tag dauern sollten.
+  * Der **Daily Scrum **ist ein kurzes, tägliches Meeting des Projektteams, um Informationen auszutauschen, anstehende Arbeiten zu koordinieren und ggf. bestehende Probleme zu lösen. Innerhalb eines Sprints müssen bestimmte Tasks gelöst und abgeschlossen werden. Für das Projektteam bedeutet dies, dass man einander unterstützen muss und jedem hilft, der in Verzug gerät, bevor man den nächsten Task angeht.
+  * Am Ende eines Sprints findet das **Sprint Review **statt. Hier wird überprüft, ob die Ziele des Sprints erreicht wurden. Dabei ist es die Aufgabe des Product Owners, zusammen mit den Endbenutzern neu entwickelte Funktionen zu testen. Unfertige Funktionen wandern zurück in das Product Backlog und werden neu geplant,
+  * In der **Retrospektive **zwischen einzelnen Sprint werden Erfahrungen ausgetauscht und Verbesserungsmöglichkeiten identifiziert.
+

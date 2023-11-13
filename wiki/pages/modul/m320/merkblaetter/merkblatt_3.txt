@@ -1,0 +1,14 @@
+====== 3 Instanziierung ======
+Der Prozess der Objekterzeugung (Instanziierung) beginnt mit dem Start einer ausführbaren Python-Datei.\\
+(Klasse mit der main-Methode)\\
+{{:modul:m320:merkblaetter:lu02-merkblatt3-1.png?450|}}\\
+\\
+Der Ablauf der Instanziierung wird anhand der Nummern wiedergegeben.\\
+{{:modul:m320:merkblaetter:lu02-merkblatt3-2.png?600|}}\\
+\\
+Der Aufbau im Speicher wird schematisch dargestellt.\\
+{{:modul:m320:merkblaetter:lu02-merkblatt-pic3.png?400|}}\\
+\\
+Danach wird der Code weiter ausgeführt, im Beispiel hier mit dem Aufruf der Methode ''print''.
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) René Probst

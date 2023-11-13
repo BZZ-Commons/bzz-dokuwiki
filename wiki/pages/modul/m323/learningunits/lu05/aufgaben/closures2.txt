@@ -1,0 +1,34 @@
+====== LU05.A09 - Refactoring: Vermeiden globaler Variablen durch Closures ======
+
+<WRAP center round todo 60%>
+Refaktorieren Sie eine bestehende Python-Funktion, die eine globale Variable verwendet, um einen Zähler zu verwalten, und ersetzen Sie diese durch ein Closure.
+</WRAP>
+
+===== Aufgabenstellung =====
+
+Ihr Ziel ist es, eine bestehende Funktion zu refaktorieren, die derzeit eine globale Variable verwendet, um einen Zähler zu verwalten. Sie sollten die globale Variable durch ein Closure ersetzen, das den gleichen Zweck erfüllt.
+
+==== Code-Vorlage ====
+{{gh>https://github.com/templates-python/m323-lu05-a09-closures2/blob/main/main.py}}
+===== Vorgehen =====
+
+  - Akzeptiere das GitHub Classroom Assignment
+  - Klone dein persönliches Repository in die Entwicklungsumgebung
+  - Entfernen Sie die globale Variable und ersetzen Sie diese durch eine äußere Funktion, die eine innere Funktion zurückgibt.
+  - Die innere Funktion sollte in der Lage sein, den Zähler zu inkrementieren und den aktuellen Wert auszugeben.
+  - Testen Sie die refaktorierte Funktion, um sicherzustellen, dass sie wie erwartet funktioniert.
+
+===== Abgabe =====
+
+Die Abgabe der Lösung erfolgt als Push in das persönliche GitHub-Repository.
+
+----
+
+<details>
+<summary>//=> GitHub Repo für externe Besucher//</summary>
+GitHub Repository https://github.com/templates-python/m323-lu05-a09-closures2
+
+//Lernende am BZZ **müssen** den Link zum GitHub Classroom Assignment verwenden//
+</details>
+
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/ch/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Kevin Maurizi

@@ -1,0 +1,66 @@
+Durch das Klonen haben Sie den unten stehenden Code in Ihre IDE kopiert. 
+Arbeiten Sie sich nun durch die TODOs durch.
+
+<code java>
+
+import java.util.Scanner;
+
+/**
+ * Bootsliste um eine Liste von Booten zu verwalten
+ *
+ * @author Ibi dumm
+ * @since 2042.01.01
+ * @version 0.1
+ */
+public class Bootsliste {
+
+    static Scanner scanner;
+
+    public Bootsliste(){
+        scanner = new Scanner(System.in);
+    }
+
+    public static void main(String[] args) {
+        Bootsliste bootsliste = new Bootsliste();
+        bootsliste.run();
+    }
+
+    private void run() {
+
+        // TODO 1:  Erstellen Sie einen eigenen Datentyp "Boot" jedes Boot hat folgende Eigenschaften:
+        //          Marke, Farbe, Kaufpreis, Seriennummer und ist im Wasser oder nicht
+        //          Denken Sie daran, die Attribute als private zu markieren!
+
+        // TODO 2:  Erstellen Sie für das Boot zwei Konstruktoren
+        //          Boot(<Datentyp> marke, <Datentyp> seriennummer)
+        //          Boot(<Datentyp> marke, <Datentyp> farbe, <Datentyp> kaufpreis,
+        //                          <Datentyp> seriennummer, <Datentyp> imWasser)
+
+        // TODO 3:  Commiten und Pushen Sie diese Änderung auf Github
+
+        // TODO 4:  Erstellen Sie getter und setter für die Attribute
+        //          Überlegen Sie sich, ob es Sinn macht, für jedes Attribut einen Setter zu machen.
+
+        // TODO 5:  Commiten und Pushen Sie diese Änderung auf Github
+
+        // TODO 6:  Erstellen Sie die Methode printInfos() im Boot. Diese Methode soll alle Infos über das Boot ausgeben.
+
+        // TODO 7:  Commiten und Pushen Sie diese Änderung auf Github
+
+        // TODO 8:  Erstellen Sie 3 Boote und fügen Sie diese einer Bootsliste hinzu
+
+        // TODO 9:  Iterieren Sie (Schleife) über diese Liste und geben Sie die Infos über alle Boote aus.
+        //          Verwenden Sie dazu die Methode printInfos()
+
+        // TODO 10: Commiten und Pushen Sie diese Änderung auf Github
+
+        // TODO 11: Für die schnellen Programmierer: Erstellen Sie einen Userdialog um die Erstellung von Schiffen zu
+        //          ermöglichen.
+
+        // TODO 12: Commiten und Pushen Sie diese Änderung auf Github
+    }
+}
+
+</code>
+
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Kevin Maurizi

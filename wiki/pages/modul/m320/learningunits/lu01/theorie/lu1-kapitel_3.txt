@@ -1,0 +1,15 @@
+==== 3. Klasse und Objekt ====
+Im täglichen Sprachgebrauch setzen wir das konkrete Objekt - z.B. meine Logitech Maus M171 - und die Menge aller Computermäuse einander gleich.\\
+Für die Anwendung in der OOP müssen wir aber klar unterscheiden zwischen der Beschreibung eines Objektes und dem Objekt selber. Die Beschreibung bezeichnen wir als **Klasse**, während die zur Programmausführung im Speicher verfügbare **Instanz** das **Objekt** darstellt.\\
+Eine **Klasse** wird formal mittels einem Klassendiagramm beschrieben und in einer OO-Sprache wie Java, C++, Python usw. codiert.\\
+Wird zur Laufzeit des Programms ein Objekt erzeugt, wird im Speicher eine **Instanz** der Klasse angelegt, die dann genutzt werden kann. [//Zu Instanz und Objekt werden Sie in der Learning Unit 2 mehr erfahren.//]\\
+<WRAP info>Eine Klasse stellt den Bauplan für ein Objekt dar.</WRAP>
+----
+//Beispiel 1.2: Anleitung für den Zusammenbau einer Lego(r)-Figur// \\
+^ Bauplan                                                               ^ Produkt                                                              ^
+| beschreibt Klassen und Beziehungen                                    | ist das nutzbare Objekt                                              |
+| {{:modul:m320:learningunits:lu01:klassendiagramm_-_bauplan.png?200}}  | {{:modul:m320:learningunits:lu01:klassendiagramm_-_objekt.png?165}}  |
+| //Abb 1.5:// Bauplan                                                  | //Abb 1.6:// Objekt                                                  |
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) René Probst

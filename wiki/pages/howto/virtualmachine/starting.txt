@@ -1,0 +1,32 @@
+====== Virtual Machine startet nicht ======
+Wenn Ihre Virtual Machine nicht startet, müssen Sie auf die genaue Fehlermeldung achten.
+
+===== Intel VT/x =====
+Intel VT/x ist eine Technologie für die Virtualisierung von 64-Bit Betriebssystemen.
+Wenn beim Start einer VM eine Meldung bezüglich Intel VT/x erscheint gibt es zwei mögliche Gründe:
+
+=== Intel VT/x nicht verfügbar ===
+Ihr Computer gehört zu den wenigen Geräten, die Intel VT/x nicht unterstützen.
+In diesem Fall benötigen Sie einen anderen Computer oder müssen die benötigten Serverdienste selbständig unter Windows installieren.
+
+<WRAP warning>
+Man findet im Internet irgendwelche BIOS-Hacks, welche angeblich Intel VT/x auch auf ihrem Computer aktivieren.
+Diese Anleitungen führen in der Regel dazu, dass Ihr Computer gar nicht mehr läuft.
+</WRAP>
+
+=== Intel VT/x deactivated ===
+Häufiger ist es der Fall, dass Intel VT/x deaktiviert ist.
+In diesem Fall müssen Sie eine Einstellung im BIOS ändern.
+Das genaue Vorgehen unterscheidet sich je nach Computermodell.
+
+Suchen Sie im Internet mit der genauen Modellbezeichnung Ihres Computers + "Intel VT/x".
+Zum Beispiel: "HP Spectre x370 Intel VT/x".
+
+===== appears to be in use =====
+Der Virtual Machine Player glaubt, dass Ihre VM bereits läuft.
+Teilweise geschieht dies, wenn beim Herunterfahren (oder Abwürgen) der VM nicht alle temporäten Dateien gelöscht wurden.
+
+  - Gehen Sie zum Ordner, in dem die Virtual Machine gespeichert ist
+  - Löschen Sie alle Dateien und Ordner mit den Endungen ''.lck'' und ''.vmem''
+  - Starten Sie die VM erneut.
+

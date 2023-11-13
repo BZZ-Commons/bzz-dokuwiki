@@ -1,0 +1,77 @@
+====== Lösungsvorschlag: Briefanrede ======
+
+<file java Salutation.java>
+
+import java.util.Scanner;
+
+/**
+ * show the salutations depending on gender
+ * 
+ * @author Marcel Suter
+ * @since 2017-10-03
+ * @version 1.0
+ */
+public class Salutation {
+
+    static Scanner scanner;
+
+    /**
+     * constructor
+     */
+    public Salutation() {
+        scanner = new Scanner(System.in);
+    }
+
+    /**
+     * starts the execution
+     * 
+     * @param args
+     *            command line arguments
+     */
+    public static void main(String[] args) {
+        Salutation program = new Salutation();
+
+        System.out.println("Willkommen");
+        program.salute();
+        System.out.println("Uf Wiedergugge!");
+        scanner.close();
+    }
+
+    /**
+     * enter the gender and show the salutations
+     */
+    private void salute() {
+        char gender;
+
+        System.out.print("Geschlecht (W oder M / X = Ende) >");
+        gender = scanner.nextLine().charAt(0);
+        gender = Character.toUpperCase(gender);   // Umwandeln in Grossbuchstaben, nicht in Aufgabenstellung
+
+        while (gender != 'X') {
+            if (gender == 'W') {
+                System.out.println("Ausgabe Sehr geehrte Frau");
+                System.out.println("Chère madame");
+                System.out.println("Dear Mrs.");
+            } else {
+                System.out.println("Sehr geehrter Herr");
+                System.out.println("Cher monsieur");
+                System.out.println("Dear Mr.");
+
+                
+            }
+            System.out.print("Geschlecht (W oder M / X = Ende) >");
+            gender = scanner.nextLine().charAt(0);
+            gender = Character.toUpperCase(gender);   // Umwandeln in Grossbuchstaben, nicht in Aufgabenstellung
+        }
+    }
+}
+</file>
+
+<WRAP center round tip 60%>
+Mit dem Befehl ''gender = Character.toUpperCase(gender);'' wird die Eingabe des Benutzers in einen Grossbuchstaben umgewandelt.
+Dadurch kann der Benutzer 'm' oder 'M' eingeben.
+</WRAP>
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Marcel Suter

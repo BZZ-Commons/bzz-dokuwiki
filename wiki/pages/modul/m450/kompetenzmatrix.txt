@@ -1,0 +1,33 @@
+====== Kompetenzmatrix - Modul 450 ======
+
+Basis: Modulidentifikation Modul 450 Stand 19.10.2022, Version 1
+
+===== Kompetenz-Matrix =====
+
+^Kompetenzband        ^HZ     ^Grundlagen ^Fortgeschritten  ^Erweitert                                                                                                                                                                                                  ^
+|Testkonzept erstellen|2      |A1G: Kann die Komponenten eines Testumfelds identifizieren und beschreiben, einschliesslich der Test- und Entwicklungsumgebung, Hard- und Softwareanforderungen sowie Datenquellen und Testwerkzeugen.|A1F: Kann Unterschiede und Gemeinsamkeiten einer Test- und Produktivumgebung aufzeigen (DEV, TEST, INT/STAGE, PROD).                            |A1E: <html><br/></html>Kann die Anforderungen an ein Testumfeld definieren, inkl. Überwachung der Testaktivitäten und Fehlerbehebung.                                                                      |
+|                     |1      |A2G: Kann die Anforderungen einer Software verstehen und mögliche Schritte eines Testkonzeptes aufzählen.                                                                                             |A2F: Kann verschiedene Testarten in einem Konzept unterscheiden und erklären, welche für die Anforderungen des Projekts am besten geeignet sind.|A2E:  Kann ein Testkonzept zusammenstellen in dem die für das Projekt effektivsten Testarten gewählt werden.                                                                             |
+|Tests definieren     |3, 5, 6|B1G: Schlägt aufgrund der Strategie im Testkonzept geeignete Testmethoden und -werkzeuge vor.                                                                                                         |B1F: Formuliert die Testfälle, um jede Funktion oder jeden Aspekt der Software zu prüfen.                                                       |B1E: Definiert Testszenarien und legt damit fest, wie das System in einer bestimmten Reihenfolge oder Kombination von Funktionen und Prozessen reagieren sollte.                         |
+|Tests automatisieren |5, 6   |C1G: Zählt Kriterien für die Wahl der Testdaten und Mockup Objects auf und kann den Begriff Testabdeckung erklären.                                                                                   |C1F: Programmiert Testfälle, die sowohl positive, negative Fälle, Grenzwerte und Spezialfälle abdecken.                                         |C1E: Strukturiert die Testdaten, erstellt Mockup Objects, Hilfsmethoden und verwendet Features der Test-Frameworks.                                                                      |
+|                     |5, 7   |C2G: Erklärt den Unterschied zwischen Unit Testing und Integration Testing. Kann unterscheiden zwischen manuellen und automatisierten Tests.                                                          |C2F: Wendet Unit Testing und Integration Testing im Rahmen eines Test Driven Development TDD an (z.B. mit einem Testing-Framework).             |C2E: Kann die CI/CD-Pipeline so konfigurieren, dass die Unit und Integration Tests automatisiert durchgeführt werden und die Test-Resultate nutzen, um den Deployment-Prozess zu steuern.|
+|Review durchführen   |4      |D1G: Kann Clean Code Prinzipien erklären und diese anhand von Code-Beispielen aufzeigen (z.B. Single Responsibility Principle, DRY).                                                                                    |D1F: Nimmt in der Rolle eines Gutachters an einem Code Review teil und hält Mängel fest.                                                                          |D1E: Schlägt Verbesserungen und Optimierungen vor auf Basis der durchs Review aufgezeigten Mängel.                                                                                                         |
+
+===== Kompetenzstufen =====
+
+==== Grundlagen | Der Anfänger | Stufe 1 ====
+
+Diese Stufe ist als Einstieg ins Thema gedacht. Der Fokus liegt hier auf dem Verstehen von Begriffen und Zusammenhängen.
+
+//Als Richtungshinweis: Wer alle Kompetenzen in dieser Stufe erfüllt, hat die Noten 3.5.//
+
+==== Fortgeschritten | Der Kompetente | Stufe 2 ====
+
+Diese Stufe definiert den Pflichtstoff, den alle Lernenden am Ende des Moduls möglichst beherrschen sollen.
+
+//Als Richtungshinweis: Wer alle Kompetenzen in dieser Stufe erfüllt, hat die Noten 4.75//
+
+==== Erweitert | Der Gewandte | Stufe 3 ====
+
+Diese Lerninhalte für Lernende gedacht, die schneller vorankommen und einen zusätzlichen Lernanreiz erhalten sollen.
+
+//Als Richtungshinweis: Wer alle Kompetenzen in dieser Stufe erfüllt, hat die Noten 6//

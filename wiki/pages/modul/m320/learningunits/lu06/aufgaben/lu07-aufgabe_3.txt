@@ -1,0 +1,58 @@
+==== Aufgabe 3 - Erweitern von Fähigkeiten ====
+=== Ziel ===
+   * Sie können aufzeigen, wie Vererbung für die Erweiterung von Fähigkeiten eingesetzt wird.
+=== Auftrag ===
+Implementieren Sie die Klassen gemäss Klassendiagramm.\\
+Die Methode ''what_i_am()'' liefert einen Text zum Wesen des Objekts (a simply phone, an old handy, a modern smartphone). Die Gerätefunktionen (''calling'', ''handle_sms'', ''use_internet'') schreiben in den Stdout, was sie tun (anrufen, sms senden und empfangen, das Internet benutzen)\\ Verwenden Sie diese Begriff genau so, damit die Tests korrekt ablaufen.\\
+**Hinweise:** \\
+   * Schreiben Sie die Klassen jeweils in eine eigene Datei (''phone.py'', ''handy.py'', ''smartphone.py'')
+   * Sie können die Klassen mit den Testroutinen in den ''test_···.py'' Dateien testen. \\ \\
+{{modul:m320:learningunits:lu06:aufgaben:lu07-aufg3a_erweitern-10.png?200|}}\\
+\\
+
+Führen Sie nun ''main.py'' aus und püfen Sie den Output. Er muss dem unten gezeigten sinngemäss entsprechen.
+<code python>
+from phone import Phone
+from handy import Handy
+from smartphone import SmartPhone
+
+if __name__ == "__main__":
+    phone = Phone()
+    print(f'ich bin: {phone.what_i_am()} und kann')
+    phone.calling()
+    print('------------------')
+    #
+    handy = Handy()
+    print(f'ich bin: {handy.what_i_am()} und kann')
+    handy.calling()
+    handy.handle_sms()
+    print('------------------')
+    #
+    smart_phone = SmartPhone()
+    print(f'ich bin: {smart_phone.what_i_am()} und kann')
+    smart_phone.calling()
+    smart_phone.handle_sms()
+    smart_phone.use_internet()
+    print('------------------')
+</code>
+
+
+=== Abgabe ===
+Wenn Ihr Programm sinngemäss folgende Output generiert, haben Sie die Aufgabe korrekt gelöst.
+<code terminal>
+ich bin: a simply phone und kann
+anrufen
+------------------
+ich bin: an old handy und kann
+anrufen
+sms senden und empfangen
+------------------
+ich bin: a modern smartphone und kann
+anrufen
+sms senden und empfangen
+das Internet benutzen
+------------------
+</code>
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) René Probst

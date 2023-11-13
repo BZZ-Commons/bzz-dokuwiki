@@ -1,0 +1,37 @@
+====== LU05.A02: Kleinste und grösste Zahl finden ======
+<WRAP center round info 60%>
+Lösen Sie die Aufgabe mit [[https://think.cs.vt.edu/blockpy/blockpy/|BlockPy]] oder [[https://www.codingrooms.com/compiler/python-block|Codingrooms]]
+
+Laden Sie einen Screenshot ihres Blockly-Ablaufs hoch.
+</WRAP>
+===== Aufgabenstellung =====
+Erstellen Sie ein Programm mit Blockly, welches aus einer Liste von 15 Zahlen die kleinste und die grösste Zahl findet.
+
+===== Programmlogik =====
+  - Erstellen Sie eine Liste mit 15 beliebigen Ganzzahlen
+  - Definieren Sie eine Variable ''smallest'' mit der grösstmöglichen Zahl (2147483647) und eine Variable ''biggest'' mit der kleinstmöglichen Zahl (-2147483648)
+  - Iteration über alle Zahlen in der Liste
+    - Falls die aktuelle Zahl kleiner als ''smallest'' ist
+      - Speichern Sie die aktuelle Zahl in ''smallest''
+    - Falls die aktuelle Zahl grösser als ''biggest'' ist
+      - Speichern Sie die aktuelle Zahl in ''biggest''
+  - Geben Sie ''smallest'' und ''biggest'' aus
+
+===== Erweiterung =====
+  * Beim Start des Programmes gibt der Benutzer an, wie viele Zahlen in der Liste stehen sollen.
+  * Die Liste wird mit so vielen Zufallszahlen gefüllt, wie der Benutzer angegeben hat. Sie benötigen dazu eine separate Iteration.
+
+==== Programmlogik ====
+Ersetzen Sie den Schritt 1 aus der oben stehenden Programmlogik durch diese Befehle:
+
+<code>
+1a. Erstellen Sie eine leere Liste.
+1b. Der Benutzer gibt ein, wieviele Zahlen in der Liste stehen sollen.
+1c. Variable ''count'' = 0
+1d. Solange ''count'' kleiner als die Anzahl ist
+  1d.1. Erzeuge eine Zufallszahl
+  1d.2. Fügen Sie die Zahl am Ende der Liste ein.
+</code>
+----
+{{tag>319-C1G 319-C1F 319-C1E}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

@@ -1,0 +1,91 @@
+==== Lösung 2 - zweiseitige Beziehung ====
+<code python>
+class Reservation:
+   '''
+   Ein einfaches Reservations-Objekt, das einen Reservationsnummer, einen Event sowie
+   die Referenz zum Kunden aufweist.
+   '''
+
+   def __init__(self, number, name):
+       '''
+       Erzeugt ein Reservations-Objekt mit einer Reservationsnummer und
+       der Bezeichnung des Anlasses.
+       :param number: Resertionsnummer
+       :param name:   Name des Anlasses
+       '''
+       self.__event  = name
+       self.__number = number
+
+
+   @property
+   def event(self):
+       '''
+       Liefert den Namen des Anlasses
+       :return: Name des Anlasses
+       '''
+       return self.__event
+
+   @property
+   def number(self):
+       '''
+        Liefert die Reservationsnummer
+       :return: Reservationsnummer
+       '''
+       return self.__number
+
+   @property
+   def customer(self):
+       '''
+       Liefert die Referenz auf das Kunden-Objekt, das diese Reservation getätigt hat.
+       :return: Kundenreferenz
+       '''
+       return self.__the_customer
+
+   @customer.setter
+   def customer(self, customer):
+       '''
+       Setzt die Referenz zu einem Kunden-Objekt
+       :param customer: Kundenreferenz
+       '''
+       self.__the_customer = customer                   # Die reservation erhält die Referenz zu customer geliefert.
+
+
+   def to_string(self):
+       '''
+       Liefert einen String mit der Beschreibung der Attribute.
+       :return: Objektbeschreibung
+       '''
+       return "Reservation " + self.number + " (" + self.event + ")" + " für Kunde " + self.customer.name    # Die reservation kann die Referenz auf customer nutzen.
+
+
+
+
+class Customer:
+
+    def __init__(self, name, reservation):
+        self.__name          = name
+        self.__reservation   = reservation           # Der customer erhält die Referenz im Konstruktor geliefert und weist diese zu....
+        reservation.customer = self                  # ...und meldet dann die eigene Referenz der reservation.
+
+    @property
+    def name(self):
+        return self.__name
+
+    @property
+    def reservation(self):
+        return self.__reservation
+
+    def to_string(self):
+        return self.name + " hat eine Reservation für den Anlass '" + self.__reservation.event + "'"   # Der customer kann die Referenz auf reservation nutzen.
+
+
+if __name__ == "__main__":
+    reservation = Reservation("456-332", "Queen das Musical")
+    customer    = Customer ("Julian", reservation)                # Dem customer wird die Referenz zur Reservation mitgegeben. 
+    print("\n")
+    print(customer.to_string())
+    print(reservation.to_string())
+</code>
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) René Probst

@@ -1,0 +1,90 @@
+====== LU10b - Proprietäre Lizenzen ======
+
+===== Proprietäre Lizenzen =====
+
+Dies ist das traditionelle Lizenzmodell, bei dem der Softwarehersteller das Urheberrecht an der Software besitzt und dem Nutzer eine Lizenz zur Nutzung gewährt. Die genauen Bedingungen können von Hersteller zu Hersteller variieren, aber in der Regel ist die Nutzung der Software auf bestimmte Computer oder Benutzer beschränkt. Der Quellcode ist normalerweise nicht zugänglich.
+
+<WRAP center round info 60%>
+
+Bei den meisten der heutigen Software-Lizenzierungsmodelle handelt es sich um proprietäre Lizenzen. Mit proprietären Lizenzen kaufen die Kunden das Recht, die Software über eine Lizenz (egal welchen Typs) zu nutzen, während der Softwareanbieter Eigentümer der Software bleibt. Wenn ein Kunde eine Software mit einem proprietären Lizenzmodell kauft, muss das Unternehmen oder die Einzelperson den Geschäftsbedingungen zustimmen, die beinhalten, dass die Software Eigentum des Anbieters bleibt. Das ist z. B. bei Microsoft Windows der Fall. [[https://cpl.thalesgroup.com/de/software-monetization/software-license-models|Quelle]]
+
+</WRAP>
+
+Im Bereich der proprietären Lizenzen gibt es diverse Formen. Nachstehend sehen Sie eine Auflistung der gebräuchlichsten Formen
+
+==== Einzelplatzlizenz ====
+
+Bei einer Einzelplatzlizenz erwirbt der Nutzer das Recht, die Software auf einem einzigen Computer zu installieren und zu nutzen. Die Lizenz ist in der Regel an einen bestimmten Benutzer oder eine bestimmte Maschine gebunden und kann nicht auf andere Geräte übertragen werden.
+
+==== Mehrplatzlizenz ====
+
+Eine Mehrplatzlizenz ermöglicht die Installation und Nutzung der Software auf mehreren Computern innerhalb eines bestimmten Netzwerks oder Unternehmens. Die genaue Anzahl der erlaubten Installationen kann je nach Lizenzvereinbarung variieren.
+
+==== OEM-Lizenz ====
+
+Eine OEM-Lizenz (Original Equipment Manufacturer) wird in der Regel an Hardwarehersteller verkauft, die die Software mit ihren Geräten vorinstallieren möchten. Die Lizenz ist oft an die spezifische Hardware gebunden und darf nicht auf anderen Computern installiert oder weiterverkauft werden.
+
+==== Site-Lizenz ====
+
+Eine Site-Lizenz erlaubt die Installation und Nutzung der Software auf beliebig vielen Computern an einem bestimmten Standort oder in einer bestimmten Einrichtung, wie z.B. einem Unternehmenoder einer Behörde. Diese Art von Lizenz ist oft kostengünstiger als der Erwerb mehrerer Einzelplatzlizenzen.
+
+==== Enterprise-Lizenz ====
+
+Eine Enterprise-Lizenz richtet sich an grosse Unternehmen oder Organisationen und erlaubt die Installation und Nutzung der Software auf einer unbegrenzten Anzahl von Computern oder Benutzern innerhalb der Organisation.
+
+==== Named-User-Lizenz ====
+
+Bei einer Named-User-Lizenz wird die Nutzung der Software auf einen bestimmten Benutzer beschränkt. Jeder Benutzer, der die Software nutzen möchte, benötigt eine eigene Lizenz, unabhängig davon, auf wie vielen Computern die Software installiert ist.
+
+==== Concurrent-User-Lizenz ====
+
+Bei einer Concurrent-User-Lizenz wird die Anzahl der gleichzeitigen Benutzer festgelegt, die die Software nutzen dürfen. Es können beispielsweise 10 Concurrent-User-Lizenzen erworben werden, was bedeutet, dass maximal 10 Benutzer gleichzeitig auf die Software zugreifen können, unabhängig davon, auf wie vielen Computern die Software installiert ist.
+
+==== Named-Instance-Lizenz ====
+
+Bei einer Named-Instance-Lizenz wird die Nutzung der Software auf bestimmte Instanzen oder Server beschränkt. Jede benannte Instanz oder jeder benannte Server, auf dem die Software ausgeführt wird, benötigt eine eigene Lizenz.
+
+==== Named-Device-Lizenz ====
+
+Bei einer Named-Device-Lizenz wird die Nutzung der Software auf bestimmte Geräte oder Computer beschränkt. Jedes benannte Gerät, auf dem die Software installiert ist, benötigt eine eigene Lizenz.
+
+==== Upgrade-Lizenz ====
+
+Eine Upgrade-Lizenz ermöglicht es einem Nutzer, von einer älteren Version der Software auf eine neuere Version zu wechseln. Der Nutzer erwirbt das Recht, das Upgrade durchzuführen, oft zu einem reduzierten Preis im Vergleich zum vollen Kaufpreis der neuen Version.
+
+==== Evaluation-Lizenz ====
+
+Eine Evaluation-Lizenz ermöglicht es dem Nutzer, die Software für einen begrenzten Zeitraum zu testen und zu bewerten, bevor eine Kaufentscheidung getroffen wird. Die genauen Bedingungen können variieren, aber in der Regel ist die Nutzungsdauer begrenzt und es können Funktionseinschränkungen vorhanden sein.
+
+==== Royalty-Lizenz ====
+
+Eine Royalty-Lizenz beinhaltet die Zahlung von Gebühren an den Softwarehersteller basierend auf bestimmten Kriterien, wie beispielsweise der Anzahl der verkauften Einheiten der mit der Software entwickelten Produkte oder dem Umsatz, der durch die Nutzung der Software erzielt wird.
+
+==== Academic-Lizenz ====
+
+Eine Academic-Lizenz ist für den Einsatz in Bildungseinrichtungen wie Schulen, Universitäten oder Forschungseinrichtungen vorgesehen. Oftmals sind diese Lizenzen zu vergünstigten Konditionen erhältlich und haben spezielle Bedingungen für den akademischen Gebrauch.
+
+==== Runtime-Lizenz ====
+
+Diese Lizenzart ist von den oben geannten abzugrenzen. Eine Runtime-Lizenz bezieht sich auf die Lizenzierung der Laufzeitumgebung oder Laufzeitbibliothek einer Software. Die Laufzeitumgebung umfasst die erforderlichen Komponenten, die benötigt werden, damit eine Anwendung auf einem bestimmten System ausgeführt werden kann. Die Lizenz erlaubt es den Nutzern, die Laufzeitumgebung in ihren eigenen Anwendungen oder Softwareprodukten zu nutzen und regelt die Bedingungen und Einschränkungen für die Einbindung, Nutzung und Verteilung der Laufzeitkomponenten.
+
+Die Lizenzbedingungen können je nach Softwarehersteller und Art der Laufzeitumgebung variieren. Oftmals umfassen Runtime-Lizenzen das Recht zur Einbindung der Laufzeitkomponenten in eigene Anwendungen, zur Verteilung der Anwendungen an Endnutzer und zur Bereitstellung von Updates oder Patches für die Laufzeitbibliotheken.
+
+Eine typische Situation, in der Runtime-Lizenzen relevant sind, ist die Verwendung einer Programmiersprache oder einer Entwicklungsplattform, die eine spezifische Laufzeitumgebung erfordert. Beispielsweise benötigen Anwendungen, die in Java entwickelt wurden, eine Java-Laufzeitumgebung (JRE) oder eine Java Virtual Machine (JVM), um ausgeführt zu werden. Die Lizenzierung dieser Laufzeitumgebung erfolgt separat von der eigentlichen Entwicklungsumgebung oder Sprache.
+
+
+\\
+\\
+
+<WRAP center round info 60%>
+
+Es gibt eine Vielzahl von Möglichkeiten, wie proprietäre Lizenzen gestaltet werden können. Die genaue Form und Bezeichnung der Lizenz hängt oft von der Art der Software, den Anforderungen des Softwareherstellers und den Bedürfnissen der Nutzer ab. Es ist ratsam, die spezifischen Lizenzvereinbarungen der Software zu konsultieren, um die genauen Rechte und Bedingungen der Nutzung zu verstehen.
+
+</WRAP>
+
+----
+
+{{tag>m231-AnG}}
+
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter, Andre Probst
+

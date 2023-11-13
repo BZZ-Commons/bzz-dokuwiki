@@ -1,0 +1,28 @@
+====== LU02.A03 - Durchschnitt von Zahlen ======
+
+<WRAP center round todo 60%>
+Entwerfen und implementieren Sie eine pure function in Python, die eine Liste von Zahlen als Eingabe akzeptiert und den Durchschnitt dieser Zahlen zurückgibt.
+</WRAP>
+
+
+=== Anleitung in Schritten ===
+  - Definieren Sie die Funktion mit einem passenden Namen, z. B. ''average''.
+  - Akzeptieren Sie eine Liste von Zahlen als Parameter.
+  - Berechnen Sie die Summe der Zahlen.
+  - Teilen Sie die Summe durch die Anzahl der Elemente in der Liste.
+  - Geben Sie das Ergebnis zurück.
+
+<code python>
+# your code for function average goes here
+
+if __name__ == "__main__":
+    list = [10, 20, 30, 40, 50]
+    # and here
+</code>
+
+=== Zusammenfassung ===
+In dieser Aufgabe haben Sie eine pure function geschrieben, die den Durchschnitt einer Liste von Zahlen berechnet. Pure functions haben den Vorteil, dass sie leichter zu verstehen und zu testen sind.
+
+----
+<nodisp>https://github.com/templates-python/m323-lu02-a03-pure3</nodisp>
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/ch/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Kevin Maurizi 

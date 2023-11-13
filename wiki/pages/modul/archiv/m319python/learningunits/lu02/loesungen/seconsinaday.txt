@@ -1,0 +1,10 @@
+====== Lösung LU02.A03 ======
+<code python>
+def main():
+    # write your code below this line
+    number = int(input('How many days would you like to convert to seconds?\n'))
+    print(number*24*3600)
+
+if __name__ == '__main__':
+    main()
+</code>

@@ -1,0 +1,67 @@
+====== LU07d - Fieldset, Legend ======
+//siehe auch [[https://wiki.selfhtml.org/wiki/HTML/Tutorials/Formulare/Gliederung|selfhtml - Gliederung]]//
+
+<WRAP center round info 60%>
+Auf dieser Seite befassen wir uns mit ''fieldset'', und ''legend'' welche uns bei der Gliederung von Formularen unterstützen.
+</WRAP>
+
+
+===== fieldset zur Gruppierung =====
+Das ''<fieldset>''-Element wird verwendet, um Elemente innerhalb von Formularen zu gruppieren. Mithilfe des ''<legend>''-Elements kann eine Überschrift für das ''<fieldset>''-Element definiert werden.
+
+Das ''<fieldset>''-Element kann unter HTML5 folgende Attribute haben:
+
+  * ''disabled'': Mit dem Attributswert disabled kann das ''<fieldset>'' ausgegraut und nicht auswählbar angezeigt werden.
+  * ''form'': Mit dem Attributswert, der der ID eines Formulars entspricht, kann das ''<fieldset>'' diesem Formular zugeordnet werden.
+  * ''name'': Durch den Namen kann das ''<fieldset>'' in einem verarbeitenden Skript ausgewertet werden.
+
+{{:modul:m293:learningunits:lu07:fieldset.png?400 |}}
+
+<code html4strict>
+<form id='gewinnen'>
+  <fieldset>
+    <label for='vorname'>Vorname:
+      <input name='vorname' id='vorname' placeholder='Max'>
+    </label>
+    <label for='zuname'>Zuname:
+      <input name='zuname' id='zuname' placeholder='Mustermann'></fieldset>
+  <fieldset>
+    <label for='männl'>
+      <input type='radio' name='geschlecht' id='männl' value='männl'>männlich</label>
+    <label for='weibl'>
+      <input type='radio' name='geschlecht' id='weibl' value='weibl'>weiblich</label>
+  </fieldset>
+</form>
+</code>
+
+===== legend zur Beschriftung der Gruppen =====
+Das ''<legend>''-Element in einem HTML-Formular wird verwendet, um eine Überschrift oder einen Titel für das dazugehörige ''<fieldset>''-Element zu definieren. Es dient dazu, den Zweck oder die Gruppierung der Formularelemente innerhalb des ''<fieldset>''-Elements zu beschreiben.
+
+Die Verwendung des ''<legend>''-Elements bietet mehrere Vorteile:
+
+  * **Klarheit und Struktur:** Durch das Hinzufügen einer aussagekräftigen Überschrift mit <legend> wird die Gruppierung von Formularelementen in einem <fieldset> deutlicher und benutzerfreundlicher. Es hilft den Benutzern, den Inhalt des Formulars besser zu verstehen.
+  * **Barrierefreiheit:** Für Benutzer mit assistiven Technologien wie Screenreadern liefert das <legend>-Element wichtige Kontextinformationen. Die Überschrift ermöglicht eine bessere Navigation und Verständnis des Formulars für Benutzer mit Sehbehinderungen.
+
+{{:modul:m293:learningunits:lu07:legend.png?400 |}}
+
+<code html4strict>
+<form id='gewinnen'>
+  <fieldset>
+    <legend>Name</legend>
+    <label for='vorname'>Vorname:
+      <input name='vorname' id='vorname' placeholder='Max'>
+    </label>
+    <label for='zuname'>Zuname:
+      <input name='zuname' id='zuname' placeholder='Mustermann'></fieldset>
+  <fieldset>
+    <legend>Geschlecht</legend>
+    <label for='männl'>
+      <input type='radio' name='geschlecht' id='männl' value='männl'>männlich</label>
+    <label for='weibl'>
+      <input type='radio' name='geschlecht' id='weibl' value='weibl'>weiblich</label>
+  </fieldset>
+</form>
+</code>
+----
+{{tag>m293-LU07 m293-F2F m293-F2E}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Kevin Maurizi, Marcel Suter

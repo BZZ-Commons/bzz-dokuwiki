@@ -1,0 +1,11 @@
+====== Editing of the user profile ======
+As a Customer
+I want to edit my user profile
+so that I can update my data when my personal date has changed.
+===== Acceptance Criteria =====
+  * All editable personal data have an editing field.
+  * Saving process of data change gives affirmative feedback to the user within 2 seconds.
+==== Priority ====
+ 5
+==== Work ====
+ 4

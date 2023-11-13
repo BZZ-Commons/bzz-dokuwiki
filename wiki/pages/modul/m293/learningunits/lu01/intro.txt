@@ -1,0 +1,32 @@
+====== LU01a - Einführung ======
+<WRAP center round info 60%>
+HTML ist die Sprache des World Wide Web.
+Jede Webseite (auch diese) wird mit der Auszeichnungssprache HTML erzeugt.
+Neben HTML nutzen wir CSS um die Darstellung zu steuern.
+</WRAP>
+
+===== HTML, CSS =====
+Wenn Sie eine Webseite erstellen, hat jede Technologie eine bestimmte Aufgabe:
+  * HTML: Struktur und Inhalt der Webseite
+  * CSS: Formatierung und Gestaltung
+
+Im Modul 293 werden wir uns zunächst um den Inhalt und die Struktur unserer Webseiten kümmern.
+Daher werden Sie zunächst die Auszeichnissprache HTML kennen lernen.
+
+Später lernen Sie CSS kennen, um die optische Gestaltung der Webseiten zu verbessern.
+
+===== Werkzeuge =====
+Beim Erstellen der Webseiten arbeiten wir mit einer Entwicklungsumgebung (IDE), welche uns die Arbeit vereinfacht.
+Die Beschreibungen in diesen Unterlagen beziehe ich mich auf [[https://www.jetbrains.com/webstorm/|Webstorm]].
+
+
+
+===== Sonstige Ressourcen =====
+
+  * [[https://www.w3schools.com/html/default.asp|w3schools]]
+  * [[https://learn-html.org/|Learn-HTML]]
+  * [[https://wiki.selfhtml.org/|selfhtml]]
+
+----
+{{tag>m293-LU01 m293-E1G}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Marcel Suter

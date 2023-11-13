@@ -1,0 +1,15 @@
+====== LU10.A01 - Webstorm ======
+<WRAP center round info 60%>
+Veröffentlichen Sie eine Webseite mit dem automatischen Upload in Webstorm.
+</WRAP>
+
+===== Vorgehen =====
+  - Öffnen Sie das Projekt aus der Aufgabe [[modul:m293:learningunits:lu09:aufgaben:filezilla|]] in Webstorm.
+  - Passen Sie das Deployment an, dass die Änderungen automatisch auf Ihren Test Live Server hochgeladen werden.
+  - Öffnen Sie die Webseite unter https://testUSERNAME.students.bzz.ch/LU09A03 im Webbrowser.
+  - Führen Sie einige Änderungen am HTML-Code durch.
+    * Prüfen Sie nach jeder Änderung das automatische Deployment in Webstorm und durch aktualisieren der Webseite im Browser.
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Kevin Maurizi, Marcel Suter

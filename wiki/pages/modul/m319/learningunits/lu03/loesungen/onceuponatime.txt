@@ -1,0 +1,16 @@
+====== LU03.L02 - Once upon a Time ======
+<code python>
+def main():
+  # Write your program here
+  print('Once upon a time')
+  print('there was')
+  print('a program')
+  
+  # oder
+  print('Once upon a time\nthere was\na program')
+
+
+ 
+if __name__ == '__main__':
+    main()
+</code>

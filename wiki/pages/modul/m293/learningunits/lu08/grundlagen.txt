@@ -1,0 +1,68 @@
+====== LU08a - Grundlagen der Seitennavigation ======
+
+Beinahe jede statische Website besteht entweder aus mehreren einzelnen Inhaltsseiten oder aus einer grossen/langen Seite mit den Inhalten nacheinander. Beide Seitenkonzepte haben eines gemeinsam, eine Seitennavigation ist erforderlich, dass der Nutzer sich auf der Website zurechtfinden kann. In der [[modul:m293:learningunits:lu02:main|LU02]] haben Sie das ''<nav>'' Element kennegelernt und in der [[modul:m293:learningunits:lu03:htmlblocks|LU03]] das ''<a>'' Element in der LU08 werden wie diese Elemente nun kombinieren und Seitennavigationen aufbauen.
+
+===== Das <a>-Element vertieft =====
+
+==== Grundstruktur des ''a''-Elements ====
+Die grundlegende Syntax eines "a"-Tags sieht folgendermaßen aus:
+
+<code html4strict>
+<a href="URL">Linktext</a>
+</code>
+
+Hierbei steht ''href'' für "Hypertext Reference" und die URL repräsentiert das Ziel des Links. Der Linktext ist der sichtbare Text, den der Benutzer anklicken kann.
+
+==== Wichtige Attribute des ''<a>''-Tags ====
+  * ''href'': Das wichtigste Attribut des ''a''-Tags. Es bestimmt das Ziel des Links. Dies kann eine vollständige URL (z.B. https://www.example.com), eine relative URL (z.B. index.html), ein Pfad zu einer anderen Ressource (z.B. images/pic.jpg) oder ein Sprunganker zu einem anderen Teil der gleichen Seite (z.B. #section1) sein.
+  * ''target'': Bestimmt, wo der Link geöffnet wird. Das Attribut hat mehrere mögliche Werte, die wichtigsten sind ''_blank'' (öffnet den Link in einem neuen Fenster oder Tab) und ''_self'' (öffnet den Link im selben Fenster oder Tab, dies ist die Standardeinstellung).
+  * ''rel'': Definiert die Beziehung zwischen der aktuellen Seite und der verlinkten Seite. Dieses Attribut hat viele mögliche Werte, zwei der häufigsten sind ''nofollow'' (teilt Suchmaschinen mit, dass sie den Link nicht für ihre Rankings berücksichtigen sollen) und ''noopener'' (verhindert, dass die neue Seite auf die ursprüngliche Seite zurückgreifen kann, was aus Sicherheitsgründen wichtig ist, wenn target="_blank" verwendet wird).
+  * ''download'': Wenn dieses Attribut vorhanden ist, wird die verlinkte Ressource heruntergeladen, sobald der Benutzer auf den Link klickt. Dies ist besonders nützlich bei Dateien wie PDFs oder Bildern, die der Benutzer speichern könnte.
+  * ''title'': Stellt zusätzliche Informationen über den Link bereit, die angezeigt werden, wenn der Benutzer mit der Maus über den Link fährt.
+
+Hier ist ein Beispiel, wie alle diese Attribute in einem ''a''-Tag verwendet werden könnten:
+
+<code html4strict>
+<a href="https://www.example.com" target="_blank" rel="noopener nofollow" download title="Beispiel-Link">Beispiel-Link</a>
+</code>
+In diesem Beispiel würde der Link zu https://www.example.com in einem neuen Tab öffnen, ohne Referrer-Informationen (durch ''noopener'') und würde von Suchmaschinen nicht zur Ranking-Berechnung herangezogen werden (durch ''nofollow''). Zudem würde die verlinkte Ressource beim Klick auf den Link heruntergeladen werden und beim Überfahren des Links mit der Maus würde "Beispiel-Link" angezeigt werden.
+
+===== Das <nav>-Element vertieft =====
+Das ''nav''-Element in HTML5 ist ein semantisches Element, das einen Abschnitt einer Webseite kennzeichnet, der Navigationslinks enthält. Diese Links dienen in der Regel dazu, den Benutzer zu anderen Teilen der Webseite oder zu anderen Webseiten zu führen.
+
+==== Grundstruktur des ''nav''-Elements ====
+Die grundlegende Syntax eines ''nav''-Elements sieht folgendermaßen aus:
+
+<code html4strict>
+<nav>
+  <a href="URL1">Linktext1</a>
+  <a href="URL2">Linktext2</a>
+  ...
+</nav>
+</code>
+In diesem Beispiel enthält das ''nav''-Element zwei Hyperlinks, die durch ''a''-Tags repräsentiert werden. Jeder dieser Links führt zu einer anderen URL und hat einen eigenen Linktext.
+
+==== Anwendung des ''nav''-Elements====
+Das ''nav''-Element sollte für Hauptnavigationseinheiten verwendet werden, wie zum Beispiel die Hauptmenüleiste oder die Fußzeilennavigation. Es sollte nicht für jeden einzelnen Link auf einer Webseite verwendet werden.
+
+Zu beachten ist, dass das ''nav''-Element selbst keine speziellen Attribute besitzt. Stattdessen ist es in erster Linie ein semantisches Element, das dazu dient, den Inhalt der Webseite besser zu strukturieren und zugänglicher zu machen. Es kann jedoch zusammen mit anderen HTML-Elementen und -Attributen verwendet werden, um komplexe Navigationssysteme zu erstellen.
+
+Hier ist ein etwas komplexeres Beispiel:
+
+<code html4strict>
+<nav>
+  <ul>
+    <li><a href="#section1">Sektion 1</a></li>
+    <li><a href="#section2">Sektion 2</a></li>
+    <li><a href="otherpage.html">Andere Seite</a></li>
+  </ul>
+</nav>
+</code>
+In diesem Beispiel wird das ''nav''-Element zusammen mit einer ungeordneten Liste (ul) und Listenelementen (li) verwendet, um eine geordnete und strukturierte Navigation zu erstellen. Zwei der Links führen zu verschiedenen Sektionen auf derselben Seite (indiziert durch das #-Zeichen), während ein dritter Link zu einer anderen Webseite führt.
+
+Zusammengefasst hilft das ''nav''-Element dabei, die Struktur einer Webseite zu verbessern, sie zugänglicher zu machen und die Wartung des Codes zu erleichtern.
+ 
+
+----
+{{tag>m293-LU08 m293-E1E}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Kevin Maurizi, Marcel Suter

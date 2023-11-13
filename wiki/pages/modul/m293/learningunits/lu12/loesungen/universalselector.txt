@@ -1,0 +1,70 @@
+====== LU12.L03 - Universal-Selektor anwenden ======
+[[https://templates-html.github.io/M293_LU12_02_universalselector/|Live Preview]]
+
+<file html4strict index.html>
+<!doctype html>
+<html lang='de'>
+<head>
+  <title>Universalselektor</title>
+  <meta charset='UTF-8'>
+  <link rel='stylesheet' type='text/css' href='css/style.css'>
+</head>
+<body>
+<header>Kopfzeile</header>
+<nav><a href='#'>Nav1</a> | <a href='#'>Nav2</a> |<a href='#'>Nav3</a>
+</nav>
+<main>
+  <h1>Universalselektor</h1>
+  <p>Ein einfacher Absatztext.</p>
+  <p>Ein zweiter Absatztext</p>
+</main>
+<footer>
+  <p>Fusszeile 1</p>
+  <p>Fusszeile 2</p>
+  <p>Fusszeile 3</p>
+</footer>
+</body>
+</html>
+</file>
+
+<file css style.css>
+* {
+    margin: 5px;
+    padding: 3px;
+    border: 1px dotted black;
+    text-align: center;
+    font-family: 'Futura', sans-serif;
+}
+
+header, footer {
+    background-color: cornflowerblue;
+}
+
+main * {
+    background-color: lawngreen;
+}
+
+nav {
+    background-color: gold;
+}
+
+nav a {
+    background-color: orangered;
+}
+</file>
+
+===== Änderungen =====
+
+  * Ich habe ''font-family: 'Futura', sans-serif;'' zur universellen Selektion hinzugefügt, um alle Texte in der Schriftfamilie Futura anzuzeigen.
+  * Ich habe ''header, footer { background-color: cornflowerblue; }'' hinzugefügt, um die Hintergrundfarbe von header und footer auf cornflowerblue zu setzen.
+  * Ich habe ''main * { background-color: lawngreen; }'' hinzugefügt, um die Hintergrundfarbe aller Elemente in <main> auf lawngreen zu setzen.
+  * ''nav { background-color: gold; }'' setzt die Hintergrundfarbe des gesamten <nav> Elements auf gold.
+  * ''nav a { background-color: orangered; }'' setzt die Hintergrundfarbe aller Links innerhalb von <nav> auf orangered.
+
+----
+
+<nodisp>[[https://github.com/templates-html/M293_LU12_02_universalselector|Repository]]</nodisp>
+{{tag>m293-LU12}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Daniel Garavaldi, Kevin Maurizi
+
+

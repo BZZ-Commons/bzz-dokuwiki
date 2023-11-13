@@ -1,0 +1,74 @@
+====== LU13.A01 - Dateiverschlüsselung ======
+
+<WRAP center round warning 60%>
+WICHTIG: Stellen Sie sicher, dass sie nur mit eigenen Dateien arbeiten, die keine sensiblen Informationen enthalten, um die Privatsphäre zu wahren und mögliche Datenverluste zu vermeiden.
+</WRAP>
+
+
+==== Formales =====
+
+Arbeitsform: Partnerarbeit
+
+Abgabe: Dokumentation als PDF (jeder)
+
+==== Auftrag ====
+
+Thema: Evaluation und Test eines Tools für Dateiverschlüsselung
+
+Beschreibung: Sie evaluieren, installieren und testen ein Tool zur Dateiverschlüsselung. Ziel ist es, die Funktionalität des Tools zu verstehen, seine Benutzerfreundlichkeit zu bewerten und zu überprüfen, ob es den Anforderungen an die Dateiverschlüsselung entspricht. Sie dokumentieren alle Schritte nachvollziehbar.
+
+==== Ablauf ====
+
+  * Recherche
+Sie suchen sich ein ein Tool für die Dateiverschlüsselung aus. Sie und Ihr Partner dürfen nicht das gleiche Tool einsetzen!
+
+Sie sammeln Informationen über seine Funktionen und die unterstützten Verschlüsselungsalgorithmen.
+
+** Es dürfen nicht die Tools verwendet werden, welche Sie bereits im Modul 114 eingesetzt haben (GPG4USB, Kleopatra) **
+
+
+
+  * Installation
+Sie installieren das ausgewählte Tool auf ihrem Computer entsprechend den Anweisungen des Herstellers.
+
+
+
+  * Verschlüsselung
+Erstellen Sie einen neuen Ordner und fügen Sie in diesen 3 bis 5 Dateien ein. 
+
+ACHTUNG: Es dürfen nur Testdaten sein, nichts produktives!
+
+Sie führen nun eine Verschlüsselung des Ordners durch und dokumentieren den Prozess.
+
+
+
+  * Entschlüsselung eigene Datei
+Sie versuchen nun, den verschlüsselten Ordner mit dem Tool zu entschlüsseln. Stellen Sie sicher, dass die Dateien korrekt wiederhergestellt worden sind.
+
+Sie dokumentieren den Entschlüsselungsprozess und überprüfen die Genauigkeit der wiederhergestellten Dateien.
+
+
+
+  * Entschlüsselung Datei von Partner
+Tauschen Sie nun den verschlüsselten Ordner mit Ihrem Partner aus. 
+
+Versuchen Sie, die Daten von Ihrem Partner zu öffnen und dokumentieren Sie, was geschieht.
+
+
+
+  * Auswertung
+Tauschen Sie sich mit Ihrem Partner aus. Welches Tool macht den besseren Eindruck und ist leichter zu bedienen?
+
+
+
+Viel Erfolg bei der Durchführung des Auftrags!
+
+
+===== Abgabe =====
+
+Geben Sie die Doku als PDF im Moodle ab
+
+----
+
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Andre Probst, Marcel Suter
+

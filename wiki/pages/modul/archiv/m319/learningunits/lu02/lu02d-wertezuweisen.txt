@@ -1,0 +1,103 @@
+====== LU02d - Werte zuweisen ======
+
+===== Wert in einer Variablen speichern =====
+Variablen dienen dazu, einen bestimmten Wert zu speichern.
+Erhält eine Variable im Verlauf der Verarbeitung einen neuen Wert, spricht man von Wertzuweisung.
+Eine Wertzuweisung ist die einfachste Operation mit Variablen.
+
+<code>
+Zielvariable = Wert
+</code>
+
+==== Wertzuweisung mit ... ====
+=== ... einer Konstanten ===
+<code java>
+short anzahl;
+anzahl = 5;
+
+String vorname;
+vorname = "Hans";
+</code>
+
+=== ... einer andere Variable ===
+<code java>
+long foo;
+long bar;
+foo = bar;
+
+char eingabe;
+char text;
+text = eingabe;
+</code>
+
+=== ... einer Berechnung ===
+<code java>
+float summe;
+int anzahl = 1;
+float preis = 5;
+summe = anzahl * preis;
+
+
+</code>
+
+=== ... einem zusammengesetzten Text ===
+<code java>
+String name;
+String vorname;
+String nachname;
+name = vorname + " " + nachname;
+
+int zahler;
+String ausgabe;
+ausgabe = "Nr. " + zaehler;
+</code>
+
+
+===== Initialisierung =====
+==== Einleitung ====
+Die **Initialisierung** ist eine besondere Form der Wertzuweisung, welche zusammen mit der Deklaration einer Variable erfolgt.
+Dabei legen wir den Wert einer Variable direkt beim Start des Programmes bzw. Programmteils fest. 
+Andernfalls haben Variable (je nach Programmiersprache und Umgebung) einen Standardwert oder einen zufälligen Inhalt.
+
+Um eine Variable zu initialisieren wird bei der Deklaration nebst Datentyp und Name der Variable der **Initalwert** angegeben.
+Das Initialisieren bei der Deklaration wird aber nicht von jeder Programmiersprache unterstützt. 
+Bei einigen Sprachen muss die Initialisierung nach der Deklaration separat vorgenommen werden.
+
+Hier einige Beispiele aus verschiedenen Programmiersprachen:
+
+<code>
+int zaehler = 0;                     // C, Java
+dcl zaehler bin fixed(15) init (0);  // PL/I
+01 zaehler  PIC 9(5)      VALUE 0.   // Cobol
+</code>
+
+<WRAP center round important 60%>
+In vielen Programmiersprachen hat eine Variable beim Programmstart einen zufälligen Wert.
+Beim Initialisieren legen wir fest, welchen Wert die Variable beim Programmstart haben soll. Die Verwendung einer 
+nicht initialisierten Variable kann zu Programmfehlern führen.
+</WRAP>
+
+
+<code java>
+int zaehler = 0;
+</code>
+Sie vereinbaren eine Variable vom Typ ''int'' mit dem Namen ''zaehler''.
+Diese Variable hat schon beim Start des Programmes den Wert 0.
+
+Wird eine Variable nicht initialisiert, so variiert ihr Startwert je nach Programmiersprache.
+
+===== Variablen initialisieren oder nicht? =====
+Grundsätzlich können Sie alle Variablen bei der Deklaration initialisieren.
+Damit sind Sie sicher, dass jede Variable einen von Ihnen bestimmten Wert hat.
+
+Erfahrene Programmierer wissen, welche Variablen einen Initialwert brauchen und welche nicht.
+Daher sieht man in vielen Beispielprogrammen, dass der Programmierer auf eine Initialisierung verzichtet hat.
+
+<WRAP center round tip 60%>
+Wenn Sie jede Variable initialisieren, machen Sie sicher nichts falsch.
+</WRAP>
+
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Marcel Suter

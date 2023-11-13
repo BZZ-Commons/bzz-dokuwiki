@@ -1,0 +1,92 @@
+====== LU09.A01 - Deployment vorbereiten ======
+
+<WRAP center round todo 60%>
+Als Vorbereitung für die weiteren Aufgaben, führen Sie einige Schritte durch.
+</WRAP>
+
+
+===== FileZilla =====
+
+==== Installation ====
+
+  - Laden Sie den [[https://filezilla-project.org/download.php?type=client|FileZilla-Client]] herunter.
+  - Installieren Sie FileZilla auf Ihrem Laptop. \\ Stellen Sie sicher, dass keine zusätzlichen Softwarepakete mit installiert werden.
+  - Starten Sie FileZilla
+
+==== Server einrichten ====
+<WRAP center round todo 60%>
+Richten Sie die Verbindungen zu Ihren Subdomains in FileZilla ein.
+</WRAP>
+
+| 1. Öffnen Sie im Menu "File" den "Servermanager" | {{:modul:m293:learningunits:lu09:aufgaben:filezilla01.png?400|}} |
+| 2. Klicken Sie auf [Neuer Server] | ::: |
+| 3. Editieren Sie den Namen des Servers | {{:modul:m293:learningunits:lu09:aufgaben:filezilla02.png?400|}} |
+| 4. Tragen Sie Server, Port, Benutzername und Passwort ein. Den Benutzernamen und das Passwort haben Sie via Email erhalten. | ::: |
+| 5. Klicken Sie auf [Verbinden] | ::: |
+| 6. Evtl. erhalten Sie eine Warnung "Unbekanntes Zertifikat". Diese Warnung können Sie mit [OK] bestätigen. |  {{:modul:m293:learningunits:lu09:aufgaben:filezilla04.png?400|}}  |
+
+==== Roboter - Nein, danke ====
+<WRAP center round todo 60%>
+Fügen Sie einen ''robots.txt''-Datei zu Ihren Subdomains hinzu.
+</WRAP>
+
+Mit einer robots.txt-Datei können Sie steuern, auf welche Dateien Crawler (z.B. für Suchmaschinen) auf ihrer Website zugreifen können.
+<file text robots.txt>
+User-agent: * Disallow: /
+</file>
+
+Dieses Beispiel verbietet allen Crawlern den Zugriff auf alle Dateien und Ordner in unserem Webspace.
+
+Mehr dazu können Sie unter [[https://developers.google.com/search/docs/crawling-indexing/robots/create-robots-txt?hl=de]] nachlesen.
+
+<WRAP center round todo 60%>
+Laden Sie die oben verlinkte Datei "robots.txt" auf Ihren Rechner herunter. \\ \\
+Laden Sie dann diese Datei in den Wurzelordner ''/'' Ihrer Subdomain hoch.
+</WRAP>
+
+==== Unterordner erstellen ====
+Für jeden Webauftritt bzw. Aufgabe im Modul erstellen wir einen eigenen Unterordner.
+Dadurch haben wir Ordnung und behalten die Übersicht.
+
+<WRAP center round todo 60%>
+Erstellen Sie die beiden Ordner "LU09A02" und "LU09A03".
+</WRAP>
+
+==== Live Test ====
+Zusätzlich zu Ihrem öffentlichen Webspace haben Sie auch eine Subdomain als Live Test System erhalten.
+Auch diese Subdomain wollen wir in FileZilla einrichten.
+
+<WRAP center round todo 60%>
+Führen Sie die Schritte "Server einrichten", "Roboter - Nein, danke" und "Unterordner erstellen" nocheinmal für Ihre Test-Subdomain durch.
+Der einzige Unterschied ist der Servername im Servermanager von FileZilla, dieser ist "test**USERNAME**.students.bzz.ch".
+</WRAP>
+
+===== Webspace schützen =====
+Bevor wir unsere Dateien hochladen, setzen wir einen Passwortschutz.
+Dadurch können wir unsere Seiten ansehen, aber keine Suchmaschinen oder externe Personen erhalten Zugang zu unserer Seite.
+
+| 1. Melden Sie sich unter [[https://students.bzz.ch]] an. \\ Die Zugangsdaten haben sie via Email erhalten. |  {{:modul:m293:learningunits:lu09:aufgaben:froxlor01.png?400|}}  |
+| 2. Gehen Sie zu "Extras" => "Verzeichnisschutz". | ::: |
+| 3. Klicken Sie auf [+ Verzeichnisschutz anlegen] | ::: |
+| 4. Geben Sie als Pfad ''/LU09A02'' ein. Den Benutzernamen und das Passwort können Sie beliebig setzen. \\ **Hinweis:** Verwenden Sie **nicht** Ihre Zugangsdaten zum Webspace als Passwortschutz eines Ordners. | {{:modul:m293:learningunits:lu09:aufgaben:froxlor02.png?400|}} |
+| Als "Grund der Authentifizierung (AuthName)" können Sie etwas beliebiges eingeben. | ::: |
+| 5. Speichern Sie Ihre Änderungen. | ::: |
+| 6. Wiederholen Sie die Schritte 3-5 für den Ordner ''/LU09A03''. ||
+
+===== WebStorm verbinden =====
+<WRAP center round todo 60%>
+Richten Sie die Verbindungen zu Ihren beiden Subdomains in Webstorm ein.
+</WRAP>
+
+  - Öffnen Sie in Webstorm das Menu "Tools" => "Deployment".
+  - Fügen Sie **+** eine FTPS-Konfiguration hinzu und geben dieser einen sprechenden Namen
+  - Geben Sie Host, Username und Password an. Den Benutzernamen und das Passwort haben Sie via Email erhalten.
+  - Prüfen Sie die Verbindung mit [Test Connection].
+
+{{:modul:m293:learningunits:lu09:aufgaben:webstorm01.png?400|}}
+
+Wiederholen Sie diese Schritte für Ihre Test-Subdomain.
+Einzig beim Host müssen Sie "test**USERNAME**.students.bzz.ch" eintragen, die restlichen Einstellungen bleiben gleich.
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Kevin Maurizi, Marcel Suter

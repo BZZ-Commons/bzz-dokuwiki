@@ -1,0 +1,27 @@
+==== Aufgabe 3 - Komposition implementieren ====
+
+=== Ziel ===
+  * Sie können eine Komposition korrekt implementieren.
+
+==== Hinweise ====
+
+  * Die lauffähige Lösung ist der Lehrperson zu präsentieren.
+
+==== Aufträge ====
+
+  - Erstellen Sie die Klassen gemäss Klassendiagramm aber noch ohne Codierung des “Innenlebens“ der Methoden.
+  - Ergänzen Sie die ''get''- und ''set''-Methoden der Klassen mit dem entsprechenden Code (falls möglich Properties verwenden).
+  - Implementieren Sie die ''print''-Methode, so dass die Ausgabe derjenigen in Abb. 2 entspricht.
+  - Implementieren Sie nun die ''main''-Methode gemäss dem gezeigten Sequenzdiagramm.
+    * Löschen Sie das ''Flower''-Objekt, im Diagramm mit “x” markiert.
+    * Rufen Sie dann später das ''Flower''-Objekt nochmals auf. Die Auswirkung studieren Sie bitte nach der Ausführung des Programms (nächste Teilaufgabe).
+  - Führen Sie nun die ''main''-Methode aus. Welche Feststellung können Sie machen?
+
+{{modul:m320:learningunits:lu98:aufgaben:abb3.1.png?nolink&400|Abb. 1: Klassendiagramm}}\\
+Abb. 1: Klassendiagramm
+
+{{modul:m320:learningunits:lu98:aufgaben:abb3.2.png?nolink&400|Abb. 2: Ausgabe}}\\
+Abb. 2: Ausgabe
+
+{{modul:m320:learningunits:lu98:aufgaben:abb3.3.png?nolink&400|Abb. 3: Sequenzdiagramm}}\\
+Abb. 3: Sequenzdiagramm

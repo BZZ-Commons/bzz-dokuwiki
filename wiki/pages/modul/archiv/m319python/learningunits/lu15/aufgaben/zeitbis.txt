@@ -1,0 +1,16 @@
+====== LU15.A01 - Zeit bis ======
+
+===== Auftrag =====
+
+Erstellen Sie ein Programm, dass den Nutzer nach einem Datum fragt. 
+Das Programm antwortet dem Benutzer dann mit der genauen Anzahl an Tagen, Minuten und Sekunden bis zu diesem Datum.
+
+==== Bedingungen ====
+  * Die Eingabe muss sowohl nur für ein Datum (ohne Zeit), wie auch für ein Datum mit Uhrzeit möglich sein.
+  * Das Programm muss für die Vergangenheit und die Zukunft funktionieren.
+
+==== Vorgehen ====
+  * Fragen Sie den Benutzer ob ''Datum'' oder ''Datum und Zeit''
+  * Nehmen Sie die Eingaben entgegen und wandeln Sie sie in ein ''datetime''-Objekt um.
+  * Berechnen Sie das ''timedelta'' zu jetzt. 
+  * Geben Sie das Resultat aus.

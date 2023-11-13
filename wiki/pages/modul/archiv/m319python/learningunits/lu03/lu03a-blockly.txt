@@ -1,0 +1,33 @@
+====== LU03a - Was ist Blockly ======
+
+=== Quellen ===
+[[https://developers.google.com/blockly]] 
+
+[[https://www.ionos.de/digitalguide/websites/web-entwicklung/blockly-grundlagen-erklaert/]]
+
+===== Einführung =====
+Wenn Sie ein Programm schreiben, müssen Sie sich um mehrere Aspekte gleichzeitig kümmern:
+  * Was ist die genaue Aufgabenstellung?
+  * Wie muss die Logik des Programms aufgebaut sein?
+  * Wie ist die Syntax der jeweiligen Programmiersprache?
+
+Besonders für Einsteiger ist es von Vorteil, wenn Sie sich nicht um die Logik und die Programmiersprache gleichzeitig kümmern müssen.
+Für den Einstieg in die Programmierung mit Python verwenden wir daher Blockly. 
+
+[[https://developers.google.com/blockly|Blockly]] ist eine graphische Oberfläche, mit der wir die Logik eines Programms mittels Blöcken darstellen.
+Durch die graphischen Blöcke können wir uns auf die korrekte Logik konzentrieren, ohne dass wir uns mit der Syntax einer Programmiersprache beschäftigen müssen.
+
+Im Hintergrund erzeugt Blockly den Sourcecode für die einzelnen Blöcke.
+Das resultierende Programm können wir ausführen und überprüfen, ob die Programmlogik das korrekte Resultat erzeugt.
+
+===== Wo finde ich Blockly =====
+Blockly wird im Webbrowser ausgeführt. 
+Daher gibt es eine Reihe von Webseiten, welche Blockly anbieten.
+Wir konzentrieren uns auf Webseiten, welche Python Sourcecode erzeugen:
+
+  * [[https://think.cs.vt.edu/blockpy/blockpy/load|BlockPy]]
+  * [[https://www.codingrooms.com/compiler/python-block|Codingrooms]]
+
+----
+{{tag>M319-D1G}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter (epub.ghwalin.ch)  

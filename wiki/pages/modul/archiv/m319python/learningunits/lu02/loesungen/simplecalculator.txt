@@ -1,0 +1,15 @@
+====== Lösung LU02.A08 ======
+<code python>
+def main():
+    # write your code below this line
+    first = int(input('Give the first number:\n'))
+    second = int(input('Give the second number:\n'))
+    print(f'{first} + {second} = {first+second}') # using fstring
+    print(f'{first} - {second} = {first-second}') # using fstring
+    print(f'{first} * {second} = {first*second}') # using fstring
+    print(f'{first} / {second} = {first/second}') # using fstring
+
+
+if __name__ == '__main__':
+    main()
+</code>

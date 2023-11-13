@@ -1,0 +1,19 @@
+====== LU01.L02 - Variablen (Blockly) ======
+
+{{:modul:m319:learningunits:lu01:loesungen:variablen.png?400|}}
+
+==== Python ====
+<code python>
+count_chicken = 3
+print(count_chicken)
+givenname = 'Hanna'
+print(givenname)
+kilo_bacon = 5.5
+print(kilo_bacon)
+car_brand = 'Audi'
+print(car_brand)
+</code>
+
+----
+{{tag>M319-LU01}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter, Kevin Maurizi

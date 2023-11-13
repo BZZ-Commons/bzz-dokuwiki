@@ -1,0 +1,113 @@
+====== LU12b - Klassen definieren ======
+<WRAP center round info 60%>
+Eine Klasse ist ein Bauplan, der den Aufbau von Objekten definiert.
+</WRAP>
+===== 1 Klasse - 1 Datei =====
+Es bietet sich an, für jede Klasse eine eigene Python-Datei zu erstellen.
+Für die Klasse ''Member'' sollte unsere Datei ''member.py'' heissen.
+Unsere Datei ''member.py'' sieht so aus:
+
+<file python member.py>
+from dataclasses import dataclass
+
+
+@dataclass
+class Member:
+    """
+    a club member
+    """
+    firstname: str
+    lastname: str
+    address: str
+    place: str
+    zip_code: str
+    entry_year: int
+    birth_year: int
+    honorary_member: bool
+
+if __name__ == '__main__':
+    test_person = Person()
+    test_person.firstname = 'Hans'
+    print(test_person)
+</file>
+
+<WRAP center round info 60%>
+Diese Definition einer Klasse ist wie ein Bauplan für Clubmitglieder.
+Der Bauplan definiert, aus welchen Bestandteilen ein Clubmitglied besteht.
+
+Schauen wir uns den Code Stück für Stück an:
+</WRAP>
+
+===== dataclass =====
+<code python>
+from dataclasses import dataclass
+
+
+@dataclass
+class Member:
+    """
+    a club member
+    """
+    
+    ...
+</code>
+<WRAP center round info 60%>
+**dataclass** ist ein Pythonmodul für die Definition von Klassen, die hauptsächlich Daten verwalten sollen.
+</WRAP>
+Der **Decorator** ''@dataclass'' kennzeichnet unsere Klasse als //Datenklasse//.
+Diese Annotation muss direkt vor dem ''class''-Befehl stehen.
+
+Um eine Klasse zu definieren, verwenden wir den Befehl ''class Member''.
+Beachten Sie die [[https://it.bzz.ch/wikiV2/howto/codingstandards/01-bezeichner#klassen_und_module|Codingstandards]]: Im Gegensatz zu Variablen, werden Klassennamen mit einem Grossbuchstaben geschrieben.
+
+Ein kurzer Kommentarblock zwischen dreifachen Anführungszeichen (''"'') erklärt den Sinn und Zweck dieser Klasse.
+
+===== Attribute =====
+<code python>
+...
+
+class Member:
+    ...
+    
+    firstname: str
+    lastname: str
+    address: str
+    place: str
+    zip_code: str
+    entry_year: int
+    birth_year: int
+    honorary_member: bool
+    
+    ...
+</code>
+
+<WRAP center round info 60%>
+Attribute sind Variablen die im Kontext einer Klasse definiert werden.
+Diese Attribute sind in allen Funktionen innerhalb der Klasse verfügbar. 
+</WRAP>
+
+Nach dem ''class''-Befehl definieren wir die Attribute und deren Datentyp.
+
+
+===== __main__ ? =====
+<code python>
+...
+if __name__ == '__main__':
+    test_person = Person()
+    test_person.firstname = 'Hans'
+    print(test_person)
+</code>
+
+<WRAP center round info 60%>
+Eine Datenklasse ist nicht dafür gemacht, direkt ausgeführt zu werden.
+Zu Testzwecken können wir ein paar Objekte erstellen und ausgeben.
+</WRAP>
+
+Klassen sind keine eigenständigen Pythonskripts, die selbständig ausführbar sind.
+Wir können aber zu Testzwecken eine Klasse direkt aufrufen.
+In diesem Codeblock erstellen wir ein paar Objekte, setzen die Attribute und geben die Objekte aus.
+
+
+----
+{{tag>m319-C1F m319-C1E m319-G1G m319-G1E}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Marcel Suter

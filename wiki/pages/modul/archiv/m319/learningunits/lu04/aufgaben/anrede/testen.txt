@@ -1,0 +1,23 @@
+===== Testen =====
+=== Einleitung===
+Beim Testen versuchen wir Fehler im Programm zu finden.
+Finden wir einen Fehler, so halten wir diesen fest und testen weiter.
+Das Korrigieren der Fehler erfolgt erst, wenn wir alle Tests durchgeführt haben.
+
+=== Auftrag ===
+Testen Sie Ihr Programm und prüfen Sie, ob das Programm korrekt reagiert.
+Halten Sie allfällige Fehler fest.
+
+== Testfälle ==
+  - Starten Sie das Programm.
+    - Geben Sie 'W' ein.
+    - Geben Sie 'M' ein.
+    - Geben Sie 'X' ein.
+  - Starten Sie das Programm.
+    - Geben Sie 'X' ein.
+  - Starten Sie das Programm.
+    - Geben Sie 'B' ein.
+    - Geben Sie 'X' ein.
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Marcel Suter

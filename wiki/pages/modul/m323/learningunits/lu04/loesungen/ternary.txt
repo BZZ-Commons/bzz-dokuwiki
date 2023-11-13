@@ -1,0 +1,24 @@
+====== LU04.L13 - Berechne den absoluten Wert einer Zahl ======
+<code python>
+def absolute_value(num):
+    """
+    Berechnet den absoluten Wert einer gegebenen Zahl unter Verwendung des Ternären Operators.
+
+    Args:
+    - num (float): Die Zahl, deren absoluter Wert berechnet werden soll.
+
+    Returns:
+    - float: Der absolute Wert der gegebenen Zahl.
+    """
+    return num if num >= 0 else -num
+
+
+# Zum Testen
+if __name__ == '__main__':
+    print(absolute_value(-5.5))  # Erwartete Ausgabe: 5.5
+    print(absolute_value(0))  # Erwartete Ausgabe: 0
+    print(absolute_value(3.14))  # Erwartete Ausgabe: 3.14
+</code>
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/ch/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Kevin Maurizi 

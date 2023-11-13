@@ -1,0 +1,82 @@
+====== Nächste Schritte ======
+
+Wow, das ist schon eine rechte Leistung, wenn Sie bis hier durchgehalten und Ihr Portfolio-Projekt mit diesem Tutorial erstellt haben!
+
+Hier zeige ich Ihnen Möglichkeiten auf, wie Sie Ihre Fähigkeiten als Webprogrammierer weiter entwickeln können.
+
+===== Mehr HTML & CSS =====
+
+<html><a href="/wikiV2/modul/m293/tutorials/more-html-css/" class="btn btn-warning"></html><html><i class="fa fa-hand-o-right"></html><html></i></html> Mehr HTML & CSS Tutorial<html></a></html>
+
+Die Serie Mehr HTML & CSS ist eine Sammlung von Anleitungen zu verschiedenen Themen rund um HTML & CSS.
+
+Die Anleitungen bauen direkt auf den Kenntnissen aus diesem Tutorial auf. Es gibt dabei keine bestimmte Reihenfolge zwischen den einzelnen Teilen. Schauen Sie sich einfach die Themen an, welche Sie interessieren.
+
+----
+
+<html>
+  <nav>
+    <div class="article-paging">
+      <ul class="pagination">
+        <li>
+          <a href="/wikiV2/modul/m293/tutorials/html-css/" data-toggle="tooltip" title="" data-original-title="HTML &amp; CSS Tutorial">
+          Intro
+          </a>
+        </li>
+        
+        <li>
+          <a href="/wikiV2/modul/m293/tutorials/html-css/part1/" data-toggle="tooltip" title="" data-original-title="Teil 1: Unsere erste Webseite">
+            1
+          </a>
+        </li>
+        
+        <li>
+          <a href="/wikiV2/modul/m293/tutorials/html-css/part2/" data-toggle="tooltip" title="" data-original-title="Teil 2: Webseite veröffentlichen">
+            2
+          </a>
+        </li>
+        
+        <li>
+          <a href="/wikiV2/modul/m293/tutorials/html-css/part3/" data-toggle="tooltip" title="" data-original-title="Teil 3: Einführung in CSS">
+            3
+          </a>
+        </li>
+        
+        <li>
+          <a href="/wikiV2/modul/m293/tutorials/html-css/part4/" data-toggle="tooltip" title="" data-original-title="Teil 4: Entwicklertools im Browser">
+            4
+          </a>
+        </li>
+        
+        <li>
+          <a href="/wikiV2/modul/m293/tutorials/html-css/part5/" data-toggle="tooltip" title="" data-original-title="Teil 5: Blog und weitere Seiten">
+            5
+          </a>
+        </li>
+        
+        <li>
+          <a href="/wikiV2/modul/m293/tutorials/html-css/part6/" data-toggle="tooltip" title="" data-original-title="Teil 6: Navigation">
+            6
+          </a>
+        </li>
+        
+        <li>
+          <a href="/wikiV2/modul/m293/tutorials/html-css/part7/" data-toggle="tooltip" title="" data-original-title="Teil 7: Bootstrap Framework verwenden">
+            7
+          </a>
+        </li>
+        
+        <li class="active">
+          <a href="/wikiV2/modul/m293/tutorials/html-css/next/" data-toggle="tooltip" title="" data-original-title="Nächste Schritte">
+            Next
+          </a>
+        </li>
+        
+      </ul>
+    </div>
+  </nav>
+</html>
+
+----
+Diese Seite ist abgeleitet von [[https://code.makery.ch/|code.makery]] von [[https://code.makery.ch/about/|Marco Jakob]], verwendet unter [[https://creativecommons.org/licenses/by/4.0/|CC BY]].\\ 
+Sie ist lizenziert unter [[https://creativecommons.org/licenses/by-nc-sa/4.0/|CC BY-NC-SA]] von Daniel Fahrni <daniel.fahrni@bzz.ch>.

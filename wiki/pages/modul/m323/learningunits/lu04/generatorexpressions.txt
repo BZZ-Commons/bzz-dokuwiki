@@ -1,0 +1,97 @@
+====== LU04i - Generator Expressions ======
+
+Generator Expressions bieten eine kompakte Möglichkeit, Generatoren zu erstellen. Sie ähneln List Comprehensions, verwenden jedoch runde Klammern ''()'' anstelle von eckigen Klammern ''[]''. Der Hauptvorteil von Generator Expressions ist, dass sie "lazy" sind, d.h. sie generieren Werte "on-the-fly" und halten nicht die gesamte Sequenz im Speicher.
+
+===== Hauptverwendungszweck von Generator Expressions =====
+
+Generator Expressions werden in Python vorwiegend zur "lazy" Transformation von Daten verwendet. Sie sind besonders nützlich, wenn man eine bestehende Liste (oder ein anderes iterierbares Objekt) nehmen und jedes ihrer Elemente auf eine bestimmte Weise transformieren möchte, ohne die gesamte Sequenz im Speicher zu speichern.
+
+===== Die Syntax =====
+
+<code python>
+gen_expr = (expression for item in iterable if condition == True)
+</code>
+
+===== Teile einer Generator Expression =====
+
+==== Condition ====
+Ein optionaler Filter, um nur bestimmte Elemente einzuschließen.
+<code python>
+gen_expr = (x for x in range(10) if x % 2 == 0)
+</code>
+Die Bedingung ''if x % 2 == 0'' liefert ''True'' für alle geraden Zahlen, so dass der Generator alle geraden Zahlen von 0 bis 9 enthält.
+
+==== Iterable ====
+Das Iterable kann ein beliebiges iterierbares Objekt sein, z. B. eine Liste, ein Tupel, ein Set usw.
+  - **Beispiel mit einer Liste**: <code python>
+  squared = (x**2 for x in [1, 2, 3, 4])
+  # Ergebnis beim Iterieren: 1, 4, 9, 16
+  </code>
+  - **Beispiel mit einem Tupel**: <code python>
+    doubled = (x * 2 for x in (1, 2, 3, 4))
+    # Ergebnis beim Iterieren: 2, 4, 6, 8
+    </code>
+  - **Beispiel mit range()**: <code python>
+    gen_expr = (x for x in range(10))
+    # Ergebnis beim Iterieren: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9
+    </code>
+
+==== Expression ====
+Der aktuelle Gegenstand der Iteration, aber auch das Ergebnis, das vor seinem Einzug in den neuen Generator manipuliert werden kann.
+
+  - **Beispiel mathematische Operation**: <code python>
+#Expression = x * 2
+doubled = (x * 2 for x in range(5))
+# Ergebnis beim Iterieren: 0, 2, 4, 6, 8
+</code>
+  - **Beispiel mit Funktionsaufruf**: <code python>
+words = ["apple", "banana", "cherry"]
+uppercased = (word.upper() for word in words)
+</code>
+
+==== Item ====
+Das aktuelle Element, das in der Iteration verarbeitet wird. Der Name des Item wird im ''for''-Konstrukt definiert: ''for __item__ in iterable''
+
+**Beispiel**
+<code python>
+words = ['apple', 'banana', 'cherry']
+uppercased = (item.upper() for item in words)
+</code>
+
+===== Beispiele =====
+    
+==== Filtern und Verwenden von next mit Generator Expressions ====
+
+Angenommen, Sie haben eine Liste von Dictionarys, die verschiedene Benutzer darstellen, und jeder Benutzer hat eine eindeutige ID. Sie möchten einen bestimmten Benutzer anhand seiner ID finden.
+
+**Beispiel-Daten**:
+
+<code python>
+users = [
+    {'id': 1, 'name': 'Alice'},
+    {'id': 2, 'name': 'Bob'},
+    {'id': 3, 'name': 'Charlie'},
+    {'id': 4, 'name': 'David'}
+]
+</code>
+
+Um den Benutzer mit der ''ID 3'' zu finden, können Sie eine Generator Expression verwenden und ''next()'' aufrufen, um das erste (und in diesem Fall einzige) Ergebnis zu erhalten:
+
+<code python>
+user_id_to_find = 3
+user = next((user for user in users if user['id'] == user_id_to_find), None)
+print(user)  # Output: {'id': 3, 'name': 'Charlie'}
+</code>
+
+In diesem Beispiel wird die Generator Expression ''(user for user in users if user['id'] == user_id_to_find)'' verwendet, um durch die Liste der Benutzer zu iterieren und nur diejenigen zurückzugeben, deren ID der gesuchten ID entspricht. Die Funktion ''next()'' gibt dann den ersten Benutzer zurück, der die Bedingung erfüllt. Wenn kein Benutzer gefunden wird, gibt ''next()'' den Wert ''None'' zurück, da dies als Standardwert angegeben ist.
+
+Dieser Ansatz ist besonders effizient, da er nicht die gesamte Liste durchlaufen muss, sondern bei der ersten Übereinstimmung stoppt.
+
+
+<WRAP center round info 60%>
+Generator Expressions sind ein mächtiges Werkzeug in Python, das den Code sauberer und verständlicher machen kann. Sie ermöglichen die schnelle Transformation von Daten und unterstützen dabei, den Code näher an die menschliche Logik und mathematische Notation zu bringen, ohne den Speicher zu überlasten.
+</WRAP>
+
+----
+{{tag>M323-LU04}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/ch/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Kevin Maurizi 

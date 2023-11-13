@@ -1,0 +1,32 @@
+====== LU09.A01 - Code mit Linter verbessern ======
+<WRAP center round info 60%>
+Nutze ein Linter-Programm um Schwächen im Sourcecode zu entdecken und zu verbessern.
+</WRAP>
+
+===== Vorbereitung =====
+Bilde ein 2er oder 3er Team um verschiedene Linter auszuprobieren.
+Jedes Teammitglied wählt einen anderen Linter aus der Liste auf [[https://geekflare.com/python-linter-platforms/|Geekflare]] aus.
+Installiere das von dir ausgewählte Lint-Programm und klone das Repository [[https://github.com/templates-python/m450-lu09-a01.git]].
+
+===== Auftrag =====
+==== Konfiguration ====
+Studiere die Anleitung und die Einstellungen deines Lint-Programms.
+Passe die Konfiguration so an, dass diese möglichst genau den [[howto/codingstandards/start]] entsprechen.
+Dokumentiere deine Einstellungen:
+  * Welche Einstellungen mussten angepasst werden?
+  * Welche Möglichkeiten gibt es, die Konfiguration anzupassen? Config-Datei? Kommandozeilenargumente?
+
+==== Code analysieren ====
+Führe eine Analyse des Sourcecodes mit deinem Lint-Programm durch.
+Studiere die angezeigten Fehler:
+  * Wie viele Fehler bzw. "code smells" wurden entdeckt?
+  * Zeigt das Lint-Programm unterschiedliche Arten von Fehlern an?
+  * Wie viele der angezeigten Fehler sind gar keine Fehler (false positive)?
+
+==== Zusammentragen und vergleichen ====
+Tragt als Gruppe eure Ergebnisse zusammen.
+Vergleicht die verschiedenen Lint-Programme bezüglich Konfiguration, gefundene Fehler, Fehlerarten und false positive.
+
+----
+{{tag>M450-LU09}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

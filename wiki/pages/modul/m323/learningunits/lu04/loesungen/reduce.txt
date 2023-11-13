@@ -1,0 +1,23 @@
+====== LU04.L09 - Fakultät mit reduce ======
+
+<code python>
+from functools import reduce
+
+def factorial(n):
+    # Ihr Code hier
+    if n == 0:
+        return 1
+    return reduce(lambda x, y: x * y, range(1, n + 1))
+
+
+if __name__ == '__main__':
+    result = factorial(5)
+    print(result)  # Sollte 120 ausgeben
+</code>
+
+In dieser Lösung verwenden wir die ''reduce''-Funktion aus dem ''functools''-Modul. Die ''reduce''-Funktion nimmt eine Funktion und eine Sequenz als Argumente und reduziert die Sequenz zu einem einzigen Wert, indem sie die Funktion auf die Elemente anwendet.
+
+Im Fall der Fakultät verwenden wir ''reduce'' mit einer Lambda-Funktion, die zwei Argumente multipliziert. Die Sequenz, die wir reduzieren wollen, ist ''range(1, n + 1)'', was eine Liste von 1 bis \( n \) erzeugt. `reduce` wendet die Multiplikation auf alle Elemente der Sequenz an und gibt das Ergebnis zurück, das die Fakultät von \( n \) ist.
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/ch/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Kevin Maurizi 

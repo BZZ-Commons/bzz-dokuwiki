@@ -1,0 +1,81 @@
+====== LU02b - Pure Functions ======
+
+===== Definition und Bedeutung von Pure Functions =====
+
+Pure Functions, auch reine Funktionen genannt, sind ein Grundkonzept der funktionalen Programmierung. Sie haben zwei Hauptmerkmale:
+
+  - **Deterministisch**: Das Ergebnis einer pure function hängt ausschließlich von den übergebenen Eingabewerten ab und hat keine Seiteneffekte. Das bedeutet, dass sie bei gleichen Eingabewerten immer das gleiche Ergebnis liefern.
+  - **Keine Seiteneffekte**: Eine pure function verändert nichts in ihrem Umfeld. Sie wirkt sich nicht auf den globalen Zustand aus und verändert keine Eingabeparameter.
+
+Ein einfaches Beispiel in Python könnte eine Funktion zur Addition zweier Zahlen sein:
+
+<code python>
+def add(x, y):
+  return x + y
+</code>
+
+===== Warum Pure Functions? Vorteile und Anwendungsbereiche =====
+
+Pure Functions bieten mehrere Vorteile:
+
+  - **Testbarkeit**: Da das Ergebnis nur von den Eingaben abhängt, sind pure functions leicht zu testen.
+  - **Wartbarkeit**: Sie sind leichter zu verstehen und zu warten, da sie keine externen Zustände verändern.
+  - **Parallelisierung**: Da sie keine Seiteneffekte haben, können sie sicher parallel ausgeführt werden.
+
+Pure Functions sind in vielen Programmierparadigmen nützlich, nicht nur in der funktionalen Programmierung. Sie können zur Verbesserung der Codequalität in jedem Kontext beitragen.
+
+===== Vergleich mit Unpure Functions =====
+
+Unpure Functions, im Gegensatz zu pure functions, können Seiteneffekte haben oder von externen Zuständen abhängig sein. Sie können somit unerwartete Ergebnisse liefern, was sie schwerer zu verstehen und zu warten macht.
+
+
+==== Beispiel 1 ====
+Betrachten Sie das folgende Beispiel mit einer Variablen:
+
+<code python>
+total = 0
+
+def add_to_total(x):
+  global total
+  total += x
+
+if __name__ == '__main__':
+    add_to_total(3)
+    print(total) #3
+    
+</code>
+
+Diese Funktion verändert den globalen Zustand (die Variable ''total'') und ist somit eine unpure function. Das ''global''-Schlüsselwort signalisiert dem Entwickler und dem Python-Interpreter, dass die Funktion eine globale Variable ändert. Dies macht es einfacher, "unpure" Funktionen zu erkennen und fördert die Verwendung von "pure" Funktionen, indem es die Aufmerksamkeit auf die Änderung des globalen Zustands lenkt.
+
+==== Beispiel 2 ====
+
+In diesem Beispiel haben wir eine Liste namens ''my_list'', die außerhalb der Funktion ''modify_list'' definiert ist. Die Funktion ''modify_list'' ändert diese Liste.
+
+<code python>
+# Definieren einer externen Liste
+my_list = [1, 2, 3]
+
+def modify_list():
+    """
+    Modify the external_list by appending a value to it.
+    """
+    return my_list.append(4)
+
+if __name__ == '__main__':
+    print('Vor der Änderung:', my_list)  # Output: Vor der Änderung: [1, 2, 3]
+    modify_list()
+    print('Nach der Änderung:', my_list)  # Output: Nach der Änderung: [1, 2, 3, 4]
+</code>
+
+Wie Sie sehen können, ändert die Funktion ''modify_list'' den Zustand der ''my_list''. Daher ist ''modify_list'' eine unpure Funktion. In diesem Fall wird das ''global''-Schlüsselwort nicht benötigt, da Listen in Python "mutable" (veränderbar) sind. Das heißt, sie können innerhalb einer Funktion verändert werden, ohne dass das ''global''-Schlüsselwort benötigt wird. Das kann zu einer weniger klaren Code-Struktur führen, da es schwieriger ist, solche Änderungen auf den ersten Blick zu erkennen.
+
+
+<WRAP center round tip 60%>
+**Fazit**
+
+Pure Functions sind ein mächtiges Konzept, das nicht nur die Qualität des Codes verbessert, sondern auch zur Entwicklung von effizienteren, wartbareren und sichereren Programmen beiträgt. Die Unterscheidung zwischen pure und unpure functions hilft, die Prinzipien der funktionalen Programmierung besser zu verstehen und in der Praxis umzusetzen.
+</WRAP>
+
+----
+{{tag>M323-LU02}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/ch/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Kevin Maurizi 

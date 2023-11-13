@@ -1,0 +1,68 @@
+====== LU02a - Ausgaben ======
+
+<WRAP center round info 60%>
+Die Funktion ''print()'' gibt eine Konstante oder den Wert einer Variable im Terminal aus.
+</WRAP>
+
+Du findest den ''print''-Befehl unter "Output":
+
+{{:modul:m319:learningunits:lu02:lu02_ausgabe_blockly_01.png?400|}}
+
+===== Variablen und Konstanten =====
+
+==== Konstanten ausgeben ====
+Diese Beispiele zeigen, wie mit ''print(...)'' eine Textkonstante und eine Zahl ausgegeben wird.
+
+{{:modul:m319:learningunits:lu02:print_literals.png?300|}}
+
+==== Variablen ausgeben ====
+Hier siehst du, wie eine Variable mit ''print(...)'' ausgeben wird.
+
+{{:modul:m319:learningunits:lu02:print_variable.png?300|}}
+
+==== Kombiniertes Beispiel ====
+{{:modul:m319:learningunits:lu02:lu02_ausgabe_blockly_02.png?400|}}
+
+^ Python-Code ^ Terminal ^ 
+| <code python>
+print('Hello World')
+givenname = 'Mia'
+print(givenname)
+age = 23
+print(age)
+</code> | <code>
+Hello World
+Mia
+23</code>|
+
+===== Zusammengesetzte Ausgaben =====
+In den Beispielen oben hast du gelernt, wie man eine einzelne Konstante oder Variable ausgibt.
+Dabei wird jeder ''print''-Befehl auf einer neue Zeile im Terminal ausgegeben.
+Möchtest du mehrere Konstanten oder Variablen auf einer Zeile ausgeben, musst du diese zu einem einzelnen String zusammensetzen.
+Das Fachwort dazu heisst: //konkatenieren//. 
+
+In Python verwenden wir das Symbol **''+''** um zwei Elemente zu konkatenieren.
+Du findest den entsprechenden Block unter "Calculation":
+
+{{:modul:m319:learningunits:lu02:concatenation.png?400|}}
+
+In die beiden Lücken kannst du nun beliebige Variablen oder Konstanten setzen.
+
+{{:modul:m319:learningunits:lu02:concat_brand.png?400|}}
+
+==== Zahlen und Text konkatenieren ====
+Python kann nur Texte konkatenieren.
+Willst du einen Text und eine Zahl zusammensetzen, musst du zunächst die Zahl in einen Text umwandeln.
+Dazu nutzt du die Funktion ''str(...)''.
+
+{{:modul:m319:learningunits:lu02:concat_number.png?400|}}
+
+==== Mehr als zwei Elemente ====
+Du kannst fast beliebig viele Elemente zu einem String konkatenieren.
+
+{{:modul:m319:learningunits:lu02:concat_multiple.png?600|}}
+
+----
+{{tag>M319-LU01 M319-B1G M319-B1F M319-C1G}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter
+

@@ -1,0 +1,52 @@
+====== LU07.L02 - Hotelbuchung ======
+
+[[https://templates-html.github.io/M293_LU07_02_hotel/hotel.html|Live Preview]]
+
+===== Fragen =====
+
+**Erläutern Sie die Unterschiede in der Benutzererfahrung zwischen dem select Element und den checkbox Elementen. Warum könnte es für einen Benutzer schwieriger sein, Mehrfachauswahlen in einem select Element zu treffen, insbesondere auf mobilen Geräten?**
+
+Ein Select-Element bietet eine Dropdown-Liste, aus der der Benutzer eine oder mehrere Optionen auswählen kann. Für Mehrfachauswahlen muss der Benutzer in der Regel die Steuerungstaste (oder Command-Taste auf einem Mac) gedrückt halten und dann auf die gewünschten Optionen klicken. Auf einem mobilen Gerät kann dies unhandlich sein, da es kein direktes Äquivalent zur Steuerungstaste gibt und die Auswahl mehrerer Optionen möglicherweise nicht intuitiv ist.
+
+Checkbox-Elemente hingegen ermöglichen die Auswahl mehrerer Optionen durch einfaches Tippen oder Klicken auf jede Option. Es ist nicht erforderlich, eine Steuerungstaste gedrückt zu halten. Auf mobilen Geräten kann dies eine intuitivere Benutzererfahrung bieten.
+
+**Beschreiben Sie eine Situation, in der ein select Element erwartungskonform in einem Formular verwendet wird. Welche Anforderungen sollte diese Situation erfüllen, damit die Verwendung von select geeignet und benutzerfreundlich ist?**
+
+Ein Select-Element ist ideal für Situationen, in denen es eine große Anzahl von Optionen gibt und nur eine ausgewählt werden kann. Beispielsweise könnte ein Formular zur Registrierung für eine Konferenz ein Select-Element für die Auswahl des Landes des Teilnehmers verwenden. Da es viele Länder gibt, würde die Verwendung von Checkboxen oder Radiobuttons unübersichtlich und platzraubend. Ein Select-Element ist in diesem Fall erwartungskonform, da es oft für solche Auswahlmöglichkeiten verwendet wird, und es bietet eine effiziente und benutzerfreundliche Möglichkeit, eine Option aus einer umfangreichen Liste auszuwählen.
+
+**Stellen Sie sich vor, Sie müssen ein Formular erstellen, in dem die Benutzer mehrere Optionen aus einer Liste auswählen können. Welches Formularelement würden Sie wählen: ein select Element mit Mehrfachauswahl oder mehrere checkbox Elemente? Begründen Sie Ihre Antwort unter Berücksichtigung der Erwartungskonformität und Benutzerfreundlichkeit.**
+
+Die Wahl zwischen einem Select-Element mit Mehrfachauswahl und mehreren Checkboxen hängt von der spezifischen Situation ab. Wenn es nur eine kleine Anzahl von Optionen gibt und es wichtig ist, dass der Benutzer alle verfügbaren Optionen auf einen Blick sieht, wären Checkboxen die bessere Wahl. Sie sind intuitiver zu bedienen, besonders auf mobilen Geräten, und erlauben die direkte Auswahl mehrerer Optionen.
+
+Ein Select-Element mit Mehrfachauswahl wäre geeigneter, wenn es eine sehr große Anzahl von Optionen gibt, die in einem Checkbox-Format zu überwältigend oder unübersichtlich sein könnten. In diesem Fall könnte ein Select-Element trotz seiner möglichen Usability-Schwierigkeiten die bessere Wahl sein, da es eine effizientere Möglichkeit bietet, Optionen aus einer umfangreichen Liste auszuwählen. Es sollte jedoch bedacht werden, dass die Mehrfachauswahl in einem Select-Element für einige Benutzer nicht so intuitiv sein könnte, insbesondere auf mobilen Geräten.
+
+===== Code =====
+<code html4strict>
+
+<form action='https://it.bzz.ch/demo/formdata/index.php' method='post'>
+  <!-- Zimmertypen -->
+  <fieldset>
+    <legend>Zimmertyp</legend>
+    <select id='zimmertyp' name='Zimmertyp[]' multiple required>
+      <option value='einzelzimmer'>Einzelzimmer</option>
+      <option value='doppelzimmer'>Doppelzimmer</option>
+      <option value='suite'>Suite</option>
+    </select>
+  </fieldset>
+
+  <!-- Zusatzleistungen -->
+  <fieldset>
+    <legend>Zusatzleistungen</legend>
+    <input type='checkbox' id='fruehstueck' name='zusatzleistungen[]' value='fruehstueck'>
+    <label for='fruehstueck'>Frühstück</label><br>
+    <input type='checkbox' id='transfer' name='zusatzleistungen[]' value='transfer'>
+    <label for='transfer'>Flughafentransfer</label><br>
+    <input type='checkbox' id='spa' name='zusatzleistungen[]' value='spa'>
+    <label for='spa'>Spa-Zugang</label>
+  </fieldset>
+
+  <!-- Submit Button -->
+  <input type='submit' value='Buchen'>
+</form>
+
+</code>

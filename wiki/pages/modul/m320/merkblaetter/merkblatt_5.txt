@@ -1,0 +1,20 @@
+====== 5 Beziehungen ======
+<WRAP info>Beziehungen zeigen den Zusammenhang von Klassen innerhalb einer Anwendung auf.</WRAP>.
+====UML-Notation====
+{{:modul:m320:merkblaetter:lu03-merkblatt5-1.png?350|}}\\
+Beziehungen könenn vielfältige Formen annehmen. Sîe können
+   * ein- oder zweiseitig Wirkung zeigen,
+   * eine beliebige oder klar definierte Kardinalität aufweisen,
+   * spezielle Arten von Beziehungen wiedergeben wie z.B. Aggregation, Komposition oder Vererbung.
+=== Kardinalität ===
+Die Kardinalität sagt aus, wie ein Beziehung mengenmässig aussehen kann.\\
+Es dürfen einzelne Werte (z.B. 3), Bereiche (z.B. 5..10 oder 3, 6..9) aber auch * für unbestimmt (0..unendlich) verwendet werden.\\
+{{:modul:m320:merkblaetter:lu03-merkblatt5-2.png?400|}}
+
+====Umsetzung in Python-Code====
+=== einseitige Beziehung ===
+Auch als gerichtet Beziehung bezeichnet.\\
+
+coming soon
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) René Probst

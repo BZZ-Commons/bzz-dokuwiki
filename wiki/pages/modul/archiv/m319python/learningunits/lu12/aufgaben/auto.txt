@@ -1,0 +1,84 @@
+====== LU12.A01 - Auto ======
+
+===== Ausgangslage =====
+Sie wollen ein Programm schreiben, um die Merkmale (Attribute) von Autos zu speichern:
+
+{{:modul:m319python:learningunits:lu12:aufgaben:uml_car.png?300|}}
+
+Der Benutzer soll die Angaben zu einem oder mehreren Autos erfassen können.
+
+===== Umsetzung =====
+Setzen Sie das Programm schrittweise um.
+Zu jedem Schritt hat es entsprechende Tests in ''main_test.py''.
+
+==== Klasse erstellen ====
+Erstellen Sie die Definition der Klasse in der Datei "car.py".
+
+=== Tests ===
+  * test_class
+
+==== Eingabe eines Autos ====
+Codieren Sie das Erfassen und Speichern eines Autos in der Datei ''main.py''.
+
+  - Objekt der Klasse ''Car'' erzeugen.
+  - Eingabe der Marke, Speichern des Attributs
+  - Eingabe des Modells, Speichern des Attributs
+  - Eingabe des Baujahrs, Speichern des Attributs
+  - Ausgabe von Baujahr, Marke und Modell
+
+=== Ablauf im Terminal ===
+ 
+<code>
+Marke > Renault
+Modell > Clio
+Baujahr > 2004
+2004
+Renault
+Clio
+</code>
+
+=== Tests ===
+
+  * test_one_car
+
+==== Eingabe mehrerer Autos ====
+  - Leere Liste deklarieren
+  - Solange ''True''
+    - Eingabe der Marke
+    - Falls Marke nicht leer ist
+      - Objekt der Klasse ''Car'' erzeugen und zur Liste hinzufügen
+      - Speichern der Marke
+      - Eingabe des Modells, Speichern des Attributs
+      - Eingabe des Baujahrs, Speichern des Attributs
+    - Sonst
+      - Abbruch der Iteration
+  - Loop über alle Elemente der Liste
+    - Ausgabe von Baujahr, Marke und Modell
+
+=== Ablauf im Terminal ===
+<code>
+Marke > VW
+Modell > Golf
+Baujahr > 2015
+Marke > Fiat
+Modell > Uno
+Baujahr > 2022
+Marke > Renault
+Modell > Clio
+Baujahr > 2010
+Marke > 
+2015
+VW
+Golf
+2022
+Fiat
+Uno
+2010
+Renault
+Clio
+</code>
+
+
+=== Tests ===
+
+  * test_multiple_cars

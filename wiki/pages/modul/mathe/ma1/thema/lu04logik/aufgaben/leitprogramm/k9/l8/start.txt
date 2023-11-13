@@ -1,0 +1,225 @@
+===Lösung 8===
+
+**Aufgabe 1**\\
+Gegeben ist die folgende WHT. Minimieren Sie diese nach den Regeln der boolschen Algebra. Nutzen Sie - wie in der Theorie gezeigt - die Idee der Substitution und folgende Gesetze:\\
+   * Kommutativgesetz
+   * Distributivgesetz
+   * Komplementärgesetz
+   * Neutralitätsgesetz
+<WRAP left>
+|     IN     |||¦|  OUT  |
+^  A  ^  B  ^  C  ^¦^  X  ^
+|  0  |  0  |  0  |¦|  1  |
+|  0  |  0  |  1  |¦|  0  |
+|  0  |  1  |  0  |¦|  1  |
+|  0  |  1  |  1  |¦|  0  |
+|  1  |  0  |  0  |¦|  1  |
+|  1  |  0  |  1  |¦|  0  |
+|  1  |  1  |  0  |¦|  0  |
+|  1  |  1  |  1  |¦|  1  |
+</WRAP>
+<WRAP clear></WRAP>
+<WRAP grpoup>
+<WRAP half column>
+<color #00a2e8>__Lösung als DNF__</color>\\
+<color #00a2e8>X = (\(\neg\)A\(\wedge\)\(\neg\)B\(\wedge\)\(\neg\)C) \(\vee\) (\(\neg\)A\(\wedge\)B\(\wedge\)\(\neg\)C) \(\vee\) (A\(\wedge\)\(\neg\)B\(\wedge\)\(\neg\)C) \(\vee\) (A\(\wedge\)B\(\wedge\)C)\\
+Anwenden von Kommutativ-, Distributiv-, Komplementär- und Neutralitätsgesetz.\\
+\\
+Wir stellen die Terme mittels Kommutativgesetz um, so dass wir ein "passendes" Paar erkennen können...\\
+X = **(\(\neg\)A\(\wedge\)\(\neg\)B\(\wedge\)\(\neg\)C) \(\vee\) (A\(\wedge\)\(\neg\)B\(\wedge\)\(\neg\)C)** \(\vee\) (\(\neg\)A\(\wedge\)B\(\wedge\)\(\neg\)C) \(\vee\) (A\(\wedge\)B\(\wedge\)C)\\
+...und wenden das Distributivgesetz an. Dabei substituieren wir (gedanklich) den Term (</color><color #ed1c24>\(\neg\)B\(\wedge\)\(\neg\)C</color><color #00a2e8>).</color>\\
+<color #00a2e8>(</color><color #22b14c>\(\neg\)A</color><color #00a2e8>\(\wedge\)</color><color #ed1c24>\(\neg\)B\(\wedge\)\(\neg\)C</color><color #00a2e8>) \(\vee\)</color> (<color #22b14c>A</color><color #00a2e8>\(\wedge\)</color><color #ed1c24>\(\neg\)B\(\wedge\)\(\neg\)C</color><color #00a2e8>)\\
+und erhalten (</color><color #22b14c> \(\neg\)A\(\vee\)A</color><color #00a2e8>) \(\wedge\) (</color><color #ed1c24>\(\neg\)B\(\wedge\)\(\neg\)C</color><color #00a2e8>) =</color> <color #22b14c>1</color> <color #00a2e8>\(\wedge\) (</color><color #ed1c24>\(\neg\)B\(\wedge\)\(\neg\)C</color><color #00a2e8>)  \(\Rightarrow\) (\(\neg\)B\(\wedge\)\(\neg\)C)\\
+\\
+Wir stellen den Ausdruck erneut um und finden wieder ein Paar, auf das wir das Distributivgesetz anwenden können.\\
+X = **(\(\neg\)A\(\wedge\)\(\neg\)B\(\wedge\)\(\neg\)C)  \(\vee\) (\(\neg\)A\(\wedge\)B\(\wedge\)\(\neg\)C)** \(\vee\) (A\(\wedge\)\(\neg\)B\(\wedge\)\(\neg\)C) \(\vee\) (A\(\wedge\)B\(\wedge\)C)\\
+Hier wird der Term (</color><color #ed1c24>\(\neg\)A\(\wedge\)\(\neg\)C</color><color #00a2e8>) (gedanklich) substituiert.\\
+(\(\neg\)A\(\wedge\)\(\neg\)B\(\wedge\)\(\neg\)C) \(\vee\) (\(\neg\)A\(\wedge\)B\(\wedge\)\(\neg\)C) = (</color><color #22b14c>\(\neg\)B</color><color #00a2e8>\(\wedge\)</color><color #ed1c24>\(\neg\)A\(\wedge\)\(\neg\)C</color><color #00a2e8>) \(\vee\)  (</color><color #22b14c>B</color><color #00a2e8>\(\wedge\)</color><color #ed1c24>\(\neg\)A\(\wedge\)\(\neg\)C</color><color #00a2e8>)\\
+(</color><color #22b14c>\(\neg\)B\(\vee\)B</color><color #00a2e8>) \(\wedge\) (</color><color #ed1c24>\(\neg\)A\(\wedge\)\(\neg\)C</color><color #00a2e8>) =</color> <color #22b14c>1</color> <color #00a2e8>\(\wedge\) (</color><color #ed1c24>\(\neg\)A\(\wedge\)\(\neg\)C</color><color #00a2e8>) \(\Rightarrow\) (\(\neg\)A\(\wedge\)\(\neg\)C)\\
+\\
+Der Term (A\(\wedge\)B\(\wedge\)C) kann mit keinem anderen Term minimiert werden und bleibt so stehen. Somit ergibt sich für die minimierte Lösung\\
+X = (\(\neg\)B\(\wedge\)\(\neg\)C) \(\vee\) (\(\neg\)A\(\wedge\)\(\neg\)C)  \(\vee\) (A\(\wedge\)B\(\wedge\)C)</color> 
+
+</WRAP>
+<WRAP half column>
+
+<color #00a2e8>__Lösung als KNF__</color>\\
+<color #00a2e8>X = (A\(\vee\)B\(\vee\)\(\neg\)C) \(\wedge\) (A\(\vee\)\(\neg\)B\(\vee\)\(\neg\)C) \(\wedge\) (\(\neg\)A\(\vee\)B\(\vee\)\(\neg\)C) \(\wedge\) (\(\neg\)A\(\vee\)\(\neg\)B\(\vee\)C)\\
+Anwenden von Kommutativ-, Distributiv-, Komplementär- und Neutralitätsgesetz.\\
+\\
+Wir stellen die Terme mittels Kommutativgesetz um, so dass wir ein “passendes” Paar erkennen können…\\
+X = **(A\(\vee\)B\(\vee\)\(\neg\)C) \(\wedge\) (\(\neg\)A\(\vee\)B\(\vee\)\(\neg\)C)** \(\wedge\) (A\(\vee\)\(\neg\)B\(\vee\)\(\neg\)C)  \(\wedge\) (\(\neg\)A\(\vee\)\(\neg\)B\(\vee\)C)\\
+...und wenden das Distributivgesetz an. Dabei substituieren wir (gedanklich) den Term (</color><color #ed1c24>B\(\vee\)\(\neg\)C</color><color #00a2e8>).</color>\\
+<color #00a2e8>(</color><color #22b14c>A</color><color #00a2e8>\(\vee\)</color><color #ed1c24>B\(\vee\)\(\neg\)C</color><color #00a2e8>) \(\wedge\)</color> (<color #22b14c>\(\neg\)A</color><color #00a2e8>\(\vee\)</color><color #ed1c24>B\(\vee\)\(\neg\)C</color><color #00a2e8>)\\
+und erhalten (</color><color #22b14c>A\(\wedge\)\(\neg\)A</color><color #00a2e8>) \(\vee\) (</color><color #ed1c24>B\(\vee\)\(\neg\)C</color><color #00a2e8>) =</color> <color #22b14c>0</color> <color #00a2e8>\(\wedge\) (</color><color #ed1c24>B\(\vee\)\(\neg\)C</color><color #00a2e8>)  \(\Rightarrow\) (B\(\vee\)\(\neg\)C)\\
+\\
+Wir stellen den Ausdruck erneut um und finden wieder ein Paar, auf das wir das Distributivgesetz anwenden können.\\
+X = **(A\(\vee\)B\(\vee\)\(\neg\)C) \(\wedge\) (A\(\vee\)\(\neg\)B\(\vee\)\(\neg\)C)** \(\wedge\) (\(\neg\)A\(\vee\)B\(\vee\)\(\neg\)C)  \(\wedge\) (\(\neg\)A\(\vee\)\(\neg\)B\(\vee\)C)\\
+
+Hier wird der Term (</color><color #ed1c24>A\(\vee\)\(\neg\)C</color><color #00a2e8>) (gedanklich) substituiert.\\
+(A\(\vee\)B\(\vee\)\(\neg\)C) \(\wedge\) (A\(\vee\)\(\neg\)B\(\vee\)\(\neg\)C) = (</color><color #ed1c24>A\(\vee\)\(\neg\)C</color><color #00a2e8>\(\vee\)</color><color #22b14c>B</color><color #00a2e8>) \(\wedge\) (</color><color #ed1c24>A\(\vee\)\(\neg\)C</color><color #00a2e8>\(\vee\)</color><color #22b14c>\(\neg\)B</color><color #00a2e8>)\\
+(</color><color #22b14c>B\(\wedge\)\(\neg\)B</color><color #00a2e8>) \(\vee\) (</color><color #ed1c24>A\(\vee\)\(\neg\)C</color><color #00a2e8>) =</color> <color #22b14c>0</color> <color #00a2e8>\(\vee\) (</color><color #ed1c24>A\(\vee\)\(\neg\)C</color><color #00a2e8>) \(\Rightarrow\) (A\(\vee\)\(\neg\)C)\\
+\\
+Der Term (\(\neg\)A\(\vee\)\(\neg\)B\(\vee\)C) kann mit keinem anderen Term minimiert werden und bleibt so stehen. Somit ergibt sich für die minimierte Lösung\\
+X = (B\(\vee\)\(\neg\)C) \(\wedge\) (A\(\vee\)\(\neg\)C) \(\wedge\) (\(\neg\)A\(\vee\)\(\neg\)B\(\vee\)C)</color> 
+</WRAP>
+</WRAP>\\
+<color #00a2e8>//Hinweis://\\
+Terme können immer paarweise minimiert werden. Bei 4 und mehr Variablen kann es so aber zu einer Überdeckung kommen. D.h. dass es Terme gibt, die redundante Werte liefern. In diesem Fall prüft man das Ergebnis und schaut, ob man wiederum den bereits minimierten Ausdruck minimierne kann. Das führt man solange fort, bis ein Ausdruck vorliegt, bei dem keine Minimierung mehr möglich ist.
+</color>\\
+\\
+**Aufgabe 2**\\
+Erstellen Sie anhand der WHT mittels KV-Diagramm einen minimierten boolschen Ausdruck für X. Sie können selber wählen, ob das Ergebnis als DNF oder KNF angeschreiben wird.
+<WRAP left>
+|    IN    ||¦|   OUT  |
+^  A  ^  B  ^¦^  X  ^
+|  0  |  0  |¦|  0  |
+|  0  |  1  |¦|  1  |
+|  1  |  0  |¦|  0  |
+|  1  |  1  |¦|  0  |
+</WRAP>
+<WRAP left>
+|  <color #00a2e8>DNF</color>  | <tab> |  <color #00a2e8>KNF</color>  |
+|   {{:modul:mathe:ma1:thema:lu04logik:aufgaben:leitprogramm:k9:l8:aufg8-2-dnf.png?100|}}   | |    {{:modul:mathe:ma1:thema:lu04logik:aufgaben:leitprogramm:k9:l8:aufg8-2.png?100|}}   | 
+|<color #00a2e8>\(X = \)\(\overline{A}\) \(\wedge\) \(B\)</color> | |    <color #00a2e8>\(X = \)\(\overline{A}\) \(\wedge\) \(B\)</color>|
+</WRAP>
+<WRAP clear></WRAP>\\
+
+**Aufgabe 3**\\
+Erstellen Sie anhand der WHT mittels KV-Diagramm einen minimierten boolschen Ausdruck für X.Geben Sie das Ergebnis sowohl als DNF wie auch als KNF an.
+<WRAP left>
+|    IN    |||¦|  OUT  |
+^  A  ^  B  ^ C  ^¦^  X  ^
+|  0  |  0  |  0  |¦|  1  |
+|  0  |  0  |  1  |¦|  0  |
+|  0  |  1  |  0  |¦|  0  |
+|  0  |  1  |  1  |¦|  0  |
+|  1  |  0  |  0  |¦|  1  |
+|  1  |  0  |  1  |¦|  1  |
+|  1  |  1  |  0  |¦|  0  |
+|  1  |  1  |  1  |¦|  1  |
+</WRAP>
+<WRAP left>
+|   <color #00a2e8>DNF</color>   | <tab> |   <color #00a2e8>KNF</color>   |
+|   {{:modul:mathe:ma1:thema:lu04logik:aufgaben:leitprogramm:k9:l8:aufg8-3-dnf.png?150|}}    |   |   {{:modul:mathe:ma1:thema:lu04logik:aufgaben:leitprogramm:k9:l8:aufg8-3-knf.png?150|}}   |
+|<color #00a2e8>\(X =\) (\(\overline{B}\)\(\wedge\)\(\overline{C}\)) \(\vee\) (\(A\)\(\wedge\)\(C\))</color>   |   |   <color #00a2e8>\(X = \) (\(A\)\(\vee\)\(\overline{C}\)) \(\wedge\) (\(\overline{B}\)\(\vee\)C)</color>|
+
+</WRAP>
+<WRAP clear></WRAP>\\
+
+**Aufgabe 4**\\
+Erstellen Sie anhand der WHT mittels KV-Diagramm einen minimierten boolschen Ausdruck für X.Geben Sie das Ergebnis sowohl als DNF wie auch als KNF an.
+<WRAP left>
+|   IN   ||||¦|   OUT  |
+^  A  ^  B  ^ C   ^ D  ^¦^  X  ^
+|  0  |  0  |  0  |  0  |¦|  1  |
+|  0  |  0  |  0  |  1  |¦|  1  |
+|  0  |  0  |  1  |  0  |¦|  1  |
+|  0  |  0  |  1  |  1  |¦|  1  |
+|  0  |  1  |  0  |  0  |¦|  1  |
+|  0  |  1  |  0  |  1  |¦|  0  |
+|  0  |  1  |  1  |  0  |¦|  1  |
+|  0  |  1  |  1  |  1  |¦|  1  |
+|  1  |  0  |  0  |  0  |¦|  1  |
+|  1  |  0  |  0  |  1  |¦|  0  |
+|  1  |  0  |  1  |  0  |¦|  0  |
+|  1  |  0  |  1  |  1  |¦|  0  |
+|  1  |  1  |  0  |  0  |¦|  1  |
+|  1  |  1  |  0  |  1  |¦|  0  |
+|  1  |  1  |  1  |  0  |¦|  0  |
+|  1  |  1  |  1  |  1  |¦|  1  |
+</WRAP>
+<WRAP left>
+|   <color #00a2e8>DNF</color>   | <tab> |   <color #00a2e8>KNF</color>  |
+|   {{:modul:mathe:ma1:thema:lu04logik:aufgaben:leitprogramm:k9:l8:aufg8-4-dnf.png?175|}}   | |    {{:modul:mathe:ma1:thema:lu04logik:aufgaben:leitprogramm:k9:l8:aufg8-4-knf.png?175|}}   |
+|<color #00a2e8>\(X =\) (\(\overline{A}\)\(\wedge\)\(\overline{B}\)) \(\vee\) (\(\overline{A}\)\(\wedge\)\(\overline{D}\)) \(\vee\) (\(\overline{C}\)\(\wedge\)\(\overline{D}\)) \(\vee\) (\(B\)\(\wedge\)\(C\)\(\wedge\)\(D\))</color>| <tab> |    <color #00a2e8>\(X = \) (\(\overline{A}\)\(\vee\)\(\overline{B}\)\(\vee\)\(\overline{D}\)) \(\wedge\) (\(\overline{A}\)\(\vee\)\(\overline{C}\)\(\vee\)\(D\)) \(\wedge\) (\(\overline{B}\)\(\vee\)\(C\)\(\vee\)\(\overline{D}\))</color>|
+</WRAP>
+
+
+<WRAP clear></WRAP>\\
+
+**Aufgabe 5**\\
+Gegeben ist ein Ausruck in kanonischer Form, konkret als KKNF. Minimieren Sie diesen unter Verwendung des KV-Diagramms.\\
+//Vorgehen://\\
+Sie können die einzelnen Terme direkt in die KV-Matritze übertragen oder aber zuerst eine WHT erstellen und den Übertrag so vornehmen.\\
+Ausdruck:\\
+X = (A\(\vee\)B\(\vee\)\(\neg\)C\(\vee\)D) \(\wedge\) (A\(\vee\)\(\neg\)B\(\vee\)\(\neg\)C\(\vee\)D) \(\wedge\) (\(\neg\)A\(\vee\)B\(\vee\)C\(\vee\)\(\neg\)D) \(\wedge\) (\(\neg\)A\(\vee\)B\(\vee\)C\(\vee\)D) \(\wedge\) (\(\neg\)A\(\vee\)B\(\vee\)\(\neg\)C\(\vee\)D) \(\wedge\) (\(\neg\)A\(\vee\)\(\neg\)B\(\vee\)\(\neg\)C\(\vee\)D)\\
+\\
+<WRAP left>
+{{:modul:mathe:ma1:thema:lu04logik:aufgaben:leitprogramm:k9:l8:aufg8-5-wht.png?200|}}
+</WRAP>
+<WRAP left>
+|   <color #00a2e8>DNF</color>   |  <tab>  |   <color #00a2e8>KNF</color>   |
+|    {{:modul:mathe:ma1:thema:lu04logik:aufgaben:leitprogramm:k9:l8:aufg8-5-dnf.png?175|}}    |  |   {{:modul:mathe:ma1:thema:lu04logik:aufgaben:leitprogramm:k9:l8:aufg8-5-knf.png?175|}}    |
+|<color #00a2e8>\(X = \) (\(\overline{A}\)\(\wedge\)\(\overline{C}\)) \(\vee\) (\(C\)\(\wedge\)\(D\)) \(\vee\) (\(B\)\(\vee\)\(\overline{C}\))</color>   |   |   <color #00a2e8>\(X = \) (\(\overline{A}\)\(\vee\)\(B\)\(\vee\)\(C\)) \(\wedge\) (\(\overline{C}\)\(\vee\)\(D\))</color>|
+</WRAP>
+
+
+
+<WRAP clear></WRAP>
+\\
+**Aufgabe 6**\\
+Lernende möchten ja gerne früher den Heimweg antreten, insbesondere dann, wenn sie so eine frühere Zugverbindung erreichen könnne. Das gilt erst recht in der Winterzeit, wenn die "Umweltbedingungen" das Leben mitunter ein wenig erschweren.\\
+\\
+Als Variable treten folgende Bedingungen auf:
+   * es regnet
+   * es ist dunkel
+   * der Zug fährt pünktlich
+   * es ist rutschig
+Damit man früher gehen kann, muss der Zug sicher pünktlich fahren (sonst hat man ja eh mehr Zeit). Weiter genügt es nicht, dass es nur dunkel ist, es braucht schon auch Regen oder Glätte, damit die Bedingung für den Gehweg schlecht sind.\\
+\\
+Für die Ausgangsvariable gilt:
+   * 0 = nicht früher gehen
+   * 1 = früher gehen
+\\
+Erstellen Sie den Ausdruck für diese Konstellation. Wählen Sie dabei selber, ob das Ergebnis als DNF oder KNF wiedergegeben wird.\\
+
+<color #00a2e8>**Defintion der Variablen**</color>\\
+<WRAP left>
+|<color #00a2e8>Regen:</color>           |<color #00a2e8>RE</color> | <color #00a2e8>0 = kein Regen, 1 = Regen</color> |
+|<color #00a2e8>Dunkel:</color>          |<color #00a2e8>DU</color> | <color #00a2e8>0 = hell, 1 = dunkel</color> |
+|<color #00a2e8>Zug pünktlich:</color>   |<color #00a2e8>ZP</color> | <color #00a2e8>0 = verspätet, 1 = pünktlich</color> |
+|<color #00a2e8>Rutschig:</color>        |<color #00a2e8>RU</color> | <color #00a2e8>0 = trocken, 1 = rutschig</color> |
+|<color #00a2e8>Früher gehen:</color>    |<color #00a2e8>FG</color> | <color #00a2e8>0 = nein, 1 = ja</color> |
+</WRAP>
+<WRAP clear></WRAP>
+**<color #00a2e8>Erstellen der WHT</color>**\\
+<WRAP left>
+|  <color #00a2e8>IN</color>  ||||¦| <color #00a2e8>OUT</color>  |
+^ <color #00a2e8>RE</color> ^<color #00a2e8>DU</color> ^ <color #00a2e8>ZP</color> ^ <color #00a2e8>RU</color> ^¦^ <color #00a2e8>FG</color> ^
+| <color #00a2e8>0</color>  | <color #00a2e8>0</color> | <color #00a2e8>0</color>  | <color #00a2e8>0</color>  |¦| <color #00a2e8>0</color>  |
+| <color #00a2e8>0</color>  | <color #00a2e8>0</color> | <color #00a2e8>0</color>  | <color #00a2e8>1</color>  |¦| <color #00a2e8>0</color>  |
+| <color #00a2e8>0</color>  | <color #00a2e8>0</color> | <color #00a2e8>1</color>  | <color #00a2e8>0</color>  |¦| <color #00a2e8>0</color>  |
+| <color #00a2e8>0</color>  | <color #00a2e8>0</color> | <color #00a2e8>1</color>  | <color #00a2e8>1</color>  |¦| <color #00a2e8>0</color>  |
+| <color #00a2e8>0</color>  | <color #00a2e8>1</color> | <color #00a2e8>0</color>  | <color #00a2e8>0</color>  |¦| <color #00a2e8>0</color>  |
+| <color #00a2e8>0</color>  | <color #00a2e8>1</color> | <color #00a2e8>0</color>  | <color #00a2e8>1</color>  |¦| <color #00a2e8>0</color>  |
+| <color #00a2e8>0</color>  | <color #00a2e8>1</color> | <color #00a2e8>1</color>  | <color #00a2e8>0</color>  |¦| <color #00a2e8>0</color>  |
+| <color #00a2e8>0</color>  | <color #00a2e8>1</color> | <color #00a2e8>1</color>  | <color #00a2e8>1</color>  |¦| <color #00a2e8>1</color>  |
+| <color #00a2e8>1</color>  | <color #00a2e8>0</color> | <color #00a2e8>0</color>  | <color #00a2e8>0</color>  |¦| <color #00a2e8>0</color>  |
+| <color #00a2e8>1</color>  | <color #00a2e8>0</color> | <color #00a2e8>0</color>  | <color #00a2e8>1</color>  |¦| <color #00a2e8>0</color>  |
+| <color #00a2e8>1</color>  | <color #00a2e8>0</color> | <color #00a2e8>1</color>  | <color #00a2e8>0</color>  |¦| <color #00a2e8>0</color>  |
+| <color #00a2e8>1</color>  | <color #00a2e8>0</color> | <color #00a2e8>1</color>  | <color #00a2e8>1</color>  |¦| <color #00a2e8>0</color>  |
+| <color #00a2e8>1</color>  | <color #00a2e8>1</color> | <color #00a2e8>0</color>  | <color #00a2e8>0</color>  |¦| <color #00a2e8>0</color>  |
+| <color #00a2e8>1</color>  | <color #00a2e8>1</color> | <color #00a2e8>0</color>  | <color #00a2e8>1</color>  |¦| <color #00a2e8>0</color>  |
+| <color #00a2e8>1</color>  | <color #00a2e8>1</color> | <color #00a2e8>1</color>  | <color #00a2e8>0</color>  |¦| <color #00a2e8>1</color>  |
+| <color #00a2e8>1</color>  | <color #00a2e8>1</color> | <color #00a2e8>1</color>  | <color #00a2e8>1</color>  |¦| <color #00a2e8>1</color>  |
+</WRAP>
+<WRAP clear></WRAP>
+**<color #00a2e8>Übertragen in KV-Diagramm</color>**\\
+{{:modul:mathe:ma1:thema:lu04logik:aufgaben:leitprogramm:k9:l8:aufg8-6-dnf.png?150|}}\\
+**<color #00a2e8>Minimierter Ausdruck</color>**\\
+<color #00a2e8>FG = (RE\(\wedge\)DU\(\wedge\)ZP) \(\vee\) (DU\(\wedge\)ZP\(\wedge\)RU)</color>\\
+\\
+<color #00a2e8>Hinweis:\\
+In Python-Code würde diese Aussage dann wie folgt aussehen:</color>
+<code Python>
+  if (it_rains and is_dark and train_on_time) or (is_dark and train_on_time and is_slippery):
+     # you can go home earlier
+</code>
+----
+
+\\
+[[modul:mathe:ma1:thema:lu04logik:aufgaben:leitprogramm:k9:start|zum Leitprogramm]]
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) René Probst

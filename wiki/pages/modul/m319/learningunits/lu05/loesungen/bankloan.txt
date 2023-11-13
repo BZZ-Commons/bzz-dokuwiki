@@ -1,0 +1,20 @@
+====== LU05.L13: Bank loan ======
+
+<code python> 
+def main():
+    age = int(input('Wie alt sind sie?'))
+    income = int(input('Wie hoch ist ihr Jahresgehalt?'))
+
+    if age >= 21 and income >= 48000:
+        print('Wir sind in der Lage, Ihnen einen Kredit anzubieten.')
+    else:
+        print('Leider können wir Ihnen zur Zeit keinen Kredit anbieten.')
+
+
+if __name__ == '__main__':
+    main()
+</code>
+
+----
+{{tag>M319-LU05}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/ch/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Kevin Maurizi, Marcel Suter

@@ -1,0 +1,23 @@
+====== Lösungsvorschlag: "Notenschnitt berechnen" - PAP ======
+===== Variablen =====
+^ Bezeichner ^ Datentyp ^ Beschreibung ^
+| anzNoten | Ganzzahl | Anzahl der Noten |
+| anzEingegeben | Ganzzahl | Anzahl bisher eingegebene Noten |
+| note | Dezimalzahl | Eingegebene Note |
+| total | Dezimalzahl | Total aller eingegebenen Noten |
+| schnitt | Dezimalzahl | Notenschnitt |
+
+===== Zentrales Programmelement =====
+Das zentrale Element in diesem Programm ist die Iteration
+<code>
+Solange Anzahl eingegebene Noten < Anzahl vorhandene Noten
+</code>
+
+{{:modul:m319:learningunits:lu03:loesungen:pap_grade_iteration.png|}}
+
+===== Programmablaufplan =====
+{{:modul:m319:learningunits:lu03:loesungen:pap_grade.png|}}
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Marcel Suter

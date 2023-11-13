@@ -1,0 +1,31 @@
+====== LU04e - Ordnerstruktur ======
+<WRAP center round info 60%>
+Eine durchdachte Ordnerstruktur hilft nicht nur bei der Suche nach einer Datei, sie erleichtert auch die Sicherung von Dateien.
+</WRAP>
+
+===== Grundstruktur =====
+
+Die meisten Betriebssysteme erstellen bei der Installation Ordner für Dokumente, Bilder, Videos, ...
+Persönliche finde ich diese Struktur ziemlich nutzlos.
+Ich möchte meine Dateien nicht nach Art der Datei, sondern nach bestimmten Themen in Ordnern organisieren.
+Zum Beispiel möchte ich einen Ordner "Ferien" mit dem Unterordner "2020_Finland" haben.
+In diesem Unterordner sind dann Bilder, Buchungsbestätigung, ... zu diesen Ferien.
+
+Meine Datenstruktur orientiert sich an folgenden Punkten:
+  * 1. Ebene: Separate Ablagen für Beruf, Ausbildungen, Vereine, Privates
+  * 2. Ebene: Ordner nach Themen, z.B. Beruf => Anleitungen, Privates => Familie, ...
+  * Weitere Ebenen für einzelne Elemente, z.B. Beruf => Anleitungen => Git, Privates => Familie => Anika
+
+==== Sicherheit ====
+Ein Teilaspekt meiner Struktur ist auch die Datensicherheit.
+Manche Dateien darf ich auf keinen Fall verlieren, ein solcher Ordner wird als Teil meines Backups regelmässig gesichert.
+Andere Dateien enthalten sensitive Daten, diese will ich verschlüsselt speichern.
+
+===== Mut zur Veränderung =====
+Hin und wieder sollte man seine Ordnerstruktur überdenken.
+Suche ist ständig nach meinen Dateien, ist vielleicht die Struktur nicht geeignet.
+Dann kann es sich lohnen, die Struktur neu zu gestalten.
+
+----
+{{tag>m231-AnG}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

@@ -1,0 +1,57 @@
+====== LU01c - Ausgabe in der Konsole ======
+
+===== Einführung =====
+Die einfachste Form der Interaktion mit einem Benutzer sind Eingaben und Ausgaben in der Konsole.
+
+==== System.out.print() ====
+
+Für die Ausgabe verwenden wir den Befehl ''System.out.print()''.
+Dieser Befehl gibt einen beliebigen Text und auch Variablen in der Konsole aus.
+
+=== Beispiele ===
+<code java>
+  double summe = 15.75;
+  int    menge = 3;
+
+  System.out.print("Dieser Text wird in der Konsole angezeigt");  // Ausgabe einer Textkonstante
+  System.out.print("Summme = " + summe);                          // Ausgabe einer Textkonstante und einer Variable
+  System.out.print("" + menge);                                   // Ausgabe einer Variable
+</code>
+
+Im letzten Beispiel soll der Wert der Variable ''menge'' angezeigt werden.
+Da ''menge'' den Datentyp ''int'' hat, kann diese Variable nicht direkt ausgegeben werden.
+Die Ausgabe muss nämlich immer ein Text sein.
+Deshalb setzten wir einen leeren Text davor: ''... ("" + menge) ...''.
+Durch diese Verbindung zwischen Text und Variable wird die ganze Ausgabe als Text behandelt.
+
+==== Zeilenumbruch ====
+In einigen Situationen möchten wir innerhalb oder nach einer Ausgabe einen Zeilenumbruch einfügen.
+Das ist nützlich, wenn Sie mehrere Zeilen in der Konsole ausgeben möchten.
+Dazu können Sie einen speziellen Befehl ''System.out.println()'' verwenden, oder Sie geben das Steuerzeichen ''\n'' aus.
+
+=== System.out.println() ===
+
+Dieser Befehle funktioniert genauso wie ''System.out.print()''.
+Der einzige Unterschied besteht darin, dass nach der Ausgabe ein Zeilenumbruch ausgegeben wird.
+
+== Übung ==
+Probieren Sie die oben stehenden Ausgaben je einmal mit ''System.out.print(...)'' und einmal mit ''System.out.println(...)'' aus.
+Vergleichen Sie das Resultat in der Konsole.
+
+=== Steuerzeichen \n ===
+Das Steuerzeichen ''\n'' erzeugt einen Zeilenumbruch in der Ausgabe.
+Dadurch können Sie Zeilenumbrüche an jeder beliebigen Stelle einfügen.
+
+Der Befehle
+<code java>
+System.out.print("Menge: " + menge + "\nPreis: " + preis);
+</code>
+
+Erzeugt
+<code>
+Menge: 15
+Preis: 5.25
+</code>
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Marcel Suter

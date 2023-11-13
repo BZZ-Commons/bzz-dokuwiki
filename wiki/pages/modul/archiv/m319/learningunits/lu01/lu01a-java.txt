@@ -1,0 +1,25 @@
+====== LU01a - Wieso Java ======
+
+
+Die Bedeutung der Programmiersprache Java ist seit vielen Jahren konstant hoch. Dafür gibt es eine Reihe von Gründen, welche auch für die aktuelle Version von Java noch uneingeschränkt zutreffen. Einige wichtige sind:
+
+  * Plattformübergreifende Programmentwicklung: Java läuft auf fast allen Betriebssystemen und Systemumgebungen. Die Programmiersprache ist auf Betriebssystemen für den Server, für Microsoft Windows, Linux und Mac OS und für mobile Geräte verfügbar.
+  * Breite Anwendungspalette: Mit Java lassen sich so ziemlich alle Arten von Anwendungen erstellen. Von der App bis zur Desktop-Applikation, vom Web-Dienst bis hin zum Plug-in. Mit Ausnahme sehr systemnaher Programme wie Hardwaretreiber kann man in Java fast jede Art von Software realisieren.
+  * Moderner Sprachansatz: Java ist eine moderne Programmiersprache. Neuste Konzepte haben den Weg direkt in Java gefunden bzw. lassen sich ohne Probleme über Bibliotheken nachrüsten.
+  * Vielfältige Werkzeugunterstützung: Vom einfachen Texteditor bis hin zur komfortablen Entwicklungsumgebung hat der Entwickler die Qual der Wahl. Die Vielfalt der Werkzeuge sorgt für Konkurrenz, um den Entwickler bestmöglich zu unterstützen.
+  * Freie Verfügbarkeit: Compiler und Software-Development-Kit (SDK) stehen für alle gängigen Systeme zum freien Download bereit und sind in wenigen Augenblicken installiert und einsatzbereit.
+  * Breite Community: Wer in Java entwickelt, findet zu allen wichtigen Fragen vielfältige Unterstützung in der Community.
+
+Gerade in der letzten Zeit erfährt Java wieder einen guten Zustrom. Der Grund sind Applikationen für mobile Geräte, auf welchen das Betriebssystem Android läuft. Apps für Android werden unter anderem in Java programmiert. Zwar kommt zusätzlich eine eigene Systemschnittstelle (API) zum Einsatz, um die Besonderheiten der mobilen Devices abzudecken, doch die Sprache im Hintergrund bleibt Java. Die eingesetzten Werkzeuge und das Vorgehen sind dem versierten Java-Entwickler auch bestens vertraut.
+
+Grund genug im Modul 319 eine Einführung in Java zu machen. In diesem ersten Teil erfahren Sie:
+
+  * Was ist Java: Wir erklären, wie ein Java-Programm für die unterschiedlichen Systeme grundsätzlich erstellt wird.
+  * Die Systemvoraussetzungen herstellen: Bevor man mit dem Programmieren beginnen kann, ist Java in der Entwicklungsversion zu installieren. Dank vorgefertigter Pakete ist dies kein Hexenwerk.
+  * Werkzeugunterstützung: Ein Handwerker ist nur so gut wie seine Werkzeuge. Das gilt auch für die Softwareentwicklung. Es geht um die Auswahl und Installation einer integrierten Entwicklungsumgebung (IDE).
+  * Professionell starten: Um gleich professionell mit der Entwicklung einzusteigen, ergibt es viel Sinn, eine Versionsverwaltung zu installieren bzw. darauf einen Onlinezugriff einzurichten.
+  * Erstes Programm: Mit Hilfe des Assistenten erzeugen wir den Rahmen einer ersten Java-Anwendung und können diese bereits ausführen.
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Kevin Maurizi

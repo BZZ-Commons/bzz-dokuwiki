@@ -1,0 +1,31 @@
+====== LU16c - Sichere DNS Abfragen ======
+<WRAP center round info 60%>
+Selbst wenn meine Daten mit HTTPS gesichert sind, werden DNS-Anfragen noch oft im Klartext und ungesichert übertragen.
+</WRAP>
+
+Ungesicherte DNS-Abfragen bieten zwei Sicherheitslücken:
+  * Ein Angreifer kann mir gefälschte DNS-Einträge liefern und mich somit auf seinen Server umleiten.
+  * Jeder Server über den meine Anfrage läuft, kann die Daten mitlesen und aufzeichnen.
+
+=== Weiteres Material ===
+  * [[https://www.unibesecure.unibe.ch/tipps__tricks/dot_doh_und_dnssec/index_ger.html]]
+  * [[https://www.chip.de/news/Sicherer-surfen-So-verschluesseln-Sie-Ihren-Browser_184307520.html]]
+
+===== Domain Name System Security Extension (DNSSEC) =====
+//Siehe auch [[wpde>Domain_Name_System_Security_Extensions]]//
+
+DNSSEC stellt die Authentizität und die Integrität des Domain Name Systems sicher.
+Ähnlich wie bei HTTPS wird mittels Signatur geprüft, ob die DNS-Daten echt sind.
+Die Daten werden jedoch nicht verschlüsselt übertragen.
+
+===== Verschlüsselte DNS-Anfragen =====
+Die Auswertung meiner DNS-Anfragen lässt Schlüsse über mein Surfverhalten und damit über meine Gewohnheiten zu.
+Ausserdem nutzen viele Web Content Filter die DNS-Anfragen, um unerwünschte Webseiten zu blockieren.
+Um dies zu verhindern, gibt es verschiedene Ansätze, die DNS-Anfragen verschlüsselt zu übertragen.
+
+  * [[wpde>DNS_over_TLS]] DoT
+  * [[wpde>DNS_over_HTTPS]] DoH
+
+----
+{{tag>m231-AnG}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

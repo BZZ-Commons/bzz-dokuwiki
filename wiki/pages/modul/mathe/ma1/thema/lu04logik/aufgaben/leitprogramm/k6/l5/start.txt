@@ -1,0 +1,57 @@
+===Lösung 5===
+**Aufgabe 1**\\
+Wie viele Zeilen weist eine Wahrheitstabelle auf, wenn 4 logische Eingangsvariablen vorliegen?\\
+<color #00a2e8>n = 4 \(\Rightarrow \) 2\(^n\) = 2\(^4\) = 16 Zeilen</color>\\
+\\
+**Aufgabe 2**\\
+Notieren Sie sich die Wahrheitstabelle einer UND-Operation mit 3 Eingangsvariablen A, B, C und der Ausgangsvariablen X.\\
+<WRAP left>
+|      <color #00a2e8>IN</color>               |||    ¦   |  <color #00a2e8>OUT</color>  |
+^   <color #00a2e8>A</color>   ^   <color #00a2e8>B</color>   ^   <color #00a2e8>C</color>   ^  ¦   ^   <color #00a2e8>X</color>   ^
+|   <color #00a2e8>0</color>   |   <color #00a2e8>0</color>   |   <color #00a2e8>0</color>   |  ¦   |   <color #00a2e8>0</color>   | 
+|   <color #00a2e8>0</color>   |   <color #00a2e8>0</color>   |   <color #00a2e8>1</color>   |  ¦   |   <color #00a2e8>0</color>   |
+|   <color #00a2e8>0</color>   |   <color #00a2e8>1</color>   |   <color #00a2e8>0</color>   |  ¦   |   <color #00a2e8>0</color>   |
+|   <color #00a2e8>0</color>   |   <color #00a2e8>1</color>   |   <color #00a2e8>1</color>   |  ¦   |   <color #00a2e8>0</color>   |
+|   <color #00a2e8>1</color>   |   <color #00a2e8>0</color>   |   <color #00a2e8>0</color>   |  ¦   |   <color #00a2e8>0</color>   |
+|   <color #00a2e8>1</color>   |   <color #00a2e8>0</color>   |   <color #00a2e8>1</color>   |  ¦   |   <color #00a2e8>0</color>   |
+|   <color #00a2e8>1</color>   |   <color #00a2e8>1</color>   |   <color #00a2e8>0</color>   |  ¦   |   <color #00a2e8>0</color>   |
+|   <color #00a2e8>1</color>   |   <color #00a2e8>1</color>   |   <color #00a2e8>1</color>   |  ¦   |   <color #00a2e8>1</color>   |
+</WRAP> 
+<WRAP clear></WRAP>
+**Aufgabe 3**\\
+Gegeben ist die folgende Wahrheitstabelle\\
+<WRAP left>
+|      IN       ||  ¦   |  OUT  |
+^   A   ^   B   ^   ¦   ^   C   ^
+|   0   |   0   |   ¦   |   0   |
+|   0   |   1   |   ¦   |   1   |
+|   1   |   0   |   ¦   |   1   |
+|   1   |   1   |   ¦   |   0   |
+</WRAP>
+<WRAP clear></WRAP>
+Notieren Sie sich den entsprechenden Ausdruck, der die Zeilen mit der Wertigkeit 1 wieder gibt. (vergl. dazu die Theorie)\\
+<color #00a2e8>C = (\(\neg\)A \(\wedge\) B) \(\vee\) (A \(\wedge\) \(\neg\)B)</color>\\
+\\
+**Aufgabe 4**\\
+Gegeben ist folgender Ausdruck:
+X = (\(\neg\)A \(\wedge\) \(\neg\)B \(\wedge\) C) \(\vee\) (A \(\wedge\) B \(\wedge\) \(\neg\)C)\\
+Erstellen Sie die passende Wahrheitstabelle.\\
+<WRAP left>
+|      <color #00a2e8>IN</color>               |||    ¦   |  <color #00a2e8>OUT</color>  |
+^   <color #00a2e8>A</color>   ^   <color #00a2e8>B</color>   ^   <color #00a2e8>C</color>   ^  ¦   ^   <color #00a2e8>X</color>   ^               |
+|   <color #00a2e8>0</color>   |   <color #00a2e8>0</color>   |   <color #00a2e8>0</color>   |  ¦   |   <color #00a2e8>0</color>   |
+|   <color #00a2e8>0</color>   |   <color #00a2e8>0</color>   |   <color #00a2e8>1</color>   |  ¦   |   <color #00a2e8>1</color>   | \(\neg\)A\(\wedge\)\(\neg\)B\(\wedge\)C |
+|   <color #00a2e8>0</color>   |   <color #00a2e8>1</color>   |   <color #00a2e8>0</color>   |  ¦   |   <color #00a2e8>0</color>   |
+|   <color #00a2e8>0</color>   |   <color #00a2e8>1</color>   |   <color #00a2e8>1</color>   |  ¦   |   <color #00a2e8>0</color>   |
+|   <color #00a2e8>1</color>   |   <color #00a2e8>0</color>   |   <color #00a2e8>0</color>   |  ¦   |   <color #00a2e8>0</color>   |
+|   <color #00a2e8>1</color>   |   <color #00a2e8>0</color>   |   <color #00a2e8>1</color>   |  ¦   |   <color #00a2e8>0</color>   |
+|   <color #00a2e8>1</color>   |   <color #00a2e8>1</color>   |   <color #00a2e8>0</color>   |  ¦   |   <color #00a2e8>1</color>   | A\(\wedge\)B\(\wedge\)\(\neg\)C |
+|   <color #00a2e8>1</color>   |   <color #00a2e8>1</color>   |   <color #00a2e8>1</color>   |  ¦   |   <color #00a2e8>0</color>   |
+</WRAP> 
+<WRAP clear></WRAP>
+\\
+\\
+[[modul:mathe:ma1:thema:lu04logik:aufgaben:leitprogramm:k6:start|zum Leitprogramm]]
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) René Probst

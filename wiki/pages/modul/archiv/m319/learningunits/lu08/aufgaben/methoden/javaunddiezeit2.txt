@@ -1,0 +1,60 @@
+Durch das Klonen haben Sie den unten stehenden Code in Ihre IDE kopiert. 
+Arbeiten Sie sich nun durch die TODOs durch.
+
+<WRAP center round box 80%>
+<code java>
+import java.util.Scanner;
+/**
+ * Template Klasse für simple Java-Scanner-Programme
+ *
+ * @author Ibi dumm
+ * @since 2042.01.01
+ * @version 0.1
+ */
+public class JavaZeit {
+
+    static Scanner scanner;
+
+    public JavaZeit(){
+        scanner = new Scanner(System.in);
+    }
+
+    public static void main(String[] args) {
+        JavaZeit javaZeit = new JavaZeit();
+        javaZeit.run();
+        scanner.close();
+    }
+
+    private void run() {
+        // TODO 1: Erstellen Sie eine Klasse Person mit folgenden Attributen:
+        //  Nachname, Vorname, Adresse (Strasse, Ort, PLZ), Geburtsdatum
+        //  Nebenbemerkung:
+        //          1. Adresse ist eine eigene Klasse
+        //          2. Geburtsdatum hat den Datentyp "LocalDate"
+
+        // TODO 2: Erstellen Sie sinnvolle Konstruktoren
+
+        // TODO 3: Erstellen Sie sinnvolle getter/setter
+
+        // TODO 4: Implementieren Sie die Methode toString();
+
+        // TODO 5: Comitten und Pushen Sie
+
+        // TODO 6: Erstellen Sie die Methode getAlter(), die das Alter aus dem Geburtsdatum berechnet.
+
+        // TODO 7: Machen Sie die Klasse Person vergleichbar nach Alter (Implementieren Sie Comparable<T>
+
+        // TODO 8: Erstellen Sie 5 Personen und fügen Sie diese einer Liste hinzu.
+
+        // TODO 9: Lassen Sie die Liste sortieren.
+
+        // TODO 10: Geben Sie die Liste aus.
+
+        // TODO 11: Comitten und Pushen Sie
+
+    }
+}
+</code>
+</WRAP>
+
+

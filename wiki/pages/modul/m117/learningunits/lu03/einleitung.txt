@@ -1,0 +1,15 @@
+====== LU03a - Einleitung ======
+
+Beim Bau eines Netzwerks wird man zwangsläufig mit den unterschiedlichen Kabel- und Funktechnologien konfrontiert. Bei der Verwendung einer bestimmten Technologie sollte unbedingt darauf geachtet werden, dass diese auf einem international anerkannten und offenen Standard basiert. Bei Netzwerklösungen, die auf proprietären Standards basieren, besteht die Gefahr, dass Produkte (Komponenten) verschiedener Hersteller untereinander nicht funktionieren, sprich diese zueinander inkompatibel sind. In der Netzwerktechnik kommen heutzutage nur noch wenige unterschiedliche Kabeltypen zur Anwendung. Zur klaren Unterscheidung der Eigenschaften dieser Kabeltypen ist es  wichtig, die gebräuchlichsten IEEE-Standards des Bereichs 802.3 zu kennen.
+
+==== Eigenschaften von Netzwerk-Kablen ====
+Für die Übertragung der Daten in einem Netzwerk wird ein sog. Übertragungsmedium benötigt. Bei einem Netzwerk, das auf Kabeln basiert, spricht man in diesem Fall von einer «gebundenen» Übertragung. Die Datenübertragung wird mittels elektrischer (Strom) oder optischer Signale vorgenommen. Diese Signale sind auf das jeweilige Übertragungsmedium gebunden. Für die Realisation eines Netzwerks stehen verschiedene Kabeltypen zur Auswahl. Jeder Kabeltyp besitzt unterschiedliche spezifische Eigenschaften. Jede Übertragung im Kabel wird durch bestimmte Faktoren beeinflusst. Diese Faktoren müssen besonders beachtet werden:
+  * Elektromagnetische Störungen (Magnetfelder): Elektromagnetische Störfelder (Magnetfelder), können die Übertragung innerhalb eines Kabels empfindlich stören, im Extremfall sogar verunmöglichen. Die Signale in einem Übertragungsmedium können durch starke Magnetfelder «verformt» werden. Starke Magnetfelder entstehen durch grosse Elektromotoren (z. B. Liftmotor). Aber auch normale Handys verursachen Magnetfelder, sog. Elektrosmog, der zu Störungen bei der Datenübertragung führen kann.
+  * Der Widerstand eines Übertragungsmediums (Dämpfung): Die Signale in einem Kabel sind entweder elektrischer Strom oder Licht. Jedes Übertragungsmedium besitzt einen inneren Widerstand, den sog. Leitungswiderstand (Einheit Ohm Ω). Je nach Material des Übertragungsmediums variiert der Leitungswiderstand recht deutlich. Je grösser der Widerstand, desto mehr Energie wird innerhalb des Übertragungsmediums während der Übertragung vernichtet, d. h., die Signalstärke nimmt ab, sprich wird gedämpft. Aus diesem Grund muss bei jedem Übertragungsmedium dessen maximal zulässige Länge beachtet werden.
+
+
+----
+
+{{tag>m117}}
+
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Daniel Garavaldi, Andre Probst

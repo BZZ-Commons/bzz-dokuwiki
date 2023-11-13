@@ -1,0 +1,18 @@
+====== Zusatzaufgabe ======
+
+Ihr Programm überprüft mittlerweile ob die eingegebene Zahl auch realistisch ist, ergänzen Sie den Code nun, damit auch nur natürliche Zahlen (keine Buchstaben, Kommazahlen, etc.) eigeneben werden können.
+
+
+Vielleicht hilft ihnen dieses Code-Schnipsel weiter:
+<code java>
+
+int zahl;
+
+System.out.print("Zahl eingeben >");
+while(!scanner.hasNextInt()){  // Überprüfen ob der User eine Zahl eigegeben hat
+  System.out.print("Bitte eine natürliche Zahl eingeben. Zahl >");
+  scanner.nextLine(); // Scanner leeren, damit der User erneut eine Zahl eingeben muss
+}
+zahl = scanner.nextInt(); // Überprüfte Zahl einlesen
+        
+</code>

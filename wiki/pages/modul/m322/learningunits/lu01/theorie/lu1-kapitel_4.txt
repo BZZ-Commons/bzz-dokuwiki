@@ -1,0 +1,32 @@
+==== 4. Sieben Grundsätze nach ISO 9241 ====
+===4.1 Aufgabenangemessenheit===
+<WRAP info>Ein Dialog ist in dem Maße aufgabenangemessen, wie er den Benutzer unterstützt, seine Arbeitsabläufe effektiv und effizient zu erledigen.</WRAP>
+Hierfür ist eine gute Kenntnis der Arbeitsaufgaben erforderlich, auf deren Basis konkret entschieden werden kann, ob ein Dialog(schritt) für die Arbeitserledigung angepasst ist.\\
+[[https://www.ergo-online.de/ergonomie-und-gesundheit/software/dialoggestaltung/grundsatz-aufgabenangemessenheit/definition/|weiterführende Erläuterungen und Beispiele]]
+===4.2 Selbstbeschreibungsfähigkeit===
+<WRAP info>Ein Dialog ist in dem Maße selbstbeschreibungsfähig, wie jeder einzelne Dialogschritt durch Rückmeldung unmittelbar verständlich ist oder dem Benutzer erklärt wird, wenn er die entsprechende Information verlangt.</WRAP>
+Dies versetzt den Benutzer in die Lage, jederzeit den Zustand seines Dialoges und wie es dazu kam, zu erkennen, ohne sich in besonderen Masse erinnern zu müssen.\\
+[[https://www.ergo-online.de/ergonomie-und-gesundheit/software/dialoggestaltung/grundsatz-selbstbeschreibungsfaehigkeit/definition/|weiterführende Erläuterungen und Beispiele]]
+===4.3 Steuerbarkeit===
+<WRAP info>Ein Dialog ist in dem Maße steuerbar, wie der Anwender in der Lage ist, den gesamten Dialogablauf zu beeinflussen.</WRAP>
+Dies heißt: Der Benutzer bestimmt Arbeitstempo sowie Einsatz und Reihenfolge der Ar-beitsmittel, aber auch die Art und Weise der Rückmeldungen des Systems.\\
+[[https://www.ergo-online.de/ergonomie-und-gesundheit/software/dialoggestaltung/grundsatz-steuerbarkeit/definition/|weiterführende Erläuterungen und Beispiele]]
+===4.4 Erwartungskonformität===
+<WRAP info>Ein Dialog ist in dem Maße erwartungskonform, wie er den Kenntnissen aus bisherigen Arbeitsabläufen, der Ausbildung und den Erfahrungen des Benutzers sowie allgemein anerkannten Konventionen entspricht.</WRAP>
+Dies soll sicherstellen, dass das Dialogsystem die Erwartungshaltung des Benutzers, die er sich durch Ausbildung, Erfahrung und Kenntnis von Konventionen erworben hat, im Wesentlichen erfüllt.\\
+[[https://www.ergo-online.de/ergonomie-und-gesundheit/software/dialoggestaltung/grundsatz-erwartungskonformitaet/definition/|weiterführende Erläuterungen und Beispiele]]
+===4.5 Fehlerrobustheit (-toleranz)===
+<WRAP info>Ein Dialog ist in dem Maße fehlerrobust, wie das beabsichtigte Arbeitsergebnis trotz erkennbar fehlerhafter Eingaben mit minimalen oder ganz ohne Korrekturaufwand erreicht wird.</WRAP>
+Das Dialogsystem soll Fehlersituationen möglichst vermeiden oder auffangen und bei der Behebung helfen, so dass das Arbeitsergebnis ohne großen Schaden dennoch erreicht werden kann.\\
+[[https://www.ergo-online.de/ergonomie-und-gesundheit/software/dialoggestaltung/grundsatz-fehlertoleranz/grundsatz-fehlertoleranz/|weiterführende Erläuterungen und Beispiele]]
+===4.6 Individualisierbarkeit===
+<WRAP info>Ein Dialog ist in dem Maße individualisierbar, wie er Anpassungen an individuelle Benutzerbelange und Benutzerfähigkeiten in Hinblick auf seine Arbeitsaufgabe zulässt.</WRAP>
+Hierdurch wird der Benutzer in die Lage versetzt das Dialogsystem den Arbeitserfordernissen oder seinen Bedürfnissen und Fertigkeiten anzupassen.\\
+[[https://www.ergo-online.de/ergonomie-und-gesundheit/software/dialoggestaltung/grundsatz-individualisierbarkeit/definition/|weiterführende Erläuterungen und Beispiele]]
+===4.7 Lernförderlichkeit===
+<WRAP info>Ein Dialog ist in dem Maße lernförderlich, wie er dem Benutzer während des Erlernens Unterstützung und Anleitung gibt.</WRAP>
+Der Benutzer soll es hierdurch leichter haben ein mentales Modell des Systems zu bilden und somit die Anwendung besser zu verstehen und die Bedienung besser zu erinnern.\\
+[[https://www.ergo-online.de/ergonomie-und-gesundheit/software/dialoggestaltung/grundsatz-lernfoerderlichkeit/definition/|weiterführende Erläuterungen und Beispiele]]
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) René Probst

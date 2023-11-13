@@ -1,0 +1,26 @@
+====== LU03a - Wieso Python ======
+
+
+Die Bedeutung der Programmiersprache Python ist seit vielen Jahren konstant hoch. Dafür gibt es eine Reihe von Gründen, welche auch für die aktuelle Version von Python noch uneingeschränkt zutreffen. Einige wichtige sind:
+
+  * Plattformübergreifende Programmentwicklung: Python läuft auf fast allen Betriebssystemen und Systemumgebungen.
+  * Breite Anwendungspalette: Mit Python lassen sich so ziemlich alle Arten von Anwendungen erstellen. Von der App bis zur Desktop-Applikation, vom Web-Dienst bis hin zum Plug-in. Mit Ausnahme sehr systemnaher Programme wie Hardwaretreiber kann man in Python fast jede Art von Software realisieren.
+  * Moderner Sprachansatz: Python ist eine moderne Programmiersprache. Neuste Konzepte haben den Weg direkt in Python gefunden bzw. lassen sich ohne Probleme über Bibliotheken nachrüsten.
+  * Vielfältige Werkzeugunterstützung: Vom einfachen Texteditor bis hin zur komfortablen Entwicklungsumgebung hat der Entwickler die Qual der Wahl. Die Vielfalt der Werkzeuge sorgt für Konkurrenz, um den Entwickler bestmöglich zu unterstützen.
+  * Freie Verfügbarkeit: Der Interpreter steht für alle gängigen Systeme zum freien Download bereit und ist in wenigen Augenblicken installiert und einsatzbereit.
+  * Breite Community: Wer in Python entwickelt, findet zu allen wichtigen Fragen vielfältige Unterstützung in der Community.
+
+Gerade in der letzten Zeit erfährt Python einen grosses Wachstum. Python ist eine der beliebtesten Programmiersprachen der Welt. In Python hat man vom Empfehlungsalgorithmus von Netflix bis zur Software für selbstfahrende Autos alles programmiert. Python ist eine Allzwecksprache, was bedeutet, dass sie für eine Reihe von Anwendungen entwickelt wurde, darunter Data Science, Software- und Web-Entwicklung, Automatisierung und allgemein für die Erledigung von Aufgaben.
+
+Grund genug im Modul 319 eine Einführung in Python zu machen. In diesem ersten Teil erfahren Sie:
+
+  * Was ist Python: Wir erklären, wie ein Python-Programm aufgebaut ist und ausgeführt wird.
+  * Die Systemvoraussetzungen herstellen: Bevor man mit dem Programmieren beginnen kann, ist Python auf dem PC zu installieren.
+  * Werkzeugunterstützung: Ein Handwerker ist nur so gut wie seine Werkzeuge. Das gilt auch für die Softwareentwicklung. Es geht um die Auswahl und Installation einer integrierten Entwicklungsumgebung (IDE).
+  * Professionell starten: Um gleich professionell mit der Entwicklung einzusteigen, ergibt es viel Sinn, eine Versionsverwaltung zu installieren.
+  * Erstes Programm: Mit Hilfe der IDE erzeugen wir den Rahmen einer ersten Python-Anwendung und können diese bereits ausführen.
+
+
+----
+{{tag>m319-LU03}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Kevin Maurizi

@@ -1,0 +1,43 @@
+====== LU99.A03: Vielfache von 3 und 5 ======
+//Quelle: [[https://projecteuler.net/problem=1]]//
+
+===== Aufgabe =====
+Das Programm soll alle natürlichen Zahlen addieren, die ein Vielfaches von 3 oder 5 sind.
+Der Benutzer gibt zu Beginn ein, bis zu welcher Zahl die Vielfachen gesucht werden. 
+Das Programm soll die Summe aller Vielfachen ausgeben.
+
+===== Beispiele =====
+==== Limite: 10 ====
+<WRAP center round info 60%>
+Der Benutzer möchte alle Vielfachen von 3 und 5 addieren, die kleiner als 10 sind.
+Wir erhalten die Zahlen 3, 5, 6 und 9.
+Die Summe dieser Zahlen ist 23
+</WRAP>
+
+//Die Zeilen mit *n* stehen für die Benutzereingaben//
+<code>
+*10*
+23
+
+*100*
+2318
+</code> 
+
+===== Programmlogik =====
+  * Sie benötigen drei Variablen.
+  * Erstellen Sie eine Iteration von 1 bis zur Limite.
+  * Ob eine Zahl ein Vielfaches von 3 oder 5 ist, kann mit der mathematischen Operation **modulo** geprüft werden.
+
+===== Vorgehen =====
+  - Akzeptieren Sie die Aufgabe im Classroom über den Link im Moodle-Kurs.
+  - Clonen Sie die Aufgabe in PyCharm.
+  - Erstellen Sie das Programm in der Datei ''threeandfive.py'' mit Python.
+  - Führen Sie einen Commit & Push des fertigen Programms durch.
+
+<WRAP center round info 60%>
+In der Datei "threeandfive_test.py" finden Sie ein paar Tests.
+Diese können Sie nutzen, um ihre Lösung zu prüfen.
+</WRAP>
+
+{{tag>319-B1F 319-E1F 319-F1F}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

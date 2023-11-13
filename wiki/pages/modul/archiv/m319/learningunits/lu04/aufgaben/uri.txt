@@ -1,0 +1,20 @@
+====== Aufgabe: U = R * I ======
+
+===== Aufgabe=====
+
+Nach der bekannten Formel U = R * I werden Spannung (U [Volt]), Widerstände (R [Ohm, Ω ]) und Stromstärken (I [Ampère]) umgerechnet. Schreiben
+Sie ein Programm, bei dem der Anwender wahlweise zwei der drei Zahlen aus
+der Formel eingeben kann. Für die gesuchte Größe soll der Anwender ein Fragezeichen (?) eingeben. Das Programm berechnet dann die dritte Zahl; diejenige,
+bei der der Anwender das Fragezeichen eingegeben hat.
+Beispiel:
+
+<code java>
+U > 240
+R > ?
+I > 2.5
+Resultat R = 96 Ohm
+</code>
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Kevin Maurizi, [[https://programmieraufgaben.ch|Philipp Gressly]]

@@ -1,0 +1,63 @@
+====== 4 Sequenzdiagramm ======
+<WRAP info>Das Sequenzdiagramm zeigt die Interaktion von Objekten im zeitlichen Ablauf auf. Es sind somit mindesten 2 Objekte beteiligt</WRAP>.
+====UML-Notation====
+{{:modul:m320:merkblaetter:lu03-merkblatt4.png?600|}}
+==== (1) Instanziierung eines Objektes ====
+<code python>
+class A:
+  # Klasse A erzeugt selber ein Objekt der Klasse B.
+
+  def __init__(self):
+    # Erzeugung des Objektes vom Typ B im Konstruktor von A
+    self._anObject = B()
+    pass
+</code>
+==== (2) Selbstaufruf einer Methode mit Wertrückgabe ====
+<code python>
+class A:
+  # Klasse A ruft eine eigene Methode – hier mit einem Rückgabewert – auf 
+
+  @property
+  def value(self):
+    return self._value
+
+  def doSomething(self):
+    .....
+    v = self.value
+    pass
+</code>
+
+==== (3) Aufruf einer Methode in einer anderen Klasse====
+<code python> 
+class A:                                      class B:
+  # A ruft eine Methode der Klasse B auf.        # B stellt eine Methode bereit
+  
+  def doSomething(self):                         def doIt(self):
+    .....                                           pass
+    self._anObject.doIt()
+</code>
+
+==== (4) Aufruf einer Methode mit Wertrückgabe ====
+<code python>
+class A:                                      class B:
+ # A ruft Methode von B auf,	                # B stellt eine Methode bereit
+ # die  einen Wert liefert.e	   
+	                                        @property
+ def doSomething(self):                         def text(self):
+    .....                                         return aText
+    txt = self._anObject.text
+    pass
+</code>
+
+==== Objektzerstörung ====
+Nicht mehr benutzte Objekte müssen aus dem Speicher entfernt werden, damit der belegte Speicherplatz wieder freigegeben werden kann.\\
+Python führt eine ''garbage collection''. Diese ist besorgt, dass nicht mehr benutze Objekte aus dem Speicher entfernt werden.
+<code python>
+class A:                                      class B:
+  ....                                          # Destruktor definieren. Hier kann die Klasse 
+                                                # ordentlich beendet werden.
+  del(self._anObject)                           def __del__(self):
+    pass                                           pass
+</code>
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) René Probst

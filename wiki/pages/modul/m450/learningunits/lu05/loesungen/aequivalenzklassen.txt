@@ -1,0 +1,27 @@
+====== LU05.L01 - Äquivalenzklassen "Artikeldaten" ======
+
+^ Nr ^ Eingabe ^ Klasse ^
+^ Gültige Klassen ^^
+| 1 | Artikelnummer | 5-stellige Ganzzahl  |
+| 2 | Artikelbezeichnung | 3-30 Buchstaben und Ziffern, kein Leerzeichen |
+| 3 | Einheit | Stück |
+| 4 | Einheit | Kilogramm |
+| 5 | Einheit | Meter |
+| 6 | Einheit | Pack |
+| 7 | Preis | Dezimalzahl, 0.00 - 1'000.00 mit 2 Nachkommastellen |
+^ Ungültige Klassen ^^
+| 8 | Artikelnummer | formal falsch |
+| 9 | Artikelnummer | mehr als 5 Ziffern |
+| 10 | Artikelnummer | weniger als 5 Ziffern  |
+| 11 | Artikelbezeichnung | weniger als 3 Zeichen |
+| 12 | Artikelbezeichnung | mehr als 30 Zeichen |
+| 13 | Artikelbezeichnung | formal falsch |
+| 14 | Einheit | ungültige Einheit |
+| 15 | Preis | kleiner 0.00  |
+| 16 | Preis | grösser 1'000.00  |
+| 17 | Preis | mehr als 2 Nachkommastellen  |
+| 18 | Preis | formal falsch  |
+
+----
+{{tag>M450-LU05}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

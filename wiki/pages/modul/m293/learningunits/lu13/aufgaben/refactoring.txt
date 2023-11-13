@@ -1,0 +1,29 @@
+====== LU13.A02 - Website mit Bootstrap anpassen ======
+<WRAP center round todo 60%>
+In der [[modul:m293:learningunits:lu08:aufgaben:zusammenfassung|LU08]] haben Sie eine Zusammenfassung über das Modul erstellt. Fügen Sie diesem Projekt nun Bootstrap hinzu und weisen Sie entsprechende Klassen zu.
+
+Richten Sie ihr Augenmerk vorallem auf folgende Bausteine:
+  * Formular
+  * Navigation
+  * Spalten --> responsive Design
+
+</WRAP>
+
+
+===== Vorgehen =====
+  - Öffnen Sie ihr Projekt LU08.A01
+  - Importieren Sie Bootstrap
+  - Passen Sie die Website an, damit Sie: 
+    - Responsive ist
+    - Das Formular mit Bootstrap gestyled ist 
+    - Die Navigation als Navbar über die ganze Seite geht
+
+<WRAP center round tip 60%>
+  * Kümmern Sie sich um ein Element nach dem anderen. Zum Beispiel könnten Sie zuerst die Navigation anpassen, danach das Formular, ...
+  * **Weniger ist mehr**: Vermeiden Sie unnötig viele Klassen, die unter Umständen gar keinen Einfluss haben. Versuchen Sie das gewünschte Verhalten mit so wenig Klassen wie möglich zu erreichen.
+
+</WRAP>
+
+----
+{{tag>m293-LU13}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Kevin Maurizi, Marcel Suter

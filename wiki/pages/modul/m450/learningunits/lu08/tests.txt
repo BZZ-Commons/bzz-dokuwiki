@@ -1,0 +1,48 @@
+====== LU08a - Resultate auswerten ======
+
+<WRAP center round info 60%>
+Mittels //tests// kann Postman die Antwort einer API automatisiert auswerten.
+</WRAP>
+
+Im Reiter //tests// kannst du mit Javascript eigene Funktionen schreiben, um das Resultat eines Requests auszuwerten.
+Dadurch zeigt die Postman direkt an, ob der Request das erwartete Resultat liefert oder nicht.
+
+===== http-Statuscode prüfen =====
+Im einfachsten Fall will ich nur den http-Statuscode überprüfen:
+
+<code javascript>
+pm.test("Status test", function () {
+    pm.response.to.have.status(200);
+});
+</code>
+
+Diese Zeilen reichen schon, damit Postman den http-Statuscode überprüft.
+Ein paar Erklärungen:
+  * "Status test" ist der Name meines Tests. Dieser wird im Testprotokoll angezeigt und sollte möglichst aussagekräftig sein.
+  * Ich prüfe hier ob die API mit Status **200** antwortet. Je nach Testfall würde ich unterschiedliche Statuscodes erwarten.
+
+===== Daten in der Response prüfen =====
+Wenn ein Request Daten von der API anfordert, wollen wir den Inhalt der Response überprüfen.
+Schliesslich wollen wir nicht irgendwelche Daten lesen, sondern einen bestimmten Datensatz.
+
+<code javascript>
+pm.test("Data test", function() {
+    pm.response.to.be.json;
+    const responseJson = pm.response.json();
+    pm.expect(responseJson.givenname).to.eql("Eva");
+    pm.expect(responseJson.age).to.eql(28);
+});
+</code>
+
+In diesem Beispiel prüfen wir drei Elemente der Response-Daten:
+  * Die Response muss im JSON-Format sein (''pm.response.to.be.json;'')
+  * Der Vorname muss "Eva" sein (''pm.expect(responseJson.givenname).to.eql("Eva");'')
+  * Das Alter muss 28 sein (''pm.expect(responseJson.age).to.eql(28);'')
+
+Trifft irgendeine dieser Bedingungen nicht zu, löst Postman eine Exception aus und zeigt den Request als fehlgeschlagen an.
+
+Im [[https://learning.postman.com/docs/writing-scripts/test-scripts/|Postman Learning Center]] findest du noch weitere Beispiele und Möglichkeiten für Tests.
+
+----
+{{tag>M450-LU08}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

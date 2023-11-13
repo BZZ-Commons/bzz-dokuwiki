@@ -1,0 +1,79 @@
+====== LU06.A02: Vornamen ======
+<WRAP center round todo 60%>
+Erstelle ein Programm, welches eine Liste mit Vornamen verarbeitet.
+</WRAP>
+<HTML>
+
+<iframe src="https://trinket.io/embed/python3/b7552cd23b?outputOnly=true&start=result" width="100%" height="200" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+</HTML>
+
+Das Programm wird Schritt für Schritt aufgebaut.
+
+===== Auftrag =====
+Zur besseren Übersicht sind die Anweisungen mit Farben codiert:
+  * <color green>Diese Anweisung ist neu</color>
+  * <color red>Diese Anweisung wird nicht mehr benötigt</color>
+  * Diese Anweisung bleibt bestehen.
+
+===== Schritt 1 =====
+Aus einer vorgegebenen Liste mit Vornamen, soll der dritte Vorname ausgegeben werden.
+
+==== Programmlogik ====
+  * <color green>Definiere eine Variable für eine neue Liste.</color>
+  * <color green>Speichere die fünf Vornamen Petra, Bruce, Urs, Amelia, Jon in dieser Liste.</color>
+  * <color green>Gib den dritten Vornamen aus der Liste aus.</color>
+
+<WRAP center round info 60%>
+Testen Sie die Funktion mit ''test_step1'' 
+</WRAP>
+
+===== Schritt 2 =====
+Das Programm füllt die Liste mit den Vornamen, die der Benutzer eingibt.
+
+===== Programmlogik =====
+  * Definiere eine Variable für eine neue Liste.
+  * <color red>Speichere fünf verschiedenen Vornamen in dieser Liste.</color>
+  * <color green>Erstelle eine Iteration, die 5x durchgeführt wird:</color>
+    * <color green>Der Benutzer gibt einen Vornamen ein.</color>
+    * <color green>Das Programm speichert diese Eingabe am Ende der Liste.</color>
+  * Gib den dritten Vornamen aus der Liste aus. 
+<WRAP center round info 60%>
+Testen Sie die Funktion mit ''test_step2'' 
+</WRAP>
+
+==== Schritt 3 ====
+Der Benutzer bestimmt, welchen Vornamen das Programm ausgeben soll.
+
+==== Programmlogik ====
+  * Definiere eine Variable für eine neue Liste.
+  * Erstelle eine Iteration, die 5x durchgeführt wird:
+    * Der Benutzer gibt einen Vornamen ein.
+    * Das Programm speichert diese Eingabe am Ende der Liste.
+  * <color red>Gib den dritten Vornamen aus der Liste aus.</color>
+  * <color green>Der Benutzer gibt eine Zahl von 1 bis 5 ein.</color>
+  * <color green> Gib den vom Benutzer gewählten Vornamen aus der Liste aus.</color>
+<WRAP center round info 60%>
+Testen Sie die Funktion mit ''test_step3'' 
+</WRAP>
+
+===== Vorgehen =====
+
+  - Akzeptiere das GitHub Classroom Assignment im Moodlekurs.
+  - Klone das Repository in PyCharm.
+  - Codiere die Programmlogik in ''givenname.py''.
+  - Teste dein Programm mit den Testfällen in ''givenname_test.py''.
+  - Führe einen Commit und einen Push durch.
+
+=== Abgabe ===
+Die Abgabe erfolgt durch den Push ins GitHub Repository.
+In Moodle ist keine Abgabe vorgesehen oder möglich.
+----
+<details>
+<summary>//=> GitHub Repo für externe Besucher//</summary>
+GitHub-Repo: https://github.com/templates-python/m319-lu06-a02-names
+
+//Lernende am BZZ **müssen** den Link zum GitHub Classroom Assignment verwenden//
+</details>
+
+{{tag>M319-LU06}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

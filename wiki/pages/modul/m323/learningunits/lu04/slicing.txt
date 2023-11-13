@@ -1,0 +1,89 @@
+====== LU04k - Slicing ======
+
+===== Einleitung =====
+
+Das Slicing-Feature in Python ist eine leistungsstarke Funktion, die es erlaubt, Teile einer Sequenz wie einer Liste, eines Strings oder eines Tupels zu extrahieren. Es kann auch zum Ändern von Sequenzen verwendet werden.
+
+===== Grundlagen des Slicings =====
+
+Die grundlegende Syntax für das Slicing lautet wie folgt:
+
+<code python>
+sequenz[start:stop:step]
+</code>
+
+  - ''start'': Der Index, bei dem das Slicing beginnen soll.
+  - ''stop'': Der Index, bei dem das Slicing aufhören soll. Das Element am Stop-Index wird nicht eingeschlossen.
+  - ''step'': Die Schrittgröße, die angibt, wie die Elemente ausgewählt werden.
+
+==== Beispiele ====
+
+<code python>
+numbers = [0, 1, 2, 3, 4, 5]
+subset = numbers[1:4] #[1, 2, 3]
+</code>
+
+
+=== Weglassen von Indices ===
+
+Es ist möglich, einen oder mehrere der Indizes wegzulassen:
+
+  - ''start'' weglassen: Beginnt das Slicing am Anfang der Sequenz.
+  - ''stop'' weglassen: Endet das Slicing am Ende der Sequenz.
+  - ''step'' weglassen: Verwendet eine Schrittgröße von 1.
+
+<code python>
+numbers = [0, 1, 2, 3, 4, 5]
+all_numbers = numbers[:] #[0, 1, 2, 3, 4, 5]
+</code>
+
+
+=== Negative Indices ===
+
+Negative Indizes können für ''start'' und ''stop'' verwendet werden, um von hinten zu starten und zu stoppen:
+
+<code python>
+numbers = [0, 1, 2, 3, 4, 5]
+last_three = numbers[-3:-1] #[3, 4]
+</code>
+
+
+Im obigen Beispiel beginnt das Slicing beim drittletzten Element (Index ''-3'') und endet beim zweitletzten Element (Index ''-1'', exklusiv), wodurch die Liste ''[3, 4]'' extrahiert wird.
+
+
+=== Schrittgröße ===
+
+Die Schrittgröße (''step'') kann auch negativ sein, um die Sequenz rückwärts zu durchlaufen:
+
+<code python>
+numbers = [0, 1, 2, 3, 4, 5]
+reversed_numbers = numbers[::-1] #[5, 4, 3, 2, 1, 0]
+</code>
+
+
+=== Strings und Tupel ===
+
+Das Slicing funktioniert auch für Strings und Tupel, da sie Sequenztypen sind:
+
+<code python>
+text = 'Python'
+sliced_text = text[1:4] #'yth'
+</code>
+
+=== Verkettung von Slicing ===
+
+Man kann auch mehrere Slicing-Operationen verkettet anwenden:
+
+<code python>
+numbers = [1, 2, 3, 4, 5]
+chained_slicing = numbers[-4:-1][::-1][::2] #[4, 2]
+</code>
+
+In diesem Beispiel werden drei Slicing-Operationen nacheinander ausgeführt:
+  - Extrahiere die Elemente zwischen den Indizes ''-4'' und ''-1''. Das ergibt die Liste ''[2, 3, 4]''.
+  - Kehre diese Liste um, was ''[4, 3, 2]'' ergibt.
+  - Nimm nur jeden zweiten Wert dieser umgekehrten Liste, was schließlich ''[4, 2]'' ergibt.
+
+===== Zusammenfassung =====
+
+Slicing ist ein vielseitiges Feature in Python für den Umgang mit Sequenztypen. Es bietet eine Menge Flexibilität für den Zugriff, die Extraktion und die Manipulation von Daten.

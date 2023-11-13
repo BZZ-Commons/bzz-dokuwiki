@@ -1,0 +1,4 @@
+==== Lösung 1 - Instanziierung abstrakter Klassen ====
+
+Python wirft eine Exception, falls eine Klasse mit einer abstrakten Methode instanziiert wird:   
+> ''%%TypeError: Can't instantiate abstract class Animal with abstract method move%%''

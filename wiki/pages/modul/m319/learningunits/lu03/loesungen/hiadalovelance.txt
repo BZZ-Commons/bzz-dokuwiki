@@ -1,0 +1,10 @@
+====== LU03.L04 - Hi Ada Lovelace ======
+<code python>
+def main():
+    name = 'Ada Lovelace'
+    # Write your code here
+    print(f'Hi {name}')
+ 
+if __name__ == '__main__':
+    main()
+</code>

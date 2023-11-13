@@ -1,0 +1,81 @@
+====== LU07.A01 - Bedingte Ausdrücke ======
+Lösen Sie folgende kleinen Aufgaben um sich mit dem ''Ternary''-Operator in Python vertraut zu machen:
+
+**1. Grösste Zahl**
+
+Finden Sie die größere Zahl unter 2 mit ternären Operator und printen Sie diese aus:
+<WRAP center round box 60%>
+<code python>
+num1 = 10
+num2 = 12
+
+# TODO: Please print the bigger number, only use one ternary-operator to do so
+
+</code>
+</WRAP>
+
+** 2. Wert des Boolean auf deutsch ausdrucken **
+
+Für den Fall das der Boolean den Wert ''True'' hat soll am Bildschirm der Text ''Wahr'' erscheinen, im anderen Fall soll ''Falsch'' erscheinen.
+
+<WRAP center round box 60%>
+<code python>
+value = True
+
+# problem:
+print(value) # 'True' and 'False' will be printed instead of 'Wahr' and 'Falsch'
+
+# With if-else-statement
+if value:
+    print('Wahr')
+else:
+    print('Falsch')
+    
+# TODO: Please print the boolean-value in german, only use one ternary-operator to do so
+
+</code>
+</WRAP>
+
+**3. Wandeln Sie die Vorlage um**
+
+Verwenden Sie in der Lösung anstatt ein ''if..else''-Statement einen ''Ternary''-Operator.
+
+<WRAP center round box 60%>
+<code python>
+x = int(input("Please enter an integer:\n"))
+
+# TODO: replace the if..else with a ternary-operator
+if x % 2 == 0:
+    int_type = 'even'
+else:
+    int_type = 'odd'
+
+print(f'You entered {x} which is an {int_type} integer.')
+
+</code>
+</WRAP>
+
+
+**4. Verschachtelte Ternary-Operatoren**
+
+Ersetzen Sie die verschachtelte ''If''-Anweisung durch eine ''Ternary''-Operation
+<WRAP center round box 60%>
+<code python>
+def main():
+    number = int(input('Enter number between -100 and +200'))
+
+    if(number < 0):
+        print('Less than zero')
+    else:
+        if number>=0 and number<=100:
+            print('Between 0 and 100')
+        else:
+            print('Greater than 100')
+
+if __name__ == '__main__':
+    main()
+</code>
+</WRAP>
+
+-----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Kevin Maurizi

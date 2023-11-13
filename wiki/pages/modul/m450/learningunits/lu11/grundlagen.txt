@@ -1,0 +1,38 @@
+====== LU11a - Grundlagen ======
+//Quelle: [[https://www.browserstack.com/guide/what-is-test-driven-development]]//
+
+===== Was ist TDD? =====
+Test Driven Development (TDD) ist ein Entwicklungsvorgehen, dass aus der agilen Entwicklung und dem Extreme programming hervorgegangen ist.
+Dabei werden in einem iterativen Prozess ...
+  * ... Unit Tests erstellt
+  * ... Funktionen/Methoden programmiert
+  * ... die Funktionen/Methoden verbessert
+
+bis alle Tests erfolgreich durchgeführt werden.
+
+Natürlich musst du sowohl für das Erstellen der Tests als auch für das Programmieren der Funktionen/Methoden ein gutes Verständnis der Anforderungen haben.
+Ergeben sich im Verlauf der Entwicklung neue Erkenntnisse zu den Anforderungen, so wird der Prozess wiederholt.
+Die Tests werden ergänzt oder korrigiert und erneut ausgeführt.
+
+==== Beispiele ====
+Für einen Taschenrechner benötigen wir eine Funktion ''add'' um Zahlen zu addieren.
+Zunächst schreiben wir alle relevanten Unit Tests:
+  * Gültige Addition
+  * Fehlende / falsche Zahlen
+  * Extremwerte
+  * ...
+
+Anschliessend programmieren wir die Funktion ''add'' und führen alle Unit Tests aus.
+Solange nicht alle Tests erfolgreich sind, wird die Funktion ''add'' überarbeitet.
+
+===== Unit Tests =====
+Jeder Unit Test beim TDD soll nur einen Aspekt prüfen.
+Wir wollen möglichst kleine Codestücke testen und nicht das Zusammenspiel mehrere Codeteile.
+Bei Bedarf setzen wir Mockups von Funktionen ein, die nicht Teil des aktuellen Tests sind.
+
+Häufig werden zunächst die Unit Tests für die erfolgreiche Verarbeitung erstellt.
+Im Verlauf der Entwicklung werden dann weitere Tests für Fehlersituationen oder Extremwerte ergänzt.
+
+----
+{{tag>M450-LU01}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

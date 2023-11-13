@@ -1,0 +1,82 @@
+====== LU06b - Installation von Flask ======
+
+Wenn du bereits ein ''virtual environment'' und eine ''requirements.txt''-Datei für dein Projekt hast, ist das Hinzufügen und Installieren von Flask ein einfacher Prozess.
+
+===== Voraussetzungen =====
+
+  * **Python**: Stelle sicher, dass eine geeignete Version von Python auf deinem System installiert ist. Flask benötigt Python 3.6 oder höher.
+  * **pip**: ''pip'' ist das Paketverwaltungsprogramm für Python und wird verwendet, um Pakete aus dem Python Package Index (PyPI) zu installieren.
+  * **virtual environment**: Ein bereits eingerichtetes virtuelles Umfeld für dein Projekt.
+  * **requirements.txt**: Eine vorhandene ''requirements.txt''-Datei in deinem Projektverzeichnis.
+
+===== Schritte zur Installation von Flask =====
+
+==== 1. Aktiviere das virtual environment ====
+Bevor du Änderungen an deinem Projekt vornimmst, solltest du immer sicherstellen, dass dein ''Virtual Environment'' aktiviert ist. In PyCharm  ist im Terminal ''(venv)'' dem User vorgestellt und der Python Interpreter enthält auch den Projektnamen:
+
+{{:modul:m323:learningunits:lu06:venv.png?1000|}}
+
+Ist das ''Virtual Environment'' nicht aktiviert kannst du es folgendermasser aktivieren:
+**Windows**:
+<code>
+venv\Scripts\activate
+</code>
+
+**macOS und Linux**:
+<code>
+source venv/bin/activate
+</code>
+
+Solltest du bei den oberen Befehlen Fehlermeldungen erhalten, könnte es sein, dass du noch gar kein ''Virtual Environment'' erstellt hast. Sollte das der Fall sein, kannst du es erstellen in dem du im Homeverzeichnis des Projektes folgendes ausführst:
+
+**Windows**:
+<code>
+py -3 -m venv .venv
+</code>
+
+**macOS und Linux**:
+<code>
+python -m venv .venv
+</code>
+
+
+==== 2. Füge Flask zur requirements.txt-Datei hinzu ====
+
+Öffne die ''requirements.txt''-Datei in einem Texteditor und füge am Ende der Datei die gewünschte Flask-Version hinzu. Zum Beispiel:
+
+<code>
+Flask==3.0.0
+</code>
+
+Wenn du die neueste Version von Flask installieren möchtest, kannst du einfach "Flask" ohne eine spezifische Version angeben.
+
+==== 3. Installiere die Abhängigkeiten aus der requirements.txt-Datei ====
+Mit dem ''Virtual Environment'' aktiviert, navigiere im Terminal oder in der Kommandozeile zum Verzeichnis, in dem sich die ''requirements.txt''-Datei befindet, und führe den folgenden Befehl aus:
+
+<code python>
+pip install -r requirements.txt
+</code>
+
+Dieser Befehl installiert Flask und alle anderen in der ''requirements.txt''-Datei aufgeführten Pakete.
+
+===== Überprüfung der Installation =====
+
+Um sicherzustellen, dass Flask erfolgreich installiert wurde, kannst du den folgenden Befehl ausführen:
+
+<code python>
+flask --version
+</code>
+
+Dies sollte die installierte Version von Flask anzeigen.
+
+===== Fazit =====
+
+Durch die Verwendung einer vorhandenen ''requirements.txt''-Datei und eines ''virtual environment'' kann die Installation von Flask und anderen Abhängigkeiten für ein Projekt vereinfacht werden. Dies stellt sicher, dass alle benötigten Pakete in den richtigen Versionen vorhanden sind und erleichtert die Einrichtung in verschiedenen Umgebungen.
+
+
+----
+Mehr Infos: https://flask.palletsprojects.com/en/3.0.x/installation/#install-flask
+
+----
+{{tag>M323-LU06}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/ch/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Kevin Maurizi 

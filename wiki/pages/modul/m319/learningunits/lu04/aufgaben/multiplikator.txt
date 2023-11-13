@@ -1,0 +1,60 @@
+====== LU04.A04 - Multiplikator ======
+<WRAP center round todo 60%>
+Schreiben Sie ein Programm, das vom User zwei Zahlen anfordert und diese multipliziert und ausgibt.
+</WRAP>
+
+===== Auftrag =====
+
+Schreiben Sie ein Programm, das vom User zwei Zahlen anfordert und diese multipliziert und ausgibt.
+Die Ausgabe muss wie unten gezeigt aussehen.
+
+<HTML>
+<iframe src="https://trinket.io/embed/python3/ea8016bd2a?outputOnly=true&start=result" width="100%" height="200" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+</HTML>
+
+<code>
+Welcome to the MULTIPLICATOR!
+Please provide factor one: 
+*5*
+Please provide factor two: 
+*3*
+Result: 15.00
+</code>
+
+
+Die Übungsvorlage wird mit einer Programmvorlage geliefert, die die Funktion und ihren Aufruf enthält.
+
+
+<code python>
+def multiplicator():
+    # Write your code here
+if __name__ == '__main__':
+    multiplicator()
+</code>
+
+Hier ein weiteres Beispiel für die Ausgabe:
+
+<code>
+Welcome to the MULTIPLICATOR!
+Please provide factor one: 
+*4.5*
+Please provide factor two: 
+*3*
+Result: 13.50
+</code>
+
+===== Vorgehen =====
+
+  - Akzeptiere das GitHub Classroom Assignment im Moodlekurs.
+  - Klone das Repository in PyCharm.
+  - Codiere die Programmlogik in ''main.py''.
+  - Teste dein Programm mit den Testfällen in ''main_test.py''.
+  - Führe einen Commit und einen Push durch.
+
+
+Anmerkung: Kümmern Sie sich im Moment nicht zu sehr um ''if %%__%%name%%__%% == '%%__%%main%%__'%%:''. Wir brauchen es technisch gesehen nicht für dieses Programm, aber es ist eine gute Übung, es einzubauen, und es wird in späteren Übungen klarer werden.
+
+----
+<nodisp>GitHub-Repo: https://github.com/templates-python/m319-lu04-a04-multiplicator</nodisp>
+
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/ch/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Kevin Maurizi 

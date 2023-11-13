@@ -1,0 +1,40 @@
+====== LU02.A07 - Buchhaltung ======
+<WRAP center round todo 60%>
+Erstelle ein Python-Programm, das Buchhaltungsdaten in Form von Transaktionen verwaltet. Verwende dabei ausschließlich **Immutable Values** und **Pure Functions**.
+</WRAP>
+
+===== Detaillierte Aufgabenstellung =====
+Ihr seid in einer Buchhaltungsabteilung tätig und sollt ein Programm schreiben, das einfache Finanztransaktionen aufnimmt und den aktuellen Kontostand berechnet.
+
+  - Definiere eine Funktion namens ''add_transaction'', die den bisherigen Transaktionsverlauf und eine neue Transaktion als Argumente nimmt. Die Funktion soll einen neuen Transaktionsverlauf zurückgeben, der die neue Transaktion enthält.
+  - Definiere eine Funktion namens ''calculate_balance'', die den Transaktionsverlauf als Argument nimmt und den aktuellen Kontostand berechnet.
+  - Verwende nur Immutable Values wie Tupel und Strings für die Transaktionen und den Verlauf.
+  - Achte darauf, dass alle deine Funktionen Pure Functions sind.
+
+<code python>
+if __name__ == '__main__':
+    # Dein Code kommt hier hin
+</code>
+
+===== Beispiel Daten =====
+  * Anfangs-Transaktionsverlauf: ''%%(('Deposit', 1000), ('Withdrawal', 200))%%''
+  * Neue Transaktionen: ''('Deposit', 500)'', ''('Withdrawal', 100)'', ''('Deposit', 300)''
+
+===== Schrittweises Vorgehen =====
+  - **Immutable Values Definieren**: Verwende Tupel zur Speicherung von Transaktionen. Jedes Tupel enthält die Art der Transaktion ('Deposit' oder 'Withdrawal') und den Betrag.
+    * Beispiel: ''('Deposit', 100), ('Withdrawal', 50)''
+  - **Pure Functions Anwenden**:
+    * Implementiere die ''add_transaction'' Funktion. Diese nimmt den aktuellen Transaktionsverlauf und eine neue Transaktion als Argumente und gibt einen neuen Transaktionsverlauf zurück.
+    * Pseudocode:
+      * def ''add_transaction(transactions, new_transaction):''
+        * return neuer Transaktionsverlauf
+    * Implementiere die ''calculate_balance'' Funktion, die den aktuellen Kontostand aus einem gegebenen Transaktionsverlauf berechnet.
+    * Pseudocode:
+      * def calculate_balance(transactions):
+        * return aktueller Kontostand
+  - **Main Funktion**: Verwende die beiden Funktionen, um einige Transaktionen hinzuzufügen und den Kontostand zu berechnen.
+    * Füge z.B. 3 Einzahlungen und 2 Abhebungen hinzu und berechne dann den Kontostand.
+
+-----
+<nodisp>https://github.com/templates-python/m323-lu02-a07-buchhaltung</nodisp>
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/ch/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Kevin Maurizi 

@@ -1,0 +1,26 @@
+==== Aufgabe 5 - Nutzen von Interface; ein Zoo ====
+
+=== Ziel ===  
+Sie können ein Interface mittels Duck-Typing realisieren, um ein Objekt etwas tun zu lassen, falls es das kann.
+
+=== Ausgangslage ===
+Gegben ist das folgende Klassendiagramm:\\
+{{:modul:m320:learningunits:lu99:aufgaben:lu07-aufg5-interface.png?1000|}}\\
+Die Klassen ''Animal'', ''Building'' und ''Vehicle'' sowie deren Ableitungen sind implementiert. Hier müssen Sie nichts anpassen. Ebenso sind der Konstruktor wie auch die privaten Methoden der Klasse ''Zoo'' bereits vorhanden.\\
+Im Auftrag werden Sie sowohl durch die 3 Veerbungsbäume traveriseren als auch über alle Objekte, um den Inventarwert zu bestimmen.
+
+  
+=== Auftrag ===
+  - Laden Sie das Repo von github-classroom (Link im Moodle-Kurs)
+  - implementieren Sie in der Klasse ''Zoo'' die 4 im Klassendiagramm fett markierten Methoden. \\ - print_all_··· liefert jeweils eine Liste der entsprechenden Objekte aus der Vererbungshierarchie.\\ - print_worth_··· summiert aus allen Objekten den Inventarwert und gibt diesen aus.
+//Hinweise://
+   * //Die jeweils in einer Hierarchie vorkommenden Objekte sind bereits in Listen gesammelt.//
+   * //Die Ausgabe eines Objekts ist in der ''%%__%%str%%__%%'' Methode der Oberklasse bereits geregelt. Studieren Sie diese Methoden. Um hier die Ausgabe zu erhalten genügt es z.B. ''print(animal)'' zu schreiben.//
+   * //Für die Berechnung des Inventars führen Sie die 3 Listen in eine Liste zusammen. Wie man das macht? Fragen Sie das Internet.\\ Durch diese Liste traversieren Sie dann, um den jeweiligen Inventarwert zu erhalten und aufzusummieren.//
+
+=== Abgabe ===
+Pushen Sie die Lösung auf github-classroom.\\
+Wenn Sie für das Inventar den Wert Fr. 3654000.0 erhalten, haben Sie vieles richtig gemacht.
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] René Probst
+ 

@@ -1,0 +1,88 @@
+====== Übungen: Einfache Liste ======
+
+Erstellen Sie Listen um primitive Datentypen (int, double, float, char, String, boolean) zu speichern.
+
+===== Aufgabe 1: Wrapperklassen bestimmen =====
+Ergänzen Sie die nachfolgende Tabelle.
+Welche Wrapper-Klasse müssen Sie beim Erstellen der Arraylist einsetzen, damit Werte des primitiven Datentyps darin gespeichert werden können?
+
+''ArrayList<???> liste = new ArrayList<>();''
+
+^primitiver Datentyp^Wrapper-Klasse^
+|int||
+|double||
+|float||
+|char||
+|String||
+|boolean||
+
+===== Aufgabe 2: Wochentage =====
+
+Erstellen Sie eine Liste ''ArrayList<???> wochentage = new ArrayList<>();'' für die Wochentage. Und füllen Sie diese mit den Namen der Wochentage. 
+Es muss möglich sein, aus der Wochentag-Liste die Tage als Text zu erhalten.
+
+Bsp:
+<code java>
+System.out.println(wochentage.get(0));   // Printet aus: "Montag" 
+System.out.println(wochentage.get(6));   // Printet aus: "Sonntag" 
+</code>
+
+
+===== Aufgabe 3: Informationen aus einer Liste erhalten =====
+
+Laden Sie die Code-Vorlage in ihre IDE. Lösen Sie sämtliche TODOs.
+
+<file java SimpleList.java>
+import java.util.ArrayList;
+
+/**
+ * SimpleList um die verwendung von Listen zu üben.
+ *
+ * @author Ibid umm
+ * @date yyyy-mm-dd
+ * @version 1.0
+ */
+public class SimpleList {
+
+    public static void main(String[] args) {
+        new SimpleList().run();
+    }
+
+    public void run(){
+
+        //TODO 1: Erstellen Sie eine String-Liste mit dem Namen "klassenkameraden"
+
+        //TODO 2: Fügen Sie der Liste den Namen "Pierangelo" als Erstes und dann mindestens 8 weitere Namen hinzu.
+
+        //TODO 3: Geben Sie die Länge der Liste aus, verwenden Sie dazu die korrekte Funktion der Liste.
+        System.out.print("Länge der Liste: ");
+
+        //TODO 4: Geben Sie den 2 und 4 Namen aus.
+        //   1  2  3  4  5
+        // |...|X|...|X|...|
+        System.out.print("Namen 2: ");
+
+        System.out.print("Namen 4: ");
+
+        //TODO 5: Ändern Sie den 3 Namen in "Paolo"
+        //   1   2     3     4   5
+        // |...|...|"Paolo"|...|...|
+
+        //TODO 6: Löschen Sie Pierangelo
+
+        //TODO 7: Iterieren Sie über die Liste und geben Sie alle Namen aus
+        System.out.println("Alle Personen in der Liste: ");
+
+        //TODO 8: Iterieren Sie über die Liste und fügen Sie jedem Namen ein "_X" an.
+
+        //TODO 9: Iterieren Sie über die Liste und geben Sie alle Namen erneut aus
+        System.out.println("Alle PersonenX in der Liste: ");
+
+        //TODO 10: Leeren Sie die Liste
+    }
+}
+
+</file>
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Kevin Maurizi

@@ -1,0 +1,27 @@
+====== LU02c - Microsoft Update ======
+<WRAP center round info 60%>
+Regelmässige Updates sind wichtig für die Sicherheit unserer Geräte.
+Andererseits wollen wir nicht, dass unser Rechner im falschen Zeitpunkt lieber Updates macht als uns arbeiten zu lassen.
+</WRAP>
+
+Konfiguriere deinen Laptop so, dass er
+  * Updates automatisch herunter lädt,
+  * dich über anstehende Updates informiert,
+  * die Installation der Updates jedoch **manuell** durchgeführt wird.
+
+===== Anleitungen =====
+  * [[https://www.windowscentral.com/how-stop-updates-installing-automatically-windows-10|Windows 10]]
+  * [[https://www.minitool.com/data-recovery/how-to-stop-windows-11-update.html|Windows 11]]
+
+===== Automatische Konfiguration =====
+Anstatt die Schritte manuell durchzuführen, können Sie den folgenden Link im Microsoft Edge öffnen:
+[[https://boxstarter.org/package/nr/url?https://gist.githubusercontent.com/graphics80/e42834af6faa39b3c857f53e1f9a4fa6/raw/c1c3545305cb05cf6db47b4adcff8158d6e3ac83/OnlyDisableUpdate]]
+
+<WRAP center round important 60%>
+Achten Sie darauf die Updates regelmässig **ausserhalb der Unterrichtszeiten** durchzuführen.
+</WRAP>
+
+----
+{{tag>M431-LU02}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Kevin Maurizi, Marcel Suter
+

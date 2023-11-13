@@ -1,0 +1,28 @@
+====== LU05.A02 - Pfade ======
+<WRAP center round todo 60%>
+Binden Sie in der Datei "paths.html" die vorgegebenen Medien ein.
+Ersetzen Sie dazu die Kommentare ''<!-- TODO ... -->'' durch die korrekten HTML-Tags.
+</WRAP>
+
+In der Datei "paths.html" sollen einige Medien eingebunden werden.
+Die entsprechenden Stellen sind mit einem Kommentar ''<!-- TODO ... -->'' versehen.
+Im Kommentar steht jeweils der Name der einzubindenden Medien.
+Diese Mediendateien liegen in verschiedenen Ordnern innerhalb des Projekts oder auf externen Webseiten.
+
+Ersetzen Sie die Kommentare durch die korrekten HTML-Elemente.
+Verwenden Sie, wo immer möglich, einen relativen Pfad.
+
+=== Hinweise ===
+  * Für das Einbinden des Videos habe ich Ihnen das nötige HTML-Element ''iframe'' schon vorgegeben. Sie brauchen nur die korrekte URL einzusetzen.
+    * Je nach eingesetztem Browser und abhängig davon, wie Sie die Seite öffnen, kann YouTube die Anzeige des Videos ablehnen.
+  * Für das Einbinden einer Musikdatei verwenden Sie das HTML-Element ''<audio>''.
+
+===== Erwartetes Resultat =====
+{{:modul:m293:learningunits:lu05:aufgaben:lu05_a01_resultat.png?600|}}
+
+----
+<nodisp>[[https://github.com/templates-html/M293_LU05.git]]</nodisp>
+
+{{tag>m293-LU05}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Kevin Maurizi, Marcel Suter
+

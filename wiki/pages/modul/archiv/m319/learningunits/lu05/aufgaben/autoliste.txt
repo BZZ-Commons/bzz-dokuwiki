@@ -1,0 +1,68 @@
+====== Übungen: Autoliste ======
+
+Schreiben Sie ein Programm, das in einer Liste von Autos (Marke, Modell) speichert. Geben Sie dem Benutzer*in die Möglichkeit solange Autos zu erfassen, bis er die Erfassung beenden möchte. Jedes eingegebene Auto wird an eine Liste angefügt. Am Schluss wird über die Liste iteriert und alle Autos ausgegeben.
+
+===== Aufgabe 1: Programmablaufplan zeichnen =====
+
+Erstellen Sie einen PAP für diese Übung, gehen Sie dabei wie folgt vor:
+  * Suchen Sie zuerst im Programmablauf alle Iterationen und erstellen Sie ein entsprechendes Element je Iteration
+  * Suchen Sie zuletzt alle Sequenzen und pro Sequenz erstellen Sie wiederum ein entsprechendes Element
+
+===== Aufgabe 2: Datentyp erstellen =====
+
+Erstellen Sie die Klasse ''Auto'' und fügen Sie sämtliche Attribute hinzu.
+
+===== Aufgabe 3: Implementieren =====
+
+Verwenden Sie die Vorlage um das Programm zu implementieren.
+
+<file java AutoListe.java>
+import java.util.Scanner;
+
+/**
+ * short description of this program
+ *
+ * @author Ibid umm
+ * @date yyyy-mm-dd
+ * @version 1.0
+ */
+public class AutoListe{
+    // declare attributes 
+    static Scanner scanner;
+
+    /**
+     * constructor: initialize attributes
+     */
+    public AutoListe() {
+        scanner = new Scanner(System.in);
+    }
+
+    /**
+     * starts the execution
+     *
+     * @param args
+     *            command line arguments
+     */
+    public static void main(String[] args) {
+        AutoListe program = new AutoListe();
+        program.run();
+
+        scanner.close();
+    }
+
+    /**
+     * description
+     */
+    private void run() {
+
+        // TODO:
+        // Gemäss PAP implementieren.
+        
+    }
+}
+
+</file>
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Kevin Maurizi

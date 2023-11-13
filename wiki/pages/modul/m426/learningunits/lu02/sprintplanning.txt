@@ -1,0 +1,73 @@
+====== LU02f - Sprint Planning ======
+
+Quelle: //[[http://www.scrumguides.org/docs/scrumguide/v1/Scrum-Guide-DE.pdf]]//
+
+Im Sprint Planning wird die Arbeit für den kommenden Sprint geplant. 
+Dieser Plan entsteht durch die gemeinschaftliche Arbeit des gesamten Scrum Teams.
+Das Sprint Planning ist auf eine Time Box von maximal 8 Stunden für einen einmonatigen Sprint beschränkt. 
+Bei kürzeren Sprints wendet man normalerweise weniger Zeit auf. 
+Der Scrum Master sorgt dafür, dass das Ereignis stattfindet, und die Teilnehmer seinen Zweck verstehen. 
+Er bringt dem Scrum Team bei, das Ereignis innerhalb der Time Box erfolgreich abzuschließen.
+
+Das Sprint Planning beantwortet die folgenden Fragen:
+  * Was ist in dem Produkt-Inkrement des kommenden Sprints enthalten?
+  * Wie wird die für die Lieferung des Produkt-Inkrements erforderliche Arbeit erreicht?
+
+==== Punkt 1: Was kann in diesem Sprint fertiggestellt werden? ====
+
+Das Entwicklungsteam erstellt eine Prognose über die Funktionalität, die im Sprint entwickelt
+werden soll. Der Product Owner beschreibt das Ziel, das mit dem Sprint erreicht werden soll und
+die Product Backlog-Einträge, welche - wenn sie in dem Sprint abgeschlossen werden - das Ziel
+erfüllen. Das ganze Scrum Team erarbeitet gemeinsam ein Verständnis über die Arbeitsinhalte
+des Sprints.
+
+Als Eingangsgrößen für das Meeting dienen das Product Backlog, das neueste ProduktInkrement,
+die veranschlagte Kapazität des Entwicklungsteams im Sprint sowie die bisherige
+Leistung desselben. Ausschließlich das Entwicklungsteam bestimmt die Anzahl der ausgewählten
+Product Backlog-Einträge für den kommenden Sprint. Es kann nur selbst beurteilen, was im
+kommenden Sprint machbar ist.
+
+Nach der Prognose der Product Backlog-Einträge für den Sprint durch das Entwicklungsteam
+formuliert das ganze Scrum Team ein Sprint-Ziel aus. Das Sprint-Ziel bildet die Messlatte, die
+durch die Implementierung der Product Backlog-Einträge im Sprint erreicht wird; es leitet das
+Entwicklungsteam in der Frage, warum es dieses Produkt-Inkrement erstellt.
+
+==== Punkt 2: Wie wird die ausgewählte Arbeit erledigt? ====
+
+Nach der Vereinbarung des Sprint-Ziels und der Auswahl der Product Backlog-Einträge für den
+Sprint entscheidet das Entwicklungsteam, wie es das Produkt-Inkrement erstellen möchte,
+damit die Funktionalität in einen "Done"-Zustand gebracht werden kann. Als Sprint Backlog
+bezeichnet man die Auswahl der Product Backlog-Einträge für den jeweiligen Sprint plus den
+Umsetzungsplan des Entwicklungsteams.
+
+Das Entwicklungsteam beginnt normalerweise mit dem Systementwurf und den notwendigen
+Arbeiten zur Erstellung des funktionsfähigen Produkt-Inkrements. Die Arbeiten können sich in
+der Größe oder dem geschätzten Aufwand unterscheiden. Auf jeden Fall sollte das
+Entwicklungsteam genug planen, um zu prognostizieren, was im kommenden Sprint
+fertiggestellt werden kann. Die für die ersten Sprint-Tage geplanten Arbeiten sind nach
+Abschluss des Meetings in kleinere Einheiten - oft von einem Tag oder weniger - zerlegt. Das
+Entwicklungsteam organisiert selbst, wie es die Arbeiten im Sprint Backlog angeht, beginnend
+mit dem Sprint Planning und nach Bedarf im Sprint selbst.
+
+Der Product Owner kann dabei helfen, die ausgewählten Product Backlog-Einträge zu klären und
+ggf. Kompromisse einzugehen. Wenn das Entwicklungsteam herausfindet, dass es sich zu viel
+oder zu wenig Arbeit vorgenommen hat, kann es die ausgewählten Product Backlog-Einträge
+neu mit dem Product Owner aushandeln. Das Entwicklungsteam kann auch andere Teilnehmer
+zu dem Meeting einladen, um technische oder fachliche Unterstützung zu erhalten.
+Am Ende des Sprint Plannings sollte das Entwicklungsteam in der Lage sein, Product Owner und
+Scrum Master zu schildern, wie es als selbstorganisiertes Team an der Erreichung des SprintZiels
+und Erstellung des gewünschten Produkt-Inkrements arbeiten möchte.
+
+==== Sprint-Ziel ====
+
+Das Sprint-Ziel bietet dem Entwicklungsteam eine gewisse Flexibilität in Bezug auf die im Sprint
+zu implementierende Funktionalität. Die ausgewählten Product Backlog-Einträge bilden eine
+zusammenhängende Funktionalität, die als Sprint-Ziel angesehen werden kann. Das Sprint-Ziel
+kann aber auch jedes andere verbindende Element sein, welches das Entwicklungsteam - statt in
+verschiedene Richtungen zu laufen - zur Zusammenarbeit motiviert.
+
+Bei seiner Arbeit behält das Entwicklungsteam sein Sprint-Ziel vor Augen. Um dieses zu
+erreichen, implementiert es die entsprechende Funktionalität und Technologie. Falls es sich
+zeigt, dass der Arbeitsumfang von den ursprünglichen Erwartungen abweicht, handelt das
+Entwicklungsteam gemeinsam mit dem Product Owner eine Änderung des Sprint Backlogumfangs
+für den laufenden Sprint aus.

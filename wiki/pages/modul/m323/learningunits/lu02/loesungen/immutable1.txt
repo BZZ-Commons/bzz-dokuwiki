@@ -1,0 +1,58 @@
+====== LU02.L04 - Tuples ======
+
+===== Schritt 1: Definieren einer Liste von Tuples =====
+
+<code python>
+students = [
+    ('Alice', 20, 1),
+    ('Bob', 22, 2),
+    ('Charlie', 19, 3),
+    # Weitere Studenten können bei Bedarf hinzugefügt werden
+]
+</code>
+===== Schritt 2: Erstellen einer Funktion zum Ausgeben der Informationen =====
+
+<code python>
+def print_students(student_list):
+    print('Studenten Informationen:')
+    for student in student_list:
+        name, age, student_id = student
+        print(f'Name: {name}, Alter: {age}, ID: {student_id}')
+</code>
+===== Schritt 3: Testen der Funktion mit der Liste von Tuples =====
+
+<code python>
+if __name__ == '__main__':
+    print_students(students)
+</code>
+===== Ausgabe =====
+
+<code>
+Studenten Informationen:
+Name: Alice, Alter: 20, ID: 1
+Name: Bob, Alter: 22, ID: 2
+Name: Charlie, Alter: 19, ID: 3
+</code>
+===== Zusammenfassung =====
+Diese Musterlösung zeigt, wie Tuples verwendet werden können, um unveränderliche Datensätze zu erstellen und zu manipulieren. Tuples sind besonders nützlich, wenn Sie sicherstellen möchten, dass die Daten nicht geändert werden. In diesem Beispiel wurden sie verwendet, um die Namen, das Alter und die IDs von Studenten zu speichern und zu drucken.
+
+<code python>
+students = [
+    ('Alice', 20, 1),
+    ('Bob', 22, 2),
+    ('Charlie', 19, 3),
+    # Weitere Studenten können bei Bedarf hinzugefügt werden
+]
+
+def print_students(student_list):
+    print('Studenten Informationen:')
+    for student in student_list:
+        name, age, student_id = student
+        print(f'Name: {name}, Alter: {age}, ID: {student_id}')
+
+if __name__ == '__main__':
+    print_students(students)
+</code>
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/ch/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Kevin Maurizi 

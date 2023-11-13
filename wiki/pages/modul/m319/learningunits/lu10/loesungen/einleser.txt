@@ -1,0 +1,68 @@
+====== LU10.L02 - Einleser als Modul ======
+
+===== Aufgaben =====
+
+==== Teilaufgabe 1 ====
+<WRAP center round box 60%>
+<code python>
+'''
+input_reader module with input validation
+'''
+def read_float(text_to_display):
+  pass
+</code>
+</WRAP>
+
+
+
+==== Teilauftrag 2 ====
+<WRAP center round box 60%>
+<code python>
+def read_float(text_to_display):
+    while True:
+        try:
+            num = float(input(text_to_display))
+        except ValueError:
+            print("Please, enter a real number!")
+            continue
+        else:
+            return num
+</code>
+</WRAP>
+
+==== Teilauftrag 3 ====
+
+<WRAP center round box 60%>
+<code python>
+def read_int(text_to_display):
+    while True:
+        try:
+            num = int(input(text_to_display))
+        except ValueError:
+            print("Please, enter a valid whole number")
+            continue
+        else:
+            return num
+</code>
+</WRAP>
+
+==== Teilauftrag 4 ====
+Importieren Sie ihr ''input_reader'' Modul in ihrem ''main.py'' damit das Programm funktioniert.
+
+<WRAP center round box 60%>
+<code python>
+# Import the input_reader module here
+from input_reader import read_float, read_int
+
+def main():
+    # do something
+    float = read_float('Please enter a real number> ')
+    int = read_int('Please enter a whole number> ')
+
+    print(float)
+    print(int)
+
+if __name__ == '__main__':
+    main()
+</code>
+</WRAP>

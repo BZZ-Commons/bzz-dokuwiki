@@ -1,0 +1,53 @@
+====== LU11a - Workflow bei der Website-Entwicklung ======
+**Seit Webseiten im Responsive Design gemacht werden, hat sich der Workflow verändert. Es ist noch gar nicht lange her, da begann jedes Webprojekt mit Adobe Photoshop und Illustrator. Inzwischen kommt die Grafik erst viel später ins Spiel und der Browser spielt eine immer größere Rolle.**
+
+Zunächst wird das inhaltliche Konzept an den Anfang gestellt, erst danach kommt die Grafik an die Reihe. Der Abstimmungsprozess mit den Kunden ist dadurch einfacher geworden. Es muss nicht mehr so viel über Geschmacksfragen diskutiert werden und können gestalterische Entscheidungen an den Inhalten festgemacht werden. Dadurch ergibt sich eine bessere Gesprächsbasis mit den Kunden und man kann sich besser verständlich machen.
+
+===== Grundsätze =====
+
+==== Mobile First ====
+<WRAP center round tip 60%>
+{{:modul:m293:learningunits:lu11:anteilmobile.png?400|}}
+
+Der Zugriff auf Websites erfolgt mittlerweilen zu über 50% über mobile Geräte. Daher macht es Sinn, websites mit dem Konzept "Mobile First" zu entwickeln.</WRAP>
+ 
+Mobile First ist ein Konzept für mobil optimiertes Webdesign. Dabei entsteht zuerst die für mobile Endgeräte optimierte Seite und später folgen dann sukzessive Erweiterungen für den Desktop-Browser. Bislang war es üblich, dass sich Webdesigner und Programmierer zunächst um die Umsetzung der Website für den Desktop kümmerten. Dabei wurde mit der vollen Palette an Funktionen, Grafiken und gestalterischen Möglichkeiten eine Seite konzipiert, die auf große Bildschirme und schnelle Datenverbindung ausgelegt war. Erst im zweiten Schritt folgte die Planung der mobilen Seite, die oft nur als eine Art Anhang gesehen wurde. Die Mobile First Strategie kehrt diesen Workflow um und setzt die Prioritäten anders. Das wirkt sich auch auf die Gestaltung der technischen Infrastruktur hinter der Website aus.
+
+==== Responsive Framework ====
+Um den "Mobile First" Ansatz einfach umzusetzen macht es Sinn, ein Framework zu verwenden, welches die Erstellung von responsiven Websites unterstützt. Im Modul 293 werden wir Bootstrap verwenden, mehr dazu in der [[modul:m293:learningunits:lu13:start|LU13]].
+
+===== Ablauf =====
+
+{{ :modul:m293:learningunits:lu11:workflow-responsive-design1.jpg?600 |}}
+Ein möglicher Ablauf eines Website-Projekt zeigt diese Grafik.
+
+==== 1. Planung und 2. Inhalte ====
+Auf diese Fokussieren wir uns im [[modul:m322:start|Modul 322]]
+
+==== 3. Wireframes  ====
+Ein Wireframe ist eine skizzenartige Darstellung einer Webseite oder App, die als visueller Leitfaden für die Struktur und das Layout der Seite oder Anwendung dient. Er ist das Rückgrat des Designs und stellt den grundlegenden Plan für das endgültige Produkt dar. Um einen Wireframe zu visualisieren, gibt es viele Möglichkeiten: Man kann Skizzen machen, in Photoshop, Indesign oder Fireworks graue Kästchen und Linien zusammenbauen oder man kann [[http://webdesignledger.com/13-super-useful-ui-wireframe-tools/|eines der vielen Online-Tools]] nutzen.
+Skizzen sind unschlagbar schnell und flexibel, aber man bleibt damit am Papier „kleben“. Mit Photoshop und Co. ist man schon im richtigen Medium, dem Bildschirm. Und man kann einzelne Wireframe-Seiten per Links verknüpfen und damit die Navigation auf der Seite simulieren. Das ist wichtig, weil man damit frühzeitig Fehler in Konzept und Struktur herausfinden kann.
+
+Mehr zu [[modul:m293:learningunits:lu11:wireframes|Wireframes]]
+
+<WRAP center round important 60%>
+Wir erstellen unsere Wireframes jeweils für Mobile und für Desktop.
+</WRAP>
+
+==== 4. Protoyp ====
+Ist der Wireframe vom Kunden abgesegnet, kommt die nächste Phase: Der Programmierer baut alles in HTML und CSS nach und erstellt den ersten HTML-Prototypen. Mehr dazu in der [[modul:m293:learningunits:lu12:start|LU12]]
+
+==== 5. Design ====
+
+Fürs Design konzentrieren wir uns auf 2 Ansätze:
+
+  * Wir starten auf der grünen Wiese und entwickeln Farb- und Schriftkonzept, Logos etc. alles neu. 
+  * Wir bauen eine Website für jemanden der bereits ein CI/CD hat und halten uns an die Vorgaben.
+
+Mehr zu [[modul:m293:learningunits:lu11:design|Design]]
+
+----
+{{tag>m293-LU11 m293-A1G m293-A1F}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Kevin Maurizi, Marcel Suter
+
+

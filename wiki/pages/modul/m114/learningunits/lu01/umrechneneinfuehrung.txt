@@ -1,0 +1,149 @@
+====== LU01e - Zahlensysteme umrechnen: Einführung ======
+
+===== Umwandlung im 2er/8er/16er System =====
+Die Zahlensysteme Binär (2er), Oktal (8er) und Hexadezimal (16er) lassen sich recht einfach umwandeln.
+Das liegt daran, dass 2, 8 und 16 alles Potenzen der Zahl 2 sind:
+
+  * 2 = 2<sup>1</sup>
+  * 8 = 2<sup>3</sup>
+  * 16 = 2<sup>4</sup>
+
+Dadurch wissen wir, dass ...
+  * ... 1 Ziffer im 8er-System (Oktal) genau 3 Ziffern im 2er-System (binär) entspricht.
+  * ... 1 Ziffer im 16er-System (Hexadezimal) genau 4 Ziffern im 2er-System (binär) entspricht.
+
+==== Umwandlung zwischen Oktal und Binär ====
+
+=== Binär => Oktal ===
+  - Schreibe die binär codierte Zahl von rechts nach links in Gruppen von 3 binären Stellen auf.
+  - Übertrage jede Gruppe vom Binärsystem ins Oktalsystem:
+<code>
+1.  0110 1011  => 01 101 011
+2.  01 101 011 = 153
+</code>
+
+=== Oktal => Binär ===
+  - Übertrage von rechts nach links jede oktal codierte Ziffer in eine 3-stellige binäre Zahl.
+  - Füge führende Nullen hinzu, bis die gewünschte Länge der binär codierten Zahl erreicht ist (z.B. 16 Bit)
+
+<code>
+4617 = ‭0 000 100 110 001 111‬
+</code>
+
+==== Umwandlung zwischen Hexadezimal und Binär ====
+
+=== Binär => Hexadezimal ===
+  - Schreibe die binär codierte Zahl von rechts nach links in Gruppen von 4 binären Stellen auf.
+  - Übertrage jede Gruppe vom Binärsystem ins Hexadezimalsystem:
+<code>
+1.  01101011  => 0110 1011
+2.  0110 1011 = 6B
+</code>
+
+=== Hexadezimal => Binär ===
+  - Übertrage von rechts nach links jede hexadezimal codierte Ziffer in eine 4-stellige binäre Zahl.
+  - Füge führende Nullen hinzu, bis die gewünschte Länge der binär codierten Zahl erreicht ist (z.B. 16 Bit)
+
+<code>
+A31C = 1010 0011 0001 1100
+</code>
+
+===== Umrechnen von/nach Dezimalsystem =====
+Das Dezimalsystem basiert nicht auf einer Potenz der Zahl 2.
+Daher müssen wir die Zahlen umrechnen und können nicht einfach Stellen ersetzen.
+
+==== Dezimalzahl umrechnen ====
+Bei der Umrechnung einer Dezimalzahl divideren wir die Zahl immer wieder durch die neue Basis, z.B. 16.
+Bei jeder Division notieren wir den ganzzahligen Rest.
+
+253<sub>10</sub> = FD<sub>16</sub>
+<code>
+253 / 16 = 15  Rest 13   => Notiere D
+ 15 / 16 =  0  Rest 15   => Notiere F
+</code>
+
+253<sub>10</sub> = 375<sub>8</sub>
+<code>
+253 / 8 = 31  Rest 5
+ 31 / 8 =  3  Rest 7
+  3 / 8 =  0  Rest 3
+</code>
+
+Die Zahl in der neuen Basis wird dann von unten nach oben gelesen.
+
+==== Umrechnung ins Dezimalsystem ====
+
+=== System Multiplikation & Addition ===
+
+Bei der Umrechnung in eine Dezimalzahl wenden wir wiederholt eine Multiplikation und Addition an.
+Dabei gehen wir von links nach rechts vor:
+
+375<sub>8</sub> = 253<sub>10</sub>
+<code>
+ 0 * 8 + 3 = 3
+ 3 * 8 + 7 = 31
+31 * 8 + 5 = 253
+</code>
+
+=== System Stellenwertsystem ===
+
+== Dezimalsystem (Basis 10) ==
+
+Das Dezimalsystem, auch als Basis 10 bezeichnet, verwendet die Ziffern 0 bis 9. Das bedeutet, jede Stelle in einer dezimalen Zahl repräsentiert eine Potenz von 10, beginnend mit 10<sup>0</sup> (was 1 entspricht) für die rechte Stelle und erhöht sich nach links.
+
+Nehmen wir zum Beispiel die Zahl 732<sub>10</sub>:
+
+<code>
+732 ist die Summe aus:
+
+7 * 10^2  = 7 * 100 = 700 +
+3 * 10^1  = 3 *  10 =  30 +
+2 * 10^0  = 2 *   1 =   2 +
+                      732
+</code>
+
+Das bedeutet, dass die Zahl 732 im Dezimalsystem den Wert 732 hat. Dieses Beispiel mag redundant erscheinen, da wir im Alltag mit dem Dezimalsystem arbeiten, aber es hilft, das Konzept des Stellenwertsystems zu verdeutlichen.
+
+== Hexadezimalsystem (Basis 16) ==
+
+Das Hexadezimalsystem, auch als Basis 16 bezeichnet, verwendet die Ziffern 0 bis 9 und die Buchstaben A bis F (oder a bis f), wobei A (oder a) für 10, B (oder b) für 11 usw. bis F (oder f) für 15 steht. Das bedeutet, jede Stelle in einer hexadezimalen Zahl repräsentiert eine Potenz von 16, beginnend mit 16<sup>0</sup> (was 1 entspricht) für die rechte Stelle und erhöht sich nach links.
+
+Nehmen wir zum Beispiel die hexadezimale Zahl A4B<sub>16</sub>:
+
+<code>
+A4B ist die Summe aus:
+
+A * 16^2 = 10 * 256 = 2560 +
+4 * 16^1 =  4 * 16  = 64 +
+B * 16^0 = 11 * 1   = 11 +
+                      2635
+</code>
+
+Das bedeutet, dass die hexadezimale Zahl A4B<sub>16</sub> dem dezimalen Wert 2635 entspricht.
+
+== Oktalsystem (Basis 8) ==
+
+Das Oktalsystem, auch als Basis 8 bezeichnet, verwendet die Ziffern 0 bis 7. Das bedeutet, jede Stelle in einer oktalen Zahl repräsentiert eine Potenz von 8, beginnend mit 8<sup>0</sup>(was 1 entspricht) für die rechte Stelle und erhöht sich nach links.
+
+Nehmen wir zum Beispiel die oktale Zahl 347<sub>8</sub>:
+
+<code>
+347 ist die Summe aus:
+
+3 * 8^2 = 3 * 64 = 192 +
+4 * 8^1 = 4 *  8 =  32 +
+7 * 8^0 = 7 *  1 =   7 +
+                   231
+</code>
+
+Das bedeutet, dass die oktale Zahl 347<sub>8</sub> dem dezimalen Wert 231 entspricht.
+
+== Das System ==
+Das Stellenwertsystem ist eine Methode, um Zahlen darzustellen, bei der jede Ziffer in einer Zahl einen spezifischen Stellenwert hat. Dieser Stellenwert wird durch die Basis des Systems bestimmt. Im Dezimalsystem, das wir täglich verwenden, ist die Basis 10, daher gibt es 10 mögliche Ziffern (0 bis 9). Im Oktalsystem ist die Basis 8, daher gibt es 8 mögliche Ziffern (0 bis 7).
+
+Das Prinzip des Stellenwertsystems ist, dass jede Ziffer durch eine Potenz der Basis multipliziert wird, basierend auf ihrer Position in der Zahl. Die rechte Position hat immer die Potenz 0 (was immer 1 ergibt), und jede Position nach links erhöht die Potenz um 1.
+
+
+----
+{{tag>m114-A1G m114-A1F}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

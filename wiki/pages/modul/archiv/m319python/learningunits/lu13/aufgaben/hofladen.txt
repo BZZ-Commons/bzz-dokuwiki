@@ -1,0 +1,146 @@
+====== LU13.A02 - Hofladen erweitern ======
+===== Ausgangslage =====
+
+Der Bauer der den Hofladen betreut ist sehr glücklich über die neue Bestandsverwaltung für den Hofladen aus der [[modul:m319python:learningunits:lu12:aufgaben:hofladen|LU12.A02]]. Für seinen Steuerverwalter muss der Bauer jedoch jederzeit den Gesamtwert pro Produkt des Bestandes im Hofladen und zusätzlich noch den Gesamtwert aller Produkte im Hofladen ausgeben ausgeben können.
+
+<WRAP center round important 60%>
+Sie können diese Aufgabe lösen, indem Sie entweder:
+  * Ihren Hofladen aus LU12 erweitern und ihre Lösung hier auf Moodle abgeben.
+  * Die Github Classroom Aufgabe annehmen und mit der Lösung von LU12 weitermachen und ihre Lösung comitten und pushen.
+</WRAP>
+
+
+===== Programmaufgabe =====
+Ihr Programm kann bereits die Artikel im Hofladen verwalten.
+
+**Er funktioniert bisher so:**
+  * Der Benutzer gibt zuerst den Namens eines Artikels ein.
+  * Falls der Name ''Exit'' ist, wird das Programm beendet.
+  * Falls der Artikel noch nicht existiert, muss der Benutzer den Preis eingeben.
+  * Andernfalls wird der aktuelle Bestand ausgegeben.
+  * Zuletzt gibt der Benutzer die Veränderung des Bestands ein.
+
+**Neu kommt dazu:**
+  * Der Benutzer gibt zuerst den Namens eines Artikels ein.
+  * Falls der Name ''Exit'' ist, wird das Programm beendet.
+  * <color #ed1c24>Falls der Name ''Inventory'' ist, druckt das Programm für jeden Artikel den Produktwert (Preis * Bestand) und den Gesamtwert über alle Produkte aus</color>
+  * Falls der Artikel noch nicht existiert, muss der Benutzer den Preis eingeben.
+  * Andernfalls wird der aktuelle Bestand ausgegeben.
+  * Zuletzt gibt der Benutzer die Veränderung des Bestands ein.
+==== Beispiel ====
+<code>
+Artikelname > Milch
+Preis       > 5.75
+Menge       > 5
+
+Artikelname > Wurst
+Preis       > 21.10
+Menge       > 12
+
+Artikelname > Milch
+Bestand     : 5
+Menge       > -2
+
+Artikelname > Inventory
+
+Milch       : 17.25
+Wurst       : 253.20
+
+Total       : 270.45
+
+Artikelname > Exit
+</code>
+
+===== Programmablauf neu =====
+  - Erstelle eine leere Liste für die Artikel
+  - Eingabe des Artikelnamens
+  - Solange Artikelname nicht ''Exit'' ist
+    - <color #ed1c24>Falls die Eingabe ''Inventory''</color>
+      - <color #ed1c24>Für jedemn Artikel in der Liste</color>
+        - <color #ed1c24>Gib den Namen und den Produktwert (Menge * Preis) aus</color>
+        - <color #ed1c24>Addiere den Wert zum Gesamtwert</color>
+      - <color #ed1c24>Gib den Gesamtwert aus</color> 
+      - <color #ed1c24>Eingabe des Artikelnamens</color>  
+      - <color #ed1c24>Begin die Schleife von vorne</color> 
+    - <color #ed1c24>Sonst</color>
+      - Suche den Artikel in der Liste und merke dir diesen Artikel
+      - Falls kein Artikel gefunden wurde
+        - Erstelle ein neues Artikel-Objekt mit dem Artikelnamen, Preis=0.00 und Bestand=0
+        - Speichere das Objekt in der Liste
+        - Eingabe des Preises
+      - Sonst
+        - Ausgabe des aktuellen Bestands
+      - Eingabe der Menge
+      - Addiere die Menge zum Bestand
+      - Eingabe des Artikelnamens
+  - Gib die Artikelliste als Returnwert zurück
+
+===== Umsetzung  =====
+==== 1. Anpassung Produkt ====
+
+Zu jedem Produkt werden diese Attribute gespeichert:
+
+  * Name des Artikels (Text)
+  * Preis des Artikels (Dezimalzahl)
+  * Bestand (Ganzzahl)
+
+Zusätzlich zu diesen drei Angaben benötigen wir neu auch noch den Produktwert. Wie wir in der [[modul:m319python:learningunits:lu13:lu13a-funktionenfuerklassen#getter_for_not_existing_attribute_-_methode|Theorie zu LU13]] gelernt haben, können wir einen Getter, resp. ein ''property'' für einen Wert auch ohne eigenes Attribut machen. Ergänzen Sie also ihr Produkt um ein ''property'' für ''product_value''.
+
+==== 2. Funktion definieren ====
+Bisher haben Sie Ihren Code in merhere Funktionen aufgeteilt. Auch hier würde es sich anbieten, eine Funktion zu schreiben, die dafür verantwotlich ist, das Inventar auszudrucken und den Gesamtwert zu berechnen und auszugeben. 
+
+Definieren sie also eine Funktion, die über eine ihr übergebene Liste iteriert und von jedem Produkt den ''name'' und ''product_value'' ausgibt. Ebenso soll die Funktion eine Summe über alle ''product_value'' erstellen und diese am Schluss ausgeben.
+
+
+  - Erstelle eine leere Liste für die Artikel
+  - Eingabe des Artikelnamens
+  - Solange Artikelname nicht ''Exit'' ist
+    - Falls die Eingabe ''Inventory''
+      - <color #ed1c24>Für jedemn Artikel in der Liste</color>
+        - <color #ed1c24>Gib den Namen und den Produktwert (Menge * Preis) aus</color>
+        - <color #ed1c24>Addiere den Wert zum Gesamtwert</color>
+      - <color #ed1c24>Gib den Gesamtwert aus</color>
+      - Eingabe des Artikelnamens
+      - Begin die Schleife von vorne
+    - Sonst
+      - Suche den Artikel in der Liste
+      - Falls kein Artikel gefunden wurde
+        - Erstelle ein neues Artikel-Objekt mit dem Artikelnamen, Preis=0.00 und Bestand=0
+        - Speichere das Objekt in der Liste
+        - Eingabe des Preises
+      - Sonst
+        - Ausgabe des aktuellen Bestands
+      - Eingabe der Menge
+      - Addiere die Menge zum Bestand
+      - Eingabe des Artikelnamens
+  - Gib die Artikelliste als Returnwert zurück
+
+==== 3. Programmfluss anpassen ====
+ 
+Damit ihr Programm jetzt auf ''Inventory'' als Artikelname reagieren kann, müssen Sie den Kontrollfluss anpassen.
+
+  - Erstelle eine leere Liste für die Artikel
+  - Eingabe des Artikelnamens
+  - Solange Artikelname nicht ''Exit'' ist
+    - <color #22b14c>Falls die Eingabe ''Inventory''</color>
+      - Für jedemn Artikel in der Liste
+        - Gib den Namen und den Produktwert (Menge * Preis) aus
+        - Addiere den Wert zum Gesamtwert
+      - Gib den Gesamtwert aus
+      - <color #22b14c>Eingabe des Artikelnamens</color>
+      - <color #22b14c>Begin die Schleife von vorne</color>
+    - <color #22b14c>Sonst</color>
+      - Suche den Artikel in der Liste
+      - Falls kein Artikel gefunden wurde
+        - Erstelle ein neues Artikel-Objekt mit dem Artikelnamen, Preis=0.00 und Bestand=0
+        - Speichere das Objekt in der Liste
+        - Eingabe des Preises
+      - Sonst
+        - Ausgabe des aktuellen Bestands
+      - Eingabe der Menge
+      - Addiere die Menge zum Bestand
+      - Eingabe des Artikelnamens
+  - Gib die Artikelliste als Returnwert zurück
+
+
+

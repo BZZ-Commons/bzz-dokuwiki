@@ -1,0 +1,8 @@
+====== LU08 - Seitennavigation ======
+<nspages . -h1  -exclude -simpleList -textPages=""> 
+ 
+===== Aufgaben =====
+<nspages .:aufgaben -h1  -exclude:start -simpleList -textPages=""> 
+ 
+===== Lösungen =====
+<nspages .:loesungen -h1  -exclude:start -simpleList -textPages="">

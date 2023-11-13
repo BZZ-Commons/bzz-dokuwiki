@@ -1,0 +1,27 @@
+====== LU13b - Continuous Delivery (CD) ======
+
+<WRAP center round info 60%>
+Continuous Delivery (kontinuierliche Lieferung) ist eine Softwareentwicklungsmethode, bei der Codeänderungen automatisch erstellt, getestet und für eine Produktionsversion vorbereitet werden.
+
+//Quelle: [[https://aws.amazon.com/de/devops/continuous-delivery/|aws Amazon]]//
+</WRAP>
+
+Bei der Continous Delivery werden die Änderungen aus der Continuous Integration (CI) in die produktionsbereite Version der Software übernommen.
+Diese Version wird in eine Test- oder Stagingumgebung verschoben.
+Hier finden nun weitere Tests statt, die über die Unittests der CI hinausgehen:
+  * Lasttests: Wie reagiert die Applikation bei vielen gleichzeitigen Anfragen oder grossen Datenmengen.
+  * UI-Tests: Wie arbeitet das User Interface auf unterschiedlichen Endgeräten.
+  * Integrationstests: Funktioniert die Kommunikation mit anderen Systemen.
+  * Abnahmetests: Der Auftraggeber und Benutzer prüfen die Software.
+
+Sind alle Tests erfolgreich, wird die produktionsbereite Version an den Kunden ausgeliefert.
+Dabei wird die fertige Applikation in das Produktionssystem verschoben.
+
+===== Continuous Deployment =====
+Manchmal wird das Kürzel CD auch für das Continuous Deployment verwendet.
+Der Unterschied zum Continuous Delivery ist eine automatisierte Aktualisierung des Produktionssystems.
+Sobald alle automatisierten Tests erfolgreich durchlaufen wurden, wird die Software automatisch ausgeliefert.
+
+----
+{{tag>M450-LU13}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

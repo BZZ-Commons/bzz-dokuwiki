@@ -1,0 +1,57 @@
+====== LU04.A14 - Rabattberechnung ======
+
+<WRAP center round todo 60%>
+Erstellen Sie eine Funktion, die den Preis eines Produkts nach Rabatt mithilfe des ternären Bedingungsoperators berechnet.
+</WRAP>
+
+===== Detaillierte Aufgabenstellung =====
+
+Ihre Aufgabe ist es, eine Funktion mit dem Namen ''calculate_discount'' zu entwickeln, die den Preis eines Produkts nach Rabatt berechnet.
+
+Die Funktion sollte die folgenden Argumente annehmen:
+
+  * ''price'' (float): Der ursprüngliche Preis des Produkts.
+  * ''is_on_sale'' (bool): Gibt an, ob das Produkt im Angebot ist oder nicht. Falls im Angebot, wird 10% Rabatt berechnet.
+
+Die Funktion sollte einen Wert vom Typ ''float'' zurückgeben, der den Preis des Produkts nach Rabatt darstellt. Wenn das Produkt im Angebot ist, beträgt der Rabatt 10%.
+
+==== Code-Vorlage ====
+<code python>
+def calculate_discount(price, is_on_sale):
+    """
+    Berechnet den Preis eines Produkts nach Rabatt.
+
+    Args:
+    price (float): Der ursprüngliche Preis des Produkts.
+    is_on_sale (bool): Gibt an, ob das Produkt im Angebot ist oder nicht. Falls im Angebot, wird 10% Rabatt berechnet.
+
+    Returns:
+    float: Der Preis des Produkts nach Rabatt.
+    """
+    # TODO: Implementieren Sie die Funktion
+    pass
+
+
+if __name__ == '__main__':
+    products = [
+        {"name": "Laptop", "price": 1000.0, "is_on_sale": True},
+        {"name": "Maus", "price": 50.0, "is_on_sale": False},
+        {"name": "Tastatur", "price": 70.0, "is_on_sale": True}
+    ]
+
+    for product in products:
+        discounted_price = calculate_discount(product["price"], product["is_on_sale"])
+        print(f"Produkt: {product['name']}, Originalpreis: {product['price']}Fr., Rabattierter Preis: {discounted_price}Fr.")
+</code>
+
+==== Schrittweise Vorgehen ====
+
+  - Verwenden Sie den ternären Bedingungsoperator, um zu überprüfen, ob das Produkt im Angebot ist.
+  - Wenn es im Angebot ist, berechnen Sie den Preis nach Rabatt.
+  - Wenn es nicht im Angebot ist, bleibt der Preis unverändert.
+  - Geben Sie den berechneten Preis zurück.
+
+
+----
+<nodisp>https://github.com/templates-python/m323-lu04-a14-ternary</nodisp>
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/ch/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Kevin Maurizi

@@ -1,0 +1,40 @@
+====== LU10.A03: Logikfehler  ======
+===== Aufgabenstellung =====
+
+Der Sourcecode des Programms ''m319_lu10_wrongdivider'' enthält einen oder mehrere Fehler in der Programmlogik. 
+Das Programm sollte den grössten gemeinsamen Teiler aus zwei Zahlen berechnen.
+
+<code python>
+def main():
+    """
+    Ermittelt den grössten gemeinsamen Teiler von zwei Ganzzahlen
+    :return: None
+    """
+    first_number = int(input('Gib die erste Ganzzahl ein > '))
+    second_number = int(input('Gib die zweite Ganzzahl ein > '))
+    while second_number != 0:
+        modulo = first_number % second_number
+        second_number = first_number
+        first_number = modulo
+    print(str(second_number))
+
+
+if __name__ == '__main__':
+    main()
+</code>
+
+===== Hinweis  =====
+Die ggT-Berechnung geschieht nach dem [[https://de.wikipedia.org/wiki/Steinscher_Algorithmus|Algorithmus von Steiner nach Euklid]]. 
+
+  - R wird zum Divisionsrest aus A / B. (Falls B > A, so wird R einfach zu A.)
+  - Ist R = 0, so ist B der ggT, und das Unterprogramm wird beendet.
+  - Der Variable A wird der Wert von B zugewiesen, und der Variable B wird R zugewiesen.
+  - Zurück zu 1. 
+
+==== Vorgehen ====
+  - Akzeptieren Sie das Assignment im GitHub Classroom
+  - Klonen Sie ihr Repository in PyCharm.
+  - Führen Sie die Tests in ''main_test.py'' aus. Schauen Sie, welche Testfälle fehlerhaft sind.
+  - Verfolgen Sie den Programmablauf mit dem Debugger.
+  - Korrigieren Sie den/die Fehler und führen Sie die Tests erneut aus.
+  - Commit & Push

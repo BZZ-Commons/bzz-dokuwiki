@@ -1,0 +1,28 @@
+====== LU02.A01 - Summe einer Zahlenliste ======
+
+<WRAP center round todo 60%>
+Schreiben Sie eine Funktion in Python, die eine Liste von Zahlen als Eingabe akzeptiert und die Summe dieser Zahlen zurückgibt. Die Funktion sollte eine pure function sein.
+</WRAP>
+
+
+=== Anleitung in Schritten ===
+  - Definieren Sie die Funktion mit einem passenden Namen, z. B. ''sum_of_numbers''.
+  - Akzeptieren Sie eine Liste von Zahlen als Parameter.
+  - Verwenden Sie die eingebaute ''sum''-Funktion oder eine Schleife, um die Summe der Zahlen zu berechnen.
+  - Geben Sie die berechnete Summe zurück.
+
+<code python>
+# your function sum_of_numbers goes here
+
+if __name__ == "__main__":
+    list = [1, 2, 3, 4, 5]
+    # and here
+</code>
+
+
+=== Zusammenfassung ===
+In dieser Aufgabe haben Sie eine pure function in Python geschrieben, die die Summe einer Liste von Zahlen berechnet. Eine pure function hat keine Seiteneffekte und liefert bei gleichen Eingabewerten immer das gleiche Ergebnis.
+
+----
+<nodisp>GitHub Repo: https://github.com/templates-python/m323-lu02-a01-pure1</nodisp>
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/ch/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Kevin Maurizi 

@@ -1,0 +1,97 @@
+===== B: Vorgehensmodelle für Projekte =====
+
+Im Rahmen eines Projekts wird, wie Sie in Ihrer Ausbildung gelernt haben, etwas Neues geschaffen und beispielsweise aus einer Idee ein neues Produkt entwickelt. Ein solches Vorhaben setzt ein strukturiertes Vorgehen voraus. Allgemein bedeutet dies, den Ablauf von der Idee zum neuen Produkt möglichst effizient und zielgerichtet zu gestalten. Dieser Ablauf wird üblicherweise als //Realisierungs- oder Entwicklungsprozess// bezeichnet. Während der erste Begriff für alle Projektarten verwendet werden kann, kommt der zweite Begriff meist bei Entwicklungsprojekten zum Einsatz.
+
+{{ :modul:m426_2:learningunits:lu01:bild1.jpg?600}}
+
+Wenn beim Realisierungsprozess nicht strukturiert vorgegangen wird, müssen folgende Risiken in Kauf genommen werden:
+
+  * Ein Produkt wird realisiert, bevor das vom Auftraggeber erwartete Ergebnis klar ist. 
+  * Wichtige Umsetzungsaufgaben bzw. -tätigkeiten werden vergessen. 
+  * Dokumente, die für die Nutzung oder Weiterentwicklung des Produkts wichtig sind, werden gar nicht oder zu spät erstellt.
+
+Solche Versäumnisse können nicht nur zu zeitraubenden Nacharbeiten in einem Projekt führen. sondern sogar dazu, dass ein Projekt erfolglos abgebrochen werden muss.
+
+==== B1: Beispiele aus der Softwareentwicklung ====
+
+  * Eine Anwendung wird allzu rasch programmiert, ohne dass vorher abgeklärt wird, was die Benutzer genau wollen. Folge: Eine Erhebung und Umsetzung der not-wendigen Änderungen ist ähnlich aufwendig wie der bisherige Realisierungsprozess. 
+  * Bei der Inbetriebnahme einer Anwendung wird keine Ausbildung der Benutzer vorgesehen. Folge: Das Ergebnis des Projekts kann nicht effektiv genutzt werden. 
+  * Während der Entwicklung einer Anwendung werden keine Dokumente zur War-tung und I oder Weiterentwicklung erstellt. Folge: Die fehlenden Informationen müssen nachträglich gesammelt und festgehalten werden.
+
+==== B2: Vorgehensmodelle für Projekte ====
+
+Vorgehensmodelle für Projekte können als «Best Practices» aufgefasst werden, die Erfahrungen aus der Abwicklung zahlreicher Projekte zusammenfassen und für eigene Projekte (ggf. mit geringfügigen Anpassungen) übernommen werden können. Auf diese Weise kann Zeit gespart und verhindert werden, dass die gleichen oder gleichartigen Fehler wiederholt werden. In den folgenden Unterkapiteln werden verschiedene Elemente und Typen von Vorgehensmodellen näher vorgestellt. Darüber hinaus lernen Sie Modelle für ein strukturiertes Vorgehen kennen, die bei IT-Projekten häufig zum Einsatz kommen.
+
+==== B3: Elemente von Vorgehensmodellen ====
+
+Mithilfe eines Vorgehensmodells kann der Realisierungsprozess in einzelne Schritte bzw. Aufgaben zerlegt werden, die so anzuordnen sind, dass die Idee möglichst effektiv und effizient in ein Ergebnis bzw. Produkt umgesetzt wird. Zu diesem Zweck wird der gesamte Prozess in mehrere Phasen aufgeteilt, wobei in jeder Phase bestimmte Aktivitäten ausgeführt und definierte Ergebnisse erarbeitet werden müssen. Jede Phase endet mit einem so genannten Meilenstein.
+
+^ Element  ^ Beschreibung  ^ Beispiel ^
+| Phase  | Zeitabschnitt, in dem ein bestimmter Teilprozess durchgeführt und bestimmte Ergebnisse erarbeitet werden.  | Anforderungsanalyse  |
+| Meilenstein  | Abschluss einer Phase bzw. Zeitpunkt, zu dem bestimmte Ergebnisse erwartet werden. Mit einem Meilenstein ist oft eine Entscheidung über das weitere Vorgehen verbunden.  | Spezifikation abgenommen  |
+| Aktivität  | Konkrete Tätigkeit während einer Phase. Aktivitäten beziehen sich immer auf konkrete Ergebnisse.  | System abgrenzen  |
+| Ergebnis  | Erwartetes Lieferobjekt einer Aktivität oder Phase. Typische Lieferobjekte bei IT-Projekten sind Dokumente oder Programmcode.  | Pflichtenheft  |
+| Rolle  | Funktionale Beschreibung der Personen, die an einer Aktivität bzw. an den jeweiligen Ergebnissen beteiligt sind. Anhand der Rollenbeschreibung kann ermittelt werden, welche Kompetenzen im Projektteam benötigt werden.  | Business Analyst  |
+
+Ein Vorgehensmodell beschreibt die Anordnung und Beziehungen dieser Elemente, d. h. den Ablauf der einzelnen Phasen und Aktivitäten, die zu liefernden Ergebnisse der einzelnen Phasen bzw. Aktivitäten sowie die dafür benötigten Rollen und Entscheidungen.
+
+==== B4: Typen von Vorgehensmodellen ====
+
+In den letzten Jahrzehnten haben sich unterschiedliche Typen von Vorgehensmodellen herausgebildet, die ausführlich beschrieben und praktisch erprobt wurden. Entsprechend gross ist der Fundus an verfügbaren Vorgehensmodellen. Für Projekte in den Bereichen System- und Softwareentwicklung lassen sich diese Vorgehensmodelle heranziehen:
+
+  * **Sequenzielle Vorgehensmodelle** zeichnen sich dadurch aus, dass eine Phase weitgehend abgeschlossen wird, bevor die nächste Phase beginnt. Solche Modelle sind weit verbreitet, da sie leicht verständlich und relativ einfach anzuwenden sind. 
+  * **Iterative Vorgehensmodelle** zeichnen sich dadurch aus, dass das Endprodukt schrittweise entwickelt wird und die einzelnen Phasen mehrfach, in unterschiedliche Intensität durchlaufen werden. Solche Modelle eignen sich besonders gut für grosse Entwicklungsprojekte 
+  * **Agile Vorgehensmodelle** zeichnen sich durch ein iteratives Vorgehen sowie durch flexible Formen der Projekt- und Arbeitsorganisation aus. Solche Modelle sind in letzter Zeit bei Softwareprojekten sehr populär geworden, setzen aber von allen Beteiligten eine hohe Flexibilität voraus.
+
+Jedes Vorgehensmodell hat seine spezifischen Vor- und Nachteile. Je nach Projekt bzw. Unternehmen wird ein bestimmtes Modell nicht in Reinkultur eingesetzt, sondern ggf. mit Elementen aus anderen Vorgehensmodellen angereichert. Oft definieren Unternehmen ein «eigenes» Vorgehensmodell für Projekte und erklären es zum Standard. Der Vorteil liegt darin, dass die Ausbildung der Projektleiter auf dieses Modell konzentriert werden kann. Auch ist ein Wechsel in der Projektführung einfacher zu bewerkstelligen. Als Projektleiter sollten Sie aber grundlegende Kenntnisse über alle Typen von Vorgehensmodellen haben.
+
+
+==== B5: IPERKA (Sequentiell und Iterativ) ====
+{{:modul:m426_2:learningunits:lu01:iperkazyklus.png?600 }}Die 6-Schritte-Methode IPERKA eignet sich sehr gut, gerade für ungeübte Projektmanagement-Novizen, um die Thematik "hineinzuwachsen“. Dabei sind die sechs Schritte wie folgt definiert: {{ :modul:m426_2:learningunits:lu01:iperka-phasen.jpg?200}}
+
+**1. Informieren:** Beim ersten Schritt geht es darum, die gestellte Aufgabe zu verstehen, zu erfassen worum es geht und sich ein Bild vom Ziel zu machen. Besondere Bedeutung kommt der systematischen Informationsbeschaffung zu. 
+
+**2. Planen:**  Bei der Arbeitsplanung geht es darum, sich den Weg zum Ziel vorzustellen. Jeder einzelne Arbeitsschritt sollte dazu notiert werden und dann in einen sinnvollen Ablauf gebracht werden. Im schriftlichen Arbeitsplan werden zudem die Hilfsmittel festgehalten, der Zeitbedarf geschätzt und bei Arbeiten im Team die Arbeitsverteilung festgelegt. Zielformulierungen werden erstellt: Ich will.../ wir wollen...
+
+**3. Entscheiden:** Sind Information und Planung optimal erfolgt, fällt das Entscheiden in der Regel nicht mehr schwer. Lösungsvarianten können mit Hilfe einer Entscheidungstabelle bewertet werden. Schwierige Entscheide sollten nicht hinausgezögert werden, sonst kostet das sehr viel Zeit oder schlimmstenfalls gibt es gar nichts mehr zu entscheiden, weil dann Sachzwänge vorliegen.
+
+**4. Realisieren:** Das Realisieren oder ausführen kann, wie bei Fertigungsaufgaben üblich, den zeitlichen Hauptteil einer Aufgabe umfassen oder, z.B. beim Durchführen einer Veranstaltung nur einen kleineren Teil beanspruchen. Der in der Planungshase erstellte Arbeitsplan ist in der Regel einzuhalten und sollte nicht leichtfertig geändert werden.
+
+**5. Kontrollieren und prüfen:** Jede ausgeführte Arbeit ist zu kontrollieren, bevor sie aus den Händen gegeben wird. Kontrollieren heisst z.B. nochmals durchlesen, mit der Aufgabenstellung vergleichen usw. Optimal ist es, wenn die Kontrolle nicht durch dieselbe Person erfolgt wie die Ausführung.
+
+**6. Auswerten:** Beim Auswerten denken wir über die ausgeführte Arbeit nach. Eventuell zusammen mit dem Auftraggeber. Zu diesem Zweck lässt man den ganzen Ablauf nochmals Revue passieren, vergegenwärtigt sich, was gut, was weniger gut gelaufen ist und was beim nächsten Mal verbessert werden sollte.
+
+Die Bezeichnung 6-Schritte-Methode erzeugt den Eindruck, dass es sich dabei um genau abgegrenzte Bearbeitungsschritte handelt, welche nacheinander in Angriff genommen werden. Dies kann bei gewissen Aufgaben durchaus so sein. Häufig ist jedoch, dass sich die einzelnen Schritte nicht scharf abgrenzen lassen und genau genommen eher Bearbeitungsphasen darstellen, welche sich zeitlich überlappen können.
+
+Wie in der Grafik zu erkennen ist, beginnt z.B. das Planen schon, wenn die Informationsphase noch nicht ganz abgeschlossen ist. Oder es wird notwendig sein, während der Planungsphase Entscheidungen zu treffen.
+
+IPERKA kann auch als iteratives Verfahren angewendet werden, wenn die Zielsetzung aus der Phase INFORMIERN nicht zu klaren Anforderungen geführt hat (Beispielsweise unklare Projektvorstellungen seitens Auftraggeberschaft. In dem Falle werden einzelne Phasen wie PLANEN, REALISIERE und KONTROLLIEREN mehrfach durchlaufen.
+
+
+==== B6: Hermes (Iterativ) ====
+
+{{:modul:m426_2:learningunits:lu01:hermes.png?200 }} Bei Hermes handelt es sich um eine schweizerische Projektführungsmethode, die vom Informatiksteuerungsorgan des Bundes (ISB) publiziert und gepflegt wird. Sämtliche Unterlagen über Hermes können kostenlos vom Internet heruntergeladen werden. Dazu gehören folgende Dokumente:{{ :modul:m426_2:learningunits:lu01:hermesphasen.jpg?400}}
+
+  * Hermes Manager: Pocket Guide mit den wichtigsten Begriffen (Format A6) 
+  * Hermes Grundwissen: Kurzfassung zu den Grundlagen (Format A5)
+
+Hermes gilt als Standard bei Informatikprojekten des Bundes, es kann aber grundsätzlich von jedermann verwendet werden. Inzwischen ist eine auf Kleinprojekte zugeschnittene Variante von Hermes erhältlich. Diese gliedert den Projektablauf in folgende Phasen: WAS? WIE? WER?
+
+%%Hermes ist ein umfassendes und mächtiges Vorgehensmodell für IT-Projekte, das für die Abwicklung eines Kleinprojekts entsprechend «abgespeckt» werden kann bzw. muss. Die Anpassung eines Vorgehensmodells an ein konkretes Projekt nennt man auch „Tailoring“.%%
+
+
+
+
+
+==== B7: Scrum ====
+
+Sequenzielle Vorgehensmodelle setzen voraus, dass ein Projekt von Anfang bis Ende planbar ist und die Projektergebnisse frühzeitig und weitgehend vollständig spezifiziert werden können. Agile Vorgehensmodelle wie //Scrum// dagegen gehen davon aus, dass bei Beginn eines Projekts vieles noch unsicher ist und erst während des Projekts geklärt werden kann. Sie eignen sich daher besonders gut für komplexe IT-Projekte.
+
+Eine Besonderheit des Scrum-Verfahrens besteht darin, dass sich die Entwicklerteams selber organisieren und kein Projektleiter vorgesehen ist. Entsprechend hoch sind die Anforderungen an alle Projektbeteiligten.
+
+Bei Scrum wird der Projektverlauf in feste Zeitabschnitte, sogenannte //Sprints// unterteilt. In jedem Sprint wird das Endprodukt inkrementell weiterentwickelt. Ein Sprint kann erst abgeschlossen werden, wenn die für diesen Zeitabschnitt geplante Funktionalität fertig entwickelt und abgenommen worden ist. Gleichzeitig gelten bei Scrum die in der Softwareentwicklung bewährten Schritte //Anforderungsspezifikation - Design - Implementierung - Test//. Diese stellen aber keine eigenen Phasen dar, sondern finden jeweils innerhalb eines Sprints statt. {{:modul:m426_2:learningunits:lu01:05_incremental-2999931991.jpg?500 }}
+
+Die spezifizierten Anforderungen werden im //Product Backlog// festgehalten. Dieser umfasst somit die komplette Funktionalität des erwarteten Endprodukts. Funktionen oder Teilfunktionen, die in einem bestimmten Sprint zu realisieren sind, werden in den //Sprint Backlog// übernommen. Diese stellen aber keine eigenen Phasen dar, sondern finden jeweils innerhalb eines Sprints statt. Die nachfolgende Grafik veranschaulicht den Scrum-Ablauf: 
+
+Die spezifizierten Anforderungen werden im //Product Backlog// festgehalten. Dieser um-fasst somit die komplette Funktionalität des erwarteten Endprodukts. Funktionen oder Teilfunktionen, die in einem bestimmten Sprint zu realisieren sind, werden in den //Sprint Backlog// übernommen. Folgende Grafik verdeutlicht dieses Arbeitsprinzip:
+

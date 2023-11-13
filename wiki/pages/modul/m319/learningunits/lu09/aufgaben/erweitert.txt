@@ -1,0 +1,133 @@
+====== LU09.A03 - Erweiterte Aufgaben ======
+
+===== 1. Mehrere Return-Werte =====
+
+Erstellen Sie eine Funktion welche für eine Ganzzahldivision folgende Werte zurückliefert:
+  * Das Resultat der Ganzzahldivision
+  * Den Rest aus der Ganzzahldivision
+
+Beispiel der Resultate bei der Division ''34/6'':
+  * Resultat: ''5''
+  * Rest: ''4''
+
+Beispiel der Resultate bei der Division ''50/5'':
+  * Resultat: ''10''
+  * Rest: ''0''
+
+<code python>
+
+def div(dividend, divisor):
+    """
+    TODO
+    """
+    return #TODO
+
+
+def main():
+    result, rest = div(34,6)
+    print(#TODO)
+
+
+if __name__ == '__main__':
+    main()
+</code>
+
+===== 2. Längenumrechner =====
+=== 1. Code ausführen und verstehen ===
+
+Führen Sie folgenden Code aus und versuchen Sie ihn zu verstehen.
+<code python>
+def convert(length, from_unit, to_unit):
+    """
+    Converts lengths. The following lengths can be converted: meters, miles, nautical miles, yards, inches
+    :length: length to convert
+    :from_unit: 1=Meter, 2=Meilen, 3=Seemeilen, 4=Yard, 5=Inches
+    :to_unit: 1=Meter, 2=Meilen, 3=Seemeilen, 4=Yard, 5=Inches
+    :return: converted length
+    """
+    if (from_unit == 1):
+        result = length
+    elif (from_unit == 2):
+        result = length * 1609.34
+    elif (from_unit == 3):
+        result = length * 1852.0
+    elif (from_unit == 4):
+        result = length * 0.9144
+    elif (from_unit == 5):
+        result = length * 0.0254
+
+    if (to_unit == 1):
+        return result
+    if (to_unit == 2):
+        result = result / 1609.34
+        return result
+    if (to_unit == 3):
+        result = result / 1852.0
+        return result
+    if (to_unit == 4):
+        result = result / 0.9144
+        return result
+    if (to_unit == 5):
+        result = result / 0.0254
+        return result
+
+
+def main():
+    print("1=Meter, 2=Meilen, 3=Seemeilen, 4=Yard, 5=Inches")
+    print(convert(1,1,4))
+
+if __name__ == '__main__':
+    main()
+</code>
+
+=== 2. Code anpassen ===
+
+Passen Sie den Code so an, dass die Standardumrechnung immer von ''Meter'' in ''Meilen'' geschieht. Andere Umrechnungen aber immernoch möglich sind:
+
+<WRAP center round box 60%>
+<code python>
+print(convert(1000))
+</code>
+<code>
+0.6213727366498067
+</code>
+</WRAP>
+
+
+<WRAP center round box 60%>
+<code python>
+print(convert(1000, 1, 4))
+</code>
+<code>
+1093.6132983377079
+</code>
+</WRAP>
+
+
+<WRAP center round box 60%>
+<code python>
+print(convert(1, to_unit = 5))
+</code>
+<code>
+39.37007874015748
+</code>
+</WRAP>
+
+
+
+=== 3. Erweiterung ===
+Machen Sie es möglich, dass nicht mehr nur Zahlen sondern **Zahlen und Texte** für die Umrechnung eingegeben werden können.
+<code python>
+print(convert(1, to_unit = 'Inches'))
+</code>
+<code>
+39.37007874015748
+</code>
+
+----
+
+{{tag>M319-F3G M319-F3F M319-F3E M319-F1F M319-F1E M319-F2G M319-F2F M319-F2E}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/ch/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Kevin Maurizi 
+
+Diese Aufgabe ist eine übersetzte und angepasste Aufgabe von [[https://scott3142.uk/|Scott Morgan]], verwendet unter CC BY NC SA.
+

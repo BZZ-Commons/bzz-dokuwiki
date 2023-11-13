@@ -1,0 +1,44 @@
+====== Einführung Skript4Fun ======
+
+==== Kursaufbau ====
+
+  * Teil 1: Grundlagen Python und JavaScript (bis ca. Ende Jahr)
+  * Teil 2: Frameworks Django und React (ca. ab Januar)
+  * Teil 3: Individuelle Projektarbeit (ca. ab April)
+
+==== Aussicht Teil 1 ====
+
+^LU^Python         ^LU^JavaScript    ^
+|01|Basics         |08|Basics        |
+|02|Variables etc. |09|Variables etc.|
+|03|Control Flow   |10|Control Flow  |
+|04|Lists          |11|Arrays        |
+|05|Dictionaries   |12|Maps, Objects |
+|06|Tuples and Sets|13|Sets          |
+|07|Functions      |14|Functions     |
+
+Der folgende Artikel liefert eine gute Übersicht über die Unterschiede zwischen [[https://www.freecodecamp.org/news/python-vs-javascript-what-are-the-key-differences-between-the-two-popular-programming-languages/|Python vs. JavaScript]] 😉
+
+==== Basisaufbau einer LU (gilt für Teil 1+2) ====
+
+  * Grundlagen (w3schools.com)
+  * Aufgaben (codewars.com)
+  * Quizz evtl. (kahoot.com)
+
+Eine LU (Learning Unit) entspricht einer Doppellektion. Dieser Kurs umfasst insgesamt 40 Doppellektionen.
+
+==== Inhalte von 2021/22 ====
+
+  - Grundlagen Python und JavaScript:
+    * Variablen, Kontrollfluss
+    * Datenstrukturen, Funktionen, Klassen
+    * Debugging, Unit Testing (in PyCharm / VS Code)
+  - Schwerpunkte Python:
+    * Verwendung von pip und pipenv
+    * Django (MVT-Pattern, Forms, Testing, Deployment)
+    * RESTful APIs mit Tastypie und Postman
+  - Schwerpunkte JavaScript:
+    * Verwendung von npm und node
+    * React (Props, Events, Conditionals, Hooks, Deployment)
+  - Individuelle Projektarbeit
+    * siehe [[https://never-drive.github.io/s4f-projects]]

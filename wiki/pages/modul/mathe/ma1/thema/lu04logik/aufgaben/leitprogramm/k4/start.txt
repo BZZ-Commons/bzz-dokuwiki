@@ -1,0 +1,27 @@
+===2. Boolsche Variablen===
+Eine boolsche Variable kennt die beiden Werte wahr/falsch. In der Informatik werden dafür die Werte ''true'' und ''false'' bzw. ''0'' und ''1'' verwendet.
+Während true/false oft in der Programmierung mit Hochsprachen vorkommt, sind 0/1 in der Digitaltechnik (Elektronik) anzutreffen.\\
+Die Aussage "//Zürich ist die Hauptstadt des gleichnamigen Kantons//" wird in einer entsprechenden Variable demnach mit ''true'' abgebildet. Diese Variable könnt z.B. ''is_capital_city'' heissen und den Wert ''true'' aufweisen. Für Winterthur müsste dann der Wert ''false'' sein.\\
+Einer boolschen Variabel wird ein Name zugewiesen der i.d.R. selbsterklärend sein sollte.\\
+\\
+----
+//Beispiele://
+  * ''is_valid'' für einen Wert, der das Ergebnis eines Wertevergleichs repräsentiert
+  * ''occupied'' für einen Wert, der einen Zustand signalisiert
+
+----
+Lösen Sie nun die [[modul:mathe:ma1:thema:lu04logik:aufgaben:leitprogramm:k3:u2:start|Übung 2]]
+
+----
+Überprüfen Sie Ihre Antworten. [[modul:mathe:ma1:thema:lu04logik:aufgaben:leitprogramm:k3:l2:start|Lösung 2]]\\
+Sollten Sie Fehler haben, schauen Sie sich die Theorie noch einmal genau an, besprechen Sie offene Fragen mit Ihren Kolleginnen und/oder Kollegen. Fragen Sie auch Ihre Lehrperson, wenn Sie weiterführende Hilfe brauchen.
+
+
+
+
+
+----
+[[modul:mathe:ma1:thema:lu04logik:aufgaben:leitprogramm:k4b:start|nächstes Kapitel]]
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) René Probst

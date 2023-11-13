@@ -1,0 +1,37 @@
+====== LU03a - Programmablaufplan ======
+
+===== Sinn und Zweck =====
+
+Beim Entwurf der bisherigen Programme haben Sie eine graphische Darstellung verwendet. 
+Diese Darstellungsform ist für den Menschen (den Programmierer) gedacht. 
+Menschen können bildliche Darstellungen wesentlich besser überblicken,
+als den Programmcode.
+Ausserdem können Sie damit den Programmablauf darstellen, ohne sich Gedanken über die Vorschriften einer Programmiersprache zu machen.
+
+===== Aufbau des PAP =====
+Der Programmablaufplan (PAP) ist eine der einfachsten Darstellungsformen für die Programmlogik. 
+Die Darstellung des PAP ist in DIN 66001 genormt.
+Wie jede Entwurfstechnik der strukturierten Programmierung umfasst er nur wenige grundlegende Elemente.
+
+{{:modul:m319:learningunits:lu03:papbeispiel.png|}}
+
+==== Start / Stop ====
+| {{:modul:m319:learningunits:lu03:pap_startstop.png|}} | Der Anfang und das Ende des Ablaufs wird mit einem abgerundeten Rechteck angezeigt. |
+
+==== Sequenz ====
+| {{:modul:m319:learningunits:lu03:pap_sequenz.png|}}| Eine Sequenz ist eine Abfolge von Befehlen, die nacheinander (also sequentiell) ausgeführt werden. Die einfachste Sequenz besteht aus einem einzigen Befehl. Eine Sequenz kann nur einen Nachfolger haben. |
+
+=== Eingabe / Ausgabe ===
+| {{:modul:m319:learningunits:lu03:pap_einausgabe.png|}} | An bestimmten Stellen benötigt ein Programm Daten oder eine Entscheidung des Benutzers für den weiteren Ablauf. An diesem Punkt wartet das Programm, bis der Benutzer seine Eingabe gemacht hat. Erst nachdem die Eingabe erfolgt ist, kann das Programm weiterfahren. \\ \\ Zudem will das Programm häufig die Ergebnisse seiner Arbeit dem Benutzer mitteilen (Ausgabe). \\ \\ In beiden Fällen handelt es sich um Sequenzen, die durch ein Parallelogramm dargestellt werden. |
+
+==== Selektion ====
+| {{:modul:m319:learningunits:lu03:pap_selektion.png|}} | Eine Selektion ist eine Entscheidung im Programmablauf. Zunächst besteht eine Selektion aus einer Frage oder Bedingung. Je nachdem wie die Antwort auf diese Bedingung aussieht, unterscheidet sich der Ablauf des Programms. \\ \\ Sobald die Selektion nicht mehr relevant ist für den Programmablauf, führt man die unterschiedlichen Pfade wieder zusammen. Eine Selektion kann maximal zwei Nachfolger haben (einen wenn die Bedingung zutrifft und einen wenn sie nicht zutrifft). |
+
+==== Iteration ====
+
+Eine Iteration ist die Wiederholung eines Programmteils.
+
+| {{:modul:m319:learningunits:lu03:pap_iteration.png|}} |Sie besteht aus  \\ %%*%% einer Bedingung, die prüft ob der Programmteil (nocheinmal) durchgeführt werden soll  \\ %%*%% Den Anweisungen, die mehrmals durchgeführt werden sollen \\ %%*%% einem Pfeil der zurückführt, wenn die Bedingung erfüllt ist  \\ %%*%% einem Pfeil der weiterführt, wenn die Bedingung nicht mehr erfüllt ist  \\ Eine Iteration hat immer zwei Nachfolger, einen ersten innerhalb der Iteration und einen zweiten nach Abschluss der Iteration.  |
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Marcel Suter

@@ -1,0 +1,51 @@
+====== Mathematik ======
+
+^Modulidentifikation |[[|tbd]] |
+^Kompetenzraster |[[.komptenzraster|Mathematik]]|
+
+===== Module =====
+
+<nspages :modul:mathe -subns -nopages -exclude -h1 -textNS="" -simplelist>
+
+===== LaTeX =====
+Für das Anschreiben von Formeln wird ein LaTeX-Plug-In verwendet. [[https://www.dokuwiki.org/plugin:mathjax]]\\
+Eine Anleitung zu LaTeX findet sich unter folgendem Link: [[https://de.wikipedia.org/wiki/Hilfe:TeX#Align-Umgebung]]\\
+
+=== LaTeX in DokuWiki nutzen ===
+Beispiele:\\
+**a) Inline-Darstellung**\\
+Innerhalb einer Textzeile wird ein mathematischer Ausdruck mit ''\('' eingeleitet und mit ''\)'' beendet. Eine Gleichung sieht dann wie folgt aus: \(1+2+\dots+n=\frac{n(n+1)}{2}\). Die Befehle für die Darstellung stammen von LaTeX, hier also ''dots'' für die drei Punkte und ''frac{..}{..}'' für den Bruch, wobei dem Befehl jeweils ein ''\'' vorgestellt wird.\\
+<code terminal>
+\(1+2+\dots+n=\frac{n(n+1)}{2}\)
+</code>
+\\
+**b) Zeilendarstellung**\\
+Soll der mathematische Ausdruck alleine auf einer Zeile stehen, ist das möglich, indem ''\['' an Stelle von ''\('' bzw. ''\]'' statt ''\)'' verwendet wird.
+
+\[ \sin A \cos B = \frac{1}{2}\left[ \sin(A-B)+\sin(A+B) \right] \]
+<code terminal>
+\[ \sin A \cos B = \frac{1}{2}\left[ \sin(A-B)+\sin(A+B) \right] \]
+</code>
+\\
+**c) umfassende Formeln**\\
+Mit den Steuerbefehlen ''\begin'' und ''\end'' können umfassende - auch mehrzeilige - Formeln dargestellt werden.
+\begin{align*}
+e^x & = 1 + x + \frac{x^2}{2} + \frac{x^3}{6} + \cdots \\
+    & = \sum_{n\geq 0} \frac{x^n}{n!}
+\end{align*}
+<code terminal>
+\begin{align*}
+e^x & = 1 + x + \frac{x^2}{2} + \frac{x^3}{6} + \cdots \\
+    & = \sum_{n\geq 0} \frac{x^n}{n!}
+\end{align*}
+</code>
+\\
+Weiter Beispiele:\\
+\( \pi = 3{,}141\dots\) \\
+\(a^2 + b^2 = c^2\) \\
+\(A3F_{hex}=1010'0011'1111_{bin}\) \\
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) René Probst
+

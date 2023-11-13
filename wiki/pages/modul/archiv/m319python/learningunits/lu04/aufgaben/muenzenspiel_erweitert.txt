@@ -1,0 +1,26 @@
+====== LU04.A07: Münzenspiel gegen Computer======
+===== Spielregeln =====
+<WRAP center round info 60%>
+Diese Aufgabe basiert auf der Aufgabe [[modul:m319python:learningunits:lu04:aufgaben:muenzenspiel]].
+Lösen Sie die Aufgabe mit [[https://think.cs.vt.edu/blockpy/blockpy/|BlockPy]] oder [[https://www.codingrooms.com/compiler/python-block|Codingrooms]]
+
+Laden Sie einen Screenshot ihres Blockly-Ablaufs hoch.
+</WRAP>
+
+  - Zu Beginn legen die Spieler einige Münzen (10 - 30) auf den Tisch.
+  - Zwei Spieler nehmen nun abwechslungsweise eine, zwei oder drei Münzen vom Tisch.
+  - Gewonnen hat der Spieler, der zuletzt Münzen vom Tisch genommen hat.
+
+
+===== Auftrag =====
+Erstellen Sie eine Kopie ihres Programms für das Münzenspiel.
+In diesem neuen Programm kann ein Spieler gegen den Computer spielen.
+Für den Zug des Computers können Sie verschiedene Varianten mit steigendem Schwierigkeitsgrad programmieren:
+
+  * Der Computer nimmt immer genau 1 Münze
+  * Der Computer nimmt eine zufällige Anzahl Münzen \\ ''coin_take= random.randint(1,3)''
+  * Der Computer nimmt genau so viele Münzen, dass er am Ende gewinnt.
+
+----
+{{tag>M319-D1F M319-F3G}} 
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Marcel Suter

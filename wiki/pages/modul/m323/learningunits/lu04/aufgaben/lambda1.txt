@@ -1,0 +1,38 @@
+====== LU04.A01 - Einfache Lambda Ausdrücke ======
+
+<WRAP center round todo 60%>
+Erstellen Sie vier Lambda-Funktionen, die die Grundrechenarten (Addition, Subtraktion, Multiplikation und Division) durchführen. Testen Sie diese anhand von Beispielen.
+</WRAP>
+
+
+===== Aufgabenstellung =====
+  * **Additionsfunktion**: Erstellen Sie eine Lambda-Funktion, die zwei Zahlen addiert.
+  * **Subtraktionsfunktion**: Erstellen Sie eine Lambda-Funktion, die zwei Zahlen subtrahiert.
+  * **Multiplikationsfunktion**: Erstellen Sie eine Lambda-Funktion, die zwei Zahlen multipliziert.
+  * **Divisionsfunktion**: Erstellen Sie eine Lambda-Funktion, die zwei Zahlen dividiert.
+
+===== Schrittweises Vorgehen =====
+  - Definieren Sie die Lambda-Funktionen für jede der vier Operationen.
+  - Testen Sie jede Funktion
+
+===== Vorlage =====
+<code python>
+add =  # Ihr Code hier
+
+subtract =   # Ihr Code hier
+
+multiply =   # Ihr Code hier
+
+divide =   # Ihr Code hier, beachten Sie die Fehlermeldung bei Division durch Null 'Division durch Null ist nicht erlaubt!'
+
+if __name__ == '__main__':
+
+    print (add(5, 10))
+    print(subtract(10, 5))
+    print(multiply(3, 4))
+    print(divide(15, 3))
+</code>
+
+----
+<nodisp>https://github.com/templates-python/m323-lu04-a01-lambda</nodisp>
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/ch/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Kevin Maurizi 

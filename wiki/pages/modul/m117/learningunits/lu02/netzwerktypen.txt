@@ -1,0 +1,35 @@
+====== LU02a - Netzwerktypen======
+
+==== Grundlagen ====
+Die Bedürfnisse der Unternehmen nach vernetzter Informationstechnologie steigen stetig. Mit den heutigen technischen Möglichkeiten können sowohl für Grossunternehmungen als auch für KMU geeignete Lösungen erarbeitet und umgesetzt werden. Fassen Sie die Bedürfnisse zusammen – es sind im Grundsatz immer dieselben:
+  * Zentrale bereitgestellte Daten für alle User. Beispiel: Firmendokumente
+  * Zentrale bereitgestellte Dienste für alle User. Beispiel: Druckdienst
+  * Zentrale Verwaltung der Berechtigungen von allen Usern
+
+
+Waren es früher die Host Rechner, welche es ermöglichten, dass das Terminal Rechenleistung und Applikationen auf dem Host benutzen konnte, hat sich danach eine neue
+Technologie in Windeseile verbreitet. Die Client-Server Technologie unterscheidet sich in drei wesentlichen Merkmalen gegenüber dem Host:
+  * Die Rechenleistung kann auch vom Client (PC, Notebook, Tablet, ...) übernommen werden
+  * Der Client ist mit einer eigenen grafischen Oberfläche ausgestattet (GUI --> Grafic User Interface)
+  * Ein Client ist interaktiv
+
+
+Gleichwohl ob Sie eine Host-, Client Server, etc., oder eine gemischte Umgebung vorfinden, die Themengebiete, welche Sie vorfinden, sind immer dieselben. In diesem Lehrmittel befassen Sie
+sich ausschliesslich mit der Client Server Architektur, weil diese heute die grösste Bereitung aufweist.
+
+Nachstehend sehen Sie einen Auszug der wichtigsten Themengebiete der Client-Server Architektur:
+  * Verzeichnisdienste
+  * Verfügbarkeiten von Services und Diensten
+  * Berechtigungen
+  * Kommunikationsverbindungen
+  * Sicherheit im Netzwerk
+  * Backup
+  * Datenorganisation
+  * Störungen im Betrieb
+
+
+----
+
+{{tag>m117}}
+
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Andre Probst

@@ -1,0 +1,40 @@
+====== LU01c - PyCharm - Projekt erstellen ======
+
+Erstellen Sie für das Modul 319 ein neues Projekt in PyCharm.
+
+Entweder via ''File > New > Project''
+
+{{:modul:m319python:learningunits:lu01:screenshot_2022-08-30_at_15.03.20.png?600|}}
+
+oder über den Projekte-Dialog:
+
+{{:modul:m319python:learningunits:lu01:screenshot_2022-08-30_at_15.03.05.png?600|}}
+
+----
+
+Wählen Sie ''Pure Python'' als Projekt-Art aus und geben Sie dem Projekt einen aussagekräftigen Namen.
+
+Wählen Sie ''New environment using virtualenv'' 
+
+{{:modul:m319python:learningunits:lu01:screenshot_2022-08-30_at_15.06.30.png?600|}}
+
+Klicken Sie anschliessen ''Create''
+
+
+----
+
+PyCharm erstellt Ihnen nun Ihr ersten Python-Projekt. 
+
+{{:modul:m319python:learningunits:lu01:screenshot_2022-08-30_at_15.14.53.png?600|}}
+
+Verwenden Sie den ''Play Button'' oben rechts um Ihre Applikation laufen zu lassen.
+
+{{:modul:m319python:learningunits:lu01:screenshot_2022-08-30_at_15.17.22.png?600|}}
+
+Im ''run''-Fenster sehen Sie nun die Ausgabe des Programms.
+
+{{:modul:m319python:learningunits:lu01:screenshot_2022-08-30_at_15.18.51.png?600|}}
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Kevin Maurizi

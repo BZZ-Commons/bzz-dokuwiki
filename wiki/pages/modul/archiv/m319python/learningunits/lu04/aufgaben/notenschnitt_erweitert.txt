@@ -1,0 +1,34 @@
+====== LU04.A06: Alternativer Notenschnitt ======
+===== Ausgangslage =====
+<WRAP center round info 60%>
+Lösen Sie die Aufgabe mit [[https://think.cs.vt.edu/blockpy/blockpy/|BlockPy]] oder [[https://www.codingrooms.com/compiler/python-block|Codingrooms]]
+
+Laden Sie einen Screenshot ihres Blockly-Ablaufs hoch.
+</WRAP>
+
+In einem Modul haben Sie mehrere Leistungsbeurteilungen, die jeweils mit einer Note bewertet werden.
+Am Schluss des Semesters wird die Zeugnisnote aus dem Durchschnitt aller Noten berechnet.
+
+Entwerfen Sie ein Programm, das die Zeugnisnote berechnet.
+Im Gegensatz zum ersten Programm mit dem Notenschnitt, zählt hier das Programm selbständig wie viele Noten der Benutzer eingibt.
+
+== Ablauf ==
+  - Der Benutzer gibt eine Prüfungsnote ein.
+  - Solange die Prüfungsnote grösser als Null ist.
+    - Das Programm addierte die Note zum Total und erhöht die Anzahl eingegebener Noten um Eins.
+  - Nachdem alle Noten eingegeben wurden, berechnet das Programm den Durchschnitt und zeigt diesen an.
+
+
+===== Empfohlenes Vorgehen =====
+  - Stellen Sie sicher, dass Sie die Programmaufgabe verstehen.
+  - Erstellen Sie eine Liste aller benötigten Variablen:
+      * Sprechender Bezeichner
+      * Initialwert
+  - Als erstes Element zeichnen Sie die Iteration inkl. Bedingung. \\ Diese Iteration ist das zentrale Programmelement, welches den Ablauf steuert.
+  - Ergänzen Sie die weiteren Programmelemente.
+    - Eingaben und Ausgaben
+    - Berechnungen
+
+----
+{{tag>M319-D1F M319-F3G}} 
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Marcel Suter

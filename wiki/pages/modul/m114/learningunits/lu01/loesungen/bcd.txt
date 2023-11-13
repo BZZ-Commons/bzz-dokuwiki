@@ -1,0 +1,24 @@
+====== LU01.L02a - Binary coded Decimals ======
+
+
+===== Dezimalzahlen im BCD-Format darstellen =====
+Ergänzen Sie die fehlenden Angaben in den Tabellen.
+
+=== BCD 8-4-2-1 ===
+
+^ Dezimal ^ Stellen ((Es ist jeweils die Anzahl der Stellen vor und nach dem Komma angegeben)) ^ BCD 8-4-2-1  ^ 
+| 158 | 3 / 1 ^ 1010 0001 0101 1000 0000 |
+| 3.141 | 2 / 3 ^ 1010 0000 0011 0001 0100 0001 |
+| -732 | 4 / 0 ^ 1011 0000 0111 0011 0010 |
+| -18.5 | 5 / 3 ^ 1011 0000 0000 0000 0001 1000 0101 0000 0000 |
+
+
+=== BCD 2-4-2-1 ===
+
+^ Dezimal  ^ BCD 2-4-2-1          ^
+| 2543     ^ 0010 0101 0100 0011  ^
+| 789      ^ 0111 1110 1111       ^
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

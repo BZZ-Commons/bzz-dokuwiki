@@ -1,0 +1,97 @@
+====== LU03b - Farben codieren ======
+===== Physikalische Grundlagen =====
+Die Farben die unser Auge wahrnimmt ist immer eine Mischung aus verschiedenen Farben.
+Aus der Physik wissen Sie, dass sich weisses Licht mit einem Prisma in seine Bestandteile rot, blau und gelb aufbrechen lässt.
+Genauso wird auch beim Regenbogen das weisse Sonnenlicht durch Wassertropfen in seine Bestandteile aufgebrochen.
+Das Resultat ist der Regenbogen.
+
+| {{http://www.dlr.de/schoollab/en/Portaldata/24/Resources/images/Neustrelitz/Experimente_2/9_P3.jpg}} | {{http://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Regenboog.jpg/120px-Regenboog.jpg}} |
+
+Umgekehrt lässt sich jede beliebige Farbe aus den drei Grundfarben rot, blau und gelb zusammensetzen:
+  * Blau und Gelb = Grün
+  * Gelb und Rot = Orange
+In Computersystemen nutzen wir dieses Wissen, um (fast) beliebige Farben darzustellen.
+
+===== Begriffe =====
+
+==== Farbmischung ====
+Die Farbmischung bezeichnet die Darstellung von Farben durch das Mischen verschiedener Grundfarben.
+Je nach Untergrund kommen dabei verschiedene Mischverfahren zum Einsatz:
+  * Bildschirm
+    * Der Ausgangspunkt ist die Farbe Schwarz.
+    * Zur Darstellung von Farben wird Licht hinzugefügt (additiv) bis schliesslich Weiss erreicht wird.
+  * Drucker
+    * Der Ausgangspunkt ist ein weisses Blatt.
+    * Zur Darstellung von Farben wird Licht verschluckt (subtraktiv), bis schliesslich Schwarz erreicht wird.
+
+=== Additive Farbmischung (RGB) ===
+//Siehe [[http://de.wikipedia.org/wiki/Additive_Farbmischung]]//
+
+Diese Farbmischung wird unter anderem für die Darstellung von Farben am Bildschirm genutzt.
+Die Bezeichnung "additiv" bedeutet, dass wir mit einem schwarzen Bildpunkt starten und die einzelnen Grundfarben hinzufügen.
+
+Ein Computerbildschirm verwendet die Farben:
+  * **R**ot
+  * **G**rün
+  * **B**lau
+
+{{http://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Monitor_1.jpg/220px-Monitor_1.jpg}}
+
+Je höher der Anteil der einzelnen Farben ist, desto heller wird der Bildpunkt.
+
+
+=== Subtraktive Farbmischung (CMYK) ===
+Beim Drucken muss die Farbmischung das Gegenteil von der Farbmischung am Bildschirm erreichen.
+Wir starten mit einem weissen Blatt und nehmen immer mehr Licht weg (subtraktiv), bis wir schwarz erreichen.
+
+Die Grundfarben beim Drucken sind:
+  * **C**yan   (Blaugrün)
+  * **M**agenta (Rotblau)
+  * **Y**ellow (Gelb)
+  * Blac**K** (Schwarz)
+
+{{http://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/CMYK_DIN_ISO_2846_1_LAB_to_RGB.svg/220px-CMYK_DIN_ISO_2846_1_LAB_to_RGB.svg.png}}
+
+Die Mischung von Cyan, Yellow und Magenta ergibt zwar theoretisch schwarz, in der Praxis ergibt sich daraus lediglich ein dunkles Braun.
+Deshalb wird zusätzlich schwarze Farbe verwendet.
+
+==== Auflösung ====
+Als Auflösung bezeichnen wir die Anzahl Bildpunkte in horizontaler und vertikaler Richtung.
+Durch die Multiplikation der Bildpunkte erhalten Sie das Total der Bildpunkte.
+Dieses wird in der Regel in Megapixeln angegeben. 
+
+== Beispiele ==
+  * Full HD: 1920 × 1080 Pixeln (2.07 Megapixel) 
+  * HD ready: 1280 × 720 Pixeln (0.92 Megapixel)
+==== Farbtiefe ====
+Mit der Farbtiefe geben wir an, wie viele Bits zum Speichern der Farben eines Pixels (Bildpunkt) verwendet werden.
+
+^ Farbtiefe ^ Bezeichnung ^ Beschreibung ^
+| 1 Bit | Schwarzweiss | Ein Pixel kann nur schwarz oder weiss sein. |
+| 8 Bit | Graustufen | Jeder Pixel wird mit einer Graustufe von 0=Weiss bis 255=Schwarz beschrieben. Farben können bei dieser Codierung nicht dargestellt werden. |
+| 8 Bit | 256 Farben | Diese Farbtiefe wird heute für Bilder im Internet (z.B. GIF, PNG) genutzt. Dabei wird eine Tabelle mit den 256 häufigsten Farben (Palette) eines Bildes erstellt. Der einzelne Pixel enthält dann den Index der jeweiligen Farbe in der Palette. |
+| 24 Bit | True Color | Für jede der Grundfarbe Rot, Grün und Blau stehen 8 Bits (0 - 255) zur Verfügung. Durch die Kombination der drei Farben können 16.7 Millionen Farben erzeugt werden.|
+
+
+===== Farbpunkte codieren =====
+Wir gehen von einer 24 Bit-Farbtiefe aus.
+Diese Farbtiefe wird in CSS-Stylesheets genutzt um die Farben einer Webseite festzulegen.
+
+Jeder Farbpunkt besteht aus den Grundfarben Rot, Grün und Blau (additives Farbmischverfahren).
+Somit besteht jede Farbe aus einer 8 Bit langen Zahl (3 Farben * 8 Bit = 24 Bit Farbtiefe).
+Durch unterschiedliche Anteile der Grundfarben lassen insgesamt 16'777'216 Farbtöne mischen.
+Einige Farben mit ihren Codes sehen Sie unter [[http://cssfarben.componeo.de/]]
+
+==== Codierung ====
+Ein reines Rot besteht aus 100% Rot, 0% Grün und 0% Blau.
+Diese Farbinformation kann auf unterschiedliche Weise codiert werden:
+| Binär | ''1111 1111 0000 0000 0000 0000''<sub>2</sub> | Diese Darstellung ist eher unüblich, da sie sehr viel Platz braucht. |
+| Hexadezimal | ''FF0000''<sub>16</sub> | Aus Platzgründen ist die hexadezimale Schreibweise üblich. |
+| Dezimal | 255,0,0 | Hier müssen die einzelnen Werte mit Komma getrennt werden. |
+| Prozentual | 100%, 0%, 0% | |
+
+
+
+----
+{{tag>m114-A0G}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

@@ -1,0 +1,56 @@
+====== LU05d - Vigenère  ======
+
+//Dieses und weitere Verfahren zum Nachlesen und Ausprobieren [[https://www.cryptool.org/de/cryptool-online]]//
+
+Dieses Verfahren wurde im 16. Jahrhundert von Blaise de Vigenère entwickelt und stellt eine Erweiterung der Caesar-Chiffre dar.
+Anhand eines Schlüssels wird für jeden Buchstaben festgelegt, um wie viele Stellen er im Alphabet verschoben wird.
+Dazu wird der Schlüssel immer wieder unter den Klartext notiert.
+
+<code>
+Klartext:  DIESES VERFAHREN GALT DREIHUNDERT JAHRE LANG ALS NICHT KNACKBAR
+Schlüssel: GEHEIM GEHEIMGEH EIMG EHEIMGEHEIM GEHEI MGEH EIM GEHEI MGEHEIMG
+</code>
+
+Nun beginnt man mit dem ersten Buchstaben im Klartext und im Schlüssel:
+  * Klartext: D
+  * Schlüssel: G
+
+Der Schlüssel bestimmt, um wieviele Stellen der Buchstabe im Alphabet verschoben wird.
+  * Schlüssel: G = 6. Buchstabe im Alphabet nach dem Buchstaben **A**.
+  * Chiffre: D + 6 Stellen = J
+
+===== Vigenère-Quadrat =====
+| {{:modul:m114:learningunits:lu05:vigenere.png?200|}} | Diese Tabelle ist ein Hilfsmittel zur schnelleren Verschlüsselung. Sie müssen nicht mehr die Positionen im Alphabet ermitteln bzw. berechnen. Stattdessen können Sie den Chiffre-Buchstaben direkt ablesen. \\ \\ Die rot markierten Stellen zeigen die Anwendung: Der Buchstabe **K** im Klartext und der Buchstabe **N** im Schlüssel werden zum Buchstaben **X** im Chiffretext.  |
+
+==== Verschlüsseln ====
+<code>
+Klartext:  Ist das nicht toll
+Schlüssel: Eim erE imerE imer
+</code>
+
+  - Wähle einen Buchstaben im Klartext (z.B. I) und den dazugehörigen Buchstaben im Schlüssel (z.B. E).
+  - Suche die Spalte mit dem Buchstaben aus dem Klartext.
+  - Suche die Zeile mit dem Buchstaben aus dem Schlüssel.
+  - Im Schnittpunkt dieser Spalte und Zeile finden Sie den Chiffre-Buchstaben (z.B. M)
+
+<code>
+Chiffre: MAFHRWVUGYXBAPC
+</code>
+==== Entschlüsseln ====
+<code>
+Chiffre:   WMCVWURMDWFXCOZHQDWCAZWQIFLRHF
+Schlüssel: BildungszentrumBildungszentrum
+</code>
+
+  - Wähle einen Buchstaben im Schlüssel (z.B. B) und den dazugehörigen Buchstaben aus dem Chiffretext (z.B. W)
+  - Suche die Zeile mit dem Buchstaben aus dem Schlüssel.
+  - Suche innerhalb der Zeile die Spalte mit dem Buchstaben aus dem Chiffretext.
+  - Der oberste Buchstabe in dieser Spalte ist der Klartext (z.B. V)
+
+<code>
+Klartext: VERSCHLUESSELUNGISTINTERESSANT
+</code>
+
+----
+{{tag>m114-A0G}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

@@ -1,0 +1,10 @@
+====== LU02.L04b - Schritt 2 ======
+
+<code>
+Falls ( ( e=0 AND f=0 AND g=0 AND h=0 ) OR
+        ( f=1 AND (g=0 OR h=0) )        OR
+        ( e=1 )
+</code>
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

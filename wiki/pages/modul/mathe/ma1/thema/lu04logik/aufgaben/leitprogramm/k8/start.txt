@@ -1,0 +1,139 @@
+=== 7. Kanonische Normalformen ===
+**Was ist eine Normalform?**\\
+Die Darstellung der Ausgangsvariable durch boolsche Therme mit und (\(\wedge\)) und oder (\(\vee\)) in einer Formel bezeichnet man als Normalform. Dabei wird unterschieden, wie die Terme verknüpft sind.\\
+----
+//Beispiel://\\
+Die folgende Wahrheitstabelle kann auf zwei Arten als boolscher Ausdruck angeschrieben werden.
+<WRAP left>
+|      IN       ||  ¦   |  OUT  |
+^   A   ^   B   ^   ¦   ^   C   ^
+|   0   |   0   |   ¦   |   1   |
+|   0   |   1   |   ¦   |   0   |
+|   1   |   0   |   ¦   |   1   |
+|   1   |   1   |   ¦   |   1   |
+</WRAP>
+Fall 1: C = (\(\neg\)A \(\wedge\) \(\neg\)B) \(\vee\) (\(\neg\)A \(\wedge\) B) \(\vee\) (A \(\wedge\) B)\\
+Fall 2: C = (\(\neg\)A \(\vee\) B)\\
+Im ersten Fall wird für jede Zeile die eine 1 ergibt ein Term als **Disjunktion** (ODER) angeschrieben.\\
+Im zweiten Fall wird für jede Zeile die eine 0 ergibt ein Term als **Konjunktion** (UND) angeschrieben. (In diesem Beispiel gibt es nur eine Zeile, die eine 0 ergibt. Darum kommen keine weiteren Terme dazu.)
+<WRAP clear></WRAP>
+
+----
+Kommen in jedem Term alle Variablen vor, so spricht man von einer **kanonischen Normalform**.\\
+
+
+**Disjunktive-Normalform (DNF)**\\
+Bei der disjunktiven Normalform werden für jede Zeile, die eine **1** als Ergebnis liefert, die Eingansgvariablen durch UND (\(\wedge\)) verküpft. Die resultierenden Terme werden dann ODER (<color #ed1c24>\(\vee\)</color>) verknüpft.\\
+----
+//Beispiele://\\
+<WRAP left>
+|      IN       ||  ¦   |  OUT  |
+^   A   ^   B   ^   ¦   ^   C   ^
+|   0   |   0   |   ¦   |   0   |
+|   0   |   1   |   ¦   |   1   | <color #ed1c24>\(\triangleleft\)</color> |
+|   1   |   0   |   ¦   |   1   | <color #ed1c24>\(\triangleleft\)</color> |
+|   1   |   1   |   ¦   |   0   |
+</WRAP>
+
+Der resultierende Term lautet:\\
+C = (\(\neg\)A \(\wedge\) B) \(\vee\) (A \(\wedge\) \(\neg\)B)\\
+\\
+=== ===
+//\(\neg\)A = 1, B = 1 \(\rightarrow\) 1 \(\wedge\) 1 = 1//\\
+//A = 1, \(\neg\)B = 1 \(\rightarrow\) 1 \(\wedge\) 1 = 1//
+<WRAP clear></WRAP>
+<WRAP left>
+|      IN       ||  ¦   |  OUT  |
+^   A   ^   B   ^   ¦   ^   C   ^
+|   0   |   0   |   ¦   |   1   | <color #ed1c24>\(\triangleleft\)</color> | 
+|   0   |   1   |   ¦   |   0   | 
+|   1   |   0   |   ¦   |   0   | 
+|   1   |   1   |   ¦   |   1   | <color #ed1c24>\(\triangleleft\)</color> |
+</WRAP>
+Der resultierende Term lautet:\\
+C = (\(\neg\)A \(\wedge\) \(\neg\)B) \(\vee\) (A \(\wedge\) B)\\
+<WRAP clear></WRAP>
+
+----
+**Konjunktive-Normalform (KNF)**\\
+Bei der konjunktiven Normalform werden für jede Zeile, die eine **0** als Ergebnis liefert, die Eingansgvariablen durch ODER (\(\vee\)) verküpft. Die resultierenden Terme werden dann UND (<color #ed1c24>\(\wedge\)</color>) verknüpft.\\
+----
+//Beispiele://\\
+<WRAP left>
+|      IN       ||  ¦   |  OUT  |
+^   A   ^   B   ^   ¦   ^   C   ^
+|   0   |   0   |   ¦   |   0   | <color #ed1c24>\(\triangleleft\)</color> |
+|   0   |   1   |   ¦   |   1   | 
+|   1   |   0   |   ¦   |   1   | 
+|   1   |   1   |   ¦   |   0   | <color #ed1c24>\(\triangleleft\)</color> |
+</WRAP>
+
+Der resultierende Term lautet:\\
+C = (A \(\vee\) B) \(\wedge\) (\(\neg\)A \(\vee\) \(\neg\)B)  \\
+=== ===
+//A = 0, B = 0 \(\rightarrow\) 0 \(\vee\) 0 = 0//
+\\
+\\
+\\
+//\(\neg\)A = 0, \(\neg\)B = 0 \(\rightarrow\) 0 \(\vee\) 0 = 0//
+<WRAP clear></WRAP>
+<WRAP left>
+|      IN       ||  ¦   |  OUT  |
+^   A   ^   B   ^   ¦   ^   C   ^
+|   0   |   0   |   ¦   |   1   | 
+|   0   |   1   |   ¦   |   0   | <color #ed1c24>\(\triangleleft\)</color> |
+|   1   |   0   |   ¦   |   0   | <color #ed1c24>\(\triangleleft\)</color> |
+|   1   |   1   |   ¦   |   1   | 
+</WRAP>
+Der resultierende Term lautet:\\
+C = (A \(\vee\) \(\neg\)B) \(\wedge\) (\(\neg\)A \(\vee\) B)  
+<WRAP clear></WRAP>
+
+----
+**Wahl der Normalform**\\
+Es gibt keine grundsätzliche Regel (im Sinne einer Pflicht), wann die KNF und wann die DNF zu wählen ist. Es macht aber gerade bei grossen Tabellen Sinn, auf Grund der vorkommenden 1er bzw. 0er die Wahl zu treffen.\\
+----
+//Beispiel://\\
+Gegeben ist eine Wahrheitstabelle mit 4 Eingangsvariablen A bis D.
+<WRAP left>
+|      IN               ||||     ¦   |  OUT  |
+^   A   ^   B   ^   C   ^   D  ^ ¦   ^   X   ^
+|   0   |   0   |   0   |   0  | ¦   |   0   |
+|   0   |   0   |   0   |   1  | ¦   |   1   |
+|   0   |   0   |   1   |   0  | ¦   |   1   |
+|   0   |   0   |   1   |   1  | ¦   |   1   |
+|   0   |   1   |   0   |   0  | ¦   |   0   |
+|   0   |   1   |   0   |   1  | ¦   |   0   |
+|   0   |   1   |   1   |   0  | ¦   |   1   |
+|   0   |   1   |   1   |   1  | ¦   |   1   |
+|   1   |   0   |   0   |   0  | ¦   |   0   |
+|   1   |   0   |   0   |   1  | ¦   |   1   |
+|   1   |   0   |   1   |   0  | ¦   |   0   |
+|   1   |   0   |   1   |   1  | ¦   |   1   |
+|   1   |   1   |   0   |   0  | ¦   |   1   |
+|   1   |   1   |   0   |   1  | ¦   |   1   |
+|   1   |   1   |   1   |   0  | ¦   |   1   |
+|   1   |   1   |   1   |   1  | ¦   |   1   |
+</WRAP>
+**DNF:**\\
+X = (\(\neg\)A\(\wedge\)\(\neg\)B\(\wedge\)\(\neg\)C\(\wedge\)D) \(\vee\) (\(\neg\)A\(\wedge\)\(\neg\)B \(\wedge\)C\(\wedge\)\(\neg\)D) \(\vee\) (\(\neg\)A\(\wedge\)\(\neg\)B\(\wedge\)C\(\wedge\)D) \(\vee\) (\(\neg\)A\(\wedge\)B\(\wedge\)C\(\wedge\)\(\neg\)D) \(\vee\) \\ (\(\neg\)A\(\wedge\)B\(\wedge\)C\(\wedge\)D) \(\vee\) (A\(\wedge\)\(\neg\)B\(\wedge\)\(\neg\)C\(\wedge\)D) \(\vee\) (A\(\wedge\)\(\neg\)B\(\wedge\)C\(\wedge\)D) \(\vee\) (A\(\wedge\)B\(\wedge\)\(\neg\)C\(\wedge\)\(\neg\)D)
+\(\vee\) \\ (A\(\wedge\)B\(\wedge\)\(\neg\)C\(\wedge\)D) \(\vee\) (A\(\wedge\)B\(\wedge\)C\(\wedge\)\(\neg\)D) \(\vee\) (A\(\wedge\)B\(\wedge\)C\(\wedge\)D)\\
+\\
+**KNF:**\\
+X = (A\(\vee\)B\(\vee\)C\(\vee\)D) \(\wedge\) (A\(\vee\)\(\neg\)B\(\vee\)C\(\vee\)D) \(\wedge\) (A\(\vee\)\(\neg\)B\(\vee\)C\(\vee\)\(\neg\)D) \(\wedge\)
+(\(\neg\)A\(\vee\)B\(\vee\)C\(\vee\)D) \(\wedge\) (\(\neg\)A\(\vee\)B\(\vee\)\(\neg\)C\(\vee\)D)
+<WRAP clear></WRAP>
+
+----
+Am Beispiel ist klar ersichtlich, dass hier die Wahl der KNF zu weniger Termen führt (da ja weniger Zeilen eine 0 als Ergebnis liefern).\\
+\\
+Lösen Sie nun die [[modul:mathe:ma1:thema:lu04logik:aufgaben:leitprogramm:k8:u7:start|Übung 7]]
+
+----
+Überprüfen Sie Ihre Antworten. [[modul:mathe:ma1:thema:lu04logik:aufgaben:leitprogramm:k8:l7:start|Lösung 7]]\\
+Sollten Sie Fehler haben, schauen Sie sich die Theorie noch einmal genau an, besprechen Sie offene Fragen mit Ihren Kolleginnen und/oder Kollegen. Fragen Sie auch Ihre Lehrperson, wenn Sie weiterführende Hilfe brauchen.
+----
+[[modul:mathe:ma1:thema:lu04logik:aufgaben:leitprogramm:k9:start|nächstes Kapitel]]
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) René Probst

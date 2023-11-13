@@ -1,0 +1,24 @@
+==== 1. Was ist Vererbung? ====
+Unter dem Stichwort Vererbung erhält man i.d.R. eine Beschreibung der biologischen Vererbung: "Als Vererbung wird die Weitergabe von Merkmalen und Eigenschaften von der Elterngeneration auf nachfolgende Generationen bezeichnet. Diese Weitergabe spielt sich auf genetischer Ebene ab. Die Wissenschaft, die sich mit der Vererbung beschäftigt, wird als Genetik bezeichnet." (https://flexikon.doccheck.com/)\\
+Für die objektorientierte Programmierung kann der Textausschnitt **Weitergabe von Merkmalen und Eigenschaften** eins-zu-eins übernommen werden.\\
+----
+//Beispiel 6.1://\\
+Gegeben ist ein Klasse ''BancAccount'' nach folgendem Klassendiagramm:\\
+{{modul:m320:learningunits:lu06:theorie:lu07-abb1.1-oberklasse.png?425|}}\\
+//Abb 6.1:// Oberklasse ''BancAccount''\\
+Um nun ein Lohnkonto zu realisieren, braucht es eine Klasse, die genau die gleichen Eigenschaften und Fähigkeiten wie ''BancAccount'' aufweist, aber dazu noch einige weitere Aspekte bietet. So z.B. die Möglichkeit, das Konto bis zu einem bestimmten Betrag überziehen zu können, also einen negativen Saldo zu haben. \\
+Anstatt nun eine neue Klasse zu erstellen, die eine erweiterte Kopie der Klasse ''BancAccount'' ist, erstellen wir eine Klasse, die von ''BancAccount'' erbt und die zusätzlichen Eigenschaften und Fähigkeiten noch ergänzt.\\
+In diesem Zusammenhang spricht man von **erweitern einer Klasse**. Das entsprechnde Klassendiagramm sieht dann wie folgt aus:\\
+{{modul:m320:learningunits:lu06:theorie:lu07-abb1.2-unterklasse.png?500|}}\\
+//Abb 6.2:// Unterklasse ''SalaryAccount''\\
+
+----
+Eine Unterklasse weist also die Eigenschaften (Attribute) und Fähigkeiten (Methoden) der Oberklasse auf, bzw. kann diese nutzen und fügt weitere Eigenschaften und Fähigkeiten bei.\\
+Bezogen auf die reale Welt gibt es vergleichbare Konzepte. Hier ein etwas vereinfacht dargestelltes Beispiel.\\
+{{modul:m320:learningunits:lu06:theorie:lu07-abb1.3-vererbung_reale_welt.png?400|}}\\
+//Abb 6.3:// Vererbung im Sinn der OO-Technik in der realen Welt
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) René Probst
+
+

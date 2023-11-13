@@ -1,0 +1,42 @@
+====== LU06.A07 - Multiuser Todo-Liste ======
+<WRAP center round todo 60%>
+Anpassen der Model-Klassen, DAO-Klassen und Endpunkte, um eine Multiuser Todo-Liste zu implementieren.
+</WRAP>
+
+
+
+===== Vorgehen =====
+
+==== 0. Vorbereitungen ====
+  * Akzeptiere das GitHub Classroom Assignment
+  * Klone dein persönliches Repository in die Entwicklungsumgebung
+
+
+==== 1. Anpassung der Model-Klassen ====
+  * Fügen Sie ein Attribut für die Benutzer-ID in der ''TodoItem''-Klasse hinzu.
+
+==== 2. Anpassung der DAO-Klassen ====
+  * Modifizieren Sie die Methoden in den DAO-Klassen, um die Benutzer-ID bei CRUD-Operationen zu berücksichtigen.
+
+==== 3. Anpassung der Endpunkte ====
+  * Ändern Sie die Implementierung der Endpunkte in der Blueprint-Klasse, um nur die Todo-Elemente des angemeldeten Benutzers zu verarbeiten und zurückzugeben.
+  *  Verwenden Sie die ''current_user''-Variable von Flask-Login, um den angemeldeten Benutzer in den Endpunkten zu ermitteln.
+
+==== 4. Teste deine API ====
+Via ''API-Testing.http''-File im Workspace 
+
+oder via: [[https://app.getpostman.com/run-collection/21916156-7e24c1ab-b771-4f36-9bf9-9efda9b55507?action=collection%2Ffork&source=rip_markdown&collection-url=entityId%3D21916156-7e24c1ab-b771-4f36-9bf9-9efda9b55507%26entityType%3Dcollection%26workspaceId%3D6159a5bd-9101-4933-a6c3-05d2eb3112fd|{{https://run.pstmn.io/button.svg|Run in Postman}}]]
+
+==== 5. Abgabe ====
+Die Abgabe der Lösung erfolgt als Push in das persönliche GitHub-Repository.
+
+----
+<details>
+<summary>//=> GitHub Repo für externe Besucher//</summary>
+GitHub Repository https://github.com/templates-python/m323-lu06-a07-multiuser
+
+//Lernende am BZZ müssen den Link zum GitHub Classroom Assignment verwenden//
+
+</details>
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/ch/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Kevin Maurizi 
+

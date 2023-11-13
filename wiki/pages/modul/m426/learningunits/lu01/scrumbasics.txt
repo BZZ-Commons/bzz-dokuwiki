@@ -1,0 +1,87 @@
+====== LU01b - Scrum Grundlagen ======
+
+Quelle: //[[http://www.scrumguides.org/docs/scrumguide/v1/Scrum-Guide-DE.pdf]]//
+
+//Siehe auch [[https://de.wikipedia.org/wiki/Scrum|Wikipedia - Scrum]]//
+
+
+====== Definition von Scrum ======
+
+Scrum (n): Ein Rahmenwerk, innerhalb dessen Menschen komplexe adaptive Aufgabenstellungen angehen können, 
+und durch das sie in die Lage versetzt werden, produktiv und kreativ Produkte mit dem höchstmöglichen Wert auszuliefern.
+
+Scrum ist:
+  * Leichtgewichtig
+  * Einfach zu verstehen
+  * Schwierig zu meistern
+
+Scrum wird seit den frühen 1990er Jahren als Prozessrahmenwerk bei der Entwicklung komplexer Produkte verwendet. 
+Es ist weder ein Prozess noch eine Technik zur Erstellung von Produkten, sondern ist vielmehr als Rahmenwerk zu verstehen, 
+innerhalb dessen verschiedene Prozesse und Techniken zum Einsatz gebracht werden können. 
+Scrum macht die relative Wirksamkeit Ihres Produktmanagements und Entwicklungsvorgehens sichtbar, so dass Sie sich verbessern können.
+
+Das Scrum Rahmenwerk besteht aus [[.:scrumteams|Scrum Teams]] und den mit ihnen verbundenen Rollen,
+Ereignissen, Artefakten und Regeln. 
+Jede Komponente des Rahmenwerks dient einem
+spezifischen Zweck und ist unentbehrlich für den Einsatz von Scrum und dessen Erfolg.
+Durch die Regeln von Scrum werden die Beziehungen und Wechselwirkungen zwischen den
+Ereignissen, Rollen und Artefakten bestimmt. 
+Die Regeln von Scrum sind in den folgenden Abschnitten beschrieben.
+
+Bestimmte Taktiken zur Nutzung von Scrum variieren und sind an anderer Stelle beschrieben.
+
+
+====== Scrum: Theorie ======
+
+Scrum basiert auf der Theorie empirischer Prozesssteuerung oder kurz "Empirie". 
+Empirie bedeutet, dass Wissen aus Erfahrung gewonnen wird und Entscheidungen auf Basis des Bekannten getroffen werden. 
+Scrum nutzt einen iterativen, inkrementellen Ansatz, um Prognosesicherheit [von Terminen / Ergebnissen] zu optimieren und Risiken zu kontrollieren.
+
+Jede Implementierung von empirischer Prozesssteuerung ruht auf drei Säulen: Transparenz, Überprüfung [Inspection] und Anpassung [Adaptation].
+
+===== Transparenz =====
+
+Die wesentlichen Aspekte des Prozesses müssen für diejenigen sichtbar sein, die für das Ergebnis verantwortlich sind. 
+Transparenz erfordert, dass diese Aspekte nach einem gemeinsamen Standard definiert werden, damit die Betrachter ein gemeinsames Verständnis des Gesehenen teilen.
+
+Dies umfasst beispielsweise
+  * eine gemeinsame Prozesssprache, die von allen Teilnehmern geteilt wird, und
+  * jene die Arbeitsergebnisse produzierenden und akzeptierenden Personen müssen alle ein gemeinsames Verständnis der **Definition von "Done"** teilen.
+
+===== Überprüfung =====
+
+Scrum Anwender müssen die Scrum Artefakte und den Fortschritt ständig in Bezug auf die Erreichung des Sprint-Ziels überprüfen, um unerwünschte Abweichungen zu erkennen. 
+Ihre Untersuchungen sollten nicht so häufig erfolgen, dass sie die Arbeit behindern. 
+Den größten Nutzen bringen Überprüfungen, wenn sie gewissenhaft durch fähige Prüfer dort vorgenommen werden, wo die Arbeit verrichtet wird.
+
+===== Anpassung =====
+
+Wenn ein Überprüfer feststellt, dass Aspekte des Prozesses von den akzeptablen Grenzwerten abweichen, und dass das resultierende Produkt so nicht akzeptabel sein wird, 
+müssen der Prozess oder das zu bearbeitende Material angepasst werden. 
+Die Anpassung muss [dann] so schnell wie möglich vorgenommen werden, um weitere Abweichungen zu minimieren.
+
+Scrum schreibt vier formale [[.:scrumevents|Ereignisse]] für Überprüfung und Anpassung vor. 
+Diese werden im jeweiligen Abschnitt beschrieben:
+  * Sprint Planning
+  * Daily Scrum
+  * Sprint Review
+  * Sprint Retrospektive
+
+===== Risiken =====
+Wie jedes andere Vorgehensmodell kann auch Scrum keine Erfolgsgarantie bieten.
+Viel stärker als bei traditionellen Methoden verlangt Scrum nach Flexibilität und Verantwortung der einzelnen Teammitglieder.
+
+
+<WRAP center round info 60%>
+Eine Horde Affen ist auch mit Scrum noch immer eine Horde Affen.
+</WRAP>
+
+
+Entscheidend bei Scrum ist, wie die gewonnen Erfahrungen genutzt werden.
+Wenn die Entwickler einfach unbeirrt einen offensichtlich falschen Weg weiter gehen, wird kein besseres Produkt entstehen.
+Die Vorteile von Scrum nutzt nur, wer bereit ist, die bisherigen Ergebnisse und Erkenntnisse in den weiteren Verlauf des Projekts einzubeziehen.
+
+Ein Scrum Team ist selbstorganisiert, wodurch es keine dauerhaften, festen Hierarchien gibt.
+Auch der Scrum Master ist nicht etwas Vorgesetzter, sondern Koordinator und Moderator.
+Jedes Teammitglied muss innerhalb eines Sprints vielfältige Arbeiten ausführen können.
+Wer sich exklusiv als Programmierer, Tester oder Architekt sieht, passt nicht optimal in ein Scrum Team.

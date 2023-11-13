@@ -1,0 +1,53 @@
+===== Aufgabe 5 - Lösung =====
+===Animal===
+<code python>
+class Animal:
+
+    def __init__(self, species):
+        self._species = species
+
+    def move(self):
+        print("Tier weiss nicht konkret, wie es sich bewegen soll")
+</code>
+===Bird===
+<code python>
+from animal import Animal
+
+class Bird(Animal):
+
+    def __init__(self, species, name):
+        super().__init__(species)
+        self.__name = name
+
+    def move(self):
+        print(self._species + " mit Name " + self.__name + " fliegt")
+</code>
+===Cow===
+<code python>
+from animal import Animal
+
+class Cow(Animal):
+
+    def __init__(self, species, name):
+        super().__init__(species)
+        self.__name = name
+
+    def move(self):
+        print(self._species + " mit Name " + self.__name + " läuft")
+</code>
+===Fish===
+<code python>
+from animal import Animal
+
+class Fish(Animal):
+
+    def __init__(self, species, name):
+        super().__init__(species)
+        self.__name = name
+
+    def move(self):
+        print(self._species + " mit Name " + self.__name + " schwimmt")
+</code>
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) René Probst

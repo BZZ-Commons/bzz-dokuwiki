@@ -1,0 +1,56 @@
+====== LU04.L07: Münzenspiel gegen Computer ======
+
+=== Zufällige Anzahl Münzen ===
+{{:modul:m319python:learningunits:lu04:loesungen:lu04_muenzenspielext_blockly.png?600|}}
+
+<code python>
+import random
+coin_total = random.randint(11, 20)
+player = 1
+print ("Willkommen zum Münzenspiel")
+while coin_total > 0:
+    print("Es sind noch ", str(coin_total), " Münzen auf dem Stapel")
+    if player == 1:
+        coin_take = int(input("Spieler nimm 1-3 Münzen >"))
+    else:
+        coin_take = random.randint(1,3)
+        print ("Ich nehme ", str(takeCoins), " Münzen")
+    coin_total = coin_total - coin_take
+    player = 3 - player
+if player == 2:
+    print ("Ich habe gewonnen")
+else:
+    print ("Du hast gewonnen")  
+</code>
+=== Optimale Anzahl Münzen ===
+Um das Spiel zu gewinnen, muss der Computer dem Gegner für seinen letzten Zug genau 1 Münze übrig lassen.
+Dies kann der Computer erreichen, wenn er immer ein Vielfaches von 4 plus 1 Münze auf dem Stapel lässt.
+Sein Ziel ist es also, dass nach seinem Zug 1, 5, 9, 13, 17 oder 21 Münzen auf dem Stapel sind.
+
+Um die Anzahl Münzen zu bestimmen, rechnet der Computer ''(coin_total - 1) MODULO 4''.
+Falls diese Rechnung **Rest 0** ergibt, nimmt der Computer **1** Münze.
+
+^ Münzen ^ totalCoins-1 ^ MODULO 4 ^
+| 5 | 4 | 0 => 1 |
+| 6 | 5 | 1 |
+| 7 | 6 | 2 |
+| 8 | 7 | 3 |
+| 9 | 8 | 0 => 1 |
+| ... |||
+
+In den Lösungen zeige ich hier nur den Teil, wo der Computer seine Anzahl auswählt.
+
+{{:modul:m319python:learningunits:lu04:loesungen:lu04_muenzenspielmodulo_blockly.png?600|}}
+
+
+<code python>
+...
+    else:
+        modulo4 = (coin_total - 1) % 4
+        if modulo4 == 0:
+            modulo4 = 1
+        coin_take = modulo4
+        print('Ich nehme ', str(coin_take), ' Münzen')
+    coin_total = coin_total - coin_take
+...
+</code>

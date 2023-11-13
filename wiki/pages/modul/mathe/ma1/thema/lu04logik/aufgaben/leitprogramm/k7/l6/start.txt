@@ -1,0 +1,43 @@
+===Lösung 6===
+**Aufgabe 1**\\
+Erstellen Sie für die Situation 2 in LogicTraffic die WHT und testen Sie das Ergebnis.\\
+<WRAP left>
+|      IN       ||    ¦   |  OUT  |
+^   A   ^   B   ^  ¦   ^   X   ^
+|   <color #00a2e8>0</color>   |   <color #00a2e8>0</color>   |  ¦   |   <color #00a2e8>1</color>   |
+|   <color #00a2e8>0</color>   |   <color #00a2e8>1</color>   |  ¦   |   <color #00a2e8>1</color>   |
+|   <color #00a2e8>1</color>   |   <color #00a2e8>0</color>   |  ¦   |   <color #00a2e8>1</color>   |
+|   <color #00a2e8>1</color>   |   <color #00a2e8>1</color>   |  ¦   |   <color #00a2e8>0</color>   |
+</WRAP>  
+<WRAP clear></WRAP>
+
+**Aufgabe 2**\\
+Erstellen Sie für die Situation 3 in LogicTraffic die WHT und testen Sie das Ergebnis.\\
+<WRAP left>
+|      IN               |||    ¦   |  OUT  |
+^   A   ^   B   ^   C   ^  ¦   ^   X   ^
+|   <color #00a2e8>0</color>   |   <color #00a2e8>0</color>   |   <color #00a2e8>0</color>   |  ¦   |   <color #00a2e8>1</color>   |
+|   <color #00a2e8>0</color>   |   <color #00a2e8>0</color>   |   <color #00a2e8>1</color>   |  ¦   |   <color #00a2e8>1</color>   |
+|   <color #00a2e8>0</color>   |   <color #00a2e8>1</color>   |   <color #00a2e8>0</color>   |  ¦   |   <color #00a2e8>1</color>   |
+|   <color #00a2e8>0</color>   |   <color #00a2e8>1</color>   |   <color #00a2e8>1</color>   |  ¦   |   <color #00a2e8>0</color>   |
+|   <color #00a2e8>1</color>   |   <color #00a2e8>0</color>   |   <color #00a2e8>0</color>   |  ¦   |   <color #00a2e8>1</color>   |
+|   <color #00a2e8>1</color>   |   <color #00a2e8>0</color>   |   <color #00a2e8>1</color>   |  ¦   |   <color #00a2e8>0</color>   |
+|   <color #00a2e8>1</color>   |   <color #00a2e8>1</color>   |   <color #00a2e8>0</color>   |  ¦   |   <color #00a2e8>1</color>   |
+|   <color #00a2e8>1</color>   |   <color #00a2e8>1</color>   |   <color #00a2e8>1</color>   |  ¦   |   <color #00a2e8>0</color>   |
+</WRAP>  
+<WRAP clear></WRAP>
+
+**Aufgabe 3**\\
+Löschen Sie für Situation 3 die Wahrheitstabelle.\\
+Geben Sie dann im Editor folgenden Ausdruck ein: <color #ed1c24>(\(\neg\)A \(\wedge\) \(\neg\)B) \(\vee\) \(\neg\)C</color>\\
+Was stellen Sie fest?\\
+<color #00a2e8>In der WHT finden sich 5 Zeilen, die eine 1 als Ergebnis liefern. Gemäss der Theorie aus Kapitel 5 müssten demnach auch 5 Terme angeschrieben werden, nämlich\\
+(\(\neg\)A \(\wedge\) \(\neg\)B \(\wedge\) \(\neg\)C) \(\vee\) (\(\neg\)A \(\wedge\) \(\neg\)B \(\wedge\)C) \(\vee\) (\(\neg\)A \(\wedge\) B \(\wedge\) \(\neg\)C) \(\vee\) (A \(\wedge\) \(\neg\)B \(\wedge\) \(\neg\)C) \(\vee\) (A \(\wedge\) B \(\wedge\) \(\neg\)C)\\
+Der minimierte Ausdruck liefert aber das genau gleiche Ergebnis.</color>\\
+<color #ed1c24>Das wird uns als nächstes interessiern!</color>
+\\
+\\
+[[modul:mathe:ma1:thema:lu04logik:aufgaben:leitprogramm:k7:start|zum Leitprogramm]]
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) René Probst

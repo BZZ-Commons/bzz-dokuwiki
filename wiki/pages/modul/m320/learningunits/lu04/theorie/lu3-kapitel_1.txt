@@ -1,0 +1,54 @@
+==== 1. Wie kommunizieren Objekte? ====
+Eine gut geführte Kommunikation im Alltag weist zwei Merkmale auf
+  - wird der Gesprächspartner / die Gesprächspartnerin persönlich angesprochen, mit Vor- oder Nachname.
+  - wird eine eindeutige Frage oder ein eindeutiger Auftrag formuliert.
+{{modul:m320:learningunits:lu04:theorie:lu03-kommunikationgrundlage.png?400|}}\\
+//Abb 4.1:// Kommunikation im Alltag\\
+Damit eine Kommunikation gelingen kann braucht es
+  * eine Referenz zum Objekt, mit dem kommuniziert werden soll und
+  * die Kenntnis über die Schnittstelle des Objekts. Unter dem Begriff "Schnittstelle" verstehen wir hier die Gesamtheit aller Fähigkeiten (Methoden), die ein Objekt anbietet.
+Angewendet auf Python bedeutet das, dass eine Objektreferenz vorhanden sein muss und dass man die Methoden des Objekts kennen muss, um diese anzuschreiben.
+<code python>
+  the_object_reference.the_method_to_do()
+</code>
+=== Prozedur und Funktion ===
+Methoden kennen zwei Ausprägungen. Nämlich solche, die einen Befehl ausführen, ohne dem Aufruf ein Ergebnis zu liefern und solche die ein Ergebnis liefern.
+
+Methoden, die keine Werte liefern, werden in der Fachsprache als **Prozedur** (procedure) bezeichnet und im UML-Klassendiagramm wie folgt angeschrieben:
+
+''+ the_method_to_do() : void''
+
+wobei das Schlüsselwort ''void'' für leer steht.
+
+Methoden die einen Wert zurückgeben, werden in der Fachsprache als **Funktion** (function) bezeichnet. 
+Im UML-Diagramm muss dann der genaue Datentyp des Wertes angegeben werden:
+
+''+ to_string() : String''\\
+----
+//Beispiel 4.1: Prozedur und Funktion bei Python//
+<code python>
+    def print(self):
+      '''
+      Beispiel für eine Prozedur
+      Gibt die Attribute des Objekts auf dem Stdout aus.
+      '''
+      print('.........')
+
+    def is_temperature_below_zero(self, room):
+        '''
+        Beispiel einer Funktion.
+        Gibt bekannt, ob die Temperatur im Raum room unter 0 liegt
+        :param room: Raumbezeichnung
+        :return: True wenn die Temperatur unter 0 liegt, sonst False
+        '''
+        if self._temp < 0:
+            return True
+        else: 
+            return False
+</code>
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) René Probst
+
+
+

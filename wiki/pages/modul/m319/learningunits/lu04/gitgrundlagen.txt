@@ -1,0 +1,73 @@
+====== LU04b - Grundlagen von Git ======
+  * [[https://rogerdudler.github.io/git-guide/index.de.html|git - Der einfache Einstieg]]
+  * [[https://git-scm.com/book/de/v2/Erste-Schritte-Was-ist-Git%3F|Pro Git - 1.3 Erste Schritte - Was ist Git?]]
+
+Zum Arbeiten mit git müssen Sie ein paar Begriffe und Konzepte verstehen.
+
+===== Repository =====
+<WRAP center round info 60%>
+Das //Repository// ist ein Ordner auf Ihrem Computer, in dem Sie ein Projekt mit git verwalten.
+</WRAP>
+
+Für jedes Projekt, das wir mit git verwalten wollen, benötigen wir ein //Repository//.
+Das //Repository// ist der Ordner auf unserem Computer, in dem sich alle Dateien unseres Projekts befinden.
+Innerhalb des Repositories unterscheiden wir 3 Bereiche:
+
+{{:modul:m319python:learningunits:lu08:lu08_git_areas.png?400|}}
+Quelle: [[https://dev.to/sublimegeek/git-staging-area-explained-like-im-five-1anh]]
+
+==== Working directory ====
+<WRAP center round info 60%>
+Das //working directory// ist der Bereich, in dem Sie Ihre Dateien bearbeiten.
+</WRAP>
+
+Alle von git verwalteten Dateien eines Projekts werden im working directory gespeichert.
+Fügen Sie eine neue Datei hinzu oder ändern Sie eine bestehende Datei, so wird diese Datei im //working directory// gespeichert.
+
+==== Staging Area (Index) ====
+<WRAP center round info 60%>
+Die Staging Area ist der Vorbeitungsbereich für den Commit.
+</WRAP>
+Möchten wir den Zustand einer Datei festschreiben, so müssen wir diese zunächst in die Staging Area aufnehmen.
+
+
+==== Commit (HEAD) ====
+<WRAP center round info 60%>
+Ein Commit speichert einen bestimmten Zustand aller Dateien in der Staging Area
+</WRAP>
+Sie können sich einen Commit wie eine Sicherungskopie Ihrer Dateien vorstellen.
+Der Zustand aller Dateien in der Staging Area werden gesichert.
+Im Verlauf eines Projekts werden Sie immer wieder mittels Commit ein fertiges Teilresultat sichern.
+Sie können jederzeit zu einem früheren Commit zurück kehren.
+
+===== Wichtigste Arbeitsschritte =====
+Git funktioniert über Befehle auf der Kommandozeile.
+In diesem Kapitel zeige ich Ihnen diese Befehle.
+Dadurch können Sie git unabhängig von einer Entwicklungsumgebung oder sonstigen Tools nutzen.
+
+==== Projekt erstellen ====
+=== Neues Projekt ===
+Wenn Sie ein neues Projekt mit git erstellen möchten, brauchen Sie den Befehl ''git init''.
+
+  - Öffnen Sie das Projektverzeichnis in der Kommandozeile.
+  - Erstellen Sie mit ''git init'' ein Repository.
+
+=== Bestehendes Repository ===
+Mit dem Befehl ''git clone'' können Sie eine lokale Kopie eines bestehenden Repositories erstellen.
+Meistens verwenden wir den Befehl um ein Repository von einer zentralen Ablage (z.B. GitHub) zu kopieren.
+Zum Beispiel: ''git clone https://github.com/templates-python/M319_LU04_Classroom.git''.
+
+==== Änderungen nachverfolgen ====
+Mit dem Befehl ''git add DATEINAME'' wird eine Datei zur Nachverfolgung der Änderungen in git hinzugefügt.
+
+Neue oder geänderte Dateien werden von git nicht automatisch verwaltet.
+Wollen Sie die Änderungen an einer Datei nachverfolgen, müssen Sie diese mit ''git add'' zur Staging Area hinzufügen.
+
+==== "Commit" ====
+Mit dem Befehl ''git commit'' wird der aktuelle Stand der //Staging Area// in einem neuen //Commit// festgeschrieben.
+
+----
+{{tag>319-E1F}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter
+
+

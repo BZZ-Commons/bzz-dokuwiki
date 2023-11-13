@@ -1,0 +1,22 @@
+==== Aufgabe 3 - Exception auslösen ====
+
+=== Ziel ===
+  * Sie können eigene Codestellen durch das Auslösen einer Exception sichern.
+  * Sie können die ausgelöste Exception bearbeiten.
+
+=== Auftrag ===
+   - Laden Sie das Repo von github-classroom.
+   - Ergänzen Sie in der Datei ''bank_account.py'' die Klasse ''MoneyDrawError''. Sie erbt von der Klasse ''Exception''.\\ Die generierte Fehlermeldung soll wie folgt lauten:\\ "//Der Betrag {xyz} kann nicht bezogen werden.\nAktuell verfügbar: {abc}//", wobei xyz der Betrag ist der bezogen werden soll (''amount'') und abc der Saldo des Kontos (der ja auch negativ sein kann). Vergleichen Sie dazu das Kapitel 3.
+   - Stellen Sie nun sicher, dass die Methode ''get_money'' einen ''MoneyDrawError'' erzeugt, wenn der Bezug nicht möglich ist.
+   - Führen Sie die Tests in der Datei ''test_bank_account.py'' aus. Wenn alles fehlerfei abläuft, commiten Sie Ihre Lösung.
+   - Überarbeiten Sie nun die Methode ''draw_money'' in der Datei ''main.py'', so dass im Fehlerfall die entsprechende Meldung am Bildschirm ausgegeben wird.\\ Die Meldung beginnt mit dem Text "WARNING: ". Diesen müssen Sie unbedingt zufügen (wegen der Tests).
+   - Führen Sie die Test in ''test_main.py'' aus. Wenn alles fehlerfrei abläuft, committen Sie die Lösung.
+
+=== Dauer ===
+30 Minuten
+=== Abgabe ===
+Abgabe auf github.
+
+----
+<nodisp>GitHub Repo: https://github.com/templates-python/m320-lu03-a03-throw-exception.git</nodisp>
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) René Probst

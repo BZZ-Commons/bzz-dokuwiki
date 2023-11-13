@@ -1,0 +1,52 @@
+====== LU99.A02: Fibonacci-Folge ======
+===== Aufgabe =====
+Die [[wpde>Fibonacci-Folge]] ist eine unendliche Reihe von natürlichen Zahlen.
+Die Reihe beginnt mit den Zahlen 0 und 1.
+Danach ist jede Zahl die Summe der beiden ihr vorangehenden Zahlen:
+<WRAP center round info 60%>
+//0// //1// 1 2 3 5 8 13 21 34 ...
+</WRAP>
+
+Das Programm erwartet vom Benutzer die Eingabe einer natürlichen Zahl, welche die Position innerhalb der Folge angibt.
+Anschliessend gibt das Programm die Zahl an der angegebenen Position aus. 
+
+
+=== Beispiel ===
+<WRAP center round info 60%>
+Die Zeilen mit ''*n*'' stehen für die Eingaben des Benutzers.
+
+Achten Sie darauf, dass das Programm keine anderen Ausgaben als die Zahlen produziert.
+</WRAP>
+<code>
+*4*
+2
+</code>
+
+<code>
+*7*
+8
+</code>
+
+===== Programmlogik =====
+  - Der Benutzer gibt die gewünschte Position ein
+  - Speichern Sie die beiden ersten Zahlen in je eine Variable ''number1'', ''number2''.
+  - Iteration von 3 bis zur gewünschten Position
+    - Berechnen Sie die nächste Zahl in der Fibonacci-Folge.
+    - Verschieben Sie den Wert der Variable ''number2'' in die Variable ''number1''.
+    - Verschieben Sie den Wert der nächsten Zahl in die Variable ''number2''.
+  - Geben Sie den Wert der Variable ''number2'' aus.
+
+
+===== Vorgehen =====
+  - Akzeptieren Sie die Aufgabe im Classroom über den Link im Moodle-Kurs.
+  - Clonen Sie die Aufgabe in PyCharm.
+  - Erstellen Sie das Programm in der Datei ''Fibonacci.py'' mit Python.
+  - Führen Sie einen Commit & Push des fertigen Programms durch.
+
+<WRAP center round info 60%>
+In der Datei "Fibonacci_test.py" finden Sie ein paar Tests.
+Diese können Sie nutzen, um ihre Lösung zu prüfen.
+</WRAP>
+
+{{tag>319-B1F 319-E1F 319-F1F}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

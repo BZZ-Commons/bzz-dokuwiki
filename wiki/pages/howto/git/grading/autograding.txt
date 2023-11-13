@@ -1,0 +1,78 @@
+====== Bewertung vom Autograding in Moodle übernehmen (alt) ======
+<WRAP center round alert 60%>
+Dies ist die Anleitung für den Workflow im Schuljahr 2022/2023.
+Neu gilt die Anleitung unter [[autograding2]]
+</WRAP>
+===== Voraussetzung =====
+Die Lernenden müssen Ihren GitHub-Benutzernamen in ihrem Moodle-Profil eintragen.
+Unter "Weitere Namen" befindet sich das Feld "Pseudonym".
+
+===== Workflow in Template =====
+  - Öffne das Repository mit dem Template für das Assignment.
+  - Erstelle die Ordner ''.github/classroom'' und ''.github/workflows''.
+  - Erstelle die Datei ''autograding.yml'' in ''.github/workflows''. \\ <code yml>
+name: GitHub Classroom Workflow
+
+on: [push]
+
+permissions:
+  checks: write
+  actions: read
+  contents: read
+
+jobs:
+  build:
+    if: ${{ !contains(github.actor, 'classroom') }}
+    name: Autograding
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: education/autograding@v1
+        id: autograding
+      - name: export-grade
+        if: always()
+        run: |
+          curl -X POST "https://it.bzz.ch/fgitapi/gh_grade/${{ github.repository }}/${{ steps.autograding.outputs.Points }}"
+</code>
+  - Erstelle die Datei ''autograding.json'' in ''.github/classroom''.
+  - Füge deine Testfälle in diese Datei ein.
+
+=== Beispiel für Testfälle ===
+<code json>
+{
+  "tests": [
+    {
+      "name": "test_main1",
+      "setup": "sudo -H pip3 install -r requirements.txt",
+      "run": "pytest -v  -k \"test_main1\"",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    },
+    {
+      "name": "test_main2",
+      "setup": "sudo -H pip3 install -r requirements.txt",
+      "run": "pytest -v  -k \"test_main2\"",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 1
+    }
+  ]
+}
+</code>
+
+===== Classroom Assignment =====
+  - Erstelle ein neues Assignment in GitHub Classroom.
+    * Der Name des Assignments darf **keinen Bindestrich** enthalten.
+    * Merke dir den Namen des Assignments, z.B. "m319_lU08_a01_multiply".
+    * Wähle das Template aus dem letzten Abschnitt aus.
+
+
+===== Aufgabe in Moodle =====
+  - Erstelle eine Aufgabe in Moodle.
+  - Trage den Namen des Classroom Assignments unter "Weitere Einstellungen" => "ID-Nummer" ein.
+

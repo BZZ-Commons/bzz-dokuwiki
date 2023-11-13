@@ -1,0 +1,35 @@
+====== LU05.L03 - Aktualisierung von Lagerbeständen mit Transaktionen ======
+<code python>
+class Transaction:
+    def __init__(self, product, quantity):
+        self.product = product
+        self.quantity = quantity
+
+def update_inventory(inventory, *transactions):
+    """Updates the inventory based on the provided transactions."""
+    for transaction in transactions:
+        if transaction.product in inventory:
+            inventory[transaction.product] += transaction.quantity
+        else:
+            inventory[transaction.product] = transaction.quantity
+
+if __name__ == '__main__':
+    # Teste deine Funktion
+    inventory = {'Apfel': 10, 'Birne': 5}
+    transactions = [Transaction('Apfel', 3), Transaction('Birne', -2)]
+    update_inventory(inventory, *transactions)
+    print(inventory)  # Erwarteter Output: {'Apfel': 13, 'Birne': 3}
+</code>
+
+<WRAP center round tip 80%>
+=== Warum wird * in update_inventory(inventory, *transactions) verwendet? ===
+
+In Python wird der ''*''-Operator im Kontext von Funktionen verwendet, um eine variable Anzahl von Positional-Argumenten in einer Liste zu sammeln. Wenn der ''*''-Operator beim Aufrufen einer Funktion verwendet wird, wie in ''update_inventory(inventory, *transactions)'', hat er die umgekehrte Wirkung: Er entpackt eine Liste oder ein Tupel in einzelne Positional-Argumente für die Funktion.
+
+In Ihrem Beispiel ist ''transactions'' eine Liste von ''Transaction''-Objekten. Wenn Sie ''update_inventory(inventory, *transactions)'' aufrufen, werden die ''Transaction''-Objekte in der Liste als einzelne Positional-Argumente an die Funktion ''update_inventory'' übergeben.
+
+Das bedeutet, dass der Aufruf von ''update_inventory(inventory, *transactions)'' äquivalent ist zu einem Aufruf wie ''update_inventory(inventory, Transaction('Apfel', 3), Transaction('Birne', -2))'', vorausgesetzt, dass ''transactions = [Transaction('Apfel', 3), Transaction('Birne', -2)]''.
+
+Dies ist besonders nützlich, wenn die Anzahl der ''Transaction''-Objekte variabel ist, da die Funktion ''update_inventory'' so gestaltet ist, dass sie eine variable Anzahl von ''Transaction''-Objekten akzeptiert.
+
+</WRAP>

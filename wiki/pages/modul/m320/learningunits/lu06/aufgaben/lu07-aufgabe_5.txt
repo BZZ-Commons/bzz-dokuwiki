@@ -1,0 +1,22 @@
+==== Aufgabe 5 - Anpassen von Fähigkeiten (Overwriting) ====
+=== Ziel ===
+   * Sie können aufzeigen, wie Vererbung für die Anpassung von Fähigkeiten eingesetzt wird.
+=== Auftrag ===
+Implementieren Sie die 4 Klassen gemäss Klassendiagramm.\\
+Die Methode ''move()'' schreibt sinngemäss folgenden Text auf den Stdout:\\
+   * Tier weiss nicht konkret, wie es sich bewegen soll. (für die Klasse ''Animal'')
+   * ''species'' mit Namen ''name'' .... (hier steht, wie sich das Tier bewegt)\\
+{{modul:m320:learningunits:lu06:aufgaben:lu07-aufg4a_ueberschreiben-10.png?800|}}\\
+In der Datei ''test_main.py'' finden sich Testfälle für die 4 Klassen.
+\\
+Wenn die 4 Klassen korrekt implementiert sind, führen sie die ''main''-Methode aus. 
+  * Studieren Sie den Code. 
+  * Was fällt Ihnen da auf?
+===Dauer===
+20 Minuten + Fachgespräch zur Polymorphie
+
+=== Abgabe ===
+auf github-classsroom
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) René Probst

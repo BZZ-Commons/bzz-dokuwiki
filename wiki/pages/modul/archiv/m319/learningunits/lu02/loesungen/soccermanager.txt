@@ -1,0 +1,21 @@
+====== Lösungsvorschlag: Soccer Manager ======
+
+<code java>
+...
+
+    /**
+     * enter the rating for the players
+     */
+    private void ratePlayers() {
+
+        int shirtNo;
+        double rating;
+        double totalRating;
+        int countRating;
+        ...
+    }
+...
+</code>
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Marcel Suter

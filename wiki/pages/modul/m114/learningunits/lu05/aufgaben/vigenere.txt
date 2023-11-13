@@ -1,0 +1,36 @@
+====== LU05.A02 - Vigenere ======
+Sie können Ihre Lösung mit [[https://www.cryptool.org/de/cto/vigenere]] überprüfen.
+
+===== Hilfsmittel =====
+  * Papier und Schreibmaterial
+  * Dokument "Hilfsblätter"
+
+===== Aufgaben =====
+
+== Hinweise ==
+Verwenden Sie im Chiffretext ausschliesslich Grossbuchstaben.
+Lassen Sie Leerzeichen und Satzzeichen weg.
+
+==== Verschlüsseln ====
+Verschlüsseln Sie den Klartext mit dem Vigenere-Verfahren.
+
+  * Klartext: **Haensel und Gretel verirrten sich im Wald.**
+  * Schlüssel: **VIGENERE**
+
+  * Klartext: **Diese Nachricht ist geheim**
+  * Schlüssel: **BILDUNGSZENTRUM**
+
+==== Entschlüsseln ====
+
+Entschlüsseln Sie den Chiffretext mit dem Vigenere-Verfahren.
+
+  * Chiffretext: **FAHDLROFLEYXZHXBBEHHMGMM**
+  * Schlüssel: **BILDUNGSZENTRUM**
+
+  * Chiffretext: **AMTZMIMMPZBIIQGCXVXKJSNIXAGSNRL**
+  * Schlüssel: **FICHTE**
+
+
+----
+{{tag>m114-A0G}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

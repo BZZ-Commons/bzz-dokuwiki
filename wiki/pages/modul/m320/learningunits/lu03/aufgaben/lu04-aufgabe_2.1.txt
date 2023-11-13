@@ -1,0 +1,18 @@
+==== Aufgabe 2 - Exception fangen und bearbeiten ====
+
+=== Ziel ===
+  * Sie können mit dem try-except Konstrukt "kritischen" Code überwachen und im Fehlerfall reagieren.
+
+=== Auftrag ===
+   - Laden Sie das Repo von github-classroom.
+   - Führen Sie die ''main''-Methode aus und prüfen Sie am Bildschirm, welche Exception zum Programmabbrch geführt hat.
+   - Ergänzen Sie nun den Code der Methode ''main'', so dass der Fehler gefangen und die systemeigene Fehlermeldung am Bildschirm ausgegeben wird.
+   - Führen Sie den pytest aus, um sicherzustellen, dass die Aufgabe korrekt gelöst ist.
+=== Dauer ===
+10 Minuten
+=== Abgabe ===
+Abgabe auf github.
+
+----
+<nodisp>GitHub Repo: https://github.com/templates-python/m320-lu03-a02-catch-exception.git</nodisp>
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) René Probst

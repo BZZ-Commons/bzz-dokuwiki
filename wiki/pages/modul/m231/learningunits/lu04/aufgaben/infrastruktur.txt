@@ -1,0 +1,77 @@
+====== LU04.A01 - Meine Infrastruktur ======
+
+<WRAP center round todo 60%>
+
+Analysieren Sie Ihren Laptop bezüglich der eingesetzten Tools für Datensicherheit. Dokumentieren Sie alle relevanten Informationen.
+
+</WRAP>
+
+Siehe auch [[https://www.ncsc.admin.ch/ncsc/de/home/infos-fuer/infos-private.html|NCSC - Informationen für Private]]
+
+===== Ausgangslage =====
+
+Daten... von denen haben wir viele. Aber wie steht es um Schutz und Sicherheit?  Medienberichte über Datenlecks bei Firmen werden von vielen Personen als "Skandal" bezeichnet.  Aber wie schaut es bei jedem selber aus? Dem wollen wir mal etwas auf den Zahn fühlen.
+
+<WRAP center round info 60%>
+
+Schreiben Sie keine sensitiven Daten (z.B. Passwörter, Lizenznummern, ...) in Ihre Dokumentation. Verschiedene Personen werden diese Dokumentation sehen.
+
+</WRAP>
+
+===== Dokumentation =====
+
+Erstellen Sie eine übersichtliche Dokumentation über Ihren persönlichen Laptop.
+
+==== Sicherheitstools ====
+
+=== Antivirus ===
+
+  * Welches Produkt setzen Sie ein?
+  * Verwenden Sie ein kostenpflichtiges oder ein gratis Produkt?
+  * Wie oft wird dieses aktualisiert (Softwareupdate, Update der Virensignaturen)?
+  * Schauen Sie mal im Internet verschiedene Tests an --> Wie schneidet Ihr Produkt ab?
+
+=== Firewall ===
+
+  * Welches Produkt setzen Sie ein?
+  * Verwenden Sie ein kostenpflichtiges oder ein gratis Produkt?
+  * Haben Sie selber Konfigurationen vorgenommen oder läuft die Firewall einfach in der Standardkonfiguration?
+  * Schauen Sie mal im Internet verschiedene Tests an --> Wie schneidet Ihr Produkt ab?
+
+=== Weitere Sicherheitstools ===
+
+  * Wie führen Sie Updates Ihrer Software (z.B. Windows, Office, ...) durch? Erfolgt der Update automatisch oder manuell? Wann wurde Ihr Betriebssystem zum letzten mal aktualisiert?
+  * Benennen Sie allfällige weitere Tools (Malware-Schutz, Surfschutz, Schutz von elektronischen Zahlungsmitteln und Passwörtern, ...), welche Sie einsetzen und für was diese gut sind
+  * Finden Sie im Internet bekannte Sicherheitslücken oder Probleme in diesen Tools?
+
+==== Datensicherung ====
+
+=== Daten ===
+
+Schauen Sie mal an, was Sie alles für Daten auf Ihrem Gerät haben
+
+  * Wieviele Prozent (Schätzung) dieser Daten werden regelmässig gesichert (Backup)?
+  * Wiviele Prozent (Schätzung) Ihrer Daten wären bei einem Totalausfall des Geräts "hoffnungslos" verloren?
+  * Auf wieviele Prozent (Schätzung) der verlorenen Daten können Sie wirklich verzichten (schmerzloser Verlust)?
+
+=== Datenstruktur ===
+
+  * Wie ist Ihre Dateiablage strukturiert?
+  * Verwenden Sie eine konkrete Struktur für alle Daten, sprich mit einem obersten Ordner und dann weitere Unterteilungen?
+  * Liegen Ihre Daten in mehreren Stammverzeichnissen (z.B. etwas auf dem Desktop, etwas im Ordner "Bilder" vom Benutzerprofil, etwas in einem eigenen Verzeichnis, ...)?
+    * Wenn Sie eine konkrete Datei brauchen, wissen Sie auf Anhieb, wo Sie diese finden?
+
+=== Backup & Restore ===
+
+  * Wenn Sie Ihren Laptop heute verlieren, ...
+    * ... welche Daten könnten Sie wiederherstellen?
+    * ... wieviele Tage/Stunden müssten Sie aufwenden?
+  * Welche Lösung setzen Sie für Backups ein (Backup auf separaten Datenträger, Cloud)
+  * Machen Sie den Backup manuell (Copy-Paste) oder mittels einer Software?
+  * Enthält ihr Backup auch ältere Versionen von gelöschten / veränderten Dateien?
+    * Wenn ja, wieviele "Generationen" einer Datei könnten Sie zurück
+
+----
+
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter
+

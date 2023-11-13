@@ -1,0 +1,7 @@
+====== LU06.L04 - Erstellen einer RESTful API für die ToDo-Liste mit Flask ======
+===== main.py=====
+{{gh>https://github.com/templates-python/m323-lu06-a04-restful/blob/solution/main.py}}
+===== todoDao.py=====
+{{gh>https://github.com/templates-python/m323-lu06-a04-restful/blob/solution/todoDao.py}}
+===== todoItem.py=====
+{{gh>https://github.com/templates-python/m323-lu06-a04-restful/blob/solution/todoItem.py}}

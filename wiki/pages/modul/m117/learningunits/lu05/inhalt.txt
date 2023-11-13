@@ -1,0 +1,41 @@
+====== LU05b - Aufbau eine Netzwerk-Sicherheitskonzepts ======
+
+Hier ist eine ausführliche Beschreibung dessen, was ein Netzwerk-Sicherheitskonzept einschliesst:
+
+
+=== 1. Einführung und Zielsetzung ===
+Dieser Abschnitt erklärt die Gründe für die Erstellung des Netzwerk-Sicherheitskonzepts und die damit verbundenen Ziele. Zu den Zielen gehören die Sicherung des Netzwerks vor unerlaubtem Zugriff, die Gewährleistung der Verfügbarkeit von Netzwerkdiensten und die Minimierung von Sicherheitsrisiken.
+
+=== 2. Netzwerktopologie und Ressourcen ===
+Hier wird die Struktur des Netzwerks beschrieben, einschliesslich der Hardwarekomponenten, der Netzwerksegmente und der identifizierten kritischen Ressourcen. Dies hilft bei der Identifikation von potenziellen Schwachstellen.
+
+=== 3. Risikoanalyse und Bedrohungsidentifikation ===
+Ähnlich wie beim IT-Sicherheitskonzept werden in diesem Abschnitt potenzielle Risiken und Bedrohungen für das Netzwerk identifiziert, z. B. Malware, Phishing-Angriffe, Denial-of-Service (DoS)-Angriffe usw.
+
+=== 4. Sicherheitsziele und -anforderungen ===
+Hier werden die spezifischen Sicherheitsziele und -anforderungen für das Netzwerk festgelegt, einschliesslich Zugriffskontrollen, Verschlüsselung, Datensicherung und Datensicherheit.
+
+=== 5. Netzwerksicherheitsmassnahmen ===
+Dieser Abschnitt beschreibt die technischen Sicherheitsmassnahmen, die implementiert werden, um die Netzwerksicherheit zu gewährleisten. Dies kann die Einrichtung von Firewalls, Intrusion Detection Systemen (IDS), Intrusion Prevention Systemen (IPS), VPNs, Netzwerksegmentierung und regelmässige Sicherheitsupdates umfassen.
+
+=== 6. Nutzungsrichtlinien und Verhaltensregeln ===
+Hier werden klare Regeln und Verhaltensrichtlinien für die Nutzung des Netzwerks durch Mitarbeiter festgelegt. Dies kann die Verwendung sicherer Passwörter, das Melden von Sicherheitsvorfällen, die Beschränkung des Zugriffs auf bestimmte Ressourcen und die Nutzung von Unternehmensgeräten für private Zwecke einschliessen.
+
+=== 7. Schulung und Sensibilisierung ===
+Die Sensibilisierung der Mitarbeiter für Netzwerksicherheitsrisiken und die Schulung in sicheren Netzwerkpraktiken sind entscheidend. Das Konzept sollte Massnahmen zur Mitarbeiterbildung und -sensibilisierung einschliessen.
+
+=== 8. Überwachung und Bewertung ===
+Hier wird beschrieben, wie das Netzwerk kontinuierlich überwacht und bewertet wird, um potenzielle Sicherheitsvorfälle frühzeitig zu erkennen und darauf zu reagieren.
+
+=== 9. Vorfallreaktionsplan (Incident Response Plan) ===
+Ähnlich wie im IT-Sicherheitskonzept sollte auch hier ein Plan zur Bewältigung von Sicherheitsvorfällen enthalten sein.
+
+=== 10. Compliance und gesetzliche Anforderungen ===
+Das Konzept sollte sicherstellen, dass das Netzwerk die geltenden gesetzlichen und regulatorischen Anforderungen im Bereich der Netzwerksicherheit erfüllt.
+
+----
+
+{{tag>m117}}
+
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Andre Probst
+

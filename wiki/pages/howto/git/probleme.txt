@@ -1,0 +1,44 @@
+====== Problembehandlung in Webstorm / PyCharm ======
+
+===== Berechtigung =====
+Wenn Sie in Webstorm oder PyCharm einen Push in ein GitHub Repository durchführen, werden Sie oft nach der Berechtigung gefragt.
+In der Regel reichen zwei Klicks um die Berechtigung zu erteilen:
+  * **Voraussetzung:** Melden Sie sich im Webbrowser mit Ihrem BZZ-Benutzerkonto auf GitHub an.
+  * [Login via GitHub ...] in Webstorm => Eine neue Webseite wird geöffnet.
+  * [Authorize] => Eine Bestätigung erscheint.
+
+Dieses Verhalten ist normal, da Webstorm unsere Berechtigung nicht langfristig speichert.
+
+===== Problemsituation =====
+Unter bestimmten Umständen, klappt aber dieser normale Ablauf nicht.
+Dann müssen wir die Verbindung zwischen GitHub und Webstorm neu definieren.
+
+==== Lösung 1: GitHub-Konto in Webstorm neu verbinden ====
+Stellen Sie sicher, dass Sie in GitHub mit Ihrem BZZ-Konto angemeldet sind.
+Führen Sie die folgenden Schritte in Webstorm durch:
+| 1. File => Settings => GitHub | {{:howto:git:githubprobleme01.png?400|}} |
+| 2. Entfernen Sie ein allfällig verbundenes Konto: \\ Konto auswählen und ''-'' klicken. | ::: |
+| 3. Fügen Sie ein neues Konto ein: \\ ''+'' oder ''add account ...'' klicken.  \\ Wählen Sie ''Login via GitHub ...'' aus. | ::: |
+| 4. Im Webbrowser öffnet sich ein neues Fenster, klicken Sie auf [Authorize in GitHub]. | |
+
+Versuchen Sie nun erneut den Push durchzuführen.
+
+==== Lösung 2: Autorisation in GitHub erneuern ====
+In seltenen Fällen reicht die Lösung 1 nicht.
+Ich erlebe dies vor allem, wenn ich zum ersten mal mit einer neuen GitHub-Organisation arbeite.
+Um das Problem zu beheben, müssen Sie die Verbindung der JetBrains IDE aus GitHub entfernen und neu einrichten.
+
+| 1. Entfernen Sie das GitHub-Konto in Webstorm/PyCharm wie in Lösung 1 beschrieben. | | 
+| 2. Öffnen Sie im Webbrowser die ''Settings'' Ihres GitHub-Kontos. | {{:howto:git:github_probleme_02.png?400|}} |
+| 3. Wählen Sie im Menu ''Applications'' und danach ''Authorized OAuth Apps''. | ::: |
+| 4. Klicken Sie bei ''JetBrains IDE Integration'' auf die drei Punkte und wählen Sie ''Revoke''. \\ Bestätigen Sie mit [I understand, revoke access] | ::: |
+| 5. Fügen Sie in ''Settings'' => ''GitHub'' von Webstorm/PyCharm ein neues Konto hinzu. \\ Wählen Sie ''Login via GitHub ...'' aus. | {{:howto:git:github_probleme_03.png?400|}} |
+| 6. Im Webbrowser öffnet sich ein neues Fenster, klicken Sie auf [Authorize in GitHub]. | ::: |
+| 7. Im nächsten Fenster müssen Sie die Berechtigungen anpassen und bestätigen. \\ Falls eine Organisation (z.B. BZZ-2023) keinen grünen Haken hat, können Sie den Zugriff mittels [Grant] erteilen. | ::: |
+
+===== Konflikte beim Push =====
+TODO
+
+----
+{{tag>m293-LU01 m293-D1G}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Marcel Suter

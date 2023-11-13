@@ -1,0 +1,47 @@
+====== LU04.A11 - Sortiere Studenten nach Noten ======
+
+<WRAP center round todo 60%>
+Erstelle eine Liste von Studenten und deren Noten.
+Nutze die sorted() Funktion in Python, um die Studenten basierend auf ihren Noten zu sortieren.
+</WRAP>
+
+===== Aufgabenstellung =====
+
+Du hast eine Liste von Studenten und ihren Noten. Deine Aufgabe ist es, die Studenten basierend auf ihren Noten zu sortieren, sodass der Student mit der höchsten Note zuerst erscheint. Verwende die ''sorted()'' Funktion in Python, um die Liste effizient zu sortieren.
+
+==== Schrittweises Vorgehen ====
+
+Schritt 1: Definiere eine Liste von Studenten und ihren Noten.
+Schritt 2: Verwende die ''sorted()'' Funktion mit einem benutzerdefinierten Schlüssel, um die Liste basierend auf den Noten der Studenten zu sortieren.
+Schritt 3: Drucke die sortierte Liste, um das Ergebnis zu überprüfen.
+==== Vorlage ====
+<code python>
+def sort_students_by_grade(students):
+    """
+    Nutze die `sorted()` Funktion, um die Studenten basierend auf ihren Noten zu sortieren.
+ 
+    Parameters:
+    - students (list): Liste der Studenten und ihrer Noten.
+ 
+    Returns:
+    - list: Liste der sortierten Studenten.
+    """    
+    return []
+
+if __name__ == '__main__':
+    students = [
+        ('Alice', 4.0),
+        ('Bob', 3.5),
+        ('Charlie', 4.25),
+        ('David', 5.5),
+        ('Manuel', 3.75)
+    ]
+    sorted_students = sort_students_by_grade(students)
+    print(sorted_students)
+</code>
+
+----
+<nodisp>https://github.com/templates-python/m323-lu04-a11-sorting</nodisp>
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/ch/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Kevin Maurizi
+
+

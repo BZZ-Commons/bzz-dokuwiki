@@ -1,0 +1,32 @@
+====== LU02.A04 - Multiplikation und Division ======
+<WRAP center round info 60%>
+Erstelle einen Programmablauf mit Blockly, der verschiedene Berechnungen mit den Benutzereingaben anstellt.
+</WRAP>
+
+===== Aufgabe =====
+Das Programm erwartet vom Benutzer die Eingabe von zwei Dezimalzahlen.
+Die Benutzereingaben müssen in den Datentyp ''float'' umgewandelt und zwischengespeichert werden.
+Anschliessend gibt das Programm das Produkt und den Durchschnitt der beiden Zahlen aus.
+
+===== Programmablauf =====
+
+<HTML>
+<iframe src="https://trinket.io/embed/python3/1e72babfe6?outputOnly=true&runOption=run&start=result" width="100%" height="200" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+</HTML>
+
+<code>
+Erste Zahl: 
+*58.64*
+Zweite Zahl:
+*17.318*
+
+58.64 * 17.318 = 1015.52752
+Durchschnitt von 58.64 und 17.318 = 37.984
+</code>
+
+===== Abgabe =====
+Erstelle einen Screenshot des Blockly-Diagramms und lade diesen in der Moodle-Aufgabe hoch.
+
+----
+{{tag>M319-LU02}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter, Kevin Maurizi

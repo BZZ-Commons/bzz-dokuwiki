@@ -1,0 +1,19 @@
+====== LU01a - JDK installieren ======
+
+Bei Java muss man zwischen der Laufzeit- und der Entwicklungsumgebung unterscheiden. Auf den meisten Rechnern dürfte, unabhängig vom Betriebssystem, eine Laufzeitumgebung von Java (Java Runtime Environment, JRE) vorhanden sein. Zum Entwickeln eigener Programme benötigen wir jedoch das Java Development Kit (JDK). Dieses können Sie [[https://www.oracle.com/java/technologies/downloads/|hier]] für ihr Betriebssystem (Microsoft Windows, Linux oder Mac OS) herunterladen. Achten Sie neben dem richtigen Betriebssystem auch darauf, ob Sie eine 32- oder 64-Bit-Variante benötigen. Alternativ klappt die Installation auch mit chocolatey.org und dem Befehl:
+
+<code>choco install oraclejdk</code>
+
+Java liegt aktuell in der Version 17 vor, achten Sie für den Unterricht im Modul 319 darauf, dass Sie mindestens Version 8 installiert haben. Laden Sie das JDK für Ihr spezifisches System und installieren Sie es. Nach der Installation kann man auf der Kommandozeile bzw. im Terminal mit Hilfe von
+
+<code>javac -version</code>
+
+die korrekte Installation und die Version überprüfen:
+
+{{ :modul:m319:learningunits:lu01:jdk.png?600 |}}
+
+Damit hat man die Voraussetzungen für das Übersetzen von Java-Anwendungen auf dem System geschaffen. Bitte achten Sie darauf, als Befehl javac -version einzugeben. Demgegenüber wird mittels java -version nur das Vorhandensein der Laufzeitumgebung geprüft! Wie gesagt, diese genügt um Programme auszuführen; um jedoch selbst zu entwickeln, wird das SDK gebraucht.
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Kevin Maurizi
+{{tag>JDK}}

@@ -1,0 +1,70 @@
+====== LU07.L01 - Fahrzeug-Konfigurator ======
+
+[[https://templates-html.github.io/M293_LU07_01_car/carconfig.html|Live Preview]]
+
+===== Fragen =====
+
+**Warum ist das select Element für die Darstellung einer großen Auswahl an Fahrzeugmodellen geeigneter als radiobutton Elemente? Welche Vorteile bietet das select Element in Bezug auf Benutzerfreundlichkeit und Übersichtlichkeit bei großen Datenmengen?**
+
+
+Das ''<select>'' Element ist besonders geeignet, wenn eine große Anzahl von Optionen zur Verfügung steht. Die Verwendung von Radio-Buttons wäre in diesem Fall weniger benutzerfreundlich und übersichtlich, da sie viel Platz auf dem Bildschirm einnehmen würden und es für den Benutzer schwieriger wäre, die gewünschte Option zu finden. Bei einem <select> Element werden die Optionen in einem Drop-Down-Menü präsentiert, was den Platzbedarf reduziert und es dem Benutzer ermöglicht, durch Scrollen die gewünschte Option zu finden. Zudem erlaubt ''<select>'' mit ''<optgroup>'' die Kategorisierung der Optionen, was bei Radio-Buttons nicht so elegant möglich wäre.
+
+**Warum haben wir für die Auswahl der Lackfarbe radiobutton Elemente verwendet, statt ein select Element zu verwenden? Welche Überlegungen zur Benutzererfahrung und Erwartungskonformität spielen hier eine Rolle?**
+
+Radio-Buttons werden oft verwendet, wenn die Auswahl auf eine einzige Option beschränkt ist und nur eine geringe Anzahl von Optionen zur Verfügung steht. Radio-Buttons haben den Vorteil, dass alle verfügbaren Optionen auf einen Blick sichtbar sind, ohne dass der Benutzer eine zusätzliche Interaktion (z.B. Klicken auf ein Drop-Down-Menü) ausführen muss. Dies entspricht der Erwartungskonformität, da es in vielen Benutzeroberflächen üblich ist, Radio-Buttons für solche Auswahlmöglichkeiten zu verwenden. Außerdem können Radio-Buttons direkt farblich gestaltet werden, um die Farbauswahl zu visualisieren, was in einem Dropdown-Menü nicht möglich wäre.
+
+Bei der Auswahl der Lackfarbe ist die Anzahl der Optionen in der Regel begrenzt und die Benutzer möchten wahrscheinlich alle verfügbaren Optionen auf einen Blick sehen, bevor sie eine Auswahl treffen. Daher sind in diesem Kontext radiobutton Elemente die geeignete Wahl.
+
+===== Code =====
+
+<code html4strict>
+<form action='https://it.bzz.ch/demo/formdata/index.php' method='post'>
+  <!-- Fahrzeugmodelle -->
+  <fieldset>
+    <legend>Fahrzeugmodell</legend>
+    <select id='Fahrzeugmodell' name='Fahrzeugmodell' required>
+      <optgroup label='Kompaktwagen'>
+        <option value='A-Klasse'>A-Klasse</option>
+        <option value='B-Klasse'>B-Klasse</option>
+        <option value='CLA'>CLA</option>
+        <option value='GLA'>GLA</option>
+      </optgroup>
+      <optgroup label='Limousinen und T-Modelle'>
+        <option value='C-Klasse'>C-Klasse</option>
+        <option value='E-Klasse'>E-Klasse</option>
+        <option value='S-Klasse'>S-Klasse</option>
+        <option value='CLS'>CLS</option>
+      </optgroup>
+      <optgroup label='SUVs und Offroader'>
+        <option value='G-Klasse'>G-Klasse</option>
+        <option value='GLB'>GLB</option>
+        <option value='GLC'>GLC</option>
+        <option value='GLE'>GLE</option>
+        <option value='GLS'>GLS</option>
+      </optgroup>
+      <optgroup label='Sportwagen'>
+        <option value='AMG GT'>AMG GT</option>
+      </optgroup>
+      <optgroup label='Elektroautos'>
+        <option value='EQC'>EQC</option>
+        <option value='EQS'>EQS</option>
+      </optgroup>
+    </select>
+  </fieldset>
+
+  <!-- Lackfarben -->
+  <fieldset>
+    <legend>Lackfarbe</legend>
+    <input id='Rot' name='Lackfarbe' type='radio' value='Rot'>
+    <label for='Rot'>Rot</label><br>
+    <input id='Blau' name='Lackfarbe' type='radio' value='Blau'>
+    <label for='Blau'>Blau</label><br>
+    <input id='Grün' name='Lackfarbe' type='radio' value='Grün'>
+    <label for='Grün'>Grün</label><br>
+    <input id='Schwarz' name='Lackfarbe' type='radio' value='Schwarz'>
+    <label for='Schwarz'>Schwarz</label>
+  </fieldset>
+
+  <!-- Submit Button -->
+  <input type='submit' value='Konfiguration absenden'>
+</code>

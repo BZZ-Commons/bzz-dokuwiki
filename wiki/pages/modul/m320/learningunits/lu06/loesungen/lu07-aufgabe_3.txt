@@ -1,0 +1,72 @@
+===== Aufgabe 3 - Lösung =====
+===phone.py===
+<code python>
+class Phone:
+    '''
+      Stellt ein einfaches, altes Telefon dar, mit dem man nur anrufen kann.
+    '''
+
+    def __init__(self):
+        pass
+
+    def calling(self):
+        print('anrufen')
+
+    def what_i_am(self):
+        return('a simply phone')
+
+#Test
+if __name__ == '__main__':
+    p = Phone()
+    print(p.what_i_am())
+    p.calling()
+</code>
+===handy.py===
+<code python>
+from phone import Phone
+
+class Handy(Phone):
+
+    def __init__(self):
+        pass
+
+    def handle_sms(self):
+        print('sms senden und empfangen')
+
+    def what_i_am(self):
+        return('an old handy')
+
+#Test
+if __name__ == '__main__':
+    h = Handy()
+    print(h.what_i_am())
+    h.calling()
+    h.handle_sms()
+</code>
+===smartphone.py===
+<code python>
+rom handy import Handy
+
+class SmartPhone(Handy):
+
+    def __ini__(self):
+        pass
+
+    def use_internet(self):
+        print('das Internet benutzen')
+
+    def what_i_am(self):
+        return ('a modern smartphone')
+
+#Test
+if __name__ == '__main__':
+    s = SmartPhone()
+    print(s.what_i_am())
+    s.calling()
+    s.handle_sms()
+    s.use_internet()
+</code>
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) René Probst

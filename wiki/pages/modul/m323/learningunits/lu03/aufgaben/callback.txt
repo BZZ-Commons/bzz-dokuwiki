@@ -1,0 +1,121 @@
+====== LU03.A09 - GUI-Interaktion mit Callbacks in tkinter ======
+
+<nodisp><WRAP center round important 60%>
+**Testfälle noch schreiben, dass Sie auf Github laufen und auch lokal die variable irgendwie heissen kann!** 
+</WRAP>
+</nodisp>
+
+
+<WRAP center round todo 60%>
+Erstellen Sie eine einfache GUI-Anwendung mit ''tkinter'', die es einem Benutzer ermöglicht, seinen Namen in ein Eingabefeld einzugeben. Nach Eingabe seines Namens und Klick auf einen Button sollte eine Begrüßungsnachricht angezeigt werden.
+</WRAP>
+
+==== Detaillierte Aufgabenstellung ====
+
+  - **GUI-Layout**: 
+    - Ein Label mit dem Text "Geben Sie Ihren Namen ein:"
+    - Ein Eingabefeld (Entry-Widget) für den Namen des Benutzers.
+    - Ein Button mit der Beschriftung "Begrüßen".
+  - **Funktionalität**:
+    - Wenn der Benutzer auf den "Begrüßen"-Button klickt, sollte unterhalb des Buttons eine Nachricht angezeigt werden, die lautet: "Hallo, [Name des Benutzers]!".
+    - Verwenden Sie eine Callback-Funktion, um auf den Button-Klick zu reagieren und die Begrüßungsnachricht zu generieren.
+
+==== Code-Vorlage ====
+
+<code python>
+import tkinter as tk
+
+class GreetingApp:
+    """
+    Eine einfache GUI-Anwendung, die es einem Benutzer ermöglicht, seinen Namen in ein Eingabefeld einzugeben.
+    Nach Eingabe seines Namens und Klick auf einen Button wird eine Begrüßungsnachricht angezeigt.
+    """
+
+    def __init__(self, root):
+        """
+        Initialisiert die GUI-Komponenten.
+
+        Args:
+        - root (tk.Tk): Das Hauptfenster der Anwendung.
+        """
+        # TODO: Titel setzen und in root in self.root speichern
+
+        # Label-Widget, das den Benutzer auffordert, seinen Namen einzugeben
+        #TODO
+
+        # Eingabefeld-Widget (Entry-Widget) für den Namen des Benutzers
+        # TODO
+
+        # Label-Widget für die Begrüßungsnachricht
+        # Zu Beginn wird kein Text angezeigt
+        # TODO
+
+        # Button-Widget, das die greet_user-Methode aufruft, wenn es geklickt wird
+        # TODO
+
+    def greet_user(self):
+        """
+        Diese Methode wird aufgerufen, wenn der Benutzer auf den "Begrüßen"-Button klickt.
+        Sie liest den Namen aus dem Eingabefeld aus und zeigt eine Begrüßungsnachricht unterhalb des Buttons an.
+        """
+        # Den eingegebenen Namen aus dem Entry-Widget holen
+        # TODO
+        # Begrüßungsnachricht generieren
+        # TODO
+        # Die Begrüßungsnachricht im Label-Widget anzeigen
+        # TODO
+
+
+if __name__ == '__main__':
+    # Hauptfenster des GUI erstellen
+    root = tk.Tk()
+
+    # Instanz der GreetingApp-Klasse erstellen
+    app = GreetingApp(root)
+
+    # GUI-Event-Loop starten
+    root.mainloop()
+</code>
+
+==== Hinweis ====
+
+**Callback-Funktion in ''tkinter'':**
+
+In ''tkinter'' wird eine Funktion oder Methode als Callback verwendet, indem sie als Argument an ein GUI-Widget (z.B. Button) übergeben wird. Wenn ein bestimmtes Ereignis (z.B. ein Button-Klick) auftritt, wird diese Funktion aufgerufen. 
+
+Beispiel:
+
+<code python>
+def my_callback():
+    print('Callback wurde aufgerufen!')
+
+button = tk.Button(root, text='Klicken Sie mich', command=my_callback)
+</code>
+
+In diesem Beispiel wird die Funktion ''my_callback'' aufgerufen, wenn der Benutzer auf den Button klickt.
+
+
+<WRAP center round info 60%>
+====== Ressourcen zum Lernen von `tkinter` ======
+
+Wenn Sie sich intensiver mit der GUI-Entwicklung in Python mit ''tkinter'' beschäftigen möchten, finden Sie hier einige empfohlene Ressourcen:
+
+**Offizielle ''tkinter'' Dokumentation**:
+  * [[https://docs.python.org/3/library/tk.html|Tkinter - Python Standard Library]]
+
+**Tutorials**:
+  * [[https://www.tutorialspoint.com/python/python_gui_programming.htm|Tkinter Tutorial - TutorialsPoint]]
+  * [[https://realpython.com/courses/tkinter-course/|Tkinter Course - Real Python]]
+
+**Online-Plattformen**:
+  * [[https://www.geeksforgeeks.org/python-tkinter-tutorial/|Tkinter Tutorials - GeeksforGeeks]]
+
+**Interaktive Lernplattformen**:
+  * [[https://www.udemy.com/course/tkinter-gui-application-development-projects/|Tkinter GUI Application Development Projects - Udemy]]
+  * [[https://www.linkedin.com/learning/python-gui-development-with-tkinter-2|Python GUI Development with Tkinter - LinkedIn Learning]]
+
+</WRAP>
+
+----
+<nodisp>https://github.com/templates-python/m323-lu03-a09-callback</nodisp>
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/ch/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Kevin Maurizi 

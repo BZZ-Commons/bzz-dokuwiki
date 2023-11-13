@@ -1,0 +1,60 @@
+====== LU05.A04: Römische Zahlzeichen ======
+<WRAP center round info 60%>
+Lösen Sie die Aufgabe mit [[https://think.cs.vt.edu/blockpy/blockpy/|BlockPy]] oder [[https://www.codingrooms.com/compiler/python-block|Codingrooms]]
+
+Laden Sie einen Screenshot ihres Blockly-Ablaufs hoch.
+</WRAP>
+===== Römische Zahlen =====
+//[[https://de.wikipedia.org/wiki/R%C3%B6mische_Zahlschrift]]//
+
+Das römische Zahlensystem basiert ausschliesslich auf der Addition
+((Die Subtraktionsregel, dass man maximal 3 identische Symbole schreiben darf, stammt aus dem Mittelalter.)) der Symbole.
+Dabei werden immer möglichst wenige Symbole verwendet, um die Zahl zu notieren.
+
+=== Römische Zahlzeichen ===
+| I | 1 |
+| V | 5 |
+| X | 10 |
+| L | 50 |
+| C | 100 |
+| D | 500 |
+| M | 1000 |
+
+==== Beispiele ====
+=== DCCXIIII ===
+''500 + 100 + 100 + 10 + 1 + 1 + 1 + 1 = 714''
+
+=== MMXXII ==
+''1000 + 1000 + 10 + 10 + 1 + 1 = 2022''
+
+===== Auftrag =====
+Erstellen Sie ein Programm mit Blockly, das eine beliebige positive Zahl in römische Zahlzeichen umwandelt.
+
+==== Hinweise zu den Variablen ====
+  - ''numerals'': Eine ''Liste'' mit den römischen Zahlzeichen. Fügen Sie die Zahlzeichen nach absteigendem Wert ein.
+  - ''decimals'': Eine ''Liste'' mit den entsprechenden Zahlenwerten (absteigend sortiert).
+  - ''count'': Ein Zähler für die Position innerhalb der beiden Listen.
+  - ''result'': Eine Variable um das Resultat zu speichern.
+
+==== Programmlogik ====
+<code>
+1. Setze count gleich 0
+2. Der Benutzer gibt eine natürliche Zahl ein => number
+3. Solange number grösser als 0 ist
+  3.1. Falls number grösser oder gleich decimals[count] ist
+    3.1.1. Füge das Zeichen aus numerals[count] zum result hinzu.
+    3.1.2. Subtrahiere decimals[count] von number
+  3.2. Sonst
+    3.3. Erhöhe den Wert von count um 1
+4. Gib das result aus
+</code>
+
+==== Tests ====
+^ Input ^ Erwartetes Resultat ^
+| 714 | DCCXIIII |
+| 2022 | MMXXII |
+| 9 | VIIII |
+
+----
+{{tag>319-C1G 319-C1F 319-C1E}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

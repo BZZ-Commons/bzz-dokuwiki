@@ -1,0 +1,78 @@
+====== LU02b - Inhalt strukturieren ======
+
+<WRAP center round info 60%>
+Eine saubere Struktur der Inhalte ...
+Sie lernen die Elemente ''<nav>'', ''<main>'', ''<header>'', ''<footer>'', ''<section>'' und ''<article>'' kennen.
+</WRAP>
+
+===== Erweitertes Gerüst =====
+Im Abschnitt [[.:htmlbase|LU02a - HTML Grundgerüst]] haben Sie eine sehr rudimentäres Gerüst kennen gelernt.
+Dieses Gerüst wollen wir um einige Elemente mit der Struktur für die späteren Inhalte erweitern.
+
+<code html>
+<!doctype html>
+<html lang='de'>
+<head>
+  <meta charset='utf-8'>
+  <title>HTML5-Seite mit Grundstruktur</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+    </nav>
+  </header>
+  
+  <main>
+    <article>
+      <section>
+      </section>
+      <section>
+      </section>
+    </article>
+  </main>
+
+  <footer>
+  </footer>
+</body>
+</html>
+</code>
+
+===== <header> und <footer> =====
+//Siehe auch [[https://wiki.selfhtml.org/wiki/HTML/Tutorials/Seitenstrukturierung#header_und_footer|selfhtml - header und footer]]//
+
+Wie ein Worddokument haben auch Webseiten in der Regel eine Kopf- und Fusszeile.
+Diese enthalten Logos, Name der Seite, Copyright, ...
+Besonders bei einem Webauftritt mit mehreren Seiten helfen einheitliche Kopf- und Fusszeilen dem Betrachter bei der Orientierung.
+
+<WRAP center round important 60%>
+Auch wenn der Tag sehr ähnlich heisst, ist ''<head>'' etwas völlig anderes als ''<header>''.
+Im Bereich ''<head>'' befinden sich Metainformationen, die nicht Teil der sichtbaren Webseite sind.
+</WRAP>
+
+===== <nav> =====
+//Siehe auch [[https://wiki.selfhtml.org/wiki/HTML/Tutorials/Seitenstrukturierung#nav|selfhtml - nav]]//
+
+Das Element ''<nav>'' umschliesst die Navigation unseres Webauftritts.
+Es wird häufig innerhalb von ''<head>'' platziert.
+
+===== <main> =====
+
+//Siehe auch [[https://wiki.selfhtml.org/wiki/HTML/Tutorials/Seitenstrukturierung#main|selfhtml - main]]//
+
+Der Inhalt unserer Webseite wird innerhalb von ''<main>'' geschrieben.
+Dieser Bereich kann durch ''<article>'' und ''<section>'' weiter unterteilt werden.
+
+==== <article> ====
+//Siehe auch [[https://wiki.selfhtml.org/wiki/HTML/Tutorials/Seitenstrukturierung#article_oder_section.3F|selfhtml - article]]//
+
+Ein Artikel stellt einen in sich geschlossenen Teil des Inhalts dar.
+Dieser kann aus mehreren Abschnitten (''<section>'') bestehen.
+
+==== <section> ====
+//Siehe auch [[https://wiki.selfhtml.org/wiki/HTML/Tutorials/Seitenstrukturierung#article_oder_section.3F|selfhtml - section]]//
+
+Das Element ''<section>'' bezeichnet einen Abschnitt innerhalb eines Artikels.
+----
+{{tag>m293-LU02 m293-E1F}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Kevin Maurizi, Marcel Suter

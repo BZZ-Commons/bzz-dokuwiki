@@ -1,0 +1,19 @@
+====== Wikiseiten in Moodle einbinden ======
+=== 1. Kopiere die URL der gewünschten Wikiseite ===
+=== 2. Füge die URL (oder einen beliebigen Text) in Moodle ein ===
+{{:howto:moodle:moodlewiki00.jpg?600|}}
+
+Das einbetten von Wiki-Inhalten funktioniert in Moodle-Textseiten, Aufgaben und Lektionen.
+Weitere Moodle-Aktivitäten sind noch in der Testphase.
+=== 3. Füge die URL für den Link ein ===
+{{:howto:moodle:moodlewiki01.jpg?600|}}
+
+=== 4. Setze in bei **Erweitert** die CSS-Klasse ''embededWiki''. ===
+
+{{:howto:moodle:moodlewiki02.jpg?600|}}
+=== HTML-Ansicht in Moodle ===
+<code html>
+<a class="embededWiki" 
+href="https://it.bzz.ch/wikiV2/modul/m319/learningunits/lu09/lu09a-debuggeranwenden">https://it.bzz.ch/wikiV2/modul/m319/learningunits/lu09/lu09a-debuggeranwenden</a>
+</code>
+

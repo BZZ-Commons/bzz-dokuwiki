@@ -1,0 +1,10 @@
+====== LU02.L01c - Klartext in UTF-8 ======
+^ Klartext ^ UTF-8 ^^
+^ ::: ^ binär ^ hexadezimal ^ 
+| A | 0100 0001 | 41 |
+| x | 0111 1000 | 78 |
+| Î | 1100 0011 1000 1110 | C3 8E |
+| å | 1100 0011  1010 0101 | C3 A5 |
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

@@ -1,0 +1,78 @@
+====== Lösungsvorschlag: Spezialmethoden ======
+
+===== TODO 1 & 2 =====
+
+<code java>
+     // TODO 1: Ergänzen Sie den Datentyp Boot um eine toString()-Methode, geben Sie darin alle Attribute aus.
+        
+     /**
+     * Fügt alle Attribute einem String hinzu
+     * @return Gibt diesen String zurück
+     */
+     @Override
+     public String toString() {
+         return "Boot{" +
+                 "Marke='" + marke + '\'' +
+                 ", Farbe='" + farbe + '\'' +
+                 ", Kaufpreis=" + kaufpreis +
+                 ", Seriennummer='" + seriennummer + '\'' +
+                 ", imWasser=" + (imWasser?"Ja":"Nein") +
+                 '}';
+     }
+        
+        
+        // TODO 2: Passen Sie die Ausgabe an, dass nicht mehr printInfos() verwendet wird, sondern die toString() Methode
+        
+        for (Boot b : boote) {
+            System.out.println(b);
+        }
+        
+</code>
+
+
+===== TODO 4 & 5 & 6 =====
+
+<code java>
+// TODO 4: Machen Sie das Boot vergleichbar. Vergleichen Sie die Boote nach deren Kaufpreis.
+public class Boot implements Comparable<Boot>{
+
+    ...
+
+
+	/**
+	* Boot vergleichbar machen.
+	* @param o anderes Boot
+	* @return - wenn dieses günstiger, 0 bei gleich teuer, + wenn dieses teurer
+	*/
+	@Override
+	public int compareTo(Boot o) {
+		return (int)(kaufpreis - o.getKaufpreis());
+	}
+    
+}
+
+// TODO 5: Sortieren Sie die Boote nach ihrem Preis.
+Collections.sort(boote);
+
+// TODO 6: Geben Sie die Liste der Boote hier aus.
+for (Boot b : boote) {
+    System.out.println(b);
+}
+</code>
+
+<WRAP center round tip 60%>
+<code java>
+@Override
+public int compareTo(Boot o) {
+    return (int)(kaufpreis - o.getKaufpreis());
+}
+</code>
+Was passiert hier? Wir vergleichen den Kaufpreis von zwei Booten. Ist dieses Boot teurer wie das Boot ''o'' so muss eine positive Zahl zurückgegeben werden. Ist also der ''kaufpreis'' 100'000 und ''o.getKaufpreis()'' ist 80'000 ist das Resultat 20'000, also eine positive Zahl. Genau so funktioniert es auch anders herum, versuchen Sie es aus!
+
+<code java>
+(int)(kaufpreis - o.getKaufpreis());
+</code>
+Die Methode ''compareTo'' muss ein ''int'' zurückgeben, da der Kaufpreis ein ''double'' ist, und das Resultat der Berechnung auch ein ''double'' ist muss das Resultat in ein ''int'' gecastet (Typumwandlung) werden. Mehr Infos zu Typumwandlungen finden Sie [[modul:m319:learningunits:lu08:lu08c-typecasting|hier]].
+</WRAP>
+
+

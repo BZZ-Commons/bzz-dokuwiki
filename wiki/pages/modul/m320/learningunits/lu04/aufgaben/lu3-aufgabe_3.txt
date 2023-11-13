@@ -1,0 +1,34 @@
+==== Aufgabe 3 - Sequenzdiagramm zu Ablauf zeichnen====
+=== Ziel ===
+Sie können aus einem einfachen Ablauf (Dialog) das zugehörige Sequenzdiagramm skizzieren.
+=== Auftrag ===
+Das unten aufgelistete Fachgespräch ist als Sequenzdiagramm wiederzugeben.\\
+Beteiligte Objekte:
+   - Joe (der Auftraggeber)
+   - Regula (die Verkäuferin)
+   - Kerry (der Informatiker)
+//Hinweise://\\
+Die Methoden sind jeweils rechts vom Text angegeben.\\
+In normaler Schrift sind die Befehle (Fragen) angeschrieben und mit kursivem Text die Antworten auf die Frage.\\ 
+  
+**Gespräch:**\\
+Regula        <tab6>Joe, was könne wir für sie tun?                                   <tab60>''get_order()''\\
+Joe           <tab12>//Wir brauchen eine Applikation für unsere Hausüberwachung//\\
+Regula        <tab6>Kerry, haben wir so was schon gemacht?                             <tab44>''is_order_avaible()''\\
+Kerry         <tab9>//Ja, so was haben wir in unserem Sortiment//\\
+Regula        <tab6>Joe, haben Sie da genaue Vorstellungen?                            <tab43>''get_details()''\\
+Joe           <tab12>//Ich habe hier eine „Wunschliste“//\\
+Regula        <tab6>Kerry, ist das so möglich oder braucht es zusätzliche Elemente    <tab10>''check_details()''\\
+Kerry         <tab9>Regula, es fehlen uns zwei Bausteine für Storen und Türe          <tab17>''missed_elements()''\\
+Joe           <tab12>Regula, was würde das denn kosten                                 <tab51>''get_price()''\\
+Regula        <tab6>Kerry, was meinst du zu den Kosten                                <tab52>''get_price()''\\
+Kerry         <tab9>//Das dürfte etwa 100‘000 kosten//\\
+Regula        <tab6>//Das dürfte etwa 100‘000 kosten//\\
+
+===Dauer===
+10 - 15 Minuten
+=== Abgabe ===
+Geben Sie das Dokument als PDF-Datei in Moodle ab.
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) René Probst

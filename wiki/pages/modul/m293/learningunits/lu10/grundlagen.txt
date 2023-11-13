@@ -1,0 +1,23 @@
+====== LU10a - Grundladen ======
+<WRAP center round info 60%>
+Beim automatisierten Deployment werden Änderungen an unseren Webseiten automatisch veröffentlicht.
+</WRAP>
+
+Die Ziele eines automatisierten Deployments sind:
+  * Schnellere Verfügbarkeit von Änderungen und Fehlerkorrekturen für den Endbenutzer.
+  * Weniger Zeitaufwand für die Entwickler.
+
+Natürlich soll nicht einfach jede Änderung direkt öffentlich ins Internet gestellt werden.
+Schliesslich besteht die Entwicklung einer Webseite auch aus viel try & error.
+Daher wird ein automatisiertes Deployment in einen Workflow mit Validerung des Codes und Tests eingebunden.
+
+Ein möglicher einfacher Workflow wäre:
+  - Beim Commit wird der Code automatisch validiert. Schlägt die Validierung fehl, kann der Commit nicht durchgeführt werden.
+  - Beim Push ins zentrale Repository werden automatisierte Tests durchgeführt.
+  - Sind alle Tests erfolgreich, wird die Webseite veröffentlicht.
+
+In den folgenden Kapiteln betrachten wir die Möglichkeiten von Webstorm und GitHub Pages für ein automatisiertes Deployment.
+
+----
+{{tag>m293-LU10 m293-I1E}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Kevin Maurizi, Marcel Suter

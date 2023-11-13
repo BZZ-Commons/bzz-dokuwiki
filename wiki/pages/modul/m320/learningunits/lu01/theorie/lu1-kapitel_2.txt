@@ -1,0 +1,14 @@
+==== 2. Merkmale eines Objektes====
+Wie im [[.:lu1-kapitel_1|Beispiel 1.1]] zu erkennen ist, weist ein Objekt folgende Merkmale auf:
+  - Eigenschaften
+  - Fähigkeiten (Funktionen)
+  - Zustände
+
+Die **Eigenschaft**en werden durch **Attribute** repräsentiert.\\
+Die **Fähigkeit**en werden durch **Methoden** bzw. Funktionen/Prozeduren repräsentiert.\\
+Die **Zustände** ergeben sich aus den **aktuellen Werten** der Attribute.\\
+\\
+Für Eigenschaften werden typischerweise //Nomen// verwendet, also Groesse, Farbe, Alter usw. Bei den Fähigkeiten sind es //Verben// wie fahren, schliessen, einzahlen usw. Und bei den Zuständen //Adjektive// wie geschlossen, voll usw.
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) René Probst

@@ -1,0 +1,61 @@
+====== LU04d - Die map-Funktion in Python ======
+
+Die ''map''-Funktion ist eine eingebaute Funktion in Python, die verwendet wird, um eine bestimmte Funktion auf alle Elemente eines Iterables (z. B. eine Liste) anzuwenden. Die Syntax der `map`-Funktion ist wie folgt:
+
+<code python>
+  result = map(function, iterable)
+</code>
+
+  * **function**: Die Funktion, die auf jedes Element des Iterables angewendet werden soll.
+  * **iterable**: Das Iterable, auf das die Funktion angewendet werden soll.
+
+Das Ergebnis der `map`-Funktion ist ein neues Iterable, das die Ergebnisse der Funktion enthält.
+
+===== Beispiel =====
+
+Ein Beispiel für die Verwendung der ''map''-Funktion ist die Quadratur aller Elemente einer Liste:
+
+<code python>
+  numbers = [1, 2, 3, 4]
+  squares = map(lambda x: x**2, numbers)
+  print(list(squares))  # Output: [1, 4, 9, 16]
+</code>
+
+Oder ohne die Verwendung einer Lambda-Funktion.
+
+<code python>
+def square(number):
+    return number ** 2
+
+squares = map(square, [1, 2, 3, 4])
+print(list(squares))  # Output: [1, 4, 9, 16]
+</code>
+
+====== Vergleich mit List Comprehensions ======
+
+Die ''map''-Funktion hat viele Gemeinsamkeiten mit List Comprehensions, aber es gibt auch Unterschiede. 
+
+  * **Gemeinsamkeiten**:
+      - Beide können verwendet werden, um eine Funktion auf jedes Element eines Iterables anzuwenden.
+      - Beide erzeugen ein neues Iterable mit den transformierten Werten.
+
+  * **Unterschiede**:
+      - Die ''map''-Funktion gibt ein Map-Objekt zurück, das in eine Liste konvertiert werden muss, während List Comprehensions direkt eine Liste zurückgeben.
+      - List Comprehensions können auch Bedingungen enthalten, um Elemente zu filtern. Mit ''map'' muss dazu ''filter'' verwendet werden.
+      - Die Syntax unterscheidet sich: List Comprehensions verwenden eine kompakte eckige Klammer-Syntax, während ''map'' die Funktion und das Iterable als Parameter nimmt.
+
+===== Beispiel mit List Comprehension =====
+
+Das obige Beispiel mit der `map`-Funktion könnte auch mit einer List Comprehension geschrieben werden:
+
+<code python>
+  numbers = [1, 2, 3, 4]
+  squares = [x**2 for x in numbers]
+  print(squares)  # Output: [1, 4, 9, 16]
+</code>
+
+In vielen Fällen sind List Comprehensions die prägnantere und pythonischere Lösung. Sie bieten auch mehr Flexibilität, da sie auch Bedingungen zum Filtern enthalten können.
+
+----
+{{tag>M323-LU04}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/ch/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Kevin Maurizi 

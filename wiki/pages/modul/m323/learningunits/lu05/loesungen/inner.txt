@@ -1,0 +1,14 @@
+====== LU05.L06 - Finden Sie das Minimum und das Maximum ======
+
+{{gh>https://github.com/templates-python/m323-lu05-a06-inner/blob/solution/main.py}}
+
+===== Erklärung =====
+
+  * Die äußere Funktion ''find_min_max'' nimmt eine Liste von Zahlen als Argument.
+  * Zwei innere Funktionen, ''find_min'' und ''find_max'', werden innerhalb der äußeren Funktion definiert.
+  * ''find_min'' verwendet die eingebaute Python-Funktion ''min()'' zur Ermittlung des Minimums der Liste.
+  * ''find_max'' verwendet die eingebaute Python-Funktion ''max()'' zur Ermittlung des Maximums der Liste.
+  * Beide gefundenen Werte werden als Tupel zurückgegeben.
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/ch/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Kevin Maurizi 

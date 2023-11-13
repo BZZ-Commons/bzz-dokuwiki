@@ -1,0 +1,71 @@
+====== Lösungsvorschlag: Münzenspiel======
+<code java>
+import java.util.Scanner;
+ 
+/**
+ * play a game with coins
+ * 
+ * @author Marcel Suter
+ * @since 2018-09-28
+ * @version 1.0
+ */
+public class CoinGame{
+ 
+    static Scanner scanner;
+ 
+    /**
+     * constructor
+     */
+    public CoinGame() {
+        scanner = new Scanner(System.in);
+    }
+ 
+    /**
+     * starts the execution
+     * 
+     * @param args
+     *            command line arguments
+     */
+    public static void main(String[] args) {
+        CoinGame program = new CoinGame();
+ 
+        System.out.println("Willkommen zum Münzenspiel");
+        program.play();
+        System.out.println("Bis bald!");
+        scanner.close();
+    }
+ 
+    /**
+     * play the coin game
+     */
+    private void play() {
+        int coinRest;
+        int coinTake;
+        byte player = 1;
+        
+        coinRest = (int)(Math.random() * 20 + 10);  // generates a random number of coins
+        
+        while (coinRest > 0) {
+            System.out.println("Es sind noch " + coinRest + " Münzen auf dem Stapel");
+            System.out.print("Spieler " + player + " nimm 1-3 Münzen >") ;
+            coinTake = scanner.nextShort();
+            
+            if (coinTake < 1) {
+                System.out.println("Du musst mindestens 1 Münze nehmen");
+            } else {
+                if (coinTake > 3) {
+                    System.out.println("Du kannst höchstens 3 Münzen nehmen");
+                } else {
+                    coinRest = coinRest - coinTake;
+                    player = (byte) (3 - player);
+                    System.out.println("");
+                }
+            }
+        }
+        System.out.println("Spieler " + player + " hat verloren");
+    }
+}
+</code>
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Marcel Suter

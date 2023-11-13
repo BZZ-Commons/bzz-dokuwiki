@@ -1,0 +1,44 @@
+====== LU10.L03: Runtime & Debugger  ======
+
+===== Tests =====
+
+^ Test ^ Expected ^ Actual ^
+| test_1 | 15 | 0 |
+| test_2 | 0 | 0 |
+| test_3 | 11 | 0 |
+
+===== Debugger =====
+Der Fehler muss innerhalb der Iteration liegen.
+Daher setze ich einen Breakpoint auf die Zeile 9 und verfolge den Ablauf.
+
+{{:modul:m319python:learningunits:lu10:loesungen:lu10_debug_wrongdivider.png?600|}}
+
+Jedes mal wenn ich das Modulo neu berechne, halte ich die Werte für die Variablen fest:
+<WRAP center round info 60%>
+^ Berechnung SOLL ^ modulo ^ first_number ^ second_number ^ 
+| 8565 / 135 = 63 Rest 60 | 60 | 8565 | 135 |
+| 135 / 60 = 2 Rest 15 | 0 | 60 | 60 |
+</WRAP>
+
+Schon beim zweiten Schritt sehe ich ein Problem.
+Beide Variablen haben den gleichen Wert, weshalb immer **GGT=0** herauskommt.
+
+==== Korrektur ====
+Offenbar habe ich die beiden Variablen ''first_number'' und ''second_number'' durcheinander gebracht.
+Korrekt wäre:
+
+<code python>
+...
+    while second_number != 0:
+        modulo = first_number % second_number
+        first_number = second_number
+        second_number = modulo
+    print(str(first_number))
+...
+</code>
+
+==== Bonusfrage ====
+Wieso wird das Resultat von ''test_2'' immer noch als falsch angezeigt?
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

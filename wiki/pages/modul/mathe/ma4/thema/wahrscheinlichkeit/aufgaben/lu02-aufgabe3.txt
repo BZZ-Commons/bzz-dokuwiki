@@ -1,0 +1,30 @@
+==== Aufgabe 3 - Standardabweichung verstehen ====
+=== Auftrag ===
+**Theorie lesen**\\
+Lesen Sie die der Theorie [[https://www.mathsisfun.com/data/standard-deviation.html]] und beantworten Sie die Testfragen am Ende des Textes (fürs Verständnis).\\
+\\
+**Aufgabe 1**\\
+Laden Sie die Exel-Datei ''Aufgabe 1 Standardabweichung.xlsx'' und füllen Sie die blau hinterlegten Felder aus. Verwenden Sie dazu die Formeln von Excel!\\
+Gehen Sie wie folgt vor:
+  - bestimmen Sie den auf 2500.- Fr. gerundeten Wert (VRUNDEN) für jedes Auto.
+  - berechnen Sie Mittelwert (MITTELWERT), Median (MEDIAN) und Standardabweichung (STABW.S).
+  - erstellen Sie die Wertetabelle für die Gruppierung, beginnend bei 15'000 und setzen Sie diese Reihe fort, bis zum teuersten vorkommenden Auto. (automatisiert!)
+  - bestimmen Sie nun pro Wert der Gruppierung die Anzahl der Fahrzeuge. (ZÄHLENWENN)
+  - erstellen Sie das Diagramm mit der Gruppierung der Werte.
+  - legen Sie den Bereich für die Standardabweichung fest und bestimmen Sie die Anzahl Auto total und die Anzahl, die im Bereich der Standardabweichung liegen
+  - berechnen Sie nun den Prozentwert der Autos, die im Bereich der Standardabweichung liegen.
+  - begründen Sie allfällige Abweichnungen.
+
+
+\\
+**Aufgabe 2**\\
+  - kopieren Sie das Datenblatt ''Original'' und bezeichnen Sie es ''ohne Luxus''.
+  - entfernen Sie alle Autos über 100'000.- Fr. und verdichten Sie die Tabelle (umkopieren der Einträge, so dass keine Lücken entstehen).
+  - passen Sie wo nötig die Formeln an.
+  - vergleichen Sie das Ergebnis für die Autos im Bereich der Standardabweichung, insbesondere den Prozentwert mit den Originaldaten. Was fällt auf? Warum ist das so?
+\\
+**Aufgabe 3**\\
+  - kopieren Sie das Datenblatt ''ohne Luxus'' und bezeichnen Sie es ''bis 40k Cluster''.
+  - entfernen Sie alle Autos, die beim gruppierten Wert über 40'000.- Fr. liegen und verdichten Sie die Tabelle
+  - passen Sie wo nötig die Formeln an.
+  - vergleichen Sie das Ergebnis für die Autos im Bereich der Standardabweichung, insbesondere den Prozentwert mit den anderen beiden Auswertungen. Was fällt auf? Warum ist das so?

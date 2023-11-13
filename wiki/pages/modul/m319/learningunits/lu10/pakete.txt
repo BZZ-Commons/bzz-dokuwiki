@@ -1,0 +1,90 @@
+====== LU10c - Python-Pakete ======
+
+Angenommen, Sie haben eine sehr große Anwendung entwickelt, die viele Module enthält. Mit zunehmender Anzahl von Modulen wird es schwierig, den Überblick über sie alle zu behalten, wenn sie an einem Ort zusammengefasst werden. Dies gilt insbesondere, wenn sie ähnliche Namen oder Funktionen haben. Sie wünschen sich vielleicht eine Möglichkeit, sie zu gruppieren und zu organisieren.
+
+Pakete ermöglichen eine hierarchische Strukturierung des Modulnamensraums unter Verwendung der Punktnotation. Genauso wie Module helfen, Kollisionen zwischen den Namen globaler Variablen zu vermeiden, helfen Pakete, Kollisionen zwischen Modulnamen zu vermeiden.
+
+Das Erstellen eines Pakets ist recht einfach, da es sich die dem Betriebssystem innewohnende hierarchische Dateistruktur zunutze macht. Betrachten Sie die folgende Anordnung:
+{{:modul:m319python:learningunits:lu11:pkg1.9af1c7aea48f.png?200|}}
+Hier gibt es ein Verzeichnis namens ''pkg'', das zwei Module enthält, ''mod1.py'' und ''mod2.py''. Der Inhalt der Module ist:
+
+<WRAP center round box 60%>
+<file python mod1.py>
+def foo():
+    print('[mod1] foo()')
+
+class Foo:
+    pass
+</file>
+
+<file python mod2.py>
+def bar():
+    print('[mod2] bar()')
+
+class Bar:
+    pass
+</file>
+</WRAP>
+
+Wenn sich das ''pkg''-Verzeichnis an einem Ort befindet, an dem es gefunden werden kann (in einem der in ''sys.path'' enthaltenen Verzeichnisse), können Sie auf die beiden Module mit der Punktschreibweise (''pkg.mod1'', ''pkg.mod2'') verweisen und sie mit der Ihnen bereits bekannten Syntax importieren:
+
+<WRAP center round box 60%>
+<code python>
+import <module_name>[, <module_name> ...]
+</code>
+Bsp.:
+<code python>
+import pkg.mod1, pkg.mod2
+
+pkg.mod1.foo()
+#[mod1] foo()
+x = pkg.mod2.Bar()
+print(x)
+#<pkg.mod2.Bar object at 0x033F7290>
+</code>
+</WRAP>
+<WRAP center round box 60%>
+<code python>
+from <module_name> import <name(s)>
+</code>
+Bsp.:
+<code python>
+from pkg.mod1 import foo
+print(foo())
+#[mod1] foo()
+</code>
+</WRAP>
+<WRAP center round box 60%>
+<code python>
+from <module_name> import <name> as <alt_name>
+</code>
+Bsp.:
+<code python>
+from pkg.mod2 import Bar as Qux
+
+x = Qux()
+print(x)
+#<pkg.mod2.Bar object at 0x036DFFD0>
+</code>
+</WRAP>
+Sie können auch Module mit diesen Anweisungen importieren:
+<WRAP center round box 60%>
+<code python>
+from <package_name> import <modules_name>[, <module_name> ...]
+from <package_name> import <module_name> as <alt_name>
+</code>
+Bsp.:
+<code python>
+from pkg import mod1
+
+mod1.foo()
+#[mod1] foo()
+
+from pkg import mod2 as quux
+quux.bar()
+#[mod2] bar()
+</code>
+</WRAP>
+
+----
+Inhalt von [[https://realpython.com/python-modules-packages/#python-packages|RealPython]]

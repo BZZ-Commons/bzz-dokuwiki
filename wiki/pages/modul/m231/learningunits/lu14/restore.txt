@@ -1,0 +1,30 @@
+====== LU14c - Restore ======
+
+
+===== Varianten von Restore =====
+
+Bei der Wiederherstellung (Restore) von Daten gibt es verschiedene Varianten, abhängig von den Backup-Mechanismen und der Art des Datenverlusts.
+
+  * Vollständige Wiederherstellung (Full Restore)
+Bei der vollständigen Wiederherstellung werden alle gesicherten Daten von einem Vollbackup zurückgespielt. Diese Methode wird verwendet, wenn alle Daten verloren oder beschädigt wurden und eine vollständige Rückkehr zum letzten Vollbackup erforderlich ist. Der Wiederherstellungsprozess erfordert in der Regel weniger Zeit und Aufwand, da alle benötigten Daten in einem Backup vorhanden sind.
+
+  * Differentielle Wiederherstellung (Differential Restore)
+Die differentielle Wiederherstellung erfolgt in Kombination mit einem Vollbackup und differentiellen Backups. Zuerst wird das letzte Vollbackup zurückgespielt, gefolgt von den Änderungen aus den differentiellen Backups seit dem letzten Vollbackup. Dies ermöglicht die Wiederherstellung der Daten, die seit dem letzten Vollbackup geändert wurden. Die differentielle Wiederherstellung erfordert mehr Zeit für die Wiederherstellung als die vollständige Wiederherstellung, da nebst dem letzten Vollbackup auch noch alle nachträglichen differentiellen Backups berücksichtigt werden müssen.
+
+  * Inkrementelle Wiederherstellung (Incremental Restore)
+Die inkrementelle Wiederherstellung erfolgt in Kombination mit einem Vollbackup und inkrementellen Backups. Zuerst wird das letzte Vollbackup wiederhergestellt, gefolgt von den Änderungen aus den inkrementellen Backups seit dem letzten Backup (unabhängig davon, ob es sich um ein Voll- oder inkrementelles Backup handelt). Die inkrementelle Wiederherstellung erfordert mehr Zeit und Aufwand als die differentielle Wiederherstellung, da möglicherweise mehrere inkrementelle Backups kombiniert werden müssen.
+
+  * Selektive Wiederherstellung
+Die selektive Wiederherstellung bezieht sich auf das selektive Zurückspielen bestimmter Dateien oder Verzeichnisse aus einem Backup. Statt das gesamte Backup wiederherzustellen, können gezielt nur die benötigten Daten ausgewählt und wiederhergestellt werden. Dies ermöglicht eine effiziente Nutzung von Speicherplatz und verkürzt die Wiederherstellungszeit.
+
+\\
+
+Die Wahl der Wiederherstellungsvariante hängt von der Art des Datenverlusts, der verfügbaren Backup-Strategie und den spezifischen Anforderungen der Organisation ab. Ein effektiver Wiederherstellungsplan berücksichtigt die verschiedenen Backup-Typen und stellt sicher, dass die Wiederherstellung so schnell und effizient wie möglich erfolgt, um die Ausfallzeit zu minimieren und den Geschäftsbetrieb wiederherzustellen.
+
+
+----
+
+{{tag>m231-AnG}}
+
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter, Andre Probst
+

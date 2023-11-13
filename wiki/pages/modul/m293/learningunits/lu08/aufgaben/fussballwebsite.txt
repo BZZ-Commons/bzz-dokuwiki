@@ -1,0 +1,65 @@
+====== LU08.A02 - Fussballwebsite ======
+
+<WRAP center round todo 60%>
+Erstellen Sie eine Webseite mir 4 Unterseiten für den 1 FC Hinterforst.
+</WRAP>
+
+==== Vorgehen ====
+  - Akzeptieren Sie das GitHub Classroom Assignment für die LU08.A02
+  - Klonen Sie das Repository.
+  - Beginnen Sie die HTML-Webseite in der Datei ''/index.html''.
+  - Halten Sie sich an die Vorgaben
+  - Validieren Sie Ihren HTML-Code auf Einhaltung der Standards.
+  - Geben Sie Ihre Lösung mittels Push ins Repository ab.
+
+==== Vorgaben ====
+
+
+Der 1. FC Hinterforst ist ein Fußballverein mit langer Tradition. Gegründet in der kleinen Gemeinde Hinterforst, hat der Verein eine lange Geschichte von sportlichen Erfolgen, sozialer Integration und Gemeinschaftsgeist. Der Verein benötigt nun eine neue Webseite, um seine Präsenz im digitalen Zeitalter zu stärken und die Gemeinschaft weiterhin zu fördern.
+
+**1. Home**
+
+Die Homepage dient als Einstiegspunkt und enthält einen Überblick über den Verein. Sie beginnt mit einer herzlichen Begrüßung und einer kurzen Beschreibung des Vereins, seiner Geschichte und seiner Vision. Besondere Aufmerksamkeit gilt den Höhepunkten und Erfolgen des Vereins, inklusive Bildmaterial, das die emotionalen Momente und Feiern einfängt.
+
+Darunter folgt ein Abschnitt mit aktuellen Nachrichten und Updates, um Besucher auf dem neuesten Stand zu halten. Schließlich rundet eine Vorschau der kommenden Spiele und Veranstaltungen die Homepage ab, gefolgt von einer Einladung, sich den Spielen anzuschließen oder den Verein zu unterstützen.
+
+**2. Spiele**
+
+Die "Spiele"-Seite enthält eine detaillierte Liste der kommenden und vergangenen Spiele. Jedes Spiel wird mit Datum, Uhrzeit, Ort, Gegner und Ergebnis (falls bereits gespielt) aufgeführt. Die bevorstehenden Spiele haben auch einen Link, um Tickets zu kaufen oder Anfahrtsinformationen zu erhalten.
+
+Zusätzlich gibt es eine Spielberichts-Sektion für jedes vergangene Spiel. Diese Spielberichte enthalten eine Zusammenfassung des Spiels, Höhepunkte, Fotos und Interviews mit Spielern und Trainern. Nutzer können Kommentare zu den Spielberichten hinterlassen, um ihre Meinungen und Unterstützung auszudrücken.
+
+**3. Sponsoren**
+
+Die "Sponsoren"-Seite würdigt die Unternehmen und Einzelpersonen, die den 1FC Hinterforst unterstützen. Jeder Sponsor wird mit Logo (wenn vorhanden), Name, Kurzbeschreibung und Link zur Website vorgestellt. Es gibt auch eine kurze Beschreibung der Partnerschaft und wie sie den Verein unterstützt.
+
+Darüber hinaus enthält die Seite Informationen darüber, wie man Sponsor werden kann. Dazu gehören die verschiedenen Sponsoring-Pakete, die angeboten werden, und die Vorteile, die sie bieten, sowie Kontaktinformationen für Interessierte.
+
+**4. Kontakt**
+
+Die "Kontakt"-Seite bietet verschiedene Möglichkeiten, mit dem Verein in Kontakt zu treten. Sie enthält eine Liste der wichtigsten Ansprechpartner im Verein mit ihren jeweiligen Kontaktdaten und Verantwortungsbereichen.
+
+Darüber hinaus gibt es ein Kontaktformular, das Besucher ausfüllen können, um allgemeine Anfragen zu stellen, Feedback zu geben oder Unterstützung zu benötigen. Neben dem Formular stehen die Adresse des Vereins, Anfahrtsinformationen zum Vereinsgelände und Links zu den sozialen Medien des Vereins.
+
+Die Webseite soll so gestaltet werden, dass sie das Gemeinschaftsgefühl des 1. FC Hinterforst widerspiegelt und den Besuchern eine einladende und informative Erfahrung bietet.
+
+<WRAP center round tip 60%>
+Seien Sie kreativ, lassen Sie sich die Texte zu den Spielern, Tournieren etc. von ChatGPT generieren. 
+
+Wenn Sie Fotos von Personen brauchen holen Sie sich diese hier: https://thispersondoesnotexist.com (reload required)
+
+Wenn Sie andere Fotos brauchen lassen Sie sie sich generieren mit beispielsweise einem der folgenden Tools:
+  * Midjouney: https://discord.gg/midjourney
+  * BlueWillow: https://discord.com/invite/bluewillow
+  * Online Stable Diffusion: https://stablediffusionweb.com/
+  * etc...
+</WRAP>
+
+
+
+
+
+----
+<nodisp>[[https://github.com/templates-html/M293_LU08_02_football|Repository]]</nodisp>
+{{tag>m293-LU08}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Kevin Maurizi, Marcel Suter

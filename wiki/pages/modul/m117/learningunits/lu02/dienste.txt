@@ -1,0 +1,23 @@
+====== LU02d - Netzwerkdienste ======
+
+Netzwerkdienste sind bestimmte Funktionen, die auf einem zentralen Server laufen, aber von den Arbeitsplatzsystemen (Clients) benötigt werden. Dank der «Zentralisierung» solcher Funktionen muss nicht auf jedem einzelnen Client diese Funktion betrieben werden. Anbei eine kleine Auswahl «klassischer» Netzwerkdienste:
+
+^ Dienst                   ^ Beschreibung                                                          ^ Beispiel                        ^
+| **Dateiübertragung (FTP)** | Ermöglicht die Übertragung von Dateien über ein Netzwerk. Benutzer können Dateien von einem Server herunterladen oder auf einen Server hochladen. | FileZilla: Ein FTP-Client zum Hochladen und Herunterladen von Dateien. |
+| **E-Mail (SMTP/IMAP/POP3)** | Dienste für das Senden (SMTP) und Empfangen (IMAP/POP3) von E-Mails. SMTP sendet E-Mails, während IMAP/POP3 E-Mails auf dem Server speichert oder herunterlädt. | Microsoft Outlook: E-Mail-Client für das Senden und Empfangen von E-Mails. |
+| **Webseiten (HTTP/HTTPS)** | HTTP ermöglicht den Zugriff auf Webseiten, während HTTPS eine verschlüsselte Verbindung für sicheres Browsen bereitstellt. | Google Chrome: Ein Webbrowser zum Anzeigen von HTTP/HTTPS-Webseiten. |
+| **Domain Name System (DNS)** | Übersetzt menschenfreundliche Domainnamen in IP-Adressen, die von Computern verwendet werden. | nslookup: Ein Befehlszeilen-Tool zum Abfragen von DNS-Einträgen. |
+| **Netzwerkzeit (NTP)** | Synchronisiert die Zeit auf Computern im Netzwerk, um sicherzustellen, dass sie alle die gleiche Uhrzeit haben. | ntpd: Ein Dienst zum Synchronisieren der Systemzeit auf Computern. |
+| **Remotezugriff (SSH)** | Bietet sichere Fernzugriffsmöglichkeiten auf entfernte Computer. Ermöglicht die Verwaltung und Ausführung von Befehlen über eine verschlüsselte Verbindung. | OpenSSH: Ein Open-Source-Toolkit für den SSH-Remotezugriff. |
+| **Druckdienste (LPD)** | Erlaubt das Drucken von Dokumenten über ein Netzwerk auf entfernten Druckern. | CUPS: Ein weit verbreitetes Drucksystem, das LPD-Protokoll unterstützt. |
+| **Instant Messaging (XMPP)** | Ermöglicht Echtzeitkommunikation über Textnachrichten zwischen Benutzern in einem Netzwerk. | Jabber (jetzt Teil von XMPP): Ein offenes Protokoll für Instant Messaging. |
+| **Dynamic Host Configuration Protocol (DHCP)** | Automatisiert die Zuweisung von IP-Adressen an Geräte in einem Netzwerk und erleichtert die Netzwerkkonfiguration. | DHCP-Server in Routern oder Servern, die automatisch IP-Adressen zuweisen. |
+| **Verzeichnisdienst (LDAP)** | Organisiert und verwaltet Informationen über Netzwerkressourcen wie Benutzer, Gruppen und Geräte. | Microsoft Active Directory: Verzeichnisdienst für die Verwaltung von Netzwerkinformationen. |
+
+
+
+----
+
+{{tag>m117}}
+
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Andre Probst

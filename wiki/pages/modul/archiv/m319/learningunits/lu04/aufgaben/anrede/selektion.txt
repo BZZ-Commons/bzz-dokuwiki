@@ -1,0 +1,33 @@
+===== Selektion realisieren =====
+
+=== Einleitung ===
+Mit Selektionen können wir den Ablauf unseres Programms steuern.
+Abhängig von einer Bedingung wird ein Block von Befehlen ausgeführt oder nicht.
+
+== Zur Erinnerung ==
+  * Das Schlüsselwort für eine Selektion ist ''if''.
+  * Die Bedingung **muss** in runden Klammern geschrieben werden.
+  * Alle Befehle die zu einem Programmblock gehören, werden mit geschweiften Klammern eingefasst.
+  * Mit dem optionalen Schlüsselwort ''else'' wird ein alternativer Programmblock eingeleitet. Dieser Block wird ausgeführt, wenn die Bedingung **nicht** erfüllt ist.
+    * ''else'' hat **keine** Bedingung.
+
+<code java>
+if (variable == wert) {
+  befehl
+  befehl
+} else {
+  befehl
+}
+</code>
+
+=== Auftrag ===
+Realisieren Sie die Selektion im Programm.
+
+== Vorgehen ==
+  - Ersetzen Sie die Kommentare (TODO-3) für ''Falls'' und ''Sonst'' durch die korrekten Befehle.
+  - Fassen Sie die beiden Programmblöcke mit den Ausgaben in geschweiften Klammern ein.
+  - Kompilieren Sie das Programm und korrigieren Sie allfällige Fehler.
+  - Führen Sie das Programm aus; Sie erhalten nun die korrekten Anreden für Weiblich und Männlich.
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Marcel Suter

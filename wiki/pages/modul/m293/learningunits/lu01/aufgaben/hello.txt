@@ -1,0 +1,46 @@
+====== LU01.A01 - Hello World ======
+<WRAP center round todo 60%>
+Erstellen Sie eine einfache Webseite, die den Text "Hello World" anzeigt.
+</WRAP>
+
+===== Vorgehen =====
+==== 1. Neues Projekt ====
+Erstellen Sie ein neues, leeres Projekt mit dem Namen "M293_LU01".
+
+{{:modul:m293:learningunits:lu01:aufgaben:newproject.png?400|}}
+
+==== 2. Neue HTML-Datei ====
+Erstellen Sie im Projekt eine neue HTML5-Datei mit den Namen "HelloWorld.html".
+Sie werden feststellen, dass Webstorm schon einige Codezeilen für das HTML-Grundgerüst in die Datei einfügt:
+
+<code html>
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8'>
+    <title>Title</title>
+  </head>
+  <body>
+
+  </body>
+</html>
+</code>
+Was die einzelnen Zeilen bewirken, werden wir in der nächsten Learning Unit anschauen.
+
+==== 3. Text ausgeben ====
+  * Fügen Sie den Text ''Hello World'' zwischen die beiden Zeilen ''<body>'' und ''</body>'' ein.  
+
+==== 4. Seite anzeigen ====
+Um das Resultat Ihrer Arbeit anzuzeigen, müssen Sie die Datei in einem Webbrowser öffnen.
+Dazu gibt es verschiedene Möglichkeiten:
+
+| Browser-Symbol oben rechts im Editor-Fenster | {{:modul:m293:learningunits:lu01:aufgaben:openbrowser.png?400|}} |
+| Rechts-Klick auf die HTML-Datei => Run 'HelloWorld.html' ((Evtl. werden Sie gefragt, ob Sie dieser Webseite trauen. Klicken Sie auf [Trust])) | {{:modul:m293:learningunits:lu01:aufgaben:runhelloworld.png?400|}} |
+| Doppelklick auf die Datei im Datei Explorer | |
+
+{{:modul:m293:learningunits:lu01:aufgaben:browserhelloworld.png?300|}}
+
+==== 5. Title anpassen ====
+Der Tab im Webbrowser zeigt den Titel der Seite an: ''Title''.
+Das ist wenig aussagekräftig.
+Passen Sie Ihre HTML-Datei so an, dass der Titel ''Hello'' angezeigt wird.

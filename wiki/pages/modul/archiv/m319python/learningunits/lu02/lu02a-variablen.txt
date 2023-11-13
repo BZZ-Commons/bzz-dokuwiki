@@ -1,0 +1,95 @@
+====== LU02a - Variable und konstante Werte ======
+===== Was sind Konstanten? =====
+Eine Konstante ist ein bestimmter Wert, der während des ganzen Ablaufs immer gleich bleibt. 
+In einigen Literaturen wird eine Konstante auch mit einer Read-Only-Variablen verglichen.
+
+Bei einem Fussballspiel erhält der Sieger 3 Punkte.
+Wenn sie ein Programm schreiben, das die Rangliste führt, wird dieser Wert immer gleich bleiben. 
+Ebenso ist die Punktzahl für Niederlagen (0) oder für Unentschieden (beide Teams 1 Punkt) konstant, also gleichbleibend.
+
+Neben Zahlen können auch Texte als Konstanten vorkommen.
+
+=== Beispiele von Konstanten ===
+  * 3 + 4
+  * "Hallo Benutzer"
+  * "15.09.2010"
+
+Textkonstanten werden zwischen Anführungs- und Schlusszeichen gesetzt.
+Dadurch legen sie fest, dass es sich um einen Text handelt und nicht um den Namen einer Variable (siehe unten).
+
+| "Benutzer" | Eine Textkonstante |
+| Benutzer | Eine Variable mit dem Namen ''Benutzer'' |
+
+
+== Codebeispiel ==
+<code vb>
+INPUT "Kreisradius?", radius
+umfang = radius * 2 * 3.1415
+PRINT "Der Umfang ist: " & umfang
+</code>
+
+Dieses Programm hat zwei Variablen:
+  * ''radius'' : Diese Variable speichert die Eingabe (''INPUT'') des Benutzers.
+  * ''umfang'' : Der Wert dieser Variable vom Programm berechnet wird.
+
+Das Programm hat vier Konstanten:
+  * ''2'' und ''3.1415'' sind Zahl-Konstanten.
+  * ''"Kreisradius?"'' und ''"Der Umfang ist: "'' sind Text-Konstanten.
+
+== Übung ==
+Notieren sie sich ihre vollständige Personalien & weitere Angaben auf ein Papier \\
+--> Name, Vorname, Geburtsdatum, Geschlecht, Adresse, Telefonnummern, Mailadresse, Konfession, Grösse, Gewicht, Haarfarbe, Augenfarbe
+
+Markieren sie nun alle Werte, welche als konstant angesehen werden können (ohne operative Eingriffe zu berücksichtigen)
+
+===== Was sind Variablen? =====
+Variablen verändern ihren Wert während des Ablaufs.
+Sie stellen eine Art Gedächtnis dar, in dem Benutzereingaben oder Summen gespeichert werden.
+Eine Variable erhält einen Namen, den sie frei wählen können.
+Dabei sollte der Name möglichst aussagekräftig (sprechend) sein.
+
+Vier Aspekte von Variablen:
+  * Name der Variable (Bezeichner)
+  * Speicherplatz
+  * Adresse des Speicherplatz
+  * Daten (Wert, Inhalt)
+
+Aus der Algebra kennen sie Variablen, die mit jeweils einem Buchstaben bezeichnet werden.
+Damit man weiss, welche Variable für welchen Wert steht, muss man jeweils eine Legende schreiben. Dies ist möglich solange man nur wenige Variablen hat.
+In der Programmierung schreiben sie häufig Programme mit vielen Variablen. 
+Es ist daher ein schlechter Programmierstil, Variablen mit so kurzen Namen zu verwenden.
+
+=== Vergleich Algebra / Programm ===
+Der Umfang eines Rechtecks bestimmt sich durch seine Länge und Breite.
+| Algebra: | u = 2l + 2b |
+| Programm: | umfang = 2*laenge + 2*breite |
+
+===== Variablen im Programmablauf =====
+Variablen dienen als Gedächtnis des Programms. Nur mit Hilfe von Variablen kann sich das Programm Daten "merken" und Verarbeitungen mit diesen Daten durchführen.
+Einige Beispiele was sich ein Programm alles "merken" muss:
+  * Eingaben des Benutzers
+  * Zwischenresultate
+  * Zähler
+  * Zusammengesetzte Texte
+  * Ob das Ergebnis einer Bedingung wahr oder falsch war
+
+=== Literale ===
+Ein Literal ist eine Konstante, der wir einen Bezeichner (Namen) zuordnen.
+Anstatt im Code immer wieder den Wert der Konstante zu schreiben, 
+können wir einen kürzeren und sprechenderen Bezeichner einsetzen.
+
+<code vba>
+var PI = 3.1415927    // Konstante mit Bezeichner und Wert
+
+umfang = radius * 2 * PI;
+flaeche = radius * radius * PI;
+</code>
+ 
+<WRAP center round tip 60%>
+Konstanten werden in der Fachliteratur auch als **Literale** bezeichnet.
+</WRAP>
+
+
+----
+{{tag>M319-B3G M319-B1G M319-B3E}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Marcel Suter, Kevin Maurizi

@@ -1,0 +1,25 @@
+====== LU06.A13: Bank loan ======
+
+Eine Bank bietet einem Kunden einen Kredit an, wenn er mindestens 21 Jahre alt ist und ein Jahreseinkommen von mindestens CHF 48'000  hat. 
+
+Schreiben Sie ein Programm das den Kunden nach Alter und Einkommen fragt. Ist es der Bank möglich dem Kunden einen Kredit anzubietenm, soll der Text ''Wir sind in der Lage, Ihnen einen Kredit anzubieten.'' am Bildschirm angezeigt werden. Andernfalls soll dem Kunden ''Leider können wir Ihnen zur Zeit keinen Kredit anbieten.'' angezeigt werden.
+
+
+===== Vorlage =====
+<code python>
+def main():
+  # Write your program here
+
+if __name__ == '__main__':
+    main()
+</code>
+
+Anmerkung: Kümmern Sie sich im Moment nicht zu sehr um ''if %%__%%name%%__%% == '%%__%%main%%__'%%:''. Wir brauchen es technisch gesehen nicht für dieses Programm, aber es ist eine gute Übung, es einzubauen, und es wird in späteren Übungen klarer werden.
+
+----
+{{tag>M319-F3G M319-F3F M319-F3E M319-F1F M319-F1E}}
+
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/ch/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Kevin Maurizi 
+
+Diese Aufgabe ist eine übersetzte und angepasste Aufgabe von [[https://scott3142.uk/|Scott Morgan]], verwendet unter CC BY NC SA.
+

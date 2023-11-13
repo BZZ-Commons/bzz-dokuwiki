@@ -1,0 +1,102 @@
+==== 2. Arten der Benutzerinteraktion ====
+<html><span style="font-size:8px">(Auszug aus [Effektive Software-Architektur, Gernot Starke, hanser Verlag])</span></html>\\
+Grafische Benutzeroberflächen (GUI) bieten im Vergleich zu alphanumerischen Benutzerschnittstellen viele Gestaltungsmöglichkeiten. Dies betrifft sowohl die Arbeitsabläufe als auch die Art der Darstellung. 
+In diesem Kapitel werden Aspekte des Arbeitsablaufs bei Benutzeroberflächen vorgestellt: 
+   * Arbeitsmetaphern veranschaulichen die Struktur von Arbeitsabläufen.
+   * Interaktionsstile bestimmen die Art der grafischen Darstellung.
+\\
+<WRAP column 48%>
+^   Arbeitsmetapher    ^
+Metaphern bieten uns Bilder aus der wirklichen Welt an, um die Struktur von Arbeitsabläufen und Anwender-Interaktionen zu veranschaulichen Dabei deckt eine Metapher nicht immer alle Anwendungsfälle eines Systems ab. Das Gesamtsystem stellt eine ausgewogene Mischung einzelner Metaphern dar.
+</WRAP>
+<WRAP column 48%>
+^   Interaktionsstile   ^
+Interaktionsstile strukturieren den Arbeitsablauf im System. Sie geben die Anzahl der Freiheitsgrade vor, mit denen der Benutzer im System navigieren kann und sie beeinflussen die grafische Darstellung der zu bearbeitenden Daten. Einzelne Interaktionsstile korrespondieren mit zugehörigen Arbeitsmetaphern.
+</WRAP>
+<WRAP clear></WRAP>
+
+<WRAP column 48%>
+**Fabrik-Metapher**\\
+In der Fabrik erfolgt ein Arbeitsschritt nach dem anderen. Das Ausgangsprodukt eines Bearbeitungsschrittes wird zum Eingangsprodukt des nächsten Arbeitsschrittes. Die Produktionsbänder einer Fabrik können sich verzweigen und wieder vereinigen. Jedes Produkt folgt jedoch nur einem Weg vom Ausgangsprodukt zum Endprodukt. Auf diesem Weg ist die Reihenfolge der Arbeitsschritte fest vorgegeben.\\ 
+{{:modul:m322:learningunits:lu01:theorie:lu01-design-metapher1.png?500|}}\\
+//Abb. 1-2: Fabrik-Metapher//\\
+Häufig gibt es zwischen den einzelnen Schritten eine Qualitätskontrolle, die bisherige Ergebnisse überprüft und fehlerhafte Zwischenergebnisse ablehnt. Sind alle Arbeitsschritte durchlaufen, so liegt ein fertiges Produkt vor.\\ Der Arbeitsablauf folgt starren Regeln. Abkürzungen auf dem Weg zum gewünschten Endprodukt sind in der Regel nicht möglich. Die starre Vorgabe begünstigt eine leichte Erlernbarkeit der Arbeitsschritte und führt zu einem hohen Durchsatz. Die Arbeit des einzelnen Anwenders ist auf effiziente Massenverarbeitung ausgerichtet und in der Regel wenig kreativ. Die Fabrik-Metapher ist passend für Systeme, die
+   * selten verwendet werden und ihre Nutzer daher an den Arbeitsablauf „erinnern“ müssen;
+   * von Anwendern benutzt werden, die nur wenig Erfahrung im Umgang mit EDV-Systemen haben;
+   * Massendaten verarbeiten oder
+   * einen stark sequentiellen Arbeitsablauf haben (etwa Internet-Shop)
+</WRAP>
+<WRAP column 48%>
+**Frage-Antwort-Interaktionsstil**\\
+<WRAP left>
+{{:modul:m322:learningunits:lu01:theorie:lu01-design-interaktion1.png?200|}}\\
+//Abb. 1-3: Frage-Antwort-GUI//
+</WRAP>
+Das System folgt einem fest vorgegebenen, sequentiellen Arbeitsablauf. Der Benutzer wird durch einfache Eingabe-Masken geführt, die einen Anwendungsfall abbilden.\\ Diese Arbeitsweise entspricht dem Verhalten von
+   * Host-Anwendungen: Maskeneingabe - Datenfreigabe - Maskenantwort ...
+   * HTML-Internet-Anwendungen: Aufruf einer Seite - Aktion - Antwort. 
+   * Assistenten (Wizards) innerhalb einer Anwendung: Navigation nur mit" Vor", "Zurück" und "Abbrechen" möglich
+Beispiele für derartige Oberflächen sind Internet-Shops oder Assistenten zum Erstellen von Software-Komponenten, die in vielen Software-Entwicklungsumgebungen vorhanden sind. Solche Anwendungsfälle verwenden die Fabrik-Arbeitsmetapher.\\
+Der Einsatz dieses Interaktionsstils ist immer dann vorteilhaft, wenn der Benutzer stark angeleitet werden soll und die Aufgaben formalisiert sind. Im Gegenzug führt eine derartige Benutzerschnittstelle zu einer geringeren Flexibilität innerhalb der Anwendung. Das System passt sich der Arbeitsweise der Anwender //nicht// an.\\
+Manchmal zwingen auch die eingeschränkten Ressourcen der Laufzeitumgebung zur Verwendung einer derartigen Oberfläche, obwohl sie für das Einsatzgebiet nicht passend ist. Dies kann z.B. bei Mikro-Systemen wie Mobiltelefonen der Fall sein, welche nur über ein sehr kleines Display verfügen und keine externen Zeigegeräte wie eine Maus besitzen.\\
+</WRAP>
+<WRAP clear></WRAP>
+
+<WRAP column 48%>
+**Werkzeug-Material-Metapher**\\
+Das Leitbild dieser Metapher ist ein Arbeitsplatz für qualifizierte Tätigkeiten, bei denen der Mensch im Mittelpunkt steht. Das Umfeld setzt die entsprechende Qualifikation zur Bewältigung der Aufgaben voraus. Die Arbeitsumgebung ist auf individuelle Arbeitsschwerpunkte und Erfahrung des Einzelnen hin anpassbar. Die fachlichen Konzepte sind klar erkennbar und unterstützen kreative Arbeit und komplexe Tätigkeiten.\\
+{{:modul:m322:learningunits:lu01:theorie:lu01-design-metapher2.png?400|}}\\
+//Abb. 1-4: Werkzeug-Material-Metapher//\\
+Der Arbeitsablauf ist wenig strukturiert. Viele Kombinationsmöglichkeiten von Werkzeug und Material sowie eine beliebige Reihenfolge der Arbeitsschritte erlauben unterschiedliche Wege zum Ziel. In der Domäne werden Werkzeuge, Material und der Verwendungszusammenhang unterschieden. Diese entsprechen den Arbeitsmitteln, den Arbeitsgegenständen und den Tätigkeiten. Eine Tätigkeit besteht in der Anwendung eines Werkzeugs auf das zu bearbeitende Material. Die Prüfung der Arbeitsergebnisse kann implizit nach Anwendung eines Arbeitsschrittes erfolgen, oder explizit auf Anforderung des Bearbeiters.\\
+Die Werkzeug-Material-Metapher eignet sich für Anwendungen, die
+   * unterschiedliche Arbeitsabläufe für gleichartige Aufgaben abbilden;
+   * kreative Tätigkeiten durch eine Vielzahl von Wahlmöglichkeiten unterstützen (beispielsweise Bildbearbeitung);
+   * von Experten benutzt werden, die das System entsprechend ihrer individuellen Fähigkeiten optimal nutzen möchten.
+</WRAP>
+<WRAP column 48%>
+**Objektorientierter Interaktionsstil**\\
+<WRAP left>
+{{:modul:m322:learningunits:lu01:theorie:lu01-design-interaktion2.png?250|}}\\
+//Abb. 1-5: Objektorientiertes GUI//
+</WRAP>
+In einer objektorientierten Oberfläche  wählt der Anwender zunächst ein Objekt aus und bearbeitet es anschliessend. \\
+Die Auswahl der Bearbeitungsschritte erfolgt auch visuell oft nah am Objekt, z.B. mit Hilfe eines Kontext-Menüs.\\
+Beispiele für Anwendungen dieses Oberflächen-Typs sind Vektorgrafik-Programme, Textverarbeitungs-Systeme oder digitale Audio-Anwendungen.\\
+Objektorientierte Oberflächen sind besonders geeignet für Anwendungen mit grafisch repräsentierbaren Daten. Die Arbeitsweise der Programme orientiert sich an der Werkzeug-Material-Metapher.
+</WRAP>
+<WRAP clear></WRAP>
+
+<WRAP column 48%>
+**Formular-Metapher**\\
+<WRAP left>
+{{:modul:m322:learningunits:lu01:theorie:lu01-design-metapher3.png?200|}}\\
+//Abb. 1-6: Formular-Metapher//
+</WRAP>
+Ein Formular enthält eine Vielzahl von Daten, die in verdichteter Form dargestellt werden.\\
+Zum Ausfüllen eines Formulars ist häufig Expertenwissen über verwendete Abkürzungen, Schlüsselbegriffe und die Reihenfolge der Bearbeitung erforderlich. Die Daten werden überwiegend als Text dargestellt.\\
+Beispiele für derartige Formulare sind Versicherungsanträge, Steuererklärungen, Schadensanzeigen etc.\\
+Die Formular-Metapher ist für Anwendungen geeignet, die
+   * Textdaten zur Erfassung, Bearbeitung und Ansicht bereitstellen;
+   * Auf effiziente Bearbeitung einer Vielzahl von Daten ausgerichtet sind.
+</WRAP>
+<WRAP column 48%>
+**Formularbasierter Interaktionsstil**\\
+<WRAP left>
+{{:modul:m322:learningunits:lu01:theorie:lu01-design-interaktion3.png?250|}}\\
+//Abb. 1-7: Formularbasiertes GUI//
+</WRAP>
+Formularbasierte Oberflächen stellen ihre Anwendungsdaten ausschliesslich als Text dar.  Die Daten werden meist als Freitext eingegeben, oder aus einer Menge vorgegebener Alter-nativen ausgewählt (Combo-Boxen, Listen, Radio-Buttons oder Check-Boxen) Viele derartige System folgen dem Muster
+   * Suche Daten;
+   * Stelle Suchergebnis als Tabelle dar;
+   * Wähle Datensatz aus (Ansicht, Bearbeiten, Löschen).
+Derartige Systeme basieren auf der Formular-Metapher (z.B. Recherche-Abfrage-Systeme, kommerzielle Informationssysteme  etc.).\\
+Wird die Anwendung von Experten benutzt, so können einzelne Masken sehr viele Felder beinhalten  und damit zunächst unübersichtlich wirken. Sie erinnern an Papierformulare oder Host-Masken mit einer Fülle von Eingabefeldern und Shortcuts. Für geübte Anwender ist eine derart komprimierte Eingabe jedoch wesentlich ergonomischer als der (umständli-chere) Umgang mit Kontext-Menüs und Zusatzdialogen.\\
+Masken mit einer grossen Informationsfülle sollten mit Hilfe von Shortcuts und einer geeig-neten Tabulatorsteuerung “Maus los“ bedienbar sein.
+</WRAP>
+<WRAP clear></WRAP>
+
+
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) René Probst

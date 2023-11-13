@@ -1,0 +1,36 @@
+====== LU05.A03 - Gartenzaun ======
+Sie können Ihre Lösungen mit [[https://www.cryptool.org/de/cto/railfence]] überprüfen.
+
+===== Hilfsmittel =====
+  * Papier und Schreibmaterial
+  * Dokument "Hilfsblätter"
+
+===== Aufgaben =====
+
+== Hinweise ==
+Verwenden Sie im Chiffretext ausschliesslich Grossbuchstaben.
+Lassen Sie Leerzeichen und Satzzeichen weg.
+
+==== Verschlüsseln ====
+Verschlüsseln Sie den Klartext mit dem Gartenzaun-Verfahren.
+
+  * Klartext: **Haensel und Gretel verirrten sich im Wald.**
+  * Schlüssel: 3
+
+  * Klartext: **Diese Nachricht ist geheim**
+  * Schlüssel: 5
+
+==== Entschlüsseln ====
+
+Entschlüsseln Sie den Chiffretext mit dem Gartenzaun-Verfahren.
+
+  * Chiffretext: **HSCREITSHETUEENONATIEG**
+  * Schlüssel: **4**
+
+  * Chiffretext: **DEAKISTNLSPFEIOOBNNHEY**
+  * Schlüssel: **7**
+
+
+----
+{{tag>m114-A0G}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

@@ -1,0 +1,20 @@
+=== Gesetze der boolschen Algebra ===
+\\
+<WRAP left>
+|                        |   ODER-Operation                                                       |¦|   UND-Operation  |
+|**Kommutativgesetz: **  | A \(\vee\) B = B \(\vee\) A                                            |¦| A \(\wedge\) B = B \(\wedge\) A|
+|**Assoziativgesetz: **  | A \(\vee\) (B \(\vee\) C) = (A \(\vee\) B) \(\vee\) C                  |¦| A \(\wedge\) (B \(\wedge\) C) = (A \(\wedge\) B) \(\wedge\) C|
+|**Distributivgesetz: ** | A \(\vee\) (B \(\wedge\) C) = (A \(\vee\) B) \(\wedge\) (A \(\vee\) C) |¦| A \(\wedge\) (B \(\vee\) C) = (A \(\wedge\) B) \(\vee\) (A \(\wedge\) C)|
+|**Absorbtionsgesetz: ** | A \(\vee\) (A \(\wedge\) B) = A                                        |¦| A \(\wedge\) (A \(\vee\) B) = A|
+|**Komplementärgesetz: **| A \(\vee\) \(\neg\)A = 1                                               |¦| A \(\wedge\) \(\neg\)A = 0|
+|**Idempotenzgesetz: **  | A \(\vee\) A = A                                                       |¦| A \(\wedge\) A = A |
+|**Neutralitätsgesetz: **| A \(\vee\) 0 = A                                                       |¦| A \(\wedge\) 1 = A|
+|**Extremalgesetz: **    | A \(\vee\) 1 = 1                                                       |¦| A \(\wedge\) 0 = 0|
+|**De Morgansches Gesetz: **| \(\neg\)(A \(\vee\) B) = \(\neg\)A \(\wedge\) \(\neg\)B             |¦| \(\neg\)(A \(\wedge\) B) = \(\neg\)A \(\vee\) \(\neg\)B  |
+|                           |                                                                     || |
+|**Involutionsgesetz: **    | \(\neg\)(\(\neg\)A) = A                                             | | |
+|**Dualitätsgesetz: **      | \(\neg\)1 = 0                                                       || \(\neg\)0 = 1 |
+</WRAP>
+<WRAP clear></WRAP>
+----
+[[modul:mathe:ma1:thema:lu04logik:aufgaben:leitprogramm:start|zum Leitprogramm]]

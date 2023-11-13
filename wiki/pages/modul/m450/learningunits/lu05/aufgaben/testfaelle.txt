@@ -1,0 +1,27 @@
+====== LU05.A02 - Testfälle "Artikeldaten" ======
+<WRAP center round todo 60%>
+Definiere die Testfälle anhand der Äquivalenzklassen.
+</WRAP>
+
+{{page>..:artikeldaten}}
+
+===== Auftrag =====
+Erstelle alle Testfälle um die Äquivalenzklassen vollständig zu testen.
+Beachte dabei:
+  * Jede gültige Klasse muss mindestens 1x in einem gültigen Testfall vorkommen.
+  * Jede ungültige Klasse muss einzeln getestet werden.
+  * Verwende für die Eingaben keine Grenzwerte (Minimum, Maximum).
+
+Jeder Testfall enthält die Angaben:
+  * Nr: Nummerierung des Testfalls.
+  * Klassen: Welche Klassen werden getestet.
+  * Eingaben: Alle Eingabefelder mit konkreten Daten.
+  * Erwartetes Resultat: Welche Ausgabe wird erwartet.
+
+===== Abgabe =====
+Dokument als PDF-Datei exportieren (drucken) und hier hochladen.
+
+
+----
+{{tag>M450-LU05}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

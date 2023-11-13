@@ -1,0 +1,27 @@
+~~NOCACHE~~
+====== LU05.A05 - **kwargs zu Liste ======
+
+<WRAP center round todo 60%>
+Erstelle eine Funktion, die verschiedene Einstellungen als Keyword-Argumente akzeptiert und diese in einem formatierten String zurückgibt, wobei nur die Einstellungen angezeigt werden, die aktiviert sind.
+</WRAP>
+
+===== Aufgabenstellung =====
+Definiere eine Funktion namens ''active_settings''. Die Funktion sollte ''%%**%%kwargs'' verwenden, um eine variable Anzahl von Einstellungen als Keyword-Argumente zu akzeptieren. Die Funktion sollte eine List von Strings zurückgeben, der nur die Einstellungen enthält, die auf "True" gesetzt sind.
+
+==== Code-Vorlage ====
+
+{{gh>https://github.com/templates-python/m323-lu05-a05-kwargs2/blob/main/main.py}}
+
+
+===== Vorgehen =====
+  - Akzeptiere das GitHub Classroom Assignment
+  - Klone dein persönliches Repository in die Entwicklungsumgebung
+  - Implementiere die Funktion ''active_settings'' gemäß der Aufgabenstellung
+  - Teste die Funktion mit verschiedenen Einstellungen
+
+===== Abgabe =====
+Die Abgabe der Lösung erfolgt als Push in das persönliche GitHub-Repository.
+
+----
+<nodisp> GitHub Repository https://github.com/templates-python/m323-lu05-a05-kwargs2</nodisp>
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Kevin Maurizi

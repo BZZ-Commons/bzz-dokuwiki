@@ -1,0 +1,24 @@
+==== 2. Sequenz-Diagramm ====
+Eine Kommunikation zwischen Objekten lässt sich auf einem Zeitstrahl abbilden.\\
+{{modul:m320:learningunits:lu04:theorie:lu03-ablauf-kommunikation.png?450|}}\\
+//Abb 4.2:// Darstellung einer Kommunikation im zeitlichen Verlauf\\
+\\
+Die UML kennt für die Darstellung der Abfolge der Methodenaufrufe das **Sequenz-Diagramm**. \\
+{{modul:m320:learningunits:lu04:theorie:lu03-bsp_sequenzdiagramm.png?450|}}\\
+//Abb 4.3:// Sequenz-Diagramm der Reservation eines Lagerartikels\\
+
+=== Elemente des Sequenzdiagramms ===
+{{modul:m320:learningunits:lu04:theorie:lu03-sequenzdiagramm-elemente.png?400|}}\\
+//Abb 4.4:// typische Elemente des Sequenzdiagramms\\
+[[https://de.wikipedia.org/wiki/Sequenzdiagramm]]
+
+Sequenzdiagramme werden vor allem dann angewendet, wenn ein sehr komplexer Ablauf unter Teilhabe vieler Klassen stattfindet.\\
+----
+//Beispiel 4.2: Umfassendes Sequenz-Diagramm//\\
+Die Sequenzdiagramme zeigen den Ablauf für die Generierung eines Logbuch-Eintrags. Gewisse Abläufe werden in einer verfeinerten Darstellung wiedergegeben, um so die Übersichtlichkeit zu erhöhen. Der rot markierte Ablauf wird hier präzisiert (es handelt sich dabei um den Konstruktor der Klasse ''LogBook'').\\
+{{modul:m320:learningunits:lu04:theorie:lu03-sequenzdiagramm-big.png?600|}}  {{modul:m320:learningunits:lu04:theorie:lu03-sequenzdiagramm-big2.png?600|}} \\
+//Abb 4.5:// umfassendes Sequenz-Diagramm
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) René Probst
+

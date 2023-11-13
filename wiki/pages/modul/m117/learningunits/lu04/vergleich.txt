@@ -1,0 +1,17 @@
+====== LU04d - Vergleich Kabel- versus Funknetzwerk ======
+LAN und WLAN haben beide ihre Berechtigung. Welcher Netzwerktyp besser für ein neues Netzwerk geeignet ist, kann durch eine Gegenüberstellung der Eigenschaften dieser Netzwerktypen entschieden werden. Oft werden auch LAN und WLAN miteinander kombiniert, um von den Vorteilen beider Netzwerktypen zu profitieren.
+
+^ Eigenschaft                               ^ Kabel ^ Funk    ^ Bemerkung                                                                                          ^
+| Anfälligkeit gegen äussere Störeinflüsse | Gering | Hoch | Interferenzen hervorgerufen durch benachbarte Funknetze sind nur schwer vorauszusehen bzw. ist nur schwer entgegenzuwirken|
+| Max. Übertragungskapazität                | Sehr hoch| Hoch ||
+| Max. Übertragungsdistanz                  | Hoch | Mittel||
+| Anschaffungskosten                        | Hoch| Gering||
+| Kosten für Kabelverlegung                 | Hoch |Gering| Sendestation (Access Point) wird i. d. R. mit einem Kabel an das LAN angeschlossen |
+| Abhörsicherheit                           | Hoch | Mittel | Der Aufwand, um Daten abhören, ist bei WLANs geringer, da es sich um eine ungebundene Datenübertragung handelt  |
+
+
+----
+
+{{tag>m117}}
+
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Andre Probst

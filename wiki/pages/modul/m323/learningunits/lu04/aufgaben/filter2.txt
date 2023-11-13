@@ -1,0 +1,34 @@
+====== LU04.A08 - Filtere Wörter mit mehr als 5 Buchstaben ======
+
+<WRAP center round todo 60%>
+Verwende die ''filter''-Funktion, um alle Wörter aus einer Liste zu filtern, die mehr als 5 Buchstaben haben.
+</WRAP>
+
+===== Aufgabenstellung =====
+
+  * Gegeben ist eine Liste von Wörtern wie ''['apple', 'banana', 'cherry', 'date']''.
+  * Verwende die ''filter''-Funktion, um alle Wörter zu filtern, die mehr als 5 Buchstaben haben.
+
+===== Vorlage =====
+<code python>
+def filter_long_words(words):
+    """
+    Filtert Wörter aus der gegebenen Liste, die mehr als 5 Zeichen lang sind.
+    Args:
+    - words (list): Eine Liste von Wörtern.
+    Returns:
+    - list: Eine Liste der Wörter mit mehr als 5 Zeichen.
+    """
+    # Ihr Code hier
+    return list
+
+if __name__ == '__main__':
+    words = ['apple', 'banana', 'cherry', 'date']
+    long_words = filter_long_words(words)
+    print(long_words)
+
+</code>
+
+----
+<nodisp>https://github.com/templates-python/m323-lu04-a08-filter</nodisp>
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/ch/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Kevin Maurizi 

@@ -1,0 +1,28 @@
+====== LU07.A02 - Hotelbuchung ======
+<WRAP center round todo 60%>
+Ihre Aufgabe ist es, ein HTML-Formular für ein Hotelzimmer-Buchungssystem zu erstellen. In diesem Formular sollen die Kunden verschiedene Optionen für ihren Aufenthalt auswählen können. Die Formularelemente ''select'' (mit Mehrfachauswahl) und ''checkbox'' sollen hierbei verwendet werden, um den Unterschied und die erwartungskonforme Verwendung dieser beiden Elemente zu verdeutlichen.
+</WRAP>
+
+===== Vorgehen =====
+  - Akzeptieren Sie das GitHub Classroom Assignment für die LU07.A01
+  - Klonen Sie das Repository.
+  - Erstellen Sie die HTML-Webseite in der Datei ''/hotel.html''. Halten Sie sich dabei an die Anforderungen.
+  - Validieren Sie Ihren HTML-Code auf Einhaltung der Standards.
+  - Geben Sie Ihre Lösung mittels Push ins Repository ab.
+  - Beantworten Sie die [[modul:m293:learningunits:lu07:aufgaben:hotelbuchung:question|Fragen]] hier in der Moodle-Aufgabe.
+
+==== Anforderungen an das Formular ====
+
+Erstellen Sie ein ''select'' Element mit Mehrfachauswahl, das die Wahl zwischen verschiedenen Zimmertypen ermöglicht (wie z.B. Einzelzimmer, Doppelzimmer, Suite). Dieses Element soll es den Kunden ermöglichen, mehrere Zimmertypen gleichzeitig auszuwählen. Benennen Sie das select Element "Zimmertyp".
+
+Erstellen Sie ein ''checkbox'' Element für verschiedene Zusatzleistungen, die das Hotel anbietet (wie z.B. Frühstück, Flughafentransfer, Spa-Zugang). Die Checkboxen sollen es den Kunden ermöglichen, beliebig viele Zusatzleistungen auszuwählen. Fassen Sie alle ''checkbox'' Elemente unter dem Namen ''zusatzleistungen'' zusammen. Denken Sie daran, dass diese Checkboxes ein Array zurückgeben sollten.
+
+=== Zusätzliche Anforderungen: ===
+
+  * Verwenden Sie geeignete Formularelemente (z.B. ein ''fieldset'' und ''legend'' Element), um die verschiedenen Elementtypen visuell zu trennen und zu organisieren oder fügen Sie ''label''-Elemente hinzu, um die verschiedenen Elementtypen und Optionen klar zu kennzeichnen.
+  * Fügen Sie schließlich einen ''submit'' Button hinzu, um die Formularinformationen an https://it.bzz.ch/demo/formdata/index.php zu senden.
+
+----
+<nodisp>[[https://github.com/templates-html/M293_LU07_02_hotel|Repository]]</nodisp>
+{{tag>m293-LU07}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Kevin Maurizi, Marcel Suter

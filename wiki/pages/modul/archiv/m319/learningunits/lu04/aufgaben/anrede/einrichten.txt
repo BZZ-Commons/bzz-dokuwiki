@@ -1,0 +1,71 @@
+==== Auftrag: Projekt einrichten ====
+  - Erstellen Sie ein neues Modul in Ihrem (Java-)Workspace.
+  - Kopieren Sie die Vorlage in ihre IDE.
+  - Passen Sie den Programmkopf (Autor, Datum) an.
+
+
+==== Vorlage ====
+<file java Salutation.java>
+import java.util.Scanner;
+ 
+/**
+ * show the salutations depending on gender
+ * 
+ * @author ?????
+ * @since 201?-10-??
+ * @version 1.0
+ */
+public class Salutation {
+ 
+    static Scanner scanner;
+    /**
+     * constructor
+     */
+    public Salutation() {
+        scanner = new Scanner(System.in);
+    }
+ 
+    /**
+     * starts the execution
+     * 
+     * @param args
+     *            command line arguments
+     */
+    public static void main(String[] args) {
+        Salutation program = new Salutation();
+ 
+        System.out.println("Willkommen");
+        program.salute();
+        System.out.println("\nUf Wiederluege!");
+        scanner.close();
+    }
+ 
+    /**
+     * enter the gender and show the salutations
+     */
+    private void salute() {
+        // TODO-1 Variablen deklarieren
+ 
+        // TODO-2.1 Ausgabe "Geschlecht (W oder M / X=Ende) >"
+        // TODO-2.2 Eingabe Geschlecht
+ 
+        // TODO-4 Iteration Solange Geschlecht nicht gleich X
+            // TODO-3 Selektion: Falls Geschlecht gleich W
+                // TODO-2.1 Ausgabe Sehr geehrte Frau
+                // TODO-2.1 Ausgabe Chère madame
+                // TODO-2.1 Ausgabe Dear Mrs.
+            // TODO-3 Sonst
+                // TODO-2.1 Ausgabe Sehr geehrter Herr
+                // TODO-2.1 Ausgabe Cher monsieur
+                // TODO-2.1 Ausgabe Dear Mr.
+            // TODO-3 Ende der Selektion
+    
+            // TODO-2.1 Ausgabe "Geschlecht (W oder M / X=Ende) >"
+            // TODO-2.2 Eingabe Geschlecht
+         // TODO-4 Ende der Iteration
+    }
+}
+</file>
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Marcel Suter

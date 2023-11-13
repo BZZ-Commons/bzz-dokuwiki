@@ -1,0 +1,78 @@
+====== LU12.A02 - Hofladen ======
+===== Ausgangslage =====
+In einem Hofladen sind verschiedene Produkte verfügbar.
+Zu jedem Produkt werden diese Attribute gespeichert:
+  * Name des Artikels (Text)
+  * Preis des Artikels (Dezimalzahl)
+  * Bestand (Ganzzahl)
+
+===== Programmaufgabe =====
+Ihr Programm soll die Artikel im Hofladen verwalten.
+
+Der Benutzer gibt zuerst den Namens eines Artikels ein.
+Falls der Name ''Exit'' ist, wird das Programm beendet.
+Falls der Artikel noch nicht existiert, muss der Benutzer den Preis eingeben.
+Andernfalls wird der aktuelle Bestand ausgegeben.
+Zuletzt gibt der Benutzer die Veränderung des Bestands ein.
+
+==== Beispiel ====
+<code>
+Artikelname > Milch
+Preis       > 5.75
+Menge       > 5
+
+Artikelname > Wurst
+Preis       > 21.10
+Menge       > 12
+
+Artikelname > Milch
+Bestand     : 5
+Menge       > -2
+
+Artikelname > Exit
+</code>
+
+===== Programmablauf =====
+  - Erstelle eine leere Liste für die Artikel
+  - Eingabe des Artikelnamens
+  - Solange Artikelname nicht ''Exit'' ist
+    - Suche den Artikel in der Liste und merke dir diesen Artikel
+    - Falls kein Artikel gefunden wurde
+      - Erstelle ein neues Artikel-Objekt mit dem Artikelnamen, Preis=0.00 und Bestand=0
+      - Speichere das Objekt in der Liste
+      - Eingabe des Preises
+    - Sonst
+      - Ausgabe des aktuellen Bestands
+    - Eingabe der Menge
+    - Addiere die Menge zum Bestand
+    - Eingabe des Artikelnamens
+  - Gib die Artikelliste als Returnwert zurück
+
+===== Vorgehen =====
+==== Funktionen bestimmen ====
+Überlegen Sie, welche Teilaufgaben sich sinnvoll als eigenständige Funktionen realisieren lassen.
+Notieren Sie zu jeder Funktion:
+
+^ Name ^ //Name der Funktion // |
+^ Aufgabe ^ //Kurze Beschreibung // |
+^ Argumente ^ //Liste aller Argumente für diese Funktion// |
+^ Returnwert ^ //Welche Daten liefert diese Funktion als Return// |
+
+Sie können die Funktionen auch direkt im Pythoncode definieren.
+Zum Beispiel:
+<code python>
+def do_something(value, blabla):
+    """
+    does something
+    :param value: the value of the thing to be done
+    :param blabla: some blabla
+    :return: the something that was done
+    """
+    pass
+</code>
+==== Vorgehensschritte ====
+Realisieren Sie zunächst die Funktionen, welche Sie zuvor identifiziert haben.
+
+Zerlegen Sie den Programmablauf in möglichst kleine Teilschritte.
+Nach jedem Teilschritt sollte das Programm ein überprüfbares Resultat erzeugen.
+

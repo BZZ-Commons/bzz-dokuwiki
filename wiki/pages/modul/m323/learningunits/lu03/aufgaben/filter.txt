@@ -1,0 +1,128 @@
+====== LU03.A04 - Datenfilterung ======
+<WRAP center round todo 60%>
+Erstellen Sie ein Programm, das eine Liste von Studentendaten und eine Filterfunktion akzeptiert. Die Filterfunktion sollte auf jedes Studentenobjekt angewendet werden, um zu bestimmen, ob es in die Ergebnisliste aufgenommen wird oder nicht.
+</WRAP>
+
+===== Aufgabenstellung =====
+Sie arbeiten an einer Schulverwaltung, und Sie müssen ein Modul entwickeln, das es ermöglicht, Studenten basierend auf verschiedenen Kriterien zu filtern. Das Modul sollte in der Lage sein, verschiedene Filterfunktionen zu akzeptieren, um die Daten auf verschiedene Arten zu filtern.
+
+===== Schrittweises Vorgehen =====
+=== Daten verstehen ===
+Sie erhalten ein Dictionary mit Studentendaten, machen Sie sich mit dieser Datenstruktur vertraut.
+<code python>
+students = [
+        {'name': 'Alice', 'age': 15, 'class': '10A'},
+        {'name': 'Bob', 'age': 16, 'class': '10B'},
+        {'name': 'Charlie', 'age': 14, 'class': '9A'}
+    ]
+</code>
+
+=== Filterfunktion Erstellen ===
+Schreiben Sie eine Funktion, die eine Liste von Studenten und eine Filterfunktion akzeptiert.
+
+<code>
+#Pseudocode
+filter_die_studenten(studenten, funktion_um_zu_filtern, *argumente)
+    GEBE_ZURÜCK funktion_um_zu_filtern(studenten, *argumente)
+</code>
+
+=== Einige Filterfunktionen Definieren ===
+Schreiben Sie einige verschiedene Filterfunktionen (z.B. nach Alter filtern, nach Klasse filtern).
+<code>
+#Pseudocode
+filter_nach_alter(studenten, minumum_alter)
+    # Erstelle eine neue Liste, kopiere alle Studenten wo alter > minumum_alter. Gebe diese Liste zurück.
+</code>
+
+=== Testen Sie Ihre Lösung ===
+Verwenden Sie den ''if %%__%%name%%__%% == '%%__%%main%%__%%':'' Block, um Ihre Funktionen zu testen.
+<code python>
+#Pseudocode
+
+
+nach_alter_gefiltert = filter_die_studenten(students, filter_nach_alter, 15)
+DRUCKE('Gefiltert nach alter:', nach_alter_gefiltert)
+...
+</code>
+
+=== Vorlage ===
+<code python>
+def filter_by_age(students, age):
+    """
+    Filtert die Studentenliste nach einem gegebenen Mindestalter.
+
+    :param students: Liste von Studentendaten
+    :param age: Mindestalter für den Filter
+    :return: Gefilterte Liste von Studenten
+    """
+    pass
+    
+    
+def filter_by_class(students, class_name):
+    """
+    Filtert die Studentenliste nach einer gegebenen Klasse.
+
+    :param students: Liste von Studentendaten
+    :param class_name: Klassenname für den Filter
+    :return: Gefilterte Liste von Studenten
+    """
+    pass
+    
+
+def filter_students(students, filter_function, *args):
+    """
+    Filtert die Studentenliste mit einer gegebenen Filterfunktion.
+
+    :param students: Liste von Studentendaten
+    :param filter_function: Funktion, die zum Filtern der Studenten verwendet wird
+    :param args: Zusätzliche Argumente für die Filterfunktion
+    :return: Gefilterte Liste von Studenten
+    """
+    # your code here
+    pass
+    
+
+if __name__ == '__main__':
+    students = [
+        {'name': 'Alice', 'age': 15, 'class': '10A'},
+        {'name': 'Bob', 'age': 16, 'class': '10B'},
+        {'name': 'Charlie', 'age': 14, 'class': '9A'}
+    ]
+    # your code here
+</code>
+
+<WRAP center round tip 80%>
+=== Hinweis ===
+
+Das ''*args'' in einer Funktionsdefinition in Python wird verwendet, um eine variable Anzahl von nicht-schlüsselwortbasierten Argumenten zu übergeben. Es ermöglicht es Ihnen, mehr (oder weniger) Argumente zu übergeben, als in der ursprünglichen Definition der Funktion angegeben wurden.
+
+Im Kontext Ihres Beispiels könnte ''*args'' in der ''filter_die_studenten''-Funktion verwendet werden, um zusätzliche Argumente an die ''funktion_um_zu_filtern'' zu übergeben, ohne dass Sie die Signatur von ''filter_die_studenten'' jedes Mal ändern müssen, wenn Sie eine neue Filterfunktion mit unterschiedlichen Argumenten hinzufügen.
+</WRAP>
+
+
+<WRAP center round info 80%>
+=== Wieso diesen Aufwand===
+
+Die Funktion ''filter_die_studenten'' dient als eine allgemeinere und abstraktere Schnittstelle, die es ermöglicht, unterschiedliche Filterfunktionen auf die Liste der Studenten anzuwenden. Es mag auf den ersten Blick überflüssig erscheinen, aber es hat einige Vorteile:
+
+**Wiederverwendbarkeit:** Durch die Verwendung der ''filter_die_studenten'' Funktion kannst du jede Art von Filterfunktion anwenden, die die gleiche Signatur hat. Das bedeutet, dass du in Zukunft einfach neue Filterfunktionen hinzufügen kannst, ohne den Hauptteil deines Codes ändern zu müssen. Die ''filter_die_studenten'' Funktion kann mit jeder Filterfunktion verwendet werden, die die Studentenliste und eventuelle zusätzliche Argumente akzeptiert.
+
+**Abstraktion:** Die ''filter_die_studenten'' Funktion abstrahiert das Aufrufen der spezifischen Filterfunktion. Der Code, der die ''filter_die_studenten'' Funktion aufruft, muss nicht wissen, welche spezifische Filterfunktion aufgerufen wird. Das macht den Code sauberer und leichter verständlich.
+
+**Erweiterbarkeit:** Wenn du in Zukunft entscheidest, dass du vor oder nach der Filterung etwas anderes mit der Studentenliste machen möchtest (zum Beispiel, sie zu sortieren, zu loggen, etc.), musst du diese Änderung nur in der ''filter_die_studenten'' Funktion machen, anstatt an jedem Ort im Code, an dem eine Filterfunktion aufgerufen wird.
+
+In einfachen Fällen mag die Verwendung einer solchen Funktion überflüssig erscheinen, aber in größeren und komplexeren Systemen kann diese Art von Abstraktion sehr hilfreich sein, um sauberen, wiederverwendbaren und wartbaren Code zu schreiben.
+
+**Strategy-Pattern**
+
+Das Muster, das hier verwendet wird, ist ein Beispiel für das Strategie-Muster (Strategy Pattern). Es ist ein Verhaltensmuster, das ein Familienalgorithmus definiert und sie in separate Klassen kapselt, um sie austauschbar zu machen. Das Strategie-Muster ermöglicht den Algorithmus unabhängig von den Clients, die diesen Algorithmus verwenden, zu variieren.
+
+Im gegebenen Beispiel:
+
+Die Funktion ''filter_die_studenten'' nimmt eine Filterfunktion als Argument. Diese Filterfunktion ist die "Strategie", die ausgetauscht werden kann. Die verschiedenen Filterfunktionen wie ''filter_by_age'' oder ''filter_by_class'' sind die konkreten Strategien, die mit der ''filter_die_studenten'' Funktion ausgetauscht werden können.
+Durch das Verwenden des Strategie-Musters kannst du den Code flexibler und einfacher zu erweitern machen, ohne die Hauptlogik zu ändern. Jede neue Filterfunktion, die du hinzufügen möchtest, kann einfach als neue Strategie implementiert werden, ohne dass der Code, der die Filterung aufruft, geändert werden muss.
+</WRAP>
+
+----
+<nodisp>https://github.com/templates-python/m323-lu03-a03-filter</nodisp>
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/ch/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Kevin Maurizi 

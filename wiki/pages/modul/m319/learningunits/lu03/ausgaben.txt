@@ -1,0 +1,84 @@
+====== LU03e - Ausgaben in Python ======
+
+
+<WRAP center round box 60%>
+**Lernziele:**
+  * Programme schreiben die einen Text ausgeben können
+  * Mit der Ausführung von Programmen vertraut werden
+  * Sie wissen was der Begriff "Argument" bedeutet
+</WRAP>
+
+===== Programm Vorlage =====
+
+In Python enthalten unsere Programme einen Code-Vorlage, um zu funktionieren. Diese Vorlage, von dem unten ein Beispiel gezeigt wird, sagt dem Computer, wie die Funktion heißt. Im Folgenden ist der Name der Funktion ''main''.
+
+<WRAP center round box 60%>
+<code python>
+def main():
+    print('Zu druckender Text')
+
+if __name__ == '__main__':
+    main()
+</code>
+</WRAP>
+
+Die Ausführung des Programms beginnt mit der Zeile ''main()''. Dieser Befehl ruft die Funktion main auf und führt sie aus. Befehle werden innerhalb von ''main'' zeilenweise von oben nach unten ausgeführt. Im obigen Beispiel ist ''print('Zu druckender Text')'' der einzige Befehl, der ausgeführt wird. Seine Ausgabe ist:
+
+<WRAP center round box 60%>
+<code python>
+Zu druckender Text
+</code>
+</WRAP>
+
+Die Beispiele in diesen Unterrichtsunterlagen sind nicht immer mit der Vorlage abgebildet, aber Sie können davon ausgehen, dass Ihre Programmdatei eine hat. Daher können die Beispiele auch nur aus einer einzigen Zeile bestehen, wie z. B. das folgende Beispiel, das den Befehl print veranschaulicht.
+
+<WRAP center round box 60%>
+<code python>
+print('Hallo Welt')
+</code>
+</WRAP>
+
+In Wirklichkeit sieht das obige Beispiel, wenn es als vollständiges Python-Programm geschrieben wird, folgendermaßen aus:
+
+<WRAP center round box 60%>
+<file python hello_world.py>
+def hello_world():
+    print('Hallo Welt')
+
+if __name__ == '__main__':
+    hello_world()
+</file>
+</WRAP>
+
+
+===== Das erste Programm =====
+Wie Sie im Abschnitt [[modul:m319:learningunits:lu03:programmieren|LU03c - Einstieg in die Programmierung]] dieses Kurses gesehen haben, gibt der Befehl print('Hello world!') den Text "Hello world!" aus.
+
+<WRAP center round box 60%>
+<code python>
+print('Hello world!')
+</code>
+
+<code python>
+Hello world!
+</code>
+</WRAP>
+
+Es ist möglich jeden beliebigen Text mit ''print'' auszugeben, solange der Befehl ''print('Beliebiger Text')'' verwendet wird. Der folgende Befehl druckt den Text 'Hello there!'.
+<WRAP center round box 60%>
+<code python>
+print('Hello there!')
+</code>
+
+<code python>
+Hello there!
+</code>
+</WRAP>
+
+<WRAP center round info 60%>
+Der Text den Sie der Funktion ''print()'' in den Klammern übergeben ist ein sogenanntes ''Argument''. Ein Argument stellt den Wert dar, den Sie an eine Funktion/Methode übergeben, wenn Sie sie aufrufen. 
+</WRAP>
+
+----
+{{tag>m319-LU03}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Kevin Maurizi

@@ -1,0 +1,19 @@
+====== LU09.A04 - Quersumme ======
+
+Schreiben Sie eine Funktion, die von einer vorgegebenen natürlichen Zahl
+die Quersumme bestimmt. Natürliche Zahlen sind positive ganze Zahlen (1, 2,
+3, 4, 5, …). 
+
+<WRAP center round box 60%>
+<code python>
+#TODO create function cross_sum to calculate the crosssum of a whole number
+
+
+def main():
+    number = input('Bitte eine Ganzzahl eingeben für Quersummenberechnung')
+    print(cross_sum(number))
+
+if __name__ == '__main__':
+    main()
+</code>
+</WRAP>

@@ -1,0 +1,53 @@
+====== LU04c - Fehler erwartet ======
+
+<WRAP center round info 60%>
+Es gibt Situationen, in den wir erwarten, dass ein Test scheitert.
+Anstatt den Test zu überspringen, markieren wir ihn mit ''@pytest.mark.xfail''.
+</WRAP>
+
+{{:modul:m450:learningunits:lu04:failure.jpg?600|}}
+
+Es mag zunächst wenig intuitiv sein, einen Test auszuführen, der erwartungsgemäss scheitern soll.
+Wenn der Test sowieso fehlschlägt, kann ich den Test ja einfach vorerst überspringen.
+
+Betrachten wir einmal folgende Situation in einem Projekt:
+  * Tag 1: 
+    * Andrea hat den Auftrag die Klasse ''Customer'' zu programmieren. 
+    * Raphael schreibt die Tests für die Applikation welche diese Klasse enthält. Da die Klasse ''Customer'' noch nicht lauffähig ist, markiert Bert die Tests mit ''@pytest.mark.skip''.
+  * Tag 2:
+    * Andrea hat die Klasse ''Customer'' teilweise fertig gestellt.
+    * Raphael führt die Tests durch. Aufgrund der Markierung werden die Tests für ''Customer'' nicht ausgeführt und PyTest meldet keine Fehler.
+  * Tag 3:
+    * Andrea ist fertig mit dem Programmieren der Klasse ''Customer''.
+    * Bei den Tests von Raphael tritt noch immer kein Problem auf, da die Tests ja übersprungen werden. 
+Im dümmsten Fall glauben Andrea und Raphael, dass die Applikation korrekt läuft, da ja keine Fehler bei den Tests erkannt wurden.
+
+Nehmen wir nun an, Raphael hätte die Tests mit ''@pytest.mark.xfail'' markiert:
+  * Schon am Tag 2 würden einige Tests das Resultat ''unexpectedly passing (XPASS)'' melden.
+  * Am Tag 3 würden (fast) alle Tests ''XPASS'' melden.
+
+Dadurch merkt Raphael automatisch, dass die Klasse ''Customer'' ganz oder teilweise umgesetzt ist.
+
+===== Dekorator =====
+<code python>
+@pytest.mark.xfail
+def test_one():
+   ...
+   
+@pytest.mark.xfail(reason='this is expected to fail')
+def test_two():
+    ...
+    
+@pytest.mark.xfail(condition=sys.version_info < (3, 7))
+def test_three():
+    ...
+</code>
+
+===== Innerhalb der Funktion =====
+Wir können ''pytest.xfail'' auch innerhalb einer Testfunktion aufrufen.
+Im Gegensatz zum Dekorator wird dabei jedoch die Ausführung der Funktion abgebrochen und keine weiteren Befehle ausgeführt.
+Dadurch ist diese Variante weniger geeignet.
+
+----
+{{tag>M450-LU04}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

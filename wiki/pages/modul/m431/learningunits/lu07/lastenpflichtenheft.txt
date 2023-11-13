@@ -1,0 +1,84 @@
+====== LU07a - Pflichtenheft und Lastenheft ======
+
+====== Einführung ======
+
+Bevor ein Softwareprojekt startet, ist es entscheidend, klare Anforderungen und Erwartungen zwischen Auftraggeber und Auftragnehmer zu definieren. Das Lastenheft und das Pflichtenheft sind wichtige Werkzeuge in diesem Prozess.
+
+
+
+===== Lastenheft =====
+Das Lastenheft ist ein zentrales Dokument in der Anfangsphase eines Projekts, insbesondere bei Software- und IT-Projekten. Es dient als Werkzeug zur Kommunikation zwischen dem Auftraggeber und dem Auftragnehmer und legt den Grundstein für eine erfolgreiche Projektrealisierung.
+
+{{:modul:m431:learningunits:lu05:dilbert_requirements.png?600|}}
+
+
+==== Ziel und Zweck des Lastenhefts ====
+
+Das primäre Ziel des Lastenhefts ist die präzise und vollständige Erfassung aller Anforderungen des Auftraggebers an ein bestimmtes Projekt. Es stellt sicher, dass:
+
+  * Die Erwartungen des Auftraggebers klar und verständlich formuliert sind.
+  * Der Auftragnehmer genau weiß, was von ihm erwartet wird.
+  * Missverständnisse und Unklarheiten vermieden werden.
+  * Eine solide Grundlage für die weitere Projektplanung und -umsetzung geschaffen wird.
+
+==== Inhaltliche Aspekte des Lastenhefts ====
+
+Ein gut strukturiertes Lastenheft sollte folgende Punkte beinhalten:
+
+  * **Projektziel:** Eine klare Beschreibung dessen, was am Ende des Projekts erreicht werden soll.
+  * **Zielgruppe:** Wer sind die Endbenutzer? Welche Bedürfnisse und Anforderungen haben sie?
+  * **Funktionale Anforderungen:** Welche konkreten Funktionen und Eigenschaften soll das Endprodukt haben?
+  * **Nichtfunktionale Anforderungen:** Aspekte wie Benutzerfreundlichkeit, Performance, Sicherheit und weitere Qualitätskriterien.
+  * **Rahmenbedingungen:** Technische, organisatorische und rechtliche Voraussetzungen und Einschränkungen.
+  * **Abgrenzungskriterien:** Was gehört nicht zum Projektumfang? Was wird nicht geliefert oder realisiert?
+
+==== Erstellung und Abstimmung ====
+
+Das Lastenheft wird in der Regel vom Auftraggeber erstellt, kann aber in Zusammenarbeit mit dem Auftragnehmer verfeinert werden. Es ist wichtig, dass das Dokument regelmäßig überprüft und bei Bedarf aktualisiert wird. Sobald beide Parteien mit dem Inhalt des Lastenhefts einverstanden sind, dient es als verbindliche Grundlage für die Erstellung des Pflichtenhefts durch den Auftragnehmer.
+
+==== Fazit ====
+
+Ein sorgfältig erstelltes und abgestimmtes Lastenheft ist entscheidend für den Erfolg eines Projekts. Es sorgt für Klarheit, reduziert das Risiko von Missverständnissen und legt den Grundstein für eine erfolgreiche Zusammenarbeit zwischen Auftraggeber und Auftragnehmer.
+
+
+===== Pflichtenheft =====
+
+Das Pflichtenheft ist ein entscheidendes Dokument in der Planungs- und Umsetzungsphase eines Projekts. Während das Lastenheft die Anforderungen des Auftraggebers beschreibt, legt das Pflichtenheft detailliert fest, wie der Auftragnehmer diese Anforderungen umsetzen wird.
+
+==== Ziel und Zweck des Pflichtenhefts ====
+
+Das Hauptziel des Pflichtenhefts ist die konkrete und detaillierte Beschreibung der Lösungsansätze und Maßnahmen, um die im Lastenheft definierten Anforderungen zu erfüllen. Es dient dazu:
+
+  * Eine technische und organisatorische Blaupause für die Projektrealisierung zu erstellen.
+  * Die Abstimmung zwischen Auftraggeber und Auftragnehmer zu erleichtern.
+  * Als Kontrollinstrument während der Projektumsetzung zu dienen.
+  * Risiken zu identifizieren und geeignete Maßnahmen zu ihrer Minderung vorzuschlagen.
+
+==== Inhaltliche Aspekte des Pflichtenhefts ====
+
+Ein umfassendes Pflichtenheft sollte folgende Punkte umfassen:
+
+  * **Technische Lösungsansätze:** Welche Technologien und Methoden werden verwendet, um die Anforderungen zu erfüllen?
+  * **Funktionale Beschreibungen:** Detaillierte Beschreibung der Funktionen, Prozesse und Arbeitsabläufe des Endprodukts.
+  * **Systemarchitektur:** Übersicht über die Struktur des Systems, seine Komponenten und deren Interaktionen.
+  * **Schnittstellen:** Definition und Beschreibung aller Schnittstellen zum Endprodukt.
+  * **Testverfahren:** Wie wird die Erfüllung der Anforderungen überprüft und validiert?
+  * **Zeitplan:** Wichtige Meilensteine und ihr vorgesehener Zeitpunkt.
+
+==== Erstellung und Abstimmung ====
+
+Das Pflichtenheft wird vom Auftragnehmer erstellt, basierend auf dem Lastenheft des Auftraggebers. Es sollte in enger Zusammenarbeit mit dem Auftraggeber abgestimmt werden, um sicherzustellen, dass alle Anforderungen korrekt verstanden und berücksichtigt wurden. Änderungen und Anpassungen sind während der Projektphase möglich, sollten aber immer dokumentiert und nachverfolgbar sein.
+
+==== Fazit ====
+
+Das Pflichtenheft ist ein essenzielles Instrument für die erfolgreiche Umsetzung von Projekten. Es stellt sicher, dass alle Beteiligten ein klares Verständnis von den Zielen und Vorgehensweisen haben und dient als Leitfaden während der gesamten Projektlaufzeit.
+===== Der Entstehungsprozess =====
+Die untenstehende Grafik zeigt den Entstehungsprozess eines Softwareauftrages: von der Projektidee zum Lastenheft bis hin zum Vertrag und Pflichtenheft.
+
+{{:modul:m431:learningunits:lu05:pflichen_lastenheft.png?400|}}
+
+----
+{{tag>M431-LU06 M431-A1G M431-A1F}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Demir Volkan, Kevin Maurizi, Marcel Suter
+
+//Siehe auch [[https://www.gruender.de/buchhaltung/pflichtenheft-lastenheft/|gruender.de - Pflichtenheft, Lastenheft]]//

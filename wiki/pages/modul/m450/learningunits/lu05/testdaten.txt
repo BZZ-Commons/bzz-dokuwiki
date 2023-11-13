@@ -1,0 +1,30 @@
+====== LU05b - Testdaten ======
+
+===== Testdaten =====
+Zum Testen einer Applikation brauchen Sie geeignete Datensätze.
+Nur wenn die vorhandenen Datensätze genau bestimmt sind, werden die Tests reproduzierbar. 
+Vor jedem Testdurchlauf müssen diese Daten wieder hergestellt werden.
+
+Dazu gehören insbesondere:
+
+  * Existierende Daten in einer Datenbank
+  * Vorgegebene Dateien
+  * Benutzereingaben
+
+=== Beispiel: Testdaten für Bookshelf ===
+== Verlage (publishers.csv) ==
+^ UUID ^ Verlag ^
+| ecd86148-5341-43c6-81ed-f3f4595965dc | Orbit |
+| 606cc4a5-8bfd-4e24-85c1-ecf6b9814712 | Bantam |
+| a88be6c1-63ee-43d8-8f21-a8c60d521a81 | DAW Books |
+
+== Bücher (books.csv) ==
+^ UUID ^ Titel ^ Author ^ Verlag ^ Preis ^ ISBN ^
+| 3247c340-c712-402e-b400-0a23a9368c97 | An Echo Of Things To Come | James Islington | ecd86148-5341-43c6-81ed-f3f4595965dc | 32.5 | 978-0-3162-7409-8 | 
+| c746a291-0ef9-4b2a-8268-392b12d636bd | The Winds of Winter | George R R Martin | 606cc4a5-8bfd-4e24-85c1-ecf6b9814712 | 52.75 | 978-0-1256-0432-1 | 
+| 5427422f-f0a0-489b-8be2-d10f48fe5b4d | Doors of Stone | Patrick Rothfuss | a88be6c1-63ee-43d8-8f21-a8c60d521a81 | 39.9 | 978-0-7564-0473-4 | 
+| 20d4380a-5666-47ad-a5b4-b1c39671d46b | A dream of spring | George R R R R Martin | 606cc4a5-8bfd-4e24-85c1-ecf6b9814712 | 199.0 | 978-0-1234-1234-1 | 
+
+----
+{{tag>M450-LU05}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

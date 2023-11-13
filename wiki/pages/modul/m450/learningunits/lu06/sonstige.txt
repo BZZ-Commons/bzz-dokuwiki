@@ -1,0 +1,28 @@
+====== LU06b - Weitere Verfahren ======
+
+<WRAP center round info 60%>
+Es existieren noch eine Reihe weiterer Verfahren zur Ermittlung von Testfällen.
+</WRAP>
+
+===== Ursache-Wirkungs-Analyse =====
+Bei diesem Verfahren werden Kombinationen von Eingabewerten und deren Auswirkung auf das Resultat untersucht.
+Zum Beispiel gelten für eine Applikation folgende Regeln:
+  * Anzahl: Ganzzahl 1 - 999
+  * Preis: Dezimalzahl 0.05 - 9'999.95
+  * Total: Berechnet aus Anzahl * Preis, CHF 10.00 bis 30'000.00
+
+In diesem Beispiel müssen wir auch Kombinationen von Anzahl und Preis testen, die ein Total innerhalb bzw. ausserhalb des zulässigen Bereichs ergeben.
+Natürlich werden wir dies nicht nur mit extremen Beispielen sondern auch mit den Grenzwerten 9.95, 10.00, 30'000.00 und 30'000.05 testen.
+
+===== Zustandsbasierte Testmethoden =====
+Beim zustandsbasierten Testen wird das UML Zustandsdiagramm als Grundlage genommen.
+Dabei prüfen wir vor allem dem korrekten Ablauf der Applikation bei gültigen / ungültigen Eingaben.
+
+  * Wird jeder Zustandsübergang (Pfeile) korrekt durchlaufen?
+  * Reagiert die Applikation auf alle Ereignisse (Text) korrekt?
+
+{{:modul:m450:learningunits:lu06:zustandautomat.png?400|}}
+
+----
+{{tag>M450-LU06}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

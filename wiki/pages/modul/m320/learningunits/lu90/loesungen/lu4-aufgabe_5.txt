@@ -1,0 +1,61 @@
+==== Lösung 5 - Unit Tests mit Exceptions ====
+
+<file python grade_list_test.py>
+import pytest
+from grade_list import GradeList, Overflow
+
+
+@pytest.fixture
+def testee() -> GradeList:
+    return GradeList()
+
+
+def test_max_grade_count(testee):
+    assert testee.get_max_grade_count() == 5
+
+
+def test_list_is_empty(testee):
+    assert testee.get_current_grade_count() == 0
+
+
+def test_list_is_not_empty(testee):
+    testee.add_grade(5.0)
+    assert testee.get_current_grade_count() == 1
+
+
+def test_list_is_full(testee):
+    for i in range(testee.get_max_grade_count()):
+        testee.add_grade(5.0)
+    with pytest.raises(Overflow):
+        testee.add_grade(5.0)
+    assert testee.get_current_grade_count() == 5
+
+
+def test_add_valid(testee):
+    for i in range(testee.get_max_grade_count()):
+        testee.add_grade(5.0)
+
+
+def test_add_invalid(testee):
+    for i in range(testee.get_max_grade_count()):
+        testee.add_grade(5.0)
+    pytest.raises(Overflow, testee.add_grade, 5.0)
+
+
+def test_get_notenwert_1(testee):
+    pytest.raises(IndexError, testee.get_grade, -1)
+
+
+def test_get_notenwert_2(testee):
+    for i in range(testee.get_max_grade_count()):
+        testee.add_grade(5.0)
+    assert testee.get_grade(0) == 5.0
+    assert testee.get_grade(4) == 5.0
+
+
+def test_get_notenwert_3(testee):
+    for i in range(testee.get_max_grade_count()):
+        testee.add_grade(5.0)
+    pytest.raises(IndexError, testee.get_grade, 5)
+
+</file>

@@ -1,0 +1,42 @@
+====== LU04b - Die lambda-Funktion in Python ======
+
+Die ''lambda''-Funktion, auch bekannt als anonyme Funktion, ist eine kleine, eingeschränkte Funktion, die durch das Schlüsselwort ''lambda'' definiert wird. Sie kann beliebige Anzahl von Argumenten haben, aber nur einen Ausdruck. Der Ausdruck wird ausgewertet und zurückgegeben.
+
+===== Syntax =====
+
+<code python>
+  lambda arguments: expression
+</code>
+
+  * **arguments**: Die Argumente, die der Lambda-Funktion übergeben werden (kann auch leer sein).
+  * **expression**: Der Ausdruck, der ausgewertet und zurückgegeben wird.
+
+===== Beispiele =====
+
+Hier sind einige Beispiele für die Verwendung der `lambda`-Funktion:
+
+  - **Ohne Argumente**:<code python>
+    greet = lambda: "Hello, World!"
+    print(greet())  # Output: "Hello, World!"
+    </code>
+  - **Mit einem Argument**:<code python>
+    square = lambda x: x**2
+    print(square(4))  # Output: 16
+    </code>
+  - **Mit mehreren Argumenten**:<code python>
+    add = lambda x, y: x + y
+    print(add(2, 3))  # Output: 5
+    </code>
+  - **In Kombination mit anderen Funktionen, wie map**:<code python>
+    numbers = [1, 2, 3, 4]
+    squares = map(lambda x: x**2, numbers)
+    print(list(squares))  # Output: [1, 4, 9, 16]
+    </code>
+    
+====== Verwendungszwecke ======
+
+Die ''lambda''-Funktion wird oft verwendet, wenn eine kurze, temporäre Funktion benötigt wird, ohne sie formal mit ''def'' zu definieren. Dies ist besonders nützlich in Fällen, wo eine einfache, kurzlebige Funktion als Argument für Higher-Order Functions wie ''map'', ''filter'' oder ''reduce'' benötigt wird.
+
+----
+{{tag>M323-LU04}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/ch/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Kevin Maurizi 

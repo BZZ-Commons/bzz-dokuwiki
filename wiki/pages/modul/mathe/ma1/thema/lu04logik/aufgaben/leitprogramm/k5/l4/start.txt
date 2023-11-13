@@ -1,0 +1,44 @@
+===Übung 4===
+**Aufagbe 1**\\
+Gegeben ist folgender Code
+<code python>
+value_A = True
+value_B = False
+value_C = True
+
+x = not value_A or value_B and value_C
+
+print(x)
+</code>
+Welche Ausgabe (Wert von x) wird angezeigt?\\
+<color #00a2e8>False</color>\\
+\\
+**Aufgabe 2**\\
+Gegeben ist folgender Code
+<code python>
+x = value_A and value_B or value_C
+</code>
+Unter welchen Bedingungen wird ''x'' den Wert ''True'' haben?\\
+<color #00a2e8>Wenn ''value_C'' den Wert ''True'' hat oder wenn die beiden anderen Werte ''value_A'' und ''value_B'' denWert ''True'' haben.</color>\\
+\\
+**Aufgabe 3**\\
+"Ich kaufe mir ein neues Auto, wenn ich genügend Geld und ein passendes Automodell und ein gutes Angebot habe oder wenn mein Auto Totalschaden hat."\\
+Formulieren Sie den passenden boolschen Ausdruck.\\
+<color #00a2e8>Geld \(\wedge\) Automodell \(\wedge\) Angebot \(\vee\) Totalschaden</color>\\
+\\
+**Aufgabe 4**\\
+"Ich gehe ins Restauant essen, wenn ich eingeladen werde oder gerade mal Lust habe. Aber das mach ich nur, wenn ich Zeit habe."\\
+Formulieren Sie den passenden boolschen Ausdruck.\\
+<color #00a2e8>(Einladung \(\vee\) Lust) \(\wedge\) Zeit\\
+//Anmerkung://\\
+Würde hier die Formel\\
+Einladung \(\vee\) Lust \(\wedge\) Zeit\\
+lauten, so würde zuerst der Ausdruck\\
+Lust \(\wedge\) Zeit\\
+berechnet und erst dann die Oder-Operation mit Einladung ausgeführt. Das heisst, dass ich bei einer Einladung immer ins Restaurant gehen würde, ohne dass das Argument Zeit brücksichtigt wird. Sie sehen, wie wichtig hier die Klammern sind.</color>
+\\
+\\
+[[modul:mathe:ma1:thema:lu04logik:aufgaben:leitprogramm:k5:start|zum Leitprogramm]]
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) René Probst

@@ -1,0 +1,41 @@
+====== LU06.L03 - Pizza-Kalkulation ======
+===== Auftrag 1: Herstellungskosten =====
+
+Alle Zahlen zur Infrastruktur wurden auf die Kosten für 1 Pizza umgerechnet.
+Als Basis dient die Anzahl Öffnungstage und die Anzahl Pizzen pro Tag:
+  * 150 Pizzen pro Tag = 900 Pizzen pro Woche = 3750 Pizzen pro Monat = 45000 Pizzen pro Jahr
+
+^ Position                 |            | **Margherita**  | **Diavolo** | **Formel** |
+^ Infrastruktur und Löhne                                      |||||
+| Strom                    |            | CHF 0.50    | CHF 0.50  | ''= CHF 450 / 900 Pizzen'' |
+| Löhne                    |            | CHF 3.20    | CHF 3.20  | ''= CHF 144000 / 45000 Pizzen'' |
+| Pizzamobil               |            | CHF 0.67    | CHF 0.67  | ''= CHF 600 / 900 Pizzen'' |
+|                                                              ||||
+| **Zutaten**              | **Menge**  |             |           |
+| Teig | 250g       | CHF 0.23    | CHF 0.23  |
+| Tomatensauce             | 200g       | CHF 1.00    | CHF 1.00  |
+| Mozzarella               | 100g       | CHF 1.35    | CHF 1.35  |
+| Salami                   | 100g       |             | CHF 1.40  |
+|                          |            |             |           |
+^ Total pro Pizza          |            | CHF 6.95    | CHF 8.35  |
+
+<WRAP center round info 60%>
+Der Schinken in der Zusammenstellung der Preise wird für keine der beiden Pizzen benötigt.
+**Merke:** Nicht jede Information die du sammelst, ist auch relevant.
+</WRAP>
+
+===== Auftrag 2: Payback-Dauer =====
+Zuerst berechne ich den Gewinn pro Pizza:
+  * Der Gewinn für eine Pizza Margherita beträgt CHF 9.00 - CHF 6.95 = CHF 2.05
+  * Der Gewinn für eine Pizza Diavolo beträgt CHF 12.00 - CHF 8.35 = CHF 3.65
+
+Pro Jahr (300 Tage) verkauft meine Freundin 30'000 Pizza Margherita und 15'000 Pizza Diavolo.
+Dadurch ergibt sich ein Gewinn pro Jahr von ''30000 * CHF 2.05 + 15000 * CHF 3.65 = CHF 116250''.
+
+Payback-Dauer = ''CHF 250'000 / CHF 116'250 = 2.15 Jahre''
+
+----
+{{tag>M431-LU06}}
+
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter
+

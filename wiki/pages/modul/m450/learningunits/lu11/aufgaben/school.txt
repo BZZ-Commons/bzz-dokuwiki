@@ -1,0 +1,58 @@
+====== LU11.A01 - Schulverwaltung ======
+<WRAP center round todo 60%>
+Entwickeln Sie die Applikation als Gruppe nach dem Prinzip des Test Driven Developments.
+</WRAP>
+
+===== UML Klassendiagramm =====
+{{:modul:m450:learningunits:lu11:aufgaben:schulverwaltung_klassen.png?400|}}
+
+==== Hinweise ====
+  * Die Klasse ''Grade'' wird als ''@dataclass'' realisiert.
+  * Der Unittests für den Konstruktor einer Klasse muss jeweils als erstes realisiert werden. Erst danach können weitere Methoden der Klasse ausgewählt werden.
+  * Falls eine Methode ein Objekt bzw. Funktion einer anderen Klasse benötigt, verwendest du eine Mockup-Klasse bzw. -Funktion.
+  * Die Klasse ''ClassReport'' enthält zwei Methoden zur Anzeige der Noten:
+    * Die Methode ''to_string()'' liefert ein Zeugnis mit allen Fächern und dem entsprechenden Notenschnitt. Eine mögliche Ausgabe kann wie folgt aussehen: \\ {{:modul:m320:learningunits:lu05:aufgaben:lu03_5_-aufg3_biblio-10.png?150|}}
+    * Die Methode ''print_details()'' liefert alle Fächern mit den einzelnen Noten. Eine mögliche Ausgabe kann wie folgt aussehen: \\ {{:modul:m320:learningunits:lu05:aufgaben:lu03_5_-aufg3_biblio-11.png?225|}}
+
+
+ 
+===== Vorgehen =====
+==== Vorbereitung ====
+
+  - Akzeptiere das GitHub Classroom Assignment.
+  - Wähle eine offene Gruppe aus oder eröffne eine neue Gruppe.
+  - Klone das gemeinsame Repository in deine Entwicklungsumgebung.
+
+==== Realisierung ====
+Zu Beginn müssen alle Gruppenmitglieder zu mindestens einer Funktion die Unit Tests schreiben.
+Im weiteren Verlauf des Projekts kannst du entweder 
+  * eine Funktion realisieren, zu der die Unit Tests schon vorhanden sind oder
+  * die Unit Tests zu einer weiteren Funktion schreiben.
+
+=== Unit Tests schreiben ===
+Vergleiche die Issues (offen und geschlossen) in GitHub mit dem Klassendiagramm.
+  - Wähle eine Klasse (Konstruktor) oder Funktion aus, die noch von keinem Gruppenmitglied bearbeitet wird.
+  - Erstelle ein Issue auf GitHub mit dem Titel "Unittests //Funktionsname//", z.B. "Unittests add_student"
+  - Trage dich als Verantwortlichen ein.
+  - Schreibe die Unittests für die gewählte Funktion.
+  - Wenn deine Testfunktionen fertig sind,
+    - führst du einen Commit durch, in der Commit Message schreibst du unter anderem ''resolves #n'' (''n'' steht für die Nummer des entsprechenden Issues),
+    - aktualisierst du das gemeinsame Repository auf GitHub: **Pull** => **Push** und
+    - du erstellst ein Issue auf GitHub. \\ Der Titel des Issues ist die Funktion zu welcher du die Tests geschrieben hast, z.B. "add_student". 
+
+
+=== Funktion realisieren ===
+Anhand der offenen Issues siehst du, welche Funktionen bereit für die Realisierung sind.
+  - Wähle das Issues aus und trage dich als Verantwortlichen ein.
+  - Führe einen **Pull** des Repositories in deine Entwicklungsumgebung durch.
+  - Realisiere und teste die Funktion.
+  - Wenn deine Funktion korrekt und fertig ist,
+    - führst du einen Commit durch, in der Commit Message schreibst du unter anderem ''resolves #n'' (''n'' steht für die Nummer des entsprechenden Issues),
+    - aktualisierst du das gemeinsame Repository auf GitHub: **Pull** => **Push**
+
+Vielleicht stellst du fest, dass die Unittests zu deiner Funktion unvollständig oder fehlerhaft sind.
+Kontaktiere die Person, welche die Unittests geschrieben hat und besprich mit ihr die fehlenden/fehlerhaften Unittests.
+
+----
+{{tag>M450-LU01}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

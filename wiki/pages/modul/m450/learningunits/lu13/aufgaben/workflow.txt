@@ -1,0 +1,32 @@
+====== LU13.A01 - GitHub Workflow ======
+<WRAP center round todo 60%>
+Im Repository FIXME ist ein einfaches Programm und einige Unittests vorhanden.
+Du möchtest einen Workflow erstellen, der diese Unittests bei jedem Push ausführt.
+</WRAP>
+
+===== Vorgehen =====
+  - Akzeptiere das Assignment im GitHub Classroom.
+  - Erstelle einen neuen Branch zum Experimentieren mit den Workflows.
+  - Du kannst die Workflows direkt in GitHub bearbeiten oder das Repository in deine Entwicklungsumgebung klonen.
+
+
+==== Dein erster Workflow ====
+Um zunächst ein wenig Erfahrung zu sammeln, erstellst du einen einfachen Workflow nach der Anleitung unter [[https://docs.github.com/en/actions/quickstart]].
+Studiere die Beschreibung und die Resultate dieses Workflows.
+
+Schaue auch unter **Next steps** die Seiten "Using starter workflows" und "Automating builds and tests" an. 
+==== Unit Tests ====
+Nachdem du die Grundlagen eines Workflows verstanden hast, sollen nun die Pytests automatisiert werden.
+Recherchiere im Internet wie man einen solchen Workflow aufbauen kann.
+
+  * Der Workflow wird bei jedem Push ausgeführt.
+  * Der Workflow wird nicht ausgeführt, wenn der Branch ''main'' oder ''master'' heisst.
+  * Der Workflow soll alle Pytests im Projekt durchführen.
+
+==== Lint ====
+Neben den Unittests ist auch ein automatisches Linten sinnvoll.
+Ergänze den Workflow so, dass der Code mit einem Lint-Programm überprüft wird.
+
+----
+{{tag>M450-LU13}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

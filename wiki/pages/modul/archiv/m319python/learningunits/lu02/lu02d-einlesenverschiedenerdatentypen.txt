@@ -1,0 +1,94 @@
+====== LU02d - Einlesen verschiedener Datentypen ======
+<WRAP center round box 70%>
+**Lernziele:**
+  * Sie wissen, wie man String-, Integer-, Gleitkomma- und boolesche Variablen einliesst und verwendet.
+</WRAP>
+
+===== Der Typ der Variable gibt Auskunft über mögliche Werte =====
+Der Typ einer Variablen kann nach dem Lesen von Benutzereingabedaten spezifiziert werden. Eine Variable, die die Zeichenkette "text" enthält, wird zum Beispiel beim Lesen mit dem input-Aufruf deklariert, und eine Ganzzahl mit dem Wert 42 kann mit int(varable_name) deklariert werden.
+
+Der Typ einer Variablen bestimmt die Arten von Werten, die ihr zugewiesen werden können. String-Typen enthalten Text, int-Typen ganze Zahlen, float Gleitkommazahlen, und boolesche Typen sind entweder wahr oder falsch.
+
+Die möglichen Werte eines bestimmten Variablentyps sind also begrenzt. Eine String-Variable kann z. B. keine Integerwerte enthalten, und eine Float-Variable kann keinen booleschen Wert enthalten.
+
+^ Typ      ^ Beispiel       ^ Akzeptierte Werte          ^
+| Ganze Zahl, d.h. ''int''   | ''value = 4''    | Eine Integer-Zahl kann jede ganze Zahl enthalten. Einige Programmiersprachen haben Grenzen für Integer-Werte, die mit 32- oder 64-Bit-Darstellungen zu tun haben, aber seit Python 3 dürfen die Werte von int unbeschränkt sein.       |
+| Fließkommazahl, d.h. ''float''   | ''value = 4.2''|Fließkommazahlen enthalten Dezimalzahlen, wobei der größtmögliche Wert 1,7976931348623157e+308 (ein riesiger Wert) ist. Wenn eine Dezimalzahl durch eine Fließkommazahl dargestellt wird, kann der Wert ungenau sein, da Fließkommazahlen nicht in der Lage sind, alle Dezimalzahlen darzustellen. Sie können diese Ungenauigkeit sehen, wenn Sie (zum Beispiel) den Befehl ''1.2 - 1.0'' in einer Python-Datei ausführen. Solange Sie keine ernsthaften wissenschaftlichen Berechnungen durchführen, sollten Sie sich in der Praxis keine großen Sorgen über diese Fehler machen.|
+| ''String''    | ''value = %%'%%Hi%%'%%''    | Eine Zeichenkette kann Text enthalten. Zeichenketten werden in Anführungszeichen gesetzt. |
+| Wahrer oder falscher Wert, d.h. ''bool''    | ''right = True''  | Ein Boolean enthält entweder den Wert ''True'' oder ''False''. (Beachten Sie die Großschreibung.)    |
+
+
+===== Ganzzahlen lesen =====
+
+Der Befehl int wandelt eine Zeichenkette in eine ganze Zahl um. Er nimmt die Zeichenkette, die den zu konvertierenden Wert enthält, als Parameter.
+<WRAP center round box 60%>
+<code python>
+value_as_string = "42"
+value = int(value_as_string)
+
+print(value)
+</code>
+<code>
+42
+</code>
+</WRAP>
+
+Bei Verwendung eines Input-Aufrufs wird das Lesen des Wertes in der Regel direkt in die Typkonvertierung eingefügt. Dies geschieht folgendermaßen:
+
+<WRAP center round box 60%>
+<code python>
+def main():
+    value = int(input("Write a value "))
+    print("You wrote " + str(value))
+</code>
+<code>
+Write a value
+User: <42>
+You wrote 42
+</code>
+</WRAP>
+
+Beachten Sie, dass wir unsere Variable in der Print-Anweisung wieder in einen String umwandeln mussten, um sie mit dem String "You wrote " verketten zu können. Hätten wir str() weggelassen, wäre ein Fehler aufgetreten.
+
+===== Fließkommazahlen und Boolesche Werte lesen =====
+Die Befehle float und bool konvertieren Zeichenketten in Gleitkommazahlen und Boolesche Werte. Ähnlich wie int nehmen sie die Zeichenkette, die den zu konvertierenden Wert enthält, als Parameter.
+<WRAP center round box 60%>
+<code python>
+value_as_string = "42.6"
+value = float(value_as_string)
+
+print(value)
+</code>
+<code>
+42.6
+</code>
+</WRAP>
+
+<WRAP center round box 60%>
+<code python>
+value_as_string = "True"
+value = bool(value_as_string)
+
+print(value)
+</code>
+<code>
+True
+</code>
+</WRAP>
+
+Wenn Sie versuchen, einen Wert wie ''value_as_string = %%'%%42.6%%'%%'' in einen ''int'' zu konvertieren, wird ein Fehler ausgegeben:
+
+<WRAP center round box 60%>
+<code python>
+Traceback (most recent call last):
+  File "main.py"", line 1, in <module>
+ValueError: invalid literal for int() with base 10: '42.6'
+</code>
+</WRAP>
+
+----
+{{tag>M319-B4E}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Kevin Maurizi
+
+Diese Theorieseite ist eine übersetzte und Theorieseite Aufgabe von [[https://scott3142.uk/|Scott Morgan]], verwendet unter CC BY NC SA.
+

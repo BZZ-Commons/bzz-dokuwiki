@@ -1,0 +1,97 @@
+====== LU05a - Eigene Datentypen ======
+
+===== Deklaration =====
+
+Eigene Datentypen können aus den bereits bekannten [[:modul:m319:learningunits:lu02:lu02c-primitivedatentypen|Datentypen]] zusammengesetzt werden. 
+
+Ein **Clubmitglied** weist z. B. die folgenden Attribute auf
+
+^ Attribute ^ UML ^
+| Name, Vorname, Adresse, Ort: ''String''  | {{:modul:m319:learningunits:lu05:uml_clubmitglied.png?200|}} |
+| Postleitzahl, Eintrittsjahr, Geburtsjahr: ''int''   | ::: |
+| Ehrenmitglied: ''boolean''    | ::: |
+
+In Java sieht dieser Datentyp wie folgt aus:
+<WRAP center round box 80%>
+<code java>
+public class Clubmitglied {
+  String name;
+  String vorname;
+  String strasse;
+  int hausnummer;
+  String ort;
+  int postleitzahl;
+  int eintrittsjahr;
+  int geburtsjahr;
+  boolean ehrenmitglied;
+}
+</code>
+</WRAP>
+<WRAP center round important 60%>
+Da es sich hier um eine Klasse handelt, muss diese Klasse auch in einem eignen File mit dem Namen der Klasse gespeichert werden. Für das Beispiel des Clubmitgliedes muss das die Klasse **Clubmitgied.java** sein.
+</WRAP>
+
+
+Neue Clubmitglieder (Objekte) werden mit dem ''new''-Operator geschaffen. Dieser holt sich vom System (Heap) genügend Speicher, um die Attributwerte festhalten zu können:
+
+<WRAP center round box 80%>
+<code java>
+
+public void run(){
+  Clubmitglied mitglied1 , mitglied2 , mitglied3 ;
+  mitglied1 = new Clubmitglied ();
+  mitglied2 = new Clubmitglied ();
+  mitglied3 = new Clubmitglied ();
+}
+</code>
+</WRAP>
+
+==== Benennung ====
+Auch für die Benennung von eigenen Datentypen haben sich Regeln eingebürgert.
+  * Der Name der eigene Datentypen ist gross geschrieben z.B. ''Clubmitglied'' und beginnt mit ''public class'' 
+  * In der Regel beinhaltet oder ist der Namen eines eigenen Datentyps ein Nomen.
+  * Verwenden Sie ganze Wörter und vermeiden Sie Akronyme und Abkürzungen.
+
+
+===== Verschachteln von Datentypen =====
+Datentypen, welche wie oben beschrieben wurden, können nun genauso als Variable verwendet
+werden, wie alle anderen auch. Im folgenden Beispiel wird eine Adresse gleich bei einer Person
+als Datentyp eingesetzt:
+<WRAP center round box 80%>
+<code java>
+public class Adresse {
+  String strasse;
+  int hausnummer;
+  String ort;
+  int postleitzahl;
+}
+
+public class Clubmitglied {
+  String name;
+  String vorname;
+  Adresse adresse = new Adresse();
+  int eintrittsjahr;
+  int geburtsjahr;
+  boolean ehrenmitglied;
+}
+
+</code>
+</WRAP>
+
+===== Zugriff =====
+Auf die Attribute ''( name , vorname , ...)'' wird nun  mit dem ''.''-Operator zugegriffen:
+<WRAP center round box 80%>
+<code java>
+public void run(){
+  Clubmitglied mitglied;
+  mitglied= new Clubmitglied ();
+  mitglied.name = "Freimann";
+  mitglied.adresse.hausnummer = 10;
+  System.out.println("Familienname: " + mitglied.name);
+  System.out.println("Hausnummer: " + mitglied.adresse.hausnummer);
+}
+</code>
+</WRAP>
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Kevin Maurizi, [[https://programmieraufgaben.ch|Philipp Gressly]]

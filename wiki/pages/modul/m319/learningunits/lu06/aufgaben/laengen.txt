@@ -1,0 +1,60 @@
+====== LU06.A05: Längenumrechner ======
+<WRAP center round todo 60%>
+Erstelle ein Programm, das eine Längenangabe zwischen verschiedenen Einheiten umrechnen kann.
+</WRAP>
+
+<HTML>
+<iframe src="https://trinket.io/embed/python3/ff4138b1d3?outputOnly=true&runOption=run&start=result" width="100%" height="250" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+</HTML>
+
+Das Programm erwartet drei Benutzereingaben:
+  * Die Länge, z.B. 15.74
+  * Die Einheit von der umgerechnet werden soll, z.B. Meter
+  * Die Einheit in die umgerechnet werden soll, z.B. Seemeilen
+
+Das Programm gibt die umgerechnete Längeneinheit aus.
+ 
+===== Auftrag =====
+Wir verwenden zwei Listen mit den Einheiten und den Umrechnungsfaktoren, um das Programm später möglichst einfach zu erweitern.
+
+^ units ^ _ ^ factors ^
+| Meter | | 1 |
+| Zentimeter | | 100 |
+| Meilen | | 0.000621371 |
+| Seemeilen | | 0.000539957 |
+
+Für die Eingabe der Einheit, zeigt das Programm dem Benutzer alle verfügbaren Einheiten an.
+Danach gibt der Benutzer den Wert und die beiden Einheiten (Von/Nach) für die Umrechnung ein.
+Entspricht seine Eingabe nicht einer der verfügbaren Einheiten, so zeigen wir eine Fehlermeldung und der Benutzer kann seine Eingabe wiederholen.
+
+Zuletzt rechnet das Programm den Wert um und zeigt das Resultat an.
+
+
+
+===== Vorgehen =====
+
+  - Akzeptiere das GitHub Classroom Assignment im Moodlekurs.
+  - Klone das Repository in PyCharm. \\ Im Repository auf GitHub findest du eine Reihe von Issues. Diese Issues zeigen dir, wie du das Programm schrittweise umsetzen kannst.
+  - Schaue dir das Issue **1** an.
+  - Codiere die im Issue beschriebene Programmlogik in ''converter.py''.
+  - Führe die im Issue beschriebenen Testfälle in ''converter_test.py'' aus.
+  - Falls die Testfälle erfolgreich durchgeführt wurden:
+    - Führe einen Commit durch. Schreibe als Commit-Message "Resolves #**n**", wobei du **n** durch die Nummer des Issues ersetzt.
+    - Führe einen Push in das GitHub Repository durch.
+    - Schaue dir das nächste Issue an und gehe zu Schritt 4.
+  - Sonst:
+    - Suche die Ursache für den Fehler und gehe zu Schritt 4.
+  - Führe einen Push durch.
+
+=== Abgabe ===
+Die Abgabe erfolgt durch den Push ins GitHub Repository.
+In Moodle ist keine Abgabe vorgesehen oder möglich.
+----
+<details>
+<summary>//=> GitHub Repo für externe Besucher//</summary>
+GitHub-Repo: https://github.com/templates-python/m319-lu06-a05-converter
+
+//Lernende am BZZ **müssen** den Link zum GitHub Classroom Assignment verwenden//
+</details>
+{{tag>M319-LU06}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

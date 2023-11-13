@@ -1,0 +1,129 @@
+====== LU05.L02 - Testfälle "Artikeldaten" ======
+===== Testfälle für gültige Werte =====
+
+^ Nr || 1 |
+^ Klassen || 1, 2, 3, 7 |
+^ Eingaben | Artikelnummer| 12345 |
+^ ::: | Artikelbezeichnung | Rundhaken |
+^ ::: | Einheit | Stück |
+^ ::: | Preis | 15.75 |
+^ Erwartetes Resultat ^ Meldung | Eingaben korrekt. Daten gespeichert. |
+| |||
+^ Nr || 2 |
+^ Klassen || 1, 2, 4, 7 |
+^ Eingaben | Artikelnummer| 00224|
+^ ::: | Artikelbezeichnung | Dosenluft |
+^ ::: | Einheit | Kilogramm |
+^ ::: | Preis | 257.80 |
+^ Erwartetes Resultat ^ Meldung | Eingaben korrekt. Daten gespeichert. |
+| |||
+^ Nr || 3 |
+^ Klassen || 1, 2, 5, 7 |
+^ Eingaben | Artikelnummer| 99876 |
+^ ::: | Artikelbezeichnung | Blubberdidu  |
+^ ::: | Einheit | Meter  |
+^ ::: | Preis | 0.10 |
+^ Erwartetes Resultat ^ Meldung | Eingaben korrekt. Daten gespeichert. |
+| |||
+^ Nr || 4 |
+^ Klassen || 1, 2, 6, 7 |
+^ Eingaben | Artikelnummer| 42034|
+^ ::: | Artikelbezeichnung | Donnergurgler  |
+^ ::: | Einheit | Pack |
+^ ::: | Preis | 924.53 |
+| |||
+^ Erwartetes Resultat ^ Meldung | Eingaben korrekt. Daten gespeichert. |
+
+===== Testfälle für ungültige Daten =====
+
+^ Nr || 10 |
+^ Klassen || 8 |
+^ Eingaben | Artikelnummer| 13X75 |
+^ ::: | Artikelbezeichnung | laksdjfoiaf |
+^ ::: | Einheit | Meter |
+^ ::: | Preis | 12.00 |
+^ Erwartetes Resultat ^ Meldung | ungültige Artikelnummer |
+^ Nr || 11 |
+^ Klassen || 9 |
+^ Eingaben | Artikelnummer| 19 |
+^ ::: | Artikelbezeichnung | earegawga|
+^ ::: | Einheit | Pack  |
+^ ::: | Preis | 7.77 |
+^ Erwartetes Resultat ^ Meldung | ungültige Artikelnummer |
+| |||
+^ Nr || 12 |
+^ Klassen || 10 |
+^ Eingaben | Artikelnummer| 55667788 |
+^ ::: | Artikelbezeichnung | poiusa0gpjndas |
+^ ::: | Einheit | Stück  |
+^ ::: | Preis | 885.50 |
+^ Erwartetes Resultat ^ Meldung | ungültige Artikelnummer |
+| |||
+^ Nr || 13 |
+^ Klassen || 11 |
+^ Eingaben | Artikelnummer| 55556 |
+^ ::: | Artikelbezeichnung | a |
+^ ::: | Einheit | Pack  |
+^ ::: | Preis | 6 |
+^ Erwartetes Resultat ^ Meldung | Ungültige Artikelbezeichnung |
+| |||
+^ Nr || 14 |
+^ Klassen || 12 |
+^ Eingaben | Artikelnummer| 66778 |
+^ ::: | Artikelbezeichnung | EinhornSamtFigurMitGrünenAugenUndBlauenHufen |
+^ ::: | Einheit | Meter |
+^ ::: | Preis | 16.89 |
+^ Erwartetes Resultat ^ Meldung | Ungültige Artikelbezeichnung |
+| |||
+^ Nr || 15 |
+^ Klassen || 13 |
+^ Eingaben | Artikelnummer| 12365 |
+^ ::: | Artikelbezeichnung | Ein Huhn |
+^ ::: | Einheit | Stück |
+^ ::: | Preis | 765.40 |
+^ Erwartetes Resultat ^ Meldung | Ungültige Artikelbezeichnung |
+| |||
+^ Nr || 16 |
+^ Klassen || 14 |
+^ Eingaben | Artikelnummer| 66331 |
+^ ::: | Artikelbezeichnung | Ein_Huhn |
+^ ::: | Einheit | Meters |
+^ ::: | Preis | 0.05 |
+^ Erwartetes Resultat ^ Meldung | Ungültige Einheit |
+| |||
+^ Nr || 17 |
+^ Klassen || 15 |
+^ Eingaben | Artikelnummer| 66112 |
+^ ::: | Artikelbezeichnung | KeinHund |
+^ ::: | Einheit | Pack |
+^ ::: | Preis | -5.74 |
+^ Erwartetes Resultat ^ Meldung | Ungültiger Preis |
+| |||
+^ Nr || 18 |
+^ Klassen || 16 |
+^ Eingaben | Artikelnummer| 00007|
+^ ::: | Artikelbezeichnung | Bond_James_Bond |
+^ ::: | Einheit | Kilogramm |
+^ ::: | Preis | 1750.35 |
+^ Erwartetes Resultat ^ Meldung | Ungültiger Preis |
+| |||
+^ Nr || 19 |
+^ Klassen || 17 |
+^ Eingaben | Artikelnummer| 42034 |
+^ ::: | Artikelbezeichnung | InspectorGordon |
+^ ::: | Einheit | Meter |
+^ ::: | Preis | 467.1258 |
+^ Erwartetes Resultat ^ Meldung | Ungültiger Preis |
+| |||
+^ Nr || 20 |
+^ Klassen || 18 |
+^ Eingaben | Artikelnummer| 34420 |
+^ ::: | Artikelbezeichnung | Batwoman |
+^ ::: | Einheit | Pack |
+^ ::: | Preis | 8-3/2 |
+^ Erwartetes Resultat ^ Meldung | Ungültiger Preis |
+| |||
+
+----
+{{tag>M450-LU05}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

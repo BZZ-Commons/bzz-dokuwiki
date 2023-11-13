@@ -1,0 +1,15 @@
+=== 9. LogicTraffic ===
+Sie haben in den ersten 8 Kapiteln ganz viel über binäre Logik gelernt. Somit haben Sie alle nötigen fachlichen Ressourcen, um in LogicTraffic die verschiedensten Situationen zu lösen.\\
+Öffnen Sie die WEB-Seite zu [[https://logictraffic.ch/|LogicTraffic ]] und lösen Sie die Aufgaben ab **Situation 4**.
+Sie sind völlig frei, in welcher Art Sie die Aufgaben lösen. 
+   * Sie können das nach der Methode try-and-error machen, in dem Sie in der WHT die jeweilige Kombination mit 0 oder 1 eintragen. Das Programm sagt Ihnen sofort, ob der Eintrag sinnvoll ist oder nicht. (Dieses Vorgehen bringt Sie aber nicht wirklich weiter)
+   * Sie erstellen für sich selber die WHT und geben dann im Formeleditor die KKNF bzw. KDNF ein.
+   * Sie minimieren die WHT mittels KV-Diagramm und geben dann den minimierten Ausdruck im Formeleditor ein.
+Auf Grund der Rückmeldung des Programms sehen Sie unmittelbar, ob Ihre Lösung korrekt ist.
+
+
+----
+[[modul:mathe:ma1:thema:lu04logik:start|Leitprogramm LogicTraffic]]
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) René Probst

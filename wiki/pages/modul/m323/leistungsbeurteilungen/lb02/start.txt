@@ -1,0 +1,51 @@
+====== LB02 - Portfolio - 55% ======
+<WRAP round box 60%>
+  * Dauer: 8 - 12 Lektionen
+  * Hilfsmittel: Openbook
+  * Sozialform: Einzelarbeit
+  * Wann: Nach LU06
+  * Gewichtung: 55%
+</WRAP>
+
+===== Übersicht =====
+Die Lernenden erarbeiten ihr eigenes Portfolio (OneNote, Word, [[https://www.notion.so|Notion]]) auf Basis des [[modul:m323:leistungsbeurteilungen:lb02:kompetenzraster|Kompetenzrasters]] des Modul 323.
+
+==== Inhalt ====
+
+=== Praxisprojekt ===
+Erstellen Sie eine Flask-Applikation die möglichst viele Funktionale-Komponenten enthält. Es darf sich bei der Anwendung nicht um eine Todo-Liste oder um eine Einkaufsliste handeln.
+
+
+=== Portfolio ===
+
+Für jedes bearbeitete Kompetenzfeld (A1G, A1E, etc) müssen ein mindestens 600 Zeichen (inkl. Leerschläge) langer Lernnachweis erstellt werden, zusätzlich muss ein Code-Beispiel zu diesem Kompetenzfeld eingefügt werden. Das verwendete Code-Beispiel dazu, muss aus der Flask-Applikation des Praxisprojektes sein. Ein Lernnachweis könnte folgendermassen aussehen --> [[modul:m323:leistungsbeurteilungen:lb02:lernnachweis|Beispiel]]
+
+<WRAP center round info 60%>
+Sie können auch einen Lernnachweis über das ganze Kompetenzband A, B etc. machen, dann muss dieser Nachweis allerdings 1800 Zeichen enthalten und auch 3 Beispiele. Laden Sie diesen Nachweis dann in jeder passenden Moodle-Abgabe hoch.
+</WRAP>
+
+
+==== Abgabe ====
+Laden Sie die die Lernnachweise nach Kompetenzfeld geordnet in Moodle hoch. Das kann sowohl ein Word-Dokument wie auch Screenshots einer anderen Umgebung sein (OneNote, Notion, etc...)
+
+Achten Sie darauf die Kriterien zu erfüllen:
+  * 600 Zeichen Beschreibung/Reflexion/Dokumentation
+  * Code-Beispeiel aus Flask-Praxisprojekt
+
+==== Bewertung der Lernnachweise ====
+
+In diesem Kurs verwenden wir eine Punkteskala von 1 bis 3, um eure Lernnachweise im Kompetenzraster zu bewerten. Hier ist die Bedeutung jeder Punktzahl:
+
+  * **1 Punkt**: Die Arbeit erfüllt minimale Anforderungen, aber es fehlen entscheidende Elemente oder es gibt mehrere Fehler. Es besteht deutliches Verbesserungspotenzial.
+
+  * **2 Punkte**: Die Arbeit ist solide und erfüllt die meisten, wenn nicht alle Anforderungen. Kleinere Fehler könnten vorhanden sein, aber sie beeinträchtigen das Gesamtverständnis nicht wesentlich.
+
+  * **3 Punkte**: Die Arbeit ist ausgezeichnet und übertrifft die Anforderungen. Sie zeigt ein tiefes Verständnis des Themas und/oder besondere Kreativität oder Eigeninitiative.
+
+==== Notengebung ====
+Total sind 18 Kompetenzbereiche zu belegen. 
+Jeder Beleg gibt maximal 3 Punkte womit das Total bei 54 Punkten liegt.
+Das Praxisprojekt (Flask-Applikation) gibt 10 Punkte.
+
+**64 Punkte** entsprechen der **Note 6.0**\\
+**39 Punkte** entsprechen der **Note 4.0**

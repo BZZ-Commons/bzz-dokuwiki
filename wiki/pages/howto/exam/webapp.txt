@@ -1,0 +1,55 @@
+======  2) Webapplikation ======
+
+=====  Anmeldung =====
+
+Die Applikation ist unter https://it.bzz.ch/exam erreichbar.
+
+Die Anmeldung erfolgt mit dem Benutzerkonto im BZZ Intranet.
+
+
+{{:howto:exam:login.png?400|}}
+===== Liste der Nachprüfungen =====
+
+==== Lehrpersonen ====
+
+Nach der Anmeldung sieht eine Lehrperson zunächst ihre offenen Nachprüfungen. Die Suchkriterien können angepasst werden, um die gewünschten Nachprüfungen zu finden.
+
+{{:howto:exam:examlist.png?800|}}
+
+=== Aktionen ===
+
+| {{:howto:exam:iconedit.png|}} | Öffnet den Eintrag zur Bearbeitung. |
+| {{:howto:exam:iconemail.png|}} | Sendet dem Lernenden eine E-Mail mit Angaben zur verpassten Prüfung, dem weiteren Vorgehen und dem Termin der Nachprüfung an den Lernenden. |
+| {{:howto:exam:iconpdf.png|}} | Erzeugt das Deckblatt für die Abgabe der Prüfungsunterlagen. Lege das ausgedruckte Deckblatt zusammen mit den Papierunterlagen in ein Sichtmäppchen und deponiere es im Ablagefach. |
+| {{:howto:exam:iconcopy.png|}} | Erstellt eine Kopie des Eintrags und öffnet die Kopie zur Bearbeitung. |
+
+
+====Lernende ====
+
+Ein Lernender kann nur seine eigenen Nachprüfungen ansehen. Er kann die Einträge nicht bearbeiten.
+
+
+
+==== Nachprüfung erfassen oder bearbeiten ====
+
+  * Fahre mit dem Mauszeiger auf das -Symbol, um einen Hilfetext zum Eingabefeld zu sehen.
+  * Wenn du bei den Feldern "Lernender" und "Lehrperson" einen Teil des Namens eingibst, erscheint eine Liste mit Vorschlägen. Wähle die gesuchte Person aus, um den Namen und die E-Mail-Adresse zu übernehmen.
+  * Das Feld "Raum" dient nur als Information, es wird von der Nachprüfungsaufsicht ausgefüllt.
+
+{{:howto:exam:examedit.png?800|}}
+
+===== Aufsicht =====
+
+In dieser Ansicht werden alle Nachprüfungen für das gewählte Datum angezeigt.
+
+Alle Lehrpersonen können die Liste ansehen. Nur die Aufsichtsperson(en) für den gewählten Termin können, …
+
+  * … den Raum und Status ändern,
+  * … Einträge auswählen, um dem Lernenden das Aufgebot zu senden,
+  * … Einträge auswählen, um die Datenblätter drucken.
+
+{{:howto:exam:eventexam.png?800|}}
+
+==== Aufgebot senden ====
+Sendet den Lernenden für alle ausgewählten Nachprüfungen eine Email mit dem Aufgebot.
+Die Email geht als CC an die hauptverantwortliche Aufsichtsperson.

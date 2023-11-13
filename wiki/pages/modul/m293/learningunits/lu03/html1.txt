@@ -1,0 +1,155 @@
+====== LU03a - Elemente um HTML zu Strukturieren ======
+
+<WRAP center round info 60%>
+
+**Lernziele:**
+
+  * Den Unterschied zwischen Block- und Inline-Elementen verstehen
+  * Die grundlegenden Eigenschaften und das Verhalten von Block- und Inline-Elementen kennen
+  * Beispiele für Block- und Inline-Elemente identifizieren können
+  * Wissen, wie man Block- und Inline-Elemente verwendet, um eine Webseite zu gestalten
+
+</WRAP>
+
+===== Block- und Inline-Elemente =====
+
+Sie werden hauptsächlich auf 2 Arten von HTML-Elementen stoßen:
+
+**Block**-Elemente wie:
+
+  * Absätze ''<p>''
+  * Listen: ungeordnete (mit Aufzählungspunkten) ''<ul>'' oder geordnete Listen (mit Zahlen) ''<ol>''
+  * Überschriften: von der 1. Ebene ''<h1>'' bis zur 6. Ebene ''<h6>''
+  * artikel ''<artikel>''
+  * abschnitte ''<section>''
+
+**Inline**-Elemente wie:
+
+  * Links ''<a>''
+  * hervorgehobene Wörter ''<em>''
+  * wichtige Wörter ''<strong>''
+  * kurze Zitate ''<q>''
+
+**Block**-Elemente dienen dazu, die wichtigsten Teile Ihrer Seite zu strukturieren, indem sie Ihren Inhalt in zusammenhängende Blöcke unterteilen.
+
+**Inline**-Elemente dienen dazu, einen Teil eines Textes zu differenzieren, um ihm eine bestimmte Funktion oder Bedeutung zu geben. Inline-Elemente bestehen in der Regel aus einem einzigen oder wenigen Wörtern.
+
+==== Öffnende und schließende Tags ====
+Alle Elemente auf Blockebene haben einen öffnenden und einen schließenden Tag.
+
+Folglich sind selbstschließende Elemente Inline-Elemente, einfach weil ihre Syntax es nicht zulässt, dass sie ein anderes HTML-Element enthalten.
+
+
+^                  ^ Mit öffnenden und schließenden Tags                         ^ Selbstschließend     |
+^ Block-Elemente   | ''<p> </p>'' \\ ''<ul> </ul>'' \\ ''<ol> </ol>''            | **Nicht möglich**            |
+^ Inline Elemente  | ''<a> </a>'' \\ ''<strong> </strong>'' \\ ''<em> </em>''    | ''<input>'' \\ ''<br>'' \\ ''<img>'' |
+
+==== Hierarchie von HTML Dokumenten ====
+Ein HTML-Dokument ist wie ein großer Stammbaum, mit Eltern, Geschwistern, Kindern, Vorfahren und Nachkommen.
+Er entsteht durch die Möglichkeit, HTML-Elemente ineinander zu verschachteln.
+
+==== Verschachtelung ====
+Schreiben wir einen einfachen Absatz und verbessern ihn, indem wir Teile des Textes durch zwei Inline-Elemente differenzieren:
+
+<code html4strict>
+<p>
+  Sir <strong>Alex Ferguson</strong> once said about Filipo Inzaghi:<q>"That lad must have been born offside."</q>.
+</p>
+</code>
+
+
+<WRAP center round box 60%>
+Sir **Alex Ferguson** once said about Filipo Inzaghi: "That lad must have been born offside.".
+</WRAP>
+
+In dieser Anordnung:
+
+  * das ''<strong>''-Element verleiht den Worten "Alex Ferguson" mehr Bedeutung
+  * das ''<q>'' markiert sein Zitat über Inzaghi
+
+Die Tatsache, dass ''<strong>'' in Fettdruck dargestellt wird, ist nur das Standardverhalten des Browsers. Denken Sie daran, dass Sie HTML-Elemente nach ihrer Bedeutung auswählen müssen, nicht danach, wie sie aussehen.
+
+In diesem Fall:
+
+  * ''<p>'' ist das **übergeordnete** Element von ''<strong>'' und ''<q>''
+  * ''<strong>'' und ''<q>'' sind **untergeordnete** Elemente von ''<p>''
+  * ''<strong>'' und ''<q>'' sind **Geschwister**-Elemente
+
+==== Reihenfolge ====
+
+Wie die **Verschachtelung** funktioniert, hängt von der Position der öffnenden und schließenden Tags ab.
+
+Da ein HTML-Element aus einem öffnenden Tag, einem schließenden Tag und allem, was dazwischen liegt, besteht, muss ein untergeordnetes Element **vor** dem Schließen des übergeordneten Elements geschlossen werden.
+
+<code html4strict>
+<!-- This is INVALID code! :-( -->
+<p>
+  This HTML code won't work because I the "strong" tag is opened here <strong>but is only closed after the paragraph.
+</p></strong>
+</code>
+
+Da das <strong>-Element nach dem <p>-Element geöffnet wurde (und somit als Kind von <p> gilt), muss das <strong>-Element vor dem übergeordneten <p>-Element geschlossen werden.
+
+<code html4strict>
+<!-- This is valid code. :-) -->
+<p>
+  This HTML code will work because I the "strong" tag is opened <strong>and closed</strong> properly.
+</p>
+</code>
+
+==== Tiefe ====
+
+Da untergeordnete Elemente selbst wiederum andere untergeordnete Elemente enthalten können, ist es möglich, eine tiefere Hierarchie innerhalb eines HTML-Dokuments zu erstellen.
+
+Unser obiger Absatz könnte Teil eines Blog-Artikels sein:
+
+<code html4strict>
+<article>
+  <h1>Famous football quotes</h1>
+  <p>
+    Sir <strong>Alex Ferguson</strong> once said about Filipo Inzaghi:<q>"That lad must have been born offside"</q>.
+  </p>
+  <p>
+    When criticized by John Carew, <strong>Zlatan Ibrahimovic</strong> replied: <q>"What Carew does with a football, I can do with an orange"</q>.
+  </p>
+  <p>
+    <strong>George Best</strong> said <q>"I spent a lot of money on booze, birds and fast cars. The rest I just squandered."</q> when asked about his lifestyle.
+  </p>
+</article>
+</code>
+
+In diesem Aufbau:
+
+  * ''<article>'' ist der Vorfahre jedes anderen Elements
+  * ''<article>'' ist der Elternteil von ''<h1>'' und den 3 ''<p>''
+  * ''<h1>'' und die 3 ''<p>'' sind Geschwister
+  * jedes ''<p>'' ist das Elternteil des ''<strong>'' und des ''<q>'', die sie enthalten
+  * jedes ''<h1>'', ''<p>'', ''<strong>'' und ''<q>'' sind alle Nachkommen von ''<article>''
+
+Die Analogie des Stammbaums gilt auch dann, wenn mehrere Ebenen der HTML-Schachtelung durchlaufen werden:
+
+  * Ein **Nachkomme** von Element X ist jedes Element, das in X enthalten ist.
+  * ein **Kind** ist nur ein direkter Nachkomme
+  * ein **Vorfahre** von Element Y ist jedes Element, das Y enthält
+  * der **Elternteil** ist nur der erste direkte Vorfahre
+  * ein **Geschwisterteil** von Element X ist jedes Element, das denselben Elternteil hat
+
+==== Block- und Inline-Schachtelung ====
+**Block**-Elemente können entweder Block- oder Inline-Elemente enthalten.
+
+**Inline**-Elemente können jedoch nur andere Inline-Elemente enthalten. (''<a>'' ist davon die einzige Ausnahme)
+
+<code html4strict>
+<!-- This is INVALID code! :-( -->
+<strong>
+  <p>You can't put a paragraph inside a "strong" tag.
+</strong>
+</code>
+
+Erinnern Sie sich einfach an Vorfahren/Nachkommen, Eltern/Kinder und Geschwister.
+
+---- 
+
+{{tag>m293-LU03 m293-E1G m293-E1F}}
+
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Kevin Maurizi, Marcel Suter

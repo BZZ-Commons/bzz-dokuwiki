@@ -1,0 +1,143 @@
+====== LU04c - Huffman  ======
+
+//Siehe auch [[http://de.wikipedia.org/wiki/Datenkompression]]//
+
+===== Einleitung =====
+
+Die Huffman-Codierung funktioniert ähnlich wie das Morsealphabet.
+Es wird aber kein fest vorgegebener Baum mit den Zeichen und Codes verwendet.
+Stattdessen wird die Codierung während der Verarbeitung erstellt.
+Dadurch wird für jede Art von Daten das häufigste Zeichen den kürzesten Code erhalten.
+
+=== Vorgehen ===
+Um das Vorgehen verständlich zu machen, verwenden wir ein Beispiel.
+Wir wollen den folgenden Text komprimieren:
+"bitte_nehmen_sie_ihren_abfall_mit".
+
+== 1. Notiere alle Zeichen und deren Häufigkeit ==
+Jedes Zeichen wird genau 1x notiert.
+Als Knoten (Kreis) wird die Häufigkeit des Zeichens notiert.
+{{:modul:m114:learningunits:lu04:huffman01.png?400|}}
+
+== 2. Verbinde jeweils zwei Knoten ==
+Wir suchen zwei Knoten mit den kleinsten Zahlen, die noch keine Verbindung nach oben haben.
+Diese Knoten verbinden wir zu einem neuen Knoten und addieren die Häufigkeit. Immer wenn sie eine Verbindung nach oben Ziehen, steht der Ast rechts für den binären Code "1" und der linke Ast für den binären Code "0".
+
+{{:modul:m114:learningunits:lu04:huffman02.png?400|}}
+
+== 3. Wiederhole ==
+Der Schritt 2 wird wiederholt, bis nur noch ein Knoten übrig sind.
+
+{{:modul:m114:learningunits:lu04:huffman03.png?400|}}
+
+== Fertiger Baum ==
+{{:modul:m114:learningunits:lu04:huffman09.png?400|}}
+
+Durch dieses Vorgehen wird gleichzeitig sichergestellt, dass die Codes eindeutig sind.
+Kein Code ist gleichzeitig der Anfang eines anderen Codes.
+Dadurch ist die Verwendung eines Trennzeichens überflüssig.
+
+<WRAP center round info 60%>
+Im Moodle-Kurs finden Sie das Lernprogramm: HuffmanShannonFano.jar.
+Mit diesem Programm können Sie das Erstellen von Huffman-Bäumen üben.
+
+Zum Starten geben Sie in der Konsole ein:
+<code>
+java -jar HuffmanShannonFano.jar
+</code>
+</WRAP>
+
+=== Codierter Text ===
+== Codetabelle ==
+Aus dem Baum lässt sich die Codetabelle mit den Zeichen und ihren Codes ableiten.
+
+^ Zeichen ^ Häufigkeit ^ Code ^
+| _ | 5 | 110 |
+| e | 5 | 111 |
+| i | 4 | 100 |
+| n | 3 | 000 |
+| t | 3 | 001 |
+| a | 2 | 0100 |
+| b | 2 | 0101 |
+| h | 2 | 0110 |
+| m | 2 | 0111 |
+| l | 2 | 1010 |
+| r | 1 | 101100 |
+| f | 1 | 101101 |
+| s | 1 | 10111 |
+
+Je häufiger das Zeichen im Text vorkommt, desto kürzer ist der Code.
+
+== Codierter Text ==
+<code>
+0101 100 001 001 111 110 000 111 0110 0111 111 000 110 10111 100 111 110 100 0110 101100 111 000 110 0100 0101 101101 0100 1010 1010 110 0111 100 001
+</code>
+
+Zur Veranschaulichung wurde hier nach jedem Zeichen ein Leerschlag eingefügt.
+In einer Huffman-codierten Datei würden alle Bits ohne Unterbruch hintereinander stehen:
+<code>
+010110000100111111000011101100111111000110101111001111101000110101100111000110010001011011010100101010101100111100001
+</code>
+
+== Kompressionsfaktor ==
+Vergleichen wir den Speicherplatz des ursprünglichen Textes mit dem komprimierten Code:
+
+  * ''bitte_nehmen_sie_ihren_abfall_mit'': 33 ASCII-Zeichen à 8 Bit = 264 Bit
+  * Huffman-Code: 117 Bit
+
+<code>
+                            117 * 100
+Kompressionsfaktor = 100 -  ---------- = 55.7%
+                               264
+</code>
+
+In diesem vereinfachten Beispiel haben wir den Speicherplatz für die Codetabelle ausser acht gelassen.
+
+=== Decodieren ===
+Zum Decodieren wird jeder Code durch das entsprechende Zeichen ersetzt.
+Dies wird erleichtert, wenn die Codetabelle nach dem Code aufsteigend sortiert ist.
+
+^ Code ^ Zeichen ^
+| 000 | n |
+| 001 | t |
+| 0100 | a |
+| 0101 | b |
+| 0110 | h |
+| 0111 | m |
+| 100 | i |
+| 1010 | l |
+| 101100 | r |
+| 101101 | f |
+| 10111 | s |
+| 110 | _ |
+| 111 | e |
+
+Aus dem codierten Text werden so viele Bits genommen, bis diese Bitkombination zu einem Code in der Tabelle passt:
+<code>
+010110000100111111000011101100111111000110101111001111101000110101100111000110010001011011010100101010101100111100001
+</code>
+
+  - 0 => Passt zu keinem Code
+  - 01 => Passt zu keinem Code
+  - 010 => Passt zu keinem Code
+  - 0101 => Buchstabe "b"
+
+
+Nun werden diese Bits aus dem codierten Text entfernt und das Verfahren wird mit den nächsten Bits wiederholt:
+<code>
+10000100111111000011101100111111000110101111001111101000110101100111000110010001011011010100101010101100111100001
+</code>
+  - 1 => Passt zu keinem Code
+  - 10 => Passt zu keinem Code
+  - 100 => Buchstabe "i"
+
+=== Einsatz der Huffman-Codierung ===
+Aktuelle Kompressionsprogramme nutzen mehrere Kompressionsverfahren nacheinander.
+Dabei wird oft als letzte Stufe die Huffman-Codierung angewandt.
+
+Die Huffman-Codierung wird auch bei Bildformaten eingesetzt.
+Zum Beispiel verwendet das PNG-Format unter anderem eine Huffman-Codierung.
+
+----
+{{tag>m114-A0G}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

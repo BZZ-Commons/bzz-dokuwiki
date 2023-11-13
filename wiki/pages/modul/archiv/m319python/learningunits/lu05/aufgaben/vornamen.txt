@@ -1,0 +1,47 @@
+====== LU05.A01: Vornamen ======
+<WRAP center round info 60%>
+Lösen Sie die Aufgabe mit [[https://think.cs.vt.edu/blockpy/blockpy/|BlockPy]] oder [[https://www.codingrooms.com/compiler/python-block|Codingrooms]]
+
+Laden Sie einen Screenshot ihres Blockly-Ablaufs hoch.
+</WRAP>
+Erstellen Sie ein Programm mit Blockly, welches eine Liste mit Vornamen verarbeitet.
+Jeder Schritt stellt eine Erweiterung der vorherigen Schritte dar.
+Zur besseren Übersicht sind die Anweisungen mit Farben codiert:
+  * <color green>Diese Anweisung ist neu</color>
+  * <color red>Diese Anweisung wird nicht mehr benötigt</color>
+  * Diese Anweisung bleibt bestehen.
+
+===== Schritt 1 =====
+Aus einer vorgegebenen Liste mit Vornamen, soll der dritte Vorname ausgegeben werden.
+
+==== Programmlogik ====
+  * <color green>Definieren Sie eine Variable für eine neue Liste.</color>
+  * <color green>Speichern Sie fünf verschiedenen Vornamen in dieser Liste.</color>
+  * <color green>Geben Sie den dritten Vornamen aus der Liste aus.</color>
+
+===== Schritt 2 =====
+Das Programm füllt die Liste mit den Vornamen, die der Benutzer eingibt.
+
+===== Programmlogik =====
+  * Definieren Sie eine Variable für eine neue Liste.
+  * <color red>Speichern Sie fünf verschiedenen Vornamen in dieser Liste.</color>
+  * <color green>Erstellen Sie eine Iteration, die 5x durchgeführt wird:</color>
+    * <color green>Der Benutzer gibt einen Vornamen ein.</color>
+    * <color green>Speichern Sie diese Eingabe am Ende der Liste.</color>
+  * Geben Sie den dritten Vornamen aus der Liste aus. 
+
+==== Schritt 3 ====
+Der Benutzer bestimmt, welchen Vornamen das Programm ausgeben soll.
+
+==== Programmlogik ====
+  * Definieren Sie eine Variable für eine neue Liste.
+  * Erstellen Sie eine Iteration, die 5x durchgeführt wird:
+    * Der Benutzer gibt einen Vornamen ein.
+    * Speichern Sie diese Eingabe am Ende der Liste.
+  * <color red>Geben Sie den dritten Vornamen aus der Liste aus.</color>
+  * <color green>Der Benutzer gibt eine Zahl von 1 bis 5 ein.</color>
+  * <color green> Geben Sie den vom Benutzer gewählten Vornamen aus der Liste aus.</color>
+
+----
+{{tag>319-C1G 319-C1F 319-C1E}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

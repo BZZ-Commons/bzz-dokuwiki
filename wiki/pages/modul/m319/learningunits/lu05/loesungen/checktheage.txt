@@ -1,0 +1,20 @@
+====== LU05.L05: Checking the age ======
+
+<code python>
+def main():
+    age = int(input('How old are you?\n'))
+    if age >= 0 and age <= 120:
+        print('OK')
+    else:
+        print('Impossible!')
+
+
+if __name__ == '__main__':
+    main()
+
+</code>
+
+----
+{{tag>M319-LU05}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter, Kevin Maurizi
+

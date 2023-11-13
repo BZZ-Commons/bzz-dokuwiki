@@ -1,0 +1,35 @@
+====== LU03.A06 -  Transformation von Daten ======
+
+<WRAP center round todo 60%>
+Sie arbeiten in der Personalabteilung eines Unternehmens und haben die Aufgabe, eine Softwarelösung zu entwickeln, um die Daten der Mitarbeiter zu analysieren und zu transformieren. Sie sollen Higher-Order Functions verwenden, um verschiedene Transformationen auf die Mitarbeiterdaten anzuwenden.
+</WRAP>
+
+
+===== Aufgabenstellung =====
+
+=== Mitarbeiterdaten Definieren ===
+ Erstellen Sie eine Liste von Mitarbeitern, wobei jeder Mitarbeiter ein Dictionary mit den Eigenschaften 'name', 'age', 'salary' und 'department' ist.
+
+=== Transformationsfunktionen Erstellen ===
+Schreiben Sie verschiedene Funktionen, die die Mitarbeiterdaten auf verschiedene Weise transformieren.
+
+Im minimum implementieren Sie:
+  * Erhöhung des Gehalts aller Mitarbeiter in einer bestimmten Abteilung um einen festgelegten Prozentsatz. ''increase_salary_by_department()''
+  * Ermittlung der Mitarbeiter, die älter oder jünger als ein bestimmtes Alter sind. ''filter_by_age()''
+  * Umwandlung der Namen aller Mitarbeiter in Großbuchstaben. ''convert_names_to_uppercase()''
+
+Seien Sie kreativ und bauen Sie noch andere Filter- oder Transformier-Funktionen
+
+=== Higher-Order Funktion für Transformation Erstellen ===
+Schreiben Sie eine Higher-Order Function ''transform_employee_data()'', die die Mitarbeiterliste und eine Transformationsfunktion akzeptiert. Diese Higher-Order Function sollte die Transformationsfunktion auf die Liste der Mitarbeiter anwenden und das Ergebnis zurückgeben.
+
+=== Testen Sie Ihre Lösung ===
+Verwenden Sie den ''if %%__name__ == '__main__%%':'' Block, um Ihre Funktionen zu testen. Demonstrieren Sie, wie Ihre Higher-Order Function mit verschiedenen Transformationsfunktionen arbeitet, um verschiedene Ausgaben zu erzeugen.
+
+==== Anforderungen ====
+Verwenden Sie keine Lambda-Funktionen oder die map Funktion in Ihrer Lösung.\\
+Der Code sollte gut kommentiert sein, um die Funktionsweise jeder Funktion zu erläutern.
+
+----
+<nodisp>https://github.com/templates-python/m323-lu03-a06-transformation</nodisp>
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/ch/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Kevin Maurizi 

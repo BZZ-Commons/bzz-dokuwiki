@@ -1,0 +1,34 @@
+===== Ausgangslage =====
+
+Ein Programm soll je nach Geschlecht die korrekte Briefanrede in mehreren Sprachen ausgeben.
+
+^Sprache^Weiblich^Männlich^
+^D|Sehr geehrte Frau|Sehr geehrter Herr|
+^F|Chère madame|Cher monsieur|
+^E|Dear Mrs.|Dear Mr. |
+
+=== Ablauf des Programms ===
+<code>
+1. Der Benutzer gibt das Geschlecht ein: W(eiblich), M(ännlich) oder X(Exit)
+2. Solange das Geschlecht nicht 'X' ist.
+  2.1. Falls das Geschlecht 'W' ist.
+    2.1.1. Das Programm gibt die Anreden für Weiblich aus.
+  2.2. Sonst
+    2.2.1. Das Programm gibt die Anreden für Männlich aus.
+  2.3. Der Benutzer gibt das Geschlecht ein: W(eiblich), M(ännlich) oder X(Exit)
+</code>
+
+=== Ablauf im Terminal ===
+<code>
+Geschlecht (W oder M / X=Ende) > W
+D: Sehr geehrte Frau
+F: Chère madame
+E: Dear Mrs.
+
+Geschlecht (W oder M / X=Ende) > X
+
+Uf Wiederluege
+</code>
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Marcel Suter

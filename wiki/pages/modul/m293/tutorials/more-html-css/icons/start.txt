@@ -1,0 +1,102 @@
+====== Icons auf Website verwenden ======
+
+Icons in eine Webseite einzufügen ist nicht schwer. Aber wenn man Texte und Icons kombiniert (z.B. für einen Button) oder wenn die Icons in der Grösse veränderbar sein sollen, dann wird es schwierig.
+
+Die Lösung für dieses Problem sind **Icon Fonts** und **SVG Icons**. Icon Fonts und SVG Icons können in der Grösse und Farbe angepasst werden.
+
+{{icons.png?nolink|Icons}}
+
+Im Folgenden schauen wir ein paar Optionen an.
+
+===== Ionicons (SVG) =====
+
+[[https://ionicons.com/|Ionicons]] sind sehr einfach in der Website zu integrieren.
+
+Gehen Sie zur [[https://ionicons.com/usage|Ionicons Usage]] Seite und kopieren Sie das Script Tag. Platzieren sie das ''%%<script>%%'' Tag am Schluss Ihrer Website, gerade vor dem schliessenden ''%%</body>%%'' Tag.
+
+Hier ist ein Beispiel. Sie sollten jedoch die neuste Version von der Website oben kopieren:
+
+<HTML>
+<pre class="prettyprint lang-javascript">
+&lt;script src="https://unpkg.com/ionicons@4.4.2/dist/ionicons.js">&lt;/script>
+</pre>
+</HTML>
+
+Um ein Icon zu verwenden, wählen Sie eines aus der [[https://ionicons.com/|Ionicons Icon Übersicht]] aus. Wenn Sie darauf klicken, wird der Code angezeigt, welcher eingefügt werden muss. Hier ist ein Beispiel mit Icon und Text:
+
+<HTML>
+<pre class="prettyprint lang-html">
+&lt;ion-icon name="heart">&lt;/ion-icon> I love icons
+</pre>
+</HTML>
+
+So sollte das Resultat aussehen:
+
+{{love-icons.png?nolink|Love Icons}}
+
+===== Andere Icon-Bibliotheken =====
+
+  * [[https://fontawesome.com/free|Font Awesome]] - eine sehr beliebte Icon Font.
+  * [[https://octicons.github.com/|Octicons]]
+  * [[https://useiconic.com/open/|Iconic]]
+  * [[http://glyph.smarticons.co/|Glyph]]
+  * [[https://github.com/danklammer/bytesize-icons|Bytesize]]
+  * [[https://material.io/tools/icons/|Google Material Icons]]
+  * Und viele mehr...
+
+----
+
+<html>
+  <nav>
+    <div class="article-paging">
+      <ul class="pagination">
+        <li>
+          <a href="/wikiV2/modul/m293/tutorials/more-html-css/" data-toggle="tooltip" title="" data-original-title="Mehr HTML & CSS">
+          Intro
+          </a>
+        </li>
+        
+        <li>
+          <a href="/wikiV2/modul/m293/tutorials/more-html-css/website-layout/" data-toggle="tooltip" title="" data-original-title="Website-Layout mit Bootstrap">
+            1
+          </a>
+        </li>
+        
+        <li class="active">
+          <a href="/wikiV2/modul/m293/tutorials/more-html-css/icons/" data-toggle="tooltip" title="" data-original-title="Icons auf Website verwenden">
+            2
+          </a>
+        </li>
+        
+        <li>
+          <a href="/wikiV2/modul/m293/tutorials/more-html-css/image-bootstrap/" data-toggle="tooltip" title="" data-original-title="Bilder mit Bootstrap verwenden">
+            3
+          </a>
+        </li>
+        
+        <li>
+          <a href="/wikiV2/modul/m293/tutorials/more-html-css/image-editing/" data-toggle="tooltip" title="" data-original-title="Bilder gestalten">
+            4
+          </a>
+        </li>
+        
+        <li>
+          <a href="/wikiV2/modul/m293/tutorials/more-html-css/image-sources/" data-toggle="tooltip" title="" data-original-title="Kostenlose Bilder">
+            5
+          </a>
+        </li>
+        
+        <li>
+          <a href="/wikiV2/modul/m293/tutorials/more-html-css/text/" data-toggle="tooltip" title="" data-original-title="Textformatierung">
+            6
+          </a>
+        </li>
+        
+      </ul>
+    </div>
+  </nav>
+</html>
+
+----
+Diese Seite ist abgeleitet von [[https://code.makery.ch/|code.makery]] von [[https://code.makery.ch/about/|Marco Jakob]], verwendet unter [[https://creativecommons.org/licenses/by/4.0/|CC BY]].\\ 
+Sie ist lizenziert unter [[https://creativecommons.org/licenses/by-nc-sa/4.0/|CC BY-NC-SA]] von Daniel Fahrni <daniel.fahrni@bzz.ch>.

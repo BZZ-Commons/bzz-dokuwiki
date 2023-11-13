@@ -1,0 +1,17 @@
+====== LU04.A05 - Verdoppeln der Elemente in einer Liste ======
+
+<WRAP center round todo 60%>
+Verwende die ''map''-Funktion, um alle Elemente einer Liste zu verdoppeln.
+</WRAP>
+
+===== Detaillierte Aufgabenstellung =====
+Du hast eine Liste von Zahlen: [1, 2, 3, 4, 5]. Deine Aufgabe ist es, die ''map''-Funktion zu verwenden, um eine neue Liste zu erstellen, in der alle Zahlen der ursprünglichen Liste verdoppelt sind.
+
+
+===== Vorlage =====
+
+{{gh>https://github.com/templates-python/m323-lu04-a05-map/blob/main/main.py}}
+
+----
+<nodisp>https://github.com/templates-python/m323-lu04-a05-map</nodisp>
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/ch/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Kevin Maurizi 

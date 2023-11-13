@@ -1,0 +1,58 @@
+====== LU08.A02: Syntaxfehler-2 ======
+
+===== Programmaufgabe =====
+
+Das Programm wandelt Dezimalzahlen in römische Zahlzeichen um.
+Dabei wird die Subtraktionsregel (maximal 3 identische Zeichen, ausser //M//) berücksichtigt.
+Leider ist das Programm eine Sammlung von Syntaxfehlern.
+Manche werden direkt in der IDE erkannt, andere erst beim Ausführen.
+
+<code python>
+def run():
+    decimals = {1, 4, 5, 9, 10, 40, 50, 90,
+                100, 400, 500, 900, 1000}
+    numerals = {"I", "IV", "V", "IX", "X", "XL",
+                "L", "XC", "C", "CD", "D", "CM", "M"}
+    position = len(numerals - 1)
+
+    number = user_input
+    while number
+    div = number // decimals[position]
+    number %= decimals[position]
+
+    while div:
+        print(numerals(position), end="")
+        div =- 1
+    position -= 1
+
+
+def user_input():
+    input_string = input('Natürliche Zahl > ')
+    while not input_string.isdigit():
+        input_string = input('Eingabe muss eine natürliche Zahl sein > ')
+    return int(input_string)
+
+
+if __name__ == '__main__':
+    main()
+
+</code>
+
+==== Vorgehen ====
+  - Akzeptieren Sie das Assignment im GitHub Classroom
+  - Klonen Sie ihr Repository in PyCharm.
+  - Korrigieren Sie den/die Fehler im Sourcecode.
+  - Führen Sie die Tests in ''mark_test.py'' aus.
+  - Korrigieren Sie die Fehler, welche erst beim Ausführen entdeckt werden.
+  - Wenn alle Tests erfolgreich sind: Commit & Push
+
+----
+<details>
+<summary>//=> GitHub Repo für externe Besucher//</summary>
+GitHub Repository https://github.com/templates-python/m319-lu08-a02-syntaxfehler-2
+
+//Lernende am BZZ müssen den Link zum GitHub Classroom Assignment verwenden//
+
+</details>
+{{tag>M319-LU08}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/ch/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Marcel Suter, Kevin Maurizi 

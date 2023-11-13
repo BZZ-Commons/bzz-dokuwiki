@@ -1,0 +1,91 @@
+====== LU04f - Datensicherung ======
+<WRAP center round info 60%>
+Bei einer Datensicherung erstelle ich Kopien von Daten, damit ich diese bei Bedarf wiederherstellen kann.
+</WRAP>
+
+===== Datenverlust =====
+Je nach Situation kann ein Datenverlust ärgerlich sein oder meine Existenz bedrohen:
+  * Verliere ich meine Urlaubsfotos, hat das in der Regel keine weitereichenden Folgen. 
+  * Überschreibe ich zwei Tage vor dem Abgabedatum meine Diplomarbeit mit einer leeren Vorlage, kann dies meinen Studienerfolg gefährden.
+  * Verliert eine Firma wichtige Geschäftsunterlagen, so kann dies zu Strafzahlungen und zum Konkurs führen.
+
+===== Datensicherung =====
+Eine mögliche Strategie ist es, regelmässig (z.B. 2x pro Woche) alle Daten auf meinen Computern zu sichern.
+Das braucht jedoch viel Zeit und Speicherplatz.
+Um eine differenzierte Datensicherung zu planen, mache ich mir einige Gedanken.
+
+==== Welche Daten sichern? ====
+Wenn Sie eine gut durchdachte Ordnerstruktur haben, können Sie einfach Ordner für Ordner durchgehen und sich diese Fragen stellen.
+
+=== Auswirkungen des Datenverlusts ===
+  * Welche Auswirkungen habt der Verlust dieser Daten? 
+  * Lassen sich die Daten auch ohne Backup wiederherstellen? Wie gross wäre der Zeitaufwand? \\ Eine Software wie Notepad++ kann ich jederzeit wieder herunterladen und installieren. 
+
+=== Bestehende Datensicherungen ===
+
+  * Werden die Daten bereits von anderer Stelle gesichert? Kann ich auf die gesicherten Daten zugreifen? \\ Meine Kursunterlagen auf dem Server der Schule werden durch die Schule gesichert. Daher muss ich kein eigenes Backup machen.
+
+==== Wo werden die Daten gesichert ====
+=== Auf meinem Computer ===
+
+Eine Datensicherung auf meinem Computer kostet wenig, ist schnell durchgeführt und ich habe immer sofort Zugriff auf das Backup.
+Allerdings ist im Falle eines Virenbefalls oder Verlust des Geräts auch mein Backup weg.
+
+=== Externe Festplatte ===
+
+Eine Alternative ist ein separates Gerät wie eine externe Festplatte.
+Diese Lösung ist mit zusätzlichen Kosten verbunden, wobei eine externe Festplatte inzwischen recht günstig zu haben ist.
+Der Nachteil ist, dass ich das externe Speichermedium anschliessen und das Backup starten muss.
+Dadurch werden solche Backups häufig nur sporadisch und im Verlauf der Zeit immer seltener gemacht.
+
+=== Netzwerkspeicher ===
+Etwas teurer ist ein Speichergerät, das mit dem Netzwerk verbunden ist: **N**etwork **A**ttached **S**torage (kurz NAS).
+Ein NAS ist ein spezialisierter Minicomputer der eine oder mehrere Festplatten enthält und ständig mit meinem Netzwerk verbunden ist.
+Dadurch kann ich mein Backup über einen Zeitplan durchführen lassen und muss nicht mehr daran denken.
+
+=== Externer Standort ===
+Bei allen bisher aufgeführten Varianten befindet sich das Backupmedium im gleichen Gebäude wie die Originaldaten.
+Im Falle von Naturgewalten (Feuer, Wasser, ...) oder Diebstahl ist in der Regel auch mein Backup betroffen.
+Gerade für Firmen ist es daher wichtig, ein Backup an einem externen Standort zu haben.
+Auch für Privatpersonen kann es sinnvoll sein, besonders wichtige Daten auf den Rechnern einer externen Firma zu speichern.
+
+==== Wann sichere ich meine Daten? ====
+=== Echtzeit ===
+Es gibt Programme, welche die Daten in Echtzeit sichern.
+Dabei wird bei jeder Veränderung einer Datei auch gleichzeitig eine Datensicherung gemacht.
+Dies belastet aber meine Datenspeicher und das Netzwerk, weshalb eine Echtzeitsicherung nicht immer die beste Lösung ist.
+
+=== Zeitplan ===
+Hier erfolgt die Sicherung zu einer vorher definierten Uhrzeit.
+Zum Beispiel lasse ich jede Nacht um 03:00 Uhr eine Datensicherung erstellen.
+
+=== Manuell ===
+Das manuelle Durchführen von Backups sollte nur als Ergänzung genutzt werden.
+Die meisten Benutzer vergessen regelmässig ein Backup zu machen.
+
+
+<WRAP center round tip 60%>
+An welchem Wochentag machen die meisten Personen ein Backup? **Morgen!**
+</WRAP>
+
+==== Wie viele Sicherungskopien? ====
+Wenn ich nur eine einzige Sicherungskopie habe, bin ich gut gegen ein versehentliches Löschen geschützt.
+Ich bemerke den Datenverlust und stelle die Sicherungskopie wieder her.
+Problematischer sind in der Regel ungewollte Veränderungen an Dateien.
+Schauen wir uns mal ein typisches Beispiel an:
+
+^ Tag ^ Aktion ^ 
+| Montag, Vormittag | Ich lösche einen Teil eines Programmes, welche ich nicht mehr brauche. |
+| Montag, Nacht | Meine automatische Sicherung erstellt ein Backup das Programms. |
+| Dienstag, Nachmittag | Ich arbeite an meinem Programm. |
+| Dienstag, Nacht | Meine automatische Sicherung erstellt ein Backup das Programms. |
+| Mittwoch, Vormittag | Ich stelle fest, dass ich am Montag den falschen Programmteil gelöscht hatte. |
+
+Da ich nur eine einzige Datensicherung habe, ist meine Programmversion vom Montag unwiderruflich verloren ((ausser ich hätte mit git gearbeitet und regelmässige Commits gemacht, aber das ist ein anderes Thema)).
+Besonders bei Dateien die häufig verändert werden (z.B. Datenbanken) sollten wir mehrere Backupversionen speichern.
+
+===== Backup-Programme =====
+
+----
+{{tag>m231-AnG}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

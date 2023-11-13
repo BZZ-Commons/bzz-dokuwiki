@@ -1,0 +1,21 @@
+====== LU09.A03 - Webseite mit FileZilla veröffentlichen ======
+
+<WRAP center round todo 60%>
+Veröffentlichen Sie das Projekt "LU09_A03_Recipe" in Ihrem Webspace.
+FileZilla soll den Webauftritt in den Ordner "LU09A03" hochladen.
+</WRAP>
+
+===== Vorgehen =====
+  - Laden Sie das Zip-Archiv {{ :modul:m293:learningunits:lu09:aufgaben:lu09_a03_recipe.zip |"LU09_A03_Recipe.zip"}} herunter.
+  - Entpacken Sie das Archiv in einen Ordner. Sie müssen das Projekt nicht in Webstorm öffnen.
+  - Richten Sie in FileZilla den Server für Live Test und die produktive Umgebung ein.
+    * Live Test: test**USERNAME**.students.bzz.ch/LU09A03
+    * Produktiv: **USERNAME**..students.bzz.ch/LU09A03
+  - Veröffentlichen Sie den Webauftritt zunächst im Live Test.
+  - Prüfen Sie, ob alle Webseiten vollständig und korrekt angezeigt werden. Korrigieren Sie allfällige Fehler und wiederholen Sie Schritt 4&5.
+  - Veröffentlichen Sie den Webauftritt in der produktiven Umgebung.
+
+<nodisp>[[https://github.com/templates-html/M293_LU09_A03_Recipe.git]]</nodisp>
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Kevin Maurizi, Marcel Suter

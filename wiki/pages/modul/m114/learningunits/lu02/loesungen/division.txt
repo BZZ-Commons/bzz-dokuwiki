@@ -1,0 +1,34 @@
+====== LU02.L02d - Division ======
+=== 256 / 32 ===
+<code>
+    0001 0000 0000 / 0010 0000
+       1 0000 0   >= 10 0000 = 1
+     + 1 0000 0
+       --------
+       0 0000 0
+              00             = 0
+              000            = 0
+              0000           = 0  
+</code>
+
+=== 680 / 21 ===
+<code>
+    0010 1010 1000 / 0001 0101 = 0010 0000
+</code>
+
+=== 20 / (-5) ===
+Hier ist es einfacher 20 / 5 = 4 zu berechnen und danach das Resultat mit -1 zu multiplizieren.
+<code>
+    0001 0100 / 1111 1011 = 1111 1100
+</code>
+
+=== (-124) / 7 ===
+Auch hier rechne ich 124 / 7 = 17 * -1 = -17
+<code>
+    1111 1000 0100 / 0111 = 1111 1110 1111
+</code>
+
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

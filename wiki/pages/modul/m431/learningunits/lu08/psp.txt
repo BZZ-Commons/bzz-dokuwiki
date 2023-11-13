@@ -1,0 +1,86 @@
+====== LU08a - Projektstrukturplan ======
+Der Projektstrukturplan ist die vollständige Darstellung aller Elemente eines Projekts und ihrer Beziehungen. Dabei werden die Elemente hierarchisch gegliedert, sodass eine Baumstruktur entsteht. Der PSP beinhaltet keine zeitliche Aussage über die Abarbeitung des Projektes, sondern gibt lediglich die Strukturierung wider. Der PSP wird auch als WBS (Work Breakdown Structure) bezeichnet.
+
+===== Vorteile eines Projektstrukturplans =====
+
+  * **Alles auf einen Blick:** Ein Projekt schnell zu überblicken ist häufig schwierig. Eine hierarchische Untergliederung des Vorhabens in immer kleiner werdende Teilbereiche verringert die Komplexität und ermöglicht eine leichtere Übersicht. Im Idealfall wird der PSP auf einer Seite dargestellt – meist im Querformat. Diese lässt sich wunderbar ausdrucken und an die Wand hängen.
+  * **Die vollständige Darstellung:** Nach der reinen Lehre umfasst der PSP die vollständige Darstellung eines Projekts, aller Teilprojekte, Teilaufgaben und Arbeitspakete. So steht von Beginn an fest, was alles getan werden muss – und das schafft Orientierung.
+  * **Gute Kommunikationsgrundlage:** Der PSP ermöglicht es, sich beim Austausch im Projekt immer auf konkrete Teilprojekte oder Arbeitspakete zu beziehen. Das verringert die Gefahr von Missverständnissen und schafft Klarheit.
+  * **Basis für die Aufgabenverteilung:** Der Projektstrukturplan mit seiner Untergliederung in Elemente bildet die Grundlage für eine Arbeitsteilung im Projekt. Elemente wie Teilprojekte und Arbeitspakete können an verschiedene Teammitglieder delegiert werden, die die Verantwortung für die Erledigung der jeweiligen Aufgaben übernehmen.
+  * **Im Team erarbeitet:** Besonders nützlich ist ein PSP dann, wenn er im Team erstellt wird. Es ist viel einfacher, an alle zu erledigenden Aufgaben zu denken, wenn du sie dir nicht allein zusammenreimen musst. Weiterer Vorteil: Das Team wird frühzeitig in die Planung einbezogen, was die Identifikation mit dem Projekt stärkt.
+  * **Grundlage für weitere Pläne:** Abhängig von Art und Umfang der Projektplanung dient der PSP als Basis für weitere Pläne. Denn zur Erinnerung: Der PSP sagt aus, WAS im Projekt getan wird, aber nicht wann, in welcher Reihenfolge und wie lange sie dauern. Die Elemente müssen also noch angeordnet und terminiert werden. Und das geht mit einem zuvor erstellten PSP viel einfacher.
+
+
+===== Aufbau eines PSP =====
+Einen Projektstrukturplan zu erstellen ist einfach, denn er sieht aus wie ein Organisationsdiagramm, wie das Beispiel in der folgenden Abbildung zeigt. Auf der obersten Hierarchiestufe steht das Projekt als Ganzes oder der Liefergegenstand. Es handelt sich um das Ergebnis, das im Projekt erzeugt oder erreicht werden soll.
+
+Auf der zweiten Ebene verteilen sich Teilprojekte oder Teilaufgaben. Auch einzelne Aufgaben kann diese Ebene enthalten. Auf der dritten Ebene drängeln sich Arbeitspakete. Sie sind die kleinsten, nicht mehr teilbaren Komponenten. Arbeitspakete sind in sich geschlossen und einzeln bearbeitbar. Eine weitere Aufteilung oder Detaillierung der Arbeitspakete ist nicht erforderlich oder zu aufwendig.
+{{:modul:m431:learningunits:lu08:abbildung-9908910-b.png?600|}}
+
+===== Projektstrukturplan funktionsorientiert, objektorientiert oder zeitorientiert strukturieren =====
+Die Projektleitung muss sich entscheiden, welche Art der Strukturierung sie für ihr Projekt verwenden möchte. Im Allgemeinen wählt sie zwischen funktionsorientiert, objektorientiert oder einer Mischform von beiden.
+
+==== Funktionsorientierte Projektstruktur ====
+In der funktionsorientierten Struktur stellen sich die Fragen: „Was muss ich tun, um diesen Liefergegenstand zu produzieren? Welche Funktionen muss ich verrichten?“ In diesem Beispiel strukturiert die Projektleitung ihr Projekt anhand der Teilprojekte Technik, Verterieb, Controlling und Projektmanagement.
+
+{{:modul:m431:learningunits:lu08:screenshot_2022-09-29_at_11.23.44.png?600|}}
+
+
+==== Objektorientierte Projektstruktur ====
+Die objektorientierte Darstellung gliedert den Projektstrukturplan ausgehend vom Projektergebnis. Die Projektleiterin oder der Projektleiter greift dieses vorweg. Die Projektleitung geht also von den Komponenten des fertigen Liefergegenstandes aus. Von diesem schichtet sie die Einzelelemente in die Tiefe ab. In diesem Beispiel enthält die erste Ebene die Teilprojekte Alte-Wohnung, Neue-Wohnung, Transport und Kontrolle.
+
+{{:modul:m431:learningunits:lu08:screenshot_2022-09-29_at_11.24.04.png?600|}}
+
+
+==== Zeitorientierte Projektstruktur ====
+Hier erfolgt die Einteilung nach den verschiedenen Projektphasen. Welche Phasen dabei betrachtet werden, ist abhängig von den Bedürfnissen des Projekts.
+{{:modul:m431:learningunits:lu08:screenshot_2022-09-29_at_11.24.18.png?600|}}
+
+<WRAP center round info 60%>
+Nicht jeder Strang muss der gleichen Gliederung folgen. Die Projektstruktur kann zwischen funktionsorientiert und objektorientiert wechseln.
+</WRAP>
+
+
+===== Codierung =====
+
+Eine reine Strukturierung des Projektes ist nützlich, reicht aber für die Übersicht im Projekt nicht aus. Um die Elemente eindeutig identifizieren zu können, werden sie mit einem Code versehen. Dieser Code ist notwendig, um Aufwände, Ressourcen oder Änderungen eindeutig einem Arbeitspaket zuordnen zu können. Die Codierung spiegelt immer auch die hierarchische Position des Elements wider. Es werden verschiedene Arten der Codierung unterschieden:
+
+Numerische Codierung: Nutzung von Ziffern, z.B. 1, 1.1, 1.1.2 …
+Dekadische Codierung: Ziffern im 10er-Format, z.B. 1000, 1100, 1110 …
+Alphabetische Codierung: Nutzung von Buchstaben, z.B. A, AA, AB, …
+Alphanumerische Codierung: Mischung aus Zahlen und Buchstaben, z.B. A, A1, A.1.1 …
+
+{{:modul:m431:learningunits:lu08:psp-code-alphanummerisch.jpeg?600|}}
+
+Häufig wird auch eine Projektnummer in den PSP-Code aufgenommen.
+
+===== Projektstrukturplan erstellen: Eine Kurzanleitung =====
+Die Ultra-Kurzform, wenn es schnell gehen muss: Zeichne eine Mindmap und schreibe einfach alle Aufgaben auf, die zu deinem Projekt gehören. Der Vorteil: Es geht schnell und einfach. Der Nachteil: Die Wahrscheinlichkeit steigt, dass du etwas vergisst.
+
+Etwas ausführlicher solltest du so vorgehen:
+
+<WRAP center round box 60%>
+**1. Gliederung festlegen**
+Ein Projekt kann nach Phasen, Objekten oder Aktivitäten gegliedert werden. Entscheide dich am besten zu Beginn für ein Prinzip, so dass kein Durcheinander entsteht.
+
+**2. Vorgehen festlegen** 
+Wer ist alles bei der Erstellung des PSP beteiligt? Soll das Projekt von oben nach unten immer weiter aufgegliedert oder eher von unten nach oben strukturiert werden? Lege also fest, wie bei der Erstellung vorgegangen werden soll.
+
+**3. Ausgangsinformationen ermitteln**
+Sehr praktisch: Du musst nicht komplett bei Null beginnen! In der Regel gibt es schon viele Informationen, die als Grundlage genutzt werden können:
+Risikoanalyse: Welche Maßnahmen wurden zur Minimierung von Risiken beschlossen und müssen im Projekt berücksichtigt werden?
+Zielanalyse: Welche Aktivitäten können aus den Projektzielen abgeleitet werden?
+
+**4. Arbeitspakete sammeln**
+Auf Basis der Vorinformationen werden nun Aufgaben gesammelt. Dies kann gut in Form eines Brainstormings geschehen. Ziel: Möglichst alle zu erledigenden Aufgaben erfassen.
+
+{{ :modul:m431:learningunits:lu08:arbeitspakete.jpeg?400 |}}
+
+**5. Arbeitspakete strukturieren**
+Vielleicht stehst du nun vor einem großen Haufen voller Aufgaben. Nun geht es ans Strukturieren: Durch Zusammenfassen und Untergliedern entsteht die Projektstruktur mit Teilprojekten, Teilaufgaben und Arbeitspaketen.
+</WRAP>
+
+Nach Abschluss des Brainstormings und der Diskussion sollte sich das Projektteam die Kontrollfrage stellen, ob bei ausschließlicher Bearbeitung der definierten Arbeitspakete das zuvor definierte Ziel realistischerweise zu erreichen ist. Fehlen noch Aktivitäten so sollten sie jetzt ergänzt werden. Bei Projektteams, die kein absolutes Neuland betreten, sondern eine gewisse Erfahrung mit einbringen, kann davon ausgegangen werden, dass mit diesem ersten Entwurf ca. 80–90 % aller Aktivitäten erkannt und korrekt zugeordnet werden konnten. Um die restlichen 10–20 % ebenfalls noch zu definieren sollte in einigem Abstand (ca. 5–10 Tage) eine erneute Überprüfung des PSP stattfinden, bei der dann die fehlenden Arbeitspakete eingefügt werden. Außerdem folgt als nächster Schritt üblicherweise die Feinplanung der Arbeitspakete. In diesem Zusammenhang werden vielfach ebenfalls Unstimmigkeiten und Widersprüche deutlich. Dieser Prozess des Abstimmens ist gerade zu Beginn eines Projektes ausgesprochen wichtig, weil er den Projektteammitgliedern, die noch nicht aufeinander eingespielt sind, die Möglichkeit eröffnet, ihre persönlichen und fachlichen Belange zu einem Zeitpunkt in das Projekt einzubringen, zu dem noch vieles gestaltbar ist. Zusätzlich entsteht ein gemeinsames Verständnis über das Projekt, die zu leistende Arbeit und die Möglichkeit späteren Missverständnissen vorzubeugen.
+
+----
+Quellen: [[https://projekte-leicht-gemacht.de/blog/projektmanagement/klassisch/projektplanung/projektstrukturplan/|projekte-leicht-gemacht]]

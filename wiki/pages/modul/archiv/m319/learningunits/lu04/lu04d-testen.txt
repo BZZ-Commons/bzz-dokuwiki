@@ -1,0 +1,82 @@
+====== LU04d - Grundlagen des Testens ======
+===== Einführung =====
+//Testen ist das Ausführen eines Programmes mit dem Ziel Fehler zu finden.//
+
+Das Testen ist ein Teil der Qualitätssicherung bei der Softwareentwicklung.
+Beim Testen suchen wir gezielt nach Fehlern in einem Programm.
+Beim Testen geht es nicht darum, zu beweisen, dass ein Programm fehlerfrei ist.
+Dies ist einerseits fast unmöglich und andererseits wenig motivierend.
+
+==== Vorgehen ====
+Manche Programmierer haben komische Vorstellungen vom Testen eines Programms.
+Sie geben irgendwelche Daten ein und gucken mal was passiert.
+
+<WRAP center round alert 60%>
+Ihr Motto lautet: Schiesse einen Pfeil ab und was auch immer Du triffst, bezeichnest Du als Ziel.
+</WRAP>
+
+Beim Testen wird zunächst festgelegt, was wir prüfen wollen.
+Dabei halten Sie fest, welches Ergebnis Sie erwarten bzw. wie das Programm reagieren soll.
+Wir bezeichnen dies als Testfall.
+
+>> Zum Beispiel möchten Sie prüfen, wie das Programm reagiert, wenn Sie eine negative Menge angeben.
+>> Im Testfall legen Sie fest, dass Sie im Feld "Menge" den Wert ''-4'' eingeben.
+>> Sie erwarten, dass das Programm eine Fehlermeldung "Menge muss grösser als 0 sein" ausgibt.
+
+Nachdem Sie einige Testfälle beschrieben haben, führen Sie diese Testfälle durch.
+Dabei halten Sie fest, wie das Programm tatsächlich reagiert hat.
+Indem Sie die erwartete Reaktion (SOLL) mit der tatsächlichen Reaktion (IST) vergleichen,
+können Sie beurteilen, ob das Programm korrekt funktioniert.
+
+===== Psychologie des Testens =====
+
+<WRAP center round important 60%>
+Beim Testen gilt:
+  * sei hart und unerbittlich zum Programm: Deine Aufgabe ist es, möglichst viele Fehler zu finden.
+  * sei nett zum Programmierer: Du zeigst Fehler in seiner Arbeit auf und nicht beim Menschen.
+</WRAP>
+
+Viele Programmierer fühlen sich angegriffen, wenn man ihre Arbeit kritisiert.
+Daher muss ein Tester einiges Fingerspitzengefühl haben, wenn er das Testprotokoll erstellt:
+  * Zeige die Abweichungen zwischen erwartetem und tatsächlichem Resultat auf.
+  * Vermeide Vorschläge wie man das Programm korrigieren muss.
+
+Hier sehen Sie ein gutes und ein schlechtes Beispiel, wie ein Fehler im Testprotokoll aufgenommen werden kann:
+
+  * Gut: Anzahl = 0 führt zu einem Absturz.
+  * Schlecht: Die Bedingung zum Prüfen der Eingabe ist falsch.
+
+===== Definitionen =====
+== Testen ist ... ==
+... das gezielte Suchen von Fehlern in einem Programm.
+<WRAP center round tip 60%>
+Keine Software der Welt ist komplett Bugfrei, es gibt nur Software bei denen die Bugs noch nicht gefunden bzw. behoben wurden.
+</WRAP>
+Beim Testen geht es nicht darum, zu beweisen, dass ein Programm fehlerfrei ist.
+Dies ist einerseits unmöglich und andererseits wenig motivierend. 
+> Testen ist das Ausführen eines Programmes mit dem Ziel Fehler zu finden.
+
+=== Testfall ===
+Ein Testfall beschreibt die Daten, mit denen ein Test durchgeführt wird.
+Um ein Programm zu testen, benötigen sie mehrere Testfälle.
+
+=== Testprotokoll ===
+Immer wenn sie eine Serie von Testfällen durchführen, wird ein separates Protokoll erstellt.
+Dieses enthält Angaben zum Zeitpunkt, den ausgeführten Testfällen und dem Ergebnis des Tests.
+
+=== Blackbox-Tests ===
+Bei einem Blackbox-Test werden Testfälle aufgrund der Anforderungen erstellt.
+Der Aufbau des Sourcecodes wird dabei nicht beachtet.
+Das Programm wird als Blackbox betrachtet, die auf einen bestimmten Input einen erwarteten Output liefern soll.
+
+Als Basis für die Testfälle dienen uns
+  * Spezifikation der Applikation
+  * Zustandsdiagramme
+
+=== Glassbox-Tests ===
+Bei einem Glassbox-Test (auch Whitebox-Test genannt) werden die Testfälle aufgrund des Sourcecodes erstellt. 
+Das Ziel solcher Tests ist, dass möglichst jeder Befehl und jede Bedingung einmal ausgeführt wird. 
+Solche Testfälle lassen sich ohne spezielle Software nur sehr mühsam erstellen.
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Marcel Suter

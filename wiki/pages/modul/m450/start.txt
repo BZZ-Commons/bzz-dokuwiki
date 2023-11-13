@@ -1,0 +1,23 @@
+====== 450 : Applikationen testen ======
+
+^ Modulidentifikation | [[https://www.modulbaukasten.ch/module/450/1|450]] |
+^ Kompetenzraster | [[.:kompetenzraster|Kompetenzraster]] |
+^ Kompetenzübersicht | [[.:kompetenzuebersicht|Kompetenzuebersicht]] |
+
+ 
+===== Literatur =====
+
+  * [[https://www.istqb.org/|International Software Testing Qualifications Board ISQTB]]
+
+===== Inhalte =====
+
+Der Inhalt des Modul ist in folgende Learning Units gegliedert:
+<nspages .:learningunits -subns -nopages -exclude -h1 -textNS="" -simplelist>
+
+  * LU01 Testverfahren, Testpyramide
+  * LU02 Ausnahmen
+  * LU03 Komponententests, TDD
+  * LU04 Integratintests, TDD
+  * LU05 Systemtests, UI Tests, End-to-end Tests
+  * LU06 Abnahmetests, Akzeptanztests, TDD 
+  * FIXME

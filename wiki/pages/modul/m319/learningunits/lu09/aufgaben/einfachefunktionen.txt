@@ -1,0 +1,58 @@
+====== LU09.A01 - Einfache Funktionen definieren ======
+
+
+===== Auftrag 1: Vier verschiedene Varianten =====
+
+Funktionsblöcke können Sie auf vier verschiedenen Varianten definieren.
+
+^          ^ Parameter ^ Return ^
+^Funktion 1| Nein     | Nein   |
+^Funktion 2| Nein     | Ja     |
+^Funktion 3| Ja       | Nein   |
+^Funktion 3| Ja       | Ja     |
+
+Ergänzen Sie den Code um die Funktion 2,3 und 4.
+
+<code python>
+def function1():
+    """
+    Function without params or return
+    :return: None
+    """
+    print('Function 1 is called')
+
+def four_functions():
+    """
+    Main function
+    :return: None
+    """
+    function1()
+    received_from_2 = function2()
+    function3('passed Argument to print in function3')
+    received_from_4 = function4('passed Argument to print in function4')
+
+if __name__ == '__main__':
+    four_functions()
+</code>
+
+
+===== Auftrag 2: Einfacher Rechner=====
+
+Programmieren Sie einfache Taschenrechner-Funktionen (''add'', ''substract'', ''multiply'', ''divide'', ''power'', ''root'' etc.) und rufen Sie diese aus der Main-Funktion auf und drucken Sie die Resultate.
+
+<code python>
+def add(TODO):
+    #TODO
+
+def main():
+    total = add(5,5.5)
+    print(total)
+
+if __name__ == '__main__':
+    main()
+</code>
+
+----
+{{tag>M319-F3G M319-F3F M319-F3E M319-F1F M319-F1E M319-F2G M319-F2F M319-F2E}}
+
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/ch/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Kevin Maurizi 

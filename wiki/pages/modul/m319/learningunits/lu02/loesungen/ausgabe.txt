@@ -1,0 +1,23 @@
+====== LU02.L01 - Ausgaben ======
+
+{{:modul:m319:learningunits:lu02:loesungen:lu02_l01_ausgaben.png?600|}}
+
+==== Python ====
+<code python>
+givenname='Luna'
+familyname='Solaris'
+age=25
+height=1.68
+print(givenname)
+print(familyname)
+print(age)
+print(height)
+print('Hallo ' + givenname + ' ' + familyname + '.')
+print('Du bist ' + str(age) + ' Jahre alt.')
+print('Gemäss meinen Unterlagen bist du ' + str(height) + 'm gross.')
+</code>
+
+
+----
+{{tag>M319-LU02}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter, Kevin Maurizi

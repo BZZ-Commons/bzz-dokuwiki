@@ -1,0 +1,38 @@
+===== LU01 Python Basics =====
+
+==== Einleitung ====
+
+  * Organisation [[modul:s4f:organisation:intro|Intro]] | [[modul:s4f:organisation:cheatsheets|Cheat Sheets]] | [[Setup%20%26%20Tools.md|Setup & Tools]]
+  * Gegenüberstellung [[https://www.freecodecamp.org/news/python-vs-javascript-what-are-the-key-differences-between-the-two-popular-programming-languages/|Python vs. JavaScript]]
+
+==== Motivation ====
+
+  * [[https://youtu.be/f79MRyMsjrQ|Video über Python]] (nur Kapitel “What is Python?”)
+
+==== Theoretische Grundlagen ====
+
+  * [[https://www.w3schools.com/python/python_intro.asp|Python Intro]] (w3schools-Tutorial)
+  * [[https://www.w3schools.com/python/python_syntax.asp|Syntax]]
+  * [[https://www.w3schools.com/python/python_comments.asp|Comments]]
+
+==== Exercises ====
+
+  * [[https://www.w3schools.com/python/exercise.asp?filename=exercise_syntax1|Syntax]]
+  * [[https://www.w3schools.com/python/exercise.asp?filename=exercise_comments1|Comments]]
+
+==== Setup ====
+
+  * Account einrichten / registrieren auf: [[https://www.codewars.com/|Codewars]]
+  * Tools einrichten mit [[https://chocolatey.org/|Chocolatey]] (ggf. einrichten via [[https://docs.chocolatey.org/en-us/choco/setup|Link]]):
+    * Python > ''choco install python''
+    * JetBrains PyCharm > ''choco install pycharm''
+    * Visual Studio Code > ''choco install vscode''
+
+==== Aufgaben ====
+
+  * 7kyu [[https://www.codewars.com/kata/5300901726d12b80e8000498/python|Fizz Buzz]] (Voraussetzungen: [[https://www.w3schools.com/python/python_conditions.asp|If..Else]] | [[https://www.w3schools.com/python/python_for_loops.asp|Loops]] | [[https://www.w3schools.com/python/python_lists.asp|Lists]])
+
+==== Tagesziel ====
+
+  * Theoretische Grundlagen sind erarbeitet und Exercises gelöst.
+  * Accounts sind eingerichtet und die Tools installiert

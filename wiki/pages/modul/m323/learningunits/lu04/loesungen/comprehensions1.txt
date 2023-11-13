@@ -1,0 +1,29 @@
+====== LU04.L03 - Quadrate aller geraden Zahlen ======
+
+<code python>
+def squares_of_even_numbers():
+    """
+    Erstelle eine Liste der Quadrate aller geraden Zahlen von 1 bis 100.
+    
+    Returns:
+    - list: Liste der Quadrate aller geraden Zahlen von 1 bis 100.
+    """
+    return [x ** 2 for x in range(1, 101) if x % 2 == 0]
+    
+    # Oder: return [i ** 2 for i in range(2, 102, 2)]
+
+
+if __name__ == '__main__':
+    result = squares_of_even_numbers()
+    print(result)
+</code>
+
+  - Die Funktion ''squares_of_even_numbers'' verwendet eine List Comprehension, um die Quadrate aller geraden Zahlen zwischen 1 und 100 zu berechnen.
+  - Die List Comprehension ''[x %%**%% 2 for x in range(1, 101) if x % 2 == 0]'' führt die folgenden Schritte aus:
+    * Sie nimmt jede Zahl ''x'' aus der Range von 1 bis 100.
+    * Sie überprüft, ob ''x'' eine gerade Zahl ist (''x % 2 == 0'').
+    *  Wenn ja, wird das Quadrat der Zahl (''x ** 2'') zur Liste hinzugefügt.
+  - Schließlich gibt die Funktion die erstellte Liste zurück, und das Ergebnis wird mit ''print'' ausgegeben.
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/ch/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Kevin Maurizi 

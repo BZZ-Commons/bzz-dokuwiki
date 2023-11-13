@@ -1,0 +1,15 @@
+====== LU08.L03: Vielfache von 3 und 5 ======
+<code python>
+def main():
+    limit = int(input(''))
+    total = 0
+    number = 1
+
+    while number < limit:
+        if number % 3 == 0 or number % 5 == 0:
+            total += number
+        number += 1
+
+    print(total)
+</code>
+

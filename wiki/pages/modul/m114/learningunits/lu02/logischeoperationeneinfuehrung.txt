@@ -1,0 +1,46 @@
+====== LU02f - Logische Operationen: Einführung ======
+
+Die logische Vernüpfung von Bits stellt die Basis vieler Operationen in der Informatik dar.
+Zum Beispiel wird sie bei der Auswertung von verknüpften Bedingungen in Programmen benötigt:
+
+<code python>
+if (age > 18) and (gender == 'M'):
+</code>
+
+Dabei wird zuerst jede Teilbedingung ausgewertet und das Resultat als Bit '0' oder Bit '1' zwischengespeichert.
+Die beiden Resultate werden danach mit der logischen Operation ''AND'' verknüpft.
+
+Die folgende Tabelle zeigt Ihnen eine Übersicht der verschiedenen Möglichkeiten.
+**''a''** und **''b''** stehen dabei für zwei Bit-Variablen.
+
+^ a ^ b ^ a AND b ^ a OR b ^ a XOR b ^
+| 0 | 0 |  0  |  0  |  0  |
+| 0 | 1 |  0  |  1  |  1  |
+| 1 | 0 |  0  |  1  |  1  |
+| 1 | 1 |  1  |  1  |  0  |
+
+===== OR / XOR =====
+**''OR''** und **''XOR''** unterscheiden sich dann, wenn beide Teile zutreffen.
+Bei **''OR''** kann eines der beiden Bits war sein, aber auch beide.
+
+
+**''XOR''** entspricht in der deutschen Sprache dem **entweder / oder**.
+Es kann das eine zutreffen oder das andere, aber nicht beides.
+
+===== Bitketten =====
+Die logischen Operationen können auch auf Werte angewandt werden, die aus mehreren Bits bestehen.
+''0101 1101 1101 1111'' ist eine sogenannte Bitkette.
+
+Werden Bitketten mittels logischen Operationen verknüpft, so schreiben wir beide Bitketten untereinander.
+Dann wird der logische Operator jeweils auf die beiden untereinander stehenden Bits angewandt:
+
+<code>
+    0100 0110
+XOR 1101 1100
+    --------- 
+    1001 1010
+</code>
+
+----
+{{tag>m114-A1F m114-A1E}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

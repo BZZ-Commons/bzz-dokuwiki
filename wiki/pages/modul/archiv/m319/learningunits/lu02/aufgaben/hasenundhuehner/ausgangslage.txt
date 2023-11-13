@@ -1,0 +1,49 @@
+===== Ausgangslage =====
+Ein Bauer auf seinem Hof eine unbekannte Anzahl von Hühnern und Hasen. 
+Diese Tiere haben sich in den letzten Jahren stark vermehrt. 
+Deshalb möchte der Bauer wissen, wie viele Hasen und wie viele Hühner auf seinem Hof leben.
+Also schickt der Bauer seinen Lehrling, um die Tier zu zählen.
+
+Nach einiger Zeit kommt der Lehrling zurück und verkündet stolz:
+  * Ich habe **//x//** Tiere gezählt.
+  * Alle Tiere zusammen haben **//y//** Beine.
+
+Wie kann der Bauer die Anzahl der Hasen und Hühner berechnen?
+
+Der Bauer fragt eine befreundete Informatikerin um Hilfe. 
+Sie schlägt ihm folgendes vor:
+
+  * Nimm zunächst einmal an, dass alle Tiere Hasen sind. Also:
+    * **//x//** Hasen
+    * **//0//** Hühner 
+  * Berechne dann, wie viele Beine das ergeben würde. \\ ''Beine = 4 * Anzahl Hasen + 2 * Anzahl Hühner'' 
+  * Solange die berechnete Anzahl Beine grösser als die tatsächliche Anzahl der Beine ist:
+    * Reduziere die Anzahl Hasen um 1.
+    * Erhöhe die Anzahl Hühner um 1.
+    * Berechne erneut die Anzahl der Beine.
+
+== Beispiel ==
+<code>
+Anzahl Tiere: 10
+Anzahl Beine: 32
+
+Annahme: 10 Hasen und 0 Hühner
+Berechnen: (10 Hasen * 4 Beine) + (0 Hühner * 2 Beine) = 40 Beine
+Ist die berechnete Anzahl Beine (40) grösser als die tatsächliche Anzahl (32)?  => JA
+
+Neu: 9 Hasen und 1 Huhn
+Berechnen: (9 Hasen * 4 Beine) + (1 Huhn * 2 Beine) = 38 Beine
+Ist die berechnete Anzahl Beine (38) grösser als die tatsächliche Anzahl (32)?  => JA
+
+Neu: 8 Hasen und 2 Hühner
+Berechnen: (8 Hasen * 4 Beine) + (2 Hühner * 2 Beine) = 36 Beine
+Ist die berechnete Anzahl Beine (36) grösser als die tatsächliche Anzahl (32)?  => JA
+
+...
+
+Neu: 6 Hasen und 4 Hühner
+Berechnen: (6 Hasen * 4 Beine) + (4 Hühner * 2 Beine) = 32 Beine
+Ist die berechnete Anzahl Beine (32) grösser als die tatsächliche Anzahl (32)?  => NEIN
+
+Die Lösung ist: 6 Hasen und 4 Hühner
+</code>

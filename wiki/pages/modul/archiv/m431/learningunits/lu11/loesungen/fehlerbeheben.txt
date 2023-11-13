@@ -1,0 +1,62 @@
+====== LU11.L04 - Fehler beheben "Lager" ======
+<code python>
+# *
+# * Lagerverwaltung für Impfstoffe
+
+stock = dict()
+
+
+def init_stock():
+    """
+    Fills the stock with initial values
+    :return:
+    """
+    i = 1
+    while (i < 100):
+        stock[i] = 500
+        i += 1
+
+
+def take_from_stock(number, amount):
+    """
+    removed or add to stock
+    :param number: number of stock-item
+    :param amount: amount to add+ or remove-
+    :return: None
+    """
+    stock[number] = stock.get(number) + amount
+
+
+def main():
+    number = read_number('Nr des Impfstoffs >')
+    while (number != 0):
+        if (number >= 1 and number <= 99):
+            print('Aktueller Bestand >' + str(stock.get(number)))
+            amount = read_number('Menge             >')
+            while (amount > 10000 or amount < -10000):
+                print('Menge muss eine Ganzzahl (-9999 - 9999) sein.')
+                amount = read_number('Menge             >')
+            take_from_stock(number, amount)
+            print('Neuer Bestand     >' + str(stock.get(number)))
+        else:
+            print('Impfstoffnummer muss eine Ganzzahl (1-99) sein.')
+        number = read_number('Nr des Impfstoffs >')
+
+
+def read_number(text):
+    while True:
+        try:
+            integer = int(input(text))
+        except ValueError:
+            print('Nummer muss eine Ganzzahl sein.')
+            continue
+        else:
+            return integer
+            break
+
+
+if __name__ == '__main__':
+    init_stock()
+    main()
+
+</code>

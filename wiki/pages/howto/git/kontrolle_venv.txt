@@ -1,0 +1,23 @@
+====== Virtual Environment kontrollieren ======
+<WRAP center round info 60%>
+In diesem Schritt kontrollierst du, ob das Virtual Environment korrekt erstellt wurde.
+</WRAP>
+
+===== Ordner "venv" =====
+Im Projekt sollte nun ein Ordner "venv" vorhanden sein.
+
+{{:howto:git:classroom_student_15.png?400|}}
+
+Falls dieser Ordner fehlt, wähle unten in der Anleitung //**[Venv fehlt]**//.
+
+===== Venv aktiv? =====
+
+
+Öffne in PyCharm den Reiter "Terminal".
+
+{{:howto:git:classroom_student_12.png?400|}}
+
+Achte auf den Anfang der Eingabezeile. 
+
+  * Falls dort "(venv) " steht, kannst du unten auf //**[Weiter]**// klicken.
+  * Fehlt die Anzeige "(venv) ", dann folge den Anweisungen unter //**[Venv aktivieren]**//

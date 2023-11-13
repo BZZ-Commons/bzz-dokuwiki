@@ -1,0 +1,29 @@
+====== Virtual Environment aktivieren ======
+<WRAP center round info 60%>
+Manchmal muss das Virtual Environment manuell aktiviert werden.
+</WRAP>
+
+  - Öffne in PyCharm den Reiter "Terminal".
+  - Gib den Befehl ''.\venv\Scripts\activate.ps1'' ein.
+
+{{:howto:git:classroom_student_59.png?600|}}
+
+Nun sollte am Anfang der Eingabezeile der Text ''(venv) '' erscheinen.
+Dann kannst du in der Anleitung **//[Weiter]//** fahren.
+
+=== Powershell Fehler ===
+Unter Windows kann es sein, dass die Aktivierung des Virtual Environment nicht klappt.
+Falls du diese Fehlermeldung erhälst:
+<code>
+...\venv\Scripts\activate.ps1" kann nicht geladen werden, da die Ausführung von   
+Skripts auf diesem System deaktiviert ist. Weitere Informationen finden Sie unter "about_Execution_Policies" 
+(https:/go.microsoft.com/fwlink/?LinkID=135170).
+</code>
+
+Kannst du das Ausführen von Powershell Scripts erlauben:
+<code>
+Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy Unrestricted -Force
+</code>
+
+Wiederhole danach den Befehl ''.\venv\Scripts\activate.ps1'' und ''(venv )'' wird angezeigt.
+Jetzt kannst du in der Anleitung **//[Weiter]//** fahren.

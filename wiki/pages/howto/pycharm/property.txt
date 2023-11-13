@@ -1,0 +1,64 @@
+====== PyCharm @Property ======
+<WRAP center round info 60%>
+Im Gegensatz zu anderen Tools (z.B. Intelli/J IDEA) hat PyCharm keine Funktion um Getter/Setter zu generieren.
+Mit Hilfe eines Live Templates lässt sich die Arbeit vereinfachen.
+</WRAP>
+
+===== Live Template anpassen =====
+{{:howto:pycharm:props01.png?400|}}
+
+  - Öffne das Livetemplate für **props**
+    - File => Settings
+    - Editor => Live Templates
+    - Python => props
+  - Ändere den Template text \\ <code>
+@property
+def $NAME$(self):
+    return self._$NAME$
+
+@$NAME$.setter
+def $NAME$(self, value):
+    self._$NAME$ = value</code>
+  - [OK]
+
+===== Live Template nutzen =====
+  - In der gewünschten Python-Klasse schreibe das Wort ''props'' und drücke die Tabulator-Taste \\ Es erscheint eine Vorlage mit ''@property'' und ''@.setter''
+  - Tippe den Namen des Attributs (Property) **ohne** den Underscore am Anfang.
+
+{{ :howto:pycharm:props_template.mp4 |}}
+
+
+===== Weitere Live Templates =====
+==== prop (nur Getter) ====
+<code python>
+@property
+def $NAME$(self):
+    return self._$NAME$
+</code>
+
+==== propsd (Getter, Setter, Deleter) ====
+<code python>
+@property
+def $NAME$(self):
+    return self._$NAME$
+
+@$NAME$.setter
+def $NAME$(self, value):
+    self._$NAME$ = value
+
+@$NAME$.deleter
+def $NAME$(self):
+    del self._$NAME$
+</code>
+
+==== dataclass ====
+<code python>
+from dataclasses import dataclass
+ 
+ 
+@dataclass
+class $NAME$:
+    """
+    TODO description
+    """
+</code>

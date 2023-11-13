@@ -1,0 +1,40 @@
+====== LU07c - Datalist ======
+//siehe auch [[https://wiki.selfhtml.org/wiki/HTML/Elemente/datalist|selfhtml - Datalist]]//
+
+Das ''<datalist>''-Element in HTML wird verwendet, um eine vordefinierte Liste von Optionen für ein Eingabefeld anzubieten. Es ermöglicht dem Benutzer, aus einer Liste von vorgeschlagenen Werten auszuwählen, während er weiterhin die Möglichkeit hat, einen eigenen Wert einzugeben.
+
+
+{{:modul:m293:learningunits:lu07:datalist.png?200 |}}
+
+<code html4strict>
+<form action='#'>
+  <p>
+    <label> Vogelart
+      <input type='search' list='Voegel' />
+      <datalist id='Voegel'>
+        <option value='Amsel'>
+        <option value='Buntspecht'>
+        <option value='Drossel'>
+        <option value='Eisvogel'>
+        <option value='Fink'>
+        <option value='Graugans'>
+        <option value='Meise'>
+        <option value='Spatz'>
+        <option value='Specht'>
+      </datalist>
+    </label>
+    <button>finden!</button>
+  </p>
+</form>
+</code>
+
+{{:modul:m293:learningunits:lu07:datalist_sp.png?200 |}}
+
+Das Beispiel erstellt ein Eingabefeld mit einem Label. Der Zusammenhang zwischen dem Eingabefeld und der Liste der Vorschläge wird durch die Verwendung des gleichen Bezeichners "Vögel" im list-Attribut des ''<input>''-Elements und im ''id''-Attribut des ''<datalist>''-Elements hergestellt.
+
+Wenn der Benutzer den Text "**sp**" eingibt, werden die Vorschläge automatisch gefiltert und es werden nur noch "Bunt**sp**echt", "**Sp**atz" und "**Sp**echt" als Optionen angezeigt.
+----
+{{tag>m293-LU07 m293-F2F m293-F2E}}
+Inhalte teilweise unter CC-BY-SA-3.0 von [[https://wiki.selfhtml.org/wiki/SELFHTML|SELFHTML]] kopiert.
+
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Kevin Maurizi, Marcel Suter

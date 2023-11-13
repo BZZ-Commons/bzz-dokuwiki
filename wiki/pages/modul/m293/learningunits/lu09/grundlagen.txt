@@ -1,0 +1,49 @@
+====== LU09a - Grundlagen des Deployments ======
+<WRAP center round info 60%>
+Deployment bzw. Veröffentlichung bedeutet, dass wir unsere Webseite im Internet verfügbar machen.
+</WRAP>
+
+===== 1. Webspace =====
+Als erstes benötigen wir einen Webspace, auf dem wir unsere Webseite veröffentlichen.
+Dazu haben Sie die Auswahl verschiedener Hosting-Anbieter.
+Für unsere Zwecke ist es wichtig, dass wir unsere eigenen HTML-Dateien via FTP hochladen können.
+Bei vielen Gratisanbietern fehlt diese Möglichkeit und Sie müssen zwingend das integrierte Werkzeuge des Anbieters verwenden.
+
+<WRAP center round info 60%>
+Im Rahmen des Unterrichts am BZZ stellen wir Ihnen einen Webspace bereit.
+Die Zugangsdaten haben Sie via Email auf Ihre BZZ-Adresse erhalten.
+</WRAP>
+
+===== 2. Domainname =====
+Damit Ihre Webseite gefunden wird, benötigen Sie einen Domainnamen (z.B. musterh.ch).
+Ausserdem benötigt Ihr Domainname einen DNS-Eintrag, der auf die IP-Adresse des Webservers zeigt.
+
+Die zuständige Organisation für die Registration Ihrer Domain hängt von der Top-Level-Domain, z.B. ''.ch'' oder ''.com'', ab.
+Die meisten Hosting-Anbieter übernehmen die Registration Ihres Domainnamens und verwalten auch die DNS-Einträge für Sie.
+
+<WRAP center round info 60%>
+Für den Unterricht übernehmen die Lehrpersonen diese Aufgaben.
+Ihr Domainname lautet **benutzername**.students.bzz.ch
+</WRAP>
+Zur Erinnerung: Der Benutzername am BZZ ist identisch mit dem ersten Teil Ihrer Email-Adresse ohne ''@bzz.ch''.
+
+===== 3. Live Test aufsetzen =====
+Bei einem Live Test stellen wir unsere Webseiten ins Internet, ohne dass das Zielpublikum diese Seiten sehen sollte.
+Dadurch können wir prüfen, ob alle Komponenten und Links korrekt vorhanden sind.
+Im idealfall erstellen wir dazu eine eigene Sub-Domain, z.B. **test**.musterh.ch.
+
+Eine Alternative ist es, den Live Test in einem Unterordner aufzuschalten, z.B. musterh.ch/test.
+Diese Variante ist weniger optimal, da wir nicht 100% sicher sagen können, ob unsere relativen Pfade korrekt sind.
+
+===== 4. Webseite aktiv schalten =====
+Nachdem der Live Test erfolgreich war, schalten wir nun unsere Webseiten aktiv.
+Unser Webauftritt ist nun unter dem gewählten Domainnamen im Internet erreichbar.
+
+
+<WRAP center round info 60%>
+Die Schritte 1 & 2 sind nur bei einem neuen Webauftritt nötig.
+Für künftige Änderungen führen wir nur noch die Schritte 3 & 4 durch.
+</WRAP>
+----
+{{tag>m293-LU09 m293-I1G}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Kevin Maurizi, Marcel Suter

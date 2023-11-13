@@ -1,0 +1,51 @@
+====== LU01c - HTML eine Auszeichnungssprache ======
+[[wpde>auszeichnungssprache]]
+===== Auszeichnungssprachen =====
+
+<WRAP center round info 60%>
+Eine Auszeichnungssprache (englisch **markup language**, abgekürzt ML) ist eine maschinenlesbare Sprache für die Gliederung und Formatierung von Texten und anderen Daten.
+
+//Quelle: [[wpde>auszeichnungssprache|Wikipedia]]//
+</WRAP>
+
+Mit einer Auszeichnungssprache legen Sie die Gliederung und das Aussehen von Texten fest.
+Damit unterscheiden sich Auszeichnungssprachen klar von Programmiersprachen;
+Eine Programmiersprache beschreibt die Logik eines Programms.
+
+===== HTML =====
+Die am weitesten verbreitete Auszeichnungssprache ist **HTML** (**H**yper**T**ext **M**arkup **L**anguage).
+Mit HTML werden Webseiten erstellt.
+Seit 2014 ist die Version 5 von HTML (kurz HTML5) der empfohlene Standard.
+Wenn wir von HTML sprechen, meinen wir immer HTML5.
+Mehr zur Entstehung von HTML finden Sie auf der Seite [[https://wiki.selfhtml.org/wiki/HTML/Tutorials/Entstehung_und_Entwicklung|selfhtml - Entstehung und Entwicklung]].
+
+Im Verlauf des Moduls werden Sie einige Elemente von HTML kennen lernen.
+Dabei müssen wir immer zwischen Elementen, Tags und Attributen unterscheiden.
+
+//Siehe auch [[https://wiki.selfhtml.org/wiki/HTML/Tutorials/Element,_Tag_und_Attribut|selfhtml - Element, Tag und Attribut]]//
+
+==== Element ====
+Die Elemente sind die Bausteine von HTML.
+Jedes Element wird durch ein Tag markiert und kann weitere, verschachtelte Elemente enthalten.
+
+==== Tag ====
+Ein Tag (deutsch: Etikette, Marke, Markierung) ist ein Schlüsselwort in HTML.
+  * Elemente werden durch Tags markiert.
+  * Tags werden zwischen spitzen Klammern geschrieben, z.B. ''<body>''.
+  * Die meisten Tags müssen wieder geschlossen werden, z.B. ''<body>Hier kommt der Inhalt der Webseite</body>''
+
+==== Attribute ====
+Attribute können nur innerhalb eines Tags vorkommen und enthalten zusätzliche Angaben zur Verarbeitung des Tags, z.B. ''<html lang='de'>''.
+Mit dem Attribut ''lang='de' '' legen wir fest, dass der Inhalt dieser Webseite in deutscher Sprache ist.
+
+  * Die meisten Attribute bestehen aus einem Schlüsselwort und einem Wert.
+  * Der Wert eines Attributs wird zwischen Hochkomma (single quotes) geschrieben ((Man könnte auch Anführungszeichen (double quotes) verwenden, wir wollen aber einheitlich single quotes nutzen.))
+
+===== CSS =====
+Während sich HTML um den Inhalt kümmert, sind die **C**ascading **S**tyle **S**heets für die Darstellung zuständig.
+Durch diese Aufteilung können wir eine einheitliche Optik für alle Webseiten und deren Elemente erreichen.
+Zunächst werden wir aber ganz ohne Layout arbeiten und CSS erst später betrachten.
+
+----
+{{tag>m293-LU01 m293-E1G m293-G1G}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Marcel Suter

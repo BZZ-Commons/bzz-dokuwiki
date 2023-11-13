@@ -1,0 +1,27 @@
+====== LU07.L03 - Counting ======
+
+<code python>
+def main():
+    iterations = int(input())
+    count = 0
+    while count <= iterations:
+        print(count)
+        count += 1
+
+
+def main_for():
+    iterations = int(input())
+    for count in range(iterations + 1):  # +1 to ensure that upper bound is included in print
+        print(count)
+
+
+if __name__ == '__main__':
+    main()
+    main_for()
+
+</code>
+
+----
+{{tag>M319-LU05}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter, Kevin Maurizi
+

@@ -1,0 +1,48 @@
+====== LU04a - Ternärer Bedingungsoperator in Python ======
+
+Der ternäre Bedingungsoperator ist eine kompakte Möglichkeit, einen Wert basierend auf einer Bedingung zuzuweisen. Er ist besonders nützlich für einfache if-else-Anweisungen, die nur einen Wert zurückgeben.
+
+===== Syntax =====
+
+Die Syntax des ternären Bedingungsoperators in Python ist:
+
+<code python>
+x if condition else y
+</code>
+
+  * **x**: Der Wert, der zurückgegeben wird, wenn die Bedingung wahr ist.
+  * **condition**: Die Bedingung, die überprüft wird.
+  * **y**: Der Wert, der zurückgegeben wird, wenn die Bedingung falsch ist.
+
+===== Beispiel =====
+
+Ein einfaches Beispiel könnte die Zuweisung einer Variablen ''greeting'' sein, die entweder "Good morning" oder "Good day" basierend auf der aktuellen Stunde enthält:
+
+<code python>
+hour = 9  # aktuelle Stunde
+greeting = "Good morning" if hour < 12 else "Good day"
+print(greeting)  # Output: "Good morning"
+</code>
+
+In diesem Beispiel wird "Good morning" ausgegeben, weil die Bedingung ''hour < 12'' wahr ist.
+
+===== Vergleich mit if-else-Anweisungen =====
+
+Der ternäre Bedingungsoperator ist eine verkürzte Form einer if-else-Anweisung. Zum Vergleich, das obige Beispiel könnte auch mit einer herkömmlichen if-else-Anweisung geschrieben werden:
+
+<code python>
+hour = 9  # aktuelle Stunde
+if hour < 12:
+    greeting = "Good morning"
+else:
+    greeting = "Good day"
+print(greeting)  # Output: "Good morning"
+</code>
+
+<WRAP center round tip 60%>
+Der ternäre Bedingungsoperator ist kürzer und oft einfacher zu lesen, aber er sollte sparsam und nur bei einfachen Bedingungen verwendet werden, um die Lesbarkeit des Codes nicht zu beeinträchtigen.
+</WRAP>
+
+----
+{{tag>M323-LU05}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/ch/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Kevin Maurizi 

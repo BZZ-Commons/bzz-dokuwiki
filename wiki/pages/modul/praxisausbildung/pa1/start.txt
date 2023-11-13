@@ -1,0 +1,43 @@
+====== IMS Praxisausbildung I ======
+
+===== Ziele =====
+
+
+===== Ablauf =====
+==== Q1 (bis Herbstferien "Digitale Kompetenz") ====
+
+  * Word (Formatvorlagen, Kopf-/Fusszeile, Inhaltsverzeichnis, Abbildungsverzeichnis, Literaturverzeichnis, Seitenumbrüche, ...)
+  * Excel (Formeln, Reihen weiterführen, Verweise auf andere Zellen/Mappen, bedingte Formatierungen, etwas VBA)
+  * Powerpoint (Regeln einer Präsentation --> relativ kurz abhandeln)
+  * Visio (Grundlegende Anwendung, ERM/ERD, Ablaufdiagram)
+  * Hardware (was ist eine CPU, RAM, HD, NIC)
+  * Wichtige Einstellungen in Windows (Automatische Update, versteckte Dateien anzeigen, Dateiendungen anzeigen, Ablagestruktur, Darkmode, Taskmanager!, Hibernate-Mode)
+
+=== Wochenübersicht ===
+
+  * Woche 1: Begrüssung. Was bedeutet diese Ausbildung, Anforderungen an das Zeitmanagement, Motivation. Verbindung WLAN. Steckbrief
+  * Woche 2: Wichtige Einstellungen in Windows (Update, Sicherheit, Cloud, Hibernate, ...)
+  * Woche 3: Word
+  * Woche 4: Excel
+  * Woche 5: Visio
+  * Ab Woche 6: Je 2 Lektionen an den weiteren Themen und 2 Lektionen "Abläufe und Programmlogik"
+
+==== Q1 (nach Herbstferien) und Q2 ====
+
+Material aus 319
+
+  * PAP wieder einführen
+==== Q3 ====
+Vertiefung M164 (insbesondere Querrys, Filter und Joins)
+zusätzliches zu M162, z.B. Visualisierungen, Statistiken
+
+==== Q4 ====
+  * Einfaches Datenmodell entwickeln mit 4-5 Tabellen
+  * REST-Schnittstelle mit Flask und SQL-Alchemy aufbauen
+===== Inhalte =====
+
+Der Inhalt des Modul ist in Learningunits gegliedert.
+
+<nspages .:learningunits -subns -nopages -exclude -h1 -textNS="" -simplelist>
+
+===== Literatur =====

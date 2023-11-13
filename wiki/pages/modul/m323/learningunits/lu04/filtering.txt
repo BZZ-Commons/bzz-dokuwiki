@@ -1,0 +1,55 @@
+====== LU04j - Filtern, womit? ======
+
+Das Filtern von Daten ist eine häufige Aufgabe in der Programmierung. In Python gibt es verschiedene Möglichkeiten, Listen zu filtern: ''filter()'', List Comprehensions und Generator Expressions. Jede Methode hat ihre eigenen Vorteile und Anwendungsfälle.
+
+===== Generator Expressions =====
+
+Generator Expressions sind "lazy", d.h. sie generieren Werte "on-the-fly" und halten nicht die gesamte Sequenz im Speicher. Dies macht sie besonders effizient für große Datenmengen.
+
+**Vorteile**:
+  - **Speichereffizienz**: Da sie "lazy" sind, verbrauchen sie weniger Speicher.
+  - **Flexibilität**: Sie können wie List Comprehensions verwendet werden, aber ohne den Overhead, die gesamte Liste im Speicher zu halten.
+  - **Integration mit anderen Funktionen**: Sie können leicht mit Funktionen wie `next()` kombiniert werden, um das nächste gefilterte Element zu erhalten.
+
+**Nachteile**:
+  - **Einmalige Verwendung**: Einmal durchlaufen, muss ein Generator erneut erstellt werden, um wieder durchlaufen zu werden.
+
+===== filter() =====
+
+Die ''filter()''-Funktion ist eine eingebaute Funktion, die es ermöglicht, Elemente einer Liste basierend auf einer Funktion zu filtern.
+
+**Vorteile**:
+  - **Lesbarkeit**: Es ist explizit und zeigt klar die Absicht, eine Liste zu filtern.
+  - **Einfachheit**: Für einfache Filterungen kann es weniger Code erfordern als eine List Comprehension oder Generator Expression.
+
+**Nachteile**:
+  - **Rückgabetyp**: ''filter()'' gibt einen Iterator zurück, sodass Sie ihn in eine Liste umwandeln müssen, wenn Sie eine Liste als Ergebnis möchten.
+  - **Flexibilität**: Es kann weniger flexibel sein als List Comprehensions oder Generator Expressions, da es nur zum Filtern und nicht zum Transformieren von Daten verwendet wird.
+
+===== List Comprehensions =====
+
+List Comprehensions bieten eine kompakte Möglichkeit, Listen zu erstellen und zu filtern.
+
+**Vorteile**:
+  - **Lesbarkeit**: Sie sind oft leichter zu lesen und zu verstehen als die `filter()`-Funktion, insbesondere wenn Transformationen erforderlich sind.
+  - **Flexibilität**: Sie können sowohl zum Filtern als auch zum Transformieren von Daten verwendet werden.
+
+**Nachteile**:
+  - **Speicherverbrauch**: Im Gegensatz zu Generator Expressions halten sie die gesamte Liste im Speicher, was bei großen Datenmengen problematisch sein kann.
+
+===== Wahl der Filtermethode =====
+
+Die Wahl der Filtermethode hängt stark von der spezifischen Anwendung und den Anforderungen ab. Hier sind einige Überlegungen, die Ihnen helfen können, die beste Methode für verschiedene erwartete Ergebnisse zu bestimmen:
+
+  - **Einzelnes Element**: Wenn Sie nur ein einzelnes Element aus einer Sequenz basierend auf einem Kriterium extrahieren möchten, sind **Generator Expressions** in Kombination mit ''next()'' oft die beste Wahl. Sie sind "lazy" und generieren Werte on-the-fly, sodass Sie nicht die gesamte Sequenz durchlaufen müssen, um das gewünschte Element zu finden.
+  - **Komplette Liste**: Wenn Sie eine vollständige Liste der gefilterten Ergebnisse benötigen:
+    * Bei **kleineren Datenmengen** sind **List Comprehensions** oft die bevorzugte Methode, da sie sowohl lesbar als auch flexibel sind.
+    * Bei **größeren Datenmengen** können **Generator Expressions** vorteilhaft sein, insbesondere wenn Sie nicht alle Ergebnisse gleichzeitig benötigen. Sie können durch den Generator iterieren und die Ergebnisse nach Bedarf verarbeiten, ohne den gesamten Datensatz im Speicher zu halten.
+  - **Einfaches Filtern ohne Transformation**: Wenn Sie nur filtern und keine Transformation der Daten durchführen möchten, kann die ''filter()''-Funktion eine gute Wahl sein. Sie ist explizit und zeigt klar die Absicht, eine Sequenz zu filtern. Beachten Sie jedoch, dass ''filter()'' einen Iterator zurückgibt, sodass Sie ihn in eine Liste umwandeln müssen, wenn Sie eine Liste als Ergebnis möchten.
+  - **Speichereffizienz**: Wenn der Speicherverbrauch ein Hauptanliegen ist (z.B. bei sehr großen Datenmengen), sind **Generator Expressions** oft die beste Wahl, da sie die Daten nicht im Speicher halten.
+  - **Lesbarkeit und Wartbarkeit**: In vielen Fällen kann die Wahl auch von der Lesbarkeit und Wartbarkeit des Codes abhängen. **List Comprehensions** sind oft leichter zu lesen und zu verstehen als die ''filter()''-Funktion, insbesondere wenn auch Datenverarbeitung erforderlich ist.
+
+
+===== Fazit =====
+
+Während alle drei Methoden ihre eigenen Vorteile haben, eignen sich Generator Expressions besonders gut zum Filtern großer Datenmengen aufgrund ihrer Speichereffizienz. Wenn Sie jedoch eine Liste als Ergebnis benötigen und die Datenmenge nicht zu groß ist, können List Comprehensions eine gute Wahl sein. Für einfache Filterungen, bei denen keine Transformation erforderlich ist, kann die ''filter()''-Funktion ausreichend sein.

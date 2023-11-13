@@ -1,0 +1,49 @@
+====== LU07.A02 - Eintrag in Liste ergänzen ======
+
+===== Lösung Aufgabe 1 =====
+<WRAP center round box 60%>
+<code python>
+def main():
+    # list of fruits
+    my_list = ['papaya', 'banana', 'pineapple', 'mango', 'grapes']
+    new_fruit = input('Welche Frucht möchten Sie der Liste ergänzen?\n')
+
+    size = len(my_list)  # length/size of the list
+    i = 0
+
+    # iterating through the fruit list
+    while i < size:
+        if my_list[i] == new_fruit:
+            print('Frucht bereits vorhanden')
+            break
+        i += 1
+    else:
+        my_list.append(new_fruit)
+        
+    print(f'Inhalt der Liste: {my_list}')
+   
+if __name__ == '__main__':
+    main()
+</code>
+</WRAP>
+
+
+===== Lösung Aufgabe 2 =====
+<WRAP center round box 60%>
+<code python>
+def main():
+    # list of fruits
+    my_list = ['papaya', 'banana', 'pineapple', 'mango', 'grapes']
+    new_fruit = input('Welche Frucht möchten Sie der Liste ergänzen?\n')
+
+    if new_fruit in my_list:
+        print('Frucht bereits vorhanden')
+    else:
+        my_list.append(new_fruit)
+
+    print(f'Inhalt der Liste: {my_list}')
+
+if __name__ == '__main__':
+    main()
+</code>
+</WRAP>

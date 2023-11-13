@@ -1,0 +1,21 @@
+====== LU06.L10: Counting ======
+<code python>
+def main():
+    iterations = int(input())
+    count = 0
+    while count <= iterations:
+        print(count)
+        count += 1
+
+
+def main_for():
+    iterations = int(input())
+    for count in range(iterations + 1):  # +1 to ensure that upper bound is included in print
+        print(count)
+
+
+if __name__ == '__main__':
+    main()
+    main_for()
+
+</code>

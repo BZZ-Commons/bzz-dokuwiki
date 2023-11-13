@@ -1,0 +1,52 @@
+====== LU05.A03 - Aktualisierung von Lagerbeständen mit Transaktionen ======
+
+<WRAP center round todo 60%>
+Erstelle eine Funktion, die ein Dictionary mit Produktbeständen und eine beliebige Anzahl von Transaktionsobjekten akzeptiert. Jedes Transaktionsobjekt sollte ein Produkt und eine Menge enthalten. Die Funktion sollte den Lagerbestand basierend auf den Transaktionen aktualisieren.
+</WRAP>
+
+===== Aufgabenstellung =====
+Definiere eine Funktion namens ''update_inventory''. Das erste Argument sollte ein Dictionary mit Produktbeständen sein, gefolgt von einer variablen Anzahl von Transaktionsobjekten, die mit ''*args'' akzeptiert werden. Jedes Transaktionsobjekt sollte zwei Attribute haben: `product` und `quantity`. Positive Mengen erhöhen den Lagerbestand, während negative Mengen ihn verringern.
+
+Beispiel: Für ein Anfangsinventar von `{'Apfel': 10, 'Birne': 5}` und Transaktionen, die 3 Äpfel hinzufügen und 2 Birnen entfernen, sollte die Funktion `update_inventory({'Apfel': 10, 'Birne': 5}, Transaction('Apfel', 3), Transaction('Birne', -2))` aufgerufen werden.
+
+**Code-Vorlage**:
+<code python>
+class Transaction:
+    def __init__(self, product, quantity):
+        self.product = product
+        self.quantity = quantity
+
+def update_inventory(inventory, *transactions):
+    """
+    Updates the inventory based on the provided transactions.
+    
+    Parameters:
+        inventory (dict): The current inventory as a dictionary.
+        *transactions (Transaction): Variable number of Transaction objects.
+        
+    Returns:
+        None: Updates the inventory in-place.
+    """    
+    # TODO: Implementiere die Funktion
+    ...
+
+if __name__ == '__main__':
+    # Teste deine Funktion
+    inventory = {'Apfel': 10, 'Birne': 5}
+    transactions = [Transaction('Apfel', 3), Transaction('Birne', -2)]
+    update_inventory(inventory, *transactions)
+    print(inventory)  # Erwarteter Output: {'Apfel': 13, 'Birne': 3}
+</code>
+
+===== Vorgehen =====
+  - Akzeptiere das GitHub Classroom Assignment
+  - Klone dein persönliches Repository in die Entwicklungsumgebung
+  - Implementiere die Funktion ''update_inventory'' und die Klasse ''Transaction'' gemäß der Aufgabenstellung
+  - Teste die Funktion mit verschiedenen Inventaren und Transaktionen
+
+===== Abgabe =====
+Die Abgabe der Lösung erfolgt als Push in das persönliche GitHub-Repository.
+
+----
+<nodisp> GitHub Repository https://github.com/templates-python/m323-lu05-a03-args3</nodisp>
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Kevin Maurizi

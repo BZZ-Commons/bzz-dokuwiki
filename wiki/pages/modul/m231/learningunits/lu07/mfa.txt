@@ -1,0 +1,52 @@
+====== LU07c - Multi-Faktor-Authentifizierung ======
+<WRAP center round info 60%>
+Bei einer Multi-Faktor-Authentifizierung (MFA) werden zwei oder mehr Verifikationsfaktoren für die Anmeldung benötigt.
+  * Etwas, dass ich weiss; z.B. Passwort
+  * Etwas, dass ich habe; z.B. SMS auf mein Smartphone
+  * Etwas, dass ich bin; z.B. Fingerabdruck
+</WRAP>
+
+//Siehe auch [[https://www.onelogin.com/de-de/learn/what-is-mfa]]//
+
+===== One Time Password (OTP) =====
+Ein One Time Password ist ein 4 bis 8 stelliger Code, der in bestimmten Zeitabständen oder bei jedem Loginversuch neu generiert wird.
+
+=== Streichliste ===
+Eine der ältesten Varianten von OTP waren Streichlisten.
+Zum Beispiel habe ich von meiner Bank eine Liste mit 100 Codes erhalten.
+Bei jedem Login habe ich einen Code verwendet und durchgestrichen, daher auch der Name Streichliste.
+
+Diese Lösung war relativ unpraktisch, da man immer die Papierliste dabei haben musste.
+
+=== SMS/Email-Code ===
+Der Code wird auf dem Server generiert und per Email oder SMS an mich gesendet.
+Der Vorteil dieser Methode ist, dass ich keine zusätzlichen Geräte oder Apps benötige.
+Allerdings sind Email und SMS relativ unsichere Kanäle, da die Daten unverschlüsselt übertragen werden.
+
+=== Authenticator-App ===
+Eine Authenticator-App wird auf dem Smartphone oder als Plugin im Webbrowser installiert.
+Die verschiedenen Benutzerkonten werden mit der App verbunden.
+Danach wird für jedes Konto in regelmässigen Abständen ein Code generiert.
+
+{{:modul:m231:learningunits:lu07:authenticatorapp.png?200|}}
+//Quelle: https://2fas.com/ //
+
+=== Hardware Token ===
+Ein Hardware Token ist ein kleines Gerät mit einem Chip zum Generieren des Codes und einem Display für die Anzeige.
+Häufig sind haben diese Geräte die Form einer Kreditkarte oder eines Schlüsselanhängers.
+
+{{https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/SecureID_token_new.JPG/220px-SecureID_token_new.JPG}}
+
+===== Biometrische Daten =====
+Bei biometischen Daten werden Eigenschaften meiner Person als Authentifizierungs-Faktor verwendet.
+Im Alltag kennen wir das Entsprerren von Geräten mittels Fingerabdruck oder durch Gesichtserkennung.
+
+Aus Sicht des Datenschutzes werden biometische Daten als besonders schützenswert eingestuft.
+Dies liegt daran, dass z.B. Veränderungen der Stimmlage Rückschlüsse auf bestimmte Krankheiten erlauben.
+
+===== Weitere Faktoren =====
+Für besonders sensitive Zugriffe kommen zunehmend weitere Faktoren zum Zug.
+Zum Beispiel kann anhand des Standorts meines Smartphones das Login erlaubt werden oder zusätzliche Faktoren wie ein One Time Password verlangt werden.
+----
+{{tag>m231-AnG}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

@@ -1,0 +1,22 @@
+====== 320 : Objektorientiert Programmieren ======
+
+^ Modulidentifikation | [[https://www.modulbaukasten.ch/module/320/1/de-DE?title=Objektorientiert-Programmieren|320]] |
+^ Kompetenzraster | [[https://kompetenzmatrix.ch/cluster-api/m320/|Kompetenzraster]] |
+^ Git Repos | [[https://github.com/orgs/templates-python/repositories?q=m320&type=all&sort=name|Github.com]] |
+===== Literatur =====
+
+
+
+===== Inhalte =====
+
+Der Inhalt des Modul ist in Learningunits gegliedert. Sie decken die in der Kompetenzmatrix beschriebenen Kompetenzen ab.
+
+<nspages .:learningunits -subns -nopages -exclude -h1 -textNS="" -simplelist>
+
+===== Merkblätter =====
+Merkblätter fassen die Theorie zu bestimmten Themen zusammen.
+
+<nspages .:merkblaetter -h1  -exclude -simpleList -textPages="">
+
+===== Prüfungsvorgaben =====
+<nspages .:test -subns -nopages -exclude -h1 -textNS="" -simplelist>

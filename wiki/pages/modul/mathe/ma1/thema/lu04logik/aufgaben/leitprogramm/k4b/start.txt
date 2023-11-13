@@ -1,0 +1,43 @@
+===3. Vergleichsoperationen===
+Eine boolsche Aussage kommt oft aus einem Vergleich von Werten zustande. Handelt es sich um Zahlen, sind es die bekannten Operatoren wie
+  * gleich (== oder nur %%=)%%
+  * grösser (>) und grösser-gleich (%%>=%%)
+  * kleiner (<) und kleiner-gleich (<=)
+  * nicht (oft mit ! bezeichnet)
+  * nicht gleich (!%%=%% oder <>)
+Die Beispiele beziehen sich auf Programmiersprachen wie Python, Java, C usw. sind aber nicht abschliessend.\\
+Es gibt in vielen Programmiersprachen weitere Operatoren, die zu einem logischen Wert (true/false) führen. So z.B. der ''in''-Operator bei Python.\\
+\\
+----
+//Beispiele://\\
+  * <code python> 
+     alter = 18
+     if alter > 18: 
+       #do something
+     else:
+       # do another thing
+       
+     In diesem Fall wird der else-Zweig ausgeführt.
+    </code>
+    
+  * <code python>
+    mail = "max.muster@bzz.ch"
+    isValid = '@' in mail
+    
+    Das Attribut isValid weist den Wert true auf, da das Zeichen @ im String mail vorkommt.
+    </code>
+
+----
+
+Lösen Sie nun die [[modul:mathe:ma1:thema:lu04logik:aufgaben:leitprogramm:k3:u3:start|Übung 3]]
+
+----
+Überprüfen Sie Ihre Antworten. [[modul:mathe:ma1:thema:lu04logik:aufgaben:leitprogramm:k3:l3:start|Lösung 3]]\\
+Sollten Sie Fehler haben, schauen Sie sich die Theorie noch einmal genau an, besprechen Sie offene Fragen mit Ihren Kolleginnen und/oder Kollegen. Fragen Sie auch Ihre Lehrperson, wenn Sie weiterführende Hilfe brauchen.
+
+
+----
+[[modul:mathe:ma1:thema:lu04logik:aufgaben:leitprogramm:k5:start|nächstes Kapitel]]
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) René Probst

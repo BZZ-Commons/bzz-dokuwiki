@@ -1,0 +1,38 @@
+====== LU05.A07 - Summe und Durchschnitt ======
+
+<WRAP center round todo 60%>
+Erstellen Sie eine äußere Funktion, die die Summe und den Durchschnitt einer Liste von Zahlen berechnet, indem sie zwei innere Funktionen verwendet.
+</WRAP>
+
+===== Aufgabenstellung =====
+
+  * Erstellen Sie eine äußere Funktion namens ''sum_and_average'', die eine Liste von Zahlen als Argument nimmt.
+  * Innerhalb von ''sum_and_average'', definieren Sie zwei innere Funktionen: ''calculate_sum'' und ''calculate_average''.
+  * ''calculate_sum'' sollte die Summe der Liste berechnen und ''calculate_average'' sollte den Durchschnitt berechnen.
+  * Die äußere Funktion sollte die berechnete Summe und den Durchschnitt zurückgeben.
+
+==== Code Vorlage ====
+
+{{gh>https://github.com/templates-python/m323-lu05-a07-inner2/blob/main/main.py}}
+
+===== Vorgehen =====
+
+  - Akzeptiere das GitHub Classroom Assignment
+  - Klone dein persönliches Repository in die Entwicklungsumgebung
+  - Definieren Sie ''sum_and_average'' und nehmen Sie eine Liste von Zahlen als Argument.
+  - Definieren Sie ''calculate_sum'' und ''calculate_average'' als innere Funktionen.
+  - Berechnen Sie die Summe und den Durchschnitt der Zahlen.
+  - Geben Sie beide Werte zurück.
+
+===== Abgabe =====
+Die Abgabe der Lösung erfolgt als Push in das persönliche GitHub-Repository.
+
+----
+<details>
+<summary>//=> GitHub Repo für externe Besucher//</summary>
+GitHub Repository https://github.com/templates-python/m323-lu05-a07-inner2
+
+//Lernende am BZZ müssen den Link zum GitHub Classroom Assignment verwenden//
+
+</details>
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/ch/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Kevin Maurizi 

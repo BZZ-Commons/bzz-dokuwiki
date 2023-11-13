@@ -1,0 +1,14 @@
+====== Automatisches erstellen von "docstrings" ======
+
+In den Einstellungen von Pycharm wählen Sie das docstring-Pattern ''reStructuredText'':
+
+{{:howto:pycharm:screenshot_2022-11-07_at_09.40.48.png?600|}}
+
+  * Setzen Sie den Cursor hinter die Deklaration einer Funktion, die Sie dokumentieren möchten.
+  * Geben Sie öffnende dreifache Anführungszeichen ''"""'' ein und drücken Sie ⏎ oder die Leertaste.
+  * Fügen Sie eine aussagekräftige Beschreibung der Parameter und Rückgabewerte hinzu.
+
+
+
+----
+Mehr Infos: https://www.jetbrains.com/help/pycharm/creating-documentation-comments.html#create_pydoc

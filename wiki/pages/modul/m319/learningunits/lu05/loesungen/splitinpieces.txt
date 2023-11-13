@@ -1,0 +1,110 @@
+====== LU05.L12: Split in pieces ======
+
+===== 1. Einlesen =====
+
+<code python>
+def main():
+    print('Give a numbers:')
+    number = 1  # To compensate for -1 for terminating
+    while number != -1:
+        number = int(input())
+    print('Thx! Bye!')
+
+
+if __name__ == '__main__':
+    main()
+</code>
+
+===== 2. Summe der Zahlen =====
+<code python>
+def main():
+    print('Give numbers:')
+    number = 0
+    sums = 1  # To compensate for -1 for terminating
+    while number != -1:
+        number = int(input(''))
+        sums += number
+    print('Thx! Bye!')
+    print(f'Sum: {sums}')
+
+
+if __name__ == '__main__':
+    main()
+</code>
+
+===== 3. Summe und die Anzahl der Zahlen =====
+<code python>
+def main():
+    print('Give numbers:')
+    number = 0
+    sums = 1  # To compensate for -1 for terminating
+    counter = -1  # We start with -1 to compensate for last iteration
+    while number != -1:
+        number = int(input(''))
+        sums += number
+        counter += 1
+    print('Thx! Bye!')
+    print(f'Sum: {sums}')
+    print(f'Numbers: {counter}')
+
+
+if __name__ == '__main__':
+    main()
+</code>
+
+===== 4. Durchschnitt der Zahlen =====
+<code python>
+def main():
+    print('Give numbers:')
+    number = 0
+    sums = 1  # To compensate for -1 for terminating
+    counter = -1  # We start with -1 to compensate for last iteration
+    while number != -1:
+        number = int(input(''))
+        sums += number
+        counter += 1
+    print('Thx! Bye!')
+    print(f'Sum: {sums}')
+    print(f'Numbers: {counter}')
+    average = sums / counter
+    print(f'Average: {average}')
+
+
+if __name__ == '__main__':
+    main()
+</code>
+
+===== 5. Gerade und ungerade Zahlen =====
+<code python>
+def main():
+    print('Give numbers:')
+    number = 0
+    sums = 1      # To compensate for -1 for terminating
+    counter = -1  # We start with -1 to compensate for last iteration
+    odd = 0
+    even = 0
+    while number != -1:
+        number = int(input(''))
+        if (number % 2 == 0 and number != -1):
+            even += 1
+        if (number % 2 == 1 and number != -1):
+            odd += 1
+        sums += number
+        counter += 1
+    print('Thx! Bye!')
+    print(f'Sum: {sums}')
+    print(f'Numbers: {counter}')
+    average = sums / counter
+    print(f'Average: {average}')
+    print(f'Even: {even}')
+    print(f'Odd: {odd}')
+
+
+if __name__ == '__main__':
+    main()
+
+</code>
+
+----
+{{tag>M319-LU05}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/ch/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Kevin Maurizi, Marcel Suter

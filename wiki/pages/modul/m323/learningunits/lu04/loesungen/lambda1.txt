@@ -1,0 +1,53 @@
+====== LU04.L01 - Einfache Lambda Ausdrücke ======
+<code python>
+add = lambda a, b: a + b  # Funktion zum Addieren zweier Zahlen
+
+subtract = lambda a, b: a - b  # Funktion zum Subtrahieren zweier Zahlen
+
+multiply = lambda a, b: a * b  # Funktion zum Multiplizieren zweier Zahlen
+
+divide = lambda a, b: a / b if b != 0 else 'Division durch Null ist nicht erlaubt!'  # Funktion zum Teilen zweier Zahlen
+
+
+if __name__ == '__main__':
+
+    # Testen Sie Ihre Funktionen hier
+    print (add(5, 10))
+    print(subtract(10, 5))
+    print(multiply(3, 4))
+    print(divide(15, 3))
+</code>
+
+<WRAP center round box 80%>
+==== Erklärung des if in der Lambda-Funktion ====
+
+Der Lambda-Ausdruck für die Division sieht wie folgt aus:
+
+<code python>
+divide = lambda x, y: x / y if y != 0 else "Division durch Null nicht möglich"
+</code>
+
+In diesem Lambda-Ausdruck wird der ternäre Bedingungsoperator von Python verwendet, der folgendermaßen strukturiert ist:
+
+<code python>
+x if condition else y
+</code>
+
+Dieser Operator gibt ''x'' zurück, wenn die ''condition'' wahr ist, und ''y'' sonst.
+
+In der Lambda-Funktion für die Division wird der Wert von ''x / y'' zurückgegeben, wenn ''y'' nicht Null ist. Ist ''y'' jedoch Null, wird der String "Division durch Null nicht möglich" zurückgegeben.
+
+Dieser Ausdruck ist eine kompakte Darstellung der folgenden if-else-Struktur:
+
+<code python>
+if y != 0:
+    return x / y
+else:
+    return "Division durch Null nicht möglich"
+</code>
+
+Der Einsatz von Einzeiler-Bedingungen kann den Code kompakter gestalten, sollte jedoch sparsam eingesetzt werden, um die Lesbarkeit nicht zu beeinträchtigen.
+</WRAP>
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/ch/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Kevin Maurizi 

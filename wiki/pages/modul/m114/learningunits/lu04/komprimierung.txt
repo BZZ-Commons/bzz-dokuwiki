@@ -1,0 +1,115 @@
+====== LU04b - Komprimierung  ======
+
+===== Einleitung =====
+
+In diesem Kapitel konzentrieren wir uns auf verlustfreie Verfahren zur Komprimierung von Daten.
+Bei diesen Verfahren können die ursprünglichen Daten wiederhergestellt werden.
+Zum Beispiel:
+  * Textdokumente
+  * Programmcode (als Sourcecode oder binärer Code)
+  * Geschäftsdaten
+
+Verlustbehaftete Verfahren für Bilddateien finden Sie im Kapitel [[modul:m114:learningunits:lu03:bildformate]].
+
+===== Run length encoding (RLE) =====
+Bei diesen Verfahren werden identische Zeichen oder Zeichenketten, die mehrmals hintereinander stehen, nur einmal abgespeichert.
+Je nach Art der Daten kann dieses Kompressionsverfahren massive Einsparungen bringen.
+
+==== Beispiel: Brief ====
+Ein Brief besteht zu einem grossen Teil aus Leerzeichen (hier als _ dargestellt).
+=== Text ===
+<code>
+Herr___________________________________________________________________________
+Hans_Muster____________________________________________________________________
+Wegweg_0_______________________________________________________________________
+_______________________________________________________________________________
+0000_Hier______________________________________________________________________
+_______________________________________________________________________________
+Sehr_geehrter_Herr_Muster______________________________________________________
+
+</code>
+
+=== Codierung ===
+Um Speicherplatz zu sparen, wird nicht jedes Leerzeichen einzeln gespeichert.
+Stattdessen wird angegeben, wie oft sich ein Zeichen wiederholt.
+
+<code>
+Herr\76_\
+Hans_Muster\69_\
+Wegweg_0\72_\
+\80_\
+0000_Hier\71_\
+\80_\
+Sehr_geehrter_Herr_Muster\65_\
+
+</code>
+
+Diese Codierung kann auf alle Zeichen angewandt werden, die mehrfach hintereinander folgen.
+
+==== Beispiel: Grafik ====
+Eine Grafik besteht zum grössten Teil aus Pixeln mit der Hintergrundfarbe.
+Zum Beispiel hat diese Wiki-Seite, die Sie im Moment betrachten, wohl 80-90% weisse Pixel.
+Es wäre nun sehr ineffizient, jeden weissen Pixel einzeln zu übermitteln.
+Stattdessen wird einfach angegeben, wieviele weisse Pixel hintereinander folgen.
+
+===== Wörterbuch für Texte =====
+Bei diesen Verfahren wird ein Wörterbuch mit allen im Text vorkommenden Wörtern erstellt.
+Im eigentlichen Text wird anstelle der Wörter nur noch die Position im Wörterbuch angegeben.
+
+Zum Entpacken der Datei, muss das Wörterbuch in der komprimierten Daten mitgegeben werden.
+
+=== Beispiel ===
+<code>
+Wenn Fliegen hinter Fliegen fliegen, fliegen Fliegen Fliegen hinterher.
+</code>
+
+== Wörterbuch ==
+
+^ Index ^ Wort ^
+| 0 | Wenn |
+| 1 | Fliegen |
+| 2 | fliegen |
+| 3 | hinterher|
+| 4 | hinter |
+
+
+== Codierung ==
+<code>
+0 1 4 1 2 2 1 1 3
+</code>
+
+Je länger der Text ist, desto häufiger kommen die gleichen Wörter vor.
+Somit wird das Verfahren umso besser, je länger der Text ist.
+
+=== Verfahren ===
+  * [[wpde>Lempel-Ziv-Welch-Algorithmus|LZW-Algorithmus]]
+
+===== Entropiecodierung =====
+Bei diesen Verfahren wird jedes Zeichen durch einen unterschiedlich langen Code ersetzt.
+Dabei wird den häufigsten Zeichen ein kurzer, den seltenen Zeichen ein längerer Code zugeordnet.
+Im Gegensatz zur ASCII-Codierung haben die Zeichencodes eine variable Länge.
+Dadurch können häufige Zeichen mit 2 oder 3 Bits codiert werden, was eine markante Einsparung bedeutet.
+==== Morse-Alphabet ====
+Der im 19. Jahrhundert entwickelte Morsecode setzt eine Form der Entropiekodierung ein.
+Jedem Zeichen wird ein Code aus Punkten (kurzes Signal) und Strichen (langes Signal) zugeordnet.
+Dabei wird den häufigsten Buchstaben ein Code aus wenigen Signalen zugeordnet.
+Die selten genutzten Zeichen haben einen längeren Code.
+
+{{http://de.scoutwiki.org/images/7/77/Morse.png}}
+
+Um die einzelnen Zeichen zu erkennen, wird nach jedem Zeichen eine längere Pause eingelegt.
+Beim Morsen mit einer Lichtquelle (z.B. Taschenlampe) gilt:
+
+  * Punkt = 1 Sekunde Licht.
+  * Strich = 3 Sekunden Licht.
+  * 1 Sekunde Pause zwischen zwei Signalen.
+  * 3 Sekunden Pause nach jedem Buchstaben.
+
+
+=== Huffman ===
+Viele aktuelle Kompressionsverfahren nutzen (nebst anderen Verfahren) die Entropiecodierung.
+Die Grundlagen dazu finden Sie im Kapitel [[modul:m114:learningunits:lu04:huffman|Huffman]].
+
+----
+{{tag>m114-A0G}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

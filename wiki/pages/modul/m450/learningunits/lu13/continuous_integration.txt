@@ -1,0 +1,36 @@
+====== LU13a - Continuous Integration (CI) ======
+<WRAP center round info 60%>
+Bei der kontinuierlichen Integration handelt es sich um eine DevOps-Softwareentwicklungspraxis, bei der die Entwickler ihre Codeänderungen regelmässig in ein zentrales Repository einbringen, woraufhin automatisierte Builds und Tests durchgeführt werden.
+
+//Quelle: [[https://aws.amazon.com/de/devops/continuous-integration|aws Amazon]]//
+</WRAP>
+
+Continuos Integration wird in der Entwicklungs- und Integrationsphase eines Softwareprojekts angewandt.
+Die Hauptziele sind:
+  * Schnellere Einführung von Software-Aktualisierungen
+  * Bugs schneller entdecken und beheben
+  * Optimieren der Softwarequalität
+
+===== Wie funktioniert CI? =====
+Für die Umsetzung von Continuous Integration müssen einige Grundsätze beachtet werden:
+
+==== Gemeinsame Codebasis ====
+Alle Entwickler teilen sich eine gemeinsame Codebasis, zum Beispiel ein Repository auf GitHub oder GitLab.
+Ein Entwickler schreibt einen Codeteil und testet diesen lokal mit Unittests.
+Die lokale Kopie des Repositories wird regelmässig mittels ''pull'' aktualisiert.
+Sobald ein Teil des Codes fertig ist, wird dieser mittels ''push'' ins gemeinsame Repository gestellt.
+
+==== Häufige Integration ====
+Jede Änderung am Sourcecode sollte so zeitnah wie möglich in die gemeinsame Codebasis überführt werden.
+Dadurch wird einerseits die Arbeit gesichert und andererseits steht der neue Code den anderen Entwicklern zur Verfügung.
+
+==== Automatisierte Tests ====
+Bevor die Änderungen in die gemeinsame Codebasis übernommen werden, finden automatisierte Qualitätsprüfungen statt.
+Dies kann statische Codeanalysen (Lint) aber auch Tests umfassen.
+Nur wenn der geänderte Code die Qualitätsprüfung erfolgreich absolviert, werden die Änderungen übernommen.
+
+
+
+----
+{{tag>M450-LU13}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

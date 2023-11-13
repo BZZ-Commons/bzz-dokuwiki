@@ -1,0 +1,81 @@
+====== LU04a - Fixture ======
+<WRAP center round info 60%>
+Eine //Fixture// (deutsch: Vorrichtung, Halterung) dienen zur Initialisierung von Tests.
+Sie bieten eine statische Basis, damit Test zuverlässig ausgeführt werden und konsistente, wiederholbare Resultate erzeugen.
+</WRAP>
+
+===== Was sind Fixtures? =====
+
+Bei der Durchführung von Tests müssen wir sicherstellen, dass diese immer wieder die gleichen Resultate erzeugen.
+Dazu müssen die Tests immer in der gleichen Umgebung mit den gleichen Daten durchgeführt werden.
+Fixtures helfen uns diese gleich bleibende Basis für unsere Testfälle sicherzustellen.
+
+Die Durchführung eines Tests kann in vier Schritte unterteilt werden:
+  - Vorbereitung: Wir bereiten die Umgebung für die Durchführung des Tests vor. Dazu gehören:
+    * Objekte erzeugen
+    * Daten in Datenbanken oder Dateien bereitstellen
+    * Umgebungsvariablen wie URL, Pfade, ... definieren
+  - Ausführen: Wir führen die zu testende Funktion aus und nehmen die Resultate entgegen.
+  - Auswerten: Wir vergleichen die tatsächlichen Resultate mit den erwarteten Resultaten. Anhand dieses Vergleichs können wir bewerten, ob der Test erfolgreich war oder nicht.
+  - Aufräumen: Zuletzt sollte der Test alle Veränderungen am System rückgängig machen. Dadurch verhindern wir, dass die Resultate anderer Tests beeinflusst werden.
+
+Im engeren Sinne des Wortes sind Fixtures Vorbereitungsschritte für die Durchführung eines Tests.
+Wir können aber Fixtures auch etwas weiter fassen.
+Es handelt sich um alle nötigen Schritte, rund um den eigentlichen Test.
+Also sowohl Vorbereitung als auch Ausführung und Aufräumarbeiten. 
+
+===== Fixtures in PyTest =====
+//Siehe auch [[https://docs.pytest.org/en/6.2.x/fixture.html|pytest fixtures]]//
+
+PyTest bietet uns ein umfangreiches System zum Einsatz solcher Fixtures an, die wir in den verschiedenen Schritten einsetzen können.
+
+==== capsys und monkeypatch ====
+In der letzten Learning Unit haben wir bereits mit ''capsys'' und ''monkeypatch'' gearbeitet, um die Ein- und Ausgaben zu kontrollieren.
+Mittels ''capysys'' haben wir die Ausgaben einer Funktion gelesen.
+Zum Bereitstellen von Benutzereingaben, haben wir ''monkeypatch'' genutzt.
+
+Monkeypatch kann mehr als nur Benutzereingaben bereitstellen.
+Mit Hilfe dieser Fixture können wir
+  * Attribute von Objekten verändern
+  * Elemente von Dictionaries ändern und löschen
+  * Umgebungsvariablen setzen und löschen
+
+Dadurch können wir zum Beispiel Situationen erzeugen, die beim normalen Ablauf des Programms nicht auftreten können oder sollten.
+
+==== Eigene Fixtures definieren ====
+Neben den von PyTest vorgegebenen Fixtures, können wir auch eigene Funktionen schreiben und als Fixtures nutzen.
+Ein typischer Einsatz solcher Funktionen ist das Bereitstellen von Objekten und Daten für die Tests.
+Dadurch stellen wir beliebig vielen Testfunktionen eine einheitliche Datenbasis bereit.
+
+=== Beispiel ===
+<code python>
+@pytest.fixture
+def test_values():
+    try:
+        with open('./testdata.json') as json_file:
+            data = json.load(json_file)
+            return data
+    except FileNotFoundError as ex:
+        print('\n==========================================================================')
+        print('WICHTIG: Keine Testdaten gefunden. Kontaktieren Sie SOFORT Ihre Lehrperson')
+        print('==========================================================================\n\n')
+        raise FileNotFoundError
+
+
+@pytest.fixture
+def version():
+    collection = echarge.init_accounts()
+    if collection is None:
+        return 'UNBEKANNT'
+    if isinstance(collection, list):
+        return 'BASIS'
+    if isinstance(collection, dict):
+        return 'ERWEITERT'
+    return 'UNBEKANNT'
+    
+</code>
+
+
+----
+{{tag>M450-LU04}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

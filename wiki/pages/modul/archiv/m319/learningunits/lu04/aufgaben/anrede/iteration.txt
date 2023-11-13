@@ -1,0 +1,30 @@
+===== Iteration realisieren =====
+
+=== Einleitung ===
+Durch eine Iteration kann ein Programmblock mehrmals ausgeführt werden.
+Solange die Bedingung erfüllt ist, wird ein Block von Befehlen ausgeführt.
+
+== Zur Erinnerung ==
+  * Das Schlüsselwort für eine Selektion ist ''while''.
+  * Die Bedingung **muss** in runden Klammern geschrieben werden.
+  * Alle Befehle die zu einem Programmblock gehören, werden mit geschweiften Klammern eingefasst.
+  * Eine Iteration kennt **kein** ''else''.
+
+<code java>
+while (variable == wert) {
+  befehl
+  befehl
+}
+</code>
+
+=== Auftrag ===
+Realisieren Sie die Iteration im Programm.
+
+=== Vorgehen ===
+  - Ersetzen Sie den Kommentare für ''Solange'' (TODO-4) durch den korrekten Befehl.
+  - Fassen Sie den Programmblock in geschweiften Klammern ein.
+  - Kompilieren Sie das Programm und korrigieren Sie allfällige Fehler.
+  - Führen Sie das Programm aus; Das Programm funktioniert nun vollständig.
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Marcel Suter

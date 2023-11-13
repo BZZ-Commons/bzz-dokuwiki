@@ -1,0 +1,44 @@
+====== LU06.A01 - Einfaches Flask-Routing ======
+
+<WRAP center round todo 60%>
+In dieser Aufgabe wirst du eine einfache Flask-Anwendung erstellen, die verschiedene Endpunkte (Endpoints) bedient. Deine Aufgabe ist es, die spezifizierten Routen zu implementieren und die entsprechenden Antworten als Text zurückzugeben.
+</WRAP>
+
+===== Endpoints =====
+
+  - **''/'' (GET)**: Gibt den Text ''Willkommen bei meiner Flask-App!'' zurück.
+  - **''/info'' (GET)**: Gibt den Text ''Dies ist die Info-Seite.'' zurück.
+  - **''/user/<username>'' (GET)**: Gibt den Text ''Hallo, [username]!'' zurück, wobei [username] durch den in der URL angegebenen Benutzernamen ersetzt wird.
+  - **''/post'' (POST)**: Akzeptiert Daten und gibt den Text ''Daten erfolgreich erhalten!'' zurück.
+  - **''/feedback'' (GET und POST)**:
+    * Bei einem GET-Request gibt es den Text ''Bitte geben Sie Ihr Feedback ab.'' zurück.
+    * Bei einem POST-Request gibt es den Text ''Danke für Ihr Feedback!'' zurück.
+  - **''/item/<int:item_id>'' (GET)**: Gibt den Text ''Artikel-ID: [item_id]'' zurück, wobei [item_id] durch die in der URL angegebene Artikel-ID ersetzt wird.
+
+===== Code-Vorlage=====
+
+{{gh>https://github.com/templates-python/m323-lu06-a01-routing/blob/main/main.py}}
+===== Vorgehen =====
+  - Akzeptiere das GitHub Classroom Assignment
+  - Klone dein persönliches Repository in die Entwicklungsumgebung
+  - Löse die Aufgabenstellung
+
+===== API-Testing =====
+
+Verwenden Sie diesen Postman Link und eine Postman Konfiguration zu laden.
+
+[[https://app.getpostman.com/run-collection/21916156-3c11aa8f-9207-492b-9b45-0333f7130158?action=collection%2Ffork&source=rip_markdown&collection-url=entityId%3D21916156-3c11aa8f-9207-492b-9b45-0333f7130158%26entityType%3Dcollection%26workspaceId%3D404f2ecf-493e-4e36-8956-a62d7b8c27ab|{{https://run.pstmn.io/button.svg|Run in Postman}}]]
+
+
+===== Abgabe =====
+Die Abgabe der Lösung erfolgt als Push in das persönliche GitHub-Repository.
+
+----
+<details>
+<summary>//=> GitHub Repo für externe Besucher//</summary>
+GitHub Repository https://github.com/templates-python/m323-lu06-a01-routing
+
+//Lernende am BZZ müssen den Link zum GitHub Classroom Assignment verwenden//
+
+</details>
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/ch/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Kevin Maurizi 

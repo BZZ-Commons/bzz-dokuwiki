@@ -1,0 +1,128 @@
+====== Lösungsvorschlag: Einfache Liste ======
+
+===== Aufgabe 1: Wrapperklassen bestimmen =====
+Ergänzen Sie die nachfolgende Tabelle.
+Welche Wrapper-Klasse müssen Sie beim Erstellen der Arraylist einsetzen, damit Werte des primitiven Datentyps darin gespeichert werden können?
+
+''ArrayList<???> liste = new ArrayList<>();''
+
+^primitiver Datentyp^Wrapper-Klasse^
+|int|Integer|
+|double|Double|
+|float|Float|
+|char|Character|
+|String|String|
+|boolean|boolean|
+
+===== Aufgabe 2: Wochentage =====
+
+<file java Wochentage.java>
+import java.util.ArrayList;
+/**
+ * Wochentage um die Verwendung von Listen zu üben.
+ *
+ * @author Kevin Maurizi
+ */
+public class Wochentage {
+
+    public static void main(String[] args) {
+        Wochentage program = new Wochentage();
+        program.run();
+    }
+
+    private void run(){
+        ArrayList<String> wochentage = new ArrayList<>();
+        wochentage.add("Montag");
+        wochentage.add("Dienstag");
+        wochentage.add("Mittwoch");
+        wochentage.add("Donnerstag");
+        wochentage.add("Freitag");
+        wochentage.add("Samstag");
+        wochentage.add("Sonntag");
+
+        System.out.println(wochentage.get(0));   // Printet aus: "Montag"
+        System.out.println(wochentage.get(6));   // Printet aus: "Sonntag"
+
+    }
+}
+
+</file>
+
+
+===== Aufgabe 3: Informationen aus einer Liste erhalten =====
+
+<file java SimpleList.java>
+import java.util.ArrayList;
+
+/**
+ * SimpleList um die Verwendung von Listen zu üben.
+ *
+ * @author Kevin Maurizi
+ */
+public class SimpleList {
+
+    public static void main(String[] args) {
+        new SimpleList().run();
+    }
+
+    public void run(){
+
+        //TODO 1: Erstellen Sie eine String-Liste mit dem Namen "klassenkameraden"
+        ArrayList<String> klassenkameraden = new ArrayList<>();
+        //TODO 2: Fügen Sie der Liste den Namen "Pierangelo" als Erstes und dann mindestens 8 weitere Namen hinzu.
+        klassenkameraden.add("Pierangelo");
+        klassenkameraden.add("Peter");
+        klassenkameraden.add("Paul");
+        klassenkameraden.add("Pierre");
+        klassenkameraden.add("Paula");
+        klassenkameraden.add("Phillip");
+        klassenkameraden.add("Patrick");
+        klassenkameraden.add("Pascal");
+        klassenkameraden.add("Pius");
+        //TODO 3: Geben Sie die Länge der Liste aus, verwenden Sie dazu die korrekte Funktion der Liste.
+        System.out.print("Länge der Liste: ");
+        System.out.println(klassenkameraden.size());
+        //TODO 4: Geben Sie den 2 und 4 Namen aus.
+        //   1  2  3  4  5
+        // |...|X|...|X|...|
+        System.out.print("Namen 2: ");
+        System.out.println(klassenkameraden.get(1));
+        System.out.print("Namen 4: ");
+        System.out.println(klassenkameraden.get(3));
+
+        //TODO 5: Ändern Sie den 3 Namen in "Paolo"
+        //   1   2     3     4   5
+        // |...|...|"Paolo"|...|...|
+        klassenkameraden.set(2,"Paolo");
+
+        //TODO 6: Löschen Sie Pierangelo
+        klassenkameraden.remove(0);
+
+        //TODO 7: Iterieren Sie über die Liste und geben Sie alle Namen aus
+        System.out.println("Alle Personen in der Liste: ");
+        for (int i = 0; i < klassenkameraden.size(); i++) {
+            System.out.println(klassenkameraden.get(i));
+        }
+        // oder
+        for (String klassenkamerad : klassenkameraden) {
+            System.out.println(klassenkamerad);
+        }
+        //TODO 8: Iterieren Sie über die Liste und fügen Sie jedem Namen ein "_X" an.
+        for (int i = 0; i < klassenkameraden.size(); i++) {
+            String name = klassenkameraden.get(i);
+            klassenkameraden.set(i,name+"_X");
+        }
+
+        //TODO 9: Iterieren Sie über die Liste und geben Sie alle Namen erneut aus
+        System.out.println("Alle PersonenX in der Liste: ");
+        for (String klassenkamerad : klassenkameraden) {
+            System.out.println(klassenkamerad);
+        }
+        //TODO 10: Leeren Sie die Liste
+        klassenkameraden.clear();
+    }
+}
+</file>
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Kevin Maurizi

@@ -1,0 +1,47 @@
+====== LU01d - Scrum Ereignisse ======
+
+Quelle: //[[http://www.scrumguides.org/docs/scrumguide/v1/Scrum-Guide-DE.pdf]]//
+
+In Scrum werden vorgeschriebene Ereignisse verwendet, um eine Regelmäßigkeit herzustellen
+und die Notwendigkeit anderer, nicht in Scrum definierter, Besprechungen zu minimieren. 
+Alle Ereignisse haben eine zeitliche Beschränkung (Time Box), so dass jedes Ereignis eine maximale
+Dauer hat. Die Dauer eines Sprints steht zu seinem Beginn fest und darf weder gekürzt noch
+verlängert werden. Die anderen Ereignisse dürfen beendet werden, sobald sie ihren Zweck 
+erfüllt haben. Dies stellt sicher, dass nur so viel Zeit wie nötig aufgewendet und Verschwendung
+vermieden wird.
+
+Mit Ausnahme des Sprints als Container für alle anderen Ereignisse ist jedes Scrum Ereignis eine
+formale Gelegenheit zur Überprüfung und Anpassung. 
+Diese Ereignisse sind genau dazu gedacht, an den kritischen Stellen Transparenz und Überprüfung zu ermöglichen. 
+Das Weglassen irgendeines dieser Ereignisse führt zu verringerter Transparenz 
+und ist eine verpasste Gelegenheit den Ist-Stand zu erfassen und darauf zu reagieren [Inspect & Adapt].
+
+
+
+===== Übersicht der Ereignisse =====
+{{:modul:m426:learningunits:lu01:scrumueberblick.png|}}
+===== Der Sprint =====
+
+Das Herz von Scrum ist der [[.:scrumsprint|Sprint]], eine Time Box von maximal einem Monat, innerhalb dessen
+ein fertiges ("Done"), nutzbares und potenziell auslieferbares Produkt-Inkrement hergestellt
+wird. 
+
+==== Sprint Planning ====
+
+Im [[.:sprintplanning|Sprint Planning]] wird die Arbeit für den kommenden Sprint geplant. Dieser Plan entsteht
+durch die gemeinschaftliche Arbeit des gesamten Scrum Teams.
+
+==== Daily Scrum ====
+
+Das [[.:dailyscrum|Daily Scrum]] ist eine Time Box von 15 Minuten, innerhalb derer das Entwicklungsteam seine
+Aktivitäten synchronisiert und an der Planung für die nächsten 24 Stunden arbeitet.
+
+==== Sprint Review ====
+
+Am Ende eines Sprints wird ein [[.:sprintreview|Sprint Review]] abgehalten, um das [Produkt-]Inkrement zu
+überprüfen und das Product Backlog bei Bedarf anzupassen.
+
+==== Sprint Retrospektive ====
+
+Die [[.:sprintretrospective|Sprint Retrospektive]] bietet dem Scrum Team die Gelegenheit, sich selbst zu überprüfen und
+einen Verbesserungsplan für den kommenden Sprint zu erstellen

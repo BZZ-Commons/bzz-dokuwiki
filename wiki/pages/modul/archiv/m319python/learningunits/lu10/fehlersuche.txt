@@ -1,0 +1,32 @@
+====== LU10a - Fehlersuche Grundlagen ======
+===== Was ist ein Fehler? =====
+<WRAP center round info 60%>
+Als Fehler bezeichnen wir eine Abweichung zwischen dem gewünschten Ergebnis (SOLL) und dem tatsächlichen Ergebnis (IST).
+</WRAP>
+
+In der Softwareentwicklung gehört das Suchen und Beheben von Fehlern zu den häufigsten Arbeiten.
+Man kann fast davon ausgehen, dass jede Software bzw. jeder Teil einer Software mindestens einen Fehler enthält.
+
+Einen Fehler zu entdecken ist wesentlich einfacher, als die Ursache zu beheben.
+Vorschnelle Änderungen am Programm können die Probleme noch vergrössern.
+
+===== Fehlerarten =====
+Es gibt verschiedene Arten von Fehlern in einer Software.
+Ich unterscheide grob in zwei Kategorien:
+
+==== Syntaxfehler ====
+Ein Syntaxfehler ist wie ein Tippfehler in einem Dokument.
+Falsch geschriebene Bezeichner oder falsche/fehlende Sonderzeichen führen dazu, dass der Computer meinen Sourcecode nicht versteht.
+Solange mein Sourcecode Syntaxfehler enthält, wird mein Programm nicht ausgeführt.
+
+Syntaxfehler sind zwar nervig, können aber mit Hilfe einer modernen Entwicklungsumgebung meistens schnell behoben werden.
+
+==== Logikfehler ====
+Bei einem Logikfehler wird das Programm zwar ausgeführt, es produziert aber falsche Resultate.
+Manchmal treten die Fehler auch nicht immer auf, sondern nur bei bestimmten Eingaben.
+
+Um einen Logikfehler zu beheben, muss ich den Ablauf meines Programms sehr genau verfolgen.
+Hier kann ein Debugger unschätzbare Dienste leisten.
+----
+{{tag>m319-E2F, m319-E2E}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

@@ -1,0 +1,32 @@
+====== LU02.A05 - Listen ======
+
+
+<WRAP center round todo 60%>
+Erstellen Sie eine Funktion, die eine Liste von Zahlen akzeptiert und eine neue Liste zurückgibt, in der alle Elemente um ''+ 1'' erhöht wurden, ohne die ursprüngliche Liste zu verändern.
+</WRAP>
+
+===== Anleitung in Schritten =====
+
+  * **Schritt 1:** Schreiben Sie eine Funktion, die eine Liste als Argument akzeptiert.
+  * **Schritt 2:** Verwenden Sie eine Schleife, eine List Comprehension oder die ''map''-Funktion, um eine neue Liste zu erstellen, ohne die ursprüngliche Liste zu verändern.
+  * **Schritt 3:** Geben Sie die neue Liste zurück.
+  * **Schritt 4:** Testen Sie die Funktion und stellen Sie sicher, dass die ursprüngliche Liste unverändert bleibt. Verwenden Sie ''if name == 'main':'' zum Starten.
+
+===== Vorlage =====
+<code python>
+numbers = [1, 2, 3, 4, 5] 
+
+def increment_numbers(numbers):
+    # Your code here
+
+if __name__ == '__main__':
+    print(numbers) #[1, 2, 3, 4, 5]  
+    print(increment_numbers(numbers)) #[2, 3, 4, 5, 6] 
+    print(numbers) #[1, 2, 3, 4, 5] 
+</code>
+====== Zusammenfassung ======
+Sie haben eine Funktion erstellt, die mit unveränderlichen Werten arbeitet, um sicherzustellen, dass die ursprünglichen Daten unverändert bleiben.
+
+----
+<nodisp>https://github.com/templates-python/m323-lu02-a05-immutable2</nodisp>
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/ch/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Kevin Maurizi 

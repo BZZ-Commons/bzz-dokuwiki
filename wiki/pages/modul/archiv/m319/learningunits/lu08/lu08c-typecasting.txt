@@ -1,0 +1,188 @@
+====== LU08c - Typumwandlung (Casting) ======
+
+Typumwandlung bedeutet, dass Sie einen Wert eines primitiven Datentyps einem anderen Datentyp zuweisen.
+
+__In Java gibt es zwei Arten von Typumwandlung:__
+
+**Implizite Typumwandlung (automatisch)** - Konvertierung eines kleineren Typs in einen größeren Typ
+''byte'' -> ''short'' -> ''char'' -> ''int'' -> ''long'' -> ''float'' -> ''double''
+
+**Explizite Typumwandlung (manuell)** - Konvertierung eines größeren Typs in einen Typ kleinerer Größe
+''double'' -> ''float'' -> ''long'' -> ''int'' -> ''char'' -> ''short'' -> ''byte''
+
+===== Implizite Typumwandlung =====
+
+Die implizite Typumwandlung wird automatisch vorgenommen, wenn ein kleinerer Typ in einen größeren Typ umgewandelt wird:
+
+<code java>
+
+private void run() {
+    int myInt = 9;
+    double myDouble = myInt; // Automatisches casting von int zu double
+
+    System.out.println(myInt);      // Output: 9
+    System.out.println(myDouble);   // Output: 9.0
+  }
+
+</code>
+
+===== Explizite Typumwandlung =====
+Die explizite Typumwandlung muss manuell vorgenommen werden, indem der neue Datentyp dem Wert in Klammern vorangestellt wird:
+
+<code java>
+private void run() {
+    double myDouble = 9.78;
+    int myInt = (int) myDouble; // Manual casting: double to int
+
+    System.out.println(myDouble);   // Outputs 9.78
+    System.out.println(myInt);      // Outputs 9
+
+</code>
+
+===== Weitere Beispiele =====
+
+<WRAP center round box 80%>
+<HTML>
+<style>
+/**
+ * SyntaxHighlighter
+ * http://alexgorbatchev.com/SyntaxHighlighter
+ *
+ * SyntaxHighlighter is donationware. If you are using it, please donate.
+ * http://alexgorbatchev.com/SyntaxHighlighter/donate.html
+ *
+ * @version
+ * 3.0.83 (July 02 2010)
+ * 
+ * @copyright
+ * Copyright (C) 2004-2010 Alex Gorbatchev.
+ *
+ * @license
+ * Dual licensed under the MIT and GPL licenses.
+ */
+.syntaxhighlighter {
+  background-color: white !important;
+}
+.syntaxhighlighter .line.alt1 {
+  background-color: white !important;
+}
+.syntaxhighlighter .line.alt2 {
+  background-color: white !important;
+}
+.syntaxhighlighter .line.highlighted.alt1, .syntaxhighlighter .line.highlighted.alt2 {
+  background-color: white !important;
+}
+.syntaxhighlighter .line.highlighted.number {
+  color: black !important;
+}
+.syntaxhighlighter table caption {
+  color: black !important;
+}
+.syntaxhighlighter .gutter {
+  color: #afafaf !important;
+}
+.syntaxhighlighter .gutter .line {
+  border-right: 3px solid #6ce26c !important;
+}
+.syntaxhighlighter .gutter .line.highlighted {
+  background-color: white !important;
+  color: white !important;
+}
+.syntaxhighlighter.printing .line .content {
+  border: none !important;
+}
+.syntaxhighlighter.collapsed {
+  overflow: visible !important;
+}
+.syntaxhighlighter.collapsed .toolbar {
+  color: blue !important;
+  background: white !important;
+  border: 1px solid #6ce26c !important;
+}
+.syntaxhighlighter.collapsed .toolbar a {
+  color: blue !important;
+}
+.syntaxhighlighter.collapsed .toolbar a:hover {
+  color: red !important;
+}
+.syntaxhighlighter .toolbar {
+  color: white !important;
+  background: white !important;
+  border: none !important;
+}
+.syntaxhighlighter .toolbar a {
+  color: white !important;
+}
+.syntaxhighlighter .toolbar a:hover {
+  color: black !important;
+}
+.syntaxhighlighter .plain, .syntaxhighlighter .plain a {
+  color: black !important;
+}
+.syntaxhighlighter .comments, .syntaxhighlighter .comments a {
+  color: #008200 !important;
+}
+.syntaxhighlighter .string, .syntaxhighlighter .string a {
+  color: blue !important;
+}
+.syntaxhighlighter .keyword {
+  color: #006699 !important;
+}
+.syntaxhighlighter .preprocessor {
+  color: gray !important;
+}
+.syntaxhighlighter .variable {
+  color: #aa7700 !important;
+}
+.syntaxhighlighter .value {
+  color: #009900 !important;
+}
+.syntaxhighlighter .functions {
+  color: #ff1493 !important;
+}
+.syntaxhighlighter .constants {
+  color: #0066cc !important;
+}
+.syntaxhighlighter .script {
+  font-weight: bold !important;
+  color: #006699 !important;
+  background-color: white !important;
+}
+.syntaxhighlighter .color1, .syntaxhighlighter .color1 a {
+  color: gray !important;
+}
+.syntaxhighlighter .color2, .syntaxhighlighter .color2 a {
+  color: #ff1493 !important;
+}
+.syntaxhighlighter .color3, .syntaxhighlighter .color3 a {
+  color: red !important;
+}
+
+.syntaxhighlighter .keyword {
+  font-weight: bold !important;
+}
+</style>
+
+<div><div id="highlighter_210685" class="syntaxhighlighter  java"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div><div class="line number7 index6 alt2">7</div><div class="line number8 index7 alt1">8</div><div class="line number9 index8 alt2">9</div><div class="line number10 index9 alt1">10</div><div class="line number11 index10 alt2">11</div><div class="line number12 index11 alt1">12</div><div class="line number13 index12 alt2">13</div><div class="line number14 index13 alt1">14</div><div class="line number15 index14 alt2">15</div><div class="line number16 index15 alt1">16</div><div class="line number17 index16 alt2">17</div><div class="line number18 index17 alt1">18</div><div class="line number19 index18 alt2">19</div><div class="line number20 index19 alt1">20</div><div class="line number21 index20 alt2">21</div><div class="line number22 index21 alt1">22</div><div class="line number23 index22 alt2">23</div><div class="line number24 index23 alt1">24</div><div class="line number25 index24 alt2">25</div><div class="line number26 index25 alt1">26</div><div class="line number27 index26 alt2">27</div><div class="line number28 index27 alt1">28</div><div class="line number29 index28 alt2">29</div><div class="line number30 index29 alt1">30</div><div class="line number31 index30 alt2">31</div><div class="line number32 index31 alt1">32</div><div class="line number33 index32 alt2">33</div><div class="line number34 index33 alt1">34</div><div class="line number35 index34 alt2">35</div><div class="line number36 index35 alt1">36</div><div class="line number37 index36 alt2">37</div><div class="line number38 index37 alt1">38</div><div class="line number39 index38 alt2">39</div><div class="line number40 index39 alt1">40</div><div class="line number41 index40 alt2">41</div><div class="line number42 index41 alt1">42</div><div class="line number43 index42 alt2">43</div><div class="line number44 index43 alt1">44</div><div class="line number45 index44 alt2">45</div><div class="line number46 index45 alt1">46</div><div class="line number47 index46 alt2">47</div><div class="line number48 index47 alt1">48</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="java comments">/*</code></div><div class="line number2 index1 alt1"><code class="java comments">* Beispielanwendung implizite und explizite Typumwandlung in Java.</code></div><div class="line number3 index2 alt2"><code class="java comments">*/</code></div><div class="line number4 index3 alt1">&nbsp;</div><div class="line number5 index4 alt2"><code class="java keyword">public</code> <code class="java keyword">class</code> <code class="java plain">TypumwandlungPrimitiv{</code></div><div class="line number6 index5 alt1"><code class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="java keyword">public</code> <code class="java keyword">static</code> <code class="java keyword">void</code> <code class="java plain">main(String[] args) {</code></div><div class="line number7 index6 alt2">&nbsp;</div><div class="line number8 index7 alt1"><code class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="java comments">// Explizite Typumwandlung</code></div><div class="line number9 index8 alt2"><code class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="java keyword">int</code> <code class="java plain">valueInt&nbsp;&nbsp;&nbsp;&nbsp; = </code><code class="java value">128</code><code class="java plain">;</code></div><div class="line number10 index9 alt1"><code class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="java keyword">short</code> <code class="java plain">valueShort = (</code><code class="java keyword">short</code><code class="java plain">) valueInt;</code></div><div class="line number11 index10 alt2">&nbsp;</div><div class="line number12 index11 alt1"><code class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="java comments">// Konvertierungsfehler, da Wertebereich von byte-Datentyp (-128, 127)</code></div><div class="line number13 index12 alt2"><code class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="java keyword">byte</code> <code class="java plain">valueByte&nbsp;&nbsp; = (</code><code class="java keyword">byte</code><code class="java plain">) valueInt;</code></div><div class="line number14 index13 alt1">&nbsp;</div><div class="line number15 index14 alt2"><code class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="java plain">System.out.println(</code><code class="java string">"\nvalueInt:&nbsp;&nbsp; "</code> <code class="java plain">+ valueInt);</code></div><div class="line number16 index15 alt1"><code class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="java plain">System.out.println(</code><code class="java string">"valueShort: "</code> <code class="java plain">+ valueShort);</code></div><div class="line number17 index16 alt2"><code class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="java plain">System.out.println(</code><code class="java string">"valueByte:&nbsp; "</code> <code class="java plain">+ valueByte);</code></div><div class="line number18 index17 alt1"><code class="java spaces">&nbsp;</code>&nbsp;</div><div class="line number19 index18 alt2"><code class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="java comments">// Implizite Typumwandlung</code></div><div class="line number20 index19 alt1"><code class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="java plain">valueShort = </code><code class="java value">2013</code><code class="java plain">;</code></div><div class="line number21 index20 alt2"><code class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="java keyword">float</code> <code class="java plain">valueFloat = valueShort;</code></div><div class="line number22 index21 alt1">&nbsp;</div><div class="line number23 index22 alt2"><code class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="java plain">System.out.println(</code><code class="java string">"\nvalueShort: "</code> <code class="java plain">+ valueShort);</code></div><div class="line number24 index23 alt1"><code class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="java plain">System.out.println(</code><code class="java string">"valueFloat: "</code> <code class="java plain">+ valueFloat);</code></div><div class="line number25 index24 alt2"><code class="java spaces">&nbsp;</code>&nbsp;</div><div class="line number26 index25 alt1"><code class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="java comments">// Konvertierungsfehler bei impl. Typumwandlung nach arithm. Ausdruck</code></div><div class="line number27 index26 alt2"><code class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="java plain">valueShort = </code><code class="java value">23</code><code class="java plain">;</code></div><div class="line number28 index27 alt1"><code class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="java plain">valueFloat = valueShort/</code><code class="java value">2</code><code class="java plain">;</code></div><div class="line number29 index28 alt2">&nbsp;</div><div class="line number30 index29 alt1"><code class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="java plain">System.out.println(</code><code class="java string">"\nvalueShort: "</code> <code class="java plain">+ valueShort);</code></div><div class="line number31 index30 alt2"><code class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="java plain">System.out.println(</code><code class="java string">"valueFloat: "</code> <code class="java plain">+ valueFloat);</code></div><div class="line number32 index31 alt1">&nbsp;</div><div class="line number33 index32 alt2"><code class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="java comments">// kein Konvertierungsfehler da arithm. Ausdruck korrekt angegeben</code></div><div class="line number34 index33 alt1"><code class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="java plain">valueShort = </code><code class="java value">23</code><code class="java plain">;</code></div><div class="line number35 index34 alt2"><code class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="java plain">valueFloat = valueShort/</code><code class="java value">2</code><code class="java plain">.0F;</code></div><div class="line number36 index35 alt1">&nbsp;</div><div class="line number37 index36 alt2"><code class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="java plain">System.out.println(</code><code class="java string">"\nvalueShort: "</code> <code class="java plain">+ valueShort);</code></div><div class="line number38 index37 alt1"><code class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="java plain">System.out.println(</code><code class="java string">"valueFloat: "</code> <code class="java plain">+ valueFloat);</code></div><div class="line number39 index38 alt2">&nbsp;</div><div class="line number40 index39 alt1"><code class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="java comments">// kein Konvertierungsfehler da arithm. Ausdruck durch explizite </code></div><div class="line number41 index40 alt2"><code class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="java comments">// Typumwandlung korrekt angegeben</code></div><div class="line number42 index41 alt1"><code class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="java plain">valueShort = </code><code class="java value">23</code><code class="java plain">;</code></div><div class="line number43 index42 alt2"><code class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="java plain">valueFloat = valueShort/(</code><code class="java keyword">float</code><code class="java plain">)</code><code class="java value">2</code><code class="java plain">;</code></div><div class="line number44 index43 alt1">&nbsp;</div><div class="line number45 index44 alt2"><code class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="java plain">System.out.println(</code><code class="java string">"\nvalueShort: "</code> <code class="java plain">+ valueShort);</code></div><div class="line number46 index45 alt1"><code class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="java plain">System.out.println(</code><code class="java string">"valueFloat: "</code> <code class="java plain">+ valueFloat);&nbsp;&nbsp;&nbsp;&nbsp; </code></div><div class="line number47 index46 alt2"><code class="java spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="java plain">}</code></div><div class="line number48 index47 alt1"><code class="java plain">}</code></div></div></td></tr></tbody></table></div></div>
+</HTML>
+
+
+
+
+
+
+
+In **Zeile 10** wird der Wert der Variable valueInt explizit in einen short-Datentypwert umgewandelt. Dies geschieht mit Hilfe des type-cast Operators, der in den Klammern vor der Variable steht: ''short valueShort = (short) valueInt;''.
+
+In **Zeile 13** wird der Wert der Variable valueInt explizit in einen byte-Datentypwert umgewandelt. Wieder mit Hilfe des type-cast Operators , der in den Klammern vor der Variable steht: ''byte valueByte = (byte) valueInt;''. Da der Wertebereich des byte-Datentyps nur von -128 bis +127 reicht, gehen bei der einschränkenden Konvertierung Informationen verloren und der in Variable valueInt gespeicherte Wert wird falsch interpretiert. Dadurch wird der ursprüngliche Wert (128) als -128 ausgegeben. **Siehe Zeile 17**.
+
+
+In **Zeile 21** wird der Wert der Variable valueShort implizit in einen float-Datentypwert umgewandelt. Dies wird automatisch vom Compiler ausgeführt, da es sich um eine erweiternde Konvertierung handelt: ''float valueFloat = valueShort;''.
+
+In **Zeile 28** wird zuerst das Ergebnis des arithmetischen Ausdrucks berechnet. Da der zweite Operand (2) eine Ganzzahl ist, wird eine Ganzzahldivison durchgeführt, deren Ergebnis 4 beträgt. Anschließend führt der Compiler eine implizite Typumwandlung von int auf double durch und die Variable zahlFloat weist den Wert 4.0 auf. Das richtige Ergebnis ist jedoch 4.5.
+
+Um diesen Konvertierungsfehler zu vermeiden, muss der zweite Operand als Gleitkommazahl gekennzeichnet werden. Entweder indem man statt der 2 eine 2.0F (wie in Zeile 35) schreibt oder indem man eine explizite Typumwandlung anweist (wie in **Zeile 43**).
+
+</WRAP>
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Kevin Maurizi

@@ -1,0 +1,60 @@
+====== LU05.A01: Positivity ======
+<WRAP center round info 60%>
+Schreibe ein Programm, das den Benutzer nach einer ganzen Zahl fragt und ihm mitteilt, ob sie positiv (grösser als Null) ist oder nicht.
+</WRAP>
+===== Auftrag =====
+Erstelle die Programmlogik für das Programm:
+  - Das Programm fordert den Benutzer auf, eine Zahl einzugeben
+  - Falls die Zahl grösser als 0 ist, gibt das Programm "The number is positive." aus.
+  - Sonst gibt das Programm "The number is not positive." aus.
+
+
+==== Beispiel ====
+
+<code>
+Give a number:
+*5*
+The number is positive.
+</code>
+
+
+<code>
+Give a number:
+*-2*
+The number is not positive.
+</code>
+
+===== Vorgehen =====
+
+  - Akzeptiere das GitHub Classroom Assignment im Moodlekurs.
+  - Klone das Repository in PyCharm.
+  - Codiere die Programmlogik in ''positivity.py''.
+  - Teste dein Programm mit den Testfällen in ''positivity_test.py''.
+  - Führe einen Commit und einen Push durch.
+
+=== Abgabe ===
+Die Abgabe erfolgt durch den Push ins GitHub Repository.
+In Moodle ist keine Abgabe vorgesehen oder möglich.
+
+=== Vorlage in positivity.py ===
+<code python>
+def main():
+  # Write your program here and remove the line "pass"
+    pass
+
+if __name__ == '__main__':
+    main()
+</code>
+
+Anmerkung: Kümmere dich ich im Moment nicht zu sehr um ''if %%__%%name%%__%% == '%%__%%main%%__'%%:''. 
+Dieser Programmblock legt fest, welche Funktion beim Ausführen gestartet wird.
+Wir werden dies im Verlauf des Moduls noch genauer betrachten.
+
+
+
+<nodisp>GitHub-Repo: https://github.com/templates-python/m319-lu05-a01-positivity</nodisp>
+----
+{{tag>M319-LU05}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/ch/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Kevin Maurizi 
+
+Diese Aufgabe ist eine übersetzte und angepasste Aufgabe von [[https://scott3142.uk/|Scott Morgan]], verwendet unter CC BY NC SA.

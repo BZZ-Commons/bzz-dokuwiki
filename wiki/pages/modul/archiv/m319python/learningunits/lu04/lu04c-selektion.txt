@@ -1,0 +1,75 @@
+====== LU04c - Selektion ======
+
+===== Entscheidung =====
+Eine Selektion ist eine Entscheidung, welche den weiteren Ablauf des Programms beeinflusst.
+Das Programm entscheidet anhand einer Bedingung, **ob** ein Programmblock ausgeführt wird oder nicht.
+
+Die Bedingung einer Selektion beginnt immer mit FALLS (engl. IF).
+Ist die Bedingung nicht erfüllt, so schreiben wir SONST (engl. ELSE). 
+Gibt es bei SONST nichts zu tun, kann man diesen Block auch weglassen.
+
+=== Beispiel aus dem Alltag ===
+<code>
+1. FALLS du einen Hausschlüssel hast:
+   1.1. Nimm den Hausschlüssel in die Hand.
+   1.2. Stecke den Hausschlüssel ins Schloss.
+   1.3. Drehe den Schlüssel im Uhrzeigersinn.
+   1.4. Öffne die Tür.
+2. SONST:
+   2.1. Drücke auf den Klingelknopf.
+   2.2. Warte bis jemand die Tür öffnet.
+3. Gehe ins Haus.
+4. Schliesse die Tür.
+</code>
+In der Fachliteratur findet man für „Selektion“ auch die Bezeichnungen „Entscheidung“ oder „Verzweigung“.
+
+===== Bedingungen =====
+Eine Bedingung besteht in der Regel aus drei Teilen:
+  * Eine Variable (z.B. ''alter'')
+  * Ein Vergleichsoperator (z.B. ''>'')
+  * Eine Variable oder ein Wert (z.B. ''18'')
+
+
+==== Vergleichsoperatoren ====
+^ Operator ^ Die Bedingung ist erfüllt, wenn ...^
+| == | ... die beiden Werte gleich sind. |
+| != | ... die beiden Werte nicht gleich sind. |
+| > | ... der erste Wert grösser als der zweite Wert ist. |
+| >= | ... der erste Wert grösser oder gleich wie der zweite Wert ist. |
+| < | ... der erste Wert kleiner als der zweite Wert ist. |
+| %%<=%% | ... der erste Wert kleiner oder gleich wie der zweite Wert ist. |
+
+
+== Blockly ==
+{{:modul:m319python:learningunits:lu04:lu04_blockly_selektion.png?600|}}
+
+== Python ==
+<code python>
+gender = input('Geschlecht (w/m)?')
+if gender == 'w':
+    print('Sehr geehrte Frau')
+else:
+    print('Sehr geehrter Herr')
+</code>
+
+== Java ==
+<code java>
+gender = scanner.next();
+if (gender == 'W') {
+    System.out.print ("Sehr geehrte Frau");
+} else {
+    System.out.print ("Sehr geehrter Herr");
+}
+</code>
+
+
+
+<WRAP center round important 60%>
+  * Achten Sie immer darauf, die Programmblöcke korrekt einzufassen.
+  * Der Befehl **''else''** hat **niemals** eine Bedingung.
+</WRAP>
+
+
+----
+{{tag>M319-D1F M319-F1G M319-F3G}} 
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Marcel Suter, Kevin Maurizi

@@ -1,0 +1,14 @@
+====== LU13.A02 - Pipeline aufbauen ======
+Dieser [[https://github.blog/2022-02-02-build-ci-cd-pipeline-github-actions-four-steps/|Blogartikel]] auf GitHub zeigt den Aufbau einer CI/CD-Pipeline.
+
+===== Vorgehen =====
+  - Erstelle ein Fork des Repositories [[https://github.com/open-sauced/open-sauced]].
+  - Lies den Blogartikel und schaue dir das Video dazu an.
+  - Probiere die CI/CD-Pipeline des Projekts aus:
+    - Erstelle einen neuen Branch im GitHub Repository.
+    - Ändere eine Datei und führe einen Commit durch.
+    - Studiere die Workflows im Reiter "Actions"
+
+----
+{{tag>M450-LU13}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

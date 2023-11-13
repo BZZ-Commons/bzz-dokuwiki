@@ -1,0 +1,53 @@
+====== LU01.A02 - Imperativer ggT Algorithmus ======
+
+<WRAP center round todo 60%>
+Implementieren Sie den euklidischen Algorithmus, um den größten gemeinsamen Teiler von zwei Ganzzahlen zu finden.
+</WRAP>
+
+===== Erklärung des Euklidischen Algorithmus: =====
+Der euklidische Algorithmus ist eine Methode zur Bestimmung des größten gemeinsamen Teilers (ggT) von zwei Zahlen. Der Algorithmus basiert auf der Beobachtung, dass der ggT von zwei Zahlen auch der ggT von einer der beiden Zahlen und dem Rest der Division der größeren Zahl durch die kleinere ist. Der Algorithmus wird fortgesetzt, indem die größere Zahl durch den Rest ersetzt wird, bis keine Rest mehr vorhanden ist. Der letzte verbleibende Divisor ist der ggT.
+
+===== Anforderungen: =====
+
+Schreiben Sie eine Funktion namens ''gcd'', die zwei Ganzzahlen als Parameter akzeptiert.
+Implementieren Sie den euklidischen Algorithmus, um den GCD der beiden Zahlen zu finden.
+Geben Sie den GCD als Ganzzahl zurück.
+
+==== Beispielinput ====
+<code python>
+zahl1 = 60
+zahl2 = 48
+</code>
+
+==== Beispieloutput ====
+<code python>
+Der größte gemeinsame Teiler von 60 und 48 ist 12.
+</code>
+
+<WRAP center round box 90%>
+===== Ausführliche Erklärung des euklidischen Algorithmus =====
+
+Der euklidische Algorithmus ist ein klassisches Verfahren zur Bestimmung des größten gemeinsamen Teilers (ggT) zweier Zahlen. Es ist benannt nach dem antiken griechischen Mathematiker Euklid, der es zuerst in seinen "Elementen" beschrieb. Der Algorithmus funktioniert durch wiederholte Division mit Rest und hat zwei Hauptvarianten: den subtraktiven Algorithmus und den Algorithmus mit Division.
+
+==== Euklidischer Algorithmus mit Division: ====
+
+  - **Eingabe:** Zwei positive ganze Zahlen ''a'' und ''b'', wobei ''a>b''.
+  - **Division mit Rest:** Teile ''a'' durch ''b'', erhalte den Rest ''r''.
+  - **Wiederholung:** Ersetze ''a'' durch ''b'' und ''b'' durch ''r'' und wiederhole Schritt 2, bis ''b'' null wird.
+  - **Ergebnis:** Der größte gemeinsame Teiler ist der letzte Wert von ''b'' vor dem Erreichen von null.
+
+==== Beispiel: ====
+Angenommen, wir wollen den ggT von 252 und 105 finden:
+
+''a=252'' geteilt durch ''b=105'' ergibt den Quotienten ''2'' und den Rest ''r=42''. \\
+Setze ''a=105'', ''b=42'' und wiederhole.\\
+''a=105'' geteilt durch ''b=42'' ergibt den Quotienten ''2'' und den Rest ''r=21''. \\
+Setze ''a=42'', ''b=21'' und wiederhole.\\
+''a=42'' geteilt durch ''b=21'' ergibt den Quotienten ''2'' und den Rest ''r=0''. \\
+Da ''b=0'', ist der ggT der letzte Wert von ''b'' vor null, also ''21''.
+
+</WRAP>
+
+----
+<nodisp>GitHub Repo: https://github.com/templates-python/m323-lu01-a02-imperativer-ggt</nodisp>
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/ch/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Kevin Maurizi 

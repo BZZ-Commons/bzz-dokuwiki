@@ -1,0 +1,57 @@
+====== LU06.A03 - Pizza-Kalkulation ======
+<WRAP center round todo 60%>
+  - Kalkuliere die Herstellungskosten für eine Pizza.
+  - Berechne die Payback-Dauer für die Investition.
+</WRAP>
+
+Eine gute Freundin erfüllt sich ihren Lebenstraum und hat ein Pizzamobil gekauft.
+Die Investitionen in Pizzamobil, Einrichtung, Werbung, ... betragen CHF 250'000.
+
+Mit diesem Pizzamobil verkauft sie nun an 6 Tagen pro Woche (25 Tage im Monat / 300 Tage im Jahr) Pizza Margherita und Pizza Diavolo.
+Sie ist aber unsicher, wie hoch eigentlich die Kosten für die Herstellung einer Pizza ist.
+Du bietest ihr deine Hilfe und Excel-Skills an, um diese Frage zu beantworten.
+
+===== Facts =====
+Anhand von Rezepten und Rechnungen hast du alle relevanten Zahlen ermittelt.
+  * Das Pizzamobil verkauft durchschnittlich pro Tag 100 Pizza Margherita und 50 Pizza Diavolo.
+  * Für eine Pizza Diavolo werden 100g scharfe Salami benötigt.
+  * Die Lohnkosten belaufen sich auf CHF 144'000 pro Jahr.
+  * 100g Tomatensauce kosten CHF 0.50.
+  * Jede Pizza enthält 250g Teig, 200g Tomatensauce und 150g Mozzarella.
+  * Die Stromkosten betragen CHF 450.00 pro Woche.
+  * 10kg Teig kosten CHF 9.00.
+  * Die wöchentlichen Kosten für das Pizzamobil (Wartung, Reinigung) und den Standplatz betragen CHF 600.00.
+  * 1 kg scharfe Salami kosten CHF 14.00.
+  * 2.5kg Schinken kosten CHF 27.00.
+  * 500g Mozzarella kosten CHF 4.50
+
+<WRAP center round info 60%>
+Berücksichtige für die Kalkulation nur die relevanten Angaben aus dieser Zusammenstellung.
+Eine echte Kalkulation für ein Restaurant ist natürlich wesentlich umfangreicher, aber für unsere Aufgabe nicht relevant.
+</WRAP>
+
+===== Auftrag 1: Herstellungskosten =====
+Erstelle eine Excel-Sheet um die Herstellungskosten einer Pizza Margarita und einer Pizza Diavolo zu kalkulieren.
+
+<WRAP center round tip 60%>
+Prüfe ob dein Ergebnis realistisch ist.
+Sind die Herstellungskosten höher als der Verkaufspreis einer Pizza?
+Falls ja, stimmt deine Kalkulation vermutlich nicht.
+</WRAP>
+
+===== Aufgabe 2: Payback-Dauer =====
+Aufgrund deiner Kalkulation legt deine Freundin die Preise fest:
+  * Pizza Margherita: CHF 9.00
+  * Pizza Diavolo: CHF 12.00
+
+Sie möchte ausserdem wissen, nach wie vielen Jahren die Invesitionen abbezahlt sind.
+Berechne die Payback-Dauer.
+
+===== Abgabe =====
+Drucke dein Excel-Sheet als PDF-Datei aus.
+Die ganze Kalkulation muss auf einer A4-Seite dargestellt werden (keine Seitenumbrüche).
+Lade die PDF-Datei in Moodle hoch.
+
+----
+{{tag>M431-LU06}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

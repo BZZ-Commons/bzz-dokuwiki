@@ -1,0 +1,74 @@
+====== LU02.A08 - Kochbuch ======
+
+<WRAP center round todo 60%>
+Erstelle ein Python-Programm, das ein JSON-basiertes Kochbuch bearbeitet. Deine Aufgabe ist es, das Rezept für eine variable Personenanzahl anzupassen. Verwende dabei ausschließlich **Immutable Data** und **Pure Functions**.
+</WRAP>
+
+
+===== Detaillierte Aufgabenstellung =====
+Ihr seid leidenschaftliche Köche und habt ein digitales Kochbuch in Form einer JSON-Datei. Ihr möchtet ein Python-Programm schreiben, das die Mengenangaben in den Rezepten an eine gegebene Anzahl von Personen anpasst.
+
+  - Definiere eine Funktion namens ''adjust_recipe'', die ein Rezept und die Anzahl der Personen als Argumente nimmt. Die Funktion soll ein neues, angepasstes Rezept zurückgeben.
+  - Definiere eine Funktion namens ''load_recipe'', die ein JSON-String als Argument nimmt und ein Python-Dictionary daraus erstellt.
+  - Achte darauf, dass alle deine Funktionen Pure Functions sind.
+
+<code python>
+if __name__ == '__main__':
+    # Beispiel für die Datenstruktur eines Rezepts
+    recipe_json = '{"title": "Spaghetti Bolognese", "ingredients": {"Spaghetti": 400, "Tomato Sauce": 300, "Minced Meat": 500}, "servings": 4}'
+    # Dein Code kommt hier hin
+</code>
+
+===== Beispiel Daten =====
+  * Ursprüngliches Rezept: 
+    * Titel: "Spaghetti Bolognese"
+    * Zutaten: {"Spaghetti": 400, "Tomato Sauce": 300, "Minced Meat": 500}
+    * Portionen: 4
+  * Neue Anzahl an Personen: 2
+
+<WRAP center round tip 80%>
+====== JSON und Python Dictionaries ======
+
+===== Umwandlung zwischen JSON und Python Dictionary =====
+
+Die ''json''-Bibliothek in Python bietet zwei Hauptmethoden für die Umwandlung zwischen JSON-Strings und Python-Dictionaries: ''json.loads()'' und ''json.dumps()''.
+
+==== json.loads() ====
+
+Die Methode ''json.loads()'' (load string) wird verwendet, um einen JSON-kodierten String in ein Python-Dictionary umzuwandeln.
+
+<code python>
+import json
+
+json_string = '{"name": "John", "age": 30, "city": "New York"}'
+python_dict = json.loads(json_string)
+</code>
+
+Nach der Ausführung dieses Codes enthält ''python_dict'' das folgende Dictionary:
+
+<code python>
+{'name': 'John', 'age': 30, 'city': 'New York'}
+</code>
+
+==== json.dumps() ====
+
+Die Methode ''json.dumps()'' (dump string) wird verwendet, um ein Python-Dictionary in einen JSON-kodierten String umzuwandeln.
+
+<code python>
+import json
+
+python_dict = {'name': 'John', 'age': 30, 'city': 'New York'}
+json_string = json.dumps(python_dict)
+</code>
+
+Nach der Ausführung dieses Codes enthält ''json_string'' den folgenden JSON-kodierten String:
+
+<code python>
+'{"name": "John", "age": 30, "city": "New York"}'
+</code>
+
+</WRAP>
+
+----
+<nodisp>https://github.com/templates-python/m323-lu02-a08-kochbuch</nodisp>
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/ch/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Kevin Maurizi 

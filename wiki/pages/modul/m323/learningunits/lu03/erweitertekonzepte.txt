@@ -1,0 +1,15 @@
+====== LU03a - Erweiterte Konzepte der funktionalen Programmierung ======
+
+Die funktionale Programmierung ist nicht nur ein Paradigma, sondern auch eine Denkweise, die eine tiefere Kontrolle und ein besseres Verständnis der Programmlogik ermöglicht. Während die Grundkonzepte, wie [[modul:m323:learningunits:lu02:grundkonzepte|reine Funktionen und unveränderliche Werte]], eine solide Basis bieten, gibt es auch eine Reihe von erweiterten Konzepten, die den funktionalen Stil weiter verfeinern und erweitern. In diesem Abschnitt werden wir uns mit drei dieser erweiterten Konzepte befassen: Rekursion, First-Class Functions und Higher-Order Functions.
+
+**Rekursion:** Rekursion ist ein mächtiges Werkzeug in der funktionalen Programmierung, bei dem eine Funktion sich selbst aufruft, um ein Problem zu lösen. Dies kann eine elegante und ausdrucksstarke Lösung für viele Probleme bieten, insbesondere wenn sie mit der Unveränderlichkeit von Daten kombiniert wird.
+
+**First-Class Functions:** In Sprachen, die First-Class Functions unterstützen, können Funktionen genau wie andere Objekte behandelt werden. Das bedeutet, dass sie in Variablen gespeichert, als Argumente übergeben oder aus anderen Funktionen zurückgegeben werden können. Dies eröffnet eine neue Welt der Möglichkeiten und Flexibilität in der Programmstruktur.
+
+**Higher-Order Functions:** Higher-Order Functions nehmen eine oder mehrere Funktionen als Argumente und/oder geben eine Funktion als Ergebnis zurück. Sie ermöglichen es, Funktionen in einer Weise zu komponieren und zu manipulieren, die mit konventionellen Ansätzen schwer zu erreichen wäre, und führen zu einem saubereren und modulareren Code.
+
+Diese erweiterten Konzepte eröffnen eine Vielzahl von Möglichkeiten, um effiziente, robuste und elegante Softwarelösungen zu entwickeln. Sie tragen dazu bei, den funktionalen Programmierstil zu einem leistungsstarken Werkzeug zu machen, das in vielen modernen Entwicklungsumgebungen und -projekten Anwendung findet. In den folgenden Abschnitten werden wir diese Konzepte im Detail untersuchen, um ein besseres Verständnis dafür zu entwickeln, wie sie in der Praxis angewendet werden können.
+
+----
+{{tag>M323-LU03}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/ch/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Kevin Maurizi 

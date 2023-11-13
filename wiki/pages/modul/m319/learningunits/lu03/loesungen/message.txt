@@ -1,0 +1,10 @@
+====== LU03.L03 - Message ======
+<code python>
+def main():
+    message = input('Write a message...\n')
+    # Write your code here
+    print(message)
+ 
+if __name__ == '__main__':
+    main()
+</code>

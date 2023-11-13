@@ -1,0 +1,86 @@
+====== LU06.A05 - Authentifizierung für die ToDo-Liste API mit Flask-Login ======
+
+<WRAP center round todo 60%>
+Deine Aufgabe ist es, der bereits erstellten RESTful API für die ToDo-Liste eine Authentifizierungsfunktionalität hinzuzufügen. Dazu sollst du Flask-Login verwenden.
+</WRAP>
+
+
+
+===== Vorgehen =====
+
+==== 0. Vorbereiten ====
+  * Akzeptiere das GitHub Classroom Assignment
+  * Klone dein persönliches Repository in die Entwicklungsumgebung
+
+==== 1. Integriere Flask-Login ====
+
+=== Installiere Flask-Login ===
+Füge ''Flask-Login >= 0.6.3''  in deine requirements.txt Datei hinzu und installiere es.
+
+
+=== Initialisiere Flask-Login in deiner Hauptanwendung===
+
+<code python>
+from flask_login import LoginManager
+
+login_manager = LoginManager()
+login_manager.init_app(app)
+</code>
+
+==== 2. User-Klasse Erstellen ====
+  * Ergänze deine ''User''-Klasse, um die Methoden und Eigenschaften, die von Flask-Login erwartet werden, zu implementieren. Du kannst dies tun, indem du deine Klasse von ''UserMixin'' erbst.
+  * Erstelle eine ''UserDao''-Klasse um den User in die Datenbank zu speichern und daraus zu lesen.
+
+==== 3. Implementiere die ''user_loader''-Funktion ====
+  * Erstelle eine Funktion, die die ''user_loader''-Anforderungen erfüllt.
+
+<code python>
+@login_manager.user_loader
+def load_user(user_id):
+    return user_dao.get_user_by_id(int(user_id))
+</code>
+
+==== 4. Schütze die ToDo-Endpunkte ====
+  * Füge dem ''@login_required''-Dekorator zu deinen ToDo-Endpunkten hinzu, um sicherzustellen, dass nur authentifizierte Benutzer darauf zugreifen können.
+
+<code python>
+from flask_login import login_required
+
+@app.route('/todos', methods=['GET'])
+@login_required
+def get_all_todos():
+    # Dein Code hier
+</code>
+
+==== 5. Implementiere ''Login'' und ''Logout'' Endpunkte ====
+  * Erstelle Endpunkte für ''Login'' und ''Logout'', die die Methoden von Flask-Login verwenden.
+
+<code python>
+from flask_login import login_user, logout_user
+
+@app.route('/login', methods=['POST'])
+def login():
+    # Dein Code hier
+
+@app.route('/logout', methods=['POST'])
+def logout():
+    # Dein Code hier
+</code>
+
+==== 6. Teste deine API ====
+Via ''API-Testing.http''-File im Workspace 
+
+oder via: [[https://app.getpostman.com/run-collection/21916156-7e24c1ab-b771-4f36-9bf9-9efda9b55507?action=collection%2Ffork&source=rip_markdown&collection-url=entityId%3D21916156-7e24c1ab-b771-4f36-9bf9-9efda9b55507%26entityType%3Dcollection%26workspaceId%3D6159a5bd-9101-4933-a6c3-05d2eb3112fd|{{https://run.pstmn.io/button.svg|Run in Postman}}]]
+
+==== 7. Abgabe ====
+Die Abgabe der Lösung erfolgt als Push in das persönliche GitHub-Repository.
+
+----
+<details>
+<summary>//=> GitHub Repo für externe Besucher//</summary>
+GitHub Repository https://github.com/templates-python/m323-lu06-a05-authentication
+
+//Lernende am BZZ müssen den Link zum GitHub Classroom Assignment verwenden//
+
+</details>
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/ch/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Kevin Maurizi 

@@ -1,0 +1,16 @@
+===== 3. Darstellung von Vererbung in UML und in Python-Code =====
+{{:modul:m320:learningunits:lu06:theorie:lu06-abb6.5-vererbung_uml.png?800|}}
+
+<nodisp>TODO PrRe Grafik anpassen: Kein doppelter Underscore, Aussage zu private falsch</nodisp>
+
+//Abb 6.5: // Vererbung in UML-Darstellung
+
+
+=== protected Attribute ===
+Attribute in der Oberklasse, welche auch in der Unterklasse direkt zugeifbar sein müssen, werden als **protected** (geschützt) deklariert.\\
+In UML wird dies mit dem Zeichen **#** signalisiert.
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) René Probst
+
+

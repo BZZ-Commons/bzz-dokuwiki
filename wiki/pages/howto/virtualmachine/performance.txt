@@ -1,0 +1,68 @@
+====== Virtual Machine zu langsam ======
+<wrap tip>**Allgemeine Tips:**</wrap> \\
+<wrap tip>1. Fahren Sie Ihren Laptop regelmässig herunter.</wrap> \\
+<wrap tip>2. Fahren Sie Ihre virtuelle Maschine regelmässig heruntern. </wrap> \\
+<wrap tip>3. Deaktivieren Sie den Auto-Start von Programmen, die Sie nicht ständig benötigen (z.B. Steam-Client, Discord, ...)</wrap> \\
+
+
+Jede Virtual Machine benötigt einen Teil der Ressourcen Ihres Rechners:
+  * Prozessor (CPU)
+  * Hauptspeicher (RAM)
+  * Festplatte (HDD / SSD)
+Je nach Hardware kann die eine oder andere Komponente zum Flaschenhals werden.
+
+===== Problem unter Windows identifizieren =====
+
+Bevor Sie irgendwelche Einstellungen ändern, müssen Sie den Flaschenhals identifizieren.
+=== 1. Öffnen Sie den Taskmanager von Windows ===
+{{:howto:virtualmachine:speed02.png|}}
+
+  * Welche Komponente ist stark ausgelastet?
+  * Welche Prozesse belegen viele Ressourcen?
+
+==== Häufige Probleme ====
+=== Hauptspeicher voll ===
+Ist der Hauptspeicher voll, so beginnt das System Teile davon auf der Harddisk zu speichern.
+Dieses Auslagern von Hauptspeicher ist sehr langsam.
+
+  * Beenden Sie unnötige Programme (z.B. Steam Client).
+  * Schliessen Sie von Zeit zu Zeit alle offenen Browserfenster. Webbrowser belegen für jeden neuen Tab zusätzlichen Speicher und geben diesen oftmals nicht mehr frei.
+
+=== Harddisk ausgelastet ===
+Dieses Problem tritt vor allem mit HDD auf.
+  * In diesem Fall kann nur eine schnelle SSD helfen.
+
+Eine andere Ursache sind Programme welche die Daten synchronisieren.
+Wenn Ihre Virtual Machine in einem Ordner liegt, der mit OneDrive synchronsiert wird, kann dies eine massive Performance-Einbusse zur Folge haben.
+
+  * Erstellen Sie einen separaten Ordner (z.B. C:\VirtualMachines) für Ihre VM's.
+
+=== Prozessor ausgelastet ===
+Falls der Prozessor ständig >80% ausgelastet ist, gilt es ebenfalls unnötige Prozesse und Programme zu beenden.
+
+===== Problem in der Virtual Machine identifizieren =====
+
+=== Öffnen Sie die Systemüberwachung in der virtuellen Maschine. ===
+{{:howto:virtualmachine:speed01.png|}}
+
+In diesem Beispiel habe ich IntelliJ IDEA gestartet. 
+Man sieht, dass die CPU zu 100% ausgelastet war und danach wieder auf weniger als 20% fiel.
+
+==== Problemlösungen ====
+Da im Beispiel die Auslastung der CPU das Problem ist, könnte ich der Virtual Machine weitere CPU-Kerne zuweisen.
+
+{{:howto:virtualmachine:vmmanage01.png|}}
+
+{{:howto:virtualmachine:vmmanage02.png|}}
+
+Wie Sie sehen, habe ich meiner VM 2 Prozessorkerne und 8 GB Hauptspeicher zugewiesen.
+  * Ich könnte nun die Anzahl der Prozessorkerne auf 3 erhöhen und schauen, welchen Einfluss dies auf meine VM hat.
+  * Falls mein Computer weniger als 16 GB RAM hat, sollte ich den Hauptspeicher meiner VM auf 3 oder 4 GB verringern.
+
+<wrap tip>
+Einstellungen an der VM können Sie nur ändern, wenn diese Heruntergefahren ist.
+</wrap>
+\\
+<wrap tip>
+Weisen Sie Ihrer VM niemals mehr als die Hälfte der Ressourcen Ihres Computers zu.
+</wrap>

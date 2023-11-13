@@ -1,0 +1,84 @@
+====== LU07b - Passwörter ======
+<WRAP center round info 60%>
+Die Verwendung von Passwörtern ist seit längerer Zeit umstritten.
+Dies liegt daran, dass viele Benutzer immer die gleichen und oft zu einfachen Passwörter verwenden.
+</WRAP>
+
+===== Passwort-Richtlinien =====
+Viele Firmen und Webseiten versuchten (und versuchen) durch Passwort-Richtlinien das Problem in den Griff zu bekommen.
+Dabei sind vor allem diese Regeln im Einsatz:
+  * Komplexe Passwörter:
+    * Das Passwort muss eine minimale Länge haben, zum Beispiel >= 8 Zeichen.
+    * Das Passwort muss Klein-, Grossbuchstaben, Ziffern und Sonderzeichen enthalten.
+    * Das Passwort darf weder den Vor- noch den Nachnamen enthalten.
+    * Das Passwort darf keine Liste von Buchstaben (z.B. cdefghijk) noch Ziffern (z.B. 123456) sein.
+  * Passwort wechseln:
+    * Das Passwort muss regelmässig, z.B. alle 3 Monate geändert werden.
+    * Das neue Passwort darf nicht mit den zwei letzten Passwörtern übereinstimmen.
+
+Es gibt Untersuchungen die zeigen, dass diese Passwort-Richtlinien zu schlechteren Passwörtern führen.
+Wenn ich mir alle 3 Monate ein neues, 8 stelliges Passwort merken muss, nehme ich ein möglichst einfach zu merkendes Passwort.
+
+===== Sichere Passwörter =====
+
+Damit Passwörter sicher sind, müssen sie einige Kriterien erfüllen:
+  * Mindestens 8 Zeichen lang
+  * Buchstaben, Ziffern und Sonderzeichen enthalten
+  * Nur für ein Benutzerkonto verwenden
+  * Keine Wortkombinationen, Zahlen- oder Buchstabenreihen enthalten
+
+Am sichersten sind Passwörter, die aus einer zufallsgenerierten Abfolge von Zeichen bestehen.
+Doch wie soll ich mir 100 oder mehr solcher Zufallspasswörter merken?
+
+==== Passwörter mit System ====
+Bei dieser Variante verwende ich eine gemeinsame Logik für alle Passwörter.
+Zum Beispiel verwende ich einen Satz, den ich mir gut merken kann.
+Für jedes Login verwende ich einen Teil dieses Satzes und ergänze ihn.
+
+=== Beispiel ===
+Nehmen wir dieses Zitat aus Dirty Harry: 
+//You've got to ask yourself one question: "Do I feel lucky? Well, do ya, punk?"//
+
+Ich möchte nun ein Passwort für den Webshop von Emutech erzeugen.
+  * Am Anfang stelle ich die erste Hälfte des Webshopnamens: ''Emut''
+  * Anschliessend folgt die Ziffer ''5'' und ein Sonderzeichen ''@''
+  * E ist der 5. Buchstabe im Alphabet, daher nehme ich jedes 5. Wort: ''askIya''
+  * Ans Ende stelle ich die zweite Hälfte des Webshopnamens: ''ech''
+
+Mein Passwort wäre nun: ''Emut5@askIyaech''
+
+==== Passwortkarte ====
+{{:modul:m231:learningunits:lu07:passwortkarte.png?400|}}
+
+//Quelle: [[https://im.chip.de/ii/8/9/0/8/8/5/4/7/d402091802ce5bba.jpg?im=AspectCrop%2Csize%3D%2816%2C9%29%2Cgravity%3DCenter%3BResize%3D%28936%2C526%29%2Caspect%3Dfit%3BBackgroundColor%2Ccolor%3Dffffff&hash=792bf158896965542d10bfac100adadb3edda19099d5a2c91936ccf4e656d59d|chip.de]]//
+
+Eine Passwortkarte besteht aus zufällig generierten Zahlen und Buchstaben.
+Um ein sicheres Passwort zu erhalten, merke ich mir
+  * Eine Lesemethode wie sie in den rot umrandeten Beispielen gezeigt werden.
+  * Einen Startpunkt für jedes Benutzerkonto, welchen ich sogar auf der Rückseite der Karte notieren könnte.
+
+//Siehe auch [[https://www.savernova.com/loesungen/sichere-passwortkarte]]// 
+
+Der Vorteil eine Passwortkarte ist, dass die Passwörter sicher vor jedem Hackangriff sind.
+Um an meine Passwortkarte zu gelangen, müsste man diese aus meiner Brieftasche stehlen.
+
+==== Passwortmanager ====
+Ein Passwortmanager oder Passwortsafe ist eine Software, welche meine Passwörter in einer verschlüsselten Datenbank speichert.
+Der Passwortmanager kann eine selbständige Software (z.B. Keepass) oder in einen Webbrowser (z.B. Firefox Password Manager) sein.
+Neben dem sicheren Speichern der Passwörter bieten viele Passwortmanager weitere Funktionen wie das automatische Ausfüllen von Loginformularen.
+
+[[https://kinsta.com/de/blog/passwort-manager/|Passwortmanager im Vergleich 2023]]
+
+[[https://www.chip.de/news/Gratis-Tool-ueberragt-Google-Microsoft-und-Mozilla-Das-sind-die-besten-Passwort-Manager_184088474.html|chip.de - Vergleichstest]]
+
+===== Das Ende der Passwörter =====
+Als Betreiber einer Webseite oder Netzwerks können wir unsere Benutzer nicht zu sicheren Passwörtern zwingen.
+Wieso schaffen wir die Passwörter nicht einfach ab?
+Tatsächlich arbeiten verschiedene Technologiefirmen genau daran.
+Im Mai 2023 machte Google Schlagzeilen: [[https://www.20min.ch/story/google-will-das-passwort-endgueltig-abschaffen-das-musst-du-wissen-750797188045|20min - Google will das Passwort abschaffen]].
+
+Lesen Sie dazu [[https://www.chip.de/news/Es-geht-auch-ohne-Passwoerter-Das-ist-die-Zukunft-Ihrer-PC-Sicherheit_184290937.html|chip.de - Es geht auch ohne Passwörter]]
+
+----
+{{tag>m231-AnG}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

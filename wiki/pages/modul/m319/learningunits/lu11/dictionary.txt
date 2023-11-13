@@ -1,0 +1,165 @@
+====== LU11a - Dictionary ======
+<WRAP center round info 60%>
+Ein Dictionary ist eine Datenstruktur in Python.
+Die Einträge im Dictionary bestehen aus einem Schlüssel (Key) und einem Wert (Value).
+</WRAP>
+
+===== Schlüssel =====
+
+Dictionaries in Python sind ähnliche Datenstrukturen wie [[modul:m319python:learningunits:lu14:listen|Listen]].
+Bei einer Liste werden die einzelnen Elemente über eine fortlaufende Nummer (Index, Position) identifiziert.
+Im Dictionary werden die Elemente über einen von uns definierten Schlüssel identifiziert.
+Der Schlüssel muss eindeutig sein, es können als nicht zwei oder mehr Elemente den gleichen Schlüssel haben.
+
+===== Verarbeitungen mit Dictionary =====
+==== Anlegen ====
+Wir definieren einen Dictionary indem wir die geschweiften Klammern **''{'' ''}''** verwenden.
+Jedes Element wird mit ''Schlüssel'' **'':''** ''Wert'' definiert.
+
+Um die Übersicht zu vereinfachen, **können** wir jedes Schlüssel/Wert-Element auf eine eigene Zeile schreiben.
+<code python>
+
+colors = {
+          'red': '#ff0000', 
+          'green': '#00ff00', 
+          'blue': '#0000ff'
+         }
+print(colors)
+</code>
+
+== Output ==
+<code>
+{'red': '#ff0000', 'green': '#00ff00', 'blue': '#0000ff'}
+</code>
+
+Wenn der Schlüssel ein einzelnes Wort ist, können wir den Befehl **dict** verwenden.
+
+<code python>
+colors = (
+          red='#ff0000', 
+          green='#00ff00', 
+          blue='#0000ff'
+         )
+print(colors)
+</code>
+
+== Output ==
+<code>
+{'red': '#ff0000', 'green': '#00ff00', 'blue': '#0000ff'}
+</code>
+
+==== Elemente einfügen / ändern ====
+Nachdem der Dictionary erstellt ist, können wir Elemente einfügen bzw. ändern.
+Dazu geben wir den Schlüssel in eckigen Klammern **''['' '']''** an.
+  * Ist der Schlüssel bereits vorhanden, so wird der bisherige Wert überschrieben.
+  * Andernfalls wird ein neuer Schlüssel und Wert eingetragen.
+
+<code python>
+
+colors = {'red': '#ff0000', 'green': '#00ff00', 'blue': '#0000ff'}
+colors['indigo'] = '#4B0082'  # adds a new key/value
+colors['blue']   = '#000080'  # replaces the value for 'blue'
+print(colors)
+</code>
+
+== Output ==
+<code>
+{'red': '#ff0000', 'green': '#00ff00', 'blue': '#000080', 'indigo': '#4B0082'}
+</code>
+
+==== Elemente löschen ====
+Der Befehl ''del'' löscht ein Element aus dem Dictionary.
+
+<code python>
+colors = {'red': '#ff0000', 'green': '#00ff00', 'blue': '#0000ff'}
+del colors['green']   # Removes the element with the key 'green'
+print(colors)
+</code>
+
+== Output ==
+<code>
+{'red': '#ff0000', 'blue': '#0000ff'}
+</code>
+
+==== Einzelne Elemente lesen ====
+<WRAP center round info 60%>
+Wir können die Element über ihren Schlüssel in den eckigen Klammern lesen.
+
+Wollen wir wissen, ob ein bestimmter Schlüssel exisitert, so verwenden wir **has_key**.
+</WRAP>
+
+<code python>
+colors = {'red': '#ff0000', 'green': '#00ff00', 'blue': '#0000ff'}
+print(colors['green'])  # prints the value #00ff00
+if colors.has_key('pink'):
+    print ('Pink!!')
+else:
+    print ('No pink found')
+</code>
+
+== Output ==
+<code>
+#00ff00
+No pink found
+</code>
+
+=== Lesen nach Wert ===
+<WRAP center round info 60%>
+Es existiert keine Funktion um ein Element anhand seines Werts zu lesen.
+Wir können uns behelfen, indem wir die Schlüssel und Werte in separate Listen umwandeln.
+</WRAP>
+
+<code python>
+colors = {'red': '#ff0000', 'green': '#00ff00', 'blue': '#0000ff'}
+hex_values = list(colors.values())
+color_names = list(colors.keys())
+index = hex_values.index('#00ff00')
+print(color_names[index])
+</code>
+
+== Output ==
+<code>
+green
+</code>
+==== Alle Elemente verarbeiten ====
+Mit einem **for**-Loop können wir alle Elemente eines Dictionarys verarbeiten.
+<code python>
+colors = {'red': '#ff0000', 'green': '#00ff00', 'blue': '#0000ff'}
+for color_name in colors:    # loops through the keys
+    print(color_name)
+    
+for key, value in colors.items():    # loops through the keys and values
+    print(f'The hexcode for {key} is {value}')
+print(colors)
+</code>
+
+== Output ==
+<code>
+red
+green
+blue
+The hexcode for red is #ff0000
+The hexcode for green is #00ff00
+The hexcode for blue is #0000ff
+</code>
+
+==== Sortieren ====
+Mit dem **sorted**-Befehl können wir die Elemente nach ihrem Schlüssel sortieren.
+
+<code python>
+colors = {'red': '#ff0000', 'green': '#00ff00', 'blue': '#0000ff'}
+for name in sorted(colors.items()):
+    print(f'The hexcode for {name} is {colors[name]}')
+</code>
+
+== Output ==
+<code>
+The hexcode for blue is #0000ff
+The hexcode for green is #00ff00
+The hexcode for red is #ff0000
+</code>
+
+----
+{{tag>M319-C1G M319-C1F M319-C1E}}
+
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter 

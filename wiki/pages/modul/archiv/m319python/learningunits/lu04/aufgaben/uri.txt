@@ -1,0 +1,42 @@
+====== LU04.A04: U = R * I ======
+
+===== Aufgabe=====
+<WRAP center round info 60%>
+Lösen Sie die Aufgabe mit [[https://think.cs.vt.edu/blockpy/blockpy/|BlockPy]] oder [[https://www.codingrooms.com/compiler/python-block|Codingrooms]]
+
+Laden Sie einen Screenshot ihres Blockly-Ablaufs hoch.
+</WRAP>
+
+
+Nach der bekannten Formel ''U = R * I'' werden Spannung (U [Volt]), Widerstände (R [Ohm, Ω ]) und Stromstärken (I [Ampère]) umgerechnet. 
+Schreiben Sie ein Programm, bei dem der Anwender wahlweise zwei der drei Zahlen aus der Formel eingeben kann. 
+Für die gesuchte Grösse soll der Anwender ein Fragezeichen (?) eingeben. 
+Das Programm berechnet dann die dritte Zahl; diejenige, bei der der Anwender das Fragezeichen eingegeben hat.
+Beispiel:
+
+<code>
+U > 240
+R > ?
+I > 2.5
+Resultat R = 96 Ohm
+</code>
+
+<WRAP center round info 60%>
+Merkspruch für die Physik: Ihr da **Ohm** macht **watt** ihr **volt**.
+</WRAP>
+
+==== Ablauf ====
+<code>
+1. Der Benutzer gibt die Werte für Volt, Ohm und Ampère ein
+2. Falls in Volt ein Fragezeichen steht
+  2.1. Berechne die Volt
+3. Andernfalls in Ohm ein Fragezeichen steht
+  3.1. Berechne die Ohm
+4. Sonst
+  4.1. Berechne die Ampère
+5. Gib alle Werte aus
+</code> 
+
+----
+{{tag>M319-D1F M319-F3G}} 
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Kevin Maurizi, [[https://programmieraufgaben.ch|Philipp Gressly]]

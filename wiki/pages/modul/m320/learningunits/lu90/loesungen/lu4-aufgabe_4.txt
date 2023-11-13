@@ -1,0 +1,21 @@
+==== Lösung 4 - Unit Tests anwenden ====
+
+<file python bank_account_test.py>
+import pytest
+from bank_account import BankAccount
+
+
+@pytest.fixture()
+def testee(starting_amoount=400):
+    return BankAccount(starting_amoount)
+
+
+def test_get_money_with_less_than_saldo_returns_expected_money(testee):
+    assert testee.get_money(300) == 300
+    assert testee.saldo == 100
+
+
+def test_get_money_with_more_than_saldo_returns_nothing(testee):
+    assert testee.get_money(600) == 0
+    assert testee.saldo == 400
+</file>

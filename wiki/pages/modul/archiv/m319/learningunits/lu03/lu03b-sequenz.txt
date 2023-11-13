@@ -1,0 +1,39 @@
+====== LU03b - PAP - Sequenz ======
+
+Eine Sequenz ist eine Abfolge von Befehlen, die nacheinander (also sequentiell) ausgeführt werden. 
+Die einfachste Sequenz besteht aus einem einzigen Befehl. 
+Eine Sequenz hat immer genau einen Nachfolger.
+
+{{:modul:m319:learningunits:lu03:pap_sequenz.png|}}
+
+Dargestellt wird die Sequenz als Rechteck.
+
+
+== Beispiel: Butterbrot ==
+Sie sitzen am Tisch und möchten ein Butterbrot essen. 
+  * Auf dem Tisch liegt ein Laib Brot, die Butter, ein Messer und ein Teller.
+  * Wir stellen alle einzelnen Schritte als Sequenz dar.
+
+{{:modul:m319:learningunits:lu03:pap_butterbrot.png|}}
+
+=== Eingabe / Ausgabe ===
+Eine besondere Form der Sequenz sind Eingaben und Ausgaben.
+Diese werden als Parallelogramm dargestellt.
+
+{{:modul:m319:learningunits:lu03:pap_einausgabe.png|}}
+
+An bestimmten Stellen benötigt ein Programm Daten oder eine Entscheidung des Benutzers für den weiteren Ablauf. 
+An diesem Punkt wartet das Programm, bis der Benutzer seine Eingabe gemacht hat. 
+Erst nachdem die Eingabe erfolgt ist, kann das Programm weiterfahren. 
+
+Zudem will das Programm häufig die Ergebnisse seiner Arbeit dem Benutzer mitteilen (Ausgabe).
+
+== Beispiel: Addition ==
+Das Programm verlangt vom Benutzer die Eingabe von zwei Zahlen.
+Anschliessend werden die Zahlen addiert und das Total ausgegeben.
+
+{{:modul:m319:learningunits:lu03:pap_addition.png|}}
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Marcel Suter

@@ -1,0 +1,66 @@
+==== Aufgabe 91 - Vertiefung Exception verarbeiten ====
+
+=== Ziel ===
+  * Sie können mit dem ''try...except'' Konstrukt Fehler auffangen und behandeln.
+
+=== Auftrag ===
+//Hinweis: Diese Übung basiert auf der vorhergehenden ''m320-lu03-a01-grade'', die nun um das Exception-Handling erweitert wird.\\
+<tab14>Bis jetzt haben Sie bei erkannten Fehlern eine Exception ausgelöst. Dabei handelt es sich um eine allgemeine Exception. Wir wollen aber spezifisch reagieren können.\\
+<tab14>Darum werden wir dem Thema 'Vererbung' etwas vorgreifen. Lassen Sie sich davon nicht abschrecken - ist ganz einfach.//\\
+\\
+**Vorbereitung spezifischer Exception**\\
+Geben Sie vor der ''main''-Methode folgenden Code ein:
+<code python>
+class ListRangeException(Exception):
+    def __init__(self, message):
+        super().__init__(message)
+</code>
+Das gleiche wiederholen Sie dann für
+   * GradeRangeException
+   * ListIndexException
+\\
+**Anpassen der Exception**\\
+Ersetzen Sie den Code für die Erzeugung der (allgemeinen) Exception durch die passende, spezifische Exception.\\
+Hier am Beispiel für ''GradeRangeException'' gezeigt.\\
+alter Code
+<code Python>
+   raise Exception(f"Der Notenwert muss im Bereich 1.0 bis 6.0 liegen")
+</code>
+neuer Code
+<code python>
+   raise GradeRangeException(f"Der Notenwert muss im Bereich 1.0 bis 6.0 liegen")
+</code>
+
+\\
+**Fangen der Exception in main**\\
+1. Fügen Sie nach dem Befehl
+<code python>
+  print("\nund nun einen weiteren Wert zufügen")
+</code>
+einen ''try-except'' Block ein, der die nächsten 2 Befehle umfasst.\\
+Im ''except''-Block geben Sie die Meldung der Excpetion aus.\\
+Führen Sie das Programm aus und beobachten Sie die Wirkung am Stdout.\\
+\\
+2. Fügen Sie nach dem Befehl
+<code python>
+  print("\nund nun eine ungültige Note zufügen")
+</code>
+einen ''try-except'' Block ein, der die nächsten 2 Befehle umfasst.\\
+Im ''except''-Block geben Sie die Meldung der Excpetion aus.\\
+Führen Sie das Programm aus und beobachten Sie die Wirkung am Stdout.\\
+\\
+3. Fügen Sie nach dem Befehl
+<code python>
+   print("\nNote an Position 8 lesen ")
+</code>
+einen ''try-except'' Block ein, der den nächsten Befehle umfasst.\\
+Im ''except''-Block geben Sie die Meldung der Excpetion aus.\\
+Führen Sie das Programm aus und beobachten Sie die Wirkung am Stdout.\\
+\\
+\\
+Wenn das Programm nun ohne Fehlerausgabe durchläuft, haben Sie alles richtig gemacht. Bravo.
+
+=== Abgabe ===
+Geben Sie Ihre Lösung via Push auf GitHub ab.
+
+----

@@ -1,0 +1,57 @@
+====== LU09c - Codereview ======
+
+===== Ablauf eines technischen Codereviews =====
+==== 1. Planung ====
+In der Planung wird festgelegt, welches Programm oder welche Programmteile überprüft werden sollen.
+Durch die Auswahl des Programms ist auch klar, wer der Autor / die Autoren sind.
+Anschliessend wird 1 Moderator und 3-4 Gutachter angefragt.
+Der Moderator leitet den Review und insbesondere die Reviewsitzung.
+Aufgabe der Gutachter ist es, den Sourcecode zu prüfen und Befunde festzuhalten.
+
+==== 2. Kick-Off ====
+Der Kick-Off kann relativ informell durchgeführt werden.
+Folgende Punkten werden beim Kick-Off geklärt:
+  * Ziele und Termine festlegen.
+  * Sourcecode an die Gutachter verteilen.
+  * Relevante Standards, Fragebögen verteilen.
+
+Bei umfangreichen Codingstandards wird jedem Gutachter zugeteilt, welche Aspekte des Standards er überprüfen soll.
+Dabei sollte jeder Aspekt von mindestens 2 Gutachtern überprüft werden.
+
+==== 3. Vorbereitung ====
+In der Vorbereitungsphase studieren die Gutachter den Sourcecode.
+Sie suchen dabei nach Codestellen, die nicht den Codingstandards entsprechen.
+Solche Codestellen werden als Befund notiert:
+  * Dateiname
+  * Codezeile(n)
+  * Art des Befunds (Hauptfehler, Nebenfehler, Bemerkung)
+  * Ausformulierter Befund
+
+Der Befund soll bereits so ausformuliert sein, dass er direkt in das Protokoll übernommen werden kann.
+Dadurch erspart man sich viele, langwierige Diskussionen während der Reviewsitzung.
+
+==== 4. Reviewsitzung ====
+Die Reviewsitzung dauert in der Regel 2 + 1 Stunde.
+In den ersten zwei Stunden werden die Befunde gesammelt und protokolliert.
+
+  * Der Moderator führt die Sitzung und achtet auf die Einhaltung der Regeln. 
+  * Die Gutachter tragen ihre Befunde vor.
+  * Der Autor / die Autoren schreiben das Protokoll.
+
+=== Regeln ===
+Die Gutachter tragen lediglich ihre Befunde vor.
+Sie machen keine Vorschläge zur Verbesserung oder kritisieren den/die Autoren.
+
+Der/die Autoren halten die Befunde im Protokoll fest.
+Sie dürfen weder ihr Werk verteidigen noch die Befunde kommentieren.
+
+=== "Die dritte Stunde" ===
+
+Nachdem alle Befunde gesammelt sind, kann ein informeller Teil folgen.
+In dieser "dritten Stunde" tauschen sich Gutachter und Autor aus.
+Dabei kann der Autor Erfahrungen und Ratschläge einholen.
+Besonders weniger erfahrene Entwickler können hier von der Erfahrung der Gutachter profitieren.
+
+----
+{{tag>M450-LU09}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

@@ -1,0 +1,47 @@
+====== LU09.A06 - Dreiecksfläche berechnen ======
+
+===== Aufgabe=====
+ 
+Schreiben Sie die folgenden Funktionen zur Berechnung der Dreiecksfläche und verwenden Sie diese als Methoden in einem Hauptprogramm:
+
+=== area_base_height(s: float, hs: float) ===
+Aus Grundseite s und der zugehörigen Höhe hs:
+
+\(Fläche = \frac{s * h_{s}}{2} \)
+
+Formel als Bild: {{:modul:m319python:learningunits:lu09:aufgaben:screenshot_2022-11-28_at_09.15.14.png?120|}}
+
+=== area_three_sites(a: float, b: float, c: float) ===
+Aus drei Seiten nach der Formel von Heron:
+
+\(Fläche = \sqrt{s(s-a)(s-b)(s-c)}\)
+
+Formel als Bild: {{:modul:m319python:learningunits:lu09:aufgaben:screenshot_2022-11-28_at_09.15.26.png?200|}}
+
+Dabei bezeichnet s den halben Umfang. Schreiben Sie eine Hilfsmethode
+circumference(), die zunächst den Umfang des Dreiecks berechnet.
+
+=== area_points(ax: float, ay: float, bx: float, by: float, cx: float, cy: float) ===
+Aus drei Eckpunkten im Koordinatensystem. Dabei können die Seitenlängen einfach mit dem Satz des Pythagoras berechnet werden. 
+Die Seite ''a'' z.B. wird durch 
+
+\(a = \sqrt{(c_{x}-b_{x})^2 + (c_{y}-b_{y})^2}\)
+
+Formel als Bild: {{:modul:m319python:learningunits:lu09:aufgaben:screenshot_2022-11-28_at_09.15.33.png?200|}}
+
+ermittelt. Verwenden Sie nach der Ermittlung der drei Seiten die bereits geschriebene Funktion ''area(a, b, c)''. 
+
+===== Vorlage =====
+
+<WRAP center round box 60%>
+<code python>
+#TODO create three functions for triangle-area-calculations
+
+def main():
+    #TODO: Call the function from above.
+
+
+if __name__ == '__main__':
+    main()
+</code>
+</WRAP>

@@ -1,0 +1,38 @@
+~~NOTOC~~
+====== LU01.A06: Greeting ======
+
+===== Auftrag =====
+
+Schreiben Sie ein Programm, das Benutzereingaben entgegennimmt, nachdem Sie gefragt wurden: "Wie ist Ihr Name? Wenn der Benutzer seinen Namen geschrieben hat, muss das Programm "Hi", gefolgt vom Namen des Benutzers, ausgeben.
+
+Der Übungsvorlage liegt eine Programmvorlage bei, die die Funktion und deren Aufruf enthält.
+
+<code python>
+def main():
+  #write your code below this line
+
+if __name__ == '__main__':
+    main()
+</code>
+
+Schreibe ein Programm, das den Benutzer auffordert, eine Zeichenkette zu schreiben. Wenn der Benutzer eine Zeichenkette eingegeben hat (d.h. einen Text geschrieben und die Eingabetaste gedrückt hat), muss das Programm die Zeichenkette des Benutzers dreimal ausdrucken (Sie können den Befehl print mehrfach verwenden).
+
+Beispiel für die Ausgabe, wenn der Benutzer den Namen Ada angibt.
+<code>
+What is your name?
+*Ada*
+Hi Ada
+</code>
+Beispiel für die Ausgabe, wenn der Benutzer den Namen Lily angibt.
+<code>
+What is your name?
+*Lily*
+Hi Lily
+</code>
+
+Anmerkung: Kümmern Sie sich im Moment nicht zu sehr um ''if %%__%%name%%__%% == '%%__%%main%%__'%%:''. Wir brauchen es technisch gesehen nicht für dieses Programm, aber es ist eine gute Übung, es einzubauen, und es wird in späteren Übungen klarer werden.
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/ch/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Kevin Maurizi 
+
+Diese Aufgabe ist eine übersetzte und angepasste Aufgabe von [[https://scott3142.uk/|Scott Morgan]], verwendet unter CC BY NC SA.

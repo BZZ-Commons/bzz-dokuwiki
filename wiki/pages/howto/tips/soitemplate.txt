@@ -1,0 +1,30 @@
+====== Vorlage für SOI-Aufgaben ======
+<code python>
+import sys
+
+
+def subtask1(testcase):
+    basket_count = int(input(''))
+    items = input('').split()
+    total_items = 0
+    for i in range(basket_count):
+        total_items += int(items[i])
+
+    if total_items % basket_count == 0:
+        print(f'Case #{testcase}: YES')
+    else:
+        print(f'Case #{testcase}: NO')
+
+
+if __name__ == '__main__':
+    original_stdin = sys.stdin
+    sys.stdin = open('input0.txt', 'r')
+
+    original_stdout = sys.stdout
+    sys.stdout = open('output0.txt', 'w')
+
+    number = int(input(''))
+    for testcase in range(number):
+        subtask1(testcase)
+
+</code>

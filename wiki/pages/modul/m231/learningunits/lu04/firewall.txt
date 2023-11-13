@@ -1,0 +1,28 @@
+====== LU04c - Firewall ======
+//Siehe auch [[wpde>Firewall]]//
+
+<WRAP center round info 60%>
+Eine Firewall schützt meinen Computer vor unerwünschten Netzwerkzugriffen.
+Dazu werden Regeln festgelegt, welcher Datenverkehr erlaubt bzw. verboten ist.
+</WRAP>
+
+===== Personal Firewall =====
+Eine Personal Firewall wird auf meinem Computer installiert und ausgeführt.
+Diese Firewall enthält Regeln für den Netzwerkverkehr für jedes Programm und jeden Dienst auf meinem Computer.
+
+Zum Beispiel könnte festgelegt sein, dass der Netzwerkzugriff auf einen Ordner nur aus dem lokalen Netzwerk möglich ist.
+Dadurch soll verhindert werden, dass ein Angreiffer aus der Internet auf meine Dateien zugreifen kann.
+
+===== Netzwerk-Firewall =====
+Eine Netzwerk-Firewall (manchmal auch fälschlich als //Hardware//-Firewall bezeichnet) arbeitet auf einem Router oder Switch, welche Netzwerke verbinden. 
+Ihre Aufgabe ist es, die Zugriffe zwischen verschiedenen Netzwerken zu beschränken.
+In einem Firmennetzwerk sorgt die Netzwerk-Firewall dafür, dass potentielle Angriffe gar nicht bis zum Zielsystem gelangen.
+
+===== Firewall-Programme =====
+In aller Regel ist bei einem PC oder Laptop die Firewall fester Bestandteil des Betriebsystems.
+Ebenfalls enthalten viele Antivirus-Programme eine Firewall oder die Firewall-Funktion ist als Zusatzpaket verfügbar.
+Es ist allerdings fragwürdig, ob eine separate Firewall einen Vorteil bringt.
+
+----
+{{tag>m231-AnG}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

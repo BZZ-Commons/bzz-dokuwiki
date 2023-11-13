@@ -1,0 +1,46 @@
+====== Anleitungen git (GitHub, Classroom) ======
+===== Ersteinrichtung =====
+  * [[.:githubkonto|]]
+  * [[.:githubsso|]]
+  * [[.:github_moodle]]
+
+===== Github Classroom =====
+==== Workflow für Lernende ====
+  - [[.:githubkonto]]
+  - [[.:assignment]]
+  - [[.:clonestart]]
+  - [[.:clonesetup]]
+  - [[.:venv]]
+  - [[.:kontrolle_venv]]
+  - [[.:kontrolle_requirements]]
+
+==== Troubleshooting für Lernende ====
+  - [[.:troubleshooting]]
+  - [[.:github_authentifikation]]
+  - [[.:venv_manuell]]
+  - [[.:venv_aktivieren]]
+  - [[.:pyhton_interpreter]]
+==== Diverses ====
+
+  * [[.:classroom|]]
+  * [[.:assignment|]]
+  * [[.:ersteaufgabe|]]
+
+===== Automatisiertes Testen und Bewerten =====
+  * [[.:grading/autograding2|]]
+  * [[.:grading/linter|]]
+
+==== Alte Versionen ====
+  * [[.:grading/autograding|]]
+
+===== Best practice und Problembehandlung =====
+  * [[.:organisation|]]
+  * [[.:python_venv|]]
+  * [[.:probleme|]]
+  * [[howto/pycharm/template]]
+
+
+===== Inhaltsverzeichnis (ungeordnet) =====
+
+<nspages . -subns -h1  -exclude -simpleList -textPages="Inhaltsverzeichnis"> 
+

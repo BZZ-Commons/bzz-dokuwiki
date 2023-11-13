@@ -1,0 +1,45 @@
+=== 6. Konzept des data hiding ===
+Unter **data hiding** (Datenkapselung) versteht man den Zugriff auf die Attribute eines Objektes nur mittels Methoden und nie im Direktzugriff. [[https://de.wikipedia.org/wiki/Datenkapselung_(Programmierung)]]\\
+Im UML-Diagramm werden daher die Attribute mit dem Modifikator <<**private**>> - hier ein - Zeichen - versehen.\\ 
+{{:modul:m320:learningunits:lu01:theorie:klassendiagramm_-_modifikator_private.png?100|}}\\ 
+//Abb 1.9:// private-Modifikator in UML\\ 
+
+Was bedeutet nun aber data hiding praktisch betrachtet?
+ 
+Wir nehmen hier wieder unser Beispiel 1.1 der Türe. Gemäss UML-Diagramm sind alle Attribute ''private'' deklariert. Ein Zugriff in der Art
+<code Python>
+a_door_objekt.door_is_open = True
+</code>
+ist somit nicht erlaubt. Wäre dem nicht so, könnte z.B. auch im Zustand ''verriegelt'' die Türe geöffnet werden (vergl. dazu Abb. 1.4), was aber gar nicht geht. Viel mehr wird in der Methode ''lock_the_door'' sichergestellt, dass eben die Bedingungen gemäss Zustandsdiagramm eingehalten werden.
+
+
+<code Python>
+def lock_the_door(self):
+    """
+    Methode für das verriegeln der Türe.
+    Das ist nur möglich, wenn die Türe nicht offen ist.
+    Für das verriegeln ist aber das Türschloss zuständig. Es weiss wie das geht.
+    """
+    if self._door_is_open == False:
+       self._door_is_locked = self._the_door_lock.lock()
+</code>
+
+Der Benutzer der Klasse ''Door'' ist also vollständig von der Art der Implementation befreit und muss sich um keinerlei Zusicherungen kümmern. Es genügt, wenn er die passenden Methode aufruft. Hier also
+<code Python>
+a_door_objekt.lock_the_door()
+</code>
+
+=== data hiding bei Python ===
+Attribute die im Klassendiagramm als ''private'' deklariert sind, müssen in Python im Konstruktor initialisiert werden. Dies erfolgt durch folgende Schreibweise
+<code Python>
+self._das_gekapselte_Attribut = initialWert
+</code>
+
+<WRAP center round info 60%>
+Im Gegensatz zu anderen Programmiersprachen gibt es in Python keine echten **private** Attribute.
+Mit der Schreibweise ''_attributname'' zeigen wir an, dass dieses Attribut nicht von ausserhalb der Klasse manipuliert werden soll.
+Es wird aber nicht durch den Python-Interpreter verhindert, dass trotzdem auf solche Attribute zugegriffen wird.
+</WRAP>
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) René Probst

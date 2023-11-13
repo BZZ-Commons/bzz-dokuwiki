@@ -1,0 +1,316 @@
+~~NOTOC~~
+====== BZZ - Codingstandards ======
+
+<WRAP center round box 60%>
+//„The first thing I would say is that when you write a program, think of it primarily as a work of literature. You're trying to write something that human beings are going to read. Don't think of it primarily as something a computer is going to follow. The more effective you are at making your program readable, the more effective it's going to be: You'll understand it today, you'll understand it next week, and your successors who are going to maintain and modify it will understand it. “ Donald Knuth//
+</WRAP>
+
+=== Symbole ===
+
+
+
+|{{:modul:m319:learningunits:lu10:zwingend.png?30|}}|Zwingende Vorschriften|
+|{{:modul:m319:learningunits:lu10:empfehlung.png?30|}}|Empfehlungen          |
+|{{:modul:m319:learningunits:lu10:ausnahem.png?30|}}|Begründete Ausnahmen  |
+
+===== Bezeichner =====
+
+//Bezeichner sind die «Namen» von Klassen, Methoden, Attributen, Variablen und Konstanten.//
+
+==== Sprechende Bezeichner ====
+
+//Ein sprechender Bezeichner sagt etwas über den Sinn und Zweck einer Komponente aus. Durch den Einsatz von sprechenden Bezeichnern werden viele Kommentare überflüssig.//
+
+|{{:modul:m319:learningunits:lu10:zwingend.png?30|}}|Die Bezeichner (Namen) von Klassen, Methoden, Attributen, Variablen und Konstanten müssen sprechend sein.              |
+|{{:modul:m319:learningunits:lu10:ausnahem.png?30|}}|Schleifenzähler innerhalb einer kurzen Iteration (max. 5 Zeilen) dürfen auch kürzere Variablennamen wie i, j verwenden.|
+
+=== Beispiel ===
+
+<code java>
+public class category {
+
+    String[] categories = {"Getränke", "Vorspeisen", "Hauptgang", "Dessert"};public class Project {
+    private String projectTitle;
+    private static final int NUMBER = 10;
+    
+    /**
+     * @param projectTitle
+     *            the projectTitle to set
+     */
+    public void setProjectTitle(String projectTitle) {
+        this.projectTitle = projectTitle;
+    }
+
+}
+    public int readCategoryByTitle(String categoryTitle) {
+        int categoryId = -1;
+
+        for (int i=0; i < categories.length; i++) {
+            if (categories[i].equals(categoryTitle)) {
+                categoryId = i;
+            }
+        } 
+        
+        return categoryId;
+    }
+}
+</code>
+
+==== Schreibweise ====
+
+//Durch eine einheitliche Schreibweise verbessern Sie die Lesbarkeit Ihres Sourcecodes.//
+
+^{{:modul:m319:learningunits:lu10:zwingend.png?30|}}^Klassennamen bestehen aus einem Substantiv und beginnen mit einem Grossbuchstaben (z.B. Account).     ^
+|{{:modul:m319:learningunits:lu10:zwingend.png?30|}}|Die Bezeichner von Methoden, Attributen und Variablen beginnen mit einem Kleinbuchstaben.             |
+|{{:modul:m319:learningunits:lu10:zwingend.png?30|}}|Konstanten werden nur mit Grossbuchstaben geschrieben.                                                |
+|{{:modul:m319:learningunits:lu10:empfehlung.png?30|}}                                                                                             |Zusammengesetzte Bezeichner sollten in camelCase geschrieben werden; z.B. getFirstname().             |
+|{{:modul:m319:learningunits:lu10:empfehlung.png?30|}}                                                                                             |Vermeide Sonderzeichen, Leerzeichen und Umlaute in allen Bezeichnern, sowie in Datei- und Ordnernamen.|
+
+=== Beispiel ===
+
+<code java>
+public class Project {
+    private String projectTitle;
+    private static final int NUMBER = 10;
+    
+    /**
+     * @param projectTitle
+     *            the projectTitle to set
+     */
+    public void setProjectTitle(String projectTitle) {
+        this.projectTitle = projectTitle;
+    }
+}
+</code>
+
+===== Sichtbarkeit von Attributen =====
+
+==== Datenkapselung ====
+
+//Der Einsatz von// public//-Attributen untergräbt das Prinzip der Datenkapselung.//
+
+|{{:modul:m319:learningunits:lu10:zwingend.png?30|}}|Die Attribute einer Klasse werden entweder private (Normalfall) oder protected (Vererbung) definiert.|
+
+===== Zugriff auf Attribute =====
+
+//Die konsequente Verwendung von getter/setter-Methoden unterstützt// lazy initialization //und vermeidet Konflikte mit lokalen Variablen.//
+
+|{{:modul:m319:learningunits:lu10:empfehlung.png?30|}}|Der Zugriff auf Attribute soll auch in derselben Klasse mittels Getter/Setter-Methoden erfolgen.|
+
+=== Beispiel ===
+
+<code java>
+public class Project {
+    private String projectTitle;
+    private Category category;
+    private static final int NUMBER = 10;
+    
+    /**
+      * default constructor
+      */
+    public Project() {
+        setProjectTitle(“”);
+        setCategory(new Category());
+    }
+
+    /**
+     * @param projectTitle
+     *            the projectTitle to set
+     */
+    public void setProjectTitle(String projectTitle) {
+        this.projectTitle = projectTitle;
+    }
+   
+    /**
+      * @param category
+      *           the category to set
+      */
+    public void setCategory(Category category) {
+        this.category = category;
+    }
+}
+</code>
+
+===== Darstellung und Formatierung =====
+
+//Eine klare und einheitliche Programmierung erleichtert das Lesen eines Sourcecodes.//
+
+==== Programmblöcke ====
+
+//Ein Programmblock wird zwischen geschweiften Klammern { … } eingefasst.//
+
+^{{:modul:m319:learningunits:lu10:zwingend.png?30|}}^Die Positionierung der geschweiften Klammern ist einheitlich innerhalb des ganzen Projekts.                                          ^
+|{{:modul:m319:learningunits:lu10:zwingend.png?30|}}|Innerhalb eines Programmblocks werden die Zeilen um 2 oder 4 Stellen eingerückt. Die Einrückung ist im ganzen Sourcecode einheitlich.|
+
+=== Beispiel: Variante 1 (K&R style) ===
+<code java>
+    if (anredeCode == 1) {
+        return "Herr";
+    } else {
+        return "Frau";
+    }
+
+    try {
+         ...
+    } catch (...) {
+        ...
+    }
+
+</code>
+
+=== Beispiel: Variante 2 ===
+
+<code java>
+    if (anredeCode == 1) 
+    {
+        return "Herr";
+    } 
+    else 
+    {
+        return "Frau";
+    }
+
+    try 
+    {
+         ...
+    } 
+    catch (...) 
+    {
+        ...
+    }
+
+</code>
+
+==== Codezeilen ====
+
+//Eine Codezeile sollte immer auf einen Blick erfasst werden können.//
+
+^{{:modul:m319:learningunits:lu10:zwingend.png?30|}}^Eine Codezeile ist maximal 80 (oder 120) Zeichen lang. Längere Zeilen werden umgebrochen.^
+|{{:modul:m319:learningunits:lu10:empfehlung.png?30|}}                                                                                             |Ordnen Sie gleiche Elemente wie Bezeichner oder Bedingungen untereinander an.            |
+
+=== Beispiel ===
+<code java>
+if ( 
+     ( Integer.parseInt(eingabeMenge) >= mindestMenge  && 
+       Integer.parseInt(eingabeMenge) <= maximalMenge
+     ) || 
+     ( kunde.kundenArt.equals("Stammkunde") && 
+       Integer.parseInt(eingabeMenge) > 0
+     ) 
+   ) {
+    ....
+}
+</code>
+
+==== Konstruktoren ====
+
+//Konstruktoren versetzen ein neu erzeugtes Objekt in einen definierten Anfangszustand.//
+
+|{{:modul:m319:learningunits:lu10:zwingend.png?30|}}|Die Konstruktor-Methode(n) stehen an erster Stelle, um die Übersichtlichkeit zu erhöhen.|
+|{{:modul:m319:learningunits:lu10:empfehlung.png?30|}}|Die Initialisierung von Attributen erfolgt im Konstruktor, nicht bei der Deklaration.   |
+
+=== Beispiel ===
+
+<code java>
+public class Project {
+    private String projectTitle;
+    private Category category;
+    
+    /**
+      * default constructor
+      */
+    public Project() {
+        setProjectTitle(“”);
+        setCategory(new Category());
+    }
+
+...
+}
+</code>
+
+==== Anordnung der Methoden ====
+
+//Durch eine geeignete Reihenfolge fällt es leichter, die richtige Methode effizient zu finden.//
+
+|{{:modul:m319:learningunits:lu10:empfehlung.png?30|}}|Ähnliche Methoden sollen immer in der gleichen Reihenfolge angeordnet werden.|
+
+=== Beispiel ===
+
+  - Konstruktoren
+    - Default constructor
+    - Alternative Konstruktoren
+  - Methoden die eine Verarbeitung auslösen (z.B. savePerson())
+  - Methoden die auf ein Ereignis reagieren (Listener, Events)
+  - Getter/Setter-Methoden
+    - Getter/Setter mit integrierter Logik
+    - «Normale» Getter/Setter die Attribute 1 zu 1 lesen oder schreiben.
+
+===== Kommentare und Dokumentation =====
+
+//Zur Dokumentation des Sourcecodes verwenden wir Javadoc-Kommentare. Dadurch ersparen wir uns eine separate Beschreibung der Klassen und Methoden in einem Textdokument.//
+
+==== Klassenkopf ====
+
+//Der Klassenkopf ist die Visitenkarte einer Klasse. Er informiert den Programmierer über Aufgabe und Version dieser Klasse.//
+
+|{{:modul:m319:learningunits:lu10:zwingend.png?30|}}|Jede Klasse hat einen Javadoc-Klassenkopf. Dieser enthält mindestens die Angaben zu:\\ \\ * Kurzbeschreibung\\ * @author: Autor(en)                                                                                                                                                                                                                                                             |
+|{{:modul:m319:learningunits:lu10:empfehlung.png?30|}} |Sofern Sie keine Versionsverwaltung (z.B. git) verwenden, sollten ausserdem\\ \\ * @since: Letztes Änderungsdatum \\ * @version: Aktuelle Version des Sourcecodes \\ \\ im Kopf stehen.|
+
+=== Beispiel ===
+<code>
+/**
+ * category to which a project is assigned
+ *
+ * @author Marcel Suter
+ * @since 2017-09-19
+ * @version 1.0
+ *
+ */
+</code>
+
+==== Methodenkopf ====
+
+//Der Methodenkopf liefert alle Angaben über die Aufgabe und Schnittstelle einer Methode.//
+
+|{{:modul:m319:learningunits:lu10:zwingend.png?30|}}|Jede Methode hat einen Javadoc-Kopf mit den Angaben:\\ \\ * Kurzbeschreibung\\ * @param: Beschreibung der Parameter (falls vorhanden)\\ * @return: Beschreibung des Returnwerts (falls vorhanden)\\ * @exception: Beschreibung der Exceptions (falls vorhanden)|
+
+=== Beispiel ===
+<code>
+/**
+  * load a project from the database
+  * 
+  * @param  projectId      the unique id of a project
+  * @param  categoryTitle  the category title to be searched
+  * @return enum Result
+  * @throws Exception(“duplicate entry”)
+  */
+
+</code>
+
+==== Kommentare ====
+
+//Kommentare sind wie das Salz in der Suppe: Zuwenig und es schmeckt nicht, zu viel und es ist ungeniessbar.//
+
+|{{:modul:m319:learningunits:lu10:zwingend.png?30|}}|Jeder Programmblock, dessen Aufgabe nicht offensichtlich ist, wird in einem Kommentar beschrieben.|
+|{{:modul:m319:learningunits:lu10:empfehlung.png?30|}}|Ein kurzer Blockkommentar ist oftmals sinnvoller als Zeilenkommentare, die über den Bildschirm hinausreichen.|
+
+=== Beispiel ===
+<code>
+private Connector getConnector() {
+    // create a new connector, if not exists
+    // and establish connection if needed
+    if (this.connector == null) {
+        setConnector(new Connector());
+    }
+    if (this.connector.getHandle() == null) {
+        this.connector.connect();
+    }
+    
+    return this.connector;
+}
+
+</code>
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Kevin Maurizi, Marcel Suter, René Probst

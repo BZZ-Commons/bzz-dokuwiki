@@ -1,0 +1,128 @@
+====== LU01b - IntelliJ - Hallo Welt! ======
+Sie erstellen nun in IntelliJ ihr erstes Java Programm.
+
+===== Schritt 1: =====
+Fügen Sie eine neue Java-Klasse in den ''src'' Ordner im passenden Modul ein:
+
+{{:modul:m319:learningunits:lu01:src.png?600|}}
+
+Benennen Sie die Klasse Beispielsweise ''HalloWelt''
+
+{{:modul:m319:learningunits:lu01:hallowelt.png?400|}}
+
+<WRAP center round important 60%>
+Für Klassenbenennungen gibt es Konventionen:
+
+Klassennamen sollten Nomen sein, in gemischter Großschreibung, wobei der erste Buchstabe jedes inneren Wortes groß geschrieben werden sollte (CamelCase). Versuchen Sie, Ihre Klassennamen einfach und beschreibend zu halten. Verwenden Sie ganze Wörter - vermeiden Sie Akronyme und Abkürzungen (es sei denn, die Abkürzung ist viel verbreiteter als die Langform, z. B. URL oder HTML).
+</WRAP>
+
+Sie haben nun Ihr HalloWelt.java im ''src'' Ordner des Moduls.
+
+{{:modul:m319:learningunits:lu01:worldinmodule.png?600|}}
+
+
+===== Schritt 2: =====
+In jeder Programmiersprache gibt es verschiedene Vorschriften zum Aufbau des Sourcecodes.
+
+Für Java müssen Sie die folgenden Regeln beachten:
+  * 
+  * Das Programm wird mit der Zeile public class KLASSENNAME eingeleitet.
+  * Der Klassenname muss mit dem Dateinamen (ohne die Endung .java) übereinstimmen. Zum Beispiel:
+    * Datei: "Universe.java" / Klassenname: "Universe"
+    * Datei: "HalloWelt.java" / Klassenname: "HalloWelt"
+  * Das ganze Programm wird mit geschweiften Klammern eingefasst.
+  * Jedes Programm muss eine Methode public static void main(String[] args) haben. Beim Ausführen des Programmes startet das Betriebssystem diese Methode.
+  * Methoden (z.B. main) werden mit geschweiften Klammern eingefasst.
+
+Wir verwenden für unsere Programme im Modul 319 immer eine Programmiervorlage. Kopieren Sie diese nun in ihr File "HalloWelt.java"
+
+<code java>
+/**
+ * Prints "Hallo Welt!"
+ * 
+ * @author Ibid umm
+ * @since yyyy-mm-dd
+ * @version 1.0
+ */
+public class HalloWelt{
+
+    /**
+     * starts the execution
+     * 
+     * @param args command line arguments
+     *            
+     */
+    public static void main(String[] args) {
+        HalloWelt program = new HalloWelt();
+        program.run();  
+    }
+ 
+    /**
+     * runs the program
+     */
+    private void run() {
+ 
+        // TODO realize the program logic -- 
+ 
+    }
+}
+</code>
+===== Schritt 3: =====
+Vielleicht ist das Programmieren noch völlig neu für Sie oder haben Sie schon ein wenig Erfahrung? In beiden Fällen lohnt es sich, zuerst zu denken und danach zu tippen.
+
+Um unsere Befehle einzufügen, müssen wir jeweils drei Fragen klären:
+
+Was soll der Befehl machen?
+Wo gehört der Befehl hin?
+Wie schreibt man diesen Befehl?
+
+==== Auftrag ====
+Das Programm soll den Text "Hallo Welt" ausgeben.
+
+==== Was? ====
+Das "Was" ergibt sich hier aus dem Auftrag: Der neue Befehl soll einen Text ausgeben.
+
+==== Wo? ====
+Wenn Sie das Programmgerüst betrachten, so finden Sie einen Kommentar
+
+<code>// TODO realize the program logic</code>
+Ihre Befehle folgen direkt auf diesen Kommentar. Somit wäre auch das Wo geklärt.
+
+Fügen Sie an der richtigen Stelle einen neuen Kommentar in den Sourcecode ein:
+<code>
+// TODO realize the program logic
+// TODO Ausgabe: "Hallo Welt"
+</code>
+==== Wie? ====
+
+Sie wissen nicht, wie man eine Ausgabe in Java macht? Dann lesen Sie einfach nach, wie das geht. Suchen Sie im Internet (Java Text ausgeben) oder einem Fachbuch den richtigen Befehl.
+
+Schon nach kurzer Zeit finden Sie ein Beispiel für eine Ausgabe:
+
+<code>System.out.println("Dieser Text wird angezeigt");</code>
+Bevor Sie das Beispiel einfach kopieren, sollten Sie sich diesen Befehl kurz anschauen:
+
+  * Der Befehl für eine Ausgabe lautet: System.out.println(...).
+  * Der auszugebende Text wird zwischen Anführungs-/Schlusszeichen (engl. double quotes) geschrieben.
+  * Der Befehl wird mit einem Strichpunkt (engl. semi colon) beendet.
+
+Nachdem Sie den Befehl (Syntax) recherchiert haben, ersetzen Sie Ihren Kommentar mit dem Befehl.
+
+{{:modul:m319:learningunits:lu01:javahallowelt.png?600|}}
+
+===== Schritt 4 =====
+Als nächstes müssen wir unsere Programm kompilieren und ausführen. Ihre IDE macht das für Sie, die einzige Aufgabe für Sie ist, dass Sie der IDE sagen müssen welches Programm ausgeführt werden soll. Drücken Sie dazu auf den grünen Pfeil neben der main-Methode.
+
+{{:modul:m319:learningunits:lu01:run.png?600|}}
+
+IntelliJ kompiliert nun Ihr File "HalloWelt.java" und führt es anschliessend aus:
+
+{{:modul:m319:learningunits:lu01:cmd.png?600|}}
+
+
+Gratulation, Sie haben nun ihr erstes Java-Programm in IntelliJ geschrieben und gestartet.
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Kevin Maurizi, Marcel Suter
+{{tag>IntelliJ IDE}}

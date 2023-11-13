@@ -1,0 +1,38 @@
+====== LU03d - PAP - Iteration =====
+==== Iteration ====
+
+
+Eine Iteration ist die Wiederholung eines Programmteils.
+
+
+| {{:modul:m319:learningunits:lu03:pap_iteration.png|}} |Sie besteht aus  \\ * einer Bedingung, die prüft ob der Programmteil (nocheinmal) durchgeführt werden soll  \\ * Den Anweisungen, die mehrmals durchgeführt werden sollen \\ * einem Pfeil der zurückführt, wenn die Bedingung erfüllt ist  \\ * einem Pfeil der weiterführt, wenn die Bedingung nicht mehr erfüllt ist  \\ Eine Iteration hat immer zwei Nachfolger, einen ersten innerhalb der Iteration und einen zweiten nach Abschluss der Iteration.  |
+
+
+**Beispiel: Zählen** 
+
+
+| {{:modul:m319:learningunits:lu03:pap_zaehlen_kopf.png|}}| In diesem Beispiel gibt der Benutzer eine Zahl ein. \\ Vor jedem Durchlauf der Iteration wird geprüft, ob die Zahl noch kleiner als 100 ist. Solange die Bedingung erfüllt ist, wird die Zahl um 1 erhöht. |
+
+
+=== Kopfgesteuerte Iteration ===
+Bei der oben gezeigten Schleife, wird die Bedingung **vor** dem Inhalt der Iteration geprüft. 
+Wir bezeichnen sie als kopfgesteuerte Iteration. 
+Die Bedingung einer kopfgesteuerten Iteration beginnt immer mit **"Solange …"**. 
+Vermeiden Sie auf jeden Fall das Wort **"bis"** in der Bedingung. 
+Auch die Formulierung ''solange bis …'' wäre falsch. \\
+Merke: Bei einer Kopfgesteuerten Schleife wird, sofern die Bedingung schon bei Beginn erfüllt ist, der Code innerhalb der Iteration nicht ausgeführt.
+
+=== Fussgesteuerte Iteration ===
+
+| {{:modul:m319:learningunits:lu03:pap_zaehlen_fuss.png|}} | Bei einer fussgesteuerten Iteration wird zuerst der Inhalt einmal durchgeführt. Erst danach wird geprüft, ob der Inhalt noch einmal durchgeführt werden soll.  \\   \\ Die Bedingung dieser Iteration beginnt mit "Bis …". |
+| ::: | Im Beispiel würde diese fussgesteuerte Iteration auch dann durchgeführt, wenn der Benutzer eine Zahl grösser/gleich 100 eingibt. |
+
+
+=== Wer steuert, Kopf oder Fuss? ===
+In den meisten Fällen ((Nach Erfahrung des Autoren zu 80-90%))führen Kopfgesteuerte Iterationen zu einem besseren Programmcode. Daher werden wir fussgesteuerte Iterationen weitgehend ausser acht lassen.\\
+Merke: Bei einer Fussgesteuerten Schleife wird der Code innerhalb der Iteration so oder so 1 mal ausgeführt, da erst dann die Bedingung überprüft wird (Fehleranfällig).
+
+//Merksatz: Fussgesteuerte Schleifen und Fuss-Schweiss sollten vermieden werden.// 
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Marcel Suter

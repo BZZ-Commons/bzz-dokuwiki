@@ -1,0 +1,19 @@
+====== Python Interpreter ======
+<WRAP center round info 60%>
+Diese Seite beschreibt, wie du den Fehler "no python interpreter" lösen kannst.
+</WRAP>
+
+===== Use C:\BZZ\Python ... =====
+{{:howto:git:classroom_student_60.png?600|}}
+
+Diese Fehlermeldung erscheint, wenn der Interpreter vorhanden aber nicht ausgewählt ist.
+Ein Klick auf den Link "Use C:\BZZ\Python ..." löst das Problem.
+
+Du kannst //**[Weiter]**// der Anleitung folgen.
+
+===== No Python interpreter configured =====
+
+{{:howto:git:classroom_student_61.png?400|}}
+
+In diesem Fall fehlt in der Regel auch der Ordner "venv" in deinem Projekt.
+Wie man das Problem löst findest du unter //**[Venv erstellen]**//

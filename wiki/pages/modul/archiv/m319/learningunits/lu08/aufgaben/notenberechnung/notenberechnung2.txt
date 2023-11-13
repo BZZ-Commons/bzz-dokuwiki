@@ -1,0 +1,65 @@
+Durch das Klonen haben Sie den unten stehenden Code in Ihre IDE kopiert. 
+Arbeiten Sie sich nun durch die TODOs durch.
+
+<WRAP center round box 80%>
+<code java>
+import java.util.Scanner;
+/**
+ * Anpassen!
+ *
+ * @author Ibi dumm
+ * @since 2042.01.01
+ * @version 0.1
+ */
+public class Notenberechnung {
+
+    static Scanner scanner;
+
+    public Notenberechnung(){
+        scanner = new Scanner(System.in);
+    }
+
+    public static void main(String[] args) {
+        Notenberechnung notenberechnung = new Notenberechnung();
+        notenberechnung.run();
+        scanner.close();
+    }
+
+    private void run() {
+        // TODO 1: Erstellen Sie eine Klasse "Note" mit folgenden Attributen:
+        //         Notenwert (1.0 -6.0), Datum, Gewichtung
+
+        // TODO 1.1: Erstellen Sie sinnvolle Konstruktoren
+
+        // TODO 1.2: Erstellen Sie sinnvolle getter/setter
+
+        // TODO 1.3: Implementieren Sie die Methode toString();
+
+        // TODO 1.4: Comitten und Pushen Sie
+
+        // TODO 2: Erstellen Sie die Klasse "Fach" mit folgenden Attributen
+        //         Liste von Noten, Name
+
+        // TODO 2.1: Erstellen Sie sinnvolle Konstruktoren
+
+        // TODO 2.2: Erstellen Sie sinnvolle getter/setter/adder
+
+        // TODO 2.3: Implementieren Sie die Methode toString();
+
+        // TODO 2.4: Comitten und Pushen Sie
+
+        // TODO 3: Erstellen Sie die Methode "berechneDurchschnitt()" die den Durchschnitt der Noten berechnet
+        //        unter berücksichtigung der Gewichtung!
+
+        // TODO 4: Erstellen Sie 2 Fächer mit jeweils 2-4 Noten und überprüfen Sie, ob alles korrekt funktioniert.
+
+        // TODO 5: Drucken Sie alle Fächer und Noten aus, verwenden Sie dazu ihre toString()-Methode
+
+        // TODO 6: Comitten und Pushen Sie
+
+    }
+}
+</code>
+</WRAP>
+
+

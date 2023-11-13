@@ -1,0 +1,208 @@
+====== LU03.A08 - Länderdaten ======
+
+<WRAP center round todo 60%>
+Schreiben Sie eine Funktion namens ''analyze_countries'', die eine Liste von Länderdaten als JSON-Objekte verarbeitet. Die Funktion sollte zwei Higher-Order Functions akzeptieren: eine zum Filtern der Länder und eine zum Transformieren der gefilterten Länderdaten.
+</WRAP>
+
+
+==== Detaillierte Aufgabenstellung ====
+
+  - **Funktion Signaturen**: 
+    - ''analyze_countries(data, filter_func, transform_func):''
+  - **Parameter**:
+    - ''data'': Eine Liste von Länderdaten als Dictionaries.
+    - ''filter_func'': Eine Funktion, die ein Länder-Dictionary akzeptiert und einen Booleschen Wert zurückgibt.
+    - ''transform_func'': Eine Funktion, die ein gefiltertes Länder-Dictionary akzeptiert und ein transformiertes Dictionary zurückgibt.
+  - **Rückgabewert**:
+    - Eine Liste von transformierten Länderdaten.
+  - **Spezifische Aufgaben für filter_func und transform_func**:
+    - **Filter-Funktion (filter_func)**:
+      - Schreiben Sie eine Funktion, die nur Länder aus Europa filtert.
+      - Schreiben Sie eine Funktion, die nur Länder mit einer Bevölkerung von mehr als 10 Millionen Menschen filtert.
+    - **Transformations-Funktion (transform_func)**:
+      - Schreiben Sie eine Funktion, die den Namen des Landes und seine Hauptstadt in einem neuen Dictionary zurückgibt.
+      - Schreiben Sie eine Funktion, die den Namen des Landes und seine Gesamtfläche in einem neuen Dictionary zurückgibt.
+
+==== Code-Vorlage ====
+<code python>
+def analyze_countries(data, filter_func, transform_func):
+    """ 
+    Analysiert eine Liste von Länderdaten. Verwendet 'filter_func' zum Filtern und 'transform_func' zum Transformieren der Länderdaten.
+    
+    Args:
+    - data: Liste von Ländern als Dictionaries
+    - filter_func: Funktion zum Filtern der Länder
+    - transform_func: Funktion zum Transformieren der Länderdaten
+
+    Returns:
+    - Liste von transformierten Länderdaten
+    """
+    # TODO: Implementiere die Funktion hier
+    pass
+
+def filter_european_countries(country):
+    """ 
+    Filtert europäische Länder aus der Liste.
+
+    Args:
+    - country: Ein Dictionary, das ein Land repräsentiert
+
+    Returns:
+    - True, wenn das Land in Europa liegt, sonst False
+    """
+    # TODO: Implementiere die Funktion hier
+    pass
+
+def filter_large_population_countries(country):
+    """ 
+    Filtert Länder mit einer Bevölkerung von mehr als 10 Millionen.
+
+    Args:
+    - country: Ein Dictionary, das ein Land repräsentiert
+
+    Returns:
+    - True, wenn das Land eine Bevölkerung von mehr als 10 Millionen hat, sonst False
+    """
+    # TODO: Implementiere die Funktion hier
+    pass
+
+def transform_to_name_and_capital(country):
+    """ 
+    Transformiert das Länder-Dictionary, sodass nur der Name und die Hauptstadt zurückgegeben werden.
+
+    Args:
+    - country: Ein Dictionary, das ein Land repräsentiert
+
+    Returns:
+    - Ein Dictionary mit dem Namen und der Hauptstadt des Landes
+    """
+    # TODO: Implementiere die Funktion hier
+    pass
+
+def transform_to_name_and_area(country):
+    """ 
+    Transformiert das Länder-Dictionary, sodass nur der Name und die Fläche zurückgegeben werden.
+
+    Args:
+    - country: Ein Dictionary, das ein Land repräsentiert
+
+    Returns:
+    - Ein Dictionary mit dem Namen und der Fläche des Landes
+    """
+    # TODO: Implementiere die Funktion hier
+    pass
+    
+       
+if __name__ == '__main__':
+    """ Hauptfunktion zum Ausführen des Programms """
+    # TODO: JSON-Datei öffnen und Daten laden
+    countries_data = 
+        
+    # Europäische Länder filtern und nach Name und Hauptstadt transformieren
+    european_countries = analyze_countries(countries_data, filter_european_countries, transform_to_name_and_capital)
+    print('Europäische Länder (Name und Hauptstadt):', european_countries)
+
+    # Länder mit mehr als 10 Millionen Einwohnern filtern und nach Name und Fläche transformieren
+    large_population_countries = analyze_countries(countries_data, filter_large_population_countries, transform_to_name_and_area)
+    print('Länder mit mehr als 10 Millionen Einwohnern (Name und Fläche):', large_population_countries)
+</code>
+
+
+==== Hinweis ====
+
+=== Die ''filter_func'' ===
+
+Die ''filter_func'' ist eine Higher-Order Function, die als Argument ein Dictionary erhält, welches die Daten eines Landes repräsentiert. Diese Funktion muss einen Booleschen Wert (''True'' oder ''False'') zurückgeben, basierend darauf, ob das jeweilige Land den Filterkriterien entspricht oder nicht.
+
+**Beispiel:**
+
+Angenommen, das Dictionary für ein Land sieht folgendermaßen aus:
+<code python>
+{
+  'name': 'Deutschland',
+  'region': 'Europa',
+  'population': 83000000,
+  'area': 357022
+}
+</code>
+
+Wenn die ''filter_func'' dazu dient, nur Länder aus Europa zu filtern, könnte sie so aussehen:
+<code python>
+def filter_european_countries(country):
+    return country['region'] == 'Europa'
+</code>
+
+In diesem Fall würde die ''filter_func'' für das obige Beispiel ''True'' zurückgeben, da das Land ('Deutschland') in Europa liegt.
+
+=== Die ''transform_func'' ===
+
+Die ''transform_func'' ist eine weitere Higher-Order Function, die ein Dictionary als Argument erhält, das ein gefiltertes Land repräsentiert. Diese Funktion transformiert die Daten nach bestimmten Kriterien und gibt ein neues Dictionary zurück.
+
+**Beispiel:**
+
+Angenommen, das gefilterte Dictionary für ein Land sieht folgendermaßen aus:
+<code python>
+{
+  'name': 'Deutschland',
+  'region': 'Europa',
+  'population': 83000000,
+  'area': 357022
+}
+</code>
+
+Wenn die ''transform_func'' dazu dient, nur den Namen des Landes und seine Bevölkerung zurückzugeben, könnte sie so aussehen:
+<code python>
+def transform_to_name_and_population(country):
+    return {'name': country['name'], 'population': country['population']}
+</code>
+
+In diesem Fall würde die ''transform_func'' für das obige Beispiel das folgende Dictionary zurückgeben:
+<code python>
+{
+  'name': 'Deutschland',
+  'population': 83000000
+}
+</code>
+
+=== Die ''analyze_countries'' Funktion ===
+
+Die ''analyze_countries'' ist die zentrale Funktion in diesem Programm. Sie nimmt eine Liste von Länderdaten und zwei Higher-Order Functions (''filter_func'' und ''transform_func'') als Argumente. Die Funktion filtert und transformiert die Liste der Länderdaten basierend auf den beiden übergebenen Higher-Order Functions und gibt eine neue Liste der transformierten Länderdaten zurück.
+
+**Beispiel:**
+
+Angenommen, die ursprüngliche Liste der Länderdaten enthält Dictionaries, die so aussehen könnten:
+
+<code python>
+{
+  'name': 'Deutschland',
+  'region': 'Europa',
+  'population': 83000000,
+  'area': 357022
+}
+</code>
+
+**Funktionsaufruf:**
+
+<code python>
+transformed_countries = analyze_countries(data, filter_european_countries, transform_to_name_and_capital)
+</code>
+
+In diesem Fall führt die ''analyze_countries''-Funktion die folgenden Schritte aus:
+
+1. **Filterung**: Zuerst wendet sie die ''filter_func'' (in diesem Beispiel ''filter_european_countries'') auf jedes Land in der ''data''-Liste an. Nur die Länder, für die die Funktion ''True'' zurückgibt, werden für die nächste Phase behalten. In unserem Beispiel würde Deutschland behalten, da es in Europa liegt.
+
+2. **Transformation**: Danach wendet sie die ''transform_func'' (in diesem Beispiel ''transform_to_name_and_capital'') auf jedes der gefilterten Länder an. Diese Funktion nimmt das Dictionary eines gefilterten Landes und transformiert es in ein neues Dictionary, das nur ausgewählte Informationen enthält. In unserem Beispiel würde das neue Dictionary für Deutschland folgendermaßen aussehen:
+
+<code python>
+{
+  'name': 'Deutschland',
+  'capital': 'Berlin'
+}
+</code>
+
+3. **Zusammenstellung**: Schließlich werden alle transformierten Länder in einer neuen Liste gesammelt und diese Liste wird als Ergebnis zurückgegeben.
+
+----
+<nodisp>https://github.com/templates-python/m323-lu03-a08-countries</nodisp>
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/ch/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Kevin Maurizi 
+

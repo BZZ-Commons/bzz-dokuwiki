@@ -1,0 +1,92 @@
+===4. Logische Operatoren===
+Bis anhin haben wir uns primär mit einfachen Aussagen beschäftigt. Die Realität ist aber komplex und es bedarf der Möglichkeit, mehrere logische Aussagen miteinander zu verknüpfen.
+  * Wenn das Signal grün ist UND keine Person auf dem Fussgängerstreifen steht, kann ich fahren (sonst wird's Probleme geben).
+  * Wenn der Kunde ein Vermögen von 500'000 UND ein Einkommen von 10'000 hat, erhält er eine Hypothek.
+  * Wenn ich Ferien habe ODER es Wochenende ist, kann ich ausschlafen.
+  * Wenn ich NICHT friere, ziehe ich meine Jacke aus.
+Die Beispiel zeigen die 3 Grundoperationen für logische Ausdrücke auf. Es sind diese also
+   * NICHT, NOT
+   * UND, AND
+   * ODER, OR
+**NICHT - //NEGATION//**\\
+Der NICHT-Operator invertiert eine logische Aussage. Aus wahr wird falsch und umgekehrt.\\
+Als Operationszeichen wird <color #ed1c24>\(\neg\)</color> verwendet.\\
+\(\neg\)0 = 1\\
+
+----
+//Beispiel://\\
+"Wenn die Lehrperson fehlt, findet kein Unterricht statt."\\
+Boolscher Ausdruck: \(\neg\)Lehrperson\\
+----
+
+**UND - //KONJUNKTION//**\\
+Der UND-Operator verbindet 2 Aussagen in der Weise, dass das Produkt dann wahr ist, wenn beide Aussagen wahr sind.\\
+Als Operationszeichen wird <color #ed1c24>\(\wedge\)</color> verwendet.\\
+0 \(\wedge\) 0 = 0\\
+0 \(\wedge\) 1 = 0\\
+1 \(\wedge\) 0 = 0\\
+1 \(\wedge\) 1 = 1\\
+
+----
+//Beispiel://\\
+"Ich gehe Skifahren, wenn es Schnee hat und schönes Wetter herrscht."\\
+Boolscher Ausdruck: Schnee \(\wedge\) Wetter\\
+----
+
+
+**ODER - //DISJUNKTION//**\\
+Der ODER-Operator verbindet 2 Aussagen in der Weise, dass das Produkt dann wahr ist, wenn eine oder beide Aussagen wahr sind.\\
+Als Operationszeichen wird <color #ed1c24>\(\vee\)</color> verwendet.\\
+0 \(\vee\) 0 = 0\\
+0 \(\vee\) 1 = 1\\
+1 \(\vee\) 0 = 1\\
+1 \(\vee\) 1 = 1\\
+
+----
+//Beispiel://\\
+"Um meinen Kollegen in Amerika zu kontaktieren, kann ich telefonieren oder schreiben."\\
+Boolscher Ausdruck: telefonieren \(\vee\) schreiben\\
+----
+
+**Klammerregeln**\\
+Wie in der Mathematik die Regel ''Punkt vor Strich'' gilt, gilt bei der boolschen Algebra ''UND vor ODER''.\\
+Bei A \(\vee\) B \(\wedge\) C wird zuerst der Teilausdruck B \(\wedge\) C berechnet und das Ergebnis dann mit der Variable A oder-verknüpft. Wird der Ausdruck aber wie folgt in Klammern gefasst (A \(\vee\) B) \(\wedge\) C, wird zuerst die Oder-Funktion (A \(\vee\) B) ausgeführt und das Ergebnis dann mit der Variable C und-verknüpft.
+\\
+----
+//Beispiele://\\
+"Eine Person kann dann als Model arbeiten, wenn Sie älter als 18 Jahre ist und die Körpergrösse zwischen 1.75m und 1.95 m liegt oder wenn sie eine Empfehlung einer anderen Agentur hat."\\
+Boolscher Ausdruck: Alter > 18  \(\wedge\)  Groesse >= 1.75 \(\wedge\) Groesse %%<=%% 1.95 \(\vee\) Empfehlung\\
+Der Ausdruck kann mit Klammern versehen werden, um die Lesbarkeit zu verbessern. Auf das Ergbnis hat dies aber keinen Einfluss.\\
+<color #ed1c24>(</color>Alter > 18  \(\wedge\)  Groesse >= 1.75 \(\wedge\) Groesse %%<=%% 1.95<color #ed1c24>)</color> \(\vee\) Empfehlung\\
+\\
+"Im Hotel "Wunderbar" ist eine Tischreservation nur im Zeitraum 8:00 bis 11:00 und 14:00 bis 17:00 möglich, sofern es sich um einen Wochentag handelt. An einem Samstag bzw. Sonntag sind keine Reservationen möglich."\\
+Boolscher Ausdruck: \(\neg\)Wochenende \(\wedge\) (Zeit >= 8 \(\wedge\) Zeit %%<= 11% \(\vee\) Zeit >= 14 \(\wedge\) Zeit %%<= 17%%)\\
+\\
+"Ich spiele Gitarre, wenn ich Lust und Zeit habe oder wenn ich Unterricht oder einen Auftritt habe."\\
+Boolscher Ausdruck: Lust \(\wedge\) Zeit \(\vee\) Unterricht \(\vee\) Auftritt\\
+\\
+"Ich gehe einkaufen, wenn ich Lust oder Bedarf für neue Kleider habe und mein Bankkonto (Geld) das zulässt."\\
+Boolscher Ausdruck: (Lust \(\vee\) Bedarf) \(\wedge\) Geld\\
+----
+//**Hinweis:**//\\
+Das ''logische ODER'' entspricht nicht dem im Sprachgebrauch üblichen oder. Wenn wir sagen "Ich gehe in den Zoo ODER ins Kino", so meinen wir das ausschliessend. Das heisst, dass wir ENTWEDER ins Kino gehen ODER in den Zoo. Aber sicher nicht beides. In der Logik spricht man in diesme Fall von einem\\
+**EXKLUSIV-ODER - //XOR//** \\
+Hier ist das Produkt einer Aussage dann wahr, wenn eine - und nur eine - der beiden Aussagen wahr ist.\\
+Als Operationszeichen wird <color #ed1c24>\(\oplus\)</color> verwendet.\\
+0 \(\oplus\) 0 = 0\\
+0 \(\oplus\) 1 = 1\\
+1 \(\oplus\) 0 = 1\\
+1 \(\oplus\) 1 = 0\\
+\\
+Lösen Sie nun die [[modul:mathe:ma1:thema:lu04logik:aufgaben:leitprogramm:k5:u4:start|Übung 4]]\\
+\\
+----
+Überprüfen Sie Ihre Antworten. [[modul:mathe:ma1:thema:lu04logik:aufgaben:leitprogramm:k5:l4:start|Lösung 4]]\\
+Sollten Sie Fehler haben, schauen Sie sich die Theorie noch einmal genau an, besprechen Sie offene Fragen mit Ihren Kolleginnen und/oder Kollegen. Fragen Sie auch Ihre Lehrperson, wenn Sie weiterführende Hilfe brauchen.
+
+
+----
+[[modul:mathe:ma1:thema:lu04logik:aufgaben:leitprogramm:k6:start|nächstes Kapitel]]
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) René Probst

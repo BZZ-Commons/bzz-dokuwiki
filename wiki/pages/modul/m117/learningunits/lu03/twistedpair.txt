@@ -1,0 +1,57 @@
+====== LU03b - Twisted Pair======
+
+==== Aufbau und Funktionsweise ====
+Twisted Pair Kabel bestehen aus Kupferdrahtpaaren, bei denen die einzelnen Drähte jedes Paares miteinander verdrillt sind. Die Verdrillung erfolgt, um elektromagnetische Störungen, auch als elektromagnetische Interferenzen (EMI) bezeichnet, zu minimieren. Jedes Drahtpaar wird in einem eigenen Isolationsmaterial ummantelt.
+
+==== Merkmale und Eigenschaften ====
+=== Kategorien ===
+Twisted Pair Kabel sind in verschiedenen Kategorien erhältlich, die jeweils unterschiedliche Übertragungsgeschwindigkeiten, Frequenzbereiche und Störfestigkeiten bieten. Die Kategorien reichen von Cat5e (mit Übertragungsraten von bis zu 1 Gbit/s) über Cat6, Cat6a (für 10 Gbit/s) bis hin zu höheren Kategorien wie Cat7 und Cat8.
+
+=== Abschirmung === 
+Es gibt ungeschirmte (UTP), abgeschirmte (STP) und vollgeschirmte (FTP, S/FTP) Varianten von Twisted Pair Kabeln. Geschirmte Varianten bieten eine höhere Immunität gegenüber elektromagnetischen Störungen, was besonders in Umgebungen mit vielen elektronischen Geräten von Vorteil ist.
+    
+=== Übertragungsdistanz === 
+Die Übertragungsdistanz von Twisted Pair Kabeln variiert je nach Kategorie. Bis und mit Cat7 gilt eine maximale Distanz von 100 Metern, bei Cat8 reduziert sich diese aufgrund der hohen Bandbreite auf 30 Meter.
+
+=== Flexibilität === 
+Twisted Pair Kabel sind aufgrund ihrer flexiblen Bauweise einfach zu handhaben und zu verlegen. Dies macht sie ideal für Installationen in Büros, Wohnungen und kleinen Netzwerken.
+
+=== Verwendung ===
+Sie werden häufig für Ethernet-Verbindungen in Heim- und Büronetzwerken eingesetzt. Twisted Pair Kabel sind auch in der Telekommunikation und industriellen Automatisierung weit verbreitet.
+
+==== Vorteile ====
+  * Kosten: Twisted Pair Kabel sind im Allgemeinen kostengünstig, insbesondere im Vergleich zu Glasfaserkabeln.
+  * Flexibilität: Die Flexibilität der Kabel ermöglicht eine einfache Installation in verschiedenen Umgebungen.
+  * Verfügbarkeit: Twisted Pair Kabel sind weit verbreitet und leicht verfügbar.
+
+==== Herausforderungen ====
+  * Begrenzte Übertragungsdistanz: Im Vergleich zu Glasfaserkabeln sind die maximalen Übertragungsdistanzen begrenzt.
+  * Störanfälligkeit: Trotz der Verdrillung sind Twisted Pair Kabel anfälliger für elektromagnetische Störungen als Glasfaserkabel.
+  * Geschwindigkeitsbegrenzung: Die Geschwindigkeit und Bandbreite von Twisted Pair Kabeln sind durch die Kategorie begrenzt.
+
+Insgesamt sind Twisted Pair Kabel eine beliebte Wahl für lokale Netzwerke (LANs) in Wohn- und Büroumgebungen aufgrund ihrer kostengünstigen Natur, einfachen Installation und guten Leistung für mittlere Übertragungsgeschwindigkeiten.
+
+
+
+
+
+
+{{:modul:m117:learningunits:lu03:twistedpairkabel.jpg?400|}}
+
+{{:modul:m117:learningunits:lu03:twistedpairarten.jpg?600|}}
+
+
+
+==== Stecker ====
+Die Auswahl an normierten Steckverbindern für kabelbasierende Netzwerke ist gering. Bei Twisted-Pair (TP) kommen RJ45-Steckverbinder im LAN-
+Bereich zum Einsatz. Die Verdrahtung ist «straight through» (1:1). Das heisst, Kontakt 1 entspricht auch auf der Gegenseite Kontakt 1 usw. Ab Cat6 sollten die Stecker geschirmt sein.
+
+{{:modul:m117:learningunits:lu03:twistedpairstecker.jpg?400|}}
+
+
+
+----
+
+{{tag>m117}}
+
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Daniel Garavaldi, Andre Probst

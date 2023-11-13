@@ -1,0 +1,109 @@
+===Lösung 7===
+//Hinweis://
+Für handschriftliche Notizen dürfen Sie die "NICHT"-Notation --- also \(\neg\)A --- auch als \(\overline{A}\) schreiben.\\
+\\
+**Aufgabe 1**\\
+Welche logische Funktion wird unter dem Begriff\\
+a) Disjunktion  \(\Rightarrow\) <color #00a2e8>ODER</color>\\
+b) Konjunktion  \(\Rightarrow\) <color #00a2e8>UND</color>\\
+verstanden?\\
+\\
+**Aufgabe 2**\\
+Was versteht man unter einer **kanonischen** Normalform? Erklären Sie.\\
+<color #00a2e8>Die Terme enthalten immer alle Eingangsvariablen.\\
+Sind die Variablen A, B und C gegeben, so wird jeder Term (A .. B .. C) enthalten, wobei .. für das konkrete Operationszeichen steht.\\
+Sind es vier Variablen, so lautet jeder Term (A .. B .. C .. D) usw.</color>\\
+\\
+**Aufgabe 3**\\
+Die Normalform verbindet Terme mit logischen Ausdrücken (UND bzw. ODER). Dabei erscheint die eine Funktion in den jeweiligen Termen, während die andere Funktion diese Terme zu einer Gesamtaussage verknüpft.\\
+Notieren Sie bei den Platzhaltern (...) das jeweilige Operationszeichen.\\
+a) DNF: (.<color #00a2e8>\(\wedge\)</color>.) .<color #00a2e8>\(\vee\)</color>. (.<color #00a2e8>\(\wedge\)</color>.)\\
+b) KNF: (.<color #00a2e8>\(\vee\)</color>.) .<color #00a2e8>\(\wedge\)</color>. (.<color #00a2e8>\(\vee\)</color>.)\\
+\\
+**Aufgabe 4**\\
+Notieren Sie für die folgende Tabelle die DNF und die KNF.
+<WRAP left>
+|      IN       ||  ¦   |  OUT  |
+^   A   ^   B   ^   ¦   ^   C   ^
+|   0   |   0   |   ¦   |   0   |
+|   0   |   1   |   ¦   |   0   |
+|   1   |   0   |   ¦   |   1   |
+|   1   |   1   |   ¦   |   1   |
+</WRAP>
+<WRAP clear></WRAP>
+a) DNF: <color #00a2e8>C = (A \(\wedge\) \(\overline{B}\)) \(\vee\) (A \(\wedge\) B)</color> \\
+b) KNF: <color #00a2e8>C = (A \(\vee\) B) \(\wedge\) (A \(\vee\) \(\overline{B}\))</color> \\
+\\
+**Aufgabe 5**\\
+Schreiben Sie für die folgende Tabelle die DNF an:
+<WRAP left>
+|      IN               |||    ¦   |  OUT  |
+^   A   ^   B   ^   C   ^  ¦   ^   X   ^
+|   0   |   0   |   0   |  ¦   |   1   |
+|   0   |   0   |   1   |  ¦   |   1   |
+|   0   |   1   |   0   |  ¦   |   0   |
+|   0   |   1   |   1   |  ¦   |   0   |
+|   1   |   0   |   0   |  ¦   |   1   |
+|   1   |   0   |   1   |  ¦   |   0   |
+|   1   |   1   |   0   |  ¦   |   0   |
+|   1   |   1   |   1   |  ¦   |   0   |
+</WRAP>
+<color #00a2e8>X = (\(\overline{A}\) \(\wedge\) \(\overline{B}\) \(\wedge\) \(\overline{C}\)) \(\vee\) (\(\overline{A}\) \(\wedge\) \(\overline{B}\) \(\wedge\)C)
+\(\vee\) (A \(\wedge\) \(\overline{B}\) \(\wedge\) \(\overline{C}\))</color>
+<WRAP clear></WRAP>
+
+**Aufgabe 6**\\
+Schreiben Sie für die folgende Tabelle die KNF an:
+<WRAP left>
+|      IN               |||    ¦   |  OUT  |
+^   A   ^   B   ^   C   ^  ¦   ^   X   ^
+|   0   |   0   |   0   |  ¦   |   1   |
+|   0   |   0   |   1   |  ¦   |   1   |
+|   0   |   1   |   0   |  ¦   |   0   |
+|   0   |   1   |   1   |  ¦   |   1   |
+|   1   |   0   |   0   |  ¦   |   1   |
+|   1   |   0   |   1   |  ¦   |   0   |
+|   1   |   1   |   0   |  ¦   |   0   |
+|   1   |   1   |   1   |  ¦   |   1   |
+</WRAP>  
+<color #00a2e8>X = (A \(\vee\) \(\overline{B}\) \(\vee\) C) \(\wedge\) (\(\overline{A}\) \(\vee\) B \(\vee\) \(\overline{C}\))
+\(\wedge\) (\(\overline{A}\) \(\vee\) \(\overline{B}\) \(\vee\) C)</color>
+<WRAP clear></WRAP>
+
+**Aufgabe 7**\\
+Übertragen Sie folgende Ausdrucke in eine Wahrheitstabelle.\\
+a) X =  (\(\neg\)A \(\wedge\) \(\neg\)B \(\wedge\) \(\neg\)C) \(\vee\) (\(\neg\)A \(\wedge\) B \(\wedge\)C) \(\vee\) (A \(\wedge\) B \(\wedge\) C)\\
+b) Y =  (\(\neg\)A \(\vee\) \(\neg\)B \(\vee\) C) \(\wedge\) (\(\neg\)A \(\vee\) B \(\vee\)C) \(\wedge\) (A \(\vee\) \(\neg\)B \(\vee\) \(\neg\)C)\\
+<WRAP left>
+|      IN               |||    ¦   |  OUT  |||
+^   A   ^   B   ^   C   ^  ¦   ^   X   ^  ¦  ^   Y    ^
+|   0   |   0   |   0   |  ¦   |   <color #00a2e8>**1**</color>   |  ¦  |   <color #00a2e8>1</color>   | 
+|   0   |   0   |   1   |  ¦   |   <color #00a2e8>0</color>   |  ¦  |   <color #00a2e8>1</color>   |
+|   0   |   1   |   0   |  ¦   |   <color #00a2e8>0</color>   |  ¦  |   <color #00a2e8>1</color>   |
+|   0   |   1   |   1   |  ¦   |   <color #00a2e8>**1**</color>   |  ¦  |   <color #00a2e8>**0**</color>   |
+|   1   |   0   |   0   |  ¦   |   <color #00a2e8>0</color>   |  ¦  |   <color #00a2e8>**0**</color>   |
+|   1   |   0   |   1   |  ¦   |   <color #00a2e8>0</color>   |  ¦  |   <color #00a2e8>1</color>   |
+|   1   |   1   |   0   |  ¦   |   <color #00a2e8>0</color>   |  ¦  |   <color #00a2e8>**0**</color>   |
+|   1   |   1   |   1   |  ¦   |   <color #00a2e8>**1**</color>   |  ¦  |   <color #00a2e8>1</color>   |
+</WRAP>  
+<WRAP clear></WRAP>
+\\
+**Aufgabe 8**\\
+Gegeben ist die folgende Situation in LogicTraffic.\\
+{{:modul:mathe:ma1:thema:lu04logik:aufgaben:leitprogramm:k8:u7:ma1_logik_aufgabe7-8.png?300|}}\\
+   - Erstellen Sie -- ohne Nutzung von LogicTraffic! -- eine Wahrheitstabelle zu dieser Situation.\\  
+   - Leiten Sie aus dieser Wahrheitstabelle die KNF oder DNF ab. Sie entscheiden selber, welche Form Sie nutzen wollen.
+   - Geben Sie Ihre Lösung dann im Editor von LogicTraffic ein.
+   - Prüfen Sie Ihre Lösung, indem Sie den Test ausführen.
+
+<color #00a2e8>Da 3 Nullen stehen, wird das Ergebnis als KNF formuliert:\\
+sicher = (\(\neg\)C \(\vee\) \(\neg\)D \(\vee\) \(\neg\)E) \(\wedge\) (\(\neg\)C \(\vee\) \(\neg\)D \(\vee\) E) \(\wedge\) (C \(\vee\) \(\neg\)D \(\vee\) \(\neg\)E)</color>    \\
+Sollte der Test nicht erfolgreich sein, überprüfen Sie Ihre Tabelle. Welche Situation haben Sie vergessen oder falsch eingeschätzt? Korrigieren Sie dann in der Wahreitstabelle die entsprechende Zeile und testen Sie erneut. Dies tun Sie, bis der Test erfolgreich ist.\\
+Vergleichen Sie dann die Formel der Lösung mit Ihrer ursprünglichen Lösung.
+
+\\
+\\
+[[modul:mathe:ma1:thema:lu04logik:aufgaben:leitprogramm:k8:start|zum Leitprogramm]]
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) René Probst

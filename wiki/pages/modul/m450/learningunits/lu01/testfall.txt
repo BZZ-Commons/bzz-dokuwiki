@@ -1,0 +1,85 @@
+====== LU01c - Aufbau eines Testfalls ======
+
+===== Einführung =====
+Das Testen eines Programms ist ein wichtiger Teil der Qualitätssicherung bei der Softwareentwicklung.
+Beim Testen wird das Programm mit genau definierten Eingaben bzw. Daten ausgeführt.
+Das Ziel ist es, möglichst viele Fehler zu finden.
+
+Zu jedem Programm erstellen wir eine Reihe von Testfällen.
+Mit diesen Testfällen wollen wir möglichst alle unterschiedlichen Kombinationen von Eingaben und Ausgaben testen.
+Wenn wir die Testfälle durchführen, halten wir die Resultate in einem separaten Dokument, dem [[topics:swquality:theory:protocol|Testprotokoll]] fest.
+
+===== Testfall =====
+
+Ein Testfall legt fest:
+  * welche Situation wir testen wollen,
+  * mit welchen konkreten Daten getestet wird,
+  * welches Resultat wir erwarten.
+
+
+Zu einem Testfall gehören die Angaben:
+  * Nr: Eine eindeutige Nummer hilft, den Testfall zu identifizieren.
+  * Bezeichnung: Was wird getestet.
+  * Input: Mit welchen Eingaben bzw. Daten wird der Test ausgeführt.
+  * Erwartetes Resultat: Welche Resultate und Meldungen sollte das Programm ausgeben.
+
+
+==== Darstellung ====
+Um den Aufbau der Testfälle zu demonstrieren, zeige ich dies an einem konkreten Beispielprogramm.
+
+Das Programm berechnet eine Seite eines rechtwinkligen Dreiecks.
+  * Der Benutzer gibt die Länge von 2 der 3 Seiten ein.
+  * Für die dritte, unbekannte Seite gibt der Benutzer -1 ein.
+  * Das Programm zeigt dann die Länge der dritten Seite an.
+
+=== Tabellarische Darstellung ===
+
+^ Nr ^ Testfall ^ Input ^^^ Erwartetes Resultat ^
+^ ::: ^ ::: ^ Seite a ^ Seite b ^ Seite c ^ ::: ^
+| 1 | Berechnung der Seite c | 3 | 4 | -1 | Seite c: 5 |
+| 2 | Berechnung der Seite a | -1 | 4 | 5 | Seite a: 3 |
+| 3 | Seitenlänge a ist 0 |0 | 15 | 7 | Eine der Seiten hat die Länge 0: Berechnung nicht möglich |
+| 4 | Alle Seiten angegeben | 3 | 4 | 5 | Alle drei Seiten wurden angegeben: Berechnung nicht möglich |
+
+Jede Zeile enthält die Angaben zu einem Testfall.
+Diese Form ist sehr kompakt und für einfache Programme gut geeignet.
+
+=== Testfall einzeln darstellen ===
+
+^ Nr  || 1 |
+^ Testfall  || Berechnung der Seite c |
+^ Input  ^ Seite a | 3 |
+^ ::: ^ Seite b | 4 |
+^ ::: ^ Seite c | -1 |
+^ Erwartetes Resultat  || Seite c: 5 |
+| |||
+^ Nr  || 2 |
+^ Testfall  || Berechnung der Seite a |
+^ Input  ^ Seite a | -1 |
+^ ::: ^ Seite b | 4 |
+^ ::: ^ Seite c | 5 |
+^ Erwartetes Resultat  || Seite a: 3 |
+| |||
+^ Nr  || 3 |
+^ Testfall  || Seitenlänge a ist 0 |
+^ Input  ^ Seite a | 0 |
+^ ::: ^ Seite b | 15 |
+^ ::: ^ Seite c | 7 |
+^ Erwartetes Resultat  || Eine der Seiten hat die Länge 0: Berechnung nicht möglich |
+| |||
+^ Nr  || 4 |
+^ Testfall  || Alle Seiten angegeben |
+^ Input  ^ Seite a | 3 |
+^ ::: ^ Seite b | 4 |
+^ ::: ^ Seite c | 5 |
+^ Erwartetes Resultat  || Alle drei Seiten wurden angegeben: Berechnung nicht möglich |
+
+Diese Form ist weniger kompakt und eher für Programme mit komplexem Input/Output geeignet.
+
+
+=== Übung ===
+Im obigen Beispiel sind 4 Testfälle aufgeführt. Wenn Sie dieses kleine Programm vollständig durchtesten müssen, welche Testfälle gibt es zusätzlich noch?
+
+----
+{{tag>M450-LU01}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

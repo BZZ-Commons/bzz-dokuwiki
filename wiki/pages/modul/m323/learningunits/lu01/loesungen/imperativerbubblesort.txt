@@ -1,0 +1,38 @@
+====== LU01.L01 - Imperativer Bubblesort ======
+Der Bubble-Sort-Algorithmus ist ein einfacher Sortieralgorithmus, der durch wiederholtes Durchlaufen der Liste, Vergleichen und Tauschen von benachbarten Elementen arbeitet, falls sie in der falschen Reihenfolge sind.
+
+Im Folgenden finden Sie eine imperativ implementierte Musterlösung für den Bubble-Sort-Algorithmus in Python:
+
+<code python>
+def bubble_sort(arr):
+    n = len(arr)
+    # Durchlaufen Sie die gesamte Liste
+    for i in range(n):
+        # Letzte i Elemente sind bereits sortiert
+        for j in range(0, n - i - 1):
+            # Durchlaufen Sie die Liste von 0 bis n-i-1.
+            # Tauschen Sie, wenn das gefundene Element
+            # größer als das nächste Element ist
+            if arr[j] > arr[j + 1]:
+                arr[j], arr[j + 1] = arr[j + 1], arr[j]
+
+arr = [64, 34, 25, 12, 22, 11, 90]
+bubble_sort(arr)
+print('Sorted array is:', arr)  # Ausgabe: Sorted array is: [11, 12, 22, 25, 34, 64, 90]
+
+</code>
+
+==== Erklärung ====
+
+  - **Äußere Schleife:** Diese Schleife sorgt dafür, dass wir die Liste so oft durchlaufen, wie es Elemente gibt. In jedem Durchlauf wird das größte Element der unsortierten Liste an die richtige Position gebracht.
+  - **Innere Schleife:** Die innere Schleife läuft von Beginn der unsortierten Liste bis zum Ende der unsortierten Liste (das Ende der unsortierten Liste wird mit jedem Durchlauf der äußeren Schleife kleiner). Wenn zwei aufeinanderfolgende Elemente in der falschen Reihenfolge sind, werden sie getauscht.
+  - **Tausch:** Der Tausch wird durchgeführt, indem die Werte der Variablen arr[j] und arr[j + 1] vertauscht werden. In Python kann dies elegant in einem einzelnen Schritt gemacht werden.
+
+<WRAP center round tip 60%>
+**Fazit**
+
+Der Bubble-Sort-Algorithmus ist ein einfacher Algorithmus, der leicht zu verstehen ist. Die Performance ist allerdings nicht optimal, mit einer durchschnittlichen und schlechtesten Zeitkomplexität von O(n^2) die Anzahl der zu sortierenden Elemente ist. In der Praxis wird Bubble Sort oft durch effizientere Algorithmen wie Quick Sort oder Merge Sort ersetzt.
+</WRAP>
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/ch/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Kevin Maurizi 

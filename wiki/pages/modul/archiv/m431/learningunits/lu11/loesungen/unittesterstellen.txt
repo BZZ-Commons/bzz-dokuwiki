@@ -1,0 +1,20 @@
+====== LU11.L03 - Unit Tests erstellen in PyCharm ======
+
+<code python>
+
+import pytest
+import calculator
+
+def test_add():
+    calculator.add(10, 5)
+    assert calculator.add(10, 5) == 15
+
+
+@pytest.mark.parametrize("num1", [10,-10])
+@pytest.mark.parametrize("num2", [5,-5])
+def test_add(num1, num2):
+    sum = calculator.add(num1,num2)
+    assert sum == num1+num2
+
+
+</code>

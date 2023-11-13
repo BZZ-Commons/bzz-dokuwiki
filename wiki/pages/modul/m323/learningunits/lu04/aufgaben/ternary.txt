@@ -1,0 +1,56 @@
+====== LU04.A13 - Berechne den absoluten Wert einer Zahl ======
+
+<WRAP center round todo 60%>
+Erstellen Sie eine Funktion, die den absoluten Wert einer gegebenen Zahl mithilfe des ternären Bedingungsoperators berechnet.
+
+Eine absolute Zahl bezieht sich auf den Betrag einer Zahl, unabhängig von ihrer Richtung auf der Zahlengeraden. Sie gibt an, wie weit eine Zahl vom Nullpunkt entfernt ist, ohne Berücksichtigung der Richtung.
+
+**Beispiel:**
+
+Die absolute Zahl von 5 ist |5| = 5.
+Die absolute Zahl von -3 ist |-3| = 3.
+
+
+</WRAP>
+
+===== Detaillierte Aufgabenstellung =====
+
+Ihre Aufgabe ist es, eine Funktion mit dem Namen ''absolute_value'' zu entwickeln, die den absoluten Wert einer gegebenen Zahl berechnet.
+
+Die Funktion sollte das folgende Argument annehmen:
+  * ''num'' (float): Die Zahl, deren absoluter Wert berechnet werden soll.
+
+Die Funktion sollte einen Wert vom Typ ''float'' zurückgeben, der den absoluten Wert der gegebenen Zahl darstellt.
+
+==== Code-Vorlage ====
+<code python>
+def absolute_value(num):
+    """
+    Berechnet den absoluten Wert einer gegebenen Zahl unter Verwendung des Ternären Operators.
+
+    Args:
+    - num (float): Die Zahl, deren absoluter Wert berechnet werden soll.
+
+    Returns:
+    - float: Der absolute Wert der gegebenen Zahl.
+    """
+    # TODO: Implementieren Sie die Funktion
+    pass
+
+# Zum Testen
+if __name__ == '__main__':
+    print(absolute_value(-5.5))  # Erwartete Ausgabe: 5.5
+    print(absolute_value(0))     # Erwartete Ausgabe: 0
+    print(absolute_value(3.14))  # Erwartete Ausgabe: 3.14
+</code>
+
+==== Schrittweise Vorgehen ====
+
+  - Überprüfen Sie, ob die Zahl ''num'' negativ oder positiv ist.
+  - Verwenden Sie den ternären Bedingungsoperator, um den absoluten Wert zu berechnen.
+  - Geben Sie den berechneten Wert zurück.
+
+
+----
+<nodisp>https://github.com/templates-python/m323-lu04-a13-ternary</nodisp>
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/ch/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Kevin Maurizi

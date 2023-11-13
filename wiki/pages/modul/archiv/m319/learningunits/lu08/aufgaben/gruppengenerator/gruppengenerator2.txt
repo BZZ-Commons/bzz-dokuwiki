@@ -1,0 +1,46 @@
+Durch das Klonen haben Sie den unten stehenden Code in Ihre IDE kopiert. 
+Arbeiten Sie sich nun durch die TODOs durch.
+
+<WRAP center round box 80%>
+<code java>
+
+import java.util.Scanner;
+/**
+ * Gruppengenerator für den Unterricht
+ *
+ * @author Bitte Anpassen
+ * @since 2042.01.01
+ * @version 0.1
+ */
+public class Gruppengenerator {
+
+    static Scanner scanner;
+
+    public Gruppengenerator(){
+        scanner = new Scanner(System.in);
+    }
+
+    public static void main(String[] args) {
+        Gruppengenerator gruppengenerator = new Gruppengenerator();
+        gruppengenerator.run();
+        scanner.close();
+    }
+
+    private void run() {
+        // TODO: Erstellen Sie die Klasse "Schueler" jeder Schüler hat einen Nachnamen und einen Vornamen
+
+
+        // TODO: Erstellen Sie die Klasse "Schulklassse" mit einer Liste von Schülern und einem Attribut "Klassenbezeichnung"
+
+
+        // TODO: Fragen Sie den User, wie grosse Gruppen er sich wünscht.
+        //       Teilen Sie die "Schueler" in Gruppen dieser grösse auf
+        //       und drucken Sie deren Namen in Gruppen auf der Konsole aus.
+
+    }
+}
+
+</code>
+</WRAP>
+
+

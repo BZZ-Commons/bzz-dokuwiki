@@ -1,0 +1,46 @@
+~~NOTOC~~
+====== LU02.A08: Simple calculator ======
+
+===== Auftrag =====
+
+Schreiben Sie ein Programm, das den Benutzer nach zwei Zahlen fragt und deren Summe, Differenz, Produkt und Quotient ausgibt. Zwei Beispiele für die Ausführung des Programms sind unten angegeben.
+
+<code>
+Give the first number:
+*8*
+Give the second number:
+*2*
+8 + 2 = 10
+8 - 2 = 6
+8 * 2 = 16
+8 / 2 = 4.0
+</code>
+
+<code>
+Give the first number:
+*9*
+Give the second number:
+*2*
+9 + 2 = 11
+9 - 2 = 7
+9 * 2 = 18
+9 / 2 = 4.5
+</code>
+
+Verwenden Sie folgende Programmiervorlage:
+
+<code python>
+def main():
+    #write your code below this line
+
+if __name__ == '__main__':
+    main()
+</code>
+
+
+Anmerkung: Kümmern Sie sich im Moment nicht zu sehr um ''if %%__%%name%%__%% == '%%__%%main%%__'%%:''. Wir brauchen es technisch gesehen nicht für dieses Programm, aber es ist eine gute Übung, es einzubauen, und es wird in späteren Übungen klarer werden.
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/ch/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Kevin Maurizi 
+
+Diese Aufgabe ist eine übersetzte und angepasste Aufgabe von [[https://scott3142.uk/|Scott Morgan]], verwendet unter CC BY NC SA.

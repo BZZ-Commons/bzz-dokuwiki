@@ -1,0 +1,34 @@
+====== LU12.A01 - CSS Grundlagen ======
+
+<WRAP center round todo 60%>
+Erstellen Sie ein CSS-File für das gegebene HTML-File, welches alle Anforderungen erfüllt.
+</WRAP>
+
+[[https://templates-html.github.io/M293_LU12_01_basics/|Live preview]]
+
+===== Vorgehen =====
+  - Akzeptieren Sie das GitHub Classroom Assignment über den Link im Moodle-Kurs.
+  - Klonen Sie Ihre persönliches Repository.
+  - Bearbeiten Sie das CSS-File ''style.css'' und stylen Sie damit die Website in ''index.html''.
+    * Importieren Sie ''style.css'' in ''index.html''
+    * Halten Sie sich an die beschriebenen Styling-Anforderungen
+    * Recherchieren Sie die benötigten Selektoren, Eigenschaften und Werte auf SelfHTML oder W3CSchools.
+  - Validieren Sie Ihren HTML-Code auf Einhaltung der Standards.
+  - Geben Sie Ihre Lösung mittels Push ins Repository ab.
+
+===== Anforderungen =====
+  - Es soll einheitlich die Schriftfamilie **Futura, sans-serif** für alle Texte verwendet werden. 
+  - Der **erste Absatz** ist nicht gestyled.
+  - Der **zweite Absatz** wird mit dem Klassenselektor ''p.remark'' formatiert, wo der Absatz von links um 70 Pixel eingerückt und ebenfalls links ein blauer Rand mit 15 Pixeln Dicke hinzugefügt wird. Der Abstand zu diesem Rand beträgt 10 Pixel.
+  - Der **dritte Absatz** verwendet den Klassenselektor ''p.remark.warning'', soll ein blauer Rahmen (durchgezogene Linie, Abstand links und rechts 9px, oben und unten 1.5px, der Text ist zentriert).
+  - Der **vierte Absatz** mit der Klasse ''warning'' soll die Schrift-Farbe blau sein und die Fontgrösse auf 130% eingestellt sein. Aus Flexibilitätsgründen sollen die beiden Deklarationen einen eigen Selektor haben.
+  - Der Text im Header und Footer ist links ausgerichtet. Die Schriftgrösse im Header und Footer soll auf 80% verkleinert und den Farbcode ''00b3ee'' als Hintergrundfarbe aufweisen.
+  - Die Schrift für Übertitel 1 + 2 haben die Farbe ''darkslateblue''.
+  - Die Schriftgrösse in der Navigation soll auf 90% verkleinert, als Schriftfarbe weiss und den Farbcode ''778899'' als Hintergrund aufweisen. Der Text in der Navigation //zentriert// ausgerichtet.
+
+----
+<nodisp>[[https://github.com/templates-html/M293_LU12_01_basics|Repository]]</nodisp>
+{{tag>m293-LU12}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Daniel Garavaldi, Kevin Maurizi
+
+

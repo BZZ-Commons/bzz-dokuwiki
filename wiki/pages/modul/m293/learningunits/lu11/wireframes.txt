@@ -1,0 +1,47 @@
+====== LU11b - Layout erstellen ======
+
+<WRAP center round info 60%>
+Wir werden im [[modul:m322:start|Modul 322]] den Aufbau von Benutzerschnittstellen und das UX-Design genauer anschauen. In diesem Modul lernen wir bereits ein Werkzeug aus dem UX-Design kennen, um damit unsere Websiten schnell und einfach Skizzieren zu können - **das Wireframing**
+</WRAP>
+
+===== Wireframes =====
+Wireframes sind schnell. Sie kosten wenig und klären wichtige Fragen zum richtigen Zeitpunkt. Und alle profitieren: Kunde, Designer und die Besucher der Website.
+
+Wireframes sind Strukturskizzen von Websites. Der Name kommt von den Drahtgitter-Modellen (Wire = Draht) aus der 3D-Grafik. Die Website von Spiegel Online sieht in der Wireframe-Darstellung etwa so aus:
+
+{{:modul:m293:learningunits:lu11:wireframe.jpeg?600|}}
+
+**Was man auf der Skizze sieht**
+Alle Elemente, die die Website enthält: Die Navigation und die Inhalts-Bereiche, deren Position, Größe und Zusammenstellung
+
+**Was man nicht sieht**
+Farben, Schriften, konkrete Inhalte (Texte, Bilder)
+
+==== Die Vorteile von Wireframes ====
+Im Gegensatz zu grafischen Entwürfen ist ein Wireframe-Modell schnell aufs Papier gebracht. Wünsche des Kunden lassen sich ohne viel Aufwand integrieren, Varianten und neue Ideen sind fix ausprobiert. Das ist vielleicht der größte Vorteil von Wireframes: Der Kunde kommt sehr früh mit ins Boot.
+
+Wireframe-Modelle helfen, die Gewichtung der Inhalte und die Nutzerführung herausfiltern.
+
+  * Wie bewegt sich der Besucher vom einen Inhalt zum nächsten?
+  * Welche interaktiven Funktionen müssen an welcher Stelle in welcher Form verfügbar sein?
+  * Auf welche Elemente soll die Aufmerksamkeit des Benutzers besonders gelenkt werden?
+  * Wie wird die Information über verschiedene Ebenen hinweg aufgeteilt? \\ (Übersichtsseite -> 1. Detailansicht -> 2. Detailansicht)
+
+Kann man das nicht auch an einem grafischen Entwurf erarbeiten?
+
+Ja, aber die Diskussion ist schwerer zu lenken. Statt über Funktionalitäten und Struktur dreht sich die Diskussion um Farben, Schriften, Weißräume und Stimmungen. Die optischen Details absorbieren die gesamte Aufmerksamkeit.
+
+Schnell schleichen sich strukturelle Defizite ein, die erst nach dem Launch sichtbar werden. So können zum Beispiel schwache Nutzerzahlen darauf hindeuten, dass der zentrale Aspekte des Angebots nicht klar genug herausgearbeitet wurde oder die Besucher zentrale Inhalte nicht erreichen, weil etwas mit der Nutzerführung nicht stimmt. Mehr zu Nutzerführung und Personas im [[modul:m322:start|Modul 322]]
+
+
+==== Graue Kästen contra bunte Grafik ====
+In der Diskussion über die Wireframe-Layouts fallen wichtige Entscheidungen. Alle folgenden Arbeitsschritte, z.B. die grafische Ausarbeitung, werden sich auf die Strukturmodelle beziehen und stützen. So weit die Theorie.
+In der Praxis stossen wir mit Wireframes manchmal an Grenzen, weil einem Kunden trotz geduldiger Erklärung die Tragweite und Bedeutung der grauen Kästchen nicht klar zu machen ist.
+
+Grafische Entwürfe sind hübsch und anschaulich, Wireframes sind trocken und abstrakt. Hier ist es hilfreich, ein bisschen zu experimentieren. Manche Kunden können eher mit handgezeichneten Skizzen etwas anfangen als mit grauen Balken und Kästen aus dem Drucker. Andere möchten zunächst mal ein Gefühl für den Stil der Seite bekommen, bevor sie sich auf strukturelle Fragen einstellen können.
+Das kann man über [[modul:m293:learningunits:lu11:design|Styletiles]] erreichen oder indem man Seiten und Designs betrachtet, die dem Projekt stilistisch oder inhaltlich ähnlich sind.
+
+----
+{{tag>m293-LU11 m293-A1G m293-A1F}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Kevin Maurizi, Marcel Suter
+
