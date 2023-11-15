@@ -1,0 +1,19 @@
+====== LU01g - Integrität ======
+
+In Bezug auf Daten bezieht sich der Begriff "Integrität" auf die Genauigkeit, Vollständigkeit und Zuverlässigkeit von Daten in einem Informationssystem. Die Datenintegrität stellt sicher, dass die gespeicherten Daten korrekt sind und den erwarteten Regeln und Standards entsprechen. Hier sind einige Schlüsselaspekte der Datenintegrität:
+
+  * Einhaltung von Regeln und Standards: Daten sollten den festgelegten Regeln und Standards entsprechen, die für die jeweilige Datenbank oder das Informationssystem gelten. Dies kann beinhalten, dass bestimmte Datentypen, Formate oder Wertebereiche eingehalten werden.
+
+  * Vollständigkeit: Die Vollständigkeit der Daten bezieht sich darauf, dass alle erforderlichen Informationen vorhanden sind und keine wesentlichen Daten fehlen. Daten sollten alle notwendigen Felder und Attribute enthalten, um ihre Bedeutung und ihren Kontext vollständig zu erfassen.
+
+  * Korrektheit: Die Korrektheit von Daten bezieht sich darauf, dass die Informationen genau sind und den realen oder beabsichtigten Zustand genau widerspiegeln. Fehler oder Ungenauigkeiten in den Daten können die Entscheidungsfindung und die Funktion des Informationssystems beeinträchtigen.
+
+  * Referenzielle Integrität: In relationalen Datenbanken bezieht sich referenzielle Integrität darauf, dass Beziehungen zwischen verschiedenen Tabellen korrekt sind. Beispielsweise sollte ein Fremdschlüssel in einer Tabelle auf einen existierenden Primärschlüssel in einer anderen Tabelle verweisen.
+
+  * Schutz vor unautorisierten Änderungen: Die Datenintegrität umfasst auch den Schutz vor unautorisierten oder unbeabsichtigten Änderungen an den Daten. Dies wird oft durch Zugriffskontrollen und Authentifizierungsmechanismen erreicht.
+
+Die Gewährleistung der Datenintegrität ist entscheidend, um sicherzustellen, dass Informationssysteme vertrauenswürdige und zuverlässige Informationen bereitstellen. Datenbankmanagementsysteme implementieren verschiedene Mechanismen, wie zum Beispiel Constraints und Transaktionen, um die Integrität der Daten zu gewährleisten.
+
+----
+{{tag>M162-LU01}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Andre Probst

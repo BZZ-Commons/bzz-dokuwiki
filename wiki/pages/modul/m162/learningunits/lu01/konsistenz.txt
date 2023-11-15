@@ -1,0 +1,19 @@
+====== LU01f - Konsistenz ======
+
+In Bezug auf Daten bezieht sich der Begriff "Konsistenz" auf die Genauigkeit, Zuverlässigkeit und Widerspruchsfreiheit von Daten in einem System. Eine konsistente Datenhaltung gewährleistet, dass die Informationen in einer Datenbank oder einem System korrekt und widerspruchsfrei sind, unabhängig von den Operationen, die auf die Daten angewendet werden.
+
+Hier sind einige Aspekte der Konsistenz in Bezug auf Daten:
+
+  * Transaktionskonsistenz: In Datenbanken ist Transaktionskonsistenz von entscheidender Bedeutung. Wenn eine Transaktion auf eine Datenbank angewendet wird (zum Beispiel das Einfügen, Aktualisieren oder Löschen von Datensätzen), sollte die Datenbank von einem konsistenten Zustand in einen anderen übergehen, und dies sollte für alle Transaktionen gelten. Falls eine Transaktion fehlschlägt, sollte das System in den vorherigen konsistenten Zustand zurückkehren.
+
+  * Widerspruchsfreiheit: Daten sollten frei von Widersprüchen oder Inkonsistenzen sein. Wenn zum Beispiel eine Person in einer Datenbank als minderjährig eingestuft wird, sollte dies in allen relevanten Teilen der Datenbank konsistent sein. Widersprüchliche Informationen könnten die Zuverlässigkeit der Daten beeinträchtigen.
+
+  * Konsistenz in verteilten Systemen: In verteilten Datenbanken oder verteilten Systemen ist die Konsistenz eine Herausforderung. Es wird angestrebt, sicherzustellen, dass Daten in verschiedenen Teilen des Systems in einem koordinierten und konsistenten Zustand bleiben, auch wenn Änderungen an den Daten vorgenommen werden.
+
+  * Referenzielle Konsistenz: Wenn Beziehungen zwischen verschiedenen Datensätzen existieren (zum Beispiel Fremdschlüsselbeziehungen in relationalen Datenbanken), sollte die referenzielle Konsistenz gewährleisten, dass diese Beziehungen immer korrekt sind.
+
+Die Konsistenz von Daten ist eine wichtige Eigenschaft, um die Zuverlässigkeit von Informationssystemen zu gewährleisten und sicherzustellen, dass Entscheidungen auf verlässlichen Informationen basieren können. Datenbankmanagementsysteme implementieren Mechanismen, um Konsistenz sicherzustellen, insbesondere im Kontext von Transaktionen und parallelen Verarbeitungen.
+
+----
+{{tag>M162-LU01}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Andre Probst
