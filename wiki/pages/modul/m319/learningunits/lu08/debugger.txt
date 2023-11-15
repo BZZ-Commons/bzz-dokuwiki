@@ -50,7 +50,7 @@ Um zu untersuchen, wie das Programm zur Laufzeit arbeitet, müssen wir seine Aus
 Dies geschieht durch das Setzen von Breakpoints. 
 Breakpoints geben die Codezeilen an, an denen das Programm angehalten wird, damit Sie seinen Zustand untersuchen können.
 <WRAP center round box 40%>
-{{:modul:m319python:learningunits:lu10:lu10_breakpoint.png?400|}}
+{{:modul:m319:learningunits:lu08:lu08_breakpoint.png?400|}}
 
 Klicken Sie auf die Zeilennummerierung um einen Breakpoint zu setzen.
 </WRAP>
@@ -59,7 +59,7 @@ Klicken Sie auf die Zeilennummerierung um einen Breakpoint zu setzen.
 ===== Starten Sie das Programm im Debug-Modus﻿ =====
 Starten wir nun das Programm im Debug-Modus.
 <WRAP center round box 40%>
-{{:modul:m319python:learningunits:lu10:lu10_startdebug.png?400|}}
+{{:modul:m319:learningunits:lu08:lu08_startdebug.png?400|}}
 
 Rechtsklicken Sie dazu auf den Play-Button und wählen Sie **Debug <Applikationsname>**
 </WRAP>
@@ -68,11 +68,11 @@ Rechtsklicken Sie dazu auf den Play-Button und wählen Sie **Debug <Applikations
 ===== Analysieren des Programmzustands﻿ =====
 Nachdem die Debugger-Sitzung gestartet wurde, läuft das Programm normal, bis ein Haltepunkt erreicht wird. In diesem Fall wird die Zeile, in der das Programm angehalten wurde, hervorgehoben und das Fenster des Debuggers erscheint.
 
-{{:modul:m319python:learningunits:lu10:lu10_inspect.png?600|}}
+{{:modul:m319:learningunits:lu08:lu08_inspect.png?600|}}
 
 Die markierte Zeile ist noch nicht ausgeführt worden. Das Programm wartet jetzt auf weitere Anweisungen von Ihnen. Im Schwebezustand können Sie Variablen untersuchen, die den Zustand des Programms enthalten.
 
-Da die findAverage-Methode noch nicht aufgerufen wurde, sind alle ihre lokalen Variablen wie result noch nicht im Gültigkeitsbereich, aber wir können den Inhalt der ArrayList untersuchen. 
+Da die ''findAverage''-Methode noch nicht aufgerufen wurde, sind alle ihre lokalen Variablen wie ''result'' noch nicht im Gültigkeitsbereich, aber wir können den Inhalt der ArrayList untersuchen. 
 Sie können auch Informationen über alle Variablen abrufen, die sich derzeit im Gültigkeitsbereich befinden, und zwar im Bereich Variablen.
 
 {{:modul:m319:learningunits:lu09:variablenexplorer.png?600|}}
@@ -84,7 +84,7 @@ Jetzt, wo wir mit dem Debug-Tool-Fenster vertraut sind, ist es an der Zeit, in d
 === Schritt 1 ===
 Um in eine Methode einzusteigen, klicken Sie auf die Schaltfläche ''Step Into'' oder drücken Sie **F7**.
 
-{{:modul:m319python:learningunits:lu10:lu10_step1.png?600|}}
+{{.:lu08_step1.png?600|}}
 
 Schaltfläche "Step into" im oberen Teil des Debug-Tool-Fensters
 Eine weitere Zeile wird im Editor hervorgehoben, da wir den Ausführungspunkt um einen Schritt vorverlegt haben.
@@ -95,7 +95,7 @@ Setzen Sie den Schritt mit ''Step Over'' **F8** fort. Beachten Sie den Unterschi
 
 Gehen wir weiter und sehen wir uns an, wie die lokale Variable ''result'' deklariert ist und wie sie bei jeder Iteration der Schleife geändert wird.
 
-{{:modul:m319python:learningunits:lu10:lu10_step2.png?600|}}
+{{.:lu08_step2.png?600|}}
 
 Das Inline-Debugging hilft uns, Informationen über die Variablenwerte zu erhalten
 Im Moment enthält die Variable ''s'' den Wert ''3''. Sie wird in einen Integer-Wert umgewandelt und zum Ergebnis addiert, das derzeit den Wert ''3.0'' hat. Bisher keine Fehler. Die Summe wird korrekt berechnet.
@@ -104,7 +104,7 @@ Im Moment enthält die Variable ''s'' den Wert ''3''. Sie wird in einen Integer-
 === Schritt 3 ===
 Zwei weitere Schritte führen uns zur Return-Anweisung und wir sehen, wo die Fehlerquelle liegt. Wir haben vergessen, die Summe durch die Anzahl der Werte zu dividieren. Dies war die Ursache für die fehlerhafte Rückgabe der Methode.
 
-{{:modul:m319python:learningunits:lu10:lu10_step3.png?600|}}
+{{.:lu08_step3.png?600|}}
 
 Der Wert des Ergebnisses wird so zurückgegeben, wie er ist, ohne ihn durch die Anzahl der Argumente zu dividieren. 
 

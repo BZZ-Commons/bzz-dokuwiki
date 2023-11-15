@@ -1,0 +1,76 @@
+====== LU09c - Entscheidungstabelle ======
+<WRAP center round info 60%>
+Entscheidungstabellen sind eine der vieler Möglichkeiten, komplexe Regelwerke in übersichtlicher Weise darzustellen. 
+Entscheidungstabellen (decision tables) modellieren komplexe Entscheidungsabläufe in tabellarischer Form.
+</WRAP>
+
+
+
+===== Einfache Entscheidungstabellen =====
+Die einfachste Form der Entscheidungstabellen basiert auf eine Ja/Nein-Antwort.
+===== Aufbau =====
+Die Entscheidungstabelle besteht aus mehreren Spalten (Regeln oder Lösungsvarianten) und Zeilen (Bedingungen oder Kriterien).
+Für die Auswahl einer Lösungsvariante gehst du wie folgt vor:
+
+=== 1. In der ersten Zeile lässt du eine Spalte frei und notierst danach alle Lösungsvarianten. ===
+^ ^ V1 ^ V2 ^ V3 ^ V4 ^
+
+=== 2. Ab der zweiten Zeile notierst du die Kriterien. ===
+^ ^ V1 ^ V2 ^ V3 ^ V4 ^
+^ Kriterium 1 | | | |
+^ Kriterium 2 | | | |
+^ Kriterium 3 | | | |
+^ Kriterium 4 | | | |
+
+=== 3. Nun trägst du zu jeder Variante und Kriterium ein, ob dieses erfüllt ist. ===
+^ ^ V1 ^ V2 ^ V3 ^ V4 ^
+^ Kriterium 1 | J | N | J |
+^ Kriterium 2 | J | J | N |
+^ Kriterium 3 | N | J | N |
+^ Kriterium 4 | J | J | J |
+
+=== 4. Zuletzt zählst du die Anzahl ''J'' pro Variante. ===
+^ ^ V1 ^ V2 ^ V3 ^ V4 ^
+^ Kriterium 1 | J | N | J |
+^ Kriterium 2 | J | J | N |
+^ Kriterium 3 | N | J | N |
+^ Kriterium 4 | J | J | J |
+^ Summe ^ 3 ^ 3 ^ 2 ^ 
+
+==== Beispiel ====
+
+^ ^ R1 ^ R2 ^ R3 ^ R4 ^ R5 ^ R6 ^ R7 ^ R8 ^
+^  Bedingungen  ^^^^^^^^
+^ Schöne Augen | J | J | J | J | N | N | N | N |
+^ Sportlich | J | J | N | N | J | J | N | N |
+^ Mag Bier | J | N | J | N | J | N | J | N |
+^ Summe ^ 3 ^ 2 ^ 2 ^ 1 ^ 2 ^ 1 ^ 1 ^ 0 ^ 
+
+  * Die Kandidaten sind in den Spalten R1-Rn aufgelistet. 
+  * Die Entscheidungskriterien werden zeilenweise eingegeben. 
+  * Die Anzahl ''J'' werden gezählt und die Summe eingetragen
+
+
+Der Kandidat mit den meisten Ja bzw. Nein (je nach Fragestellung und Bedeutung) wird ausgewählt. 
+Der Nachteil dieser binären Antwortvarianten liegt darin, dass alle Kriterien gleich gewichtet werden, obwohl manche Kriterien vielleicht wichtiger sind als andere.
+
+===== Entscheidungstabellen mit Punkten =====
+
+Die etwas genauere Form der Entscheidungstabellen unterscheidet mehr als Ja und Nein.
+Anstelle dieser binären Antwort kann man Noten oder Punkte verteilen. 
+Der Gewinner ist die Variante mit den meisten Punkten.
+
+Beispielfrage: Ich habe drei Jobangebote. Welches soll ich annehmen?
+
+^ Kriterien ^ Samson GmbH ^ Tuwas AG ^ Nixgut KG ^
+^ Spass an der Arbeit | 4 | 4 | 4 |
+^ Gehalt | 6 | 6 | 2 |
+^ Urlaub | 6 | 3 | 2 |
+^ Gestaltungsspielraum | 1 | 2 | 4 |
+^ Unternehmenskultur | 3 | 4 | 1 |
+^ Summe | 20 | 19 | 13 |
+
+
+----
+{{tag>M431-LU09}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter, Kevin Maurizi
