@@ -2,9 +2,7 @@
 
 ===== Programmaufgabe =====
 
-Das Programm berechnet die Durchschnittsnote aus mehreren Noten.
-Sobald die Note 0.0 eingegeben wird, berechnet das Programm den Durchschnitt.
-Falls mehr als 1 Note eingegeben wird, so gilt die tiefste Note als Streichnote.
+Das Programm berechnet die Durchschnittsnote aus mehreren Noten. \\ Sobald die Note 0.0 eingegeben wird, berechnet das Programm den Durchschnitt. \\ Falls mehr als 1 Note eingegeben wird, so gilt die tiefste Note als Streichnote.
 
 Leider hat der Programmierer keine Ahnung von Python und das Programm ist voll von Syntaxfehlern.
 Nicht alle diese Fehler werden von Ihrer IDE erkannt.
