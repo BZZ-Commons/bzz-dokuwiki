@@ -1,131 +1,36 @@
 ====== LU09.L03 - Erweiterte Aufgaben ======
 ===== Mehrere Return-Werte =====
-<WRAP center round box 60%>
-<code python>
-import math
-
-
-def div(dividend, divisor):
-    """
-    Calculates the result and the rest of an integer division
-    :param dividend: Dividend of the division
-    :param divisor: Divisor of the division
-    :return: Result of the divison as whole number and the rest of the division
-    """
-
-    result = math.floor(dividend / divisor)
-    rest = dividend % divisor
-
-    return result, rest
-
-
-def main():
-    result, rest = div(34, 6)
-    print(f'Result: {result} and Rest: {rest}')
-
-
-if __name__ == '__main__':
-    main()
-
-</code>
-</WRAP>
-
+{{gh>https://github.com/templates-python/m319-lu09-a03-advanced-functions/blob/solution/main.py}}
 ===== 2. Längenumrechner =====
 ==== 1.Code anpassen ====
-
-<WRAP center round box 60%>
-<code python>
-def convert(length, from_unit = 1, to_unit = 2):
-    """
-    Converts lengths. The following lengths can be converted: meters, miles, nautical miles, yards, inches
-    :length: length to convert
-    :from_unit: 1=Meter, 2=Meilen, 3=Seemeilen, 4=Yard, 5=Inches
-    :to_unit: 1=Meter, 2=Meilen, 3=Seemeilen, 4=Yard, 5=Inches
-    :return: converted length
-    """
-    if (from_unit == 1):
-        result = length
-    elif (from_unit == 2):
-        result = length * 1609.34
-    elif (from_unit == 3):
-        result = length * 1852.0
-    elif (from_unit == 4):
-        result = length * 0.9144
-    elif (from_unit == 5):
-        result = length * 0.0254
-
-    if (to_unit == 1):
-        return result
-    if (to_unit == 2):
-        result = result / 1609.34
-        return result
-    if (to_unit == 3):
-        result = result / 1852.0
-        return result
-    if (to_unit == 4):
-        result = result / 0.9144
-        return result
-    if (to_unit == 5):
-        result = result / 0.0254
-        return result
-
-
-def main():
-    print("1=Meter, 2=Meilen, 3=Seemeilen, 4=Yard, 5=Inches")
-    print(convert(1000))
-
-
-if __name__ == '__main__':
-    main()
-</code>
-</WRAP>
-
+Anpassen der Defaultwerte:
+{{gh>https://github.com/templates-python/m319-lu09-a03-advanced-functions/blob/solution/length_calculator.py 0-1}}
 ==== 2. Erweiterung ====
-<WRAP center round box 60%>
+
+=== Code Erklärung ===
+
+In dem Codeabschnitt:
+
 <code python>
-def convert(length, from_unit = 1, to_unit = 2):
-    """
-    Converts lengths. The following lengths can be converted: meters, miles, nautical miles, yards, inches
-    :length: length to convert
-    :from_unit: 1=Meter, 2=Meilen, 3=Seemeilen, 4=Yard, 5=Inches
-    :to_unit: 1=Meter, 2=Meilen, 3=Seemeilen, 4=Yard, 5=Inches
-    :return: converted length
-    """
-    if (from_unit == 1 or str(from_unit).casefold() == 'Meter'.casefold() ):
-        result = length
-    elif (from_unit == 2 or str(from_unit).casefold() == 'Meilen'.casefold() ):
-        result = length * 1609.34
-    elif (from_unit == 3 or str(from_unit).casefold() == 'Seemeilen'.casefold()):
-        result = length * 1852.0
-    elif (from_unit == 4 or str(from_unit).casefold() == 'Yard'.casefold()):
-        result = length * 0.9144
-    elif (from_unit == 5 or str(from_unit).casefold() == 'Inches'.casefold()):
-        result = length * 0.0254
+units = {"Meter": 1, "Meilen": 2, "Seemeilen": 3, "Yard": 4, "Inches": 5}
 
-    if (to_unit == 1 or str(to_unit).casefold() == 'Meter'.casefold()):
-        return result
-    if (to_unit == 2 or str(to_unit).casefold() == 'Meilen'.casefold()):
-        result = result / 1609.34
-        return result
-    if (to_unit == 3 or str(to_unit).casefold() == 'Seemeilen'.casefold()):
-        result = result / 1852.0
-        return result
-    if (to_unit == 4 or str(to_unit).casefold() == 'Yard'.casefold()):
-        result = result / 0.9144
-        return result
-    if (to_unit == 5 or str(to_unit).casefold() == 'Inches'.casefold()):
-        result = result / 0.0254
-        return result
-
-
-def main():
-    print('1=Meter, 2=Meilen, 3=Seemeilen, 4=Yard, 5=Inches')
-    print(convert(1000))
-    print(convert(1000,from_unit='Meilen', to_unit=5))
-
-
-if __name__ == '__main__':
-    main()
-
+from_unit = units.get(from_unit, from_unit)
+to_unit = units.get(to_unit, to_unit)
 </code>
-</WRAP>
+
+wird die ''get''-Methode des Python-Wörterbuchs ''units'' verwendet. Diese Methode wird hier auf eine spezielle Weise eingesetzt, um sowohl mit numerischen als auch mit Texteingaben für die Einheiten umzugehen.
+
+**Das Wörterbuch ''units''**: 
+    Dieses Wörterbuch bildet die Namen der Einheiten (als Text) auf entsprechende numerische Codes ab. Zum Beispiel: ''"Meter": 1, "Meilen": 2, ...''.
+
+**Die ''get''-Methode**: 
+    Die Methode ''get'' wird auf ein Wörterbuch angewendet und hat zwei Parameter: den Schlüssel, dessen Wert abgerufen werden soll, und einen Standardwert, der zurückgegeben wird, falls der Schlüssel im Wörterbuch nicht existiert.
+
+**Anwendung in ''from_unit = units.get(from_unit, from_unit)''**:
+    * ''from_unit'' vor dem Gleichheitszeichen ist die Variable, die den aktualisierten Wert nach der Ausführung der Zeile speichert.
+    * ''from_unit'' im ''get''-Aufruf (der erste Parameter) ist der Schlüssel, den wir im Wörterbuch ''units'' suchen. 
+    * Der zweite ''from_unit'' im ''get''-Aufruf ist der Standardwert, der zurückgegeben wird, falls der Schlüssel nicht im Wörterbuch gefunden wird.
+    * Falls ''from_unit'' ursprünglich eine Zahl ist (z.B. ''1'' für Meter), wird dieser Wert nicht im Wörterbuch gefunden. Daher wird der Standardwert zurückgegeben, der in diesem Fall derselbe Wert ist (''1''). 
+    * Falls ''from_unit'' ein Text ist (z.B. ''"Meter"''), wird der entsprechende numerische Code aus dem Wörterbuch geholt (in diesem Beispiel ''1'').
+
+{{gh>https://github.com/templates-python/m319-lu09-a03-advanced-functions/blob/solution/length_calculator.py}}

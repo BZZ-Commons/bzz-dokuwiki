@@ -52,7 +52,12 @@ if __name__ == '__main__':
     main()
 </code>
 
-----
+<WRAP center round important 60%>
+  * Division durch 0 soll den Text: ''Division by zero'' zurückgeben.
+  * Sollte versucht werden die Nullte Wurzel zu ziehen, so sollte ''Root by zero'' zurückgeben.
+</WRAP>
+
+
 ----
 <details>
 <summary>//=> GitHub Repo für externe Besucher//</summary>
@@ -63,4 +68,3 @@ GitHub Repository https://github.com/templates-python/m319-lu09-a01-first-functi
 </details>
 {{tag>M319-LU09}}
 [[https://creativecommons.org/licenses/by-nc-sa/4.0/ch/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Marcel Suter, Kevin Maurizi 
-[[https://creativecommons.org/licenses/by-nc-sa/4.0/ch/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Kevin Maurizi 

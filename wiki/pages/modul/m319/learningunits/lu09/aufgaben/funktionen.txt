@@ -1,7 +1,7 @@
 ====== LU09.A02 - Inhalte in Funktionen auslagern ======
 
 ===== Akzeptieren Sie das Github-Classroom-Assignment =====
-Akzeptieren Sie das Github-Assignment ''LU09.A02 - Inhalte in Funktionen auslagern'' unter dem Link in Moodle und klonen Sie das Projekt in Ihre IDE.
+Akzeptieren Sie das Github-Assignment und klonen Sie das Projekt in Ihre IDE.
 
 ===== Aufgaben =====
 ==== 0. Programm ausführen ====
@@ -56,7 +56,7 @@ main_test.py::test_even_odd PASSED                                       [100%]
 <WRAP center round todo 60%>
 Setzen Sie dies im Code nun um. Erstellen Sie einen **Commit**, wenn Sie die Lösung implementiert haben.
 
-Eine mögliche Lösung finden Sie hier: [[https://it.bzz.ch/wikiV2/modul/m319python/learningunits/lu09/loesungen/funktionen#menueauswahl_in_methode_auslagern|Menüauswahl in Funktion auslagern]]
+Eine mögliche Lösung finden Sie hier: [[modul:m319:learningunits:lu09:loesungen:funktionen#menueauswahl_in_methode_auslagern|Menüauswahl in Funktion auslagern]]
 </WRAP>
 
 ==== 2. Unterprogramme auslagern ====
@@ -84,13 +84,17 @@ main_test.py::test_even_odd PASSED                                       [100%]
 <WRAP center round todo 60%>
 Setzen Sie dies im Code nun um. Erstellen Sie einen **Commit**, wenn Sie die Lösung implementiert haben.
 
-Eine mögliche Lösung finden Sie hier: [[https://it.bzz.ch/wikiV2/modul/m319python/learningunits/lu09/loesungen/funktionen#unterprogramme_auslagern|Unterprogramme auslagern]]
+Eine mögliche Lösung finden Sie hier: [[modul:m319:learningunits:lu09:loesungen:funktionen#unterprogramme_auslagern|Unterprogramme auslagern]]
 </WRAP>
 
 
-
-
 ----
-{{tag>M319-F3G M319-F3F M319-F3E M319-F1F M319-F1E M319-F2G M319-F2F M319-F2E}}
+<details>
+<summary>//=> GitHub Repo für externe Besucher//</summary>
+GitHub Repository https://github.com/templates-python/m319-lu09-a02-define-functions
 
-[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Kevin Maurizi
+//Lernende am BZZ müssen den Link zum GitHub Classroom Assignment verwenden//
+
+</details>
+{{tag>M319-LU09}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/ch/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Marcel Suter, Kevin Maurizi 
