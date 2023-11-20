@@ -1,0 +1,128 @@
+====== LU10b - Ziele gewichten ======
+
+<WRAP center round info 60%>
+
+Durch die Gewichtung der Ziele berücksichtigen wir die Bedeutung der verschiedenen Kriterien für den Erfolg des Projekts.
+
+</WRAP>
+
+Nicht jedes Ziel und jede Anforderung ist gleich wichtig für den Erfolg eines Projekts.
+
+===== Muss-Ziele und -Anforderungen =====
+
+In jedem Projekt gibt es Ziele und Anforderungen, die zwingend erfüllt sein müssen. Erfüllt eine Lösungsvariante eines oder mehrere Muss-Ziele bzw. -Anforderungen nicht, so wird sie nicht weiter verfolgt. Daher sollten wir nicht zuviele Muss-Ziele bzw. -Anforderungen formulieren. Andernfalls fehlt uns der nötige Spielraum um überhaupt verschiedene Lösungen zu finden.
+
+===== Kann-Ziele und -Anforderungen =====
+
+Die Kann-Ziele und -Anforderungen müssen so gut wie möglich erfüllt werden. Die verschiedenen Ziele sind in der Regel nicht gleich wichtig für unser Projekt. Bei der Auswahl Ihrer Feriendestination ist möglicherweise das Unterhaltungsangebot (Sport, Clubs, ...) wichtiger als die Reisedauer. Die Wichtigkeit der einzelnen Ziele halten wir für die Nutzwertanalyse in einer Gewichtung fest.
+
+Am einfachsten geht das, wenn man einen bestimmte Basis wählt (z.B. 100% oder 10 Punkte) und diese auf die einzelnen Ziele aufteilt.  Dabei beachten Sie, dass das Verhältnis zwischen den verschiedenen Zielen auch deren Wichtigkeit abbildet.  Ein Ziel das doppelt so wichtig ist, sollte auch doppelte so viele Punkte erhalten.
+
+=== Beispiel: Laptop ===
+
+Wir möchten einen neuen Laptop kaufen und haben dazu einige Kriterien (Kann-Ziele/Anforderungen) formuliert.
+
+^ Kriterien |^
+^ Ziel ^ Gewicht ^
+^ Geschwindigkeit | 30% |
+^ Speicherplatz | 10% |
+^ Auflösung | 15% |
+^ Transport | 20% |
+^ Zuverlässigkeit | 25% |
+^ Total ^ 100% ^
+
+==== Präferenzmatrix ====
+
+Oftmals fällt es uns schwer, viele unterschiedliche Kriterien gegeneinander abzuwägen. Bei einer Präferenzmatrix wird jedes Kriterium einzeln mit allen anderen Kriterien verglichen. Dieser paarweise Vergleich beantwortet die Frage: "Welches dieser zwei Kriterien ist wichtiger?"
+
+Zuerst erstellen wir eine Tabelle und tragen alle Kriterien sowohl in den Spalten als auch den Zeilen ein. \\
+Die Zellen in der unteren Hälfte der Tabelle werden wir nicht brauchen, weshalb sie schwarz hinterlegt sind.
+
+{| class="wikitable" style="text-align: center;"
+|   
+| **A** 
+| **B** 
+| **C** 
+| **D** 
+| **E**  
+|- 
+| style="padding: 10px; text-align: left" | **A**: Geschwindigkeit
+|style="width: 50px; background-color: grey;" | 
+| style="width: 50px; background-color: green;" |
+| style="width: 50px;" |
+| style="width: 50px;" |
+| style="width: 50px; background-color: blue;" |
+|- 
+| style="padding: 10px; text-align: left" | **B**: Speicherplatz
+|style="background-color: grey;" colspan="2"| 
+|
+|
+|
+|- 
+| style="padding: 10px; text-align: left" | **C**: Auflösung
+|style="background-color: grey;" colspan="3"|  
+|
+|
+|- 
+| style="padding: 10px; text-align: left" | **D**: Transport 
+|style="background-color: grey;" colspan="4"| 
+|
+|- 
+| style="padding: 10px; text-align: left" |**E**: Zuverlässigkeit 
+|style="background-color: grey;" colspan="5"|  
+|}
+
+Nun vergleichen wir die Kriterien paarweise:
+  * In der grün hinterlegten Zelle fragen wir uns: "Was ist wichtiger? A: Geschwindigkeit oder B: Speicherplatz?".
+  * In der blau hinterlegten Zelle fragen wir uns: "Was ist wichtiger? A: Geschwindigkeit oder E: Zuverlässigkeit?".
+Das wichtigere Kriterium tragen wir in der Tabelle ein.
+
+{| class="wikitable" style="text-align: center"
+|   
+| **A** 
+| **B** 
+| **C** 
+| **D** 
+| **E** 
+| **Total**
+|- 
+| style="padding: 10px; text-align: left" | **A**: Geschwindigkeit
+|style="width: 50px; background-color: grey;" |  
+| style="width: 50px;" | A
+| style="width: 50px;" | A
+| style="width: 50px;" | A
+| style="width: 50px;" | E
+| style="width: 50px;" | 3
+|- 
+| style="padding: 10px; text-align: left" | **B**: Speicherplatz
+|style="background-color: grey;" colspan="2"|  
+| C
+| B
+| E
+| 1
+|- 
+| style="padding: 10px; text-align: left" | **C**: Auflösung
+|style="background-color: grey;" colspan="3"|  
+| C
+| D
+| 2
+|- 
+| style="padding: 10px; text-align: left" | **D**: Transport 
+|style="background-color: grey;" colspan="4"| 
+| E
+| 1
+|- 
+| style="padding: 10px; text-align: left" |**E**: Zuverlässigkeit 
+|style="background-color: grey;" colspan="5"|  
+| 3
+|}
+
+Zuletzt zählen wir, wie oft jeder Buchstabe vorkommt.
+Dies ergibt die Gewichtung der Kann-Ziele/-Anforderungen.
+
+----
+
+{{tag>M431-LU10}}
+
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter, Kevin Maurizi
+
