@@ -35,7 +35,6 @@ Für jede Lösungsvariante benötigen wir zwei Spalten für die Bewertung und da
 
 Wir tragen nun zu jeder Variante und jedem Kriterium die Bewertung ein.
 In der Spalte "Total" multiplizieren wir die Bewertung mit dem Gewicht des jeweiligen Kriteriums.
-Die Summe aller Totale ergibt dann den Nutzwert.
 
 ^ ^^  Schlamig  ^^  Ratari  ^^  HAL  ^^
 ^ Kriterien ^  Gewicht  ^  Bewertung  ^  Total  ^  Bewertung  ^  Total  ^  Bewertung  ^  Total  ^
@@ -45,6 +44,8 @@ Die Summe aller Totale ergibt dann den Nutzwert.
 ^ Transport |  1  |  2  |  2  |  3  |  3  |  5  |  5  |
 ^ Zuverlässigkeit |  3  |  4  |  12  |  5  |  15  |  6  |  18  |
 ^ Summe ^  10  ^ ^  39  ^ ^  37  ^ ^  36  ^
+
+Die Summe aller Totale ergibt dann den Nutzwert.
 
 ----
 

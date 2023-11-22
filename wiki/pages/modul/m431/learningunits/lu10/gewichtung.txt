@@ -35,6 +35,8 @@ Wir möchten einen neuen Laptop kaufen und haben dazu einige Kriterien (Kann-Zie
 
 Oftmals fällt es uns schwer, viele unterschiedliche Kriterien gegeneinander abzuwägen. Bei einer Präferenzmatrix wird jedes Kriterium einzeln mit allen anderen Kriterien verglichen. Dieser paarweise Vergleich beantwortet die Frage: "Welches dieser zwei Kriterien ist wichtiger?"
 
+=== 1. Tablle vorbereiten ===
+
 Zuerst erstellen wir eine Tabelle und tragen alle Kriterien sowohl in den Spalten als auch den Zeilen ein. \\
 Die Zellen in der unteren Hälfte der Tabelle werden wir nicht brauchen, weshalb sie schwarz hinterlegt sind.
 
@@ -48,10 +50,10 @@ Die Zellen in der unteren Hälfte der Tabelle werden wir nicht brauchen, weshalb
 |- 
 | style="padding: 10px; text-align: left" | **A**: Geschwindigkeit
 |style="width: 50px; background-color: grey;" | 
-| style="width: 50px; background-color: green;" |
 | style="width: 50px;" |
 | style="width: 50px;" |
-| style="width: 50px; background-color: blue;" |
+| style="width: 50px;" |
+| style="width: 50px;" |
 |- 
 | style="padding: 10px; text-align: left" | **B**: Speicherplatz
 |style="background-color: grey;" colspan="2"| 
@@ -72,10 +74,50 @@ Die Zellen in der unteren Hälfte der Tabelle werden wir nicht brauchen, weshalb
 |style="background-color: grey;" colspan="5"|  
 |}
 
+=== 2. Kriterien paarweise vergleichen ===
+
 Nun vergleichen wir die Kriterien paarweise:
   * In der grün hinterlegten Zelle fragen wir uns: "Was ist wichtiger? A: Geschwindigkeit oder B: Speicherplatz?".
   * In der blau hinterlegten Zelle fragen wir uns: "Was ist wichtiger? A: Geschwindigkeit oder E: Zuverlässigkeit?".
 Das wichtigere Kriterium tragen wir in der Tabelle ein.
+{| class="wikitable" style="text-align: center;"
+|   
+| **A** 
+| **B** 
+| **C** 
+| **D** 
+| **E**  
+|- 
+| style="padding: 10px; text-align: left" | **A**: Geschwindigkeit
+|style="width: 50px; background-color: grey;" | 
+| style="width: 50px; background-color: green;" | A
+| style="width: 50px;" |
+| style="width: 50px;" |
+| style="width: 50px; background-color: blue;" | E
+|- 
+| style="padding: 10px; text-align: left" | **B**: Speicherplatz
+|style="background-color: grey;" colspan="2"| 
+|
+|
+|
+|- 
+| style="padding: 10px; text-align: left" | **C**: Auflösung
+|style="background-color: grey;" colspan="3"|  
+|
+|
+|- 
+| style="padding: 10px; text-align: left" | **D**: Transport 
+|style="background-color: grey;" colspan="4"| 
+|
+|- 
+| style="padding: 10px; text-align: left" |**E**: Zuverlässigkeit 
+|style="background-color: grey;" colspan="5"|  
+|}
+
+=== 3. Buchstaben zählen ===
+
+Zuletzt zählen wir, wie oft jeder Buchstabe vorkommt.
+Dies ergibt die Gewichtung der Kann-Ziele/-Anforderungen.
 
 {| class="wikitable" style="text-align: center"
 |   
@@ -117,8 +159,7 @@ Das wichtigere Kriterium tragen wir in der Tabelle ein.
 | 3
 |}
 
-Zuletzt zählen wir, wie oft jeder Buchstabe vorkommt.
-Dies ergibt die Gewichtung der Kann-Ziele/-Anforderungen.
+
 
 ----
 

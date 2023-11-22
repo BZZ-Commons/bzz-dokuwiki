@@ -2,13 +2,27 @@
 
 <WRAP center round info 60%>
 Die Nutzwertanalyse soll uns helfen, verschiedene Lösungsvarianten zu vergleichen. 
-Dazu prüfen wir, wie gut eine Lösung die Ziele oder Anforderungen erreicht.
+Sie liefert eine Kennzahl für den Nutzen der einzelnen Lösungsvarianten.
+
 </WRAP>
 
 In einem grösseren Projekt brauchen wir in der Regel möglichst objektive und messbare Kriterien zum Vergleich der Varianten.
-Die Nutzwertanalyse liefert eine Kennzahl für den Nutzen der einzelnen Lösungsvarianten.
+Dazu prüfen wir, wie gut eine Lösung die Ziele oder Anforderungen erreicht.
 
- 
+===== Ziele gewichten =====
+Wir unterscheiden zunächst zwischen:
+  * Muss-Ziel: Dieses muss zwingend vollständig erfüllt sein.
+  * Kann-Ziel: Sollte so gut wie möglich erreicht werden.
+
+Mit der Gewichtung berücksichtigen wir, wie wichtig ein Kann-Ziel für den Erfolg unseres Projekts ist:
+
+===== Nutzwertanalyse =====
+In der Nutzwertanalyse bewerten wir, wie gut eine Lösungsvariante ein Kann-Ziel erfüllt.
+Dazu verwenden wir eine nummerische Skala, z.B. 1-4.
+Die Bewertung multiplizieren wir mit der Gewichtung des jeweiligen Ziels.
+Zum Schluss erhalten wir pro Lösungsvariante eine Summe, welche den Nutzwert darstellt.
+
 ----
 {{tag>M431-LU10}}
+
 [[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter, Kevin Maurizi

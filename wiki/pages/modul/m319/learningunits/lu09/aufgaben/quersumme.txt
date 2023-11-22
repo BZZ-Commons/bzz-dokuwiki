@@ -1,19 +1,61 @@
 ====== LU09.A04 - Quersumme ======
 
-Schreiben Sie eine Funktion, die von einer vorgegebenen natürlichen Zahl
-die Quersumme bestimmt. Natürliche Zahlen sind positive ganze Zahlen (1, 2,
-3, 4, 5, …). 
-
-<WRAP center round box 60%>
-<code python>
-#TODO create function cross_sum to calculate the crosssum of a whole number
-
-
-def main():
-    number = input('Bitte eine Ganzzahl eingeben für Quersummenberechnung')
-    print(cross_sum(number))
-
-if __name__ == '__main__':
-    main()
-</code>
+<WRAP center round todo 60%>
+Schreibe ein Programm, das den Benutzer nach einer ganzen Zahl fragt und die Quersumme dieser Zahl berechnet und ausgibt.
 </WRAP>
+
+===== Auftrag =====
+**Hinweis:** Variable Elemente der Ausgabe sind speziell ''formatiert''
+
+Erstelle die Programmlogik für das Programm:
+  - Das Programm fordert den Benutzer auf, eine Zahl einzugeben.
+  - Das Programm berechnet dann die Quersumme der eingegebenen Zahl.
+  - Das Programm gibt die Quersumme aus: "Die Quersumme ist: ''summe''".
+
+==== Beispiele ====
+
+<code>
+Bitte eine Ganzzahl eingeben für Quersummenberechnung:
+*12345*
+Die Quersumme ist: 15
+</code>
+<code>
+Bitte eine Ganzzahl eingeben für Quersummenberechnung:
+*101010*
+Die Quersumme ist: 3
+</code>
+<code>
+Bitte eine Ganzzahl eingeben für Quersummenberechnung:
+*7*
+Die Quersumme ist: 7
+</code>
+
+===== Vorgehen =====
+
+  - Akzeptiere das GitHub Classroom Assignment im Moodlekurs.
+  - Klone das Repository in PyCharm.
+  - Codiere die Programmlogik in ''digit_sum.py''.
+  - Teste dein Programm mit den Testfällen in ''digit_sum_test.py''.
+  - Führe einen Commit und einen Push durch.
+
+=== Abgabe ===
+Die Abgabe erfolgt durch den Push ins GitHub Repository.
+In Moodle ist keine Abgabe vorgesehen oder möglich.
+
+=== Vorlage in digit_sum.py ===
+
+{{gh>https://github.com/templates-python/m319-lu09-a04-digit-sum/blob/main/digit_sum.py}}
+
+
+----
+<details>
+<summary>//=> GitHub Repo für externe Besucher//</summary>
+GitHub Repository https://github.com/templates-python/m319-lu09-a04-digit-sum
+
+//Lernende am BZZ müssen den Link zum GitHub Classroom Assignment verwenden//
+
+</details>
+{{tag>M319-LU09}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/ch/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Marcel Suter, Kevin Maurizi 
+
+Diese Aufgabe ist eine übersetzte und angepasste Aufgabe von [[https://scott3142.uk/|Scott Morgan]], verwendet unter CC BY NC SA.

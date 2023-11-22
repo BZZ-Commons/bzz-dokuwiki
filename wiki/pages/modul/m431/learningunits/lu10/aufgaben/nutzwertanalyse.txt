@@ -3,6 +3,36 @@
 Bewerten Sie die Lösungsvarianten mit Hilfe einer Nutzwertanalyse.
 </WRAP>
 
+===== Ausgangslage =====
+Nachdem Sie in [[.:gewichtung]] die Ziele gewichtet haben, wollen Sie die verschiedenen Lösungsvarianten bewerten.
+
+==== Notizzettel ====
+Jeder Servicemitarbeiter erhält einen Block mit Bestellzetteln.
+Auf diesen Zetteln notiert er die Bestellungen, wobei er separate Zettel für Getränke, Vorspeisen, Hauptspeisen und Desserts verwendet.
+Die ausgefüllten Bestellzettel bringt er ans Buffet.
+Dort werden die Getränke bereitgestellt und die Essenbestellungen an die Küche weitergegeben.
+
+Für die Rechnung werden alle Bestellzettel eines Tischs genommen und mit Hilfe eines Taschenrechners addiert.
+
+==== Kassensystem ====
+Der Servicemitarbeiter erfasst die Bestellungen in einem Kassensystem.
+Dieses Kassensystem druckt für jeden Artikel (Getränk, Essen, ...) einen Bon aus.
+Anhand dieser Bons bereiten die Küche bzw. der Mitarbeiter am Buffet die Getränke und das Essen vor.
+
+Für die Rechnung druckt das Kassensystem einen separaten Bon mit allen Bestellungen und dem Total aus.
+
+==== Smartphone-App ====
+Der Gast erfasst seine Bestellungen selbständig in einer Smartphone-App.
+Am Buffet und in der Küche erscheinen die bestellten Artikel auf einem Touchscreen.
+Sobald ein Artikel abholbereit ist, wird dies durch den Koch bzw. den Mitarbeiter am Buffet auf den Touchscreen quittiert.
+
+Die Rechnung bezahlt der Gast direkt in der App mit Kreditkarte oder Twint.
+
+===== Auftrag =====
+Erstellen Sie eine Nutzwertanalyse anhand der gewichteten Ziele aus der Aufgabe [[.:gewichtung]] und den drei Lösungsvarianten.
+
+===== Abgabe =====
+Exportieren (Drucken) Sie die Nutzwertanalyse als PDF-Datei und laden diese hier hoch.
 
 ----
 {{tag>M431-LU06}}

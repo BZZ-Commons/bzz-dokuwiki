@@ -1,20 +1,44 @@
 ====== LU09.A05 - Abstand im Koordinatensystem ======
 
-Um die Länge der Luftlinie zwischen zwei Punkten auf der Landkarte zu berechnen, wird ein Programm benötigt. Schreiben Sie eine Subroutine, um den Abstand zweier Punkte in der Ebene zu berechnen.
-P1 = (x1, y1), P2 = (x2, y2). 
+Ein Programm ist erforderlich, um die Luftlinie zwischen zwei beliebigen Punkten in der Ebene zu berechnen, die in [[https://de.wikipedia.org/wiki/Schweizer_Landeskoordinaten|Schweizer Landeskoordinaten (CH1903)]] gegeben sind.
 
-Berechnen Sie damit unter anderem den (Kilometer-)Abstand der Orte Zell (704.4, 256.2) und Neuburg (693.3, 261.4), die hier in Schweizerischen Landeskoordinaten (CH1903) gegeben sind.
- 
 <WRAP center round box 60%>
-<code python>
-#TODO create a function to calculate the distance between two points in CH1903-Coordinate-System
-
-def main():
-    #TODO: Call the function above.
-    distance = #TODO
-    print(f'Distance is: {distance}')
-
-if __name__ == '__main__':
-    main()
+Beispiel der Benutzerinteraktion
+<code>
+Bitte geben Sie die Koordinaten des ersten Punktes ein (x1, y1):
+x1: 600000
+y1: 200000
+Bitte geben Sie die Koordinaten des zweiten Punktes ein (x2, y2):
+x2: 683802
+y2: 247889
+Die Distanz zwischen den beiden Punkten beträgt: 111319.49079327357 km
 </code>
 </WRAP>
+
+===== Auftrag =====
+
+  - Implementieren Sie die Funktion ''calculate_distance'', die die Distanz zwischen zwei Punkten mit Trigonometrie berechnet.
+  - Die ''main''-Funktion soll die Benutzereingaben für die Koordinaten der beiden Punkte aufnehmen.
+  - Rufen Sie die Funktion ''calculate_distance'' in der ''main''-Funktion auf, um den Abstand zwischen den vom Benutzer eingegebenen Punkten zu berechnen und geben Sie diesen aus.
+
+===== Vorgehen =====
+
+  - Akzeptieren Sie das GitHub Classroom Assignment im Moodlekurs.
+  - Klone Sie das Repository in Ihre Entwicklungsumgebung.
+  - Codieren Sie die Programmlogik in der Datei, die Sie für die Aufgabe erstellen.
+  - Testen Sie Ihr Programm mit verschiedenen Koordinatenpaaren und den Testfällen.
+  - Führen Sie einen Commit und Push Ihres Codes durch.
+
+=== Abgabe ===
+Die Abgabe erfolgt durch den Push in das GitHub-Repository. In Moodle ist keine Abgabe vorgesehen oder möglich.
+
+----
+<details>
+<summary>//=> GitHub Repo für externe Besucher//</summary>
+GitHub Repository https://github.com/templates-python/m319-lu09-a05-distance-two-points
+
+//Lernende am BZZ müssen den Link zum GitHub Classroom Assignment verwenden//
+
+</details>
+{{tag>M319-LU09}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/ch/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Marcel Suter, Kevin Maurizi 

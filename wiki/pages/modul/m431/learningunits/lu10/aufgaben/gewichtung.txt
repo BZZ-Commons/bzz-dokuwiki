@@ -3,6 +3,32 @@
 Gewichte die Ziele mit Hilfe einer Präferenzmatrix.
 </WRAP>
 
+===== Ausgangslage =====
+In einem Restaurant gibt es immer wieder Reklamationen, weil Bestellungen verloren gehen oder die Rechnung nicht stimmt. 
+Auch kommt es immer wieder vor, dass Gäste lange warten müssen, bis sie bestellen können.
+
+Sie haben sich einmal den Ablauf angesehen und folgendes notiert:
+
+  * Die Servicemitarbeiter merken sich die Bestellung und geben sie mündlich in die Küche weiter.
+  * Die Rechnung wird aus dem Gedächtnis und durch Befragen der Gäste erstellt.
+
+
+Der Inhaber wünscht sich ein zuverlässiges System zum Festhalten der Bestellungen und Erstellen der Rechnungen.
+
+==== Ziele / Anforderungen ====
+Gemeinsam mit dem Inhaber haben Sie folgende Kann-Ziele formuliert:
+  - 95% der Bestellungen werden korrekt aufgenommen.
+  - 90% der Gäste erhalten Ihre Getränke innert 10 Minuten.
+  - 90% der Gäste erhalten Ihre Vorspeisen innert 15 bzw. den Hauptgang innert 30 Minuten.
+  - 98% aller Rechnungen sind auf Anhieb korrekt.
+  - Die Kunden bewerten die Abläufe mit einer Durchschnittsnote von 5.0.
+  - Die Investition für das neue System betragen weniger als CHF 5'000
+
+===== Auftrag =====
+Erstellen Sie eine Präferenzmatrix um die Ziele zu gewichten.
+
+===== Abgabe =====
+Drucken (Exportieren) Sie die Präferenzmatrix als PDF-Datei und laden diese hier hoch.
 
 ----
 {{tag>M431-LU06}}
