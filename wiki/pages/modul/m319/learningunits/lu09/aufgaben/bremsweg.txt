@@ -1,42 +1,56 @@
 ====== LU09.A07 - Bremsweg ======
 
-===== Aufgabe=====
- 
-Berechnen Sie die Anhaltestrecke eines Autos bei gegebener Geschwindigkeit ''[km/h]'' für trockene bzw. nasse Straße. In eckigen Klammern stehen die Maßeinheiten, die jedoch für die Programmierung nicht von Bedeutung sind. 
 
-Sie brauchen folgende Informationen um diese Aufgabe zu lösen:
-  * Die Geschwindigkeit [km/h] kann vom Anwender eingegeben werden.
-  * Geschwindigkeit [m/s] = Geschwindigkeit [km/h] / 3.6 (z. B. 72 [km/h] = 20 [m/s])
-  * Die Bremsbeschleunigung (auch Bremsverzögerung genannt) wird in Metern pro Quadratsekunden gemessen. Trockene Straße: Bremsbeschleunigung = 7 [m/s^2]. Nasse Straße: Bremsbeschleunigung = 4 [m/s^2]. Wer das Programm benutzt, kann dabei «t» für die trockene bzw. «n» für die nasse Straße eingeben.
-  * Reaktionszeit [s] = 1.44
-  * Reaktionsweg [m] = Geschwindigkeit [m/s] * Reaktionszeit [s]
-  * Bremsweg [m] = Geschwindigkeit^2[(m/s)^2] / (2 * Bremsbeschleunigung [m/s^2])
-  * Anhaltestrecke [m] = Reaktionsweg [m] + Bremsweg [m] 
-
-Programmieren Sie möglichst viele der benötigten Größen als Funktionen mit sinnvollen Eingabeparametern. Beispiele:
-
-braking_distance()
-reaction_distance()
-stopping_distance()
-in_meters_per_second()
- 
-
-==== Zusatzaufgabe (Auffahrunfall): ====
-Wie viel Abstand (in Metern und in Sekunden)zum vor ihm fahrenden Wagen muss ein Fahrer einhalten, um einen Auffahrunfall zu vermeiden, falls der vor ihm Fahrende eine Vollbremsung einleitet?
-
-Dazu ist zusätzlich die Bremszeit zu berechnen:
-  * Bremszeit [s] = Geschwindigkeit [m/s] / Bremsbeschleunigung [m/s2]
-===== Vorlage =====
-
-<WRAP center round box 60%>
-<code python>
-#TODO create multiple functions to solve the braking distance calculation
-
-def main():
-    #TODO: Call the function to calculate the braking distance for 50, 80 and 120 km/h
-
-
-if __name__ == '__main__':
-    main()
-</code>
+<WRAP center round todo 60%>
+Berechnen Sie die Anhaltestrecke eines Autos bei gegebener Geschwindigkeit ''[km/h]'' für trockene bzw. nasse Straße.
 </WRAP>
+
+==== Benötigte Informationen ====
+  - Die Geschwindigkeit ''[km/h]'' kann vom Benutzer eingegeben werden.
+  - Geschwindigkeit ''[m/s]'' = Geschwindigkeit ''[km/h]'' / 3.6
+  - Bremsbeschleunigung auf trockener Straße = 7 ''[m/s^2]'', auf nasser Straße = 4 ''[m/s^2]''.  Wer das Programm benutzt, kann dabei «t» für die trockene bzw. «n» für die nasse Straße eingeben.
+  - Reaktionszeit = 1.44 ''[s]''.
+  - Reaktionsweg ''[m]'' = Geschwindigkeit ''[m/s]'' * Reaktionszeit.
+  - Bremsweg ''[m]'' = Geschwindigkeit^2 ''[(m/s)^2]'' / (2 * Bremsbeschleunigung ''[m/s^2]'').
+  - Anhaltestrecke ''[m]'' = Reaktionsweg + Bremsweg.
+
+==== Zusatzaufgabe Sicherheitsabstand ====
+Berechnen Sie den notwendigen Sicherheitsabstand (in Metern und in Sekunden), um einen Auffahrunfall zu vermeiden, falls der vorausfahrende Wagen eine Vollbremsung einleitet.
+
+  - Bremszeit ''[s]'' = Geschwindigkeit ''[m/s]'' / Bremsbeschleunigung ''[m/s^2]''.
+
+===== Vorlage =====
+{{gh>https://github.com/templates-python/m319-lu09-a07-breaking/blob/main/main.py}}
+
+
+===== Beispiele =====
+
+<code>
+# Beispiel für die Berechnung der Anhaltestrecke bei 80 km/h auf trockener Straße
+print(stopping_distance(80))
+</code>
+
+===== Vorgehen =====
+
+  - Akzeptieren Sie das GitHub Classroom Assignment im Moodlekurs.
+  - Klone Sie das Repository in Ihre Entwicklungsumgebung.
+  - Implementieren Sie die notwendigen Funktionen zur Berechnung der Anhaltestrecke.
+  - Testen Sie jede Funktion mit verschiedenen Geschwindigkeiten und Straßenbedingungen.
+  - überprüfen Sie alles mit den Unittests.
+  - Rufen Sie die Funktionen in der ''main''-Methode auf und geben Sie die Ergebnisse aus.
+
+===== Abgabe =====
+
+Die Abgabe erfolgt durch den Push in das GitHub-Repository. In Moodle ist keine Abgabe vorgesehen oder möglich.
+
+----
+<details>
+<summary>//=> GitHub Repo für externe Besucher//</summary>
+GitHub Repository https://github.com/templates-python/m319-lu09-a07-breaking
+
+//Lernende am BZZ müssen den Link zum GitHub Classroom Assignment verwenden//
+
+</details>
+{{tag>M319-LU09}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/ch/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Marcel Suter, Kevin Maurizi 
+

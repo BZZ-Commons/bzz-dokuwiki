@@ -1,6 +1,9 @@
 ====== LU09.A05 - Abstand im Koordinatensystem ======
+<WRAP center round todo 60%>
+Erstelle eine Programm, dass die Distanzen zwischen zwei Orten, welche durch Schweizer Landeskoordinaten definiert sind, berechnen kann.
+</WRAP>
 
-Ein Programm ist erforderlich, um die Luftlinie zwischen zwei beliebigen Punkten in der Ebene zu berechnen, die in [[https://de.wikipedia.org/wiki/Schweizer_Landeskoordinaten|Schweizer Landeskoordinaten (CH1903)]] gegeben sind.
+Ein Programm ist erforderlich, um die Luftlinie in Kilometern zwischen zwei beliebigen Punkten in der Ebene zu berechnen, die in [[https://de.wikipedia.org/wiki/Schweizer_Landeskoordinaten|Schweizer Landeskoordinaten (CH1903)]] gegeben sind.
 
 <WRAP center round box 60%>
 Beispiel der Benutzerinteraktion
@@ -11,7 +14,7 @@ y1: 200000
 Bitte geben Sie die Koordinaten des zweiten Punktes ein (x2, y2):
 x2: 683802
 y2: 247889
-Die Distanz zwischen den beiden Punkten beträgt: 111319.49079327357 km
+Die Distanz zwischen den beiden Punkten beträgt: 96.52010943321605 km
 </code>
 </WRAP>
 
@@ -29,7 +32,7 @@ Die Distanz zwischen den beiden Punkten beträgt: 111319.49079327357 km
   - Testen Sie Ihr Programm mit verschiedenen Koordinatenpaaren und den Testfällen.
   - Führen Sie einen Commit und Push Ihres Codes durch.
 
-=== Abgabe ===
+===== Abgabe =====
 Die Abgabe erfolgt durch den Push in das GitHub-Repository. In Moodle ist keine Abgabe vorgesehen oder möglich.
 
 ----

@@ -1,47 +1,69 @@
 ====== LU09.A06 - Dreiecksfläche berechnen ======
+<WRAP center round todo 60%>
+Erstelle Funktionen die Dreiecksflächen berechnen können.
+</WRAP>
 
-===== Aufgabe=====
- 
+===== Aufgabe =====
+
 Schreiben Sie die folgenden Funktionen zur Berechnung der Dreiecksfläche und verwenden Sie diese als Methoden in einem Hauptprogramm:
 
 === area_base_height(s: float, hs: float) ===
-Aus Grundseite s und der zugehörigen Höhe hs:
+Berechnen Sie die Fläche eines Dreiecks aus der Grundseite ''s'' und der zugehörigen Höhe ''hs'':
 
 \(Fläche = \frac{s * h_{s}}{2} \)
 
-Formel als Bild: {{:modul:m319python:learningunits:lu09:aufgaben:screenshot_2022-11-28_at_09.15.14.png?120|}}
-
-=== area_three_sites(a: float, b: float, c: float) ===
-Aus drei Seiten nach der Formel von Heron:
+=== area_three_sides(a: float, b: float, c: float) ===
+Berechnen Sie die Fläche eines Dreiecks aus drei Seiten nach der Formel von Heron:
 
 \(Fläche = \sqrt{s(s-a)(s-b)(s-c)}\)
 
-Formel als Bild: {{:modul:m319python:learningunits:lu09:aufgaben:screenshot_2022-11-28_at_09.15.26.png?200|}}
-
-Dabei bezeichnet s den halben Umfang. Schreiben Sie eine Hilfsmethode
-circumference(), die zunächst den Umfang des Dreiecks berechnet.
+wobei ''s'' den halben Umfang des Dreiecks bezeichnet. Schreiben Sie eine Hilfsmethode ''circumference(a, b, c)'', die zunächst den Umfang des Dreiecks berechnet.
 
 === area_points(ax: float, ay: float, bx: float, by: float, cx: float, cy: float) ===
-Aus drei Eckpunkten im Koordinatensystem. Dabei können die Seitenlängen einfach mit dem Satz des Pythagoras berechnet werden. 
-Die Seite ''a'' z.B. wird durch 
+Berechnen Sie die Fläche eines Dreiecks aus drei Eckpunkten im Koordinatensystem. Dabei können die Seitenlängen einfach mit dem Satz des Pythagoras berechnet werden. Die Seite ''a'' z.B. wird durch folgende Formel ermittelt:
 
 \(a = \sqrt{(c_{x}-b_{x})^2 + (c_{y}-b_{y})^2}\)
 
-Formel als Bild: {{:modul:m319python:learningunits:lu09:aufgaben:screenshot_2022-11-28_at_09.15.33.png?200|}}
-
-ermittelt. Verwenden Sie nach der Ermittlung der drei Seiten die bereits geschriebene Funktion ''area(a, b, c)''. 
+Nach der Ermittlung der drei Seiten verwenden Sie die Funktion ''area_three_sides(a, b, c)'' zur Berechnung der Fläche.
 
 ===== Vorlage =====
 
-<WRAP center round box 60%>
+{{gh>https://github.com/templates-python/m319-lu09-a06-triangle/blob/main/main.py}}
+
+===== Beispiele =====
+
 <code python>
-#TODO create three functions for triangle-area-calculations
+# Beispiel für die Berechnung mit Grundseite und Höhe
+print(area_base_height(3, 4))
+# Ausgabe: 6.0
 
-def main():
-    #TODO: Call the function from above.
+# Beispiel für die Berechnung nach Heron mit drei Seiten
+print(area_three_sides(3, 4, 5))
+# Ausgabe: 6.0
 
-
-if __name__ == '__main__':
-    main()
+# Beispiel für die Berechnung aus Koordinaten
+print(area_points(0, 0, 3, 0, 3, 4))
+# Ausgabe: 6.0
 </code>
-</WRAP>
+
+===== Vorgehen =====
+
+  - Akzeptieren Sie das GitHub Classroom Assignment im Moodlekurs.
+  - Klone Sie das Repository in Ihre Entwicklungsumgebung.
+  - Codieren Sie die Programmlogik.
+  - Testen Sie Ihr Programm mit verschiedenen Eingaben und den Testfällen.
+  - Führen Sie einen Commit und Push Ihres Codes durch.
+
+===== Abgabe =====
+Die Abgabe erfolgt durch den Push in das GitHub-Repository. In Moodle ist keine Abgabe vorgesehen oder möglich.
+
+----
+<details>
+<summary>//=> GitHub Repo für externe Besucher//</summary>
+GitHub Repository https://github.com/templates-python/m319-lu09-a06-triangle
+
+//Lernende am BZZ müssen den Link zum GitHub Classroom Assignment verwenden//
+
+</details>
+{{tag>M319-LU09}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/ch/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Marcel Suter, Kevin Maurizi 

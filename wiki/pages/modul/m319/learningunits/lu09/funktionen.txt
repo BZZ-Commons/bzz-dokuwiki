@@ -244,9 +244,12 @@ def multiply(factor1, factor2):
 
 
 ===== Methoden aufrufen =====
-Rufen wir die Funktion nun auf, so müssen wir darauf achten, dass die Funktion **vor** dem Aufruf deklariert (geschrieben) ist.
+Um eine Funktion aufzurufen, geben wir den Namen der Funktion und runde Klammern an:
+  * ''main()''  Ruft eine Funktion ohne Parameter auf.
+  * ''is_big(123)''  Ruft eine Funktion mit einem Parameter auf.
 
-Beispiel:
+=== Beispiel: ===
+
 <WRAP center round box 60%>
 <code python>
 def is_big(number):
@@ -275,7 +278,7 @@ False
 </WRAP>
 
 <WRAP center round important 60%>
-**Hinweis:** In Python sollte die Funktionsdefinition immer vor dem Funktionsaufruf stehen. Andernfalls erhalten wir einen Fehler. Zum Beispiel:
+**Hinweis:** In Python müssen alle Funktionsdefinitionen **vor** dem Block ''if __name__ == '__main__':'' stehen. Andernfalls erhalten wir einen Fehler. Zum Beispiel:
 
 <WRAP center round box 90%>
 <code python>
