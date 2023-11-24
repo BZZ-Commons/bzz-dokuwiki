@@ -68,6 +68,12 @@ Boolscher Ausdruck: Lust \(\wedge\) Zeit \(\vee\) Unterricht \(\vee\) Auftritt\\
 "Ich gehe einkaufen, wenn ich Lust oder Bedarf für neue Kleider habe und mein Bankkonto (Geld) das zulässt."\\
 Boolscher Ausdruck: (Lust \(\vee\) Bedarf) \(\wedge\) Geld\\
 ----
+Die Rangfolge von Logikoperatoren wird i.d.R. wie folgt angegeben
+   - NICHT
+   - UND
+   - ODER
+
+----
 //**Hinweis:**//\\
 Das ''logische ODER'' entspricht nicht dem im Sprachgebrauch üblichen oder. Wenn wir sagen "Ich gehe in den Zoo ODER ins Kino", so meinen wir das ausschliessend. Das heisst, dass wir ENTWEDER ins Kino gehen ODER in den Zoo. Aber sicher nicht beides. In der Logik spricht man in diesme Fall von einem\\
 **EXKLUSIV-ODER - //XOR//** \\
