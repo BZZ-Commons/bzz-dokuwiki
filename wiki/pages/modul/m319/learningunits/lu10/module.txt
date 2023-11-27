@@ -84,10 +84,11 @@ Um also sicherzustellen, dass Ihr Modul gefunden wird, müssen Sie eine der folg
     * **Oder:** Legen Sie ''mod.py'' in einem der Verzeichnisse ab, die bereits in der ''PYTHONPATH''-Variable enthalten sind
   * Legen Sie ''mod.py'' in eines der installationsabhängigen Verzeichnisse, auf die Sie je nach Betriebssystem Schreibzugriff haben oder nicht
 
+==== Zur Laufzeit, manuell ====
 
-Es gibt noch eine weitere Möglichkeit: Sie können die Moduldatei in ein beliebiges Verzeichnis Ihrer Wahl ablegen und dann ''sys.path'' zur Laufzeit so ändern, dass es dieses Verzeichnis enthält. In diesem Fall könnten Sie z.B. ''mod.py'' in das Verzeichnis ''C:\Users\peter'' ablegen und dann die folgenden Anweisungen eingeben:
+Sie können die Moduldatei in ein beliebiges Verzeichnis Ihrer Wahl ablegen und dann ''sys.path'' zur Laufzeit so ändern, dass es dieses Verzeichnis enthält. In diesem Fall könnten Sie z.B. ''mod.py'' in das Verzeichnis ''C:\Users\peter'' ablegen und dann die folgenden Anweisungen eingeben:
 
-<WRAP center round box 60%>
+<WRAP center round box 80%>
 <code python>
 sys.path.append(r'C:\Users\peter')
 print(sys.path)
@@ -97,6 +98,32 @@ import mod
 
 </code>
 </WRAP>
+
+==== Zur Laufzeit, automatisch via Skript ====
+
+Sie können das Verzeichnis des aktuell ausgeführten Skripts direkt in ''sys.path'' einfügen. Dies ist besonders praktisch, wenn Sie möchten, dass Python automatisch alle Module im gleichen Verzeichnis wie das ausgeführte Skript findet. Dazu können Sie das Modul ''os'' verwenden, um den Pfad des aktuellen Skripts zu ermitteln und diesen dann ''sys.path'' hinzuzufügen. Hier ein Beispiel:
+
+<WRAP center round box 60%>
+<code python>
+import sys
+import os
+
+# Fügt den Pfad des aktuellen Skripts zu sys.path hinzu
+script_directory = os.path.dirname(os.path.abspath(__file__))
+sys.path.append(script_directory)
+
+print(sys.path)
+# Die Ausgabe enthält nun auch das Verzeichnis des aktuellen Skripts
+
+import mod
+</code>
+
+Durch das Hinzufügen des Skriptverzeichnisses zu ''sys.path'' können Sie sicherstellen, dass alle Module, die sich im gleichen Verzeichnis wie Ihr Skript befinden, von Python gefunden und importiert werden können.
+
+</WRAP>
+
+
+
 
 ===== Die import-Anweisung =====
 Modulinhalte werden dem Aufrufer mit der ''import''-Anweisung zur Verfügung gestellt. Die ''import''-Anweisung kann viele verschiedene Formen annehmen, wie unten gezeigt.

@@ -2,7 +2,6 @@
 
 <nspages . -h1  -exclude -simpleList -textPages="">
 
-FIXME Typehint integrieren
 ===== Aufgaben =====
 <nspages .:aufgaben -h1  -exclude:start -simpleList -textPages="">
 
