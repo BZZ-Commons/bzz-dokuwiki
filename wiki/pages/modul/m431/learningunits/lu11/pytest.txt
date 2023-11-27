@@ -1,0 +1,67 @@
+====== LU11c - Pytest ======
+
+<WRAP center round info 60%>
+Pytest ist ein Testframework um einzelne Funktionen eines Programms automatisiert zu testen.
+</WRAP>
+
+===== Grundlagen =====
+Das fortlaufende Testen deiner Programmfunktionen ist ein wichtiger Schritt, um die korrekte Verarbeitung sicherzustellen.
+Jeder neu geschriebene oder veränderte Code kann Fehler enthalten.
+Anstatt jedesmal manuell alle Tests durchzuführen, wollen wir die Tests automatisieren.
+Dies bedeutet zwar einen zusätzlichen Aufwand, um die Testfunktionen zu schreiben.
+Diese Zeit sparen wir aber wieder ein, wenn wir diese Tests immer und immer wieder nutzen können.
+
+Für die Programmieraufgaben in den Programmiermodulen sind die Testfunktionen bereits vorgegeben.
+Daher konzentrieren wir uns darauf, diese Tests und deren Resultate zu verstehen. 
+
+===== Aufbau einer Testfunktion =====
+Die einzelnen Unit Tests werden als Funktionen in Python programmiert.
+Zum Beispiel:
+
+<code python>
+def test_normal():
+    result = factorial(7)
+    assert result == 5040
+</code>
+
+  * Der Funktionsname für den Test muss mit ''test'' beginnen. Andernfalls erkennt ''pytest'' die Funktion nicht.
+  * Wir rufen die zu testende Funktion (im Beispiel ''factorial'') mit den Testdaten auf.
+  * Der Befehl ''assert'' vergleicht das tatsächliche Resultat mit dem erwarteten Resultat.
+
+=== Assert ===
+Der Befehl ''assert'' ist eine spezielle Bedingung, die wir zum Testen und Debuggen von Code verwenden.
+Falls die Bedingung erfüllt ist, wird ''true'' zurück gegeben.
+Sonst wird eine ''AssertionError''-Exception geworfen.
+Wir könnten das gleiche Resultat auch mit ''if''/''else'' erreichen:
+
+^ assert ^ if / else ^
+| <code python>assert result == 5040</code> | <code python>
+if result == 5040:
+    return true
+else:
+    raise AssertionError
+</code> |
+
+
+===== Tests durchführen =====
+==== Einzelne Tests ====
+Während der Entwicklung führe ich jede Testfunktion einzeln aus.
+Dadurch werde ich nicht von einer grossen Anzahl an Fehlermeldungen auf einmal überwältigt.
+
+Um eine einzelne Testfunktion auszuführen, kann ich ...
+  * a) ... auf das grüne Dreieck-Symbol vor dem Funktionsnamen klicken.
+  * b) ... im Terminal ''pytest -k TESTFUNKTION'' eingeben. \\ Ersetze //TESTFUNKTION// mit dem Namen der Funktion.
+
+
+==== Vollständiger Test ====
+Bevor ich einen Push ins GitHub-Repository mache, führe ich jeweils alle Testfunktionen aus.
+Dadurch stelle ich sicher, dass meine Änderungen keine unerwarteten Auswirkungen auf andere Programmteile haben.
+
+FIXME Screenshot Terminal + Pytest
+
+==== Testresultate auswerten ====
+
+
+----
+{{tag>M431-LU11}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter, Kevin Maurizi
