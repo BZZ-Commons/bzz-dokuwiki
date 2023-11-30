@@ -4,8 +4,19 @@ Ein Computer muss also Information in einer Folge binärer Werte speichern und v
 Es ist ersichtlich, dass die Zeichenfolge 0100'0001 dem arabischen Zahlensystem entspricht. Darum wollen wir dieses System - es handelt sich um ein **Positionssytem** - genauer betrachten.\\
 ===Das 10-er System===
 Das 10er System - besser bekannt unter dem Namen **Dezimalsystem** - bildet die Grundlage unseres Umgangs mit Zahlen . Es ist uns von klein auf vertraut. Die wenigsten machen sich daher Gedanken darüber, wie es genau aufgebaut ist und wie es "funktioniert". Wir sind uns den Umagng damit gewohnt.\\
-Was Ihnen aber bekannt sein dürfte sind Begriffe wie E, Z, H usw. Sie bezeichnen das Gewicht, eine Ziffer an einer Psoition einnimmt.\\
-Und damit haben wir bereits 2 wichtige Begriffe des 10er-Systems benannt, nämlich **Ziffer** und **Position**.\\
+Was Ihnen aber bekannt sein dürfte sind Begriffe wie E, Z, H usw. Sie bezeichnen das Gewicht, eine Ziffer an einer Position einnimmt.\\
+Und damit haben wir bereits 2 wichtige Begriffe des 10er-Systems benannt, nämlich **Ziffer**, **Gewicht** und **Position**.\\
+\\
+Sie kennen aus der Primarschule wohl eine Darstellung von Zahlen inder Art\\
+1367 = 1T + 3H + 6Z + 7E\\
+dabei steht
+   * T für 1000
+   * H für 100
+   * Z für 10
+   * E für 1
+Wir haben hier also eine 4-stellige Zahl oder eben eine Zahl mit 4 Positionen. An jeder Position finden wir eine Ziffer zwischen 0...9 und jede dieser Ziffern wird mit einem Gewicht versehen. Für unsere Zahl gilt also
+\(\quad 1 \cdot 1000 = 1000 \newline + 3 \cdot 100 = 300 \newline + 6 \cdot 10 = 60 \newline + \underline{7 \cdot 1 = 7 \quad \quad} \newline  \quad 1367 \)
+
 
 
  
