@@ -1,0 +1,18 @@
+====2. Das Positionssystem====
+Sie haben im Kapitel 1 gesehen, dass das arabische Zahlensystem erhebliche Vorteile gegenüber dem römsichen hat. Es ermöglicht uns überhaupt erst das schriftliche Rechnen und ist somit massgebend dafür, dass es heute Rechenmaschinen gibt. Das heisst, es ist die Grundlage unserer modernen Compuertechnologie. Ein Computer stellt nämlich die Informationen durch binäre - also zweiwertige - Zeichen dar. Technisch betrachtet beduetet das, dass es 2 physikalische Werte wie z.B. 0V und 5V gibt. Logisch spricht man von Zuständen, die mit ''WAHR''/''FALSCH'' (True/False) oder ''0''/''1'' gekennzeichnet sind.\\
+Ein Computer muss also Information in einer Folge binärer Werte speichern und verabreiten. So wird der Buchstaben A durch die Zeichenfolge (Bitmuster) 0100'0001 (die Zahl 65) dargestellt. Erst die konkrete Interpretation legt dann fest, ob das Bitmuster einen Buchstaben, eine Zahl, eine Farbe einen Ton (akustisches Signal) usw. wiedergibt.\\
+Es ist ersichtlich, dass die Zeichenfolge 0100'0001 dem arabischen Zahlensystem entspricht. Darum wollen wir dieses System - es handelt sich um ein **Positionssytem** - genauer betrachten.\\
+===Das 10-er System===
+Das 10er System - besser bekannt unter dem Namen **Dezimalsystem** - bildet die Grundlage unseres Umgangs mit Zahlen . Es ist uns von klein auf vertraut. Die wenigsten machen sich daher Gedanken darüber, wie es genau aufgebaut ist und wie es "funktioniert". Wir sind uns den Umagng damit gewohnt.\\
+Was Ihnen aber bekannt sein dürfte sind Begriffe wie E, Z, H usw. Sie bezeichnen das Gewicht, eine Ziffer an einer Psoition einnimmt.\\
+Und damit haben wir bereits 2 wichtige Begriffe des 10er-Systems benannt, nämlich **Ziffer** und **Position**.\\
+
+
+ 
+
+
+
+----
+[[modul:mathe:ma1:thema:lu02zahlensystem:aufgaben:leitprogramm:k4:start|nächstes Kapitel]]
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) René Probst

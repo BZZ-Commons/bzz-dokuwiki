@@ -1,9 +1,17 @@
-===== LU2 - Zahlensysteme =====
-==== Theorie ====
-<nspages . -h1  -exclude -simpleList -textPages=""> 
- 
-==== Aufgaben ====
-<nspages .:aufgaben -h1  -exclude -simpleList -textPages=""> 
- 
-==== Lösungen ====
-<nspages .:loesungen -h1  -exclude -simpleList -textPages="">
+===== LU01 - Zahlensysteme =====
+<WRAP info>
+Sie werden die Inhalte zu Zahlensystemen mittels eines Leitprogramms selbständig erlernen.\\
+Die Lösungen der Aufgaben sind integraler Teil des Leitprogramms. Dies ermöglicht die Selbstkontrolle.\\
+Im Verlauf der Bearbeitung gibt es "Checkpoints". Sie dienen der persönlichen Kontrolle des Wissensstandes und sind als Moodle-Test ausgelegt. Die Ergebnisse liegen erst nach der Überprüfung durch die Lehrperson vor.
+</WRAP>
+[[modul:mathe:ma1:thema:lu02zahlensystem:aufgaben:leitprogramm:k1:start|Was ist ein Leitprogramm?]]\\
+----
+[[modul:mathe:ma1:thema:lu02zahlensystem:aufgaben:leitprogramm:k2:start|1. Übersicht zu Zahlensystemen]]\\
+[[modul:mathe:ma1:thema:lu02zahlensystem:aufgaben:leitprogramm:k3:start|2. Das Positionssystem]]\\
+[[modul:mathe:ma1:thema:lu02zahlensystem:aufgaben:leitprogramm:k4:start|3. Potenzen und Massvorsätze]]\\
+[[modul:mathe:ma1:thema:lu02zahlensystem:aufgaben:leitprogramm:k5:start|4. Binärzahlen]]\\
+[[modul:mathe:ma1:thema:lu02zahlensystem:aufgaben:leitprogramm:k6:start|5. Wichtig für die Informatik 1]]\\
+[[modul:mathe:ma1:thema:lu02zahlensystem:aufgaben:leitprogramm:k7:start|6. Andere Zahlensysteme]]\\
+[[modul:mathe:ma1:thema:lu02zahlensystem:aufgaben:leitprogramm:k8:start|7. Reelle Zahlen binär dargestellt]]\\
+[[modul:mathe:ma1:thema:lu02zahlensystem:aufgaben:leitprogramm:k9:start|8. Wichtig für die Informatik 2]]\\
+
