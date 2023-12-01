@@ -2,13 +2,13 @@
 
 ===== Ausgangslage =====
 
-In der Aufgabe FIXME haben Sie einen Taschenrechner programmiert.
+In der [[modul:m319:learningunits:lu09:aufgaben:einfachefunktionen|Aufgabe LU09.A01]] haben Sie einen Taschenrechner programmiert.
 
 <WRAP center round box 60%>
 <file python calc.py>
 import math
- 
- 
+
+
 def add(num1, num2):
     """
     Addition of two numbers
@@ -17,8 +17,8 @@ def add(num1, num2):
     :return: result of calculation
     """
     return num1 + num2
- 
- 
+
+
 def sub(num1, num2):
     """
     Substracts two numbers
@@ -27,8 +27,8 @@ def sub(num1, num2):
     :return: result of calculation
     """
     return num1 - num2
- 
- 
+
+
 def mul(num1, num2):
     """
     multiply of two numbers
@@ -37,8 +37,8 @@ def mul(num1, num2):
     :return: result of calculation
     """
     return num1 * num2
- 
- 
+
+
 def div(num1, num2):
     """
     division of two numbers
@@ -47,8 +47,8 @@ def div(num1, num2):
     :return: result of calculation
     """
     return num1 / num2
- 
- 
+
+
 def pow(num1):
     """
     Squares two numbers
@@ -56,8 +56,8 @@ def pow(num1):
     :return: result of calculation
     """
     return num1 * num1
- 
- 
+
+
 def sqrt(num1):
     """
     return the root of a number
@@ -65,8 +65,8 @@ def sqrt(num1):
     :return: result of calculation
     """
     return math.sqrt(num1)
- 
- 
+
+
 def main():
     result_add = add(5, 5.5)
     result_div = div(10, 3)
@@ -74,15 +74,15 @@ def main():
     result_sub = sub(10, 4.4)
     result_pow = pow(23)
     result_sqrt = sqrt(81)
- 
+
     print(result_add)
     print(result_div)
     print(result_mul)
     print(result_sub)
     print(result_pow)
     print(result_sqrt)
- 
- 
+
+
 if __name__ == '__main__':
     main()
 </file>
@@ -90,11 +90,11 @@ if __name__ == '__main__':
 
 ===== Aufgabe =====
 In dieser Aufgabe werden sie diesen Taschenrechner nun als Modul für ein neues Projekt einbinden.
-Nehmen Sie dazu die Github-Classroom-Aufgabe zur Aufgabe LU11.A01 an.
+Nehmen Sie dazu die Github-Classroom-Aufgabe an.
 
 ==== Teilaufgabe 1 ====
 
-Importieren Sie das Modul ''calc.py'' so, dass folgender Code-Schnippsel funktioniert:
+Erstellen Sie das File ''calc.py'' in Ihrem Projekt und passen Sie ''Teilaufgabe1.py'' so an, damit der Code funktioniert:
 
 <WRAP center round box 60%>
 <code python>
