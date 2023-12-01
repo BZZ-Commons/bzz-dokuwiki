@@ -2,7 +2,8 @@
 Im Alltag kennen wir vor allem das [[https://arabischezahlen.de/|arabische Zahlensystem]] mit den uns bekannten Ziffern von 0 bis 9. Es ist das Zahlensystem für unseren Alltag.\\
 Daneben ist uns aber auch das [[https://de.wikipedia.org/wiki/R%C3%B6mische_Zahlschrift|römische Zahlensystem]] ein Begriff. Dieses wird eher für Kapitelnummerierungen oder Wiedergabe von Jahreszahlen verwendet.\\
 Aber warum verwenden wir hauptsächlich das arabische System? Dazu schauen wir uns eine einfache Addition an, nämlich die Aufgabe 12 + 19.
-
+----
+//Beispiel 1.1:// Addition im arabischen vs. römischen Zahlensystem\\
 <WRAP half column>
 Arabisches Zahlensystem\\
 \(\quad12 \newline +19 \newline \underline{\quad_1\quad}\newline \quad31 \) \\
@@ -12,6 +13,7 @@ Arabisches Zahlensystem\\
 Römisches Zahlensystem\\
 \(XII \newline IXX \newline \underline{\quad  \quad \quad} \newline ... \)
 </WRAP>
+----
 Wie leicht zu erkenne ist, hat das arabische Zahlensystem beim (schriftlich) Rechnen erhebliche Vorteile, weil pro Position addiert und - bei Bedarf - ein Übertrag erstellt wird. Etwas vergleichbares gibt es beim römischen Zahlensystem nicht.\\
 
 Lösen Sie nun die [[modul:mathe:ma1:thema:lu02zahlensystem:aufgaben:leitprogramm:k2:u1:start|Übung 1]]

@@ -1,0 +1,26 @@
+====== LU02.A01 - Gefahrenlage ======
+
+
+===== Rahmenbedingungen =====
+
+**Zeitbudget:** 20 Minuten \\
+**Sozialform:** Einzel- oder Partnerarbeit \\
+**Hilfsmittel:** \\
+  * **Dossier:** M183_Basics_Leitprogramm \\
+  * **Dossier:** OWASP_Top_10_2017_DE_Version_1_0 und/oder https://owasp.org/Top10/ \\
+  * **Risikotabelle:** https://de.wikipedia.org/wiki/Risikomatrix \\
+\\  
+**Erwartetes Ergebnis:** PDF-Dokument mit den Antworten der beiden Aufgaben
+
+===== Ausgangslage =====
+
+Computer sind spätestens seit den 1980er Jahren ein fester Bestandteil unseres Lebens. Der Durchbruch des WWW in den 1990er Jahren brachte allerdings nicht nur Vorteile mit sich. Diese vernetzte Form des Computing konnte fortan auch missbräuchlich verwendet werden. Zusammen mit den Möglichkeiten des WWW sind hier auch die Gefahren und Risiken gestiegen.
+
+===== Arbeitsauftrag =====
+==== Gefahren finden ====
+
+Wählen Sie mindestens drei Gefahren aus den OWASP aus. Unterscheiden Sie dabei "Ausnutzbarkeit", "Verbreitung", "Auffindbarkeit" und "Auswirkung". Bewerten Sie die Gefahren, wobei 1=gut/positiv und 4=schlecht/negativ ist.
+
+==== Gefahren bewerten ====
+
+Bewerten Sie Ihre Risiken durch eine Rangfolge, indem Sie das Gesamtrisiko zahlenmässig beziffern (Hinweis: Entscheidungstabelle oder negative Nutzwertanalyse).
