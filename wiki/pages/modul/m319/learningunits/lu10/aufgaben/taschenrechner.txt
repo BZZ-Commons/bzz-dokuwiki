@@ -110,6 +110,8 @@ if __name__ == '__main__':
 </code>
 </WRAP>
  
+Testen Sie die Implementierung mit ''Teilauftrag1_test.py''
+
 ==== Teilaufgabe 2 ====
 
 Importieren Sie das Modul ''calc.py'' so, dass folgender Code-Schnippsel funktioniert:
@@ -127,6 +129,8 @@ if __name__ == '__main__':
     main()
 </code>
 </WRAP>
+
+Testen Sie die Implementierung mit ''Teilauftrag2_test.py''
  
 ==== Teilaufgabe 3 ====
 
@@ -144,6 +148,8 @@ if __name__ == '__main__':
     main()
 </code>
 </WRAP>
+
+Testen Sie die Implementierung mit ''Teilauftrag3_test.py''
 
 ==== Teilaufgabe 4 ====
 
@@ -183,6 +189,8 @@ if __name__ == '__main__':
 </code>
 </WRAP>
 
+Testen Sie die Implementierung mit ''Teilauftrag4_test.py''
+
 ==== Teilaufgabe 5 ====
 
 Importieren Sie das Modul ''calculator'' aus dem Paket ''math_operations'' damit der Codeschnipsel funktioniert.
@@ -200,6 +208,8 @@ if __name__ == '__main__':
 </code>
 </WRAP>
 
+Testen Sie die Implementierung mit ''Teilauftrag5_test.py''
+
 ==== Teilaufgabe 6 ====
 
 Importieren Sie ''add'' und ''mul'' aus dem Modul ''calculator'' aus dem Paket ''math_operations'' damit der Codeschnipsel funktioniert.
@@ -216,3 +226,16 @@ if __name__ == '__main__':
     main()
 </code>
 </WRAP>
+
+Testen Sie die Implementierung mit ''Teilauftrag6_test.py''
+
+----
+<details>
+<summary>//=> GitHub Repo für externe Besucher//</summary>
+GitHub Repository https://github.com/templates-python/m319-lu10-a01-calculator
+
+//Lernende am BZZ müssen den Link zum GitHub Classroom Assignment verwenden//
+
+</details>
+{{tag>M319-LU10}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/ch/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Kevin Maurizi 

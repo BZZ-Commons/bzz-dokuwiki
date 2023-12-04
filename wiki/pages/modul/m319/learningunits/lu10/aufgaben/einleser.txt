@@ -61,9 +61,9 @@ if __name__ == '__main__':
 </file>
 
 <file python input_reader.py>
-'''
+"""
 input_reader module with input validation
-'''
+"""
 </file>
 </WRAP>
 
@@ -80,7 +80,7 @@ def read_float(text_to_display):
     Versuche:
       num = in_float_umwandeln(num)
     Ein ValueError wurde ausgelöst:
-      Fehlermeldung ausgeben
+      Fehlermeldung "Please, enter a real number!" ausgeben
       Endlosschleife nochmals durchlaufen
     Kein Error:
       Die Variable num zurückgeben 
@@ -99,7 +99,7 @@ Ergänzen Sie ihr Modul ''input_reader.py'' mit dieser Funktion.
 def read_float(text_to_display):
   ...
 
-def read_int(text_to_display):
+def read_int(text_to_display): # Fehlermeldung: Please, enter a valid whole number!
   ...  
   
 </file>
@@ -125,3 +125,15 @@ if __name__ == '__main__':
     main()
 </code>
 </WRAP>
+
+
+----
+<details>
+<summary>//=> GitHub Repo für externe Besucher//</summary>
+GitHub Repository https://github.com/templates-python/m319-lu10-a02-reader-module
+
+//Lernende am BZZ müssen den Link zum GitHub Classroom Assignment verwenden//
+
+</details>
+{{tag>M319-LU10}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/ch/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Kevin Maurizi 

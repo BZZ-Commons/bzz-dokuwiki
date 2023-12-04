@@ -2,7 +2,7 @@
 
 ===== Ausgangslage =====
 
-Sie haben in der Aufgabe LU11.A02 eine ''input_reader''-Modul erstellt. Damit können Sie jetzt ''int'' und ''float'' Zahlen einlesen, und dabei sicherstellen, dass die eingebenenen Werte wirklich einem ''int'' respektive einem ''float'' entsprechen. 
+Sie haben in der Aufgabe [[modul:m319:learningunits:lu10:aufgaben:einleser|LU10.A02]] eine ''input_reader''-Modul erstellt. Damit können Sie jetzt ''int'' und ''float'' Zahlen einlesen, und dabei sicherstellen, dass die eingebenenen Werte wirklich einem ''int'' respektive einem ''float'' entsprechen. 
 
 In dieser Aufgabe erweitern Sie diese Einleser, damit den zwei Funktionen ''read_int(text)'' und ''read_float(text)'' neu auch Grenzwerte mitgegeben werden können. Damit könnten Sie dann zum Beispiel auch sicherstellen, dass ''note = input_reader.read_float('Bitte eine Schulnote eingeben',lower_bound=1,upper_bound=6)'' nur Werte zwischen ''1.0'' und ''6.0'' akzeptiert.
 
@@ -13,15 +13,15 @@ Nehmen Sie die Github-Classroom Aufgabe an und clonen Sie das Repository in ihre
 
 Studieren Sie die zwei Python Files ''input_reader.py'' und ''main.py''.
 
-  * Sehen Sie im File ''main.py'' an welcher stelle die Grenzwerte mitgegeben werden? Vielleicht erinnern Sie sich an die [[modul:m319python:learningunits:lu09:lu09b-funktionenerweitert|LU09]] wo wir die benannten Argumente kennengelernt haben.
+  * Sehen Sie im File ''main.py'' an welcher stelle die Grenzwerte mitgegeben werden? Vielleicht erinnern Sie sich an die [[modul:m319:learningunits:lu09:funktionenerweitert|LU09]] wo wir die benannten Argumente kennengelernt haben.
  
 
 
-  * Sehen Sie im File ''input_reader.py'' das wir die Paramter für die Funktion noch nicht mit ''lower_bound'' und ''upper_bound'' ergänzt haben? In der LU09 haben wir auch kennengelernt wie sie Default-Werte für Parameter definieren. Dieses wissen werden wir hier jetzt benötigen.
+  * Sehen Sie im File ''input_reader.py'' das wir die Paramter für die Funktion noch nicht mit ''lower_bound'' und ''upper_bound'' ergänzt haben? In der LU09 haben wir auch kennengelernt wie sie Default-Werte für Parameter definieren. Dieses Wissen werden wir hier jetzt benötigen.
 
 ==== Teilauftrag 2 ====
 Ergänzen Sie die Parameter ''lower_bound'' und ''upper_bound'' in der Funktionsdefinition von ''read_float'' und ''read_int''.
-Damit wir ''lower_bound'' und ''upper_bound'' nicht jedes mal angeben müssen, sondern nur dann, wenn wir auch Grenzwerte brauchen, überlegen Sie sich sinnvolle default-Werte für ''lower_bound'' und ''upper_bound'' und weisen Sie diese zu. Die Theorie dazu, wie Sie default-Werte zuweisen finden Sie [[modul:m319python:learningunits:lu09:lu09b-funktionenerweitert|hier]].
+Damit wir ''lower_bound'' und ''upper_bound'' nicht jedes mal angeben müssen, sondern nur dann, wenn wir auch Grenzwerte brauchen, überlegen Sie sich sinnvolle default-Werte für ''lower_bound'' und ''upper_bound'' und weisen Sie diese zu. Die Theorie dazu, wie Sie default-Werte zuweisen finden Sie in [[modul:m319:learningunits:lu09:funktionenerweitert|LU09]].
 
 <WRAP center round tip 60%>
 Plus und Minus Unendlich wären vielleicht ganz gute default-Werte?
@@ -81,3 +81,144 @@ if __name__ == '__main__':
     main()
 </code>
 </WRAP>
+
+
+====== LU10.A02 - Einleser als Modul ======
+
+===== Ausgangslage =====
+
+In vielen der Aufgaben im Modul 319 lesen Sie mit ''input()'' Eingaben eines Benutzers ein. Ist die Eingabe eine Zahl, so müssen Sie die Eingabe mit ''int(input('Zahl eingeben'))'' in eine Ganzzahl oder mit ''float(input('Zahl eingeben'))'' in eine Fliesskommazahl umwandeln. Gibt der Benutzer nun aber anstatt einer ''Zahl'' einen ''Buchstaben'' ein, erhalten Sie einen ''ValueError'' vom Interpreter. Wir möchten uns nun ein Modul mit Funktionen erstellen, welche uns diese Eingaben validieren und im Falle einer falschen Eingabe eine Fehlermeldung ausgeben und den User erneut zur Eingabe auffordern.
+
+Der einfachste Weg dieses Problem zu lösen sehen Sie im folgenden abschnitt Pseudocode:
+
+<WRAP center round box 60%>
+<code>
+Funktion read_float(text_to_display)
+  Start Endlosschleife:
+    num = Einlesen_von_konsole(text_to_display)
+    Versuche:
+      num = in_float_umwandeln(num)
+    Ein ValueError wurde ausgelöst:
+      Fehlermeldung ausgeben
+      Endlosschleife nochmals durchlaufen
+    Kein Error:
+      Die Variable num zurückgeben 
+  Ende der Enlosschleife
+Ende der Funktion
+</code>
+</WRAP>
+
+Wir können mit unserem jetzigen Wissen aus dem Modul 319 leider noch nicht den ganzen Pseudocode in Python umsetzen. Wir wissen noch nicht wie wir Python etwas versuchen lassen. Um dieses Problem in Python zu lösen muss etwas Wissen aus dem Modul 320 vorgeholt werden. In Python gibt es die Möglichkeit das Programm etwas zu versuchen zu lassen und wenn es Schief geht, dann stürzt das Programm nicht ab sondern läuft weiter. Um dies zu verwirklichen gibt es den Befehl ''try-except''. Ein ''try-except''-Block sieht in etwa so aus:
+
+<WRAP center round box 60%>
+<code python>
+try:
+    #Code to try
+except <Name of Exception>:
+    #Code if it fails
+else:
+    #Code if it works
+</code>
+</WRAP>
+
+    
+Im ''try''-Block steht der Code, den Python auszuführen versuchen soll, im ''except''-Block steht der Code der ausgeführt wird, wenn es nicht geklappt hat. Im ''else''-Block steht der Code der ausgeführt wird, wenn es geklappt hat.
+
+===== Aufgabe =====
+Da Sie jetzt den ''try-except''-Block kennen können wir den Pseudocode jetzt komplett in Python umsetzen.
+
+==== Teilaufgabe 1 ====
+Nehmen Sie die Github-Classroom Aufgabe an und clonen Sie das Repository in ihre Entwicklungsumgebung.
+
+<WRAP center round box 60%>
+<file python main.py>
+def main():
+    # do something
+    float = read_float('Please enter a real number> ')
+    int = read_int('Please enter a whole number> ')
+
+    print(float)
+    print(int)
+
+
+if __name__ == '__main__':
+    main()
+</file>
+
+<file python input_reader.py>
+"""
+input_reader module with input validation
+"""
+</file>
+</WRAP>
+
+Erstellen Sie im File ''input_reader.py'' das Gerüst der Funktion ''read_float()''.
+
+==== Teilauftrag 2 ====
+Übersetzen Sie den Pseudocode aus der Ausgangslage in Python code für die Funktion ''read_float''.
+
+<WRAP center round box 60%>
+<code python>
+def read_float(text_to_display):
+  Start Endlosschleife:
+    num = Einlesen_von_konsole(text_to_display)
+    Versuche:
+      num = in_float_umwandeln(num)
+    Ein ValueError wurde ausgelöst:
+      Fehlermeldung "Please, enter a real number!" ausgeben
+      Endlosschleife nochmals durchlaufen
+    Kein Error:
+      Die Variable num zurückgeben 
+  Ende der Enlosschleife
+Ende der Funktion
+</code>
+</WRAP>
+
+==== Teilauftrag 3 ====
+Überlegen Sie sich, was Sie alles ändern müssen, damit die Funktion ''read_int'' sinnvoll funktionieren würde.
+Ergänzen Sie ihr Modul ''input_reader.py'' mit dieser Funktion.
+
+
+<WRAP center round box 60%>
+<file python input_reader.py>
+def read_float(text_to_display):
+  ...
+
+def read_int(text_to_display): # Fehlermeldung: Please, enter a valid whole number!
+  ...  
+  
+</file>
+</WRAP>
+
+
+==== Teilauftrag 4 ====
+Importieren Sie ihr ''input_reader'' Modul in ihrem ''main.py'' damit das Programm funktioniert.
+
+<WRAP center round box 60%>
+<code python>
+# Import the input_reader module here
+
+def main():
+    # do something
+    float = read_float('Please enter a real number> ')
+    int = read_int('Please enter a whole number> ')
+
+    print(float)
+    print(int)
+
+if __name__ == '__main__':
+    main()
+</code>
+</WRAP>
+
+
+----
+<details>
+<summary>//=> GitHub Repo für externe Besucher//</summary>
+GitHub Repository https://github.com/templates-python/m319-lu10-a03-reader-module-extended
+
+//Lernende am BZZ müssen den Link zum GitHub Classroom Assignment verwenden//
+
+</details>
+{{tag>M319-LU10}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/ch/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Kevin Maurizi 
