@@ -1,0 +1,43 @@
+====== LU11.A02 - Artikeldaten ======
+<WRAP center round info 60%>
+Erstelle die Testfälle für das Programm "Artikeldaten".
+</WRAP>
+
+===== Ausgangslage =====
+
+Mit dem Programm können Artikel erfasst werden. 
+Dabei müssen die Eingaben des Benutzers auf ihre Gültigkeit geprüft werden.
+
+==== Validierungsregeln ====
+^ Artikelnummer | Nummerisch, ganzzahlig \\ Wird automatisch vom Programm vergeben | 
+^ Artikelbezeichnung | Mindestens 3 Zeichen, maximal 50 Zeichen, enthält keine Leerzeichen |
+^ Einheit | Stueck, Kilogramm, Meter oder Pack |
+^ Preis pro Einheit | Nummerisch, 2 Nachkommastellen \\ zwischen 0 und 1'000 |
+
+
+==== Ausgabe ====
+Das Programm zeigt bei korrekten Eingaben eine Erfolgsmeldung an: \\ 
+''Eingaben korrekt. Daten gespeichert.''
+
+Bei falschen Eingaben wird eine Fehlermeldung angezeigt.
+Zum Beispiel: \\ 
+''ungültige Einheit''
+
+===== Auftrag =====
+==== Testfälle erstellen ====
+
+Erstelle mindestens 8 Testfälle für die Erfassung der Artikel.
+  * Ein Testfall mit korrekten Werten
+  * Für jedes Eingabefeld 2-3 Testfälle mit ungültigen Werten.
+    * Formal falsche Werte
+    * Ungültige Werte (zu gross, zu klein)
+
+
+===== Abgabe =====
+
+Exportiere (Drucke) dein Dokument mit den Testfällen  als PDF-Datei.
+Lade die PDF-Datei hier in Moodle hoch.
+
+----
+{{tag>M431-LU11}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter, Kevin Maurizi

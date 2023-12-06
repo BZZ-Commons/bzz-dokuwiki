@@ -1,0 +1,53 @@
+====== LU11.L02 - Artikeldaten ======
+
+^ Nr  || 1 |
+^ Input ^ Artikelbezeichnung  | Rundring |
+^ ::: ^ Einheit  | Meter |
+^ ::: ^ Preis pro Einheit  | 7.45 |
+^ Erwartetes Resultat || Eingaben korrekt, Daten gespeichert |
+| |||
+^ Nr  || 2 |
+^ Input ^ Artikelbezeichnung  | A |
+^ ::: ^ Einheit  | Kilogramm |
+^ ::: ^ Preis pro Einheit  | 75.5 |
+^ Erwartetes Resultat || Artikelbezeichnung zu kurz |
+| |||
+^ Nr  || 3 |
+^ Input ^ Artikelbezeichnung  | Stachliger Aal |
+^ ::: ^ Einheit  | Meter |
+^ ::: ^ Preis pro Einheit  | 13.4 |
+^ Erwartetes Resultat || Leerzeichen in der Artikelbezeichnung |
+| |||
+^ Nr  || 4 |
+^ Input ^ Artikelbezeichnung  | Dies_ist_ein_sehr_langer_Artikel_der_zu_Problemen_führen_sollte |
+^ ::: ^ Einheit  | Pack |
+^ ::: ^ Preis pro Einheit  | 43.75 |
+^ Erwartetes Resultat || Artikelbezeichnung zu lang |
+| |||
+^ Nr  || 5 |
+^ Input ^ Artikelbezeichnung  | Quadratlatschen |
+^ ::: ^ Einheit  | Paar |
+^ ::: ^ Preis pro Einheit  | 32.6 |
+^ Erwartetes Resultat || Ungültige Einheit |
+| |||
+^ Nr  || 6 |
+^ Input ^ Artikelbezeichnung  | Squarepants |
+^ ::: ^ Einheit  | Stück |
+^ ::: ^ Preis pro Einheit  | 1.3758 |
+^ Erwartetes Resultat || Zu viele Nachkommastellen |
+| |||
+^ Nr  || 7 |
+^ Input ^ Artikelbezeichnung  | Dosenluft |
+^ ::: ^ Einheit  | Stück |
+^ ::: ^ Preis pro Einheit  | 1000.00 |
+^ Erwartetes Resultat || Preis pro Einheit zu gross |
+| |||
+^ Nr  || 8 |
+^ Input ^ Artikelbezeichnung  | Gürteltier |
+^ ::: ^ Einheit  | Kilogramm |
+^ ::: ^ Preis pro Einheit  | 0 |
+^ Erwartetes Resultat || Preis pro Einheit zu klein |
+
+----
+{{tag>M431-LU11}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter, Kevin Maurizi

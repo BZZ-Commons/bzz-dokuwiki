@@ -2,7 +2,7 @@
 Sie haben im Kapitel 1 gesehen, dass das arabische Zahlensystem erhebliche Vorteile gegenüber dem römsichen hat. Es ermöglicht uns überhaupt erst das schriftliche Rechnen und ist somit massgebend dafür, dass es heute Rechenmaschinen gibt. Das heisst, es ist die Grundlage unserer modernen Compuertechnologie. Ein Computer stellt nämlich die Informationen durch binäre - also zweiwertige - Zeichen dar. Technisch betrachtet beduetet das, dass es 2 physikalische Werte wie z.B. 0V und 5V gibt. Logisch spricht man von Zuständen, die mit ''WAHR''/''FALSCH'' (True/False) oder ''0''/''1'' gekennzeichnet sind.\\
 Ein Computer muss also Information in einer Folge binärer Werte speichern und verabreiten. So wird der Buchstaben A durch die Zeichenfolge (Bitmuster) 0100'0001 (die Zahl 65) dargestellt. Erst die konkrete Interpretation legt dann fest, ob das Bitmuster einen Buchstaben, eine Zahl, eine Farbe einen Ton (akustisches Signal) usw. wiedergibt.\\
 Es ist ersichtlich, dass die Zeichenfolge 0100'0001 dem arabischen Zahlensystem entspricht. Darum wollen wir dieses System - es handelt sich um ein **Positionssytem** - genauer betrachten.\\
-===Das 10-er System===
+===2.1 Das 10-er System===
 Das 10er System - besser bekannt unter dem Namen **Dezimalsystem** - bildet die Grundlage unseres Umgangs mit Zahlen . Es ist uns von klein auf vertraut. Die wenigsten machen sich daher Gedanken darüber, wie es genau aufgebaut ist und wie es "funktioniert". Wir sind uns den Umagng damit gewohnt.\\
 Was Ihnen aber bekannt sein dürfte, sind Begriffe wie E, Z, H usw. Sie bezeichnen das Gewicht, das eine Ziffer an einer Position einnimmt.\\
 Und damit haben wir bereits ''drei wichtige Begriffe'' des 10er-Systems benannt, nämlich **Ziffer**, **Gewicht** und **Position**.\\
@@ -28,7 +28,7 @@ Wir haben hier also eine 4-stellige Zahl oder eben eine Zahl mit 4 Positionen. A
 Zahlen lassen sich auch als Potenz einer Basis \(b\) als \(b^x\) schreiben. Die bekannteste Schreibweise dürfte wohl die der Zehnerpotenzen sein, also z.B. \(10^3 = 1000\). Unter Verwendung dieses Wissens, lässt sich Beispiel 2.2 wie folgt anschreiben\\
 \(\quad 1 \cdot 10^3 = 1000 \newline + 3 \cdot 10^2 = \enspace 300 \newline + 6 \cdot 10^1 = \quad 60 \newline + 7 \cdot 10^0 = \underline{\quad \enspace  7 \quad} \newline  \quad \quad \quad \quad  \quad 1367 \)\\
 Wichtig zu wissen: \(b^0 = 1\), für alle b\\
-=== Aufbau eines Positionssystems===
+===2.2 Aufbau eines Positionssystems===
 Mit dem oben erklärten Wissen kann der Aufbau eines Positionssystems anhand des Dezimalsytsems wie folgt zusammenfassend dargestellt werden.
 
 {|style = "table-layout: 20%;"
@@ -92,7 +92,7 @@ Angewendet auf Beispiel 2.1/2.2 lässt sich dieser Sachverhalt wie folgt darstel
 Beim Zählen wird jeweils nach Nutzung aller Ziffern einer Position die nächste Position eröffnet.
 \(\quad \quad 0 \newline \quad \quad 1 \newline ...  \newline \quad \quad 9 \newline  \quad \enspace 10 \newline \quad \enspace 11 \newline ... \newline \quad \enspace 19 \newline \quad \enspace 20 \newline ... \newline \quad \enspace 98 \newline \quad \enspace 99 \newline \quad 100 \newline \quad 101 \newline ... \)
 
-===Gibt es auch ein 3er-System?===
+===2.3 Gibt es auch ein 3er-System?===
 Das Positionssystem kann für jede beliebige Anzahl von Ziffern angewendet werden. Auf ein 3er-System umgesetzt ergeben sich folgende Merkmale\\
 {|style = "table-layout: 20%;"
 |- 
@@ -134,7 +134,7 @@ Wie man das rechnet? Ganz einfach anhand des Wertes der Ziffer und deren Gewicht
 
 ----
 //Beispiel 2.4:// Umwandlung einer Zahl im 3er-System ins Dezimalsystem (10er-System)\\
-\(1201_{(3)} = 1 \cdot 3^3 + 2 \cdot 3^2 + 0 \cdot 0^1 + 1 \cdot 0^0 = 1 \cdot 27 + 2 \cdot 9 + 0 \cdot 3 + 1 \cdot 1 = 46_{(10)} \)\\
+\(1201_{(3)} = 1 \cdot 3^3 + 2 \cdot 3^2 + 0 \cdot 3^1 + 1 \cdot 3^0 = 1 \cdot 27 + 2 \cdot 9 + 0 \cdot 3 + 1 \cdot 1 = 46_{(10)} \)\\
 ----
 **Zur Schreibweise**\\
 Es ist üblich, die Basis des Systems in (..) geschrieben tiefgestellt dem Wert anzufügen, also \(2_{(3)}\) für ein 3er- oder \(4_{(7)}\) für ein 7er-System.
@@ -143,8 +143,27 @@ Lösen Sie nun die [[modul:mathe:ma1:thema:lu02zahlensystem:aufgaben:leitprogram
 ----
 Überprüfen Sie Ihre Antworten. [[modul:mathe:ma1:thema:lu02zahlensystem:aufgaben:leitprogramm:k3:l2:start|Lösung 2]]\\
 Sollten Sie Fehler haben, schauen Sie sich die Theorie noch einmal genau an, besprechen Sie offene Fragen mit Ihren Kolleginnen und/oder Kollegen. Fragen Sie auch Ihre Lehrperson, wenn Sie weiterführende Hilfe brauchen.
-
 ----
+===2.4 Rechnen im Positionssystem===
+Das Positionssystem ist auch bezüglich dem (schriftlichen) Rechnen hervorragend. Es basiert auf wiederkehrenden Ablaufschritten, so dass sich hier gut Algorithmen definieren lassen.\\
+Sie kennen das bestens aus all ihren Erfahrungen; 5+4 = 9 behalte 1. Diese Vorschrift kann nun auf beliebig viele Stellen ausgedehnt werden.
+----
+//Beispiel 2.5:// Schriftliche Addition und Multiplikation im 10er System \\
+\( \quad 245 \\ +196 \\ \quad \underline{ _{1 \, 1} \quad } \\ \quad 441 \) \\ 
+\( \underline{245 \cdot 196} \\ \quad \quad \; _{4\, 3} \\ \quad \quad \;980 \\ \quad \enspace \;  _{3\, 2} \\ \quad \enspace \; 784 \cdot \\ \enspace \; _{1\; 1} \\ \quad 392 \cdot \cdot  \\ \enspace \; \underline{ \; _{1 \, 2 \, 1 } \quad} \\ \quad 84020 \)
+----
+//Beispiel 2.6// Schriftliche Addition und Multiplikation im 3er System\\
+Absolut identisch verhält es sich mit den schriftlichen Rechvorgängen bei jedem belibigen Positionssystem. Anhand des oben eingeführten 3er-Systems soll das nun aufgezeigt werden.\\
+\( \quad 201_{(3)} \quad \longrightarrow 19_{(10)} \\ +122_{(3)} \quad \longrightarrow 17_{(10)} \\ \enspace \underline{ \enspace _{1 \, 1} \quad } \\  \enspace 1100_{(3)} \quad \longrightarrow 36_{(10)} \) \\ 
+
+\( \underline{201 \cdot 122} \\ \quad \quad \;122 \\ \quad \enspace \; 000 \cdot \\ \enspace \; _{1\; 1} \\ \enspace \underline{1021 \cdot \cdot} \\ \enspace 102222_{(3)} \enspace \longrightarrow 323_{(10)}\)
+----
+Lösen Sie nun die [[modul:mathe:ma1:thema:lu02zahlensystem:aufgaben:leitprogramm:k3:u3:start|Übung 3]].
+----
+Überprüfen Sie Ihre Antworten. [[modul:mathe:ma1:thema:lu02zahlensystem:aufgaben:leitprogramm:k3:l3:start|Lösung 3]]\\
+Sollten Sie Fehler haben, schauen Sie sich die Theorie noch einmal genau an, besprechen Sie offene Fragen mit Ihren Kolleginnen und/oder Kollegen. Fragen Sie auch Ihre Lehrperson, wenn Sie weiterführende Hilfe brauchen.
+----
+
 [[modul:mathe:ma1:thema:lu02zahlensystem:aufgaben:leitprogramm:k4:start|nächstes Kapitel]]
 ----
 [[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) René Probst
