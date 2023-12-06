@@ -1,0 +1,55 @@
+====== LU11.A01 - Blackbox-Test ======
+<WRAP center round info 60%>
+Erstelle die Testfälle und das Testprotokoll für das Programm "Notenschnitt".
+</WRAP>
+
+===== Ausgangslage =====
+
+In einem Modul hast du mehrere Leistungsbeurteilungen, die jeweils mit einer Note bewertet werden. 
+Am Schluss des Semesters wird die Zeugnisnote aus dem Durchschnitt aller Noten berechnet.
+
+==== Spezifikation des Programmablaufs ====
+  - Zuerst gibt der Benutzer an, wie viele Noten er hat.
+  - Solange nicht alle Noten eingegeben wurden,
+    - gibt der Benutzer eine Note ein.
+  - Das Programm zeigt den Durchschnitt gerundet auf halbe Noten an.
+
+Falls der Benutzer eine ungültige Eingabe (z.B. Buchstabe statt Zahl) macht,
+  * zeigt das Programm die Fehlermeldung "Ungültige Eingabe"
+  * muss der Benutzer die Eingabe wiederholen. 
+
+
+===== Auftrag =====
+==== Testfälle ====
+
+Definiere Testfälle für die folgenden Situationen.
+Wähle sinnvolle Werte für die Eingaben der Anzahl und Noten, sofern nichts vorgegeben ist.
+
+  - Der Benutzer hat genau **eine** Note.
+  - Der Benutzer hat mehrere Noten.
+  - Der Benutzer hat **keine** Noten.
+  - Der Benutzer gibt bei der Anzahl Noten einen formal falschen Wert (keine Ganzzahl) ein.
+  - Der Benutzer gibt eine formal falsche Note (keine Dezimalzahl) ein.
+
+Jeder Testfall muss vollständig definiert sein:
+  * Nummer
+  * Bezeichnung
+  * Eingaben
+  * Erwartete Ausgabe
+
+==== Testprotokoll ====
+Erstelle ein Testprotokoll mit Kopf (Programm, Autor, ...) , Testfällen und Fazit.
+Führe deine Testfälle mit Hilfe des Trinkets aus und halte die Resultate fest.
+
+=== Trinket ===
+<HTML>
+<iframe src="https://trinket.io/embed/python/28edb95b2b?outputOnly=true&runOption=run&start=result" width="100%" height="400" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+</HTML>
+===== Abgabe =====
+
+Exportiere (Drucke) dein Dokument mit den Testfällen und dem Testprotokoll als PDF-Datei.
+Lade die PDF-Datei hier in Moodle hoch.
+
+----
+{{tag>M431-LU11}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter, Kevin Maurizi

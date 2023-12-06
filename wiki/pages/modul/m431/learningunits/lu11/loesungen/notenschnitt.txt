@@ -1,0 +1,30 @@
+====== LU11.L01 - Blackbox-Test ======
+<WRAP center round info 60%>
+Erstelle die Testfälle und das Testprotokoll für das Programm "Notenschnitt".
+</WRAP>
+
+==== Testfälle ====
+^ Nr ^ Bezeichnung ^ Eingaben ^^ Erwartetes Resultat ^
+^ ::: ^ ::: ^ Anzahl ^ Noten ^ ::: ^ 
+| 1 | Eine Note | 1 | 4.3 | Durchschnitt: 4.5 |
+| 2 | Mehrere Noten | 3 | 2.5 \\ 5.6 \\ 4.6 | Durchschnitt: 4 |
+| 3 | Keine Noten | 0 | | //keine Ausgabe// |
+| 4 | Ungültige Anzahl | a \\ 1 | 5 | ungültige Eingabe \\ Durchschnitt: 5 |
+| 5 | Ungültige Note | 1 | 3-4 \\3.25 | ungültige Eingabe \\ Durchschnitt: 3.5 |
+
+==== Testprotokoll ====
+
+^ Programm | Notenschnitt ^ Version | 0.9 |
+^ Datum | 26.10.2023 ^ Uhrzeit | 14:30 |
+^ Tester | Marcel Suter |||
+^ Nr ^ Effektives Resultat ^ Bewertung ^ Bemerkung ^
+| 1 | Durchschnitt: 4.5 | OK |   |
+| 2 | Durchschnitt: 4.0 | N | Unnötige Nachkommastelle |
+| 3 | ZeroDivisionError | H | Programmabsturz |
+| 4 | ungültiger Wert \\ Durchschnitt: 5.0 | N | Fehlermeldung entspricht nicht der Spezifikation \\ Unnötige Nachkommastelle |
+| 5 | ungültiger Eingabe \\ Durchschnitt 3.0 | H | Durchschnitt ist nicht korrekt \\ Tippfehler in Fehlermeldung |
+^ Fazit | Das Programm hat zwei Hauptfehler. Es muss überarbeitet und erneut getestet werden. |||
+
+----
+{{tag>M431-LU11}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter, Kevin Maurizi

@@ -57,10 +57,60 @@ Um eine einzelne Testfunktion auszuführen, kann ich ...
 Bevor ich einen Push ins GitHub-Repository mache, führe ich jeweils alle Testfunktionen aus.
 Dadurch stelle ich sicher, dass meine Änderungen keine unerwarteten Auswirkungen auf andere Programmteile haben.
 
-FIXME Screenshot Terminal + Pytest
+{{:modul:m431:learningunits:lu11:pytest_terminal.png?400|}}
 
 ==== Testresultate auswerten ====
+Falls ein Test nicht erfolgreich war, musst du die Ausgaben analysieren.
+=== Beispiel 1 ===
 
+<code>
+E       AssertionError: assert '7\n' == '0\n'
+E         - 0
+E         + 7
+</code>
+
+Hier wurde der Test ausgeführt, aber das Resultat entspricht nicht den Erwartungen.
+  * Erwartetes Resultat: '0'
+  * Tatsächliches Resultat: '7'
+
+//Übrigens: Das '\n' steht für einen Zeilenumbruch.//
+
+=== Beispiel 2 ===
+<code>
+divider_test.py::test_2 FAILED                                           [100%]
+divider_test.py:11 (test_2)
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x000001B8EC7B08E0>
+capsys = <_pytest.capture.CaptureFixture object at 0x000001B8EC7B0AF0>
+
+    def test_2(monkeypatch, capsys):
+        inputs = iter(['0', '7'])
+        monkeypatch.setattr('builtins.input', lambda _: next(inputs))
+>       divider.main()
+
+divider_test.py:15: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+    def main():
+        """
+        Ermittelt den grössten gemeinsamen Teiler von zwei Ganzzahlen
+        :return: None
+        """
+        first_number = int(input("Gib die erste Ganzzahl ein > "))
+        second_number = int(input("Gib die zweite Ganzzahl ein > "))
+        while second_number != 0:
+>           foo = second_number / first_number
+E           ZeroDivisionError: division by zero
+
+divider.py:9: ZeroDivisionError
+</code>
+
+Bei diesem Beispiel ist das Programm abgestürzt.
+Eine wichtige Information steckt in der letzten Zeile: ''divider.py:9: ZeroDivisionError'':
+  * Das Modul ''divider.py'' hat den Absturz verursacht.
+  * Der Absturz erfolgte auf Zeile 9 des Moduls
+  * Ein ''ZeroDivisionError'' wurde ausgelöst.
+
+In einem solchen Fall muss du die Programmlogik genau studieren und evtl. den Test mit Hilfe des Debuggers schrittweise durchführen.
 
 ----
 {{tag>M431-LU11}}
