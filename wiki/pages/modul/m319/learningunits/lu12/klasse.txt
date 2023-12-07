@@ -105,7 +105,7 @@ Zu Testzwecken können wir ein paar Objekte erstellen und ausgeben.
 
 Klassen sind keine eigenständigen Pythonskripts, die selbständig ausführbar sind.
 Wir können aber zu Testzwecken eine Klasse direkt aufrufen.
-In diesem Codeblock erstellen wir ein paar Objekte, setzen die Attribute und geben die Objekte aus.
+In diesem Codeblock erstellen wir ein Objekt, setzen das Attribut ''firstname'' und geben das Objekt aus.
 
 
 ----

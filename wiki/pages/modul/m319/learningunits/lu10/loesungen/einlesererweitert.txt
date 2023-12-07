@@ -105,7 +105,7 @@ def read_float(text_to_display, lower_bound = float(-inf), upper_bound = float(i
             return num
 
 
-def read_float(text_to_display, lower_bound = float(-inf), upper_bound = float(inf)):
+def read_int(text_to_display, lower_bound = float(-inf), upper_bound = float(inf)):
     '''
     Read an int from the user within bounds
     '''
