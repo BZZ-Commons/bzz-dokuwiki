@@ -94,7 +94,19 @@ Nehmen Sie dazu die Github-Classroom-Aufgabe an.
 
 ==== Teilaufgabe 1 ====
 
-Erstellen Sie das File ''calc.py'' in Ihrem Projekt und passen Sie ''Teilaufgabe1.py'' so an, damit der Code funktioniert:
+Erstellen Sie das File ''calc.py'' in Ihrem Projekt.
+<WRAP center round important 60%>
+Sie werden von PyCharm gefragt, ob Sie das File zu Git hinzufügen möchten.
+Klicken Sie auf **Add**
+
+{{:modul:m319:learningunits:lu10:aufgaben:gitadd.png?400|}}
+</WRAP>
+
+und ergänzen Sie den [[modul:m319:learningunits:lu10:aufgaben:taschenrechner#ausgangslage|Code]] von oben.
+
+
+
+Passen Sie ''Teilaufgabe1.py'' so an, damit der Code funktioniert:
 
 <WRAP center round box 60%>
 <code python>
@@ -193,7 +205,7 @@ Testen Sie die Implementierung mit ''Teilauftrag4_test.py''
 
 ==== Teilaufgabe 5 ====
 
-Importieren Sie das Modul ''calculator'' aus dem Paket ''math_operations'' damit der Codeschnipsel funktioniert.
+Importieren Sie das Modul ''calculator'' aus dem **Paket** ''math_operations'' damit der Codeschnipsel funktioniert.
 
 <WRAP center round box 60%>
 <code python>
@@ -212,7 +224,7 @@ Testen Sie die Implementierung mit ''Teilauftrag5_test.py''
 
 ==== Teilaufgabe 6 ====
 
-Importieren Sie ''add'' und ''mul'' aus dem Modul ''calculator'' aus dem Paket ''math_operations'' damit der Codeschnipsel funktioniert.
+Importieren Sie ''add'' und ''mul'' aus dem Modul ''calculator'' aus dem **Paket** ''math_operations'' damit der Codeschnipsel funktioniert.
 
 <WRAP center round box 60%>
 <code python>

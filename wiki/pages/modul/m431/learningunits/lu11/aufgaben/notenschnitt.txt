@@ -14,7 +14,7 @@ Am Schluss des Semesters wird die Zeugnisnote aus dem Durchschnitt aller Noten b
     - gibt der Benutzer eine Note ein.
   - Das Programm zeigt den Durchschnitt gerundet auf halbe Noten an.
 
-Falls der Benutzer eine ungültige Eingabe (z.B. Buchstabe statt Zahl) macht,
+Falls der Benutzer eine formal falsche Eingabe (z.B. Buchstabe statt Zahl, Dezimalbruch statt Ganzzahl, ...) macht,
   * zeigt das Programm die Fehlermeldung "Ungültige Eingabe"
   * muss der Benutzer die Eingabe wiederholen. 
 

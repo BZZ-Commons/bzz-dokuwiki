@@ -49,6 +49,27 @@ if __name__ == '__main__':
 </code>
 </WRAP>
 
+
+==== Teilaufgabe 4 ====
+
+<WRAP center round box 60%>
+<code python>
+# Add import statement for add as addition and mul as multiplication from calc
+from calc import add as addition, mul as multiplication
+
+
+def add(num1, num2):
+    '''
+    Builds the sum of two numbers and prints the result
+    :param num1: first number
+    :param num2: second number
+    :return: None
+    '''
+    print(num1 + num2)
+
+</code>
+</WRAP>
+
 ==== Teilaufgabe 5 ====
 <WRAP center round box 60%>
 <code python>

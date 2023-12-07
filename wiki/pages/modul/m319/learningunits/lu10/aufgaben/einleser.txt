@@ -18,8 +18,6 @@ Funktion read_float(text_to_display)
       Endlosschleife nochmals durchlaufen
     Kein Error:
       Die Variable num zurückgeben 
-  Ende der Enlosschleife
-Ende der Funktion
 </code>
 </WRAP>
 
@@ -75,6 +73,9 @@ Erstellen Sie im File ''input_reader.py'' das Gerüst der Funktion ''read_float(
 <WRAP center round box 60%>
 <code python>
 def read_float(text_to_display):
+  """
+  TODO: Erstellen Sie den DocString
+  """
   Start Endlosschleife:
     num = Einlesen_von_konsole(text_to_display)
     Versuche:
@@ -84,10 +85,13 @@ def read_float(text_to_display):
       Endlosschleife nochmals durchlaufen
     Kein Error:
       Die Variable num zurückgeben 
-  Ende der Enlosschleife
-Ende der Funktion
 </code>
 </WRAP>
+
+<WRAP center round important 60%>
+Erstellen Sie einen passenden Docstring wie in [[modul:m319:learningunits:lu09:funktionen#dokumentationszeichenkette_docstring|LU09]] erklärt.
+</WRAP>
+
 
 ==== Teilauftrag 3 ====
 Überlegen Sie sich, was Sie alles ändern müssen, damit die Funktion ''read_int'' sinnvoll funktionieren würde.
