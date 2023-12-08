@@ -1,0 +1,8 @@
+====== LU03.L01 - Binäre Codierung von Nachrichten ======
+
+Wie lautet die binäre Codierung der Zeichenkette «SOS». Der entsprechende Codewert in der ASCII Codetabelle ist wie folgt: S=83, O=79.
+
+S = ASCII(83) --> Binär(0101'0011) \\
+O = ASCII(79) --> Binär(0100'1111) \\
+
+SOS --> 010100110100111101010011
