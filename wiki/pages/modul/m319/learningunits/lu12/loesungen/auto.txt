@@ -1,53 +1,9 @@
 ====== LU12.L01 - Auto ======
 
-==== main.py ====
+{{gh>https://github.com/templates-python/m319-lu12-a01-car/blob/solution/car.py}}
 
-<code python>
-from car import Car
+{{gh>https://github.com/templates-python/m319-lu12-a01-car/blob/solution/main.py}}
 
-
-def main():
-    car_list = []
-    while True:
-        brand = input('Marke > ')
-        if brand != '':
-            car = Car()
-            car_list.append(car)
-            car.brand = brand
-            model = input('Modell > ')
-            car.model = model
-            construction = input('Baujahr > ')
-            car.construction = construction
-        else:
-            break
-
-    for car in car_list:
-        print(car.construction)
-        print(car.brand)
-        print(car.model)
-
-if __name__ == '__main__':
-    main()
-
-</code>
-
-==== car.py ====
-
-<code python>
-from dataclasses import dataclass
-
-
-@dataclass
-class Car:
-    """
-    a car
-    """
-    brand: str
-    model: str
-    construction: int
-
-
-if __name__ == '__main__':
-    pass
-
-</code>
+----
+{{tag>M319-LU12}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

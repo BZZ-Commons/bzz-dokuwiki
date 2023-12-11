@@ -20,10 +20,10 @@ Erstellen Sie die Definition der Klasse in der Datei "car.py".
 ==== Eingabe eines Autos ====
 Codieren Sie das Erfassen und Speichern eines Autos in der Datei ''main.py''.
 
+  - Eingabe der Marke.
+  - Eingabe des Modells.
+  - Eingabe des Baujahrs.
   - Objekt der Klasse ''Car'' erzeugen.
-  - Eingabe der Marke, Speichern des Attributs
-  - Eingabe des Modells, Speichern des Attributs
-  - Eingabe des Baujahrs, Speichern des Attributs
   - Ausgabe von Baujahr, Marke und Modell
 
 === Ablauf im Terminal ===
@@ -46,10 +46,10 @@ Clio
   - Solange ''True''
     - Eingabe der Marke
     - Falls Marke nicht leer ist
-      - Objekt der Klasse ''Car'' erzeugen und zur Liste hinzufügen
-      - Speichern der Marke
-      - Eingabe des Modells, Speichern des Attributs
-      - Eingabe des Baujahrs, Speichern des Attributs
+      - Eingabe des Modells.
+      - Eingabe des Baujahrs.
+      - Objekt der Klasse ''Car'' erzeugen.
+      - Car-Objekt in Liste einfügen.
     - Sonst
       - Abbruch der Iteration
   - Loop über alle Elemente der Liste
@@ -82,3 +82,16 @@ Clio
 === Tests ===
 
   * test_multiple_cars
+
+
+<details>
+<summary>//=> GitHub Repo für externe Besucher//</summary>
+GitHub Repository https://github.com/templates-python/m319-lu12-a01-car
+
+//Lernende am BZZ müssen den Link zum GitHub Classroom Assignment verwenden//
+
+</details>
+
+----
+{{tag>M319-LU12}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

@@ -1,0 +1,37 @@
+====== LU11.A02: Zahlzeichen ======
+<WRAP center round todo 60%>
+Ergänze das die Funktionen zum Einlesen der Zahlzeichen und Werte.
+</WRAP>
+
+===== Ausgangslage =====
+Dein Onkel hat dier seine Zeitreisen-Maschine geschenkt.
+Dadurch kannst du nun beliebige Kulturen aus vergangenen Zeiten besuchen.
+Allerdings hast du Mühe die Zahlen zu lesen, da diese alten Kulturen kein Dezimalsystem verwenden.
+Zwei Beispiele alter Zahlzeichen:
+
+^  Rom  ^^ ^  Babylon  ^^
+^ Zahlzeichen ^ Wert ^ ^ Zahlzeichen ^ Wert ^
+| I | 1 | | L | 1 |
+| V | 5 | | C | 12 |
+| X | 10 | | V | 144 |
+| C | 100 | | X | 288 |
+
+Als Informatikerin schreibst du einfach ein Programm, um die Zahlen umzurechnen.
+
+===== Auftrag =====
+Ergänze die Programmlogik in den vorgegebenen Funktionen.
+In ''main_test.py'' findest du sowohl Tests für jede einzelne Funktion, als auch Tests für das Programm als Ganzes.
+
+===== Abgabe =====
+Die Abgabe erfolgt mittels Push ins GitHub Repository.
+
+<details>
+<summary>//=> GitHub Repo für externe Besucher//</summary>
+GitHub Repository https://github.com/templates-python/m319-lu11-a01-numerals
+
+//Lernende am BZZ müssen den Link zum GitHub Classroom Assignment verwenden//
+
+</details>
+
+{{tag>M319-C1G M319-C1F M319-C1E}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter
