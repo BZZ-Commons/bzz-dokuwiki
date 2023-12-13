@@ -76,7 +76,7 @@ Trotzdem braucht es ein wenig Koordination zwischen den Mitarbeitern.
 
 ==== Vorbereitung ====
   - Akzeptieren Sie das Assignment im GitHub Classroom. 
-  - Sie können die Gruppen (8 Gruppen à 2-3 Personen) selber bilden:
+  - Sie können die Gruppen (6 Gruppen à 3-4 Personen) selber bilden:
     * Entweder: Sie erstellen eine neue Gruppe.
     * Oder: Sie wählen eine bestehende Gruppe aus.
   - Setzen Sie sich mit Ihrer Gruppe an einen 4er-Tisch. Es ist **keine** Kommunikation über die Aufgabe ausserhalb Ihrer Gruppe erlaubt.
@@ -104,13 +104,13 @@ Die Datei ''my_test'' hilft Ihnen, ihre Funktionen und Klassen zu testen.
 </WRAP>
 
 ==== Realisierung ====
-{{:modul:m319python:learningunits:lu12:aufgaben:lotto_tasks.png?400|}}
+{{:modul:m319:learningunits:lu12:aufgaben:lotto_tasks.png?400|}}
 
   - Suchen Sie in der Übersicht diejenigen Tasks, 
     * die noch von keinem Teammitglied bearbeitet werden,
     * deren Vorgänger bereits abgeschlossen sind.
   - Wählen Sie einen dieser offenen Task (Issue) aus.
-  - Tragen Sie sich als zuständige Person ein.
+  - Tragen Sie sich als zuständige Person ein: Issue auswählen und ''assign yourself'' klicken.
   - Aktualisieren Sie den Stand Ihres Projekts in PyChar mittels **Update Project**
     * Lösen Sie allfällige Merge Konflikte
   - Codieren Sie die Klasse oder Funktion schrittweise. Immer wenn Sie einen Stand erreicht haben, bei dem ihr Code
@@ -121,19 +121,26 @@ Die Datei ''my_test'' hilft Ihnen, ihre Funktionen und Klassen zu testen.
       * Lösen Sie allfällige Merge Konflikte
     - Push auf GitHub
   - Falls die Klasse / Funktion noch nicht vollständig ist, gehen Sie wieder zu Schritt 3
+  - Ändern Sie den Label des Issues von ''open'' zu ''ready for test''
 
-Markieren Sie am Schluss den Task (Issue) als erledigt.
+<WRAP center round important 60%>
+Der Ablauf um eine Änderung ins GitHub Repository zu transferieren ist immer:
+  - **Commit** (Festschreiben der Änderung im lokalen Repository auf Ihrem Computer).
+  - **Update Project** bzw. **Pull** (Lokales Repository mit den neuesten Änderungen von GitHub aktualisieren).
+  - **Push** (Aktualisieren des Repositories auf GitHub).
+</WRAP>
+
 
 ==== Testen ====
 === Unit Tests ===
 Beim Unit Test wird eine einzelne Funktion getestet.
 Dabei sollen Sie gegenseitig versuchen, Fehler in den Funktionen der anderen Teammitglieder zu finden.
 
-  - Wählen Sie eine fertig programmierte Funktion eines Kollegen aus.
-  - Tragen Sie sich im Issue auf GitHub als zusätzlicher Mitarbeiter ein.
+  - Wählen Sie eine fertig programmierte Funktion eines Kollegen aus. Diese Issues haben den Label ''ready for test''.
+  - Tragen Sie sich im Issue auf GitHub als zusätzlicher Mitarbeiter ein. Ändern Sie den Label zu ''testing''.
   - Aktualisieren Sie das Projekt in PyCharm mittels **Update Project**
   - Passen Sie Ihre Datei ''my_test'' so an, dass Sie die entsprechende Funktion importieren und aufrufen.
-  - Testen Sie die Funktion mit ungewöhnlichen und kreativen Eingaben.
+  - Testen Sie die Funktion mit ungewöhnlichen und kreativen Eingaben bzw. Werten.
 
 Falls Sie einen Fehler entdecken, ergänzen Sie das Issue auf GitHub mit einem Kommentar.
 Diese Kommentar muss enthalten:
@@ -142,6 +149,7 @@ Diese Kommentar muss enthalten:
   * Erwartetes Resultat
   * Effektives Resultat
   * Allfällige Bemerkungen
+Ändern Sie den Label des Issues zu ''bug''.
 
 === Integrationstest ===
 Führen Sie als Team mehrere Testläufe des Programms durch.
