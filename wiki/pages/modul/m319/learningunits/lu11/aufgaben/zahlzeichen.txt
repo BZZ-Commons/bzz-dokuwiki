@@ -1,4 +1,4 @@
-====== LU11.A02: Zahlzeichen ======
+====== LU11.A02 - Zahlzeichen ======
 <WRAP center round todo 60%>
 Ergänze das die Funktionen zum Einlesen der Zahlzeichen und Werte.
 </WRAP>
@@ -18,6 +18,9 @@ Zwei Beispiele alter Zahlzeichen:
 
 Als Informatikerin schreibst du einfach ein Programm, um die Zahlen umzurechnen.
 
+<HTML>
+<iframe src="https://trinket.io/embed/python3/7864a2ce84?outputOnly=true&runOption=run&start=result" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+</HTML>
 ===== Auftrag =====
 Ergänze die Programmlogik in den vorgegebenen Funktionen.
 In ''main_test.py'' findest du sowohl Tests für jede einzelne Funktion, als auch Tests für das Programm als Ganzes.

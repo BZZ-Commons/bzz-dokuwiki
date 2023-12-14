@@ -26,8 +26,8 @@ class Member:
     honorary_member: bool
 
 if __name__ == '__main__':
-    test_person = Person()
-    test_person.firstname = 'Hans'
+    test_person = Member('Hans', 'Muster', 'Musterstrasse 1', 'Bern', '3000', 2010, 1990, False)
+    test_person.firstname = 'Peter'
     print(test_person)
 </file>
 
@@ -93,8 +93,8 @@ Nach dem ''class''-Befehl definieren wir die Attribute und deren Datentyp.
 <code python>
 ...
 if __name__ == '__main__':
-    test_person = Person()
-    test_person.firstname = 'Hans'
+    test_person = test_person = Member('Hans', 'Muster', 'Musterstrasse 1', 'Bern', '3000', 2010, 1990, False)
+    test_person.firstname = 'Peter'
     print(test_person)
 </code>
 

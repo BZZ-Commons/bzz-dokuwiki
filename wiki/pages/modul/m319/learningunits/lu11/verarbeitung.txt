@@ -41,13 +41,13 @@ print(colors)
 <WRAP center round info 60%>
 Wir können die Element über ihren Schlüssel in den eckigen Klammern lesen.
 
-Wollen wir wissen, ob ein bestimmter Schlüssel exisitert, so verwenden wir **has_key**.
+Wollen wir wissen, ob ein bestimmter Schlüssel exisitert, so verwenden wir ''key'' **''in''** ''dictionary''.
 </WRAP>
 
 <code python>
 colors = {'red': '#ff0000', 'green': '#00ff00', 'blue': '#0000ff'}
 print(colors['green'])  # prints the value #00ff00
-if colors.has_key('pink'):
+if 'pink' in colors:
     print ('Pink!!')
 else:
     print ('No pink found')
