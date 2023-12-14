@@ -4,27 +4,12 @@ Ein Objekt ist ein Exemplar oder Instanz einer Klasse.
 Während die Klasse definiert, welche Attribute vorhanden sind, enthalten Objekte die konkreten Daten.
 </WRAP>
 
-===== Objekt erzeugen =====
-Um ein Objekt zu erzeugen, benötigen wir:
-  * Eine (Referenz-)Variable die das Objekt speichert.
-  * Die Klasse als Import.
-
-<code python>
-from Member import Member
-
-
-def main():
-    some_member = Member()
-</code>
-
-Ein so erzeugtes Objekt wird noch keine Daten enthalten.
-Wir können diese anschliessend hinzufügen (siehe Abschnitt "Zugriff")
 
 ==== Objekt mit Daten erzeugen ====
 Anstatt ein leeres Objekt zu erzeugen, können wir direkt die gewünschten Daten mitgeben:
 
 <code python>
-from Member import Member
+from member import Member
 
 
 def main():
@@ -58,7 +43,7 @@ In diesem Fall ist die Reihenfolge egal.
 Im ersten Codebeispiel haben wir ein leeres Member-Objekt angelegt.
 Nun möchten wir den Attributen dieses Objekts Werte zuweisen und die Werte wieder auslesen.
 <code python>
-from Member import Member
+from member import Member
 
 
 def main():
