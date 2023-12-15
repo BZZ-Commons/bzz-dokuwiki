@@ -12,8 +12,8 @@ Die folgende Wahrheitstabelle kann auf zwei Arten als boolscher Ausdruck angesch
 |   1   |   0   |   ¦   |   1   |
 |   1   |   1   |   ¦   |   1   |
 </WRAP>
-Fall 1: C = (\(\neg\)A \(\wedge\) \(\neg\)B) \(\vee\) (\(\neg\)A \(\wedge\) B) \(\vee\) (A \(\wedge\) B)\\
-Fall 2: C = (\(\neg\)A \(\vee\) B)\\
+Fall 1: C = (\(\neg\)A \(\wedge\) \(\neg\)B) \(\vee\) A \(\wedge\) (\(\neg\)B) \(\vee\) (A \(\wedge\) B)\\
+Fall 2: C = (A \(\vee\) \(\neg\)B)\\
 Im ersten Fall wird für jede Zeile die eine 1 ergibt ein Term als **Disjunktion** (ODER) angeschrieben.\\
 Im zweiten Fall wird für jede Zeile die eine 0 ergibt ein Term als **Konjunktion** (UND) angeschrieben. (In diesem Beispiel gibt es nur eine Zeile, die eine 0 ergibt. Darum kommen keine weiteren Terme dazu.)
 <WRAP clear></WRAP>
