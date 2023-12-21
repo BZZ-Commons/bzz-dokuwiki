@@ -1,0 +1,47 @@
+====== LU08.L01 - Exkursionsplanung erstellen ======
+
+===== Art des PSP =====
+
+Die objektorientierter Struktur ist ideal für die Planung einer Exkursion, da sie sich auf die verschiedenen Objekte und Aufgaben innerhalb des Projekts konzentriert. Diese Struktur ermöglicht es, jede Funktion der Exkursion – wie Transport, Unterkunft, Verpflegung, Aktivitäten – separat zu planen und zu überwachen. Diese Art der Strukturierung ist besonders nützlich, wenn die Aufgaben klar abgegrenzt und zugeordnet werden können, was bei einer Exkursion der Fall ist.
+
+===== Gliederung =====
+Objektorientierter PSP für Exkursion ins Naturkundemuseum Zürich
+
+==== Transport ====
+=== Anreise ===
+  * Auswahl des Transportmittels (Bus, Bahn, Privatfahrzeuge)
+  * Buchung der Tickets oder Koordination der Fahrer
+  * Routenplanung
+=== Abreise ===
+  * Festlegung der Abreisezeit
+  * Koordination der Rückfahrt
+==== Unterkunft ====
+=== Hotelbuchung ===
+  * Recherche und Auswahl eines Hotels in der Nähe des Museums
+  * Buchung der benötigten Zimmer
+  * Absicherung von Gruppenrabatten
+=== Unterkunftslogistik ===
+  * Check-in und Check-out Prozesse
+  * Koordination der Zimmerverteilung
+==== Verpflegung ====
+=== Mahlzeiten ===
+  * Planung der Mahlzeiten (Frühstück, Mittagessen, Abendessen)
+  * Auswahl von Restaurants oder Catering-Diensten
+  * Berücksichtigung von diätetischen Einschränkungen
+=== Pausensnacks ===
+  * Organisation von Snacks und Getränken für Pausen
+  * Einkauf und Transport der Lebensmittel
+==== Aktivitäten ====
+=== Museumsbesuch ===
+  * Planung der Führung im Naturkundemuseum
+  * Reservierung von Eintrittskarten
+  * Erstellung eines Zeitplans für den Museumsbesuch
+=== Zusätzliche Aktivitäten ===
+  * Planung zusätzlicher Aktivitäten in Zürich
+  * Buchung von Tickets für weitere Sehenswürdigkeiten
+  * Erstellung eines Zeitplans für zusätzliche Aktivitäte
+
+----
+{{tag>M431-LU08}}
+
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Kevin Maurizi, Marcel Suter
