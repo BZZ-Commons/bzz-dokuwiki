@@ -24,9 +24,10 @@ class Member:
     entry_year: int
     birth_year: int
     honorary_member: bool
+    attended_meetings: list[str]
 
 if __name__ == '__main__':
-    test_person = Member('Hans', 'Muster', 'Musterstrasse 1', 'Bern', '3000', 2010, 1990, False)
+    test_person = Member('Hans', 'Muster', 'Musterstrasse 1', 'Bern', '3000', 2010, 1990, False,['Hauptversammlung','Skitag'])
     test_person.firstname = 'Peter'
     print(test_person)
 </file>
@@ -77,7 +78,8 @@ class Member:
     entry_year: int
     birth_year: int
     honorary_member: bool
-    
+    attended_meetings: list[str]
+
     ...
 </code>
 

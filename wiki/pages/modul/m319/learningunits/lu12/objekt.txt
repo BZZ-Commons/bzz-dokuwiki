@@ -13,7 +13,7 @@ from member import Member
 
 
 def main():
-    another_member = Member('David', 'Demuth', 'Wegweg 0', 'Hier', '1234', 2010, 1998, False)
+    another_member = Member('David', 'Demuth', 'Wegweg 0', 'Hier', '1234', 2010, 1998, False,['Hauptversammlung','Skitag'])
 </code>
 
 Entweder müssen wir die Argumente in den runden Klammern in der gleichen Reihenfolge angegeben, wie die Attribute in der Klasse definiert wurden.
@@ -30,6 +30,7 @@ In diesem Fall ist die Reihenfolge egal.
         birth_year=1965,
         lastname='Emmerson',
         zip_code='9876',
+        attended_meetings = ['Hauptversammlung','Skitag'],
         entry_year=2001
         )
 </code>
@@ -51,6 +52,8 @@ def main():
     some_member.firstname = 'Fabienne'
     some_member.lastname = 'Fröhlich'
     some_member.place = 'Freiburg'
+    some_member.attended_meetings = ['Hauptversammlung','Schlitteltag']
+    some_member.attended_meetings.append('Skitag')
     ...
     
     print(some_member.lastname)
@@ -69,8 +72,8 @@ from Member import Member
 
 def main():
     member_list = []
-    member_list.append(Member('David', 'Demuth', 'Wegweg 0', 'Hier', '1234', 2010, 1998, False))
-    member_list.append(Member('Anna', 'Amstutz', 'Paradeplatz 12', 'Sonstwo', '5555', 2013, 1999, True))
+    member_list.append(Member('David', 'Demuth', 'Wegweg 0', 'Hier', '1234', 2010, 1998, False,['Hauptversammlung','Skitag']))
+    member_list.append(Member('Anna', 'Amstutz', 'Paradeplatz 12', 'Sonstwo', '5555', 2013, 1999, True,['Hauptversammlung','Skitag']))
     member = Member(
         place='Dort',
         address='Hauptgasse 9x',
@@ -79,7 +82,8 @@ def main():
         birth_year=1965,
         lastname='Emmerson',
         zip_code='9876',
-        entry_year=2001
+        entry_year=2001,
+        attended_meetings = ['Hauptversammlung','Skitag']
     )
     member_list.append(member)
     for item in member_list:
