@@ -1,0 +1,27 @@
+====== Datenbank erstellen ======
+
+<WRAP center round info 60%>
+Sie können in Ihrem Webspace eine Datenbank erstellen.
+Der Name der Datenbank und der Benutzername werden vom Server vorgegeben und können nicht angepasst werden.
+</WRAP>
+
+===== 1. Anmeldung =====
+Melden Sie sich unter [[https://students.bzz.ch]] mit Ihrem Benutzernamen und Passwort an.
+Sie haben diesen Benutzernamen und das Passwort von Ihrer Lehrperson erhalten.
+
+===== 2. Datenbank erstellen =====
+Wählen Sie im Menu ''MySQL'' => ''Databases'' => ''Create database'' 
+
+{{:howto:webhosting:dbms01.png?600|}}
+
+Tragen Sie eine Beschreibung und ein Passwort für Ihren Datenbankbenutzer ein.
+Nachdem Sie [Save] anklicken wird die Datenbank und ein Benutzer für den Zugriff erstellt.
+
+{{:howto:webhosting:dbms02.png?600|}}
+
+In dieser Anzeige sehen Sie den Namen Ihrer Datenbank, welcher gleichzeitig der Benutzername ist.
+
+{{:howto:webhosting:dbms03.png?600|}}
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Marcel Suter

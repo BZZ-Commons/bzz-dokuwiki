@@ -1,0 +1,50 @@
+====== Datenbank importieren ======
+
+<WRAP center round info 60%>
+Sie können eine bestehende Datenbank auf Ihrem Webspace importieren.
+</WRAP>
+
+===== Voraussetzungen =====
+  * Ihre Lehrperson hat für Sie einen Webspace eingerichtet und Ihnen den Benutzernamen/Passwort mitgeteilt.
+  * Sie haben in Ihrem Entwicklungssystem eine Datenbank mit MySQL oder MariaDB erstellt.
+  * Sie haben im Webspace eine [[.:datenbank]].
+
+===== Vorgehen =====
+==== 1. Datenbank exportieren (Dump) ====
+Exportieren Sie die Struktur (und evtl. Daten) Ihrer Datenbank in Ihrem Entwicklungssystem.
+Am einfachsten exportieren Sie die ganze Datenbank in eine einzelne .sql-Datei (self contained file).
+
+=== Exportierte Datei anpassen ===
+Öffnen Sie die .sql-Datei mit der exportieren Datenbank.
+Je nachdem welche Optionen Sie beim Export gewählt haben, finden Sie am Anfang der Datei:
+  * ''DROP DATABASE datenbankname'' bzw. ''DROP SCHEMA datenbankname''
+  * ''CREATE DATABASE datenbankname'' bzw. ''CREATE SCHEMA datenbankname''
+
+entfernen Sie diese Zeilen.
+
+Am Anfang der Datei müsste nun ''USE datenbankname'' stehen.
+  * Fügen Sie diese Zeile ein, falls Sie nicht vorhanden ist.
+  * Anstelle von ''datenbankname'' geben Sie den Namen Ihrer Datenbank im Webspace an.
+
+==== 2. Datei komprimieren ====
+Falls Ihre .sql-Datei grösser als 5 MB ist, sollten Sie diese komprimieren.
+Komprimieren Sie die Datei als .zip-Archiv.
+
+==== 3. Datenbank importieren ====
+=== Anmeldung ===
+
+Öffnen Sie im Webbrowser [[https://students.bzz.ch/phpmyadmin]].
+
+Melden Sie sich mit dem Benutzernamen und Passwort Ihrer Datenbank an.
+
+{{:howto:webhosting:dbms04.png?600|}}
+
+=== Import ===
+  * Wählen Sie links im Fenster Ihre Datenbank aus (z.B. ghwalinsql1)
+  * Wählen Sie den Reiter "Importieren" aus.
+  *Laden Sie die angepasste .sql-Datei bzw. das komprimierte .zip-Archiv hoch und führen Sie den Import durch.
+
+{{:howto:webhosting:dbms05.png?600|}}
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Marcel Suter
