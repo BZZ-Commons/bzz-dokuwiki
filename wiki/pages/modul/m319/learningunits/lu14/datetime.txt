@@ -1,9 +1,12 @@
 ====== LU14a - Python und die Zeit ======
 Das speichern von Zeit und Datumswerten ist in vielen Applikationen notwendig. Python bietet uns mit den Modul ''datetime'' ein eifach zu benutzendes Modul dafür. Es hat mehrere Klassen, aber die am häufigsten verwendeten sind:
 
+<WRAP center round info 90%>
 ''datetime'': Diese Klasse stellt einen einzelnen Zeitpunkt dar. Sie hat Attribute für Jahr, Monat, Tag, Stunde, Minute, Sekunde und Mikrosekunde.
 
 ''timedelta'': Diese Klasse stellt eine Dauer dar, die zur Durchführung von Arithmetik mit ''datetime''-Objekten verwendet werden kann.
+</WRAP>
+
 
 Hier ist ein einfaches Beispiel für die Verwendung des ''datetime''-Moduls, um das aktuelle Datum und die Uhrzeit zu ermitteln:
 

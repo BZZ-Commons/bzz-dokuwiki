@@ -1,7 +1,7 @@
-====== Datenbank importieren ======
+====== Datenbank verwalten ======
 
 <WRAP center round info 60%>
-Sie können eine bestehende Datenbank auf Ihrem Webspace importieren.
+Sie können die Datenbanken auf Ihrem Webspace bearbeiten oder auch von einem anderen System importieren..
 </WRAP>
 
 ===== Voraussetzungen =====
@@ -9,7 +9,27 @@ Sie können eine bestehende Datenbank auf Ihrem Webspace importieren.
   * Sie haben in Ihrem Entwicklungssystem eine Datenbank mit MySQL oder MariaDB erstellt.
   * Sie haben im Webspace eine [[.:datenbank]].
 
-===== Vorgehen =====
+===== Datenbank verwalten =====
+phpMyAdmin ist eine Webapplikation zur Verwaltung von Datenbanken.
+
+=== Anmeldung ===
+
+Öffnen Sie im Webbrowser [[https://students.bzz.ch/phpmyadmin]].
+
+Melden Sie sich mit dem Benutzernamen und Passwort Ihrer Datenbank an.
+
+{{:howto:webhosting:dbms04.png?600|}}
+
+=== Tabellen und Daten verwalten ===
+Sie können mit phpMyAdmin Tabellen erstellen, ändern und löschen.
+Auch die Datensätze in den Tabellen können Sie lesen und verändern.
+Anleitungen und Hilfestellungen finden Sie unter [[https://github.com/phpmyadmin/phpmyadmin/wiki]]
+
+===== Datenbank importieren =====
+<WRAP center round tip 60%>
+Dieser Abschnitt beschreibt das Importieren einer existierenden Datenbank.
+</WRAP>
+
 ==== 1. Datenbank exportieren (Dump) ====
 Exportieren Sie die Struktur (und evtl. Daten) Ihrer Datenbank in Ihrem Entwicklungssystem.
 Am einfachsten exportieren Sie die ganze Datenbank in eine einzelne .sql-Datei (self contained file).
@@ -31,13 +51,7 @@ Falls Ihre .sql-Datei grösser als 5 MB ist, sollten Sie diese komprimieren.
 Komprimieren Sie die Datei als .zip-Archiv.
 
 ==== 3. Datenbank importieren ====
-=== Anmeldung ===
-
-Öffnen Sie im Webbrowser [[https://students.bzz.ch/phpmyadmin]].
-
-Melden Sie sich mit dem Benutzernamen und Passwort Ihrer Datenbank an.
-
-{{:howto:webhosting:dbms04.png?600|}}
+Melden Sie sich unter [[https://students.bzz.ch/phpmyadmin]] an.
 
 === Import ===
   * Wählen Sie links im Fenster Ihre Datenbank aus (z.B. ghwalinsql1)

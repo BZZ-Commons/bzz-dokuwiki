@@ -9,8 +9,26 @@ Das Programm antwortet dem Benutzer dann mit der genauen Anzahl an Tagen, Minute
   * Die Eingabe muss sowohl nur für ein Datum (ohne Zeit), wie auch für ein Datum mit Uhrzeit möglich sein.
   * Das Programm muss für die Vergangenheit und die Zukunft funktionieren.
 
+<html>
+<iframe src="https://trinket.io/embed/python3/416836590f?outputOnly=true&runOption=run&start=result" width="100%" height="256" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+</html>
 ==== Vorgehen ====
-  * Fragen Sie den Benutzer ob ''Datum'' oder ''Datum und Zeit''
-  * Nehmen Sie die Eingaben entgegen und wandeln Sie sie in ein ''datetime''-Objekt um.
-  * Berechnen Sie das ''timedelta'' zu jetzt. 
-  * Geben Sie das Resultat aus.
+  - Akzeptieren Sie das GitHub Classroom Assignment
+  - Klonen Sie ihr persönliches Repository in die Entwicklungsumgebung
+  - Fragen Sie den Benutzer ob ''Datum'' oder ''Datum und Zeit''
+  - Nehmen Sie die Eingaben entgegen und wandeln Sie sie in ein ''datetime''-Objekt um.
+  - Berechnen Sie das ''timedelta'' zu jetzt. 
+  - Geben Sie das Resultat aus.
+
+----
+<details>
+<summary>//=> GitHub Repo für externe Besucher//</summary>
+GitHub Repository https://github.com/templates-python/m319-lu14-a01-timeuntil
+
+//Lernende am BZZ **müssen** den Link zum GitHub Classroom Assignment verwenden//
+</details>
+
+{{tag>m319-LU14}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Vorname Nachname
+
+
