@@ -1,12 +1,9 @@
 ====== LU13.A01 - Boot ======
+<WRAP center round todo 60%>
+Sie üben die Verwendung von ''%%__%%str%%__%%'' und ''%%__%%lt%%__%%''
+</WRAP>
 
-===== Aufgabe =====
-
-==== Teilaufgabe 1 ====
-Nehmen Sie die Github-Classroom Aufgabe an und clonen Sie das Repository in ihre Entwicklungsumgebung.
-Lassen Sie das Programm einmal laufen und machen Sie sich mit dem Code vertraut.
-
-==== Teilaufgabe 2 ====
+===== Aufgabenstellung =====
 In der Funktion ''main()'' im File ''main.py'' finden Sie 7 ToDo's :
 
 <code>
@@ -37,3 +34,27 @@ In der Funktion ''main()'' im File ''main.py'' finden Sie 7 ToDo's :
 </code>
 
 Arbeiten Sie sich durch diese 7 ToDo's durch.
+===== Vorgehen =====
+  - Akzeptiere das GitHub Classroom Assignment
+  - Klone dein persönliches Repository in die Entwicklungsumgebung
+  - Arbeiten Sie sich durch die ''#TODO'' durch, führen Sie entsprechende Testfälle aus.
+
+===== Abgabe =====
+Die Abgabe der Lösung erfolgt als Push in das persönliche GitHub-Repository.
+
+
+
+
+
+----
+
+<details>
+<summary>//=> GitHub Repo für externe Besucher//</summary>
+GitHub Repository https://github.com/templates-python/m319-lu13-a01-boat
+
+//Lernende am BZZ müssen den Link zum GitHub Classroom Assignment verwenden//
+
+</details>
+
+{{tag>M319-LU13}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Kevin Maurizi

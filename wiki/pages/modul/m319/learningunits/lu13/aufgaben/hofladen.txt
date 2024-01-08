@@ -1,13 +1,7 @@
 ====== LU13.A02 - Hofladen erweitern ======
 ===== Ausgangslage =====
 
-Der Bauer der den Hofladen betreut ist sehr glücklich über die neue Bestandsverwaltung für den Hofladen aus der [[modul:m319python:learningunits:lu12:aufgaben:hofladen|LU12.A02]]. Für seinen Steuerverwalter muss der Bauer jedoch jederzeit den Gesamtwert pro Produkt des Bestandes im Hofladen und zusätzlich noch den Gesamtwert aller Produkte im Hofladen ausgeben ausgeben können.
-
-<WRAP center round important 60%>
-Sie können diese Aufgabe lösen, indem Sie entweder:
-  * Ihren Hofladen aus LU12 erweitern und ihre Lösung hier auf Moodle abgeben.
-  * Die Github Classroom Aufgabe annehmen und mit der Lösung von LU12 weitermachen und ihre Lösung comitten und pushen.
-</WRAP>
+Der Bauer der den Hofladen betreut ist sehr glücklich über die neue Bestandsverwaltung für den Hofladen aus der [[modul:m319:learningunits:lu12:aufgaben:hofladen|LU12.A02]]. Für seinen Steuerverwalter muss der Bauer jedoch jederzeit den Gesamtwert pro Produkt des Bestandes im Hofladen und zusätzlich noch den Gesamtwert aller Produkte im Hofladen ausgeben ausgeben können.
 
 
 ===== Programmaufgabe =====
@@ -84,7 +78,7 @@ Zu jedem Produkt werden diese Attribute gespeichert:
   * Preis des Artikels (Dezimalzahl)
   * Bestand (Ganzzahl)
 
-Zusätzlich zu diesen drei Angaben benötigen wir neu auch noch den Produktwert. Wie wir in der [[modul:m319python:learningunits:lu13:lu13a-funktionenfuerklassen#getter_for_not_existing_attribute_-_methode|Theorie zu LU13]] gelernt haben, können wir einen Getter, resp. ein ''property'' für einen Wert auch ohne eigenes Attribut machen. Ergänzen Sie also ihr Produkt um ein ''property'' für ''product_value''.
+Zusätzlich zu diesen drei Angaben benötigen wir neu auch noch den Produktwert. Wie wir in der [[modul:m319:learningunits:lu13:funktionenfuerklassen#getter_for_not_existing_attribute_-_methode|Theorie zu LU13]] gelernt haben, können wir einen Getter, resp. ein ''property'' für einen Wert auch ohne eigenes Attribut machen. Ergänzen Sie also ihr Produkt um ein ''property'' für ''product_value''.
 
 ==== 2. Funktion definieren ====
 Bisher haben Sie Ihren Code in merhere Funktionen aufgeteilt. Auch hier würde es sich anbieten, eine Funktion zu schreiben, die dafür verantwotlich ist, das Inventar auszudrucken und den Gesamtwert zu berechnen und auszugeben. 
@@ -143,4 +137,25 @@ Damit ihr Programm jetzt auf ''Inventory'' als Artikelname reagieren kann, müss
   - Gib die Artikelliste als Returnwert zurück
 
 
+===== Vorgehen =====
+  - Akzeptiere das GitHub Classroom Assignment
+  - Klone dein persönliches Repository in die Entwicklungsumgebung
+  - Löse die Aufgaben
+  - Führe die Testfälle aus
 
+===== Abgabe =====
+Die Abgabe der Lösung erfolgt als Push in das persönliche GitHub-Repository.
+
+
+----
+
+<details>
+<summary>//=> GitHub Repo für externe Besucher//</summary>
+GitHub Repository https://github.com/templates-python/m319-lu13-a02-farmshop-extended
+
+//Lernende am BZZ müssen den Link zum GitHub Classroom Assignment verwenden//
+
+</details>
+
+{{tag>M319-LU13}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Kevin Maurizi
