@@ -166,7 +166,7 @@ if __name__ == "__main__":
 
 Auf diese Weise sortiert die Datenklasse die Objekte nach jedem Feld (in der Reihenfolge wie sie deklariert sind), bis sie einen Wert findet, der nicht gleich ist.
 
-In der Praxis möchte man in der Regel eher einen oder vielleicht 2 bestimmte Werte verlgleichen. 
+In der Praxis möchte man in der Regel eher einen oder vielleicht 2 bestimmte Werte vergleichen. 
 
 
 
@@ -314,7 +314,7 @@ if __name__ == '__main__':
 </WRAP>
 
 <WRAP center round info 60%>
-Für das Speichern von Datumswerten ist der Datentyp ''date'' aus dem Modul ''datetime'' hervorragend geeignet. Mehr dazu finden Sie in der Learningunit [[https://it.bzz.ch/wikiV2/modul/m319python/learningunits/lu15/start|LU15 - DateTime]]
+Für das Speichern von Datumswerten ist der Datentyp ''date'' aus dem Modul ''datetime'' hervorragend geeignet. Mehr dazu finden Sie in der Learningunit [[../lu14/start]]
 </WRAP>
 
 
