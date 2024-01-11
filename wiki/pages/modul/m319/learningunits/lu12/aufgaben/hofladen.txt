@@ -44,7 +44,7 @@ Artikelname > Exit
       - Eingabe des ''Artikel.Preis'' --> ''input_float(prompt)''
     - Sonst
       - Ausgabe des aktuellen Bestands
-    - Eingabe der ''Artikel.Menge'' --> ''input_int(prompt)''
+    - Eingabe der ''Menge'' --> ''input_int(prompt)''
     - Addiere die ''Menge'' zum ''Artikel.Bestand''
     - Eingabe des ''Artikelnamens''
   - Gib die ''Artikelliste'' als Returnwert zurück
@@ -53,7 +53,7 @@ Artikelname > Exit
   - Iteriere über alle ''Artikel'' in der ''Artikelliste''
     - Wenn der ''Artikelnamen'' dem ''Artikel.Artikelnamen'' entspricht
       - Gib den gefundenen ''Artikel'' zurück
-    - Gib ''None'' zurück
+  - Gib ''None'' zurück
 
 
 <HTML>

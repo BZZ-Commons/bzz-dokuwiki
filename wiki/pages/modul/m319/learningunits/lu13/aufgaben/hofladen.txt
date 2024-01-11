@@ -36,38 +36,13 @@ Bestand     : 5
 Menge       > -2
 
 Artikelname > Inventory
-
-Milch       : 17.25
-Wurst       : 253.20
-
-Total       : 270.45
+Milch : 17.25
+Wurst : 253.20
+Gesamt : 270.45
 
 Artikelname > Exit
 </code>
 
-===== Programmablauf neu =====
-  - Erstelle eine leere Liste für die Artikel
-  - Eingabe des Artikelnamens
-  - Solange Artikelname nicht ''Exit'' ist
-    - <color #ed1c24>Falls die Eingabe ''Inventory''</color>
-      - <color #ed1c24>Für jedemn Artikel in der Liste</color>
-        - <color #ed1c24>Gib den Namen und den Produktwert (Menge * Preis) aus</color>
-        - <color #ed1c24>Addiere den Wert zum Gesamtwert</color>
-      - <color #ed1c24>Gib den Gesamtwert aus</color> 
-      - <color #ed1c24>Eingabe des Artikelnamens</color>  
-      - <color #ed1c24>Begin die Schleife von vorne</color> 
-    - <color #ed1c24>Sonst</color>
-      - Suche den Artikel in der Liste und merke dir diesen Artikel
-      - Falls kein Artikel gefunden wurde
-        - Erstelle ein neues Artikel-Objekt mit dem Artikelnamen, Preis=0.00 und Bestand=0
-        - Speichere das Objekt in der Liste
-        - Eingabe des Preises
-      - Sonst
-        - Ausgabe des aktuellen Bestands
-      - Eingabe der Menge
-      - Addiere die Menge zum Bestand
-      - Eingabe des Artikelnamens
-  - Gib die Artikelliste als Returnwert zurück
 
 ===== Umsetzung  =====
 ==== 1. Anpassung Produkt ====
@@ -78,20 +53,20 @@ Zu jedem Produkt werden diese Attribute gespeichert:
   * Preis des Artikels (Dezimalzahl)
   * Bestand (Ganzzahl)
 
-Zusätzlich zu diesen drei Angaben benötigen wir neu auch noch den Produktwert. Wie wir in der [[modul:m319:learningunits:lu13:funktionenfuerklassen#getter_for_not_existing_attribute_-_methode|Theorie zu LU13]] gelernt haben, können wir einen Getter, resp. ein ''property'' für einen Wert auch ohne eigenes Attribut machen. Ergänzen Sie also ihr Produkt um ein ''property'' für ''product_value''.
+Zusätzlich zu diesen drei Angaben benötigen wir neu auch noch den Produktwert. Wie wir in der [[modul:m319:learningunits:lu13:funktionenfuerklassen#getter_for_not_existing_attribute_-_methode|Theorie zu LU13]] gelernt haben, können wir einen Getter, resp. ein ''property'' für einen Wert auch ohne eigenes Attribut machen. Ergänzen Sie also ihr Produkt um ein Property für ''article_value'', welches das Produkt aus Preis pro Artikel und Bestand ist.
 
 ==== 2. Funktion definieren ====
 Bisher haben Sie Ihren Code in merhere Funktionen aufgeteilt. Auch hier würde es sich anbieten, eine Funktion zu schreiben, die dafür verantwotlich ist, das Inventar auszudrucken und den Gesamtwert zu berechnen und auszugeben. 
 
-Definieren sie also eine Funktion, die über eine ihr übergebene Liste iteriert und von jedem Produkt den ''name'' und ''product_value'' ausgibt. Ebenso soll die Funktion eine Summe über alle ''product_value'' erstellen und diese am Schluss ausgeben.
+Definieren sie also eine Funktion, die über eine ihr übergebene Liste iteriert und von jedem Produkt den ''name'' und ''article_value'' ausgibt. Ebenso soll die Funktion eine Summe über alle ''article_value'' erstellen und diese am Schluss ausgeben.
 
 
   - Erstelle eine leere Liste für die Artikel
   - Eingabe des Artikelnamens
   - Solange Artikelname nicht ''Exit'' ist
     - Falls die Eingabe ''Inventory''
-      - <color #ed1c24>Für jedemn Artikel in der Liste</color>
-        - <color #ed1c24>Gib den Namen und den Produktwert (Menge * Preis) aus</color>
+      - <color #ed1c24>Für jeden Artikel in der Liste</color>
+        - <color #ed1c24>Gib den Namen und den Produktwert aus</color>
         - <color #ed1c24>Addiere den Wert zum Gesamtwert</color>
       - <color #ed1c24>Gib den Gesamtwert aus</color>
       - Eingabe des Artikelnamens
@@ -117,8 +92,8 @@ Damit ihr Programm jetzt auf ''Inventory'' als Artikelname reagieren kann, müss
   - Eingabe des Artikelnamens
   - Solange Artikelname nicht ''Exit'' ist
     - <color #22b14c>Falls die Eingabe ''Inventory''</color>
-      - Für jedemn Artikel in der Liste
-        - Gib den Namen und den Produktwert (Menge * Preis) aus
+      - Für jeden Artikel in der Liste
+        - Gib den Namen und den Produktwert aus
         - Addiere den Wert zum Gesamtwert
       - Gib den Gesamtwert aus
       - <color #22b14c>Eingabe des Artikelnamens</color>

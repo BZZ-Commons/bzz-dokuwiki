@@ -25,23 +25,32 @@ Die einzelnen Programmteile (Funktionen, Attribute, Property) werden mittels Uni
 
 ===== Beschreibungen =====
 In der Applikation werden alle ausgeliehenen Bücher in einem Dictionary ''books'' gespeichert. Dieses Dictionary wird in "init_books()" erstellt. Der Buchname dient als Schlüssel, die Liste der ''rental'' sind die Werte des Dictionary.
+===== Modul rental.py =====
 
-==== Klasse rental ====
+<WRAP center round box 100%>
+==== Klasse Rental ====
+=== Attribute ===
+
   * Datum der Ausleihe: Datum
-  * Anzahl Miettage: Ganzzahl
+  * Anzahl inkludierte Miettage: Ganzzahl
   * Rückgabedatum: Datum
 
-=== Property cost ===
+=== Property cost() ===
 | Argumente | self |
 | Rückgabewerte | Kosten des Ausleihens (Dezimalzahl) |
 **Logik**
 
-Die Funktion berechnet die Kosten der Buchausleihe. Die Kosten für die Buchausleihe sind normalerweise CHF 4.50 für die gesamte Zeitdauer der ''Anzahl Miettage''. Wird diese Frist jedoch überschritten wird eine Strafgebühr von CHF 3.35  pro angefangene 24 Stunden berechnet.
+Die Funktion berechnet die Kosten der Buchausleihe. 
+Die Kosten für die Buchausleihe sind normalerweise CHF 4.50 für die gesamte Zeitdauer der ''Anzahl Miettage''. 
+Wird diese Frist jedoch überschritten wird eine Strafgebühr von CHF 3.35  pro angefangene 24 Stunden berechnet. 
+Die effektive Anzahl Miettage wird berechnet aus ''Rückgabedatum - Datum der Ausleihe''
 
 Der Returnwert wird auf 2 Nachkommastellen gerundet:
 ''return round(Ausleihgebür,2)''
 
-==== Modul library ====
+</WRAP>
+
+==== Modul library.py ====
 <WRAP center round box 100%>
 === main() ===
 | Argumente | keine |
@@ -54,7 +63,7 @@ Die Logik dieser Funktion ist bereits **vollständig umgesetzt**. Beachten Sie d
 <WRAP center round box 100%>
 === read_rental() ===
 | Argumente | keine |
-| Rückgabewerte | ''rental''-Objekt |
+| Rückgabewerte | ''Rental''-Objekt |
 
 **Logik**
 Der Benutzer wird aufgefordert, die Angaben zur Ausleihung einzugeben:
@@ -67,16 +76,16 @@ Die Benutzereingaben werden in ein neues Rental-Objekt gespeichert und zurückge
 </WRAP>
 
 <WRAP center round box 100%>
-=== init_accounts() ===
+=== init_books() ===
 | Argumente | keine |
 | Rückgabewerte | Dictionary mit Büchern |
 
 **Logik**
 Die Funktion erstellt einen neuen Dictionary. Es werden drei Elemente in das Dictionary eingefügt:
 ^Schlüssel^	Inhalt (Wert)^
-|Die Tribute von Panem 1|Leere Liste|
-|Die Tribute von Panem 2|Leere Liste|
-|Die Tribute von Panem 3|Leere Liste|
+|LOTR 1|Leere Liste|
+|LOTR 2|Leere Liste|
+|LOTR 3|Leere Liste|
 </WRAP>
 
 
@@ -102,20 +111,20 @@ Anschliessend wird der Benutzer gefragt, ob er die Erfassung beenden will. Solan
 
 **Logik**
 Die Funktion gibt für jedes Buch …
-•	… das Datum der Miete und die Kosten dieser Miete aus.
-•	… das Total aller Buchungen aus.
+  * … das Datum der Miete und die Kosten dieser Miete aus.
+  * … das Total aller Buchungen aus.
 Beachten Sie die Darstellung gemäss diesem Beispiel:
 
 <code>
-Abrechnung für Die Tribute von Panem 1
+Statement for LOTR 1
   - 05.01.2023: CHF 4.50
   - 06.03.2023: CHF 7.85
 Total: CHF 12.35
-Abrechnung für Die Tribute von Panem 2
+Statement for LOTR 2
   - 06.01.2023: CHF 4.50
   - 23.02.2023: CHF 4.50
 Total: CHF 9.00
-Abrechnung für Die Tribute von Panem 3
+Statement for LOTR 3
   - 06.01.2023: CHF 4.50
   - 23.02.2023: CHF 14.55
 Total: CHF 19.05
@@ -132,12 +141,12 @@ Total: CHF 19.05
 **Logik**
 Die Funktion fordert den Benutzer zur Eingabe einer positiven Ganzzahl auf. 
 Falls die Eingabe keine positive Ganzzahl ist (kleiner/gleich 0 oder keine gültige Zahl), wird …
-  * … die Meldung "Geben Sie eine positive Zahl ein" angezeigt.
+  * … die Meldung "Please enter a positive number." angezeigt.
   * … der Benutzer zur erneuten Eingabe aufgefordert.
 </WRAP>
 
 <WRAP center round box 100%>
-=== read_datetime() ===
+=== read_date() ===
 | Argumente | prompt: String |
 | Rückgabewerte | Benutzereingabe als Datum/Uhrzeit-Objekt |
 
@@ -145,6 +154,6 @@ Falls die Eingabe keine positive Ganzzahl ist (kleiner/gleich 0 oder keine gült
 Die Funktion fordert den Benutzer zur Eingabe eines Zeitpunkts auf. 
 Die Eingabe muss im Format ''d(d).m(m).jjjj'' erfolgen, z.B. 15.7.2023
 Falls die Eingabe kein gültiger Zeitpunkt ist, wird …
-  * … die Meldung " Geben Sie ein gültiges Datum/Uhrzeit ein" angezeigt.
+  * … die Meldung "Please enter a valid date." angezeigt.
   * … der Benutzer zur erneuten Eingabe aufgefordert. 
 </WRAP>
