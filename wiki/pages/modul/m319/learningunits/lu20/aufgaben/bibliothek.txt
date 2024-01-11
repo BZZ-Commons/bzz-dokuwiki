@@ -1,0 +1,150 @@
+====== Vertiefungsaufgabe ======
+
+<WRAP center round todo 60%>
+Realisieren Sie die verschiedenen Programmteile der Applikation "library" gemäss den Beschreibungen.
+</WRAP>
+
+===== Allgemeine Infos =====
+
+
+==== Vorlage ====
+Im Vorlage-Repository sind alle Funktionen als rudimentäre Stubs realisiert. Diese Stubs liefern, soweit nötig, einen statischen Returnwert.
+Die Logik der Methode "main()" ist bereits vollständig umgesetzt.
+
+==== Vorgehen ====
+Wie immer beim Programmieren gilt:
+  - Wählen Sie einen Programmteil aus, dessen Vorgänger korrekt funktionieren.
+  - Codieren Sie den Programmteil.
+  - Testen Sie den neuen Programmteil,
+    - Falls die Tests nicht erfolgreich sind, gehen Sie zurück zu Schritt 2.
+  - Führen Sie alle Tests mit ''pytest -vv'' aus.
+  - Falls mehr Tests erfolgreich sind als zuvor: Commit & Push.
+
+==== Testing ====
+Die einzelnen Programmteile (Funktionen, Attribute, Property) werden mittels Unit Tests überprüft. Die Testfunktionen finden Sie in library_test.py. Für jeden erfolgreichen Test erhalten Sie die angegebenen Punkte.
+
+===== Beschreibungen =====
+In der Applikation werden alle ausgeliehenen Bücher in einem Dictionary ''books'' gespeichert. Dieses Dictionary wird in "init_books()" erstellt. Der Buchname dient als Schlüssel, die Liste der ''rental'' sind die Werte des Dictionary.
+
+==== Klasse rental ====
+  * Datum der Ausleihe: Datum
+  * Anzahl Miettage: Ganzzahl
+  * Rückgabedatum: Datum
+
+=== Property cost ===
+| Argumente | self |
+| Rückgabewerte | Kosten des Ausleihens (Dezimalzahl) |
+**Logik**
+
+Die Funktion berechnet die Kosten der Buchausleihe. Die Kosten für die Buchausleihe sind normalerweise CHF 4.50 für die gesamte Zeitdauer der ''Anzahl Miettage''. Wird diese Frist jedoch überschritten wird eine Strafgebühr von CHF 3.35  pro angefangene 24 Stunden berechnet.
+
+Der Returnwert wird auf 2 Nachkommastellen gerundet:
+''return round(Ausleihgebür,2)''
+
+==== Modul library ====
+<WRAP center round box 100%>
+=== main() ===
+| Argumente | keine |
+| Rückgabewerte | keine |
+**Logik**
+Die Logik dieser Funktion ist bereits **vollständig umgesetzt**. Beachten Sie die Argumente und Returnwerte der jeweiligen Funktionen.
+</WRAP>
+
+
+<WRAP center round box 100%>
+=== read_rental() ===
+| Argumente | keine |
+| Rückgabewerte | ''rental''-Objekt |
+
+**Logik**
+Der Benutzer wird aufgefordert, die Angaben zur Ausleihung einzugeben:
+  * Datum der Ausleihe
+  * Anzahl Miettage
+  * Rückgabedatum
+
+Die Benutzereingaben werden in ein neues Rental-Objekt gespeichert und zurückgegeben.
+
+</WRAP>
+
+<WRAP center round box 100%>
+=== init_accounts() ===
+| Argumente | keine |
+| Rückgabewerte | Dictionary mit Büchern |
+
+**Logik**
+Die Funktion erstellt einen neuen Dictionary. Es werden drei Elemente in das Dictionary eingefügt:
+^Schlüssel^	Inhalt (Wert)^
+|Die Tribute von Panem 1|Leere Liste|
+|Die Tribute von Panem 2|Leere Liste|
+|Die Tribute von Panem 3|Leere Liste|
+</WRAP>
+
+
+
+<WRAP center round box 100%>
+=== add_rental() ===
+| Argumente | Dictionary mit Büchern und Ausleihungen |
+| Rückgabewerte | keiner |
+
+**Logik**
+Der Benutzer wird aufgefordert, einen Buchnamen einzugeben. Die Funktion wählt den Eintrag im Dictionary mit dem Buchnamen als Schlüssel.
+Anschliessend wird ''read_entry()'' aufgerufen um ein ''Rental-Objekt'' zu erhalten.
+
+Dieses ''Rental-Objekt'' wird beim gewählten Dictionary-Element am Ende der Liste mit den Buchungen eingefügt.
+Anschliessend wird der Benutzer gefragt, ob er die Erfassung beenden will. Solange der Benutzer **nicht ''y''** eingibt, wird der gesamte Ablauf wiederholt.
+</WRAP>
+
+
+<WRAP center round box 100%>
+=== show_balance() ===
+| Argumente | Dictionary mit Büchern und Ausleihungen |
+| Rückgabewerte | keiner |
+
+**Logik**
+Die Funktion gibt für jedes Buch …
+•	… das Datum der Miete und die Kosten dieser Miete aus.
+•	… das Total aller Buchungen aus.
+Beachten Sie die Darstellung gemäss diesem Beispiel:
+
+<code>
+Abrechnung für Die Tribute von Panem 1
+  - 05.01.2023: CHF 4.50
+  - 06.03.2023: CHF 7.85
+Total: CHF 12.35
+Abrechnung für Die Tribute von Panem 2
+  - 06.01.2023: CHF 4.50
+  - 23.02.2023: CHF 4.50
+Total: CHF 9.00
+Abrechnung für Die Tribute von Panem 3
+  - 06.01.2023: CHF 4.50
+  - 23.02.2023: CHF 14.55
+Total: CHF 19.05
+</code>
+
+</WRAP>
+
+
+<WRAP center round box 100%>
+=== read_int() ===
+| Argumente | prompt: String |
+| Rückgabewerte | Benutzereingabe als Ganzzahl |
+
+**Logik**
+Die Funktion fordert den Benutzer zur Eingabe einer positiven Ganzzahl auf. 
+Falls die Eingabe keine positive Ganzzahl ist (kleiner/gleich 0 oder keine gültige Zahl), wird …
+  * … die Meldung "Geben Sie eine positive Zahl ein" angezeigt.
+  * … der Benutzer zur erneuten Eingabe aufgefordert.
+</WRAP>
+
+<WRAP center round box 100%>
+=== read_datetime() ===
+| Argumente | prompt: String |
+| Rückgabewerte | Benutzereingabe als Datum/Uhrzeit-Objekt |
+
+**Logik**
+Die Funktion fordert den Benutzer zur Eingabe eines Zeitpunkts auf. 
+Die Eingabe muss im Format ''d(d).m(m).jjjj'' erfolgen, z.B. 15.7.2023
+Falls die Eingabe kein gültiger Zeitpunkt ist, wird …
+  * … die Meldung " Geben Sie ein gültiges Datum/Uhrzeit ein" angezeigt.
+  * … der Benutzer zur erneuten Eingabe aufgefordert. 
+</WRAP>
