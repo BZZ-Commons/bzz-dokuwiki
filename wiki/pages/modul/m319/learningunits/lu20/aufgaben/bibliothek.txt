@@ -1,4 +1,4 @@
-====== Vertiefungsaufgabe ======
+====== LU20.A01 - Bibliotheksverwaltung ======
 
 <WRAP center round todo 60%>
 Realisieren Sie die verschiedenen Programmteile der Applikation "library" gemäss den Beschreibungen.
@@ -13,28 +13,44 @@ Die Logik der Methode "main()" ist bereits vollständig umgesetzt.
 
 ==== Vorgehen ====
 Wie immer beim Programmieren gilt:
-  - Wählen Sie einen Programmteil aus, dessen Vorgänger korrekt funktionieren.
-  - Codieren Sie den Programmteil.
+  - Wählen Sie einen Programmteil aus, dessen Vorgänger korrekt funktioniert.
+  - Codieren Sie den neuen Programmteil.
   - Testen Sie den neuen Programmteil,
     - Falls die Tests nicht erfolgreich sind, gehen Sie zurück zu Schritt 2.
   - Führen Sie alle Tests mit ''pytest -vv'' aus.
   - Falls mehr Tests erfolgreich sind als zuvor: Commit & Push.
 
+^ Nr ^ Programmteil ^ Vorgänger ^ Tests ^
+| 1 | Dataclass - Rental | - | rental_test.py > ''test_attribute_assignments'' |
+| 2 | cost | 1 | rental_test.py > ''test_cost_no_overdue'' \\ rental_test.py > ''test_cost_with_overdue''|
+| 3 | read_rental | 1 | library_test.py > ''test_read_rental'' |
+| 4 | init_books | 1 | library_test.py > ''test_init_books'' |
+| 5 | add_rental | 1, 4 | library_test.py > ''test_add_rental_empty_books'' \\ library_test.py > ''test_add_rental_existing_books'' \\ library_test.py > ''test_add_rental_invalid_book_name'' \\ library_test.py > ''test_add_rental_multiple_rentals'' |
+| 6 | show_balance | 1, 2 | library_test.py > ''test_show_balance'' |
+| 7 | read_int | - | library_test.py > ''test_read_int_valid_input'' \\ library_test.py > ''test_read_int_invalid_input'' |
+| 8 | read_date | - | library_test.py > ''test_read_date_valid_input'' \\ library_test.py > ''test_read_date_invalid_input'' |
+
 ==== Testing ====
-Die einzelnen Programmteile (Funktionen, Attribute, Property) werden mittels Unit Tests überprüft. Die Testfunktionen finden Sie in library_test.py. Für jeden erfolgreichen Test erhalten Sie die angegebenen Punkte.
+Die einzelnen Programmteile (Funktionen, Attribute, Property) werden mittels Unit Tests überprüft. Die Testfunktionen finden Sie in ''library_test.py'' und ''rental_test.py''. Für jeden erfolgreichen Test erhalten Sie Punkte.
 
 ===== Beschreibungen =====
-In der Applikation werden alle ausgeliehenen Bücher in einem Dictionary ''books'' gespeichert. Dieses Dictionary wird in "init_books()" erstellt. Der Buchname dient als Schlüssel, die Liste der ''rental'' sind die Werte des Dictionary.
+Der Code stellt ein terminalbasiertes Bibliotheksverwaltungssystem zur Verwaltung von Buchausleihen dar. Es wird mit einer Reihe von Büchern ("Herr der Ringe"-Trilogie) initialisiert und ermöglicht es den Benutzern, Ausleihdatensätze hinzuzufügen, indem sie Buchnamen und Ausleihdetails (Ausleih- und Rückgabedaten, Anzahl der Ausleihtage) eingeben. Das System berechnet und zeigt die Mietkosten an, einschließlich der Strafen für überfällige Rückgaben. Die Benutzer interagieren über ein einfaches Textmenü, in dem sie Optionen zum Hinzufügen von Vermietungen, zum Anzeigen von Salden oder zum Beenden des Programms auswählen. Die Schnittstelle besteht hauptsächlich aus dem Lesen von Benutzereingaben und dem Ausdrucken von Informationen direkt im Terminal.
+
+<html>
+<iframe src="https://trinket.io/embed/python3/fe1d1c4545?outputOnly=true&runOption=run&start=result" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+</html>
+
 ===== Modul rental.py =====
 
 <WRAP center round box 100%>
-==== Klasse Rental ====
-=== Attribute ===
-
+=== Dataclass - Rental ===
   * Datum der Ausleihe: Datum
   * Anzahl inkludierte Miettage: Ganzzahl
   * Rückgabedatum: Datum
+</WRAP>
 
+
+<WRAP center round box 100%>
 === Property cost() ===
 | Argumente | self |
 | Rückgabewerte | Kosten des Ausleihens (Dezimalzahl) |
@@ -56,6 +72,7 @@ Der Returnwert wird auf 2 Nachkommastellen gerundet:
 | Argumente | keine |
 | Rückgabewerte | keine |
 **Logik**
+
 Die Logik dieser Funktion ist bereits **vollständig umgesetzt**. Beachten Sie die Argumente und Returnwerte der jeweiligen Funktionen.
 </WRAP>
 
@@ -66,6 +83,7 @@ Die Logik dieser Funktion ist bereits **vollständig umgesetzt**. Beachten Sie d
 | Rückgabewerte | ''Rental''-Objekt |
 
 **Logik**
+
 Der Benutzer wird aufgefordert, die Angaben zur Ausleihung einzugeben:
   * Datum der Ausleihe
   * Anzahl Miettage
@@ -81,11 +99,12 @@ Die Benutzereingaben werden in ein neues Rental-Objekt gespeichert und zurückge
 | Rückgabewerte | Dictionary mit Büchern |
 
 **Logik**
+
 Die Funktion erstellt einen neuen Dictionary. Es werden drei Elemente in das Dictionary eingefügt:
 ^Schlüssel^	Inhalt (Wert)^
-|LOTR 1|Leere Liste|
-|LOTR 2|Leere Liste|
-|LOTR 3|Leere Liste|
+|''LOTR 1''|Leere Liste ''[]''|
+|''LOTR 2''|Leere Liste ''[]''|
+|''LOTR 3''|Leere Liste ''[]''|
 </WRAP>
 
 
@@ -96,6 +115,7 @@ Die Funktion erstellt einen neuen Dictionary. Es werden drei Elemente in das Dic
 | Rückgabewerte | keiner |
 
 **Logik**
+
 Der Benutzer wird aufgefordert, einen Buchnamen einzugeben. Die Funktion wählt den Eintrag im Dictionary mit dem Buchnamen als Schlüssel.
 Anschliessend wird ''read_entry()'' aufgerufen um ein ''Rental-Objekt'' zu erhalten.
 
@@ -110,6 +130,7 @@ Anschliessend wird der Benutzer gefragt, ob er die Erfassung beenden will. Solan
 | Rückgabewerte | keiner |
 
 **Logik**
+
 Die Funktion gibt für jedes Buch …
   * … das Datum der Miete und die Kosten dieser Miete aus.
   * … das Total aller Buchungen aus.
@@ -136,12 +157,19 @@ Total: CHF 19.05
 <WRAP center round box 100%>
 === read_int() ===
 | Argumente | prompt: String |
+| ::: | minimum: Integer |
+| ::: | maximum: Integer |
 | Rückgabewerte | Benutzereingabe als Ganzzahl |
 
 **Logik**
-Die Funktion fordert den Benutzer zur Eingabe einer positiven Ganzzahl auf. 
-Falls die Eingabe keine positive Ganzzahl ist (kleiner/gleich 0 oder keine gültige Zahl), wird …
-  * … die Meldung "Please enter a positive number." angezeigt.
+
+Die Funktion fordert den Benutzer zur Eingabe einer Ganzzahl von ''minimum'' bis ''maximum'' auf. 
+Falls die Eingabe keine gültige Ganzzahl ist, wird …
+  * … die Meldung "Please, enter a whole number!" angezeigt.
+  * … der Benutzer zur erneuten Eingabe aufgefordert.
+Falls die Eingabe zu klein / zu gross ist, wird …
+  * … die Meldung "Please, enter a number greater than or equal to ''number''" angezeigt.
+  * … die Meldung "Please, enter a number less than or equal to ''number''" angezeigt.
   * … der Benutzer zur erneuten Eingabe aufgefordert.
 </WRAP>
 
@@ -151,9 +179,24 @@ Falls die Eingabe keine positive Ganzzahl ist (kleiner/gleich 0 oder keine gült
 | Rückgabewerte | Benutzereingabe als Datum/Uhrzeit-Objekt |
 
 **Logik**
+
 Die Funktion fordert den Benutzer zur Eingabe eines Zeitpunkts auf. 
 Die Eingabe muss im Format ''d(d).m(m).jjjj'' erfolgen, z.B. 15.7.2023
 Falls die Eingabe kein gültiger Zeitpunkt ist, wird …
   * … die Meldung "Please enter a valid date." angezeigt.
   * … der Benutzer zur erneuten Eingabe aufgefordert. 
 </WRAP>
+
+
+----
+<details>
+<summary>//=> GitHub Repo für externe Besucher//</summary>
+GitHub Repository https://github.com/templates-python/m319-lu20-a01-library
+
+//Lernende am BZZ **müssen** den Link zum GitHub Classroom Assignment verwenden//
+</details>
+
+{{tag>m310-LU20}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Kevin Maurizi, Marcel Suter
+
+

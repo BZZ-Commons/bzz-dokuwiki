@@ -1,0 +1,42 @@
+====== LU20.A02 - Bibliotheksverwaltung erweitern ======
+<WRAP center round todo 60%>
+Erweitern Sie die Bibliotheksverwaltung aus [[modul:m319:learningunits:lu20:aufgaben:bibliothek|LU20.A01]], damit die Abrechnungen jeweils als JSON gespeichert und wieder geladen werden und die Applikation somit die Daten persistent hält.
+</WRAP>
+
+
+===== Allgemeine Infos =====
+
+==== Vorlage ====
+Im Vorlage-Repository ist die Musterlösung zu der [[modul:m319:learningunits:lu20:aufgaben:bibliothek|Aufgabe LU20.A01]] erweitern Sie diese Lösung um die benötigten Funktionen und passen Sie bestehende Funktionen gemäss Beschreibung an.
+
+==== Vorgehen ====
+Wie immer beim Programmieren gilt:
+  - Wählen Sie einen Programmteil aus, dessen Vorgänger korrekt funktioniert.
+  - Codieren Sie den neuen Programmteil.
+  - Testen Sie den neuen Programmteil,
+    - Falls die Tests nicht erfolgreich sind, gehen Sie zurück zu Schritt 2.
+  - Führen Sie alle Tests mit ''pytest -vv'' aus.
+  - Falls mehr Tests erfolgreich sind als zuvor: Commit & Push.
+
+^ Nr ^ Programmteil ^ Vorgänger ^ Tests ^
+| 1 | Dataclass - Rental | - | rental_test.py > ''test_attribute_assignments'' |
+
+
+==== Testing ====
+Die einzelnen Programmteile (Funktionen, Attribute, Property) werden mittels Unit Tests überprüft.
+===== Beschreibungen =====
+Der Code stellt ein terminalbasiertes Bibliotheksverwaltungssystem zur Verwaltung von Buchausleihen dar. Es wird mit einer Reihe von Büchern ("Herr der Ringe"-Trilogie) initialisiert und ermöglicht es den Benutzern, Ausleihdatensätze hinzuzufügen, indem sie Buchnamen und Ausleihdetails (Ausleih- und Rückgabedaten, Anzahl der Ausleihtage) eingeben. Das System berechnet und zeigt die Mietkosten an, einschließlich der Strafen für überfällige Rückgaben. Die Benutzer interagieren über ein einfaches Textmenü, in dem sie Optionen zum Hinzufügen von Vermietungen, zum Anzeigen von Salden oder zum Beenden des Programms auswählen. Die Schnittstelle besteht hauptsächlich aus dem Lesen von Benutzereingaben und dem Ausdrucken von Informationen direkt im Terminal.
+
+<html>
+<iframe src="https://trinket.io/embed/python3/fe1d1c4545?outputOnly=true&runOption=run&start=result" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+</html>
+
+
+===== Modul library.py =====
+
+<WRAP center round box 100%>
+=== Dataclass - Rental ===
+  * Datum der Ausleihe: Datum
+  * Anzahl inkludierte Miettage: Ganzzahl
+  * Rückgabedatum: Datum
+</WRAP>
