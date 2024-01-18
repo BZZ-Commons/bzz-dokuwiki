@@ -23,7 +23,7 @@ Wie immer beim Programmieren gilt:
 ^ Nr ^ Programmteil ^ Vorgänger ^ Tests ^
 | 1 | Dataclass - Rental | - | rental_test.py > ''test_attribute_assignments'' |
 | 2 | cost | 1 | rental_test.py > ''test_cost_no_overdue'' \\ rental_test.py > ''test_cost_with_overdue''|
-| 3 | read_rental | 1 | library_test.py > ''test_read_rental'' |
+| 3 | read_rental | 1,7,8 | library_test.py > ''test_read_rental'' |
 | 4 | init_books | 1 | library_test.py > ''test_init_books'' |
 | 5 | add_rental | 1, 4 | library_test.py > ''test_add_rental_empty_books'' \\ library_test.py > ''test_add_rental_existing_books'' \\ library_test.py > ''test_add_rental_invalid_book_name'' \\ library_test.py > ''test_add_rental_multiple_rentals'' |
 | 6 | show_balance | 1, 2 | library_test.py > ''test_show_balance'' |
@@ -36,22 +36,26 @@ Die einzelnen Programmteile (Funktionen, Attribute, Property) werden mittels Uni
 ===== Beschreibungen =====
 Der Code stellt ein terminalbasiertes Bibliotheksverwaltungssystem zur Verwaltung von Buchausleihen dar. Es wird mit einer Reihe von Büchern ("Herr der Ringe"-Trilogie) initialisiert und ermöglicht es den Benutzern, Ausleihdatensätze hinzuzufügen, indem sie Buchnamen und Ausleihdetails (Ausleih- und Rückgabedaten, Anzahl der Ausleihtage) eingeben. Das System berechnet und zeigt die Mietkosten an, einschließlich der Strafen für überfällige Rückgaben. Die Benutzer interagieren über ein einfaches Textmenü, in dem sie Optionen zum Hinzufügen von Vermietungen, zum Anzeigen von Salden oder zum Beenden des Programms auswählen. Die Schnittstelle besteht hauptsächlich aus dem Lesen von Benutzereingaben und dem Ausdrucken von Informationen direkt im Terminal.
 
+**Fürs Testen:**
+
+Es bibt nur 3 Bücher, ''LOTR 1'',''LOTR 2'',''LOTR 3''
+
 <html>
 <iframe src="https://trinket.io/embed/python3/fe1d1c4545?outputOnly=true&runOption=run&start=result" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 </html>
 
-===== Modul rental.py =====
+==== Modul rental.py ====
 
 <WRAP center round box 100%>
 === Dataclass - Rental ===
   * Datum der Ausleihe: Datum
-  * Anzahl inkludierte Miettage: Ganzzahl
   * Rückgabedatum: Datum
+  * Anzahl inkludierte Miettage: Ganzzahl
 </WRAP>
 
 
 <WRAP center round box 100%>
-=== Property cost() ===
+=== @property cost() ===
 | Argumente | self |
 | Rückgabewerte | Kosten des Ausleihens (Dezimalzahl) |
 **Logik**
@@ -117,7 +121,7 @@ Die Funktion erstellt einen neuen Dictionary. Es werden drei Elemente in das Dic
 **Logik**
 
 Der Benutzer wird aufgefordert, einen Buchnamen einzugeben. Die Funktion wählt den Eintrag im Dictionary mit dem Buchnamen als Schlüssel.
-Anschliessend wird ''read_entry()'' aufgerufen um ein ''Rental-Objekt'' zu erhalten.
+Anschliessend wird ''read_rental()'' aufgerufen um ein ''Rental-Objekt'' zu erhalten.
 
 Dieses ''Rental-Objekt'' wird beim gewählten Dictionary-Element am Ende der Liste mit den Buchungen eingefügt.
 Anschliessend wird der Benutzer gefragt, ob er die Erfassung beenden will. Solange der Benutzer **nicht ''y''** eingibt, wird der gesamte Ablauf wiederholt.

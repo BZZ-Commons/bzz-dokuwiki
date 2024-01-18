@@ -1,13 +1,13 @@
-====== LU20.A02 - Bibliotheksverwaltung erweitern - JSON lesen ======
+====== LU20.A03 - Bibliotheksverwaltung erweitern - JSON speichern und laden ======
 <WRAP center round todo 60%>
-Erweitern Sie die Bibliotheksverwaltung aus [[modul:m319:learningunits:lu20:aufgaben:bibliothek|LU20.A01]], damit die Buchliste ''books.json'' aus dem Filesystem geladen werden.
+Erweitern Sie die Bibliotheksverwaltung aus [[modul:m319:learningunits:lu20:aufgaben:bibliothek|LU20.A01]], damit die Buchliste bei veränderungen ins File ''books.json'' gespeichert. Wenn die Applikation geladen wird, soll ''init_books'' das JSON laden.
 </WRAP>
 
 
 ===== Allgemeine Infos =====
 
 ==== Vorlage ====
-Im Vorlage-Repository ist die Musterlösung zu der [[modul:m319:learningunits:lu20:aufgaben:bibliothek|Aufgabe LU20.A01]], erweitern Sie diese Lösung um die benötigten Funktionen und passen Sie bestehende Funktionen gemäss Beschreibung an.
+Im Vorlage-Repository ist die Musterlösung zu der [[modul:m319:learningunits:lu20:aufgaben:bibliothekerweitert|Aufgabe LU20.A02]], erweitern Sie diese Lösung um die benötigten Funktionen und passen Sie bestehende Funktionen gemäss Beschreibung an.
 
 ==== Vorgehen ====
 Wie immer beim Programmieren gilt:
@@ -36,11 +36,21 @@ Der Code stellt ein terminalbasiertes Bibliotheksverwaltungssystem zur Verwaltun
 ===== Modul library.py =====
 
 <WRAP center round box 100%>
-=== init_books() ===
-| Argumente | keine |
-| Rückgabewerte | Dictionary mit Büchern |
+=== save_books() ===
+| Argumente | Dictionary mit Büchern |
+| Rückgabewerte | keine |
 
 **Logik**
 
-Die Funktion lädt das File ''books.json'' und gibt dessen Inhalt als Dictionary zurück.
+Die Funktion wandelt das Dictionary mit Büchern in ein JSON um und speichert das JSON als File ''books.json''.
+
+<WRAP center round tip 60%>
+Das Umwandeln von ''datetime''-Objekten in JSON ist nicht ganz einfach. 
+
+Schauen Sie sich dazu unter anderem folgende Webseiten an:
+  * https://lidatong.github.io/dataclasses-json/
+  * https://dev.to/kfuquay/extending-pythons-json-encoder-7k0
+
+</WRAP>
+
 </WRAP>
