@@ -25,7 +25,7 @@ Wie immer beim Programmieren gilt:
 | 2 | cost | 1 | rental_test.py > ''test_cost_no_overdue'' \\ rental_test.py > ''test_cost_with_overdue''|
 | 3 | read_rental | 1,7,8 | library_test.py > ''test_read_rental'' |
 | 4 | init_books | 1 | library_test.py > ''test_init_books'' |
-| 5 | add_rental | 1, 4 | library_test.py > ''test_add_rental_empty_books'' \\ library_test.py > ''test_add_rental_existing_books'' \\ library_test.py > ''test_add_rental_invalid_book_name'' \\ library_test.py > ''test_add_rental_multiple_rentals'' |
+| 5 | add_rental | 1, 3, 4 | library_test.py > ''test_add_rental_empty_books'' \\ library_test.py > ''test_add_rental_existing_books'' \\ library_test.py > ''test_add_rental_invalid_book_name'' \\ library_test.py > ''test_add_rental_multiple_rentals'' |
 | 6 | show_balance | 1, 2 | library_test.py > ''test_show_balance'' |
 | 7 | read_int | - | library_test.py > ''test_read_int_valid_input'' \\ library_test.py > ''test_read_int_invalid_input'' |
 | 8 | read_date | - | library_test.py > ''test_read_date_valid_input'' \\ library_test.py > ''test_read_date_invalid_input'' |
@@ -124,7 +124,7 @@ Der Benutzer wird aufgefordert, einen Buchnamen einzugeben. Die Funktion wählt 
 Anschliessend wird ''read_rental()'' aufgerufen um ein ''Rental-Objekt'' zu erhalten.
 
 Dieses ''Rental-Objekt'' wird beim gewählten Dictionary-Element am Ende der Liste mit den Buchungen eingefügt.
-Anschliessend wird der Benutzer gefragt, ob er die Erfassung beenden will. Solange der Benutzer **nicht ''y''** eingibt, wird der gesamte Ablauf wiederholt.
+Anschliessend wird der Benutzer gefragt, ob er die Erfassung beenden will. Solange der Benutzer **''y''** eingibt, wird der gesamte Ablauf wiederholt.
 </WRAP>
 
 
@@ -161,8 +161,8 @@ Total: CHF 19.05
 <WRAP center round box 100%>
 === read_int() ===
 | Argumente | prompt: String |
-| ::: | minimum: Integer |
-| ::: | maximum: Integer |
+| ::: | minimum: Integer (Optional) |
+| ::: | maximum: Integer (Optional) |
 | Rückgabewerte | Benutzereingabe als Ganzzahl |
 
 **Logik**

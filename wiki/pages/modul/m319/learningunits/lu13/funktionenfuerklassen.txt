@@ -279,13 +279,13 @@ In manchen Klassen macht es Sinn einen Getter für einen berechneten Wert zu erg
 <WRAP center round box 80%>
 <code python>
 from dataclasses import dataclass
-from datetime import date
+from datetime import datetime
 
 
 @dataclass
 class Person:
     name: str
-    date_of_birth: date
+    date_of_birth: datetime
     
 </code>
 </WRAP>
@@ -294,27 +294,27 @@ Trotzdem kann es ganz praktisch sein, das Alter einer Person mit einer Methode a
 <WRAP center round box 80%>
 <code python>
 from dataclasses import dataclass
-from datetime import date
+from datetime import datetime
 
 @dataclass
 class Person:
     name: str
-    date_of_birth: date
+    date_of_birth: datetime
 
 
     @property
     def age(self):
-        return date.today().year - self.date_of_birth.year
+        return datetime.now().year - self.date_of_birth.year
   
 
 if __name__ == '__main__':
-    p = Person('Peter', date(1999,1,1))
+    p = Person('Peter', datetime(1999,1,1))
     print(p.age)        
 </code>
 </WRAP>
 
 <WRAP center round info 60%>
-Für das Speichern von Datumswerten ist der Datentyp ''date'' aus dem Modul ''datetime'' hervorragend geeignet. Mehr dazu finden Sie in der Learningunit [[../lu14/start]]
+Für das Speichern von Datumswerten ist der Datentyp ''datetime'' aus dem Modul ''datetime'' hervorragend geeignet. Mehr dazu finden Sie in der Learningunit [[../lu14/start]]. 
 </WRAP>
 
 
