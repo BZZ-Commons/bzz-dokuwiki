@@ -147,9 +147,9 @@ Sollten Sie Fehler haben, schauen Sie sich die Theorie noch einmal genau an, bes
 ----
 ===2.4 Rechnen im Positionssystem===
 Das Positionssystem ist auch bezüglich dem (schriftlichen) Rechnen hervorragend. Es basiert auf wiederkehrenden Ablaufschritten, so dass sich hier gut Algorithmen definieren lassen.\\
-Sie kennen das bestens aus all ihren Erfahrungen; 5+4 = 9 behalte 1. Diese Vorschrift kann nun auf beliebig viele Stellen ausgedehnt werden.
+Sie kennen das bestens aus all ihren Erfahrungen; 5+4 = 9, aber 5+7 = 2 behalte 1, wobei diese 1 in die nächst höhere Stelle übertragen wird. Diese Vorschrift kann nun auf beliebig viele Stellen ausgedehnt werden.
 ----
-//Beispiel 2.5:// Schriftliche Addition und Multiplikation im 10er System \\
+//Beispiel 2.5// Schriftliche Addition und Multiplikation im 10er System\\
 \( \quad 245 \\ +196 \\ \quad \underline{ _{1 \, 1} \quad } \\ \quad 441 \) \\ 
 \( \underline{245 \cdot 196} \\ \quad \quad \; _{4\, 3} \\ \quad \quad \;980 \\ \quad \enspace \;  _{3\, 2} \\ \quad \enspace \; 784 \cdot \\ \enspace \; _{1\; 1} \\ \quad 392 \cdot \cdot  \\ \enspace \; \underline{ \; _{1 \, 2 \, 1 } \quad} \\ \quad 84020 \)
 ----
