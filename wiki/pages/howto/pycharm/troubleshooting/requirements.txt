@@ -1,0 +1,19 @@
+====== Bibliotheken installieren ======
+
+Zu jedem Projekt stehen die benötigten Bibliotheken in der Datei ''requirements.txt''; 
+Unter anderem PyTest.
+In Einzelfällen muss man diese manuell installieren.
+
+Gib im Reiter "Terminal" den Befehl ''pip3 -r .\requirements.txt'' ein.
+
+FIXME Screenshot
+
+Das Terminal zeigt nun die Installation der verschiedenen Bibliotheken.
+
+<WRAP center round info 60%>
+**[[.:pytest]]**
+</WRAP>
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

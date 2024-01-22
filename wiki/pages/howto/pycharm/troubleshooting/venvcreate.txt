@@ -1,0 +1,17 @@
+====== Kein Virtual Environment ======
+<WRAP center round info 60%>
+Hier siehst du, wie du das virtual Environment manuell einrichten kannst.
+</WRAP>
+
+===== Venv erstellen =====
+
+  - Öffne die Einstellungen von PyCharm unter "File" => "Settings".
+  - Wähle unter "Project: ...." den Eintrag "Python Interpreter" aus.
+  - Öffne das Dropdown "Add Interpreter" und wähle "Add Local Interpreter ..." aus. \\ {{:howto:git:classroom_student_57.png?600|}}
+  - Stelle sicher, dass die Location den Pfad zu deinem Projekt plus ''\venv'' enthält.
+  - Klicke dann auf **[OK]** und noch einmal **[OK]**. \\ {{:howto:git:classroom_student_58.png?600|}}
+
+**[[.:venvtest|Weiter]]**
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

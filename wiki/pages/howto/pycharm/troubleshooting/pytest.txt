@@ -1,0 +1,17 @@
+====== PyTest prüfen ======
+<WRAP center round info 60%>
+Als letzten Schritt führst du das Programm mittels PyTest aus. Dadurch siehst du, ob alles korrekt eingerichtet wurde.
+</WRAP>
+
+Gib im Reiter Terminal "pytest" ein und drücke Enter.
+
+{{:howto:git:classroom_student_13.png?400|}}
+
+Es sollten nun einige Zeilen ausgegeben werden und am Schluss eine Zusammenfassung der Testresultate. 
+Es ist dabei normal, dass viel roter Text erscheint und alle Tests als "failed" gekennzeichnet sind.
+
+  * Siehst du die Zusammenfassung der Testresultate? Gratuliere, du hast das Projekt erfolgreich geklont. Damit ist die Anleitung zu Ende.
+  * Siehst du eine Fehlermeldung wie z.B. "Module not found". Gehe zur Seite [[.triage]].
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

@@ -1,0 +1,52 @@
+====== Repository klonen: Start ======
+<WRAP center round info 60%>
+Beim Klonen wird das Repository auf deinen Rechner heruntergeladen und eingerichtet.
+</WRAP>
+
+===== Clone-URL =====
+Die URL (Webadresse) zum Klonen findest du in deinem Repository auf GitHub.
+
+{{:howto:git:classroom_student_05.png?400|}}
+
+Kopiere die URL aus der Adressliste oder im Dropdown "Code".
+
+===== Projekt in PyCharm klonen =====
+Durch das Klonen eines Repositories werden die Dateien auf deinen Rechner kopiert und die virtuelle Umgebung zum Ausführen deiner Programme erstellt. 
+Dabei führt PyCharm mehrere Schritte durch. 
+Achte genau darauf, dass diese Schritte mit den Abbildungen im Verlauf dieser Anleitung übereinstimmen. 
+
+Klicke niemals einfach auf [OK] oder [Abbruch] ohne sicher zu sein, dass dies der nächste Schritt ist.
+Führe nur die jeweils beschriebenen Schritte durch, andernfalls verlierst du dich schnell.
+
+==== "Get from VCS" oder "Clone" ====
+
+Je nachdem ob in PyCharm ein Projekt geöffnet ist, ist der erste Schritt etwas unterschiedlich. Anhand der Screenshots siehst du die 3 möglichen Varianten.
+
+=== Variante 1: Projekt mit git geöffnet ===
+
+
+{{:howto:git:classroom_student_06.png?400|}}
+
+Wenn du aktuell ein Projekt geöffnet hast, suche nach dem Menu "git" und wähle dort "Clone ...".
+
+=== Variante 2: Projekt ohne git geöffnet ===
+
+
+{{:howto:git:classroom_student_07.png?400|}}
+
+Möglicherweise siehst du das Menu "VCS" statt "Git". In diesem Fall wählst du den Menupunkt "Get from Version Control ..."
+
+=== Variante 3: Kein Projekt geöffnet ===
+{{:howto:git:classroom_student_08.png?400|}}
+
+Falls aktuell kein Projekt geöffnet ist, siehst du diese Ansicht. Klicke hier auf den Button **[Get from VCS]**
+
+Jede dieser drei Varianten führt dich zum gleichen Dialog.
+
+<WRAP center round info 60%>
+**[[.:pycharmsetup|Weiter]]**
+</WRAP>
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

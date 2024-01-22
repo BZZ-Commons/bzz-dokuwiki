@@ -1,0 +1,20 @@
+====== PyCharm - Klonen & Troubleshooting ======
+
+===== Einleitung =====
+
+Diese Anleitung hilft dir beim Klonen eines Projekts von GitHub. Die verschiedenen Schritte und Einstellungen sind mit Screenshots dokumentiert. Beachte dabei:
+
+  * Der Name des Projekts bzw. Repositories in der Anleitung lautet "**m999-lu99-a99-marcel-suter-bzz**". Hier musst du immer den Namen **deines aktuellen Projekts bzw. Repositories** verwenden.
+  * In Screenshots liegen alle Projekte unter ''C:\BZZ\Python\...''. Hier musst du dein Verzeichnis einsetzen. \\ Verwende **kein** Verzeichnis in deinem OneDrive-Ordner, dies führt immer wieder zu Problemen.
+  * Die Screenshots wurden mit der klassischen Oberfläche von PyCharm gemacht. Die neue Oberfläche hat die gleichen Funktionen, diese sind aber anders angeordnet.
+  * Buttons auf Webseiten oder PyCharm werden so dargestellt: **[OK]**.
+
+=== Was möchtest du tun? ===
+
+Möchtest du das schrittweise Vorgehen beim Klonen sehen? Dann wähle **[[.:assignment|Klonen]]**.
+
+Brauchst du Hilfe weil das Klonen schief gelaufen ist? Dann wähle **[[.:triage]]**.
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

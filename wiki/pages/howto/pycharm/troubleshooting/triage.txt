@@ -1,0 +1,39 @@
+====== Problem eingrenzen ======
+<WRAP center round todo 60%>
+Jetzt muss ich wissen, welches Problem aufgetreten ist. 
+
+Lies jede Aussage genau durch und vergleiche die Angaben mit deinem Projekt. 
+Folge dem für die erste Aussage die auf dich zutrifft.
+
+</WRAP>
+
+==== Log In to GitHub ====
+Beim Klonen oder beim Push erscheint ein Fenster "Log In To GitHub": => **[[.:gittoken]]**
+
+Das Fenster "Log In To GitHub" erscheint nicht, aber das Klonen scheitert. => **[[.:clonefailed]]**
+
+{{:howto:git:classroom_student_51.png?400|}}
+
+==== Ordner "venv" ====
+
+In meinem Projekt gibt es keinen Ordner "venv" => **[[.:venvsetup]]**
+
+{{:howto:git:classroom_student_15.png?400|}}
+
+==== No Python interpreter ====
+
+(SCREENSHOT)
+
+Ich erhalte die Meldung "No Python interpreter configured"  => **[[.:venvsetup]]**
+
+==== (venv) im Terminal ====
+
+{{:howto:git:classroom_student_12.png?600|}}
+
+Wenn ich den Reiter "Terminal" öffne, fehlt am Anfang die Anzeige (venv)  => **[[.:venvactivate]]**
+
+==== PyTest ====
+Wenn ich im Terminal "pytest" eingebe, erscheint die Fehlermeldung "module not found" => **[[.:requirements]]**
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

@@ -1,0 +1,21 @@
+====== Klonen scheitert ======
+
+Es gibt verschiedene Gründe, weshalb das Klonen fehlschlagen kann.
+Prüfe jeden einzelnen Punkt genau:
+
+===== Repository auf GitHub nicht erreichbar =====
+
+Manchmal sind die Server von GitHub nicht erreichbar, z.B. weil du keine Internetverbindung hast. Öffne die Seite https://github.com in einem Webbrowser.
+  * Wird Seite nicht angezeigt, besteht ein Problem mit deiner Internetverbindung.
+
+Vielleicht stimmt die URL nicht. Kopiere die Clone-URL des Repositories in die Adresszeile deines Webbrowsers. \\ Falls das Repository nicht gefunden wird,
+  * stelle sicher, dass du die richtige Clone-URL hast.
+  * prüfe, ob du mit dem richtigen GitHub-Benutzer für das BZZ angemeldet bist. Dein Geschäfts- oder Privat-Konto bei GitHub hat in der Regel keine Berechtigung für die Schul-Repositories.
+
+===== Authentifizierung in PyCharm defekt =====
+Möglicherweise hast du dich mit ''Log In via GitHub ...'' zu GitHub verbunden, statt ein Token zu verwenden.
+Folge der Anleitung unter [[.:gittoken]]
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter
