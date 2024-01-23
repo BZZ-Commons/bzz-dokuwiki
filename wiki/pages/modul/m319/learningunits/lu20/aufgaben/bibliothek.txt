@@ -136,7 +136,9 @@ Anschliessend wird der Benutzer gefragt, ob er die Erfassung beenden will. Solan
 **Logik**
 
 Die Funktion gibt für jedes Buch …
-  * … das Datum der Miete und die Kosten dieser Miete aus.
+  * … den Buchtitel aus.
+  * … für jede Buchung (Ausleihe) des Buchs …
+    * … das Datum der Miete und die Kosten dieser Miete aus.
   * … das Total aller Buchungen aus.
 Beachten Sie die Darstellung gemäss diesem Beispiel:
 
