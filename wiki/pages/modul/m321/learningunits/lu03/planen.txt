@@ -1,0 +1,119 @@
+====== LU03c - Webservice planen ======
+
+===== Definition von Webservices =====
+//siehe auch [[wpde>Webservice]]//
+
+Ein Webservice dient zur Kommunikation zwischen zwei Anwendungen.
+Dabei sendet der Client einen HTTP-Request mit der eindeutigen URI des Webservices.
+Der Webservice sendet im Erfolgsfall eine Response mit den Daten.
+
+===== Planung =====
+Vor der Realisierung eines Webservices steht die Planung.
+
+  - Aufgabe des Services
+  - Pfad des Services
+  - Bezeichner der Java-Methode
+  - Art des HTTP-Requests
+  - Parameter im Request
+    * Query-Parameter
+    * Form-Parameter
+    * Cookie-Parameter
+  - Datenformat der Response
+
+Zu jedem Teilschritt finden Sie als Beispiel den Service "Bücherliste" aus der Applikation "Bookshelf".
+
+==== 1. Aufgabe des Services ====
+Jeder Webservice soll eine einfache, klar definierte Aufgabe erledigen.
+Dadurch können die gleichen Services in verschiedenen Formularen und Applikationen eingesetzt werden.
+
+Vermeiden Sie bei der Definition der Aufgabe Wörter wie **und** bzw. **oder**.
+
+== Beispiel ==
+Der Webservices soll eine Collection mit allen Büchern liefern.
+
+==== 2. Pfad des Services ====
+Jedem Webservice wird eine eindeutige URI zugeordnet.
+Diese URI besteht aus:
+  * Adresse des Servers:
+    * Protokoll: ''https''
+    * Domain (FQDN): z.B. ''localhost'' oder ''service.ghwalin.ch''
+    * Port: z.B. '':8080''
+  * Name der Applikation: z.B. ''bookshelf''
+  * Pfad des Services
+    * Hauptpfad aller Services: z.B. ''resource'' oder ''service''
+    * Pfad pro Klasse: z.B. ''book''
+    * Pfad des Service: z.B. ''list''
+
+== Beispiel ==
+Der Service für die Bücherliste soll unter [[http://localhost:8080/bookshelf/resource/book/list]] erreichbar sein.
+
+==== 3. Bezeichner der Funktion/Methode ====
+Die Umsetzung eines Webservices erfolgt in einer Python-Funktion.
+Durch die Wahl eines sprechenden Bezeichners können wir später die Methode einfach identifizieren.
+Für mich hat sich die Kombination aus einem Verb und einem Substantiv als geeignet erwiesen.
+
+== Beispiel ==
+Ich nenne meine Methode ''listBooks''.
+
+==== 4. Art des HTTP-Requests ====
+Es gibt verschiedene Arten von HTTP-Requests.
+Diese Request-Arten unterscheiden sich aufgrund der Parameterübergabe und der Art der Response.
+
+Vielleicht haben Sie schon von ''GET'' und ''POST'' gehört.
+Dies sind zwar die häufigsten Arten, aber längst nicht die einzigen.
+Einige Request-Arten stelle ich Ihnen hier näher vor.
+Ein vollständige Liste finden Sie unter [[https://developer.mozilla.org/de/docs/Web/HTTP/Methods]].
+
+^ Art ^ Zweck ^ Parameter ^ 
+| GET | Daten lesen | URI |
+| POST | Neue Daten speichern | URI und Formulardaten |
+| PUT | Bestehende Daten ersetzen | URI und Formulardaten |
+| DELETE | Bestehende Daten löschen | URI |
+
+== Beispiel ==
+Der Webservice "Bücherliste" soll Daten lesen.
+Daher verwende ich einen ''GET''-Request.
+
+==== 5. Parameter im Request ====
+Manche Requests müssen dem Webservice Parameter bzw. Daten für die Verarbeitung liefern. \\
+//Siehe auch [[topics:webapp:theory:param|]]//.
+
+Dabei unterscheiden wir zwischen verschiedenen Möglichkeiten zur Übermittlung der Parameter.
+
+=== Query-Parameter ===
+Query-Parameter werden in der URI mitgegeben.
+Sie bestehen immer aus einem Schlüssel und dem entsprechenden Wert.
+
+Die URI 
+[[https://moodle.bzz.ch/mod/lesson/view.php?id=8990&pageid=2390]]
+enthält zwei Parameter:
+  * id=8990
+  * pageid=2390
+
+=== Formular-Parameter ===
+Benutzereingaben in einem Formular können theoretisch auch in der URI übertragen werden.
+Allerdings sieht man dann im Browserverlauf, welche Eingaben gemacht wurden.
+Das ist spätestens bei Login-Formularen (Passswort!!) sehr schlecht.
+
+In der Regel übertragen wir die Benutzereingaben im Datenteil des Requests.
+
+=== Cookie-Parameter ===
+Mit Cookies können Informationen auf dem Rechner des Benutzers gespeichert werden.
+Zum Beispiel enthalten Cookies Informationen über den angemeldeten Benutzer.
+Mit Cookies können wir Daten zwischen Client und Server austauschen, ohne dass der Benutzer diese direkt sieht.
+
+
+== Beispiel ==
+Mein Webservice "Bücherliste" erwartet keine Parameter.
+
+==== 6. Datenformat der Response ====
+Beim Senden der Daten in der Response stehen uns fast alle Möglichkeiten offen.
+Wir können vom einfachen Text, über ein einzelnes Objekt, bis hin zu Collections im Datenteil der Response senden.
+
+== Beispiel ==
+Der Webservice gibt als Response eine HashMap (''java.util.hashmap'') von ''Book''-Objekten zurück.
+Diese Liste soll im [[https://developer.mozilla.org/de/docs/Learn/JavaScript/Objects/JSON|JSON-Format]] codiert werden.
+
+----
+{{tag>M321-LU03}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

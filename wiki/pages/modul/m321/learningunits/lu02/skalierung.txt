@@ -1,0 +1,56 @@
+====== LU02c - Skalierung ======
+<WRAP center round info 60%>
+Die Skalierung betrachtet, wie die Kapazität einer bestimmten Komponente z.B. Datenbankserver gesteigert wird.
+</WRAP>
+
+
+Horizontale und vertikale Skalierung sind zwei unterschiedliche Ansätze zur Bewältigung von Anforderungen an die Leistung und Kapazität in verteilten Systemen.
+
+===== Horizontale Skalierung =====
+Bei der horizontalen Skalierung wird die Leistungsfähigkeit des Systems durch Hinzufügen weiterer Instanzen oder Knoten erhöht.
+Dies bedeutet, dass mehr Hardware-Ressourcen oder Rechner dem verteilten System hinzugefügt werden, um die Arbeitslast zu bewältigen. 
+In einem horizontal skalierten System können Aufgaben oder Anfragen über mehrere parallel arbeitende Instanzen verteilt werden.
+
+==== Beispiel ====
+Eine Webanwendung, die horizontal skaliert wird, kann durch Hinzufügen weiterer Server auf die steigende Anzahl von Benutzeranfragen reagieren. 
+Jeder zusätzliche Server trägt dazu bei, die Gesamtlast auf das System zu verteilen.
+
+==== Vorteile der horizontalen Skalierung ====
+
+  * Einfache Erweiterung der Kapazität durch Hinzufügen neuer Ressourcen.
+  * Bessere Ausfallsicherheit, da Ausfälle einzelner Instanzen kompensiert werden können.
+  * Effiziente Nutzung von Ressourcen, da Last gleichmäßig auf mehrere Einheiten verteilt wird.
+
+==== Nachteile der horizontalen Skalierung: ====
+
+  * Schwierigkeiten bei der Verwaltung von gemeinsamen Zuständen oder Daten.
+  * Koordinierung und Synchronisation über mehrere Instanzen können komplexer sein.
+  * Höherer Aufwand für die Verwaltung von Konfigurationen und Aktualisierungen.
+
+===== Vertikale Skalierung =====
+Bei der vertikalen Skalierung wird die Leistungsfähigkeit eines einzelnen Knotens oder Servers durch Erhöhen seiner Hardware-Ressourcen verbessert. 
+Das bedeutet, dass beispielsweise die CPU, der Arbeitsspeicher oder die Festplattenkapazität eines Servers erhöht werden, um die steigenden Anforderungen zu bewältigen.
+
+==== Beispiel ===
+Eine Datenbank, die vertikal skaliert wird, könnte auf einem einzigen Server laufen, der durch Erhöhung der CPU-Leistung und des Arbeitsspeichers leistungsfähiger gemacht wird.
+
+==== Vorteile der vertikalen Skalierung ====
+
+  * Einfache Verwaltung, da nur eine Instanz skaliert wird.
+  * Potenziell einfachere Handhabung von gemeinsamen Zuständen oder Daten.
+  * Geringerer Kommunikationsaufwand zwischen den Instanzen.
+
+==== Nachteile der vertikalen Skalierung ====
+
+  * Begrenzte Kapazitätserweiterung im Vergleich zur horizontalen Skalierung.
+  * Höhere Kosten für leistungsfähigere Hardwarekomponenten.
+  * Höheres Risiko von Engpässen und Ausfällen, da alle Ressourcen auf einer einzigen Instanz konzentriert sind.
+
+Die Entscheidung zwischen horizontaler und vertikaler Skalierung hängt von den spezifischen Anforderungen, der Natur der Anwendung und den verfügbaren Ressourcen ab. 
+In vielen Fällen wird eine Kombination beider Ansätze als Hybrid-Skalierung verwendet.
+
+----
+{{tag>M321-LU02}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter
+
+//Erstellt mit Hilfe von ChatGPT//

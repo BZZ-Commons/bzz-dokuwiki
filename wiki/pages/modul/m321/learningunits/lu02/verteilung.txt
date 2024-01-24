@@ -1,0 +1,41 @@
+====== LU02b - Vertikale und horizontale Verteilung ======
+
+Vertikale und horizontale Verteilung beziehen sich auf zwei verschiedene Ansätze, wie Ressourcen oder Aufgaben in einem verteilten System organisiert sind.
+
+===== Vertikale Verteilung =====
+
+Bei vertikaler Verteilung werden unterschiedliche Aufgaben oder Verantwortlichkeiten auf verschiedene Schichten oder Ebenen innerhalb des Systems verteilt. Jede Schicht ist für spezifische Funktionen oder Aspekte verantwortlich. Dies kann sich auf die Hardware, Software oder Dienste beziehen. Zum Beispiel kann eine vertikale Verteilung in einer Anwendungsarchitektur dazu führen, dass Datenbank-, Anwendungs- und Präsentationsschichten auf verschiedenen Servern oder Hardwareebenen platziert werden.
+
+==== Vorteile der vertikalen Verteilung ====
+  * Einfachere Skalierung spezifischer Komponenten.
+  * Klare Trennung der Verantwortlichkeiten.
+  * Spezialisierung auf bestimmte Funktionen.
+
+==== Beispiel ====
+Für einen grossen Webshop werden die verschiedenen Aufgaben (Schichten) auf unterschiedliche System verteilt:
+Die Interaktion mit dem Benutzer (Benutzerinterface) erfolgt im Webbrowser oder einer Smartphone-App.
+Die Kommunikation mit dem Benutzerinterface und die Steuerung übernimmt ein HTTP-Server.
+Für die Datenspeicherung wird ein Datenbankserver eingesetzt.
+
+===== Horizontale Verteilung =====
+
+Im Gegensatz dazu bezieht sich horizontale Verteilung auf die Vervielfältigung von identischen Komponenten oder Diensten über verschiedene Knoten oder Server hinweg. Das bedeutet, dass gleiche Aufgaben auf mehrere Einheiten verteilt werden. Zum Beispiel kann eine Anwendung horizontal skaliert werden, indem mehrere Server hinzugefügt werden, um die Last zu bewältigen.
+
+==== Vorteile der horizontalen Verteilung ====
+  * Bessere Skalierbarkeit, da neue Ressourcen einfach hinzugefügt werden können.
+  * Erhöhte Ausfallsicherheit, da Ausfälle einer Instanz durch andere kompensiert werden können.
+  * Effiziente Nutzung von Ressourcen, da Last gleichmäßig auf mehrere Einheiten verteilt wird.
+
+In der Praxis werden vertikale und horizontale Verteilung oft kombiniert, um die Vorteile beider Ansätze zu nutzen. Diese Entscheidung hängt von den spezifischen Anforderungen und Zielen eines verteilten Systems ab.
+
+==== Beispiel ====
+Im Rahmen der [[wpde>Search_for_Extraterrestrial_Intelligence|SETI]] Forschung wurden auf der Suche nach ausserirdischem Leben Weltall-Aufnahmen des Arecibo-Radioteleskops in Puerto Rico analysiert.
+Dazu wurde eine Software entwickelt, die auf gewöhnlichen Computern von Privatpersonen ausgeführt wurde.
+Tausende gewöhnlicher Computer setzten ungenutzte Rechnerkapazitäten ein, um die Daten zu analysieren.
+
+----
+{{tag>M321-LU02}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter
+
+//Erstellt mit Hilfe von ChatGPT//
+

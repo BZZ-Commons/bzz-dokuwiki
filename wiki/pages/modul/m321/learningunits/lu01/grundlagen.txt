@@ -1,0 +1,21 @@
+====== LU01a - Grundlagen ======
+Verteilte Systeme sind eine grundlegende Komponente unserer modernen Informations- und Kommunikationstechnologie. 
+Im Gegensatz zu zentralisierten Systemen, bei denen alle Ressourcen und Daten an einem einzigen Ort konzentriert sind, verteilen verteilte Systeme ihre Komponenten über mehrere miteinander verbundene Rechner. 
+Dieser Ansatz ermöglicht es, komplexe Aufgaben aufzuteilen und auf verschiedene Ressourcen zu verteilen, was zu erhöhter Skalierbarkeit, Zuverlässigkeit und Effizienz führt.
+
+Ein verteiltes System besteht aus mehreren unabhängigen Einheiten, die miteinander kommunizieren und kooperieren, um gemeinsame Ziele zu erreichen. 
+Diese Einheiten können physische Rechner, Server, Sensoren oder sogar Softwarekomponenten sein, die über ein Netzwerk miteinander verbunden sind. 
+Der Hauptzweck verteilter Systeme besteht darin, die Leistung zu verbessern, die Verfügbarkeit zu erhöhen und Redundanz für eine robustere Systemarchitektur bereitzustellen.
+
+Es gibt verschiedene Herausforderungen, die bei der Entwicklung verteilter Systeme berücksichtigt werden müssen. 
+Dazu gehören die Gewährleistung von Konsistenz, d.h., dass alle beteiligten Einheiten einen gemeinsamen und aktuellen Zustand des Systems haben, die Handhabung von Fehlern und Ausfällen, die Sicherung der Datenintegrität und die effiziente Kommunikation zwischen den Komponenten.
+
+Verteilte Systeme kommen in verschiedenen Anwendungsgebieten zum Einsatz, darunter Cloud Computing, verteilte Datenbanken, soziale Netzwerke, verteilte Sensornetzwerke und viele andere. Diese Systeme ermöglichen es Unternehmen und Organisationen, Ressourcen optimal zu nutzen, Lasten zu verteilen und eine höhere Verfügbarkeit ihrer Dienste sicherzustellen.
+
+In dieser Einführung werden wir uns mit den grundlegenden Konzepten, Herausforderungen und Anwendungen verteilter Systeme auseinandersetzen, um ein Verständnis für die Funktionsweise und die Vorteile dieser entscheidenden Technologie zu entwickeln.
+
+----
+{{tag>M321-LU01}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter
+
+//Erstellt mit Hilfe von ChatGPT//

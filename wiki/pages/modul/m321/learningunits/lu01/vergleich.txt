@@ -1,0 +1,27 @@
+====== LU01b - Vergleich zwischen zentralen und verteilten Systemen ======
+
+Zentralisierte Systeme und verteilte Systeme unterscheiden sich grundlegend in ihrer Architektur und Funktionsweise. Hier sind die wichtigsten Unterschiede zwischen beiden:
+
+  - Lokation der Ressourcen:
+    * **Zentralisiertes System**: In einem zentralisierten System sind alle Ressourcen, Daten und Funktionen an einem einzigen Ort konzentriert. Ein zentraler Server oder Hauptrechner verwaltet und steuert alle Prozesse.
+    * **Verteiltes System**: Bei einem verteilten System hingegen sind Ressourcen über mehrere Standorte oder Rechner verteilt. Verschiedene Teile des Systems können auf verschiedenen physischen oder virtuellen Maschinen ausgeführt werden.
+  - Skalierbarkeit:
+    * **Zentralisiertes System**: Die Skalierbarkeit ist oft begrenzt, da alle Anfragen und Datenverarbeitungen auf den zentralen Server ausgerichtet sind. Die Leistung kann beeinträchtigt werden, wenn die Belastung zunimmt.
+    * **Verteiltes System**: Verteilte Systeme bieten eine bessere Skalierbarkeit, da Aufgaben auf verschiedene Ressourcen verteilt werden können. Die Last kann effizienter bewältigt werden, indem zusätzliche Ressourcen hinzugefügt werden.
+  - Zuverlässigkeit und Ausfallsicherheit:
+    * **Zentralisiertes System**: Ein zentraler Punkt bedeutet auch eine höhere Anfälligkeit für Ausfälle. Wenn der zentrale Server ausfällt, kann das gesamte System beeinträchtigt sein.
+    * **Verteiltes System**: Verteilte Systeme sind in der Regel widerstandsfähiger gegen Ausfälle. Wenn eine Komponente ausfällt, können andere Teile des Systems weiterhin funktionieren, was die Gesamtverfügbarkeit verbessert.
+  - Kommunikation:
+    * **Zentralisiertes System**: Kommunikation erfolgt direkt mit dem zentralen Server. Alle Anfragen und Antworten müssen über diesen Punkt gehen.
+    * **Verteiltes System**: Die Kommunikation erfolgt zwischen den verschiedenen Komponenten des Systems über ein Netzwerk. Dies erfordert effiziente Kommunikationsprotokolle und Mechanismen.
+  - Flexibilität und Erweiterbarkeit:
+    * **Zentralisiertes System**: Änderungen oder Erweiterungen erfordern oft eine Anpassung des zentralen Servers, was zu Komplexität führen kann.
+    * **Verteiltes System**: Durch die Verteilung von Ressourcen ist es oft einfacher, das System zu erweitern oder zu modifizieren, ohne die gesamte Architektur umzustrukturieren.
+
+Insgesamt ermöglichen verteilte Systeme eine bessere Skalierbarkeit, Ausfallsicherheit und Flexibilität im Vergleich zu zentralisierten Systemen, sind jedoch oft komplexer in der Implementierung und erfordern effektive Mechanismen zur Handhabung von Kommunikation und Konsistenz.
+
+----
+{{tag>M321-LU01}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter
+
+//Erstellt mit Hilfe von ChatGPT//
