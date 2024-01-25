@@ -113,6 +113,7 @@ second = dt.second
 </WRAP>
 
 ==== Datetime in formatierten String umwandeln ====
+=== Verwenden von strftime ===
 
 Sie können die Funktion ''strftime'' verwenden, um das Format anzugeben, in dem Sie das Datum und die Uhrzeit umwandeln möchten. Um zum Beispiel das Datum und die Uhrzeit in folgendem Format zu drucken: ''TT.MM.JJJJ HH:MM:SS'', können Sie den folgenden Code verwenden:
 
@@ -120,7 +121,7 @@ Sie können die Funktion ''strftime'' verwenden, um das Format anzugeben, in dem
 <code python>
 dt = datetime(2020, 1, 1, 13, 23, 30)
 
-formatted_time = dt.strftime("%d.%m.%Y %H:%M:%S")
+formatted_time = dt.strftime('%d.%m.%Y %H:%M:%S')
 print(formatted_time)
 </code>
 <code>
@@ -141,6 +142,30 @@ Hier ist die Liste einiger gängiger Formatcodes, die Sie mit ''strftime'' verwe
 Eine vollständige Liste der Formatcodes, die Sie mit ''strftime'' verwenden können, finden Sie in der Dokumentation: https://docs.python.org/3/library/datetime.html#strftime-strptime-behavior
 </WRAP>
 
+=== Verwenden des f-String ===
+f-Strings können auch verwendet werden, um Datums- und Zeitangaben zu formatieren. Hierbei wird das Datumsobjekt direkt in den String eingebettet, gefolgt von einem Doppelpunkt und dem gewünschten Formatierungscode.
+
+<WRAP center round box 60%>
+<code python>
+from datetime import datetime
+
+dt = datetime(2020, 1, 1, 13, 23, 30)
+formatted_time = f'{dt:%d.%m.%Y %H:%M:%S}'
+print(formatted_time)
+# ODER
+print(f'{dt:%d.%m.%Y %H:%M:%S}')
+</code>
+<code>
+01.01.2020 13:23:30
+</code>
+</WRAP>
+
+<WRAP center round info 60%>
+**Formatierung mit einem f-String**
+<code>formatted_time = f"{dt:%d.%m.%Y %H:%M:%S}"</code>
+In dieser Zeile wird ein f-String verwendet, um das ''datetime''-Objekt ''dt'' in einen formatierten String zu konvertieren. Innerhalb der geschweiften Klammern ''{}'' wird das ''datetime''-Objekt ''dt'' platziert, gefolgt von einem Formatierungsmuster, das durch einen **Doppelpunkt** eingeleitet wird. ''%d.%m.%Y %H:%M:%S'' legt das Format des Datums und der Uhrzeit fest.
+
+</WRAP>
 
 
 
