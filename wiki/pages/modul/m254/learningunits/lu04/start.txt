@@ -4,9 +4,8 @@
 
 ===== Aufgaben =====
 
-<nspages .:aufgaben -h1  -exclude -simpleList -textPages="">
+<nspages .:aufgaben -h1  -exclude:start -simpleList -textPages="">
 
 ===== Lösungen =====
 
-<nspages .:loesungen -h1  -exclude -simpleList -textPages="">
-
+<nspages .:loesungen -h1  -exclude:start -simpleList -textPages="">
