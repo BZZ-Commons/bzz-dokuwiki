@@ -41,7 +41,7 @@ Zu meiner Zeit als Applikationsentwickler einer Grossbank galt: Jede Berechnung,
 ==== Nachteile ====
 
 Der Nachteil des BCD-Codes ist der verschwenderische Umgang mit dem Speicher.
-Wie Sie aus der oben stehenden Tabelle entnehmen können, werden 6 von den 16 möglichen Bit-Kombinationen gar nicht verwendet:
+Zum Beispiel können Sie bei der **8-4-2-1**-Codierung aus der oben stehenden Tabelle entnehmen, dass 6 von den 16 möglichen Bit-Kombinationen gar nicht verwendet werden:
   * 1010
   * 1011
   * 1100
