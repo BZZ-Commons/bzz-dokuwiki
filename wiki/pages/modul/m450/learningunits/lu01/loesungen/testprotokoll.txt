@@ -1,0 +1,17 @@
+====== LU01.L02 - Testprotokoll erstellen ======
+
+^ Programm | inheritance.html ^ Version | 1.0 |
+^ Datum | 02.02.2024 ^ Uhrzeit | 15:00 |
+^ Tester | Marcel Suter |||
+^ Nr ^ Effektives Resultat ^ Bewertung ^ Bemerkung ^
+| 1 | Keine gültige Zahl | OK |  |
+| 2 | Keine gültige Zahl | OK |  |
+| 3 | Steuerbetrag 0 | N | Keine Fehlermeldung, Steuerbetrag wird berechnet |
+| 4 | Steuerbetrag 18345.600000000002 | H | Keine Fehlermeldung, Steuerbetrag nicht korrekt |
+| 5 | Steuerbetrag 14020 | H | Steuerbetrag sollte 0 sein |
+| 6 | Steuerbetrag 104000 | OK |  |
+^ Fazit | Bei mehr als 7 Jahren wird ein Steuerbetrag berechnet. Formal korrekte aber unmögliche Eingaben führen nicht zu einer Fehlermeldung. Das Programm muss überarbeitet werden. |||
+
+----
+{{tag>M450-LU01}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

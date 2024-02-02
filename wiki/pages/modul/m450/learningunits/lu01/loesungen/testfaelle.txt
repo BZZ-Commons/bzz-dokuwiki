@@ -4,19 +4,19 @@
 ^ Beschreibung || Formal falscher Betrag |
 ^ Eingaben ^ Betrag | 3+50000|
 ^ ::: ^ Jahre | 5 |
-^ Erwartetes Resultat || Bitte gültige Zahl eingeben |
+^ Erwartetes Resultat || Keine gültige Zahl |
 
 ^ Nr || 2 |
 ^ Beschreibung || Formal falsche Jahre |
 ^ Eingaben ^ Betrag | 875000 |
 ^ ::: ^ Jahre | a3 |
-^ Erwartetes Resultat || Bitte gültige Zahl eingeben |
+^ Erwartetes Resultat || Keine gültige Zahl |
 
 ^ Nr || 3 |
 ^ Beschreibung || ungültiger Betrag |
 ^ Eingaben ^ Betrag | -578900 |
 ^ ::: ^ Jahre | 6 |
-^ Erwartetes Resultat || Bitte positive Zahl eingeben |
+^ Erwartetes Resultat || Keine positive Zahl |
 
 ^ Nr ||4 |
 ^ Beschreibung || ungültige Jahre |
