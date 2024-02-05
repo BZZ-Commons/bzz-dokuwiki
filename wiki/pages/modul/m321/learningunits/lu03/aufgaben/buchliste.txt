@@ -3,7 +3,7 @@
 Erstelle eine Webapplikation mit Services zur Verwaltung von Büchern in einer Bibliothek.
 </WRAP>
 
-[[https://FIX.ME|GitHub Classroom Assignment]]
+**[[https://classroom.github.com/a/knhUAZL1|GitHub Classroom Assignment]]**
 
 ===== Aufbau der Applikation =====
 In der Applikation sind die Klassen und Methoden für das Lesen und Schreiben der Bücher bereits umgesetzt.
@@ -43,14 +43,37 @@ Für jeden Service ist das Vorgehen gleich:
 ==== Bücherliste ====
 Dieser Service liefert ein JSON-Array mit allen Buch-Objekten.
 
+Die Methode liest die Bücherliste aus der Library-Klasse.
+Die Bücherliste wird als Response an den Aufrufer gesendet.
+
 ==== Buch lesen ====
 Dieser Service liefert eine einzelnes Buch als JSON-Objekt.
 
-==== Buch einfügen und ändern ====
-Für das Einfügen und Ändern eines Buchs sollen zwei separates Services definiert werden.
+Die Methode holt anhand der UUID ein Buch aus der Library-Klasse.
+Falls es gefunden wurde, wird das Buch in der Response an den Aufrufer gesendet.
+
+==== Buch einfügen ====
+Dieser Service fügt die Daten eines neuen Buchs in die Bücherliste der Library-Klasse ein.
+
+Die Methode parst die Formular-Parameter aus dem Request ein. 
+Diese Parameter müssen vorgängig definiert werden.
+Es wird ein neues Buch-Objekt erstellt und eine neue UUID erzeugt.
+Die Formulardaten werden in das Buch-Objekt gespeichert.
+Zuletzt  wird das Buch-Objekt am Ende der Bücherliste eingefügt und gespeichert.
+
+==== Buch ändern ====
+Dieser Service ändert die Daten eines bestehenden Buchs in der Bücherliste der Library-Klasse ein.
+
+Die Methode holt anhand der UUID ein Buch aus der Library-Klasse.
+Falls es gefunden wurde, werden die Formular-Parameter aus dem Request geparst und in das Objekt gespeichert.
+Zuletzt  wird die Bücherliste gespeichert.
 
 ==== Buch löschen ====
 Ein weiterer Service ist für das Löschen von Büchern zuständig.
+
+Die Methode holt anhand der UUID ein Buch aus der Library-Klasse.
+Falls es gefunden wurde, wird das Buch aus der Bücherliste gelöscht.
+Zuletzt  wird die Bücherliste gespeichert.
 
 ----
 {{tag>M321-LU03}}
