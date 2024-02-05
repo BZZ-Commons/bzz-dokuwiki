@@ -1,5 +1,83 @@
 ====== LU03b - RESTful Flask ======
+<WRAP center round info 60%>
+Flask ist ein leichtgewichtiges Web-Framework für Python, das sich besonders gut für die Entwicklung von Webanwendungen und RESTful APIs eignet.
+Flask-RESTful ist eine Erweiterung des Flask-Frameworks für die einfache Implementierung von RESTful Webservices in Python.
+</WRAP>
+
+Flask-RESTful erleichtert die Erstellung von REST-APIs durch die Bereitstellung von Tools und Strukturen, um Ressourcen, Routen und andere Funktionen eines RESTful Webservices zu organisieren. 
+Flask-RESTful bietet eine einfache und effektive Möglichkeit, RESTful Webservices in Python zu entwickeln. 
+Es ermöglicht die Strukturierung von Code und bietet Funktionen, um häufige Aufgaben bei der Erstellung von RESTful APIs zu erleichtern.
+
+===== Grundlegende Konzepte und Funktionen =====
+
+==== Installation ====
+Flask-RESTful kann mit dem Python-Paketmanager pip installiert werden:
+
+<code bash>
+pip3 install flask-restful
+</code>
+
+==== Struktur des Projekts ====
+Eine Flask-Applikation benötigt ein zentrales Python-Skript, welches die Defintion der Services enthält.
+Dieses Skript wird häufig ''app.py'' genannt.
+
+Weitere Vorgaben zur Struktur des macht Flask nicht.
+Es empfiehlt sich jedoch ein etabliertes Architekturmuster für seine Applikation zu verwenden.
+Für meine Projekte verwende ich die [[wpde>Model_View_Controller|MVC-Architektur]] und das [[wpde>Data_Access_Object|DAO]]-Pattern.
+
+=== Beispiel ===
+
+===== Erstellen eines einfachen RESTful Webservices =====
+Ein einfacher Flask-RESTful Webservice kann durch die Erstellung einer Flask-App und der Integration von Flask-RESTful erreicht werden.
+
+<file python app.py>
+
+from flask import Flask
+from flask_restful import Resource, Api
+
+app = Flask(__name__)
+api = Api(app)
+
+api.add_resource(HelloWorld, '/hello')
+
+if __name__ == '__main__':
+    app.run(debug=True)
+
+</file>
+
+Dieses Skript definiert eine Ressource (''HelloWorld'') und den Pfad (''/hello'') zu dieser Ressource.
+
+==== Definition von Ressourcen ====
+Ressourcen werden durch Klassen repräsentiert, die von der Resource-Klasse von Flask-RESTful erben.
+Jede Ressource implementiert HTTP-Methoden (GET, POST, PUT, DELETE) als Methoden der Klasse (z.B., get, post, put, delete).
+
+<file python helloworld.py>
+from flask import make_response
+from flask_restful import Resource
+
+class HelloWorld(Resource):
+    def get(self):
+        data = {'hello': 'world'}
+        return make_response(
+            data, 200
+        )
+</file>
+    
+In diesem Beispiel würde eine GET-Anfrage an die URL /hello die get-Methode der HelloWorld-Ressource aufrufen.
+Diese Methode liefert ein JSON-Objekt und den HTTP-Status 200 als Antwort.
+===== Flask-RESTful mit PyCharm =====
+Um die Applikation auszuführen, musst du eine Runtime Configuration hinzufügen:
+  - Menu "Run" -> "Edit Configurations ..."
+  - Füge eine neue Konfiguration hinzu mit dem "+"-Symbol.
+  - Wähle "Flask Server"
+
+{{:modul:m321:learningunits:lu03:flask_runconfig.png?400|}}
+
+Die Einstellungen sollten automatisch korrekt sein.
+Du kannst das Fenster mit [OK] schliessen.
 
 ----
 {{tag>M321-LU03}}
 [[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter
+
+//Erstellt mit Hilfe von ChatGPT//

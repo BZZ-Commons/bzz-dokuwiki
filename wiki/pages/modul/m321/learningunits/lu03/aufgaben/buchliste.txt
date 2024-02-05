@@ -1,5 +1,56 @@
-====== LU03.A01 - Service für Bücherliste ======
+====== LU03.A01 - Bibliothek ======
+<WRAP center round todo 60%>
+Erstelle eine Webapplikation mit Services zur Verwaltung von Büchern in einer Bibliothek.
+</WRAP>
 
+[[https://FIX.ME|GitHub Classroom Assignment]]
+
+===== Aufbau der Applikation =====
+In der Applikation sind die Klassen und Methoden für das Lesen und Schreiben der Bücher bereits umgesetzt.
+
+==== Datei "app.py" ====
+Die zentrale Datei zur Definition der Ressourcen und Pfade.
+
+==== Ordner "model" ====
+Hier sind die Datenklassen für ''Library'' und ''Book'' umgesetzt.
+
+==== Ordner "files" ====
+In diesem Ordner sind in der Datei ''books.json'' einige Bücher als JSON-Struktur gespeichert.
+Die Datei ''books.bak.json'' dient als Backup.
+Du kannst bei Bedarf den Inhalt dieser Datei kopieren und in ''books.json'' einfügen.
+
+==== Ordner "resource" ====
+In diesem Ordner erstellst du deine Klassen mit den Ressourcen und Services.
+
+===== Vorbereitung =====
+  - Akzeptiere das Assignment im GitHub Classroom.
+  - Klone das Repository in deine IDE.
+  - (//PyCharm//) Erstelle eine Runtime Configuration für den Flask Server.
+
+===== Aufträge =====
+Deine Aufgabe ist es, die Ressourcen, Pfade und Services zu definieren und umzusetzen.
+Für jeden Service ist das Vorgehen gleich:
+  - Lege die URI für die Ressource fest.
+  - Lege fest, mit welcher HTTP-Methode der Service aufgerufen wird.
+  - Lege den Inhalt der Response des Services fest:
+    - Welche Daten und deren Format.
+    - Welche HTTP-Statuscodes. 
+  - Falls noch nicht vorhanden, erstelle die Klasse für diese Ressource im Ordner ''resource''.
+  - Realisiere die Methode für den Service.
+  - Teste den Service mit Hilfe von Postman und/oder dem Webbrowser.
+
+
+==== Bücherliste ====
+Dieser Service liefert ein JSON-Array mit allen Buch-Objekten.
+
+==== Buch lesen ====
+Dieser Service liefert eine einzelnes Buch als JSON-Objekt.
+
+==== Buch einfügen und ändern ====
+Für das Einfügen und Ändern eines Buchs sollen zwei separates Services definiert werden.
+
+==== Buch löschen ====
+Ein weiterer Service ist für das Löschen von Büchern zuständig.
 
 ----
 {{tag>M321-LU03}}

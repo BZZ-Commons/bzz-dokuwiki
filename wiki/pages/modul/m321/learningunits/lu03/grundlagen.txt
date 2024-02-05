@@ -1,5 +1,52 @@
 ====== LU03a - Grundlagen RESTful Webservice ======
+<WRAP center round info 60%>
+Representational State Transfer (abgekürzt REST) ist ein Architekturstil für die Softwarearchitektur von verteilten Systemen, insbesondere für Webservices.
+</WRAP>
+
+//Siehe auch [[https://www.geeksforgeeks.org/restful-web-services/|Geeksforgeeks - RESTful Web Services]]//
+
+RESTful Webservices sind Webservices, die die Prinzipien von REST befolgen. 
+
+===== Konzepte =====
+
+Die grundlegenden Konzepte von RESTful Webservices:
+
+==== Uniform Interface ====
+RESTful Webservices haben eine einheitliche Schnittstelle, die aus vier Schlüsselelementen besteht:
+  * Identifikation der Ressource: Durch eine eindeutige URI.
+  * Repräsentation der Ressource: Informationen können in verschiedenen Formaten repräsentiert werden.
+  * Manipulation der Ressource durch Repräsentationen: Der Client kann die Repräsentation der Ressource ändern und an den Server senden.
+  * Hypermedia as the Engine of Application State (HATEOAS): Der Server gibt dem Client über Hypermedia Links Informationen über mögliche Aktionen.
+
+==== Ressourcen (Resources) ====
+In REST steht alles, was über eine URI (Uniform Resource Identifier) identifiziert werden kann, im Zusammenhang mit einer Ressource.
+Eine Ressource kann alles sein, auf das von einer Webanwendung aus zugegriffen werden kann, sei es eine Entität wie ein Benutzer oder ein Objekt wie ein Bild.
+
+==== Repräsentationen ====
+Ressourcen können verschiedene Repräsentationen haben, wie z.B. XML, JSON oder HTML.
+Der Client kann die Repräsentation einer Ressource abrufen, modifizieren und an den Server senden.
+
+==== Zustandslosigkeit (Statelessness) ====
+Jede Anfrage vom Client an den Server muss alle Informationen enthalten, die zum Verstehen und Verarbeiten der Anfrage erforderlich sind.
+Der Server speichert keinen Zustand über den Client zwischen Anfragen.
+
+Die Einhaltung dieser Prinzipien führt zu leicht verständlichen, skalierbaren und wartbaren Webservices, die sich gut in verteilten Systemen integrieren lassen.
+
+===== Kommunikation =====
+
+==== CRUD-Operationen ====
+RESTful Webservices unterstützen typischerweise die grundlegenden CRUD-Operationen (Create, Read, Update, Delete) für Ressourcen.
+Diese Operationen werden durch die HTTP-Methoden POST, GET, PUT und DELETE abgebildet.
+
+==== HTTP-Methoden ====
+HTTP-Methoden wie GET, POST, PUT und DELETE werden verwendet, um die CRUD-Operationen auf den Ressourcen anzuwenden.
+
+==== Statuscodes ====
+Der Server gibt HTTP-Statuscodes zurück, um den Status der Anfrage zu kennzeichnen (z.B. 200 OK, 404 Not Found, 500 Internal Server Error).
+
 
 ----
 {{tag>M321-LU03}}
 [[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter
+
+//Erstellt mit Hilfe von ChatGPT//

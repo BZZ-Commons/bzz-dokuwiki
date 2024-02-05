@@ -1,4 +1,9 @@
-====== LU03c - Webservice planen ======
+====== LU03d - Webservice planen ======
+
+<WRAP center round info 60%>
+Bei der Planung definieren wir die Schnittstelle und die Umsetzung unserer Webservices.
+</WRAP>
+
 
 ===== Definition von Webservices =====
 //siehe auch [[wpde>Webservice]]//
@@ -12,13 +17,15 @@ Vor der Realisierung eines Webservices steht die Planung.
 
   - Aufgabe des Services
   - Pfad des Services
-  - Bezeichner der Java-Methode
+  - Bezeichner der Ressource (Python-Modul)
   - Art des HTTP-Requests
   - Parameter im Request
     * Query-Parameter
     * Form-Parameter
-    * Cookie-Parameter
-  - Datenformat der Response
+  - Response des Services
+    * Welche Daten werden geliefert 
+    * Datenformat der Response
+    * HTTP-Statuscodes
 
 Zu jedem Teilschritt finden Sie als Beispiel den Service "Bücherliste" aus der Applikation "Bookshelf".
 
@@ -29,7 +36,7 @@ Dadurch können die gleichen Services in verschiedenen Formularen und Applikatio
 Vermeiden Sie bei der Definition der Aufgabe Wörter wie **und** bzw. **oder**.
 
 == Beispiel ==
-Der Webservices soll eine Collection mit allen Büchern liefern.
+Der Webservices liefert eine Collection mit allen Büchern.
 
 ==== 2. Pfad des Services ====
 Jedem Webservice wird eine eindeutige URI zugeordnet.
@@ -37,23 +44,19 @@ Diese URI besteht aus:
   * Adresse des Servers:
     * Protokoll: ''https''
     * Domain (FQDN): z.B. ''localhost'' oder ''service.ghwalin.ch''
-    * Port: z.B. '':8080''
+    * Port: z.B. '':5000''
   * Name der Applikation: z.B. ''bookshelf''
-  * Pfad des Services
-    * Hauptpfad aller Services: z.B. ''resource'' oder ''service''
-    * Pfad pro Klasse: z.B. ''book''
-    * Pfad des Service: z.B. ''list''
+  * Pfad des Services: z.B. ''library''
 
 == Beispiel ==
-Der Service für die Bücherliste soll unter [[http://localhost:8080/bookshelf/resource/book/list]] erreichbar sein.
+Der Service für die Bücherliste soll unter [[http://localhost:5000/library]] erreichbar sein.
 
-==== 3. Bezeichner der Funktion/Methode ====
-Die Umsetzung eines Webservices erfolgt in einer Python-Funktion.
-Durch die Wahl eines sprechenden Bezeichners können wir später die Methode einfach identifizieren.
-Für mich hat sich die Kombination aus einem Verb und einem Substantiv als geeignet erwiesen.
+==== 3. Bezeichner der Ressource ====
+Die Umsetzung eines Webservices erfolgt in einer Klasse in einem Python-Modul.
+Durch die Wahl eines sprechenden Bezeichners können wir später die Klassen einfach identifizieren.
 
 == Beispiel ==
-Ich nenne meine Methode ''listBooks''.
+Ich nenne meine Ressource ''library_resource'' bzw. die Klasse ''LibraryResource''.
 
 ==== 4. Art des HTTP-Requests ====
 Es gibt verschiedene Arten von HTTP-Requests.
@@ -75,9 +78,7 @@ Der Webservice "Bücherliste" soll Daten lesen.
 Daher verwende ich einen ''GET''-Request.
 
 ==== 5. Parameter im Request ====
-Manche Requests müssen dem Webservice Parameter bzw. Daten für die Verarbeitung liefern. \\
-//Siehe auch [[topics:webapp:theory:param|]]//.
-
+Manche Requests müssen dem Webservice Parameter bzw. Daten für die Verarbeitung liefern. 
 Dabei unterscheiden wir zwischen verschiedenen Möglichkeiten zur Übermittlung der Parameter.
 
 === Query-Parameter ===
@@ -93,26 +94,48 @@ enthält zwei Parameter:
 === Formular-Parameter ===
 Benutzereingaben in einem Formular können theoretisch auch in der URI übertragen werden.
 Allerdings sieht man dann im Browserverlauf, welche Eingaben gemacht wurden.
-Das ist spätestens bei Login-Formularen (Passswort!!) sehr schlecht.
+Das ist spätestens bei Login-Formularen (Passwort!!) sehr schlecht.
 
 In der Regel übertragen wir die Benutzereingaben im Datenteil des Requests.
-
-=== Cookie-Parameter ===
-Mit Cookies können Informationen auf dem Rechner des Benutzers gespeichert werden.
-Zum Beispiel enthalten Cookies Informationen über den angemeldeten Benutzer.
-Mit Cookies können wir Daten zwischen Client und Server austauschen, ohne dass der Benutzer diese direkt sieht.
-
 
 == Beispiel ==
 Mein Webservice "Bücherliste" erwartet keine Parameter.
 
-==== 6. Datenformat der Response ====
+==== 6. Response des Services ====
+=== HTTP-Statuscode ===
+Über den [[https://developer.mozilla.org/en-US/docs/Web/HTTP/Status|HTTP-Statuscode]] signalisiert der Service, ob die Verarbeitung erfolgreich war.
+Einige gebräuchliche Statuscodes sind:
+
+  * 200: OK
+  * 201: Created
+  * 400: Bad request
+  * 401: Unauthorized
+  * 403: Forbidden
+  * 404: Not found
+  * 500: Internal Server Error
+
+
+=== Daten ===
+
 Beim Senden der Daten in der Response stehen uns fast alle Möglichkeiten offen.
 Wir können vom einfachen Text, über ein einzelnes Objekt, bis hin zu Collections im Datenteil der Response senden.
+Oft bieten Services dem Aufrufer die Daten in unterschiedlichen Formate an, z.B. JSON, XML
+Wir beschränken uns vorerst auf das [[https://developer.mozilla.org/de/docs/Learn/JavaScript/Objects/JSON|JSON-Format]], da dieses sehr weit verbreitet ist.
+Ausserdem kann Flask selbständig einen Dictionary ins JSON-Format umwandeln.
 
 == Beispiel ==
-Der Webservice gibt als Response eine HashMap (''java.util.hashmap'') von ''Book''-Objekten zurück.
-Diese Liste soll im [[https://developer.mozilla.org/de/docs/Learn/JavaScript/Objects/JSON|JSON-Format]] codiert werden.
+Der HTTP-Statuscode 200 gibt an, dass die Bücher gefunden wurden.
+
+Der Webservice gibt als Response einen Dictionary von ''Book''-Objekten zurück.
+Diese Liste soll im JSON-Format codiert werden.
+
+
+
+
+
+
+
+
 
 ----
 {{tag>M321-LU03}}
