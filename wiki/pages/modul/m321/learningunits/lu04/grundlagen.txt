@@ -1,6 +1,78 @@
 ====== LU04a - AJAX Grundlagen ======
 
+====== AJAX Grundlagen ======
+
+  * [[https://openbook.rheinwerk-verlag.de/javascript_ajax/]]
+  * [[https://www.w3schools.com/js/js_ajax_intro.asp]]
+  * [[https://www.w3schools.com/xml/ajax_intro.asp]]
+
+== jQuery und AJAX ==
+  * [[https://www.w3schools.com/jquery/jquery_ref_ajax.asp]]
+
+===== Einführung =====
+
+Ajax ist ein Akronym für die Wortfolge „Asynchronous JavaScript and XML“. 
+Es bezeichnet ein Konzept der asynchronen Datenübertragung zwischen einem Server und dem Browser, die es ermöglicht, innerhalb einer HTML-Seite eine HTTP-Anfrage durchzuführen, 
+ohne die Seite komplett neu laden zu müssen. 
+Das eigentliche Novum besteht in der Tatsache, dass nur gewisse Teile einer HTML-Seite oder auch reine Nutzdaten sukzessiv bei Bedarf nachgeladen werden, 
+womit Ajax eine Schlüsseltechnik zur Realisierung des Web 2.0 darstellt.
+
+Ajax stellt eine Kombination aus länger existierenden Technologien da. 
+JavaScript wird benutzt um im Browser des Client eine Anfrage zum Server zu stellen. 
+Wenn diese Anfrage vom Server bearbeitet wurde, wird eine Funktion beim Client ausgeführt. 
+Die Nachrichten die der Server verschickt, waren ursprünglich oft in XML codiert. 
+Heute wird in vielen Applikationen **JSON** anstelle von XML verwendet.
+
+Die Codierung in XML bzw. JSON ist jedoch nicht zwingen, es kann auch eine Codierung als simpler Text erfolgen. 
+Gerade in Kombination mit Javascript können JSON-Daten einfacher verarbeitet werden, als simpler Text. 
+
+Wie oben bereits erwähnt, führt der Server etwas aus und sendet eine Antwort . 
+Die Implementierung auf der Serverseite kann in einer beliebigen Programmier oder Skriptsprache realisiert werden. 
+In diesem Tutorial und den Schaubildern verwende ich jedoch PHP als serverseitige Skriptsprache.
+
+ 
+===== Architektur =====
+
+Bei Ajax werden verschiedene bekannte Technologien eingesetzt, um interaktive, desktopähnliche Webanwendungen zu realisieren. 
+Diese vermitteln so den Eindruck, als ob das Problem der zustandslosen Webanwendung behoben sei.
+
+{{:modul:m321:learningunits:lu04:architektur_webapp.png?400|}}
+
+===== Grundlagen =====
+Das Wort Ajax ist ein regelrechtes Buzzword im Internet in den letzten Jahren, doch was steckt eigentlich hinter Ajax? 
+Ajax ist die Abkürzung für: 
+  * **A**syncronous 
+  * **J**avaScript 
+  * **a**nd 
+  * **X**ML
+
+==== Asynchronität ====
+AJAX ermöglicht asynchrone Anfragen, was bedeutet, dass der Webbrowser nicht auf die Antwort des Servers warten muss, bevor er mit anderen Aufgaben fortfährt. 
+Dies geschieht durch den Einsatz von JavaScript und XMLHttpRequest-Objekten, um Anfragen an den Server zu senden.
+
+==== XMLHttpRequest-Objekt ====
+Dieses Objekt bildet die Grundlage von AJAX und ermöglicht es, Daten zwischen dem Webbrowser und dem Webserver auszutauschen. 
+Es unterstützt verschiedene HTTP-Methoden wie GET und POST, um Daten abzurufen oder zu senden.
+
+==== Datenübertragung im Hintergrund ====
+Mit AJAX können Daten im Hintergrund übertragen werden, ohne die gesamte Seite neu zu laden. 
+Dies geschieht durch das Senden von HTTP-Anfragen an den Server und das Aktualisieren der Seite dynamisch mit den erhaltenen Daten.
+
+==== DOM-Manipulation ====
+Nachdem Daten mit AJAX abgerufen wurden, können sie dynamisch in die Seite eingefügt werden, ohne die gesamte Seite neu zu laden. 
+Dies ermöglicht eine schnelle Aktualisierung von Inhalten, ohne das Benutzererlebnis zu beeinträchtigen.
+
+==== Cross-Browser-Kompatibilität ====
+AJAX ist so konzipiert, dass es in verschiedenen Webbrowsern funktioniert. 
+Es werden jedoch oft Bibliotheken wie jQuery oder Frameworks wie Angular, React oder Vue.js verwendet, um die Entwicklung zu erleichtern und die Cross-Browser-Kompatibilität zu verbessern.
+
+==== JSON als Datenformat ====
+Obwohl AJAX "XML" im Namen hat, wird heutzutage häufig JSON (JavaScript Object Notation) als Datenformat verwendet. JSON ist leichter lesbar und leichter zu parsen als XML.
+
+Die Kombination dieser Grundlagen ermöglicht es Webentwicklern, dynamische und reaktionsfähige Benutzeroberflächen zu erstellen, die Daten asynchron zwischen dem Browser und dem Server austauschen, ohne die gesamte Seite neu zu laden.
 
 ----
 {{tag>M321-LU01}}
 [[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter
+
+//Erstellt mit Hilfe von ChatGPT//

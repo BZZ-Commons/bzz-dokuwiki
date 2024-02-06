@@ -1,0 +1,106 @@
+====== LU04c - Formulardaten verarbeiten ======
+
+Beim Speichern von Benutzereingaben muss der View-Controller die Formulardaten an den entsprechenden Service senden.
+Dazu müssen wir beim ''fetch''-Befehl ein paar zusätzliche Parameter mitgeben.
+
+==== Beispiel ====
+=== person.html ===
+<code html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <head>
+      <meta charset="UTF-8">
+      <meta name="author" content="Marcel Suter"/>
+      <meta name="copyright" content="Marcel Suter - BZZ"/>
+      <meta name="project" content="Simple Ajax"/>
+      <meta name="description" content="AJAX JSON Datei"/>
+      <title>Persondaten speichern</title>
+      <script src="./savePerson.js"></script>
+    </head>
+
+  </head>
+  <body>
+    <h2>Person</h2>
+    <form id="personForm">
+      <table>
+        <tr>
+          <td><label for="firstname">Vorname</label></td>
+          <td><input id="firstname" type="text"/></td>
+        </tr>
+        <tr>
+          <td><label for="lastname">Nachname</label></td>
+          <td><input id="lastname" type="text"/></td>
+        </tr>
+        <tr>
+          <td><label for="age">Alter</label></td>
+          <td><input id="age" type="text"/></td>
+        </tr>
+        <tr>
+          <td><label for="hobbies">Hobbys</label></td>
+          <td><input id="hobbies" type="text"/></td>
+        </tr>
+        <tr>
+          <td>
+            <button type="submit">Speichern</button>
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
+</code>
+
+== Hinweise ==
+  * Die Eingabefelder müssen in einem ''<form>...</form>''-Element eingebettet sein.
+  * Das Speichern erfolgt über den ''<button type="submit">''.
+
+
+=== savePerson.js ===
+<code javascript>
+document.addEventListener("DOMContentLoaded", () => {
+  // Listener for submit-event
+  document.getElementById("personForm").addEventListener("submit", savePerson);
+});
+
+function savePerson(event) {
+  // Don't let the browser send any request
+  event.preventDefault();
+
+  // get the form-element
+  const personForm = document.getElementById("personForm");
+  // create a FormData-object and add the data
+  const formData = new FormData(personForm);
+  // create an URLSearchParam-object and add the formData
+  const data = new URLSearchParams(formData);
+
+  fetch ("./save",
+    {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/x-www-form-urlencoded"
+      },
+      body: data
+    })
+    .then(function (response) {
+      if (!response.ok) {
+        console.log(response);
+      } else return response;
+    })
+    .then()
+    .catch(function (error) {
+      console.log(error);
+    });
+}
+</code>
+
+=== Hinweise ===
+  * Der Browser möchte beim "Submit"-Event selber einen Request absetzen. Dies müssen wir über ''event.preventDefault()'' verhindern.
+  * Im ''fetch''-Befehl müssen wir zusätzlich zur URL einige Parameter angeben:
+    * ''method'': Die HTTP-Methode für den Request (Default: GET)
+    * ''headers'': Hier geben wir an, wie die Daten codiert werden.
+    * ''body'': Die Formulardaten
+
+----
+{{tag>M321-LU04}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

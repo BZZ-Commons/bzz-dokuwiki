@@ -1,4 +1,57 @@
 ====== LU04.A01 - Webseite für Bücherliste ======
+<WRAP center round todo 60%>
+Ergänze die AJAX-Requests für das Frontend der Applikation "Bibliothek".
+</WRAP>
+
+**[[https://classroom.github.com/a/drGwrf-Z|GitHub Classroom Assignment]]**
+
+===== Aufbau der Applikation =====
+Die Applikation enthält die HTML-, CSS- und Javascript-Dateien für das Frontend der Bibliothek.
+Besonders in der Datei ''util.js'' sind einige hilfreiche Funktionen vorhanden, ein Blick lohnt sich.
+
+Anstelle der AJAX-Requests werden in der Vorlage hart codierte Daten verwendet.
+Deine Aufgabe ist es, die korrekten AJAX-Requests einzufügen und deren Resultat auszuwerten.
+Beachte dabei die Schnittstellen der Services aus [[modul:m321:learningunits:lu03:aufgaben:buchliste]].
+
+===== Vorbereitung =====
+Für die Entwicklung arbeiten wir mit dem lokalen Webserver **localhost**. 
+Dieser blockiert jedoch sämtliche AJAX-Requests mit wegen //Cross Origin Resource Sharing (CORS)//.
+Daher müssen wir am Anfang der Datei ''app.py'' unserer Flask-Applikation eine kleine Anpassung vornehmen:
+
+<code python>
+from flask import Flask
+from flask_restful import Api
+from flask_cors import CORS
+
+from resource.book_resource import BookResource
+from resource.library_resource import LibraryResource
+
+app = Flask(__name__)
+CORS(app)
+api = Api(app)
+
+...
+</code>
+
+Nun können wir unsere AJAX-Requests mit der URL ''http://localhost:5050/...'' ausführen.
+
+===== Aufträge =====
+==== Buch lesen ====
+Lies ein Buch anhand der Book-UUID.
+Die Book-UUID ist als Parameter in der URL verfügbar.
+
+===== Bücherliste lesen =====
+Lies alle Bücher aus der Bibliothek.
+
+==== Buch löschen ====
+Lösche ein Buch anhand der Book-UUID.
+Die Book-UUID ist als Parameter in der URL verfügbar.
+
+==== Buch speichern ====
+Speichere ein neues oder geändertes Buch.
+Anhand der Book-UUID in der URL kannst du erkennen, ob es ...
+  * ... ein bestehendes Buch ist (Book-UUID in der URL vorhanden)
+  * ... ein neues Buch ist (keine Book-UUID)
 
 
 ----

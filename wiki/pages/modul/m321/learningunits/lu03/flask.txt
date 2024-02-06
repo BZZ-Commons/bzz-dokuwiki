@@ -4,6 +4,8 @@ Flask ist ein leichtgewichtiges Web-Framework für Python, das sich besonders gu
 Flask-RESTful ist eine Erweiterung des Flask-Frameworks für die einfache Implementierung von RESTful Webservices in Python.
 </WRAP>
 
+[[modul:m323:learningunits:lu06:start|Unterlagen zu Flask im Modul 323]]
+
 Flask-RESTful erleichtert die Erstellung von REST-APIs durch die Bereitstellung von Tools und Strukturen, um Ressourcen, Routen und andere Funktionen eines RESTful Webservices zu organisieren. 
 Flask-RESTful bietet eine einfache und effektive Möglichkeit, RESTful Webservices in Python zu entwickeln. 
 Es ermöglicht die Strukturierung von Code und bietet Funktionen, um häufige Aufgaben bei der Erstellung von RESTful APIs zu erleichtern.
