@@ -37,17 +37,21 @@ Ein einfacher Flask-RESTful Webservice kann durch die Erstellung einer Flask-App
 from flask import Flask
 from flask_restful import Resource, Api
 
-app = Flask(__name__)
-api = Api(app)
+def create_app():
+    app = Flask(__name__)
+    CORS(app)
+    api = Api(app)
 
-api.add_resource(HelloWorld, '/hello')
+    api.add_resource(HelloWorld, '/hello')
+    return app
 
 if __name__ == '__main__':
+    app = create_app()
     app.run(debug=True)
 
 </file>
-
-Dieses Skript definiert eine Ressource (''HelloWorld'') und den Pfad (''/hello'') zu dieser Ressource.
+In der Funktion ''create_app'' wird die Flask-Applikation erstellt.
+Dieses Beispiel definiert eine Ressource (''HelloWorld'') und den Pfad (''/hello'') zu dieser Ressource.
 
 ==== Definition von Ressourcen ====
 Ressourcen werden durch Klassen repräsentiert, die von der Resource-Klasse von Flask-RESTful erben.
@@ -65,7 +69,7 @@ class HelloWorld(Resource):
         )
 </file>
     
-In diesem Beispiel würde eine GET-Anfrage an die URL /hello die get-Methode der HelloWorld-Ressource aufrufen.
+In diesem Beispiel würde eine GET-Anfrage an die URL ''/hello'' die get-Methode der HelloWorld-Ressource aufrufen.
 Diese Methode liefert ein JSON-Objekt und den HTTP-Status 200 als Antwort.
 ===== Flask-RESTful mit PyCharm =====
 Um die Applikation auszuführen, musst du eine Runtime Configuration hinzufügen:

@@ -1,9 +1,11 @@
-====== LU01.A04 - Library ======
+====== LU04.A01 - Library ======
 
 <WRAP center round todo 60%>
 Erstelle die vollständigen Unittests für die Library-Applikation.
 Wende dabei alles aus den Learning Units 03 und 04 an.
 </WRAP>
+
+**[[https://classroom.github.com/a/vYWuIjFp|GitHub Classroom Assignment]]**
 
 ===== Auftrag 1 =====
 Die Library-Applikation enthält mehrere Klassen und zu jeder Klasse ein entsprechendes Testmodul.
@@ -15,39 +17,43 @@ Erstelle diese Objekte in ''fixture''s und nicht innerhalb der Testfunktion.
 
 Objekte die innerhalb der Testfunktion erstellt werden, sind **fett** markiert.
 
-==== book.py / test_book.py ====
+==== book.py / test_book ====
+Erstelle für jede der folgenden Situationen eine Test-Funktion:
   * Konstruktor
     * Erzeuge ein **Book-Objekt** mit gültigem Titel und ISBN.
     * Erzeuge ein **Book-Objekt** mit einem oder keinem Wert.
   * Ausgabe
-    * Prüfe die korrekte Ausgabe eines Buchs.
+    * Prüfe die korrekte Ausgabe eines ''Buchs''.
   * Location
-    * Prüfe, dass die ''location'' bei einem neuen **Book-Objekt** leer ist.
-    * Erzeuge ein **Book-Objekt** mit Titel, ISBN und Location. Prüfe, ob die ''location'' im Book-Objekt leer ist.
+    * Prüfe, dass das Attribut "location" bei einem neuen ''Buch'' leer ist.
+    * Erzeuge ein **Book-Objekt** mit Titel, ISBN und Location. Prüfe, ob das Attribut "location"  im Book-Objekt leer ist.
 
-==== library.py / test_library.py ====
+==== library.py / test_library ====
   * Konstruktor
-    * Erzeuge ein **Library-Objekt** und prüfe die Listen mit den Büchern und den Kunden.
+    * Erzeuge ein **Library-Objekt** und prüfe ob zwei leere Listen für Bücher und Kunden vorhanden sind.
   * Kunden
-    * Füge zwei Kunden zur Bibliothek hinzu. Sind beide Kunden in der Liste vorhanden?
-    * Suche nach einem vorhandenen Kunden in der Bibliothek.
-    * Suche einen nicht vorhandenen Kunden in der Bibliothek.
-    * Lasse die Kundenliste ausgeben.
+    * Füge zwei ''Kunden'' zur ''Bibliothek'' hinzu. Sind beide Kunden in der Liste vorhanden?
+    * Suche nach einem vorhandenen Kunden in der ''Bibliothek''.
+    * Suche einen nicht vorhandenen Kunden in der ''Bibliothek''.
+    * Lasse die Kundenliste der ''Bibliothek'' ausgeben.
   * Bücher
-    * Füge drei Bücher zur Bibliothek hinzu.
-    * Suche ein vorhandenes Buch in der Bibliothek.
-    * Suche ein unbekanntes Buch in der Bibliothek.
-    * Entferne ein existierendes Buch aus der Bibliothek.
-    * Entferne ein unbekanntes Buch aus der Bibliothek.
-    * Nimm ein Buch an einer bekannten Position aus der Bibliothek.
-    * Nimm ein Buch an einer unbekannten Position aus der Bibliothek.
-    * Stelle ein Buch mit einer korrekten Position zurück.
-    * Stelle ein Buch mit einer unbekannten Position zurück.
-    * Lasse eine Bücherliste anzeigen.
+    * Füge drei Bücher zur ''Bibliothek'' hinzu.
+    * Suche ein vorhandenes Buch in der ''Bibliothek''.
+    * Suche ein unbekanntes Buch in der ''Bibliothek''.
+    * Entferne ein existierendes ''Buch'' aus der ''Bibliothek''.
+    * Entferne ein unbekanntes Buch aus der ''Bibliothek''.
+    * Nimm ein Buch an einer bekannten Position aus der ''Bibliothek''.
+    * Nimm ein Buch an einer unbekannten Position aus der ''Bibliothek''.
+    * Stelle ein ''Buch'' mit einer korrekten Position zurück.
+    * Stelle ein ''Buch'' mit einer unbekannten Position zurück.
+    * Lasse eine Bücherliste der ''Bibliothek'' anzeigen.
 
 ===== Auftrag 2 =====
 Hast du erkannt, nach welchem System die Testfunktionen definiert werden?
 Versuche nun selber Testfunktionen für die Klassen ''Customer'' und ''Librarian'' zu definieren und umzusetzen.
+
+===== Schritt 3 =====
+Zuletzt soll die Funktion ''main'' in ''main.py'' getestet werden.
 
 ----
 {{tag>M450-LU04}}

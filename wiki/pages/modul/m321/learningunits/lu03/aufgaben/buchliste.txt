@@ -54,12 +54,13 @@ Falls es gefunden wurde, wird das Buch in der Response an den Aufrufer gesendet.
 
 ==== Buch einfügen ====
 Dieser Service fügt die Daten eines neuen Buchs in die Bücherliste der Library-Klasse ein.
+In der Response wird die UUID des neuen Buchs mitgegeben.
 
 Die Methode parst die Formular-Parameter aus dem Request ein. 
 Diese Parameter müssen vorgängig definiert werden.
 Es wird ein neues Buch-Objekt erstellt und eine neue UUID erzeugt.
 Die Formulardaten werden in das Buch-Objekt gespeichert.
-Zuletzt  wird das Buch-Objekt am Ende der Bücherliste eingefügt und gespeichert.
+Zuletzt wird das Buch-Objekt am Ende der Bücherliste eingefügt und gespeichert.
 
 ==== Buch ändern ====
 Dieser Service ändert die Daten eines bestehenden Buchs in der Bücherliste der Library-Klasse ein.
