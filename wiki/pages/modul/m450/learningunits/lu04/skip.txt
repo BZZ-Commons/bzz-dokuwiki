@@ -1,5 +1,5 @@
 ====== LU04b - Test überspringen ======
-<nodisp>TODO SuMa</nodisp>
+
 <WRAP center round info 60%>
 Je nach Situation oder Umgebung wollen wir einzelne Tests nicht durchführen.
 Mittels ''skip'' können wir einen Test überspringen.
@@ -55,6 +55,26 @@ Auch bei relativ komplexen Bedingungen ist diese Variante besser geeignet als de
 
 <nodisp>TODO SuMa - Beispiel</nodisp>
 <code python>
+def test_setup(monkeypatch, capsys, test_values):
+    if isinstance(test_values, dict) and \
+            isinstance(test_values['energy_price'], float) and \
+            isinstance(test_values['client1'], str) and \
+            isinstance(test_values['client2'], str) and \
+            isinstance(test_values['client3'], str):
+        print('\tSetup erfolgreich')
+    else:
+        pytest.skip('\tDie Datei "testdata.json" fehlt oder ist fehlerhaft. Kontaktieren Sie Ihre Lehrperson.')
+
+
+@pytest.fixture
+def test_values():
+    try:
+        with open('./testdata.json') as json_file:
+            data = json.load(json_file)
+            data['energy_price'] = float(data['energy_price'])
+            return data
+    except FileNotFoundError:
+        return 'Die Datei "testdata.json" fehlt. Kontaktieren Sie Ihre Lehrperson'
 
 </code>
 

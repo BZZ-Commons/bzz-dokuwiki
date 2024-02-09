@@ -1,4 +1,5 @@
 ====== LU04a - Fixture ======
+<nodisp>TODO SuMa: Fixture für Objekte und Funktionen</nodisp>
 <WRAP center round info 60%>
 Eine //Fixture// (deutsch: Vorrichtung, Halterung) dienen zur Initialisierung von Tests.
 Sie bieten eine statische Basis, damit Test zuverlässig ausgeführt werden und konsistente, wiederholbare Resultate erzeugen.
@@ -49,6 +50,11 @@ Dadurch stellen wir beliebig vielen Testfunktionen eine einheitliche Datenbasis 
 
 === Beispiel ===
 <code python>
+
+def test_add_entries1(monkeypatch, capsys, version, test_values):
+    ....
+    
+    
 @pytest.fixture
 def test_values():
     try:
@@ -76,6 +82,26 @@ def version():
 </code>
 
 
+==== Flask-APP als Fixture ====
+<code python>
+@pytest.fixture()
+def app():
+    app = create_app()
+    shutil.copy('./files/books.bak.json', './files/books.json')
+    yield app
+
+
+@pytest.fixture()
+def client(app):
+    app.testing = True
+    return app.test_client()
+
+
+@pytest.fixture()
+def runner(app):
+    return app.test_cli_runner()
+    
+</code>
 ----
 {{tag>M450-LU04}}
 [[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

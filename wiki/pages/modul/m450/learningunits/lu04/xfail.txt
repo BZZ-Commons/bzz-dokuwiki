@@ -48,6 +48,12 @@ Wir können ''pytest.xfail'' auch innerhalb einer Testfunktion aufrufen.
 Im Gegensatz zum Dekorator wird dabei jedoch die Ausführung der Funktion abgebrochen und keine weiteren Befehle ausgeführt.
 Dadurch ist diese Variante weniger geeignet.
 
+<code python>
+def test_read_entry(monkeypatch, capsys, attributes):
+    if attributes not in ['BASIS', 'ERWEITERT']:
+        pytest.xfail('Test kann erst durchgeführt werden, wenn die Attribute der Klasse "Entry" definiert sind')
+</code>
+
 ----
 {{tag>M450-LU04}}
 [[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter
