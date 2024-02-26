@@ -1,0 +1,53 @@
+====== LU06b - JSON Web Token (JWT) ======
+
+//Siehe auch [[wpde>JSON_Web_Token]] und [[https://jwt.io/|jwt.io]]//
+<WRAP center round info 60%>
+JSON Web Token sind eine standardisierte Methode um sichere Daten zwischen Client und Server auszutauschen.
+Sie eignen sich unter anderem für die Authentifikation in stateless Webservices (z.B. RESTful Webservices) und verteilten Systemen.
+</WRAP>
+
+===== Authentifikation mit JWT =====
+==== 1. Login ====
+
+  - Der Client sendet einen Request mit Benutzername/Passwort an den Authenfikations-Service.
+  - Der Service prüft Benutzername/Passwort erfolgreich => Der Benutzer ist angemeldet.
+  - Der Service erzeugt ein Token mit den Angaben zum Benutzer wie 
+    * Benutzer-ID
+    * Rolle
+    * ...
+  - Dieses Token wird verschlüsselt und signiert, bevor es an den Client gesendet wird.
+
+== Beispiel eines Tokens ==
+In diesem Beispiel wird die eindeutige Kennung (uuid) des Benutzers und seine Rolle im Token gespeichert.
+Für die Verschlüsselung wird RSA mit SHA-256 eingesetzt (''RS256'').
+
+<code>
+{
+  "alg": "RS256",
+  "typ": "JWT"
+}
+{
+  "uuid": "a6c162b8-fa10-4cdb-930a-f2d08dd821f3",
+  "role": "admin"
+} 
+</code>
+
+==== 2. Autorisation prüfen ====
+  - Der Client sendet einen Request an den Book-Service um die Bücherliste zu lesen. \\ Beim Request sendet der Client das Token mit, welches er beim erfolgreichen Login erhalten hat.
+  - Der Server empfängt das Token, entschlüsselt es und prüft die Signatur. \\ Falls die Signatur korrekt ist, handelt es sich um ein legitimes Token.
+  - Der Server kann nun anhand der Angaben im Token prüfen, ob der Client für den gewünschten Server autorisiert ist.
+
+===== Sicherheit =====
+Wie alle Daten die an den Client gesendet werden, können auch JSON Web Token gelesen und manipuliert werden.
+Die Sicherheit des Tokens wird durch das Verschlüsseln und Signieren der Daten erreicht.
+
+  * Die Verschlüsselung verhindert das Auslesen der Daten im Token durch einen Angreifer.
+  * Die Signatur dient zur Erkennung von Manipulationen am Token.
+
+===== Umsetzung =====
+Für die Umsetzung stehen eine Reihe von fertigen Bibliotheken zur Verfügung.
+Eine aktuelle Liste finden Sie auf der Seite von [[https://jwt.io/]].
+
+----
+{{tag>M321-LU06}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

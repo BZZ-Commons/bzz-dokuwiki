@@ -1,0 +1,57 @@
+====== LU05.A01 - Authentifizierungsservice erstellen ======
+<WRAP center round info 60%>
+Erstelle einen Authentifizierungsservice als RESTful Flask-Applikation.
+</WRAP>
+
+===== Umsetzung =====
+Für die Umsetzung im Modulunterricht erstellen wir eine RESTful Flask-Applikation.
+
+==== Benutzerkonten ====
+Die Benutzerkonten speichern wir als JSON-Objekte in einer Datei.
+<code json>
+[
+  {
+    "username": "hans.muster@abc.xy",
+    "password": "addb0f5e7826c857d7376d1bd9bc33c0c544790a2eac96144a8af22b1298c940",
+    "role": "user"
+  },
+  {
+    "username": "beatrice.beispiel@abc.xy",
+    "password": "33c5ebbb01d608c254b3b12413bdb03e46c12797e591770ccf20f5e2819929b2",
+    "role": "admin"
+  }
+]
+</code>
+Das Passwort ist als SHA-256 Hash gespeichert.
+Die Passwörter der beiden Benutzer sind:
+  * Hans Muster / "geheim"
+  * Beatrice Beispiel / "passwort"
+
+==== Request ====
+Der Client sendet einen POST-Request mit dem Benutzernamen und dem Passwort.
+
+=== Service ===
+
+  * HTTP-Methode: ''POST''
+  * Pfad: ''/login''
+  * Daten:
+    * ''username''
+    * ''password''
+
+
+==== Response ====
+
+=== Authentifizierung erfolgreich ===
+
+Die Response unseres Services besteht aus dem HTTP-Statuscode "200" und einem Token.
+Das Token enthält:
+  * Benutzername
+  * Benutzerrolle
+  * Aktueller Zeitstempel
+  * Signatur
+
+Bevor wir das Token an den Client senden, wird es verschlüsselt.
+
+----
+{{tag>M321-LU05}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

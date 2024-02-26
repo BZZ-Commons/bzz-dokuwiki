@@ -1,0 +1,62 @@
+====== LU05c - Umsetzung als Beispiel ======
+<WRAP center round info 60%>
+In der Applikation zur Verwaltung der Nachprüfungen nutze ich die Autentifizierung von AzureAD.
+Dieses Kapitel zeigt auszugsweise die Umsetzung im Client.
+</WRAP>
+
+===== AzureAD =====
+Damit meine Applikation den Authentifikationsservice nutzen kann, muss diese in AzureAD registriert werden.
+Für jede Applikation wird eingetragen, auf welche Daten und Services sie zugreifen darf.
+
+Dabei wird unter anderem die URL meiner Applikation festgelegt.
+Dadurch wird verhindert, dass ein beliebiger Webserver diese Registration für mögliche Angriffe nutzen kann.
+
+===== Client-Applikation =====
+Die Client-Applikation [[https://github.com/ghwalin/exam_frontend]] ist für die Interaktion mit dem Benutzer verantwortlich.
+Sie umfasst HTML-, CSS- und Javascript.
+
+===== Login: "index.html" =====
+Die Login-Seite besteht lediglich aus einem Button [BZZ Intranet] über den der Autentifikationsservice von AzureAD aufgerufen wird.
+
+{{:modul:m321:learningunits:lu05:exam01.png?600|}}
+
+Im Hintergrund werden mehrere Javascript-Dateien eingebunden, welche die Verarbeitung übernehmen.
+<code html>
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Marcel Suter">
+  <title>Nachprüfung</title>
+  <script src="https://alcdn.msauth.net/browser/2.30.0/js/msal-browser.js"
+          integrity="sha384-o4ufwq3oKqc7IoCcR08YtZXmgOljhTggRwxP2CLbSqeXGtitAxwYaUln/05nJjit"
+          crossorigin="anonymous"></script>
+  <script src="./js/config.js"></script>
+  <script src="./js/loginCtrl.js" defer></script>
+  ...
+</head>
+</code>
+
+==== msal-browser.js ====
+Dieses Script wird von Microsoft unterhalten und bereitgestellt.
+Es enthält die Programmlogik für die Authentifikation mit AzureAD.
+Ist die Authentifikation erfolgreich, dann wird ein Token mit der Identität des Benutzers erzeugt. 
+
+==== config.js ====
+Dieses Script enthält die Einstellungen für meine Applikation.
+Unter anderem 
+  * URL der Backend-Applikation
+  * Application-ID
+  * Tenant-ID
+
+
+==== loginCtrl.js ====
+Dieses Script steuert die Verarbeitung des Logins.
+Dazu wird ein Microsoft Authentication Library-Objekt (MSAL) erstellt.
+Das Token welches von MSAL erzeugt wird, dient dann zur Authentifikation gegenüber der Backend-Applikation.
+Dabei wird das Token an den Service ''/login'' im Backend gesendet.
+Dieser Service prüft ob dieses Token gültig ist und ob das Login von einem Lernenden oder einer Lehrperson stammt.
+
+----
+{{tag>M321-LU01}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

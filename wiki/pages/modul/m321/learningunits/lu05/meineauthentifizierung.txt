@@ -1,0 +1,98 @@
+====== LU05e - Authentifizierungsservice erstellen ======
+<WRAP center round info 60%>
+info box
+</WRAP>
+
+===== Planung =====
+Für die Realisierung eines Authentifizierungsservice müssen wir zunächst einige Punkte festlegen.
+
+==== Benutzerkonten ====
+Unser Authentifizierungsservice benötigt Zugriff auf ein Verzeichnis aller Benutzerkonten. 
+Je nach Anzahl Benutzer und Umfang der Daten können wir die Benutzer in einer Datei (z.B. JSON), einer Datenbank (z.B. MySQL, MongoDB) oder einem [[wpde>Lightweight_Directory_Access_Protocol|LDPA-Verzeichnisdienst]] erfolgen.
+In einer Organisation richten wir uns soweit möglich nach den bereits vorhandenen Lösungen.
+
+Die gespeicherten Daten eines Benutzerkontos richten sich nach den Anforderungen der Applikationen, welche den Authentifizierungsservice nutzen wollen.
+Typische Beispiele sind:
+  * Benutzername
+  * Emailadresse
+  * Passwort (**als Hashwert gespeichert**)
+  * Weitere Authentifikationsfaktoren wie Authenticatorcode, Public Key oder Telefonnummer.
+  * Vor- und Nachname
+  * Benutzergruppe(n) und Berechtigungen
+ 
+==== Requests ====
+Ein Authentifizierungsservice muss zumindest einen Service für die Anmeldung anbieten.
+Zusätzlich können weitere Services für das Abmelden und das Zurücksetzen des Passworts in Frage kommen.
+
+==== Response ====
+Falls die Authentifizierung erfolgreich war, müssen wir dem Client eine Art von digitaler Identitätskarte, ein sogenanntes Token, ausstellen.
+Mit diesem Token kann sich der Client danach bei anderen Services ausweisen, um Zugriff auf die Ressourcen zu erhalten.
+Dazu werden im Token alle für die Autorisation relevanten Daten gespeichert, z.B.
+  * Benutzername
+  * Berechtigungen
+
+Solche Tokens müssen natürlich gut geschützt werden.
+Ein Angreifer könnte mit einem gestohlenen oder manipulierten Token grossen Schaden anrichten.
+Um dies zu verhindern, treffen wir einige Sicherheitsmassnahmen.
+
+=== Gültigkeit ===
+Ein Token ist nur für wenige Minuten gültig.
+Nach Ablauf dieser Zeit muss der Client ein neues Token anfordern.
+
+=== Signatur ===
+Eine Signatur lässt uns erkennen, ob ein Token manipuliert wurde.
+Jedes Token wird durch ein Public-Key-Verfahren mit einem geheimen Schlüssel signiert.
+Nur der Authentifizierungsservice kennt diesen geheimen Private Key.
+Um die Signatur zu prüfen nutzen die anderen Services den entsprechenden Public Key.
+
+=== Verschlüsselung ===
+Eine Verschlüsselung des Tokens verhindert, dass ein Angreifer die Daten auslesen kann.
+Um das Token zu entschlüsseln, müssen alle Services einen gemeinsamen Schlüssel verwenden.
+
+===== Umsetzung =====
+Für die Umsetzung benötigen wir kryptografische Funktionen für das Signieren und Verschlüsseln.
+Dazu verwenden wir [[https://pycryptodome.readthedocs.io/en/latest/src/introduction.html#|PyCryptodome]].
+
+==== Schlüssel ====
+Die geheimen Schlüssel dürfen selbstverständlich nicht im Sourcecode unserer Applikation stehen.
+Andernfalls könnte auf GitHub jeder den Schlüssel sehen.
+Stattdessen verwenden wir eine ''.env''-Datei. 
+Diese soll von git ignoriert werden, damit sie nicht versehentlich im öffentlichen Repository landet.
+
+<code>
+SIGNATURE_KEY="a04f2af45d3a4e161a7dd2d17fdae47f"
+ENCRYPT_KEY="CMDKtzeuhrAkPg15d3a4e1dwH44f2aXp"
+</code>
+
+Um die Daten aus der ''.env''-Datei zu lesen, musst du ''current_app'' von ''flask'' importieren.
+Beim Erstellen der Flask-Applikation lädst du die Daten aus der Datei:
+<code python app.py>
+...
+def create_app():
+    app = Flask(__name__)
+    CORS(app)
+    app.config.from_pyfile('./.env')
+    api = Api(app)
+</code>
+
+Um einen Werte zu lesen, verwendest du den Schlüssel aus der '.env''-Datei:
+
+<code python>
+from flask import current_app
+def example:
+  signature_key = current_app.config['SIGNATURE_KEY']
+  print (signature_key)
+  
+</code>
+
+==== Signatur ====
+Das Paket [[https://pycryptodome.readthedocs.io/en/latest/src/signature/signature.html|Crypto.Signature]] stellt uns die benötigten Funktionen bereit.
+
+
+==== Verschlüsselung ====
+
+
+
+----
+{{tag>M321-LU05}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter
