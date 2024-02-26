@@ -50,8 +50,8 @@ Eine Verschlüsselung des Tokens verhindert, dass ein Angreifer die Daten ausles
 Um das Token zu entschlüsseln, müssen alle Services einen gemeinsamen Schlüssel verwenden.
 
 ===== Umsetzung =====
-Für die Umsetzung benötigen wir kryptografische Funktionen für das Signieren und Verschlüsseln.
-Dazu verwenden wir [[https://pycryptodome.readthedocs.io/en/latest/src/introduction.html#|PyCryptodome]].
+Für die Umsetzung des Tokens verwenden wir JSON Web Token (JWT).
+Die Bibliothek [[https://pyjwt.readthedocs.io/en/stable/index.html|PyJWT]] stellt uns die nötigen Funktionen bereit.
 
 ==== Schlüssel ====
 Die geheimen Schlüssel dürfen selbstverständlich nicht im Sourcecode unserer Applikation stehen.
@@ -60,9 +60,12 @@ Stattdessen verwenden wir eine ''.env''-Datei.
 Diese soll von git ignoriert werden, damit sie nicht versehentlich im öffentlichen Repository landet.
 
 <code>
-SIGNATURE_KEY="a04f2af45d3a4e161a7dd2d17fdae47f"
-ENCRYPT_KEY="CMDKtzeuhrAkPg15d3a4e1dwH44f2aXp"
+ACCESS_TOKEN_KEY="a04f2af45d3a4e161a7dd2d17fdae47f"
+TOKEN_DURATION=600
 </code>
+
+  * Der ''ACCESS_TOKEN_KEY'' dient zum Verschlüsseln des Tokens.
+  * Die ''TOKEN_DURATION'' legt fest, wieviele Sekunden das Token gültig ist.
 
 Um die Daten aus der ''.env''-Datei zu lesen, musst du ''current_app'' von ''flask'' importieren.
 Beim Erstellen der Flask-Applikation lädst du die Daten aus der Datei:
@@ -75,23 +78,23 @@ def create_app():
     api = Api(app)
 </code>
 
-Um einen Werte zu lesen, verwendest du den Schlüssel aus der '.env''-Datei:
+Um einen bestimmten Wert zu lesen, verwendest du den Schlüssel aus der ''.env''-Datei:
 
 <code python>
 from flask import current_app
 def example:
-  signature_key = current_app.config['SIGNATURE_KEY']
+  signature_key = current_app.config['ACCESS_TOKEN_KEY']
   print (signature_key)
   
 </code>
 
-==== Signatur ====
-Das Paket [[https://pycryptodome.readthedocs.io/en/latest/src/signature/signature.html|Crypto.Signature]] stellt uns die benötigten Funktionen bereit.
+==== Signieren und Verschlüsseln ====
 
-
-==== Verschlüsselung ====
-
-
+Die Funktion ''jwt.encode()'' übernimmt diese Aufgaben für uns.
+Für den Aufruf geben wir diese Parameter mit:
+  * ''payload'': Ein Dictionary mit den Daten, die im Token gespeichert werden.
+  * ''key'': Der geheime Schlüssel. Dies kann ein einfacher String sein oder z.B. ein RSA Private Key
+  * ''algorithm'': Der Verschlüsselungsalgorithmus; Default ist 'HS256''
 
 ----
 {{tag>M321-LU05}}

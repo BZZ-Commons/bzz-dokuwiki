@@ -1,4 +1,4 @@
-====== LU06b - JSON Web Token (JWT) ======
+====== LU05d - JSON Web Token (JWT) ======
 
 //Siehe auch [[wpde>JSON_Web_Token]] und [[https://jwt.io/|jwt.io]]//
 <WRAP center round info 60%>
@@ -19,7 +19,7 @@ Sie eignen sich unter anderem für die Authentifikation in stateless Webservices
 
 == Beispiel eines Tokens ==
 In diesem Beispiel wird die eindeutige Kennung (uuid) des Benutzers und seine Rolle im Token gespeichert.
-Für die Verschlüsselung wird RSA mit SHA-256 eingesetzt (''RS256'').
+Die Signatur des Tokens wurde mittels RSA mit SHA-256 eingesetzt (''RS256'').
 
 <code>
 {
@@ -49,5 +49,5 @@ Für die Umsetzung stehen eine Reihe von fertigen Bibliotheken zur Verfügung.
 Eine aktuelle Liste finden Sie auf der Seite von [[https://jwt.io/]].
 
 ----
-{{tag>M321-LU06}}
+{{tag>M321-LU05}}
 [[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

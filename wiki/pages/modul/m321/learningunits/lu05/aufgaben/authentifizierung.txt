@@ -43,14 +43,14 @@ Der Client sendet einen POST-Request mit dem Benutzernamen und dem Passwort.
 
 === Authentifizierung erfolgreich ===
 
-Die Response unseres Services besteht aus dem HTTP-Statuscode "200" und einem Token.
+Die Response unseres Services besteht aus dem HTTP-Statuscode "200" und einem JSON Web Token.
 Das Token enthält:
-  * Benutzername
-  * Benutzerrolle
-  * Aktueller Zeitstempel
-  * Signatur
+  * ''exp'': Ablaufzeit des Tokens. Berechnet aus der aktuellen Zeit und der Gültigkeit in Sekunden (''TOKEN_DURATION'')
+  * ''username'': Benutzername
+  * ''role'': Benutzerrolle
 
-Bevor wir das Token an den Client senden, wird es verschlüsselt.
+=== Authentifizierung nicht erfolgreich ===
+Als Response wird der HTTP-Statuscode ''401'' gesendet.
 
 ----
 {{tag>M321-LU05}}

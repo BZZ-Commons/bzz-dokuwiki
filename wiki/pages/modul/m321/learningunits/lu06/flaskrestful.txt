@@ -1,9 +1,60 @@
-====== LU06d - Autorisation mit JWT und Flask ======
+====== LU06b - Autorisation in einer Webapplikation mit JSON Web Token ======
 
 <WRAP center round info 60%>
 info box
 </WRAP>
 
+===== Token im Client =====
+Der Client erhält vom Authorisationsservice ein Token.
+Dieses muss er lokal speichern und bei jedem Request mitsenden.
+
+==== Token speichern ====
+Ein Webbrowser als Client hat verschiedene Möglichkeiten, um Daten zu speichern:
+
+=== Cookies ===
+In Cookies können Daten gespeichert und weitergeleitet werden.
+Diese haben einen schlechten Ruf, da sie oftmals zur Verfolgung von Benutzeraktivitäten über verschiedene Webseiten hinweg verwendet wurden bzw. noch werden.
+
+=== Local Storage ===
+Auch der Local Storage bietet eine Datenablage.
+Im Gegensatz zu Cookies werden Werte nicht automatisch gespeichert und gesendet.
+Beides muss explizit durch Javascript programmiert werden.
+Die Daten im Local Storage haben kein Ablaufdatum und werden auch über mehrere Browser Sessions hinweg geteilt.
+
+=== Session Storage ===
+Der Unterschied zum Local Storage besteht darin, dass Session Storage nur für eine Browser Session gilt.
+Die Daten werden automatisch gelöscht, wenn die Seite geschlossen wird.
+Da ein Authentifizierungs-Token sowieso nicht lange gültig ist, bietet sich aus meiner Sicht der Session Storage als Speicherort an.
+
+=== Dateien ===
+Ein Webbrowser kann auch Daten in einer Datei auf dem Clientrechner speichern.
+
+==== Speichern des Tokens im Session Storage ====
+
+==== Token senden ====
+Bei jedem Request muss der Client sein Token mitsenden.
+Dazu wird beim Request ein zusätzlicher ''Authorization''-Header gesendet.
+In diesem Header ist es üblich, das Schlüsselwort ''Bearer '' vor das eigentliche Token zu stellen.
+
+
+===== Token überprüfen =====
+In unserer Webapplikation können wir über den Request-Header ''Authorization'' auf das mitgesendete Token zugreifen.
+Zunächst prüfen wir, ob ein ''Authorization''-Header vorhanden ist.
+Danach können wir das Token ab Position 8 aus diesem Header lesen.
+
+<WRAP center round tip 60%>
+Wir stellen ja beim Senden das Schlüsselwort ''Bearer '' vor das eigentliche Token.
+Daher müssen wir diese 7 Zeichen beim Verarbeiten des Tokens wieder entfernen.
+</WRAP>
+
+Anschliessend müssen wir prüfen ob das Token gültig ist.
+Die einzelnen Schritte sind:
+  - Token mit dem geheimen Schlüssel entschlüsseln.
+  - Prüfen ob die Signatur korrekt ist.
+  - Prüfen ob das Ablaufdatum noch nicht erreicht ist.
+
+Zum Glück sind viele der komplizierteren Aufgaben in entsprechenden Bibliotheken für uns gelöst.
+Schaue dir dazu das Umsetzungsbeispiel an.
 
 ----
 {{tag>M321-LU06}}
