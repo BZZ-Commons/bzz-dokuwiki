@@ -1,0 +1,64 @@
+====== LU06.A01 - Autorisierung ======
+<WRAP center round todo 60%>
+Ergänze die Autorisierung mittels JSON Web Token in der vorgegebenen Applikation.
+</WRAP>
+
+**[[https://classroom.github.com/a/SFtBS-V2|GitHub Classroom Assignment]]**
+
+===== Ausgangslage =====
+Die Webapplikation bietet 3 unterschiedliche Services an.
+Jenachdem welche Rolle ein Client hat, darf er diese Services benutzen.
+
+^ Service ^ HTTP-Methode ^ Rollen ^^^^
+^ ::: ^::: ^ customer ^ employee ^ admin ^
+| readData | GET | X | X | X |
+| saveData | POST | - | X | X |
+| deleteData | DELETE | - | - | X |
+
+Der Client muss die Rolle in einem JSON Webtoken als Claim ''userrole'' mitsenden.
+
+===== Auftrag =====
+  - Realisiere die nötigen Decorators um die Autorisation des Clients zu prüfen.
+  - Ergänze jeden Service mit den korrekten Decorators.
+
+==== Decorators ====
+=== @valid_token ===
+Das Token im Authorization-Header wird decodiert und geprüft.
+Falls ein gültiges Token vorhanden ist, wird der Claim ''userrole'' im globalen Kontext ''g'' gespeichert.
+
+=== @customer_required ===
+Prüft ob im globalen Kontext eine ''userrole'' vorhanden ist.
+Die ''userrole'' muss ''customer'', ''employee'' oder ''admin'' sein.
+
+=== @employee_required ===
+Prüft ob im globalen Kontext eine ''userrole'' vorhanden ist.
+Die ''userrole'' muss ''employee'' oder ''admin'' sein.
+
+=== @admin_required ===
+Prüft ob im globalen Kontext eine ''userrole'' vorhanden ist.
+Die ''userrole'' muss ''admin'' sein.
+
+===== Testen =====
+Um deine Applikation zu testen, benötigst du ein gültiges Token.
+Dieses kannst du über das Login in der Applikation "m321-lu05-a01-authentication" erhalten.
+
+  * Beide Applikationen müssen den gleichen Schlüssel im ''ACCESS_TOKEN_KEY'' verwenden.
+  * Die Applikationen müssen auf unterschiedlichen Ports laufen:
+    * m321-lu05-a01-authentication / Port 5000
+    * m321-lu06-a01-authorization / Port 5001
+
+Den Port kannst du in der "Run/Debug Configuration" von PyCharm über "Additional options" einstellen.
+
+{{:modul:m321:learningunits:lu06:aufgaben:flask_port.png?400|}}
+
+<details>
+<summary>//=> GitHub Repo für externe Besucher//</summary>
+GitHub Repository https://github.com/templates-python/m321-lu06-a01-authorization
+
+//Lernende am BZZ müssen den Link zum GitHub Classroom Assignment verwenden//
+
+</details>
+
+----
+{{tag>M321-LU06}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

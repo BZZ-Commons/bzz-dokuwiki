@@ -6,8 +6,24 @@ Das Beispiel zeigt eine Umsetzung der Autorisation in einer RESTful Flask Applik
 
 ===== Frontend =====
 ==== Token speichern ====
+Das Token wird vom Webserver als Text gesendet.
+Falls mein Login-Request erfolgreich war, speichere ich diesen Test im Session Storage.
 
-
+<code javascript>
+fetch("./login",
+    {
+        ...
+    .then(function (response) {
+        if (response.ok) {
+            return response.text();
+        } else {
+            ...
+        }
+    })
+    .then(function (data) {
+        sessionStorage.setItem("token", data);
+    })
+</code>
 ===== Token senden =====
 <code javascript>
 async function httpFetch(
@@ -105,7 +121,7 @@ Die Funktion ''teacher_required'' prüft lediglich die Rolle des angemeldeten Be
 ==== g steht für global ====
 Die Variable ''g'' steht für "global".
 Dabei handelt es sich um eine Collection, die während eines Requests in allen Services verfügbar ist.
-Dadurch können relativ einfach zentrale Daten, wie der angemeldete Benutzer" zwischen verschiedenen Funktionen ausgetauscht werden.
+Dadurch können relativ einfach zentrale Daten, wie der angemeldete Benutzer, zwischen verschiedenen Funktionen ausgetauscht werden.
 
 ----
 {{tag>M321-LU06}}

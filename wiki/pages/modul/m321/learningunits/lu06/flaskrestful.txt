@@ -1,18 +1,16 @@
 ====== LU06b - Autorisation in einer Webapplikation mit JSON Web Token ======
 
-<WRAP center round info 60%>
-info box
-</WRAP>
-
 ===== Token im Client =====
 Der Client erhält vom Authorisationsservice ein Token.
 Dieses muss er lokal speichern und bei jedem Request mitsenden.
 
 ==== Token speichern ====
-Ein Webbrowser als Client hat verschiedene Möglichkeiten, um Daten zu speichern:
+Ein Webbrowser als Client hat verschiedene Möglichkeiten, um Daten zu speichern.
+Je nach Art des Speichers haben wir gewisse Vor- und Nachteile.
 
 === Cookies ===
 In Cookies können Daten gespeichert und weitergeleitet werden.
+Cookies werden bei einem Request automatisch durch den Webbrowser mitgesendet.
 Diese haben einen schlechten Ruf, da sie oftmals zur Verfolgung von Benutzeraktivitäten über verschiedene Webseiten hinweg verwendet wurden bzw. noch werden.
 
 === Local Storage ===
@@ -30,12 +28,31 @@ Da ein Authentifizierungs-Token sowieso nicht lange gültig ist, bietet sich aus
 Ein Webbrowser kann auch Daten in einer Datei auf dem Clientrechner speichern.
 
 ==== Speichern des Tokens im Session Storage ====
+Über den Bezeichner "sessionStorage" können wir diesen Speicher verwalten.
+Die Methode ''setItem'' speichert meine Daten als Key/Value-Pair:
+<code javascript>
+data = ...
+sessionStorage.setItem("token", data);
+</code>
 
 ==== Token senden ====
 Bei jedem Request muss der Client sein Token mitsenden.
 Dazu wird beim Request ein zusätzlicher ''Authorization''-Header gesendet.
 In diesem Header ist es üblich, das Schlüsselwort ''Bearer '' vor das eigentliche Token zu stellen.
 
+<code javascript>
+token = sessionStorage.getItem("token");
+fetch("./????",
+    {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/x-www-form-urlencoded",
+            "Authorization": "Bearer " + token
+        },
+        body: data
+    })
+...
+</code>
 
 ===== Token überprüfen =====
 In unserer Webapplikation können wir über den Request-Header ''Authorization'' auf das mitgesendete Token zugreifen.
