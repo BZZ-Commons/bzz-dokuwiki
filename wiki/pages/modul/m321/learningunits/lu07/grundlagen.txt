@@ -1,0 +1,50 @@
+====== LU07a - Grundlagen Discovery Service ======
+
+In verteilten Systemen, in denen verschiedene Komponenten oder Services über das Netzwerk miteinander kommunizieren, ist es entscheidend, dass die einzelnen Komponenten in der Lage sind, sich gegenseitig zu finden und miteinander zu interagieren. 
+Hier kommen Discovery Services ins Spiel.
+
+Ein Discovery Service ist eine zentrale Komponente oder ein Mechanismus, der dazu dient, die Verfügbarkeit und die Standorte von Services oder Ressourcen in einem verteilten System zu verwalten und bereitzustellen. 
+Seine Hauptaufgabe besteht darin, die Dynamik des Systems zu berücksichtigen und eine effiziente Kommunikation zwischen den Komponenten zu ermöglichen, unabhängig davon, ob neue Instanzen von Services gestartet werden, bestehende Instanzen ausfallen oder sich die Netzwerktopologie ändert.
+
+Typischerweise bietet ein Discovery Service eine Schnittstelle, über die sich Services registrieren können, um ihre Verfügbarkeit und ihre Standorte bekannt zu machen. 
+Gleichzeitig können andere Services diese Schnittstelle nutzen, um nach vorhandenen Services zu suchen und mit ihnen zu kommunizieren. 
+Dies erfolgt normalerweise über eine API, die eine einfache Abfrage- und Antwortstruktur bereitstellt.
+
+Es gibt verschiedene Ansätze zur Implementierung von Discovery Services, darunter zentrale Dienste, bei denen ein einzelner Server alle Registrierungen und Anfragen verwaltet, sowie verteilte Ansätze, bei denen die Verantwortung auf mehrere Knoten im Netzwerk verteilt ist. Darüber hinaus können Discovery Services verschiedene Mechanismen verwenden, um die Standorte und Verfügbarkeiten von Services zu verfolgen, wie z.B. Heartbeat-Überwachung, DNS-basierte Ansätze oder Peer-to-Peer-Netzwerke.
+
+Insgesamt spielen Discovery Services eine wesentliche Rolle in der Architektur von verteilten Systemen, indem sie die Komplexität der Kommunikation zwischen den einzelnen Komponenten reduzieren und eine flexible, skalierbare und zuverlässige Interaktion ermöglichen. Sie sind ein Schlüsselelement für die Entwicklung moderner Anwendungen, die auf Microservices, Cloud-Computing und anderen verteilten Architekturen basieren.
+
+===== Beispiel eines E-Commerce-Systems =====
+Betrachten wir ein einfaches Beispiel eines Discovery Services in einem verteilten System, das aus mehreren Komponenten (Mikroservices) besteht:
+
+  * Benutzerauthentifizierung
+  * Produktkatalog
+  * Warenkorbverwaltung
+  * Bestellabwicklung
+ 
+Jeder dieser Services wird in einem Container bereitgestellt und kann auf verschiedenen Hosts in einem Cluster ausgeführt werden.
+In diesem Beispiel übernimmt der Discovery Service die Rolle eines Mittlers, der die Kommunikation zwischen den verschiedenen Mikroservices erleichtert, indem er Informationen über deren Standorte und Verfügbarkeit bereitstellt. 
+Dies ermöglicht eine flexible und skalierbare Architektur, in der Services unabhängig voneinander gestartet, skaliert und aktualisiert werden können, ohne dass die anderen Services davon betroffen sind.
+
+==== Registrierung von Services ====
+Jeder Mikroservice registriert sich beim Discovery Service, wenn er gestartet wird. 
+Zum Beispiel sendet der Produktkatalog-Service eine Registrierungsanfrage an den Discovery Service, die Informationen wie seinen Namen, seine IP-Adresse und den Port, unter dem er erreichbar ist, enthält.
+
+==== Service-Entdeckung ====
+Wenn der Warenkorb-Service eine Anfrage zur Hinzufügung eines Produkts erhält, muss er möglicherweise den Produktkatalog-Service aufrufen, um die Details des Produkts abzurufen. 
+Anstatt die Adresse des Produktkatalog-Services zu kennen, sendet der Warenkorb-Service eine Anfrage an den Discovery Service und fragt nach dem Standort des Produktkatalog-Services.
+
+==== Dynamische Aktualisierung ====
+Nehmen wir an, eine neue Instanz des Produktkatalog-Services wird gestartet, um die Last zu verteilen. 
+Die neue Instanz registriert sich beim Discovery Service. 
+Die anderen Services im System müssen nicht aktualisiert werden, um die neue Instanz zu berücksichtigen. 
+Sie können weiterhin Anfragen an den Discovery Service senden, der die neuesten Informationen über alle verfügbaren Produktkatalog-Services bereitstellt.
+
+==== Fehlerbehandlung ====
+Wenn eine Instanz eines Services ausfällt oder heruntergefahren wird, kann der Discovery Service die Registrierung dieser Instanz entfernen. 
+Andere Services im System können dann weiterhin auf die verbleibenden Instanzen des betroffenen Dienstes zugreifen, ohne von dem Ausfall beeinträchtigt zu werden.
+
+
+----
+{{tag>M321-LU07}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

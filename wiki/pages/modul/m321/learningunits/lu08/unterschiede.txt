@@ -1,0 +1,23 @@
+====== LU08d - Unterschiede zwischen Gateway und Discovery ======
+
+Ein Gateway Service und ein Discovery Service sind beide wichtige Komponenten in verteilten Systemen, aber sie erfüllen unterschiedliche Zwecke und haben unterschiedliche Funktionen:
+
+===== Gateway Service =====
+
+ * Ein Gateway Service fungiert als zentraler Einstiegspunkt für den Zugriff auf verschiedene Services oder Ressourcen in einem verteilten System.
+ * Es bietet eine Schnittstelle für externe Clients, um auf interne Services zuzugreifen, und führt Funktionen wie Routing, Authentifizierung, Autorisierung, Aggregation und Protokollierung aus.
+ * Der Hauptzweck eines Gateway Services besteht darin, die Komplexität der Kommunikation zwischen Clients und Services zu reduzieren und eine einheitliche Schnittstelle bereitzustellen, die die Interaktion mit den internen Services vereinfacht.
+
+==== Discovery Service ====
+
+ * Ein Discovery Service ist für das Management und die Verwaltung von Microservices in einem verteilten System verantwortlich.
+ * Er ermöglicht es den verschiedenen Services, sich gegenseitig dynamisch zu finden und miteinander zu kommunizieren, unabhängig von deren Standorten oder Änderungen in der Netzwerktopologie.
+ * Der Discovery Service speichert Informationen über die verfügbaren Services und deren Instanzen sowie deren Standorte, Status und Metadaten. Er bietet eine Schnittstelle für Services, um sich zu registrieren und nach anderen Services zu suchen.
+ * Der Hauptzweck eines Discovery Services besteht darin, die Skalierbarkeit, Zuverlässigkeit und Effizienz von Microservices-Architekturen zu verbessern, indem er die Service-Registrierung, Entdeckung und dynamische Konfiguration unterstützt.
+
+Insgesamt kann man sagen, dass ein Gateway Service sich auf die Interaktion zwischen Clients und Services konzentriert, während ein Discovery Service sich auf die Verwaltung und Entdeckung von Services innerhalb des verteilten Systems konzentriert. 
+Beide sind jedoch wichtig für die Entwicklung und den Betrieb von Microservices-Architekturen und ergänzen sich oft, um eine effiziente und skalierbare Kommunikation zwischen den verschiedenen Komponenten zu ermöglichen.
+
+----
+{{tag>M321-LU08}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

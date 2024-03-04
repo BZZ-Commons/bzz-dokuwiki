@@ -1,0 +1,10 @@
+====== LU07b - Eureka ======
+<WRAP center round info 60%>
+Eureka ist ein Java-basiertes Open Source Projekt, welches eine RESTful Schnittstelle für die Registrierung und Entdeckung (daher wohl der Name "Eureka" ist altgriechisch für "Ich habe [es] gefunden") von Services anbietet.
+</WRAP>
+
+Netflix Eureka ist ein Open-Source-Discovery-Service, der von Netflix entwickelt wurde und für die Verwaltung von Microservices in verteilten Systemen verwendet wird. 
+Es wurde entwickelt, um die Skalierbarkeit, Zuverlässigkeit und Effizienz von Microservices-Architekturen zu verbessern, insbesondere in der Cloud.
+
+
+Lies dazu den Artikel [[https://www.heise.de/hintergrund/Eureka-Microservice-Registry-mit-Spring-Cloud-2848238.html|heise.de - Eureka-Microservice-Registry]].

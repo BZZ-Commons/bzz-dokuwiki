@@ -1,0 +1,79 @@
+====== LU08a - Grundlagen Gateway Service ======
+
+In verteilten Systemen, insbesondere in modernen Microservices-Architekturen, fungiert ein Gateway Service als zentraler Einstiegspunkt für den Zugriff auf verschiedene Services oder Ressourcen. 
+Es handelt sich um eine Art Vermittler, der eingehende Anfragen von Clients entgegennimmt, sie weiterleitet und koordiniert, um auf die entsprechenden Microservices zuzugreifen. 
+Im Wesentlichen bietet ein Gateway Service eine Schnittstelle zwischen den Clients und den internen Services des Systems.
+
+Insgesamt spielt der Gateway Service eine zentrale Rolle in der Architektur von verteilten Systemen, indem er die Komplexität der Kommunikation zwischen Clients und Services reduziert, Sicherheit und Skalierbarkeit verbessert und eine effiziente Nutzung der zugrunde liegenden Infrastruktur ermöglicht.
+
+===== Aspekte eines Gateway Services =====
+
+==== Routing und Weiterleitung ====
+Das Gateway Service leitet eingehende Anfragen basierend auf bestimmten Regeln und Konfigurationen an die entsprechenden Services weiter. 
+Dies kann basierend auf der URL, dem Typ der Anfrage oder anderen Kriterien erfolgen. 
+Es ermöglicht auch die Weiterleitung von Anfragen an verschiedene Versionen desselben Dienstes oder an unterschiedliche Umgebungen (z. B. Test, Produktion).
+
+==== Transformation ====
+Die verschiedenen Services in einem verteilten System verwenden oftmals unterschiedliche Protokolle und Datenformate.
+Ein Gateway-Service kann die Anfragen und Antworten in ein einheitliches Format transformieren.
+Dadurch muss der Client nur ein bestimmtes Format implementieren, unabhängig vom verwendeten Format der Services.
+
+==== Aggregation und Komposition ====
+Ein Gateway Service kann mehrere interne Dienste zu einer einzigen Antwort aggregieren oder komponieren. 
+Anstatt dass ein Client mehrere separate Anfragen an verschiedene Services senden muss, kann er eine Anfrage an das Gateway Service stellen, das dann die benötigten Daten von den entsprechenden Services sammelt und sie zu einer einzigen Antwort zusammenführt.
+
+==== Authentifizierung und Autorisierung ====
+Der Gateway Service kann Sicherheitsmechanismen implementieren, um den Zugriff auf interne Services zu steuern. 
+Dies umfasst die Überprüfung von Zugriffsberechtigungen, die Authentifizierung von Benutzern und die Durchsetzung von Sicherheitsrichtlinien.
+
+==== Lastverteilung und Ausfallsicherheit ====
+Ein Gateway Service kann Lastenausgleichsstrategien implementieren, um die Last gleichmässig auf verschiedene Instanzen von Services zu verteilen. 
+Darüber hinaus kann es auf Ausfälle von Services reagieren und Anfragen an alternative Instanzen umleiten, um die Verfügbarkeit sicherzustellen.
+
+==== Protokollierung und Überwachung ====
+Ein Gateway Service kann Protokolle über eingehende und ausgehende Anfragen führen und Metriken über die Leistung und Verfügbarkeit der internen Services sammeln. 
+Dies ermöglicht eine effektive Überwachung und Fehlerbehebung des Systems.
+
+===== Beispiel eines E-Commerce-Systems =====
+In diesem Beispiel dient der Gateway Service als zentraler Einstiegspunkt für den Zugriff auf die verschiedenen Microservices des E-Commerce-Shops. 
+Er übernimmt die Aufgaben der Routenbildung, Authentifizierung, Lastverteilung und Protokollierung, um eine effiziente und sichere Kommunikation zwischen Clients und Services zu gewährleisten.
+
+Unser fiktiver E-Commerce-Shop besteht aus verschiedenen Microservices:
+  * Benutzerservice für die Benutzerauthentifizierung
+  * Produktservice für den Produktkatalog
+  * Bewertungsservice für die Bewertungen und Rezensionen zu den Artikeln
+  * Warenkorbservice für die Verwaltung des Warenkorbs
+
+Unser Gateway Service wird eingehende HTTP-Anfragen von Clients entgegennehmen und je nach Anfrage an die entsprechenden internen Services weiterleiten. 
+Es wird auch für die Authentifizierung und Autorisierung von Benutzern verantwortlich sein.
+
+==== Routing und Weiterleitung ====
+
+  * Eine GET-Anfrage an "/products" wird an den Produktservice weitergeleitet, um alle verfügbaren Produkte abzurufen.
+  * Eine POST-Anfrage an "/cart/add" wird an den Warenkorbservice weitergeleitet, um ein Produkt zum Warenkorb eines Benutzers hinzuzufügen.
+  * Eine POST-Anfrage an "/users/login" wird an den Benutzerservice weitergeleitet, um Benutzeranmeldeinformationen zu überprüfen und einen Authentifizierungstoken zurückzugeben.
+
+==== Transformation ====
+Die Bewertungen und Rezensionen der Artikel werden aus verschiedenen Quellen (z.B. Google, Amazon, ...) gesammelt.
+Diese Quellen stellen unterschiedliche Schnittstellen bereit und liefern die Daten in unterschiedlichen Formaten.
+Der Gateway nimmt die Anfrage des Clients entgegen und erzeugt für jede Quelle eine Anfrage im jeweiligen Format.
+Die Antworten der verschiedenen Quellen werden in ein einheitliches Format überführt und an den Client zurück geschickt.
+
+==== Aggregation und Komposition ====
+Eine Anfrage an "/products/{id}" könnte Daten aus dem Produktservice sowie zusätzliche Informationen aus einem anderen Service wie dem Bewertungsservice aggregieren, bevor sie an den Client zurückgesendet werden.
+
+==== Authentifizierung und Autorisierung ====
+Bevor ein Benutzer auf einen geschützten Service zugreifen kann, überprüft der Gateway Service anhand des JSON Web Token ob der Benutzer authentifiziert und autorisiert ist. 
+Unauthentifizierte Benutzer werden möglicherweise aufgefordert, sich zu authentifizieren.
+
+==== Lastverteilung und Ausfallsicherheit ====
+Der Gateway Service kann Lastausgleichsstrategien implementieren, um Anfragen gleichmässig auf verschiedene Instanzen der internen Services zu verteilen.
+Im Falle eines Ausfalls eines internen Dienstes kann der Gateway Service Anfragen auf eine alternative Instanz umleiten.
+
+==== Protokollierung und Überwachung ====
+Der Gateway Service kann eingehende Anfragen protokollieren und Metriken über die Leistung und Verfügbarkeit der internen Services sammeln. 
+Dies ermöglicht eine effektive Überwachung und Fehlerbehebung des Systems.
+
+----
+{{tag>M321-LU08}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter
