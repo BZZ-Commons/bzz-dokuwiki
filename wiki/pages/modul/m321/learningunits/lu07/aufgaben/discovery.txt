@@ -1,0 +1,67 @@
+====== LU07.A01 - Discovery Service erstellen ======
+<WRAP center round todo 60%>
+Erstelle einen einfachen Discovery Service auf Basis von Sockets.
+</WRAP>
+
+**[[https://foo.local|GitHub Classroom Assignment]]**
+
+===== Ausgangslage =====
+Der Discovery-Service ist ein Python-Skript, welches die Services in unserem verteilten System verwaltet.
+Die Kommunikation mit diesem Service erfolgt über Sockets.
+
+Das Python-Skript verwaltet die Services in einer Liste von Dictionaries.
+Für jeden Service wird ein Eintrag in der Liste erstellt.
+
+^ Key ^ Value ^ Datentyp |
+| uuid | UUID des Services | String |
+| type | Die Art des Services | String |
+| ip | Unter welcher IP-Adresse ist der Service erreichbar | String |
+| port | Unter welchem Port ist der Service erreichbar | int |
+| heartbeat | Zeitpunkt des letzten Herzschlags | datetime |
+
+==== Aktionen ====
+=== register ===
+Jeder Service muss sich beim Starten beim Discovery Service registrieren.
+Der Discovery-Service erzeugt eine neue UUID für diesen Service und trägt den Service in seine Serviceliste ein.
+Als ''heartbeat'' wird der aktuelle Zeitstempel eingetragen.
+
+  * Argumente:
+    * ''type'': Die Art des Service
+    * ''ip'': Unter welcher IP-Adresse ist der Service erreichbar
+    * ''port'': Unter welchem Port ist der Service erreichbar
+  * Response:
+    * Die UUID des Services.
+    * ''ERROR'': Der Service konnte nicht registriert werden.
+
+=== heartbeat ===
+Jeder Service muss sich in regelmässigen Abständen (z.B. 30 Sekunden) beim Discovery Service melden.
+Mit dieser Aktion wird das Attribut ''heartbeat'' der bestehenden Registration aktualisiert.
+
+  * Argumente:
+    * service_uuid: String
+  * Response:
+    * ''OK'': Aktualisierung war erfolgreich
+    * ''NOT FOUND'': Die ''service_uuid'' wurde nicht gefunden, der Service muss sich neu registrieren.
+    * ''ERROR'': Es ist ein Fehler aufgetreten.
+
+=== query ===
+Ein Client kann eine Liste aller Services für einen bestimmte Art von Service (''type'') anfordern.
+Der Discovery-Service durchsucht seine Serviceliste nach Services mit dem gewünschten ''type''.
+Entspricht ein Service der gewünschten Art **UND** der letzte Herzschlag ist weniger als 30 alt, so wird dieser Service in die Response aufgenommen.
+Jeder Service dessen letzter Herzschlag älter als 30 Sekunden ist, wird aus der Serviceliste entfernt.
+
+  * Argumente:
+    * ''type'': Die Art der gesuchten Services
+  * Response:
+    * Ein Array von JSON-Objekten mit der IP-Adresse und dem Port pro Service.
+
+===== Testen =====
+Um den Discovery-Service zu testen, steht dir im Repository ein einfacher Socket-Client.
+
+  - Starte deinen Discovery-Service in PyCharm oder über die Kommandozeile.
+  - Öffne ein separates Terminal und navigiere zum Ordner mit dem Socket-Client.
+  - Starte den Client mit ''py socket_client.py <IP> <PORT>''.
+
+----
+{{tag>M321-LU07}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter
