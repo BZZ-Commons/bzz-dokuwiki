@@ -48,8 +48,8 @@ Mit dieser Aktion wird das Attribut ''heartbeat'' der bestehenden Registration a
 === query ===
 Ein Client kann eine Liste aller Services für einen bestimmte Art von Service (''type'') anfordern.
 Der Discovery-Service durchsucht seine Serviceliste nach Services mit dem gewünschten ''type''.
-Entspricht ein Service der gewünschten Art **UND** der letzte Herzschlag ist weniger als 30 alt, so wird dieser Service in die Response aufgenommen.
-Jeder Service dessen letzter Herzschlag älter als 30 Sekunden ist, wird aus der Serviceliste entfernt.
+Entspricht ein Service der gewünschten Art **UND** der letzte Herzschlag ist weniger als 5 Sekunden alt, so wird dieser Service in die Response aufgenommen.
+Jeder Service dessen letzter Herzschlag älter als 5 Sekunden ist, wird aus der Serviceliste entfernt.
 
   * Argumente:
     * ''type'': Die Art der gesuchten Services
