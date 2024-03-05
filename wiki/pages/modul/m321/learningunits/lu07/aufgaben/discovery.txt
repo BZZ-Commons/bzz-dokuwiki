@@ -9,7 +9,8 @@ Erstelle einen einfachen Discovery Service auf Basis von Sockets.
 Der Discovery-Service ist ein Python-Skript, welches die Services in unserem verteilten System verwaltet.
 Die Kommunikation mit diesem Service erfolgt über Sockets.
 
-Das Python-Skript verwaltet die Services in einer Liste von Dictionaries.
+Das Python-Skript verwaltet die Services in der Klasse ''Services''.
+Diese Klasse enthält eine Liste von Dictionaries.
 Für jeden Service wird ein Eintrag in der Liste erstellt.
 
 ^ Key ^ Value ^ Datentyp |
@@ -53,7 +54,7 @@ Jeder Service dessen letzter Herzschlag älter als 30 Sekunden ist, wird aus der
   * Argumente:
     * ''type'': Die Art der gesuchten Services
   * Response:
-    * Ein Array von JSON-Objekten mit der IP-Adresse und dem Port pro Service.
+    * Eine Liste mit der IP-Adresse und dem Port pro Service.
 
 ===== Testen =====
 Um den Discovery-Service zu testen, steht dir im Repository ein einfacher Socket-Client.
