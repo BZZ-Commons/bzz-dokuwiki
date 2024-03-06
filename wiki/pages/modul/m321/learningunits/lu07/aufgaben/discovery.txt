@@ -3,7 +3,7 @@
 Erstelle einen einfachen Discovery Service auf Basis von Sockets.
 </WRAP>
 
-**[[https://foo.local|GitHub Classroom Assignment]]**
+**[[https://classroom.github.com/a/FyhZifkw|GitHub Classroom Assignment]]**
 
 ===== Ausgangslage =====
 Der Discovery-Service ist ein Python-Skript, welches die Services in unserem verteilten System verwaltet.
@@ -35,7 +35,7 @@ Als ''heartbeat'' wird der aktuelle Zeitstempel eingetragen.
     * ''ERROR'': Der Service konnte nicht registriert werden.
 
 === heartbeat ===
-Jeder Service muss sich in regelmässigen Abständen (z.B. 30 Sekunden) beim Discovery Service melden.
+Jeder Service muss sich in regelmässigen Abständen (z.B. 5 Sekunden) beim Discovery Service melden.
 Mit dieser Aktion wird das Attribut ''heartbeat'' der bestehenden Registration aktualisiert.
 
   * Argumente:
