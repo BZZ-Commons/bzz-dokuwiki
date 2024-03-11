@@ -1,0 +1,8 @@
+====== 4. Spiel-Service ======
+<WRAP center round info 60%>
+Der Spiel-Service steuert den Ablauf des ganzen Systems.
+</WRAP>
+
+===== Initialisierung =====
+Beim Start des Programm ruft es den Discovery-Service auf, um die Sockets der Ameisenvölker zu lernen.
+

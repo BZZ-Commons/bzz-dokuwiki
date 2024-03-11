@@ -1,0 +1,71 @@
+====== 3. Welt-Service ======
+<WRAP center round info 60%>
+Der Welt-Service erzeugt die Spielwelt und liefert Informationen über die Umwelt.
+Die Kommunikation erfolgt über einen Socket.
+</WRAP>
+
+===== Initialisierung =====
+Beim Start des Programms registriert sich das Programm beim Discovery-Service.
+
+=== register ===
+Das Programm registriert die IP-Adresse und den Port seines Sockets beim Discovery-Service.
+Als Antwort sendet der Discovery-Service ''OK'' oder ''ERROR''.
+Bei ''ERROR'' muss das Programm abbrechen.
+
+===== Spielablauf =====
+Das Programm erzeugt einen Socket und hört auf diesem Socket auf Nachrichten. 
+
+===== Aktionen =====
+==== Neue Welt ====
+Das Programm erzeugt eine neue Spielwelt und platziert die Ameisenhügel auf der Karte.
+=== Request ===
+Ein JSON-Objekt mit den Attributen:
+  * ''action'': "new"
+  * ''count'': Die Anzahl der Ameisenvölker in der Welt.
+
+=== Response ===
+Ein JSON-Array mit den Koordinaten aller Ameisenhügel.
+
+<code json>
+[
+  {"xcoord": n, "ycoord": m},
+  {"xcoord": n, "ycoord": m},
+  ...
+]
+</code>
+
+==== Umgebung ====
+Das Programm liefert die Umgebung einer Ameise, abhängig von der Sichtweite.
+=== Request ===
+Ein JSON-Objekt mit den Attributen:
+  * ''action'': "area"
+  * ''xcoord'': Die X-Koordinate einer Ameise.
+  * ''ycoord'': Die Y-Koordinate einer Ameise.
+  * ''range'': Die Sichtweite einer Ameise.
+
+=== Response ===
+Ein JSON-Array mit den Zuständen der Felder.
+Die Reihenfolge der Felder ist immer von oben links nach unten rechts.
+
+{{:modul:m321:projekt:umgebung01.png?200|}}
+
+Dieses Beispiel zeigt die Umgebung einer Ameise mit einer Sichtweite 2.
+Die Ziffern entsprechen der Reihenfolge in der Response.
+
+==== Karte ====
+Das Programm liefert die vollständige Karte.
+Nur autorisierte Services dürfen diese Aktion ausführen.
+
+=== Request ===
+Ein JSON-Objekt mit den Attributen:
+  * ''action'': "map"
+  * ''token'': Ein verschlüsseltes Authentifikationstoken.
+
+=== Response ===
+Analog der Aktion ''area'' aber mit allen Feldern der Welt.
+
+==== Beenden ====
+Erhält das Programm eine Nachricht mit ''"action": "quit"'', so wird das Programm beendet:
+  - Sende eine Antwort mit ''OK'' über den Socket.
+  - Schliesse den Socket
+  - Beende das Programm.

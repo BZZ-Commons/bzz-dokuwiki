@@ -1,11 +1,14 @@
 ====== 1. Übersicht ======
-===== Einleitung =====
+<WRAP center round info 60%>
 In diesem Spiel steuerst du ein Ameisenvolk.
-Zu Beginn eines jeden Spiels erhalten du eine Gruppe von Ameisen, die alle in Ihrem eigenen Ameisenhügel starten. 
+Zu Beginn eines jeden Spiels erhältst du eine Gruppe von Ameisen, die alle in deinem Ameisenhügel starten. 
 Du musst deinen Ameisen entsprechende Befehle erteilen, um als letztes Team bestehen zu können. 
 Dies kannst du tun, indem du ...
   * ... Nahrungsressourcen sammelst  
-  * ... generische Ameisen bekämpfst 
+  * ... generische Ameisen bekämpfst
+</WRAP>
+
+ 
 
 ===== Weltkarte =====
 Die Weltkarte besteht aus einer Insel auf einem See.
@@ -13,16 +16,17 @@ Die Karte wird als ein Raster von quadratischen Feldern dargestellt.
 
 {{:modul:m321:projekt:welt01.png?400|}}
 
-Jedes Feld kann einer dieser 4 Feldarten sein:
+Jedes Feld kann einen dieser Zustände haben:
   * **water**: Das Wasser bildet eine natürliche Barriere, die deine Ameisen nicht überwinden können. 
-  * **ground**: Ein leeres Feld auf das deine Ameise laufen kann.
   * **home**: Dein eigener Ameisenhügel.
   * **hill**: Der Ameisenhügel eines anderen Volks.
-
-Zusätzlich können auf jedem Feld (ausser Wasser) einer oder mehrere dieser Ressourcen vorkommen:
-  * **food**: Auf diesem Feld liegt 1 - 99 Nahrung, die Menge an Nahrung ist nicht bekannt.
   * **friend**: Eine eigene Ameise.
   * **foe**: Eine Ameise eines anderen Volks.
+  * **food**: Auf diesem Feld liegt 1 - 99 Nahrung, die Menge an Nahrung ist nicht bekannt.
+  * **empty**: Ein leeres Feld auf das deine Ameise laufen kann.
+
+Es wird immer nur der erste zutreffende Zustand angezeigt.
+Ist also in einem Feld eine eigene Ameise **und** Nahrung, wird nur **friend** angezeigt.
 
 
 ===== Ameisenvölker =====
@@ -47,7 +51,7 @@ Mögliche Bewegungen sind:
 ===== Regeln =====
   * Läuft eine Ameise in ein Feld mit Wasser, so ist sie verloren.
   * Befinden sich Ameisen von unterschiedlichen Völkern auf dem gleichen Feld, so kommt es zum Kampf. 
-    * Jedes Volk verliert solange eine Ameise, bis nur noch Ameisen von einem Volk auf dem Feld sind.
+    * Jedes Volk verliert solange je eine Ameise, bis nur noch Ameisen von einem Volk auf dem Feld sind. Haben alle Völker gleich viele Ameisen auf dem Feld, sind am Schluss alle Ameisen weg.
     * Nach dem Kampf liegen 10 Nahrung auf dem Feld.
   * Ameisen nehmen auf einem Feld mit Nahrung automatisch Nahrung auf, falls sie noch keine Nahrung tragen.
   * Läuft eine Ameise in den eigenen Ameisenhügel, so legt sie die Nahrung automatisch ab.

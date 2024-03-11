@@ -1,6 +1,6 @@
 ====== 2. Ameisenvolk ======
 <WRAP center round info 60%>
-Dein Programm steuert die Ameisen mit Hilfe von Nachrichten an den Gateway-Service.
+Dein Programm steuert die Ameisen mit Hilfe von Nachrichten über einen Socket.
 </WRAP>
 
 ===== Ablauf des Programms =====
@@ -13,16 +13,6 @@ Das Programm registriert seine IP-Adresse und den Port seines Sockets beim Disco
 Als Antwort sendet der Discovery-Service ''OK'' oder ''ERROR''.
 Bei ''ERROR'' muss das Programm abbrechen.
 
-=== query "gateway" ===
-Das Programm fragt den Discovery-Service nach der IP und dem Port des Gateway-Service.
-Der Discovery-Service antwortet mit den Angaben als JSON-Objekt, z.B.
-<code json>
-{
-  "ipaddr": "127.0.0.1",
-  "port": "66554"
-}
-</code>
-Das Programm kann diese Angaben speichern oder jederzeit erneut abfragen.
 
 ===== Spielrunde =====
 ===== Request =====
@@ -88,8 +78,8 @@ Die Reihenfolge ist dabei die gleiche wie in der Nachricht.
   "S"
 ]
 </code>
-Hier würde die erste Ameise nach Norden in den Ameisenhügel laufen.
-Die zweite Ameise läuft nach Süden in Richtung der Nahrung.
+Hier würde die linke Ameise nach Norden in den Ameisenhügel laufen.
+Die rechte Ameise läuft nach Süden in Richtung der Nahrung.
 
 ===== Spielende =====
 Erhält das Programm eine Nachricht mit ''"action": "quit"'', so wird der Socket geschlossen und das Programm beendet.

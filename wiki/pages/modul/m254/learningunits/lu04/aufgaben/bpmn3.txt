@@ -1,0 +1,26 @@
+====== LU04.A09 - BPMN MC 2 ======
+
+===== Rahmenbedingungen =====
+
+  * Sozialform: Einzelarbeit
+  * Zeitbudget: 10 Minuten
+  * Hilfsmittel: Unterrichtsunterlagen
+  * Abgabe: PDF mit Wahrheitswerten der genannten Aussagen.
+
+
+===== Ausgangslage =====
+Sie haben einige Videos über die BPMN-Nationen angeschaut. Die nachfolgenden Multiple-Choice Fragen dienen Ihnen dazu Ihre Kenntnisse zu überprüfen.
+
+===== Arbeitsauftrag ===== 
+Beurteilen Sie den Wahrheitsgehalt der nachfolgenden Aussagen bezüglich BPMN.
+
+  - Auslosende Ereignisse warten auf einen Auslöser und repräsentieren somit nicht selbst den Auslöser.
+  - Manuelle Aufgaben werden durch eine Process Engine zugewiesen.
+  - Ein instanziierendes ereignisbasiertes Gateway muss durch ein Startereignis ausgelöst werden.
+  - Sowohl Start- und Endereignis zahlen zur Klasse der eintretenden Ereignisse, während ein Zwischenereignis sowohl zur Klasse der eintretenden Ereignisse, als auch zur Klasse der auslosenden Ereignisse gehören kann.
+  - Bei einem ereignisbasierten Gateway wird der Prozess an dem Ereignis fortgeführt, das zuerst eintritt.
+  - Ein Endereignis des Typen Abbruch darf nur innerhalb einer Transaktion verwendet werden.
+  - Ereignisse können einen Kontrollfluss verzweigen.
+  - Ein Zeitereignis wird ausschliesslich für die Modellierung von Zeitpunkten verwendet.
+  - Eine Kompensationsaufgabe darf nur innerhalb des Prozessflusses verwendet werden.
+  - Ein datenbasiertes Gateway muss mindestens einen eingehenden und mindestens einen ausgehenden Sequenzfluss aufweisen.

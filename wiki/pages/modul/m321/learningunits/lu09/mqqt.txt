@@ -1,10 +1,55 @@
-====== LU09b - Message Queuing Telemetry Transport (MQQT) ======
+====== LU09b - MQQT ======
 <WRAP center round info 60%>
 //[[https://mqtt.org/|MQQT]]// ist ein leichtes, extrem einfaches Protokoll für Pub/Sub-Systeme.
 Es wurde für Geräte mit eingeschränkter Rechenleistung und Netzwerke mit hoher Latenz, geringer Bandbreite und/oder unzuverlässiger Verbindung entwickelt.
+
+Die Abkürzung MQQT stand ursprünglich für **M**essage **Q**ueuing **T**elemetry **T**ransport.
 </WRAP>
 
+MQTT wurde ursprünglich von IBM entwickelt und ist heute ein offener Standard, der von der OASIS (Organization for the Advancement of Structured Information Standards) gepflegt wird. 
+MQTT ist besonders beliebt in Anwendungen des Internet der Dinge (IoT), Hausautomatisierung, Telemetrie und anderen Szenarien, bei denen eine zuverlässige und effiziente Nachrichtenübertragung zwischen Geräten erforderlich ist.
 
+===== Wichtige Konzepte und Merkmale von MQTT =====
+
+==== Leichtgewichtiges Protokoll ====
+MQTT wurde entwickelt, um ressourcenschonend zu sein und auch auf Geräten mit begrenzten Ressourcen effizient zu arbeiten. 
+Es ist darauf ausgelegt, wenig Bandbreite und Speicher zu benötigen, was es besonders für den Einsatz in IoT-Geräten mit begrenzter Leistung geeignet macht.
+
+==== Publish/Subscribe-Architektur ====
+MQTT basiert auf dem Publish/Subscribe-Modell. 
+Geräte können als Publisher agieren, indem sie Nachrichten zu bestimmten "Themen" veröffentlichen.
+Andere Geräte können als Subscriber fungieren, indem sie sich für bestimmte Themen anmelden und Nachrichten zu diesen Themen empfangen.
+
+MQTT verwendet einen Broker, der als zentraler Vermittler fungiert und Nachrichten zwischen Publishern und Subscribers weiterleitet. 
+Der Broker ist für die Verwaltung der Themen, die Authentifizierung und Autorisierung von Clients sowie die Weiterleitung von Nachrichten verantwortlich.
+
+==== Themenbasierte Kommunikation ====
+Themen spielen eine zentrale Rolle in MQTT. 
+Nachrichten werden an bestimmte Themen adressiert.
+Anhand der Themen können die Nachrichten hierarchisch eingegliedert werden, z.B. ''Küche/Kühlschrank/Temperatur''.
+Ein Subscriber kann sich für für Themen anmelden, um Nachrichten zu erhalten, die an diese Themen gesendet werden. 
+Dies ermöglicht eine flexible und skalierbare Kommunikation zwischen Geräten, da Nachrichten gezielt an bestimmte Interessengruppen gesendet werden können.
+
+==== QoS (Quality of Service) ====
+MQTT bietet verschiedene Qualitätsstufen für die Nachrichtenzustellung, um sicherzustellen, dass Nachrichten entsprechend den Anforderungen des Anwendungsfalls zugestellt werden können. 
+Es gibt drei QoS-Ebenen, , die jeweils unterschiedliche Garantien für die Zustellung bieten: 
+  * 0 (At most once): Die Nachricht wird genau einmal gesendet, egal ob sie empfangen wurde oder nicht.
+  * 1 (At least once): Die Nachricht wird immer wieder gesendet, bis der Empfang bestätigt wurde.
+  * 2 (Exactly once): Die Nachricht wird einmal gesendet, hierbei wird sichergestellt, dass die Nachricht auch bei Verbindungsunterbrechung genau einmal ankommt.
+
+Je höher die QoS-Ebene, desto ressourcenintensiver ist die Verarbeitung.
+
+==== Behalten von Nachrichten ====
+MQTT ermöglicht es, Nachrichten zu speichern und zu behalten, auch wenn ein Subscriber zum Zeitpunkt der Veröffentlichung nicht aktiv ist. 
+Dies stellt sicher, dass ein Subscriber Nachrichten empfangen kann, sobald er wieder online ist, ohne Nachrichten zu verpassen.
+
+
+==== Fazit ====
+Insgesamt ist MQTT ein flexibles und leistungsfähiges Protokoll, das sich besonders für den Einsatz in IoT-Umgebungen eignet, in denen eine effiziente und zuverlässige Kommunikation zwischen Geräten erforderlich ist. 
+Es bietet eine einfache Möglichkeit für Geräte, miteinander zu kommunizieren, unabhängig von deren Hardware-Plattformen oder Netzwerkverbindungen.
+
+===== MQTT mit Python =====
+Die Seite [[https://www.emqx.com/en/blog/how-to-use-mqtt-in-python]] zeigt an einem Beispiel schrittweise, wie ein Publisher- und ein Subscriber-Programm in Python aufgebaut wird.
 
 ----
 {{tag>M321-LU09}}

@@ -1,7 +1,18 @@
 ====== Projekt "Anthive Master" ======
 <WRAP center round tip 60%>
-Im Projekt "Anthive Master" entwickeln wir ein verteiltes System bei dem mehrere Ameisenhaufen in einer Welt nach Nahrung suchen.
+Im Projekt "Anthive Master" entwickeln wir ein verteiltes System bei dem mehrere Ameisenvölker in einer Welt nach Nahrung suchen.
 </WRAP>
+
+===== Vorgaben =====
+Jedes Programm speichert die Einstellungen für IP-Adresse und Port der Sockets in einer ''.env''-Datei.
+Die Programme müssen die Angaben aus dieser Datei verwenden.
+
+==== Discovery-Service ====
+Alle Services müssen sich bei diesem Discovery-Service registrieren.
+  * IP: 127.0.0.1
+  * Port: 61111
+
+===== Beschreibung der Services =====
 
 <nspages . -h1  -exclude -simpleList -textPages="">
 
