@@ -1,0 +1,70 @@
+====== LU09a - Grundlagen Pub/Sub ======
+<WRAP center round info 60%>
+Pub/Sub (Publish/Subscribe) ist ein Nachrichtenmuster in verteilten Systemen.
+Es ermöglicht die Kommunikation zwischen verschiedenen Komponenten, ohne dass diese direkt voneinander wissen müssen.
+</WRAP>
+
+Pub/Sub wurde auch im Hinblick auf "Internet of Things" entwickelt.
+Es besteht aus den beiden zwei Hauptakteuren, Publisher und Subscriber, und dem Pub/Sub-System als Vermittler.
+
+===== Hauptakteure =====
+==== Publisher ====
+Ein Publisher ist jedes System, das Nachrichten erzeugt und an ein Pub/Sub-System sendet. 
+Der Publisher kennt die Subscriber nicht und sendet einfach seine Nachrichten an das Pub/Sub-System.
+
+==== Subscriber ====
+Ein Subscriber registriert sich beim Pub/Sub-System, um Nachrichten zu einem bestimmten Thema oder einer bestimmten Art von Ereignis zu empfangen. 
+Der Subscriber erhält alle Nachrichten, die zu einem abonierten Thema gehören.
+
+==== Pub/Sub-System ====
+Das Pub/Sub-System fungiert als Vermittler zwischen Publishern und Subscribers und verwaltet den Nachrichtenfluss. 
+Es bietet Mechanismen für das Abonnieren und Abbestellen von Themen sowie die Weiterleitung von Nachrichten an die richtigen Subscriber.
+
+===== Begriffe =====
+==== Themen ====
+Nachrichten werden in Themen organisiert, die verschiedene Arten von Ereignissen oder Informationen repräsentieren. 
+Publisher senden Nachrichten an bestimmte Themen, und Subscriber abonnieren diese Themen, um Nachrichten zu empfangen, die für sie relevant sind.
+
+==== Nachrichten ====
+Nachrichten sind die Daten, die von Publishern an das Pub/Sub-System gesendet werden. 
+Diese können strukturierte Daten, Ereignisbenachrichtigungen oder andere Arten von Informationen sein.
+
+===== Konzepte =====
+
+==== Zuverlässige Zustellung ====
+Pub/Sub-Systeme können Mechanismen zur zuverlässigen Zustellung von Nachrichten bereitstellen, um sicherzustellen, dass Nachrichten nicht verloren gehen und dass Subscriber sie zuverlässig empfangen.
+
+==== Skalierbarkeit ====
+Pub/Sub-Systeme sind in der Regel so konzipiert, dass sie horizontal skalierbar sind, um mit einem grossen Volumen von Nachrichten und Subscriptions umgehen zu können.
+
+==== Entkopplung von Komponenten ====
+Pub/Sub ermöglicht eine Entkopplung zwischen Publishern und Subscribers, da sie sich nicht direkt kennen müssen. 
+Dies erleichtert die Skalierbarkeit, Wartbarkeit und Flexibilität des Systems.
+
+==== Filterung und Routing ====
+Pub/Sub-Systeme können Mechanismen bieten, um Nachrichten basierend auf bestimmten Kriterien zu filtern oder zu routen, um sicherzustellen, dass Subscriber nur die Nachrichten erhalten, die für sie relevant sind.
+
+===== Beispiel: Hausautomation =====
+In einem Hausautomatisierungssystem verwendest du verschiedene Sensoren und Steuerungen:
+  * Bewegungssensoren: Diese Sensoren erkennen Bewegungen im Haus und senden Ereignisbenachrichtigungen, wenn Bewegung erkannt wird.
+  * Temperatursensoren: Diese Sensoren messen die Raumtemperatur und senden regelmässig Messwerte.
+  * Beleuchtungssteuerung: Steuert die Beleuchtung im Haus.
+  * Heizungssteuerung: Steuert die Heizung oder Klimaanlage im Haus.
+  * Rollladen-/Vorhangsteuerung: Steuert die Rolläden und Vorhänge im Haus.
+
+Diese Sensoren und Steuerungen können über ein Pub/Sub-System verbunden werden.
+Einerseits senden die Sensoren (Publisher) Nachrichten an das Pub/Sub-System.
+Die Steuerungen (Subscriber) können die für sie relevanten Themen abonieren und entsprechend reagieren.
+
+  * Ein Bewegungssensor registriert eine Bewegung und sendet eine Nachricht an das Pub/Sub-System. Die Beleuchtungssteuerung erhält diese Nachricht und schaltet das Licht ein.
+  * Ein Temperatursensor meldet die Raumtemperatur in regelmässigen Abständen. Die Heizungssteuerung und die Rolladen-/Vorhangsteuerung erhalten diese Nachricht. Ist die Temperatur zu hoch, wird die Heizung herunter gefahren und die Rollläden geschlossen.
+
+
+===== Fazit =====
+
+Insgesamt ermöglicht Pub/Sub eine flexible, skalierbare und entkoppelte Kommunikation zwischen den verschiedenen Komponenten eines verteilten Systems, was es zu einem wichtigen Werkzeug für die Entwicklung von robusten und skalierbaren Anwendungen macht.
+Eine Vorteil dieser lockeren Koppelung ist, dass problemlos Subscriber/Publisher hinzugefügt oder entfernt werden können.
+
+----
+{{tag>M321-LU09}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

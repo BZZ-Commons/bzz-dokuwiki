@@ -1,0 +1,95 @@
+====== 2. Ameisenvolk ======
+<WRAP center round info 60%>
+Dein Programm steuert die Ameisen mit Hilfe von Nachrichten an den Gateway-Service.
+</WRAP>
+
+===== Ablauf des Programms =====
+==== Initialisierung ====
+Beim Start des Programms öffnet das Programm einen Socket mit einem eindeutigen Port.
+Über diesen Socket sendet das Programm zwei Nachrichten.
+
+=== register ===
+Das Programm registriert seine IP-Adresse und den Port seines Sockets beim Discovery-Service.
+Als Antwort sendet der Discovery-Service ''OK'' oder ''ERROR''.
+Bei ''ERROR'' muss das Programm abbrechen.
+
+=== query "gateway" ===
+Das Programm fragt den Discovery-Service nach der IP und dem Port des Gateway-Service.
+Der Discovery-Service antwortet mit den Angaben als JSON-Objekt, z.B.
+<code json>
+{
+  "ipaddr": "127.0.0.1",
+  "port": "66554"
+}
+</code>
+Das Programm kann diese Angaben speichern oder jederzeit erneut abfragen.
+
+===== Spielrunde =====
+===== Request =====
+
+Das Programm hört auf dem registrierten Socket auf Nachrichten.
+Diese Nachricht enthält:
+  * ''action'': Welche Aktion ist auszuführen ("round" oder "quit")
+  * ''count'': Wieviele Ameisen umfasst dein Volk
+  * ''ants'': Ein Array von JSON-Objekten pro Ameise.
+
+Pro Ameise enthält die Nachricht die Angaben:
+  * ''xcoord'': Die X-Koordinate relativ zum eigenen Ameisenhügel
+  * ''ycoord'': Die Y-Koordinate relativ zum eigenen Ameisenhügel
+  * ''food'': Ob die Ameise Nahrung trägt (1) oder nicht (0).
+  * ''area'': Angaben zu den Feldern in einem 5*5 grossen Bereich um die Ameise.
+
+
+Angenommen die Weltkarte sieht aktuell so aus:
+
+{{:modul:m321:projekt:welt01.png?400|}}
+
+Dann erhält der grüne Spieler diese Nachricht:
+<code json>
+{
+  "action": "round",
+  "count": 2,
+  "ants": [
+    {
+      "xcoord": 0,
+      "ycoord": -1,
+      "food": 1,
+      "area": [
+        "water", "ground", "ground", "ground", "ground",
+        "water", "ground", "home", "ground", "friend",
+        "water", "ground", "friend", "ground", "ground",
+        "water", "ground", "ground", "ground", "food",
+        "water", "ground", "ground", "ground", "ground"
+      ]
+    },
+    {
+      "xcoord": 2,
+      "ycoord": 0,
+      "food": 0,
+      "area": [
+        "water", "water", "water", "water", "water",
+        "ground", "ground", "ground", "ground", "ground",
+        "home", "ground", "friend", "ground", "ground",
+        "friend", "ground", "ground", "ground", "ground",
+        "ground", "ground", "food", "ground", "ground"
+      ]
+    }
+  ]
+}
+</code>
+
+==== Response ====
+Das Programm antwortet mit den Aktionen der einzelnen Ameisen.
+Die Reihenfolge ist dabei die gleiche wie in der Nachricht.
+
+<code json>
+[
+  "N",
+  "S"
+]
+</code>
+Hier würde die erste Ameise nach Norden in den Ameisenhügel laufen.
+Die zweite Ameise läuft nach Süden in Richtung der Nahrung.
+
+===== Spielende =====
+Erhält das Programm eine Nachricht mit ''"action": "quit"'', so wird der Socket geschlossen und das Programm beendet.
