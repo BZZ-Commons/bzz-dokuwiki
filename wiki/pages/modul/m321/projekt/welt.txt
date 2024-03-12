@@ -20,7 +20,7 @@ Das Programm erzeugt einen Socket und hört auf diesem Socket auf Nachrichten.
 Das Programm erzeugt eine neue Spielwelt und platziert die Ameisenhügel auf der Karte.
 === Request ===
 Ein JSON-Objekt mit den Attributen:
-  * ''action'': "new"
+  * ''action: "new"''
   * ''count'': Die Anzahl der Ameisenvölker in der Welt.
 
 === Response ===
@@ -36,9 +36,10 @@ Ein JSON-Array mit den Koordinaten aller Ameisenhügel.
 
 ==== Umgebung ====
 Das Programm liefert die Umgebung einer Ameise, abhängig von der Sichtweite.
+
 === Request ===
 Ein JSON-Objekt mit den Attributen:
-  * ''action'': "area"
+  * ''action: "area"''
   * ''xcoord'': Die X-Koordinate einer Ameise.
   * ''ycoord'': Die Y-Koordinate einer Ameise.
   * ''range'': Die Sichtweite einer Ameise.
@@ -58,11 +59,15 @@ Nur autorisierte Services dürfen diese Aktion ausführen.
 
 === Request ===
 Ein JSON-Objekt mit den Attributen:
-  * ''action'': "map"
+  * ''action: "map"''
   * ''token'': Ein verschlüsseltes Authentifikationstoken.
 
 === Response ===
-Analog der Aktion ''area'' aber mit allen Feldern der Welt.
+Ein JSON-Array mit den Angaben zur Welt.
+  * ''xsize'': Breite der Welt
+  * ''ysize'': Höhe der Welt
+  * ''fields'': Zweidimensionales Array mit allen Feldern der Welt.
+
 
 ==== Beenden ====
 Erhält das Programm eine Nachricht mit ''"action": "quit"'', so wird das Programm beendet:

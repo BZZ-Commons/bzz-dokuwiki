@@ -45,11 +45,11 @@ Dann erhält der grüne Spieler diese Nachricht:
       "ycoord": -1,
       "food": 1,
       "area": [
-        "water", "ground", "ground", "ground", "ground",
-        "water", "ground", "home", "ground", "friend",
-        "water", "ground", "friend", "ground", "ground",
-        "water", "ground", "ground", "ground", "food",
-        "water", "ground", "ground", "ground", "ground"
+        "water", "empty", "empty", "empty", "empty",
+        "water", "empty", "home", "empty", "friend",
+        "water", "empty", "friend", "empty", "empty",
+        "water", "empty", "empty", "empty", "food",
+        "water", "empty", "empty", "empty", "empty"
       ]
     },
     {
@@ -58,10 +58,10 @@ Dann erhält der grüne Spieler diese Nachricht:
       "food": 0,
       "area": [
         "water", "water", "water", "water", "water",
-        "ground", "ground", "ground", "ground", "ground",
-        "home", "ground", "friend", "ground", "ground",
-        "friend", "ground", "ground", "ground", "ground",
-        "ground", "ground", "food", "ground", "ground"
+        "empty", "empty", "empty", "empty", "empty",
+        "home", "empty", "friend", "empty", "empty",
+        "friend", "empty", "empty", "empty", "empty",
+        "empty", "empty", "food", "empty", "empty"
       ]
     }
   ]
@@ -82,4 +82,8 @@ Hier würde die linke Ameise nach Norden in den Ameisenhügel laufen.
 Die rechte Ameise läuft nach Süden in Richtung der Nahrung.
 
 ===== Spielende =====
-Erhält das Programm eine Nachricht mit ''"action": "quit"'', so wird der Socket geschlossen und das Programm beendet.
+Erhält das Programm eine Nachricht mit 
+  * ''"action": "quit"'',
+  * ''"reason":'' Grund für das Beenden 
+ 
+so wird der Socket geschlossen und das Programm beendet.
