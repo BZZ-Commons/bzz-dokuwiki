@@ -1,9 +1,9 @@
-====== LU09b - MQQT ======
+====== LU09b - MQTT ======
 <WRAP center round info 60%>
-//[[https://mqtt.org/|MQQT]]// ist ein leichtes, extrem einfaches Protokoll für Pub/Sub-Systeme.
+//[[https://mqtt.org/|MQTT]]// ist ein leichtes, extrem einfaches Protokoll für Pub/Sub-Systeme.
 Es wurde für Geräte mit eingeschränkter Rechenleistung und Netzwerke mit hoher Latenz, geringer Bandbreite und/oder unzuverlässiger Verbindung entwickelt.
 
-Die Abkürzung MQQT stand ursprünglich für **M**essage **Q**ueuing **T**elemetry **T**ransport.
+Die Abkürzung MQTT stand ursprünglich für **M**essage **Q**ueuing **T**elemetry **T**ransport.
 </WRAP>
 
 MQTT wurde ursprünglich von IBM entwickelt und ist heute ein offener Standard, der von der OASIS (Organization for the Advancement of Structured Information Standards) gepflegt wird. 
