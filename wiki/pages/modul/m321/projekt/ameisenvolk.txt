@@ -5,21 +5,22 @@ Dein Programm steuert die Ameisen mit Hilfe von Nachrichten über einen Socket.
 
 ===== Ablauf des Programms =====
 ==== Initialisierung ====
-Beim Start des Programms öffnet das Programm einen Socket mit einem eindeutigen Port.
-Über diesen Socket sendet das Programm zwei Nachrichten.
+Beim Start des Programms registriert sich dein Programm beim Discovery-Service.
+  * ''action: register''
+  * ''type: hive''
+  * ''ip:'' Die IP-Adresse auf der dein Programm Nachrichten empfangen wird.
+  * ''port:'' Der Port über den dein Programm Nachrichten empfangen wird.
 
-=== register ===
-Das Programm registriert seine IP-Adresse und den Port seines Sockets beim Discovery-Service.
 Als Antwort sendet der Discovery-Service ''OK'' oder ''ERROR''.
 Bei ''ERROR'' muss das Programm abbrechen.
 
 
-===== Spielrunde =====
-===== Request =====
-
-Das Programm hört auf dem registrierten Socket auf Nachrichten.
-Diese Nachricht enthält:
-  * ''action'': Welche Aktion ist auszuführen ("round" oder "quit")
+==== Spielrunde ====
+=== Request ===
+Das Programm öffnet einen Socket unter dem oben definierten Port.
+Auf diesem Socket wartet das Programm auf Nachrichten.
+Für jede Spielrunde erhält das Programm eine Nachricht mit ''"action": "round"''
+Diese Nachricht enthält neben der Action:
   * ''count'': Wieviele Ameisen umfasst dein Volk
   * ''ants'': Ein Array von JSON-Objekten pro Ameise.
 
