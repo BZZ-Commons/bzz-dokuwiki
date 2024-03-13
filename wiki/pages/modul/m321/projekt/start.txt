@@ -15,6 +15,8 @@ Alle Services müssen sich bei diesem Discovery-Service registrieren.
 
 <nspages . -h1  -exclude -simpleList -textPages="">
 
+===== Aufträge =====
+<nspages .:aufgaben -h1  -exclude -simpleList -textPages="">
 ----
 {{tag>M321}}
 [[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

@@ -1,0 +1,40 @@
+====== Auftrag 1: Hive-Kommunikation ======
+<WRAP center round todo 60%>
+Erstelle ein Programm zur Steuerung deines Ameisenvolks.
+</WRAP>
+
+===== Ziel =====
+Im ersten Schritt steht die Kommunikation mit den anderen Services im Vordergrund.
+Dein Programm erhält eine Reihe von Nachrichten mit zufälligen Spielsituationen.
+Dabei werden alle Werte vom Game-Service zufällig generiert:
+  * Anzahl Ameisen
+  * Position der Ameisen
+  * Felder in der Umgebung der Ameisen
+
+Dein Programm muss für jede Ameise einen korrekten Spielzug als Antwort geben.
+
+===== Vorgehen =====
+==== Fork des Repositories erstellen ====
+Erstelle einen **Fork** des Repositories [[https://github.com/templates-python/m321-project-anthive]].
+Dieses Repository enthält einige Ordner:
+  * discovery: Programm für den Discovery-Service.
+  * game: Programm für den Game-Service.
+  * hives: Dein(e) Programm(e) zur Steuerung des Ameisenvolks.
+  * message: Klassen für die Verwaltung der Nachrichten.
+  * test_runner.py: Skript um alle Programme auszuführen.
+
+Du kannst neue Programme im Ordner ''hive'' erstellen.
+Passe bei Bedarf im ''test_runner.py'' den Namen deines Programms an.
+
+==== Programmablauf ====
+Lege für dein Programm einen Port zwischen 62000 und 62999 fest, auf dem ein Socket geöffnet wird.
+=== Programmstart ===
+
+Beim Start des Programms muss sich dein Programm beim Discovery-Service registrieren.
+Dazu sendet es als Socket-Client eine Nachricht.
+
+=== Spielrunden ===
+Nach der Registrierung öffnet dein Programm einen Socket auf dem oben festgelegten Port.
+Auf diesem Port wartet dein Socket-Server auf die Nachrichten des Games-Services.
+
+
