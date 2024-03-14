@@ -5,11 +5,14 @@ Im Projekt "Anthive Master" entwickeln wir ein verteiltes System bei dem mehrere
 
 ===== Vorgaben =====
 
-
 ==== Discovery-Service ====
 Alle Services müssen sich bei diesem Discovery-Service registrieren.
   * IP: 127.0.0.1
   * Port: 61111
+
+==== Nachrichten ====
+Die Daten in den Nachrichten werden grundsätzlich als JSON-Arrays und JSON-Objekte gesendet.
+Die passenden Methoden zum Codieren/Decodieren der JSON-Daten sind in den vorgegebenen Klassen Message, ClientMessage, ServerMessage.
 
 ===== Beschreibung der Services =====
 
