@@ -27,14 +27,7 @@ Du kannst neue Programme im Ordner ''hive'' erstellen.
 Passe bei Bedarf im ''test_runner.py'' den Namen deines Programms an.
 
 ==== Programmablauf ====
-Lege für dein Programm einen Port zwischen 62000 und 62999 fest, auf dem ein Socket geöffnet wird.
-=== Programmstart ===
+Siehe [[..:ameisenvolk]]
 
-Beim Start des Programms muss sich dein Programm beim Discovery-Service registrieren.
-Dazu sendet es als Socket-Client eine Nachricht.
-
-=== Spielrunden ===
-Nach der Registrierung öffnet dein Programm einen Socket auf dem oben festgelegten Port.
-Auf diesem Port wartet dein Socket-Server auf die Nachrichten des Games-Services.
 
 

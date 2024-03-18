@@ -1,66 +1,7 @@
 ====== Auftrag 2b: Weltkarte generieren ======
 <WRAP center round todo 60%>
 Erstelle in der Klasse "Map" die Methode "create_world" um eine Karte der Spielwelt zu generieren.
-Die Klasse hat die Attribute:
-  * ''width'': Breite der Karte
-  * ''height'': Höhe der Karte
-  * ''fields'': Zweidimensionales Array mit ''Field''-Objekten.
 </WRAP>
 
-===== Methode "create_world" =====
-==== Parameter ====
-  * ''hive_count'': Anzahl der Ameisenvölker
-
-==== Returnwert ====
-* Liste von Dictionaries mit den Koordinaten der Ameisenhügel.
-
-=== Beispiel ===
-<code python>
-[
-    {
-        "xcoord": 7,
-        "ycoord": 12
-    },
-    {
-        "xcoord": 45,
-        "ycoord": 3
-    },
-]
-</code>
-==== Beschreibung ====
-
-
-Alle Ameisenvölker sollen vergleichbare Bedingungen beim Start des Spiels haben.
-Um eine Chancengleichheit zu gewährleisten, müssen für alle Völker ...
-   * ... gleiche viele Nahrungsressourcen erreichbar sein,
-   * ... andere Ameisenhügel im gleichen Abstand zu einander sein.
-
-==== Variante 1: Zufallskarte ====
-Die Karte kann zufällig generiert werden.
-
-=== Grösse der Karte ===
-Als Grösse der Karte wird die Anzahl der Völker mit einem Faktor (z.B. 8) multipliziert.
-Ausserdem muss auf jeder Seite das Wasser am Rand der Karte addiert werden.
-
-** Beispiele **
-
-^ Völker ^ Faktor ^ Grösse der Karte ^
-| 4 | 8 | 4 * 8 = 32 + 2 = 34 * 34 Felder |
-| 8 | 12 | 8 * 12 = 96 + 2 = 98 * 98 Felder |
-
-=== Ameisenhügel ===
-
-Positioniere den ersten Ameisenhügel mit 2-3 Feldern Abstand zum Rand der Karte.
-Die weiteren Hügel werden nun im Uhrzeigersinn mit gleichen Abstand (+/- 1) am Rand positioniert.
-
-=== Nahrung ===
-
-Für eine gerechte Verteilung der Nahrung muss die Menge (1-99) und Distanz zu den verschiedenen Hügeln berücksichtigt werden.
-
-
-==== Variante 2: Vordefinierte Kartenteile ====
-Bei dieser Variante wird für jedes Volk eine vordefinierte Teilkarte verwendet.
-
-Aus mehreren Varianten dieser Teilkarten wählt das Programm eine aus.
-Für jedes Volk wird die gleiche Teilkarte verwendet.
-Diese Teilkarten werden gleichmässig angeordnet und allfällige Lücken mit zufälligen Feldern aufgefüllt.
+Diese Methode erzeugt eine neue Spielwelt für eine vorgegebene Anzahl von Ameisenvölkern.
+Die Beschreibung der Methode findest du unter [[..:klasse:map#methode_create_world|Methode "create_world"]].

@@ -1,16 +1,14 @@
 ====== Auftrag 2e: Karte erkunden ======
 <WRAP center round todo 60%>
 Erstelle in der Klasse "Map" die Methoden "show_area" und "show_map".
-Die Klasse hat die Attribute:
-  * ''width'': Breite der Karte
-  * ''height'': Höhe der Karte
-  * ''fields'': Zweidimensionales Array mit ''Field''-Objekten.
 </WRAP>
 
 ===== Methode "show_area" =====
 Die Methode liefert die Angaben zur Umgebung einer Ameise.
+Die Beschreibung findest du unter [[..:klasse:map#methode_show_area|Methode "show_area"]].
 
-==== Parameter ====
-  * ''xcoord'': Die X-Koordinate einer Ameise.
-  * ''ycoord'': Die Y-Koordinate einer Ameise.
-  * ''range'': Die Sichtweite einer Ameise
+===== Methode "show_map" =====
+Die Methode liefert die vollständige Karte mit allen Feldern.
+Die Beschreibung findest du unter [[..:klasse:map#methode_show_area|Methode "show_map"]].
+
+

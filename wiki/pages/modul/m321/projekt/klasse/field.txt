@@ -1,0 +1,10 @@
+====== Klasse: Field ======
+<WRAP center round todo 60%>
+Diese Klasse speichert die Informationen zu einem einzelnen Feld in der Weltkarte.
+</WRAP>
+
+===== Attribute =====
+  * ''type'': Art des Felds ("empty", "water", "hive")
+  * ''color'': Welches Ameisenvolk besetzt dieses Feld mit einem Hügel oder Ameisen.
+  * ''food'': Wieviel Nahrung liegt auf dem Feld
+  * ''ants'': Wieviele Ameisen sind auf diesem Feld.

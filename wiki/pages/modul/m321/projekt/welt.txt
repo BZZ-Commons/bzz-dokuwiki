@@ -5,15 +5,21 @@ Die Kommunikation erfolgt über einen Socket.
 </WRAP>
 
 ===== Initialisierung =====
-Beim Start des Programms registriert sich das Programm beim Discovery-Service.
 
-=== register ===
-Das Programm registriert die IP-Adresse und den Port seines Sockets beim Discovery-Service.
+Beim Start des Programms registriert sich dein Programm beim Discovery-Service.
+  * ''action: register''
+  * ''type: world''
+  * ''ip:'' Die IP-Adresse auf der dein Programm Nachrichten empfangen wird.
+  * ''port:'' Der Port über den dein Programm Nachrichten empfangen wird.
+
 Als Antwort sendet der Discovery-Service ''OK'' oder ''ERROR''.
 Bei ''ERROR'' muss das Programm abbrechen.
 
+Das Programm erzeugt ein neues Objekt der Klasse "Map".
+
 ===== Spielablauf =====
-Das Programm erzeugt einen Socket und hört auf diesem Socket auf Nachrichten. 
+Das Programm öffnet einen Socket unter der oben registrierten Adresse/Port.
+Auf diesem Socket wartet das Programm auf Nachrichten. 
 
 ===== Aktionen =====
 ==== Neue Welt ====
@@ -74,3 +80,8 @@ Erhält das Programm eine Nachricht mit ''"action": "quit"'', so wird das Progra
   - Sende eine Antwort mit ''OK'' über den Socket.
   - Schliesse den Socket
   - Beende das Programm.
+
+
+===== Objekte und Methoden =====
+  * [[.:klasse:map]]
+  * [[.:klasse:field]]

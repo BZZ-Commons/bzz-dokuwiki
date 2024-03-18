@@ -1,58 +1,9 @@
 ====== Auftrag 2c: Felder verwalten ======
 <WRAP center round todo 60%>
 Erstelle in der Klasse "Map" die Methoden "add_ant", "move_ant" und "change_food".
-
-Die Klasse hat die Attribute:
-  * ''width'': Breite der Karte
-  * ''height'': Höhe der Karte
-  * ''fields'': Zweidimensionales Array mit ''Field''-Objekten.
 </WRAP>
 
-===== Methode "add_ant" =====
-Diese Methode setzt eine neue Ameise auf ein Feld.
-
-==== Parameter ====
-  * ''xcoord'': Die X-Koordinate des Felds.
-  * ''ycoord'': Die Y-Koordinate des Felds.
-  * ''color'': Die Farbe des Ameisenvolks
-
-==== Returnwert ====
-Keiner
-
-===== Methode "move_ant" =====
-Diese Methode bewegt eine Ameise von einem Feld zu einem anderen Feld in der Weltkarte.
-Dazu erhält sie die Startposition (x/y-Koordinaten) und die Zielposition (x/y-Koordinaten).
-
-  - Entferne die Ameise vom Startfeld.
-  - Füge beim Zielfeld eine Ameise hinzu.
-  - Ermittle die Angaben zum Zielfeld (siehe Returnwert).
-
-
-==== Parameter ====
-  * ''xcoord_start'': Die X-Koordinate der Startposition.
-  * ''ycoord_start'': Die Y-Koordinate der Startposition.
-  * ''xcoord_target'': Die X-Koordinate der Zielposition.
-  * ''ycoord_target'': Die Y-Koordinate der Startposition.
-
-==== Returnwert ====
-Der Returnwert ist eine Angabe zum Zielfeld:
-  * ''"food"'': Nahrung vorhanden
-  * ''"water"'': Feld mit Wasser
-  * ''"home"'': Eigener Ameisenhügel
-  * ''"hill"'': Fremder Ameisenhügel
-  * ''"empty"'': Leeres Feld
-
-===== Methode "change_food" =====
-Die Methode ändert die Menge an Nahrung auf einem Feld.
-  * Positive Menge: Die Menge an Nahrung wird hinzugefügt.
-  * Negative Menge: Die Menge an Nahrung wird weggenommen.
-  * 0: Die Menge an Nahrung wird auf 0 gesetzt.
-
-==== Parameter ====
-  * ''xcoord'': Die X-Koordinate des Felds.
-  * ''ycoord'': Die Y-Koordinate des Felds.
-  * ''amount'': Die Menge an Nahrung
-
-==== Returnwert ====
-Keiner
-
+Die Beschreibungen der Methoden findest du in der [[..:klasse:map]]:
+  * [[..:klasse:map#methode_add_ant]]
+  * [[..:klasse:map#methode_move_ant]]
+  * [[..:klasse:map#methode_change_food]]
