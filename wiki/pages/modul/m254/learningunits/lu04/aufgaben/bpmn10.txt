@@ -1,0 +1,20 @@
+====== LU04.A16 - Modellieren 4 ======
+
+===== Rahmenbedingungen =====
+
+  * Sozialform: Einzelarbeit/Partnerarbeit
+  * Zeitbudget: 30 Minuten
+  * Hilfsmittel: Unterrichtsunterlagen
+  * Abgabe: PDF mit Lösung des Geschäftsprozesses in der BPMN-Notation.
+
+
+===== Ausgangslage =====
+Sie haben eine neue Tankstellen-App entwickelt, mit der Sie Tankstellen suchen sowie ihre Tankfüllung bezahlen können.
+
+===== Arbeitsauftrag ===== 
+Damit Sie Investoren für eine grosse Marketingkampagne bekommen können, modellieren Sie einen typischen Tankprozess mit Ihrer App, der wie folgt beschrieben werden kann:
+
+
+==== Vorgaben ====
+Der Benutzer stellt fest, dass der Tank leer ist. Die nächste Tankstelle kann in der App gesucht werden, welche dem Benutzer eine Tankstellenliste liefert. Anschliessend wählt der Benutzer eine Tankstelle aus und fahrt dort hin. Sollten mehr als 10 Autos bei der Tankstelle in der Schlange anstehen, die warten, so stellt er sich in die Schlange, falls aber nach 5 Minuten immer noch Autos warten, sucht er mit seiner App die nächste Tankstelle, sonst wählt er eine Tanksäule aus. Im Idealfall, sofern 10 oder weniger Autos warten, so wählt der Kunde direkt eine Tanksäule aus. Ist diese Säule frei, kann er sofort tanken und mit der App bezahlen. Ist diese Tanksäule aber noch belegt, wartet er fünf Minuten, tankt dann, falls sie frei geworden ist, oder sucht die nächste Tankstelle mithilfe der App.
+

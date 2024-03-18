@@ -1,0 +1,18 @@
+====== LU04.A13 - Modellieren 1 ======
+
+===== Rahmenbedingungen =====
+
+  * Sozialform: Einzelarbeit/Partnerarbeit
+  * Zeitbudget: 30 Minuten
+  * Hilfsmittel: Unterrichtsunterlagen
+  * Abgabe: PDF mit Lösung des Geschäftsprozesses in der BPMN-Notation.
+
+
+===== Ausgangslage =====
+Sie haben einiges über die BPMN-Notation gehört und kennen die wichtigen Regeln und Symbole. Mit dieser Technik können alle Arten von Geschäftsprozessen modelliert werden.
+
+===== Arbeitsauftrag ===== 
+Sie sind Studierender und wollen sich bei dem International Students Office (IStO) der ABC-Universität für ein Auslandssemester an einer Gastuniversität bewerben. Modellieren Sie den folgenden Bewerbungsprozess mittels eines BPMN-Kollaborationsdiagramms:
+
+==== Vorgaben ====
+„Der Studierende sendet seine Bewerbung an das IStO. Nach Eingang der Bewerbung wird diese dort auf ihre Vollständigkeit geprüft. Ist die Bewerbung unvollständig, wird der Studierende daraufhin benachrichtigt. Dieser überarbeitet seine Bewerbung und sendet die überarbeitete Version erneut an das IStO. Sind die Unterlagen vollständig, trifft das IStO eine Entscheidung darüber, welcher der Bewerber für die Gast Universität nominiert werden soll. Die Bewerber, die sich nicht durchsetzen konnten und nicht nominiert wurden, werden vom IStO informiert. Der Studierende hingegen, der sich gegen die anderen mit seiner Bewerbung durchgesetzt hat, wird vom IStO nominiert. Dieses sendet darauf die Unterlagen des Studierenden an die entsprechende Gast Universität. Diese bearbeitet die Nominierung und trifft die endgültige Entscheidung darüber, ob der Studierende ein Auslandssemester an der Universität verbringen darf. Halt die Gast Universität den nominierten Studierenden für geeignet, sendet sie diesem einen Zulassungsbescheid und wenn nicht, einen Ablehnungsbescheid. Zum Abschluss nimmt der Studierende die Entscheidung der entsprechenden Institution zur Kenntnis und der Bewerbungsprozess ist beendet.“

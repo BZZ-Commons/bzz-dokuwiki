@@ -1,0 +1,12 @@
+====== LU04.L12 - Debugging 3 ======
+
+{{:modul:m254:learningunits:lu04:loesungen:bpmn_debugging_3_solution_1.png?400|}}
+
+  - Der Prozess wird erst instanziiert, wenn das Zeitereignis und die Aktivität eintreten. Zum einen darf die Aktivität nicht auf das ereignisbasierte Gateway folgen sowie zum anderen muss das Zeitereignis an die Aktivität angeheftet
+  - werden, um den zeitlichen Abbruch des Teilprozesses zu modellieren.
+  - Ein Teilprozess mit dem Marker Kompensation darf nicht Bestandteil des normalen Prozessflusses sein.
+  - Ein aufgeklappter Teilprozess darf den Marker Teilprozess nicht aufweisen.
+  - Ein Abbruchereignis darf nur an Transaktionen angeheftet werden.
+
+Eine bessere Lösung dieser Aufgabe wäre:
+{{:modul:m254:learningunits:lu04:loesungen:bpmn_debugging_3_solution_2.png?400|}}

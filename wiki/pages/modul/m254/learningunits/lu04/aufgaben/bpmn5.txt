@@ -1,0 +1,17 @@
+====== LU04.A11 - Debugging 2 ======
+
+===== Rahmenbedingungen =====
+
+  * Sozialform: Einzelarbeit/Partnerarbeit
+  * Zeitbudget: 15 Minuten
+  * Hilfsmittel: Unterrichtsunterlagen
+  * Abgabe: PDF mit Fehlerbeschreibung
+
+
+===== Ausgangslage =====
+Sie haben einiges über die BPMN-Notation gehört und kennen die wichtigen Regeln und Symbole. Nachfolgend finden Sie ein Modell, das Fehler enthält.
+
+===== Arbeitsauftrag ===== 
+Ein Prozess-Designer möchte einen Geschäftsprozess modellieren, der instanziiert wird, wenn entweder ein Signal eintritt oder sich eine Geschäftsbedingung geändert hat. Er übermittelt Ihnen den unten abgebildeten Prozess und fragt Sie als Experte, ob der Start des Geschäftsprozesses korrekt modelliert wurde und ob Modellierungsfehler enthalten sind. Finden Sie die Modellierungsfehler und begründen Sie kurz ihre Antwort.
+
+{{:modul:m254:learningunits:lu04:aufgaben:bpmn_debugging_2.png?600|}}

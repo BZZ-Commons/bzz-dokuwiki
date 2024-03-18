@@ -1,0 +1,40 @@
+====== Auftrag 2a: Weltkarte anzeigen ======
+<WRAP center round todo 60%>
+Das Programm zeigt die Karte der Spielwelt in einem Webbrowser an.
+</WRAP>
+
+===== Programmaufbau und -ablauf =====
+
+Das Programm besteht aus einer HTML- und einer oder mehreren Javascript-Dateien.
+Es sendet in regelmässigen Abständen einen Request an den [[..:welt|World Service]] um die Karte der Spielwelt zu erhalten.
+Diese Spielwelt wird dann am Bildschirm angezeigt.
+
+==== Intialisierung ====
+Wenn die HTML-Seite geladen wird, muss die Applikation zunächst die Adresse und den Port des Welt-Services abfragen.
+Dazu sendet das Programm einen Request an den Discovery-Service.
+  * ''action: "query"''
+  * ''type: "world"''
+
+Die Adresse und den Port des World-Services wird in der Applikation gespeichert.
+
+Falls der Discovery-Service eine leere Antwort liefert, wird dem Benutzer eine Meldung "Keine Spielwelt gefunden" angezeigt.
+Über den Reload-Button kann der Benutzer die Initialisierung neu starten.
+
+==== Weltkarte anzeigen ====
+
+=== Request ===
+Die Applikation sendet in regelmässigen Abständen einen Request an den World-Service.
+Bei diesem Request muss ein Token mitgesendet werden.
+Für unsere Applikation besteht das Token aus einem Passwort ''geheim''.
+
+  * ''action: "map"''
+  * ''token: "Geheim"''
+
+=== Response ===
+Ein JSON-Array mit den Angaben zur Welt.
+  * ''xsize'': Breite der Welt
+  * ''ysize'': Höhe der Welt
+  * ''fields'': Zweidimensionales Array mit allen Feldern der Welt.
+
+Anhand der Angaben in der Response wird die Weltkarte im Browser angezeigt.
+

@@ -1,0 +1,33 @@
+====== Auftrag 2d: Kämpfe abwickeln ======
+<WRAP center round todo 60%>
+Schreibe eine Methode ''resolve_fight'' in der Klasse ''GameService'' um die Kämpfe zwischen Ameisen abzuwickeln.
+</WRAP>
+
+Die Methode ermittelt die Feldern, auf denen Ameisen unterschiedlicher Völker stehen.
+Für jedes dieser Felder wird ermittelt, welche Ameisen überleben.
+  * Solange Ameisen verschiedener Völker auf dem Feld sind
+    * Entferne von jedem Volk eine Ameise
+
+Als Antwort liefert die Methode eine Liste von Feldern (x/y-Koordinaten) auf denen ein Kampf stattgefunden hat.
+
+===== Schnittstelle =====
+==== Parameter ====
+  * ''hives'': Eine Liste von Hive-Objekten
+
+==== Returnwert ====
+  * Liste von Dictionaries mit den Feldkoordinaten wo Kämpfe stattgefunden haben.
+Falls keine Kämpfe stattgefunden haben, wird eine leere Liste zurückgegeben.
+
+=== Beispiel ===
+<code python>
+[
+    {
+        "xcoord": 7,
+        "ycoord": 12
+    },
+    {
+        "xcoord": 45,
+        "ycoord": 3
+    },
+]
+</code>
