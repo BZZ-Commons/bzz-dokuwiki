@@ -85,6 +85,18 @@ Diese Methode setzt eine neue Ameise auf ein Feld.
 ==== Returnwert ====
 Keiner
 
+===== Methode "remove_ant" =====
+Diese Methode entfernt eine Ameise auf einem Feld.
+
+==== Parameter ====
+  * ''xcoord'': Die X-Koordinate des Felds.
+  * ''ycoord'': Die Y-Koordinate des Felds.
+  * ''color'': Die Farbe des Ameisenvolks
+
+==== Returnwert ====
+Keiner
+
+
 ==== Methode "move_ant" ====
 Diese Methode bewegt eine Ameise von einem Feld zu einem anderen Feld in der Weltkarte.
 Dazu erhält sie die Startposition (x/y-Koordinaten) und die Zielposition (x/y-Koordinaten).
