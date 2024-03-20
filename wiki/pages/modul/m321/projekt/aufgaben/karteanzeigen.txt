@@ -38,3 +38,13 @@ Ein JSON-Array mit den Angaben zur Welt.
 
 Anhand der Angaben in der Response wird die Weltkarte im Browser angezeigt.
 
+Ein JSON-Array mit den Zuständen der Felder.
+Jedes Feld kann einen dieser Zustände haben:
+  * **water**: Das Wasser bildet eine natürliche Barriere, die deine Ameisen nicht überwinden können. 
+  * **hill //COLOR//**: Der Ameisenhügel eines anderen Volks.
+  * **ant //COLOR//**: Eine Ameise eines anderen Volks.
+  * **food**: Auf diesem Feld liegt 1 - 99 Nahrung, die Menge an Nahrung ist nicht bekannt.
+  * **empty**: Ein leeres Feld auf das deine Ameise laufen kann.
+
+Es wird immer nur der erste zutreffende Zustand ausgegeben.
+Zusätzlich wird bei **ant** und **hill** die Farbe mitgegeben, z.B. "ant red", "hill blue".

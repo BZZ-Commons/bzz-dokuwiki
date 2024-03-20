@@ -59,10 +59,24 @@ Diese Teilkarten werden gleichmässig angeordnet und allfällige Lücken mit zuf
 === Parameter ===
   * ''xcoord'': Die X-Koordinate einer Ameise.
   * ''ycoord'': Die Y-Koordinate einer Ameise.
+  * ''color'': Die Farbe des Ameisenvolks
   * ''range'': Die Sichtweite einer Ameise
 
 === Response ===
 Ein JSON-Array mit den Zuständen der Felder.
+Jedes Feld kann einen dieser Zustände haben:
+  * **water**: Das Wasser bildet eine natürliche Barriere, die deine Ameisen nicht überwinden können. 
+  * **home**: Dein eigener Ameisenhügel.
+  * **hill**: Der Ameisenhügel eines anderen Volks.
+  * **friend**: Eine eigene Ameise.
+  * **foe**: Eine Ameise eines anderen Volks.
+  * **food**: Auf diesem Feld liegt 1 - 99 Nahrung, die Menge an Nahrung ist nicht bekannt.
+  * **empty**: Ein leeres Feld auf das deine Ameise laufen kann.
+
+Es wird immer nur der erste zutreffende Zustand ausgegeben.
+
+Ist also in einem Feld eine eigene Ameise **und** Nahrung, wird nur **ant** angezeigt.
+
 Die Reihenfolge der Felder ist immer von oben links nach unten rechts.
 
 {{:modul:m321:projekt:umgebung01.png?200|}}
@@ -76,7 +90,18 @@ Keine
 
 === Returnwert ===
 Ein zweidimensionales Array (list) mit den Feldern der Karte.
+Ein JSON-Array mit den Zuständen der Felder.
+Jedes Feld kann einen dieser Zustände haben:
+  * **water**: Das Wasser bildet eine natürliche Barriere, die deine Ameisen nicht überwinden können. 
+  * **hill //COLOR//**: Der Ameisenhügel eines anderen Volks.
+  * **ant //COLOR//**: Eine Ameise eines anderen Volks.
+  * **food**: Auf diesem Feld liegt 1 - 99 Nahrung, die Menge an Nahrung ist nicht bekannt.
+  * **empty**: Ein leeres Feld auf das deine Ameise laufen kann.
 
+Es wird immer nur der erste zutreffende Zustand ausgegeben.
+Zusätzlich wird bei **ant** und **hill** die Farbe mitgegeben, z.B. "ant red", "hill blue".
+
+Ist also in einem Feld eine eigene Ameise **und** Nahrung, wird nur **ant** angezeigt.
 
 ==== Methode "add_ant" ====
 Diese Methode setzt eine neue Ameise auf ein Feld.

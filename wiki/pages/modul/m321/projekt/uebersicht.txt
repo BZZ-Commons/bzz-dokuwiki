@@ -32,6 +32,8 @@ Ist also in einem Feld eine eigene Ameise **und** Nahrung, wird nur **friend** a
 ===== Ameisenvölker =====
 
 Du entwickelst ein Programm um die Ameisen deines Volks zu steuern.
+Jedes Volk wird durch eine Farbe identifiziert: 'red', 'blue', 'green', 'black', 'grey', 'cyan', 'purple', 'gold':
+
 Das Spiel läuft in Runden ab.
 Am Anfang jeder Runde erhält dein Programm eine Nachricht:
   * Anzahl der Ameisen in deinem Volk.
