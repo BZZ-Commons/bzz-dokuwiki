@@ -36,7 +36,7 @@ Um eine Chancengleichheit zu gewährleisten, müssen für alle Völker ...
    * ... gleiche viele Nahrungsressourcen erreichbar sein,
    * ... andere Ameisenhügel im gleichen Abstand zu einander sein.
 
-** Variante 1: Zufallskarte **
+** Variante 1: Zufallskarte ** \\
 Die Karte kann zufällig generiert werden.
 
   * Grösse der Karte: Als Grösse der Karte wird die Anzahl der Völker mit einem Faktor (z.B. 8) multipliziert. Dazu addieren wir in der Höhe und Breite jeweils 2 Felder für das Wasser, welches den Rand bildet.
@@ -46,10 +46,14 @@ Die Karte kann zufällig generiert werden.
     * Man könnte auch eine Formel entwickeln, die für jeden Hügel aus Abstand und Menge einen Wert ermittelt. Nun werden solange zufällige Verteilungen der Nahrung ausprobiert, bis alle Hügel einen gleichen Wert erreichen.
 
 
-** Variante 2: Vordefinierte Kartenteile **
+** Variante 2: Vordefinierte Kartenteile ** \\
 Bei diesem Ansatz werden mehrere Varianten von Kartenteilen mit jeweils einem Hügel und 3-4 Nahrungsquellen definiert.
 Aus diesen Varianten dieser Teilkarten wählt das Programm eine Teilkarte aus, wobei für jedes Volk die gleiche Teilkarte verwendet wird.
 Diese Teilkarten werden gleichmässig angeordnet und allfällige Lücken mit zufälligen Feldern aufgefüllt.
+
+{{:modul:m321:projekt:klasse:welt02.png?200|}}
+
+//Abbildung: Anordnung der Kartenteile für 3,4 und 6 Spieler//
 
 ==== Methode "show_area" ====
 === Parameter ===
@@ -74,26 +78,26 @@ Keine
 Ein zweidimensionales Array (list) mit den Feldern der Karte.
 
 
-===== Methode "add_ant" =====
+==== Methode "add_ant" ====
 Diese Methode setzt eine neue Ameise auf ein Feld.
 
-==== Parameter ====
+=== Parameter ===
   * ''xcoord'': Die X-Koordinate des Felds.
   * ''ycoord'': Die Y-Koordinate des Felds.
   * ''color'': Die Farbe des Ameisenvolks
 
-==== Returnwert ====
+=== Returnwert ===
 Keiner
 
-===== Methode "remove_ant" =====
+==== Methode "remove_ant" ====
 Diese Methode entfernt eine Ameise auf einem Feld.
 
-==== Parameter ====
+=== Parameter ===
   * ''xcoord'': Die X-Koordinate des Felds.
   * ''ycoord'': Die Y-Koordinate des Felds.
   * ''color'': Die Farbe des Ameisenvolks
 
-==== Returnwert ====
+=== Returnwert ===
 Keiner
 
 

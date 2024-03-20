@@ -1,9 +1,10 @@
 ====== Auftrag 2c: Felder verwalten ======
 <WRAP center round todo 60%>
-Erstelle in der Klasse "Map" die Methoden "add_ant", "move_ant" und "change_food".
+Erstelle in der Klasse "Map" die Methoden "add_ant", "remove_ant", "move_ant" und "change_food".
 </WRAP>
 
 Die Beschreibungen der Methoden findest du in der [[..:klasse:map]]:
   * [[..:klasse:map#methode_add_ant]]
+  * [[..:klasse:map#methode_remove_ant]]
   * [[..:klasse:map#methode_move_ant]]
   * [[..:klasse:map#methode_change_food]]

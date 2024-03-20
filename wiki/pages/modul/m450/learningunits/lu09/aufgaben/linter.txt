@@ -5,6 +5,8 @@ Nutze ein Linter-Programm um Schwächen im Sourcecode zu entdecken und zu verbes
 
 ===== Vorbereitung =====
 Bilde ein 2er oder 3er Team um verschiedene Linter auszuprobieren.
+Ein Gruppenmitglied meldet die **Nachnamen** aller Mitglieder via Teams an die Lehrperson.
+
 Jedes Teammitglied wählt einen anderen Linter aus der Liste auf [[https://geekflare.com/python-linter-platforms/|Geekflare]] aus.
 Installiere das von dir ausgewählte Lint-Programm und klone das Repository [[https://github.com/templates-python/m450-lu09-a01.git]].
 
@@ -24,8 +26,9 @@ Studiere die angezeigten Fehler:
   * Wie viele der angezeigten Fehler sind gar keine Fehler (false positive)?
 
 ==== Zusammentragen und vergleichen ====
-Tragt als Gruppe eure Ergebnisse zusammen.
-Vergleicht die verschiedenen Lint-Programme bezüglich Konfiguration, gefundene Fehler, Fehlerarten und false positive.
+Tragt als Gruppe eure Ergebnisse in einem Dokument zusammen.
+Vergleicht die verschiedenen Lint-Programme bezüglich Konfiguration, gefundene Fehler, Fehlerarten und "false positive".
+Ladet das Dokument als PDF-Datei mit dem Vergleich der verschiedenen Programme hier in Moodle hoch.
 
 ----
 {{tag>M450-LU09}}

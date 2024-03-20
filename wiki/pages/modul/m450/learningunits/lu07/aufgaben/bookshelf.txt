@@ -9,7 +9,7 @@ Die Webapplikation "Bookshelf" stellt eine API zur Verwaltung eines Bücherregal
 Über diese API kann ein Programm die Bücher lesen, erstellen, ändern und löschen.
 
 ==== Dokumentation der API ====
-Die API ist unter ''https://it.bzz.ch/book/'' erreichbar.
+Die API ist unter ''https://it.bzz.ch/book/FUNKTION'' erreichbar.
 Der Pfad der einzelnen Funktionen wird jeweils hinten angehängt. Also z.B.: ''https://it.bzz.ch/book/list''.
 
 === Buch lesen ===
