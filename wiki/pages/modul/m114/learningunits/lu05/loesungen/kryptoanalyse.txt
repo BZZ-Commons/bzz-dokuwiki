@@ -3,7 +3,7 @@
 Wir starten mit dem Schlüssel 1 und schauen, ob ein sinnvoller Text erscheint.
 Falls nicht, nehmen wir den nächst grösseren Schlüssel.
 
-===== Caesar =====
+==== Caesar ====
 ^ Chiffretext: | HEWKILXVIGLXIMRJEGL |
 ^ Schlüssel = 1 | GDVJHKWUHFKWHLQIDFK |
 ^ Schlüssel = 2 | FCUIGJVTGEJVGKPHCEJ |
@@ -15,3 +15,7 @@ Falls nicht, nehmen wir den nächst grösseren Schlüssel.
 ^ Chiffretext: | MEDMNZIGDLKMTAZMILTUOMUE |
 ^ Schlüssel = 2 | MTEADZMMNIZLITGUDOLMKUME |
 ^ Schlüssel = 3 | MITGEDULDKOMMTMANZUMZIEL |
+
+=== Unbekannte Methode ===
+Hier wurde der Text "Doppelt verschlüsselter Text" zuerst mit Caesar- und danach mit Gartenzaun-Verfahren verschlüsselt.
+Ohne entsprechende Programme ist dies sehr schwierig zu entschlüsseln.

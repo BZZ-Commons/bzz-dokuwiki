@@ -1,5 +1,5 @@
 ====== LU05.A02 - Vigenere ======
-Sie können Ihre Lösung mit [[https://www.cryptool.org/de/cto/vigenere]] überprüfen.
+
 
 ===== Hilfsmittel =====
   * Papier und Schreibmaterial
@@ -7,9 +7,10 @@ Sie können Ihre Lösung mit [[https://www.cryptool.org/de/cto/vigenere]] überp
 
 ===== Aufgaben =====
 
-== Hinweise ==
+<WRAP center round tip 60%>
 Verwenden Sie im Chiffretext ausschliesslich Grossbuchstaben.
 Lassen Sie Leerzeichen und Satzzeichen weg.
+</WRAP>
 
 ==== Verschlüsseln ====
 Verschlüsseln Sie den Klartext mit dem Vigenere-Verfahren.
@@ -30,6 +31,8 @@ Entschlüsseln Sie den Chiffretext mit dem Vigenere-Verfahren.
   * Chiffretext: **AMTZMIMMPZBIIQGCXVXKJSNIXAGSNRL**
   * Schlüssel: **FICHTE**
 
+===== Lösungen =====
+Sie können Ihre **Lösungen** mit [[https://www.cryptool.org/de/cto/vigenere]] überprüfen.
 
 ----
 {{tag>m114-A0G}}

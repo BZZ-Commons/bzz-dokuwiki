@@ -1,5 +1,4 @@
 ====== LU05.A01 - Caesar ======
-Sie können Ihre Lösung mit [[https://www.cryptool.org/de/cto/caesar]] überprüfen.
 
 ===== Hilfsmittel =====
   * Papier und Schreibmaterial
@@ -7,9 +6,12 @@ Sie können Ihre Lösung mit [[https://www.cryptool.org/de/cto/caesar]] überpr�
 
 ===== Aufgaben =====
 
-== Hinweise ==
+<WRAP center round tip 60%>
 Verwenden Sie im Chiffretext ausschliesslich Grossbuchstaben.
 Lassen Sie Leerzeichen und Satzzeichen weg.
+</WRAP>
+
+
 
 ==== Verschlüsseln ====
 === Caesar ===
@@ -31,6 +33,10 @@ Entschlüsseln Sie den Chiffretext mit dem Caesar-Verfahren.
 
   * Chiffretext: **ZGAINKTOYZXUKZROIN**
   * Schlüssel: **6**
+
+==== Lösungen ====
+Sie können Ihre **Lösung** mit [[https://www.cryptool.org/de/cto/caesar]] überprüfen.
+
 
 ----
 {{tag>m114-A0G}}
