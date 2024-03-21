@@ -31,6 +31,10 @@ Die Installation, Einrichtung und Nutzung finden Sie auch als Video [[https://ww
 
 === 4. Schlüsselpaar erzeugen ===
 Erzeugen Sie ein Schlüsselpaar für Ihre E-Mail-Adresse.
+<WRAP center round important 60%>
+Verwenden Sie beim Erzeugen des Schlüsselpaars den RSA-Algorithmus.
+Gehen Sie dazu in die **Erweiterten Einstellungen** und kontrollieren Sie die Auswahl.{{:modul:m114:learningunits:lu06:aufgaben:algorithmus.png?400|}}
+</WRAP>
 
 === 5. Schlüssel austauschen ===
 Tauschen Sie mit einem Partner gegenseitig die Public Keys aus.
@@ -56,6 +60,12 @@ Tauschen Sie mit einem Partner gegenseitig die Public Keys aus.
 === 5. E-Mail verschlüsseln und signieren ===
 Senden Sie Ihrem Partner eine verschlüsselte und signierte E-Mail.
 Sie sollten von Ihrem Partner ebenfalls eine entsprechende E-Mail erhalten.
+
+<nodisp>
+==== TODO ====
+Für 2025 überarbeiten auf ed25519-Algorithmus.
+Auch für den Abschlusstest muss ein entsprechender Schlüssel eingesetzt werden.
+</nodisp>
 
 ----
 {{tag>m114-A0G}}
