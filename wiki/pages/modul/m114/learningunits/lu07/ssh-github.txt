@@ -1,0 +1,27 @@
+====== LU07d - Einrichtung und Nutzung von SSH für GitHub ======
+
+SSH (Secure Shell) ist ein Protokoll, das eine sichere Verbindung zu Remoteservern ermöglicht. Für Entwickler, die GitHub nutzen, bietet SSH eine effiziente und sichere Methode, um ohne die ständige Eingabe von Benutzernamen und Zugangstoken auf ihre Repositories zuzugreifen und Änderungen (Commits) vorzunehmen. In dieser Lerneinheit werden wir uns mit den Grundlagen von SSH auseinandersetzen, wie man SSH-Schlüssel generiert, diese zu GitHub hinzufügt und sie zur Signierung von Commits verwendet.
+
+==== Überblick ====
+
+  * **SSH-Schlüssel generieren**: Der erste Schritt besteht darin, ein Schlüsselpaar (bestehend aus einem öffentlichen und einem privaten Schlüssel) zu generieren. Der private Schlüssel bleibt auf Ihrem Computer, während der öffentliche Schlüssel zu Ihrem GitHub-Konto hinzugefügt wird.
+
+  * **SSH-Agent einrichten**: Nach der Generierung des Schlüsselpaares müssen Sie den öffentlichen Schlüssel Ihrem GitHub-Konto hinzufügen und den privaten Schlüssel einem SSH-Agent hinzufügen, der die Schlüsselverwaltung übernimmt.
+
+  * **Signierung von Commits**: Mit dem gleichen SSH-Schlüssel können Sie Ihre Commits signieren, um deren Authentizität zu verifizieren.
+
+  * **Sicherheit des SSH-Schlüssels**: Es gibt zusätzliche Maßnahmen zur Sicherung Ihres SSH-Schlüssels, einschließlich der Verwendung von Passphrasen und Hardwaresicherheitsschlüsseln.
+
+  * **SSH-Schlüssel und SAML SSO**: Für Repositorys, die sich im Besitz einer Organisation mit SAML Single Sign-On befinden, ist eine zusätzliche Autorisierung des SSH-Schlüssels erforderlich.
+
+  * **Verwaltung und Sicherheit**: GitHub empfiehlt, die SSH-Schlüsselliste regelmäßig zu überprüfen und Schlüssel zu sperren oder zu entfernen, die nicht mehr benötigt werden oder kompromittiert wurden.
+
+==== Lernziele ====
+
+  * Verstehen, wie SSH-Schlüssel funktionieren und warum sie für die Arbeit mit GitHub wichtig sind.
+  * Lernen, wie man SSH-Schlüssel generiert und dem SSH-Agent hinzufügt.
+  * Hinzufügen des öffentlichen SSH-Schlüssels zu Ihrem GitHub-Konto.
+  * Verwenden des SSH-Schlüssels zur Signierung von Commits.
+  * Kennenlernen der Best Practices zur Sicherung Ihres SSH-Schlüssels.
+
+In den folgenden Abschnitten dieser Lerneinheit werden wir diese Themen detailliert durchgehen und Ihnen Schritt für Schritt zeigen, wie Sie SSH mit GitHub effektiv nutzen können.

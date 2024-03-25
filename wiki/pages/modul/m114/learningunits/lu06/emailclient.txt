@@ -1,0 +1,71 @@
+====== LU06e - Emails verschlüsseln ======
+<WRAP center round alert 60%>
+Verwenden Sie "Outlook" und noch nicht "New Outlook". Im "New Outlook" funktioniert das Plugin noch nicht. 
+</WRAP>
+
+<WRAP center round info 60%>
+Um das Verschlüsseln von Emails zu üben, müssen Sie mit einem Partner zusammenarbeiten.
+Es ist nicht nötig, dass beide Partner das gleiche E-Mail-Programm verwenden.
+</WRAP>
+
+Zum Verschlüsseln von E-Mails benötigen Sie ein Emailprogramm wier Outlook oder [[https://www.thunderbird.net/de/|Thunderbird]].
+Andere E-Mail-Programme können ebenfalls genutzt werden, diese werden aber hier nicht beschrieben.
+
+Falls Sie Ihre @bzz-Adresse für die Aufgabe verwenden möchten, müssen Sie Outlook verwenden.
+
+===== Auftrag =====
+==== Outlook ====
+=== 1. Outlook installieren ===
+
+Installieren Sie Outlook, falls noch nicht vorhanden.
+
+=== 2. E-Mail-Adresse einrichten ===
+Wählen Sie eine bestehende E-Mail-Adresse oder erstellen Sie eine neue E-Mail-Adresse.
+Richten Sie die gewählte E-Mail-Adresse in Ihrem Programm ein.
+
+=== 3. Verschlüsselungsoftware installieren ===
+
+Installieren Sie [[https://www.gpg4win.de/|gpg4win]] inkl. Kleopatra und dem Outlook-Addon.
+Die Installation, Einrichtung und Nutzung finden Sie auch als Video [[https://www.youtube.com/watch?v=UYGzRbhmbhI]].
+
+=== 4. Schlüsselpaar erzeugen ===
+Erzeugen Sie ein Schlüsselpaar für Ihre E-Mail-Adresse.
+<WRAP center round important 60%>
+Verwenden Sie beim Erzeugen des Schlüsselpaars den RSA-Algorithmus.
+Gehen Sie dazu in die **Erweiterten Einstellungen** und kontrollieren Sie die Auswahl.{{:modul:m114:learningunits:lu06:aufgaben:algorithmus.png?400|}}
+</WRAP>
+
+=== 5. Schlüssel austauschen ===
+Tauschen Sie mit einem Partner gegenseitig die Public Keys aus.
+
+=== 6. E-Mail verschlüsseln und signieren ===
+Senden Sie Ihrem Partner eine verschlüsselte und signierte E-Mail.
+Sie sollten von Ihrem Partner ebenfalls eine entsprechende E-Mail erhalten.
+
+==== Thunderbird ====
+=== 1. Thunderbird installieren ===
+Laden Sie [[https://www.thunderbird.net/de/|Thunderbird]] herunter und installieren Sie das Programm.
+
+=== 2. E-Mail-Adresse einrichten ===
+Wählen Sie eine bestehende E-Mail-Adresse oder erstellen Sie eine neue E-Mail-Adresse.
+Richten Sie die gewählte E-Mail-Adresse in Ihrem Programm ein.
+
+=== 3. Verschlüsselungsoftware installieren ===
+Folgen Sie der Anleitung unter [[https://support.mozilla.org/de/kb/openpgp-in-thunderbird-leitfaden-und-faqs#w_sie-haben-openpgp-noch-nie-mit-thunderbird-verwendet-wie-richten-sie-openpgp-ein|OpenPGP einrichten]]
+
+=== 4. Schlüssel austauschen ===
+Tauschen Sie mit einem Partner gegenseitig die Public Keys aus.
+
+=== 5. E-Mail verschlüsseln und signieren ===
+Senden Sie Ihrem Partner eine verschlüsselte und signierte E-Mail.
+Sie sollten von Ihrem Partner ebenfalls eine entsprechende E-Mail erhalten.
+
+<nodisp>
+** TODO **
+Für 2025 überarbeiten auf ed25519-Algorithmus.
+Auch für den Abschlusstest muss ein entsprechender Schlüssel eingesetzt werden.
+</nodisp>
+
+----
+{{tag>m114-A0G}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

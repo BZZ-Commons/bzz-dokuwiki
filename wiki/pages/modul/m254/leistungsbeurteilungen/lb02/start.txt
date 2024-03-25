@@ -1,0 +1,20 @@
+====== LB02: Projektauftrag Digitaler Impfausweis ======
+===== Einleitung =====
+Die zweite Leistungsbeurteilung im Modul 254 besteht darin ein Prototyp zu einem Geschäftsprozess zu erstellen, diesen zu dokumentieren und zu präsentieren. Dieser Prototyp muss in BPMN 2.0 modelliert werden. Die Präsentation erfolgt anhand eines Video-Pitches von 4-5 Minuten.
+
+===== Ausgangslage =====
+Seit der Corona-Pandemie wissen wir, wie wichtig Geschäftsprozesse sind, weil sie einen schnellen und effektiven Umgang mit Herausforderungen aller Art garantieren. Obwohl wir dies alles wissen, handeln wir oft irrational und verwechseln Wichtiges mit Dringendem. Es verwundert daher nicht, dass zwischenzeitlich der digitale Impfausweis in den Hintergrund gerückt ist. Obwohl wir im digitalen Zeitalter leben, wird unser Impfmanagement immer noch analog, sprich auf Papier. Dies hat zur Folge, dass Management von Impfungen wenig transparent, lückenhaft und teuer ist. Die Plattform meineimpungen.ch hat versucht einen digitalen Impfausweis anzubieten ist jedoch an [[https://www.srf.ch/news/schweiz/debakel-bei-meineimpfungen-ch-aargau-rettet-300-000-impfdaten-die-daten-sind-sehr-wertvoll#:~:text=Die%20Plattform%20meineimpfungen.ch%20wurde,der%20Kanton%20Aargau%20nun%20mit.|Datenschutz und Datensicherheit]] gescheitert. Wir versuchen nun den Geschäftsprozess für das digitale Impfmanagement zu definieren.
+
+===== Auftrag =====
+Erstellen Sie ein Geschäftsprozess einer Applikation für einen digitalen Impfausweises. Die Applikation soll
+  * Den Terminfindungsprozess bis zur Impfung, (Ich kann einen Termin für eine Impfung erstellen)
+  * die Impfung beim Arzt selbst und (der Arzt weiss welche Impfung ich brauche und kann den Vollzug der Impung in der Applikation eintragen)
+  * die Impfzertifikate (Ich als Geimpfter weiss jederzeit ob meine Impfungen noch aktuell sind, oder eine Auffrischung brauche)
+managen können. 
+
+===== Rahmenbedingungen =====
+  * Gruppengrösse von 4 Personen
+  * Die Abgabe des Videos erfolgt als //nicht gelistetes// Video auf Youtube, der Link zum Video ist auf Moodle abzugeben.
+
+===== Bewertungsraster =====
+https://miro.com/app/board/uXjVKc3Cjm0=/?share_link_id=964918634432

@@ -1,0 +1,23 @@
+====== LU07.A01 - Eigenes Zertifikat erstellen ======
+===== Self signed Certificate. =====
+
+
+<WRAP center round tip 60%>
+Für diese Übungen brauchen Sie einen (virtuellen) Computer mit einem Linux Betriebssystem, zum Beispiel Ubuntu Server.
+Andere Betriebssysteme/Versionen brauchen teilweise leicht andere Befehle.
+</WRAP>
+
+
+
+Mit dieser Übung erstellen Sie ein eigenes Zertifikat, welches Sie auch selber beglaubigen (Certificate Authority).
+Dieses Zertifikat können wir z.B. in einem Webserver einsetzen.
+Da keine offizielle Stelle dieses Zertifikat beglaubigt hat, wird der Browser eine Warnung anzeigen.
+Zum Üben reicht es aber völlig aus.
+
+
+
+===== Webserver mit eigenem Zertifikat =====
+
+Folgen Sie der Anleitung unter [[https://www.digitalocean.com/community/tutorials/how-to-create-a-self-signed-ssl-certificate-for-apache-in-ubuntu-22-04]].
+
+
