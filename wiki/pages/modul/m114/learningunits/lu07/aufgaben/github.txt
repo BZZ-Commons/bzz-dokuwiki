@@ -1,0 +1,8 @@
+====== LU07.A02 - Github mit SSH und signierten Commits ======
+
+Arbeiten Sie sich durch die Tutorials [[https://docs.github.com/de/authentication/connecting-to-github-with-ssh|SSH für Commits]] und [[https://docs.github.com/de/authentication/managing-commit-signature-verification|Signieren von Commits]] durch. 
+
+Um die LU07 zu bestehen, zeigen Sie ihrer Lehrperson wie Sie:
+  - bei Github ihren Public Key hinterlegt haben,
+  - ein Repository via SSH Clonen,
+  - einen Commit signieren und diesen via SSH pushen.
