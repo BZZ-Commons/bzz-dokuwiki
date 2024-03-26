@@ -1,0 +1,20 @@
+====== LU10b - Verteilte Datenbanken ======
+
+Für verteilte Datenhaltung gibt es eine Reihe von Datenbankmanagementsystemen (DBMS), die speziell für die Anforderungen verteilter Systeme entwickelt wurden oder Funktionen bieten, die eine verteilte Datenhaltung unterstützen. 
+Diese DBMS bieten Funktionen und Mechanismen zur Bewältigung der Herausforderungen der verteilten Datenhaltung und sind für den Einsatz in Cloud- und verteilten Umgebungen optimiert. 
+Die Wahl des geeigneten DBMS hängt von den spezifischen Anforderungen, der Skalierbarkeit, der Konsistenzanforderungen und anderen Faktoren Ihrer Anwendung ab.
+Hier sind einige der bekanntesten DBMS, die sich für verteilte Datenhaltung eignen:
+
+  * [[https://cassandra.apache.org/_/index.html|Apache Cassandra]]: Cassandra ist eine hochskalierbare, dezentrale NoSQL-Datenbank, die speziell für die Handhabung grosser Datenmengen und verteilte Architekturen entwickelt wurde. Sie bietet eine hohe Verfügbarkeit, Toleranz gegenüber Ausfällen und lineare Skalierbarkeit.
+  * [[https://www.mongodb.com/|MongoDB]]: MongoDB ist eine NoSQL-Datenbank, die für ihre flexible Datenmodellierung und Skalierbarkeit bekannt ist. Es bietet Funktionen für die verteilte Datenhaltung, einschliesslich Replikation und Sharding.
+  * [[https://hbase.apache.org/|Apache HBase]]: HBase ist eine verteilte, spaltenorientierte NoSQL-Datenbank, die auf Apache Hadoop aufbaut. Sie ist für ihre schnellen Lese- und Schreibzugriffe auf grosse Datenmengen bekannt und bietet eine horizontale Skalierbarkeit.
+  * [[https://aws.amazon.com/dynamodb/|Amazon DynamoDB]]: DynamoDB ist ein verwalteter NoSQL-Datenbankservice von Amazon Web Services (AWS), der eine vollständig verwaltete, hochverfügbare und skalierbare Datenbanklösung für verteilte Anwendungen bietet.
+  * [[https://cloud.google.com/bigtable|Google Cloud Bigtable]]: Bigtable ist ein verwalteter NoSQL-Datenspeicher von Google Cloud, der für seine hohe Leistung und Skalierbarkeit bekannt ist. Es eignet sich gut für Anwendungen mit grossen Datenmengen und erfordert keine Verwaltung von Infrastruktur.
+  * [[https://couchdb.apache.org/|Apache CouchDB]]: CouchDB ist eine dokumentenorientierte NoSQL-Datenbank, die eine verteilte Architektur unterstützt. Sie bietet eine flexible JSON-Dokumentmodellierung und eine synchrone Replikation für hohe Verfügbarkeit.
+  * [[https://azure.microsoft.com/en-us/products/cosmos-db|Microsoft Azure Cosmos DB]]: Cosmos DB ist ein weltweit verteiltes, mehrmodelliges Datenbanksystem von Microsoft Azure. Es unterstützt verschiedene Datenmodelle wie Dokumente, Tabellen, Schlüssel-Wert-Paare und Grafen und bietet globale Verteilung und horizontale Skalierbarkeit.
+
+
+
+----
+{{tag>M321-LU10}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

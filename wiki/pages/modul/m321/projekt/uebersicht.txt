@@ -51,7 +51,7 @@ Mögliche Bewegungen sind:
   * An der Stelle bleiben: H (Hold)
 
 ===== Regeln =====
-  * Läuft eine Ameise in ein Feld mit Wasser oder einem fremden Ameisenhügel, so ist sie verloren.
+  * Läuft eine Ameise in ein Feld mit Wasser, so ist sie verloren.
   * Befinden sich Ameisen von unterschiedlichen Völkern auf dem gleichen Feld, so kommt es zum Kampf. 
     * Jedes Volk verliert solange je eine Ameise, bis nur noch Ameisen von einem Volk auf dem Feld sind. Haben alle Völker gleich viele Ameisen auf dem Feld, sind am Schluss alle Ameisen weg.
     * Nach dem Kampf liegen 10 Nahrung auf dem Feld.

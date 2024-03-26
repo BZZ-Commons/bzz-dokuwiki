@@ -1,0 +1,25 @@
+====== LU10.A01 - Verteilte DBMS untersuchen ======
+<WRAP center round todo 60%>
+Untersuche ein verteiltes DBMS hinsichtlich verschiedener Kriterien
+</WRAP>
+
+Das Ziel dieser Aufgabe ist es, verschiedene verteilte DBMS zu vergleichen.
+Jede Gruppe untersucht ein DBMS und wir tragen die Resultate als Klasse zusammen.
+
+===== Auftrag =====
+Untersucht das euch zugeteilte DBMS anhand der folgenden Kriterien:
+
+=== Lizenzmodell === 
+Unter welchem Modell wird das DBMS lizensiert?
+Welche Auswirkungen hat dieses Lizenzmodell auf euer Projekt?
+
+=== Replikation und/oder Partitionierung ===
+Unterstützt das DBMS die Replikation oder die Partitionierung der Daten?
+Werden sogar beide Möglichkeiten unterstützt?
+
+=== Integrität und Konsistenz ===
+Welche Mechanismen bietet das DBMS um Integrität und Konsistenz sicherzustellen?
+
+----
+{{tag>M321-LU10}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter
