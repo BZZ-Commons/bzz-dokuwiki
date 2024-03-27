@@ -90,7 +90,6 @@ Keine
 
 === Returnwert ===
 Ein zweidimensionales Array (list) mit den Feldern der Karte.
-Ein JSON-Array mit den Zuständen der Felder.
 Jedes Feld kann einen dieser Zustände haben:
   * **water**: Das Wasser bildet eine natürliche Barriere, die deine Ameisen nicht überwinden können. 
   * **hill //COLOR//**: Der Ameisenhügel eines anderen Volks.
