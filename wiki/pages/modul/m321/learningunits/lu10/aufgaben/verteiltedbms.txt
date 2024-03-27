@@ -5,6 +5,14 @@ Untersuche ein verteiltes DBMS hinsichtlich verschiedener Kriterien
 
 Das Ziel dieser Aufgabe ist es, verschiedene verteilte DBMS zu vergleichen.
 Jede Gruppe untersucht ein DBMS und wir tragen die Resultate als Klasse zusammen.
+===== Projekt =====
+Ihr Team will eine weltweite Plattform zum Verkaufen virtueller Inhalte aufbauen.
+Dazu werdet ihr in verschiedenen Ländern Server betreiben.
+Das Mengengerüst für das Projekt sieht vor:
+  * 10 TB Datenspeicher
+  * 1 Million Lese-Zugriffe pro Tag
+  * 100'000 Datensätze werden täglich geändert bzw. hinzugefügt
+
 
 ===== Auftrag =====
 Untersucht das euch zugeteilte DBMS anhand der folgenden Kriterien:
@@ -12,6 +20,9 @@ Untersucht das euch zugeteilte DBMS anhand der folgenden Kriterien:
 === Lizenzmodell === 
 Unter welchem Modell wird das DBMS lizensiert?
 Welche Auswirkungen hat dieses Lizenzmodell auf euer Projekt?
+
+=== Mengengerüst ===
+Welche Angaben bzw. Erfahrungen gibt es bei eurem DBMS mit den Datenmengen und Anzahl Zugriffe?
 
 === Replikation und/oder Partitionierung ===
 Unterstützt das DBMS die Replikation oder die Partitionierung der Daten?
