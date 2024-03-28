@@ -43,12 +43,12 @@ Betrachten wir die Verschlüsselung an einem einzelnen Buchstaben:
   * Der Buchstabe im Schlüssel: "S"
 
 Wir addieren den Zahlenwert der beiden Buchstaben:
-  * **G** und **S** ergibt **X** 
+  * **G** und **S** ergibt **Z** 
 <code>
    7 (G)
-+ 17 (S)
++ 19 (S)
 ---------
-  24 (X)
+  26 (Z)
 </code>
 
 Falls die Summe grösser als 26 ist, so subtrahieren wir 26.
