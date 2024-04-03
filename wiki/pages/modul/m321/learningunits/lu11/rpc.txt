@@ -1,0 +1,37 @@
+====== LU11f - Remote Procedure Call (RPC) ======
+<WRAP center round info 60%>
+RPC (Remote Procedure Call) ist ein Protokoll, das es einem Programm ermöglicht, eine Prozedur oder Funktion auf einem entfernten System auszuführen, als ob sie lokal aufgerufen würde. Es ermöglicht die Interprozesskommunikation über ein Netzwerk.
+</WRAP>
+
+Durch diesen Prozess ermöglicht RPC eine transparente Kommunikation zwischen entfernten Programmen über das Netzwerk, wobei die Details der Netzwerkkommunikation und Serialisierung von Daten weitgehend hinter den Kulissen verborgen bleiben. Dies erleichtert die Entwicklung verteilter Anwendungen, da Entwickler Remote-Funktionen aufrufen können, ohne sich um die Details der Netzwerkkommunikation kümmern zu müssen.
+
+=====     Client-Seite =====
+
+Ein Clientprogramm ruft eine Remote-Prozedur auf, als ob sie lokal verfügbar wäre. 
+Dies geschieht durch einen normalen Funktionsaufruf im Quellcode des Clientprogramms.
+Der Clientcode übergibt Parameter an die Remote-Prozedur, die aufgerufen werden soll.
+
+====     RPC-Stub ====
+Um den Aufruf einer Remote-Prozedur zu ermöglichen, verwendet der Compiler des Clientprogramms eine sogenannte RPC-Stub- oder Proxy-Funktion.
+Diese Stub-Funktion verpackt die Informationen über den Funktionsaufruf und die übergebenen Parameter in ein Netzwerkformat, das für die Übertragung über das Netzwerk geeignet ist.
+Der Stub sendet dann die verpackte Nachricht über das Netzwerk an den Server.
+
+====     Netzwerkübertragung ====
+Die verpackte RPC-Nachricht wird über das Netzwerk an den RPC-Server gesendet. Dies geschieht normalerweise über TCP/IP oder UDP/IP, wobei TCP/IP aufgrund seiner Zuverlässigkeit häufiger verwendet wird.
+
+=====     Server-Seite =====
+Der RPC-Server empfängt die RPC-Nachricht.
+Der Server verwendet einen sogenannten Dispatcher, um die empfangene Nachricht zu interpretieren und die entsprechende Remote-Prozedur aufzurufen.
+Die Serverseite führt die angeforderte Prozedur mit den übergebenen Parametern aus und generiert ein Ergebnis.
+
+====     Antwort an den Client ====
+Das Ergebnis der Prozedur auf der Serverseite wird in eine Antwort-Nachricht verpackt.
+Die Antwortnachricht wird über das Netzwerk an den Client gesendet.
+
+====     Client empfängt Ergebnis ====
+Der Client empfängt die Antwort-Nachricht über das Netzwerk.
+Die RPC-Stub-Funktion des Clients dekodiert die Antwort und gibt das Ergebnis an die ursprünglich aufgerufene Stelle im Clientprogramm zurück.
+
+----
+{{tag>M321-LU11}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

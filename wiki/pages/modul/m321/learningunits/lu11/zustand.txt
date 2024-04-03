@@ -1,0 +1,23 @@
+====== LU11b - Zustandsorientierte und zustandslose Protokolle ======
+<WRAP center round info 60%>
+Zustandsorientierte und zustandslose Protokolle sind zwei grundlegende Arten von Kommunikationsprotokollen, die in der Informationstechnologie verwendet werden. Der Hauptunterschied zwischen ihnen liegt in der Art und Weise, wie sie den Zustand oder die Informationen über den Kommunikationsvorgang behandeln.
+</WRAP>
+
+Zustandsorientierte Protokolle sind oft nützlich, wenn eine fortlaufende Interaktion zwischen den Parteien erforderlich ist und der Kommunikationsverlauf komplex sein kann. Zustandslose Protokolle hingegen sind einfacher zu implementieren und skalieren gut, sind jedoch möglicherweise nicht für Anwendungen geeignet, die eine fortlaufende Sitzung oder Transaktionskonsistenz erfordern. Die Wahl zwischen zustandsorientierten und zustandslosen Protokollen hängt von den Anforderungen der spezifischen Anwendung ab.
+
+===== Zustandsorientierte Protokolle =====
+Zustandsorientierte Protokolle speichern Informationen über den Kommunikationsverlauf zwischen den beteiligten Parteien.
+Sie verfolgen den Zustand der Kommunikation, indem sie Informationen über vorherige Nachrichten, Sitzungsvariablen und andere relevante Daten speichern.
+Dies ermöglicht eine fortlaufende Interaktion zwischen den Parteien, bei der jede Nachricht im Kontext des aktuellen Kommunikationszustands interpretiert wird.
+Ein Beispiel für ein zustandsorientiertes Protokoll ist das Transmission Control Protocol (TCP) in der TCP/IP-Suite. TCP speichert den Verbindungszustand zwischen Client und Server und sorgt für eine zuverlässige und sequenzielle Übertragung von Daten.
+
+===== Zustandslose Protokolle =====
+
+Zustandslose Protokolle behandeln jede Kommunikationsanfrage unabhängig voneinander, ohne den Kontext oder den Zustand vorheriger Anfragen zu berücksichtigen.
+Sie speichern keine Informationen über vorherige Kommunikationssitzungen oder -nachrichten.
+Jede Anfrage wird isoliert behandelt, ohne dass der Server sich an vorherige Anfragen erinnern muss.
+Ein Beispiel für ein zustandsloses Protokoll ist das Hypertext Transfer Protocol (HTTP). Jede HTTP-Anfrage (z. B. das Abrufen einer Webseite) enthält alle erforderlichen Informationen für den Server, um die Anfrage zu verstehen und zu bearbeiten. Der Server speichert keine Informationen über vorherige Anfragen des Clients und bearbeitet jede Anfrage unabhängig voneinander.
+
+----
+{{tag>M321-LU11}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

@@ -1,0 +1,29 @@
+====== LU11e - Advanced Message Queuing Protocoll (AMQP) ======
+
+<WRAP center round info 60%>
+AMQP (Advanced Message Queuing Protocol) ist ein offenes, standardisiertes Netzwerkprotokoll, das für die Nachrichtenübertragung zwischen verschiedenen Systemen entwickelt wurde. Es wurde entwickelt, um die Interoperabilität und den Austausch von Nachrichten zwischen verschiedenen Anwendungen, Diensten und Plattformen in verteilten Systemen zu erleichtern. 
+</WRAP>
+
+AMQP wird in einer Vielzahl von Anwendungen und Branchen eingesetzt, einschließlich Messaging-Systemen, IoT (Internet der Dinge), Finanzdienstleistungen und Cloud Computing.
+
+====     Nachrichtenorientiert ====
+AMQP ist ein nachrichtenorientiertes Protokoll, das darauf abzielt, den zuverlässigen Austausch von Nachrichten zwischen verschiedenen Komponenten eines verteilten Systems zu ermöglichen. Es bietet Mechanismen zum Senden, Empfangen und Verarbeiten von Nachrichten.
+
+====     Nachrichtenwarteschlangen ====
+Eine zentrale Komponente von AMQP ist die Nachrichtenwarteschlange (Message Queue), die als Puffer für Nachrichten dient. Sender senden Nachrichten an die Warteschlange, und Empfänger können diese Nachrichten dann von der Warteschlange abrufen und verarbeiten. Dies ermöglicht die asynchrone Kommunikation zwischen den Komponenten eines Systems.
+
+====     Routing und Routing-Schlüssel ====
+: AMQP unterstützt flexible Routing-Mechanismen, die es ermöglichen, Nachrichten basierend auf Routing-Schlüsseln an bestimmte Warteschlangen oder Empfänger zu senden. Dies ermöglicht eine effiziente und gezielte Nachrichtenverteilung in verteilten Systemen.
+
+====     Zuverlässige Nachrichtenübermittlung ====
+AMQP bietet Mechanismen zur Gewährleistung der zuverlässigen Nachrichtenübermittlung, einschließlich Bestätigungen (Acknowledgements) und Transaktionen. Dies stellt sicher, dass Nachrichten nicht verloren gehen und dass die Nachrichtenverarbeitung ordnungsgemäß abgeschlossen wird.
+
+====     Interoperabilität ====
+AMQP wurde entwickelt, um Interoperabilität zwischen verschiedenen Systemen und Anwendungen zu fördern. Es ist ein offenes Protokoll, das von einer Vielzahl von Anbietern und Implementierungen unterstützt wird, was die Integration und Kommunikation zwischen heterogenen Systemen erleichtert.
+
+====     Sicherheit ====
+AMQP unterstützt verschiedene Sicherheitsmechanismen wie Authentifizierung, Autorisierung und Verschlüsselung, um die Sicherheit der übertragenen Nachrichten zu gewährleisten und den Zugriff auf die Nachrichtenwarteschlangen zu steuern.
+
+----
+{{tag>M321-LU11}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

@@ -1,0 +1,32 @@
+====== LU11d - TCP und UDP ======
+<WRAP center round info 60%>
+TCP (Transmission Control Protocol) und UDP (User Datagram Protocol) sind zwei der wichtigsten Transportprotokolle, die in Netzwerken verwendet werden.
+</WRAP>
+
+===== TCP (Transmission Control Protocol) =====
+  * Verbindungsorientiert: TCP ist verbindungsorientiert, was bedeutet, dass vor der Datenübertragung eine Verbindung zwischen Sender und Empfänger hergestellt wird. Diese Verbindung bleibt während der gesamten Kommunikation aktiv, bis sie explizit vom Sender oder Empfänger beendet wird.
+
+  * Zuverlässige Datenübertragung: TCP garantiert eine zuverlässige Datenübertragung, indem es Mechanismen wie Sequenznummern, Bestätigungen, erneute Übertragungen und Flusskontrolle verwendet. Dadurch werden verlorene oder beschädigte Datenpakete erkannt und erneut übertragen, um sicherzustellen, dass die Daten korrekt empfangen werden.
+
+  * Flusskontrolle: TCP verwendet Mechanismen zur Flusskontrolle, um sicherzustellen, dass der Sender nicht zu viele Daten auf einmal an den Empfänger sendet, was zu Überlastungen führen könnte. Dies geschieht durch den Austausch von Fenstergrößen zwischen Sender und Empfänger.
+
+  * Daten werden in Reihenfolge geliefert: TCP stellt sicher, dass die Datenpakete in der Reihenfolge, in der sie gesendet wurden, an den Empfänger geliefert werden. Dadurch wird eine konsistente Datenreihenfolge auf der Empfängerseite sichergestellt.
+
+  * Verwendet ACKs (Acknowledgements): TCP verwendet Bestätigungsnachrichten (ACKs), um den Empfang von Datenpaketen zu bestätigen. Dies ermöglicht es dem Sender, zuverlässig zu erkennen, welche Datenpakete erfolgreich übertragen wurden und welche erneut gesendet werden müssen.
+
+===== UDP (User Datagram Protocol) =====
+
+
+  * Verbindungslos: UDP ist verbindungslos, was bedeutet, dass keine vorherige Verbindung zwischen Sender und Empfänger hergestellt wird. Jedes Datenpaket wird unabhängig voneinander gesendet, ohne dass eine Verbindung aufrechterhalten wird.
+
+  * Unzuverlässige Datenübertragung: UDP bietet keine Garantien für eine zuverlässige Datenübertragung. Es gibt keine Mechanismen zur Bestätigung des Empfangs von Datenpaketen oder zur erneuten Übertragung verlorener Pakete. Daher kann es zu Paketverlusten oder Duplikaten kommen.
+
+  * Geringer Overhead: Im Vergleich zu TCP hat UDP einen geringeren Overhead, da es keine Mechanismen wie Sequenznummern, ACKs oder Flusskontrolle verwendet. Dies macht UDP effizienter für Anwendungen, bei denen eine geringe Latenz wichtiger ist als die Zuverlässigkeit der Datenübertragung.
+
+  * Schnelle Übertragung: Da UDP verbindungslos ist und keinen Handshake erfordert, können Datenpakete schnell gesendet werden, ohne auf eine Verbindungsherstellung zu warten. Dies macht UDP gut geeignet für Anwendungen, die Echtzeitkommunikation erfordern, wie z.B. Videostreaming oder Online-Spiele.
+
+  * Multicast und Broadcast: UDP unterstützt Multicast- und Broadcast-Kommunikation, was es ermöglicht, Datenpakete an mehrere Empfänger gleichzeitig zu senden. Dies ist nützlich für Anwendungen wie Video- oder Audio-Streaming in einem Netzwerk.
+
+----
+{{tag>M321-LU11}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

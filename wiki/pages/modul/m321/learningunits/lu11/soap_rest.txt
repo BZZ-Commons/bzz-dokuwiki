@@ -1,0 +1,43 @@
+====== LU11c - SOAP und REST ======
+<WRAP center round info 60%>
+**SOAP** (Simple Object Access Protocol) und **REST** (Representational State Transfer): Diese sind Protokolle für den Austausch strukturierter Informationen über ein Netzwerk. Sie werden häufig für Webdienste verwendet, um Daten zwischen Client und Server auszutauschen.
+</WRAP>
+
+Die Wahl zwischen SOAP und REST hängt von den spezifischen Anforderungen und Eigenschaften des zu entwickelnden Systems ab. SOAP eignet sich gut für komplexe Unternehmensanwendungen, bei denen Sicherheit und Zuverlässigkeit von entscheidender Bedeutung sind, während REST oft bevorzugt wird für Webanwendungen, die auf Einfachheit, Leichtgewicht und Skalierbarkeit setzen.
+
+===== SOAP (Simple Object Access Protocol) =====
+==== Strukturierte Nachrichten ====
+SOAP verwendet XML (Extensible Markup Language) als Format für die Nachrichtenübertragung. 
+Dadurch sind die Nachrichten gut strukturiert und können komplexe Datenstrukturen abbilden.
+
+==== Formale Spezifikation ====
+
+SOAP bietet eine formale Spezifikation für die Definition von Nachrichtenformaten, Servicebeschreibungen und Protokollen. 
+Dies fördert Interoperabilität zwischen verschiedenen Systemen und Plattformen.
+
+==== Unterstützung für Sicherheit und Zuverlässigkeit ====
+SOAP unterstützt erweiterte Sicherheits- und Zuverlässigkeitsfunktionen wie WS-Security und WS-ReliableMessaging, die eine sichere und zuverlässige Kommunikation zwischen Client und Server ermöglichen.
+
+==== Standardisierung ====
+SOAP wird durch verschiedene Standards wie WSDL (Web Services Description Language) für die Servicebeschreibung und UDDI (Universal Description, Discovery, and Integration) für die Dienstverwaltung unterstützt.
+
+===== REST (Representational State Transfer) =====
+==== Ressourcenorientiert ====
+REST basiert auf dem Konzept von Ressourcen, die durch eindeutige URIs (Uniform Resource Identifiers) identifiziert werden. 
+Diese Ressourcen können in verschiedenen Repräsentationen (z. B. JSON, XML) dargestellt und manipuliert werden.
+
+==== Zustandslosigkeit ====
+RESTful-Services sind zustandslos, was bedeutet, dass jede Anfrage von einem Client alle erforderlichen Informationen für die Serververarbeitung enthält. Der Server speichert keinen Zustand über den Client zwischen den Anfragen.
+
+==== Leichtgewichtig und einfach zu verwenden ====
+REST nutzt vorhandene Protokolle wie HTTP und standardisierte Methoden wie GET, POST, PUT und DELETE für die Kommunikation zwischen Client und Server. 
+Dadurch ist es leichtgewichtiger und einfacher zu verwenden als SOAP.
+
+==== Skalierbarkeit und Performance ====
+Aufgrund seiner zustandslosen Natur und der Verwendung von einfachen HTTP-Anfragemethoden ist REST in der Regel skalierbarer und bietet eine bessere Performance für verteilte Systeme.
+
+
+
+----
+{{tag>M321-LU11}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter
