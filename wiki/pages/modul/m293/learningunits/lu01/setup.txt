@@ -21,11 +21,10 @@ Richten Sie dazu Ihr GitHub-Benutzerkonto in Webstorm ein.
   - Öffnen Sie in Webstorm ''File'' => ''Settings''.
   - Suchen Sie die Einstellung für ''GitHub''.
   - Falls noch kein Benutzerkonto verbunden ist,
-    - Wählen Sie "Add account ..."
-    - ''Login via GitHub ...'' \\ => Im Webbrowser öffnet sich ein neuer Tab.
-    - Klicken Sie auf ''[Authorize]''
-    - Evtl. erscheint ein weiterer Schritt ''Single sign-on to you organization'', klicken Sie hier ebenfalls auf ''[Authorize]'' und melden Sie sich mit Ihrem BZZ-Benutzerkonto an.
-    - Zum Schluss sollte eine Bestätigung erscheinen: "You have been successfully authorized in GitHub".
+    - Wählen Sie ''Add account''
+    - Wählen Sie ''Login with token ...'' \\ Falls Sie noch kein Token für Webstorm erstellt haben, wählen Sie ''[Generate ...]'' um ein neues Token zu generieren.
+    - Tragen Sie das Token in Webstorm ein und klicken Sie auf ''[add account]''.
+    - Zum Schluss sollte Ihr GitHub-Benutzer angezeigt werden.
 
 ==== Wichtige Menus ====
 <WRAP center round info 60%>

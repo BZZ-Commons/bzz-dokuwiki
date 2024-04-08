@@ -1,0 +1,114 @@
+====== LU02b - Cascading Style Sheets (CSS) ======
+
+===== Basistechnologien einer einfachen Webseite =====
+Um eine Webseite aufzubereiten, wird HTML, Mediadateien (Bilder oder Videos), Skripte (z.B. JavaScript, PHP) und CSS (Stylen/Layouten/Animationen) verwendet. 
+Alle diese Basistechnologien zusammen erlauben moderne Webseite im Webbrowser darzustellen.
+
+{{:modul:m293:learningunits:lu12:basis_tech.png?200|}}
+
+Die Hauptrolle von **CSS** (oder Stylesheets) bei der Erstellung von Webseiten ist das **Erscheinungsbild**. 
+Mit CSS werden **Regeln** erstellt, wie der Inhalt eines HTML-Elements dargestellt werden soll. 
+An dieser Stelle macht es sich bezahlt, wenn Sie **semantisch sinnvoll** die einzelnen HTML-Elemente im HTML-Dokument notiert haben.
+CSS unterstützt die Trennung von Struktur und Gestaltung eines Dokuments. 
+Im Idealfall werden die präsentierenden Aspekte komplett vom Inhalt der Webseite getrennt. Dies bedeutet:
+  * HTML definiert die Bedeutung bzw. Semantik des Inhalts.
+  * CSS definiert die Darstellung des Inhalts.
+
+Diese Bedeutung wird nachfolgend illustriert:
+
+{{:modul:m293:learningunits:lu12:seite_mit_css_final.png?500|}}
+
+===== Aufbau eines Selektors in CSS =====
+Nachfolgend wird nur der allgemeine Aufbau der CSS-Regel dargelegt. 
+Die unterschiedlichen Typen von Selektoren werden separat behandelt.
+Eine CSS-Regel setzt sich aus einem **Selektor** und einer **Deklaration** zusammen:
+
+==== Selektoren ====
+Mit dem Selektor wird das HTML-Element angegeben, auf das die CSS-Regel angewendet werden soll. 
+Es ist auch möglich, eine Regel auf mehrere HTML-Elemente anzuwenden, wobei die einzelnen HTML-Elemente durch Kommata voneinander getrennt sind.
+
+=== Beispiel ===
+Hiermit wird die CSS-Regel, dass die Schriftfarbe (engl. color) blau (engl. blue) ist, für die HTML-Elemente h1, h2, h3 und p gleichzeitig festgelegt.
+
+<code css>
+h1, h2, h3, p { color: blue; }
+</code>
+
+==== Deklarationen ====
+Mit der oder den Deklaration(en) legen Sie fest, wie Sie die mit dem Selektor ausgewählten HTML-Elemente formatieren wollen. 
+Die Deklaration selbst besteht ebenfalls aus zwei Teilen, und zwar einer Eigenschaft und einem Wert. Die Eigenschaft wird vom Wert durch einen Doppelpunkt getrennt.
+
+{{:modul:m293:learningunits:lu12:css_dekla.png?200|}}
+
+===== Deklaration eines Selektors =====
+Die Deklaration **innerhalb der geschweiften Klammern** einer CSS-Regel besteht immer aus mindestens **einer Eigenschaft und einem Wert**, wobei zwischen der Eigenschaft und dem Wert ein Doppelpunkt verwendet wird. Mit einem **Semikolon** werden mehrere Eigenschaft/Wert-Paare getrennt angegeben:
+
+<code css>
+h1 {
+  font-family: "Arial";
+  color: red;
+  text-align: center;
+}
+h2, h3 {
+  font-family: "Courier";
+  color: blue;
+}
+</code>
+
+===== Kommentare für CSS-Code verwenden =====
+Kommentare werden mit ''/∗ ∗/'' gesetzt. Alles was dazwischen steht (auch Zeilenumbrüche), wird vom Webbrowser ignoriert.
+
+<code css>
+/* Erzeugt einen Kreis */
+/* Achtung! Funktioniert nicht mit IE8 oder älter */ 
+.circle {
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+}
+</code>
+Sinnvoll sind solche Kommentare auch, wenn Sie Ihre Stylesheets in einzelne Bereiche aufteilen, um sich damit schneller im CSS-Code orientieren zu können.
+
+<code css>
+/*------------------------------------*/ 
+/* Kopf- und Fußbereich */ 
+/*------------------------------------*/ 
+...
+CSS-Anweisungen für Kopf- und Fußbereich 
+... 
+/*------------------------------------*/ 
+/* Inhalt */ 
+/*------------------------------------*/ 
+...
+CSS-Anweisungen für den Hauptinhalt
+...
+</code>
+
+
+===== Formatierung des Quellcodes =====
+Die Formatierung von CSS-Code wird grundsätzlich im Team oder vom Entwicklungsleiter festgelegt, damit auch der CSS-Code einheitlich formattiert wird und sich andere Entwickler (z.B. wenn Sie in den Ferien weilen) schnell in Ihrem Code zurecht finden.
+
+=== Schlechtes Beispiel ===
+<code css>
+/* In Ordnung, aber sehr unübersichtlich */
+h2,h3{font-family:"Courier";color:blue;text-align:center;}
+</code>
+=== Gutes Beispiel ===
+<code css>
+/* Viel besser lesbar */
+h2, h3 {
+   font-family:"Courier";
+   color:blue;
+   text-align:center;
+}
+</code>
+Bei CSS-Regeln mit nur einer Deklaration hingegen könnten Sie alles in eine Zeile notieren:
+<code css>
+h1 { color: blue; }
+</code>
+
+
+----
+{{tag>m293-LU02 m293-G2G m293-G2F}}
+Nach [[http://ict.bzzlab.ch|Daniel Garavaldi]] 
+

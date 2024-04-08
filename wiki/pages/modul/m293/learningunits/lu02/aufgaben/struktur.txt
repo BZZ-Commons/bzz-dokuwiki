@@ -1,0 +1,17 @@
+====== LU02.A03 - Struktur bereinigen ======
+<WRAP center round info 60%>
+Ersetzen Sie in der vorgegebenen Webseite die Tags ''<div>'' und ''<p>'' durch ''<header>'', ''<footer>'', ''<nav>'', ''<main>'', ''<article>'' und ''<section>''.
+</WRAP>
+
+Die Tags ''<header>'', ''<footer>'', ''<nav>'', ''<main>'', ''<article>'' und ''<section>'' sind relativ neu im HTML-Standard.
+Früher standen nur die Tags ''<div>'' und ''<p>'' zur Verfügung, um die Inhalte unserer Webseite zu strukturieren.
+Diese beiden Tags wurden sowohl für die Struktur des Inhalts (Kapitel, Abschnitte) als zum Steuern der Darstellung benutzt.
+Für eine barrierefreie Webseite muss die Struktur des Inhalts mit den neueren Tags umgesetzt werden.
+
+===== Auftrag =====
+Die vorgegebene Webseite verwendet ausschliesslich ''<div>'' und ''<p>''.
+Überarbeiten Sie die Webseite indem Sie die neueren Tags ''<header>'', ''<footer>'', ''<nav>'', ''<main>'', ''<article>'' und ''<section>'' nutzen.
+
+----
+{{tag>m293-LU02}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Kevin Maurizi, Marcel Suter
