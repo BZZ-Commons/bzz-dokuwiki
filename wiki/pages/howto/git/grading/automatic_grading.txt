@@ -1,0 +1,82 @@
+====== Automatisierte Bewertung (ab August 2024) ======
+<WRAP center round info 60%>
+Eine Kombination von Worksflows, Skripts und eines Moodle-Plugins ermöglicht das automatisierte Bewerten von Aufgaben.
+</WRAP>
+
+===== Voraussetzungen =====
+==== GitHub Benutzername im Moodle-Profil ====
+
+Die Lernenden müssen Ihren GitHub-Benutzernamen in ihrem Moodle-Profil eintragen.
+Unter "GitHub Classroom" befindet sich das Feld "GitHub Benutzername".
+
+{{:howto:git:grading:classroom_moodle_user.png?400|}}
+
+===== Aufgabe erstellen =====
+==== Vorlage-Repository für die Aufgabe ====
+  - Öffne das Repositry [[https://github.com/BZZ-Commons/python-template]].
+  - Erstelle eine Kopie des Repositorys um alle benötigten Dateien zu erhalten:
+    * ''.github/workflows/autograding.yml''
+    * ''.github/autograding/unittest.json''
+    * ''.github/autograding/lint.json''
+  - Markiere im Menu "Settings" das Repository als Template.
+  - Passe die Konfigurationen für Unittests und Linter an.
+
+=== autograding.yml ===
+TODO
+
+=== unittest.json ===
+TODO
+
+=== lint.json ===
+TODO
+
+==== GitHub Classroom Assignment ====
+  - Erstelle ein neues Assignment in GitHub Classroom.
+    * Der Name des Assignments wird in Kleinbuchstaben und mit Bindestrichen geschrieben, z.B. ''m111-lu01-a02-exercise''
+    * Wähle das Vorlage-Repository aus dem letzten Abschnitt aus.
+
+==== Moodle-Aufgabe ====
+  - Erstelle eine neue Aktivität im Moodle-Kurs. Wähle "External Assignment" als Art der Aktivität.
+  - Trage die Angaben zum Classroom Assignment ein:
+    * Name: Der Name des Assignments, z.B. ''m111-lu01-a02-exercise''
+    * URL: Die URL zum Akzeptieren des Assignments für die Lernenden.
+    * Punkte
+      * Automatische Bewertung: Maximalpunkte aus den automatisierten Tests.
+      * Manuelle Bewertung: Maximalpunkte für allfällige manuelle Bewertungen.
+      * Bestehensgrenze: Wieviel Prozent der maximalen Punkte (automatisch + manuell) muss ein Lernender erreichen, dass die Aufgabe als erfüllt gewertet wird.
+
+<WRAP center round info 60%>
+Die Punktzahl aus dem Workflow wird anhand der Angabe in "Automatische Bewertung" skaliert.
+
+** Beispiel **
+
+  * Bewertung aus dem Workflow: 12 von 20 Punkten
+  * Maximum automatische Bewertung in Moodle: 100 Punkte
+  * **Resultat:** 60 Punkte (12 * 100 / 20)
+</WRAP>
+
+===== Technische Dokumentation =====
+==== Vorlage-Repository für die Aufgabe ====
+
+=== .github/workflows/autograding.yml ===
+Dieser Workflow steuert die automatisierte Verarbeitung bei jedem Push des Repositories.
+Er ruft den Workflow in [[https://github.com/BZZ-Commons/workflows/blob/main/.github/workflows/pygrader.yml]] auf.
+
+=== .github/autograding ===
+In diesem Ordner befinden sich die Konfigurationsdateien für die Bewertung.
+
+  * unittest.json: Test-Funktionen und Bewertung für die Unittests
+  * lint.json: Konfiguration des Linters.
+
+==== BZZ-Commons/workflows ====
+=== py_autograding.yml ===
+Dieser Workflow führt die Skripts zum Prüfen des Python-Sourcecodes aus, den der Lernende auf GitHub gepushed hat.
+
+  - Checkout des Repositories des Lernenden
+  - Checkout des Repositories [[https://github.com/BZZ-Commons/pygrader]] mit den Skripts für pytest und pylint.
+  - Ausführen der Tests
+  - Übermitteln der Resultate an Moodle.
+
+==== BZZ-Commons/pygrader ====
+Dieses Repository enthält die Skripts um pytest und pylint auszuführen.
+Die Skripts lesen die Konfigurationsdateien "unittest.json" und "lint.json" aus dem Repository des Lernenden.

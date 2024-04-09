@@ -1,0 +1,47 @@
+====== LU12.A01 - Logging einbauen ======
+<WRAP center round todo 60%>
+Ersetzte die ''print''-Ausgaben durch ein Logging in eine Datei.
+</WRAP>
+
+** [[https://classroom.github.com/a/HrtnpuI7|GitHub Classroom Assignment]]**
+===== Ausgangslage =====
+In der Applikation "m321-lu12-a01-logging" werden verschiedene Meldungen in der Konsole ausgegeben.
+Dies ist zwar für die Entwicklung praktisch, für einen produktiven Betrieb sollen aber die Meldungen in einer Log-Datei gesammelt werden.
+Ausserdem bietet es sich an, unterschiedliche Log-Level einzusetzen:
+=== DEBUG ===
+Meldungen die nur zur Fehlersuche dienen.
+Hier soll jede Funktion ihren Namen und die Parameterwerte anzeigen.
+
+=== INFO ===
+Informationen die im normalen Ablauf des Programms auftreten.
+Zum Beispiel welche Requests erhalten wurden und welche Response gesendet wurde.
+
+=== WARNING ===
+Unerwartete Situationen die von der Applikation gelöst werden können.
+Ein Beispiel wäre ein Timeout eines Requests, der einfach wiederholt werden kann.
+
+=== ERROR ===
+Eine Fehlersituation die nicht gelöst werden kann.
+Zum Beispiel ein Request kann nicht verarbeitet werden.
+
+=== CRITICAL ===
+Das Programm kann nicht weiter ausgeführt werden.
+
+
+===== Auftrag =====
+Die Applikation muss ihre Meldungen in einer Log-Datei speichern.
+Studiere dazu die Beschreibung des Pakets ''logging'' unter [[https://docs.python.org/3/howto/logging.html]].
+
+Die Einträge im Log-File müssen folgende Informationen enthalten:
+  * Datum / Uhrzeit YYYY-MM-DD HH:MM:SS
+  * Log-Level
+  * Name der Applikation
+  * Name der Funktion bzw. Methode
+  * Meldungstext
+
+
+==== .env ====
+Über die Environment-Datei ''.env'' sollen die Einstellungen für das Logging gesteuert werden:
+  * Pfad/Dateiname des Logfiles
+  * Log-Level
+

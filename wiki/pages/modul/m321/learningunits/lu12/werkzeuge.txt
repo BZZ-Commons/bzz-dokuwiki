@@ -1,7 +1,37 @@
 ====== LU12c - Werkzeuge ======
 <WRAP center round info 60%>
-info box
+Es gibt eine Unzahl von Werkzeugen zur Überwachung von Systemen.
+Manche überwachen nur einzelne Komponenten, andere können die Informationen aus verschiedenen Systemen zusammenführen.
 </WRAP>
+
+===== Wichtige Elemente =====
+Um ein verteiltes System als Ganzes zu überwachen, benötigen wir einige zentrale Elemente.
+Die Abbildungen stammen von [[https://www.nagios.org/]], einer Open Source Lösung und dienen nur zur Verdeutlichung.
+
+==== Dashboard ====
+Das Dashboard führt die wichtigsten Informationen zusammen und gibt uns einen Überblick über den Zustand des Systems.
+Dazu werden in der Regel die Informationen aus verschiedenen Teilsystemen zusammengeführt und in eine einheitliche Darstellung überführt.
+
+{{http://api.nagios.com/kb/assets/Support%20Training/Nagios%20Log%20Server/NagiosLogServer-DashboardSample.png}}
+
+Idealerweise gelangt man durch Anklicken einer Kategorie in die Detailansicht dieser Komponente.
+
+==== Probleme (Issues) ====
+Eine Liste aller Probleme und deren Status ist ebenfalls ein wichtiges Element.
+Dadurch sehen alle Mitarbeiter, welche Probleme offen, in Bearbeitung oder erledigt sind.
+
+{{https://cdn.networkmanagementsoftware.com/wp-content/uploads/Nagios-Core.jpg}}
+
+==== Alarmierung ====
+In grossen Firmen arbeitet das Team zur Überwachung der Systeme 7*24h.
+Bei vielen Betreibern von verteilten Systemen sind aber nicht rund um die Uhr Mitarbeiter an ihrem Arbeitsplatz.
+Stattdessen ist einer oder mehrere Mitarbeiter als Piket auf Abruf.
+In diesem Fall ist eine automatisierte Alarmierung der Piket-Mitarbeiter unabdingbar.
+Ein gutes Werkzeug sollte Optionen wie SMS, Messenger (Threema, Whatsapp, ...) und Email anbieten.
+
+===== Verschiedene Werkzeuge =====
+Unter [[https://www.linode.com/docs/guides/monitoring-software/#the-11-best-system-monitoring-applications]] finden Sie eine Liste von Werkzeugen.
+Zu jedem Werkzeug sind die wichtigsten Stichworte kurz erklärt.
 
 ----
 {{tag>M321-LU12}}

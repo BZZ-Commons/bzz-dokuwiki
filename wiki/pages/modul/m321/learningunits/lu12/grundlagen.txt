@@ -25,7 +25,7 @@ Insgesamt ist die Überwachung von verteilten Systemen ein unverzichtbarer Besta
 Durch den Einsatz geeigneter Überwachungswerkzeuge und -technologien können Organisationen potenzielle Risiken minimieren und eine reibungslose Betriebsabwicklung sicherstellen.
 
 ===== Komponenten =====
-//(Übersetzt von https://www.loggly.com/use-cases/distributed-systems-monitoring-the-essential-guide/))//
+//(Übersetzt von https://www.loggly.com/use-cases/distributed-systems-monitoring-the-essential-guide/)//
 ==== Hardware ====
 Die Hardware eines verteilten Systems kann in zwei Kategorien unterteilt werden: physisch und virtuell. Zur physischen Hardware gehören Server, Speicher- und Netzwerkgeräte. Virtuelle Hardware ist Software, die physische Hardware simuliert, einschließlich virtueller Maschinen und Cloud-Instanzen.
 
@@ -45,7 +45,9 @@ Die Software eines verteilten Systems kann in die folgenden Kategorien unterteil
   * **Datenbanken:** Eine Sammlung von Daten, auf die Anwendungen zugreifen können. Sie können in zwei Kategorien unterteilt werden: relationale und NoSQL-Datenbanken. Relationale Datenbanken sind traditionelle Datenbanken, die eine Tabellenstruktur zur Speicherung von Daten verwenden. NoSQL-Datenbanken sind neuere Datenbanken, die eine Vielzahl von Datenstrukturen, wie z. B. Schlüssel-Wert-Paare, zum Speichern von Daten verwenden.
 
 ===== Metriken =====
-//Quelle: https://thwack.solarwinds.com/groups/devops/b/blog/posts/the-four-golden-signals-for-monitoring-distributed-systems//
+
+//(Quelle: https://thwack.solarwinds.com/groups/devops/b/blog/posts/the-four-golden-signals-for-monitoring-distributed-systems)//
+
 ==== Latenz ====
 Als Latenz bezeichnet man die Zeit von Senden einer Anfrage (Request) bis zum Erhalten der Antwort (Response).
 Welche Latenz akzeptable ist, hängt von der Art der Kommunikation ab.
