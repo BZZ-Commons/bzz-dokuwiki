@@ -17,17 +17,23 @@
 </code>
 
 === 20 / (-5) ===
-Hier ist es einfacher 20 / 5 = 4 zu berechnen und danach das Resultat mit -1 zu multiplizieren.
+Hier ist es einfacher 20 / 5 = 4 zu berechnen und danach das Zweierkomplement zu bilden.
 <code>
-    0001 0100 / 1111 1011 = 1111 1100
+    0001 0100 / 0000 0101 = 0000 0100
+ -     1 01
+    --------
+          00
+    
+Zweierkomplement von 0000 0100 => 1111 1100
 </code>
 
 === (-124) / 7 ===
-Auch hier rechne ich 124 / 7 = 17 * -1 = -17
+Auch hier rechne ich 124 / 7 = 17
 <code>
-    1111 1000 0100 / 0111 = 1111 1110 1111
+    0111 1100 / 0000 0111 = 0001 0001
 </code>
 
+Zweierkomplement von 0000 0111 = 1110 1111
 
 
 ----
