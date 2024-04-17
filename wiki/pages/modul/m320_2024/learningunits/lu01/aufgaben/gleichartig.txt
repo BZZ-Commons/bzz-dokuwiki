@@ -1,0 +1,18 @@
+===== LU01.A03 - Zwei Arten von Klassen =====
+
+<WRAP center round todo 60%>
+Sie verstehen den Unterschied zwischen einer "Datenklasse" und einer "Standardklasse" in Python.
+</WRAP>
+
+=== Auftrag ===
+Suchen Sie nach einer vergleichbare Lösung zum Beispiel 1.3 der LU01.\\
+<nodisp>TODO SuMa: Link setzen</nodisp>
+Sie müssen eine typische "Datenklasse" (ein POJO) sowie eine dazu in Beziehung stehende Klasse benennen. Dazu halten Sie je Klasse einige typische Attribute fest sowie für die "standard" Klasse auch mindestens eine Methode, die das Verhalten der Klasse beeinflusst.\\
+=== Dauer ===
+10 Minuten
+=== Abgabe ===
+Halten Sie Ihre Beschreibung in einem Textdokument fest, das Sie dann als PDF-Datei im Moodle-Kurs abgeben.\\
+Skizzieren Sie dazu vergleichbar der Abbildung 1.7 auch die beiden Klassen und benennen Sie die Beziehung. (im Beispiel mit <<have>> benannt)
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) René Probst

@@ -1,0 +1,19 @@
+====== LU02.A03 - Klassendiagramm zeichnen ======
+ 
+
+=== Ziel ===
+Sie können aus einem vorgegeben Code das entsprechende Klassendiagramm zeichnen.
+
+=== Auftrag ===
+  - Wählen Sie 2 Codesequenzen aus (siehe unten, z.B. ''stack.py''). Übersetzen Sie diese dann in das entsprechende Klassendiagramm.
+  - Halten Sie sich an die UML-Notation gemäss Abb. 1.8 (siehe Kapitel 1.5). Verwenden Sie für das Erstellen der Diagramme ein Tool wie z.B. [[https://plantuml.com/de/class-diagram|PlantUML]] oder MS-Visio.\\
+  - Ergänzen Sie das Diagramm um Initialisierung und/oder Zusicherung. Angaben dazu finden Sie im [[modul:m320:merkblaetter:merkblatt_1|Merkblatt Klasse]].
+ //Hinweis:// MS-Visio können Sie in der [[https://portal.azure.com/?Microsoft_Azure_Education_correlationId=c9ab9a0d-c49c-4043-87b8-e0dec6537e37#home|Microsoft Azure]] downloaden. Der Zugang erfolgt über Ihr Office365-Konto. Wahlweise können Sie auch via BZZ-Intranet und der App <<Microsoft Imagine>> im Reiter <<Lernende>> einsteigen.
+
+=== Dauer ===
+20 Minuten
+=== Abgabe ===
+Exportieren Sie Ihre Digramme in ein PDF-Dokument und geben Sie dieses dann im Moodle-Kurs ab.
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) René Probst

@@ -1,0 +1,15 @@
+====== LU03 - foobar ======
+===== Theorie =====
+<nspages . -h1  -exclude -simpleList -textPages="">
+
+===== Merkblätter =====
+
+<nspages .:merkblaetter -h1  -exclude:start -simpleList -textPages="">
+
+===== Aufgaben =====
+
+<nspages .:aufgaben -h1  -exclude:start -simpleList -textPages="">
+
+===== Lösungen =====
+
+<nspages .:loesungen -h1  -exclude:start -simpleList -textPages="">
