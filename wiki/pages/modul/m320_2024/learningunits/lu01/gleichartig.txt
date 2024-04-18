@@ -1,27 +1,34 @@
 ====== LU01d - Ist Klasse gleich Klasse? ======
  
-Warum stellen wir uns diese Frage?\\
-\\
-Sie haben im Modul 319 in der LU12 ([[modul:m319:learningunits:lu12:|Link]]) einen ersten Einblick erhalten. 
+Warum stellen wir uns diese Frage?
+
+Sie haben im  ([[modul:m319:learningunits:lu12:|Modul 319]]) einen ersten Einblick erhalten. 
 Dabei haben Sie eine Klasse als Ansammlung vieler Attribute kennengelernt. 
 Man nennt solche Klassen (informell) auch Datenklassen (POPO - Plain Old Python Object).
 
-In manchen Programmiersprachen oder Frameworks wird der Begriff "Datenklasse" verwendet, um eine Klasse zu beschreiben, die hauptsächlich dazu dient, Daten zu speichern, ohne viel Verhalten zu haben. 
+In einigen Programmiersprachen oder Frameworks wird der Begriff "Datenklasse" verwendet, um eine Klasse zu beschreiben, die hauptsächlich dazu dient, Daten zu speichern, ohne viel Verhalten zu haben. 
 Solche Klassen haben normalerweise private Datenfelder (Variablen) und öffentliche Getter- und Setter-Methoden, um auf die Daten zuzugreifen und sie zu setzen. 
-Sie enthalten in der Regel keine komplexe Geschäftslogik oder speziellen Verhaltensmethoden.
-Eine "allgemeine" Klasse kann ein komplexeres Objekt mit verschiedenen Verhaltensmethoden aufweisen.
+Sie enthalten normalerweise keine komplexe Geschäftslogik oder spezielle Verhaltensmethoden.
+Eine "allgemeine" Klasse kann ein komplexeres Objekt mit verschiedenen Verhaltensmethoden enthalten.
 
 ----
-//Beispiel 1.3: Dataklasse und Standardklasse// \\
+=== Beispiel: Dataklasse und Standardklasse ===
+
 {{:modul:m320:learningunits:lu01:theorie:lu01-abb._1.7_neu_mensch-adresse.png?500|}}\\
-//Abb 1.7:// Beschreibung einer Person mit deren Adresse \\
-Wir finden in Abbbildung 1.7 die zwei Klassen ''Human'' und ''Address'', die in einer einseitigen Beziehung "Mensch besitzt Adresse" stehen.\\
-Die Klasse ''Human'' beschreibt eine Person mit all ihren Eigenschaften und Fähigkeiten, was wohl erkennbar eine sehr komplexe Klasse sein wird, während ''Address'' die Adresse der Person beschreibt. Die Adresse wird einige wenige Attribute halten wie\\
+//Abb:// Beschreibung einer Person mit deren Adresse 
+
+
+Wir finden in Abbildung die zwei Klassen ''Human'' und ''Address'', die in einer einseitigen Beziehung "Mensch besitzt Adresse" stehen.
+
+Die Klasse ''Human'' beschreibt eine Person mit all ihren Eigenschaften und Fähigkeiten, was wohl erkennbar eine sehr komplexe Klasse sein wird, während ''Address'' die Adresse der Person beschreibt. Die Adresse wird einige wenige Attribute halten wie
   * street
   * number
   * postal_code
   * city
-die durch set- und get-Methoden geschrieben (set) bzw. gelesen (get) werden. Weitere Methoden werden kaum benötigt. Es handelt sich hier um eine typische Datenklasse.\\
+
+
+die durch set- und get-Methoden geschrieben (set) bzw. gelesen (get) werden. Weitere Methoden werden kaum benötigt. Es handelt sich hier um eine typische Datenklasse.
+
 Dagegen wird die Person durch eine Vielzahl von Eigenschaften wie z.B.
   * size
   * hair_color
@@ -33,14 +40,16 @@ und Methoden wie
   * go()
   * ...
 beschrieben. Zu diesen Attributen finden sich dann auch wieder set- und get-Methoden.
-\\
+
 ----
+
 Was aber bedeutet das nun für die Programmierung in Python?\\
 Wir betrachten uns hier die beiden Klassen ''Human'' und ''Address'' sowie deren Umsetzung in Code. Für die Person werden einige wenige Attribute und Methoden stellvertretend angeschrieben.
 
 
 ----
-//Beispiel 1.4:// Codierung einer Datenklasse und einer "standard" Klasse\\ 
+
+=== Beispiel: Codierung einer Datenklasse und einer "standard" Klasse ===
 {|style = "table-layout: fixed; width: 100%;"
 |- 
 !style = "width: 50%; border-right: thin solid; border-bottom: thin solid; text-align: center"|   Address
@@ -176,4 +185,4 @@ Anmerkung: Sie können natürlich auch einer "Datenklasse" eigene Methoden oder 
 
 
 ----
-[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) René Probst
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) René Probst, bearbeitet durch Marcel Suter
