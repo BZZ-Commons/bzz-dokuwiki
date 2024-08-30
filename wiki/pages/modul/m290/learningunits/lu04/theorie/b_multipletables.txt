@@ -1,0 +1,24 @@
+====== LU04b - Reading from one table ======
+The simplest SELECT is reading from a table, as we don't have to deal with the connection between other tables. Let's have a quick look on the different parts of an average SELECT statement. Therefore, we will use our Customer Table as practical example for demonstration purposes.
+
+{{:modul:m290:learningunits:lu04:theorie:screenshot_2024-08-30_095010.png?600|}}
+
+===== SELECT ====
+We can use the **SELECT** in different ways, e.g
+  * **SELECT * **
+    * * (asterix) stands here for all columns in the table
+    * the entire content of the table, columns as created, sorted by the primary key in ascending order.
+  * **SELECT myColumn1, myColumn3, myColumn5**
+    * By specifying the columns we want to retrieve, we can reduce the output according to our needs.
+    * The target columns are to seperated by commas
+  * **SELECT myColumn3, myColumn5, myColumn1** 
+    * We can also change the order in which the columns are to be displayed
+
+===== Vocabulary =====
+^ English ^ German ^
+| clause | Abschnitt | 
+| to ascend | aufsteigen |
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

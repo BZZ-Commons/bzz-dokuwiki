@@ -1,20 +1,23 @@
 ====== LU02c - SQL and its sub-types ======
+
+===== SQL and its sub-types =====
 **SQL** (Structured Query Language) is a standard language for managing and manipulating relational databases. It provides a set of commands for defining, querying, manipulating, and controlling data. 
 
-In detail, SQL consists of four sub-languages, each of which is responsible for one specific set of operations: 
+In detail, SQL consists of five sub-languages, each of which is responsible for a specific group of operations. Please note that only the subtypes in bold are relevant for module 290. 
 
   * **DDL = Data Definition Language**: DDL commands are used to create, modify, and delete database structures, e.g. to create database instances and tables, to alter table structures or or to ftop databases and tables.  
   * **DQL = Data Query Language**: DQL commands are used to retrieve data from the database, e.g. to select table contents with and without filters and in a specific order.
-  * **DML = Data Manipulation Language**: DML commands are used to insert, update and delete data in tables. DML commands are therefore used to manage table content: to insert new content or to update and delete using certain filters. 
+  * TCL = Transaction Control Language: The SQL subtype Transaction Control Language (TCL) manages transactions within a database, allowing you to commit, rollback, or set savepoints to ensure data integrity.
+  * **DML = Data Manipulation Language**: DML commands are used to insert, update and delete data in tables. DML commands are therefore used to manage table content: to insert new content or to update and delete using certain filters.
   * **DCL = Data Control Language**: DCL commands are used to control access to the database. This includes the management of authorisations and the administration of user profiles. The central questions here are: "Which user is allowed to access which database object?" 
 
-{{:modul:m290:learningunits:lu02:theorie:sql_commands.png?600|}}
+{{:modul:m290:learningunits:lu02:theorie:sql_uebersicht.jpg?800|}}
 
-==== Correlation of SQL and CRUD ====
+===== Correlation of SQL and CRUD =====
 CRUD operations is to be applied in all three layers of a three-layers-web-architecure (presentation layer, logic layer/server, data layer). Within the data layer the CRUD operations are realised as follows:
 
 
-{{:modul:m290:learningunits:lu02:theorie:crud_sql.jpg?400|}}
+{{:modul:m290:learningunits:lu02:theorie:crud_sql.jpg?600|}}
 
 
 ===== Vocabulary =====
