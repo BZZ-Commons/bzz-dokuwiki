@@ -1,0 +1,33 @@
+====== LU04.A01 - SQL : DQL commands======
+
+===== Requirements  =====
+  * Work type: individual
+  * Timeframe: 15 Minutes
+  * Means of aid: 
+      * only teaching materials, no websearch, no use of ai.
+      * [[https://www.w3schools.com/sql/trysql.asp?filename=trysql_select_columns | W3Schools | SQL Editor]]
+  * Expected result: Sementically and syntactically SQL statements according to the requirements of the case studies. The resultset match the specified template.
+
+===== Case studies / Asignments =====
+Go to the W3-Schools SQL Editore and develop DQL commands to the following requirements
+
+==== Assignment a) ====
+Create a adress-list of the customers with the columns in this order: CustomerName, Adress, PostalCode, Country, ordered by the the Country ascending.
+
+==== Assignment b) ====
+Generate a list with ProductNames, Price and SupplierIDs within a price range of 20 and 45, sorted the Price and SupplierID, both ascending.
+
+==== Assignment c) ====
+Find all employees who graduated from a university. The relevant information is hidden in the table Employees, within the colums Notes.
+
+===== Solution =====
+[[modul:m290:learningunits:lu04:loesungen:l01|Lösung]]
+
+
+===== Vocabulary =====
+^ English ^ German ^ 
+| respectively | beziehungsweise|
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

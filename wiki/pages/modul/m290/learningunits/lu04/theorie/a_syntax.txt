@@ -5,8 +5,9 @@ As we know, **SQL** stands for **S**tructured **Q**uery **L**anguage. Consequent
 {{:modul:m290:learningunits:lu04:theorie:sql-syntax.png?600|}}
 
 ===== NOTES  =====
-  * The content of this chapter is based on the  [[https://www.w3schools.com/sql/sql_syntax.asp|W3School-SQL-tutorial]]
+  * The content of this chapter is based on the  [[https://www.w3schools.com/sql/sql_syntax.asp|W3School-SQL-tutorial]].
   * Please note that the use og CAPITAL LETTERS for SQL commands and tabs can make it easier for you to maintain your program code. 
+  * Make sure, that every complete sql statement is finished by a semicolon (;).
 
 ===== The Syntax of DML commands =====
 Every SQL query is composed by three main commands:

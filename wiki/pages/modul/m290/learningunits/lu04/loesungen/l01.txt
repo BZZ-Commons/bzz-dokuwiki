@@ -1,0 +1,36 @@
+====== LU04.S01 - SQL : DQL commands ======
+
+==== Assignment a) ====
+Create a adress-list of the customers with the columns in this order: CustomerName, Adress, PostalCode, Country, ordered by the the Country ascending.
+
+  Select CustomerName, Address, PostalCode, Country
+  from customers
+  order by country;
+
+{{:modul:m290:learningunits:lu04:aufgaben:screenshot_2024-08-30_135600.png?600|}}
+
+==== Assignment b) ====
+Generate a list with ProductNames, Price and SupplierIDs within a price range of 20 and 45, sorted the Price and SupplierID, both ascending.
+
+  SELECT Price, Productname,  Supplierid FROM Products 
+  WHERE Price BETWEEN 20 AND 45
+  ORDER BY Price ASC, SupplierID ASC;
+  
+{{:modul:m290:learningunits:lu04:aufgaben:screenshot_2024-08-30_145939.png?600|}}
+
+==== Assignment c) ====
+Find all employees who graduated from a university. The relevant information is hidden in the table Employees, within the colums Notes.
+
+  SELECT * FROM Employees 
+  WHERE Notes LIKE "%grad%"; 
+
+{{:modul:m290:learningunits:lu04:aufgaben:screenshot_2024-08-30_151200.png?600|}}
+
+
+===== Vocabulary =====
+^ English ^ German ^ 
+| ... | ... |
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir
