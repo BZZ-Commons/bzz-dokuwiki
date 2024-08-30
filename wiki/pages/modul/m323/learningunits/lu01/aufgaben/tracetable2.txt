@@ -1,0 +1,56 @@
+====== LU01.A07 - Rekursiver GGT und Trace Table ======
+<WRAP center round todo 60%>
+Erstellen Sie einen Trace Table, um den rekursiven Ablauf zu analysieren.
+</WRAP>
+
+===== Erklärung des rekursiven GGT-Algorithmus: =====
+Der größte gemeinsame Teiler (GGT) zweier Zahlen ist der größte positive Divisor, der beide Zahlen ohne Rest teilt. Der rekursive GGT-Algorithmus basiert auf dem Euklidischen Algorithmus, der besagt, dass der GGT von zwei Zahlen a und b der gleiche ist wie der GGT von b und dem Rest der Division von a durch b. Die Rekursion endet, wenn einer der Werte 0 erreicht.
+
+===== Anforderungen: =====
+
+  * Verwenden Sie den folgenden rekursiven Algorithmus zur Berechnung des GGT.
+  * Erstellen Sie einen Trace Table, um die Änderung der Variablen und den Ablauf der Rekursion nachzuvollziehen.
+
+==== Algorithmus ====
+<code python>
+def ggt(a, b):
+    if b == 0:
+        return a
+    else:
+        return ggt(b, a % b)
+
+# Beispielwerte
+a = 48
+b = 18
+ergebnis = ggt(a, b)
+print(f'GGT von {a} und {b} ist: {ergebnis}')
+</code>
+
+===== Aufgabe: =====
+
+  * Analysieren Sie den Code Schritt für Schritt.
+  * Erstellen Sie einen Trace Table, der die Variablen ''a'', ''b'' und den rekursiven Aufruf ''ggt(b, a % b)'' darstellt.
+  * Verwenden Sie die folgende Struktur für den Trace Table:
+
+^ Schritt ^ a ^ b ^ a % b ^ Rekursiver Aufruf (ggt(b, a % b)) ^ Rückgabewert ^
+| | | | | | |
+
+Füllen Sie den Trace Table basierend auf dem angegebenen Beispiel aus.
+
+==== Beispielinput: ====
+
+<code python>
+a = 48
+b = 18
+</code>
+
+==== Beispieloutput: ====
+
+<code python>
+GGT von 48 und 18 ist: 6
+</code>
+
+===== Abgabe =====
+Geben Sie den ausgefüllten Tracetable in Moodle ab.
+
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/ch/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Kevin Maurizi 

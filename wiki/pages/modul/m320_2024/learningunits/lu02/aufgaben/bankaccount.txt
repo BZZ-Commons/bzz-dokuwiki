@@ -1,0 +1,63 @@
+====== LU02.A03 - Klassendiagramm "BankAccount" umsetzen ======
+
+<WRAP center round todo 60%>
+Implementieren Sie das Klassendiagramm als Sourcecode.
+</WRAP>
+
+==== Auftrag ====
+  - Implementieren Sie das Klassendiagramm ''BankAccount'' als Python-Code.\\ Orientieren Sie sich für die Umsetzung am [[[[modul:m320_2024:learningunits:lu02:klassendiagramm|Beispiel "Door"]].
+  - Halten Sie die [[howto/codingstandards/start]] ein.\\ Die Aufgabe ist nur dann vollständig gelöst, wenn Sie auch die BZZ-Vorgaben bezüglich <<guter Programmierung>> einhalten.
+
+==== Vorgehen ====
+Beim Lösen der Programmieraufgaben orientieren wir uns am TDD ([[https://de.ryte.com/wiki/Test_Driven_Development#:~:text=Test%20Driven%20Development%20(deutsch%3A%20testgeleitete,Prozess%20der%20Softwareentwicklung%20zu%20leiten.|test driven development]]). 
+Die nötigen Testfälle werden durch die Lehrpersonen in Ihrem GitHub Repository bereitgestellt.
+
+Sie finden weiter unten die genauen Anleitung für das jeweilige Vorgehen. Dieses ist bei der Implementation in allen kommenden Übungen anzuwenden.\\
+Es ist wichtig, dass Sie sich dieses Vorgehen aneignen, da auch die Prüfungen so umgesetzt sind und die erreichte Note durch die Anzahl korrekter Tests gegeben ist.
+
+==== Dauer ====
+20 Minuten + Hausaufgabenzeit
+
+==== Abgabe ====
+Commit und Push auf github
+
+
+===== Anleitung zu Klasse BankAccount =====
+==== Klassendiagramm ====
+{{:modul:m320_2024:learningunits:lu02:aufgaben:uml_bankaccount.png?400|}}
+
+==== Beschreibung ====
+Die Klasse BankAccount beschreibt ein Bankkonto für einen Kunden (''Customer'').
+Das Konto kann innerhalb eines bestimmten Wertes überzogen werden, d.h. dass auch ein negativer Saldo möglich ist.\\
+
+==== Attribute ====
+   * ''balance'' gibt den aktuellen Kontostand (Saldo) wieder.
+   * ''overdraft'' legt fest, um welchen Betrag das Konto überzogen werden darf, d.h. welcher Minusbetrag möglich ist. (typisch für ein Kreditkonto)
+   * ''customer'' ist die Referenz auf ein Objekt der Klasse ''Customer''.
+==== Methoden ====
+   * ''%%__init__(…)%%'' (der Konstruktor der Klasse BankAccount) initialisiert den Saldo (''balance'') auf 0.0 und legt den Überzug (''overdraft'') sowie den referenzierten Kunden (''customer'') fest.
+   * ''balance()'' liefert den aktuellen Saldo des Kontos (kann auch negativ sein).
+   * ''overdraft()'' liefert den max. Betrag, um den das Konto überzogen werden darf.
+   * ''customer()'' liefert die Referenz zu einem Customer-Objekt.
+   * ''booking(…)'' bucht einen Betrag (''amount'') ins Konto ein und erhöht somit den Saldo (''balance'').
+   * ''get_money(…)'' bucht einen Betrag (''amount'') vom Konto ab. Dabei darf der Betrag max. so gross sein, dass Saldo + Überzug nicht überschritten werden. Ist der Betrag zu gross, liefert die Methode den Wert 0.0 zurück (= kein Bezug möglich).
+==== Vorgehen ====
+   - Implementieren Sie den Konstruktor ( ''%%__init__(…)%%'') und initialisieren Sie die Attribute gemäss Beschreibung.
+   - Erstellen Sie die getter-Methdode (als ''@property'') für das Attribut ''balance'' und testen Sie dies mit der Testmethode ''test_initial_balance'' in der Datei ''test_BankAccount_class.py''.\\ Der Test muss fehlerfrei ausgeführt werden. Pushen Sie ihren Code.
+   - Erstellen Sie die getter_Methode für das Attribut ''overdraft'' und testen Sie diese mit ''test_initial_overdraft''. \\ Der Test muss fehlerfrei ausgeführt werden. Pushen Sie ihren Code.
+   - Erstellen Sie die getter-Methode für das Attribut ''customer'' und testen Sie diese mit ''test_customer''. \\ Der Test muss fehlerfrei ausgeführt werden. Pushen Sie ihren Code.
+   - Erstellen Sie die Methode ''booking(…)'' gemäss der Beschreibung. Testen Sie die Methode mit ''test_booking''.\\ Der Test muss fehlerfrei ausgeführt werden. Pushen Sie ihren Code.
+   - Erstellen Sie die Methode ''get_money(…)'' gemäss der Beschreibung. Achten Sie darauf, wie der angeforderte Betrag bezüglich Saldo (''balance'') und Überzug (''overdraft'') geprüft werden muss.
+   - Testen Sie nun die Methode der Reihe nach mit\\ -	''test_get_money_available'' für einen korrekten Bezug.\\ -	''test_get_money_not_avaiable'' für einen nicht gültigen Bezug.\\ - ''test_get_money_overdraft'' für einen Bezug innerhalb der Kredit-Limite.\\ - ''test_balance_after_transaction'' für die Kontrolle des Saldos.\\ Führen Sie nach jedem der Tests einen commit und push aus!
+   - Führen Sie nun die Testklasse als Ganzes aus.\\ Das Testergebnis muss wie folgt aussehen: \\ {{:modul:m320:learningunits:lu01:aufgaben:lu01-aufg4-bankaccount-gesamttestergebnis.png?500|}}
+
+
+----
+<details>
+<summary>//=> GitHub Repo für externe Besucher//</summary>
+GitHub Repository https://github.com/templates-python/m320-lu02-a03-bankaccount
+
+//Lernende am BZZ müssen den Link zum GitHub Classroom Assignment verwenden//
+
+</details>
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) René Probst

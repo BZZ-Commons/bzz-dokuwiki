@@ -1,0 +1,34 @@
+====== LU03c - ERM and ERD ======
+
+==== Entity-Relationship Model = ERM ====
+The Entity-Relationship Model (ERM) is a **conceptual data-model** used in database design to represent relationships between data entities in a system. An entity is a real-world object or concept, such as  customer or product, and each entity has specific attributes that describe it. **ERM serves as a blueprint for creating databases, ensuring that data is accurately captured and linked**. The following illustration shows a database of students, their teachers and the rooms in which the lessons are are held.
+
+===== Youtube tutorials ===== 
+  * [[https://www.youtube.com/watch?v=I-ctLA--THs&t=75s | Youtube DE: ERM einfach erklärt ]]
+
+===== Additional Youtube tutorials ===== 
+  * [[https://www.youtube.com/watch?v=baF9b5Lkiio | Youtube DE: ER-Modell - Teil 1]]
+  * [[https://www.youtube.com/watch?v=XX7pM5hXXmk | Youtube DE: ER-Modell - Teil 2]]
+
+
+{{:modul:m290:learningunits:lu03:theorie:erklasse-1.png?600|}}
+
+==== Entity-Relationship Diagram = ERD ===
+An Entity-Relationship Diagram (ERD) is the **graphical representation** of the ERM, visualizing entities, attributes, and their relationships. Commonly it is also known as the **logical model**, and basicly using the Crow's Foot notation, ERDs clarify the structure of the database before development begins, making them essential for communicating design, ensuring normalization, and preventing errors. Below is an ERD  of a school administration database.
+
+{{:modul:m290:learningunits:lu03:theorie:screenshot_2024-08-14_at_12.13.19.png?700|}}
+
+
+===== Additonal material =====
+  * [[https://www.youtube.com/watch?v=inCwNrTIv4s | Youtube DE: Kardinalitäten und Primärschlüssel im ERM]]
+  * [[https://www.youtube.com/watch?v=xsg9BDiwiJE | Youtube EN: Entity Relationship Diagram (ERD) - Part 1]]
+  * [[https://www.youtube.com/watch?v=hktyW5Lp0Vo | Youtube EN: Entity Relationship Diagram (ERD) - Part 2]]
+
+===== Vocabulary =====
+^ English ^ German ^
+| blueprint | Bauplan, Entwurf |
+| to prevent| verindern |
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

@@ -1,0 +1,35 @@
+====== LU06.A04: Kommunikation von Objekten ======
+
+<WRAP center round todo 60%>
+Sie können Objekte nach Vorgabe eines Sequenzdiagramms erstellen und kommunizieren lassen.
+</WRAP>
+
+===== Auftrag 1 =====
+  - Akzeptieren Sie das Assignment im GitHub Classroom und klonen Sie Ihr Repository in die Entwicklungsumgebung.
+  - Öffnen Sie die Klasse ''main.py'' und ergänzen Sie den Code für die Instanzierung der Objekte sowie die Programmausführung gemäss dem unten gezeigten Sequenzdiagramm 
+
+{{:modul:m320:learningunits:lu04:aufgaben:lu03-aufg4_band-1.png?700|}}\\
+
+Das Ergebnis soll der gezeigten Ausgabe entsprechen.
+
+{{:modul:m320:learningunits:lu04:aufgaben:lu03-aufg4_band-2.png?300|}}
+
+===== Dauer =====
+15 Minuten
+
+===== Abgabe =====
+Die Abgabe erfolgt mittels Push in GitHub.
+
+----
+<details>
+<summary>//=> GitHub Repo für externe Besucher//</summary>
+GitHub Repository https://github.com/templates-python/m320-lu06-a04-music.git
+
+//Lernende am BZZ müssen den Link zum GitHub Classroom Assignment verwenden//
+
+</details>
+
+
+{{tag>M320-LU06}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] René Probst, bearbeitet durch Marcel Suter
+

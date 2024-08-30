@@ -1,0 +1,54 @@
+====== LU03.L01 - Choose data-types ======
+
+Which datatype would you use to store the following information? Give reason for your decision.
+
+1. Product-title like trousers up to 50 characters:
+  *<color #ed1c24>VARCHAR(50)</color>
+  *<color #ed1c24>Titles can be at the most 50 characters. A fix length makes no sense in that case. </color>
+
+2. Product-description up to 255 characters:
+  *<color #ed1c24>VARCHAR(255)</color>
+  *<color #ed1c24>The description can be 255 characters, but can also be shorter. A fix length does not make sense in that case. </color>
+
+3. Stock amount:
+  *<color #ed1c24>INT or INTEGER</color>
+  *<color #ed1c24>Floating point type is not suitable as pieces are always counted in whole numbers.  </color>
+
+4. Price of each piece: 
+  *<color #ed1c24>FLOAT(5,2) or DECIMAL(U5,2)</color>
+  *<color #ed1c24>Prices have floating point</color>
+  * <color #ed1c24>The length of (5,2) should be sufficient enough as trousers are usually within a price ranger of 0.99 to 999.99. </color>
+
+5. Order date: 
+  *<color #ed1c24>DATE or DATETIME</color>
+  *<color #ed1c24>The type depends on whether we want to safe only the date, but also the time. </color>
+  *<color #ed1c24>Usually in such cases to store only the order-date is enough.</color> 
+
+6. Date of delivery:
+  *<color #ed1c24>DATETIME or TIMESTAMP</color>
+  *<color #ed1c24>Regarding delivery quality the criteria punctuality might be one key element. Therefore the storage of the delivery-time is compulsory.</color>
+ 
+7. organic or not: 
+  *<color #ed1c24>BOOLEAN</color> 
+  *<color #ed1c24>As there a only two possibilites to store a boolean data-type is the correct data-type. </color>
+
+8. Usage category with only one character:
+  * <color #ed1c24>CHAR</color> 
+  * <color #ed1c24>As long as there is only one character to be stored the CHAR-type will work. </color>
+  * <color #ed1c24>Technically the CHAR-types allows all letters, digits (as letters) and special characters.</color>
+
+===== Vocabulary =====
+^ English ^ German ^ 
+| to give reason for | begründen |
+| at the most | höchstens |
+| stock amount | Lagermenge |
+| to float | fliessen |
+| sufficient | ausreichend |
+| regarding | bezüglich |
+| might be | möglicherweise |
+| technically | im Prinzip, eigentlich |
+
+
+----
+
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

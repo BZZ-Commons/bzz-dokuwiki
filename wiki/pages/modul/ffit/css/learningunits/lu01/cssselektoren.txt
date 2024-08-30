@@ -1,0 +1,324 @@
+====== LU01c - Element-, Klasse-, ID-CSS-Selektoren ======
+~~NOTOC~~
+===== Arten von Selektoren =====
+Ziel der verschiedenen Arten von Selektoren, die teilweise komplex verschachtelten HTML-Code zu erreichen (zu matchen), damit genau der beabsichtigte HTML-Abschnitt gestyled wird. Dazu können Selektoren auch kombiniert werden.
+
+===== Kombinieren von Selektoren =====
+In CSS können Sie verschiedene Selektoren in vielfältiger Weise kombinieren, um sehr spezifische Elemente auf einer Webseite anzusprechen. Hier sind einige der häufigsten Kombinationen:
+
+==== 1. Nachfahrenselektor: ====
+
+Der Nachfahrenselektor (auch bekannt als Leerzeichen-Selektor) wählt Elemente aus, die Nachkommen eines bestimmten Elements sind. Zum Beispiel wählt ''div p'' alle ''<p>'' Elemente aus, die sich innerhalb eines ''<%%div%%>'' Elements befinden.
+
+<code css>
+div p {
+    color: red;
+}
+</code>
+==== 2. Kindselektor: ====
+
+Der Kindselektor (''>'') wählt Elemente aus, die direkte Kinder eines bestimmten Elements sind. Im Gegensatz zum Nachfahrenselektor wählt ''div > p'' nur die ''<p>'' Elemente aus, die direkte Kinder eines ''%%<%%div%%>%%'' Elements sind (also nicht tiefer liegende ''<p>'' Elemente).
+
+<code css>
+div > p {
+    color: blue;
+}
+</code>
+==== 3. Nachfolgerselektor:====
+
+Der Nachfolgerselektor (''+'') wählt das Element aus, das unmittelbar auf ein bestimmtes Element folgt. Zum Beispiel wählt ''h1 + p'' ein ''<p>'' Element aus, das unmittelbar auf ein ''<h1>'' Element folgt.
+
+<code css>
+h1 + p {
+    font-size: 18px;
+}
+</code>
+
+==== 4. Geschwisterselektor:====
+
+Der Geschwisterselektor (''~'') ist ähnlich wie der Nachfolgerselektor, wählt aber alle nachfolgenden Geschwisterelemente aus, nicht nur das unmittelbar folgende. Zum Beispiel wählt ''h1 ~ p'' alle ''<p>'' Elemente aus, die auf dasselbe Elternelement folgen wie das ''<h1>'' Element.
+
+<code css>
+h1 ~ p {
+    font-size: 18px;
+}
+</code>
+
+==== 5. Gruppenselektor: ====
+
+Der Gruppenselektor ('','') ermöglicht es Ihnen, die gleichen Stile auf verschiedene Elemente anzuwenden. Zum Beispiel wendet ''h1, h2, p'' die Stile auf alle ''<h1>'', ''<h2>'' und ''<p>'' Elemente an.
+
+<code css>
+h1, h2, p {
+    color: green;
+}
+</code>
+
+Es ist auch möglich, diese Selektoren zu kombinieren und zu verschachteln, um sehr spezifische Auswahlkriterien zu erstellen. Durch das Erlernen dieser Kombinationen können Sie sehr präzise bei der Anwendung Ihrer CSS-Stile sein.
+
+===== Übersicht der einfachen CSS-Selektoren =====
+
+^ Selektor          ^ Bezeichnung      ^ Auswahl                                  ^ HTML-Beispiel          ^
+| ''element {...}'' | Typselektor      | HTML-Element mit dem Namen //element//   |''<figure>''            |
+| ''.klname''       | Klassenselektor  | Element mit der Klasse //klname//        |''<p class="klname">''  |
+| ''#elemid''       | ID-Selektor      | Element mit der ID //elemid//            |''<p id="elemid">''     |
+
+===== Typselektor =====
+Der Typselektor (alias Elementselektor) spricht die HTML-Elemente direkt mit dem Elementnamen an. Angewendet wird diese Regel auf **alle Elemente desselben Typs** im HTML-Dokument. Dabei ist es irrelevant, an welcher Stelle im HTML-Dokument diese Elemente geschrieben sind, welcher Klasse diese zugehören oder welchen Bezeichner sie haben.
+
+
+==== Beispiel ====
+Bei den HTML-Elementen ''<header>'', ''<nav>'' und ''<footer>'' wird der Text zentriert ausgerichtet und ein schwarzer Rahmen von 1 Pixel Dicke gezogen. Der Abstand zum oberen nächsten Element beträgt bei diesen Elementen immer 5 Pixel. Alle HTML-Elemente ''<h1>'' und ''<abbr>'' werden in grauer Farbe angezeigt. Jedes HTML-Element ''<p>'' bekommt einen grauen gepunkteten Rahmen.
+
+|<code css> /* Schwarzer Rahmen,
+   Zentrierter Text,
+   5 Pixel Abstand von oben */
+header,
+nav,
+footer { 
+  text-align:center;
+  border: 1px solid black;
+  margin-top: 5px;
+}
+
+/* Grauer Text */
+h1, abbr { 
+	color: gray; 
+}
+
+/* Grauer gepunkteter Rahmen */
+p { 
+	border: 1px dotted gray; 
+}</code>|<code html4strict><!doctype html>
+<html>
+  <head>
+    <title>Typselektoren</title>
+    <meta charset="UTF-8">
+   <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+  <header>Kopfzeile</header>
+  <nav>Navigation</nav>
+  <main>
+  <h1>Typselektoren</h1>
+  <p>Ein solcher Typselektor spricht die <abbr>HTML</abbr>-Elemente mit dem Elementnamen direkt an. </p>
+  <p class="wichtig">Bei XML-Dokumenten muss auf die Groß- und Kleinschreibung des Selektors und dem anzusprechenden Element geachtet werden.</p>
+  </main>
+  <footer>Fußzeile</footer>
+  </body>
+</html></code> [[https://jsfiddle.net/eoaf48yw/|Live Preview]]|
+
+
+===== Klassenselektor =====
+Mit dem Klassenselektor werden HTML-Elemente gewählt, die zu einer bestimmten Klasse gehören. Ein bestimmten Klassennamen wird mit dem globalen HTML-Attribut ''class'' für (fast) alle Elemente vergeben.
+
+Das HTML-Element ''<p>'' wird mit dem Klassennamen ''<hinweis>'' selektiert, indem der Klassenname mit einem Punkt getrennt (ohne Leerzeichen) direkt hinter den Typselektor gesetzt wird.
+
+HTML-Code:
+
+<code html4strict><p class="hinweis">Ein Absatztext ...</p></code>
+CSS-Code nur auf p-HTML-Elemente anwendbar:
+
+<code css>p.hinweis { color: red; }</code>
+oder CSS-Code auf jedes HTML-Elemente anwendbar:
+
+<code css>.hinweis { color: red; }</code>
+<WRAP center round tip 60%>
+HTML-Elemente können auch mehrere Klassen auf einmal verwenden. Hier werden dem p-Element die beiden Klassen hinweis und bigfont zugewiesen.
+
+<code html4strict><p class="hinweis bigfont">...</p></code>
+</WRAP>
+
+==== Beispiel 1====
+Nun ein einfaches HTML-Dokument, das diese Klassenselektoren verwendet und deren Anwendung demonstriert:
+
+  * Der **erste Absatz** mit dem p-Element verwendet keine Klasse, weshalb hier nur der Typselektor p mit der Anpassung der Schriftfamilie darauf angewendet wird. Dieselbe Schriftfamilie wird auch bei den anderen vier Absätzen verwendet.
+  * Der **zweite Absatz** wird mit dem Klassenselektor ''p.hinweis'' formatiert, wo der Absatz von links um 50 Pixel eingerückt und ebenfalls links ein grüner Rand mit 10 Pixeln hinzugefügt wird. Der Abstand zu diesem Rand beträgt 5 Pixel.
+  * Der **dritte Absatz** verwendet den Klassenselektor ''p.hinweis.warnung'', wo alles recht ähnlich formatiert wird wie im zweiten Absatz.
+  * Der **vierte Absatz** mit der Klasse ''warnung'' wird nicht formatiert, weil für diese Klasse keine Stilangaben notiert wurden. Wollen Sie für diesen vierten Absatz mit der Klasse ''warnung'' eine CSS-Regel mit einem Klassenselektor definieren, müssten Sie diese wie folgt notieren:
+
+|<code css> /* Datei: style.css */
+ 
+/* Schwarzer Rahmen,
+   Zentrierter Text,
+   5 Pixel Abstand von oben
+ */
+header,
+nav,
+footer { 
+  text-align:center;
+  border: 1px solid black;
+  margin-top: 5px;
+  padding: 5px;
+  font-family: Verdana, Arial;
+}
+
+/* Grauer Text
+ */
+h1,
+abbr {
+  color: gray;
+  font-family: Verdana, Arial;
+}
+
+/* Schriftfamilie für p-Elemente
+ */
+p { font-family: Verdana, Arial; }
+
+/* Absatztext für einen Hinweis
+ */
+p.hinweis {
+  margin-left: 50px;
+  border-left: 10px solid green;
+  padding-left: 5px;
+}
+
+/* Absatztext für einen Hinweis als Warnung
+ */
+p.hinweis.warnung {
+  border-left: 10px solid red;
+  border-top: 2px solid red;
+  border-right: 10px solid red;
+  border-bottom: 2px solid red;
+  text-align: center;
+}
+
+/* Schriftgröße auf 140%
+   Hintergrundfarbe auf grau
+*/
+.kopffuss {
+  font-size: 140%;
+  background: #f5f5f5;
+}
+
+/* Schriftgröße auf 130% 
+ */
+.bigfont { font-size: 130%; }
+
+.warnung { color: blue; }</code>|<code html4strict><!doctype html>
+<html>
+  <head>
+    <title>Klassenselektor</title>
+    <meta charset="UTF-8">
+   <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+  <header class='kopffuss'>Kopfzeile</header>
+  <nav class='bigfont'>Navigation</nav>
+  <main>
+  <h1>Klassenselektor</h1>
+  <p>Das p-Element ohne einer Klasse.</p>
+  <p class="hinweis">Das p-Element mit der Klasse <code>hinweis.</p>
+  <p class="hinweis warnung">Das p-Element mit den Klassen <code>hinweis warnung.</p>
+  <p class="warnung">Das p-Element mit der Klasse <code>warnung.</p>
+  <p class="hinweis bigfont">Das p-Element mit den Klassen <code>hinweis bigfont.</p>
+  </main>
+  <footer class='kopffuss'>Fußzeile</footer>
+  </body>
+</html></code> [[https://jsfiddle.net/527sxmcf/|Live Preview]]|
+
+===== ID-Selektor =====
+
+Mit dem ID-Selektor werden HTML-Elemente gewählt, welche eine bestimmte ID (anhand des ''id''-Attributs) zugeordnet haben. Im Gegensatz zu Klassen sind IDs ''immer einzigartige'' Elemente in einem HTML-Dokument. Es darf nur einem Element im gesamten HTML-Dokument diese ID zugewiesen werden. Ein solcher ID-Selektor wird mit dem Rautenzeichen (oder Gatterzeichen – ''#''), gefolgt von der ID notiert. Der ID-Selektor für ''%%<%%div id="special">'' kann daher wie folgt notiert werden:
+
+<code html4strict>div#special</code>
+oder nur
+<code html4strict>special</code>
+Der Vorteil von ''elementname#id'' im Gegensatz zu ''#id'' kann eventuelle Versehen desselben id-Attributwert vorbeugen. Eine ''Validierung'' deckt solche fehlerhaften Umstände sofort auf.
+
+==== Beispiel ====
+
+|<code css>/* Datei: style.css */
+ 
+/* Schwarzer Rahmen,
+   Zentrierter Text,
+   5 Pixel Abstand von oben
+ */
+#header,
+#nav,
+#footer { 
+  text-align:center;
+  border: 1px solid black;
+  margin-top: 5px;
+  padding: 5px;
+  font-family: Verdana, Arial;
+}
+
+/* Schriftgröße auf 140%
+   Hintergrundfarbe auf grau
+*/
+#header,
+#footer {
+  font-size: 140%;
+  background: #f5f5f5;
+}
+
+div#main { margin: 20px; }
+
+/* Grauer Text
+ */
+h1,
+abbr {
+  color: gray;
+  font-family: Verdana, Arial;
+}
+
+/* Schriftfamilie für p-Elemente
+ */
+p { font-family: Verdana, Arial; }
+
+/* Absatztext für einen Hinweis
+ */
+p.hinweis {
+  margin-left: 50px;
+  border-left: 10px solid green;
+  padding-left: 5px;
+}
+
+/* Absatztext für einen Hinweis als Warnung
+ */
+p.hinweis.warnung {
+  border-left: 10px solid red;
+  border-top: 2px solid red;
+  border-right: 10px solid red;
+  border-bottom: 2px solid red;
+  text-align: center;
+}
+
+/* Schriftgröße auf 130% 
+ */
+.bigfont { font-size: 130%; }</code>|<code html4strict><!doctype html>
+<html>
+  <head>
+    <title>Klassenselektor</title>
+    <meta charset="UTF-8">
+   <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+  <div id="header">Kopfzeile</div>
+  <div id="nav">Navigation</div>
+  <div id="main">
+  <h1>Klassenselektor</h1>
+  <p>Das p-Element ohne einer Klasse.</p>
+  <p class="hinweis">Das p-Element mit der Klasse <code>hinweis.</p>
+  <p class="hinweis warnung">Das p-Element mit den Klassen <code>hinweis warnung.</p>
+  <p class="warnung">Das p-Element mit der Klasse <code>warnung.</p>
+  <p class="hinweis bigfont">Das p-Element mit den Klassen <code>hinweis bigfont.</p>
+  </div>
+  <div id="footer">Fußzeile</div>
+  </body>
+</html></code> [[https://jsfiddle.net/527sxmcf/|Live Preview]]|
+
+<WRAP center round info 60%>
+Der Klassenselektor ist der Selektor mit dem Punkt, und der ID-Selektor ist der Selektor mit der Raute. Ebenso sollten Sie sich merken, dass Sie zwar jedes HTML-Element mit einer oder auch mehreren Klassen versehen können, aber grundsätzlich nur mit einer ID. Im Gegensatz zu Klassen müssen IDs in einem HTML-Dokument immer einzigartig sein. Daher darf eine bestimmte ID auch nur einmal in einem HTML-Dokument vorkommen. Auch ist es nicht erlaubt, einem HTML-Element mehr als eine ID zuzuweisen.
+
+**Groß- und Kleinschreibung:** In CSS wird nicht zwischen Groß- und Kleinschreibung von Selektoren unterschieden.
+
+**Sonderzeichen in Selektoren:** Für den Namen des Selektors dürfen Sie nur Groß- und Kleinbuchstaben (a–z; A–Z), Ziffern (0–9) und den Bindestrich (-) verwenden sowie das Unterstrichzeichen (_). Der Name darf außerdem nicht mit einer Ziffer beginnen.
+</WRAP>
+
+----
+{{tag>m293-LU12 m293-G2G m293-G2F}}
+Nach [[http://ict.bzzlab.ch|Daniel Garavaldi]] 
+
+

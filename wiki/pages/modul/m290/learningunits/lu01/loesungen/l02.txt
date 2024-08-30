@@ -1,0 +1,53 @@
+====== LU01.L02 - Installation of the code editor Webstorm  ======
+
+==== Install the code editor Webstorm====
+   - Go to the Jetbrains website [[https://www.jetbrains.com/de-de/webstorm/download/download-thanks.html | Webstorm-Download ]] 
+   - Log in with your login credentials. If you do not have yet an account, create one as student, which is free for students.
+   - Download the software version for your PC.
+   - Start the installation process (as shown in the video instructions). Make sure that you check the box "Add bin folder to the PATH".
+   - Start Webstorm, click "Paid ..." and "Log In to Jetbrains Account".
+   - To confirm your licence, you will be redirected to the jetbrains website and must to log in  there.
+   - Click "Continue".
+   - The installation process is complete when your Webstorm is activated without restrictions and the license is valid for one year.
+   - Start the Webstorm editor.
+   - If you succeeded, be humble and grateful and help those in need. If not, seek the wisdom of your it-master (teacher).
+
+==== Post installation steps ====
+Once the installation is completed, start the post-installation steps: 
+  - Start the Webstorm editor.
+  - Install the plug in for the DB-Modules: [[https://www.jetbrains.com/help/webstorm/settings-tools-database.html|database plug in ]]
+  - Once you have successfully installed the database module, you will see the database icon in the top right-hand corner of your Webstorm application.
+
+==== Function Tests ====
+After both, having successfully installed Webstorm and the database plugin, conduct the following function test.
+  - Establish a new project: File > New > Project > name the project
+  - Create a new file: File > New > Select a suited file type > name the file accordingly
+        * Rename a new file.
+        * Find the stored file directory of webstorm, e.g. C:\Users\volka\WebstormProjects\firstConnectionTryToDb
+        * Establish a connection between Webstorm and Mysql
+            * Click on the database icon
+            * Add a new connection by clicking the "+" icon
+            * Select the option "database" > "MySQL
+            * Fill out the presented input mask with your database credentials, e.g. user: root, password: hello1234
+            * Download and install missing packages
+        * Establish a new input console for your database commands: Selecting the database > Right mouse > New > Console
+        * You shall find the console file in: C:\Users\volka\AppData\Roaming\JetBrains\WebStorm2024.2\consoles\db\consolet.sql
+        * Select current databases from MySQL with the command (in the command window): SHOW DATABASES; + Execute the command. 
+
+
+
+
+===== Solution =====
+[[modul:m290:learningunits:lu01:loesungen:l02|Lösung]]
+
+
+===== Vocabulary =====
+^ English ^ German ^ 
+| prerequisites | Voraussetzungen |
+| as it happened | zufälliger Weise |
+| proper | orgentlich, passend |
+| educational purposes | Bildungszweck |
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

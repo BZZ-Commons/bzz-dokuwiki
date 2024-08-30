@@ -3,6 +3,8 @@
 Ersetzen Sie in der vorgegebenen Webseite die Tags ''<div>'' und ''<p>'' durch ''<header>'', ''<footer>'', ''<nav>'', ''<main>'', ''<article>'' und ''<section>''.
 </WRAP>
 
+** [[https://classroom.github.com/a/QzQDYcVc|GitHub Classroom Assignment]] **
+
 Die Tags ''<header>'', ''<footer>'', ''<nav>'', ''<main>'', ''<article>'' und ''<section>'' sind relativ neu im HTML-Standard.
 Früher standen nur die Tags ''<div>'' und ''<p>'' zur Verfügung, um die Inhalte unserer Webseite zu strukturieren.
 Diese beiden Tags wurden sowohl für die Struktur des Inhalts (Kapitel, Abschnitte) als zum Steuern der Darstellung benutzt.
@@ -12,6 +14,24 @@ Für eine barrierefreie Webseite muss die Struktur des Inhalts mit den neueren T
 Die vorgegebene Webseite verwendet ausschliesslich ''<div>'' und ''<p>''.
 Überarbeiten Sie die Webseite indem Sie die neueren Tags ''<header>'', ''<footer>'', ''<nav>'', ''<main>'', ''<article>'' und ''<section>'' nutzen.
 
+Die fertige Webseite sollte so aussehen:
+
+{{:modul:m293:learningunits:lu02:aufgaben:m293_lu02_a03_struktur.png?400|}}
+
+<WRAP center round tip 60%>
+Mehrere Link-Adressen zeigen auf unbekannte Dateien.
+Daher ist es normal, wenn Ihre Entwicklungsumgebung Warnungen anzeigt.
+Sie können trotzdem Commit & Push durchführen.
+</WRAP>
+
 ----
+<details>
+<summary>//=> GitHub Repo für externe Besucher//</summary>
+GitHub Repository https://github.com/BZZ-M293/m293-lu02-a03-structure.git
+
+//Lernende am BZZ müssen den Link zum GitHub Classroom Assignment verwenden//
+
+</details>
+
 {{tag>m293-LU02}}
 [[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Kevin Maurizi, Marcel Suter

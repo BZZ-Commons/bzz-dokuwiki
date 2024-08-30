@@ -1,6 +1,5 @@
 ====== LU02.L02 - Refactoring unpure -> pure ======
 <code python>
-# Unpure function
 BASKET = [{'Produkt': 'T-Shirt', 'Preis': 20}, {'Produkt': 'Hose', 'Preis': 50}]
 DISCOUNT = 0.1
 

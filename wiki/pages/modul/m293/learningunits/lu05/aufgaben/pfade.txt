@@ -4,6 +4,8 @@ Binden Sie in der Datei "paths.html" die vorgegebenen Medien ein.
 Ersetzen Sie dazu die Kommentare ''<!-- TODO ... -->'' durch die korrekten HTML-Tags.
 </WRAP>
 
+**[[https://classroom.github.com/a/4B_3VOsZ|GitHub Classroom Assignment]]**
+
 In der Datei "paths.html" sollen einige Medien eingebunden werden.
 Die entsprechenden Stellen sind mit einem Kommentar ''<!-- TODO ... -->'' versehen.
 Im Kommentar steht jeweils der Name der einzubindenden Medien.
@@ -13,7 +15,7 @@ Ersetzen Sie die Kommentare durch die korrekten HTML-Elemente.
 Verwenden Sie, wo immer möglich, einen relativen Pfad.
 
 === Hinweise ===
-  * Für das Einbinden des Videos habe ich Ihnen das nötige HTML-Element ''iframe'' schon vorgegeben. Sie brauchen nur die korrekte URL einzusetzen.
+  * Für das Einbinden des Videos habe ich Ihnen das nötige HTML-Element ''iframe'' schon vorgegeben. Sie brauchen nur die korrekte URL ''https://www.youtube.com/embed/PhTp17k5hFY'' einzusetzen.
     * Je nach eingesetztem Browser und abhängig davon, wie Sie die Seite öffnen, kann YouTube die Anzeige des Videos ablehnen.
   * Für das Einbinden einer Musikdatei verwenden Sie das HTML-Element ''<audio>''.
 
@@ -21,7 +23,14 @@ Verwenden Sie, wo immer möglich, einen relativen Pfad.
 {{:modul:m293:learningunits:lu05:aufgaben:lu05_a01_resultat.png?600|}}
 
 ----
-<nodisp>[[https://github.com/templates-html/M293_LU05.git]]</nodisp>
+<details>
+<summary>//=> GitHub Repo für externe Besucher//</summary>
+GitHub Repository https://github.com/BZZ-M293/m293-lu05-a02-paths
+
+//Lernende am BZZ müssen den Link zum GitHub Classroom Assignment verwenden//
+
+</details>
+
 
 {{tag>m293-LU05}}
 [[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Kevin Maurizi, Marcel Suter

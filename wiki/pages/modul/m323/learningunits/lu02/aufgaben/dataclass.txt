@@ -1,0 +1,27 @@
+====== LU02.A09 - Dataclass mit mutable Attribut ======
+
+<WRAP center round todo 60%>
+Implementieren Sie eine Dataclass mit einem mutable Attribut und stellen Sie sicher, dass jede Instanz eine unabhängige Kopie dieses Attributs erhält. Überprüfen Sie das Verhalten Ihrer Implementierung, indem Sie das mutable Attribut in mehreren Instanzen ändern.
+</WRAP>
+
+==== Aufgabenstellung ====
+
+  - Definieren Sie eine Dataclass namens ''Team'' mit den Attributen ''name'' und ''members'' (eine Liste von Strings) im File ''team.py''
+  - Verwenden Sie für das Attribut ''members'' die korrekte Methode, um sicherzustellen, dass jede Instanz ihre eigene Liste erhält.
+  - Implementieren Sie eine Funktion ''add_member(team, member)'', die einen neuen Namen zur Liste ''members'' der übergebenen Team-Instanz hinzufügt im File ''main.py''
+  - Erstellen Sie zwei Instanzen von ''Team'', fügen Sie jeweils verschiedene Mitglieder hinzu und überprüfen Sie, ob die Listen der Mitglieder unabhängig voneinander bleiben.
+  - Geben Sie die Mitgliederlisten beider Teams aus, um das Verhalten zu bestätigen.
+
+
+==== Schritt für Schritt ====
+
+  - Definieren Sie die Dataclass ''Team'' mit den angegebenen Attributen.
+  - Implementieren Sie das Attribut ''members'' so, dass jede Instanz ihre eigene unabhängige Liste erhält.
+  - Implementieren Sie die Funktion ''add_member'', die einen Namen zur Mitgliederliste hinzufügt.
+  - Erstellen Sie zwei Instanzen der Dataclass und fügen Sie verschiedenen Instanzen verschiedene Mitglieder hinzu.
+  - Überprüfen Sie die Unabhängigkeit der Mitgliederlisten, indem Sie die Listen beider Teams ausgeben.
+
+
+----
+<nodisp>https://github.com/templates-python/m323-lu02-a09-dataclass</nodisp>
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/ch/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Kevin Maurizi 

@@ -13,7 +13,7 @@
 
 ===== Block- und Inline-Elemente =====
 
-Sie werden hauptsächlich auf 2 Arten von HTML-Elementen stoßen:
+Sie werden hauptsächlich auf 2 Arten von HTML-Elementen stossen:
 
 **Block**-Elemente wie:
 
@@ -34,18 +34,18 @@ Sie werden hauptsächlich auf 2 Arten von HTML-Elementen stoßen:
 
 **Inline**-Elemente dienen dazu, einen Teil eines Textes zu differenzieren, um ihm eine bestimmte Funktion oder Bedeutung zu geben. Inline-Elemente bestehen in der Regel aus einem einzigen oder wenigen Wörtern.
 
-==== Öffnende und schließende Tags ====
-Alle Elemente auf Blockebene haben einen öffnenden und einen schließenden Tag.
+==== Öffnende und schliessende Tags ====
+Alle Elemente auf Blockebene haben einen öffnenden und einen schliessenden Tag.
 
-Folglich sind selbstschließende Elemente Inline-Elemente, einfach weil ihre Syntax es nicht zulässt, dass sie ein anderes HTML-Element enthalten.
+Folglich sind selbstschliessende Elemente Inline-Elemente, einfach weil ihre Syntax es nicht zulässt, dass sie ein anderes HTML-Element enthalten.
 
 
-^                  ^ Mit öffnenden und schließenden Tags                         ^ Selbstschließend     |
+^                  ^ Mit öffnenden und schliessenden Tags                         ^ Selbstschliessend     |
 ^ Block-Elemente   | ''<p> </p>'' \\ ''<ul> </ul>'' \\ ''<ol> </ol>''            | **Nicht möglich**            |
 ^ Inline Elemente  | ''<a> </a>'' \\ ''<strong> </strong>'' \\ ''<em> </em>''    | ''<input>'' \\ ''<br>'' \\ ''<img>'' |
 
 ==== Hierarchie von HTML Dokumenten ====
-Ein HTML-Dokument ist wie ein großer Stammbaum, mit Eltern, Geschwistern, Kindern, Vorfahren und Nachkommen.
+Ein HTML-Dokument ist wie ein grosser Stammbaum, mit Eltern, Geschwistern, Kindern, Vorfahren und Nachkommen.
 Er entsteht durch die Möglichkeit, HTML-Elemente ineinander zu verschachteln.
 
 ==== Verschachtelung ====
@@ -77,9 +77,9 @@ In diesem Fall:
 
 ==== Reihenfolge ====
 
-Wie die **Verschachtelung** funktioniert, hängt von der Position der öffnenden und schließenden Tags ab.
+Wie die **Verschachtelung** funktioniert, hängt von der Position der öffnenden und schliessenden Tags ab.
 
-Da ein HTML-Element aus einem öffnenden Tag, einem schließenden Tag und allem, was dazwischen liegt, besteht, muss ein untergeordnetes Element **vor** dem Schließen des übergeordneten Elements geschlossen werden.
+Da ein HTML-Element aus einem öffnenden Tag, einem schliessenden Tag und allem, was dazwischen liegt, besteht, muss ein untergeordnetes Element **vor** dem Schliessen des übergeordneten Elements geschlossen werden.
 
 <code html4strict>
 <!-- This is INVALID code! :-( -->

@@ -1,55 +1,12 @@
 ====== LU04.L01 - Codingstyle umsetzen ======
 
-<file html4strict motorrad.html>
-<!DOCTYPE html>
-<html lang='de'>
-<head>
-  <meta charset='UTF-8'>
-  <title>Motorräder - beste Modelle und Marken</title>
-</head>
-<body>
-  <h1>Top Motorrad Modelle und Marken</h1>
-  <h2>Yamaha</h2>
-  <p>Yamaha ist ein japanisches Unternehmen, das seit vielen Jahren hochwertige Motorräder herstellt. Zu ihren bekanntesten Modellen gehören die Yamaha YZF-R1, die Yamaha MT-07 und die Yamaha Tenere 700.</p>
-  <h2>Honda</h2>
-  <p>Honda ist ebenfalls ein japanisches Unternehmen und stellt seit langem Motorräder her. Einige der bekanntesten Modelle sind die Honda CBR1000RR, die Honda CB650R und die Honda Africa Twin.</p>
-  <h2>BMW</h2>
-  <p>BMW ist ein deutsches Unternehmen, das sich auf leistungsstarke und luxuriöse Motorräder spezialisiert hat. Ihre bekanntesten Modelle sind die BMW R1250GS, die BMW S1000RR und die BMW R18.</p>
-  <h3>Motorradtypen</h3>
-  <ul>
-    <li>Sportmotorräder</li>
-    <li>Touringmotorräder</li>
-    <li>Naked Bikes</li>
-  </ul>
-</body>
-</html>
-</file>
+===== Gleitschirm =====
+[[https://bzz-m293.github.io/m293-lu04-a01-codingstyle/gleitschirm.html|Live preview]]
 
-<file html4strict motorrad.html>
-<!DOCTYPE html>
-<html lang='de'>
-<head>
-  <meta charset='UTF-8'>
-  <title>Gleitschirmfliegen - Tipps und Ausrüstung</title>
-</head>
-<body>
-  <h1>Gleitschirmfliegen - Einsteigertipps und Ausrüstung</h1>
-  <h2>Einführung ins Gleitschirmfliegen</h2>
-  <p>Gleitschirmfliegen ist ein beliebter Luftsport, bei dem der Pilot mit einem Gleitschirm durch die Lüfte gleitet. Es erfordert Übung und eine spezielle Ausrüstung, um sicher fliegen zu können.</p>
-  <h2>Ausrüstung</h2>
-  <p>Um Gleitschirmfliegen zu können, benötigen Sie eine Grundausstattung. Diese umfasst in der Regel einen Gleitschirm, einen Gurtzeug und einen Helm. Zusätzlich empfiehlt sich der Kauf eines Notschirms, einer Funkanlage und eines GPS-Geräts.</p>
-  <h2>Tipps für Anfänger</h2>
-  <ol>
-    <li>Wählen Sie einen geeigneten Startplatz</li>
-    <li>Üben Sie das Starten und Landen</li>
-    <li>Lernen Sie die Wetterbedingungen kennen</li>
-  </ol>
-  <h3>Beliebte Fluggebiete</h3>
-  <ul>
-    <li>Österreich</li>
-    <li>Schweiz</li>
-    <li>Deutschland</li>
-  </ul>
-</body>
-</html>
-</file>
+{{gh>https://github.com/bzz-m293/m293-lu04-a01-codingstyle/blob/solution/gleitschirm.html}}
+
+===== Motorrad =====
+
+[[https://bzz-m293.github.io/m293-lu04-a01-codingstyle/motorrad.html|Live preview]]
+
+{{gh>https://github.com/bzz-m293/m293-lu04-a01-codingstyle/blob/solution/motorrad.html}}

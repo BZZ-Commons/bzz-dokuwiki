@@ -4,18 +4,24 @@
 Unter **data hiding** (Datenkapselung) versteht man den Zugriff auf die Attribute eines Objektes nur mittels Methoden und nie im Direktzugriff [[https://de.wikipedia.org/wiki/Datenkapselung_(Programmierung)]].
 </WRAP>
 
+Im UML-Diagramm werden daher die Attribute mit dem Modifikator <<**private**>>, hier ein **-** Zeichen versehen.
 
-Im UML-Diagramm werden daher die Attribute mit dem Modifikator <<**private**>> - hier ein - Zeichen - versehen.\\ 
-{{:modul:m320:learningunits:lu01:theorie:klassendiagramm_-_modifikator_private.png?100|}}\\ 
-//Abb 1.9:// private-Modifikator in UML\\ 
+{{:modul:m320:learningunits:lu01:theorie:klassendiagramm_-_modifikator_private.png?100|}}
+
+//Abb. private-Modifikator in UML// 
 
 Was bedeutet nun aber data hiding praktisch betrachtet?
  
-Wir nehmen hier wieder unser Beispiel 1.1 der Türe. Gemäss UML-Diagramm sind alle Attribute ''private'' deklariert. Ein Zugriff in der Art
+Wir nehmen hier wieder unser Beispiel der Türe. 
+Gemäss UML-Diagramm sind alle Attribute ''private'' deklariert. Ein Zugriff in der Art
 <code Python>
-a_door_objekt.door_is_open = True
+some_door = Door()
+some_door.door_is_open = True
 </code>
-ist somit nicht erlaubt. Wäre dem nicht so, könnte z.B. auch im Zustand ''verriegelt'' die Türe geöffnet werden (vergl. dazu Abb. 1.4), was aber gar nicht geht. Viel mehr wird in der Methode ''lock_the_door'' sichergestellt, dass eben die Bedingungen gemäss Zustandsdiagramm eingehalten werden.
+
+ist somit nicht erlaubt. 
+Wäre dem nicht so, könnte z.B. auch im Zustand ''verriegelt'' die Türe geöffnet werden, was aber gar nicht geht. 
+Viel mehr wird in der Methode ''lock_the_door'' sichergestellt, dass eben die Bedingungen gemäss Zustandsdiagramm eingehalten werden.
 
 
 <code Python>
@@ -29,15 +35,19 @@ def lock_the_door(self):
        self._door_is_locked = self._the_door_lock.lock()
 </code>
 
-Der Benutzer der Klasse ''Door'' ist also vollständig von der Art der Implementation befreit und muss sich um keinerlei Zusicherungen kümmern. Es genügt, wenn er die passenden Methode aufruft. Hier also
+Der Benutzer der Klasse ''Door'' ist also vollständig von der Art der Implementation befreit und muss sich um keinerlei Zusicherungen kümmern. 
+Es genügt, wenn er die passenden Methode aufruft. Hier also
 <code Python>
-a_door_objekt.lock_the_door()
+some_door.lock_the_door()
 </code>
 
-=== data hiding bei Python ===
-Attribute die im Klassendiagramm als ''private'' deklariert sind, müssen in Python im Konstruktor initialisiert werden. Dies erfolgt durch folgende Schreibweise
+===== data hiding bei Python =====
+==== Attribute ====
+
+Attribute die im Klassendiagramm als ''private'' deklariert sind, müssen in Python im Konstruktor initialisiert werden. 
+Dies erfolgt durch folgende Schreibweise
 <code Python>
-self._das_gekapselte_Attribut = initialWert
+self._attributname = initial_wert
 </code>
 
 <WRAP center round info 60%>
@@ -46,5 +56,40 @@ Mit der Schreibweise ''_attributname'' zeigen wir an, dass dieses Attribut nicht
 Es wird aber nicht durch den Python-Interpreter verhindert, dass trotzdem auf solche Attribute zugegriffen wird.
 </WRAP>
 
+==== Property und Setter ====
+Durch den Einsatz von ''@property'' und ''@''//''ATTRIBUT''//''.setter'' können wir das Prinzip des Data Hidings unterstützen.
+Als Beispiel betrachten wir das Attribut ''color'' der Klasse ''Door''.
+
+<code python [enable_line_numbers="true"]>
+class Door:
+    def __init__(self, ref2door_lock, base_color):
+        self.color = base_color
+
+    @property
+    def color(self):
+        """
+        getter-Methode für die Eigenschaft color
+        :return: die Farbe des Objekts
+        """
+        return self._color
+
+    @color.setter
+    def color(self, new_color):
+        """
+        setter-Methode für die Eigenschaft color
+        :param new_color:
+        """
+        self._color = new_color
+        
+if __name__ == '__main__':
+    some_door = Door(None, 'blue')
+    print(f'The color is {some_door.color}')
+    some_door.color = 'red'
+    print(f'The color is {some_door.color}')
+</code>
+
+Auf den ersten Blick scheint es, als würde das Programm in Zeile 24 direkt auf das Attribut ''color'' zugreifen.
+Tatsächlich erkennt Python die Decorators ''@property'' und ''@color.setter'' und leitet die Zugriffe auf die entsprechenden Methoden um.
+
 ----
-[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) René Probst
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] René Probst, bearbeitet durch Marcel Suter

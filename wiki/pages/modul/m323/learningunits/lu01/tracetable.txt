@@ -1,0 +1,111 @@
+====== LU01d - Trace Table ======
+
+Trace Tables sind ein unverzichtbares Werkzeug in der Programmierung, insbesondere beim Debugging und der Analyse von Algorithmen. Sie ermöglichen es, den Zustand eines Programms Schritt für Schritt zu verfolgen und dadurch den Ablauf eines Programms oder einer Funktion nachvollziehbar zu machen. Dies ist besonders hilfreich, um logische Fehler zu identifizieren oder den Lernprozess bei der Programmierung zu unterstützen.
+
+===== Was ist ein Trace Table? =====
+
+Ein Trace Table, auch als Verfolgungstabelle oder Ablaufverfolgung bekannt, ist eine tabellarische Darstellung, die den Zustand eines Programms nach jedem Ausführungsschritt zeigt. Er listet die relevanten Variablen und Zustände auf, die sich während der Programmausführung ändern, und dokumentiert so den exakten Ablauf des Programms.
+
+===== Aufbau eines Trace Tables =====
+
+Ein Trace Table besteht in der Regel aus den folgenden Komponenten:
+
+  * **Schritt**: Diese Spalte nummeriert die einzelnen Programmschritte, um die Abfolge der Ausführung darzustellen.
+  * **Anweisung**: Hier wird die aktuell ausgeführte Anweisung oder der Befehl festgehalten.
+  * **Variablen**: Für jede relevante Variable gibt es eine eigene Spalte, in der ihr Wert nach jedem Programmschritt notiert wird.
+  * **Bedingungen**: Wenn das Programm Kontrollstrukturen wie ''if''-Anweisungen oder Schleifen enthält, werden hier die Bedingungen und ihre Auswertungen dokumentiert.
+  * **Kommentare**: Zusätzliche Kommentare oder Erklärungen, die den Ablauf oder besondere Ereignisse im Code verdeutlichen, können hier vermerkt werden.
+
+===== Beispiel eines Trace Tables =====
+
+Betrachten wir ein erweitertes Beispiel, das eine einfache Implementierung des Bubble-Sort-Algorithmus zeigt:
+
+<code python>
+zahlen = [4, 3, 1, 2]
+for i in range(len(zahlen)):
+    for j in range(0, len(zahlen)-i-1):
+        if zahlen[j] > zahlen[j+1]:
+            zahlen[j], zahlen[j+1] = zahlen[j+1], zahlen[j]
+</code>
+
+Ein entsprechender Trace Table könnte wie folgt aussehen:
+
+^ Schritt ^ i ^ j ^ zahlen[j] ^ zahlen[j+1] ^ Vergleich (zahlen[j] > zahlen[j+1]) ^ Array-Zustand ^
+| 1 | 0 | 0 | 4 | 3 | Ja | [3, 4, 1, 2] |
+| 2 | 0 | 1 | 4 | 1 | Ja | [3, 1, 4, 2] |
+| 3 | 0 | 2 | 4 | 2 | Ja | [3, 1, 2, 4] |
+| 4 | 1 | 0 | 3 | 1 | Ja | [1, 3, 2, 4] |
+| 5 | 1 | 1 | 3 | 2 | Ja | [1, 2, 3, 4] |
+| 6 | 2 | 0 | 1 | 2 | Nein | [1, 2, 3, 4] |
+| 7 | 3 | - | - | - | - | [1, 2, 3, 4] |
+
+==== Detaillierte Analyse des Beispiels ====
+
+  * **Schritt 1-3**: Während der ersten Schleifeniteration wird das größte Element (4) nach rechts verschoben. Jeder Vergleich, bei dem ein größeres Element links von einem kleineren liegt, führt zu einem Tausch. Der Trace Table zeigt genau, wie sich die Liste in jedem Schritt ändert.
+  * **Schritt 4-5**: In der zweiten Iteration wird der nächste größte Wert (3) an seine richtige Position verschoben.
+  * **Schritt 6**: In der dritten Iteration sind keine weiteren Swaps notwendig, da die Liste bereits sortiert ist.
+  * **Schritt 7**: Die vierte Iteration ist nur eine formale Überprüfung, da keine weiteren Vergleiche mehr nötig sind.
+
+===== Rekursives Bubble Sort Beispiel =====
+
+Nun erweitern wir das Beispiel mit einer rekursiven Implementierung des Bubble Sort. Der rekursive Ansatz arbeitet, indem er die Liste iterativ sortiert, bis keine weiteren Vertauschungen mehr notwendig sind.
+
+<code python>
+def bubble_sort_recursive(zahlen, n):
+    if n == 1:
+        return
+
+    for i in range(n - 1):
+        if zahlen[i] > zahlen[i + 1]:
+            zahlen[i], zahlen[i + 1] = zahlen[i + 1], zahlen[i]
+
+    bubble_sort_recursive(zahlen, n - 1)
+
+zahlen = [4, 3, 1, 2]
+bubble_sort_recursive(zahlen, len(zahlen))
+</code>
+
+Ein Trace Table für diese rekursive Version könnte folgendermaßen aussehen:
+
+^ Schritt ^ n ^ i ^ zahlen[i] ^ zahlen[i+1] ^ Vergleich (zahlen[i] > zahlen[i+1]) ^ Array-Zustand ^ Rekursionsaufruf ^
+| 1 | 4 | 0 | 4 | 3 | Ja | [3, 4, 1, 2] | Nein |
+| 2 | 4 | 1 | 4 | 1 | Ja | [3, 1, 4, 2] | Nein |
+| 3 | 4 | 2 | 4 | 2 | Ja | [3, 1, 2, 4] | Nein |
+| 4 | 4 | - | - | - | - | [3, 1, 2, 4] | Ja (n=3) |
+| 5 | 3 | 0 | 3 | 1 | Ja | [1, 3, 2, 4] | Nein |
+| 6 | 3 | 1 | 3 | 2 | Ja | [1, 2, 3, 4] | Nein |
+| 7 | 3 | - | - | - | - | [1, 2, 3, 4] | Ja (n=2) |
+| 8 | 2 | 0 | 1 | 2 | Nein | [1, 2, 3, 4] | Nein |
+| 9 | 2 | - | - | - | - | [1, 2, 3, 4] | Ja (n=1) |
+
+==== Detaillierte Analyse des Rekursiven Beispiels ====
+
+  * **Schritt 1-3**: In der ersten Iteration werden die größten Werte nach rechts verschoben, analog zum nicht-rekursiven Beispiel. Nach diesen Schritten bleibt der größte Wert (4) am Ende des Arrays.
+  * **Schritt 4**: Der erste rekursive Aufruf von ''bubble_sort_recursive'' erfolgt mit ''n = 3''. Dabei werden die nächsten größten Werte sortiert.
+  * **Schritt 5-6**: In dieser rekursiven Iteration werden die Werte weiter sortiert, bis ''3'' und ''2'' an ihrer richtigen Position sind.
+  * **Schritt 7**: Der nächste rekursive Aufruf erfolgt mit ''n = 2''. Da nur noch zwei Elemente überprüft werden, wird die Liste in dieser Iteration vollständig sortiert.
+  * **Schritt 8-9**: Im letzten rekursiven Aufruf mit ''n = 1'' wird keine weitere Aktion mehr ausgeführt, da die Basisbedingung erreicht ist, und der Sortiervorgang ist abgeschlossen.
+
+===== Anwendungsfälle von Trace Tables =====
+
+Trace Tables sind nützlich in verschiedenen Szenarien:
+
+  * **Debugging komplexer Algorithmen**: Sie helfen dabei, den genauen Ablauf eines Algorithmus nachzuvollziehen, insbesondere bei rekursiven oder iterativen Verfahren.
+  * **Verständnis von Kontrollstrukturen**: Beim Lernen von Schleifen, Bedingungen und rekursiven Aufrufen sind Trace Tables ein ausgezeichnetes Mittel, um den Fluss des Programms zu visualisieren.
+  * **Testen und Verifizieren von Programmen**: Durch das Nachverfolgen der Zustände können Programmierer sicherstellen, dass ein Programm korrekt arbeitet und die erwarteten Ergebnisse liefert.
+
+===== Erweiterte Nutzung von Trace Tables =====
+
+Neben einfachen Beispielen können Trace Tables auch bei komplexeren Strukturen verwendet werden:
+
+  * **Rekursive Funktionen**: Bei rekursiven Funktionen hilft ein Trace Table, die Rückgabewerte und die Rückkehr aus den Rekursionen im Detail zu verfolgen.
+  * **Optimierungsalgorithmen**: Bei der Analyse von Algorithmen, die auf Optimierung abzielen, wie z.B. Dynamic Programming, kann ein Trace Table zur Überprüfung der Zustandsübergänge und der Entscheidungslogik genutzt werden.
+  * **Nebenläufigkeit und Parallelität**: Trace Tables können verwendet werden, um den Zustand von Threads und die Synchronisation in parallelen Programmen zu überwachen.
+
+===== Schlussfolgerung =====
+
+Trace Tables sind ein mächtiges Werkzeug, um Programme und Algorithmen systematisch zu analysieren. Sie bieten eine visuelle Darstellung des Programmablaufs und helfen dabei, die interne Logik zu entwirren, Fehler zu identifizieren und ein tieferes Verständnis für den Code zu entwickeln. Durch die Anwendung von Trace Tables können sowohl Anfänger als auch erfahrene Programmierer ihre Fähigkeiten im Debugging und in der Algorithmusanalyse signifikant verbessern.
+
+----
+{{tag>M323-LU01}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/ch/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Kevin Maurizi 

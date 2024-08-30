@@ -1,57 +1,9 @@
 ====== LU12.L03 - Universal-Selektor anwenden ======
-[[https://templates-html.github.io/M293_LU12_02_universalselector/|Live Preview]]
+[[https://bzz-m293.github.io/m293-lu12-a03-universalselector/|Live Preview]]
 
-<file html4strict index.html>
-<!doctype html>
-<html lang='de'>
-<head>
-  <title>Universalselektor</title>
-  <meta charset='UTF-8'>
-  <link rel='stylesheet' type='text/css' href='css/style.css'>
-</head>
-<body>
-<header>Kopfzeile</header>
-<nav><a href='#'>Nav1</a> | <a href='#'>Nav2</a> |<a href='#'>Nav3</a>
-</nav>
-<main>
-  <h1>Universalselektor</h1>
-  <p>Ein einfacher Absatztext.</p>
-  <p>Ein zweiter Absatztext</p>
-</main>
-<footer>
-  <p>Fusszeile 1</p>
-  <p>Fusszeile 2</p>
-  <p>Fusszeile 3</p>
-</footer>
-</body>
-</html>
-</file>
+{{gh>https://github.com/BZZ-M293/m293-lu12-a03-universalselector/blob/solution/index.html}}
 
-<file css style.css>
-* {
-    margin: 5px;
-    padding: 3px;
-    border: 1px dotted black;
-    text-align: center;
-    font-family: 'Futura', sans-serif;
-}
-
-header, footer {
-    background-color: cornflowerblue;
-}
-
-main * {
-    background-color: lawngreen;
-}
-
-nav {
-    background-color: gold;
-}
-
-nav a {
-    background-color: orangered;
-}
-</file>
+{{gh>https://github.com/BZZ-M293/m293-lu12-a03-universalselector/blob/solution/css/style.css}}
 
 ===== Änderungen =====
 

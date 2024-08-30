@@ -5,14 +5,14 @@ Wie im [[.:objekt_grundlagen#beispieltuere|Beispiel mit der Tür]] zu erkennen i
   * Zustände
 
 Die **Eigenschaft**en werden durch **Attribute** repräsentiert.
+Für Eigenschaften werden typischerweise //Nomen// verwendet, also Groesse, Farbe, Alter usw. 
 
 Die **Fähigkeit**en werden durch **Methoden** bzw. Funktionen/Prozeduren repräsentiert.
+Bei den Fähigkeiten sind es //Verben// wie fahren, schliessen, einzahlen usw.
 
 Die **Zustände** ergeben sich aus den **aktuellen Werten** der Attribute.
-
-Für Eigenschaften werden typischerweise //Nomen// verwendet, also Groesse, Farbe, Alter usw. 
-Bei den Fähigkeiten sind es //Verben// wie fahren, schliessen, einzahlen usw. 
 Und bei den Zuständen //Adjektive// wie geschlossen, voll usw.
 
 ----
-[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) René Probst
+{{tag>M320-LU01}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] René Probst, bearbeitet durch Marcel Suter

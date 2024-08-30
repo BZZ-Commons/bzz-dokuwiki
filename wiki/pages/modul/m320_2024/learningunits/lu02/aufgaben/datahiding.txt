@@ -1,21 +1,28 @@
-====== LU02.A04 - Data Hiding ======
-=== Ziel ===
-Sie können anhand eines Programmcodes und seiner Ausführung aufzeigen, welche Probleme entstehen, wenn data hiding nicht beachtet wird.
+====== LU02.A05 - Data Hiding ======
+<WRAP center round todo 60%>
+Zeigen Sie die Probleme auf, die enstehen, wenn data hiding nicht beachtet wird.
+</WRAP>
 
-=== Auftrag ===
+===== Auftrag =====
   - Akzeptieren Sie das GitHub Classroom Assignment im Moodlekurs.
-  - Klonen Sie das Repository in PyCharm.
-  - Führen Sie das Programm "data_hiding.py" aus.
+  - Klonen Sie das Repository https://github.com/templates-python/m320-lu02-a05-datahiding in PyCharm.
+  - Führen Sie das Programm "datahiding.py" aus.
   - Interpretieren Sie die Ausgabe am Bildschirm.\\ Was stellen Sie bezüglich der beiden Bankkonten Nr. 1 und Nr. 2 fest?
   - Untersuchen Sie die beiden Klassen ''BankAccountWell'' und ''BankAccountUgly'' bezüglich ihrem Code, insbesondere mit Blick auf das Attribut ''saldo''.\\ Was stellen Sie hier fest?
   - Halten Sie Ihre Beobachtungen und Analysen in einem Textdokument fest.
 
-=== Dauer ===
+===== Dauer =====
 20 Minuten
 
-=== Abgabe ===
+==== Abgabe ====
 Geben Sie Ihren Text als PDF-Datei in Moodle ab.
 
 ----
-<nodisp>GitHub Repo: https://github.com/templates-python/M320_LU01_A6-DataHiding</nodisp>
-[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) René Probst
+<details>
+<summary>//=> GitHub Repo für externe Besucher//</summary>
+GitHub Repository https://github.com/templates-python/m320-lu02-a05-datahiding
+
+//Lernende am BZZ müssen den Link zum GitHub Classroom Assignment verwenden//
+
+</details>
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] René Probst, bearbeitet durch Marcel Suter

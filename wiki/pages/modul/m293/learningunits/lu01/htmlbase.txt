@@ -9,9 +9,9 @@ Dieses Grundgerüst definiert den Dateityp und die wichtigsten Blöcke.
 Webstorm erzeugt für jede neue HTML-Datei dieses Grundgerüst:
 <code html>
 <!DOCTYPE html>
-<html lang='en'>
+<html lang="en">
   <head>
-    <meta charset='UTF-8'>
+    <meta charset="UTF-8">
     <title>Title</title>
   </head>
   <body>
@@ -36,7 +36,7 @@ Der ''head''-Block enthält Informationen über den Inhalt der Seite.
 Diese Angaben werden im Webbrowser nicht angezeigt.
 
   * Die Angabe eines Titels (''<title>...</title>'') ist zwingend.
-  * Durch die Angabe der Zeichencodierung (''<meta charset='utf-8'>'') vermeiden wir Fehler bei der Darstellung von Umlauten und Sonderzeichen.
+  * Durch die Angabe der Zeichencodierung (''<meta charset="utf-8">'') vermeiden wir Fehler bei der Darstellung von Umlauten und Sonderzeichen.
 
 ===== <body> ... </body> =====
 Der Inhalt unserer Webseite wird im ''body''-Block geschrieben.

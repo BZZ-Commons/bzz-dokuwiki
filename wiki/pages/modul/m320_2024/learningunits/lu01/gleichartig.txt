@@ -1,5 +1,5 @@
 ====== LU01d - Ist Klasse gleich Klasse? ======
- 
+
 Warum stellen wir uns diese Frage?
 
 Sie haben im  ([[modul:m319:learningunits:lu12:|Modul 319]]) einen ersten Einblick erhalten. 
@@ -11,11 +11,10 @@ Solche Klassen haben normalerweise private Datenfelder (Variablen) und öffentli
 Sie enthalten normalerweise keine komplexe Geschäftslogik oder spezielle Verhaltensmethoden.
 Eine "allgemeine" Klasse kann ein komplexeres Objekt mit verschiedenen Verhaltensmethoden enthalten.
 
-----
-=== Beispiel: Dataklasse und Standardklasse ===
+==== Beispiel: Dataklasse und Standardklasse ====
 
 {{:modul:m320:learningunits:lu01:theorie:lu01-abb._1.7_neu_mensch-adresse.png?500|}}\\
-//Abb:// Beschreibung einer Person mit deren Adresse 
+//Abb. Beschreibung einer Person mit deren Adresse //
 
 
 Wir finden in Abbildung die zwei Klassen ''Human'' und ''Address'', die in einer einseitigen Beziehung "Mensch besitzt Adresse" stehen.
@@ -27,7 +26,9 @@ Die Klasse ''Human'' beschreibt eine Person mit all ihren Eigenschaften und Fäh
   * city
 
 
-die durch set- und get-Methoden geschrieben (set) bzw. gelesen (get) werden. Weitere Methoden werden kaum benötigt. Es handelt sich hier um eine typische Datenklasse.
+die durch set- und get-Methoden geschrieben (set) bzw. gelesen (get) werden. 
+Weitere Methoden werden kaum benötigt. 
+Es handelt sich hier um eine typische Datenklasse.
 
 Dagegen wird die Person durch eine Vielzahl von Eigenschaften wie z.B.
   * size
@@ -41,13 +42,9 @@ und Methoden wie
   * ...
 beschrieben. Zu diesen Attributen finden sich dann auch wieder set- und get-Methoden.
 
-----
-
-Was aber bedeutet das nun für die Programmierung in Python?\\
+==== Was aber bedeutet das für die Programmierung in Python? ====
 Wir betrachten uns hier die beiden Klassen ''Human'' und ''Address'' sowie deren Umsetzung in Code. Für die Person werden einige wenige Attribute und Methoden stellvertretend angeschrieben.
 
-
-----
 
 === Beispiel: Codierung einer Datenklasse und einer "standard" Klasse ===
 {|style = "table-layout: fixed; width: 100%;"
@@ -71,33 +68,42 @@ class Address:
     city: str = None
 
     # Durch den Decorator @dataclass wird unter anderem der Konstruktor generiert.
+    @property
+    def street(self):
+        return self._street
 
+    @street.setter
+    def street(self, value):
+        self._street = value
 
-"""
-Hier folgt die main-Methode über die das Programm ausgeführt werden kann.
-"""
+    @property
+    def number(self):
+        return self._number
 
-if __name__ == '__main__':
-    # Instanzieren eines Objektes über den Konstruktor.
-    # address ist eine Objekt-Variable, während Adress(...) den Konstruktor
-    # der Klasse ausführt, um das Objekt zu erzeugen
-    address = Address(street='Musterstrasse',
-                      number='11A',
-                      postal_code=9999,
-                      city='Musterdorf')
-    #
-    # Ausgabe der Werte über impliziten Aufruf der jeweiligen Methoden.
-    print('Werte des Objekts address:')
-    print(f'{address.street} {address.number} '
-          f'{address.postal_code} {address.city}') # nutzen der get-Methoden
-    #
-    address.postal_code = 1001  # nutzen der set-Methoden
-    print(f'{address.street} {address.number} '
-          f'{address.postal_code} {address.city}')
+    @number.setter
+    def number(self, value):
+        self._postal_code = value
+
+    @property
+    def postal_code(self):
+        return self._postal_code
+
+    @postal_code.setter
+    def postal_code(self, value):
+        self._number = value
+
+    @property
+    def city(self):
+        return self._city
+
+    @city.setter
+    def city(self, value):
+        self._city = value
 </code>
 |style="border-bottom : thin dotted; padding: 5px; vertical-align: top;"| 
 <code Python>
 from address import Address
+
 
 class Human:
     """
@@ -107,12 +113,15 @@ class Human:
     # Hier wird ein expliziter Konstruktor angeschrieben.
     # Mehr zur Bedeutung des Konstruktors folgt später.
     def __init__(self, name, weight, eye_color, one_address):
-        self._name      = name
-        self._weight    = weight
+        self._name = name
+        self._weight = weight
         self._eye_color = eye_color
         # hier können ganz viele weitere Attribute stehen, die durch
         # den Konstruktor initialisiert werden.
-        self._address = one_address #eine Referenz zu einem Address-Objekt
+        self._address = one_address  # eine Referenz zu einem Address-Objekt
+
+    def __repr__(self):
+        return f'Human(name=\'{self.name}\', weight={self.weight}, eye_color=\'{self.eye_color}\', address={self.address}'
 
     # Attribute werden über get-Methoden gelesen.
     # Python kennt dazu den Dekorator @property.
@@ -124,6 +133,10 @@ class Human:
     @property
     def name(self):
         return self._name
+
+    @property
+    def eye_color(self):
+        return self._eye_color
 
     @property
     def address(self):
@@ -141,48 +154,76 @@ class Human:
     # Und hier folgen Methoden, die das Verhalten des Objekts
     # beeinflussen.
     def eat(self, what_ever):
-         self._weight += 0.3
+        self._weight += 0.3
+</code>
+|- 
+|style="border-right: thin solid; border-bottom : thin dotted; padding: 5px; vertical-align: top;"| 
+<code python>
+"""
+Hier folgt die main-Methode über die das Programm ausgeführt werden kann.
+"""
 
+if __name__ == '__main__':
+    # Instanzieren eines Objektes über den Konstruktor.
+    # my_home ist eine Objekt-Variable, während Address(...) den Konstruktor
+    # der Klasse ausführt, um das Objekt zu erzeugen
+    my_home = Address(street='Musterstrasse',
+                      number='11A',
+                      postal_code=9999,
+                      city='Musterdorf')
+
+    my_home.postal_code = 1001  # nutzen der setter-Methode
+    # Ausgabe der Werte über impliziten Aufruf der jeweiligen property-Methoden.
+    print('Werte des Objekts address:')
+    print(f'{my_home.street} {my_home.number} '
+          f'{my_home.postal_code} {my_home.city}')  # nutzen der get-Methoden
+
+    print(my_home)  # Die Methode __repr__ wurde durch @dataclass erzeugt
+</code>
+|style="border-bottom : thin dotted; padding: 5px; vertical-align: top;"| 
+<code python>
 """
 Und nun ein Stück Programmcode, um den Effekt zu testen
 """
 if __name__ == '__main__':
-    address = Address(street='Musterstrasse', 
-                      number='11A', 
-                      postal_code=9999, 
+    address = Address(street='Musterstrasse',
+                      number='11A',
+                      postal_code=9999,
                       city='Musterdorf')
-    milli   = Human('Milli', 50, 'blue', address) # Initialgewicht ist 50
-    milli.eat('chips')                            # wer isst nimmt zu
+    milli = Human('Milli', 50, 'blue', address)  # Initialgewicht ist 50
+    milli.eat('chips')  # wer isst nimmt zu
     print(f'Name: {milli.name}')
     print(f'Adresse: {milli.address}')
-    print(f'Gewicht: {milli.weight}')             # das Ergebnis sieht man ;-)
+    print(f'Gewicht: {milli.weight}')  # das Ergebnis sieht man ;-)
+
+    print(milli)  # Ruft die Methode __repr__ auf
 </code>
- 
 |- 
 |style="border-right: thin solid; border-bottom : thin dotted; padding: 5px; vertical-align: top;"| 
 Ausgabe:
 <code >
 Werte des Objekts address:
-Musterstrasse 11A 9999 Musterdorf
 Musterstrasse 11A 1001 Musterdorf
+Address(street='Musterstrasse', number='11A', postal_code=1001, city='Musterdorf')
 </code>
 |style="border-bottom : thin dotted; padding: 5px; vertical-align: top"| 
 Ausgabe:
 <code>
 Name: Milli
-Adresse: Address(street='Musterstrasse', number='11A', postal_code=9999, city='Musterdorf')
+Adresse: Address(street='Musterstrasse', number=9999, postal_code=9999, city='Musterdorf')
 Gewicht: 50.3
+Human(name='Milli', weight=50.3, eye_color='blue', address=Address(street='Musterstrasse', number=9999, postal_code=9999, city='Musterdorf')
 </code>
-
 |-
 
 |}
-\\
+
+
+Sie haben nun an Hand der Klasse ''Human'' den Aufbau einer Klasse mit all ihren Details gesehen. 
+Ebenso könenn Sie feststellen, dass eine "Datenklasse" in Python mittels dem ''@dataclass'' Dekorator um ein vielfaches einfacher zu erstellen ist, da der Konstruktor verschiedene weitere Methoden notwendig sind.
+
+Anmerkung: Sie können natürlich auch einer "Datenklasse" eigene Methoden für ''__init__'', ''__repr__'', etc. hinzufügen.
+
+
 ----
-
-Sie haben nun an Hand der Klasse ''Human'' den Aufbau einer Klasse mit all ihren Details gesehen. Ebenso könenn Sie feststellen, dass eine "Datenklasse" in Python mittels dem ''@dataclass'' Dekorator um ein vielfaches einfacher zu erstellen ist, da weder Konstruktor noch Methoden notwendig sind.\\
-Anmerkung: Sie können natürlich auch einer "Datenklasse" eigene Methoden oder angpasste setter und getter zufügen.
-
-
-----
-[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) René Probst, bearbeitet durch Marcel Suter
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] René Probst, bearbeitet durch Marcel Suter

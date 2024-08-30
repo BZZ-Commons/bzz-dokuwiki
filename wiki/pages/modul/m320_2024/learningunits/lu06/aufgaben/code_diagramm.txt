@@ -1,0 +1,31 @@
+====== LU06.A02: Sequenzdiagramm zu Code zeichnen ======
+
+<WRAP center round todo 60%>
+Sie können aus einem einfachen Programcode das zugehörige Sequenzdiagramm skizzieren.
+</WRAP>
+
+===== Auftrag =====
+Studieren Sie den Code der Klasse MiniChat (aus [[.:kommunikation]]) in seiner Grundform (mit den Objekten ''max'', ''moritz'' und ''lempel''). 
+Sikzzieren Sie das dazu passende Sequenzdiagramm auf.
+
+=== Hinweis: === 
+Für Sequenzdiagramme bietet Ihnen MS-Visio ein entsprechendes Shape an.
+
+===== Dauer =====
+10 - 15 Minuten
+
+===== Abgabe =====
+Geben Sie das Dokument als PDF-Datei in Moodle ab.
+
+----
+<details>
+<summary>//=> GitHub Repo für externe Besucher//</summary>
+GitHub Repository https://github.com/templates-python/m320-lu06-a01-people.git
+
+//Lernende am BZZ müssen den Link zum GitHub Classroom Assignment verwenden//
+
+</details>
+
+{{tag>M320-LU06}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] René Probst, bearbeitet durch Marcel Suter
+

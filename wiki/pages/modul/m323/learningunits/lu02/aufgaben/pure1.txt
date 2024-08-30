@@ -8,7 +8,7 @@ Schreiben Sie eine Funktion in Python, die eine Liste von Zahlen als Eingabe akz
 === Anleitung in Schritten ===
   - Definieren Sie die Funktion mit einem passenden Namen, z. B. ''sum_of_numbers''.
   - Akzeptieren Sie eine Liste von Zahlen als Parameter.
-  - Verwenden Sie die eingebaute ''sum''-Funktion oder eine Schleife, um die Summe der Zahlen zu berechnen.
+  - Verwenden Sie die eingebaute ''sum''-Funktion oder eine Rekursion, um die Summe der Zahlen zu berechnen.
   - Geben Sie die berechnete Summe zurück.
 
 <code python>

@@ -8,14 +8,18 @@ Als Vorbereitung für die weiteren Aufgaben, führen Sie einige Schritte durch.
 ===== FileZilla =====
 
 ==== Installation ====
-
-  - Laden Sie den [[https://filezilla-project.org/download.php?type=client|FileZilla-Client]] herunter.
-  - Installieren Sie FileZilla auf Ihrem Laptop. \\ Stellen Sie sicher, dass keine zusätzlichen Softwarepakete mit installiert werden.
-  - Starten Sie FileZilla
+  - Folgen Sie dem [[https://filezilla-project.org/download.php?show_all=1|Link zum Download]] von FileZilla.
+  - Laden Sie das Zip-Archiv für Windows 64bit herunter.
+  - Entpacken Sie das Zip-Archiv.
+  - Starten Sie das Programm ''filezilla.exe'' im entpackten Ordner.
 
 ==== Server einrichten ====
 <WRAP center round todo 60%>
-Richten Sie die Verbindungen zu Ihren Subdomains in FileZilla ein.
+Richten Sie die Verbindungen zu Ihren beiden Domains in FileZilla ein:
+  * **USERNAME**.students.bzz.ch
+  * test**USERNAME**.students.bzz.ch
+
+Ihre Domains, Benutzername und Passwort haben Sie per Email erhalten.
 </WRAP>
 
 | 1. Öffnen Sie im Menu "File" den "Servermanager" | {{:modul:m293:learningunits:lu09:aufgaben:filezilla01.png?400|}} |
@@ -41,7 +45,7 @@ Mehr dazu können Sie unter [[https://developers.google.com/search/docs/crawling
 
 <WRAP center round todo 60%>
 Laden Sie die oben verlinkte Datei "robots.txt" auf Ihren Rechner herunter. \\ \\
-Laden Sie dann diese Datei in den Wurzelordner ''/'' Ihrer Subdomain hoch.
+Laden Sie dann diese Datei in den Wurzelordner ''/'' Ihrer beiden Webspaces hoch.
 </WRAP>
 
 ==== Unterordner erstellen ====
@@ -53,16 +57,17 @@ Erstellen Sie die beiden Ordner "LU09A02" und "LU09A03".
 </WRAP>
 
 ==== Live Test ====
-Zusätzlich zu Ihrem öffentlichen Webspace haben Sie auch eine Subdomain als Live Test System erhalten.
-Auch diese Subdomain wollen wir in FileZilla einrichten.
+Zusätzlich zu Ihrem Live-Webspace (''USERNAME.students.bzz.ch'') haben Sie auch einen Webspace als Live Test System (testUSERNAME.students.bzz.ch) erhalten.
+Auch diesen Webspace wollen wir in FileZilla einrichten.
 
 <WRAP center round todo 60%>
-Führen Sie die Schritte "Server einrichten", "Roboter - Nein, danke" und "Unterordner erstellen" nocheinmal für Ihre Test-Subdomain durch.
-Der einzige Unterschied ist der Servername im Servermanager von FileZilla, dieser ist "test**USERNAME**.students.bzz.ch".
+Führen Sie die Schritte "Server einrichten", "Roboter - Nein, danke" und "Unterordner erstellen" nocheinmal für Ihren Test-Webspace durch.
+Der einzige Unterschied ist der Servername und Benutzername im Servermanager von FileZilla, dieser ist "test**USERNAME**.students.bzz.ch".
 </WRAP>
 
 ===== Webspace schützen =====
-Bevor wir unsere Dateien hochladen, setzen wir einen Passwortschutz.
+Unser Live Test-System dient auch dazu, die Auswirkungen von Änderungen auszuprobieren.
+Bevor wir unsere Dateien hochladen, setzen wir daher einen Passwortschutz.
 Dadurch können wir unsere Seiten ansehen, aber keine Suchmaschinen oder externe Personen erhalten Zugang zu unserer Seite.
 
 | 1. Melden Sie sich unter [[https://students.bzz.ch]] an. \\ Die Zugangsdaten haben sie via Email erhalten. |  {{:modul:m293:learningunits:lu09:aufgaben:froxlor01.png?400|}}  |

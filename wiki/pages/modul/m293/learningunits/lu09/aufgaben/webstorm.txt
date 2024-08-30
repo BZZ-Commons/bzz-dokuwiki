@@ -4,6 +4,9 @@
 Veröffentlichen Sie das Projekt "LU09_A02_Profile" in Ihrem Webspace.
 Webstorm soll den Webauftritt in den Ordner "LU09A02" hochladen.
 </WRAP>
+
+**[[https://classroom.github.com/a/EfLLFz7y|GitHub Classroom Assignment]]**
+
 Veröffentlichen Sie den Webauftritt zunächst auf den Live Test Webspace.
 Erst wenn alle Inhalte Links, Bilder, ... korrekt angezeigt werden, veröffentlichen Sie die Webseite auf den produktiven Webspace.
 
@@ -12,12 +15,19 @@ Erst wenn alle Inhalte Links, Bilder, ... korrekt angezeigt werden, veröffentli
   - Klonen Sie das Repository in Webstorm.
   - Richten Sie das Deployment für den Live Test und die produktive Umgebung ein.
     * Live Test: test**USERNAME**.students.bzz.ch/LU09A02
-    * Produktiv: **USERNAME**..students.bzz.ch/LU09A02
+    * Produktiv: **USERNAME**.students.bzz.ch/LU09A02
   - Veröffentlichen Sie den Webauftritt zunächst im Live Test.
   - Prüfen Sie, ob alle Webseiten vollständig und korrekt angezeigt werden. Korrigieren Sie allfällige Fehler und wiederholen Sie Schritt 4&5.
   - Veröffentlichen Sie den Webauftritt in der produktiven Umgebung.
 
-<nodisp>[[https://github.com/templates-html/M293_LU09_A02_Profile.git]]</nodisp>
 
 ----
+<details>
+<summary>//=> GitHub Repo für externe Besucher//</summary>
+GitHub Repository https://github.com/BZZ-M293/m293-lu09-a02-profile
+
+//Lernende am BZZ müssen den Link zum GitHub Classroom Assignment verwenden//
+
+</details>
+
 [[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Kevin Maurizi, Marcel Suter

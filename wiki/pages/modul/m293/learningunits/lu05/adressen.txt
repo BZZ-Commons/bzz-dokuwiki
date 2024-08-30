@@ -8,7 +8,7 @@ Dabei unterscheiden wir zwischen absoluten und relativen Adressen.
 
 ===== Absolute Adressen =====
 <WRAP center round info 60%>
-Eine absolute Adresse gibt den vollständigen Pfad zu einer Ressource an, z.B. ''https://it.bzz.ch/wikiV2/_media/howto/pycharm/props01.png''
+Eine absolute Adresse gibt den vollständigen Pfad zu einer Ressource an, z.B. ''https://it.bzz.ch/wikiV2/_media/howto/pycharm/props01.png'' \\
 Ein Beispiel aus der realen Welt: "Sie finden mich im Zimmer 105, 1. Stock, Seestrasse 110, 8810 Horgen, Schweiz."
 </WRAP>
 
@@ -16,8 +16,8 @@ Absolute Adressen sind immer dann nötig, wenn ich auf Ressourcen einer anderen 
 
 ===== Relative Adressen =====
 <WRAP center round info 60%>
-Eine relative Adresse gibt den Pfad ausgehend von einem bestimmten Punkt an, z.B. ''./img/props01.png''.
-Ein Beispiel aus der realen Welt: "Gehen Sie in den 1. Stock und suchen Sie das Zimmer 105."
+Eine relative Adresse gibt den Pfad ausgehend von einem bestimmten Punkt an, z.B. ''./img/props01.png''. \\
+Ein Beispiel aus der realen Welt: "Gehen Sie in den 1. Stock und suchen Sie das Zimmer 105." Wir gehen also von dem Gebäude aus, in dem wir aktuell sind.
 </WRAP>
 
 Ist die gesuchte Ressource Teil der gleichen Webseite, so ist ein relativer Pfad von Vorteil.
@@ -51,23 +51,23 @@ Persönliche verwende ich in der Regel die erste Variante.
 
 == image01.gif ===
 <code html>
-<img src='./image01.gif' ...>
-<img src='image01.gif' ...>
-<img src='/pages/image01.gif' ...>
+<img src="./image01.gif" ...>
+<img src="image01.gif" ...>
+<img src="/pages/image01.gif" ...>
 </code>
 
 
 == image02.png ==
 <code html>
-<img src='./img/image02.png' ...>
-<img src='img/image02.png' ...>
-<img src='/pages/img/image02.png' ...>
+<img src="./img/image02.png" ...>
+<img src="img/image02.png" ...>
+<img src="/pages/img/image02.png" ...>
 </code>
 
 == image03.jpg ==
 <code html>
-<img src='../images/image03.jpg' ...>
-<img src='/images/image03.png' ...>
+<img src="../images/image03.jpg" ...>
+<img src="/images/image03.png" ...>
 </code>
 
 

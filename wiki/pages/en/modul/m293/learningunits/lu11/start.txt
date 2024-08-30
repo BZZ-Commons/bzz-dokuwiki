@@ -1,0 +1,9 @@
+====== LU11 - Webdesign ======
+
+<nspages . -h1  -exclude -simpleList -textPages=""> 
+ 
+===== Tasks =====
+<nspages .:aufgaben -h1 -exclude:start -exclude -simpleList -textPages=""> 
+
+===== Solutions =====
+<nspages .:loesungen -h1  -exclude:start -exclude -simpleList -textPages=""> 

@@ -1,46 +1,8 @@
 ====== LU03.L01 - Portfolio Seite ======
 
-[[https://templates-html.github.io/M293_LU03_01_Portfolio/portfolio.html|Live Preview]]
+[[https://bzz-m293.github.io/m293-lu03-a01-portfolio/portfolio.html|Live Preview]]
 
-<code html4strict>
-  <body>
-    <h1>Mein Portfolio</h1>
-
-    <section>
-      <h2>Über mich</h2>
-      <img src='meinBild.jpg' alt='Ein Bild von mir' width='200' height='200'>
-      <p>Ich bin ein professioneller Entwickler, spezialisiert auf das <strong>Durchsuchen</strong> von Code anderer Entwickler nach <strong>Fehlern</strong> und <strong>Sicherheitslücken</strong>. Ich liebe es, meine Fähigkeiten zu nutzen, um Software sicherer und effizienter zu machen.</p>
-    </section>
-
-    <section>
-      <h2>Meine Hobbys</h2>
-      <ul>
-        <li>Programmieren</li>
-        <li>Musik hören</li>
-        <li>Wandern</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Lieblingsessen</h2>
-      <ol>
-        <li>Pizza</li>
-        <li>Sushi</li>
-        <li>Steak</li>
-      </ol>
-    </section>
-
-    <section>
-      <h2>Soziale Medien</h2>
-      <ul>
-        <li><a href='https://www.facebook.com/meinProfil' target='_blank'>Facebook</a></li>
-        <li><a href='https://www.twitter.com/meinProfil' target='_blank'>Twitter</a></li>
-        <li><a href='https://www.linkedin.com/meinProfil' target='_blank'>LinkedIn</a></li>
-      </ul>
-    </section>
-
-  </body>
-</code>
+{{gh>https://github.com/bzz-m293/m293-lu03-a01-portfolio/blob/solution/portfolio.html}}
 
 
 Dieser Code enthält die folgenden neu hinzugefügten Elemente:
@@ -52,7 +14,7 @@ Dieser Code enthält die folgenden neu hinzugefügten Elemente:
   * <strong>: Dieses Tag wird verwendet, um wichtige Wörter im Text hervorzuheben.
   * <ul>, <li>: Diese Tags werden verwendet, um eine ungeordnete Liste (für die Hobbys und Social Media Links) zu erstellen.
   * <ol>: Dieses Tag wird verwendet, um eine geordnete Liste (für die Lieblingsessen) zu erstellen.
-  * <a>: Dieses Tag wird verwendet, um Links zu Ihren Social-Media-Profilen hinzuzufügen. Die href-Attribute sollten durch die tatsächlichen URLs Ihrer Profile ersetzt werden. Das target='_blank'-Attribut sorgt dafür, dass der Link in einem
+  * <a>: Dieses Tag wird verwendet, um Links zu Ihren Social-Media-Profilen hinzuzufügen. Die href-Attribute sollten durch die tatsächlichen URLs Ihrer Profile ersetzt werden. Das target='_blank'-Attribut sorgt dafür, dass der Link in einem neuen Tab bzw. Fenster geöffnet wird.
 
 ---- 
 

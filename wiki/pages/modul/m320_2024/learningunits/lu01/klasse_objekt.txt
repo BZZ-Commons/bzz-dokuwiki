@@ -13,12 +13,12 @@ Wird zur Laufzeit des Programms ein Objekt erzeugt, wird im Speicher eine **Inst
 Eine Klasse stellt den Bauplan für ein Objekt dar.
 </WRAP>
 
-----
-=== Beispiel: Anleitung für den Zusammenbau einer Lego(r)-Figur ===
+==== Beispiel: Anleitung für den Zusammenbau einer Lego(r)-Figur ====
 ^ Bauplan                                                               ^ Produkt                                                              ^
 | beschreibt Klassen und Beziehungen                                    | ist das nutzbare Objekt                                              |
-| {{:modul:m320:learningunits:lu01:klassendiagramm_-_bauplan.png?200}}  | {{:modul:m320:learningunits:lu01:klassendiagramm_-_objekt.png?165}}  |
-| //Abb:// Bauplan                                                  | //1.6:// Objekt                                                  |
+| {{.:lego_bauplan.png?200}}  | {{.:lego_objekt.png?165}}  |
+| //Abb. Bauplan//                                                  | //Abb. Objekt//                                                  |
 
 ----
-[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) René Probst, bearbeitet durch Marcel Suter
+{{tag>M320-LU01}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] René Probst, bearbeitet durch Marcel Suter

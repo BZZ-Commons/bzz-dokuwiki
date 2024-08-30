@@ -62,13 +62,39 @@ def modify_list():
     return my_list.append(4)
 
 if __name__ == '__main__':
-    print('Vor der Änderung:', my_list)  # Output: Vor der Änderung: [1, 2, 3]
-    modify_list()
-    print('Nach der Änderung:', my_list)  # Output: Nach der Änderung: [1, 2, 3, 4]
+    print('Vor der Änderung: ', my_list)  # Output: Vor der Änderung: [1, 2, 3]
+    new_list = modify_list()
+    print('Neue Liste: ', new_list)  # Output: Neue Liste: [1, 2, 3, 4]
+    print('Nach der Änderung: ', my_list)  # Output: Nach der Änderung: [1, 2, 3, 4]
 </code>
 
 Wie Sie sehen können, ändert die Funktion ''modify_list'' den Zustand der ''my_list''. Daher ist ''modify_list'' eine unpure Funktion. In diesem Fall wird das ''global''-Schlüsselwort nicht benötigt, da Listen in Python "mutable" (veränderbar) sind. Das heißt, sie können innerhalb einer Funktion verändert werden, ohne dass das ''global''-Schlüsselwort benötigt wird. Das kann zu einer weniger klaren Code-Struktur führen, da es schwieriger ist, solche Änderungen auf den ersten Blick zu erkennen.
 
+==== Beispiel 3 ====
+
+In diesem Beispiel wird eine Liste als Argument an eine Funktion übergeben. Die Funktion modifiziert die Liste direkt, was zeigt, dass Listen in Python by reference übergeben werden.
+
+<code python>
+def append_to_list(some_list, append):
+    """
+    Appends the value ''append'' to the passed list.
+    """
+    some_list.append(append)
+    
+if name == 'main':
+    my_list = [1, 2, 3]
+    print('Vor der Änderung:', my_list) # Output: Vor der Änderung: [1, 2, 3]
+    append_to_list(my_list,5)
+    print('Nach der Änderung:', my_list) # Output: Nach der Änderung: [1, 2, 3, 5]
+</code>
+
+In diesem Fall sehen wir, dass die Funktion ''append_to_list'' die Liste ''my_list'' ändert, indem sie ein weiteres Element hinzufügt. Obwohl ''my_list'' als Argument übergeben wird, wird es innerhalb der Funktion verändert, ohne dass es zurückgegeben werden muss. Das zeigt, dass die Liste by reference übergeben wird und Änderungen an der Liste in der Funktion Auswirkungen auf die ursprüngliche Liste außerhalb der Funktion haben.
+
+Dieses Verhalten macht ''append_to_list'' ebenfalls zu einer unpure function, da sie den Zustand der übergebenen Liste direkt verändert.
+
+<WRAP center round tip 60%>
+Wichtiger Hinweis: Dieses Beispiel verdeutlicht die Implikationen der Übergabe von mutable Objekten wie Listen in Python. Es ist wichtig zu verstehen, dass solche Änderungen schwer nachvollziehbar sein können, insbesondere in komplexeren Programmen, und das Verständnis des Unterschieds zwischen pure und unpure functions erleichtert es, vorhersehbaren und wartbaren Code zu schreiben.
+</WRAP>
 
 <WRAP center round tip 60%>
 **Fazit**

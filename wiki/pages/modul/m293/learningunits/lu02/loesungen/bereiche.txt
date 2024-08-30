@@ -1,45 +1,8 @@
 ====== LU01.L01 - Bereiche ======
-<code html>
-<!DOCTYPE html>
-<html lang='de'>
-  <head>
-    <meta charset='UTF-8'>
-    <title>LU02.A01 - Bereiche einsetzen</title>
-    <link rel="stylesheet" href="bereiche.css">
-  </head>
-  <body>
-    <header>
-      Ich bin die Kopfzeile der Seite
-      <nav>
-        Hier steht die Navigation
-      </nav>
-    </header>
 
-    <main>
-      Der Hauptinhalt folgt hier.
-      <article>
-        Ich bin der erste Artikel.
-        <section>
-          Als Abschnitt gehöre ich zum ersten Artikel.
-        </section>
-        <section>
-          Auch ich bin ein Abschnitt.
-        </section>
-      </article>
-      <article>
-        Der zweite Artikel bin ich.
-        <section>
-          Abschnitt eins im Artikel zwei.
-        </section>
-      </article>
-    </main>
+[[https://bzz-m293.github.io/m293-lu02-a01/bereiche.html|Live preview]]
 
-    <footer>
-      Die Fusszeile schliesst alles ab.
-    </footer>
-  </body>
-</html>
-</code>
+{{gh>https://github.com/BZZ-M293/m293-lu02-a01/blob/solution/bereiche.html}}
 
 ----
 [[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Kevin Maurizi, Marcel Suter

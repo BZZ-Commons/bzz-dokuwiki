@@ -35,6 +35,16 @@ if __name__ == "__main__":
     print("Gesamtpreis:", total)
 </code>
 
+<WRAP center round info 60%>
+Die Funktion ''calculate_total_unpure'' wird als **unrein** angesehen aus folgenden Gründen:
+
+  * **Abhängigkeit vom globalen Zustand:** Die Funktion greift auf zwei globale Variablen zu, ''BASKET'' und ''DISCOUNT''. Das bedeutet, dass ihr Verhalten sich abhängig vom Zustand dieser globalen Variablen ändern kann, was sie kontextabhängig macht.
+  * **Seiteneffekte:** Die Funktion gibt den Gesamtpreis mit ''print'' aus, was ein Seiteneffekt ist. Eine reine Funktion sollte nur einen Wert zurückgeben und keine Seiteneffekte wie das Ausgeben auf der Konsole, das Ändern des globalen Zustands oder das Interagieren mit externen Systemen haben.
+  * **Modifikation des globalen Zustands:** Obwohl diese spezifische Funktion die globalen Variablen nicht modifiziert, ist sie dennoch abhängig von ihnen, und jede Änderung dieser globalen Variablen außerhalb der Funktion beeinflusst das Ergebnis. Diese Abhängigkeit von einem externen veränderlichen Zustand macht die Funktion unrein.
+
+</WRAP>
+
+
 === Zusammenfassung ===
 Durch die Umwandlung der unpure function in eine pure function haben Sie eine bessere Trennung von Bedenken erreicht und die Testbarkeit der Funktion verbessert. Die neue Funktion ist jetzt unabhängig von globalen Zuständen und Seiteneffekten, was sie robuster und leichter zu verstehen macht.
 

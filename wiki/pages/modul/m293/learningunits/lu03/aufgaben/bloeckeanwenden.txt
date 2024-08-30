@@ -1,17 +1,20 @@
 ====== LU03.A01 - Portfolio Seite ======
 
 <WRAP center round todo 60%>
-Ergänzen Sie den HTML-Code mit möglichst vielen der neu kennengelernten Elemente und folgendem Inhalt:
+Ergänzen Sie den HTML-Code mit möglichst vielen der neu kennengelernten Elemente.
+Erstellen Sie dazu ein Portfolio für eine erfundene Person mit folgendem Inhalt:
 
-  * Fügen Sie ein Bild von sich ein
-  * Erstellen Sie eine Beschreibung über sich
-  * Erstellen Sie eine Hobby Liste 
+  * Fügen Sie ein Portraitfoto ein (https://thispersondoesnotexist.com/)
+  * Erstellen Sie eine Beschreibung über die Person
+  * Erstellen Sie eine Liste ihrer Hobbys 
   * Erstellen Sie Rangliste ihrer Lieblingsessen
   * Erstellen Sie Links zu ihren Social-Media Profilen
 
-Natürlich hat jeder Abschnitt einen eigenen Titel. Markieren Sie wichtige Wörter im Text über sie selber. 
+Natürlich hat jeder Abschnitt einen eigenen Titel. Markieren Sie wichtige Schlagwörter im Text. 
 
 </WRAP>
+
+** [[https://classroom.github.com/a/GjBYPj5B|GitHub Classroom Assignment]] **
 
 Als Vorlage erhalten Sie eine HTML-Datei ''portfolio.html'' mit einem HTML Template. 
 
@@ -24,6 +27,12 @@ Als Vorlage erhalten Sie eine HTML-Datei ''portfolio.html'' mit einem HTML Templ
 ---- 
 
 {{tag>m293-LU03}}
-<nodisp>[[https://github.com/templates-html/M293_LU03_01_Portfolio|Repository]]</nodisp>
+<details>
+<summary>//=> GitHub Repo für externe Besucher//</summary>
+GitHub Repository https://github.com/BZZ-M293/m293-lu03-a01-portfolio
+
+//Lernende am BZZ müssen den Link zum GitHub Classroom Assignment verwenden//
+
+</details>
 
 [[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Kevin Maurizi, Marcel Suter

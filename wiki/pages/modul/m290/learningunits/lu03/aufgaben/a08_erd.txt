@@ -1,0 +1,37 @@
+====== LU03.A05 - ERD: SchoolGrades DB ======
+
+After developing our conceptional data model, the next step to establish a physical data base is shape a ERD, the Entity Relationship Diagram. 
+
+===== Prerequisites  =====
+  * Work type: Peer
+  * Means of aid: only teaching materials, no use of ai.
+  * Timeframe: 10 Minutes
+  * Expected result: A Word/PDF file with an ERD that visualises the given business case.  
+
+
+===== Task  =====
+Create an ERD to the given ERM in the Crow's Foot Notation. 
+  * Identify additional attributes
+  * Establish relation with inkl. the primary keys and foreign keys
+  * Connect the tables and finish your work by fixing the entities (0:1, :1, 0:n)
+
+
+===== Given Details =====
+1. Relationships:
+  * 0-to-1:
+    * A student habe 0 to at the most 1 grade in each subject.
+  * 0-to-many
+    * A subject can be attended by many students.
+
+2. ERM visualisatiob
+{{:modul:m290:learningunits:lu03:loesungen:solution_a32.drawio.png?1000|}}
+
+
+
+===== Vocabulary =====
+^ English ^ German ^ 
+| prerequisite | Grundvoraussetzung |
+| given| gegebene, vorausgesetzt |
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

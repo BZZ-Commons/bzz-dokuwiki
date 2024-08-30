@@ -1,0 +1,44 @@
+====== LU03b - Data-types ======
+In chapter LU03b we want to talk about data-types, why we are in need of them, and how they are used in the database world in order to specify the content of tables. 
+
+==== Most common MySQL data-types ====
+MySQL provides us with a variety of data types to fulfil the most diverse data requirements. Let's take a look at the most important categories:
+
+  * **Numeric Data Types**: Used for storing numerical values.
+    * INT or INTEGER: Standard integers (-2147483648 to 2147483647), example: storing a person's age.
+    * FLOAT: Approximate numeric values with single precision, example: storing product prices.
+    * DECIMAL(M,D): Exact numeric values with fixed decimal points (M total digits, D decimal places), example: amount DECIMAL(10,2) for storing monetary amounts.
+  * **String Data Types**: Used for storing textual data: 
+    * CHAR(M): Fixed-length character string (M characters), example: gender CHAR(1) for storing 'M' or 'F'.
+    * VARCHAR(M): Variable-length character string (up to M characters), text data up to 65535 characters
+  * **Binary Data Types**:
+    * BOOLEAN: Boolean value (TRUE, FALSE)
+  * **Date and Time Data Types**: Used for storing date and time values.
+    * DATE: Date (YYYY-MM-DD)
+    * TIME: Time (HH:MM:SS)
+    * DATETIME: Date and time (YYYY-MM-DD HH:MM:SS)
+    * TIMESTAMP: Timestamp (YYYY-MM-DD HH:MM:SS) with time zone
+    * Example: birth_date DATE for storing a person's birth date.
+
+**Please note that ...**
+  * the data-types offered depend on the database System, which is currently in use. 
+  * we are going to use the DBS MySQL, therefore we use MySQL data-types.
+  * the list of data-types below is an extract with the most common ones and therefore not complete. 
+  * The following figure shows all possible data-types
+
+{{:modul:m290:learningunits:lu03:theorie:data-types-in-mysql-1843724719.png?400|}}
+---- 
+
+===== Vocabulary =====
+^ English ^ German ^
+| to depend on | abhängen von | 
+| in order to | um zu |
+| currently | derzeit, aktuell | 
+| common | üblich, gebräuchlich |
+
+
+
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

@@ -24,6 +24,14 @@ ZHservices prüft meinen Benutzernamen und Passwort.
 Sollten meine Angaben nicht zu einem bekannten User passen, so erhalte ich eine Fehlermeldung.
 </WRAP>
 
+=== Autorisierung ===
+Die **Autorisierung** ist die Einräumung von Rechten. Nachdem die Identifizierung einer Person erfolgreich war, bedeutet das noch nicht automatisch, dass diese Person bereitgestellte Daten, Dienste und Leistungen sehen oder nutzen darf. Die Autorisierung entscheidet darüber, welche Berechtigungen und Zugriffsrechte einer Person gewährt werden. 
+Kurz gesagt: Während die Authentifizierung die Identität bestätigt, legt die Autorisierung fest, welche Aktionen oder Ressourcen eine identifizierte Person verwenden darf.
+
+<WRAP center round info 60%>
+Hat ZHservices meine Identität erfolgreich geprüft, werden mir die entsprechenden Rechte und Funktionen zugeteilt.
+</WRAP>
+
 ===== Möglichkeiten der Authentifizierung =====
 Es gibt 3 grundlegende Möglichkeiten die Identität eines Benutzers zu prüfen.
 
@@ -72,7 +80,7 @@ Erst nach Eingabe dieses Codes kann ich die Webservices benutzen.
 
 ==== Authenticator-App ====
 
-Für das Login am BZZ benötige ich einen Authenticator als zweiten Faktor ein.
+Für das Login am BZZ setze ich einen Authenticator als zweiten Faktor ein.
 Dieser besteht aus einer App für das Smartphone, welche in regelmässigen Abständen einen einmal gültigen Code generiert.
 Bei der Anmeldung muss ich zusätzlich den aktuellen Code eingeben.
 Auch andere Firmen nutzen eine Smartphone-App als zweiten Faktor.

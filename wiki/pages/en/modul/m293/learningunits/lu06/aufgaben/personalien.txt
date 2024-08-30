@@ -1,0 +1,49 @@
+====== LU06.A01 - Personal data ======
+<WRAP center round todo 60%>
+Create an HTML page with a form for entering personal data.
+</WRAP>
+
+**[[https://classroom.github.com/a/rd0CVKR4|GitHub Classroom Assignment]]**
+
+===== How to proceed =====
+  - Accept the GitHub Classroom Assignment for the LU06.
+  - Clone the repository.
+  - Create the HTML web page in the file ''personal.html''.
+  - Validate your HTML code for compliance with the standards.
+  - Push your solution into the repository.
+
+===== Form =====
+
+Your form must fulfil the following requirements:
+  * Destination address: https://it.bzz.ch/demo/formdata/index.php
+  * Input fields:
+    * First name
+    * Last name
+    * Place of residence
+  * Buttons:
+    * Send
+    * Reset
+
+===== Test =====
+You can test your form by submitting the data.
+The response from the server must look like this:
+
+<code>
+HTTP-Methode:   POST
+Eingabefelder:
+  givenname  =  a
+  surname    =  b
+  residence   =  c
+</code>
+
+----
+<details>
+<summary>//=> GitHub Repo for external visitors//</summary>
+GitHub Repository https://github.com/BZZ-M293/m293-lu06-a01-personal
+
+//Students at BZZ must use the link to the GitHub Classroom Assignment//
+
+</details>
+
+
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Kevin Maurizi, Marcel Suter

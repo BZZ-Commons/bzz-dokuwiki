@@ -1,0 +1,40 @@
+====== LU01.A03 - Installation and configuration of the MySQL database ======
+
+===== Prerequisites  =====
+  * Work type: Indiviual
+  * Timeframe: 15 Minutes 
+  * Expected result: Correct installed MySQL database including operational test
+
+===== Means of aid  =====
+^ Source ^ Link ^
+| Download-Link | [[https://dev.mysql.com/downloads/mysql/ | MySQL-MacOS]] |
+| Download-Link | [[https://dev.mysql.com/downloads/installer/ | MySQL-Windows]] |
+| Video-Tutorial MacOS | [[https://www.youtube.com/watch?v=nj3nBCwZaqI | Install MySql Server in Macbook M1 / M2]] |
+| Video-tutorial Windows | [[https://www.youtube.com/watch?v=2c2fUOgZMmY | How to install MySql on Windows 10]] |
+
+===== Introduction  =====
+The overarching topic of Module 290 is data and how to deal with it. It therefore makes sense to start with the installation of a database. There are a variety of databases on the market. Our product of choice is the MySQL database, as the licence is free for educational purposes.
+
+===== Assignments =====
+  - Go to the MySQL website and download the required software version. 
+  - Start the installation process.
+  - Once the installation is complete, start the post-installation steps.   
+  - Open the command line/terminal on your notebook and connect to the database as shown in the video tutorials.
+  - Finally, request a response from the database by entering "SELECT sysdate;". If you have carried out all the steps correctly, the database will respond with the current date and time of your PC.
+  - Thank God that you have succeeded. Otherwise, pray to God for inspiration AND a lot of patience to find the error.
+
+
+===== Solution =====
+[[modul:m290:learningunits:lu01:loesungen:l03|Lösung]]
+
+===== Vocabulary =====
+^ English ^ German ^ 
+| prerequisites | Voraussetzungen |
+| overarching topic | übergreifendes Thema |
+| free of charge | kostenlos |
+| educational purposes | Bildungszweck |
+| to request | anfordern |
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

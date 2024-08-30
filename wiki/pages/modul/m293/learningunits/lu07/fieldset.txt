@@ -18,18 +18,19 @@ Das ''<fieldset>''-Element kann unter HTML5 folgende Attribute haben:
 {{:modul:m293:learningunits:lu07:fieldset.png?400 |}}
 
 <code html4strict>
-<form id='gewinnen'>
+<form id="gewinnen">
   <fieldset>
-    <label for='vorname'>Vorname:
-      <input name='vorname' id='vorname' placeholder='Max'>
+    <label for="vorname">Vorname:
+      <input name="vorname" id="vorname" placeholder="Max">
     </label>
-    <label for='zuname'>Zuname:
-      <input name='zuname' id='zuname' placeholder='Mustermann'></fieldset>
+    <label for="zuname">Zuname:
+      <input name="zuname" id="zuname" placeholder="Mustermann">
+  </fieldset>
   <fieldset>
-    <label for='männl'>
-      <input type='radio' name='geschlecht' id='männl' value='männl'>männlich</label>
-    <label for='weibl'>
-      <input type='radio' name='geschlecht' id='weibl' value='weibl'>weiblich</label>
+    <label for="männl">
+      <input type="radio" name="geschlecht" id="männl" value="männl">männlich</label>
+    <label for="weibl">
+      <input type="radio" name="geschlecht" id="weibl" value="weibl">weiblich</label>
   </fieldset>
 </form>
 </code>
@@ -45,23 +46,24 @@ Die Verwendung des ''<legend>''-Elements bietet mehrere Vorteile:
 {{:modul:m293:learningunits:lu07:legend.png?400 |}}
 
 <code html4strict>
-<form id='gewinnen'>
+<form id="gewinnen">
   <fieldset>
     <legend>Name</legend>
-    <label for='vorname'>Vorname:
-      <input name='vorname' id='vorname' placeholder='Max'>
+    <label for="vorname">Vorname:
+      <input name="vorname" id="vorname" placeholder="Max">
     </label>
-    <label for='zuname'>Zuname:
-      <input name='zuname' id='zuname' placeholder='Mustermann'></fieldset>
+    <label for="zuname">Zuname:
+      <input name="zuname" id="zuname" placeholder="Mustermann"></fieldset>
   <fieldset>
     <legend>Geschlecht</legend>
-    <label for='männl'>
-      <input type='radio' name='geschlecht' id='männl' value='männl'>männlich</label>
-    <label for='weibl'>
-      <input type='radio' name='geschlecht' id='weibl' value='weibl'>weiblich</label>
+    <label for="männl">
+      <input type="radio" name="geschlecht" id="männl" value="männl">männlich</label>
+    <label for="weibl">
+      <input type="radio" name="geschlecht" id="weibl" value="weibl">weiblich</label>
   </fieldset>
 </form>
 </code>
+
 ----
 {{tag>m293-LU07 m293-F2F m293-F2E}}
 [[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Kevin Maurizi, Marcel Suter

@@ -20,33 +20,35 @@ Schreiben Sie keine sensitiven Daten (z.B. Passwörter, Lizenznummern, ...) in I
 
 ===== Dokumentation =====
 
-Erstellen Sie eine übersichtliche Dokumentation über Ihren persönlichen Laptop.
+Erstellen Sie eine übersichtliche Dokumentation über Ihren persönlichen Laptop. Übernehmen Sie die Kapitelstruktur aus der unten stehenden Aufgabenstellung, kombiniert mit der Struktur der gesamten LB. Gehen Sie auf folgende Punkte ein:
 
-==== Sicherheitstools ====
+==== 1.1 Sicherheitstools ====
 
-=== Antivirus ===
+=== 1.1.1 Antivirus ===
 
   * Welches Produkt setzen Sie ein?
+  * Welche exakte Version verwenden Sie aktuell?
   * Verwenden Sie ein kostenpflichtiges oder ein gratis Produkt?
   * Wie oft wird dieses aktualisiert (Softwareupdate, Update der Virensignaturen)?
   * Schauen Sie mal im Internet verschiedene Tests an --> Wie schneidet Ihr Produkt ab?
 
-=== Firewall ===
+=== 1.1.2 Firewall ===
 
   * Welches Produkt setzen Sie ein?
+  * Welche exakte Version verwenden Sie aktuell?
   * Verwenden Sie ein kostenpflichtiges oder ein gratis Produkt?
   * Haben Sie selber Konfigurationen vorgenommen oder läuft die Firewall einfach in der Standardkonfiguration?
   * Schauen Sie mal im Internet verschiedene Tests an --> Wie schneidet Ihr Produkt ab?
 
-=== Weitere Sicherheitstools ===
+=== 1.1.3 Updates und weitere Sicherheitstools ===
 
   * Wie führen Sie Updates Ihrer Software (z.B. Windows, Office, ...) durch? Erfolgt der Update automatisch oder manuell? Wann wurde Ihr Betriebssystem zum letzten mal aktualisiert?
   * Benennen Sie allfällige weitere Tools (Malware-Schutz, Surfschutz, Schutz von elektronischen Zahlungsmitteln und Passwörtern, ...), welche Sie einsetzen und für was diese gut sind
   * Finden Sie im Internet bekannte Sicherheitslücken oder Probleme in diesen Tools?
 
-==== Datensicherung ====
+==== 1.2 Daten und Datensicherung ====
 
-=== Daten ===
+=== 1.2.1 Daten ===
 
 Schauen Sie mal an, was Sie alles für Daten auf Ihrem Gerät haben
 
@@ -54,19 +56,19 @@ Schauen Sie mal an, was Sie alles für Daten auf Ihrem Gerät haben
   * Wiviele Prozent (Schätzung) Ihrer Daten wären bei einem Totalausfall des Geräts "hoffnungslos" verloren?
   * Auf wieviele Prozent (Schätzung) der verlorenen Daten können Sie wirklich verzichten (schmerzloser Verlust)?
 
-=== Datenstruktur ===
+=== 1.2.2 Datenstruktur ===
 
   * Wie ist Ihre Dateiablage strukturiert?
   * Verwenden Sie eine konkrete Struktur für alle Daten, sprich mit einem obersten Ordner und dann weitere Unterteilungen?
   * Liegen Ihre Daten in mehreren Stammverzeichnissen (z.B. etwas auf dem Desktop, etwas im Ordner "Bilder" vom Benutzerprofil, etwas in einem eigenen Verzeichnis, ...)?
     * Wenn Sie eine konkrete Datei brauchen, wissen Sie auf Anhieb, wo Sie diese finden?
 
-=== Backup & Restore ===
+=== 1.2.3 Backup & Restore ===
 
   * Wenn Sie Ihren Laptop heute verlieren, ...
     * ... welche Daten könnten Sie wiederherstellen?
-    * ... wieviele Tage/Stunden müssten Sie aufwenden?
-  * Welche Lösung setzen Sie für Backups ein (Backup auf separaten Datenträger, Cloud)
+    * ... wieviele Tage/Stunden müssten Sie aufwenden (Schätzung)?
+  * Welche Lösung(en) setzen Sie für Backups ein (Backup auf separaten Datenträger, Cloud)
   * Machen Sie den Backup manuell (Copy-Paste) oder mittels einer Software?
   * Enthält ihr Backup auch ältere Versionen von gelöschten / veränderten Dateien?
     * Wenn ja, wieviele "Generationen" einer Datei könnten Sie zurück

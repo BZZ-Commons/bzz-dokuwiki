@@ -1,0 +1,54 @@
+====== LU01a - Agile methods ======
+
+===== What are agile methods? =====
+//[[wpde>Agile_Softwareentwicklung]]//
+
+Agile methods aim to make software development processes as lean and efficient as possible.
+The aim is to minimise bureaucratic effort and concentrate on human interaction.
+Agile methods are typically characterised by:
+  * Design phases as short as possible.
+  * Concentration on the early realisation of executable software.
+  * The partial result is agreed with the customer at regular, short intervals.
+
+
+==== Agile values ====
+
+The basis is formed by the values in the [[http://agilemanifesto.org/iso/de/manifesto.html|Manifest for agile software development]]:
+
+//We find better ways to develop software by doing it ourselves and helping others to do it.
+Through this work, we have learnt to appreciate these values://
+
+  * **Individuals and interactions** more than processes and tools
+  * **Functioning software** more than comprehensive documentation
+  * **Cooperation with the customer** more than contract negotiation
+  * **Responding to change** more than following a plan
+
+//That is, although we find the values on the right important, we value the values on the left. **left side** higher.//
+
+==== Agile principles ====
+The //agile principles// are based on the //agile values// and describe principles of action in the development of software.
+In the [[http://agilemanifesto.org/iso/de/principles.html|Prinzipien behind the Agile Manifesto]] lists the 12 principles.
+
+===== Differentiation from traditional process models =====
+Traditional process models include, among others [[wpde>Rational_Unified_Process|Rational Unified Process]], 
+the [[wpde>V-Modell|V-model]] or [[http://www.hermes.admin.ch/|HERMES]].
+These models divide the development process into clearly defined phases in terms of content and time.
+For example:
+  - Requirements
+  - Design
+  - realisation
+  - Testing
+  - Delivery, deployment
+  - Maintenance
+
+The activities and the results to be achieved are defined for each phase.
+One of the difficulties with traditional methods is that important implementation decisions are made very early on in the project.
+At this stage, however, there is usually still little knowledge about the required software and its environment.
+
+{{modul:m426:learningunits:lu01:wissenentscheidung.png|}}
+
+As the project progresses, our knowledge and understanding increases, but only details of the implementation can be influenced.
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter 

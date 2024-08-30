@@ -1,0 +1,29 @@
+====== LU05.A02: Exception fangen und verarbeiten ======
+<WRAP center round todo 60%>
+Sie können mit dem try-except Konstrukt "kritischen" Code überwachen und im Fehlerfall reagieren.
+</WRAP>
+
+===== Auftrag =====
+  - Akzeptieren Sie das Assignment im GitHub Classroom
+  - Führen Sie die ''main''-Methode aus und prüfen Sie am Bildschirm, welche Exception zum Programmabbrch geführt hat.
+  - Ergänzen Sie nun den Code der Methode ''main'', so dass der Fehler gefangen und die systemeigene Fehlermeldung am Bildschirm ausgegeben wird.
+   - Führen Sie ''pytest'' und ''pylint'' aus, um sicherzustellen, dass die Aufgabe korrekt gelöst ist.
+
+
+===== Dauer =====
+10 Minuten
+===== Abgabe =====
+Mittels Push auf GitHub.
+
+----
+<details>
+<summary>//=> GitHub Repo für externe Besucher//</summary>
+GitHub Repository https://github.com/templates-python/m320-lu05-a02-except
+
+//Lernende am BZZ müssen den Link zum GitHub Classroom Assignment verwenden//
+
+</details>
+
+{{tag>M320-LU05}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] René Probst, bearbeitet durch Marcel Suter
+

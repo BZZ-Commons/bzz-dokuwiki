@@ -1,33 +1,42 @@
 ====== LU02.A01 - Door ======
-=== Ziel ===
+==== Ziel ====
 <WRAP center round todo 60%>
-Üben Sie das Vorgehen mit dem GitHub Classroom.
+Üben Sie das Vorgehen mit GitHub Classroom und Ihrer Entwicklungsumgebung.
 </WRAP>
 
-=== Auftrag ===
+==== Auftrag ====
 Bei dieser Aufgabe stellen Sie sicher, dass Ihre Entwicklungsumgebung korrekt funktioniert.
 Achten Sie daher bei jedem Schritt genau auf allfällige Fehler- oder Warnmeldungen.
 
-=== Vorgehen ===
+==== Vorgehen ====
   - Akzeptieren Sie das Assignment im GitHub Classroom.
-  - Klonen Sie das Repository in Ihre Entwicklungsumgebung.
+  - Klonen Sie das Repository in Ihre Entwicklungsumgebung anhand dieser [[howto/pycharm/troubleshooting/start|Anleitung]].
     * Wird das Virtual Environment (venv) korrekt angelegt?
     * Erkennt PyCharm Ihren Python Interpreter?
     * Zeigt PyCharm Fehler im Sourcecode (z.B. fehlende Imports) an?
-  - Führen Sie das Programm und allfällige Tests aus. 
-  - Nehmen Sie eine beliebige Änderung in einem Kommentar vor.
-  - Führen Sie einen Commit & Push durch.
-  - Prüfen Sie in GitHub, ob die [Action] korrekt durchgeführt wird.
+  - Überprüfen Sie das Programm in Ihrer IDE, korrigieren aber noch keine Fehler:
+    - Führen Sie die Test mit dem Befehl ''pytest'' aus.
+    - Prüfen Sie die Syntax mit dem Befehl <code>pylint door.py</code> 
+  - Führen Sie einen Push auf GitHub durch:
+    - Nehmen Sie eine beliebige **Änderung** in einem **Kommentar** vor.
+    - Führen Sie einen Commit und einen Push durch.
+    - Prüfen Sie in GitHub, ob die [Action] korrekt durchgeführt wird.
+    - Prüfen Sie in dieser Moodle-Aufgabe ob die Bewertung und das Feedback korrekt eingetragen wurde.
+  - Korrigieren Sie die erkannten Fehler. Führen Sie danach die Schritte bei Punkt 4 (Push) nochmal durch.
 
-===Dauer===
-10 Minuten
+==== Dauer ====
+20 Minuten
 
-=== Abgabe ===
+==== Abgabe ====
 Die Abgabe erfolgt mittels Push in Ihr GitHub Repository.
 
-
-
-
 ----
-<nodisp>GitHub Repo: https://github.com/templates-python/m320_lu01_a04_doors</nodisp>
+<details>
+<summary>//=> GitHub Repo für externe Besucher//</summary>
+GitHub Repository https://github.com/BZZ-M320/m320-lu02-a01-door
+
+//Lernende am BZZ müssen den Link zum GitHub Classroom Assignment verwenden//
+
+</details>
+
 [[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]]

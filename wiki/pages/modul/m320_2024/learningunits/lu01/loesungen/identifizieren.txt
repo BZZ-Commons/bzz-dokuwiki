@@ -1,0 +1,25 @@
+====== LU01.L02 - Objekt identifizieren ======
+
+===== Objekt "Konto" =====
+
+==== Eigenschaften ====
+   * Kontostand (Saldo)
+   * Maximalwert für Bezug
+   * Bezugszeiten[3]
+==== Fähigkeiten ====
+   * Saldo ausgeben
+   * Transaktion ausführen (einzahlen/beziehen)
+==== Zustände ====
+   * OK
+   * gesperrt
+
+
+==== Anmerkung ====
+Bei einer Transaktion müssen alle Rahmenbedingungen geprüft werden.
+  * Ist der geforderte Betrag kleiner als der Maximalbetrag pro Bezug?
+  * Wird der Saldo negativ?
+  * Ist der Zeitpunkt des vorletzten Bezugs länger als 24 Stunden her?
+
+----
+{{tag>M320-LU01}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] René Probst, bearbeitet durch Marcel Suter

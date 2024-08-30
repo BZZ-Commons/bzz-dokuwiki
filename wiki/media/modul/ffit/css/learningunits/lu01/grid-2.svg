@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 712.5 468" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+<title>CSS Grid Cell</title>
+	<rect height="468" width="712" y="0" x="0" fill="#fff"/>
+	<g stroke="hsl(190,50%,30%)" stroke-dasharray="2,4" stroke-width="3" fill="none">
+		<path d="m40 69.14h647"/>
+		<path d="m62 47.06v415"/>
+		<path d="m261 47.06v415"/>
+		<path d="m461 47.06v415"/>
+		<path d="m661 47.06v415"/>
+		<path d="m40 194.4h647"/>
+		<path d="m40 319.6h647"/>
+		<path d="m40 444.8h647"/>
+	</g>
+	<g font-size="26px" fill="#666">
+		<text y="77" x="6">1</text>
+		<text y="201" x="6">2</text>
+		<text y="327" x="6">3</text>
+		<text y="454" x="6">4</text>
+		<text y="33" x="52">1</text>
+		<text y="33" x="251">2</text>
+		<text y="33" x="449">3</text>
+		<text y="33" x="652">4</text>
+	</g>
+<rect x="265" y="198" width="192" height="118" fill="#6D8EBD" />
+</svg>

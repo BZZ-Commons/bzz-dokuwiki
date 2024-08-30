@@ -1,0 +1,53 @@
+====== LU11a - Workflow for website development ======
+**The workflow has changed since websites were created using responsive design. Not so long ago, every web project started with Adobe Photoshop and Illustrator. Nowadays, graphics come into play much later and the browser plays an increasingly important role.**
+
+The content concept comes first, followed by the graphics. This has made the coordination process with customers easier. There is no longer so much need to discuss questions of taste and design decisions can be based on the content. This results in a better basis for dialogue with customers and you can make yourself better understood.
+
+===== Principles =====
+
+==== Mobile First ====
+<WRAP center round tip 60%>
+{{modul:m293:learningunits:lu11:anteilmobile.png?400|}}
+
+More than 50% of websites are now accessed via mobile devices. It therefore makes sense to develop websites with the "mobile first" concept.</WRAP>
+ 
+Mobile First is a concept for mobile-optimised web design. This means that the page optimised for mobile devices is created first, followed later by successive extensions for the desktop browser. Until now, it was common for web designers and programmers to take care of the implementation of the website for the desktop first. This involved designing a site with the full range of functions, graphics and design options for large screens and fast data connections. Only in the second step did the planning of the mobile site follow, which was often only seen as a kind of appendix. The mobile first strategy reverses this workflow and sets the priorities differently. This also has an impact on the design of the technical infrastructure behind the website.
+
+==== Responsive framework ====
+In order to easily implement the "Mobile First" approach, it makes sense to use a framework that supports the creation of responsive websites. In module 293 we will use Bootstrap, more about this in the [[modul:m293:learningunits:lu13:start|LU13]].
+
+===== Procedure =====
+
+{{ modul:m293:learningunits:lu11:workflow-responsive-design1.jpg?600 |}}
+This graphic shows a possible process for a website project.
+
+==== 1. planning and 2. content ====
+We focus on these in [[modul:m322:start|Module 322]]
+
+==== 3. wireframes ====
+A wireframe is a sketch-like representation of a website or app that serves as a visual guide for the structure and layout of the page or application. It is the backbone of the design and represents the basic plan for the final product. There are many ways to visualise a wireframe: You can make sketches, assemble grey boxes and lines in Photoshop, Indesign or Fireworks, or you can [[http://webdesignledger.com/13-super-useful-ui-wireframe-tools/|eines use one of the many online tools]].
+Sketches are unbeatably fast and flexible, but they leave you "stuck" to the paper. With Photoshop and co. you are already in the right medium, the screen. And you can link individual wireframe pages to simulate navigation on the page. This is important because it allows you to identify errors in the concept and structure at an early stage.
+
+More about [[modul:m293:learningunits:lu11:wireframes|Wireframes]]
+
+<WRAP center round important 60%>
+We create our wireframes for both mobile and desktop.
+</WRAP>
+
+==== 4. prototype ====
+Once the wireframe has been approved by the customer, the next phase begins: the programmer rebuilds everything in HTML and CSS and creates the first HTML prototype. More on this in the [[modul:m293:learningunits:lu12:start|LU12]]
+
+==== 5. design ====
+
+For the design we concentrate on 2 approaches:
+
+  * We start from scratch and develop the colour and font concept, logos etc. from scratch. 
+  * We build a website for someone who already has a CI/CD and stick to the specifications.
+
+More about [[modul:m293:learningunits:lu11:design|design]]
+
+----
+{{tag>m293-LU11 m293-A1G m293-A1F}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Kevin Maurizi, Marcel Suter
+
+

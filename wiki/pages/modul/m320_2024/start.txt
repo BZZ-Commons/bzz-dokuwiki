@@ -1,4 +1,4 @@
-====== 320: Objektorientiert programmieren (ab 2024) ======
+====== 320 : Objektorientiert programmieren (ab 2024) ======
 
 ^ Modulidentifikation | [[https://www.modulbaukasten.ch/module/320/1/de-DE?title=Objektorientiert-Programmieren|320]] |
 ^ Kompetenzraster | [[https://kompetenzmatrix.ch/cluster-api/m320/|Kompetenzraster]] |
@@ -17,3 +17,7 @@
 Der Inhalt des Modul ist in Learningunits gegliedert. Sie decken die in der Kompetenzmatrix beschriebenen Kompetenzen ab.
 
 <nspages .:learningunits -subns -nopages -exclude -h1 -textNS="" -simplelist>
+
+===== Merkblätter =====
+
+<nspages .:merkblaetter -h1  -exclude:start -simpleList -textPages="">

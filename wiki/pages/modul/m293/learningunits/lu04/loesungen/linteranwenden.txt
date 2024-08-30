@@ -1,60 +1,15 @@
 ====== LU04.L02 - Statische Code Analyse anwenden ======
 
-<file html4strict chatgpt.html>
-<!DOCTYPE html>
-<html lang='en'>
-<head>
-  <meta charset='UTF-8'>
-  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-  <title>ChatGPT im Jahr 2030</title>
-</head>
-<body>
-  <header>
-    <h1>ChatGPT im Jahr 2030</h1>
-  </header>
-  <main>
-    <p>ChatGPT, der KI-gestützte Sprachgenerator von OpenAI, hat sich seit seiner Einführung kontinuierlich weiterentwickelt. Im Jahr 2030 bietet ChatGPT eine noch fortschrittlichere und intuitivere Benutzererfahrung, die das Leben von Entwicklern und Endbenutzern auf der ganzen Welt verbessert.</p>
-    <h2>Funktionen von ChatGPT im Jahr 2030</h2>
-    <ul>
-      <li>Umfassendes Verständnis natürlicher Sprache</li>
-      <li>Realistische menschenähnliche Konversationen</li>
-      <li>Erweiterte Anpassungsfähigkeit für verschiedene Anwendungen</li>
-    </ul>
-  </main>
-  <footer>
-    <p>&copy; 2030 ChatGPT. Alle Rechte vorbehalten.</p>
-  </footer>
-</body>
-</html>
-</file>
+===== ChatGPT =====
 
-<file html4strict chatgpt.html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset='UTF-8'>
-  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-  <title>World of Warcraft: Spiel des Jahres 2023</title>
-</head>
-<body>
-  <header>
-    <h1>World of Warcraft: Spiel des Jahres 2023</h1>
-  </header>
-  <main>
-    <p>World of Warcraft hat sich im Jahr 2023 wieder an die Spitze der Gaming-Welt gesetzt und wurde zum Spiel des Jahres gekürt. Mit beeindruckenden Updates, neuen Inhalten und einer engagierten Community bleibt WoW das ultimative MMORPG-Erlebnis.</p>
-    <h2>Gründe für den Erfolg von WoW im Jahr 2023</h2>
-    <ul>
-      <li>Umfangreiche neue Erweiterungen und Inhalte</li>
-      <li>Engagierte und hilfsbereite Community</li>
-      <li>Optimierte Spielerfahrung und modernisierte Grafik</li>
-    </ul>
-  </main>
-  <footer>
-    <p>&copy; 2023 World of Warcraft. Alle Rechte vorbehalten.</p>
-  </footer>
-</body>
-</html>
-</file>
+[[https://bzz-m293.github.io/m293-lu04-a02-testlinter/chatgpt.html|Live preview]]
+
+{{gh>https://github.com/bzz-m293/m293-lu04-a02-testlinter/blob/solution/chatgpt.html}}
+
+===== World of Warcraft =====
+[[https://bzz-m293.github.io/m293-lu04-a02-testlinter/worldofwarcraft.html|Live preview]]
+
+{{gh>https://github.com/bzz-m293/m293-lu04-a02-testlinter/blob/solution/worldofwarcraft.html}}
 
 ---- 
 

@@ -35,11 +35,11 @@ Ein Tag (deutsch: Etikette, Marke, Markierung) ist ein Schlüsselwort in HTML.
   * Die meisten Tags müssen wieder geschlossen werden, z.B. ''<body>Hier kommt der Inhalt der Webseite</body>''
 
 ==== Attribute ====
-Attribute können nur innerhalb eines Tags vorkommen und enthalten zusätzliche Angaben zur Verarbeitung des Tags, z.B. ''<html lang='de'>''.
-Mit dem Attribut ''lang='de' '' legen wir fest, dass der Inhalt dieser Webseite in deutscher Sprache ist.
+Attribute können nur innerhalb eines Tags vorkommen und enthalten zusätzliche Angaben zur Verarbeitung des Tags, z.B. ''<html lang="de">''.
+Mit dem Attribut ''lang="de" '' legen wir fest, dass der Inhalt dieser Webseite in deutscher Sprache ist.
 
   * Die meisten Attribute bestehen aus einem Schlüsselwort und einem Wert.
-  * Der Wert eines Attributs wird zwischen Hochkomma (single quotes) geschrieben ((Man könnte auch Anführungszeichen (double quotes) verwenden, wir wollen aber einheitlich single quotes nutzen.))
+  * Der Wert eines Attributs wird zwischen Anführungszeichen (double quotes) geschrieben ((Man könnte auch Hochkomma (single quotes) verwenden, wir wollen aber einheitlich double quotes nutzen.))
 
 ===== CSS =====
 Während sich HTML um den Inhalt kümmert, sind die **C**ascading **S**tyle **S**heets für die Darstellung zuständig.

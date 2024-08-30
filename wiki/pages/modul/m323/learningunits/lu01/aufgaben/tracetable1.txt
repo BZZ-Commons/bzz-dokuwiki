@@ -1,0 +1,57 @@
+====== LU01.A06 - Trace Table für lineare Suche ======
+<WRAP center round todo 60%>
+Erstellen Sie einen Trace Table für die lineare Suche in einer Liste, um den Ablauf des Algorithmus zu verstehen.
+</WRAP>
+
+===== Erklärung der linearen Suche:=====
+Die lineare Suche ist ein einfacher Suchalgorithmus, der ein Element in einer Liste durch sequentielles Überprüfen jedes Elements sucht, bis das gewünschte Element gefunden wird oder die Liste vollständig durchsucht wurde.
+
+===== Anforderungen: =====
+
+Verwenden Sie den folgenden Algorithmus der linearen Suche.
+Erstellen Sie einen Trace Table, um die Änderung der Variablen während der Ausführung des Algorithmus nachzuvollziehen.
+==== Algorithmus ====
+<code python>
+def linear_search(liste, ziel):
+  for index, wert in enumerate(liste):
+    if wert == ziel:
+      return index
+  return -1
+
+def main():
+  zahlen = [3, 8, 2, 7, 5]
+  ziel = 7
+  resultat = linear_search(zahlen, ziel)
+  print(f'Index des gesuchten Elements: {resultat}')
+</code>
+
+===== Aufgabe: =====
+
+Analysieren Sie den Code Schritt für Schritt.
+Erstellen Sie einen Trace Table, der die Variablen ''index'', ''wert'', den Vergleich ''(wert == ziel)'' und das Ergebnis darstellt.
+Verwenden Sie die folgende Struktur für den Trace Table:
+^ Schritt ^ index ^ wert ^ Vergleich (wert == ziel) ^ Ergebnis (index oder -1) ^
+| | | | | |
+
+
+Füllen Sie den Trace Table basierend auf dem angegebenen Beispiel aus.
+==== Beispielinput: ====
+
+<code python>
+zahlen = [3, 8, 2, 7, 5]
+ziel = 7
+</code>
+==== Beispieloutput: ====
+
+<code python>
+Index des gesuchten Elements: 3
+</code>
+<WRAP center round info 80%>
+Hinweis:
+Verwenden Sie den Trace Table, um den Ablauf des Algorithmus zu verfolgen und sicherzustellen, dass die Suche korrekt funktioniert.
+</WRAP>
+
+===== Abgabe =====
+Geben Sie den ausgefüllten Tracetable in Moodle ab.
+
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/ch/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Kevin Maurizi 

@@ -11,9 +11,9 @@ Sie können dem Anwender mit dem ''select''-Element eine Auswahliste mit festen 
 {{:modul:m293:learningunits:lu07:select.png?200 |}}
 
 <code html4strict>
-<form action='#'>
+<form action="#">
   <label>Anreise:
-    <select name='anreise' size='5'>
+    <select name="anreise" size="5">
       <option>Auto</option>
       <option>Zug</option>
       <option>Bus</option>
@@ -35,9 +35,9 @@ Wenn Sie es nicht explizit spezifizieren, kann der Benutzer aus einer Liste gena
 
 {{:modul:m293:learningunits:lu07:multiple.png?200 |}}
 <code html4strict>
-<form action='#'>
+<form action="#">
   <label>Anreise:
-    <select name='anreise[]' size='5' multiple>
+    <select name="anreise[]" size="5" multiple>
       <option>Auto</option>
       <option>Zug</option>
       <option>Bus</option>
@@ -62,9 +62,9 @@ Standardmässig ist kein Eintrag in einer Auswahlliste vorselektiert. Sie könne
 {{:modul:m293:learningunits:lu07:select_selected.png?200 |}}
 
 <code html4strict>
-<form action='#'>
+<form action="#">
   <label>Anreise:
-    <select name='anreise' size='5'>
+    <select name="anreise" size="5">
       <option selected>Auto</option>
       <option>Zug</option>
       <option>Bus</option>
@@ -82,21 +82,21 @@ Die Verwendung von ''<optgroup>''-Tags in HTML ermöglicht es, Auswahllisten (Se
 <code html4strict>
 <form>
   <label>Vorname
-    <select name='Namen' size='6'>
-      <optgroup label='Namen mit A'>
-        <option label='Anna'>Anna</option>
-        <option label='Achim'>Achim</option>
-        <option label='August'>August</option>
+    <select name="Namen" size="6">
+      <optgroup label="Namen mit A">
+        <option label="Anna">Anna</option>
+        <option label="Achim">Achim</option>
+        <option label="August">August</option>
       </optgroup>
-      <optgroup label='Namen mit B'>
-        <option label='Berta'>Berta</option>
-        <option label='Barbara'>Barbara</option>
-        <option label='Bernhard'>Bernhard</option>
+      <optgroup label="Namen mit B">
+        <option label="Berta">Berta</option>
+        <option label="Barbara">Barbara</option>
+        <option label="Bernhard">Bernhard</option>
       </optgroup>
-      <optgroup label='Namen mit C'>
-        <option label='Caesar'>Caesar</option>
-        <option label='Christiane'>Christiane</option>
-        <option label='Christian'>Christian</option>
+      <optgroup label="Namen mit C">
+        <option label="Caesar">Caesar</option>
+        <option label="Christiane">Christiane</option>
+        <option label="Christian">Christian</option>
       </optgroup>
     </select>
   </label>
@@ -108,6 +108,7 @@ Um eine verschachtelte Menüstruktur zu erstellen, verwenden Sie in HTML das ''<
 Verwenden Sie das Attribut ''label'' im öffnenden ''<optgroup>''-Tag, um eine Beschriftung für die Gruppe von Einträgen festzulegen. Diese Beschriftung wird als nicht auswählbare Überschrift angezeigt.
 
 Für die Einträge innerhalb einer Untergruppe verwenden Sie das ''<option>''-Element. Hierbei können Sie das Attribut label verwenden, um den angezeigten Menüeintrag festzulegen.
+
 ----
 {{tag>m293-LU07 m293-F2F m293-F2E}}
 Inhalte teilweise unter CC-BY-SA-3.0 von [[https://wiki.selfhtml.org/wiki/SELFHTML|SELFHTML]] kopiert.

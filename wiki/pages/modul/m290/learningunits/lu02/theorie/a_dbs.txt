@@ -1,0 +1,59 @@
+====== LU02a - DBS, DBMS, DB ======
+
+==== Introduction ==== 
+Databases are fundamental to modern information systems, such as Webshops or Banking Applications. This document provides a concise overview of three key terms:  
+  - **DBS**: Database System  
+  - **DBMS**: Database Management System 
+  - **DB**: Database
+
+The following diagram illustrates the interaction of these three terms:
+
+{{:modul:m290:learningunits:lu02:theorie:de-dbms-with-dd.svg.png?300|}} 
+
+
+==== Database System (DBS) ====
+A Database System (DBS) encompasses the database, the DBMS, and associated hardware and software components. It represents the complete environment for managing data.
+
+**Components of a DBS**
+  * Database (DB): The stored data itself.
+  * Database Management System (DBMS): The software for managing the DB.
+
+
+==== Database (DB) ====
+A database (DB) is a structured collection of data organized for efficient retrieval and management. It stores information in a systematic way, allowing users to access, modify, and analyze data as needed. Basically, it is several Excel spreadsheets that are linked together.
+
+**Characteristics of a DB **
+  * Organized: Data is arranged in a logical manner (tables, records, fields).
+  * Integrated: Data is related and consistent across the database.
+  * Shared: Multiple users can access and update data simultaneously.
+  * Controlled: Access to data is managed through security measures.
+
+
+==== Database Management System (DBMS) ====
+A Database Management System (DBMS) is software that interacts with users and applications to create, store, modify, and retrieve data from a database. It acts as an intermediary between the user and the database.
+
+**Functions of a DBMS**
+  * Data Definition: Creates and modifies the database structure.
+  * Data Manipulation: Allows users to insert, update, delete, and retrieve data.
+  * Data Query: Enables users to search and retrieve specific data.
+  * Data Integrity: Ensures data accuracy and consistency.
+  * Data Security: Protects data from unauthorized access.
+  * ...
+
+
+===== Vocabulary =====
+^ English ^ German ^
+| to provide | bereitstellen |
+| retrieve | abrufen |
+| concise | knapp und präzise |
+| to interact | zusammenwirken |
+| to modify | verändern |
+| intermediary | VermittlerIn | 
+
+===== References =====
+Definition DBS: https://de.wikipedia.org/wiki/Datenbank 
+
+----
+
+{{tag>M290-LU02}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

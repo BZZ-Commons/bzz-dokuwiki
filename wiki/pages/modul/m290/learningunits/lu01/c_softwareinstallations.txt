@@ -1,0 +1,27 @@
+====== LU01c - Required software & how to install them ======
+Before we get down to the practical work, we need to install various software. The following list contains the required tools and the purpose of each package: 
+
+^ Software ^ Description ^ Download-Source ^
+| Webstorm | Editor Code editor in order to program the source code such for database tables and server | [[https://www.jetbrains.com/webstorm/|Webstorm]] | 
+| MySQL | Database, storage and management of data | [[https://dev.mysql.com/downloads/|MySQL]] |
+| Postman | Simulation of the frontend within the terminal/commandline | [[https://www.postman.com/downloads/|Postman]] |
+| XTerm | Simulation of the frontend instead of a browser| [[https://mobaxterm.mobatek.net/download.html|XTerm]] |
+
+Please note that only Webstorm and MySQL are required in the first half of the module. Postman and XTerm will be the subject of the second half of the module and will be installed in due course.
+
+
+===== Vocabulary =====
+^ English ^ German ^ Download-Source ^
+| required | erforderlich |
+| various | verschiedene |
+| storage | Lagerung |
+| within | innerhalb |
+| require | benötigen | 
+| in due course | zu gegebener Zeit |
+| subject of ... | Thema von ... |
+
+
+
+----
+{{tag>M290-LU01}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

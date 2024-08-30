@@ -6,14 +6,14 @@ Sie lernen die Elemente ''<nav>'', ''<main>'', ''<header>'', ''<footer>'', ''<se
 </WRAP>
 
 ===== Erweitertes Gerüst =====
-Im Abschnitt [[..:lu01:htmlbase|LU02a - HTML Grundgerüst]] haben Sie eine sehr rudimentäres Gerüst kennen gelernt.
+Im Abschnitt [[..:lu01:htmlbase]] haben Sie eine sehr rudimentäres Gerüst kennen gelernt.
 Dieses Gerüst wollen wir um einige Elemente mit der Struktur für die späteren Inhalte erweitern.
 
 <code html>
 <!doctype html>
-<html lang='de'>
+<html lang="de">
 <head>
-  <meta charset='utf-8'>
+  <meta charset="utf-8">
   <title>HTML5-Seite mit Grundstruktur</title>
 </head>
 
@@ -54,7 +54,7 @@ Im Bereich ''<head>'' befinden sich Metainformationen, die nicht Teil der sichtb
 //Siehe auch [[https://wiki.selfhtml.org/wiki/HTML/Tutorials/Seitenstrukturierung#nav|selfhtml - nav]]//
 
 Das Element ''<nav>'' umschliesst die Navigation unseres Webauftritts.
-Es wird häufig innerhalb von ''<head>'' platziert.
+Es wird häufig innerhalb von ''<header>'' platziert.
 
 ===== <main> =====
 

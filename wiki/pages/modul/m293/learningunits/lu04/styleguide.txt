@@ -3,21 +3,22 @@
 In der Webentwicklung spielt HTML eine zentrale Rolle bei der Strukturierung von Inhalten auf Webseiten. Wie bei jeder Programmiersprache ist es auch hier wichtig, einen konsistenten und effizienten Coding-Stil zu pflegen. In diesem Artikel werden wir einen einheitlichen Coding-Stil für HTML aufzeugen und gute und schlechte Beispiele für HTML-Code präsentieren.
 
 ===== Dateinamen in Kleinbuchstaben schreiben =====
-Einige Webserver (Apache, Unix) unterscheiden bei Dateinamen zwischen Groß- und Kleinschreibung: Auf "london.jpg" kann nicht als "London.jpg" zugegriffen werden.
+Einige Webserver (Apache, Unix) unterscheiden bei Dateinamen zwischen Gross- und Kleinschreibung: Auf "london.jpg" kann nicht als "London.jpg" zugegriffen werden.
 
-Andere Webserver (Microsoft, IIS) unterscheiden nicht zwischen Groß- und Kleinschreibung: auf "london.jpg" kann als "London.jpg" zugegriffen werden.
+Andere Webserver (Microsoft, IIS) unterscheiden nicht zwischen Gross- und Kleinschreibung: auf "london.jpg" kann als "London.jpg" zugegriffen werden.
 
-Wenn Sie eine Mischung aus Groß- und Kleinbuchstaben verwenden, müssen Sie sich dessen bewusst sein. Wenn Sie von einem Server, der Groß- und Kleinschreibung nicht beachtet, zu einem Server wechseln, der Groß- und Kleinschreibung beachtet, werden selbst kleine Fehler Ihre Applikation zerstören!
+Wenn Sie eine Mischung aus Gross- und Kleinbuchstaben verwenden, müssen Sie sich dessen bewusst sein. 
+Wenn Sie von einem Server, der Gross- und Kleinschreibung nicht beachtet, zu einem Server wechseln, der Gross- und Kleinschreibung beachtet, werden selbst kleine Fehler Ihre Applikation zerstören!
 
 Um diese Probleme zu vermeiden, sollten Sie Dateinamen immer in Kleinbuchstaben schreiben!
 
 
 ==== Elementnamen in Kleinbuchstaben schreiben ====
-HTML erlaubt die Mischung von Groß- und Kleinbuchstaben in Elementnamen.
+HTML erlaubt die Mischung von Gross- und Kleinbuchstaben in Elementnamen.
 
 Wir empfehlen jedoch, Elementnamen in Kleinbuchstaben zu verwenden, denn:
 
-  * Die Vermischung von Groß- und Kleinbuchstaben sieht schlecht aus
+  * Die Vermischung von Gross- und Kleinbuchstaben sieht schlecht aus
   * Entwickler verwenden normalerweise Kleinbuchstaben
   * Kleinbuchstaben sehen sauberer aus
   * Kleinschreibung ist einfacher zu schreiben
@@ -41,11 +42,11 @@ Wir empfehlen jedoch, Elementnamen in Kleinbuchstaben zu verwenden, denn:
 
 
 ==== Kleinbuchstaben für Attributnamen verwenden ====
-HTML erlaubt die Mischung von Groß- und Kleinbuchstaben in Attributnamen.
+HTML erlaubt die Mischung von Gross- und Kleinbuchstaben in Attributnamen.
 
 Wir empfehlen jedoch die Verwendung von Attributnamen in Kleinbuchstaben, denn:
 
-  * Die Vermischung von Groß- und Kleinbuchstaben sieht schlecht aus
+  * Die Vermischung von Gross- und Kleinbuchstaben sieht schlecht aus
   * Entwickler verwenden normalerweise Kleinbuchstaben
   * Kleinbuchstaben sehen sauberer aus
   * Kleinschreibung ist einfacher zu schreiben
@@ -53,27 +54,27 @@ Wir empfehlen jedoch die Verwendung von Attributnamen in Kleinbuchstaben, denn:
 <WRAP center round box 60%>
 **Good:**
 <code html4strict>
-<a href='https://www.w3schools.com/html/'>Visit our HTML tutorial</a>
+<a href="https://www.w3schools.com/html/">Visit our HTML tutorial</a>
 </code>
 **Bad:**
 <code html4strict>
-<a HREF='https://www.w3schools.com/html/'>Visit our HTML tutorial</a>
+<a HREF="https://www.w3schools.com/html/">Visit our HTML tutorial</a>
 </code>
 </WRAP>
 
 ==== Attributwerte immer in Hochkomma setzen ====
-HTML erlaubt Attributwerte ohne Hochkomma((In den Kursunterlagen verwenden wir Hochkomma, da wir dies von Python gewohnt sind. Sie dürfen auch Anführungszeichen verwenden, nutzen Sie aber immer den gleichen Codingstyle.))  oder Anführungszeichen.
+HTML erlaubt Attributwerte ohne Anführungszeichen (double quotes) oder Hochkomma (single quote).
 
-Wir empfehlen jedoch, Attributwerte in Hochkomma zu setzen, denn:
+Wir empfehlen jedoch, Attributwerte in Anführungszeichen zu setzen, denn:
 
-  * Entwickler sind es sich gewohnt Attributwerte in Hochkomma zu setzen
-  * in Hochkomma gesetzte Werte sind leichter zu lesen
-  * Sie MÜSSEN sowieso Hochkomma verwenden, wenn der Wert Leerzeichen enthält
+  * Entwickler sind es sich gewohnt Attributwerte in Anführungszeichen zu setzen
+  * In Anführungszeichen gesetzte Werte sind leichter zu lesen
+  * Sie **müssen** sowieso Anführungszeichen verwenden, wenn der Wert Leerzeichen enthält
 
 <WRAP center round box 60%>
 **Good:**
 <code html4strict>
-<table class='striped'>
+<table class="striped">
 </code>
 **Bad:**
 <code html4strict>
@@ -85,10 +86,10 @@ Wir empfehlen jedoch, Attributwerte in Hochkomma zu setzen, denn:
 </code>
 </WRAP>
 
-==== Alle HTML-Elemente schließen ====
-In HTML müssen Sie nicht alle Elemente schließen (zum Beispiel das ''<p>''-Element).
+==== Alle HTML-Elemente schliessen ====
+In HTML müssen Sie nicht alle Elemente schliessen (zum Beispiel das ''<p>''-Element).
 
-Wir empfehlen jedoch dringend, alle HTML-Elemente zu schließen, etwa so:
+Wir empfehlen jedoch dringend, alle HTML-Elemente zu schliessen, etwa so:
 
 <WRAP center round box 60%>
 **Good:**
@@ -110,16 +111,16 @@ Wir empfehlen jedoch dringend, alle HTML-Elemente zu schließen, etwa so:
 ==== alt, width und height für Bilder angeben ====
 Geben Sie immer das ''alt''-Attribut für Bilder an. Dieses Attribut ist wichtig, wenn das Bild aus irgendeinem Grund nicht angezeigt werden kann.
 
-Geben Sie außerdem immer die Breite ''width'' und Höhe ''height'' von Bildern an. Dies verringert das Flackern, da der Browser vor dem Laden Platz für das Bild reservieren kann.
+Geben Sie ausserdem immer die Breite ''width'' und Höhe ''height'' von Bildern an. Dies verringert das Flackern, da der Browser vor dem Laden Platz für das Bild reservieren kann.
 
 <WRAP center round box 60%>
 **Good:**
 <code html4strict>
-<img src='html5.gif' alt='HTML5' width='128px' height='128px'>
+<img src="html5.gif" alt="HTML5" width="128px" height="128px">
 </code>
 **Bad:**
 <code html4strict>
-<img src='html5.gif'>
+<img src="html5.gif">
 </code>
 </WRAP>
 
@@ -129,11 +130,11 @@ HTML erlaubt Leerzeichen um Gleichheitszeichen. Ein Text ohne Leerzeichen ist je
 <WRAP center round box 60%>
 **Good:**
 <code html4strict>
-<link rel='stylesheet' href='styles.css'>
+<link rel="stylesheet" href="styles.css">
 </code>
 **Bad:**
 <code html4strict>
-<link rel = 'stylesheet' href = 'styles.css'>
+<link rel = "stylesheet" href = "styles.css">
 </code>
 </WRAP>
 
@@ -144,10 +145,10 @@ Versuchen Sie, zu lange Codezeilen zu vermeiden.
 
 ==== Leerzeilen und Einrückungen ====
 Fügen Sie keine Leerzeilen, Leerzeichen oder Einrückungen ohne Grund ein.
-Fügen Sie zur besseren Lesbarkeit Leerzeilen ein, um große oder logische Codeblöcke zu trennen.
+Fügen Sie zur besseren Lesbarkeit Leerzeilen ein, um grosse oder logische Codeblöcke zu trennen.
 Fügen Sie zur besseren Lesbarkeit zwei Leerzeichen als Einrückung ein. 
 
-**Hinweis**: Webstorm ersetze einen Tabulator automatisch mit Leerzeichen
+**Hinweis**: Webstorm ersetzt je nach Einstellung einen Tabulator automatisch mit Leerzeichen
 
 <WRAP center round box 60%>
 **Good:**

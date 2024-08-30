@@ -1,0 +1,29 @@
+====== LU04.A02 - Dataclass mit Konstruktor ======
+
+===== Aufgabe =====
+Implementiere eine einfache Verwaltung von Büchern in einer Bibliothek. 
+Jedes Buch hat die Eigenschaften ''title'', ''author'' und ''available''. 
+
+Nutze dafür Python's ''@dataclass'', ''@property'' und ''setter''.
+In der Methode ''__post_init__'' prüfen wir, ob ''title'' und ''author'' einen Wert aufweisen (nicht leer).
+
+===== post_init =====
+Implementiere eine Methode __post_init__, die sicherstellt, dass der Titel und der Autor des Buches nicht leer sind. 
+Falls eines dieser Felder leer ist, soll eine Ausnahme (''ValueError'') ausgelöst werden.
+
+
+
+
+
+
+
+----
+<details>
+<summary>//=> GitHub Repo für externe Besucher//</summary>
+GitHub Repository https://github.com/templates-python/m320-lu04-a01-dataclass
+
+//Lernende am BZZ müssen den Link zum GitHub Classroom Assignment verwenden//
+
+</details>
+{{tag>M320-LU04}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter mit Hilfe von ChatGPT

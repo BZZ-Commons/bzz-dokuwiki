@@ -1,7 +1,7 @@
 =====Merkmale der Ausbildungen Informatiker/in EFZ & Mediamatiker/in EFZ=====
 Überblick über die wichtigsten Merkmale und Schnittstellen der Ausbildungen.\\
 Für detaillierte Informationen folge bitte diesem [[berufsbeschreibung:start|Link]].
-===Allgemeine Infos===
+====Allgemeine Infos====
 {|style = "table-layout: fixed; width: 100%;"
 |- 
 !style = "width: 50%; border-right: thin solid; border-bottom: thin solid; text-align: center"|   Informatiker/in EFZ
@@ -43,7 +43,7 @@ Für detaillierte Informationen folge bitte diesem [[berufsbeschreibung:start|Li
 |}
 \\
 
-===Klassenbezeichnungen===
+====Klassenbezeichnungen====
 Berufslernende (API und MED) besuchen eine FK-Klasse und dazu entweder eine BM- oder AB-Klasse.
 {|style = "table-layout: fixed; width: 100%;"
 |- 
@@ -65,7 +65,7 @@ Berufslernende (API und MED) besuchen eine FK-Klasse und dazu entweder eine BM- 
 |-
 |}
 \\
-===Qualifikationsverfahren für EFZ===
+====Qualifikationsverfahren für EFZ====
 Das QV ist für beide Berufe grundsätzlich gleich aufgebaut.
 {|style = "table-layout: fixed; width: 100%;"
 |- 
@@ -76,14 +76,17 @@ Das QV ist für beide Berufe grundsätzlich gleich aufgebaut.
 |style="border-bottom : thin dotted; padding: 5px"|- 4 Teilnoten:\\ <tab>- Individuelle Praktische Arbeit (IPA)\\ <tab>- Module der Fachkunde (FK)\\ <tab>- Module der erweiterten Grundkentnisse (eGK)\\ <tab>- Allgemeinbildender Unterricht (ABU)
 |-  
 |style="border-bottom : thin dotted; padding: 5px"|\(\Rightarrow\) für BM-Lernende werden nur IPA und FK für das EFZ berücksichtigt (gilt auch für IMS) 
+|-  
+|style="border-bottom : thin dotted; padding: 5px"|Die Modulnoten werden gemäss der Leistungsbeurteilungsvorgabe (LBV) der OdA erhoben. in den «Ausführungsbestimmungen zur Leistungsbeurteilung» in Abschnitt 4 wird folgendes festgehalten: "Eine Leistungsbeurteilung (LB) enthält alle notengebenden Elemente eines Moduls, die durch die Leistungsbeurteilungsvorgaben (LBV) definiert sind." \\
+Daraus leitet sich ab, dass bei fehlender Leistungsbeurteilung auch keine Modulnote erstellt wird. Im Zeugnis erfolgt dann der Eintrag Pnab ( -> siehe dazu Abschnitt "Pnab Eintrag im Zeugnis")
 |- 
 |style="border-bottom : thin dotted; padding: 5px"|Eine Abwesenheit an einer Prüfung muss mit Arztzeugnis belegt werden, um zur Nachprüfung (4-6 Samstag-Termine) aufgeboten zu werden.\\ Ohne Arztzeugnis wird die Note 1.0 erteilt.\\ Die Rechtsgrundlage dazu findet sich im RQV Art. 9, 11, 14 und 19.
 |- 
-|style="border-bottom : thin dotted; padding: 5px"|Anmeldungen zur Nachprüfungen werden durch die Lehrperson in der App ([[https://it.bzz.ch/exam/]]) eingetragen.
+|style="border-bottom : thin dotted; padding: 5px"|Anmeldungen zur Nachprüfungen werden durch die Lehrperson in der App ([[https://exam.bzz.ch//]]) eingetragen.
 |- 
 |}
 \\
-===Zeugnis und Notenabgabe===
+====Zeugnis und Notenabgabe====
 Für Zeugnis und Notenabgabe gelten bei beiden Berufen die gleichen Regeln.
 {|style = "table-layout: fixed; width: 100%;"
 |- 
@@ -96,12 +99,12 @@ Für Zeugnis und Notenabgabe gelten bei beiden Berufen die gleichen Regeln.
 |style="border-bottom : thin dotted; padding: 5px"|**Spezielfall IMS!** \\ Die Notenabgabe richtet sich nach den Promotionsterminen der KSH, da die Informatiknote Teil der Promotion ist.
 |-
 |}
-===Pnab Eintrag im Zeugnis===
+====Pnab Eintrag im Zeugnis====
 Wer in einem Modul einen Leistungsnachweis nicht erbringt (verpasste Prüfung, nicht abgegebene Projektarbeit, unvollständiges Portfolio usw.), erhält den Eintrag **Pnab** (Prüfung nicht abgelegt).\\
 Die Lernenden sind selber dafür verantwortlich, mit den Lehrpersonen und/oder der Abteilungsleitung zu klären, wann und in welcher Form ein Leistungsnachweis ausserhalb des Moduls nachgeholt werden kann. Erfolgt die Wiederholung während der Ausbildungszeit, muss dies zuerst mit dem Lehrbetrieb geklärt werden.\\
 Steht zum Ausbildungsende ein Pnab im Zeugnis, wird das EFZ nicht erteilt!
 \\
-===Partnerschulen===
+====Partnerschulen====
 {|style = "table-layout: fixed; width: 100%;"
 |- 
 !style = "width: 50%; border-right: thin solid; border-bottom: thin solid; text-align: center"|   Informatiker/in EFZ
@@ -126,17 +129,17 @@ Steht zum Ausbildungsende ein Pnab im Zeugnis, wird das EFZ nicht erteilt!
 |style="border-bottom : thin dotted; padding: 5px;" |**Berufsmaturitätsschule Zürich (BMZ)**
 |-
 |style="border-right: thin solid; " |
-|style="border-bottom : thin dotted; padding: 5px;" |Mediamatiker/-innen können zwischen den BM-Typen Wirtschaft, Technik und Gestaltung wählen.
+|style="border-bottom : thin dotted; padding: 5px;" |Mediamatiker/-innen können zwischen den BM-Typen Wirtschaft (am BZZ), Technik und Gestaltung wählen.
 |-
 |style="border-right: thin solid; "|
-|style="border-bottom : thin dotted; padding: 5px;" |Lernende werden so eingeteilt, dass der Schultag der BMZ mit jenem der BM des BZZ zusammenfällt.\\ (Probleme mit ÜK-Terminen vermeiden)
+|style="border-bottom : thin dotted; padding: 5px;" |Lernende besuchen die BMZ am Mittwoch, so dass keine Stundenplankonflikte mit dem BZZ entstehen. Für ÜKs werden sie vom Unterricht an der BMZ dispensiert.
 |-
 |style="border-right: thin solid; border-bottom : thin dotted;" |
 |style="border-bottom : thin dotted; padding: 5px;" |Sprachaufenthalte der BMZ sind nicht synchron mit dem BZZ.
 |-
 |}
 \\
-===Sprachaufenthalte BM-Klassen===
+====Sprachaufenthalte BM-Klassen====
 Ausblick Schuljahr 2023/24.
 {|style = "table-layout: fixed; width: 100%;"
 |- 
@@ -166,7 +169,7 @@ Ausblick Schuljahr 2023/24.
 |-
 |}
 \\
-===Klassenlehrperson und Fachklassenbetreuung===
+====Klassenlehrperson und Fachklassenbetreuung====
 {|style = "table-layout: fixed; width: 100%;"
 |- 
 |style="border-bottom : thin dotted; padding: 5px"|Im Fachunterricht gibt es mehrfach Wechsel der Lehrpersonen, da die Module thematisch nicht gleichmässig auf die Ausbildung verteilt sind.\\ Aus diesem Grund wir das **Klassenlehramt** (Klassenlehrperson) jeweils einer BM- bzw. AB-Lehrperson zugewiesen. Sie überbringt den Klassen die allgemeinen Informationen zu Schulausfall, Schulregeln usw.

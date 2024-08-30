@@ -1,0 +1,78 @@
+====== LU02.A02 - Klassendiagramm "Bottle" umsetzen ======
+
+<WRAP center round todo 60%>
+Implementieren Sie das Klassendiagramm als Sourcecode.
+</WRAP>
+
+==== Auftrag ====
+  - Implementieren Sie das Klassendiagramm ''Bottle'' als Python-Code.\\ Orientieren Sie sich für die Umsetzung am [[[[modul:m320_2024:learningunits:lu02:klassendiagramm|Beispiel "Door"]].
+  - Halten Sie die [[howto/codingstandards/start]] ein.\\ Die Aufgabe ist nur dann vollständig gelöst, wenn Sie auch die BZZ-Vorgaben bezüglich <<guter Programmierung>> einhalten.
+
+==== Vorgehen ====
+Beim Lösen der Programmieraufgaben orientieren wir uns am TDD ([[https://de.ryte.com/wiki/Test_Driven_Development#:~:text=Test%20Driven%20Development%20(deutsch%3A%20testgeleitete,Prozess%20der%20Softwareentwicklung%20zu%20leiten.|test driven development]]). 
+Die nötigen Testfälle werden durch die Lehrpersonen in Ihrem GitHub Repository bereitgestellt.
+
+Sie finden weiter unten die genauen Anleitung für das jeweilige Vorgehen. Dieses ist bei der Implementation in allen kommenden Übungen anzuwenden.\\
+Es ist wichtig, dass Sie sich dieses Vorgehen aneignen, da auch die Prüfungen so umgesetzt sind und die erreichte Note durch die Anzahl korrekter Tests gegeben ist.
+
+==== Dauer ====
+40 Minuten + Hausaufgabenzeit
+
+==== Abgabe ====
+Commit und Push auf github
+
+===== Anleitung =====
+==== Klassendiagramm ====
+
+{{:modul:m320_2024:learningunits:lu02:aufgaben:uml_klasse_bottle.png?400|}}
+
+=== Beschreibung der Klasse ===
+Die Klasse Bottle stellt eine einfache Trinkflasche mit 3 Attributen sowie einigen Methoden dar.
+
+==== Attribute ====
+  * ''color'' ist die Farbe der Flasche.
+  * ''capacity'' ist die maximale Menge, die in der Flasche Platz findet.
+  * ''quantity_available'' hält die aktuelle Menge Wasser in der Flasche fest. \\ Defaultwert = 0
+  
+
+==== Methoden ==== 
+  * ''%%__init__(…)%%'' (der Konstruktor der Klasse Bottle) initialisiert die verfügbare Menge (quantitiy_avaible) auf 0, während Kapazität (capacity) und Farbe (color) der Flasche durch Parameter festgelegt werden.
+  * ''color()'' liefert die Farbe der Flasche. Wird als ''@property'' realisiert.
+  * ''capacity()'' liefert das Volumen der Flasche.  Wird als ''@property'' realisiert.
+  * ''read_quantitiy_available()'' liefert die in der Flasche vorhandene Menge.
+  * ''open_bottle()'' wird leer implementiert (Keyword pass verwenden)
+  * ''close_the_bottle()'' wird leer implementiert.
+  * ''fill_bottle()'' füllt die Flasche bis zum maximalen Fassungsvermögen.
+  * ''drink_water(amount)'' liefert die angeforderte Menge aus der Flasche, falls diese Menge noch verfügbar ist. Wenn die verfügbare Menge (quantitiy_available) kleiner ist, wir diese Menge geliefert und die Flasche ist leer.
+
+==== Vorgehen ==== 
+   - Akzeptieren Sie das GitHub Classroom Assignment.
+   - Klonen Sie ihr Repository in die Entwicklungsumgebung.
+   - Implementieren Sie den Konstruktor ( ''%%__init__(…)%%'') und initialisieren Sie die Attribute gemäss Beschreibung. 
+   - Implementieren und testen Sie das Attribut ''color''
+     - Schreiben Sie die ''@property'' für ''color''.
+     - Führen Sie in ''test_Bottle_class.py'' die Testmethode ''test_color'' aus. Sie muss fehlerfrei ablaufen.\\ {{:modul:m320:learningunits:lu01:aufgaben:lu01-aufg4-bottle-teststart.png?300|}}
+     - Das Ergebnis des Tests muss wie folgt aussehen:\\ {{:modul:m320:learningunits:lu01:aufgaben:lu01-aufg4-bottle-testergebnis.png?450|}}\\ Wird ein Fehler signalisiert, muss die Methode solange bearbeitet werden, bis der Test «passed» ist.\\ Beispiel eines fehlerhaften Testlaufs:\\ {{:modul:m320:learningunits:lu01:aufgaben:lu01-aufg4-bottle-testergebnisfailed.png?450|}}
+   - Führen Sie in Ihrer Entwicklungsumgebung einen **Commit** und einen **Push** aus.\\ Wichtig: Immer dann, wenn Sie einen Test erfolgreich ausgeführt haben, pushen Sie das Programm. So ist sichergestellt, dass auf GitHub jederzeit lauffähiger (und bewertbarer) Code liegt!
+   - Implementieren Sie nun Schritt für Schritt die weiteren Methoden nach dem gleichen Vorgehen.
+     - ''capacity()'' => ''test_capacity''
+     - ''read_quantitiy_available()'' => ''test_initial_quantity''
+     - ''open_bottle()'' und ''close_the_bottle()'' werden mit der ''pass''-Anweisung (leere Methoden ohne Funktion) realisiert. Testmethode: ''test_open_and_close_bottle''.
+     - ''fill_bottle()'' => ''test_fill_bottle''. Überlegen Sie sich, wie Sie sicherstellen können, dass die Flasche ganz gefüllt ist.
+     - In der Methode ''drink_water(…)'' stellen Sie sicher, dass die gelieferte Menge korrekt ist. Dazu müssen Sie überprüfen, ob die angeforderte Menge (''amount'') in der Flasche verfügbar ist. Weiter müssen Sie sicherstellen, dass der Inhalt der Flasche um den Betrag verringert wird. Reicht der Inhalt nicht, wird einfach der Rest in der Flasche geliefert (und die Flasche ist leer)
+       - Testmethoden: ''test_drink_water_available'', ''test_drink_water_not_avaible'', ''test_drink_water_partial_avaible''
+
+Zum Schluss führen noch einmal alle Tests aus.
+Geben Sie dazu im Terminal (Eingabeaufforderung) den Befehl ''pytest'' ein.
+
+Das Testergebnis muss nun wie folgt aussehen:\\ {{:modul:m320:learningunits:lu01:aufgaben:lu01-aufg4-bottle-gesamttestergebnis.png?500|}}
+
+----
+<details>
+<summary>//=> GitHub Repo für externe Besucher//</summary>
+GitHub Repository https://github.com/templates-python/m320-lu02-a02-bottle
+
+//Lernende am BZZ müssen den Link zum GitHub Classroom Assignment verwenden//
+
+</details>
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] René Probst, bearbeitet durch Marcel Suter

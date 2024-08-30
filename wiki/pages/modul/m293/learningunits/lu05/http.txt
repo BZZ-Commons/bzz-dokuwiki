@@ -28,8 +28,8 @@ Nebst Anfrage- und Headerzeilen enthält ein ''POST''-Request einen Body mit den
 
 Die Benutzereingaben in Formularen werden mit ''POST'' übermittelt.
 
-=== PUT-Methode ===
-In machen Webapplikationen wird neben ''POST'' auch die ''PUT''-Methode verwendet.
+==== PUT-Methode ====
+In manchen Webapplikationen wird neben ''POST'' auch die ''PUT''-Methode verwendet.
 Sowohl ''POST'' als auch ''PUT'' senden Daten an den Client zur Verarbeitung.
 Der Unterschied ist, ob es sich um ein neues Datenobjekt oder ein bestehendes Datenobjekt handelt.
 Zur Verdeutlichung nehmen wir eine Webseite um Bücher zu erfassen bzw. zu bearbeiten. 

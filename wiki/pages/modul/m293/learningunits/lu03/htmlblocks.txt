@@ -1,38 +1,42 @@
-====== LU03b - Anwendung von Elementen ======
+====== LU03a - Anwendung von Block-Elementen ======
+<WRAP center round info 60%>
+Block-Elemente starten üblicherweise auf einer neuen Zeile.
+Die Breite eines Block-Elements ist jeweils die maximal mögliche Breite.
+</WRAP>
 
 ==== Beispiele von Block-Elementen ====
 
-=== h1 bis h6-Element ===
+==== h1 bis h6-Element ====
 {{ :modul:m293:learningunits:lu03:heading.png?200|}}
 Die Tags ''<h1>'' bis ''<h6>'' werden zur Definition von HTML-Überschriften verwendet.
-''<h1>'' definiert die wichtigste Überschrift. <h6> definiert die unwichtigste Überschrift.
+''<h1>'' definiert die wichtigste Überschrift. 
+''<h6>'' definiert die unwichtigste Überschrift.
 
-Hinweis: Verwenden Sie nur eine ''<h1>'' pro Seite - diese sollte die Hauptüberschrift/das Hauptthema für die gesamte Seite darstellen. Überspringen Sie auch keine Überschriftenebenen - beginnen Sie mit ''<h1>'', verwenden Sie dann ''<h2>'' und so weiter.
+Hinweis: Verwenden Sie nur eine ''<h1>'' pro Seite - diese sollte die Hauptüberschrift/das Hauptthema für die gesamte Seite darstellen. 
+Überspringen Sie auch keine Überschriftenebenen - beginnen Sie mit ''<h1>'', verwenden Sie dann ''<h2>'' und so weiter.
 
 [[https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_headers|Live Preview]]
 
-\\
-\\
-\\
-=== div-Element ===
+==== div-Element ====
 {{ :modul:m293:learningunits:lu03:div.png?400|}}
-Es funktioniert wie ein Blockelement, das die gesamte Breite des Bildschirms einnimmt und immer in einer neuen Zeile beginnt. Der div-Tag definiert eine Unterteilung oder einen Abschnitt in einem HTML-Dokument. Das ''<div>''-Tag wird als Container für HTML-Elemente verwendet, die dann mit CSS gestaltet oder mit JavaScript manipuliert werden. Jede Art von Inhalt kann in das ''<div>''-Tag eingefügt werden! 
+Der ''div''-Tag definiert eine Unterteilung oder einen Abschnitt in einem HTML-Dokument. 
+Das ''<div>''-Tag wird als Container für HTML-Elemente verwendet, die dann mit CSS gestaltet oder mit JavaScript manipuliert werden. 
+Jede Art von Inhalt kann in das ''<div>''-Tag eingefügt werden! 
 
 [[https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_div_test|Live Preview]]
 
-\\
-\\
-\\
-=== p-Element ===
+
+==== p-Element ====
 {{ :modul:m293:learningunits:lu03:p.png?200|}}
-Normale Texte werden auf Webseiten in Absätzen geschrieben. Für jeden Textabschnitt wird ein Absatz erzeugt und große Texte können so in sinnvolle Abschnitte unterteilt werden. Um mit HTML einen Absatz zu erzeugen, verwendet man den ''<p>''-Tag. Der Buchstabe P ist von Paragraph abgeleitet und das bedeutet Absatz.
+Normale Texte werden auf Webseiten in Absätzen geschrieben. 
+Für jeden Textabschnitt wird ein Absatz erzeugt und grosse Texte können so in sinnvolle Abschnitte unterteilt werden. 
+Um mit HTML einen Absatz zu erzeugen, verwendet man den ''<p>''-Tag. 
+Der Buchstabe **P** ist von Paragraph abgeleitet und das bedeutet Absatz.
 
 [[https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_paragraphs1|Live Preview]]
 
-\\
-\\
-\\
-=== table-Element ===
+
+==== table-Element ====
 {{ :modul:m293:learningunits:lu03:table.png?300|}}
 Eine Tabelle wird verwendet, um Daten in einem Tabellenformat darzustellen, das einen Tabellenkopf, einen Tabellenkörper mit einer Tabellenzeile und eine Tabellenspalte umfasst. 
 
@@ -43,64 +47,6 @@ Das <tr>-Element definiert eine Tabellenzeile, das ''<th>''-Element definiert ei
 Weiter kann eine HTML-Tabelle kann auch ''<caption>''-, ''<colgroup>''-, ''<thead>''-, ''<tfoot>''- und ''<tbody>''-Elemente enthalten, mehr dazu bei [[https://www.w3schools.com/tags/tag_table.asp|w3school]]
 
 [[https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_table_test|Live Preview]]
-
-
-
-
-==== Beispiele von Inline-Elementen ====
-
-=== span-Element ===
-{{ :modul:m293:learningunits:lu03:span.png?400|}}
-Der ''<span>''-Tag ist ein Inline-Container, der zur Kennzeichnung eines Textteils oder eines Teils eines Dokuments verwendet wird. Er lässt sich leicht mit CSS gestalten oder mit JavaScript unter Verwendung des ''class''- oder ''id''-Attributs manipulieren.
-
-Der ''<span>''-Tag ist dem ''<div>''-Element sehr ähnlich, aber ''<div>'' ist ein Block-Level-Element und ''<span>'' ein Inline-Element.
-
-[[https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_span|Live Preview]]
-
-\\
-\\
-\\
-
-=== a-Element ===
-{{ :modul:m293:learningunits:lu03:a.png?200|}}
-Der ''<a>''-Tag definiert einen Hyperlink, der verwendet wird, um von einer Seite auf eine andere zu verlinken. Das wichtigste Attribut des ''<a>''-Elements ist das ''href''-Attribut, das das Ziel des Links angibt.
-
-Standardmäßig werden Links in allen Browsern wie folgt dargestellt:
-
-  * Ein nicht besuchter Link ist unterstrichen und blau
-  * Ein besuchter Link ist unterstrichen und lila
-  * Ein aktiver Link ist unterstrichen und rot.
-
-[[https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_link_test|Live Preview]]
-
-\\
-\\
-\\
-
-
-=== img-Element ===
-{{ :modul:m293:learningunits:lu03:img.png?200|}}
-Der ''<img>''-Tag wird verwendet, um ein Bild in eine HTML-Seite einzubetten.
-
-Bilder werden technisch gesehen nicht in eine Webseite eingefügt; Bilder werden mit Webseiten verknüpft. Der ''<img>''-Tag schafft einen Bereich für das referenzierte Bild.
-
-Der ''<img>''-Tag hat zwei erforderliche Attribute:
-
-''src'' - Gibt den Pfad zu dem Bild an
-''alt'' - Gibt einen alternativen Text für das Bild an, falls das Bild aus irgendeinem Grund nicht angezeigt werden kann.
-Hinweis: Geben Sie auch immer die Breite (width) und Höhe (height) eines Bildes an.  Wenn Breite und Höhe nicht angegeben werden, kann die Seite beim Laden des Bildes flackern.
-
-Tipp: Um ein Bild mit einem anderen Dokument zu verknüpfen, verschachteln Sie einfach den ''<img>''-Tag in einen ''<a>''-Tag, siehe Live Preiview 2
-
-[[https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_image_test|Live Preview]]
-[[https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_image_link|Live Preview2]]
-
-
-\\
-\\
-\\
-
-
 
 
 <WRAP center round tip 60%>

@@ -7,20 +7,20 @@ Das ''<datalist>''-Element in HTML wird verwendet, um eine vordefinierte Liste v
 {{:modul:m293:learningunits:lu07:datalist.png?200 |}}
 
 <code html4strict>
-<form action='#'>
+<form action="#">
   <p>
     <label> Vogelart
-      <input type='search' list='Voegel' />
-      <datalist id='Voegel'>
-        <option value='Amsel'>
-        <option value='Buntspecht'>
-        <option value='Drossel'>
-        <option value='Eisvogel'>
-        <option value='Fink'>
-        <option value='Graugans'>
-        <option value='Meise'>
-        <option value='Spatz'>
-        <option value='Specht'>
+      <input type="search" list="Voegel" />
+      <datalist id="Voegel">
+        <option value="Amsel">
+        <option value="Buntspecht">
+        <option value="Drossel">
+        <option value="Eisvogel">
+        <option value="Fink">
+        <option value="Graugans">
+        <option value="Meise">
+        <option value="Spatz">
+        <option value="Specht">
       </datalist>
     </label>
     <button>finden!</button>

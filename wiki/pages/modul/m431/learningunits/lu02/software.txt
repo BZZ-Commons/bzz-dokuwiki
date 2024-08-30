@@ -11,24 +11,28 @@ Wenn du selber wissen möchtest, weshalb es Chocolatey gibt und wie es angewende
 
 Wenn du einfach nur die Software haben möchtest, die du am BZZ brauchst, dann arbeite dich durch die folgenden Schritte:
 
-1. Installiere choco auf deinem Notebook ([[https://docs.chocolatey.org/en-us/choco/setup|link]]).
 
-2. Öffne das Programm cmd.exe (Eingabeaufforderung) als Administrator.
+
+1. Öffne das Programm cmd.exe (Eingabeaufforderung) als Administrator.
 
 {{:modul:m431:learningunits:lu01:cmd-admin.png?400|}}
 
-3. Kopiere die folgende Zeile ins CMD und drücke Enter: \\
+<WRAP center round important 100%>
+Falls du **Avast** als Antivirus auf deinem System installiert hast, so musst du Avast für die Installation von Choco pausieren.
+</WRAP>
+
+
+2. Kopiere die folgende Zeile ins CMD und drücke Enter: \\
 <code>
-@"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "[System.Net.ServicePointManager]::SecurityProtocol = 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))" && SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"</code>
+@"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -InputFormat None -ExecutionPolicy Bypass -Command "[System.Net.ServicePointManager]::SecurityProtocol = 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))" && SET "PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin"
+</code>
 
-4. Installiere nun folgende Software mit Hilfe von Chocolatey. Gib dazu den Befehl (z.B. "choco install adobereader") im CMD ein. Und bestätige allfällige Lizenzbestimmungen mit "y"
-
-  * PDF XChange Editor (Anzeigen und Bearbeiten von PDF-Dateien) > ''choco install pdfxchangeeditor''
+3. Installiere nun folgende Software mit Hilfe von Chocolatey. Gib dazu den Befehl (z.B. ''choco install adobereader'') im CMD ein. Und bestätige allfällige Lizenzbestimmungen mit ''y''
+  * Adobe Reader (Ein öffnen von PDF Dateien) > ''choco install adobereader''
   * Notepad ++ (Ein Texteditor zum einfachen Bearbeiten von Textdateien) > ''choco install notepadplusplus.install''
   * 7Zip (Zum Packen/Entpacken von Dateien) > ''choco install 7zip.install''
   * VLC Media Player (Video und Musikplayer) > ''choco install vlc''
   * Git (Versionsverwaltung für Softwareprojekte) > ''choco install git.install''
-  * Python3 (Interpreter für Python-Programme) > ''choco install python3''
 
 
 Die so installierte Software kann jederzeit mit ''choco upgrade all'' auf den neusten Stand gebracht werden.

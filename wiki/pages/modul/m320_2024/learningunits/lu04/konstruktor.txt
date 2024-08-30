@@ -1,0 +1,126 @@
+====== LU04a - Konstruktor ======
+<WRAP center round info 60%>
+Konstruktoren dienen der Initialisierung von Objekten bei deren Erzeugung. Der Code des Konstruktors wird genau einmal ausgeführt.
+</WRAP>
+
+
+===== Merkmale =====
+  * Ein Konstruktor liefert KEINEN Rückgabewert.
+  * Ein Konstruktor kann die Attribute mit einem Defaultwert setzen oder mittels Parameter konkrete Werte zuweisen.
+  * Ein Konstruktor führt i.d.R. keine Programmlogik aus.
+
+===== Default Konstruktor =====
+Er wird OHNE Parameter aufgerufen und initialisiert alle Attribute mit einem vorgegebenen Wert (Default-Wert).
+
+==== Beispiel: Default Konstruktor ====
+<code python>
+class Shoe:
+  def __init__(self):
+    self._shoe_size = 40
+    self._color     = 'green'
+    self._shoe_type = 'sneaker'
+</code>
+
+
+===== Parametrierter Konstruktor =====
+Ein Konstruktor kann Initialwerte entgegennehmen und ein Objekt so in einem definierten Zustand erzeugen. 
+Es empfiehlt sich, die Attribute mit einem Initalwert zu versehen, damit keine undefinierten Werte resultieren können. 
+Dies ist vor allem bei Wertzusicherungen wichtig.
+
+
+==== Beispiel: Parametrierter Konstruktor ====
+<code python>
+class Shoe:
+  def __init__(self, shoe_size = 40, color = 'green', shoe_type = 'sneaker'):
+    self._shoe_size = shoe_size
+    self._color     = color
+    self._shoe_type = shoe_type
+</code>
+
+===== Objekte erzeugen =====
+==== Ohne Werte ====
+
+Wird ein Objekt erzeugt, ohne Werte anzugeben (Default-Konstruktor), übernimmt Python die Initialwerte. 
+Der entsprechende Aufruf sieht dann wie folgt aus:
+<code python>
+  shoe = Shoe()
+</code>
+
+==== Initialwerte angeben ====
+Werden beim Erzeugen eines Objekts Initialwerte mitgegeben, müssen Sie Sie die Reihenfolge der Parameter einhalten. 
+Im Beispiel sieht dies so aus:
+<code python>
+  shoe = Shoe(44, 'black', 'boots')
+</code>
+
+Eine andere (bessere?) Möglichkeit ist es, die Namen der Attribute beim Aufruf mitzugeben:
+
+<code python>
+ shoe = Shoe(color='blue', shoe_size=45)
+</code>
+
+Diese Variante ist vor allem sinnvoll, wenn nur ein Teil der definierten Parameter mitgegeben wird.
+
+===== Überladen (Overloading) =====
+
+Viele Programmiersprachen kennen die oben gezeigte Möglichkeit der Benennung von Parametern nicht. 
+Daher wird bei der Nutzung unterschiedlicher Konstruktoren das Konzept des Überladens (**overloading**) angewendet. 
+Dabei darf ein Methodenname mehrfach deklariert werden, solange die Paramterliste eine klare Unterscheidung (bezüglich der Datentypen) zulässt. 
+Als Beispiel wird hier der Code der Klasse ''Shoe'' in Java wiedergegeben.
+
+==== Java-Code für parametrierte Konstruktoren ====
+
+<code java>
+public class Shoe{
+  // Deklaration der Attribute und Zuweisung der Initialwerte
+  private int shoe_size    = 40;
+  private String color     = "green";
+  private String shoe_type = "sneaker";
+  
+  public Shoe(){
+    // do nothing --> Default Konstruktor
+    // die Attribute sind hier mit den oben zugewiesenen Werten initialisert.
+  }
+  
+  public Shoe(int size){
+    // überladener Konstruktor mit einem Parameter
+    this();  // Aufruf des eigenen Default-Konstruktors
+    shoe_size = size;
+  }
+  
+  public Shoe(int size, String color){
+    // überladener Konstruktor mit zwei Parametern
+    this(size); // Aufruf des Konstruktors mit dem Parameter size
+    this.color = color; // um das Attribut vom Parameter zu unterscheiden, wird das Schlüsselwort this benötigt.
+  }
+  
+  public Shoe(int size, String color, String type){
+    // überladener Konstruktor mit drei Parametern
+    this(size, color); // Aufruf des Konstruktors mit den Parametern size und color
+    shoe_type = type;
+  }
+  :
+  :
+ }
+</code>
+
+
+Bei der Objekterzeugung wird je nach Parameterliste dann auf den entsprechende Konstruktor zugegriffen.
+<code java>
+  ....
+  Shoe shoe_1 = new Shoe();                        // Aufruf des Default-Konstuktors
+  Shoe shoe_2 = new Shoe(45);                      // Aufruf des Konstruktors mit dem Parameter für size
+  Shoe shoe_3 = new Shoe(39, 'yellow');            // Aufruf des Konstruktors mit den Parametern für size und color
+  Shoe shoe_4 = new Shoe(41, 'grey', 'slipper');   // Aufruf des Konstruktors mit den Parametern für size, color und style
+</code>
+
+==== UML-Klassendiagramm mit überladenen Konstruktoren ====
+
+Diese Technik hat sich auch in die Darstellung der UML übertragen. So wird im Klassendiagramm für jede mögliche Parameterliste der Konstruktor vollständig angeschrieben.
+
+{{:modul:m320:learningunits:lu02:theorie:lu02_-_uml-klassendiagramm.png?700|}}\\
+//Abb: UML-Klassendiagramm mit überladenen Konstruktoren// 
+
+----
+{{tag>M320-LU04}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] René Probst, bearbeitet durch Marcel Suter

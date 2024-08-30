@@ -1,0 +1,120 @@
+====== LU01b - Einbindung von CSS in HTML ======
+
+Es gibt mehrere Möglichkeiten, CSS-Stilanweisungen mit einem HTML-Dokument zu verknüpfen. Genau genommen stehen Ihnen drei Möglichkeiten zur Verfügung:
+
+  * internes Stylesheet (Internal Style Sheet): Sie geben die Stilanweisung gesammelt intern im Kopfbereich des HTML-Dokuments zwischen dem style-Element an.
+  * externes Stylesheet (External Style Sheet): Sie verwenden eine externe Stylesheet-Datei und verknüpfen diese mit dem HTML-Dokument.
+  * Inline-Style: Sie notieren die CSS-Stilangaben direkt im HTML-Element.
+
+===== Internes Stylesheet =====
+Ein internes Stylesheet wird im Kopfteil (''head'' section) des HTML-Dokuments platziert und verwendet den ''<style>'' Tag. Es kann verwendet werden, wenn eine spezifische Seite einen einzigartigen Stil benötigt. Hier ist ein Beispiel:
+
+<code html4strict>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Beispiel für internes Stylesheet</title>
+    <style>
+        body {
+            background-color: lightblue;
+        }
+        h1 {
+            color: navy;
+        }
+        p {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Willkommen auf meiner Webseite!</h1>
+    <p>Dies ist ein Absatz.</p>
+</body>
+</html>
+</code>
+In diesem Beispiel wird das interne Stylesheet verwendet, um den Hintergrund des Dokuments auf hellblau, den Text in der Überschrift auf marineblau und den Text im Absatz auf rot zu setzen.
+
+===== Externes Stylesheet =====
+Externe Stylesheets werden in separaten CSS-Dateien gespeichert. Diese Methode wird bevorzugt, wenn der Stil auf viele Seiten Ihrer Website angewendet werden soll. Sie verlinken die CSS-Datei mithilfe des ''<link>'' Tags im ''<head>'' Tag Ihres HTML-Dokuments. Hier ist ein Beispiel:
+
+''index.html''
+<code html4strict>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Beispiel für externes Stylesheet</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <h1>Willkommen auf meiner Webseite!</h1>
+    <p>Dies ist ein Absatz.</p>
+</body>
+</html>
+</code>
+
+''style.css''
+<code css>
+body {
+    background-color: lightblue;
+}
+h1 {
+    color: navy;
+}
+p {
+    color: red;
+}
+</code>
+
+===== Inline-Style =====
+Inline-Styles werden direkt in die HTML-Tags mithilfe des ''style'' Attributs integriert. Sie werden hauptsächlich für einzelne Instanzen verwendet, in denen ein spezifischer Stil benötigt wird. Hier ist ein Beispiel:
+
+<code html4strict>
+<!DOCTYPE html>
+<html>
+<body>
+    <h1 style="color:navy;">Willkommen auf meiner Webseite!</h1>
+    <p style="color:red;">Dies ist ein Absatz.</p>
+</body>
+</html>
+</code>
+
+===== Wann wird welche Methode verwendet? =====
+
+Jede Methode der CSS-Einbindung hat ihre eigenen Vor- und Nachteile und eignet sich für unterschiedliche Anwendungsfälle. Hier sind einige allgemeine Richtlinien:
+
+==== Externes Stylesheet: ====
+
+Externes CSS ist die bevorzugte Methode für die meisten Projekte, insbesondere für größere Websites und Anwendungen. Es ermöglicht die Wiederverwendung von CSS-Regeln auf mehreren Seiten und erleichtert das globale Ändern von Stilen, indem man Änderungen nur an einem Ort vornehmen muss.
+
+Es ist auch vorteilhaft für die Caching-Funktion des Browsers. Ein externes Stylesheet wird beim ersten Laden der Website vom Browser gecacht und muss für folgende Seitenaufrufe nicht erneut heruntergeladen werden.
+
+Verwenden Sie externes CSS, wenn:
+
+  * Sie mehrere Seiten haben, die die gleichen Styles verwenden.
+  * Sie einen klaren Trennung von Struktur (HTML) und Präsentation (CSS) möchten.
+
+==== Internes Stylesheet: ====
+
+Internes CSS kann nützlich sein, wenn Sie spezifische Styles haben, die nur auf einer einzigen Seite gelten. Durch das Einfügen von CSS-Regeln in den ''<style>''-Block im ''<head>''-Bereich der HTML-Datei, können diese Regeln nur auf diese eine Seite angewendet werden.
+
+Verwenden Sie internes CSS, wenn:
+
+  * Sie nur eine einzelne HTML-Seite haben.
+  * Sie Styles haben, die nur auf einer bestimmten Seite gelten und nirgendwo sonst verwendet werden.
+
+==== Inline-Style: ====
+
+Inline-CSS wird direkt im HTML-Element über das style Attribut definiert. Diese Methode ist sehr spezifisch und überschreibt andere CSS-Regeln, die auf das gleiche Element angewendet werden.
+
+Verwenden Sie Inline-CSS, wenn:
+
+  * Sie einen spezifischen Stil für ein einziges Element benötigen, der andere CSS-Regeln überschreibt.
+  * Sie schnelle und einfache Stiländerungen während der Entwicklung oder des Debuggings vornehmen.
+
+Denken Sie daran, dass die Verwendung von zu viel Inline-CSS die Lesbarkeit Ihres Codes beeinträchtigen und die Wartung Ihrer Stylesheets erschweren kann. In den meisten Fällen ist es am besten, sich auf externe Stylesheets zu verlassen, um einen sauberen und gut strukturierten Code zu behalten.
+
+----
+{{tag>m293-LU12 m293-G2G m293-G2F}}
+Nach [[http://ict.bzzlab.ch|Daniel Garavaldi]] 
+
+

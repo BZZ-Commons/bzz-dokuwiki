@@ -84,8 +84,6 @@ Schauen wir uns mal ein typisches Beispiel an:
 Da ich nur eine einzige Datensicherung habe, ist meine Programmversion vom Montag unwiderruflich verloren ((ausser ich hätte mit git gearbeitet und regelmässige Commits gemacht, aber das ist ein anderes Thema)).
 Besonders bei Dateien die häufig verändert werden (z.B. Datenbanken) sollten wir mehrere Backupversionen speichern.
 
-===== Backup-Programme =====
-
 ----
 {{tag>m231-AnG}}
 [[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

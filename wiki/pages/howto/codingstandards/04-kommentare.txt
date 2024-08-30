@@ -43,8 +43,8 @@ def load_project(project_id, category)
     """
     loads a project from the database
     
-        :param project_id (int): the unique id of a project
-        :param category (str):   the category title to be searched
+        :param: project_id (int): the unique id of a project
+        :param: category (str):   the category title to be searched
 
         :return: result_code(str): a resultcode (SUCCESS, NOT FOUND, ERROR)
     """

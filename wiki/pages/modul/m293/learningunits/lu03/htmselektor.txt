@@ -1,0 +1,46 @@
+====== LU03c - Selektoren für Elemente ======
+<WRAP center round info 60%>
+Die Attribute ''id'' und ''class'' können für jedes HTML-Element verwendet werden.
+Sie erlauben uns, in Stylesheets (CSS) oder Javascript bestimmte Elemente zu selektieren.
+</WRAP>
+
+===== id =====
+^ html ^ css ^
+| <code html>
+<form id="loginform">
+  ...
+</form>
+</code> | <code css>
+#loginform {
+  background-color: #f0f0f0;
+}
+</code> |
+
+Das ''id''-Attribut ist ein globales Attribut und kann für jedes HTML-Element verwendet werden.
+Es gibt einem Element eine eindeutige ID (der Wert muss innerhalb des HTML-Dokuments eindeutig sein).
+
+Über das ''id''-Attribut können wir ein einzelnes Element selektieren und manipulieren.
+
+===== class =====
+^ html ^ css ^
+| <code html>
+<ul>
+  <li class="navitem">
+    ...
+  </li>
+  <li class="navitem">
+    ...
+  </li>
+</ul>
+</code> | <code css>
+.navitem {
+  color: blue;
+} 
+</code> |
+
+Das ''class''-Attribut spezifiziert einen oder mehrere Klassennamen für ein Element.
+Es wird meist verwendet, um auf eine Klasse in einem Stylesheet zu verweisen. 
+Dadurch können wir mehrere Elemente selektieren, die alle gleich formattiert werden.
+
+Auch in Javascript können wir alle Elemente mit einer bestimmten Klasse auswählen.
+Dies wird aber nicht ganz so häufig gemacht.

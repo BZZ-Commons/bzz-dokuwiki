@@ -1,0 +1,33 @@
+====== LU01.L06 - Trace Table für lineare Suche ======
+
+===== Algorithmus: =====
+<code python>
+def linear_search(liste, ziel):
+    for index, wert in enumerate(liste):
+        if wert == ziel:
+            return index
+    return -1
+
+def main():
+    zahlen = [3, 8, 2, 7, 5]
+    ziel = 7
+    resultat = linear_search(zahlen, ziel)
+    print(f'Index des gesuchten Elements: {resultat}')
+</code>
+
+===== Trace Table: =====
+
+^ Schritt ^ index ^ wert ^ Vergleich (wert == ziel) ^ Ergebnis (index oder -1) ^
+| 1 | 0 | 3 | Nein | - |
+| 2 | 1 | 8 | Nein | - |
+| 3 | 2 | 2 | Nein | - |
+| 4 | 3 | 7 | Ja | 3 |
+
+===== Erklärung des Trace Tables: =====
+
+  * **Schritt 1**: Der Algorithmus beginnt mit dem ersten Element in der Liste. Der ''index'' ist 0 und der ''wert'' ist 3. Da 3 nicht gleich dem ''ziel'' (7) ist, geht der Algorithmus zum nächsten Element über.
+  * **Schritt 2**: Der ''index'' wird auf 1 erhöht und der ''wert'' ist nun 8. Da 8 ebenfalls nicht gleich 7 ist, wird weiter zum nächsten Element iteriert.
+  * **Schritt 3**: Jetzt ist der ''index'' 2 und der ''wert'' ist 2. Der Vergleich ergibt wieder ''Nein'', sodass der Algorithmus erneut weitergeht.
+  * **Schritt 4**: Schließlich erreicht der Algorithmus den ''index'' 3, wo der ''wert'' 7 ist. Der Vergleich ergibt ''Ja'', sodass der Algorithmus den ''index'' 3 als Ergebnis zurückgibt.
+
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/ch/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Kevin Maurizi 

@@ -1,0 +1,46 @@
+====== Merkblatt: Objekt ======
+==== Definition ====
+<WRAP center info 75%>
+Ein Objekt ist eine im laufenden System konkret vorhandene und aktive (agierende) Einheit. Jedes Objekt ist ein Exemplar einer Klasse.\\
+Ein Objekt zeichnet sich aus durch
+  - Eigenschaften (Attribute)
+  - Fähigkeiten (Operationen / Methoden)
+  - Zustand (momentane Werte aller Attribute)
+</WRAP>
+
+==== Notation eines Objekts ====
+{{:modul:m320:merkblaetter:lu01-merkblatt2-1.png?400|}}\\
+Ein Objekt ist ein im Speicher vorhandenes Element. Dies wird in der UML durch __unterstreichen__ des Namens signalisiert.
+
+
+==== Exemplarname ====
+Eine Objekt-Referenz wird wie ein Attribut im Kontext einer anderen Klasse deklariert.
+<code>
+   one_circle = None     # deklariert aber noch kein Wert zugewiesen
+</code>
+
+==== Erzeugung ====
+Zur Laufzeit muss ein Objekt erzeugt werden, bevor es zur Nutzung bereitsteht.
+<code>
+  one_circle = Circle(10.0)    # Kreis mit Radius 10.0 erzeugen.
+</code>
+
+==== Attribute und Attributwert====
+Die Attribute sind – in diesem Moment, diesem Zustand – mit den entsprechenden
+Werten zu setzen.
+Das Setzen von Attributen erfolgt über den Konstruktor und/oder über die entsprechenden Operationen des Objekts.
+<code>
+  one_circle = Circle(10.0)       # Wert wird beim Erzeugen als Parameter geliefert
+  one_circle.center = [5, 15]     # Wert wird über setter-Methode zugewiesen
+</code>
+
+==== Klasse und Objekt ====
+{{:modul:m320:merkblaetter:lu01-merkblatt2-2.png?400|}}\\
+Es können mehrere Objekte der gleichen Klasse erzeugt (instanziert) werden.
+Ein Objekt muss nicht zwingend mit einem Exemplarnamen versehen sein.
+Für eine Übersicht dürfen
+  * Attribute und Methoden bei der Klasse bzw.
+  * Attribute und Werte beim Objekt
+weggelassen werden.
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) René Probst

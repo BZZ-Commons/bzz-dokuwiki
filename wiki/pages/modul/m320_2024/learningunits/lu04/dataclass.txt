@@ -1,0 +1,68 @@
+====== LU04b - Konstruktor in Dataclass ======
+<WRAP center round info 60%>
+In einer Dataclass wird der Konstruktor anhand der Attribute automatisch generiert.
+Falls Sie eigene Zusicherungen im 
+</WRAP>
+
+===== Konstruktor =====
+In einer ''@dataclass'' definieren wir die Attribute mit ihren Datentypen.
+Python erzeugt automatisch einen Konstruktor mit allen Parametern und Wertzuweisungen.
+
+==== Beispiel ====
+
+<code python>
+@dataclass
+class Member:
+    givenname: str
+    birth_year: int
+    membership_fee: float
+</code>
+Die oben definierte Klasse erzeugt automatisch diesen Konstruktor:
+<code python>
+...
+    def __init__(self, givenname: str, birth_year: int, membership_fee: float):
+        self.givenname = givenname
+        self.birth_year = birth_year
+        self.membership_fee = membership_fee
+</code>
+
+===== Zusicherungen und Programmlogik =====
+Manche Klassen verlangen nach expliziten Zusicherungen oder Logik beim Erzeugen eines Objekts.
+Anstatt den Konstruktor von Hand zu schreiben, nutzen wir dafür die Methode ''__post_init__()''.
+Diese Methode, sofern vorhanden, wird am Ende des Konstruktors aufgerufen.
+
+==== Beispiel ====
+In unserem Beispiel wollen wir sicherstellen, dass der Mitgliederbeitrag nicht negativ sein kann.
+<code python>
+...
+    def __post_init__(self):
+        if self.membership_fee < 0:
+            raise ValueError('membership_fee may not be a negative value')
+</code>
+
+===== Attribute ohne Initialwert =====
+Jenachdem können Klassen Attribute haben, deren Werte nicht durch den Aufrufer gesetzt werden.
+Solche Attribute können mit ''field(init=False)'' ausgeschlossen werden.
+
+==== Beispiel ====
+
+<code python>
+@dataclass
+class Member:
+    givenname: str
+    birth_year: int
+    membership_fee: float = field(init=False)
+</code>
+
+In diesem Beispiel können beim Erzeugen (Instatiieren) eines Objekts nur der Vorname und das Geburtsjahr angegeben werden.
+Der generierte Konstruktor sieht entsprechend so aus:
+
+<code python>
+...
+    def __init__(self, givenname: str, birth_year: int):
+        self.givenname = givenname
+        self.birth_year = birth_year
+</code>
+----
+{{tag>M320-LU04}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

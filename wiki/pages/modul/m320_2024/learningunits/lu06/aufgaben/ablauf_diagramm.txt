@@ -1,0 +1,42 @@
+====== LU06.A03 - Sequenzdiagramm zu Ablauf zeichnen ======
+
+<WRAP center round todo 60%>
+Sie können aus einem einfachen Ablauf (Dialog) das zugehörige Sequenzdiagramm skizzieren.
+</WRAP>
+
+===== Auftrag =====
+Das unten aufgelistete Fachgespräch ist als Sequenzdiagramm wiederzugeben.\\
+Beteiligte Objekte:
+   - Joe (der Auftraggeber)
+   - Regula (die Verkäuferin)
+   - Kerry (der Informatiker)
+
+=== Hinweise: ===
+  * Die Methoden sind jeweils rechts vom Text angegeben.
+  * In normaler Schrift sind die Befehle (Fragen) angeschrieben 
+  * mit //kursivem// Text die Antworten auf die Frage.\\ 
+  
+==== Gespräch: ====
+| Regula | Joe, was könne wir für sie tun? | ''get_order()''\\ | 
+| Joe | //Wir brauchen eine Applikation für unsere Hausüberwachung// |  | 
+| Regula | Kerry, haben wir so was schon gemacht? | ''is_order_avaible()''\\ | 
+| Kerry | //Ja, so was haben wir in unserem Sortiment// |  | 
+| Regula | Joe, haben Sie da genaue Vorstellungen? | ''get_details()''\\ | 
+| Joe | //Ich habe hier eine „Wunschliste“// |  | 
+| Regula | Kerry, ist das so möglich oder braucht es zusätzliche Elemente | ''check_details()''\\ | 
+| Kerry | Regula, es fehlen uns zwei Bausteine für Storen und Türe | ''missed_elements()''\\ | 
+| Joe | Regula, was würde das denn kosten | ''get_price()''\\ | 
+| Regula | Kerry, was meinst du zu den Kosten | ''get_price()''\\ | 
+| Kerry | //Das dürfte etwa 100‘000 kosten// |  | 
+| Regula | //Das dürfte etwa 100‘000 kosten// |  | 
+
+===== Dauer =====
+10 - 15 Minuten
+
+===== Abgabe =====
+Geben Sie das Dokument als PDF-Datei in Moodle ab.
+
+----
+{{tag>M320-LU06}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] René Probst, bearbeitet durch Marcel Suter
+

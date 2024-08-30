@@ -1,0 +1,60 @@
+====== LU03a - Concept of a RDB ======
+
+==== Learning Objectives==== 
+  - I can explain in my own words, what a relations database is and why it is widely used in all kinds of web applications.
+  - I can name and explain the key components of a relational database.
+
+
+A Relational Database (RDB) is a structured method for storing and organizing data. The core idea is to represent data as related tables.
+
+{{:modul:m290:learningunits:lu03:theorie:relationsships.gif?400|}}
+
+==== Key components ==== 
+  * **Tables**: A collection of related data organized into rows (records) and columns (fields). Each row represents a unique entity, and columns contain specific attributes.
+  * **Records**: A single row in a table, representing a specific instance of data.
+  * **Fields**: A column in a table, defining the type of data stored in each row.
+  * **Relationships**: Connections between tables based on shared data. Common types include one-to-one, one-to-many, and many-to-many relationships.
+
+==== Structure and Integrity ====
+  * **Primary Key**: A unique identifier for each record in a table.
+  * **Foreign Key**: A field in one table that references the primary key in another table, establishing a relationship.
+  * **Data Integrity**: Ensures data accuracy and consistency through constraints like:
+    * Entity Integrity: Every table must have a primary key with no null values.
+    * Referential Integrity: Foreign key values must match existing primary key values or be null.
+    * Domain Integrity: Data values must conform to defined data types.
+
+==== Advantages of RDBs ===
+  * **Data Consistency**: Enforced by relationships and constraints.
+  * **Data Security**: Access control mechanisms protect sensitive information.
+  * **Data Independence**: Changes to data structure can be made without affecting applications.
+  * **Efficient Data Access**: Indexing and query optimization enhance performance.
+
+==== Common RDB Systems ====
+  * MySQL
+  * PostgreSQL
+  * Oracle Database
+  * Microsoft SQL Server
+
+----
+
+===== Vocabulary =====
+^ English ^ German ^
+| row | Zeile |
+| column | Spalte | 
+| entity | Objekt(-Einheit) |
+| attribute | Eigenschaft |
+| instance | Exemplar, Beispiel |
+| unique | einzig(-artig) |
+| to reference to | verweisen auf |
+| to establish | errichten, herstellen | 
+| consistency | Widerspruchsfreiheit, Übereinstimmung | 
+| constraint | Auflage, Bedingung |
+| to enhance | verbessern, aufwerten |
+
+===== References =====
+Definition RDB: https://de.wikipedia.org/wiki/Relationale_Datenbank
+
+----
+
+{{tag>M290-LU03}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir
