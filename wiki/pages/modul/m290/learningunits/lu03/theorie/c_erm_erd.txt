@@ -3,10 +3,20 @@
 ==== Entity-Relationship Model = ERM ====
 The Entity-Relationship Model (ERM) is a **conceptual data-model** used in database design to represent relationships between data entities in a system. An entity is a real-world object or concept, such as  customer or product, and each entity has specific attributes that describe it. **ERM serves as a blueprint for creating databases, ensuring that data is accurately captured and linked**. The following illustration shows a database of students, their teachers and the rooms in which the lessons are are held.
 
-===== Youtube tutorials ===== 
+
+==== ERM / ERD Editor ==== 
+Draw.io is a powerful visualisation editor, which is available as an online version as well as an offline app. 
+
+  * Available: [[https://www.draw.io/| ERD/ERD Editor Draw.io]]
+  * The necessary icons are offered on the left hand side, under the category "Entiry Relation".   
+  * The save function is quite obvious an needs no further explaination
+  * After you have completed your assignment, you can "Datei > Export > PNG/JPG/..." your data model.
+
+
+==== Youtube tutorials ==== 
   * [[https://www.youtube.com/watch?v=I-ctLA--THs&t=75s | Youtube DE: ERM einfach erklärt ]]
 
-===== Additional Youtube tutorials ===== 
+==== Additional Youtube tutorials ==== 
   * [[https://www.youtube.com/watch?v=baF9b5Lkiio | Youtube DE: ER-Modell - Teil 1]]
   * [[https://www.youtube.com/watch?v=XX7pM5hXXmk | Youtube DE: ER-Modell - Teil 2]]
 

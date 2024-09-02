@@ -6,24 +6,18 @@ Sie können durch Methodenaufrufe Daten zwischen Objekten austauschen.
 
 
 ===== Auftrag ===== 
-  - Akzeptieren Sie das Assignment im GitHub Classroom und klonen Sie Ihr Repository in die Entwicklungsumgebung.
+  - Klonen Sie das Repository [[https://github.com/templates-python/m320-lu06-a01-people.git]] in die Entwicklungsumgebung.
   - Führen Sie die ''main''-Routine aus und überlegen Sie sich, wie die Kommunikation zwischen den Objekten abläuft.
-  - Ändern Sie die Kommunikation, in dem Sie in ''main'' eigene Objekte erstellen und einen Dialog kreieren. Wichtig dabei: den Namen der Objekte müssen Sie immer über den getter ''name'' lesen.
+  - Erweitern Sie die Kommunikation, in dem Sie in ''main'' eigene Objekte erstellen und einen Dialog kreieren. 
 
 ===== Dauer =====
 10 Minuten
 
 ===== Abgabe =====
-Führen Sie einen Push Ihres Repositories durch.
+Keine
 
 ----
-<details>
-<summary>//=> GitHub Repo für externe Besucher//</summary>
-GitHub Repository https://github.com/templates-python/m320-lu06-a01-people.git
 
-//Lernende am BZZ müssen den Link zum GitHub Classroom Assignment verwenden//
-
-</details>
 
 {{tag>M320-LU06}}
 [[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] René Probst, bearbeitet durch Marcel Suter

@@ -5,10 +5,12 @@ Sie können ein Sequenzdiagramm anhand des Sourcecodes ergänzen.
 </WRAP>
 
 Die Aufgabe basiert auf dem Repository aus [[.:objektkommunikation]].
+Hier sehen Sie den Ablauf aus Sicht der main-Funktion.
 
 {{:modul:m320:learningunits:lu04:aufgaben:lu03-aufg4_band-1.png?700|}}\\
 
 ===== Auftrag =====
+Erstellen Sie das Sequenzdiagramm aus Sicht der Klassen ''Musician'' und ''Instrument''.
 Studieren Sie den Code der Klassen ''Musician'' und ''Instrument'' und ergänzen Sie Sequenzdiagramm mit den jeweiligen Aufrufen. (skizzieren Sie das Diagramm mit einem entsprechenden Tool) \\ {{modul:m320:learningunits:lu04:aufgaben:lu03-aufg4_band-3.png?600|}}
 
 ===== Dauer =====
