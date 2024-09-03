@@ -1,13 +1,16 @@
-====== LU04c - Multiple table ======
+====== LU04c - SQL-DQL: Select from multiple tables ======
 
 Source: [[https://www.w3schools.com/sql/sql_where.asp|W3Schools.co: SELECT with WHERE]]
 
-As we know, a RDB essentially consists of tables which are linked together to increase quality and performance and reduce unintended redundancies and inconsistencies. If we want to know which orders were placed by which customer we have to deal with the two tables **CUSTOMERS** and **ORDERS**, and the key that connects the two is logically the CustomerID, as shown in the figure below. 
+As we know, a RDB essentially consists of tables which are linked together to increase quality and performance and reduce unintended redundancies and inconsistencies. The following ERD shows such a data structure of a shop including some details.
 
 {{:modul:m290:learningunits:lu04:theorie:erd_customer_orders.drawio.png?900| ERD of a Webshop}}
+
+If we want to know which orders were placed by which customer we have to deal with the two tables **CUSTOMERS** and **ORDERS**, and the key that connects the two is logically the CustomerID. 
+
 ===== Select on two tables =====
 
-In real live we would like to know which one particular customer, e.g. with the ID =3,  had ordered, the subsequent SQL statement would be as following:
+In practice, we would like to know which customer, e.g. with ID =3, has ordered which product. The following SQL statement would read as follows:
 
   SELECT c.*, o.orderdate 
   FROM CUSTOMERs c, ORDERS o

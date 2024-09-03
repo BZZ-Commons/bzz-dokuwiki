@@ -1,7 +1,9 @@
 ====== LU07.A01 - Schritt 3 ======
 <WRAP center round todo 60%>
-Realisieren Sie die Methoden ''lend_book_by_title()'' in der Klasse ''Librarian'' und ''borrow_book_by_title()'' in der Klasse ''Customer''.
+Realisieren Sie die Methoden um ein Buch an einen Kunden auszuleihen.
 </WRAP>
+
+{{:modul:m320_2024:learningunits:lu07:aufgaben:bibliothek:library_klassen_schritt3.png?600|}}
 
 ===== Librarian =====
 Mit der Methode ''lend_book_by_title'' sucht der Bibliothekar zunächst das Buch in der Bibliothek.

@@ -6,8 +6,6 @@ Realisieren Sie die Konstruktoren der Klassen ''Customer'' und ''Librarian''.
 {{:modul:m320_2024:learningunits:lu07:aufgaben:bibliothek:library_klassen_schritt1.png?600|}}
 
 ===== Customer =====
-==== Auftrag ====
-
 Realisieren Sie den Konstruktor der Klasse ''Customer''.
 
 Beim Erzeugen eines Customer-Objektes meldet sich dieses selber (proaktiv) bei der Library an. 
@@ -22,7 +20,6 @@ Dazu wird im Konstruktor die Methode ''add_customer'' des ''Library''-Objekts au
     * ''test_search_customer_failed''
 
 ===== Library =====
-==== Auftrag ====
 Realisieren Sie den Konstruktor der Klasse ''Librarian''.
 
 ==== Tests ====
@@ -30,7 +27,6 @@ Realisieren Sie den Konstruktor der Klasse ''Librarian''.
     * ''test_init()''
 
 ===== main.py =====
-==== Auftrag ====
 
 Implementieren Sie nun in der ''main''-Methode (''main.py'') die Instanziierung der Objekte sowie die Methodenaufrufe gemäss dem gezeigten Sequenzdiagramm. 
 

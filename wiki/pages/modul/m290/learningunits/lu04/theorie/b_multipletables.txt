@@ -1,4 +1,4 @@
-====== LU04b - Reading from multiple tables ======
+====== LU04b - SQL-DQL: Select from one table ======
 The simplest SELECT is reading from a table, as we don't have to deal with the connection between other tables. Let's have a quick look on the different parts of an average SELECT statement. Therefore, we will use our Customer Table as practical example for demonstration purposes.
 
 {{:modul:m290:learningunits:lu04:theorie:screenshot_2024-08-30_095010.png?600|}}

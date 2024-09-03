@@ -1,0 +1,36 @@
+====== LU07.A01 - Schritt 5 ======
+<WRAP center round todo 60%>
+Realisieren Sie die Methoden um einen Kunden zu mahnen, wenn er das Buch zu spät zurück bringt.
+</WRAP>
+
+{{:modul:m320_2024:learningunits:lu07:aufgaben:bibliothek:library_klassen_schritt5.png?600|}}
+
+===== Customer =====
+Realisieren Sie die ''property'' und den ''setter'' für das Attribut ''reminded''.
+
+==== Tests ====
+  * test_customer.py
+    * test_reminded
+
+===== Librarian =====
+Realisieren Sie die Methode ''remind_customer''.
+Die Methode sucht zuerst den Kunden anhand des Namens.
+Anschliessend wird das Flag ''reminded'' gesetzt und eine Meldung ausgegeben.
+
+==== Tests ====
+  * test_librarian.py
+    * test_remind_customer
+
+
+===== main.py =====
+Ergänzen Sie den Ablauf in der main-Methode gemäss dem Sequenzdiagramm.
+
+{{modul:m320:learningunits:lu04:aufgaben:lu03-aufg5_biblio-10.png?575|}}
+
+Die Ausgabe soll in etwa wie folgt aussehen:
+
+{{modul:m320:learningunits:lu04:aufgaben:lu03-aufg5_biblio-11.png?375|}}
+
+----
+{{tag>M320-LU07}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] René Probst, bearbeitet durch Marcel Suter

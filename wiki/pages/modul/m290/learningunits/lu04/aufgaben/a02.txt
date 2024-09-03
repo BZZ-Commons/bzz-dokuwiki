@@ -1,0 +1,52 @@
+====== LU04.A02 - SQL-DQL: Select from multiple tables======
+
+===== Requirements  =====
+  * Work type: individual
+  * Timeframe: 30 Minutes
+  * Means of aid: 
+      * only teaching materials, no websearch, no use of ai.
+      * [[https://www.w3schools.com/sql/trysql.asp?filename=trysql_select_columns | W3Schools | SQL Editor]]
+  * Expected result: Semantically and syntactically correct SQL statements according to the requirements of the case studies. 
+
+===== Case studies / Assignments =====
+The following ERD describes a order database for a a shop. 
+
+{{:modul:m290:learningunits:lu04:aufgaben:erd_selects.png?900|ERD eines Shops}}
+
+===== Assignments =====
+The general assignment is to develop DQL commands that matches the requirements below:
+
+==== Assignment a) ====
+We need a list with product details as following:
+  * Name of the supplier
+  * Supplier phone 
+  * Product ID
+  * Name of the product
+  * Units
+  * Price
+The list must be be sorted by the suppliername in descending order.
+
+
+==== Assignment b) ====
+Extend the the result of the Select statement from assignment a), so that it must contain only produtcs of the supplier "Leka Trading". 
+
+==== Assignment c) ====  
+We would like to know what products the customer "Hanari Carnes" has ordered in the past. Sort the list by the quantity. detail we require the following data: 
+  * CustomerID
+  * CustomerName
+  * OrderID
+  * OrderDate
+  * Quantity
+  * ProductName
+  * CategoryName 
+
+===== Solution =====
+[[modul:m290:learningunits:lu04:loesungen:l02|Lösung]]
+  
+===== Vocabulary =====
+^ English ^ German ^ 
+| ... | ...|
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

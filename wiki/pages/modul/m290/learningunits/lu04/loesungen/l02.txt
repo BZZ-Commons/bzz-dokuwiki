@@ -1,0 +1,87 @@
+====== LU04.S02 - SQL-DQL: Select from multiple tables======
+
+
+===== Case studies / Assignments =====
+The following ERD describes a order database for a a shop. 
+
+{{:modul:m290:learningunits:lu04:aufgaben:erd_selects.png?900|ERD eines Shops}}
+
+===== Assignments =====
+The general assignment is to develop DQL commands that matches the requirements below:
+
+==== Assignment a) ====
+We need a list with product details as following: Name of the supplier, Supplier phone, Product ID, Name of the product, units, price. The list must be be sorted by SupplierName in descending order.
+
+  SELECT s.SupplierName, s.SupplierID, s.phone,  p.ProductID, p.ProductName, p.Unit, p.Price
+  FROM Suppliers s, Products p
+  WHERE p.SupplierID = s.SupplierID
+  ORDER BY s.SupplierName DESC;
+
+==== Assignment b) ====
+Extend the the result of the Select statement from assignment a), so that it must contain only produtcs of the supplier "Leka Trading". 
+
+There are two possible solutions. 
+
+**b1)**
+The first one is to to search for the ID (SupplierID = 20) of the supplier and take that ID into our SELECT as follows:  
+
+  SELECT s.SupplierName, s.SupplierID, s.phone,  p.ProductID, p.ProductName, p.Unit, p.Price
+  FROM Suppliers s, Products p
+  WHERE p.SupplierID = s.SupplierID
+  AND s.SupplierID = 20;
+
+**b2)** 
+The second solution takes the name directly into the SELECT statement:  
+
+  SELECT s.SupplierName, s.SupplierID, s.phone,  p.ProductID, p.ProductName, p.Unit, p.Price
+  FROM Suppliers s, Products p
+  WHERE p.SupplierID = s.SupplierID
+  AND s.SupplierName = 'Leka Trading';
+
+The result set is in both cases, as the figure below shows: 
+
+{{:modul:m290:learningunits:lu04:aufgaben:screenshot_2024-09-03_134335.png?600|}}
+  
+==== Assigmment c) ====
+We would like to know what products the customer "Hanari Carnes" has ordered in the past. Sort the list by the quantity. In detail we require the following data: CustomerID, CustomerName, OrderID, OorderDate, Quantity, ProductName, CategoryName 
+
+**c1)**
+Like in assignment b) here a two approaches possible: 1. find the customerID (34) and select according to the customer id.
+
+  select c.CustomerID, c.CustomerName , o.OrderID, o.orderDate, od.Quantity, p.ProductName, ct.CategoryName
+  FROM customers c, orders o, OrderDetails od, Products p, Categories ct
+  WHERE c.CustomerID = o.CustomerID
+  AND o.OrderID = od.OrderID
+  AND od.ProductID = p.ProductID
+  AND p.CategoryID = ct.CategoryID
+  AND c.CustomerID = 34
+  ORDER BY od.Quantity;
+
+**C1)**
+The second approach, as in b2), is to filter the result set directly by customer name.
+
+  select c.CustomerID, c.CustomerName , o.OrderID, o.orderDate, od.Quantity, p.ProductName, ct.CategoryName
+  FROM customers c, orders o, OrderDetails od, Products p, Categories ct
+  WHERE c.CustomerID = o.CustomerID
+  AND o.OrderID = od.OrderID
+  AND od.ProductID = p.ProductID
+  AND p.CategoryID = ct.CategoryID
+  AND c.CustomerName = "Hanari Kanes"
+  ORDER BY od.Quantity;    
+  
+  The result set is in both cases as shown in the following figure.
+  
+{{:modul:m290:learningunits:lu04:aufgaben:screenshot_2024-09-03_143510.png?600|}}
+  
+===== Solution =====
+[[modul:m290:learningunits:lu04:loesungen:l02|Lösung]]
+
+
+===== Vocabulary =====
+^ English ^ German ^ 
+| respectively | beziehungsweise|
+| assignment | Auftrag |
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

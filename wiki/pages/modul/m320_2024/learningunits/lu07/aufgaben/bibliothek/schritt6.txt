@@ -1,0 +1,28 @@
+====== LU07.A01 - Schritt 6 ======
+<WRAP center round todo 60%>
+Realisieren Sie die Methoden um ein Buch aus der Bibliothek zu entfernen.
+</WRAP>
+
+{{:modul:m320_2024:learningunits:lu07:aufgaben:bibliothek:library_klassen_schritt6.png?600|}}
+
+===== Librarian =====
+Realisieren Sie die Methode ''remove_book''.
+Die Methode sucht zunächst das Buch, welches dann entfernt wird.
+
+==== Tests ====
+  * test_librarian.py
+    * test_remove_book
+
+
+===== main.py =====
+Ergänzen Sie den Ablauf in der main-Methode gemäss dem Sequenzdiagramm.
+
+{{modul:m320:learningunits:lu04:aufgaben:lu03-aufg5_biblio-12.png?525|}}
+
+Die Ausgabe soll in etwa wie folgt aussehen:
+
+{{modul:m320:learningunits:lu04:aufgaben:lu03-aufg5_biblio-13.png?425|}}
+
+----
+{{tag>M320-LU07}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] René Probst, bearbeitet durch Marcel Suter
