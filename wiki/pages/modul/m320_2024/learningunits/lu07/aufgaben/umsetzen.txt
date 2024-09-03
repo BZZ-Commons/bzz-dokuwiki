@@ -9,7 +9,9 @@ Sie können Objekte nach Vorgabe eines Klassen- und Sequenzdiagramms erstellen u
    * Lösen Sie die Aufgabe jeweils step by step und führen Sie dann den Code aus, um zu prüfen, ob Ihre Implementation erfolgreich ist.
    * Die Klassen ''Book'' und ''Library'' werden nicht bearbeitet. Lesen Sie aber dennoch die Beschreibungen der Methoden, damit Sie wissen, wie diese anzuwenden sind.
    * Eine OO-Anwendung startet damit, dass in der ''main''-Methode alle wichtigen Klassen instanziiert und deren Beziehungen sichergestellt werden.
-   * Das Klassendiagramm gibt den statischen Aufbau der Anwendung wieder. \\ {{:modul:m320:learningunits:lu04:aufgaben:lu03-aufg5_biblio-1.png?800}} \\
+   * Das Klassendiagramm gibt den statischen Aufbau der Anwendung wieder. 
+
+{{:modul:m320_2024:learningunits:lu07:aufgaben:library_klassen.png?600|}}
 
 ===== Auftrag =====
 ==== Teil 1: Die Objekte werden erzeugt. ====

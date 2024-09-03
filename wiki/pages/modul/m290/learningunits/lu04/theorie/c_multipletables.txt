@@ -1,11 +1,40 @@
 ====== LU04c - Multiple table ======
-...
 
-===== ... ====
+Source: [[https://www.w3schools.com/sql/sql_where.asp|W3Schools.co: SELECT with WHERE]]
 
+As we know, a RDB essentially consists of tables which are linked together to increase quality and performance and reduce unintended redundancies and inconsistencies. If we want to know which orders were placed by which customer we have to deal with the two tables **CUSTOMERS** and **ORDERS**, and the key that connects the two is logically the CustomerID, as shown in the figure below. 
+
+{{:modul:m290:learningunits:lu04:theorie:erd_customer_orders.drawio.png?900| ERD of a Webshop}}
+===== Select on two tables =====
+
+In real live we would like to know which one particular customer, e.g. with the ID =3,  had ordered, the subsequent SQL statement would be as following:
+
+  SELECT c.*, o.orderdate 
+  FROM CUSTOMERs c, ORDERS o
+  WHERE c.CustomerID = 3
+  AND c.CustomerID = o.CustomerID;
+  
+  
+In the line **FROM CUSTOMER c, ORDERS o**, we use an alias for the tablename. This is practical because we can use the alias instead of the full table name in the rest of the statement. The result of the SQL statement you find below
+
+{{:modul:m290:learningunits:lu04:theorie:screenshot_2024-09-03_110719.png|}}
+
+===== Select on three or more tables =====
+The basic idea how to receive data from two table shows us the way how we can retrieve data from three or more tables, as the approach is similar. In that case the three or more tables require a common ID, that linkes the tables involved. The requirements could contain some order details, e.g. which product and the which quantity the customers had ordered. The according SQL select statement would be like: 
+
+  SELECT c.CustomerID, c.CustomerName, o.Orderdate, od.ProductID, od.Quantity 
+  FROM Customers c, Orders o, OrderDetails od
+  WHERE o.orderid = od.orderID
+  AND c.CustomerID = o.CustomerID
+  AND c.CustomerID = 2;
+  
+The result is shown in the figure below:
+
+{{:modul:m290:learningunits:lu04:theorie:screenshot_2024-09-03_113230.png|}}
 ===== Vocabulary =====
 ^ English ^ German ^
-| ... | ... | 
+| essentially | im Grunde genommen, hauptsächlich | 
+| requirement | Anforderung | 
 
 
 ----

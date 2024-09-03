@@ -1,0 +1,34 @@
+====== LU07.A01 - Schritt 2 ======
+<WRAP center round todo 60%>
+Realisieren Sie die Methode ''buy_new_book'' in der Klasse ''Librarian''.
+</WRAP>
+
+===== Librarian =====
+
+Die Methode ''buy_new_book'' erzeugt ein neues Buch und fügt es in die Bibliothek ein.
+
+==== Hinweise ====
+Der Wert des Attributs ''location'' ist ein Zufallswert der in der Methode ''add_book()'' der Klasse ''Library'' generiert wird.
+
+==== Tests ====
+  * test_librarian.py
+    * test_buy_new_book()
+
+
+===== main.py =====
+Ergänzen Sie den Ablauf in ''main'' gemäss diesem UML Sequenzdiagramm.
+Übernehmen Sie die Buchtitel und ISBN-Nummern genau so, wie im Printout angegeben.
+
+{{modul:m320:learningunits:lu04:aufgaben:lu03-aufg5_biblio-4.png?750|}}
+
+Die Ausgabe soll wie folgt aussehen:
+
+{{modul:m320:learningunits:lu04:aufgaben:lu03-aufg5_biblio-5.png?475|}}
+
+=== Hinweis ===
+Der Ablageort (''location'') wird durch die Library generiert und wird darum vom Beispiel abweichen!
+
+
+----
+{{tag>M320-LU07}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] René Probst, bearbeitet durch Marcel Suter

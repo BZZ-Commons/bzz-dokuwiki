@@ -1,6 +1,6 @@
 ====== LU04.S01 - SQL : DQL commands ======
 
-==== Assignment a) ====
+====Assignment a) ====
 Create a adress-list of the customers with the columns in this order: CustomerName, Adress, PostalCode, Country, ordered by the the Country ascending.
 
   Select CustomerName, Address, PostalCode, Country

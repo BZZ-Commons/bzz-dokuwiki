@@ -1,0 +1,39 @@
+====== LU07.A01 - Schritt 3 ======
+<WRAP center round todo 60%>
+Realisieren Sie die Methoden ''lend_book_by_title()'' in der Klasse ''Librarian'' und ''borrow_book_by_title()'' in der Klasse ''Customer''.
+</WRAP>
+
+===== Librarian =====
+Mit der Methode ''lend_book_by_title'' sucht der Bibliothekar zunächst das Buch in der Bibliothek.
+Falls das gewünschte Buch existiert, entnimmt er das Buch aus der Bibliothek und übergibt es dem Kunden.
+
+==== Tests ====
+  * test_librarian.py
+    * test_lend_book_by_title()
+    * test_lend_unknown_book()
+
+===== Customer =====
+Über die Methode ''borrow_book_by_title'' sagt der Kunde, dass er ein Buch mit einem bestimmten Titel ausleihen möchte.
+Dazu wird ''lend_book_by_title'' aufgerufen und der Rückgabewert (eine Referenz auf ein ''book''-Objekt) im Attribut ''_book'' gespeichert.
+Das lässt sich aus dem Sequenzdiagramm so nicht entnehmen. 
+Dieses Wissen müssen Sie als Fachperson hier einbringen. 
+
+==== Tests ====
+  * test_customer.py
+    * test_borrow_book_by_title()
+    * test_borrow_unknown_book()
+
+
+===== main.py =====
+Ergänzen Sie den Ablauf in main gemäss diesem UML Sequenzdiagramm.
+
+{{modul:m320:learningunits:lu04:aufgaben:lu03-aufg5_biblio-6.png?700|}}
+
+Die Ausgabe soll in etwa wie folgt aussehen:
+
+{{modul:m320:learningunits:lu04:aufgaben:lu03-aufg5_biblio-7.png?475|}}
+
+----
+{{tag>M320-LU07}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] René Probst, bearbeitet durch Marcel Suter
+

@@ -1,0 +1,50 @@
+====== LU07.A01 - Schritt 1 ======
+<WRAP center round todo 60%>
+Realisieren Sie die Konstruktoren der Klassen ''Customer'' und ''Librarian''.
+</WRAP>
+
+{{:modul:m320_2024:learningunits:lu07:aufgaben:bibliothek:library_klassen_schritt1.png?600|}}
+
+===== Customer =====
+==== Auftrag ====
+
+Realisieren Sie den Konstruktor der Klasse ''Customer''.
+
+Beim Erzeugen eines Customer-Objektes meldet sich dieses selber (proaktiv) bei der Library an. 
+Dazu wird im Konstruktor die Methode ''add_customer'' des ''Library''-Objekts aufgerufen.
+
+==== Tests ====
+  * test_customer.py
+    * ''test_init()''
+  * test_library.py
+    * ''test_add_and_print_customers''
+    * ''test_search_customer''
+    * ''test_search_customer_failed''
+
+===== Library =====
+==== Auftrag ====
+Realisieren Sie den Konstruktor der Klasse ''Librarian''.
+
+==== Tests ====
+  * test_librarian.py
+    * ''test_init()''
+
+===== main.py =====
+==== Auftrag ====
+
+Implementieren Sie nun in der ''main''-Methode (''main.py'') die Instanziierung der Objekte sowie die Methodenaufrufe gemäss dem gezeigten Sequenzdiagramm. 
+
+{{modul:m320:learningunits:lu04:aufgaben:lu03-aufg5_biblio-2.png?600|}} 
+
+Führen Sie dann das ''main''-Programm aus. Es muss fehlerfrei laufen. 
+Die Ausgabe soll wie folgt aussehen:
+
+{{modul:m320:learningunits:lu04:aufgaben:lu03-aufg5_biblio-3.png?175|}}
+
+==== Tests ====
+  * ''test_main.py''
+    * ''test_main_part1''
+
+----
+{{tag>M320-LU07}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] René Probst, bearbeitet durch Marcel Suter

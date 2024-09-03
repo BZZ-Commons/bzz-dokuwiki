@@ -1,0 +1,37 @@
+====== LU07.A01 - Applikation "Bibliothek" nach Vorgabe erstellen ======
+
+<WRAP center round todo 60%>
+Sie können Klassen nach Vorgabe eines Klassen- und Sequenzdiagramms erstellen und Objekte kommunizieren lassen.
+</WRAP>
+
+===== Aufgabenstellung =====
+Realisieren Sie die Applikation "Bibliothek" Schritt-für-Schritt.
+Jeder Vorgehensschritt ist auf einer eigenen Seite beschrieben:
+  * Beschreibung des Vorgehensschritts,
+  * UML Klassendiagramms bei dem die relevanten Methoden hervorgehoben sind, 
+  * UML Sequenzdiagramm,
+  * Relevante Unittests.
+
+Bei jedem Schritt werden eine oder mehrere Methoden realisiert.
+Anschliessend wird im ''main.py'' der Programmablauf ergänzt, indem Objekte erzeugt und Methoden aufgerufen werden.
+
+Lösen Sie jeden Schritt vollständig, bis alle relevanten Tests erfolgreich durchgeführt werden.
+Führen Sie dann einen Push ins GitHub Repository durch, um den Zwischenstand zu sichern.
+
+===== UML Klassendiagramm =====
+
+{{:modul:m320_2024:learningunits:lu07:aufgaben:library_klassen.png?600|}}
+
+   * Die Klassen ''Book'' und ''Library'' werden nicht bearbeitet. Lesen Sie aber dennoch die Beschreibungen der Methoden, damit Sie wissen, wie diese anzuwenden sind.
+
+----
+<details>
+<summary>//=> GitHub Repo für externe Besucher//</summary>
+GitHub Repository https://github.com/templates-python/m320-lu07-a01-library
+
+//Lernende am BZZ müssen den Link zum GitHub Classroom Assignment verwenden//
+
+</details>
+----
+{{tag>M320-LU0x}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] René Probst, bearbeitet durch Marcel Suter
