@@ -1,0 +1,53 @@
+====== LU04.S03 - SQL-DQL: Selects with Aggregate Functions ======
+
+==== Assignment a: MIN ====
+We want to know which of our products is actually the most expensive.
+
+  SELECT max(price)
+  FROM Products;
+
+==== Assignment b: MAX ====
+What is the lowest price for the products of the supplier with id = 12?
+
+  SELECT max(price) 
+  FROM Products
+  WHERE SupplierID = 12;
+
+==== Assignment c: AVG ====
+What is the average price for products of supplier 3?
+
+  SELECT AVG(price) 
+  FROM Products
+  WHERE SupplierID = 3;
+
+==== Assignment d: AVG ====
+How many orders do we currently have in our data-base system from the customer with id = 5?
+
+  SELECT count(customerID)
+  FROM Orders
+  where customerID = 5;
+  
+==== Assignment e: SUM ====
+What is the worth of the order 10255? Please note, that there are two tables involved in this select statement.
+
+  SELECT sum(price*quantity)
+  FROM OrderDetails, Products
+  WHERE orderDetails.OrderID = 10255
+  AND OrderDetails.ProductID = Products.ProductID;
+
+==== Assignment f: GROUP BY ====
+For our anual report we need list of the orders, and the value of each, grouped by the OrderID.
+
+  SELECT sum(price*quantity)
+  FROM OrderDetails, Products
+  WHERE orderDetails.OrderID = 10255
+  AND OrderDetails.ProductID = Products.ProductID;
+
+  
+===== Vocabulary =====
+^ English ^ German ^ 
+| ... | ...|
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir
