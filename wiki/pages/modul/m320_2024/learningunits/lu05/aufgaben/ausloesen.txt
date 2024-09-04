@@ -9,7 +9,7 @@
 In der Applikation können eine Anzahl Noten erfasst und ausgelesen werden.
 Bisher wurde aber noch keine Fehlerbehandlung realisiert.
 Zum Beispiel stürzt das Programm ab, wenn man eine undefinierte Noten lesen will (falscher Index). 
-Ungültige Noten werden antgegengenommen und wenn zuviele Noten erfasst werden, passiert auch nichts.
+Ungültige Noten werden entgegengenommen und wenn zu viele Noten erfasst werden, passiert auch nichts.
 
 Für eine gezielte Fehlerbehandlung definieren wir daher 3 eigene Exceptions:
   * ListIndexException: Die Liste hat weniger Elemente als der angegebene Index.

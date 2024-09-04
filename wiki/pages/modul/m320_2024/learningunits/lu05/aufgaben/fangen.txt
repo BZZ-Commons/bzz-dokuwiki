@@ -7,7 +7,8 @@ Sie können mit dem try-except Konstrukt "kritischen" Code überwachen und im Fe
   - Akzeptieren Sie das Assignment im GitHub Classroom
   - Führen Sie die ''main''-Methode aus und prüfen Sie am Bildschirm, welche Exception zum Programmabbrch geführt hat.
   - Ergänzen Sie nun den Code der Methode ''main'', so dass der Fehler gefangen und die systemeigene Fehlermeldung am Bildschirm ausgegeben wird.
-   - Führen Sie ''pytest'' und ''pylint'' aus, um sicherzustellen, dass die Aufgabe korrekt gelöst ist.
+    * Die Fehlermeldung muss ''list index out of range'' lauten.
+  - Führen Sie ''pytest'' und ''pylint'' aus, um sicherzustellen, dass die Aufgabe korrekt gelöst ist.
 
 
 ===== Dauer =====

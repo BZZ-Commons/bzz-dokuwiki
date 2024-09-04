@@ -18,9 +18,10 @@ if __name__ == '__main__':
 Die Zeile ''# Write your program here'' ist ein Zeilenkommentar, und der Computer wird sie bei der Ausführung des Programms ignorieren. Fügen Sie eine neue Zeile unterhalb des Zeilenkommentars ein, die die Zeichenkette "Ada Lovelace" ausgibt, und führen Sie das Programm aus.
 
 ===== Ablauf des Programms =====
-<HTML>
-<iframe src="https://trinket.io/embed/python3/1e777a4824?outputOnly=true&start=result" width="100%" height="150" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
-</HTML>
+
+
+{{url>https://trinket.io/embed/python3/1e777a4824?outputOnly=true&start=result" width="100%" height="150" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen}}
+
 
 Die Ausgabe des Programms sollte sein:
 <code>
