@@ -14,10 +14,21 @@
 Der Inhalt des Modul ist in folgende Learning Units gegliedert:
 <nspages .:learningunits -subns -nopages -exclude -h1 -textNS="" -simplelist>
 
-  * LU01 Testverfahren, Testpyramide
-  * LU02 Ausnahmen
-  * LU03 Komponententests, TDD
-  * LU04 Integratintests, TDD
-  * LU05 Systemtests, UI Tests, End-to-end Tests
-  * LU06 Abnahmetests, Akzeptanztests, TDD 
-  * FIXME
+===== Ablauf neu ab Herbst 2024 =====
+
+  - Einführung Testen
+  - Testziele / Strategien
+  - Unit Tests (Pytest)
+  - Erweiterte Unit Tests
+  - Linter (statische Codeanalyse) 
+  - Test driven development
+  - Leistungsbeurteilung 1
+  - Integrationstests
+  - Testdaten erstellen, verwalten
+  - API testen (Postman)
+  - API-Tests automatisieren
+  - Black Box Testing
+  - Testfälle ermitteln für Black Box
+  - Leistungsbeurteilung 2
+  - BDD Tests (Gherkin)
+  - CI/CD
