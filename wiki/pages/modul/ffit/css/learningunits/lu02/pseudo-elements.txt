@@ -1,0 +1,89 @@
+====== LU02b - Pseudo-Elemente ======
+
+===== Einführung in Pseudo-Elemente =====
+
+In der Welt des CSS (Cascading Style Sheets) sind Pseudo-Elemente spezielle Schlüsselwörter, die es Entwicklern ermöglichen, bestimmte Teile eines HTML-Elements anzusprechen und zu stylen, ohne das Markup im HTML-Dokument direkt zu ändern. Diese Pseudo-Elemente sind besonders nützlich, wenn man gestalterische Änderungen vornehmen möchte, die nicht explizit durch HTML-Elemente definiert sind.
+
+===== Unterschied zwischen Pseudo-Klassen und Pseudo-Elementen =====
+
+Es ist wichtig, zwischen Pseudo-Klassen und Pseudo-Elementen zu unterscheiden. Während Pseudo-Klassen auf den Zustand eines Elements abzielen (z.B. :hover, wenn ein Benutzer mit der Maus über ein Element fährt), zielen Pseudo-Elemente darauf ab, einen Teil des Elements selbst zu stylen.
+
+Beispiele für Pseudo-Elemente sind:
+
+<code>::before</code>
+<code>::after</code>
+<code>::first-letter</code>
+<code>::first-line</code>
+
+Der Hauptunterschied liegt darin, dass Pseudo-Elemente virtuelle Unterelemente eines HTML-Elements ansprechen, während Pseudo-Klassen das Verhalten oder den Zustand eines Elements beeinflussen.
+
+===== Die gängigsten Pseudo-Elemente und ihre Anwendung =====
+
+==== ::before und ::after ====
+
+Diese beiden Pseudo-Elemente sind die am häufigsten verwendeten. Sie ermöglichen das Einfügen von Inhalten vor bzw. nach dem Inhalt eines HTML-Elements, ohne das eigentliche HTML zu verändern. Diese Pseudo-Elemente werden häufig für dekorative Zwecke verwendet.
+
+<code css>
+p::before {
+    content: "«";
+    color: red;
+}
+</code>
+
+Im obigen Beispiel fügt das ::before-Pseudo-Element vor jedem <p>-Tag den Text « ein und färbt ihn rot. Dieser Inhalt erscheint nicht im HTML-Dokument, sondern wird durch CSS erzeugt.
+
+<code css>
+p::after {
+    content: " <<";
+    color: blue;
+}
+</code>
+
+Ähnlich fügt das ::after-Pseudo-Element am Ende jedes <p>-Tags den Text » ein und färbt ihn blau.
+
+Wichtig bei der Verwendung von ::before und ::after ist, dass sie in der Regel mit der content-Eigenschaft verwendet werden müssen. Ohne diese Eigenschaft passiert nichts.
+
+==== ::first-letter ====
+
+Mit ::first-letter kann man gezielt den ersten Buchstaben eines Blockelements stylen. Dies ist nützlich für typografische Effekte, wie sie in gedruckten Medien verwendet werden.
+
+<code css>
+p::first-letter {
+    font-size: 200%;
+    color: green;
+    font-weight: bold;
+}
+</code>
+
+In diesem Beispiel wird der erste Buchstabe jedes Absatzes größer, fett und grün dargestellt. Dieser Effekt wird oft für Einleitungen in Artikeln verwendet, um die Aufmerksamkeit auf den ersten Buchstaben zu lenken.
+
+==== ::first-line ====
+
+Das ::first-line-Pseudo-Element richtet sich an die erste Zeile eines Blockelements. Es kann für Typografie oder andere gestalterische Zwecke genutzt werden.
+
+<code css>
+p::first-line {
+    font-weight: bold;
+    color: navy;
+}
+</code>
+
+In diesem Beispiel wird die erste Zeile jedes Absatzes fett und dunkelblau dargestellt. Dies ist nützlich, um Überschriften oder Einleitungen innerhalb von Absätzen hervorzuheben.
+
+===== Browser-Kompatibilität und Doppelpunkte =====
+
+Ein wichtiger Aspekt der Arbeit mit Pseudo-Elementen ist die Kompatibilität zwischen Browsern. Früher wurden Pseudo-Elemente mit einem einzelnen Doppelpunkt (:) vor dem Pseudo-Element geschrieben, z.B. :before und :after. Diese Schreibweise wird von älteren Browsern immer noch unterstützt. Die moderne Schreibweise mit zwei Doppelpunkten (::) wurde eingeführt, um sie von Pseudo-Klassen zu unterscheiden.
+
+<code css>
+/* Alte Schreibweise (für ältere Browser) */
+p:before {
+    content: "«";
+}
+
+/* Moderne Schreibweise (für aktuelle Browser) */
+p::before {
+    content: "«";
+}
+</code>
+
+Es ist empfehlenswert, die moderne Schreibweise zu verwenden, da sie klarer zwischen Pseudo-Klassen und Pseudo-Elementen differenziert.

@@ -4,7 +4,7 @@ Which datatype would you use to store the following information? Give reason for
 
 1. Product-title like trousers up to 50 characters:
   *<color #ed1c24>VARCHAR(50)</color>
-  *<color #ed1c24>Titles can be at the most 50 characters. A fix length makes no sense in that case. </color>
+  *<color #ed1c24>Titles can be at the most 50 characters. A fix length like a simple CHAR(50) makes no sense in that case. </color>
 
 2. Product-description up to 255 characters:
   *<color #ed1c24>VARCHAR(255)</color>
@@ -15,9 +15,9 @@ Which datatype would you use to store the following information? Give reason for
   *<color #ed1c24>Floating point type is not suitable as pieces are always counted in whole numbers.  </color>
 
 4. Price of each piece: 
-  *<color #ed1c24>FLOAT(5,2) or DECIMAL(U5,2)</color>
+  *<color #ed1c24>FLOAT(5,2) or DECIMAL(6,2)</color>
   *<color #ed1c24>Prices have floating point</color>
-  * <color #ed1c24>The length of (5,2) should be sufficient enough as trousers are usually within a price ranger of 0.99 to 999.99. </color>
+  * <color #ed1c24>The length of (6,2) should be sufficient enough as trousers are usually within a price ranger of 0.99 to 9999.99. </color>
 
 5. Order date: 
   *<color #ed1c24>DATE or DATETIME</color>

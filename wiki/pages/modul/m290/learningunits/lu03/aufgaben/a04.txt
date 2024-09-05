@@ -10,12 +10,12 @@ After developing our conceptional data model, the next step to establish a physi
 
 ====== LU03.A04 - ERD: Travel DB ======
 
-Below figure of a conceptual datamodel illustrates  the basic database structure of a Travel_DB. It consists of three base tables and two relations.
+Below figure of a conceptual data-model illustrates  the basic database structure of a Travel_DB. It consists of three base tables and two relations.
 
 {{:modul:m290:learningunits:lu03:loesungen:screenshot_2024-08-27_123029.png|}}
 
 ==== Task ====
-Your assignment is to analze the given ERD (coneptual datamodel), which is in fact the last step before creating the actual db ins our Mysql database system, and draw the ERD as a logial data model. The subtasks are:
+Your assignment is to analyze the given ERD (coneptual datamodel), which is in fact the last step before creating the actual db in our Mysql database system, and draw the ERD as a logial data model. The sub-tasks are:
 
   - develop the logical datamodel (tables, attributes, data types, fk/pk) by using the Crow's Foot Notation
   - realize the realation as ralation tables (id, fk_tab1, fk_tab2, ...)

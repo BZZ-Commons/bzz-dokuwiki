@@ -1,30 +1,30 @@
-====== LU03.A02 - ERM: Travel_DB ======
+====== LU03.A03 - ERM: SchoolGrades_DB======
 
 ===== Prerequisites  =====
   * Work type: Peer
   * Means of aid: only teaching materials, no websearch, no use of ai.
-  * Timeframe: 10 Minutes
+  * Timeframe: 15 Minutes
   * Expected result: A Word/PDF file with an ERM that visualises the given business case.  
 
+===== Introduction  =====
+In order to store business data efficiently we need a structure that should match the needs of the requirements. The first step is generally to analyse the business case and build up our data structure. 
 
 ===== Given business case =====
-As overreaching goal, we want to manage our vacations. Therefore, the following information is to be stored in our database.
-  * which countries we visited so far
-  * how long we stayed in each country
-  * on which continent each country is located
-  * the price for each trip
-  * the date of each trip
+You are assigned of designing a database to manage the students' grades and the subjects they attend. 
+  * each student is attending several subjects
+  * for each subject the student receive a grade 
+  * each subject can be attended by several students
 
 ===== Task: Design a ERM  ====
 Analyse the given business cases and design an ERM that meets the requirements of the business cases below.
 
   - Identify the entities (tables)
   - Determine the attributes of each table, including the primary keys
-  - Connexct the base tables by adding ralations to your data model
+  - Connect the base tables by adding ralations to your data model
   - Determin the cardinality of the tables involved.
 
 ===== Solution =====
-[[modul:m290:learningunits:lu03:loesungen:l02|Lösung]]
+[[modul:m290:learningunits:lu03:loesungen:l03|Lösung]]
 
 
 ===== Vocabulary =====
