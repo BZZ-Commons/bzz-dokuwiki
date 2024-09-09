@@ -18,7 +18,7 @@ Below figure of a conceptual data-model illustrates  the basic database structur
 Your assignment is to analyze the given ERD (coneptual datamodel), which is in fact the last step before creating the actual db in our Mysql database system, and draw the ERD as a logial data model. The sub-tasks are:
 
   - develop the logical datamodel (tables, attributes, data types, fk/pk) by using the Crow's Foot Notation
-  - realize the realation as ralation tables (id, fk_tab1, fk_tab2, ...)
+  - realize the relation as relation tables (id, fk_tab1, fk_tab2, ...)
   - finalize the ERM by adding the cardinalities (1:1, 1:many, ...)
 
 ===== Solution =====
@@ -30,6 +30,7 @@ Your assignment is to analyze the given ERD (coneptual datamodel), which is in f
 ^ English ^ German ^ 
 | prerequisite | Grundvoraussetzung |
 | given | gegebene, vorausgesetzt |
+| mandatory | zwingend |
 
 ----
 [[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir
