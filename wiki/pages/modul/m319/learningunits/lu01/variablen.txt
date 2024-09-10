@@ -9,7 +9,7 @@ Ebenso ist die Punktzahl für Niederlagen (0) oder für Unentschieden (beide Tea
 
 Neben Zahlen können auch Texte als Konstanten vorkommen.
 
-==== Beispiele von Konstanten ====
+=== Beispiele von Konstanten ===
   * 3 + 4
   * 'Hallo Benutzer'
   * '15.09.2010'
@@ -40,45 +40,6 @@ Das Programm hat vier Konstanten:
   * ''2'' und ''3.1415'' sind Zahl-Konstanten.
   * ''"Kreisradius?"'' und ''"Der Umfang ist: "'' sind Text-Konstanten.
 
-=== Übung ===
-Notieren deine vollständige Personalien & weitere Angaben auf ein Papier \\
---> Name, Vorname, Geburtsdatum, biologisches Geschlecht, Adresse, Telefonnummern, Mailadresse, Konfession, Grösse, Gewicht, Haarfarbe, Augenfarbe
-
-Markiere nun alle Werte, welche als konstant angesehen werden können (ohne operative Eingriffe zu berücksichtigen)
-
-===== Was sind Variablen? =====
-Variablen verändern ihren Wert während des Ablaufs.
-Sie stellen eine Art Gedächtnis dar, in dem Benutzereingaben oder Summen gespeichert werden.
-Eine Variable erhält einen Namen, den du weitgehend frei wählen kannst.
-Dabei sollte der Name möglichst aussagekräftig (sprechend) sein.
-
-Vier Aspekte von Variablen:
-  * Name der Variable (Bezeichner)
-  * Speicherplatz
-  * Adresse des Speicherplatz
-  * Daten (Wert, Inhalt)
-
-Aus der Algebra kennst du Variablen, die mit jeweils einem Buchstaben bezeichnet werden.
-Damit man weiss, welche Variable für welchen Wert steht, muss man jeweils eine Legende schreiben. 
-Dies ist möglich solange man nur wenige Variablen hat.
-In der Programmierung schreibst du häufig Programme mit vielen Variablen. 
-Es ist daher ein schlechter Programmierstil, Variablen mit so kurzen Namen zu verwenden.
-
-==== Vergleich Algebra / Programm ====
-Der Umfang eines Rechtecks bestimmt sich durch seine Länge und Breite.
-| Algebra: | u = 2l + 2b |
-| Programm: | umfang = 2*laenge + 2*breite |
-
-===== Variablen im Programmablauf =====
-Variablen dienen als Gedächtnis des Programms. 
-Nur mit Hilfe von Variablen kann sich das Programm Daten "merken" und Verarbeitungen mit diesen Daten durchführen.
-Einige Beispiele was sich ein Programm alles "merken" muss:
-  * Eingaben des Benutzers
-  * Zwischenresultate
-  * Zähler
-  * Zusammengesetzte Texte
-  * Ob das Ergebnis einer Bedingung wahr oder falsch war
-
 ==== Literale ====
 <WRAP center round tip 60%>
 Konstanten werden in der Fachliteratur auch als **Literale** bezeichnet.
@@ -108,6 +69,47 @@ diameter = radius * 2
 print('Der Durchmesser ist: ')
 print(diameter)
 </code>
+
+=== Übung ===
+Notieren deine vollständige Personalien & weitere Angaben auf ein Papier \\
+--> Name, Vorname, Geburtsdatum, biologisches Geschlecht, Adresse, Telefonnummern, Mailadresse, Konfession, Grösse, Gewicht, Haarfarbe, Augenfarbe
+
+Markiere nun alle Werte, welche als konstant angesehen werden können (ohne operative Eingriffe zu berücksichtigen)
+
+===== Was sind Variablen? =====
+Variablen verändern ihren Wert während des Ablaufs.
+Sie stellen eine Art Gedächtnis dar, in dem Benutzereingaben oder Summen gespeichert werden.
+Eine Variable erhält einen Namen, den du weitgehend frei wählen kannst.
+Dabei sollte der Name möglichst aussagekräftig (sprechend) sein.
+
+Vier Aspekte von Variablen:
+  * Name der Variable (Bezeichner)
+  * Speicherplatz
+  * Adresse des Speicherplatz
+  * Daten (Wert, Inhalt)
+
+Aus der Algebra kennst du Variablen, die mit jeweils einem Buchstaben bezeichnet werden.
+Damit man weiss, welche Variable für welchen Wert steht, muss man jeweils eine Legende schreiben. 
+Dies ist möglich solange man nur wenige Variablen hat.
+In der Programmierung schreibst du häufig Programme mit vielen Variablen. 
+Es ist daher ein schlechter Programmierstil, Variablen mit so kurzen Namen zu verwenden.
+
+==== Vergleich Algebra / Programm ====
+Der Umfang eines Rechtecks bestimmt sich durch seine Länge und Breite.
+| Algebra: | u = 2l + 2b |
+| Programm: | umfang = 2*laenge + 2*breite |
+
+==== Variablen im Programmablauf ====
+Variablen dienen als Gedächtnis des Programms. 
+Nur mit Hilfe von Variablen kann sich das Programm Daten "merken" und Verarbeitungen mit diesen Daten durchführen.
+Einige Beispiele was sich ein Programm alles "merken" muss:
+  * Eingaben des Benutzers
+  * Zwischenresultate
+  * Zähler
+  * Zusammengesetzte Texte
+  * Ob das Ergebnis einer Bedingung wahr oder falsch war
+
+
  
 
 

@@ -34,31 +34,37 @@ Durch die Deklaration kennt der Compiler die Variable und wir können Sie im Pro
 Um die Variable zu verwenden, benötigt sie einen Namen (Bezeichner). 
 Der Name einer Variable sollte möglichst sprechend sein. 
 Das bedeutet, dass ihr Name etwas über den Inhalt bzw. Verwendungszweck aussagt. 
-Die Variablennamen in Python sind immer klein geschrieben.
+Die Variablennamen in Python sind immer klein geschrieben, nach dem Styleguide von Python. 
 Der Name besteht in der Regel aus Buchstaben, Zahlen und dem Underline (''_''). 
+Variablennamen sollten in ''snake_case'' geschrieben werden, wobei Wörter durch Unterstriche verbunden werden und alle Buchstaben klein sind.
 
 <WRAP center round important 60%>
 Gewöhne dich von Anfang an daran, alle Bezeichner in englisch zu schreiben.
 Verwende niemals Leerzeichen, Umlaute oder Sonderzeichen in einem Variablennamen.
 </WRAP>
 
+==== Namenskonventionen am BZZ ====
+
+Das BZZ hat die folgenden Namenskonventionen:
+
+  * Variablen- und Funktionsnamen: Kleinbuchstaben, die durch ''_'' getrennt sind (''snake_case'').
+  * Konstanten: Großbuchstaben, die durch ''_'' getrennt sind (''UPPER_CASE'').
+
 === Gute Variablennamen ===
 
     * givenname
     * price
     * length
+    * student_id (für eine ID)
+    * birth_date (für ein Datum)
 
 === Schlechte Variablennamen ===
 
     * **i** (Nicht sprechend)
     * l**ä**nge (Umlaut)
     * grad**°** (Sonderzeichen)
-    * **N**umber(gross geschrieben)
-
-==== Literale (Konstanten mit einem Namen) ====
-Konstanten die immer wieder benötigt werden, kannst du als Literal definieren.
-In einigen Programmiersprachen hat es sich zum Standard entwickelt, dass die Namen von Literalen ausschliesslich in Grossbuchstaben 
-geschrieben werden (z.B. MAX_VALUE). 
+    * **N**umber (gross geschrieben)
+    * **PriceInUSD** (CamelCase, sollte in snake_case sein)
 
 ==== Übung zu Variablennamen ====
 
@@ -77,29 +83,21 @@ Lege fest wie die Variablen für folgende Aufgaben heissen sollen:
       * speichern zu können, ob es sich beim Artikel um eine Aktion (Preisreduktion) gehandelt hat oder nicht
 
 
-==== Datentyp ====
+===== Datentyp =====
 Der Datentyp bestimmt die Speicherung und spätere Verwendung der Variablen.
 Je nach Programmiersprache werden unterschiedliche Datentypen unterstützt und die einzelnen Datentypen heissen unterschiedlich.
 Grundsätzlich lassen sich die Datentypen wie folgt einordnen:
 
   * Textvariablen
-    * Ein Zeichen (Buchstabe, Ziffer, Sonderzeichen)
-    * String aus mehreren Zeichen
+    * String aus mehreren Zeichen ''"Hallo"''
   * Zahlen
-    * Ganzzahlen
-    * Fliesskommazahlen die auch Dezimalbrüche enthalten können
+    * Ganzzahlen ''5''
+    * Fliesskommazahlen die auch Dezimalbrüche enthalten können ''5.53''
   * Spezielle Datentypen
-    * z.B. Ja-Nein (True-False)
+    * z.B. Ja-Nein (True-False) ''True''
 
 Je nach Programmiersprache wird zusätzlich zwischen einer binären und einer dezimalen Speicherform unterschieden.
 
-=== Übung zu Datentyp ===
-Bestimmen Sie für die Variablen der voherigen Übung die Datentypen gemäss folgender Liste:
-  * Zeichen
-  * Zeichenkette
-  * Ganzzahl
-  * Dezimahlzahl
-  * Ja-Nein
 
 <WRAP center round info 60%>
 Python gehört zu den Programmiersprachen, die den Datentyp selber bestimmen.
@@ -161,8 +159,10 @@ givenname = 'Petra'
   - oder ''= None''
 
 == C, Java ==
-<code c>
-int total = 5;
+<code java>
+int count = 1
+double total = 5.75
+String givenname = "Petra"
 </code>
   - Datentyp
   - Name der Variable

@@ -4,6 +4,7 @@ Erstelle einen Programmablauf mit Blockly, der verschiedene Werte ausgibt.
 </WRAP>
 
 ===== Auftrag =====
+
 Dein Programm muss verschiedene Werte speichern und ausgeben.
   - Erstelle sinnvolle Variablen für diese Werte und weise den Variablen die angegebenen Werte zu:
     * Der Vorname einer Person ist 'Luna'.
@@ -13,6 +14,8 @@ Dein Programm muss verschiedene Werte speichern und ausgeben.
   - Erstelle die Ausgaben gemäss dem Beispielablauf.
 
 ==== Beispielablauf ====
+{{url>https://trinket.io/embed/python/c478f6174f8b?outputOnly=true&runOption=run&start=result width="100%" height="800" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen}}
+
 <code>
 Luna
 Solaris

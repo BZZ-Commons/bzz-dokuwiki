@@ -15,7 +15,7 @@ Which datatype would you use to store the following information? Give reason for
   *<color #ed1c24>Floating point type is not suitable as pieces are always counted in whole numbers.  </color>
 
 4. Price of each piece: 
-  *<color #ed1c24>FLOAT(5,2) or DECIMAL(6,2)</color>
+  *<color #ed1c24>FLOAT(6,2) or DECIMAL(6,2)</color>
   *<color #ed1c24>Prices have floating point</color>
   * <color #ed1c24>The length of (6,2) should be sufficient enough as trousers are usually within a price ranger of 0.99 to 9999.99. </color>
 
