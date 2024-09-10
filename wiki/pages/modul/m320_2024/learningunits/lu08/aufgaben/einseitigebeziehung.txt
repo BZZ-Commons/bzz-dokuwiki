@@ -1,0 +1,32 @@
+====== LU08.A01 - Einseitige Beziehung ======
+
+=== Ziel ===
+Sie können eine einfache Beziehung (Assoziation) zweier Klassen implementieren.
+=== Auftrag ===
+  - Akzeptieren Sie das GitHub Classroom Assignment und klonen Sie das Repository in Ihre Entwicklungsumgebung.
+  - Implementieren Sie die die Klasse ''House'' gemäss Klassen- und Sequenzdiagramm. (Aktion im Konstruktor beachten)
+  - Testen Sie die Klasse mit ''test_house''.
+  - Implementieren Sie die Klasse ''HomeOwner'' gemäss Klassendiagramm.
+  - Testen Sie die Klasse mit ''test_owner'' und ''test_print''.\\ {{modul:m320:learningunits:lu04:aufgaben:lu03-aufg6_house-1.png?500|}}
+  - Implementieren Sie die ''main''-Methode entsprechend dem gezeigten Sequenzdiagramm.\\ {{modul:m320:learningunits:lu04:aufgaben:lu03-aufg6_house-2.png?500|}}
+  * Das Programm soll eine vergleichbare Ausgabe erzeugen.\\ {{modul:m320:learningunits:lu04:aufgaben:lu03-aufg6_house-3.png?250|}}\\
+
+//Hinweis : // Es handelt sich bei diesem Beispiel um eine 1:1-Beziehung.
+
+=== Dauer===
+20 Minuten
+
+=== Abgabe ===
+Mittel Push ins GitHub Repository.
+
+----
+<details>
+<summary>//=> GitHub Repo für externe Besucher//</summary>
+GitHub Repository https://github.com/templates-python/m319-lu10-a02-reader-module
+
+//Lernende am BZZ müssen den Link zum GitHub Classroom Assignment verwenden//
+
+</details>
+
+{{tag>M320-LU08}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] René Probst, bearbeitet durch Marcel Suter

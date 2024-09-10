@@ -1,0 +1,48 @@
+====== LU08a - Einseitige Beziehungen ======
+Damit ein Objekt A ein anderes Objekt B ansprechen kann, muss es dessen Referenz kennen. Dazu muss die Referenz über den Konstruktor oder eine Methode übergeben werden.\\  Vom grundsätzlich Verhalten her unterscheiden wir in
+
+  * einseitge Beziehungen
+  * zweiseitige Beziehungen
+
+=== Einseitige Beziehung ===
+
+Bei einer einseitigen Beziehung kennt ein Objekt A ein anderes Objekt B aber nicht umgekehrt.\\
+
+----
+
+//Beispiel 5.1: Geldbeutel und Besitzer//\\
+
+{{modul:m320:learningunits:lu04:theorie:lu03-einseitgebeziehung.png?600}}
+
+//Abb 5.1:// Klassen in einer einseitigen Beziehung\\
+
+Eine Person kann auch keinen Geldbeutel besitzen. 
+Daher wird hier die Referenz über eine Methode gesetzt. 
+So sind die Erzeugung des Personen-Objekts und die Zuweisung der Referenz zeitlich unabhängig.
+
+Dies zeigt das zugehörige Sequenz-Diagramm eindeutig auf.
+
+{{modul:m320:learningunits:lu04:theorie:lu03_sequenzeinseitig.png?350}}
+
+//Abb 5.2:// Sequenz-Diagramm der Zuweisung einer einseitigen Beziehung über eine Methode
+
+----
+
+//Beispiel 5.2: Stromschalter und Wippe// \\
+
+{{modul:m320:learningunits:lu04:theorie:lu03-einseitgebeziehung2.png?550}}
+
+//Abb 5.3:// Klassen in einer einseitigen Beziehung\\
+
+Ein Stromschalter braucht immer eine Wippe, sonst kann er ja nicht benutzt werden. 
+Daher muss sichergestellt sein, dass mit der Erzeugung des Stromschalter-Objektes auch die Referenz zu einer Wippe gesetzt wird. 
+Es ist also wichtig, dass die Referenz mit dem Konstruktor geliefert wird. 
+In diesem Fall ist es zwingend, dass die Wippe zeitlich zuerst erzeugt wird, so dass ihre Referenz verfügbar ist.
+
+{{modul:m320:learningunits:lu04:theorie:lu03_sequenzeinseitig2.png?350}}
+
+//Abb 5.4:// Sequenz-Diagramm der Zuweisung einer einseitigen Beziehung über den Konstruktor
+
+----
+{{tag>M320-LU08}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] René Probst, bearbeitet durch Marcel Suter

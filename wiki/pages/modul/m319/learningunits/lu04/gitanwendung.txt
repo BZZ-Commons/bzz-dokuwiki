@@ -9,22 +9,33 @@ Dadurch erlernen Sie die wichtigsten Arbeitsschritt mit git und brauchen Ihre L�
 ===== Voraussetzung =====
 Bevor Sie mit GitHub Classroom arbeiten können, müssen Sie ...
   * ... ein Konto bei GitHub erstellt haben.
-  * ... dem Classroom für Ihre Klasse beigetreten sein.
 
-Diese Schritte haben Sie vor 2 oder 3 Wochen in der Lektion **GitHub und Classroom** durchgeführt.
 
 ===== Vorgehen =====
 === 1. Aufgabe akzeptieren ===
 Im Moodle-Kurs finden Sie den Link zur Aufgabe im Classroom.
+
+{{:modul:m319:learningunits:lu04:screenshot_2024-09-10_at_15.56.55.png?800|}}
+
+<WRAP center round info 100%>
+=== Bei der ersten Aufgabe in einem neuen Modul:===
+
+Wählen Sie ihren Namen aus der Liste aus:
+
+{{:modul:m319:learningunits:lu04:screenshot_2024-09-10_at_16.04.04.png?400|}}
+</WRAP>
+
+
 Öffnen Sie diesen Link und akzeptieren Sie das //Assignment//.
 
-{{:modul:m319:learningunits:lu04:lu04_classroom01.png?400|}}
+{{:modul:m319:learningunits:lu04:screenshot_2024-09-10_at_16.09.19.png?600|}}
 
 Warten Sie ein paar Sekunden und laden Sie die Webseite neu.
 Sie sehen die Adresse (URL) Ihres persönlichen Repositories.
 Kopieren Sie diesen Adresse.
 
-{{:modul:m319:learningunits:lu04:lu04_classroom02.png?400|}}
+{{:modul:m319:learningunits:lu04:screenshot_2024-09-10_at_16.11.09.png?600|}}
+
 
 === 2. Repository klonen ===
 Öffnen Sie nun PyCharm und klonen Sie mit dem kopierten Link das Repository als neues Projekt.
@@ -144,4 +155,4 @@ Ein kleines Symbol zeigt Ihnen an, ob Ihre Lösung korrekt ist:
 
 ----
 {{tag>m319-E1F}}
-[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter, Kevin Maurizi
