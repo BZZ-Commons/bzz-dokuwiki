@@ -1,0 +1,48 @@
+====== LU04a - Ternary conditional operator in Python ======
+
+The ternary condition operator is a compact way of assigning a value based on a condition. It is particularly useful for simple if-else statements that only return one value.
+
+===== Syntax =====
+
+The syntax of the ternary conditional operator in Python is:
+
+<code python>
+x if condition else y
+</code>
+
+  * **x**: The value that is returned if the condition is true.
+  * **condition**: The condition that is checked.
+  * **y**: The value that is returned if the condition is false.
+
+===== Example =====
+
+A simple example could be the assignment of a variable ''greeting'' variable that contains either "Good morning" or "Good day" based on the current hour:
+
+<code python>
+hour = 9  # aktuelle Stunde
+greeting = "Good morning" if hour < 12 else "Good day"
+print(greeting)  # Output: "Good morning"
+</code>
+
+In this example, "Good morning" is output because the condition ''hour < 12'' wahr ist.
+
+===== Vergleich mit if-else-Anweisungen =====
+
+Der ternäre Bedingungsoperator ist eine verkürzte Form einer if-else-Anweisung. Zum Vergleich, das obige Beispiel könnte auch mit einer herkömmlichen if-else-Anweisung geschrieben werden:
+
+<code python>
+hour = 9  # aktuelle Stunde
+if hour < 12:
+    greeting = "Good morning"
+else:
+    greeting = "Good day"
+print(greeting)  # Output: "Good morning"
+</code>
+
+<WRAP center round tip 60%>
+The ternary conditional operator is shorter and often easier to read, but it should be used sparingly and only for simple conditions so as not to impair the readability of the code.
+</WRAP>
+
+----
+{{tag>M323-LU05}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/ch/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Kevin Maurizi 

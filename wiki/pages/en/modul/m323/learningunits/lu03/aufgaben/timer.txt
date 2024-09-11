@@ -1,22 +1,22 @@
-====== LU03.A10 - Timer und API-Call ======
+====== LU03.A10 - Timer and API call ======
 
-In dieser Übung werden Sie die Kraft der Asynchronität in Python erleben. Ihre Aufgabe ist es, einen asynchronen Timer zu erstellen, der alle 3 Sekunden einen API-Aufruf ausführt. Gleichzeitig sollte ein separater asynchroner Prozess eine andere Aufgabe durchführen, ohne durch den API-Aufruf unterbrochen zu werden.
+In this exercise you will experience the power of asynchrony in Python. Your task is to create an asynchronous timer that executes an API call every 3 seconds. At the same time, a separate asynchronous process should perform another task without being interrupted by the API call.
 
-==== Detaillierte Aufgabenstellung ====
+==== Detailed task ====
 
-**API-Aufruf:** Ihr Programm sollte alle 3 Sekunden einen asynchronen Aufruf an die folgende URL machen: https://run.mocky.io/v3/685db531-06e7-4d66-bbf6-99de9f2feab3?mocky-delay=3000ms . Nachdem eine Antwort vom Server erhalten wurde, sollte diese in der Konsole ausgegeben werden.
+**API call:** Your programme should make an asynchronous call to the following URL every 3 seconds: https://run.mocky.io/v3/685db531-06e7-4d66-bbf6-99de9f2feab3?mocky-delay=3000ms . Once a response has been received from the server, this should be displayed in the console.
 
-**Zweite Aufgabe:** Parallel zum API-Aufruf sollte Ihr Programm eine andere asynchrone Aufgabe durchführen. Diese Aufgabe sollte darin bestehen, jede Sekunde eine Zahl auszugeben, die ständig um 1 erhöht wird (ein asynchroner Timer).
+**Second task:** Parallel to the API call, your programme should perform another asynchronous task. This task should consist of outputting a number every second that is constantly incremented by 1 (an asynchronous timer).
 
-**Hinweis:** Verwenden Sie asyncio in Kombination mit einer Bibliothek wie httpx für asynchrone HTTP-Anfragen.
+**Note:** Use asyncio in combination with a library such as httpx for asynchronous HTTP requests.
 
-==== Erwartetes Verhalten ====
+==== Expected behaviour ====
 
-Wenn Sie Ihr Programm ausführen, sollten Sie sehen, dass der Timer jede Sekunde hochzählt. Alle 3 Sekunden wird Ihr Programm eine Pause einlegen, um auf die Antwort des API-Aufrufs zu warten. Nachdem die Antwort erhalten wurde, wird sie in der Konsole angezeigt, und der Timer fährt ohne Unterbrechung fort.
+When you run your programme, you should see the timer count up every second. Every 3 seconds your programme will pause to wait for the API call response. After the response is received, it will be displayed in the console and the timer will continue without interruption.
 
-==== Beispiel ====
+==== Example ====
 
-Ein möglicher Output könnte wie folgt aussehen:
+A possible output could look like this:
 
 <code>
 0
@@ -29,7 +29,7 @@ API Response: <Response [200 OK]>
 ...
 
 </code>
-==== Vorlage ====
+==== Template ====
 
 <code python>
 import asyncio
