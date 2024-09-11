@@ -1,11 +1,95 @@
-====== LU01d - Datails LB3  ======
+====== LU01e - Details LB3  ======
 
+===== Rahmenbedingungen =====
+  * Abgabe
+    * Datum: Letzter Unterrichtstag des aktuellen Semesters
+    * Zeit: 23:59 Uhr
+  * Verfügbare Zeit: 
+      * ?? Lektionen pro Team-Mate 
+      * ?? pro Team 
+  * Benotung: Lineare Notenskala
+  * Sozialform: Partner
+  * Hilfsmittel: Openbook
 
-===== Vocabulary =====
-^ English ^ German ^
-| weighting | Gewichtung |
-| to be composed of sth. | aus etwas zusammengesetz sein |
-| supplementary material/aids | Hilfsmittel |
+===== Auftrag =====
+Nachfolgend finden Sie eine Reihe von Projektbeschreibungen. Bearbeiten Sie das Ihnen zugewiesene Projekt, d.h. programmieren Sie einen Prototypen und präsentieren Ihre Resultate am Ende des Moduls als **Video-Tutorial** von ca. 15-20 Minuten Länge. D.h. erstellen Sie eine Video-Tutorial für Ihre "Unterstifte" aus dem 2. Lehrjahr.
+
+Das Video muss die nachfolgenden Bestandteile enthalten:
+  - Herleitung des ERM, basierend auf den gegebenen UseCases.
+  - Herleitung de ERD basierend auf dem ERM.
+  - Physisches anlegen der Datenbank und der relevanten Tabellen,
+  - Import der Initialdaten (Startdaten)
+  - Nachweis der CRUD-Operationen im Server, durchgeführt auf der Commandline/Terminal
+  - Nachweis der CRUD-Operationen im Frontend, durchgeführt durch eine Frontend-Simulations-Software POSTMAN
+  - Kurze Reflexion der Teammates mit 2 Learnings
+
+===== Was muss nicht geliefert werden =====
+  * **Frontend**: Die Programmierung eines Frontend ist **kein Bestandteil** des Auftrags, da dieser durch die Software Postman simuliert wird. D.h. es wird keine vollständige Applikation erwartet, sondern ein Prototyp das als **Proofe of Concept** dient. 
+  * **CRUD**: Ihr Prototyp muss die CRUD-Operationen auf der DB-Ebene (SQL) und im Server ausführen können. Es reicht also, wenn Sie mittels Server Daten in der Datenbank schreiben, lesen, updaten und löschen können.
+  * **UseCases**: Um diese nachzuweisen, orientieren Sie sich an den gegebenen UseCases. D.h. Sie müssen nicht alle Anforderungen erfüllen.
+
+===== Zu liefernden Files als eine ZIP-Datei =====
+  - Video-Tutorial von 15-20 Minuten Länge
+  - ERM und ERD als PDF-Datei
+  - SQL-Script: Anlegen der Tabellenstruktur 
+  - Server-File, programmiert in JavaScript
+
+===== A: Absenzensystem =====
+Die Absenzen des BZZ werden vollständig elektronisch in einer Microsoft Sharepoint-Implementierung verwaltet. Durch die Einführung des neuen Systems, konnte sich das Sekretariat des BZZ vermehrt auf das Kerngeschäft konzentrieren, und dadurch die wachsende Zahl der Lernenden mit dem gleichen Personalstamm administrieren. Das aktuelle Absenzensystem des BZZ finden Sie unter: [[https://absenzen.bzz.ch| BZZ Absenzen-System]]. Aufgrund eines Wechsels des Software-Dienstleisters ergab sich die unglückliche Situation, dass die bestehende Anwendung //reengineered//, d.h. neu programmiert werden musste. 
+
+==== Anforderungen / UseCases ====
+  * A01: Die Lehrperson kann sich mit User und Passwort authentifizieren (Login). 
+  * A02: Weitere persönlichen Daten zur Lehrpersonen müssen speicherbar sein. 
+  * A03: Absenzen werden auf die Klasse und das Datum durchgeführt, wobei jeder/r Lernende/r den einzeln ausgewählt mit den entsprechenden Status belegt werden kann
+  * A04: Bei den Absenzen kann pro Lernenden und Tag eine Kommentar eingefügt werden.
+  * A05: Im System werden die üblichen persönlichen Daten der Lernenden gespeichert.
+  * A06: Vergangene Absenzen können pro Klasse und Datum angezeigt werden.
+  * A07: Lehrpersonen können die Absenzenhistorie pro Lernenden aufrufen
+  * A08: Prüfen der Lauffähigkeit
+  * A09: Instanzen/Inhalt anzeigen lassen
+  * A10: Die Anzeige der vergangenen Absenzen wird nach Datum und nach Fach, auf- und absteigend sortiert.
+  * A11: Ein/e Lernende/r kann in verschiedenen Klasse sein. 
+  * A12: Eine Klasse kann bis zu 24 Lernenden enthalten.
+
+===== B: Dispensen-System =====
+Die Abwesenheiten im BZZ werden vollelektronisch verwaltet, was zu einer massiven Effizienzsteigerung im Sekretariat geführt hat. Die Verwaltung der Dispensationen, d.h. der für die Zukunft geplanten Abwesenheiten, ist hingegen nach wie vor halb-digital gelöst und daher eher als aufwändig zu bezeichnen. Das Aktuelle Dispensationsformular finden Sie hier:[[ https://www.bzz.ch/dispensationsgesuch/| BZZ-Dispensen]]
+
+==== Anforderungen / UseCases ====
+  * B01: Die Eingabedaten des bisherigen Eingabeformulars müssen auch im zukünftigen System zur Verfügung stehen.
+  * B02: Es können Dispensen pro Person und mit allen Details ausgegeben werden.
+  * B03: Das System bietet eine Auswahl an möglichen gültigen Begründungen an.
+  * B04: eder Dispens kann kommentiert werden.
+  * B05: Es können weitere Dispensen angelegt werden.
+  * B06: Aktuell anstehende Dispensen können gelöscht werden.
+  * B07: Vergangene können nicht gelöscht werden. 
+  * B08: Dispensen, die in der Warteschlange stehen, können noch bearbeitet werden.
+  * B09: Die Anzeigesortierung der vergangenen Dispensen pro Person kann nach Datum und Fach, sowohl in aufsteigender, wie auch in absteigender Reihen folge ausgegeben werden. 
+
+===== C: Stundenplan =====
+Am BZZ werden zur Zeit ca. 2'000 Lernende ausgebildet, mit der Tendenz steigend. Konkret sind es über 100 Klassen, die wissen wollen, wann, in welchem Raum und bei welcher Lehrperson sie Unterricht werden. Die bisherige Applikation [[https://webuntis.com/|Webuntis Stundenplan-Application]] ist teuer, sodass eine eigene Entwicklung eine Kostenreduktion verspricht. 
+
+==== Anforderungen / UseCases ====
+  * C01: Der Stundenplan kann pro User wochenweise (Kalenderwochen oder Wochen-Zeitraum) angezeigt.
+  * C02: Die Stunden enthalten die Informationen: Fach, Raum, Klasse und Lehrer.
+  * C03: Detaildaten zu den Fächern, Räumen, Klassen und Lehrpersonen und Lehrpersonen können im System verwaltet werden.
+  * C04: Der Stundenplan kann pro Klasse wochenweise angezeigt werden.
+  * C05: Lehrpersonen können zusätzliche Lektionen anlegen.
+  * C06: Aktuellen Stundenpläne können nicht mehr gelöscht werden.
+  * C07: Zukünftige Stundenplaneinträge können geändert werden.
+  * C08: Zukünftige Stundenpläne können gelöscht werden.
+
+===== D. Ressourcenverwaltung =====
+Rund 2'000 Lernende in über 100 Klassen werden aktuell am BZZ unterrichtet, das auch den praktischen Unterricht beinhaltet., wofür das BZZ technische Lehrmittel bereit stellt. Aufgrund der hohen Schülerzahl und den damit verbundenen Administrationsaufwand, hat sich die Schulleitung entschieden, diese Ressourcen in einer Webapplikation Applikation zu verwalten. Unter Ressourcen verstehen wir Laptopwagen, Präsentationskoffer, Sportgeräte, Kameras, Mikrofone, etc.
+
+==== Usecases / Anforderungen ====
+  * D01: Für jeden Benutzenden werden alle bestehenden Reservationen in einer Liste angezeigt. 
+  * D02: Zu jeder Reservation wird der Ausleih-Personenname, Verantwortlichen-Name, Reservation-Start, Reservations-Ende, Reservations-Dauer und Produkttitel inkl. Kategorie angezeigt bzw. erfasst.
+  * D03: Die bestehenden Ressourcen sind sinnvoll kategorisiert.
+  * D04: Zukünftige Buchungen können geändert werden.
+  * D05: In der Vergangenheit liegende Reservationen können nicht gelöscht werden.
+  * D06: Jede Ressource muss eindeutig identifizierbar sein mit Nummer, Ort, Verantwortlichem, Kategorie. 
+  * D07: Es ist möglich, einen Kommentar zu der Reservierung hinzuzufügen.
+  * D08: Die Anzeige der vergangenen Reservationen kann nach Datum und nach Art / Kategorie in auf- und absteigend erfolgen.
 
 
 ----

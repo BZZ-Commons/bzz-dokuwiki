@@ -28,6 +28,7 @@ Schreiben Sie eine Funktion namens ''analyze_countries'', die eine Liste von Lä
 def analyze_countries(data, filter_func, transform_func):
     """ 
     Analysiert eine Liste von Länderdaten. Verwendet 'filter_func' zum Filtern und 'transform_func' zum Transformieren der Länderdaten.
+    Diese Funktion wendet transform_func auf jedes Element von Data das den kriterien in filter_func entspricht und gibt diese Liste dann zurück.
     
     Args:
     - data: Liste von Ländern als Dictionaries
@@ -39,7 +40,8 @@ def analyze_countries(data, filter_func, transform_func):
     """
     # TODO: Implementiere die Funktion hier
     pass
-
+    
+    
 def filter_european_countries(country):
     """ 
     Filtert europäische Länder aus der Liste.

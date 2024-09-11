@@ -41,6 +41,11 @@ Callbacks sind ein essenzielles Konzept in der GUI-Programmierung und bieten ein
 
 ===== Callbacks in der Asynchronen Programmierung =====
 
+<WRAP center round info 60%>
+Wir werden das asynchrone Programmieren nicht vertiefen am BZZ. Dies dürfen Sie dann an der Fachhochschule 😉
+</WRAP>
+
+
 Asynchrone Programmierung ist ein Ansatz, bei dem Operationen ausgeführt werden können, ohne den Ablauf des gesamten Programms zu blockieren. Ein häufiges Szenario für asynchrone Aufrufe sind Netzwerkanfragen, z. B. API-Aufrufe, bei denen nicht vorhersehbar ist, wie lange sie dauern werden.
 
 **Warum Callbacks in asynchronen Aufrufen verwenden?**
@@ -65,30 +70,57 @@ In modernen Anwendungen, insbesondere bei I/O-intensiven Aufgaben wie Netzwerkan
   * **''async''**: Das Schlüsselwort ''async'' definiert eine Funktion als asynchron. Eine solche Funktion gibt ein "Coroutine"-Objekt zurück, das später mit ''await'' aufgerufen werden kann.
   * **''await''**: Das Schlüsselwort ''await'' wird verwendet, um das Ergebnis einer asynchronen Operation abzurufen. Es kann nur innerhalb einer ''async''-Funktion verwendet werden.
 
-=== Beispiele ===
 
-== Einfaches Beispiel mit sleep()==
+=== Beispiel: Parallele Ausführung von Aufgaben ===
 
-
-Ein einfaches Beispiel für die Verwendung von ''async'' und ''await'':
+Eine der Hauptvorteile von asynchroner Programmierung ist die Fähigkeit, mehrere Aufgaben parallel auszuführen, insbesondere wenn es um Aufgaben geht, die auf externe Ressourcen warten, wie z.B. Netzwerkanfragen.
 
 <code python>
 import asyncio
 
-async def say_hello():
-    print("Hallo")
-    await asyncio.sleep(1)
-    print("Welt")
-    
+async def task_1():
+    print('Task 1 gestartet')
+    await asyncio.sleep(2)
+    print('Task 1 abgeschlossen')
+
+async def task_2():
+    print('Task 2 gestartet')
+    await asyncio.sleep(3)
+    print('Task 2 abgeschlossen')
+
+async def main():
+    await asyncio.gather(task_1(), task_2())
+
 if __name__ == '__main__':
-    asyncio.run(say_hello())
+    asyncio.run(main())
 </code>
 
-In diesem Beispiel wird die Funktion ''say_hello'' mit dem Schlüsselwort ''async'' definiert, was bedeutet, dass sie asynchron ist. Innerhalb dieser Funktion wird ''await'' verwendet, um die Ausführung für eine Sekunde zu pausieren, bevor ''Welt'' gedruckt wird.
+=== Beispiel: Asynchrone Dateioperation ===
 
-== Beispiel mit API-Call ==
+In diesem Beispiel zeigen wir, wie Dateioperationen asynchron ablaufen können. Das Beispiel liest den Inhalt von zwei Dateien asynchron.
 
-Dieses Beispiel ruft Daten von einer Dummy-API ab und verwendet ''async'' und ''await''. Um asynchrone HTTP-Anfragen in Python durchzuführen, können Sie die ''httpx''-Bibliothek verwenden. Dies ist eine moderne HTTP-Client-Bibliothek, die sowohl synchronen als auch asynchronen Code unterstützt.
+<code python>
+import aiofiles
+import asyncio
+
+async def read_file(file_name):
+    async with aiofiles.open(file_name, 'r') as file:
+        contents = await file.read()
+        print(f'Inhalt von {file_name}: {contents}')
+
+async def main():
+    await asyncio.gather(
+        read_file('file1.txt'),
+        read_file('file2.txt')
+    )
+
+if __name__ == '__main__':
+    asyncio.run(main())
+</code>
+
+=== Beispiel: API-Call mit Zeitüberschreitung ===
+
+Ein häufiges Problem bei Netzwerkanfragen ist die Notwendigkeit, eine maximale Wartezeit festzulegen. Dies kann durch die Verwendung von Timeout-Parametern und asynchroner Programmierung gelöst werden.
 
 <code python>
 import httpx
@@ -96,19 +128,46 @@ import asyncio
 
 async def fetch_data():
     async with httpx.AsyncClient() as client:
-        response = await client.get('https://hub.dummyapis.com/delay?seconds=3')
-        return response
+        try:
+            response = await client.get('https://run.mocky.io/v3/685db531-06e7-4d66-bbf6-99de9f2feab3?mocky-delay=3000ms', timeout=5)
+            print(response.text)
+        except httpx.RequestError as exc:
+            print(f'An error occurred while requesting data: {exc}')
 
 async def main():
-    result = await fetch_data()
-    print(result)
-    
+    await fetch_data()
+
 if __name__ == '__main__':
     asyncio.run(main())
-
 </code>
 
+=== Beispiel: Daten von mehreren APIs gleichzeitig abrufen ===
 
-----
-{{tag>M323-LU03}}
-[[https://creativecommons.org/licenses/by-nc-sa/4.0/ch/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Kevin Maurizi 
+Hier zeigen wir, wie mehrere API-Aufrufe parallel ablaufen können, um die Effizienz zu verbessern.
+
+<code python>
+import httpx
+import asyncio
+
+
+async def fetch_data(url):
+    async with httpx.AsyncClient() as client:
+        response = await client.get(url)
+        return response.text
+
+
+async def main():
+    urls = [
+        'https://run.mocky.io/v3/685db531-06e7-4d66-bbf6-99de9f2feab3?mocky-delay=3000ms',
+        'https://run.mocky.io/v3/685db531-06e7-4d66-bbf6-99de9f2feab3?mocky-delay=2000ms'
+    ]
+    results = await asyncio.gather(*(fetch_data(url) for url in urls))
+    for result in results:
+        print(result)
+
+
+if __name__ == '__main__':
+    asyncio.run(main())
+</code>
+
+Diese Beispiele zeigen verschiedene nützliche Anwendungsfälle für die asynchrone Programmierung in Python. Besonders bei I/O-intensiven Aufgaben hilft sie, die Blockierung des Programms zu vermeiden und die Gesamtleistung zu verbessern.

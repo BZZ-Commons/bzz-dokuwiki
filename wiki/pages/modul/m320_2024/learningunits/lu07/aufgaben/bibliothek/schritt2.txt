@@ -11,6 +11,7 @@ Die Methode ''buy_new_book'' erzeugt ein neues Buch und fügt es in die Biblioth
 
 ==== Hinweise ====
 Der Wert des Attributs ''location'' ist ein Zufallswert der in der Methode ''add_book()'' der Klasse ''Library'' generiert wird.
+Die Methode ''add_book()'' gibt diese ''location'' als Returnwert zurück.
 
 ==== Tests ====
   * test_librarian.py
@@ -19,9 +20,10 @@ Der Wert des Attributs ''location'' ist ein Zufallswert der in der Methode ''add
 
 ===== main.py =====
 Ergänzen Sie den Ablauf in ''main'' gemäss diesem UML Sequenzdiagramm.
+Die Methode ''buy_new_book'' wird 5x aufgerufen.
 Übernehmen Sie die Buchtitel und ISBN-Nummern genau so, wie im Printout angegeben.
 
-{{modul:m320:learningunits:lu04:aufgaben:lu03-aufg5_biblio-4.png?750|}}
+{{:modul:m320_2024:learningunits:lu07:aufgaben:bibliothek:library_sequenz_schritt2.png?600|}}
 
 Die Ausgabe soll wie folgt aussehen:
 
