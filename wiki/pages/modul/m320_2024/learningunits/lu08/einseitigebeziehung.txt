@@ -12,7 +12,7 @@ Bei einer einseitigen Beziehung kennt ein Objekt A ein anderes Objekt B aber nic
 
 //Beispiel 5.1: Geldbeutel und Besitzer//\\
 
-{{modul:m320:learningunits:lu04:theorie:lu03-einseitgebeziehung.png?600}}
+{{:modul:m320_2024:learningunits:lu08:klassewallet.png?400|}}
 
 //Abb 5.1:// Klassen in einer einseitigen Beziehung\\
 
@@ -22,7 +22,7 @@ So sind die Erzeugung des Personen-Objekts und die Zuweisung der Referenz zeitli
 
 Dies zeigt das zugehörige Sequenz-Diagramm eindeutig auf.
 
-{{modul:m320:learningunits:lu04:theorie:lu03_sequenzeinseitig.png?350}}
+{{:modul:m320_2024:learningunits:lu08:sequenzwallet.png?400|}}
 
 //Abb 5.2:// Sequenz-Diagramm der Zuweisung einer einseitigen Beziehung über eine Methode
 
@@ -30,7 +30,7 @@ Dies zeigt das zugehörige Sequenz-Diagramm eindeutig auf.
 
 //Beispiel 5.2: Stromschalter und Wippe// \\
 
-{{modul:m320:learningunits:lu04:theorie:lu03-einseitgebeziehung2.png?550}}
+{{:modul:m320_2024:learningunits:lu08:klassepower.png?400|}}
 
 //Abb 5.3:// Klassen in einer einseitigen Beziehung\\
 
@@ -39,7 +39,7 @@ Daher muss sichergestellt sein, dass mit der Erzeugung des Stromschalter-Objekte
 Es ist also wichtig, dass die Referenz mit dem Konstruktor geliefert wird. 
 In diesem Fall ist es zwingend, dass die Wippe zeitlich zuerst erzeugt wird, so dass ihre Referenz verfügbar ist.
 
-{{modul:m320:learningunits:lu04:theorie:lu03_sequenzeinseitig2.png?350}}
+{{:modul:m320_2024:learningunits:lu08:sequenzpower.png?400|}}
 
 //Abb 5.4:// Sequenz-Diagramm der Zuweisung einer einseitigen Beziehung über den Konstruktor
 

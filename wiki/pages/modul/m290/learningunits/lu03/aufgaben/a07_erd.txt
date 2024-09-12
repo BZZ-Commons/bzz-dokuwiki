@@ -1,0 +1,29 @@
+====== LU03.A07 - ERD: Reingeneering from the database  ======
+From time to time, we may need to analyze an existing database in order to optimize the structure, e.g. for the next software version.
+
+===== Prerequisites  =====
+  * Work type: Peer
+  * Means of aid: [[https://www.w3schools.com/sql/trysql.asp?filename=trysql_editor | W3Schools-SQL-Editor]]
+  * Timeframe: 60 Minutes
+  * Expected result: ERD as a PDF-File, that describes the content of the given date-base in Crow's Foot Notation.
+
+===== Task  =====
+Go to the W3Schools-Website, to the SQL-Editor, and analyze the existing data-structure. Create furthermore an ERD, that describes the existing data-structure in the Crow's Foot Notation.
+
+{{:modul:m290:learningunits:lu03:aufgaben:screenshot_2024-09-12_151200.png?800| Given data-struture of W3Schools-SQL database}}
+
+  - Identify all enties.
+  - Add the attributes and the corresponding data-types to each entity.
+  - Relate the tables to each other by analysing the primary keys and the foreign keys.
+
+===== Solution =====
+[[modul:m290:learningunits:lu03:loesungen:l07|Lösung]]
+
+===== Vocabulary =====
+^ English ^ German ^ 
+| prerequisite | Grundvoraussetzung |
+| given| gegebene, vorausgesetzt |
+| to be commissioned | 
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

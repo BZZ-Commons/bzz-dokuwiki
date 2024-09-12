@@ -1,0 +1,95 @@
+====== LU03b Responsive Webdesign - Media Queries (CSS3) ======
+
+===== Einleitung ======
+Mit CSS3 sind die Media Queries (Medienabfragen) hinzugekommen. Damit können Sie Medien bezüglich der Grösse des Geräts, Bildschirmauflösung, Orientierung (Hoch- oder Querformat) oder Eingabemöglichkeiten (Maus, Touch, Tastatur, Sprache) abgefragt werden, um ein entsprechendes Design zurückzuliefern. Die häufigste Abfrage ist die Breit das Webbrowser-Fensters.
+
+===== Media Queries einbinden und anwenden =====
+Die Media Queries können auf verschiedene Arten eingebunden und verwendet werden. Die Verwendung einer solchen Medienabfrage in HTML werden nachfolgend dargelegt.
+
+<WRAP center round tip 60%>
+===== Wichtig zu wissen =====
+Bei Media Queries (z.B. mit dem <link>-Element) werden alle vorhandenen Stylesheets heruntergeladen, auch wenn diese gar nicht benötigt werden.
+</WRAP>
+
+==== Variante 1 - im <head>-Element ====
+
+<code css>
+...            
+<head>  
+    <link rel="stylesheet" type="text/css" href="css/basis.css" />  
+    <link rel="stylesheet" type="text/css" media="screen and (max-width: 480px)" href="css/mobile.css" />
+</head>
+...
+</code>
+
+Hier wird mobile.css nur verwendet, wenn die maximale Bildschirmbreite 480 Pixel nicht überschritten wird. Bei Geräten mit einer höheren Auflösung wird basis.css verwendet. Ältere Webbrowser, die die CSS3-Media Queries (hier: media="screen and (max-width: 480px)") nicht kennen, ignorieren diese Abfrage und verwenden immer basis.css> – auch wenn der Bildschirm unter 480 Pixel breit ist.
+
+==== Variante 2 - im <style>-Element ====
+Auch das Einbinden von Abfragen im öffnenden style-Tag ist wie folgt möglich:
+
+<code css>
+<style type="text/css" media="screen and (max-width: 480px)">
+/* CSS-Anweisungen für Bildschirm bis max. 480 Pixel */
+</style>
+</code>
+
+==== Variante 3 - mit der @media-Regel ====
+Neben dem <link>- und <styl>-Element können Media Queries auch als @media-Regel innerhalb eines Stylesheets notieren.
+
+<code css>
+...
+#mainarticle {
+    background-color: yellow;
+}
+@media screen and (max-width: 480px) {  
+    #mainarticle {    
+        background-color: orange;  
+    }
+}
+...
+</code>
+
+Hier wird die @media-Regel, den Hintergrund von #mainarticle orange zu färben, nur verwendet, wenn die maximale Bildschirmgröße nicht die 480 Pixel überschritten hat. Ansonsten wird der Hintergrund von #mainarticle mit gelber Farbe eingefärbt.
+
+==== Variante 4 - mit der @import-Regel =====
+Als letzte Variante wird die @import-Regel nachfolgend veranschaulicht:
+
+<code css>
+...
+@import url('css/mobile_480.css') 
+    screen and (max-width: 480px);
+...
+</code>
+
+===== Medienmerkmale verknüpfen =====
+Das mehrere Medienmerkmal können mit dem Schlüsselwort and verknüpft. Die Verknüpfung kann auch mit und ohne Medientyp erfolgen.
+
+==== Beispiel mit and-Verknüpfung ====
+Bei der zweiten Media Query wird das Stylesheet dazwischen nur dann verwendet, wenn alle mit and verbundenen Ausdrücke und Kriterien erfüllt werden. Im Beispiel muss der Medientyp ein Bildschirm sein und die Bildschirmbreite beträgt mindestens 768 Pixel und maximal 960 Pixel.
+
+<code css>
+...
+@media screen and (min-width: 960px) {  
+    /* CSS-Anweisungen für Desktop */}
+@media screen and (min-width: 768px) and (max-width: 960px) {
+    /* CSS-Anweisungen für Tablets und Netbooks */}
+@media screen and (max-width: 480px) {  
+    /* CSS-Anweisungen für Smartphones */
+}
+...
+</code>
+
+==== Beispiel mit only-Verknüpfung ====
+Mit only wird gesorgt, dass ältere Webbrowser nichts mit der Media Query anfangen können. 
+
+Ein alter Webbrowser kennt @media screen (CSS2). Mit only ignoriert der Webbrowser die Angabe von and (max-width: 480px) (CSS3). Damit wird CSS-Anweisungen für Smartphones auch auf einem Desktop verwendet:
+
+<code css>
+...
+@media only screen and (max-width: 480px) {  
+    /* CSS-Anweisungen für Smartphones */
+}
+...
+</code>
+
+

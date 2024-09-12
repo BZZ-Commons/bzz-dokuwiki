@@ -10,7 +10,11 @@ Realisieren Sie die Methode ''take_back_book''.
 
 ==== Tests ====
   * test_librarian.py
-    * test_take_back_book()
+    * ''test_get_a_book_from_customer()''
+
+<nodisp> 
+CHANGEME to test_take_back_book()
+</nodisp>
 
 ===== Customer =====
 Realisieren Sie die Methode ''bring_back_book()''.
