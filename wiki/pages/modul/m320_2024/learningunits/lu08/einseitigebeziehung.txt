@@ -4,17 +4,15 @@ Damit ein Objekt A ein anderes Objekt B ansprechen kann, muss es dessen Referenz
   * einseitge Beziehungen
   * zweiseitige Beziehungen
 
-=== Einseitige Beziehung ===
+=====  Einseitige Beziehung =====
 
-Bei einer einseitigen Beziehung kennt ein Objekt A ein anderes Objekt B aber nicht umgekehrt.\\
+Bei einer einseitigen Beziehung kennt ein Objekt "A" ein anderes Objekt "B" aber nicht umgekehrt.\\
 
-----
-
-//Beispiel 5.1: Geldbeutel und Besitzer//\\
+==== Beispiel: Geldbeutel und Besitzer ====
 
 {{:modul:m320_2024:learningunits:lu08:klassewallet.png?400|}}
 
-//Abb 5.1:// Klassen in einer einseitigen Beziehung\\
+//Abb: Klassen in einer einseitigen Beziehung//
 
 Eine Person kann auch keinen Geldbeutel besitzen. 
 Daher wird hier die Referenz über eine Methode gesetzt. 
@@ -24,15 +22,13 @@ Dies zeigt das zugehörige Sequenz-Diagramm eindeutig auf.
 
 {{:modul:m320_2024:learningunits:lu08:sequenzwallet.png?400|}}
 
-//Abb 5.2:// Sequenz-Diagramm der Zuweisung einer einseitigen Beziehung über eine Methode
+//Abb: Sequenz-Diagramm der Zuweisung einer einseitigen Beziehung über eine Methode //
 
-----
-
-//Beispiel 5.2: Stromschalter und Wippe// \\
+==== Beispiel: Stromschalter und Wippe (Aktuator) ====
 
 {{:modul:m320_2024:learningunits:lu08:klassepower.png?400|}}
 
-//Abb 5.3:// Klassen in einer einseitigen Beziehung\\
+//Abb: Klassen in einer einseitigen Beziehung//
 
 Ein Stromschalter braucht immer eine Wippe, sonst kann er ja nicht benutzt werden. 
 Daher muss sichergestellt sein, dass mit der Erzeugung des Stromschalter-Objektes auch die Referenz zu einer Wippe gesetzt wird. 
@@ -41,8 +37,83 @@ In diesem Fall ist es zwingend, dass die Wippe zeitlich zuerst erzeugt wird, so 
 
 {{:modul:m320_2024:learningunits:lu08:sequenzpower.png?400|}}
 
-//Abb 5.4:// Sequenz-Diagramm der Zuweisung einer einseitigen Beziehung über den Konstruktor
+//Abb: Sequenz-Diagramm der Zuweisung einer einseitigen Beziehung über den Konstruktor//
 
+===== Programmcode =====
+Zu den beiden Beispielen finden Sie hier die Umsetzung in Python.
+
+==== Geldbeutel und Besitzer ====
+<code python>
+class Person:                                                
+                                                                                 
+    def __init__(self, name):     
+        self._name   = name     
+        self._wallet = None # die Referenz wird erst später zugewiesen 
+         
+    @property                                                                    
+    def name(self):                                                             
+        return self._name                   
+
+    @property            
+    def wallet(self):          
+        return self._wallet                                  
+                                  
+    @wallet.setter    
+    def wallet(self, wallet):                                      
+        self._wallet = wallet                   
+                               
+class Wallet:                     
+
+    def __init__(self):       
+        pass  
+                                              
+    def deposit_money(self, amount):    
+        pass                         
+
+    def withdraw_money(self, amount):     
+        pass   
+
+if __name__ == '__main__':   
+    person = Person('Max')  
+    wallet = Wallet()  
+    person.wallet = wallet 
+
+</code>
+
+
+==== Stromschalter und Wippe ====
+
+
+<code python>
+class PowerSwitch:    
+
+    def __init__(self, type, seesaw):  
+        self._type   = type     
+        self._actuator = actuator
+
+    @property    
+    def type(self):
+        return self._type  
+         
+class Actuator:   
+              
+    def __init__(self):
+        self._position = False
+
+    def press(self): 
+        pass  
+
+    def release(self):  
+        pass 
+
+    def is_pressed(self): 
+        return self._position   
+
+if __name__ == '__main__':  
+    actuator = Actuator()         
+    switch = PowerSwitch('single', actuator)
+
+</code>
 ----
 {{tag>M320-LU08}}
 [[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] René Probst, bearbeitet durch Marcel Suter

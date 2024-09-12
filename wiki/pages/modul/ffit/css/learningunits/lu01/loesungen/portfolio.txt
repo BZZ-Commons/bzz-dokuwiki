@@ -41,6 +41,10 @@
             <p class="lead"><b>Hi!</b> Mein Name ist <b>Kamil Demirci</b>. Schön, dass du auf meine Webseite gelandet bist. Hier findest du Informationen über mich und meine abgeschlossenen Projekte.</p>
             <div class="button-group">
                 <a class="button" href="#">Button 1 →</a>
+                <a class="button" href="#">Button 1 →</a>
+                <a class="button" href="#">Button 1 →</a>
+                <a class="button" href="#">Button 1 →</a>
+                <a class="button" href="#">Button 1 →</a>
                 <a class="button" href="#">Button 2 →</a>
             </div>
         </div>
@@ -48,6 +52,111 @@
             <img src="https://placehold.it/600">
         </div>
     </section>
+
+    <section class="about-me">
+        <div class="about-me-left">
+            <h2>Über mich</h2>
+            <p>Text</p>
+        </div>
+        <div class="about-me-right">
+            <p>HTML</p>
+            <div class="skill-wrapper">
+                <div class="skill-inner html">90%</div>
+            </div>
+            <p>CSS</p>
+            <div class="skill-wrapper">
+                <div class="skill-inner css">80%</div>
+            </div>
+            <p>PHP</p>
+            <div class="skill-wrapper">
+                <div class="skill-inner php">70%</div>
+            </div>
+            <p>JS</p>
+            <div class="skill-wrapper">
+                <div class="skill-inner js">50%</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services">
+        <div class="services-item">
+            <div class="services-item-inner">
+                <img src="https://placehold.it/80">
+                <h3>Marketing</h3>
+                <p>Text</p>
+            </div>
+        </div>
+        <div class="services-item">
+            <div class="services-item-inner">
+                <img src="https://placehold.it/80">
+                <h3>Marketing</h3>
+                <p>Text</p>
+            </div>
+        </div>
+        <div class="services-item">
+            <div class="services-item-inner">
+                <img src="https://placehold.it/80">
+                <h3>Marketing</h3>
+                <p>Text</p>
+            </div>
+        </div>
+        <div class="services-item">
+            <div class="services-item-inner">
+                <img src="https://placehold.it/80">
+                <h3>Marketing</h3>
+                <p>Text</p>
+            </div>
+        </div>
+        <div class="services-item">
+            <div class="services-item-inner">
+                <img src="https://placehold.it/80">
+                <h3>Marketing</h3>
+                <p>Text</p>
+            </div>
+        </div>
+        <div class="services-item">
+            <div class="services-item-inner">
+                <img src="https://placehold.it/80">
+                <h3>Marketing</h3>
+                <p>Text</p>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="services">
+        <div class="services-item">
+            <div class="services-item-inner">
+                <img src="https://placehold.it/600">
+            </div>
+        </div>
+        <div class="services-item">
+            <div class="services-item-inner">
+                <img src="https://placehold.it/600">
+            </div>
+        </div>
+        <div class="services-item">
+            <div class="services-item-inner">
+                <img src="https://placehold.it/600">
+            </div>
+        </div>
+        <div class="services-item">
+            <div class="services-item-inner">
+                <img src="https://placehold.it/600">
+            </div>
+        </div>
+        <div class="services-item">
+            <div class="services-item-inner">
+                <img src="https://placehold.it/600">
+            </div>
+        </div>
+        <div class="services-item">
+            <div class="services-item-inner">
+                <img src="https://placehold.it/600">
+            </div>
+        </div>
+    </section>
+
 </body>
 </html>
 </code>
@@ -64,6 +173,12 @@ body {
     padding: 0;
     font-family: 'Arial', sans-serif;
 }
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -102,7 +217,7 @@ body {
     height: auto;
 }
 .lead { font-size: 36px; }
-.button-group { display: flex; }
+.button-group { display: flex; flex-wrap: wrap }
 .button {
     display: block;
     padding: 15px 20px;
@@ -112,5 +227,88 @@ body {
     text-transform: uppercase;
     margin-right: 15px;
     box-shadow: 4px 4px 0 lightgray;
+}
+
+.button:hover {
+    background-color: red;
+}
+
+.button:active {
+    background-color: blue;
+}
+
+.button:focus {
+    background-color: yellow;
+}
+
+.button:last-child {
+    border: 5px solid green;
+}
+
+.button:nth-child(even) {
+    border: 5px solid yellow;
+}
+
+.button:nth-child(odd) {
+    border: 5px solid blue;
+}
+
+.about-me {
+    display: flex;
+    padding: 30px 50px;
+    border-bottom: 1px solid lightgray;
+}
+
+.about-me-left, .about-me-right {
+    width: 50%;
+}
+
+.skill-wrapper {
+    border: 2px solid black;
+    box-shadow: 4px 4px 0 lightgray;
+}
+
+.skill-inner {
+    padding: 15px;
+    text-align: right;
+    color: white;
+}
+
+.html {
+    width: 90%;
+    background-color: green;
+}
+
+.css {
+    width: 80%;
+    background-color: blue;
+}
+
+.php {
+    width: 70%;
+    background-color: red;
+}
+
+.js {
+    width: 50%;
+    background-color: brown;
+}
+
+.services {
+    display: flex;
+    padding: 30px 50px;
+    border-bottom: 1px solid lightgray;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+.services-item {
+    width: 33.33%;
+    padding: 15px;
+}
+
+.services-item-inner {
+    padding: 15px;
+    border: 2px solid black;
 }
 </code>

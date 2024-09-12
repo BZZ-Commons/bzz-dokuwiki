@@ -1,10 +1,10 @@
-====== LU03.A07 - ERD: Reingeneering from the database  ======
+====== LU03.A07 - ERD: Reingineering of a existing database  ======
 From time to time, we may need to analyze an existing database in order to optimize the structure, e.g. for the next software version.
 
 ===== Prerequisites  =====
   * Work type: Peer
   * Means of aid: [[https://www.w3schools.com/sql/trysql.asp?filename=trysql_editor | W3Schools-SQL-Editor]]
-  * Timeframe: 60 Minutes
+  * Timeframe: 45 Minutes
   * Expected result: ERD as a PDF-File, that describes the content of the given date-base in Crow's Foot Notation.
 
 ===== Task  =====
@@ -23,7 +23,7 @@ Go to the W3Schools-Website, to the SQL-Editor, and analyze the existing data-st
 ^ English ^ German ^ 
 | prerequisite | Grundvoraussetzung |
 | given| gegebene, vorausgesetzt |
-| to be commissioned | 
+
 
 ----
 [[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

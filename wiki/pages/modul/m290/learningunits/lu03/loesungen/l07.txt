@@ -1,0 +1,30 @@
+====== LU03.S07 - ERD: Reingineering of a existing database  ======
+
+===== Task  =====
+Go to the W3Schools-Website, to the SQL-Editor, and analyze the existing data-structure. Create furthermore an ERD, that describes the existing data-structure in the Crow's Foot Notation.
+
+===== Suggested approach=====
+  - We beginn the diagramm by identifying the entities. these are tables without any foreign keys: 
+      * Customers
+      * Categories
+      * Employees
+      * Shippers 
+      * Suppliers
+  - Then we determine the attributes and the data-types of each entity (-table)
+  - We continue with the analysis of the relations. These are tables, which have foreign keys in their attribute list.
+  - Finally, we connect the tables with each other in the right fashion.
+
+
+===== Solution =====
+
+{{:modul:m290:learningunits:lu03:loesungen:l07.drawio.png?1000| Solution of W3Schools data-base}}
+===== Vocabulary =====
+^ English ^ German ^ 
+| prerequisite | Grundvoraussetzung |
+| given| gegebene, vorausgesetzt |
+| to determine | bestimmen |
+| suggested approach | Vorgehensvorschlag |
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

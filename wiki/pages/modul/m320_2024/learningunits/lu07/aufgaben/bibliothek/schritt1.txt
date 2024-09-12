@@ -8,6 +8,8 @@ Realisieren Sie die Konstruktoren der Klassen ''Customer'' und ''Librarian''.
 ===== Customer =====
 Realisieren Sie den Konstruktor der Klasse ''Customer''.
 
+=== Hinweis ===
+
 Beim Erzeugen eines Customer-Objektes meldet sich dieses selber (proaktiv) bei der Library an. 
 Dazu wird im Konstruktor die Methode ''add_customer'' des ''Library''-Objekts aufgerufen.
 

@@ -3,15 +3,21 @@
   * The relations must be realized as relation tables, that connect the base tables
   * The attributes of the relation tables are: id, and the primary key of each base table as foreign key
   * Finally, the cardinalities must be added, which show how the relationships between the tables actually are.
+  * The attribut must be taken over and added with data-types and constraints (primary keys)
+
+{{:modul:m290:learningunits:lu03:loesungen:a04.drawio.png}}
+
+===== Case Study =====
+The relation between **Countries** and **Continents** is a so called **many-to-many-relation = n:m-relation**. In the following illustration, we can see, that one continent consists of several countries. For some countries, however, this relationship applies in both directions, e.g. Turkey and Russia, which are located in both Asia and Europe.
+
+{{:modul:m290:learningunits:lu03:loesungen:country-relations.png?800| Case study of the relation between Countries and Continents}}
 
 
-
-{{:modul:m290:learningunits:lu03:loesungen:a04.drawio.png|}}
 ===== Vocabulary =====
 ^ English ^ German ^ 
 | constraint | Einschränkung, Bedingung|
 | given | gegebene, vorausgesetzt |
-
+| case study | Fallbeispiel |
 
 ----
 [[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir
