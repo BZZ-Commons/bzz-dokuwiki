@@ -1,20 +1,27 @@
 ====== LU09a - Mehrfachbeziehung ======
 
-Aus der realen Welt sind Mehrfachbeziehungen bestens bekannt. So weist eine Schulklasse viele Lernende auf, eine Feriendestination kann von vielen Personen gebucht werden und umgekehrt kann eine Person viele Destinationen besuchen.\\
-Diese beiden Fälle können wie folgt in UML dargestellt werden.\\
-{{:modul:m320:learningunits:lu05:theorie:lu05-abb5.9_beziehung-1-n.png?575|}}\\
-//Abb 5.9 : //1:n Beziehung\\
-\\
-{{:modul:m320:learningunits:lu05:theorie:lu05-abb5.10_beziehung-n-n.png?600|}}\\
-//Abb 5.10 : //n:n Beziehung\\
+Aus der realen Welt sind Mehrfachbeziehungen bestens bekannt. 
+So weist eine Schulklasse viele Lernende auf, eine Feriendestination kann von vielen Personen gebucht werden und umgekehrt kann eine Person viele Destinationen besuchen.
+
+Diese beiden Fälle können wie folgt in UML dargestellt werden.
+
+{{:modul:m320_2024:learningunits:lu09:klasseschool.png?600|}}
+
+//Abb: 1:n Beziehung//
+
+{{:modul:m320_2024:learningunits:lu09:klasseholiday.png?600|}}
+
+//Abb: n:n Beziehung//
 
 === Kardinalität ===
-Die Kardinalität gibt an, wie mengenmässig eine Beziehung aussieht.\\
+Die Kardinalität gibt an, wie mengenmässig eine Beziehung aussieht.
 Vereinfacht kann man von
   * 1:1 Beziehung (ein Objekt kennt genau ein anderes Objekt)
   * 1:n Beziehung (ein Objekt kenntviele andere Objekte)
   * n:n Beziehung (ein Objekt kennt viele andere Objekte und umgekehrt)
-sprechen. Dabei steht **n** für den Begriff 'viele'. 
+
+sprechen. 
+Dabei steht **n** für den Begriff 'viele'. 
 Dies wird in der UML mit einem Stern (** * **) wiedergegeben. 
 Der Stern steht für **0 bis unendliche viele** Beziehungen.
 In der UML ist es aber auch möglich, die Kardinalität ganz genau zu spezifizieren. 
@@ -23,7 +30,7 @@ So ist in der Abbildung 5.9 klar erkennbar, dass eine Schulklasse mindesten 15 a
 === Umsetzung in Python ===
 Kennt ein Objekt viele andere, gleichartige Objekte, werden die Referenzen in einer Liste festgehalten. 
 In der Regel wird die Methode für das **Zufügen** als **add**-Methode bezeichnet. 
-Gegenüber dem Begriff **set** signalisiert **add**, dass eben mehrere Werte gesetzt werden können.\\
+Gegenüber dem Begriff **set** signalisiert **add**, dass eben mehrere Werte gesetzt werden können.
 Für die oben dargestellte Klasse ''SchoolClass'' würde das dann wie folgt aussehen (unter Einhaltung der maximalen Grösse der Klasse)
 
 <code python>

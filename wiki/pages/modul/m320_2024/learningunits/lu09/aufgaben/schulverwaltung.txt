@@ -1,11 +1,14 @@
 ====== LU09.A01 - Schulverwaltung ======
 
-=== Ziel ===
+<WRAP center round todo 60%>
+
 Sie können in einer komplexen Anwendung selbständig 
    * die Klassen erstellen
    * die Beziehungen einpflegen (einseitig, zweiseitig, mehrfache)
    * den nötigen Ablauf selbst festlegen
    * die gefordeten Ausgaben erzeugen
+
+</WRAP>
 
 === Vorgehen ===
    * Studieren Sie jeweils das UML-Diagramm sowie die Erklärungen zu den einzelnen Methoden.
@@ -18,6 +21,8 @@ Es ist eine einfache Schulverwaltung gemäss folgendem Klassendiagramm zu implem
 {{:modul:m320_2024:learningunits:lu09:aufgaben:klasseschule.png?600|}}
 
 Dabei nutzen Sie Ihr Wissen zu ein- und zweiseitiger Beziehung sowie den 4 gezeigten Fällen der Referenzzuweisung. Ebenso verwenden Sie Mehrfachbeziehungen.
+
+{{https://ritholtz.com/wp-content/uploads/2020/03/dontpanic.jpg?400}}
 
 ===== Vorgehen =====
 Die Beschreibung der Klassen und Methoden erfolgt von links nach rechts und von oben nach unten.
