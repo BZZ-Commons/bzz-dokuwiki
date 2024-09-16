@@ -1,9 +1,10 @@
 ====== LU08b - Zweiseitige Beziehungen ======
 Bei einer zweiseitigen Beziehung kennt ein Objekt A ein anderes Objekt B und umgekehrt.\\
 
-==== Beispiel: Lernende/r und Lehrperson ====
+===== Beispiel: Lernende/r und Lehrperson =====
+==== Klassendiagramm ====
 
-{{modul:m320:learningunits:lu04:theorie:lu03-abb3.10_beziehung-3.png?600}}
+{{:modul:m320_2024:learningunits:lu08:klasseteacher.png?600|}}
 
 //Abb: Klassen in einer zweiseitigen Beziehung //
 
@@ -17,36 +18,18 @@ Um sicherzugehen, dass immer eine zweiseitige Beziehung besteht, wird in der jew
 Hinweis: Programmtechnisch muss einfach sichergestellt werden, dass eine schon bestehende Beziehung nicht noch einmal zugewiesen wird.
 </WRAP>
 
+==== Sequenzdiagramm ====
 
-{{modul:m320:learningunits:lu04:theorie:lu03-abb3.11_sequenz-3.png?350}}
+{{:modul:m320_2024:learningunits:lu08:sequenzteacher.png?400|}}
 
 //Abb: Sequenz-Diagramm der Zuweisung einer zweiseitigen Beziehung über Methoden //
 
-----
-
-==== Beispiel: Lernende/r und Schulklasse ====
-{{modul:m320:learningunits:lu04:theorie:lu03-abb3.12_beziehung-4.png?600}}
-
-//Abb: Klassen in einer zweiseitigen Beziehung//
-
-Ein Student wird bei der Anmeldung einer Klasse zugewiesen. 
-Daher macht es Sinn, diese Referenz über den Konstruktor mitzuteilen. 
-Dabei muss die Klasse ''SchoolClass'' zeitlich vorher erstellt werden, damit die Referenz verfügbar ist.
-
-{{modul:m320:learningunits:lu04:theorie:lu03-abb3.13_sequenz-4.png?350}}
-
-//Abb: Sequenz-Diagramm der Zuweisung einer zweiseitigen Beziehung über Konstruktor//
-
-===== Code-Beispiele =====
-
-Zu den oben gezeigten Beispielen, finden Sie hier den passenden Code in Python.
-
+==== Sourcecode ====
 ==== Lernende/r und Lehrperson ====
 
 
 <code python>
 class Teacher:                       
-
                                                                                 
     def __init__(self, name):         
         self._name        = name     
@@ -71,13 +54,31 @@ class Student:
 if __name__ == '__main__':     
     mia   = Teacher('Mia') 
     cathy = Student('Cathy')
+    
+    #ENTWEDER
     mia.student = cathy   
     #ODER                                       
     cathy.teacher = mia            
 
 </code>
-==== Lernende/r und Schulklasse ====
+===== Beispiel: Lernende/r und Schulklasse =====
+==== Klassendiagramm ====
 
+{{:modul:m320_2024:learningunits:lu08:klasseschool.png?600|}}
+
+//Abb: Klassen in einer zweiseitigen Beziehung//
+
+Ein Student wird bei der Anmeldung einer Klasse zugewiesen. 
+Daher macht es Sinn, diese Referenz über den Konstruktor mitzuteilen. 
+Dabei muss die Klasse ''SchoolClass'' zeitlich vorher erstellt werden, damit die Referenz verfügbar ist.
+
+==== Sequenzdiagramm ====
+
+{{:modul:m320_2024:learningunits:lu08:sequenzschool.png?400|}}
+
+//Abb: Sequenz-Diagramm der Zuweisung einer zweiseitigen Beziehung über Konstruktor//
+
+==== Sourcecode ====
 
 <code python>
 class SchoolClass:                                               

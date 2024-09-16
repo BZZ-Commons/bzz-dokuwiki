@@ -1,28 +1,32 @@
 ====== LU08.A01 - Einseitige Beziehung ======
-
-=== Ziel ===
+<WRAP center round todo 60%>
 Sie können eine einfache Beziehung (Assoziation) zweier Klassen implementieren.
-=== Auftrag ===
+</WRAP>
+
+{{:modul:m320_2024:learningunits:lu08:aufgaben:uml_homeowner.png?600|}}
+
+===== Auftrag =====
   - Akzeptieren Sie das GitHub Classroom Assignment und klonen Sie das Repository in Ihre Entwicklungsumgebung.
   - Implementieren Sie die die Klasse ''House'' gemäss Klassen- und Sequenzdiagramm. (Aktion im Konstruktor beachten)
   - Testen Sie die Klasse mit ''test_house''.
   - Implementieren Sie die Klasse ''HomeOwner'' gemäss Klassendiagramm.
-  - Testen Sie die Klasse mit ''test_owner'' und ''test_print''.\\ {{modul:m320:learningunits:lu04:aufgaben:lu03-aufg6_house-1.png?500|}}
-  - Implementieren Sie die ''main''-Methode entsprechend dem gezeigten Sequenzdiagramm.\\ {{modul:m320:learningunits:lu04:aufgaben:lu03-aufg6_house-2.png?500|}}
+  - Testen Sie die Klasse mit ''test_owner'' und ''test_print''.
+  - Implementieren Sie die ''main''-Methode entsprechend dem gezeigten Sequenzdiagramm.
   * Das Programm soll eine vergleichbare Ausgabe erzeugen.\\ {{modul:m320:learningunits:lu04:aufgaben:lu03-aufg6_house-3.png?250|}}\\
 
-//Hinweis : // Es handelt sich bei diesem Beispiel um eine 1:1-Beziehung.
+=== Hinweis ===
+Es handelt sich bei diesem Beispiel um eine 1:1-Beziehung.
 
-=== Dauer===
+==== Dauer ====
 20 Minuten
 
-=== Abgabe ===
+==== Abgabe ====
 Mittel Push ins GitHub Repository.
 
 ----
 <details>
 <summary>//=> GitHub Repo für externe Besucher//</summary>
-GitHub Repository https://github.com/templates-python/m319-lu10-a02-reader-module
+GitHub Repository https://github.com/templates-python/m320-lu08-a01-homeowner
 
 //Lernende am BZZ müssen den Link zum GitHub Classroom Assignment verwenden//
 

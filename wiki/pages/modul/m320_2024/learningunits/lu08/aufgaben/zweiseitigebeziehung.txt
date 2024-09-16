@@ -1,26 +1,34 @@
 ====== LU08.A02 - Zweiseitige Beziehung ======
-=== Ziel ===
-Sie können eine zweiseitige Beziehung (Assoziation) zweier Klassen implementieren.
 
+<WRAP center round todo 60%>
+Sie können eine zweiseitige Beziehung (Assoziation) zweier Klassen implementieren.
+</WRAP>
+
+{{:modul:m320_2024:learningunits:lu08:aufgaben:klassereservation.png?600|}}
+
+{{:modul:m320_2024:learningunits:lu08:aufgaben:sequenzreservation.png?600|}}
 === Auftrag ===
-  * Implementieren Sie die beiden Klassen ''Reservation'' und ''Customer'' gemäss dem Klassendiagramm (bitte in dieser Reihenfolge!). Legen Sie zuerst nur den Programm-Rahmen fest. Das heisst dass Sie die benötigten Klassen und deren Methoden-Rümpfe sowie die zugehörigen Kommentare anschreiben. Das 'Innenleben' der Methoden ergibt sich dann später auf Grund des Programmablaufs, der im Sequenzdiagramm gezeigt wird.\\
-<tab10>{{modul:m320:learningunits:lu04:aufgaben:lu03-aufg7_reservation-1.png?700|}}
-  * Implementieren Sie die ''main''-Methode sowie den Code der Konstruktoren und Methoden entsprechend dem gezeigten Sequenzdiagramm.\\
-<tab10>{{modul:m320:learningunits:lu04:aufgaben:lu03-aufg7_reservation-2.png?600|}}
+  * Implementieren Sie die beiden Klassen ''Reservation'' und ''Customer'' gemäss dem Klassendiagramm (bitte in dieser Reihenfolge!). 
+    * Legen Sie zuerst nur den Programm-Rahmen fest. Das heisst dass Sie die benötigten Klassen und deren Methoden-Rümpfe sowie die zugehörigen Kommentare anschreiben. 
+    * Das 'Innenleben' der Methoden ergibt sich dann später auf Grund des Programmablaufs, der im Sequenzdiagramm gezeigt wird.
+  * Implementieren Sie die ''main''-Methode sowie den Code der Konstruktoren und Methoden entsprechend dem gezeigten Sequenzdiagramm.
   * Das Programm soll eine vergleichbare Ausgabe erzeugen.
-<tab10>
-\\{{modul:m320:learningunits:lu04:aufgaben:lu03-aufg7_reservation-3.png?500|}}\\
-\\
-//Hinweis : // Es handelt sich bei diesem Beispiel um eine 1:1-Beziehung.
-===Dauer===
+
+
+{{modul:m320:learningunits:lu04:aufgaben:lu03-aufg7_reservation-3.png?500|}}\\
+
+==== Hinweis ====
+
+ Es handelt sich bei diesem Beispiel um eine 1:1-Beziehung.
+====Dauer====
 20 Minuten
-=== Abgabe ===
+==== Abgabe ====
 Erfolgt als Push ins GitHub Repository.
 
 ----
 <details>
 <summary>//=> GitHub Repo für externe Besucher//</summary>
-GitHub Repository https://github.com/templates-python/m319-lu10-a02-reader-module
+GitHub Repository https://github.com/templates-python/m320-lu08-a02-reservation
 
 //Lernende am BZZ müssen den Link zum GitHub Classroom Assignment verwenden//
 
