@@ -46,16 +46,17 @@ Ein paar Tipps:
 === add_student ===
   * Fügt einen Studenten in die Liste ein.
   * Beachten Sie, dass gemäss Klassendiagramm max. 20 Studenten möglich sind. Das müssen Sie beim Zufügen von Studenten umsetzen. 
+  * Beim Versuch mehr als 20 Studenten einzufügen, soll die Methode einen ''OverflowError'' werfen.
 
 === count_student ===
   * Gibt die Anzahl Studenten zurück.
 
 === take_student(index) ===
   * Liefert den Studenten beim angegebenen Index.
-  * Stellen Sie sicher, dass ein ungültiger Index zu keinem Laufzeitfehler führt. Stattdessen soll bei einem ungültigen Index der Wert ''None'' zurück gegeben werden.
+  * Bei einem ungültigen Index soll ein ''IndexError'' ausgelöst werden.
 
 === show_student_list ===
-  * Diese Methode liefert eine Liste aller Studenten an. Die Ausgabe könnte wie folgt aussehen:
+  * Diese Methode liefert eine Liste aller Studenten. Die Ausgabe könnte wie folgt aussehen:
 
 <code>
 Max
@@ -64,24 +65,23 @@ Cem
 </code>
 
 === show_student_report(name) ===
-  * Diese Methode liefert das Zeugnis für einen Studenten mit allen Fächern und dem Notenschnitt an. Die Ausgabe könnte wie folgt aussehen:
+  * Diese Methode liefert das Zeugnis für einen Studenten mit allen Fächern und dem Notenschnitt. Die Ausgabe könnte wie folgt aussehen:
 
 <code>
-...
+Zeugnis für: Cem
+	  Mathe     :  4.25
+	  Deutsch   :  5.50
+	  Turnen    :  5.50
 </code>
+
+<WRAP center round tip 60%>
+Die Methode erzeugt selber keine Liste, sie ruft lediglich eine Methode in einem anderen Objekt auf.
+</WRAP>
 
 ==== Student ====
 === Konstruktor ===
   * Beachten Sie die Parameter und Defaultwerte.
 
-=== show_report ===
-  * Diese Methode liefert das Zeugnis dieses Studenten mit allen Fächern und dem Notenschnitt.
-
-Die Ausgabe könnte wie folgt aussehen:
-
-<code>
-...
-</code>
 
 ==== StudentReport ====
 
@@ -90,23 +90,35 @@ Die Ausgabe könnte wie folgt aussehen:
 
 === add_subject ===
   * Beachten Sie, dass gemäss Klassendiagramm max. 3 Fächer möglich sind.
-  * Beim Versuch mehr als 3 Fächer (''Subject'') einzufügen, soll die Methode einen ''???Error'' werfen.
+  * Beim Versuch mehr als 3 Fächer (''Subject'') einzufügen, soll die Methode einen ''OverflowError'' werfen.
 
 === take_subject ===
-  * Stellen Sie sicher, dass ein ungültiger Index zu keinem Laufzeitfehler führt. Stattdessen soll bei einem ungültigen Index der Wert ''None'' zurück gegeben werden.
+  * Liefert das Fach (''Subject'') beim angegebenen Index.
+  * Bei einem ungültigen Index soll ein ''IndexError'' ausgelöst werden.
 
 === show_overview ===
   * Diese Methode liefert ein Zeugnis mit allen Fächern und dem entsprechenden Notenschnitt. Eine mögliche Ausgabe kann wie folgt aussehen:
 
 <code>
-...
+Zeugnis für: Cem
+	  Mathe     :  4.25
+	  Deutsch   :  5.50
+	  Turnen    :  5.50
 </code>
 
 === show_details ===
   * Diese Methode liefert alle Fächern mit den einzelnen Noten. Eine mögliche Ausgabe kann wie folgt aussehen:
  
 <code>
-...
+Fach: Mathe      mit 2 Noten
+ - 1: 5.00 am 01.01.2011
+ - 2: 3.50 am 02.02.2022
+ Schnitt: 4.25
+Fach: Deutsch    mit 3 Noten
+ - 1: 5.50 am 03.03.2033
+ - 2: 6.00 am 04.04.2044
+ - 3: 5.00 am 05.05.2055
+ Schnitt: 5.50
 </code>
 
 
@@ -117,10 +129,12 @@ Initialisieren Sie das Attribut als leere Liste.
 
 === add_grade ===
   * Beachten Sie, dass gemäss Klassendiagramm max. 4 Noten möglich sind. Das müssen Sie beim Zufügen von Noten (''Grade''-Objekte) umsetzen. 
+  * Beim Versuch mehr als 4 Noten einzufügen, soll die Methode einen ''OverflowError'' werfen.
   * Die untere Grenze von 2 Noten müssen Sie (noch) nicht beachten.
 
 === take_grade ===
-  * Stellen Sie sicher, dass ein ungültiger Index zu keinem Laufzeitfehler führt. Stattdessen soll bei einem ungültigen Index der Wert ''None'' zurück gegeben werden.
+  * Liefert die Note (''Grade'') beim angegebenen Index.
+  * Bei einem ungültigen Index soll ein ''IndexError'' ausgelöst werden.
 
 === calc_average ===
   * Die Methode berechnet den Notendurchschnitt aus allen ''Grade''-Objekten in der Liste.
@@ -135,22 +149,63 @@ Die Klasse ''Grade'' wird als ''@dataclass'' realisiert.
 
 === Konstruktor ===
   * Initialisieren Sie die Werte ''value'' und ''date'' gemäss Klassendiagramm.
-  * Achten Sie auf die Zusicherung für den Wert von ''value''. Diese nehmen Sie im ''__post_init__'' vor, d.h. dass Sie keine setter-Methode schreiben (ist gemäss Klassendiagramm nicht vorgesehen).
+  * Achten Sie auf die Zusicherung für den Wert von ''value''. Diese nehmen Sie im ''__post_init__'' vor.
+
+=== date.setter ===
+<WRAP center round tip 60%>
+Diese Methode ist bereits vorgegeben.
+</WRAP>
+
+  * Diese Methode schreibt das Attribut ''self._date''.
+  * Je nach Art des Inputs wird dieser unterschiedlich verarbeitet:
+    * ''DateTime'' => direkt speichern
+    * ''String'' => Umwandeln in ''DateTime''
+    * Alles andere => Der aktuelle Zeitstempel wird gespeichert.
 
 
 ==== main ====
 In der ''main''-Methode erzeugen Sie die verschiedenen Objekte und zeigen die Zeugnisse an.
 
-  * Erzeugen Sie die Objekte in der Reihenfolge, wie sie auch für die Zuweisung in den Konstruktoren nötig sind. Wenn Sie unsicher sind, skizzieren Sie sich den Ablauf des Programms als Sequenzdiagramm auf. 
-
 === Ausgabe ===
-Das Programm liefert 
-   * eine Liste der Studenten
-   * pro Student das Zeugnis (Report) mit dem Notenschnitt
-   * für einen Studenten alle Einzelnoten. Sie können hier frei wählen, für wen die Noten ausgegeben werden.
 
-Die Ausgabe soll in etwa wie folgt aussehen:\\
-{{:modul:m320:learningunits:lu05:aufgaben:lu03-aufg8-schulverwaltung-2.png?200|}}
+<code>
+Moritz
+Pia
+Cem
+
+----
+Zeugnis für: Moritz
+	  Mathe     :  4.25
+	  Deutsch   :  5.00
+	  Turnen    :  5.00
+----
+Zeugnis für: Pia
+	  Mathe     :  5.50
+	  Deutsch   :  5.33
+	  Turnen    :  5.25
+----
+Zeugnis für: Cem
+	  Mathe     :  4.25
+	  Deutsch   :  5.50
+	  Turnen    :  5.50
+----
+Student Theo nicht gefunden
+Fach: Mathe      mit 2 Noten
+ - 1: 5.00 am 01.01.2011
+ - 2: 3.50 am 02.02.2022
+ Schnitt: 4.25
+Fach: Deutsch    mit 3 Noten
+ - 1: 5.50 am 03.03.2033
+ - 2: 6.00 am 04.04.2044
+ - 3: 5.00 am 05.05.2055
+ Schnitt: 5.50
+Fach: Turnen     mit 4 Noten
+ - 1: 4.50 am 06.06.2066
+ - 2: 6.00 am 07.07.1977
+ - 3: 6.00 am 08.08.1988
+ - 4: 5.50 am 09.09.1999
+ Schnitt: 5.50
+</code>
 
 === Dauer ===
 4 - 6 Stunden
@@ -161,7 +216,7 @@ Mittels Push ins GitHub Repository
 ----
 <details>
 <summary>//=> GitHub Repo für externe Besucher//</summary>
-GitHub Repository https://github.com/templates-python/m319-lu10-a02-reader-module
+GitHub Repository https://github.com/templates-python/m320-lu09-a01-school
 
 //Lernende am BZZ müssen den Link zum GitHub Classroom Assignment verwenden//
 

@@ -55,7 +55,7 @@ Wenn Sie ein neues Projekt mit git erstellen möchten, brauchen Sie den Befehl '
 === Bestehendes Repository ===
 Mit dem Befehl ''git clone'' können Sie eine lokale Kopie eines bestehenden Repositories erstellen.
 Meistens verwenden wir den Befehl um ein Repository von einer zentralen Ablage (z.B. GitHub) zu kopieren.
-Zum Beispiel: ''git clone https://github.com/templates-python/M319_LU04_Classroom.git''.
+Zum Beispiel: ''git clone https://github.com/templates-python/m319-lu04-a01-classroom.git''.
 
 ==== Änderungen nachverfolgen ====
 Mit dem Befehl ''git add DATEINAME'' wird eine Datei zur Nachverfolgung der Änderungen in git hinzugefügt.
@@ -66,6 +66,9 @@ Wollen Sie die Änderungen an einer Datei nachverfolgen, müssen Sie diese mit '
 ==== "Commit" ====
 Mit dem Befehl ''git commit'' wird der aktuelle Stand der //Staging Area// in einem neuen //Commit// festgeschrieben.
 
+
+==== "Push" ====
+Mit dem Befehl ''git push'' wird der aktuelle lokale //Commit// auf das //Remote// in diesem Fall ''github.com'' hochgeladen.
 ----
 {{tag>319-E1F}}
 [[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter
