@@ -17,37 +17,32 @@
 
 ===== Themen =====
 ==== A: MySQL ====
-  * A1: Login
-  * A2. Prüfen der Lauffähigkeit
-  * A3. Instanzen/Inhalt anzeigen lassen
+  - Login
+  - Prüfen der Lauffähigkeit
+  - Instanzen/Inhalt anzeigen lassen
 
-==== B: WebStorm ====
-  * B1: Fehlermeldungen erkennen und beheben
-  * B2: Plugin installieren
-  * B3: Datenverbindung etablieren können
-  * B4: Speicherort der Scripte
+==== B: DBS und zugehörige Begrifflichkeiten ====
+  - DBS und Teilgebiete
+  - CRUD und zugehörige Begrifflichkeiten
+  - CRUD und Zusammenhang zur SQL
 
-==== C: DBS und zugehörige Begrifflichkeiten ====
-  * C1: CRUD und zugehörige Begrifflichkeiten
-  * C2: CRUD und Zusammenhang zur SQL
+==== C: SQL (Befehlsübersicht, keine Anwendung) ====
+  - Begrifflichkeiten
+  - Teilgebiete
+  - Typische Befehle 
 
-==== D: SQL (Befehlsübersicht, keine Anwendung) ====
-  * D1: Begrifflichkeiten
-  * D2: Teilgebiete
-  * D3: Typische Befehle 
+==== D: Datentypen ====
+  - Arten kennen
+  - Fallspezifisch syntaktisch korrekt anwenden
 
-==== E: Datentypen ====
-  * E1: Arten kennen
-  * E2: Fallspezifisch syntaktisch korrekt anwenden
+==== E: ERM ====
+  - Begrifflichkeiten: Bedeutung, Sinn/Zielsetzung, Kardinalität
+  - Aufbau einer Entität inkl. Attribute
+  - Umsetzung von Beziehungen: 1:1, 1:n, n:m
 
-==== F: ERM ====
-  * F1: Begrifflichkeiten: Bedeutung, Sinn/Zielsetzung, Kardinalität
-  * F2: Aufbau einer Entität inkl. Attribute
-  * F3: Umsetzung von Beziehungen: 1:1, 1:n, n:m
-
-==== G: ERD ====
-  * G1: Begrifflichkeiten: Bedeutung, Sinn/Zielsetzung, Kardinalität
-  * G2: Aufbau einer Entität inkl. Attribute und Datentypen
-  * G3: Umsetzung von Beziehungen: 1:1, 1:n, n:m
+==== F: ERD ====
+  - Begrifflichkeiten: Bedeutung, Sinn/Zielsetzung, Kardinalität
+  - Aufbau einer Entität inkl. Attribute und Datentypen
+  - Umsetzung von Beziehungen: 1:1, 1:n, n:m
 
 [[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

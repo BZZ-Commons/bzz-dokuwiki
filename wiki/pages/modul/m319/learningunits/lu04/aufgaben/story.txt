@@ -30,10 +30,10 @@ Die Übungsvorlage wird mit einer Programmvorlage geliefert, die die Funktion un
 
 
 <code python>
-def story():
+def main():
     # Write your code here
 if __name__ == '__main__':
-    story()
+    main()
 </code>
 
 Hier ein weiteres Beispiel für die Ausgabe:
