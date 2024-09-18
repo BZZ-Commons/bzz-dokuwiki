@@ -136,7 +136,7 @@ Initialisieren Sie das Attribut als leere Liste.
   * Liefert die Note (''Grade'') beim angegebenen Index.
   * Bei einem ungültigen Index soll ein ''IndexError'' ausgelöst werden.
 
-=== calc_average ===
+=== average ===
   * Die Methode berechnet den Notendurchschnitt aus allen ''Grade''-Objekten in der Liste.
   * Falls keine ''Grade''-Objekte in der Liste vorhanden sind, wird der Wert ''0.00'' zurück gegeben.
 

@@ -86,7 +86,7 @@ In diesem Fall ist es zwingend, dass die Wippe zeitlich zuerst erzeugt wird, so 
 <code python>
 class PowerSwitch:    
 
-    def __init__(self, type, seesaw):  
+    def __init__(self, type, actuator):  
         self._type   = type     
         self._actuator = actuator
 

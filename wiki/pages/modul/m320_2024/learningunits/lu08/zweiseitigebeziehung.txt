@@ -32,23 +32,23 @@ Hinweis: Programmtechnisch muss einfach sichergestellt werden, dass eine schon b
 class Teacher:                       
                                                                                 
     def __init__(self, name):         
-        self._name        = name     
-        self._ref2student = None   
+        self._name    = name     
+        self._student = None   
     
     @student.setter    
     def student(self, student):          
-        self._ref2student = student                
+        self._student   = student                
         student.teacher = self        
 
 class Student:           
         
     def __init__(self, name):                      
-        self._name        = name      
-        self._ref2teacher = None                   
+        self._name    = name      
+        self._teacher = None                   
         
     @teacher.setter
     def teacher(self, teacher):                     
-        self._ref2teacher = teacher          
+        self._teacher = teacher          
         teacher.student = self          
                                                                                        
 if __name__ == '__main__':     
@@ -85,17 +85,17 @@ class SchoolClass:
                                                                                                                                
     def __init__(self, designation):                                          
         self._designation = designation                                    
-        self._ref2student = None                             
+        self._student = None                             
   
     @student.setter
     def student(self, student):                                     
-        self._ref2student = student                           
+        self._student = student                           
                    
 class Student:                                                                
                                                                                           
     def __init__(self, name, the_class):                                       
         self._name = name                                                         
-        self._ref2class = the_class                                               
+        self._class = the_class                                               
         the_class.student = self                                                                                          
                                                                                          
                                                                       

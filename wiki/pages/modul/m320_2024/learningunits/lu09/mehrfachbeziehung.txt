@@ -47,11 +47,11 @@ class SchoolClass:
 
 Weitere wichtige Methoden dienen
   * dem **Abfragen** der Grösse der Liste (Anzahl der gespeicherten Objekte)
-  * dem **Abrufen** einer Referenz über einen Index. Dieser muss abger gegen den size der Liste geprüft werden, damit kein unerlaubter Zugriff erfolgt!
+  * dem **Abrufen** einer Referenz über einen Index. Dieser muss aber gegen die ''size'' der Liste geprüft werden, damit kein unerlaubter Zugriff erfolgt!
   * dem **Entfernen** einer Referenz aus der Liste
 <code python>
-  @proprty
-  def size(self):
+  @property
+  def count_students(self):
      return len(self._students)
      
   def take_student(self, index):
