@@ -22,7 +22,7 @@ Es ist eine einfache Schulverwaltung gemäss folgendem Klassendiagramm zu implem
 
 Dabei nutzen Sie Ihr Wissen zu ein- und zweiseitiger Beziehung sowie den 4 gezeigten Fällen der Referenzzuweisung. Ebenso verwenden Sie Mehrfachbeziehungen.
 
-{{https://ritholtz.com/wp-content/uploads/2020/03/dontpanic.jpg?400}}
+{{https://ritholtz.com/wp-content/uploads/2020/03/dontpanic.jpg?300|}}
 
 ===== Vorgehen =====
 Die Beschreibung der Klassen und Methoden erfolgt von links nach rechts und von oben nach unten.
@@ -149,7 +149,7 @@ Die Klasse ''Grade'' wird als ''@dataclass'' realisiert.
 
 === Konstruktor ===
   * Initialisieren Sie die Werte ''value'' und ''date'' gemäss Klassendiagramm.
-  * Achten Sie auf die Zusicherung für den Wert von ''value''. Diese nehmen Sie im ''__post_init__'' vor.
+  * Achten Sie auf die Zusicherung für den Wert von ''value''. Diese nehmen Sie im ''__post_init__'' vor. \\ Falls der Wert ungültig ist (keine Zahl, zu gross, zu klein) lösen Sie einen ''ValueError'' aus.
 
 === date.setter ===
 <WRAP center round tip 60%>

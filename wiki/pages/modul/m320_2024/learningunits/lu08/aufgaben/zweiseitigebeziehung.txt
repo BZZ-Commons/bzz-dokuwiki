@@ -14,8 +14,12 @@ Sie können eine zweiseitige Beziehung (Assoziation) zweier Klassen implementier
   * Implementieren Sie die ''main''-Methode sowie den Code der Konstruktoren und Methoden entsprechend dem gezeigten Sequenzdiagramm.
   * Das Programm soll eine vergleichbare Ausgabe erzeugen.
 
+<code>
+Julian hat eine Reservation für den Anlass ESAF
+Reservation 123 ESAF für Kunde Julian
 
-{{modul:m320:learningunits:lu04:aufgaben:lu03-aufg7_reservation-3.png?500|}}\\
+Process finished with exit code 0
+</code>
 
 ==== Hinweis ====
 
