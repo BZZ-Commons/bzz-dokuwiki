@@ -13,7 +13,7 @@ After developing our conceptional data model, the next step to establish a physi
 Create an ERD to the given ERM in the Crow's Foot Notation. 
   * Identify additional attributes
   * Establish relation with inkl. the primary keys and foreign keys
-  * Connect the tables and finish your work by fixing the entities (0:1, :1, 0:n)
+  * Connect the tables and finish your work by fixing the entities (1:1, 1:n, n:m)
 
 
 ===== Given Details =====
@@ -25,7 +25,9 @@ Create an ERD to the given ERM in the Crow's Foot Notation.
 
 2. ERM visualisation
 
-{{:modul:m290:learningunits:lu03:loesungen:solution_a32.drawio.png?1200|}}
+{{:modul:m290:learningunits:lu03:aufgaben:a05.drawio.png?1500|}}
+
+
 
 ===== Solution =====
 [[modul:m290:learningunits:lu03:loesungen:l05|Lösung]]

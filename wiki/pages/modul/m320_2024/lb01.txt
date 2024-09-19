@@ -1,12 +1,18 @@
 ====== Informationen zur Leistungsbeurteilung 1 ======
 ===== Relevante Themen =====
 
-  * Beziehungen (Einseitig, Zweiseitig, Mehrfachbeziehungen)
+  * Beziehungen 
+    * Einseitig, Zweiseitig
+    * Einfach-, Mehrfachbeziehungen
+    * Beziehung im Konstruktor / ausserhalb des Konstruktors
   * Listen
   * Dataclass
   * DateTime und TimeDelta
   * property / setter
-  * Exceptions auslösen und fangen
+  * Exceptions 
+    * Eigene Exception definieren
+    * auslösen
+    * fangen
 
 
 ===== Wichtige Hinweise zur Prüfung (erstellt mit Hilfe von ChatGPT) =====
