@@ -48,7 +48,7 @@ Ein paar Tipps:
   * Beachten Sie, dass gemäss Klassendiagramm max. 20 Studenten möglich sind. Das müssen Sie beim Zufügen von Studenten umsetzen. 
   * Beim Versuch mehr als 20 Studenten einzufügen, soll die Methode einen ''OverflowError'' werfen.
 
-=== count_student ===
+=== count_students ===
   * Gibt die Anzahl Studenten zurück.
 
 === take_student(index) ===
@@ -135,6 +135,9 @@ Initialisieren Sie das Attribut als leere Liste.
 === take_grade ===
   * Liefert die Note (''Grade'') beim angegebenen Index.
   * Bei einem ungültigen Index soll ein ''IndexError'' ausgelöst werden.
+
+=== count_grades ===
+  * Gibt die Anzahl Noten (''Grade'') zurück.
 
 === average ===
   * Die Methode berechnet den Notendurchschnitt aus allen ''Grade''-Objekten in der Liste.
