@@ -1,0 +1,86 @@
+====== LU03a - Grundlagen ======
+
+===== Einführung =====
+Das EVA-Prinzip in der Informatik beschreibt einen grundlegenden Ablauf, den nahezu jedes Computerprogramm und jede elektronische Datenverarbeitung durchläuft. EVA steht dabei für "Eingabe, Verarbeitung, Ausgabe" und fasst die drei wesentlichen Schritte der Datenverarbeitung zusammen.
+
+==== (E)VA - Die Eingabe ====
+Am Anfang jeder Datenverarbeitung steht die Eingabe von Informationen oder Daten. In der Informatik bezieht sich die Eingabe darauf, dass Daten oder Befehle von einem Benutzer, einem Sensor oder einem anderen System an den Computer weitergegeben werden.
+
+Beispiele für Eingabegeräte sind:
+
+  * Tastatur (zum Schreiben von Texten oder Befehlen)
+  * Maus (zur Steuerung eines Cursors auf dem Bildschirm)
+  * Scanner (zum Einlesen von Dokumenten)
+  * Mikrofon (zur Aufnahme von Sprache)
+  * Sensoren (zum Erfassen von Umweltfaktoren, wie z. B. Temperatur oder Bewegung)
+
+Die Eingabedaten können in verschiedenen Formen vorliegen, wie z. B. Text, Zahlen, Bilder oder Ton. Wichtig ist, dass sie vom Computer in eine für ihn verständliche Form, also in binäre Daten (0 und 1), umgewandelt werden.
+
+**Beispiel:** Du tippst auf einem Taschenrechner die Zahlen „2“ und „3“ ein, um eine Berechnung durchzuführen. Diese Zahlen sind die Eingabedaten.
+
+==== E(V)A - Die Verarbeitung ====
+Nachdem der Computer die Eingabedaten erhalten hat, erfolgt die Verarbeitung. Der Computer arbeitet dabei mit Hilfe eines Programms, das bestimmt, was mit den Eingabedaten geschehen soll. Dieser Schritt ist der zentrale Punkt der Datenverarbeitung.
+
+Die Verarbeitung kann einfache Aufgaben wie das Addieren von Zahlen umfassen, aber auch komplexere Aufgaben wie das Bearbeiten von Bildern, das Suchen nach Informationen in einer Datenbank oder das Steuern eines Roboters.
+
+Während der Verarbeitung:
+
+  * werden Berechnungen durchgeführt
+  * logische Entscheidungen getroffen
+  * Daten miteinander verglichen oder sortiert
+
+Verarbeiter sind zum Beispiel:
+
+  * Betriebssystem
+  * Hardware
+  * Software
+
+**Beispiel:** Du gibst auf dem Taschenrechner ein „+“ ein und drückst „=“. Der Taschenrechner verarbeitet nun die Eingabe „2 + 3“ und führt die Berechnung durch.
+
+==== EV(A) - Die Ausgabe ====
+
+Am Ende steht die Ausgabe der verarbeiteten Daten. Der Computer zeigt das Ergebnis entweder auf einem Bildschirm an, druckt es auf Papier oder gibt es in einer anderen Form, z. B. als Signal an ein anderes Gerät, weiter.
+
+Ausgabegeräte sind zum Beispiel:
+
+  * der Bildschirm (um Ergebnisse anzuzeigen),
+  * ein Drucker (um Dokumente auszudrucken),
+  * Lautsprecher (um Töne wiederzugeben),
+  * eine Netzwerkverbindung (um Daten an ein anderes Gerät zu senden).
+
+**Beispiel:** Nachdem der Taschenrechner „2 + 3“ verarbeitet hat, zeigt er das Ergebnis „5“ auf dem Display an. Das ist die Ausgabe.
+
+===== Das EVA-Prinzip in der Praxis =====
+
+In der täglichen Anwendung begegnen wir dem EVA-Prinzip ständig, auch wenn uns das oft nicht bewusst ist. Jedes Mal, wenn wir einen Computer oder ein elektronisches Gerät nutzen, läuft im Hintergrund dieser Prozess ab. Ein besonders greifbares Beispiel ist ein Geldautomat.
+
+Eingabe: Du steckst deine Bankkarte ein und tippst deine PIN ein.
+Verarbeitung: Der Geldautomat überprüft die PIN und führt die Transaktion durch.
+Ausgabe: Der Geldautomat gibt dir Bargeld aus und zeigt die Transaktionsdetails auf dem Bildschirm an.
+Dieses einfache Modell lässt sich auf fast alle digitalen Systeme anwenden und hilft, deren Funktionsweise besser zu verstehen.
+
+===== Spezialfall Eingabegerät = Ausgabegerät =====
+Es gibt einige Geräte, die sowohl für die Eingabe als auch für die Ausgabe von Daten verwendet werden können. Diese Geräte nennt man Eingabe-/Ausgabegeräte oder I/O-Geräte (Input/Output). Solche Geräte übernehmen sowohl die Aufgabe, Informationen an das Computersystem zu senden (Eingabe), als auch Daten vom Computersystem zu empfangen und dem Benutzer zur Verfügung zu stellen (Ausgabe).
+
+==== Beispiele für Eingabe-/Ausgabegeräte: ====
+
+=== Touchscreens ===
+
+Ein Touchscreen ist ein gutes Beispiel für ein Gerät, das sowohl Eingabe- als auch Ausgabefunktionen erfüllt. Der Bildschirm zeigt (Ausgabe) Informationen an, wie zum Beispiel ein Menü oder eine Tastatur. Gleichzeitig ermöglicht er dem Benutzer, durch Berühren des Bildschirms Daten einzugeben. Wenn du z. B. auf einem Smartphone eine Nachricht tippst, dient der Touchscreen sowohl als Eingabegerät (für die getippten Buchstaben) als auch als Ausgabegerät (um die Nachricht anzuzeigen).
+
+**Funktionen**
+
+  * Eingabe: Durch Berühren wird ein Befehl oder Text eingegeben.
+  * Ausgabe: Der Bildschirm zeigt Bilder, Texte oder Videos an.
+
+
+----
+
+=== Drucker mit Scanner (Multifunktionsdrucker) ===
+
+Ein Multifunktionsdrucker, der sowohl drucken als auch scannen kann, ist ebenfalls ein typisches I/O-Gerät. Als Drucker gibt er Daten auf Papier aus (Ausgabe), und als Scanner nimmt er Bilder oder Texte von Papier auf und gibt sie an den Computer weiter (Eingabe).
+
+**Funktionen**
+
+  * Eingabe: Der Scanner liest Dokumente oder Bilder ein und überträgt sie in digitaler Form an den Computer.
+  * Ausgabe: Der Drucker gibt digitale Dokumente in gedruckter Form aus.

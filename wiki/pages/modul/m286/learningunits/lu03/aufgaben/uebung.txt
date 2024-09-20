@@ -1,0 +1,18 @@
+====== LU03.A01 - Ein Bankomat mit dem EVA-Prinzip analysieren ======
+
+===== Ausgangslage =====
+Ein Bankomat weist unter anderem folgende Funktion auf:
+
+  * Bankomat-Karte einlesen und ausgeben
+  * PIN-Code eingeben (3 Versuche).
+  * Auswahl aus Menüpunkten haben (Ausloggen, Kontostand resp. Saldo anschauen, Geld abheben, Ausloggen)
+
+==== Aufgabenstellung ====
+  - Gehen Sie gedanklich 2-3 Interaktionen an einem Bankomat durch und ordnen Sie die Funktionen nach dem EVA-Prinzip ein. Welche Funktionen gehören zur Eingabe, welche zur Ausgabe und welche zur Verarbeitung.
+
+==== Rahmenbedingungen ====
+^ Was ^ Beschreibung ^
+| Produkt: | Ihre Antworten sind schriftlich verfasst. |
+| Zeit: | 10 Min. |
+| Sozialform: | Einzel- oder Partnerarbeit |
+| Arbeitsmittel: | Office oder Papier/Schreibzeug, Skript |

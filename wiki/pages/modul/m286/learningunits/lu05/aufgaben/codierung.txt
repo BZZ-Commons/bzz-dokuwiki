@@ -1,0 +1,19 @@
+====== LU05.A02 - Codierung von Symbolen ======
+
+===== Ausgangslage =====
+
+So wie Sie die Dezimalzahlen (0 bis 9) im binären Format darstellen (codieren) können, können Sie dasselbe auch mit Symbolen tun.
+
+===== Aufgabenstellung =====
+
+Codieren Sie effizient (sinnvolle Anzahl Binärziffern) die folgenden Symbole mit dem binären Alphabet:
+
+  * Spielkartensymbole (Blatt, Kreuz, Herz, Karo): ♠ ♣ ♥ ♦
+  * Sternzeichensymbole, also Steinbock ♑, Wassermann ♒ Fische ♓, Widder ♈ Stier ♉ Zwillinge ♊ Krebs ♋ Löwe ♌ Jungfrau ♍ Waage ♎ Skorpion ♏ Schütze ♐
+
+===== Rahmenbedingungen =====
+^ Was ^ Beschreibung ^
+| Produkt: | Ihre Antworten sind schriftlich verfasst. |
+| Zeit: | 20 Min. |
+| Sozialform: | Einzel- oder Partnerarbeit |
+| Arbeitsmittel: | Office oder Papier/Schreibzeug, Skript |
