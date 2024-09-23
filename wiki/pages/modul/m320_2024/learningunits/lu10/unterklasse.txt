@@ -1,0 +1,37 @@
+====== LU10d - Anpassen und Erweitern ======
+<nodisp>TODO SuMa, PrRe: @override aus Python >= 3.12 prüfen</nodisp>
+Das Konzept der Vererbung weist zwei grundlegende Aspekte betreffend der Auswirkungen auf die Programmausgestaltung aus. Eine Unterklasse kann Code erweitern oder Code in angepasster Form ausführen.
+===== Erweitern =====
+Das Wort "erweitern" sagt bereits klar aus, was hier Sache ist. 
+Eine Unterklasse erhält in diesem Fall zusätzliche Attribute und Methoden.
+
+==== Beispiel ====
+''SalaryAccount'' erweitert ''BankAccount'' um die Funktion für den Kontoüberzug. 
+Hier mit dem Attribut ''overdraw'' und der Property ''overdraw'' dargestellt.
+
+{{modul:m320:learningunits:lu06:theorie:lu07-abb1.6-erweitern.png?600|}}
+
+//Abb: Elemente einer erweiterten Klasse//
+
+Ein Objekt der Klasse ''SalaryAccount'' ist somit immer auch ein Objekt der Klasse ''BankAccount''. 
+
+<WRAP important>
+Bei der Vererbung weist die abgeleitet Klasse (Unterklasse) immer auch den Typ - die Klasse - der Oberklassen auf.
+</WRAP>
+
+===== Anpassen =====
+Wird in einer Unterklasse eine "Anpassung" vorgenommen, so heisst dies, dass eine gegebene Funktionalität (eine Methode) anders ausgeführt wird. 
+In der Fachsprache nennt man dies auch "**überschreiben**" (**overwriting**) einer Methode.
+----
+==== Beispiel ====
+''SalaryAccount'' überschreibt die Methode ''withdraw_money()'' aus ''BancAccount''. 
+So ist es nun möglich, durch den Aufruf der "gleichen" Methode - zumindest was den Namen der Methode betrifft - einen anderen Ablauf auszuführen. 
+Während ''BancAccount'' keine Bezüge zulässt, die zu einem negativen Saldo führen, kann ''SalaryAccount'' dies tun.
+
+{{modul:m320:learningunits:lu06:theorie:lu07-abb1.7-ueberschreiben.png?600|}}
+
+//Abb: Visualisierung des Überschreibens in einer abgeleiteten Klasse//
+
+----
+{{tag>M320-LU10}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] René Probst, bearbeitet durch Marcel Suter

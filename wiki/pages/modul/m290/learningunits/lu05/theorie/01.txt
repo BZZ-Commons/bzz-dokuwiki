@@ -1,26 +1,74 @@
-====== LU06a - SQL-DDL: DB Management - Under Construction ======
-
-**Source**: 
-  * [[https://www.w3schools.com/sql/sql_create_db.asp| CREATE DB]]
-  * [[https://www.w3schools.com/sql/sql_drop_db.asp|DROP DB]]
-  * [[https://www.w3schools.com/sql/sql_backup_db.asp|BACKUP DB]]
-
+====== LU06a - SQL-DDL: DB Management ======
 
 ===== Learning Objectives =====
-  - Create a database instances.
-  - Connect with the db-instance.
-  - Show all currently available instances.
-  - Drop/Delete existing databases.
-  - Make a backup of existing databases.
+In this session, we will learn some exciting details about how to properly manage our databases. To achieve this, we need to know more about ...
+  - How to create database instances.
+  - How to connect to the db-instance.
+  - How to display all currently available instances.
+  - How to delete obsolete databases.
+  - How to import prepared databases that are ready for immediate use.
 
+===== Access to the db with Webstorm code editor =====
+There are many ways how we can connect to our database installation. One way is from the terminal or commandline. Instead, during the module 290 we are going to use do the management with the code editor WEBSTORM, which is pictured below.
 
-===== Overview =====
-...
-  - ...
+  - New connection to our MySQL installation
+  - The already existing connections to our database
+  - New terminal window to the database to enter sql commands (leads to 4.)
+  - Terminal to the database to enter our SQL commands
+  - Execute button that sends the SQL command to the database
+
+{{:modul:m290:learningunits:lu05:theorie:webstorm_db_window.png?800|Webstorm db window}}
+
+===== Commands =====
+==== SHOW DATABASES ====
+Source: [[https://dev.mysql.com/doc/refman/8.4/en/show-databases.html|Alle verfügbaren Datenbanken anzeigen lassen]]
+
+To show all currently available datases we use the SHOW command. The basic syntax is as shown belon:
+
+   SHOW DATABASES;
+   
+After executing this command, we will receive the list of currently installed database instances, as shown in the following picture.
+
+{{:modul:m290:learningunits:lu05:theorie:showdatabases.png?400|Resultset}}
+
+==== CREATE DATABASES ====
+Source: [[https://www.w3schools.com/sql/sql_create_db.asp| CREATE DB]]
+
+A new application is basicly constructed within a new enviroment. Therefore we need to create a new database instance for us. To achive this, which is done by the following command syntax.
+
+  CREATE DATABASE myDatabase;
+  
+So, if we want to create a new database for a webshop of the customer "Demir", we need to type in:
+ 
+  CREATE DATABASE DemirsDB;
+  SHOW DATABASES;
+  
+After executing both commands, our result-set would look like:
+
+{{:modul:m290:learningunits:lu05:theorie:createshowdatabases.png?900| Create database + update result-set}}
+
+==== DROP DATABASES ====
+Source: [[https://www.w3schools.com/sql/sql_drop_db.asp|DROP DB]]
+
+It can happen, that our database is corrupted, obsolete or elsewise not required any more. Thus, we have to delete it, which is done by the command 
+
+  DROP DATABASE myDatabase;
+  
+So, if we want to delete demirsDB, we need to type in the following SQL commands.
+
+  DROP DATABASE demirsDB;
+  SHOW DATABASES;
+  
+After, executing both commands, the result-set would look like:
+
+{{:modul:m290:learningunits:lu05:theorie:dropshowdatabases.png?400|Drop database + show }}
+
+==== Using databases ====
+
 
 ==== Vocabulary ====
 ^English ^ Deutsch ^
-| ::: | ... |
+| Obsolete | veraltet |
 
 ----
 [[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

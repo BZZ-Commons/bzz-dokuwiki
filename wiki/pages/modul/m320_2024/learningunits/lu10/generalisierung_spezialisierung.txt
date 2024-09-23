@@ -1,0 +1,33 @@
+====== LU10b - Generalisierung / Spezialisierung ======
+===== Begriffe =====
+
+**Generalisierung** ist eines der Kernkonzepte der objektorientierten Programmierung. 
+Die objektorientierte Softwareentwicklung nutzt generalisierte Klassen und Objekte um gemeinsame Eigenschaften (Attribute) und Funktionen (Methoden) in logischen Einheiten zu bündeln.
+
+Aus Sicht einer Unterklasse oder auch abgeleiteten Klasse sprechen wir dann von **Spezialisierung**, weil sie gewisse Fähigekiten zusätzlich oder in spezifischer Art ausführen kann.
+
+{{modul:m320:learningunits:lu06:theorie:lu07-abb1.4-generalisierung.png?500|}}
+
+//Abb: Generalisierung / Spezialisierung am Beispiel von Transportmitteln.// 
+
+Die Vererbung wird auch gerne als **IS-A**-Beziehung (ist ein) bezeichnet. Nur wenn man diese Aussage anwenden kann, handelt es sich um eine Vererbung im engen Sinn des Wortes.
+
+An Hand einiger Beispiel soll die IS-A-Beziehung verdeutlicht werden.
+
+==== Beispiele ====
+Korrekte is-a Beziehungen:
+  * Auto ist ein (is a) Verkehrsmittel.
+  * Hund ist ein Tier.
+  * PET ist ein Kunststoff
+  * Tisch ist ein Möbel
+  * Fussball ist ein Ball ist ein Spielmittel
+
+=== ABER ===
+
+  * Zoo ist ein Tier -> ist falsch! \\Zoo "enthält" Tiere, ist dann korrekt. Hier handelt es sich also um eine Aggregation. Diesen Begriff werden wir später noch vertieft betrachten.
+  * Verkehrsmittel ist ein Auto -> ist falsch! \\ Hier ist die Hierarchie umgedreht. Auto ist die Spezialisierung von Verkehrsmittel.
+ 
+----
+
+{{tag>M320-LU10}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] René Probst, bearbeitet durch Marcel Suter

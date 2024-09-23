@@ -1,0 +1,16 @@
+====== LU10.A02: Klassendiagramm mit diversen Beziehungen ======
+<WRAP center round todo 60%>
+Sie können die Beziehungen einer Menge von zusammengehörender Begriffe sinnvoll festlegen.
+</WRAP>
+
+==== Auftrag ====
+Erstellen Sie zu den gegebenen Begriffen ein korrektes Klassendiagramm. Achten
+Sie darauf, wann es sich um eine Vererbungsbeziehung (is a) und wann um eine
+„normale“ Assoziation (einseitig, zweiseitig, Aggregation usw.) handelt.
+   * Dokument / Seite / Zeitung / Buch / Artikel / Zeitschrift / Autor / Text / Titel
+==== Abgabe ====
+Halten Sie Ihre Beschreibung in einem Textdokument fest, das Sie dann als PDF-Datei im Moodle-Kurs abgeben.
+
+----
+{{tag>M320-LU10}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] René Probst, bearbeitet durch Marcel Suter

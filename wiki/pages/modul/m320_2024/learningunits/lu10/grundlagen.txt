@@ -1,0 +1,37 @@
+====== LU10a - Grundlagen der Vererbung ======
+Unter dem Stichwort Vererbung erhält man i.d.R. eine Beschreibung der biologischen Vererbung: 
+"Als Vererbung wird die Weitergabe von Merkmalen und Eigenschaften von der Elterngeneration auf nachfolgende Generationen bezeichnet. 
+Diese Weitergabe spielt sich auf genetischer Ebene ab. Die Wissenschaft, die sich mit der Vererbung beschäftigt, wird als Genetik bezeichnet." (https://flexikon.doccheck.com/)\\
+Für die objektorientierte Programmierung kann der Textausschnitt **Weitergabe von Merkmalen und Eigenschaften** eins-zu-eins übernommen werden.
+
+===== Beispiel "BankAccount" =====
+
+Gegeben ist ein Klasse ''BankAccount'' nach folgendem Klassendiagramm:
+
+{{modul:m320:learningunits:lu06:theorie:lu07-abb1.1-oberklasse.png?425|}}
+
+//Abb: Oberklasse ''BancAccount''//
+
+Um nun ein Lohnkonto zu realisieren, braucht es eine Klasse, die genau die gleichen Eigenschaften und Fähigkeiten wie ''BankAccount'' aufweist, aber dazu noch einige weitere Aspekte bietet. 
+So z.B. die Möglichkeit, das Konto bis zu einem bestimmten Betrag überziehen zu können, also einen negativen Saldo zu haben. 
+
+Anstatt nun eine neue Klasse zu erstellen, die eine erweiterte Kopie der Klasse ''BancAccount'' ist, erstellen wir eine Klasse, die von ''BankAccount'' erbt und die zusätzlichen Eigenschaften und Fähigkeiten noch ergänzt.
+
+In diesem Zusammenhang spricht man von **erweitern einer Klasse**. 
+Das entsprechende Klassendiagramm sieht dann wie folgt aus:
+
+{{modul:m320:learningunits:lu06:theorie:lu07-abb1.2-unterklasse.png?500|}}
+
+//Abb: Unterklasse ''SalaryAccount''//
+
+Eine Unterklasse weist also die Eigenschaften (Attribute) und Fähigkeiten (Methoden) der Oberklasse auf, bzw. kann diese nutzen und fügt weitere Eigenschaften und Fähigkeiten bei.
+
+Bezogen auf die reale Welt gibt es vergleichbare Konzepte. Hier ein etwas vereinfacht dargestelltes Beispiel.
+
+{{modul:m320:learningunits:lu06:theorie:lu07-abb1.3-vererbung_reale_welt.png?400|}}
+
+//Abb: Vererbung im Sinn der OO-Technik in der realen Welt//
+
+----
+{{tag>M320-LU10}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] René Probst, bearbeitet durch Marcel Suter

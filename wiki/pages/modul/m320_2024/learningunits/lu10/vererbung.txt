@@ -1,0 +1,13 @@
+====== LU10c - Vererbung in UML und Python ======
+{{:modul:m320:learningunits:lu06:theorie:lu06-abb6.5-vererbung_uml.png?800|}}
+
+//Abb: Vererbung in UML-Darstellung//
+
+
+==== protected Attribute ====
+Attribute in der Oberklasse, welche auch in der Unterklasse direkt zugeifbar sein müssen, werden als **protected** (geschützt) deklariert.
+In UML wird dies mit dem Zeichen **#** signalisiert.
+
+----
+{{tag>M320-LU10}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] René Probst, bearbeitet durch Marcel Suter
