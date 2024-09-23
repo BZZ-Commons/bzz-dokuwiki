@@ -23,7 +23,7 @@ Extend the the result of the Select statement from assignment a), so that it mus
 There are two possible solutions. 
 
 **b1)**
-The first one is to to search for the ID (SupplierID = 20) of the supplier and take that ID into our SELECT as follows:  
+The first assignment is to search for the ID (SupplierID = 20) of the supplier and take that ID into our SELECT as follows:  
 
   SELECT s.SupplierName, s.SupplierID, s.phone,  p.ProductID, p.ProductName, p.Unit, p.Price
   FROM Suppliers s, Products p
