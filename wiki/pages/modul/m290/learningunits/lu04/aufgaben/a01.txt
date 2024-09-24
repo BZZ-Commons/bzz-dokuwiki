@@ -13,7 +13,7 @@ Go to the W3-Schools SQL Editore and develop DQL commands to the following requi
 
 ===== Assignments =====
 
-  * a) Create a adress-list of the customers with the columns in this order: CustomerName, Adress, PostalCode, Country, ordered by the the Country ascending.
+  * a) Create a address-list of the customers with the columns in this order: CustomerName, Adress, PostalCode, Country, ordered by the the Country ascending.
   * b) Generate a list with ProductNames, Price and SupplierIDs within a price range of 20 and 45, sorted the Price and SupplierID, both ascending.
   * c) Find all employees who graduated from a university. The relevant information is hidden in the table Employees, within the colums Notes.
 

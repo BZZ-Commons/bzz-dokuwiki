@@ -1,7 +1,7 @@
 ====== LU05.S01 - SQL-DQL: Select from one table ======
 
 ====Assignment a) ====
-Create a adress-list of the customers with the columns in this order: CustomerName, Adress, PostalCode, Country, ordered by the the Country ascending.
+Create a address-list of the customers with the columns in this order: CustomerName, Address, PostalCode, Country, ordered by the the Country ascending.
 
   Select CustomerName, Address, PostalCode, Country
   from customers
