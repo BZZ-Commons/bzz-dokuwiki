@@ -3,7 +3,7 @@
 Schreibe ein Programm, das die Fakultät einer Zahl berechnet.
 </WRAP>
 
-Die Fakultät von n, bezeichnet als ''n!'', wird berechnet als 1 * 2 * 3 * ... * n. Zum Beispiel ist die Fakultät von 4 24 oder 4! = 1 * 2 * 3 * 4 = 24. Außerdem wurde festgelegt, dass die Fakultät von 0 gleich 1 ist, also 0! = 1.
+Die Fakultät von n, bezeichnet als ''n!'', wird berechnet als 1 * 2 * 3 * ... * n. Zum Beispiel ist die Fakultät von 4 24 oder 4! = 1 * 2 * 3 * 4 = 24. Außerdem wurde festgelegt, dass die Fakultät von 0 gleich 1 ist, also **0! = 1**.
 
 
 <WRAP center round help 60%>

@@ -9,7 +9,7 @@ Erstelle ein Programm, dass die Erbschaftssteuer berechnet.
 Verschenkt eine Person vor Ihrem Tod Geld, so muss eine Erbschaftssteuer bezahlt werden.
 Ausgenommen sind:
   * Schenkungen die mehr als 7 Jahre oder mehr vor dem Tod erfolgt sind.
-  * Ein Betrag bis 325'000 £.
+  * Es gilt immer ein Freibetrag von 325'000 £ (Dieser wird vor dem Berechnen vom Steuerbetrag abgezogen).
 
 Wenn Erbschaftssteuer zu zahlen ist, gilt der Steuersatz gemäss der folgenden Tabelle angewendet.
 
