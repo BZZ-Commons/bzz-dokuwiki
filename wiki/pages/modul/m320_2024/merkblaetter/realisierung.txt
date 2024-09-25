@@ -17,7 +17,7 @@ Manchmal lohnt es sich, Teile einer Methode nur zu simulieren:
 
 Angenommen Ihnen stehen Unittests (z.B. Pytests) zur Verfügung, um Ihren Code zu prüfen.
 Dann schauen Sie, welche Tests zu Ihrer Teilaufgabe passen:
-  
+
   * Welcher Test bzw. welche Tests prüfen, ob ich die Teilaufgabe korrekt erledigt habe?
 
 ===== Studiere die Schnittstellen =====
@@ -36,7 +36,7 @@ Nach jeder Teilaufgabe (z.B. eine Methode, eine einzelner Programmblock) den Sie
 Sobald eine Methode fehlerfrei läuft (Unittests), führen Sie einen Push durch.
 
 <WRAP center round alert 60%>
-Führen Sie niemals einen Push durch mit Programmcode der nicht lauffähig ist!
+Führen Sie niemals einen Push mit einer Version des Programmcode durch, die nicht lauffähig ist!
 </WRAP>
 
 ===== Nutze den Debugger =====

@@ -18,7 +18,7 @@ Compare both terms, ERM and ERD,  and describe the purpose of each, and find at 
   * Purpose: construction plan, ready to build up the data-base physically
 
 **Similarties**
-  * Both notation method are used to describe the data-base structure of the business cases
+  * Both notation methods are used to describe the data-base structure of the business cases
   * Entity = rectangle
   * Cardinalities: 1:1, 1:n, n:m
   * Entities have attributes
@@ -27,16 +27,11 @@ Compare both terms, ERM and ERD,  and describe the purpose of each, and find at 
   * Relations:
     * ERM: rhomb
     * ERD: relalation-table
-    * ERD: Attributes have not data-types
     * ERD: Described in the Crow's foot notation
   * Attributes: 
     * ERM: bubbles above, which are connected with the entity
     * ERD: As details in the Entity, including data-type
     * ERD: Memory amount is describes within the data-type defintion
-
-
-
-
 
 ===== Vocabulary =====
 ^ English ^ German ^ 

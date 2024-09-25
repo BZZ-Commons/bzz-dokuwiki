@@ -1,16 +1,101 @@
-====== LU06b - SQL-DDL: Table Management - Under Construction ======
+====== LU06b - SQL-DDL: Table Management ======
 
 **Source**: 
   * [[https://www.w3schools.com/sql/sql_create_table.asp|CREATE TABLE]]
-  * [[https://www.w3schools.com/sql/sql_drop_table.asp|DROP TABLE]]
   * [[https://www.w3schools.com/sql/sql_alter.asp|ALTER TABLE]]
-
+  * [[https://www.w3schools.com/sql/sql_drop_table.asp|DROP TABLE]]
+ 
 ===== Learning Objectives =====
-  - ...
+In this learning unit, we will learn how to manage database tables, i.e. 
+  -how to create
+  -how to modify and 
+  -how to delete database tables
 
-===== Overview =====
-...
-  - ...
+===== CREATE TABLE =====
+Let's start by creating a table based on the ERD of the student management tool, as shown below:
+
+Our goal is to create the table "stundent" on our database. For that we need to know how the basic syntax for creating table is.
+
+  CREATE TABLE table_name (
+      column1 datatype,
+      column2 datatype,
+      column3 datatype,
+     ....
+  );
+
+In our example the our concrete CREATE statement would look like:
+''
+  CREATE TABLE student (
+    stundent_id INT,
+    name VARCHAR(50),
+    surname VARCHAR(50),
+    birthdate DATE,
+    matrno CHAR(6)
+  );
+  
+After executing the DDL create command, the result would look like the following illustration. 
+
+{{:modul:m290:learningunits:lu05:theorie:m290_lu06b.abb2.png?600|}}
+
+**Hints:** 
+  * On the right upper side you can see, that the table "student" has actually been created. 
+  * After a select on this table, we can see that the table does not yet contain any data.
+  * It's not a big deal so far, is it? 8-).
+
+===== ALTER TABLE =====
+It may happen that we need to change something, e.g. the change the attribute name or add a new attribute. In this case, the ALTER TABLE commands will do the work.
+
+The basic syntax of the DDL "ALTER TABLE" syntax is:
+
+  ALTER TABLE table_name
+  ADD column_name datatype;
+  
+==== ADD COLUMN ====
+In practical use, if we want to add an email to the student's data our SQL command would look like:
+
+  ALTER TABLE student
+  ADD Email varchar(255);
+  
+==== DROP COLUMN ====
+If we can add a column, it should come as no surprise that we also can delete a column. The syntax for deleting an entire column from a table is:
+
+  ALTER TABLE table_name
+  DROP COLUMN column_name;
+  
+The following DDL statement removes the currently added column email from the table student.
+  
+  ALTER TABLE Customers
+  DROP COLUMN Email;
+
+==== RENAME COLUMN ====
+Naturally, we also can just rename a wrongly spelled column name. The syntax in that case is:
+  
+  ALTER TABLE table_name
+  RENAME COLUMN old_name to new_name;
+ 
+Or more practical, if we want to change the name of the column  matrno in studentno, we need the following DDL command:
+
+  ALTER TABLE student
+  RENAME COLUMN matrno to studentno;
+  
+==== MODIFY DATATYPE ====
+We also can change the datatype of colums. The basic syntax would be: 
+
+  ALTER TABLE table_name
+  ALTER COLUMN column_name datatype;
+  
+And of course, as a concrete practical example, in which we change the length of the column name from 50 characters to 100:
+ 
+  ALTER TABLE student
+  MODIFY COLUMN name VARCHAR(100);
+  
+===== DROP TABLE =====
+If we created a table wrongly or want to get rid of a obsolete table we need the DROP TABLE command:
+
+  DROP TABLE table_name;
+
+**Hint:**
+  * Be careful with this command, as it also deletes the entire contents of this table.
 
 ==== Vocabulary ====
 ^English ^ Deutsch ^
