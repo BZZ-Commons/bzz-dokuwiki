@@ -81,7 +81,8 @@ Die Methode erzeugt selber keine Liste, sie ruft lediglich eine Methode in einem
 ==== Student ====
 === Konstruktor ===
   * Beachten Sie die Parameter und Defaultwerte.
-
+=== show_report ===
+Gibt das Attribut ''report'' zurück.
 
 ==== StudentReport ====
 

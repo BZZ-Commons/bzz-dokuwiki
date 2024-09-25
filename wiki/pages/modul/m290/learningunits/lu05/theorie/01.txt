@@ -1,23 +1,23 @@
 ====== LU06a - SQL-DDL: DB Management ======
 
 ===== Learning Objectives =====
-In this session, we will learn some exciting details about how to properly manage our databases. To achieve this, we need to know more about ...
+In this session, we will learn some thrilling details about how to properly manage our databases. To achieve this, we need to know more about:
   - How to create database instances.
-  - How to connect to the db-instance.
   - How to display all currently available instances.
-  - How to delete obsolete databases.
-  - How to import prepared databases that are ready for immediate use.
+  - How to connect to one specific db-instance.
+  - how you can delete obsolete or no longer required databases.
+  - How to import pre-pared databases that are ready for immediate use.
 
 ===== Access to the db with Webstorm code editor =====
-There are many ways how we can connect to our database installation. One way is from the terminal or commandline. Instead, during the module 290 we are going to use do the management with the code editor WEBSTORM, which is pictured below.
+There are many ways how we can connect to our database instance. One way is from the terminal or commandline. Instead, during the module 290 we are going to use do the management with the code editor WEBSTORM, which is pictured below.
 
-  - New connection to our MySQL installation
-  - The already existing connections to our database
+  - New connection to our MySQL database system
+  - The already existing connections to our database instance
   - New terminal window to the database to enter sql commands (leads to 4.)
   - Terminal to the database to enter our SQL commands
   - Execute button that sends the SQL command to the database
 
-{{:modul:m290:learningunits:lu05:theorie:webstorm_db_window.png?800|Webstorm db window}}
+{{:modul:m290:learningunits:lu05:theorie:webstorm_db_window.png?700|Webstorm db window}}
 
 ===== Commands =====
 ==== SHOW DATABASES ====
@@ -29,23 +29,23 @@ To show all currently available datases we use the SHOW command. The basic synta
    
 After executing this command, we will receive the list of currently installed database instances, as shown in the following picture.
 
-{{:modul:m290:learningunits:lu05:theorie:showdatabases.png?400|Resultset}}
+{{:modul:m290:learningunits:lu05:theorie:showdatabases.png?300|Resultset}}
 
 ==== CREATE DATABASES ====
-Source: [[https://www.w3schools.com/sql/sql_create_db.asp| CREATE DB]]
+Source: [[https://www.w3schools.com/sql/sql_create_db.asp?200| CREATE DB]]
 
 A new application is basicly constructed within a new enviroment. Therefore we need to create a new database instance for us. To achive this, which is done by the following command syntax.
 
   CREATE DATABASE myDatabase;
   
-So, if we want to create a new database for a webshop of the customer "Demir", we need to type in:
- 
+So, if we want to create a new database for a webshop for our customer "Demir", we need to type in:
+
   CREATE DATABASE DemirsDB;
   SHOW DATABASES;
   
 After executing both commands, our result-set would look like:
 
-{{:modul:m290:learningunits:lu05:theorie:createshowdatabases.png?900| Create database + update result-set}}
+{{:modul:m290:learningunits:lu05:theorie:createshowdatabases.png?300| Create database + update result-set}}
 
 ==== DROP DATABASES ====
 Source: [[https://www.w3schools.com/sql/sql_drop_db.asp|DROP DB]]
@@ -61,14 +61,21 @@ So, if we want to delete demirsDB, we need to type in the following SQL commands
   
 After, executing both commands, the result-set would look like:
 
-{{:modul:m290:learningunits:lu05:theorie:dropshowdatabases.png?400|Drop database + show }}
+{{:modul:m290:learningunits:lu05:theorie:dropshowdatabases.png?300|Drop database + show }}
 
 ==== Using databases ====
+Most database systems usually have more than one instance (project areas) running, e.g. DIGITECH.CH and GALAXUS.CH, these two database instances (storage areas for different purposes) are running on the same database systems, but organize their data separately. 
 
+As a database administrator, we cannot work on different instances at the same time, so we have to choose which instance we actually want to work on. The SQL statement in question is the USE command.
+
+As a database administrator, we cannot work on different instances at the same time, so we have to choose which instance we actually want to work on. The SQL statement in question is the USE command.
+
+{{:modul:m290:learningunits:lu05:theorie:usedatabases.png?300|}}
 
 ==== Vocabulary ====
 ^English ^ Deutsch ^
 | Obsolete | veraltet |
+| result-set | Ergebnismenge |
 
 ----
 [[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

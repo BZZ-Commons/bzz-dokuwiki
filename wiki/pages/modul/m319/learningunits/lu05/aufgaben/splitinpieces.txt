@@ -22,10 +22,19 @@ Dieses Vorgehen wird beim Programmieren immer dringend empfohlen.
 Bei dieser Aufgabe sind die einzelnen Arbeitschritte als Issues in deinem GitHub Repository festgehalten.
 Mit Issues in unserem GitHub Repository können wir offene Punkte und Fehler dort verwalten, wo auch der Sourcecode ist.
 
+{{:modul:m319:learningunits:lu05:aufgaben:issues.png?600|}}
+
 Du kannst erledigte Issues automatisch schliessen, wenn du in der Commit Message ''resolves #n'' angibst (wobei ''n'' die Nummer des Issues auf GitHub ist).
-Dadurch wird der Commit mit den relevanten Issues verknüpft, was die Übersicht noch weiter erhöht.
+
+{{:modul:m319:learningunits:lu05:aufgaben:resolves.png?600|}}
+
+Dadurch wird der Commit mit den relevanten Issues verknüpft und geschlossen, was die Übersicht noch weiter erhöht.
+
+{{:undefined:closed.png?600|}}
+
 Natürlich werden die Issues erst aktualisiert, wenn du einen Push durchführst.
  
+
 ===== Vorgehen =====
 
   - Akzeptiere das GitHub Classroom Assignment im Moodlekurs.
