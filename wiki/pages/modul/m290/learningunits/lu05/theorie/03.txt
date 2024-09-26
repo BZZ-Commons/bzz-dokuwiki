@@ -1,14 +1,16 @@
 ====== LU06c - SQL-DDL: Constraint Management - Under Construction ======
 
 **Source**: 
-  * [[https://www.w3schools.com/sql/sql_constraints.asp|Overview]]
-  * [[https://www.w3schools.com/sql/sql_notnull.asp|NOT NULL]]
-  * [[https://www.w3schools.com/sql/sql_unique.asp|UNIQUE]]
-  * [[https://www.w3schools.com/sql/sql_primarykey.asp|PRIMARY KEY]]
-  * [[https://www.w3schools.com/sql/sql_foreignkey.asp|FOREIGN KEY]] 
+  * [[https://www.w3schools.com/sql/sql_constraints.asp | W3Schools | Constraints | Overview]]
+  * [[https://www.w3schools.com/sql/sql_foreignkey.asp| W3Schools | Constraints | FOREIGN KEY]] 
+  * [[https://www.w3schools.com/sql/sql_primarykey.asp| W3Schools | Constraints | PRIMARY KEY]]
+  * [[https://www.w3schools.com/sql/sql_notnull.asp | W3Schools | Constraints | NOT NULL]]
+  * [[https://www.w3schools.com/sql/sql_unique.asp | W3Schools | Constraints | UNIQUE]]
 
 ===== Learning Objectives =====
-  - ...
+  - Discuss what database Constraints are and for they are needed
+  - Explain the four most important CONSTRAINTS in database systems
+  - Apply constraints to entity and realation tables in databases
 
 ===== Overview =====
 ...

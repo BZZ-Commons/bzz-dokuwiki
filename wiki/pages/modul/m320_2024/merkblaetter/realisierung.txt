@@ -32,11 +32,11 @@ Wenn Sie die Schnittstelle falsch umsetzen, wird die Methode nie korrekt laufen.
 Ein Commit stellt eine Art Backup unseres Repositories dar.
 Dadurch können wir jederzeit zum letzten korrekten Zustand zurück kehren, falls mal etwas richtig schief läuft.
 
-Nach jeder Teilaufgabe (z.B. eine Methode, eine einzelner Programmblock) den Sie korrekt umgesetzt haben, erstellen Sie einen Commit.
+Nach jeder Teilaufgabe (z.B. eine Methode, eine einzelner Programmblock) die Sie korrekt umgesetzt haben, erstellen Sie einen Commit.
 Sobald eine Methode fehlerfrei läuft (Unittests), führen Sie einen Push durch.
 
 <WRAP center round alert 60%>
-Führen Sie niemals einen Push mit einer Version des Programmcode durch, die nicht lauffähig ist!
+Führen Sie niemals einen Push mit einer nicht lauffähigen Version des Programmcodes durch!
 </WRAP>
 
 ===== Nutze den Debugger =====

@@ -14,7 +14,7 @@ In this learning unit, we will learn how to manage database tables, i.e.
 ===== CREATE TABLE =====
 Let's start by creating a table based on the ERD of the student management tool, as shown below:
 
-Our goal is to create the table "stundent" on our database. For that we need to know how the basic syntax for creating table is.
+Our goal is to create the table "stundent" in our database. For that we need to know how the basic syntax for creating of table is.
 
   CREATE TABLE table_name (
       column1 datatype,
@@ -84,22 +84,21 @@ We also can change the datatype of colums. The basic syntax would be:
   ALTER TABLE table_name
   ALTER COLUMN column_name datatype;
   
-And of course, as a concrete practical example, in which we change the length of the column name from 50 characters to 100:
+And of course, as a concrete practical example, in which we change the length of the column "name" from 50 characters to 100:
  
   ALTER TABLE student
   MODIFY COLUMN name VARCHAR(100);
   
 ===== DROP TABLE =====
-If we created a table wrongly or want to get rid of a obsolete table we need the DROP TABLE command:
+If, for whatever reason, we have created a table incorrectly or want to get rid of an obsolete table, we need the command DROP TABLE:
 
   DROP TABLE table_name;
 
-**Hint:**
-  * Be careful with this command, as it also deletes the entire contents of this table.
+**Hint: <color #ed1c24>Be careful with this command, as it also deletes the entire contents of this table.</color>**
 
 ==== Vocabulary ====
 ^English ^ Deutsch ^
-| ::: | ... |
+| column | Spalte |
 
 ----
 [[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir
