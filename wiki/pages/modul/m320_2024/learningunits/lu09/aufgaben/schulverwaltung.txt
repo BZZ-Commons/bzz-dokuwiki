@@ -1,5 +1,5 @@
 ====== LU09.A01 - Schulverwaltung ======
-
+<nodisp>TODO: ''show_report'' in ''Student'' entfernen. Die Methode macht das gleiche wie das ''property''</nodisp>
 <WRAP center round todo 60%>
 
 Sie können in einer komplexen Anwendung selbständig 
@@ -82,7 +82,7 @@ Die Methode erzeugt selber keine Liste, sie ruft lediglich eine Methode in einem
 === Konstruktor ===
   * Beachten Sie die Parameter und Defaultwerte.
 === show_report ===
-Gibt das Attribut ''report'' zurück.
+Gibt die Referenz auf das ''report''-Objekt aus dem Attribut zurück.
 
 ==== StudentReport ====
 

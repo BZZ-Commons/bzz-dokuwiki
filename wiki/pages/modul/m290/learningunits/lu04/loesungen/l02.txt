@@ -48,7 +48,7 @@ We would like to know what products the customer "Hanari Carnes" has ordered in 
 **c1)**
 Like in assignment b) here a two approaches possible: 1. find the customerID (34) and select according to the customer id.
 
-  select c.CustomerID, c.CustomerName , o.OrderID, o.orderDate, od.Quantity, p.ProductName, ct.CategoryName
+  SELECT c.CustomerID, c.CustomerName, o.OrderID, o.orderDate, od.Quantity, p.ProductName, ct.CategoryName
   FROM customers c, orders o, OrderDetails od, Products p, Categories ct
   WHERE c.CustomerID = o.CustomerID
   AND o.OrderID = od.OrderID
@@ -60,13 +60,13 @@ Like in assignment b) here a two approaches possible: 1. find the customerID (34
 **C1)**
 The second approach, as in b2), is to filter the result set directly by customer name.
 
-  select c.CustomerID, c.CustomerName , o.OrderID, o.orderDate, od.Quantity, p.ProductName, ct.CategoryName
+  SELECT c.CustomerID, c.CustomerName, o.OrderID, o.orderDate, od.Quantity, p.ProductName, ct.CategoryName
   FROM customers c, orders o, OrderDetails od, Products p, Categories ct
   WHERE c.CustomerID = o.CustomerID
   AND o.OrderID = od.OrderID
   AND od.ProductID = p.ProductID
   AND p.CategoryID = ct.CategoryID
-  AND c.CustomerName = "Hanari Kanes"
+  AND c.CustomerName = "Hanari Carnes"
   ORDER BY od.Quantity;    
   
   The result set is in both cases as shown in the following figure.
