@@ -9,7 +9,7 @@ The following ERD describes a order database for a a shop.
 ===== Assignments =====
 The general assignment is to develop DQL commands that matches the requirements below:
 
-==== Assignment a) ====
+==== Assignment A ====
 We need a list with product details as following: Name of the supplier, Supplier phone, Product ID, Name of the product, units, price. The list must be be sorted by SupplierName in descending order.
 
   SELECT s.SupplierName, s.SupplierID, s.phone,  p.ProductID, p.ProductName, p.Unit, p.Price
@@ -17,12 +17,12 @@ We need a list with product details as following: Name of the supplier, Supplier
   WHERE p.SupplierID = s.SupplierID
   ORDER BY s.SupplierName DESC;
 
-==== Assignment b) ====
+==== Assignment B ====
 Extend the the result of the Select statement from assignment a), so that it must contain only produtcs of the supplier "Leka Trading". 
 
 There are two possible solutions. 
 
-**b1)**
+**B1)**
 The first assignment is to search for the ID (SupplierID = 20) of the supplier and take that ID into our SELECT as follows:  
 
   SELECT s.SupplierName, s.SupplierID, s.phone,  p.ProductID, p.ProductName, p.Unit, p.Price
@@ -30,22 +30,22 @@ The first assignment is to search for the ID (SupplierID = 20) of the supplier a
   WHERE p.SupplierID = s.SupplierID
   AND s.SupplierID = 20;
 
-**b2)** 
+**B2)** 
 The second solution takes the name directly into the SELECT statement:  
 
   SELECT s.SupplierName, s.SupplierID, s.phone,  p.ProductID, p.ProductName, p.Unit, p.Price
   FROM Suppliers s, Products p
   WHERE p.SupplierID = s.SupplierID
   AND s.SupplierName = 'Leka Trading';
-
+  
 The result set is in both cases, as the figure below shows: 
 
 {{:modul:m290:learningunits:lu04:aufgaben:screenshot_2024-09-03_134335.png?600|}}
   
-==== Assigmment c) ====
+==== Assigmment C ====
 We would like to know what products the customer "Hanari Carnes" has ordered in the past. Sort the list by the quantity. In detail we require the following data: CustomerID, CustomerName, OrderID, OorderDate, Quantity, ProductName, CategoryName 
 
-**c1)**
+**C1)**
 Like in assignment b) here a two approaches possible: 1. find the customerID (34) and select according to the customer id.
 
   SELECT c.CustomerID, c.CustomerName, o.OrderID, o.orderDate, od.Quantity, p.ProductName, ct.CategoryName
@@ -57,8 +57,8 @@ Like in assignment b) here a two approaches possible: 1. find the customerID (34
   AND c.CustomerID = 34
   ORDER BY od.Quantity;
 
-**C1)**
-The second approach, as in b2), is to filter the result set directly by customer name.
+**C2)**
+The second approach, as in B2), is to filter the result set directly by customer name.
 
   SELECT c.CustomerID, c.CustomerName, o.OrderID, o.orderDate, od.Quantity, p.ProductName, ct.CategoryName
   FROM customers c, orders o, OrderDetails od, Products p, Categories ct
@@ -69,12 +69,12 @@ The second approach, as in b2), is to filter the result set directly by customer
   AND c.CustomerName = "Hanari Carnes"
   ORDER BY od.Quantity;    
   
-  The result set is in both cases as shown in the following figure.
+The result set is in both cases as shown in the following figure.
   
 {{:modul:m290:learningunits:lu04:aufgaben:screenshot_2024-09-03_143510.png?600|}}
   
 ===== Solution =====
-[[modul:m290:learningunits:lu04:loesungen:l02|Lösung]]
+[[modul:m290:learningunits:lu04:loesungen:l04|Lösung]]
 
 
 ===== Vocabulary =====

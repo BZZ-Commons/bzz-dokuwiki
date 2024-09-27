@@ -16,7 +16,7 @@ The following ERD describes a order database for a a shop.
 ===== Assignments =====
 The general assignment is to develop DQL commands that matches the requirements below:
 
-==== Assignment a) ====
+==== Assignment A ====
 We need a list with product details as following:
   * Name of the supplier
   * Supplier phone 
@@ -27,10 +27,10 @@ We need a list with product details as following:
 The list must be be sorted by the suppliername in descending order.
 
 
-==== Assignment b) ====
+==== Assignment B ====
 Extend the the result of the Select statement from assignment a), so that it must contain only produtcs of the supplier "Leka Trading". 
 
-==== Assignment c) ====  
+==== Assignment C ====  
 We would like to know what products the customer "Hanari Carnes" has ordered in the past. Sort the list by the quantity. detail we require the following data: 
   * CustomerID
   * CustomerName

@@ -1,48 +1,64 @@
 ====== LU05.S03 - SQL-DQL: Selects with Aggregate Functions ======
 
-==== Assignment a: MIN ====
-We want to know which of our products is actually the most expensive.
+==== A: MIN ====
+We want to know which of our products actually the cheapest is.
 
-  SELECT max(price)
+  SELECT min(price)
   FROM Products;
+  
+**Result from DB:**
+2.5 
 
-==== Assignment b: MAX ====
-What is the lowest price for the products of the supplier with id = 12?
+
+
+==== B: MAX ====
+What is the highest price for the products of the supplier with id = 12?
 
   SELECT max(price) 
   FROM Products
   WHERE SupplierID = 12;
+  
+**Result from the DB:** 123.79 
 
-==== Assignment c: AVG ====
+==== c: AVG ====
 What is the average price for products of supplier 3?
 
   SELECT AVG(price) 
   FROM Products
   WHERE SupplierID = 3;
+  
+**Result from the db:** 31.6667 
 
-==== Assignment d: AVG ====
+==== D: COUNT ====
 How many orders do we currently have in our data-base system from the customer with id = 5?
 
   SELECT count(customerID)
   FROM Orders
   where customerID = 5;
   
-==== Assignment e: SUM ====
+**Result from the db:** 3
+==== E: SUM ====
 What is the worth of the order 10255? Please note, that there are two tables involved in this select statement.
 
   SELECT sum(price*quantity)
   FROM OrderDetails, Products
   WHERE orderDetails.OrderID = 10255
   AND OrderDetails.ProductID = Products.ProductID;
+  
+**Result from the db:** 3115.75 
 
-==== Assignment f: GROUP BY ====
+==== F: GROUP BY ====
 For our anual report we need list of the orders, and the value of each, grouped by the OrderID.
 
-  SELECT sum(price*quantity)
+  SELECT OrderDetails.orderID, sum(price*quantity)
   FROM OrderDetails, Products
-  WHERE orderDetails.OrderID = 10255
-  AND OrderDetails.ProductID = Products.ProductID;
+  WHERE OrderDetails.ProductID = Products.ProductID
+  GROUP BY OrderDetails.orderid;
+  
+*** Result from the db:**
 
+{{:modul:m290:learningunits:lu04:loesungen:lusdfas..png?600|}}
+  
   
 ===== Vocabulary =====
 ^ English ^ German ^ 

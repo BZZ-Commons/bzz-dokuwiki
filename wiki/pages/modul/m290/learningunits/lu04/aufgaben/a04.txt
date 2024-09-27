@@ -14,26 +14,26 @@ The following ERD describes a order database for a a shop.
 ===== Assignments =====
 The general assignment is to develop DQL commands that matches the requirements below:
 
-==== Assignment a: MIN ====
-We want to know which of our products is actually the most expensive.
+==== A: MIN ====
+We want to know which of our products actually the cheapest is.
 
-==== Assignment b: MAX ====
-What is the lowest price for the products of the supplier with id = 12?
+==== B: MAX ====
+What is the highest price for the products of the supplier with id = 12?
 
-==== Assignment c: AVG ====
+==== C: AVG ====
 What is the average price for products of supplier 3?
 
-==== Assignment d: AVG ====
+==== D: COUNT ====
 How many orders do we currently have in our data-base system from the customer with id = 5?
   
-==== Assignment e: SUM ====
+==== E: SUM ====
 What is the worth of the order 10255? Please note, that there are two tables involved in this select statement.
 
-==== Assignment f: GROUP BY ====
+==== F: GROUP BY ====
 For our anual report we need list of the orders, and the value of each, grouped by the OrderID.
 
 ===== Solution =====
-[[modul:m290:learningunits:lu04:loesungen:l02|Lösung]]
+[[modul:m290:learningunits:lu04:loesungen:l03|Lösung]]
   
 ===== Vocabulary =====
 ^ English ^ German ^ 
