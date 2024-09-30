@@ -1,0 +1,99 @@
+====== LU07a - SQL-DML: Basics ======
+**Sources** 
+  - [[https://www.w3schools.com/sql/sql_insert.asp | W3Schools | INSERT INTO ]]
+  - [[https://www.w3schools.com/sql/sql_update.asp | W3Schools | UPDATE ]]
+  - [[https://www.w3schools.com/sql/sql_delete.asp | W3Schools | DELETE ]]
+
+===== Learning Objectives =====
+  - Understand and Apply Data Insertion Concepts
+  - Master the Use of UPDATE Statements with Filters
+  - Safely Delete Records Using SQL DELETE Statements:
+  - Demonstrate Practical Usage of SQL DML in Real-world Scenarios
+
+===== Introduction to DML =====
+To beginn with, the acronym DML stands for **Data Manipulation Language** and refers to how table contents are to be handled according to the rules of a relational database system such as MySQL. 
+
+===== Overview of MySQL DML =====
+MySQL DML is used to manage the data in tables, as opposed to the structure of the tables themselves (DDL commands). The three main operations are:
+
+  - INSERT: Used to add new records to a table.
+  - UPDATE: Modifies existing data within a table.
+  - DELETE: Removes data from a table.
+
+Each of these commands can be executed **with or without filtering conditions**, affecting either specific rows or all rows within a table.
+
+===== 1. INSERT Statement =====
+The INSERT command is used to add new records to a table. When using INSERT, it is essential to specify the table and columns where the data will be added.
+
+** Syntax **
+  INSERT INTO table_name (column1, column2, column3) 
+  VALUES (value1, value2, value3);
+  
+** Example **
+  INSERT INTO employees (employee_id, first_name, last_name, hire_date, salary) 
+  VALUES (1, 'John', 'Doe', '2023-09-18', 55000);
+
+===== 2. UPDATE Statement =====
+The UPDATE command is used to modify existing data in a table. It can be executed with or without a WHERE clause, depending on whether you want to update specific rows or all rows.
+
+==== 2.1 UPDATE with Filter (WHERE Clause) ====
+Using a WHERE clause allows you to target specific rows to update. This ensures that only rows meeting a certain condition are modified.
+
+**Syntax**
+  UPDATE table_name 
+  SET column1 = value1, column2 = value2 
+  WHERE condition;
+
+**Example**
+  UPDATE employees 
+  SET salary = 60000 
+  WHERE employee_id = 1;
+
+==== 2.2 UPDATE without Filter ====
+If you omit the WHERE clause, the UPDATE command will modify every row in the table, which can lead to unintended changes, so it must be used with caution.
+
+**Syntax**
+  UPDATE table_name 
+  SET column1 = value1;
+  
+**Example**
+  UPDATE employees 
+  SET salary = 70000;
+
+===== 3. DELETE Statement =====
+The DELETE command is used to remove records from a table. Like UPDATE, it can be run with or without a filter, making it vital to define the condition to avoid unintended data removal.
+
+==== 3.1 DELETE with Filter (WHERE Clause) ====
+Using a WHERE clause ensures that only specific rows matching the condition will be deleted.
+
+**Syntax:**
+  DELETE FROM table_name 
+  WHERE condition;
+
+**Example**
+  DELETE FROM employees 
+  WHERE employee_id = 1;
+  
+  
+==== 3.2 DELETE without Filter ====
+Omitting the WHERE clause removes all data from the table, so it must be used cautiously. This operation doesn’t remove the table structure, just the rows.
+
+**Syntax:**
+  DELETE FROM table_name;
+
+**Example:**
+  DELETE FROM employees;
+
+===== Conclusion =====
+MySQL DML commands provide robust mechanisms for managing data in relational databases. The INSERT, UPDATE, and DELETE commands can all be customized with filters to ensure that specific data is targeted for modification or removal. Careful use of these commands, particularly when filtering conditions are omitted, is critical for maintaining data integrity within a database.
+
+==== Vocabulary ====
+^English ^ Deutsch ^
+| to refer to | beziehen auf|
+| according | gemäss |
+| opposed to | im Gegensatz zu |
+| to omit | auslassen |
+| to customize | (bedarfsgerecht) anpassen |
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir
