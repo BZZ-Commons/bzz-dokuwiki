@@ -1,14 +1,39 @@
 ====== LU07c - SQL-DML: UPATE ======
+** Sources:**
+  - [[https://www.w3schools.com/sql/sql_update.asp | W3Schools | UPDATE TABLE]]
+  - [[https://dev.mysql.com/doc/refman/8.4/en/update.html | MySQL.COM | UPDATE TABLE]]
+  - [[https://www.youtube.com/watch?v=OB2leB2iZ6U| Youtube | How to UPDATE and DELETE data from a TABLE ]]
 
-===== Learning Objectives =====
-...
-  - ...
+The UPDATE command is used to modify existing data in a table. It can be executed with or without a WHERE clause, depending on whether you want to update specific rows or all rows.
+
+===== UPDATE with Filter (WHERE Clause) =====
+Using a WHERE clause allows you to target specific rows to update. This ensures that only rows meeting a certain condition are modified.
+
+**Syntax**
+  UPDATE table_name 
+  SET column1 = value1, column2 = value2 
+  WHERE condition;
+
+**Example**
+  UPDATE employees 
+  SET salary = 60000 
+  WHERE employee_id = 1;
+
+===== UPDATE without Filter =====
+If you omit the WHERE clause, the UPDATE command will modify every row in the table, which can lead to unintended changes, so it must be used with caution.
+
+**Syntax**
+  UPDATE table_name 
+  SET column1 = value1;
   
+**Example**
+  UPDATE employees 
+  SET salary = 70000;  
 
 ==== Vocabulary ====
 ^English ^ Deutsch ^
-| Obsolete | veraltet |
-| result-set | Ergebnismenge |
+| ...| ... |
+
 
 ----
 [[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

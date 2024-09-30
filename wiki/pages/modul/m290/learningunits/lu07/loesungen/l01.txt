@@ -1,0 +1,44 @@
+====== LU07.S01 - Preparatory work======
+
+===== A: Creating the data schema =====
+First of all we need a database schema (database workspace). Execute the following two lines on your MySQL installation.
+
+  CREATE DATABASE hr_database;
+  SHOW DATABASES;
+  USE hr_database;
+  
+After executing the three SQL commands above, the feedback from your database would look like in the image below:
+
+**Result in webstorm**
+
+Please note, that the table is actually empty, that means that a "SELECT COUNT(*) FROM employees" leads to "0" results.
+
+{{:modul:m290:learningunits:lu07:aufgaben:m290.lu07.s01a.png?500|}}
+
+==== B: CREATE TABLE =====
+To exercise the DML commands, we need a suitable table including a reasonable amout of data. The following SQL statement will create a table **employee** regarding all necessary attributes of an "average employee".
+
+  CREATE TABLE EMPLOYEES (
+    employee_ID INT PRIMARY KEY,       -- Employee ID as the primary key
+    ....
+
+**Result in Webstorm**
+
+After creating the table "employees" the result in our Webstorm ought to look like the figure above:
+
+{{:modul:m290:learningunits:lu07:loesungen:m290.lu07.s01b.png?600|}}
+
+===== C: Inital data import =====
+Regardless of which of the two methods (single sql or multiple sql) we actually use, the result should look like the following figure:
+
+**Result in Webstorm**
+
+{{:modul:m290:learningunits:lu07:loesungen:m290.lu07.s01c.png?600|}}
+
+===== Vocabulary =====
+^ English ^ German ^ 
+| ought to | sollte |
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

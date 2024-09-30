@@ -1,13 +1,33 @@
 ====== LU07d - SQL-DML: DELETE ======
+** Sources:**
+  - [[https://www.w3schools.com/sql/sql_delete.asp | W3Schools | DELTE FROM ]]
+  - [[https://dev.mysql.com/doc/refman/8.4/en/delete.html | MySQL.COM | DELETE FROM ]]
+  - [[https://www.youtube.com/watch?v=OB2leB2iZ6U| Youtube | How to UPDATE and DELETE data from a TABLE ]]
 
-===== Learning Objectives =====
+....
+
+===== DELETE with Filter (WHERE Clause) =====
 ...
-  - ...
-  
+
+**Syntax**
+  ....
+
+**Example**
+  ...
+
+===== DELTE without Filter =====
+....
+
+**Syntax**
+   ...  
+   
+**Example**
+  ...
 
 ==== Vocabulary ====
 ^English ^ Deutsch ^
 | ...| ... |
+
 
 ----
 [[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir
