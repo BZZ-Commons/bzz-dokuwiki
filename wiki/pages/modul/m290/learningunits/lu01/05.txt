@@ -1,97 +1,155 @@
 ====== LU01e - Details LB3  ======
 
 ===== Rahmenbedingungen =====
-  * Abgabe
+  * **Abgabe**
     * Datum: Letzter Unterrichtstag des aktuellen Semesters
     * Zeit: 23:59 Uhr
-  * Verfügbare Zeit: 
+  * **Verfügbare Zeit**: 
       * ?? Lektionen pro Team-Mate 
       * ?? pro Team 
-  * Benotung: Lineare Notenskala
-  * Sozialform: Partner
-  * Hilfsmittel: Openbook
+  * **Benotung**: Lineare Notenskala
+  * **Sozialform**: Partner
+  * **Hilfsmittel**: Openbook
+
+===== Einleitung =====
+Sie haben sich rund 2/3 des Moduls 290 mit dem Thema "Datenbanken" in einer 3-Schichten-Architektur (Frontend, Backend, DB) beschäftigt. Bei der 3. und letzten Leistungsbeurteilung im Modul 290 geht es darum diese Daten nicht nur auf der Datenbank zu verwalten, sondern die sogenannten CRUD-Operationen mittels Server durchzuführen.
 
 ===== Auftrag =====
-Nachfolgend finden Sie eine Reihe von Projektbeschreibungen. Bearbeiten Sie das Ihnen zugewiesene Projekt, d.h. programmieren Sie einen Prototypen und präsentieren Ihre Resultate am Ende des Moduls als **Video-Tutorial** von ca. 15-20 Minuten Länge. D.h. erstellen Sie eine Video-Tutorial für Ihre "Unterstifte" aus dem 2. Lehrjahr.
+Nachfolgend finden Sie eine Reihe von Projektbeschreibungen. Bearbeiten Sie das Ihnen zufällig zugewiesene Projekt, d.h. programmieren Sie einen Prototypen (Concept) und präsentieren Ihre Resultate am Ende des Moduls als **Video-Tutorial** (Proofe of Concept) von ca. 15-20 Minuten Länge. D.h. erstellen Sie eine Video-Tutorial für Ihre "Unterstifte" aus dem 2. Lehrjahr, mit dem Thema "Daten, Datenbanken und wie man auf diese vom Frontend (Browser) zugreifen kann". Das Tutorial muss die CRUD-Operationen auf Server und Datenbank erklären und demonstrieren.
 
+===== Inhalt des Videotutorials =====
 Das Video muss die nachfolgenden Bestandteile enthalten:
-  - Herleitung des ERM, basierend auf den gegebenen UseCases.
-  - Herleitung de ERD basierend auf dem ERM.
-  - Physisches anlegen der Datenbank und der relevanten Tabellen,
-  - Import der Initialdaten (Startdaten)
+  - Herleitung des ERM, basierend auf den gegebenen UseCases
+  - Herleitung des ERD basierend auf dem ERM
+  - Physisches anlegen der Datenbank und der relevanten Tabellen als SQL-Script
+  - Import der Initialdaten (Startdaten) als SQL-Script
   - Nachweis der CRUD-Operationen im Server, durchgeführt auf der Commandline/Terminal
   - Nachweis der CRUD-Operationen im Frontend, durchgeführt durch eine Frontend-Simulations-Software POSTMAN
-  - Kurze Reflexion der Teammates mit 2 Learnings
+  - Kurze individuelle Reflexion der Teammates mit je 2 Learnings (positiv, negativ)
 
-===== Was muss nicht geliefert werden =====
-  * **Frontend**: Die Programmierung eines Frontend ist **kein Bestandteil** des Auftrags, da dieser durch die Software Postman simuliert wird. D.h. es wird keine vollständige Applikation erwartet, sondern ein Prototyp das als **Proofe of Concept** dient. 
-  * **CRUD**: Ihr Prototyp muss die CRUD-Operationen auf der DB-Ebene (SQL) und im Server ausführen können. Es reicht also, wenn Sie mittels Server Daten in der Datenbank schreiben, lesen, updaten und löschen können.
-  * **UseCases**: Um diese nachzuweisen, orientieren Sie sich an den gegebenen UseCases. D.h. Sie müssen nicht alle Anforderungen erfüllen.
+
+===== Wichtige Hinweise =====
+  * **Frontend**: Die Programmierung eines Frontend ist <color #ed1c24>kein Bestandteil</color> des Auftrags, da dieser durch die Software Postman simuliert wird. D.h. es wird keine vollständige Applikation erwartet, sondern ein Prototyp das als **Proofe of Concept** dient. 
+  * **CRUD**: <color #ed1c24>Ihr Prototyp muss die CRUD-Operationen auf der DB-Ebene (SQL) und im Server ausführen können. Es reicht also, wenn Sie mittels Server Daten in der Datenbank schreiben, lesen, updaten und löschen können.</color>
+  * **UseCases**: Um diese nachzuweisen, orientieren Sie sich an den gegebenen UseCases. D.h. Sie müssen nicht alle Anforderungen erfüllen.</color>
 
 ===== Zu liefernden Files als eine ZIP-Datei =====
   - Video-Tutorial von 15-20 Minuten Länge
   - ERM und ERD als PDF-Datei
   - SQL-Script: Anlegen der Tabellenstruktur 
+  - SQL-Scritp: Import der Initialdaten
   - Server-File, programmiert in JavaScript
 
-===== A: Absenzensystem =====
+==== Projekt A: Absenzensystem ====
+
+==== Ausgangslage ====
 Die Absenzen des BZZ werden vollständig elektronisch in einer Microsoft Sharepoint-Implementierung verwaltet. Durch die Einführung des neuen Systems, konnte sich das Sekretariat des BZZ vermehrt auf das Kerngeschäft konzentrieren, und dadurch die wachsende Zahl der Lernenden mit dem gleichen Personalstamm administrieren. Das aktuelle Absenzensystem des BZZ finden Sie unter: [[https://absenzen.bzz.ch| BZZ Absenzen-System]]. Aufgrund eines Wechsels des Software-Dienstleisters ergab sich die unglückliche Situation, dass die bestehende Anwendung //reengineered//, d.h. neu programmiert werden musste. 
 
-==== Anforderungen / UseCases ====
-  * A01: Die Lehrperson kann sich mit User und Passwort authentifizieren (Login). 
-  * A02: Weitere persönlichen Daten zur Lehrpersonen müssen speicherbar sein. 
-  * A03: Absenzen werden auf die Klasse und das Datum durchgeführt, wobei jeder/r Lernende/r den einzeln ausgewählt mit den entsprechenden Status belegt werden kann
-  * A04: Bei den Absenzen kann pro Lernenden und Tag eine Kommentar eingefügt werden.
-  * A05: Im System werden die üblichen persönlichen Daten der Lernenden gespeichert.
-  * A06: Vergangene Absenzen können pro Klasse und Datum angezeigt werden.
-  * A07: Lehrpersonen können die Absenzenhistorie pro Lernenden aufrufen
-  * A08: Prüfen der Lauffähigkeit
-  * A09: Instanzen/Inhalt anzeigen lassen
-  * A10: Die Anzeige der vergangenen Absenzen wird nach Datum und nach Fach, auf- und absteigend sortiert.
-  * A11: Ein/e Lernende/r kann in verschiedenen Klasse sein. 
-  * A12: Eine Klasse kann bis zu 24 Lernenden enthalten.
+==== Auftrag ====
+Erstellen Sie einen Prototypen einer neuen Version des Absenzensystems, da die Bestehende  mittelfristig ersetzten soll. Es ist wichtig, dass die bestehenden Funktionalitäten erhalten bleiben. Stellen Sie sicher, dass Sie die Applikation aus der Sicht der Lehrperson programmieren.
 
-===== B: Dispensen-System =====
+==== UseCases ====
+
+  - Die Lehrperson kann sich mit User und Passwort authentifizieren (Login). 
+  - Weitere persönlichen Daten zur Lehrpersonen müssen speicherbar sein. 
+  - Absenzen werden auf die Klasse und das Datum durchgeführt, wobei jeder/r Lernende/r den einzeln ausgewählt mit den entsprechenden Status belegt werden kann
+  - Bei den Absenzen kann pro Lernenden und Tag eine Kommentar eingefügt werden.
+  - Im System werden die üblichen persönlichen Daten der Lernenden gespeichert.
+  - Vergangene Absenzen können pro Klasse und Datum angezeigt werden.
+  - Lehrpersonen können die Absenzen-Historie pro Lernenden aufrufen
+  - Prüfen der Lauffähigkeit
+  - Instanzen/Inhalt anzeigen lassen
+  - Die Anzeige der vergangenen Absenzen wird nach Datum und nach Fach, auf- und absteigend sortiert.
+  - Ein/e Lernende/r kann in verschiedenen Klasse sein. 
+  - Eine Klasse kann bis zu 24 Lernenden enthalten.
+
+===== Projekt B: Dispensen-System =====
+==== Ausgangslage ====
 Die Abwesenheiten im BZZ werden vollelektronisch verwaltet, was zu einer massiven Effizienzsteigerung im Sekretariat geführt hat. Die Verwaltung der Dispensationen, d.h. der für die Zukunft geplanten Abwesenheiten, ist hingegen nach wie vor halb-digital gelöst und daher eher als aufwändig zu bezeichnen. Das Aktuelle Dispensationsformular finden Sie hier:[[ https://www.bzz.ch/dispensationsgesuch/| BZZ-Dispensen]]
 
-==== Anforderungen / UseCases ====
-  * B01: Die Eingabedaten des bisherigen Eingabeformulars müssen auch im zukünftigen System zur Verfügung stehen.
-  * B02: Es können Dispensen pro Person und mit allen Details ausgegeben werden.
-  * B03: Das System bietet eine Auswahl an möglichen gültigen Begründungen an.
-  * B04: eder Dispens kann kommentiert werden.
-  * B05: Es können weitere Dispensen angelegt werden.
-  * B06: Aktuell anstehende Dispensen können gelöscht werden.
-  * B07: Vergangene können nicht gelöscht werden. 
-  * B08: Dispensen, die in der Warteschlange stehen, können noch bearbeitet werden.
-  * B09: Die Anzeigesortierung der vergangenen Dispensen pro Person kann nach Datum und Fach, sowohl in aufsteigender, wie auch in absteigender Reihen folge ausgegeben werden. 
+==== Auftrag ====
+Erstellung eines Prototyps für ein digitales Dispenssystem, das den Verwaltungsprozess für Lernende und Lehrende verbessert und beschleunigt.
 
-===== C: Stundenplan =====
+==== UseCases ====
+  - Die Eingabedaten des bisherigen Eingabeformulars müssen auch im zukünftigen System zur Verfügung stehen.
+  - Es können Dispensen pro Person und mit allen Details ausgegeben werden.
+  - Das System bietet eine Auswahl an möglichen gültigen Begründungen an.
+  - Jede Dispens kann kommentiert werden.
+  - Es können weitere Dispensen angelegt werden.
+  - Aktuell anstehende Dispensen können gelöscht werden.
+  - Vergangene können nicht gelöscht werden. 
+  - Dispensen, die in der Warteschlange stehen, können noch bearbeitet werden.
+  - Die Anzeigesortierung der vergangenen Dispensen pro Person kann nach Datum und Fach, sowohl in aufsteigender, wie auch in absteigender Reihen folge ausgegeben werden. 
+
+===== Projekt C: Stundenplan =====
+==== Ausgangslage ====
 Am BZZ werden zur Zeit ca. 2'000 Lernende ausgebildet, mit der Tendenz steigend. Konkret sind es über 100 Klassen, die wissen wollen, wann, in welchem Raum und bei welcher Lehrperson sie Unterricht werden. Die bisherige Applikation [[https://webuntis.com/|Webuntis Stundenplan-Application]] ist teuer, sodass eine eigene Entwicklung eine Kostenreduktion verspricht. 
 
-==== Anforderungen / UseCases ====
-  * C01: Der Stundenplan kann pro User wochenweise (Kalenderwochen oder Wochen-Zeitraum) angezeigt.
-  * C02: Die Stunden enthalten die Informationen: Fach, Raum, Klasse und Lehrer.
-  * C03: Detaildaten zu den Fächern, Räumen, Klassen und Lehrpersonen und Lehrpersonen können im System verwaltet werden.
-  * C04: Der Stundenplan kann pro Klasse wochenweise angezeigt werden.
-  * C05: Lehrpersonen können zusätzliche Lektionen anlegen.
-  * C06: Aktuellen Stundenpläne können nicht mehr gelöscht werden.
-  * C07: Zukünftige Stundenplaneinträge können geändert werden.
-  * C08: Zukünftige Stundenpläne können gelöscht werden.
+==== Auftrag ====
+Erstellen Sie im Rahmen einer Feldstudie einen Prototypen einer Applikation, die mit dem bestehenden System in Konkurrenz steht. Ihre Aufgabe besteht also darin, einen Prototyp zu programmieren, der einen Stundenplan verwalten kann.
 
-===== D. Ressourcenverwaltung =====
+==== UseCases ====
+  - Der Stundenplan kann pro User wochenweise (Kalenderwochen oder Wochen-Zeitraum) angezeigt.
+  - Die Stunden enthalten die Informationen: Fach, Raum, Klasse und Lehrer.
+  - Detaildaten zu den Fächern, Räumen, Klassen und Lehrpersonen und Lehrpersonen können im System verwaltet werden.
+  - Der Stundenplan kann pro Klasse wochenweise angezeigt werden.
+  - Lehrpersonen können zusätzliche Lektionen anlegen.
+  - Aktuellen Stundenpläne können nicht mehr gelöscht werden.
+  - Zukünftige Stundenplaneinträge können geändert werden.
+  - Zukünftige Stundenpläne können gelöscht werden.
+
+==== Projekt D: Ressourcenverwaltung ====
+==== Ausgangslage ====
 Rund 2'000 Lernende in über 100 Klassen werden aktuell am BZZ unterrichtet, das auch den praktischen Unterricht beinhaltet., wofür das BZZ technische Lehrmittel bereit stellt. Aufgrund der hohen Schülerzahl und den damit verbundenen Administrationsaufwand, hat sich die Schulleitung entschieden, diese Ressourcen in einer Webapplikation Applikation zu verwalten. Unter Ressourcen verstehen wir Laptopwagen, Präsentationskoffer, Sportgeräte, Kameras, Mikrofone, etc.
 
-==== Usecases / Anforderungen ====
-  * D01: Für jeden Benutzenden werden alle bestehenden Reservationen in einer Liste angezeigt. 
-  * D02: Zu jeder Reservation wird der Ausleih-Personenname, Verantwortlichen-Name, Reservation-Start, Reservations-Ende, Reservations-Dauer und Produkttitel inkl. Kategorie angezeigt bzw. erfasst.
-  * D03: Die bestehenden Ressourcen sind sinnvoll kategorisiert.
-  * D04: Zukünftige Buchungen können geändert werden.
-  * D05: In der Vergangenheit liegende Reservationen können nicht gelöscht werden.
-  * D06: Jede Ressource muss eindeutig identifizierbar sein mit Nummer, Ort, Verantwortlichem, Kategorie. 
-  * D07: Es ist möglich, einen Kommentar zu der Reservierung hinzuzufügen.
-  * D08: Die Anzeige der vergangenen Reservationen kann nach Datum und nach Art / Kategorie in auf- und absteigend erfolgen.
+==== Auftrag ====
+Erstellen Sie ein Prototypen einer digitalen Ressourcenverwaltung, die für die Lernenden, wie auch für die Lehrpersonen, den Administrationsprozess besser und schneller macht. 
 
+==== UseCases ====
+  - Für jeden Benutzenden werden alle bestehenden Reservationen in einer Liste angezeigt. 
+  - Zu jeder Reservation wird der Ausleih-Personenname, Verantwortlichen-Name, Reservation-Start, Reservations-Ende, Reservations-Dauer und Produkttitel inkl. Kategorie angezeigt bzw. erfasst.
+  - Die bestehenden Ressourcen sind sinnvoll kategorisiert.
+  - Zukünftige Buchungen können geändert werden.
+  - In der Vergangenheit liegende Reservationen können nicht gelöscht werden.
+  - Jede Ressource muss eindeutig identifizierbar sein mit Nummer, Ort, Verantwortlichem, Kategorie. 
+  - Es ist möglich, einen Kommentar zu der Reservierung hinzuzufügen.
+  - Die Anzeige der vergangenen Reservationen kann nach Datum und nach Art / Kategorie in auf- und absteigend erfolgen.
 
+===== Projekt E: EFZ-Zeugnis =====
+==== Ausgangslage ====
+Die Ausbildung der Mediamatiker/innen und Informatiker/in in der Schweiz ist modular aufgebaut, wobei jedes Modul 40 Lektionen umfasst. Die Module sind in sich abgeschlossen, d.h. im Bereich der Fachausbildung ohne Abschlussprüfung. Mit dem erfolgreichen Abschluss der erforderlichen Module ist die berufliche Grundbildung abgeschlossen. Am Ende jedes Semesters wird das EFZ-Zeugnis aktualisiert: Die Lernenden sehen, welche Module sie bisher mit welcher Note abgeschlossen haben und welche Module noch ausstehen.
+
+==== Auftrag ====
+Programmierung einer Anwendung, die in der Lage ist, das EFZ-Zertifikat zu verwalten. D.h. Ihr Auftrag ist es eine Notenverwaltung zu programmieren, die die einzelnen Modulnoten und den aktuellen Notendurchschnitt der Lernenden berechnen kann.
+
+=== UseCases ===
+  - Pro Lernenden gibt es ein EFZ-Zeugnis.
+  - Jeder Noteneintrag ist einem Semester zu geordnet.
+  - Die Ansicht des "elektronischen Zeugnis" entspricht im Aufbau dem Print-Exemplar
+  - Die verfügbaren Lernenden werden in einer Übersichts-Liste, Klassenweise angezeigt.
+  - Jedes Zeugnis hat ein Ausstellungsdatum mit dem Datum der letzten Aktualisierung.
+  - Zeugnisse können 10 Jahre nach der Ausstellung gelöscht werden.
+  - Zeugnisnoten können verändert werden.
+  - Einzutragen Notenwerte halbnotenweise 1.0 bis 6.0, im Abstand 0.5
+
+===== Projekt F: BZZ-Immobilienverwaltung =====
+==== Ausgangslage ====
+Das BZZ besteht aktuell aus 2 Standorten: Horgen und Stäfa. Da die Schülerzahlen steigend sind, ist es möglich, dass ein dritter Standort BZZ Horgen Oberdorf hinzukommt, um die Platzknappheit teilweise zu kompensieren.
+
+==== Auftrag ====
+Programmieren Sie eine Applikation, die Räumlichkeiten dieser drei Standorte administrieren kann. 
+
+=== UseCases ===
+  - Jede Reservierung benötigt User, Raum, Zeit, Begründung.
+  - Pro User werden alle bestehenden Reservationen in einer Liste angezeigt.
+  - Die verfügbaren Räume werden angezeigt: Raumnummer, Typ (IT, Standard, Besprechungsraum, ...) und Kapazität.
+  - Zukünftige Reservationen können geändert werden.
+  - Vergangene Reservierungen können nicht gelöscht werden.
+  - Jede Immobilie muss eindeutig identifizierbar sein (Nummer, Standort, Verantwortlicher, Kategorie).
+  - Die Reservation kann kommentiert werden.
+  - Die Anzeige der vergangenen Reservationen kann nach Datum und nach Art/Kategorie auf- und absteigend sortiert werden.
+  - Pro Raum werden die verfügbaren/freien Zeiten angezeigt.
+  - 
 ----
 {{tag>M290-LU01}}
 [[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir
