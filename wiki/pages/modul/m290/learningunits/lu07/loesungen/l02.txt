@@ -1,0 +1,66 @@
+====== LU07.S02 - INSERT INTO ======
+
+===== A: Separate INSERT statements =====
+Below you will find ten lines with employee data that you should insert into the ‘employees’ table, but with 10 separate INSERT commands.
+
+  INSERT INTO EMPLOYEES (employee_id, name, surname, birthdate, sex, pronomen, employment_date, salary, department)
+  VALUES (1, 'John', 'Doe', '1985-03-25', 'M', 'He/Him', '2015-01-15', 55000.00, 'Finance');
+  INSERT INTO EMPLOYEES (employee_id, name, surname, birthdate, sex, pronomen, employment_date, salary, department)
+  VALUES (2, 'Jane', 'Smith', '1990-07-19', 'F', 'She/Her', '2017-06-10', 60000.00, 'HR');
+  INSERT INTO EMPLOYEES (employee_id, name, surname, birthdate, sex, pronomen, employment_date, salary, department)
+  VALUES (3, 'Mike', 'Brown', '1982-11-02', 'M', 'He/Him', '2012-03-05', 75000.00, 'IT');
+  INSERT INTO EMPLOYEES (employee_id, name, surname, birthdate, sex, pronomen, employment_date, salary, department)
+  VALUES (4, 'Sarah', 'Johnson', '1970-01-14', 'F', 'She/Her', '2020-08-22', 50000.00, 'Marketing');
+  INSERT INTO EMPLOYEES (employee_id, name, surname, birthdate, sex, pronomen, employment_date, salary, department)
+  VALUES (5, 'Chris', 'Williams', '1987-04-11', 'M', 'He/Him', '2016-09-30', 65000.00, 'Finance');
+  INSERT INTO EMPLOYEES (employee_id, name, surname, birthdate, sex, pronomen, employment_date, salary, department)
+  VALUES (6, 'Anna', 'Lee', '1993-12-01', 'F', 'She/Her', '2018-04-12', 72000.00, 'IT');
+  INSERT INTO EMPLOYEES (employee_id, name, surname, birthdate, sex, pronomen, employment_date, salary, department)
+  VALUES (7, 'David', 'Kim', '1989-10-22', 'M', 'He/Him', '2014-11-08', 69000.00, 'Marketing');
+  INSERT INTO EMPLOYEES (employee_id, name, surname, birthdate, sex, pronomen, employment_date, salary, department)
+  VALUES (8, 'Laura', 'Clark', '1986-02-17', 'F', 'She/Her', '2013-05-01', 56000.00, 'HR');
+  INSERT INTO EMPLOYEES (employee_id, name, surname, birthdate, sex, pronomen, employment_date, salary, department)
+  VALUES (9, 'Jake', 'Lewis', '1962-09-05', 'M', 'He/Him', '2019-12-20', 59000.00, 'Finance');
+  INSERT INTO EMPLOYEES (employee_id, name, surname, birthdate, sex, pronomen, employment_date, salary, department)
+  VALUES (10, 'Emily', 'Martinez', '1996-06-13', 'F', 'She/Her', '2021-01-05', 61000.00, 'IT');
+  INSERT INTO EMPLOYEES (employee_id, name, surname, birthdate, sex, pronomen, employment_date, salary, department)
+  VALUES (11, 'Ryan', 'Turner', '1991-05-21', 'M', 'He/Him', '2017-07-19', 70000.00, 'Marketing');
+
+===== B: One single INSERT statement =====
+... Insert the following 20 lines of data into the table "employees".
+
+  INSERT INTO EMPLOYEES (employee_ID, name, surname, birthdate, sex, pronomen, employment_date, salary, department)
+  VALUES 
+    (11, 'Ryan', 'Turner', '1991-05-21', 'M', 'He/Him', '2017-07-19', 70000.00, 'Marketing'),
+    (12, 'Sophia', 'Adams', '1988-12-06', 'F', 'She/Her', '2014-02-11', 62000.00, 'HR'),
+    (13, 'Nathan', 'Garcia', '1994-03-29', 'M', 'He/Him', '2018-09-15', 66000.00, 'Finance'),
+    (14, 'Olivia', 'Baker', '1983-08-11', 'F', 'She/Her', '2011-10-25', 78000.00, 'IT'),
+    (15, 'Liam', 'Scott', '1958-12-18', 'M', 'He/Him', '2020-06-13', 53000.00, 'Marketing'),
+    (16, 'Isabella', 'Carter', '1990-01-02', 'F', 'She/Her', '2016-03-30', 67000.00, 'HR'),
+    (17, 'James', 'Rodriguez', '1984-05-14', 'M', 'He/Him', '2013-07-22', 72000.00, 'Finance'),
+    (18, 'Mia', 'Lopez', '1998-09-27', 'F', 'She/Her', '2021-03-11', 51000.00, 'IT'),
+    (19, 'Ethan', 'Harris', '1970-04-07', 'M', 'He/Him', '2019-10-05', 64000.00, 'Marketing'),
+    (20, 'Charlotte', 'Moore', '1986-11-03', 'F', 'She/Her', '2014-12-30', 59000.00, 'HR'),
+    (21, 'Lucas', 'Jackson', '1989-02-28', 'M', 'He/Him', '2015-08-18', 74000.00, 'Finance'),
+    (22, 'Amelia', 'Young', '1991-06-23', 'F', 'She/Her', '2016-11-02', 62000.00, 'IT'),
+    (23, 'Henry', 'King', '1993-10-08', 'M', 'He/Him', '2018-05-07', 67000.00, 'Marketing'),
+    (24, 'Grace', 'Wright', '1987-03-19', 'F', 'She/Her', '2012-04-14', 71000.00, 'HR'),
+    (25, 'Jack', 'White', '1962-08-15', 'M', 'He/Him', '2019-01-23', 69000.00, 'Finance'),
+    (26, 'Chloe', 'Martin', '1996-12-31', 'F', 'She/Her', '2021-07-05', 54000.00, 'IT'),
+    (27, 'Daniel', 'Green', '1985-09-25', 'M', 'He/Him', '2013-02-13', 76000.00, 'Marketing'),
+    (28, 'Ella', 'Hall', '1994-04-30', 'F', 'She/Her', '2017-09-26', 63000.00, 'HR'),
+    (29, 'Oliver', 'Nelson', '1993-07-21', 'M', 'He/Him', '2018-11-19', 64000.00, 'Finance'),
+    (30, 'Ava', 'Walker', '1958-02-11', 'F', 'She/Her', '2021-05-30', 52000.00, 'Marketing');
+    
+ The result after the import of all 30 rows should look like in Webstorm the image below. As you can see, the select on the table "employees" returns 30 rows of data.
+
+{{:modul:m290:learningunits:lu07:loesungen:m290.lu07.s01c.png?800|}}
+
+
+===== Vocabulary =====
+^ English ^ German ^ 
+| ... | ... |
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

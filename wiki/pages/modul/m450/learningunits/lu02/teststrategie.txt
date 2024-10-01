@@ -1,4 +1,4 @@
-====== LU02a - Teststrategie ======
+====== LU02a - Prüfstrategie ======
 
 === Quellen ===
   * [[wpde>Softwaretest]]
@@ -6,40 +6,42 @@
 
 
 <WRAP center round info 60%>
-Die Teststrategie eines Softwareprojekts definiert, wie die einzelnen Teststufen getestet werden.
-Für jede Teststufe wird die Art und Weise der Tests beschrieben.
+Die Teststrategie eines Softwareprojekts legt fest, wie die einzelnen Teststufen getestet werden.
+Für jede Teststufe wird beschrieben, wie die Tests durchgeführt werden.
 </WRAP>
 
-In der Teststrategie legen wir den Gesamtrahmen unserer Test fest.
-Für jeden Teil des Systems definieren wir:
-  * Die Testziele
-  * Die Intensität der Tests
+In der Teststrategie legen wir den Gesamtrahmen für unsere Tests fest.
+Für jeden Teil des Systems definieren wir
+  * die Testziele
+  * die Intensität der Tests
   * Testmethoden und -techniken
-  * Test-Infrastruktur
+  * Testinfrastruktur
   * Reihenfolge
 
-===== Prinzipien und Techniken =====
-==== top-down ====
+===== Grundsätze und Techniken =====
+==== Top-down ====
 Beim Testen werden zunächst die Hauptfunktionen bzw. die Steuerung überprüft.
-Detailfunktionen werden ignoriert oder mittels **Stubs** simuliert.
+Detailfunktionen werden ignoriert oder mit Hilfe von **Stubs** simuliert.
 
-==== bottom-up ====
-Die Tests beginnen bei den kleinsten, atomaren Funktionen der Applikation.
-Die Aufrufe der Funktionen werden mittels **Driver** simuliert.
+==== Bottom-up ====
+Der Test beginnt mit den kleinsten, atomaren Funktionen der Anwendung.
+Die Aufrufe der Funktionen werden durch **Driver** simuliert.
+
+Diese Strategie ist häufig anzutreffen und wird durch Unit Tests (z.B. PyTest) unterstützt.
 
 ==== hardest first ====
-Zuerst werden die komplexesten und/oder wichtigsten Teile der Applikation getestet.
+Die komplexesten und/oder wichtigsten Teile der Anwendung werden zuerst getestet.
 
-==== Risk based Testing ====
-Das Testvorgehen wird anhand der Risikoanalyse geplant.
-Wir machen eine Einschätzung, in welchen Komponenten ein nicht erkannter Fehler die grössten Schäden verursachen kann.
+==== Risikobasiertes Testen ====
+Das Testverfahren wird auf Basis der Risikoanalyse geplant.
+Es wird abgeschätzt, in welchen Komponenten ein unentdeckter Fehler den größten Schaden anrichten kann.
 Diese Komponenten werden zuerst und mit hoher Intensität getestet.
 
-==== Data driven Testing ====
-Bei dieser Technik wird mittels Scripts die Datenkonstellation gezielt verändert, um ganze Testfallsammlungen effizient und automatisiert zu testen.
+==== Datengetriebenes Testen ====
+Bei dieser Technik wird mit Hilfe von Skripten die Datenkonstellation gezielt verändert, um ganze Testfallsammlungen effizient und automatisiert zu testen.
 
 ==== ISO/IEC 25000 ====
-Die [[wpde>ISO/IEC_25000|ISO/IEC-Norm 25000]] ist ein Standard für Qualitätskriterien sowie Bewertungsmethoden für Software und Systeme.
+Die [[wpde>ISO/IEC_25000|ISO/IEC-Norm 25000]] ist eine Norm für Qualitätskriterien und Bewertungsmethoden für Software und Systeme.
 
 ----
 {{tag>M450-LU02}}

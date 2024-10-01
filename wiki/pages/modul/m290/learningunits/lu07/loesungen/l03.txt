@@ -1,0 +1,57 @@
+====== LU07.S03 - UPDATE ======
+
+===== A: Basic Update =====
+The employee ‘Laura Clark’ got divorced and therefore took her maiden name. Update her data record in the table.
+
+  Update employees
+  SET surname = 'Suter'
+  WHERE employee_ID = 8;
+  
+{{:modul:m290:learningunits:lu07:loesungen:lu07.s03a2.png?500|}}
+
+===== B: Update with OR =====
+As a company policy the attribute 'sex' is not required anymore and is to be emptied. Formulate the corresponding SQL statement that deletes all content from that column.
+
+  UPDATE employees
+  SET sex = ''
+  WHERE sex = 'M' OR sex = 'F';
+  
+After performing the update statement, the select on the table 'employee' shows that the column 'sex' is now empty.
+
+{{:modul:m290:learningunits:lu07:aufgaben:lu07.s03a.png?800|}}
+
+===== C: Update with AND =?===
+The performance of our company's IT department was outstanding last year, resulting in a pay rise to 70'000 for all IT employees earning less than CHF 70,000. Create a DML update command that covers the requirements.
+
+to make sure, that the outcome is correct we first need to find the rows concorned. The following SQL statements will give us the correct resultset.
+
+  Select *
+  FROM employees
+  WHERE department = 'IT'
+  AND salary < 70000;
+ 
+This execution of the select results in the following image:
+
+{{:modul:m290:learningunits:lu07:aufgaben:lu07.s03b1.png?800|}} 
+
+After executing the following update command, we check the result, in which the 4 lines the ‘Salary’ column are now updated to CHF 70'0000,-.
+
+  UPDATE employees
+  SET salary = 70000
+  WHERE department = 'IT'
+  AND salary < 70000;
+
+  Select *
+  FROM employees
+  WHERE department = 'IT';
+  
+{{:modul:m290:learningunits:lu07:aufgaben:lu07.s03b2.png?800|}}
+
+
+===== Vocabulary =====
+^ English ^ German ^ 
+| ... | ... |
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

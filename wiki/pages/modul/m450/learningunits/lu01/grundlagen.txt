@@ -1,103 +1,108 @@
-====== LU01a - Grundlagen des Testens ======
-===== Einführung =====
-//Testen ist das Ausführen eines Programmes mit dem Ziel Fehler zu finden.//
-
-Das Testen ist ein Teil der Qualitätssicherung bei der Softwareentwicklung.
-Beim Testen suchen wir gezielt nach Fehlern in einem Programm.
-Beim Testen geht es nicht darum, zu beweisen, dass ein Programm fehlerfrei ist.
-Dies ist einerseits fast unmöglich und andererseits wenig motivierend.
-
-==== Vorgehen ====
-Manche Programmierer haben komische Vorstellungen vom Testen eines Programms.
-Sie geben irgendwelche Daten ein und gucken mal was passiert.
-
+====== LU01a - Grundlagen der Prüfung ======
+===== Einleitung =====
 <WRAP center round info 60%>
-Ihr Motto lautet: Schiesse einen Pfeil ab und was auch immer Du triffst, bezeichnest Du als Ziel.
+Testen ist das Ausführen eines Programms mit dem Ziel, Fehler zu finden.
 </WRAP>
 
-Beim Testen wird zunächst festgelegt, was wir prüfen wollen.
-Dabei halten Sie fest, welches Ergebnis Sie erwarten bzw. wie das Programm reagieren soll.
-Wir bezeichnen dies als Testfall.
 
->> Zum Beispiel möchten Sie prüfen, wie das Programm reagiert, wenn Sie eine negative Menge angeben.
->> Im Testfall legen Sie fest, dass Sie im Feld "Menge" den Wert ''-4'' eingeben.
->> Sie erwarten, dass das Programm eine Fehlermeldung "Menge muss grösser als 0 sein" ausgibt.
+Testen ist ein Teil der Qualitätssicherung in der Softwareentwicklung.
+Beim Testen suchen wir gezielt nach Fehlern in einem Programm.
+Beim Testen geht es nicht darum, zu beweisen, dass ein Programm fehlerfrei ist.
+Das ist zum einen fast unmöglich und zum anderen wenig motivierend.
 
-Nachdem Sie einige Testfälle beschrieben haben, führen Sie diese Testfälle durch.
-Dabei halten Sie fest, wie das Programm tatsächlich reagiert hat.
+==== Vorgehensweise ====
+Manche Programmierer haben seltsame Vorstellungen vom Testen eines Programms.
+Sie geben irgendwelche Daten ein und schauen, was passiert.
+
+<WRAP center round box 60%>
+Ihr Motto ist: Schiess einen Pfeil ab und alles, was du triffst, nennst du ein Ziel.
+</WRAP>
+
+
+
+Beim Testen legen wir zunächst fest, was wir testen wollen.
+Man schreibt auf, welches Ergebnis man erwartet oder wie das Programm reagieren soll.
+Das nennen wir Testfall.
+
+>> Sie wollen zum Beispiel testen, wie das Programm reagiert, wenn Sie eine negative Menge eingeben.
+>> Im Testfall legen Sie fest, dass Sie im Feld "Menge" den Wert "-4" eingeben.
+>> Sie erwarten, dass das Programm die Fehlermeldung "Menge muss grösser als 0 sein" ausgibt.
+
+Nachdem Sie einige Testfälle beschrieben haben, führen Sie diese Testfälle aus.
+Dabei notieren Sie, wie das Programm tatsächlich reagiert hat.
 Indem Sie die erwartete Reaktion (SOLL) mit der tatsächlichen Reaktion (IST) vergleichen,
 können Sie beurteilen, ob das Programm korrekt funktioniert.
 
 ===== Psychologie des Testens =====
 
 <WRAP center round info 60%>
-Beim Testen gilt:
-  * sei hart und unerbittlich zum Programm: Deine Aufgabe ist es, möglichst viele Fehler zu finden.
-  * sei nett zum Programmierer: Du zeigst Fehler in seiner Arbeit auf und nicht beim Menschen.
+Beim Testen
+  * Sei hart und unerbittlich zum Programm: Deine Aufgabe ist es, so viele Fehler wie möglich zu finden.
+  * Sei nett zum Programmierer: Du findest die Fehler in seiner Arbeit und nicht beim Menschen.
 </WRAP>
 
-Viele Programmierer fühlen sich angegriffen, wenn man ihre Arbeit kritisiert.
-Daher muss ein Tester einiges Fingerspitzengefühl haben, wenn er das Testprotokoll erstellt:
-  * Zeige die Abweichungen zwischen erwartetem und tatsächlichem Resultat auf.
-  * Vermeide Vorschläge wie man das Programm korrigieren muss.
+Viele Programmierer fühlen sich angegriffen, wenn ihre Arbeit kritisiert wird.
+Deshalb muss der Tester bei der Erstellung des Testprotokolls mit Fingerspitzengefühl vorgehen:
+  * Abweichungen zwischen erwartetem und tatsächlichem Ergebnis aufzeigen.
+  * Vorschläge zur Korrektur des Programms vermeiden.
 
-Hier sehen Sie ein gutes und ein schlechtes Beispiel, wie ein Fehler im Testprotokoll aufgenommen werden kann:
+Hier ein gutes und ein schlechtes Beispiel, wie ein Fehler im Testprotokoll festgehalten werden kann:
 
-  * Gut: Anzahl = 0 führt zu einem Absturz.
-  * Schlecht: Die Bedingung zum Prüfen der Eingabe ist falsch.
+  * Gut: Zahl = 0 führt zu einem Absturz.
+  * Schlecht: Die Bedingung zur Überprüfung der Eingabe ist falsch.
 
 ===== Definitionen =====
 === Testen ist ... ===
-... das gezielte Suchen von Fehlern in einem Programm.
+... die gezielte Suche nach Fehlern in einem Programm.
 
 <WRAP center round info 60%>
-Keine Software der Welt ist komplett Bugfrei, es gibt nur Software bei denen die Bugs noch nicht gefunden bzw. behoben wurden.</WRAP>
+Keine Software der Welt ist völlig frei von Fehlern, es gibt nur Software, deren Fehler noch nicht gefunden oder behoben wurden.</WRAP>.
 
 Beim Testen geht es nicht darum, zu beweisen, dass ein Programm fehlerfrei ist.
-Dies ist einerseits unmöglich und andererseits wenig motivierend. 
-> Testen ist das Ausführen eines Programmes mit dem Ziel Fehler zu finden.
+Das ist zum einen unmöglich und zum anderen wenig motivierend. 
+> Testen ist das Ausführen eines Programms mit dem Ziel, Fehler zu finden.
 
 === Testfall ===
 Ein Testfall beschreibt die Daten, mit denen ein Test durchgeführt wird.
-Um ein Programm zu testen, benötigen sie mehrere Testfälle.
+Um ein Programm zu testen, benötigt man mehrere Testfälle.
 
 === Testprotokoll ===
-Immer wenn sie eine Serie von Testfällen durchführen, wird ein separates Protokoll erstellt.
-Dieses enthält Angaben zum Zeitpunkt, den ausgeführten Testfällen und dem Ergebnis des Tests.
+Jedes Mal, wenn sie eine Reihe von Testfällen ausführen, wird ein separates Protokoll erstellt.
+Dieses enthält Informationen über den Zeitpunkt, die ausgeführten Testfälle und das Ergebnis des Tests.
 
-=== Blackbox-Tests ===
-Bei einem Blackbox-Test werden Testfälle aufgrund der Anforderungen erstellt.
-Der Aufbau des Sourcecodes wird dabei nicht beachtet.
-Das Programm wird als Blackbox betrachtet, die auf einen bestimmten Input einen erwarteten Output liefern soll.
+=== Blackbox-Test ===
+Bei einem Blackbox-Test werden die Testfälle aus den Anforderungen generiert.
+Die Struktur des Quellcodes wird nicht berücksichtigt.
+Das Programm wird als Blackbox betrachtet, die bei einer bestimmten Eingabe eine erwartete Ausgabe liefern soll.
 
-Als Basis für die Testfälle dienen uns
-  * Spezifikation der Applikation
+Als Grundlage für die Testfälle dienen
+  * Spezifikation der Anwendung
   * Zustandsdiagramme
 
 === Glassbox-Tests ===
-Bei einem Glassbox-Test (auch Whitebox-Test genannt) werden die Testfälle aufgrund des Sourcecodes erstellt. 
-Das Ziel solcher Tests ist, dass möglichst jeder Befehl und jede Bedingung einmal ausgeführt wird. 
-Solche Testfälle lassen sich ohne spezielle Software nur sehr mühsam erstellen.
+Bei einem Glassbox-Test (auch Whitebox-Test genannt) werden die Testfälle aus dem Quellcode generiert. 
+Ziel solcher Tests ist es, dass möglichst jeder Befehl und jede Bedingung einmal ausgeführt wird. 
+Solche Testfälle sind ohne spezielle Software nur sehr aufwendig zu erstellen.
 
 
 ==== Ablauf ====
 
 {{:modul:m450:learningunits:lu01:testablauf.png?600|}}
 
-  - In der Analyse werden die Anforderungen an das Programm ermittelt. Diese Anforderungen dienen als Grundlage zum Erstellen der Testfälle und des Programms.
-  - Nachdem der Programmierer den Sourcecode erstellt hat, wird das Programm nun systematisch getestet. In kleineren Projekten kann es sein, dass Programmierer und Tester die gleiche Person sind. Bessere Resultate erzielt man aber oft, wenn eine zweite Person die Testfälle durchführt.
-  - Dazu benötigt der Tester die schon früher erstellten Testfälle. Beim Testen starten Sie das Programm und geben dem Programm die festgelegten Testdaten ein.
-  - Ein Testdurchlauf besteht darin, dass Sie jeden Testfall einmal durchführen. Für jeden Testfall halten Sie das tatsächliche Ergebnis in einem Testprotokoll fest.
-  - Sind alle Testfälle durchgeführt, entscheidet der Tester:  
-    * das Programm muss noch einmal überarbeitet werden
+  - In der Analyse werden die Anforderungen an das Programm ermittelt. Diese Anforderungen dienen als Grundlage für die Erstellung der Testfälle und des Programms.
+  - Nachdem der Programmierer den Quellcode erstellt hat, wird das Programm systematisch getestet. Bei kleineren Projekten kann es sein, dass Programmierer und Tester ein und dieselbe Person sind. Oft werden jedoch bessere Ergebnisse erzielt, wenn eine zweite Person die Testfälle durchführt.
+  - Dazu benötigt der Tester die zuvor erstellten Testfälle. Beim Testen startet man das Programm und gibt dem Programm die festgelegten Testdaten ein.
+  - Bei einem Testdurchlauf wird jeder Testfall einmal ausgeführt. Für jeden Testfall halten Sie das tatsächliche Ergebnis in einem Testprotokoll fest.
+  - Wenn alle Testfälle ausgeführt wurden, entscheidet der Tester:  
+    * das Programm muss überarbeitet werden
     * das Programm ist in Ordnung
-  - Muss das Programm überarbeitet werden, so geht es zurück an den Programmierer. Dieser wird die Verbesserungen vornehmen und die neue Programmversion wieder an den Tester übergeben. Nun führt der Tester erneut **alle** Testfälle durch und hält die Resultate in einem **neuen** Testprotokoll fest.
+  - Wenn das Programm überarbeitet werden muss, wird es an den Programmierer zurückgeschickt. Dieser nimmt die Verbesserungen vor und übergibt die neue Programmversion wieder dem Tester. Der Tester führt nun **alle** Testfälle erneut durch und hält die Ergebnisse in einem **neuen** Testprotokoll fest.
 
 
 ===== IEEE 829 =====
 {{https://upload.wikimedia.org/wikipedia/commons/2/2f/IEEE829_Uebersicht_Deutsch.png?600}}
 
-Die Grafik zeigt die Dokumente und Verfahrensschritte laut [[wpde>Software_Test_Documentation|IEEE 829]].
+Die Grafik zeigt die Dokumente und Prozessschritte nach [[wpde>Software_Test_Documentation|IEEE 829]].
 ----
 {{tag>M450-LU01}}
 [[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

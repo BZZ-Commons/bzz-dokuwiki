@@ -4,19 +4,65 @@ Globales Ziel des Softwaretestens ist das Messen der Qualität des Softwaresyste
 Ein Testziel definiert eine Fragestellung, die mittels Testfällen zu beantworten bzw. zu überprüfen ist.
 </WRAP>
 
-Die Testzeile sind Teil der Teststrategie.
-Dabei definieren die Testziele Fragestellungen, zu der eine Überprüfung (Tests) eine Aussage treffen soll.
 
-Die Testziele eines Softwareprojekts sind abhängig von der Art der Applikation und den Anforderungen.
+In der Softwareentwicklung dienen Testziele dazu, den Zweck und den Fokus von Testaktivitäten zu definieren. Sie helfen dabei, sicherzustellen, dass die Software die gewünschten Anforderungen erfüllt und in verschiedenen Szenarien wie erwartet funktioniert. Im Folgenden werden die wichtigsten Testziele beschrieben:
+===== Fehlererkennung =====
 
-===== Beispiele von Testzielen =====
-  * 80% aller Bedingungen werden je 1x mit ''true'' und ''false'' ausgewertet.
-  * Alle Use Cases werden in den Tests abgebildet.
-  * Die Testfälle mit Priorität "kritisch" und "hoch" werden erfolgreich durchgeführt.
-  * Fehler mit hoher Priorität werden zeitnah behoben:
-    * Priorität A: Innerhalb von 24 Stunden
-    * Priorität B: Innerhalb von 3 Arbeitstagen 
-  * Die Testdokumentation ist vollständig erstellt.
+Das primäre Ziel der meisten Tests ist es, Fehler oder Defekte in der Software zu identifizieren. Dies umfasst sowohl Fehler in der Logik, wie z. B. fehlerhafte Berechnungen oder unerwartetes Verhalten, als auch technische Fehler, die zu Systemabstürzen oder nicht funktionierenden Komponenten führen können.
+===== Verifikation und Validierung =====
+  * Verifikation: Stellt sicher, dass das Produkt den Spezifikationen und dem Design entspricht (Bautest, statische Tests).
+  * Validierung: Stellt sicher, dass das Produkt den Erwartungen und Bedürfnissen des Kunden entspricht (Benutzerakzeptanztests, dynamische Tests).
+
+Diese Ziele gewährleisten, dass die Software sowohl den Anforderungen des Entwicklungsprozesses als auch den Bedürfnissen der Endbenutzer gerecht wird.
+===== Qualitätssicherung =====
+
+
+Ein weiteres wichtiges Ziel der Tests ist es, die Qualität des Softwareprodukts sicherzustellen. Dies beinhaltet, dass die Software:
+
+  * zuverlässig ist,
+  * eine hohe Leistung bietet,
+  * skalierbar ist,
+  * und eine gute Benutzerfreundlichkeit aufweist.
+
+Tests überprüfen diese Qualitätsmerkmale und helfen, die Software auf ein akzeptables Qualitätsniveau zu bringen.
+===== Sicherstellung der Funktionalität =====
+
+Ein Testziel ist, sicherzustellen, dass die Software alle funktionalen Anforderungen erfüllt. Dies umfasst die Überprüfung, ob alle Funktionen korrekt implementiert sind und wie spezifiziert funktionieren. Typische Funktionstests beinhalten:
+
+  * Unit-Tests
+  * Integrationstests
+  * Systemtests
+
+===== Sicherstellung der Nicht-Funktionalen Anforderungen =====
+Zusätzlich zur Funktionalität müssen auch nicht-funktionale Anforderungen wie Performance, Sicherheit, Benutzerfreundlichkeit und Zuverlässigkeit getestet werden. Ziel ist es, sicherzustellen, dass die Software auch in Bezug auf diese Eigenschaften den Erwartungen entspricht.
+===== Risikominimierung =====
+
+
+Tests sollen auch dazu beitragen, Risiken zu minimieren, die durch fehlerhafte Software entstehen könnten. Dazu gehört die Vermeidung von:
+
+  * Sicherheitslücken,
+  * Leistungsproblemen (z. B. langsame Reaktionszeiten),
+  * Datenverlust oder Datenbeschädigung.
+
+Tests identifizieren und minimieren diese Risiken frühzeitig im Entwicklungsprozess.
+===== Erhöhung der Kundenzufriedenheit =====
+
+
+Durch gründliche Tests kann die Benutzererfahrung verbessert und die Kundenzufriedenheit gesteigert werden. Wenn die Software stabil läuft, wie erwartet funktioniert und den Anforderungen entspricht, fühlen sich die Benutzer sicher und zufrieden.
+===== Überprüfung der Kompatibilität =====
+
+
+Ein weiteres Ziel ist die Überprüfung der Kompatibilität der Software mit verschiedenen Plattformen, Geräten, Browsern oder Betriebssystemen. Hierbei wird getestet, ob die Software in verschiedenen Umgebungen einwandfrei funktioniert.
+===== Regressionsvermeidung =====
+Durch kontinuierliche Tests soll sichergestellt werden, dass neue Funktionen oder Bugfixes keine bestehenden Funktionalitäten beeinträchtigen (Regressionsfehler). Regressions- und automatisierte Tests spielen hier eine große Rolle, um sicherzustellen, dass bereits getestete und funktionierende Bereiche stabil bleiben.
+===== Verbesserung des Entwicklungsprozesses =====
+
+
+Schliesslich dienen Tests auch dazu, Rückschlüsse auf den Entwicklungsprozess zu ziehen. Die Ergebnisse der Tests zeigen, in welchen Bereichen des Codes Probleme häufiger auftreten, und können verwendet werden, um den Entwicklungs- und Testprozess zu optimieren.
+
+<WRAP center round info 60%>
+Zusammenfassend tragen Testziele entscheidend dazu bei, Software von hoher Qualität zu liefern, Risiken zu minimieren und den Entwicklungsprozess zu verbessern. Durch eine klare Definition der Testziele können Entwicklungs- und Testteams fokussierter arbeiten und das Endprodukt effizienter optimieren.
+</WRAP>
 
 
 ----

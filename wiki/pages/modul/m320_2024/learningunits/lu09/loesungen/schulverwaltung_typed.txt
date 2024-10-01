@@ -1,0 +1,18 @@
+====== LU09.L01a - Schulverwaltung mit Types ======
+<WRAP center round tip 60%>
+In Python sind Typangaben bei der Definition von Variablen, Funktionen oder Methoden optional. 
+Python ist eine dynamisch typisierte Sprache, das heisst, der Datentyp einer Variable wird zur Laufzeit automatisch ermittelt.
+Du kannst die Datentypen angeben, um die Lesbarkeit zu verbessern und Fehler frühzeitig zu erkennen, aber der Interpreter erzwingt sie nicht.
+
+Im Zusammenhang mit zweiseitigen Beziehungen führt die Verwendung von Datentypen aber zu einem zirkulären Import (A importiert B, B importiert A, welches B importiert ...).
+</WRAP>
+
+Dieses Codebeispiel zeigt eine Lösung, um die zirkulären Imports zu verhindern.
+
+{{gh>https://github.com/templates-python/m320-lu09-a01-school/blob/typed/school_class.py}}
+
+==== Erklärung ====
+Die Kombination von ''from __future__ import annotations'' und ''from typing import TYPE_CHECKING'' verzögert den Import der Klassen.
+Dadurch können wir Datentypen verwenden, ohne dass ein zirkulärer Import auftritt.
+
+Die vollständige Lösung finden Sie unter [[https://github.com/templates-python/m320-lu09-a01-school/tree/typed]].

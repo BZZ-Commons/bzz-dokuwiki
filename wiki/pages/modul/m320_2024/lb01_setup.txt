@@ -14,22 +14,3 @@ Wenn diese Schritte funktioniert haben, wurde das Projekt korrekt eingerichtet.
 Andernfalls melden Sie sich bei Ihrer Lehrperson.
 </WRAP>
 
-===== Vorlagen kopieren (ab Prüfungsstart) =====
-
-1. Öffnen Sie das Repository in GitHub (Webbrowser)
-
-2. Bearbeiten Sie die Datei "README.md"
-    * Ersetzen Sie die Zeile "TODO: ..." mit Ihrem Vor- und Nachnamen
-    * Machen Sie einen Commit der Änderung
-  
-<WRAP center round tip 60%>
-Dadurch wird ein Workflow gestartet, der die Vorlagen für die Dateien kopiert.
-Während Sie warten, lesen Sie sich in die Aufgabenstellung ein.
-</WRAP>
-
-==== Resultat im GitHub Repository ====
-
-{{:modul:m320_2024:setup02a.png?300|}}
-{{:modul:m320_2024:setup02b.png?300|}}
-
-3. In Ihrer Entwicklungsumgebung führen Sie "Update Project" durch.
