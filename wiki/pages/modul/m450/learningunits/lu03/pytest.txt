@@ -31,6 +31,7 @@ Nachdem pytest installiert ist, erstellst du ein neues Modul (Python File) für 
 Als Dateinamen ergänze ich den Namen des zu testenden Moduls (z.B. main.py) um ''test_'' (z.B. test_main.py).
 
 ==== Unit Tests ====
+
 Die einzelnen Unit Tests werden als Funktionen in Python programmiert.
 Zum Beispiel:
 
@@ -58,10 +59,10 @@ else:
     raise AssertionError
 </code> |
 
-==== Beispiel ====
+===== Beispiel =====
 Anhand dieses einfachen Beispiels siehst du, wie eine Python-Funktion getestet werden kann.
 
-=== factorial.py ===
+==== factorial.py ====
 Dieses Modul enthält eine Funktion um die Fakultät einer Zahl zu berechnen.
 
 <code python>
@@ -72,7 +73,7 @@ def factorial(number):
     return fact
 </code>
 
-=== test_factorial.py ===
+==== test_factorial.py ====
 Dieses Modul enhält meine Unit Tests.
 <code python>
 from factorial import factorial

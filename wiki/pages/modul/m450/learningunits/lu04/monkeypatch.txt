@@ -1,0 +1,30 @@
+====== LU04b - Funktionen und Klassen simulieren ======
+<WRAP center round tip 60%>
+Mit ''monkeypatch'' können Funktionen und Klassen während des Tests simuliert werden.
+Dadurch können einzelne Programmteile isoliert getestet werden.
+</WRAP>
+
+Ein Unittest soll eine einzelne Funktion oder sogar nur Teile einer Funktion testen.
+Die zu testende Funktion wird aber in der Regel Objekte verarbeiten und weitere Funktionen/Methoden aufrufen.
+Dadurch wird es schwieriger zu erkennen, welcher Teil der Applikation für einen allfälligen Fehler verantwortlich ist.
+
+Auch Zugriffe auf Datenbanken und Dateien sollten über simulierte Funktionen erfolgen.
+
+
+===== Funktionen simulieren =====
+Nehmen wir einmal an, wir möchten eine Funktion ''a'' testen.
+Diese Funktion ruft eine andere Funktion ''b'' auf, welche eine Verarbeitung durchführt.
+Für unsere Unittests der Funktion ''a'' wollen wir die Funktion ''b'' simulieren.
+
+<code python>
+Beispiel mit simulierter Funktion
+</code>
+
+===== Klassen simulieren =====
+Auch ganze Klassen mit ihren Attributen und Methoden lassen sich in Unittests simulieren.
+Einerseits lässt sich dadurch eine Funktion testen, bevor die Klasse überhaupt realisiert wurde.
+Andererseits isolieren wir die zu testende Funktion von allfälligen Fehlern in der Umsetzung der Klasse.
+
+<code python>
+Beispiel mit simulierter Klasse
+</code>
