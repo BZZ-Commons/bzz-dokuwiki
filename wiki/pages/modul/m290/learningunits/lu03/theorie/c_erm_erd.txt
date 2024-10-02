@@ -1,4 +1,4 @@
-====== LU03c - ERM and ERD ======
+====== LU04c - ERM and ERD ======
 
 ==== Entity-Relationship Model = ERM ====
 The Entity-Relationship Model (ERM) is a **conceptual data-model** used in database design to represent relationships between data entities in a system. An entity is a real-world object or concept, such as  customer or product, and each entity has specific attributes that describe it. **ERM serves as a blueprint for creating databases, ensuring that data is accurately captured and linked**. The following illustration shows a database of students, their teachers and the rooms in which the lessons are are held.

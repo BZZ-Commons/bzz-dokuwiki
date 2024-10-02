@@ -1,13 +1,40 @@
-====== LU01d - Details LB2 - Under Construction ======
+====== LU01d - Details LB2  ======
+===== Rahmenbedingungen =====
+  * Dauer: 45-60 Minuten
+  * Benotung: Lineare Notenskala
+  * Sozialform: Einzelarbeit
+  * Hilfsmittel: Denkstütze (Cheatseheet) 1 Din A4 beidseitig, **eigenhandschriftlich** erstellt
 
+===== Hinweise =====
+  * Kommunikation zwischen den Lernenden kann zum Ausschluss aus der Prüfung zur Folge haben.
+  * Bei Fehlen ist ein Arztzeugnis innerhalb 2 Kalenderwochen der Lehrperson elektronisch zuzuschicken.
+  * Fehlende oder verspätet abgegebene Arztzeugnisse können zur Prüfungsnote Note 1.0  führen.
 
-===== Vocabulary =====
-^ English ^ German ^
-| weighting | Gewichtung |
-| to be composed of sth. | aus etwas zusammengesetz sein |
-| supplementary material/aids | Hilfsmittel |
+===== Ergebnisfreigabe =====
+  * <color #ed1c24>Die Prüfungsbewertung wird spätestens ab Freitag, 18:00 Uhr freigeben. </color>
+  * <color #ed1c24>Rückfragen und Unklarheiten können über den TEAMS-Chat bei der Lehrperson platziert werden.</color>
 
+===== Themen =====
+==== LU05: SQL | DLQ commands ====
+  - Syntax einer typischen DQL-Anweisung kennen und erklären können.
+  - Select auf einer Tabelle durchführen können
+  - Select auf 2-3 Tabellen
+  - Mit ohne ohne Alias
+  - Mit und ohne Filter
+  - Unterschiedliche Sortierkriterien und Sortierungen
+  - Anwendung von Aggregat Funktionen
 
-----
-{{tag>M290-LU01}}
+==== LU06: SQL | DDL commands ====
+  - Syntax einer typischen DDL-Anweisung kennen und erklären können.
+  - Anlegen, verwenden und löschen von DB-Schemata (Instanzen)
+  - Anlegen, verändern und löschen von Tabellen
+  - Anlegen und verändern von Zusatzbedingungen (Constraints) 
+
+==== LU07: SQL | DML commands ====
+  - Syntax einer typischen DML-Anweisung kennen und erklären können.
+  - Einfügen von Datensätzen in Tabellen nach Vorgabe
+  - Verändern von Tabelleninhalten
+  - Verändern von Tabelleninhalten nach Vorgaben
+  - Löschen von Tabelleninhalten nach Vorgaben 
+
 [[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

@@ -1,4 +1,4 @@
-====== LU03.S04 - ERD: Travel DB ======
+====== LU04.S04 - ERD: Travel DB ======
   * The attribut must be taken over and added with data-types and constraints (primary keys)
   * The relations must be realized as relation tables, that connect the base tables
   * The attributes of the relation tables are: id, and the primary key of each base table as foreign key

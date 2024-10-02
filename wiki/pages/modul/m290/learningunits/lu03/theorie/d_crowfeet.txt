@@ -1,4 +1,4 @@
-====== LU03d - The Crow's Feet Notation ======
+====== LU04d - The Crow's Feet Notation ======
 
 ==== The Basics of Crow’s Foot Notation ====
 In database design, an **entity** represents a real-world object or concept, such as a person, place, event, or thing, that needs to be stored in the database. Each entity typically becomes a table in the relational database. **Attributes** of the entity, which are the data points relevant to that entity (like a customer’s name or an order’s date), become the columns in these tables.

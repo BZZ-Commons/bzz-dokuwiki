@@ -1,4 +1,4 @@
-====== LU01e - Details LB3 - Under Construction ======
+====== LU01e - Details LB3 ======
 
 ===== Rahmenbedingungen =====
   * **Abgabe**
@@ -32,12 +32,17 @@ Das Video muss die nachfolgenden Bestandteile enthalten:
   * **CRUD**: <color #ed1c24>Ihr Prototyp muss die CRUD-Operationen auf der DB-Ebene (SQL) und im Server ausführen können. Es reicht also, wenn Sie mittels Server Daten in der Datenbank schreiben, lesen, updaten und löschen können.</color>
   * **UseCases**: Um diese nachzuweisen, orientieren Sie sich an den gegebenen UseCases. D.h. Sie müssen nicht alle Anforderungen erfüllen, sondern nur die CRUD-Operationen via Postman auf das Backend und der Datenbank anwenden können.
 
-===== Zu liefernden Files als eine ZIP-Datei =====
+===== Abgabe - Zu liefernenden Lernprodkte =====
+Das Projekt ist als ein<color #ed1c24>Ein oneDrive-Link zu einem Arbeitsordner</color> abzugeben. In diesem Ordner sind die nachfolgenden Daten gespeichert:
   - Video-Tutorial von 15-20 Minuten Länge
-  - ERM und ERD als PDF-Datei
+  - ERM als PDF-Datei 
+  - ERD als PDF-Datei
   - SQL-Script: Anlegen der Tabellenstruktur 
   - SQL-Scritp: Import der Initialdaten
   - Server-File, programmiert in JavaScript
+  - Datei mit den relevanten Credentials des DB-Users
+
+===== Bewertungskriterien =====
 
 ===== Projekt A - 1: Absenzensystem =====
 ==== Ausgangslage ====
@@ -142,35 +147,103 @@ Programmieren Sie eine Applikation, die Räumlichkeiten dieser drei Standorte ad
 
 ===== Projekt G - 8: Kantina =====
 ==== Ausgangslage ====
+Die Mittagszeit am BZZ ist für alle Beteiligten eine grosse Herausforderung. Die Gäste müssen oft lange anstehen, die angestellten müssen in einem knappen Zeitfenster alle vorgekochten oder bestellten Menues bereitstellen, was letztendlich zu Anspannung und zu Zeitverlust auf allen Seiten führt.
+
 ==== Auftrag ====
+Um die Geschäftsprozesse rund um die Cantina besser verwalten zu können, braucht der Leiter der Cantina ein Instrument um schnell und einfach seine tägliche Arbeit erledigen zu können. Erstellen Sie einen Protoypen, der die Cantina im alltag unterstützt.
+
 ==== UseCases ====
+  - Es soll möglich sein einen wöchentlichen Menüplan zu erstellen.
+  - Die App soll individuellen und kulturellen Aspekten berücksichtigen. Beispiel: egetarier, Moslems, Veganer, Weight-Watchers, etc. 
+  - Der Menüplan soll Teilaspekte wie Budgetierung, Bestellung und Lieferantenverwaltung berücksichtigen. 
+  - Zukünftige Menüpläne können gelöscht werden.
+  - Vergangene Menüpläne können nicht mehr gelöscht werden
+  - Alte Menüpläne sollen archiviert werden können.
+  - Zukünftige Menüpläne sollen verändert werden könen.
 
 ===== Projekt H - 9: Mediothek =====
 ==== Ausgangslage ====
+In der BZZ Mediothek sind Medien aller Art erhältlich. Hier kann man Comics ebenso ausleihen wie auch Fachbücher über Mathematik, oder Videos zu geschichtlichen Ergeignissen. All diese Vielzahl von Medien und deren Verleih muss mittels Software administrierbar sein.
 ==== Auftrag ====
+Erstellen Sie eine Software, die es ermöglicht Medien zu erfassen und zu Verleihen. 
 ==== UseCases ====
-
+  - Die Medien sind kategorisierbar, z.B. DVD, BR-DVD, Audio-CD, Auio-Book, E-Book, Book, etc.
+  - Die User loggen sich mit User und Passwort ein.
+  - Es können nur BZZ-Angehörige (Lernende, Administration, Lehrpersonen) Medien ausleihen.
+  - Neue Medien können erfasst und kategorsiert werden. 
+  - Es kann nach Medien gesucht werden.
+  - Die Treffermenge wird in einer Listenansicht angezeigt.
+  - Wichtige Informationen wie Lagerort, Autor, Titel werden bei der Listenansicht angezeigt.
+  - Es gibt eine Detailansicht jedes Mediums mit allen verfügbaren Informationen zum Medium.
+  - Die Medien werde einem Themenschwerpunkt bzw. Fach/Modul zugeordnet.
 ===== Projekt I - 10: Materialverwaltung =====
+
+
 ==== Ausgangslage ====
+Am BZZ Horgen werden verschiedeneste Berufsgruppen ausgebildet. Um eine möglichst praxisnahe Ausbildung garantieren zu können, werden den Lernenden bzw. Lerpersonen Unterrichtsmaterialien wie Cameras, Mikrofone, Tripods, Fotoblitze, Notebooks, Notebook-Wägen, Präsentationskoffer, etc. zur Ausleihe angeboten. Die bisherige semi-analoge Variante über Excel-Tabellen war fehleranfällig und Gerätgebunden, und soll daher durch eine WebApplikation abgeklöst werden.
 ==== Auftrag ====
+Planen und programmieren Sie den Prototypen einer WebApplikation, die in der Lage ist die vom BZZ angebotenen Medien und deren Verleih zu administrieren.
 ==== UseCases ====
+  - Die Medien sind kategorisierbar, z.B. Fotocamera, Videocamera, Tripod, Blitz, Windows-Notebook, Mac-Notebook, .....
+  - Die User loggen sich mit User und Passwort ein.
+  - Es können nur BZZ-Angehörige (Lernende, Administration, Lehrpersonen) Geräte ausleihen.
+  - Neue Medien können erfasst und kategorsiert werden. 
+  - Zu jedem Gerät wird der Lieferumfang mit erfasst. Beispiel: Eine Fotokamera wird mit einer SD-Speicherkarte und einer Cameratasche geliefert.
+  - Es kann nach Materialien gesucht werden.
+  - Die Treffermenge wird in einer Listenansicht angezeigt.
+  - Wichtige Informationen wie Lagerort, Autor, Titel werden bei der Listenansicht angezeigt.
+  - Es gibt eine Detailansicht jeder Materiali mit allen verfügbaren Informationen. 
+
 
 ===== Projekt J - 11: Unternehmenskalender =====
 ==== Ausgangslage ====
+Um den Unterricht besser vorbereiten und planen zu können, bietet das BZZ eine Jahreskalender an: https://www.bzz.ch/schulbetrieb/kalender/. Hier sind alle Termine, die für das BZZ relevant sind, aufgeführt. Die aktuelle Version ist HTML-basiert und daher wenig flexible, soll also folglich durch eine dynamische WebApplikation ersetzt werden.
 ==== Auftrag ====
+Planen und erstellen Sie ein Kalendertool, das die Terminverwaltung des BZZ erledigt.
 ==== UseCases ====
-
+  - Es gibt eine Listenansicht, die für die Öffentlichkeit bestimmt ist.
+  - Einträge können nur mit bestehenden User angelegt werden.
+  - Die Einträge sind den Abteilungen Abteilungen zuordenbar.
+  - Es werden nur Termine angezeigt, die aktuell sind oder in der Zukunft liegen.
+  - Die bisherige Listenansicht mit den besthenden Spalten soll übernommen werden.
+  - Es kann nach Abteilung und Titel, auf und absteigend sortiert werden.
+  - Zukünftige Termine können verwändert werden.
+  - Zukünftige Termine können gelöscht werden.
+  - Zukünftige Termine haben eine Freigabestatus, sprich sie werden nur dann in der öffentlichen Ansicht angezeigt, wenn Sie den Status FREIGABE haben.
 
 ===== Projekt K - 12: BMS/ABU-Zeugnis =====
 ==== Ausgangslage ====
+Die Ausbildung in Mediamatik in der Schweiz ist modular aufgebaut. Neben der Fachkunde allerdings, erhalten die Lernenden auch eine Ausbildung in Allgemeinbildung bzw. können die BMS besuchen. Mit Letztere können Sie nach der Ausbildung die Fachhochschule besuchen.
 ==== Auftrag ====
+Programmieren Sie eine Applikation, die das Standard-Noten- bzw. BMS-Zeugnis administrieren kann. Sprich sie sollen eine Notenverwaltung programmieren, die Ihnen die einzelnen Fachnoten und den aktuellen Notenschnitt ausrechnen kann. Die Applikation ist aus Sicht des Sekretariats zu erstellen.
 ==== UseCases ====
+  - Pro Lernenden gibt es ein Zeugnis.
+  - jeder Noteneintrag ist einem Semester zu geordnet.
+  - Das Zeugnis-Ansicht muss dem Print-Exemplar entesprechen.
+  - Die verfügbaren Lernenden werden in einer Übersichts-Liste, Klassenweise angezeigt.
+  - Jedes Zeugnis hat ein Aussstellungsdatum mit dem Datum der letzten Aktualisierung.
+  - Zeugnisse können 10 Jahre nach der Ausstellung gelöscht werden.
+  - Zeugnisnoten können verändert werden.
+  - Einzutragen Notenwerte halbnotenweise 1.0, 1.5, ... 6.0
 
 
 ===== Projekt L - 13: Reisemanagement =====
 ==== Ausgangslage ====
+Reisen ist für viele Personen ein Hobby. Es ist spannend zu die Reisedaten in geeigneter Form administrieren zu können. 
 ==== Auftrag ====
+Erstellen Sie ein Tool, das die Administration von vergangenen, anstehenden und zukünftigen Reisen ermöglicht.
 ==== UseCases ====
+  - Das System ist mandantenfähig 
+  - Die Autorisierung und Autentifikation geschieht mit USER und PASSWORD.
+  - Es gibt eine Listenansicht, die für die Öffentlichkeit bestimmt ist.
+  - Reise-Einträge können öffentlich oder privat geschaltet werden.
+  - Reise-Einträge können nur mit bestehenden User angelegt werden.
+  - Jede Reise enthält die nachvollgenden Daten: Datum, Dauer, Zielland, Zielkontinent, SOLL-Kosten, IST-Kosten, Bewertung, Kommentar
+  - Zukünftige Reisen können verändert werden.
+  - Zukünftige Reisen können gelöscht werden.
+  - Vergangene Reisen können nicht mehr verändert oder gelöscht werden.
+  - Vergangene Reisen können archiviert werden.
+  - Archivierung ist nur möglich mit einer 5 Sterne Bewertung und einem Kommentar.
 ----
 {{tag>M290-LU01}}
 [[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir
