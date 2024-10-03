@@ -1,6 +1,7 @@
-====== LU01c - Details LB1  ======
+====== LU02b1 - LB2 - Administratives ======
+
 ===== Rahmenbedingungen =====
-  * Dauer: 30 Minuten
+  * Dauer: 45-60 Minuten
   * Benotung: Lineare Notenskala
   * Sozialform: Einzelarbeit
   * Hilfsmittel: Denkstütze (Cheatseheet) 1 Din A4 beidseitig, **eigenhandschriftlich** erstellt
@@ -13,36 +14,5 @@
 ===== Ergebnisfreigabe =====
   * <color #ed1c24>Die Prüfungsbewertung wird spätestens ab Freitag, 18:00 Uhr freigeben. </color>
   * <color #ed1c24>Rückfragen und Unklarheiten können über den TEAMS-Chat bei der Lehrperson platziert werden.</color>
-
-
-===== Themen =====
-==== A: MySQL ====
-  - Login
-  - Prüfen der Lauffähigkeit
-  - Instanzen/Inhalt anzeigen lassen
-
-==== B: DBS und zugehörige Begrifflichkeiten ====
-  - DBS und Teilgebiete
-  - CRUD und zugehörige Begrifflichkeiten
-  - CRUD und Zusammenhang zur SQL
-
-==== C: SQL (Befehlsübersicht, keine Anwendung) ====
-  - Begrifflichkeiten
-  - Teilgebiete
-  - Typische Befehle 
-
-==== D: Datentypen ====
-  - Arten kennen
-  - Fallspezifisch syntaktisch korrekt anwenden
-
-==== E: ERM ====
-  - Begrifflichkeiten: Bedeutung, Sinn/Zielsetzung, Kardinalität
-  - Aufbau einer Entität inkl. Attribute
-  - Umsetzung von Beziehungen: 1:1, 1:n, n:m
-
-==== F: ERD ====
-  - Begrifflichkeiten: Bedeutung, Sinn/Zielsetzung, Kardinalität
-  - Aufbau einer Entität inkl. Attribute und Datentypen
-  - Umsetzung von Beziehungen: 1:1, 1:n, n:m
 
 [[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

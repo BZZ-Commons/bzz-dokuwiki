@@ -1,48 +1,4 @@
-====== LU01e - Details LB3 ======
-
-===== Rahmenbedingungen =====
-  * **Abgabe**
-    * Datum: Letzter Unterrichtstag des aktuellen Semesters
-    * Zeit: 23:59 Uhr
-  * **Verfügbare Zeit**: 
-      * ?? Lektionen pro Team-Mate 
-      * ?? pro Team 
-  * **Benotung**: Lineare Notenskala - Note = (Erreichten Punkte * 5 / Maximalen Punkte) + 1
-  * **Sozialform**: Partner
-  * **Hilfsmittel**: Openbooks
-
-===== Einleitung =====
-Sie haben sich rund 2/3 der 40 Lektionen des Moduls 290 mit dem Thema "Datenbanken" in einer 3-Schichten-Architektur (Frontend, Backend, DB) beschäftigt. Bei der dritten und letzten Leistungsbeurteilung im Modul 290 geht es darum diese Daten nicht nur auf der Datenbank zu verwalten, sondern die sogenannten CRUD-Operationen mittels Server anzuwenden.
-
-===== Auftrag =====
-Nachfolgend finden Sie eine Reihe von Projektbeschreibungen. Bearbeiten Sie das Ihnen zugewiesene Projekt, d.h. programmieren Sie einen Prototypen und präsentieren Ihre Resultate am Ende des Moduls als **Video-Tutorial** von ca. 15-20 Minuten Länge. D.h. erstellen Sie eine Video-Tutorial für Ihre "Unterstifte" aus dem 2. Lehrjahr zum  Thema "Daten, Datenbanken und wie man auf diese vom Frontend (Browser) zugreifen kann". Das Tutorial muss die CRUD-Operationen auf Server und Datenbank erklären und demonstrieren.
-
-===== Inhalt des Videotutorials =====
-Das Video muss die nachfolgenden Bestandteile enthalten:
-  - Herleitung des ERM, basierend auf den gegebenen UseCases
-  - Herleitung des ERD basierend auf dem ERM
-  - Physisches anlegen der Datenbank und der relevanten Tabellen als SQL-Script
-  - Import der Initialdaten (Startdaten) als SQL-Script
-  - Nachweis der CRUD-Operationen im Server, durchgeführt auf der Commandline/Terminal
-  - Nachweis der CRUD-Operationen im Frontend, durchgeführt durch eine Frontend-Simulations-Software POSTMAN
-  - Kurze individuelle Reflexion der Teammates mit je 2 Learnings (positiv, negativ)
-
-===== Wichtige Hinweise =====
-  * **Frontend**: <color #ed1c24> Die Programmierung eines Frontend ist kein Bestandteil des Auftrags</color>, da dieses durch die Software Postman simuliert wird. D.h. es wird keine vollständige Applikation erwartet, sondern lediglich der JS-Server welcher mit der Datenbamnk kommunizieren kann. 
-  * **CRUD**: <color #ed1c24>Ihr Prototyp muss die CRUD-Operationen auf der DB-Ebene (SQL) und im Server ausführen können. Es reicht also, wenn Sie mittels Server Daten in der Datenbank schreiben, lesen, updaten und löschen können.</color>
-  * **UseCases**: Um diese nachzuweisen, orientieren Sie sich an den gegebenen UseCases. D.h. Sie müssen nicht alle Anforderungen erfüllen, sondern nur die CRUD-Operationen via Postman auf das Backend und der Datenbank anwenden können.
-
-===== Abgabe - Zu liefernenden Lernprodkte =====
-Das Projekt ist als ein<color #ed1c24>Ein oneDrive-Link zu einem Arbeitsordner</color> abzugeben. In diesem Ordner sind die nachfolgenden Daten gespeichert:
-  - Video-Tutorial von 15-20 Minuten Länge
-  - ERM als PDF-Datei 
-  - ERD als PDF-Datei
-  - SQL-Script: Anlegen der Tabellenstruktur 
-  - SQL-Scritp: Import der Initialdaten
-  - Server-File, programmiert in JavaScript
-  - Datei mit den relevanten Credentials des DB-Users
-
-===== Bewertungskriterien =====
+====== LU02c3 - LB3 - Projektbeschreibungen ======
 
 ===== Projekt A - 1: Absenzensystem =====
 ==== Ausgangslage ====
@@ -140,18 +96,11 @@ Programmieren Sie eine Applikation, die Räumlichkeiten dieser drei Standorte ad
   - Die Anzeige der vergangenen Reservationen kann nach Datum und nach Art/Kategorie auf- und absteigend sortiert werden.
   - Pro Raum werden die verfügbaren/freien Zeiten angezeigt.
 
-===== Projekt F - 7: Ressourcenverwaltung =====
-==== Ausgangslage ====
-==== Auftrag ====
-==== UseCases ====
-
-===== Projekt G - 8: Kantina =====
+===== Projekt G - 7: Kantina =====
 ==== Ausgangslage ====
 Die Mittagszeit am BZZ ist für alle Beteiligten eine grosse Herausforderung. Die Gäste müssen oft lange anstehen, die angestellten müssen in einem knappen Zeitfenster alle vorgekochten oder bestellten Menues bereitstellen, was letztendlich zu Anspannung und zu Zeitverlust auf allen Seiten führt.
-
 ==== Auftrag ====
 Um die Geschäftsprozesse rund um die Cantina besser verwalten zu können, braucht der Leiter der Cantina ein Instrument um schnell und einfach seine tägliche Arbeit erledigen zu können. Erstellen Sie einen Protoypen, der die Cantina im alltag unterstützt.
-
 ==== UseCases ====
   - Es soll möglich sein einen wöchentlichen Menüplan zu erstellen.
   - Die App soll individuellen und kulturellen Aspekten berücksichtigen. Beispiel: egetarier, Moslems, Veganer, Weight-Watchers, etc. 
@@ -161,7 +110,7 @@ Um die Geschäftsprozesse rund um die Cantina besser verwalten zu können, brauc
   - Alte Menüpläne sollen archiviert werden können.
   - Zukünftige Menüpläne sollen verändert werden könen.
 
-===== Projekt H - 9: Mediothek =====
+===== Projekt H - 8: Mediothek =====
 ==== Ausgangslage ====
 In der BZZ Mediothek sind Medien aller Art erhältlich. Hier kann man Comics ebenso ausleihen wie auch Fachbücher über Mathematik, oder Videos zu geschichtlichen Ergeignissen. All diese Vielzahl von Medien und deren Verleih muss mittels Software administrierbar sein.
 ==== Auftrag ====
@@ -176,9 +125,8 @@ Erstellen Sie eine Software, die es ermöglicht Medien zu erfassen und zu Verlei
   - Wichtige Informationen wie Lagerort, Autor, Titel werden bei der Listenansicht angezeigt.
   - Es gibt eine Detailansicht jedes Mediums mit allen verfügbaren Informationen zum Medium.
   - Die Medien werde einem Themenschwerpunkt bzw. Fach/Modul zugeordnet.
-===== Projekt I - 10: Materialverwaltung =====
 
-
+===== Projekt I - 9: Materialverwaltung =====
 ==== Ausgangslage ====
 Am BZZ Horgen werden verschiedeneste Berufsgruppen ausgebildet. Um eine möglichst praxisnahe Ausbildung garantieren zu können, werden den Lernenden bzw. Lerpersonen Unterrichtsmaterialien wie Cameras, Mikrofone, Tripods, Fotoblitze, Notebooks, Notebook-Wägen, Präsentationskoffer, etc. zur Ausleihe angeboten. Die bisherige semi-analoge Variante über Excel-Tabellen war fehleranfällig und Gerätgebunden, und soll daher durch eine WebApplikation abgeklöst werden.
 ==== Auftrag ====
@@ -194,8 +142,7 @@ Planen und programmieren Sie den Prototypen einer WebApplikation, die in der Lag
   - Wichtige Informationen wie Lagerort, Autor, Titel werden bei der Listenansicht angezeigt.
   - Es gibt eine Detailansicht jeder Materiali mit allen verfügbaren Informationen. 
 
-
-===== Projekt J - 11: Unternehmenskalender =====
+===== Projekt J - 10: Unternehmenskalender =====
 ==== Ausgangslage ====
 Um den Unterricht besser vorbereiten und planen zu können, bietet das BZZ eine Jahreskalender an: https://www.bzz.ch/schulbetrieb/kalender/. Hier sind alle Termine, die für das BZZ relevant sind, aufgeführt. Die aktuelle Version ist HTML-basiert und daher wenig flexible, soll also folglich durch eine dynamische WebApplikation ersetzt werden.
 ==== Auftrag ====
@@ -211,7 +158,7 @@ Planen und erstellen Sie ein Kalendertool, das die Terminverwaltung des BZZ erle
   - Zukünftige Termine können gelöscht werden.
   - Zukünftige Termine haben eine Freigabestatus, sprich sie werden nur dann in der öffentlichen Ansicht angezeigt, wenn Sie den Status FREIGABE haben.
 
-===== Projekt K - 12: BMS/ABU-Zeugnis =====
+===== Projekt K - 11: BMS/ABU-Zeugnis =====
 ==== Ausgangslage ====
 Die Ausbildung in Mediamatik in der Schweiz ist modular aufgebaut. Neben der Fachkunde allerdings, erhalten die Lernenden auch eine Ausbildung in Allgemeinbildung bzw. können die BMS besuchen. Mit Letztere können Sie nach der Ausbildung die Fachhochschule besuchen.
 ==== Auftrag ====
@@ -226,8 +173,7 @@ Programmieren Sie eine Applikation, die das Standard-Noten- bzw. BMS-Zeugnis adm
   - Zeugnisnoten können verändert werden.
   - Einzutragen Notenwerte halbnotenweise 1.0, 1.5, ... 6.0
 
-
-===== Projekt L - 13: Reisemanagement =====
+===== Projekt L - 12: Reisemanagement =====
 ==== Ausgangslage ====
 Reisen ist für viele Personen ein Hobby. Es ist spannend zu die Reisedaten in geeigneter Form administrieren zu können. 
 ==== Auftrag ====
@@ -244,6 +190,7 @@ Erstellen Sie ein Tool, das die Administration von vergangenen, anstehenden und 
   - Vergangene Reisen können nicht mehr verändert oder gelöscht werden.
   - Vergangene Reisen können archiviert werden.
   - Archivierung ist nur möglich mit einer 5 Sterne Bewertung und einem Kommentar.
+
 ----
 {{tag>M290-LU01}}
 [[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir
