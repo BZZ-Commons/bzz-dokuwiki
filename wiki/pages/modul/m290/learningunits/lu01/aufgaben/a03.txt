@@ -2,15 +2,18 @@
 
 ===== Prerequisites  =====
   * Work type: Indiviual
-  * Timeframe: 15 Minutes 
+  * Timeframe: 20 Minutes 
   * Expected result: Correct installed MySQL database including operational test
 
 ===== Means of aid  =====
 ^ Source ^ Link ^
 | Download-Link | [[https://dev.mysql.com/downloads/mysql/ | MySQL-MacOS]] |
 | Download-Link | [[https://dev.mysql.com/downloads/installer/ | MySQL-Windows]] |
-| Video-Tutorial MacOS | [[https://www.youtube.com/watch?v=nj3nBCwZaqI | Install MySql Server in Macbook M1 / M2]] |
-| Video-tutorial Windows | [[https://www.youtube.com/watch?v=2c2fUOgZMmY | How to install MySql on Windows 10]] |
+| Video-Tutorial Windows | {{:modul:m290:learningunits:lu01:aufgaben:how_to_install_mysql_8.0.30_server_and_workbench_latest_version_on_windows_10.mp4 | How to install MySql on Windows 10}} |
+| Video-Tutorial MacOS | {{:modul:m290:learningunits:lu01:aufgaben:how_to_install_mysql_on_mac_install_mysql_on_macos_2024_.mp4 | https://www.youtube.com/watch?v=ODA3rWfmzg8}} |
+ 
+
+
 
 ===== Introduction  =====
 The overarching topic of Module 290 is data and how to deal with it. It therefore makes sense to start with the installation of a database. There are a variety of databases on the market. Our product of choice is the MySQL database, as the licence is free for educational purposes.
