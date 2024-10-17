@@ -1,14 +1,64 @@
-====== LU09a - Privilege Management - Under Construction ======
+====== LU09a - USER and Privilege Management ======
 
 ===== Learning Objectives =====
-...
-  - ...
+  - Explain why different users are needed to access a database.
+  - Create a mysql user on the command line and with a sql script
+  - Grant required privileges to the database user newly created
+  - Revoke privileges from user
+  - Deleting obsolete user 
+
   
+===== Introcuction =====
+In a warehouse such as Globus, Manor or Lafayette there are different user categories with different authorizations and privileges. According to the required responsibilties the general manager e.g. has full privileges, while the apprentice has much fewer. And as we know, a database is basicly a warehouse, not for goods, but for data.
+
+MySQL user management and privileges are essential for controlling access to the database system, ensuring security, and managing user roles. MySQL allows database administrators (DBAs) to create, manage, and assign permissions to users, limiting what actions users can perform on the database. This control helps protect sensitive data, prevent unauthorized changes, and maintain the overall integrity of the database.
+
+===== Key Concepts =====
+  - **User Accounts**: MySQL user accounts are created to define who can log in to the MySQL server and what they can access. Each user is identified by a username and a host, which specifies the IP address or domain from which the user can connect.
+  - **Privileges**: MySQL privileges determine what actions a user can perform. These actions include SELECT (read), INSERT, UPDATE, DELETE, and more. Privileges can be granted at different levels, such as the global level, database level, table level, or even column level.
+  - **Roles**: MySQL supports roles, which are collections of privileges that can be granted to users as a group. This simplifies managing permissions, especially in large organizations.
+  - **Authentication**: MySQL supports various authentication methods, including password-based and plugin-based authentication, to verify user identities when they attempt to connect.
+
+===== Common MySQL User Management Commands =====
+==== 1. Creating a New User ====
+To create a new user in MySQL, you use the CREATE USER statement:
+
+  CREATE USER 'username'@'localhost' IDENTIFIED BY 'password';
+  
+This creates a user username that can only connect from localhost (the MySQL server machine).
+
+==== 2. Granting Privileges ==
+To assign privileges to a user, the GRANT statement is used. For example, to grant a user the ability to SELECT, INSERT, and UPDATE on a specific database:
+
+  GRANT SELECT, INSERT, UPDATE ON database_name.* TO 'username'@'localhost';
+  
+The * symbol specifies that the privileges apply to all tables within database_name.
+
+==== 3. Viewing User Privileges ====
+You can check a user’s privileges with the SHOW GRANTS command:
+
+  SHOW GRANTS FOR 'username'@'localhost';
+  
+This displays all the privileges granted to the user username.
+
+==== 4. Revoking Privileges ====
+To remove privileges from a user, the REVOKE statement is used. For example, to revoke the INSERT privilege:
+
+  REVOKE INSERT ON database_name.* FROM 'username'@'localhost';
+  
+==== 5. Dropping a User ====
+If a user is no longer needed, you can remove the account using the DROP USER statement:
+
+  DROP USER 'username'@'localhost';
+  
+This removes both the user and their associated privileges.
+
 
 ==== Vocabulary ====
 ^English ^ Deutsch ^
-| ... | ... |
-| ... | ... |
+| obsolete | veraltet |
+| commodity | Handelsgut, Ware |
+| to revoke | widerrufen, aufheben |
 
 ----
 [[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir
