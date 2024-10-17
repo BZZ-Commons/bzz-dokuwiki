@@ -1,4 +1,4 @@
-====== LU09a - USER and Privilege Management ======
+====== LU09a - USER and PRIVILEGE Management ======
 
 ===== Learning Objectives =====
   - Explain why different users are needed to access a database.
@@ -6,7 +6,6 @@
   - Grant required privileges to the database user newly created
   - Revoke privileges from user
   - Deleting obsolete user 
-
   
 ===== Introcuction =====
 In a warehouse such as Globus, Manor or Lafayette there are different user categories with different authorizations and privileges. According to the required responsibilties the general manager e.g. has full privileges, while the apprentice has much fewer. And as we know, a database is basicly a warehouse, not for goods, but for data.
@@ -53,6 +52,10 @@ If a user is no longer needed, you can remove the account using the DROP USER st
   
 This removes both the user and their associated privileges.
 
+
+===== Video-Tutorials ====
+^How to Create a New User in MySQL |{{:modul:m290:learningunits:lu06:theorie:how_to_create_a_new_user_in_mysql.mp4 }} |
+^Create User, Grant ReadWrite Privileges and Test Privileges Granted in MySQL |{{:modul:m290:learningunits:lu06:theorie:create_user_grant_readwrite_privileges_and_test_privileges_granted_in_mysql.mp4 }} |
 
 ==== Vocabulary ====
 ^English ^ Deutsch ^

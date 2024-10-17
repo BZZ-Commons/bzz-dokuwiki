@@ -1,15 +1,15 @@
-====== LU06b - SQL-DDL: Table Management ======
+====== LU07b - SQL-DDL: Table Management ======
 
 **Source**: 
-  * [[https://www.w3schools.com/sql/sql_create_table.asp| W3Schools |CREATE TABLE]]
+  * [[https://www.w3schools.com/sql/sql_create_table.asp| W3Schools | CREATE TABLE]]
   * [[https://www.w3schools.com/sql/sql_alter.asp| W3Schools | ALTER TABLE]]
   * [[https://www.w3schools.com/sql/sql_drop_table.asp| W3Schools | DROP TABLE]]
  
 ===== Learning Objectives =====
 In this learning unit, we will learn how to manage database tables, i.e. 
-  -how to create
-  -how to modify and 
-  -how to delete database tables
+  - how to create
+  - how to modify and 
+  - how to delete database tables
 
 ===== CREATE TABLE =====
 Let's start by creating a table based on the ERD of the student management tool, as shown below:

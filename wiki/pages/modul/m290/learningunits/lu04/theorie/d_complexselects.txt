@@ -1,4 +1,4 @@
-====== LU05d - SQL-DQL: Selects with Aggregate Functions ======
+====== LU06d - SQL-DQL: Selects with Aggregate Functions ======
 SQL (Structured Query Language) provides powerful tools to perform calculations and data analysis on database records. Among these tools, aggregate functions play a crucial role in summarizing data by performing operations on multiple rows and returning a single result. This document focuses on five commonly used SQL aggregate functions: **MIN, MAX, COUNT, SUM, and AVG**, along with practical examples to illustrate their usage.
 
 ===== 1. MIN Function====

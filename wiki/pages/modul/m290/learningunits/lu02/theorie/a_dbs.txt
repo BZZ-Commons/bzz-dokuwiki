@@ -10,7 +10,6 @@ The following diagram illustrates the interaction of these three terms:
 
 {{:modul:m290:learningunits:lu02:theorie:de-dbms-with-dd.svg.png?300|}} 
 
-
 ==== Database System (DBS) ====
 A Database System (DBS) encompasses the database, the DBMS, and associated hardware and software components. It represents the complete environment for managing data.
 
@@ -39,6 +38,9 @@ A Database Management System (DBMS) is software that interacts with users and ap
   * Data Integrity: Ensures data accuracy and consistency.
   * Data Security: Protects data from unauthorized access.
   * ...
+
+==== Additional Material ====
+  * [[https://studyflix.de/informatik/aufbau-von-datenbanken-599|Aufbau von Datenbanken]]
 
 
 ===== Vocabulary =====
