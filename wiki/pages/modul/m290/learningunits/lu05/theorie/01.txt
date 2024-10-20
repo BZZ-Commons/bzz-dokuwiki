@@ -6,7 +6,6 @@ In this session, we will learn some thrilling details about how to properly mana
   - How to display all currently available instances.
   - How to connect to one specific db-instance.
   - how you can delete obsolete or no longer required databases.
-  - How to import pre-pared databases that are ready for immediate use.
 
 ===== Access to the db with Webstorm code editor =====
 There are many ways how we can connect to our database instance. One way is from the terminal or commandline. Instead, during the module 290 we are going to use do the management with the code editor WEBSTORM, which is pictured below.
