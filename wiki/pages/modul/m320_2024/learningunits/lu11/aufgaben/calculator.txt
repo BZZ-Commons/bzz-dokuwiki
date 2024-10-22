@@ -1,11 +1,11 @@
 ====== LU11.A02 - Abstrakte Klasse für Taschenrechner ======
-=== Ziel ===
+===== Ziel =====
 Sie können eine umfassende Aufgabe mit diversen Techniken der OOP umsetzen.
 
 ===== Auftrag =====
 Sie implementieren einen einfachen Rechner mit den Grundoperationen +, -, *, /, basierend auf dem gezeigten Klassendiagramm.
 
-{{:modul:m320:learningunits:lu99:aufgaben:lu07-aufg3_calculator.png?1000|}}
+{{:modul:m320_2024:learningunits:lu11:aufgaben:calculator.png?600|}}
 
 ==== Hinweise ====
 
@@ -59,20 +59,20 @@ Implementieren Sie nun die Klasse ''Calculator'' in der Datei ''calculator.py''.
    * Wichtig ist, dass Sie hier keine Exceptions fangen und auswerten. Das geschieht dann alles in der main-Routine.
    * Die Methoden sind entsprechend der folgenden Sequenzdiagramme zu implementieren: 
    * 
-====  ''read_input'' ====
+==== read_input ====
  
-{{:modul:m320:learningunits:lu99:aufgaben:lu07-aufg3_sequenz-1.png?400|}} 
+{{:modul:m320_2024:learningunits:lu11:aufgaben:read_input.png?400|}}
 
 ==== create_concrete_op ====
 
 Hier am Beispiel der Addierfunktion (Klasse ''Adder'') gezeigt:
 
-{{:modul:m320:learningunits:lu99:aufgaben:lu07-aufg3_sequenz-2.png?450|}}
+{{:modul:m320_2024:learningunits:lu11:aufgaben:concrete_op.png?400|}}
 
 ==== calculate ====
 Diese Methode schreibt das Ergebnis in den Stdout. 
 
-{{:modul:m320:learningunits:lu99:aufgaben:lu07-aufg3_sequenz-3.png?450|}}
+{{:modul:m320_2024:learningunits:lu11:aufgaben:calculate.png?400|}}
 
 Testen Sie die Klasse mit den Testfällen aus der Datei ''test_calculator.py''.\\
 
@@ -83,7 +83,7 @@ Hier werden die Exceptions gefangen und verarbeitet.
 Das heisst, dass jeweils eine entsprechende Meldung auf den Stdout (mit ''print''-Befehl) ausgegeben wird.
 Halten Sie sich dabei an das folgende Sequenzdiagramm. 
 
-{{:modul:m320:learningunits:lu99:aufgaben:lu07-aufg3_sequenz-4.png?450|}}
+{{:modul:m320_2024:learningunits:lu11:aufgaben:main.png?400|}}
 
 Führen Sie das Programm aus. 
 Sie sollten eine vergleichbare Ausagbe erhalten.
@@ -95,4 +95,5 @@ Sie sollten eine vergleichbare Ausagbe erhalten.
 Die Teilaufgaben werden laufend auf GitHub mittels ''push'' abgelegt.
 
 ----
-[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) René Probst
+{{tag>M320-LU11}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] René Probst, bearbeitet durch Marcel Suter

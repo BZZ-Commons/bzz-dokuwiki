@@ -22,9 +22,21 @@ MySQL user management and privileges are essential for controlling access to the
 ==== 1. Creating a New User ====
 To create a new user in MySQL, you use the CREATE USER statement:
 
-  CREATE USER 'username'@'localhost' IDENTIFIED BY 'password';
+  CREATE USER 'username'@'localhost' IDENTIFIED WITH 'mysql_native_password' BY 'password';
   
-This creates a user username that can only connect from localhost (the MySQL server machine).
+This creates a user username that can only connect from localhost (the MySQL server machine). 
+
+** Note **
+
+MySQL supports several types of password authentication mechanisms. These include:
+
+  - **mysql_native_password**: This is the traditional password hashing method in MySQL, using the SHA1 hashing algorithm. It's one of the oldest and widely used methods for authentication.
+  - **caching_sha2_password**: This is the default authentication plugin starting from MySQL 8.0. It uses SHA-256 for hashing passwords and offers better security than mysql_native_password.  
+  - **sha256_password**: This plugin provides SHA-256 based password hashing and can be used in conjunction with SSL for encrypted communication.
+  - **auth_socket**: This plugin allows users to authenticate based on the operating system's user credentials, which can be useful for local access without passwords (e.g., root user in some setups).
+  - **auth_pam**: This plugin enables MySQL to use external authentication mechanisms like PAM (Pluggable Authentication Modules), which allows for integration with OS-level authentication systems or LDAP.
+  - **authentication_ldap_sasl**: This plugin provides authentication using LDAP servers via the SASL (Simple Authentication and Security Layer) protocol.
+  - **authentication_ldap_simple**: A simpler LDAP authentication plugin that doesn't use SASL but supports basic LDAP-based authentication.
 
 ==== 2. Granting Privileges ==
 To assign privileges to a user, the GRANT statement is used. For example, to grant a user the ability to SELECT, INSERT, and UPDATE on a specific database:
