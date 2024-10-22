@@ -1,0 +1,37 @@
+====== LU11a - Abstrakte Basisklassen ======
+
+<WRAP center round tip 60%>
+Eine abstrakte Klasse kann als Blaupause für andere Klassen betrachtet werden. Sie ermöglicht es, eine Reihe von Methoden zu erstellen, die **in allen untergeordneten Klassen implementiert werden müssen** (<color #ed1c24>= Vertrag für die Implememtation</color>).
+</WRAP>
+
+===== Was ist eine abstrakte Klasse =====
+
+Eine Klasse, die eine oder mehrere abstrakte Methoden enthält, wird als abstrakte Klasse bezeichnet. 
+Eine abstrakte Methode ist eine Methode, die eine Deklaration, aber keine Implementierung hat.
+
+Wenn eine gemeinsame Schnittstelle für verschiedene Implementierungen einer Komponente bereitgestellt werden soll, verwenden wir eine abstrakte Klasse.
+
+In der UML wird eine abstrakte Klasse durch ''{abstract}'' markiert, während eine abstrakte Methode //kursiv// angeschrieben wird.
+
+==== Beispiel: Übergeordneter Begriff ''Medium'' als Träger einer Niederschrift ====
+
+{{:modul:m320:learningunits:lu99:theorie:lu07-abb1._abstrakte_klasse_in_uml.png?175|}}\\
+
+//Abb: UML-Diagramm mit abstrakter Klasse//
+
+Die Klasse ''Medium'' kann nicht instanziert werden, da sie als ''abstract'' deklariert ist. 
+Es bedingt immer eine konkrete Ableitung (hier ''Buch'') der Klasse.
+Die Methode ''getInfo'' wird als abstrakte Methode deklariert und muss in der abgeleiteten Klasse konkretisiert werden.
+
+
+===== Wozu abstrakte Basisklassen verwenden? =====
+
+
+Indem eine abstrakte Basisklasse definiert wird, können gemeinsame Anwendungsprogrammschnittstelle (API) für eine Reihe von Unterklassen definiert werden. 
+Diese Funktion ist besonders nützlich in Situationen, in denen ein Drittanbieter Implementierungen bereitstellt, z.B. mit Plugins. Sie kann aber auch helfen, wenn in einem grossen Team oder mit einer grossen Codebasis gearbeitet wird. 
+Eine Situation in der es schwierig oder gar nicht möglich ist, alle Klassen im Kopf zu behalten.
+
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Danie Fahrni, René Probst

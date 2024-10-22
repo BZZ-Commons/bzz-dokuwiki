@@ -1,12 +1,45 @@
 ====== LU10c - Vererbung in UML und Python ======
-{{:modul:m320:learningunits:lu06:theorie:lu06-abb6.5-vererbung_uml.png?800|}}
+
+| {{:modul:m320_2024:learningunits:lu10:transport.png?400|}}| <code python>
+class Transport:
+    def __init__(self):
+        self._power = 0.0
+        self.distance = 0.0
+    def accelerate(self):
+        pass
+    def slowdown(self):
+        pass
+        
+        
+class Aeroplane(Transport):
+    def __init__(self):
+        # call constructor of the parent class
+        super().__init__() 
+        self._climb_performance = 0.0
+    def take_off(self):
+        pass
+    def landing(self):
+        pass
+</code> |
 
 //Abb: Vererbung in UML-Darstellung//
 
 
-==== protected Attribute ====
+===== Sichtbarkeit der Attribute =====
+In früheren Learning Units haben Sie die Sichtbarkeit **+** ''public'' und **-** ''private'' kennen gelernt.
+Bei der Vererbung kommt nun noch die Sichtbarkeit ''protected'' hinzu.
 Attribute in der Oberklasse, welche auch in der Unterklasse direkt zugeifbar sein müssen, werden als **protected** (geschützt) deklariert.
 In UML wird dies mit dem Zeichen **#** signalisiert.
+
+^ Sichtbarkeit ^ Symbol ^ Wer darf zugreifen? ^
+| public | + | Jede andere Klasse/Funktion |
+| protected | # | Nur innerhalb der Klasse und deren Kinder |
+| private | - | Nur innerhalb der Klasse, keine Kinder |
+
+<WRAP center round tip 60%>
+Im Gegensatz zu anderen Programmiersprachen erzwingt Python keine Sichtbarkeit von Attributen.
+Die Angaben ''protected'' und ''private'' sind mehr als Hinweise für andere Programmierer zu verstehen.
+</WRAP>
 
 ----
 {{tag>M320-LU10}}

@@ -15,7 +15,7 @@ Die Vererbung wird auch gerne als **IS-A**-Beziehung (ist ein) bezeichnet. Nur w
 An Hand einiger Beispiel soll die IS-A-Beziehung verdeutlicht werden.
 
 ==== Beispiele ====
-Korrekte is-a Beziehungen:
+Korrekte ''is-a'' Beziehungen:
   * Auto ist ein (is a) Verkehrsmittel.
   * Hund ist ein Tier.
   * PET ist ein Kunststoff
@@ -24,9 +24,10 @@ Korrekte is-a Beziehungen:
 
 === ABER ===
 
-  * Zoo ist ein Tier -> ist falsch! \\Zoo "enthält" Tiere, ist dann korrekt. Hier handelt es sich also um eine Aggregation. Diesen Begriff werden wir später noch vertieft betrachten.
+  * Zoo ist ein Tier -> ist falsch! \\ Zoo "enthält" Tiere, ist dann korrekt. Hier handelt es sich also um eine Aggregation. Diesen Begriff werden wir später noch vertieft betrachten.
   * Verkehrsmittel ist ein Auto -> ist falsch! \\ Hier ist die Hierarchie umgedreht. Auto ist die Spezialisierung von Verkehrsmittel.
- 
+
+
 ----
 
 {{tag>M320-LU10}}

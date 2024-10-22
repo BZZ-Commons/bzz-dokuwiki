@@ -29,6 +29,11 @@ Die Reihenfolge der Elemente bestimmt den Index, beginnend mit Index=0.
 Um die Übersicht zu vereinfachen, **können** wir jedes Element auf eine eigene Zeile schreiben.
 <WRAP center box 80%>
 <code python>
+# Leere Listen erstellen
+emptylist1 = []
+emptylist2 = list()
+
+#Liste mit Inhalt erstellen
 fruit = ['Apfel', 'Banane', 'Zitrone', 'Erdbeere']
 print(fruit)
 animals = [

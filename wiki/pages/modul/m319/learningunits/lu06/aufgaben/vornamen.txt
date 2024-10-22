@@ -19,12 +19,12 @@ Zur besseren Übersicht sind die Anweisungen mit Farben codiert:
 Aus einer vorgegebenen Liste mit Vornamen, soll der dritte Vorname ausgegeben werden.
 
 ==== Programmlogik ====
-  * <color green>Definiere eine Variable für eine neue Liste.</color>
+  * <color green>Definiere eine Variable für eine neue leere Liste.</color>
   * <color green>Speichere die fünf Vornamen Petra, Bruce, Urs, Amelia, Jon in dieser Liste.</color>
   * <color green>Gib den dritten Vornamen aus der Liste aus.</color>
 
 <WRAP center round info 60%>
-Testen Sie die Funktion mit ''test_step1'' 
+Testen Sie die Funktion mit dem Testfall ''test_step1'' sie finden diesen im File ''givenname_test.py''
 </WRAP>
 
 ===== Schritt 2 =====

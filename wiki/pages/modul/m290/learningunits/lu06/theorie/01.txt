@@ -7,7 +7,7 @@
   - Revoke privileges from user
   - Deleting obsolete user 
   
-===== Introcuction =====
+===== Introduction =====
 In a warehouse such as Globus, Manor or Lafayette there are different user categories with different authorizations and privileges. According to the required responsibilties the general manager e.g. has full privileges, while the apprentice has much fewer. And as we know, a database is basicly a warehouse, not for goods, but for data.
 
 MySQL user management and privileges are essential for controlling access to the database system, ensuring security, and managing user roles. MySQL allows database administrators (DBAs) to create, manage, and assign permissions to users, limiting what actions users can perform on the database. This control helps protect sensitive data, prevent unauthorized changes, and maintain the overall integrity of the database.

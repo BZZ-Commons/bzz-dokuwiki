@@ -8,9 +8,9 @@ Für die objektorientierte Programmierung kann der Textausschnitt **Weitergabe v
 
 Gegeben ist ein Klasse ''BankAccount'' nach folgendem Klassendiagramm:
 
-{{modul:m320:learningunits:lu06:theorie:lu07-abb1.1-oberklasse.png?425|}}
+{{:modul:m320_2024:learningunits:lu10:bankaccount.png?400|}}
 
-//Abb: Oberklasse ''BancAccount''//
+//Abb: Oberklasse ''BankAccount''//
 
 Um nun ein Lohnkonto zu realisieren, braucht es eine Klasse, die genau die gleichen Eigenschaften und Fähigkeiten wie ''BankAccount'' aufweist, aber dazu noch einige weitere Aspekte bietet. 
 So z.B. die Möglichkeit, das Konto bis zu einem bestimmten Betrag überziehen zu können, also einen negativen Saldo zu haben. 
@@ -20,7 +20,7 @@ Anstatt nun eine neue Klasse zu erstellen, die eine erweiterte Kopie der Klasse 
 In diesem Zusammenhang spricht man von **erweitern einer Klasse**. 
 Das entsprechende Klassendiagramm sieht dann wie folgt aus:
 
-{{modul:m320:learningunits:lu06:theorie:lu07-abb1.2-unterklasse.png?500|}}
+{{:modul:m320_2024:learningunits:lu10:salaryaccount.png?400|}}
 
 //Abb: Unterklasse ''SalaryAccount''//
 

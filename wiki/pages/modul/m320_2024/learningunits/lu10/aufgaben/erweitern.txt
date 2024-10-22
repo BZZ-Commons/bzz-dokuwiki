@@ -3,19 +3,18 @@
 Sie können aufzeigen, wie Vererbung für die Erweiterung von Fähigkeiten eingesetzt wird.
 </WRAP>
 
-=== Auftrag ===
-Implementieren Sie die Klassen gemäss Klassendiagramm.
-Die Methode ''what_i_am()'' liefert einen Text zum Wesen des Objekts (a simply phone, an old handy, a modern smartphone). 
-Die Gerätefunktionen (''calling'', ''handle_sms'', ''use_internet'') schreiben in den Stdout, was sie tun (anrufen, sms senden und empfangen, das Internet benutzen)
-Verwenden Sie diese Begriff genau so, damit die Tests korrekt ablaufen.
-**Hinweise:** \\
+{{:modul:m320_2024:learningunits:lu10:aufgaben:phoneerweitern.png?400|}}
+
+===== Auftrag =====
+  * Implementieren Sie die Klassen gemäss Klassendiagramm.
+  * Die Methode ''what_i_am()'' liefert einen Text zum Wesen des Objekts (a simply phone, an old mobile, a modern smartphone). 
+  * Die Gerätefunktionen (''calling'', ''handle_sms'', ''use_internet'') schreiben mittels ''print'', was sie tun (anrufen, sms senden und empfangen, das Internet benutzen). \\ Verwenden Sie diese Begriff genau so, damit die Tests korrekt ablaufen.
+
+==== Hinweise: ====
    * Schreiben Sie die Klassen jeweils in eine eigene Datei (''phone.py'', ''handy.py'', ''smartphone.py'')
    * Sie können die Klassen mit den Testroutinen in den ''test_···.py'' Dateien testen. 
 
-{{modul:m320:learningunits:lu06:aufgaben:lu07-aufg3a_erweitern-10.png?200|}}\\
-
-
-Führen Sie nun ''main.py'' aus und püfen Sie den Output. Er muss dem unten gezeigten sinngemäss entsprechen.
+Führen Sie am Schluss ''main.py'' aus und püfen Sie den Output. Er muss dem unten gezeigten sinngemäss entsprechen.
 
 === Abgabe ===
 Wenn Ihr Programm sinngemäss folgende Output generiert, haben Sie die Aufgabe korrekt gelöst.
