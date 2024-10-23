@@ -1,6 +1,6 @@
 ====== LU02d - LB2 - Inhalt ======
 ===== LU06: SQL | DLQ commands =====
-  - Syntax einer typischen DQL-Anweisung kennen und erklären können.
+  - Syntax einer typischen DQL-Anweisung kennen und erklären 
   - Select auf einer Tabelle durchführen können
   - Select auf 2-3 Tabellen
   - Mit ohne ohne Alias
@@ -9,16 +9,19 @@
   - Anwendung von Aggregat Funktionen
 
 ===== LU07: SQL | DDL commands =====
-  - Syntax einer typischen DDL-Anweisung kennen und erklären können.
-  - Anlegen, verwenden und löschen von DB-Schemata (Instanzen)
-  - Anlegen, verändern und löschen von Tabellen
-  - Anlegen und verändern von Zusatzbedingungen (Constraints) 
+  - Syntax einer typischen DDL-Anweisung kennen und erklären
+  - Anlegen von DB-Schemata (Instanzen)
+  - Verwenden DB-Schemata (Instanzen)
+  - Löschen von DB-Schemata (Instanzen)
+  - Anlegen von Tabellen
+  - Verändern von Tabellendefinitionen
+  - Löschen von Tabellen
+  - Anlegen von Constraints(Zusatzbedingungen)
 
 ===== LU08: SQL | DML commands =====
-  - Syntax einer typischen DML-Anweisung kennen und erklären können.
-  - Einfügen von Datensätzen in Tabellen nach Vorgabe
-  - Verändern von Tabelleninhalten
-  - Verändern von Tabelleninhalten nach Vorgaben
-  - Löschen von Tabelleninhalten nach Vorgaben 
+  - Syntax einer typischen DML-Anweisung kennen und erklären
+  - Einfügen von Datensätzen in Tabellen 
+  - Verändern von Tabelleninhalten 
+  - Löschen von Tabelleninhalten 
 
 [[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir
