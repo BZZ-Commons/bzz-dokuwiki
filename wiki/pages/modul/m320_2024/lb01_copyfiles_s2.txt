@@ -12,7 +12,10 @@ Während Sie warten, lesen Sie sich in die Aufgabenstellung ein.
 </WRAP>
 
 ==== Resultat im GitHub Repository ====
+Aktualisieren Sie die Seite mit dem Repo in GitHub in regelmässigen Abständen.
+Nach ca. 1-2 Minuten sollten die neuen Dateien erscheinen.
+
 ^ Candle ^ Animal ^
 | {{:modul:m320_2024:candlefiles.png?300|}} | {{:modul:m320_2024:animalfiles.png?300|}} |
 
-3. In Ihrer Entwicklungsumgebung führen Sie "Update Project" durch.
+3. In Ihrer Entwicklungsumgebung führen Sie im Menu "Git" -> "Update Project" durch. \\ Dadurch erscheinen die neuen Dateien auch in Ihrer Entwicklungsumgebung

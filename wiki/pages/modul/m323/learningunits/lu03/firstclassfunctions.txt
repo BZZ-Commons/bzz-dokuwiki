@@ -1,6 +1,6 @@
 ====== LU03d - First-Class Functions ======
 
-In der funktionalen Programmierung sind Funktionen First-Class Citizens. Dies bedeutet, dass Funktionen genauso behandelt werden wie andere Werte wie Zahlen, Strings oder Listen. Sie können als Argumente an andere Funktionen übergeben, von Funktionen zurückgegeben und in Variablen gespeichert werden.
+In der funktionalen Programmierung sind Funktionen First-Class Citizens auf Deutsch **Bürger erster Klasse**. Dies bedeutet, dass Funktionen genauso behandelt werden wie andere Werte wie Zahlen, Strings oder Listen. Sie können als Argumente an andere Funktionen übergeben, von Funktionen zurückgegeben und in Variablen gespeichert werden.
 
 === Definition von First-Class Functions ===
 
