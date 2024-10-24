@@ -1,0 +1,77 @@
+====== LU01d - Funktionen ======
+
+Funktionen sind in JavaScript fundamentale Bausteine und werden verwendet, um wiederverwendbare, strukturierte Blöcke von Code zu schreiben, die eine bestimmte Aufgabe erfüllen. Sie sind ein zentraler Bestandteil der Programmierlogik und können als First-Class Citizens (Erstklassige Objekte) betrachtet werden, was bedeutet, dass Funktionen wie andere Datenstrukturen behandelt werden können: Sie können Variablen zugewiesen, als Argumente an andere Funktionen übergeben und sogar von anderen Funktionen zurückgegeben werden.
+
+===== Funktionserklärungen (Function Declarations) =====
+Die klassische Methode, eine Funktion zu definieren, ist die Funktionserklärung (Function Declaration). Dies ist der traditionellste Weg, eine Funktion zu schreiben. Eine Funktionserklärung beginnt mit dem Schlüsselwort function, gefolgt vom Namen der Funktion und einer Liste von Parametern in Klammern.
+
+<code javascript>
+function addiere(x, y) {
+  return x + y;
+}
+</code>
+
+In diesem Beispiel wird eine Funktion addiere erstellt, die zwei Parameter, x und y, erwartet. Sie gibt die Summe dieser beiden Parameter zurück.
+
+==== Besonderheit ====
+Funktionserklärungen werden gehoisted, was bedeutet, dass sie im gesamten Gültigkeitsbereich verfügbar sind, noch bevor der eigentliche Code ausgeführt wird. Du kannst die Funktion also schon aufrufen, bevor sie im Code definiert wurde.
+
+<code javascript>
+console.log(addiere(3, 4)); // Funktion wird vor ihrer Definition aufgerufen
+
+function addiere(x, y) {
+  return x + y;
+}
+</code>
+
+Das obige Beispiel funktioniert, weil JavaScript Funktionserklärungen beim Start des Codes automatisch "nach oben verschiebt".
+
+===== Funktionsausdrücke (Function Expressions) =====
+Ein Funktionsausdruck ist eine alternative Methode, um eine Funktion zu definieren. Dabei wird die Funktion als Wert einer Variablen zugewiesen. Anders als bei Funktionserklärungen werden Funktionsausdrücke nicht gehoisted. Das bedeutet, die Funktion ist erst verfügbar, nachdem der Code die Zuweisung erreicht hat.
+
+<code javascript>
+const multipliziere = function(x, y) {
+  return x * y;
+};
+
+console.log(multipliziere(3, 4)); // 12
+</code>
+
+Hier wird die anonyme Funktion (eine Funktion ohne Namen) der Variablen multipliziere zugewiesen. Beachte, dass du diese Funktion erst nach der Definition aufrufen kannst.
+
+===== Arrow-Funktionen (Arrow Functions) =====
+
+Arrow-Funktionen sind eine modernere, kürzere Syntax, um Funktionen zu schreiben. Sie wurden mit ES6 (ECMAScript 2015) eingeführt und unterscheiden sich in mehreren Aspekten von herkömmlichen Funktionen. Eine Arrow-Funktion verwendet das =>-Symbol und verzichtet auf das Schlüsselwort function.
+
+<code javascript>
+const addiere = (x, y) => {
+  return x + y;
+};
+</code>
+
+Dieses Beispiel ist funktional identisch mit der vorherigen Funktionsdefinition, nur mit einer kürzeren Syntax. Wenn eine Funktion nur einen Rückgabewert hat, kann sie noch weiter vereinfacht werden:
+
+<code javascript>
+const addiere = (x, y) => x + y;
+</code>
+
+==== Eigenschaften von Arrow-Funktionen ====
+  * **Kürzere Syntax:** Arrow-Funktionen sind kompakter und erfordern kein function-Schlüsselwort.
+  * **Kein eigenes this:** Arrow-Funktionen haben kein eigenes this. Sie übernehmen das this des umgebenden Kontexts, was sie besonders nützlich in Objektmethoden oder in Callbacks macht.
+
+===== Methoden (Funktionen in Objekten) =====
+In JavaScript können Funktionen als Methoden innerhalb von Objekten definiert werden. Eine Methode ist im Grunde eine Funktion, die als Wert einer Eigenschaft in einem Objekt gespeichert wird. Diese Methode kann auf die anderen Eigenschaften des Objekts zugreifen, indem sie das Schlüsselwort this verwendet, welches auf das aktuelle Objekt verweist.
+
+<code javascript>
+const person = {
+  name: "Max",
+  alter: 30,
+  begruessen: function() {
+    return `Hallo, mein Name ist ${this.name} und ich bin ${this.alter} Jahre alt.`;
+  }
+};
+
+console.log(person.begruessen()); // "Hallo, mein Name ist Max und ich bin 30 Jahre alt."
+</code>
+
+In diesem Beispiel enthält das Objekt person eine Methode begruessen. Diese Methode greift auf die Eigenschaften name und alter des Objekts person zu, indem sie this.name und this.alter verwendet. Das this-Schlüsselwort referenziert das Objekt, in dem die Methode definiert wurde.

@@ -39,7 +39,7 @@ Change the salary column's data type to FLOAT in the employees table.
 Remove the stock_quantity column from the products table.
 
 ==== TASK F: DROP TABLE ====
-Completely remove the orders table from the database.
+Completely remove the PRODUCTS table from the database.
 
 ===== Solution =====
 [[modul:m290:learningunits:lu05:loesungen:l02|Lösung]]

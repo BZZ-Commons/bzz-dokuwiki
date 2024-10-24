@@ -2,10 +2,6 @@
 <WRAP center round todo 60%>
 Erstelle ein Programm, welches eine Liste mit Vornamen verarbeitet.
 </WRAP>
-<HTML>
-
-<iframe src="https://trinket.io/embed/python3/b7552cd23b?outputOnly=true&start=result" width="100%" height="200" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
-</HTML>
 
 Das Programm wird Schritt für Schritt aufgebaut.
 
@@ -17,7 +13,9 @@ Zur besseren Übersicht sind die Anweisungen mit Farben codiert:
 
 ===== Schritt 1 =====
 Aus einer vorgegebenen Liste mit Vornamen, soll der dritte Vorname ausgegeben werden.
-
+<HTML>
+<iframe src="https://trinket.io/embed/python/77e53ab315a3?outputOnly=true&start=result" width="100%" height="100" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+</HTML>
 ==== Programmlogik ====
   * <color green>Definiere eine Variable für eine neue leere Liste.</color>
   * <color green>Speichere die fünf Vornamen Petra, Bruce, Urs, Amelia, Jon in dieser Liste.</color>
@@ -29,6 +27,9 @@ Testen Sie die Funktion mit dem Testfall ''test_step1'' sie finden diesen im Fil
 
 ===== Schritt 2 =====
 Das Programm füllt die Liste mit den Vornamen, die der Benutzer eingibt.
+<HTML>
+<iframe src="https://trinket.io/embed/python/725ccb699ce2?outputOnly=true&start=result" width="100%" height="200" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+</HTML>
 
 ===== Programmlogik =====
   * Definiere eine Variable für eine neue Liste.
@@ -43,7 +44,9 @@ Testen Sie die Funktion mit ''test_step2''
 
 ==== Schritt 3 ====
 Der Benutzer bestimmt, welchen Vornamen das Programm ausgeben soll.
-
+<HTML>
+<iframe src="https://trinket.io/embed/python3/b7552cd23b?outputOnly=true&start=result" width="100%" height="200" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+</HTML>
 ==== Programmlogik ====
   * Definiere eine Variable für eine neue Liste.
   * Erstelle eine Iteration, die 5x durchgeführt wird:
