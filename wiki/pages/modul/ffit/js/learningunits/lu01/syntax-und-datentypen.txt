@@ -1,0 +1,86 @@
+====== LU01b - Syntax und Datentypen ======
+
+===== Datentypen =====
+JavaScript ist eine dynamisch typisierte Sprache, was bedeutet, dass Variablen ihren Datentyp zur Laufzeit annehmen. Die gängigsten Datentypen in JavaScript sind:
+
+**String** Eine Zeichenkette, die in Anführungszeichen eingeschlossen ist, z. B. "Hallo Welt".
+<code javascript>
+let name = "Max";
+</code>
+
+**Number** Zahlenwerte, die sowohl ganze Zahlen als auch Gleitkommazahlen umfassen, z. B. 42 oder 3.14.
+<code javascript>
+let alter = 25;
+</code>
+**Boolean** Ein Wahrheitswert, der entweder true oder false sein kann.
+<code javascript>
+let istProgrammierer = true;
+</code>
+**Object** Eine komplexe Datenstruktur, die Schlüssel-Wert-Paare enthält, z. B. { name: "Max", alter: 25 }.
+<code javascript>
+let person = {
+  name: "Max",
+  alter: 25,
+  beruf: "Programmierer"
+};
+</code>
+**Array** Eine geordnete Liste von Werten, z. B. [1, 2, 3, 4].
+<code javascript>
+let sprachen = ["JavaScript", "Python", "C++"];
+</code>
+
+===== Variablen =====
+Variablen und Konstanten
+In JavaScript können Variablen mit var, let oder const deklariert werden:
+
+  * **var:** Ist die älteste Methode, um eine Variable zu deklarieren. var hat funktionsweiten Geltungsbereich, was in grossen Programmen zu unerwartetem Verhalten führen kann.
+  * **let:** Führt Block-Scope ein, was bedeutet, dass die Variable nur innerhalb des Blockes, in dem sie definiert wurde, gültig ist.
+  * **const:** Wird für Konstanten verwendet, d.h. für Werte, die nach der ersten Zuweisung nicht mehr geändert werden dürfen.
+
+<code javascript>
+function testVar() {
+  var x = 10;
+  if (true) {
+    var x = 20;
+    console.log(x); // 20
+  }
+  console.log(x); // 20
+}
+
+function testLet() {
+  let y = 10;
+  if (true) {
+    let y = 20;
+    console.log(y); // 20
+  }
+  console.log(y); // 10
+}
+
+const z = 30;
+try {
+  z = 40; // Fehler, da const nicht geändert werden kann
+} catch (error) {
+  console.log(error);
+}
+</code>
+
+===== Operatoren und Ausdrücke =====
+JavaScript bietet eine Vielzahl von Operatoren, um Berechnungen durchzuführen und Vergleiche zu machen:
+
+  * **Arithmetische Operatoren:** +, -, *, /, %
+  * **Vergleichsoperatoren:** ==, ===, !=, !==, >, <, >=, <=
+  * **Logische Operatoren:** && (und), || (oder), ! (nicht)
+
+<code javascript>
+let a = 5;
+let b = 10;
+console.log(a + b); // 15
+
+console.log(a == b); // false
+console.log(a === b); // false
+
+let c = true;
+let d = false;
+console.log(c && d); // false
+console.log(c || d); // true
+</code>
