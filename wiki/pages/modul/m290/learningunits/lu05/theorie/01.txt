@@ -2,10 +2,37 @@
 
 ===== Learning Objectives =====
 In this session, we will learn some thrilling details about how to properly manage our databases. To achieve this, we need to know more about:
+  - What a db schema / db instance is.
   - How to create database instances.
   - How to display all currently available instances.
   - How to connect to one specific db-instance.
   - how you can delete obsolete or no longer required databases.
+
+=====  DB Schema vs. DB Instance =====
+A database schema and a database instance are related concepts in the context of a database system, but they refer to different aspects:
+
+{{:modul:m290:learningunits:lu05:theorie:1545889164421.jpg?400|}}
+
+==== 1. Database Schema ====
+The schema is the structure or blueprint that defines how data is organized within the database. It describes the database's logical design, including:
+
+  * **Tables**: The individual entities (e.g., Customers, Orders).
+  * **Columns**: The attributes of each entity (e.g., CustomerID, OrderDate).
+  * **Constraints**: Rules applied to the data (e.g., primary keys, foreign keys, unique constraints).
+  * **Relationships**: How tables relate to one another (e.g., one-to-many, many-to-many relationships).
+  * **Views, indexes, triggers, and stored procedures**: Other elements that define how the data is accessed or managed.
+
+Think of the schema as the blueprint or structure of the database that remains mostly static or changes rarely.
+
+==== 2. Database Instance: ====
+The instance refers to the actual data stored in the database at a particular point in time. It is the current state of the database, including all of the records or entries inside the tables defined by the schema.
+
+  * It includes actual rows of data in the tables.
+  * The instance can change frequently as data is inserted, updated, or deleted.
+  * You can think of the instance as the current snapshot of the database contents, while the schema defines the permanent framework.
+
+==== Analogy ====
+The schema is like the blueprint of a building (defining rooms, walls, and layout), while the instance is like the current state of the building (furniture, people inside, and their positions, which can change).
 
 ===== Access to the db with Webstorm code editor =====
 There are many ways how we can connect to our database instance. One way is from the terminal or commandline. Instead, during the module 290 we are going to use do the management with the code editor WEBSTORM, which is pictured below.

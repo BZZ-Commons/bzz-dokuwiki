@@ -17,11 +17,11 @@ Das Programm gibt die umgerechnete Längeneinheit aus.
 ===== Auftrag =====
 Wir verwenden zwei Listen mit den Einheiten und den Umrechnungsfaktoren, um das Programm später möglichst einfach zu erweitern.
 
-^ units ^ _ ^ factors ^
-| Meter | | 1 |
-| Zentimeter | | 100 |
-| Meilen | | 0.000621371 |
-| Seemeilen | | 0.000539957 |
+^ units  ^ factors ^
+| Meter | 1 |
+| Zentimeter  | 100 |
+| Meilen  | 0.000621371 |
+| Seemeilen  | 0.000539957 |
 
 Für die Eingabe der Einheit, zeigt das Programm dem Benutzer alle verfügbaren Einheiten an.
 Danach gibt der Benutzer den Wert und die beiden Einheiten (Von/Nach) für die Umrechnung ein.
@@ -34,6 +34,8 @@ Zuletzt rechnet das Programm den Wert um und zeigt das Resultat an.
 ===== Vorgehen =====
 
   - Akzeptiere das GitHub Classroom Assignment im Moodlekurs.
+  - Um die Issues zu erhalten, trage deinen Namen ins ''converter.py'' ein und commit und push \\ {{:modul:m319:learningunits:lu06:aufgaben:getissues.png?400|}}
+  - Überprüfe dein Repo ob die Issues vorhanden sind (dauert etwa 2 Minuten, Seite aktualisieren nicht vergessen)
   - Klone das Repository in PyCharm. \\ Im Repository auf GitHub findest du eine Reihe von Issues. Diese Issues zeigen dir, wie du das Programm schrittweise umsetzen kannst.
   - Schaue dir das Issue **1** an.
   - Codiere die im Issue beschriebene Programmlogik in ''converter.py''.
@@ -41,9 +43,9 @@ Zuletzt rechnet das Programm den Wert um und zeigt das Resultat an.
   - Falls die Testfälle erfolgreich durchgeführt wurden:
     - Führe einen Commit durch. Schreibe als Commit-Message "Resolves #**n**", wobei du **n** durch die Nummer des Issues ersetzt.
     - Führe einen Push in das GitHub Repository durch.
-    - Schaue dir das nächste Issue an und gehe zu Schritt 4.
+    - Schaue dir das nächste Issue an und gehe zu Schritt 6.
   - Sonst:
-    - Suche die Ursache für den Fehler und gehe zu Schritt 4.
+    - Suche die Ursache für den Fehler und gehe zu Schritt 6.
   - Führe einen Push durch.
 
 === Abgabe ===
