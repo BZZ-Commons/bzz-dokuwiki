@@ -3,7 +3,8 @@
 **Sources** 
   - [[https://www.w3schools.com/sql/sql_insert.asp | W3Schools | INSERT INTO ]]
   - [[https://dev.mysql.com/doc/refman/8.4/en/insert.html | MySQL.COM | INSERT INTO]]
-  - [[https://www.youtube.com/watch?v=Cxilfg-M158 | Youtube | How to INSERT rows into a TABLE]]
+  - {{ :modul:m290:learningunits:lu07:theorie:mysql_how_to_insert_rows_into_a_table.mp4 |}}
+
 
 ===== INSERT Statement =====
 The INSERT command is used to add new records to a table. When using INSERT, it is essential to specify the table and columns where the data will be added.
@@ -15,6 +16,8 @@ The INSERT command is used to add new records to a table. When using INSERT, it 
 ** Example **
   INSERT INTO employees (employee_id, first_name, last_name, hire_date, salary) 
   VALUES (1, 'John', 'Doe', '2023-09-18', 55000);
+  
+
 
 ===== SINGLE VS MULTIPLE INSERTS =====
 In SQL, inserting data into tables is a fundamental operation that is often performed using the INSERT INTO statement. This statement allows you to add new rows to a database table, either one at a time or in bulk. The two primary ways to insert data are through **single inserts** and **multiple inserts**.
@@ -36,6 +39,8 @@ Multiple inserts, on the other hand, allow you to add several rows of data in a 
          (value7, value8, value9);
          
 Multiple inserts are useful when you need to insert a large set of data at once, as it can significantly improve performance compared to running multiple single insert statements.
+
+
 
 ==== Conclusion ====
 Both single and multiple inserts serve important roles depending on the nature of the task. While single inserts are simpler and suited for individual row entry, multiple inserts enhance efficiency in batch processing. Understanding when and how to use each type is crucial for optimizing database operations.
