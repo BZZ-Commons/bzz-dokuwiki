@@ -1,22 +1,35 @@
-==== Aufgabe 4 - Polymorphie am Beispiel Taschenrechner ====
-=== Ziel ===
+====== LU12.A01 - Polymorphie am Beispiel Taschenrechner ======
+
+<WRAP center round todo 60%>
 Sie können eine bestehende OO-Anwendung erweitern.
-=== Auftrag ===
-Der von Ihnen erstellt Rechner soll neben den 4 Grundoperationen auch noch die Exponentialfunktion anbieten.\\
-{{:modul:m320:learningunits:lu99:aufgaben:lu07-aufg4_klassendiagramm.png?250|}}\\
+</WRAP>
+
+===== Auftrag =====
+Der von Ihnen erstellt Rechner soll neben den 4 Grundoperationen auch noch die Exponentialfunktion anbieten.
+
+{{:modul:m320:learningunits:lu99:aufgaben:lu07-aufg4_klassendiagramm.png?250|}}
+
 Als Operationszeichen dient das Zeichen ''^''.\\
-=== Vorgehen ===
-Verwenden Sie als Basis das Projekt aus Aufgabe LU07-3. Erstellen Sie einen neuen Branch mit Namen exposer. Erstellen Sie nun in diesem Branch Ihre Lösung.
-  - Studieren Sie das Klassendiagramm der Klasse ''Tokenizer''. Wie können Sie - ohne deren Code zu verändern - weitere Operationszeichen zufügen? Passen Sie entsprechend **Ihren Code** an. 
+
+===== Vorgehen =====
+  - Verwenden Sie als Basis das Projekt aus [[.:modul:m320_2024:learningunits:lu11:aufgaben:calculator]]. 
+  - Erstellen Sie einen neuen Branch mit Namen exposer. 
+  - Erstellen Sie nun in diesem Branch Ihre Lösung.
+    * Studieren Sie das Klassendiagramm der Klasse ''Tokenizer''. Wie können Sie weitere Operationszeichen zufügen? Passen Sie entsprechend **Ihren Code** an. 
   - Erstellen Sie die neue Klasse ''Exposer''. Suchen Sie im Internet nach einer Lösung, wie Sie in Python eine Potenz berechnen können.
   - Ergänzen Sie den Code, so dass die Operation ''^'' auch erkannt und die entsprechende Klasse instanziiert wird.
   - Testen Sie Ihre Anwendung. Die Eingabe 2^6 müsste 64 ergeben.
-=== Abgabe ===
+
+===== Abgabe =====
 Keine.
 
-=== Zu Polymorphie ===
-Sie haben hier und jetzt gesehen, wie kräftig das Konstrukt der Polymorphie bei OO sein kann. Es bedarf aber einer guten Planung der Klassen und deren Methoden, damit Polymorphie auch wirklich genutzt werden kann. Diesen Teil - das OOD (object oriented design) - werden Sie im Rahmen des Schulunterrichts leider nicht erlernen.\\
-Darum ist es wichitg, dass Sie die gewonnenen Erkenntisse mit auf Ihren beruflichen Weg nehmen und bei Gelegenheit sich weiteres Wissen rundum OO - so z.B. auch den Umgang mit Design Pattern - im Selbststudium aneignen.\\
+===== Zu Polymorphie =====
+Sie haben hier und jetzt gesehen, wie kräftig das Konstrukt der Polymorphie bei OO sein kann. 
+Es bedarf aber einer guten Planung der Klassen und deren Methoden, damit Polymorphie auch wirklich genutzt werden kann. 
+Diesen Teil - das OOD (object oriented design) - werden Sie im Rahmen des Schulunterrichts leider nicht erlernen.
+
+Darum ist es wichtig, dass Sie die gewonnenen Erkenntnisse mit auf Ihren beruflichen Weg nehmen und bei Gelegenheit sich weiteres Wissen rundum OO - so z.B. auch den Umgang mit Design Pattern - im Selbststudium aneignen.
 
 ----
-[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) René Probst
+{{tag>M320-LU12}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] René Probst, bearbeitet durch Marcel Suter
