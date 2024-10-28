@@ -1,26 +1,73 @@
-====== LU09.A02 - SQL- DCL: Grant Privileges - Under construction ======
+====== LU09.A02 - SQL- DCL: CREATE USER ======
+It is high time to mess a litte around with our new SQL powers, don't you think? So, let's try it directly on our Webstorm. 
+
+As the database administrator, we want to create a new user and only grant this user the necessary rights to operate the web application, which includes DML operations such as INSERT, UPDATE, DELETE, but not DDL operations such as CREATE or DROP of tables. After all, we don't want the webapplication take control over our database, are we?
 
 ===== Requirements  =====
   * Work type: individual
-  * Timeframe: 15 Minutes
+  * Timeframe: 20 Minutes
   * Means of aid: 
       * only teaching materials, no websearch, no use of ai.
-      * [[https://www.w3schools.com/sql/trysql.asp?filename=trysql_select_columns | W3Schools | SQL Editor]]
-  * Expected result: Semsntically and syntactically correct SQL statements according to the requirements of the case studies. 
+      * Webstorm with connection to the MySQL-DB
+  * Expected result: Semantically and syntactically correct SQL statements according to the requirements of the case studies. 
 
-....
-===== Assignments =====
+===== Case studies / Assignments =====
+As a database administrators we are assigned to create a AppUser, which has for security reasons only the right for DML operations, but must not be allowed for DDL operation. We don't want a hacker to delete our entire webshop, do we? 
 
-  * a) ... 
-  * 
+To get the job done, follow the instructions below:
+
+  - Create as the sysdba (systemadministrator of the databaswe) a new user
+  - Grant this role only the necessary rights
+  - Create as a sysdba a test table and fill it with some testdata
+  - Establish a new connection within the webstorm by using the credentials of this new user
+  - Try out the DML operations, wich should be possible (insert, update, delete)
+  - Try out to DDL operations, which should result in errors due to missing permissions for that particular user
+  - Drop the newly created user finally
+
+==== Task A1 ====
+**Create the User**: Create a user named //restrictedUser// with the password //SafePassword123// using the //mysql_native_password// plugin.
+
+  CREATE USER 'restrictedUser'@'localhost' IDENTIFIED WITH mysql_native_password BY 'SafePassword123';
+
+==== Task A2 ====
+** Overview of the current privileges**: Display all users.
+
+  SELECT user, host, plugin FROM mysql.user;
+
+The result set should look like:
+
+{{:modul:m290:learningunits:lu06:aufgaben:showusers.png?600|}}
+
+==== Task A3 ====
+**Grant Privileges Without Table Management**: Grant the user //restrictedUser// the ability to read and write data but not to create, alter, or drop tables. Use the following commands to give only the required privileges.
+
+  GRANT SELECT, INSERT, UPDATE, DELETE ON myAppDB.* TO 'restrictedUser'@'localhost';
+
+==== Task A4 ====
+**Rovoke Privileges**: To be certain that nothing unintended can happen revoke the CREATE, ALTER, and DROP privileges explicitly.
+
+  REVOKE CREATE, ALTER, DROP ON myAppDB.* FROM 'restrictedUser'@'localhost';
+
+==== Tasc A5 ====
+**View the User’s Privileges**: Check the privileges to ensure that the user cannot manage tables.
+
+  SHOW GRANTS FOR 'restrictedUser'@'localhost';
+
+==== Task A6 ====
+**Test the User’s Access**: Connect as //restrictedUser// and try to perform a CREATE TABLE or DROP TABLE operation. The attempt should result in a permission error.
+
+==== Task A7 ====
+**Delete the User (optional)**: After testing, you can delete the user if they are no longer needed.
+
 ===== Solution =====
-[[modul:m290:learningunits:lu06:loesungen:l01|Lösung]]
+[[modul:m290:learningunits:lu06:loesungen:l02|Lösung]]
 
 
 ===== Vocabulary =====
 ^ English ^ German ^ 
-| respectively | beziehungsweise|
+| explicitely | ausdrücklich |
 | assignment | Auftrag |
+| to revoke | widerrufen, aufheben |
 
 
 ----
