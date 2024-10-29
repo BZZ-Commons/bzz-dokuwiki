@@ -1,48 +1,15 @@
 ====== LU09.S01 - SQL- DCL: Preparatory Work - Under Construction ======
 
-===== Case studies / Assignments =====
+After applying tasks 1.1 - 1.5, the database including the table filled with the 10 rows of sample data should be available, as displayed in the following image.
 
-==== Task A ====
-**Create the User**: Create a user named //restrictedUser// with the password //SafePassword123// using the //mysql_native_password// plugin.
+{{:modul:m290:learningunits:lu06:loesungen:a01.png?800|}}
 
-  CREATE USER 'restrictedUser'@'localhost' IDENTIFIED WITH mysql_native_password BY 'SafePassword123';
-
-==== Task B ====
-**Grant Privileges Without Table Management**: Grant the user //restrictedUser// the ability to read and write data but not to create, alter, or drop tables. Use the following commands to give only the required privileges.
-
-  GRANT SELECT, INSERT, UPDATE, DELETE ON myAppDB.* TO 'restrictedUser'@'localhost';
-
-
-==== Task C ====
-**Rovoke Privileges**: To be certain that nothing unintended can happen revoke the CREATE, ALTER, and DROP privileges explicitly.
-
-  REVOKE CREATE, ALTER, DROP ON myAppDB.* FROM 'restrictedUser'@'localhost';
-
-==== Tasc D ====
-**View the User’s Privileges**: Check the privileges to ensure that the user cannot manage tables.
-
-  SHOW GRANTS FOR 'restrictedUser'@'localhost';
-
-==== Task E ====
-**Test the User’s Access**: Connect as //restrictedUser// and try to perform a CREATE TABLE or DROP TABLE operation. The attempt should result in a permission error.
-
-  - Go to Webstorm and try to connect to the database
-  - Then display the systemdate from mysql (select is allowed)
-  - Finally, try to create a table (it should fail, because this user has no privileges to create tables)
-  - 
-
-==== Task F ====
-**Delete the User (optional)**: After testing, you can delete the user if they are no longer needed.
-
-===== Solution =====
-[[modul:m290:learningunits:lu06:loesungen:l01|Lösung]]
 
 
 ===== Vocabulary =====
 ^ English ^ German ^ 
-| explicitely | ausdrücklich |
-| assignment | Auftrag |
-| to revoke | widerrufen, aufheben |
+| ...| ...|
+
 
 
 ----

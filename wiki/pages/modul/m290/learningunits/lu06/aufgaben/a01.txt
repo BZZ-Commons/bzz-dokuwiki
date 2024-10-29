@@ -14,38 +14,42 @@ As the database administrator, we want to create a new user and only grant this 
 ===== Case studies / Assignments =====
 Before we spend elbow grease, we need to prepare our working enviroment. Meaning we need to prepare our computer for the assignments later.
 
-==== Task A1 ====
+==== Task 1.1 ====
 **Login as root**: Login in from Webstorm to your database as //root// (sysdba = systemadministrator for the datababase) with your a //root-password//.
 
-==== Task A2 ====
+==== Task 1.2 ====
 **New Database**: Create a new database named //myDatabase//. 
 
   CREATE DATABASE myDatabase;
 
-==== Task A3 ====
+==== Task 1.3 ====
 **use db**: Use that newly created db.
 
   USE myDatabase;
 
-==== Task A4: ====
-** Create a test table**: Create a table //user// with 3 columns of your choice as a test table, and fill it with some test data. 
+==== Task 1.4: ====
+** Create a test table**: Create a table //users// with 3 columns of your choice as a test table.
 
-  CREATE TABLE user (
+  CREATE TABLE users (
     user_id INT AUTO_INCREMENT PRIMARY KEY,
     username VARCHAR(50) NOT NULL,
     email VARCHAR(100) NOT NULL
   );
   
-  INSERT INTO user (username, email) VALUES ('john_doe', 'john.doe@example.com');
-  INSERT INTO user (username, email) VALUES ('jane_smith', 'jane.smith@example.com');
-  INSERT INTO user (username, email) VALUES ('michael_brown', 'michael.brown@example.com');
-  INSERT INTO user (username, email) VALUES ('sarah_johnson', 'sarah.johnson@example.com');
-  INSERT INTO user (username, email) VALUES ('chris_williams', 'chris.williams@example.com');
-  INSERT INTO user (username, email) VALUES ('anna_lee', 'anna.lee@example.com');
-  INSERT INTO user (username, email) VALUES ('david_kim', 'david.kim@example.com');
-  INSERT INTO user (username, email) VALUES ('laura_clark', 'laura.clark@example.com');
-  INSERT INTO user (username, email) VALUES ('jake_lewis', 'jake.lewis@example.com');
-  INSERT INTO user (username, email) VALUES ('emily_martinez', 'emily.martinez@example.com');
+==== Task 1.5: ====
+**Content data for testing:** Fill the table user with some test data: 
+  
+  INSERT INTO users (username, email) 
+  VALUES  ('john_doe', 'john.doe@example.com'),
+        ('jane_smith', 'jane.smith@example.com'),
+        ('michael_brown', 'michael.brown@example.com'),
+        ('sarah_johnson', 'sarah.johnson@example.com'),
+        ('chris_williams', 'chris.williams@example.com'),
+        ('anna_lee', 'anna.lee@example.com'),
+        ('david_kim', 'david.kim@example.com'), 
+        ('laura_clark', 'laura.clark@example.com'), 
+        ('jake_lewis', 'jake.lewis@example.com'),
+        ('emily_martinez', 'emily.martinez@example.com');
 
 ===== Solution =====
 [[modul:m290:learningunits:lu06:loesungen:l01|Lösung]]

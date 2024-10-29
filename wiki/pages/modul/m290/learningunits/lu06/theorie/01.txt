@@ -64,6 +64,16 @@ If a user is no longer needed, you can remove the account using the DROP USER st
   
 This removes both the user and their associated privileges.
 
+==== 6. Activating Change of Privileges After Altering Them ====
+To activate changes to privileges in MySQL after modifying them, you can use the following command:
+
+  FLUSH PRIVILEGES;
+
+This command forces MySQL to reload the privilege tables, applying any recent changes made to user privileges. Normally, after using GRANT, REVOKE, or ALTER USER, MySQL applies changes automatically, but if you've made manual adjustments directly in the mysql database tables, running FLUSH PRIVILEGES ensures that the changes take effect immediately.
+
+<color #ed1c24>Please note that the change will only take effect AFTER a new login. This means that you must open a new console window with your new login data in order to recognize the change in permissions.</color>
+
+  
 
 ===== Video-Tutorials ====
 ^How to Create a New User in MySQL |{{:modul:m290:learningunits:lu06:theorie:how_to_create_a_new_user_in_mysql.mp4 }} |
