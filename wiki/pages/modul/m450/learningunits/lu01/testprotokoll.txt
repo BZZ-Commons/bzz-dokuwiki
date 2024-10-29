@@ -1,8 +1,12 @@
-====== LU01d - Aufbau eines Prüfprotokolls ======
+====== LU01d - Aufbau eines Testprotokolls ======
+<WRAP center round info 60%>
+Ein Testprotokoll dokumentiert die Ergebnisse der durchgeführten Testfälle und dient als Nachweis für den Testverlauf und die Testergebnisse. 
+Es enthält Informationen wie Testzeitpunkt, Testumgebung, durchgeführte Testfälle, deren Ergebnisse und eventuell aufgetretene Abweichungen oder Fehler.
+</WRAP>
 
 ===== Einleitung =====
 Sobald das Programm fertiggestellt ist, führen wir einen Testlauf mit allen Testfällen durch.
-Das Testprotokoll hält die Ergebnisse eines Testlaufs fest.
+Das Testprotokoll hält die Ergebnisse **eines** Testlaufs fest.
 
 Normalerweise werden wir beim Testen Fehler entdecken.
 Diese Fehler können vom Programmierer **nach** dem Testdurchlauf mit Hilfe des Testprotokolls korrigiert werden.

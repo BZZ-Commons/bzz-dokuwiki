@@ -28,7 +28,9 @@ Nehmen wir nun an, Raphael hätte die Tests mit ''@pytest.mark.xfail'' markiert:
 
 Dadurch merkt Raphael automatisch, dass die Klasse ''Customer'' ganz oder teilweise umgesetzt ist.
 
-===== Dekorator =====
+===== pytest.xfail =====
+
+==== Dekorator ====
 <code python>
 @pytest.mark.xfail
 def test_one():
@@ -43,7 +45,7 @@ def test_three():
     ...
 </code>
 
-===== Innerhalb der Funktion =====
+==== Innerhalb der Funktion ====
 Wir können ''pytest.xfail'' auch innerhalb einer Testfunktion aufrufen.
 Im Gegensatz zum Dekorator wird dabei jedoch die Ausführung der Funktion abgebrochen und keine weiteren Befehle ausgeführt.
 Dadurch ist diese Variante weniger geeignet.
@@ -53,6 +55,19 @@ def test_read_entry(monkeypatch, capsys, attributes):
     if attributes not in ['BASIS', 'ERWEITERT']:
         pytest.xfail('Test kann erst durchgeführt werden, wenn die Attribute der Klasse "Entry" definiert sind')
 </code>
+
+===== Exception erwartet =====
+Beim Testen müssen wir immer auch die korrekte Verarbeitung von Ausnahmefällen prüfen.
+Daher schreiben wir Unittests, die bewusst eine Exception im Programm auslösen sollen.
+
+<code python>
+def test_illegal_value():
+    with pytest.raises(ValueError):
+        account.balance = '3ex'
+</code>
+
+In diesem Beispiel geben wir einen formal falschen Wert für den Kontostand an.
+Sofern die Methode einen ''ValueError'' auslöst, gilt der Test als erfüllt.
 
 ----
 {{tag>M450-LU04}}

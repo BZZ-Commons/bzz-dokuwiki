@@ -5,7 +5,7 @@ As the database administrator, we want to create a new user and only grant this 
 
 ===== Requirements  =====
   * Work type: individual
-  * Timeframe: 10 Minutes
+  * Timeframe: 20 Minutes
   * Means of aid: 
       * only teaching materials, no websearch, no use of ai.
       * Webstorm with connection to the MySQL-DB
@@ -24,39 +24,41 @@ To get the job done, follow the instructions below:
   - Try out to DDL operations, which should result in errors due to missing permissions for that particular user
   - Drop the newly created user finally
 
-==== Task A1 ====
+==== Task 2.1 ====
 **Create the User**: Create a user named //restrictedUser// with the password //SafePassword123// using the //mysql_native_password// plugin.
 
   CREATE USER 'restrictedUser'@'localhost' IDENTIFIED WITH mysql_native_password BY 'SafePassword123';
 
-==== Task A2 ====
+==== Task 2.2 ====
 ** Overview of the current privileges**: Display all users.
 
   SELECT user, host, plugin FROM mysql.user;
 
 The result set should look like:
 
-{{:modul:m290:learningunits:lu06:aufgaben:showusers.png?600|}}
-
-==== Task A3 ====
+==== Task 2.3 ====
 **Grant Privileges Without Table Management**: Grant the user //restrictedUser// the ability to read and write data but not to create, alter, or drop tables. Use the following commands to give only the required privileges.
 
-  GRANT SELECT, INSERT, UPDATE, DELETE ON myAppDB.* TO 'restrictedUser'@'localhost';
+  GRANT SELECT, INSERT, UPDATE, DELETE ON myDatabase.* TO 'restrictedUser'@'localhost';
 
-==== Task A4 ====
+==== Task 2.4 ====
 **Rovoke Privileges**: To be certain that nothing unintended can happen revoke the CREATE, ALTER, and DROP privileges explicitly.
 
-  REVOKE CREATE, ALTER, DROP ON myAppDB.* FROM 'restrictedUser'@'localhost';
+  REVOKE CREATE, ALTER, DROP ON myDatabase.* FROM 'restrictedUser'@'localhost';
 
-==== Tasc A5 ====
+==== Tasc 2.5 ====
 **View the User’s Privileges**: Check the privileges to ensure that the user cannot manage tables.
 
   SHOW GRANTS FOR 'restrictedUser'@'localhost';
+  
+==== Task 2.6 ====
+**Test the User’s Access**: Establish a new console connection to the database by using //restrictedUser + password//.
 
-==== Task A6 ====
-**Test the User’s Access**: Connect as //restrictedUser// and try to perform a CREATE TABLE or DROP TABLE operation. The attempt should result in a permission error.
+==== Task 2.7 ====
 
-==== Task A7 ====
+Finally, try to perform a CREATE TABLE or DROP TABLE operation. The attempt should result in a permission error als displayed in the image below.
+
+==== Task 2.8 ====
 **Delete the User (optional)**: After testing, you can delete the user if they are no longer needed.
 
 ===== Solution =====
