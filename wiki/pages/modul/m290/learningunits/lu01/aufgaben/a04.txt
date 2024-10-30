@@ -1,0 +1,62 @@
+====== LU01.A04 - Installation and Configuration POSTMAN Frontend Simulation ======
+
+===== Prerequisites  =====
+  * Work type: Indiviual
+  * Timeframe: 20 Minutes 
+  * Expected result: Correct installed MySQL database including operational test
+
+===== Means of aid  =====
+^ Source ^ Link ^
+| Download-Link | [[https://www.postman.com/downloads/ |POSTMAN.COM]] |
+| Video-Tutorial Deutsch: API-Entwicklung mit POSTMAN |{{:modul:m290:learningunits:lu01:aufgaben:5_minuten_-_api-entwicklung_mit_postman-1.mp4|}} |
+ 
+===== Introduction  =====
+Postman is a popular API development tool that enables developers, testers, and product managers to design, test, and debug APIs easily. It offers a user-friendly interface with tools for creating and managing requests, analyzing responses, and automating workflows.
+
+{{:modul:m290:learningunits:lu01:aufgaben:rest-client-send-and-save-postman.png?600|}}
+
+===== Key Features of the Postman UI =====
+  - **Collections:** Collections allow you to organize and save multiple requests. They make it easy to structure API requests into groups, which can be shared with team members for collaborative API development and testing.
+  - **Requests Panel:** Postman’s core functionality lies in making HTTP requests. The request builder allows you to select methods like GET, POST, PUT, DELETE, and others. You can configure parameters, headers, authorization, and the body to simulate how a client interacts with the server.
+  - **Response View:** Once a request is sent, the response view displays the status, body, headers, and other response information, allowing users to inspect the API’s output. This feature is crucial for debugging and understanding the API behavior.
+  - **Environment Management:** Postman allows you to create environments, like production or development, where variables such as URLs and tokens can be stored. You can then toggle between environments to test your APIs under different configurations.
+  - **Testing and Automation:** Postman’s testing tab lets users write automated tests for each API request, using JavaScript. This makes it possible to validate responses automatically, and with the help of the Collection Runner, you can automate these tests for multiple requests at once.
+  - etc.
+
+
+
+===== Assignments =====
+  - Go to the MySQL website and download the required software version. 
+  - Start the installation process.
+  - Once the installation is complete, start the post-installation steps.   
+  - Open the command line/terminal on your notebook and connect to the database as shown in the video tutorials.
+  - Finally, request a response from the database by entering "SELECT sysdate;". If you have carried out all the steps correctly, the database will respond with the current date and time of your PC.
+  - Thank God that you have succeeded. Otherwise, pray to God for inspiration AND a lot of patience to find the error.
+
+
+===== Further Video Tutorials English =====
+^ Source ^ Link ^
+| Video-Tutorial English 1: Introduction | {{:modul:m290:learningunits:lu01:aufgaben:postman_beginner_tutorial_1_-_introduction_what_is_postman.mp4 |}} |
+| Video-Tutorial English 2: Understanding POSTMAN UI | {{:modul:m290:learningunits:lu01:aufgaben:postman_beginner_tutorial_2_-_understanding_postman_ui.mp4 |}} |
+| Video-Tutorial English 3: First API Requests | {{:modul:m290:learningunits:lu01:aufgaben:postman_beginner_tutorial_3_-_how_to_create_first_api_request.mp4 |}} |
+| Video-Tutorial English 4: Collections | {{:modul:m290:learningunits:lu01:aufgaben:postman_beginner_tutorial_4_-_what_is_collection_how_to_create_collections.mp4 |}} |
+| Video-Tutorial English 5: Collections 2 | {{:modul:m290:learningunits:lu01:aufgaben:postman_beginner_tutorial_5_-_how_to_run_collections_collection_runner_.mp4 |}} |
+| Video-Tutorial English 6: Variables | {{:modul:m290:learningunits:lu01:aufgaben:postman_beginner_tutorial_6_-_variables_how_to_create_and_refer.mp4 |}}  |
+| Video-Tutorial English 7: SET and GET | {{:modul:m290:learningunits:lu01:aufgaben:postman_beginner_tutorial_7_-_how_to_set_and_get_variables_through_scripting.mp4 |}} |
+| Video-Tutorial English 8: SET and GET 2 | {{:modul:m290:learningunits:lu01:aufgaben:postman_beginner_tutorial_8_-_get_and_set_variables_with_scripts.mp4 |}} |
+| Video-Tutorial English 9: Quick Scripts | {{:modul:m290:learningunits:lu01:aufgaben:postman_beginner_tutorial_9_-_how_to_create_quick_scripts.mp4 |}} |
+| Video-Tutorial English 10: First TEST | {{:modul:m290:learningunits:lu01:aufgaben:postman_beginner_tutorial_10_-_how_to_create_first_test.mp4 |}} |
+| Video-Tutorial English 11: DEBUG | {{:modul:m290:learningunits:lu01:aufgaben:postman_beginner_tutorial_11_-_how_to_debug.mp4 |}} |
+| Video-Tutorial English 12: Commandline | {{:modul:m290:learningunits:lu01:aufgaben:postman_beginner_tutorial_12_-_how_to_run_from_command_line_newman_.mp4 |}} |
+
+===== Solution =====
+[[modul:m290:learningunits:lu01:loesungen:l03|Lösung]]
+
+===== Vocabulary =====
+^ English ^ German ^ 
+| prerequisites | Voraussetzungen |
+
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

@@ -7,9 +7,10 @@ Eine Unterklasse erhält in diesem Fall zusätzliche Attribute und Methoden.
 
 ==== Beispiel ====
 ''SalaryAccount'' erweitert ''BankAccount'' um die Funktion für den Kontoüberzug. 
-Hier mit dem Attribut ''overdraw'' und der Property ''overdraw'' dargestellt.
+Hier mit dem Attribut ''overdraft'' und der Property ''overdraft'' dargestellt.
+Auf der rechten Seite sehen Sie die resultierende Klasse, bestehend aus den geerbten Elementen und den Erweiterungen in SalaryAccount.
 
-{{modul:m320:learningunits:lu06:theorie:lu07-abb1.6-erweitern.png?600|}}
+{{:modul:m320_2024:learningunits:lu10:account_erweitern.png?600|}}
 
 //Abb: Elemente einer erweiterten Klasse//
 
@@ -28,7 +29,7 @@ In der Fachsprache nennt man dies auch "**überschreiben**" (**overwriting**) ei
 So ist es nun möglich, durch den Aufruf der "gleichen" Methode - zumindest was den Namen der Methode betrifft - einen anderen Ablauf auszuführen. 
 Während ''BancAccount'' keine Bezüge zulässt, die zu einem negativen Saldo führen, kann ''SalaryAccount'' dies tun.
 
-{{modul:m320:learningunits:lu06:theorie:lu07-abb1.7-ueberschreiben.png?600|}}
+{{:modul:m320_2024:learningunits:lu10:account_anpassen.png?600|}}
 
 //Abb: Visualisierung des Überschreibens in einer abgeleiteten Klasse//
 
