@@ -1,0 +1,34 @@
+====== LU10.A01 - Hello World ======
+
+===== Requirements  =====
+  * Work type: Individual
+  * Timeframe: 15 Minutes
+  * Means of aid: 
+      * Only teaching materials, no websearch, no use of ai.
+      * Webstorm Codeeditor
+  * Expected result: 
+    * A JavaScript programm, that displays a greeting on the terminal of Webstorm.
+
+===== Assignments =====
+As always, our first program on the server is a small script designed to greet the world with the infamous “Hello World”. 
+
+  - Open your Webstorm editor and establish a JavaScriptfile. Name ist //helloWorld.js//. The file extension is assigned automatically.
+  - Write in this script your helloWorld statement, using the JS command //console.log()//. Save your file.
+  - Generate more terminal outputs by using arrays, for iterations and console.log() function. e.g. //['Hello ', 'World!', 'Hello', 'Universe!'];//
+  - Open a terminal window by clicking the terminal-icon at the left lower rim of Webstorm.
+  - Install all missing JS packages, that Webstorm requires from you.
+  - Start your server by using the node command, e.g. //node myServer.js//
+  - If everything is correct, you will see the helloWorld statement as a output from your server in the bottom terminal window of Webstorm.
+
+
+===== Solution =====
+[[modul:m290:learningunits:lu08:loesungen:l01|Lösung]]
+
+===== Vocabulary =====
+^ English ^ German ^ 
+| preparatary work | Vorarbeit |
+| infamous | berühmt-berüchtigt |
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

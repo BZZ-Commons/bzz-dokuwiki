@@ -7,13 +7,13 @@
 ===== WHAT is a 3 tiers web architecture? ====
 The 3-tier web architecture is a way of structuring a website or application to make it more organized, secure, and easy to manage. It splits everything into three main layers:
 
-{{:modul:m290:learningunits:lu08:theorie:3-tiers.png?600|}}
-
-{{ :modul:m290:learningunits:lu08:theorie:3_tier_architecture.mp4 |What is a 3 Tiers Architecture?}}
+{{:modul:m290:learningunits:lu08:theorie:3-tiers.png?500|}}
 
 Each layer has a specific job and only communicates with the layer directly next to it. This separation helps improve security (each layer only does what it's supposed to), makes it easier to update or fix issues, and allows each layer to be scaled independently if the app grows.
 
-==== 1. Presentation Layer (Frontend) ====
+{{ :modul:m290:learningunits:lu08:theorie:3_tier_architecture.mp4 |What is a 3 Tiers Architecture?}}
+
+==== 1. Presentation Layer/Tier (Frontend) ====
   * This is the layer that users see and interact with, like a website or app screen.
   * It’s built with HTML, CSS, and JavaScript to show things like buttons, text, images, and form fields.
   * For example, on a social media app, the Presentation Layer is the feed where you see posts and pictures.
@@ -25,7 +25,7 @@ Each layer has a specific job and only communicates with the layer directly next
   * TypeScript: A superset of JavaScript that adds static typing.
   * Frameworks: React, Angular, and Vue are popular frontend frameworks built on JavaScript.
 
-==== 2. Application Layer (Backend) ====
+==== 2. Application Layer/Tier (Backend) ====
   * This layer handles the "thinking" part of the app. It takes care of things like processing requests, running calculations, and managing the app's logic.
   * When you enter your login info, the Application Layer checks if it’s correct and decides what happens next.
   * It’s built with programming languages like Python, Java, PHP, or frameworks like Node.js.
@@ -36,7 +36,7 @@ Each layer has a specific job and only communicates with the layer directly next
   * Java: Widely used in large-scale applications, often with Spring Boot.
   * Ruby: Often used with Ruby on Rails for rapid development.
   * PHP: Common in web development, especially with systems like WordPress and Laravel.
-====  3. Data Layer ====
+====  3. Data Layer/Tier ====
   * This layer stores all the data the app needs, like user accounts, messages, or posts.
   * When you log in, this layer is where your username and password are checked against stored data.
   * It’s often managed with a database system like MySQL, PostgreSQL, or MongoDB.

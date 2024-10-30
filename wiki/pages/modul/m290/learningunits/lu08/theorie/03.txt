@@ -1,9 +1,9 @@
-====== LU10b - Server-Programming von JavaScript- Under Construction ======
+====== LU10b - Server-Programming von JavaScript ======
 
 ===== Learning Objectives =====
   - Programming our first Node Server application "hello world"
   - Know how to start the server application
-  - Establish a connection to the database by using express middleware
+  - Generate a terminal message
 
 ===== HelloWorld.js =====
 At the beginning of each programmer's carreer there is always our notorious "Hello World". Why changing good habits? Let us also greet the world with a first server script.
@@ -13,7 +13,7 @@ At the beginning of each programmer's carreer there is always our notorious "Hel
 
 In the lower part of Webstorm you can open a terminal window to start the mini-server-application. A node server is always started with the commande **node + servername.js**. In our case it is **node helloworld.js**, which generates the console output, just as we intended.
 
-{{:modul:m290:learningunits:lu08:theorie:a6.png?600|}}
+{{:modul:m290:learningunits:lu08:theorie:a6.png?800|}}
 
 
 

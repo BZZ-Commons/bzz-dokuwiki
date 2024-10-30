@@ -1,0 +1,37 @@
+====== LU10.A02 - myFirstServer ======
+
+===== Requirements  =====
+  * Work type: Individual
+  * Timeframe: 15 Minutes
+  * Means of aid: 
+      * Only teaching materials, no websearch, no use of ai.
+      * Webstorm Codeeditor
+      * {{ :modul:m290:learningunits:lu08:aufgaben:myfirstserver0.zip | myFirstserver.js ZIP File }}
+  * Expected result: 
+    * A JavaScript program, that displays the table content.
+
+===== Assignments =====
+
+==== Task A: Letting the given script run ====
+After being able to handle a node server, it is time to connect to a database and display a table's content at the terminal. 
+
+  - A01: Download the provided Zipfile, unzip it, and import the JavaScriptFile into your Webstorm project.
+  - A02: Change the credentials by using your login data, which is only you know.
+  - A03: Request via sql-script the system date from the database and display on your terminal by starting the server with the node command.
+
+==== Task B: Displaying a table conent ====
+After successful receiving data from the database, we want to display more data on our terminal, e.g. the content of an already existing database table. Follow for that the steps below:
+
+  - B01: Change the sql statement from SELECT sysdate(); into //SELECT * FROM users;//
+  - B02: Display the resultset from the database on your terminal by using the node command
+  - B03: Change the order of the sql statement and display the result on your terminal
+
+===== Solution =====
+[[modul:m290:learningunits:lu08:loesungen:l02|Lösung]]
+
+===== Vocabulary =====
+^ English ^ German ^ 
+| ... | ... |
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir
