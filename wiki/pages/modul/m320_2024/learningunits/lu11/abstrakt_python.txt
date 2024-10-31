@@ -17,10 +17,10 @@ class Polygon(ABC):
     a) weiss, dass es eine gewisse Anzahl Seiten hat
     b) aber nicht weiss, wie viele es wirklich sind.
     """
-    @abstractmethod
+
     def __init__(self):
         """
-        Konstruktor: Abstrakte Methode um die Instantiierung zu verhindern
+        Konstruktor: Könnte auch weggelassen werden, solange keine Attribute gesetzt werden.
         """
         pass
         
