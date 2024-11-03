@@ -4,7 +4,13 @@
 Sie haben sich rund 2/3 der 40 Lektionen des Moduls 290 mit dem Thema "Datenbanken" in einer 3-Schichten-Architektur (Frontend, Backend, DB) beschäftigt. Bei der dritten und letzten Leistungsbeurteilung im Modul 290 geht es darum diese Daten nicht nur auf der Datenbank zu verwalten, sondern die sogenannten CRUD-Operationen mittels Server anzuwenden.
 
 ===== Auftrag =====
-Nachfolgend finden Sie eine Reihe von Projektbeschreibungen. Bearbeiten Sie das Ihnen zugewiesene Projekt, d.h. programmieren Sie einen Prototypen und präsentieren Ihre Resultate am Ende des Moduls als **Video-Tutorial** von ca. 15-20 Minuten Länge. D.h. erstellen Sie eine Video-Tutorial für Ihre "Unterstifte" aus dem 2. Lehrjahr zum  Thema "Daten, Datenbanken und wie man auf diese vom Frontend (Browser) zugreifen kann". Das Tutorial muss die CRUD-Operationen auf Server und Datenbank erklären und demonstrieren.
+Nachfolgend finden Sie eine Reihe von Projektbeschreibungen. Bearbeiten Sie das Ihnen zugewiesene Projekt, d.h. programmieren Sie einen Prototypen und präsentieren Ihre Resultate am Ende des Moduls als **Video-Tutorial** von ca. 15 Minuten Länge. D.h. erstellen Sie eine Video-Tutorial für Ihre "Unterstifte" aus dem 2. Lehrjahr zum  Themen
+
+  * Daten
+  * Datenbanken
+  * Zugriff auf Daten in einer 3 Schichten-Architektur
+
+Das Tutorial muss im Kern die CRUD-Operationen auf Server und Datenbank erklären und demonstrieren.
 
 ===== Inhalt des Videotutorials =====
 Das Video muss die nachfolgenden Bestandteile enthalten:
@@ -19,13 +25,13 @@ Das Video muss die nachfolgenden Bestandteile enthalten:
   - Schluss
 
 ===== Wichtige Hinweise =====
-  * **Frontend**: <color #ed1c24> Die Programmierung eines Frontend ist kein Bestandteil des Auftrags</color>, da dieses durch die Software Postman simuliert wird. D.h. es wird keine vollständige Applikation erwartet, sondern lediglich der JS-Server welcher mit der Datenbamnk kommunizieren kann. 
+  * **Frontend**: <color #ed1c24> Die Programmierung eines Frontend ist kein Bestandteil des Auftrags</color>, da dieses durch die Software Postman simuliert wird. D.h. es wird keine vollständige Applikation erwartet, sondern lediglich der JavaScript-Server welcher mit der Datenbank kommunizieren kann. 
   * **CRUD**: <color #ed1c24>Ihr Prototyp muss die CRUD-Operationen auf der DB-Ebene (SQL) und im Server ausführen können. Es reicht also, wenn Sie mittels Server Daten in der Datenbank schreiben, lesen, updaten und löschen können.</color>
   * **UseCases**: Um diese nachzuweisen, orientieren Sie sich an den gegebenen UseCases. D.h. Sie müssen nicht alle Anforderungen erfüllen, sondern nur die CRUD-Operationen via Postman auf das Backend und der Datenbank anwenden können.
 
 ===== Abgabe - Zu liefernden Lernprodukte =====
 <color #ed1c24>Das Projekt ist als ein oneDrive-Link zu einem Arbeitsordner</color> abzugeben. In diesem Ordner sind die nachfolgenden Daten gespeichert:
-  - Video-Tutorial von 15-20 Minuten Länge
+  - Video-Tutorial von 15 Minuten Länge
   - ERM als PDF-Datei 
   - ERD als PDF-Datei
   - SQL-Script DDL-Anweisungen: Anlegen der Tabellenstruktur 
