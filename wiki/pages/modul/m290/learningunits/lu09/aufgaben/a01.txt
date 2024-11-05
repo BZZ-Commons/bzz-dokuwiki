@@ -1,0 +1,29 @@
+====== LU11.A01 - POSTMAN Installation ======
+
+===== Requirements  =====
+  * Work type: individual
+  * Timeframe: 15 Minutes
+  * Means of aid: 
+      * [[https://www.postman.com/downloads/|Download POSTMAN]]
+      * {{ :modul:m290:learningunits:lu09:aufgaben:basicwebserver.zip | Source code basicWebSever.js }}
+      * Webstorm with connection to the MySQL-DB
+  * Expected result: Installed POSTMANN web development tool including a functioning test connection to the server.
+
+===== Asignment =====
+  - Download POSTMAN and install it on your notebook. It is required to check the correct functioning of your server and to display the results retrieved from the database on the server.
+  - Start your server in the Webstorm commandline.
+  - Test the correct functioning of the server by sending a request from postman to your server and displaying the results in POSTMAN.
+
+===== Solution =====
+[[modul:m290:learningunits:lu09:loesungen:l01|Lösung]]
+
+
+===== Vocabulary =====
+^ English ^ German ^ 
+| functioning | funktionsfähigkeit |
+| request | Anfrage |
+
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

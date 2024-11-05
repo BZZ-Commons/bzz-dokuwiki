@@ -1,0 +1,17 @@
+====== LU11.S01 - POSTMAN Installation ======
+
+===== Assignment =====
+  - Download and Install POSTMAN
+  - Import the provided basicWebServer.js file to Webstorm
+  - Start the server in the commandline (icon on the left hand side ot the bottom window of Webstorm)
+  - Make a request from Webstorm to your Webserver with the url //localhost:3000//
+  - The result is displayed in the bottom window of POSTMAN, as shown in the image below
+
+
+{{:modul:m290:learningunits:lu09:loesungen:lu11_s01.png?1000| Interaction of POSTMAN and the node-server}}
+
+
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir
