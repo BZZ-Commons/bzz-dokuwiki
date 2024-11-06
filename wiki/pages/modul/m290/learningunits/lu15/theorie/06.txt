@@ -36,6 +36,5 @@ Das Video muss die nachfolgenden Bestandteile enthalten:
   - ERD als PDF-Datei
   - SQL-Script DDL-Anweisungen: Anlegen der Tabellenstruktur 
   - SQL-Script-DML-Anweisungen: Import der Initialdaten
-  - SQL-Script-DCL-Anweisungen: Anlegen und Berechtigen eines entsprechenden AppUsers zur DB
+  - SQL-Script-DCL-Anweisungen: Anlegen und Berechtigen eines entsprechenden AppUsers zur DB (DCL-Script mit den Credentials des AppUsers zur DB)
   - Server-File, programmiert in JavaScript
-  - Datei mit den Credentials des AppUsers zur DB
