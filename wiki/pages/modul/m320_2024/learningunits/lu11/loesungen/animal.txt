@@ -1,5 +1,13 @@
 ====== LU11.L01 - Instantiierung abstrakter Klassen ======
 
+  * Nachdem die Klasse "Animal" als abstrakt gekennzeichnet wurde, kann man keine Objekte dieser Klasse mehr erstellen.
+  * Durch die Verwendung der abstrakten Klasse als Grundlage für alle Tiere, kann ich die ''move''-Methode aufrufen, ohne die jeweilige Klasse zu identifizieren.
+
+<code python>
+    for animal in animals:
+        animal.move()
+        
+</code>
 
 
 ----
