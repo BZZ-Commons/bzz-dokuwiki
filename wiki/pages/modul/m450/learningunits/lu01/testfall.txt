@@ -9,6 +9,7 @@ Jeder Testfall beschreibt die Eingabedaten, die erwarteten Ergebnisse und die Sc
 Das Testen eines Programms ist ein wichtiger Teil der Qualitätssicherung bei der Softwareentwicklung.
 Beim Testen wird das Programm mit genau definierten Eingaben bzw. Daten ausgeführt.
 Ziel ist es, möglichst viele Fehler zu finden.
+Wichtig ist dabei nicht nur sogenannte Positiv-Tests durchzuführen, sprich zu testen ob sich das Programm mit korrekten Daten korrekt verhält, sondern auch Negativ-Tests, sprich Testfälle bei denen das Programm auf fehlerhafte Eingaben reagieren muss.
 
 Für jedes Programm erstellen wir eine Reihe von Testfällen.
 Mit diesen Testfällen wollen wir möglichst alle verschiedenen Kombinationen von Eingaben und Ausgaben testen.
@@ -84,6 +85,10 @@ Diese Form ist weniger kompakt und eignet sich eher für Programme mit komplexen
 
 === Übung ===
 Das obige Beispiel enthält 4 Testfälle. Wenn Sie dieses kleine Programm vollständig testen müssen, welche weiteren Testfälle gibt es?
+
+
+==== Weitere Literatur ====
+[[https://www.inmediasp.de/unternehmen/insights/die-kunst-gute-testfaelle-zu-schreiben-2|Die Kunst, gute Testfälle zu schreiben]]
 
 ----
 {{tag>M450-LU01}}

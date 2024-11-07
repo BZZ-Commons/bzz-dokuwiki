@@ -1,0 +1,106 @@
+====== LU10.L01 - Ziele gewichten ======
+
+
+==== Ziele / Anforderungen ====
+
+  - **A: Korrekte Bestellaufnahme** (95% Genauigkeit)
+  - **B: Getränkeservice** (90% der Getränke innerhalb von 10 Minuten)
+  - **C: Essensservice** (90% der Vorspeisen innerhalb von 15 Minuten und Hauptgang innerhalb von 30 Minuten)
+  - **D: Korrekte Rechnungen** (98% Genauigkeit)
+  - **E: Kundenzufriedenheit** (Durchschnittsnote von 5.0)
+  - **F: Budgetvorgabe** (unter CHF 5'000)
+
+==== Präferenzmatrix ====
+
+{| class="wikitable" style="text-align: center"
+|   
+| **A** 
+| **B** 
+| **C** 
+| **D** 
+| **E** 
+| **F** 
+| **Total**
+|- 
+| style="padding: 10px; text-align: left" | **A**: Korrekte Bestellaufnahme
+|style="width: 50px; background-color: grey;" |  
+| style="width: 50px;" | A
+| style="width: 50px;" | A
+| style="width: 50px;" | A
+| style="width: 50px;" | E
+| style="width: 50px;" | A
+| style="width: 50px;" | 4
+|- 
+| style="padding: 10px; text-align: left" | **B**: Getränkeservice
+|style="background-color: grey;" colspan="2"|  
+| C
+| D
+| E
+| B
+| 1
+|- 
+| style="padding: 10px; text-align: left" | **C**: Essensservice
+|style="background-color: grey;" colspan="3"|  
+| D
+| E
+| C
+| 2
+|- 
+| style="padding: 10px; text-align: left" | **D**: Korrekte Rechnungen 
+|style="background-color: grey;" colspan="4"| 
+| E
+| D
+| 3
+|- 
+| style="padding: 10px; text-align: left" |**E**: Kundenzufriedenheit 
+|style="background-color: grey;" colspan="5"|  
+| E
+| 5
+|- 
+| style="padding: 10px; text-align: left" | **F**: Budgetvorgabe
+|style="background-color: grey;" colspan="6"|  
+| 0
+|}
+
+==== Gewichtung und Prioritäten ====
+
+{| class="wikitable" style="text-align: center; width: 70%; border: 1px solid #ccc; border-collapse: collapse;"
+|-
+! style="padding: 10px; background-color: #f2f2f2; border: 1px solid #ccc;" | **Ziel**
+! style="padding: 10px; background-color: #f2f2f2; border: 1px solid #ccc;" | **Total**
+! style="padding: 10px; background-color: #f2f2f2; border: 1px solid #ccc;" | **Priorität**
+|-
+| style="padding: 10px; text-align: left; border: 1px solid #ccc;" | **E: Kundenzufriedenheit**
+| style="padding: 10px; border: 1px solid #ccc;" | 5
+| style="padding: 10px; border: 1px solid #ccc;" | Höchste Priorität
+|-
+| style="padding: 10px; text-align: left; border: 1px solid #ccc;" | **A: Korrekte Bestellaufnahme**
+| style="padding: 10px; border: 1px solid #ccc;" | 4
+| style="padding: 10px; border: 1px solid #ccc;" | Sehr hohe Priorität
+|-
+| style="padding: 10px; text-align: left; border: 1px solid #ccc;" | **D: Korrekte Rechnungen**
+| style="padding: 10px; border: 1px solid #ccc;" | 3
+| style="padding: 10px; border: 1px solid #ccc;" | Hohe Priorität
+|-
+| style="padding: 10px; text-align: left; border: 1px solid #ccc;" | **C: Essensservice**
+| style="padding: 10px; border: 1px solid #ccc;" | 2
+| style="padding: 10px; border: 1px solid #ccc;" | Mittlere Priorität
+|-
+| style="padding: 10px; text-align: left; border: 1px solid #ccc;" | **B: Getränkeservice**
+| style="padding: 10px; border: 1px solid #ccc;" | 1
+| style="padding: 10px; border: 1px solid #ccc;" | Niedrigere Priorität
+|-
+| style="padding: 10px; text-align: left; border: 1px solid #ccc;" | **F: Budget**
+| style="padding: 10px; border: 1px solid #ccc;" | 0
+| style="padding: 10px; border: 1px solid #ccc;" | Niedrigste Priorität
+|}
+
+==== Interpretation ====
+
+Die **Kundenzufriedenheit (E)** und die **korrekte Bestellaufnahme (A)** sind die höchsten Prioritäten und sollten im neuen System besonders berücksichtigt werden. Die **korrekte Rechnungsstellung (D)**, der **Essensservice (C)** und der **Getränkeservice (B)** haben mittlere Priorität. Das **Budget (F)** ist das Ziel mit der niedrigsten Priorität in diesem Vergleich.
+
+Diese Präferenzmatrix hilft dabei, die wichtigsten Anforderungen für das neue System im Restaurant zu identifizieren und die Ressourcen entsprechend zu planen.
+----
+{{tag>M431-LU10}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter, Kevin Maurizi
+

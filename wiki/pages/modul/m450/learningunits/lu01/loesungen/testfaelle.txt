@@ -1,38 +1,38 @@
 ====== LU01.L01 - Testfälle erstellen ======
 
 ^ Nr || 1 |
-^ Beschreibung || Formal falscher Betrag |
+^ Beschreibung || Formal falscher Betrag|
 ^ Eingaben ^ Betrag | 3+50000|
 ^ ::: ^ Jahre | 5 |
 ^ Erwartetes Resultat || Keine gültige Zahl |
-
+^ ||
 ^ Nr || 2 |
-^ Beschreibung || Formal falsche Jahre |
-^ Eingaben ^ Betrag | 875000 |
+^ Beschreibung || Formal falsche Jahre|
+^ Eingaben ^ Betrag | 875000|
 ^ ::: ^ Jahre | a3 |
 ^ Erwartetes Resultat || Keine gültige Zahl |
-
+^ ||
 ^ Nr || 3 |
 ^ Beschreibung || ungültiger Betrag |
-^ Eingaben ^ Betrag | -578900 |
+^ Eingaben ^ Betrag | -578900|
 ^ ::: ^ Jahre | 6 |
 ^ Erwartetes Resultat || Keine positive Zahl |
-
+^ ||
 ^ Nr ||4 |
 ^ Beschreibung || ungültige Jahre |
-^ Eingaben ^ Betrag | 554320 |
+^ Eingaben ^ Betrag | 554320|
 ^ ::: ^ Jahre | 753 |
 ^ Erwartetes Resultat || Maximal 150 Jahre |
-
+^ ||
 ^ Nr || 5 |
 ^ Beschreibung || Keine Steuern |
-^ Eingaben ^ Betrag | 500250 |
+^ Eingaben ^ Betrag | 500250|
 ^ ::: ^ Jahre | 7 |
 ^ Erwartetes Resultat || Steuern: 0 |
-
+^ ||
 ^ Nr || 6 |
 ^ Beschreibung || Steuern fällig |
-^ Eingaben ^ Betrag | 650000 |
+^ Eingaben ^ Betrag | 650000|
 ^ ::: ^ Jahre | 3.5 |
 ^ Erwartetes Resultat || Steuern 104000 |
 
