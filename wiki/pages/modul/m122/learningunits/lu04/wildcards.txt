@@ -1,0 +1,32 @@
+====== LU04a - Wildcards (Ersatzmuster) ======
+[[https://openbook.rheinwerk-verlag.de/shell_programmierung/shell_003_009.htm|Shell Programmierung: Kapitel 1.10.6 - 1.10.8]]
+
+In Bash sind **Wildcards** (Platzhalter) Symbole, die verwendet werden, um Dateinamen oder Muster flexibel anzugeben. Sie ermöglichen es, mehrere Dateien und Verzeichnisse auf einmal zu adressieren, was die Arbeit im Terminal vereinfacht.
+
+===== Haupt-Wildcards =====
+
+==== Sternchen ('*') ====
+ 
+  * Steht für **beliebig viele Zeichen** (auch null). 
+  * Beispiel: ''*.txt'' matcht alle ''.txt''-Dateien im Verzeichnis.
+   
+==== Fragezeichen ('?') ====
+ 
+  * Steht für **ein einzelnes beliebiges Zeichen**.
+  * Beispiel: ''datei?.txt'' findet ''datei1.txt'', aber nicht ''datei12.txt''.
+
+==== Eckige Klammern ('[ ]') ====
+ 
+  * Definieren **einen Zeichensatz** zur Auswahl.
+  * Beispiel: ''datei[12].txt'' findet ''datei1.txt'' und ''datei2.txt'', aber nicht ''datei3.txt''.
+  * Mit einem Bindestrich (''-'') lassen sich **Bereiche** definieren: ''[a-c]'' entspricht ''a'', ''b'' oder ''c''.
+
+==== Geschweifte Klammern ('{ }') ====
+
+  * Erlauben **Muster-Expansion** für mehrere Werte.
+  * Beispiel: ''datei{1,2}.txt'' matcht ''datei1.txt'' und ''datei2.txt''.
+
+Wildcards sind besonders nützlich für Batch-Befehle und das Arbeiten mit vielen Dateien, indem sie flexibles Suchen und Bearbeiten ermöglichen.
+----
+{{tag>M122-LU04}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]]  Marcel Suter

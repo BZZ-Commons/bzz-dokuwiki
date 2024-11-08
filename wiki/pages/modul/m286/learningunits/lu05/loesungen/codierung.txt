@@ -1,0 +1,19 @@
+====== LU05.L03 - Codierung von Symbolen ======
+
+  00 => ♠
+  01 => ♣ 
+  10 => ♥
+  11 => ♦
+
+  0000 => Steinbock
+  0001 => Wassermann
+  0010 => Fische
+  0011 => Widder
+  0100 => Stier
+  0101 => Zwillinge
+  0110 => Krebs
+  0111 => Löwe
+  1000 => Jungfrau
+  1001 => Waage
+  1010 => Skorpion
+  1011 => Schütze

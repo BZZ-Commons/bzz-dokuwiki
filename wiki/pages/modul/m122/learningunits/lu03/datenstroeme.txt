@@ -1,0 +1,52 @@
+====== LU03a - Datenströme umleiten ======
+[[https://openbook.rheinwerk-verlag.de/shell_programmierung/shell_003_009.htm| Shell Programmierung: Kapitel 10.1 - 10.5]]
+
+Jedes Befehl und jedes Skript kennt 3 Hauptdatenströme:
+  * 0: Standard-Eingabe (stdin) 
+  * 1: Standard-Ausgabe (stdout)
+  * 2: Standard-Fehlerausgabe (stderr).
+
+In Bash kann das Ziel der Datenströme durch Umleitung verändert werden, um die Ein- und Ausgabe von Befehlen zu steuern.
+
+=====     stdin umleiten =====
+
+''<'' ermöglicht es, Eingaben für einen Befehl aus einer Datei zu lesen.
+
+<code bash>mail -s "Betreff" empfänger@example.com < nachricht.txt</code>
+Der Inhalt der Datei wird als Input an den Befehl gesendet.
+
+===== Standardausgabe (stdout) umleiten =====
+''>'' leitet die Standardausgabe um.
+<code bash>echo "Hallo" > datei.txt</code>
+Schreibt die Ausgabe in eine Datei.
+
+<code bash>echo "Hallo" >> datei.txt</code>
+Hängt die Ausgabe an eine Datei an.
+
+===== Standardfehler (stderr) umleiten =====
+''2>'' leitet Fehlermeldungen um.
+
+<code bash>ls /nicht/existierend 2> fehler.log</code>
+Die Fehlermeldungen werden in eine Datei geschrieben.
+
+=====  Beide Ausgaben zusammen umleiten =====
+''>&'' kombiniert stdout und stderr.
+
+<code bash>
+ befehl > ausgabe_und_fehler.log 2>&1
+</code>
+
+=====  Pipes (|) verwenden =====
+Mit ''|'' wird die Standardausgabe eines Befehls an die Standard-Eingabe eines anderen Befehls übergeben.
+
+<code bash>cat datei.txt | grep "Suchwort"</code>
+
+Der stdout des ersten Befehls wird als stdin des zweiten Befehls verwendet.
+
+
+
+Durch das geschickte Kombinieren dieser Techniken können komplexe Datenströme effizient gesteuert und verarbeitet werden.
+
+----
+{{tag>M122-LU0x}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]]  Marcel Suter

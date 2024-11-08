@@ -1,0 +1,34 @@
+====== LU04.A01: Wildcard ======
+
+===== Vorbereitung =====
+Erstellen Sie im Home-Verzeichnis des Benutzers folgenden Ordner und Dateien:
+  * exercise05
+    * reading10_a.txt
+    * reading10_b.txt
+    * reading10_d.txt
+    * reading10_old.txt
+    * reading11_a.txt
+    * reading11_b.txt
+    * reading11_c.txt
+    * reading11_old.txt
+    * reading12_a.txt
+    * reading20_a.txt
+    * reading20_b.txt
+
+===== Aufgabenstellung =====
+Sie möchten nur die folgenden Dateien in der Konsole auflisten:
+  * reading10_a.txt
+  * reading10_b.txt
+  * reading11_a.txt
+  * reading11_b.txt
+  * reading11_c.txt
+
+Mit welchen Wildcards muss der Befehl ''ls'' aufgerufen werden?
+
+== Abgabe ==
+Schreiben Sie den korrekten Befehl ins Textfeld von Moodle.
+
+
+----
+{{tag>M122-LU04}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Daniel Garavaldi, Marcel Suter

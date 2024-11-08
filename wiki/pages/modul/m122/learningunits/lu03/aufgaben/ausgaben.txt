@@ -1,0 +1,38 @@
+====== LU03.A02: Ausgabe umleiten ======
+
+===== Vorbereitung =====
+Erstellen Sie einen neuen Ordner ''~/exercise04''.
+
+===== Aufgabenstellung =====
+
+Bei jeder Teilaufgabe suchen Sie mit dem ''find''-Befehl jeweils die Dateien ''/etc/passwd'' und ''/etc/passXY''.
+
+Leiten Sie die Ausgabe und die Fehlermeldung gemäss den folgenden Teilaufgaben um:
+
+=== 0. Ohne Umleitung ===
+Zeigen Sie die Suchresultate in der Konsole an.
+
+== Lösung ==
+<code>
+find /etc/passwd /etc/passXY
+</code>
+
+=== 1. Fehlermeldung unterdrücken ===
+Leiten Sie allfällige Fehlermeldungen nach ''/dev/null'' um.
+
+=== 2. Fehlermeldung umleiten ===
+Schreiben Sie allfällige Fehlermeldungen in die Datei ''~/exercise04/error.txt''.
+
+=== 3. Resultate umleiten ===
+Schreiben Sie die gefundenen Dateien in die Datei ''~/exercise04/found.txt''.
+
+=== 4. Resultate und Fehler umleiten ===
+Schreiben Sie die Resultate und allfällige Fehlermeldungen in die Datei ''~/exercise04/results.txt''.
+
+
+===== Abgabe =====
+Schreiben Sie die korrekten Befehle in das Textfeld der Moodle-Aufgabe.
+
+----
+{{tag>M122-LU03}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Daniel Garavaldi, Marcel Suter

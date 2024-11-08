@@ -1,0 +1,59 @@
+====== LU04.A02: Filtern und Sortieren ======
+===== Vorbereitung =====
+Erstellen Sie einen neuen Ordner ''~/exercise06''.
+Kopieren Sie die beiden Dateien {{ .:data20190827.txt |data20190827.txt}} und {{ .:data20190828.txt |data20190828.txt}} in diesen Ordner.
+
+
+===== Ausgangslage =====
+Die Firma Geotek nimmt in mehreren deutschen Städten Messungen an der Erdkruste vor.
+Die Messdaten werden nachts in zufälliger Reihenfolge übermittelt und in eine Datei geschrieben.
+
+Für jeden Tag wird eine neue Datei erstellt.
+Jede Zeile enthält einen Datensatz mit dem Namen der Stadt und dem Messwert, getrennt durch ein Leerzeichen.
+
+=== Beispiele ===
+== data20190827.txt ==
+<code>
+Berlin 824.25304
+Frankfurt 420.9985
+Magdeburg 1372.5138
+Stuttgart 3926.28406
+...
+</code>
+
+== data20190828.txt ==
+<code>
+Frankfurt 420.9985
+Leipzig 826.2477
+Köln 8225.3056
+Berlin 824.25304
+...
+</code>
+
+=== Abgabe ===
+Schreiben Sie die Kommandos für jede Teilaufgabe in das Textfeld der Moodle-Aufgabe.
+
+
+===== 1. Messungen filtern =====
+Zeigen Sie nur die Messwerte der Stadt Bielefeld in der Konsole an.
+Die Ausgabe soll wie im Beispiel formattiert sein:
+<code>
+data20190827.txt:Bielefeld 1188.25626
+data20190828.txt:Bielefeld 1187.9329
+...
+</code>
+
+===== 2. Sortieren und ausgeben =====
+Geben Sie die Werte in der Datei "data20190827.txt" nach Städtenamen sortiert aus.
+
+===== 3. Sortieren und speichern =====
+Sortieren Sie den Inhalt der beiden Dateien nach Städtenamen.
+Die sortieren Datensätze speichern Sie in die Dateien ''sort20190827.txt'' bzw. ''sort20190828.txt''.
+
+===== 4. Vergleichen =====
+Geben Sie in der Konsole eine Liste aller Städte aus, deren Messwert sich gegenüber dem Vortag geändert hat.
+Vergleichen Sie dazu die Zeilen in den beiden Dateien ''sort20190827.txt'' und ''sort20190828.txt''.
+
+----
+{{tag>M122-LU04}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Daniel Garavaldi, Marcel Suter

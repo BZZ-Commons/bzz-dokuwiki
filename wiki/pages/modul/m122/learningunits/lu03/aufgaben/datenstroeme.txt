@@ -1,0 +1,33 @@
+====== LU03.A01: Datenströme umleiten ======
+
+===== 1. Erwarteter Output =====
+Welchen Inhalt hat die Datei ''file3'' nachdem alle Befehle ausgeführt wurden?
+== Abgabe ==
+Notieren Sie Ihre Erwartung im Textfeld der Moodle-Aufgabe.
+
+<code bash>
+1: echo "blau" > client
+2: echo "gruen" > cli.ent 
+3: echo "gelb" >> client
+4: echo "rot" > client.r
+5: cat cli* > file2
+6: echo `cat file2` > file3 
+</code>
+
+===== 2. Tatsächliches Resultat =====
+Erstellen Sie ein neues Verzeichnis ''~/exercise03''.
+Führen Sie die Befehle in der Konsole aus.
+
+<WRAP center round important 60%>
+Achten Sie auf die Sonderzeichen, wenn Sie die Befehle kopieren:
+  * Auf Zeile 1-5 werden gerade Anführungs- und Schlusszeichen (double quote) verwendet.
+  * Auf Zeile 6 werden Backquotes (auch Backtick genannt) verwendet und kein Apostrophe (single quote).
+</WRAP>
+
+
+== Abgabe ==
+Kopieren Sie den Inhalt der Datei ''file3'' ins Moodle.
+
+----
+{{tag>M122-LU03}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Daniel Garavaldi, Marcel Suter

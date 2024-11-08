@@ -1,0 +1,28 @@
+====== LU04b - Filtern, Sortieren und mehr ======
+<WRAP center round tip 60%>
+Mit Shell-Befehlen können wir sehr schnell Daten Filtern, Sortieren und Vergleichen.
+</WRAP>
+
+===== grep: Datenströme filtern =====
+''grep'' sucht nach Textmustern in Dateien oder Eingaben und gibt die passenden Zeilen aus. 
+Es unterstützt Wildcards und reguläre Ausdrücke, wodurch komplexe Suchen möglich sind.
+
+====     Beispiel ====
+''grep "Fehler" datei.txt'' findet alle Zeilen in datei.txt, die das Wort "Fehler" enthalten.
+
+===== sort: Datenströme sortieren =====
+''sort'' sortiert die Zeilen einer Datei oder Eingabe alphabetisch, numerisch oder nach anderen Kriterien.
+====  Beispiel ====
+''sort namen.txt'' sortiert die Zeilen in namen.txt alphabetisch.
+
+Optionen wie ''-n'' für numerische oder ''-r'' für umgekehrte Sortierung erweitern die Funktionalität.
+
+===== comm: Datenströme vergleichen =====
+''comm'' vergleicht zwei sortierte Dateien zeilenweise und zeigt Zeilen, die nur in der ersten Datei, nur in der zweiten Datei oder in beiden vorkommen.
+
+==== Beispiel ====
+''comm datei1.txt datei2.txt'' zeigt drei Spalten: Zeilen, die nur in datei1.txt, nur in datei2.txt oder in beiden Dateien vorkommen.
+
+----
+{{tag>M122-LU04}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter
