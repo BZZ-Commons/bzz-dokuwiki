@@ -1,0 +1,42 @@
+====== LU02.L01 - Shellscript ======
+<code bash>
+#! /bin/bash
+
+# Begrüssung
+echo "Willkommen zu 'UserInfo', der ultimativen Informationsquelle"
+echo
+
+# Aktuelles Datum
+echo -n "Datum:           "
+date '+%A, %d.%m.%Y'
+
+# Aktueller Benutzer
+echo -n "Benutzername:    "
+whoami
+
+# Andere Benutzer auf diesem System
+echo -n "Andere Benutzer: "
+users
+echo
+
+# Aktueller Pfad
+echo -n "Aktueller Pfad:  "
+pwd
+
+# Hostname
+echo -n "Hostname:        "
+uname -n
+
+# IP-Adresse
+echo -n "IP-Address:      "
+hostname -I
+
+# Grussformel ;-)
+echo
+echo "Vielen Dank, dass Sie mit BASH Airlines geflogen sind."
+
+</code>
+
+----
+{{tag>M122-LU02}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Daniel Garavaldi, Marcel Suter

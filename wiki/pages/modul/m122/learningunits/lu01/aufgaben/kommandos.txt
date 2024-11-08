@@ -1,0 +1,18 @@
+====== LU01.A01 - Linux Kommandos ======
+Führen Sie die folgenden Schritte auf der Kommandozeile aus.
+Zu Übungszwecken sollen Sie keine anderen Werkzeuge (z.B. Dateiverwaltung, Texteditor) verwenden.
+
+  - Erstellen Sie ein neues Verzeichnis ''exercise01'' im Home-Verzeichnis des aktuellen Benutzers.
+  - Wechseln Sie in das neu erstellte Verzeichnis.
+  - Erzeugen Sie eine neue Datei ''ex01.txt''.
+  - Fügen Sie den Text ''Dies ist die Übung 01'' in die Datei ''ex01.txt'' ein.
+  - Ändern Sie den Namen der Datei zu ''exercise01.txt''.
+  - Zeigen Sie den Inhalt der Datei an.
+
+===== Abgabe =====
+  - Geben Sie diesen Befehl ein: \\ <code>ls -l >> exercise01.txt; cat exercise01.txt</code>
+  - Kopieren Sie den Output dieses Befehls und geben diesen in Moodle ab.
+
+----
+{{tag>M122-LU01}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Daniel Garavaldi, Marcel Suter

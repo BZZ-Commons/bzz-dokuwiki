@@ -1,0 +1,16 @@
+====== LU01c - Linux Kommandos ======
+{{https://openbook.rheinwerk-verlag.de/shell_programmierung/shell_003_006.htm|Shell Programmierung: Kapitel 1.7}}
+
+Linux-Kommandos sind grundlegende Anweisungen, die in der Shell oder dem Terminal eines Linux-Systems ausgeführt werden, um verschiedene Aufgaben und Systemoperationen durchzuführen. Diese Befehle ermöglichen den direkten Zugriff auf das Dateisystem, die Verwaltung von Prozessen, die Steuerung von Berechtigungen und viele andere Funktionen. Mit Linux-Kommandos lassen sich Aufgaben oft schneller und effizienter erledigen als über grafische Benutzeroberflächen, insbesondere bei administrativen und automatisierten Arbeiten.
+
+Die Linux-Shell, oft die **Bash**-Shell (Bourne Again SHell), ist dabei die gängigste Umgebung für das Arbeiten mit Kommandos. Ein paar grundlegende Kommandos umfassen:
+
+  *  **`ls`**: Listet den Inhalt eines Verzeichnisses auf.
+  * **`cd`**: Wechselt das Arbeitsverzeichnis.
+  * **`cp`**, **`mv`**, **`rm`**: Kopiert, verschiebt oder löscht Dateien.
+  * **`chmod`**, **`chown`**: Ändert Berechtigungen und Eigentümer von Dateien.
+  * **`ps`**, **`kill`**: Zeigt laufende Prozesse an und beendet sie.
+  * **`grep`**, **`find`**: Suchen nach Textmustern oder Dateien.
+  * **`man`**: Öffnet die Handbuchseite zu einem bestimmten Befehl.
+
+Einsteiger wie erfahrene Benutzer können durch die Linux-Befehle umfangreiche Kontrolle über das System erlangen, Aufgaben automatisieren und Systemressourcen gezielt nutzen.

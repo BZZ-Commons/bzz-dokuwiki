@@ -1,0 +1,12 @@
+====== LU01a - Einführung Shell-Programmierung ======
+{{https://openbook.rheinwerk-verlag.de/shell_programmierung/shell_003_000.htm|Shell Programmierung: Kapitel 1.1 - 1.4}} 
+
+Shellprogrammierung mit **Bash** ist eine leistungsstarke und vielseitige Methode, um Aufgaben auf Linux- und Unix-Systemen zu automatisieren und Prozesse zu steuern. 
+Die **Bash-Shell** (Bourne Again SHell) ist eine der am weitesten verbreiteten Unix-Shells und bietet eine breite Palette von Funktionen zur Verwaltung und Steuerung von Systemaufgaben.
+
+===== Was ist Shellprogrammierung? =====
+
+Eine Shell ist eine Schnittstelle zwischen Benutzer und Betriebssystem. 
+Sie ermöglicht es, Befehle einzugeben, Programme auszuführen und Systemprozesse zu steuern. 
+**Shellprogrammierung** oder **Shell-Scripting** bedeutet, mehrere Befehle in einem Skript zu kombinieren, um sie automatisiert und wiederholt auszuführen. 
+Ein **Shell-Skript** ist einfach eine Textdatei mit einer Liste von Befehlen, die in der Reihenfolge ausgeführt werden, wie sie im Skript stehen.

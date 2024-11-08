@@ -1,0 +1,37 @@
+====== LU02.A01 - Shellscript ======
+Entwickeln Sie ein Shell Script, das die folgenden Informationen anzeigt:
+
+  * Aktuelles Datum im Format "Wochentag, DD.MM.YYYY"
+  * Benutzername des angemeldeten Benutzers
+  * Liste aller anderen Benutzer, die zur Zeit am System angemeldet sind
+  * Aktueller Pfad
+  * Name des Rechners (Hostname)
+  * IP-Adresse des Rechners
+
+===== Vorgehen =====
+==== Vorlage ====
+  - Erstellen Sie ein neues Shellscript ''exercise02.sh''.
+  - Kopieren Sie die Vorlage in diese Datei.
+  - Passen Sie die Rechte an, so dass das Script auf der Kommandozeile aufgerufen werden kann.
+
+
+<code bash>
+#! /bin/bash
+# Exercise 02: Show some information about the system
+# author: FIXME
+# date:   2019-FIX-ME
+</code>
+
+==== Befehle ====
+Führen Sie diese Schritte für jeden einzelnen Befehl durch:
+  - Recherchieren einen Befehl, der die gesuchte Information liefert.
+  - Testen Sie den Befehle einzeln auf der Kommandozeile.
+  - Fügen Sie den Befehl in ihr Shellscript ein
+
+
+===== Abgabe =====
+Geben Sie Ihr fertiges Shellscript als Textabgabe in Moodle ab.
+
+----
+{{tag>M122-LU02}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Daniel Garavaldi, Marcel Suter

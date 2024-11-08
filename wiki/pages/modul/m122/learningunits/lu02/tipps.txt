@@ -1,0 +1,23 @@
+====== LU02b - Tipps und Tricks ======
+
+===== Vorlage =====
+Es lohnt sich eine Vorlage für neue Shellscripts bereit zu halten.
+Diese können Sie dann jedesmal kopieren, wenn Sie ein neues Skript erstellen.
+
+<code bash>
+#!/bin/bash
+
+# Short description of this script
+# including the command and parameters to start it
+</code>
+
+===== Editoren =====
+Solange Sie auf einem Rechner mit graphischer Benutzeroberfläche arbeiten, können Sie einen Texteditor oder eine voll ausgestattete IDE zum bearbeiten von Shellscripts nutzen.
+
+Früher oder später werden Sie aber ein Script auf einem Server bearbeiten müssen und haben keine graphischen Editoren.
+Gewöhnen Sie sich daher an, regelmässig mit einem textbasierten Editor zu arbeiten.
+Lernen Sie die wichtigsten Befehle und Shortcuts.
+
+Zu den am häufigsten genutzten Editoren gehören:
+  * {{https://www.nano-editor.org/dist/v2.2/nano.html|nano}}
+  * {{https://www.vim.org/docs.php|vim}}

@@ -1,0 +1,25 @@
+====== LU01.L01 - Linux Kommandos ======
+<WRAP center round tip 60%>
+Das Tilde-Zeichen ''~'' steht in Linux immer für das Home-Verzeichnis des aktuellen Benutzers.
+Stattdessen könnten Sie den vollständigen Pfad (z.B. ''/home/bzz'') verwenden.
+</WRAP>
+
+
+
+| 1. | ''mkdir ~/exercise01'' |
+| 2. | ''cd ~/exercise01'' |
+| 3. | ''touch ex01.txt'' |
+| 4. | ''echo "Dies ist die Übung 01" > ex01.txt'' |
+| 5. | ''mv ex01.txt exercise01.txt'' |
+| 6. | ''cat exercise01.txt'' |
+
+===== Output =====
+<code>
+Dies ist die Übung 01
+insgesamt 4
+-rw-r--r-- 1 bzz bzz 23 Aug 12 15:05 exercise01.txt
+</code>
+
+----
+{{tag>M122-LU01}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Daniel Garavaldi, Marcel Suter

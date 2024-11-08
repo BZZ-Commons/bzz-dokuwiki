@@ -1,0 +1,5 @@
+====== LU02a - Einstieg in Shellscripts ======
+{{https://openbook.rheinwerk-verlag.de/shell_programmierung/shell_003_007.htm|Shell Programmierung: Kapitel 1.8}}
+
+Ein Shellscript ist ein Programm, das eine Reihe von Befehlen in einer Textdatei speichert und diese automatisch nacheinander ausführt. 
+Shellscripte werden häufig genutzt, um Aufgaben zu automatisieren, die man sonst manuell über die Befehlszeile ausführen würde. In Linux sind diese Skripte meist in der Bash-Shell geschrieben, daher werden sie oft Bash-Skripte genannt.
