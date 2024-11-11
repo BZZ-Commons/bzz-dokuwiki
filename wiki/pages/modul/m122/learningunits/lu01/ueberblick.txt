@@ -53,7 +53,7 @@ Bash enthält viele vordefinierte Variablen. Einige wichtige Beispiele:
   * `$#`: Anzahl der Übergabeparameter.
   * `$?`: Rückgabewert des letzten Befehls.
 
-#### Beispiel:
+====  Beispiel: ====
 
 <code bash>
 #!/bin/bash
