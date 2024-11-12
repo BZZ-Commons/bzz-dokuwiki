@@ -1,5 +1,21 @@
-====== LU04.A02 - Überspringen ======
-<nodisp>TODO SuMa - Programm mit Stub</nodisp>
+====== LU04.A02 - Skip und xfail ======
+<WRAP center round todo 60%>
+Verwenden Sie ''xfail'', ''pytest.raises'', ''skip'' und ''skipif'' um auf unterschiedliche Situationen zu reagieren.
+</WRAP>
+
+Das Programm ist ein einfacher Taschenrechner.
+Wir wollen mit gezielten Tests die Reaktion des Programms auf ungewöhnliche Situationen testen.
+
+===== Auftrag =====
+Erstellen Sie die Testfälle gemäss den Angaben in ''test_main.py''.
+Führen Sie die Testfälle einzeln aus und prüfen Sie den Output im Terminal.
+
+Führen Sie zuletzt alle Tests mit dem Befehl ''pytest -v'' aus.
+Prüfen Sie wiederum die Ausgaben.
+
+===== Abgabe =====
+Mittels Push ins GitHub Repository
+
 
 ----
 {{tag>M450-LU04}}
