@@ -20,7 +20,7 @@ The result set should look like:
   GRANT SELECT, INSERT, UPDATE, DELETE ON myDatabase.* TO 'restrictedUser'@'localhost';
 
 ===== Task 2.4 =====
-**Rovoke Privileges**: To be certain that nothing unintended can happen revoke the CREATE, ALTER, and DROP privileges explicitly.
+**Revoke Privileges**: To be certain that nothing unintended can happen revoke the CREATE, ALTER, and DROP privileges explicitly.
 
   REVOKE CREATE, ALTER, DROP ON myDatabase.* FROM 'restrictedUser'@'localhost';
 

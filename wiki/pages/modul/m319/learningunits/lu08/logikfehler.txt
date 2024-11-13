@@ -54,7 +54,7 @@ if __name__ == '__main__':
 
 Das Programm stürzt ab und zeigt mir diesen Stacktrace:
 
-{{:modul:m319:learningunits:lu08:lu08_stacktrace.png?800|}}
+{{:modul:m319:learningunits:lu08:lu08_stacktrace.png?1000|}}
 
 Lesen Sie den Stacktrace von unten nach oben:
   * Grün: ''list index out of range'' / Ich versuche auf ein Element einer Liste zuzugreifen, das nicht exisiert.
