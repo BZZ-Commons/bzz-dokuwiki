@@ -1,0 +1,38 @@
+===== Was sind Container? =====
+
+Container sind Softwarepakete, die alle notwendigen Elemente enthalten, um in jeder Umgebung ausgeführt werden zu können. Auf diese Weise virtualisieren Container das Betriebssystem und können überall ausgeführt werden, von einem privaten Rechenzentrum bis zur öffentlichen Cloud oder sogar auf dem persönlichen Laptop eines Entwicklers.
+
+
+===== Definition eines Containers =====
+
+Container sind leichtgewichtige Pakete einer Applikation zusammen mit Abhängigkeiten, wie z. B. bestimmte Versionen von Laufzeitumgebungen, Bibliotheken und Servern (Web-, Datenbanken, Firewalls usw).
+
+
+===== Was sind die Vorteile von Containern? =====
+
+==== Trennung der Verantwortlichkeiten ====
+
+Die Containerisierung erlaubt für eine klare Trennung der Zuständigkeiten, weil sich die Entwickler auf die Anwendungslogik und die Abhängigkeiten konzentrieren, während sich die Systemtechniker auf die Bereitstellung und die Verwaltung konzentrieren können.
+
+==== Portabilität der Arbeitslast ====
+
+Container können praktisch überall ausgeführt werden, was die Entwicklung und Bereitstellung erheblich erleichtert: Container können auf weit verbreitete Betriebssysteme (Linux, Max, Windows), auf virtuellen Maschinen oder physischen Servern (unabhängig von der darunter liegenden Hardware) und in der Cloud deployed werden.
+
+==== Anwendungsisolierung ====
+ 
+Container virtualisieren CPU-, Speicher-, Storage- und Netzwerkressourcen auf Betriebssystemebene und bieten Entwicklern eine von anderen Anwendungen logisch isolierte Sicht auf das Betriebssystem.
+
+<WRAP right>
+  {{themen/01/img/container-deployment.png?400|}}
+  <small>Abb-1: Container deployment in eine Registry (Software Hub)</small>
+</WRAP>
+
+
+
+===== Wofür werden Container verwendet? =====
+Container bieten einen logischen Paketierungsmechanismus, mit dem Anwendungen von der Umgebung, in der sie tatsächlich ausgeführt werden, abstrahiert werden können. Durch diese Entkopplung können Container-basierte Anwendungen einfach und konsistent bereitgestellt werden, unabhängig davon, ob es sich bei der Zielumgebung um ein privates Rechenzentrum, eine öffentliche Cloud oder sogar um den persönlichen Laptop eines Entwicklers handelt.
+
+Deshalb werden Container für ...
+  * **Agile Entwicklung**: Mit Containern können Entwickler zeitsparender arbeiten, da sie sich keine Gedanken mehr über Abhängigkeiten und Umgebungen machen müssen.
+  * **Effizienter Betrieb**: Container sind leichtgewichtig und verwenden nur die benötigten Rechenressourcen. Damit können die Anwendungen effizient betrieben werden.
+  * **Überall ausführen**: Container können praktisch vielen Plattformen ausgeführt werden.
