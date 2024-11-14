@@ -56,10 +56,10 @@ The result set should look like:
 
 ==== Task 2.7 ====
 
-Finally, try to perform a CREATE TABLE or DROP TABLE operation. The attempt should result in a permission error als displayed in the image below.
+Finally, try to perform a CREATE TABLE or DROP TABLE operation. The attempt should result in a permission error as displayed in the image below.
 
 ==== Task 2.8 ====
-**Delete the User (optional)**: After testing, you can delete the user if they are no longer needed.
+**Delete the User (optional)**: After testing, you can delete the user if it is not needed anymore.
 
 ===== Solution =====
 [[modul:m290:learningunits:lu06:loesungen:l02|Lösung]]
