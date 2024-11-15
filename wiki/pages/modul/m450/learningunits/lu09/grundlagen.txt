@@ -20,17 +20,50 @@ Die Gutachter prüfen den Sourcecode und halten Ihre Befunde fest.
 Als Gutachter eignen sich besonders langjährige Entwickler, die über viel Erfahrung verfügen.
 
 ==== Mögliche Formen ====
-=== Technischer Review ===
-Bei einem technischen Review prüfen mehrere Gutachter selbständig den Sourcecode anhand eines Katalogs von Kriterien.
-Während der Review-Sitzung werden die Befunde zusammengetragen.
- 
-=== Informeller Review ===
-Ein informeller Review soll den Zeitaufwand für den Review reduzieren.
-In der Regel wird auf eine Vorbereitung und auf einen formellen Kriterienkatalog verzichtet.
-Die Gutachter gehen gemeinsam den Sourcecode durch, während der Autor die Befunde notiert.
+=== Code Reviews ===
+Überprüfung des Quellcodes durch Teammitglieder oder Reviewer.
+Fokus auf Lesbarkeit, Wartbarkeit, Effizienz und Einhaltung von Coding-Standards.
+Tools: GitHub Pull Requests, Gerrit, Code Collaborator.
+
+=== Peer Reviews ===
+
+Ein Teammitglied überprüft die Arbeit eines anderen (Code, Dokumentation, Designs).
+Fördert den Dialog und das Lernen innerhalb des Teams.
+
+=== Technische Reviews ===
+
+
+Detaillierte Überprüfung von technischen Artefakten wie Architekturdesigns, Schnittstellen oder Datenmodellen.
+Häufig interdisziplinäre Teilnehmer.
+
+=== Management Reviews ===
+
+
+Bewertung von Projektfortschritt, Zeitplänen, Budgets und Risiken.
+Wird von Projektleitern oder Stakeholdern durchgeführt.
+
+=== Audit Reviews ===
+
+
+Überprüfung durch externe oder interne Auditoren.
+Ziel ist die Einhaltung regulatorischer Vorgaben und Qualitätsstandards.
+
+=== Walkthroughs ===
+
+
+Informelle Präsentation eines Artefakts durch den Ersteller an eine Gruppe.
+Ziel: Feedback und Verständnis klären, ohne formelle Bewertung.
+
+=== Inspektionen ===
+
+
+Formaler Prozess mit einer festen Rollenverteilung (Moderator, Prüfer, Protokollant).
+Fokus auf systematischer Fehlererkennung.
 
 ===== Lint-Programme =====
 Ein Lint-Programm führt eine Art von automatisiertem Review durch.
+Es ist ein Software-Tool, das Quellcode analysiert, um potenzielle Fehler, Stilprobleme oder Verstöße gegen definierte Coding-Standards zu erkennen. Es dient als statische Codeanalyse-Werkzeug und überprüft den Code, ohne ihn auszuführen. Lint-Programme sind besonders nützlich, um die Codequalität und Lesbarkeit zu verbessern und häufige Programmierfehler frühzeitig zu identifizieren.
+
 Das Programm prüft meinen Sourcecode anhand von Regeln und meldet alle verdächtigen Stellen.
 
 

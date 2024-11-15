@@ -3,6 +3,9 @@
 
 ===== Was ist TDD? =====
 Test Driven Development (TDD) ist ein Entwicklungsvorgehen, dass aus der agilen Entwicklung und dem Extreme programming hervorgegangen ist.
+TDD ist eine agile Softwareentwicklungsmethode, bei der Tests vor der eigentlichen Implementierung des Codes geschrieben werden. Das Ziel ist, die Entwicklung zu strukturieren, Fehler frühzeitig zu erkennen und eine hohe Codequalität zu gewährleisten.
+
+
 Dabei werden in einem iterativen Prozess ...
   * ... Unit Tests erstellt
   * ... Funktionen/Methoden programmiert
@@ -11,6 +14,29 @@ Dabei werden in einem iterativen Prozess ...
 bis alle Tests erfolgreich durchgeführt werden.
 
 {{https://martinfowler.com/bliki/images/test-driven-development/card.png}}
+
+===== Grundprinzipien von TDD =====
+
+
+====     Red-Green-Refactor-Zyklus ====
+
+  *  Red: Schreibe einen Test für die neue Funktionalität. Der Test schlägt fehl (da es noch keine Implementierung gibt).
+  * Green: Implementiere den minimalen Code, der erforderlich ist, damit der Test besteht.
+  * Refactor: Überarbeite den Code, um ihn zu optimieren und die Qualität zu verbessern, während alle Tests weiterhin bestehen.
+
+====     Kleine Schritte ====
+
+Entwickle und teste kleine, isolierte Einheiten von Funktionalität nacheinander.
+Reduziert die Komplexität und erleichtert das Debuggen.
+
+====     Test-First-Ansatz ====
+
+Tests werden vor der Implementierung geschrieben, um die Anforderungen zu klären und den Fokus auf das Ziel zu behalten.
+
+==== Automatisierte Tests ====
+Die Tests sind automatisiert, sodass sie bei jedem Build oder Deployment wiederholt ausgeführt werden können.
+
+===== Planung =====
 
 Natürlich musst du sowohl für das Erstellen der Tests als auch für das Programmieren der Funktionen/Methoden ein gutes Verständnis der Anforderungen haben.
 Ergeben sich im Verlauf der Entwicklung neue Erkenntnisse zu den Anforderungen, so wird der Prozess wiederholt.
