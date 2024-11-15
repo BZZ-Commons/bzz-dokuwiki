@@ -10,6 +10,8 @@ Dabei werden in einem iterativen Prozess ...
 
 bis alle Tests erfolgreich durchgeführt werden.
 
+{{https://martinfowler.com/bliki/images/test-driven-development/card.png}}
+
 Natürlich musst du sowohl für das Erstellen der Tests als auch für das Programmieren der Funktionen/Methoden ein gutes Verständnis der Anforderungen haben.
 Ergeben sich im Verlauf der Entwicklung neue Erkenntnisse zu den Anforderungen, so wird der Prozess wiederholt.
 Die Tests werden ergänzt oder korrigiert und erneut ausgeführt.

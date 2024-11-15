@@ -4,15 +4,15 @@ Entwickeln Sie die Applikation als Gruppe nach dem Prinzip des Test Driven Devel
 </WRAP>
 
 ===== UML Klassendiagramm =====
-{{:modul:m450:learningunits:lu11:aufgaben:schulverwaltung_klassen.png?400|}}
+{{:modul:m450:learningunits:lu11:aufgaben:klasseschule.png?600|}}
 
 ==== Hinweise ====
   * Die Klasse ''Grade'' wird als ''@dataclass'' realisiert.
   * Der Unittests für den Konstruktor einer Klasse muss jeweils als erstes realisiert werden. Erst danach können weitere Methoden der Klasse ausgewählt werden.
   * Falls eine Methode ein Objekt bzw. Funktion einer anderen Klasse benötigt, verwendest du eine Mockup-Klasse bzw. -Funktion.
-  * Die Klasse ''ClassReport'' enthält zwei Methoden zur Anzeige der Noten:
-    * Die Methode ''to_string()'' liefert ein Zeugnis mit allen Fächern und dem entsprechenden Notenschnitt. Eine mögliche Ausgabe kann wie folgt aussehen: \\ {{:modul:m320:learningunits:lu05:aufgaben:lu03_5_-aufg3_biblio-10.png?150|}}
-    * Die Methode ''print_details()'' liefert alle Fächern mit den einzelnen Noten. Eine mögliche Ausgabe kann wie folgt aussehen: \\ {{:modul:m320:learningunits:lu05:aufgaben:lu03_5_-aufg3_biblio-11.png?225|}}
+  * Die Klasse ''StudentReport'' enthält zwei Methoden zur Anzeige der Noten:
+    * Die Methode ''show_overview()'' liefert ein Zeugnis mit allen Fächern und dem entsprechenden Notenschnitt. Eine mögliche Ausgabe kann wie folgt aussehen: \\ {{:modul:m320:learningunits:lu05:aufgaben:lu03_5_-aufg3_biblio-10.png?150|}}
+    * Die Methode ''show_details()'' liefert alle Fächern mit den einzelnen Noten. Eine mögliche Ausgabe kann wie folgt aussehen: \\ {{:modul:m320:learningunits:lu05:aufgaben:lu03_5_-aufg3_biblio-11.png?225|}}
 
 
  
