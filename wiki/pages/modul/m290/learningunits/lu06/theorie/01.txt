@@ -22,7 +22,7 @@ MySQL user management and privileges are essential for controlling access to the
 ==== 1. Creating a New User ====
 To create a new user in MySQL, you use the CREATE USER statement:
 
-  CREATE USER 'username'@'localhost' IDENTIFIED WITH 'mysql_native_password' BY 'password';
+  CREATE USER 'username'@'localhost' IDENTIFIED WITH 'caching_sha2_password' BY 'password';
   
 This creates a user username that can only connect from localhost (the MySQL server machine). 
 
