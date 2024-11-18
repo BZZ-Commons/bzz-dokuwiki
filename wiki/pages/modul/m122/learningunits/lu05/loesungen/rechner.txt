@@ -1,0 +1,18 @@
+====== LU05.L02: Rechner ======
+<code bash>
+#! /bin/bash
+# author: Marcel Suter - BZZ
+resultat=`expr $1 + $2`
+echo "$1 + $2 = $resultat"
+
+resultat=$(($3 - $1))
+echo "$3 - $1 = $resultat"
+
+let resultat=$2*$3
+echo "$2 * $3 = $resultat"
+
+</code>
+
+----
+{{tag>M122-LU05}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

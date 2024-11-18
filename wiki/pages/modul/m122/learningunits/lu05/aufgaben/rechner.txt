@@ -1,0 +1,19 @@
+====== LU05.A02: Rechner ======
+//[[http://openbook.rheinwerk-verlag.de/shell_programmierung/shell_004_001.htm|ShellProg: 2.2 Zahlen]]//
+
+===== Aufgabenstellung =====
+Schreiben Sie ein Script, dem beim Aufruf drei Ganzzahlen als Argumente übergeben werden. 
+Mit diesen Zahlen führen Sie einige Berechnungen durch. 
+
+Speichern Sie das Ergebnis jeder Berechnung in einer Variable und geben Sie diese Variable aus.
+
+  - Addieren Sie die erste und die zweite Zahl mit dem Kommando ''expr''. 
+  - Subtrahieren Sie die erste Zahl von der dritten Zahl. Verwenden Sie für diese Rechnung die doppelte Klammerung.
+  - Mulitplizieren Sie die zweite und die dritte Zahl mit dem Kommando ''let''.
+
+===== Abgabe =====
+Geben Sie den Sourcecode Ihres Scripts ab. 
+
+----
+{{tag>M122-LU06}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Daniel Garavaldi, Marcel Suter

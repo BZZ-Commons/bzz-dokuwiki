@@ -1,0 +1,65 @@
+===== LU06.L02: MultiTouch - Realisierung =====
+<code bash>
+#!/bin/bash
+# multi-touch: creates a number of files
+# author: Marcel Suter (Ghwalin)
+# created: 2019-09-20
+
+# create variables with default values
+count=5
+name="file"
+dir="./"
+
+# options -h and -i
+if [ $1 == "-h" ]
+then
+  echo "multi-touch: creates a number of files"
+  echo "USAGE: mtouch.sh count filename directory"
+  exit 0
+fi
+
+if [ $1 == "-i" ]
+then
+  set -- ""
+  read -p "Anzahl Dateien [4]: " count
+  count=${count:=5}
+  read -p "Dateiname [file]: " name
+  name=${name:file}
+  read -p "Ordner [./]: " dir
+  dir=${dir:./}
+
+else
+  # check the parameters
+  if [ ! -z $1 ]
+  then
+    ((count=$1))
+  fi
+
+  if [ ! -z $2 ]
+  then
+    name=$2
+  fi
+
+  if [ ! -z $3 ]
+  then
+    dir=$3
+  fi
+fi
+
+echo "count=$count"
+echo "name=$name"
+echo "dir=$dir"
+
+# create the files
+i=0
+cd $dir
+while ((i < $count));
+do
+  #touch "$name$i.txt"
+  ((i=i+1))
+done
+</code>
+
+----
+{{tag>M122-LU05}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

@@ -1,0 +1,37 @@
+===== LU06.A02: MultiTouch - Realisierung =====
+
+{{page>.:mtouch_situation}}
+
+==== Auftrag ====
+Codieren Sie das Script "Multitouch" als Bash-Script.
+
+==== Vorgehen ====
+  - Erstellen Sie einen neuen Ordner ''~/exercise10''.
+  - Erstellen Sie ein neues Script ''mtouch.sh'' in diesem Ordner.
+    * Fügen Sie die Kopfzeilen (She-Bang, Kommentarkopf) ein.
+    * Passen Sie die Rechte mit ''chmod'' an.
+  - Codieren Sie zuerst das Festlegen der Defaultwerte und Übernehmen der Parameterwerte.
+  - Codieren Sie die Iteration zum Erstellen der Dateien.
+
+===== Erweiterungen =====
+==== -h Help ====
+Erweitern Sie das Skript um einen Hilfetext.
+Wird das Script mit ''mtouch -h'' aufgerufen, so soll eine kurze Erklärung des Skripts und der Parameter erscheinen.
+
+==== -i Interaktives Skript ====
+Erweitern Sie das Skript um einen interaktiven Modus.
+Dabei kann der Benutzer die einzelnen Parameter interaktiv in der Konsole eingeben.
+
+Wird das Skript mit ''mtouch -i'' aufgerufen, so zeigt das Skript eine Eingabeaufforderung für alle 3 Parameterwerte.
+Der Benutzer kann die Defaultwerte übernehmen, indem er keine Eingabe tätigt und nur Enter drückt.
+
+<code>
+> mtouch -i
+Anzahl Dateien (Default: 5) >
+Dateiname (Default: file)   > foobar
+Ordner (Default "./")       >
+</code>
+
+----
+{{tag>M122-LU06}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

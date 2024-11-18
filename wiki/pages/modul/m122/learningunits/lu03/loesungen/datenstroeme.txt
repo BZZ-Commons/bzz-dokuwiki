@@ -1,0 +1,13 @@
+====== LU03.L01: Datenströme umleiten ======
+
+<code bash>
+blau gelb gruen rot
+</code>
+
+  - Die einzelnen Farben werden in unterschiedliche Dateien geschrieben. \\ Die Farbe ''gelb'' wird in der bestehenden Datei ''client'' angefügt.
+  - Danach wird der Inhalt all dieser Dateien aufgelistet und in die Datei ''file2'' geschrieben. \\ In dieser Datei steht jede Farbe auf einer eigenen Zeile.
+  - Zuletzt geben wir den Inhalt der Datei ''file2'' aus, wobei die Zeilenumbrüche ignoriert werden. Diese Ausgabe leiten wir in die Datei ''file3'' um.
+
+----
+{{tag>M122-LU03}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Daniel Garavaldi, Marcel Suter

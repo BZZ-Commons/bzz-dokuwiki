@@ -1,0 +1,126 @@
+====== LU06a - Einführung in Selektionen in Bash ======
+{{https://openbook.rheinwerk-verlag.de/shell_programmierung/shell_006_000.htm|Shell Prog: Kapitel 4.1 - 4.3}}
+
+Selektionen (auch Kontrollstrukturen genannt) ermöglichen es, in Bash-Skripten Entscheidungen zu treffen und den Programmfluss basierend auf Bedingungen zu steuern. Die beiden häufigsten Mechanismen dafür sind **`if`-Bedingungen** und **`case`-Anweisungen**.
+
+===== `if`-Bedingungen =====
+
+
+Die **`if`-Anweisung** wird verwendet, um Code auszuführen, wenn eine Bedingung wahr ist.
+
+==== Grundstruktur ====
+
+<code bash>
+if [ Bedingung ]; then
+    # Befehle, falls Bedingung wahr ist
+elif [ andere Bedingung ]; then
+    # Befehle, falls andere Bedingung wahr ist
+else
+    # Befehle, falls keine Bedingung wahr ist
+fi
+</code>
+
+**Beispiel:**
+<code bash>
+#!/bin/bash
+zahl=10
+
+if [ $zahl -gt 5 ]; then
+    echo "Die Zahl ist größer als 5"
+elif [ $zahl -eq 5 ]; then
+    echo "Die Zahl ist genau 5"
+else
+    echo "Die Zahl ist kleiner als 5"
+fi
+</code>
+
+**Wichtige Operatoren:**
+  * **Zahlen:**
+    *  `-eq`: gleich
+    *  `-ne`: ungleich
+    *  `-lt`: kleiner als
+    *  `-le`: kleiner oder gleich
+    *  `-gt`: größer als
+    *  `-ge`: größer oder gleich
+  * **Zeichenketten:**
+    *  `=`: gleich
+    *  `!=`: ungleich
+    *  `-z`: leer
+    *  `-n`: nicht leer
+
+===== `case`-Anweisungen =====
+
+
+Die **`case`-Anweisung** ist nützlich, wenn Sie mehrere Bedingungen basierend auf einem einzigen Wert prüfen möchten.
+
+==== Grundstruktur ====
+
+<code bash>
+case Variable in
+    Muster1)
+        # Befehle für Muster1
+        ;;
+    Muster2)
+        # Befehle für Muster2
+        ;;
+    *)
+        # Standardfall (wenn nichts passt)
+        ;;
+esac
+</code>
+
+**Beispiel:**
+<code bash>
+#!/bin/bash
+farbe="blau"
+
+case $farbe in
+    "rot")
+        echo "Die Farbe ist rot"
+        ;;
+    "blau")
+        echo "Die Farbe ist blau"
+        ;;
+    *)
+        echo "Unbekannte Farbe"
+        ;;
+esac
+</code>
+
+===== Vergleich von `if` und `case` =====
+
+
+^ ^ `if`-Bedingungen                  ^ `case`-Anweisungen            ^
+| **Nützlichkeit**     | Für numerische oder logische Vergleiche | Für Mustervergleiche       |
+| **Lesbarkeit**       | Schwer lesbar bei vielen Bedingungen   | Einfach bei vielen Optionen |
+
+
+===== Logische Operatoren in Selektionen =====
+
+
+Bedingungen können kombiniert werden mit:
+  * **`&&`**: UND
+  *  **`||`**: ODER
+
+**Beispiel:**
+<code bash>
+#!/bin/bash
+zahl=10
+
+if [ $zahl -gt 5 ] && [ $zahl -lt 20 ]; then
+    echo "Die Zahl liegt zwischen 5 und 20"
+else
+    echo "Die Zahl liegt außerhalb des Bereichs"
+fi
+</code>
+
+===== Zusammenfassung =====
+
+
+  * Verwenden Sie **`if`**, wenn Sie logische oder numerische Bedingungen prüfen möchten.
+  * Nutzen Sie **`case`**, um mehrere Werte in einer übersichtlichen Weise zu prüfen.
+  * Kombinieren Sie Bedingungen mit **`&&`** und **`||`**, um komplexe Entscheidungen zu treffen.
+
+----
+{{tag>M122-LU06}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

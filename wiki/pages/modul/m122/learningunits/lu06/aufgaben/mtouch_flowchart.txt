@@ -1,0 +1,14 @@
+====== LU06.A01: MultiTouch - Programmablaufplan ======
+
+{{page>.:mtouch_situation}}
+
+===== Programmablaufplan =====
+Entwerfen Sie den Ablauf des Shell-Scripts ''mtouch'' als Programmablaufplan.
+Der PAP muss die einzelnen Verarbeitungsschritte vollständig abbilden:
+  * Prüfen der Argumente, setzen von Defaultwerten
+  * Wechseln in das korrekte Verzeichnis
+  * Erstellen der Dateien
+
+----
+{{tag>M122-LU06}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Daniel Garavaldi, Marcel Suter

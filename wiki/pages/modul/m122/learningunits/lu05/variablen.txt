@@ -1,0 +1,60 @@
+====== LU05a - Einführung Variablen in Bash ======
+{{https://openbook.rheinwerk-verlag.de/shell_programmierung/shell_004_000.htm|Shell Prog - 2.1}}
+
+In Bash-Skripten sind Variablen ein grundlegendes Konzept, mit dem Sie Daten speichern und verwalten können. Eine Variable dient als Container, der Werte wie Text, Zahlen oder andere Daten speichert, die später im Skript wiederverwendet werden können.
+===== Variablen definieren =====
+
+
+In Bash wird eine Variable durch Zuweisung eines Wertes deklariert. Es gibt keine Angabe des Datentyps, da Bash alle Variablen als Zeichenketten behandelt. Die Syntax lautet:
+<code bash>
+variable_name="Wert"
+</code>
+
+  * Der Variablenname darf keine Leerzeichen oder Sonderzeichen enthalten.
+  * Es dürfen keine Leerzeichen vor oder nach dem Gleichheitszeichen stehen.
+
+===== Variablen verwenden =====
+
+
+Um auf den Wert einer Variable zuzugreifen, verwenden Sie das $-Zeichen vor dem Variablennamen:
+<code bash>
+echo $variable_name
+</code>
+
+==== Beispiele ====
+
+<code bash>
+# Variable definieren
+name="Alice"
+
+# Variable verwenden
+echo "Hallo, $name!"
+</code>
+**Ausgabe:**
+<code>
+Hallo, Alice!
+</code>
+
+===== Besondere Hinweise =====
+
+ * Variablen sind standardmäßig lokal für das Skript oder die aktuelle Shell.  
+ * Um Variablen für Unterprozesse (z. B. aufgerufene Skripte) verfügbar zu machen, müssen Sie sie mit export exportieren:
+
+<code bash>
+export variable_name="Wert"
+</code>
+
+===== Numerische Berechnungen =====
+
+
+Da Bash-Variablen Zeichenketten sind, erfordert die Berechnung mit Zahlen spezielle Syntax, z. B. mit let, $(( )) oder expr:
+<code bash>
+a=5
+b=10
+sum=$((a + b))
+echo "Summe: $sum"
+</code>
+
+----
+{{tag>M122-LU05}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

@@ -1,0 +1,43 @@
+====== LU05.A01: Variablen ======
+===== Vorbereitung =====
+
+  - Erstellen Sie einen neuen Ordner ''~/exercise05''.
+  - Kopieren Sie die Vorlage in eine neue Datei ''vars.sh'' im oben erstellten Ordner.
+  - Passen Sie den Autor und das Datum im Kopf an.
+  - Speichern Sie die Datei ''vars.sh''.
+  - Geben Sie dem Besitzer das Recht dieses Skript auszuführen \\ ''chmod u+x vars.sh''.
+
+==== Vorlage ====
+<file bash vars.sh>
+#!/bin/bash
+#author: FIXME
+#date:   FIXME
+
+#TODO scriptFull = Name und Pfad dieses Skripts (Systemvariable verwenden)
+#TODO Ausgabe "Pfad: " + scriptFull
+
+#TODO scriptName = Names des Skripts in Grossbuchstaben (Systemvariable verwenden)
+#TODO Ausgabe "Dieses Skript heisst " + scriptName
+
+#TODO Variable quantity definieren
+#TODO quantity hat den Wert 7
+
+#TODO Variablen count, item definieren
+#TODO count = 3
+#TODO item = 11
+#TODO Ausgabe: count * item
+
+</file>
+
+===== Auftrag =====
+Ersetzen Sie die Zeilen mit ''#TODO'' durch die korrekten Befehle.
+  * Nicht jeder Kommentar lässt sich mit einem einzelnen Befehl umsetzen.
+  * Manchmal ersetzt ein Befehl mehrere Kommentare.
+  * Verwenden Sie, soweit möglich, Variablen.
+
+===== Abgabe =====
+Kopieren Sie das fertige Skript in die Aufgabe.
+
+----
+{{tag>M122-LU05}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Daniel Garavaldi, Marcel Suter

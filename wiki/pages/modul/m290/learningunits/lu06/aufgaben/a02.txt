@@ -27,7 +27,7 @@ To get the job done, follow the instructions below:
 ==== Task 2.1 ====
 **Create the User**: Create a user named //restrictedUser// with the password //SafePassword123// using the //mysql_native_password// plugin.
 
-  CREATE USER 'restrictedUser'@'localhost' IDENTIFIED WITH mysql_native_password BY 'SafePassword123';
+  CREATE USER 'restrictedUser'@'localhost' IDENTIFIED WITH caching_sha2_password BY 'SafePassword123';
 
 ==== Task 2.2 ====
 ** Overview of the current privileges**: Display all users.

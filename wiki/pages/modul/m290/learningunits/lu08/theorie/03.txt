@@ -1,12 +1,12 @@
-====== LU10b - Server-Programming von JavaScript ======
+====== LU10b - Server-Programing with JavaScript ======
 
 ===== Learning Objectives =====
-  - Programming our first Node Server application "hello world"
+  - Programing our first Node Server application "hello world"
   - Know how to start the server application
   - Generate a terminal message
 
 ===== HelloWorld.js =====
-At the beginning of each programmer's carreer there is always our notorious "Hello World". Why changing good habits? Let us also greet the world with a first server script.
+At the beginning of each programer's carreer there is always our notorious "Hello World". Why changing good habits? Let us also greet the world with a first server script.
 
   - For that we need to create in our Webstorm a new JavaScript file with the title "helloWorld". Please note, that the file ending will be set as "js", if you choose the right file type.
   - Furthermore we generate a console output with the js command: //console.log//. The entire line looks then like: console.log('Hello World!');

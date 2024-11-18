@@ -1,0 +1,27 @@
+====== LU03.L02: Ausgabe umleiten ======
+
+===== Teilaufgaben =====
+
+=== 1. Fehlermeldung unterdrücken ===
+<code bash>
+find /etc/passwd /etc/passXY 2> /dev/null
+</code>
+
+=== 2. Fehlermeldung umleiten ===
+<code bash>
+find /etc/passwd /etc/passXY 2> ~/exlu03a02/error.txt
+</code>
+
+=== 3. Resultate umleiten ===
+<code bash>
+find /etc/passwd /etc/passXY > ~/exlu03a02/found.txt
+</code>
+
+=== 4. Resultate und Fehler umleiten ===
+<code bash>
+find /etc/passwd /etc/passXY > ~/exlu03a02/results.txt 2>&1 
+</code>
+
+----
+{{tag>M122-LU03}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Daniel Garavaldi, Marcel Suter

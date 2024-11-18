@@ -2,8 +2,6 @@
 
 ===== 1. Erwarteter Output =====
 Welchen Inhalt hat die Datei ''file3'' nachdem alle Befehle ausgeführt wurden?
-== Abgabe ==
-Notieren Sie Ihre Erwartung im Textfeld der Moodle-Aufgabe.
 
 <code bash>
 1: echo "blau" > client
@@ -14,8 +12,12 @@ Notieren Sie Ihre Erwartung im Textfeld der Moodle-Aufgabe.
 6: echo `cat file2` > file3 
 </code>
 
+=== Abgabe 1 ===
+Notieren Sie Ihre Erwartung im Textfeld der Moodle-Aufgabe.
+
+
 ===== 2. Tatsächliches Resultat =====
-Erstellen Sie ein neues Verzeichnis ''~/exercise03''.
+Erstellen Sie ein neues Verzeichnis ''~/exlu03a01''.
 Führen Sie die Befehle in der Konsole aus.
 
 <WRAP center round important 60%>
@@ -25,7 +27,7 @@ Achten Sie auf die Sonderzeichen, wenn Sie die Befehle kopieren:
 </WRAP>
 
 
-== Abgabe ==
+=== Abgabe 2 ===
 Kopieren Sie den Inhalt der Datei ''file3'' ins Moodle.
 
 ----

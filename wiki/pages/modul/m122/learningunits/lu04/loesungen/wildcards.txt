@@ -1,0 +1,9 @@
+====== LU04.L01: Wildcard ======
+
+<code bash>
+suma> ls -l ./reading1[01]_[abc].txt
+</code>
+
+----
+{{tag>M122-LU0x}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Daniel Garavaldi, Marcel Suter

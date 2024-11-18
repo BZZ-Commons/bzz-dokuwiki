@@ -1,0 +1,106 @@
+====== LU05c - Parameter und Argumente ======
+{{https://openbook.rheinwerk-verlag.de/shell_programmierung/shell_005_000.htm|Shell Prog: Kapitel 3.1 - 3.3}}
+
+In Bash werden Parameter und Argumente verwendet, um Daten an Skripte oder Funktionen zu übergeben. Sie ermöglichen es, Skripte dynamisch zu gestalten und Eingaben zur Laufzeit zu verarbeiten.
+===== Parameter =====
+
+Ein Parameter ist ein Platzhalter, der mit einem Wert (Argument) gefüllt wird. Parameter können positionsbasiert oder speziell  sein:
+==== Positionsparameter ====
+
+  * Positionsparameter sind Parameter, die durch $0, $1, $2, ... referenziert werden.
+  * $0: Der Name des aufgerufenen Skripts.
+  * $1, $2, ...: Die übergebenen Argumente in der Reihenfolge ihrer Position.
+
+==== Besondere Parameter ====
+
+
+    $#: Anzahl der übergebenen Argumente.
+    $@: Liste aller Argumente (als separate Einträge).
+    $*: Liste aller Argumente (als eine Zeichenkette).
+    $$: Prozess-ID des aktuellen Skripts.
+    $?: Exit-Status des zuletzt ausgeführten Befehls.
+
+===== Argumente =====
+
+
+Argumente sind die tatsächlichen Werte, die beim Aufruf eines Skripts oder einer Funktion an die Parameter übergeben werden.
+
+==== Beispiel: ====
+
+<code bash>
+bash mein_skript.sh Hallo Welt
+</code>
+  * Hier ist mein_skript.sh der Skriptname ($0).
+  * Hallo ist das erste Argument ($1).
+  * Welt ist das zweite Argument ($2).
+
+===== Beispiel für Parameter und Argumente =====
+
+<code bash>
+#!/bin/bash
+echo "Skriptname: $0"
+echo "Erstes Argument: $1"
+echo "Zweites Argument: $2"
+echo "Anzahl der Argumente: $#"
+echo "Alle Argumente (einzeln): $@"
+echo "Alle Argumente (als Zeichenkette): $*"
+</code>
+==== Ausführung ====
+<code>
+bash mein_skript.sh Hallo Welt
+</code>
+
+==== Erklärung der Ausgabe ====
+
+<code>
+Skriptname: mein_skript.sh     # Name des Skripts ($0)
+Erstes Argument: Hallo         # Erstes Argument ($1)
+Zweites Argument: Welt         # Zweites Argument ($2)
+Anzahl der Argumente: 2        # Anzahl der Argumente ($#)
+Alle Argumente (einzeln): Hallo Welt   # Alle Argumente ($@)
+Alle Argumente (als Zeichenkette): Hallo Welt   # Alle Argumente als eine Zeichenkette ($*)
+</code>
+
+===== Unterschiede zwischen $@ und $* =====
+
+^ Ausdruck ^ Bedeutung ^
+| $@ | Jedes Argument als separates Element. |
+| $* | Alle Argumente als eine einzige Zeichenkette. |
+
+==== Beispiel zur Verdeutlichung: ====
+
+<code bash>
+#!/bin/bash
+for arg in "$@"; do
+  echo "Argument (mit \$@): $arg"
+done
+
+for arg in "$*"; do
+  echo "Argument (mit \$*): $arg"
+done
+</code>
+
+**Ausführung mit:**
+<code>
+bash mein_skript.sh "Hallo Welt" Test
+</code>
+
+**Ergebnis:**
+<code>
+Argument (mit $@): Hallo Welt
+Argument (mit $@): Test
+Argument (mit $*): Hallo Welt Test
+</code>
+
+==== Zusammenfassung ====
+
+
+  * Parameter: Platzhalter in einem Skript oder einer Funktion ($1, $2, etc.).
+  * Argumente: Werte, die beim Aufruf übergeben werden.
+  * Besondere Parameter wie $@ und $# bieten zusätzliche Kontrolle und Flexibilität.
+
+Mit diesen Tools können Sie Skripte schreiben, die flexibel auf Benutzer- oder Systemeingaben reagieren.
+
+----
+{{tag>M122-LU05}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

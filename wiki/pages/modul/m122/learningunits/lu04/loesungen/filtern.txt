@@ -1,0 +1,29 @@
+====== LU04.L02: Filtern und Sortieren ======
+
+===== 1. Messungen filtern =====
+Zeigen Sie nur die Messwerte der Stadt Bielefeld in der Konsole an.
+Die Ausgabe soll wie im Beispiel formatiert sein:
+<code>
+data20190827.txt:Bielefeld 1188.25626
+data20190828.txt:Bielefeld 1187.9329
+...
+</code>
+
+===== 2. Sortieren und ausgeben =====
+<code bash>
+suma> sort data20190827.txt
+</code>
+
+===== 3. Sortieren und speichern =====
+<code bash>
+suma> sort data20190827.txt -o sort20190827.txt;sort data20190828.txt -o sort20190828.txt
+</code>
+
+===== 4. Vergleichen =====
+<code bash>
+suma> comm -3 sort20190827.txt sort20190828.txt
+</code>
+
+----
+{{tag>M122-LU04}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Daniel Garavaldi, Marcel Suter

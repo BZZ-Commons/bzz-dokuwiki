@@ -1,0 +1,72 @@
+====== LU05b - Systemvariablen ======
+{{https://openbook.rheinwerk-verlag.de/shell_programmierung/shell_004_007.htm|Shell Prog: Kaptitel 2.8}}
+
+{{https://openbook.rheinwerk-verlag.de/shell_programmierung/shell_004_008.htm|Shell Prog: Kaptitel 2.9}}
+
+**Systemvariablen** (auch Umgebungsvariablen genannt) sind spezielle Variablen, die von der Shell und dem Betriebssystem bereitgestellt werden. Sie enthalten wichtige Informationen über das System, die Umgebung und die aktuelle Shell-Sitzung. Systemvariablen sind für alle Prozesse in der Umgebung verfügbar und werden häufig genutzt, um Konfigurationsdaten bereitzustellen oder Verhalten zu steuern.
+
+===== Eigenschaften von Systemvariablen =====
+
+  * Sie werden automatisch beim Starten der Shell gesetzt.
+  * Sie können von Benutzern und Skripten gelesen und geändert werden.
+  * Viele Programme greifen auf diese Variablen zurück, um ihre Konfiguration zu steuern.
+
+==== Wichtige Systemvariablen ====
+
+Hier sind einige der am häufigsten verwendeten Systemvariablen in Bash:
+
+^ Variable      ^ Beschreibung ^
+| ''HOME''        | Das Heimatverzeichnis des aktuellen Benutzers. |
+| ''PATH''        | Eine Liste von Verzeichnissen, in denen die Shell nach ausführbaren Programmen sucht. |
+| ''USER''        | Der Benutzername des aktuell angemeldeten Benutzers. |
+| ''PWD''         | Das aktuelle Arbeitsverzeichnis. |
+| ''SHELL''       | Der Pfad zur Standard-Shell des Benutzers. |
+| ''LANG''        | Die Spracheinstellung der Shell. |
+| ''LOGNAME''     | Der Login-Name des Benutzers. |
+| ''EDITOR''      | Der Standardeditor für die Shell. |
+| ''UID''         | Die Benutzer-ID des aktuellen Benutzers. |
+
+==== Systemvariablen anzeigen ====
+
+Sie können alle aktuell gesetzten Systemvariablen mit dem Befehl ''env'' oder ''printenv'' anzeigen:
+
+<code bash>
+env
+</code>
+
+Um den Wert einer einzelnen Variable zu überprüfen, verwenden Sie `echo`:
+
+<code bash>
+echo $HOME
+echo $PATH
+</code>
+
+==== Systemvariablen ändern ====
+
+Systemvariablen können innerhalb der Shell oder eines Skripts geändert werden. Änderungen gelten jedoch nur für die aktuelle Sitzung, es sei denn, sie werden in eine Konfigurationsdatei wie ''~/.bashrc'' oder ''~/.bash_profile'' geschrieben.
+
+Beispiel: Ändern der ''PATH''-Variable
+
+<code bash>
+export PATH=$PATH:/usr/local/bin
+</code>
+
+Hier wird ''/usr/local/bin'' am Ende der bestehenden ''PATH''-Variable hinzugefügt.
+
+==== Temporäre vs. Permanente Änderungen ====
+
+  * **Temporär**: Änderungen gelten nur für die aktuelle Sitzung.
+  * **Permanent**: Schreiben Sie die Änderungen in eine Shell-Konfigurationsdatei, z. B. `~/.bashrc`:
+
+<code bash>
+echo 'export PATH=$PATH:/usr/local/bin' >> ~/.bashrc
+source ~/.bashrc
+</code>
+
+==== Fazit ====
+
+Systemvariablen sind ein mächtiges Werkzeug in Bash, das Ihnen erlaubt, die Umgebung zu steuern und Skripte flexibel zu gestalten. Ein Verständnis dieser Variablen ist entscheidend für effektives Arbeiten in der Shell!
+
+----
+{{tag>M122-LU05}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

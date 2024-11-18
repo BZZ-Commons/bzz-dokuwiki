@@ -3,7 +3,7 @@
 ===== Learning Objectives =====
   - What a Node.js is
   - Which benefits a node server provides us
-  - programm a node server
+  - Program a node server
 
 ===== Additional Materials =====
   * {{ :modul:m290:learningunits:lu08:theorie:myfirstserver.zip | myFirstServer.js as ZIP-Download}}
@@ -40,12 +40,12 @@ In short, a Node.js server provides a fast, efficient way to handle web requests
   * npm install express
   ** ***************************************************************************************** */
   // Reference: www.npmjs.com/package/mysql
-
+  
   const mysql = require("mysql"); // import of the mysql-package
   const express = require('express'); // import of the express-package/middleware
-
+  
   const port = 3000; // ThKind of a telefon number, on which the server listens for requests
-
+  
   // Variable set with the db-connection credentials to connect the server to the database
   const config = {
     host: 'localhost',
@@ -53,24 +53,24 @@ In short, a Node.js server provides a fast, efficient way to handle web requests
     user: "restrictedUser",
     password: 'SafePassword123'
   }
-
+  
   const connection = mysql.createConnection(config)
   // connection line to the database, that takes the credentials
   // and returns a open line to execute sql statements
-
+  
   // function that actually connects the server to the database
   // result is successful or errormessage
   connection.connect(function(err) {
     if (err) throw err;
     console.log('Connected to MySQL database:', connection.config.database);
-
-     // Preparation of the sql statement, which will be send to the database
+    
+    // Preparation of the sql statement, which will be send to the database
     var sqlstmt = 'SELECT sysdate()';
-
+    
      connection.query(sqlstmt, function (err, result) {
          // the sqlstmt is send to the database
          if (err) throw err; // if everthing is fine, i receive the resultset
-
+         
          console.table(result); // We can present the result as a table
          console.log(result);   // Or as a unformated string
      });

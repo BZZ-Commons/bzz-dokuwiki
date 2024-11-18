@@ -1,0 +1,22 @@
+===== Ausgangslage =====
+Zum Testen eines Softwareprojekts benötigen Sie immer wieder eine Anzahl von Dateien.
+Anstatt diese jedes mal von Hand anzulegen, erstellen Sie ein Shell-Skript ''mtouch'' (multiple-touch).
+
+===== Argumente =====
+Das Shell-Skript kann mit bis zu 3 Argumenten aufgerufen werden.
+Für fehlende Argumente wird ein Defaultwert verwendet:
+
+^ # ^ Argument ^ Default ^
+| 1 | Anzahl Dateien | ''5'' |
+| 2 | Dateiname | ''file'' |
+| 3 | Verzeichnis | ''./'' |
+
+===== Beispiele =====
+^ Aufruf ^ Resultat ^
+| ''mtouch'' | Erstellt die Dateien ''file0.txt'' bis ''file4.txt'' im aktuellen Verzeichnis |
+| ''mtouch 12'' | Erstellt die Dateien ''file0.txt'' bis ''file11.txt'' im aktuellen Verzeichnis |
+| ''mtouch 3 test /tmp/testing '' | Erstellt die Dateien ''test0.txt'' bis ''test2.txt'' im Verzeichnis ''/tmp/testing'' |
+
+----
+{{tag>M122-LU0x}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

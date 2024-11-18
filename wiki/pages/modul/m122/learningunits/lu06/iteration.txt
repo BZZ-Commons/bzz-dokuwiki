@@ -1,0 +1,148 @@
+====== LU06b - Einführung in Iterationen in Bash ======
+{{https://openbook.rheinwerk-verlag.de/shell_programmierung/shell_006_009.htm|Shell Prog: Kapitel 4.10 - 4.11}}
+
+Iterationen (Schleifen) in Bash ermöglichen es, wiederholt eine Gruppe von Befehlen auszuführen, bis eine bestimmte Bedingung erfüllt ist. Bash bietet dafür mehrere Arten von Schleifen, die für unterschiedliche Zwecke verwendet werden können.
+
+----
+
+==== 1. **for**-Schleife ====
+
+Die **for-Schleife** wird verwendet, um durch eine Liste von Werten oder Dateien zu iterieren.
+
+=== Grundstruktur: ===
+<code bash>
+for variable in Liste; do
+    # Befehle
+done
+</code>
+
+=== Beispiel: ===
+<code bash>
+#!/bin/bash
+for name in Alice Bob Charlie; do
+    echo "Hallo, $name!"
+done
+</code>
+
+**Ausgabe:**
+<code>
+Hallo, Alice!
+Hallo, Bob!
+Hallo, Charlie!
+</code>
+
+=== for-Schleife für Dateien: ===
+<code bash>
+#!/bin/bash
+for file in *.txt; do
+    echo "Datei: $file"
+done
+</code>
+
+----
+
+==== 2. **while**-Schleife ====
+
+Die **while-Schleife** führt Befehle aus, solange eine Bedingung wahr ist.
+
+=== Grundstruktur: ===
+<code bash>
+while [ Bedingung ]; do
+    # Befehle
+done
+</code>
+
+=== Beispiel: ===
+<code bash>
+#!/bin/bash
+zahl=1
+while [ $zahl -le 5 ]; do
+    echo "Zahl: $zahl"
+    zahl=$((zahl + 1))
+done
+</code>
+
+**Ausgabe:**
+<code>
+Zahl: 1
+Zahl: 2
+Zahl: 3
+Zahl: 4
+Zahl: 5
+</code>
+
+----
+
+==== 3. **until**-Schleife ====
+
+Die **until-Schleife** ist das Gegenteil der **while-Schleife**: Sie läuft, bis eine Bedingung wahr wird.
+
+=== Grundstruktur: ===
+<code bash>
+until [ Bedingung ]; do
+    # Befehle
+done
+</code>
+
+=== Beispiel: ===
+<code bash>
+#!/bin/bash
+zahl=1
+until [ $zahl -gt 5 ]; do
+    echo "Zahl: $zahl"
+    zahl=$((zahl + 1))
+done
+</code>
+
+**Ausgabe:**
+<code>
+Zahl: 1
+Zahl: 2
+Zahl: 3
+Zahl: 4
+Zahl: 5
+</code>
+
+----
+
+==== 4. Schleifensteuerung ====
+
+Bash bietet Befehle, um Schleifen zu kontrollieren:
+  * **break**: Beendet die Schleife vorzeitig.
+  * **continue**: Überspringt den aktuellen Schleifendurchlauf.
+
+=== Beispiele: ===
+<code bash>
+# Mit break
+for i in {1..10}; do
+    if [ $i -eq 5 ]; then
+        break
+    fi
+    echo "Zahl: $i"
+done
+</code>
+
+<code bash>
+# Mit continue
+for i in {1..5}; do
+    if [ $i -eq 3 ]; then
+        continue
+    fi
+    echo "Zahl: $i"
+done
+</code>
+
+----
+
+==== Zusammenfassung ====
+
+^ Schleife  ^ Beschreibung                                  ^ Verwendung                                ^
+| **for**   | Iteriert über eine Liste von Werten oder Dateien | Wiederholung bei bekannter Anzahl von Werten |
+| **while** | Läuft, solange eine Bedingung wahr ist         | Dynamische Bedingung                       |
+| **until** | Läuft, bis eine Bedingung wahr wird            | Dynamische Bedingung, Gegenteil von while |
+| **break** | Beendet die Schleife                          | Vorzeitiges Ende                          |
+| **continue** | Überspringt den aktuellen Schleifendurchlauf | Fortsetzen der Schleife                   |
+
+----
+{{tag>M122-LU06}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

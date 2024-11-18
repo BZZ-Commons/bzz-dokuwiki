@@ -1,7 +1,7 @@
 ====== LU03.A02: Ausgabe umleiten ======
 
 ===== Vorbereitung =====
-Erstellen Sie einen neuen Ordner ''~/exercise04''.
+Erstellen Sie einen neuen Ordner ''~/exlu03a02''.
 
 ===== Aufgabenstellung =====
 
@@ -21,13 +21,13 @@ find /etc/passwd /etc/passXY
 Leiten Sie allfällige Fehlermeldungen nach ''/dev/null'' um.
 
 === 2. Fehlermeldung umleiten ===
-Schreiben Sie allfällige Fehlermeldungen in die Datei ''~/exercise04/error.txt''.
+Schreiben Sie allfällige Fehlermeldungen in die Datei ''~/exlu03a02/error.txt''.
 
 === 3. Resultate umleiten ===
-Schreiben Sie die gefundenen Dateien in die Datei ''~/exercise04/found.txt''.
+Schreiben Sie die gefundenen Dateien in die Datei ''~/exlu03a02/found.txt''.
 
 === 4. Resultate und Fehler umleiten ===
-Schreiben Sie die Resultate und allfällige Fehlermeldungen in die Datei ''~/exercise04/results.txt''.
+Schreiben Sie die Resultate und allfällige Fehlermeldungen in die Datei ''~/exlu03a02/results.txt''.
 
 
 ===== Abgabe =====
