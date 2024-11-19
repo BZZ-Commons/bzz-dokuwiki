@@ -31,6 +31,13 @@ Wähle sinnvolle Werte für die Eingaben der Anzahl und Noten, sofern nichts vor
   - Der Benutzer gibt bei der Anzahl Noten einen formal falschen Wert (keine Ganzzahl) ein.
   - Der Benutzer gibt eine formal falsche Note (keine Dezimalzahl) ein.
 
+<WRAP center round tip 60%>
+Wenn Sie Noten eingeben, achten Sie darauf, dass sie Grenzfälle behandeln. 
+Wie Berechnet das Programm den Durchschnitt wenn der Wert x.25 oder x.75 ist? 
+Wird korrekt gerundet?
+</WRAP>
+
+
 Jeder Testfall muss vollständig definiert sein:
   * Nummer
   * Bezeichnung

@@ -26,7 +26,7 @@ if __name__ == '__main__':
 ===== Hinweis  =====
 Die ggT-Berechnung geschieht nach dem [[https://de.wikipedia.org/wiki/Steinscher_Algorithmus|Algorithmus von Steiner nach Euklid]]. 
 
-  - R wird zum Divisionsrest aus A / B. (Falls B > A, so wird R einfach zu A.)
+  - R wird zum Divisionsrest aus A % B. (Falls B > A, so wird R einfach zu A.)
   - Ist R = 0, so ist B der ggT, und das Unterprogramm wird beendet.
   - Der Variable A wird der Wert von B zugewiesen, und der Variable B wird R zugewiesen.
   - Zurück zu 1. 

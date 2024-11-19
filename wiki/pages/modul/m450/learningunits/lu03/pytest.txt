@@ -47,14 +47,14 @@ def test_normal():
 
 === Assert ===
 Der Befehl ''assert'' ist eine spezielle Bedingung, die wir zum Testen und Debuggen von Code verwenden.
-Falls die Bedingung erfüllt ist, wird ''true'' zurück gegeben.
+Falls die Bedingung erfüllt ist, wird nichts gemacht.
 Sonst wird eine ''AssertionError''-Exception geworfen.
 Wir könnten das gleiche Resultat auch mit ''if''/''else'' erreichen:
 
 ^ assert ^ if / else ^
 | <code python>assert result == 5040</code> | <code python>
 if result == 5040:
-    return true
+    pass
 else:
     raise AssertionError
 </code> |
@@ -88,7 +88,36 @@ def test_zero():
     assert result == 1 
 </code>
 
+===== Resultate mit Fliesskommazahlen =====
+Bei Berechnungen mit Fliesskommazahlen gibt es immer kleine Abweichungen bei den Resultaten.
+Daher würde der Befehl ''assert'' häufig Fehler melden, obwohl das Resultat grundsätzlich korrekt ist.
 
+Um diesem Problem zu begegnen, gibt es die Funktion [[https://docs.pytest.org/en/7.1.x/reference/reference.html#pytest-approx|pytest.approx()]].
+Diese Funktion vergleicht die Werte unter Berücksichtigung einer geringen Toleranz.
+Beim Aufruf der Funktion muss zwingend das erwartete Resultat mitgegeben werden.
+Zusätzlich kennt die Funktion 3 optionale Argumente:
+  * ''rel'': Erlaubte relative Abweichung. Default: 1/1'000'000
+  * ''abs'': Erlaubte absolute Abweichung. Default: 1/1'000'000'000
+  * ''nan_ok'': Soll ''Not a Number'' erlaubt sein. Default: False
+
+==== Beispiel ====
+In diesem Beispiel testen wir eine Funktion, welche die Mehrwertsteuer (engl. **V**alue **A**dded **T**ax) berechnet.
+Wir haben ein Total von CHF 1575.50 was gemäss Taschenrechner einer Steuer von CHF 127.6155 entspricht.
+
+<code python>
+import pytest
+
+def calculate_vat(amount):
+   return amount * 0.081
+   
+def test_calculate_vat():
+    total = 1575.50
+    vat = calculate_vat(total)
+    pytest.approx(127.6155) == vat
+    
+</code>
+
+Da ich hier keine Angaben für relative und absolute Abweichung gemacht habe, müsste das tatsächliche Ergebnis bis auf die zwölfte Nachkommastelle übereinstimmen.
 ===== Tutorials =====
   * [[https://www.tutorialspoint.com/pytest/index.htm|Tutorialpoints]]
   * [[https://www.youtube.com/watch?v=YbpKMIUjvK8|Youtube]]
