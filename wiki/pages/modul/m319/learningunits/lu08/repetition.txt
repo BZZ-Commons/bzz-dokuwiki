@@ -62,36 +62,6 @@ Ein **Debugger** ist ein Tool, das hilft, Fehler im Programm zu finden, indem es
   - **Schrittweise Ausführung:**  
     Führt den Code Zeile für Zeile aus, um den Ablauf zu verfolgen.
 
-===== Interaktive Aufgabe =====
-==== Neue Aufgabe: Quiz-Bewertung ====
-Das folgende Programm soll die Ergebnisse eines Quiz bewerten. Jede richtige Antwort gibt 10 Punkte, jede falsche Antwort zieht 5 Punkte ab. Die maximale Punktzahl ist jedoch 100 und die minimale Punktzahl 0. Leider enthält das Programm sowohl Syntaxfehler als auch Logikfehler.
-
-<code python>
-def main():
-    total_points = 0
-    correct_answers = input('Wie viele richtige Antworten? ')
-    incorrect_answers = input('Wie viele falsche Antworten? ')
-    
-    total_points = correct_answers * 10 - incorrect_answers * 5
-    
-    if total_points > 100
-        total_points = 100
-    elif total_points < 0:
-        total_points = 0
-
-    print('Endpunktzahl: ' + total_points)
- 
-if __name__ = '__main__':
-    main()
-</code>
-
-==== Fragen: ====
-  * Wo könnte hier ein **Syntaxfehler** vorliegen?  
-  * Was könnte hier einen **Logikfehler** verursachen?  
-  * Welche Schritte würdest du unternehmen, um die Fehler zu beheben?
-
-==== Hinweise zur Fehlerbehebung ====
-  - Überprüfen Sie die Verwendung von Operatoren und die Datentypen von Variablen.
-  - Prüfen Sie, ob alle Bedingungen korrekt geschlossen sind.
-  - Verwenden Sie Debugging-Strategien, um den Programmablauf zu analysieren.
-
+----
+{{tag>m319-E2F, m319-E2E}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Kevin Maurizi
