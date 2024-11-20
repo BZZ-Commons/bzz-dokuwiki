@@ -1,5 +1,5 @@
 ====== LU04a - Fixture ======
-<nodisp>TODO SuMa: Fixture für Objekte und Funktionen</nodisp>
+<nodisp>TODO SuMa: Einfachere Beispiele</nodisp>
 <WRAP center round info 60%>
 Eine //Fixture// (deutsch: Vorrichtung, Halterung) dienen zur Initialisierung von Tests.
 Sie bieten eine statische Basis, damit Test zuverlässig ausgeführt werden und konsistente, wiederholbare Resultate erzeugen.
@@ -43,12 +43,36 @@ Mit Hilfe dieser Fixture können wir
 
 Dadurch können wir zum Beispiel Situationen erzeugen, die beim normalen Ablauf des Programms nicht auftreten können oder sollten.
 
-==== Eigene Fixtures definieren ====
+===== Eigene Fixtures definieren =====
 Neben den von PyTest vorgegebenen Fixtures, können wir auch eigene Funktionen schreiben und als Fixtures nutzen.
 Ein typischer Einsatz solcher Funktionen ist das Bereitstellen von Objekten und Daten für die Tests.
 Dadurch stellen wir beliebig vielen Testfunktionen eine einheitliche Datenbasis bereit.
 
-=== Beispiel ===
+==== Beispiele ====
+=== Objekte bereitstellen ===
+Für die Tests in einer Applikation sollen zwei Objekte der Klasse ''Customer'' bereitgestellt werden.
+
+<code python>
+@pytest.fixture
+def customer_max(self):
+    return Customer('Max', None)
+
+@pytest.fixture
+def customer_moritz(self):
+    return Customer('Moritz', None)
+    
+def test_add_customers(self, customer_max, customer_moritz):
+    library = Library()
+    library.add_customer(customer_max)
+    library.add_customer(customer_moritz)
+    assert len(library.customers) == 2   # Checks the number of entries in the list
+
+</code>
+In der Testfunktion ''test_add_customers'' werden die beiden Fixtures als Parameter angegeben.
+Pytest stellt selber sicher, dass die entsprechenden Fixtures ausgeführt werden.
+
+=== Testdaten aus einer Datei lesen ===
+
 <code python>
 
 def test_add_entries1(monkeypatch, capsys, version, test_values):

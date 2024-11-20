@@ -7,7 +7,7 @@
       * Only teaching materials, no websearch, no use of ai.
       * Webstorm Codeeditor
   * Expected result: 
-    * A JavaScript programm, that displays a greeting on the terminal of Webstorm.
+    * A JavaScript program, that displays a greeting on the terminal of Webstorm.
 
 ===== Assignments =====
 As always, our first program on the server is a small script designed to greet the world with the infamous “Hello World”. 
@@ -17,8 +17,8 @@ As always, our first program on the server is a small script designed to greet t
   - Generate more terminal outputs by using arrays, for iterations and console.log() function. e.g. //['Hello ', 'World!', 'Hello', 'Universe!'];//
   - Open a terminal window by clicking the terminal-icon at the left lower rim of Webstorm.
   - Install all missing JS packages, that Webstorm requires from you.
-  - Start your server by using the node command, e.g. //node myServer.js//
-  - If everything is correct, you will see the helloWorld statement as a output from your server in the bottom terminal window of Webstorm.
+  - Start your server by using the node command, e.g. //node helloWorld.js//
+  - If everything is correct, you will see the helloWorld statement as an output from your server in the bottom terminal window of Webstorm.
 
 
 ===== Solution =====
@@ -26,7 +26,7 @@ As always, our first program on the server is a small script designed to greet t
 
 ===== Vocabulary =====
 ^ English ^ German ^ 
-| preparatary work | Vorarbeit |
+| preparatory work | Vorarbeit |
 | infamous | berühmt-berüchtigt |
 
 

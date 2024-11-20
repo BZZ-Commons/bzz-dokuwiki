@@ -43,7 +43,10 @@ Mit ''|'' wird die Standardausgabe eines Befehls an die Standard-Eingabe eines a
 
 Der stdout des ersten Befehls wird als stdin des zweiten Befehls verwendet.
 
-
+===== tee =====
+Das Kommando ''tee'' ermöglicht es, die Ausgabe gleichzeitig an mehrere Ziele zu senden.
+<code bash>cat datei.txt | tee output.log</code>
+Hier wird der Inhalt der Datei am Bildschirm angezeigt und auch in die Datei ''output.log'' geschrieben.
 
 Durch das geschickte Kombinieren dieser Techniken können komplexe Datenströme effizient gesteuert und verarbeitet werden.
 
