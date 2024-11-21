@@ -1,0 +1,15 @@
+====== LU01.A01 - Einbindung und einfaches Styling ======
+
+==== Aufgabenstellung ====
+  - Erstellen Sie ein leeres HTML-Dokument
+  - Binden Sie Tailwind CSS über CDN ein [[https://tailwindcss.com/docs/installation/play-cdn|Anleitung]]
+  - Erstellen Sie einen Textbereich und gestalten Sie diesen mit Tailwind wie folgt:
+    - Der Text soll zentriert auf der Seite erscheinen
+    - Der Text soll eine Schriftgrösse von 3xl haben
+    - Der Text soll fett sein
+    - Der Text soll Textfarbe blue-500 haben
+
+==== Rahmenbedingungen ====
+^ Was ^ Beschreibung ^
+| Produkt: | HTML-Dokument mit der Vorgabe |
+| Zeit: | 10 Min. |

@@ -1,7 +1,7 @@
 ====== LU03.L01: Datenströme umleiten ======
 
 <code bash>
-blau gelb gruen rot
+gruen blau gelb rot
 </code>
 
   - Die einzelnen Farben werden in unterschiedliche Dateien geschrieben. \\ Die Farbe ''gelb'' wird in der bestehenden Datei ''client'' angefügt.

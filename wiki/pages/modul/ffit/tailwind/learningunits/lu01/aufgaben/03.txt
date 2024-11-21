@@ -1,0 +1,15 @@
+====== LU01.A03 - Eine responsive Karte erstellen ======
+
+==== Aufgabenstellung ====
+  - Erstellen Sie ein leeres HTML-Dokument
+  - Binden Sie Tailwind CSS über CDN ein [[https://tailwindcss.com/docs/installation/play-cdn|Anleitung]]
+  - Erstellen Sie eine responsive Karte mit folgendem Layout:
+    - Überschrift: In der Schriftgrösse text-xl, fett und zentriert.
+    - Inhalt: Ein Textblock mit einer Breite von w-96 und einem Innenabstand von p-4. Der Textblock soll:
+      - einen hellgrauen Hintergrund haben,
+      - bei kleineren Bildschirmen (sm) volle Breite einnehmen.
+
+==== Rahmenbedingungen ====
+^ Was ^ Beschreibung ^
+| Produkt: | HTML-Dokument mit der Vorgabe |
+| Zeit: | 15 Min. |

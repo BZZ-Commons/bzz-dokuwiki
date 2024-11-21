@@ -1,12 +1,9 @@
 ====== LU04.L02: Filtern und Sortieren ======
 
 ===== 1. Messungen filtern =====
-Zeigen Sie nur die Messwerte der Stadt Bielefeld in der Konsole an.
-Die Ausgabe soll wie im Beispiel formatiert sein:
+
 <code>
-data20190827.txt:Bielefeld 1188.25626
-data20190828.txt:Bielefeld 1187.9329
-...
+grep -r --include="data*.txt" "Bielefeld"
 </code>
 
 ===== 2. Sortieren und ausgeben =====

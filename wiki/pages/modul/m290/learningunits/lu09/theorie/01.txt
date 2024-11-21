@@ -4,7 +4,7 @@
 ===== Learning Objectives =====
   - Describe the four module relevant HTTP Methods
   - Explain at least three differnences between the POST and GET method 
-  - Asign each of the CRUD operations to one of the four main http request methods
+  - Assign each of the CRUD operations to one of the four main http request methods
 
 ===== Introcuction =====
 HTTP (Hypertext Transfer Protocol) methods are fundamental to the communication between clients (like web browsers) and servers in web applications. They allow the client to perform various operations on the server, such as retrieving, creating, updating, or deleting resources. The most commonly used HTTP methods are POST, GET, PUT, and DELETE. Each has a specific purpose and behavior in how it interacts with the server.

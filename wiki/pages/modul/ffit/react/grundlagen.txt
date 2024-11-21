@@ -1,0 +1,21 @@
+====== LU01a - React Grundlagen ======
+
+===== Was ist React? =====
+
+React.js (oder einfach React) ist eine JavaScript-Bibliothek, die von Facebook entwickelt wurde, um benutzerfreundliche und wiederverwendbare Benutzeroberflächen (UI) zu erstellen. Es ist keine vollständige Framework-Lösung wie Angular oder Vue, sondern fokussiert sich speziell auf die View-Schicht in einer Anwendung, basierend auf dem MVC-Muster (Model-View-Controller).
+
+React wird verwendet, um Single Page Applications (SPAs) zu entwickeln, bei denen der Benutzer eine schnelle und interaktive Erfahrung erhält, ohne dass Seiten komplett neu geladen werden müssen.
+
+===== Virtual DOM =====
+
+Ein zentrales Konzept in React ist das sogenannte virtuelle DOM (Document Object Model). Um zu verstehen, warum das wichtig ist, müssen wir uns die Funktionsweise von traditionellen Webanwendungen ansehen. Im klassischen DOM wird jede Änderung an der Benutzeroberfläche direkt im echten DOM vorgenommen. Das Problem dabei ist, dass das DOM langsam ist, insbesondere wenn viele Änderungen durchgeführt werden.
+
+React verwendet stattdessen ein virtuelles DOM, eine leichtgewichtige Kopie des echten DOMs. Wenn eine Komponente aktualisiert wird, vergleicht React den aktuellen Zustand des virtuellen DOMs mit dessen vorherigem Zustand. Nur die tatsächlich notwendigen Änderungen werden dann auf das echte DOM angewendet. Dieser Prozess, auch „Reconciliation“ genannt, sorgt für eine signifikante Verbesserung der Performance, insbesondere bei grossen Anwendungen.
+
+===== JSX =====
+
+JSX (JavaScript XML) ist eine spezielle Syntax, die React einführt, um die Entwicklung von Komponenten intuitiver zu gestalten. Mit JSX können Entwickler HTML-ähnlichen Code direkt in JavaScript schreiben, was die Lesbarkeit und Wartbarkeit des Codes verbessert.
+
+<code>
+const element = <h1>Willkommen bei React!</h1>;
+</code>
