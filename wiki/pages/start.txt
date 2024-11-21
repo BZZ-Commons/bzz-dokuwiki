@@ -2,10 +2,14 @@
 
 ====== Module ======
 ~~NOCACHE~~
-
-[[:modul:progaufgabe]]
-
+==== Deutsch ====
 <nspages :modul -subns -exclude -exclude:archiv: -h1 -textNS="" -simplelist -nopages>
+
+==== Englisch ====
+
+<nspages :en:modul -subns -exclude -exclude:archiv: -h1 -textNS="" -simplelist -nopages>
+
+
 
 ===== Modularchiv =====
 <nspages :modul:archiv -subns -exclude -h1 -textNS="" -simplelist -nopages>
@@ -20,7 +24,7 @@
   * [[http://openbook.galileo-press.de/it_handbuch/|IT-Handbuch für Fachinformatiker - Galileo OpenBooks]]
 
 ====== Anleitungen ======
-
+[[:modul:progaufgabe]]
 <nspages :howto -subns -exclude -h1 -textNS="" -simplelist -nopages>
 
 ===== Impressum =====
