@@ -1,0 +1,47 @@
+====== LU15a - Einführung in Integrationstests ======
+
+
+<WRAP center round tip 60%>
+Integrationstests stellen sicher, dass verschiedene Module oder Komponenten einer Applikation nahtlos zusammenarbeiten. 
+Sie bauen auf Unit-Tests auf, indem sie nicht nur einzelne Funktionen oder Klassen prüfen, sondern die Interaktion zwischen ihnen testen.
+</WRAP>
+ 
+
+===== Ziel von Integrationstests =====
+Das Hauptziel von Integrationstests ist es, Fehler zu identifizieren, die durch die Interaktion zwischen Modulen entstehen können, wie z. B.:
+  * **Inkompatible Schnittstellen:** Module können unterschiedliche Annahmen über Datenformate oder Protokolle machen.
+  * **Datenflussprobleme:** Unvollständige oder fehlerhafte Datenübertragungen zwischen Modulen.
+  * **Integration externer Systeme:** Fehler in der Kommunikation mit Datenbanken, APIs oder anderen externen Services.
+
+Integrationstests helfen, diese Schwachstellen frühzeitig zu erkennen und die Stabilität der gesamten Applikation zu gewährleisten.
+
+===== Aufbau eines Integrationstests =====
+Integrationstests werden typischerweise in einem realitätsnahen Szenario durchgeführt, wobei mehrere Module oder Subsysteme zusammen getestet werden. Sie erfordern oft eine vorbereitete Umgebung, die realitätsnahe Bedingungen simuliert.
+
+Einige Schlüsselkonzepte:
+  - **Testfälle definieren:** Welche Interaktionen sollen getestet werden? Zum Beispiel: Kommunikation zwischen einer Weboberfläche und einer Datenbank.
+  - **Testumgebung einrichten:** Eine realitätsnahe Umgebung, einschließlich Testdatenbanken, Mock-Services oder vollständiger Systeme, wird benötigt.
+  - **Automatisierung:** Tools wie Selenium, JUnit oder Pytest können verwendet werden, um wiederholbare und skalierbare Tests zu erstellen.
+  - **Verifikation:** Prüfen, ob die erwarteten Ergebnisse mit den tatsächlichen Ergebnissen übereinstimmen.
+
+===== Arten von Integrationstests =====
+  - **Big-Bang-Integration:** Alle Module werden gleichzeitig integriert und getestet. Vorteil: Schnelle Umsetzung. Nachteil: Fehlersuche kann schwierig sein.
+  - **Inkrementelle Integration:** Module werden schrittweise integriert und getestet. Dies kann weiter unterteilt werden in:
+    * **Top-Down-Integration:** Tests beginnen bei den oberen Modulen der Architektur.
+    * **Bottom-Up-Integration:** Tests beginnen bei den unteren Modulen.
+    * **Sandwich-Integration:** Kombination aus Top-Down- und Bottom-Up-Ansätzen.
+  - **Hybridtests:** Einsatz von echten Komponenten und simulierten (z. B. Mocks oder Stubs), um Tests zu erleichtern.
+
+===== Best Practices =====
+  - **Frühzeitiges Testen:** Integrationstests sollten so früh wie möglich im Entwicklungszyklus durchgeführt werden.
+  - **Automatisierung und Wiederholbarkeit:** Investieren Sie in automatisierte Tests, um Effizienz und Konsistenz zu gewährleisten.
+  - **Isolierung von Fehlerquellen:** Wenn ein Test fehlschlägt, sollte klar sein, welche Komponente verantwortlich ist.
+  - **Einsatz von Mocking:** Externe Abhängigkeiten wie APIs oder Datenbanken sollten in frühen Tests simuliert werden, um konsistente Ergebnisse zu erhalten.
+  - **Kontinuierliche Integration:** Integrationstests sollten Teil einer CI/CD-Pipeline sein, um bei jedem Code-Commit sicherzustellen, dass die Komponenten weiterhin korrekt interagieren.
+
+===== Fazit =====
+Integrationstests sind entscheidend für die Qualität und Zuverlässigkeit moderner Softwareanwendungen. Sie schließen die Lücke zwischen Unit- und Systemtests, indem sie die Zusammenarbeit der einzelnen Bausteine einer Applikation sicherstellen. Mit einer klaren Strategie und dem Einsatz geeigneter Tools und Techniken können Entwickler sicherstellen, dass ihre Software nicht nur in Einzelteilen, sondern auch im Zusammenspiel zuverlässig funktioniert.
+
+----
+{{tag>M450-LU15}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

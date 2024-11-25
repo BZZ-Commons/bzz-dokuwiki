@@ -65,7 +65,7 @@ input_reader module with input validation
 </file>
 </WRAP>
 
-Erstellen Sie im File ''input_reader.py'' das Gerüst der Funktion ''read_float()''.
+Erstellen Sie im File ''input_reader.py'' die Funktionsdefinition der Funktionen ''read_float()'' und ''read_int()''.
 
 ==== Teilauftrag 2 ====
 Übersetzen Sie den Pseudocode aus der Ausgangslage in Python code für die Funktion ''read_float''.
