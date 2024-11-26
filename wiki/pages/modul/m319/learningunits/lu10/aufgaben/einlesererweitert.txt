@@ -41,13 +41,13 @@ Falls der User einen Wert ausserhalb des Grenzwerts eingibt, soll er darauf hing
 def read_float(text_to_display, lower_bound = None, upper_bound = None):
 ...
 
-def read_float(text_to_display, lower_bound = float(inf), upper_bound = float(inf)):
+def read_float(text_to_display, lower_bound = float(-inf), upper_bound = float(inf)):
 ...
 
 def read_int(text_to_display, lower_bound = None, upper_bound = None):
 ...
 
-def read_int(text_to_display, lower_bound = int(inf), upper_bound = int(inf)):
+def read_int(text_to_display, lower_bound = int(-inf), upper_bound = int(inf)):
 ...
 </code>
 </WRAP>
