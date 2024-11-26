@@ -5,7 +5,12 @@ Lösen Sie die zwei Aufträge um sich mit dem Syntax von Funktionen bekannt zu m
 </WRAP>
 
 
-===== Auftrag 1: Vier verschiedene Varianten =====
+===== Auftrag 1: Vier verschiedene Varianten | File main.py =====
+
+<WRAP center round tip 60%>
+Lösen Sie die Aufgabe im File ''main.py'' und testen Sie den Code mit den Testfällen in ''main_test.py''
+</WRAP>
+
 
 Funktionsblöcke können Sie auf vier verschiedenen Varianten definieren.
 
@@ -40,7 +45,12 @@ if __name__ == '__main__':
 </code>
 
 
-===== Auftrag 2: Einfacher Rechner=====
+===== Auftrag 2: Einfacher Rechner | File calculator.py=====
+
+<WRAP center round tip 60%>
+Lösen Sie die Aufgabe im File ''calculator.py'' und testen Sie den Code mit den Testfällen in ''calculator_test.py''
+</WRAP>
+
 
 Programmieren Sie einfache Taschenrechner-Funktionen (''add'', ''substract'', ''multiply'', ''divide'', ''power'', ''root'' etc.) und rufen Sie diese aus der Main-Funktion auf und drucken Sie die Resultate.
 

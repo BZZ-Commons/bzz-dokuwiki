@@ -1,0 +1,74 @@
+====== LU07a - Funktion definieren ======
+[[https://openbook.rheinwerk-verlag.de/shell_programmierung/shell_008_000.htm|ShellProg - Kapitel 6.1]]
+
+<WRAP center round todo 60%>
+Funktionen in Bash sind eine Möglichkeit, wiederverwendbaren Code zu schreiben. Sie ermöglichen es, eine Gruppe von Befehlen in einer benannten Einheit zu bündeln, die an beliebiger Stelle im Skript aufgerufen werden kann. Das verbessert die Lesbarkeit und Wartbarkeit von Shell-Skripten.
+
+</WRAP>
+
+#### Definition einer Funktion
+Funktionen werden in Bash folgendermaßen definiert:
+
+<code bash>
+function name {
+    # Befehle
+}
+</code>
+
+Alternativ kannst du die `function`-Schlüsselwort weglassen:
+
+<code bash>
+name() {
+    # Befehle
+}
+</code>
+
+#### Aufrufen einer Funktion
+Eine Funktion wird durch ihren Namen aufgerufen, ohne Klammern:
+<code bash>
+name
+</code>
+
+#### Beispiel
+Hier ist ein einfaches Beispiel, das eine Funktion namens `greet` definiert:
+
+<code bash>
+#!/bin/bash
+
+greet() {
+    echo "Hallo, $1!"
+}
+
+greet "Welt"  # Aufruf der Funktion mit einem Argument
+</code>
+
+**Ausgabe:**
+</code>
+Hallo, Welt!
+</code>
+
+#### Parameter in Funktionen
+Funktionen können Argumente wie Skripte selbst annehmen. Diese werden mit `$1`, `$2` usw. innerhalb der Funktion referenziert, wobei `$0` der Name des Skripts ist.
+
+#### Rückgabewerte
+Funktionen können numerische Rückgabewerte verwenden, die mit dem Befehl `return` gesetzt werden:
+<code bash>
+summe() {
+    return $(($1 + $2))
+}
+
+summe 3 5
+echo $?  # Gibt 8 aus
+</code>
+
+Nicht-numerische Werte können über `echo` zurückgegeben und mit Command Substitution (`$(...)`) erfasst werden:
+<code bash>
+get_date() {
+    echo $(date)
+}
+
+current_date=$(get_date)
+echo "Aktuelles Datum: $current_date"
+</code>
+
+Mit Funktionen in Bash lassen sich also Skripte modularer und effizienter gestalten.

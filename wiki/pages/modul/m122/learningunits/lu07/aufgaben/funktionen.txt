@@ -1,0 +1,64 @@
+====== LU07.A01: Funktionen ======
+Bei dieser Aufgabe erstellen Sie einige Funktionen in Bash-Scripts.
+Achten Sie auf den korrekten Namen der Funktion, damit der Aufruf klappt.
+
+===== Vorgehen =====
+  - Erstellen Sie einen neuen Ordner "~/exlu07a01".
+  - Erstellen Sie für jede Teilaufgabe eine neue Scriptdatei (z.B. functionsA.sh, functionsB.sh, ...).
+  - Kopieren Sie die Vorlage der jeweiligen Teilaufgabe in diese Scriptdatei.
+  - Geben Sie dem aktuellen Benutzer das Recht, die Scripts auszuführen \\ z.B. ''chmod u+x exercise11a.sh''
+  - Realisieren Sie die beschriebene Funktionalität als Funktion im Bash-Script.
+  - Testen Sie Ihr Skript.
+
+===== Aufgabenstellungen =====
+==== 1. Usage ====
+Das Skript prüft, ob mindestens 3 Argumente eingegeben wurden.
+Falls nicht, zeigt die Funktion ''usage'' eine Meldung an.
+<file bash exercise11a.sh>
+#!/bin/bash
+# ------ TODO: Funktion 'usage' ------
+# Ausgabe: Hier sind 3 Argumente erforderlich
+# Ausgabe: usage: Skriptname anrede vorname nachname
+# ------ TODO: Funktion 'usage' ------
+
+# TODO Falls weniger als 3 Argumente angegeben
+then
+   usage
+fi
+</file>
+
+==== 2. Zufallszahl ====
+Die Funktion ''generateRandom'' erzeugte eine Zufallszahl in einem von/bis-Bereich.
+Dieser von/bis-Bereich wird als Parameter beim Aufruf der Funktion übergeben.
+Ist der Aufruf unvollständig (0 oder 1 Argument), so wird keine Zufallszahl erzeugt (leerer String in Variable).
+
+<file bash exercise11b.sh>
+#!/bin/bash
+# author: FIXME
+# date:   FIXME
+
+# ------ TODO: Funktion 'generateRandom' ------
+# Falls weniger als 2 Argumente angegeben
+#   Variable 'randomNumber' ist ein leerer String
+#   Returnwert: -1
+#
+# Zufallszahl generieren mit der Formel: RANDOM % ( $2 - $1 +1 ) + $1
+# und in 'randomNumber' speichern
+# Returnwert: 0
+# ------ TODO: Funktion 'generateRandom' ------
+ 
+# Generate a random number between 10 and 20
+generateRandom 10 20
+echo "The random number is ${randomNumber}"
+
+# invalid call
+generateRandom 1
+echo "The random number is ${randomNumber}"
+</file>
+
+===== Abgabe =====
+Laden Sie die Skriptdateien hoch.
+
+----
+{{tag>M122-LU07}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Daniel Garavaldi, Marcel Suter
