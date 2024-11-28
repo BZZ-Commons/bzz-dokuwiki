@@ -1,0 +1,21 @@
+====== LU01.A02 - Create a component ======
+
+===== Requirements  =====
+  * Work type: individual
+  * Timeframe: 15 Minutes
+  * Means of aid: 
+      * only teaching materials
+  * Expected result: A react app with a custom component
+
+===== Assignments =====
+  - Create new directory in "src" and name it "components"
+  - Create a new file named "ProductList.jsx"
+  - Create a functional component named "ProductList" and try to build the given screenshot
+  - Use dummy content without using an API, for images use http://via.placeholder.com/800
+
+===== Screenshot =====
+
+{{:modul:ffit:react:learningunits:lu01:aufgaben:productslist.png?600|}}
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Kamil Demirci

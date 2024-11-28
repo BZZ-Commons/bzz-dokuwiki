@@ -1,0 +1,15 @@
+====== LU01.A03 - Fetch data in component ======
+
+===== Requirements  =====
+  * Work type: individual
+  * Timeframe: 15 Minutes
+  * Means of aid: 
+      * only teaching materials
+  * Expected result: A react app with a custom component
+
+===== Assignments =====
+  - Create useEffect function an fetch data from https://dummyjson.com/products
+  - Fill the component with data from the API resource
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Kamil Demirci

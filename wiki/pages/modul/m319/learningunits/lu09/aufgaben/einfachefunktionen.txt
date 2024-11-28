@@ -52,7 +52,7 @@ Lösen Sie die Aufgabe im File ''calculator.py'' und testen Sie den Code mit den
 </WRAP>
 
 
-Programmieren Sie einfache Taschenrechner-Funktionen (''add'', ''substract'', ''multiply'', ''divide'', ''power'', ''root'' etc.) und rufen Sie diese aus der Main-Funktion auf und drucken Sie die Resultate.
+Programmieren Sie einfache Taschenrechner-Funktionen (''add'', ''substract'', ''multiply'', ''divide'', ''power'', ''root'') und rufen Sie diese aus der Main-Funktion auf und drucken Sie die Resultate.
 
 <code python>
 def add(TODO):
