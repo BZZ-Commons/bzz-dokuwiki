@@ -12,7 +12,7 @@ Geben Sie im Terminal von Pycharm diese Befehle aus:
 | ''coverage run'' | Führt alle PyTest-Funktionen aus. |
 | ''coverage html'' | Erstellt einen Bericht im Ordner "htmlcov" |
 
-Im Ordner "htmlcov" finden Sie eine Datei "index.html".
+Im Ordner "**htmlcov**" finden Sie eine Datei "**index.html**".
 Diese können Sie in einem Webbrowser öffnen.
 
 ==== Test-Dateien ====

@@ -6,8 +6,8 @@ Funktionen in Bash sind eine Möglichkeit, wiederverwendbaren Code zu schreiben.
 
 </WRAP>
 
-#### Definition einer Funktion
-Funktionen werden in Bash folgendermaßen definiert:
+===== Definition einer Funktion =====
+Funktionen werden in Bash folgendermassen definiert:
 
 <code bash>
 function name {
@@ -23,13 +23,15 @@ name() {
 }
 </code>
 
-#### Aufrufen einer Funktion
+===== Aufrufen einer Funktion =====
+
 Eine Funktion wird durch ihren Namen aufgerufen, ohne Klammern:
 <code bash>
 name
 </code>
 
-#### Beispiel
+==== Beispiel ====
+
 Hier ist ein einfaches Beispiel, das eine Funktion namens `greet` definiert:
 
 <code bash>
@@ -47,10 +49,17 @@ greet "Welt"  # Aufruf der Funktion mit einem Argument
 Hallo, Welt!
 </code>
 
-#### Parameter in Funktionen
+<WRAP center round tip 60%>
+Beachte, dass die Definition der Funktion **vor** dem Aufruf stehen muss.
+</WRAP>
+
+
+===== Parameter in Funktionen =====
+
 Funktionen können Argumente wie Skripte selbst annehmen. Diese werden mit `$1`, `$2` usw. innerhalb der Funktion referenziert, wobei `$0` der Name des Skripts ist.
 
-#### Rückgabewerte
+===== Rückgabewerte =====
+
 Funktionen können numerische Rückgabewerte verwenden, die mit dem Befehl `return` gesetzt werden:
 <code bash>
 summe() {
@@ -71,4 +80,25 @@ current_date=$(get_date)
 echo "Aktuelles Datum: $current_date"
 </code>
 
-Mit Funktionen in Bash lassen sich also Skripte modularer und effizienter gestalten.
+===== Variablen in Funktionen =====
+In Bash sind alle Variablen standardmässig als ''global'' definiert.
+Daher kann jeder Teil eines Bash-Scripts, auch Funktionen, auf alle Variablen zugreifen.
+Wir können jedoch eine Variable innerhalb der Funktion als ''local'' definieren.
+Dadurch vermeiden wir Konflikte mit anderen Variablen, die den gleichen Bezeichner haben.
+
+| <code bash>
+function doIt() {
+  text = 'World'
+}
+
+text = 'Universe'
+echo "Hello $text"
+</code> | <code bash>
+function doIt() {
+  local text = 'World'
+}
+
+text = 'Universe'
+echo "Hello $text"
+</code> |
+| Hello World | Hello Universe |
