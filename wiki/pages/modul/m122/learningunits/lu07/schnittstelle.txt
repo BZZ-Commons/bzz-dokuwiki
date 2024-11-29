@@ -1,14 +1,14 @@
 ====== LU07b - Parameter und Rückgabewerte ======
 [[https://openbook.rheinwerk-verlag.de/shell_programmierung/shell_008_002.htm|ShellProg - Kapitel 6.3-6.4]]
 
-#### **Parameter in Funktionen**
 Bash-Funktionen können Argumente annehmen, ähnlich wie Skripte. Diese Argumente werden innerhalb der Funktion über Positionsparameter referenziert: 
 
-- `$1` für das erste Argument, `$2` für das zweite usw.
-- `$@` und `$*` enthalten alle Argumente.
-- `"$#"` gibt die Anzahl der übergebenen Argumente zurück.
+  * ''$1'' für das erste Argument, ''$2'' für das zweite usw.
+  * ''$@'' und ''$*'' enthalten alle Argumente.
+  * ''"$#"'' gibt die Anzahl der übergebenen Argumente zurück.
 
-**Beispiel:**
+==== Beispiel ====
+
 <code bash>
 #!/bin/bash
 
@@ -20,15 +20,15 @@ addiere 5 10  # Aufruf der Funktion mit zwei Argumenten
 </code>
 
 **Ausgabe:**
-</code>
+<code>
 15
 </code>
 
-In diesem Beispiel sind `$1` und `$2` die ersten beiden Argumente, die an die Funktion `addiere` übergeben wurden.
+In diesem Beispiel sind ''$1'' und ''$2'' die ersten beiden Argumente, die an die Funktion ''addiere'' übergeben wurden.
 
----
 
-#### **Parameter prüfen**
+===== Parameter prüfen =====
+
 Du kannst prüfen, ob Argumente übergeben wurden:
 <code bash>
 zeige_argumente() {
@@ -43,14 +43,15 @@ zeige_argumente Hallo Welt
 </code>
 
 **Ausgabe:**
-</code>
+<code>
 Argumente: Hallo Welt
 </code>
 
----
 
-#### **Rückgabewerte**
-Bash-Funktionen geben standardmäßig numerische Rückgabewerte zwischen `0` und `255` zurück, die mit `return` gesetzt werden können. Diese Werte können über die Variable `$?` nach dem Funktionsaufruf abgerufen werden.
+===== Rückgabewerte =====
+
+Bash-Funktionen geben standardmässig numerische Rückgabewerte zwischen ''0'' und ''255'' zurück, die mit ''return'' gesetzt werden können. 
+Diese Werte können über die Variable ''$?'' nach dem Funktionsaufruf abgerufen werden.
 
 **Numerischer Rückgabewert:**
 <code bash>
@@ -73,18 +74,17 @@ fi
 </code>
 
 **Ausgabe:**
-</code>
+<code>
 Die Zahl ist größer als 10.
 </code>
 
-**Hinweis:** `return` ist auf numerische Werte beschränkt. Komplexe Daten müssen über andere Wege "zurückgegeben" werden.
+**Hinweis:** ''return'' ist auf numerische Werte beschränkt. Komplexe Daten müssen über andere Wege "zurückgegeben" werden.
 
----
+==== Nicht-numerische Rückgabewerte ====
 
-#### **Nicht-numerische Rückgabewerte**
-Nicht-numerische Daten (wie Strings oder Arrays) können indirekt zurückgegeben werden, z. B. durch `echo` und Command Substitution (`$(...)`).
+Nicht-numerische Daten (wie Strings oder Arrays) können indirekt zurückgegeben werden, z. B. durch ''echo'' und Command Substitution (''$(...)'').
 
-**Beispiel mit `echo`:**
+**Beispiel mit ''echo'':**
 <code bash>
 #!/bin/bash
 
@@ -97,13 +97,12 @@ echo "Aktuelles Datum: $aktuelles_datum"
 </code>
 
 **Ausgabe:**
-</code>
+<code>
 Aktuelles Datum: Mo 26. Nov 2024 10:15:30 CET
 </code>
 
----
+===== Rückgabe über globale Variablen =====
 
-#### **Rückgabe über globale Variablen**
 Eine weitere Möglichkeit besteht darin, globale Variablen zu nutzen, um Daten aus einer Funktion verfügbar zu machen.
 
 **Beispiel:**
@@ -119,13 +118,12 @@ echo "Das Ergebnis ist: $ergebnis"
 </code>
 
 **Ausgabe:**
-</code>
+<code>
 Das Ergebnis ist: 20
 </code>
 
----
 
-#### Zusammenfassung
-- **Parameter**: Werden mit `$1`, `$2`, usw. referenziert und mit `$@` oder `$*` gesammelt.
-- **Rückgabewerte**: Numerische Werte über `return`, komplexe Daten über `echo` oder globale Variablen.
-- Diese Mechanismen machen Bash-Funktionen flexibel und ermöglichen die Verarbeitung verschiedener Arten von Daten.
+===== Zusammenfassung =====
+  * **Parameter**: Werden mit ''$1'', ''$2'', usw. referenziert und mit ''$@'' oder ''$*'' gesammelt.
+  * **Rückgabewerte**: Numerische Werte über ''return'', komplexe Daten über ''echo'' oder globale Variablen.
+  * Diese Mechanismen machen Bash-Funktionen flexibel und ermöglichen die Verarbeitung verschiedener Arten von Daten.
