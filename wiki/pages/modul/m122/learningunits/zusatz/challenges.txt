@@ -1,0 +1,71 @@
+====== Aufgabe: Bash Challenges ======
+Sie finden eine Reihe von Beispielen, die ein unerwartetes Resultat zeigen.
+Ihre Aufgabe:
+  * Erklären Sie, wieso das Resultat falsch ist.
+  * Wie müsste das Skript geändert werden, um ein korrektes Resultat zu erzeugen.
+
+==== Vorbereitung ====
+Erstellen Sie ein neues Verzeichnis ''~/challenge01''.
+Speichern Sie in diesem Verzeichnis die Dateien (Daten und Skripts) für die Challenges.
+
+===== calc: Rechnen ist Glücksache =====
+//Quellennachweis: itsfoss.com//
+
+=== Beschreibung ===
+
+Das Skript liest eine Reihe von Zahlen aus einer Datei.
+Diese Zahlen werden addiert und die Summe angezeigt. 
+
+=== Fehler ===
+  * Erwartetes Resultat: 536
+  * Tatsächliches Resultat: 522
+
+=== Dateien ===
+<file text calc.data>
+102
+071
+210
+153
+</file>
+
+<file bash calc.sh>
+#!/bin/bash
+declare -i SUM=0
+while read X ; do
+    SUM+=$X
+done < calc.data
+echo "Sum is: $SUM"
+</file>
+
+===== tokens: Zwei Dinge zählen =====
+//Quellennachweis: itsfoss.com//
+
+=== Beschreibung ===
+Das Skript liest einen Input-Stream mit zwei unterschiedlichen Werten: ''RED'' und ''BLUE''.
+Die Reihenfolge und Häufigkeit der Werte ist unbekannt.
+Für unser Beispiel werden die Werte durch die Funktion ''stream()'' erzeugt.
+Diese Funktion dürfen Sie nicht verändern.
+
+Das Skript soll die Anzahl der ''RED''- und ''BLUE''-Werte zählen.
+
+=== Fehler ===
+Das vorliegende Skript kann entweder ''RED'' oder ''BLUE'' zählen.
+Es gelingt scheinbar nicht, beides zu zählen.
+
+=== Dateien ===
+<file bash tokens.sh>
+#!/bin/bash
+
+# You MUST NOT change that :
+stream() {
+  TOKENS=( "RED" "BLUE" )
+  for((i=0;i<100;++i)) ; do
+    echo ${TOKENS[RANDOM%2]}
+  done
+}
+
+# You MUST change that
+stream | \
+    grep -F RED | wc -l > RED.CNT
+cat RED.CNT
+</file>

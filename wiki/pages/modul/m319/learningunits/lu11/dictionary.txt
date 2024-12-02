@@ -97,9 +97,19 @@ Dann kombinieren Sie Listen und Dictionary; Sie erstellen eine Liste von Diction
 | 1 | {'name': 'Anna', 'age': 27, 'eyecolor': 'green'} |
 
 <code python>
+# Dictionaries erstellen 
 member0 = {'name': 'Peter', 'age': 32, 'eyecolor': 'brown'}
 member1 = {'name': 'Anna', 'age': 27, 'eyecolor': 'green'}
+
+# Dictionaries in eine Liste einfügen 
 member_list = [member0, member1]
+
+# ODER:
+# Direkt eine Liste von Dictionaries erstellen
+member_list = [
+    {'name': 'Peter', 'age': 32, 'eyecolor': 'brown'},
+    {'name': 'Anna', 'age': 27, 'eyecolor': 'green'}
+]
 </code>
 
 ----

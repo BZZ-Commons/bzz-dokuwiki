@@ -75,12 +75,15 @@ Git ist ziemlich gut darin, die Codeteile der verschiedenen Mitarbeiter zusammen
 Trotzdem braucht es ein wenig Koordination zwischen den Mitarbeitern.
 
 ==== Vorbereitung ====
+
   - Akzeptieren Sie das Assignment im GitHub Classroom. 
   - Sie können die Gruppen (6 Gruppen à 3-4 Personen) selber bilden:
     * Entweder: Sie erstellen eine neue Gruppe.
     * Oder: Sie wählen eine bestehende Gruppe aus.
   - Setzen Sie sich mit Ihrer Gruppe an einen 4er-Tisch. Es ist **keine** Kommunikation über die Aufgabe ausserhalb Ihrer Gruppe erlaubt.
   - Klonen Sie das Repository in PyCharm.
+  - Um die Issues zu erhalten, trage deinen Namen ins main.py ein und ''commit'' und ''push'' \\ {{:modul:m319:learningunits:lu12:aufgaben:issues_lu12.png?600|}}
+  - Überprüfe dein Repo ob die Issues vorhanden sind (dauert etwa 2 Minuten, Seite aktualisieren nicht vergessen)
   - Erstellen Sie eine neue Python-Datei ''my_test''. Falls PyCharm nachfragt, ob es die Datei mit Git verwalten soll, **Lehnen Sie dies ab**.
   - Kopieren Sie den unten stehenden Code in diese Datei.
 
