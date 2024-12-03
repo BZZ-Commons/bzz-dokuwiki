@@ -1,142 +1,76 @@
 ====== LU06.L01 - Grenzwerte "Artikeldaten" ======
+Für einige Validierungsregeln gibt es keine Grenzwerte.
+Ein Text kann z.B. nicht "ein wenig" ungültige Zeichen enthalten.
 
-^ Nr || n |
-^ Klassen || n |
-^ Eingaben | Artikelnummer| n|
-^ ::: | Artikelbezeichnung | a |
-^ ::: | Einheit | e |
-^ ::: | Preis | n.nn |
-^ Erwartetes Resultat ^ Meldung | |
-| |||
-^ Nr || n |
-^ Klassen || n |
-^ Eingaben | Artikelnummer| n|
-^ ::: | Artikelbezeichnung | a |
-^ ::: | Einheit | e |
-^ ::: | Preis | n.nn |
-^ Erwartetes Resultat ^ Meldung | |
-| |||
+Bei dieser Aufgabe gibt es daher keine Grenzfälle für:
+  * Die Artikelnummer ist eine 5-stellige Ganzzahl
+  * Die Einheit ist eine Auswahl
 
-^ Nr || n |
-^ Klassen || n |
-^ Eingaben | Artikelnummer| n|
-^ ::: | Artikelbezeichnung | a |
-^ ::: | Einheit | e |
-^ ::: | Preis | n.nn |
+^ Nr || 20 |
+^ Bezeichnung || Artikelbezeichnung, Mindestlänge |
+^ Eingaben | Artikelnummer| 55443 |
+^ ::: | Artikelbezeichnung | Heu |
+^ ::: | Einheit | Meter |
+^ ::: | Preis | 13.75 |
 ^ Erwartetes Resultat ^ Meldung | |
-| |||
-^ Nr || n |
-^ Klassen || n |
-^ Eingaben | Artikelnummer| n|
-^ ::: | Artikelbezeichnung | a |
-^ ::: | Einheit | e |
-^ ::: | Preis | n.nn |
+| Eingaben korrekt. Daten gespeichert. |||
+^ Nr || 21 |
+^ Bezeichnung || Artikelbezeichnung, Maximallänge |
+^ Eingaben | Artikelnummer| 77789 |
+^ ::: | Artikelbezeichnung | abcdefghijabcdefghijabcdefghij |
+^ ::: | Einheit | Pack |
+^ ::: | Preis | 387.05 |
 ^ Erwartetes Resultat ^ Meldung | |
-| |||
-^ Nr || n |
-^ Klassen || n |
-^ Eingaben | Artikelnummer| n|
-^ ::: | Artikelbezeichnung | a |
-^ ::: | Einheit | e |
-^ ::: | Preis | n.nn |
+| Eingaben korrekt. Daten gespeichert. |||
+^ Nr || 22 |
+^ Bezeichnung || Artikelbezeichnung, zu kurz |
+^ Eingaben | Artikelnummer| 56478 |
+^ ::: | Artikelbezeichnung | O2 |
+^ ::: | Einheit | Stück |
+^ ::: | Preis | 54.60 |
 ^ Erwartetes Resultat ^ Meldung | |
-| |||
-^ Nr || n |
-^ Klassen || n |
+| Ungültige Artikelbezeichnung |||
+^ Nr || 23 |
+^ Bezeichnung || Artikelbezeichnung, zu lang |
 ^ Eingaben | Artikelnummer| n|
-^ ::: | Artikelbezeichnung | a |
-^ ::: | Einheit | e |
-^ ::: | Preis | n.nn |
+^ ::: | Artikelbezeichnung | abcdefghijabcdefghijabcdefghijZ |
+^ ::: | Einheit | Meter |
+^ ::: | Preis | 7.25 |
 ^ Erwartetes Resultat ^ Meldung | |
-| |||
-^ Nr || n |
-^ Klassen || n |
-^ Eingaben | Artikelnummer| n|
-^ ::: | Artikelbezeichnung | a |
-^ ::: | Einheit | e |
-^ ::: | Preis | n.nn |
+| Ungültige Artikelbezeichnung |||
+^ Nr || 24 |
+^ Bezeichnung || Preis minimal |
+^ Eingaben | Artikelnummer| 55441 |
+^ ::: | Artikelbezeichnung | Billig |
+^ ::: | Einheit | Kilogramm |
+^ ::: | Preis | 0.05 |
 ^ Erwartetes Resultat ^ Meldung | |
-| |||
-^ Nr || n |
-^ Klassen || n |
-^ Eingaben | Artikelnummer| n|
-^ ::: | Artikelbezeichnung | a |
-^ ::: | Einheit | e |
-^ ::: | Preis | n.nn |
+| Eingaben korrekt. Daten gespeichert. |||
+^ Nr || 25 |
+^ Bezeichnung || Preis maximal |
+^ Eingaben | Artikelnummer| 96245 |
+^ ::: | Artikelbezeichnung | Teuer |
+^ ::: | Einheit | Meter |
+^ ::: | Preis | 1000.00 |
 ^ Erwartetes Resultat ^ Meldung | |
-| |||
-^ Nr || n |
-^ Klassen || n |
-^ Eingaben | Artikelnummer| n|
-^ ::: | Artikelbezeichnung | a |
-^ ::: | Einheit | e |
-^ ::: | Preis | n.nn |
+| Eingaben korrekt. Daten gespeichert. |||
+^ Nr || 26 |
+^ Bezeichnung || Preis zu klein |
+^ Eingaben | Artikelnummer| 86420 |
+^ ::: | Artikelbezeichnung | Zu billig |
+^ ::: | Einheit | Stück |
+^ ::: | Preis | 0.04 |
 ^ Erwartetes Resultat ^ Meldung | |
-| |||
-^ Nr || n |
-^ Klassen || n |
-^ Eingaben | Artikelnummer| n|
-^ ::: | Artikelbezeichnung | a |
-^ ::: | Einheit | e |
-^ ::: | Preis | n.nn |
+| Ungültiger Preis |||
+^ Nr || 27 |
+^ Bezeichnung || Preis zu gross |
+^ Eingaben | Artikelnummer| 28643 |
+^ ::: | Artikelbezeichnung | Zu teuer |
+^ ::: | Einheit | Pack |
+^ ::: | Preis | 1000.01 |
 ^ Erwartetes Resultat ^ Meldung | |
-| |||
-^ Nr || n |
-^ Klassen || n |
-^ Eingaben | Artikelnummer| n|
-^ ::: | Artikelbezeichnung | a |
-^ ::: | Einheit | e |
-^ ::: | Preis | n.nn |
-^ Erwartetes Resultat ^ Meldung | |
-| |||
-^ Nr || n |
-^ Klassen || n |
-^ Eingaben | Artikelnummer| n|
-^ ::: | Artikelbezeichnung | a |
-^ ::: | Einheit | e |
-^ ::: | Preis | n.nn |
-^ Erwartetes Resultat ^ Meldung | |
-| |||
-^ Nr || n |
-^ Klassen || n |
-^ Eingaben | Artikelnummer| n|
-^ ::: | Artikelbezeichnung | a |
-^ ::: | Einheit | e |
-^ ::: | Preis | n.nn |
-^ Erwartetes Resultat ^ Meldung | |
-| |||
-^ Nr || n |
-^ Klassen || n |
-^ Eingaben | Artikelnummer| n|
-^ ::: | Artikelbezeichnung | a |
-^ ::: | Einheit | e |
-^ ::: | Preis | n.nn |
-^ Erwartetes Resultat ^ Meldung | |
-| |||
-^ Nr || n |
-^ Klassen || n |
-^ Eingaben | Artikelnummer| n|
-^ ::: | Artikelbezeichnung | a |
-^ ::: | Einheit | e |
-^ ::: | Preis | n.nn |
-^ Erwartetes Resultat ^ Meldung | |
-| |||
-^ Nr || n |
-^ Klassen || n |
-^ Eingaben | Artikelnummer| n|
-^ ::: | Artikelbezeichnung | a |
-^ ::: | Einheit | e |
-^ ::: | Preis | n.nn |
-^ Erwartetes Resultat ^ Meldung | |
-| |||
-^ Nr || n |
-^ Klassen || n |
-^ Eingaben | Artikelnummer| n|
-^ ::: | Artikelbezeichnung | a |
-^ ::: | Einheit | e |
-^ ::: | Preis | n.nn |
-^ Erwartetes Resultat ^ Meldung | |
-| |||
+| Ungültiger Preis |||
+
 
 
 ----

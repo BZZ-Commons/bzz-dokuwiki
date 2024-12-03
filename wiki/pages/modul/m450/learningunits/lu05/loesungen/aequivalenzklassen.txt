@@ -8,7 +8,7 @@
 | 4 | Einheit | Kilogramm |
 | 5 | Einheit | Meter |
 | 6 | Einheit | Pack |
-| 7 | Preis | Dezimalzahl, 0.00 - 1'000.00 mit 2 Nachkommastellen |
+| 7 | Preis | Dezimalzahl, 0.05 - 1'000.00 mit 2 Nachkommastellen |
 ^ Ungültige Klassen ^^
 | 8 | Artikelnummer | formal falsch |
 | 9 | Artikelnummer | mehr als 5 Ziffern |
@@ -17,7 +17,7 @@
 | 12 | Artikelbezeichnung | mehr als 30 Zeichen |
 | 13 | Artikelbezeichnung | formal falsch |
 | 14 | Einheit | ungültige Einheit |
-| 15 | Preis | kleiner 0.00  |
+| 15 | Preis | kleiner 0.05  |
 | 16 | Preis | grösser 1'000.00  |
 | 17 | Preis | mehr als 2 Nachkommastellen  |
 | 18 | Preis | formal falsch  |
