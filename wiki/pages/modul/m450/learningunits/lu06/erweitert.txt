@@ -1,0 +1,86 @@
+====== LU06a - Weitere Verfahren ======
+
+===== Grenzwertanalyse =====
+
+Bei der Grenzwertanalyse liegt der Fokus auf Werte an den Rändern der Äquivalenzklassen, da hier häufig Fehler auftreten.
+Das Ziel ist die Erkennung von Grenzfall-Fehlern, z. B. bei Übergängen zwischen gültigen und ungültigen Bereichen.
+
+==== Anwendung ====
+Systeme mit numerischen oder begrenzten Eingabebereichen.
+==== Beispiel: ====
+Für eine Ganzzahl von 1 bis 100:  
+  * Testfälle: 1 (unterer Rand), 100 (oberer Rand), 0 (unterhalb), 101 (oberhalb).
+
+===== Entscheidungstabellen =====
+Basierend auf den gültigen Äquivalenzklassen stellen wir alle Eingabekombinationen und den daraus resultierenden Aktionen in einer Tabelle dar. Jede Kombination wird als Testfall abgedeckt.
+Dies stellt sicher, dass alle möglichen Kombinationen von Eingaben und deren Auswirkungen getestet werden.
+==== Anwendung ====  
+Systeme mit mehreren Bedingungen oder Regeln.
+==== Beispiel ====  
+Ein Login-System:  
+  * Bedingung 1: Benutzername gültig/ungültig.  
+  * Bedingung 2: Passwort gültig/ungültig.  
+  * Mögliche Kombinationen:  
+    * Gültig/Gültig → Zugriff gewährt.  
+    * Gültig/Ungültig → Zugriff verweigert.  
+
+===== Kombinatorisches Testen (Pairwise Testing) =====
+Wir testen alle möglichen Kombinationen von Eingabewerten, wobei jedoch nur Paare von Eingabewerten vollständig abgedeckt werden.
+Das Ziel ist die Abdeckung der häufigsten Wechselwirkungen zwischen Eingabeparametern bei reduziertem Aufwand gegenüber den Entscheidungstabellen.
+
+==== Anwendung ====  
+Systeme mit mehreren Eingabeparametern.
+
+==== Beispiel ====  
+Ein Konfigurationsformular mit Feldern für Land, Sprache, und Währung:  
+  * Testfälle: Jede Kombination von zwei Parametern (z. B. Land/Deutsch/Euro, Land/Englisch/USD).
+
+===== Zustandsbasierte Tests =====
+
+Die Testfälle basieren auf einem Zustandsdiagramm, das die verschiedenen Zustände des Systems und deren Übergänge beschreibt.
+Damit stellen wir sicher, dass das System korrekt auf Übergänge zwischen Zuständen reagiert.
+
+==== Anwendung ====  
+Systeme mit mehreren Zuständen, wie z. B. Finite State Machines.
+
+==== Beispiel ====  
+Ein Ticketautomat:  
+  * Zustand: "Warten auf Zahlung" → Übergang zu "Zahlung abgeschlossen" nach Eingabe des Betrags.
+
+===== Fehlerspekulation =====
+
+Die Testfälle werden auf Grundlage von Erfahrung und Annahmen über potenzielle Fehler erstellt.
+Vor allem erfahrene Testverantwortliche können hier erstaunlich viele Fehler finden.
+Damit identifizieren wir häufig vorkommender oder erfahrungsgemäss wahrscheinliche Fehler.
+
+==== Anwendung ====  
+Unstrukturierte oder schlecht dokumentierte Systeme.
+
+==== Beispiel ====  
+Eingabe leerer Felder, ungültiger Sonderzeichen oder sehr grosser Zahlen.
+
+===== Fehlerbasiertes Testen =====
+Diese Testfälle zielen gezielt auf bekannte Fehlerquellen oder Problemfelder ab.
+Dies ermöglicht die Verifizierung, dass bekannte Fehler behoben sind und nicht erneut auftreten.
+
+==== Anwendung ====  
+Regressionstests und nach Fehleranalysen.
+==== Beispiel ====  
+Ein System, das in der Vergangenheit Eingabefelder falsch validiert hat: gezielte Tests für diese Felder.
+
+===== Zusammenfassung der Verfahren =====
+
+^ Verfahren ^ Ziel ^ Typische Anwendung ^               |
+| Äquivalenzklassen-Analyse   | Abdeckung repräsentativer Eingabewerte      | Bereiche mit validen/invaliden Werten |
+| Grenzwertanalyse            | Testen kritischer Werte                     | Eingabewerte mit klaren Grenzen      |
+| Entscheidungstabellen       | Prüfung aller Regelkombinationen           | Systeme mit komplexen Logiken        |
+| Zustandsbasierte Tests      | Validierung von Zustandsübergängen          | Zustandssensitive Systeme            |
+| Fehlerspekulation           | Erkennung wahrscheinlicher Fehler           | Erfahrungsbasiertes Testen           |
+| Kombinatorisches Testen     | Optimierte Testkombinationen                | Systeme mit vielen Parametern        |
+| Fehlerbasiertes Testen      | Prüfung auf frühere Fehlerquellen           | Regressionstests                     |
+
+Diese Verfahren bieten eine systematische Grundlage, um Testfälle effektiv und effizient zu gestalten und die Qualität des Systems sicherzustellen.
+
+----
+{{tag>M450-LU06}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

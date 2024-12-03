@@ -23,9 +23,9 @@ Erstellen Sie die Definition der Klasse in der Datei "car.py".
 ==== Eingabe eines Autos ====
 Codieren Sie das Erfassen und Speichern eines Autos in der Datei ''main.py''.
 
-  - Eingabe der Marke.
-  - Eingabe des Modells.
-  - Eingabe des Baujahrs.
+  - Eingabe der Marke ''brand''.
+  - Eingabe des Modells ''model''.
+  - Eingabe des Baujahrs ''construction''.
   - Objekt der Klasse ''Car'' erzeugen.
   - Ausgabe von Baujahr, Marke und Modell
 

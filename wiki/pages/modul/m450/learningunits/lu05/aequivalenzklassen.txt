@@ -5,11 +5,26 @@ Die Äquivalenzklassen-Analyse ist eine Technik zur Definition von Testfällen.
 Bei der Äquivalenzklassen-Analyse definieren wir für jede Eingabe die Gruppen von Werten, die vom Programm gleich verarbeitet werden (sollten).
 </WRAP>
 
-Angenommen wir haben ein Eingabefeld für eine Ganzzahl zwischen 0 und 100.
-  * Wir können davon ausgehen, dass alle gültigen Eingaben gleich verarbeitet werden.
-  * Auch werden alle formal falschen Eingaben (Buchstaben, Sonderzeichen, ...) gleich verarbeitet werden.
+===== Grundprinzip =====
 
-Anstatt nun jede Zahl von 0 bis 100 und jede Kombination von Buchstaben zu testen, brauchen wir nur je einen Testfall.
+
+Eine Äquivalenzklasse ist eine Menge von Eingabewerten, die das System auf ähnliche Weise verarbeitet. 
+Die Annahme ist, dass das Testen eines repräsentativen Werts aus der Klasse ausreicht, um die gesamte Klasse abzudecken. 
+Die Werte innerhalb einer Klasse sind dabei typischerweise entweder alle gültig oder alle ungültig.
+
+Angenommen wir haben ein Eingabefeld für eine Ganzzahl zwischen 0 und 100.
+Bei der Äquivalenzklassen-Analyse gehen wir davon aus, dass jede Gruppe von Zahlen gleich verarbeitet werden:
+  * alle gültigen Eingaben 
+  * alle zu kleinen Zahlen 
+  * alle zu grossen Zahlen
+  * Alle formal falschen Eingaben (Buchstaben, Sonderzeichen, ...).
+
+Anstatt nun jede denkbare Zahl und jede Kombination von Buchstaben zu testen, brauchen wir pro Klasse nur je einen Testfall.
+Zum Beispiel
+  * 34 (gültige Zahl)
+  * -5 (zu kleine Zahl)
+  * 251 (zu grosse Zahl)
+  * a3 (formal ungültig)
 
 ===== Äquivalenzklassen definieren =====
 Je nach Art der Eingabe benötigen wir unterschiedliche Äquivalenzklassen.
@@ -27,6 +42,7 @@ Je nach Art der Eingabe benötigen wir unterschiedliche Äquivalenzklassen.
   * 1 Klasse für ungültige Zeichen
 
 ==== Auswahl ====
+Steht dem Benutzer eine beschränkte Auswahl von Werten zur Verfügung, sollte jeder gültige Wert separat getestet werden.
   * 1 Klasse pro gültigem Wert
   * 1 Klasse für ungültige Werte
 
@@ -64,11 +80,23 @@ Je nach Art der Eingabe benötigen wir unterschiedliche Äquivalenzklassen.
 
 ===== Testfälle ableiten =====
 Aus den Äquivalenzklassen können wir nun die Testfälle ableiten.
-  * Testfälle mit ausschliesslich gültigen Klassen. Dabei muss jede gültige Klasse in mindesten einem gültigen Testfall vorkommen.
-  * Testfälle mit **einer** ungültigen Klasse.
-
 Als Eingabewerte wählen wir "typische" Werte die klar innerhalb der Klasse liegen.
 Die Grenzen der Klassen werden später in separaten Testfällen (Grenzwertanalyse) getestet.
+
+==== Klassen mit gültigen Werten ====
+Zunächst definieren wir Testfälle mit ausschliesslich gültigen Klassen. 
+Dabei muss jede gültige Klasse in mindestens einem Testfall vorkommen.
+
+Im oben stehenden Beispiel können wir Testfälle mit den folgende Äquivalenzklassen definieren:
+^ Nr ^ Klassen ^
+| 1 | 1, 2, 5, 6 |
+| 2 | 1, 3, 5, 6 |
+| 3 | 1, 4, 5, 6 |
+
+==== Testfälle mit ungültigen Werten ====
+Wir testen immer nur einen ungültigen Werte auf einmal.
+Daher muss für jede ungültige Klasse ein eigener Testfall definiert werden.
+
 
 ===== Beispiel: Personalien =====
 ^ Nr || 1 |
