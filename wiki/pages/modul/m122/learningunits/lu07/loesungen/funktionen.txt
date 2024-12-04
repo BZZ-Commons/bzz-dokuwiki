@@ -1,2 +1,52 @@
 ====== LU07.L01: Funktionen ======
+===== Usage =====
 
+<code bash>
+#!/bin/bash
+
+# ------ TODO: Funktion 'usage' ------
+# Diese Funktion gibt eine hilfreiche Fehlermeldung aus, wenn das Skript nicht mit den richtigen Argumenten aufgerufen wird.
+usage() {
+   echo "Hier sind 3 Argumente erforderlich"
+   echo "usage: $0 anrede vorname nachname"
+}
+
+# Überprüfen, ob weniger als 3 Argumente angegeben wurden
+if [ $# -lt 3 ]; then
+   usage
+   exit 1  # Beendet das Skript mit einem Fehlercode
+fi
+
+# Hier kann der restliche Code des Skripts folgen
+</code>
+
+===== Zufallszahl =====
+<code bash>
+#!/bin/bash
+# author: FIXME
+# date:   FIXME
+
+# ------ TODO: Funktion 'generateRandom' ------
+generateRandom() {
+    # Überprüfen, ob weniger als 2 Argumente übergeben wurden
+    if [ $# -lt 2 ]; then
+        randomNumber=""  # Leerer String
+        return -1  # Rückgabewert -1
+    fi
+
+    # Zufallszahl zwischen $1 und $2 (einschließlich der Grenzen)
+    randomNumber=$((RANDOM % ($2 - $1 + 1) + $1))
+
+    return 0  # Rückgabewert 0 für Erfolg
+}
+# ------ Ende der Funktion 'generateRandom' ------
+
+# Beispielaufruf mit gültigen Argumenten
+generateRandom 10 20
+echo "The random number is ${randomNumber}"
+
+# Ungültiger Aufruf mit nur einem Argument
+generateRandom 1
+echo "The random number is ${randomNumber}"
+
+</code>
