@@ -3,20 +3,19 @@
 
 Iterationen (Schleifen) in Bash ermöglichen es, wiederholt eine Gruppe von Befehlen auszuführen, bis eine bestimmte Bedingung erfüllt ist. Bash bietet dafür mehrere Arten von Schleifen, die für unterschiedliche Zwecke verwendet werden können.
 
-----
 
-==== 1. **for**-Schleife ====
+===== for-Schleife =====
 
 Die **for-Schleife** wird verwendet, um durch eine Liste von Werten oder Dateien zu iterieren.
 
-=== Grundstruktur: ===
+==== Grundstruktur: ====
 <code bash>
 for variable in Liste; do
     # Befehle
 done
 </code>
 
-=== Beispiel: ===
+==== Beispiel: ====
 <code bash>
 #!/bin/bash
 for name in Alice Bob Charlie; do
@@ -31,7 +30,7 @@ Hallo, Bob!
 Hallo, Charlie!
 </code>
 
-=== for-Schleife für Dateien: ===
+==== for-Schleife für Dateien: ====
 <code bash>
 #!/bin/bash
 for file in *.txt; do
@@ -41,7 +40,7 @@ done
 
 ----
 
-==== 2. **while**-Schleife ====
+===== while-Schleife =====
 
 Die **while-Schleife** führt Befehle aus, solange eine Bedingung wahr ist.
 
@@ -71,20 +70,27 @@ Zahl: 4
 Zahl: 5
 </code>
 
-----
+==== Alle Zeilen einer Datei lesen ====
+Diese Iteration liest eine Datei zeilenweise und stellt die Daten in die Variable ''data''.
+Die Variable mit dem Dateinamen wird in der letzten Zeile mittels Umleitung (''<'') angegeben.
+<code bash>
+filename=someFile.dat
+while read data; do
+    # Process the data
+done < $filename
 
-==== 3. **until**-Schleife ====
+===== until-Schleife =====
 
 Die **until-Schleife** ist das Gegenteil der **while-Schleife**: Sie läuft, bis eine Bedingung wahr wird.
 
-=== Grundstruktur: ===
+==== Grundstruktur: ====
 <code bash>
 until [ Bedingung ]; do
     # Befehle
 done
 </code>
 
-=== Beispiel: ===
+==== Beispiel: ====
 <code bash>
 #!/bin/bash
 zahl=1
@@ -103,15 +109,13 @@ Zahl: 4
 Zahl: 5
 </code>
 
-----
-
-==== 4. Schleifensteuerung ====
+===== Schleifensteuerung =====
 
 Bash bietet Befehle, um Schleifen zu kontrollieren:
   * **break**: Beendet die Schleife vorzeitig.
   * **continue**: Überspringt den aktuellen Schleifendurchlauf.
 
-=== Beispiele: ===
+==== Beispiele: ====
 <code bash>
 # Mit break
 for i in {1..10}; do
@@ -134,7 +138,7 @@ done
 
 ----
 
-==== Zusammenfassung ====
+===== Zusammenfassung =====
 
 ^ Schleife  ^ Beschreibung                                  ^ Verwendung                                ^
 | **for**   | Iteriert über eine Liste von Werten oder Dateien | Wiederholung bei bekannter Anzahl von Werten |

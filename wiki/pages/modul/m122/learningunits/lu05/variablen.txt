@@ -37,8 +37,8 @@ Hallo, Alice!
 
 ===== Besondere Hinweise =====
 
- * Variablen sind standardmäßig lokal für das Skript oder die aktuelle Shell.  
- * Um Variablen für Unterprozesse (z. B. aufgerufene Skripte) verfügbar zu machen, müssen Sie sie mit export exportieren:
+  * Variablen sind standardmäßig lokal für das Skript oder die aktuelle Shell.  
+  * Um Variablen für Unterprozesse (z. B. aufgerufene Skripte) verfügbar zu machen, müssen Sie sie mit export exportieren:
 
 <code bash>
 export variable_name="Wert"
@@ -47,7 +47,7 @@ export variable_name="Wert"
 ===== Numerische Berechnungen =====
 
 
-Da Bash-Variablen Zeichenketten sind, erfordert die Berechnung mit Zahlen spezielle Syntax, z. B. mit let, $(( )) oder expr:
+Da Bash-Variablen Zeichenketten sind, erfordert die Berechnung mit Zahlen spezielle Syntax, z. B. mit ''let'', ''$( ( ) )'' oder ''expr'':
 <code bash>
 a=5
 b=10
