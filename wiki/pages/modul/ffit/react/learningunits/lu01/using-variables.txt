@@ -1,0 +1,91 @@
+====== LU01b - Using Variables ======
+
+We can use variables to populate our component dynamically. In JSX we need to use the curly brackets {} to display the value. If we add the parameter "props" to our function, we can use it in our function to display the value given to this component.
+
+Product.js
+<code javascript>
+export default function Product(props) {
+  return (
+    <div>
+      <img 
+        src={props.image} 
+        alt="Product Image"
+        width={300}
+        height{300}
+      />
+      <h2>{props.title)</h2>
+      <p>{props.description}</p>
+      <p>{props.price)</p>
+    </div>
+  );
+}
+</code>
+
+ProductsList.js
+<code javascript>
+import Product from './Product.js';
+
+export default function ProductsList() {
+  return (
+    <div>
+      <h1>Our Products</h1>
+      <Product 
+        title="Product 1"
+        image="https://placehold.it/800"
+        description="This is my Product 1"
+        price="$20"
+      />
+      <Product 
+        title="Product 2"
+        image="https://placehold.it/800"
+        description="This is my Product 2"
+        price="$20"
+      />
+      <Product 
+        title="Product 3"
+        image="https://placehold.it/800"
+        description="This is my Product 3"
+        price="$20"
+      />
+      <Product 
+        title="Product 4"
+        image="https://placehold.it/800"
+        description="This is my Product 4"
+        price="$20"
+      />
+    </div>
+  );
+}
+</code>
+
+===== Using children of component =====
+
+We can nest components and also use other elements in our component brackets.
+
+Content.js
+<code javascript>
+export default function Content(props) {
+  return (
+    <section className="content">
+      {props.children}
+    </section>
+  )
+}
+</code>
+
+App.js
+<code javascript>
+import Content from "./Content.js"
+import ProductsList from "./ProductsList.js"
+
+export default function App() {
+  return (
+    <div className="app">
+      <Content>
+        This is my content.
+        <ProductsList />
+      </Content>
+    </div>
+  )
+}
+</code>

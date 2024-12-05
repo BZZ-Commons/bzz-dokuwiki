@@ -11,7 +11,11 @@ Speichern Sie das Ergebnis jeder Berechnung in einer Variable und geben Sie dies
 
   - Addieren Sie die erste und die zweite Zahl mit dem Kommando ''expr''. 
   - Subtrahieren Sie die erste Zahl von der dritten Zahl. Verwenden Sie für diese Rechnung die doppelte Klammerung.
-  - Mulitplizieren Sie die zweite und die dritte Zahl mit dem Kommando ''let''.
+  - Multiplizieren Sie die zweite und die dritte Zahl mit dem Kommando ''let''.
+
+===== Beispiel =====
+^ Aufruf | ./calculon.sh 3 7 5 |
+^ Ausgabe | 10 \\ 2 \\ 35 |
 
 ===== Abgabe =====
 Geben Sie den Sourcecode Ihres Scripts ab. 

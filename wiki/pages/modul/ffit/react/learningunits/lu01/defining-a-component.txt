@@ -1,0 +1,60 @@
+====== LU01a - Creating a component ======
+
+===== Define the function =====
+
+With <color #00008B>function Product() { }</color> you define a JavaScript function with the name Product. This is also going to be our components name
+
+<code javascript>
+function Product() {
+
+}
+</code>
+
+===== Return markup =====
+
+Each component must return a value. We create a <color #00008B>return()</color> using JSX markup. This is a special markup language made for React that allows HTML to be written in JS as well.
+
+<code javascript>
+function Product() {
+  return (
+    <div>
+      <img src="https://placehold.it/800" alt="Product Image" />
+      <h2>Product Name</h2>
+      <p>Product Description</p>
+      <p>$20</p>
+    </div>
+  );
+}
+</code>
+
+===== Export the component =====
+
+Now we have a component. But if we want to use it in other files, we need to export the function. To export a component, you need to add the keywords "export default" before the function declaration. This will mark the function to be exported. Now you can include the file in another file to use this component.
+
+Product.js
+<code javascript>
+export default function Product() {
+  return (
+    <div>
+      <img src="https://placehold.it/800" alt="Product Image" />
+    </div>
+  );
+}
+</code>
+
+ProductsList.js
+<code javascript>
+import Product from './Product.js';
+
+export default function ProductsList() {
+  return (
+    <div>
+      <h1>Our Products</h1>
+      <Product />
+      <Product />
+      <Product />
+      <Product />
+    </div>
+  );
+}
+</code>

@@ -2,9 +2,9 @@
 ===== Ausgangslage =====
 In einem Hofladen sind verschiedene Produkte verfügbar.
 Zum Speichern der Produkte definieren wir eine ''@dataclass'' mit diesen Attributen:
-  * Name des Artikels (Text)
-  * Preis des Artikels (Dezimalzahl)
-  * Bestand (Ganzzahl)
+  * Name des Artikels ''name'' (Text)
+  * Preis des Artikels ''price'' (Dezimalzahl)
+  * Bestand ''stock'' (Ganzzahl)
 
 ===== Programmaufgabe =====
 Ihr Programm soll die Artikel im Hofladen verwalten.
