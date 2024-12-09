@@ -1,106 +1,105 @@
 ====== LU08.A01: Arbeiten mit Dateien und Verzeichnissen ======
 
+<WRAP center round todo 60%>
+Verwenden Sie das ''subprocess''-Modul in Python, um mehrere Bash-Befehle auszuführen und die Ergebnisse zu verarbeiten.
+</WRAP>
+ 
 
-**Ziel**: Verwenden Sie das `subprocess`-Modul in Python, um mehrere Bash-Befehle auszuführen und die Ergebnisse zu verarbeiten. 
+===== Aufgabe =====
 
----
-
-#### Aufgabe
 
 Erstellen Sie ein Python-Skript, das folgende Schritte ausführt:
 
-1. **Erstellen eines neuen Verzeichnisses**:
-   - Das Skript soll ein neues Verzeichnis mit dem Namen `python_bash_test` im aktuellen Verzeichnis erstellen.
-   - Überprüfen Sie, ob das Verzeichnis erfolgreich erstellt wurde.
-
-2. **Erstellen von Dateien im neuen Verzeichnis**:
-   - Erstellen Sie drei leere Dateien (`file1.txt`, `file2.txt`, `file3.txt`) im Verzeichnis `python_bash_test`.
-
-3. **Auflisten der Dateien**:
-   - Listen Sie den Inhalt des Verzeichnisses `python_bash_test` mit dem Befehl `ls` auf und geben Sie die Ausgabe in der Konsole aus.
-
-4. **Dateigröße anzeigen**:
-   - Zeigen Sie die Größe der Dateien in diesem Verzeichnis mit dem Befehl `du -h` an.
-
-5. **Zusatz (optional)**:
-   - Löschen Sie eine der Dateien (`file3.txt`) und geben Sie anschließend die aktualisierte Liste der Dateien aus.
+  -  **Erstellen eines neuen Verzeichnisses**:
+    * Das Skript soll ein neues Verzeichnis mit dem Namen ''python_bash_test'' im aktuellen Verzeichnis erstellen.
+    * Überprüfen Sie, ob das Verzeichnis erfolgreich erstellt wurde.
+  - **Erstellen von Dateien im neuen Verzeichnis**:
+    * Erstellen Sie drei leere Dateien (''file1.txt'', ''file2.txt'', ''file3.txt'') im Verzeichnis ''python_bash_test''.
+  - **Auflisten der Dateien**:
+    * Listen Sie den Inhalt des Verzeichnisses ''python_bash_test'' mit dem Befehl ''ls'' auf und geben Sie die Ausgabe in der Konsole aus.
+  - **Dateigröße anzeigen**:
+    * Zeigen Sie die Größe der Dateien in diesem Verzeichnis mit dem Befehl ''du -h'' an.
+  - **Zusatz (optional)**:
+    * Löschen Sie eine der Dateien (''file3.txt'') und geben Sie anschließend die aktualisierte Liste der Dateien aus.
 
 ---
 
-#### Beispielcode für den Einstieg
+===== Beispielcode für den Einstieg =====
 
-Hier ist der Anfang des Skripts als Orientierungshilfe:
 
-```python
+Hier ist der Aufbau des Skripts als Orientierungshilfe:
+
+<code python>
 import subprocess
 
-# 1. Verzeichnis erstellen
 def create_directory(directory_name):
-    result = subprocess.run(['mkdir', '-p', directory_name], capture_output=True, text=True)
-    if result.returncode == 0:
-        print(f"Verzeichnis '{directory_name}' erfolgreich erstellt.")
-    else:
-        print(f"Fehler beim Erstellen des Verzeichnisses: {result.stderr}")
+    """ Creates a new directory """
+    pass
+    
 
-# 2. Dateien erstellen
 def create_files(directory_name, file_names):
-    for file_name in file_names:
-        file_path = f"{directory_name}/{file_name}"
-        result = subprocess.run(['touch', file_path], capture_output=True, text=True)
-        if result.returncode == 0:
-            print(f"Datei '{file_path}' erfolgreich erstellt.")
-        else:
-            print(f"Fehler beim Erstellen der Datei '{file_path}': {result.stderr}")
+    """ Creates all files in the list """
+    pass
 
-# Weiterer Code für Schritte 3-5
-```
+# Functions for steps 3-5
+
+if __name__ == '__main__':
+    directory = 'python_bash_test'
+    files = ['file1.txt', 'file2.txt', 'file3.txt']
+    
+    create_directory(directory)
+    create_files(directory, files)
+    # call functions for step 3-5
+</code>
 
 ---
 
-#### Erwartete Ergebnisse
+===== Erwartete Ergebnisse =====
+
 
 Beim Ausführen des Skripts sollte die Konsole folgendes ausgeben:
 
-1. **Nach Schritt 1**:
-   ```
-   Verzeichnis 'python_bash_test' erfolgreich erstellt.
-   ```
+==== Nach Schritt 1: ====
 
-2. **Nach Schritt 2**:
-   ```
+<code>
+   Verzeichnis 'python_bash_test' erfolgreich erstellt.
+</code>
+
+==== Nach Schritt 2: ====
+
+<code>
    Datei 'python_bash_test/file1.txt' erfolgreich erstellt.
    Datei 'python_bash_test/file2.txt' erfolgreich erstellt.
    Datei 'python_bash_test/file3.txt' erfolgreich erstellt.
-   ```
+</code>
 
-3. **Nach Schritt 3 (Liste der Dateien)**:
-   ```
+==== Nach Schritt 3 (Liste der Dateien): ====
+
+<code>
    Dateien im Verzeichnis 'python_bash_test':
    file1.txt
    file2.txt
    file3.txt
-   ```
+</code>
 
-4. **Nach Schritt 4 (Dateigröße)**:
-   ```
+==== Nach Schritt 4 (Dateigröße): ====
+
+<code>
    Größen der Dateien im Verzeichnis 'python_bash_test':
    0B file1.txt
    0B file2.txt
    0B file3.txt
-   ```
+</code>
 
-5. **Nach Schritt 5 (Aktualisierte Liste nach Löschung)**:
-   ```
+==== Nach Schritt 5 (Aktualisierte Liste nach Löschung): ====
+
+<code>
    Datei 'python_bash_test/file3.txt' wurde gelöscht.
    Aktualisierte Dateien im Verzeichnis:
    file1.txt
    file2.txt
-   ```
+</code>
 
----
-
-#### Bewertungskriterien
-
-- **Korrektheit**: Das Skript führt alle Schritte ohne Fehler aus.
-- **Struktur**: Der Code ist modular und klar strukturiert (Verwendung von Funktionen).
-- **Fehlerbehandlung**: Rückgabecodes und Fehler werden überprüft und ordnungsgemäß verarbeitet.
+----
+{{tag>M122-LU08}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

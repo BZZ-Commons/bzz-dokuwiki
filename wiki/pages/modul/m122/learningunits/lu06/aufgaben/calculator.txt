@@ -1,0 +1,14 @@
+====== LU06.A04: Zahlen Rechner ======
+Schreiben Sie ein Skript, das:
+
+  - Zwei Zahlen als Parameter entgegennimmt.
+  - Ein Menü anzeigt, in dem der Nutzer wählen kann:
+    * Addition
+    * Subtraktion
+    * Multiplikation
+    * Division
+  - Die gewählte Berechnung ausführt und das Ergebnis ausgibt.
+
+----
+{{tag>M122-LU06}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Tim Irmler, Marcel Suter

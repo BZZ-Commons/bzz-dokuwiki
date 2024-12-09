@@ -1,0 +1,40 @@
+====== LU06.L03: Textdateien analysieren ======
+<code bash>
+#!/bin/bash
+
+# Überprüfen, ob ein Dateiname als Argument übergeben wurde
+if [ -z "$1" ]; then
+  echo "Bitte geben Sie den Dateinamen als Argument an."
+  exit 1
+fi
+
+INPUT_FILE="$1"
+SORTED_FILE="sortiert_${INPUT_FILE}"
+FILTERED_FILE="gefiltert_${INPUT_FILE}"
+
+# Überprüfen, ob die Datei existiert
+if [ ! -f "$INPUT_FILE" ]; then
+  echo "Die Datei '$INPUT_FILE' existiert nicht."
+  exit 1
+fi
+
+# Anzahl der Zeilen, Wörter und Zeichen zählen
+echo "Statistik für die Datei '$INPUT_FILE':"
+wcl_output=$(wc "$INPUT_FILE")
+lines=$(echo "$wcl_output" | awk '{print $1}')
+words=$(echo "$wcl_output" | awk '{print $2}')
+chars=$(echo "$wcl_output" | awk '{print $3}')
+echo "Zeilen: $lines, Wörter: $words, Zeichen: $chars"
+
+# Zeilen alphabetisch sortieren und speichern
+sort "$INPUT_FILE" > "$SORTED_FILE"
+echo "Die alphabetisch sortierte Datei wurde in '$SORTED_FILE' gespeichert."
+
+# Zeilen mit mehr als 50 Zeichen filtern und speichern
+awk 'length($0) > 50' "$INPUT_FILE" > "$FILTERED_FILE"
+echo "Die gefilterten Zeilen wurden in '$FILTERED_FILE' gespeichert."
+</code>
+
+----
+{{tag>M122-LU06}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Tim Irmler, Marcel Suter

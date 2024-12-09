@@ -1,0 +1,30 @@
+====== LU06.A03: Textdateien analysieren ======
+<WRAP center round todo 60%>
+Erstellen Sie ein Skript, das eine Textdatei analysiert.
+</WRAP>
+
+===== Aufgabe =====
+Erstelle einen neuen Ordner ''exlu06a03'' für das Script.
+
+Das Skript erwartet einen Dateinamen als Argument.
+  - Das Script prüft zunächst, ob ein Argument mitgegeben wurde. Falls nicht, wird eine Meldung ausgegeben und die Verarbeitung abgebrochen.
+  - Danach wird geprüft, ob die angegebene Datei existiert. Falls nicht, wird eine Meldung ausgegeben und die Verarbeitung abgebrochen.
+  - Die Datei wird analysiert und die folgenden Resultate erzeugt:
+
+==== Ausgabe der Anzahl Zeilen, Wörter und Zeichen in der Datei ====
+<code>
+Zeilen: 4, Wörter: 36, Zeichen: 241
+</code>
+
+==== Sortieren der Zeilen ====
+Die Zeilen in der Datei werden alfabetisch (A-Z) sortiert und das Ergebnis in einer neuen Datei namens ''sortiert_<dateiname>'' gespeichert.
+
+==== Filtern langer Zeilen ====
+Zeilen mit mehr als 50 Zeichen werden gefiltert und in einer Datei namens ''gefiltert_<dateiname>'' gespeichert.
+
+==== Abgabe ====
+Laden Sie das Skript in der Moodle-Aufgabe hoch.
+
+----
+{{tag>M122-LU06}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Tim Irmler, Marcel Suter

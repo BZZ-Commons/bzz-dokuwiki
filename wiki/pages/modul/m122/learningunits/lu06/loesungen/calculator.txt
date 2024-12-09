@@ -1,0 +1,48 @@
+====== LU06.L04: Zahlen Rechner ======
+<code bash>
+#!/bin/bash
+
+# Überprüfen, ob genau zwei Zahlen als Argumente übergeben wurden
+if [ $# -ne 2 ]; then
+  echo "Bitte geben Sie zwei Zahlen als Argumente an."
+  exit 1
+fi
+
+NUM1=$1
+NUM2=$2
+
+# Menü anzeigen
+echo "Wählen Sie eine Option aus:"
+echo "1. Addition"
+echo "2. Subtraktion"
+echo "3. Multiplikation"
+echo "4. Division"
+read -p "Ihre Wahl: " CHOICE
+
+# Berechnung basierend auf der Auswahl durchführen
+case $CHOICE in
+  1)
+    echo "Ergebnis: $((NUM1 + NUM2))"
+    ;;
+  2)
+    echo "Ergebnis: $((NUM1 - NUM2))"
+    ;;
+  3)
+    echo "Ergebnis: $((NUM1 * NUM2))"
+    ;;
+  4)
+    if [ $NUM2 -eq 0 ]; then
+      echo "Division durch null ist nicht erlaubt."
+    else
+      echo "Ergebnis: $(echo "scale=2; $NUM1 / $NUM2" | bc)"
+    fi
+    ;;
+  *)
+    echo "Ungültige Auswahl."
+    ;;
+esac
+</code>
+
+----
+{{tag>M122-LU06}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Tim Irmler, Marcel Suter

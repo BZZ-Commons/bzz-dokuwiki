@@ -43,7 +43,7 @@ Andernfalls wird ein neues Buch erstellt.
     * author
     * price
     * format
-    * isbn (optional)
+    * isbn
   * Reponse: leer
   * HTTP-Status
     * 200 = Bestehendes Buch wurde aktualisiert.
@@ -57,7 +57,7 @@ Andernfalls wird ein neues Buch erstellt.
 | title | String | 2-50 Zeichen, alle Zeichen der [[https://www.ascii-code.com/ISO-8859-1|ASCII-Codetabelle gemäss ISO-8859-1]]. |
 | author | String | 4-100 Zeichen, alle Zeichen der [[https://www.ascii-code.com/ISO-8859-1|ASCII-Codetabelle gemäss ISO-8859-1]]. |
 | price | Decimal | 0.00 - 299.95 mit maximal 2 Nachkommastellen |
-| isbn | String | optional, [[wpde>Internationale_Standardbuchnummer|ISBN-13 Nummer]] |
+| isbn | String | [[wpde>Internationale_Standardbuchnummer|ISBN-13 Nummer]] |
 | format | Auswahl | Hardcover, Softcover, eBook oder Audio |
 
 ==== Testdaten ====
