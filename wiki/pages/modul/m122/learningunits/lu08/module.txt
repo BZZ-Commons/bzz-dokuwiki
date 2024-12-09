@@ -11,8 +11,25 @@ Das ''subprocess''-Modul ist die empfohlene Methode, um externe Prozesse auszuf�
 <code python>
 import subprocess
 
-# Einen Bash-Befehl ausführen
-result = subprocess.run(['ls', '-l'], capture_output=True, text=True)
+bash_command = 'cat /var/log/error.log | grep SEVERE'
+# Den Bash-Befehl ausführen
+try:
+    result = subprocess.run(
+        bash_command,
+        shell=True,  # Use a shell to interpret the command
+        check=True,  # Raise an error if the command fails
+        text=True,  # Capture output as a string
+        stdout=subprocess.PIPE,  # Redirect standard output
+        stderr=subprocess.PIPE  # Redirect standard error
+    )
+    return result
+except subprocess.CalledProcessError as e:
+    print(f'Error executing the command: {e.cmd}')
+    print(f'Error message: {e.stderr}')
+    sys.exit(1)
+except Exception as ex:
+    print(f'An unexpected error occurred: {ex}')
+    sys.exit(1)
 
 # Ausgabe anzeigen
 print(result.stdout)

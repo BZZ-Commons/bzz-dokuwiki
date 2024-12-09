@@ -1,28 +1,33 @@
 ====== LU08.A01: Arbeiten mit Dateien und Verzeichnissen ======
 
 <WRAP center round todo 60%>
-Verwenden Sie das ''subprocess''-Modul in Python, um mehrere Bash-Befehle auszuführen und die Ergebnisse zu verarbeiten.
+Verwende das ''subprocess''-Modul in Python, um mehrere Bash-Befehle auszuführen und die Ergebnisse zu verarbeiten.
 </WRAP>
  
 
 ===== Aufgabe =====
 
-
-Erstellen Sie ein Python-Skript, das folgende Schritte ausführt:
+Erstelle ein Python-Skript, das folgende Schritte ausführt:
 
   -  **Erstellen eines neuen Verzeichnisses**:
-    * Das Skript soll ein neues Verzeichnis mit dem Namen ''python_bash_test'' im aktuellen Verzeichnis erstellen.
-    * Überprüfen Sie, ob das Verzeichnis erfolgreich erstellt wurde.
+    * Das Skript soll ein neues Verzeichnis mit dem Namen ''python_bash_test'' im Verzeichnis ''/tmp'' erstellen.
+    * Überprüfe, ob das Verzeichnis erfolgreich erstellt wurde (''ls -l /tmp'').
   - **Erstellen von Dateien im neuen Verzeichnis**:
-    * Erstellen Sie drei leere Dateien (''file1.txt'', ''file2.txt'', ''file3.txt'') im Verzeichnis ''python_bash_test''.
+    * Erstelle drei leere Dateien (''file1.txt'', ''file2.txt'', ''file3.txt'') im Verzeichnis ''python_bash_test''.
   - **Auflisten der Dateien**:
-    * Listen Sie den Inhalt des Verzeichnisses ''python_bash_test'' mit dem Befehl ''ls'' auf und geben Sie die Ausgabe in der Konsole aus.
+    * Liste den Inhalt des Verzeichnisses ''python_bash_test'' mit dem Befehl ''ls'' auf und geben Sie die Ausgabe in der Konsole aus.
   - **Dateigröße anzeigen**:
-    * Zeigen Sie die Größe der Dateien in diesem Verzeichnis mit dem Befehl ''du -h'' an.
+    * Zeige die Grösse der Dateien in diesem Verzeichnis mit dem Befehl ''du -h'' an.
   - **Zusatz (optional)**:
-    * Löschen Sie eine der Dateien (''file3.txt'') und geben Sie anschließend die aktualisierte Liste der Dateien aus.
+    * Lösche eine der Dateien (''file3.txt'') und geben Sie anschließend die aktualisierte Liste der Dateien aus.
 
----
+===== Hinweise=====
+<WRAP center round tip 60%>
+Das Python-Skript kann nicht unter Windows ausgeführt werden, da wir Bash-Befehle nutzen.
+
+Um auf das Windows-Laufwerk ''C'' zuzugreifen, verwendest du im WSL den Pfad ''/mnt/c''.
+
+</WRAP>
 
 ===== Beispielcode für den Einstieg =====
 
