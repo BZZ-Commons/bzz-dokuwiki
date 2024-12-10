@@ -1,0 +1,39 @@
+====== LU09.A04: PyTests finden ======
+<WRAP center round todo 60%>
+Erstelle ein JSON-Array mit allen Unittests in einem Python-Projekt.
+</WRAP>
+
+===== Aufgabe =====
+Das Skript durchsucht ein Projekt nach Dateien, die Unittests enthalten.
+Die Dateinamen müssen ''test_'' oder ''_test'' enthalten.
+Zum Beispiel:
+  * **test_**main.py
+  * main**_test**.py
+
+Innerhalb dieser Dateien sucht das Skript nach Funktionen, deren Bezeichner mit ''test_'' beginnt.
+Die Bezeichner dieser Funktionen werden in eine Liste geschrieben.
+Schlussendlich wird diese Liste sortiert und als JSON-Array ausgegeben.
+
+==== Beispiel ====
+<code>
+[
+    "test_figure_init_empty",
+    "test_figure_add_shape",
+    "test_figure_add_shape_multiple",
+    "test_figure_take_shape",
+    "test_figure_remove_shape_by_title",
+    "test_figure_remove_shape_by_index",
+    "test_figure_total_area_scale1",
+    "test_figure_total_area_scale3",
+    "test_figureshape_init_empty",
+    "test_figureshape_set_figure",
+    "test_figureshape_set_shape",
+    "test_main"
+]
+</code>
+
+==== Wieso Python und Bash? ====
+Grundsätzlich könnte man die Aufgabe ausschliesslich mit Python lösen oder als reines Bash-Skript schreiben.
+Jede Sprache hat jedoch ihre Vorteile, die wir hier ausnutzen wollen:
+  * Dateien durchsuchen: Hier spielt Bash seine Stärke aus
+  * Arbeiten mit Collections: Dies lässt sich leichter in Python umsetzen.

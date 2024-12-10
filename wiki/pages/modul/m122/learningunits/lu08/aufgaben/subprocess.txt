@@ -1,0 +1,21 @@
+====== LU08.A02: Funktion für Bash-Befehle ======
+
+<WRAP center round todo 60%>
+Erstelle eine Funktion, die Bash-Befehle ausführt und die Resultate auswertet.
+</WRAP>
+
+Das Ausführen eines Bash-Befehls und die Reaktion auf allfällige Fehler ist in vielen Fällen identisch.
+Es lohnt sich daher, eine entsprechende Funktion in Python zu entwickeln.
+Diese Funktion können wir dann für weitere Programme wiederverwenden.
+
+==== execute_bash ====
+Die Funktion ''execute_bash'' führt einen Bash-Befehl aus, der beim Aufruf übergeben wird.
+Als Returnwert wird ein Tupel mit dem Returncode und dem Output des Befehls zurückgegeben.
+Falls ein Fehler auftritt, wird eine Meldung ausgegeben und das Skript beendet.
+
+  * Parameter: Bash-Kommando (String)
+  * Return: [returncode: int, stdout: String]
+
+----
+{{tag>M122-LU08}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

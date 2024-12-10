@@ -21,14 +21,12 @@ Erstelle ein Python-Skript, das folgende Schritte ausführt:
   - **Zusatz (optional)**:
     * Lösche eine der Dateien (''file3.txt'') und geben Sie anschließend die aktualisierte Liste der Dateien aus.
 
-===== Hinweise=====
-<WRAP center round tip 60%>
-Das Python-Skript kann nicht unter Windows ausgeführt werden, da wir Bash-Befehle nutzen.
+===== Vorgehen =====
 
-Um auf das Windows-Laufwerk ''C'' zuzugreifen, verwendest du im WSL den Pfad ''/mnt/c''.
-
-</WRAP>
-
+  - Erstelle einen Ordner ''exlu08a01''.
+  - Erzeuge ein Virtual Environment innerhalb dieses Ordners.
+  - Aktiviere das Virtual Environment.
+  - Erstelle eine Datei ''main.py'' innerhalb des Ordners.
 ===== Beispielcode für den Einstieg =====
 
 
@@ -57,7 +55,7 @@ if __name__ == '__main__':
     # call functions for step 3-5
 </code>
 
----
+
 
 ===== Erwartete Ergebnisse =====
 
