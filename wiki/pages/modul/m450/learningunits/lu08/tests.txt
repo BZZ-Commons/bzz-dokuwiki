@@ -4,7 +4,7 @@
 Mittels //tests// kann Postman die Antwort einer API automatisiert auswerten.
 </WRAP>
 
-Im Reiter //tests// kannst du mit Javascript eigene Funktionen schreiben, um das Resultat eines Requests auszuwerten.
+Im Reiter //scripts// kannst du mit Javascript eigene Funktionen schreiben, um das Resultat eines Requests auszuwerten.
 Dadurch zeigt die Postman direkt an, ob der Request das erwartete Resultat liefert oder nicht.
 
 ===== http-Statuscode prüfen =====
