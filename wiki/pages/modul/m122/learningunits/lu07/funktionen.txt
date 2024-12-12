@@ -45,7 +45,7 @@ greet "Welt"  # Aufruf der Funktion mit einem Argument
 </code>
 
 **Ausgabe:**
-</code>
+<code>
 Hallo, Welt!
 </code>
 
@@ -92,6 +92,7 @@ function doIt() {
 }
 
 text = 'Universe'
+doIt
 echo "Hello $text"
 </code> | <code bash>
 function doIt() {
@@ -99,6 +100,7 @@ function doIt() {
 }
 
 text = 'Universe'
+doIt
 echo "Hello $text"
 </code> |
 | Hello World | Hello Universe |
