@@ -1,0 +1,24 @@
+====== LU07a - Übertragungsmedien ======
+
+===== Was ist ein Übertragungsmedium? =====
+
+Das Übertragungsmedium (Bestandteil in der Kommunikationstechnik) ist der Weg, auf dem die zu übertragenden Signale (Daten, Nachrichten) vom Sender zum Empfänger übertragen werden. Der gesamte Übertragungsweg besteht in der Regel aus mehreren aufeinanderfolgenden Übertragungsabschnitten. Diese Abschnitte können aus verschiedenen Übertragungsmedien zusammengesetzt sein.
+
+{{:modul:m286:learningunits:lu07:umedien_01.png?600|}}
+
+===== Drahtweg (kabelgebunden) =====
+Bei Drahtwegen wird das Informationssignal als nieder- oder hochfrequenter elektrischer Wechselstrom übertragen. Das Übertragungsmedium Draht ist ein Kabel oder eine Leitung deren Basismaterial Metall ist. Das Metall ist meist durch einen Kunststoff isoliert, manchmal sogar zusätzlich geschirmt. Leitungen und Kabel gelten als die einfachste Verbindung zwischen zwei Kommunikationsteilnehmern.
+→ Stichworte: Leitungen, Kabel, Kupferkabel, Twisted-Pair-Kabel
+
+===== Funkweg (drahtlos) =====
+Bei Funkwegen wird das Informationssignal als hochfrequente elektromagnetische Welle übertragen. Der Funkweg ist der freie Raum, der auch als Luftschnittstelle bezeichnet wird. Über Antennen an der Sende- und Empfangsstationen werden die Signale über den freien Raum übertragen. Durch Hindernisse, insbesondere metallische Gegenstände, werden die Funksignale gedämpft und abgelenkt. Das verringert die Reichweite der Funksignale. Funkwege sind gegenüber Drahtwegen meistens langsamer und instabiler.
+→ Stichworte: Funktechnik, Antennen, Funkwellen, Trägerfrequenz
+
+
+===== Lichtweg (Lichtwellenleiter) =====
+Bei Lichtwegen wird das Informationssignal als elektromagnetische Welle im Frequenzbereich des sichtbaren Lichts innerhalb eines lichtleitenden Materials übertragen. Zum Beispiel aus Glas-, Quarz- oder Kunststofffasern, die man als Lichtwellenleiter (LWL) bezeichnet. Durch Lichtwellenleiter können optische Signale ohne Verstärker große Entfernungen überbrücken. Trotz weiter Strecken ist eine hohe Bandbreite möglich. Das macht Lichtwellenleiter zum Übertragungsmedium der Gegenwart und Zukunft.
+→ Stichworte: Lichtwellenleiter (LWL), Glasfaserkabel, LWL-Komponenten
+
+
+===== Besonderheit: Infrarot =====
+Eine Besonderheit ist Infrarot (zum Beispiel bei Fernbedienungen von Fernsehgeräten). Die Farbe Infrarot ist für das menschliche Auge unsichtbar. Das infrarote Signal wird über den freien Raum übertragen. Somit vereint diese Technik zwei Übertragungsmedien (Funk und Licht) auf einem Weg, den freien Raum. Der Weg ist allerdings nur sehr kurz und darf keine Hindernisse zwischen Sender und Empfänger aufweisen.

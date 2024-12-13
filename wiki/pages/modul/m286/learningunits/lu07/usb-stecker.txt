@@ -1,0 +1,29 @@
+====== LU07d - USB-Stecker ======
+
+Der USB ist eine universelle, externe Schnittstelle für alle Peripheriegeräte, die an einem Computer angeschlossen werden. Egal ob Tastatur, Maus, Modem, Drucker, Mikrofon, Lautsprecher, Kamera oder Scanner. Mit dem USB sind die Anwender unabhängig von der Anzahl der verfügbaren Schnittstellen und Steckplätze für Erweiterungskarten. Der USB lässt sich durch Steckkarten oder USB-Hubs fast beliebig erweitern.
+
+===== Übersicht der USB-Stecker =====
+
+| {{:modul:m286:learningunits:lu07:03120211.jpg?120|}} | USB-A-Stecker (Host) |
+| {{:modul:m286:learningunits:lu07:03120212.jpg?120|}} | USB-B-Stecker (Endgerät) |
+| {{:modul:m286:learningunits:lu07:03120214.gif?120|}} | Mini-B-Stecker (innen Schwarz) |
+| {{:modul:m286:learningunits:lu07:03120213.jpg?120|}} | Micro-B-Stecker für USB 2.0 |
+| {{:modul:m286:learningunits:lu07:03120215.jpg?120|}} | Micro-B-Stecker für USB 3.0 |
+| {{:modul:m286:learningunits:lu07:03120216.gif?120|}} | Mini-B-Stecker von Hirose (z. B. für Digitalkameras) |
+| {{:modul:m286:learningunits:lu07:03120217.gif?120|}} | Mini-B-Stecker von Mitsumi (z. B. für Digitalkameras) |
+| {{:modul:m286:learningunits:lu07:03120218.jpg?120|}}| Mini-B-Stecker von Fuji (z. B. für Digitalkameras) |
+
+===== USB-C-Stecker =====
+Der USB-C-Stecker und die dazugehörigen Kabel sollen den Wildwuchs bei den USB-Steckern und -Kabeln beseitigen. Die USB-C-Kabel sind für höhere Spannungen als 5 V und höhere Ströme als 5 A ausgelegt. Mit speziellen Kabeln für USB Power Delivery (USB-PD) ist eine Gesamtleistung bis zu 100 W zulässig.
+
+{{:modul:m286:learningunits:lu07:usbc.jpg?400|}}
+
+Damit sich der USB-C-Stecker auch für mobile Geräte eignet, hat er eine Abmessung von 8,25 x 2,4 mm. Die Buchse ist 8,34 x 2,56 mm groß. Das entspricht ungefähr einem USB-2.0-Micro-Anschluss, der bei Smartphones verwendet wird. Die korrekte Drehung des Steckers entfällt und der USB-C-Stecker passt auch in der umgekehrten Steckposition.
+
+Nachfolgend die wichtigsten Merkmale des USB-C-Steckers:
+
+  * Der C-Stecker ist so konstruiert, dass es egal ist, wie herum er in die Buchse gesteckt wird. Man kann den C-Stecker nicht mehr falsch herum stecken.
+  * Der C-Stecker wird auf beiden Seiten eines Kabels verwendet. So kennt man es auch von anderen Steckverbindungen, wie HDMI, DisplayPort und RJ45.
+  * Der C-Stecker ist mit allen anderen USB-Steckverbindungen nicht kompatibel. Allerdings gibt es Adapter, die zu USB 2.0 abwärtskompatibel sind.
+  * Der C-Stecker hat in etwa die Größe eines Micro-USB-Steckers (USB 2.0) und ist somit auch für mobile Geräte geeignet.
+  * Der C-Stecker ist für 100 Watt Leistung ausgelegt. Die Kabel sollen sich mit Power Delivery (USB-PD) für das Laden von Notebooks eignen.

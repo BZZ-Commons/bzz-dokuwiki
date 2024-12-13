@@ -1,0 +1,33 @@
+====== LU07b - Bluetooth ======
+
+===== Einleitung ======
+Bluetooth 5 ist vollständig abwärtskompatibel zu den Vorgängerversionen 4.0, 4.1 und 4.2. Im Vergleich zu den Vorgänger-Versionen kann mit Bluetooth 5 je nach Einstellung die Reichweite vervierfacht oder die Geschwindigkeit verdoppelt werden. Außerdem ist die Kapazität für Broadcasts um 800 Prozent erhöht.
+
+  * doppelte Geschwindigkeit von bis zu 2 MBit/s
+  * vierfache Reichweite (Outdoor: 200 m / Indoor: 40 m)
+  * achtfache Übertragungskapazität für Broadcasts
+
+===== Reichweite oder Geschwindigkeit =====
+Bluetooth 5 erhöht im Low-Energy-Modus die Datenrate von 1 auf 2 MBit/s oder erhöht die Reichweite bei 1 MBit/s im Außenbereich von 50 auf ca. 200 Meter oder im Innenbereich von 10 auf 40 Meter.
+
+Zum Vergleich: Bluetooth Version 4.2 liefert bis zu 1 MBit/s bei einer maximalen Reichweite von "rund 100 Meter". Viele Geräte reizen diese Möglichkeiten aus Stromspargründen nicht aus und kommen vielleicht auf nur rund 10 Meter. Nur wenige schaffen 50 Meter oder mehr. Das Ziel ist in jedem Fall bei geringem Stromverbrauch die Reichweite über die Wände eines Hauses hinaus zu erhöhen (Low-Energy-Long-Range).
+
+Bei Bluetooth 5 wird die Reichweite durch das Erhöhen der maximalen Sendeleistung von 10 mW auf 100 mW erreicht. Bei Sichtkontakt sollen 200 m überbrückt werden. Innerhalb von Gebäuden sind 40 m realistisch.
+
+Die Stabilität der Verbindung erfolgt durch eine optionale Vorwärtskorrektur (Forward Error Correction, FEC) verbessert. Durch die redundante Übertragung sinkt aber der Datendurchsatz. Deshalb gibt es für Bluetooth Low Energy eine "Enhanced Data Rate (EDR)", wie bei Bluetooth 2.0, die den Bruttodurchsatz auf 2 MBit/s verdoppelt.
+
+===== Übertragungskapazität =====
+Dass die Übertragungskapazität auf das achtfache steigt, ist darauf zurückzuführen, dass Datenpakete bisher 31 Byte groß sein durften und jetzt 255 große sein dürfen. Das bedeutet, dass man in einem Datenpaket, z. B. für einen Broadcast, mehr Platz hat und zum Beispiel eine URL auf einmal übertragen kann. Zusätzlich stehen für die Übertragung alle 37 statt nur 3 Kanäle zur Verfügung. Und bei der Übertragung von Beacons wird auf das Pairing verzichtet.
+
+
+===== Anwendung =====
+Verbindungslose Dienste
+Bisher sah die Kommunikation zwischen Bluetooth-Geräten vor, dass man eine App benötigt, um sich mit einem Gerät zu verbinden. Außerdem muss der Anwender diese Verbindung initiieren. In Zukunft soll es nicht mehr nötig sein, sich über eine App mit einem Gerät zu verbinden. Die Geräte sollen sich untereinander automatisch verbinden können, wenn der Hersteller das vorgesehen hat.
+
+
+===== Standorterfassung =====
+Durch die Erhöhung der Reichweite verbessert Bluetooth 5 die Möglichkeit Gegenstände und Personen zu lokalisieren.
+
+  * Navigation in weitflächigen Gebäuden (Flughafen, Bahnhof)
+  * Nachverfolgung von Lagerbeständen oder Notfalleinsätzen
+  * Smart-City-Infrastrukturen zur Unterstützung von Sehbehinderten
