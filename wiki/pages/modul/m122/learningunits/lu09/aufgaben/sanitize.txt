@@ -14,6 +14,9 @@ Es werden alle sonstigen Angaben in dieser Zeile entfernt:
   * Der Doppelpunkt
   * Allfällige Zeilenkommentare
 
+===== Schnittstelle =====
+  * Parameter: Eine Zeile mit einem PyTest-Funktionsnamen.
+  * Returnwert: Funktionsname
 
 ----
 {{tag>M122-LU09}}

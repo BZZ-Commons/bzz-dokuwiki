@@ -12,6 +12,8 @@ Es sollen alle Zeilen gefunden werden, die ''def test_'' enthalten.
     * def test_main():
     * def test_something(capsys):
 
+==== Schnittstelle ====
+
   * Argument: Dateipfad (String)
   * Returnwert: Liste aller Zeilen
 

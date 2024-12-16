@@ -3,7 +3,8 @@
 Erstelle eine Funktion, die eine Liste von Funktionsnamen als JSON-Array ausgibt.
 </WRAP>
 
-Die Testfunktionen sollen als JSON-Array ausgegeben werden.
+Die Funktion erhält eine Liste von Funktionsnamen.
+Diese Liste soll sortiert werden (A-Z) und als JSON-Array ausgegeben werden.
 ==== Beispiel ====
 <code>
 [
