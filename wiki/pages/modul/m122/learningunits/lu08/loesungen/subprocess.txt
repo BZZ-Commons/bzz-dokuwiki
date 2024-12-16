@@ -1,0 +1,37 @@
+====== LU08.L02: Funktion für Bash-Befehle ======
+
+<code python>
+def execute_bash(command):
+    """
+    Execute a Bash command and return the result.
+    Parameters
+    ----------
+    command : str
+        The Bash command to execute.
+    Returns
+    -------
+    subprocess.CompletedProcess
+        The result of the command execution.
+    """
+    try:
+        result = subprocess.run(
+            command,
+            shell=True,  # Use a shell to interpret the command
+            check=True,  # Raise an error if the command fails
+            text=True,  # Capture output as a string
+            stdout=subprocess.PIPE,  # Redirect standard output
+            stderr=subprocess.PIPE  # Redirect standard error
+        )
+        return return [result.returncode, result.stdout]
+    except subprocess.CalledProcessError as e:
+        print(f'Error executing the command: {e.cmd}')
+        print(f'Error message: {e.stderr}')
+        sys.exit(1)
+    except Exception as ex:
+        print(f'An unexpected error occurred: {ex}')
+        sys.exit(1)
+</code>
+
+----
+{{tag>M122-LU08}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

@@ -8,7 +8,7 @@ Schreibe eine Python-Funktion, die alle PyTest-Funktionen in einer Datei findet.
 Die Funktion durchsucht eine Datei nach PyTest-Funktionen.
 Es sollen alle Zeilen gefunden werden, die ''def test_'' enthalten.
 
-Zum Beispiel:
+**Zum Beispiel:**
     * def test_main():
     * def test_something(capsys):
 

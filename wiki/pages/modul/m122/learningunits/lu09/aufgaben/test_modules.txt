@@ -10,6 +10,8 @@ Diese Dateien können anhand ihres Dateinamens erkannt werden:
 
 Als Returnwert liefert die Funktion eine Liste aller Dateinamen.
 
+===== Schnittstelle =====
+
   * Argument: Ordnerpfad
   * Returnwert: Liste mit Dateinamen
 

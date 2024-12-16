@@ -1,4 +1,4 @@
-====== LU09.A04: PyTests finden ======
+====== LU09.A00: PyTests finden ======
 <WRAP center round todo 60%>
 Erstelle ein JSON-Array mit allen Unittests in einem Python-Projekt.
 </WRAP>
@@ -37,3 +37,35 @@ Grundsätzlich könnte man die Aufgabe ausschliesslich mit Python lösen oder al
 Jede Sprache hat jedoch ihre Vorteile, die wir hier ausnutzen wollen:
   * Dateien durchsuchen: Hier spielt Bash seine Stärke aus
   * Arbeiten mit Collections: Dies lässt sich leichter in Python umsetzen.
+
+===== Umsetzung =====
+In den folgenden Aufgaben werden Sie zunächst einzelne Teilschritte umsetzen und testen.
+Zum Schluss schreiben Sie die ''main''-Funktion um alle Teilfunktionen zu verbinden.
+
+===== Hinweise=====
+<WRAP center round tip 60%>
+Das Python-Skript kann nicht unter Windows ausgeführt werden, da wir Bash-Befehle nutzen.
+
+Um auf das Windows-Laufwerk ''C'' zuzugreifen, verwendest du im WSL den Pfad ''/mnt/c''.
+</WRAP>
+
+==== Aufruf des Skripts ====
+  - Öffne das Windows Subsystem for Linux (WSL).
+  - Wechsel in den Ordner, in dem Ihr Projekt gespeichert ist. Zum Beispiel: ''cd "/mnt/c/BZZ/Python/m122-lu08-a02-listtest-ghwalin"''
+  - Starte das Python Skript mit ''python3 main.py ORDNER_PFAD''. Ersetze ''ORDNER_PFAD'' durch den Pfad zum gewünschten Projekt.
+
+==== Unittests aufrufen ====
+Um einen bestimmten Unittest durchzuführen, wird dieser im Terminal mit dem Befehl ''pytest'' aufgerufen.
+
+<code bash>
+pytest MODULE::FUNCTION
+</code>
+
+  * Ersetze MODULE durch den Dateinamen mit den Unittests, z.B. ''main_test.py''
+  * Ersetze FUNCTION durch den Namen der Test-Funktion, z.B. ''test_find_test_modules''
+  * Gibst du nur den Modulnamen an, werden alle Tests in dieser Datei durchgeführt.
+
+<code bash>
+pytest main_test.py::test_find_test_modules
+pytest main_test.py
+</code>

@@ -27,6 +27,8 @@ Ein Login-System:
 ===== Kombinatorisches Testen (Pairwise Testing) =====
 Wir testen alle möglichen Kombinationen von Eingabewerten, wobei jedoch nur Paare von Eingabewerten vollständig abgedeckt werden.
 Das Ziel ist die Abdeckung der häufigsten Wechselwirkungen zwischen Eingabeparametern bei reduziertem Aufwand gegenüber den Entscheidungstabellen.
+Mehr dazu [[https://de.wikipedia.org/wiki/Pairwise-Methode|hier]]
+
 
 ==== Anwendung ====  
 Systeme mit mehreren Eingabeparametern.
@@ -51,7 +53,7 @@ Ein Ticketautomat:
 
 Die Testfälle werden auf Grundlage von Erfahrung und Annahmen über potenzielle Fehler erstellt.
 Vor allem erfahrene Testverantwortliche können hier erstaunlich viele Fehler finden.
-Damit identifizieren wir häufig vorkommender oder erfahrungsgemäss wahrscheinliche Fehler.
+Damit identifizieren wir häufig vorkommende oder erfahrungsgemäss wahrscheinliche Fehler.
 
 ==== Anwendung ====  
 Unstrukturierte oder schlecht dokumentierte Systeme.

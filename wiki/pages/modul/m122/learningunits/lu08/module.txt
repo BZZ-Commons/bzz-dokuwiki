@@ -45,9 +45,31 @@ Das ''os''-Modul ermöglicht die Interaktion mit dem Betriebssystem. Für die Au
 
 <code python>
 import os
+import sys
 
-# Einen Bash-Befehl ausführen
-os.system('echo "Hallo Bash von Python!"')
+def run_bash_command(command):
+    """
+    Führt einen Bash-Befehl aus und behandelt Fehler.
+
+    :param command: Der auszuführende Bash-Befehl als String
+    """
+    try:
+        print(f'Running command: {command}')
+        # os.system gibt den Exit-Status des Befehls zurück
+        exit_status = os.system(command)
+
+        if exit_status != 0:
+            print(f'Fehler: Der Befehl '{command}' schlug fehl mit Exit-Status {exit_status}')
+            sys.exit(exit_status)
+        else:
+            print('Befehl erfolgreich ausgeführt!')
+
+    except Exception as e:
+        print(f'Ein unerwarteter Fehler ist aufgetreten: {e}')
+        sys.exit(1)
+        
+bash_command = 'ls -l /nonexistent_directory'
+run_bash_command(bash_command)
 </code>
 
 Beachten Sie, dass ''os.system()'' keine Rückgabe des Befehls erlaubt.
@@ -60,9 +82,32 @@ Für Benutzer, die eine einfachere Syntax bevorzugen, bietet das externe ''sh''-
 
 <code python>
 import sh
+import sys
 
-# Bash-Befehl ausführen
-print(sh.ls("-l"))
+def run_bash_command(command):
+    """
+    Führt einen Bash-Befehl aus und behandelt Fehler.
+
+    :param command: Der auszuführende Bash-Befehl als String
+    """
+    try:
+        print(f"Running command: {command}")
+        # sh führt den Befehl aus und fängt automatisch Fehler ab
+        result = sh.Command(command.split()[0])(*command.split()[1:])
+        print(result)
+
+    except sh.ErrorReturnCode as e:
+        print(f'Fehler: Der Befehl '{command}' schlug fehl mit Fehler: {e.stderr.decode().strip()}')
+        sys.exit(e.exit_code)
+
+    except Exception as e:
+        print(f'Ein unerwarteter Fehler ist aufgetreten: {e}')
+        sys.exit(1)
+
+# Beispielbefehl
+bash_command = 'ls -l /nonexistent_directory'
+run_bash_command(bash_command)
+
 </code>
 
 ===== pexpect-Modul =====
