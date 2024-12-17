@@ -112,14 +112,14 @@ Um die Geschäftsprozesse rund um die Cantina besser verwalten zu können, brauc
 
 ===== Projekt H - 8: Mediothek =====
 ==== Ausgangslage ====
-In der BZZ Mediothek sind Medien aller Art erhältlich. Hier kann man Comics ebenso ausleihen wie auch Fachbücher über Mathematik, oder Videos zu geschichtlichen Ergeignissen. All diese Vielzahl von Medien und deren Verleih muss mittels Software administrierbar sein.
+In der BZZ Mediothek sind Medien aller Art erhältlich. Hier kann man Comics ebenso ausleihen wie auch Fachbücher über Mathematik, oder Videos zu geschichtlichen Ereignissen. All diese Vielzahl von Medien und deren Verleih muss mittels Software administrierbar sein.
 ==== Auftrag ====
 Erstellen Sie eine Software, die es ermöglicht Medien zu erfassen und zu Verleihen. 
 ==== UseCases ====
-  - Die Medien sind kategorisierbar, z.B. DVD, BR-DVD, Audio-CD, Auio-Book, E-Book, Book, etc.
+  - Die Medien sind kategorisierbar, z.B. DVD, BR-DVD, Audio-CD, Audio-Book, E-Book, Book, etc.
   - Die User loggen sich mit User und Passwort ein.
   - Es können nur BZZ-Angehörige (Lernende, Administration, Lehrpersonen) Medien ausleihen.
-  - Neue Medien können erfasst und kategorsiert werden. 
+  - Neue Medien können erfasst und kategorisiert werden. 
   - Es kann nach Medien gesucht werden.
   - Die Treffermenge wird in einer Listenansicht angezeigt.
   - Wichtige Informationen wie Lagerort, Autor, Titel werden bei der Listenansicht angezeigt.

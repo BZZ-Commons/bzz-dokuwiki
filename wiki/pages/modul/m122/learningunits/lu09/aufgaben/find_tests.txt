@@ -39,6 +39,15 @@ Jede Sprache hat jedoch ihre Vorteile, die wir hier ausnutzen wollen:
   * Arbeiten mit Collections: Dies lässt sich leichter in Python umsetzen.
 
 ===== Umsetzung =====
+==== Vorbereitung ====
+//Siehe [[https://wiki.bzz.ch/modul/m122/learningunits/lu08/linux_python#virtual_environment]]
+
+  - Klone das Repository im WSL in einen neuen Ordner.
+  - Erstelle das virtual Environment.
+  - Führe das Bash-Skript ''setup.sh'' aus. Dieses erstellt einen Ordner und Dateien für die Tests.
+
+==== Teilschritte ====
+
 In den folgenden Aufgaben werden Sie zunächst einzelne Teilschritte umsetzen und testen.
 Zum Schluss schreiben Sie die ''main''-Funktion um alle Teilfunktionen zu verbinden.
 
