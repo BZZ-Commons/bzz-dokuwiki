@@ -1,0 +1,64 @@
+====== LU12a - Grundlagen zu Testdaten ======
+===== Was sind Testdaten? =====
+Testdaten sind speziell erstellte oder ausgewählte Daten, die in Softwaretests verwendet werden, um die Funktionalität, Zuverlässigkeit und Sicherheit von Anwendungen zu überprüfen. Diese Daten repräsentieren verschiedene Szenarien, die während der Nutzung der Software auftreten können. Mit ihnen muss das Daily-Business simuliert werden, im guten wie im schlechten.
+\\
+\\
+
+===== Warum sind Testdaten wichtig? =====
+Testdaten sind essenziell für die Qualitätssicherung, da sie...
+  * sicherstellen, dass die Software wie erwartet funktioniert
+  * helfen, Fehler und Schwachstellen zu identifizieren
+  * garantieren, dass die Software mit realistischen und auch ungewöhnlichen Eingaben umgehen kann
+\\
+
+===== Herausforderungen bei Testdaten =====
+Gute Testdaten stellen auch einige Herausforderungen an die Erstellung und Verwaltung dieser:
+  * **Volumen**: Sicherstellen, dass die Testumgebung grosse Datenmengen verarbeiten kann
+  * **Validität**: Vermeidung von ungültigen oder falschen Daten, die Tests verfälschen
+  * **Datenschutz**: Vermeidung von Verstoss gegen Datenschutzbestimmungen durch Anonymisierung
+  * **Wartbarkeit**: Sicherstellen, dass Testdaten leicht aktualisiert werden können
+\\
+
+===== Arten von Testdaten =====
+Je nach Zweck respektive Testziel unterscheiden wir verschiedene Arten von Testdaten:
+  * **Gültige Testdaten** (positiv tests): Daten, die innerhalb der erwarteten Wertebereiche liegen und die normale Funktion der Anwendung testen
+      * Beispiel: Eine korrekte E-Mail-Adresse bei der Benutzerregistrierung
+  * **Ungültige Testdaten** (negativ tests): Daten, die ausserhalb der erwarteten Wertebereiche liegen und testen, wie die Anwendung auf Fehler reagiert
+      * Beispiel: Eine Telefonnummer mit Buchstaben
+  * **Randwerte**: Daten, die an den Grenzen der zulässigen Wertebereiche liegen, um das Verhalten der Software an Extremwerten zu überprüfen 
+      * Beispiel: Ein Alter von 18 Jahren, wenn 18 die Mindestgrenze ist
+  * **Leere Testdaten**: Daten, die gar keine Werte enthalten, um zu prüfen, ob die Anwendung mit leeren Eingaben umgehen kann
+      * Beispiel: Ein leeres Passwortfeld
+  * **Daten für Last- und Stresstests**: Sehr grosse oder komplexe Datenmengen, die das Verhalten der Software unter hoher Belastung überprüfen
+      * Beispiel: 10'000 gleichzeitige Benutzeranmeldungen um ein Login-System einem Stresstest zu unterziehen
+\\
+
+===== Anforderungen an Testdaten =====
+Gute und brauchbare Testdaten müssen einige Kriterien erfüllen:
+  * **Realistisch**: Den tatsächlichen Nutzungsfällen möglichst nahekommen
+  * **Reproduzierbar**: Es muss möglich sein, die Tests mit denselben Daten zu wiederholen
+  * **Vollständig**: Alle wichtigen Anwendungsfälle und Szenarien abdecken
+  * **Sicher**: Keine sensiblen oder personenbezogenen Daten enthalten, insbesondere in Testumgebungen
+\\
+
+===== Erstellen von Testdaten =====
+Es gibt verschiedene Möglichkeiten, Testdaten zu erstellen. Je nach Szenario, Menge und Komplexität muss hier ein unterschiedlicher Ansatz gewählt werden:
+  * **Manuelle Erstellung**: Tester erstellen Daten gezielt für bestimmte Szenarien
+  * **Automatische Generierung**: Tools generieren Testdaten anhand vorgegebener Kriterien (z.B. Faker-Bibliotheken in Python)
+  * **Kopie aus realen Daten**: Verwendung anonymisierter realen Daten aus dem produktiven Sysmten
+  * **Datenbanken**: Verwendung von Datenbankskripten oder Tools, um reproduzierbar die Datenstruktur inkl. Daten zu erstellen
+\\
+
+===== Häufige Fehler bei Testdaten=====
+Die folgenden Fehler treten häufig im Umgang mit Testdaten auf:
+  * **Fehlende Abdeckung**: Testdaten decken nicht alle relevanten Anwendungsfälle oder Szenarien ab
+  * **Unrealistische Daten**: Verwendung von Daten, die in der realen Nutzung nicht vorkommen und dadurch unzuverlässige Ergebnisse liefern
+  * **Wiederverwendung von Produktionsdaten**: Nutzung echter Kundendaten ohne ordnungsgemässe Anonymisierung, was ein Verstoss gegen den Datenschutz bedeuten kann
+  * **Unzureichende Vielfalt**: Es werden nur gültige oder nur ungültige Daten getestet, was potenzielle Fehler der anderen Kategorie unentdeckt lässt
+  * **Nicht reproduzierbare Daten**: Testdaten werden nicht dokumentiert oder sind vor jedem Testlauf zufällig generiert, wodurch Fehler schwer nachvollziehbar sind
+  * **Fehlerhafte Randwertanalyse**: Randwerte werden entweder ignoriert oder nicht korrekt identifiziert
+  * **Mangelnde Wartung**: Testdaten werden nicht aktualisiert, wenn sich die Anforderungen ändern, und führen dadurch zu ungültigen oder unvollständigen Tests
+\\
+
+===== Fazit =====
+Die Verwendung von gut durchdachten Testdaten ist eine Grundvoraussetzung für erfolgreiche Softwaretests. Sie hilft, qualitativ hochwertige Anwendungen zu entwickeln, und reduziert das Risiko von Fehlern nach der Auslieferung. In der Praxis ist eine Kombination aus allen Arten von Testdaten am effektivsten, um mögliche Schwachstellen aufzudecken. Viel Spass dabei.

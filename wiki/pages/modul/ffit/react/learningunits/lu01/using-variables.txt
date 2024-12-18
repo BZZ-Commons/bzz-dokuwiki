@@ -3,7 +3,7 @@
 We can use variables to populate our component dynamically. In JSX we need to use the curly brackets {} to display the value. If we add the parameter "props" to our function, we can use it in our function to display the value given to this component.
 
 Product.js
-<code javascript>
+<file javascript Product.js >
 export default function Product(props) {
   return (
     <div>
@@ -19,7 +19,7 @@ export default function Product(props) {
     </div>
   );
 }
-</code>
+</file>
 
 ProductsList.js
 <code javascript>
