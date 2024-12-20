@@ -1,0 +1,30 @@
+====== LU08c - IP-Pakete ======
+
+Um Daten aus einem Computer über eine Verbindung mit nur einer Leitung (Fachbegriff: serielle Leitung) zu senden, müssen die Daten in einer sequentiellen (hintereinander) Abfolge versendet werden. Lesen Sie den Vorgang der serielle Übertragung.
+Die Daten können aber nicht einfach so auf eine Leitung gegeben und in die Welt hinaus gesendet werden können. Es braucht ein Protokoll, eine Vereinbarung, wie das zu erfolgen hat. Und wer an diesem Datenaustausch teilnehmen will, muss dieses Protokoll einhalten.
+Um Computer miteinander kommunizieren zu lassen, hat sich das IP-Protokoll weltweit durchgesetzt. Dieses Protokoll verpackt die Nutzdaten und versieht das IP-Paket dann mit der Adresse des Senders und Empfängers.
+
+Daten werden in Pakete verpackt und versendet. Je nach Grösse der Sendung sind mehrere Pakete nötig. Ein Datenpaket in einem Computer wird als sequenzielle Folge von 0 und 1 über ein Medium (z.B. Kupferkabel) gesendet.
+
+{{:modul:m286:learningunits:lu08:ip-pakete_01.png?600|}}
+
+===== Aufbau =====
+
+Jedes IPv4-Datenpaket besteht aus einem Header und dem Payload, in dem sich die Nutzdaten befinden. Der Header ist den Nutzdaten vorangestellt. Im IP-Header sind Informationen enthalten, die für die Verarbeitung durch das Internet Protocol notwendig sind.
+
+{{:modul:m286:learningunits:lu08:ip-paket-1.gif?400|}}
+
+Jeder IP-Header beginnt immer mit einer 4 Bit langen Angabe der Versionsnummer des Internet Protocols – IPv4 oder IPv6. Es folgen weitere 4 Bits, die Informationen über die Länge der Kopfzeile (IP Header Length) enthalten, da diese nicht konstant ist.
+
+{{:modul:m286:learningunits:lu08:ip-paket-2a.png?600|}}
+
+Die Gesamtlänge errechnet sich dabei immer aus diesem Wert multipliziert mit 32 Bit. Der kleinstmögliche Wert 5 steht also für eine Header-Länge von 160 Bit (entspricht 20 Byte). In diesem Fall sind keinerlei Optionen hinzugefügt. Das Maximum ist der Wert 15 bzw. 480 Bit (entspricht 60 Byte). Die Bits 8 bis 15 (Type of Service) können Anweisungen zur Behandlung und Priorität des Datagramms beinhalten. Hier kann der Host also beispielsweise angeben, wie wichtig ihm die Zuverlässigkeit, den Durchsatz und die Verzögerung bei der Datenübertragung sind.
+Betreffend Quell- und Zieladresse sind je 32 Bit, also 4 Byte für die zugewiesene IP-Adresse von Ausgangs- und Zielhost reserviert. Geschrieben werden diese IP-Adressen üblicherweise in Form von 4 durch Punkte getrennten Dezimalzahlen. Die niedrigste Adresse ist dabei 0.0.0.0, die höchste 255.255.255.255.
+
+Die Bedeutung der restlichen Felder im IPv4-Header soll in diesem Kurs nicht weiter vertieft werden.
+
+===== Fragmentierung von Datenpaketen =====
+Je nach Datenmenge und Übertragungsverfahren auf der Bitübertragungsschicht müssen die Nutzdaten in mehrere IPv4-Pakete aufgeteilt werden. Diesen Vorgang nennt man Fragmentierung. Der Begriff Fragmentierung ist auch von Dateisystemen und Festplatten bekannt.
+
+IP hat die Aufgabe, Datenpakete für das darunterliegende System des Netzzugangs (Bitübertragung) auf die richtige Größe zu teilen. Im Prinzip geht es darum zu große Datenpakete zu kürzen.\\
+Jedes Übertragungssystem auf der Bitübertragungsschicht hat dabei seine eigene maximale Paketgröße, die man als Maximum Transmission Unit, kurz MTU, bezeichnet. Zum Beispiel Ethernet mit 1.500 Byte und DSL mit 1.492 Byte. Wenn ein Datenpaket, dass ursprünglich in einem lokalen Netzwerk per Ethernet übertragen wurde und somit 1.500 Byte groß ist, per DSL mit 1.492 Byte ins Internet soll, dann muss der DSL-Router auf IP-Ebene das ursprünglich 1.500 Byte große Paket teilen und mit neuen IP-Headern versehen. Diesen Vorgang nennt man Fragmentierung. Die Fragmentierung setzt sich fort, wenn sich unterwegs Übertragungssysteme befinden, die noch kleinere MTUs haben.

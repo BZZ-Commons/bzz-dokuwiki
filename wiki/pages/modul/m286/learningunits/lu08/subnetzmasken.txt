@@ -1,0 +1,119 @@
+====== LU08f - Subnetz-Masken ======
+
+===== Netzwerk- und Geräteadresse =====
+In einem lokalen Netzwerk wird eine bestimmte Anzahl von Geräten miteinander verbunden. Diese Geräte (Computer, Drucker, Scanner, Router usw.) befinden sich also im gleichen Netz und müssen daher im gleichen Adressbereich der IP-Adressen liegen.
+Ein Teil der IP-Adresse legt also fest, wie das Netzwerk „heisst“, während der andere Teil die „interne“ Nummer des Geräts im Netzwerk wieder gibt. Hinweis: ändert der IP-Bereich, muss ein Router zwischen die Netzwerke geschaltet sein!
+Im Beispiel nach Abbildung Abb-01 ist 192.168.0 der Netzwerkteil und die letzten 8 Bit der Adresse werden für die Geräteadressierung verwendet. Der Sachverhalt lässt sich wie folgt darstellen:
+
+<code>
+Netzwerkteil    Geräteteil      Gerät
+                ---.---.---.1   Server
+192.168.0.---
+                ---.---.---.2   Drucker
+</code>
+
+Welcher Teil der Adresse für das Netzwerk verwendet wird, bestimmt sich aus der sogenannten Subnet-Maske!
+
+IP-Adresse:     192.168.0.5\\
+Subnet-Maske:   255.255.255.0\\
+
+===== Netzwerkadresse bestimmen =====
+Um die Netzwerkadresse (oft auch Netzwerkteil) im LAN zu bestimmen, wird IP-Adresse und Subnet-Maske bitweise UND-verknüpft.
+
+<code>
+IP-Adressen  1100‘0000 . 1010‘1000 . 0000‘0000 . 0000‘0101  192.168.0.5
+Subnet-Maske 1111‘1111 . 1111‘1111 . 1111‘1111 . 0000‘0000  255.255.255.0
+Netzwerkteil 1100‘0000 . 1010‘1000 . 0000‘0000 . 0000‘0000  192.168.0.0
+</code>
+
+===== Geräteadresse bestimmen =====
+Für den Geräteteil wird die invertierte Subnet-Maske verwendet.
+
+<code>
+IP-Adresse        1100‘0000 . 1010‘1000 . 0000‘0000 . 0000‘0101  192.168.0.5
+inv. Subnet-Maske 0000‘0000 . 0000‘0000 . 0000‘0000 . 1111‘1111  0.0.0.255
+Geräteteil        0000‘0000 . 0000‘0000 . 0000‘0000 . 0000‘0101  0.0.0.5
+</code>
+
+Die Anzahl 1er in der Netzmaske legt also fest, wie viele Bit dem Netzwerkteil und wie viele dem Geräteteil zugewiesen sind.
+
+**Beispiel 1**\\
+Ein lokales Netzwerk soll maximal 13 Geräte umfassen. In der Dezimal- und Binär-Darstellung entspricht es:
+<code>
+13D = 1101
+</code>
+
+Das entspricht 4 Bits, welche für die Maskierung des Geräteteils benötigt werden. Daraus ergibt sich folgende Subnet-Maske:
+
+<code>
+255.255.255.1111'0000
+255.255.255.240
+</code>
+
+**Beispiel 2**\\
+Ein lokales Netzwerk soll maximal 400 Geräte umfassen. In der Dezimal- und Binär-Darstellung entspricht es:
+
+<code>
+400D = 1'1001'0000
+</code>
+
+Das entspricht 9 Bits, welche für die Maskierung des Geräteteils benötigt werden. Daraus ergibt sich folgende Subnet-Maske:
+
+<code>
+255.255.1111'1110.0000'0000
+255.255.254      .0
+</code>
+
+===== CIDR =====
+CIDR ist eine Konvention/Schreibweise, die seit 1993 verwendet wird, um in einer IP-Adresse den Netzwerk- und Geräteteil zu unterscheiden. Dabei wird eine gegenüber der Subnet-Maske vereinfachte Darstellung verwendet.
+
+172.17.0.0/17 = 172.17.0.0/255.255.128.0
+
+Die Zahl hinter der IP-Adresse – im Beispiel also 17 – gibt dabei an, wie viele 1er für den Netzwerkteil verwendet werden. Diese Zahl wird als Suffix bezeichnet.
+
+**Beispiel**
+
+<code>
+IP-Adresse   168.192.32.12/22
+IP-Adresse   1010‘1000.1100‘0000.0010‘0000.0000‘1100  168.192.32.12
+Subnet-Maske 1111‘1111.1111‘1111.1111‘1100.0000‘0000  255.255.192.0
+Netzwerkteil 1010‘1000.1100‘0000.0010‘0000.0000‘0000  168.192.32.0
+Geräteteil   0000‘0000.0000‘0000.0000‘0000.0000‘1100  0.0.0.12
+</code>
+
+===== Reservierte Adressen =====
+In jedem Netzwerk werden 2 Adressen reserviert, die nicht für Geräte genutzt werden dürfen:
+
+Die Netzwerk-Adresse, nämlich die Adresse 0 im Geräteteil.
+Die Broadcast-Adresse, welche die höchste Adresse im Geräteteil ist. Sie wird verwendet, um mit einem Datenpaket alle Geräte im Netzwerk gleichzeitig zu bedienen.
+
+**Beispiel**\\
+Die folgende IP-Adressbereich 192.168.35.0/28 enthält folgende Netzwerk- und Broadcast-Adresse:
+
+IP-Adressbereich 192.168.35.0/28\\
+Netzwerk-Adresse 192.168.35.0\\
+Broadcast-Adresse 192.168.35.15\\
+Kurzer Quercheck anhand des Suffixes 28:\|
+Maximale Anzahl Bits für die IPv4-Adressierung - Suffix = Anzahl Bits zur Adressierung der Geräte
+
+Nun mit konkreten Zahlen:
+
+<code>
+32-28=4 → 24=16 Geräte
+</code>
+
+Mit der IP-Adresse 192.168.35.0/28 können theoretisch 16 Geräte adressiert werden, also von 192.168.35.0 bis .15.
+Effektive Anzahl Geräte berechnen\\
+Um die effektive (und nicht maximale) Anzahl Geräte zu berechnen, welche effektiv in einem Netzwerk verwendet werden dürfen, müssen die Netzwerk- und die Broadcast-Adresse abgezogen werden. Die allgemeine Formel lautet:
+
+2(32 – n)-2 Geräte verwendet werden, wobei n die Anzahl Bits für den Netzwerkteil ist.
+
+**Beispiel**
+Auf unser vorhergehendes Beispiel angewendet:
+
+<code>
+2(32 – 28)-2 Geräte = 24-2 = 14 Geräte
+</code>
+
+===== Lokale IP-Adresse =====
+Die IP-Adresse 127.0.0.1 (localhost) stellt einen Sonderfall dar. Sie repräsentiert immer die Adresse des eigenen Rechners. Wenn auf einem Rechner z.B. ein WEB-Server installiert ist, kann dieser über seine URL, die öffentliche IP-Adresse oder eben über 127.0.0.1 angesprochen werden. Somit kann für Testzwecke „schnell“ ein WEB-Server eingerichtet und dann einfach über localhost aufgerufen werden, ohne beim NIC dafür zuerst eine IP-Adresse zu lösen.

@@ -1,0 +1,8 @@
+====== LU08a - Einführung ======
+
+Computer und Endgeräte (z.B. 2D-/3D-Printer, Scanner) werden in Netzwerken (LAN = local area network / WAN = wide area network) zu Systemen zusammengeschlossen. Somit können Sie über ein Medium (Draht, Lichtleiter, Funkverbindung) miteinander kommunizieren. Wenn nun aber eine Vielzahl von Geräten in einem Netzwerk angeschlossen ist, müssen Regeln bestehen, damit Computer A weiss, wie er Computer B ansprechen muss. Vor allem muss bekannt sein, wie ein Computer „heisst“. Dazu dienen sogenannte IP-Adressen.
+Diese IP-Adressen müssen einem Computer aber bekannt gegebene werden. Dies erfolgt statisch, in dem ein Gerät mit einer eindeutigen IP-Adresse versehen wird, oder dynamisch, indem ein DHCP-Server eine IP-Adresse in einem Teilnetz ausgibt.
+Und damit wir Benutzer uns nicht solche IP-Adressen merken müssen, verwenden wir im WEB sogenannte URLs. Diese URL muss dann durch einen DNS-Server in eine IP-Adresse umgewandelt werden.
+Und schliesslich müssen in einem komplexen Netzwerk auch noch die richtigen Verbindungswege ausgesucht werden. Für diese Arbeit sind dann Router zuständig.
+
+{{:modul:m286:learningunits:lu08:ip-adr_geraete.png?600|}}

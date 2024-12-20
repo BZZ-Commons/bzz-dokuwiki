@@ -1,0 +1,37 @@
+====== LU08b - MAC-Adressen ======
+
+MAC steht für Media-Access-Control. Jede Netzwerkkarte die hergestellt wird, erhält eine solche MAC-Adresse. Jede MAC-Adresse ist einmalig und besteht aus 48 Bit (bzw. 6 Bytes). Die ersten 24 Bit enthalten eine Zahl, die einem Hersteller (z.B. HP, Intel usw.) zugewiesen ist, während die zweiten 24 Bit als „fortlaufende Nummer“ vergeben werden. Die MAC-Adresse wird üblicherweise in hexadezimaler Form angeschrieben
+
+**Beispiel**\\
+Die MAC-Adresse 58-94-6B-11-49-F9 ist wie folgt aufgeschlüsselt:\\
+Hersteller-Code: 58-94-6B\\ 
+Laufnummer: 11-49-F9
+
+===== Merkmale =====
+**Anzahl**\\
+Mit diesem System lassen sich weltweit 248 Geräte unterscheiden, das sind 280 Billionen Geräte. Pro ca. 2 m2 Erdoberfläche kann also eine MAC-Adresse vergeben werden bzw. jeder Mensch kann über ca. 40‘000 Geräte verfügen.
+
+**Bindung**\\
+Die MAC-Adresse ist an die Netzwerkkarte und nicht an den eigentlichen Computer gebunden. Wenn also Steckkarten (z.B. PCI-Karten) verwendet werden, kann diese Adresse grundsätzlich in unterschiedlichen Geräten genutzt werden.
+
+**Darstellung**\\
+Die MAC-Adresse bildet sich aus 6 Bytes (= 48 Bit). Für jedes Byte – auch als Oktet bezeichnet, da es aus 8 Bit besteht – wird die hexadezimale Schreibweise verwendet. D.h. dass pro Byte 2 Hex-Ziffern verwendet werden.
+
+**Beispiel**\\
+Das Beispiel zeigt zuerst die binäre und anschliessend die hexadezimale Darstellung
+
+<code>
+1010   0010 = 10100010
+A      2    = A2 
+</code>
+
+===== Praxis =====
+Wie ermittle ich die eigene MAC-Adresse?
+
+Für **Windows-Geräte**: Die [[https://www.tippscout.de/mac-adresse-ermitteln_tipp_2050.html|Anleitung]] zeigt Ihnen wie das geht.\\
+Für **macOS-Geräte**: Über die Systemeinstellungen -> Netzwerk -> WLAN -> Weitere Optionen -> Register "Hardware"
+
+===== Hersteller ermitteln (fakultativ) =====
+Wie können Sie den Hersteller eines Ethernet-Adapters herausfinden? Dazu gehen Sie [[https://regauth.standards.ieee.org/standards-ra-web/pub/view.html#registries|auf dieser Seite]] wie folgt vor: Die ersten drei Stellen der MAC-Adresse unter „Search for“ in der unten genannten WEB-Seite eintragen und dann suchen.
+
+{{:modul:m286:learningunits:lu08:mac_hersteller.png?600|}}

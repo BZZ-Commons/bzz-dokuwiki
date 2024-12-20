@@ -1,0 +1,23 @@
+====== LU08d - IP-Adressen ======
+
+Eine IP-Adresse (nach Standard IPv4) besteht aus 32 Bit, das entspricht weltweit der Zahl von ca. 4,3 Milliarden Geräten, die eine IP-Adresse benutzen können.
+Die 32 Bit werden in 4 Bytes (1 Byte = 8 Bit) in dezimaler Darstellung angeschrieben. Eine IP-Adresse sieht demnach wie folgt aus:
+
+{{:modul:m286:learningunits:lu08:ip-adr_03.png?600|}}
+
+Jede Zahl kann einen Bereich von 0 – 255 (28 = 256 Werte) umfassen.
+
+===== Eigenen IP-Adresse bestimmen =====
+In der Theorie "MAC-Adressen" wurde erklärt, wie die MAC-Adresse eines Rechners bestimmt werden kann. Mit den gleichen Mitteln lässt sich auch die IP-Adresse feststellen.
+
+===== Statische und dynamische Zuweisung von IP-Adressen =====
+Jedes Gerät (in einem Netzwerk-Segment) muss über eine eindeutige IP-Adresse verfügen. Die IP-Adresse wird einem Gerät explizit zugeteilt. Dies kann durch einen festen Eintrag in den Systemeinstellungen eines Computers erfolgen. Hier spricht man von statischer IP-Adresse.
+
+{{:modul:m286:learningunits:lu08:ip-adr_01.png?600|}}
+
+Die IP-Adresse kann aber auch zur „Laufzeit“ dynamisch durch einen DHCP-Server (Dynamic Host Configuration Protocol) im Netzwerk zugewiesen werden. (Regelfall)
+
+{{:modul:m286:learningunits:lu08:ip-adr_02.png?600|}}
+
+Der Bezug von IP- zu MAC-Adresse wird durch das Address Resolution Protocol (ARP) geregelt. Dieses Protokoll ist nicht Inhalt dieses Leitprogramms!
+

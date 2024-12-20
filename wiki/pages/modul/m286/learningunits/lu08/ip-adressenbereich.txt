@@ -1,0 +1,31 @@
+====== LU08e - IP-Adressenbereich ======
+
+Um die begrenzte Zahl der IPv4 Adressen optimal nutzen zu können, werden verschiedene technische Lösungen angewendet. Die effektivste ist wohl der Einsatz des IPv6-Protokolls anstelle von IPv4. Noch sind aber zu viele Geräte auf dem Markt, die dieses Protokoll nicht verstehen.
+
+===== Öffentliches vs. privates Netz =====
+Eine Lösung innerhalb des IPv4-Protokolls ist die Unterteilung in Adressbereiche. Dabei wird grundsätzlich in öffentliche und private Netze unterschieden.
+
+{{:modul:m286:learningunits:lu08:netzwerke_01.png?600|}}
+
+Dazu ist ein Router (Netzwerkkomponente) notwendig, welcher das Netzwerks in den öffentlichen und privaten Teil unterteilt. Er verfügt über mindesten zwei Netzkarten, so dass er physisch ans öffentliche und ans private Netz angeschlossen werden kann. Er trennt also die beiden Netze. Jeder Schnittstelle des Routers wird eine eigene IP-Adresse zugewiesen. Im Beispiel nach Abbildung Abb-01 lautet die öffentliche IP 145.34.56.234 und die private IP 192.168.0.10.
+
+===== Öffentliches Netz (WAN) =====
+
+Die Vergabe der IP-Adressen an Firmen und Institutionen (Schulen, NGO usw.) im öffentlichen Netz erfolgt durch eine globale Stelle, die IANA (Internet Assigned Numbers Authority). Die IANA selbst organisiert aber nur die weltweit übergreifenden Namen sowie die Erweiterungen (z.B. .ch oder .net usw.). Für die lokale (Länder-) Vergabe sind die jeweiligen NIC zuständig. (z.B. www.nic.ch)
+So gehört z.B. die IP-Adresse 194.150.245.142 den SBB. Über diese Adresse können deren Server im SBB eigenen Netzwerk angesprochen werden. Im Beispiel nach Abbildung Abb-01 lautet die öffentliche IP 145.34.56.234. Diese Adresse MUSS bei einer NIC (gegen Bezahlung) bezogen werden.
+
+===== Privates Netz (LAN) =====
+
+Im privaten Netz ist der Benutzer selber für die Struktur des Netzwerks sowie die Zuteilung der IP-Adressen zuständig. Dafür stehen ihm folgende IP-Bereiche zur Verfügung:
+
+10.0.0.0 - 10.255.255.255 →  224 - 2 Adressen frei verfügbar\\
+172.16.0.0 - 172.31.255.255 →  220 – 2 Adressen frei verfügbar\\
+192.168.0.0 - 192.168.255.255 →  216 – 2 Adressen frei verfügbar\\
+Diese Adressen können in beliebig vielen privaten (bzw. lokalen) Netzen verwendet werden. Im Beispiel nach Abb-01 lautet der Bereich für die privaten IP 192.168.0.xxx, wobei xxx für die Kennung des jeweiligen Gerätes im LAN steht.
+
+**Vorteil dieser Lösung**\\
+Eine Firma benötigt für den öffentlichen Zugang nur eine oder ein paar wenige öffentliche IP-Adressen. Im firmeninternen Netz kann sie aber dank der privaten IP-Bereiche eine Vielzahl von Geräten im Netzwerk betreiben.
+
+===== Lokale IP-Adresse =====
+Die IP-Adresse 127.0.0.1 (localhost) stellt einen Sonderfall dar. Sie repräsentiert immer die Adresse des eigenen Rechners. Wenn auf einem Rechner z.B. ein WEB-Server installiert ist, kann dieser über seine URL, die öffentliche IP-Adresse oder eben über 127.0.0.1 angesprochen werden. Somit kann für Testzwecke „schnell“ ein WEB-Server eingerichtet und dann einfach über localhost aufgerufen werden, ohne beim NIC dafür zuerst eine IP-Adresse zu lösen.
+
