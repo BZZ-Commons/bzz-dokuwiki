@@ -1,0 +1,27 @@
+====== LU12.A01 - Testdaten erzeugen ======
+<WRAP center round todo 60%>
+Erstelle eine Funktion, welche die Testdaten für ein SQL-Script bereitstellt
+</WRAP>
+
+===== Auftrag =====
+Ergänzen Sie im angehängten Repo die vorbereitete Methode "createTestdata" mit Code. Dieser erzeugt 2 TXT-Dateien mit Testdaten, welche mittels dem SQL-File "LU12_A01_testdatadb" importiert werden müssen (Script ist im Moodle).
+
+Folgendes muss generiert werden:
+  * 1 TXT-Datei "clients.txt" mit 100 Klienten, welche über eine eindeutige Kombination von Vor- und Nachnamen verfügen. Den Algorithmus dazu entwickeln Sie selber.
+  * 1 TXT-Datei "debits.txt" mit 10 Buchungen pro Klient, also insgesamt 1000 Buchungen. Der Betrag (Amount) soll zufällig aus Werten zwischen 10 und 1000 generiert werden.
+
+Die Struktur der TXT-Dateien (= Attribute der beiden Tabellen) entnehmen Sie dem im Moodle vorbereiteten SQL-Script. 
+
+Nachdem Sie diese beiden TXT-Datei erzeugt haben, passen Sie das SQL-Script so an, dass nach der Erzeugung der DB diese nun auch importiert werden. Schauen Sie dazu notfalls im Modul 164 nach, Sie haben es nämlich dort schon mal gemacht. Tipp: Erstellen Sie direkt auf dem Laufwerk C: einen Ordner "M450" und legen Sie die beiden TXT-Datein dort ab...
+
+Lassen Sie nun am einfachsten mittels der MySQL-Workbench Ihr angepasstes Script laufen und prüfen Sie dieses auf Fehler.
+
+
+
+
+===== Abgabe =====
+Commit des Codes in GitHub
+
+----
+{{tag>M450-LU12}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Andre Probst
