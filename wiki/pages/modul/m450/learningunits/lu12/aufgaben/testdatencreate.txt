@@ -4,20 +4,41 @@ Erstelle eine Funktion, welche die Testdaten für ein SQL-Script bereitstellt
 </WRAP>
 
 ===== Auftrag =====
+
+=== Testdaten erzeugen ===
 Ergänzen Sie im angehängten Repo die vorbereitete Methode "createTestdata" mit Code. Dieser erzeugt 2 TXT-Dateien mit Testdaten, welche mittels dem SQL-File "LU12_A01_testdatadb" importiert werden müssen (Script ist im Moodle).
 
 Folgendes muss generiert werden:
   * 1 TXT-Datei "clients.txt" mit 100 Klienten, welche über eine eindeutige Kombination von Vor- und Nachnamen verfügen. Den Algorithmus dazu entwickeln Sie selber.
-  * 1 TXT-Datei "debits.txt" mit 10 Buchungen pro Klient, also insgesamt 1000 Buchungen. Der Betrag (Amount) soll zufällig aus Werten zwischen 10 und 1000 generiert werden.
+  * 1 TXT-Datei "debits.txt" mit 10 Buchungen pro Klient, also insgesamt 1000 Buchungen. Der Betrag (Amount) soll zufällig aus Werten zwischen 10.00 und 99.90 generiert werden (2 Dezimalstellen).
 
 Die Struktur der TXT-Dateien (= Attribute der beiden Tabellen) entnehmen Sie dem im Moodle vorbereiteten SQL-Script. 
 
-Nachdem Sie diese beiden TXT-Datei erzeugt haben, passen Sie das SQL-Script so an, dass nach der Erzeugung der DB diese nun auch importiert werden. Schauen Sie dazu notfalls im Modul 164 nach, Sie haben es nämlich dort schon mal gemacht. Tipp: Erstellen Sie direkt auf dem Laufwerk C: einen Ordner "M450" und legen Sie die beiden TXT-Datein dort ab...
+\\
 
+=== SQL-Script anpassen ===
+Nachdem Sie diese beiden TXT-Datei erzeugt haben, passen Sie das SQL-Script so an, dass nach der Erzeugung der DB diese nun auch importiert werden. Schauen Sie dazu notfalls im Modul 164 nach, Sie haben es nämlich dort schon mal gemacht. 
+**Tipp**: Erstellen Sie direkt auf dem Laufwerk C: einen Ordner "M450" und legen Sie die beiden TXT-Datein dort ab.
+
+**WICHTIG**
+
+Anpassung my.ini für Berechtigung Importverzeichnis:
+Damit die Zeilen mit LOAD DATA INFILE funktionieren, muss die Datei 'my.ini' im Verzeichnis des MySQL-Servers angepasst werden.
+Diese Datei befindet sich bei einer Standardinstallation hier: C:\ProgramData\MySQL\MySQL Server 8.0\my.ini
+Die zu importierenden Dateien am besten in ein eigenes Verzeichnis 'C:\M450' ablegen. Dann in my.ini nach "secure-file-priv" suchen. Dort dann den Pfad auf Ihr eigenes Verzeichnis anpassen, also z.B. secure-file-priv="C:/M450"
+
+\\
+
+=== SQL-Script testen ===
 Lassen Sie nun am einfachsten mittels der MySQL-Workbench Ihr angepasstes Script laufen und prüfen Sie dieses auf Fehler.
 
+\\
 
+=== Vergleichswerte bestimmen ===
+Damit Sie später vor der Ausführung von Tests die korrektheit der Datenbank bestimmen können (diese muss vor jedem Testlauf neu geladen werden), müssen Sie nun Referenzwerte ermitteln. In unserem Falle beschränken wir uns dabei auf einen Referenzwert: Die Summe der Beträge aller Buchungen.
+Ermitteln Sie direkt in der Workbench mittels SQL die Summe aller Buchungen und notieren Sie sich diese Zahl.
 
+\\
 
 ===== Abgabe =====
 Commit des Codes in GitHub

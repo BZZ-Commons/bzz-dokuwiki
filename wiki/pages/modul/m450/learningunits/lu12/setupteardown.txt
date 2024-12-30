@@ -1,0 +1,12 @@
+====== LU12b - Setup and Teardown ======
+
+Wenn in einem Python-Umfeld grössere und komplexere Tests mit einem normierten System und normierten Testdaten durchgeführt werden müssen, so hilft hier die Technik "Setup and Teardown". 
+
+Eine detailierte Beschreibung dazu inkl. Beispielen finden Sie hier: [[https://pytest-with-eric.com/pytest-best-practices/pytest-setup-teardown/|Pytest with Eric]]
+
+
+
+
+----
+{{tag>M450-LU12}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Andre Probst
