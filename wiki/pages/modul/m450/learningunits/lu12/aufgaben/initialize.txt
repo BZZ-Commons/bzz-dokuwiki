@@ -1,0 +1,35 @@
+====== LU12.A02 - Testdaten initialisieren und prüfen ======
+<WRAP center round todo 60%>
+Sind die Testdaten überhaupt korrekt und vollständig? Testen Sie es...
+</WRAP>
+
+===== Auftrag =====
+Ausgangslage für diesen Auftrag ist der Auftrag LU12.A01, Sie benötigen die beiden Importfiles mit Daten und das angepasste SQL-Skript
+
+=== Testdatenbank erzeugen ===
+Ergänzen Sie im angehängten Repo die vorbereitete Methode "dbinitialize" mit Code. Dieser muss das SQL-Skript auf Ihre MySQL-Instanz anwenden und die Testdatenbank erzeugen können.
+
+\\
+
+=== Daten verifizieren ===
+Erstellen Sie 3 neue Funktionen, welche helfen die Vollständigkeit der Daten in der Testdatenbank zu verifizieren. Es sind dies...
+
+  * Eine Funktion zum zählen der Anzahl Kunden
+  * Eine Funktion zum zählen der Anzahl Buchungen
+  * Eine Funktion welche die Summe aller Buchungen zurück gibt
+
+\\
+
+=== Pytests erstellen ===
+Erstellen Sie für die 3 obigen Funktionen je einen Test, der die zurück gegebene Anzahl verifiziert. 
+
+
+\\
+
+=== Vergleichswerte bestimmen ===
+===== Abgabe =====
+Commit des Codes in GitHub
+
+----
+{{tag>M450-LU12}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Andre Probst
