@@ -45,7 +45,7 @@ Gute und brauchbare Testdaten müssen einige Kriterien erfüllen:
 Es gibt verschiedene Möglichkeiten, Testdaten zu erstellen. Je nach Szenario, Menge und Komplexität muss hier ein unterschiedlicher Ansatz gewählt werden:
   * **Manuelle Erstellung**: Tester erstellen Daten gezielt für bestimmte Szenarien
   * **Automatische Generierung**: Tools generieren Testdaten anhand vorgegebener Kriterien (z.B. Faker-Bibliotheken in Python)
-  * **Kopie aus realen Daten**: Verwendung anonymisierter realen Daten aus dem produktiven Sysmten
+  * **Kopie aus realen Daten**: Verwendung anonymisierter realen Daten aus dem produktiven System
   * **Datenbanken**: Verwendung von Datenbankskripten oder Tools, um reproduzierbar die Datenstruktur inkl. Daten zu erstellen
 \\
 

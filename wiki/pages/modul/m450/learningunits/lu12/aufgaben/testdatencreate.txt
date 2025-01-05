@@ -17,8 +17,8 @@ Die Struktur der TXT-Dateien (= Attribute der beiden Tabellen) entnehmen Sie dem
 \\
 
 === SQL-Script anpassen ===
-Nachdem Sie diese beiden TXT-Datei erzeugt haben, passen Sie das SQL-Script so an, dass nach der Erzeugung der DB diese nun auch importiert werden. Schauen Sie dazu notfalls im Modul 164 nach, Sie haben es nämlich dort schon mal gemacht. 
-**Tipp**: Erstellen Sie direkt auf dem Laufwerk C: einen Ordner "M450" und legen Sie die beiden TXT-Datein dort ab.
+Nachdem Sie diese beiden TXT-Dateien erzeugt haben, passen Sie das SQL-Script so an, dass nach der Erzeugung der DB diese nun auch importiert werden. Schauen Sie dazu notfalls im Modul 164 nach, Sie haben es nämlich dort schon mal gemacht. 
+**Tipp**: Erstellen Sie direkt auf dem Laufwerk C: einen Ordner "M450" und legen Sie die beiden TXT-Dateien dort ab.
 
 **WICHTIG**
 
@@ -35,7 +35,7 @@ Lassen Sie nun am einfachsten mittels der MySQL-Workbench Ihr angepasstes Script
 \\
 
 === Vergleichswerte bestimmen ===
-Damit Sie später vor der Ausführung von Tests die korrektheit der Datenbank bestimmen können (diese muss vor jedem Testlauf neu geladen werden), müssen Sie nun Referenzwerte ermitteln. In unserem Falle beschränken wir uns dabei auf einen Referenzwert: Die Summe der Beträge aller Buchungen.
+Damit Sie später vor der Ausführung von Tests die Korrektheit der Datenbank bestimmen können (diese muss vor jedem Testlauf neu geladen werden), müssen Sie nun Referenzwerte ermitteln. In unserem Falle beschränken wir uns dabei auf einen Referenzwert: Die Summe der Beträge aller Buchungen.
 Ermitteln Sie direkt in der Workbench mittels SQL die Summe aller Buchungen und notieren Sie sich diese Zahl.
 
 \\

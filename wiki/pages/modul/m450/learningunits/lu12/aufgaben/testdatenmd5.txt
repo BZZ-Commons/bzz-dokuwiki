@@ -1,0 +1,28 @@
+====== LU12.A03 - Testdateien verifizieren ======
+<WRAP center round todo 60%>
+Erstelle eine Funktion, welche Testdateien mittels ihrem MD5-Hash auf echtheit verifizieren kann
+</WRAP>
+
+===== Auftrag =====
+
+=== Ausgangslage ===
+Die zu Verfügung gestellten Dateien sind simpel gehalten und haben mit eigentlichen Testdaten nicht zu tun, dies einfach zur Klärung.
+
+Im Moodle haben Sie das Verzeichnis "Testdatafiles". In diesem befinden sich 5 TXT-Dateien beginnend mit dem Namen "Testdata". Gehen wir mal davon aus dass diese 5 Dateien den Input für einen automatisierten Test liefern und Ihr Inhalt "echt" sein muss, sprich keine Änderungen an den Dateien vorgenommen wurden.
+\\
+Ebenso erhalten Sie in diesem Verzeichnis eine Datei "MD5HashValues.txt", in welcher für die 5 Testdateien die gültigen MD5-Hashs der Dateien gespeichert sind. Jede der 5 Dateien ist nur für die Tests zulässig, wenn dieser zum Zeitpunkt des Tests verifiziert werden kann.
+
+\\
+
+=== Auftrag ===
+Sie erstellen ein neues Pythonprojekt, in welchem Sie die Logik entwerfen, die 5 Testdateien auf ihre Echtheit zu verifizieren. Gehen Sie davon aus, dass die Anzahl an Testdateien variabel sein könnte, sprich es dürfen die 5 Dateien nicht fix codiert sein...
+Ihr Code muss sämtliche Dateien durchgehen können und Ihnen zuletzt ein Feedback geben, ob alle Dateien verifiziert werden konnten oder aber welche dass nicht gültig sind.
+
+\\
+
+===== Abgabe =====
+Halten Sie Ihre Feststellung als Kommentar im Moodleauftrag fest.
+
+----
+{{tag>M450-LU12}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Andre Probst
