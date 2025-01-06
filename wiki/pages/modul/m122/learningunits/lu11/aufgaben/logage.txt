@@ -1,0 +1,46 @@
+====== LU11.A01: Alte Logs ======
+<WRAP center round todo 60%>
+Erstelle ein Skript, das Logdateien archiviert und löscht.
+</WRAP>
+
+===== Ausgangslage =====
+
+Ein Datenbankserver schreibt seine Meldungen in die Datei «~/log/message.log». 
+Sobald die Logdatei ein vorgegebenes Alter in Tagen (''Argument 1'') erreicht hat, wird ...
+  - die Logdatei mit dem Tagesdatum (Format: "YYYYMMDD"") im Dateinamen gesichert. Zum Beispiel:
+    * message20210510.log
+    * message20210511.log
+  - überzählige Sicherungsdateien gelöscht. Wie viele Sicherungsdateien behalten werden, ist vom ''Argument 2'' abhängig.
+  - eine neue leere Logdatei angelegt
+
+===== Beispiele =====
+Für unsere Beispiele nehmen wir an, dass folgende Dateien vorhanden sind:
+  * message.log (Erstellt am 04.01.2025)
+  * message20241215.log
+  * message20241220.log
+  * message20241228.log
+
+Ausserdem gilt für alle Aufrufe, dass diese am 10.1.2025 gemacht werden.
+
+==== Beispiel 1 ====
+  * Aufruf: ''python3 messagelog.py 10 1''
+  * Aktionen: Keine
+
+Die Logdatei ist weniger als 10 Tage alt, somit wird keine Aktion durchgeführt.
+
+==== Beispiel 2 ====
+
+  * Aufruf: ''python3 messagelog.py 3 2''
+  * Aktionen: 
+    - Die Datei ''message.log'' wird in ''message20250110.log'' umbenannt.
+    - Die Dateien ''message20241215.log'' und ''message20241220.log'' werden gelöscht.
+    - Eine neue, leere Datei ''message.log'' wird erstellt.
+
+Nachdem die Datei umbenannt wurde, existieren 4 Sicherungsdateien.
+Gemäss dem zweiten Argument sollen aber nur 2 Sicherungsdateien behalten werden.
+Deshalb werden die zwei ältesten Sicherungsdateien gelöscht.
+
+----
+{{tag>M122-LU11}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter
+

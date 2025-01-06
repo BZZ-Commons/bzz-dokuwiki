@@ -1,0 +1,42 @@
+====== LU10a - Argumente in Python-Skripts ======
+<WRAP center round tip 60%>
+Beim Aufruf eines Python-Skripts können, ähnlich wie beim Aufruf von Bash-Skripts, Argumente mitgegeben werden.
+Dies ist eine nützliche Technik, um die Skripts dynamisch und flexibel zu gestalten.
+</WRAP>
+
+Durch den Einsatz von Argumenten kann ein Skript mit verschiedenen Eingabewerten ausgeführt werden kann, ohne den Code direkt zu ändern.
+
+===== Einfache Argumente =====
+
+Das Modul ''sys'' bietet eine einfache Möglichkeit, mit Befehlszeilenargumenten umzugehen. 
+Der Wert von ''sys.argv'' ist eine Liste, die alle Argumente enthält, die beim Starten des Skripts über die Kommandozeile übergeben werden.
+
+  * ''sys.argv[0]'' enthält den Namen des Skripts.
+  * ''sys.argv[1]'' enthält das erste Argument, das über die Kommandozeile übergeben wurden.
+  * ''sys.argv[n]'' enthält das n-te Argument
+
+==== Beispiel ====
+<code python>
+import sys
+
+def main():
+
+    # Read the arguments
+    arg1 = sys.argv[1]
+    arg2 = sys.argv[2]
+
+    # Verwendung der Argumente
+    print(f"Argument 1: {arg1}")
+    print(f"Argument 2: {arg2}")
+
+if __name__ == '__main__':
+    if len(sys.argv) != 3:
+        print("Usage: python script.py <arg1> <arg2>")
+        sys.exit(1)
+    main()
+    
+</code>
+
+----
+{{tag>M122-LU10}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter
