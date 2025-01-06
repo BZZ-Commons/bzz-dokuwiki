@@ -1,0 +1,32 @@
+====== LU10.A01: Quartal ermitteln ======
+<WRAP center round todo 60%>
+Schreibe ein Python-Skript, das aus einem Datum das Quartal ermittelt.
+</WRAP>
+
+===== Aufruf =====
+
+Beim Aufruf des Skripts kann ein Datum als optionales Argument mitgegeben werden.
+Das Datum kann in diesen Formaten angegeben werden:
+  * ISO: YYYYMMDD, z.B. 20240815
+  * Schweiz: DD.MM.YYYY, z.B. 15.08.2024
+
+
+Falls kein Argument mitgegeben wird, verwendet das Skript das aktuelle Tagesdatum.
+
+===== Verarbeitung =====
+
+Aus diesem Datum ermittelt das Skript das Quartal im Schuljahr:
+
+^ Monate ^ Quartal ^
+| August - Oktober | Q1 |
+| November - Januar | Q2 |
+| Februar - April | Q3 |
+| Mai - Juni | Q4 |
+
+===== Ausgabe =====
+Das Skript gibt das Datum und das Quartal in der Konsole aus.
+
+===== Beispiele =====
+^ Aufruf ^ Ausgabe ^
+| ''python3 quarter.py'' | ''06.01.2025: Q2'' |
+| ''python3 quartet.py 20250517'' | ''17.05.2025: Q3'' |

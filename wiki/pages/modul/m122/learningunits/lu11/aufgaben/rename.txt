@@ -1,0 +1,16 @@
+====== LU11.A02: Dateien umbenennen ======
+<WRAP center round todo 60%>
+Erstelle ein Skript, das Dateien umbenennt und Pfade anpasst.
+</WRAP>
+
+
+===== Ausgangslage =====
+  * Masterdatei mit Verweisen zu 2-4 Detaildateien
+
+===== Aufruf =====
+
+Das Python-Skript erwartet zwei oder mehr Argumente.
+
+  * ''-o'' bzw. ''--old'': Der Pfad zum Ordner mit den Dateien, die umbenannt werden sollen.
+  * ''-n'' bzw. ''--new'': Die neuen Namen der Dateien. Der Parameter kann mehr als einmal angegeben werden.
+

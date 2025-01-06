@@ -1,0 +1,63 @@
+====== LU10.A02: Kryptowährungen ======
+<WRAP center round todo 60%>
+Erstelle ein Skript, das zwischen Schweizer Franken und einer Auswahl von Kryptowährungen umrechnet.
+</WRAP>
+
+===== Aufruf =====
+Das Skript kennt eine Reihe von Argumenten, welche du der Usage-Meldung des Skripts entnehmen kannst.
+Die Argumente können entweder anhand Ihrer Reihenfolge **oder** anhand der Kürzel (z.B. ''-a'') angegeben werden.
+
+<code>
+Usage: crypto_converter.py AMOUNT [FROM_UNIT] [TO_UNIT]
+Usage: crypto_converter.py -a AMOUNT [-f FROM_UNIT] [-t TO_UNIT]
+
+Converts an amount between various cryptocurrencies.
+
+Arguments:
+  -a, --amount AMOUNT    The amount to be converted. Specify as a number (e.g., 100, 0.5).
+  -f, --from FROM_UNIT   The unit of the input amount. Use "CHF" for Swiss Francs or the symbol of a cryptocurrency (e.g., BTC, ETH). Default is "CHF"
+  -t, --to TO_UNIT       The unit of the desired output. Use "CHF" for Swiss Francs or the symbol of a cryptocurrency (e.g., BTC, ETH). Default is "CHF"
+
+Examples:
+  Convert 100 CHF to Bitcoin:
+    chf_crypto_converter.py -a 100 -f CHF -t BTC
+
+  Convert 0.05 BTC to Swiss Francs:
+    chf_crypto_converter.py --amount 0.05 --from BTC --to CHF
+</code>
+
+===== Verarbeitung =====
+==== Argumente übernehmen ====
+
+Zunächst identifiziert und übernimmt das Skript die angegebenen Argumente.
+Fehlende Argumente werden durch den Defaultwert ersetzt.
+
+==== Umrechnung ====
+In der Funktion ''convert'' wird der Betrag umgerechnet.
+  * Argumente:
+    * amount (Float)
+    * from_unit (String, 3 Buchstaben A-Z)
+    * to_unit (String, 3 Buchstaben A-Z)
+  * Returnwert: Umgerechneter Betrag
+
+
+Erstelle dazu einen Dictionary mit einigen Kryptowährungen (Key) und deren Wechselkurs (Value) zum Schweizer Franken.
+Zum Beispiel:
+^ Key ^ Value ^
+| CHF | 1.00 |
+| BTC | 97560.753 |
+| ... | ... |
+
+===== Ausgabe =====
+Gib das Resultat der Rechnung in der Konsole aus.
+Zum Beispiel:
+
+<code>
+crypto_converter.py --amount 0.05 --from BTC --to CHF
+
+0.05 BTC = 4878.03765 CHF
+</code>
+
+----
+{{tag>M122-LU10}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter
