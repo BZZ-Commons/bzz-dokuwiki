@@ -5,12 +5,76 @@ Erstelle ein Skript, das Dateien umbenennt und Pfade anpasst.
 
 
 ===== Ausgangslage =====
-  * Masterdatei mit Verweisen zu 2-4 Detaildateien
+In einer Applikation werden mehrere Datendateien verwaltet, deren Dateipfade in einer Masterdatei gespeichert sind. 
+Diese Masterdatei dient als zentrale Referenz und listet die Pfade zu den Datendateien. 
+Um die Organisation der Dateien zu erleichtern, sollen bestehende Dateien umbenannt und dupliziert werden können, wobei die Pfade in der Masterdatei automatisch aktualisiert wird.
 
+==== Mehrere Kopien ====
+Dem Skript können mehrere neue Bezeichnungen angegeben werden.
+In diesem Fall soll das Skript mehrere Kopien der Dateien erstellen.
 ===== Aufruf =====
 
-Das Python-Skript erwartet zwei oder mehr Argumente.
+Das Python-Skript erwartet drei oder mehr Argumente.
 
-  * ''-o'' bzw. ''--old'': Der Pfad zum Ordner mit den Dateien, die umbenannt werden sollen.
-  * ''-n'' bzw. ''--new'': Die neuen Namen der Dateien. Der Parameter kann mehr als einmal angegeben werden.
+  * ''-f'' bzw. ''--folder'': Der Pfad des Ordners mit den Dateien.
+  * ''-o'' bzw. ''--old'': Dateien mit dieser Zeichenfolge im Dateinamen sollen umbenannt werden.
+  * ''-n'' bzw. ''--new'': Die neue Zeichenfolge im Namen der Dateien. Der Parameter kann mehr als einmal angegeben werden.
+
+===== Beispielablauf =====
+==== Ordnerinhalt vor dem Skript: ====
+
+<code>
+/data/
+├── vdi_master.dat (enthält Verweise auf: "data/vdi_data1.dat", "data/vdi_data2.dat)
+├── vdi_data1.dat
+├── vdi_data2.dat
+├── read.me
+</code>
+
+==== Aufruf des Skripts mit einem --new: ====
+
+<code>
+python3 rename_files.py --folder /data --old vdi --new "exams"
+</code>
+** Ordnerinhalt nach dem Skript: **
+
+<code>
+/data/
+├── exams_master.dat (enthält Verweise auf: "data/exams_data1.dat", "data/exams_data2.dat)
+├── exams_data1.dat
+├── exams_data2.dat
+├── read.me
+</code>
+
+==== Aufruf des Skripts mit mehreren --new: ====
+
+<code>
+python3 rename_files.py --folder /data --old vdi --new "exams" --new "school"
+</code>
+** Ordnerinhalt nach dem Skript: **
+
+<code>
+/data/
+├── exams_master.dat (enthält Verweise auf: "data/exams_data1.dat", "data/exams_data2.dat)
+├── exams_data1.dat
+├── exams_data2.dat
+├── read.me
+├── school_master.dat (enthält Verweise auf: "data/school_data1.dat", "data/school_data2.dat)
+├── school_data1.dat
+├── school_data2.dat
+</code>
+
+===== Vorbereitung =====
+==== Ordner, Dateien erstellen ====
+  - Erstelle einen neuen Ordner im WSL, z.B. ''/data'' oder ''/tmp/work''
+  - Kopiere die vier angehängten Dateien in diesem Ordner
+
+{{ :modul:m122:learningunits:lu11:aufgaben:randomfile.txt |}} 
+{{ :modul:m122:learningunits:lu11:aufgaben:sample_master.txt |}}
+{{ :modul:m122:learningunits:lu11:aufgaben:sample_file1.txt |}}
+{{ :modul:m122:learningunits:lu11:aufgaben:sample_file9.txt |}}
+
+==== Projekt erstellen ====
+Erstelle eine neues Python-Projekt inkl. Virtual Environment im WSL.
+
 

@@ -1,0 +1,63 @@
+====== LU11.A03: Duplikate suchen ======
+<WRAP center round todo 60%>
+Schreibe ein Skript, das die Dateien in zwei verschiedenen Ordnern vergleicht.
+
+Bilde dazu ein 3er Team, wobei jedes Mitglied einen anderen Lösungsansatz wählt:
+  * Reines Bash-Skript ohne Python.
+  * Reines Python-Skript ohne den Einsatz von Bash-Befehlen.
+  * Ein Python-Skript mit integrierten Bash-Befehlen.
+
+Vergleicht am Ende eure Lösungen.
+Welche Vor-/Nachteile haben die einzelnen Lösungsansätze?
+</WRAP>
+
+===== Ausgangslage =====
+
+Dein Skript soll die Dateien in zwei verschiedenen Ordnern vergleichen. 
+Folgende Situationen sollen erkannt werden:
+  * Existiert die Datei nur im ersten, nur im zweiten oder beiden Ordnern?
+  * Falls die Datei in beiden Ordnern existiert …
+    * … sind beide Dateien gleich gross?
+    * … haben beide Dateien das gleiche Änderungsdatum?
+
+Je nach Situation zeigt das Skript eine oder mehrere der folgenden Ausgaben.
+Ausgaben:
+  * Datei **Dateiname** nur in **Ordnername**
+  * Datei **Dateiname** in **Ordnername** ist grösser
+  * Datei **Dateiname** in **Ordnername** ist neuer
+  * Datei **Dateiname** ist in beiden Ordnern identisch
+
+Die **fett** geschriebenen Begriffe sind Platzhalter für den tatsächlichen Datei- und Ordnernamen.
+
+===== Anforderungen =====
+
+==== Argumente ====
+
+Bei Aufruf des Skripts gibt der Benutzer zwei Argumente mit:
+  * Pfad des ersten Ordners
+  * Pfad des zweiten Ordners
+
+==== Fehlermeldungen ====
+
+  * Falls der Benutzer nicht genau 2 Argumente mitgibt, erscheint ein Hinweis zur korrekten Syntax (usage). Anschliessend wird das Skript beendet.
+  * Falls einer der Ordner nicht existiert, wird eine Fehlermeldung angezeigt. Nach dieser Fehlermeldung wird das Skript beendet.
+
+===== Testfälle / Testdaten =====
+
+Sie müssen die Funktionalität des Skripts vollständig prüfen. 
+Definieren Sie dazu die nötigen Testfälle und Testdaten. 
+Folgende Situationen müssen geprüft werden:
+
+  * Ungültige Argumente (3 Testfälle)
+    * Zu wenige Argumente angegeben.
+    * Zu viele Argumente angegeben.
+    * Ein Ordner existiert nicht.
+  * Vergleichen der Dateien (7 Testfälle)
+    * Datei existiert nur im ersten / zweiten Ordner.
+    * Datei im ersten / zweiten Ordner ist grösser.
+    * Datei im ersten / zweiten Ordner ist neuer.
+    * Dateien sind identisch.
+
+----
+{{tag>M122-LU11}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

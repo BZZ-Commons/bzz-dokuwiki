@@ -48,6 +48,8 @@ Zum Beispiel:
 | BTC | 97560.753 |
 | ... | ... |
 
+Falls die ''from_unit'' oder ''to_unit'' nicht bekannt sind, soll eine Exception ausgelöst werden.
+Diese Exception muss im ''main'' aufgefangen und verarbeitet werden.
 ===== Ausgabe =====
 Gib das Resultat der Rechnung in der Konsole aus.
 Zum Beispiel:
