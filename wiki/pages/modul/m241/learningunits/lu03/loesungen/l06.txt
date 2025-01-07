@@ -1,0 +1,26 @@
+====== LU03.L06 - ValueChain-Analyse======
+
+** 1. Identifizieren der Wertschöpfungschritte**
+  * Anforderungsanalyse oder SMART-Ziele
+  * Design: (rapid) Prototype
+  * Implementierung
+  * Testen
+  * Bereitstellung
+  * Wartung
+
+** 2. Priorisierung und Verbindung**
+  * Relevant ist die Notwendigkeit, dass bestimmte Schritte vor anderen erfolgen müssen (z.B., Implementierung vor dem Testen).
+  * Nicht vergessen: die kontinuierliche Integration und Bereitstellung (CI/CD) in Bezug auf die Verbindung der Schritt
+  * Auftritt, Doku sollte aus «einem GUSS» sein, Wir-Gefühl muss vermittelt werden
+
+** 3. Identifizierung von Risiken und Verbesserungspotentialen**
+  * Mögliche Risiken: Anforderungsanalyse, Qualitätsprobleme bei der Implementierung oder Schwierigkeiten in der Bereitstellung sein. Zwischentests, Integrations-tests, Anforderungscheck
+  * Verbesserungspotenziale: Automatisierung von Tests, der Einführung agiler Methoden oder der Optimierung von Entwicklungs- und Bereitstellungsprozessen. 
+
+**4. Praktische Anwendung**
+  * Wird am Beispiel der Lernenden analysiert und diskutiert.
+  * Wichtig: Anpassung der Chain Value Analyse an die spezifischen Anforderungen und Gegebenheiten des jeweiligen Pro
+
+-----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir
+
