@@ -15,23 +15,5 @@
 Der Inhalt des Moduls ist in Learning Units gegliedert:
 
 <nspages .:learningunits -subns -nopages -exclude -h1 -textNS="" -simplelist>
-  * LU04 - Kontrollstrukturen
-  * LU05 - System Management
-  * LU06 - Systemintegration/Testing
-  * LU07 - Dokumentation
 
-PS: Hier die ursprüngliche Gliederung:
-
-  * LU_0 - Administration
-  * LU_A - Auftrag erkennen
-  * LU_B - Grafische Darstellung
-  * LU_C - System & Variablen
-  * LU_D - SHELL/BASH
-  * LU_E - Dokumentation 
-  * LU_F - Kommentare
-  * LU_G - Kontrollstrukturen
-  * LU_H - Subprogramming
-  * LU_I - Systemintegration
-  * LU_J - Time Management 
-  * LU_K - Testing
-  * LU_L - Debugging
+[[.:lb02info]]

@@ -1,0 +1,86 @@
+====== LU05a - Marktforschung Grundlagen ======
+
+===== Einleitung: Was ist Marktforschung? =====
+Marktforschung ist der systematische Prozess der Sammlung, Analyse und Interpretation von Daten, die für die Lösung von Problemen und die Entscheidungsfindung in Bezug auf Märkte, Produkte, Kunden oder Wettbewerber von Unternehmen notwendig sind. Ziel der Marktforschung ist es, fundierte Entscheidungen zu treffen, um langfristigen Erfolg auf dem Markt zu gewährleisten. Sie ist sowohl für die Einführung neuer Produkte als auch für die Optimierung bestehender Angebote von Bedeutung.
+
+===== Arten der Marktforschung =====
+Marktforschung kann kann aus unterschiedlichen Perspektiven betrachtet werden, wie Studienart, Datenherkunft oder der Erhebungsart. 
+
+{{:modul:m241:learningunits:lu05:theorie:arten-der-marktforschung.png?800| Arten der Marktforschung}}
+
+In diesem Kapitel wollen wir uns mit der Datenherkunft beschäftigen, die in zwei Hauptkategorien unterteilt wird: **Primärforschung** und **Sekundärforschung**. Beide Ansätze verfolgen unterschiedliche Methoden zur Datenerhebung und haben jeweils ihre eigenen Vor- und Nachteile.
+
+===== Primärforschung =====
+==== Definition ====
+Die Primärforschung bezieht sich auf die Sammlung von Originaldaten direkt aus der Quelle, d. h., Daten, die speziell für ein aktuelles Forschungsprojekt erhoben werden. Sie ist meist sehr spezifisch und auf die Bedürfnisse der Forschungsfragen abgestimmt.
+
+==== Methoden der Primärforschung ====
+  * **Befragungen (Surveys)**  
+    * Eine der gängigsten Methoden zur Primärforschung ist die Befragung von Zielgruppen. Sie kann sowohl in Form von schriftlichen Fragebögen, Telefoninterviews oder persönlichen Interviews erfolgen. Die Befragung kann qualitativ oder quantitativ sein, je nachdem, welche Art von Informationen gewünscht wird.
+      - **Quantitative Befragungen**: Zielen auf messbare, numerische Daten ab. Beispielsweise können Kunden nach ihrer Zufriedenheit auf einer Skala von 1 bis 10 gefragt werden.
+      - **Qualitative Befragungen**: Bieten tiefere Einblicke in die Einstellungen, Meinungen oder Wahrnehmungen der Befragten. Dazu werden offene Fragen gestellt, die in ausführlicher Form beantwortet werden.
+  
+  * **Beobachtungen**  
+    * Diese Methode wird häufig in Verkaufsumfeldern oder bei Verhaltensstudien eingesetzt. Forscher beobachten das Verhalten von Konsumenten in Echtzeit, um Muster und Trends zu erkennen.
+
+  * **Experimente**  
+    * In kontrollierten Experimenten wird untersucht, wie eine Veränderung in einem spezifischen Aspekt (z.B. Preis, Produktdesign) das Verhalten der Konsumenten beeinflusst. Dies ermöglicht es, Kausalzusammenhänge zu identifizieren.
+
+==== Vorteile der Primärforschung ====
+  * **Direkte Relevanz**: Die Daten sind aktuell und spezifisch auf die Forschungsfrage zugeschnitten.
+  * **Kontrolle über den Forschungsprozess**: Der Forscher kann die Methodik und den Ablauf genau steuern.
+  * **Zuverlässigkeit**: Da die Daten selbst erhoben werden, ist die Qualität der Daten direkt beeinflusst und überprüfbar.
+
+==== Nachteile der Primärforschung ====
+  * **Kostenintensiv**: Die Durchführung von Befragungen, Interviews oder Experimenten kann teuer und zeitaufwendig sein.
+  * **Aufwendige Datenerhebung**: Die Sammlung und Auswertung neuer Daten ist oft komplex und langwierig.
+
+===== Sekundärforschung =====
+==== Definition ====
+Die Sekundärforschung bezieht sich auf die Nutzung bereits vorhandener Daten, die von anderen Quellen (z.B. Institutionen, Unternehmen oder öffentliche Datenbanken) erhoben wurden. Hierbei handelt es sich nicht um originär gesammelte Daten, sondern um Informationen, die bereits veröffentlicht oder gespeichert sind.
+
+==== Methoden der Sekundärforschung ====
+  * **Interne Datenquellen**  
+    * Unternehmen können auf eigene, im Rahmen ihrer Geschäftstätigkeit gesammelte Daten zurückgreifen, wie Verkaufszahlen, Kundendatenbanken, Berichte und Marktanalysen. Diese Daten sind oft direkt relevant und leicht zugänglich.
+    
+  * **Externe Datenquellen**  
+    Hierzu zählen öffentlich zugängliche Daten aus verschiedenen Quellen, wie:
+      - **Statistiken von Regierungen und Institutionen** (z.B. Bundesamt für Statistik, Eurostat).
+      - **Branchenberichte und Marktforschungsstudien** (z.B. von großen Marktforschungsunternehmen wie Nielsen, GfK).
+      - **Fachzeitschriften und wissenschaftliche Veröffentlichungen**.
+      - **Internetquellen und Datenbanken**.
+
+==== Vorteile der Sekundärforschung ====
+  * **Kostengünstig**: Es fallen keine Kosten für die Datenerhebung an, da bereits existierende Daten verwendet werden.
+  * **Zeitsparend**: Die Daten sind sofort verfügbar, was die Forschungszeit deutlich reduziert.
+  * **Weitreichende Informationen**: Oft bieten externe Datenquellen einen breiten Überblick über einen Markt oder eine Branche.
+
+==== Nachteile der Sekundärforschung ====
+  * **Mangelnde Relevanz**: Da die Daten nicht speziell für die eigene Fragestellung erhoben wurden, können sie ungenau oder nicht vollständig sein.
+  * **Veraltete Daten**: Sekundärdaten sind nicht immer auf dem neuesten Stand.
+  * **Begrenzte Kontrolle**: Forscher haben keinen Einfluss auf die Qualität oder Methodik der ursprünglichen Datenerhebung.
+
+===== Vergleich zwischen Primär- und Sekundärforschung =====
+
+^Kriterium            ^Primärforschung                                      ^Sekundärforschung                                   ^
+| **Zielsetzung**   | Sammlung von Originaldaten für spezifische Forschungsfragen | Nutzung bereits vorhandener Daten                      |
+| **Datenquelle**   | Direkt erhoben von der Zielgruppe oder Quelle       | Bereits existierende Daten aus verschiedenen Quellen    |
+| **Kosten**        | Höher (Zeit, Personal, Technik)                     | Niedriger (Daten sind bereits vorhanden)               |
+| **Zeitrahmen**    | Länger (Daten müssen erhoben werden)                | Kürzer (Daten sind schnell verfügbar)                  |
+| **Datenrelevanz** | Sehr hoch, da spezifisch auf die Forschungsfrage zugeschnitten | Geringer, da die Daten für andere Zwecke erhoben wurden |
+| **Flexibilität**  | Sehr hoch, da Methoden und Erhebungen anpassbar sind | Gering, da man an die bestehenden Daten gebunden ist    |
+
+
+
+===== Fazit: Die Wahl der richtigen Methode =====
+Die Wahl zwischen Primär- und Sekundärforschung hängt von verschiedenen Faktoren ab, wie dem Budget, dem Zeitrahmen, den spezifischen Forschungszielen und der Verfügbarkeit von Daten. In vielen Fällen ergänzen sich beide Methoden. Beispielsweise kann eine Sekundärforschung zu Beginn eines Projekts hilfreich sein, um bestehende Trends und Daten zu verstehen, während die Primärforschung dazu verwendet wird, gezielt tiefere Einblicke in spezifische Fragestellungen zu erhalten.
+
+**In der Praxis:**  
+  * **Sekundärforschung** ist besonders sinnvoll, wenn Zeit und Ressourcen knapp sind oder wenn ein erster Überblick über ein Thema benötigt wird.  
+  * **Primärforschung** sollte dann zum Einsatz kommen, wenn spezifische, aktuelle und tiefgehende Daten benötigt werden, die auf das Unternehmen oder die Fragestellung zugeschnitten sind.
+
+===== Zusatzmaterial =====
+[[https://studyflix.de/wirtschaft/marktforschung-6179|Zusatzmaterial und Lernvideo]]
+
+-----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

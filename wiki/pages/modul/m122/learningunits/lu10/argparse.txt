@@ -27,16 +27,16 @@ def main():
     parser.add_argument('arg2', help='Second argument')
     parser.add_argument('-v', '--verbose', help='Shows more information about the scripts', action='store_true')
 
-	# Parse the argument
-	args = parser.parse_args()
+    # Parse the argument
+    args = parser.parse_args()
 
-	# Print the arguments
-	print(f'Argument 1: {args.arg1}')
-	print(f'Argument 2: {args.arg2}')
+    # Print the arguments
+    print(f'Argument 1: {args.arg1}')
+    print(f'Argument 2: {args.arg2}')
 
-	# Check the verbose switch
-	if args.verbose:
-		print('Verbose mode active!')
+    # Check the verbose switch
+    if args.verbose:
+        print('Verbose mode active!')
 
 if __name__ == '__main__':
     main()
