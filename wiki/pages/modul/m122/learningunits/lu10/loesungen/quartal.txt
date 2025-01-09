@@ -1,0 +1,41 @@
+====== LU10.L01: Quartal ermitteln ======
+<code python>
+"""
+Finds the quarter of the school year given a date.
+"""
+
+import sys
+from datetime import datetime
+
+
+def main():
+    """
+    the main routine
+    """
+    if len(sys.argv) == 1:
+        date = datetime.now()
+    else:
+        date = datetime.strptime(sys.argv[1], '%Y%m%d')
+
+    # get the month from the date
+    month = date.month
+    if 8 <= month <= 10:
+        quarter = 'Q1'
+    elif 11 <= month <= 1:
+        quarter = 'Q2'
+    elif 2 <= month <= 4:
+        quarter = 'Q3'
+    else:
+        quarter = 'Q4'
+
+    # print the data dd.mm.yyyy and the quarter
+    print(f'{date.day}.{date.month}.{date.year}: {quarter}')
+
+
+if __name__ == '__main__':
+    if len(sys.argv) > 2:
+        print('Usage: python sys.argv[0] [DATE]')
+        sys.exit(1)
+    main()
+
+</code>
