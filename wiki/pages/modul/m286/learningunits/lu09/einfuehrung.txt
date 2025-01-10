@@ -1,0 +1,98 @@
+====== LU09a - Ablage-System ======
+
+===== Motivation =====
+Täglich vergeuden wir viel Zeit mit der Suche nach Informationen. Ein Grund dafür sind ineffektive Ablage-Systeme und Ordnerstrukturen: Während die einen für nahezu jede Datei ein neues Verzeichnis anlegen, stopfen andere alle Dateien in nur drei oder vier Ordner – und verlieren damit in den zahllosen Dokumenten den Überblick.
+
+
+===== Beispielhafte Situation =====
+Stellen Sie sich vor, Sie empfangen per E-Mail einen Bericht über geschäftliche Umgangsformen in Südostasien als angehängte PDF-Datei. Sie halten den Bericht für interessant und möchten die Datei auf Ihrem Computer ablegen. Die Frage ist jetzt nur: „Wo“? Die Antwort auf diese Frage hängt sehr stark von Ihrer Ordnerstruktur und Ihrem Ablagesystem ab. Im Büroalltag sind leider häufig ineffektive Methoden für die Ablage von Dokumenten anzutreffen.
+Dabei lassen sich drei Grundtypen ineffektiver Anwender unterscheiden: Minimalisten, Horizontalisten und Vertikalisten.
+
+
+===== Anforderungen an eine effektive Ordnerstruktur =====
+Eine sinnvolle und effektive Ordnerstruktur sollte drei wesentliche Kriterien erfüllen: Übersichtlichkeit, Nachvollziehbarkeit und Schnelligkeit.
+
+  * **Übersichtlichkeit:** Die Ordnerstruktur am PC sollte übersichtlich sein. Das bedeutet, auf einer Hierarchieebene sollten nur so viele Ordner sein, wie man auf einen Blick erfassen kann. Denn je mehr Unterordner in einem Verzeichnis sind, desto länger benötigt man, um den richtigen zu finden.
+  * **Nachvollziehbarkeit:** Wer schon mal an einem fremden PC gearbeitet hat, kennt vielleicht das Gefühl, nicht durchzublicken, wo was zu finden ist. Gründe für diese mangelnde Nachvollziehbarkeit können unklare Ordnernamen, eine zu verschachtelte Ordnerstruktur oder zu wenige Ordner mit zu vielen Dateien sein. Die Ordnerstruktur sollte auch für fremde Nutzer intuitiv nachvollziehbar sein.
+  * **Schnelligkeit:** Wesentlich für eine effektive Ordnerstruktur ist, wie schnell man ein gesuchtes Element findet. Ziel sollte es sein, in drei Klicks die gewünschte Datei zu haben. Das bedeutet, die Entfernung von der obersten Ordnerebene bis zu jeder beliebigen Datei sollte nicht mehr als drei Ordner betragen, damit Sie nicht lange nach Dokumenten suchen müssen.
+
+Ein Dateiablagesystem, das alle drei Kriterien erfüllt, ist das 7-Ordner-System.
+
+===== Wie die Ablage nach dem 7-Ordner-System funktioniert =====
+Das 7-Ordner-System ist in einem Satz erklärt: Auf jeder Hierarchieebene der Ordnerstruktur gibt es maximal sieben Ordner für Ihre Dateien. Das heisst, jeder Hauptordner hat maximal sieben Unterverzeichnisse, und jedes dieser Unterverzeichnisse hat seinerseits maximal sieben Unterordner. Wegen der angestrebten Schnelligkeit beim Ablegen und Finden von Informationen ist die Zahl der Ordnerebenen auf maximal drei beschränkt. Auf Ebene 1 gibt es demnach höchstens 7 Ordner, auf Ebene 2 sind es insgesamt 49 Ordner (7×7), und auf Ebene 3 existieren maximal 343 Ordner (49×7). Insgesamt sollten auf Ihrem PC höchstens 399 Dateiordner sein, die eindeutig benannt sind.
+
+===== Sieben Ordner für das Arbeitsgedächtnis =====
+Warum sieben Ordner? Psychologen haben herausgefunden, dass wir nur maximal sieben Informationsblöcke gleichzeitig in unserem Arbeitsgedächtnis aufnehmen können. Mehr Informationsblöcke überlasten unser Arbeitsgedächtnis, und wir brauchen Zeit, um uns zu orientieren, bevor wir eine Auswahl treffen. Das System von 7 Ordnern auf jeder Ebene ist somit sinnvoll, weil es gehirngerecht ist und die Orientierung erleichtert.
+
+Tipp:
+
+Egal, wie Sie Ihre Ordnerstruktur an 7-Ordner-System anpassen, auf keinen Fall sollten Sie die Ordner auf dem Desktop anlegen. Denn ebensowenig wie einzelne Dateien gehören ganze Ordner auf Ihren virtuellen Schreibtisch.
+Ferner helfen die Präfixe die Stufe des Ordners sofort zu erkennen. Es lohnt sich deshalb beim Erzeugen eine nachvollziehbare Präfix-Struktur zu verwenden (z.B. 3_xy ist ein Ordner auf Stufe 1, 5.3.1_xy ist ein Ordner auf Stufe 3)
+Nehmen wir an, Sie suchen einen geeigneten Ablageordner für die Datei mit dem Südostasien-Bericht aus unserem Beispiel. Eine Ordnerstruktur in Ihrem Unternehmen könnte auf Ebene 1 so aussehen:
+
+<code>
+1_Geschäftsführung
+2_Projekte
+3_Finanzen
+4_Personalwesen
+5_Vertrieb
+6_Marketing
+7_Bildarchiv
+</code>
+Sie wählen den Ordner „6_Marketing“. Dort könnten Sie die Auswahl haben zwischen folgenden Unterordnern:
+
+<code>
+6.1_Marketingplanung
+6.2_Marktinformationen
+6.3_Werbung
+6.4_Veranstaltungen
+6.5_Pressearbeit
+6.6_Eigene_Publikationen
+6.7_Präsentationen
+</code>
+
+Sie entscheiden sich für das Unterverzeichnis „6.2_Marktinformationen“. Dort haben Sie die Wahl zwischen folgenden Unterordnern:
+
+<code>
+6.2.1_Deutschland
+6.2.2_Europa
+6.2.3_USA
+6.2.4_Südostasien
+6.2.5_Indien
+6.2.6_China
+6.2.7_Japan
+</code>
+
+Sie öffnen den Ordner „6.2.4_Südostasien“ und legen den Bericht dort ab. Falls die Datei noch keinen aussagekräftigen Dateinamen hat, sollten Sie ihn entsprechend ändern, beispielsweise von „Südostasien.pdf“ in „Südostasien_Umgangsformen_IHK_2007.pdf“. Wenn Sie den Bericht dann nach einigen Wochen suchen, sollten Sie ihn leicht finden können.
+
+Tipp: Sie können das oben stehende Beispiel als Vorlage für Ihre Ordnerstruktur nutzen. Dann sollten Sie sie natürlich an Ihre Bedürfnisse anpassen und die Ordner danach benennen, welche Themen Sie in Ihrem Büroalltag bearbeiten. Eventuell eignet sich das Beispiel auch als Grundlage für die Ordnerstruktur anderer Kollegen im Unternehmen. Schlagen Sie vor, eine Vorlage für eine gemeinsame Ordnerstruktur zu entwickeln. Eine einheitliche digitale Dokumentenablage ist sinnvoll und kann die Zusammenarbeit deutlich erleichtern.
+
+===== Sinnvolle Ausnahmen im 7-Ordner-System =====
+In begründeten Einzelfällen kann es sinnvoll sein, vom 7-Ordner-System abzuweichen. Nehmen wir als Beispiel den Ordner „4_Personalwesen“. Darin könnten Sie jetzt einen Unterordner „4.1_Personalakten“ haben. Die optimale Ordnerstruktur hängt jetzt von der Zahl Ihrer Mitarbeiter ab. Bei bis zu rund 30 Namen ist es noch sinnvoll, auf Unterverzeichnisse zu verzichten und die Dokumente einfach nach Dateinamen alphabetisch aufzulisten. Sind es bis zu 300 Mitarbeiter kann man wieder gut das 7-Ordner-System anwenden, indem man nach Alphabet-Gruppen sieben Unterordner für je drei bis vier Buchstaben einrichtet, von „ABC“ bis „WXYZ“. Hat Ihr Unternehmen weit mehr als 300 Mitarbeiter, kann man wählen zwischen sieben Alphabet-Gruppen-Ordnern, wobei in der Regel eine dritte Ordnerebene für einzelne Buchstaben nötig ist, um den Überblick zu behalten. Die Personaldatei mit dem Dateinamen „Marion_Mustermann_PA.doc“ wäre dann beispielsweise unter folgendem Dateipfad in der Ordnerstruktur zu finden: 4.1_PersonalaktenM_N_OM.
+
+===== Beispiel als Projektleiter für ein Webprojekt =====
+Ein weiteres Beispiel für eine Subordnerstruktur für ein Webprojekt könnte nach Projekt-Phasen oder generische Meilensteine (z.B. IPERKA oder Hermes) strukturiert sein. Eine weitere Strukturierung nach Objekten (z.B. im Hausbau nach Wohnbereich, Küche, Schlafbereich) oder nach Funktionen (Tätigkeiten) sein. Das nachfolgende Beispiel ist nach Hermes 5 Phasen strukturiert.
+
+<code>
+2.1. Webprojekt
+2.1.1_Initiation
+2.1.2_Concept
+2.1.3_Implementation
+2.1.4_Deployment
+</code>
+
+===== Keine Ablage auf dem Desktop =====
+In unserem Beispiel wäre es die schlechteste Lösung von allen, wenn Sie das Dokument einfach auf Ihrem Desktop abspeichern, weil Sie dort vermeintlich daran erinnert werden, es zu lesen. Ein solches Vorgehen ist wenig sinnvoll, denn es führt auf Dauer zu einem völlig unaufgeräumten Desktop. Irgendwann wird Sie schon der blosse Anblick in Stress versetzen! Auch Dateien, die Sie nur zu Informationszwecken sammeln und nicht unmittelbar bearbeiten, gehören wie alle anderen Dokumente nicht auf den Desktop, sondern in einen Ordner. Nehmen Sie sich lieber gleich ein paar Sekunden mehr Zeit, um Dokumente, die per Mail kommen, in Ihre Ordnerstruktur einzusortieren. So ersparen Sie sich später mühseliges Aufräumen auf dem Desktop.
+
+===== Die Ablage der Minimalisten =====
+Angenommen, in unserem Beispiel gibt es im Dokumentenverzeichnis noch keinen passenden Ordner für das Südostasien-Dokument. Für Minimalisten ist das kein Problem: Sie haben in ihrer digitalen Ablage einen allgemeinen Ordner, der „Externe Dokumente“ oder ähnlich heisst, und dort kommen alle Dateien rein, die nicht betriebsintern erstellt wurden. Insgesamt haben sie drei oder vier solcher allgemeinen Ordner, wo dann alle Dokumente landen. Damit lässt sich die Zahl der Ordner auf ein Minimum beschränken, doch die Zahl von Dokumenten in jedem der Ordner ist nach einer gewissen Zeit sehr gross. Der Nachteil solcher Ordnerstrukturen ist ein unübersichtlicher Ordnerinhalt. Die Dateien können zwar über die Suchfunktion des Dateimanagers ausfindig gemacht werden. Das ist aber zeitaufwändig und setzt voraus, dass man genau weiss, welche Datei man sucht.
+
+
+===== Die Ablage der Horizontalisten =====
+Die Horizontalisten sind dagegen beim Anlegen von Ordnern nicht geizig. Sie gehen bei der Ablage buchstäblich in die Breite. Sie lösen das Problem, indem sie einfach einen neuen Ordner anlegen, beispielsweise „Südostasien“. Da sie das häufig machen, können Horizontalisten schnell auf einer horizontalen Ordnerebene mehrere Dutzend Ordner haben, die jeweils spontan nach Bedarf angelegt werden. Nachteil: unübersichtliche Ordnerstrukturen und die Gefahr, unabsichtlich ähnliche Ordner anzulegen.
+
+
+===== Die Ablage der Vertikalisten =====
+Vertikalisten gehen methodischer vor. Sie haben auf der obersten Ordnerebene beispielsweise drei Ordner. Beim Ablegen des Südostasien-Dokuments würden sie sich von oben nach unten in der bestehenden Ordnerstruktur durcharbeiten, bis sie eine Stelle gefunden haben, an der sie einen neuen Ordner für die Datei anlegen können. Der Ordnerpfad könnte dann so aussehen: VertriebAuslandSüdostasienExterne_InformationenIHK. Mittlerweile auf Ordnerebene 6 wird dann der neue Ordner „Umgangsformen“ angelegt, wo das Dokument schliesslich landet. 
+
+Nachteil: Fehlende Übersicht, da – wie bei einem Eisberg – die Masse der Informationen sehr weit unten angesiedelt ist. Auf dem Weg nach unten in der Hierarchie von Ordnern gibt es in solchen Ordnerstrukturen ausserdem viele Möglichkeiten, die falsche Abzweigung zu nehmen.

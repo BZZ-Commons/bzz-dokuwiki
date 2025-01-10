@@ -1,0 +1,103 @@
+====== LU08g - Router, DHCP und DNS ======
+
+===== Einleitung =====
+
+Wie Sie der Abbildung entnehmen können, ist ein Router mit (mindestens) zwei Netzen verbunden, d.h. er weist auch zwei IP-Adressen auf. Er führt eine Tabelle, aus der er jederzeit erkennen kann, wie die einzelnen Datenpakete zu versenden sind.
+
+{{:modul:m286:learningunits:lu08:netzwerke_01_1_.png?600|}}
+
+Man kann seine Funktion also mit der einer Poststelle vergleichen.
+
+{|
+!
+**Poststelle**
+!
+**Router**
+|---
+|
+\\
+__Eingang__\\
+Es kommen alle Pakete für eine Postleitzahl (z.B. 8090) in der Poststelle an.\\
+Die Poststelle teilt die Pakete anhand der Strasse und Hausnummer zu\\
+Die Poststelle liefert die Pakete an die entsprechende Adresse aus.
+|
+\\
+__Eingang__\\
+Es kommen alle Pakete für die nach aussen bekannte IP-Adresse beim Router an. In Abb-01 also 145.34.56.234\\
+Der Router teilt die Pakete anhand der Routingtabelle zu.\\
+Der Router liefert die Pakete an die entsprechende Adresse aus.
+|-
+|
+\\
+__Ausgang__\\
+Ein Paket wird bei der Poststelle abgegeben.\\
+Die Poststelle leitet das Paket der zuständigen Poststelle weiter.
+|
+\\
+__Ausgang__\\
+Ein Paket wird dem Router zugestellt.\\
+Der Router sendet das Paket dem Router des Empfänger-Netzwerks zu.
+|}
+
+Wie im richtigen Leben, können zwischen der Poststelle des Empfängers und jener des Senders weitere Poststellen für die Weiterleitung des Pakets zuständig sein. 
+
+{{:modul:m286:learningunits:lu08:router_01.png?600|}}
+
+Um die Website der SBB abzurufen, wird beim DNS-Server die Adresse www.sbb.ch aufgelöst. Somit erhält der Router des Senders die IP-Adresse des Zielservers. Mit dieser Adresse wird nun der Weg zum Server durch den „Dschungel“ des Internets gesucht. Diese Aufgabe fällt weiteren Routern zu. Wie viele Router für den Zugang zu einem Server kontaktiert werden, lässt sich mit den Tool traceroute (Unix, Mac) oder tracert (Windows) verfolgen.
+
+==== Tool traceroute resp. tracert ====
+
+Die Eingabe traceroute (Unix, Mac) im Terminal respektive tracert (Windows) im CMD
+
+Unix, Mac (Terminal)
+<code>
+traceroute www.sbb.ch
+</code>
+
+Windwos (CMD)
+<code>
+tracert www.sbb.ch
+</code>
+
+ergibt folgende Ausgabe (Abweichungen sind möglich)
+
+<code>
+traceroute to www.sbb.ch (194.150.245.142), 64 hops max, 52 byte packets
+ 1  10.201.100.1 (10.201.100.1)  6.301 ms  5.024 ms  8.159 ms
+ 2  10.201.0.1 (10.201.0.1)  3.714 ms  3.303 ms  3.404 ms
+ 3  95.143.56.113 (95.143.56.113)  4.573 ms  5.532 ms  4.479 ms
+ 4  zh.ces.as8758.net (212.25.9.1)  31.021 ms  24.017 ms  51.142 ms
+ 5  swissix.zrh.ch.colt.net (91.206.52.172)  11.596 ms  9.589 ms  11.197 ms
+ 6  ge0-0-1-sar5.zrh.router.colt.net (212.74.65.37)  6.296 ms  5.368 ms  5.719 ms
+ 7  212.203.93.222 (212.203.93.222)  7.935 ms  8.888 ms  7.846 ms
+ 8  91.230.140.222 (91.230.140.222)  11.502 ms  12.321 ms  12.632 ms
+ 9  * * *
+10  * * *
+usw.
+</code>
+
+Jeder Eintrag entspricht einem Router, der sich zwischen dem PC, der die Anfrage stellt und dem Ziel befindet.
+
+===== Dynamic Host Configuration Protocol (DHCP) =====
+
+In einem Netzwerk muss jedem Gerät eine IP-Adresse zugewiesen werden, sonst lässt es sich nicht ansprechen.
+
+{{:modul:m286:learningunits:lu08:dhcp_01.png?600|}}
+
+Diese Zuweisung kann statisch erfolgen. Dabei wird einem Gerät fix eine IP-Adresse zugeteilt. Dies ist meist für Ressourcen wie Server, Drucker, Scanner usw. zwingend. Nur so können diese Geräte sicher angesprochen werden. PCs, Laptops, Smartphones usw. die in einem Netzwerk verwendet werden, müssen über eine IP-Adresse des Netzwerks verfügen. Es macht nun wenig – oder gar keinen – Sinn, die evtl. knappe Zahl an IP-Adressen fest zu vergeben. Daher wird hier der DHCP-Dienst verwendet. Er teilt auf Anfrage dynamisch IP-Adressen einem Gerät zu. Eine einmal zugeteilte Adresse wird dabei für eine gewisse Zeit blockiert; man nennt dies Lease-Time. Diese Zeit wird durch den Administrator des DHCP-Servers festgelegt.
+
+===== Domain Name System (DNS) =====
+
+Computer werden über IP-Adressen adressiert. Diese Adressen sind für die Benutzer nur bedingt brauchbar. Daher hat man sich im World Wide Web für eine aussagekräftigere Adresse entschieden, nämlich die URL. Sie müssen also nicht wissen, welche IP-Adresse zu Youtube, Facebook, Swisscom, Hotelplan usw. gehört. Vielmehr verwenden Sie Adressen wie www.google.com, um einen WEB-Server anzusprechen. Diese URL (Uniform Resource Locator) muss nun aber zuerst in eine passende IP-Adresse umgewandelt werden. Dazu dienen DNS-Server. Sie lösen die URL auf und liefern die passende IP zurück.
+
+==== Beispiel ====
+
+Auch hier zeigt ein Vergleich aus dem Alltag die Grundidee auf:
+
+**Telefonauskunft**\\
+__Anfrage:__ Bitte Nummer von Max Muster\\
+__Antwort:__ 043 999 99 99
+
+**DNS-Server**\\
+__Anfrage:__ www.sbb.ch\\
+__Antwort:__ 194.150.245.142

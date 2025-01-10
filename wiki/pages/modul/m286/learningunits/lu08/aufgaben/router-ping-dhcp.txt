@@ -1,0 +1,36 @@
+====== LU08.A02 - Router, Ping, DHCP ======
+
+===== Aufgabe 1: Repetition =====
+
+==== Ausgangslage ====
+Sie haben sich im Leitprogramm zum Thema Router, DHCP und DNS eingelesen. Nun folgen einige Übungsaufgaben.
+
+==== Aufgabenstellung ====
+
+  - Welche Aufgabe kommt einem Router zu?
+  - Warum macht es Sinn, in einem Netzwerk für Ressourcen wie Drucker, Scanner aber auch Server feste (statische) IP-Adressen zu vergeben?
+
+==== Erwartetes Resultat ====
+Ihre Antworten sind schriftlich verfasst.\\
+Zeit: 10 Minuten\\
+Sozialform: Einzel- oder Partnerarbeit\\
+Arbeitsmittel: Office oder Papier/Schreibzeug, Unterlagen
+
+===== Aufgabe 2: IP-Pakete verfolgen =====
+
+==== Ausgangslage ====
+
+Sie haben sich im Leitprogramm zum Thema Router, DHCP und DNS eingelesen. Nun folgen einige Übungsaufgaben.
+
+==== Aufgabenstellung ====
+
+Verfolgen Sie den Weg zwischen Ihrem Rechner und dem Server des ZLI, den Sie unter www.zli.ch erreichen.
+
+  * bei Windows verwenden Sie dazu den Befehl tracert, den Sie in der Eingabeaufforderung ausführen.
+  * bei Mac führen Sie im Terminal traceroute aus.
+
+==== Erwartetes Resultat ====
+Ihre Antworten sind schriftlich verfasst.\\
+Zeit: 10 Minuten\\
+Sozialform: Einzel- oder Partnerarbeit\\
+Arbeitsmittel: Office oder Papier/Schreibzeug, Unterlagen

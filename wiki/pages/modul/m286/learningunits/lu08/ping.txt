@@ -1,0 +1,62 @@
+====== LU08h - Ping ======
+
+===== Einführung =====
+Ping steht für Paket Internet Groper und ist das meistgenutzte Tool um eine Netzwerkverbindung zu einer anderen Station zu testen oder einfach nur um den lokalen TCP/IP-Stack zu prüfen.\\
+Ping steht auf der Kommandozeile/Konsole als Befehl ping zur Verfügung. Die entfernte Station kann über die IP-Adresse oder den Domain- bzw. WINS-Namen angesprochen werden. Bei Bedarf übernimmt ping die Namensauflösung.\\
+Ping kennt mehrere Optionen, die mehr Informationen liefern. Hierauf wird hier nicht weiter eingegangen. Das Hilfesystem des verwendeten Betriebssystems gibt weitere Auskunft. Unter Windows führt der ping-Befehl den Ping nur insgesamt 4 mal hintereinander aus. Bei Unix oder Linux führt der ping-Befehl den Ping so oft aus, bis der Befehl abgebrochen wird. Zum Abbruch muss CTRL und C (CTRL + C) gedrückt werden.
+
+==== Beispiel ====
+
+<code>
+C:\Program Files (x86)\cmder>ping www.bzz.ch                                    
+                                                                                
+Pinging cloud-webeducation-01.nine.ch [5.148.177.31] with 32 bytes of data:     
+Reply from 5.148.177.31: bytes=32 time=13ms TTL=52                              
+Reply from 5.148.177.31: bytes=32 time=12ms TTL=52                              
+Reply from 5.148.177.31: bytes=32 time=16ms TTL=52                              
+Reply from 5.148.177.31: bytes=32 time=43ms TTL=52                              
+                                                                                
+Ping statistics for 5.148.177.31:                                               
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),                        
+Approximate round trip times in milli-seconds:                                  
+    Minimum = 12ms, Maximum = 43ms, Average = 21ms                              
+</code>
+
+===== Was passiert bei einem Ping? =====
+Bei der Ausführung des Befehls ping wird ein ICMP-Paket vom Typ ICMP Echo Request an die Netzwerk-Station gesendet. Wenn die Station des ICMP-Paket empfangen hat, sendet sie ein ICMP-Paket vom Typ ICMP Echo Reply zurück. Ein Windows-Betriebssystem führt insgesamt 4 ICMP-Meldungen aus. Bei Unix/Linux muss ping durch STRG+C abgebrochen werden.
+
+===== Anwendung von Ping =====
+Mit Ping kann man die Laufzeit eines Paketes vom Sender zum Empfänger ermitteln. Dazu wird die Zeit, bis das Echo Reply eintrifft, halbiert.
+Mit Ping kann geprüft werden, ob eine Station Kontakt zum Netzwerk hat: Mit ping auf eine Nachbarstation oder das Standard-Gateway. Mit Ping auf den localhost oder 127.0.0.1 kann geprüft werden, ob der TCP/IP-Stack auf der lokalen Station überhaupt installiert ist.
+Wichtige Stationen (z. B. Server) können mit regelmäßigen Pings auf Verfügbarkeit überprüft werden. Allerdings bezieht sich das auf die Verfügbarkeit des TCP/IP-Stacks oder aber die Server-Erreichbarkeit.
+
+==== Beispiel: Erfolgreicher Ping auf den localhost (127.0.0.1) ====
+
+<code>
+C:\Program Files (x86)\cmder>ping 127.0.0.1
+
+Pinging 127.0.0.1 with 32 bytes of data:
+Reply from 127.0.0.1: bytes=32 time<1ms TTL=128
+Reply from 127.0.0.1: bytes=32 time<1ms TTL=128
+Reply from 127.0.0.1: bytes=32 time<1ms TTL=128
+Reply from 127.0.0.1: bytes=32 time<1ms TTL=128
+
+Ping statistics for 127.0.0.1:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 0ms, Maximum = 0ms, Average = 0ms
+</code>
+==== Beispiel: Erfolgloser Ping auf eine nicht vorhandene IP-Adresse im selben Subnetz ====
+
+<code>
+C:\Program Files (x86)\cmder>ping 192.0.0.1
+
+Pinging 192.0.0.1 with 32 bytes of data:
+Request timed out.
+Request timed out.
+Request timed out.
+Request timed out.
+
+Ping statistics for 192.0.0.1:
+    Packets: Sent = 4, Received = 0, Lost = 4 (100% loss),
+</code>

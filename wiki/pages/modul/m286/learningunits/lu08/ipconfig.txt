@@ -1,0 +1,42 @@
+====== LU08i - ipconfig ======
+
+===== Einführung =====
+Auf der Kommandozeile/Konsole von Windows steht der Befehl ipconfig und bei MacOS/Linux der Befehl ifconfig zur Verfügung, um Informationen des lokalen (auf Ihrem Rechner) TCP/IP-Stacks und vereinzelte Angaben zum Intranet (z.B. Gateways, WINS-Server, DHCP-Server, IP-Adressbereich) zu erhalten. Alle Informationen lassen sich auch über die Netzwerkeinstellungen der Systemsteuerung einsehen. Allerdings nicht so schön übersichtlich und ohne die IP-Adresse, wenn diese per DHCP bezogen wurde.
+
+==== Beispiel: Anwendung von ipconfig (Windows) ====
+
+ipconfig liefert folgende allgemeine Informationen:
+
+  * IP-Adresse
+  * Subnetzmaske (Subnetmask)
+  * Standard-Gateway
+
+→ Geben Sie als kleine Übung ipconfig (Windows) resp. ifconfig (MacOS) auf der Kommandozeile/Konsole und analysieren Sie dessen Output.
+
+{{:modul:m286:learningunits:lu08:ifconfig_mac-adr.png?600|}}
+
+==== Beispiel für die Anwendung von ipconfig /all ====
+ipconfig /all kann folgende Informationen liefern:
+
+  * Hostname
+  * DNS-Server
+  * Knotentyp
+  * NetBIOS-Bereichs-ID
+  * IP-Routing aktiviert
+  * WINS-Proxy aktiviert
+  * NetBIOS-Auflösung durch DNS
+
+Dazu werden Informationen zu allen Netzwerkadaptern inklusive Modems und ISDN-Karten geliefert:
+
+  * Beschreibung
+  * Physische Adresse (Hardware-Adresse)
+  * DHCP aktiviert
+  * Subnet Mask
+  * Standard-Gateway
+  * DHCP-Server
+  * Erster WINS-Server
+  * Zweiter WINS-Server
+  * Gültig seit
+  * Gültig bis
+
+→ Geben Sie als kleine Übung ipconfig resp. ifconfig auf der Kommandozeile/Konsole und analysieren Sie dessen Output.

@@ -1,0 +1,7 @@
+===== LU08.L02 - Router, Ping, DHCP ======
+
+**Welche Aufgabe kommt einem Router zu?**\\
+Ein Router verbindet zwei (oder mehr) Netzwerke miteinander. Der Router leitet Datenpaket anhand der IP-Adresse an die richtige Stelle weiter. (Idee der Poststelle)
+
+**Warum macht es Sinn, in einem Netzwerk für Ressourcen wie Drucker, Scanner aber auch Server feste (statische) IP-Adressen zu vergeben?**\\
+Ressourcen wie Drucker, Scanner, Server usw. werden in einem Netzwerk permanent benötigt. Daher macht es Sinn, diesen eine feste IP-Adresse zu zuweisen. So kann ein Benutzer jederzeit diese Ressourcen ansprechen und muss nicht laufend neue IP-Adressen zuweisen.
