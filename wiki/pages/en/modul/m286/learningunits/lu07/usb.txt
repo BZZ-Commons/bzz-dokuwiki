@@ -1,0 +1,36 @@
+====== LU07c - USB ======
+
+===== Introduction =====
+The USB is a universal, external interface for all peripheral devices that are connected to a computer. The devices are identified by the USB host adapter in the computer, which also loads the drivers and performs the basic configuration. In addition, hot-plugging, the addition and removal of peripheral devices during operation, improves user-friendliness. 
+
+USB fulfils the following requirements:
+
+  * a standardised interface for all peripheral devices
+  * a mechanically stable and simple plug connection
+  * small, space-saving plugs and sockets
+
+In addition, all USB specifications have the following characteristics:
+  * cheap
+  * downward compatible
+
+===== Overview of USB standards =====
+Below is an overview of all USB standards and their properties (so-called specifications)
+
+{{modul:m286:learningunits:lu07:usb-overview.png?600|}}
+
+===== Power supply with USB =====
+The USB supplies power to simple devices (e.g. mouse and keyboard) and larger devices (e.g. scanners) via the cable connections. Regardless of the plug, a USB host or hub must supply the connected devices with at least 100 mA. It can supply up to 500 mA (2.5 watts) to the device on demand. Of course, this is not enough for modern smartphones and tablets, which is why a proliferation of charging methods has emerged.
+
+
+===== Problems with the USB =====
+Most problems with the USB are due to poor and excessively long cables. This also applies to the USB cables supplied. The sometimes very cheap cables with connectors in the cent range are not made for the high speeds in the high Mbit and Gbit range. In the beginning, cable lengths of 5 metres were permitted. Today, 3 metres is already considered critical. And with USB 3.1, no more than 1 metre is possible. In addition, every plug connection is a source of error.
+Extension cables have been taboo since USB 3.0 and USB hubs should be avoided if possible. In addition, USB has become quite complex over time. Multiple speed levels and power saving modes, as well as backwards compatibility, have involved a lot of development work. As a result, many manufacturers are forced to interpret the USB specifications freely. Simple rather than stable solutions are then sought.
+In general, the fewer connectors and the shorter the cables, the fewer problems. Extension cables and USB hub cascades should always be avoided.
+
+
+===== Installing USB devices =====
+Installing a USB device is comparatively simple and can be done without technical knowledge and during operation. For most devices, it is sufficient to plug in the connector. The operating system then installs the drivers itself. After a short installation phase, the device is ready for operation.
+Some USB devices have an internal memory in which the driver is stored. It is installed automatically the first time it is plugged in. For other USB devices, a driver is required after insertion (e.g. via CD or download).
+
+===== Why was the USB introduced/developed? =====
+Before USB, the purchase of external devices often failed because a PC did not have enough free external interfaces. The installation of expansion cards was not always possible due to limited resources (memory, addresses, ...). In addition, the different devices had different connectors and interfaces. Almost every device type had its own interface. Although it was easier to assign a device to a fixed slot, this was something for experts and not for inexperienced users.

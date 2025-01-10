@@ -1,0 +1,24 @@
+====== LU07a - Transmission media ======
+
+===== What is a transmission medium? =====
+
+The transmission medium (component in communication technology) is the path along which the signals (data, messages) to be transmitted are transferred from the sender to the receiver. The entire transmission path usually consists of several successive transmission sections. These sections can be composed of different transmission media.
+
+{{modul:m286:learningunits:lu07:umedien_01.png?600|}}
+
+===== Wire path (wired) =====
+With wireways, the information signal is transmitted as low-frequency or high-frequency electrical alternating current. The transmission medium wire is a cable or a line whose base material is metal. The metal is usually insulated by a plastic, sometimes even additionally shielded. Wires and cables are considered the simplest connection between two communication participants.
+→ Keywords: wires, cable, copper cable, twisted pair cable
+
+===== Radio path (wireless) =====
+With radio paths, the information signal is transmitted as a high-frequency electromagnetic wave. The radio path is the free space, also known as the air interface. Antennas at the transmitting and receiving stations transmit the signals via free space. The radio signals are attenuated and deflected by obstacles, especially metallic objects. This reduces the range of the radio signals. Radio paths are usually slower and less stable than wire paths.
+→ Keywords: radio technology, antennas, radio waves, carrier frequency
+
+
+===== Optical path (fibre optic cable) =====
+In optical fibres, the information signal is transmitted as an electromagnetic wave in the frequency range of visible light within a light-conducting material. For example, glass, quartz or plastic fibres, which are known as fibre optic cables. Optical fibres allow optical signals to bridge large distances without amplifiers. Despite long distances, a high bandwidth is possible. This makes fibre optic cables the transmission medium of the present and future.
+→ Keywords: fibre optic cable (FO), fibre optic cable, FO components
+
+
+===== Special feature: infrared =====
+Infrared is a speciality (for example, in television remote controls). The colour infrared is invisible to the human eye. The infrared signal is transmitted via free space. This technology therefore combines two transmission media (radio and light) in one path, the free space. However, the path is only very short and there must be no obstacles between the transmitter and receiver.

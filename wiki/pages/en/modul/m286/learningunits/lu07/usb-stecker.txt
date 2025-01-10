@@ -1,0 +1,29 @@
+====== LU07d - USB plug ======
+
+The USB is a universal, external interface for all peripheral devices that are connected to a computer. Whether keyboard, mouse, modem, printer, microphone, loudspeaker, camera or scanner. With the USB, users are independent of the number of available interfaces and slots for expansion cards. The USB can be expanded almost at will using plug-in cards or USB hubs.
+
+===== Overview of USB connectors =====
+
+| {{modul:m286:learningunits:lu07:03120211.jpg?120|}} | USB A plug (host) |
+| {{modul:m286:learningunits:lu07:03120212.jpg?120|}} | USB-B plug (end device) |
+| {{modul:m286:learningunits:lu07:03120214.gif?120|}} | Mini-B plug (black inside) |
+| {{modul:m286:learningunits:lu07:03120213.jpg?120|}} | Micro-B plug for USB 2.0 |
+| {{modul:m286:learningunits:lu07:03120215.jpg?120|}} | Micro-B plug for USB 3.0 |
+| {{modul:m286:learningunits:lu07:03120216.gif?120|}} | Mini-B connector from Hirose (e.g. for digital cameras) |
+| {{modul:m286:learningunits:lu07:03120217.gif?120|}} | Mini-B connector from Mitsumi (e.g. for digital cameras) |
+| {{modul:m286:learningunits:lu07:03120218.jpg?120|}}| Mini-B connector from Fuji (e.g. for digital cameras) 
+
+ USB-C connector 
+The USB-C plug and the corresponding cables are intended to eliminate the proliferation of USB plugs and cables. The USB-C cables are designed for voltages higher than 5 V and currents higher than 5 A. With special cables for USB Power Delivery (USB-PD), a total output of up to 100 W is permitted.
+
+ |===== ====={{modul:m286:learningunits:lu07:usbc.jpg?400|}}
+
+The USB-C plug has a dimension of 8.25 x 2.4 mm so that it is also suitable for mobile devices. The socket is 8.34 x 2.56 mm in size. This corresponds approximately to a USB 2.0 micro connection used on smartphones. The correct rotation of the plug is not required and the USB-C plug also fits in the reversed plug-in position.
+
+Below are the most important features of the USB-C connector:
+
+  * The C plug is designed so that it does not matter which way round it is inserted into the socket. It is no longer possible to insert the C plug the wrong way round.
+  * The C plug is used on both sides of a cable. This is also familiar from other connectors such as HDMI, DisplayPort and RJ45.
+  * The C connector is incompatible with all other USB connectors. However, there are adapters that are downward compatible with USB 2.0.
+  * The C connector is approximately the size of a micro USB connector (USB 2.0) and is therefore also suitable for mobile devices.
+  * The C connector is designed for 100 watts of power. The cables should be suitable for charging notebooks with Power Delivery (USB-PD).

@@ -1,0 +1,18 @@
+====== LU03.A01 - Analyse an ATM with the IPO principle ======
+
+===== Initial situation =====
+An ATM has the following function, among others:
+
+  * Read in and issue an ATM card
+  * Enter PIN code (3 attempts).
+  * Have a choice of menu items (log out, view account balance, withdraw money, log out)
+
+==== Task ====
+  - Mentally go through 2-3 interactions at an ATM and categorise the functions according to the IPO principle. Which functions belong to the input, which to the output and which to the processing.
+
+==== Framework conditions ====
+^ What ^ Description ^
+| Product: | Your answers are written. |
+| Time: | 10 min. |
+| Social form: | Individual or partner work |
+| Tools: | Office or paper/writing utensils, script |

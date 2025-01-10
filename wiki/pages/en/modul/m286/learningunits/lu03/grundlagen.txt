@@ -1,0 +1,86 @@
+====== LU03a - Basics ======
+
+===== Introduction =====
+The IPO principle in computer science describes a basic process that almost every computer programme and every electronic data processing system goes through. IPO stands for "input, processing, output" and summarises the three essential steps of data processing.
+
+==== (I)PO - Input ====
+All data processing begins with the input of information or data. In computer science, input refers to the transfer of data or commands from a user, a sensor or another system to the computer.
+
+Examples of input devices are
+
+  * Keyboard (for writing text or commands)
+  * Mouse (to control a cursor on the screen)
+  * Scanner (for reading documents)
+  * Microphone (for recording speech)
+  * Sensors (for detecting environmental factors such as temperature or movement)
+
+The input data can be in various forms, such as text, numbers, images or sound. The important thing is that the computer converts it into a form it can understand, i.e. binary data (0 and 1).
+
+**Example:** You type the numbers "2" and "3" into a calculator to perform a calculation. These numbers are the input data.
+
+==== I(P)O - Processing ====
+Once the computer has received the input data, processing takes place. The computer works with the help of a programme that determines what is to be done with the input data. This step is the central point of data processing.
+
+Processing can include simple tasks such as adding numbers, but also more complex tasks such as editing images, searching for information in a database or controlling a robot.
+
+During processing:
+
+  * calculations are performed
+  * logical decisions are made
+  * data is compared or sorted
+
+Processors are for example
+
+  * Operating system
+  * Hardware
+  * Software
+
+**Example:** You enter a "+" on the calculator and press "=". The calculator now processes the input "2 + 3" and carries out the calculation.
+
+==== IP(O) - Output ====
+
+At the end is the output of the processed data. The computer either displays the result on a screen, prints it on paper or passes it on in another form, e.g. as a signal to another device.
+
+Output devices are for example
+
+  * the screen (to display results),
+  * a printer (to print documents),
+  * speakers (to play sounds),
+  * a network connection (to send data to another device).
+
+**Example:** After the calculator has processed "2 + 3", it shows the result "5" on the display. This is the output.
+
+===== The IPO principle in practice =====
+
+We encounter the EVA principle constantly in everyday use, even if we often don't realise it. Every time we use a computer or electronic device, this process is running in the background. A particularly tangible example is an ATM.
+
+Input: You insert your bank card and type in your PIN.
+Processing: The ATM checks the PIN and carries out the transaction.
+Output: The ATM dispenses cash and displays the transaction details on the screen.
+This simple model can be applied to almost all digital systems and helps to better understand how they work.
+
+===== Special case input device = Output device =====
+There are some devices that can be used for both input and output of data. These devices are called input/output devices or I/O devices (input/output). Such devices take on the task of sending information to the computer system (input) as well as receiving data from the computer system and making it available to the user (output).
+
+==== Examples of input/output devices: ====
+
+=== Touchscreens ===
+
+A touchscreen is a good example of a device that fulfils both input and output functions. The screen displays (outputs) information, such as a menu or a keyboard. At the same time, it allows the user to enter data by touching the screen. For example, when you type a message on a smartphone, the touchscreen serves both as an input device (for the letters you type) and as an output device (to display the message).
+
+**Functions**
+
+  * Input: A command or text is entered by touching the screen.
+  * Output: The screen displays images, text or videos.
+
+
+----
+
+=== Printer with scanner (multifunction printer) ===
+
+A multifunction printer that can both print and scan is also a typical I/O device. As a printer, it outputs data to paper (output), and as a scanner, it captures images or text from paper and forwards them to the computer (input).
+
+**Functions**
+
+  * Input: The scanner reads in documents or images and transfers them to the computer in digital form.
+  * Output: The printer outputs digital documents in printed form.

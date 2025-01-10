@@ -1,0 +1,33 @@
+====== LU07b - Bluetooth ======
+
+===== Introduction ======
+Bluetooth 5 is fully backwards compatible with the previous versions 4.0, 4.1 and 4.2. Compared to the previous versions, Bluetooth 5 can quadruple the range or double the speed, depending on the setting. The capacity for broadcasts has also been increased by 800 per cent.
+
+  * Double speed of up to 2 MBit/s
+  * Four times the range (outdoor: 200 m / indoor: 40 m)
+  * Eight times the transmission capacity for broadcasts
+
+===== Range or speed =====
+Bluetooth 5 increases the data rate from 1 to 2 MBit/s in low-energy mode or increases the range at 1 MBit/s from 50 to approx. 200 metres outdoors or from 10 to 40 metres indoors.
+
+For comparison: Bluetooth version 4.2 delivers up to 1 MBit/s with a maximum range of "around 100 metres". Many devices do not make full use of these possibilities for power-saving reasons and may only reach around 10 metres. Only a few manage 50 metres or more. In any case, the aim is to increase the range beyond the walls of a house with low power consumption (low-energy long range).
+
+With Bluetooth 5, the range is achieved by increasing the maximum transmission power from 10 mW to 100 mW. With visual contact, 200 m should be bridged. Within buildings, 40 metres is realistic.
+
+The stability of the connection is improved by an optional forward error correction (FEC). However, redundant transmission reduces the data throughput. This is why Bluetooth Low Energy has an "Enhanced Data Rate (EDR)", as with Bluetooth 2.0, which doubles the gross throughput to 2 MBit/s.
+
+===== Transmission capacity =====
+The fact that the transmission capacity increases eightfold is due to the fact that data packets were previously allowed to be 31 bytes in size and can now be 255. This means that there is more space in a data packet, e.g. for a broadcast, and a URL, for example, can be transmitted in one go. In addition, all 37 channels are available for transmission instead of just 3. And there is no pairing when transmitting beacons.
+
+
+===== Application =====
+Connectionless services
+Until now, communication between Bluetooth devices required an app to connect to a device. The user must also initiate this connection. In future, it will no longer be necessary to connect to a device via an app. The devices should be able to connect to each other automatically if the manufacturer has provided for this.
+
+
+===== Location detection =====
+By increasing the range, Bluetooth 5 improves the ability to localise objects and people.
+
+  * Navigation in large buildings (airports, railway stations)
+  * Tracking of stock levels or emergency operations
+  * Smart city infrastructures to support the visually impaired

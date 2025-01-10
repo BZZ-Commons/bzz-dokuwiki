@@ -1,0 +1,98 @@
+====== LU09a - Storage system ======
+
+===== Motivation =====
+Every day we waste a lot of time searching for information. One reason for this is ineffective filing systems and folder structures: while some create a new directory for almost every file, others cram all files into just three or four folders - and thus lose track of the countless documents.
+
+
+===== Example situation =====
+Imagine you receive an email with a report on business etiquette in South East Asia as an attached PDF file. You find the report interesting and want to save the file on your computer. The only question now is: "Where"? The answer to this question depends very much on your folder structure and filing system. Unfortunately, ineffective methods for filing documents are often found in everyday office life.
+Three basic types of ineffective users can be distinguished: Minimalists, Horizontalists and Verticalists.
+
+
+===== Requirements for an effective folder structure =====
+A sensible and effective folder structure should fulfil three essential criteria: Clarity, traceability and speed.
+
+  * **Clarity:** The folder structure on the PC should be clearly organised. This means that there should only be as many folders on a hierarchy level as can be recognised at a glance. The more subfolders there are in a directory, the longer it takes to find the right one.
+  * **Traceability:** Anyone who has ever worked on someone else's PC may be familiar with the feeling of not being able to see through where to find what. Reasons for this lack of clarity can be unclear folder names, a folder structure that is too nested or too few folders with too many files. The folder structure should also be intuitively understandable for unfamiliar users.
+  * **Speed:** Essential for an effective folder structure is how quickly you can find an item you are looking for. The aim should be to have the desired file in three clicks. This means that the distance from the top folder level to any given file should be no more than three folders so that you don't have to search for documents for a long time.
+
+A file storage system that fulfils all three criteria is the 7-folder system.
+
+===== How filing works according to the 7-folder system =====
+The 7-folder system can be explained in one sentence: There is a maximum of seven folders for your files at each hierarchy level of the folder structure. This means that each main folder has a maximum of seven subdirectories, and each of these subdirectories in turn has a maximum of seven subfolders. The number of folder levels is limited to a maximum of three due to the desired speed when storing and finding information. This means that there is a maximum of 7 folders on level 1, a total of 49 folders (7×7) on level 2 and a maximum of 343 folders (49×7) on level 3. In total, your PC should have a maximum of 399 file folders with unique names.
+
+===== Seven folders for the working memory =====
+Why seven folders? Psychologists have discovered that we can only hold a maximum of seven blocks of information in our working memory at any one time. More blocks of information overload our working memory and we need time to orientate ourselves before making a selection. The system of 7 folders on each level is therefore useful because it is brain-friendly and facilitates orientation.
+
+Tip:
+
+No matter how you adapt your folder structure to the 7-folder system, under no circumstances should you create the folders on the desktop. Because just like individual files, entire folders do not belong on your virtual desktop.
+The prefixes also help you to recognise the level of the folder immediately. It is therefore worth using a comprehensible prefix structure when creating a folder (e.g. 3_xy is a folder at level 1, 5.3.1_xy is a folder at level 3)
+Let's assume you are looking for a suitable storage folder for the file with the Southeast Asia report from our example. A folder structure in your company could look like this at level 1:
+
+<code>
+1_Geschäftsführung
+2_Projekte
+3_Finanzen
+4_Personalwesen
+5_Vertrieb
+6_Marketing
+7_Bildarchiv
+</code>
+You select the folder "6_Marketing". There you could have the choice between the following subfolders:
+
+<code>
+6.1_Marketingplanung
+6.2_Marktinformationen
+6.3_Werbung
+6.4_Veranstaltungen
+6.5_Pressearbeit
+6.6_Eigene_Publikationen
+6.7_Präsentationen
+</code>
+
+You decide in favour of the subfolder "6.2_Market information". There you have the choice between the following subfolders:
+
+<code>
+6.2.1_Deutschland
+6.2.2_Europa
+6.2.3_USA
+6.2.4_Südostasien
+6.2.5_Indien
+6.2.6_China
+6.2.7_Japan
+</code>
+
+Open the folder "6.2.4_Southeast Asia" and save the report there. If the file does not yet have a meaningful file name, you should change it accordingly, for example from "Südostasien.pdf" to "Südostasien_Umgangsformen_IHK_2007.pdf". If you then search for the report a few weeks later, you should be able to find it easily.
+
+Tip: You can use the example above as a template for your folder structure. Of course, you should then adapt it to your needs and name the folders according to the topics you deal with in your everyday office life. The example may also be suitable as a basis for the folder structure of other colleagues in the company. Suggest developing a template for a shared folder structure. Standardised digital document storage makes sense and can make collaboration much easier.
+
+===== Sensible exceptions to the 7-folder system =====
+In justified individual cases, it may make sense to deviate from the 7-folder system. Let's take the folder "4_Human Resources" as an example. You could now have a subfolder "4.1_Personal files" in this folder. The optimum folder structure now depends on the number of employees you have. With up to around 30 names, it makes sense to dispense with subfolders and simply list the documents alphabetically by file name. If you have up to 300 employees, you can use the 7-folder system again by setting up seven subfolders for three to four letters each, from "ABC" to "WXYZ", according to alphabetical groups. If your company has far more than 300 employees, you can choose between seven alphabet group folders, whereby a third folder level for individual letters is usually necessary to maintain an overview. For example, the personnel file with the file name "Marion_Mustermann_PA.doc" would then be found under the following file path in the folder structure: 4.1_Personal filesM_N_OM.
+
+===== Example as project manager for a web project =====
+Another example of a subfolder structure for a web project could be structured according to project phases or generic milestones (e.g. IPERKA or Hermes). A further structure could be according to objects (e.g. in house construction according to living area, kitchen, sleeping area) or according to functions (activities). The following example is structured according to Hermes 5 phases.
+
+<code>
+2.1. Webprojekt
+2.1.1_Initiation
+2.1.2_Concept
+2.1.3_Implementation
+2.1.4_Deployment
+</code>
+
+===== No storage on the desktop =====
+In our example, the worst solution of all would be to simply save the document on your desktop because you are supposedly reminded to read it there. Such an approach makes little sense, as it leads to a completely untidy desktop in the long run. At some point, the mere sight of it will cause you stress! Files that you collect for information purposes only and do not work on immediately should not be placed on the desktop like all other documents, but in a folder. It's better to take a few extra seconds to sort documents that arrive by e-mail into your folder structure. This will save you the hassle of tidying up your desktop later.
+
+===== The filing system for minimalists =====
+Let's assume that in our example there is not yet a suitable folder for the Southeast Asia document in the document directory. This is not a problem for minimalists: they have a general folder in their digital filing system called "External documents" or similar, and all files that were not created internally go there. They have a total of three or four such general folders where all documents end up. This keeps the number of folders to a minimum, but the number of documents in each folder becomes very large after a certain time. The disadvantage of such folder structures is a confusing folder content. The files can be located using the file manager's search function. However, this is time-consuming and requires you to know exactly which file you are looking for.
+
+
+===== Storing the horizontal lists =====
+Horizontalists, on the other hand, are not stingy when it comes to creating folders. They literally take a broad approach to filing. They solve the problem by simply creating a new folder, for example "Southeast Asia". As they do this frequently, horizontalists can quickly have several dozen folders on a horizontal folder level, which are created spontaneously as required. The disadvantage: confusing folder structures and the risk of unintentionally creating similar folders.
+
+
+===== The filing of vertical lists =====
+Verticalists take a more methodical approach. For example, they have three folders at the top folder level. When filing the Southeast Asia document, they would work their way through the existing folder structure from top to bottom until they have found a place where they can create a new folder for the file. The folder path could then look like this: VertriebAuslandSüdostasienExterne_InformationenIHK. The new folder "Etiquette" is then created at folder level 6, where the document finally ends up. 
+
+Disadvantage: Lack of overview, as - like an iceberg - the mass of information is located very far down. On the way down in the hierarchy of folders, there are also many opportunities to take the wrong turn in such folder structures.

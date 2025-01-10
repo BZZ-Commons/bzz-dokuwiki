@@ -1,0 +1,17 @@
+====== LU04.A02 - Determine memory requirements ======
+
+===== Initial situation =====
+
+Determine the memory requirement in the following situations. In general, the technical interpretation applies, i.e. 1KB = 1000 bytes and 1 byte = 8 bits.
+
+===== Task =====
+
+  - How many books can be stored on a 1TB hard drive if 300 pages of 60 lines with 65 letters each are assumed per book? (Letters/numbers are coded with ASCII. Round the result down to whole books)
+  - Assume a person lives for 65 years. Determine the memory requirement for his entire life if he has a visual performance of 1.3 GB per hour and sees 17 hours/day. (1 year has 365 days. Round the result correctly to whole TB)
+
+===== General conditions =====
+^ What ^ Description ^
+| Product: | Your answers are written. |
+| Time: | 20 min. |
+| Social form: | Individual and group work |
+| Work equipment: | Office or paper/writing utensils, script |
