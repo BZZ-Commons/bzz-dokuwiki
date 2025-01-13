@@ -1,0 +1,69 @@
+====== LB02: Vorbereitung ======
+===== Ordner und Dateien =====
+  - Erstelle einen Ordner ''C:\tempM122\setup''.
+  - Erstelle einen Ordner ''C:\tempM122\vmware''.
+  - Lade das Zip-Archiv herunter {{ :modul:m122:m122lb02_2025.zip |}}.
+  - Entpacke das Zip-Archiv in den Ordner ''C:\tempM122\setup''.
+  - Gib in der Kommandozeile (Terminal) den Befehl ''dir c:\tempM122 -b'' ein. Du musst folgende Ausgabe erhalten:
+
+<code>
+PS C:\> dir c:\tempM122 -s
+    Verzeichnis: C:\tempM122
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        13.01.2025     08:27                setup
+d-----        13.01.2025     08:23                vmware
+
+    Verzeichnis: C:\tempM122\setup
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-r---        13.01.2025     08:27                vmCopies
+d-r---        13.01.2025     08:27                vmTemplates
+
+    Verzeichnis: C:\tempM122\setup\vmCopies
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-r---        13.01.2025     08:26                vmLinux
+d-r---        13.01.2025     08:26                vmWindows
+
+    Verzeichnis: C:\tempM122\setup\vmTemplates
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-r---        13.01.2025     08:27                vmLinux
+d-r---        13.01.2025     08:27                vmWindows
+
+    Verzeichnis: C:\tempM122\setup\vmTemplates\vmLinux
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        31.10.2022     10:38           3875 vmLinux-s001.vmdk
+-a----        31.10.2022     10:38           3875 vmLinux-s002.vmdk
+-a----        31.10.2022     10:38           3875 vmLinux-s003.vmdk
+-a----        08.10.2022     10:26           8684 vmLinux.nvram
+-a----        31.10.2022     10:40            601 vmLinux.vmdk
+-a----        08.10.2022     10:26              0 vmLinux.vmsd
+-a----        31.10.2022     10:35           2980 vmLinux.vmx
+-a----        31.10.2022     10:40            262 vmLinux.vmxf
+-a----        08.10.2022     10:26         254415 vmware-1.log
+-a----        08.10.2022     10:26         245784 vmware.log
+
+    Verzeichnis: C:\tempM122\setup\vmTemplates\vmWindows
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        08.10.2022     10:26         254415 vmware-1.log
+-a----        08.10.2022     10:26         245784 vmware.log
+-a----        31.10.2022     10:38           3875 vmWindows-s001.vmdk
+-a----        31.10.2022     10:38           3875 vmWindows-s002.vmdk
+-a----        31.10.2022     10:38           3875 vmWindows-s003.vmdk
+-a----        08.10.2022     10:26           8684 vmWindows.nvram
+-a----        31.10.2022     10:49            607 vmWindows.vmdk
+-a----        08.10.2022     10:26              0 vmWindows.vmsd
+-a----        31.10.2022     10:49           2994 vmWindows.vmx
+-a----        08.10.2022     10:26            270 vmWindows.vmxf
+
+</code>
+
+===== Repository =====
+  - Akzeptiere das GitHub Classroom Assignment.
+  - Klone das Repository in deine Entwicklungsumgebung.
+  - Führe das Skript ''setup.py'' aus. \\ Dieses Skript erstellt eine Kopie der Dateien aus ''C:\temp\setup'' in den Ordner ''C:\temp\vmware''. Mit diesem Skript kannst du jeweils den ursprünglichen Zustand der Dateien wiederherstellen.
+

@@ -1,0 +1,20 @@
+====== LU11.L01: Alte Logs ======
+
+===== Herausforderung beim Testen =====
+Beim Testen müssten wir mehrere Tage warten, bis das Logfile das gewünschte Alter erreicht hat.
+Als Alternative können wir:
+  * Das Systemdatum in die Zukunft stellen
+  * Das Erstelldatum der Datei verändern.
+
+Um das Erstelldatum einer Datei zu verändern, benötigen Sie Powershell im Admin-Modus.
+Der Befehl
+<code>
+(Get-Item "C:\log\message.log").CreationTime = "2024-01-10 08:00:00"
+</code>
+Setzt das Erstelldatum unserer Datei auf den 10. Januar 2024
+
+{{gh>https://github.com/templates-python/m122-lu11-a01-logs/blob/solution/main.py}}
+----
+{{tag>M122-LU11}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter
+

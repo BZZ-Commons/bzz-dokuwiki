@@ -5,7 +5,7 @@ Erstelle ein Skript, das Logdateien archiviert und löscht.
 
 ===== Ausgangslage =====
 
-Ein Datenbankserver schreibt seine Meldungen in die Datei «~/log/message.log». 
+Ein Datenbankserver schreibt seine Meldungen in die Datei ''~/log/message.log'' (Linux) bzw. ''C:\log\message.log'' (Windows). 
 Sobald die Logdatei ein vorgegebenes Alter in Tagen (''Argument 1'') erreicht hat, wird ...
   - die Logdatei mit dem Tagesdatum (Format: "YYYYMMDD"") im Dateinamen gesichert. Zum Beispiel:
     * message20210510.log
