@@ -1,0 +1,30 @@
+====== LU10c - Argumente und Debugger ======
+<WRAP center round tip 60%>
+Hier lernen Sie, wie Sie den Debugger zusammen mit Kommandozeilen-Argumenten nutzen können.
+</WRAP>
+
+Wird unser Python-Skript von der Kommandozeile gestartet, steht uns der Debugger nicht zur Verfügung.
+Wir können uns behelfen, indem wir die **Run Configuration** in PyCharm anpassen.
+
+===== 1. Edit Run Configuration =====
+Öffne die Run Configuration über eines der Menüs:
+
+{{:modul:m122:learningunits:lu10:runconfig01.png?400|}}
+{{:modul:m122:learningunits:lu10:runconfig02.png?400|}}
+
+===== 2. Neue Konfiguration erstellen =====
+Erstelle eine neue Python-Konfiguration
+
+{{:modul:m122:learningunits:lu10:runconfig03.png?400|}}
+
+===== 3. Einstellungen anpassen =====
+{{:modul:m122:learningunits:lu10:runconfig04.png?600|}}
+
+Passe nun die Einstellungen für //Script Path// und //Parameters// an.
+
+===== 4. Geniessen :-) =====
+Nun kannst du dein Skript über Run oder Debug direkt aus PyCharm ausführen.
+
+----
+{{tag>M122-LU10}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

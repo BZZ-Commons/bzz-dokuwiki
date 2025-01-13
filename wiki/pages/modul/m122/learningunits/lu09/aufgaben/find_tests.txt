@@ -40,7 +40,6 @@ Jede Sprache hat jedoch ihre Vorteile, die wir hier ausnutzen wollen:
 
 ===== Umsetzung =====
 ==== Vorbereitung ====
-//Siehe [[https://wiki.bzz.ch/modul/m122/learningunits/lu08/linux_python#virtual_environment]]
 
   - Klone das Repository im WSL in einen neuen Ordner.
   - Erstelle das virtual Environment.
@@ -52,6 +51,8 @@ In den folgenden Aufgaben werden Sie zunächst einzelne Teilschritte umsetzen un
 Zum Schluss schreiben Sie die ''main''-Funktion um alle Teilfunktionen zu verbinden.
 
 ===== Hinweise=====
+//Siehe// [[https://wiki.bzz.ch/modul/m122/learningunits/lu08/linux_python#virtual_environment]]
+
 <WRAP center round tip 60%>
 Das Python-Skript kann nicht unter Windows ausgeführt werden, da wir Bash-Befehle nutzen.
 
