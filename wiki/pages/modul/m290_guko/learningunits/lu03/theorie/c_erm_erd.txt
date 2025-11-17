@@ -1,0 +1,189 @@
+====== LU03c – ERM und ERD ======
+
+==== Einleitung ====
+Bevor wir eine Datenbank mit Tabellen in MySQL umsetzen, machen wir uns Gedanken über die **Struktur** der Daten.  
+Dazu benutzen wir ein **konzeptionelles Modell**, das sogenannte **Entity-Relationship Model (ERM)**.  
+Das Ergebnis wird dann in einem **Entity-Relationship Diagramm (ERD)** dargestellt.  
+
+→ **Merksatz**: Das ERM/ERD ist der **Bauplan einer Datenbank**.
+
+
+==== Entity-Relationship Model (ERM) ====
+Ein **ERM** beschreibt die Daten und ihre Beziehungen in der realen Welt.  
+
+  * Eine **Entität** (engl. entity) ist ein Objekt oder ein Begriff, über den wir Informationen speichern möchten. → Beispiele: //Film//, //Schauspieler//, //Kunde//, //Bestellung//.  
+  * Ein **Attribut** ist eine Eigenschaft einer Entität. → Beispiel: Ein Film hat einen //Titel//, ein //Erscheinungsjahr// und ein //Genre//.  
+  * Eine **Beziehung** (engl. relationship) beschreibt, wie Entitäten zueinander in Verbindung stehen. → Beispiel: Eine Bestellung wird von einem Kunden ausgelöst.  
+
+Das ERM dient also dazu, die **Realität in Datenbank-Form zu modellieren**, bevor wir Tabellen anlegen.  
+
+
+<WRAP center tip round 80%>
+[[ https://www.youtube.com/watch?v=G8IBLzQzSQs|Erklärungsvideo ERM - 6:35min ]]((Quelle: Timo Bäuerle/YouTube))
+</WRAP>
+
+==== Entity-Relationship Diagram (ERD) ====
+Ein **ERD** ist die **grafische Darstellung** des ERM.  
+Es zeigt **Entitäten als Rechtecke**, **Attribute als Ovale Felder** um die Entität, und **Beziehungen als Linien bzw. Rauten** zwischen den Entitäten.  
+
+Beispiel (Filmdatenbank):  
+  * Entität **Film** (Titel, Jahr, Regisseur, Genre)  
+  * Entität **Schauspieler** (Name, Geburtsjahr)  
+  * Beziehung **spielt mit in**: Ein Schauspieler/eine Schauspielerin spielt mit in mehreren Filmen und in einem Film spielen viele Schauspieler:innen (n:m Beziehung)  
+
+{{:modul:m290_guko:learningunits:lu03:theorie:erm_guido.png?direct&800|}}
+
+\\ //Das Attribut **ISAN** wird im ER-Diagramm unterstrichen dargestellt, da es ein guter Kandidat für den Primärschlüssel wäre.  
+Die **ISAN** (International Standard Audiovisual Number) ist für Filme vergleichbar mit der **ISBN** bei Büchern – sie identifiziert einen Film eindeutig.//
+\\
+  * Rechtecke = Entitäten
+  * Ovale = Attribute
+  * Rauten = Beziehungen zwischen den Entitäten
+
+
+=== Entität und Attribut unterscheiden ===
+
+Viele Lernende stolpern anfangs darüber, **was eine Entität, ein Attribut oder eine Beziehung ist**.  
+
+Folgendes Vorgehen, kann Ihnen dabei helfen zu bestimmen, was was ist:
+
+
+== 1. Starten Sie mit der Geschichte bzw. dem Business Case ==
+Fragen Sie sich: **Welche „Dinge“ sollen in der Datenbank gespeichert werden?**
+
+-> Wenn es ein **„Ding“** ist, das für sich allein existieren kann und von dem es viele geben kann → **Entität**
+
+  * Beispiele: 
+    * Film
+    * Kunde
+    * Produkt
+    * Bestellung
+    * Schauspieler:in
+
+
+== 2. Schauen Sie IN dieses Ding ==
+Fragen Sie sich: **Welche Eigenschaften wollen wir über dieses Ding speichern?**
+
+-> Wenn es eine **Eigenschaft** ist, die das Ding beschreibt, aber nicht für sich alleine stehen kann → **Attribut**
+
+  * Beispiele: 
+    * Filmtitel, Erscheinungsjahr
+    * Produktpreis, Lagerbestand
+
+{{:modul:m290_guko:learningunits:lu03:theorie:entity_vs_attribute.png?direct&1100|}}
+
+
+== 3. Schauen Sie ZWISCHEN die Dinge ==
+Fragen Sie sich: **Wie sind diese Dinge miteinander verbunden oder interagieren sie?**
+
+Wenn es um die Verknüpfung zwischen zwei Entitäten geht → **Beziehung**
+
+  * Beispiele:
+    * Film ↔ Regisseur → „dreht“
+    * Kunde ↔ Bestellung → „gibt auf“
+    * Bestellung ↔ Produkt → „enthält“
+
+== 4. Der 3-Fragen-Schnelltest ==
+  * **Entität?** Können Sie sich vorstellen, eine Liste davon zu speichern (Film 1, Film 2, Film 3 …)?
+  * **Attribut?** Beschreibt es nur eine einzelne Eigenschaft einer Entität (Titel eines Films)?
+  * **Beziehung?** Verknüpft es zwei Entitäten (Kunde gibt Bestellung auf)?
+
+== 5. Übungsbeispiel ==
+
+**Geschichte:** *Ein Kunde bestellt Produkte in einem Webshop.*
+
+  * **Entitäten**: Kunde, Produkt, Bestellung  
+  * **Attribute**: Kundename, E-Mail; Produkttitel, Preis; Bestelldatum, Gesamtbetrag  
+  * **Beziehung**:  
+    * Kunde ↔ Bestellung → „gibt auf“  
+    * Bestellung ↔ Produkt → „enthält“  
+
+
+----
+
+
+Im folgenden ER-Diagramm wird dargestellt, wie am BZZ die Entitäten **Lehrer**, **Schüler/Lernende**, **Klasse** und **Räume** miteinander in Beziehung stehen.  
+
+{{:modul:m290:learningunits:lu03:theorie:erklasse-1.png?600| 
+Rechtecke = Entitäten, Ovale = Attribute (unterstrichene Attribute = Primärschlüssel), 
+Rauten = Beziehungen zwischen den Entitäten. }}
+
+
+
+
+
+
+==== Kardinalitäten ====
+Die **Kardinalität** beschreibt die Art der Beziehung zwischen zwei Entitäten (z. B. Lehrer und Klasse).  
+Sie zeigt, **wie viele Objekte einer Entität mit wie vielen Objekten einer anderen Entität verbunden sind**.  
+
+Es gibt drei Hauptarten von Kardinalitäten:
+
+----
+
+**1. One-to-One (1:1)**  
+Eine Instanz ((Eine Instanz ist ein konkretes Beispiel oder eine einzelne Ausprägung einer Entität -> Entität "Film" → Instanz: "The Godfather" )) von Entität A gehört genau zu einer Instanz von Entität B.  
+
+Beispiel:  
+  * **Ein:e** Mitarbeitende hat genau **ein** Arbeitsplatz  
+  * Jeder Reisepass gehört genau einer Person  
+
+
+----
+
+**2. One-to-Many (1:N)**  
+Eine Instanz ((Eine Instanz ist ein konkretes Beispiel oder eine einzelne Ausprägung einer Entität -> Entität "Film" → Instanz: "The Godfather" )) von Entität A kann mit vielen Instanzen von Entität B verbunden sein.  
+Umgekehrt gehört jede Instanz von B zu genau einer Instanz von A.  
+
+Beispiel:  
+  * **Ein** Regisseur kann **viele** Filme drehen, aber **ein Film** hat in der Regel nur **ein Regisseur**, **eine Regisseurin**.  
+  * **Ein** Spotify-Artist produziert **viele** Songs. **Ein Song** ist (meistens) nur von **einem Artist** produziert.
+  * **Eine** Klasse hat **viele** Lernende. **Eine Lernende**, **ein Lernender** ist Teil (in der Regel) **einer Klasse**.
+
+----
+
+**3. Many-to-Many (M:N)**  
+Mehrere Instanzen von Entität A können mit mehreren Instanzen von Entität B verknüpft sein.  
+
+Beispiel:  
+  * **Mehrere** Schauspieler:innen ↔ spielen in **mehreren** Filmen (ein Schauspieler/eine Schauspielerin kann in mehreren Filmen mitspielen und ein Film kann mehrere Schauspieler:innen haben)
+  * **Viele** Lernende ↔ besuchen **mehrere** Module
+  * **Viele** Songs ↔ sind in **mehreren** Playlists enthalten  
+
+
+----
+
+==== Tools: ERM/ERD zeichnen ====
+Zum Zeichnen benutzen wir **Draw.io**, ein kostenloses Online-Tool.  
+
+  * [[https://www.draw.io/| Draw.io öffnen]]  
+  * Links in der Leiste gibt es die Kategorie **Entity Relation** → Symbole für Tabellen, Attribute, Beziehungen.  
+  * Modelle können gespeichert oder exportiert werden (Datei → Exportieren → PNG).  
+
+
+==== Warum lernen wir das? ====
+Wenn wir **Tabellen direkt in MySQL** erstellen würden, ohne vorher ein ERD, hätten wir schnell Probleme:  
+  * doppelte oder widersprüchliche Daten,  
+  * fehlende Schlüssel → Daten lassen sich nicht eindeutig verknüpfen,  
+  * unklare Strukturen → niemand versteht die Datenbank ausser dem Ersteller.  
+
+Ein **ERD** sorgt dafür, dass:  
+  * die Struktur **klar und nachvollziehbar** ist,  
+  * wir **richtige Beziehungen** zwischen Tabellen setzen,  
+  * wir später in SQL effizient arbeiten können.  
+
+
+===== Zusatzmaterial: ERM & ERD =====
+
+Folgende Videos helfen Ihnen, das Thema noch besser zu verstehen:  
+
+  * [[https://www.youtube.com/watch?v=LowjDtiNlk4|Entity Relationship Diagrams]]((Decomplexify / YouTube)) -> (20:23, en) Ein leicht verständliches Tutorial zu ERDs – mit Beispielen zu Chen-Notation, Crow’s Foot, Kardinalitäten und Weak Entities.  
+  * [[https://youtu.be/I-ctLA--THs?feature=shared&t=37|ENTITY RELATIONSHIP MODELL einfach erklärt (ER-Modell)]]((IT & Medien einfach erklärt / YouTube)) -> (5:03, de) Einführung ins ER-Modell: Grundelemente, Beziehungen (1:1, 1:n, m:n) und deren Bedeutung.  
+  * [[https://www.youtube.com/watch?v=baF9b5Lkiio|ER-Modell - Teil 1 (ABITUR 2018)]]((Informatik - simpleclub / YouTube)) -> (4:53, de) Aufbau von Entities, Attributen und Beziehungen. Mit Beispiel „Buch – Autor“.  
+  * [[https://www.youtube.com/watch?v=inCwNrTIv4s|Kardinalitäten und Primärschlüssel | ERM bei Datenbanken]]((Sebastian Philippi / YouTube)) -> (13:05, de) Anschauliche Erklärung von Primärschlüsseln und Kardinalitäten mit Beispielen. 
+
+
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] 

@@ -1,0 +1,20 @@
+====== LU04d - Update an App in K8s ======
+===== Goals =====
+  -I'm able to explain the difference between an update by recreation or rolling.
+  -I'm able to perform a rolling update on a deployment with K8s.
+  -I'm able to test/verify the update.
+  -I'm able to query relevant information on scaled pods and services in a K8s cluster.
+  -I can suggest and implement at least one measure when an error message appears.
+
+===== Basics =====
+This [[https://youtu.be/x-mo0dIeTnE|video]] demonstrates how to scale an app in Minikube running on a AWS EC2 Instance.
+
+===== Exercises =====
+  -Read some [[en:modul:m321_aws:topics:07|background information]] before starting the exercise
+  -Watch again the video cast.
+  -Update an app in YOUR K8s cluster.
+  -Memorize the procedure. It will become handy for future exercises.
+
+===== Study case =====
+  -Work on ''07/02_Exercises/01-Exercise.md to 04-Exercise.md'' located in your repository.
+  -If an error occurs, read the message carefully, think of a solution and implement it.

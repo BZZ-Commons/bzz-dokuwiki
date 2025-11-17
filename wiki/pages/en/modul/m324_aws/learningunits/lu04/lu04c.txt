@@ -1,0 +1,36 @@
+====== LU04c - Sample project with Jenkins commit pipeline ======
+<sup>Internal reference: learningunits/04-3.md</sup>
+\\
+===== Goals =====
+  -I can configure Jenkins with required **plugins**.
+  -I can set up, configure and test a **CI/CD pipeline** in Jenkins for a sample app.
+  -I can retrieve and apply a CI/CD Pipeline in Jenkins as a **Pipeline-Code-File**.
+  -If there are any errors, I can analyze the error, suggest and test an initial workaround (troubleshooting).
+
+\\
+===== Sample project Traffic Light =====
+This sample project shows how to set up a pipeline in Jenkins for fetching the code from a repository and testing the app (in Node.js) with test cases.
+
+
+==== Overview Steps ====
+
+{{:en:modul:m324_aws:learningunits:lu04:m324-lu04c-sample-project.png?direct&600|Overview of the steps}}
+
+
+==== Steps ====
+
+  -Live-Demo: How to start and add test cases to the Traffic Light app.
+  -[[https://youtu.be/PNOYsdtBc-U |Setup Node.js pipeline (Jenkins controller)]]
+  -[[https://youtu.be/Pqvgzc7qQmk |Setup a checkout pipeline]]
+  -[[https://youtu.be/z79nOtv-pnQ |Install & Test pipeline]]
+  -[[https://youtu.be/God7Ng9R2mE |SCM-Pipeline in a file]]
+
+\\
+===== Exercises =====
+  -Setup Jenkins ''02/02_Exercises/01-Exercise.md to 05-Exercise.md'' - according to the learning objectives (see course repository).
+  -If there is an error, read the message carefully, think about a solution and implement it.
+
+
+----
+
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Daniel Garavaldi

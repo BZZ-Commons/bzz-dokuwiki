@@ -1,0 +1,10 @@
+===== LU03S1 - Lösungsvorschlag =====
+^ Fall ^ Geeigneter Datentyp ^ Begründung ^
+| Produkt-Titel | **VARCHAR(50)** | Titel sind variabel in der Länge, bis max. 50 Zeichen. |
+| Produkt-Beschreibung | **VARCHAR(255)** | Variable Textlänge bis 255 Zeichen. |
+| Lagerbestand | **INT** | Ganze Zahlen (keine Nachkommastellen) |
+| Preis pro Stück | **DECIMAL(6,2)** | Genaue Darstellung von Preisen, zwei Nachkommastellen. Hosen über CHF 9999.99 sind selten. |
+| Bestelldatum | **DATE** | Nur das Datum ist relevant. |
+| Lieferdatum | **DATETIME** | Datum und Uhrzeit sind relevant für die Pünktlichkeit. |
+| Bio oder nicht | **BOOLEAN** oder **TINYINT(1)** | Nur zwei mögliche Werte (ja/nein bzw. 0/1) |
+| Grössenkategorie | **CHAR(1)** | Fixe Länge von genau einem Zeichen (z. B. 'S', 'M', 'L') |

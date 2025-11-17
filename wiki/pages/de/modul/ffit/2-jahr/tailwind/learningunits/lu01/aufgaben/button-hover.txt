@@ -1,0 +1,13 @@
+====== LU01.A02 - Buttons mit Hover-Effekt ======
+
+==== Aufgabenstellung ====
+  - Erstellen Sie ein leeres HTML-Dokument
+  - Binden Sie Tailwind CSS über CDN ein [[https://tailwindcss.com/docs/installation/play-cdn|Anleitung]]
+  - Erstellen Sie zwei Buttons:
+    - Der erste Button soll einen blauen Hintergrund haben und beim Hover dunkler werden.
+    - Der zweite Button soll einen roten Hintergrund haben, beim Hover jedoch die Textfarbe auf Weiss ändern.
+
+==== Rahmenbedingungen ====
+^ Was ^ Beschreibung ^
+| Produkt: | HTML-Dokument mit der Vorgabe |
+| Zeit: | 10 Min. |

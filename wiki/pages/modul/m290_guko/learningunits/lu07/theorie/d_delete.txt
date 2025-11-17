@@ -1,0 +1,61 @@
+====== LU07d – DELETE: Daten löschen ======
+
+Mit %%DELETE%% werden Datensätze gelöscht.  
+Mit %%TRUNCATE%% kann die **gesamte Tabelle** geleert werden.
+
+===== DELETE Statement =====
+**Syntax (mit Filter – empfohlen)**
+<WRAP center box 80% round><code sql>
+DELETE FROM tabellenname
+WHERE bedingung;
+</code></WRAP>
+
+**Syntax (ohne Filter – gefährlich!)**
+<WRAP center box 80% round><code sql>
+DELETE FROM tabellenname;
+</code></WRAP>
+
+
+**Ausgangstabelle:**
+<WRAP center box 80% round>
+^ film_id ^ title                  ^ director         ^ released_year ^ star1             ^
+| 1       | Lost in Translation    | Sofia Coppola    | 2003          | Scarlett Johansson|
+| 2       | Inception              | C. Nolan         | 2010          | Leonardo DiCaprio |
+| 3       | Arrival (Extended Cut) | Denis Villeneuve | 2016          | Amy Adams         |
+</WRAP>
+
+**Beispiel 1: Gezieltes Löschen**
+<WRAP center box 80% round><code sql>
+DELETE FROM favourite_film
+WHERE film_id = 1;
+</code></WRAP>
+
+<WRAP center box 80% round>
+^ film_id ^ title                  ^ director         ^ released_year ^ star1             ^
+| 2       | Inception              | C. Nolan         | 2010          | Leonardo DiCaprio |
+| 3       | Arrival (Extended Cut) | Denis Villeneuve | 2016          | Amy Adams         |
+</WRAP>
+
+**Beispiel 2: Mehrere auf einmal löschen**
+<WRAP center box 80% round><code sql>
+DELETE FROM favourite_film
+WHERE film_id IN (2, 3);
+</code></WRAP>
+
+<WRAP center box 80% round>
+^ film_id ^ title ^ director ^ released_year ^ star1 ^
+| (keine Zeilen mehr vorhanden) |||||
+</WRAP>
+
+===== TRUNCATE =====
+%%TRUNCATE%% entfernt **alle Zeilen** einer Tabelle – schneller als DELETE.  
+Es setzt zusätzlich den AUTO_INCREMENT-Zähler zurück.
+
+**Syntax**
+<WRAP center box 80% round><code sql>
+TRUNCATE TABLE tabellenname;
+</code></WRAP>
+
+> **Merke:**  
+> • Keine %%WHERE%% möglich.  
+> • Nur verwenden, wenn man wirklich **alles löschen** will.  

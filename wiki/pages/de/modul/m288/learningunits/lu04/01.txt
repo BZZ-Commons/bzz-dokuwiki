@@ -1,0 +1,70 @@
+====== LU04a - Arrays ======
+ 		 	
+===== Einleitung =====	 	
+In der Programmierung stösst man schnell auf Situationen, in denen man nicht nur einen einzelnen Wert, sondern eine **Sammlung von Werten speichern** möchte – zum Beispiel eine Liste mit Namen, Zahlen oder Objekten.	
+ 		 	
+In JavaScript gibt es dafür den Datentyp //Array//. Ein //Array// ist eine geordnete Liste, in der jedes Element über einen Index angesprochen werden kann (beginnend bei 0).
+
+{{:de:modul:m288:learningunits:lu03:lu03a_1.png?500|JS Array Methoden}}	
+ 		 	
+Arrays sind unglaublich vielseitig: Man kann Elemente hinzufügen, entfernen, sortieren oder mit speziellen Methoden wie //map// und //filter// weiterverarbeiten.	
+ 		 	
+===== Was ist ein Array? =====
+Ein Array ist eine geordnete Sammlung von Werten. Diese Werte können Zahlen, Strings, Objekte oder sogar andere Arrays sein. Arrays sind besonders praktisch, wenn man mehrere Werte unter einem Namen speichern möchte.	
+
+**Beispiel:**	
+  	
+  let zahlen = [1, 2, 3, 4, 5]; 	
+  let namen = ["Anna", "Ben", "Clara"]; 
+ 	  	 	  
+===== Methoden =====
+Methoden sind Fähigkeiten (verhalten), die Objekte können bestimme Aktionen ausüben.
+
+==== Zugriff auf Array-Elemente ==== 	
+Jedes Element in einem Array hat einen Index, beginnend bei 0.
+
+  let farben = ["rot", "gruen", "blau"];
+  console.log(farben[0]); // "rot" 	
+  console.log(farben[1]); // "gruen" 		
+  console.log(farben[2]); // "blau"		
+ 		 	
+==== Array-Laenge ====
+
+  let zahlen = [10, 20, 30];	 
+  console.log(zahlen.length); // 3	 
+
+==== Elemente hinzufügen oder entfernen ====	 
+JavaScript stellt praktische Methoden bereit:	 
+ 		 	
+
+
+  let tiere = ["Hund", "Katze"]; 
+  // Hinzufügen 		
+  tiere.push("Maus");     // ans Ende 		
+  tiere.unshift("Vogel"); // an den Anfang 	
+  console.log(tiere);     // ["Vogel", "Hund", "Katze", "Maus"]	
+  // Entfernen 		
+  tiere.pop();    // entfernt letztes Element 		
+  tiere.shift();  // entfernt erstes Element 		
+  console.log(tiere); // ["Hund", "Katze"] 		
+	
+==== Weitere Methoden ==== 		
+
+  * map → erstellt ein neues Array basierend auf jedem Element. 
+  * filter → filtert Elemente nach Bedingung.
+  * find → findet das erste passende Element.
+  * includes → ist das Element vorhanden? 
+
+==== Übersicht über Array-Methoden ====		
+	 	
+{{:de:modul:m288:learningunits:lu03:lu03a_2.png?800|}}	
+
+===== Lernvideos =====	 
+| {{:de:modul:m288:learningunits:lu03:javascript_arrays_tutorial_-_javascript_lernen_in_deutsch.mp4 |JavaScript-Tutorial - 8:31 Minuten}} | {{:de:modul:m288:learningunits:lu03:arrays_javascript_tutorial_deutsch_teil_12.mp4|JavaScript-Tutorial - 20:30 Minuten}} |	 
+ 		 	
+===== Zusatzmaterial =====	 
+  * [[https://www.w3schools.com/js/js_arrays.asp|W3School- JavaScript Arrays]] 	
+  * [[https://wiki.selfhtml.org/wiki/Array|SelfHTML - JS Arrays ]]
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

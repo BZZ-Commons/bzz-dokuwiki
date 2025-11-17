@@ -1,0 +1,52 @@
+====== LU03a - Prinzipien 1 (DRY, SRP) ======
+
+==== Prinzipien ====
+
+  * **DRY (Don’t Repeat Yourself)**
+  * **SRP (Single Responsibility Principle)**
+  * //OCP (Open/Closed Principle)//
+  * //LSP (Liskov Substitution Principle)//
+  * //ISP (Interface Segregation Principle)//
+  * //DIP (Dependency Inversion Principle)//
+  * //KISS (Keep It Simple, Stupid)//
+  * //YAGNI (You Ain’t Gonna Need It)//
+  * //SoC (Separation of Concerns)//
+  * //Law of Demeter (Principle of Least Knowledge)//
+
+SOLID steht wiederum für SRP, OCP, LSP, ISP, DIP
+
+Wir fokussieren uns erstmal auf **DRY** und **SRP**.
+
+=== DRY ===
+
+Code ist viel simpler art- und erweiterbar, wenn man nur eine einzige Stelle anpassen muss. Duplizierte Code-Blöcke erhöhen die Fehleranfälligkeit und erschweren die Lesbarkeit.
+
+Wenn Sie zum Beispiel an zwei unterschiedlichen Orten denselben Datenbankaufruf haben, kann man diese Funktionalität auslagern in eine gemeinsame Methode (oder oftmals gar eine eigene Klasse).
+
+<code java>
+Connection conn = DriverManager.getConnection(URL, USER, PASSWORD)
+</code>
+
+<code java>
+public class Database {
+    private static final String URL = Config.get("DB_URL");
+    private static final String USER = Config.get("DB_USER");
+    private static final String PASSWORD = Config.get("DB_PASSWORD");
+
+    public static Connection getConnection() throws SQLException {
+        return DriverManager.getConnection(URL, USER, PASSWORD);
+    }
+}
+</code>
+
+Kontrollieren Sie Ihren Code hinsichtlich dieses Prinzips und korrigieren Sie bei Bedarf.
+
+=== SRP ===
+Jede Klasse sollte nur einen Aufgabenbereich haben. Das Lesen und Schreiben von Dateien ist somit zu trennen von der Logik für den Zugriff auf die Datenbank usw.
+
+Kontrollieren Sie Ihren Code hinsichtlich dieses Prinzips und korrigieren Sie bei Bedarf.
+
+Ein möglicher Aufbau der Klassen könnte folgendermassen aussehen. 
+
+{{:de:modul:ffit:3-jahr:java:learningunits:lu02:library-app-structure-srp.png|Screenshot structure}}
+

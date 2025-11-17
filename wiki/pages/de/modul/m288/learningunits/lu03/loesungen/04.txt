@@ -1,0 +1,18 @@
+====== LU03.A04 - if mit ||-Verknüpfungen ======
+
+==== Auftrag =====
+Erstellen Sie eine zweite Version des Scriptes der Aufgabe LU03.A02, welche die Bedinungen durch eine logische ODER verknüpft: Man kommt nur in den CLUB:
+
+  * als VIP ODER
+  * 18 Jahre UND mit Ausweis
+
+  * Die Parameter //Alter// und //ob Ausweis vorhanden// sollen beim Scriptaufruf mitgegeben werden. 
+  * Beispiel1 - 18 Jahre, ID dabei, kein VIP: //node myScript.js 18 nein nein// 
+  * Beispiel2 - 16 Jahre, keine ID dabei, ist VIP: //node myScript.js 18 nein ja//
+
+===== Lösungen =====
+{{:de:modul:m288:learningunits:lu03:loesungen:lu03_l04..jpg?600|}}
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

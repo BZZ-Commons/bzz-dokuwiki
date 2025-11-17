@@ -1,0 +1,26 @@
+====== LU08c - Schnittstellendokumentation ======
+
+Da in grösseren Entwicklungsteams oft unterschiedliche Leute an Front- und Backend arbeiten, ist eine entsprechende Dokumentation der Schnittstellen (z. B. REST APIs) unabdingbar.
+Dadurch wird sichergestellt, dass die Schnittstellen seitens Backend korrekt implementiert und seitens Frontend korrekt verwendet werden.
+
+
+==== OpenAPI ==== 
+OpenAPI (https://www.openapis.org/) ist ein gebräuchlicher Standard, um APIs in einer JSON- oder YAML-Datei zu spezifizieren. 
+
+Machen Sie im Accounting-App-Projekt einen cherry-pick auf ''7e973ef'' um im Verzeichnis ''documentation/'' die Datei ''openapi.yaml'' zu erhalten.
+
+==== Swagger ====
+Swagger (https://swagger.io/) umfasst einige Tools rund um OpenAPI.
+Beispiele:
+
+^ Name ^ Verwendungszweck ^
+| Swagger Editor | Bearbeiten/Validieren von OpenAPI-Dateien | 
+| Swagger UI | Interaktive API-Dokumentation im Browser | 
+| Swagger Codegen / OpenAPI Generator | Generieren von  Client- oder Server-Code aus OpenAPI-Dateien | 
+
+Nutzen Sie den Swagger Editor (https://editor.swagger.io/) um die definierten APIs in ''openapi.yaml'' anzusehen und zu verstehen.
+
+Theoretisch könnten Sie auch das Swagger-UI (https://swagger.io/tools/swagger-ui/) benutzen, dieses müssten Sie aber erst herunterladen.
+
+Fun Fact: Man kann auch mit der OpenAPI-Datei und Postman die APIs testen.
+

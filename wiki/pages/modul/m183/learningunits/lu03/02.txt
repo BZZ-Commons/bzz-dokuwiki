@@ -1,0 +1,50 @@
+====== LU03b - Applikationssicherheit VS Systemsicherheit ======
+
+<color #00a2e8>**Zitat:** Der Löwenanteil der IT-Security-Budgets wird in Netzwerksicherheit, z. B. für Firewalls und Intrusion Detection-Systeme investiert, obwohl nach Gartner 75 Prozent der Hacker-Attacken direkt die Applikation und nicht die Netzwerke angreifen.</color>
+
+----
+
+===== Lernziele =====
+  - Erklären können, was unter einer System- bzw. unter einer Applikation zu verstehen ist.
+  - Die beiden Begriff bezüglich IT-Sicherheit voneinander abgrenzen können.
+  - Beispiele für Angriffe auf die 4 Systemarchitektur-Schichten nennen können.
+  - Bespiele für Angriffe auf die 3 Applikationsarchitektur-Schichten nennen können.
+
+===== Einleitung =====
+
+Unter der Sicherheit von Software Applikationen versteht man generell die umfängliche Sicherheit für:
+
+  * den Betrieb einer Applikation
+  * den Datenschutz der Anwendern
+
+Grundsätzlich unterscheidet man in Bezug auf Sicherheit 
+  * Systemrelevante Applikationen (Betriebssysteme, Software Security Applikationen, Datenbank Systeme, Server Systeme) und 
+  * Anwenderrelevante Applikationen (ERP-Applikationen, Buchhaltung Applikationen, Office Applikationen).
+
+===== Schichten einer IT-Systems =====
+Grundsätzlich besteht ein IT-System aus 4 Schichten (je nach Detaillierung, kann die Zahl variieren).
+  - Schicht: UI/Frontend
+  - Schicht: Server/Backend
+  - Schicht: OS/Betriebssystem
+  - Schicht: Datenhaltung
+
+===== Schichten einer Applikation =====
+Grundsätzlich besteht ein Applikation System aus 3 Schichten (je nach Detaillierung, kann die Zahl variieren).
+  - Presentation-Layer
+  - Business-Logic-Layer
+  - Data-Layer
+   
+
+===== System- und Applikationsarchitektur =====
+Applikations- und Systemarchitekturen bestimmen stark die Effizienz in Bezug auf die Sicherheit einer Softwareapplikation. In der Praxis werden die beiden Architekturen oftmals völlig getrennt betrachtet. Die Anforderungen an die Schnittstellen werden nicht definiert. Annahmen werden getroffen, die nicht oder nur mangelhaft in den Architekturen implementiert werden. 
+
+| {{:modul:m183:learningunits:lu03:systemarchitektur.png?400|}} | {{:modul:m183:learningunits:lu03:appkilationsarchitektur.png?400|}} |
+
+Angriffspunkte in der System- sowie Applikationsarchitektur werden immer ein große Aufgabe und Herausforderung für die System- und Applikationsentwickler sein. Eine von den KASPARSKY LABS veröffentlichte Statistik der Cyberattacken (Security Bulletin) zeigt, dass die Angriffsflut in der Vergangenheit rasant zugenommen hat, und in der Zukunft weiter zunehmen  wird.
+
+===== Quellennachweis =====
+  * https://de.wikipedia.org/wiki/Softwarearchitektur
+  * https://de.wikipedia.org/wiki/Systemarchitektur
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

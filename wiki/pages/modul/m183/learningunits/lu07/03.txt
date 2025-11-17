@@ -1,0 +1,78 @@
+====== LU07c - Der Aufbau eines digitalen Zertifikates ======
+
+===== Lernziele =====
+
+  * Den Standard für den Aufbau eines digitalen Zertifikates nennen können.
+  * Wichtigsten Teile des digitalen Zertifikates nennen und erläutern können.
+
+===== Einleitung =====
+Digitale Zertifikate bilden das Rückgrat sicherer Kommunikation im Internet. Sie dienen dazu, einen öffentlichen Schlüssel eindeutig an eine Identität – etwa eine Person, einen Server oder eine Organisation – zu binden. Damit können Kommunikationspartner prüfen, ob ein Schlüssel tatsächlich zu dem angegebenen Inhaber gehört.
+
+Der Aufbau eines Zertifikats folgt festgelegten Standards (z. B. X.509) und enthält typischerweise Angaben wie den Namen des Inhabers, den öffentlichen Schlüssel, die Gültigkeitsdauer, die ausstellende Zertifizierungsstelle (CA) sowie eine digitale Signatur. Diese Struktur sorgt dafür, dass Zertifikate sowohl maschinell überprüfbar als auch vertrauenswürdig sind. 
+
+{{:modul:m183:learningunits:lu07:lu07_3_x509.png?400}}
+
+
+===== Bestandteile ====
+^ Feld / Bestandteil   ^ Beschreibung                                               ^ Beispiel                                   ^
+| Version              | Gibt den Standard an, meist X.509 v3.                      | v3                                        |
+| Seriennummer         | Eindeutige Kennung des Zertifikats.                        | 0x5F23A9                                  |
+| Signaturalgorithmus  | Algorithmus, mit dem die CA das Zertifikat signiert hat.   | sha256RSA                                 |
+| Issuer (Aussteller)  | Zertifizierungsstelle, die das Zertifikat ausgestellt hat. | CN=DigiCert Global Root CA                |
+| Subject (Inhaber)    | Identität des Zertifikatsinhabers.                         | CN=www.beispiel.de, O=Beispiel GmbH       |
+| Public Key           | Öffentlicher Schlüssel des Inhabers.                       | RSA 2048-bit Schlüssel                     |
+| Validity             | Gültigkeitsdauer (von – bis).                              | 01.01.2025 – 31.12.2025                    |
+| Extensions           | Zusätzliche Infos, z. B. Key Usage oder SAN-Einträge.      | DNS: www.beispiel.de, DNS: beispiel.com    |
+| Signature            | Digitale Signatur der CA über den Zertifikatsinhalt.       | Hexadezimaler Wert                         |
+
+===== Zusatzinformationen =====
+==== Attributzertifikate ====
+Die Eigenschaften des im Public-Key-Zertifikat enthaltenen Schlüssels – und damit der Geltungsbereich des Public-Key-Zertifikates – können durch Attributzertifikate genauer festgelegt werden. Attributzertifikate enthalten selbst keinen öffentlichen Schlüssel, sondern verweisen auf das betroffene Public-Key-Zertifikat über dessen Seriennummer.
+
+==== Zertifizierungsinstanzen ====
+Der Aussteller eines Zertifikats heißt Zertifizierungsinstanz und sollte vertrauenswürdig sein. Die digitale Signatur stellt Authentizität und Integrität sicher, benötigt aber wiederum ein Zertifikat für den Signaturschlüssel der CA. Daraus entsteht die Public-Key-Infrastruktur (PKI). Zertifizierungsstellen unterscheiden sich stark in der Qualität: von kostenlosen, kaum geprüften Zertifikaten bis hin zu teuren, hochsicheren Chipkarten-Zertifikaten. Maßgeblich sind die Zertifizierungsrichtlinien (Certificate Policy, CP).
+
+==== Gültigkeit =====
+Zertifikate haben eine begrenzte Laufzeit. Unsichere Zertifikate müssen vorzeitig gesperrt werden, damit Vertrauen gewahrt bleibt. Sperrinformationen werden typischerweise über Sperrlisten (CRL), Webseiten oder zunehmend per Online-Abfrage veröffentlicht.
+
+==== Der X.509 Standard ====
+Struktur und Inhalt von digitalen Zertifikaten werden durch diverse Standards vorgegeben. Aus der Vielzahl von Standards wurde der X.509 Stanard am meisten
+verwendet. Ein von einer Zertifizierungsstelle ausgestelltes digitales Zertifikat wird im X.509-System immer an einen „Distinguished Name“ oder einen „Alternative Name“ wie eine E-Mail-Adresse oder einen DNS Eintrag gebunden.
+
+==== Sperren von Zertifikaten ====
+X.509 beinhaltet ausserdem einen Standard, mittels dessen Zertifikate seitens der Zertifizierungsstelle wieder ungültig gemacht werden können, wenn deren Sicherheit nicht mehr gegeben ist (z. B. nach dem öffentlichen Bekanntwerden des Private Keys für das Signieren von E-Mails). Die Zertifizierungsstelle kann hierfür ungültige Zertifikate in //Zertifikatsperrlisten// (certificate revocation list, kurz CRL) führen. Die automatische Überprüfung, ob ein Zertifikat inzwischen Teil einer Sperrliste ist, ist allerdings nicht in allen Programmen, die X.509-Zertifikate akzeptieren, standardmässig aktiviert.
+
+==== Struktur des X.509-Zertifikats ====
+  * Zertifikat
+    * Version
+    * Seriennummer
+    * Algorithmen-ID
+  * Aussteller
+    * Land/Region
+    * Bundesland/Kanton
+    * Ort
+    * Organisationseinheit
+    * Organisation
+    * Gemeinsamer Name
+  * Gültigkeit
+    * Von
+    * Bis
+  * Zertifikatinhaber
+  * Zertifikatinhaber-Schlüsselinformationen
+    * Public-Key-Algorithmus
+    * Public Key des Zertifikatinhabers
+  * Eindeutige ID des Ausstellers (optional)
+  * Eindeutige ID des Inhabers (optional)
+  * Erweiterungen
+    * o …
+  * Zertifikat-Signaturalgorithmus
+  * Zertifikat-Signatu
+
+==== Beispiel eines X.509 Zertifikates =====
+
+{{:modul:m183:learningunits:lu07:lu07_6_x509.png?1000|Beispiel eines X.509 Zertifikates}}  
+
+----
+
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir
+

@@ -1,0 +1,48 @@
+====== LU02a - Pseudo-Klassen ======
+
+CSS-Pseudoklassen sind spezielle Bezeichnungen, die bestimmte Zustände von HTML-Elementen ansprechen und es ermöglichen, diesen Zustand gezielt zu stylen. Sie bieten eine mächtige Möglichkeit, das Verhalten von Elementen auf einer Webseite basierend auf Benutzerinteraktionen oder dem Kontext zu verändern.
+
+===== :hover =====
+`:hover` Diese Pseudoklasse wird aktiviert, wenn der Benutzer mit der Maus über das Element fährt. Sie wird häufig verwendet, um Links oder Schaltflächen visuell zu betonen, wenn sie interaktiv sind.
+
+<code css>
+a:hover {
+    color: red;
+}
+</code>
+
+===== :active =====
+`:active` Diese Pseudoklasse wird aktiviert, wenn das Element aktiv ist, z. B. wenn der Benutzer eine Maustaste gedrückt hält oder eine Schaltfläche anklickt. Sie wird oft verwendet, um das Aussehen von Elementen während eines Klickvorgangs zu ändern.
+
+<code css>
+button:active {
+    background-color: yellow;
+}
+</code>
+
+===== :focus =====
+`:focus` Diese Pseudoklasse wird aktiviert, wenn das Element den Fokus erhält, z. B. wenn der Benutzer darauf klickt oder es mit der Tab-Taste erreicht. Sie ist wichtig für die Zugänglichkeit und wird oft verwendet, um die visuelle Hervorhebung von Formularelementen zu steuern.
+
+<code css>
+input:focus {
+    border-color: blue;
+}
+</code>
+
+===== :first-child / :last-child =====
+`:first-child / :last-child` Diese Pseudoklassen werden auf das erste bzw. letzte Kind-Element eines übergeordneten Elements angewendet. Sie ermöglichen es, spezifische Stile für das erste bzw. letzte Element einer Liste oder einer Gruppe von Elementen festzulegen.
+
+<code css>
+li:first-child {
+    font-weight: bold;
+}
+</code>
+
+===== :nth-child =====
+`:nth-child():` Diese Pseudoklasse ermöglicht die Auswahl von Elementen basierend auf ihrer Position innerhalb eines übergeordneten Elements. Sie erlaubt komplexe Auswahlmuster und wird oft verwendet, um Elemente in einer Liste oder Tabelle zu stylen.
+
+<code css>
+tr:nth-child(odd) {
+    background-color: lightgray;
+}
+</code>

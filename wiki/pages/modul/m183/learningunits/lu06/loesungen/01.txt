@@ -1,0 +1,26 @@
+====== LU06.L01 - Berechtigungskonzepte verstehen und anwenden ======
+
+
+=== a) Art des Zugriffsschutzes===
+    * **Benutzerebene:** Berechtigungen werden individuell den Benutzern zugeordnet, was bis zu einer bestimmten Anzahl (beispielweise 10 Usern) handhabbar ist, aber danach aufgrund von notwendigen Updates und Verwaltungsaufgaben sehr aufwendig werden kann. Historische Beispiele hierfür sind ältere Betriebssysteme wie Windows 3.1 und Windows 95. Bei modernen Systemen wie MacOS kann die Gruppenfunktion eingeschränkt sein oder fehlen.
+
+    * **Gruppenebene:** Hier werden Benutzer jeweils einer Gruppe zugeordnet und die Berechtigungen werden auf Gruppenebene verwaltet. Dies reduziert den Verwaltungsaufwand erheblich, da Änderungen an den Berechtigungen für eine ganze Gruppe und nicht für einzelne Benutzer erfolgen. Ein typisches Beispiel für dieses Berechtigungskonzept ist das Linux/Unix-Betriebssystem.
+
+    * **Rollenebene:** Benutzer können eine oder mehrere Rollen haben, wobei die Berechtigungen den Rollen zugewiesen werden. Dies ermöglicht eine feingranulare und dennoch effiziente Verwaltung von Berechtigungen, insbesondere in komplexen Systemen mit vielen Benutzern und differenzierten Zugriffsrechten. Beispiele hierfür sind Webshops wie OS-Commerce oder Datenbanksysteme wie Oracle.
+
+===b) Konkrete Produkte===
+    * **Benutzerebene:** MacOS (mit eingeschränkter Gruppenfunktion)
+    * **Gruppenebene:** Linux/Unix
+    * **Rollenebene:** Oracle Datenbank, OS-Commerce
+
+===c) Einordnen===
+    * **MS Windows:** Benutzer-/Gruppenebene (abhängig von der Windows-Version und Konfiguration)
+    * **Linux:** Gruppenebene (mit möglicher Rollenerweiterung durch z.B. SELinux)
+    * **MySQL Datenbanken:** Benutzer-/Gruppenebene (mit Rollenbasierten Erweiterungen in neueren Versionen)
+    * **Oracle Datenbanken:** Rollenebene
+    * **MacOS:** Benutzerebene (mit eingeschränkter Gruppenfunktion)
+
+===d) LINUX-Berechtigungen===
+    * **664:** rw-rw-r-- (Besitzer und Gruppe haben Lese- und Schreibrechte, andere nur Leserechte)
+    * **775:** rwxrwxr-x (Besitzer und Gruppe haben alle Rechte, andere nur Lesen und Ausführen)
+    * **777:** rwxrwxrwx (Alle haben alle Rechte)

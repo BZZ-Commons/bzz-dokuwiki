@@ -1,0 +1,44 @@
+====== LU07d - Bruno ======
+<WRAP center round info 60%>
+[[https://www.usebruno.com/|Bruno]] ist ein Open-Source-Tool zum Entwickeln und Testen von Programmierschnittstellen (API).  
+Im Unterricht nutzen wir Bruno, um die API einer Webapplikation zu testen.
+</WRAP>
+
+Bruno ermöglicht es uns, API-Tests zu definieren und manuell oder automatisiert durchzuführen.  
+Da alle Testfälle als **Textdateien** gespeichert werden, können sie sehr einfach versioniert (z. B. mit Git) und geteilt werden.  
+
+===== Bruno nutzen =====
+Bruno ist vollständig **gratis** und benötigt kein Benutzerkonto.  
+Alle Daten liegen lokal in deinem Projektordner und können von dir in ein Git-Repository aufgenommen werden.  
+
+Du kannst Bruno für Windows, macOS und Linux herunterladen und installieren.  
+Eine Web-Version gibt es bewusst nicht, da Bruno auf lokale Dateien setzt.  
+
+===== Wichtige Begriffe =====
+==== Workspace ====
+In Bruno gibt es keinen „Cloud-Workspace“ wie bei Postman.  
+Ein Workspace entspricht einfach einem **lokalen Projektordner** auf deinem Computer.  
+Alles, was du anlegst, liegt darin als Dateien vor.  
+
+==== Collection ====
+Eine Collection ist in Bruno ein **Unterordner** innerhalb deines Workspaces.  
+Jede Collection steht für eine Applikation oder ein Projekt, das du testen willst.  
+
+==== Request ====
+Ein Request ist eine einzelne **`.bru`-Datei**.  
+Darin stehen alle Informationen zu deinem API-Aufruf (Methode, URL, Header, Body).  
+Zusätzlich kannst du in der Request-Datei auch **Tests** und **Pre-Request-Scripts** in Javascript definieren.  
+
+==== Environment ====
+In Bruno sind Environments einfache **JSON-Dateien** (z. B. `dev.json`, `prod.json`), in denen Variablen gespeichert sind.  
+So kannst du denselben Request mit verschiedenen Umgebungen ausführen, ohne jedes Mal die URL oder die Tokens manuell anzupassen.  
+
+==== Tests ====
+Tests sind kleine **Javascript-Skripte**, die du direkt in einer `.bru`-Datei anlegst.  
+Sie verwenden die `expect()`-Syntax, um Antworten der API automatisch zu überprüfen (z. B. Statuscode = 200).  
+
+===== Dokumentation =====
+Im [[https://docs.usebruno.com/|Bruno Docs]] findest du alle Funktionen von Bruno beschrieben und mit Beispielen erklärt.
+----
+{{tag>M450-LU07}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter (angepasst)

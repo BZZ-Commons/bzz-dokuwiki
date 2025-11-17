@@ -1,0 +1,44 @@
+====== LU03.A01 - Operatoren erkennen ======
+
+
+===== Rahmenbedingungen =====
+  * Sozialform: individual
+  * Hilfsmittel: 
+    * Nur Lehrmittel, keine Websuche oder AI
+    * [[https://www.w3schools.com/js/js_conditionals.asp | W3School- JavaScript Conditions]] 
+    * [[https://www.w3schools.com/js/js_operators.asp | W3School- JavaScript Operators]]
+  * Zeit: 5 Minutes
+  * Erwartetes Resultat: Die Konsolenausgabe der angegeben Beispiele wurde korrekt Vorausgesagt.
+
+===== Ausgangslage =====
+In jeder Programmiersprachen gibt es //Operatoren//, so auch in JavaScript. Dabei werden ähnlich einem Gleichungssystem zwei Seiten miteinander Verglichen. Das Resultat wird entschieden anhand des Vergleichergebnisses. Der Vergleich ist also korrekt (TRUE) oder er ist nicht korrekt (FALSE).
+
+===== Auftrag =====
+Nachfolgend finden Sie einige Vergleiche. Ihre Aufgabe besteht aus zwei Teilen:
+
+  - Vermutung anzustellen, was in der Konsole womöglich ausgegeben wird.
+  - Ihre Annahmen durch Laufen-Lassen des Codes im Visual Studio Code zu kontrollieren.
+
+  // Vergleichsoperatoren
+  console.log(42 == 21); 
+  console.log(42 != 21); 
+  console.log(42 > 21);  
+  console.log(42 < 21);  
+  console.log(42 >= 21); 
+  console.log(42 <= 21); 
+  console.log(42 <= 42); 
+
+  // Logische Operatoren  
+  console.log(42 <= 42 && 42 != 21);
+  console.log("9: ", true && true);        
+  console.log("10: ", true && false);       
+  console.log(true || true);
+  console.log(true || false);
+  console.log(true);
+
+===== Lösungen =====
+[[de:modul:m288:learningunits:lu03:loesungen:01|LU03.L01]]
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

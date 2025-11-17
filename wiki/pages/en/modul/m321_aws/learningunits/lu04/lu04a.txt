@@ -1,0 +1,22 @@
+====== LU04a - Deploy an App in K8s ======
+===== Goals =====
+  -I'm able to deploy an app in K8s cluster.
+  -I'm able to query relevant information on K8s cluster.
+  -I understand the purpose of the query commands.
+  -I'm able to run and view the minikube dashboard.
+  -I'm able to view the output of the app either on the console or in the browser.
+  -I'm able to enable or disable minikube addons.
+  -I'm able to remove the minikube cluster.
+  -I can suggest and implement at least one measure when an error message appears.
+
+===== Basics =====
+  - This [[https://youtu.be/VYmkBe5dHnI |video]] demonstrates how to deploy an app in Minikube running on a EC2 Instance.
+  - This [[https://youtu.be/cuLq3S3i9Ag |video]] demonstrates (without comments) how to start the dashboard of Minikube running on a EC2 Instance.
+===== Exercises =====
+  -Watch again the video cast.
+  -Deploy an app in YOUR K8s cluster.
+  -Memorize the procedure. It will become handy for future exercises.
+
+===== Study case =====
+  -Work on ''04/02_Exercises/01- to 04-Exercise.md'' located in your repository.
+  -If an error occurs, read the message carefully, think of a solution and implement it.

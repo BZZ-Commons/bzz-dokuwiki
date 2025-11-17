@@ -1,0 +1,32 @@
+====== LU04.A03 - Mehrdimensionale Arrays  ======
+
+===== Rahmenbedingungen =====
+  * Sozialform: individual
+  * Hilfsmittel: 
+    * Nur Lehrmittel, keine Websuche oder AI
+    * Zeit: 15 Minuten
+  * Erwartetes Resultat: Ein Script mit einem mehrdimensionalen Array inkl. der unten beschriebenen Teilschritte. 
+
+===== Ausgangslage =====
+Ein Kino hat 3 Reihen mit jeweils 5 Sitzplätzen. Die Plätze sollen in einem zweidimensionalen Array dargestellt werden. Jeder Platz ist am Anfang mit 0 belegt (frei).
+
+
+===== Auftrag A: Array anlegen =====
+  * A1: Legen Sie ein mehrdimensionales Array //kino// mit 3 Reihen und 5 Spalten an. 
+  * A2: Belegen Sie alle Plätze mit einer 0. 
+  * A3: Geben Sie das Ergebnis auf der Konsole aus
+
+
+===== Auftrag B: Array-Element verändern =====
+Bisher sind alle Plätze mit 0 belegt, sprich der Kinosall ist leer. Ein Pärchen möchte sich einen schönen Kinoabend gönnen. Verändern Sie das Array entsprechend und geben das Ergebnis aus.
+
+  * B1: Auf Reihe 2, Sitz 3 setzt sich S. Olivetti hin
+  * B2: Gleich daneben auf Sitz 4 K. Sutter. 
+  * B3: Geben Sie das Ergebnis auf der Konsole aus.
+
+===== Lösungen =====
+[[de:modul:m288:learningunits:lu04:loesungen:03|LU03.L03]]
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

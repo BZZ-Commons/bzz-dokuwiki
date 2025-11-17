@@ -1,0 +1,95 @@
+====== LU07b – SQL-DML: Einführung & Daten einfügen ======
+===== Einführung =====
+In LU05 haben wir die **DDL** (Data Definition Language) kennengelernt, mit der Tabellen angelegt werden.
+
+Folgender SQL-Code erzeugt eine **leere** Tabelle //favourite_film// mit den Spalten //film_id//((Automatisch hochzählende ID, eindeutiger Primärschlüssel)), //title//((Filmtitel)), //director//((Regisseur:in)), //released_year//((Veröffentlichungsjahr, vierstellig)), //star1//((Hauptdarsteller:in)):
+
+<WRAP center box 80% round><code sql>
+CREATE TABLE favourite_film
+(
+  film_id INT AUTO_INCREMENT PRIMARY KEY,
+  title VARCHAR(100),
+  director VARCHAR(50),
+  released_year YEAR,
+  star1 VARCHAR(50)
+);
+</code></WRAP>
+
+> **Wichtig:** //film_id// ist der **Primärschlüssel** → jeder Datensatz erhält automatisch eine eindeutige ID.  
+> **DML** = **Data Manipulation Language**: %%INSERT%%, %%UPDATE%%, %%DELETE%%. (//Read// erfolgt mit %%SELECT%% und gehört streng genommen zur **DQL**, wird im Alltag bei CRUD((Create, Read, Update, Delete Operationen)) aber mitgemeint.)
+
+Bisher haben wir neue Datensätze über die **Webstorm-Oberfläche** eingefügt (//Edit Data > "+"//):  
+
+{{:modul:m290_guko:learningunits:lu07:theorie:insert_edit_data_coppola.png?nolink&500}} 
+
+Das funktioniert, ist aber mühsam und fehleranfällig, wenn viele Daten eingetragen oder geändert werden müssen.  
+Darum machen wir das ab jetzt **programmatisch mit SQL**.  
+
+Die CRUD-Operationen aus der vorherigen Lektion setzen wir dabei direkt mit den Befehlen der **DML** (Data Manipulation Language) um:  
+%%INSERT%% entspricht **Create**, %%SELECT%% entspricht **Read**, %%UPDATE%% entspricht **Update** und %%DELETE%% entspricht **Delete**.  
+
+
+===== INSERT Statement =====
+Der Befehl %%INSERT%% fügt neue Datensätze in eine Tabelle ein. Dabei muss angegeben werden, **in welche Spalten** die Werte eingefügt werden.
+
+**Syntax (Einzelzeile)**
+<WRAP center box 80% round><code sql>
+INSERT INTO tabellenname (spalte1, spalte2, spalte3)
+VALUES (wert1, wert2, wert3);
+</code></WRAP>
+
+**Syntax (mehrere Zeilen auf einmal)**
+<WRAP center box 80% round><code sql>
+INSERT INTO tabellenname (spalte1, spalte2, spalte3)
+VALUES (wert1a, wert2a, wert3a),
+       (wert1b, wert2b, wert3b);
+</code></WRAP>
+
+**Syntax (INSERT ... SELECT)**
+<WRAP center box 80% round><code sql>
+INSERT INTO zieltabelle (spalte1, spalte2, spalte3)
+SELECT quelle_spalte1, quelle_spalte2, quelle_spalte3
+FROM quelle
+WHERE bedingung;
+</code></WRAP>
+
+---
+
+**Variante A: Spalten explizit angeben**
+<WRAP center box 80% round><code sql>
+INSERT INTO favourite_film (title, director, released_year, star1)
+VALUES ('Lost in Translation', 'Sofia Coppola', 2003, 'Scarlett Johansson');
+</code></WRAP>
+
+<WRAP center box 80% round>
+^ film_id ^ title               ^ director        ^ released_year ^ star1              ^
+| 1       | Lost in Translation | Sofia Coppola   | 2003          | Scarlett Johansson |
+</WRAP>
+
+**Variante B: Mehrere Zeilen auf einmal**
+<WRAP center box 80% round><code sql>
+INSERT INTO favourite_film (title, director, released_year, star1)
+VALUES
+  ('Inception', 'Christopher Nolan', 2010, 'Leonardo DiCaprio'),
+  ('Arrival', 'Denis Villeneuve', 2016, 'Amy Adams');
+</code></WRAP>
+
+<WRAP center box 80% round>
+^ film_id ^ title                 ^ director           ^ released_year ^ star1              ^
+| 1       | Lost in Translation   | Sofia Coppola      | 2003          | Scarlett Johansson |
+| 2       | Inception             | Christopher Nolan  | 2010          | Leonardo DiCaprio |
+| 3       | Arrival               | Denis Villeneuve   | 2016          | Amy Adams         |
+</WRAP>
+
+**Variante C: INSERT ... SELECT (Daten aus einer anderen Tabelle übernehmen)**  
+Mit %%INSERT ... SELECT%% können Datensätze direkt aus einer anderen Tabelle kopiert werden.  
+Das ist z. B. praktisch, wenn Daten aus //imdb_top_1000// übernommen werden sollen.
+
+<WRAP center box 80% round><code sql>
+INSERT INTO favourite_film (title, director, released_year, star1)
+SELECT Series_Title, Director, Released_Year, Star1
+FROM imdb_top_1000
+WHERE Released_Year >= 2000;
+</code></WRAP>
+
+> **Hinweis:** Mit %%WHERE%% können gezielt nur bestimmte Datensätze übernommen werden (z. B. ab Jahr 2000).

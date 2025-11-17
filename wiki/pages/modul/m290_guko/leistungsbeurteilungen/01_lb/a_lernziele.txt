@@ -1,0 +1,57 @@
+====== Leistungsbeurteilung 1 (LB1) – Lernziele ======
+Damit Sie sich optimal auf diese Prüfung vorbereiten können, finden Sie zu den unterschiedlichen Themen nachfolgend eine Auflistung von Lernzielen, welche an der Leistungsbeurteilung überprüft werden könnten. Alle Lernziele beziehen sich auf die im Unterricht behandelte Theorie und den damit verbundenen Übungen.
+Diese Lernziele decken die Inhalte der Learning Units **LU01 bis LU05** ab.  
+Sie bilden die Grundlage für die erste Leistungsbeurteilung (LB1) im Modul M290.
+
+
+===== LU01 – Grundlagen Datenbanken =====
+  * Ich kann in eigenen Worten erklären, was eine Datenbank ist.
+  * Ich kann den Aufbau eines Datenbank-Systems erklären.
+  * Ich kann die wichtigsten Elemente einer relationalen Datenbank beschreiben.
+  * Ich kann mindestens drei Vorteile für den Einsatz einer Datenbank aufzählen.
+  * Ich kann den Unterschied zwischen relationalen und NoSQL-Datenbanken erklären.
+  * Ich weiss, wozu relationale Datenbanken eingesetzt werden.
+
+===== LU02 – Technische Einrichtung & SQL-Abfragen =====
+  * Ich kann drei verschiedene DBMS (Datenbankmanagementsytem) nennen.
+  * Ich kann erklären, dass MySQL ein Datenbankserver ist, der als Hintergrunddienst auf dem Computer läuft.
+  * Ich kann die Abkürzung //SQL// beschreiben und erklären wozu die Sprache eingesetzt wird.
+  * Ich kann Webstorm installieren und mit der MySQL-Datenbank verbinden.
+  * Ich kann mit Webstorm eine Datenbank erstellen und Daten importieren.
+  * Ich kann mit SQL Daten aus einer Tabelle mit //SELECT ... FROM ... WHERE ... IN... ORDER BY...// korrekt abfragen.
+
+**SQL-Abfragen im Detail:**
+  - Ich kann mit dem SQL-Statement //SELECT// eine Datenbank-Tabelle mit einzelnen oder allen Spalten korrekt abfragen.
+  - Ich kann mit //SELECT ... FROM ... ORDER BY ...// Daten sortieren (ASC / DESC).
+  - Ich kann mit //SELECT ... FROM ... WHERE ...// Daten nach Bedingungen filtern.
+  - Ich kann mit //SELECT ... FROM ... WHERE ... IN (...)// Daten gezielt filtern.
+  - Ich kann mit //SELECT ... FROM ... WHERE ...// komplexe Bedingungen formulieren, indem ich passende Vergleichs- und logische Operatoren (z. B. =, <, >, AND, OR) korrekt einsetze.
+  - Ich kann mit //SELECT ... FROM ... WHERE ... LIKE ...// und den Platzhaltern //%// und //_// nach bestimmten Textmustern in einer Tabelle suchen.
+
+
+===== LU03 – Datenmodellierung =====
+  * Ich kann erklären, was ein Entity-Relationship-Modell (ERM) ist und wozu man es braucht.
+  * Ich weiss, was die Abkürzung //ERD// bedeutet und wozu das Diagramm eingesetzt wird.
+  * Ich kann die wichtigsten Teile eines ERD benennen und erklären.
+  * Ich kann die Begriffe //Entität//, //Attribut// und //Kardinalität// beschreiben.
+  * Ich kann den Zweck von //Primär- und Fremdschlüsseln// erklären.
+  * Ich kann die wichtigsten Datentypen (Zahlen, Texte, Datum/Zeit, Boolean) in MySQL benennen und korrekt einsetzen.
+
+
+===== LU04 – ER-Modellierung (Chen & Crow’s Foot) =====
+  * Ich kann anhand einer Aufgabenstellung ein ERD in Chen-Notation erstellen.
+  * Ich kann für jede Entität einen sinnvollen Primärschlüssel identifizieren und begründen.
+  * Ich kann die wichtigsten Symbole und Verbindungen in der Crow’s-Foot-Notation erkennen und anwenden.
+  * Ich kann ein ERD korrekt in Crow’s-Foot-Notation umsetzen.
+  * Ich kann in einem ERD die richtigen Datentypen und Primärschlüssel setzen.
+
+===== LU05 – Vom ERD zur Datenbank (SQL-DDL) =====
+  * Ich kann aus einem ERD (Chen-Notation) ein ERD in Crow’s-Foot-Notation erstellen.
+  * Ich kann aus einem ERD mit SQL eine Datenbank generieren.
+  * Ich kann mit SQL Tabellen mit den passenden Spalten und Datentypen erstellen.
+  * Ich kann beim Erstellen der Tabellen die wichtigsten Constraints erklären und sinnvoll anwenden:
+    * //NOT NULL//
+    * //PRIMARY KEY//
+    * //UNIQUE//
+    * //AUTO_INCREMENT//
+  * Ich kann eine Datenbank und Tabellen mit SQL löschen.

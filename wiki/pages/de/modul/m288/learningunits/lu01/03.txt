@@ -1,0 +1,42 @@
+====== LU01c - Die Laufzeitumgebung "node.js" ======
+
+===== Einleitung =====
+**Node.js** ist eine plattformübergreifende JavaScript-Laufzeitumgebung, die auf der V8-Engine von Google Chrome basiert. Sie ermöglicht es, JavaScript nicht nur im Browser, sondern auch serverseitig auszuführen. Typische Einsatzgebiete sind Webserver, APIs, Echtzeitanwendungen und Tools zur Automatisierung.
+
+
+===== Zielsettzung =====
+**Das Hauptziel von Node.js ist es, eine schnelle, skalierbare und effiziente Umgebung für serverseitige Anwendungen zu bieten.** Dank des asynchronen, ereignisgesteuerten Modells eignet sich Node.js besonders für Anwendungen, die viele gleichzeitige Verbindungen verarbeiten müssen – ohne dabei in Performance-Probleme zu geraten.
+
+**Kurz:** Node.js will JavaScript zum Allround-Werkzeug machen.
+
+===== Download für MacOS und Windows =====
+
+Node.js steht kostenlos zur Verfügung und lässt sich direkt von der offiziellen Website herunterladen:
+
+Quelle: [[https://nodejs.org | nodejs.org]]	
+
+==== MacOS ====
+  * Herunterladen der macOS Installer (.pkg) Datei herunter.
+  * Doppelklicken und den Installationsanweisungen folgen.
+  * Nach Abschluss im Terminal prüfen mit dem Terminal (schwarzes Fenster)
+    * node -v
+    * npm -v
+  * Die Ausgabe im MacOS-Terminal-Fenster sollte wie folgt aussehen.
+
+{{:de:modul:m288:learningunits:lu01:node-install_macos.png?600|node.js und npm (node package manager) wurden korrekt auf macOS installiert}}
+
+  
+==== Windows ====
+  * Windows Installer (.msi) herunterladen.
+  * Setup starten und durchklicken (inkl. npm, das automatisch mitinstalliert wird).
+  * Über die Eingabeaufforderung (STRG + CMD) prüfen mit:  
+    * node -v
+    * node -v
+  * Die Ausgabe im Windows-Cmd-Fenster sollte wie folgt aussehen:
+
+--- Folgt ---
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir
+

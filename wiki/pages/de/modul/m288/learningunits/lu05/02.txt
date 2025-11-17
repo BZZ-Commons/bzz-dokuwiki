@@ -1,0 +1,39 @@
+====== LU05b - for-Loop ======
+
+Die klassische for-Schleife ist eine kopfgesteuerte Schleife, d.h. die Schleifenbedingung wird im Kopf der Schleife abgefragt. Sie ist ideal, wenn wir genau wissen, wie oft etwas wiederholt werden soll. Z.B. wir wollen unsere Produkte jeweils 10 Stück auf einer Seite präsentieren.
+
+Beachten Sie den Kopf der Schleife, der 3 Elemente enthält:
+
+  - Parameter: **let: i = 0;** --> Wir definieren eine Laufvariable mit einem Startwert, in diesem Fall fangen wir beim Anfang, also bei 0 an
+  - Parameter: **i < 5;** -->  Wie lange soll die Schleife laufen. Hier solange i kleiner ist als 5, also 0, 1, 2, 3, 4
+  - Parameter: **i++** --> In welcher Schrittweite soll die i durchlaufen werden. Es ist nicht immer so, dass immer in einer Schrittweite gezählt wird. Bei Stunden z.b. kann es auch 12 sein.
+
+**Beispiel**
+
+  for (let i = 0; i < 5; i++) {
+    console.log("Zahl:", i);
+  }
+  // 1. Startwert (let i = 0)
+  // 2. Bedingung (i < 5)
+  // 3. Anweisung ausführen
+  // 4.	Schritt (i++)
+  
+**Ausgabe**
+
+  Zahl: 0
+  Zahl: 1
+  Zahl: 2
+  Zahl: 3
+  Zahl: 4
+
+
+{{:de:modul:m288:learningunits:lu04:for-loop.png?500|for-loop im Detail}}
+
+===== Lernvideos =====
+
+{{:de:modul:m288:learningunits:lu04:for-schleife_javascript_tutorial_deutsch_teil_10.mp4|HowTo build a for-loop }}
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir
+

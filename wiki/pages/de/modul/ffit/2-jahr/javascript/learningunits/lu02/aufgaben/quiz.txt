@@ -1,0 +1,91 @@
+====== LU02.A02 - Quiz ======
+
+Erstelle ein interaktives Quiz-Programm, bei dem der Benutzer Fragen beantworten kann. Die Benutzer
+sollen am Ende des Quiz sehen, wie viele Fragen sie richtig beantwortet haben. Es soll jeweils eine Frage mit 4 verschiedenen Antwortmöglichkeiten auftauchen. 
+
+Beispielvorlagen für HTML und CSS:
+
+<code html>
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Overlay</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="quiz-overlay">
+    <div class="question">Was ist die Hauptstadt von Frankreich?</div>
+
+    <div class="answers">
+        <button class="answer">A) Berlin</button>
+        <button class="answer">B) Madrid</button>
+        <button class="answer">C) Paris</button>
+        <button class="answer">D) Rom</button>
+    </div>
+
+    <div class="status">
+        <span class="timer">Zeit: %%ZEIT%%</span>
+        <span class="score">Richtige Fragen: %%PUNKTE%%</span>
+    </div>
+</div>
+
+</body>
+</html>
+</code>
+
+<code css>
+.quiz-overlay {
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    padding: 20px;
+    width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.question {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.answers {
+    display: grid;
+    gap: 10px;
+}
+
+.answer {
+    background-color: #4a90e2;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: background-color 0.3s;
+}
+
+.answer:hover {
+    background-color: #357ABD;
+}
+
+.status {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.timer, .score {
+    font-size: 1em;
+    color: #333;
+}
+</code>
+
+==== Rahmenbedingungen ====
+^ Was ^ Beschreibung ^
+| Produkt: | - |
+| Zeit: | 60 Min. |
+| Sozialform: | Einzel- oder Partnerarbeit |
+| Arbeitsmittel: | Unterrichtsunterlagen, IDE, Browser |

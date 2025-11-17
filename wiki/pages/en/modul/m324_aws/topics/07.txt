@@ -1,0 +1,63 @@
+===== Docker in a Docker (DinD) =====
+<sup>Internal reference: topics/04-1.md</sup>
+\\
+==== Introduction ====
+Here are a few use cases to run docker inside a docker container.
+  * One potential use case for docker in docker is for the CI/CD pipeline, where you need to build and push docker images to a container registry after a successful code build.
+  * Modern CI/CD systems support Docker-based agents or runners where you can run all the build steps inside a container and build container images inside a container agent.
+  * Building Docker images with a VM is pretty straightforward. However, when you plan to use Jenkins Docker-based dynamic agents for your CI/CD pipelines, docker in docker comes as a must-have functionality.
+  * Sandboxed environments.
+  * For experimental purposes on your local development workstation.
+
+
+\\
+==== How it works ====
+DinD creates a child container inside a Docker container. For this, you need either an official docker image with dind tag. The dind image is baked with the required utilities for Docker to run inside a docker container. Or you build it with a Dockerfile with more control for all added packages and configuration (see Exercises in this course)
+
+{{:en:modul:m324_aws:topics:03_01.png?600|Fig-01: Docker in Docker container}}
+
+\\
+==== Example with ready-to-use image ====
+(1) Create a container named i.e. dind-test with ''docker:dind'' image from Docker-Hub.
+<code>
+docker run --privileged -d --name dind-test docker:dind
+</code>
+
+(2) Log in to the container using exec.
+<code>
+docker exec -it dind-test /bin/sh
+</code>
+
+(3) When you list the docker images, you should see the Ubuntu image along with other docker images in your host.
+<code>
+docker images
+</code>
+
+(4) Now create a Dockerfile inside the test directory.
+<code>
+mkdir test && cd test
+</code>
+
+(5) Create a Dockerfile
+<code>
+nano Dockerfile
+</code>
+
+(6) Copy the following Dockerfile contents to test the image build from within the container.
+<code>
+FROM ubuntu:18.04
+LABEL maintainer=Hans Muster <hmuster@example.com>
+RUN apt-get update && \
+    apt-get -qy full-upgrade && \
+    apt-get install -qy curl && \
+    curl -sSL https://get.docker.com/ | sh
+</code>
+
+(7) Build the Dockerfile
+<code>
+docker build -t test-image .
+</code>
+
+----
+
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Daniel Garavaldi

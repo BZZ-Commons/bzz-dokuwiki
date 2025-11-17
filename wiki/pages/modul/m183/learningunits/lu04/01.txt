@@ -1,0 +1,62 @@
+====== LU04a - OWASP ======
+
+===== Quellen =====
+  * [[https://de.wikipedia.org/wiki/Open_Worldwide_Application_Security_Project|Wikipedia: OWASP]]
+  * [[https://owasp.org/|OWASP-International]]
+  * [[https://owasp.org/www-project-top-ten/|OWAPS-TopTen]]
+  * {{ :modul:m183:learningunits:lu04:owasp_top_10-2017_de_v1.0.pdf | OWASP-TopTen 2017}}
+
+===== Lernziele =====
+  - Das Akronym OWASP erklären können.
+  - Erklären können was OWASP ist und die Zielsetzung beschreiben können.
+  - Vorteile von OWASP aufzählen können.
+  - Das Konzept des Risikorating erklären können.
+
+===== OWASP in a nutshell ====
+**OWASP** steht für **Open Worldwide Application Security Project** und ist eine internationale, gemeinnützige (Non-Profit) Organisation, die sich der Verbesserung der Sicherheit von Software verschrieben hat. Das Ziel: Entwickler, Unternehmen und Sicherheitsverantwortliche mit frei zugänglichen Informationen, Tools und Best Practices zu unterstützen – ganz ohne kommerzielle Interessen. OWASP ist besonders in der Webentwicklung bekannt, da es praktische Hilfen zur Identifikation und Absicherung von Sicherheitslücken bietet.
+
+{{:modul:m183:learningunits:lu04:owasp.jpg?400|}}
+
+Das bekannteste Projekt ist die **OWASP Top 10**: eine regelmäßig aktualisierte Liste der zehn kritischsten Sicherheitsrisiken bei Webanwendungen, darunter Klassiker wie **Injection (z. B. SQL-Injection)**, **Broken Authentication**, **Security Misconfiguration** oder **Insecure Design**. Diese Liste dient als Referenz für Entwickler und Entscheidungsträger, um Schwachstellen frühzeitig zu erkennen und zu vermeiden.
+
+{{:modul:m183:learningunits:lu04:owasp-top-10-vulnerabilities.jpg?800|}}
+
+Neben der Top 10 stellt OWASP viele weitere Projekte und Werkzeuge bereit, z. B. **ZAP (Zed Attack Proxy)** zur automatisierten Sicherheitsüberprüfung oder das **Cheat Sheet Series**, eine Sammlung kompakter Empfehlungen zu sicheren Entwicklungspraktiken.
+
+OWASP fördert auch den Austausch in der Community: In lokalen Chapters, auf Konferenzen und über Online-Plattformen werden Erfahrungen geteilt und Sicherheitswissen verbreitet – für alle offen, die Software ein kleines bisschen weniger angreifbar machen wollen.
+
+===== Risikoanalyse nach OWASP Risk-Rating-Methode =====
+
+{{:modul:m183:learningunits:lu04:risikorating_konzept.png?600|}}
+
+Die Risikoanalyse der OWASP Top 10 basiert auf der **OWASP Risk-Rating-Methode**. Ziel ist es, Schwachstellen danach zu bewerten, welches Risiko sie für eine typische Webanwendung darstellen. Dabei werden **Wahrscheinlichkeit** (z. B. Verbreitung, Ausnutzbarkeit, Auffindbarkeit) und **Auswirkungen** (z. B. technische oder geschäftliche Folgen) berücksichtigt.
+
+Die Methode ist **anwendungsspezifisch unabhängig**, also eher allgemein gehalten. Sie beurteilt nicht, wie stark eine konkrete Anwendung gefährdet ist, sondern bewertet Schwachstellen allgemein, um Sicherheitsbewusstsein zu schaffen.
+
+Die Risikobewertung erfolgt auf Basis von vier Faktoren:
+ 
+  - **Ausnutzbarkeit**
+  - **Verbreitung**
+  - **Auffindbarkeit**
+  - **Technische Auswirkungen**
+
+Jeder dieser Faktoren wird auf einer Skala von 1 (niedrig) bis 3 (hoch) bewertet. Daraus ergibt sich ein Risiko-Wert:
+
+  * **Durchschnitt der drei Wahrscheinlichkeits-Faktoren**
+  * Multipliziert mit dem Wert für die Auswirkungen
+
+**Beispiel:**
+  * Ausnutzbarkeit = 3, Verbreitung = 3, Auffindbarkeit = 3 → Durchschnitt = 3
+  * Technische Auswirkung = 2
+  * **Risiko = 3 × 2 = 6**
+
+Wichtig: Diese Methode **berücksichtigt keine Bedrohungsquellen oder konkreten Unternehmenskontexte**. Sie dient ausschließlich zur generellen Einstufung von Risiken – nicht zur Anwendung individueller Sicherheitsbewertungen.
+
+===== OWASP-Risiko-Rating 2017 =====
+{{:modul:m183:learningunits:lu04:owasp-topten_2017.png?800|}}
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir
+
+
+

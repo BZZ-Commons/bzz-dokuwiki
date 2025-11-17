@@ -1,0 +1,21 @@
+====== LU07.A01 - Schritt 7 ======
+<WRAP center round todo 60%>
+Werfen Sie eine eigene Exception, falls ''Library.search_book_by_title()'' ''None'' zurück gibt.
+Fangen Sie diese Exception in ''Customer.lend_book_by_title()'' und geben Sie eine Fehlermeldung aus. 
+</WRAP>
+
+
+===== Library =====
+Passen Sie die Methode ''search_book_by_title'' an, damit die Exception geworfen wird.
+
+===== Customer =====
+Passen Sie die Methode ''lend_book_by_title'' an, damit die Exception gefangen und die Fehlermeldung geprintet wird wird.
+
+===== BookNotFoundError =====
+Realisieren Sie die Exception-Klasse ''BookNotFoundError''.
+Die Fehlermeldung soll ''Das angefragte Buch ist nicht vorhanden'' sein.
+
+
+----
+{{tag>M320-LU07}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] René Probst, bearbeitet durch Marcel Suter und Kevin Maurizi

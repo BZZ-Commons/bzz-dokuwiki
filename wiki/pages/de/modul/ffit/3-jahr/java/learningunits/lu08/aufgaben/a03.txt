@@ -1,0 +1,7 @@
+==== LU08.A03 JPA Repositories erstellen ====
+
+Erstellen Sie für jede Datenklasse eine entsprechende JpaRepository-Implementation mit folgenden Methoden:
+
+  * ProjectRepository: -
+  * AccountRepository: findByProject
+  * BookingRepository: findByProject

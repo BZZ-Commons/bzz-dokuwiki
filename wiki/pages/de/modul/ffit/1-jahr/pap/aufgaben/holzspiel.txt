@@ -1,0 +1,45 @@
+====== Übung: 06 Hölzchenspiel ======
+
+==== Ausgangslage ====
+
+Schreiben sie ein Programm, damit zwei Benutzer dieses einfache Kinderspiel spielen können.
+
+- Zu Beginn liegen auf einem Haufen 21 Streichhölzer.
+
+- Spieler 1 beginnt.
+
+- Solange noch Streichhölzer vorhanden sind,
+
+- entscheidet der aktuelle Spieler, ob er eins, zwei oder drei Streichhölzer nimmt.
+
+- wird die entsprechende Anzahl Streichhölzer vom Stapel genommen.
+
+- Danach ist der andere Spieler an der Reihe.
+
+- Wer zuletzt ein Streichholz nehmen musste, hat verloren.
+
+==== Ablauf in der Konsole ====
+<code>
+Es sind 21 Hölzer vorhanden.
+Spieler 1: wieviele Hölzer nimmst du? (1-3) > 2
+Es sind 19 Hölzer vorhanden.
+Spieler 2: wieviele Hölzer nimmst du? (1-3) > 1
+Es sind 18 Hölzer vorhanden.
+...
+Es sind 4 Hölzer vorhanden.
+Spieler 2: wieviele Hölzer nimmst du? (1-3) > 3
+Es sind 1 Hölzer vorhanden
+Spieler 1: wieviele Hölzer nimmst du? (1-3) > 1
+Spieler 1 hat verloren
+</code>
+
+===== Programmablaufplan =====
+
+Stellen Sie den Programmablauf gemäss Ausgangslage als Ablaufdiagramm graphisch dar.
+Achten Sie darauf, die einzelnen Schritte detailliert und in der richtigen Abfolge darzustellen.
+
+==== Erwartetes Resultat ====
+Programmablaufplan (PAP)
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Marcel Suter

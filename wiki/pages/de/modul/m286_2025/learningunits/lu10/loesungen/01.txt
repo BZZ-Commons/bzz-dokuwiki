@@ -1,0 +1,26 @@
+====== LU10.L01 - Datei- und Ordner mittels MacOS TERMINAL verwalten ======
+
+
+===== Teilauftrag A: Orientierung - 5' =====
+  * A1: Öffne ein Terminal.
+  * A2: Finde mit heraus, in welchem Verzeichnis Sie sich befinden: <color #22b14c>pwd</color>
+  * A3: Listen Sie den Inhalt dieses Verzeichnisses mit an. <color #22b14c>ls -l</color>
+  * A4: Verwende Sie //man ls//, um nachzulesen, was die Option -a bewirkt, und probiere Sie diese aus.<color #ed1c24>???</color>
+
+===== Teilauftrag B: Verzeichnisse & Dateien - 10' =====
+  * B1: Erstelle Sie im Home-Verzeichnis einen Ordner mit dem Namen //uebung_shell//. <color #22b14c>mkdir uebung_shell</color>
+  * B2: Wechsle Sie in diesen. <color #22b14c>cd uebung_shell</color>
+  * B3: Erstellen sie darin drei leere Textdateien: //test1.txt, test2.txt, notizen.txt//. <color #22b14c>touch test1.txt, test2.txt, test3.txt</color>
+  * B4: Zeige Sie alle Dateien an, die mit //test// beginnen. <color #22b14c>ls test*</color>
+  * B5: Kopiere Sie //notizen.txt// nach backup_notizen.txt. <color #22b14c>cp notizen.txt</color>
+  * B6: Verschiebe Sie //test2.txt// in ein neues Unterverzeichnis archiv (dieses musst du vorher anlegen).<color #ed1c24>???</color>
+
+===== Teilauftrag C – Umbenennen & Löschen - 10' =====
+  * C1: Benennen sie //test1.txt// in //ergebnis.txt// um. <color #22b14c>mv test1.txt ergebnis.txt</color>
+  * C2: Verändern Sie alle Dateien mit der Endung //.txt// in //.bak// um. <color #ed1c24>???</color>
+  * C3: Listen Sie den aktuellen Inhalt mit auf und prüfen Sie Ihr Ergebnis. <color #22b14c>ls -l</color>
+  * C4: Löschen Sie das Unterverzeichnis archiv mitsamt Inhalt. <color #22b14c>rm -r archiv</color>
+  * C5: Löschen Sie einzelne Datei Ihrer Wahl. <color #22b14c>rm dateiname.bak</color>
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

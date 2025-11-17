@@ -1,0 +1,17 @@
+====== LU04f - Service Resiliency ======
+===== Goals =====
+  -I'm able to count and explain the relevant pieces of the "self-healing" mechanism of K8s.
+  -I'm able to explain the purpose of each piece in my own words.
+  -I'm able to illustrate and verify this mechanism in an example.
+  -I can suggest and implement at least one measure when an error message appears.
+
+===== Basics =====
+In [[en:modul:m321_aws:topics:09|this article]] you will learn how K8s "self-heals".
+
+===== Study case =====
+  -Work on ''09/02_Exercises/01/Exercise.md to /02/Exercise.md'' located in your repository.
+  -If an error occurs, read the message carefully, think of a solution and implement it.
+
+----  
+
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Daniel Garavaldi

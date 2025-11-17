@@ -1,0 +1,31 @@
+====== LU00d - LB1 Inhalt (Lernziele) Jahrgang 2025 ======
+
+==== A. Allgemein ====
+  * A.1 Den Unterschied zwischen Syntaktik und Semantik erklären und Beispiele geben können.
+  * A.2 Syntaktische und semantische korrekte Programme schreiben und Programmfehler selbstständig erkennen und beheben können.
+
+==== B. Einführung JavaScript ====
+  * B.1 Den Zweck und Einsatzmöglichkeiten von JavaScript (im Vergleich zu HTML, CSS, Sprachparadigmen) in eigenen Worten erklären.
+  * B.2 Anhand des Client-Server-Modell angeben können, wo JavaScript ausgeführt wird.
+  * B.3 Die Versionen von JS den Jahreszahlen zuordnen und die aktuelle Version kennen. 
+
+==== C. Variablen und Datentypen in JavaScript ====
+  * C.1 Die Deklarationsschlüsselwörter let, var und const erläutern und unterscheiden können.
+  * C.2 Werte einer Variable respektive Konstanten zuweisen können.
+  * C.3 Den Operator //typeof// korrekt anwenden können, um den Datentyp zu ermitteln.
+
+==== D. Arrays in JavaScript ====
+  * D.1 Mit eigenen Worten beschreiben können, was Arrays sind und welchen Zweck sie erfüllen.
+  * D.2 Arrays mit verschiedenen Datentypen initialisieren (erzeugen) können.
+  * D.3 Einzelne Elemente eines Arrays anhand eines Indexes auslesen und hinzufügen können.
+  * D.4 Die Länge eines Arrays mit ermitteln können.
+  * D.5 Die Array-Methoden //push, pop, shift, unshift// auf ein Array anwenden können.
+  * D.6 Mehrdimensionale Arrays ver-und bearbeiten können.
+
+==== E. Schleifen in JavaScript ====
+  * E.1 Mit eigenen Worten beschreiben können, was //Iterationen// (Schleifen/Loops) sind und welchen Zweck sie erfüllen.
+  * E.2 Ein Array mit einer for-loop ausgeben.
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

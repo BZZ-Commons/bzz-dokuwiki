@@ -1,0 +1,22 @@
+====== LU05a - Jenkins with Docker ======
+<sup>Internal reference: learningunits/05-1.md</sup>
+\\
+===== Goals =====
+  -I can set up a Jenkins controller with a container including Docker runtime (Docker in Docker).
+  -I can set up Jenkins pipeline for automated testing with docker
+  -If there are any errors, I can analyze the error, suggest and test an initial workaround (troubleshooting).
+
+
+\\
+===== Basics =====
+In [[en:modul:m324_aws:topics:07|this article]], you will learn what Docker in Docker is and why is it useful in the context of build automation. <sup>Internal reference 04-1.md</sup>
+
+\\
+===== Exercises =====
+  -Setup Jenkins ''04/02_Exercises/a01'' - according to the learning objectives (see course repository).
+  -If there is an error, read the message carefully, think about a solution and implement it.
+
+
+----
+
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Daniel Garavaldi

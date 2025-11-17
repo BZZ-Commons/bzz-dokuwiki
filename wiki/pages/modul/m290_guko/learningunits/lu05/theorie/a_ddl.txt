@@ -1,0 +1,132 @@
+====== LU05a – SQL-DDL: Datenbanken & Tabellen anlegen und löschen ======
+
+===== Lernziele =====
+Sie lernen in dieser Lektion:
+  * wie Sie **Datenbanken** anlegen und löschen
+  * wie Sie darin **Tabellen** mit Spalten erstellen
+  * wie Sie Tabellen auch wieder **löschen**
+
+Diese Befehle gehören zur **Data Definition Language (DDL)** von SQL.
+
+
+===== Datenbanken erstellen und löschen =====
+
+Mit einer **Datenbank** schaffen Sie einen „Ordner“, in dem Sie Tabellen anlegen können.  
+Hinweis: In **MySQL** sind *Database* und *Schema* Synonyme. In WebStorm (Database-Plugin) lautet der Menüpunkt **New → Schema**, er erstellt damit eine MySQL-Datenbank.
+
+<WRAP box center 80% round> 
+**Datenbank erstellen:**
+<code sql>
+CREATE DATABASE mydb_perfect;
+</code>
+//Bisher haben wir das in WebStorm per Rechtsklick auf die Verbindung → **New → Schema** gemacht (siehe Screenshot).//
+{{:modul:m290_guko:learningunits:lu05:theorie:screenshot_2025-09-14_at_14.29.02.png?direct&400|}}
+</WRAP>
+
+**Mit Datenbanken arbeiten (USE)**
+In einem Datenbanksystem (z. B. MySQL) können mehrere **Datenbanken (Schemas)** nebeneinander existieren.  
+Beispiel: Auf demselben MySQL-Server laufen z. B. die Datenbanken //digitech_ch// und //galaxus_ch// – sie liegen im gleichen System, verwalten ihre Daten aber **getrennt**.
+
+Damit man weiss, **in welcher Datenbank man arbeitet**, muss man diese zuerst auswählen.  
+Das geschieht mit dem SQL-Befehl **USE**:
+
+<WRAP box center 80% round> 
+**Auf eine Datenbank umschalten (Standard-Datenbank für SQL-Befehle aktiv setzen):**
+<code sql>
+USE mydb_perfect;
+</code>
+In WebStorm haben wir bisher die Datenbank über das **Drop-Down-Feld <Schema>** oben im Datenbank-Fenster ausgewählt.  
+Der Befehl //USE// macht dasselbe – nur in SQL-Code-Form.
+{{:modul:m290_guko:learningunits:lu05:theorie:screenshot_2025-09-14_at_14.28.46.png?direct&400|}}
+</WRAP>
+
+Ab diesem Moment werden alle folgenden SQL-Befehle (z. B. //CREATE TABLE//, //SELECT//, //DROP TABLE//) in dieser Datenbank ausgeführt.
+
+
+
+
+<WRAP box center 80% round> 
+**Datenbank löschen:**
+<code sql>
+DROP DATABASE mydb_perfect;
+</code>
+</WRAP>
+
+<WRAP box center 80% round> 
+**Achtung:** //DROP DATABASE// löscht die **gesamte** Datenbank inkl. **aller** Tabellen und Daten. In produktiven Systemen nur nach Backup verwenden.
+</WRAP>
+
+
+
+===== Tabellen erstellen =====
+Wie wird nun in eine Datenbank eine Tabelle angelegt?
+Dazu gibt es in SQL die Anweisung //CREATE TABLE//, die eine Tabelle mit den dazugehörigen Spalten und deren Datentypen erzeugt.
+Mit dem Befehl **CREATE TABLE** legen Sie eine Tabelle in der aktuell gewählten Datenbank an.
+
+**Allgemeine Syntax:**
+<WRAP box center 80% round> 
+<code sql>
+CREATE TABLE tabellenname (
+  spaltenname1 DATENTYP,
+  spaltenname2 DATENTYP,
+  ...
+);
+</code>
+//**Wichtig**: nach der letzten Spalte wird __kein Kommma__ mehr geschrieben. Die drei Punkte (...) hier im Beispiel stehen für weitere Spalten.//
+</WRAP>
+
+
+
+**Wichtige Namensregeln:**
+  * Keine Leerzeichen, Umlaute oder Sonderzeichen
+  * Nur Kleinbuchstaben
+  * Tabellennamen müssen eindeutig sein
+
+
+===== Beispiel: Tabelle Student =====
+
+Wir wollen eine Tabelle **student** (Lernende:r) erstellen, die eine ID, den Vornamen, den Nachnamen und das Geburtsdatum speichert:
+<WRAP box center 80% round> 
+<code sql>
+CREATE TABLE student (
+  stundent_id INT,
+  name VARCHAR(50),
+  surname VARCHAR(50),
+  birthdate DATE
+);
+</code>
+Nach Ausführung dieses DDL-Befehls würde das Ergebnis ähnlich wie in der folgenden Abbildung dargestellt aussehen. 
+{{:modul:m290:learningunits:lu05:theorie:m290_lu06b.abb2.png?600|}}
+</WRAP>
+
+**Erklärung:**
+  * //INT// → ganze Zahl (1..50 etc)
+  * //VARCHAR(50)// → Zeichenkette variabler Länge (max. 50)
+  * //DATE// → Datum in YYYY-MM-DD
+
+
+===== Tabellen löschen =====
+
+Mit dem Befehl **DROP TABLE** löschen Sie eine komplette Tabelle (inklusive aller Daten):
+<WRAP box center 80% round> 
+<code sql>
+DROP TABLE student;
+</code>
+</WRAP>
+
+<WRAP box center 80% round important> 
+**Achtung:** Dieser Befehl kann **nicht rückgängig gemacht** werden und dieser Befehl löscht auch alle Daten aus der Tabelle!
+</WRAP>
+
+
+===== Merksatz =====
+^ SQL-Befehl        ^ Bedeutung                                      ^
+| CREATE DATABASE   | Neue Datenbank erstellen                       |
+| USE DATABASE   | Datenbank "aktiv" schalten|
+| DROP DATABASE      | Datenbank löschen                             |
+| CREATE TABLE      | Neue Tabelle in der aktiven Datenbank erstellen|
+| DROP TABLE        | Tabelle aus der aktiven Datenbank löschen      |
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]]

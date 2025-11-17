@@ -1,0 +1,41 @@
+====== Lösungsvorschlag: 06 Hölzchenspiel ======
+
+==== Programmablauf (Kompetenz A) ====
+=== Allgemeines ===
+Nach jedem Spielzug eines Spielers ist der jeweils andere Spieler dran.
+Vielleicht tendiert man zuerst dazu, den ganzen Ablauf doppelt zu zeichnen.
+Einmal für den Spieler Eins und einmal für den Spieler Zwei.
+Viel eleganter ist es, den aktuellen Spieler in einer Variable festzuhalten.
+Nach dem Spielzug wird einfach der jeweils aktuelle Spieler in die Variable geschrieben.
+
+<code>
+player = 1 // Initialisierung am Start
+
+Solange (spiel nicht fertig) {
+... // Der eigentliche Spielzug wird abgearbeitet
+
+// Am Ende des Spielzugs, lege den neuen Spieler fest
+Falls (player = 1)
+player = 2
+Sonst
+player = 1
+}
+</code>
+
+== Für Schreibfaule ==
+Die Selektion lässt sich auch mit einer einzigen Rechnung ersetzen:
+<code>
+player = 3 - player
+</code>
+
+=== Programmablaufplan ===
+{{de:modul:m319:learningunits:lu03:loesungen:hoelzchenspielpap.png?400|}}
+
+
+=== Struktogramm (Nassi Shneiderman) ===
+
+{{de:modul:m319:learningunits:lu03:loesungen:holzspiel_1_ns.png?400|}}
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Marcel Suter

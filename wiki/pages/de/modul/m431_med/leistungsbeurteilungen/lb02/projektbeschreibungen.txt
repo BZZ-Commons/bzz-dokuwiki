@@ -1,0 +1,201 @@
+====== LB02b - Projektbeschreibungen ======
+
+===== 1) Kartenspiel =====
+
+==== Ausgangslage ====
+In Ihrer Ausbildung zum Mediamatiker:in werden Sie sehr viele unterschiedliche Inhalte in unterschiedlichen Modulen erlernen.  
+Es kann deshalb schnell passieren, dass man den Überblick zu den unterschiedlichen Modulinhalten und dessen Abfolge verliert.  
+
+Lernende aus allen Lehrjahren würden es begrüssen, wenn diese auf spielerische Art die Inhalte zu den unterschiedlichen Modulen kennenlernen könnten.
+
+==== Zu erwartendes Ergebnis ====
+Bis zum Abgabetermin soll ein Kartenspiel für angehende Mediamatiker:innen als **PDF** vorliegen, welches mindestens **2 Personen je Spielrunde** benötigt.
+
+==== Rahmenbedingungen ====
+Das Kartenspiel soll mittels **Digitaldruck doppelseitig** ausgedruckt werden können.  
+Es soll visuell einfach ersichtlich sein, ob die einzelnen Module zusammenhängen und ob diese aufeinander aufbauen.  
+
+Jede Spielkarte soll sowohl **Text- wie auch Bildelemente** aufweisen und das **CI der Berufsschule** berücksichtigen.  
+
+Die Module folgender “Fächer“ müssen im Kartenspiel gänzlich vorhanden sein:
+  * Multimediatechnik
+  * Design & Gestaltung
+  * Informatik
+  * Projektmanagement
+
+Zusätzlich können für das Kartenspiel die Module zu folgenden “Fächern“ optional verwendet werden:
+  * Marketing & Communication
+  * Business Management
+  * üK (überbetriebliche Kurse)
+  * EGK (erweiterte Grundkenntnisse)
+  * BM (Berufsmatura)
+
+===== 2) Equipment-App =====
+
+==== Ausgangslage ====
+In Multimediatechnik (MMT) wird für die unterschiedlichen Modulinhalte sehr unterschiedliches Equipment benötigt.  
+Den Lernenden soll die Möglichkeit geboten werden, dass diese einen Gesamtüberblick zu den unterschiedlichen Geräten erhalten können.
+
+==== Zu erwartendes Ergebnis ====
+Bis zum Abgabetermin soll ein **klickbarer Prototyp** für eine **mobile MMT-App** ausgearbeitet sein.
+
+==== Rahmenbedingungen ====
+Der Prototyp soll für die **meistverbreiteten Smartphones** in Ihrer Klasse ausgelegt sein.  
+Das unterschiedliche MMT-Equipment soll in **sinnvolle Kategorien** eingeteilt sein.  
+
+Zum jeweiligen Equipment sollen die **nötigsten Informationen** abgerufen werden können.  
+Die **Einbindung von Tutorialvideos** zu den unterschiedlichen Geräten ist wünschenswert, aber nicht zwingend erforderlich.  
+
+Die **Navigation** zwischen den einzelnen Seiten soll möglichst **selbsterklärend** erfolgen.  
+
+Für den Prototypen ist folgendes MMT-Equipment **zwingend zu berücksichtigen**:
+  * Canon 7D mkII
+  * Blackmagic Design Pocket Cinema Camera 4K
+  * Aputure 300d mkII
+  * Walimex 5in1 Diffusor Panel
+  * Manfrotto A2030DCBKIT Kit 30
+
+Optional kann folgendes MMT-Equipment **zusätzlich eingebunden werden**:
+  * Focusrite Scarlett 2i2
+  * Sennheiser MKE 600
+  * Aputure 300d mkII
+  * Manfrotto 1004BAC Master
+  * …
+
+===== 3) Schnitzeljagd 2.0 =====
+
+==== Ausgangslage ====
+Das Schulhaus ist relativ gross und für neue Lernende ist es während der ersten Woche schwer, die wichtigsten Räume und Stationen im Gebäude zu finden.  
+Es muss deshalb eine Lösung gefunden werden, um zukünftige Lernende mit den wichtigsten Stationen im Schulhaus vertraut machen zu können.
+
+==== Zu erwartendes Ergebnis ====
+Bis zum Abgabetermin soll eine **Schnitzeljagd für zukünftige Lernende** erstellt werden,  
+wobei diese die neuen Lernenden die wichtigsten Stationen des Schulhauses **selbständig und interaktiv erkunden** lässt.
+
+==== Rahmenbedingungen ====
+Bei jeder Station muss immer klar definiert sein, **welche Station als nächstes besucht** werden muss und **wie diese aufzufinden** ist.  
+Die Informationen zur jeweiligen Station müssen **digital von einem Smartphone abgerufen** werden können.  
+Die **Auslesung der Informationen** muss **betriebssystemunabhängig** erfolgen.  
+
+Die Schnitzeljagd soll sich auf das **schulische CI** (“Corporate Identity“ bestehend aus  
+“Corporate Behaviour“, “Corporate Communication“ und “Corporate Design“) beziehen.  
+
+Folgende Stationen müssen für die Schnitzeljagd **verwendet werden**:
+  * Sekretariat
+  * Mediathek
+  * Multimediaraum
+  * IT-Services
+  * Mensa
+
+Folgende Stationen können **zusätzlich verwendet werden**:
+  * Infopoint
+  * Aula
+  * …
+
+===== 4) Animierte Icons =====
+
+==== Ausgangslage ====
+Die Website der Berufsschule wirkt visuell statisch.  
+Ein Set von **animierten Icons** und einer **BZZ-Logoanimation** soll die Website dynamischer erscheinen lassen,  
+indem die animierten Icons bestehende Rubrikbeschriftungen ersetzen können  
+und die BZZ-Logoanimation für die **Infoscreens** verwendet werden kann.
+
+==== Zu erwartendes Ergebnis ====
+Bis zum Abgabetermin sollen je Teammitglied ein Set von mindestens **fünf unterschiedlichen Icons (oder Piktogrammen)** vorliegen,  
+welche **einheitlich gestaltet und animiert** sind und für die Zustände **“state“** und **“hover“** verwendet werden können.  
+Die **BZZ-Logoanimation** muss für die Infoscreens aufbereitet sein.
+
+==== Rahmenbedingungen ====
+Jedes animierte Icon soll als **einzelne Datei** direkt in die Website eingebunden werden können  
+und sich auf das **schulische CI** (“Corporate Identity“ bestehend aus  
+“Corporate Behaviour“, “Corporate Communication“ und “Corporate Design“) beziehen.  
+
+Da die **Ladezeit der Website** trotz animierten Icons gering ausfallen muss,  
+darf die **Dateigrösse eines einzelnen animierten Icons** lediglich wenige kB betragen.  
+
+Für folgende Unterseiten der Schulwebsite sollen **animierte Icons** erstellt werden:
+  * Kalender
+  * Stundenplan
+  * Kontakt
+  * Intranet
+  * Blog
+  * weitere Themen sind optional umsetzbar
+
+===== 5) AR-Filter =====
+
+==== Ausgangslage ====
+Damit sich die Lernenden dieses Schulhauses auch während einem möglichen Fernunterricht **unterhaltsame Nettigkeiten austauschen** können,  
+soll der **multimediale Austausch mittels AR (Augmented Reality)** zukünftig gewährleistet werden.  
+Dazu wünscht sich die Schulleitung **Vorschläge zu möglichen AR-Filtern**.
+
+==== Zu erwartendes Ergebnis ====
+Bis zum Abgabetermin sollen je Teammitglied ein **Vorschlag zu einem AR-Filter** systematisch geplant und **anwendbar** sein.
+
+==== Rahmenbedingungen ====
+Die vorgeschlagenen **AR-Filter** müssen in die von der Schule verwendete **Plattform für Video-Calls** eingebunden werden können.  
+Die Filter müssen **visuell einheitlich gestaltet** sein, sich auf das **schulische CI** (“Corporate Identity“ bestehend aus  
+“Corporate Behaviour“, “Corporate Communication“ und “Corporate Design“) beziehen  
+und einen **plausiblen Zusammenhang zum Schulmotto** aufweisen.  
+
+Die AR-Filter müssen für **alle gängigen Seitenverhältnisse und Auflösungen** von BYODs ausgelegt sein.  
+
+Optional können die Filter mit einer der folgenden **Funktionen** ausgestattet werden:
+  * interaktive Triggerfunktion
+  * dauerhaft animierte Elemente
+  * ein Objekt ist mittels Trackingfunktion eingebunden
+  * …
+
+===== 6) Produktkonfigurator =====
+
+==== Ausgangslage ====
+Um zukünftig **Ressourcen effizienter einsparen** zu können, sollen Produkte erst dann produziert werden,  
+wenn diese direkt vom **Endverwender bestellt** werden.  
+Dazu wird es notwendig sein, dass der Endverwender sein Produkt noch vor dessen Produktion **individuell auf seine Bedürfnisse anpassen** kann.  
+
+Es werden deshalb vermehrt **Tools benötigt**, mittels welchen ein rein virtuelles Objekt (2D-Fläche oder 3D-Modell) angepasst werden kann.
+
+==== Zu erwartendes Ergebnis ====
+Bis zum Abgabetermin soll eine **bedienbare Alpha-Version** für ein Tool zur **Konfiguration eines beliebigen Produkts** erstellt werden.  
+Dieses Tool kann sowohl eine **Website (/Webpage)** als auch ein **klickbarer Prototyp** (z. B. für eine Mobile-App) sein.
+
+==== Rahmenbedingungen ====
+Der **Produktkonfigurator** muss **unabhängig von einem bestimmten Betriebssystem** funktionieren.  
+Mittels dem Tool muss mindestens **eine Produkteigenschaft** (z. B. *Farbe*) verändert werden können.  
+
+Optional kann das Tool um folgende **Parameter** ergänzt werden:
+  * Rotation des Objekts (bspw. Rückansicht)
+  * Sichtbarkeit von Teilobjekten
+  * Einblenden von zusätzlichen Produktinformationen (Hotpoint)
+  * …
+
+===== 7) Mehr Ausbildungsplätze =====
+
+==== Ausgangslage ====
+Die Grundausbildung **„Mediamatiker:in EFZ“** ist aufgrund ihrer **breiten Themenausrichtung** bei Jugendlichen sehr beliebt und bei Unternehmen gefragt.  
+Dennoch gibt es aktuell **zu wenige Lehrstellen** für diesen aufregenden Beruf.  
+
+Um Unternehmen davon überzeugen zu können, dass auch sie die Ausbildung von Mediamatiker:innen anbieten sollen,  
+müssen diese zuerst von den **Tätigkeiten dieser Berufsleute** überzeugt werden.  
+
+Deshalb soll ein **Filmprodukt zur Grundausbildung „Mediamatiker:in EFZ“** produziert werden.  
+Dieses soll Unternehmer:innen die Tätigkeiten eines Mediamatikers oder einer Mediamatikerin **witzig und unterhaltsam** vermitteln.
+
+==== Zu erwartendes Ergebnis ====
+Bis zum Abgabetermin soll ein **finales Filmprodukt (Realfilm oder Stop Motion)** erstellt werden.  
+Das Filmprodukt soll Unternehmen mittels **Link zu einer gängigen Social-Media-Plattform** zur Verfügung gestellt werden können,  
+damit diese zukünftig **Ausbildungsplätze für Mediamatiker:innen** anbieten werden.
+
+==== Rahmenbedingungen ====
+Das finale Filmprodukt muss den **technischen Anforderungen der gewählten Plattform** entsprechen.  
+Es ist auf eine **ansprechende Beleuchtung** und **unterschiedliche Bildeinstellungen** während der Aufnahmen zu achten  
+und der Inhalt soll **unterhaltsam dargestellt** werden.  
+
+Optional kann das finale Filmprodukt um folgende **Elemente** erweitert werden:
+  * animierte Textanimationen
+  * Vertonung mit Soundeffekten
+  * Einbinden einer Sprecheraufnahme (Voice Over)
+  * Flyer mit QR-Code zum Filmprodukt
+  * aufbereitete Filmdateien für weitere Social-Media-Plattformen
+  * …
+
+

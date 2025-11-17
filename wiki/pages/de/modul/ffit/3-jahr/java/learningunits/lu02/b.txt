@@ -1,0 +1,79 @@
+====== LU02b - Datenbankanbindung ======
+
+==== Objekte ====
+
+**Anforderung 2**: Eine Bibliotheksapplikation soll die vorhanden Bücher mit dem Befehl ''listBooks'' auflisten können.
+
+Dazu braucht es erstmal eine Klasse ''Book''. Erstellen Sie die Klasse und die folgenden beiden Objekte als Konstanten. Beim Befehl ''listBooks'' sollen diese beiden Bücher je ein Buch(mindestens der Titel) pro Zeile ausgegeben werden. 
+
+^id ^isbn ^title ^author ^year |
+|1|978-3-8362-9544-4|Java ist auch eine Insel|Christian Ullenboom|2023|
+|2|978-3-658-43573-8|Grundkurs Java|Dietmar Abts|2024|
+
+Zur Erinnerung wie eine Konstante aufgebaut ist:
+<code java>
+private static final Book BOOK_1 = new Book(...);
+</code>
+
+Machen Sie einen Cherry-Pick des Commits ''1766cfc'', um die Tests für diesen Implementationsschritt zu erhalten. Führen Sie die Tests aus und korrigieren Sie ihre Implementation falls nötig.
+
+==== Persistierung ====
+
+Anstatt die Bücher nur hardcodiert in der Applikation zu haben, soll die PostgreSQL-Datenbank verwendet werden.
+
+Loggen Sie sich mit folgendem Befehl bei der Datenbank an und setzen Sie nachfolgende SQL-Statements ab, um einige Beispieleinträge zu erfassen.
+
+<code bash>
+psql -U localuser -d localdb
+</code>
+
+<code sql>
+CREATE TABLE books (
+    id SERIAL PRIMARY KEY,
+    isbn VARCHAR(20) NOT NULL,
+    title VARCHAR(255) NOT NULL,
+    author VARCHAR(255) NOT NULL,
+    publication_year INT
+);
+</code>
+
+<code sql>
+INSERT INTO books (isbn, title, author, publication_year)
+VALUES 
+    ('978-0134685991', 'Effective Java', 'Joshua Bloch', 2018),
+    ('978-0596009205', 'Head First Java', 'Kathy Sierra, Bert Bates', 2005)
+ON CONFLICT (id) DO UPDATE SET
+    isbn = EXCLUDED.isbn,
+    title = EXCLUDED.title,
+    author = EXCLUDED.author,
+    publication_year = EXCLUDED.publication_year;
+</code>
+
+Mit ''\quit'' können Sie sich übrigens wieder von PostgreSQL abmelden.
+<code sql>
+\quit
+</code>
+
+
+Für den Zugang zu einer Datenbank verwenden wir JDBC (Java Data-Base Connectivity).
+  * https://www.baeldung.com/java-jdbc
+
+Anstatt der Maven-Dependency muss die Dependency in ''build.gradle'' eingetragen werden. Sie erhalten automatisch die nachfolgende Liste, wenn Sie den Commits ''23e74a3'' cherry-picken.
+
+<code gradle>
+dependencies {
+    // dependencies for the application
+    implementation 'org.postgresql:postgresql:42.7.3'
+
+    // dependencies for testing
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.10.2'
+}
+</code>
+
+Implementieren Sie eine Methode, die eine Datenbankverbindung aufbaut, folgende Abfrage macht und für jeden zurückgelieferten Eintrag ein Book-Objekt erstellt. Die Methode soll dann eine Liste (''java.util.List'') der Buch-Objekte zurückgeben.
+
+<code sql>
+SELECT id, isbn, title, author, publication_year FROM books ORDER BY id
+</code>
+
+Führen Sie die Tests aus und korrigieren Sie ihre Implementation falls nötig.

@@ -1,0 +1,35 @@
+==== 1. Wozu dient das Konzept? ====
+Beim Erstellen eines Konzepts geht es darum, aus all den bisher gesammelten Ideen einen möglichen Lösungsvorschlag zu erarbeiten. Dazu werden in einem ersten Schritt Szenarien entworfen und daraus User Story Maps erstellt. In einem zweiten Schritt wird das Konzept für ein User Interface konkretisiert.\\
+Als Ergebnis dieser Arbeiten resultiert ein Entwurf (auf Papier), der Abläufe von Tätigkeiten skizziert (sog. Wireflows) und auch Key Screens wiedergibt.
+----
+//Beispiel 11: aus "UX Design"//\\
+Aus verschiedenen rudimentären Ideen im Ideation-Workshop (vergl. dazu Abb. 5-1) entstehen konkrete Entwürfe für ein User Interface.\\
+{{:modul:m322:learningunits:lu06:theorie:lu06-keyscreen.png?400|}}\\
+//Abb. 6-1: Skizze zu Key Screen//\\
+\\
+Aus diesen Entwürfen folgt ein Wireframe, das eine fortgeschrittene Darstellung des Layouts zeigt und einen Einblick in die Informationsarchitektur der geplanten Anwendung gibt.\\
+{{:modul:m322:learningunits:lu06:theorie:lu06-wireframe.png?400|}}\\
+//Abb. 6-2: Drahtmodell des Key Screen//\\
+\\
+Der Lösungsansatz muss auch aufzeigen, wie die Benutzerführung für einen bestimmten Anwendungsfall (Use Case) ablaufen soll. Dazu dienen Wireflows.\\
+{{:modul:m322:learningunits:lu06:theorie:lu06-wireflow-bsp.png?200|}}\\
+//Abb. 6-3: Ablauf als Wireflow dargestellt//\\
+----
+
+Aus "Collaborativ UX Design": \\
+<html><span style="font-size:8px">(in leicht angepasster Form)</span></html>\\
+**Ziel**
+   * Lösungskonzept visualisieren
+**Ergebnisse**
+   * Szenarien
+   * User Story Maps
+   * Keyscreens
+   * Wireflows
+**Ablauf**
+   * Szenarien erstellen
+   * User Story Maps ableiten 
+   * Keyscreens definieren
+   * Wireflows erstellen
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) René Probst

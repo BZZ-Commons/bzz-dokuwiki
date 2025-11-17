@@ -1,0 +1,16 @@
+====== LU07.L01 - Brainstorming digitale Zertifikate ======
+
+===== Arbeitsauftrag =====
+Notieren Sie sich alle Begriffe, die Sie zum Thema „digitale Zertifikate“ kennen und ordnen Sie diese in eine der folgenden vier Überschriften.
+
+Verwenden Sie die nachfolgende Tabellen-Vorlage:
+
+^Sicherheit ^Flexibilität ^
+| Serverauthentifizierung, Serverauthentifizierung, SSL, Authentifikation, Unterschiedliche Sicherheitslevel, Unverfälschbarkeit, Günstig --> unsicherer, teuer --> sicherer | Start- und Ablaufdatum festlegen,  Benutzerzeitraum --> Inflexibilität |
+^Komplexität ^Aufwand ^
+| Public Keys festlegen, Verteilung der Keys, Überprüfung des Status | Kosten, Zeit, Prozessorleistung, Zertifikat bestellen, Zertifikatsverteilung, Je mehr Aufwand, desto sicherer??? |
+
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

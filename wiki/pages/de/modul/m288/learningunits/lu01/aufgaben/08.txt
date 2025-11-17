@@ -1,0 +1,34 @@
+====== LU01.A08 - Kommentierung von Code (LU01.03 - A06) ======
+
+===== Lerziele =====
+  * Aussagekräftige Kommentare zum Autorenschaft, etc. in JS und HTML einfügen können.
+  * Sinnvolle Incode-Kommentare in JS und HTML-Code erstellen können.
+  * Sinn eines Scriptes erkennen und beschreiben können.
+
+===== Rahmenbedingungen =====
+  * Sozialform: individual
+  * Hilfsmittel: 
+    * Theorie-Dossier: LU01d - How to comment JS code
+    * Lösungen der Scripte LU01.L03, LU01.L04, LU01.L05, LU01.L06
+  * Zeit: 20 Minuten
+  * Erwartetes Resultat: 
+    * Die genannten Scripte sind aussagekräftig und prägnant (kurz und bündig) kommentiert.
+
+===== Ausgangslage =====
+Nachdem wir nun wissen, was und wie kommentiert wird, wollen wir unser Wissen auf die bereits erstellten Lösunge der Aufgaben LU01.L03, LU01.L04, LU01.L05, LU01.L06 anwenden, und diese korrekt und vollständig kommentieren.
+
+ 
+===== Aufgabe =====
+Kommentieren Sie die Aufgaben LU01.L03, LU01.L04, LU01.L05, LU01.L06 wie folgt.
+
+  - Jedes Datei hat einen aussagekräftige "Filekopf" mit den Daten:
+    * Autor, Datum
+    * Zielsetzung des Files (wozu braucht es diese Datei?)
+    * Jede HTML-Lösung hat als <h1> Tag die Nummer der Aufgabe, z.B.: LU01.L01 - .....
+    * Jede HTML-Lösung hat als <h3> eine kurze Beschreibung, was in dem File passiert.
+    * **Zusatz** Zur Aussagekräftigkeit eines Files gehört auch die korrekte Benennung des Files: Benennen Sie die File jeweils nach der offiziellen Vorgabe: LU01_L01.html und LU01_L01.js (sofern ein separates JS-File benötigt wird.
+       
+===== Lösungen =====
+[[de:modul:m288:learningunits:lu01:Lösungen:07|LU01.L08]]
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

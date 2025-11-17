@@ -1,0 +1,33 @@
+====== LU05.A03 - while-loop pur ======
+
+===== Rahmenbedingungen =====
+  * Sozialform: individual
+  * Hilfsmittel: 
+    * Nur Lehrmittel, keine Websuche oder AI
+    * [[https://www.w3schools.com/js/js_loop_while.asp| while-loop in JavaScript]]
+  * Zeit: 30 Minutes
+  * Erwartetes Resultat: Zählen mit einer While-Schleife.
+
+===== Ausgangslage =====
+Wenn es um Datensammlungen oder Listen wir Arrays geht, sind //Schleifen// sehr praktische Helfer. Das "Werzeug" //Schleife// ermöglichet eine dynamische Bearbeitung von Listen. Ähnlich einem Hammer (Vorschlaghammer, Zimmermannshammer, Standardhammer, Goldschmiedehammer) gibt es auch bei Schleifen unterschiedliche Typen. 
+
+In dieser Aufgaben werden wir uns mit der sogenannten //while-Schleife// beschäftigen.
+
+===== Auftrag =====
+  * 1.1 Schreibe ein JavaScript-Programm, das mit einer while-Schleife alle Zahlen von 1 bis beispielsweise 20 addiert und am Ende das Ergebnis ausgibt. 
+  * 1.2 Geben Sie am Ende die Summe mit console.log() aus, wie beispielsweise "Die Summe aller Zahlen von 1 bis 20 ist: 210".
+  * 1.3 Ergänzen Sie Ihre Schleife durch eine Produktberechnung: Das Produkt aller Zahlen von 1 bis 20 ist: 2432902008176640000".
+  * 1.4 Challange: Die Startzahl wie auch die Zielzahl sollen aus Variablen herausgelesen werden und an den passenden Stelle, wie die Ausgabe, verwendet werden.
+  * 1.5 Kommentieren Sie Ihre Arbeit: Fileheader und Inline-Comments.
+
+===== Hinweise =====
+  * Verwenden Sie je eine Variable für die Startzahl und die Zielzahl.
+  * Verwende Sie weitere Variable für die Summe und das Produkt.
+  * Lassen Sie die Schleife so lange laufen, bis die Zielzahl erreicht ist.
+
+===== Lösungen =====
+[[de:modul:m288:learningunits:lu05:loesungen:03|LU05.L03]]
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

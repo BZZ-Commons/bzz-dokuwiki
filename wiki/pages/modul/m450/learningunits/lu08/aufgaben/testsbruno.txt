@@ -1,0 +1,56 @@
+====== LU08.A01 - Resultate auswerten mit Bruno ======
+<WRAP center round todo 60%>
+Ergänze die Requests zum Testen der Bookshelf-Applikation in **Bruno** mit Tests.
+</WRAP>
+
+Um die Ausführung und Auswertung der Requests zu automatisieren, ergänzen wir diese durch **Tests**.
+Jeder Request soll **1–2 Tests** erhalten:
+  * Prüfen, ob die Response den erwarteten **HTTP-Statuscode** enthält.
+  * Wo sinnvoll: Prüfen, ob die **Daten in der Response** korrekt sind.
+
+<WRAP center round info 60%>
+Der Request zum **Lesen aller Bücher** erwartet als Antwort ein **Array mit 3 Büchern**.
+Sieh in den Bruno-Docs nach, wie man JSON-Responses prüft (Status, Typ, Länge, Felder).
+</WRAP>
+
+===== Hinweise =====
+Beispiele für Tests (in der Request-Datei unter **Tests**):
+
+**Statuscode prüfen**
+<code javascript>
+test("Status ist 200", () => {
+  expect(res.status).to.equal(200);
+});
+</code>
+
+**JSON-Body prüfen (Array mit 2 Einträgen)**
+<code javascript>
+test("Liste hat 2 Personen", () => {
+  const body = res.json();
+  expect(Array.isArray(body)).to.equal(true);
+  expect(body.length).to.equal(2);
+});
+</code>
+
+**Einzelne Response prüfen (Felder & Werte-Beispiele)**
+<code javascript>
+test("Mensch hat Pflichtfelder", () => {
+  const b = res.json();
+  expect(b).to.have.property("name");
+  expect(b).to.have.property("age");
+
+});
+</code>
+
+Weitere Beispiele: [[https://docs.usebruno.com/testing/tests/introduction|Bruno Docs: Tests]]
+Mehr Infos zum Syntax: [[https://www.chaijs.com/api/bdd/|chaijs BDD Style]]
+
+
+
+===== Abgabe =====
+Exportiere dein Bruno-Projekt (Ordner mit allen ``.bru``-Dateien und Environments) als **ZIP**  
+und lade die **ZIP-Datei** hier in Moodle hoch.
+
+----
+{{tag>M450-LU08}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Kevin Maurizi

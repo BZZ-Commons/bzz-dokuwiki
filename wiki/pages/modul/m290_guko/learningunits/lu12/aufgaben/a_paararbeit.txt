@@ -1,0 +1,128 @@
+====== Partner-Auftrag LU12: Datenschutz, Rollen & Rechte ======
+
+**Ziel:**  
+Sie arbeiten zu zweit und erarbeiten sich die Inhalte der drei Seiten LU12a, LU12b und LU12c.  
+Am Ende verstehen Sie, warum in Datenbanken Rollen und Rechte wichtig sind – und können diese in MySQL praktisch umsetzen.
+
+Gesamtdauer: ca. 45–50 Minuten
+
+===== Schritt 1 (ca. 10 Minuten) – Arbeitsteilung beim Lesen =====
+
+Teilen Sie sich auf:
+
+  * **Person A:** liest die Theorie auf **Seite 1 (LU12a – Datenschutz & Datensicherheit)**  
+  * **Person B:** liest die Theorie auf **Seite 2 (LU12b – Rollen & Zugriffe im Notenbuch)**  
+
+Jede Person liest **selbständig** und hält die wichtigsten Punkte **stichwortartig** fest  
+(z. B. in einem Word-Dokument, Textfile oder auf Papier).
+
+<WRAP info round 80%>
+**Vorstrukturiertes Word-Dokument** mit Platz für Notizen und einer Tabelle für Schritt 2 – hier herunterladen:  
+{{ :modul:m290_guko:learningunits:lu12:aufgaben:partnerauftrag_lu12_datenschutz_rollen_rechte.docx | Auftrag: Datenschutz, Rollen & Rechte }}
+</WRAP>
+
+
+Orientieren Sie sich dabei an diesen Leitfragen:
+
+  * Welche Datenarten und Schutzmassnahmen gibt es? (LU12a)  
+  * Wer darf was im Notenbuch und warum? (LU12b)  
+  * Was bedeutet das Prinzip der minimalen Privilegien?
+
+Ziel: Jede Person hat nach 10 Minuten eine kurze Übersicht über die gelesene Theorie.
+
+
+===== Schritt 2 (ca. 10 Minuten) – Gegenseitiges Erklären =====
+
+Setzen Sie sich nun zusammen und erklären sich gegenseitig den Inhalt Ihrer Seite:
+
+  * Person A erklärt kurz den Kern von **LU12a** (Datenschutz, Datensicherheit, Schutzmassnahmen).
+  * Person B erklärt kurz den Kern von **LU12b** (Rollen, Zugriffe, Datenschutz im Notenbuch).
+
+Nutzen Sie dabei Ihre Notizen als Stütze.  
+Stellen Sie gegenseitig Verständnisfragen, bis beide die Inhalte beider Seiten verstanden haben.
+
+→ Ziel: Beide Partner haben jetzt denselben Wissensstand.
+
+===== Schritt 3 (ca. 15 Minuten) – Rollen & Rechte im Notenbuch =====
+
+Öffnen Sie das **vorstrukturierte Word-Dokument** mit der Tabelle zu Rollen und Rechten im digitalen Notenbuch.  
+Gehen Sie gemeinsam vor (eine Person tippt, die andere denkt mit).
+
+1. Vorgeben sind folgende Aktionen:
+
+  * Noten ansehen  
+  * Noten erfassen / ändern  
+  * Noten löschen  
+  * Auswertungen über alle Klassen sehen  
+
+2. Überlegen Sie, welche Aktion für welche vorgegebene Rolle (Lehrperson, Lernende etc.) **Sie sinnvoll finden**
+
+
+3. Diskutieren Sie kurz:
+  * Wo wären zu viele Rechte gefährlich?
+  * Wo wären zu wenige Rechte unpraktisch?
+
+Fragen zur Reflexion:
+  * Wo sehen Sie das **Prinzip der minimalen Privilegien** in Ihrer Tabelle?
+  * Welche Rolle müsste datenschutzrechtlich am strengsten behandelt werden?
+
+
+
+===== Schritt 4 (ca. 15–20 Minuten) – Technische Umsetzung in MySQL =====
+
+Wechseln Sie gemeinsam auf **LU12c: MySQL – Rollen & Berechtigungen im Notenbuch.**
+
+1. Laden Sie das gezippte SQL-File herunter (''noten_db.zip'') und importieren Sie die Datenbank **''noten_db''** in WebStorm.  
+2. Arbeiten Sie zu zweit weiter:
+   * Eine Person ist **Programmierer:in** (tippt SQL-Befehle),
+   * die andere ist **Navigator:in** (liest, prüft, erklärt mit).
+   * Nach der Hälfte tauschen Sie die Rollen.
+
+3. Gehen Sie Schritt für Schritt nach Anleitung auf der Seite LU12c vor:
+   * Erstellen Sie Rollen (''db_admin'', ''lernende_role'').
+   * Vergeben Sie Rechte an diese Rollen.
+   * Erstellen Sie die Benutzer ''lehrperson_koch'' und ''lernende_caduff''.
+   * Weisen Sie den Benutzern die passenden Rollen zu.
+   * Testen Sie mit ''SHOW DATABASES'' und ''SHOW GRANTS'', ob die Rechte korrekt wirken.
+
+4. Führen Sie abschliessend folgenden Test mit beiden Benutzern aus:
+<WRAP round box center 80%>
+<code sql>
+UPDATE noten
+SET note = 6.0
+WHERE id = 2;
+</code>
+</WRAP>
+  * Melden Sie sich mit ''lehrperson_koch'' an → darf alles in ''noten_db''.
+  * Melden Sie sich mit ''lernende_caduff'' an → darf nur SELECT-Befehle ausführen.
+
+===== Schritt 5 (ca. 5–10 Minuten) – Rollen entziehen & Benutzer löschen =====
+
+Zum Abschluss üben Sie, wie Sie Rechte und Benutzer wieder entfernen können.
+
+1. Öffnen Sie erneut die Query Console mit dem **root** User.
+
+2. Entziehen Sie der Lernenden-Rolle vom Benutzer ''lernende_caduff'':
+
+<WRAP center round box 80%>
+<code sql>
+REVOKE lernende_role FROM 'lernende_caduff'@'localhost';
+</code>
+</WRAP>
+
+3. Öffnen Sie danach in WebStorm eine **neue Query Console** (Rechts-Klick auf Verbindung lernende_caduff@localhost > New > Query Console).  
+
+Prüfen Sie, ob die Rechte jetzt tatsächlich entzogen wurden (''SELECT * FROM noten;'' → sollte nicht mehr funktionieren).
+
+4. Löschen Sie schliesslich den Benutzer **''lernende_caduff''** vollständig:
+
+<WRAP center round box 80%>
+<code sql>
+DROP USER 'lernende_caduff'@'localhost';
+</code>
+</WRAP>
+
+→ Damit entfernen Sie den Zugriff vollständig – so, wie es bei Austritt oder Projektende einer Person erfolgen sollte.
+**Ziel des Partnerauftrags:**  
+Sie verstehen, wie Datenschutz, Rollen und Berechtigungen zusammenhängen –  
+und können diese Prinzipien im MySQL-System praktisch nachvollziehen.

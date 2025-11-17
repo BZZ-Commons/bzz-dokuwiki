@@ -1,0 +1,43 @@
+====== LU05c - Bandbreite ======
+
+Wenn wir von „schnellem Internet“ oder „schnellen Verbindungen“ sprechen, meinen wir die Bandbreite. Sie gibt an, wie viele Daten pro Sekunde übertragen werden können. Die Bandbreite ist somit ein Mass für die Leistungsfähigkeit einer Datenverbindung – sei es im Internet, im Heimnetzwerk oder innerhalb eines Computers.
+
+===== Definition ====
+Bandbreite beschreibt die maximale Datenmenge, die über eine Leitung oder Verbindung in einer bestimmten Zeit transportiert werden kann.
+Die Einheit lautet Bit pro Sekunde (bps).
+
+In der Praxis werden grössere Einheiten verwendet:
+  * kbit/s = 1'000 bit/s
+  * Mbit/s = 1'000'000 bit/s
+  * Gbit/s = 1'000'000'000 bit/s
+
+Nicht zu verwechseln sind die Angaben in kB/s, MB/s oder GB/s mit denen in kbit/s, Mbit/s oder Gbit/s. Der Unterschied liegt in der Einheit: Während ein Bit die kleinste Informationseinheit darstellt, besteht ein Byte immer aus acht Bits. Daher gilt: 1 Gbit/s entspricht nur einem Achtel von 1 GB/s. Praktisch bedeutet das, dass eine Internetverbindung mit 1 Gbit/s lediglich eine maximale Downloadgeschwindigkeit von 125 MB pro Sekunde erreicht. Internetanbieter nutzen diese Darstellungsweise gerne, da Angaben in Bit pro Sekunde grösser wirken, als sie vom Benutzer tatsächlich wahrgenommen werden.
+
+===== Übertragen von Dateien =====
+
+Wenn Daten von einem Gerät zum anderen übertragen werden, geschieht dies über eine Schnittstelle. Beispiele dafür sind WLAN, Ethernet, USB-C oder Bluetooth. Jede dieser Schnittstellen besitzt eine bestimmte Bandbreite, also eine maximale Übertragungsgeschwindigkeit.
+
+Die Wahl der Schnittstelle entscheidet daher, wie schnell eine Datei kopiert oder heruntergeladen werden kann.
+
+===== Wertbeispiele =====
+
+Die folgenden Werte sind typische Maximalgeschwindigkeiten (vgl. LU04). In der Praxis liegen die effektiven Geschwindigkeiten oft deutlich darunter:
+
+  * WLAN (Wi-Fi 5): bis ca. 433 Mbit/s ≈ 54 MB/s
+  * Ethernet (Gigabit): bis 1 Gbit/s ≈ 125 MB/s
+  * USB-C (USB 3.2 Gen 2): bis 10 Gbit/s ≈ 1’250 MB/s
+  * Bluetooth 5.0: bis ca. 2 Mbit/s ≈ 0.25 MB/s
+
+==== Rechenbeispiel: Übertragungszeit einer 1.8 GB Datei ====
+
+Dateigrösse: **1.8 GB ≈ 1'800 MB**
+
+Die Übertragungszeit berechnet sich durch:
+
+  Zeit = Dateigrösse / Geschwindigkeit
+
+^ Schnittstelle   ^ Geschwindigkeit (theoretisch) ^ Berechnung                          ^ Zeit (ca.)         ^
+| WLAN (Wi-Fi 5)  | 54 MB/s                       | 1'800 MB / 54 MB/s                   | 33 Sekunden        |
+| Ethernet (1 Gbit/s) | 125 MB/s                  | 1'800 MB / 125 MB/s                  | 14 Sekunden        |
+| USB-C (USB 3.2 Gen 2) | 1'250 MB/s              | 1'800 MB / 1'250 MB/s                | 1.4 Sekunden       |
+| Bluetooth 5.0   | 0.25 MB/s                     | 1'800 MB / 0.25 MB/s                 | 7'200 Sekunden ≈ 2 Stunden |

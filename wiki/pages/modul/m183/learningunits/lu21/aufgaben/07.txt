@@ -1,0 +1,41 @@
+====== LU05.A07 - Berechtigungskonzepte verstehen und anwenden ======
+
+===== Lernziele =====
+  * Ich kann drei unterschiedliche Varianten von Berechtigungskonzepten nennen und erläutern.
+  * Ich kann zu jeder der drei Varianten mindestens ein konkretes Produkt/Anwendung nennen.
+
+===== Rahmenbedingungen =====
+  * **Zeitbudget:** 20 Minuten
+  * **Sozialform:** Partnerarbeit
+  * **Hilfsmittel:** Dossier "Berechtigungskonzepte_Theorie"
+  * **Erwartetes Ergebnis:** Je Lernende/r ein PDF-Dokument mit den Antworten der Fragen
+
+===== Ausgangslage =====
+Im IT-Umfeld wird der Zugriff auf Ressourcen aller Art durch Zugriffsberechtigungen gesteuert. Ressourcen können ebenso Applikationsprozesse wie auch Hardware-Ressourcen wie Drucker, etc. sein.
+
+===== Arbeitsauftrag =====
+
+  * **a) Art des Zugriffsschutzes**
+    * Im Arbeitsdossier „Berechtigungskonzepte_Theorie“ finden Sie drei Arten von Berechtigungskonzepten (Kapitel 3). Nennen und beschreiben Sie diese drei Arten.
+
+  * **b) Konkrete Produkte**
+    * Ergänzen Sie jede ihrer Varianten durch ein entsprechendes Beispiel aus der Applikationswelt (Anwendung).
+
+  * **c) Einordnen**
+    * Nachfolgend finden Sie einige der weitverbreitetsten Softwareprodukte der Welt. Ordnen Sie diesen Produkten das passende Berechtigungskonzept zu.
+      - MS Windows
+      - Linux
+      - MySQL Datenbanken
+      - Oracle Datenbanken
+      - MacOS
+
+  * **d) LINUX-Berechtigungen**
+    * Welcher LINUX-Berechtigungsstufe (rwx) entspricht die Ziffernfolge 664, 775 und 777?
+
+
+===== Solution =====
+[[modul:m183:learningunits:lu06:loesungen:01|Lösung]]
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

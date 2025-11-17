@@ -1,0 +1,65 @@
+====== LU01d - How to comment JS code======
+
+===== Einleitung =====
+Eine saubere und verständliche Dokumentation von JavaScript-Code ist entscheidend, um Projekte wartbar, erweiterbar und für andere Entwickler nachvollziehbar zu halten. Dokumentation hilft nicht nur im Team, sondern auch dabei, den eigenen Code nach Wochen oder Monaten schnell wieder zu verstehen.
+
+===== Warum Code dokumentieren? =====
+  * Erleichtert das Verständnis für andere Entwickler.
+  * Hilft bei der Fehlersuche und Wartung.
+  * Ermöglicht eine einfachere Übergabe von Projekten.
+  * Verhindert doppelten oder unnötigen Code.
+
+===== Formen der Dokumentation =====
+  - Inline-Kommentare: Kurze Hinweise im Code, um komplexe Stellen zu erklären.
+  - Block-Kommentare: Mehrzeilige Erklärungen für Funktionen, Klassen oder komplexe Logik.
+  - JSDoc: Standardisierte Syntax für Kommentare, um Funktionen, Parameter und Rückgabewerte zu beschreiben.
+  - README-Dateien: Übersichtsdokumentation für das gesamte Projekt.
+
+Innerhalb des Unterrichts werden wir die ersten beiden Varianten anwenden.
+
+{{:de:modul:m288:learningunits:lu01:javascript_tutorial_4_-_kommentare.mp4|Kommentare in JS}}
+
+===== Best Practices wann kommentiert werden sollte =====
+  * Kommentare prägnant und verständlich halten. Nicht WAS (offensichtlich), sondern WARUM (Gedanken und Gründe)
+  * Nur dokumentieren, was nicht selbsterklärend ist.
+  * Funktionen und Variablen mit sprechenden Namen versehen.
+  * Einheitliche Dokumentationsstandards (z. B. JSDoc) verwenden.
+  * Dokumentation aktuell halten und bei Änderungen anpassen.
+
+
+==== Beispiel einzeilige Kommentare ====
+  // Einfache Variablen-Definition
+  let name = "Max";
+  // Ausgabe im Browser-Log
+  console.log("Hallo " + name); // Begrüßung ausgeben
+  
+==== Beispiel für mehrzeilige Kommentare ====
+  /*
+  Diese Funktion berechnet den Durchschnitt
+  aus zwei Zahlen. Sie nimmt zwei Parameter entgegen
+  und gibt den arithmetischen Mittelwert zurück.
+  */
+  function average(a, b) {
+    return (a + b) / 2;  
+  }
+  console.log(average(10, 20)); // Ausgabe: 15  
+
+==== Beispiel JSDoc-Kommentar ====
+  /**
+   * Berechnet die Summe zweier Zahlen.
+   * @param {number} a - Erste Zahl.
+   * @param {number} b - Zweite Zahl.
+   * @returns {number} Summe von a und b.
+   */
+  function add(a, b) {
+    return a + b;
+  }
+
+===== Zusatzmaterial =====
+  * [[https://www.w3schools.com/js//js_comments.asp|W3School-js comments]]
+  * [[https://wiki.selfhtml.org/wiki/JavaScript/Kommentar|SelfHTML-JS Kommentare]]
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir
+

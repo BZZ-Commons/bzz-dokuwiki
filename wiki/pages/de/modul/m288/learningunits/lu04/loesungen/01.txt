@@ -1,0 +1,47 @@
+====== LU04.L01 - Arrays ======
+
+===== Auftrag =====
+Beantworten bzw. bearbeiten Sie die nachfolgenden Kontrollfragen:
+
+==== Frage 1 ====
+Was ist ein Array?
+
+  * Eine Liste, welche mehrere ELemente enthalten kann. Also eine Verkettung von mehreren Variablen.
+  * Diese elemente können ausgelesen, überschrieben, hinzugefügt oder entfernt werden.
+
+==== Frage 2 ====
+Welchen Zweck erfüllt es? Sprich, was wird dadurch erst ermöglicht?
+
+  * Verarbeitung von Datenlisten wie Katalogeinträge, Adressen, Suchergebnisse, etc.
+
+==== Frage 3 ==== 
+Was gibt folgender Code aus?
+  
+  let numbers = [10, 20, 30, 40];
+  console.log(numbers[2]); 
+  
+=> 30  
+==== Frage 4 ====  
+Wie entfernen Sie das letzte Element des Arrays: durch die Methode //pop()//
+  
+  let myArray = [4,5,3,6,'a', 'irgendwas'];
+  myArray.pop();
+
+==== Frage 5 ==== 
+Nehmen Sie das nachfolgende Array //myArray// und ergänzen am Anfang ein Array-Element 'erstesElement' und ///letztesElement// an das Ende.
+
+  let myArray = [4,5,3,6,'a'];
+  //
+  myArray.unshift('erstesElement'); // Am Anfang ergänzen
+  myArray.push('letztesElement'); // Am Ende ergänzen
+  //
+  console.log(myArray);
+
+=> ["erstesElement", 4, 5, 3, 6, "a", "letztesElement"]
+
+===== Gesamtlösung =====
+
+{{:de:modul:m288:learningunits:lu04:loesungen:lu04_l01.png?800|}}
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

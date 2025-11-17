@@ -1,0 +1,17 @@
+====== LU05.A02 - Speicherbedarf ermitteln ======
+
+===== Ausgangslage =====
+
+Ermitteln Sie den Speicherbedarf in den folgenden Situationen. Generell gilt die technische Interpretation, also 1KB = 1000 Bytes und 1 Byte = 8 Bits.
+
+===== Aufgabenstellung =====
+
+  - Wie viele Bücher haben auf einer 1TB-Festplatte Platz, wenn pro Buch 300 Seiten à 60 Zeilen mit je 65 Buchstaben angenommen werden? (Buchstaben/Zahlen werden mit ASCII codiert. Runden Sie das Ergebnis auf ganze Bücher)
+  - Angenommen ein Mensch lebt 65 Jahre. Ermitteln Sie den Speicherbedarf für sein ganzes Leben, wenn er eine Sehleistung von 1.3 GB pro Stunde erbringt und er 17 Stunden/Tag sieht. (1 Jahr hat 365 Tage. Runden Sie das Ergebnis korrekt auf ganze TB)
+
+===== Rahmenbedingungen =====
+^ Was ^ Beschreibung ^
+| Produkt: | Ihre Antworten sind schriftlich verfasst. |
+| Zeit: | 20 Min. |
+| Sozialform: | Einzel- und Gruppenarbeit |
+| Arbeitsmittel: | Office oder Papier/Schreibzeug, Skript |

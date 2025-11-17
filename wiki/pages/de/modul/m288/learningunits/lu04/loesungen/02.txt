@@ -1,0 +1,73 @@
+====== LU04.L02 - Arrays - Hands-on ======
+
+===== Rahmenbedingungen =====
+  * Sozialform: individual
+  * Hilfsmittel: 
+    * Nur Lehrmittel, keine Websuche oder AI
+    * [[https://www.w3schools.com/js/js_array_methods.asp|Array-Methoden JavaScript]]
+  * Zeit: 30 Minutes
+  * Erwartetes Resultat: Ein Script mit den Lösungen der Teilaufgaben. Formal korrekt: Filename, Titel, Incode-Kommentare, ....
+
+===== Ausgangslage =====
+Was Arrays sind, sollten Sie nun wissen. Jetzt wird es Zeit sich die Programmierfinger //etwas schmutzig zu machen//.
+
+===== Auftrag =====
+Erstellen Sie ei JavaScript-Programm //LU03.L02// gemäss der nachfolgenden Teilaufträge:
+
+==== Teilauftrag A ====
+Erzeugen Sie ein Array//mixedArray//, das die folgenden Datentypen enthält: String, Number, Boolean und Array.
+
+  let mixedArray = [
+    "Hallo Welt",     // String
+    42,               // Number
+    true,             // Boolean
+    [1, 2, 3]         // Array
+  ];
+  console.log(mixedArray); 
+  
+=> ["Hallo Welt", 42, true, [1, 2, 3]]
+
+==== Teilauftrag B ====
+Ergänzen Sie das eben angelegte Array //mixedArray// um eine Sportart //Kite-Surfing// am Ende und geben das Ergebnis auf der Konsole aus.
+
+  mixedArray.push("Kite-Surfing"); // Neues Element am Ende anhängen
+  console.log(mixedArray); // 
+  
+=> ["Hallo Welt", 42, true, [1, 2, 3], "Kite-Surfing"]
+
+==== Teilauftrag C ====
+Ermitteln Sie Anzahl Elemente des Arrays //mixedArray// und geben diese Zahl auf der Konsole aus.
+  
+  const laengeDesArrays = mixedArray.length;
+  console.log(laengeDesArrays);
+  
+=> 5
+
+==== Teilauftrag D ====
+Entfernen Sie das letzte Element aus dem Array //mixedArray// und geben das restlichen Array auf der Konsole aus.
+ 
+
+  mixedArray.pop(); // letztes Element entfernen
+  console.log(mixedArray); 
+  
+=> ["Hallo Welt", 42, true, [1, 2, 3]]
+
+==== Teilauftrag E ====
+Geben Sie das vierte Element des Arrays //mixedArray// auf der  Konsole aus.
+
+  console.log(mixedArray[3]); // Index fängt bei 0 an.
+  
+=>  [ 1, 2, 3 ]
+
+==== Teilauftrag F ====
+Löschen bzw. ersetzten Sie das das dritte und vierte Element des Arrays //mixedArray// durch die Zahlen 5, 6 15, 99 und geben das neue Array auf der Konsole aus.
+
+  mixedArray.splice(2, 2, 5, 6, 15, 99); // Ab Index 2 (3. Element), 2 Stück löschen, neue Elemente einsetzen
+  console.log(mixedArray); 
+  
+=> ["Hallo Welt", 42, 5, 6, 15, 99]
+
+===== Gesamtlösung =====
+{{:de:modul:m288:learningunits:lu04:loesungen:lu04_l02.png?800|}}
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

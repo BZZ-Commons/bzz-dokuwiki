@@ -1,0 +1,35 @@
+====== LU01.A07 - Installation node.js im Visual Code ======
+
+===== Lerziele =====
+  * Erklären können was //node.js// ist und wofür es benötigt wird.
+  * //node.js// im VS Code installieren und anwenden können.
+  * Mittels //node.js// JavaScript-Programme ausführen können.
+
+===== Rahmenbedingungen =====
+  * Sozialform: individual
+  * Hilfsmittel: 
+    * Videotutorial auf English
+    * [[https://nodejs.org/en/download|Node.js download]]
+  * Zeit: 05 Minuten
+  * Erwartetes Resultat: 
+    * node.js wurde auf dem Computer installiert. 
+    * Die Version der installierten Software im Terminal ausgegeben werde.
+    * Javascript-Datei mit einfacher consolenausgabe kann durchgeführt werden.
+
+===== Ausgangslage =====
+Node.js ist eine JavaScript-Laufzeitumgebung, die JavaScript ausserhalb des Browsers ausführbar macht. Damit lassen sich nicht nur Webseiten skripten, sondern auch Server, Tools und komplette Backend-Anwendungen entwickeln. Man braucht Node.js, weil es extrem schnell, plattformunabhängig und durch npm (Node Package Manager) mit einer riesigen Bibliothekslandschaft ausgestattet ist. **Kurz:** Es macht JavaScript zu einer universellen Sprache – nicht nur für den Browser, sondern für die gesamte Softwareentwicklung.
+ 
+===== Aufgabe =====
+  - Laden Sie die Laufzeitumgebung //node.js// (Just-In-Time Übersetzungsprogramm) von der Quelle herunter.
+  - Installieren Sie //node.js// auf Ihrem Computer gemäss Videoanleitung
+  - Stellen Sie die korrekte Installation durch die Ausgabe der //node-Version// im VS-Code-Terminal sicher.
+  - Führen Sie das ein JavaScript-File mit einer einfachen Konsolenausgabe eine Textes aus. 
+
+===== Installations-Video =====
+
+{{:de:modul:m288:learningunits:lu01:aufgaben:how_to_install_npm_nodejs_in_visual_studio_code.mp4|How to isntall npm in vs-studio-code}}
+
+===== Lösungen =====
+[[de:modul:m288:learningunits:lu01:Lösungen:07|LU01.L07]]
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

@@ -1,0 +1,19 @@
+====== LU07a - Zugriffsrechte  ======
+<sup>Internal reference: learningunits/07-1.md</sup>
+\\
+===== Ziele =====
+  -Ich kann die drei Benutzerkreise für den Zugriff auf Filesystem-Ressourcen aufzählen und in eigenen Worten beschreiben.
+  -Ich kann die Zugriffsrechte mit ''chown'' und ''chmod'' mutieren.
+  -Bei Fehlern kann ich den Fehler analysieren, eine erste Massnahme vorschlagen und diese ausprobieren (Troubleshooting).
+
+\\
+===== Grundlagen =====
+In diesem [[de:modul:m122_aws:topics:05_1|Artikel]] erfahren Sie, was Zugriffsrechte auf einem Unix-System sind und wie Sie diese setzten und verändern (mutieren) können.
+
+\\
+===== Übungen =====
+Bearbeiten Sie als Vorbereitung zum Thema folgende Übungen ''06/02_Exercises/01_  * bis 03_*, 05_*'' aus dem Kurs-Repository und testen Sie lokal auf Ihrem Rechner.
+
+----
+
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Daniel Garavaldi

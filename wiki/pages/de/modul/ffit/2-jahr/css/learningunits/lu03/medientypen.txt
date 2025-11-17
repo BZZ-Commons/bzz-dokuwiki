@@ -1,0 +1,46 @@
+====== LU03a - Medientypen =====
+
+===== Einleitung =====
+Der Zugriff auf das Internet ist vielseitiger geworden, weil nicht nur mit einem Desktop-PC oder Laptop Webseiten betrachtet werden. Heute weitere Geräte wie Tablets, Smartphones, E-Book-Reader, Spielekonsolen oder Fernsehgeräte hinzugekommen. Daraus ergibt sich die Herausforderung, dass die Bildschirmgrösse und die Bildschirmauflösung enorm variieren. 
+Das Erscheinungsbild einer Webseite hängt deshalb stark vom verwendeten Endgerät ab, mit dem diese betrachtet wird. Beispielsweise ist die Standardauflösungen für Smartphones 320 bis 480 Pixel, für Tablets 
+768 bis 1.024 Pixel und für Desktop-PCs häufig über 1.024 Pixel. 
+
+===== Was ist Responsive Webdesign? =====
+Anstatt unzählige Layoutversionen für dieselbe Webseite zu erstellen und zu warten, wird das Responsive Webdesign (was so viel wie reagierend oder reaktionsfähig bedeutet – also reaktionsfähiges Webdesign meint) eingesetzt. Dazu werden die Eigenschaften des Endgeräts berücksichtigt, um die Webseite auf das Endgerät optimale und benutzerfreundliche Darstellung zu erreichen. Das Hauptkriterium für ein solches angepasstes Layout ist die Bildschirmgrösse (meistens Breite) des Geräts und eventuell auch die vorhandenen Eingabemethoden (Maus oder Touchscreen). Bei Responsive Webdesign (oder auch Responsive Layout) passt sich also die Webseite dem Bildschirm des Nutzers an.
+
+===== Was ist der Viewport? =====
+Der Viewport ist der sichtbare Bereich des Webbrowsers ohne Menü- und Scrollleiste, in dem die Webseite angezeigt wird. Mehr dazu anhand eines Anwendungsbeispiel, welches später folgt.
+
+===== Responsive Webdesign umsetzen =====
+Wie wird eine Webanwendung nun responsive? Eine einfache Lösung bietet CSS (zuerst mit Version 2 und anschliessend mit Version 3 dargelegt), welche nachfolgend anhand von Beispielen illustriert wird.
+
+==== Medientypen verwenden ====
+Schon bei CSS Level 2 gab es medienspezifische Stylesheets für bestimmte Ausgabegeräte. Dazu werden separate Stylesheets für die unterschiedliche Ausgabemedien zur Verfügung gestellt.
+
+CSS Einbindung für Medientyp "screen":
+<code css>
+    <link rel="stylesheet" href="style.css" type="text/css" media="screen">
+</code>
+
+CSS Einbindung für Medientyp "print":
+<code css>
+    <link rel="stylesheet" href="style.css" type="text/css" media="print">
+</code>
+
+==== Medientypen - Übersicht ====
+Es können mehrere Werte mit Komma getrennt zugewiesen werden. Es wird der Attributwert all verwendet, wenn kein Attributwert angegeben wird (unabhängig vom verwendeten Ausgabemedium).
+
+^ Attributwert ^ Ausgabegerät ^ 
+|all | alle Ausgabegeräte |
+|aural | Ausgabe für Sprachsynthesizer (Screenreader); der Wert galt als veraltet in CSS 2.1 und wurde mit CSS3 wiederbelebt. |
+|braille | für Braille-Zeilen-basierte Ausgabegeräte, wie sie von blinden Benutzern verwendet werden |
+|embossed  | für Braille-basierte Drucker, die Blindenschrift ausdrucken können |
+|handheld | für Mobilfunkgeräte mit kleinen Bildschirmen und geringer Bandbreite |
+|print | Drucker |
+|projection | für Projektoren und andere Geräte, die zur Präsentation an Leinwänden verwendet werden können |
+|screen | bildschirmorientierte Ausgabegeräte |
+|speech | Siehe Attributwert aural; der Wert wurde mit CSS 2.1 eingeführt, weil aural als veraltet erklärt wurde. |
+|tty | Computerterminals, die keine speziellen Grafiken anzeigen können und bei denen auch keine Formatierungen der Schriften möglich sind |
+|tv | für TV-Geräte und andere bildschirmorientierte Ausgabegeräte |
+
+

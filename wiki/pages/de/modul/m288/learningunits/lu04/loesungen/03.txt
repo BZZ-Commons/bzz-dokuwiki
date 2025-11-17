@@ -1,0 +1,33 @@
+====== LU04.L03 - Mehrdimensionale Arrays  ======
+
+
+===== Auftrag A: Array anlegen =====
+  * A1: Legen Sie ein mehrdimensionales Array //kino// mit 3 Reihen und 5 Spalten an. 
+  * A2: Belegen Sie alle Plätze mit einer 0. 
+  * A3: Geben Sie das Ergebnis auf der Konsole aus
+
+**Lösung**
+
+  let kino = [
+    [0, 0, 0, 0, 0],  
+    [0, 0, 0, 0, 0],  
+    [0, 0, 0, 0, 0]
+  ];
+  console.log("Kino wurde angelegt:", kino);
+
+
+===== Auftrag B: Array-Element verändern =====
+
+  * B1: Auf Reihe 2, Sitz 3 setzt sich S. Olivetti hin.
+  * B2: Gleich daneben auf Sitz 4 K. Sutter. 
+  * B3: Geben Sie das Ergebnis auf der Konsole aus.
+
+  kino[1][2] = 'S. Olivetti';
+  kino[1][3] = 'K. Sutter';
+  console.log("Kino wurde verändert:", kino);
+  
+===== Gesamtlösung =====
+{{:de:modul:m288:learningunits:lu03:loesungen:lu04_l03.png?800|Lösung der LU04_A03 inkl. Konsolenausgabe}}
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

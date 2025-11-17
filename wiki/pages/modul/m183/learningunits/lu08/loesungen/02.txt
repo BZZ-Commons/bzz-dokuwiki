@@ -1,0 +1,39 @@
+====== LU08.L02 - Analyse von Webserver-Logfiles ======
+
+===== Teilauftrag B: Verständnisfragen =====
+
+**1. Welche Informationen werden in den default WebServer LogFiles gespeichert?**
+  * <color #22b14c>Host, Date, Status, Bytes, Refer und Agent</color>
+
+**2. Wie muss ein Log File konfiguriert werden, damit nur das Datum, die Anfrage an den Server und der verwendete Browser aufgezeichnet werden soll?**
+  * <color #22b14c>LogFormat ‘’%t %>s %{User-Agent}i’’</color>
+
+**3. Was wird durch die Anpassung des WebServer LogLevels verändert?**
+  * <color #22b14c>Fehlermeldungen, die ausgegeben werden sollen.</color>
+  * <color #22b14c>Informationen, die in den Dateien gespeichert werden sollen.</color>
+
+**4. Welche Nutzungskennzahlen können aus den WebServer LogFiles gewonnen werden?**
+  * <color #22b14c>Für Monatlich: Hits, Files, Pages, Visits, Sites, KBytes</color> 
+  * <color #22b14c>Für Täglich: Hits, Files, Pages, Visits</color>
+
+**5. Mit Webalizer können LogFiles ausgwertet werden. Welche Auswertungen stehen zur Verfügung? **
+  * <color #22b14c>Ein drei Balkendiagramme.</color> 
+  * <color #22b14c>Erste Balkendiagramm: Angaben zu den Pages, Files und Hits</color> 
+  * <color #22b14c>Zweite Balkendiagramm: Zu den Visits und Sites</color>
+  * <color #22b14c>Dritte Balkendiagramm: Angaben über die Datengrösse + Wertetabelle mit den Werten aller Kennzahlen: Unterteilt in monatlichem und täglichem Durchschnitt.</color>
+
+**6. Welche Angriffe auf WebServer können durch die WebServer LogFiles erkannt werden? **
+  * <color #22b14c>Hinweise auf die Kopierung der Seite, SQL-Injektion, Hinweise auf Crawler</color>
+
+**7. Was macht die Auswertung und Analyse von LogFiles schwierig?**
+  * <color #22b14c>Nur direkte anfragen werden gelogged --> Es entfallen alle Serverzugriffe mittels Proxy oder Caching.</color>
+  * <color #22b14c>Dadurch wird das Tracking von Widgets und AJAX verhindert.</color> 
+  * <color #22b14c>Um die LogFiles aktuell zu halten braucht es regelmässige Updates der Software --> grösserer Wartungsaufwand.</color> 
+  * <color #22b14c>Jeder Zugriff wird automatisch protokolliert wird --> erhöhter Speicherplatzbedarf</color>
+  * <color #22b14c>Für die Analyse, wie beispielweise in Watchdog, müssen die einzelnen Logs in ein Programm eingefügt werden --> grosser Initialaufwand</color>
+  * <color #22b14c>Ungenaue Kennzahlen wegen dynamischen IP- Adressen oder mehrere Benutzer an einem Rechner.</color> 
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir
+

@@ -1,0 +1,48 @@
+====== LU04.A01 - Arrays ======
+
+===== Rahmenbedingungen =====
+  * Sozialform: individual
+  * Hilfsmittel: 
+    * Nur Lehrmittel, keine Websuche oder AI
+    * [[https://www.w3schools.com/js/js_array_methods.asp|Array-Methoden JavaScript]]
+  * Zeit: 10 Minutes
+  * Erwartetes Resultat: Der Effekt der Codebeispiele wurde earbeitet und als Code kommentiert in VS-Code abgespeichert.
+
+
+===== Ausgangslage =====
+//Arrays// sind, wie Sie gelernt haben, eine Verkettung von einzelnen Variablen (Daten-Kontainer). Mittels //arrays// wird das Handling von Listen (Adressen, Katalog, ....) erst möglich.
+
+
+===== Auftrag =====
+Beantworten bzw. bearbeiten Sie die nachfolgenden Kontrollfragen:
+
+==== Frage 1 ====
+Was ist ein Array?
+
+
+==== Frage 2 ====
+Welchen Zweck erfüllt es? Sprich, was wird dadurch erst ermöglicht?
+
+
+==== Frage 3 ==== 
+Was gibt folgender Code aus?
+  
+  let numbers = [10, 20, 30, 40];
+  console.log(numbers[2]); 
+  
+
+==== Frage 4 ====  
+Wie entfernen Sie das letzte Element des Arrays 
+  
+  let myArray = [4,5,3,6,'a', 'irgendwas'];
+  
+
+==== Frage 5 ==== 
+Nehmen Sie das nachfolgende Array //myArray// und ergänzen am Anfang ein Array-Element 'erstesElement' und ///letztesElement// an das Ende.
+
+===== Lösungen =====
+[[de:modul:m288:learningunits:lu04:loesungen:01|LU04.L01]]
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

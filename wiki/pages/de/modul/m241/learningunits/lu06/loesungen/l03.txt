@@ -1,0 +1,18 @@
+====== LU06.L03 - BSC auswerten =======
+
+===== Aufgabe =====
+Berechnen Sie, inwieweit am Ende der Planperiode 01 die Gesamtstrategie verwirklicht wurde.
+
+===== Lösung =====
+^#   ^Perspektive ^Ziel                     ^Ist   ^Soll  ^Faktor    ^Berechnung     ^Ergebnis ^
+| 1. | Kunde     | Markführer               | 140 | 150 | 0.2 | (14/15) * 0.2 | 0.1867 | 
+| 2. | Finanz    | Unabhängigkeit           | 45 | 50 | 0.15 | (45/50) * 0.15 | 0.1350 | 
+| 3. | Lernen&Entwickeln | Qualifikation    | 36 | 40 | 0.15 | (36/40) * 0.15 | 0.1350 | 
+| 4. | Kunde     | Kundenzufriedenheit      | 0.1 | 0.08 | 0.15 | (0.1/0.08) * 0.15 | 0.1875 | 
+| 5. | Prozess   | Produktivitätssteigerung | 0.09 | 0.08 | 0.15 | (0.09/0.08) * 0.15 | 0.1689 | 
+| 6. | Finanz    | Angemessene Verzinsung   | 13 | 12 | 0.2 | (13/12) * 0.2 | 0.2167 | 
+|    |           | **Ergebnis**             |    |    | **1.00** |  | **1.0298** |
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

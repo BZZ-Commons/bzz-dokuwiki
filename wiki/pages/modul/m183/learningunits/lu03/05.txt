@@ -1,0 +1,39 @@
+====== LU03e - Authentifaktion und Autorisierung ======
+
+<color #00a2e8>Merke: 61% aller Datenschutzverletzungen sind mit der unberechtigten Verwendung von Anmeldedaten verbunden.(Verizon Business)</color> 
+
+===== 1. Einleitung =====
+In modernen IT-Systemen ist die Sicherheit der Zugangskontrolle essenziell. Zwei zentrale Konzepte dabei sind **Authentifikation** und **Autorisierung**. Obwohl sie oft in einem Atemzug genannt werden, haben sie unterschiedliche Aufgaben.
+
+===== 2. Authentifikation – Wer bist du? =====
+Die Authentifikation (englisch: authentication) ist der Nachweis der Identität eines Benutzers oder Systems. **Ziel** ist es, sicherzustellen, dass jemand wirklich die Person ist, die er oder sie vorgibt zu sein.
+
+**Typische Verfahren:**
+  * Wissen: Username, Passwort, PIN
+  * Besitz: Schlüssel, Smartcard, Einmal-Token
+  * Sein: Fingerabdruck, Gesichtserkennung (biometrisch)
+
+**Beispiel:**
+Ein Benutzer meldet sich bei einem Online-Banking-Portal mit Username und Passwort an. Das System prüft, ob die Kombination gültig ist, und erkennt ihn als berechtigten Nutzer. Die Authentifikation ist damit abgeschlossen. Das System hat Sie also als die Person identifiziert, für die Sie sich ausgeben.
+
+===== 3. Autorisierung – Was darfst du? =====
+Die Autorisierung (englisch: authorization) regelt, welche Rechte ein bereits authentifizierter Benutzer im System hat. **Es geht also nicht mehr darum, wer jemand ist, sondern was er darf.**
+
+**Mögliche Rechte:**
+  * Lesen, Schreiben, Löschen von Dateien
+  * Zugriff auf bestimmte Funktionen oder Datenbanken
+  * Ausführen von administrativen Aufgaben
+
+===== 4. Zusammenspiel =====
+Ohne Authentifikation keine Autorisierung. Erst wenn ein Benutzer eindeutig identifiziert wurde, kann das System entscheiden, welche Aktionen erlaubt sind. Beide Konzepte bilden gemeinsam eine der ersten Verteidigungslinien gegen unbefugten Zugriff.
+
+**Beispiel:**
+Nach erfolgreicher Anmeldung darf ein Benutzer im Online-Banking nur seine eigenen Kontodaten einsehen und Überweisungen durchführen – nicht aber auf die Konten anderer Kunden zugreifen oder Systemeinstellungen ändern.
+
+===== Quellennachweis =====
+  * https://norbert-pohlmann.com/glossar-cyber-sicherheit/authentifikation/
+  * https://www.pingidentity.com/de/resources/blog/post/authentication-vs-authorization.html
+  * https://www.verizon.com/business/resources/reports/dbir/#top-takeaways
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

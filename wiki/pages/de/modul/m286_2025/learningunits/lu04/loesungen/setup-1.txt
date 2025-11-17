@@ -1,0 +1,38 @@
+====== LU04.L01 - Praxisaufgaben zu Schnittstellen ======
+
+===== Aufgabe 1: Das ideale Konferenz-Setup =====
+
+**Präsentation verbinden:**  
+Der Laptop wird mit einem HDMI-Kabel direkt an den Beamer angeschlossen.  
+HDMI überträgt **Bild und Ton digital** und bietet dadurch eine bessere Qualität als analoge Schnittstellen (z. B. VGA). Zudem reicht ein Kabel für beide Signale.
+
+**Peripherie einbinden:**  
+Ein USB-C-Hub wird angeschlossen, um mehrere USB-A-Geräte nutzen zu können.  
+USB-C ist **umkehrbar**, unterstützt **höhere Stromstärken** (Power Delivery) und **schnelle Datenübertragung**. Durch den Hub bleiben ältere USB-A-Geräte kompatibel.
+
+**Ersatzverbindung:**  
+Wenn WLAN ausfällt, kann der Laptop über ein **Ethernet-Kabel (RJ45-Stecker)** mit dem Netzwerk verbunden werden. Vorteil: **stabilere Verbindung**, **höhere Geschwindigkeit**, **geringere Störanfälligkeit** im Vergleich zu WLAN.
+
+**Kabellose Bedienung:**  
+Der Präsentationsklicker wird per **Bluetooth** gekoppelt.  
+Bluetooth funktioniert über eine **Funkverbindung im 2.4-GHz-Band**, hat eine **Reichweite von ca. 10 m** und benötigt wenig Energie. BLE (Bluetooth Low Energy) ist besonders stromsparend und daher ideal für kleine Eingabegeräte.
+
+===== Aufgabe 2: Der tragbare Multimedia-Workplace =====
+
+**Monitor-Verbindung:**  
+Das Tablet kann über einen **USB-C-zu-HDMI-Adapter** mit dem Monitor verbunden werden.  
+Vorteile: HDMI ermöglicht **digitale Übertragung von Bild und Ton** in hoher Auflösung und mit stabiler Qualität.
+
+**Instinktive Steckerwahl:**  
+USB-C ist **beidseitig einsteckbar**, unterstützt **hohe Datenraten**, **Stromversorgung** (Power Delivery) und kann mehrere Funktionen in einem Anschluss bündeln (z. B. Videoausgabe via DisplayPort/HDMI).  
+Für ältere Geräte sind Adapter auf **USB-A, Micro-USB** usw. nötig.
+
+**Offline-Internet:**  
+Ein USB-C-Ethernet-Adapter ermöglicht den Netzwerkzugang über Kabel.  
+Vorteile gegenüber WLAN: **stabilere Verbindung, geringere Latenz, höhere Geschwindigkeit**.  
+Nachteile: weniger flexibel, da man ans Kabel gebunden ist.
+
+**Bluetooth-Peripherie:**  
+Eine kabellose Tastatur wird über Bluetooth verbunden.  
+Vorteile: **keine Kabel**, **geringer Stromverbrauch**, **einfache Koppelung**.  
+BLE sorgt dafür, dass die Batterie lange hält und die Verbindung stabil bleibt. Reichweite ca. **10 m** – für Peripheriegeräte völlig ausreichend.

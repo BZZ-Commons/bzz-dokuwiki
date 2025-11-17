@@ -1,0 +1,42 @@
+====== LU05.A08 - Asymmetrisch Ver- und Entschlüsseln ======
+
+===== Lernziele =====
+  * Sie können ein asymmetrisches Schlüsselpaar generieren und verteilen.
+  * Sie können von Ihnen erstellte Nachrichten bzw. Medien korrekt verschlüsseln und versenden.
+  * Sie können an Sie gesendete Nachrichten bzw. Medien korrekt entschlüsseln.
+
+===== Rahmenbedingungen =====
+  * **Zeitbudget:** 45 Minuten
+  * **Sozialform:** Gruppenarbeit zu 3-4 Personen
+  * **Hilfsmittel:** 
+    * Download-Link: [[https://www.gnupg.org/download/index.html|GnuPGP-Download]]
+  * **Erwartetes Ergebnis:** Prozessbeschreibung inkl. Screenshot wie Nachrichten und Medien ver- und entschlüsselt worden sind, als PDF-Datei.
+
+===== Ausgangslage =====
+Die aktuellen Systeme wie Google oder WhatsApp bieten schon im Standard Verschlüsselungsmechanismen an, die das Lesen von Nachrichten von Unbefugten verunmöglichen sollen. Die vorliegende Aufgabe soll Ihnen den Prozessverlauf einer solchen **sicheren Kommunikation** verdeutlichen.
+
+===== Arbeitsauftrag =====
+Um Nachrichten verschlüsseln, und damit für Unberechtigte und unlesbar machen zu können, müssen wir ein Schlüsselpaar generieren. Hinweis: Es wird als //Best-Practise// angesehen diese zusätzlich zu sichern.
+
+
+**Vorarbeit:**
+Gehen Sie auf die genannte Webseite, um die Installationsdatei zu finden, sie befindet sich ca. in der Mitte der Downloadseite. Laden Sie das für Ihren Computer passende Softwarepaket, wie beispielsweise //Gpg4win// oder //Mac GPG// von der GNU-Webseite und starten den Installationsprozess durch Doppelklick der Datei //gpg4win-4.4.1.exe//. Installieren Sie diese App.
+
+{{:modul:m183:learningunits:lu05:aufgaben:lu05_a08_1.jpg?400|GnuPG-Download-Seite}}
+
+  - Erstellen Sie ein Schlüsselpaar und tauschen diese mit Ihren Peer-Parnern aus. 
+  - Verschlüsseln Sie Nachrichten und senden diese an Ihre Peerpartner. Diese sollen versuchen Ihre Nachricht zu entschlüsseln.
+  - Jede Peer-Parner sollte mindestens eine Nachricht Ver- und entschlüsselt haben.
+  - Notieren Sie Ihre Beobachtungen durch Beschreibungen und Screenshots.
+  - Versuchen Sie nun auch Medien wie Bilder oder kleine Videos zu verschlüsseln, zu versenden und zu entschlüsseln.
+  - Notieren abschliessend Ihr Fazit auf da. 1/4 Din A4 Seite. Beachten Sie, dass Ihre //Arbeitsprotokoll// einer aussen stehenden Person verständlich sein sollte.
+
+==== Video-Tutorial für Installation und Anwendung ====
+
+{{:modul:m183:learningunits:lu05:aufgaben:the_complete_pgp_encryption_tutorial_gpg4win_gnupg.mp4|Videotutorial zur Installation und Anwendung}}
+
+
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

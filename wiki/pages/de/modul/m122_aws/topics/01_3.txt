@@ -1,0 +1,22 @@
+===== Secure Shell (SSH) =====
+<sup>Internal reference: topics/01-3.md</sup>
+\\
+==== Einführung ====
+Secure Shell (SSH), ist ein Netzwerkprotokoll, das einen sicheren, verschlüsselten Zugriff auf und die Verwaltung von Computern über ein unsicheres Netzwerk ermöglicht. Es erstellt einen sicheren Kanal für die Datenkommunikation, verhindert Abhören und Manipulationen und ist eine sichere Alternative zu älteren Protokollen (wie Telnet und FTP). Zu den häufigsten Anwendungsbereichen gehören die Fernanmeldung, die Ausführung von Befehlen und der sichere Dateitransfer.
+
+{{:de:modul:m122_aws:topics:ssh-01.png?600|Abb-01: Datenaustausch mit (asymmetrischer) Verschlüsselung}}
+
+\\
+==== Merkmale ====
+Wichtige Merkmale von SSH sind:
+  * **Verschlüsselung**: Alle zwischen Client und Server übertragenen Daten werden verschlüsselt und sind so vor dem Abfangen in öffentlichen Netzwerken geschützt.
+  * **Authentifizierung**: SSH verwendet starke Authentifizierungsmethoden, um die Identität sowohl des Benutzers als auch des Remote-Servers zu überprüfen.
+  * **Datenintegrität**: Es stellt sicher, dass die übertragenen Daten während der Übertragung nicht verändert wurden.
+  * **Sicherer Fernzugriff**: Benutzer können sich sicher an entfernten Rechnern anmelden und diese verwalten, als wären sie physisch vor Ort.
+  * **Sicherer Dateitransfer**: SSH umfasst Protokolle wie SFTP und SCP zum sicheren Kopieren von Dateien auf oder von einem Remote-Server.
+  * **Client-Server-Architektur**: Es basiert auf einem Client-Server-Modell, wobei der Server standardmäßig auf TCP-Port 22 lauscht.
+
+
+----
+
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Daniel Garavaldi

@@ -1,0 +1,119 @@
+====== LU02a - Variablen ======
+
+===== Einleitung =====
+Variablen sind Platzhalter für Daten (Kontainer), die im Programm gespeichert und später wiederverwendet werden können. Sie ermöglichen es, Werte wie Zahlen, Texte oder Objekte mit einem Namen zu versehen, anstatt sie direkt im Code mehrfach zu verwenden. Dadurch wird der Code flexibler, besser lesbar und leichter wartbar.
+
+Variablen dienen in JavaScript dazu, Werte zu speichern und wiederzuverwenden. Sie können Zahlen, Texte, Objekte, Funktionen und vieles mehr aufnehmen.
+
+===== Beispiele =====
+  // Beispiele fuer Werte
+  let n = 42;          // Number
+  let s = "Hallo";     // String
+  let ok = true;       // Boolean
+  let list = [1, 2, 3];
+  let user = { name: "Volkan" };
+
+===== Deklaration vs. Zuweisung =====
+  * Deklaration: Variable bekannt machen (let x;)
+  * Zuweisung: Wert setzen oder aendern (x = 5;)
+  * Beides gemeinsam ist ueblich: let x = 5; 
+
+
+===== Keywords =====
+Zur Deklaration von Variablen stehen drei Keywords zur Verfügung: 
+  * var
+  * let 
+  * const
+
+Das nachfolgende Schaubild veranschaulicht die Gültigkeit von Variablen in JavaScript.
+
+{{:de:modul:m288:learningunits:lu02:lu02b_01.png?800|Scope von Variblen}}
+
+==== var ====
+Das älteste Schlüsselwort in JavaScript. Es ist funktion-skopiert (gültig innerhalb der Funktion) und nicht block-skopiert (gültig im gesamten Block) und wird beim Programmstart an den Anfang des Scopes verschoben.
+
+**Hinweis:** Heutzutage wird var selten empfohlen, da es leicht zu unerwartetem Verhalten führt, ist also veraltet.
+
+**Beispiel**
+
+  function demoVar() {
+    if (true) {
+      var name = "Volkan";
+    }
+    console.log(name); // funktioniert, obwohl innerhalb des if-Blocks deklariert (scope innerhalb der Funktion
+  }
+  demoVar();
+  
+{{:de:modul:m288:learningunits:lu02:lu02_01.png?1000|Fehlerfreie Ausgabe der Variable "name"}}
+
+Wie in der Abbildung zu sehen ist, ist die Ausgabe der Variable //name// fehlerfrei, obwohl diese ausserhalb des if-Blocks definiert wurde. Der Scope (Gültigkeitsbereich) ist bei var die Funktion.
+
+==== let ====
+Seit ES6 (2015) eingeführt. let ist block-skopiert, d. h. die Variable existiert nur innerhalb des Blockes { ... }, in dem sie definiert ist.
+
+**Beispiel**
+
+  function demoLet() {
+    if (true) {
+      let age = 42;
+      console.log(age); // 42
+    }
+    // console.log(age); // Fehler: age ist hier nicht definiert
+  }
+  demoLet();
+  
+{{:de:modul:m288:learningunits:lu02:lu02_02.png?1000| Terminalausgabe des keywords let}}
+
+Wie in der Ausgabe zu sehen, wird //Markpoint 1:// fehlerfrei ausgegeben, //Markpoint 2:// liefer dann eine Fehlermeldung, weil let ausserhalb des IF-Blocks deklariert wurde.
+
+==== const ====
+**const** gibt es ebenfalls seit ES6. const verhält sich wie let (block-skopiert), aber der Bezeichner darf nicht neu zugewiesen bzw. überschrieben werden. D.h. der Inhalt wird einmal geladen und ist gültig bis der Server neu gestartet wird. Dies ist beispielsweise bei Mehrwersteuer für eine Land der Fall, da diese sich über lange Zeit nicht verändern.
+
+**Wichtig:** Das bedeutet nicht, dass der gespeicherte Wert „eingefroren“ ist – bei Objekten und Arrays lassen sich Inhalte weiterhin ändern.
+
+**Beispiel 1 - einfache Varible**
+
+  const id = "1234"; 
+  console.log("1: ", id); // Ausgabe des Inhalts
+  id = "3456"; // Versuch die Variable zu überschreiben
+  console.log("2: ", id); // 1234" 
+  
+{{:de:modul:m288:learningunits:lu02:lu02_03.png?1000| mit const deklarierte variable}}
+
+Die Konsolenausgabe bei //Markpoint 1:// zeigt, dass der ursprüngliche Wert der Variable //name// 1234 war. Der Versuch den Inhalt zu überschreiben führt zu einer Fehlermeldung. //Markpoint 2:// zeigt, dass der Inhalt der Variable sich nicht verändert hat.
+
+**Beispiel 2 - Komplexe Variable (Objekt/Array)**
+
+  const user = { name: "Doe",
+                 vorname: "Joan"
+               };
+  console.log("1: ", user); // { "name: "Doe", vorname: "Joan" }
+  user.name = "Muster";   // erlaubt, Objektinhalt änderbar
+  user.vorname = "Max";   // erlaubt, Objektinhalt änderbar
+  console.log("2: ", user); // { "name: "Doe", vorname: "Joan" }
+  user = {name: "Suter", vorname: "Thierry"};  // Fehler: Neuzuweisung nicht erlaubt
+  console.log("3: ", user); // { "name: "Doe", vorname: "Joan" }
+  
+{{:de:modul:m288:learningunits:lu02:lu02_04.png?1000|Const mit assoziativen Arrays}}
+  
+In der Abbildung ist zu sehen, dass der Versuch das Array neu zu schreiben eine Fehlermeldung herbeiführt. Hingegen kann der Inhalt des Arrays verändert werden.
+
+
+==== Lernvideo ====
+{{:de:modul:m288:learningunits:lu02:lu02_05.mp4|Lernvideo Keywords: var, let, const}}
+
+==== Vergleich ====
+
+^ ^Scope ^Redeclare   ^Reassign             ^Hoisted                        ^Binds this ^
+^ ^Gültigkeitsbereich ^Neu anlegen ^Werte überschreibbar ^Wird an den Codeanfang gezogen ^this-Notation erlaubt ^
+|var   |No          |Yes                  |Yes                            |Yes |Yes |
+|let   |Yes         |No                   |Yes                            |No  |No  |
+|const |Yes         |No                   |No                             |No  |No  |
+   
+===== Zusatzmaterial =====
+  * [[https://www.w3schools.com/JS/js_variables.asp|W3School- JavaScript Varibles]]
+  * [[https://wiki.selfhtml.org/wiki/JavaScript/Variable|SelfHTML - JS Variablen ]]
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir
+

@@ -1,0 +1,21 @@
+====== LU04b - Commit pipeline and Jenkins file ======
+<sup>Internal reference: learningunits/04-2.md</sup>
+\\
+===== Goals =====
+  -I can explain the **process and purpose** of the Jenkins Commit pipeline.
+  -I can explain the **purpose** of a Jenkins File (with Pipeline Code).
+  -I can **set up and test** a Jenkins **Commit pipeline**.
+  -I can **set up and test** a Jenkins **File**.
+  -If there are any errors, I can analyze the error, suggest and test an initial workaround (troubleshooting).
+
+\\
+===== Basics =====
+In [[en:modul:m324_aws:topics:06|this article]], you will learn how to programm a Jenkins Commit Pipeline and how to preserve the pipeline code in Jenkins file. <sup>Internal reference 03-3.md</sup>
+
+\\
+===== Exercises =====
+Make your own notes while reading the article.
+
+----
+
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Daniel Garavaldi

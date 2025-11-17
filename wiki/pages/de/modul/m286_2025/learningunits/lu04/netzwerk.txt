@@ -1,0 +1,55 @@
+====== LU04c - Netzwerk ======
+
+===== Einleitung =====
+Die beiden wichtigsten Netzwerk-Schnittstellen in der Informatik sind **Ethernet** (kabelgebunden) und **WLAN** (drahtlos).  
+Beide ermöglichen die Verbindung eines Computers mit einem Netzwerk, unterscheiden sich jedoch stark in **Aufbau, Geschwindigkeit, Stabilität** und **Einsatzgebiet**.  
+
+===== Ethernet =====
+
+==== Definition ====
+**Ethernet** ist der weltweit gebräuchlichste Standard für kabelgebundene Netzwerke (LAN = Local Area Network).  
+Die Verbindung erfolgt über ein Netzwerkkabel (meist Twisted-Pair-Kabel) und einen RJ-45-Stecker.  
+
+{{:de:modul:m286_2025:learningunits:lu04:nahaufnahme-von-netzwerkkabel.jpg?600|}}
+
+==== Eigenschaften ====
+  * **Hohe Stabilität:** Wenig störanfällig, da die Daten über Kabel übertragen werden.  
+  * **Hohe Geschwindigkeit:**  
+    - Fast Ethernet: 100 Mbit/s  
+    - Gigabit Ethernet: 1 Gbit/s  
+    - 10 Gigabit Ethernet und mehr in Rechenzentren  
+  * **Sicherheit:** Kabelverbindungen sind weniger anfällig für Angriffe von aussen als Funkverbindungen.  
+  * **Reichweite:** Typisch bis zu 100 m pro Kabelstrecke.  
+
+==== Beispiele ====
+  * Ein Schulserver ist per Ethernet mit den PC-Arbeitsplätzen verbunden, um eine stabile und schnelle Datenübertragung sicherzustellen.  
+  * In Firmenbüros werden PCs oft über Ethernet vernetzt, da die Verbindung zuverlässiger als WLAN ist.  
+
+===== WLAN =====
+
+==== Definition ====
+**WLAN (Wireless Local Area Network)** ermöglicht den drahtlosen Zugriff auf ein Netzwerk über Funk.  
+Es basiert auf dem Standard IEEE 802.11 und ist heute in nahezu allen Smartphones, Tablets und Notebooks integriert.  
+
+==== Eigenschaften ====
+  * **Flexibilität:** Geräte können sich frei bewegen, solange sie sich in Reichweite des Routers befinden.  
+  * **Geschwindigkeit:** abhängig von der WLAN-Generation:  
+    - Wi-Fi 4 (802.11n): bis zu 600 Mbit/s  
+    - Wi-Fi 5 (802.11ac): bis zu 3,5 Gbit/s  
+    - Wi-Fi 6 (802.11ax): bis zu 9,6 Gbit/s  
+  * **Reichweite:** ca. 30 m in Gebäuden, bis zu 100 m im Freien (abhängig von Hindernissen und Störungen).  
+  * **Sicherheit:** muss durch Verschlüsselung (z. B. WPA3) geschützt werden, da Funknetzwerke leichter abgehört werden können.  
+
+==== Beispiele ====
+  * Schülerinnen verbinden ihre Laptops im Klassenzimmer per WLAN mit dem Internet, ohne dass Kabel verlegt werden müssen.  
+  * Zuhause nutzen Smartphones WLAN, um Datenvolumen im Mobilfunknetz zu sparen.  
+
+===== Vergleich Ethernet vs. WLAN =====
+
+^ Eigenschaft       ^ Ethernet (LAN)                   ^ WLAN (Wi-Fi)                        ^
+| Verbindung        | Kabelgebunden (RJ-45)           | Drahtlos über Funk                  |
+| Geschwindigkeit   | Sehr hoch, stabil (1–10 Gbit/s) | Hoch, aber schwankend (bis 9,6 Gbit/s) |
+| Stabilität        | Sehr zuverlässig                | Störanfällig (z. B. durch Wände)    |
+| Reichweite        | max. 100 m pro Kabel            | ca. 30 m in Gebäuden                |
+| Sicherheit        | Hoch (physisch abgesichert)     | Muss verschlüsselt werden           |
+| Mobilität         | Keine, PC an Kabel gebunden     | Sehr hoch, Geräte frei beweglich    |

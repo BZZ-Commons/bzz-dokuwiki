@@ -1,0 +1,36 @@
+===== Peer-To-Peer (P2P) Architecture =====
+The peer-to-peer (P2P) architecture is a unique type of distributed system that operates without centralized control. In this architecture, any node, also referred to as a peer, can function as either a client or a server. When a node requests a service, it acts as a client and when it offers a service, it's considered a server.
+\\
+\\
+{{:en:modul:m321_aws:topics:p2p-1.svg?600|Fig-01: Peer-To-Peer (P2P) Architecture}}
+\\
+\\
+==== Types of P2P ====
+P2P networks can be broadly categorized into 3 types: 
+
+  * **Structured P2P**: Nodes adhere to a predefined distributed data structure.
+  * **Unstructured P2P**: Networks feature nodes that randomly select their neighbors. 
+  * **Hybrid P2P**: Systems combine elements of both, with certain nodes assigned unique, organized functions.
+
+
+An important feature of the P2P system is its redundancy. Each node carries the full application instance, containing both the presentation and data processing layers. When a new peer is introduced to the system, it discovers and connects to other peers for synchronizing its local state with the wider system. This redundancy ensures the system's resilience with the failure of a single node having minimal impact on the overall network.
+
+A key advantage of P2P networks is the increase in system capacity as more nodes join the network. This yields shared resources such as bandwidth, storage, and processing power. Compared to typical client-server networks where increased demands cause fewer available resources per client, P2P networks become more robust and resilient with each additional node.
+
+==== Components ====
+The following are the main components of a P2P architecture:
+\\
+=== Peers Or Nodes ===
+The foundation of any Peer-to-Peer (P2P) network are the peers or nodes. These are individual computers that can both request and provide services. This dual role of each participant sets P2P apart from traditional client-server models.
+\\
+=== Network Infrastructure ===
+This element refers to the connection medium that links all nodes in the system. It can range from a local communication network to the expansive internet. The network allows the nodes to communicate and enables the sharing of resources.
+\\
+=== Distributed Data ===
+In a P2P system, data is not stored in a central location but is spread across the network. Each peer holds a part of the overall data. This distributed nature of data is one of the key aspects that enhances the resilience and efficiency of P2P systems.
+\\
+=== Directory Services ===
+While P2P networks fundamentally lack central control, some incorporate a directory service. This service helps locate resources in the network which enhances its overall efficiency.
+\\
+=== Communication Protocols ===
+Protocols form the rules of interaction within the network. They allow peers to discover other nodes, ask for services, offer services, and synchronize their data. These protocols are vital for smooth operations and communications in the P2P network.

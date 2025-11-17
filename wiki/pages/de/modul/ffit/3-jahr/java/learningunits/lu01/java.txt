@@ -1,0 +1,26 @@
+====== LU01b - Java ======
+
+==== JDK ====
+Installieren Sie das JDK der Version **22**.
+
+  * OpenJDK (open-source): https://www.openlogic.com/openjdk-downloads
+  * Oracle (commercially licensed): https://www.oracle.com/java/technologies/downloads/
+
+Stellen Sie sicher, dass der Binary-Ordner von Java auch bei der Umgebungsvariable ''path'' hinzugefügt ist.
+Die installierte Version sollte nun folgendermassen abgefragt werden können.
+
+| <code bash>java --version</code> Ebenfalls muss die Umgebungsvariable ''JAVA_HOME'' richtig gesetzt sein. <code bash>echo $JAVA_HOME</code> | {{:de:modul:ffit:3-jahr:java:learningunits:lu01:java_version.png|Java version}} |
+
+
+==== Build automation tools ====
+Es gibt verschiedene build automation tools für Java, die dabei helfen, dass die einzelnen Klassen nicht manuell kompiliert werden müssen.
+Die gebräuchlichsten sind:
+  * Apache Ant https://ant.apache.org/
+  * Apache Maven https://maven.apache.org/
+  * Gradle https://gradle.org/
+
+Maven und Gradle sind nicht reine Build-Werkzeuge, sondern verwalten ebenfalls die Dependencies (ähnlich wie npm für Node und pip für Python).
+
+Diese Werkzeuge werden unter anderem in der Buildpipeline eingesetzt und sind somit unabhängig von der IDE. Gebräuchliche IDEs wie IntelliJ erkennen anhand der Konfigurationsdatei ''pom.xml'' bei Maven und ''build.gradle'' bei Gradle welche Java-Versionen etc. verwendet werden müssen. Dadurch reicht es, diese Konfigurationsdateien ins Git-Repository zu pushen ohne die IDE-spezifischen Dateien in .idea, .vscode, etc.
+
+Ebenfalls ist es nützlich die grundlegenden Befehle zu kennen, um zum Beispiel bei allfälligen Fehler die IDE als Fehlerquelle zu eruieren beziehungsweise auszuschliessen.

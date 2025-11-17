@@ -1,0 +1,48 @@
+====== LU03S3 - Lösungsvorschlag ======
+
+Im folgenden ERD sehen Sie eine mögliche Lösung für die Aufgabe **Filmdatenbank**.  
+Es zeigt die Entitäten (Rechtecke), Attribute (Ovale), Beziehungen (Rauten) und Kardinalitäten (1:1, 1:n, n:m).  
+
+{{:modul:m290_guko:learningunits:lu03:loesungen:loesung_filmdb.png?direct&800|Beispielhafte Lösung eines ERD zur Filmdatenbank in Chen-Notation}}
+
+
+===== Erklärung =====
+**Entitäten und Attribute:**
+  * **Film**  
+    * __FilmID__ (PK)  
+    * Titel  
+    * Erscheinungsjahr  
+
+  * **Studio**  
+    * __StudioID__ (PK)  
+    * Name  
+    * Adresse  
+
+  * **Besitzer**  
+    * __BesitzerID__ (PK)  
+    * Name  
+
+  * **Regisseur**  
+    * __RegisseurID__ (PK)  
+    * Name  
+
+  * **Schauspieler**  
+    * __SchauspielerID__ (PK)  
+    * Name  
+
+
+**Beziehungen und Kardinalitäten:**
+  * Ein **Studio** produziert viele **Filme** → 1:n  
+  * Ein **Besitzer** besitzt genau ein **Studio** → 1:1  
+  * Ein **Film** wird von mindestens einem **Regisseur** gedreht, ein Regisseur kann mehrere Filme drehen → 1:n  
+  * Ein **Film** hat viele **Schauspieler**, und ein Schauspieler kann in mehreren Filmen mitspielen → n:m  
+
+
+===== Hinweise =====
+  * **Primärschlüssel** sind unterstrichen dargestellt (z. B. __FilmID__).  
+  * Die Beziehung **Film–Schauspieler** ist ein klassisches Beispiel für eine **n:m-Beziehung**.  
+
+
+===== Ergebnis =====
+Das ERD zeigt eine mögliche Modellierung einer Filmdatenbank.  
+Die Struktur kann später in Tabellen (relationales Modell) übertragen werden.

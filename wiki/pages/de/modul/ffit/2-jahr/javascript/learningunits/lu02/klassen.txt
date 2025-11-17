@@ -1,0 +1,69 @@
+====== LU02a - Klassen ======
+
+Klassen in JavaScript sind Schablonen für die Erstellung von Objekten. Sie vereinfachen die Verwaltung von Daten und die Organisation von Methoden, die auf diese Daten zugreifen oder sie verändern. Durch Klassen lassen sich wiederverwendbare und erweiterbare Bausteine definieren, die die Struktur und das Verhalten von Objekten beschreiben.
+
+===== Syntax einer Klasse =====
+<code javascript>
+class Fahrzeug {
+  constructor(marke, modell) {
+    this.marke = marke;
+    this.modell = modell;
+  }
+
+  anzeigenInfo() {
+    console.log(`Fahrzeug: ${this.marke} ${this.modell}`);
+  }
+}
+</code>
+
+In diesem Beispiel beschreibt die Klasse Fahrzeug die Eigenschaften marke und modell eines Fahrzeugs und enthält eine Methode anzeigenInfo, die das Fahrzeug beschreibt.
+
+==== Der constructor ====
+Der constructor ist eine spezielle Methode, die beim Erstellen eines neuen Objekts automatisch aufgerufen wird. Er ist dafür zuständig, das Objekt mit den Werten zu initialisieren, die übergeben werden, wenn die Klasse instanziiert wird.
+
+<code javascript>
+const meinAuto = new Fahrzeug("Toyota", "Corolla");
+meinAuto.anzeigenInfo(); // Ausgabe: Fahrzeug: Toyota Corolla
+</code>
+
+Durch den constructor werden den neuen Objekten also direkt die Werte marke und modell zugewiesen.
+
+==== Methoden in Klassen ====
+Methoden sind Funktionen, die innerhalb von Klassen definiert sind. Sie werden auf Objekten der Klasse aufgerufen und können auf die Eigenschaften des Objekts zugreifen und diese bearbeiten.
+
+<code javascript>
+class Fahrzeug {
+  constructor(marke, modell, baujahr) {
+    this.marke = marke;
+    this.modell = modell;
+    this.baujahr = baujahr;
+  }
+
+  anzeigenInfo() {
+    console.log(`Fahrzeug: ${this.marke} ${this.modell}, Baujahr: ${this.baujahr}`);
+  }
+
+  fahre() {
+    console.log(`${this.marke} ${this.modell} fährt.`);
+  }
+}
+</code>
+Hier enthält die Klasse Fahrzeug nun auch eine Methode fahre, die beim Aufruf anzeigt, dass das Fahrzeug fährt.
+
+==== Vererbung ====
+
+Vererbung ist ein fundamentales Konzept der objektorientierten Programmierung, bei dem eine Klasse Eigenschaften und Methoden einer anderen Klasse übernehmen kann. In JavaScript verwenden wir das Schlüsselwort extends, um eine neue Klasse zu erstellen, die von einer anderen Klasse erbt.
+
+<code javascript>
+class Elektrofahrzeug extends Fahrzeug {
+  constructor(marke, modell, baujahr, batteriekapazitaet) {
+    super(marke, modell, baujahr); // Ruft den constructor der Elternklasse auf
+    this.batteriekapazitaet = batteriekapazitaet;
+  }
+
+  anzeigenBatterie() {
+    console.log(`Batteriekapazität: ${this.batteriekapazitaet} kWh`);
+  }
+}
+</code>
+In diesem Beispiel erbt die Klasse Elektrofahrzeug von Fahrzeug, was bedeutet, dass Elektrofahrzeug auch auf die Methode anzeigenInfo zugreifen kann. Der super-Aufruf stellt sicher, dass der constructor der Elternklasse ausgeführt wird.

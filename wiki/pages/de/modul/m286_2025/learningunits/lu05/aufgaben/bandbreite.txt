@@ -1,0 +1,23 @@
+====== LU05.A03 - Berechnungen mit Bandbreite ======
+
+===== Ausgangslage =====
+
+Ein Schüler möchte einen Film mit 4.5 GB Grösse von seinem Laptop auf einen externen Speicher übertragen. Dafür stehen ihm drei verschiedene Schnittstellen zur Verfügung:
+
+  * USB 2.0 mit einer Geschwindigkeit von ca. 35 MB/s
+  * USB 3.0 mit einer Geschwindigkeit von ca. 300 MB/s
+  * Bluetooth 5.0 mit einer Geschwindigkeit von ca. 0.25 MB/s
+  * WLAN (Wi-Fi 5) mit einer Geschwindigkeit von ca. 54 MB/s
+
+===== Aufgabenstellung =====
+
+  - Berechne die Übertragungszeit des Films bei jeder Schnittstelle.
+  - Vergleiche die Ergebnisse: Welche Schnittstelle ist am schnellsten, welche am langsamsten?
+  - Begründe, warum Bluetooth und auch WLAN für sehr grosse Dateien oft ungeeignet sind.
+
+===== Rahmenbedingungen =====
+^ Was ^ Beschreibung ^
+| Produkt: | Ihre Antworten sind schriftlich verfasst. |
+| Zeit: | 20 Min. |
+| Sozialform: | Einzel- und Gruppenarbeit |
+| Arbeitsmittel: | Office oder Papier/Schreibzeug, Skript |

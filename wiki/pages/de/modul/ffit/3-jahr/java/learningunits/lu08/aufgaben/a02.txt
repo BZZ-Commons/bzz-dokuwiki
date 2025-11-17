@@ -1,0 +1,9 @@
+==== LU08.A02 Datenbank-Mapping ergänzen ====
+
+Setzen Sie bei den Klassen aus LU08.A02 bei den Primärschlüsseln (PK) und Fremdschlüsseln (FK) die Annotationen ''@Id'' respektive ''@ManyToOne'' und ''@JoinColumn(name = "...", nullable = false)''
+  * Project: projectName (PK)
+  * Account: id (PK), project (FK)
+  * Booking: id (PK), debitAccount (FK), creditAccount (FK), project (FK)
+
+Ergänzen Sie zudem die folgenden Annotationen nach eigenem Ermessen. Sie können Sich an den Datenklassen des letzten Projekts orientieren.
+ ''@Entity'', ''@Table(name = "...")'', ''@Column(name = "...", nullable = false, unique = true, length = ...)'', ''@GeneratedValue(strategy = GenerationType.IDENTITY)'' 

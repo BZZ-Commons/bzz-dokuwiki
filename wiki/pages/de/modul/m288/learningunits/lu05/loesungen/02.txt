@@ -1,0 +1,27 @@
+====== LU05.L02 - for-loop & arrays ======
+
+===== Array: bestellung =====
+  const bestellung = [
+    ["Kaffee", 3.5, 2], 
+    ["Sandwich", 5.9, 1],
+    ["Kuchen", 4.2, 2],
+    ["Omelette Natur", 8.5, 1],
+    ["Omelette Emmentaler", 9.0, 1],
+    ["Wasser", 2.0, 4],
+    ["Gipfeli Plain", 1.5, 6],
+    ["Gipfeli Rustico", 2.0, 4],
+    ["Saft", 3.8, 2]
+  ];
+  // 1. Spalte: Produkt
+  // 2. Spalte: Stückpreis
+  // 3. Spalte: Bestellmenge
+
+===== Lösung Quellcode =====
+{{:de:modul:m288:learningunits:lu05:loesungen:lu05.l02_1.jpg?1000| Quellcode LU05.L02}}
+
+===== Lösungen Console =====
+{{:de:modul:m288:learningunits:lu05:loesungen:lu05.l02_2.jpg?1000|Konsolenausgabe der LU05.L02}}
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

@@ -1,0 +1,23 @@
+====== LU05a - Loops (Schleifen) ======
+<sup>Internal reference: learningunits/05-1.md</sup>
+\\
+===== Ziele =====
+  -Ich kann Loops ''for, while, until'' einfach oder verschachtelt (nested) korrekt anwenden.
+  -Ich kann Loops zusätzlich zu den Bedingungen abbrechen, fortsetzen oder verlassen.
+  -Ich kann ''case'' einfach oder verschachtelt (nested) korrekt anwenden.
+  -Ich kann ''select'' einfach oder verschachtelt (nested) korrekt anwenden.
+  -Bei Fehlern kann ich den Fehler analysieren, eine erste Massnahme vorschlagen und diese ausprobieren (Troubleshooting).
+
+\\
+===== Grundlagen =====
+  -In diesem [[de:modul:m122_aws:topics:03_1|Artikel]] erfahren Sie, was und wie Loops (Schleifen) in Bash programmiert und beispielhaft angewendet werden.
+  -Die in der Live-Demo verwendeten Code finden Sie unter ''04/01_Intro/'' im Repo.
+
+\\
+===== Übungen =====
+Bearbeiten Sie die Übungen ''04/02_Exercises/02_  * bis 05_*'' aus dem Kurs-Repository
+
+
+----
+
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Daniel Garavaldi

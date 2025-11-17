@@ -1,0 +1,18 @@
+====== LU01.A02 - Taschenrechner ======
+
+===== Aufgabenstellung =====
+
+  - Erstellen Sie ein HTML-Dokument mit allen Schaltflächen, die ein Taschenrechner benötigt
+    * Zahlen: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9
+    * Operatoren: +, -, *, /
+    * Funktionen: Enter, Delete, Reset
+    * Ausgabe des Wertes
+  - Programmieren Sie die Funktionalitäten für die verschiedenen Schaltflächen. Achten Sie darauf, dass Sie ein JavaScript-Objekt dafür verwenden. Die Funktionen sollen Methoden von diesem Objekt sein und die Werte als Eigenschaft des Objekts gespeichert werden.
+  - Verknüpfen Sie die Schaltflächen zu den einzelnen Funktionen
+
+==== Rahmenbedingungen ====
+^ Was ^ Beschreibung ^
+| Produkt: | HTML-Seite mit CSS Flexbox |
+| Zeit: | 90 Min. |
+| Sozialform: | Einzel- oder Partnerarbeit |
+| Arbeitsmittel: | Unterrichtsunterlagen, HTML-Editor, Browser |

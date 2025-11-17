@@ -1,0 +1,20 @@
+====== LU02.L02 - Variablen ======
+
+===== Teilauftrag A =====
+Deklarieren Sie eine Variable name mit //let// und weisen dieser Ihren Namen zu. Verändern Sie danach den Wert und geben den Inhalt console.log aus.
+
+{{:de:modul:m288:learningunits:lu02:loesungen:lu02_l02_a.png?800|}}
+  
+===== Teilauftrag B =====
+Erstellen Sie eine Konstante //person//, die ein Objekt mit den Eigenschaften firstName und age enthält. Ändern Sie den Wert von age und versuchen, die Konstante komplett neu zuzuweisen. Notieren Sie Ihre Beobachtung als Inline-Code-Kommentare.
+
+{{:de:modul:m288:learningunits:lu02:loesungen:lu02_l02_b.png?800|}}
+ 
+===== Teilauftrag C =====
+Analysieren Sie den folgenden Code. Halten Sie als Incode-Kommentar ihre Beobachtungen fest.
+
+{{:de:modul:m288:learningunits:lu02:loesungen:lu02_l02_c.png?800|}}
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

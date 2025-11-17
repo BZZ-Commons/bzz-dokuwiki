@@ -1,0 +1,44 @@
+====== LU10: Einführung & Setup – Datensätze importieren ======
+
+<WRAP round 80% box center>
+Bevor Sie mit den Übungen starten, müssen Sie die **Datensätze herunterladen und in MySQL importieren**.
+</WRAP>
+
+===== 1. Download =====
+
+<WRAP round 80% box center>
+**Zip-Datei:** 
+{{ :modul:m290_guko:learningunits:lu10:aufgaben:datensaetze_lu10_spacemissions_einbrueche_youtube_top_100.zip | Datensaetze_LU10_spacemissions_einbrueche_youtube_top_100}}
+
+
+**Inhalt (3 SQL-Dumps, je 1 Tabelle inkl. Daten):**
+^ Datei ^ Enthält (Datenbank.Tabelle) ^
+| youtube_top_100_songs_2025-2025_10_31_17_01_30-dump.sql | youtube_top_100_songs_2025.youtube_top_100_songs_2025 |
+| spacemissions-2025_10_31_15_34_27-dump.sql | spacemission.missions |
+| zh_einbrueche-2025_10_31_17_01_23-dump.sql | zh_einbrueche.einbrueche |
+</WRAP>
+
+===== 2. Import in MySQL via WebStorm =====
+
+<WRAP round 80% box center>
+**Vorgehen:**
+
+  - **Zip laden & entpacken**.
+  - **SQL-Script ausführen**: Rechtsklick auf die **MySQL-Verbindung** (wahrscheinlich etwas mit @localhost) → SQL Scripts → Run SQL Script… → nacheinander **alle drei** .sql-Dateien auswählen und ausführen.
+  - **Schemas anzeigen**: Rechtsklick auf die **MySQL-Verbindung** → Tools → Manage Shown Schemas → Häkchen setzen bei **zh_einbrueche**, **spacemission**, **youtube_top_100_songs_2025**.
+{{ :modul:m290_guko:learningunits:lu10:theorie:load_and_import_sql_files_aggregate.mp4?1040x585 | Screencast, der zeigt wie die SQL-Files in Webstorm ausgeführt werden. Drei Datenbanken mit Tabellen und Datensätzen werden in MySQL erstellt. }}
+//Screencast, der zeigt wie die SQL-Files in Webstorm ausgeführt werden. Drei Datenbanken mit Tabellen und Datensätzen werden in MySQL erstellt.//
+</WRAP>
+
+===== 3. Start mit den Übungen =====
+
+<WRAP round 80% box center>
+Vor jeder Abfrage das **richtige Schema** wählen – entweder im **Dropdown** **oder** per Befehl:
+
+<code sql>
+-- Beispiel: Schema setzen
+USE zh_einbrueche;   -- für Einbruch-Daten
+USE spacemission; -- für Space-Missions
+USE youtube_top_100_songs_2025; -- für YouTube Top 100
+</code>
+</WRAP>

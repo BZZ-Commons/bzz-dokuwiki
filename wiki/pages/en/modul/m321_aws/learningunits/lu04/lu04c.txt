@@ -1,0 +1,22 @@
+====== LU04c - Scale an App in K8s ======
+===== Goals =====
+  -I'm able to explain what's the purpose of scaling an app.
+  -I'm able to explain the term ''horizontal and vertical'' scaling.
+  -I'm able to explain the term ''Replicaset''.
+  -I'm able to scale up or down a deployment with a K8s service.
+  -I'm able to test/verify a scaled K8s service.
+  -I'm able to query relevant information on scaled pods and services in a K8s cluster.
+  -I can suggest and implement at least one measure when an error message appears.
+
+===== Basics =====
+This [[https://youtu.be/2MvAE6pGooc|video]] demonstrates how to scale an app in Minikube running on a AWS EC2 Instance.
+
+===== Exercises =====
+  -Read some [[en:modul:m321_aws:topics:06|background information]] before starting the exercise
+  -Watch again the video cast.
+  -Deploy and scale app in YOUR K8s cluster.
+  -Memorize the procedure. It will become handy for future exercises.
+
+===== Study case =====
+  -Work on ''06/02_Exercises/01-Exercise.md to 04-Exercise.md'' located in your repository.
+  -If an error occurs, read the message carefully, think of a solution and implement it.

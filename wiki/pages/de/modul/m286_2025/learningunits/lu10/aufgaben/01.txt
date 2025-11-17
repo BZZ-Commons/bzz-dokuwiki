@@ -1,0 +1,30 @@
+====== LU10.A01 - Datei- und Ordner mittels MacOS TERMINAL verwalten ======
+
+===== Teilauftrag A: Orientierung - 5' =====
+  * A1: Öffne ein Terminal.
+  * A2: Finde Sie mit dem passenden Befehl heraus, in welchem Verzeichnis Sie sich befinden.
+  * A3: Listen Sie den Inhalt dieses Verzeichnisses mit dem entsprechenden Befehl auf.
+  * A4: Verwende Sie //man ls//, um nachzulesen, was die Option -a bewirkt, und probiere Sie diese aus.
+
+===== Teilauftrag B: Verzeichnisse & Dateien - 10' =====
+  * B1: Erstelle Sie im Home-Verzeichnis einen Ordner mit dem Namen //uebung_shell//. 
+  * B2: Wechsle Sie in das neu angelegte Verzeichnis.
+  * B3: Erstellen sie darin drei leere Textdateien: //test1.txt, test2.txt, notizen.txt//. 
+  * B4: Zeige Sie alle Dateien an, die mit //test// beginnen.
+  * B5: Kopiere Sie //notizen.txt// nach backup_notizen.txt.
+  * B6: Verschiebe Sie //test2.txt// in ein neues Unterverzeichnis archiv (dieses musst du vorher anlegen).
+
+===== Teilauftrag C – Umbenennen & Löschen - 10' =====
+  * C1: Benennen sie //test1.txt// in //ergebnis.txt// um. 
+  * C2: Verändern Sie alle Dateien mit der Endung //.txt// in //.bak// um. 
+  * C3: Listen Sie den aktuellen Inhalt mit auf und prüfen Sie Ihr Ergebnis. 
+  * C4: Löschen Sie das Unterverzeichnis archiv mitsamt Inhalt.
+  * C5: Löschen Sie einzelne Datei Ihrer Wahl.
+
+===== Lösungen =====
+[[de:modul:m286_2025:learningunits:lu10:loesungen:01|LU10.L01]]
+
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

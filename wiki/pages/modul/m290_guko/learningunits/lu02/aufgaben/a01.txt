@@ -1,0 +1,42 @@
+====== LU02a - Installation und Konfiguration der MySQL-Datenbank ======
+
+
+===== Voraussetzungen =====
+  * Arbeitsform: Einzelarbeit oder Partnerarbeit (helfen Sie sich gegenseitig)
+  * Zeitaufwand: ca. 15 Minuten 
+  * Erwartetes Ergebnis: 
+    * Lokaler MySQL-Datenbankserver ist korrekt installiert und der Dienst läuft erfolgreich
+ 
+
+===== Einführung =====
+Das übergeordnete Thema des Moduls 290 ist der Umgang mit Daten. Deshalb beginnen wir mit der Installation einer Datenbank. Es gibt viele verschiedene Datenbankmanagementsysteme auf dem Markt. Wir verwenden **MySQL**, da es sich um eine weit verbreitete Open-Source-Datenbank handelt, die zudem für Lernzwecke kostenlos genutzt werden kann.  
+
+MySQL (bzw. die Weiterentwicklung **MariaDB**) wird in unzähligen Anwendungen eingesetzt, z.B. bei fast allen **WordPress**-Installationen. Dort verwaltet die Datenbank u.a. Benutzerkonten (Login ins Admin-Dashboard), Blog-Beiträge sowie Artikel, die in einem Webshop (z.B. mit WooCommerce) verkauft werden.  
+
+==== MySQL als lokaler Server ====
+Wir installieren MySQL lokal als **Server**. Das bedeutet: Das Datenbankmanagementsystem (DBMS) MySQL läuft nach der erfolgreichen Installation und Konfiguration im Hintergrund auf unserem Rechner und kann SQL-Anfragen von einem Client (z.B. Webstorm) entgegennehmen.  
+
+Dadurch können wir Datenbanken erstellen, Tabellen konfigurieren und Daten speichern oder abfragen – genauso wie auf einem „echten“ Webserver.  
+
+Wichtig: MySQL läuft als **Hintergrundprozess** (Windows = //Service//, macOS/Linux = //Daemon//) ((Ein Service in Windows ist ein Hintergrundprogramm, das automatisch beim Systemstart ausgeführt wird, z.B. der „MySQL94“-Dienst. Auf macOS/Linux übernimmt diese Aufgabe ein sogenannter Daemon. Beide erfüllen denselben Zweck: Sie sorgen dafür, dass MySQL dauerhaft im Hintergrund verfügbar ist, ohne dass der Benutzer es manuell starten muss.)).  
+
+{{:modul:m290_guko:learningunits:lu02:aufgaben:client_server_local.png?direct&800| Client-Server-Schema}}\\
+
+//Wenn wir MySQL lokal installieren und über eine IDE wie Webstorm darauf zugreifen, findet auch hier, komplett auf unserem Computer, ein Spiel zwischen Client und Server statt, bei dem Anfragen gestellt und Antworten zurückgegeben werden.//
+
+
+===== Aufgaben =====
+  - **Software herunterladen:** Rufen Sie die MySQL-Website auf [[https://dev.mysql.com/downloads/mysql/| MySQL Community Server]] und laden Sie die für Ihr Betriebssystem passende Version von MySQL Communtiy Server herunter:
+      - Vor allem für **Mac-User**: Wenn Sie ein Macbook mit **Apple Chip (M1/M2/M3/M4)** besitzen, dann laden Sie die **ARM, 64-bit, DMG Archive** herunter. Falls Ihr Macbook einen **Intel Chip** eingebaut hat, dann nutzen Sie die **x86, 64-bit DMG Archive**.
+      - **Windows-User** sind in der Regel mit dem **x86, 64-bit MSI Installer** gut bedient.
+  - **Installation starten:** Führen Sie den Installationsprozess mit dem heruntergeladenen Installer durch. → Dadurch wird MySQL auf Ihrem Rechner eingerichtet.
+  - **Nach-Installation / Konfiguration:** Beim Windows-Installer, startet nach der Installation der sogenannte MySQL Configurator. Legen Sie hier den Root-Benutzer und ein Passwort fest. → Diese Zugangsdaten benötigen Sie später für die Verbindung zwischen Webstorm und der Datenbank. Die restlichen Konfigurationen im MySQL Configurator können Sie auf den vorgeschlagenen Standart-Einstellungen lassen. Falls der **MySQL Configurator** nicht ausgeführt wird, starten Sie ihn manuell, indem Sie ihn im Installationsverzeichnis aufrufen.
+  - **Dienst/Daemon prüfen:** Überprüfen Sie, ob MySQL im Hintergrund läuft:  
+    * **Windows:** Öffnen Sie den //Task-Manager// → Reiter //Dienste// → suchen Sie nach //MySQL94// (Status = *Wird ausgeführt*).  
+    * **MacOS:** Öffnen Sie //Systemeinstellungen// → //MySQL// → prüfen Sie, ob der Server gestartet ist.  
+
+{{:modul:m290_guko:learningunits:lu02:aufgaben:screenshot_2025-08-24_at_02.02.51.png?600|MacOS Systemeinstellungen für MySQL – Dienst ist aktiv}}
+{{:modul:m290_guko:learningunits:lu02:aufgaben:task_manager_mysql.png?direct&600|Windows Task Manager > Dienste – MySQL Hintergrundprozess ist aktiv}}
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Guido Koch

@@ -1,0 +1,36 @@
+====== LU01.A02 - Display ======
+
+===== Ausgangslage =====
+
+Sie haben die Grundlagen gelesen.
+
+===== Aufgabenstellung =====
+  - Erstellen Sie die Dokumente `index.html` und `style.css`.
+  - Kopieren Sie die folgende Vorlage in Ihre Dokumente:<code html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">Item 1</div>
+        <div class="nav">
+            <div class="nav-item">Item 1</div>
+            <div class="nav-item">Item 2</div>
+            <div class="nav-item">Item 3</div>
+        </div>
+    </div>
+</body>
+</html>
+</code>
+  - Verlinken Sie das `syle.css` in Ihrem HTML-Dokument.
+  - Gestalten Sie Ihr HTML-Dokument gemäss Vorgabe. {{:modul:ffit:css:learningunits:lu01:aufgaben:vorgabe.png?800|}}
+
+===== Rahmenbedingungen =====
+^ Was ^ Beschreibung ^
+| Produkt: | HTML-Seite mit CSS Flexbox |
+| Zeit: | 15 Min. |
+| Sozialform: | Einzel- oder Partnerarbeit |
+| Arbeitsmittel: | Unterrichtsunterlagen, HTML-Editor, Browser |

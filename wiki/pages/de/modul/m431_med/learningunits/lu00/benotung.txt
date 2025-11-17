@@ -1,0 +1,36 @@
+====== LU00a - Leistungsbeurteilungen (Benotung) ======
+
+===== LB01 =====
+  * Länge: TBD
+  * Gewichtung: 50%
+  * Form: Theorie (Moodle)
+  * Typ: Einzelarbeit
+
+===== LB02 =====
+  * Länge: TBD
+  * Gewichtung: 50%
+  * Form: Praktische Arbeit
+  * Typ: TBD
+
+===== Berechnung der Prüfungsnote =====
+Grundsätzlich wird die Standard-Notenformel zur Berechnung der Prüfungsnote im Modul 241 angewendet
+
+  * Prüfungsnote = (5 * Erreichte Punktezahl / Maximale Punktezahl) + 1
+  * Es wird mathematisch, auf 1 Nachkommastelle gerundet
+  * Beispiel:
+    * In der letzte Prüfung hat Lea hat von 30 Punkten erreichen können. Setzten wird die Werte in die Standardnotenformel ein:
+    * Prüfungsnote von Lea = (5 * 22 Punkte / 30 Punkte) + 1 = 4.666... = __4.7__
+
+===== Berechnung der Modulnote =====
+Jede Prüfung kann unterschiedliche gewichtet werden. Grundsätzlich wird die Modulnote unter Miteinbezug der Gewichtung in die Modulbewertung berechnet. 
+  * Modulnote = LB1 * Gewichtung 1 + LB2 * Gewichtung 2 + LB3 * Gewichtung 3
+  * Die Modulnote wird am Ende auf 0.5 Noten mathematisch gerundet
+  * Beispiel:
+    * Die LB1 wird mit 25%, die LB2 mit 40% und die LB3 mit 35%  gewichtet. 
+    * Lea hat in der LB1 die 4.0, in der LB2 die mit 5.0, und in der LB3 die 5.3 erreichen können.
+    * Leas Modulnote wird daher wie folgt berechnet:  mit In der letzte Prüfung hat Lea hat von 30 Punkten erreichen können. Setzten wird die Werte in die Standardnotenformel ein:
+    * Modulnote von Lea = 0.25 * 4.0 + 0.4 * 5.0 + 0.35 * 5.3 = 1 + 2 + 1.855 = 1.855 = __4.9__ = 
+    * Die **gerundete Modulnote** von Lea ist daher _aufgerundet **5.0**
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

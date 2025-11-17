@@ -1,0 +1,34 @@
+====== LU02a - SQL-Einführung ======
+===== Lernziele =====
+
+Nach dieser Lerneinheit können Sie:  
+
+  * **Einfache Abfragen:** Ich kann mit dem SQL-Befehl //SELECT// alle Spalten oder nur bestimmte Spalten aus einer Tabelle anzeigen.  
+  * **Sortieren von Daten:** Ich kann mit //ORDER BY// die Ergebnisse sortieren (aufsteigend oder absteigend). Beispiel:* Die Filme mit der besten Bewertung zuerst anzeigen.  
+  * **Filtern mit Bedingungen:** Ich kann mit //WHERE// Daten filtern, damit nur bestimmte Zeilen angezeigt werden.  
+  * **Mehrere Bedingungen kombinieren:** Ich kann mit //AND//, //OR// und //NOT// mehrere Bedingungen verknüpfen.  
+  * **Listen von Werten verwenden:** Ich kann mit //IN// oder //NOT IN// prüfen, ob ein Wert in einer Liste vorkommt.   
+  * **Operatoren sicher anwenden:** Ich kenne die wichtigsten Vergleichsoperatoren //=, <, >, >=, <>// und kann damit Abfragen schreiben.   
+
+
+===== Einleitung =====
+Die Datenbanksprache **SQL (Structured Query Language)** basiert auf der relationalen Algebra. Es handelt sich um eine Datenbanksprache zur Erstellung von Datenbankstrukturen in relationalen Datenbanken sowie zum Bearbeiten und Abfragen der darin gespeicherten Datenbestände.  
+Ihre Syntax ist vergleichsweise einfach und stark an die englische Sprache angelehnt.  
+
+SQL dient zur:
+  * Abfrage von Daten
+  * Auswertung von Daten
+  * Verwaltung von Daten
+  * Programmierung innerhalb von Datenbanken
+
+Im Begriff **SQL** steckt das englische Wort //query// (= Abfrage).  
+Mit dem Befehl <WRAP center box round 80%><code sql>SELECT</code></WRAP> können Daten abgefragt werden. Weitere wichtige Befehle sind:
+  * <code sql>INSERT</code> – Daten einfügen
+  * <code sql>UPDATE</code> – Daten ändern
+  * <code sql>DELETE</code> – Daten löschen  
+
+Diese vier Befehle bilden zusammen die sogenannten **CRUD-Operationen**:  
+//C = Create, R = Read (=Select), U = Update, D = Delete//.  
+Sie sind die Grundlage jeder Datenbankarbeit.  
+
+Auf der nächsten Seite schauen wir uns die Datenabfragesprache (DQL) mit //SELECT//-Statements an.

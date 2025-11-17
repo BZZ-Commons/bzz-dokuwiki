@@ -1,0 +1,12 @@
+====== LU01.A04 - Komponente mit Tailwind CSS ======
+
+===== Aufgaben =====
+
+  * Binden Sie Tailwind CSS in Ihr React-Projekt ein.
+  * Öffnen Sie Ihre bestehenden Dateien ''src/components/ProductList.jsx'' und ''src/components/Product.jsx''.
+  * Passen Sie die bestehende Komponente an, sodass alle bisherigen Styles mit Tailwind CSS umgesetzt werden.
+  * Entfernen Sie allfällige alte CSS-Dateien oder Inline-Styles.
+
+===== Screenshot =====
+
+{{:modul:ffit:react:learningunits:lu01:aufgaben:productslist.png?600|}}

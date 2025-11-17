@@ -1,0 +1,93 @@
+====== LU08a - Resultate auswerten mit Bruno ======
+
+<WRAP center round info 60%>
+Mittels **Tests** kann Bruno die Antwort einer API automatisiert auswerten.
+</WRAP>
+
+In jeder Request-Datei (`.bru`) kannst du im Bereich **Tests** kleine JavaScript-Funktionen schreiben, um das Resultat eines Requests auszuwerten.  
+Bruno zeigt dir danach direkt an, ob der Request das erwartete Resultat geliefert hat oder nicht.
+
+===== http-Statuscode prüfen =====
+Im einfachsten Fall will ich nur den http-Statuscode überprüfen:
+
+<code javascript>
+test("Status test", () => {
+  expect(res.status).to.eql(200);
+});
+</code>
+
+Diese Zeilen reichen schon, damit Bruno den http-Statuscode überprüft.  
+Ein paar Erklärungen:
+  * `"Status test"` ist der Name meines Tests. Dieser wird im Testprotokoll angezeigt und sollte möglichst aussagekräftig sein.  
+  * Ich prüfe hier, ob die API mit Status **200** antwortet. Je nach Testfall würde ich unterschiedliche Statuscodes erwarten.  
+
+====== LU08a - Resultate auswerten ======
+
+<WRAP center round info 60%>
+Mittels **Tests** kann Bruno die Antwort einer API automatisiert auswerten.
+</WRAP>
+
+In jeder Request-Datei (''.bru'') kannst du im Bereich **Tests** kleine JavaScript-Funktionen schreiben, um das Resultat eines Requests auszuwerten.  
+Bruno zeigt dir danach direkt an, ob der Request das erwartete Resultat geliefert hat oder nicht.
+
+===== http-Statuscode prüfen =====
+Im einfachsten Fall will ich nur den http-Statuscode überprüfen:
+
+''test("Status test", () => {  
+&nbsp;&nbsp;expect(res.status).to.eql(200);  
+});''
+
+Diese Zeilen reichen schon, damit Bruno den http-Statuscode überprüft.  
+Ein paar Erklärungen:  
+  * ''"Status test"'' ist der Name meines Tests. Dieser wird im Testprotokoll angezeigt und sollte möglichst aussagekräftig sein.  
+  * Ich prüfe hier, ob die API mit Status **200** antwortet. Je nach Testfall würde ich unterschiedliche Statuscodes erwarten.  
+
+====== LU08a - Resultate auswerten ======
+
+<WRAP center round info 60%>
+Mittels **Tests** kann Bruno die Antwort einer API automatisiert auswerten.
+</WRAP>
+
+In jeder Request-Datei (''.bru'') kannst du im Bereich **Tests** kleine JavaScript-Funktionen schreiben, um das Resultat eines Requests auszuwerten.  
+Bruno zeigt dir danach direkt an, ob der Request das erwartete Resultat geliefert hat oder nicht.
+
+===== http-Statuscode prüfen =====
+Im einfachsten Fall will ich nur den http-Statuscode überprüfen:
+
+<code javascript>
+test("Status test", () => {
+  expect(res.status).to.eql(200);
+});
+</code>
+
+Diese Zeilen reichen schon, damit Bruno den http-Statuscode überprüft.  
+Ein paar Erklärungen:  
+  * ''"Status test"'' ist der Name meines Tests. Dieser wird im Testprotokoll angezeigt und sollte möglichst aussagekräftig sein.  
+  * Ich prüfe hier, ob die API mit Status **200** antwortet. Je nach Testfall würde ich unterschiedliche Statuscodes erwarten.  
+
+===== Daten in der Response prüfen =====
+Wenn ein Request Daten von der API anfordert, wollen wir den Inhalt der Response überprüfen.  
+Schliesslich wollen wir nicht irgendwelche Daten lesen, sondern einen bestimmten Datensatz.
+
+<code javascript>
+test("Data test", () => {
+  expect(res.status).to.eql(200);
+  const responseJson = res.json();
+  expect(responseJson.givenname).to.eql("Eva");
+  expect(responseJson.age).to.eql(28);
+});
+</code>
+
+In diesem Beispiel prüfen wir drei Elemente der Response-Daten:  
+  * Die Response muss erfolgreich sein (Statuscode 200).  
+  * Der Vorname muss ''"Eva"'' sein.  
+  * Das Alter muss ''28'' sein.  
+
+Trifft irgendeine dieser Bedingungen nicht zu, zeigt Bruno den Request als fehlgeschlagen an.  
+
+===== Weitere Beispiele =====
+Im [[https://docs.usebruno.com/testing/tests/introduction|Bruno Docs: Tests]] findest du noch weitere Beispiele und Möglichkeiten für Tests.  
+
+----
+{{tag>M450-LU08}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Kevin Maurizi

@@ -1,0 +1,33 @@
+====== LU03a - CIA-Triad ======
+
+<color #00a2e8>**Zitat:** Nur einfach anwendbare Security setzt sich langfristig durch. Der Rest stolpert über die eigene Komplexität.</color> 
+
+----
+
+
+===== Lernziele =====
+  - Das Akronym CIA nennen und erklären können.
+  - Beispiele für jede der 3 Aspekte des CIA-Triads nennen können.
+
+Die CIA-Triade, auch //Dimensionen der IT-Sicherheit// bezeichnet, ist ein Modell, das die drei grundlegenden Schutzziele der Informationssicherheit definiert: //Confidentiality (Vertraulichkeit), Integrity (Integrität) und Availability (Verfügbarkeit)//. Es dient als Leitfaden für die Entwicklung von Sicherheitsrichtlinien und -kontrollen, um Daten und Systeme vor Bedrohungen zu schützen. Folglich ist jeder Angriff auf ein System, gleichzeitig ein Angriff auf mindestens ein Dimension des CIA-Triad.
+
+{{:modul:m183:learningunits:lu03:cia-triad-infographic.png?600| CIA-Triad Explained}}
+
+===== Was verstehen wir unter dem CIA-Triad? =====
+Die CIA-Triade ist ein fundamentales Konzept in der Informationssicherheit, das in vielen Bereichen Anwendung findet, wie beispielsweise bei der Entwicklung von Sicherheitsrichtlinien, der Bewertung von Risiken und der Reaktion auf Sicherheitsvorfälle. 
+
+===== CIA-Triad = 3 Dimensionen der IT-Sicherheit ====
+  * **Confidentiality** 
+    * = Vertraulichkeit 
+    * Die Gewährleistung, dass Informationen nur autorisierten Personen oder Systemen zugänglich sind. Das bedeutet, dass unbefugte Zugriffe auf sensible Daten verhindert werden müssen.  
+  * **Integrity** 
+    * = Integrität/Vollständigkeit
+    * Es bezieht sich auf die Gewährleistung der Genauigkeit und Zuverlässigkeit von Daten. Es ist wichtig, dass Daten nicht unbefugt verändert oder manipuliert werden können. 
+  * **Availability** 
+    * = Verfügbarkeit
+    * Das bedeutet, dass Informationen und Systeme für autorisierte Benutzer zugänglich sein müssen, wenn sie benötigt werden. Die Verfügbarkeit ist entscheidend für den reibungslosen Betrieb von Unternehmen und Organisationen. |
+
+ 
+===== Zusatzmaterial =====
+
+{{ :modul:m183:learningunits:lu03:what_is_the_cia_triad.mp4 | Lernvideo Englosch: What is the CIA-Triad?}}

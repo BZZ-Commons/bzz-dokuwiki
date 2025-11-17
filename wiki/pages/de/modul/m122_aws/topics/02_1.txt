@@ -1,0 +1,68 @@
+===== Variablen in Bash =====
+<sup>Internal reference: topics/02-1.md</sup>
+\\
+==== Einleitung ====
+Shellvariablen speichern zugewiesene Wert. Eine Variable kann eine Zahl enthalten, ein Zeichen, oder einen String. Bei Variablennamen wird auf Groß  - und Kleinschreibung geachtet, sie können aus Buchstaben und einem Unterstrich ''\_'' bestehen.
+
+Wertzuweisungen werden mit einem '=' Zeichen programmiert und es sind keine Leerzeichen um das '=' erlaubt:
+<code>
+PRICE_PER_APPLE=5
+MyFirstLetters=ABC
+greeting='Hello        world!'
+</code>
+
+Ein Backslash \\ wird benutzt, um spezielle Zeichen darzustellen:
+<code>
+PRICE_PER_APPLE=5
+echo Der Preis eines Apfels ist: \$ $PRICE_PER_APPLE
+</code>
+
+Man kann die Variable mit ''${}'' umgeben, um Zweideutigkeiten zu verhindern:
+<code>
+MyFirstLetters=ABC
+echo Die ersten 10 Buchstaben des Alphabets sind: ${MyFirstLetters}DEFGHIJ
+</code>
+
+Eine Variable mit '''' zu umgeben, sorgt dafür, dass die Leerzeichen erhalten bleiben.
+<code>
+greeting='Hello        world!'
+echo $greeting Jetzt mit Leerzeichen: $greeting
+</code>
+
+Variablen können die Ausgabe eines Befehls zugewiesen werden. Dies nennt man Substitution. Substitution erreicht man, indem man den Befehl mit ''$()'' oder mit den sog. Backquotes ''\''\'''' umgibt.
+<code>
+FILELIST=''ls''
+FileWithTimeStamp=/tmp/my-dir/file_$(/bin/date +%Y-%m-%d).txt
+</code>
+
+In anderen Worten: Beim Ausführen des Skripts wird der Befehl innerhalb der ''$()'' Klammern ausgeführt und die Ausgabe abgegriffen.
+
+
+\\
+==== System-Variablen ====
+Folgend die wichtigsten, automatisch verwalteten Variablen der Bash:
+
+  - ''$LOGNAME'' Login-Name des Benutzers
+  - ''$0'' Der Name des aufgerufenen Shellscripts
+  - ''$1'' - ''$9'', ''${10}'', ...,  ''$*'' Parameter des aufgerufenen Shellscripts
+  - ''$#'' Anzahl Parameter des aufgerufenen Shellscripts
+  - ''$$'' Die Prozessnummer des aufgerufenen Shellscripts
+  - ''$?'' Der Beendigungsstatus eines Shellscripts
+  - ''$!'' Die Prozessnummer des zuletzt gestarteten Hintergrundprozesses
+  - ''$PWD'' Aktuelles Arbeitsverzeichnis
+  - ''$OLDPWD'' Der Wert ist das zuvor besuchte Arbeitsverzeichnis; wird vom Kommando cd gesetzt.
+  - ''$HOME'' Heimverzeichnis für den Benutzer; Standardwert für cd
+  - ''$UID'' Die User-ID des Anwenders. Diese Kennung ist in der Datei /etc/passwd dem Benutzernamen zugeordnet. 
+  - ''$PATH'' Suchpfad für die Kommandos (Programme); meistens handelt es sich um eine durch Doppelpunkte getrennte Liste von Verzeichnissen, in denen nach einem Kommando gesucht wird, das ohne Pfadangabe aufgerufen wurde; Standardwerte: PATH=:/bin:/usr/bin
+  - ''$CDPATH'' Suchpfad für das cd-Kommando
+  - ''$SHELL'' Zeigt die aktuelle Shell mit dem Pfad an 
+  - ''$RANDOM'' Pseudo-Zufallszahl zwischen 0 bis 32767
+  - ''$REPLY'' Bei Menüs (select) enthält REPLY die ausgewählte Nummer.
+  - ''$SECONDS'' Enthält die Anzahl von Sekunden, die seit dem Start (Login) der aktuellen Shell vergangen ist.
+  - ''$PROMPT_COMMAND'' Hier kann ein Kommando angegeben werden, das vor jeder Eingabeaufforderung automatisch ausgeführt wird.
+  - ''$PS1''    Primärer Prompt; Prompt zur Eingabe von Befehlen.
+  - ''$TZ''     Legt die Zeitzone fest (hierzulande MET = Middle European Time) 
+
+----
+
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Daniel Garavaldi

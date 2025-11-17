@@ -1,0 +1,52 @@
+====== LU05a - Loops/Schleifen Übersicht ======
+
+===== Einleitung bzw. Problemstellung =====
+Stellen Sie sich vor, Sie sollen 100 Zahlen auf die Konsole schreiben. Das ginge mit:
+
+  console.log(1);
+  console.log(2);
+  console.log(3);
+  // ... bis 100
+  
+Das eben gezeigte Beispiel umfasst nur 100 Zahlen-Elemente, aber stellen Sie sich vor es seien tausende oder Millionen (Ergebnis einer Google-Suche). Sehr unpraktisch und in der Realität so nicht handhabbar. Wir brauchen also eine Verarbeitungsstruktur, die dynamisch die Lösungsmenge verarbeitet. Wir brauchen also stattdessen **Schleifen** – sie wiederholen Anweisungen, solange eine bestimmte Bedingung erfüllt ist.
+
+{{:de:modul:m288:learningunits:lu04:lu04_01.png?300|Wiederholungen braucht es um Datenlisten anzuzeigen}}
+
+===== Lösung: Schleifen =====
+Um eine grosse Anzahl von Elementen, die beispielsweise in Arrays gepeichert sind verarbeiten zu können, verwenden wir am besten Schleifen. Man könnte sogar sagen, dass //Schleifen// und //Arrays// ein perfektes Paar abgeben, weil 
+
+  * **Arrays** können eine beliebige Anzahl von Elementen speichern/aufnehmen.
+  * **Schleifen** können diese beliebige Anzahl von Elemente verarbeiten.
+
+In fast jeder Programmiersprache, so auch in JavaScript, gibt es die nachfolgende Typen:
+
+{{:de:modul:m288:learningunits:lu04:javascript-loops-1200x675.jpg?500|}}
+
+Wir haben nicht Zeit für alle Loop-Arten. Innerhalb des Moduls 288 werden wir uns daher auf die nachfolgenden drei Loops konzentrieren.
+
+  - **for-Schleife:** Zählerschleife, kopfgesteuert
+  - **while-Schleife:** Bedingung, kopfgesteuert
+  - **for ... in:** Bedingung, kopfgesteuert
+
+===== Wann ist welche Schleife passend? =====
+
+^Typ ^Wann nutzen? ^
+| for | Wenn die Anzahl der Wiederholungen bekannt sind. |
+| while | Wenn nur eine Bedingung überprüfen werden soll. |
+| for...in | Wenn Objekte vom ersten bis zum letzten Element durchgegangen werden sollen. |
+
+**Achtung:** Endlosschleifen sind der Klassiker für eingefrorene Programme.
+
+
+===== Lernvideos =====
+
+{{:de:modul:m288:learningunits:lu04:javascript_loops_tutorial_-_schleifen_in_javascript_lernen.mp4|Schleifen im JavaScript}}
+
+
+===== Zusatzmaterial =====
+  * [[https://www.w3schools.com/js/js_loops.asp|W3School- JavaScript Loops]]
+  * [[https://wiki.selfhtml.org/wiki/JavaScript/Kontrollstruktur#Schleifen|SelfHTML - Schleifen ]]
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir
+

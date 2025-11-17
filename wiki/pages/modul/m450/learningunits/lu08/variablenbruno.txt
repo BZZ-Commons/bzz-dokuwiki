@@ -1,0 +1,90 @@
+====== LU08b - Variablen einsetzen mit Bruno ======
+
+<WRAP center round info 60%>
+Variablen in Bruno erleichtern das Anpassen von Requests an unterschiedliche Bedingungen.
+</WRAP>
+
+===== Variablen für Pfade =====
+Im Verlauf der Entwicklung wird eine Applikation zunächst in der Entwicklungsumgebung ausgeführt.  
+Für die Requests in Bruno bedeutet dies in der Regel, dass unsere API unter einem Pfad wie ''http://localhost:5000/...'' erreichbar ist.  
+Später werden wir die Applikation auf unser Testsystem deployen.  
+Der Pfad im Testsystem könnte z.B. ''https://test.bzz.ch/...'' sein.  
+
+Ich möchte meine API-Tests in beiden Umgebungen nutzen können. Welche Möglichkeiten habe ich?  
+  * Ich passe jedesmal den Pfad in allen Requests an.  
+  * Ich erstelle Kopien aller Requests – einmal mit dem Pfad des Testsystems und einmal mit dem Pfad der Entwicklungsumgebung.  
+  * Ich verwende eine Umgebungsvariable und passe jeweils nur den Wert dieser Variablen an. ✅  
+
+Um eine solche Umgebungsvariable einzusetzen, benötigen wir nur wenige Schritte:  
+  - Definiere die Variable in einer Environment-Datei (z. B. ''dev.json'' oder ''test.json'').  
+  - Lege den Wert fest (z. B. ''http://localhost:5000'' oder ''https://test.bzz.ch'').  
+  - Füge die Variable in den Pfad deiner Requests ein, z. B. ''%%{{baseUrl}}%%/book/list''.  
+
+Siehe [[https://docs.usebruno.com/variables/environment-variables|Bruno Docs: Environment Variables]].
+
+===== Environment aktivieren =====
+Damit die Variablen in den Requests auch wirklich genutzt werden, musst du in Bruno das passende Environment aktivieren:
+
+  - Öffne dein Projekt in Bruno.  
+  - Oben in der Menüleiste findest du ein Auswahlfeld ''Environment''.  
+  - Wähle dort das gewünschte Environment (z. B. ''dev'' oder ''test'') aus.  
+  - Starte den Request – Bruno ersetzt nun automatisch alle Vorkommen von ''%%{{...}}%%'' mit den Werten aus deiner Environment-Datei.  
+
+So kannst du mit denselben Requests sowohl gegen die Entwicklungs- als auch die Testumgebung arbeiten, ohne etwas am Request selbst ändern zu müssen.
+
+===== Variablen für Daten =====
+Mit Variablen können wir auch Werte aus einer Response speichern und in einem anderen Request wiederverwenden.  
+
+==== Beispiele ====
+=== Erstellen und Lesen von Daten ===
+  - Ein Request speichert einen neuen Kunden. Als Antwort liefert die API die Kundennummer.  
+  - Ich speichere die Kundennummer in einer Variablen.  
+  - Ein weiterer Request verwendet diese Variable, um den vorher erstellten Kunden zu lesen.  
+
+=== Authentifikation ===
+Bei vielen APIs brauchen wir ein Token, welches unsere Identität und Berechtigungen enthält.  
+Dieses Token erhalten wir, indem wir einen Login-Request senden.  
+
+  - Ein Request sendet die Login-Daten an die API. Als Antwort erhalte ich ein Authentifizierungstoken.  
+  - Ich speichere das Token in einer Variablen.  
+  - Bei jedem weiteren Request sende ich das gespeicherte Token mit.  
+
+==== Umsetzung ====
+Ich zeige hier ein Beispiel, wie ich das mit Bruno umsetze.  
+
+=== 1. Login student ===
+Der Request sendet die Login-Daten für einen Studenten.  
+Die Response ist eine JSON-Struktur, die das Token enthält.  
+
+** Script im Bereich "Tests" **
+
+<code javascript>
+test("Status test", () => {
+  // HTTP-Status prüfen
+  expect(res.status).to.equal(200);
+
+  // JSON-Daten aus der Response holen
+  const data = res.json();
+
+  // Token im Environment speichern
+  bru.setEnvVar("token", data.token, { persist: true });
+});
+</code>
+
+=== 2. Lies alle Anmeldungen zu einem Studenten ===
+Dieser Request liest alle Anmeldungen zum angemeldeten Studenten.  
+Dazu muss das Token aus dem ersten Request mitgesendet werden.  
+Dieses Token wird im Header des Requests mitgesendet und nicht in der URL.  
+
+** Token in "headers" **
+
+  * Key: ''Authorization''  
+  * Value: ''Bearer %%{{token}}%%''  
+
+===== Hinweise & Doku =====
+  * Tests/Assertions in Bruno: [[https://docs.usebruno.com/testing/tests/introduction|Bruno Docs: Tests]]  
+  * JavaScript-API Referenz (z. B. bru.setEnvVar): [[https://docs.usebruno.com/testing/script/javascript-reference|Bruno Docs: JavaScript API Reference]]  
+
+----
+{{tag>M450-LU08}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Kevin Maurizi

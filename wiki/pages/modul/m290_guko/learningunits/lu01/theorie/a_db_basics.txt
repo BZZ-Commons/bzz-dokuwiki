@@ -1,0 +1,69 @@
+====== LU01a - Grundlagen Datenbanken ======
+==== Lernziele ====
+  * Ich kann in eigenen Worten erklären, was eine Datenbank ist.
+  * Ich kann anhand einer selbsterstellten, einfachen Skizze erläutern, wie ein Datenbank-System aufgebaut ist.
+  * Ich weiss, wozu eine relationale Datenbank und eine NoSQL-Datenbank eingesetzt wird.
+  * Ich weiss, was die Abkürzung SQL bedeutet und wozu die Sprache eingesetzt wird.
+  * Ich kann mindestens drei Vorteile für dein Einsatz einer Datenbank aufzählen.
+
+
+
+==== Einleitung ====
+
+=== Was ist eine Datenbank? ===
+{{:modul:m290_guko:learningunits:lu01:theorie:tobias-fischer-pkbzaheg2ng-unsplash_converted_medium.jpg?nolink}}
+//Die Stadtbibliothek Stuttgart ist wie eine Datenbank: Sie sammelt, kategorisiert und macht grosse Mengen an Wissen zugänglich.  
+Foto: Tobias Fischer, Unsplash ([[https://unsplash.com/de/fotos/photo-of-5-story-library-building-PkbZahEG2Ng|Link]])//
+
+Eine Datenbank ist **ein elektronisches Verwaltungssystem**, das **grosse Datenmengen effizient, widerspruchsfrei und dauerhaft speichern und verarbeiten** kann. Dabei werden auch **logische Zusammenhänge** zwischen den Daten abgebildet.
+
+Ziel ist es, die Daten so zu organisieren, dass verschiedene Nutzerinnen und Nutzer oder Softwareprogramme gezielt darauf zugreifen können. Datenbestände können aus unterschiedlichen Teilmengen flexibel zusammengestellt und bedarfsgerecht angezeigt werden.
+
+Es ist sinnvoll, Daten in einem offenen und standardisierten Format zu speichern – insbesondere in **Tabellenform**, wie sie in SQL-Datenbanken üblich ist.
+
+== Daten "auf die Bank legen" ==
+
+> //Daten// ist die Pluralform von //Datum//, lateinisch für das Geschriebene, das Gegebene, Wert, Tatsache, Information. ((Heuer, A. et al. (2020). *Datenbanken – Kompaktkurs*. 1. Aufl., S. 28))
+
+> Eine Datenbank ist nun **eine Bank für Daten**, also im übertragenen Sinne ein **sicherer Aufbewahrungsort für (wertvolle) Informationen**. ((Heuer, A. et al. (2020). *Datenbanken – Kompaktkurs*. 1. Aufl., S. 28))
+
+Der Begriff **Datenbank** wird oft nicht nur für die eigentliche Datensammlung, sondern auch für das gesamte **DBMS**((Ein DBMS – Datenbankmanagementsystem – ist eine Software, die Daten speichert, organisiert und Anfragen dazu beantwortet.)) verwendet.  
+Aus Sicht eines Programmierers ist eine Datenbank ein Programm, das Anfragen verarbeitet und so einen Dienst bereitstellt. Der Aufbau einer Datenbank schauen wir uns auf der nächsten Seite an. 
+
+=== Warum Datenbanken? ===
+
+Warum ist es wichtig, einige Grundlagen über Datenbanken zu erlernen und zu verstehen?
+
+Heutzutage sammeln viele Unternehmen Informationen über Konsumentinnen und Konsumenten sowie deren Verhalten – und werten diese gezielt aus. Datenbanken bilden dabei den **Dreh- und Angelpunkt** unternehmerischer Prozesse, weil sie alle wichtigen Informationen strukturiert speichern.
+
+Für grosse Unternehmen wie Google oder Meta (Facebook, Instagram) sind Daten so wertvoll, dass sie im Gegenzug qualitativ hochwertige Dienste (z. B. Google-Suche, Gmail, Google Maps, YouTube etc.) kostenlos anbieten können.
+
+Wichtige Eigenschaften von Datenbanken sind:
+
+  * **langfristige und zuverlässige Speicherung** von Daten
+  * **Schutz vor Datenverlust** und **unberechtigtem Zugriff** („etwas auf die Bank bringen“)
+  * **gleichzeitiger Zugriff** für mehrere Benutzerinnen und Benutzer (Mehrbenutzerbetrieb)
+  * **strukturierte Ablage** der Daten, um Redundanzen (Daten-Duplikate) zu vermeiden
+  * **schnelle und einfache Abfrage** von Daten
+
+
+{{:modul:m290_guko:learningunits:lu01:theorie:video_icon_yt.svg?nolink&50}} [[https://www.youtube.com/watch?v=zyEVNQR2hXY|Schauen Sie sich dieses Einführungsvideo zum Thema an (bis 4:10)]] ((Tutorial zum Entwerfen von Datenbanken mit Lucidchart: Lucid Software Deutsch))\\ //(Hinweis: Das Video wurde auf englisch aufgenommen aber mittels AI in deutsch Synchronisiert, darum passen die Lippenbewegungen nicht überein...)//
+
+
+
+=== Wo begegnen mir Datenbanken im Alltag? ===
+
+Wahrscheinlich kommen Sie täglich mehrmals – oft unbewusst – mit einer (relationalen) Datenbank in Kontakt. Ein gutes Beispiel ist das Content-Management-System (CMS) **WordPress**, das auf über 43 % aller Websites im Internet eingesetzt wird. Das bedeutet: Nahezu jede zweite Website, die Sie besuchen, **ruft Inhalte wie Texte, Bilder oder Metainformationen (z. B. Autor oder Veröffentlichungsdatum) aus einer Datenbank ab**.
+
+Im Fall von WordPress handelt es sich meistens um das Datenbankmanagementsystem **MySQL** – dasselbe System, das wir in diesem Kurs lokal installieren und mit dem wir später auch eigene Daten erfassen und bearbeiten werden.
+
+Weitere alltägliche Beispiele für Datenbanken sind:
+
+  * **Kundendatenbanken** (z. B. bei Onlineshops)
+  * **Lagerverwaltungssysteme**
+  * **Benutzerkonten-Verwaltung** (z. B. für Apps oder Webplattformen)
+  * **Digitale Lexika** wie Wikipedia
+  * **Pokédex** (eine fiktive Datenbank aller bekannten Pokémon)
+
+
+

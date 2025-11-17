@@ -1,0 +1,41 @@
+====== LU03.A03 - if mit &&-Verknüpfungen ======
+
+
+===== Rahmenbedingungen =====
+  * Sozialform: individual
+  * Hilfsmittel: 
+    * Nur Lehrmittel, keine Websuche oder AI
+    * [[https://www.w3schools.com/js/js_conditionals.asp | W3School- JavaScript Conditions]] 
+    * [[https://www.w3schools.com/js/js_operators.asp | W3School- JavaScript Operators]]
+  * Zeit: 20 Minutes
+  * Erwartetes Resultat: Ein funktionsfähiges Script, das die unten genannten Bedingungen erfüllt.
+
+===== Ausgangslage =====
+If-Statements werden häufig ein Zugangsprüfungen verwendet. Wenn man berechtigt ist etwas zu tun, dann darf man das auch, und ansonsten nicht. 
+
+===== Auftrag A =====
+Schreibe ein JavaScript-Programm einer Zutrittskontrolle, das entscheidet, ob eine Person in einen Club hineindarf.
+
+Die Regeln sind:
+  * Nur Personen, die mindestens 18 Jahre alt und einen Ausweis dabei haben, dürfen rein.
+  * Wenn jemand VIP ist, darf er unabhängig vom Alter rein.
+  * Alle anderen werden höflich abgewiesen.
+  * Die Parameter //Alter// und //ob Ausweis vorhanden// sollen beim Scriptaufruf mitgegeben werden. 
+   * Beispiel1 - 18 Jahre, ID dabei, kein VIP: //node myScript.js 18 nein nein// 
+   * Beispiel2 - 16 Jahre, keine ID dabei, ist VIP: //node myScript.js 18 nein ja//
+
+Am Ende soll die das Programm über die Konsole Auskunft darüber geben, on eine Person zugelassen ist in den Club oder nicht.
+
+**Hinweis:**
+
+Die Parameter //alter//, //ob Ausweis dabei// und //ob VIP// können durch die nachfolgenden Codezeilen an das Script übergeben werden.
+
+  eingabeAlter = process.argv[2];
+  id = process.argv[3]; 
+  vip = process.argv[4];  
+===== Lösungen =====
+[[de:modul:m288:learningunits:lu03:loesungen:03|LU03.L3]]
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

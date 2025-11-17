@@ -1,0 +1,28 @@
+====== LU10.A02 - Datei- und Ordner mittels Windows CMD verwalten ======
+
+===== Teilauftrag A: Orientierung - 5' =====
+  * A1: Öffnen Sie ein CMD-Fenster.
+  * A2: Finde Sie heraus, in welchem Verzeichnis Sie sich befinden.
+  * A3: Listen Sie den Inhalt dieses Verzeichnisses mit dem entsprechenden Befeh auf.
+  * A4: Verwende Sie //help dir//, um nachzulesen, was die Option /a bewirkt, und probiere Sie diese aus.
+
+===== Teilauftrag B: Verzeichnisse & Dateien - 10' =====
+  * B1: Erstelle Sie im Home-Verzeichnis einen Ordner mit dem Namen //uebung_cmd//. 
+  * B2: Wechsle Sie in diesen neu erstellten Ordner.
+  * B3: Erstellen Sie darin drei leere Textdateien: //test1.txt, test2.txt, notizen.txt//. 
+  * B4: Zeige Sie alle Dateien an, die mit //test// beginnen.
+  * B5: Kopiere Sie //notizen.txt// nach //backup_notizen.txt//.
+  * B6: Erstellen Sie ein Unterverzeichnis //archiv// und verschieben // test2.txt// dorthin.
+
+===== Teilauftrag C – Umbenennen & Löschen - 10' =====
+  * C1: Benennen Sie //test1.txt// in //ergebnis.txt// um. 
+  * C2: Verändern Sie alle Dateien mit der Endung //.txt// in //.bak// um. 
+  * C3: Listen Sie den aktuellen Inhalt mit auf und prüfen Sie Ihr Ergebnis. 
+  * C4: Löschen Sie das Unterverzeichnis //archiv// mitsamt Inhalt.
+  * C5: Löschen Sie einzelne Datei Ihrer Wahl.
+
+===== Lösungen =====
+[[de:modul:m286_2025:learningunits:lu10:loesungen:02|LU10.L02]]
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

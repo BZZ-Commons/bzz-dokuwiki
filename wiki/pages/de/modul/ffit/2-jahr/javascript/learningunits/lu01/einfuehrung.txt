@@ -1,0 +1,80 @@
+====== LU01a - Einführung ======
+
+JavaScript ist eine der wichtigsten Programmiersprachen im Webentwicklungsbereich. Sie ermöglicht es Entwicklern, interaktive und dynamische Inhalte auf Websites zu erstellen. Im Gegensatz zu HTML und CSS, die für das Layout und die Struktur zuständig sind, steuert JavaScript die Logik und Interaktivität. Diese Lektion führt in die wesentlichen Konzepte und Funktionsweisen von JavaScript ein.
+
+===== Geschichte und Bedeutung von JavaScript =====
+JavaScript wurde 1995 von Brendan Eich entwickelt und hat sich seitdem als Standard in der Webentwicklung etabliert. Neben HTML und CSS ist JavaScript die dritte Säule, auf der moderne Websites aufgebaut sind. Obwohl JavaScript ursprünglich nur auf Webseiten ausgeführt wurde, ist es dank Technologien wie Node.js heute auch auf Servern und in Desktop-Anwendungen zu finden.
+
+===== Verwendung von JavaScript =====
+Um JavaScript in eine Webseite einzubauen und auszuführen, kann man es direkt in deinem HTML-Dokument einbinden oder in externe Dateien auslagern. Es gibt zwei grundlegende Möglichkeiten:
+
+==== 1. Einbettung von JavaScript im HTML-Dokument ====
+Man kann JavaScript innerhalb des HTML-Dokuments in einem <script>-Tag platzieren. Dies ist nützlich, wenn man kleinere Skripte direkt in der Seite verwenden möchte.
+
+<code html>
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Beispiel</title>
+</head>
+<body>
+
+  <h1>Hallo Welt!</h1>
+  <p id="text">Dieser Text wird durch JavaScript geändert.</p>
+
+  <!-- JavaScript im Body einfügen -->
+  <script>
+    document.getElementById("text").innerText = "Der Text wurde durch JavaScript geändert!";
+  </script>
+
+</body>
+</html>
+</code>
+
+In diesem Beispiel wird der Text innerhalb des <p>-Tags durch JavaScript geändert, sobald die Seite geladen wird. Das Skript befindet sich direkt im HTML und wird innerhalb des <script>-Tags ausgeführt.
+
+==== 2. JavaScript aus einer externen Datei laden ====
+Wenn man grössere JavaScript-Dateien hat oder man den Code sauberer halten möchte, kann man das JavaScript in einer separaten Datei speichern und diese dann in das HTML-Dokument einbinden. Dies ist eine gängige Praxis in der Webentwicklung.
+
+**HTML-Datei**
+<code html>
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript mit externer Datei</title>
+</head>
+<body>
+
+  <h1>Hallo Welt!</h1>
+  <p id="text">Dieser Text wird durch JavaScript geändert.</p>
+
+  <!-- Einbinden der externen JavaScript-Datei -->
+  <script src="script.js"></script>
+
+</body>
+</html>
+</code>
+
+**JavaScript-Datei**
+<code javascript>
+// JavaScript-Code, der die Textinhalte der Seite ändert
+document.getElementById("text").innerText = "Dieser Text wurde durch das externe JavaScript geändert!";
+</code>
+
+In diesem Beispiel enthält die Datei script.js den JavaScript-Code, der in der HTML-Seite eingebunden wird. Die Datei wird durch das src-Attribut des <script>-Tags verlinkt. Der Vorteil dieser Methode ist, dass der JavaScript-Code in einer separaten Datei wiederverwendet werden kann.
+
+==== Wichtige Hinweise ====
+
+Der <script>-Tag kann entweder im <head> oder am Ende des <body>-Tags platziert werden. Es ist üblich, ihn am Ende des <body> zu platzieren, um sicherzustellen, dass der HTML-Inhalt vollständig geladen ist, bevor das JavaScript ausgeführt wird.
+
+Wenn man JavaScript im <head>-Bereich einbindet und möchte, dass es erst nach dem Laden der Seite ausgeführt wird, kannst man das defer-Attribut verwenden:
+
+<code html>
+<script src="script.js" defer></script>
+</code>
+
+Das defer-Attribut sorgt dafür, dass das Skript nach dem Laden des HTML-Dokuments ausgeführt wird, aber noch vor dem DOMContentLoaded-Ereignis.

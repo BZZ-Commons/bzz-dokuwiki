@@ -1,0 +1,20 @@
+====== LU05d - for..of-loop ======
+
+Der //for…of//-Schleife ist ebenfalls kopfgesteurt. Sie ist ideal, um über Arrays (oder Strings) zu iterieren (durchzugehen), ohne dabei die genaue Anzahl der Arrayelemente kennen zu müssen.
+
+  let fruits = ["Apfel", "Banane", "Kirsche"];
+  for (let fruit of fruits) { // es wird ein interner Schleifenzähler verwendet, der nacheinander die Arrayelemente ausgibt
+    console.log(fruit);
+  }
+
+**Ausgabe**
+
+  Apfel, Banane, Kirsche
+
+
+===== Lernvideo =====
+{{:de:modul:m288:learningunits:lu04:a_smart_way_to_loop_over_arrays_-_javascript_for_of_in_2_minutes.mp4|HowTo build a for..of loop}}
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir
+

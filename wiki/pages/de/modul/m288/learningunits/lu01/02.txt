@@ -1,0 +1,74 @@
+====== LU01b - JavaScript in HTML einbinden ======
+
+===== Einleitung =====
+Es gibt verschiedene Möglichkeiten, JavaScript in eine HTML-Seite einzubinden. Die wichtigsten sind:
+
+  - Inline im HTML-Tag
+  - Intern im <script>-Tag
+  - Extern in einer separaten .js-Datei
+
+===== 1. Inline im HTML-Tag=====
+Der JavaScript-Code wird direkt als Attribut in einem Element reingeschrieben. 👉 Das ist nicht die eleganteste Lösung, aber für schnelle Tests praktisch.
+
+**HTML-Datei**
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <title>Beispiel</title>
+    </head>
+    <body>
+      <p onclick="document.body.style.backgroundColor = 'lightblue';">
+        Klick mich, um den Hintergrund blau zu machen!
+      </p>
+    </body>
+  </html>
+
+
+===== 2. Intern im <script>-Tag =====
+JavaScript wird direkt im HTML-Dokument, meist im <head> oder besser am Ende von <body> platziert, damit das DOM schon geladen ist.
+
+**HTML-Datei**
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <title>Internes Script</title>
+    </head>
+    <body>
+      <h1>Beispiel mit Script-Tag</h1>
+      <h3>Beim Laden der Seite  wird die Hintergrundfarbe auf "lightblue" geändert.</h3>
+      <!-- JS-Code-Bereich wird irgendwo definiert, hier direkt dort wo es gebraucht wird, und gleich ausgefüllt.
+           In diesem Falle wird einfach Hintergrundfarbe mittels JS verändert --->
+      <script>
+        document.body.style.backgroundColor = "lightblue";
+      </script>
+    </body>
+  </html>
+
+
+===== 3. Extern in einer separaten js-Datei =====
+Dieser Ansatz ist der saubere Standardweg: Gemäss der Maxime //Teile und herrsche// wird HTML und JS in separaten Dateien gehalten. So bleibt der HTML-Code übersichtlich und JavaScript kann wiederverwendet werden.
+
+**HTML-Datei**
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <title>Externes Script</title>
+    </head>
+    <body>
+      <h1>Externes JavaScript</h1>
+      <h3>Hintergrundfarbe wird auf "lightblue" geändert</h3>
+      <!-- JS-Code wird direkt aus der Datei geholt und im body verarbeitet -->
+      <script src="scripts/script.js" ></script>
+    </body>
+  </html>
+  
+**Script.js**
+    document.body.style.backgroundColor = "lightblue";
+===== Zusatzmaterial =====
+  * [[https://www.w3schools.com/js/js_whereto.asp|W3School-Where_to_bind]]
+  * [[https://wiki.selfhtml.org/wiki/JavaScript_in_HTML_einbinden|SelfHTML-JS einbinden]]
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir
+

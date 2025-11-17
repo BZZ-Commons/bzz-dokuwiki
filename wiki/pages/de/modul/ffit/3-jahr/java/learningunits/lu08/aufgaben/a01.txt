@@ -1,0 +1,10 @@
+==== LU08.A01 Datenobjekte implementieren ====
+
+Implementieren Sie die folgenden Datenklassen. Nutzen Sie dabei Project Lombok für die Getter und Setter.
+  * Project (projectName, passwordHash)
+  * Account (id, accountNumber, name, project)
+  * Booking (id, bookingNumber, date, text, debitAccount, creditAccount, amount, project)
+
+Mit dem Cherry-Pick ''1d2be9e'' erhalten Sie die Abhängigkeiten in ''build.gradle'' für Project Lombok, etc.
+
+Stellen Sie sicher, dass Ihre IDE die Getter und Setter bei einem Aufruf korrekt erkennen kann (In IntelliJ muss allenfalls "Enable annotation processing" gesetzt und das Plugin "Lombok" installiert sein).

@@ -1,0 +1,14 @@
+==== LU10.A02 PUT-Methoden implementieren ====
+
+Ergänzen Sie die Annotation ''@Transactional'' bei den API-Methoden, in denen es Möglich ist, mehrere Objekte anzupassen.
+
+Implementieren Sie die beiden folgenden API-Methoden.
+  * AccountApiController.updateAccounts(...)
+  * BookingApiController.updateBookings(...)
+
+Dabei gilt grob folgender Ablauf:
+  - subject (ProjectName) aus dem JWT auslesen
+  - Für jedes übergebene Objekte entscheiden, ob es neu der Datenbank hinzugefügt, aktualisiert oder gelöscht werden muss
+  - Entsprechende Operation vornehmen
+
+Überprüfen Sie Ihre Applikation mit dem Frontend (https://alexanderpeter.github.io/ffit-lu08-club-accounting-website/)

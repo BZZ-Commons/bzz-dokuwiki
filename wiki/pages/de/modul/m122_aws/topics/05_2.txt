@@ -1,0 +1,32 @@
+===== Benutzerverwaltung =====
+<sup>Internal reference: topics/05-2.md</sup>
+\\
+==== Kommandos für Informationen ====
+Der Befehl ...
+
+  * ''sudo <commando>'' führt ein Root-privilegiertes Kommando aus ohne direkt Root-Benutzer zu sein, vorausgesetzt der Benutzer ist in der sudo-Liste registriert.
+  * ''whoami'' zeigt den aktuellen Benutzernamen an
+  * ''who'' zeigt alle am System angemeldeten Benutzer an
+  * ''groups'' zeigt die Gruppen des aktuellen Benutzernamen an
+  * ''id'' zeigt die Nutzer-ID und Gruppen des aktuellen Benutzers an
+  * ''su   - <User>'' wechselt den aktuellen Benutzer Syntax. Beim Login werden alle Login-Skripte (.bashrc, .profile,...) durchlaufen.
+\\
+==== Kommandos für die Benutzer-Verwaltung ====
+
+Der Befehl ...
+
+  * ''useradd <User>'' fügt einen neuen Benutzer hinzu
+  * ''userdel <User>'' löscht einen bestehenden Benutzer
+  * ''passwd <User>'' kann (unter anderem) das Passwort wechseln
+  * ''logout'' loggt den aktuellen Benutzer vom System aus
+
+
+\\
+==== Vertiefung ====
+Einen Überblick über Benutzer und Gruppen:
+[[https://wiki.ubuntuusers.de/Benutzer_und_Gruppen/|Benutzer und Gruppen]]
+
+
+----
+
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Daniel Garavaldi

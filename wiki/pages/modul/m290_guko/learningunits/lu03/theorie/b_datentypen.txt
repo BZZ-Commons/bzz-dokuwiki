@@ -1,0 +1,47 @@
+====== LU03b – Datentypen in MySQL ======
+
+Im letzten Kapitel haben wir gesehen, was man Entitäten, Attribute und Beziehungen sind.  
+Wenn wir nun von der Planung zur **Umsetzung in einer Datenbank** übergehen, müssen wir für jedes Attribut (also jede Spalte einer Tabelle) einen passenden **Datentyp** auswählen.  
+
+Warum?  
+  * Damit die Daten **effizient gespeichert** werden können.  
+  * Damit die Daten **korrekt validiert** werden (z. B. ein Geburtsdatum darf kein Text sein).  
+  * Damit die Datenbank später **schnell Abfragen** durchführen kann.  
+
+Ein falscher Datentyp kann zu **Datenfehlern** (z. B. falsche Berechnungen) oder **Performance-Problemen** führen.  
+
+==== Die wichtigsten MySQL-Datentypen ====
+
+MySQL stellt uns verschiedene Datentypen zur Verfügung. Hier die wichtigsten Kategorien mit Beispielen aus unserer **Filmdatenbank**:
+
+
+=== Numerische Datentypen – für Zahlen ===
+{{:modul:m290_guko:learningunits:lu03:theorie:number.png?nolink&100 }}
+  * //INT// oder //INTEGER//: Ganze Zahlen. → Beispiel: Spalte //year// für Erscheinungsjahr eines Films.  
+  * //DECIMAL(M,D)//: Exakte Dezimalzahlen (M = Gesamtstellen, D = Nachkommastellen). -> Beispiel: //IMDB_Rating// da wir Nachkommastellen brauchen (z. B. 8.7) oder der Preis bei Bestellungen
+  * //FLOAT//, //DOUBLE//: Zahlen mit Nachkommastellen, die nicht genau definiert sind. -> Beispiel: die Zahl PI 3.14159265359  
+
+=== Zeichenketten (Strings) – für Text ===
+{{:modul:m290_guko:learningunits:lu03:theorie:string.png?nolink&100 }}
+  * //CHAR(M)//: Feste Länge. → Beispiel: //CHAR(2)// für Ländercodes wie US, FR, CH.  
+  * //VARCHAR(M)//: Variable Länge (bis 65.535 Zeichen). → Beispiel: //Series_Title// als //VARCHAR(255)//.  
+  * //TEXT//: Sehr lange Texte. → Beispiel: Filmkritik des Films (Blog Post Content).  
+=== Zeit- und Datumsangaben ===
+{{:modul:m290_guko:learningunits:lu03:theorie:date_time.png?nolink&100 }} 
+  * //DATE//: Nur Datum (YYYY-MM-DD). → Beispiel: //birth_date// bei Schauspielern.  
+  * //DATETIME//: Datum + Zeit (YYYY-MM-DD HH:MM:SS). → Beispiel: Erstellungszeitpunkt eines Datensatzes.  
+  * //TIMESTAMP//: Wie //DATETIME//, zusätzlich automatische Aktualisierung möglich. → Beispiel: *last_updated* soll sich automatisch ändern, wenn der Datensatz geändert wird.  
+
+=== Weitere nützliche Datentypen === 
+{{:modul:m290_guko:learningunits:lu03:theorie:boolean.png?nolink&100 }}
+  * //BOOLEAN// (intern als //TINYINT// gespeichert): Wahr/Falsch (0 oder 1). → Beispiel: //is_legendary// in einem Pokémon-Datensatz.  
+\\
+
+==== Hinweis ====
+  * Jeder Datenbanktyp oder besser jedes DMBS (MySQL, PostgreSQL, Oracle usw.) bietet leicht unterschiedliche Datentypen.  
+  * In diesem Modul arbeiten wir mit **MySQL** und konzentrieren uns auf die hier vorgestellten Typen.  
+
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] 

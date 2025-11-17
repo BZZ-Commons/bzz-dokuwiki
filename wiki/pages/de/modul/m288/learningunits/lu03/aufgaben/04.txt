@@ -1,0 +1,32 @@
+====== LU03.A04 - if mit ||-Verknüpfungen ======
+
+
+===== Rahmenbedingungen =====
+  * Sozialform: individual
+  * Hilfsmittel: 
+    * Nur Lehrmittel, keine Websuche oder AI
+    * [[https://www.w3schools.com/js/js_conditionals.asp | W3School- JavaScript Conditions]] 
+    * [[https://www.w3schools.com/js/js_operators.asp | W3School- JavaScript Operators]]
+  * Zeit: 10 Minutes
+  * Erwartetes Resultat: Ein funktionsfähiges Script, das die unten genannten Bedingungen erfüllt.
+
+===== Ausgangslage =====
+If-Statements werden häufig ein Zugangsprüfungen verwendet. Wenn man berechtigt ist etwas zu tun, dann darf man das auch, und ansonsten nicht. 
+
+===== Auftrag A =====
+Erstellen Sie eine zweite Version des Scriptes der Aufgabe LU03.A02, welche die Bedinungen durch eine logische ODER verknüpft: Man kommt nur in den CLUB:
+
+  * als VIP ODER
+  * 18 Jahre UND mit Ausweis
+
+
+  * Die Parameter //Alter// und //ob Ausweis vorhanden// sollen beim Scriptaufruf mitgegeben werden. 
+   * Beispiel1 - 18 Jahre, ID dabei, kein VIP: //node myScript.js 18 nein nein// 
+   * Beispiel2 - 16 Jahre, keine ID dabei, ist VIP: //node myScript.js 18 nein ja//
+
+===== Lösungen =====
+[[de:modul:m288:learningunits:lu03:loesungen:04|LU03.L4]]
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

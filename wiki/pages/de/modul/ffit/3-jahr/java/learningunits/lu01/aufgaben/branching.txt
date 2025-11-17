@@ -1,0 +1,11 @@
+==== LU01.A02 Git-Branching ====
+Bei grösseren Projekten ist es essenziell, dass unterschiedliche Branches eingesetzt werden. Dies erlaubt eine strikte Trennung der Versionen und Umgebungen (productive, test, development, ...).
+Features können auf diese Weise parallel durch unterschiedliche Entwickler eingebaut und getestet werden ohne sich gegenseitig in die Quere zu kommen.
+
+Auf der folgenden Webseite kann der Umgang mit Branches geübt werden 
+  * https://learngitbranching.js.org/?locale=de_DE
+  * https://learngitbranching.js.org/?locale=en
+
+Lösen Sie die ersten 15 Levels.
+
+{{:de:modul:ffit:3-jahr:java:learningunits:lu01:learngitbranching_levels.png?400|Levels of learngitbranching}}

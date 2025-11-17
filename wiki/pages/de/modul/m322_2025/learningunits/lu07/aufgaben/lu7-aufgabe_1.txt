@@ -1,0 +1,40 @@
+====Übung: Validierung planen====
+Auf Grund der vorhandenen Artefakte wird vorgängig festgelegt, wie die geplante Anwendung zu validieren ist. Dieser Schritt erfolgt bewusst VOR dem Erstellen eines Prototypen, so dass der Test sich nach den Anforderungen (Spezifikationen) und nicht nach der Realisierung richtet.\\
+
+Schauen Sie sich dieses Video an, es erklärt, wie Sie Ihre Testpersonen durch den Test führen:\\
+👉🏽 https://www.youtube.com/watch?v=bcfqmx2hnUQ\\
+
+----
+
+
+===1. Testscript verfassen ===
+{|style = "table-layout: fixed; width: 100%;"
+|- 
+|style = "width: 100px; border-top: thin solid;"| Sozialform:
+|style = "width: 100%"   | Gruppenarbeit, im Projektteam
+|-
+|style="border-top: thin solid; "| Ergebnis:   
+| - Jedes Team hat ein Testskript erstellt, das später mit einem Prototypen durchgeführt werden kann.
+- Das Testskript basiert auf dem bereits formulierten Happy Scenario.
+- Klare Aufgaben und Beobachtungspunkte für die Testperson sind definiert.
+|-
+|style="border-top: thin solid; "| Dauer:   
+| 45 Minuten
+|-
+|style="border-top: thin solid; vertical-align: top;"| Vorgehen:   
+| - Nehmen Sie das Happy Scenario, das Sie letzte Woche formuliert haben. Dies ist das Szenario, das Sie für den Test nutzen.\\
+- **Testziel formulieren: Was möchten Sie mit diesem Test herausfinden?** Beispiel: „Findet die Nutzerin die richtige Übung?“; „Kann die Nutzerin die Aufgabe erfolgreich abschließen?\\
+- **Schreiben Sie eine Einführung**: Wie begrüssen Sie die Testperson? Was erwartet die Testperson und was erwarten Sie von ihr?\\
+- **Schreiben Sie 2–3 konkrete Aufgaben, die die Testperson durchführen soll.** Formulieren Sie in Alltagssprache (keine technischen Anweisungen). Beispiel: „Stellen Sie sich vor, Sie wollen eine Matheübung lösen. Finden Sie die passende Aufgabe und starten Sie diese.“\\
+- **Notieren Sie, worauf Sie bei der Testperson achten wollen**: Kommt sie ohne Hilfe zum Ziel? Versteht sie die Beschriftungen der Buttons? Wirkt die Navigation klar oder verwirrend?\\
+- **Schreiben Sie auf, wie der Test durchgeführt wird**: Ort: Klassenzimmer / ruhige Umgebung; Dauer: max. 5–7 Minuten pro Testperson; Rollenverteilung: Person X führt Test durch, Y filmt, Z wertet aus; Aufzeichnung: mit Handykamera (für die spätere Auswertung); Teilnehmer:innen: wen wollen Sie befragen? Schreiben Sie jetzt schon Namen auf, damit Sie sie gezielt angehen können.
+|style="border-top: thin solid; vertical-align: top;"| Dauer:      
+| 15 Minuten
+|-
+|style="border-top: thin solid;"|
+|}
+\\
+Dieses Testskript dient Ihnen als Grundlage, um den Low-Fidelity-Prototypen zu validieren.
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) René Probst

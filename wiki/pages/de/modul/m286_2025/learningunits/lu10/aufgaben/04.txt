@@ -1,0 +1,27 @@
+====== LU10.A04 - Feldstudie "High-Heels" ======
+
+===== Rahmenbedingungen =====
+  * Sozialform: Einzelarbeit
+  * Hilfsmittel: Nur Lehrmittel, keine Websuche oder AI
+  * Zeit: 20 Minutes
+  * Erwartetes Resultat: 
+    * Die gegebenen Ordnerstruktur wurde auf dem eigene Notebook angelegt.
+    * Die bereitgestellt Ressource wurde in ein entsprechendes Verzeichnis kopiert.
+    * Alle Links und Datein werden korrekt im Browser angezeigt.
+
+==== Ausgangslage ====
+Sie möchten eine Webseite für //High-Heels// auf einem Webserver in Betrieb nehmen. Von der Partnerfirma erhalten Sie sämtliche Ressourcen der Webseite. Die Verzeichnisstruktur ist vorgegeben und sieht wiefolgt aus:
+
+{{:de:modul:m286_2025:learningunits:lu10:aufgaben:ue_high_heels.png?200|Dateistruktur der Webseite High-Heels}}
+
+==== Aufgabenstellung ====
+  - Entpacken Sie die {{ :de:modul:m286_2025:learningunits:lu10:aufgaben:high_heels.zip | Ressource}} der Partnerfirma in ein Verzeichnis.
+  - Erstellen Sie die Verzeichnisstruktur gemäss der oben gezeigter Abbildung und bewegen Sie alle Ressourcen von der Partner-Firma in diese.
+  - Halten Sie alle Shell-Kommandos schriftlich fest, welche Ihre Arbeit dokumentieren.
+  - Testen Sie anhand Ihres Browsers, ob
+    * alle Webseiten mit den Bildern korrekt angezeigt werden
+    * alle Links korrekt funktionieren
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir, Daniel Garavaldi

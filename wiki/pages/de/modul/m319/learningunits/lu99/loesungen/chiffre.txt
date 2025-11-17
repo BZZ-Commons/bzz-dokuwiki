@@ -1,0 +1,46 @@
+====== Lösung: Transpositions Chiffre ======
+
+<WRAP center round info 60%>
+Die Lösung zeigt das vollständige Programm.
+</WRAP>
+
+<code python>
+"""Simple Block Cipher Encryption Example."""
+def encrypt():
+    """
+    Encrypts a string using a simple transposition
+    """
+    blocks = [] # List to hold the blocks of text DO NOT CHANGE
+
+    plaintext = input('Klartext: ').upper().replace(' ', '')
+    blocksize = int(input('Blockgrösse: '))
+    padding = ' ' * blocksize
+    plaintext += padding
+
+    line_count = 0
+    position = 0
+
+    while (position + blocksize) < len(plaintext):
+        blocks.append(plaintext[position:position + blocksize])
+        line_count += 1
+        position += blocksize
+
+    chiffretext = ''
+    position = 0
+    while position < blocksize:
+        line_count = len(blocks)-1
+        while line_count >= 0:
+            chiffretext += blocks[line_count][position]
+            line_count -= 1
+        position += 1
+
+
+    print(plaintext)
+    print(chiffretext)
+
+    return blocks # DO NOT CHANGE
+
+
+if __name__ == '__main__':
+    encrypt()
+</code>

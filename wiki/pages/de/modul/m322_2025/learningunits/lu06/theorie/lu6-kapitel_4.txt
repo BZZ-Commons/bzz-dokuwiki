@@ -1,0 +1,36 @@
+==== 04 Wireframe & Wireflow ====
+
+=== 1. User Flow ===
+
+Ein User Flow zeigt den Weg, den ein Benutzer geht, um eine Aufgabe zu erledigen. Es ist wie ein Flussdiagramm, das zeigt, welche Schritte man nacheinander macht.\\
+
+Beispiel: Anmeldung → Übung auswählen → Aufgabe lösen → Ergebnis ansehen.\\
+
+User Flows helfen zu prüfen, ob der Ablauf logisch und einfach ist.\\
+
+{{:de:modul:m322_2025:learningunits:lu06:theorie:simple_flowchart_for_nng_wireflows_article-8.png?600|}}
+
+----
+
+=== 2. Wireframe ===
+
+Ein Wireframe ist wie ein Skelett eines Screens. Er zeigt, wo die Inhalte und Buttons stehen, aber noch nicht, wie alles aussieht. Es ist einfach gezeichnet, damit man schnell überlegen kann, welche Elemente auf dem Bildschirm wichtig sind.\\
+
+Beispiel: Auf einer Startseite einer Lern-App: oben der Titel, darunter eine Liste mit Übungen, unten ein „Start“-Button.\\
+
+{{:de:modul:m322_2025:learningunits:lu06:theorie:wireframe-example-plain.png?600|}}
+----
+=== 3. Wireflow ===
+
+Ein Wireflow kombiniert Wireframes und User Flows. Es zeigt nicht nur die Screens, sondern auch, wie man von einem Screen zum nächsten kommt. Pfeile und kleine Anmerkungen zeigen die Interaktionen und Entscheidungen.\\
+
+Beispiel: Wenn ein:e Nutzer:in auf „Übung starten“ klickt, öffnet sich die Aufgabenübersicht. Wenn er/sie auf „Beenden“ klickt, kommt das Ergebnis.\\
+{{:de:modul:m322_2025:learningunits:lu06:theorie:letter-8.png?600|}}
+{{:de:modul:m322_2025:learningunits:lu06:theorie:reworked-littlehootz-8.png?400|}}
+
+----
+=== Sinnvolle Reihenfolge im Designprozess ===
+
+  * User Flow erstellen: zuerst überlegen, welche Schritte Nutzer:innen machen.
+  * Wireframes zeichnen: jeden wichtigen Screen skizzieren.
+  * Wireflow erstellen: Screens verbinden und Abläufe sichtbar machen.

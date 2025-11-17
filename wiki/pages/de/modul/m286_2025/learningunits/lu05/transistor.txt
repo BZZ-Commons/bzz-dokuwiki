@@ -1,0 +1,36 @@
+====== LU05a - Der Transistor ====== 
+
+Computer, Smartphones und fast alle modernen Geräte funktionieren dank Milliarden winziger Bauteile: den Transistoren.
+Um zu verstehen, wie Computer 0 und 1 speichern, beginnen wir mit einer ganz einfachen Vorstellung: Ein Transistor ist wie ein Schalter, der Strom entweder durchlässt oder blockiert.
+
+===== Der Transistor als Schalter =====
+
+Ein Transistor hat einen Eingang (Steueranschluss) und einen Ausgang (Stromkreis).
+
+  * Am Eingang entscheidet ein kleines Signal, ob der Transistor den Stromkreis öffnet oder schliesst.
+  * Am Ausgang fliesst dann entweder Strom (1) oder eben kein Strom (0).
+
+So kann der Transistor zwei Zustände darstellen: AN und AUS.
+Diese zwei Zustände sind die Grundlage für die digitale Welt.
+
+===== Beispiel mit einer Glühbirne =====
+
+Ein Transistor können wir von der Funktionsweise wie eine Glühbirne vorstellen. Wir haben bei der Glühbirne 2 Zustände:
+
+  * Die Glühbirne ist aus
+  * Die Glühbirne ist an
+
+Somit kann die Glühbirne 2 verschiedene Zustände anzeigen. Doch was passiert, wenn wir 2 Glühbirnen nebeneinander haben? Nun haben wir verschiedene Zustände:
+
+  * Beide Glühbirnen sind aus
+  * Nur die erste Glühbirne ist an
+  * Nur die zweite Glühbirne ist an
+  * Beide Glühbirnen sind an
+
+Mit 2 Glühbirnen können wir schon 4 verschiedene Zustände erreichen.
+
+===== Warum ist das wichtig? =====
+
+Mit einem einzigen Transistor kann man nur ein/aus darstellen.
+Setzt man viele Transistoren zusammen, lassen sich damit Zahlen speichern, Rechenoperationen durchführen und sogar Programme ausführen.
+Ein moderner Computerchip enthält Milliarden solcher Transistoren – winzig klein und unglaublich schnell.

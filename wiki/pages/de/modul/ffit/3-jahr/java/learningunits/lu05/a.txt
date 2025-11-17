@@ -1,0 +1,67 @@
+====== LU05a - Vererbung ======
+
+==== Interfaces ====
+
+Eine Klasse kann eine oder gar mehrere Interfaces implementieren. Nichtabstrakte Klassen müssen alle Methoden ihrer implementierten Interfaces implementieren.
+
+^ UML ^ Java ^ Typescript ^
+| {{:de:modul:ffit:3-jahr:java:learningunits:lu05:uml_example_1.png?|}} | <WRAP>
+<code java>
+public interface Animal {...}
+</code>
+<code java>
+public interface Bird extends Animal {...}
+</code>
+<code java>
+public class Penguin implements Bird {...}
+</code> 
+</WRAP> | <WRAP>
+<code ecmascript>
+interface Animal {...}
+</code>
+<code ecmascript>
+interface Bird extends Animal {...}
+</code>
+<code ecmascript>
+class Penguin implements Bird {...}
+</code>
+
+</WRAP> |
+
+==== Abstrakte Klassen ====
+
+Eine abstrakte Klasse ist eine Zwischenform zwischen einem Interface und einer nichtabstrakten Klasse. Sie kann Methoden bereits implementieren oder ohne Implementation definieren. Von einer abstrakten Klasse kann keine direkte Instanz erstellt werden, nur von einer erbenden, nichtabstrakten Klasse.
+
+
+^ UML ^ Java ^
+| {{:de:modul:ffit:3-jahr:java:learningunits:lu05:uml_example_2.png?|}} | <WRAP>
+<code java>
+interface Animal {
+    void eat();
+}
+</code>
+<code java>
+abstract class Mammal implements Animal {
+    @Override
+    public void eat() {
+        System.out.println("This mammal is eating.");
+    }
+
+    abstract void makeSound();
+
+    public void breathe() {
+        System.out.println("Breathing air...");
+    }
+}
+</code>
+<code java>
+class Dog extends Mammal {
+    @Override
+    void makeSound() {
+        System.out.println("Woof!");
+    }
+}
+</code> 
+</WRAP> |
+
+Abstrakte Klassen sind daher nützlich, wenn man gewisse Basisfunktionen in einer gemeinsamen Parentklasse implementieren will, aber wiederum andere Methoden erst in der jeweiligen Implementierungsklasse.

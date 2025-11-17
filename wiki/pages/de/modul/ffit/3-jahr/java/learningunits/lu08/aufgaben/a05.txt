@@ -1,0 +1,81 @@
+==== LU08.A05 Register/Login implementieren ====
+
+Erstellen Sie unter ''src/main/java/ch/bzz/controller'' eine Controllerklasse ''ProjectApiController'', welche das bereits generierte interface ''ProjectApi'' implementiert.
+
+<code java>
+package ch.bzz.controller;
+
+
+@RestController
+public class ProjectApiController implements ProjectApi {
+
+    private final ProjectRepository projectRepository;
+    private final BCryptPasswordEncoder encoder = new BCryptPasswordEncoder();
+    private final JwtUtil jwtUtil;
+
+    public ProjectApiController(ProjectRepository projectRepository) {
+        this.projectRepository = projectRepository;
+        this.jwtUtil = jwtUtil;
+    }
+
+    @Override
+    public ResponseEntity<Void> createProject(LoginRequest loginRequest) {
+        // TODO: implement
+    }
+
+    @Override
+    public ResponseEntity<LoginProject200Response> loginProject(LoginRequest loginRequest) {
+        // TODO: implement
+    }
+</code>
+
+Versuchen Sie so weit wie möglich die beiden Methoden zu implementieren.
+
+Für das Erstellen des JWT können Sie folgende Hilfsklasse verwenden.
+<code java>
+import io.jsonwebtoken.Jwts;
+import io.jsonwebtoken.SignatureAlgorithm;
+import io.jsonwebtoken.security.Keys;
+import jakarta.annotation.PostConstruct;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
+
+import java.security.Key;
+import java.util.Date;
+
+@Component
+public class JwtUtil {
+
+    @Value("${jwt.secret}")
+    private String secret;
+
+    private Key key;
+
+    @PostConstruct
+    public void init() {
+        key = Keys.hmacShaKeyFor(secret.getBytes());
+    }
+
+    public String generateToken(String projectName) {
+        Date currentTime = new Date();
+        Date expirationTime = new Date(currentTime.getTime() + 3_600_000);
+
+        return Jwts.builder()
+                .setSubject(projectName)
+                .setIssuer("AccountingApp")
+                .setIssuedAt(currentTime)
+                .setExpiration(expirationTime)
+                .signWith(key, SignatureAlgorithm.HS256)
+                .compact();
+    }
+
+    public boolean validateToken(String token) {
+        try {
+            Jwts.parserBuilder().setSigningKey(key).build().parseClaimsJws(token);
+            return true;
+        } catch (Exception e) {
+            return false;
+        }
+    }
+}
+</code>

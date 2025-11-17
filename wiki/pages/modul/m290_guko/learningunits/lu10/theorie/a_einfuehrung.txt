@@ -1,0 +1,207 @@
+====== LU10a: Aggregatfunktionen Einführung ======
+
+===== 0. Datensätze =====
+Wir arbeiten mit **realen Daten** aus unterschiedlichen Bereichen. Das macht die Übungen **praxisnah**: Wir beantworten echte Fragen, erkennen **Trends** und leiten **Kennzahlen** ab.  
+Die drei Datensätze sind aus unterschiedlichen Sparten:
+  * **Einbrüche** (Kanton Zürich) – Datenbank: ''zh_einbrueche'', Tabelle: ''einbrueche''
+  * **Raumfahrt (1957–2022)** – Datenbank: ''spacemission'', Tabelle: ''missions''
+  * **Musiktrends (YouTube Top Songs 2025)** – Datenbank: ''youtube_top_100_songs_2025'', Tabelle: ''youtube_top_100_songs_2025''
+
+
+=== Einbrüche (Kanton Zürich) ===
+
+<WRAP center>
+{{:modul:m290_guko:learningunits:lu10:theorie:noun-robbery-6965605.svg?100&nolink|Robbery-Icon – Gofficon (Noun Project)}}
+</WRAP>
+((Bildquelle: ''Robbery'' von Gofficon, [[https://thenounproject.com/browse/icons/term/robbery/|Noun Project]] – Lizenz: CC BY 3.0))
+
+
+  * **Zeitraum:** 2009–2024
+  * **Quelle:** Kantonspolizei ZH
+  * **Lizenz:** CC0
+  * **Granularität:** je **Gemeinde** (Stadt Zürich zusätzlich je **Stadtkreis**)
+
+<WRAP box center round 80%>
+**Was steckt drin? (Auszug Felder)**  
+^ Feld ^ Bedeutung ^
+| ''ausgangsjahr'' | Berichtsjahr |
+| ''gemeindename'' / ''stadtkreis_name'' | örtliche Zuordnung |
+| ''straftaten_total'' | Vollendet **+** Versucht |
+| ''straftaten_vollendet'', ''straftaten_versucht'' | Aufschlüsselung |
+| ''einwohner'' | Bevölkerungszahl (Ende Vorjahr) |
+| ''haeufigkeitszahl'' | Fälle **pro 1’000 Einwohner** |
+</WRAP>
+
+**Beispielfragen:**  
+  * Wie viele Einbrüche gab es **letztes Jahr** in **meiner Gemeinde**?  
+  * Welche Gemeinden haben im **Durchschnitt** die **höchsten Raten**?  
+
+=== Space Missions ===
+
+<WRAP center>
+{{:modul:m290_guko:learningunits:lu10:theorie:noun-space-7278594.svg?100&nolink|Space-Icon – Zahirulizul (Noun Project)}}
+</WRAP>
+((Bildquelle: ''Space'' von Zahirulizul, [[https://thenounproject.com/browse/icons/term/space/|Noun Project]] – Lizenz: CC BY 3.0))
+
+
+  * **Zeitraum:** 1957–2022
+  * **Quelle:** Scrape von nextspaceflight.com
+  * **Granularität:** **Start-Ereignis** (Mission)
+
+<WRAP box center round 80%>
+**Was steckt drin? (Auszug Felder)**  
+^ Feld ^ Bedeutung ^
+| ''company'' | Betreiber/Organisation (staatlich, militärisch, privat) |
+| ''location'' | Startplatz (Kosmodrom, Spaceport, Pad) |
+| ''launch_date'' | Datum/Zeit des Starts |
+| ''rocket'' / ''status_rocket'' | Träger & Status (aktiv/retired) |
+| ''mission_status'' | Erfolg/Fehlschlag u. a. |
+| ''price_usd'' | Missionskosten (falls vorhanden; Mio. USD) |
+</WRAP>
+
+**Beispielfragen:**  
+  * Wie viele Starts hat **SpaceX** im Vergleich zu **staatlichen Akteuren** bis **2022**?
+  * Welche **Jahre** waren **startstark**, welche **pannenanfällig**?  
+  * Welche **aktiven Raketen** haben die **meisten erfolgreichen** Starts?
+
+=== YouTube Top 100 (2025) ===
+<WRAP center>
+{{:modul:m290_guko:learningunits:lu10:theorie:noun-song-8043534.svg?100&nolink|Song-Icon – Puspa Kusuma (Noun Project)}}
+</WRAP>
+((Bildquelle: ''Song'' von Puspa Kusuma, [[https://thenounproject.com/browse/icons/term/song/|Noun Project]] – Lizenz: CC BY 3.0))
+
+
+  * **Stichtag:** 22.09.2025
+  * **Umfang:** 100 Songs
+  * **Granularität:** **Video/Track** inkl. Kanal-Metadaten
+
+<WRAP box center round 80%>
+**Was steckt drin? (Auszug Felder)**  
+^ Feld ^ Bedeutung ^
+| ''title'' / ''full_title'' | Videotitel (offiziell) |
+| ''channel'' | Künstler:in/Kanal |
+| ''view_count'' | Views (bis > 2 Mrd.) |
+| ''duration'' | Videolänge (ca. 2–6 Minuten) |
+| ''tags'' / ''description'' | Metadaten (Genre, Labels, Promo) |
+| ''category'' | Kategorie (meist **Music**) |
+</WRAP>
+
+**Beispielfragen:**  
+  * Welche sind die **meistgespielten Songs 2025** und welche **Channels** sind **besonders erfolgreich**?  
+  * Gibt es einen **Zusammenhang** zwischen **Songdauer** und **Anzahl Views**?  
+
+==== Setup (Download & Import) ====
+
+Laden Sie die vorbereiteten Datensätze herunter und importieren Sie sie:  
+
+{{ :modul:m290_guko:learningunits:lu10:theorie:datensaetze_lu10_spacemissions_einbrueche_youtube_top_100.zip | ZIP mit allen drei SQL-Dumps }}
+
+
+{{ :modul:m290_guko:learningunits:lu10:theorie:load_and_import_sql_files_aggregate.mp4?1040x585 | Screencast, der zeigt wie die SQL-Files in Webstorm ausgeführt werden. Drei Datenbanken mit Tabellen und Datensätzen werden in MySQL erstellt. }}
+//Screencast, der zeigt wie die SQL-Files in Webstorm ausgeführt werden. Drei Datenbanken mit Tabellen und Datensätzen werden in MySQL erstellt.//
+
+
+<WRAP tip center round 70%>
+**Schema wählen (wichtig):**  
+Entweder im Editor-Dropdown das Schema wählen **oder** mit ''USE'' explizit setzen:
+<code sql>
+-- Beispiele:
+USE spacemission;
+-- USE zh_einbrueche;
+-- USE youtube_top_100_songs_2025;
+</code>
+</WRAP>
+
+
+===== 1. Was sind Aggregatfunktionen – und warum braucht man sie? =====
+
+<WRAP round 80% box center>
+Aggregatfunktionen fassen **viele Zeilen** zu **Kennzahlen** zusammen (z. B. Anzahl, Summe, Durchschnitt, Minimum/Maximum).  
+Sie sind die Grundlage für **Berichte, Dashboards, BI-Auswertungen((Business Intelligence: systematische, kennzahlenbasierte Datenanalyse zur Entscheidungsunterstützung; typische Artefakte sind Reports, Dashboards, Zeitreihen und Rankings.)) und Web-Backends**((Serverseitige Logik/Services einer Web-App; liest Datenquellen, validiert, rechnet und stellt Ergebnisse über APIs (Schnittstellen) bereit.)).
+</WRAP>
+
+==== 1.1 Die wichtigsten Aggregatfunktionen ====
+<WRAP round 80% box center>
+^ Funktion ^ Zweck ^ NULL-Verhalten ^
+| ''COUNT(*)'' | Anzahl Zeilen | zählt **alle** Zeilen |
+| ''COUNT(spalte)'' | Anzahl **nicht NULL** | **ignoriert** NULL |
+| ''SUM(spalte)'' | Summe | ignoriert NULL |
+| ''AVG(spalte)'' | Durchschnitt | ignoriert NULL |
+| ''MIN(spalte)'' | Kleinster Wert | ignoriert NULL |
+| ''MAX(spalte)'' | Grösster Wert | ignoriert NULL |
+</WRAP>
+
+<WRAP round 80% box center>
+**Syntax (allgemein)**  
+<code sql>SELECT AGGREGATFUNKTION(ausdruck) AS alias FROM schema.tabelle;</code>
+</WRAP>
+
+
+===== 2. Einfache Aggregationen =====
+
+=== 2.1 COUNT – Wie viele Datensätze sind es? ===
+<WRAP round 80% box center>
+**Frage:** Wie viele Missionen befinden sich im Datensatz?
+<code sql>
+SELECT COUNT(*) AS anzahl_missionen
+FROM missions;
+</code>
+**Was passiert?** ''COUNT(*)'' zählt alle Zeilen.
+\\
+<WRAP center>
+{{:modul:m290_guko:learningunits:lu10:theorie:anzahlmissionen.png?300&nolink}}
+</WRAP>
+</WRAP>
+
+=== 2.2 SUM – Summe bilden ===
+<WRAP round 80% box center>
+**Frage:** Wie viele **Views** haben alle 100 YouTube-Songs zusammen?
+<code sql>
+SELECT SUM(view_count) AS views_total
+FROM youtube_top_100_songs_2025;
+</code>
+**Was passiert?** ''SUM(view_count)'' addiert alle Views über die Tabelle.
+\\
+<WRAP center>
+{{:modul:m290_guko:learningunits:lu10:theorie:total_views.png?300&nolink}}
+//Ergebnis: 2025 haben die 100 meistgeklickten YouTube-Songs insgesamt über 10 Milliarden Views erzielt.//
+</WRAP>
+</WRAP>
+
+=== 2.3 AVG – Durchschnitt berechnen ===
+<WRAP round 80% box center>
+**Frage:** Wie lang ist ein Song **im Durchschnitt**?
+<code sql>
+SELECT AVG(duration) AS avg_duration
+FROM youtube_top_100_songs_2025;
+</code>
+**Was passiert?** ''AVG(duration)'' berechnet den Mittelwert; NULLs werden ignoriert.
+\\
+<WRAP center>
+{{:modul:m290_guko:learningunits:lu10:theorie:avg_duration.png?300&nolink}}
+//Ergebnis: 2025 haben die 100 meistgeklickten YouTube-Songs eine durchschnittliche Song-Dauer von 3 min 24s.//
+</WRAP>
+</WRAP>
+
+=== 2.4 MIN / MAX – Kleinster / Grösster Wert ===
+
+<WRAP round 80% box center>
+**Fragen:** Längster Song? Kürzester Song?
+<code sql>
+-- Längster Song
+SELECT MAX(duration) AS max_duration
+FROM youtube_top_100_songs_2025;
+
+-- Kürzester Song
+SELECT MIN(duration) AS min_duration
+FROM youtube_top_100_songs_2025;
+</code>
+
+**Was passiert?** ''MAX(...)'' gibt den grössten, ''MIN(...)'' den kleinsten Wert zurück.
+\\
+<WRAP center>
+{{:modul:m290_guko:learningunits:lu10:theorie:max_duration.png?300&nolink}} {{:modul:m290_guko:learningunits:lu10:theorie:min_duration.png?300&nolink}}
+
+//Ergebnis: Der längste Song in der Tabelle ist "Kendrick Lamar - Not Like Us" mit einer Dauer von 5 min 54s und der kürzeste Song "Claudia Valentina - Candy (Official Video)" mit 2 Minuten.//
+</WRAP>
+</WRAP>

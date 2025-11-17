@@ -1,0 +1,161 @@
+====== LU02b - Daten mit SQL abfragen ======
+
+
+===== Daten abfragen =====
+Das //SELECT//-Statement ist das am häufigsten verwendete SQL-Statement.  
+Mit <WRAP center box round 80%><code sql>SELECT</code></WRAP> können Daten in verschiedenen Varianten ausgegeben werden:  
+  * alle Spalten  
+  * bestimmte Spalten  
+  * mit Filterbedingungen  
+  * sortiert  
+
+
+===== Alle Spalten ausgeben =====
+Die einfachste Abfrageform ist:  
+
+<WRAP center box round 80%><code sql>
+SELECT * FROM imdb_top_1000;
+</code></WRAP>
+
+Die **FROM-Anweisung** sagt in welcher Tabelle gesucht werden soll. 
+
+Dies gibt **alle Spalten** und **alle Zeilen** der Tabelle zurück.  
+
+Beispielauszug (die tatsächliche Tabelle hat noch mehr Spalten):  
+
+^ Poster ^ Filmtitel ^ Jahr ^ Genre ^ Rating ^ Kurzbeschreibung ^
+| {{https://m.media-amazon.com/images/M/MV5BM2MyNjYxNmUtYTAwNi00MTYxLWJmNWYtYzZlODY3ZTk3OTFlXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_UY98_CR1,0,67,98_AL_.jpg?50}} | The Godfather | 1972 | Crime, Drama | 9.2 | An organized crime dynasty's aging patriarch transfers control of his clandestine empire to his reluctant son. |
+| {{https://m.media-amazon.com/images/M/MV5BZjdkOTU3MDktN2IxOS00OGEyLWFmMjktY2FiMmZkNWIyODZiXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_UX67_CR0,0,67,98_AL_.jpg?50}} | Interstellar | 2014 | Adventure, Drama, Sci-Fi | 8.6 | A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival. |
+| {{https://m.media-amazon.com/images/M/MV5BMTUxMzQyNjA5MF5BMl5BanBnXkFtZTYwOTU2NTY3._V1_UX67_CR0,0,67,98_AL_.jpg?50}} | The Green Mile | 1999 | Crime, Drama, Fantasy | 8.6 | The lives of guards on Death Row are affected by one of their charges: a black man accused of child murder and rape, yet who has a mysterious gift. |
+| {{https://m.media-amazon.com/images/M/MV5BOTA5NDZlZGUtMjAxOS00YTRkLTkwYmMtYWQ0NWEwZDZiNjEzXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_UX67_CR0,0,67,98_AL_.jpg?50}} | Whiplash | 2014 | Drama, Music | 8.5 | A promising young drummer enrolls at a cut-throat music conservatory where his dreams of greatness are mentored by a strict instructor. |
+
+
+===== Bestimmte Spalten ausgeben =====
+Wenn nur bestimmte Daten benötigt werden, empfiehlt es sich, die Spalten **explizit** anzugeben. Die Spalten werden mit **Kommas (,)** getrennt:  
+
+<WRAP center box round 80%><code sql>
+SELECT Series_Title, Released_Year, IMDB_Rating
+FROM imdb_top_1000;
+</code></WRAP>
+
+
+Beispielauszug:  
+<WRAP center box round 80%>
+^ Filmtitel ^ Jahr ^ Bewertung ^
+| The Godfather | 1972 | 9.2 |
+| Interstellar | 2014 | 8.6 |
+| The Green Mile | 1999 | 8.6 |
+| Whiplash | 2014 | 8.5 |
+</WRAP>
+
+
+===== Ausgabe sortieren =====
+Mit //ORDER BY// können Ergebnisse sortiert werden.  
+
+<WRAP center box round 80%><code sql>
+-- Die Filme nach Erscheinungsjahr sortieren
+SELECT Series_Title, Released_Year, IMDB_Rating
+FROM imdb_top_1000
+ORDER BY Released_Year ASC;
+</code></WRAP>
+
+Mit //ASC// (engl. ascending = Aufsteigend) oder //DESC// (engl. descending = Absteigend) kann die Sortierung bestimmt werden.
+
+Die besten Filme zuerst:  
+
+<WRAP center box round 80%><code sql>
+SELECT Series_Title, Released_Year, IMDB_Rating
+FROM imdb_top_1000
+ORDER BY IMDB_Rating DESC;
+</code></WRAP>
+
+
+===== Abfragen filtern =====
+Nicht immer sind alle Daten interessant – **mit //WHERE// können Bedingungen definiert** werden.  
+Während die bisher behandelten //SELECT//- und //FROM//-Anweisungen in jedem //SELECT//-Befehl vorkommen müssen, ist die **WHERE-Anweisung optional**.
+Wegen seiner wichtigen Bedeutung zur Einschränkung (Restriktion) einer Tabelle auf bestimmte Zeilen kommt die WHERE-Anweisung in der Praxis trotzdem in fast allen SELECT-Befehlen vor. Die Struktur einer Abfrage mit Bedingung lautet in Worten:
+
+  * **Was?** (welche **Spalten** werden ausgewählt -> z.B. //SELECT Series_Title//)
+  * **Woher?** (aus welcher/n **Tabelle/n** -> z.B. //FROM imbd_top_1000//)
+  * Unter **welcher/n Bedingung/en?** (welche **Feldwerte** -> z.B. //WHERE IMDB_Rating > 8.5//)
+\\
+
+<WRAP center box round 80%><code sql>
+-- Alle Filme mit Bewertung über 8.5
+SELECT Series_Title, IMDB_Rating
+FROM imdb_top_1000
+WHERE IMDB_Rating > 8.5;
+</code></WRAP>
+
+Ergebnis (Auszug):  
+<WRAP center box round 80%>
+^ Filmtitel ^ Bewertung ^
+| The Godfather | 9.2 |
+| The Green Mile | 8.6 |
+| Interstellar | 8.6 |
+</WRAP>
+
+===== Operatoren =====
+Im //WHERE//-Statement können verschiedene Operatoren eingesetzt werden, um die Auswahl von Datensätzen einzuschränken.  
+
+==== Vergleichsoperatoren ====
+<WRAP center box 80%><code>= , < , > , <= , >= , <></code></WRAP>
+→ werden vor allem bei Zahlen verwendet.  
+Beispiel: nur Filme anzeigen, die **vor 1970** erschienen sind.  
+
+<WRAP center box round 80%><code sql>
+SELECT Series_Title, Released_Year
+FROM imdb_top_1000
+WHERE Released_Year < 1970;
+</code></WRAP>
+
+
+==== Logische Verknüpfungen ====
+
+<WRAP center box round 80%><code>AND, OR, NOT</code></WRAP>
+→ verbinden mehrere Bedingungen.  
+Beispiel: Filme von Regisseuren //Christopher Nolan// **oder** //Francis Ford Coppola//:  
+
+<WRAP center box round 80%><code sql>
+SELECT Series_Title, Director
+FROM imdb_top_1000
+WHERE Director = 'Christopher Nolan' OR Director = 'Francis Ford Coppola';
+</code></WRAP>
+
+Mit //AND// kann man Bedingungen kombinieren, z. B.:  
+<WRAP center box round 80%><code sql>
+-- Alle Sci-Fi-Filme von Christopher Nolan
+SELECT Series_Title, Director, Genre
+FROM imdb_top_1000
+WHERE Director = 'Christopher Nolan' AND Genre = 'Drama';
+</code></WRAP>
+
+==== IN-Operator ====
+<WRAP center box round 80%><code>IN, NOT IN</code></WRAP>  
+→ vereinfacht Abfragen mit vielen Bedingungen.  
+
+<WRAP center box round 80%><code sql>
+-- Filme von Nolan oder Coppola
+SELECT Series_Title, Director
+FROM imdb_top_1000
+WHERE Director IN ('Christopher Nolan', 'Francis Ford Coppola');
+</code></WRAP>
+
+Das Gegenteil mit //NOT IN//:  
+<WRAP center box round 80%><code sql>
+-- Alle Filme, die NICHT von Nolan oder Coppola sind
+SELECT Series_Title, Director
+FROM imdb_top_1000
+WHERE Director NOT IN ('Christopher Nolan', 'Francis Ford Coppola');
+</code></WRAP>
+
+
+===== Zusammenfassung =====
+  * <code sql>SELECT</code> – bestimmt die Spalten  
+  * <code sql>FROM</code> – bestimmt die Tabelle  
+  * <code sql>WHERE</code> – filtert die Zeilen  
+  * <code sql>ORDER BY</code> – sortiert die Ergebnisse  
+
+Mit diesen Befehlen sind die wichtigsten Grundlagen für Abfragen in relationalen Datenbanken gelegt.  
+
+

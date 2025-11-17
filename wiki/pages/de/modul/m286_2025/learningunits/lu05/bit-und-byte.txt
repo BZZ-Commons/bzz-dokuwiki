@@ -1,0 +1,31 @@
+===== LU05b - Bit und Byte ======
+
+Computer arbeiten nicht mit Buchstaben oder ganzen Zahlen, so wie wir Menschen es tun, sondern mit kleinen Einheiten, die nur zwei Zustände kennen: 0 oder 1.
+Diese Zustände werden durch elektronische Schalter (Transistoren) dargestellt. Die kleinste Einheit, die daraus entsteht, heisst Bit.
+
+===== Bit und Byte =====
+
+Ein Bit entspricht im Prinzip einem einzelnen Transistor. Es kann nur zwei Zustände darstellen: 0 (aus) oder 1 (ein).
+Fasst man 8 Bits zusammen, erhält man die nächstgrössere Einheit: das Byte.
+
+Mit einem einzelnen Bit lässt sich nur zwischen zwei Möglichkeiten unterscheiden, doch ein Byte kann bereits 256 verschiedene Kombinationen speichern. Damit können nicht nur einfache Zustände, sondern auch Zahlen und Buchstaben dargestellt werden.
+
+Um eine einheitliche Zuordnung von Zahlen zu Buchstaben und Zeichen zu schaffen, wurde die sogenannte ASCII-Tabelle entwickelt. Sie legt fest, welche Zahl welchem Buchstaben oder Symbol entspricht (z. B. 65 = „A“). Ein ASCII-Symbol entspricht einem Byte.
+
+{{:modul:m286:learningunits:lu05:aufgaben:ascii.png?600|}}
+
+===== Basis 10 vs. Basis 2 =====
+
+Wir Menschen rechnen und denken im Alltag fast ausschliesslich im Dezimalsystem (Basis 10), also mit den Ziffern 0 bis 9.
+Computer hingegen arbeiten im Binärsystem (Basis 2), da ihre Grundbausteine, die Transistoren, nur zwei Zustände kennen: 0 und 1.
+Das führt dazu, dass Zahlen und Grössen in der Informatik je nach Kontext entweder in Basis 10 (für Menschen) oder in Basis 2 (für Maschinen) angegeben werden.
+
+Darum zeigt z.B. eine **500 GB-Festplatte (Herstellerangabe)** im Betriebssystem nur etwa **465 GiB** an.
+
+===== Grösseneinheiten in Basis 10 und Basis 2 =====
+
+{{:modul:m286:learningunits:lu04:aufgaben:lu04_a02_table.png?600|}}
+ 
+
+
+

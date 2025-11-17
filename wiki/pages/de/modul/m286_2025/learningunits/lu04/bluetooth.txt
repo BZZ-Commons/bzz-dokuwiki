@@ -1,0 +1,29 @@
+====== LU04a - Bluetooth ======
+
+===== Einleitung ======
+Bluetooth ist ein drahtloser Kommunikationsstandard, der für die Übertragung von Daten über kurze Distanzen entwickelt wurde. Die Technologie arbeitet im weltweit freigegebenen ISM-Frequenzband bei 2.4 Gigahertz. Entwickelt wurde Bluetooth in den 1990er-Jahren von Ericsson, und seit 1998 wird der Standard von der Bluetooth Special Interest Group (SIG) weiterentwickelt und gepflegt. Heute gehört Bluetooth zu den wichtigsten Übertragungsarten im Alltag und ist in nahezu allen mobilen Geräten wie Smartphones, Laptops, Kopfhörern und Smartwatches zu finden.
+
+Seit der ersten Version von Bluetooth im Jahr 1999 hat sich der Standard kontinuierlich weiterentwickelt. Während frühe Versionen nur niedrige Datenraten und kurze Reichweiten ermöglichten, wurden in den Folgejahren Geschwindigkeit, Reichweite und Energieeffizienz deutlich verbessert. Ein wichtiger Schritt war die Einführung von Bluetooth Low Energy (BLE) ab Version 4.0, das speziell für kleine Sensoren und tragbare Geräte konzipiert wurde und mit sehr geringem Energieverbrauch arbeitet. Mit Bluetooth 5.0 wurde die Reichweite auf bis zu 200 Meter erweitert, und auch die Datenraten konnten nochmals gesteigert werden.
+
+===== Reichweite oder Geschwindigkeit =====
+
+Die Reichweite von Bluetooth hängt stark von der verwendeten Geräteklasse und der Umgebung ab. Bei üblichen Geräten wie Kopfhörern oder Smartphones beträgt sie etwa 10 Meter. Unter optimalen Bedingungen und mit leistungsstärkeren Sendeeinheiten kann die Reichweite jedoch auf bis zu 100 Meter und mehr ausgeweitet werden. Hindernisse wie Wände oder andere Funkquellen können die effektive Reichweite deutlich verringern.
+
+Auch die Geschwindigkeit hat sich im Laufe der Entwicklung stetig verbessert. Während die ersten Versionen von Bluetooth nur Datenraten im Bereich von 721 Kbit/s ermöglichten, bieten moderne Versionen wie Bluetooth 5.0 Übertragungsraten von bis zu zwei 2 Mbit/s. Diese Geschwindigkeit ist ausreichend für Audiodaten oder den Datenaustausch kleiner Dateien, liegt jedoch deutlich unter den Werten, die mit WLAN erreicht werden können.
+
+===== Übertragungskapazität =====
+
+Dass die Übertragungskapazität auf das achtfache steigt, ist darauf zurückzuführen, dass Datenpakete bisher 31 Byte groß sein durften und jetzt 255 große sein dürfen. Das bedeutet, dass man in einem Datenpaket, z. B. für einen Broadcast, mehr Platz hat und zum Beispiel eine URL auf einmal übertragen kann. Zusätzlich stehen für die Übertragung alle 37 statt nur 3 Kanäle zur Verfügung. Und bei der Übertragung von Beacons wird auf das Pairing verzichtet.
+
+
+===== Anwendung =====
+Verbindungslose Dienste
+Bisher sah die Kommunikation zwischen Bluetooth-Geräten vor, dass man eine App benötigt, um sich mit einem Gerät zu verbinden. Außerdem muss der Anwender diese Verbindung initiieren. In Zukunft soll es nicht mehr nötig sein, sich über eine App mit einem Gerät zu verbinden. Die Geräte sollen sich untereinander automatisch verbinden können, wenn der Hersteller das vorgesehen hat.
+
+
+===== Standorterfassung =====
+Durch die Erhöhung der Reichweite verbessert Bluetooth 5 die Möglichkeit Gegenstände und Personen zu lokalisieren.
+
+  * Navigation in weitflächigen Gebäuden (Flughafen, Bahnhof)
+  * Nachverfolgung von Lagerbeständen oder Notfalleinsätzen
+  * Smart-City-Infrastrukturen zur Unterstützung von Sehbehinderten

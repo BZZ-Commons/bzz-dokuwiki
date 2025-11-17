@@ -1,0 +1,36 @@
+====== LU02b - Installation des Code-Editors Webstorm ======
+
+===== Voraussetzungen =====
+  * Arbeitsform: Einzelarbeit/Partnerarbeit **helfen Sie sich gegenseitig**
+  * Zeitaufwand: 20 Minuten 
+  * Erwartetes Ergebnis: 
+    * Korrekt installierter Code-Editor Webstorm inkl. Aktualisierung der Lizenzgültigkeit (Non-Commercial Lizenz).
+
+
+===== Einführung =====
+Programmieren von Quellcode ist ohne einen geeigneten Code-Editor mühsam. Webstorm ist ein solcher Editor, der uns viele nützliche Funktionen bietet – und das Beste: Für nicht kommerzielle Projekte er kostenlos verfügbar. Mit dem vorinstallierten Datenbank-Plugin können wir Datenbanken ganz leicht anlegen, konfigurieren und mit SQL-Code Daten auslesen.  Klingt doch super, oder?
+
+===== Aufgaben =====
+  - Erstellen Sie ein JetBrains-Konto mit Ihrer BZZ-E-Mail-Adresse (falls noch nicht vorhanden).  
+  - Laden Sie Webstorm herunter und installieren Sie es: [[https://www.jetbrains.com/webstorm/| Webstorm/Download]]. 
+  - Starten Sie Webstorm. 
+    - Bei der Lizenzauswahl, wählen Sie die **Non-Commercial Licence** (dazu müssen Sie sich in Ihrem JetBrains-Konto anmelden).
+    - Falls die Non-Commercial Licence nicht sichtbar ist, dann haben Sie vermutlich eine alte Version installiert. Laden Sie die aktuelle Version von Webstorm herunter.
+  - Erstellen Sie ein neues Projekt in Webstorm -> Klick auf "+" -> beide Checkboxen abwählen und dem Projekt einen Namen vergeben, wie "M290".
+  - Öffnen Sie nach der Einrichtung das Datenbank-Plugin (Klick auf Datenbank-Icon in der rechten Seitenleiste) in Webstorm.  
+  - Stellen Sie eine Verbindung zwischen Ihrer lokalen MySQL-Datenbank und Webstorm her -> Im Datenbank-Fenster aufs "+" klicken und "Data Source" auswählen und dann **MySQL** (Version 9) auswählen. Im erscheinenden Fenster die Verbindung konfigurieren (s.Screenshot mit Beispiel-Angaben).
+    - User: root
+    - Password: (leer) oder das Passwort, das Sie beim Installieren bzw. Konfigurieren von MySQL Community Server gesetzt haben (Windows User) -> siehe [[https://moodle.bzz.ch/mod/lesson/view.php?id=29259&pageid=6383|Installation MySQL]]
+    - Falls eine Warnung erscheint, dass noch **Software/Treiber** heruntergeladen werden müssen -> anklicken (direkt über "Test Connection")
+    - Test Connection: grünes Popup (Succeeded) -> Apply, OK; Failed -> möglicherweise stimmt das Passwort nicht
+  - Yay! Webstorm ist installiert und mit MySQL verbunden. Nun können Sie das erste Datenset importieren (nächste Aufgabe).
+  
+
+{{:modul:m290_guko:learningunits:lu02:aufgaben:screenshot_2025-08-24_at_02.17.35.png?direct&700|Konfiguration für die Verbindung von Webstorm zu MySQL}}\\
+//Konfiguration, um die Verbindung zu MySQL herzustellen.//
+
+
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Guido Koch

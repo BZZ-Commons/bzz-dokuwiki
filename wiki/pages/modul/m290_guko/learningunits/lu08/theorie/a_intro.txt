@@ -1,0 +1,34 @@
+====== LU08a: Tabellen in Beziehung setzen ======
+
+===== Einführung =====
+
+In echten Web-Apps (z. B. **WordPress**) werden Inhalte auf **mehrere Tabellen** verteilt:
+Benutzer (Autoren), Inhalte (Posts), Kategorien/Tags u. a. — das reduziert **Redundanzen**((Wiederholungen gleicher Daten))
+und schützt die **Datenqualität**((Konsistente, fehlerarme Daten ohne widersprüchliche Einträge)).
+
+Für diese Lerneinheit verwenden wir das Beispiel eines **Reise-Blogs**. Ein typisches und weit verbreitetes Blogsystem ist **WordPress**.
+WordPress setzt — wie unser Kurs — auf das relationale Datenbankmanagementsystem (**RDBMS**) **MySQL** bzw. dessen Weiterentwicklung **MariaDB**.
+
+Ein Beispiel für einen solchen Reiseblog ist [[https://wetraveltheworld.de|WE TRAVEL THE WORLD]] — ein erfolgreicher Blog von Caro und Martin
+mit mehreren Autoren, Kategorien (z. B. Thailand, Städtereise, Abenteuer) und Kommentaren pro Beitrag.
+
+<WRAP center round box 80%>
+{{ :modul:m290_guko:learningunits:lu08:theorie:screenshot_2025-10-15_at_15.04.57_resized.png?nolink&600 | Startseite mit mehreren Blog-Posts und sichtbaren Kategorien. }}
+//Screenshot: „WE TRAVEL THE WORLD“ – Listenansicht mit Kategorien.//
+</WRAP>
+
+<WRAP center round box 80%>
+{{ :modul:m290_guko:learningunits:lu08:theorie:screenshot_2025-10-15_at_15.07.33_resized.png?nolink&600 | Ein einzelner Blog-Post mit Featured Image, Titel, Autor:in, Veröffentlichungsdatum und Kommentaranzahl. }}
+//Screenshot: Einzelansicht eines Blog-Posts.//
+</WRAP>
+
+===== ERD – Chen-Notation =====
+
+Das ERD in Chen-Notation für diesen Blog könnte so aussehen:
+
+{{ :modul:m290_guko:learningunits:lu08:theorie:wordpress_blog.drawio.png?nolink&900 |ERD mit den Entitäten **Post**, **User** und **Category** sowie typischen Attributen (WordPress-ähnliches Modell).}}
+//Hinweis: Die Entität **Kommentar** ist hier bewusst weggelassen, um den Einstieg nicht zu verkomplizieren.//
+
+Anhand dieses Beispiels werden wir im Folgenden **mehrere Tabellen erstellen und in Beziehung setzen**.
+In der darauffolgenden Lerneinheit (**LU09**) fragen wir dann **Daten aus mehreren Tabellen** ab.
+

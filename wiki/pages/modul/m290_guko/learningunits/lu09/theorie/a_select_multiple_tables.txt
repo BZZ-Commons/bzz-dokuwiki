@@ -1,0 +1,164 @@
+====== LU09a: SELECT über mehrere Tabellen ======
+
+**Ziel:** Sie können Daten aus **mehreren Tabellen** abfragen – mit **INNER JOIN … ON** (empfohlen) und der **älteren WHERE-Variante**. Sie verstehen, **welche Tabelle in //FROM//** steht, **welche in //JOIN//** folgt, und ob die **Reihenfolge** bei mehr als zwei Tabellen eine Rolle spielt.
+
+**Voraussetzung:** Datenbank aus **LU08** (//users//, //posts//, //categories//, //post_category//) ist erstellt und mit Beispieldaten gefüllt
+  - Laden Sie dazu dieses SQL-Skript (gezippt) herunter {{ :modul:m290_guko:learningunits:lu09:theorie:travel_blog_2025_10_26_19_39_40-dump.sql.zip | Travel Blog DB}}
+  - Entpacken Sie das .zip
+  - In **Webstorm** im Datenbank-Plugin **rechts-klicken** auf die Verbindung zu MySQL (z.B. mysql@localhost)
+  - Im Dropdown-Menü **SQL-Scripts** > **Run SQL-Script...** auswählen
+  - heruntergeladene .sql-Datei auswählen
+  - Nachdem das Skript durchgeführt wurde > **rechts-klicken** auf die Verbindung zu MySQL (z.B. mysql@localhost)
+  - **Tools** > **Manage Shown Schemas...** auswählen und //travel_blog// Datenbank ankreuzen
+
+{{ :modul:m290_guko:learningunits:lu09:theorie:load_sql_file_travel_blog.mp4?1040x585 | Screencast zum laden von SQL-Files in Webstorm. }}
+//Screencast zum laden von SQL-Files in Webstorm.//
+
+==== 1) Warum JOINs? Kurze Einordnung ====
+{{ :modul:m290_guko:learningunits:lu09:theorie:m290_lu11_joins_erklaert.mp4?1040x585 | Video-Erklärung zu Abfragen aus mehreren Tabellen.}}
+//Video-Erklärung zu Abfragen aus mehreren Tabellen.//
+
+In relationalen DBs verteilen wir Daten auf **mehrere Tabellen**.
+
+In unserem Reiseblog liegen die Infos verteilt:
+
+  * Autor:innen → //users//
+  * Beiträge → //posts// (mit ''author_id'')
+  * Kategorien → //categories//
+  * Zuordnung Post↔Kategorie → //post_category//
+
+Um zum Beispiel Posttitel und Autor:innenname zusammen zu sehen, müssen wir //posts// und //users// verbinden.
+
+{{:modul:m290_guko:learningunits:lu08:theorie:reiseblog-connected_users-posts.png?direct&1300|1:n: Ein:e Autor:in → viele Posts}}
+
+**SELECT-Abfragen** kennen wir bereits für **einzelne Tabellen**:
+<WRAP center box 80% round><code sql>
+SELECT post_id, title, author_id
+FROM posts
+WHERE post_id = 1;
+</code></WRAP>
+
+**Mögliches Resultat:**
+<WRAP center box 80% round>
+^ post_id ^ title ^ author_id ^
+| 1 | Hasselt – 10 Highlights | 2 |
+ </WRAP>
+<WRAP center box 80% round>
+Das Problem: Wir brauchen für die Anzeige im Frontend((Das Frontend bezeichnet den sichtbaren Bereich einer Website oder Anwendung, mit dem die Besucher interagieren. Es umfasst alle Elemente, die auf dem Bildschirm angezeigt werden, wie Texte, Bilder, Buttons und Menüs, sowie die visuelle Gestaltung und Benutzerfreundlichkeit.)) jedoch eine menschenlesbare Angabe zum Autor bzw. zur Autorin und nicht bloss eine ID (hier 2). Dafür müssen wir Daten aus zwei Tabellen gleichzeitig abfragen – aus der Tabelle ''posts'' und der Tabelle ''users'', wo der Name des Verfassers in der Spalte ''display_name'' abgespeichert ist.
+Um Daten aus mehreren Tabellen gleichzeitig abzufragen, brauchen wir eine erweiterte Syntax.
+ </WRAP>
+==== 2) Allgemeine Syntax ====
+
+**Ältere Schreibweise: FROM + WHERE**
+<WRAP center box 80% round><code sql>
+SELECT tabelle1.spalten, tabelle2.spalten
+FROM   tabelle1, tabelle2, tabelle3
+WHERE  tabelle1.fk = tabelle2.pk
+AND  tabelle2.fk = tabelle3.pk
+AND  ...         -- weitere Filter
+ORDER BY ...; </code></WRAP>
+
+
+**Empfohlen (modern & klar): INNER JOIN … ON**
+<WRAP center box 80% round><code sql>
+SELECT tabelle1.spalten, tabelle2.spalten
+FROM   tabelle1
+INNER JOIN tabelle2 ON tabelle1.fk = tabelle2.pk
+-- optional weitere Verknüpfungen:
+INNER JOIN tabelle3 ON tabelle2.fk = t3.pk
+WHERE  ...      -- filtern
+ORDER BY ...;   -- sortieren </code></WRAP>
+
+
+
+==== 3) Beispiel: Posts mit Autor:in (2 Tabellen) ====
+
+{{:modul:m290_guko:learningunits:lu09:theorie:crowsfoot_wordpress_reiseblog.drawio.png?direct&900|}}
+
+**WHERE-Schreibweise:**
+<WRAP center box 80% round><code sql>
+SELECT posts.post_id, posts.title, users.display_name
+FROM posts, users
+WHERE posts.author_id = users.user_id;
+</code></WRAP>
+
+**INNER JOIN … ON (empfohlen):**
+<WRAP center box 80% round><code sql>
+SELECT p.post_id, p.title, u.display_name AS author
+FROM posts AS p
+INNER JOIN users AS u ON p.author_id = u.user_id;
+</code></WRAP>
+
+<WRAP info round 80% center>
+**Aliase** (''p'' -> posts, ''u'' -> users) verkürzen Schreibarbeit und erhöhen Lesbarkeit. </WRAP>
+
+**Mögliches Resultat:**
+<WRAP center box 80% round>
+^ post_id ^ title ^ author ^
+| 1 | Hasselt – 10 Highlights | Martin Merten |
+| 2 | Utrecht – 10 Sehenswürdigkeiten | Martin Merten |
+| 3 | Lissabon – 8 Tipps zu den wichtigsten Sehenswürdigkeiten | Caro Steig |
+| 4 | Maastricht an einem Tag | Caro Steig |
+| 5 | Montenegro Roadtrip – 10 Highlights | Caro Steig |
+| 6 | Oman – Top 22 Highlights | Caro Steig |
+| 7 | Chicago in 3 Tagen – 17 Highlights | Martin Merten |
+</WRAP>
+
+
+
+==== 4) Drei Tabellen: Posts mit Kategorien (N:M via Zwischentabelle) ====
+
+{{ :modul:m290_guko:learningunits:lu09:theorie:m290_lu11_joins_n-m-beziehungen.mp4?1040x585 | Video-Erklärung, wie aus drei Tabellen Daten gleichzeitig abgerufen werden können. }}
+//Video-Erklärung, wie aus drei Tabellen Daten gleichzeitig abgerufen werden können.//
+
+{{:modul:m290_guko:learningunits:lu08:theorie:reiseblog-connected_posts-categories.png?direct&1300|N:M via post_category}}
+
+
+**Schritt-für-Schritt mit INNER JOIN (empfohlen):**
+<WRAP center box 80% round><code sql>
+SELECT p.title, c.name AS category
+FROM posts p
+INNER JOIN post_category pc ON p.post_id = pc.post_id
+INNER JOIN categories c ON pc.category_id = c.category_id
+ORDER BY p.post_id, c.name; </code></WRAP>
+
+
+**Ausschnitt (mögliche Ausgabe):**
+<WRAP center box 80% round>
+^ title ^ category ^
+| Hasselt – 10 Highlights | Belgien |
+| Hasselt – 10 Highlights | Städtereise |
+| Utrecht – 10 Sehenswürdigkeiten | Niederlande |
+| Utrecht – 10 Sehenswürdigkeiten | Städtereise |
+| Lissabon – 8 Tipps zu den wichtigsten Sehenswürdigkeiten | Portugal |
+| Lissabon – 8 Tipps zu den wichtigsten Sehenswürdigkeiten | Städtereise |
+</WRAP>
+
+<WRAP info round 80% center>
+Pro Kategorie entsteht **eine Ergebniszeile**. Ein Post mit 3 Kategorien erscheint **dreimal** – das ist korrekt.
+</WRAP>
+
+==== 5) Welche Tabelle in FROM – und welche in JOIN? Spielt die Reihenfolge eine Rolle? ====
+
+**Grundregel (für INNER JOIN):**
+
+  * In **FROM** steht die **„führende“** Tabelle – jene, **deren Zeilen Sie primär auflisten möchten** (z. B. //posts//, wenn Sie Posts auflisten).
+  * Alles, was Sie **zusätzlich brauchen**, kommt in **JOIN** (z. B. //users// für den Autorname, //categories// via //post_category//).
+
+**Reihenfolge bei mehreren INNER JOINs:**
+Bei **INNER JOIN** ändert die Reihenfolge **das Ergebnis nicht**, solange alle Join-Bedingungen korrekt sind. Vom Bedarf her denken (z. B. //Posts anzeigen//), entlang der Schlüsselbeziehungen „weiterjoinen“:
+
+  * 1:n: posts  →  users
+  * n:m (via Zwischentabelle): posts  →  post_category  →  categories
+
+==== 6) Filtern & Sortieren – wo kommt die WHERE-Klausel hin? ====
+
+  * **JOIN-Bedingungen** gehören bei der JOIN-Schreibweise in **ON**.
+  * **Inhaltliche Filter** (z. B. nur bestimmte Autor:innen/Kategorien) kommen in **WHERE**.
+  * **ORDER BY** bestimmt die Ausgabe-Reihenfolge.
+
+==== Weiterführende Videos ====
+<WRAP center tip round 80%>
+[[https://www.youtube.com/watch?v=lL_ElI2ENeE]]((Informatik - simpleclub / YouTube)) -> (6:54) Join in SQL - SQL 9.
+</WRAP>
+

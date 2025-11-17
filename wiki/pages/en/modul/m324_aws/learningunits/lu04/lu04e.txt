@@ -1,0 +1,25 @@
+====== LU04e - Adding and testing an API ======
+<sup>Internal reference: learningunits/04-5.md</sup>
+\\
+===== Goals =====
+  -I can migrate/prepare an app for testing over the network (primarily http)
+  -I can set up and run the app in container.
+  -I can run prepared tests (primarily unit test) against the containerized app.
+  -If there are any errors, I can analyze the error, suggest and test an initial workaround (troubleshooting).
+
+\\
+===== Basics =====
+Life Demo Project Traffic light with the following steps:
+  -Start the containerized app
+  -Test welcome message with curl
+  -Run unit tests against the API
+
+\\
+===== Exercises =====
+  -Setup Jenkins ''03/02_Exercises/01-Exercise.md to 03-Exercise.md'' - according to the learning objectives (see course repository).
+  -If there is an error, read the message carefully, think about a solution and implement it.
+
+
+----
+
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Daniel Garavaldi

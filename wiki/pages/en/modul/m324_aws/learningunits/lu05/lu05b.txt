@@ -1,0 +1,21 @@
+====== LU05b - Jenkins container pipeline (Project) ======
+<sup>Internal reference: learningunits/05-2.md</sup>
+\\
+===== Goals =====
+  -I can set up ''Jenkins'' with DinD.
+  -I can set up pipeline stages in order to test Jenkins pipeline stepwise.
+  -If there are any errors, I can analyze the error, suggest and test an initial workaround (troubleshooting).
+
+\\
+===== Sample project =====
+[[https://youtu.be/4uQvUmfO8BA |Setup pipeline with container]]
+
+\\
+===== Exercises =====
+  -Setup Jenkins ''04/02_Exercises/a02'' - according to the learning objectives (see course repository).
+  -If there is an error, read the message carefully, think about a solution and implement it.
+
+
+----
+
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Daniel Garavaldi

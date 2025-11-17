@@ -1,0 +1,22 @@
+====== LU08c - Archivierung ======
+<sup>Internal reference: learningunits/08-3.md</sup>
+\\
+===== Ziele =====
+  -Ich kann in eigenen Worten beschreiben, wozu eine Archivierung gut ist.
+  -Ich kann mit ''tar'' packen und entpacken.
+  -Ich kann mit ''tar'' Inhalte eines Archivs anzeigen, einzelne extrahieren oder hinzufügen.
+  -Ich kann mit ''tar'' ein Archiv komprimieren.
+  -Bei Fehlern kann ich den Fehler analysieren, eine erste Massnahme vorschlagen und diese ausprobieren (Troubleshooting).
+
+\\
+===== Grundlagen =====
+Ein Tutorial zum [[de:modul:m122_aws:topics:05_6|tar Command]] anhand von praktischen Beispielen erklärt.
+
+\\
+===== Übungen =====
+Versuchen/Testen Sie - auf Ihre Umgebung angepasst - die Beispiele aus den Grundlagen.
+
+
+----
+
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Daniel Garavaldi

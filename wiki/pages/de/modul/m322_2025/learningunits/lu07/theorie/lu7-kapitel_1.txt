@@ -1,0 +1,24 @@
+==== 1. Wozu dient das Prototyping? ====
+Beim Prototyping geht es darum, die erstellten Konzepte zusammen mit möglichen Benutzern zu überprüfen. Diese Überprüfung kann auf verschiedenen Ebenen des Entwurfs geschehen.\\
+===Ausgestaltung der Benutzerinteraktionen===
+Dabei geht es darum, die Abfolge der einzelnen Screens "erlebbar" zu machen. Ein Prototyp ermöglicht es einen Usability-Test (Usertest) durchzuführen.\\
+Die Benutzer können Rückmeldung geben, wie verständlich die Benutzerführung ist, ob einzelne Arbeitsschritte selbsterklärend sind, wie gut auf Fehlmanipulationen reagiert wird usw.\\
+Je nach Ziel des Prototypen kann es sich hierbei um 
+   * einen **Papier-Prototypen** handeln, wie bereits in der Konzeptphase vorgestellt. Der Aufwand ist hierbei sehr gering - die entsprechenden Artefakte liegen meist schon vor. Der Erkenntnisgrad bei Feedbacks begrenzt sich aber häufig auf die Akzeptanz eines bestimmten Ablaufs von Interaktionen.
+   * ein **Wireframe** handeln, der die strukturellen Elemente, das Layout und die wichtigsten Elemente graphisch, als eine Art “Drahtgerüst”, lediglich mit Hilfe von Linien und Boxen in einem Raster darstellt. Das Raster ist dazu da, Ordnung zu schaffen und Proportionen festzulegen und so Kohärenz innerhalb der Applikation zu generieren. 
+   * einen **Low-Fidelity-Prototypen** handeln, um grundlegende Konzepte und Layouts schnell zu visualisieren und erste Benutzerfeedbacks einzuholen. Auch verschiedene Varianten können schnell erstellt, diskutiert oder evaluiert werden.
+   * einen **Klick-Prototypen** handeln, der vorallem den Ablauf erleben lässt. Um das Verständnis der Abläufe zu überprüfen, genügt diese Art oftmals und wird daher oft genutzt, um einen Usertest durckzuführen.
+   * ein **Mockup** handeln, ideal für spätere Design-Phasen und Team-Diskussionen. Ein Mockup ist eine statische Darstellung eines Designs mit mehr UI-Details wie Farben, Schriften und Layouts. Es vermittelt einen realistischeren Eindruck des finalen Produkts. 
+   * einen **High-Fidelity-Prototypen** (voll funktionsfähigen Prototypen) handeln, mit einem hohen Detailgrad an Funktionalität und Design und damit das Gegenstück zum »Low Fidelity-Prototype«. Sie simulieren bereits die Benutzerführung und sehen der zukünftigen interaktiven Anwendung bereits sehr ähnlich. Durch die Interaktivität und die detaillierte Ausarbeitung sind realitätsnahe Benutzertests möglich. Der Aufwand für die Erstellung ist jedoch erheblich.
+===Visuelle Ausgestaltung===
+Hierzu muss ein Prototyp erstellt werden, der dem späteren Produkt  mehr oder weniger pixelgenau entspricht. Nebst den Ausprägungen von Schriften (Farbe, Grösse, Typ usw.) und Icons sind es die Platzierung der Elemente, deren Sichtbarkeit usw. massgebend sind.\\
+Die Benutzer können Rückmeldung geben, wie stark sie sich vom Produkt angesprochen fühlen, wie sehr die gewählten Elemente dem Verstädnis der Anwendung dienen usw.
+===Inhaltliche Ausgestaltung===
+Die verwendeten Texte und Begriffe entsprechen denen der finalen Version und werden nicht durch Platzhalter ersetzt.\\
+Die Benutzer können Rückmeldung geben, wie gut die Anwendung sprachlich verstanden wird, wo Klärungen nötig sind usw.
+\\
+----
+===Validierung===
+Der Einsatz von Prototypen macht aber nur Sinn, wenn im Voraus klar ist, was man untersuchen möchte. Analog zum Testen der Funktionalität einer Software (z.B. mit Unit-Test - vergl. dazu Modul 450) sollten die Kriterien zur Bewertung der Ergebnisse vor der Durchführung einer Validierung festgelegt werden.
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) René Probst

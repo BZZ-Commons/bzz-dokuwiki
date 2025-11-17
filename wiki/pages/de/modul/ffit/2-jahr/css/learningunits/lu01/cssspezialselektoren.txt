@@ -1,0 +1,228 @@
+====== LU01d - Spezielle CSS-Selektoren ======
+===== Universalselektor =====
+Mit dem Universalselektor werden alle HTML-Elemente auf einmal in einem Dokument markiert. Der Universalselektor wird mit dem Sternchen * notiert. Der Universalselektor muss bei einer solchen Verwendung immer als erstes aufgeführt werden.
+
+=== Beispiel ===
+Der folgende Universal-Selektor setzt überall einen gepunkteten grünen Rahmen.
+
+<code css>
+/* Grüner, gepunkteter Rahmen für alle Elemente */
+* { 
+  margin: 5px;
+  padding: 3px;
+  border: 2px dotted green;
+  text-align: center; 
+}
+</code>
+
+Mit dem folgenden CSS-Code soll um das ''<main>''-Element, statt dem grünen Rahmen, ein roter Rahmen gezogen werden. Hier wird kein Universalselektor angewendet:
+<code css>
+/* Grüner, gepunkteter Rahmen für alle Elemente */
+* { 
+  margin: 5px;
+  padding: 3px;
+  border: 2px dotted green;
+  text-align: center; 
+}
+
+/* Nur ein Rahmen, kein Universal- sondern normaler Typselektor */
+main { 
+	border: 3px solid red; 
+}
+</code>
+
+Mit Hilfe des Universalselektors soll nun zusätzlich um jedes **Kindselement** von ''<main>'' **ein blauer Rahmen** gezogen werden:
+
+<code css>
+/* Grüner, gepunkteter Rahmen für alle Elemente */
+* { 
+  margin: 5px;
+  padding: 3px;
+  border: 3px dotted green;
+  text-align: center; 
+}
+
+
+/* Nur ein Rahmen, kein Universal- sondern normaler Typselektor */
+main { 
+	border: 3px solid red; 
+}
+
+/* Rahmen um alle Kindselemente im main-Element */
+main * { 
+	border: 2px solid blue; 
+}
+</code>
+
+=== Demo ===
+<code html4strict>
+<body>
+  <header>Kopfzeile</header>
+  <nav>Navigation</nav>
+  <main>
+    <h1>Universalselektor</h1>
+    <p>Ein einfacher Absatztext.</p>
+    <p>Ein zweiter Absatztext</p>
+  </main>
+  <footer>Fußzeile</footer>
+  </body>
+</code>
+
+===== Attributselektor =====
+Seit CSS Level 2 gibt es Selektoren, die HTML-Elemente anhand ihrer Attribute ansprechen können. In diesem Fall muss der Attributname zwischen eckigen Klammern [] gesetzt werden.
+
+{{:modul:m293:learningunits:lu12:attribut_selektor_1.png?600|}}
+
+Dieser Attributselektor wird in einem HTML-Dokument um jedes HTML-Element, das ein ''title''-Attribut besitzt, einen Rahmen zeichnen.
+
+<code css>
+/* Styling für alle Elemente mit dem Attribut title */
+[title] {
+  border: 4px solid black;
+}
+</code>
+
+Dieser Attributselektor kann auch nur auf bestimmte HTML-Elemente angewendet werden. Im Beispiel unten selektiert der Attributselektor alle title-Attribute des ''<a>''-Elements.
+
+<code css>
+
+/* Styling for alle a-Element mit dem Attribut title */
+a[title] { 
+  text-decoration: none;
+  color: red;
+  font-weight: bold;
+  border: 2px dotted red;
+}
+</code>
+
+=== Demo ===
+<code html4strict>
+
+<body>
+    <h1>Attributselektor</h1>
+    <p>Fach M293 ...
+    <a href="http://www.bzzlab.ch/ict-02/" title="Zum Fach ICT-02">Fach ICT-02</a>
+    </p>
+    <p title="Ein Absatz mit title">Dieser Absatz hat auch ein title-Attribut.</p>
+</body>
+</code>
+
+==== Attributselektor mit einem bestimmten Attributwert ====
+Mit dem Attributselektor können Attribute mit einem bestimmten Wert selektiert werden. Es gibt drei Möglichkeiten einen bestimmten Attributwert auszuwählen:
+
+^Selektor	^Bezeichnung	^Auswahl	^Beispiel^
+|''[attr=wert]''	|Attributselektor (Attributwert)	|jedes Element, bei dem das Attribut ''attr'' den Wert ''wert'' enthält	|''<elem attr="wert">''|
+|''[attr~=wert]''	|Attributselektor (Attributwert) mit Tilde (''~'')	|jedes Element, bei dem im Attribut ''attr'' der Wert ''wert'' als allein stehendes Wort vorkommt	|''<elem attr="abc wert xyz">''|
+|''[attr%%|%%=wert]''	|Attributselektor (Attributwert) mit Verkettungszeichen (''%%|%%'')	|jedes Element, bei dem im Attribut ''attr'' der Wert ''valx'' am Anfang als eine durch Bindestrich getrennte Zeichenfolge steht	|''<elem attr="valx-valy">''|
+
+=== Beispiele ===
+Styling für alle HTML-Elemente, die im title den Attributwert "deprecated" besitzen.
+<code css>
+/* Styling für alle HTML-Elemente wo title
+   den Attributwert deprecated besitzt
+ */
+[title=deprecated] {
+  color: red;
+  text-decoration: line-through;
+}
+</code>
+
+Styling für alle HTML-Elemente, die im title als Attributwert das Wort "bzzlab" enthalten.
+<code css>
+/* Styling von HTML-Elemente wo title im
+   Attributwert das Wort "bzzlab" enthält
+ */
+[title~=bzzlab] { 
+	font-weight: bold; 
+	color: red; 
+}
+</code>
+
+Styling für alle ''<a>''-Elemente mit dem Attribut title ''title''.¨
+<code css>
+/* Styling von HTML-Elemente wo title im
+   Attributwert das Wort "bzzlab" enthält
+ */
+[title~=bzzlab] { 
+	font-weight: bold; 
+	color: red; 
+}
+</code>
+
+=== Demo ===
+<code html4strict>
+<body>
+    <h1>[title=deprecated]</h1>
+    <p>Das HTML-Element <span title="deprecated">center</span> wurde in HTML5 als veraltet erklärt und sollte durch eine CSS-Lösung wie beispielsweise 'text-align: center' realisiert werden.</p>   
+    <h1>[title~=bzzlab]</h1>
+    <ul>
+      <li><a href="http://www.bzzlab.ch/" title="Zur bzzlab Website">Einstieg in bzzlab</a></li>
+      <li><a href="http://www.bzzlab.ch/ict-02" title="Zum Fach ICT-02">Fach ICT-02</a></li>
+    </ul>
+    <h1>[hreflang|=de]</h1>
+    <ul>
+      <li><a href="http://de.irgendwo.com/" hreflang="de-de">Deutsche Version</a></li>
+      <li><a href="http://en.irgendwo.com/" hreflang="en-de">Englische Version</a></li> 
+    </ul>
+  </body>
+</code>
+
+==== Attributselektor mit einem bestimmten Teilwert (Teilübereinstimmung) ====
+In CSS3 wurden Attributselektoren erweitert, um auch Teilwerte auszuwählen. Im Folgenden werden die drei Attributselektoren tabellarisch dargestellt:
+
+^Selektor	^Bezeichnung	^Auswahl	^Beispiel^
+|''[attr^=wert]''	|Attributselektor (Teilwert)	|jedes Element, bei dem das Attribut ''attr'' mit der Textfolge ''wert'' anfängt	|''<elem attr="werter">''|
+|''[attr$=wert]''	|Attributselektor (Teilwert)	|jedes Element, bei dem das Attribut ''attr'' mit der Textfolge ''wert'' endet	|''<elem attr="endwert">''|
+|''[attr*=wert]''	|Attributselektor (Teilwert)	|jedes Element, bei dem das Attribut ''attr'' die Textfolge ''wert'' enthält	|''<elem attr="bewertung">''|
+
+Styling für alle ''<a>''-Elemente, bei denen das Attribut ''href'' mit ''http:%%//%%'' beginnt.
+<code css>
+/* Styling alle a-Elemente wo das Attribut href mit http:// beginnt */
+a[href^="http://"] {
+ text-decoration: none;
+ border-bottom: 2px dotted red;
+ color: red;
+}
+</code>
+
+Styling für alle ''<a>''-Elemente, bei denen das Attribut ''href'' mit ''.pdf'' endet
+<code css>
+/* Styling für a-Elemente wo das Attribut href mit .pdf endet */
+a[href$=".pdf"] {
+  text-decoration: none;
+  color: red;
+  padding: 1px;
+  border: 2px dotted red;
+}
+</code>
+
+Styling für ''<a>''-Elemente, bei denen das Attribut ''href'' die Textfolge ''mydomain'' enthält.
+
+<code css>
+/* 
+Styling für a-Elemente wo im Attribut href die Textfolge mydomain enthalten ist 
+*/
+a[href*=mydomain] { 
+	font-weight: bold; 
+	color: red; 
+}
+</code>
+
+=== Demo ===
+<code html4strict>
+<body>
+    <h1>Attributselektor (Teilwerte)</h1>
+    <p>Weitere Informationen zu diesem Thema finden Sie auf dieser <a href="http://domain.de/">Website</a> wieder.</p>
+    <p>Zusätzlich habe ich Ihnen ein <a href="/dokumente/dokument.pdf">PDF-Dokument</a> mit interessantem Inhalt zusammengestellt.</p>
+    <p>Und natürlich noch ein paar sehr interessante Links:</p>
+    <ul>
+      <li><a href="http://abcdomain.com/report01">Reportage No. 1</a></li>
+      <li><a href="https://domainxyz.com/report02">Kurzer Report (https)</a></li>
+      <li><a href="ftp://mydomain.com/upload">Upload (ftp)</a></li>
+      <li><a href="nntp://news-domain.com/article04">News-Server (nntp)</a></li>
+    </ul>
+  </body>
+</code>
+
+
+

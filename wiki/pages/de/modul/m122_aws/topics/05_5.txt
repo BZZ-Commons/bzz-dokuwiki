@@ -1,0 +1,35 @@
+===== Wildcards und Brace extension =====
+<sup>Internal reference: topics/05-5.md</sup>
+\\
+==== Wildcards ====
+
+<code>
+#   * steht für beliebig viele Zeichen
+ls *.txt
+
+# ? steht für ein beliebiges Zeichen
+ls file?.txt
+</code>
+
+\\
+==== Brace extension ====
+
+<code>
+# ''{ , }'' erzeugt File1.txt, File2.txt und File3.txt:
+touch File{1,2,3}.txt
+
+# ''{ .. }'' erzeugt neun leere Dateien file1.txt bis file9.txt
+touch file{1..9}.txt
+ls file{1..9}.txt
+
+# ''!'' negiert einen Ausdruck
+ls file{!3}.txt
+
+# Auch Verschachtelungen sind möglich:
+# erzeugt ''fileoriginal.txt'', ''fileoriginal.bak'', ''filekopie.txt'' und ''filekopie.bak''
+touch file{orginal{.bak,.txt}, kopie{.bak,.txt}}
+</code>
+
+----
+
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Daniel Garavaldi

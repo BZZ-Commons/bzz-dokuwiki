@@ -1,0 +1,23 @@
+====== LU04b - Expose and label an App in K8s ======
+===== Goals =====
+  -I'm able to query relevant information on pods and services in a K8s cluster.
+  -I'm able to expose a deployment with a K8s service.
+  -I'm able to label and select K8s objects by its labels.
+  -I'm able to remove a service.
+  -I can suggest and implement at least one measure when an error message appears.
+
+===== Basics =====
+  -This [[https://youtu.be/tT9ydkEQerA|video]] demonstrates how to expose by creating a K8s service an app in Minikube running on a AWS EC2 Instance.
+  -This [[https://youtu.be/S1UCmztqs8A|video]] demonstrates how to label, select and remove a K8s service in Minikube running on a AWS EC2 Instance.
+
+===== Exercises =====
+  -Read some [[en:modul:m321_aws:topics:05|background information]] before starting the exercise
+  -Watch again the video cast.
+  -Memorize the procedure. It will become handy for future exercises.
+  -Work on ''05/02_Exercises/01-Exercise.md to 04-Exercise.md'' located in your repository.
+  -If an error occurs, read the message carefully, think of a solution and implement it.
+
+===== Study case =====
+  -Read and REVIEW the introductory articles in ''05/01_Intro/*'' located in your repository.
+  -Work on ''05/02_Exercises/05-Exercise.sh'' located in your repository.
+  -If an error occurs, read the message carefully, think of a solution and implement it.

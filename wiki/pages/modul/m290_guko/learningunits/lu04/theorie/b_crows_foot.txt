@@ -1,0 +1,175 @@
+====== LU04b - Die Crow’s-Foot-Notation ======
+
+{{:modul:m290_guko:learningunits:lu04:theorie:daniel-shapiro-d-vbdk5rqr0-unsplash_converted_medium.jpg?nolink&400|}}
+
+„Crow’s Foot“ bedeutet übersetzt **Krähenfuss**. Der Name kommt vom Symbol für //many// (viele), das wie ein kleiner Krähenfuss aussieht.  {{:modul:m290_guko:learningunits:lu04:theorie:crows_foot.png?nolink&50|}}
+
+Die **Crow’s-Foot-Notation** stellt eine Datenbank so dar, dass man sofort erkennt:  
+  * wie **Entitäten** (Tabellen) miteinander verknüpft sind,  
+  * wie viele Objekte (Instanzen) einer Entität mit wie vielen Objekten einer anderen verbunden sein können (= **Kardinalität**),  
+  * welche **Primärschlüssel (PK)** und **Fremdschlüssel (FK)** definiert sind,  
+  * welche **Attribute** zu einer Tabelle gehören (auf Wunsch auch mit Datentypen).  
+
+Damit kann die Crow’s-Foot-Notation Teil eines **logischen Datenbankschemas** sein und bildet die Brücke von der Analyse (Chen-Notation) zur technischen Umsetzung in SQL.  
+
+
+
+==== Kardinalitäten in der Crow’s-Foot-Notation ====
+Die **Kardinalität** beschreibt die Art der Beziehung zwischen zwei Entitäten. Es gibt drei Haupttypen:  
+
+1. **One-to-One (1:1)**  
+Eine Instanz von Entität A gehört genau zu einer Instanz von Entität B.  
+
+Beispiel:  
+  * Ein:e Mitarbeitende ↔ genau ein Arbeitsplatz  
+  * Jeder Reisepass ↔ genau eine Person  
+
+Darstellung: Linie mit kurzem Strich auf beiden Seiten.
+
+{{:modul:m290_guko:learningunits:lu04:theorie:one-to-one.png?nolink&400|One-to-One Beziehung}}
+//One-to-One (1:1) Beziehung: __Ein__ Auto kann (gleichzeitig) immer nur __einen__ Fahrer, __eine__ Fahrerin haben. __Eine__ Fahrerin, __ein__ Fahrer kann (gleichzeitig) nur immer __Ein__ Auto fahren.//
+
+
+2. **One-to-Many (1:N)**  
+Eine Instanz von Entität A kann mit vielen Instanzen von Entität B verbunden sein.  
+Umgekehrt gehört jede Instanz von B zu genau einer Instanz von A.  
+
+Beispiel:  
+  * Ein Regisseur ↔ viele Filme  
+  * Ein Spotify-Artist ↔ viele Songs  
+  * Eine Klasse ↔ viele Lernende  
+
+Darstellung: Linie mit Strich (= „eins“) auf Seite A und einem „Krähenfuss“ (drei Linien) auf Seite B.
+
+{{:modul:m290_guko:learningunits:lu04:theorie:one-to-many.png?nolink&400|One-to-Many Beziehung}}
+//One-to-Many (1:n) Beziehung: __Ein__ Regisseur, __eine__ Regisseurin kann __mehrere__ Filme drehen. __Ein__ Film wird (in der Regel) nur von __einem__ Regisseur, __einer__ Regisseurin gedreht. //
+
+
+
+3. **Many-to-Many (M:N)**  
+Mehrere Instanzen von Entität A können mit mehreren Instanzen von Entität B verknüpft sein.  
+
+Beispiel:  
+  * Mehrere Schauspieler:innen ↔ spielen in mehreren Filmen  
+  * Viele Lernende ↔ besuchen mehrere Module  
+  * Viele Songs ↔ sind in mehreren Playlists enthalten  
+
+Darstellung: Krähenfüsse auf beiden Seiten der Beziehung.
+
+{{:modul:m290_guko:learningunits:lu04:theorie:many-to-many.png?nolink&400|Many-to-Many Beziehung}}
+//Many-to-Many (n:m) Beziehung: __Ein:e__ Schauspieler:in kann in __mehreren__ Filme spielen. __Ein__ Film kann __mehrere__ Schauspieler:innen haben. //
+
+
+Die folgende Abbildung zeigt alle möglichen Kardinalitäten:  
+
+{{:modul:m290:learningunits:lu03:theorie:crow-notation-chart-4127045304.png?300|Alle möglichen Kardinalitäten in der Crow’s-Foot-Notation}}
+
+
+
+==== Warum Crow’s-Foot-Notation? ====
+Die **Crow’s-Foot-Notation** wird oft in der Praxis eingesetzt, weil sie eine **klare und technische Darstellung** bietet.  
+
+Im Unterschied zur Chen-Notation, die eher **fachlich und abstrakt** ist, dient Crow’s-Foot als **Brücke zur Umsetzung in SQL**:  
+  * Sie zeigt **Entitäten als Tabellen** mit ihren Attributen.  
+  * Sie markiert **Primärschlüssel (PK)** und **Fremdschlüssel (FK)**.  
+  * Sie stellt **Beziehungen und Kardinalitäten** (1:1, 1:n, n:m) deutlich dar. 
+  * Es können auch die Datentypen der Attribute (Spalten) vermerkt werden. 
+
+Damit ist sie die **letzte Station vor der praktischen Umsetzung** mit SQL-Befehlen wie //CREATE TABLE …//.  
+
+Crow’s-Foot wird also vor allem von **Entwickler:innen, Datenbank-Designer:innen und Lernenden** genutzt, die den Schritt von der Analyse (Chen) zur technischen Umsetzung (SQL) machen.  
+
+
+
+==== Beispiel Crow’s-Foot-Notation ====
+Stellen wir uns einen **Online-Buchshop** vor. Wir haben die Entitäten:  
+
+  * **Kunde**  
+  * **Bestellung**  
+  * **Produkt**  
+
+Beziehungen:  
+  * Ein Kunde kann viele Bestellungen aufgeben (1:N).  
+  * Eine Bestellung kann mehrere Produkte enthalten, und ein Produkt kann in vielen Bestellungen vorkommen (M:N).  
+
+{{:modul:m290_guko:learningunits:lu04:theorie:bestellung_crows_feet.drawio_1_.png?direct&600|}}
+
+Darstellung in Crow’s-Foot-Notation:  
+  * Linie zwischen Kunde und Bestellung, mit Strich (1) auf der Kundenseite und Krähenfuss (N) auf der Bestellungsseite.  
+  * Linie zwischen Bestellung und Produkt mit Krähenfuss auf beiden Seiten.  
+
+
+===== Beispiel: Vom Schema zur Tabelle =====
+
+Ausgangspunkt ist ein **Crow’s Foot Schema**:  
+{{:modul:m290_guko:learningunits:lu04:theorie:film_regisseur_crowsfoot.drawio_1_.png?direct&600|}}
+
+  * **Regisseur** (RegisseurID **PK**, Name)  
+  * **Film** (FilmID **PK**, Titel, Jahr, RegisseurID **FK**)  
+  * Beziehung: **1 Regisseur ↔ n Filme**  
+
+
+
+==== Umsetzung in SQL ====
+
+**1. Datenbank anlegen**
+<WRAP center box round 80%>
+<code sql>
+CREATE DATABASE filmdatenbank;
+USE filmdatenbank;
+</code>
+</WRAP>
+
+**2. Tabelle "regisseur" anlegen**
+<WRAP center box round 80%>
+<code sql>
+CREATE TABLE regisseur (
+  regisseur_id INT AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(50) NOT NULL,
+  birthday DATE
+);
+</code>
+</WRAP>
+**3. Tabelle "film" anlegen**
+<WRAP center box round 80%>
+<code sql>
+CREATE TABLE film (
+  film_id INT AUTO_INCREMENT,
+  titel VARCHAR(50) NOT NULL,
+  jahr YEAR,
+  regisseur_id INT,
+  PRIMARY KEY (film_id),
+  FOREIGN KEY (regisseur_id) REFERENCES regisseur(regisseur_id)
+);
+</code>
+</WRAP>
+
+<WRAP center box round 80% info>
+Sowohl das setzen von Foreign Keys (Fremdschlüsseln) in SQL, wie auch das gleichzeitige Abfragen von Daten aus zwei Tabellen (s. unten) werden wir zu einem späteren Zeitpunkt im Modul behandeln. Das dient hier dafür, dass Sie einen Überblick bekommen, wie es gehen würde. Das (also das setzen von Fremdschlüsseln und das programmieren von verschachtelten Abfragen) ist __nicht__ Teil der Leistungsbeurteilung 1.
+</WRAP>
+**4. Daten einfügen**
+
+Fügen Sie mit Webstorm manuell (Tabelle anklicken und dann -> "Edit Data" (Tabellen-Icon)) ein paar Daten in die beiden Tabellen. Sie können zur Inspiration Daten aus der Tabelle //imbd_top_1000// verwenden, welche wir zu einem früheren Zeitpunkt bereits importiert haben.
+
+**5. Daten abfragen**
+
+Mit einem Select können wir beide Tabellen gleichzeitig abfragen:
+<WRAP center box round 80%>
+<code sql>
+SELECT f.titel, f.jahr, r.name AS regisseur
+FROM film f, regisseur r
+WHERE f.regisseur_id = r.regisseur_id;
+
+</code>
+</WRAP>
+
+Was zu einem ähnlichen Ergebnis, wie hier führen könnte:
+<WRAP center box round 80%>
+^ Titel               ^ Jahr ^ Regisseur         ^
+| Inception           | 2010 | Christopher Nolan |
+| Lost in Translation | 2003 | Sofia Coppola     |
+
+</WRAP>
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]]

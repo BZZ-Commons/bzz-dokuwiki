@@ -1,0 +1,4 @@
+==== LU09.A01 Logger implementieren ====
+Entfernen Sie allfällige Verwendungen von ''System.out.println'' und ähnlichen Print-Statements durch korrekte Log-Aufrufe. Nutzen Sie dabei doch direkt die vereinfachte Variante mit Project Lombok.
+
+Ergänzen Sie ihre ''application.properties''-Datei mit den gewünschten Konfigurationen.

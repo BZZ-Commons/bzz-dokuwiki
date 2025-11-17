@@ -1,0 +1,17 @@
+====== LU03.L01 - Ein Bankomat mit dem EVA-Prinzip analysieren ======
+
+**E:**
+  * Leser für die Bankkarte
+  * Tastenfeld, Knöpfe (Buttons)
+  * Touchscreen
+
+**V:**
+  * Hardware (Prozessor, usw)
+  * Bankomatsoftware (PIN überprüfen, Geldtranskation usw.)
+  * Betriebssystem
+
+**A:**
+  * Leser für die Geldausgabe
+  * Bildschirm
+  * Leser für die Bankkarte für die Rückgabe
+  * Drucker für den Beleg

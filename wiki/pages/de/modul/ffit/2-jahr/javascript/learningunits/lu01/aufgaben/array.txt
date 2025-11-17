@@ -1,0 +1,49 @@
+====== LU01.A01 - JavaScript Grundlagen ======
+
+===== Aufgabe 1: Array-Operationen =====
+
+==== Aufgabenstellung ====
+  - Erstelle ein Array namens zahlen, das die Zahlen 10, 20, 30, 40, 50 enthält.
+  - Füge die Zahl 60 am Ende des Arrays hinzu.
+  - Füge die Zahl 5 an den Anfang des Arrays hinzu.
+  - Greife auf das dritte Element im Array zu und gib es in der Konsole aus.
+  - Füge die Zahl 25 an die vierte Position im Array ein (verwende splice()).
+  - Gib das finale Array in der Konsole aus.
+
+===== Aufgabe 2: Komplexe Array-Operationen =====
+
+==== Aufgabenstellung ====
+
+  - Erstelle ein Array namens zahlen, das die Werte 10, 20, 30, 40, 50 enthält.
+  - Füge die Zahl 15 an der richtigen Stelle in das Array ein, sodass es aufsteigend sortiert bleibt.
+  - Entferne die Zahl 30 aus dem Array, ohne die Position anderer Elemente zu verändern.
+  - Erstelle ein neues Array mehrZahlen mit den Werten 60, 70, 80.
+  - Kombiniere die beiden Arrays zu einem neuen Array und gib das Ergebnis in der Konsole aus.
+
+===== Aufgabe 3: Funktionen und Rückgabewerte =====
+
+==== Aufgabenstellung ====
+  - Definiere eine Funktion namens addiere, die zwei Parameter a und b hat und deren Summe zurückgibt.
+  - Definiere eine Funktion subtrahiere, die ebenfalls zwei Parameter a und b hat und die Differenz zurückgibt.
+  - Verwende beide Funktionen, um die folgenden Ausdrücke zu berechnen:
+    * addiere(10, 5)
+    * subtrahiere(10, 5)
+  - Gib die Ergebnisse in der Konsole aus.
+
+===== Aufgabe 4: Arbeiten mit Objekten =====
+
+==== Aufgabenstellung ====
+  - Erstelle ein Objekt auto mit den folgenden Eigenschaften:
+    * marke: "BMW"
+    * modell: "X5"
+    * baujahr: 2020
+  - Füge eine neue Eigenschaft farbe hinzu und setze sie auf "schwarz".
+  - Ändere die Eigenschaft baujahr auf 2021.
+  - Gib das vollständige Objekt in der Konsole aus.
+
+==== Rahmenbedingungen ====
+^ Was ^ Beschreibung ^
+| Produkt: | - |
+| Zeit: | 30 Min. |
+| Sozialform: | Einzel- oder Partnerarbeit |
+| Arbeitsmittel: | Unterrichtsunterlagen, IDE, Browser |

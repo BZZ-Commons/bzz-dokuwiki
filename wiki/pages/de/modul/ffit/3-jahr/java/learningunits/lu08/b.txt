@@ -1,0 +1,85 @@
+====== LU08b - Persistierung ======
+
+Spring Boots nutzt ebenfalls Hibernate, liefert aber einige mächtige Funktionen. 
+
+==== JpaRepository ==== 
+
+JpaRepository erleichtert es sehr, Objekte in oder aus der Datenbank zu laden.
+
+^ Klassisch ^ JpaRepository ^
+| <WRAP>
+<code java>
+import jakarta.persistence.*;
+import java.util.List;
+
+public class PersonPersistor {
+
+    private EntityManagerFactory emf;
+
+    public PersonPersistor() {
+        this.emf = Persistence.createEntityManagerFactory("localPU");
+    }
+
+    public List<Person> findByLastName(String lastName) {
+        EntityManager em = emf.createEntityManager();
+        List<Person> result;
+
+        try {
+            em.getTransaction().begin();
+            TypedQuery<Person> query = em.createQuery(
+                    "SELECT p FROM Person p WHERE p.lastName = :lastName", Person.class);
+            query.setParameter("lastName", lastName);
+            result = query.getResultList();
+            em.getTransaction().commit();
+        } catch (Exception e) {
+            em.getTransaction().rollback();
+            throw e;
+        } finally {
+            em.close();
+        }
+        return result;
+    }
+
+    public void close() {
+        emf.close();
+    }
+}
+</code> 
+</WRAP> | <WRAP>
+<code java>
+import org.springframework.data.jpa.repository.JpaRepository;
+import java.util.List;
+
+public interface PersonRepository extends JpaRepository<Person, Long> { // Long ist der Datentyp des Primärschlüssels
+    List<Person> findByLastName(String lastName);
+}
+</code>
+</WRAP> |
+
+Massgebend ist hierbei die Benennung der Methode (und Argumente).
+
+^ Schlüsselwort                                             ^ Bedeutung                                  ^
+| ''findBy''                                                  | SELECT ... WHERE                           |
+| ''existsBy''                                                | prüft, ob mindestens ein Eintrag existiert |
+| ''countBy''                                                 | zählt Datensätze                           |
+| ''deleteBy''                                                | löscht Datensätze                          |
+| ''And'', ''Or''                                               | Verknüpfung mehrerer Bedingungen           |
+| ''LessThan'', ''GreaterThan'', ''Between'', ''Like'', ''Not'', ''In'' | Vergleichsoperatoren                       |
+| ''OrderBy...Asc/Desc''                                      | Sortierung                                 |
+
+Folgende Methoden sind automatisch dabei, ohne dass sie implementiert werden müssen.
+
+^ Methode                         ^ Beschreibung                             ^
+| ''save(T entity)''                | Speichert oder aktualisiert eine Entität |
+| ''findById(ID id)''               | Holt eine Entität per Primärschlüssel    |
+| ''existsById(ID id)''             | Prüft, ob eine Entität existiert         |
+| ''findAll()''                     | Holt alle Entitäten                      |
+| ''findAllById(Iterable<ID> ids)'' | Holt mehrere per ID                      |
+| ''count()''                       | Anzahl aller Entitäten                   |
+| ''deleteById(ID id)''             | Löscht per Primärschlüssel               |
+| ''delete(T entity)''              | Löscht ein konkretes Objekt              |
+| ''deleteAll()''                   | Löscht alle Einträge                     |
+| ''flush()''                       | Synchronisiert Änderungen mit der DB     |
+| ''saveAll(Iterable<T> entities)'' | Mehrere Datensätze speichern             |
+
+Wobei der Typ ''ID'' den Datentyp akzeptiert, welcher beim Erben von ''JpaRepository'' angegeben wurde.

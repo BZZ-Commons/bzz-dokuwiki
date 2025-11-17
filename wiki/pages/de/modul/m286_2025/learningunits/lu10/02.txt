@@ -1,0 +1,59 @@
+====== LU10b - Windows-Eingabeaufforderung ======
+
+===== Lernziele =====
+  * Erklären können, was ein TERMINAL unter einem Windows-PC ist, wozu es gebraucht wird.
+  * Die EINGABEAUFFORDERUNG im Computer aktivieren/öffnen können.
+  * Die wichtigsten Befehle kennen und ausführen können, um Dateien und Verzeichnisse be- und verarbeiten zu können.
+  * Hilfe zu den Befehlen einholen können.
+
+===== Ausgangslage =====
+Unsere Computer sind alle mit einer sogenannten GUI (Graphical User Interface) ausgestattet. Darunter ist zu verstehen, dass wir alle Befehle, die wir an den Computer schicken, unter Zuhilfenahe der Maus und der Tastatur erledigen können. Die Maus ist bei solchen Oberflächen-Zentrierten Systemen von höchster Wichtigkeit. 
+
+So attraktiv dieser Ansatz ist, bringt er auch Nachteile mit sich:
+  * manche (älteren) Systeme wie SERVER haben oft keine graphische Benutzeroberflächen
+  * In der Programmierung ist die Verwendung der Maus oft zu langsam oder umständlich
+  * Manche Systeme wie GIT (Versionierung von Sourcecode) sind einfacher bedienbar mit KeyboardOnly
+
+===== Was ist ein TERMINAL und wozu wird es gebraucht? =====
+Ein TERMINAL oder auch Computerterminal ist eine Eingabe- und Ausgabeschnittstelle, mit der man direkt Befehle an den Computer schicken kann. Statt auf Symbole zu klicken, tippt man die Befehle in eine dieses TERMINAL ein. So kann man Programme starten, Dateien verwalten oder Systemeinstellungen ändern – oft schneller und genauer als mit der Maus. Terminals werden vor allem von Entwicklern, Administratoren und Technikfans genutzt, die gern die volle Kontrolle haben.
+
+===== Die EINGABEAUFFORDERUNG aktivieren/öffnen =====
+Unter WINDOWS wird dieses Eingabefenster zum direkten Eingeben von Befehlen die **EINGABEAUFFORDERUNG** genannt. Zu finden ist diese durch:
+
+  * START-Taste drücken
+  * Im Suchschlitz nach EINGABEAUFFORDERUNG suchen 
+  * Sobald diese gefunden wird, diese mit der rechten Maustaste, unter der Verwendung von //Als Administrator ausführen// mit ENTER auswählen
+  * Es öffnet sich ein schwarzes Fenster -> Hurra! Sie haben soeben das Computerterminal geöffnet
+
+{{:de:modul:m286_2025:learningunits:lu10:479205_479217_1.png?600|Die Windows Eingabeaufforderung zur direkte Eingaben von Windows-Befehlen}} 
+
+
+===== Die wichtigsten DOS-Befehle =====
+^ DOS/Windows-Befehl                 ^ Beschreibung                                                           |
+| `help [befehl]` oder `[befehl] /?` | Zeigt Hilfe bzw. Beschreibung eines Befehls an.                        |
+| `dir`                              | Listet den Inhalt eines Verzeichnisses auf.                            |
+| `copy` oder `xcopy`                | Kopiert Dateien (`xcopy` auch ganze Ordner).                           |
+| `mkdir` oder `md`                  | Erstellt ein neues Verzeichnis.                                        |
+| `cd` oder `chdir`                  | Wechselt in ein anderes Verzeichnis.                                   |
+| `move`                             | Verschiebt oder benennt Dateien/Ordner um.                             |
+| `del` oder `rmdir`                 | Löscht Dateien (`del`) oder Ordner (`rmdir`).                          |
+| `cd`                               | Zeigt das aktuelle Verzeichnis an.                                     |
+| `rename` oder `ren`                | Bennent Dateien um.                                                    |
+| **Wildcards** (`*` und `?`)        | Funktionieren gleich: `*` = beliebig viele Zeichen, `?` = ein Zeichen. |
+
+===== Lernvideos =====
+
+|Introduction to the command prompt|{{:de:modul:m286_2025:learningunits:lu10:windows_command_line_tutorial_-_1_-_introduction_to_the_command_prompt.mp4|Introduction to the command prompt}}| 
+|Listing files and directories|{{:de:modul:m286_2025:learningunits:lu10:windows_command_line_tutorial_-_2_-_listing_files_and_directories.mp4|listing_files_and_directories}}|
+|Opening files and history|{{:de:modul:m286_2025:learningunits:lu10:windows_command_line_tutorial_-_3_-_opening_files_and_history.mp4|pening files and histor}}|
+|Creating and removing directories|https://www.youtube.com/watch?v=ODk8CoSLofA|
+
+
+
+
+
+
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

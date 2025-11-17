@@ -1,0 +1,20 @@
+====== LU07c - Code coverage with SonarQube ======
+<sup>Internal reference: learningunits/07-3.md</sup>
+\\
+===== Goals =====
+  -I can set up ''SonarQube'' for generating ''code coverage reports''.
+  -I can count out (aufzählen) at least three benefits of ''SonarQube'' as a tool.
+  -If there are any errors, I can analyze the error, suggest and test an initial workaround (troubleshooting).
+
+\\
+===== Basics =====
+This [[en:modul:m324_aws:topics:11|article]] explains, how to install and configure ''SonarQube'' for generating ''code coverage reports''. <sup>Internal reference 06-3.md</sup>
+
+\\
+===== Exercises =====
+  -Work on ''07/02_Exercises/a03'' - according to the learning objectives (see course repository).
+  -If there is an error, read the message carefully, think about a solution and implement it.
+
+----
+
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Daniel Garavaldi

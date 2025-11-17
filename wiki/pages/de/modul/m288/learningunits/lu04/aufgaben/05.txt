@@ -1,0 +1,39 @@
+====== LU04.A05 - Daten aus dem realen Leben in Arrays übersetzten ======
+
+===== Rahmenbedingungen =====
+  * Sozialform: Partnerarbeit
+  * Hilfsmittel: 
+    * Nur Lehrmittel, keine Websuche oder AI
+    * Zeit: 20 Minuten
+  * Erwartetes Resultat: 
+    * Eindimensionales Array wurde im wirklichen Leben erkannt
+    * Mehrdimensionales Array wurde im realen Leben erkannt.
+    * Assoziatives Array (key, value) wurde im realen Leben erkannt.
+
+===== Ausgangslage =====
+Sie haben in den vergangenen Lektionen 3 Varianten von Arrays kennen gelernt (z.B. Zimmer 101, Zimmer 102, ...). 
+
+  * **Eindimensionales Array:** Tabelle mit einer Spalte
+  * **Mehrdimensional Array:** Tabelle mit mehreren Spalten
+  * **Assoziatives Array (Objekt):** Es werden KEYS definiert, jedes erhält ein Value
+
+===== Auftrag =====
+1. Suchen im Schulhaus nach Objekten/Daten, die mittels der drei genannten Typen verwaltet werden können.
+
+**Beispiel:**
+  * Die Zimmer am BZZ können als Array verwaltet werden. 
+  * Jedes Zimmer hat eine Nummer
+  * Jedes Zimmer hat eine maximale Belegung
+  * Jedes Zimmer hat einen Typ (IT, Multimedia, ...)
+
+
+2. Notieren Sie je Arraytyp  mindestens 5 konkrete Beispiele, die Sie mit Ihren Arrays verwalten werden.
+
+
+
+===== Lösungen =====
+[[de:modul:m288:learningunits:lu03:Lösungen:05|LU03.L05 - TBD]]
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

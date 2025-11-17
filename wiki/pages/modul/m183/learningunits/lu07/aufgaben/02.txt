@@ -1,0 +1,39 @@
+====== LU07.A02 - Kontrollfragen zu digitale Zertifikate ======
+
+===== Rahmenbedingungen =====
+  * **Zeitbudget:** 15 Minuten
+  * **Sozialform:** Einzelarbeit/Partnerarbeit
+  * **Hilfsmittel:** 
+    * Dossier //LU07a - Digitale Zertifikate Grundlagen//
+    * Dossier //LU07b - Die Schlüsselverteilung//
+    * Dossier //LU07c - Der Aufbau eines digitalen Zertifikates//
+  * **Erwartetes Ergebnis:** PDF mit den Antworten der Kontrollfragen.
+
+===== Ausgangslage =====
+Sie haben einiges über digitale Zertifikate erfahren. Die nachfolgenden Fragen sollen das Neuerlernte festigen helfen.
+
+===== Arbeitsauftrag =====
+Beantworten bzw. bearbeiten Sie die nachfolgenden Kontrollfragen:
+
+  - //Digitalen Zertifikate ermöglichen ein hohes Mass an Vertraulichkeit, die auch dann noch gegeben ist, wenn das Verschlüsselungsverfahren bekannt ist.// Bestätigen oder widerlegen Sie diese Aussage argumentativ.
+  - Wie wird der Sicherheitsmechanismus genannt, der die Authentizität der Schlüssel bestätigt?  Wie funktioniert dieser?
+  - Erläutern Sie drei konkrete Beispiele aus Ihrem Leben, in denen digitale Zertifikate eine wesentliche Rolle spielen.
+  - Digitale Zertifikate konnten sich nur bedingt durchsetzen. Welche zwei relevanten Ursachen könnten dafür verantwortlich sein? 
+  - Beschreiben Sie die nachfolgenden Begriffe stichwortartig:
+    - X.509: 
+    - PGP:
+    - Certificate Policy:
+    - PKI:
+    - CRL:
+    - WoT:
+  - Vergleichen Sie PKI und WoT miteinander. Nennen zu jedem Begriff je zwei Vor- und Nachteile.
+  - Vergleichen Sie PKI und Wot miteinander. Wie wird die Qualität der Zertifikate gewährleistet. 
+
+
+
+===== Solution =====
+[[modul:m183:learningunits:lu07:loesungen:02|Lösung LU07.L02]]
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

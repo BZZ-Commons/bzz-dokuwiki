@@ -1,0 +1,66 @@
+====== LU05d - Übertragungsmedien ======
+
+===== Was ist ein Übertragungsmedium? =====
+
+Das Übertragungsmedium (Bestandteil in der Kommunikationstechnik) ist der Weg, auf dem die zu übertragenden Signale (Daten, Nachrichten) vom Sender zum Empfänger übertragen werden. Der gesamte Übertragungsweg besteht in der Regel aus mehreren aufeinanderfolgenden Übertragungsabschnitten. Diese Abschnitte können aus verschiedenen Übertragungsmedien zusammengesetzt sein.
+
+{{:modul:m286:learningunits:lu07:umedien_01.png?600|}}
+
+==== Drahtweg (kabelgebunden) ====
+Bei Drahtwegen wird das Informationssignal als nieder- oder hochfrequenter elektrischer Wechselstrom übertragen. Das Übertragungsmedium Draht ist ein Kabel oder eine Leitung deren Basismaterial Metall ist. Das Metall ist meist durch einen Kunststoff isoliert, manchmal sogar zusätzlich geschirmt. Leitungen und Kabel gelten als die einfachste Verbindung zwischen zwei Kommunikationsteilnehmern.
+→ Stichworte: Leitungen, Kabel, Kupferkabel, Twisted-Pair-Kabel
+
+==== Funkweg (drahtlos) ====
+Bei Funkwegen wird das Informationssignal als hochfrequente elektromagnetische Welle übertragen. Der Funkweg ist der freie Raum, der auch als Luftschnittstelle bezeichnet wird. Über Antennen an der Sende- und Empfangsstationen werden die Signale über den freien Raum übertragen. Durch Hindernisse, insbesondere metallische Gegenstände, werden die Funksignale gedämpft und abgelenkt. Das verringert die Reichweite der Funksignale. Funkwege sind gegenüber Drahtwegen meistens langsamer und instabiler.
+→ Stichworte: Funktechnik, Antennen, Funkwellen, Trägerfrequenz
+
+==== Lichtweg (Lichtwellenleiter) ====
+Bei Lichtwegen wird das Informationssignal als elektromagnetische Welle im Frequenzbereich des sichtbaren Lichts innerhalb eines lichtleitenden Materials übertragen. Zum Beispiel aus Glas-, Quarz- oder Kunststofffasern, die man als Lichtwellenleiter (LWL) bezeichnet. Durch Lichtwellenleiter können optische Signale ohne Verstärker große Entfernungen überbrücken. Trotz weiter Strecken ist eine hohe Bandbreite möglich. Das macht Lichtwellenleiter zum Übertragungsmedium der Gegenwart und Zukunft.
+→ Stichworte: Lichtwellenleiter (LWL), Glasfaserkabel, LWL-Komponenten
+
+==== Besonderheit: Infrarot ====
+Eine Besonderheit ist Infrarot (zum Beispiel bei Fernbedienungen von Fernsehgeräten). Die Farbe Infrarot ist für das menschliche Auge unsichtbar. Das infrarote Signal wird über den freien Raum übertragen. Somit vereint diese Technik zwei Übertragungsmedien (Funk und Licht) auf einem Weg, den freien Raum. Der Weg ist allerdings nur sehr kurz und darf keine Hindernisse zwischen Sender und Empfänger aufweisen.
+
+===== Störfaktoren =====
+
+==== Kupferleitungen ====
+Kupferleitungen übertragen Daten als elektrische Signale. Diese sind anfällig für verschiedene Einflüsse, die die Signalqualität und damit die Bandbreite einschränken können:
+
+  * **Elektromagnetische Interferenzen:** Kupferkabel können Störungen von elektrischen Geräten oder benachbarten Stromleitungen aufnehmen. Diese Störfelder verfälschen das Signal und führen zu Übertragungsfehlern.  
+  * **Dämpfung über die Länge:** Je länger ein Kupferkabel ist, desto mehr wird das Signal abgeschwächt. Deshalb sind Kupferleitungen in der Praxis meist auf eine maximale Länge von 100 Metern begrenzt.  
+  * **Qualität des Kabels und der Abschirmung:** Die Güte des Kabelmaterials, die Stärke des Leiters und die Qualität der Abschirmung spielen eine grosse Rolle. Schlechte Kabel erhöhen die Störanfälligkeit und verringern die Bandbreite.  
+  * **Verbindungsstellen und Steckverbinder:** Jeder Übergang, beispielsweise bei einer Steckverbindung, erzeugt zusätzliche Widerstände und Reflexionen. Dadurch verschlechtert sich die Signalqualität.  
+  * **Umgebungsbedingungen:** Auch Hitze, Feuchtigkeit oder Korrosion wirken sich negativ auf Kupferleitungen aus. Sie verschlechtern die Leitfähigkeit und können auf Dauer zu Defekten führen.  
+
+
+
+==== Glasfaser ====
+Glasfasern übertragen Daten mithilfe von Lichtimpulsen. Diese Übertragung ist grundsätzlich sehr störungsarm, dennoch gibt es Faktoren, die die Signalqualität beeinträchtigen können:
+
+  * **Biegung des Kabels:** Glasfasern dürfen nicht zu stark gebogen oder geknickt werden. Dabei tritt sogenannter Biegeverlust auf: Ein Teil des Lichts verlässt den Faserkern, und die Signalstärke nimmt ab.  
+  * **Einfügedämpfung durch Steckverbindungen:** Jeder Übergang zwischen zwei Fasern oder zwischen Faser und Gerät verursacht kleine Verluste. Werden die Verbindungen nicht exakt hergestellt, steigt die Dämpfung.  
+  * **Verschmutzung der Steckverbindungen:** Schon kleinste Staubpartikel oder Schmutz auf den Endflächen der Glasfaser können das Licht streuen oder blockieren. Dadurch sinkt die Signalqualität deutlich.  
+  * **Materialfehler und Mikrorisse:** Unregelmässigkeiten im Glas oder winzige Risse verursachen Streuverluste und verschlechtern das Signal, insbesondere über längere Strecken.  
+  * **Temperatur- und mechanische Belastungen:** Extreme Hitze, starke Zugkräfte oder Druck können die Faser beschädigen oder ihre Übertragungseigenschaften beeinträchtigen.  
+
+
+
+==== Funktnetzwerk ====
+
+=== Andere, benachbarte Funknetze ===
+Elektromagnetische Wellen (Funkwellen) können sich gegenseitig «überlagern» und somit eine Übertragung verunmöglichen. Man spricht in diesem Fall von Interferenzen. Dies passiert v. a. dann, wenn die Funkwellen
+im gleichen Frequenzbereich arbeiten. Aus diesem Grund benutzen Funknetzwerke unterschiedliche Frequenzbänder. Für den Betrieb von WLANs gemäss IEEE 802.11 stehen die sog. ISM-Frequenzbänder (Industrial, Scientific, Medical) zur Verfügung. Diese Frequenzbänder sind international normiert und stehen jedermann frei zur Verfügung. Für WLANs wurden bestimmte Frequenzen im 2.4-GHz- und im 5-GHz-Band reserviert. Das 2.4-GHz-Band
+ist mittlerweile international einheitlich geregelt. Die Aufteilung des 5-GHz-Bands hingegen kann von Land zu Land stark variieren.
+
+{{:modul:m117:learningunits:lu04:ism.jpg?300|}}
+
+=== Hindernisse im Übertragungsweg zwischen Sender und Empfänger ===
+
+Die Sendeleistung von WLAN-Komponenten ist relativ gering und beträgt im 2.4-GHz-Bereich ~100 mW, im 5-GHz-Bereich max. 1000 mW. Da auch Funkwellen einer Dämpfung unterworfen sind, ist die Übertragungsdistanz von WLAN-Komponenten wegen der kleinen Sendeleistung begrenzt. Je mehr Hindernisse wie z. B. Mauern, Böden oder ähnlichem die Funkwellen passieren bzw. durchdringen müssen, desto schwächer wird das Funksignal.
+Das bedeutet, dass die mögliche Übertragungsdistanz stark abnimmt. Bestimmte Materialien mit hoher Dichte wie z . B. Backsteine oder Stahlbeton können unter Umständen von den Funkwellen gar nicht durchdrungen werden. Deshalb ist die Realisation grösserer WLANs ohne vorherige Analyse der örtlichen Gegebenheiten wenig erfolgversprechend. Bei kabelgebundenen Netzwerken ist von Anfang an klar, bis wo das Netzwerk verfügbar
+sein wird. Die genaue Abdeckung (Verfügbarkeit) eines Funknetzwerks ist meist erst nach dessen Installation ersichtlich.
+
+{{:modul:m117:learningunits:lu04:wlandaempfung2.jpg?500|}}
+
+{{:modul:m117:learningunits:lu04:wlandaempfung3.jpg?500|}}
+

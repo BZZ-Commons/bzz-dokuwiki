@@ -1,0 +1,52 @@
+====== LU05.A02 - for-loop & arrays ======
+
+===== Rahmenbedingungen =====
+  * Sozialform: individual
+  * Hilfsmittel: 
+    * Nur Lehrmittel, keine Websuche oder AI
+    * [[https://www.w3schools.com/js/js_loop_for.asp| W3Schools: for-loop in JavaScript]]
+  * Zeit: 30 Minutes
+  * Erwartetes Resultat: 
+    * Das gegebene Array wurde mittels einer for-Schleife iteriert.
+    * Zeilenberechnungen (Positionssumme, Summe, Mehrwertsteuer)  und Endbetrag werden gemäss Vorgabe in der Konsole ausgegeben.
+
+===== Ausgangslage =====
+Wenn es um Datensammlungen oder Listen wir Arrays geht, sind //Schleifen// sehr praktische Helfer. Sie ermöglichen eine dynamische, sprich der Listenlänge angepasste, Bearbeitung von Listen.
+
+Die nachfolgende Bestellung von unserem letzten Teammeeting beispielsweise wäre ein solches Array:
+
+  const bestellung = [
+    ["Kaffee", 3.5, 2], 
+    ["Sandwich", 5.9, 1],
+    ["Kuchen", 4.2, 2],
+    ["Omelette Natur", 8.5, 1],
+    ["Omelette Emmentaler", 9.0, 1],
+    ["Wasser", 2.0, 4],
+    ["Gipfeli Plain", 1.5, 6],
+    ["Gipfeli Rustico", 2.0, 4],
+    ["Saft", 3.8, 2]
+  ];
+  // 1. Spalte: Produkt
+  // 2. Spalte: Stückpreis
+  // 3. Spalte: Bestellmenge
+
+===== Auftrag =====
+  - Geben Sie den Inhalt des Arrays mittels einer for-Schleife auf der Konsole aus. 
+  - Berechnen Sie die Rechnungssumme (Bestellmenge * Stückpreis) und geben Sie diese als separate Zeile am Ende aus
+  - Berechnen Sie auf die Gesamtbetrag die entsprechende Mehrwertsteuer und geben diese auch separat aus.
+  - Der abschliessende Rechnungsbetrag ist dann: Rechnungssumme + Mwst.
+  - Abschliessend erstellen Sie einen Fileheader mit den relevanten Informationen zu Ihrem Script und ergänzen Ihren Code durch sinnvolle Incode-Kommenatare.
+
+===== Hinweise =====
+  * Eine normierte Ausgabe der Beträge erhalten Sie mit der Funktion toFixed(n). Beispiel: sum.toFixed(2) -> liefern die Summe auf 2 Kommastellen.
+
+Das Ergebnis sollte wie folgt aussehen:
+
+{{:de:modul:m288:learningunits:lu05:aufgaben:lu05.l02_2.jpg?1000|}}
+
+===== Lösungen =====
+[[de:modul:m288:learningunits:lu05:loesungen:02|LU05.L02]]
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

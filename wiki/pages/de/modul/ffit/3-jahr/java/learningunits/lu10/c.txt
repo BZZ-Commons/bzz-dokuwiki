@@ -1,0 +1,33 @@
+====== LU10c - Transaktionen ======
+
+Bei Fehler innerhalb von gesammelten Änderungen macht es in der Regel Sinn die bereits gemachten Änderungen wieder rückgängig zu machen. Dies geschieht bei SQL mittels Transactions.
+
+<code sql>
+BEGIN TRANSACTION;
+
+UPDATE Persons
+SET Balance = Balance - 100
+WHERE PersonId = 'A';
+
+UPDATE Persons
+SET Balance = Balance + 100
+WHERE PersonId = 'B';
+
+COMMIT;
+</code>
+
+Bei ''COMMIT;'' werden die gemachten Änderungen tatsächlich auf die Datenbank geschrieben, bei ''ROLLBACK;'' werden die Änderungen zurückgesetzt.
+
+Bei SpringBoot gibt es dazu die Annotation ''org.springframework.transaction.annotation.Transactional''. Hat eine Methode diese Annotation und es passiert eine ''java.lang.RuntimeException'' während der Ausführung, wird automatisch ein Rollback aller SQL-Statements seit Beginn der Methode gemacht.
+
+==== Logging ====
+
+Achten Sie bei Ihrem Logging darauf, dass die Logeinträge auch im Fall eines Rollbacks Sinn ergeben.
+
+<code java>
+for (AccountUpdate update : accounts) {
+    ...
+    log.debug("Prepared account update: number={} project={}", accountNumber, projectName);
+}
+log.info("All accounts updates processed successfully for project {}", projectName);
+</code> 

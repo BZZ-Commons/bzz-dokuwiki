@@ -1,0 +1,17 @@
+====== LU06a - Webtoken ======
+
+==== Übersicht ====
+
+Unser bisheriger REST-API-Endpunkt ''/books'' ist öffentlich und kann entsprechend von allen aufgerufen werden. Anstatt bei jedem API-Aufruf den Benutzernamen und das Passwort mitzuschicken, wird in der Regel beim Login ein Token erstellt und zurückgeschickt. Der Benutzer kann dieses Token für alle weiteren Aufrufe verwenden bis die festgelegte Gültigkeitsdauer abgelaufen ist.
+
+Die ganze Erklärung finden Sie auf: https://stytch.com/blog/what-is-a-json-web-token/
+
+{{:de:modul:ffit:3-jahr:java:learningunits:lu06:graphic_auth.png?800|}}
+
+==== JSON Web Token (JWT) ====
+
+Ein JWT besteht aus dem Hash des Headers, dem Hash des Payloads und dem Hash der signierten vorherigen Teilen.
+
+Mit der Signatur wird sichergestellt, dass sich kein Benutzer selber ein JWT erstellen und mitschicken kann.
+
+{{:de:modul:ffit:3-jahr:java:learningunits:lu06:graphic_jwt.png?800|}}

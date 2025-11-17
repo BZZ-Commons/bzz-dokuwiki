@@ -1,0 +1,64 @@
+===== Monolithic vs Microservice =====
+The choice between monolithic and microservice architecture significantly impacts the design, development, and maintenance of software applications. Here’s a detailed comparison:
+\\
+\\
+==== Monolithic Architecture ====
+A monolithic architecture is a single, unified software application where all the components and functionalities are tightly coupled and run as a single service.
+\\
+{{:en:modul:m321_aws:topics:monolithic-1.png?600|Fig-01: Monolithic Architecture}}
+\\
+\\
+=== Structure ===
+  * All components (e.g., UI, business logic, data access) are part of one large codebase.
+  * Typically, it's deployed as a single unit (e.g., a single executable or a single container).
+
+=== Advantages ===
+  * **Simplicity**: Easier to develop, test, and deploy initially.
+  * **Performance**: Often more efficient in terms of resource usage and latency due to fewer inter-process communications.
+  * **Debugging**: Easier to trace and debug due to a single codebase and execution context.
+
+=== Disadvantages ===
+  * **Scalability**: Scaling requires replicating the entire application, which can be inefficient.
+  * **Flexibility**: Difficult to adopt new technologies incrementally.
+  * **Maintenance**: As the codebase grows, it becomes harder to manage, understand, and modify.
+  * **Deployment**: Any change, even a minor one, requires redeploying the entire application.
+
+=== Use Cases ===
+  * Best for simpler, smaller applications with a clear and stable scope.
+  * Easier for teams with less experience in distributed systems.
+
+\\
+\\
+==== Microservice Architecture ====
+A microservice architecture structures an application as a collection of loosely coupled, independently deployable services.
+\\
+{{:en:modul:m321_aws:topics:microservice-1.png?600|Fig-02: Microservice Architecture}}
+\\
+\\
+=== Structure ===
+  * Each service encapsulates a specific business capability, has its own codebase, and can be developed, deployed, and scaled independently.
+  * Services communicate with each other using APIs, often over HTTP/REST or messaging queues.
+
+=== Advantages ===
+  * **Scalability**: Individual services can be scaled independently based on demand.
+  * **Flexibility**: Different services can use different technologies and programming languages.
+  * **Resilience**: Failure in one service doesn’t necessarily bring down the entire system.
+  * **Deployment**: Continuous deployment and integration are more feasible; changes can be deployed without affecting the entire system.
+
+=== Disadvantages ===
+  * **Complexity**: More complex to design and manage due to the distributed nature.
+  * **Latency**: Communication between services adds overhead and potential latency.
+  * **Testing**: End-to-end testing can be challenging.
+  * **Data Management**: Managing data consistency across services can be difficult.
+
+=== Use Cases ===
+  * Ideal for large, complex applications that require scalability and flexibility.
+  * Suited for applications where different parts need to evolve independently.
+  * Requires a mature DevOps culture and infrastructure for continuous deployment and monitoring.
+
+=== Summary ===
+  * **Monolithic Architecture**: Simpler and more straightforward but can become unwieldy and difficult to maintain as it grows.
+  * **Microservice Architecture**: Offers greater scalability and flexibility but comes with increased complexity in design, deployment, and management.
+
+
+

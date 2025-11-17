@@ -1,0 +1,51 @@
+====== LU10a - MacOS/Linux-Eingabeaufforderung ======
+
+===== Lernziele =====
+  * Erklären können, was ein //TERMINAL// unter einem MacOS-PC ist und wozu es gebraucht wird.
+  * Das //TERMINAL// im Computer aktivieren/öffnen können.
+  * Die wichtigsten Befehle kennen und ausführen können, um Dateien und Verzeichnisse be- und verarbeiten zu können.
+  * Hilfe zu den Befehlen einholen können.
+
+===== Ausgangslage =====
+Unsere Computer sind alle mit einer sogenannten GUI (Graphical User Interface) ausgestattet. Darunter ist zu verstehen, dass wir alle Befehle, die wir an den Computer schicken, unter Zuhilfenahe der Maus und der Tastatur erledigen können. Die Maus ist bei solchen Oberflächen-Zentrierten Systemen von höchster Wichtigkeit. 
+
+So attraktiv dieser Ansatz ist, bringt er auch Nachteile mit sich:
+  * manche (älteren) Systeme wie SERVER haben oft keine graphische Benutzeroberflächen
+  * In der Programmierung ist die Verwendung der Maus oft zu langsam oder umständlich
+  * Manche Systeme wie GIT (Versionierung von Sourcecode) sind einfacher bedienbar mit KeyboardOnly
+
+===== Was ist ein TERMINAL und wozu wird es gebraucht? =====
+Ein //TERMINAL// oder auch Computerterminal ist eine Eingabe- und Ausgabeschnittstelle, mit der man direkt Befehle an den Computer schicken kann. Statt auf Symbole zu klicken, tippt man die Befehle in eine dieses //TERMINAL// ein. So kann man Programme starten, Dateien verwalten oder Systemeinstellungen ändern – oft schneller und genauer als mit der Maus. Terminals werden vor allem von Entwicklern, Administratoren und Technikfans genutzt, die gern die volle Kontrolle haben.
+
+===== Das Terminal aktivieren/öffnen =====
+Unter MacOS wird dieses Eingabefenster zum direkten Eingeben von Befehlen die //TERMINAL// genannt. Zu finden ist dieser durch:
+
+  * Such-Tastenkombination //CMD + Space// drücken
+  * Im Suchschlitz nach //TERMINAL// suchen  + mit //ENTER// bestätigen
+  * Alternativ auch zu finden unter: Dienstprogramme / Utilities
+  * Es öffnet sich ein schwarzes Fenster -> Hurra! Sie haben soeben das Computerterminal geöffnet!
+
+|How to use and open terminalfeatured|{{:de:modul:m286_2025:learningunits:lu10:how-to-use-and-open-terminal-featured.png?800|How to use and open terminalfeatured}}|
+|Find MacOS Terminal                 |{{:de:modul:m286_2025:learningunits:lu10:find-macos-terminal.png?800|Find MacOS Terminal}}|
+
+===== Die wichtigsten SHELL-Befehle =====
+Die Befehle sind in der Programmiersprache //Shell// geschrieben und sind identisch mit denen des Betriebssystems //LINUX// (MacOS ist seit geraumer Zeit ein Linux-System mit einer Fancy-Obnerfläche). Die wichtigsten Shell-Befehle finden Sie nachfolgend.
+
+^ Linux-Befehl   ^ Syntax / Beispiel                                    ^ Beschreibung                                                       ^
+| man            | `man ls`                                             | Zeigt die Handbuchseite eines Befehls an.                          |
+| ls             | `ls -l /home`                                        | Listet den Inhalt eines Verzeichnisses auf (optional mit Details). |
+| cp             | `cp quelle ziel` → `cp datei.txt /home/user/backup/` | Kopiert Dateien oder Verzeichnisse.                                |
+| mkdir          | `mkdir projekte`                                     | Erstellt ein neues Verzeichnis.                                    |
+| cd             | `cd /home/user/projekte`                             | Wechselt in ein anderes Verzeichnis.                               |
+| mv             | `mv test.txt archiv/` oder `mv test.txt fertig.txt`  | Verschiebt oder benennt Dateien/Ordner um.                         |
+| rm             | `rm test.txt` oder `rm -r alter_ordner`              | Löscht Dateien (`rm`) oder ganze Ordner (`-r`).                    |
+| pwd            | `pwd`                                                | Zeigt den vollständigen Pfad des aktuellen Verzeichnisses an.      |
+| rename         | `rename 's/.txt/.bak/' *.txt`                        | Bennent mehrere Dateien nach einem Muster um.                      |
+| **Wildcards**    | `ls *.txt` oder `rm test?`                         | Platzhalter: `*` = beliebig viele Zeichen, `?` = ein Zeichen.      |
+
+===== Lernvideos =====
+|Absolute beginner guide to the MacOS terminal|{{:de:modul:m286_2025:learningunits:lu10:absolute_beginner_guide_to_the_mac_os_terminal_2.mp4|Absolute beginner guide to the MacOS terminal}}|
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

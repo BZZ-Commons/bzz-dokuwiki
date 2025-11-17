@@ -1,0 +1,59 @@
+===== LU02c - IMDB-Daten in MySQL importieren =====
+
+In dieser Aufgabe lernen Sie, wie Sie mit **WebStorm** und dem **Database-Plugin** eine Datenbank erstellen und Daten importieren.  
+Wir verwenden dazu die **IMDB-Filmdaten (Top 1000 Filme)** von Kaggle. Diese Daten dienen uns als Übungsgrundlage für SQL-Abfragen.
+
+==== 0. Daten herunterladen ====
+Laden Sie die CSV-Datei hier herunter:  
+{{ :modul:m290_guko:learningunits:lu02:aufgaben:imdb_top_1000.csv |IMBD Top 1000 Filmdaten}}
+
+Diese Datei werden wir gleich in MySQL importieren.
+
+
+==== 1. Verbindung zu MySQL überprüfen ====
+Falls Sie die Verbindung in der vorherigen Aufgabe erfolgreich erstellt haben, sollte im **Database-Tab** in WebStorm eine Verbindung sichtbar sein (z.B. //m290_mysql@localhost//).
+
+{{:modul:m290_guko:learningunits:lu02:aufgaben:screenshot_2025-08-24_at_18.54.36.png?direct&600|}}
+
+
+==== 2. Neues Schema erstellen ====
+Ein Schema ist gleichbedeutend mit einer **neuen Datenbank**.  
+Gehen Sie so vor:
+
+  * Rechtsklick auf die Verbindung (m290_mysql@localhost)  
+  * **New → Schema** auswählen  
+
+
+==== 3. Schema benennen ====
+Im neuen Fenster geben Sie einen Namen für Ihre Datenbank ein, z.B.:  
+`my_imdb`  
+
+⚠️ **Wichtig:** keine Sonderzeichen oder Umlaute im Namen verwenden.  
+
+Danach auf **OK** klicken. Das Schema wird nun in MySQL erstellt.  
+{{:modul:m290_guko:learningunits:lu02:aufgaben:screenshot_44_.png?direct&600| Neues Schema in Webstorm}}
+
+==== 4. CSV-Datei importieren ====
+Nun importieren wir die heruntergeladene CSV-Datei:
+
+  * Rechtsklick auf das erstellte Schema (z.B. `my_imdb`)  
+  * **Import/Export → Import Data from File(s)...** wählen  
+
+{{:modul:m290_guko:learningunits:lu02:aufgaben:screenshot_39_.png?direct&600|Daten aus CSV in Datenbank importieren}}
+
+==== 5. Datenquelle wählen ====
+Wählen Sie die heruntergeladene CSV-Datei aus.  
+WebStorm schlägt automatisch Datentypen für die Spalten vor → diese Vorschläge können Sie übernehmen.  
+
+{{:modul:m290_guko:learningunits:lu02:aufgaben:screenshot_41_.png?direct&600|Datentypen akzeptieren}}
+
+
+==== 6. Daten überprüfen ====
+Nach erfolgreichem Import sind die Daten nun in Ihrer Datenbank.  
+Sie können nun die Tabelle öffnen und die Daten inspizieren ("tables" der Datenbank aufklappen) und die Spalten und Werte inspizieren. Mit Klick aufs Tabellen-Icon (Edit Data) öffnet sich die ganze Tabelle in Webstorm. 🎉  
+
+
+==== 7. Weiterarbeiten ====
+Nun haben Sie Ihre eigene IMDB-Datenbank!  
+Als nächstes werden wir mit **SQL-SELECT-Abfragen** Daten aus dieser Datenbank abfragen. Lesen Sie dazu den Theorieblock "Einführung SQL" und "Daten mit SQL abfragen" durch. 
+

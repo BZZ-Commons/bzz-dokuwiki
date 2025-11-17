@@ -1,0 +1,16 @@
+====== LU04e - Running K8s services by declaration ======
+===== Goals =====
+  -I'm able to declare an action in K8s with a YAML-file.
+  -I'm to export the YAML configuration from a running K8s deployment.
+  -I can suggest and implement at least one measure when an error message appears.
+
+===== Basics =====
+In [[en:modul:m321_aws:topics:08|this article,]] you will learn the advantages when defining actions in K8s by declarations.
+
+===== Exercises =====
+  -Work on ''08/02_Exercises/01/Exercise.md to 04/Exercise.md'' located in your repository.
+  -If an error occurs, read the message carefully, think of a solution and implement it.
+
+----  
+
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Daniel Garavaldi

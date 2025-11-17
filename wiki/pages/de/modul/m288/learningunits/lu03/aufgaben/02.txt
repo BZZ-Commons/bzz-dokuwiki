@@ -1,0 +1,38 @@
+====== LU03.A02 - if-else if-else ======
+
+
+===== Rahmenbedingungen =====
+  * Sozialform: individual
+  * Hilfsmittel: 
+    * Nur Lehrmittel, keine Websuche oder AI
+    * [[https://www.w3schools.com/js/js_conditionals.asp | W3School- JavaScript Conditions]] 
+    * [[https://www.w3schools.com/js/js_operators.asp | W3School- JavaScript Operators]]
+  * Zeit: 20 Minutes
+  * Erwartetes Resultat: Ein funktionsfähiges Script, das die unten genannten Bedingungen erfüllt.
+
+===== Ausgangslage =====
+If-Statements werden häufig ein Zugangsprüfungen verwendet. Wenn man berechtigt ist etwas zu tun, dann darf man das auch, und ansonsten nicht. Ein solche Beispiel sind Kinotickets, die häufig altersabhängig sind. 
+
+===== Auftrag A =====
+Erstellen Sie ein JavaScript-Programm, das den Preis eines Kinotickets basierend auf dem Alter einer Person berechnet. Die Festlegung der benötigten Variablen ist ebenfalls Teil des Auftrags.
+
+Die Regeln sind:
+  * Kinder unter 12 Jahren zahlen 8,-
+  * Jugendliche zwischen 12 und 17 Jahren (einschliesslich) zahlen 12,-
+  * Erwachsene zwischen 18 und 64 Jahren (einschliesslich) zahlen 16,-
+  * Senioren ab 65 Jahren zahlen 6,-
+
+Am Ende solle das Alter und der Ticketspreis ausgegeben werden: //Für ??-jähige Personen ist der Kino-Ticketpreis ?? CHF.//
+
+===== Auftrag B =====
+  * Gestalten Sie die Altersfestlegung für die Berechnung der Tickets dynamisch, indem Sie diese beim indem Sie das Alter beim Scriptaufruf mitgegeben: //node myScript 14//.
+  * Damit das funktioniert muss der mitgegebene Alterswert aus der JavaScript Entwicklungsumgebung ausgelesen werdem: Die Nachfolgende Zeile liest den eingegebenen Wert in eine Variable //eingabe//
+
+  eingabe = process.argv[2];
+ 
+===== Lösungen =====
+[[de:modul:m288:learningunits:lu03:loesungen:02|LU03.L2]]
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

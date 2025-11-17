@@ -1,0 +1,49 @@
+====== LU02.A01 - Keywords ======
+
+===== Rahmenbedingungen =====
+  * Sozialform: individual
+  * Hilfsmittel: Nur Lehrmittel, keine Websuche oder AI
+  * Zeit: 20 Minutes
+  * Erwartetes Resultat: Der Effekt der Codebeispiele wurde earbeitet und als Code kommentiert in VS-Code abgespeichert.
+
+
+===== Ausgangslage =====
+Sie habe drei Arten kennen gelernt, wie Variable in JavaScript deklariert werden können: var, const, let
+
+===== Auftrag =====
+  - Analysieren Sie die nachfolgenden Codebeispiele und versuchen Sie abzuschäutzen, was im Terminal ausgegeben wird.  
+  - Überprüfen Sie Ihre Lösung mit der tatsächlichen Ausgabe. 
+  - Erklären Sie das Verhalten als Incode-Kommentar
+  - Hinweis: Vervollständigen Sie abschliessend Ihren Code durch die Vorgaben gemäss Unterrichtsinput //How to Comment//.
+
+==== Teilauftrag A ====
+  function testVar() {
+    console.log(x);
+    var x = 10;
+    console.log(x);
+  }
+  testVar();
+  
+==== Teilauftrag B ====
+  function testLet() {
+    if (true) {
+      let y = 20;
+      console.log("Inside block:", y);
+    }
+    console.log("Outside block:", y); 
+  }
+  testLet();
+  
+==== Teilauftrag C ====
+
+  const user = { name: "Anna" };
+  user.name = "Max";
+  console.log(user);
+  user = { name: "Lena" };
+  console.log(user);
+
+===== Lösungen =====
+[[de:modul:m288:learningunits:lu02:Lösungen:01|LU02.A01]]
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

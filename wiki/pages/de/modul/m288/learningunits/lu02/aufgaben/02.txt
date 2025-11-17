@@ -1,0 +1,39 @@
+====== LU02.A02 - Variablen ======
+
+===== Rahmenbedingungen =====
+  * Sozialform: Individual
+  * Hilfsmittel: Nur Lehrmittel, keine Websuche oder AI
+  * Zeit: 15 Minutes
+  * Erwartetes Resultat: 3 Scripte (A, B, C), mit Variablen gemäss Anforderungen der jeweiligen Aufgabenstellung.
+
+===== Auftrag =====
+  
+==== Teilauftrag A ====
+  * Deklarieren Sie eine Variable //name// mit //let// und 
+  * weisen dieser Ihren Namen zu. 
+  * Verändern Sie danach den Wert und geben den Inhalt auf //console.log// aus.
+  
+==== Teilauftrag B ====
+  * Erstellen Sie eine Konstante //person//, die ein Objekt mit den Eigenschaften //firstName// und //age// enthält. 
+  * Ändern Sie den Wert von //age// und 
+  * versuchen, die Konstante komplett neu zuzuweisen. 
+  * Notieren Sie Ihre Beobachtung als Inline-Code
+  
+==== Teilauftrag C ====
+Analysieren Sie den folgenden Code. Halten Sie als Incode-Kommentar ihre Beobachtungen fest.
+
+  function testScope() {
+    if (true) {
+      var x = 10;
+      let y = 20;
+    }
+    console.log(x);
+    console.log(y);  
+  }
+  testScope();
+
+===== Lösungen =====
+[[de:modul:m288:learningunits:lu02:Lösungen:02|LU02.L02]]
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

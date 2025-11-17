@@ -1,0 +1,19 @@
+====== LU03d - Fallbeispiel - IP-Command ======
+<sup>Internal reference: learningunits/03-4.md</sup>
+\\
+===== Ziele =====
+  -Ich kann meine EC2 Instanz auf AWS starten.
+  -Ich kann den Nutzen/Zweck des ''ip''-Kommandos in eigenen Worten beschreiben.
+  -Ich kann das ''ip''-Kommando installieren und anwenden.
+  -Ich kann Shell-Scripts von meinem Host auf meine EC2-Instanz kopieren.
+  -Ich kann Shell-Scripts auf meiner EC2-Instanz editieren und ausführen/testen.
+  -Bei Fehlern kann ich den Fehler analysieren, eine erste Massnahme vorschlagen und diese ausprobieren (Troubleshooting).
+
+\\
+===== Übungen =====
+Bearbeiten Sie passend zum Thema folgende Übungen ''02/02_Exercises/03_*,04_*,05_*'' aus dem Kurs-Repository
+und testen Sie die Übungen in Ihrer AWS EC2 Instanz.
+
+----
+
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Daniel Garavaldi

@@ -1,0 +1,104 @@
+====== LU07 – A01 Auftrag: Eigene Lieblingsfilm-Tabelle erstellen ======
+
+{{:modul:m290_guko:learningunits:lu07:aufgaben:tyson-moultrie-bqthognho08-unsplash_resized.jpg?nolink&600| Foto mit Filmpostern an einer Wand. }}
+//Foto von [[https://unsplash.com/@tysonmoultrie?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash|Tyson Moultrie]] auf [[https://unsplash.com/photos/the-beatles-vinyl-record-sleeve-BQTHOGNHo08?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash|Unsplash]]//
+
+**Ziel:** Jede:r Lernende erstellt **alleine** eine persönliche Tabelle mit Lieblingsfilmen und übt dabei die DML-Operationen //INSERT//, //UPDATE// und //DELETE// (inkl. //INSERT ... SELECT// aus //imdb_top_1000//).
+
+> **WICHTIG:** Der gesamte Auftrag wird **ausschliesslich mit SQL-Befehlen** gelöst – **nicht** über die Webstorm-GUI.
+
+<WRAP center box>
+Die Theorie mit Beispielen zu den einzelnen Befehlen (INSERT, UPDATE, DELETE) finden Sie auf den nächsten Seiten. **Lesen und nutzen Sie die Theorie auf den folgenden Seiten und __nicht__ AI für das Erledigen dieses Auftrags.**
+</WRAP>
+
+
+===== 1) Tabelle anlegen (Wiederholung CREATE TABLE) =====
+Erstellen Sie die Tabelle //favourite_film// mit folgenden Spalten **(Datentypen passend wählen)**:
+  * //film_id// – **Primärschlüssel**, **AUTO_INCREMENT**
+  * //title// – Filmtitel (z. B. VARCHAR(100))
+  * //director// – Regisseur:in (z. B. VARCHAR(50))
+  * //released_year// – Erscheinungsjahr (z. B. YEAR)
+  * //star1// – Hauptdarsteller:in (z. B. VARCHAR(50))
+
+
+
+===== 2) Daten einfügen (INSERT) =====
+  - **Single-Insert:** Fügen Sie **einen** Datensatz aus der Liste unten (s. Beispiel-Datensätze) ein.  
+  - **Multiple-Insert:** Fügen Sie **2–3 weitere** Datensätze in **einem** Statement ein.  
+  - **INSERT ... SELECT:** Übernimm **weitere Filme** aus der Tabelle //imdb_top_1000// in deine //favourite_film//-Tabelle (Spalten-Mapping: //Series_Title → title//, //Director → director//, //Released_Year → released_year//, //Star1 → star1//). Filtere z. B. nach Jahr (ab 2000) oder nach Regie.
+
+> Hinweise:
+> Achten Sie auf **korrekte Datentypen** (Jahr als Zahl, Texte in Quotes).
+> **Hinweis zu Apostrophen:**  
+> Filme mit Hochkomma im Titel (z. B. //Five Nights at Freddy's//) müssen in SQL mit einem **doppelten Apostroph** geschrieben werden:  
+<WRAP center box 80% round><code sql>
+'Five Nights at Freddy''s'
+</code></WRAP>
+
+===== 3) Daten ändern (UPDATE) =====
+Führe **mindestens zwei** Updates aus:
+  * Korrigieren Sie bei **einem** Film den Namen der Regie oder den Titel.
+  * Ändern Sie bei **einem anderen** Film **zwei Spalten** gleichzeitig (z. B. Titel **und** star1).
+
+> **Immer mit WHERE einschränken!** Testen Sie die Bedingung zuerst mit einem //SELECT//-Dry-Run.
+
+
+===== 4) Daten löschen (DELETE) =====
+Führen Sie **mindestens zwei** Löschoperationen aus:
+  * Löschen Sie **einen** Film gezielt über den Primärschlüssel //film_id//.
+  * Löschen Sie **mehrere** Filme auf einmal (z. B. via //IN// oder per Jahrgangs-Filter).
+
+> Vorsicht: //DELETE// ohne //WHERE// leert die ganze Tabelle.
+
+
+===== 5) Peer-Check =====
+Zeigen Sie Ihr Ergebnis (Tabelle mit einigen Datensätzen) **einer/einem Lernenden, die/der nicht neben Ihnen sitzt**.  
+Die Lehrperson hilft beim Matching. Erklären Sie sich gegenseitig:
+  * Welche DML-Befehle Sie ausgeführt haben (Kurzüberblick).
+  * Wo Sie //WHERE// verwendet haben und warum.
+  * Wo gab es Probleme oder Unsicherheiten?
+  * Welche Filme haben Sie in Ihrer Tabelle und warum genau diese Ihre Lieblingsfilme sind.
+
+
+===== Beispiel-Datensätze (roh, ohne SQL) =====
+**Reihenfolge** der Spalten: **title, director, released_year, star1**  
+Kopieren Sie einzelne Zeilen (jeweils eine pro Film) – jede Zeile ist ein Datensatz.
+<WRAP center box 80% round><code sql>
+Dune: Part Two, Denis Villeneuve, 2024, Timothée Chalamet
+
+Barbie, Greta Gerwig, 2023, Margot Robbie
+
+Oppenheimer, Christopher Nolan, 2023, Cillian Murphy
+
+Inside Out 2, Kelsey Mann, 2024, Amy Poehler
+
+Spider-Man: Across the Spider-Verse, Joaquim Dos Santos, 2023, Shameik Moore
+
+Deadpool & Wolverine, Shawn Levy, 2024, Ryan Reynolds
+
+Wonka, Paul King, 2023, Timothée Chalamet
+
+Godzilla Minus One, Takashi Yamazaki, 2023, Ryunosuke Kamiki
+
+The Super Mario Bros. Movie, Aaron Horvath, 2023, Chris Pratt
+
+Five Nights at Freddy''s, Emma Tammi, 2023, Josh Hutcherson
+
+The Hunger Games: The Ballad of Songbirds & Snakes, Francis Lawrence, 2023, Rachel Zegler
+
+Blue Beetle, Ángel Manuel Soto, 2023, Xolo Maridueña
+</code></WRAP>
+
+> Sie können natürlich eigene Favoriten ergänzen (gleiches Format).
+
+
+===== Quellen-Tipps (für eigene Filme) =====
+  * [[https://www.imdb.com/de/| IMDB ]] – grosse Filmdatenbank; Titel, Jahr, Regie, Cast leicht recherchierbar.  
+  * [[https://www.themoviedb.org| The Movie Database (TMDB) ]] – community-basiert, oft mit **CSV-Exports** und klaren Attributen (praktisch für spätere SQL-Imports).  
+  * [[https://letterboxd.com| Letterboxd ]] – beliebte Watchlists/Trends, gute Inspiration für aktuelle Titel.  
+
+
+
+===== Abgabe (mündlich) =====
+  * Zeigen Sie der Lehrperson oder Ihrer Peer-Partner:in Ihre Ergebnisse (z. B. ein //SELECT * FROM favourite_film//).  
+  * Erklären Sie kurz, welche **INSERT/UPDATE/DELETE**-Schritte Sie gemacht haben und **warum**.

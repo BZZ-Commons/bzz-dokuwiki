@@ -1,0 +1,113 @@
+====== LU08b: Warum Fremdschlüssel bzw. mehrere Tabellen? ======
+
+==== Ausgangslage ====
+Naheliegend ist: **Alles in eine Tabelle** (Post + Autor + Kategorie).
+In echten Blogs (z. B. WordPress) führt das aber zu **Wiederholungen**, **Fehlern** und **hohem Wartungsaufwand**.
+
+Wir bleiben beim Reiseblog-Beispiel von der letzten Seite [[https://wetraveltheworld.de|We Travel The World Blog]].
+
+
+==== Beispiel: Alles in einer Tabelle (schlechte Idee) ====
+<WRAP center box 80% round><code sql>
+-- Eine Tabelle für alles: Post + Autor + Kategorie (redundant!)
+CREATE TABLE blog_posts (
+id             INT AUTO_INCREMENT PRIMARY KEY,
+post_title     VARCHAR(200) NOT NULL,
+post_content   TEXT,
+author_name    VARCHAR(100) NOT NULL,
+author_email   VARCHAR(200) NOT NULL,
+category_name  VARCHAR(100) NOT NULL,
+created_at     DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP
+); </code></WRAP>
+
+**Daten einfügen (nur eine Kategorie pro Zeile möglich):**
+<WRAP center box 80% round><code sql>
+INSERT INTO blog_posts
+(post_title, post_content, author_name, author_email, category_name, created_at)
+VALUES
+('Hasselt – 10 Highlights',
+'Kurzguide: Die schönsten Ecken von Hasselt …',
+'Martin Merten', 'martin@wetraveltheworld.de', 'Städtereise', '2025-05-07 10:15:00'),
+
+('Utrecht – 10 Sehenswürdigkeiten',
+'Cafés, Grachten und Restaurant-Tipps …',
+'Martin Merten', 'martin@wetraveltheworld.de', 'Städtereise', '2025-06-05 09:30:00'),
+
+('Lissabon – 8 Tipps zu den wichtigsten Sehenswürdigkeiten',
+'Aussichtspunkte, Viertel und Highlights …',
+'Caro Steig', 'caro@wetraveltheworld.de', 'Portugal', '2025-03-21 08:40:00');
+</code></WRAP>
+
+<WRAP round 80% center>
+**Warum nur //eine// Kategorie pro Zeile?**
+Komma-Listen wirken bequem, sind aber ungünstig:
+
+  * **Keine Prüfung / kein FK((Foreign Key = Fremdschlüssel)).** Die Datenbank (DB) kann bei «Belgien, Städtereise» **nicht** prüfen, ob diese Kategorien wirklich existieren. ((Wenn Kategorien und Posts in **separate Tabellen** liegen und per Fremdschlüssel verbunden sind, kontrolliert die DB beim Speichern, ob «Belgien» in der Kategorien-Tabelle vorhanden ist.)) → Tippfehler bleiben unbemerkt ((z. B. «Belgien, Städtereisen» statt «Belgien, Städtereise»)).
+  * **Unzuverlässiges Filtern.** Suchen mit LIKE liefern leicht Teiltreffer/Varianten. Beispiel: ''WHERE category_name LIKE '%Guinea%''' trifft auch «Equatorial Guinea», «Guinea», «Guinea-Bissau» und «Papua New Guinea» – vier verschiedene Länder.
+  * **Schwierig auszuwerten & langsam.** Zählen/Gruppieren erfordert Strings((Zeichenketten)) zu zerlegen; darauf kann die DB nicht sinnvoll indexieren((**Index**: Ein Index ist wie ein Inhaltsverzeichnis der Datenbank. Er beschleunigt Suchen/Sortieren auf **einzelnen** Spaltenwerten. Bei Komma-Listen stecken **mehrere** Werte in **einem** Feld – darauf lässt sich kein brauchbarer Index aufbauen; zudem können Suchmuster wie LIKE '%Wort%' einen vorhandenen Index oft nicht nutzen.)).
+
+**Besser:** Pro Zeile **eine** Kategorie. Für mehrere Kategorien pro Post (N:M-Beziehung) verwenden wir eine **Zwischentabelle** //post_category//.
+</WRAP>
+
+
+
+
+
+
+**Auszug:**
+{{ :modul:m290_guko:learningunits:lu08:theorie:all_in_one_table_1.png?nolink&900 | Tabelle mit allen Posts}}
+
+<WRAP box round 80% center>
+**Probleme auf einen Blick:**
+  * **Redundanz**: Autorname/E-Mail wiederholen sich bei mehreren Posts.
+  * **Fehleranfällig**: Kategorienamen können unterschiedlich geschrieben werden.
+  * **Aufwendig**: E-Mail-Wechsel eines Autors → alle Zeilen suchen und ändern.
+  * **Nur eine Kategorie möglich**: Idealerweise möchten wir aber mehrere Kategorien pro Blog-Post vergeben – z.B. beim Blog-Post «Utrecht – 10 Sehenswürdigkeiten»: Niederlande, Städtereise.
+</WRAP>
+
+
+==== Tippfehler in Kategorie: sichtbare Folgen ====
+Ein fehlender Buchstabe reicht: **Städtereise** vs. **Stätdereise**.
+
+<WRAP center box 80% round><code sql>
+INSERT INTO blog_posts
+(post_title, post_content, author_name, author_email, category_name, created_at)
+VALUES
+('Maastricht an einem Tag',
+'Spaziergang, Restaurants, Altstadt …',
+'Caro Steig', 'caro@wetraveltheworld.de', 'Stätdereise', '2025-06-12 11:05:00');  -- Tippfehler!
+</code></WRAP>
+
+**Direkte Folgen in Abfragen:**
+<WRAP center box 80% round>
+^ Abfrage ^ Zweck ^ Effekt bei Tippfehler ^
+| <code sql>SELECT DISTINCT category_name FROM blog_posts ORDER BY category_name;</code> | Kategorienliste (Navigation/Filter) | Liste zeigt **zwei** Einträge: //Stätdereise// **und** //Städtereise//. |
+| <code sql>SELECT id, post_title FROM blog_posts WHERE category_name = 'Städtereise';</code> | Beiträge in „Städtereise“ | Der Datensatz mit //Stätdereise// (dt vertauscht) **fehlt** im Resultat. |
+</WRAP>
+
+==== Teil-Update: uneinheitliche E-Mail ====
+Nur **eine** von mehreren Zeilen eines Autors wird geändert → inkonsistente Daten.
+
+<WRAP center box 80% round><code sql>
+UPDATE blog_posts
+SET author_email = 'martin.new@wetraveltheworld.de'
+WHERE id = 1;
+
+SELECT id, post_title, author_name, author_email
+FROM blog_posts
+WHERE author_name = 'Martin Merten'; </code></WRAP>
+
+**Ergebnis:**
+<WRAP center box 80% round>
+^ id ^ post_title                  ^ author_name   ^ author_email                     ^
+| 1  | Hasselt – 10 Highlights     | Martin Merten | martin.new@wetraveltheworld.de   |
+| 2  | Utrecht – 10 Sehenswürdigkeiten | Martin Merten | martin@wetraveltheworld.de   |
+</WRAP>
+//Gleicher Autor, unterschiedliche E-Mail → Daten sind inkonsistent.//
+
+<WRAP center tip round 80%>
+[[https://www.youtube.com/watch?v=W4UkIK2BwS8|Beziehungen in relationalen Datenbanken (1:n, n:m, 1:1) – einfach erklärt]]((Patrick Boekhoven / YouTube)) -> (9:02, de) Grundlagen zu PK/FK und warum wir Beziehungen brauchen; zeigt, wie man 1:n modelliert und warum n:m ohne Zwischentabelle nicht direkt geht.
+</WRAP>
+
+==== Ausblick ====
+Auf der nächsten Seite bauen wir genau dieses Mehrtabellen-Schema **mit Fremdschlüsseln** auf und füllen es mit den obigen Reiseblog-Beispieldaten.

@@ -1,0 +1,54 @@
+====== LU07b - Risiken messen und abmildern  ======
+
+===== Lernziele =====
+  - Risiko-Inventar erstellen können 
+  - Risiken kategorisieren können
+  - Risikoinventar erstellen können (Eintrittswahrscheinlichkeit, Auswirkung)
+  - Priorisierte Massnahmen einleiten können
+
+===== Das Risiko-Inventar erstellen =====
+==== Identifikation und Priorisierung ====
+  * Bei der **Risikoidentifikation** werden die Risiken eines Unternehmens erfasst; prozessorientiert und in verschiedene Risikobereiche gegliedert (QM, Marketing, Ein-kauf). 
+  * In der **Risikobewertung** werden die Risiken quantifiziert und qualitativ gewichtet. Das Risiko bewertet man nach dem Ausmass der Auswirkung und der Eintrittswahrscheinlichkeit des Risikos. Man bedient sich dabei verschiedener Instrumente und Methoden, z.B. Risk-Map/Headmap, ABC-Analyse, Value at Risk. Alle Erkenntnisse der Risikoanalyse fliessen in ein Risikoinventar oder eine RiskMap/Heatmap. 
+  * Value at Risk = ein Risikomass 
+  * **Risikoinventar = Summe aller identifizierten und auf Plausibilität geprüften Risiken.**
+
+==== RiskValue ====
+Um das Risikomass berechnen zu können, müssen wir unsere Risiken bezüglich Eintrittswahrscheinlichkeit und der Auswirkungen einschätzen. Grundlage dazu ist unsere Erfahrung in ähnlichen Projekten.
+
+Gut geeignet ist hier die Nutzwertanalyse bzw. Schadenswertanalyse mit den Spalten:
+  * Titel
+  * Eintrittswahrscheinlichkeit [1-5]
+  * Auswirkung [1-5]
+  * RiskValue
+
+**Beispiel**
+
+^# ^Schaden ^EW	^A ^RV ^
+^ 1. | Währungsschwankungen | 3	| 3 | 9 |
+^ 2. | 	| | | 			
+
+==== HeatMap/RiskMap ====
+Nachdem wir nun unsere Risiken erkannt und bemessen haben, können wir diese nun in die Heatmap eintragen. In der Heatmap erkennen wir nun sehr gut, wie die Priorisierung des Massnahmen-Katalogs sein muss. 
+
+{{de:modul:m241:learningunits:lu07:theorie:master_the_materiality_matrix-3656944542.jpg?600| Risikomessung mittels Heatmap mit Eintrittswahrscheinlichkeit und Auswirkung}}
+
+Ziel ist es die rot gekennzeichneten Risiken in den gelben Bereich zu bringen, und die gelben in den grünen Bereich. 
+
+==== Massnahmen ====
+Um Risiken in Unternehmen effektiv zu managen, werden üblicherweise vier grundlegende Maßnahmen angewendet:
+
+{{de:modul:m241:learningunits:lu07:theorie:risikosteuerung-13604749.jpg?600| Vier möglichen Massnahmenkategorien, die möglich sind}}
+
+** 1. Risikovermeidung: **Diese Strategie zielt darauf ab, Risiken komplett zu umgehen, in-dem bestimmte Aktivitäten, die als zu riskant eingestuft werden, nicht durchgeführt wer-den. Dies kann bedeuten, dass auf bestimmte Geschäftschancen verzichtet wird, um potenzielle Risiken zu vermeiden. Ein Beispiel hierfür wäre die Entscheidung gegen die Expansion in einen politisch instabilen Markt.
+
+**2. Risikominderung:** Bei der Risikominderung werden Maßnahmen ergriffen, um die Wahrscheinlichkeit des Eintretens eines Risikos oder dessen potenzielle Auswirkungen zu reduzieren. Dies kann durch verbesserte Prozesse, Schulungen, Sicherheitsmaß-nahmen oder die Einführung von Qualitätskontrollen geschehen. Ein Beispiel ist die Implementierung eines robusten IT-Sicherheitssystems, um das Risiko von Cyberangriffen zu minimieren.
+
+**3. Risikoüberwälzung:** Diese Strategie beinhaltet die Verlagerung von Risiken auf Dritte, zum Beispiel durch Versicherungen oder Outsourcing. Durch den Abschluss einer Versicherung kann ein Unternehmen finanzielle Risiken wie Brandschäden oder Haftungsansprüche abdecken. Beim Outsourcing könnte ein Unternehmen beispielsweise die Verantwortung für die IT-Sicherheit auf einen externen Dienstleister übertragen.
+
+**4. Risikoakzeptanz:** In einigen Fällen kann ein Unternehmen entscheiden, bestimmte Risiken bewusst zu akzeptieren, wenn die Kosten für die Vermeidung, Minderung oder Überwälzung des Risikos die potenziellen Nachteile übersteigen. Dies ist oft der Fall bei Risiken, die als geringfügig eingestuft werden oder bei denen das Unternehmen sich gut auf die potenziellen Auswirkungen vorbereitet fühlt. Ein Beispiel hierfür könnte die Entscheidung sein, ohne umfassende Marktanalysen in einen neuen Markt zu expandieren, da die erwarteten Erträge die potenziellen Risiken überwiegen.
+
+Die Wahl der richtigen Maßnahme hängt von verschiedenen Faktoren ab, einschließlich der Art des Risikos, der Risikotoleranz des Unternehmens und den verfügbaren Ressour-cen. Ein effektives Risikomanagement erfordert eine ausgewogene Kombination dieser Strategien, um die Unternehmensziele zu schützen und gleichzeitig das Wachstum zu för-dern.
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

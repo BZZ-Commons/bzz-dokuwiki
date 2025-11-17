@@ -1,0 +1,214 @@
+====== LU12c: MySQL – Rollen & Berechtigungen im Notenbuch ======
+
+===== Lernziele dieser Seite =====
+
+Sie können …
+
+  * in einer einfachen Noten-Datenbank zwei sinnvolle Rollen definieren (Administration und Lernende).
+  * mit den Befehlen ''CREATE USER'', ''CREATE ROLE'', ''GRANT'', ''SHOW GRANTS'', ''SET DEFAULT ROLE'' und ''REVOKE'' in MySQL umgehen.
+  * erklären, wie das Prinzip der minimalen Privilegien mit Rollen umgesetzt werden kann.
+
+===== Ausgangslage: Noten-Datenbank =====
+
+<WRAP center round box 80%>
+Zum Nachvollziehen der Übung laden Sie hier das SQL-Skript herunter, welches eine entsprechende Datenbank mit den Tabellen erzeugt.
+
+{{ :modul:m290_guko:learningunits:lu12:theorie:noten_db.zip | SQL-File mit Setup einer Noten-Datenbank. }}
+
+</WRAP>
+
+Stellen Sie sich die Datenbank ''noten_db'' vor, in der die Noten aller Lernenden gespeichert sind. Eine zentrale Tabelle dafür ist ''noten''.
+
+{{:modul:m290_guko:learningunits:lu12:theorie:noten_db.drawio.png?800| ERD - Crow's Foot mit der Schema der noten_db}}
+
+//Die Datenbank ist mit drei Tabellen aufgebaut: ''noten'', ''lernende'' und ''module'' und über Fremdschlüssel miteinander verknüpft.//
+
+In der Tabelle ''noten'' liegen besonders schützenswerte Personendaten (Leistungsbeurteilungen). Entsprechend wichtig ist eine saubere Rechtevergabe.
+
+===== Schritt 1: Zwei Rollen definieren =====
+
+Wir arbeiten bewusst nur mit **zwei Rollen**:
+
+  * eine Admin-Rolle für die vollständige Verwaltung der Noten-Datenbank,
+  * eine Rolle für Lernende, die alle Noten lesen dürfen (aber nichts verändern).
+
+<WRAP center round box 80%>
+^ Rolle ^ Zweck ^ Typische Rechte ^
+| ''db_admin'' | Verwaltung der gesamten Noten-Datenbank | alle Rechte auf ''noten_db.*'' |
+| ''lernende_role'' | Lernende sehen alle Noten (Leserechte) | ''SELECT'' auf Tabellen in ''noten_db'' |
+</WRAP>
+
+Zuerst werden die Rollen in MySQL angelegt:
+
+<WRAP center round box 80%>
+<code sql>
+CREATE ROLE db_admin;
+CREATE ROLE lernende_role;
+</code>
+</WRAP>
+
+===== Schritt 2: Rechte an Rollen vergeben (GRANT) =====
+
+Nun legen Sie fest, was die beiden Rollen genau dürfen.
+
+==== Rolle db_admin – Alle Rechte ====
+
+<WRAP center round box 80%>
+<code sql>
+GRANT ALL PRIVILEGES
+ON noten_db.*
+TO db_admin
+WITH GRANT OPTION;
+</code>
+</WRAP>
+
+Die Rolle ''db_admin'' kann damit:
+
+  * Tabellen anlegen, ändern, löschen,
+  * alle Noten lesen, ändern und löschen,
+  * Rechte an andere vergeben.
+
+==== Rolle lernende_role – Noten lesen, aber nichts verändern ====
+
+Alle Lernenden sollen alle Noten sehen können, aber keine Noten verändern oder löschen. Dafür erhält die Rolle nur Leserechte (''SELECT'').
+
+<WRAP center round box 80%>
+<code sql>
+GRANT SELECT
+ON noten_db.*
+TO lernende_role;
+</code>
+</WRAP>
+
+Damit gilt:
+
+  * ''lernende_role'' darf alle Daten in ''noten_db'' lesen,
+  * aber keine Datensätze einfügen, ändern oder löschen,
+  * und auch keine Tabellenstruktur verändern.
+
+Sie setzen damit das Prinzip der minimalen Privilegien um: Lernende dürfen genau das, was sie für ihren Zweck benötigen – nicht mehr.
+
+===== Schritt 3: Zwei MySQL-Benutzer erstellen =====
+
+Jetzt legen Sie genau **zwei MySQL-Benutzer** an:
+
+  * ''lehrperson_koch'' – Lehrperson/Administrator der Noten-Datenbank,
+  * ''lernende_caduff'' – Beispiel-Benutzer für Lernende (für das Unterrichtsbeispiel ist es in Ordnung, dass alle Lernenden darüber alle Noten sehen).
+
+<WRAP center round box 80%>
+<code sql>
+CREATE USER 'lehrperson_koch'@'localhost'
+  IDENTIFIED BY 'Admin!2025';
+
+CREATE USER 'lernende_caduff'@'localhost'
+  IDENTIFIED BY 'Lernende!2025';
+</code>
+</WRAP>
+
+In der Praxis sollten Sie selbstverständlich stärkere und individuelle Passwörter verwenden. Hier geht es um das Prinzip.
+
+===== Schritt 4: Rollen an Benutzer zuweisen (GRANT) =====
+
+Im nächsten Schritt weisen Sie den Benutzern ihre Rollen zu:
+
+<WRAP center round box 80%>
+<code sql>
+GRANT db_admin
+TO 'lehrperson_koch'@'localhost';
+
+GRANT lernende_role
+TO 'lernende_caduff'@'localhost';
+</code>
+</WRAP>
+
+Damit gilt:
+
+  * ''lehrperson_koch'' arbeitet mit allen Rechten der Rolle ''db_admin'',
+  * ''lernende_caduff'' arbeitet mit den Leserechten der Rolle ''lernende_role''.
+
+Wenn Sie später eine weitere Lehrperson oder einen weiteren Admin hinzufügen, müssen Sie nur einen neuen Benutzer erstellen und ihm oder ihr die passende Rolle zuweisen.
+
+===== Schritt 5: Standardrollen beim Login aktivieren (SET DEFAULT ROLE) =====
+
+MySQL unterscheidet zwischen:
+
+  * **zugewiesenen Rollen** (''GRANT rolle_x TO benutzer'') und
+  * **aktiven Rollen** (die in der Session wirklich wirken).
+
+Viele Tools (z. B. IDEs wie WebStorm) öffnen automatisch neue Verbindungen, ohne ''SET ROLE …'' auszuführen. Dann sind zwar Rollen zugewiesen, aber nicht aktiv – und die Datenbank wird nicht korrekt angezeigt („Schema ist nicht introspected“).
+
+Damit die Rolle **automatisch beim Login aktiv** ist, setzen Sie eine **Standardrolle (Default Role)**:
+
+<WRAP center round box 80%>
+<code sql>
+SET DEFAULT ROLE db_admin
+TO 'lehrperson_koch'@'localhost';
+
+SET DEFAULT ROLE lernende_role
+TO 'lernende_caduff'@'localhost';
+</code>
+</WRAP>
+
+Ab jetzt gilt:
+
+  * Wenn sich ''lehrperson_koch'' verbindet, ist ''db_admin'' automatisch aktiv.
+  * Wenn sich ''lernende_caduff'' verbindet, ist ''lernende_role'' automatisch aktiv.
+  * Tools wie WebStorm sehen die Rechte sofort und können ''noten_db'' sauber anzeigen.
+
+===== Schritt 6: Rechte kontrollieren (SHOW GRANTS) =====
+
+Mit ''SHOW GRANTS'' können Sie überprüfen, welche Rechte ein Benutzer effektiv besitzt.
+
+<WRAP center round box 80%>
+<code sql>
+SHOW GRANTS FOR 'lehrperson_koch'@'localhost';
+SHOW GRANTS FOR 'lernende_caduff'@'localhost';
+</code>
+</WRAP>
+
+Sie sehen dort, welche Rollen zugewiesen wurden und welche Privilegien diese Rollen enthalten. So können Sie auch im Unterricht gemeinsam kontrollieren, ob die gewünschte Rechtevergabe funktioniert.
+
+===== Schritt 7: Rechte und Benutzer entfernen (REVOKE & DROP USER) =====
+
+Wenn sich Aufgaben ändern oder Benutzer das System verlassen, können Sie Rechte oder Rollen wieder entziehen und Benutzer löschen.
+
+==== Rechte oder Rollen entziehen ====
+
+<WRAP center round box 80%>
+<code sql>
+-- Einzelne Rechte entziehen
+REVOKE SELECT ON noten_db.* FROM lernende_role;
+
+-- Eine Rolle von einem Benutzer entfernen
+REVOKE lernende_role FROM 'lernende_caduff'@'localhost';
+</code>
+</WRAP>
+
+==== Benutzer löschen ====
+
+Wenn ein Benutzer nicht mehr benötigt wird, können Sie ihn vollständig entfernen:
+
+<WRAP center round box 80%>
+<code sql>
+DROP USER 'lernende_caduff'@'localhost';
+DROP USER 'lehrperson_koch'@'localhost';
+</code>
+</WRAP>
+
+Damit entfernen Sie sowohl den Zugriff als auch alle gespeicherten Login-Daten.  
+Dies ist ein wichtiger Schritt bei **Personalwechseln** oder **Projektende**, um den Datenschutz weiterhin sicherzustellen.
+
+===== Verbindung zu Datenschutz (DSG/DSGVO) =====
+
+Mit diesen zwei Rollen und zwei MySQL-Benutzern setzen Sie zentrale Datenschutzprinzipien um:
+
+  * **Schutz vor unbefugtem Zugriff**
+    * Nur die Benutzer ''lehrperson_koch'' und ''lernende_caduff'' haben Zugriff auf die Noten-Datenbank.
+  * **Prinzip der minimalen Privilegien**
+    * ''lehrperson_koch'' darf alles, trägt aber auch volle Verantwortung.
+    * ''lernende_caduff'' darf nur lesen (''SELECT''), keine Noten verändern.
+  * **Vertraulichkeit und Integrität**
+    * Strukturänderungen und Rechteverwaltung sind auf die Admin-Rolle beschränkt.
+    * Lernende können keine Noten manipulieren, sondern nur ansehen.
+
+So entsteht aus wenigen, klar definierten Rollen und Benutzern ein übersichtliches und datenschutzkonformes Berechtigungskonzept für eine Noten-Datenbank.

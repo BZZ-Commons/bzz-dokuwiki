@@ -1,0 +1,94 @@
+====== LU01a – Organisation des Moduls ======
+
+===== Lernziele =====
+  * Ich kenne die wichtigsten Informationen zu Terminen, Themen und Leistungsbeurteilungen.  
+  * Ich weiss, wie viele Leistungsbeurteilungen (LB) es gibt und welche Gewichtung sie haben.  
+  * Ich kann diese Informationen jederzeit selbstständig nachlesen.  
+
+===== Einführung =====
+Dieses Modul 290 (''Datenbanken abfragen und verändern'') begleitet uns von **KW 34 (18.8.25/21.8.25)** bis **KW 4 (19.1.26/22.1.26)** .   
+
+In diesem Abschnitt klären wir:
+  - **Ziele** des Moduls  
+  - **Ablauf & Themenplan**  
+  - **Lernbeurteilungen & Bewertung**  
+  - **Lehrmittel & Ressourcen**  
+
+
+==== 1. Ziele des Moduls ====
+Das Modul zielt darauf ab, dass Sie …
+  * selbstständig mit einer Datenbank arbeiten können (Erstellen, Abfragen, Verändern)  
+  * SQL sicher einsetzen können
+  * Datenmodelle verstehen und anwenden können
+  * Eine Datenbank über einen Backendserver ansteuern können (REST API)
+
+→ [[https://www.modulbaukasten.ch/module/290/1/de-DE?title=Datenbanken-abfragen-und-ver%C3%A4ndern|Offizielle Modulbeschreibung]]  
+
+{{:modul:m290_guko:learningunits:lu01:client_server.png?direct&900|}}
+//Client-Server-Modell und Einordnung der zwei Module 290 und 291. M291 (Oberflächen (UIs) mit Webtechnologien entwickeln) startet im nächsten Semester.//
+
+==== 2. Ablauf & Themenplan ====
+Das Modul ist grob in 5 Blöcke unterteilt, die inhaltlich aufeinander aufbauen:
+
+*(1 Woche = 1 Learning Unit = 2×45 Min)*
+
+== Block 1 – Grundlagen & Setup (Wochen 1–3) ==
+  - Einführung in Kurs & Datenbanken  
+  - Installation MySQL & IDE (Webstorm)  
+  - Erste SQL-Befehle (`SELECT`)  
+  - Datenmodellierung: ERM vs. ERD, Chen & Crow’s Foot  
+
+== Block 2 – SQL-Grundlagen (Wochen 4–9) ==
+  - Datenbanken & Tabellen erstellen (`CREATE`)  
+  - Daten abfragen (`SELECT`, `WHERE`, `ORDER BY`)  
+  - Daten ändern (`INSERT`, `UPDATE`, `DELETE`)  
+  - Relationen & Joins (1:1, 1:N, M:N)  
+
+== Block 3 – Fortgeschrittene Abfragen (Wochen 10–14) ==
+  - Aggregatfunktionen (`COUNT`, `SUM`, `AVG` …)  
+  - `GROUP BY`, `HAVING`, Subqueries  
+  - Benutzerrechte & Sicherheit (`GRANT`, `REVOKE`)  
+  - Daten-Import/-Export (CSV, JSON)  
+  - Mini-Projekt
+
+== Phase 4 – DB-Anbindung an Anwendungen (Wochen 15–17) ==
+  - Node.js/Express-Backend  
+  - CRUD-Operationen von Backend → MySQL  
+  - API-Validierung & Fehlerbehandlung  
+
+== Phase 5 – Projektarbeit (Wochen 17–19) ==
+  - Projektarbeit mit einem vorgegebenen Dataset
+  - Abgabe Projektarbeit und Vorschau Modul 291 
+
+{{ :modul:m290_guko:learningunits:lu01:semesterplan_mo25_m290_me23a.pdf |ME23a: Semesterplan als PDF downloaden.}}\\
+{{ :modul:m290_guko:learningunits:lu01:semesterplan_mo25_m290_me23bc.pdf |ME23bc: Semesterplan als PDF downloaden.}}\\
+{{ :modul:m290_guko:learningunits:lu01:semesterplan_do25_m290.pdf |ME23def: Semesterplan als PDF downloaden.}}
+
+
+==== 3. Lernbeurteilungen & Bewertung ====
+**Gesamtgewichtung:**  
+  * 30% Lernbeurteilung 1 (LB1)
+  * 40% Lernbeurteilung 2 (LB2)
+  * 30% Projektarbeit  (LB3)
+
+^ Lernbeurteilung  ^ ME23abc ^ ME23def ^ Gewichtung ^ Hilfsmittel ^
+| LB01 | 29.09.25 | 02.10.25 | 30% | handgeschriebenes Cheatsheet/Merkblatt |
+| LB02 | 01.12.25 | 04.12.25 | 40% | handgeschriebenes Cheatsheet/Merkblatt |
+| LB03 | 19.01.26 | 22.01.26 | 30% | Open Book | 
+
+
+**Wichtig:** Bei Abwesenheit muss ein ärztliches Zeugnis oder eine Begründung vorliegen, sonst Note 1.0.  
+
+==== 4. Lehrmittel & Ressourcen ====
+  * Alle Unterrichtsmaterialien finden Sie hier in Moodle
+  * Übungsplattformen (z. B. W3Schools, lokale DB-Installation)  
+
+==== 5. Kontakt ====
+  * **Lehrperson:** Guido Koch  
+  * **E-Mail:** guido.koch@bzz.ch
+
+
+
+----
+{{tag>M290-LU01}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Guido Koch

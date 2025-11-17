@@ -1,0 +1,106 @@
+====== LU05a - Kryptographie Basics ======
+
+===== Lernziele =====
+  - Die Begriffe Kodierung und Verschlüsselung erklären  und unterscheiden können.
+  - Wichtige kryptographische Begriffe nennen und in eigenen Worten erklären können.
+  - Die "Maxime von Kerhoff" erläutern und Bezug auf die Gegenwart nehmen können.
+  - die drei Verschlüsselungsarten/-varianten erläutern können.
+
+===== 1. Von der Codierung zur Verschlüsselung =====
+==== 1.1 Codierung ====
+Sie haben gelernt, wie alltägliche Informationen wie Buchstaben, Zahlen, Pixel oder Töne digitalisiert werden. Beispielsweise wird einem Buchstaben ein Dezimal-Zahlenwert zugewiesen, welcher dann ins duale Zahlensystem überführt, und so auf einen Datenträger mit Nullen und Einsen gespeichert werden kann. Übersetzungen von einer Sprache in eine andere Sprache funktionieren nach dem gleichen Prinzip: das  Deutschen Wort //ja// wird beispielsweise das Französische Wort //Oui// übersetzt. 
+
+Bei Sprachen-Übersetzungen wird ein Wörterbuch verwendet. Um Zahlen vom dezimalen ins duale/binäre Zahlensystem überführen zu können, benötigen wir eine Rechenvorschrift. Dieses //Kochrezept// der Konversion (Zeichen aller Art) ist offen zugänglich und daher für alle nachvollziehbar. **Das Verfahren ist also allen grundsätzlich bekannt**.
+
+{{:modul:m183:learningunits:lu05:ascii-tabelle_seo-1024x576.jpg?600| Ascii-Konversionstabelle }}
+
+[[https://studyflix.de/informatik/ascii-code-427|Freiwillig: Studyflix-Video ASCII-Code]]
+
+==== 1.2 Verschlüsselung ====
+Gemäss Definition heisst Kryptographie übersetzt Verschlüsselung  bedeutet nichts anderes als, dass diese Rechenvorschrift nicht-autorisierten gegenüber geheim gehalten wird. D.h. eine Nachricht wird mit einem **geheimen «Regelwerk** in eine andere Darstellung gebracht, sodass die Nachricht in verschlüsselter Form nicht lesbar ist. Sie kann erst wieder mit einer passenden **Gegen-Regelwerk** entschlüsselt werden. 
+
+{{:modul:m183:learningunits:lu05:verschluesselung.png?400|Prinzip der Ver- und Entschlüsselung durch den geheimen Schlüssel}}
+
+==== 1.3 Kryptologie ====
+Die Kryptologie hingegen beschäftigt sich mit Fragen der Geheimhaltung von Nachrichten. Sie ist unterteilt in zwei sich //befeindende// Teilgebiete:
+
+  * Die **Kryptograhie** versucht eine kryptologische Sicherheit zu erlangen, welche nicht geknackt werden kann wie der Geheimhaltung der Geheimnachricht (Angriff)
+  * Die **Kryptoanalyse** beschäftigt sich wissenschaftlich damit, kryptographische Verfahren zu knacken, also mit der Offenlegung einer Geheimnachricht (Verteidigung)
+
+===== 2. Begriffe =====
+Die nachfolgenden Begriffe werden in der Krypto-Szene verwendet, wobei Sie zum Teil eine etwas andere Bedeutungen als in der normalen Sprache haben können:
+
+  * **Plaintext**: Auch //Klartext// oder //dechiffrierter Text// genannt. Sie ist die Informationen, die geheim transportiert werden sollen. Ist der Ursprungstext für die Verschlüsselung bzw. das Ergebnis der Entschlüsselung.
+  * **Ciphertext**: Auch //chiffrierter Text// oder "verschlüsselte Text" genannt. Enthält die verschlüsselten Informationen, also das Ergebnis der Verschlüsselung. 
+  * **Schlüssel** bzw.  **Key**: Bezeichnet das Element, das zur Ver- und Entschlüsselung verwendet wird. 
+  * **Code**: Wörter oder Sätze des Klartextes werden durch andere Wörter oder Buchstabenfolgen, unter Verwendung eines Codebuches, ersetzt.
+  * **Konfusion**: Der Zusammenhang zwischen Plaintext und Ciphertext wird verwischt.
+  * **Diffusion**: Die Information des Plaintext wird über weite Teile des Ciphertextes verteilt.
+  * **Umkehrbarkeit**: Die Verschlüsselung muss unter Verwendung des beim Verschlüsseln angewandten Schlüssels wieder umkehrbar sein.
+
+===== 3. Kryptographie =====
+Durch die Verbreitung des Internets erlangten kryptografische Verfahren, welche früher vor allem im militärischen Bereich eingesetzt wurden, auch eine grosse Bedeutung für Private. Ein Überbleibsel an frühere //kalter Krieg//-Zeiten ist, dass bis vor wenigen Jahren in den USA kryptographische Verfahren unter das Kriegsmaterialgesetz fielen und nicht exportiert werden durften.
+
+==== 3.1 Ziele ==== 
+Kryptografische Verfahren werden eingesetzt, um zwei Ziele zu erreichen:
+
+  - **Vertraulichkeit**: Es soll nicht beteiligten-Personen verunmöglicht werden, eine geheime Nachricht zu lesen.
+  - **Authentizität**: Es soll nicht beteiligten-Personen verunmöglicht werden, eine Nachricht zu verfälschen, ohne dass dies bemerkt wird.
+
+==== 3.2 Die drei Dimensionen der IT-Sicherheit = CIA-Triad ====
+Mögliche Angreifer eines IT-Systems haben es grundsätzlich auf mindestens eine der nachfolgenden Dimensionen der IT-Sicherheit abgesehen.
+
+  - **Verfügbarkeit**: Ein Computersystem muss dann verfügbar sein, wenn es gebraucht wird. Angriffe zielen darauf diese Verfügbarkeit zu reduzieren oder zu zerstören.
+  - **Vertraulichkeit**: Informationen sollten nicht an unberechtigte Personen weitergeben werden. Angreifer möchte genau an solche Informationen (beispielsweise Passwörter, Gesundheitsdate, etc.) herankommen, um den Informationseigentümern Schaden zuzufügen.
+  - **Integrität**: Informationen sollen beispielsweise zwischen Sender und Empfänger nicht verändert werden. Vor allen nicht dann, wenn der Sender nichts davon weiss. Das Ziel eines Angriffes ist die Vertrauens- und/oder Glaubwürdigkeit des Senders zu reduzieren oder zu zerstören.
+
+{{:modul:m183:learningunits:lu05:cia-triad.png?300|CIA-Triad =3 Dimensionen der IT-Sicherheit}}
+
+==== 3.3 Prinzipien ====
+Bis in die 1990er Jahre wurde noch oft versucht, Geheimhaltung dadurch zu erreichen, in dem der Verschlüsselungsalgorithmus verheimlicht wurde. 1995/6 wurde dann der bis dahin als sicher geltende40 Bit-SSL-Verschlüsselung des Netscape Navigator vom CCC (Chaos Computer Club) geknackt. Dies wurde erreicht, indem der zugrunde liegenden Zufallszahlen-Generator nachgebaut werden konnte. Das Super-Sichere-Verfahren war also offengelegt.
+
+Spannend, dass führende Kryptologen dies schon einige Zeit vor 1990 gewusst haben:
+
+{{:modul:m183:learningunits:lu05:maxime.png?800| Fazit führender Kryptologen, weit vor 1995}}
+
+Alle aktuell in der Praxis eingesetzten Verschlüsselungsverfahren sind gut und ausführlich beschrieben. Dadurch sind sie auch um Grössenordnungen besser getestet als proprietäre Mechanismen. Das Verschlüsselungsverfahren ist daher sehr bekannt und kein Garant für die Geheimhaltung von Nachrichten. 
+
+<color #ed1c24>**Merke:** Wenn also gemäss Shannon das Verschlüsselungsverfahren bekannt ist und gemäss Kerckhoffs Maxime der Schlüssel der einzige Garant für die Sicherheit ist, dann ist es umso wichtiger, dass dieser selbst strikt geheim bleibt. D.h. je länger und komplizierter der Schlüssel, desto sicher ist die Nachricht.</color>
+
+===== 4. Varianten der Kryptographie/Verschlüsselung =====
+Grundsätzlich gibt es 2 Varianten der Verschlüsselung: die **symmetrische** und **asymmetrische Verschlüsselung**. Die hybride Verschlüsselung ist eine Kombination der beiden Verfahren.
+
+==== 4.1 Symmetrische Verschlüsselung ====
+Bei der symmetrischen Verschlüsselung handelt es sich um die älteste Methode Informationen zu verschlüsseln. Dabei wird zum Ver- und Entschlüsseln derselbe Schlüssel verwendet. 
+
+{{:modul:m183:learningunits:lu05:symmetrischeverschluesselung.gif?800| Symmetrische Verschlüsselung = Ver- und entschlüsselt wird mit dem gleichen Key}}
+
+Der Nachteil dieses Verfahrens ist, dass der Schlüssel geheim gehalten werden bzw. auf einem sicheren Weg dem Kommunikationspartner zugestellt werden muss. Ein weiteres Problem stellt die Anzahl der Schlüssel dar, da praktisch für jeden Kommunikationspartner ein eigener Schlüssel angelegt werden muss. 
+
+[[https://studyflix.de/informatik/symmetrische-verschlusselung-1610 | Studyflix: Die symmetrische Verschlüsselung]]
+
+==== 4.2 Die Asymmetrische Verschlüsselung ====
+1978 bewiesen die Mathematiker Rivest, Shamir und Adleman am MIT mit dem nach ihnen benannten RSA-Algorithmus, dass es möglich ist, bei der Verschlüsselung mit zwei unterschiedlichen Schlüsseln zu arbeiten. 
+Bei dieser asymmetrischen Verschlüsselung (Public Key Verschlüsselung) genannt, wird ein Schlüsselpaar erstellt. D. h. zwei Schlüssel, die eine gemeinsame mathematische Basis (z. B. Primzahl mit 200 Dezimalstellen) haben. Einer dieser Schlüssel wird zur Verschlüsselung, der andere zur Entschlüsselung verwendet. Keiner der Schlüssel kann, trotz mathematischer Basis, aus dem anderen hergeleitet werden. Der Schlüssel, der zur Verschlüsselung verwendet wird, kann daher beliebig verbreitet und sogar in eigenen Verzeichnissen (Schlüsselserver) hinterlegt werden. Man spricht daher auch vom öffentlichen Schlüssel (public key). Der zur Entschlüsselung verwendete private Schlüssel (private key) bleibt hingegen in der Obhut des Empfängers. 
+
+{{:modul:m183:learningunits:lu05:asymmetrischeverschluesselung.png?800| Asymmetrische Verschlüsselung = Ver- und entschlüsselt wird mit unterschiedlichen Keys}}
+
+Der Nachteil dieses Verfahrens besteht darin, dass es deutlich langsamer ist, als symmetrische Verschlüsselung (RSA ist ca. 1000-mal langsamer, als z. B. DES) und aufgrund der mathematischen Abhängigkeiten der beiden Schlüssel auch höhere Schlüssellängen benötigt. Aus diesem Grund wird in der Praxis sehr häufig nur die hybride Verschlüsselung eingesetzt
+
+[[https://studyflix.de/informatik/symmetrische-verschlusselung-1609 | Studyflix: Die asymmetrische Verschlüsselung]]
+
+==== 4.3 Hybride Verschlüsselung ====
+Bei der hybriden Verschlüsselung werden die Vorteile der beiden oben besprochenen Verschlüsselungsmethoden kombiniert:
+  * symmetrische Verschlüsselung bietet höhere Geschwindigkeit 
+  * symmetrische Verschlüsselung bietet höhere Sicherheit
+
+{{:modul:m183:learningunits:lu05:hybridverschluesselung.png?800| Funktionsweise der Hybridverschlüsselung}}
+
+
+Die Verschlüsselung der eigentlichen Daten erfolgt per symmetrischer Verschlüsselung. Allerdings wird für jede Datenübertragung ein eigener Schlüssel generiert (Session Key), der per asymmetrischer Verschlüsselung dem/den Kommunikationspartner/n übermittelt bzw. der eigentlichen Nachricht angehängt wird. Da es sich bei einem Schlüssel nur um sehr wenige Daten (wenige hundert Bit) handelt, fällt hier der Nachteil der langsamen asymmetrischen Verschlüsselung praktisch nicht ins Gewicht.
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir
+
+
+

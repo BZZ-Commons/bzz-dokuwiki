@@ -1,0 +1,24 @@
+====== Übung: 01 Sequenz ======
+
+Stellen Sie die folgenden Beschreibungen als Programmablaufplan dar. Verwenden Sie für jeden Befehl eine eigene Sequenz.
+
+===== Aufgabe 1: Rechner =====
+
+Das Programm erwartet vom Benutzer die Eingabe von 3 Zahlen.
+Das Programm berechnet und gibt aus:
+
+* Den Durchschnitt aller 3 Zahlen
+* Die mittlere Zahl
+
+<WRAP center round tip 60%>
+Das Ermitteln der mittleren Zahl (Median) können Sie als einen einzelnen Befehl darstellen. \\
+Zum Beispiel ''mitte = Mittelwert(zahl1, zahl2, zahl3, ...)''
+</WRAP>
+
+
+===== Aufgabe 2: Begrüssung =====
+Das Programm fordert den Benutzer auf, seinen Namen einzugeben.
+Das Programm begrüsst den Benutzer mit der Ausgabe: "Guten Tag, **Name**".
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Marcel Suter

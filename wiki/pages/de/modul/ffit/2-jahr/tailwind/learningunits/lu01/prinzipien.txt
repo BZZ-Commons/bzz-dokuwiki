@@ -1,0 +1,54 @@
+====== LU01b - Prinzipien des Tailwinds ======
+
+Jede Tailwind-Klasse hat ein einheitliches Muster:
+
+<color #22b14c><Eigenschaft></color>-<color #00a2e8><Wert></color>
+
+-> <color #22b14c>Eigenschaft:</color> Steht für die CSS-Eigenschaft, die die Klasse kontrolliert (z. B. bg für background-color, text für color).
+
+-> <color #00a2e8>Wert:</color> Gibt die Einstellung für diese Eigenschaft an, wie z. B. eine Farbe (red-500), einen Abstand (4), oder eine Grösse (lg).
+
+Beispiel:
+<code html>
+<div class="text-center text-blue-500 bg-gray-200 p-4">
+  Hallo Welt!
+</div>
+</code>
+
+===== Beispiel-Klassen =====
+==== Farben =====
+Die Farben sind in Tailwind systematisch benannt und in Helligkeitsstufen unterteilt, von 50 (sehr hell) bis 900 (sehr dunkel).
+
+
+----
+
+Textfarben: text-{Farbe}-{Stufe}
+
+Beispiel: text-red-500, text-gray-700
+
+----
+
+Hintergrundfarben: bg-{Farbe}-{Stufe}
+
+Beispiel: bg-blue-300, bg-green-600
+
+----
+
+Rahmenfarben: border-{Farbe}-{Stufe}
+
+Beispiel: border-yellow-400, border-black
+
+==== Abstände (Spacing) ====
+Tailwind verwendet ein einheitliches Abstandssystem für Margin, Padding und ähnliche Eigenschaften. Die Werte reichen von 0 bis 96, wobei jede Zahl eine relative Einheit darstellt (z. B. 4 entspricht 1rem).
+
+----
+
+Padding: p-{Wert}, px-{Wert} (horizontal), py-{Wert} (vertikal)
+
+Beispiel: p-4, px-2, py-6
+
+----
+
+Margin: m-{Wert}, mx-{Wert}, my-{Wert}
+
+Beispiel: m-8, mx-auto (zentriert)

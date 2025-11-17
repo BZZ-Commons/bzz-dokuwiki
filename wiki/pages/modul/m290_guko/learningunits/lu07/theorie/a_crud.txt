@@ -1,0 +1,80 @@
+====== LU07a – CRUD: Die Basics der Datenverwaltung ======
+
+**CRUD** ist ein Akronym für **Create, Read, Update, Delete**.  
+Diese vier Operationen sind die **Grundbausteine für den Umgang mit Daten** – egal ob in einer Datenbank, einer App oder einem Webservice.  
+
+Stellen Sie sich CRUD wie einen Werkzeugkasten vor, mit dem Sie immer wieder die gleichen Tätigkeiten machen:  
+  * **Create** – etwas Neues __hinzufügen__  
+  * **Read** – vorhandene Daten __abrufen__  
+  * **Update** – bestehende Daten __ändern__  
+  * **Delete** – Daten __löschen__  
+
+{{:modul:m290_guko:learningunits:lu07:theorie:crud.png?direct&800|}}
+//Beispiel: CRUD im Social-Media-Feed – User coffee_nature sieht seine Beiträge im Feed (Read), erstellt einen neuen Post (Create), löscht einen bestehenden Beitrag (Delete) und bearbeitet einen Titel (Update).//
+
+===== CRUD in der Praxis =====
+
+CRUD begegnet Ihnen nicht nur in der Datenbank, sondern überall in der Informatik.  
+Beispiel: Ein Social-Media-Post  
+
+  * **Create** → Sie schreiben einen neuen Post → er wird in der Datenbank gespeichert.  
+  * **Read** → Andere Nutzer:innen sehen Ihren Post → die App liest die Daten aus der Datenbank.  
+  * **Update** → Sie ändern den Text oder fügen ein Bild hinzu → die Daten in der Datenbank werden angepasst.  
+  * **Delete** → Sie löschen den Post → der Eintrag wird aus der Datenbank entfernt.  
+
+In der Praxis stossen Sie als Mediamatiker:in auf CRUD vor allem in zwei Situationen:  
+
+==== 1. In SQL-Skripten ==== 
+Ein SQL-Skript ist eine einfache **Textdatei mit SQL-Befehlen** (Dateiendung //.sql//).  
+Damit lassen sich Datenbanken **präzise, wiederholbar und nachvollziehbar** verändern.  
+
+Typische Fälle:  
+  * WordPress: Daten **migrieren**((SQL-Skripte, die eine Datenbank-Struktur oder -Inhalte anpassen, z. B. beim Umzug auf ein neues Hosting.)),  
+  * Daten **importieren/exportieren** (z. B. Produktlisten in einem Webshop),  
+  * **Wartungsarbeiten**((Geplante Arbeiten an einer Datenbank, z. B. alte Daten löschen oder neue hinzufügen)).  
+
+Beispiel: Statt 100 Produkte von Hand ins Backend einzutragen, fügt ein Skript alle Daten in Sekunden korrekt ein – inklusive richtiger Datentypen.  
+
+==== 2. Über die Backend-Logik ==== 
+Moderne Webapplikationen (WordPress, Webshops, Social Media) kommunizieren mit der Datenbank über **REST-Calls**((Ein Aufruf von einem Programm (z. B. einer Website oder App) an ein Backend. Dabei wird ein HTTP-Befehl wie GET, POST, PUT oder DELETE verwendet, um Daten von einer Datenbank abzufragen oder zu verändern.)) und **APIs**((„Application Programming Interfaces“ – Schnittstellen, über die Programme miteinander kommunizieren können. Eine REST-API verbindet z. B. eine Website mit einer Datenbank und gibt dort gespeicherte Daten zurück.)).  
+Wenn Sie im Frontend einen Button klicken („Post erstellen“, „Sneaker in den Warenkorb“), löst das im Hintergrund eine SQL-Operation wie **INSERT**, **SELECT**, **UPDATE** oder **DELETE** aus.  
+
+===== CRUD und SQL =====
+
+In diesem Kapitel lernen Sie die sogenannten **DML-Befehle** (Data Manipulation Language).  
+Mit DML-Befehlen setzen Sie CRUD direkt in SQL um:  
+
+^ CRUD | SQL-Befehl (typisch) |
+| **Create**  | <code sql>INSERT INTO ... VALUES (...);</code> |
+| **Read**    | <code sql>SELECT ... FROM ... WHERE ...;</code> |
+| **Update**  | <code sql>UPDATE ... SET ... WHERE ...;</code> |
+| **Delete**  | <code sql>DELETE FROM ... WHERE ...;</code> |
+
+===== Beispiele (Film-DB) =====
+  * **Create**: einen Film __hinzufügen__  
+    <WRAP center box 80% round><code sql>
+INSERT INTO imdb_top_1000 (Series_Title, Released_Year, Genre, IMDB_Rating)
+VALUES ('Dune', 2021, 'Action, Adventure, Sci-Fi', 8.0);
+</code></WRAP>
+
+  * **Read**: Filme ab 2010 mit Top-Bewertung __auslesen__  
+    <WRAP center box 80% round><code sql>
+SELECT Series_Title, Released_Year, IMDB_Rating
+FROM imdb_top_1000
+WHERE Released_Year >= 2010
+ORDER BY IMDB_Rating DESC;
+</code></WRAP>
+
+  * **Update**: Genre __aktualisieren__  
+    <WRAP center box 80% round><code sql>
+UPDATE imdb_top_1000
+SET Genre = 'Drama, War'
+WHERE Series_Title = '1917' AND Released_Year = 2019;
+</code></WRAP>
+
+  * **Delete**: Tuple (Datensatz) __entfernen__ 
+    <WRAP center box 80% round><code sql>
+DELETE FROM imdb_top_1000
+WHERE Series_Title = 'Dummy Movie' AND Released_Year = 1900;
+</code></WRAP>
+

@@ -1,0 +1,26 @@
+====== LU11b - Angriffsvarianten BruteForce ======
+
+===== Alle Möglichkeiten testen =====
+Für viele Probleme in der Informatik sind keine effizienten Algorithmen bekannt. Der natürlichste und einfachste Ansatz zu einer algorithmischen Lösung eines Problems besteht darin, einfach alle potenziellen Lösungen durchzuprobieren, bis die richtige gefunden ist. Diese Methode nennt man //Brute Force Suche// (engl.  brute force search).
+
+{{:modul:m183:learningunits:lu11:lu11b_1.png?400|Gegen diese Form BruteForce müssen Gegenmassnahmen gefunden werden}}
+
+
+===== Parallelisiert =====
+Hohe Rechnerleistungen können in Form von Computerclustering kombiniert werden, was wiederrum das Auffinden von Passwörtern massiv verkürzt. Konkret können unterschiedliche Rechner unterschiedliche Teilbereiche der Kombinationenmenge unter sich aufteilen. Heute wird das mit sogenannten BotNets durchgeführt.
+
+{{:modul:m183:learningunits:lu11:lu11b_2.png?600|}}
+
+===== Dictionary / Wörterbuch =====
+Anstatt zufällige Symbolkombinationen zu erraten, können Hacker auch vorhandene Wörter aus einem Wörterbuch durchprobieren. Oft verwenden Menschen Wörter in ihren Passwörtern, um sich diese besser merken zu können – das erleichtert Hackern die Arbeit. Brute-Force-Software kann sogar die Wörterbuchpasswörter mutieren, um die Erfolgschancen zu erhöhen.
+
+{{:modul:m183:learningunits:lu11:lu11b_4_dictionary.png?600|Angriff mittels Wörterbücher}}
+
+===== Rainbow Tables =====
+Rainbow tables sind vorberechnete Tabellen, die Hashwerte mit möglichen Klartextpassworten verknuepfen, um die inverse Suche zu beschleunigen. Statt jedes Passwort neu zu bruteforcen, schaut ein Angreifer den Hash nach in der Tabelle nach und findet so schnell das zugehoerige Passwort, wenn vorhanden. Die Methode erfordert grosse Rechen- und Speicherressourcen fuer die Erstellung, reduziert aber die Kosten beim Angriff.  Kurz gesagt: clever vorverarbeitetes Lookup.
+
+{{:modul:m183:learningunits:lu11:lu11b_3_rainboxtable.jpg?600|}}
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

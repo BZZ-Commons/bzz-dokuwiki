@@ -1,0 +1,46 @@
+====== LU04f - Glasfaserkabel ======
+
+==== Aufbau und Funktionsweise ====
+Glasfaserkabel bestehen aus winzigen, flexiblen Glasfasern, die Lichtimpulse zur Übertragung von Daten nutzen. Ein typisches Glasfaserkabel besteht aus einem Kern, der aus Glas oder Kunststoff besteht, umgeben von einer schützenden Schicht aus einem anderen Material mit niedrigerem Brechungsindex.
+
+==== Merkmale und Eigenschaften ====
+=== Übertragung durch Licht === 
+Glasfaserkabel übertragen Daten durch Lichtimpulse, die im Kern der Faser reflektiert werden. Dies ermöglicht extrem hohe Übertragungsraten und Bandbreiten.
+    
+=== Übertragungsdistanz === 
+Glasfaserkabel können über sehr grosse Distanzen hinweg eingesetzt werden (> 300km), ohne signifikanten Signalverlust. Dies macht sie ideal für Weitverkehrsnetze (WANs) und Telekommunikationsinfrastrukturen.
+
+=== Bandbreite===  
+Aufgrund der Übertragung durch Licht können Glasfaserkabel eine enorme Bandbreite bieten, was sie für Hochgeschwindigkeitsdatenübertragungen besonders geeignet macht.
+
+=== Sicherheit ===
+Elektromagnetische Interferenzen haben kaum Auswirkungen auf Glasfaserkabel, was die Datenübertragung sicherer macht und das Risiko von Abhörversuchen verringert.
+
+=== Anwendung ===
+Glasfaserkabel werden häufig in Telekommunikationsnetzwerken, Rechenzentren und Hochleistungsnetzwerken eingesetzt.
+
+==== Vorteile ====
+  * Hohe Geschwindigkeiten: Glasfaserkabel bieten extrem hohe Übertragungsraten und sind daher ideal für Bandbreiten-intensive Anwendungen.
+  * Grosse Übertragungsdistanzen: Die Signale in Glasfaserkabeln können über grosse Entfernungen nahezu ohne Verluste übertragen werden.
+  * Sicherheit: Die geringe Anfälligkeit für elektromagnetische Störungen macht Glasfaserkabel sicherer gegenüber externen Einflüssen.
+
+==== Herausforderungen ====
+  * Kosten: Die Anschaffungs- und Installationskosten von Glasfaserkabeln sind im Vergleich zu anderen Kabeltypen in der Regel höher.
+  * Empfindlichkeit: Glasfaserkabel sind empfindlich gegenüber Biegen, Knicken und Brechen, was bei der Installation beachtet werden muss.
+  * Spezialisierte Ausrüstung: Die Installation und Wartung von Glasfaserkabeln erfordert spezialisierte Ausrüstung und geschultes Personal.
+
+Insgesamt sind Glasfaserkabel die bevorzugte Wahl für Hochgeschwindigkeitsdatenübertragungen. Sie bieten eine hohe Bandbreite, Sicherheit und Immunität gegenüber elektromagnetischen Störungen, sind jedoch in der Anschaffung und Installation teurer als andere Kabeltypen.
+
+
+==== Technik ==== 
+Bei der Übertragung kommt folgendes Prinzip zum Tragen: Der an einem Ende vom Laser eingespeiste Lichtstrahl wird auf seinem Weg durch die Faser an der Innenseite der Faser ständig reflektiert und kann deshalb nicht aus «seiner Bahn» bzw. Faser austreten. Folgende Abbildung soll dieses Prinzip der «optischen Röhre» verdeutlichen:
+
+{{:modul:m117:learningunits:lu03:lwlfunktion.jpg?500|}}
+
+Bei der Übertragung von optischen Signalen wird zwischen **Singlemode** und **Multimode** unterschieden. 
+  * **Singlemode** bedeutet, dass lediglich ein einziger Lichtimpuls (Mode) in der (Glas)faser übertragen wird. 
+  * Bei **Multimode** werden dagegen gleichzeitig mehrere Lichtimpulse (Moden) in der Faser übertragen. 
+
+Bei der Singlemodeübertragung ist die Veränderung zwischen Eingangs- und Ausgangssignal massiv geringer als bei der Multimodeübertragung. Singlemode wird oft auch Monomode genannt.
+
+{{:modul:m117:learningunits:lu03:lwlmode.jpg?500|}}

@@ -1,0 +1,42 @@
+====== LU06.A01 - Schritt-für-Schritt-Anleitungen erstellen ======
+
+===== Einleitung =====
+
+Sie lernen, wie Software auf Windows und macOS installiert und deinstalliert wird.  
+Dazu verfassen sie eigene Schritt-für-Schritt-Anleitungen mit Screenshots und Pfadangaben.
+
+===== Aufgabenstellung =====
+Erstelle für jedes der folgenden Szenarien eine **Schritt-für-Schritt-Anleitung**.  
+Die Anleitung soll so gestaltet sein, dass auch ein unerfahrener Benutzer sie problemlos nachvollziehen kann.  
+
+1. **Windows App (Microsoft Store)**  
+   - Wähle eine kostenlose App (z. B. Spotify, WhatsApp Desktop).  
+   - Installiere sie aus dem Microsoft Store.  
+   - Dokumentiere jeden Schritt mit Screenshots.  
+   - Deinstalliere die App anschliessend und erkläre, wie dies im Menü *Apps & Features* funktioniert.  
+
+2. **Windows Download (.exe oder .msi)**  
+   - Lade ein Programm von der offiziellen Herstellerseite herunter (z. B. VLC Media Player).  
+   - Führe den Installer aus und beschreibe den Ablauf (Lizenzbedingungen, Pfadauswahl, Abschluss).  
+   - Notiere, in welchem Ordner das Programm gespeichert wurde.  
+   - Deinstalliere das Programm über *Apps & Features* oder den Installer und dokumentiere den Vorgang.  
+
+3. **macOS App (App Store)**  
+   - Installiere eine kostenlose App aus dem App Store (z. B. Numbers oder Pages).  
+   - Beschreibe die Installation Schritt für Schritt mit Screenshots.  
+   - Deinstalliere die App, indem du sie in den Papierkorb verschiebst.  
+
+4. **macOS Download (.dmg oder .pkg)**  
+   - Lade ein Programm von der Herstellerseite herunter (z. B. Google Chrome oder VLC).  
+   - Öffne die *.dmg*-Datei und ziehe das App-Icon in den Ordner *Programme*.  
+   - Notiere den Speicherort und zeige ihn mit einem Screenshot.  
+   - Falls es sich um eine *.pkg*-Datei handelt, dokumentiere die Installation über den Assistenten.  
+   - Deinstalliere die App, indem du sie aus dem *Programme*-Ordner entfernst.  
+
+===== Anforderungen an die Abgabe =====
+  * Für jedes Szenario eine **eigene Schritt-für-Schritt-Anleitung**.  
+  * Jede Anleitung enthält:  
+    - nummerierte Schritte  
+    - mindestens 4 Screenshots (Installation + Deinstallation)  
+    - Hinweis auf den Installationspfad und/oder Speicherort der Benutzerdaten.  
+  * Die Dokumentation soll klar, vollständig und verständlich sein.

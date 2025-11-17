@@ -1,0 +1,20 @@
+====== LU07b - Applying Code coverage ======
+<sup>Internal reference: learningunits/07-2.md</sup>
+\\
+===== Goals =====
+  -I can count out (aufzählen) the basic commands for generating ''code coverage reports'' with ''jest''
+  -If there are any errors, I can analyze the error, suggest and test an initial workaround (troubleshooting).
+
+\\
+===== Basics =====
+This [[en:modul:m324_aws:topics:10|article]] explains, how to set up ''code coverage'' with the node package ''jest''. <sup>Internal reference 06-2.md</sup>
+
+
+\\
+===== Exercises =====
+  -Work on ''07/02_Exercises/a01 to a02'' - according to the learning objectives (see course repository).
+  -If there is an error, read the message carefully, think about a solution and implement it.
+
+----
+
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Daniel Garavaldi

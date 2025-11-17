@@ -1,0 +1,35 @@
+====== LU03A2 – ERM/ERD: Reisedatenbank ======
+
+===== Voraussetzungen =====
+  * **Arbeitsform:** Partnerarbeit (Peer)  
+  * **Hilfsmittel:** Nur Unterrichtsmaterial, keine Websuche, keine KI  
+  * **Zeit:** 20 Minuten  
+  * **Erwartetes Resultat:** Bild mit einem ERD (Entity-Relationship-Diagram), das den Business Case visualisiert.
+
+
+===== Business Case =====
+
+Wir wollen eine Datenbank entwickeln, um unsere **Ferienreisen** zu verwalten.  
+Folgende Informationen sollen gespeichert werden:  
+
+  * welche **Länder** wir besucht haben  
+  * wie lange wir in jedem Land geblieben sind  
+  * auf welchem **Kontinent** jedes Land liegt  
+  * der **Preis** für jede Reise  
+  * das **Datum** jeder Reise  
+
+==== Hinweis ====
+  * Eine Reise entspricht einem Aufenthalt in genau einem Land.
+
+
+
+===== Aufgabe =====
+Analysieren Sie den Business Case und erstellen Sie ein **Entity-Relationship-Modell (ERM)** bzw. daraus dann ein ERD (Entity-Relationship-Diagram):  
+
+  - Identifizieren Sie die **Entitäten** (Tabellen).  
+  - Bestimmen Sie die **Attribute** der Tabellen (inkl. Primärschlüssel). Sie können neue Attribute hinzufügen, wenn es für das Setzen der Primärschlüssel solche braucht (z.B. ID).
+  - Verbinden Sie die Tabellen, indem Sie die **Beziehungen** hinzufügen.  
+  - Bestimmen Sie die **Kardinalitäten** zwischen den Tabellen.  
+ 
+
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]]

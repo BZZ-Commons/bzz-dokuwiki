@@ -1,0 +1,16 @@
+====== LU05b - Fallbeispiel - User Report ======
+<sup>Internal reference: learningunits/05-2.md</sup>
+\\
+===== Ziele =====
+  -Ich kann meine EC2 Instanz auf AWS starten.
+  -Ich kann Dateien von meinem Rechner an meine EC2 Instanz auf AWS kopieren.
+  -Ich kann Ausführungsrechte meinem Shellscript zuweisen oder entziehen.
+  -Bei Fehlern kann ich den Fehler analysieren, eine erste Massnahme vorschlagen und diese ausprobieren (Troubleshooting).
+
+\\
+===== Übungen =====
+Bearbeiten Sie passend zum Thema folgende Übungen ''04/02_Exercises/05_*'' aus dem Kurs-Repository und testen Sie die Übungen in Ihrer AWS EC2 Instanz.
+
+----
+
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Daniel Garavaldi

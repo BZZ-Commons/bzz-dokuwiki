@@ -1,0 +1,56 @@
+====== LU08.A02 – Analyse von Webserver-Logfiles ======
+
+===== Rahmenbedingungen =====
+  * Zeitbudget: 45 Minuten
+  * Sozialform: Partnerarbeit
+  * Hilfsmittel: [[https://www.apachefriends.org/download.html|XAMPP-Paket inkl. Apache-Webserver]]  
+  * * **Erwartetes Ergebnis:** Lerndokumentation 4-5 Seiten, in der die Verständnisfragen mit Text und Bild beantwortet werden.
+
+===== Ausgangslage =====
+Beim Betrieb einer Webapplikation ist es sehr wichtig die Ergebnisse, die bei der Abarbeitung von Anfragen zu sammeln und auszuwerten. Diese Date werden in einer Logdatei gespeichert. Ohne diese wäre es nicht möglich Optimierungen an den angebotenen Diensten vorzunehmen oder Fehler nachhaltig zu reduzieren.
+
+===== Auftrag =====
+Bearbeiten Sie die nachfolgenden Teilaufträge
+  * Teilauftrag A: Installation und Analyse der Logfiles
+  * Teilauftrag B: Verständnisfragen
+
+==== Teilauftrag A: Installation Apache Webserver ====
+Lade Sie das XAMPP-Paket herunter und installieren es auf Ihrem Computer. 
+
+**Hilfestellung**
+Windows-Anleitung zur Installation von XAMPP und zur Generierung von Demo-Daten.
+
+  - Download von https://www.apachefriends.org/de/download.html 
+  - Installation auf ihrem Rechner (ca. 130 MB)
+  - Apache Web Server via xammp-controll.exe starten (siehe Screenshot unten)
+  - URL http://localhost:80 öffnen.
+  - Access.log und error.log via xammp-controll oder %xammp/apache/logs öff-nen und Einträge analysieren.
+  - Folgende URLs  10x aufrufen: http://localhost:80/fredy http://localhost:80/lara http://localhost:80/myphpAdmin 
+  - webalizer ausführen %xammp/webalizer/webalizer.bat
+  - URL http://localhost:80/webalizer öffnen und Statistik sowie reports analysieren.
+  - Erzeugen sie nun selbständig weitere Daten indem sie bspw den user-agent (https://chrome.google.com/webstore/search/user%20agent%20switcher ) verändern. 
+
+Anschliessend müssen sie webalizer erneut starten um die Reports zu erzeugen. Wenn sie die Übung beendet haben, können sie XAMMP wieder deinstallieren.
+
+{{:modul:m183:learningunits:lu08:aufgaben:lu08.a02.png?600|Start Apache im XAMPP Control Panel}}
+
+
+
+==== Teilauftrag B: Verständnisfragen ====
+  - Welche Informationen werden in den default WebServer LogFiles gespeichert?
+  - Wie muss ein Log File konfiguriert werden, damit nur das Datum, die Anfrage an den Server und der verwendete Browser aufgezeichnet werden soll?
+  - Was wird durch die Anpassung des WebServer LogLevels verändert?
+  - Welche Nutzungskennzahlen können aus den WebServer LogFiles gewonnen werden?
+  - Mit Webalizer können LogFiles ausgwertet werden. Welche Auswertungen stehen zur Verfügung?
+  - Welche Angriffe auf WebServer können durch die WebServer LogFiles erkannt wer-den?
+  - Was macht die Auswertung und Analyse von LogFiles schwierig?
+
+===== Solution =====
+[[modul:m183:learningunits:lu08:loesungen:02|Lösung LU08.L02]]
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir
+
+
+

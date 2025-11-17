@@ -1,0 +1,50 @@
+====== LU01a - Zentrale Komponente ======
+
+Ein Computer (ob Desktop-PC oder Laptop) besteht aus verschiedenen Hardware-Komponenten, die zusammenarbeiten, um Programme auszuführen und Daten zu verarbeiten. Obwohl die Bauform unterschiedlich ist, findet man bei beiden Geräten ähnliche Kernkomponenten.
+
+<WRAP center round info 60%>
+Obwohl beide Systeme die gleichen Grundkomponenten besitzen, unterscheiden sie sich in ihrer Bauweise. Ein Desktop-PC ist grösser, leichter aufzurüsten und leistungsfähiger, während ein Laptop für Mobilität optimiert ist und mit Akku und kompaktem Design überzeugt. Bei PCs lassen sich viele Bauteile austauschen, während Laptops in dieser Hinsicht stark eingeschränkt sind.</WRAP>
+
+===== CPU (Central Processing Unit) =====
+
+{{:de:modul:m286_2025:learningunits:lu01:lu01-cpu.jpg?600|}} \\
+<wrap lo>Foto von Christian Wiediger auf Unsplash</wrap>
+
+Die CPU ist das Herzstück eines Computers und wird oft als das „Gehirn“ bezeichnet. Sie führt Rechenoperationen aus, trifft logische Entscheidungen und steuert den Informationsaustausch zwischen den verschiedenen Hardware-Teilen. Die Leistungsfähigkeit einer CPU wird hauptsächlich durch ihre Taktfrequenz und die Anzahl der Kerne bestimmt. Je höher diese Werte sind, desto schneller und effizienter kann der Computer Aufgaben erledigen.
+
+===== RAM (Random Access Memory) =====
+
+{{:de:modul:m286_2025:learningunits:lu01:lu01-ram.jpg?600|}} \\
+<wrap lo>Foto von Harrison Broadbent auf Unsplash</wrap>
+      
+Der Arbeitsspeicher dient als Zwischenspeicher für Daten und Programme, die aktuell in Benutzung sind. Da er sehr schnell arbeitet, kann der Prozessor direkt auf diese Informationen zugreifen, ohne lange Wartezeiten in Kauf nehmen zu müssen. Allerdings ist der RAM ein flüchtiger Speicher: Sobald der Computer ausgeschaltet wird, gehen alle dort gespeicherten Inhalte verloren.
+
+===== Massenspeicher (HDD, SSD) =====
+
+{{:de:modul:m286_2025:learningunits:lu01:lu01-hdd.jpg?600|}} \\
+<wrap lo>Foto von Vincent Botta auf Unsplash</wrap>
+
+Der Massenspeicher sorgt dafür, dass Programme, das Betriebssystem und persönliche Daten dauerhaft gespeichert werden können. Dabei gibt es verschiedene Arten von Speichermedien.
+
+Die HDD (Hard Disk Drive) ist eine klassische Festplatte, die Daten auf magnetischen Scheiben speichert. Ein beweglicher Schreib-/Lesekopf liest und schreibt die Daten ähnlich wie bei einem Plattenspieler. Dadurch sind HDDs zwar sehr günstig und bieten grosse Speicherkapazitäten, jedoch sind sie langsamer und empfindlicher gegenüber Stössen, da sie mechanische Teile enthalten.
+
+Im Gegensatz dazu arbeitet die SSD (Solid State Drive) komplett elektronisch, ähnlich wie ein grosser USB-Stick. Sie hat keine beweglichen Teile, was sie deutlich schneller, leiser und robuster macht. Programme starten dadurch schneller, und auch das Hochfahren des Betriebssystems erfolgt in wenigen Sekunden. Allerdings sind SSDs im Vergleich zu HDDs teurer, vor allem wenn es um sehr grosse Speichermengen geht.
+
+===== Mainboard =====
+
+{{:de:modul:m286_2025:learningunits:lu01:lu01-mainboard.jpg?600|}} \\
+<wrap lo>Foto von Andrey Matveev auf Unsplash</wrap>
+
+Das Mainboard ist die zentrale Leiterplatte, auf der alle Komponenten miteinander verbunden sind. Es enthält Steckplätze für den Prozessor, den Arbeitsspeicher und die Massenspeicher sowie Schnittstellen für Erweiterungskarten und externe Anschlüsse. Zusätzlich ist im Mainboard das BIOS beziehungsweise UEFI integriert, das beim Start des Computers die grundlegende Initialisierung der Hardware übernimmt.
+
+===== Netzteil =====
+
+Damit die einzelnen Bauteile mit Strom versorgt werden, ist das Netzteil verantwortlich. Es wandelt die Wechselspannung aus der Steckdose in die für die Komponenten benötigten Gleichspannungen um. Bei einem Laptop übernimmt das externe Ladegerät diese Aufgabe, indem es sowohl den Akku lädt als auch das Gerät mit Energie versorgt.
+
+===== GPU (Graphic Processing Unit) =====
+
+Die Grafikkarte ist für die Berechnung und Ausgabe von Bildern und Videos zuständig. In vielen Prozessoren ist bereits eine integrierte Grafikeinheit enthalten, die für alltägliche Anwendungen ausreichend ist. Für anspruchsvollere Aufgaben wie Spiele, Videobearbeitung oder 3D-Anwendungen wird jedoch eine dedizierte Grafikkarte eingesetzt, die deutlich leistungsfähiger arbeitet.
+
+===== Kühlung =====
+
+Da Prozessoren und Grafikkarten während des Betriebs Wärme erzeugen, ist eine effiziente Kühlung notwendig. In Desktop-PCs kommen meist grosse Lüfter oder sogar Wasserkühlungen zum Einsatz, die die Abwärme zuverlässig abführen. In Laptops hingegen sind die Kühlsysteme deutlich kompakter, was sie zwar leise im Normalbetrieb, aber laut bei hoher Belastung macht.

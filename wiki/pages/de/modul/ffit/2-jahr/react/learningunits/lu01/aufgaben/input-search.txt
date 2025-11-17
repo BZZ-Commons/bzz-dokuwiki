@@ -1,0 +1,16 @@
+====== LU01.A04 - Fetch data with search input ======
+
+===== Requirements  =====
+  * Work type: individual
+  * Timeframe: 30 Minutes
+  * Means of aid: 
+      * only teaching materials
+  * Expected result: A react app with a custom component
+
+===== Assignments =====
+  * Extend the existing component (e.g., ProductList) with a search input and a “Search” button.
+  * API: Use https://dummyjson.com/products/search?q= for the query (e.g., .../search?q=phone).
+  * Display the results.
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Kamil Demirci

@@ -1,0 +1,150 @@
+====== LU06f - Arten von Lizenzen ======
+
+===== Proprietäre Lizenzen =====
+
+Dies ist das traditionelle Lizenzmodell, bei dem der Softwarehersteller das Urheberrecht an der Software besitzt und dem Nutzer eine Lizenz zur Nutzung gewährt. Die genauen Bedingungen können von Hersteller zu Hersteller variieren, aber in der Regel ist die Nutzung der Software auf bestimmte Computer oder Benutzer beschränkt. Der Quellcode ist normalerweise nicht zugänglich.
+
+<WRAP center round info 60%>
+
+Bei den meisten der heutigen Software-Lizenzierungsmodelle handelt es sich um proprietäre Lizenzen. Mit proprietären Lizenzen kaufen die Kunden das Recht, die Software über eine Lizenz (egal welchen Typs) zu nutzen, während der Softwareanbieter Eigentümer der Software bleibt. Wenn ein Kunde eine Software mit einem proprietären Lizenzmodell kauft, muss das Unternehmen oder die Einzelperson den Geschäftsbedingungen zustimmen, die beinhalten, dass die Software Eigentum des Anbieters bleibt. Das ist z. B. bei Microsoft Windows der Fall. [[https://cpl.thalesgroup.com/de/software-monetization/software-license-models|Quelle]]
+
+</WRAP>
+
+Im Bereich der proprietären Lizenzen gibt es diverse Formen. Nachstehend sehen Sie eine Auflistung der gebräuchlichsten Formen
+
+  * **Einzelplatzlizenz:** Bei einer Einzelplatzlizenz erwirbt der Nutzer das Recht, die Software auf einem einzigen Computer zu installieren und zu nutzen. Die Lizenz ist in der Regel an einen bestimmten Benutzer oder eine bestimmte Maschine gebunden und kann nicht auf andere Geräte übertragen werden.
+  * **Mehrplatzlizenz:** Eine Mehrplatzlizenz ermöglicht die Installation und Nutzung der Software auf mehreren Computern innerhalb eines bestimmten Netzwerks oder Unternehmens. Die genaue Anzahl der erlaubten Installationen kann je nach Lizenzvereinbarung variieren.
+  * **OEM-Lizenz:** Eine OEM-Lizenz (Original Equipment Manufacturer) wird in der Regel an Hardwarehersteller verkauft, die die Software mit ihren Geräten vorinstallieren möchten. Die Lizenz ist oft an die spezifische Hardware gebunden und darf nicht auf anderen Computern installiert oder weiterverkauft werden.
+  * **Site-Lizenz:** Eine Site-Lizenz erlaubt die Installation und Nutzung der Software auf beliebig vielen Computern an einem bestimmten Standort oder in einer bestimmten Einrichtung, wie z.B. einem Unternehmenoder einer Behörde. Diese Art von Lizenz ist oft kostengünstiger als der Erwerb mehrerer Einzelplatzlizenzen.
+  * **Enterprise-Lizenz:** Eine Enterprise-Lizenz richtet sich an grosse Unternehmen oder Organisationen und erlaubt die Installation und Nutzung der Software auf einer unbegrenzten Anzahl von Computern oder Benutzern innerhalb der Organisation.
+  * **Named-User-Lizenz:** Bei einer Named-User-Lizenz wird die Nutzung der Software auf einen bestimmten Benutzer beschränkt. Jeder Benutzer, der die Software nutzen möchte, benötigt eine eigene Lizenz, unabhängig davon, auf wie vielen Computern die Software installiert ist.
+  * **Concurrent-User-Lizenz:** Bei einer Concurrent-User-Lizenz wird die Anzahl der gleichzeitigen Benutzer festgelegt, die die Software nutzen dürfen. Es können beispielsweise 10 Concurrent-User-Lizenzen erworben werden, was bedeutet, dass maximal 10 Benutzer gleichzeitig auf die Software zugreifen können, unabhängig davon, auf wie vielen Computern die Software installiert ist.
+  * **Named-Instance-Lizenz:** Bei einer Named-Instance-Lizenz wird die Nutzung der Software auf bestimmte Instanzen oder Server beschränkt. Jede benannte Instanz oder jeder benannte Server, auf dem die Software ausgeführt wird, benötigt eine eigene Lizenz.
+  * **Named-Device-Lizenz:** Bei einer Named-Device-Lizenz wird die Nutzung der Software auf bestimmte Geräte oder Computer beschränkt. Jedes benannte Gerät, auf dem die Software installiert ist, benötigt eine eigene Lizenz.
+  * **Upgrade-Lizenz:** Eine Upgrade-Lizenz ermöglicht es einem Nutzer, von einer älteren Version der Software auf eine neuere Version zu wechseln. Der Nutzer erwirbt das Recht, das Upgrade durchzuführen, oft zu einem reduzierten Preis im Vergleich zum vollen Kaufpreis der neuen Version.
+  * **Evaluation-Lizenz:** Eine Evaluation-Lizenz ermöglicht es dem Nutzer, die Software für einen begrenzten Zeitraum zu testen und zu bewerten, bevor eine Kaufentscheidung getroffen wird. Die genauen Bedingungen können variieren, aber in der Regel ist die Nutzungsdauer begrenzt und es können Funktionseinschränkungen vorhanden sein.
+  * **Royalty-Lizenz:** Eine Royalty-Lizenz beinhaltet die Zahlung von Gebühren an den Softwarehersteller basierend auf bestimmten Kriterien, wie beispielsweise der Anzahl der verkauften Einheiten der mit der Software entwickelten Produkte oder dem Umsatz, der durch die Nutzung der Software erzielt wird.
+  * **Academic-Lizenz:** Eine Academic-Lizenz ist für den Einsatz in Bildungseinrichtungen wie Schulen, Universitäten oder Forschungseinrichtungen vorgesehen. Oftmals sind diese Lizenzen zu vergünstigten Konditionen erhältlich und haben spezielle Bedingungen für den akademischen Gebrauch.
+  * **Runtime-Lizenz:** \\ Diese Lizenzart ist von den oben geannten abzugrenzen. Eine Runtime-Lizenz bezieht sich auf die Lizenzierung der Laufzeitumgebung oder Laufzeitbibliothek einer Software. Die Laufzeitumgebung umfasst die erforderlichen Komponenten, die benötigt werden, damit eine Anwendung auf einem bestimmten System ausgeführt werden kann. Die Lizenz erlaubt es den Nutzern, die Laufzeitumgebung in ihren eigenen Anwendungen oder Softwareprodukten zu nutzen und regelt die Bedingungen und Einschränkungen für die Einbindung, Nutzung und Verteilung der Laufzeitkomponenten. \\ \\ Die Lizenzbedingungen können je nach Softwarehersteller und Art der Laufzeitumgebung variieren. Oftmals umfassen Runtime-Lizenzen das Recht zur Einbindung der Laufzeitkomponenten in eigene Anwendungen, zur Verteilung der Anwendungen an Endnutzer und zur Bereitstellung von Updates oder Patches für die Laufzeitbibliotheken. \\ \\ Eine typische Situation, in der Runtime-Lizenzen relevant sind, ist die Verwendung einer Programmiersprache oder einer Entwicklungsplattform, die eine spezifische Laufzeitumgebung erfordert. Beispielsweise benötigen Anwendungen, die in Java entwickelt wurden, eine Java-Laufzeitumgebung (JRE) oder eine Java Virtual Machine (JVM), um ausgeführt zu werden. Die Lizenzierung dieser Laufzeitumgebung erfolgt separat von der eigentlichen Entwicklungsumgebung oder Sprache.
+
+\\
+\\
+
+<WRAP center round info 60%>
+
+Es gibt eine Vielzahl von Möglichkeiten, wie proprietäre Lizenzen gestaltet werden können. Die genaue Form und Bezeichnung der Lizenz hängt oft von der Art der Software, den Anforderungen des Softwareherstellers und den Bedürfnissen der Nutzer ab. Es ist ratsam, die spezifischen Lizenzvereinbarungen der Software zu konsultieren, um die genauen Rechte und Bedingungen der Nutzung zu verstehen.
+
+</WRAP>
+
+===== Freeware =====
+
+Freeware ist eine Bezeichnung für Software, die kostenlos zur Verfügung gestellt wird. Der Begriff "Freeware" setzt sich aus den Wörtern "free" (frei) und "software" zusammen und bezieht sich auf Software, die ohne Kosten heruntergeladen, verwendet und weitergegeben werden kann.
+
+Im Allgemeinen bezeichnet Freeware kostenlose Software, bei der keine Zahlungen oder Lizenzgebühren für die Nutzung anfallen. Es gibt jedoch verschiedene Varianten von Freeware, und es ist wichtig, die spezifischen Bedingungen und Einschränkungen der jeweiligen Freeware-Lizenz zu beachten.
+
+Hier sind einige wichtige Punkte zur Freeware:
+
+  * Kostenlose Nutzung: Freeware kann frei von Benutzern heruntergeladen, installiert und verwendet werden, ohne dass dafür Zahlungen erforderlich sind. Dies bedeutet, dass die Software kostenlos genutzt werden kann, ohne eine Lizenzgebühr zu zahlen.
+  * Rechte und Einschränkungen: Obwohl Freeware kostenlos ist, können dennoch bestimmte Einschränkungen in Bezug auf die Nutzung, Verteilung und Modifikation gelten. Es ist wichtig, die spezifischen Bedingungen der Freeware-Lizenz zu überprüfen, um zu verstehen, welche Rechte und Einschränkungen damit verbunden sind.
+  * Eigentumsrechte: Bei Freeware bleibt in der Regel das Urheberrecht beim Softwareentwickler oder Rechteinhaber. Die Freeware-Lizenz erlaubt es den Benutzern, die Software zu nutzen, aber die Rechte an der Software verbleiben beim Urheber.
+  * Unterscheidung zu Open Source: Freeware und Open Source Software sind nicht dasselbe. Während Freeware kostenlos ist, kann Open Source Software zusätzlich zur kostenlosen Nutzung auch den Zugriff auf den Quellcode und die Möglichkeit zur Modifikation und Weitergabe umfassen.
+
+Es ist wichtig zu beachten, dass Freeware-Lizenzen unterschiedlich sein können und je nach Software unterschiedliche Bedingungen und Einschränkungen aufweisen können.
+
+===== Shareware =====
+
+Shareware ist eine Vertriebs- und Lizenzierungsform für Software, bei der Benutzer die Möglichkeit haben, die Software vor dem Kauf auszuprobieren. Im Gegensatz zu Freeware ist Shareware in der Regel nicht kostenlos, sondern erfordert eine Zahlung, um alle Funktionen oder den uneingeschränkten Zugriff auf die Software freizuschalten.
+
+Hier sind einige wichtige Merkmale von Shareware:
+
+  * Testphase: Shareware bietet Benutzern die Möglichkeit, die Software für eine bestimmte Testperiode kostenlos zu nutzen. Während dieser Testphase können Benutzer die Software ausprobieren und entscheiden, ob sie den vollen Funktionsumfang oder uneingeschränkten Zugriff erwerben möchten.
+  * Zahlung für die Vollversion: Nach Ablauf der Testphase müssen Benutzer in der Regel eine Zahlung leisten, um die Vollversion der Software zu erwerben und den vollen Funktionsumfang freizuschalten. Die Zahlung kann entweder als einmalige Gebühr oder als Abonnementmodell erfolgen.
+  * Einschränkungen in der Testversion: In der Shareware-Testversion können bestimmte Funktionen oder der Zugriff auf bestimmte Bereiche der Software eingeschränkt sein. Dies dient dazu, Benutzer dazu zu ermutigen, die Vollversion zu erwerben, um alle Funktionen nutzen zu können.
+  * Rückgaberecht: Einige Shareware-Anbieter bieten ein Rückgaberecht an, das es Benutzern ermöglicht, eine Rückerstattung zu erhalten, wenn sie mit der Software nicht zufrieden sind. Die genauen Bedingungen für das Rückgaberecht können je nach Anbieter variieren.
+  * Weitergabe und Empfehlungen: Shareware ermutigt Benutzer oft dazu, die Software an andere weiterzugeben und sie zu empfehlen. Dies hilft den Entwicklern, ihre Software bekannt zu machen und potenzielle Käufer zu erreichen.
+
+Shareware bietet Entwicklern die Möglichkeit, ihre Software einer breiten Benutzerbasis vorzustellen und potenzielle Kunden von den Vorteilen der Software zu überzeugen. Für Benutzer ermöglicht Shareware eine ausführliche Testphase, um die Software auf ihre Bedürfnisse und Anforderungen hin zu prüfen, bevor eine Kaufentscheidung getroffen wird.
+
+Es ist wichtig zu beachten, dass Shareware-Lizenzen je nach Anbieter und Software unterschiedlich sein können.
+
+
+===== Freemium =====
+
+Bei der Freemium-Lizenz handelt es sich um ein Modell, bei dem die Basisversion einer Software oder eines Dienstes kostenlos zur Verfügung gestellt wird, während für Zusatzfunktionen, Erweiterungen oder komplette Versionen eine Bezahlung notwendig ist.  
+
+Wichtige Merkmale:  
+  * Grundversion gratis nutzbar – Nutzerinnen und Nutzer können die Software ohne Zahlung starten.  
+  * Zusatzfunktionen kostenpflichtig – für bestimmte Features, Module oder volle Leistungsfähigkeit wird ein kostenpflichtiges Upgrade oder Abonnement erforderlich.  
+  * Quellcode meist nicht offen – im Gegensatz zu Open-Source-Modellen ist der Quellcode in der Regel nicht frei zugänglich oder änderbar.  
+  * Kommerzielle Nutzung oft möglich – die Basisversion oder auch die erweiterte Version kann kommerziell eingesetzt werden, je nach Anbieterbedingungen.  
+  * Der Anbieter verfolgt eine Strategie, Nutzerinnen und Nutzer durch die Gratisversion zu gewinnen und dann durch Zusatzangebote Einnahmen zu erzielen.  
+
+Beispiele:  
+Typische Anwendungen dieses Modells sind Online-Dienste oder Apps, bei denen die Grundfunktionen kostenfrei sind, Premium-Funktionen jedoch bezahlt werden:  
+z. B. Spotify, Slack oder Trello.
+
+===== Open Source Lizenzen =====
+
+<WRAP center round info 60%>
+Open source bedeutet nicht "free to do what ever i want"!
+</WRAP>
+
+Open Source Lizenzen erlauben es den Nutzern, den Quellcode einer Software einzusehen, zu modifizieren und zu verbreiten. Es gibt verschiedene Arten von Open Source Lizenzen, wie z.B. die GNU General Public License (GPL), die Apache License, die MIT License und viele weitere. Jede Lizenz hat unterschiedliche Bedingungen hinsichtlich der Verwendung und Weiterverbreitung der Software.
+
+Die 3 wichtigsten Open Source Lizenzarten werden nun kurz umschrieben.
+
+==== GNU General Public License (GPL) ====
+
+Die [[https://www.gnu.org/licenses/quick-guide-gplv3||GNU General Public License (GPL)]] ist eine weit verbreitete Open Source Lizenz, die von der [[https://www.fsf.org/|Free Software Foundation (FSF)]] entwickelt wurde. Sie ist eine sogenannte Copyleft-Lizenz, die darauf abzielt, die Freiheit von Software zu schützen und sicherzustellen, dass diese Freiheiten auch in abgeleiteten Werken erhalten bleiben.
+
+Dies sind einige Schlüsselprinzipien und -merkmale der GNU General Public License:
+
+  * Freiheit der Nutzung: Die GPL gewährt jedem die Freiheit, die lizenzierte Software für jeden Zweck zu nutzen, sei es privat oder kommerziell. Es gibt keine Beschränkungen hinsichtlich des Verwendungszwecks.
+  * Freiheit der Weitergabe: Sie erlaubt jedem, die lizenzierte Software an andere weiterzugeben, sei es als Original- oder modifizierte Version. Dabei müssen jedoch die Bedingungen der GPL eingehalten werden, insbesondere in Bezug auf die Weitergabe des Quellcodes.
+  * Quellcode-Zugänglichkeit: Die GPL fordert, dass der Quellcode der Software allen Benutzern zur Verfügung gestellt werden muss, die die Software erhalten haben. Dies ermöglicht es Benutzern, den Code einzusehen, zu verstehen, zu ändern und zu verbessern.
+  * Copyleft-Prinzip: Das Copyleft-Prinzip der GPL ist ein wichtiges Merkmal. Es besagt, dass abgeleitete Werke oder modifizierte Versionen der lizenzierten Software ebenfalls unter den Bedingungen der GPL veröffentlicht werden müssen. Dadurch wird sichergestellt, dass die Freiheiten der Software nicht eingeschränkt werden.
+  * Verbreitung der Lizenz: Wenn eine Software unter der GPL lizenziert ist, müssen alle Teile des Programms, einschliesslich der Lizenzbestimmungen, beibehalten und weitergegeben werden. Jeder, der die Software erhält, hat das Recht, sie unter den Bedingungen der GPL zu nutzen und zu verteilen.
+
+Es ist wichtig zu beachten, dass die GPL verschiedene Versionen hat, wie z.B. die GPL-2.0 und die GPL-3.0. Jede Version enthält spezifische Bestimmungen und Klauseln, die die Verwendung, Verteilung und Modifikation der Software regeln. Es ist ratsam, die genaue Version der GPL zu überprüfen, die für eine bestimmte Software verwendet wird.
+
+[[https://wss-redpoint.com/open-source-lizenzen-die-gpl-lizenz|Deutsche Beschreibung auf WSS-Redpoint]]
+
+==== Apache License ====
+
+Die Apache License ist eine Open Source Lizenz, die von der [[https://www.apache.org/licenses/LICENSE-2.0|Apache Software Foundation (ASF)]] entwickelt wurde. Sie ist eine weit verbreitete Lizenz und wird von vielen Open Source Projekten verwendet, darunter auch einige bekannte Software wie der Apache HTTP Server, Hadoop, Kafka und Tomcat.
+
+Dies sind einige Schlüsselprinzipien und -merkmale der Apache License:
+
+  * Freiheit der Nutzung: Die Apache License erlaubt es jedem, die lizenzierte Software für jeden Zweck zu nutzen, sei es privat oder kommerziell. Es gibt keine Beschränkungen hinsichtlich des Verwendungszwecks.
+  * Quellcode-Zugänglichkeit: Im Gegensatz zur GNU General Public License (GPL) erfordert die Apache License nicht zwingend die Veröffentlichung des Quellcodes der Software. Die Lizenz legt jedoch fest, dass bestimmte Hinweise und Copyright-Informationen beibehalten und weitergegeben werden müssen.
+  * Modifikation und Weitergabe: Die Apache License erlaubt es Entwicklern, die lizenzierte Software zu modifizieren und abgeleitete Werke zu erstellen. Diese modifizierten Versionen können unter einer anderen Lizenz veröffentlicht werden, solange die ursprünglichen Lizenzbestimmungen eingehalten werden.
+  * Patentrechte: Ein wichtiges Merkmal der Apache License ist die Einräumung von Patentlizenzen. Wenn ein Patentinhaber Code zur lizenzierten Software beiträgt, gewährt er anderen Benutzern eine Lizenz, dieses Patent im Zusammenhang mit der Nutzung, Modifikation und Verbreitung der Software zu nutzen. Dadurch wird ein gewisses Mass an Schutz vor Patentstreitigkeiten gewährleistet.
+  * Haftungsausschluss: Die Apache License enthält einen Haftungsausschluss, der den Entwickler von der Haftung für mögliche Schäden oder Konsequenzen, die aus der Nutzung der Software entstehen könnten, befreit.
+
+Die Apache License ist bestrebt, Entwicklern eine flexible Lizenzierungsoption zu bieten, die es ermöglicht, Softwareprojekte in verschiedenen Kontexten zu nutzen und weiterzuentwickeln. Sie fördert die Zusammenarbeit und den Austausch von Softwarelösungen innerhalb der Open Source Community.
+
+Es ist wichtig zu beachten, dass es verschiedene Versionen der Apache License gibt, wie z.B. die Apache License 2.0. Jede Version hat spezifische Bestimmungen und Klauseln, die die Verwendung, Verteilung und Modifikation der Software regeln. Es ist ratsam, die genaue Version der Apache License zu überprüfen, die für eine bestimmte Software verwendet wird.
+
+[[https://wss-redpoint.com/open-source-lizenzen-die-apache-lizenz|Deutsche Beschreibung auf WSS-Redpoint]]
+
+==== MIT License ====
+Die MIT-Lizenz ist eine Open Source Lizenz, die ihren Ursprung am Massachusetts Institute of Technology (MIT) hat. Sie ist eine sehr liberale und weit verbreitete Lizenz, die von vielen Open Source Projekten verwendet wird. Die MIT-Lizenz ermöglicht es Entwicklern, Software frei zu nutzen, zu modifizieren und zu verteilen, solange der Urheberrechtshinweis und die Lizenzbestimmungen beibehalten werden.
+
+Dies sind einige Schlüsselprinzipien und -merkmale der der MIT-Lizenz:
+
+  * Freiheit der Nutzung: Die MIT-Lizenz gewährt jedem die Freiheit, die lizenzierte Software für jeden Zweck zu nutzen, sei es privat oder kommerziell. Es gibt keine Beschränkungen hinsichtlich des Verwendungszwecks.
+  * Quellcode-Zugänglichkeit: Die MIT-Lizenz erfordert, dass der Urheberrechtshinweis und die Lizenzbestimmungen in allen Kopien der Software beibehalten werden. Dies beinhaltet normalerweise die Aufrechterhaltung des Urheberrechtshinweises im Quellcode und in der Dokumentation der Software.
+  * Modifikation und Weitergabe: Die MIT-Lizenz erlaubt es Entwicklern, die lizenzierte Software zu modifizieren und abgeleitete Werke zu erstellen. Die modifizierten Versionen können unter einer anderen Lizenz veröffentlicht werden, solange der Urheberrechtshinweis und die Lizenzbestimmungen der MIT-Lizenz beibehalten werden.
+  * Haftungsausschluss: Die MIT-Lizenz enthält einen Haftungsausschluss, der den Entwickler von der Haftung für mögliche Schäden oder Konsequenzen, die aus der Nutzung der Software entstehen könnten, befreit.
+
+Die MIT-Lizenz zeichnet sich durch ihre Einfachheit und Flexibilität aus. Sie ermöglicht es Entwicklern, Softwareprojekte frei zu nutzen und zu modifizieren, während sie gleichzeitig klare Anforderungen für die Beibehaltung von Urheberrechtshinweisen und Lizenzbestimmungen stellt. Diese Lizenz wird häufig von Entwicklern gewählt, die eine grosszügige und unkomplizierte Lizenzierungsoption für ihre Open Source Projekte suchen.
+
+Es ist wichtig zu beachten, dass die MIT-Lizenz keine Copyleft-Bestimmungen enthält, wie sie beispielsweise in der GPL vorkommen. Das bedeutet, dass modifizierter Code, der unter der MIT-Lizenz veröffentlicht wird, unter einer anderen Lizenz vertrieben werden kann, ohne die Freigabe des Quellcodes zu erfordern.
+
+[[https://wss-redpoint.com/open-source-lizenzen-die-mit-lizenz|Deutsche Beschreibung auf WSS-Redpoint]]
+
+
+----
+
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter, Andre Probst
+

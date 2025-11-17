@@ -1,0 +1,53 @@
+====== LU08c - LogAudit ======
+
+===== Lernziele =====
+  * Die drei wichtigsten Kennzahlen für LogFiles nennen und erkläre können.
+
+===== LogFiles analysieren =====
+Das Zugriffsprotokoll (access_log) eines Webservers enthält viele interessante Informationen über die Nutzung einer Website. Oder, auf den Punkt gebracht, sie enthält: Wann welche Inhalte wie oft von wie vielen Nutzern abgerufen werden. 
+
+Die Nutzung einer Website kann durch Kennzahlen beschrieben werden, die ohne grossen Aufwand und mit Hilfe von Auswertungsprogrammen aus den LogFiles generiert werden können. Dies sind: 
+  * Summe aller Aktiväten auf dem Server (Traffic)
+  * Anzahl der abgerufenen Seiten (Page Impressions)   
+  * Anzahl aller übertragenen Dateien (Hits) 
+  * Anzahl der Anwendersitzungen (Visits) 
+  * 
+
+^Website Traffic | Der Begriff //Website Traffic// ist ein Oberbegriff und bezeichnet die gesamte Nutzungsintensität einer Website. Sprich ist die Messung von Besuchern, Seitenaufrufen oder übertragenen Datenmengen und ist damit quasi die **Summe aller Aktivitäten auf dem Webserver**. |
+^Page Impressions | //Page Impressions// (oft auch Page Views genannt) sind die Anzahl der HTML-Dokumente, die vom WebServer abgerufen wurden. Grafiken und andere Dateiformate bleiben unberücksichtigt. In einer LogFile-Analyse sollten somit immer mehr //Hits// als //Page Impressions// vorhanden sein. Der Zugriff auf eine HTML-Seite, in der 10 Grafiken enthalten sind, verursacht 11 Hits und eine Page Impression. |
+^Hits | //Hits// sind die Anzahl aller Objekte, die vom WebServer abgerufen werden. Dabei ist es gleichgültig, ob es sich dabei um statische HTML-Dokumente oder dynamisch durch CGI-Skripte erzeugte Dokumente handelt, um Grafiken, Audio- oder Videodateien oder andere Dateitypen. Der Begriff //Hits// wurde in den Anfangsjahren des WWW eingeführt, ist aber eine wenig aussagekräftige Messgrösse: Wenn eine HTML-Seite viele grafische Elemente enthält, werden auch mehr Hits erzeugt, ohne dass dies etwas über das Benutzerverhalten aussagen würde. |
+^Visits | //Visits// sind die Anzahl der Anwendersitzungen einer Website. Eine Anwendersitzung ist dabei ein zusammenhängender Nutzungszeitraum einer Website durch einen Clientrechner, beginnend mit dem erstmaligen Abruf einer Ressource auf dieser Website. Ein //Visit// wird als beendet betrachtet, wenn der Clientrechner einen festgelegten Zeitabschnitt lang keine Anforderung gestellt hat. Visits sind nicht gleichbedeutend mit der Anzahl der Benutzer einer Website. Die Berechnung der Anzahl der eindeutigen Benutzer ist nur eingeschränkt und unter einigen Annahmen möglich. Welche Probleme hier bestehen, wird nachfolgend erläutert. |
+
+Man kann es sich wie eine russische Matroschka vorstellen: Traffic > Visits > Page Views > Hits, und parallel dazu die Impressions als Zählung, wie oft ein Element im Sichtfeld landet. 
+
+Mit der Ermittlung dieser vier Werte sind die Möglichkeiten der LogFile-Analyse längst noch nicht erschöpft. Das Verhältnis aus Page Impressions und Visits – wie viele Seiten werden pro Anwendersitzung abgerufen – sagt viel über das Nutzungsverhalten der Besucher aus. Eine geringe Zahl an Page Impression pro Visit kann auf eine wenig attraktive Website hindeuten. Doch ein hoher Wert muss nicht unbedingt das Gegenteil bedeuten. Eine grosse Zahl an Page Impression pro Visit kann auch Ausdruck einer nicht intuitiven Benutzerführung und Navigation sein. 
+
+Wird die Zeit bei einer Analyse mitberücksichtigt, führt das zu Rückschlüssen auf die durchschnittliche Dauer eines Besuches. Ausserdem sind Aussagen über das Nutzungsverhalten an bestimmten Tageszeiten oder Wochentagen möglich. 
+Auch Aussagen über die überweisende Website (Referrer), also die Website, von der der Besucher über einen Link oder eine Suchanfrage gekommen ist, lassen sich treffen. War dies eine Suchmaschine, können in der Regel sogar die Suchbegriffe ausgewertet werden, die der Benutzer dort eingegeben hat. 
+Nicht zuletzt zeigt eine LogFile-Analyse auch Fehler in einer Website an. Der protokollierte Antwortcode 404 weist auf ein fehlendes Dokument hin. Ein häufiges Auftreten des Antwortcodes 500 deutet eventuell Ressourcen-Probleme des WebServers an. 
+Auch versuchte und unerlaubte Zugriffe auf zugangsgeschützte Dokumente oder Verzeichnisse können ausgewertet werden.
+
+===== LogFiles mit webalizer auswerten =====
+Für die Auswertung der WebServer LogFiles steht eine Vielzahl von Anwendungen zur Verfügung. Im folgenden Beispiel verwenden wir //webalizer// in dem Prinzip zu Erläutern. 
+
+Das Tool wird auf ein LogFile losgelassen, wertet dieses aus und speichert das Ergebnis in Form eines Reports ab. Der Report besteht aus Grafiken und Statistiken und wird in Form von HTML-Seiten generiert, die sich dann über den Web-Browser betrachten lassen. Der Zugriff auf die WebSite Statistik sollte dabei immer mit einem Passwort geschützt werden, um nicht ein Sicherheitsloch zu eröffnen.
+
+==== Übersicht ====
+Das nachfolgene Schaubild zeigt eine Visualisierung der Logfiles des Jahres 2017 einer Webseite durch Tools wie //Webalizer//.
+
+{{:modul:m183:learningunits:lu08:lu08c_01.png?600|Visuell ausgewertetes Logile}}
+
+==== Detailed Statistics ====
+Nach einer Übersichtsgrafik liefert //webalizer// weitere Detailauswertungen zur konfigurierten WebSite. In der nachfolgenden Abbildung sind die Kennzahlen auf Monatsebeneersichtlich. 
+
+ {{:modul:m183:learningunits:lu08:lu08c_03.jpg?600|}}
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir
+
+
+
+
+
+
+

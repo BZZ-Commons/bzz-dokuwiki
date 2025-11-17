@@ -1,0 +1,200 @@
+====== LU06 - Vertiefte SQL-Abfragen ======
+
+In **LU02** haben Sie gelernt, wie Sie mit  
+  * //SELECT// Spalten auswählen  
+  * //FROM// die Tabelle bestimmen  
+  * //WHERE// Bedingungen setzen  
+  * //ORDER BY// die Ergebnisse sortieren  
+
+Daten aus einer Tabelle abfragen können.  
+
+In dieser Lektion gehen wir einen Schritt weiter: Wir schauen uns an, **wie Bedingungen in WHERE noch mächtiger kombiniert werden können**, wie Sie mit //LIMIT// die Ergebnismenge einschränken und mit //DISTINCT// doppelte Werte vermeiden können.  
+
+===== Vergleichsoperatoren =====
+
+Die **einfachsten Bedingungen** vergleichen Werte mit den Operatoren:  
+<WRAP center box 80% round><code sql>= , < , > , <= , >= , <></code></WRAP>
+
+<WRAP center box 80% round><code sql>SELECT Series_Title, Released_Year
+FROM imdb_top_1000
+WHERE Series_Title = 'Interstellar';</code></WRAP>
+
+Beachten Sie:  
+Wir haben hier nach einem Wert vom Typ **Text** gesucht.  
+Texte sind **alphanumerische Zeichen** und müssen immer in **Anführungszeichen** stehen:  
+  * //"Interstellar"// oder //'Interstellar'//  
+  * Ohne Anführungszeichen versteht MySQL das Wort als **Namen einer Tabelle oder Spalte**.  
+
+Beispiele:  
+
+<WRAP center box round 80%><code sql>
+-- Filme vor 1970
+SELECT Series_Title, Released_Year
+FROM imdb_top_1000
+WHERE Released_Year < 1970;
+</code></WRAP>
+
+<WRAP center box round 80%><code sql>
+-- Filme mit Bewertung über 9.0
+SELECT Series_Title, IMDB_Rating
+FROM imdb_top_1000
+WHERE IMDB_Rating > 9.0;
+</code></WRAP>
+
+===== BETWEEN =====
+
+Prüfen, ob ein Wert zwischen zwei Grenzen liegt.  
+
+<WRAP center box round 80%><code sql>
+-- Filme aus den 90ern
+SELECT Series_Title, Released_Year
+FROM imdb_top_1000
+WHERE Released_Year BETWEEN 1990 AND 1999;
+</code></WRAP>
+
+Achtung:  
+Der Operator //BETWEEN// schliesst die beiden Grenzen **ein** (also inkl. 1990 und 1999).  
+Die folgenden beiden Bedingungen sind also **gleichwertig**:  
+
+<WRAP center box round 80%><code sql>
+Released_Year BETWEEN 1990 AND 1999
+</code></WRAP>
+
+<WRAP center box round 80%><code sql>
+Released_Year >= 1990 AND Released_Year <= 1999
+</code></WRAP>
+
+
+===== IN =====
+
+Prüfen, ob ein Wert in einer **Liste** vorkommt.  
+
+<WRAP center box round 80%><code sql>
+-- Filme von Nolan oder Coppola
+SELECT Series_Title, Director
+FROM imdb_top_1000
+WHERE Director IN ('Christopher Nolan', 'Sofia Coppola');
+</code></WRAP>
+
+===== LIKE =====
+
+Mit //LIKE// können Sie nach **Textmustern** suchen.  
+  * //%// = beliebig viele Zeichen  
+  * //_// = genau ein Zeichen  
+
+<WRAP center box round 80%><code sql>
+-- Alle Filme, die mit "The" beginnen
+SELECT Series_Title
+FROM imdb_top_1000
+WHERE Series_Title LIKE 'The%';
+</code></WRAP>
+
+<WRAP center box round 80%><code sql>
+-- Alle Filme, die "Star" im Titel enthalten
+SELECT Series_Title
+FROM imdb_top_1000
+WHERE Series_Title LIKE '%Star%';
+</code></WRAP>
+
+
+===== IS NULL / IS NOT NULL =====
+
+Der Wert **NULL** (sprich: //nall//, englisch ausgesprochen) bedeutet in SQL:  
+→ Es ist **kein Wert vorhanden**.  
+
+Das heisst, dass in dem entsprechenden Feld nichts in der Tabelle eingetragen ist.  
+Das ist etwas anderes als **0** (Zahl) oder ein leerer Text ''.  
+
+Beispiel in unserer Filmdatenbank: Manche Filme haben **keinen Metascore**((Der Metascore ist ein Wert, den die Plattform Metacritic vergibt. Er basiert auf Kritiken von professionellen Filmkritiker:innen (z. B. aus Zeitungen, Magazinen, Online-Portalen). Alle Kritiken werden in eine numerische Skala von 0 bis 100 umgerechnet.
+Anschliessend bildet Metacritic daraus einen gewichteten Durchschnittswert.
+)).  
+
+<WRAP center box round 80%><code sql>
+-- Filme ohne Metascore
+SELECT Series_Title, Meta_score
+FROM imdb_top_1000
+WHERE Meta_score IS NULL;
+</code></WRAP>
+
+<WRAP center box round 80%><code sql>
+-- Filme mit Metascore
+SELECT Series_Title, Meta_score
+FROM imdb_top_1000
+WHERE Meta_score IS NOT NULL;
+</code></WRAP>
+
+===== Logische Verknüpfungen (AND / OR / NOT) =====
+
+Mehrere Bedingungen können kombiniert werden:  
+
+<WRAP center box round 80%><code sql>
+-- Alle Sci-Fi-Filme von Christopher Nolan
+SELECT Series_Title, Genre, Director
+FROM imdb_top_1000
+WHERE Director = 'Christopher Nolan'
+  AND Genre LIKE '%Sci-Fi%';
+</code></WRAP>
+
+<WRAP center box round 80%><code sql>
+-- Filme von Nolan oder Coppola
+SELECT Series_Title, Director
+FROM imdb_top_1000
+WHERE Director = 'Christopher Nolan'
+   OR Director = 'Sofia Coppola';
+</code></WRAP>
+
+<WRAP center box round 80%><code sql>
+-- Alle Filme, die KEINE Komödie sind
+SELECT Series_Title, Genre
+FROM imdb_top_1000
+WHERE NOT Genre LIKE '%Comedy%';
+</code></WRAP>
+
+===== DISTINCT =====
+
+Mit //DISTINCT// werden **doppelte Werte entfernt**.  
+Beispiel: In der Tabelle gibt es viele "Certificates" (Jugendfrei, ab 16 Jahren etc.) mehrfach.  
+
+<WRAP center box round 80%><code sql>
+-- Alle verschiedenen Genres
+SELECT DISTINCT Certificate
+FROM imdb_top_1000;
+</code></WRAP>
+
+Ohne //DISTINCT// würde jedes Certificate so oft erscheinen, wie es in der Tabelle vorkommt.  
+
+
+===== LIMIT =====
+
+Oft ist es nicht sinnvoll, **alle Zeilen** auszugeben. Mit //LIMIT// können Sie die Anzahl der Zeilen einschränken.  
+
+<WRAP center box round 80%><code sql>
+-- Die 5 bestbewerteten Filme
+SELECT Series_Title, IMDB_Rating
+FROM imdb_top_1000
+ORDER BY IMDB_Rating DESC
+LIMIT 5;
+</code></WRAP>
+
+<WRAP center box round 80%><code sql>
+-- Die ersten 10 Filme in der Tabelle
+SELECT Series_Title, Released_Year
+FROM imdb_top_1000
+LIMIT 10;
+</code></WRAP>
+
+===== Zusammenfassung =====
+
+Sie können WHERE-Bedingungen mit vielen Operatoren kombinieren:  
+
+^ Operator ^ Beispiel ^
+| = , < , > , <= , >= , <> | //IMDB_Rating > 9.0// |
+| BETWEEN ... AND ... | //Released_Year BETWEEN 1990 AND 1999// |
+| IN (...) | //Director IN ('Nolan','Coppola')// |
+| LIKE | //Series_Title LIKE 'The%'// |
+| IS NULL | //Meta_score IS NULL// |
+| IS NOT NULL | //Meta_score IS NOT NULL// |
+| AND / OR / NOT | //Director = 'Nolan' AND Genre LIKE '%Sci-Fi%'// |
+| DISTINCT | //SELECT DISTINCT Genre// keine Doppelten Ergebnisse |
+| LIMIT | //LIMIT 5// für die ersten 5 Ergebnisse |
+

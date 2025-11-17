@@ -1,0 +1,32 @@
+====== LU08.A02 - Pfadvariable mit Bruno ======
+
+<WRAP center round todo 60%>
+Nutze eine Environment-Variable im Pfad deiner Requests.
+</WRAP>
+
+In der Aufgabe ''Bookshelf testen'' hast du einige Requests erstellt.  
+Diese verwenden aber noch einen hart codierten Pfad zur Webapplikation: ''https://it.bzz.ch/book/...''.  
+Stattdessen wollen wir den Zugriffspfad in einer Environment-Datei speichern.
+
+  - Lege eine Environment-Datei (z. B. ''dev.json'') in Bruno an.  
+  - Definiere dort eine Variable mit einem sprechenden Namen (z. B. ''baseUrl'').  
+  - Weise der Variable den Pfad zur Webapplikation als Wert zu (''https://it.bzz.ch/book'').  
+  - Ersetze in den Requests den Pfad ''https://it.bzz.ch/book/'' durch die Variable, z. B. ''%%{{baseUrl}}%%/read/...''.  
+
+===== Hinweis =====
+Eine Environment-Datei in Bruno ist eine einfache JSON-Datei. Beispiel:
+
+<code javascript>
+{
+  "name": "dev",
+  "vars": {
+    "baseUrl": "https://it.bzz.ch/book"
+  }
+}
+</code>
+
+Aktiviere in Bruno das passende Environment, bevor du deine Requests ausführst.
+
+----
+{{tag>M450-LU08}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Kevin Maurizi

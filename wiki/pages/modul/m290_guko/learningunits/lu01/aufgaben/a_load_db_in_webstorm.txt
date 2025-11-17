@@ -1,0 +1,14 @@
+====== LU01: Zusatz-Auftrag ======
+
+Falls Sie den Leseauftrag und alle Aufgaben bereits erledigt haben und zudem MySQL Community Server und Webstorm installiert haben, dann versuchen Sie ein Datensatz mit Webstorm (bzw. dem Datenbank-Plugin) zu importieren:
+
+Ein Beispieldatensatz mit Filmen und deren IMDB-Bewertungen: {{ :modul:m290_guko:learningunits:lu01:aufgaben:movies.csv |Daten als CSV-Datei downloaden.}}
+
+
+Das Ziel der Übung: ein Liste mit den Filmen ist in Webstorm sichtbar.
+{{:modul:m290_guko:learningunits:lu01:aufgaben:screenshot_2025-08-17_at_21.56.39.png?direct&600|}}
+
+===== Wie vorgehen? =====
+  - Stellen Sie als erstes eine Verbindung zum MySQL-Server her in Webstorm -> "Data Sources" anklicken -> MySQL auswählen -> (Name: M290@localhost | Host: localhost | Port: 3306 | User: root).
+  - Erstellen Sie ein neues **Schema** (Rechts-Klick auf MySQL-Connection (M290@localhost) -> New -> Schema (Name: imbd_database)
+  - Importieren der Daten: Rechts-Klick auf vorhin erstelltes Schema -> Import/Export -> Import Data from Files -> CSV auswählen

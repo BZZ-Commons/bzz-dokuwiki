@@ -1,0 +1,15 @@
+==== LU10.A01 GET-Methoden implementieren ====
+
+Holen Sie sich die Nullable-Config mit dem Cherry-Pick ''ef8491f''.
+
+Implementieren Sie die beiden folgenden API-Methoden.
+  * AccountApiController.getAccounts()
+  * BookingApiController.getBookings()
+
+Dabei gilt grob folgender Ablauf:
+  - subject (ProjectName) aus dem JWT auslesen
+  - Alle Account- bzw. Booking-Objekte aus der DB laden.
+  - Datenbank-Objekte (ch.bzz...Account / ch.bzz...Booking) zu API-Objekte (ch.bzz.generated.model.Account / ch.bzz.generated.model.Booking) mappen.
+  - **Optional**: Default-Dummy-Objekte zurückgeben, falls noch nichts in der Datenbank gespeichert ist.
+
+Für den Fall, dass es zu mühsam ist, mehrere Klassen mit demselben Klassennamen hanzuhaben, können Sie Ihre eigens implementiere Datenbank-Klassen auch umbenennen.

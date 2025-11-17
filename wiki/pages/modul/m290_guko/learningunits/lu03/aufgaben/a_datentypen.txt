@@ -1,0 +1,36 @@
+====== LU03A1 – Zuordnungsaufgabe: Wähle den passenden Datentyp ======
+
+**Arbeitsform:** Partnerarbeit (Peer Work)\\  
+**Hilfsmittel:** Nur Unterrichtsmaterial, keine Websuche, keine KI\\  
+**Zeit:** 10 Minuten\\  
+**Ergebnis:** Tabelle (auf der nächsten Seite im Textfeld erstellen mit den Lösungen und kurzer Begründung)  
+
+===== Einleitung =====
+Stellen Sie sich vor, Sie entwickeln die Datenbank für einen **Webshop, der Hosen verkauft**.  
+Damit die Bestellungen, Produkte und Lagerbestände effizient gespeichert werden können, müssen die **richtigen Datentypen** für jede Spalte gewählt werden.  
+
+Ihre Aufgabe ist es, die passenden Datentypen für folgende Informationen zu finden.  
+
+
+===== Aufgabe =====
+Ordnen Sie den folgenden Fällen den passenden MySQL-Datentyp zu.  
+Begründen Sie jeweils kurz Ihre Entscheidung.  
+
+
+^ Fall ^ Welcher Datentyp passt? ^
+| Produkt-Titel wie "Jeans Slim Fit" (bis 50 Zeichen) | ? |
+| Produkt-Beschreibung (bis 255 Zeichen) | ? |
+| Lagerbestand (Stückzahl) | ? |
+| Preis pro Stück | ? |
+| Bestelldatum | ? |
+| Lieferdatum (inkl. Uhrzeit) | ? |
+| Bio-Hose oder nicht (aus Biobaumwolle, ja/nein) | ? |
+| Grössenkategorie (nur ein Zeichen, z. B. S, M, L) | ? |
+
+
+===== Vorgehen =====
+  - Kopieren Sie die einzelnen Zeilen dieser Tabelle
+  - gehen Sie auf die nächste Seite und erstellen Sie im Textfeld eine neue Tabelle mit zwei Spalten
+  - Fügen Sie die kopierten Zeilen in die neu erstellte Tabelle ein
+  - Lösen Sie die Aufgabe (Datentypen und Begründung in die zweite Spalte schreiben)
+

@@ -1,0 +1,90 @@
+====== PyCharm - Installation prüfen ======
+
+<WRAP center round todo 60%>
+Diese Anleitung zeigt dir, wie du deine Installation von PyCharm und Python prüfen kannst.
+Falls bei einem Schritt ein Problem oder eine Fehlermeldung auftaucht, kontaktiere deine Lehrperson.
+Zeige ihr **unbedingt** allfällige Fehlermeldungen.
+</WRAP>
+
+
+===== Startbildschirm =====
+Je nach Situation siehst du beim Starten von PyCharm eine von 3 möglichen Ansichten.
+
+==== Beim ersten Start ====
+{{:howto:pycharm:newpycharm02.png?400|}}
+
+Über den Button [New Project] erstellst du dein erstes PyCharm-Projekt.
+
+==== Kein geöffnetes Projekt ====
+{{:howto:pycharm:newpycharm01.png?400|}}
+
+Über den Button [New Project] erstellst du dein erstes PyCharm-Projekt.
+
+==== Letztes Projekt ====
+{{:howto:pycharm:newpycharm03.png?400|}}
+
+Falls du zuletzt ein Projekt bearbeitet hast, wird dieses automatisch geöffnet.
+Im Hauptmenu kannst du unter "File" => "New Project ..." ein neues Projekt erstellen.
+
+===== Projekt erstellen =====
+Egal über welchen Weg du dein neues Projekt erstellst, du siehst immer das gleiche Fenster für die Einstellungen.
+
+{{:howto:pycharm:newpycharm04.png?400|}}
+
+==== Location ====
+Prüfe bei **jedem** neuen Projekt, in welchem Ordner es erstellt wird.
+
+  * ''C:\BZZ\Python\'': Auf dem Laufwerk ''C:'' verwende ich die Ordnerstruktur ''BZZ\Python'' für meine Projekte
+  * ''MyFirstProject'': Das ist der Name meines Projekts. Für jedes Projekt wird ein neuer Ordner mit einem eindeutigen Namen erstellt.
+
+==== Create a welcome script ====
+Für dein erstes Projekt lässt du dir ein einfaches Welcome-Script erstellen.
+Dadurch kannst du anschliessend gleich testen, ob alles geklappt hat.
+
+In späteren Projekten wirst du dieses Script nicht mehr brauchen.
+
+==== Interpreter Type ====
+Achte darauf, dass hier [Project venv] ausgewählt ist.
+Durch diese Einstellung wird ein Ordner innerhalb deines Projekts erstellt, der alle benötigten Bibliotheken enthält.
+Dadurch vermeiden wir mögliche Probleme durch Abhängigkeiten in verschiedenen Projekten.
+
+==== Python version ====
+Falls du verschiedene Python-Versionen installiert hast, kannst du hier die gewünschte Version auswählen.
+In der Regel werden wir immer mit der neuesten Version arbeiten.
+
+==== Projekt erstellen ====
+Nachdem du die Einstellungen geprüft hast, kannst du mit dem Button [Create] dein Projekt erstellen.
+
+===== Projekt testen =====
+==== Venv prüfen ====
+
+Nach ein paar Sekunden solltest du das Script "main.py" sehen.
+
+{{:howto:pycharm:newpycharm05.png?400|}}
+
+Öffne die Terminal-Ansicht über das untere Seitenmenü.
+Im Terminal sollte am Anfang der Zeile ''(.venv)'' stehen. 
+Dies zeigt uns, dass das Virtual Environment erstellt und aktiviert wurde.
+
+===== Script ausführen =====
+Im Script ''main.py'' siehst du auf Zeile 14 ein grünes Dreieck-Symbol.
+Über dieses Symbol kannst du dein Script ausführen.
+
+{{:howto:pycharm:newpycharm06.png?400|}}
+
+Klicke auf das grüne Dreieck und wähle "Run 'main'" aus.
+
+Im unteren Teil des Fensters siehst du nun, wie dein Script ausgeführt wurde.
+
+{{:howto:pycharm:newpycharm07.png?400|}}
+
+  * Zeile 1: Dies ist der Befehl, mit dem PyCharm dein Script ausführt.
+  * Zeile 2: Das Beispielskript hat diese Ausgabe erzeugt.
+  * Zeile 4: ''Process finished with exit code 0'' zeigt an, dass das Skript fehlerlos durchgeführt und beendet wurde.
+
+<WRAP center round info 60%>
+Wenn alle Schritte wie in den Screenshots geklappt haben, ist deine Installation bereit.
+
+Andernfalls wendest du dich an deine Lehrperson und zeigst ihr allfällige Fehlermeldungen.
+</WRAP>
+

@@ -1,0 +1,27 @@
+====== LU01b - Betriebssysteme-Shell ======
+<sup>Internal reference: learningunits/01-2.md</sup>
+\\
+===== Ziele =====
+  -Ich weiss, welchen Sinn und Zweck eine Unix-Shell erfüllt.
+  -Ich kenne die Struktur des Betriebssystem-Filesystems (Linux, MacOS, Windows)
+  -Ich kenne die grundlegenden Unix-Shell-Befehle, um
+    * Verzeichnisse zu erstellen, umbenennen und zu löschen 
+    * in ein Verzeichnis zu wechseln
+    * den Inhalt eines Verzeichnisses aufzulisten
+    * den aktuellen Pfad (wo ich mich befinde) anzuzeigen
+    * Dateien zu kopieren, umzubenennen, zu löschen
+    * ganze Verzeichnisse (inkl. Inhalt) zu kopieren
+
+\\
+===== Grundlagen =====
+  -[[https://youtu.be/xjQ-Bb2Ud6c|Betriebssystem-Shell - Grundlagen]]: Was ist eine Shell? Am Beispiel der Unix-Shell, wo Sie tendenziell in der Praxis häufiger antreffen werden (als die Power-Shell), um eine Webapplikation in Betrieb zu nehmen.
+  -[[https://share.vidyard.com/watch/KFNXP9MCABLdRM7CkNs8K7?|Betriebssystem-Shell - Praxis]]: An einem konkreten Fallbeispiel lernen Sie die Filesystem-Kommandos der OS-Shell anzuwenden.
+
+\\
+===== Übungen =====
+Bearbeiten Sie die Übungen ''00/02_Exercises/01_Exercise.md'' aus dem Repository.
+
+
+----
+
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Daniel Garavaldi

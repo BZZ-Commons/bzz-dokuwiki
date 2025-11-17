@@ -1,0 +1,72 @@
+===== LU02d – Zusatzauftrag: Challenges mit eigenem Datenset =====
+**Beginnen Sie mit diesem Auftrag nur, falls noch Zeit übrig ist und sie alle anderen Fragen beantwortet haben.**
+
+==== Voraussetzungen ====
+Arbeitsform: Partnerarbeit -> Suchen Sie sich einen Lernpartner, eine Lernpartnerin, welche/r auch bereits die restlichen Aufträge abgeschlossen hat. Die Lehrperson hilft beim "matchen".
+Zeitaufwand: restliche Zeit der Lektion
+
+
+==== Schritte ====
+  - Besuchen Sie die Seite [[https://www.kaggle.com| kaggle.com]].
+  - Legen Sie ein Profil an. -> Falls Sie Ihre persönliche E-Mail-Adresse nicht verwenden möchten, nutzen Sie [[https://temp-mail.org| Temp-Mail]].
+  - Suchen Sie in der Suchmaske nach interessanten Datensätzen (z. B. Pokémon, Netflix, Books, Art, Fifa World Cup etc.).
+  - Aktivieren Sie den Filter **Datasets**.
+  - Laden Sie den Datensatz als **CSV** herunter (Download Dataset as zip).
+  - Importieren Sie die Datei in eine **neue Datenbank (Schema)** in WebStorm.
+  - Studieren Sie die Daten und erstellen Sie **drei Aufgaben** für Ihre/n Lernpartner/in. //Beispiel:// „Welches Pokémon aus der 1. Generation hat die meisten HP?“
+  - Notieren Sie sich auch die **Lösungen**.
+  - Tauschen Sie den Auftrag mit Ihrer/m Lernpartner/in aus.
+  - Lösen Sie den Auftrag, den Sie von Ihrer/m Lernpartner/in erhalten haben, mit **SQL-Abfragen**.
+  - Besprechen Sie Ihre Ergebnisse und tauschen Sie sich über die **Lösungswege** aus.
+
+
+==== Tipp für Lernende ====
+Wählen Sie einen Datensatz, der Sie interessiert (z. B. **Filme, Musik, Sport, Games, Social Media**), aber suchen Sie max. 10 Minuten nach einem Datensatz und entscheiden Sie sich dann für einen.  
+Achten Sie darauf, dass die Tabelle nicht zu kompliziert ist – ideal sind **5–15 Spalten** und ein paar hundert Zeilen.
+
+
+==== Beispiel: Pokémon-Dataset (Kaggle) ====
+Angenommen, Sie haben den Datensatz //Pokemon.csv// importiert.  
+Die Tabelle **pokemon** hat unter anderem folgende Spalten:
+
+  * //id// – eindeutige Nummer  
+  * //name// – Name des Pokémon  
+  * //generation// – Generation (1–6)  
+  * //type1, type2// – Typen (z. B. Feuer, Wasser)  
+  * //hp// – Lebenspunkte (Hit Points)  
+  * //attack, defense, speed// – Kampfwerte  
+
+
+=== Aufgabe 1: Stärkstes Pokémon in Generation 1 ===
+**Frage:** Welches Pokémon aus der 1. Generation hat die meisten HP?
+<WRAP center box round 80%>
+<code sql>
+SELECT name, hp
+FROM pokemon
+WHERE generation = 1
+ORDER BY hp DESC;
+</code>
+</WRAP>
+
+
+=== Aufgabe 2: Schnellstes Feuer-Pokémon ===
+**Frage:** Welches Feuer-Pokémon (//type1 = 'Fire'//) ist am schnellsten?
+<WRAP center box round 80%>
+<code sql>
+SELECT name, speed
+FROM pokemon
+WHERE type1 = 'Fire'
+ORDER BY speed DESC;
+</code>
+</WRAP>
+
+=== Aufgabe 3: Legendäre Pokémon mit höchstem Angriff ===
+**Frage:** Welches legendäre Pokémon hat den höchsten Angriffswert?
+<WRAP center box round 80%>
+<code sql>
+SELECT name, attack
+FROM pokemon
+WHERE legendary = 'True'
+ORDER BY attack DESC;
+</code>
+</WRAP>

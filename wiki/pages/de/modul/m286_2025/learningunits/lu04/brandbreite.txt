@@ -1,0 +1,25 @@
+====== LU04g - Funknetzwerk ======
+
+====== Übertragung über Funk ======
+
+Funknetzwerke übertragen Daten mithilfe elektrischer Impulse (Signale). Diese Impulse, auch elektromagnetische Wellen genannt, sind nicht zwingend auf ein bestimmtes Übertragungsmedium gebunden. Daher spricht man bei Funknetzen auch von einer ungebundenen Übertragung. Funkwellen können im Grunde alle Medien verwenden, in denen sich elektromagnetische Wellen übertragen lassen.
+
+==== Störfaktoren bei Funknetzwerken ====
+Ähnlich wie bei Kabelnetzwerken werden auch Funknetzwerke von bestimmten Faktoren beeinflusst. Folgende Faktoren sind bei Funknetzwerken zu beachten:
+
+=== Andere, benachbarte Funknetze ===
+Elektromagnetische Wellen (Funkwellen) können sich gegenseitig «überlagern» und somit eine Übertragung verunmöglichen. Man spricht in diesem Fall von Interferenzen. Dies passiert v. a. dann, wenn die Funkwellen
+im gleichen Frequenzbereich arbeiten. Aus diesem Grund benutzen Funknetzwerke unterschiedliche Frequenzbänder. Für den Betrieb von WLANs gemäss IEEE 802.11 stehen die sog. ISM-Frequenzbänder (Industrial, Scientific, Medical) zur Verfügung. Diese Frequenzbänder sind international normiert und stehen jedermann frei zur Verfügung. Für WLANs wurden bestimmte Frequenzen im 2.4-GHz- und im 5-GHz-Band reserviert. Das 2.4-GHz-Band
+ist mittlerweile international einheitlich geregelt. Die Aufteilung des 5-GHz-Bands hingegen kann von Land zu Land stark variieren.
+
+{{:modul:m117:learningunits:lu04:ism.jpg?300|}}
+
+=== Hindernisse im Übertragungsweg zwischen Sender und Empfänger ===
+
+Die Sendeleistung von WLAN-Komponenten ist relativ gering und beträgt im 2.4-GHz-Bereich ~100 mW, im 5-GHz-Bereich max. 1000 mW. Da auch Funkwellen einer Dämpfung unterworfen sind, ist die Übertragungsdistanz von WLAN-Komponenten wegen der kleinen Sendeleistung begrenzt. Je mehr Hindernisse wie z. B. Mauern, Böden oder ähnlichem die Funkwellen passieren bzw. durchdringen müssen, desto schwächer wird das Funksignal.
+Das bedeutet, dass die mögliche Übertragungsdistanz stark abnimmt. Bestimmte Materialien mit hoher Dichte wie z . B. Backsteine oder Stahlbeton können unter Umständen von den Funkwellen gar nicht durchdrungen werden. Deshalb ist die Realisation grösserer WLANs ohne vorherige Analyse der örtlichen Gegebenheiten wenig erfolgversprechend. Bei kabelgebundenen Netzwerken ist von Anfang an klar, bis wo das Netzwerk verfügbar
+sein wird. Die genaue Abdeckung (Verfügbarkeit) eines Funknetzwerks ist meist erst nach dessen Installation ersichtlich.
+
+{{:modul:m117:learningunits:lu04:wlandaempfung2.jpg?500|}}
+
+{{:modul:m117:learningunits:lu04:wlandaempfung3.jpg?500|}}

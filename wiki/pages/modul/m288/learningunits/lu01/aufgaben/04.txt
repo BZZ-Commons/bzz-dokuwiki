@@ -1,0 +1,26 @@
+====== LU01.A04 - Visual Studio Code für HTML einrichten ======
+
+===== Rahmenbedingungen =====
+  * Sozialform: individual
+  * Hilfsmittel: 
+    * VS Code Editor
+    * [[https://www.w3schools.com/js/tryit.asp?filename=tryjs_myfirst|W3School/js/ersteSchritte]]
+  * Zeit: 15 Minuten
+  * Erwartetes Resultat: Ihr VS Studio ist für HTML eingerichtet. Sie können HTML-Files mittels VS Studio ausführen und am Browser anschauen. 
+
+===== Ausgangslage =====
+In der Aufgabe //LU01.A03 - Erste Schritte// haben Sie Ihr JavaScript direkt in der W3School-Tesumgebung in einem HTML-File eingebettet und ausgeführt. In der vorliegenden Aufgabe geht es darum dies in unserem Visual Studio Codeeditor zu tun. Im nachfolgenden Video wird gezeigt, wie Sie Ihr VS Studio Editor für HTML-Files vorbereiten können, sodass Sie den Code bearbeiten, und das Resultat dann im Browser ansehen können.
+
+{{ :modul:m288:learningunits:lu01:aufgaben:visual_studio_code_fuer_html_einrichten.mp4 | Anleitung wie VS Studio für HTML eingerichtet wird}}
+===== Aufgabe A =====
+Richten Sie Ihren VS Editor gemäss Video entsprechend ein, kopieren den Code der Aufgabe LU01.A03 in Ihr VS Editor und lassen als Funktionskontrolle das Script laufen bzw. lassen Sie sich das Ergebnis im Browser anzeigen. 
+
+===== Aufgabe B =====
+  - Passen Sie die Beschriftung des Buttons auf //Zeige Datum// an. 
+  - Erweitern Sie die Aufgabe um ein weiteres Button mit der Beschriftung //Zeige Namen//, der beim Klicken Ihren Namen im Format <h2> am Monitor ausgibt. 
+
+===== Lösungen =====
+[[modul:m288:learningunits:lu01:Lösungen:04|Lösung LU01.L04]]
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir / Elena Mastrandrea

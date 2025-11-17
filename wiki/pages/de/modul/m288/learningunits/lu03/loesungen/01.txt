@@ -1,0 +1,29 @@
+====== LU03.L01 - Operatoren erkennen ======
+
+
+===== Auftrag =====
+Nachfolgend finden Sie einige Vergleiche. Ihre Aufgabe besteht aus zwei Teilen:
+
+  - Vermutung anzustellen, was in der Konsole womöglich ausgegeben wird.
+  - Ihre Annahmen durch Laufen-Lassen des Codes im Visual Studio Code zu kontrollieren.
+
+  // Vergleichsoperatoren
+  console.log("1: ", 42 == 21); -> false
+  console.log("2: ", 42 != 21); -> true
+  console.log("3: ", 42 > 21);  -> false 
+  console.log("4: ", 42 < 21);  -> false
+  console.log("5: ", 42 >= 21); -> true
+  console.log("6: ", 42 <= 21); -> false
+  console.log("7: ", 42 <= 42); -> true
+  // Logische Operatoren  
+  console.log("8: ", 42 <= 42 && 42 != 21); -> true
+  console.log("9: ", true && true);         -> true
+  console.log("10: ", true && false);       -> false
+  console.log("11: ", true || true);        -> true
+  console.log("12: ", true || false);       -> true
+  console.log("13: ", true);                -> true
+
+{{:de:modul:m288:learningunits:lu03:loesungen:lu03_l01.jpg?600|}}
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

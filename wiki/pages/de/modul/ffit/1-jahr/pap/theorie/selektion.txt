@@ -1,0 +1,38 @@
+====== 03 Selektion ======
+
+| {{de:modul:m319:learningunits:lu03:pap_selektion.png|}} | Eine Selektion ist eine Entscheidung im Programmablauf. Zunächst besteht eine Selektion aus einer Bedingung, die mit Ja oder Nein beantwortet werden kann. Je nachdem, ob die Bedingung erfüllt ist, unterscheidet sich der Ablauf des Programms. \\ \\ Sobald die Selektion nicht mehr relevant ist für den Programmablauf, führt man die unterschiedlichen Pfade wieder zusammen. Eine Selektion hat zwei Nachfolger: \\ * einen Nachfolger wenn die Bedingung zutrifft \\ * einen Nachfolger wenn sie nicht zutrifft. |
+
+== Beispiel: Marmeladenbrot ==
+| {{de:modul:m319:learningunits:lu03:pap_marmeladenbrot.png|}} | Wir erweitern das Beispiel mit dem Butterbrot zum Marmeladenbrot: \\ Einige von Ihnen hätten lieber ein Marmeladenbrot, andere mögen keine Marmelade. |
+
+===== Erweiterungen =====
+Diese Erweiterungen sind im ISO-Standard nicht vorgesehen.
+In der Praxis erweisen sich diese Elemente hingegen als sehr praktisch.
+
+=== Mehrfachselektion ===
+Wie Sie oben gelernt haben, gibt es bei der Bedingung einer "normalen" Selektion einen Ja- und einen Nein-Pfad.
+Bei einer Mehrfachselektion wird die Bedingung so formuliert, dass mehr als zwei Antworten möglich sind.
+Die meisten Programmiersprachen kennen Konstrukte für Mehrfachselektionen.
+Daher erlauben wir uns, die Norm etwas zu erweitern.
+
+== Beispiel: Pub ==
+In einem Pub gelten folgende Alterslimiten:
+* Unter 16 Jahren haben Sie keinen Zutritt
+* Am Wochenende haben nur Personen ab 20 Jahren Zutritt
+
+^ Einfach-Selektion ^ Mehrfach-Selektion ^
+| {{de:modul:m319:learningunits:lu03:pap_pub_einfach.png|}} | {{de:modul:m319:learningunits:lu03:pap_pub_mehrfach.png|}} |
+| Hier wird der ganze Ablauf in Einfachselektionen (Ja/Nein) unterteilt. | In diesem Beispiel haben wir zunächst eine Mehrfachselektion (Alter). \\ Ist der Besucher zwischen 16 und 20 Jahre alt, so folgt eine Einfachselektion (Wochenende). \\ \\ Wie Sie sehen, wirkt der Ablauf dadurch wesentlich kompakter und einfacher. |
+
+Wenn wir uns streng an die Norm (DIN 66001) halten, so gibt es keine Mehrfachselektionen.
+Solche Mehrfachbedingungen müssten in mehrere, einzelne Selektionen aufgeteilt werden.
+
+=== Sechseck als Symbol ===
+Anstelle der Raute als Symbol für eine Selektion, können Sie auch das Sechseck verwenden.
+Dadurch kann man am Computer die Bedingung leichter in das Kästchen platzieren.
+
+{{de:modul:m319:learningunits:lu03:pap_selektion_sechseck.png|}}
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Marcel Suter

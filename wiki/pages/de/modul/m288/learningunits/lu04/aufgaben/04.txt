@@ -1,0 +1,60 @@
+====== LU04.A04 - Mehrdimensionale Arrays mit Attributbezeichner ======
+
+===== Rahmenbedingungen =====
+  * Sozialform: individual
+  * Hilfsmittel: 
+    * Nur Lehrmittel, keine Websuche oder AI
+    * Zeit: 40 Minuten
+  * Erwartetes Resultat: Ein Script mit einem mehrdimensionalen Array inkl. der unten beschriebenen Teilschritte. 
+
+===== Ausgangslage =====
+Ihr Unternehmen gibt Ihnen den Auftrag eine Kundendatei in JavaScript anzulegen. Anschliessend sollen die Daten verarbeitet werden.
+
+===== Auftrag A: Array anlegen =====
+Legen Sie ein mehrdimensionales Array mit dem Namen //Actors// an, wobei Sie dieses Mal die Attributnamen zusätzlich verwenden: 
+
+^ Name ^Vorname ^Geburtsname^ Geburtstag ^Zivilstand ^Anrede ^Rabatt ^
+| Müller-Stahl | Armin | --- | 12.03.1956| Geschieden | Herr | 5 |
+| Page | Elliot | Ellen | 14.03.1996 | Ledig | Herr | 10 |
+| Wurst | Conchitta | Tom | 06.11.1988 | --- | --- | 15 |
+| Redford | Robert | --- | 18.08.1936 | Verheiratet | Herr | 25 |
+
+===== Auftrag B: Array ausgeben =====
+Lassen Sie sich den Tabelleninhalt in umgekehrter Reihenfolge ausgeben, sprich Sie beginnen beim Index 3 und enden beim Index 0. Verwenden Sie, um herauszubekommen wievele Arrayelemente wirklich vorhanden sind, die Eigenschaft //array.length//.
+
+===== Auftrag C: einzelne Werte verändern =====
+Elliot Page hat geheiratet und erhält daher 5% mehr Rabatt als vorher. Lassen Sie sich zur Kontrolle zunächst den einzelnen Datensatz, und anschliessend den gesammten Datenbestand ausgeben.
+
+===== Auftrag D: Wert am Anfang ergänzen =====
+Ergänzen Sie am Anfang des Arrays einen neuen Kunden: Herr Sidartha Gupta, 12.12.1969, verwittwet. Fehlende Werte ergänzen Sie mit "---" bzw. 0. Kontrollieren Sie Ihr Ergebnis durch eine Ausgabe in der Console.
+
+**Hinweis**: //unshift()// ist die Methode, die Sie benötigen.
+
+===== Auftrag E: Wert am Ende ergänzen =====
+Ergänzen Sie am Ende des Arrays einen neuen Kunden: Frau Sydney Sweeney, 12.09.1997, ledig. Prüfen Sie das Ergebnis durch eine Consolenausgabe.
+
+**Hinweis**: //push()// ist die Methode, die Sie benötigen.
+
+===== Auftrag F: Wert in der Mitte löschen =====
+Robert Redford ist leider verstorben und muss aus der Liste gelöscht werden. Lassen Sie sich wieder alle Daten ausgeben, sicher ist sicher.
+
+===== Auftrag G: Formatierte Ausgabe =====
+Lassen Sie abschliessend die Daten wie folgt auf der Konsole ausgeben:
+
+  - Anrede
+  - Vorname
+  - Nachname (in Grossbuchstaben)
+  - Rabatt
+  - Geburtstag
+  - Zivielstand
+
+Hinweis: 
+  * Für die Grossbuchstaben-Darstellung benötigen  Sie die Methode //toUpper//
+  * Beispiel: //Employee[0][1].toUpperCase());//
+
+===== Lösungen =====
+[[de:modul:m288:learningunits:lu03:Lösungen:04|LU03.L04]]
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

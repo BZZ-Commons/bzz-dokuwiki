@@ -1,0 +1,49 @@
+==== 02 Szenarien ====
+Ein Szenario beschreibt eine konkrete Nutzungssituation einer Person (Persona/Nutzer:in) mit einem Produkt oder Prototyp. Es macht die User Story greifbarer, indem es den Ablauf einer Handlung als kurze Geschichte darstellt: „Wer tut was, in welchem Kontext, mit welchem Ziel?“\\
+
+Szenarien helfen, Abläufe zu strukturieren, Usability-Probleme früh zu erkennen und ein realistisches Bild vom Nutzen zu bekommen.\\
+Bei der Beschreibung der Szenarien muss zwischen dem "normalen" Ablauf (happy case) und den Sonderfällen (edge case) unterschieden werden.
+----
+=== Happy Case (Idealablauf): ===
+
+Der ideale, reibungslose Ablauf ohne Probleme oder Störungen.
+
+  * Reibungsloser Ablauf: „Nutzerin Lisa öffnet die Lern-App, findet sofort die richtige Übung und beendet sie erfolgreich.“
+  * Fokus: Erwarteter Nutzen und einfachster Weg zum Ziel.\\
+\\
+**Szenario "Happy Case":**  
+
+  - Lisa öffnet die Lern-App auf ihrem Tablet.
+  - Auf der Startseite sieht sie direkt die Übung „Bruchrechnen – Aufgabe 3“.
+  - Sie klickt auf die Übung, liest die Aufgabe und bearbeitet sie ohne Probleme.
+  - Alle Antworten werden korrekt gespeichert.
+  - Nach Abschluss sieht Lisa sofort ihr Ergebnis und erhält eine positive Rückmeldung.
+  - Lisa fühlt sich motiviert und bereit für die nächste Übung.\\
+
+----
+
+
+=== Edge Case (Problem-/Randfall):===
+
+Szenarien, in denen etwas schief läuft oder vom Standard abweicht.
+
+  * Fehlerhafter Ablauf: „Lisa öffnet die App, die Übung lädt aber nicht, weil das WLAN ausfällt.“
+  * Fokus: Wie geht das System mit Fehlern, Sonderfällen oder untypischen Situationen um?\\
+\\
+**Szenario "Happy Case":**  
+
+  - Lisa öffnet die Lern-App, doch die Startseite lädt nur sehr langsam, weil das WLAN instabil ist.
+  - Die Übung „Bruchrechnen – Aufgabe 3“ wird zunächst nicht angezeigt.
+  - Lisa versucht, die App neu zu starten, und sieht plötzlich eine Fehlermeldung.
+  - Nach einigen Versuchen kann sie die Übung starten, aber eine vorherige Antwort wurde nicht gespeichert.
+  - Lisa ist frustriert und muss die Übung wiederholen.
+
+----
+
+=== Worauf man bei der Erstellung achten muss ===
+
+  * Klarheit: einfache, kurze Beschreibungen in Alltagssprache.
+  * Perspektive: immer aus Sicht des Nutzers, nicht des Systems.
+  * Kontext: Situation und Ziel des Nutzers klar machen.
+  * Konsequenz: zeigen, was am Ende passiert (erfolgreich oder problematisch).
+  * Vergleich: Happy Case und Edge Case nebeneinanderstellen, um die Robustheit des Designs zu prüfen.

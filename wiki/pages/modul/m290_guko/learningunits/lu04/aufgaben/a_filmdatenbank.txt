@@ -1,0 +1,41 @@
+====== LU04A1 – ERD: Filmdatenbank als Crow's Foot Diagramm ======
+
+Sie haben diese Aufgabe bereits als ERD umgesetzt – in Chen-Notation. Überführen Sie nun dieses Diagramm in die Crow's-Foot-Notation.
+
+===== Voraussetzungen =====
+  * Arbeitsform: Partnerarbeit  
+  * Hilfsmittel: Nur Unterrichtsmaterial (keine Websuche, keine KI)  
+  * Zeit: 20 Minuten  
+  * Erwartetes Resultat: Ein Bild mit einem **ERD (Entity-Relationship-Diagramm) in Crow's-Foot-Notation**, das den unten beschriebenen Business Case abbildet.  
+
+
+===== Business Case =====
+Wir möchten eine kleine **Filmdatenbank** entwerfen. Folgende Informationen sollen gespeichert werden:
+
+  * Filme haben einen Titel und ein Erscheinungsjahr.  
+  * Filme werden in einem **Filmstudio** produziert.  
+  * Filme haben mindestens einen **Regisseur**.  
+  * In Filmen spielen mehrere **Schauspieler:innen** mit.  
+  * Jedes Filmstudio gehört einem **Besitzer**.  
+
+
+===== Aufgabe =====
+Analysieren Sie den Business Case und erstellen Sie ein **Entity-Relationship-Diagram (ERD)**:
+
+  - Identifizieren Sie die **Entitäten**.  
+  - Bestimmen Sie die **Attribute** jeder Entität (inkl. **Primärschlüssel**).  
+  - Zeichnen Sie die **Beziehungen** zwischen den Entitäten.  
+  - Bestimmen Sie die **Kardinalitäten** der Beziehungen (1:1, 1:n, n:m) und setzen Sie die Fremdschlüssel entsprechend.
+  - Bestimmen Sie die Datentypen (Integer, Varchar etc.) der Attribute.  
+
+Tipp: Zeichnen Sie zuerst die Entitäten mit den wichtigsten Attributen, verbinden Sie diese mit Beziehungen und überlegen Sie sich anschliessend die Kardinalitäten.  
+
+
+===== Hinweise =====
+  * Überlegen Sie, welche Attribute zu welcher Entität gehören (z. B. Name des Regisseurs).    
+
+
+===== Abgabe =====
+  * Laden Sie Ihr ERD als Bilddatei (z. B. PNG/JPG) auf der nächsten Seite hoch.  
+  * Bereiten Sie sich darauf vor, Ihr Modell im Plenum zu erklären.  
+

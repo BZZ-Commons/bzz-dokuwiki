@@ -1,0 +1,33 @@
+====== LU06e - Lizenzmodelle ======
+
+===== Einleitung =====
+
+In der Informatik spielt der Begriff **Lizenz** eine zentrale Rolle – egal, ob man Software entwickelt, nutzt oder weiterverbreitet.  
+Eine Lizenz ist im Grunde eine **rechtliche Vereinbarung**, die festlegt, **was man mit einer Software (oder einem digitalen Werk) tun darf und was nicht**.
+
+Ohne eine Lizenz wäre jede Software automatisch durch das **Urheberrecht** geschützt, und niemand dürfte sie legal kopieren, verändern oder weitergeben.  
+Durch Lizenzen geben die Urheberinnen und Urheber bestimmten Personen oder der Öffentlichkeit **Nutzungsrechte** – zum Beispiel das Recht, ein Programm zu installieren, den Quellcode einzusehen oder es weiterzuentwickeln.
+
+Lizenzen schützen also **beide Seiten**:
+  * **Entwicklerinnen und Entwickler**, indem sie bestimmen können, wie ihre Arbeit verwendet wird.
+  * **Nutzerinnen und Nutzer**, indem sie wissen, welche Rechte und Pflichten sie haben.
+
+Gerade in der heutigen Welt, in der Software aus vielen Quellen stammt und oft auf Open-Source-Komponenten aufbaut, ist es entscheidend, die **Unterschiede zwischen verschiedenen Lizenzarten** zu verstehen.  
+Ob eine Lizenz offen, eingeschränkt oder kommerziell ist, kann beeinflussen, **wie man Software im eigenen Projekt verwenden darf** – und ob man damit gegen das Gesetz verstösst.
+
+<WRAP center round tip 60%>
+**Kurz gesagt:** Lizenzen sind die Spielregeln der digitalen Welt. \\
+Wer sie versteht, kann Software sicher, legal und verantwortungsvoll einsetzen – und eigene Projekte korrekt schützen.
+</WRAP>
+
+===== Arten von Lizenzen =====
+
+Die verschiedenen Softwarelizenzen unterscheiden sich darin, **wie frei** man eine Software nutzen, verändern und weitergeben darf.  
+Die folgende Tabelle zeigt die wichtigsten Lizenzarten im Überblick:
+
+^ Lizenztyp        ^ Beschreibung                                                                 ^ Quellcode sichtbar ^ Nutzung kostenlos ^ Änderungen erlaubt ^ Kommerzielle Nutzung ^ Beispiele                    ^
+| **Proprietär**   | Geschlossene, kommerzielle Software. Nutzung nur mit Kauf oder Lizenzvertrag. | Nein               | Nein              | Nein               | Nur mit Erlaubnis     | Microsoft Office, Photoshop |
+| **Freeware**     | Kostenlos nutzbar, aber nicht frei. Keine Änderungen oder Weitergabe erlaubt. | Nein               | Ja                | Nein               | Eingeschränkt         | Google Chrome, Skype        |
+| **Shareware**    | Testversion, später kostenpflichtig.                                          | Nein               | Teilweise         | Nein               | Eingeschränkt         | WinRAR, ältere Tools        |
+| **Freemium**     | Basisversion gratis, Zusatzfunktionen kostenpflichtig.                        | Nein               | Teilweise         | Nein               | Ja                    | Spotify, Slack, Trello      |
+| **Open Source**  | Quellcode offen, Nutzung, Änderung und Weitergabe erlaubt (je nach Lizenz).  | Ja                 | Ja                | Ja                 | Ja (bedingt)          | Linux, React, VLC           |

@@ -1,0 +1,100 @@
+====== LU10b: Gruppieren mit GROUP BY – Kennzahlen pro Kategorie ======
+
+{{ :modul:m290_guko:learningunits:lu10:theorie:group_by-sum.webp?900 |}}
+
+<WRAP round 80% box center>
+**Warum GROUP BY?**  
+Ohne ''GROUP BY'' erhalten Sie **eine einzige** Aggregatkennzahl über **alle** Zeilen.  
+Mit ''GROUP BY'' erhalten Sie **eine Zeile pro Gruppe** (z. B. pro Jahr, pro Firma, pro Gemeinde).
+</WRAP>
+
+===== 1. Regeln bei Abfragen mit Aggregatfunktionen =====
+<WRAP round 80% box center>
+  * In ''SELECT'' dürfen neben Aggregaten **nur** Spalten stehen, die auch im ''GROUP BY'' vorkommen.  
+  * ''WHERE'' filtert **Zeilen vor** dem Gruppieren; ''HAVING'' filtert **Gruppen nach** dem Gruppieren.  
+</WRAP>
+
+<WRAP alert center round 70%>
+**Typischer Fehler:**  
+<code sql>
+SELECT gemeindename, SUM(straftaten_total)
+FROM einbrueche;  -- ❌ fehlendes GROUP BY → Fehler/Zufallswerte
+</code>
+Immer **alle nicht aggregierten Spalten** ins ''GROUP BY'' aufnehmen.
+</WRAP>
+
+===== 2. Beispiel: Wie viele Missionen pro Firma (Top 10)? =====
+<WRAP round 80% box center>
+<code sql>
+SELECT company, COUNT(*) AS starts
+FROM missions
+GROUP BY company
+ORDER BY starts DESC
+LIMIT 10;
+</code>
+**Was passiert?** Wir **zählen** pro Firma und sortieren absteigend; ''LIMIT'' begrenzt die Ausgabe.
+{{:modul:m290_guko:learningunits:lu10:theorie:company_starts.png?nolink&300|}}
+//Firmen und Starts – Infos zu den Firmen-Kürzel gibts ganz am Schluss dieser Seite.//
+</WRAP>
+
+===== 3. Beispiel: Total Einbrüche pro Jahr (Kanton ZH) =====
+<WRAP round 80% box center>
+<code sql>
+SELECT ausgangsjahr, SUM(straftaten_total) AS total_faelle
+FROM einbrueche
+GROUP BY ausgangsjahr
+ORDER BY ausgangsjahr DESC
+LIMIT 5;
+</code>
+**Was passiert?** ''SUM(...)'' aggregiert pro Jahr (''GROUP BY ausgangsjahr''); ''ORDER BY ... DESC'' sortiert chronologisch absteigend. ''LIMIT 5'' -> max 5 Ergebnisse.
+{{:modul:m290_guko:learningunits:lu10:theorie:einbrueche_zh.png?nolink&300|}}
+//Während den Pandemie-Jahren ging die Zahl der Einbrüche im Kanton Zürich zurück – jetzt steigt sie wieder an.//
+</WRAP>
+
+
+===== 4. HAVING – Gruppen nach Kennzahlen filtern =====
+
+=== 4.1 Warum HAVING? ===
+<WRAP round 80% box center>
+''WHERE'' kann **keine** Aggregatfunktionen enthalten.  
+Wenn Sie **Gruppen** nach einer **Kennzahl** (z. B. ''SUM(...)'', ''COUNT(...)'') filtern möchten → **''HAVING''**.
+</WRAP>
+
+
+=== 4.2 Beispiel: Jahre mit über 25'000 Einbruch-Fällen (ZH) ===
+<WRAP round 80% box center>
+<code sql>
+SELECT ausgangsjahr, SUM(straftaten_total) AS total_faelle
+FROM einbrueche
+GROUP BY ausgangsjahr
+HAVING SUM(straftaten_total) > 25000
+ORDER BY total_faelle DESC;
+</code>
+**Was passiert?** ''HAVING'' filtert nur jene **Jahre**, deren Summe über dem Schwellwert liegt.
+{{:modul:m290_guko:learningunits:lu10:theorie:total_faelle_having.png?nolink&300|}}
+</WRAP>
+
+
+<WRAP tip center round 70%>
+**WHERE vs. HAVING**  
+• ''WHERE'': Zeilen **vor** dem Gruppieren filtern (z. B. Jahre ab 2018).  
+• ''HAVING'': **Gruppen** nach **Aggregaten** filtern (z. B. ''SUM(...) > 25000'').
+</WRAP>
+
+
+
+=== Infos zu den Firmen involviert in die "Space Race" ===
+<WRAP box center round 80%>
+^ Kürzel in Liste ^ Ausgeschrieben / Organisation ^ Land / Region ^
+| **RVSN USSR** | Strategic Missile Forces of the USSR (Raketentruppen der strategischen Bestimmung) | **Sowjetunion** (historisch) |
+| **CASC** | China Aerospace Science and Technology Corporation | **China** |
+| **Arianespace** | Arianespace S.A. (europäischer Launch-Dienstleister) | **Europa / Frankreich** |
+| **General Dynamics** | General Dynamics Astronautics (u. a. Atlas-Programm; historisch) | **USA** |
+| **VKS RF** | Russian Aerospace Forces (WKS / Vozdushno-Kosmicheskiye Sily) | **Russland** |
+| **NASA** | National Aeronautics and Space Administration | **USA** |
+| **SpaceX** | Space Exploration Technologies Corp. | **USA** |
+| **US Air Force** | United States Air Force (historischer Launch-Operator) | **USA** |
+| **ULA** | United Launch Alliance (JV von Boeing & Lockheed Martin) | **USA** |
+| **Boeing** | The Boeing Company (Boeing Launch Services / Delta-Programm) | **USA** |
+
+</WRAP>

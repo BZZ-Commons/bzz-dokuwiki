@@ -1,0 +1,24 @@
+====== LU01.A01 - Initialize React App ======
+
+===== Requirements  =====
+  * Work type: individual
+  * Timeframe: 15 Minutes
+  * Means of aid: 
+      * only teaching materials
+  * Expected result: Running react app
+
+===== Assignments =====
+  - If you didn't install Node.js already, install it downloading it from [[https://nodejs.org/en|here]]
+  - Go to you terminal and execute npx create-react-app your-project-name (replace your-project-name with your desired project name)
+  - Install all dependencies
+  - Open your project in WebStorm and execute npm run start
+  - Go to http://localhost:3000, if you see a spinning react logo, you're done
+
+===== Vocabulary =====
+^ English ^ German ^ 
+| execute | ausführen|
+| dependencies | Abhängigkeiten |
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Kamil Demirci

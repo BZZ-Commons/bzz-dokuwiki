@@ -1,0 +1,91 @@
+====== LU04b - Mehrdimensionale Arrays ======
+
+===== Einleitung =====
+In der realen Welt müssen wir Listen von beispielweise Mitarbeitenden verarbeiten. Nun, diese Kunden haben in der Regel nicht nur ein einziges Attribut wie Name, sondern auch Vornamen, Kundennummern, Geburtstag, etc. In einer Tabelle würde das wie folgt aussehen.
+
+{{:de:modul:m288:learningunits:lu03:mehrdimensionalearrays1.png?500|Tabelle mit Mitarbeitende}}
+
+Wir haben also schnell die Situation, dass wir Arrays (Zeilen) in Arrays (Spalten) verarbeiten müssen. Hier sprechen wir also über die sogenannten  //mehrdimensionale Arrays//. 
+
+===== Das Mehrdimensionale Array in JavaScript =====
+Das Array, das wir aus der obigen Tabelle ableiten würden, sähe dann wie nachfolgend aus:
+
+  let Employee = [
+    [100, 'Ram', 'Agra'],
+    [101, 'Shyam', 'Aligarh'],
+    [102, 'Amit', 'Gwalior']
+  ];
+
+Genau wie bei einer Tabelle, hat dieses Array 2 Dimensionen: 
+
+  - Zeilen
+  - Spalten
+Was kann man mit dem mehrdimensionalen Array alles tun? 
+
+
+===== Einzelne Werte auslesen =====
+Der Zugriff geschieht wie bei einer Tabelle mittels Spalten- und Zeilen-Index, wobei wir immer mit dem 0. Zeile und 0. Spalte anfangen
+
+  console.log(Employee[0][1]); 
+  
+**Ausgabe:** Ram
+
+  console.log(Employee[2][2]); 
+  
+**Ausgabe:** Gwalior
+
+===== Werte ändern =====
+Wie bei einer normalen Variable, wird auch dem Array links, ein bestimmer Wert rechts zugeordnet. Wichtig ist dabei wieder der Zeilen- und Schleifenindex.
+
+  Employee[1][2] = 'Delhi'; 
+  console.log(Employee[1]); 
+  
+**Ausgabe.** Es wird das 2. Arraylement ausgegeben --> [101, 'Shyam', 'Delhi']
+
+===== Über alle Mitarbeitenden iterieren (durchgehen) =====
+Das Thema //Schleifen// wird in 2 Wochen thematisiert. Betrachten Sie also diesen Eintrag als //Blick in die Zukunft//.
+
+Mittels einer Schleife kann ich durch alle Arrayelemente durchgehen und diese in einer Form meiner Wahl ausgeben.
+
+
+  for (let i = 0; i < Employee.length; i++) {
+    console.log("ID:", Employee[i][0], "Name:", Employee[i][1], "Stadt:", Employee[i][2]); 
+  }
+
+**Ausgabe:**
+ID: 100 Name: Ram Stadt: Agra
+ID: 101 Name: Shyam Stadt: Aligarh
+ID: 102 Name: Amit Stadt: Gwalior
+
+===== Arrays mit Attributen bauen =====
+Wenn wir, zusätzlich zu den Daten, auch Tabellenspalten speichern wollen, tun wir dies in den Array-Attributen.
+
+  let Employee2 = [
+    {id: 100, name:'Ram', vorname: 'Agra'},
+    {id: 101, name: 'Shyam', vorname: 'Aligarh'},
+    {id: 102, name: 'Amit', vorname: 'Gwalior'}
+  ];
+
+
+===== Weitere Methoden =====
+Grundsätzlich verhält sich ein mehrdimensionale Array genau so wie ein normales Array. Sprich alle Methoden, die für ein normales Array gelten, gelten auf für das mehrdimensionale Array.
+
+^Methode ^Beschreibung | Anwendungsbeispiel |
+^push() | Fügt ein Element ans Ende eines Arrays hinzu. |
+^pop() | Entfernt das letzte Element.|
+^shift() | Entfernt das erste Element. |
+^unshift() | Fügt ein Element am Anfang hinzu.  |
+^filter() | Gibt ein neues Array zurück mit allen Elementen, die eine Bedingung erfüllen. |
+^find() | Gibt das erste Element zurück, das eine Bedingung erfüllt.  |
+^findIndex() | Gibt den Index des ersten passenden Elements zurück. | 
+^splice() | Manipulation des Arrays an einer beliebigen Position. | 
+^slice() | Erstellt eine Kopie eines Array-Ausschnitts, ohne das Original zu verändern.| 
+
+
+===== Zusatzmaterial =====
+  * [[https://www.w3schools.com/java/java_arrays_multi.asp|W3School- JavaScript Mehrdimensionale Arrays]]
+  * [[https://wiki.selfhtml.org/wiki/JavaScript/Array#Mehrdimensionale_Arrays|SelfHTML - JS Mehrdimensionale Arrays ]]
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir
+

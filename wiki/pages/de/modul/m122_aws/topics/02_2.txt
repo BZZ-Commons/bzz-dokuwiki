@@ -1,0 +1,147 @@
+===== Operatoren =====
+<sup>Internal reference: topics/02-2.md</sup>
+\\
+==== Einleitung ====
+Folgende Operator-Typen gibt es:
+  * Arithmetische Operatoren 
+  * String Operatoren 
+  * Relational Operatoren 
+  * Boolean Operatoren
+  * File Test Operatoren 
+
+\\
+==== Arithmetische Operatoren (Integer) ====
+
+**Nur simple arithmetische Ganzzahl-Berechnungen** können mit der Shell berechnet werden. (Fliesskommazahlen nur mit dem Pipe-Tool ''bc''.)
+
+Es gibt in der Bash drei Varianten, um einen arithmetischen Ausdruck zu berechnen:
+
+  - ''var=$(( Int-Arithmetik ))'' 
+  - ''var=$[ Int-Arithmetik ]''  
+
+Die wichtigsten Operatoren sind:
+
+| Operation | Erklärung                                       |
+| a + b     | Addition (a plus b)                             |
+| a   - b     | Substraction (a minus b)                        |
+| a   * b     | Multiplication (a mal b)                        |
+| a / b     | Division (Ganzzahl) (a geteilt durch b)         |
+| a % b     | modulo (der Ganzzahlrest von a geteilt durch b) |
+| a *  * b    | Potenz (a hoch b)                               |
+
+
+\\
+=== Beispiel ===
+<code>
+$ diff=$(( 100/5 ))
+$ echo $diff
+20
+</code>
+
+\\
+==== String-Operatoren ====
+
+\\
+=== String-Länge ermitteln ===
+<code>
+STRING=das ist ein String
+echo ${#STRING}            # 18
+</code>
+
+\\
+=== Index ===
+Finde die numerische Position in ''$STRING'' irgendeines Zeichens in ''$SUBSTRING''. Beachte, dass der ''expr'' Befehl benutzt wird.
+
+<code>
+STRING=das ist ein String
+SUBSTRING=asd
+expr index $STRING $SUBSTRING     # 1 ist die Position des ersten 'd' in $STRING
+</code>
+
+\\
+=== Substring Extraktion ===
+
+Extrahiere einen Substring der Länge ''$LEN'' von ''$POS'' ausgehend aus ''$STRING''. Beachte, dass der erste Buchstabe der 0.te ist.
+
+<code>
+STRING=das ist ein String
+POS=4
+LEN=3
+echo ${STRING:$POS:$LEN}   # ist
+</code>
+
+Wenn ''$LEN'' weggelassen wird, wird der Substring von ''$POS'' bis zum Ende der Zeile extrahiert.
+
+<code>
+STRING=das ist ein String
+echo ${STRING:1}           # $STRING Inhalt, ohne das erste Zeichen
+echo ${STRING:14}          # ring
+</code>
+
+\\
+==== Beispiel Datenextraktion ====
+
+<code>
+# Code um den Vornamen des Datensatzes zu extrahieren
+DATARECORD=last=Clifford,first=Johnny Boy,state=CA
+COMMA1=$(expr index $DATARECORD ',')  # 14 position of first comma
+CHOP1FIELD=${DATARECORD:$COMMA1}       #
+COMMA2=$(expr index $CHOP1FIELD ',')
+LENGTH=$(expr $COMMA2   - 6 - 1)
+FIRSTNAME=${CHOP1FIELD:6:$LENGTH}      # Johnny Boy
+echo $FIRSTNAME
+</code>
+
+\\
+==== Substring ersetzen ====
+
+<code>
+STRING=sein oder nicht sein
+</code>
+
+Ersetze das erste Vorkommen des Substrings
+
+<code>
+STRING=sein oder nicht sein
+echo ${STRING[@]/sein/essen}        # essen oder nicht sein
+</code>
+
+Ersetze alle Vorkommen des Substrings
+
+<code>
+STRING=to be or not to be
+echo ${STRING[@]//sein/essen}       # essen oder nicht essen
+</code>
+
+Lösche alle Vorkommen des Substrings (mit einem leeren String ersetzen)
+
+<code>
+STRING=sein oder nicht sein
+echo ${STRING[@]// nicht/}          # sein oder sein
+</code>
+
+Ersetze den Substring, wenn er am Anfang des ''$STRING''s ist
+
+<code>
+STRING=sein oder nicht sein
+echo ${STRING[@]/#sein/jetzt essen} # jetzt essen oder nicht sein
+</code>
+
+Ersetze den Substring, wenn er am Ende des ''$STRING''s ist
+
+<code>
+STRING=sein oder nicht sein
+echo ${STRING[@]/%sein/essen}       # sein oder nicht essen
+</code>
+
+Ersetze den Substring, mit der Ausgabe eines Shellbefehls
+
+<code>
+STRING=sein oder nicht sein
+echo ${STRING[@]/%sein/sein am $(date +%Y-%m-%d)}    # sein oder nicht sein am 20xx-xx-xx
+</code>
+
+
+----
+
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Daniel Garavaldi

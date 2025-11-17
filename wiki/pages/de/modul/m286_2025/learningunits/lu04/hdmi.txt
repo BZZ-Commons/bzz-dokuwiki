@@ -1,0 +1,36 @@
+====== LU04b - HDMI (High Definition Multimedia Interface) ======
+
+===== Einführung =====
+Das **High Definition Multimedia Interface (HDMI)** ist eine digitale Schnittstelle zur Übertragung von Audio- und Videosignalen.  
+Es wurde im Jahr 2002 von mehreren Elektronikunternehmen entwickelt, um eine einheitliche Verbindung für hochauflösende Bild- und Tonsignale zu schaffen.  
+
+HDMI hat sich seitdem zum Standardanschluss in der Unterhaltungselektronik und in der Computertechnik entwickelt.  
+
+===== Merkmale von HDMI =====
+  * **Digitale Signalübertragung**: Im Gegensatz zu analogen Schnittstellen wie VGA oder SCART überträgt HDMI die Daten ohne Umwandlungsverluste.  
+  * **Bild- und Tonübertragung über ein Kabel**: Ein einziges Kabel reicht aus, um hochauflösendes Video und Mehrkanal-Audio gleichzeitig zu übertragen.  
+  * **Hohe Auflösung und Qualität**: Abhängig von der HDMI-Version sind Auflösungen bis zu **8K** und hohe Bildwiederholraten möglich.  
+  * **Mehrkanal-Audio**: HDMI unterstützt moderne Surround-Sound-Formate (z. B. Dolby Atmos).  
+  * **Kopierschutz**: Mit dem integrierten Verfahren **HDCP (High-bandwidth Digital Content Protection)** wird verhindert, dass urheberrechtlich geschützte Inhalte unbefugt kopiert werden.  
+
+===== Steckertypen =====
+Es existieren mehrere HDMI-Steckervarianten, die technisch gleich funktionieren, sich aber in der Grösse unterscheiden:  
+
+{{:de:modul:m286_2025:learningunits:lu04:hdmi-stecker-typen-vergleich.jpeg?600|}}
+
+  * **Typ A (Standard-HDMI):** Weit verbreitet, z. B. bei Fernsehern, Monitoren und Spielkonsolen.
+  * **Typ C (Mini-HDMI):** Für Tablets, Digitalkameras und kleinere Geräte.
+  * **Typ D (Micro-HDMI):** Besonders kompakt, z. B. für Smartphones.  
+
+===== HDMI-Versionen =====
+HDMI wurde in verschiedenen Versionen weiterentwickelt. Jede neue Version unterstützt höhere Auflösungen, bessere Bildqualität und zusätzliche Funktionen.  
+
+  * **HDMI 1.0 (2002):** Erste Version, maximale Auflösung 1080p bei 60 Hz.  
+  * **HDMI 1.4 (2009):** Einführung der 4K-Unterstützung und Ethernet über HDMI.  
+  * **HDMI 2.0 (2013):** 4K bei 60 Hz, verbesserter Farbraum.  
+  * **HDMI 2.1 (2017):** Unterstützung für 8K und 4K bei bis zu 120 Hz, besonders relevant für moderne Spielekonsolen und Gaming-PCs.  
+
+===== Beispiel aus der Praxis =====
+Ein Laptop wird über ein HDMI-Kabel mit einem Beamer verbunden.  
+Das Kabel überträgt dabei gleichzeitig das **Bildsignal** (z. B. eine Präsentation) und das **Audiosignal** (z. B. den Ton eines Videos).  
+So ist nur ein Kabel notwendig, um beide Datenarten zu übertragen.  

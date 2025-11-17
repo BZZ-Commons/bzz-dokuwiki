@@ -1,0 +1,37 @@
+===== LU03S2 - Lösungsvorschlag =====
+Für das Szenario wurden folgende Entitäten identifiziert:  
+
+**1. Continent**  
+  * ContinentID (Primary Key)  
+  * ContinentName  
+
+**2. Country**  
+  * CountryID (Primary Key)  
+  * CountryName  
+  * ContinentID (Foreign Key)  
+
+**3. Trip**  
+  * TripID (Primary Key)  
+  * CountryID (Foreign Key)  
+  * StartDate  
+  * EndDate  
+  * Price  
+
+
+===== Beziehungen =====
+  * **Ein Kontinent** kann viele Länder haben (**1:N**).  
+  * **Ein Land** gehört zu genau einem Kontinent (**N:1**).  
+  * **Ein Land** kann viele Reisen haben (**1:N**).  
+  * **Eine Reise** findet in genau einem Land statt (**N:1**).  
+
+{{:modul:m290_guko:learningunits:lu03:loesungen:loesung_reisedb.png?direct|}}
+
+
+===== Hinweise =====
+  * Die **Dauer einer Reise** kann später berechnet werden: EndDate - StartDate.
+  * Der **Preis** ist ein Attribut der Reise, nicht des Landes oder Kontinents.  
+
+
+
+
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]]

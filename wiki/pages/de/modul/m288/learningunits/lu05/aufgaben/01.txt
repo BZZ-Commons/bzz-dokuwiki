@@ -1,0 +1,38 @@
+====== LU05.A01 - for-loop pur ======
+
+===== Rahmenbedingungen =====
+  * Sozialform: individual
+  * Hilfsmittel: 
+    * Nur Lehrmittel, keine Websuche oder AI
+    * [[https://www.w3schools.com/js/js_array_methods.asp|Array-Methoden JavaScript]]
+  * Zeit: 20 Minutes
+  * Erwartetes Resultat: Der Effekt der Codebeispiele wurde earbeitet und als Code kommentiert in VS-Code abgespeichert.
+
+
+===== Ausgangslage =====
+Wenn es um Datensammlungen oder Listen wir Arrays geht, sind //Schleifen// sehr praktische Helfer. Sie ermöglichen die eine dynamische, sprich der Listenlänge angepasste Bearbeitung von Listen.
+
+
+===== Auftrag 1 =====
+  * 1.1 Erstellen Sie eine for-Schleife, die Zahlen 0 bis 20 ausgibt. 
+  * 1.2 Darunter erstellen Sie zusätzlich eine Variante, die nur die geraden Zahlen ausgibt (Schrittweite 2)
+  * 1.2 Kommentieren Sie Ihre Arbeit: Fileheader und Inline-Comments.
+
+
+
+===== Auftrag 2 =====
+  * 2.1 Programmieren Sie darunter eine weitere for Schleife, die von 30 bis einschliesslich 15 rückwärts herunter zählt.
+  * 2.2 Erstellen Sie eine weitere Variante, die nur die 3er Zahlen ausgibt. 
+  * 2.3 Kommentieren Sie Ihre Arbeit: Fileheader und Inline-Comments.
+
+===== Hinweise =====
+  * Hochzählen geht mit //i=i+1//, //i+=1// oder simple //i++ (2 Plus-Zeichen)// 
+  * Herunterzählen geht mit //i=i-1//, //i-=1// oder simple //i-- (2 Minus-Zeichen)// 
+  * Schrittweiten von mehr als 1 werden mit //i+=n// oder //i=i+n// realisiert
+
+===== Lösungen =====
+[[de:modul:m288:learningunits:lu05:loesungen:01|LU05.L01]]
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

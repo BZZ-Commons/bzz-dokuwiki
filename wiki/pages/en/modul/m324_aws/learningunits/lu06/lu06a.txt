@@ -1,0 +1,20 @@
+====== LU06a - Optimize Jenkins pipeline ======
+<sup>Internal reference: learningunits/06-1.md</sup>
+\\
+===== Goals =====
+  -I can explain what a multistaged pipeline in ''Jenkins'' is.
+  -I can setup a simple multi-staged pipeline.
+  -If there are any errors, I can analyze the error, suggest and test an initial workaround (troubleshooting).
+
+\\
+===== Basics =====
+This [[en:modul:m324_aws:topics:08|article]] explains, how to use conditional constructs in Jenkins pipeline. <sup>Internal reference 05-1.md</sup>
+
+\\
+===== Exercises =====
+  -Setup Jenkins ''05/02_Exercises/a01 to a03'' - according to the learning objectives (see course repository).
+  -If there is an error, read the message carefully, think about a solution and implement it.
+
+----
+
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Daniel Garavaldi

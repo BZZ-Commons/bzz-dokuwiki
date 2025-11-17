@@ -1,0 +1,64 @@
+====== LU07c - Projektablaufplan ======
+
+===== Erklärfilm =====
+
+  * [[https://youtu.be/yCW6XNbefOg?si=JwedjReSIXqCYEcV|Gantt-Diagramm einfach erklärt]]
+
+===== Durchlaufzeit & Arbeitsaufwand =====
+Im Projektablaufplan (PAP) werden alle Tätigkeiten aus dem Projektstrukturplan vollständig erfasst.  
+Alle durchzuführenden Tätigkeiten, das heisst alles, was Zeit oder Geld braucht, inklusive Meilensteinüberprüfung, wird vollständig und soweit möglich chronologisch aufgelistet.  
+
+Das für die jeweilige Tätigkeit verantwortliche Teammitglied muss die entsprechende Fachkompetenz aufweisen und zum vorgesehenen Zeitpunkt über genügend freie Kapazität verfügen.  
+
+Zur Einschätzung des benötigten Aufwands für einen bestimmten Arbeitsschritt oder ein bestimmtes Arbeitspaket empfiehlt es sich, diese durch das verantwortliche Teammitglied einschätzen zu lassen.  
+Dabei soll sowohl die eigentliche Durchlaufzeit wie auch die effektiv benötigte Arbeitszeit geschätzt werden.  
+
+Die **Durchlaufzeit** ist die kürzeste Zeitdauer, die notwendig ist, um den zuvor definierten Aufwand unter Berücksichtigung der Verfügbarkeit von Engpassressourcen, von unumgänglichen Wartezeiten und anderen Rahmenbedingungen zu leisten.
+
+===== Beispiel “Durchlaufzeit” =====
+Ein Maler braucht für das Abdecken von Boden, Fenster und Türzargen und den ersten Anstrich eines Wohnzimmers 6 Stunden.  
+Damit der nächste Arbeitsschritt getätigt werden kann, braucht die Farbe 24 Stunden Trocknungszeit.  
+
+Der Maler braucht anschliessend noch einmal 3 Stunden, um das Wohnzimmer zu streichen.  
+Wiederum 24 Stunden später kann er alle Abdeckungen im Wohnzimmer vom Boden, den Fenstern und Türzargen entfernen. Dazu benötigt er 2 Stunden.  
+
+Der Zeitaufwand für den Maler ist also **11 Stunden**, die **Durchlaufzeit vier Tage**.
+
+===== Die Reihenfolge von Arbeitsschritten =====
+Anschliessend wird die Reihenfolge der Tätigkeiten festgelegt, die arbeitstechnisch am sinnvollsten oder sogar notwendig ist.  
+Dabei sollten zu jeder Tätigkeit folgende Fragen beantwortet werden:
+
+  * Welche (Teil-)Ergebnisse müssen am Ende des jeweiligen Arbeitspakets vorliegen?  
+  * Welche Rahmenbedingungen müssen erfüllt sein, damit die Tätigkeit gestartet werden kann?  
+  * Welche Abhängigkeiten sind vorhersehbar?  
+
+All diese zeitlichen Abhängigkeiten werden in der Tätigkeitsliste als Vorbedingungen eingetragen.  
+Mit diesen Angaben kann anschliessend eine Terminierung erfolgen.
+
+===== Terminierung, kritischer Pfad & Schlupf =====
+Die Terminierung der einzelnen Arbeitsschritte kann mit Hilfe der **Balkenplantechnik (Gantt-Diagramm)** ausgeführt werden.  
+Die Terminierung liefert den Endtermin und die Zwischentermine des Projekts, unter Berücksichtigung der Abhängigkeiten.  
+
+Der Planungsvorgang ergibt für jede Tätigkeit einen **frühesten** und einen **spätesten Anfangs- und Endtermin**.  
+Der früheste Endtermin gibt an, wann eine Tätigkeit frühestens fertig sein kann, wenn alle Bedingungen bestmöglich erfüllt sind.  
+Der späteste Endtermin gibt an, wann die Tätigkeit spätestens abgeschlossen sein muss, damit keine Verzögerung des Projektes entsteht.  
+
+Sind spätester und frühester Termin zweier aufeinanderfolgender Tätigkeiten unterschiedlich, hat die vorausgehende Tätigkeit zeitlichen Spielraum (*Schlupf, Slack, Puffer*).  
+Der **Schlupf** ist diejenige Zeit, um die eine Tätigkeit verzögert sein darf, ohne dass dies eine Auswirkung auf den Endtermin hat.  
+
+Der **kritische Pfad** ist die Verbindung aller Tätigkeiten, die keinen Schlupf haben.  
+Er bestimmt gleichzeitig den Endtermin.  
+Wenn auf diesem Pfad eine Tätigkeit verzögert wird, verschiebt sich der Endtermin des Projektes um das Ausmass dieser Verzögerung.
+
+===== Detaillierungsgrad in der Ablaufplanung =====
+Bei grossen Projekten ist es vorteilhaft, in mehreren Schritten zu planen, um das Projekt handhabbar zu machen.  
+
+**Erster Detaillierungsgrad:** eine Ablauf- und Terminplanung für Lieferobjekte und Arbeitspakete als Projektübersicht.  
+In einem nächsten Schritt wird der Detaillierungsgrad erhöht – bis auf Tätigkeiten, optimalerweise durch die Verantwortlichen.  
+
+Die Planungstiefe soll an den Wissensstand angepasst sein und an die Konsequenzen, falls Abweichungen von der Planung entstehen.  
+Wenn der Innovationsgrad hoch ist und der Termin kritisch, dann wird der Detaillierungsgrad der Lieferobjekte und Arbeitspakete lediglich langsam und schrittweise erhöht.
+
+===== Beispiel =====
+
+{{:de:modul:m431_med:learningunits:lu06:pap.png?600|}}

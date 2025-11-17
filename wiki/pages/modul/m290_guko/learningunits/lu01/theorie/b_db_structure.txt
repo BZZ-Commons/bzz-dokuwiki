@@ -1,0 +1,47 @@
+====== LU01b - Aufbau von Datenbanken ======
+
+Datenbanken sind für moderne Informationssysteme wie Webshops oder Bankanwendungen von grundlegender Bedeutung. Dieses Dokument bietet einen kurzen Überblick über drei wichtige Begriffe:
+
+  * DBS: Datenbanksystem
+  * DBMS: Datenbankmanagementsystem
+  * DB: Datenbank
+
+====== Wie ist eine Datenbank aufgebaut? ======
+
+Ein **Datenbanksystem** (DBS) besteht aus zwei Hauptkomponenten:
+
+  - Das **Datenbankmanagementsystem (DBMS)** ist für die Verwaltung der Daten verantwortlich.
+  - Die **Datenbank** speichert die Informationen in Form von Datensätzen, die in Tabellen organisiert sind.
+
+Die nachfolgende Abbildung veranschaulicht den Aufbau eines Datenbanksystems:
+
+{{:modul:m290_guko:learningunits:lu01:theorie:db_setup.png?direct&800|}}
+
+
+===== Was ist ein DBMS? =====
+
+Ein **Datenbankmanagementsystem** (DBMS) bildet zusammen mit der **Datenbank** ein **Datenbanksystem** (DBS).
+
+Das DBMS ist eine Software, die das Modell eines Datenbanksystems festlegt. Es ist entscheidend, um eine Datenbank aufzubauen, zu verwalten und darauf zuzugreifen. Erst wenn das DBMS installiert und eingerichtet ist, können Benutzer Daten einfügen, auslesen und bearbeiten. Es fungiert als Vermittler zwischen den Benutzern und der Datenbank.
+
+**Wichtige Aufgaben eines DBMS:**
+  * **Datendefinition**: Das DBMS erstellt und verändert die Struktur der Datenbank.
+  * **Datenmanipulation**: Benutzer können Daten einfügen, aktualisieren, löschen und abfragen.
+  * **Abfragen von Daten**: Ermöglicht es den Benutzern, gezielt nach bestimmten Daten zu suchen.
+  * **Datenintegrität**: Stellt sicher, dass die Daten korrekt und konsistent sind.
+  * **Datensicherheit**: Schützt die Daten vor unbefugtem Zugriff.
+
+
+> __Hinweis__: Oftmals werden die Begriffe „DBMS“ und „Datenbank“ fälschlicherweise gleichgesetzt. Tatsächlich ist eine „Datenbank“ nur die Sammlung strukturierter Daten, während das DBMS die Software ist, die diese Struktur ermöglicht und verwaltet.
+
+{{:modul:m290_guko:learningunits:lu01:theorie:video_icon_yt.svg?nolink&50}} [[https://studyflix.de/informatik/aufbau-von-datenbanken-599|Dieses Video erklärt den Aufbau von Datenbanken verständlich.]] ((Aufbau von Datenbanken – Studyflix))\\
+
+
+===== Anwendungssoftware und DBMS =====
+
+Anwendungssoftware erleichtert die Interaktion mit Datenbanksystemen. Sie bietet benutzerfreundliche Oberflächen, über die Nutzer Datenbanken erstellen, abfragen und verwalten können. Bekannte Beispiele sind phpMyAdmin für MySQL-Datenbanken, MySQL Workbench für erweiterte Funktionen und DataGrip von JetBrains, eine kostenpflichtige Lösung für verschiedene DBMS. Diese Tools unterstützen unter anderem Datenvisualisierung, Performance-Überwachung und erweiterte Abfragen. Wir werden im Verlauf des Moduls mittels Webstorm und Datenbank-Plugin mit Datenbanken interagieren.
+
+===== Quellen: =====
+
+  * [[https://www.ionos.de/digitalguide/hosting/hosting-technik/datenbankmanagementsystem-dbms-erklaert/|Datenbankmanagementsystem (DBMS) erklärt]]
+  * [[https://de.wikipedia.org/wiki/Datenbank|Wikipedia Artikel über Datenbank]]

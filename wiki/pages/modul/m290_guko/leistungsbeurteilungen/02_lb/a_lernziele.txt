@@ -1,0 +1,47 @@
+====== Leistungsbeurteilung 2 (LB2) – Lernziele ======
+Damit Sie sich optimal auf diese Leistungsbeurteilung vorbereiten können, finden Sie nachfolgend eine Auflistung von Lernzielen, welche überprüft werden könnten. Alle Lernziele beziehen sich auf die im Unterricht behandelte Theorie und die dazugehörigen Übungen.
+
+Diese Lernziele decken die Inhalte der Learning Units **LU07 bis LU13** ab.  
+**Wichtig:** Inhalte aus **LB1 (LU01–LU06)** werden zwar nicht explizit abgefragt, gelten aber als **Voraussetzung** (Grundlagen) für die erweiterten Konzepte in LB2 und werden als bekannt vorausgesetzt.
+
+
+===== LU07 – CRUD & SQL-DML =====
+  * Ich kann das Akronym **CRUD** (Create, Read, Update, Delete) erklären und auf typische Anwendungs-Fälle übertragen.
+  * Ich kann mit **DML**-Befehlen arbeiten:
+    * **INSERT** (einzelne/mehrere Zeilen, ''INSERT ... SELECT'')
+    * **SELECT** (mit ''WHERE'', ''ORDER BY'', ''LIMIT'')
+    * **UPDATE** (gezielt mit ''WHERE''; Und Risiken kennen, wenn ohne Filter ausgeführt wird.)
+    * **DELETE** (gezielt mit ''WHERE''; Und Risiken kennen, wenn ohne Filter ausgeführt wird. Unterschiede zu **TRUNCATE** erklären)
+
+===== LU08 – Tabellenbeziehungen & Schlüssel =====
+  * Ich kann **Primärschlüssel (PK)** und **Fremdschlüssel (FK)** erklären und in Tabellen definieren.
+  * Ich kann **1:n** und **n:m**-Beziehungen modellieren; für n:m korrekt eine **Zwischentabelle** entwerfen.
+  * Ich kann beim Erstellen/Ändern von Tabellen **Fremdschlüssel** setzen (''CREATE TABLE'' / ''ALTER TABLE'').
+  * Ich kenne die **Referenzaktionen** und kann ihren Einsatz begründen: **RESTRICT/NO ACTION**, **CASCADE**, **SET NULL**.
+
+===== LU09 – SELECT über mehrere Tabellen (JOINs) =====
+  * Ich kann Daten aus mehreren Tabellen mit **INNER JOIN ... ON** korrekt abfragen.
+  * Ich kann die ältere **FROM+WHERE**-Variante verstehen und die Vorteile von **JOIN ... ON** erklären.
+  * Ich kann **Aliase** für Tabellen/Spalten sinnvoll einsetzen und Lesbarkeit erhöhen.
+  * Ich kann in Mehrtabellen-Abfragen korrekt **filtern** (''WHERE'') und **sortieren** (''ORDER BY'').
+  * Ich kann **N:M**-Abfragen über eine **Zwischentabelle** (z. B. ''posts ↔ post_category ↔ categories'') formulieren.
+
+===== LU10 – Aggregatfunktionen & Gruppierung =====
+  * Ich kenne und wende an: **COUNT**, **SUM**, **AVG**, **MIN**, **MAX**.
+  * Ich kann **GROUP BY** korrekt verwenden und die **Regel für SELECT** erklären (nur Aggregate oder gruppierte Spalten).
+  * Ich kann den Unterschied **WHERE** (Zeilenfilter **vor** dem Gruppieren) vs. **HAVING** (Gruppenfilter **nach** dem Gruppieren) anwenden.
+
+===== LU12 – Data Security & User Management (DCL) =====
+  * Ich weiss, was der **root**-User ist (Vollzugriff, nur für Administration) und warum Apps **nicht** mit root laufen sollen (**Least Privilege**).
+  * Ich kann **Benutzerkonten** mit **Hostbindung** anlegen/löschen:  
+    * ''CREATE USER 'name'@'localhost' IDENTIFIED BY '...';''  
+    * ''DROP USER 'name'@'host';''
+  * Ich kann **Rollen** erstellen und mit **GRANT** Privilegien auf verschiedenen Ebenen vergeben:  
+    * global (''*.*''), Datenbank (''db.*''), Tabelle (''db.tabelle''), optional Spalte
+  * Ich kann zugewiesene Rechte **anzeigen** (''SHOW GRANTS [FOR ...] [USING rolle]'') und **entziehen** (''REVOKE'').
+
+===== LU13 – Datenexport & -import =====
+  * Ich kann eine Datenbank mit **mysqldump** exportieren (struktur- und datenbezogene Optionen benennen) und aus einem Dump **wiederherstellen**.
+  * Ich kenne Varianten, wie ein SQL-Skript **importiert** wird (Client/IDE, Kommandozeile, ''SOURCE''/„Run SQL Script“).
+  * Ich kann **CSV**-Daten in Tabellen **importieren** (z. B. ''LOAD DATA INFILE'' / IDE-Assistent) und auf Datentyp-/Encoding-Fallen achten.
+

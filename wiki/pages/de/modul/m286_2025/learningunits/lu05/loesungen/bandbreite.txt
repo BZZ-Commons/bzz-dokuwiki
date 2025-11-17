@@ -1,0 +1,28 @@
+====== LU05.L03 - Berechnungen mit Bandbreite ======
+
+Die Übertragungszeit berechnet sich durch:
+
+  Zeit = Dateigrösse / Geschwindigkeit
+
+^ Schnittstelle      ^ Geschwindigkeit (ca.) ^ Berechnung                        ^ Zeit (ca.)          ^
+| USB 2.0            | 35 MB/s               | 4'500 MB / 35 MB/s                 | 129 Sekunden ≈ 2.1 Minuten |
+| USB 3.0            | 300 MB/s              | 4'500 MB / 300 MB/s                | 15 Sekunden         |
+| WLAN (Wi-Fi 5)     | 54 MB/s               | 4'500 MB / 54 MB/s                 | 83 Sekunden ≈ 1.4 Minuten |
+| Bluetooth 5.0      | 0.25 MB/s             | 4'500 MB / 0.25 MB/s               | 18'000 Sekunden ≈ 5 Stunden |
+
+==== Vergleich ====
+  * **Am schnellsten:** USB 3.0 (15 Sekunden)  
+  * **Am langsamsten:** Bluetooth (ca. 5 Stunden)  
+  * **WLAN** ist deutlich schneller als USB 2.0, kommt aber nicht an USB 3.0 heran.  
+  * **Bluetooth** eignet sich nicht für grosse Dateien, da die Übertragung extrem lange dauert.
+
+==== Bluetooth und WLAN nicht für grössere Dateien geeignet ====
+
+Bluetooth
+  * Sehr geringe Datenrate
+  * Für kleine Dateien/Peripheriegeräte gedacht
+  * Für grosse Datenmengen extrem langsam
+
+WLAN
+  * Schneller als Bluetooth, aber langsamer als USB 3.0
+  * Verbindungsprobleme: Abbrüche, Reichweite, Störungen

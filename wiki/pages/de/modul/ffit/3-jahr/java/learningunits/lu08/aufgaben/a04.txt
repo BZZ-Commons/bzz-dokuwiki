@@ -1,0 +1,16 @@
+==== LU08.A04 Code generieren ====
+Machen Sie einen Cherry-Pick von ''5f15e81'', um die Änderungen von ''build.gradle'' zu erhalten, welche das Generieren des Codes ermöglichen.
+
+Builden Sie Ihr Projekt neu. Falls Sie dafür die IDE benutzen, müssen Sie sicherstellen, dass die IDE die Gradle-Tasks korrekt ausführt.
+
+Der neue Task ''openApiGenerate'' in der Datei ''build.gradle'' erstellt nun automatisch bei jedem Build die entsprechenden Interfaces für die APIs.
+
+  - Prüfen Sie, ob in ''build/generated/openapi/src/main/java/ch/bzz/generated/api/'' und in ''build/generated/openapi/src/main/java/ch/bzz/generated/model/'' korrekterweise Klassen erstellt wurden.
+  - Fügen Sie unter ''src/main/java/ch/bzz/controller'' die Klassen ''AccountApiController.java'', ''BookingApiController.java'' und ''ProjectApiController.java'' hinzu und lassen Sie die Klassen die entprechenden Interfaces implementieren.
+
+<code java>
+@RestController
+public class ProjectApiController implements ProjectApi {
+    ....
+}
+</code>

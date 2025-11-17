@@ -1,0 +1,22 @@
+====== LU02c - Jenkins pipeline ======
+<sup>Internal reference: learningunits/02-3.md</sup>
+\\
+===== Goals =====
+  -I can explain what a multistaged pipeline in ''Jenkins'' is.
+  -I can set up a simple multistaged pipeline.
+  -If there are any errors, I can analyze the error, suggest and test an initial workaround (troubleshooting).
+
+\\
+===== Basics =====
+In [[en:modul:m324_aws:topics:04|this article]], you receive an introduction to Jenkins pipeline. 
+
+<sup>Internal reference 03-1.md</sup>
+
+\\
+===== Exercises =====
+  -Setup Jenkins ''01/02_Exercises/02-Exercise.md'' - according to the learning objectives (see course repository).
+  -If there is an error, read the message carefully, think about a solution and implement it.
+
+----
+
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Daniel Garavaldi

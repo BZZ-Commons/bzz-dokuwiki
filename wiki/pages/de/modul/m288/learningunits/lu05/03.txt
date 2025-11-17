@@ -1,0 +1,32 @@
+====== LU05c - while-loop ======
+
+Die //while-Schleife// ist eine kopfgesteuerte Schleife, d.h. die Schleifenbedingung wird im Kopf der Schleife abgefragt. Der Code, der sich innerhalb der Schleife befindet solange wiederolt, solange eine Bedingunge **wahr** ist. 
+
+**Beispiel**
+  let i = 0;
+  while (i < 5) {
+    console.log("while:", i);
+    i++; 
+  }
+  
+**Ausgabe**
+  
+  while: 0
+  while: 1
+  while: 2
+  while: 3
+  while: 4
+    
+**Wichtig:** Vergisst man i++, hängt man in einer Endlosschleife, weil die Bediung im Kopf der Schleife nie erfüllt wird.
+
+===== Lernvideo =====
+
+{{:de:modul:m288:learningunits:lu04:learn_javascript_while_loops_in_8_minutes_🔁.mp4|Howto build a while-loop}}
+
+===== Zusatzinformationen =====
+  * [[https://www.w3schools.com/js/js_loop_while.asp|W3School: While-Loop]]
+  * [[https://wiki.selfhtml.org/wiki/JavaScript/Kontrollstruktur#Kopfgesteuerte_Schleifen_mit_.22while.22|Self-HTML: While-Schleife]]
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir
+

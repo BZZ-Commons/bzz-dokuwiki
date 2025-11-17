@@ -1,0 +1,40 @@
+====== LU07b - Club Accounting App ======
+
+==== Vereinsbuchhaltung Grundlagen ====
+
+Ein Verein besitzt in der Regel einen Kassier, welcher die einzelnen Buchungen in ein "Buchungsjournal" einträgt und die jeweiligen Belege ablegt.
+
+^ Buchung ^ Datum ^ Buchungstext ^ Soll-Konto ^ Haben-Konto ^ Betrag(CHF) ^
+| 0001 | 2025-10-21 | Bargeld abgehoben | 1000 Kasse | 1020 Bank | 200.00 | 
+| 0002 | 2025-10-22 | ... | ... | ... | ... | 
+
+
+Der "Kontenplan" enthält die Kontennummer und -bezeichnung der Aktiven(Vermögen), Passiven(Verbindlichkeiten), Erträge (Einnahmen) und Aufwendungen (Ausgaben).
+
+^ Kontonummer ^ Konto-Bezeichnung ^
+| 1000 | Kasse |
+| 1020 | Bank |
+| ... | ... |
+| 2000 | Vereinsvermögen |
+| 2300 | Verbindlichkeiten/Kreditoren |
+| ... | ... |
+| 3000 | Mitgliederbeiträge |
+| 3100 | Spenden |
+| ... | ... |
+| 4800 | Veranstaltungen |
+| 4950 | Bankgebühren |
+| ... | ... |
+
+Die "Bilanz" listet die Aktiven und Passiven zu einem bestimmten Stichtag (z.B. Jahresanfang/-ende).
+
+^ Aktive ^ Betrag ^ ¦ ^ Passive ^ Betrag ^
+| 1000 Kasse | 132.00 | ¦ | 2000 Vereinsvermögen | 22'419.35 | 
+| 1020 Bank | 21'871.95 | ¦ | 2300 Verbindlichkeiten/Kreditoren | 120.00 |
+| ... | ... | ¦ | ... | ... |
+
+Die "Erfolgsrechnung" listet die Aufwände und Erträge  über einen bestimmten Zeitraum (z.B. Jahr).
+
+^ Aufwand ^ Betrag ^ ¦ ^ Ertrag ^ Betrag ^
+| 4800 Veranstaltungen | 750.00 | ¦ | 3000 Mitgliederbeiträge | 450.00 | 
+| 4950 Bankgebühren | 5.00 | ¦ | 3100 Spenden | 160.00 |
+| ... | ... | ¦ | ... | ... |

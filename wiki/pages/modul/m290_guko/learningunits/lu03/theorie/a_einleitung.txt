@@ -1,0 +1,37 @@
+====== LU03a - Relationale Datenbanksysteme ======
+
+==== Grundidee ==== 
+Eine **relationale Datenbank (RDB)** ist eine Methode, Daten in Tabellen zu speichern und zu organisieren.  
+Die Tabellen sind **miteinander verknüpft** – daher „relational“.  
+
+Beispiel:  
+  * Eine Tabelle **Kunden** mit ID (Primärschlüssel ((Primärschlüssel: In einer Tabelle ist das ein eindeutiges Merkmal, das jeden Datensatz unterscheidbar macht.
+Beispiel: In einer Filmtabelle könnte die ISAN-Nummer (International Standard Audiovisual Number, ähnlich wie ISBN bei Büchern) als Primärschlüssel dienen – sie identifiziert jeden Film weltweit eindeutig, auch wenn mehrere Filme denselben Titel haben.))), Name und Email-Adresse.  
+  * Eine Tabelle **Bestellungen** mit Bestellnummer (id), Produkt welches bestellt wurde und einer Spalte "customer_id" -> Fremdschlüssel, welcher die Verbindung zur Tabelle Kunden herstellt.  
+  * Über die Verbindung im Fremdschlüssel können wir herausfinden, welcher Kunde die Bestellung aufgegeben hat.  
+
+{{ :modul:m290_guko:learningunits:lu03:theorie:relationale_dbs_tabellen_neu.png?direct&1000 }}
+
+
+==== Zentrale Begriffe ==== 
+  * **Entität** – ein „Ding“ oder „Objekt“ der realen Welt, das gespeichert wird (z. B. ein Film, ein Kunde, ein Pokémon, eine Bestellung).  
+  * **Tabelle** – eine Sammlung von Daten über eine Entität (z. B. alle Filme, alle Kunden, alle Bestellungen).  
+  * **Datensatz (Record, Tupel)** – eine Zeile in der Tabelle (z. B. der Film „The Godfather“, Kundin Hanna).  
+  * **Attribut (Feld, Spalte)** – eine Eigenschaft der Entität (z. B. Filmtitel, Erscheinungsjahr, Name der Kundin, Email-Adresse der Kundin).  
+  * **Primärschlüssel (PK)** – eindeutiger Wert, der einen Datensatz identifiziert (z. B. Film-ID, ID der Kundin, ID der Bestellung / Bestellnummer).  
+  * **Fremdschlüssel (FK)** – verweist auf den Primärschlüssel einer anderen Tabelle → stellt die Beziehung her.
+
+<WRAP center tip round 80%>
+[[https://www.youtube.com/watch?v=EQ3iKNTS7Tc| Erklärvideo zum Thema Primär- und Fremdschlüssel - 4:26min]] ((Quelle: Fabian Rappert/YouTube))
+</WRAP>
+
+{{:modul:m290_guko:learningunits:lu03:theorie:relationale_dbs_entitaet.png?direct&500|}}
+
+==== Struktur und Integrität ====  
+Damit Daten **korrekt und konsistent** bleiben, gibt es Regeln:  
+  * **Entity Integrity** – Jede Tabelle braucht einen Primärschlüssel (kein NULL erlaubt).  
+  * **Referentielle Integrität** – Fremdschlüssel müssen auf existierende Primärschlüssel verweisen.  
+  * **Domain Integrity** – Werte müssen zum definierten Datentyp passen (z. B. eine Zahl darf kein Text sein).  
+ 
+
+

@@ -1,0 +1,48 @@
+==== LU09.A02 HTTPS ermöglichen ====
+
+Bislang waren die APIs unter http://localhost:8080/api/hello erreichbar.
+
+Entsprechend können folgende Befehle zum Testen benutzt werden. Diese cURLs können auch bei Postman importiert und da (wiederholt) abgesetzt werden.
+
+<code bash>
+curl -k -X POST "http://localhost:8080/projects" -H "Content-Type: application/json" -d '{"project_name":"Hobby_Horsing_Horgen","password":"geheim123"}'
+
+curl -k -X POST "http://localhost:8080/login" -H "Content-Type: application/json" -d '{"project_name":"Hobby_Horsing_Horgen","password":"geheim123"}'
+
+...
+</code>
+
+Zukünftig soll jedoch das Frontend https://alexanderpeter.github.io/ffit-lu08-club-accounting-website/ die API ansprechen können.
+
+Mit dem Cherry-Pick ''ff10bf8'' erhalten Sie die Klasse ''WebConfig.java'' mit den CORS-Einstellung und einer Weiterleitung von HTTP auf HTTPS.
+
+Ebenfalls ist ein Keystore mit einem SSL-Key im Commit inbegriffen, welcher benutzt werden kann, um HTTPS zu ermöglichen.
+
+Folgende Änderungen bzw. Ergänzungen in der ''application.properties''-Datei sind jedoch nötig.
+
+<code application.properties>
+server.port=8443
+server.ssl.enabled=true
+server.ssl.key-store=classpath:keystore/keystore.p12
+server.ssl.key-store-password=password
+server.ssl.key-store-type=PKCS12
+db.username=localuser
+db.password=
+jwt.secret=
+</code>
+
+Danach ist die API sowohl unter http://localhost:8080/api/hello als auch unter https://localhost:8443/api/hello verfügbar.
+
+Ebenfalls sind die cURLs mit HTTPS verfügbar.
+
+<code bash>
+curl -k -X POST "https://localhost:8443/projects" -H "Content-Type: application/json" -d '{"project_name":"Hobby_Horsing_Horgen","password":"geheim123"}'
+
+curl -k -X POST "https://localhost:8443/login" -H "Content-Type: application/json" -d '{"project_name":"Hobby_Horsing_Horgen","password":"geheim123"}'
+
+...
+</code>
+
+Und zu guter Letzt kann das Frontend https://alexanderpeter.github.io/ffit-lu08-club-accounting-website/ nun auf Ihre lokale API zugreifen: 
+Happy Testing!
+

@@ -1,0 +1,27 @@
+==== LU01.A01 Palindrome-Checker ====
+
+Akzeptieren Sie folgendes Classroom-Assignment
+  * https://classroom.github.com/a/HLM1BbQj
+
+Klonen Sie das Repository und nutzen Sie den Gradle-Wrapper (gradlew), um das Projekt via Bash zu kompilieren und die Tests auszuführen.
+
+<code bash>
+git clone git@github.com:...git
+
+cd ffit-lu01-a01-palindrome
+
+./gradlew compileJava
+./gradlew test
+</code>
+
+Öffnen sie das Projekt nun in Ihrer IDE und implementieren Sie die Methode ''isPalindrome'', so dass alle Tests grün durchlaufen.
+
+
+<code java>
+    public static boolean isPalindrome(String input) {
+        // TODO: Implementieren Sie die Logik dieser Methode
+        return false;
+    }
+</code>
+
+Schliessen Sie das Classroom-Assignment ab, indem Sie ihre Lösung commiten und Pushen.

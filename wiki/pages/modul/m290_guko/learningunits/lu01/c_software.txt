@@ -1,0 +1,18 @@
+====== LU01c - Benötigte Software & wie man sie installiert ======
+Bevor wir mit den praktischen Übungen starten, müssen einige Software-Programme installiert werden.   
+
+^ Software ^ Beschreibung ^ Download-Quelle ^
+| Webstorm | Ein Programmier-Editor bzw. eine IDE ((integrated development environment)). | [[https://www.jetbrains.com/webstorm/|Webstorm]] | 
+| MySQL | Ein RDBMS (Relational Database Management System) das uns die Einrichtung und Konfiguration von Datenbanken ermöglicht. | [[https://dev.mysql.com/downloads/mysql/|MySQL]] |
+| Postman | Postman ist ein Werkzeug zum Testen von Anwendungsschnittstellen (APIs). Es ermöglicht, individuell konfigurierte HTTP-Anfragen an einen (lokalen oder entfernten) Server zu senden und die Antworten detailliert zu analysieren. | [[https://www.postman.com/downloads/|Postman]] |
+| XTerm | Ein Terminal-Programm für Windows-User. | [[https://mobaxterm.mobatek.net/download.html|XTerm]] |
+
+**Hinweis:**  
+__Für den Anfang reichen Webstorm und MySQL.__  
+**Postman** und **XTerm** brauchen wir erst in der zweiten Hälfte des Moduls und installieren sie dann.  
+
+
+
+----
+{{tag>M290-LU01}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

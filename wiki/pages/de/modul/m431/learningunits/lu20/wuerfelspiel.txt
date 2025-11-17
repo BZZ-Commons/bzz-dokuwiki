@@ -1,0 +1,67 @@
+====== LU20.A01 - Projekt "Würfelspiel" ======
+===== Ausgangslage =====
+Ihr Team erhält den Auftrag, ein kleines digitales oder analoges Würfelspiel zu entwickeln. 
+Das Spiel soll einfach verständlich, spielbar und mit Zufallsmechanismen (Würfeln) funktionieren. 
+Es soll in Python umgesetzt werden.
+
+  * Dauer: ca. 3–4 Stunden
+  * Team: 4–5 Lernende
+
+<WRAP center round important 60%>
+Pro Team sendet eine Person eine Teams-Nachricht an die Lehrperson.
+In dieser Nachricht führen Sie die Vor- und Nachnamen aller Teammitglieder auf.
+</WRAP>
+
+
+===== Anforderungen =====
+  * Fertig programmiertes Spiel.
+  * Verständliche Regeln (schriftlich dokumentiert).
+  * Vollständige IPERKA-Dokumentation (max. 2–3 Seiten).
+
+===== Vorgehen nach IPERKA =====
+==== I – Informieren ====
+  * Recherchieren und klären:
+    * Was ist ein Würfelspiel?
+    * Wie funktionieren typische Mechaniken (z. B. Risiko vs. Sicherheit, Punkte sammeln, mehrere Würfel)?
+  * Ziele: Formulieren Sie 3-5 SMARTe Ziele für dieses Projekt.
+
+
+
+==== P – Planen ====
+Ihr entwickelt mindestens 3–4 Varianten eines Würfelspiels, z. B.:
+  * Variante A: „Höher gewinnt“ – einfaches Duellspiel
+  * Variante B: „Risiko-Spiel“ – weiterspielen oder Punkte verlieren, falls eine 1 kommt
+  * Variante C: „Monster-Würfelkampf“ – Spieler und Monster verlieren je nach Wurf Punkte
+  * Variante D: „Zwei-Würfel-Rennen“ – Spielfiguren bewegen sich abhängig vom Wurf
+
+Definiert für jede Variante:
+  * Spielidee, Regeln
+  * Geschätzter Programmieraufwand (Skala: 1=sehr einfach ... 6=extrem schwierig)
+  * Geschätzte Machbarkeit (3–4 Sätze pro Variante)
+
+==== E - Entscheiden ====
+=== Entscheidungstabelle ===
+Erstellt eine Entscheidungstabelle mit 3–5 Kriterien aufgrund der Projektziele:
+
+Jedes Kriterium wird bewertet (Note 1-6).
+Die Variante mit der höchsten Punktzahl wird umgesetzt.
+
+=== Projektstrukturplan ===
+Erstellt einen Projektstrukturplan mit den einzelnen Tätigkeiten und Verantwortungen.
+Die verantwortliche Person koordiniert die Arbeiten, kann aber von anderen unterstützt werden.
+
+==== R – Realisieren ====
+Ihr setzt das gewählte Spiel um:
+  * Regeln niederschreiben
+  * Spiel programmieren
+  * Spiel ausprobieren und Fehler festhalten
+
+===== Dokumentation =====
+Haltet alle Ergebnisse in einem gemeinsamen Dokument fest.
+  * Titelseite mit Projekttitel, Mitarbeitern.
+  * Kopf/Fusszeile mit
+    * Projekttitel
+    * Datum
+    * Seitenzahlen (Seite n von m)
+  * Jede IPER(KA)-Phase ist ein eigenes Kapitel.
+

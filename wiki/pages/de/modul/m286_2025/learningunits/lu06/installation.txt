@@ -1,0 +1,38 @@
+====== LU06b - Installation von Software ======
+
+===== Einleitung =====
+Computerhardware allein kann nichts tun. Damit sie nutzbar wird, muss **Software installiert** werden.  
+Die Installation bedeutet, dass ein Programm in das Betriebssystem eingebunden, an einem bestimmten Ort gespeichert und für den Benutzer zugänglich gemacht wird.
+
+===== Installationswege =====
+Es gibt unterschiedliche Wege, wie Software auf ein Gerät gelangt. 
+
+**App Stores** sind heute der bequemste Weg: Unter Windows der **Microsoft Store**, bei Apple der **App Store**, auf Linux gibt es Software-Center.  
+Die Apps werden automatisch geprüft und Updates laufen im Hintergrund.
+
+**Direkter Download** von der Herstellerseite ist immer noch weit verbreitet.  
+Unter Windows lädt man eine **.exe** oder **.msi** Datei herunter, auf dem Mac eine **.dmg** oder **.pkg**.  
+Beim Öffnen startet ein Assistent, der Schritt für Schritt durch die Installation führt.
+
+Schliesslich gibt es **Paketmanager**, die vor allem im professionellen Bereich und auf Linux genutzt werden.  
+Auch Windows hat mit **winget** einen offiziellen Paketmanager, und auf dem Mac ist **Homebrew** sehr beliebt.  
+Damit lassen sich Programme mit einem einzigen Befehl installieren und aktualisieren.
+
+===== Installationspfade =====
+Software wird nicht irgendwo auf dem Computer gespeichert, sondern folgt festen Regeln.  
+
+Auf **Windows** unterscheidet man zwischen „**C:\Program Files**“ für 64-Bit-Programme und „**C:\Program Files (x86)**“ für 32-Bit-Programme.  
+Moderne Apps aus dem Microsoft Store landen in einem speziellen, geschützten Ordner: **C:\Program Files\WindowsApps**.  
+Benutzerdaten und Einstellungen werden separat in den Ordnern **AppData** gespeichert, damit sie auch nach Updates erhalten bleiben.  
+
+Auf **macOS** liegen Programme typischerweise im Ordner „**/Applications**“.  
+Daten und Einstellungen einer App findet man hingegen in der Benutzer-Bibliothek unter „**~/Library/Application Support**“.  
+So bleiben Programmdateien und Benutzerdaten klar getrennt.
+
+===== Sicherheit bei der Installation =====
+Eine grosse Gefahr sind Programme aus **unsicheren Quellen**.  
+Gefälschte Downloads können Viren oder Schadsoftware enthalten.  
+Deshalb gilt:  
+  * Nur von **Originalseiten** oder offiziellen Stores laden.  
+  * **Digitale Signaturen** und Herstellerangaben prüfen.  
+  * Auf Sicherheitswarnungen achten (z. B. Windows SmartScreen oder macOS Gatekeeper).  

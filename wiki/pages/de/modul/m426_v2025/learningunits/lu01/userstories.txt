@@ -1,0 +1,82 @@
+====== LU01e - User Stories ======
+
+===== 1. User Stories =====
+==== 1.1 Was sind User Stories? ====
+\\
+User Stories sind kurze, einfache Beschreibungen einer Funktion aus Sicht der Benutzer:innen. Sie erklären, **wer** etwas will, **was** er/sie will und **warum**. User Stories helfen, die Anforderungen an ein System **klar aus Benutzersicht** zu formulieren. Sie machen Teams bewusst, **für wen** eine Funktion entwickelt wird und dienen als Grundlage für Planung, Umsetzung und Tests.\\
+
+**Aufbau einer User Story:**
+
+```\\
+**Als** [Rolle]\\ 
+**möchte ich** [Funktionalität],\\
+**damit** [Nutzen].\\
+```
+
+**Beispiel Study Buddy Finder:**
+
+```\\
+**Als** Student:in \\
+**möchte ich** mein persönliches Lernprofil erstellen, \\
+**damit** ich meine Fächer, Interessen und Lernzeiten angeben kann.\\
+```
+
+----
+
+====1.2 Schätzung einer User Story====
+
+User Stories werden in **Story Points** geschätzt. Story Points sind eine Maßeinheit zur Einschätzung des Gesamtaufwandes, der für die vollständige Umsetzung einer User Story nötig ist.
+
+Wenn wir etwas mit Story Points einschätzen, geben wir jedem Item eine gewisse Punktzahl. Die blossen Zahlen sind dabei nicht wichtig. Es sind die relativen Werte, um die es geht. Eine Story, die mit 1 Punkt eingeschätzt wird, sollte also halb so groß sein wie eine Story, die mit 2 Punkten eingeschätzt wird. Eine Story mit 3 Punkten sollte daher dreimal so groß sein wie die Story mit 1 Punkt.
+
+Oft wird für die Schätzung auch T-Shirt Grössen eingesetzt: also S, M, L, XL.
+
+
+----
+
+
+==== 1.3 Wenn eine User Story zu groß ist ====
+
+Eine Story sollte nicht zu groß sein. Wird eine User Story also als XL geschätzt, bietet es sich an, die Story in viele kleinere Stories zu unterteilen. Eine Story, die zu viel Arbeit erfordert, nennt man „Epik“ (Epic User Story).
+
+Beispiel:
+
+  * Epic User Story: „Profilverwaltung für Student:innen implementieren“
+  * User Stories:
+
+    1. Mit BZZ-Konto anmelden
+    2. Profildaten erfassen (Stärken & Schwächen pro Fach)
+    3. Format angeben (Hilfeleistung suchen / anbieten)
+    4. Bestätigung nach Speicherung anzeigen
+
+----
+
+==== 1.4 Akzeptanzkriterien ====
+
+Akzeptanzkriterien sind konkrete Bedingungen, die erfüllt sein müssen, damit die Story als „fertig“ gilt. Sie dienen als **Checkliste** für Entwickler:innen und Tester:innen. So stellt das Team sicher, dass alle **wichtigen Funktionen** umgesetzt wurden. Bei der Formulierung der Akzeptanzkriterien ist es wichtig, auch die Stakeholder miteinzubeziehen. Es muss für alle Beteiligten klar sein, was mit der Story genau entwickelt werden soll.
+
+**Beispiel Study Buddy Finder:**
+
+* Die Benutzerin / der Benutzer kann Name, Klasse, Fächer und Lernpräferenzen eingeben.
+* Die Benutzerin / der Benutzer kann die verfügbare und bevorzugte Lernzeiten angeben.
+* Die Daten werden sicher im Benutzerkonto gespeichert.
+* Nach dem Speichern erhält der Benutzer eine Bestätigungsmeldung.
+
+Wenn Teams diese Kriterien frühzeitig formulieren und im Product Backlog Refinement weiter ausarbeiten, können sie Missverständnisse früh erkennen und beheben, bevor die Entwicklung startet.
+
+Gut formulierte Akzeptanzkriterien folgen dem SMART-Prinzip:
+
+  * **Spezifisch**: beschreibt klar das erwartete Verhalten
+  * **Messbar**: das Ergebnis kann überprüft werden
+  * **Erreichbar** (Achievable): das Team kann es umsetzen
+  * **Relevant**: deckt das Nutzerbedürfnis direkt ab
+  * **Zeitgebunden** (Time bound): definiert bei Bedarf eine zeitliche Erwartung\\
+
+👉🏽 Schauen Sie sich das Video zur Erläuterung an:[[youtube.com/watch?v=xE2N5SDpN18&embeds_referring_euri=https%3A%2F%2Fwww.agile-academy.com%2F&source_ve_path=OTY3MTQ
+]]
+
+
+
+----  [[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Gaby Jenni
+
+Quelle: https://www.agile-academy.com/de/product-owner/was-sind-story-points/; 

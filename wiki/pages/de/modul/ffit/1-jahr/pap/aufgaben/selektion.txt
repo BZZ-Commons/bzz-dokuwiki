@@ -1,0 +1,31 @@
+====== Übung: 02 Selektion ======
+
+Stellen Sie die folgenden Abläufe als Programmablaufplan dar.
+Verwenden Sie Selektionen (Einfach, Mehrfach) und Sequenzen.
+
+===== Aufgabe 1: Begrüssung =====
+Der Benutzer gibt seine Sprache ein (**D**eutsch, **F**ranzösisch, **E**nglisch, **S**panisch).
+Je nach Sprache gibt das Programm die korrekte Begrüssung aus:
+* Hallo
+* Bonjour
+* Hello
+* Hola
+
+===== Aufgabe 2: Zahlen =====
+
+Der Benutzer gibt eine ganze Zahl ein.
+Das Programm zeigt dem Benutzer an, zu welchen Zahlengruppen diese Zahl gehört:
+* Gerade Zahl
+* Ungerade Zahl
+* Natürliche Zahl (grösser 0)
+* Primzahl (2, 3, 5, 7, 11, 13, 17, ...)
+
+Eine Zahl kann zu mehreren Gruppen gehören.
+
+<WRAP center round tip 60%>
+Sie müssen die Logik zum Ermitteln der Zahlengruppen nicht darstellen.
+Sie können einfach eine Bedingung schreiben "Falls zahl gerade"</WRAP>
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Marcel Suter

@@ -1,0 +1,24 @@
+====== LU02b - Jenkins' architecture ======
+<sup>Internal reference: learningunits/02-2.md</sup>
+\\
+===== Goals =====
+  -I can explain the roles and responsibilities of the Jenkins **master (controller)** and **agents**.
+  -I can explain how **build tasks are delegated**, and how communication between master and agents occurs.
+  -I can distinguish between **vertical scaling** and **horizontal scaling**.
+  -I can identify the benefits and trade-offs of each scaling approach for performance, maintenance, and reliability.
+  -I recognize the **importance of test and production environments**.
+  -I understand why Jenkins setups should include separate test and production instances to ensure stability and safe testing of upgrades, plugins, and pipelines.
+
+\\
+===== Basics =====
+In [[en:modul:m324_aws:topics:03|this article]], you will learn about Jenkins architecture and its parts. 
+
+<sup>Internal reference 02-2.md</sup>
+
+\\
+===== Exercises =====
+Make your own notes while reading the article.
+
+----
+
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Daniel Garavaldi

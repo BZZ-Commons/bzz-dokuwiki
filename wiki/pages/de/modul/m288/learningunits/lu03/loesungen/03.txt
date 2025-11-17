@@ -1,0 +1,28 @@
+====== LU03.L03 - if mit &&-Verknüpfungen ======
+
+===== Auftrag =====
+Schreibe ein JavaScript-Programm einer Zutrittskontrolle, das entscheidet, ob eine Person in einen Club hineindarf.
+
+Die Regeln sind:
+  * Nur Personen, die mindestens 18 Jahre alt und einen Ausweis dabei haben, dürfen rein.
+  * Wenn jemand VIP ist, darf er unabhängig vom Alter rein.
+  * Alle anderen werden höflich abgewiesen.
+  * Die Parameter //Alter// und //ob Ausweis vorhanden// sollen beim Scriptaufruf mitgegeben werden. 
+   * Beispiel1 - 18 Jahre, ID dabei, kein VIP: //node myScript.js 18 nein nein// 
+   * Beispiel2 - 16 Jahre, keine ID dabei, ist VIP: //node myScript.js 18 nein ja//
+
+Am Ende soll die das Programm über die Konsole Auskunft darüber geben, on eine Person zugelassen ist in den Club oder nicht.
+
+**Hinweis:**
+
+Die Parameter //alter//, //ob Ausweis dabei// und //ob VIP// können durch die nachfolgenden Codezeilen an das Script übergeben werden.
+
+  eingabeAlter = process.argv[2];
+  id = process.argv[3]; 
+  vip = process.argv[4];  
+ 
+===== Lösung =====
+{{:de:modul:m288:learningunits:lu03:loesungen:lu03_l03.jpg?600|}}
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

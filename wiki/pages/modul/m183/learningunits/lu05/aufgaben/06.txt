@@ -1,0 +1,50 @@
+====== LU05.A06 - Cäsar-Verschlüsselung programmieren ======
+
+==== Lernziele ====
+  * Ich kann den Cäsar-Algorithmus mittels einer Programmiersprache umsetzten.
+
+==== Rahmenbedingungen ====
+  * **Zeitbudget:** 40 Minuten
+  * **Sozialform:** Einzelarbeit
+  * **Hilfsmittel:**
+    * Lernvideo [[https://studyflix.de/informatik/caesar-verschlusselung-1606|Studyflix: Cäsar-Verschlüsselung]]
+    * Programmierumgebung
+    * Codeeditor Ihrer Wahl
+    * Programmiersprachen: JS, Python, BASH, SHELL, ...
+    * <color #ed1c24>Keine AI oder Google-Suchen →  Sie haben genug Programmierkenntnisse, um den Algorithmus selbst zu programmieren.</color>
+  * **Erwartetes Ergebnis:** Script, das eine Cäsar-Verschlüsselung realisiert. In beide Richtungen: Klartext → Chiffretext, Chiffretext → Klartext.
+
+==== Ausgangslage ====
+Die Cäsar-Verschlüsselung ist eine alte, aber wegen seiner Einfachheit, robuste Methode Nachrichten zu verschleiern. Der grosse Vorteil liegt darin, dass er mit wenig Ressourcen und KnowH-How auskommt.
+
+==== Arbeitsauftrag ====
+Schreiben Sie ein Script bzw. Programm, das eine Nachricht mit Hilfe der Cäsar-Verschlüsselung verschlüsselt und entschlüsselt.
+
+**Anforderungen:**
+  - Das Programm soll
+    * vom Benutzer eine Nachricht (Text) einlesen.
+    * vom Benutzer einen ganzzahligen Schlüssel (Shift) zwischen 1 und 25 einlesen.
+    * Gross- und Kleinbuchstaben getrennt verarbeiten (A–Z, a–z), alle anderen Zeichen unverändert lassen.
+  - Implementieren Sie zwei Funktionen:
+    * verschluesseln(text, shift) → gibt den verschlüsselten Text zurück
+    * entschluesseln(text, shift) → gibt den entschlüsselten Text zurück
+  - Das Programm soll den verschlüsselten Text ausgeben, dann den entschlüsselten Text, um zu zeigen, dass die ursprüngliche Nachricht wiederhergestellt wird
+ 
+** Beispiel:**
+  Eingabe:  Hallo Welt
+  Shift:    3
+  Verschlüsselt:  Kdoor Zhow
+  Entschlüsselt:  Hallo Welt
+  
+**Hinweis**
+  * Den Shift bekommen Sie hin, wenn Sie mit den Ordinalzahlen (Codewerte der Zeichen arbeiten).
+  * Codiert wird einfach, indem der Ordinalzahl ein Shift addiert wird.
+  * Bei Dekodieren wird einfach der Ordinalzahl der Shift abgezogen.
+
+
+===== Solution =====
+[[modul:m183:learningunits:lu05:loesungen:06|Lösung]]
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

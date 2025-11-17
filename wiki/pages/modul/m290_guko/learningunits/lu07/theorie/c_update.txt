@@ -1,0 +1,65 @@
+====== LU07c – UPDATE: Daten ändern ======
+
+Der Befehl %%UPDATE%% wird verwendet, um bestehende Daten in einer Tabelle zu ändern.  
+Wichtig: Immer mit einer Bedingung (%%WHERE%%) einschränken, damit nicht alle Zeilen verändert werden.
+
+
+===== UPDATE Statement =====
+**Syntax (mit Filter – empfohlen)**
+<WRAP center box 80% round><code sql>
+UPDATE tabellenname
+SET spalte1 = neuer_wert1, spalte2 = neuer_wert2
+WHERE bedingung;
+</code></WRAP>
+
+**Syntax (ohne Filter – gefährlich!)**
+<WRAP center box 80% round><code sql>
+UPDATE tabellenname
+SET spalte1 = neuer_wert1;
+</code></WRAP>
+
+
+**Ausgangstabelle:**
+<WRAP center box 80% round>
+^ film_id ^ title               ^ director           ^ released_year ^ star1              ^
+| 1       | Lost in Translation | Sofia Coppola      | 2003          | Scarlett Johansson |
+| 2       | Inception           | Christopher Nolan  | 2010          | Leonardo DiCaprio |
+| 3       | Arrival             | Denis Villeneuve   | 2016          | Amy Adams         |
+</WRAP>
+
+**Beispiel 1: Gezieltes Update (Primärschlüssel)**
+<WRAP center box 80% round><code sql>
+UPDATE favourite_film
+SET director = 'C. Nolan'
+WHERE film_id = 2;
+</code></WRAP>
+
+<WRAP center box 80% round>
+^ film_id ^ title               ^ director     ^ released_year ^ star1              ^
+| 1       | Lost in Translation | Sofia Coppola| 2003          | Scarlett Johansson |
+| 2       | Inception           | C. Nolan     | 2010          | Leonardo DiCaprio  |
+| 3       | Arrival             | Denis Villeneuve | 2016     | Amy Adams          |
+</WRAP>
+
+**Beispiel 2: Mehrere Spalten ändern**
+<WRAP center box 80% round><code sql>
+UPDATE favourite_film
+SET title = 'Arrival (Extended Cut)', star1 = 'Amy Adams'
+WHERE film_id = 3;
+</code></WRAP>
+
+<WRAP center box 80% round>
+^ film_id ^ title                  ^ director         ^ released_year ^ star1             ^
+| 1       | Lost in Translation    | Sofia Coppola    | 2003          | Scarlett Johansson|
+| 2       | Inception              | C. Nolan         | 2010          | Leonardo DiCaprio |
+| 3       | Arrival (Extended Cut) | Denis Villeneuve | 2016          | Amy Adams         |
+</WRAP>
+
+**Beispiel 3: Semantisches Update**
+<WRAP center box 80% round><code sql>
+UPDATE favourite_film
+SET star1 = 'TBD'
+WHERE star1 IS NULL;
+</code></WRAP>
+
+> **Warnung:** Ohne %%WHERE%% würden **alle Zeilen** der Spalte mit dem //SET//-Befehl geändert.

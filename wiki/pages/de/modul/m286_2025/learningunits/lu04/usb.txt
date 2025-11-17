@@ -1,0 +1,36 @@
+====== LU04d - USB ======
+
+===== Einleitung =====
+Der USB ist eine universelle, externe Schnittstelle für alle Peripheriegeräte, die an einem Computer angeschlossen werden. Die Identifikation der Geräte wird vom USB-Hostadapter im Computer durchgeführt, der auch das Laden der Treiber und die Grundkonfiguration vornimmt. Zusätzlich verbessert sich durch Hot-Plugging, das Hinzufügen und Entfernen von Peripherie-Geräten im laufenden Betrieb, die Bedienerfreundlichkeit. 
+
+USB erfüllt folgende Anforderungen:
+
+  * eine einheitliche Schnittstelle für alle Peripherie-Geräte
+  * eine mechanisch stabile und einfache Steckverbindung
+  * kleine platzsparende Stecker und Buchsen
+
+Zusätzlich weisen alle USB-Spezifikationen folgende Eigenschaften auf:
+  * billig
+  * abwärtskompatibel
+
+===== Übersicht über USB-Normen =====
+Nachfolgend eine Übersicht über alle USB-Normen und deren Eigenschaften (sog. Spezifikationen)
+
+{{:modul:m286:learningunits:lu07:usb-overview.png?600|}}
+
+===== Stromversorgung mit USB =====
+Über die Kabelverbindungen versorgt der USB einfache (z.B. Maus und Tastatur) und größere Geräte (z.B. Scanner) mit Strom. Unabhängig vom Stecker muss ein USB-Host oder -Hub die angeschlossenen Geräte mit mindestens 100 mA versorgen. Bis zu 500 mA (2,5 Watt) kann er dem Gerät auf Anforderung liefern. Das reicht natürlich für modere Smartphones und Tablets nicht aus, weshalb ein Wildwuchs an Ladeverfahren entstanden ist.
+
+
+===== Probleme mit dem USB =====
+Die meisten Probleme mit dem USB sind auf schlechte und zu lange Kabel zurückzuführen. Das bezieht sich auch auf die mitgelieferten USB-Kabel. Die teilweise sehr billigen Kabel mit Steckverbindern im Cent-Bereich sind für die hohen Geschwindigkeient im hohen MBit- und GBit-Bereich nicht gemacht. Anfangs waren Kabellängen von 5 Metern erlaubt. Heute gelten 3 Meter bereits als kritisch. Und bei USB 3.1 ist nicht mehr als 1 Meter drin. Außerdem ist jede Steckverbindung eine Fehlerquelle.
+Verlängerungskabel sind seit USB 3.0 tabu und auf USB-Hubs sollte man möglichst verzichten. Außerdem ist der USB mit der Zeit recht komplex geworden. Mehrere Geschwindigkeitsstufen und Stromsparmodi, sowie die Abwärtskompatibilität bringen einiges an Entwicklungsaufwand mit. Dadurch sind viele Hersteller gezwungen, die USB-Spezifikationen frei zu interpretieren. Man sucht dann eher einfache statt stabile Lösungen.
+Generell gilt, je weniger Steckverbindungen und je kürzer die Kabel, desto weniger Probleme. Verlängerungskabel und USB-Hub-Kaskaden sollte man grundsätzlich vermeiden.
+
+
+===== Installation von USB-Geräten =====
+Die Installation eines USB-Geräts ist vergleichsweise einfach und ist ohne technisches Wissen und im laufenden Betrieb möglich. Bei den meisten Geräten reicht es aus, den Stecker einzustecken. Danach installiert das Betriebssystem die Treiber selbst. Nach einer kurzen Installationsphase ist das Gerät betriebsbereit.
+Manche USB-Geräte verfügen über einen internen Speicher in dem der Treiber gespeichert ist. Er wird automatisch beim erstmaligen Einstecken installiert. Bei weiteren USB-Geräten wird nach dem Einstecken ein Treiber benötigt (z.B. via CD oder Download).
+
+===== Warum wurde der USB eingeführt/entwickelt? =====
+Der Kauf von externen Geräten scheiterte vor der Zeit von USB häufig daran, dass ein PC nicht genug freie externe Schnittstellen hatte. Der Einbau von Erweiterungskarten war wegen begrenzter Ressourcen (Speicher, Adressen, ...) nicht immer möglich. Hinzu kam, dass die unterschiedlichen Geräte unterschiedliche Stecker und Schnittstellen hatten. Fast jeder Gerätetyp hatte seine eigene Schnittstelle. Zwar konnte ein Gerät leichter einem festen Steckplatz zugeordnet werden, doch das war etwas für Experten und nicht für unbedarfte Anwender.

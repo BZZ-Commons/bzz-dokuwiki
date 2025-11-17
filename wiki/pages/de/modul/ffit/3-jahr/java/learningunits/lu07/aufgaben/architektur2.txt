@@ -1,0 +1,8 @@
+==== LU07.A02 Software Architektur API ====
+
+Überlegen Sie sich die notwendigen REST APIs zwischen Front- und Backend einer simplen Webbasierten Buchhaltungsapplikation, welche folgenden Bedingungen erfüllt.
+   * **Anforderung 1**: Der Benutzer soll einen eigenen Kontenplan erstellen können.
+   * **Anforderung 2**: Der Benutzer soll für einen Zeitraum (z.B. Jahr 2025) ein Buchungsjournal führen können.
+   * **Anforderung 3**: Der Benutzer soll zu einem Buchungsjournal eine Erfolgsrechnung und eine Bilanz generieren können.
+
+Halten Sie Ihre Notizen in einem Dokument fest und laden Sie das entsprechende PDF hoch.

@@ -1,0 +1,48 @@
+====== LU06.L04 - KPI berechnen =======
+
+===== Aufgaben ==== 
+
+**1. ROI:** Ein Unternehmen hat 500.000 Euro in die Entwicklung eines neuen Produkts investiert. Nach der Markteinführung des Produkts wurden innerhalb des ersten Jahres Einnahmen in Höhe von 750.000 Euro generiert. Die laufenden Kosten für Produktion, Marketing und Ver-trieb des Produkts im ersten Jahr betrugen 200.000 Euro.
+Berechnen Sie den ROI des Innovationsprojekts für das erste Jahr nach der Markteinführung.
+
+  Gegeben
+  Investitionskosten = 500'000CHF
+  Einnahmen = 750'000CHF
+  Laufende Kosten 200'000CHF
+
+  Berechnung
+  ROI = ((Einnahmen – Gesamtkosten) / Investitionskosten) * 100
+  ROI = ((750'000CHF - 500’000CHF – 200’000CHF) / 500’000CHF) * 100
+  ROI = ((750'000CHF - 700’000CHF) / 500’000CHF) * 100
+  ROI = 50'000CHF / 500’000CHF * 100
+  ROI = 10%
+
+
+  
+**2. Time-To-Market:** Ein Technologieunternehmen beginnt mit der Entwicklung eines neuen Software-Tools am 1. Juli 2023. Die Entwicklungsphase wird am 15. Dezember 2023 abgeschlossen. Nach der Entwicklungsphase durchläuft das Tool eine Testphase, die am 28. Februar 2024 endet. Das Produkt wird schließlich am 1. April 2024 auf den Markt gebracht.
+Berechnen Sie die Time-to-Market für das neue Software-Tool in Monaten.
+
+  Gegeben
+  Beginn der Entwicklung: 1. Juli 2023
+  Ende der Entwicklungsphase: 15. Dezember 2023
+  Ende der Testphase: 28. Februar 2023
+  Markteinführung: 1. April 2024
+
+  Berechnung
+  Gesamtzeit von Start der Entwicklung bis zur Markteinführung = 1. April 2024 - 1. Juli 2023
+  Die Gesamtzeit wurde in Tagen berechnet und dann in Monate umgerechnet, indem die Gesamtanzahl der Tage durch den Durchschnitt von 30 Tagen pro Monat geteilt wurde. 
+  Dies ergab eine Time-to-Market von ungefähr 9,17 Monaten.
+
+**3. Innovations-Füllrate:**
+Ein Unternehmen hat das Ziel, seine Innovationspipeline jedes Quartal mit mindestens 20 neuen Ideen zu füllen. Im ersten Quartal wurden 18 Ideen generiert, im zweiten Quartal 22 Ideen, im dritten Quartal 15 Ideen und im vierten Quartal 25 Ideen. Berechnen Sie die durchschnittliche Innovations-Füllrate pro Quartal und bestimmen Sie, ob das Unternehmen sein Ziel erreicht hat.
+
+  Gegeben:
+  Generierte Ideen pro Quartal: 18, 22, 15, 25
+
+  Berechnung:
+  1. Gesamtzahl der generierten Ideen über alle Quartale = 18 + 22 + 15 + 25 = 80 Ideen 
+  2. Füllrate = (Gesamte Anzahl der Ideen / Anzahl Quartale)
+  3. Füllrate = (80 Ideen / 4 Quartale) = 20 Ideen pro Quartal
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

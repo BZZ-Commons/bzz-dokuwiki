@@ -1,0 +1,117 @@
+====== Projekt: Study Buddy Finder-Applikation ======
+
+===== 1. Ausgangslage =====
+
+Lernen macht gemeinsam oft mehr Spass und führt zu besseren Ergebnissen – doch passende Lernpartner:innen zu finden, ist schwierig. Unterschiedliche Fächer, Lernziele oder Prüfungszeiten erschweren die Suche.
+Das Bildungszentrum möchte mit der neuen Plattform „Study Buddy Finder“ eine Lösung schaffen, die Lernende gezielt miteinander vernetzt und sie beim gemeinsamen Lernen unterstützt.
+
+----
+
+
+
+===== 2. Problemstellung =====
+Aktuell finden Lernende ihre Partner:innen meist zufällig – etwa durch Zufall in der Klasse oder über Chatgruppen. Dabei bleibt viel Potenzial ungenutzt, denn viele hätten ähnliche Lernziele, Prüfungen oder Interessen, wissen aber nichts voneinander.
+Ein digitales Tool, das nach Fächern, Prüfungen oder Projekten filtert und automatisches Matching anbietet, soll dieses Problem lösen. Vertrauen, Benutzerfreundlichkeit und Datenschutz stehen dabei im Mittelpunkt.
+
+----
+
+
+===== 3. Projektauftrag =====
+Erstellen Sie eine Web-Applikation, mit der Lernende an der Schule passende Lernpartner:innen finden können.
+Die Applikation soll eine smarte Matching-Funktion bieten, Profile vergleichen und eine einfache Kontaktaufnahme ermöglichen.
+
+Ziel ist ein funktionaler Prototyp, der zeigt, wie Lernende basierend auf Fachgebieten, Prüfungen oder Lernzielen miteinander verbunden werden können.
+
+Berücksichtigen Sie insbesondere:
+  * Datenschutz und sichere Kommunikation
+  * Eine intuitive, motivierende Benutzeroberfläche
+  * Erweiterbarkeit (z. B. Gruppenlernen, Kalender, Chat-Integration)
+
+
+----
+
+
+===== 4. Technologie-Wahl =====
+Sie werden eine native Mobile App mit https://bubble.io/ bauen.
+
+  * **Eine Person** der Gruppe erstellt sich dazu einen Account auf bubble.io 
+  * Die Person **teilt das Login** mit dem Rest der Gruppe
+  * Sie **nutzen alle dasselbe Login**, andernfalls können Sie nicht gleichzeitig am gleichen Projekt arbeiten
+  * Jedes Teammitglied schaut sich das Tutorial an: https://www.youtube.com/watch?v=PuQz1w80ddw&t=801s
+
+Den Backlog pflegen Sie mit https://trello.com/de
+
+  * **Jede Person der Gruppe registriert sich** / meldet sich mit dem Atlassian Konto bei Trello an.
+  * Eine Person der Gruppe erstellt ein Projekt
+  * Alle Personen der Gruppe werden dazu eingeladen.
+  * Jedes Teammitglied schaut sich das Tutorial an: https://www.youtube.com/watch?v=nJhSRP-HZ0Y&t=164s
+  * Bauen Sie das Trello Board entsprechend dem im Video vorgestellten Board auf.
+
+
+Suchen Sie ein Figma Design Template, das Sie als Ausgangslage für das Design der App nutzen können.
+Wichtig ist, dass die Typographie, Designelemente und States (Active, Disabled, Hover) abgebildet sind und Sie sich daran orientieren können.
+
+👉🏽 Zu den Templates: https://www.figma.com/community/design-inspirations/style-guides?resource_type=mixed&editor_type=all&price=all&sort_by=all_time&creators=all
+
+----
+
+===== 5. Ziel des Auftrags =====
+Ihr Team entwickelt in Sprints einen Prototypen, der:
+
+  * das Matching-Konzept praktisch demonstriert,
+  * Vertrauen und Benutzerfreundlichkeit sichtbar macht,
+  * und eine funktionierende Nutzerinteraktion ermöglicht (z. B. Suche, Match, Kontaktaufnahme).
+
+----
+
+
+
+
+===== Funktionen der Applikation: =====
+
+=== Profil & Authentifizierung: ===
+
+  * Registrierung mit Schul-E-Mail oder Single Sign-On.
+  * Erstellung eines Lernprofils (Name, Klasse, Fächer, Lernstil, Ziele).
+  * Optionale Verknüpfung mit Kalender oder Stundenplan.
+  * Datenschutzkonforme Speicherung der persönlichen Daten.
+
+=== Buddy-Suche & Matching: ===
+
+  * Suche nach Fächern, Prüfungen oder Projekten.
+  * Intelligentes Matching basierend auf Interessen, Lernzielen und Verfügbarkeit.
+  * Filter- und Sortiermöglichkeiten (z. B. Lernmodus: „gemeinsam üben“, „Fragen beantworten“, „Projektpartner“).
+  * Vorschläge für passende Lernpartner:innen („Empfohlene Matches“).
+
+=== Kommunikation & Organisation: ===
+
+  * In-App-Nachrichtenfunktion oder sichere Kontaktaufnahme (z. B. Chat, E-Mail-Link).
+  * Möglichkeit, Lerntermine direkt zu planen oder eine Lerngruppe zu gründen.
+  * Benachrichtigungen bei neuen Anfragen oder passenden Matches.
+
+=== Benutzerkonto und Authentifizierung: ===
+
+  * Erstellung eines Nutzerkontos mit persönlichen Daten.
+  * Login-Funktion zur Authentifizierung mit optionaler MFA.
+  * Speicherung von Bestell- und Zahlungsdaten im Benutzerprofil.
+  * Datenschutzkonforme Handhabung aller persönlichen Informationen.
+
+
+=== Vertrauen & Community: ===
+
+  * Bewertungs- oder Feedbackfunktion nach abgeschlossenen Lernphasen.
+  * Verifizierte Schulprofile zur Vertrauensbildung.
+  * Optionale Profilbeschreibung oder Lernpräferenzen (z. B. „mag Gruppenarbeit“, „lernt lieber morgens“).
+
+
+----
+
+===== Ziele =====
+  * Mindestens 70 % der Lernenden finden innerhalb von zwei Wochen nach Registrierung einen passenden Lernbuddy.
+  * 90 % der Nutzer:innen bewerten die Benutzerfreundlichkeit mit der Note 5 oder höher.
+  * Vertrauen und Sicherheit werden in einer Nutzerumfrage mit durchschnittlich ≥ 4 von 5 Punkten bewertet.
+  * Die App wird regelmäßig aktiv genutzt (mind. 50 % aktive Nutzer:innen pro Monat).
+
+
+----  
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Gaby Jenni

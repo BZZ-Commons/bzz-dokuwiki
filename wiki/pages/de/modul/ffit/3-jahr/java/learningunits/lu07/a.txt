@@ -1,0 +1,34 @@
+====== LU07a - Spring & Spring Boot ======
+
+==== Einführung ====
+
+Spring und Spring Boot bieten eine Menge gebräuchlicher Funktionen an, welche in herkömmlichen Java manuell implementiert werden müssen. In der nachfolgenden Tabelle sind einige Beispiele gelistet inklusive einer Alternative in herkömmlichen Java.
+
+^ Use Case ^ Beispiel in Plain Java ^ Spring ^ Spring Boot ^
+| Konfigurationen | Manuelle Implementation mit Properties | <WRAP> Annotations: <code java>
+@Configuration
+@PropertySource("classpath:application.properties")
+...
+@Value("${jakarta.persistence.jdbc.user}") </code> </WRAP> | <WRAP> Automatische Erkennung von ''application.properties''
+<code java> @Value("${jakarta.persistence.jdbc.user}")
+</code> </WRAP> |
+| Datenbankanbindung | Implementation mit JDBC, JPA/Hibernate | Templates ''org.springframework.jdbc'', um Hibernate einfacher zu nutzen | Zusätzlich ''org.springframework.data.jpa.repository.JpaRepository'', um einfach Entitäten zu mappen. |
+| Logging | SLF4J | Eigene SLF4J-Bindings, einfache Konfiguration | SLF4J automatisch vorkonfiguriert, out-of-the-box |
+| REST-API | Javalin | - | Umfassendes Framework mit vielen fixfertigen Funktionalitäten. |
+| ... | ... | ... | ... |
+
+==== Beispielprojekt ====
+
+{{:de:modul:ffit:3-jahr:java:learningunits:lu07:git_create_fork.png|}}
+
+Erstellen Sie ein Fork-Repository von https://github.com/bzz-templates-java/ffit-lu07-club-accounting-app mit **allen** Branches (Häkchen gemäss Screenshot entfernen).
+
+Anschliessend können Sie Ihr eigenes Repository klonen und via Gradle starten. In der Grundversion ist erst eine GET-API implementiert: http://localhost:8080/api/hello
+
+<code bash>
+git clone git@github.com:<GITHUB_USERNAME>/ffit-lu07-club-accounting-app.git
+cd ffit-lu07-club-accounting-app/
+./gradlew bootRun
+</code>
+
+Sobald der Start via Konsole geklappt hat, können Sie die Ausführung mittels "Ctrl + C" wieder beenden. Öffnen Sie anschliessend das Projekt in Ihrer IDE und starten Sie es mit dieser, um sicherzugehen, dass Ihre IDE das Gradle-Projekt korrekt erkannt hat und verwenden kann.
