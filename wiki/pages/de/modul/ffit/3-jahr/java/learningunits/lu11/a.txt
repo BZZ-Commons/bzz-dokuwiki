@@ -1,21 +1,20 @@
-====== LU11a - ??? ======
+====== LU11a - Manuelles Testing ======
 
-==== Git-Nachtrag? ====
-PGP-Schlüssel vs SSH-Schlüssel
+Bei der Library-App wurden Ihnen automatische Tests bequemerweise zur Verfügung gestellt. Bei der Club-Accounting-App waren Sie auf manuelle Tests angewiesen. 
 
-==== Patterns? ====
-...
+Die Authentication und die Komplexität der Schnittstelle und der übergebenen Daten macht es aber etwas komplizierter. Ein HTTPS-Request via Konsole oder Postman ist zwar möglich, lässt sich aber schlecht skalieren auf grössere Projekte. Daher wurde Ihnen ein Frontend zur Verfügung gestellt. Mit diesem können Sie Ihr eigenes Backend überprüfen. 
 
-==== Testing & ngrok ?====
-...
+Interessant wird es jedoch, wenn jemand anderes die Implementierung überprüft. Damit das Backend nicht gehostet oder der Code extra ausgecheckt werden muss, kann man zum Beispiel ''ngrok'' verwenden.
 
-==== File-Import & Import ====
-...
+==== ngrok ====
 
-==== How to AI ====
-...
+''ngrok'' öffnet einen Tunnel von Ihrem lokalen Rechner nach ''TODO''. Dadurch können Sie Ihr Backend für jemand anderen freigeben.
 
+  - Account erstellen auf https://dashboard.ngrok.com/signup
+  - Datei runterladen von https://ngrok.com/download/windows
+  - ''ngrok.exe'' starten.
 
-<code java>
-
+<code cmd>
+ngrok config add-authtoken <APP_TOKEN>
+ngrok http https://localhost:8443
 </code>
