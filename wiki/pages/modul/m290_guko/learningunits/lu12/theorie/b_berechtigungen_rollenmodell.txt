@@ -113,9 +113,31 @@ Die Schritte sind immer:
   * Zuerst fachlich überlegen: **Wer soll was dürfen?**
   * Dann technisch umsetzen: **Welche Rolle bekommt welche Rechte?**
 
+===== 5. Der root-User – mächtig, aber... =====
+
+In jeder MySQL-Installation gibt es den **Benutzer ''root''**.  
+Er ist der **Superuser** – vergleichbar mit einem Systemadministrator auf einem Computer.
+
+Eigenschaften von ''root'':
+
+  * hat **alle Rechte** auf allen Datenbanken (''ALL PRIVILEGES ON *.*''),
+  * kann **andere Benutzer und Rollen anlegen, ändern oder löschen**,
+  * kann **jede Tabelle lesen, ändern oder entfernen**,
+  * ist **nicht beschränkt durch Rollen oder Privilegien**.
+
+Das ist praktisch für **Systemverwaltung und Setup**, aber riskant im Alltag:
+
+  * Ein Fehler mit ''root'' kann **alle Datenbanken** betreffen (z. B. versehentliches Löschen),
+  * Wenn jemand das Passwort von ''root'' kennt, hat er **vollständigen Zugriff auf alle Daten**,
+  * Applikationen, die mit ''root'' verbunden sind, verletzen das Prinzip der **minimalen Privilegien**.
+
+**Best Practice:**
+  * ''root'' wird **nur für administrative Aufgaben** genutzt (z. B. Setup, Benutzerverwaltung).
+  * Für den Betrieb (z. B. in Applikationen, Notenbuch, Übungsszenarien) werden **eigene Benutzer mit begrenzten Rechten** angelegt.
+  * Diese Benutzer erhalten nur die **Rollen und Rechte**, die sie wirklich brauchen.
 
 
-===== 5. Erste technische Begriffe =====
+===== 6. Erste technische Begriffe =====
 
 Auf der nächsten Seite lernen Sie die konkreten MySQL-Befehle kennen:
 

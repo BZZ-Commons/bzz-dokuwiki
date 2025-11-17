@@ -1,0 +1,108 @@
+====== Sprint Planning Anleitung ======
+
+===== 1. Rollen und Aufgaben =====
+**Product Owner (PO)**\\
+  * Präsentiert die User Stories aus dem PDF
+  * Klärt unklare Punkte zu Anforderungen
+  * Unterstützt bei der Priorisierung
+  * Geht auf Rückfragen der Entwickler ein\\
+
+
+**Scrum Master (SM)**\\
+  * Moderiert das Meeting
+  * Achtet auf die Time Box (max. 60 Minuten)
+  * Hilft dem Team, Scrum-Regeln einzuhalten und den Ablauf zu verstehen
+
+
+**Entwicklungsteam** (2–3 Entwickler)\\
+  * Prüft die User Stories
+  * Schätzt den Aufwand für die Umsetzung
+  * Bestimmt selbst, welche User Stories im Sprint umgesetzt werden können
+  * Plant die Umsetzung der Einträge im Sprint Backlog
+
+
+----
+
+===== 2. Ziel des Sprint Plannings =====
+
+  - Gemeinsam die Arbeit für den kommenden Sprint planen.
+  - Auswahl der User Stories (Product Backlog → Sprint Backlog).
+  - Festlegen des Sprint-Ziels, das beschreibt, was der Sprint erreichen soll.
+  - Planen, wie die ausgewählten Aufgaben umgesetzt werden, damit sie am Ende des Sprints „Done“ sind.
+
+----
+
+===== 3. Definition of Done (DoD) =====
+
+Definieren Sie im Team, wann eine Aufgabe oder User Story als fertig („Done“) gilt.\\
+Ergänzen Sie die Definition of Done in ihrem Trello-Board als separate Card in der Spalte "Done".
+
+Beispiele:\\
+
+  * Die Funktion ist in Bubble.io implementiert.
+  * Die Funktion wurde getestet und funktioniert wie beschrieben.
+  * Das Layout entspricht den Vorgaben.
+  * Kommentare oder Dokumentation sind hinzugefügt.
+  * Karte auf Trello wird erst auf Done verschoben, wenn alle Punkte erfüllt sind.
+
+
+----
+
+===== 4. Ablauf des Sprint Plannings =====
+
+Das Sprint Planning besteht aus zwei Phasen:
+
+**Phase 1 – Was kann im Sprint fertiggestellt werden?**
+  - Product Owner stellt alle User Stories aus dem PDF vor.
+  - Entwicklungsteam prüft: Welche Stories sind umsetzbar?
+  - Unklare Punkte werden notiert und gemeinsam mit dem Product Owner geklärt.
+  - Ergebnis: Auswahl der User Stories für das Sprint Backlog.
+
+**Phase 2 – Wie wird die Arbeit erledigt?**
+  - Entwicklerteam plant die Umsetzung der ausgewählten User Stories:
+  - Aufgaben in kleine Einheiten aufteilen (1 Tag oder weniger).
+  - Reihenfolge und Abhängigkeiten festlegen.
+  - Product Owner beantwortet Rückfragen und gibt Klarheit zu Anforderungen.
+  - Scrum Master moderiert, achtet auf Time Box und dokumentiert den Ablauf.
+  - Ergebnis: Sprint Backlog inkl. Aufgabenplan und Sprint-Ziel.
+
+
+----
+
+===== 5. Vorgehensweise =====
+
+**Vorbereitung – User Stories prüfen (ca. 10 Min.)**
+  * Lesen Sie das PDF mit allen User Stories sorgfältig durch. Diese dienen als Vorlage, sind keinesfalls abschliessend: {{ :de:modul:m426_v2025:learningunits:lu02:aufgaben:user_stories_fuer_study_buddy_finder.pdf |}}
+  * Notieren Sie unklare Punkte, die Sie im Meeting mit dem Product Owner klären wollen.
+  * Änderungen oder Aufteilungen erfolgen erst nach Klärung mit dem Product Owner.
+
+**Phase 1: Auswahl der User Stories (ca. 15–20 Min.)**
+  * Product Owner erklärt die wichtigsten User Stories.
+  * Entwicklerteam prüft: Was kann im Sprint realistisch umgesetzt werden.
+  * Klärung unklarer Punkte mit Product Owner.
+  * Ausgewählte Stories ins Sprint Backlog auf Trello übertragen.
+
+
+**Phase 2: Umsetzung planen (ca. 20 Min.)**
+  * Entwicklerteam teilt Stories in kleine Aufgaben auf.
+  * Reihenfolge und Abhängigkeiten festlegen.
+  * Aufgaben den Teammitgliedern zuweisen.
+  * Prüfen, dass alle Aufgaben die DoD erfüllen können.
+
+**Sprint-Ziel formulieren**
+  * Gemeinsam Sprint-Ziel festlegen, das den Zweck des Sprints beschreibt.
+  * Ziel dient während des Sprints als Orientierung.
+
+**Trello Board vorbereiten**
+  * Product Backlog: noch nicht ausgewählte Stories
+  * Sprint Backlog: ausgewählte Stories + Aufgaben
+  * Doing: laufende Arbeiten (leer am Sprintanfang)
+  * Done: fertige Arbeiten (leer am Sprintanfang)
+  * Protokolle: alle Protokolle, die der Scrum Master über das Projekt hinweg schreibt. Zu Planning, Daily Scrum, Review und Retrospective. 
+
+
+**Sprint starten**
+  * Entwicklungs-Team (Dev-Team) beginnt mit den ersten Aufgaben aus Doing.
+  * Scrum Master unterstützt Dev-Team, sofern keine spezifischen Tasks mehr für seine Rolle als Scrum Master anfallen.
+  * Product Owner ergänzt bestehende Stories mit dem Feedback aus dem Sprint Planning und schreibt neue User Stories in den Product Backlog.
+  * Fortschritt wird nächste Woche im Daily Scrum überprüft

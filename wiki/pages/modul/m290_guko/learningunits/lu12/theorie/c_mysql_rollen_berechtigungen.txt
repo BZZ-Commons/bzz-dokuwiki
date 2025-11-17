@@ -128,32 +128,21 @@ Damit gilt:
 
 Wenn Sie später eine weitere Lehrperson oder einen weiteren Admin hinzufügen, müssen Sie nur einen neuen Benutzer erstellen und ihm oder ihr die passende Rolle zuweisen.
 
-===== Schritt 5: Standardrollen beim Login aktivieren (SET DEFAULT ROLE) =====
 
-MySQL unterscheidet zwischen:
+===== Schritt 5: Rollen beim Login automatisch aktivieren =====
 
-  * **zugewiesenen Rollen** (''GRANT rolle_x TO benutzer'') und
-  * **aktiven Rollen** (die in der Session wirklich wirken).
+Viele Tools (z. B. WebStorm) öffnen neue Verbindungen, ohne ''SET ROLE …'' auszuführen. Dann sind Rollen zwar zugewiesen, aber nicht aktiv – die Datenbank wird ggf. nicht angezeigt.
 
-Viele Tools (z. B. IDEs wie WebStorm) öffnen automatisch neue Verbindungen, ohne ''SET ROLE …'' auszuführen. Dann sind zwar Rollen zugewiesen, aber nicht aktiv – und die Datenbank wird nicht korrekt angezeigt („Schema ist nicht introspected“).
-
-Damit die Rolle **automatisch beim Login aktiv** ist, setzen Sie eine **Standardrolle (Default Role)**:
-
+**Serverweit alle Rollen automatisch aktivieren**
 <WRAP center round box 80%>
 <code sql>
-SET DEFAULT ROLE db_admin
-TO 'lehrperson_koch'@'localhost';
-
-SET DEFAULT ROLE lernende_role
-TO 'lernende_caduff'@'localhost';
+-- als root/Administrator:
+SET PERSIST activate_all_roles_on_login = ON;
 </code>
 </WRAP>
 
-Ab jetzt gilt:
+Ab jetzt sind für alle Benutzer die zugewiesenen Rollen bei jeder Anmeldung aktiv – auch in neuen Query-Consoles.
 
-  * Wenn sich ''lehrperson_koch'' verbindet, ist ''db_admin'' automatisch aktiv.
-  * Wenn sich ''lernende_caduff'' verbindet, ist ''lernende_role'' automatisch aktiv.
-  * Tools wie WebStorm sehen die Rechte sofort und können ''noten_db'' sauber anzeigen.
 
 ===== Schritt 6: Rechte kontrollieren (SHOW GRANTS) =====
 

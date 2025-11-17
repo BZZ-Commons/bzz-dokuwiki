@@ -31,14 +31,24 @@ Diese Lernziele decken die Inhalte der Learning Units **LU07 bis LU13** ab.
   * Ich kann **GROUP BY** korrekt verwenden und die **Regel für SELECT** erklären (nur Aggregate oder gruppierte Spalten).
   * Ich kann den Unterschied **WHERE** (Zeilenfilter **vor** dem Gruppieren) vs. **HAVING** (Gruppenfilter **nach** dem Gruppieren) anwenden.
 
-===== LU12 – Data Security & User Management (DCL) =====
-  * Ich weiss, was der **root**-User ist (Vollzugriff, nur für Administration) und warum Apps **nicht** mit root laufen sollen (**Least Privilege**).
-  * Ich kann **Benutzerkonten** mit **Hostbindung** anlegen/löschen:  
-    * ''CREATE USER 'name'@'localhost' IDENTIFIED BY '...';''  
-    * ''DROP USER 'name'@'host';''
-  * Ich kann **Rollen** erstellen und mit **GRANT** Privilegien auf verschiedenen Ebenen vergeben:  
-    * global (''*.*''), Datenbank (''db.*''), Tabelle (''db.tabelle''), optional Spalte
-  * Ich kann zugewiesene Rechte **anzeigen** (''SHOW GRANTS [FOR ...] [USING rolle]'') und **entziehen** (''REVOKE'').
+===== LU12 – Datenschutz, Datensicherheit & User Management (DCL) =====
+  * Ich kann den Unterschied zwischen **Datenschutz** (rechtlich) und **Datensicherheit** (technisch) erklären.
+  * Ich kann die Bedeutung des **Prinzips der minimalen Privilegien** (Least Privilege) erläutern.
+  * Ich kann erklären, warum Applikationen **nicht mit root-Rechten** arbeiten sollen.
+  * Ich kann anhand eines Beispiels (Noten-Datenbank) erklären, **wer welche Rechte** sinnvollerweise erhalten sollte (Lehrperson vs. Lernende).
+  * Ich kann in MySQL **Benutzerkonten** erstellen und löschen:
+    * ''CREATE USER 'name'@'localhost' IDENTIFIED BY '...';''
+    * ''DROP USER 'name'@'localhost';''
+  * **Rollen** erstellen und ihnen **Rechte zuweisen**:
+    * ''CREATE ROLE ...;''  
+    * ''GRANT ... ON datenbank.* TO rolle;''  
+  * Rollen **Benutzern zuweisen** und beim Login **automatisch aktivieren**:
+    * ''GRANT rolle TO 'user'@'localhost';''  
+    * ''SET DEFAULT ROLE rolle TO 'user'@'localhost';''
+  * zugewiesene **Rechte anzeigen** und **entziehen**:
+    * ''SHOW GRANTS FOR ...;''  
+    * ''REVOKE ... FROM ...;''
+
 
 ===== LU13 – Datenexport & -import =====
   * Ich kann eine Datenbank mit **mysqldump** exportieren (struktur- und datenbezogene Optionen benennen) und aus einem Dump **wiederherstellen**.

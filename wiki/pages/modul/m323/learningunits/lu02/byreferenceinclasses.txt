@@ -160,3 +160,7 @@ In Python werden Objekte, einschließlich Dataclasses, immer ''By Reference'' ü
 <WRAP center round tip 60%>
 Tipp: Wenn Sie mutable Attribute in einer Dataclass verwenden, sollten Sie sorgfältig überlegen, ob die direkte Veränderung dieser Attribute innerhalb von Funktionen in Ihrem Programmdesign erwünscht ist. Verwenden Sie ''frozen'' Dataclasses oder `field(default_factory=list)`, um unbeabsichtigte Änderungen zu verhindern.
 </WRAP>
+
+----
+{{tag>M323-LU02 M323-AE1}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/ch/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Kevin Maurizi 

@@ -1,0 +1,53 @@
+==== LU11.A01 Manuelles Testing ====
+
+Überlegen Sie sich, mit welchen manuellen Tests Sie die fertige Club-Accounting-App testen können.
+
+Beschreiben Sie mindestens 3 Testfälle mit ihren Testschritten.
+
+Beispiel: 
+<WRAP todo 60%>
+**Testfall 1: CRUD-Operationen Konto**
+
+Voraussetzungen:
+  * Buchhaltungsprojekt "Testverein" muss existieren
+  * Zugriff auf localhost muss im Browser erlaubt sein
+
+Ablauf:
+    - https://alexanderpeter.github.io/ffit-lu08-club-accounting-website/ öffnen
+    - Mit "Testverein", "Testpasswort" und "➜] Login" einloggen
+    - Tab "1️⃣ Kontenplan" öffnen
+    - Knopf "➕ Zeile hinzufügen" drücken
+    - Neue Zeile mit "9000" und "Eröffnungsbilanz" abfüllen
+    - Knopf "💾 Änderungen speichern" drücken
+    - Feld "Eröffnungsbilanz" zu "Eröffnungsbilanzkonto" ändern
+    - Knopf "💾 Änderungen speichern" drücken
+    - Knopf "🗑️" drücken
+    - Knopf "💾 Änderungen speichern" drücken
+    - Via "[➜ Logout" ausloggen
+
+Erwartungen
+  * Konto kann hinzugefügt, verändert und gelöscht werden.
+  * POST-, GET- und POST-API werden jeweils aufgerufen
+  * Keine Fehlermeldungen (Rote Toast Nachrichten)
+  * Keine Fehlermeldungen im Log
+</WRAP>
+
+Führen Sie die Tests bei sich aus und erstellen Sie ein Testprotokoll. Notieren Sie auch Fehler des Frontends.
+Beispiel:
+
+<WRAP todo 60%>
+**Test durchgeführt am:** <DATUM>
+
+**Test durchgeführt durch:** <VORNAME> <NACHNAME>
+
+**Getestetes System:** localhost von <VORNAME> <NACHNAME>
+
+**Gesamtergebnis:** <OK / Not OK>
+
+| **Testfall** | **Ergebnis** | **Schweregrad der Fehler** |
+| Testfall 1: CRUD-Operationen Konto | Keine Fehler festgestellt ✅ | - |
+| ... | ... | ... |
+
+</WRAP>
+
+Laden Sie die Testbeschreibungen und das Testprotokoll als PDF-Datei hoch.

@@ -86,3 +86,7 @@ Das Verständnis von ''By Value'' und ''By Reference'' ist entscheidend für das
 <WRAP center round tip 60%>
 Tipp: Wenn Sie mutable Objekte verwenden, aber unerwartete Änderungen vermeiden möchten, sollten Sie in Erwägung ziehen, eine Kopie des Objekts zu erstellen, bevor Sie es an eine Funktion übergeben.
 </WRAP>
+
+----
+{{tag>M323-LU02 M323-AE1}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/ch/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Kevin Maurizi 
