@@ -1,0 +1,40 @@
+====== LU19e - Aufgabe 2 / Task 43: events ======
+
+===== Administration =====
+Füllen Sie die nachfolgenden Felder aus:
+
+**Klasse:** ....................................
+
+**Vorname:** .................................
+
+**Name:** ......................................
+
+===== Vorarbeit =====
+  * Sie können als Basis für diese Prüfungsfrage die Lösung **LU06.S08.html** verwenden.
+
+===== Ausgangslage =====
+Beim Auftrag **LU06.S08.html** haben wir einen kleinen Additionsrechner programmiert. Dieser bestand aus 
+  * Ziffernblock 1 für die erste Ziffer, aktuell nur von 1 bis 5 realisiert
+  * Operator
+  * Ziffernblock 2 für die erste Ziffer, aktuell nur von 1 bis 5 realisiert
+
+{{:en:modul:m291:learningunits:lu19:theorie:a43_start.png?400|}}
+===== Auftrag =====
+  * Ergänzen Sie in beiden Ziffernblöcken die Ziffern 6-9.
+  * Ergänzen Sie den Rechner um die Operatoren **Geteilt** (/), d.h. die erste Zahl wird durch die zweite geteilt und das Ergebnis korrekt angezeit.
+  * Ergänzen Sie den Rechner um die Operatoren ** Mal ** (*), d.h. die beiden Zahlen werden multipliziert und das Ergebnis korrekt angezeigt
+  * Die Funktion des Reset-Buttons muss erhalten bleiben.
+
+
+^Zielzustand 1 | Addition zweier Zahlen | {{:en:modul:m291:learningunits:lu19:theorie:t44_ziel1.png?400|}} |
+^Zielzustand 2 | Multiplikation zweier Zahlen | {{:en:modul:m291:learningunits:lu19:theorie:t44_ziel2.png?400|}} | 
+^Zielzustand 3 | Division zweier Zahlen | {{:en:modul:m291:learningunits:lu19:theorie:t44_ziel3.png?400|}} | 
+^Zielzustand 4 | Reset des Ergebnisses | {{:en:modul:m291:learningunits:lu19:theorie:t44_ziel4.png?400|}} | 
+
+-----
+
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir
+
+
+
+

@@ -1,0 +1,13 @@
+====== LU02b - Verbindung und einfache Operationen mit MongoDB ======
+===== Ziele =====
+  -Ich kann eine Verbindung zu MongoDB über einen DBMS-Client herstellen.
+  -Ich kann eine Datenbank mit Collection und Documents erstellen und ausgeben.
+  -Ich kann eine Datenbank oder eine Collection löschen.
+
+===== Grundlagen =====
+[[https://youtu.be/KnSWxZho3ts |Erste Operationen in MongoDB]]: Dieses Video demonstriert Ihnen grundlegende Operationen in MongoDB anhand eines Beispiels.
+
+===== Übungen =====
+  -Verbinden Sie sich mit MongoDB über eine DBMS-Client (Datagrip, MongoDB Compass)
+  -Repetieren Sie die Operationend gemäss Erklärvideo und versuchen Sie die Syntax nachzuvollziehen.
+  -Lösen Sie die Übung ''1.01 (01/02_Exercises/01_Exercise.md)'' aus dem Repo.

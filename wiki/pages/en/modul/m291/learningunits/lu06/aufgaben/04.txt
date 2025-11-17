@@ -1,0 +1,31 @@
+====== LU06.A04 - Events - mood measurement ======
+
+===== Prerequisites  =====
+  * Work type: Individual
+  * Means of aid: only teaching materials, no websearch, no use of ai.
+  * Timeframe: 10 Minutes
+  * Expected result: a vue application, that reflects the mood of the user.
+===== Source =====
+  * You can take any script an adjust it to your needs.
+
+===== Assignments  ======
+Create a small Vue app with the following features:
+  - Display a heading: "Choose Your Mood".
+  - Add three buttons, each representing a different mood:
+    * 😊 Happy
+    * 😢 Sad
+    * 😠 Angry
+  - Use the v-on directive to update a data property called mood based on the button clicked.
+  - Display a custom message below the buttons that changes based on the selected mood.
+  - When no mood is selected, show a default message prompting the user to pick one.
+
+===== Solution =====
+[[en:modul:m291:learningunits:lu06:loesungen:04|Lösung]]
+
+===== Vocabulary =====
+^ English ^ German ^ 
+| ... | ...|
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

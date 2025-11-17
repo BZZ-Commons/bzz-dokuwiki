@@ -1,0 +1,34 @@
+====== A) Exploding Kittens ======
+<WRAP center round todo 60%>
+Erstelle einen Bot, der im Kartenspiel "Exploding Kittens" gegen andere Bots antritt.
+</WRAP>
+===== Das Spiel =====
+Exploding Kittens ist ein Kartenspiel für 2-6 Spieler.
+Wer zuletzt noch lebt, hat die Spielrunde gewonnen.
+
+[[https://dumekj556jp75.cloudfront.net/exploding-kittens/English.pdf|Spielanleitung]]
+
+Für unsere vereinfachte Version gibt es "nur" folgende Karten:
+  * Exploding Kitten: Falls du keine "Defuse"-Karte spielst, bist du ausgeschieden.
+  * Skip: Du musst am Ende deines Zugs keine Karte ziehen.
+  * See the Future: Du siehst die nächsten drei Karten auf dem Stapel.
+  * Shuffle: Der Kartenstapel wird neu gemischt.
+  * Normal card: Eine Karte ohne besondere Eigenschaften.
+
+===== Services =====
+Dein Bot ist Teil eines verteilten Systems.
+Er kommuniziert über Sockets mit den Services.
+
+==== Clowder-Service ====
+//A clowder is a group of cats//
+
+Der Clowder-Service verwaltet die Liste aller Bots, die aktuell aktiv sind.
+  * Jeder Bot muss sich mit seiner IP-Adresse registrieren.
+  * Sendet ein Bot länger als 1 Minute lang keinen Heartbeat, wird er aus der Liste entfernt.
+
+==== Arena-Service ====
+Der Arena-Service führt die Spielrunden durch.
+Alle Bots die beim Clowder-Service registriert sind, nehmen an der Spielrunde teil.
+
+Dein Bot muss auf einem Socket auf die Nachrichten des Arena-Service hören.
+Alle möglichen Nachrichten und deren Inhalt findest du in der Beschreibung des [[.:bot]].

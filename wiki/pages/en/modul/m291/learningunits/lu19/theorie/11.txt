@@ -1,0 +1,42 @@
+====== LU19a - Aufgabe 1 / Task 11: v-bind, v-if mit AND ... ======
+
+===== Administration =====
+Füllen Sie die nachfolgenden Felder aus:
+
+**Klasse:** ....................................
+
+**Vorname:** ...................................
+
+**Name:** ......................................
+
+===== Vorarbeit =====
+  * Sie können als Vorlage für diese Aufgabe die Lösung **LU05.S11.html** verwenden.
+
+===== Ausgangslage =====
+Beim Auftrag **LU05.A11.html** behandelten wir im Unterricht das Thema „Zugriff auf Ressourcen“, die an zwei Bedingungen geknüpft sind. Beim Kinobesuch beispielsweise ist Alter und ob eine erwachsene Begleitperson anwesend relevant. 
+
+{{:en:modul:m291:learningunits:lu19:theorie:a06_ausgangslage.png?500|}}
+
+===== Auftrag =====
+Programmieren Sie einen Zugriffskontrolle Art für die Attraktion Silverstar (Achterbahn der Höhe 7m) im EUROPAPARK in RUST. Die Zugriffserlaubnis zur dieser Attraktion ist an folgende Bedingungen geknüpft.
+  * Zugelassenes Alter: >= 11 Jahr
+  * Zugelassene Grösse >=140 cm 
+  * Keine Schwangerschaft
+
+  * Das System soll dem User Rückmeldung geben, ob und warum dieser zugelassen ist bzw. nicht zugelassen ist. 
+
+**Hinweis**
+  * Der Farbton der Meldung ist nicht relevant. 
+  
+
+^Zielzustand 1 | Keine Zulassung: Mit 8 Jahren darf man nicht auf die SILVERSTAR | {{:en:modul:m291:learningunits:lu19:theorie:t11_ziel1.png?400|}} |
+^Zielzustand 2 | Zulassung, weil Alter und Grösse passend, und nicht schwanger. | {{:en:modul:m291:learningunits:lu19:theorie:t11_ziel2.png?400|}} | 
+^Zielzustand 3 | Keine Zulassung: Alter passend und nicht schwanger, aber leider zu klein. | {{:en:modul:m291:learningunits:lu19:theorie:t11_ziel3.png?400|}} |
+^Zielzustand 4 | Keine Zulassung: Alter und Grösse passend, aber schwanger. | {{:en:modul:m291:learningunits:lu19:theorie:t11_ziel4.png?400|}} |
+
+-----
+
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir
+
+
+

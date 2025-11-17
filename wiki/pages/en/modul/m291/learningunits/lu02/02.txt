@@ -1,0 +1,31 @@
+====== LU02b - LB1 - Inhalt ======
+===== Inhalt =====
+  * **1. Frameworks**
+    * 1.1 Definition. Grundlagen, Beispiele, Vergleich mit Library
+    * 1.2 Inversion of Control
+  * **2. VUE-Basics**
+    * 2.1 Basierende Programmiersprache
+    * 2.2 Umgang mit VUE-Variablen
+    * 2.3 Directives basics: v-bind, v-if, v-show, v-if, v-for
+  * **3. Directives: v-bind**
+    * 3.1 src
+    * 3.2 styles
+    * 3.3 classes
+    * 3.4 shorthand
+  * **4. Directives: v-if**
+    * 4.1 Anwendung v-if, v-else-if, v-else
+    * 4.2 logischen Operatoren AND / OR
+    * 4.3 Funktionen wie beispielsweise text.include()
+  * **5. Directives: v-show**
+    * 5.1 Status von logischen variablen bei verschiedenen Werten
+    * 5.2 Anwendung von v-show
+    * 5.3  Vergleich v-show mit v-if
+  * **6. Directives: v-for**
+    * 6.1 Rendering mittels <ul> und <ol>
+    * 6.2 Anwendung eindimensionale arrays
+    * 6.3 Anwendung auf mehrdimensionale Arrays
+    * 6.4 Verwendung von Index
+    
+
+
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

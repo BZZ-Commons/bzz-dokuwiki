@@ -1,0 +1,11 @@
+a:2:{s:7:"current";a:9:{s:4:"date";a:2:{s:7:"created";i:1727861183;s:8:"modified";i:1731923439;}s:7:"creator";s:12:"Volkan Demir";s:4:"user";s:6:"vdemir";s:11:"last_change";a:9:{s:4:"date";i:1731923439;s:2:"ip";s:11:"213.3.48.35";s:4:"type";s:1:"E";s:2:"id";s:40:"modul:m290:learningunits:lu08:theorie:03";s:4:"user";s:8:"cbolzern";s:3:"sum";s:0:"";s:5:"extra";s:0:"";s:10:"sizechange";i:1;s:4:"mode";s:4:"page";}s:11:"contributor";a:2:{s:6:"vdemir";s:12:"Volkan Demir";s:8:"cbolzern";s:17:"Christian Bolzern";}s:5:"title";s:41:"LU10b - Server-Programing with JavaScript";s:11:"description";a:2:{s:15:"tableofcontents";a:4:{i:0;a:4:{s:3:"hid";s:41:"lu10b_-_server-programing_with_javascript";s:5:"title";s:41:"LU10b - Server-Programing with JavaScript";s:4:"type";s:2:"ul";s:5:"level";i:1;}i:1;a:4:{s:3:"hid";s:19:"learning_objectives";s:5:"title";s:19:"Learning Objectives";s:4:"type";s:2:"ul";s:5:"level";i:2;}i:2;a:4:{s:3:"hid";s:12:"helloworldjs";s:5:"title";s:13:"HelloWorld.js";s:4:"type";s:2:"ul";s:5:"level";i:2;}i:3;a:4:{s:3:"hid";s:10:"vocabulary";s:5:"title";s:10:"Vocabulary";s:4:"type";s:2:"ul";s:5:"level";i:3;}}s:8:"abstract";s:298:"LU10b - Server-Programing with JavaScript
+
+Learning Objectives
+
+	*  Programing our first Node Server application „hello world“
+	*  Know how to start the server application
+	*  Generate a terminal message
+
+HelloWorld.js
+
+At the beginning of each programer's carreer there is always our notorious";}s:8:"relation";a:2:{s:5:"media";a:1:{s:44:"modul:m290:learningunits:lu08:theorie:a6.png";b:1;}s:10:"firstimage";s:44:"modul:m290:learningunits:lu08:theorie:a6.png";}s:8:"internal";a:2:{s:5:"cache";b:1;s:3:"toc";b:1;}}s:10:"persistent";a:5:{s:4:"date";a:2:{s:7:"created";i:1727861183;s:8:"modified";i:1731923439;}s:7:"creator";s:12:"Volkan Demir";s:4:"user";s:6:"vdemir";s:11:"last_change";a:9:{s:4:"date";i:1731923439;s:2:"ip";s:11:"213.3.48.35";s:4:"type";s:1:"E";s:2:"id";s:40:"modul:m290:learningunits:lu08:theorie:03";s:4:"user";s:8:"cbolzern";s:3:"sum";s:0:"";s:5:"extra";s:0:"";s:10:"sizechange";i:1;s:4:"mode";s:4:"page";}s:11:"contributor";a:2:{s:6:"vdemir";s:12:"Volkan Demir";s:8:"cbolzern";s:17:"Christian Bolzern";}}}

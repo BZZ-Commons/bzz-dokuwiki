@@ -9,9 +9,9 @@
 
 
 
-|{{:modul:m319:learningunits:lu10:zwingend.png?30|}}|Zwingende Vorschriften|
-|{{:modul:m319:learningunits:lu10:empfehlung.png?30|}}|Empfehlungen          |
-|{{:modul:m319:learningunits:lu10:ausnahem.png?30|}}|Begründete Ausnahmen  |
+|{{de:modul:m319:learningunits:lu10:zwingend.png?30|}}|Zwingende Vorschriften|
+|{{de:modul:m319:learningunits:lu10:empfehlung.png?30|}}|Empfehlungen          |
+|{{de:modul:m319:learningunits:lu10:ausnahem.png?30|}}|Begründete Ausnahmen  |
 
 ===== Bezeichner =====
 
@@ -21,8 +21,8 @@
 
 //Ein sprechender Bezeichner sagt etwas über den Sinn und Zweck einer Komponente aus. Durch den Einsatz von sprechenden Bezeichnern werden viele Kommentare überflüssig.//
 
-|{{:modul:m319:learningunits:lu10:zwingend.png?30|}}|Die Bezeichner (Namen) von Klassen, Methoden, Attributen, Variablen und Konstanten müssen sprechend sein.              |
-|{{:modul:m319:learningunits:lu10:ausnahem.png?30|}}|Schleifenzähler innerhalb einer kurzen Iteration (max. 5 Zeilen) dürfen auch kürzere Variablennamen wie i, j verwenden.|
+|{{de:modul:m319:learningunits:lu10:zwingend.png?30|}}|Die Bezeichner (Namen) von Klassen, Methoden, Attributen, Variablen und Konstanten müssen sprechend sein.              |
+|{{de:modul:m319:learningunits:lu10:ausnahem.png?30|}}|Schleifenzähler innerhalb einer kurzen Iteration (max. 5 Zeilen) dürfen auch kürzere Variablennamen wie i, j verwenden.|
 
 === Beispiel ===
 
@@ -60,11 +60,11 @@ public class category {
 
 //Durch eine einheitliche Schreibweise verbessern Sie die Lesbarkeit Ihres Sourcecodes.//
 
-^{{:modul:m319:learningunits:lu10:zwingend.png?30|}}^Klassennamen bestehen aus einem Substantiv und beginnen mit einem Grossbuchstaben (z.B. Account).     ^
-|{{:modul:m319:learningunits:lu10:zwingend.png?30|}}|Die Bezeichner von Methoden, Attributen und Variablen beginnen mit einem Kleinbuchstaben.             |
-|{{:modul:m319:learningunits:lu10:zwingend.png?30|}}|Konstanten werden nur mit Grossbuchstaben geschrieben.                                                |
-|{{:modul:m319:learningunits:lu10:empfehlung.png?30|}}                                                                                             |Zusammengesetzte Bezeichner sollten in camelCase geschrieben werden; z.B. getFirstname().             |
-|{{:modul:m319:learningunits:lu10:empfehlung.png?30|}}                                                                                             |Vermeide Sonderzeichen, Leerzeichen und Umlaute in allen Bezeichnern, sowie in Datei- und Ordnernamen.|
+^{{de:modul:m319:learningunits:lu10:zwingend.png?30|}}^Klassennamen bestehen aus einem Substantiv und beginnen mit einem Grossbuchstaben (z.B. Account).     ^
+|{{de:modul:m319:learningunits:lu10:zwingend.png?30|}}|Die Bezeichner von Methoden, Attributen und Variablen beginnen mit einem Kleinbuchstaben.             |
+|{{de:modul:m319:learningunits:lu10:zwingend.png?30|}}|Konstanten werden nur mit Grossbuchstaben geschrieben.                                                |
+|{{de:modul:m319:learningunits:lu10:empfehlung.png?30|}}                                                                                             |Zusammengesetzte Bezeichner sollten in camelCase geschrieben werden; z.B. getFirstname().             |
+|{{de:modul:m319:learningunits:lu10:empfehlung.png?30|}}                                                                                             |Vermeide Sonderzeichen, Leerzeichen und Umlaute in allen Bezeichnern, sowie in Datei- und Ordnernamen.|
 
 === Beispiel ===
 
@@ -89,13 +89,13 @@ public class Project {
 
 //Der Einsatz von// public//-Attributen untergräbt das Prinzip der Datenkapselung.//
 
-|{{:modul:m319:learningunits:lu10:zwingend.png?30|}}|Die Attribute einer Klasse werden entweder private (Normalfall) oder protected (Vererbung) definiert.|
+|{{de:modul:m319:learningunits:lu10:zwingend.png?30|}}|Die Attribute einer Klasse werden entweder private (Normalfall) oder protected (Vererbung) definiert.|
 
 ===== Zugriff auf Attribute =====
 
 //Die konsequente Verwendung von getter/setter-Methoden unterstützt// lazy initialization //und vermeidet Konflikte mit lokalen Variablen.//
 
-|{{:modul:m319:learningunits:lu10:empfehlung.png?30|}}|Der Zugriff auf Attribute soll auch in derselben Klasse mittels Getter/Setter-Methoden erfolgen.|
+|{{de:modul:m319:learningunits:lu10:empfehlung.png?30|}}|Der Zugriff auf Attribute soll auch in derselben Klasse mittels Getter/Setter-Methoden erfolgen.|
 
 === Beispiel ===
 
@@ -139,8 +139,8 @@ public class Project {
 
 //Ein Programmblock wird zwischen geschweiften Klammern { … } eingefasst.//
 
-^{{:modul:m319:learningunits:lu10:zwingend.png?30|}}^Die Positionierung der geschweiften Klammern ist einheitlich innerhalb des ganzen Projekts.                                          ^
-|{{:modul:m319:learningunits:lu10:zwingend.png?30|}}|Innerhalb eines Programmblocks werden die Zeilen um 2 oder 4 Stellen eingerückt. Die Einrückung ist im ganzen Sourcecode einheitlich.|
+^{{de:modul:m319:learningunits:lu10:zwingend.png?30|}}^Die Positionierung der geschweiften Klammern ist einheitlich innerhalb des ganzen Projekts.                                          ^
+|{{de:modul:m319:learningunits:lu10:zwingend.png?30|}}|Innerhalb eines Programmblocks werden die Zeilen um 2 oder 4 Stellen eingerückt. Die Einrückung ist im ganzen Sourcecode einheitlich.|
 
 === Beispiel: Variante 1 (K&R style) ===
 <code java>
@@ -185,8 +185,8 @@ public class Project {
 
 //Eine Codezeile sollte immer auf einen Blick erfasst werden können.//
 
-^{{:modul:m319:learningunits:lu10:zwingend.png?30|}}^Eine Codezeile ist maximal 80 (oder 120) Zeichen lang. Längere Zeilen werden umgebrochen.^
-|{{:modul:m319:learningunits:lu10:empfehlung.png?30|}}                                                                                             |Ordnen Sie gleiche Elemente wie Bezeichner oder Bedingungen untereinander an.            |
+^{{de:modul:m319:learningunits:lu10:zwingend.png?30|}}^Eine Codezeile ist maximal 80 (oder 120) Zeichen lang. Längere Zeilen werden umgebrochen.^
+|{{de:modul:m319:learningunits:lu10:empfehlung.png?30|}}                                                                                             |Ordnen Sie gleiche Elemente wie Bezeichner oder Bedingungen untereinander an.            |
 
 === Beispiel ===
 <code java>
@@ -206,8 +206,8 @@ if (
 
 //Konstruktoren versetzen ein neu erzeugtes Objekt in einen definierten Anfangszustand.//
 
-|{{:modul:m319:learningunits:lu10:zwingend.png?30|}}|Die Konstruktor-Methode(n) stehen an erster Stelle, um die Übersichtlichkeit zu erhöhen.|
-|{{:modul:m319:learningunits:lu10:empfehlung.png?30|}}|Die Initialisierung von Attributen erfolgt im Konstruktor, nicht bei der Deklaration.   |
+|{{de:modul:m319:learningunits:lu10:zwingend.png?30|}}|Die Konstruktor-Methode(n) stehen an erster Stelle, um die Übersichtlichkeit zu erhöhen.|
+|{{de:modul:m319:learningunits:lu10:empfehlung.png?30|}}|Die Initialisierung von Attributen erfolgt im Konstruktor, nicht bei der Deklaration.   |
 
 === Beispiel ===
 
@@ -232,7 +232,7 @@ public class Project {
 
 //Durch eine geeignete Reihenfolge fällt es leichter, die richtige Methode effizient zu finden.//
 
-|{{:modul:m319:learningunits:lu10:empfehlung.png?30|}}|Ähnliche Methoden sollen immer in der gleichen Reihenfolge angeordnet werden.|
+|{{de:modul:m319:learningunits:lu10:empfehlung.png?30|}}|Ähnliche Methoden sollen immer in der gleichen Reihenfolge angeordnet werden.|
 
 === Beispiel ===
 
@@ -253,8 +253,8 @@ public class Project {
 
 //Der Klassenkopf ist die Visitenkarte einer Klasse. Er informiert den Programmierer über Aufgabe und Version dieser Klasse.//
 
-|{{:modul:m319:learningunits:lu10:zwingend.png?30|}}|Jede Klasse hat einen Javadoc-Klassenkopf. Dieser enthält mindestens die Angaben zu:\\ \\ * Kurzbeschreibung\\ * @author: Autor(en)                                                                                                                                                                                                                                                             |
-|{{:modul:m319:learningunits:lu10:empfehlung.png?30|}} |Sofern Sie keine Versionsverwaltung (z.B. git) verwenden, sollten ausserdem\\ \\ * @since: Letztes Änderungsdatum \\ * @version: Aktuelle Version des Sourcecodes \\ \\ im Kopf stehen.|
+|{{de:modul:m319:learningunits:lu10:zwingend.png?30|}}|Jede Klasse hat einen Javadoc-Klassenkopf. Dieser enthält mindestens die Angaben zu:\\ \\ * Kurzbeschreibung\\ * @author: Autor(en)                                                                                                                                                                                                                                                             |
+|{{de:modul:m319:learningunits:lu10:empfehlung.png?30|}} |Sofern Sie keine Versionsverwaltung (z.B. git) verwenden, sollten ausserdem\\ \\ * @since: Letztes Änderungsdatum \\ * @version: Aktuelle Version des Sourcecodes \\ \\ im Kopf stehen.|
 
 === Beispiel ===
 <code>
@@ -272,7 +272,7 @@ public class Project {
 
 //Der Methodenkopf liefert alle Angaben über die Aufgabe und Schnittstelle einer Methode.//
 
-|{{:modul:m319:learningunits:lu10:zwingend.png?30|}}|Jede Methode hat einen Javadoc-Kopf mit den Angaben:\\ \\ * Kurzbeschreibung\\ * @param: Beschreibung der Parameter (falls vorhanden)\\ * @return: Beschreibung des Returnwerts (falls vorhanden)\\ * @exception: Beschreibung der Exceptions (falls vorhanden)|
+|{{de:modul:m319:learningunits:lu10:zwingend.png?30|}}|Jede Methode hat einen Javadoc-Kopf mit den Angaben:\\ \\ * Kurzbeschreibung\\ * @param: Beschreibung der Parameter (falls vorhanden)\\ * @return: Beschreibung des Returnwerts (falls vorhanden)\\ * @exception: Beschreibung der Exceptions (falls vorhanden)|
 
 === Beispiel ===
 <code>
@@ -291,8 +291,8 @@ public class Project {
 
 //Kommentare sind wie das Salz in der Suppe: Zuwenig und es schmeckt nicht, zu viel und es ist ungeniessbar.//
 
-|{{:modul:m319:learningunits:lu10:zwingend.png?30|}}|Jeder Programmblock, dessen Aufgabe nicht offensichtlich ist, wird in einem Kommentar beschrieben.|
-|{{:modul:m319:learningunits:lu10:empfehlung.png?30|}}|Ein kurzer Blockkommentar ist oftmals sinnvoller als Zeilenkommentare, die über den Bildschirm hinausreichen.|
+|{{de:modul:m319:learningunits:lu10:zwingend.png?30|}}|Jeder Programmblock, dessen Aufgabe nicht offensichtlich ist, wird in einem Kommentar beschrieben.|
+|{{de:modul:m319:learningunits:lu10:empfehlung.png?30|}}|Ein kurzer Blockkommentar ist oftmals sinnvoller als Zeilenkommentare, die über den Bildschirm hinausreichen.|
 
 === Beispiel ===
 <code>

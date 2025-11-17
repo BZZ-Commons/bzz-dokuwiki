@@ -1,0 +1,43 @@
+====== LU05.A10 - v-if and functions ======
+
+===== Prerequisites  =====
+  * Work type: Individual
+  * Means of aid: only teaching materials, no websearch, no use of ai.
+  * Timeframe: 15 Minutes
+  * Expected result: A Vue script that displays HTML elements based on input values.
+
+===== Learning objectives =====
+  - Explaining the The directive //v-if// in your own word.  
+  - Being able to apply v-if in combination wit a function 
+
+===== Sourcecode of the solution =====
+  * Example without image: [[https://www.w3schools.com/vue/tryit.php?filename=tryvue_v-if_pizza | Code-example: v-if pizza 1]]
+  * Example with image: [[https://www.w3schools.com/vue/tryit.php?filename=tryvue_v-if_pizza2 |Code-example: v-if pizza 2]]
+
+===== Assignment 1 ======
+As we are now capable to use //v-if// with logical values (true/false), and furthermore check actual values e.g. numbers, this assignment is about hoch to check //string-values// (words). For this we are going to use the function //text.includes()// within the //v-if//.
+
+  - Execute the script. As you can see the content of the variable text is displayed on the screen as //text// contains the search-string //Pizza// with a kapital //P//.
+  - Now delete the word //Pizza// from the variable //text// in the script-area. Execute your script again. 
+  - Note your realisations as a comment.
+  - Save your script acordingly, whether in your W3School workspace or locally in your Webstorm code-editor
+
+===== Assignment 2 =====
+In the if paragraph there is a image of a pizza displayed as well. 
+
+  - Add a section //v-else// with a according //img-tag// which shows a different image than a pizza.
+  - Note your realisations as a code-comment.
+  - Save your script acordingly, whether in your W3School workspace or locally in your Webstorm code-editor
+
+===== Solution =====
+[[en:modul:m291:learningunits:lu05:loesungen:10|Lösung]]
+
+
+===== Vocabulary =====
+^ English ^ German ^ 
+| afterwards | anschliessend|
+| accordingly | entsprechend |
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

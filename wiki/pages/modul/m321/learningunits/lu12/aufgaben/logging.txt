@@ -3,7 +3,6 @@
 Ersetzte die ''print''-Ausgaben durch ein Logging in eine Datei.
 </WRAP>
 
-** [[https://classroom.github.com/a/HrtnpuI7|GitHub Classroom Assignment]]**
 ===== Ausgangslage =====
 In der Applikation "m321-lu12-a01-logging" werden verschiedene Meldungen in der Konsole ausgegeben.
 Dies ist zwar für die Entwicklung praktisch, für einen produktiven Betrieb sollen aber die Meldungen in einer Log-Datei gesammelt werden.

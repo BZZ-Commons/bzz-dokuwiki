@@ -61,12 +61,11 @@ Tauschen Sie mit einem Partner gegenseitig die Public Keys aus.
 Senden Sie Ihrem Partner eine verschlüsselte und signierte E-Mail.
 Sie sollten von Ihrem Partner ebenfalls eine entsprechende E-Mail erhalten.
 
-<nodisp>
+/*
 ==== TODO ====
 Für 2025 überarbeiten auf ed25519-Algorithmus.
 Auch für den Abschlusstest muss ein entsprechender Schlüssel eingesetzt werden.
-</nodisp>
-
+*/
 ----
 {{tag>m114-A0G}}
 [[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

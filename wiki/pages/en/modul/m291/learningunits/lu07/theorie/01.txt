@@ -1,0 +1,77 @@
+====== LU07a - Methods simple ======
+
+===== Learning ojectives =====
+  - Be able to call existing methods (subroutines) in Vue.
+  - Be able to programme your own methods in Vue.
+
+===== Introduction =====
+Actions such as clicking a mouse button can trigger simple actions such as changing colour, but also complex operations, e.g. calculation the VAT(Value added tax). In the latter case, these complex operations are handled using subroutines such as methods.  Methods are sub-programmes that can perform tasks of all kinds. The use of subroutines makes the programme code ‘smaller’ and easier to maintain. It is therefore worth using methods.
+
+===== Introduction to Vue Methods =====
+In Vue.js, methods are functions defined inside a component’s methods object. These functions can be used to handle user events, perform calculations, or manipulate component data. Unlike computed properties, methods are invoked when needed rather than being cached. This makes them suitable for actions that must be executed on demand, such as button clicks or form submissions. Vue methods are basically defined inside the methods section of a component.
+
+Vue methods are powerful tools for adding interactivity and logic to your components. By keeping behavior organized in the methods object, your code remains clean and maintainable.
+
+===== Example 1: Simple Counter =====
+This example shows how to use a Vue method to increment a counter when a button is clicked. The increment method is called when the button is clicked. It increases the count value by 1 using this.count++.
+
+  <template>
+    <div>
+      <p>Counter: {{ count }}</p>
+      <button @click="increment">Increment</button>
+    </div>
+  </template>
+  <script>
+    export default {
+      data() {
+        return {
+          count: 0
+        };
+      },
+      methods: {
+        increment() {
+          this.count++;
+        }
+      }
+    };
+  </script>
+
+===== Example 2: Greeting a User =====
+This example uses a method to generate a greeting based on the user's name. The greet method creates a greeting using the current value of name and displays it with alert().
+
+  <template>
+    <div>
+      <input v-model="name" placeholder="Enter your name" />
+      <button @click="greet">Greet</button>
+    </div>
+  </template>
+  <script>
+    export default {
+      data() {
+        return {
+          name: ''
+        };
+      },
+      methods: {
+        greet() {
+          alert(`Hello, ${this.name || 'stranger'}!`);
+        }
+      }
+    };
+  </script>
+
+
+
+
+===== Source =====
+[[https://www.w3schools.com/vue/vue_methods.php|W3School-Methods]]
+ 
+
+===== Vocabulary =====
+^ English ^ German ^ 
+| VAT | Mehrwertsteuer |
+| to invoke | aufrufen |
+| submission | Versendung, Einreichung | 
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

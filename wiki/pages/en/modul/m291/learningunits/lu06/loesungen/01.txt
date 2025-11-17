@@ -1,0 +1,25 @@
+====== LU06.S01 - Events - introductory example ======
+
+===== Sourcecode of the solution =====
+{{ :en:modul:m291:learningunits:lu06:loesungen:lu06.s01.zip |Sourcecode of the solution}}
+
+===== Assignments ======
+  - Test the code example provided to you. Describe the behaviour of the script using HTML comments.
+  - Which 3 lines of code are the core for incrementing the counter? Identify these and comment on them in a meaningful way.
+  - Change the increment of the counter to 2, i.e. it should count up in steps of 2.  
+  - Establish in your webstorm-editor a new directory and name it **06_events**. Safe the script in this directory.
+  - To make sure, that the moose is visible as well, safe the image of the image in the media-directory in webstorm
+  - Adjust in your script the path to the moose-image in order to make it visible again.
+
+Your solution should look like as follows displayed
+
+{{:en:modul:m291:learningunits:lu06:loesungen:lu06.a01_1.png?1000|Results of the code-changing including incode-comments}}
+
+{{:en:modul:m291:learningunits:lu06:loesungen:lu06.s01_2.png?1000|webstorm transfered solution}}
+
+===== Vocabulary =====
+^ English ^ German ^ 
+| ... | ... |
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

@@ -4,7 +4,7 @@
 For the programming tasks in module 319, we use GitHub Classroom and PyCharm (or a similar development environment).
 This allows you to learn the most important steps with git and you do not need to upload your solutions separately to Moodle.
 
-{{modul:m319:learningunits:lu04:lu04_ablauf_classroom.png?600|}}
+{{de:modul:m319:learningunits:lu04:lu04_ablauf_classroom.png?600|}}
 
 ===== Prerequisite =====
 Before you can work with GitHub Classroom, you must ...
@@ -15,45 +15,45 @@ Before you can work with GitHub Classroom, you must ...
 === 1. accept the assignment ===
 In the Moodle course you will find the link to the assignment in the classroom.
 
-{{modul:m319:learningunits:lu04:screenshot_2024-09-10_at_15.56.55.png?800|}}
+{{de:modul:m319:learningunits:lu04:screenshot_2024-09-10_at_15.56.55.png?800|}}
 
 <WRAP center round info 100%>
 === For the first task in a new module:===
 
 Select your name from the list:
 
-{{modul:m319:learningunits:lu04:screenshot_2024-09-10_at_16.04.04.png?400|}}
+{{de:modul:m319:learningunits:lu04:screenshot_2024-09-10_at_16.04.04.png?400|}}
 </WRAP>
 
 
 Open this link and accept the //assignment//.
 
-{{modul:m319:learningunits:lu04:screenshot_2024-09-10_at_16.09.19.png?600|}}
+{{de:modul:m319:learningunits:lu04:screenshot_2024-09-10_at_16.09.19.png?600|}}
 
 Wait a few seconds and reload the website.
 You will see the address (URL) of your personal repository.
 Copy this address.
 
-{{modul:m319:learningunits:lu04:screenshot_2024-09-10_at_16.11.09.png?600|}}
+{{de:modul:m319:learningunits:lu04:screenshot_2024-09-10_at_16.11.09.png?600|}}
 
 
 === 2. clone repository ===
 Now open PyCharm and clone the repository as a new project using the copied link.
 
-{{modul:m319:learningunits:lu04:lu04_classroom03.png?800|}}
+{{de:modul:m319:learningunits:lu04:lu04_classroom03.png?800|}}
 
 **or**
 
-{{modul:m319:learningunits:lu04:lu04_classroom04.png?200|}}
+{{de:modul:m319:learningunits:lu04:lu04_classroom04.png?200|}}
 
 Enter the copied URL.
 If necessary, adjust the folder path in which the project is created.
 
-{{modul:m319:learningunits:lu04:lu04_classroom05.png?600|}}
+{{de:modul:m319:learningunits:lu04:lu04_classroom05.png?600|}}
 
 You may then need to confirm that you trust this project.
 
-{{modul:m319:learningunits:lu04:lu04_classroom06.png?400|}}
+{{de:modul:m319:learningunits:lu04:lu04_classroom06.png?400|}}
 === 3. set up the virtual environment ===
 
 <WRAP center round info 60%>
@@ -61,7 +61,7 @@ The Python virtual environment contains all the external packages that our proje
 Pycharm can set this up automatically for us
 </WRAP>
 
-{{modul:m319:learningunits:lu04:lu04_classroom11.png?600|}}
+{{de:modul:m319:learningunits:lu04:lu04_classroom11.png?600|}}
 
 Confirm the setup of the virtual environment with [OK]
 
@@ -114,7 +114,7 @@ This commits the current status of your files.
 
 1. in the menu, select **git** menu, select the **commit** from the menu. A new view opens:
 
-{{modul:m319:learningunits:lu04:lu04_classroom07.png?400|}}
+{{de:modul:m319:learningunits:lu04:lu04_classroom07.png?400|}}
 
 2. in the **commit message** to indicate what you have changed.
 
@@ -130,7 +130,7 @@ This uploads the changes from your local repository to GitHub Classroom.
 
 1. in the menu, select **git** menu, select the **push ...** from the menu. A new window opens:
 
-{{modul:m319:learningunits:lu04:lu04_classroom08.png?400|}}
+{{de:modul:m319:learningunits:lu04:lu04_classroom08.png?400|}}
 
 This window shows you which branch (e.g. master) is sent to which remote repository (e.g. origin).
 You will learn how to work with different branches later.
@@ -146,7 +146,7 @@ In this case, select [Login via GitHub ...]. This will open a new page in your w
 You can check your submission by viewing your repository in a web browser.
 To do this, open the link you used for **Clone project** you have created your local project.
 
-{{modul:m319:learningunits:lu04:lu04_classroom10.png?400|}}
+{{de:modul:m319:learningunits:lu04:lu04_classroom10.png?400|}}
 
 A small symbol shows you whether your solution is correct:
   * Yellow circle: The check is still running. Wait 1-2 minutes and reload the page.

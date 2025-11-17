@@ -1,0 +1,53 @@
+====== LU07.A02 - Methods with arguments ======
+
+===== Prerequisites  =====
+  * Work type: Individual
+  * Means of aid: only teaching materials, no websearch, no use of ai.
+  * Timeframe: 15 Minutes
+  * Expected result: A Vue-Script, which uses methods to display messages on the screen and increments and decrements a counter. 
+  * 
+===== Learning Objectves =====
+  - Implementing VUE methods by using arguments. 
+  - Increment and decrement a counter within a method.
+  - Writing own methods and making use of them.
+
+===== Source =====
+  * [[https://www.w3schools.com/vue/tryit.php?filename=tryvue_methods_moose |Code-example: Methods in VUE]]
+
+===== Assignment A - 2' ======
+  * A01: Test the code example above which was provided to you. Describe the behaviour of the script using HTML comments.
+  * A02: Make sure that everthing is working correctly: The moose-count uses the method **addMoose** by processing the number we need to count up or down
+    - increments by 1
+    - decrements by -1
+    - increments by +5
+  A03: Make sure that you have the title <h1> and have correctly named the file: **lu07.s02.html**
+
+===== Assignment B - 5' =====
+  * B01: Currently we can increment by +1 and +5, and decrement by -1.
+  * B02: Similar to **addMoose** add method **removeMoose** which manges the decrement operations and use it. 
+  * B03: Test your results and save it.
+  * B04: Add more buttons wich can 
+      - increment by +10
+      - decrement by -10
+      - decrement by -5
+  * B05: The aim is to have 3 increment-buttons (+1, +5, +10) and 3 decrement-buttons (-1, -5, -10)
+
+===== Assignment C: Catching numbers belov zero (0) - 8' =====
+  * C01: At 0 we must stop counting, when the count reches the zero. 
+  * C02: Add the case below zero to your **removeMoose-method** by checking the **count** with a if-statement
+  * C03: Check the result: It must stop at zero when the button **removeMoose** when the count reaches 0.
+  * C04: In the case below zero the user must be informed accordingly.
+ 
+===== Solution =====
+[[en:modul:m291:learningunits:lu07:loesungen:02|Lösung]]
+
+===== Vocabulary =====
+^ English ^ German ^ 
+| corresponding number of times | entsprechend oft |
+| to increment | erhöhen, hochzählen |
+| to decrement | vermindern, herunterzählen |
+| thus | somit, dadurch |
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

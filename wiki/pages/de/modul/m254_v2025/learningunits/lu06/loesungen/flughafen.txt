@@ -1,0 +1,30 @@
+====== LU06.L01: EPK/ARIS am Flughafen Frankfurt am Main ======
+
+==== In den ARIS-Modellierungssichten werden folgende Diagramme zur Darstellung verwendet:====
+
+**Datensicht:** Hier werden in der Regel **Entity-Relationship-Modelle (ERM)** verwendet, um die Datenstrukturen und Beziehungen zwischen Daten zu visualisieren.
+
+**Funktionssicht:** Diese Sicht nutzt häufig **Funktionsdekompositionsdiagramme** oder Funktionsbäume, um die Hierarchie und Beziehungen zwischen verschiedenen betriebswirtschaftlichen Tätigkeiten darzustellen.
+
+**Organisationssicht:** In dieser Sicht wird die Organisationsstruktur meist durch **Organigramme** abgebildet, die die verschiedenen Organisationseinheiten und ihre Hierarchien zeigen.
+
+**Steuerungssicht:** Hier werden **ereignisgesteuerte Prozessketten (EPK)** verwendet, um den Ablauf von Geschäftsprozessen und die Verknüpfungen zwischen Ereignissen und Funktionen zu modellieren.
+
+==== Reihenfolge ====
+
+Die Reihenfolge der Bearbeitung der ARIS-Modellierungssichten kann sich nach den spezifischen Anforderungen des Projekts richten. Traditionell wird jedoch oft mit der **Funktionssicht** begonnen, um die Kernprozesse und Tätigkeiten des Unternehmens zu verstehen. Anschließend wird die **Organisationssicht** erarbeitet, die aufzeigt, wer die Funktionen ausführt und wie die Organisation strukturiert ist. Danach folgt die **Datensicht**, die die für die Ausführung der Funktionen benötigten Informationen darstellt. Abschließend wird die **Steuerungssicht** modelliert, welche die Prozesse durch Verbindung der Daten, Funktionen und Organisationseinheiten in einen gesamten Geschäftsprozess integriert.
+
+==== eEPK - Erweiterte Ereignisgesteuerte Prozesskette====
+
+{{:modul:m254:learningunits:lu04:loesungen:epk_komplex.png?200 |}}Die erweiterte Ereignisgesteuerte Prozesskette (eEPK) ist eine vertiefte Variante der EPK, die um zusätzliche Elemente aus den Organisations-, Daten- und Leistungssichten angereichert wird. Dies ermöglicht es, in einer EPK nicht nur den Prozessfluss darzustellen, sondern auch zu zeigen, wie Funktionen mit Informationsobjekten interagieren, also woher Informationen bezogen oder wohin sie gespeichert werden.
+
+Zusätzliche Informationen über die ausführenden Personen, unterstützende Systeme, genutzte Daten und erzeugte Dateien können in die eEPK integriert werden, um Verbindungen zu anderen Sichten im ARIS-Modell herzustellen. Informationsobjekte, wie beispielsweise Datenbanken oder Kundendaten, werden in die eEPK aufgenommen, um zu illustrieren, wie diese Objekte durch Funktionen verändert werden oder von diesen Informationen beziehen.
+
+Die eEPK erweitert die Fähigkeiten der EPK wesentlich um Elemente und Relationen, die in einem Funktionszuordnungsdiagramm zu finden sind. Sie ermöglicht es, Datenflüsse, Organisationseinheiten und Anwendungssysteme abzubilden, und offenbart somit die umfassenden Zusammenhänge innerhalb des Geschäftsprozesses.
+
+Die zusätzlichen Verknüpfungen in der eEPK, die keine strukturbildenden Funktionen haben, werden als nicht strukturbildende Beziehungen bezeichnet. Sie beschreiben nicht die hierarchische oder sequenzielle Ordnung eines Prozesses, sondern die funktionalen und informatorischen Zuordnungen. Beispielsweise kann eine Verbindung zwischen einer Organisationseinheit und einer Funktion die Rolle der Einheit im Kontext der Funktionsausführung darstellen, wie etwa "führt aus" oder "ist fachlich verantwortlich". Diese Rollen und Verknüpfungen tragen dazu bei, die Prozessmodelle zu verfeinern und die Interaktionen zwischen verschiedenen Prozesselementen detaillierter zu beleuchten.
+
+
+
+
+

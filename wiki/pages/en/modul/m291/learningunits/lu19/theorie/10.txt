@@ -1,0 +1,56 @@
+====== LU19a - Aufgabe 1 / Task 10: v-bind, v-for ======
+
+
+===== Administration =====
+Füllen Sie die nachfolgenden Felder aus:
+
+**Klasse:** ....................................
+
+**Vorname:** .................................
+
+**Name:** ......................................
+
+===== Vorarbeit =====
+  * Sie können als Vorlage für diese Aufgabe die Lösung **LU05.S17.html** verwenden
+
+===== Ausgangslage =====
+Beim Auftrag **LU05.S17.html** haben wir verschiedene Gerichte in einem Array verwaltet und mit der directive **v-for** ausgegeben. Manche Gerichte mochten wir, andere wiederum nicht.
+  * Status OK: rote Meldung
+  * Status NOK: grüne Meldung
+  * Alle relevanten Informationen wurden in einem mehrdimensionalen Array gespeichert.
+
+{{:en:modul:m291:learningunits:lu19:theorie:a04_start.png?600|}}
+
+===== Auftrag =====
+  *  Jedes Gericht soll mit Sternen bewertet werden
+    * Flop: *
+    * Top: * * * * *
+  * Die Gerichte werden mit einer entsprechenden Meldung **nummeriert** ausgegeben. 
+  * Farben:
+    * 1 und 2 Sterne: rot
+    * 3 und 4 Sterne: schwarz
+    * 5 Sterne: grün 
+
+**Hinweis**
+  * Die Sterne können, wie im Beispiel ersichtlich, als String im Array abgelegt werden (analog der Kommentare).
+  * Die verwendete Ausgabe-Sprache kann Deutsch oder Englisch sein.
+  * Die einzelnen Bewertungen der Gerichte ist dem Lernenden überlassen. 
+  * Jede Bewertung muss in der Ausgabe vorkommen. 
+  * Die Farbe grau für den Hintergrund ist relevant, hingegen ist der Farbton nicht relevant.
+
+==== Zielzustand ====
+Die Ausgabe kann wie folgt aussehen:
+
+  - Burrito hat * * (2) Sterne
+  - Salat hat * * * (3) Sterne
+  - Kuchen hat * * * (3) Sterne
+  - Suppe  hat * (1) Stern
+  - Fisch hat * (1) Stern
+  - Pizza hat * * * * (4) Sterne
+  - Reis hat * * * * * (5) Sterne
+
+==== Abbildung ====
+{{:en:modul:m291:learningunits:lu19:theorie:t10_ziel.png?600|}}
+
+-----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

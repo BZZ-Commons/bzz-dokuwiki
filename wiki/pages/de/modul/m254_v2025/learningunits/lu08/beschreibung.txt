@@ -1,0 +1,48 @@
+====== LU08c - Use Case beschreiben ======
+Ein gut dokumentierter Business Use Case hilft Unternehmen, Prozesse gezielt zu optimieren, Anforderungen besser zu verstehen und digitale Lösungen effizienter zu implementieren.
+
+===== Elemente eines Business Use Cases =====
+
+
+==== Ziel des Use Cases ====
+  * Welches geschäftliche Problem wird gelöst?
+  * Welchen Mehrwert bietet der Use Case für das Unternehmen oder die Kunden?
+
+==== Akteure (Actors) ====
+  * Wer interagiert mit dem Prozess (z. B. Kunden, Mitarbeiter, Lieferanten, IT-Systeme)?
+
+==== Ablaufbeschreibung ====
+  * Schrittweise Darstellung der Interaktionen zwischen Akteuren und Systemen.
+  * Alternativszenarien oder Ausnahmefälle, falls etwas nicht wie geplant läuft.
+
+==== Ergebnis des Use Cases ====
+  * Erwartetes Endergebnis bzw. geschäftlicher Nutzen (z. B. verbesserte Effizienz, höhere Kundenzufriedenheit).
+
+==== Rahmenbedingungen und Annahmen ====
+  * Welche Voraussetzungen müssen erfüllt sein, damit der Use Case erfolgreich umgesetzt werden kann?
+
+==== Metriken und Erfolgskriterien ====
+  * Wie wird der Erfolg des Business Use Cases gemessen (z. B. Umsatzsteigerung, Kosteneinsparungen, Prozessverbesserungen)?
+
+===== Beispiel eines Business Use Cases =====
+
+^ title ^ Automatisierte Rechnungsverarbeitung im Unternehmen ^^
+^ goal | Reduzierung manueller Aufwände und Fehler in der Buchhaltung. ||
+^ actors | Buchhaltungsmitarbeiter, Lieferanten, Rechnungsverarbeitungssystem. ||
+^ main flow |||
+^ ^ pre-conditions | Bestellung bei Lieferant mit elektronischem Rechnungsversand |
+^ ^  | 1. Lieferanten senden Rechnungen per E-Mail oder Upload. |
+^ ^  | 2. Ein OCR-System liest die Daten automatisch aus. |
+^ ^  | 3. Die Rechnungen werden validiert und an die Buchhaltung weitergeleitet. |
+^ ^  | 4. Nach Freigabe erfolgt die Zahlung. |
+^ ^ post-condition | Zahlung ist erfolgt. | 
+^ alternate flow |||
+^ ^ pre-conditions | Bestellung bei Lieferant mit Rechnungsversand per Briefpost |
+^ ^  | 1. Lieferanten senden Rechnungen per Briefpost. |
+^ ^  | 2. Mitarbeiter scannt die Rechnung. |
+^ ^  | 3. Ein OCR-System liest die Daten automatisch aus. |
+^ ^  | 4. Die Rechnungen werden validiert und an die Buchhaltung weitergeleitet. |
+^ ^  | 5. Nach Freigabe erfolgt die Zahlung. |
+^ ^ post-condition | Zahlung ist erfolgt. | 
+^ Ergebnis | Schnellere Verarbeitung, geringere Fehlerquote, reduzierte Kosten. ||
+

@@ -1,0 +1,31 @@
+====== LU08.A03 - UPATE ======
+
+===== Requirements  =====
+  * Work type: Individual
+  * Timeframe: 15 Minutes
+  * Means of aid: 
+      * Only teaching materials, no websearch, no use of ai.
+  * Expected Result: employee's data are updated according to the requirements below
+
+===== Assignments =====
+In assignment A2 you imported 30 lines of date to the table 'employees'. In this assignment your task is to perform some DML update commands.
+
+==== A: Basic Update ====
+The employee ‘Laura Clark’ got divorced and therefore took her maiden name. Update her data record in the table.
+
+==== B: Update with OR ====
+As a company policy the attribute 'sex' is not required anymore and is to be emptied. Formulate the corresponding SQL statement that deletes all content from that column.
+
+==== C: Update with AND ====
+The performance of our company's IT department was outstanding last year, resulting in a pay rise to 70'000 for all IT employees earning less than 70,000. Create a DML update command that covers the requirements.
+
+===== Solution =====
+[[modul:m290:learningunits:lu07:loesungen:l03|Lösung]]
+
+===== Vocabulary =====
+^ English ^ German ^ 
+| ... | ... |
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

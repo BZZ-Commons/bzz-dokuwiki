@@ -1,0 +1,20 @@
+====== Multipass auf Linux installieren ======
+===== Ziele =====
+  -Ich kann Multipass auf Ubuntu installieren
+  -Ich kann bei Fehlermeldungen interpretieren, mögliche Massnahmen zur Fehlerbehebung vorschlagen und überprüfen.
+\\
+===== Install Multipass on Linux =====
+1. To install Multipass on a Linux system, run the following command: 
+<code>
+sudo snap install multipass
+</code>
+//Remark: Pay attention to the progress-line on the righthand side of your screen!//
+
+2. Check the version after installation
+<code>
+multipass --version
+</code>
+
+As a result you should see a similar screen as follows:
+
+{{:modul:m347:learningunits:lu07:lu07b:multipass-install-1.png?500|Multipass installation on Ubuntu (AWS)}}

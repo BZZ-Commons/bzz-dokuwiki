@@ -1,10 +1,8 @@
 ====== LU13.A01 - Bootstrap ======
 <WRAP center round todo 60%>
 Ergänzen Sie den HTML-Code um die benötigen Bootstrap-Klassen.
-Das Aussehen und Verhalten soll identisch zur Musterlösung unter [[https://bzz-m293.github.io/m293-lu13-a01-bootstrap/]] sein.
+Das Aussehen und Verhalten soll identisch zur Musterlösung unter [[https://templates-html.github.io/m293-lu13-a01-bootstrap/]] sein.
 </WRAP>
-
-**[[https://classroom.github.com/a/JpCDpmL-|GitHub Classroom Assignment]]**
 
 Sie erhalten ein Projekt mit 3 vollständigen HTML-Dateien:
   * index.html
@@ -12,7 +10,7 @@ Sie erhalten ein Projekt mit 3 vollständigen HTML-Dateien:
   * form.html
 
 ===== Vorgehen =====
-  - Öffnen Sie die Home-Seite (''index.html'') der [[https://bzz-m293.github.io/m293-lu13-a01-bootstrap/|Musterlösung]] in einem Webbrowser.
+  - Öffnen Sie die Home-Seite (''index.html'') der [[https://templates-html.github.io/m293-lu13-a01-bootstrap/|Musterlösung]] in einem Webbrowser.
   - Beachten Sie die Darstellung (Farben, Schriften, ...) der verschiedenen Elemente.
   - Probieren Sie unterschiedliche Fensterbreiten aus und beobachten Sie das Layout der Elemente.
   - Ergänzen Sie in Ihrem Repository die benötigten Bootstrap-Klassen, um das identische Verhalten zu erreichen.
@@ -26,7 +24,7 @@ Sie erhalten ein Projekt mit 3 vollständigen HTML-Dateien:
 ----
 <details>
 <summary>//=> GitHub Repo für externe Besucher//</summary>
-GitHub Repository https://github.com/BZZ-M293/m293-lu13-a01-bootstrap
+GitHub Repository https://github.com/templates-html/m293-lu13-a01-bootstrap
 
 //Lernende am BZZ müssen den Link zum GitHub Classroom Assignment verwenden//
 

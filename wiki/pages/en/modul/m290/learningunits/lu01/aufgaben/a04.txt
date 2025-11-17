@@ -1,0 +1,48 @@
+====== LU01.A04 - Installation and Configuration POSTMAN Frontend Simulation ======
+
+===== Prerequisites  =====
+  * Work type: Indiviual
+  * Timeframe: 20 Minutes 
+  * Expected result: Correct installed MySQL database including operational test
+
+===== Means of aid  =====
+^ Source ^ Link ^
+| Download-Link | [[https://www.postman.com/downloads/ |POSTMAN.COM]] |
+| Video-Tutorial Deutsch: API-Entwicklung mit POSTMAN |{{:modul:m290:learningunits:lu01:aufgaben:5_minuten_-_api-entwicklung_mit_postman-1.mp4|}} |
+ 
+===== Introduction  =====
+Postman is a popular API development tool that enables developers, testers, and product managers to design, test, and debug APIs easily. It offers a user-friendly interface with tools for creating and managing requests, analyzing responses, and automating workflows.
+
+{{:modul:m290:learningunits:lu01:aufgaben:rest-client-send-and-save-postman.png?600|}}
+
+===== Assignments =====
+  - Go to the POSTMAN website and download the required software version. 
+  - Start the installation process.
+  - Once the installation is complete, start the application and study the possiblities.
+
+===== Further Video Tutorials English =====
+^ Source ^ Link ^
+| Video-Tutorial English 1: Introduction | {{:modul:m290:learningunits:lu01:aufgaben:postman_beginner_tutorial_1_-_introduction_what_is_postman.mp4 |}} |
+| Video-Tutorial English 2: Understanding POSTMAN UI | {{:modul:m290:learningunits:lu01:aufgaben:postman_beginner_tutorial_2_-_understanding_postman_ui.mp4 |}} |
+| Video-Tutorial English 3: First API Requests | {{:modul:m290:learningunits:lu01:aufgaben:postman_beginner_tutorial_3_-_how_to_create_first_api_request.mp4 |}} |
+| Video-Tutorial English 4: Collections | {{:modul:m290:learningunits:lu01:aufgaben:postman_beginner_tutorial_4_-_what_is_collection_how_to_create_collections.mp4 |}} |
+| Video-Tutorial English 5: Collections 2 | {{:modul:m290:learningunits:lu01:aufgaben:postman_beginner_tutorial_5_-_how_to_run_collections_collection_runner_.mp4 |}} |
+| Video-Tutorial English 6: Variables | {{:modul:m290:learningunits:lu01:aufgaben:postman_beginner_tutorial_6_-_variables_how_to_create_and_refer.mp4 |}}  |
+| Video-Tutorial English 7: SET and GET | {{:modul:m290:learningunits:lu01:aufgaben:postman_beginner_tutorial_7_-_how_to_set_and_get_variables_through_scripting.mp4 |}} |
+| Video-Tutorial English 8: SET and GET 2 | {{:modul:m290:learningunits:lu01:aufgaben:postman_beginner_tutorial_8_-_get_and_set_variables_with_scripts.mp4 |}} |
+| Video-Tutorial English 9: Quick Scripts | {{:modul:m290:learningunits:lu01:aufgaben:postman_beginner_tutorial_9_-_how_to_create_quick_scripts.mp4 |}} |
+| Video-Tutorial English 10: First TEST | {{:modul:m290:learningunits:lu01:aufgaben:postman_beginner_tutorial_10_-_how_to_create_first_test.mp4 |}} |
+| Video-Tutorial English 11: DEBUG | {{:modul:m290:learningunits:lu01:aufgaben:postman_beginner_tutorial_11_-_how_to_debug.mp4 |}} |
+| Video-Tutorial English 12: Commandline | {{:modul:m290:learningunits:lu01:aufgaben:postman_beginner_tutorial_12_-_how_to_run_from_command_line_newman_.mp4 |}} |
+
+===== Solution =====
+[[modul:m290:learningunits:lu01:loesungen:l04|Lösung]]
+
+===== Vocabulary =====
+^ English ^ German ^ 
+| prerequisites | Voraussetzungen |
+
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

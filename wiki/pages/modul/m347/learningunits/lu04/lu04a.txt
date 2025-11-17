@@ -1,0 +1,18 @@
+====== LU04a - Images und Container verwalten ======
+===== Ziele =====
+  -Ich kann spezifisch nach Images auf Docker-Hub suchen (''search'').
+  -Ich kann Images von Docker-Hub holen (''pull'') und auflisten (''ls'')
+  -Ich kann Images inspizieren (''inspect'')
+  -Ich kann einen Container erzeugen (''create''), starten (''run'') und erneut starten (''restart'').
+  -Ich kann einen Container umbenennen (''rename'').
+  -Ich kenne den Unterschied zwischen anbinden (''attach'') und ausführen (''exec'')
+  -Ich kann Container und Images löschen (''rm or rmi'').
+  -Ich kann mögliche Fehlermeldung lesen und interpretieren.
+  -Ich kann mindestens eine Massnahme bei Fehlermeldung vorschlagen und umsetzen.
+\\
+===== Grundlagen =====
+Gehen Sie die Kommandos - Repository ''04/01_Intro/01_Container-Management.md'' - entsprechend den Lernzielen durch.
+
+===== Übungen ===== 
+  - Erstellen Sie eine persönliche Zusammenfassung zu den Kommandos zur Verwaltung von Images und Container.
+  - Als Alternative können Sie im Internet nach einem entsprechenden Cheat-Sheet recherchieren. Siehe Beispiel unter Extras.

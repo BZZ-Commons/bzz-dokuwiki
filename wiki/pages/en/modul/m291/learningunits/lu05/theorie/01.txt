@@ -1,0 +1,38 @@
+====== LU05a - VUE Directives ======
+
+===== Learning ojectives =====
+  - I can explain what //Vue Directives// are. 
+  - I can explain what //Vue Directives// are used for.
+  - I can name and explain at least four types of directives.
+  - I can use VUE directives as an example.
+
+===== Introduction =====
+Vue directives are special tokens in //Vue.js// that extend the functionality of HTML by providing dynamic behavior to DOM elements. They are prefixed with //v-// and are used to bind data, manipulate DOM attributes, or listen to events. Common directives include //v-bind// for binding attributes, //v-if// for conditional rendering, and //v-for// for looping over data. By leveraging directives, developers can create highly interactive and reactive user interfaces with minimal effort.
+
+===== Key Features =====
+** 1. Reactivity:** Automatically update the DOM when the underlying data changes.
+
+** 2. Extensibility:** You can create custom directives for advanced behavior.
+
+** 3. Simplicity: **Integrate seamlessly into templates for common tasks like event handling or conditional rendering.
+
+===== Examples =====
+  - **v-if**: Conditionally renders an element or removes it from the DOM based on the truthiness of an expression.
+  - **v-for**: Iterates over a list or object, generating a new element for each item in the collection.
+  - **v-bind**: Dynamically binds an attribute (e.g., `src`, `class`, `style`) to an expression, allowing for reactive updates.
+  - **v-model**: Creates a two-way binding between a form input or component and a Vue instance's data property.
+
+
+===== Source =====
+  * [[https://www.w3schools.com/vue/vue_directives.php| W3School - VUE Directives]]
+
+**Tutorial with the concrete use of VUE directives**
+
+{{ :en:modul:m291:learningunits:lu05:theorie:vue_tutorial_3_-_vue_directive_part_i.mp4 | Tutorial with the concrete use of VUE directives}}
+===== Vocabulary =====
+^ English ^ German ^ 
+| token| Merkmal, Eigenschaft|
+| to leverage | einsetzen, anwenden | 
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

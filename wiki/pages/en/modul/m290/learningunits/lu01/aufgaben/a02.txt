@@ -1,0 +1,46 @@
+====== LU01.A02 - Installation of the code editor Webstorm  ======
+
+===== Prerequisites  =====
+  * Work type: Individual
+  * Timeframe: 30 Minutes 
+  * Expected result: 
+    * Correctly installed code editor Webstorm including licence validity update. 
+ 
+
+===== Means of aid  =====
+^ Source ^ Link ^
+| Download-Link | [[https://www.jetbrains.com/webstorm/ | Webstorm]] |
+| Video-Tutorial MacOS | [[https://www.youtube.com/watch?v=ICpZnNImgG4|Webstorm installation on M1]] |
+| Video-Tuturial Windows | [[https://www.youtube.com/watch?v=pYTQltz4z_s|Webstorm installation on Windows 10]] |
+
+===== Introduction  =====
+Programming source code is not possible without a propper code editor. As it happened, Webstorm is one such editor that offers us a variety of useful features, and fortunately it is free for educational purposes. Doesn't that sound great!
+
+===== Assignments =====
+  - If have not already done, create an jetbrains account
+  - Download and install the code editor Webstorm, which is free for students: [[https://www.jetbrains.com/webstorm/| Webstorm/Download]]
+  - Carry out the post installation step by installing the database module plug in in webstorm 
+  - Establish the connection between database and webstorm
+  - Check your installation using the following functions 
+        * New project
+        * New file
+        * Rename a new file.
+        * Find the stored file directory of webstorm
+        * Establish a connection between Webstorm and Mysql
+        * Select current databases from MySQL
+
+===== Solution =====
+[[modul:m290:learningunits:lu01:loesungen:l02|Lösung]]
+
+
+===== Vocabulary =====
+^ English ^ German ^ 
+| prerequisites | Voraussetzungen |
+| as it happened | zufälliger Weise |
+| proper | orgentlich, passend |
+| educational purposes | Bildungszweck |
+| to conduct | durchführen |
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

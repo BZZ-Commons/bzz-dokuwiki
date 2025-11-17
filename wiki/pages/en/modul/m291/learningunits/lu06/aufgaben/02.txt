@@ -1,0 +1,31 @@
+====== LU06.A02 - Events - increment and decrement ======
+
+===== Prerequisites  =====
+  * Work type: Individual
+  * Means of aid: only teaching materials, no websearch, no use of ai.
+  * Timeframe: 20 Minutes
+  * Expected result: A functional Vue script similarly new function i.g. increment, decrement, with various step-size, and reset counter. 
+===== Source =====
+  * [[https://www.w3schools.com/vue/tryit.php?filename=tryvue_v-on_moose |Code-example: Example code for events]]
+
+===== Assignments  ======
+  - Test the code example provided to you. Describe the behaviour of the script using HTML comments.
+  - Make sure that you have the title <h1> correctly named: **lu06.s02.html**
+  - Change the caption of the //Moose-Button// to **+ 1 Moose **.
+  - Similiarily to the //Moose-Button// add another button **-1 Moose**which counts down.
+  - Add another 2 buttons **+5 Moose** and **-5 Moose** which count up respectively down by **step-size 5**
+  - Add another 2 buttons **+10 Moose** and **-10 Moose** which count up respectively down by **step-size 10**  
+  - Add another button **Reset** which resets the **counter to 0**.
+  - Save your script in webstorm in the directory **06_events** and adjust the path to the image.
+  - Test your script for correctness
+
+===== Solution =====
+[[en:modul:m291:learningunits:lu06:loesungen:02|Lösung]]
+
+===== Vocabulary =====
+^ English ^ German ^ 
+| step-size| Schrittweite|
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

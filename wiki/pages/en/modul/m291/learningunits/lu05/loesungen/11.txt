@@ -1,0 +1,31 @@
+====== LU05.S11 - v-if, v-else ... combined with AND/OR operators ======
+
+===== Hints ====
+  * Download the file and copy the content into the code area of the W3School on the left hand side of the coding window.
+  * You can execute the code by pressing the //run// button
+  * The result will be presented in the right hand side of the window.
+
+===== Assignment ======
+  - People under the age of 12 are not allowed to go to the cinema. 
+  - Execute your script and check the result. Proceed only, if the result is correct.
+  - Under 12 and with adult company they are allowed to up to 6 o'clock pm.
+  - Execute your script and check the result. Proceed only, if the result is correct.
+  - Between 12 and 16 they are allowed up to 6 o'clock pm, even without an adult company. 
+  - Execute your script and check the result. Proceed only, if the result is correct.
+  - Between 12 and 16 they may attend to screenings if they are accompanied by an adult.
+  - Execute your script and check the result. Proceed only, if the result is correct.
+  - Person older than 16 may go to the cinemas without time restriction.
+  - Execute your script and check the result. Proceed only, if the result is correct.
+  - Comment and save your script your results accordingly.
+
+===== Solution =====
+{{ :en:modul:m291:learningunits:lu05:loesungen:m291_lu05_s11.zip |Solutions with age only and logical operators }}
+
+{{:en:modul:m291:learningunits:lu05:loesungen:lu05.s11_1.png?1200|Script with age check only}}
+
+{{:en:modul:m291:learningunits:lu05:loesungen:lu05.s11_2.png?1200|Script with age check AND the logical operators}}
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir
+  

@@ -1,0 +1,23 @@
+====== LU01b - Bedienung von Blockly ======
+
+===== Überblick =====
+Nachdem du Blockly aufgerufen hast, siehst du einige verschiedenen Bereiche.
+Je nach Webseite ist die Darstellung etwas unterschiedlich, aber die wesentlichen Bereiche sind immer die selben.
+
+{{de:modul:m319:learningunits:lu01:lu03_blocklyoverview.png?800|}}
+
+===== Blöcke =====
+| {{de:modul:m319:learningunits:lu01:lu03_blocklyblocks.png?200|}} | Auf der linken Seite kannst du die verschiedenen Blöcke auswählen. Diese sind in Kategorien unterteilt. |
+
+===== Arbeitsbereich =====
+| {{de:modul:m319:learningunits:lu01:lu03_blocklywork.png?500|}} | Im mittleren Bereich ordnest du deine Blöcke an und erstellst den Ablauf deines Programms. |
+
+===== Sourcecode =====
+| {{de:modul:m319:learningunits:lu01:lu03_blocklysource.png?600|}} | Der rechte Bereich zeigt den erzeugten Python-Sourcecode an. |
+
+===== Konsole =====
+| {{de:modul:m319:learningunits:lu01:lu03_blocklyconsole.png?600|}} | Der schwarze Bereich unten ist die Konsole. Während du das Programm ausführst, werden hier die Ausgaben angezeigt und der Benutzer kann Eingaben tätigen. |
+
+----
+{{tag>M319-LU01 M319-B1G M319-B1F}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter, Kevin Maurizi

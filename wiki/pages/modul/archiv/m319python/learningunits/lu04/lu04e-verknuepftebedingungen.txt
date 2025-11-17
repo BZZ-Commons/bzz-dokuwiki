@@ -100,11 +100,11 @@ Ausserdem verwenden wir zwei Teilbedingungen:
 Betrachten wir zunächst die Teilbedingungen einzeln, so ergibt sich folgendes Bild:
 
 ^ alter > 18 ^ geschlecht = 'W' ^
-| {{:modul:m319:learningunits:lu04:teilbedingungalter.png|}} | {{:modul:m319:learningunits:lu04:teilbedingunggeschlecht.png|}} |
+| {{de:modul:m319:learningunits:lu04:teilbedingungalter.png|}} | {{de:modul:m319:learningunits:lu04:teilbedingunggeschlecht.png|}} |
 
 Legen wir beide Abbildungen übereinander, so haben wir folgendes Bild:
 
-{{:modul:m319:learningunits:lu04:altergeschlecht.png|}}
+{{de:modul:m319:learningunits:lu04:altergeschlecht.png|}}
 
 === AND ===
 
@@ -116,7 +116,7 @@ if ( (alter > 18) && (geschlecht == 'W') ) {    // Java
 
 Die Bedingung ist nur erfüllt, wenn beide Teilbedingungen erfüllt sind.
 
-{{:modul:m319:learningunits:lu04:mengeand.png|}}
+{{de:modul:m319:learningunits:lu04:mengeand.png|}}
 
 
 === OR ===
@@ -128,7 +128,7 @@ if ( (alter > 18) || (geschlecht == 'W') ) {    // Java
 
 Die Bedingung ist erfüllt, wenn eine oder beide Teilbedingungen erfüllt sind.
 
-{{:modul:m319:learningunits:lu04:mengeor.png|}}
+{{de:modul:m319:learningunits:lu04:mengeor.png|}}
 
 ==== Auswerten von verknüpften Bedingungen ====
 Der Computer muss jede Bedingung auf einen bool'schen ((Ein boolscher Wert kennt nur die beiden Zustände ''TRUE'' oder ''FALSE'')) Wert reduzieren.
@@ -140,7 +140,7 @@ Um eine verknüpfte Bedingung auszuwerten muss der Computer daher diese Bedingun
 
 Die folgende Grafik zeigt dieses Vorgehen beim Vereinfachen einer Bedingung. Das Beispiel geht davon aus, dass das ''Alter = 25'' ist.
 
-{{:modul:m319:learningunits:lu04:verknuepfte_bedingung.png|}}
+{{de:modul:m319:learningunits:lu04:verknuepfte_bedingung.png|}}
 
 ==== Verknüpfungsoperatoren ====
 Wir betrachten vorerst zwei logische Operatoren zur Verknüpfung von Teilbedingungen:

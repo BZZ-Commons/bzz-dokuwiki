@@ -1,0 +1,60 @@
+====== LU01a - Aufbau von Adressen im Internet (URL) ======
+
+===== Lernziele =====
+
+  - Ich kenne die Syntax und seine Bestandteile einer URL.
+  - Ich kann mindestens drei verschiedene Protokolle aufzählen, die in einer URL verwendet werden können.
+  - Ich kenne den unterschied zwischen einer Referenzierung mit absoluter und relativer Pfadangabe.
+  - Ich kann Referenzierungen mit absoluter und relativer Pfadangabe gezielt in HTML-Dokumenten anwenden/einsetzen.
+
+===== Aufbau einer URL =====
+
+Hinter einer URL (Uniform Resource Locator) steckt ein gewisser Aufbau. Dank der URL ist es möglich, eine Adresse im Internet in lesbarer Form zu verwenden und auf Ressourcen (z.B. Bilder, Filme, Verzeichnisse, Dokumente) zuzugreifen. Eine klassische URL sieht wie folgt aus:
+
+==== Beispiel ====
+
+<code>
+http://www.mydomain.ch/content/index.html
+</code>
+
+==== Syntax ====
+
+
+^ Protokoll (Scheme) ^ 3rd-Level-Domain / www ^ 2nd-Level-Domain ^ Top-Level-Domain ^ Pfad ^ Datei ^
+| <code>http://</code> | <code>www</code> | <code>mydomain</code> | <code>ch</code> | <code>content</code> | <code>index.html</code> |
+
+Mit dem Protokoll legen Sie fest, wie die Ressource verwendet werden soll. Mit http:// wird das Protokoll für Hypertext-Dokumente (HTTP) verwendet. Weitere bekannte Vertreter sind https:// für eine gesicherte Datenübertragung, ftp:// für einen Dateitransfer (FTP) oder einfach nur file:// für den Zugriff auf lokale Dateien. Mit dem Dienst geben Sie an, um welchen Inhalt es sich handelt.
+
+
+===== Adressierung mit absoluter URL =====
+
+Hauptmerkmal der Adressierung mit absoluter URL ist die Angabe kompletten URL Beispiel ist: <color #00a2e8>http://www.domain.ch/reisen/index.html</color>. Diese Art der Adressierung verwenden Sie, wenn Sie Ressourcen (Daten, Bilder, Webseiten usw.) ausserhalb Ihrer Domain (oder Subdomain) befinden und Sie darauf verweisen möchten.
+
+===== Adressierung mit relativer URL =====
+
+Diese Art der Adressierung mit relativer URL verwenden Sie, wenn Sie sich die Ressourcen (Daten, Bilder, Webseiten usw.) innerhalb Ihrer Domain (oder Subdomain) befinden und Sie darauf verweisen möchten.
+
+Bei relativen URL's gibt es folgende Symbole (ähnliche wie bei einem Verzeichnis), welche folgende Bedeutung haben:
+
+  * Schrägstrich (engl. Slash) / (ohne Punkt) ist gleichbedeutend wie Wurzel (engl. root) Verzeichnis. Das stellt das oberste Verzeichnis (Wurzel-Verzeichnis) der Webanwendung.
+  * Slash und ein Punkt bei ./ ist gleichbedeutend wie aktuelles Verzeichnis.
+  * Slash und zwei Punkte bei ../ ist gleichbedeutend wie übergeordnetes Verzeichnis.
+
+Das Ganze kann unendlich weitergesponnen werden z.b. ../../ was gleichbedeutend ist wie "über-übergeordnetes" Verzeichnis! Mit nur den sog. Slashes / (z.B. /2018/reisen/afrika) werden Ressourcen in den unteren Verzeichnissen adressiert.
+
+==== Beispiele ====
+
+Ausgangslage ist die nachfolgende URL, welche Sie im Browser aufgerufen haben. Ferner wird das JPG-Bild im HTML-Dokument index.html verwendet.
+
+<code>http://www.domain.ch/reisen/schweiz/index.html</code>
+
+=== aktuelles und untergeordnetes Verzeichnis ===
+
+  * Bei einer relativen Angabe/Anwendung im index.html von foto.jpg oder ./foto.jpg (mit oder ohne ./) (z.B. im src-Attribut des <img>-Elements) befindet sich die Grafik im Verzeichnis /reisen/schweiz, wo sich auch die index.html befindet.
+  * Falls z.B. das Bild ins Verzeichnis /reisen/schweiz/img wegen besserer Übersichtlichkeit zwischen Bildern und HTML-Dokument, dann muss auch die Adressierung des Bildes im HTML-Dokument index.html angepasst werden, dann ist die relative URL ./img/foto.jpg.
+
+=== übergeordnetes Verzeichnis ===
+  * Befindet sich das Bild (s. Beipiel oben) in einem übergeordneten Verzeichnis (z.B. im Verzeichnis reisen statt schweiz), dann wird mit ../foto.jpg darauf verwiesen.
+  * Befindet sich das Bild im Verzeichnis reisen/img (statt schweiz), dann wird mit ../img/foto.jpg darauf verwiesen, gleichbedeutend wie eine Wegweisung
+    * gehe zuerst eins nach oben
+    * gehe anschliessend ins img-Verzeichnis.

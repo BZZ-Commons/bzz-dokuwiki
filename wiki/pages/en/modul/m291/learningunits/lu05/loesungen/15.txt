@@ -1,0 +1,27 @@
+====== LU05.S15 - v-for list rendering =====
+
+===== Hints ====
+  * Download the file and copy the content into the code area of the W3School on the left hand side of the coding window.
+  * You can execute the code by pressing the //run// button
+  * The result will be presented in the right hand side of the window.
+
+===== Assignment ======
+Data is often available as lists/arrays (concatenation of persons, for example). Previously, we prepared these lists in JavaScript using a loop and passed them to HTML for display. With v-for, we can now use the loop directly in JS, which makes things a lot easier.
+
+  - Click on the provided link above and it with the appropriate name in your W3School workspace.
+  - Execute it with **Run**. You will see that the array data in the script part is now displayed numbered in the browser.   
+  - Add 3-4 more entries to your food list, at the beginning, the middle part, and the end.
+  - Change the <ol>-tag to  <ul>-tag.
+  - Note down your observation as code comments and save your work. 
+
+===== Solution =====
+
+{{ :en:modul:m291:learningunits:lu05:loesungen:lu05.s15.zip | Source code of the solution}}
+
+{{:en:modul:m291:learningunits:lu05:loesungen:lu05.s15.png?1200| v-for list rendering}}
+
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir
+  

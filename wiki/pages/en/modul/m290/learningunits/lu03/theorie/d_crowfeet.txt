@@ -1,0 +1,54 @@
+====== LU04d - The Crow's Feet Notation ======
+
+==== The Basics of Crow’s Foot Notation ====
+In database design, an **entity** represents a real-world object or concept, such as a person, place, event, or thing, that needs to be stored in the database. Each entity typically becomes a table in the relational database. **Attributes** of the entity, which are the data points relevant to that entity (like a customer’s name or an order’s date), become the columns in these tables.
+
+Crow’s Foot notation focuses primarily on the relationships between these entities. It visually conveys how entities are related to one another and the cardinality of these relationships, which refers to the number of instances of one entity that can be associated with an instance of another entity.
+
+==== Cardinality in Crow’s Foot Notation ====
+
+Cardinality describes the nature of the relationship between two entities and is typically categorized as:
+
+1. **One-to-One (1:1):** This indicates that a single instance of an entity A is associated with a single instance of entity B. For example, in a database of employees and workstations, each employee might be assigned exactly one workstation, and each workstation is assigned to exactly one employee. In Crow’s Foot notation, this relationship is represented by a single line connecting the two entities, with a short vertical line at both ends.
+
+2. **One-to-Many (1:N):** This denotes that a single instance of an entity A can be related to multiple instances of entity B, but each instance of B is related to only one instance of A. For example, one department in a company can have many employees, but each employee belongs to only one department. In Crow’s Foot notation, this is depicted by a single line connecting the entities, with a short vertical line (indicating "one") at the A side and a "crow's foot" (three lines branching out) at the B side.
+
+3. **Many-to-Many (M:N):** This relationship implies that multiple instances of entity A can be related to multiple instances of entity B. For example, students and courses have a many-to-many relationship because each student can enroll in multiple courses, and each course can have multiple students enrolled. In Crow’s Foot notation, this relationship is shown with a "crow’s foot" at both ends of the connecting line.
+
+The figure below shows all possible cardinalities between entities.
+
+{{:modul:m290:learningunits:lu03:theorie:crow-notation-chart-4127045304.png?300|}}
+
+[[https://www.youtube.com/watch?v=I-XHfuJ43ic| Lernvideo: ERD Crow's Feet Notation]]
+
+==== Why Use Crow’s Foot Notation? ====
+Crow’s Foot notation is favored for its clarity and ease of understanding. Its visual symbols are intuitive and make it easy to quickly grasp the nature of relationships between entities. This simplicity is particularly valuable when communicating database designs to stakeholders who may not be experts in database design but need to understand the overall structure and how data interrelates.
+
+==== Example of Crow’s Foot Notation ====
+
+Consider a simple ERD for an online bookstore. The entities might include **Customers**, **Orders**, and **Books**. 
+
+  * **Customers** can place multiple **Orders** (One-to-Many).
+  * Each **Order** can include multiple **Books** (Many-to-Many).
+
+Using Crow’s Foot notation:
+
+  * The relationship between **Customers** and **Orders** would have a single line connecting the entities with a vertical line on the **Customers** side and a crow’s foot on the **Orders** side.
+  * The relationship between **Orders** and **Books** would have crow’s feet on both sides, representing the many-to-many relationship.
+
+==== Vocabulary ====
+^English ^ Deutsch ^
+| to convey | vermitteln, mitteilen |
+| to refere to | Bezug nehmen auf |
+| instance | Beispiel |
+| nature | Wesen, Beschaffenheit |
+| to indicate | andeuten, zeigen |
+| might | möglicherweise |  
+| to denote | bedeuten, hindeuten |
+| to depict | darstellen | 
+| to imply | implizieren | 
+| to enroll | einschreiben, sich anmelden | 
+| to consider | in Betracht ziehen, bedenken |
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

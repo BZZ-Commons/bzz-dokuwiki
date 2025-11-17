@@ -1,0 +1,42 @@
+====== LU07.A04 - Methods with arguments - Animal-count======
+
+===== Prerequisites  =====
+  * Work type: Individual
+  * Means of aid: only teaching materials, no websearch, no use of ai.
+  * Timeframe: 30 Minutes
+  * Expected result: A Vue-Script, that calculates how often the animals were clicked. 
+  * 
+===== Learning Objectves =====
+  - Implementing VUE methods by using arguments. 
+  - Increment and decrement a counter within a method.
+  - Writing own methods and making use of them.
+
+===== Source =====
+  * [[https://www.w3schools.com/vue/tryit.php?filename=tryvue_methods_animals |Code-example: Methods and arguments in VUE]]
+
+===== Assignment A - 3' ======
+  * A01: Test the code example above which was provided to you. Describe the behaviour of the script using HTML comments.
+  * A02: Check to basic function of the script. When clicking the number-buttons below the animal-images the animal count count up or down.
+  * A03: Make sure that you have the title <h1> and have correctly named the file: **lu07.s04.html**
+  * A04: Safe it.
+
+===== Assignment B: Add more animals to the list - 7' =====
+  * B01: Add a least two more animals to the list, e.g. an eagle and an ice-bear.
+  * B02: Extend the already existinc functionality (methods and call of the methods) to the the recent animal-entries. 
+
+===== Assignment C: Stop at zereo - 10' =====
+  * C01: Having less than zero animals makes hardly sence. Catch this case in your method with an correspinding if-statement.
+
+===== Assignment D: Reset-Button - 5' =====
+  * D01: Add an button **resetAll** which resets all counters by using a corresponding method **resetAll()**
+
+===== Solution =====
+[[en:modul:m291:learningunits:lu07:loesungen:04|Lösung]]
+
+===== Vocabulary =====
+^ English ^ German ^ 
+| corresponding | entsprechend, passende |
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

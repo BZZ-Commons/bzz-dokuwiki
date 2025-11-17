@@ -1,6 +1,6 @@
 ====== LU07.L02 - Hotelbuchung ======
 
-[[https://bzz-m293.github.io/m293-lu07-a02-hotel/hotel.html|Live Preview]]
+[[https://templates-html.github.io/m293-lu07-a02-hotel/hotel.html|Live Preview]]
 
 ===== Fragen =====
 
@@ -21,4 +21,4 @@ Die Wahl zwischen einem Select-Element mit Mehrfachauswahl und mehreren Checkbox
 Ein Select-Element mit Mehrfachauswahl wäre geeigneter, wenn es eine sehr große Anzahl von Optionen gibt, die in einem Checkbox-Format zu überwältigend oder unübersichtlich sein könnten. In diesem Fall könnte ein Select-Element trotz seiner möglichen Usability-Schwierigkeiten die bessere Wahl sein, da es eine effizientere Möglichkeit bietet, Optionen aus einer umfangreichen Liste auszuwählen. Es sollte jedoch bedacht werden, dass die Mehrfachauswahl in einem Select-Element für einige Benutzer nicht so intuitiv sein könnte, insbesondere auf mobilen Geräten.
 
 ===== Code =====
-{{gh>https://github.com/BZZ-M293/m293-lu07-a02-hotel/blob/solution/hotel.html}}
+{{gh>https://github.com/templates-html/m293-lu07-a02-hotel/blob/solution/hotel.html}}

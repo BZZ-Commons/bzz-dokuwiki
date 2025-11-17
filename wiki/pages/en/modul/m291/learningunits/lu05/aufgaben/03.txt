@@ -1,0 +1,35 @@
+====== LU05.A03 - v-bind with src  ======
+
+===== Prerequisites  =====
+  * Work type: Individual
+  * Means of aid: only teaching materials, no websearch, no use of ai.
+  * Timeframe: 10 Minutes
+  * Expected result: The picture in the example code has changed. The src are locally and globally referenced. 
+
+===== Learning objectives =====
+  * Be able to bind global and local ressources with the v-bind directive
+
+===== Source =====
+  * [[https://www.w3schools.com/vue/tryit.php?filename=tryvue_v-bind_src |Code-example: v-bind Directive src]]
+
+===== Assignment ======
+  - Find a on the internet a picture of your choice and copy the url to it. 
+  - Overwrite the code line in the given sourcecode
+  - Execute your script by having it //run//.
+  - Save your solution accordingly.
+  - Download another picture of your choice. 
+  - Create in your W3 workingspace a directory //media// and save the downloaded picture there
+  - overwrite the url in the app to display your new local picture
+  - Execute your script by having it //run//.
+  - Save your solution accordingly. Therefore you might need a W3-School-account. 
+
+===== Solution =====
+[[en:modul:m291:learningunits:lu05:loesungen:03|Lösung]]
+
+===== Vocabulary =====
+^ English ^ German ^ 
+| ... | ... |
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

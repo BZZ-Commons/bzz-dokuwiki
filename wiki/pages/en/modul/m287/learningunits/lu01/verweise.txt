@@ -1,0 +1,229 @@
+====== LU01b - References and anchors ======
+
+===== Learning objectives =====
+  - I can add references (hyperlinks) to a web page and customise them using the attributes (e.g. href, id). HTML elements/tags are <a>.
+  - I know the difference between absolute and relative references.
+  - I can create links syntactically correctly and can list characteristics and properties for the correct structure.
+  - I know the purpose of local references (anchors).
+  - I can create local references (anchors) correctly.
+
+===== Introduction =====
+
+You can create a link in HTML with the <color #ed1c24><a></color>element (a = anchor) in HTML. The link text (or reference text) between the <a>-tags is activated if the href attribute has a valid value.
+
+==== Example ====
+A link text is usually underlined by the web browser (usually in blue). However, you can (as always) change this at any time using CSS.
+
+<code><a href="http://www.bzz.ch">Bildungszentrum Zürichsee</a></code>
+
+===== Inserting links to other HTML documents on your own website =====
+The links connect the loose collections of HTML documents to form a coherent website. The so-called navigation of the website can be created from this. For a link to another page of the same website, it is sufficient to enter the relative (instead of the absolute) URL. More on this later.
+
+==== Example ====
+
+The following directory structure shown in the illustration is given as an example.
+
+{{modul:m287:learningunits:lu01:02.png?600|}}
+
+The link for the start page, here index.html, to the other pages <color #ed1c24>links.html</color>, <color #ed1c24>about.html</color> and <color #ed1c24>impressum.html</color> looks like this in practice:
+
+<code html>
+<!doctype html>
+<html lang="de">
+  <head>
+    <title>Startseite - Blog</title>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <nav>
+      Blog |
+      <a href="seiten/links.html">Links</a> |
+      <a href="seiten/about.html">Über mich</a> |
+      <a href="seiten/impressum.html">Impressum</a>
+    </nav>
+    <h1>Mein Blog</h1>
+    <p>Neueste Berichte zu HTML</p>
+  </body>
+</html>
+</code>
+
+---
+
+Of course, you must also include the links to the other pages, i.e. <color #ed1c24>links.html</color>, <color #ed1c24>about.html</color> and <color #ed1c24>impressum.html</color> to be adapted. The relative URLs should be specified. In relation to the page <color #ed1c24>links.html</color>page, the specifications for the href attribute would look like this:
+
+<code html>
+<!doctype html>
+<html lang="de">
+  <head>
+    <title>Linksammlung</title>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <nav>
+      <a href="../index.html">Blog</a> |
+      Links |
+      <a href="about.html">Über mich</a> |
+      <a href="impressum.html">Impressum</a>
+    </nav> 
+    <h1>Linksammlung</h1>
+    <p>Interessante Linksammlung zu HTML-Themen</p>
+  </body>
+</html>
+</code>
+
+Navigate via the subfolder pages with <color #ed1c24>../</color> (here <color #ed1c24>../index.html</color>) to the parent folder, where <color #ed1c24>index.html</color> is located. The other two files <color #ed1c24>about.html</color>, <color #ed1c24>impressum.html</color> are located in the same folder as <color #ed1c24>links.html</color>so it is sufficient to specify only the file name. Similarly, you must also specify the files <color #ed1c24>about.html</color> and <color #ed1c24>impressum.html</color> files.
+
+===== Insert links to other websites =====
+
+Links to other websites are noted in the same way as links to pages on the same website. The difference lies in the absolute URL (i.e. the complete address) in the href attribute.
+
+<code>
+<nav>
+  <ul>
+    <li><a href="http://www.w3.org/html/wg/drafts/html/master/">HTML 5.1 Nightly</a></li>
+    <li><a href="http://www.w3.org/">W3C</a></li>
+    <li><a href="http://www.whatwg.org/">WHATWG</a></li>
+  </ul>
+</nav>
+</code>
+
+===== Open links in a new window ===== 
+
+With the HTML attribute <color #ed1c24>target="_blank"</color> opens the link in a new window or tab.
+The aim of using <color #ed1c24>target="_blank"</color> is not to lose the visitor to the page, but to leave the page open so that he returns there when he has read the page in the newly opened window or tab.
+
+==== Example ====
+<code html>
+  <a target="_blank" href="http://www.w3.org/">Link in einem neuen Fenster öffnen</a>
+</code>
+
+If you were to activate the link text W3C in this example, the target address (here: http://www.w3.org) here) would actually be opened and loaded in a new window or tab. The aim of using the target="_blank" is of course primarily to open the
+
+===== e-mail links =====
+
+Email links start with <color #ed1c24>href="mailto:EMAIL-ADRESS"</color>. This opens the e-mail application with a specific e-mail address.
+
+<code html>
+  <a href="mailto:hans.muster@beispiel.ch">E-Mail senden</a> 
+</code>
+
+===== Phone links =====
+
+Telephone links start with <color #ed1c24>href="tel:NUMBER"</color>. This is used to dial and call the number. (Desktop e.g. Facetime or online telephony)
+
+<code html>
+  <a href="tel:044 123 45 67">E-Mail senden</a> 
+</code>
+
+===== Download links =====
+
+The download attribute enables links to be added as download links, regardless of the content type (MIME type).
+
+<code html>
+  <a href="dokument.pdf" download>Dokument herunterladen</a>
+</code>
+
+===== Anchor - set links to specific parts of a website =====
+
+Nothing can be more annoying for a visitor than having to read a very long scientific treatise on a specific topic on a website and having to scroll up and down for a very long time to get to a specific section. For such cases, you can set so-called anchors with the global attribute id, which you can then jump to with an ordinary link with the a element. Such target anchors are used, for example, in Wikipedia for the content index of a topic.
+To link to a specific area of a website, you only need:
+
+  * an anchor (jump marker), which you can assign with the attribute <color #ed1c24>id="ankername"</color> attribute. For example: <color #ed1c24><h1 id="ankername">Heading xyz</h1></color>
+  * a link that points to the anchor with <color #ed1c24>href="#ankername"</color> . To do this, the double cross character <color #ed1c24>#</color> is written in front of the anchor name. For example: <color #ed1c24><a href="#ankername">Jump to heading xyz</a></color>
+
+===== Example: xyz =====
+
+
+<code html>
+<!doctype html>
+<html lang="de">
+  <head>
+    <title>Startseite - Blog</title>
+    <meta charset="UTF-8">
+  </head>
+  <body>
+  <h1 id="top">Inhaltsverzeichnis</h1>
+<ul>
+  <li><a href="#intro">Einführung in HTML</a></li>
+  <li><a href="#syntax">Die Syntax von HTML</a></li>
+  <li><a href="#versionen">Versionen von HTML</a></li>
+  <li><a href="#techniken">Techniken rund um HTML</a></li>
+  <li><a href="#praxis">Einstieg in die Praxis</a></li>
+</ul>
+<section>
+	<h1 id="intro">Einführung in HTML</h1>
+	<p>
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla nisl id dui convallis ullamcorper. Mauris ligula nisi, volutpat placerat lobortis non, pellentesque in mi. Nam id posuere turpis. Nunc tincidunt orci vestibulum libero auctor, at vulputate augue dictum. Nulla facilisis, ligula at viverra consequat, ipsum neque semper libero, et porttitor neque leo ut dui. Sed eu magna facilisis, mollis eros sit amet, molestie tortor. Curabitur aliquet malesuada tortor, sed condimentum libero accumsan quis. Curabitur id pulvinar ex. Vivamus in commodo neque. Sed fermentum ante non metus volutpat, sit amet tincidunt mauris tempor. Phasellus fringilla nibh dolor, vel ullamcorper sapien vehicula a. Donec justo felis, mollis sed metus in, aliquam vehicula felis. Nulla auctor maximus dui in faucibus. Curabitur dolor felis, vestibulum et hendrerit ac, tempor sit amet lorem. Nam eget lorem volutpat, condimentum dolor maximus, tristique tellus. Sed placerat mi arcu, faucibus placerat nulla placerat non.
+
+Aliquam sed ullamcorper nibh, in finibus felis. Aenean dolor leo, interdum a volutpat quis, porttitor ac sapien. Nulla posuere arcu quis felis ultricies, eget elementum turpis pellentesque. Aenean commodo id lorem sed sodales. In pretium viverra vestibulum. Phasellus felis ipsum, dictum nec nulla ac, maximus vulputate lacus. Donec sed leo egestas, efficitur eros eget, lobortis est. Curabitur volutpat pretium lorem, in maximus lectus congue nec. Ut dapibus augue eget dui maximus malesuada. Praesent vel urna dapibus, tristique elit et, vehicula velit. Aenean nec eros ullamcorper enim bibendum posuere vel nec velit. Cras hendrerit justo non dapibus rutrum. Nunc sed lorem in sem malesuada semper eu ac ligula. Praesent sagittis bibendum nisl at euismod.
+
+Sed vehicula aliquam tortor, ac scelerisque eros dignissim eu. Nulla rutrum turpis a nulla eleifend, nec rhoncus diam lacinia. Sed interdum, odio id semper maximus, erat mauris suscipit leo, nec egestas nibh ante quis dolor. Vivamus in ex ut sem hendrerit ullamcorper. Duis tristique nisi sit amet interdum pulvinar. Mauris sed urna sollicitudin, pharetra massa sit amet, posuere felis. Nunc eros velit, dictum in quam sed, vehicula rutrum nunc. Suspendisse facilisis et quam eu mattis.
+
+Aliquam vitae porttitor massa, quis imperdiet lorem. Mauris accumsan rutrum finibus. Aliquam placerat, quam non dictum cursus, lacus elit tincidunt tortor, in scelerisque turpis lorem congue augue. Nullam sed ex placerat, vestibulum arcu ut, ultrices purus. Aliquam in sagittis purus, sed mollis lorem. Morbi commodo cursus tortor eget viverra. Etiam lobortis leo sit amet lorem efficitur pellentesque. Praesent non tristique turpis. Nam auctor mi non tincidunt mattis. Aliquam sit amet dui sed nibh volutpat rutrum nec ac quam. Nulla aliquet nisl id ligula malesuada ultricies ac non ante.
+
+Nulla non est vitae nisl sodales pellentesque ac ac sapien. Aliquam iaculis luctus tempor. Etiam bibendum pharetra risus sed iaculis. Nunc varius justo non justo rutrum tincidunt. Aliquam volutpat, eros quis finibus convallis, nisl dolor faucibus orci, vel mattis urna eros nec urna. Cras accumsan, sem quis ultrices iaculis, nisl dolor ornare nulla, vitae interdum nulla massa a diam. Donec feugiat turpis quis mi interdum viverra. Vivamus pulvinar vitae metus sit amet egestas. Phasellus ac ultrices sem. Cras ut pretium erat. Etiam fermentum sodales bibendum. Nullam mattis velit ipsum, eu pharetra tellus faucibus ac. Cras orci nisi, molestie quis viverra a, tempor ac ex. Aliquam et mi nibh.
+	</p>
+	<p><a href="#top">Zum Inhaltsverzeichnis</a></p>	
+</section>
+	
+<section>
+<h2 id="syntax">Die Syntax von HTML</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla nisl id dui convallis ullamcorper. Mauris ligula nisi, volutpat placerat lobortis non, pellentesque in mi. Nam id posuere turpis. Nunc tincidunt orci vestibulum libero auctor, at vulputate augue dictum. Nulla facilisis, ligula at viverra consequat, ipsum neque semper libero, et porttitor neque leo ut dui. Sed eu magna facilisis, mollis eros sit amet, molestie tortor. Curabitur aliquet malesuada tortor, sed condimentum libero accumsan quis. Curabitur id pulvinar ex. Vivamus in commodo neque. Sed fermentum ante non metus volutpat, sit amet tincidunt mauris tempor. Phasellus fringilla nibh dolor, vel ullamcorper sapien vehicula a. Donec justo felis, mollis sed metus in, aliquam vehicula felis. Nulla auctor maximus dui in faucibus. Curabitur dolor felis, vestibulum et hendrerit ac, tempor sit amet lorem. Nam eget lorem volutpat, condimentum dolor maximus, tristique tellus. Sed placerat mi arcu, faucibus placerat nulla placerat non.
+
+Aliquam sed ullamcorper nibh, in finibus felis. Aenean dolor leo, interdum a volutpat quis, porttitor ac sapien. Nulla posuere arcu quis felis ultricies, eget elementum turpis pellentesque. Aenean commodo id lorem sed sodales. In pretium viverra vestibulum. Phasellus felis ipsum, dictum nec nulla ac, maximus vulputate lacus. Donec sed leo egestas, efficitur eros eget, lobortis est. Curabitur volutpat pretium lorem, in maximus lectus congue nec. Ut dapibus augue eget dui maximus malesuada. Praesent vel urna dapibus, tristique elit et, vehicula velit. Aenean nec eros ullamcorper enim bibendum posuere vel nec velit. Cras hendrerit justo non dapibus rutrum. Nunc sed lorem in sem malesuada semper eu ac ligula. Praesent sagittis bibendum nisl at euismod.
+
+Sed vehicula aliquam tortor, ac scelerisque eros dignissim eu. Nulla rutrum turpis a nulla eleifend, nec rhoncus diam lacinia. Sed interdum, odio id semper maximus, erat mauris suscipit leo, nec egestas nibh ante quis dolor. Vivamus in ex ut sem hendrerit ullamcorper. Duis tristique nisi sit amet interdum pulvinar. Mauris sed urna sollicitudin, pharetra massa sit amet, posuere felis. Nunc eros velit, dictum in quam sed, vehicula rutrum nunc. Suspendisse facilisis et quam eu mattis.
+
+Aliquam vitae porttitor massa, quis imperdiet lorem. Mauris accumsan rutrum finibus. Aliquam placerat, quam non dictum cursus, lacus elit tincidunt tortor, in scelerisque turpis lorem congue augue. Nullam sed ex placerat, vestibulum arcu ut, ultrices purus. Aliquam in sagittis purus, sed mollis lorem. Morbi commodo cursus tortor eget viverra. Etiam lobortis leo sit amet lorem efficitur pellentesque. Praesent non tristique turpis. Nam auctor mi non tincidunt mattis. Aliquam sit amet dui sed nibh volutpat rutrum nec ac quam. Nulla aliquet nisl id ligula malesuada ultricies ac non ante.
+
+Nulla non est vitae nisl sodales pellentesque ac ac sapien. Aliquam iaculis luctus tempor. Etiam bibendum pharetra risus sed iaculis. Nunc varius justo non justo rutrum tincidunt. Aliquam volutpat, eros quis finibus convallis, nisl dolor faucibus orci, vel mattis urna eros nec urna. Cras accumsan, sem quis ultrices iaculis, nisl dolor ornare nulla, vitae interdum nulla massa a diam. Donec feugiat turpis quis mi interdum viverra. Vivamus pulvinar vitae metus sit amet egestas. Phasellus ac ultrices sem. Cras ut pretium erat. Etiam fermentum sodales bibendum. Nullam mattis velit ipsum, eu pharetra tellus faucibus ac. Cras orci nisi, molestie quis viverra a, tempor ac ex. Aliquam et mi nibh.</p>
+<p><a href="#top">Zum Inhaltsverzeichnis</a></p>
+</section>
+
+
+<section>
+<h2 id="versionen">Versionen von HTML</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla nisl id dui convallis ullamcorper. Mauris ligula nisi, volutpat placerat lobortis non, pellentesque in mi. Nam id posuere turpis. Nunc tincidunt orci vestibulum libero auctor, at vulputate augue dictum. Nulla facilisis, ligula at viverra consequat, ipsum neque semper libero, et porttitor neque leo ut dui. Sed eu magna facilisis, mollis eros sit amet, molestie tortor. Curabitur aliquet malesuada tortor, sed condimentum libero accumsan quis. Curabitur id pulvinar ex. Vivamus in commodo neque. Sed fermentum ante non metus volutpat, sit amet tincidunt mauris tempor. Phasellus fringilla nibh dolor, vel ullamcorper sapien vehicula a. Donec justo felis, mollis sed metus in, aliquam vehicula felis. Nulla auctor maximus dui in faucibus. Curabitur dolor felis, vestibulum et hendrerit ac, tempor sit amet lorem. Nam eget lorem volutpat, condimentum dolor maximus, tristique tellus. Sed placerat mi arcu, faucibus placerat nulla placerat non.
+
+Aliquam sed ullamcorper nibh, in finibus felis. Aenean dolor leo, interdum a volutpat quis, porttitor ac sapien. Nulla posuere arcu quis felis ultricies, eget elementum turpis pellentesque. Aenean commodo id lorem sed sodales. In pretium viverra vestibulum. Phasellus felis ipsum, dictum nec nulla ac, maximus vulputate lacus. Donec sed leo egestas, efficitur eros eget, lobortis est. Curabitur volutpat pretium lorem, in maximus lectus congue nec. Ut dapibus augue eget dui maximus malesuada. Praesent vel urna dapibus, tristique elit et, vehicula velit. Aenean nec eros ullamcorper enim bibendum posuere vel nec velit. Cras hendrerit justo non dapibus rutrum. Nunc sed lorem in sem malesuada semper eu ac ligula. Praesent sagittis bibendum nisl at euismod.
+
+Sed vehicula aliquam tortor, ac scelerisque eros dignissim eu. Nulla rutrum turpis a nulla eleifend, nec rhoncus diam lacinia. Sed interdum, odio id semper maximus, erat mauris suscipit leo, nec egestas nibh ante quis dolor. Vivamus in ex ut sem hendrerit ullamcorper. Duis tristique nisi sit amet interdum pulvinar. Mauris sed urna sollicitudin, pharetra massa sit amet, posuere felis. Nunc eros velit, dictum in quam sed, vehicula rutrum nunc. Suspendisse facilisis et quam eu mattis.
+
+Aliquam vitae porttitor massa, quis imperdiet lorem. Mauris accumsan rutrum finibus. Aliquam placerat, quam non dictum cursus, lacus elit tincidunt tortor, in scelerisque turpis lorem congue augue. Nullam sed ex placerat, vestibulum arcu ut, ultrices purus. Aliquam in sagittis purus, sed mollis lorem. Morbi commodo cursus tortor eget viverra. Etiam lobortis leo sit amet lorem efficitur pellentesque. Praesent non tristique turpis. Nam auctor mi non tincidunt mattis. Aliquam sit amet dui sed nibh volutpat rutrum nec ac quam. Nulla aliquet nisl id ligula malesuada ultricies ac non ante.
+
+Nulla non est vitae nisl sodales pellentesque ac ac sapien. Aliquam iaculis luctus tempor. Etiam bibendum pharetra risus sed iaculis. Nunc varius justo non justo rutrum tincidunt. Aliquam volutpat, eros quis finibus convallis, nisl dolor faucibus orci, vel mattis urna eros nec urna. Cras accumsan, sem quis ultrices iaculis, nisl dolor ornare nulla, vitae interdum nulla massa a diam. Donec feugiat turpis quis mi interdum viverra. Vivamus pulvinar vitae metus sit amet egestas. Phasellus ac ultrices sem. Cras ut pretium erat. Etiam fermentum sodales bibendum. Nullam mattis velit ipsum, eu pharetra tellus faucibus ac. Cras orci nisi, molestie quis viverra a, tempor ac ex. Aliquam et mi nibh.</p>
+<p><a href="#top">Zum Inhaltsverzeichnis</a></p>
+</section>
+
+<section>
+<h2 id="techniken">Technik rund um HTML</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla nisl id dui convallis ullamcorper. Mauris ligula nisi, volutpat placerat lobortis non, pellentesque in mi. Nam id posuere turpis. Nunc tincidunt orci vestibulum libero auctor, at vulputate augue dictum. Nulla facilisis, ligula at viverra consequat, ipsum neque semper libero, et porttitor neque leo ut dui. Sed eu magna facilisis, mollis eros sit amet, molestie tortor. Curabitur aliquet malesuada tortor, sed condimentum libero accumsan quis. Curabitur id pulvinar ex. Vivamus in commodo neque. Sed fermentum ante non metus volutpat, sit amet tincidunt mauris tempor. Phasellus fringilla nibh dolor, vel ullamcorper sapien vehicula a. Donec justo felis, mollis sed metus in, aliquam vehicula felis. Nulla auctor maximus dui in faucibus. Curabitur dolor felis, vestibulum et hendrerit ac, tempor sit amet lorem. Nam eget lorem volutpat, condimentum dolor maximus, tristique tellus. Sed placerat mi arcu, faucibus placerat nulla placerat non.
+
+Aliquam sed ullamcorper nibh, in finibus felis. Aenean dolor leo, interdum a volutpat quis, porttitor ac sapien. Nulla posuere arcu quis felis ultricies, eget elementum turpis pellentesque. Aenean commodo id lorem sed sodales. In pretium viverra vestibulum. Phasellus felis ipsum, dictum nec nulla ac, maximus vulputate lacus. Donec sed leo egestas, efficitur eros eget, lobortis est. Curabitur volutpat pretium lorem, in maximus lectus congue nec. Ut dapibus augue eget dui maximus malesuada. Praesent vel urna dapibus, tristique elit et, vehicula velit. Aenean nec eros ullamcorper enim bibendum posuere vel nec velit. Cras hendrerit justo non dapibus rutrum. Nunc sed lorem in sem malesuada semper eu ac ligula. Praesent sagittis bibendum nisl at euismod.
+
+Sed vehicula aliquam tortor, ac scelerisque eros dignissim eu. Nulla rutrum turpis a nulla eleifend, nec rhoncus diam lacinia. Sed interdum, odio id semper maximus, erat mauris suscipit leo, nec egestas nibh ante quis dolor. Vivamus in ex ut sem hendrerit ullamcorper. Duis tristique nisi sit amet interdum pulvinar. Mauris sed urna sollicitudin, pharetra massa sit amet, posuere felis. Nunc eros velit, dictum in quam sed, vehicula rutrum nunc. Suspendisse facilisis et quam eu mattis.
+
+Aliquam vitae porttitor massa, quis imperdiet lorem. Mauris accumsan rutrum finibus. Aliquam placerat, quam non dictum cursus, lacus elit tincidunt tortor, in scelerisque turpis lorem congue augue. Nullam sed ex placerat, vestibulum arcu ut, ultrices purus. Aliquam in sagittis purus, sed mollis lorem. Morbi commodo cursus tortor eget viverra. Etiam lobortis leo sit amet lorem efficitur pellentesque. Praesent non tristique turpis. Nam auctor mi non tincidunt mattis. Aliquam sit amet dui sed nibh volutpat rutrum nec ac quam. Nulla aliquet nisl id ligula malesuada ultricies ac non ante.
+
+Nulla non est vitae nisl sodales pellentesque ac ac sapien. Aliquam iaculis luctus tempor. Etiam bibendum pharetra risus sed iaculis. Nunc varius justo non justo rutrum tincidunt. Aliquam volutpat, eros quis finibus convallis, nisl dolor faucibus orci, vel mattis urna eros nec urna. Cras accumsan, sem quis ultrices iaculis, nisl dolor ornare nulla, vitae interdum nulla massa a diam. Donec feugiat turpis quis mi interdum viverra. Vivamus pulvinar vitae metus sit amet egestas. Phasellus ac ultrices sem. Cras ut pretium erat. Etiam fermentum sodales bibendum. Nullam mattis velit ipsum, eu pharetra tellus faucibus ac. Cras orci nisi, molestie quis viverra a, tempor ac ex. Aliquam et mi nibh.</p>
+<p><a href="#top">Zum Inhaltsverzeichnis</a></p>
+</section>
+
+<section>
+<h2 id="praxis">Einstieg in die Praxis</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam fringilla nisl id dui convallis ullamcorper. Mauris ligula nisi, volutpat placerat lobortis non, pellentesque in mi. Nam id posuere turpis. Nunc tincidunt orci vestibulum libero auctor, at vulputate augue dictum. Nulla facilisis, ligula at viverra consequat, ipsum neque semper libero, et porttitor neque leo ut dui. Sed eu magna facilisis, mollis eros sit amet, molestie tortor. Curabitur aliquet malesuada tortor, sed condimentum libero accumsan quis. Curabitur id pulvinar ex. Vivamus in commodo neque. Sed fermentum ante non metus volutpat, sit amet tincidunt mauris tempor. Phasellus fringilla nibh dolor, vel ullamcorper sapien vehicula a. Donec justo felis, mollis sed metus in, aliquam vehicula felis. Nulla auctor maximus dui in faucibus. Curabitur dolor felis, vestibulum et hendrerit ac, tempor sit amet lorem. Nam eget lorem volutpat, condimentum dolor maximus, tristique tellus. Sed placerat mi arcu, faucibus placerat nulla placerat non.
+
+Aliquam sed ullamcorper nibh, in finibus felis. Aenean dolor leo, interdum a volutpat quis, porttitor ac sapien. Nulla posuere arcu quis felis ultricies, eget elementum turpis pellentesque. Aenean commodo id lorem sed sodales. In pretium viverra vestibulum. Phasellus felis ipsum, dictum nec nulla ac, maximus vulputate lacus. Donec sed leo egestas, efficitur eros eget, lobortis est. Curabitur volutpat pretium lorem, in maximus lectus congue nec. Ut dapibus augue eget dui maximus malesuada. Praesent vel urna dapibus, tristique elit et, vehicula velit. Aenean nec eros ullamcorper enim bibendum posuere vel nec velit. Cras hendrerit justo non dapibus rutrum. Nunc sed lorem in sem malesuada semper eu ac ligula. Praesent sagittis bibendum nisl at euismod.
+
+Sed vehicula aliquam tortor, ac scelerisque eros dignissim eu. Nulla rutrum turpis a nulla eleifend, nec rhoncus diam lacinia. Sed interdum, odio id semper maximus, erat mauris suscipit leo, nec egestas nibh ante quis dolor. Vivamus in ex ut sem hendrerit ullamcorper. Duis tristique nisi sit amet interdum pulvinar. Mauris sed urna sollicitudin, pharetra massa sit amet, posuere felis. Nunc eros velit, dictum in quam sed, vehicula rutrum nunc. Suspendisse facilisis et quam eu mattis.
+
+Aliquam vitae porttitor massa, quis imperdiet lorem. Mauris accumsan rutrum finibus. Aliquam placerat, quam non dictum cursus, lacus elit tincidunt tortor, in scelerisque turpis lorem congue augue. Nullam sed ex placerat, vestibulum arcu ut, ultrices purus. Aliquam in sagittis purus, sed mollis lorem. Morbi commodo cursus tortor eget viverra. Etiam lobortis leo sit amet lorem efficitur pellentesque. Praesent non tristique turpis. Nam auctor mi non tincidunt mattis. Aliquam sit amet dui sed nibh volutpat rutrum nec ac quam. Nulla aliquet nisl id ligula malesuada ultricies ac non ante.
+
+Nulla non est vitae nisl sodales pellentesque ac ac sapien. Aliquam iaculis luctus tempor. Etiam bibendum pharetra risus sed iaculis. Nunc varius justo non justo rutrum tincidunt. Aliquam volutpat, eros quis finibus convallis, nisl dolor faucibus orci, vel mattis urna eros nec urna. Cras accumsan, sem quis ultrices iaculis, nisl dolor ornare nulla, vitae interdum nulla massa a diam. Donec feugiat turpis quis mi interdum viverra. Vivamus pulvinar vitae metus sit amet egestas. Phasellus ac ultrices sem. Cras ut pretium erat. Etiam fermentum sodales bibendum. Nullam mattis velit ipsum, eu pharetra tellus faucibus ac. Cras orci nisi, molestie quis viverra a, tempor ac ex. Aliquam et mi nibh.</p>
+<p><a href="#top">Zum Inhaltsverzeichnis</a></p>
+</section>
+
+
+</body>
+</html>
+</code>

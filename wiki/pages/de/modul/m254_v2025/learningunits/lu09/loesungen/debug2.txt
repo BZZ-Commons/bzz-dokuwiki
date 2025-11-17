@@ -1,0 +1,10 @@
+====== LU09.L05: Debugging 2 ======
+{{:modul:m254:learningunits:lu04:loesungen:bpmn_debugging_2_solution.png?600|}}
+
+  - Ein ereignisbasiertes Gateway (instanziierend) darf nicht innerhalb eines Prozesses verwendet werden. Task 2 darf den Kompensationsmarker nicht aufweisen, da eine Kompensationsaktivität nur in Verbindung mit einem Kompensationsereignis und nicht im normalen Prozessfluss verwendet werden darf.
+  - Ein ereignisbasierter Teilprozess darf keine eingehenden Sequenzflüsse aufweisen.
+  - Der ereignisbasierte Teilprozess ist bereits aufgeklappt und darf den Teilprozessmarker daher nicht aufweisen.
+  - Ein Ereignisteilprozess muss ein typisiertes Startereignis aufweisen.
+  - Das angeheftete Ereignis Fehler (Nicht-Unterbrechend) existiert nicht in BPMN 2.0.
+  - Ein auslosendes Ereignis darf nicht angeheftet werden.
+  - Ein Ereignisteilprozess (Teilprozess 1) darf keinen ein- und ausgehenden Sequenzfluss aufweisen.

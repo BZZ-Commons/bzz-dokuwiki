@@ -20,7 +20,7 @@ Sollten Sie den Windows Paketmanager ''chocolatey'' installiert haben, können S
 Haben Sie ''chocolatey'' nicht mehr installiert, so laden Sie sich die neuste Version von Git für Windows [[https://git-scm.com/download/win|hier]] herunter und führen Sie den installer aus.
 
 ===== Git Workflow =====
-{{ :modul:m319:learningunits:lu06:git_workflow.jpeg |}}
+{{ de:modul:m319:learningunits:lu06:git_workflow.jpeg |}}
 
 Nachdem der Benutzer Änderungen an der Arbeitsdatei vorgenommen hat, merkt sich Git die kürzlich geänderten Dateien. Der Benutzer kann die geänderten Dateien mit dem Befehl ''git status'' überprüfen.
 

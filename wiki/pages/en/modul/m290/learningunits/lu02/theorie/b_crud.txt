@@ -1,0 +1,29 @@
+====== LU03b - CRUD: The basics of Data Management ======
+**CRUD** is an acronym that stands for **Create, Read, Update, Delete**. These are the fundamental operations performed on data within any system that manages persistent data. Think of it as the basic toolkit for interacting with information.
+
+{{:modul:m290:learningunits:lu02:theorie:crud.png?400|}}
+
+==== Breakdown of CRUD Operations ====
+  * **Create**: This involves adding new data to the system. For example, creating a new user account, adding a product to an inventory, or posting a new blog article.
+  * **Read**: This operation is about retrieving data from the system. It could be fetching a list of users, displaying product details, or loading a blog post.
+  * **Update**: This involves modifying existing data. Changing a user's password, updating product pricing, or editing a blog post are common update operations.
+  * **Delete**: This is the process of removing data from the system. Deleting a user account, removing a product from the inventory, or deleting a blog post are examples.
+
+===== Vocabulary =====
+^ English ^ German ^
+| to perform | leistet, ausfühen |
+| persistent | beständig, bleibend |
+| to involve | einbeziehen |
+| inventory | Lagerbestand, Vorrat |
+| to retrieve | abrufen |
+| to fetch | herholen, herausholen |
+| to modify | verändern, modifizieren | 
+| common | allgemeine
+
+
+
+
+
+----
+{{tag>M290-LU02}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

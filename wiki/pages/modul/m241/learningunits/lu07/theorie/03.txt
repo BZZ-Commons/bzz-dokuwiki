@@ -9,14 +9,11 @@
 ===== Das Risiko-Inventar erstellen =====
 ==== Identifikation und Priorisierung ====
   * Bei der **Risikoidentifikation** werden die Risiken eines Unternehmens erfasst; prozessorientiert und in verschiedene Risikobereiche gegliedert (QM, Marketing, Ein-kauf). 
-  
-  * In der **Risikobewertung** werden die Risiken quantifiziert und qualitativ gewichtet. Das Risiko bewertet man nach dem Ausmaß der Auswirkung und der Eintrittswahrscheinlichkeit des Risikos. Man bedient sich dabei verschiedener Instrumente und Methoden, z.B. Risk-Map/Headmap, ABC-Analyse, Value at Risk. Alle Erkenntnisse der Risikoanalyse fließen in ein Risikoinventar oder eine RiskMap/Heatmap. 
-
+  * In der **Risikobewertung** werden die Risiken quantifiziert und qualitativ gewichtet. Das Risiko bewertet man nach dem Ausmass der Auswirkung und der Eintrittswahrscheinlichkeit des Risikos. Man bedient sich dabei verschiedener Instrumente und Methoden, z.B. Risk-Map/Headmap, ABC-Analyse, Value at Risk. Alle Erkenntnisse der Risikoanalyse fliessen in ein Risikoinventar oder eine RiskMap/Heatmap. 
   * Value at Risk = ein Risikomass 
-
   * **Risikoinventar = Summe aller identifizierten und auf Plausibilität geprüften Risiken.**
 
- ==== RiskValue ====
+==== RiskValue ====
 Um das Risikomass berechnen zu können, müssen wir unsere Risiken bezüglich Eintrittswahrscheinlichkeit und der Auswirkungen einschätzen. Grundlage dazu ist unsere Erfahrung in ähnlichen Projekten.
 
 Gut geeignet ist hier die Nutzwertanalyse bzw. Schadenswertanalyse mit den Spalten:
@@ -26,14 +23,15 @@ Gut geeignet ist hier die Nutzwertanalyse bzw. Schadenswertanalyse mit den Spalt
   * RiskValue
 
 **Beispiel**
+
 ^# ^Schaden ^EW	^A ^RV ^
-| 1. | Währungsschwankungen | 3	| 3 | 9 |
-| 2. | 	| | | 			
+^ 1. | Währungsschwankungen | 3	| 3 | 9 |
+^ 2. | 	| | | 			
 
 ==== HeatMap/RiskMap ====
 Nachdem wir nun unsere Risiken erkannt und bemessen haben, können wir diese nun in die Heatmap eintragen. In der Heatmap erkennen wir nun sehr gut, wie die Priorisierung des Massnahmen-Katalogs sein muss. 
 
-{{:modul:m241:learningunits:lu07:theorie:master_the_materiality_matrix-3656944542.jpg?600| Risikomessung mittels Heatmap mit Eintrittswahrscheinlichkeit und Auwwirkung}}
+{{:modul:m241:learningunits:lu07:theorie:master_the_materiality_matrix-3656944542.jpg?600| Risikomessung mittels Heatmap mit Eintrittswahrscheinlichkeit und Auswirkung}}
 
 Ziel ist es die rot gekennzeichneten Risiken in den gelben Bereich zu bringen, und die gelben in den grünen Bereich. 
 

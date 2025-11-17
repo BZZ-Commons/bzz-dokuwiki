@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg height="100%" width="100%" viewBox="0 0 532 340" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>CSS Grid: Layout-Bereich durch gedachte Linien unterteilt</title>
+	<g stroke="cornflowerblue" stroke-dasharray="2, 4" stroke-width="3" fill="none"> 
+	<path d="m46.78 37.69v280"/>
+	<path d="m197.3 37.69v280"/>
+	<path d="m347.8 37.69v280"/>
+	<path d="m498.3 37.69v280"/>
+	<path d="m28 55.18h487.4"/>
+	<path d="m28 180.2h487.4"/>
+	<path d="m28 305.1h487.4"/>
+	</g>
+	<g fill="cornflowerblue" font-size="27px">
+	<text y="26" x="44">1</text>
+	<text y="26" x="193">2</text>
+	<text y="25" x="343">3</text>
+	<text y="26" x="493">4</text>
+	<text y="72" x="2">1</text>
+	<text y="192" x="2">2</text>
+	<text y="318" x="2">3</text>
+	</g>
+</svg>

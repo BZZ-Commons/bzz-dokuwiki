@@ -1,0 +1,16 @@
+====== LU04a - Datenbank in MongoDB abfragen ======
+===== Ziele =====
+  -Ich kann eine MongoDB (MDB) nach Documents mit und ohne Parameter suchen.
+  -Ich kann die Anzahl Documents einer MDB mit und ohne Parameter ermitteln.
+  -Ich kann in einer MDB die Unique Values von Feldern ermitteln (Distinct).
+  -Ich kann eine MDB mit Conditional Operators abfragen.
+  -Ich kann mit Logical Operators mehrere Abfragen verbinden.
+  -Ich kann die Ausgabe der Felder bei einer Abfrage angeben.
+  -Ich kann eine MDB mit Regular Expression abfragen.
+  -Ich kann eventuelle Fehler selbstständig erkennen, Massnahmen vorschlagen und mind. eine Massnahme umsetzen.
+
+===== Grundlagen =====
+[[https://youtu.be/iiVUXXnTYMk |MongoDB abfragen]]: Dieses Video demonstriert Ihnen, wie Sie eine MongoDB auf verschiedene Arten abfragen können.
+
+===== Übungen =====
+Lösen Sie die ''Übung 4.01, 4.02 (04/02_Exercises/)'' aus dem Repo.

@@ -1,0 +1,11 @@
+====== LU16b - Behat ======
+
+
+**Behat** ist ein Open-Source-Tool für **Behaviour Driven Development (BDD)**, das speziell für PHP entwickelt wurde. 
+Es ermöglicht Entwicklern, Verhaltensspezifikationen in natürlicher Sprache (Gherkin-Syntax) zu schreiben und diese als automatisierte Tests auszuführen. 
+
+Behat wird häufig genutzt, um sicherzustellen, dass eine Anwendung das erwartete Verhalten aus der Perspektive des Benutzers zeigt. 
+Es unterstützt die Integration mit verschiedenen Frameworks und Testtools und ist besonders in der PHP-Community verbreitet.
+
+  * [[https://docs.behat.org/en/latest/]]
+  * [[https://en.wikipedia.org/wiki/Behat_(software)]]

@@ -1,0 +1,54 @@
+====== LU08b - SQL-DML: INSERT INTO ======
+
+**Sources** 
+  - [[https://www.w3schools.com/sql/sql_insert.asp | W3Schools | INSERT INTO ]]
+  - [[https://dev.mysql.com/doc/refman/8.4/en/insert.html | MySQL.COM | INSERT INTO]]
+  - {{ :modul:m290:learningunits:lu07:theorie:mysql_how_to_insert_rows_into_a_table.mp4 |}}
+
+
+===== INSERT Statement =====
+The INSERT command is used to add new records to a table. When using INSERT, it is essential to specify the table and columns where the data will be added.
+
+** Syntax **
+  INSERT INTO table_name (column1, column2, column3) 
+  VALUES (value1, value2, value3);
+  
+** Example **
+  INSERT INTO employees (employee_id, first_name, last_name, hire_date, salary) 
+  VALUES (1, 'John', 'Doe', '2023-09-18', 55000);
+  
+
+
+===== SINGLE VS MULTIPLE INSERTS =====
+In SQL, inserting data into tables is a fundamental operation that is often performed using the INSERT INTO statement. This statement allows you to add new rows to a database table, either one at a time or in bulk. The two primary ways to insert data are through **single inserts** and **multiple inserts**.
+
+==== Single Inserts ====
+A single insert involves adding one row of data to a table at a time. This is a straightforward process and is typically used when you need to insert individual records, such as when a user submits a form in an application. A basic syntax of a single insert is:
+
+  INSERT INTO table_name (column1, column2, column3)
+  VALUES (value1, value2, value3);
+  
+Single inserts are simple and easy to understand, making them ideal for interactive applications that handle data entry on a per-row basis.
+
+==== Multiple Inserts ====
+Multiple inserts, on the other hand, allow you to add several rows of data in a single SQL statement. This is more efficient for bulk data loading, as it minimizes the communication overhead between the client and the database server. A multiple insert command follows this syntax:
+
+  INSERT INTO table_name (column1, column2, column3)
+  VALUES (value1, value2, value3),
+         (value4, value5, value6),
+         (value7, value8, value9);
+         
+Multiple inserts are useful when you need to insert a large set of data at once, as it can significantly improve performance compared to running multiple single insert statements.
+
+
+
+==== Conclusion ====
+Both single and multiple inserts serve important roles depending on the nature of the task. While single inserts are simpler and suited for individual row entry, multiple inserts enhance efficiency in batch processing. Understanding when and how to use each type is crucial for optimizing database operations.
+
+
+==== Vocabulary ====
+^English ^ Deutsch ^
+| bulk | grosse Menge |
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

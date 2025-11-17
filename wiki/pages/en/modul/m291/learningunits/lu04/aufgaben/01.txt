@@ -1,0 +1,29 @@
+====== LU04.A01 - Frameworks VS Libraries: Control Questions ======
+
+===== Prerequisites  =====
+  * Work type: Peer
+  * Means of aid: only teaching materials, no websearch, no use of ai.
+  * Timeframe: 5 Minutes
+  * Expected result: A PDF file with the answers of the control questions.  
+
+===== Assignment ======
+You have learnt what the difference between a software framework and a library is. Answer therefore the following five questions:
+
+  - What is the primary difference between how libraries and frameworks manage control in a project? (Hint: Think about who-calls-whom — your code or the framework/library.)
+  - Can a framework be seamlessly incorporated into an existing project? Why or why not?
+  - Give an example of a library and explain its primary purpose.
+  - What does a framework provide that makes it suitable for starting a new project?
+  - Why are libraries important in program linking and binding processes, and how do they differ from frameworks in this regard?
+
+===== Solution =====
+[[en:modul:m291:learningunits:lu04:loesungen:01|Lösung]]
+
+===== Vocabulary =====
+^ English ^ German ^ 
+| prerequisite | Grundvoraussetzung |
+| seamless | nahtlos | 
+| in this regard | diesbezüglich | 
+| to incorporate | einbauen (lassen) | 
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

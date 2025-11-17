@@ -32,7 +32,7 @@ Danach speichert Anna diesen Public Key in Ihrem Schlüsselbund.
 
 === 2. Email verschlüsseln ===
 Anna schreibt die Email an Ernst.
-Vor dem Absenden wählt Sie aus, dass die E-Mail verschlüsselt wird.
+Vor dem Absenden wählt Sie aus, dass die E-Mail verschlüsselt wird. Für die Verschlüsselung wird nun der Public Key von Ernst verwendet.
 
 === 3. Email entschlüsseln ===
 Ernst empfängt die verschlüsselte Email von Anna.

@@ -1,0 +1,41 @@
+====== LU19a - Aufgabe 1 / Task 08: v-bind, v-if mit OR ======
+
+===== Administration =====
+Füllen Sie die nachfolgenden Felder aus:
+
+**Klasse:** ....................................
+
+**Vorname:** ...................................
+
+**Name:** ......................................
+
+===== Vorarbeit =====
+  * Sie können als Vorlage für diese Aufgabe die Lösung **LU05.S11.html** verwenden.
+
+===== Ausgangslage =====
+Beim Auftrag **LU05.A11.html** behandelten wir im Unterricht das Thema "Zugriff auf Ressourcen", die an zwei Bedingungen geknüpft sind. Beim Kinobesuch beispielsweise ist Alter und ob eine erwachsene Begleitperson anwesend relevant. 
+
+{{:en:modul:m291:learningunits:lu19:theorie:a06_ausgangslage.png?400|}}
+
+===== Auftrag =====
+Programmieren Sie einen Zugriffskontrolle (Meldung auf dem Bildschirm) für den Zugriff auf eine Webseite mit nachfolgender Bedingung:
+  * //admin// und //support// erhalten vollen Zugriff 
+  * //gast// oder //customer// haben beschränkten Zugriff 
+  * Allen anderen wird der Zugriff verweigert
+
+**Hinweis**
+  * Die Rolle wird im Data-Bereich der VUE-Instanz in der Variable //role// festgesetzt.
+  * Der Farbton der Meldungen ist nicht relevant. 
+  * Es ist nicht relevant ob die Meldung in Englisch oder Deutsch ist.
+  
+
+^Zielzustand 1 | Meldung bei den Rollen //admin// und //suport//| {{:en:modul:m291:learningunits:lu19:theorie:t08_ziel1.png?400|}} |
+^Zielzustand 2 | Meldung bei den Rollen //gast// und //customer// | {{:en:modul:m291:learningunits:lu19:theorie:t08_ziel2.png?400|}} | 
+^Zielzustand 3 | Meldung bei allen anderen Rollen. | {{:en:modul:m291:learningunits:lu19:theorie:t08_ziel3.png?400|}} |
+
+-----
+
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir
+
+
+

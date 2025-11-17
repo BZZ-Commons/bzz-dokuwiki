@@ -1,0 +1,37 @@
+====== LB02: Klonen des Repositories ======
+<WRAP center round info 60%>
+Führen Sie die folgenden Schritte durch, um die Vorlage für die Leistungsbeurteilung zu klonen.
+Dadurch sollten Probleme **vor** der Leistungsbeurteilung erkannt werden.
+
+Falls einer dieser Schritte **nicht funktioniert**, melden Sie sich **sofort** bei Ihrer Lehrperson.
+</WRAP>
+
+===== 1. Assignment akzeptieren =====
+Akzeptieren Sie das Assignment im GitHub-Classroom wie gewohnt.
+Nachdem das Repository erstellt wurde, öffnen Sie den Link.
+
+{{de:modul:m319:learningunits:lu99:lb02_setup_00.png?600|}}
+
+===== 2. Setup wird erstellt =====
+GitHub führt nun im Hintergrund einige Aktionen durch.
+Diese können bis zu 60 Sekunden benötigen.
+Solange diese Aktionen laufen, wird ein **gelber Kreis** angezeigt.
+
+{{de:modul:m319:learningunits:lu99:lb02_setup_01.png?600|}}
+
+Nachdem diese Hintergrundaktionen abgeschlossen sind ...
+  * ... verschwindet der **gelbe Kreis** (evtl. müssen Sie die Seite neu laden)
+  * ... erscheint die Datei ''testdata.json'' 
+
+{{de:modul:m319:learningunits:lu99:lb02_setup_02.png?600|}}
+
+===== 3. Repository klonen =====
+Klonen Sie nun das Repository in PyCharm.
+Wie üblich sollten Sie aufgefordert werden, ein neues **Virtual Environment** zu erstellen.
+
+{{de:modul:m319:learningunits:lu99:lb02_setup_03.png?600|}}
+
+===== 4. Setup testen =====
+Führen Sie den Test ''test_setup'' im Modul ''echarge_test'' aus.
+
+{{de:modul:m319:learningunits:lu99:lb02_setup_04.png?600|}}

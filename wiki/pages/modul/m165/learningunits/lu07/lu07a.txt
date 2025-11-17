@@ -1,0 +1,12 @@
+====== LU07a - Datenzugriff absichern ======
+===== Ziele =====
+  -Ich kann eine Datenbank in MongoDB sichern (Dump), wiederherstellen (Restore).
+  -Ich kann Daten in MongoDB exportieren und importieren.
+  -Ich kann eine Datenbank in MongoDB mit einer einfachen Authentifizierung absichern.
+  -Ich kann Fehlermeldungen interpretieren und eine mögliche Lösung zur deren Behebung vorschlagen.
+
+===== Grundlagen =====
+[[https://www.youtube.com/watch?v=1saxBK0ibIg |Datensicherung und einfache Authentifizierung in MongoDB]]: Dieses Video demonstriert Ihnen, wie Sie eine Datenbank in MongoDB backupen (Dump), wiederherstellen und wie Sie Daten aus MongoDB exportieren.
+
+===== Übungen =====
+Lösen Sie die ''Übung 07/02_Exercises'' aus dem Repo.

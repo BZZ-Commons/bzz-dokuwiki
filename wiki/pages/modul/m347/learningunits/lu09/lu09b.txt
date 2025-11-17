@@ -1,0 +1,15 @@
+====== LU09b - Docker Swarm mit multipass aufsetzen ======
+===== Ziele =====
+  -Ich kann multipass für mein Betriebssystem installieren
+  -Ich kann die Vorgehensweise, um einen Cluster mit multipass aufzusetzen, in eigenen Worten beschreiben.
+  -Ich kann mit multipass einen Cluster mit n Knoten aufsetzen.
+  -Ich kann mindestens eine Massnahme bei Fehlermeldung vorschlagen und umsetzen.
+\\
+===== Grundlagen =====
+  -[[modul:m347:learningunits:lu09:lu09b:install_multipass | Multipass auf Linux installieren]]
+  -[[https://youtu.be/1IUDPwJew4g |How to setup a Docker Swarm cluster with multipass]] ((In diesem Erklärvideo wird Ihnen die Umsetzung eines Docker Swarm Clusters mit 3 Knoten (1 Manager, 2 Worker) beispielhaft demonstriert.))
+
+===== Übungen =====
+  -Gehen Sie das Video nochmals durch repetieren Sie die Schritte.
+  -Erstellen Sie ein Bash-Script, welches Ihnen das Starten und Aufsetzen von Multipass-Nodes automatisiert. 
+

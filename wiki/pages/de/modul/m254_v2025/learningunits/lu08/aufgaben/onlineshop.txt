@@ -1,0 +1,38 @@
+====== LU08.A01: Onlineshop ======
+<WRAP center round todo 60%>
+Stelle die relevanten Geschäftsanwendungsfälle beim Onlineshopping als UML Business Use Case Diagramm dar.
+</WRAP>
+
+===== Ausgangslage =====
+
+Ein Unternehmen möchte ein neues Online-Bestellsystem für seine Kunden implementieren. 
+Das System soll es Kunden ermöglichen, Produkte online zu durchsuchen, in den Warenkorb zu legen und zu bestellen. 
+Zusätzlich sollen Administratoren Produktinformationen verwalten können.
+
+===== Auftrag =====
+
+  - Identifikation der Akteure: Bestimmen Sie die relevanten Akteure des Systems (z. B. Kunde, Administrator, Zahlungsdienstleister).
+  - Erstellung eines UML Business Use Case Diagramms: Modellieren Sie die Haupt-Business Use Cases des Systems in einem UML Use Case Diagramm. Berücksichtigen Sie mindestens folgende Anwendungsfälle:
+    * Produkt suchen
+    * Produkt in den Warenkorb legen
+    * Bestellung abschliessen
+    * Bezahlung durchführen
+    * Bestellung verwalten (für Administratoren)
+    * Produktdaten aktualisieren (für Administratoren)
+  - Beschreibung der Use Cases: Wählen Sie zwei der modellierten Use Cases aus und beschreiben Sie diese in einem strukturierten Use Case-Template mit folgenden Informationen:
+    * Name des Use Case
+    * Ziel
+    * Akteure
+    * Vorbedingungen
+    * Ablauf (Hauptszenario)
+    * Alternativszenarien
+    * Nachbedingungen
+
+==== Zusätzliche Anforderungen: ====
+  * Nutzen Sie standardisierte UML-Notation.
+  * Achten Sie auf eine klare und verständliche Modellierung.
+  * Dokumentieren Sie eventuelle Annahmen, die Sie für die Modellierung getroffen haben.
+
+
+===== Abgabe =====
+Als PDF-Dateien im Moodle.

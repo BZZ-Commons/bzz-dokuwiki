@@ -1,0 +1,65 @@
+====== LU02.A03 - Pseudo-Klassen =======
+
+===== Aufgabe 1: Theoriefragen zu Pseudo-Klassen =====
+
+Beantworten Sie die folgenden Fragen zu CSS-Pseudo-Klassen:
+
+  - Was ist eine CSS-Pseudo-Klasse? Erkläre den Unterschied zwischen einer normalen Klasse und einer Pseudo-Klasse.
+  - Welche Pseudo-Klasse wird verwendet, um das Styling eines Links zu ändern, wenn die Maus darüberfährt?
+  - Mit welcher Pseudo-Klasse kann ein Element gezielt werden, das den Fokus hat (z. B. ein Input-Feld)?
+  - Welche Pseudo-Klassen ermöglichen es, das erste und das letzte Kind eines übergeordneten Elements zu stylen?
+  - Erkläre den Unterschied zwischen ''nth-child(n)'' und ''nth-of-type(n)''.
+
+==== Rahmenbedingungen =====
+^ Was ^ Beschreibung ^
+| Produkt | Notiz mit Ihren Antworten |
+| Zeit | 5 Min. |
+| Sozialform | Einzel- oder Partnerarbeit |
+
+----
+
+===== Aufgabe 2: Praktische Übung mit Pseudo-Klassen =====
+
+==== Ausgangslage ====
+
+Erstellen Sie eine Datei ''index.html'' mit folgendem Inhalt:
+
+<code html>
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-Klassen Übung</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Pseudo-Klassen in Aktion</h1>
+    <button>Klick mich</button>
+    <input type="text" placeholder="Fokus mich">
+    <ul>
+        <li>Element 1</li>
+        <li>Element 2</li>
+        <li>Element 3</li>
+        <li>Element 4</li>
+    </ul>
+</body>
+</html>
+</code>
+
+==== Aufgabenstellung ====
+
+  - Erstellen Sie eine CSS-Datei ''styles.css'' und verknüpfe sie die CSS-Datei mit der HTML-Datei.
+  - Fügen Sie eine Regel hinzu, die das ''<button>''-Element verändert, wenn die Maus darüberfährt (''hover'').
+  - Erstellen Sie eine Regel für ''button:active'', sodass sich das Aussehen ändert, wenn der Button geklickt wird.
+  - Gestalten Sie das ''<input>''-Feld so, dass sich die Rahmenfarbe ändert, wenn es fokussiert wird (''focus'').
+  - Setzen Sie eine Regel, die den ersten ''<li>'' fett macht und den letzten ''<li>'' grau färbt.
+  - Verwenden Sie ''nth-child(n)'', um das zweite ''<li>''-Element in einer anderen Farbe darzustellen.
+  - Fügen Sie eine Deklaration hinzu, sodass das ''<h1>''-Element eine andere Farbe bekommt, wenn man mit der Maus darüberfährt.
+  - Testen Sie Ihre Lösung, indem Sie die HTML-Datei in einem Browser öffnen und mit den Elementen interagiert!
+
+==== Rahmenbedingungen =====
+^ Was ^ Beschreibung ^
+| Produkt | HTML- und CSS-Datei |
+| Zeit | 15 Min. |
+| Sozialform | Einzel- oder Partnerarbeit |

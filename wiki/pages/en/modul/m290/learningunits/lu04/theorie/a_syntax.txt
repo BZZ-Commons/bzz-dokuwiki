@@ -1,0 +1,58 @@
+====== LU06a - Syntax of a DQL-Select statement ======
+
+As we know, **SQL** stands for **S**tructured **Q**uery **L**anguage. Consequently, It should come as no surprise that SQL is indeed consistently structured. The figure below shows the  structure of a exhaustive SQL statement.
+
+{{:modul:m290:learningunits:lu04:theorie:sql-syntax.png?600|}}
+
+===== NOTES  =====
+  * The content of this chapter is based on the  [[https://www.w3schools.com/sql/sql_syntax.asp|W3School-SQL-tutorial]].
+  * Please note that the use og CAPITAL LETTERS for SQL commands and tabs can make it easier for you to maintain your program code. 
+  * Make sure, that every complete sql statement is finished by a semicolon (;).
+
+===== The Syntax of DML commands =====
+Every SQL query is composed by three main commands:
+
+  * **SELECT** myColumn1, myColumn2, ... [or * for all columns]
+  * **FROM** myTable
+  * **WHERE** myCondition. 
+  * **ORDER BY** myColumn2 **ASC|DESC**;
+
+With **SELECT** we specify which columns we want to retrieve, with **FROM** we specify the TABLE from which the columns originate, with **WHERE** we determine the condition under which the data records are selected, and finally, with **ORDER BY** +  **[ASC | DESC]** we define the order in which the result set is to be displayed on the screen. 
+
+===== Basic example =====
+Let's take a table **Customers** as shown in the figure below. 
+
+{{:modul:m290:learningunits:lu04:theorie:screenshot_2024-08-30_095010.png?700|}}
+
+To retrieve all the information, which are stored in this table, our SQL command would be like follows. 
+
+   SELECT * 
+   FROM Customers;
+
+or as a more detailed notation
+
+   SELECT CustomerID, CustomerName, ContactName, Address, City, PostalCode, Country
+   FROM Customers;
+   
+The result set would include the entire contents of the table, since we we have not defined any preconditions or filters. 
+
+
+
+
+
+
+
+
+
+===== Vocabulary =====
+^ English ^ German ^
+| precondition | Vorbedingung |
+| exhaustive  | erschöpfend, vollständig |
+| clause | Abschnitt | 
+| to determine | bestimmen |
+| to fetch | abrufen, holen | 
+| be composed by | besteht aus | 
+| notation | Schreibweise |
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

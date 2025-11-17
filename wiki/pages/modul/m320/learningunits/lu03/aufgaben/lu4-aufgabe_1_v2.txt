@@ -20,7 +20,7 @@ Führen Sie dann das Programm aus.
 Ersetzen Sie in der Methode ''add_grade()'' den Befehl ''print("FEHLER: Zu viele Werte eingegeben\n")'' mit dem nötigen Code, damit im Fehlerfall eine Exception geworfen wird. Lesen Sie dazu falls nötig in der Theorie nach, wie eine ''Exception'' erzeugt und geworfen wird. Die geworfene Exception soll den selben Kommentar ausgeben wie der ''print''-Befehl.\\
 Führen Sie das Programm aus und beachten Sie die Ausgabe im Stdout.
 
-<nodisp> TODO SuMa: Aufgabe genauer erklären</nodisp>
+/* TODO SuMa: Aufgabe genauer erklären */
 
 **Den Notenwert auf den Bereich 1.0 .. 6.0 überwachen**
 

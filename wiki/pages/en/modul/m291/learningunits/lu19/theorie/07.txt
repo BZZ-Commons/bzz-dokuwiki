@@ -1,0 +1,39 @@
+====== LU19a - Aufgabe 1 / Task 07: v-bind, v-if mit AND ... ======
+
+===== Administration =====
+Füllen Sie die nachfolgenden Felder aus:
+
+**Klasse:** ....................................
+
+**Vorname:** ...................................
+
+**Name:** ......................................
+
+===== Vorarbeit =====
+  * Sie können als Vorlage für diese Aufgabe die Lösung **LU05.S11.html** verwenden.
+
+===== Ausgangslage =====
+Beim Auftrag **LU05.A11.html** behandelten wir im Unterricht das Thema „Zugriff auf Ressourcen“, die an zwei Bedingungen geknüpft sind. Beim Kinobesuch beispielsweise ist Alter und ob eine erwachsene Begleitperson anwesend relevant. 
+
+{{:en:modul:m291:learningunits:lu19:theorie:a06_ausgangslage.png?500|}}
+
+===== Auftrag =====
+Programmieren Sie einen Zugriffskontrolle ähnlicher Art für die Attraktion EURO-MIR im EUROPAPARK in RUST. Die Zugriffserlaubnis an der Achterbahn ist an folgende Bedingungen geknüpft.
+  * Zugelassenes Alter: >= 8 Jahr
+  * Zugelassene Grösse 130 - 195 cm
+  * Das System soll das Alter und einen Meldung ausgeben, ob man zugelassen ist bzw. warum man nicht zugelassen ist.
+
+**Hinweis**
+  * Der Farbton der Meldung ist nicht relevant. 
+  
+
+^Zielzustand 1 | Mit 7 Jahren darf man nicht auf die EURO-MIR | {{:en:modul:m291:learningunits:lu19:theorie:t07_ziel1.png?500|}} |
+^Zielzustand 2 | Ab und mit 8 Jahren und der passenden Grösse ist man erlaubt. | {{:en:modul:m291:learningunits:lu19:theorie:t07_ziel2.png?500|}} | 
+^Zielzustand 3 | Das Alter stimmt, aber die Person ist leider zu gross für die EURO-MIR. | {{:en:modul:m291:learningunits:lu19:theorie:t07_ziel3.png?500|}} |
+
+-----
+
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir
+
+
+

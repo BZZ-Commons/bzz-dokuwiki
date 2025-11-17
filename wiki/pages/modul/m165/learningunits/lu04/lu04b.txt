@@ -1,0 +1,17 @@
+====== LU04b - fortgeschrittene Abfragen in MongoDB ======
+===== Ziele =====
+  -Ich kann in einer MDB nach Array-Elementen abfragen.
+  -Ich kann in einer MDB mit Arrays als Kriterium nach Arrays abfragen.
+  -Ich kann den ''$all'' Operator korrekt und sinnvoll anwenden
+  -Ich kann ungewünschte Felder in der Ausgabe mit ''$'' unterdrücken.
+  -Ich kann ungewünschte Array-Elemente in der Ausgabe mit ''$slice'' unterdrücken.
+  -Ich kann verschachtelte Objekte (nested objects) abfragen.
+  -Ich kann eine Custom functions (ähnlich einer Stored Procedure) zur Kapselung von komplexen Abfragen erstellen
+  -Ich kann eventuelle Fehler selbstständig erkennen, Massnahmen vorschlagen und mind. eine Massnahme umsetzen.
+
+
+===== Grundlagen =====
+[[https://youtu.be/WW1CTuzEF0M |Fortgeschrittene Abfragen in MongoDB]]: Dieses Video demonstriert Ihnen weiterführende und komplexere Abfragen in MongoDB.
+
+===== Übungen =====
+Lösen Sie die ''Übung 5.01, 5.02 (05/02_Exercises/)'' aus dem Repo.

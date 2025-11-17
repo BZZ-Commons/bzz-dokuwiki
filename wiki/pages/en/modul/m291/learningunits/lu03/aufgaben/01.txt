@@ -1,0 +1,34 @@
+====== LU03.A01 - Hello World in W3School-Playground ======
+
+===== Learning Objectives =====
+  - Learning how to make use of the W3School VUE playground
+  - Recognizing the SFC structure of vue file
+  
+===== Prequisites  =====
+  * Work type: Individual
+  * Means of aid: 
+    * [[https://www.w3schools.com/vue/index.php | W3School VUE Introduction]]
+    * [[https://www.w3schools.com/vue/tryit.php?filename=tryvue_helloWorld|W3School VUE Playground]]
+  * Timeframe: 10 Minutes
+  * Expected result: Copy of a vue script, that greets the world. Saved on the W3School workspace.
+
+===== Introduction  =====
+You have learnt that W3School provides us with a playground to mess around without any harm. As always, we start with our "Hello World".
+
+===== Assignments =====
+  - Open the playground with the link above. You will be presented with a splited window on which on the right hand side you will see the coding area, and on the right hand side the result area.
+  - Currently there is a //Hello World// message with a lightgreen background.
+  - Add a new variable //message2// and greet with it the //Galaxy//.
+  - Change the background colour to //red//.
+  - Execute the changes by bushing the //RUN-Button//.
+  - Check the result .
+
+===== Solution =====
+[[en:modul:m291:learningunits:lu03:loesungen:01|Lösung]]
+
+===== Vocabulary =====
+^ English ^ German ^ 
+| ...| ... |
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

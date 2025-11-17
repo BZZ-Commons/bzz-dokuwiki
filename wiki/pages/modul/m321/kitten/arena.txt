@@ -1,0 +1,11 @@
+====== D) Arena Service ======
+<WRAP center round todo 60%>
+Der Arena-Service führt die Spielrunden durch.
+Er kommuniziert mit den Bots und wertet deren Antworten aus.
+</WRAP>
+
+Zu jeder vollen Minute:
+  - Frage den Discovery-Service nach einer Liste aller aktiven Bots
+  - Falls mindestens 3 Bots bereit sind
+    - Führe eine Spielrunde durch
+    - Informiere alle Bots über das Endresultat

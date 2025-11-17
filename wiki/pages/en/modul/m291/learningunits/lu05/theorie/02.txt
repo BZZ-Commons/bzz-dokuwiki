@@ -1,0 +1,77 @@
+====== LU05b - v-bind ======
+
+===== Learning ojectives =====
+  - Explaining what v-bind is
+  - Naming what kind of object v-bind can include into the HTML-DOM
+  - Using v-bind in a simple cases
+
+===== Sources =====
+  * [[https://www.w3schools.com/vue/vue_v-bind.php| W3School - v-bind]]
+
+
+===== What is v-bind? =====
+v-bind is a Vue.js directive that allows you to dynamically bind attributes or properties to a value in your Vue instance's data. It is particularly useful for passing dynamic data to HTML elements or components. That means that v-bind simplifies the process of connecting your Vue instance's data to the DOM.
+
+===== Key Points =====
+  * **Dynamic Attributes:** Bind values to attributes like src, href, class, style, etc.
+  * **Shorthand:** The v-bind directive has a shorthand : (e.g., :class).
+  * **Reactivity:** Automatically updates the bound attribute when the data change
+
+
+
+
+
+===== Examples =====
+
+==== Binding an Image Source ====
+**html**
+  
+  <img v-bind:src="imageSrc" alt="Dynamic Image">
+  <!-- Shorthand -->
+  <img :src="imageSrc" alt="Dynamic Image">
+
+**javascript**
+  
+  data() {
+    return {
+      imageSrc: "https://example.com/image.jpg",
+    };
+  }
+
+==== Binding Classes Dynamically =====
+**html**
+  <div v-bind:class="{ active: isActive, 'text-bold': isBold }">Hello Vue</div>
+  <!-- Shorthand -->
+  <div :class="{ active: isActive, 'text-bold': isBold }">Hello Vue</div>
+
+**javascript**
+  data() {
+    return {
+      isActive: true,
+      isBold: false,
+    }; 
+  }
+
+
+==== Bindung Styles ====
+**html**
+  <div v-bind:style="{ color: textColor, fontSize: fontSize + 'px' }">Styled Text</div>
+  <!-- Shorthand -->
+  <div :style="{ color: textColor, fontSize: fontSize + 'px' }">Styled Text</div>
+  
+**javascript**
+  data() {
+    return {
+      textColor: "blue",
+      fontSize: 16,
+    };
+  }
+
+
+
+===== Vocabulary =====
+^ English ^ German ^ 
+| ...| ... |
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

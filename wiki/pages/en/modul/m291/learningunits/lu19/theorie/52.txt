@@ -1,0 +1,39 @@
+====== LU19f - Aufgabe 2 / Task 52: methods ======
+
+===== Administration =====
+Füllen Sie die nachfolgenden Felder aus:
+
+**Klasse:** ....................................
+
+**Vorname:** ...................................
+
+**Name:** ......................................
+
+===== Vorarbeit =====
+  * Sie können als Vorlage die die Lösung **LU07.S03.html** verwenden.
+
+===== Ausgangslage =====
+Auftrag **LU07.S03.html** bestand darin beim Klicken auf ein Tier-Bild, dieses Tier entsprechend zu kommentieren. Realisiert wurde dies, durch den Einsatz von **vue-events** und **vue-methoden**.
+ 
+{{:en:modul:m291:learningunits:lu19:theorie:t2_a52_ausgang.png?500|}}
+
+===== Auftrag =====
+  * Ergänzen Sie eine Methode **animalCnt(e)**, die zählt, **wie oft jedes Tier angeklickt** wurde. 
+  * Diese Anzahl kann anhand der **e.target.id** entscheiden, welches Tier geklickt wurde.
+  * Erweitern Sie die Textausgabe der Methode **myMethod** um den Tierzähler
+ 
+
+^Zielzustand 1 | Startsituation | {{:en:modul:m291:learningunits:lu19:theorie:t52_ziel1.png?400|}} |
+^Zielzustand 2 | Der Tiger wurde ein mal geklickt| {{:en:modul:m291:learningunits:lu19:theorie:t52_ziel2.png?400|}} |
+^Zielzustand 3 | Der Löwe wurde sechs mal geklickt| {{:en:modul:m291:learningunits:lu19:theorie:t52_ziel3.png?400|}} | 
+^Zielzustand 4 | Der Kea wurde drei mal geklickt| {{:en:modul:m291:learningunits:lu19:theorie:t52_ziel4.png?400|}} | 
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir
+
+
+
+
+
+
+

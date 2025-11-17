@@ -12,64 +12,56 @@ Bei dieser Aufgabe gibt es daher keine Grenzfälle für:
 ^ ::: | Artikelbezeichnung | Heu |
 ^ ::: | Einheit | Meter |
 ^ ::: | Preis | 13.75 |
-^ Erwartetes Resultat ^ Meldung | |
-| Eingaben korrekt. Daten gespeichert. |||
+^ Erwartetes Resultat | Meldung | Eingaben korrekt. Daten gespeichert. |
 ^ Nr || 21 |
 ^ Bezeichnung || Artikelbezeichnung, Maximallänge |
 ^ Eingaben | Artikelnummer| 77789 |
 ^ ::: | Artikelbezeichnung | abcdefghijabcdefghijabcdefghij |
 ^ ::: | Einheit | Pack |
 ^ ::: | Preis | 387.05 |
-^ Erwartetes Resultat ^ Meldung | |
-| Eingaben korrekt. Daten gespeichert. |||
+^ Erwartetes Resultat | Meldung | Eingaben korrekt. Daten gespeichert. |
 ^ Nr || 22 |
 ^ Bezeichnung || Artikelbezeichnung, zu kurz |
 ^ Eingaben | Artikelnummer| 56478 |
 ^ ::: | Artikelbezeichnung | O2 |
 ^ ::: | Einheit | Stück |
 ^ ::: | Preis | 54.60 |
-^ Erwartetes Resultat ^ Meldung | |
-| Ungültige Artikelbezeichnung |||
+^ Erwartetes Resultat | Meldung | Ungültige Artikelbezeichnung |
 ^ Nr || 23 |
 ^ Bezeichnung || Artikelbezeichnung, zu lang |
 ^ Eingaben | Artikelnummer| n|
 ^ ::: | Artikelbezeichnung | abcdefghijabcdefghijabcdefghijZ |
 ^ ::: | Einheit | Meter |
 ^ ::: | Preis | 7.25 |
-^ Erwartetes Resultat ^ Meldung | |
-| Ungültige Artikelbezeichnung |||
+^ Erwartetes Resultat | Meldung | Ungültige Artikelbezeichnung |
 ^ Nr || 24 |
 ^ Bezeichnung || Preis minimal |
 ^ Eingaben | Artikelnummer| 55441 |
 ^ ::: | Artikelbezeichnung | Billig |
 ^ ::: | Einheit | Kilogramm |
 ^ ::: | Preis | 0.05 |
-^ Erwartetes Resultat ^ Meldung | |
-| Eingaben korrekt. Daten gespeichert. |||
+^ Erwartetes Resultat | Meldung | Eingaben korrekt. Daten gespeichert. |
 ^ Nr || 25 |
 ^ Bezeichnung || Preis maximal |
 ^ Eingaben | Artikelnummer| 96245 |
 ^ ::: | Artikelbezeichnung | Teuer |
 ^ ::: | Einheit | Meter |
 ^ ::: | Preis | 1000.00 |
-^ Erwartetes Resultat ^ Meldung | |
-| Eingaben korrekt. Daten gespeichert. |||
+^ Erwartetes Resultat | Meldung | Eingaben korrekt. Daten gespeichert. |
 ^ Nr || 26 |
 ^ Bezeichnung || Preis zu klein |
 ^ Eingaben | Artikelnummer| 86420 |
 ^ ::: | Artikelbezeichnung | Zu billig |
 ^ ::: | Einheit | Stück |
 ^ ::: | Preis | 0.04 |
-^ Erwartetes Resultat ^ Meldung | |
-| Ungültiger Preis |||
+^ Erwartetes Resultat | Meldung | Ungültiger Preis |
 ^ Nr || 27 |
 ^ Bezeichnung || Preis zu gross |
 ^ Eingaben | Artikelnummer| 28643 |
 ^ ::: | Artikelbezeichnung | Zu teuer |
 ^ ::: | Einheit | Pack |
 ^ ::: | Preis | 1000.01 |
-^ Erwartetes Resultat ^ Meldung | |
-| Ungültiger Preis |||
+^ Erwartetes Resultat | Meldung | Ungültiger Preis |
 
 
 

@@ -1,0 +1,34 @@
+====== LU05.A07 - v-if (simple) ======
+
+===== Prerequisites  =====
+  * Work type: Individual
+  * Means of aid: only teaching materials, no websearch, no use of ai.
+  * Timeframe: 5 Minutes
+  * Expected result: Vue script that displays HTML elements based on input values.
+
+===== Learning objectives =====
+  - Explaining the The directive //v-if// in your own word.  
+  - Manipulating simple DOM elements based on the directive //v-if//
+
+===== Source =====
+  * [[https://www.w3schools.com/vue/tryit.php?filename=tryvue_v-if_typewriters |Code-example: v-if directive src]]
+
+===== Assignment ======
+In the script area of the W3-School example (link above) you will find a variable //typewritersInStock// with the value //true//. In the html area of the same script there will be decided, what is supposed to happen in which case. In the //true-case// there are typewriters on stock, and in the else-case (v-else) they are not. 
+
+
+  - Change the value of the variable //onStock// to //false// and run the script. 
+  - Note your realisations as a html-comment!
+  - Save your script acoordingly, whether in your W3School workspace or on you local computer in your code-editor Webstorm.
+
+
+===== Solution =====
+[[en:modul:m291:learningunits:lu05:loesungen:07|Lösung]]
+
+===== Vocabulary =====
+^ English ^ German ^ 
+| ... | ... |
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

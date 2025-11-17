@@ -32,7 +32,7 @@ Diese Grundstruktur ist für unsere Zwecke noch nicht optimal:
 Ändern Sie die Spracheinstellung in der Vorlage zu Deutsch ''lang="de" '' oder Schweizerdeutsch ''lang="de-CH" ''.
 Sie finden die Vorlage in den Einstellungen unter **Editor => File and Code Templates => HTML File**.
 
-Stellen Sie ein, ob Webstorm single quotes oder double quotes generiert.
+Stellen Sie ein, das Webstorm **double quotes** generiert.
 Die Einstellung **Generated quote marks** finden Sie unter Editor => Code Style => HTML => Other
 
 <WRAP center round tip 60%>

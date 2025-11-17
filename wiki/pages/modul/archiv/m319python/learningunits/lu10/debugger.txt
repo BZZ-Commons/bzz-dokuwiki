@@ -75,7 +75,7 @@ Die markierte Zeile ist noch nicht ausgeführt worden. Das Programm wartet jetzt
 Da die findAverage-Methode noch nicht aufgerufen wurde, sind alle ihre lokalen Variablen wie result noch nicht im Gültigkeitsbereich, aber wir können den Inhalt der ArrayList untersuchen. 
 Sie können auch Informationen über alle Variablen abrufen, die sich derzeit im Gültigkeitsbereich befinden, und zwar im Bereich Variablen.
 
-{{:modul:m319:learningunits:lu09:variablenexplorer.png?600|}}
+{{de:modul:m319:learningunits:lu09:variablenexplorer.png?600|}}
 
 ===== Schritt für Schritt durch das Programm﻿ =====
 

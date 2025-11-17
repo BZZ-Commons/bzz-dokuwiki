@@ -1,0 +1,20 @@
+====== LU09.A09: Skiurlaub modellieren ======
+
+===== Rahmenbedingungen =====
+
+  * Sozialform: Einzelarbeit/Partnerarbeit
+  * Zeitbudget: 30 Minuten
+  * Hilfsmittel: Unterrichtsunterlagen
+  * Abgabe: PDF mit Lösung des Geschäftsprozesses in der BPMN-Notation.
+
+
+===== Ausgangslage =====
+Sie haben einiges über die BPMN-Notation gehört und kennen die wichtigen Regeln und Symbole. Mit dieser Technik können alle Arten von Geschäftsprozessen modelliert werden.
+
+===== Arbeitsauftrag ===== 
+Geschäftsprozesse finden wir nicht nur in der Geschäftswelt, sondern auch im Privatleben. Erstellen Sie für den folgenden Sachverhalt ein Kollaborationsdiagramm mit der Business Process Model and Notation:
+
+
+==== Vorgaben ====
+Der Planer hat Lust auf Skiurlaub und setzt einen Termin fest. Er fragt seine Freunde und sucht gleichzeitig ein Reiseziel. Die Freunde prüfen ihre Verfügbarkeit und melden diese an den Planer zurück. Spätestens nach 2 Tagen fragt er eine Unterkunft an, auf der Basis der derzeitigen Anzahl an Ruckmeldungen. Wenn die Anfrage bei der Unterkunft angekommen ist, prüft diese die Verfügbarkeit. Sind keine Zimmer vorhanden, wird eine Absage zum Planer gesendet, der zunächst eine neue Unterkunft aussucht und dann eine neue Unterkunft anfragt. Sind Zimmer verfügbar, so wird ein Angebot zum Planer gesendet. Dieser informiert seine Freunde über das Reiseziel und die Kosten und wartet nachfolgend auf das Geld der Freunde. Sobald er von allen Freunden, die mitfahren, das Geld hat, überweist er dieses an die Unterkunft und wartet nun auch auf die Bestätigung. Hat die Unterkunft das Geld erhalten, erstellt sie die Bestätigung, welche dem Planer übermittelt wird. Hat der Planer schliesslich die Bestätigung erhalten, können alle gemeinsam in den Urlaub fahren.
+

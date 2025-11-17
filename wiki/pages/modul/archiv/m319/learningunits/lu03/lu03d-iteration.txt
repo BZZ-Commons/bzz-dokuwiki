@@ -5,13 +5,13 @@
 Eine Iteration ist die Wiederholung eines Programmteils.
 
 
-| {{:modul:m319:learningunits:lu03:pap_iteration.png|}} |Sie besteht aus  \\ * einer Bedingung, die prüft ob der Programmteil (nocheinmal) durchgeführt werden soll  \\ * Den Anweisungen, die mehrmals durchgeführt werden sollen \\ * einem Pfeil der zurückführt, wenn die Bedingung erfüllt ist  \\ * einem Pfeil der weiterführt, wenn die Bedingung nicht mehr erfüllt ist  \\ Eine Iteration hat immer zwei Nachfolger, einen ersten innerhalb der Iteration und einen zweiten nach Abschluss der Iteration.  |
+| {{de:modul:m319:learningunits:lu03:pap_iteration.png|}} |Sie besteht aus  \\ * einer Bedingung, die prüft ob der Programmteil (nocheinmal) durchgeführt werden soll  \\ * Den Anweisungen, die mehrmals durchgeführt werden sollen \\ * einem Pfeil der zurückführt, wenn die Bedingung erfüllt ist  \\ * einem Pfeil der weiterführt, wenn die Bedingung nicht mehr erfüllt ist  \\ Eine Iteration hat immer zwei Nachfolger, einen ersten innerhalb der Iteration und einen zweiten nach Abschluss der Iteration.  |
 
 
 **Beispiel: Zählen** 
 
 
-| {{:modul:m319:learningunits:lu03:pap_zaehlen_kopf.png|}}| In diesem Beispiel gibt der Benutzer eine Zahl ein. \\ Vor jedem Durchlauf der Iteration wird geprüft, ob die Zahl noch kleiner als 100 ist. Solange die Bedingung erfüllt ist, wird die Zahl um 1 erhöht. |
+| {{de:modul:m319:learningunits:lu03:pap_zaehlen_kopf.png|}}| In diesem Beispiel gibt der Benutzer eine Zahl ein. \\ Vor jedem Durchlauf der Iteration wird geprüft, ob die Zahl noch kleiner als 100 ist. Solange die Bedingung erfüllt ist, wird die Zahl um 1 erhöht. |
 
 
 === Kopfgesteuerte Iteration ===
@@ -24,7 +24,7 @@ Merke: Bei einer Kopfgesteuerten Schleife wird, sofern die Bedingung schon bei B
 
 === Fussgesteuerte Iteration ===
 
-| {{:modul:m319:learningunits:lu03:pap_zaehlen_fuss.png|}} | Bei einer fussgesteuerten Iteration wird zuerst der Inhalt einmal durchgeführt. Erst danach wird geprüft, ob der Inhalt noch einmal durchgeführt werden soll.  \\   \\ Die Bedingung dieser Iteration beginnt mit "Bis …". |
+| {{de:modul:m319:learningunits:lu03:pap_zaehlen_fuss.png|}} | Bei einer fussgesteuerten Iteration wird zuerst der Inhalt einmal durchgeführt. Erst danach wird geprüft, ob der Inhalt noch einmal durchgeführt werden soll.  \\   \\ Die Bedingung dieser Iteration beginnt mit "Bis …". |
 | ::: | Im Beispiel würde diese fussgesteuerte Iteration auch dann durchgeführt, wenn der Benutzer eine Zahl grösser/gleich 100 eingibt. |
 
 

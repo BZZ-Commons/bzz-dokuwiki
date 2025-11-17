@@ -1,0 +1,19 @@
+====== L01.L01 - Aufbau einer URL ======
+
+
+===== Aufgabe 1 =====
+
+1.
+^ Protokoll (Scheme) ^ 3rd-Level-Domain / www ^ 2nd-Level-Domain ^ Top-Level-Domain ^ Pfad ^ Datei ^
+| <code>http://</code> | <code>www</code> | <code>mydomain</code> | <code>com</code> | <code>bilder</code> | <code>foto.jpg</code> |
+
+2.
+^ Protokoll (Scheme) ^ 3rd-Level-Domain / www ^ 2nd-Level-Domain ^ Top-Level-Domain ^ Pfad ^ Datei ^
+| <code>file://</code> | <code>www</code> | <code>example</code> | <code>ch</code> | <code>2018/audo</code> | <code>meinemusik.mp3</code> |
+
+===== Aufgabe 2 =====
+
+  - http://www.erlebnisse.ch/2018/reisen/schweiz/bild1.jpg
+  - http://www.erlebnisse.ch/2018/reisen/bild2.jpg
+  - http://www.erlebnisse.ch/2018/bild3.jpg
+  - http://www.erlebnisse.ch/bild4.jpg

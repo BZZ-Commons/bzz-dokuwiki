@@ -1,0 +1,59 @@
+====== LU07b - Methods with arguments ======
+
+===== Learning ojectives =====
+  - Write own parameterised methods.
+  - Make use of methods which expects parameters.
+
+===== Source =====
+[[http://https://www.w3schools.com/vue/vue_methods.php|W3Schools | Methods - Chapter: Passing arguments]]
+
+===== Introduction to Vue Methods =====
+This lesson is about writing and using methods which can process parameters. These parameters are called **arguments of a method**. Parametrisided methods enable web-application to behave more dynamic and user-friendly. 
+
+===== Example 1: Method with one parameter =====
+The following example calls a method when pushing a button. This event passes a message to be displayed as an argument to the method.
+ 
+  <template>
+    <div>
+      <button @click="sayHello('Alice')">Greet Alice</button>
+    </div>
+  </template>
+
+  <script>
+  export default {
+    methods: {
+      sayHello(name) {
+        alert(`Hello, ${name}!`);
+      }
+    } 
+  }
+  </script>
+
+
+===== Example 2: Multiple parameters =====
+This method-example has two arguments, and is supposed to calculate the sum of two numnbers. The result will be displayed in a alert-box.
+
+  <template>
+    <div>
+      <button @click="addNumbers(5, 3)">Add 5 + 3</button>
+    </div>
+  </template>
+
+  <script>
+    export default {
+      methods: {
+        addNumbers(a, b) {
+          alert(`The sum is ${a + b}`);
+        }
+      }
+    } 
+  </script>
+
+===== Vocabulary =====
+^ English ^ German ^ 
+| ... | ... |
+| ... | ... |
+| ... | ... | 
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

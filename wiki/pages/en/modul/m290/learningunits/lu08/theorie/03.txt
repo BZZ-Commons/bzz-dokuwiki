@@ -1,0 +1,29 @@
+====== LU10b - Server-Programing with JavaScript ======
+
+===== Learning Objectives =====
+  - Programing our first Node Server application "hello world"
+  - Know how to start the server application
+  - Generate a terminal message
+
+===== HelloWorld.js =====
+At the beginning of each programer's carreer there is always our notorious "Hello World". Why changing good habits? Let us also greet the world with a first server script.
+
+  - For that we need to create in our Webstorm a new JavaScript file with the title "helloWorld". Please note, that the file ending will be set as "js", if you choose the right file type.
+  - Furthermore we generate a console output with the js command: //console.log//. The entire line looks then like: console.log('Hello World!');
+
+In the lower part of Webstorm you can open a terminal window to start the mini-server-application. A node server is always started with the commande **node + servername.js**. In our case it is **node helloworld.js**, which generates the console output, just as we intended.
+
+{{:modul:m290:learningunits:lu08:theorie:a6.png?800|}}
+
+
+
+
+
+
+
+==== Vocabulary ====
+^English ^ Deutsch ^
+| notorious| berüchtigt |
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

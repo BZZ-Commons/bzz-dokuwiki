@@ -1,0 +1,196 @@
+====== LU02g - LB3 - Projektbeschreibungen ======
+
+===== Projekt A - 1: Absenzensystem =====
+==== Ausgangslage ====
+Die Absenzen des BZZ werden vollständig elektronisch in einer Microsoft Sharepoint-Implementierung verwaltet. Durch die Einführung des neuen Systems, konnte sich das Sekretariat des BZZ vermehrt auf das Kerngeschäft konzentrieren, und dadurch die wachsende Zahl der Lernenden mit dem gleichen Personalstamm administrieren. Das aktuelle Absenzensystem des BZZ finden Sie unter: [[https://absenzen.bzz.ch| BZZ Absenzen-System]]. Aufgrund eines Wechsels des Software-Dienstleisters ergab sich die unglückliche Situation, dass die bestehende Anwendung //reengineered//, d.h. neu programmiert werden musste. 
+==== Auftrag ====
+Erstellen Sie einen Prototypen einer neuen Version des Absenzensystems, da die Bestehende  mittelfristig ersetzten soll. Es ist wichtig, dass die bestehenden Funktionalitäten erhalten bleiben. Stellen Sie sicher, dass Sie die Applikation aus der Sicht der Lehrperson programmieren.
+==== UseCases ====
+  - Die Lehrperson kann sich mit User und Passwort authentifizieren (Login). 
+  - Weitere persönlichen Daten zur Lehrpersonen müssen speicherbar sein. 
+  - Absenzen werden auf die Klasse und das Datum durchgeführt, wobei jeder/r Lernende/r den einzeln ausgewählt mit den entsprechenden Status belegt werden kann
+  - Bei den Absenzen kann pro Lernenden und Tag eine Kommentar eingefügt werden.
+  - Im System werden die üblichen persönlichen Daten der Lernenden gespeichert.
+  - Vergangene Absenzen können pro Klasse und Datum angezeigt werden.
+  - Lehrpersonen können die Absenzen-Historie pro Lernenden aufrufen
+  - Prüfen der Lauffähigkeit
+  - Instanzen/Inhalt anzeigen lassen
+  - Die Anzeige der vergangenen Absenzen wird nach Datum und nach Fach, auf- und absteigend sortiert.
+  - Ein/e Lernende/r kann in verschiedenen Klasse sein. 
+  - Eine Klasse kann bis zu 24 Lernenden enthalten.
+
+===== Projekt B - 2: Dispensen-System =====
+==== Ausgangslage ====
+Die Abwesenheiten im BZZ werden vollelektronisch verwaltet, was zu einer massiven Effizienzsteigerung im Sekretariat geführt hat. Die Verwaltung der Dispensationen, d.h. der für die Zukunft geplanten Abwesenheiten, ist hingegen nach wie vor halb-digital gelöst und daher eher als aufwändig zu bezeichnen. Das Aktuelle Dispensationsformular finden Sie hier:[[ https://www.bzz.ch/dispensationsgesuch/| BZZ-Dispensen]]
+==== Auftrag ====
+Erstellung eines Prototyps für ein digitales Dispenssystem, das den Verwaltungsprozess für Lernende und Lehrende verbessert und beschleunigt.
+==== UseCases ====
+  - Die Eingabedaten des bisherigen Eingabeformulars müssen auch im zukünftigen System zur Verfügung stehen.
+  - Es können Dispensen pro Person und mit allen Details ausgegeben werden.
+  - Das System bietet eine Auswahl an möglichen gültigen Begründungen an.
+  - Jede Dispens kann kommentiert werden.
+  - Es können weitere Dispensen angelegt werden.
+  - Aktuell anstehende Dispensen können gelöscht werden.
+  - Vergangene können nicht gelöscht werden. 
+  - Dispensen, die in der Warteschlange stehen, können noch bearbeitet werden.
+  - Die Anzeigesortierung der vergangenen Dispensen pro Person kann nach Datum und Fach, sowohl in aufsteigender, wie auch in absteigender Reihen folge ausgegeben werden. 
+
+===== Projekt C - 3: Stundenplan =====
+==== Ausgangslage ====
+Am BZZ werden zur Zeit ca. 2'000 Lernende ausgebildet, mit der Tendenz steigend. Konkret sind es über 100 Klassen, die wissen wollen, wann, in welchem Raum und bei welcher Lehrperson sie Unterricht werden. Die bisherige Applikation [[https://webuntis.com/|Webuntis Stundenplan-Application]] ist teuer, sodass eine eigene Entwicklung eine Kostenreduktion verspricht. 
+==== Auftrag ====
+Erstellen Sie im Rahmen einer Feldstudie einen Prototypen einer Applikation, die mit dem bestehenden System in Konkurrenz steht. Ihre Aufgabe besteht also darin, einen Prototyp zu programmieren, der einen Stundenplan verwalten kann.
+==== UseCases ====
+  - Der Stundenplan kann pro User wochenweise (Kalenderwochen oder Wochen-Zeitraum) angezeigt.
+  - Die Stunden enthalten die Informationen: Fach, Raum, Klasse und Lehrer.
+  - Detaildaten zu den Fächern, Räumen, Klassen und Lehrpersonen und Lehrpersonen können im System verwaltet werden.
+  - Der Stundenplan kann pro Klasse wochenweise angezeigt werden.
+  - Lehrpersonen können zusätzliche Lektionen anlegen.
+  - Aktuellen Stundenpläne können nicht mehr gelöscht werden.
+  - Zukünftige Stundenplaneinträge können geändert werden.
+  - Zukünftige Stundenpläne können gelöscht werden.
+
+===== Projekt D - 4: Ressourcenverwaltung =====
+==== Ausgangslage ====
+Rund 2'000 Lernende in über 100 Klassen werden aktuell am BZZ unterrichtet, das auch den praktischen Unterricht beinhaltet., wofür das BZZ technische Lehrmittel bereit stellt. Aufgrund der hohen Schülerzahl und den damit verbundenen Administrationsaufwand, hat sich die Schulleitung entschieden, diese Ressourcen in einer Webapplikation Applikation zu verwalten. Unter Ressourcen verstehen wir Laptopwagen, Präsentationskoffer, Sportgeräte, Kameras, Mikrofone, etc.
+==== Auftrag ====
+Erstellen Sie ein Prototypen einer digitalen Ressourcenverwaltung, die für die Lernenden, wie auch für die Lehrpersonen, den Administrationsprozess besser und schneller macht. 
+==== UseCases ====
+  - Für jeden Benutzenden werden alle bestehenden Reservationen in einer Liste angezeigt. 
+  - Zu jeder Reservation wird der Ausleih-Personenname, Verantwortlichen-Name, Reservation-Start, Reservations-Ende, Reservations-Dauer und Produkttitel inkl. Kategorie angezeigt bzw. erfasst.
+  - Die bestehenden Ressourcen sind sinnvoll kategorisiert.
+  - Zukünftige Buchungen können geändert werden.
+  - In der Vergangenheit liegende Reservationen können nicht gelöscht werden.
+  - Jede Ressource muss eindeutig identifizierbar sein mit Nummer, Ort, Verantwortlichem, Kategorie. 
+  - Es ist möglich, einen Kommentar zu der Reservierung hinzuzufügen.
+  - Die Anzeige der vergangenen Reservationen kann nach Datum und nach Art / Kategorie in auf- und absteigend erfolgen.
+
+===== Projekt E - 5: EFZ-Zeugnis =====
+==== Ausgangslage ====
+Die Ausbildung der Mediamatiker/innen und Informatiker/in in der Schweiz ist modular aufgebaut, wobei jedes Modul 40 Lektionen umfasst. Die Module sind in sich abgeschlossen, d.h. im Bereich der Fachausbildung ohne Abschlussprüfung. Mit dem erfolgreichen Abschluss der erforderlichen Module ist die berufliche Grundbildung abgeschlossen. Am Ende jedes Semesters wird das EFZ-Zeugnis aktualisiert: Die Lernenden sehen, welche Module sie bisher mit welcher Note abgeschlossen haben und welche Module noch ausstehen.
+==== Auftrag ====
+Programmierung einer Anwendung, die in der Lage ist, das EFZ-Zertifikat zu verwalten. D.h. Ihr Auftrag ist es eine Notenverwaltung zu programmieren, die die einzelnen Modulnoten und den aktuellen Notendurchschnitt der Lernenden berechnen kann.
+==== UseCases ====
+  - Pro Lernenden gibt es ein EFZ-Zeugnis.
+  - Jeder Noteneintrag ist einem Semester zu geordnet.
+  - Die Ansicht des "elektronischen Zeugnis" entspricht im Aufbau dem Print-Exemplar
+  - Die verfügbaren Lernenden werden in einer Übersichts-Liste, Klassenweise angezeigt.
+  - Jedes Zeugnis hat ein Ausstellungsdatum mit dem Datum der letzten Aktualisierung.
+  - Zeugnisse können 10 Jahre nach der Ausstellung gelöscht werden.
+  - Zeugnisnoten können verändert werden.
+  - Einzutragen Notenwerte halbnotenweise 1.0 bis 6.0, im Abstand 0.5
+
+===== Projekt F - 6: BZZ-Immobilienverwaltung =====
+==== Ausgangslage ====
+Das BZZ besteht aktuell aus 2 Standorten: Horgen und Stäfa. Da die Schülerzahlen steigend sind, ist es möglich, dass ein dritter Standort BZZ Horgen Oberdorf hinzukommt, um die Platzknappheit teilweise zu kompensieren.
+==== Auftrag ====
+Programmieren Sie eine Applikation, die Räumlichkeiten dieser drei Standorte administrieren kann. 
+==== UseCases ====
+  - Jede Reservierung benötigt User, Raum, Zeit, Begründung.
+  - Pro User werden alle bestehenden Reservationen in einer Liste angezeigt.
+  - Die verfügbaren Räume werden angezeigt: Raumnummer, Typ (IT, Standard, Besprechungsraum, ...) und Kapazität.
+  - Zukünftige Reservationen können geändert werden.
+  - Vergangene Reservierungen können nicht gelöscht werden.
+  - Jede Immobilie muss eindeutig identifizierbar sein (Nummer, Standort, Verantwortlicher, Kategorie).
+  - Die Reservation kann kommentiert werden.
+  - Die Anzeige der vergangenen Reservationen kann nach Datum und nach Art/Kategorie auf- und absteigend sortiert werden.
+  - Pro Raum werden die verfügbaren/freien Zeiten angezeigt.
+
+===== Projekt G - 7: Kantina =====
+==== Ausgangslage ====
+Die Mittagszeit am BZZ ist für alle Beteiligten eine grosse Herausforderung. Die Gäste müssen oft lange anstehen, die angestellten müssen in einem knappen Zeitfenster alle vorgekochten oder bestellten Menues bereitstellen, was letztendlich zu Anspannung und zu Zeitverlust auf allen Seiten führt.
+==== Auftrag ====
+Um die Geschäftsprozesse rund um die Cantina besser verwalten zu können, braucht der Leiter der Cantina ein Instrument um schnell und einfach seine tägliche Arbeit erledigen zu können. Erstellen Sie einen Protoypen, der die Cantina im alltag unterstützt.
+==== UseCases ====
+  - Es soll möglich sein einen wöchentlichen Menüplan zu erstellen.
+  - Die App soll individuellen und kulturellen Aspekten berücksichtigen. Beispiel: egetarier, Moslems, Veganer, Weight-Watchers, etc. 
+  - Der Menüplan soll Teilaspekte wie Budgetierung, Bestellung und Lieferantenverwaltung berücksichtigen. 
+  - Zukünftige Menüpläne können gelöscht werden.
+  - Vergangene Menüpläne können nicht mehr gelöscht werden
+  - Alte Menüpläne sollen archiviert werden können.
+  - Zukünftige Menüpläne sollen verändert werden könen.
+
+===== Projekt H - 8: Mediothek =====
+==== Ausgangslage ====
+In der BZZ Mediothek sind Medien aller Art erhältlich. Hier kann man Comics ebenso ausleihen wie auch Fachbücher über Mathematik, oder Videos zu geschichtlichen Ereignissen. All diese Vielzahl von Medien und deren Verleih muss mittels Software administrierbar sein.
+==== Auftrag ====
+Erstellen Sie eine Software, die es ermöglicht Medien zu erfassen und zu Verleihen. 
+==== UseCases ====
+  - Die Medien sind kategorisierbar, z.B. DVD, BR-DVD, Audio-CD, Audio-Book, E-Book, Book, etc.
+  - Die User loggen sich mit User und Passwort ein.
+  - Es können nur BZZ-Angehörige (Lernende, Administration, Lehrpersonen) Medien ausleihen.
+  - Neue Medien können erfasst und kategorisiert werden. 
+  - Es kann nach Medien gesucht werden.
+  - Die Treffermenge wird in einer Listenansicht angezeigt.
+  - Wichtige Informationen wie Lagerort, Autor, Titel werden bei der Listenansicht angezeigt.
+  - Es gibt eine Detailansicht jedes Mediums mit allen verfügbaren Informationen zum Medium.
+  - Die Medien werde einem Themenschwerpunkt bzw. Fach/Modul zugeordnet.
+
+===== Projekt I - 9: Materialverwaltung =====
+==== Ausgangslage ====
+Am BZZ Horgen werden verschiedeneste Berufsgruppen ausgebildet. Um eine möglichst praxisnahe Ausbildung garantieren zu können, werden den Lernenden bzw. Lerpersonen Unterrichtsmaterialien wie Cameras, Mikrofone, Tripods, Fotoblitze, Notebooks, Notebook-Wägen, Präsentationskoffer, etc. zur Ausleihe angeboten. Die bisherige semi-analoge Variante über Excel-Tabellen war fehleranfällig und Gerätgebunden, und soll daher durch eine WebApplikation abgeklöst werden.
+==== Auftrag ====
+Planen und programmieren Sie den Prototypen einer WebApplikation, die in der Lage ist die vom BZZ angebotenen Medien und deren Verleih zu administrieren.
+==== UseCases ====
+  - Die Medien sind kategorisierbar, z.B. Fotocamera, Videocamera, Tripod, Blitz, Windows-Notebook, Mac-Notebook, .....
+  - Die User loggen sich mit User und Passwort ein.
+  - Es können nur BZZ-Angehörige (Lernende, Administration, Lehrpersonen) Geräte ausleihen.
+  - Neue Medien können erfasst und kategorsiert werden. 
+  - Zu jedem Gerät wird der Lieferumfang mit erfasst. Beispiel: Eine Fotokamera wird mit einer SD-Speicherkarte und einer Cameratasche geliefert.
+  - Es kann nach Materialien gesucht werden.
+  - Die Treffermenge wird in einer Listenansicht angezeigt.
+  - Wichtige Informationen wie Lagerort, Autor, Titel werden bei der Listenansicht angezeigt.
+  - Es gibt eine Detailansicht jeder Materiali mit allen verfügbaren Informationen. 
+
+===== Projekt J - 10: Unternehmenskalender =====
+==== Ausgangslage ====
+Um den Unterricht besser vorbereiten und planen zu können, bietet das BZZ eine Jahreskalender an: https://www.bzz.ch/schulbetrieb/kalender/. Hier sind alle Termine, die für das BZZ relevant sind, aufgeführt. Die aktuelle Version ist HTML-basiert und daher wenig flexible, soll also folglich durch eine dynamische WebApplikation ersetzt werden.
+==== Auftrag ====
+Planen und erstellen Sie ein Kalendertool, das die Terminverwaltung des BZZ erledigt.
+==== UseCases ====
+  - Es gibt eine Listenansicht, die für die Öffentlichkeit bestimmt ist.
+  - Einträge können nur mit bestehenden User angelegt werden.
+  - Die Einträge sind den Abteilungen Abteilungen zuordenbar.
+  - Es werden nur Termine angezeigt, die aktuell sind oder in der Zukunft liegen.
+  - Die bisherige Listenansicht mit den besthenden Spalten soll übernommen werden.
+  - Es kann nach Abteilung und Titel, auf und absteigend sortiert werden.
+  - Zukünftige Termine können verwändert werden.
+  - Zukünftige Termine können gelöscht werden.
+  - Zukünftige Termine haben eine Freigabestatus, sprich sie werden nur dann in der öffentlichen Ansicht angezeigt, wenn Sie den Status FREIGABE haben.
+
+===== Projekt K - 11: BMS/ABU-Zeugnis =====
+==== Ausgangslage ====
+Die Ausbildung in Mediamatik in der Schweiz ist modular aufgebaut. Neben der Fachkunde allerdings, erhalten die Lernenden auch eine Ausbildung in Allgemeinbildung bzw. können die BMS besuchen. Mit Letztere können Sie nach der Ausbildung die Fachhochschule besuchen.
+==== Auftrag ====
+Programmieren Sie eine Applikation, die das Standard-Noten- bzw. BMS-Zeugnis administrieren kann. Sprich sie sollen eine Notenverwaltung programmieren, die Ihnen die einzelnen Fachnoten und den aktuellen Notenschnitt ausrechnen kann. Die Applikation ist aus Sicht des Sekretariats zu erstellen.
+==== UseCases ====
+  - Pro Lernenden gibt es ein Zeugnis.
+  - jeder Noteneintrag ist einem Semester zu geordnet.
+  - Das Zeugnis-Ansicht muss dem Print-Exemplar entesprechen.
+  - Die verfügbaren Lernenden werden in einer Übersichts-Liste, Klassenweise angezeigt.
+  - Jedes Zeugnis hat ein Aussstellungsdatum mit dem Datum der letzten Aktualisierung.
+  - Zeugnisse können 10 Jahre nach der Ausstellung gelöscht werden.
+  - Zeugnisnoten können verändert werden.
+  - Einzutragen Notenwerte halbnotenweise 1.0, 1.5, ... 6.0
+
+===== Projekt L - 12: Reisemanagement =====
+==== Ausgangslage ====
+Reisen ist für viele Personen ein Hobby. Es ist spannend zu die Reisedaten in geeigneter Form administrieren zu können. 
+==== Auftrag ====
+Erstellen Sie ein Tool, das die Administration von vergangenen, anstehenden und zukünftigen Reisen ermöglicht.
+==== UseCases ====
+  - Das System ist mandantenfähig 
+  - Die Autorisierung und Autentifikation geschieht mit USER und PASSWORD.
+  - Es gibt eine Listenansicht, die für die Öffentlichkeit bestimmt ist.
+  - Reise-Einträge können öffentlich oder privat geschaltet werden.
+  - Reise-Einträge können nur mit bestehenden User angelegt werden.
+  - Jede Reise enthält die nachvollgenden Daten: Datum, Dauer, Zielland, Zielkontinent, SOLL-Kosten, IST-Kosten, Bewertung, Kommentar
+  - Zukünftige Reisen können verändert werden.
+  - Zukünftige Reisen können gelöscht werden.
+  - Vergangene Reisen können nicht mehr verändert oder gelöscht werden.
+  - Vergangene Reisen können archiviert werden.
+  - Archivierung ist nur möglich mit einer 5 Sterne Bewertung und einem Kommentar.
+
+----
+{{tag>M290-LU01}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

@@ -1,0 +1,54 @@
+====== LU05.A20 - Knowledge Transer to Webstorm  ======
+
+===== Pre-requisites  =====
+  * Work type: Individual
+  * Means of aid: only teaching materials, no websearch, no use of ai.
+  * Timeframe: 70 Minutes
+  * Expected result: TheVUE-Script 2 to 18 are transfered to Webstorm in the required directory structure. 
+
+===== Learning objectives =====
+  * Know how to write and execute a VUE SFC in Webstorm
+
+===== Source =====
+You can take your solutions from assigmnent 2 to 18. Elsewise download the official solutions from the solution page of the assignment, but add the insight to the code as source code comments.
+
+===== Assignment  ======
+Programming within an emulator e.g. **W3School | VUE** is nice, but not really programming. Thus, we need to transfer our script to the Webstorm code-ditor. **Please note, that this assignment is noot only a mere task, but also a preparatory work for the LB2.**
+
+  - Create a directory **media** and safe the requiered images in it.
+  - Transfer your solutions from the assignments 2 to 18 to the Webstorm code-editor
+  - Remember a simple best-practise: Test every script before proceeding with the next one.
+  - Use the following directory structure 
+      - **01_v-bind**: assignment 2 - 6
+      - **02_v-if**: assignment 7 - 11
+      - **03_v-show**: assignment 12 - 14
+      - **04_v-for**: assignment 15 - 17
+      - **05_combined**: assignment 18
+  - Make sure, that each solution is properly named after the assignment (e.g. **lu05.s10.html**) and the name of the assignment is displayed as <h1>
+  - Delete all unnecessary code-parts.
+  - **Test the correctness** of the transfer by executing the script (Browser Button on the right upper corner of the window).
+  - if not already done, **add comments** as HTML or JS notation to note down important insights to your code
+  
+
+{{:en:modul:m291:learningunits:lu05:aufgaben:lu05.s20.png|directory structure as expected }}
+
+===== Vocabulary =====
+^ English ^ German ^ 
+| insight | Einsicht, Einblick |
+| mere | bloss, nur ein ... |
+| thus | folglich, somit |
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir
+
+===== Solution =====
+[[en:modul:m291:learningunits:lu05:loesungen:20|Lösung]]
+
+===== Vocabulary =====
+^ English ^ German ^ 
+| emulator | Nacheiferer, Testumgebung |
+
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

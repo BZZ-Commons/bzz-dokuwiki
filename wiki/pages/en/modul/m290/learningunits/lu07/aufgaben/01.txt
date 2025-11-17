@@ -1,0 +1,54 @@
+====== LU08.A01 - Preparatory work ======
+
+===== Requirements  =====
+  * Work type: Individual
+  * Timeframe: 10 Minutes
+  * Means of aid: 
+      * Only teaching materials, no websearch, no use of ai.
+  * Expected result: 
+    * Conduct the database schema (instance) as foundation for our employee's data.
+    * Establishment of a MySQL **table employees** including all relevant attributes.
+
+===== Assignments =====
+
+==== A: DATA SCHEMA ====
+First of all we need a database schema (database workspace). Execute the following two lines on your MySQL installation.
+
+  CREATE DATABASE hr_database;
+  SHOW DATABASES;
+  USE hr_database;
+
+==== B: CREATE TABLE ====
+To exercise the DML commands, we need a suitable table including a reasonable amout of data. The following SQL statement will create a table **employee** regarding all necessary attributes of an "average employee".
+
+  CREATE TABLE EMPLOYEES (
+    employee_ID INT PRIMARY KEY,       -- Employee ID as the primary key
+    name VARCHAR(50) NOT NULL,         -- Name of the employee (max length 50 characters)
+    surname VARCHAR(50) NOT NULL,      -- Surname of the employee (max length 50 characters)
+    birthdate DATE NOT NULL,           -- Birthdate of the employee
+    sex CHAR(1),                       -- Sex of the employee (M/F/O for other)
+    pronomen VARCHAR(10),              -- Pronoun of the employee
+    employment_date DATE NOT NULL,     -- Date when the employee was hired
+    salary DECIMAL(10, 2) NOT NULL,    -- Salary of the employee (up to 10 digits, 2 decimal places)
+    department VARCHAR(50) NOT NULL    -- Department where the employee works
+  );
+
+**Explanation**
+  - **employee_ID** is the primary key and ensures that each employee has a unique ID.
+  - **name** and **surname** are 'VARCHAR' fields that store the name and surname of the employee.
+  - **birthdate** and **employment_date** use the 'DATE' data type to store the birth and employment dates.
+  - **sex** is stored as a 'CHAR(1)' type to represent gender with one letter ('M' for male, 'F' for female, etc.).
+  - **pronomen** stores the employee's pronouns.
+  - **salary** is stored as a 'DECIMAL' value to account for financial precision.
+  - **department** is a VARCHAR(50) field that stores the name of the department the employee is associated with. It has a NOT NULL constraint to ensure that every employee is assigned to a department.
+
+===== Solution =====
+[[modul:m290:learningunits:lu07:loesungen:l01|Lösung]]
+
+===== Vocabulary =====
+^ English ^ German ^ 
+| preparatary work | Vorarbeit |
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

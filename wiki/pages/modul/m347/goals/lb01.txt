@@ -1,0 +1,62 @@
+====== Lernziele LB01 ======
+\\
+\\
+====== LU01a - Einführung in Dienste mit Containern ======
+===== Ziele =====
+  -Ich kann den Begriff ''Container'' beschreiben.
+  -Ich kann eine Definition von ''Container'' angeben.
+  -Ich kann die Vorteile von Dienste mit Containern aufzählen.
+  -Ich kann aufzählen, wofür Container verwendet werden (Anwendungsfelder).
+\\
+====== LU01b - Virtual Machines vs Container ======
+===== Ziele =====
+  -Ich kann die Begriffe Physical Server, Virtual Machines vs Container anhand einer Grafik beschreiben und deren Unterschiede in eigenen Worten erklären.
+  -Ich kann konkrete Produkte und Software zu den einzelnen Schichten eines Physical Servers, einer Virtual Machine und einem Container zuordnen und bezeichnen.
+\\
+====== LU01c - Docker-Architecture ======
+===== Ziele =====
+  -Ich kann die wesentlichen Schritte von der Docker-Datei bis zum laufenden Container aufzählen.
+  -Ich kann den grundlegende Syntax einer Docker-Datei beschreiben.
+  -Ich kann die grundlegenden Komponenten von Docker aufzählen.
+\\
+====== LU01d - Dockerfile anpassen und ausführen ======
+===== Ziele =====
+  -Ich kann die demonstrierten Bereiche einer Docker-Datei nachvollziehen und in eigenen Worten beschreiben.
+  -Ich kann mindestens eine Massnahme bei Fehler im Build- oder Run-Prozess vorschlagen und umsetzen.
+
+\\
+====== LU02a - Unterschied ENTRYPOINT vs CMD ======
+===== Ziele =====
+  -Ich kann die Kommandos ''ENTRYPOINT'' und ''CMD'' beschreiben.
+  -Ich kann die unterschiedliche Anwendung von ''ENTRYPOINT'' und ''CMD'' beschreiben.
+  -Ich kann ''ENTRYPOINT'' und ''CMD'' in einem Docker-Datei gezielt anwenden.
+  -Ich kann mindestens eine Massnahme bei Fehler im Build- oder Run-Prozess vorschlagen und umsetzen.
+
+\\
+
+====== LU02b - Dockerfile anpassen und ausführen ======
+===== Ziele =====
+  -Ich kann die demonstrierten Bereiche einer Docker-Datei nachvollziehen und in eigenen Worten beschreiben.
+  -Ich kann mindestens eine Massnahme bei Fehler im Build- oder Run-Prozess vorschlagen und umsetzen.
+\\
+
+====== LU03a - App als Container publizieren ======
+===== Ziele =====
+  -Ich kann eine Webapp (Pyhton) lokal auf meinem Rechner testen.
+  -Ich kann eine Webapp (Pyhton) als Container publizieren.
+  -Ich kann den Container ''HEALTHCHECK'' konfigurieren.
+  -Ich kann den Container ''STOPSIGNAL'' konfigurieren.
+  -Ich kann die demonstrierten Bereiche einer Docker-Datei nachvollziehen und in eigenen Worten beschreiben.
+  -Ich kann mindestens eine Massnahme bei Fehler im Build- oder Run-Prozess vorschlagen und umsetzen.
+
+\\
+====== LU03b - Image pushen und pullen  ======
+===== Ziele =====
+  -Ich kann ein Image in meine ''Registry'' pushen und pullen
+  -Ich kann mindestens eine Massnahme bei Fehler im Build- oder Run-Prozess vorschlagen und umsetzen.
+
+\\
+====== LU03c - Python & Pip installieren ======
+===== Ziele =====
+  -Ich kann Python und pip zu Entwickung- und Testzwecken installieren
+  -Ich kann mindestens eine Massnahme bei Fehler vorschlagen und umsetzen.

@@ -1,0 +1,43 @@
+====== LU02a - Scrum Sprint ======
+
+
+Quelle: //[[https://scrumguides.org/docs/scrumguide/v2020/2020-Scrum-Guide-German.pdf]]//
+
+Das Herz von Scrum ist der Sprint, eine Time Box von maximal einem Monat, innerhalb dessen
+ein fertiges ("Done"), nutzbares und potenziell auslieferbares Produkt-Inkrement hergestellt
+wird. Alle Sprints innerhalb eines Entwicklungsvorhabens sollten die gleiche Dauer haben. Der
+neue Sprint startet sofort nach dem Abschluss des vorigen Sprints.
+
+Ein Sprint beinhaltet und umfasst das Sprint Planning, die Daily Scrums, die Entwicklungsarbeit,
+das Sprint Review und die Sprint Retrospektive.
+
+Während des Sprints:
+  * werden keine Änderungen vorgenommen, die das Sprint-Ziel gefährden,
+  * wird der Qualitätsanspruch nicht geschmälert, und
+  * der Anforderungsumfang kann zwischen Product Owner und Entwicklungsteam geklärt und neu ausgehandelt werden, wenn sich neue Erkenntnisse ergeben haben.
+
+Jeder Sprint kann als ein Projekt mit einem Zeithorizont von maximal einem Monat gesehen werden. 
+Wie mit einem Projekt will man mit einem Sprint etwas Bestimmtes erreichen. 
+Jeder Sprint hat einen definierten Leistungsumfang, einen Entwurf und einen flexiblen Plan, welche Umsetzung, Arbeit und Ergebnis in die richtige Richtung führen.
+Sprints sind auf einen Kalendermonat beschränkt. 
+Wenn der Zeithorizont eines Sprints zu groß gewählt wird, kann sich die Definition des Ergebnisses ändern, die Komplexität ansteigen und sich das Risiko erhöhen. 
+
+Sprints ermöglichen eine Vorhersagbarkeit, indem sie mindestens einmal im Monat Überprüfung und Anpassungen des Fortschritts zu einem bestimmten Sprint-Ziel ermöglichen. 
+Sprints reduzieren dazu noch das Risiko auf die Kosten eines Monats.
+
+==== Einen Sprint abbrechen ====
+
+Ein Sprint kann vorzeitig, d.h. vor dem Ablauf seiner Time Box, abgebrochen werden. 
+Dazu ist nur der Product Owner berechtigt, auch wenn er oder sie den Abbruch auf Anraten der Stakeholder, des Entwicklungsteams oder Scrum Masters vornimmt.
+Ein Sprint wird dann abgebrochen werden, wenn sein Sprint-Ziel obsolet wird. 
+Das kann vorkommen, wenn das Unternehmen seine Zielrichtung wechselt, oder sich andere Markt- oder technologische Rahmenbedingungen ändern. 
+In der Regel sollte ein Sprint dann abgebrochen werden, wenn die Fortführung unter den gegenwärtigen Umständen keinen Sinn mehr macht.
+Allerdings macht der Abbruch bei der kurzen Dauer der Sprints selten Sinn.
+
+Wenn ein Sprint abgebrochen wird, werden alle abgeschlossenen und "Done" Product Backlog-Einträge begutachtet. 
+Wenn ein Teil der Arbeit potentiell auslieferbar ist, wird sie vom Product Owner meistens abgenommen. 
+Alle unvollständigen Product Backlog-Einträge werden neu geschätzt und wieder in das Product Backlog aufgenommen. 
+Die bislang daran geleistete Arbeit verliert schnell an Wert, daher müssen diese Einträge häufiger neu geschätzt werden.
+
+Sprint-Abbrüche verbrauchen Ressourcen, da sich alle Teammitglieder zum Start des neuen Sprints in einem Sprint Planning neu finden müssen. 
+Sprint-Abbrüche sind zudem oft schmerzhaft für das Scrum Team; sie sind eher unüblich. 

@@ -1,0 +1,46 @@
+====== LU19e - Aufgabe 2 / Task 42: events ======
+
+===== Administration =====
+Füllen Sie die nachfolgenden Felder aus:
+
+**Klasse:** ....................................
+
+**Vorname:** .................................
+
+**Name:** ......................................
+
+===== Vorarbeit =====
+  * Verwenden Sie als Basis zu dieser Aufgabe die Lösung **LU05.S09.html**
+  * Das entsprechende Bild, dass aktuell angezeigt wird, kann in Ihrer Lösung variieren (kann anders sein).
+
+
+===== Ausgangslage =====
+Beim Auftrag **LU05.S09.html** wurde der Lagerbestand von Schreibmaschinen in 4 Gruppen ausgegeben: 
+  - //Plenty in Stock//
+  - //In Stock//
+  - //Very few left// 
+  - //Not in Stock//
+
+Die Hintergrundfarbe blieb bei allen 4 Meldungen gleich grün.
+
+{{:en:modul:m291:learningunits:lu19:theorie:lu09.s09_start.png?400|}}
+
+===== Auftrag =====
+  * Veränderung Sie die Anzeige dahingehend, dass bei jeder Meldung der Lagerbestand auch ausgegeben wird. 
+  * Zudem soll zukünftig auch der negative Lagerbestand berücksichtig werden durch **PreOrders** bzw. Vorbestellungen
+  * Fügen Sie am Ende zwei Buttons **Buy** und **Sell** an, mit denen Sie Schreibmaschinen kaufen und verkaufen können. Beim Kaufen wird der Bestand um eine Einheit erhöht, beim Verkaufen entsprechend um ein Exemplar reduziert.
+
+**Hinweis**
+  * Das Bild ist nicht relevant. 
+  * Die gewählte Sprache (Englisch oder Deutsch) ist nicht relevant.
+
+^Zielzustand 1 | Wenn es **an Lager** oder **reichlich an Lager** hat | {{:en:modul:m291:learningunits:lu19:theorie:t42_ziel1.png?400|}} |
+^Zielzustand 2 | Es hat nur noch **wenig an Lager** | {{:en:modul:m291:learningunits:lu19:theorie:t42_ziel2.png?400|}} | 
+^Zielzustand 3 | Schreibmaschinen hat es **keine an Lager** | {{:en:modul:m291:learningunits:lu19:theorie:t42_ziel3.png?400|}} |
+^Zielzustand 4 | **Vorbestellungen** bei weniger als 0 an Lager | {{:en:modul:m291:learningunits:lu19:theorie:t42_ziel4.png?400|}} |
+
+-----
+
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir
+
+

@@ -1,0 +1,12 @@
+====== LU01c - Docker-Architecture ======
+==== Ziele ====
+  -Ich kann die wesentlichen Schritte von der Docker-Datei bis zum laufenden Container aufzählen.
+  -Ich kann den grundlegende Syntax einer Docker-Datei beschreiben.
+  -Ich kann die grundlegenden Komponenten von Docker aufzählen.
+
+\\
+===== Grundlagen =====
+[[https://youtu.be/dArd80AFIx0 |Docker-Architecture]]: In diesem Erklärvideo erfahren Sie über 
+	* die Verarbeitungskette für ein Docker-Container
+	* die Syntax und Semantik eines Dockerfiles und
+	* die grundlegenden Komponenten von Docker.

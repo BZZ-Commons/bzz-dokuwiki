@@ -1,0 +1,38 @@
+====== LU05.A12 - v-show simple applied to texts ============
+
+===== Prerequisites  =====
+  * Work type: Individual
+  * Means of aid: only teaching materials, no websearch, no use of ai.
+  * Timeframe: 10 Minutes
+  * Expected result: A Vue script that fades-in and fades-out a given text.
+
+===== Learning objectives =====
+  -  Using v-show  to simple text examples. 
+
+===== Source =====
+  * [[https://www.w3schools.com/vue/tryit.php?filename=tryvue_v-show_div | v-show code-example]]
+  
+===== Assignment ======
+The assignment is basically to use the v-show directive to a given text to hide or to make it visible. This is managed by using the parameter, which will be set to true or false. 
+
+  - Click the link above to the code-exambpe to get to the W3School-TryOut area.
+  - Save the code with a suitable name
+  - Have it run by clicking the //run-button//.
+  - Change the status of the variable //showDiv// within the values true and false, and observe the result carefully. 
+  - What happens if you set the values of the variable //showDiv// to //-1, 0, 1, 2, etc.// 
+  - Note the result as a html-comment und beobachten Sie die Reaktion der Applikation.
+  - Save your result, you may need it as a exam-preparation.
+  
+===== Solution =====
+[[en:modul:m291:learningunits:lu05:loesungen:12|Lösung]]
+
+
+
+===== Vocabulary =====
+^ English ^ German ^ 
+| ... | ... |
+| ... | ... |
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

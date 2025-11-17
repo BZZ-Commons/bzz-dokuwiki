@@ -1,0 +1,40 @@
+====== LU16c - Behat-Tests in Moodle ======
+<WRAP center round todo 60%>
+Die Pfade und Befehle beziehen sich auf die virtuelle Maschine "bzzDevMoodle_V1".
+</WRAP>
+
+[[https://moodledev.io/general/development/tools/behat/running|Dokumentation von Moodle]]
+
+===== Definition der Tests =====
+Jedes Plugin enthält einen Ordner ''tests/behat'' mit den Testdefinitionen.
+In diesem Ordner befinden sich die ''.feature''-Dateien mit den Testdefinitionen.
+
+===== Tests ausführen =====
+==== Testkonfiguration aktualisieren ====
+Wenn du einen neuen Test geschrieben hast, musst du die Konfiguration aktualisieren.
+
+<code>
+php /home/bzz/moodles/stable_404/moodle/admin/tool/behat/cli/init.php
+</code>
+
+==== Selenium ====
+Bevor du die Tests ausführen kannst, musst du den Selenium-Server in einem separaten Terminal-Fenster starten:
+<code>
+java -jar /home/bzz/selenium-server-4.27.0.jar standalone
+</code>
+
+==== Behat-Tests ====
+In der Regel wollen wir nur bestimmte Tests durchführen.
+Ein vollständiger Test mit allen Features würde sehr lange dauern.
+
+Du kannst die Tests anhand eines Tags in den Feature-Dateien auswählen.
+Zum Beispiel:
+<code>
+/home/bzz/moodles/stable_404/moodle/vendor/bin/behat --config /home/bzz/behat_moodledata/behatrun/behat/behat.yml --tags=@mod_externalassignment --profile=geckodriver
+</code>
+
+Um einen einzelnen Test auszuführen, kannst du ihn mit diesem Befehl auswählen:
+<code>
+/home/bzz/moodles/stable_404/moodle/vendor/bin/behat --config /home/bzz/behat_moodledata//behatrun/behat/behat.yml `pwd`/mod/externalassignment/tests/behat/page_title.feature
+</code>
+Hier würde der Test in ''page_title.feature'' ausgeführt.

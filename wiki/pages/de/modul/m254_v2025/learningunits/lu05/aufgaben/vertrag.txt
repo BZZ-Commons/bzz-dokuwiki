@@ -1,0 +1,23 @@
+====== LU05.A01: EPK von Vertragsvalidierung ======
+
+===== Rahmenbedingungen =====
+
+  * Sozialform: Partnerarbeit
+  * Zeitbudget: 15 Minuten
+  * Hilfsmittel: Software bflow, Draw.io, Visio
+  * Abgabe: Prozessbeschreibung in der EPK-Notation als PDF-Datei 
+
+
+===== Ausgangslage =====
+Sie haben im Unterricht gelernt, dass Sie mittels EPK beliebige Geschäftsprozesse modellieren bzw. abbilden können. Ein typisches Einsatzgebiete für eine solche Modellierungstechnik ist die Überprüfung von Verträgen auf Korrektheit.
+
+===== Arbeitsauftrag =====
+
+Erstellen Sie ein EPK zur nachfolgenden Prozessschritten. 
+
+
+  - Das Vertragsangebot kommt rein. 
+  - Der Vertrag wird kaufmännisch (inhaltlich) und rechtlich (juristisch/formal) geprüft. 
+  - Gibt es an dem Vertrag weder kaufmännisch noch rechtlich etwas zu beanstanden, wird der Vertrag unverändert unterschrieben und der Status wird als solches mit dem Status «Vertrag wurde unterschrieben» festgehalten. 
+  - Gibt es kaufmännisch oder rechtlich etwas zu beanstanden, wird zur Überarbeitung zurückgegeben. In dem Falle ist der Status «Vertrag muss überarbeitet werden». 
+

@@ -1,0 +1,57 @@
+====== LU02d - Pseudo-Klassen ======
+
+CSS-Pseudoklassen sind spezielle Bezeichnungen, die bestimmte Zustände von HTML-Elementen ansprechen und es ermöglichen, diesen Zustand gezielt zu stylen. Sie bieten eine mächtige Möglichkeit, das Verhalten von Elementen auf einer Webseite basierend auf Benutzerinteraktionen oder dem Kontext zu verändern.
+
+===== :hover =====
+Die Pseudoklasse ''':hover''' wird aktiviert, wenn der Benutzer mit der Maus über das Element fährt.
+
+**Beispiel:**
+<code>
+button:hover {
+    background-color: lightblue;
+}
+</code>
+
+===== :active =====
+Die Pseudoklasse ''':active''' wird aktiv, wenn ein Element gerade angeklickt wird.
+
+**Beispiel:**
+<code>
+button:active {
+    background-color: darkblue;
+}
+</code>
+
+===== :focus =====
+Die Pseudoklasse ''':focus''' wird angewendet, wenn ein Element den Fokus hat, z.B. ein Eingabefeld.
+
+**Beispiel:**
+<code>
+input:focus {
+    border: 2px solid red;
+}
+</code>
+
+===== :first-child / :last-child =====
+Diese Pseudoklassen beziehen sich auf das erste oder letzte Kind eines Elternelements.
+
+**Beispiel:**
+<code>
+p:first-child {
+    font-weight: bold;
+}
+
+p:last-child {
+    color: gray;
+}
+</code>
+
+===== :nth-child =====
+Mit ''':nth-child()''' kann man ein bestimmtes Kind in einer Liste ansprechen.
+
+**Beispiel:**
+<code>
+li:nth-child(2) {
+    color: green;
+}
+</code>

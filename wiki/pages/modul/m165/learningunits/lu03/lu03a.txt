@@ -1,0 +1,16 @@
+====== LU03a - Datenbank in MongoDB restoren (wiederherstellen)  ======
+===== Ziele =====
+  -Ich kann eine Datenbank in MongoDB importieren.
+  -Ich kann die MongoDB-Tools herunterladen und installieren.
+  -Ich kann die Pfad-Variable zu den MongoDB-Tools für meine Shell setzen.
+  -Ich kann das Repo mit den Sample-DB's clonen
+  -Ich kann eine MongoDB-Datenbank restoren (wiederherstellen)
+  -Ich kann den Restore überprüfen
+  -Ich kann eventuelle Fehler selbstständig erkennen, Massnahmen vorschlagen und mind. eine Massnahme umsetzen.
+
+===== Grundlagen =====
+[[https://youtu.be/kJq3r2tXjqc |Daten in MongoDB restoren]]: Dieses Video demonstriert Ihnen, wie Sie eine Datenbank restored 
+(wiederherstellt).
+
+===== Übungen =====
+Lösen Sie die ''Übung 3.01 (03/02_Exercises/01_Exercise.md)'' aus dem Repo.

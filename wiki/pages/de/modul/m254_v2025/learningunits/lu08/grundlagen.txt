@@ -1,0 +1,40 @@
+====== LU08a - Business Use Case Grundlagen ======
+UML (Unified Modeling Language) Business Use Cases sind eine Methode zur Modellierung von Geschäftsprozessen und deren Interaktionen mit externen Akteuren. Sie helfen dabei, die funktionalen Anforderungen eines Unternehmens auf einer abstrakten Ebene zu visualisieren.
+
+UML Business Use Cases bieten eine effiziente Möglichkeit, Geschäftsprozesse zu modellieren, Anforderungen zu dokumentieren und Stakeholdern eine verständliche Sicht auf die Unternehmensabläufe zu ermöglichen. Sie sind eine wertvolle Grundlage für die Entwicklung von IT-Systemen und die Optimierung von Geschäftsprozessen.
+
+===== Definition =====
+Ein Business Use Case beschreibt eine Geschäftsaktivität oder einen Prozess, der aus Sicht eines externen Akteurs (z. B. Kunde, Lieferant, Geschäftspartner) einen bestimmten geschäftlichen Mehrwert liefert. Er konzentriert sich auf Was das Unternehmen tut, nicht Wie es das tut.
+
+===== Hauptbestandteile eines UML Business Use Case Diagramms =====
+
+
+  * Akteure (Actors): Externe Entitäten (Personen, Systeme oder Organisationen), die mit dem Unternehmen interagieren.
+  * Business Use Cases: Die Prozesse oder Services, die das Unternehmen für die Akteure bereitstellt.
+  * Beziehungen: Darstellen, wie Akteure mit Business Use Cases interagieren.
+  * Systemgrenze (Boundary): Definiert den Umfang des Geschäftsmodells.
+
+===== Notation im UML Business Use Case Diagramm =====
+
+
+  * Business Use Cases werden als Ovale dargestellt.
+  * Akteure sind Strichmännchen oder Symbole für Systeme/Organisationen.
+  * Beziehungen sind Linien, die die Interaktionen zwischen Akteuren und Business Use Cases verdeutlichen.
+
+===== Vorteile von Business Use Cases =====
+
+  * Klare Geschäftsanforderungen: Ermöglichen eine verständliche Darstellung für Stakeholder.
+  * Verbesserte Kommunikation: Zwischen Geschäfts- und IT-Teams.
+  * Strukturierte Analyse: Unterstützt die Modellierung komplexer Geschäftsprozesse.
+  * Flexibilität & Wiederverwendbarkeit: Geschäftsprozesse können modular beschrieben und angepasst werden.
+    
+===== Abgrenzung zu System Use Cases =====
+^ Merkmal ^ Business Use Case ^ System Use Case ^
+^ Ziel | Geschäftliche Prozesse und Wertschöpfung modellieren | Detaillierte technische Systeminteraktionen modellieren |
+^ Fokus | Geschäftsperspektive | IT-/Systemperspektive |
+^ Akteure | Kunden, Partner, externe Organisationen | Benutzer, andere Systeme |
+^ Detailgrad | Hochabstrakt | Detailliert mit Systemoperationen |
+
+----
+{{tag>M254-LU08}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

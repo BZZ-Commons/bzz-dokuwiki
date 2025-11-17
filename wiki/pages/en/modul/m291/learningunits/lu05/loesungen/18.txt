@@ -1,0 +1,29 @@
+====== LU05.S18 - combined usage of several directives  ======
+
+===== Hints ====
+  * Download the file and copy the content into the code area of the W3School on the left hand side of the coding window.
+  * You can execute the code by pressing the //run// button
+  * The result will be presented in the right hand side of the window.
+
+===== Assignment  ======
+Create a vue script that uses all issued VUE directives in combination. 
+
+  - **v-bind**: image and style
+  - textoutput in the **{ {...} }** notation (double brackets)
+  - A multi-dimensional array **userList** containing the columns **userid, name, surname, email, password**
+  - The array must contain at at least 4 rows of data
+  - **v-for**: to iterate all data of the multi-dimensional array **userList**
+  - **v-if**: if the  user matches with the search-person a image (**v-show**) of this person will be displayed, along with all the detail-data
+  - **v-else**: only username, name and surename are displayed, along with a different general user image (**v-show**)
+
+===== Source code =====
+
+{{ :en:modul:m291:learningunits:lu05:loesungen:lu05.s18.zip | Source code of the solution}}
+
+{{:en:modul:m291:learningunits:lu05:loesungen:lu05.s18.png| combined assignments }}
+
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir
+  

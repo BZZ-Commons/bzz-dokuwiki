@@ -1,0 +1,55 @@
+====== LU03.A01 - Box-Modell ======
+
+===== Aufgabe 1: Theoriefragen zum CSS-Box-Modell =====
+
+Beantworten Sie die folgenden Fragen:
+
+  - Was versteht man unter dem CSS-Box-Modell und welche Bestandteile umfasst es?
+  - Wie unterscheidet sich das klassische vom neuen Box-Modell in Bezug auf die Berechnung der Elementbreite?
+  - Was passiert, wenn zwei vertikale Aussenabstände (Margins) aufeinandertreffen?
+
+==== Rahmenbedingungen =====
+^ Was ^ Beschreibung ^
+| Produkt | Notiz mit Ihren Antworten |
+| Zeit | 5 Min. |
+| Sozialform | Einzel- oder Partnerarbeit |
+
+----
+
+===== Aufgabe 2: Übung zum CSS-Box-Modell =====
+
+==== Ausgangslage ====
+Erstellen Sie eine Datei ''index.html'' mit folgendem Inhalt:
+
+<code html>
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-Box-Modell Uebung</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>CSS-Box-Modell</h1>
+        <p>Dieser Absatz demonstriert das klassische Box-Modell.</p>
+        <p class="new-box">Dieser Absatz demonstriert das neue Box-Modell.</p>
+    </div>
+</body>
+</html>
+</code>
+
+==== Aufgabenstellung ====
+
+  - Erstellen Sie eine CSS-Datei ''styles.css'' und verknüpfen Sie die CSS-Datei mit der HTML-Datei.
+  - Weisen Sie der Klasse ''.container'' eine feste Breite von 400px, einen Innenabstand (''padding'') von 20px und einen Rahmen von 2px solid schwarz zu.
+  - Erstellen Sie eine zweite CSS-Regel für ''.new-box'', die das neue Box-Modell (''box-sizing: border-box'') verwendet und sich in der Breite von der Standardbox unterscheidet.
+  - Weisen Sie dem gesamten ''<body>'' eine Hintergrundfarbe zu, um den Unterschied zwischen den Box-Modellen besser sichtbar zu machen.
+  - Testen Sie das Verhalten der Boxen mit und ohne das neue Box-Modell.
+
+==== Rahmenbedingungen =====
+^ Was ^ Beschreibung ^
+| Produkt | HTML- und CSS-Datei |
+| Zeit | 10 Min. |
+| Sozialform | Einzel- oder Partnerarbeit |

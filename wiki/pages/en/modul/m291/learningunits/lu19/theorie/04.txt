@@ -1,0 +1,45 @@
+====== LU19a - Aufgabe 1 / Task 04: v-bind, v-for ======
+
+
+===== Administration =====
+Füllen Sie die nachfolgenden Felder aus:
+
+**Klasse:** ....................................
+
+**Vorname:** .................................
+
+**Name:** ......................................
+
+===== Vorarbeit =====
+  * Sie können als Vorlage für diese Aufgabe die Lösung **LU05.S17.html** verwenden.
+
+===== Ausgangslage =====
+Beim Auftrag **LU05.S17.html** haben wir verschiedene Gerichte in einem Array verwaltet und mit der directive **v-for** ausgegeben. Manche Gerichte mochten wir, andere wiederum nicht.
+  * Status OK: rote Meldung
+  * Status NOK: grüne Meldung
+  * Alle relevanten Informationen wurden in einem mehrdimensionalen Array gespeichert.
+
+{{:en:modul:m291:learningunits:lu19:theorie:a04_start.png?400|}}
+
+===== Auftrag =====
+  * Führen Sie einen dritten Status **Solala** ein.
+  * Verändern Sie den Status von 2-3 Gerichten neu in **Solala**
+  * Passen Sie die Meldung zum neuen Status an: **... is fairly edible** (... ist knapp geniessbar) in schwarzer Schrift.
+
+**Hinweis**
+  * Die Auswahl welche Gerichte "knapp geniessbar" ist Ihre Entscheidung.
+  * Am Ende müssen alle 3 Stati im Ergebnis ersichtlich sein.
+  * Lediglich die Gerichte, die ich mag sollen als Image gezeigt werden.
+
+
+^Zielzustand ^ ^
+| Gericht 3 (cake) und Gericht 6 (pizza) scheine für mich knapp geniessbar zu sein. |{{:en:modul:m291:learningunits:lu19:theorie:t04_ziel.png?400|}}|
+
+
+
+-----
+
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir
+
+
+

@@ -1,0 +1,38 @@
+====== LU05.A08 - v-if with numbers instead of bool ======
+
+===== Prerequisites  =====
+  * Work type: Individual
+  * Means of aid: only teaching materials, no websearch, no use of ai.
+  * Timeframe: 10 Minutes
+  * Expected result: A Vue script that displays HTML elements based on input values.
+
+===== Learning objectives =====
+  - Explaining the The directive //v-if// in your own word.  
+  - Being able to apply logical operators within a v-if directive. 
+
+
+===== Source =====
+  * [[https://www.w3schools.com/vue/tryit.php?filename=tryvue_v-if_typewriters2 |Code-example: v-if directive src]]
+
+===== Assignment ======
+The first assignment checked by using v-if whether a certain variable was checked or not (true/false9Bei der ersten Aufgabe hat v-if binären Werte (true/false) geprüft. Now, we want to go one step further and check not only whether it is true or false, but moreover which value it contains. By this, we would be able to tell the customer of how many typewriters we have in stock, which may be of some benefit for the customer as well as for us.
+
+  - Change the value of the variable //typewriter// to 0 and execute the script. 
+  - Note your realisations as a html-comment.
+  - Change the content of the variable //typeWriter// to -1. 
+  - What happens, if the value //typeWiter// has no value at all respectively is empty?
+  - Note your realisations as a html-comment.
+  - Save your script acoordingly, whether in your W3School workspace or on you local computer in your code-editor Webstorm.
+
+
+===== Solution =====
+[[en:modul:m291:learningunits:lu05:loesungen:08|Lösung]]
+
+
+===== Vocabulary =====
+^ English ^ German ^ 
+| ... | ... |
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

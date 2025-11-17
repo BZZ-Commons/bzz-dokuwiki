@@ -1,0 +1,41 @@
+====== LU00c - Assessment Ziele ======
+
+**A. HTML Grundlagen**
+  - Ich kenne die Grundstruktur einer HTML-Datei. HTML-Elemente/Tags sind <!DOCTYPE html>, <html>, <head>, <title>, <body>, <p>, <br />.
+  - Ich kenne den Nutzen des <title>-Elements.
+  - Ich kann HTML-Dokumente mit Überschriften im <body> erstellen. HTML-Elemente/Tags sind <h1>..<h6>.
+  - Ich kann Bilder in einer Webseite hinzufügen und anhand der img-Attribute (z.B. src, alt, width, height) anpassen. HTML-Elemente/Tags sind <img>.
+  - Ich kann Verweise (Hyperlinks) in einer Webseite hinzufügen und anhand der Attribute (z.B. href, id) anpassen kann. HTML-Elemente/Tags sind <a>.
+  - Ich kenne bei den Verweisen den Unterschied zwischen absoluter und relativer Verweis.
+  - Ich kann Verweise syntaktisch korrekt erstellen und kann Merkmale und Eigenschaften für den korrekten Aufbau aufzählen.
+  - Ich kenn den Zweck von lokalen Verweisen (Anker).
+  - Ich kann lokale Verweise (Anker) korrekt erstellen.
+  - Ich kann selbstständig die Entwickler-Tools (Developer-Tools) in meinem Browser aktivieren/installieren.
+  - Ich kann mit dem DOM-Inspector die Verschachtelungsstruktur eines HTML-Dokuments analysieren.
+
+**B. Aufbau von Verweisen (URL's)**  
+  - Ich kenne die Syntax und seine Bestandteile einer URL.
+  - Ich kann mindestens drei verschiedene Protokolle aufzählen, die in einer URL verwendet werden können.
+  - Ich kenne den unterschied zwischen einer Referenzierung mit absoluter und relativer Pfadangabe.
+  - Ich kann Referenzierungen mit absoluter und relativer Pfadangabe gezielt in HTML-Dokumenten anwenden/einsetzen.
+
+**C. Neue Sektionselemente in HTML**
+  - Ich kenne den Zweck der Sektionselemente body, section, article, aside, nav.
+  - Ich kann die Sektionselemente nach Vorgaben an konkreten Beispielen anwenden/realisieren.
+  - Ich kennen einen Unterschied zwischen section und article.
+  - Ich kann Inhalte (z.B. Artikel/Section) mit marginalen/zusätzlichen Informationen zu anderen Inhalten mit aside auszeichnen.
+  - Ich kann sinnvoll Navigationen mit nav auszeichnen.
+  - Ich kann die Sektionselemente body, section, article, aside, nav für einen Webblog sinnvoll einsetzen/anwenden.
+
+**D. HTML-Elemente für Kopf-/Fußbereiche und Beschriftungen**
+  - Ich kenne den Zweck der HTML-Elemente h1 bis h6, header, footer, figure, figcaption.
+  - Ich kann die HTML-Elemente (gemäss Punkt 1.) nach Vorgaben an konkreten Beispielen anwenden/realisieren.
+  - Ich kann eine Webseite in Kopf- und Fussbereich mit den Elementen header und footer auszeichnen.
+  - Ich weiss, was mit Dokumenten-Outline (oder kurz Outline) gemeint ist.
+  - Ich kenne die Regeln/Hinweise betreffend der Verschachtelung von header und footer-Elementen.
+  - Ich kann z.B. Bilder oder Tabellen mit figure, figcaption beschriften.
+
+**F. Kopfdaten eines HTML-Dokuments**
+  - Ich kann folgende HTML-Elemente und deren Attribute (gemäss den Beispielen in den Grundlagen) syntaktisch (Aufbau) und semantisch (Bedeutung) korrekt anwenden: <title>, <base>, <link>, <style>, <script>, <meta>
+  - Ich kenne die Bedeutung eines Webcrawlers.
+  - Ich kann sinnvolle Metadaten (keywords, description) für Suchmaschinen syntaktisch (Aufbau) und semantisch (Bedeutung) korrekt setzen.

@@ -1,0 +1,47 @@
+====== LU04b - VUE Basics =====
+
+===== Learning objectives =====
+  - Definition what a vue is
+  - Knowing the key features of vue
+  - Explaining the basic function how vue is working
+
+===== Source =====
+  * [[https://vuejs.org/|Original VUE.JS ]]
+  * [[https://www.w3schools.com/vue/vue_intro.php|W3School VUE]]
+
+===== What is Vue.js? ====
+Vue.js is a progressive JavaScript framework used for building user interfaces and single-page applications (SPAs). **It focuses on the view layer**, making it simple to integrate with other projects or libraries, while also providing powerful features for modern application development. Vue.js is known for its reactive data binding, component-based architecture, and ease of use, making it a popular choice for developers.
+
+Vue is designed to be incrementally adoptable. Developers can start by adding it to a small part of an existing application, or they can use Vue to build entire web apps from scratch. Its lightweight nature and flexibility make it suitable for projects of all sizes.
+
+===== Key Features of Vue.js =====
+Declarative Rendering: Use Vue's syntax to bind dynamic data directly into HTML.
+  * Reactivity: When the data changes, the DOM updates automatically.
+  * Components: Modular and reusable building blocks of the interface.
+  * Directives: Special attributes that extend HTML functionality, like v-bind, v-if, and v-for.
+  * Vue CLI: A powerful tool to scaffold and manage Vue applications efficiently.
+
+===== Single file Components (SFC) in Vue.js ===
+In Vue.js, Single File Components (SFCs) are a core feature that enables developers to encapsulate the structure, style, and logic of a component **within a single .vue file**. This approach improves maintainability, readability, and scalability in modern web development by organizing all the component-related code in one place.
+
+==== Structure of a Single File Component ====
+A typical Vue SFC consists of three sections:
+
+  - <template>: Contains the HTML structure for the component. This section defines how the component is displayed in the DOM.
+  - <script>: Contains the JavaScript logic for the component, including the component's data, methods, computed properties, and lifecycle hooks.
+  - <style>: Contains the CSS specific to the component, allowing you to style the component's elements. By default, these styles are global, but adding the scoped attribute makes them apply only to this component.
+
+{{:en:modul:m291:learningunits:lu04:theorie:vue-component.png?600|Hello.vue mit SFC}}
+===== Vocabulary =====
+^ English ^ German ^ 
+| to streamline | beschleunigen, optimieren|
+| incrementally adoptable | Schrittweise anwendbar|
+| to provide | bereitstellen | 
+| to deploy | ausliefern |
+| to enable | befähigen |
+| to scafold | stützen |
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir
+
+

@@ -1,0 +1,64 @@
+====== LU06.A07 - Events - colour changing ======
+
+===== Prerequisites  =====
+  * Work type: Individual
+  * Means of aid: only teaching materials, no websearch, no use of ai.
+  * Timeframe: 30 Minutes
+  * Expected result: Changing the colour of a area which the reactiing to events e.g. 
+    * simple-click
+    * mouseover
+    * mouse.right-click
+    * mouse-left-click 
+    * mouse-middle-click
+
+===== Source =====
+  * [[https://www.w3schools.com/vue/tryit.php?filename=tryvue_v-on_changeColor|Source-code for the assignment]]
+
+===== Assignments  ======
+The idea of this assignment is to exercise on the one hand the four basic events, and on the other hand the increment and decrement-operators with various step-sizes. As a base for our exercise we are goint to change the appearance of html-visual-elements such as background colour. Your result should look as following 
+
+{{:en:modul:m291:learningunits:lu06:aufgaben:lu06.s07_5.png?500|Result of the assignment A-D}}
+  
+
+==== Assignment A ====
+  - Test the code example provided to you: When moving the mouse over a list food elements each element must change the backgroundcolour to grey.
+  - Make sure that you have the title <h1>  and have the correctl filename: **lu06.s07.html**  
+  - After moving the mouse over the colour area the background-colour should change randomly. Behind this effect there is a sophisticated Math-Operation.
+  - Replace the math-method with a **simple increment** operation with **step-size 1**. 
+  - Start with the **colour value of 0**.
+
+==== Assignment B ====
+  - Add another area for the a **right-click** event.
+  - Start with a **colour value of 120**
+  - Decrement **step-size is 2**
+
+==== Assignment C ====
+  - Add another area for the a **left-click** event.
+  - Start with a **colour value of 240**
+  - Increment **step-size is 5**
+
+==== Assignment C ====
+  - Add another area for the a **left-click** event.
+  - Start with a **colour value of 240**
+  - Increment **step-size is 5**
+
+==== Assignment D ====
+  - Add another area for the a **mouseover** event.
+  - Start with a **colour value of 360**
+  - Decrement **step-size is 10**
+      
+==== Assignment E ====
+  - Add to all four textareas a mouse-middle event which resets all colour to the initial values.
+  - **Hint**: To get the initial values, you need to store te values in separately in the first place: either in 4 variables or in a array with all four initial values.
+
+===== Solution =====
+[[en:modul:m291:learningunits:lu06:loesungen:07|Lösung]]
+
+===== Vocabulary =====
+^ English ^ German ^ 
+| to compraise | beinhalten |
+| sophisticated | raffiniert, anspruchsvoll |
+| appearance | Erscheinung |
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

@@ -1,0 +1,22 @@
+====== LU06.S05 - Events - input counting ======
+
+===== Code-Solution =====
+{{ :en:modul:m291:learningunits:lu06:loesungen:lu06.s05.zip | Codesolution }}
+
+===== Assignments  ======
+  - Test the code example provided to you, if you type something into the input-field the counter must increase. Describe the behaviour of the script using HTML comments.
+  - Make sure that you have the title <h1> correctly named: **lu06.s05.html**  
+  - Add a button **InpCnt  -1** that decreases the counter by step-size 1
+  - Add another button to reset the counter to 0.
+
+{{:en:modul:m291:learningunits:lu06:loesungen:lu06.s05_1.png?1000|Solution executed in the W3School-Sandbox}}
+
+{{:en:modul:m291:learningunits:lu06:loesungen:lu06.s05_2.png?1000|Solution in Webstorm editor}}
+
+===== Vocabulary =====
+^ English ^ German ^ 
+| ...| ...|
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

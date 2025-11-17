@@ -1,0 +1,31 @@
+====== LU06.A01 - SQL-DQL: Select from one table ======
+
+===== Requirements  =====
+  * Work type: individual
+  * Timeframe: 15 Minutes
+  * Means of aid: 
+      * only teaching materials, no websearch, no use of ai.
+      * [[https://www.w3schools.com/sql/trysql.asp?filename=trysql_select_columns | W3Schools | SQL Editor]]
+  * Expected result: Semsntically and syntactically correct SQL statements according to the requirements of the case studies. 
+
+===== Case studies / Assignments =====
+Go to the W3-Schools SQL Editore and develop DQL commands to the following requirements
+
+===== Assignments =====
+
+  * a) Create a address-list of the customers with the columns in this order: CustomerName, Adress, PostalCode, Country, ordered by the the Country ascending.
+  * b) Generate a list with ProductNames, Price and SupplierIDs within a price range of 20 and 45, sorted the Price and SupplierID, both ascending.
+  * c) Find all employees who graduated from a university. The relevant information is hidden in the table Employees, within the colums Notes.
+
+===== Solution =====
+[[modul:m290:learningunits:lu04:loesungen:l01|Lösung]]
+
+
+===== Vocabulary =====
+^ English ^ German ^ 
+| respectively | beziehungsweise|
+| assignment | Auftrag |
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

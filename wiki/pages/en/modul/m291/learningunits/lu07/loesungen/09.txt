@@ -1,0 +1,69 @@
+====== LU07.S09 - Basic caluclator with methods ======
+
+===== Assignment =====
+In LU06.S08 we were programming a basic calulator by manipulation the values directly when clicking the buttons. This is convenient, but limits the possibilities of the calculator significantly. 
+
+Therefore we need to do it, but this time by using a couple of methods 
+  * to set values of diggit1, diggit2 and the operator
+  * to calulate the result
+  * to reset all values of the variables
+
+==== Assignment A - 3' =====
+  * A01: Copy the solution of LU06.s07 and name it **LU07.s09.html**
+  * A02: Make sure to have 
+    * the assignmen number in <h1> and 
+    * the description in <h3>-format
+  * A03: Safe it.
+
+==== Assignment B - Required methods - 16' ====
+  * B01: method **setDiggit1(number)**: It sets the value of the variable **diggit1** to the clicked number (diggit-block 1). 
+  * B02: method **setDiggit2(number)**: It sets the value of the variable **diggit2** to the clicked number (diggit-block 2).
+  * B03: method **setOperator(op)**: It sets the value of the variable **operator** to the clicked operation, e.g **+**. Hint: further operations are possible.
+  * B04: method **calcResult(op)**: Performes the calculation correspondigly to the chosen operation, e.g. **+**.
+  * B05: method **reset()**: Sets all variables to the initial values.
+
+==== Assignment C - Variables - 1' ====
+  * C01: A basic calculation **3 + 3  = 6** compraises several variables and their initial values: 
+    * diggit1: 0 
+    * operator: ''
+    * diggit2: 0
+    * result: 0
+
+==== Assignment D - Button for diggit 1 - 10' ====
+  * D01: When clicking on one of them the content will be saved in the variable **diggit1**
+  * D02: But unlike in the previous task, this time the click triggers a method **setDiggit1(dig1)**
+  * D03: Continue with the other three buttons in the same fashion.
+  * D04: Check the result by displaying the content of the variable **diggit1** on the display.
+ 
+==== Assignment E - Button the operation - 5' ====
+  * E01: When clicking the **+**-button the content will be saved in the variable **operator**
+  * E02: Check the result by displaying the content of the variable **operator** on the screen.
+ 
+==== Assignment F - Button for diggit 2 - 5' ====
+  * F01: When clicking on the button in diggit2-block, the content will be saved in the variable **diggit2**
+  * F02: But unlike in the previous task, this time the click triggers a method **setDiggit2(dig2)**
+  * F03: Continue with the other three buttons in the same fashion.
+  * F04: Check the result by displaying the content of the variable **diggit2** on the display.
+
+==== Assignment G: Implementation of the calculation - 10'  ====
+  * G01: To execute our addition-operation we finally need a button **ENTER**. This triggers the method **caldResult(operator)**
+  * G02: If the variable operator is an + (plus operator), then the calculation is an addition. In that case the result is **this.result = diggit1 + diggit2**. Hint: subtraktion, multiplication and division are similiar to programm.
+  * G03: Display the result of the variable **result** on the screen.
+
+===== Solution =====
+{{:en:modul:m291:learningunits:lu07:loesungen:lu07.s09.png?1200|Solution of the assignment as screenshot}}
+
+{{ :en:modul:m291:learningunits:lu07:loesungen:lu07.s09.zip | Source code as Zip}}
+
+
+===== Vocabulary =====
+^ English ^ German ^ 
+| diggit | Ziffer |
+| initial values | Startwerte |
+| to suffice | ausreichen |
+| respectively | beziehungsweise |
+| to compraise | umfassen |
+| several | einige, etliche |
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

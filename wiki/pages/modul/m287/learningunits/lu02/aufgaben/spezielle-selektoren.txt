@@ -1,0 +1,59 @@
+====== LU02.A02 - Universalselektoren ======
+
+===== Ausgangslage =====
+
+**CSS**
+<code css>
+* { 
+  margin: 5px;
+  padding: 3px;
+  border: 1px dotted black;
+  text-align: center; 
+}
+</code>
+
+**HTML**
+<code html>
+<!doctype html>
+<html>
+  <head>
+    <title>Universalselektor</title>
+    <meta charset="UTF-8">
+   <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+  <header>Kopfzeile</header>
+  <nav><a href="#">Nav1</a> | <a href="#">Nav2</a> |<a href="#">Nav3</a>
+  </nav>
+  <main>
+    <h1>Universalselektor</h1>
+    <p>Ein einfacher Absatztext.</p>
+    <p>Ein zweiter Absatztext</p>
+  </main>
+  <footer>
+    <p>Fusszeile 1</p>
+    <p>Fusszeile 2</p>
+    <p>Fusszeile 3</p>
+  </footer>
+  </body>
+</html>
+</code>
+
+===== Erwartetes Ergebnis =====
+
+{{:modul:m287:learningunits:lu02:aufgaben:ue_2_a1.png?600|}}
+
+===== Aufgabenstellung =====
+
+  - Es soll einheitlich die Schriftfamilie Arial für alle Texte verwendet werden.
+  - header und footer besitzen die Hintergrund-Farbe cornflowerblue.
+  - Die Elemente im <main> besitzen die Hintergrund-Farbe lawngreen.
+  - Die Elemente im <nav> besitzen die Hintergrund-Farben gold und orangered.
+  - Vergleichen Sie die Endresultat (Abb-01) mit Ihrem
+
+===== Rahmenbedingungen =====
+^ Was ^ Beschreibung ^
+| Produkt | Statische Webseite in HTML5 und Style-Informationen |
+| Zeit | 20 Min. |
+| Sozialform | Einzel- oder Partnerarbeit |
+| Arbeitsmittel | Unterrichtsunterlagen, HTML-Editor, Browser |

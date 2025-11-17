@@ -1,0 +1,41 @@
+====== LU06.S07 - Events - colour changing ======
+
+===== Solution =====
+{{ :en:modul:m291:learningunits:lu06:loesungen:lu06.s07.zip | Source-code of the solution }}
+
+==== Assignment A ====
+  - Test the code example provided to you: When moving the mouse over a list food elements each element must change the backgroundcolour to grey.
+  - Make sure that you have the title <h1>  and have the correctl filename: **lu06.s07.html**  
+  - After moving the mouse over the colour area the background-colour should change randomly. Behind this effect there is a sophisticated Math-Operation.
+  - Replace the math-method with a **simple increment** operation with **step-size 1**. 
+  - Start with the **colour value of 0**.
+
+==== Assignment B ====
+  - Add another area for the a **right-click** event.
+  - Start with a **colour value of 120**
+  - Decrement **step-size is 2**
+
+==== Assignment C ====
+  - Add another area for the a **left-click** event.
+  - Start with a **colour value of 240**
+  - Increment **step-size is 5**
+
+==== Assignment C ====
+  - Add another area for the a **left-click** event.
+  - Start with a **colour value of 240**
+  - Increment **step-size is 5**
+
+==== Assignment D ====
+  - Add another area for the a **mouseover** event.
+  - Start with a **colour value of 360**
+  - Decrement **step-size is 10**
+      
+==== Assignment E ====
+  - Add to all four textareas a mouse-middle event which resets all colour to the initial values.
+  - **Hint**: To get the initial values, you need to store te values in separately in the first place: either in 4 variables or in a array with all four initial values.
+
+
+{{:en:modul:m291:learningunits:lu06:loesungen:lu06.s07.png?1200| Solution }}
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

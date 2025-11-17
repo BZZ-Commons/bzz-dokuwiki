@@ -5,10 +5,10 @@ IntelliJ IDEA hat bereits einen Git-Client integriert. Das arbeiten in einem Rep
 ===== IntelliJ IDEA mit Github verbinden =====
 Gehen Sie in die Einstellungen von IntelliJ, suchen Sie nach Github. 
 Wählen Sie bei ''Add account...'' aus dem Dropdown ''Log in via Github...'' aus.
-{{ :modul:m319:learningunits:lu06:intellijgithublogin.png?600 |}}
+{{ de:modul:m319:learningunits:lu06:intellijgithublogin.png?600 |}}
 
 Auf der geöffneten Seite wählen Sie ''Authorize in GitHub'' und klicken Sie sich durch.
-{{ :modul:m319:learningunits:lu06:authgithub.png?600 |}}
+{{ de:modul:m319:learningunits:lu06:authgithub.png?600 |}}
 
 Ihr IntelliJ IDEA ist nun mit Github verbunden und kann ohne Passwortabfrage nun Repositories hoch und runterladen.
 
@@ -18,7 +18,7 @@ Ihr IntelliJ IDEA ist nun mit Github verbunden und kann ohne Passwortabfrage nun
 
 Suchen Sie sich als erstes auf Github die Clone-URL des Repositories das Sie klonen möchten.
 
-{{ :modul:m319:learningunits:lu06:cloneurl.png?800 |}}
+{{ de:modul:m319:learningunits:lu06:cloneurl.png?800 |}}
 <WRAP center round tip 60%>
 Achten Sie darauf jeweils die HTTPS-URL zu kopieren.
 
@@ -34,16 +34,16 @@ Ihre Lehrperson wird Ihnen eine Einladung zu einem persönlichen Github-Classroo
 
 In IntelliJ IDEA wählen Sie ''File>New>Project from Version Control''
 
-{{ :modul:m319:learningunits:lu06:intellijfromvcs.png?800 |}}
+{{ de:modul:m319:learningunits:lu06:intellijfromvcs.png?800 |}}
 
 Im Fenster fügen Sie die Clone-URL ein, falls Sie mit dem Projekt-Pfad nicht einverstanden sind, können Sie diesen nun auch anpassen.
 
-{{ :modul:m319:learningunits:lu06:intellijcloneurl.png?800 |}}
+{{ de:modul:m319:learningunits:lu06:intellijcloneurl.png?800 |}}
 
 Klicken Sie anschliessend auf Clone, dadurch wird ihr Projekt von Github heruntergeladen. 
 
 Eventuell erhalten Sie eine Fehlermeldung "JDK "xx" is missing" wählen Sie via Configure ihre installierte JDK aus.
-{{ :modul:m319:learningunits:lu06:jdkismissing.png?1200 |}}
+{{ de:modul:m319:learningunits:lu06:jdkismissing.png?1200 |}}
 
 <WRAP center round tip 60%>
 Sie haben nun ihr erstes Projekt von Github auf Ihren Computer geklont. Sie können nun - wie sie es sich gewohnt sind - in IntelliJ damit arbeiten.
@@ -54,13 +54,13 @@ Sie haben nun ihr erstes Projekt von Github auf Ihren Computer geklont. Sie kön
 Wenn Sie nun eine Datei in IntelliJ IDEA bearbeitet haben und diese gerne in ihrem Repository einchecken möchten müssen Sie diese Markieren, sogenanntes ''stagen''.
 In IntelliJ IDEA öffnen Sie dazu in die commit-Ansicht und markieren die Files, die Sie commiten möchten, mit einem Häckchen.
 
-{{ :modul:m319:learningunits:lu06:intellijstaging.png?800 |}}
+{{ de:modul:m319:learningunits:lu06:intellijstaging.png?800 |}}
 
 
 ==== Commit in IntelliJ IDEA ====
 Fügen Sie eine Commit-Message ein und drücken Sie entweder auf ''Commit'' um auf das lokale Repository zu commiten, oder auf ''Commit and Push'' um auf das lokale Repository zu commiten und den commit auch gleich auf Github zu veröffentlichen.
 
-{{ :modul:m319:learningunits:lu06:intellijcommit.png?600 |}}
+{{ de:modul:m319:learningunits:lu06:intellijcommit.png?600 |}}
 
 <WRAP center round tip 60%>
 Sollten Sie alleine an dem Projekt Arbeiten, empfehle ich ihnen, immer gleich ''Commit and Push'' auszuwählen. So haben Sie das Projekt immer gleich auch auf Github synchronisiert.
@@ -70,22 +70,22 @@ Sollten Sie alleine an dem Projekt Arbeiten, empfehle ich ihnen, immer gleich ''
 ==== Pushen in IntelliJ IDEA ====
 
 Falls sie lokal einen neueren Commit haben wie auf Github, so können Sie diesen auf Github pushen. Öffnen Sie dazu die git-Konsole in IntelliJ IDEA.
-{{ :modul:m319:learningunits:lu06:intellijpushview.png?1200 |}}
+{{ de:modul:m319:learningunits:lu06:intellijpushview.png?1200 |}}
 In dieser Ansicht sehen Sie, dass lokal (''main'') ein Commit mehr vorhanden ist als auf Github (''origin/main'')
 
 Um diesen Commit jetzt auf Github zu pushen, klicken Sie mit der rechten Maustaste auf ''main'' und dann auf ''push...''
 
-{{ :modul:m319:learningunits:lu06:intellijselectpush.png?800 |}}
+{{ de:modul:m319:learningunits:lu06:intellijselectpush.png?800 |}}
 
 Im Pupup klicken Sie auf ''push''
 
-{{ :modul:m319:learningunits:lu06:intellijdopush.png?800 |}}
+{{ de:modul:m319:learningunits:lu06:intellijdopush.png?800 |}}
 
 
 ==== Pull in IntelliJ IDEA ====
 Sollten Sie gemeinsam an einem Projekt entwickeln ist es sinnvoll, regelmässig den aktuellen Stand aus Github herunterzuladen. Dazu wird der Befehl ''git pull'' verwendet, in IntelliJ IDEA wechseln Sie dazu in die git-Konsole und drücken Sie den Pfeil ''Update Selected''
 
-{{ :modul:m319:learningunits:lu06:intellijpull.png?1200 |}}
+{{ de:modul:m319:learningunits:lu06:intellijpull.png?1200 |}}
 
 ----
 [[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Kevin Maurizi

@@ -1,0 +1,22 @@
+====== LU01.A02 - References and anchors ======
+
+===== Task 1: Create a simple blog =====
+
+==== Initial situation ====
+You want to create a simple blog (see {{ modul:m287:learningunits:lu01:aufgaben:ue_verweise_vorlage.zip |template}}) with internal and external links. The top-level navigation of the blog is shown in Fig-01 and the directory structure with the internal pages is shown in Fig-02. You can also write your own text for the blog. The external links are www.w3.org, www.w3.org/html/wg/drafts/html/master/ and www.whatwg.org. When selecting an external link, a new tab or a new browser should always be opened.
+^ Fig-01 ^ Fig-02 ^
+| {{modul:m287:learningunits:lu01:aufgaben:abb-01.png?600|}} | {{modul:m287:learningunits:lu01:aufgaben:02.png?600|}} |
+
+==== Task ====
+
+  - Create the blog according to the specifications in the initial situation. (Create directory, link documents correctly)
+  - Check the links so that they display the pages correctly.
+
+===== Task 2: Simple blog with table of contents =====
+
+==== Initial situation ====
+Based on task 1, expand the blog (index.html) with a table of contents (at least three chapters). The text in the chapters is not decisive (text generator as placeholder). In addition, create a return anchor (e.g. to the table of contents)
+
+==== Task ====
+  - Create the table of contents according to the specifications in the starting position.
+  - Check that the anchors are working correctly.

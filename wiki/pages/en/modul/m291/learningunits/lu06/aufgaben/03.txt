@@ -1,0 +1,26 @@
+====== LU06.A03 - Events - mouseclick and mouseover======
+
+===== Prerequisites  =====
+  * Work type: Individual
+  * Means of aid: only teaching materials, no websearch, no use of ai.
+  * Timeframe: 10 Minutes
+  * Expected result: A functional Vue script with additional newfunction with mouse-right-click and mouse-left-click.
+===== Source =====
+  * [[https://www.w3schools.com/vue/tryit.php?filename=tryvue_v-on_moose |Code-example: Example code for events]]
+
+===== Assignments  ======
+  - Take the solution from the previous assignment and name it correctly including the <h1>: **lu06.s03.html**
+  - Add another button **+2 Moose** which counts up by **step-size 2**, but use this time the event **@click.right=....** 
+  - Add another button **-2 Moose** which counts down by **step-size 2**, and use this thime the event **@click.left=....**
+  - Add finally a mouseover event to the image by using the event **v-on:mouseover**: it resets the counter when the mouse moves over the image
+
+===== Solution =====
+[[en:modul:m291:learningunits:lu06:loesungen:03|Lösung]]
+
+===== Vocabulary =====
+^ English ^ German ^ 
+| step-size| Schrittweite|
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

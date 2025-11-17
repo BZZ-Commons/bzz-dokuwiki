@@ -1,0 +1,31 @@
+a:2:{s:7:"current";a:9:{s:4:"date";a:2:{s:7:"created";i:1723201607;s:8:"modified";i:1727874558;}s:7:"creator";s:12:"Volkan Demir";s:4:"user";s:6:"vdemir";s:11:"last_change";a:9:{s:4:"date";i:1727874558;s:2:"ip";s:13:"194.209.11.17";s:4:"type";s:1:"E";s:2:"id";s:35:"modul:m290:learningunits:lu03:start";s:4:"user";s:6:"vdemir";s:3:"sum";s:0:"";s:5:"extra";s:0:"";s:10:"sizechange";i:0;s:4:"mode";s:4:"page";}s:11:"contributor";a:1:{s:6:"vdemir";s:12:"Volkan Demir";}s:5:"title";s:41:"LU04 - RDB: concept & notation (ERM, ERD)";s:11:"description";a:2:{s:15:"tableofcontents";a:4:{i:0;a:4:{s:3:"hid";s:34:"lu04_-_rdbconcept_notation_erm_erd";s:5:"title";s:41:"LU04 - RDB: concept & notation (ERM, ERD)";s:4:"type";s:2:"ul";s:5:"level";i:1;}i:1;a:4:{s:3:"hid";s:6:"theory";s:5:"title";s:6:"Theory";s:4:"type";s:2:"ul";s:5:"level";i:2;}i:2;a:4:{s:3:"hid";s:11:"assignments";s:5:"title";s:11:"Assignments";s:4:"type";s:2:"ul";s:5:"level";i:2;}i:3;a:4:{s:3:"hid";s:9:"solutions";s:5:"title";s:9:"Solutions";s:4:"type";s:2:"ul";s:5:"level";i:2;}}s:8:"abstract";s:503:"LU04 - RDB: concept & notation (ERM, ERD)
+
+Theory
+
+
+	* LU04a - Concept of a RDB
+	* LU04b - Data-types
+	* LU04c - ERM and ERD
+	* LU04d - The Crow's Feet Notation
+
+
+
+Assignments
+
+
+	* LU04.A01 - Choose data-types
+	* LU04.A02 - ERM: Travel_DB
+	* LU04.A03 - ERM: SchoolGrades_DB
+	* LU04.A04 - ERD: Travel DB
+	* LU04.A05 - ERD: SchoolGrades DB
+	* LU04.A06 - ERM vs. ERD
+	* LU04.A07 - ERD: Reingineering of an existing database
+
+
+
+Solutions
+
+
+	* LU04.S01 - Choose data-types
+	* LU04.S02 - ERM: Travel DB
+	* …";}s:8:"relation";a:2:{s:10:"references";a:18:{s:47:"modul:m290:learningunits:lu03:theorie:a_concept";b:1;s:49:"modul:m290:learningunits:lu03:theorie:b_datatypes";b:1;s:47:"modul:m290:learningunits:lu03:theorie:c_erm_erd";b:1;s:48:"modul:m290:learningunits:lu03:theorie:d_crowfeet";b:1;s:42:"modul:m290:learningunits:lu03:aufgaben:a01";b:1;s:42:"modul:m290:learningunits:lu03:aufgaben:a02";b:1;s:42:"modul:m290:learningunits:lu03:aufgaben:a03";b:1;s:42:"modul:m290:learningunits:lu03:aufgaben:a04";b:1;s:46:"modul:m290:learningunits:lu03:aufgaben:a05_erd";b:1;s:42:"modul:m290:learningunits:lu03:aufgaben:a06";b:1;s:46:"modul:m290:learningunits:lu03:aufgaben:a07_erd";b:1;s:43:"modul:m290:learningunits:lu03:loesungen:l01";b:1;s:43:"modul:m290:learningunits:lu03:loesungen:l02";b:1;s:43:"modul:m290:learningunits:lu03:loesungen:l03";b:1;s:43:"modul:m290:learningunits:lu03:loesungen:l04";b:1;s:43:"modul:m290:learningunits:lu03:loesungen:l05";b:1;s:43:"modul:m290:learningunits:lu03:loesungen:l06";b:1;s:43:"modul:m290:learningunits:lu03:loesungen:l07";b:1;}s:10:"firstimage";s:54:"https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png";}s:8:"internal";a:2:{s:5:"cache";b:0;s:3:"toc";b:1;}}s:10:"persistent";a:5:{s:4:"date";a:2:{s:7:"created";i:1723201607;s:8:"modified";i:1727874558;}s:7:"creator";s:12:"Volkan Demir";s:4:"user";s:6:"vdemir";s:11:"last_change";a:9:{s:4:"date";i:1727874558;s:2:"ip";s:13:"194.209.11.17";s:4:"type";s:1:"E";s:2:"id";s:35:"modul:m290:learningunits:lu03:start";s:4:"user";s:6:"vdemir";s:3:"sum";s:0:"";s:5:"extra";s:0:"";s:10:"sizechange";i:0;s:4:"mode";s:4:"page";}s:11:"contributor";a:1:{s:6:"vdemir";s:12:"Volkan Demir";}}}

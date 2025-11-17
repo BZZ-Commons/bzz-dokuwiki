@@ -1,9 +1,9 @@
 ====== LU03c - PAP - Selektion ======
 
-| {{:modul:m319:learningunits:lu03:pap_selektion.png|}} | Eine Selektion ist eine Entscheidung im Programmablauf. Zunächst besteht eine Selektion aus einer Bedingung, die mit Ja oder Nein beantwortet werden kann. Je nachdem, ob die Bedingung erfüllt ist, unterscheidet sich der Ablauf des Programms. \\ \\ Sobald die Selektion nicht mehr relevant ist für den Programmablauf, führt man die unterschiedlichen Pfade wieder zusammen. Eine Selektion hat zwei Nachfolger: \\  * einen Nachfolger wenn die Bedingung zutrifft \\  * einen Nachfolger wenn sie nicht zutrifft. |
+| {{de:modul:m319:learningunits:lu03:pap_selektion.png|}} | Eine Selektion ist eine Entscheidung im Programmablauf. Zunächst besteht eine Selektion aus einer Bedingung, die mit Ja oder Nein beantwortet werden kann. Je nachdem, ob die Bedingung erfüllt ist, unterscheidet sich der Ablauf des Programms. \\ \\ Sobald die Selektion nicht mehr relevant ist für den Programmablauf, führt man die unterschiedlichen Pfade wieder zusammen. Eine Selektion hat zwei Nachfolger: \\  * einen Nachfolger wenn die Bedingung zutrifft \\  * einen Nachfolger wenn sie nicht zutrifft. |
 
 == Beispiel: Marmeladenbrot ==
-| {{:modul:m319:learningunits:lu03:pap_marmeladenbrot.png|}} | Wir erweitern das Beispiel mit dem Butterbrot zum Marmeladenbrot: \\ Einige von Ihnen hätten lieber ein Marmeladenbrot, andere mögen keine Marmelade. | 
+| {{de:modul:m319:learningunits:lu03:pap_marmeladenbrot.png|}} | Wir erweitern das Beispiel mit dem Butterbrot zum Marmeladenbrot: \\ Einige von Ihnen hätten lieber ein Marmeladenbrot, andere mögen keine Marmelade. | 
 
 ===== Erweiterungen =====
 Diese Erweiterungen sind im ISO-Standard nicht vorgesehen.
@@ -21,7 +21,7 @@ In einem Pub gelten folgende Alterslimiten:
   * Am Wochenende haben nur Personen ab 20 Jahren Zutritt
 
 ^ Einfach-Selektion ^ Mehrfach-Selektion ^
-| {{:modul:m319:learningunits:lu03:pap_pub_einfach.png|}} | {{:modul:m319:learningunits:lu03:pap_pub_mehrfach.png|}} | 
+| {{de:modul:m319:learningunits:lu03:pap_pub_einfach.png|}} | {{de:modul:m319:learningunits:lu03:pap_pub_mehrfach.png|}} | 
 |  Hier wird der ganze Ablauf in Einfachselektionen (Ja/Nein) unterteilt. | In diesem Beispiel haben wir zunächst eine Mehrfachselektion (Alter). \\ Ist der Besucher zwischen 16 und 20 Jahre alt, so folgt eine Einfachselektion (Wochenende). \\ \\ Wie Sie sehen, wirkt der Ablauf dadurch wesentlich kompakter und einfacher. |
 
 Wenn wir uns streng an die Norm (DIN 66001) halten, so gibt es keine Mehrfachselektionen.
@@ -31,7 +31,7 @@ Solche Mehrfachbedingungen müssten in mehrere, einzelne Selektionen aufgeteilt 
 Anstelle der Raute als Symbol für eine Selektion, können Sie auch das Sechseck verwenden.
 Dadurch kann man am Computer die Bedingung leichter in das Kästchen platzieren.
 
-{{:modul:m319:learningunits:lu03:pap_selektion_sechseck.png|}}
+{{de:modul:m319:learningunits:lu03:pap_selektion_sechseck.png|}}
 
 
 ----

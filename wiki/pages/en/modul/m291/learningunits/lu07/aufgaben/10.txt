@@ -1,0 +1,64 @@
+====== LU07.A10 - Basic caluclator - TBD ======
+
+===== Prerequisites  =====
+  * Work type: Individual
+  * Means of aid: only teaching materials, no websearch, no use of ai.
+  * Timeframe: 40 Minutes
+  * Expected result: A browser based calulator which can sum up 2 digits.
+
+===== Source =====
+  * You can take any script an adjust it to your needs.
+
+===== Assignment =====
+This assignment compraises the programming of a tiny caculator for basic calculation operations, meaning two diggit have to be added together. To do the assignment we need two blocks of diggits-buttons, an operation-button for "+" and finally an ENTER-Button to execute the operation respectively to receive the result.
+
+===== Assignment A - 3' ======
+  * A01: Create in Webstorm in your directory **07_methods** a html file and name it correctly **LU07.S10**.
+  * A02: Copy the structure of the sfc from a solution of your choice (in that way we don't have to type it manually --> easer and faster)
+  * A03: Make sure to have 
+    * the assignmen number in <h1> and 
+    * the description in <h3>-format
+  * A04: Safe it.
+
+===== Assignment B - Variables - 5' =====
+ * B1: A basic calculation **3 + 3  = 6** compraises several variables: diggit1, operator, diggit2 and result
+   * **diggit1 = 0**, 
+   * **diggit2 = 0**,
+   * **operator = ''**
+   * **result**
+
+===== Assignment C - Button for diggit 1 - 5' =====
+  * C01: Create 10 (0 - 9) 
+  * C02: When clicking on one of them the content will be saved in the variable **diggit1**
+
+===== Button for diggit2 - 5' =====
+  * C03: Furthermore we need four new buttons for the operation we want to conduct. Nun  These arePlus
+    * **Plus +""
+    * **Minus -**
+    * **Mal* **
+    * **Geteilt /**
+  * C02: When clicking on one the operator-button the variable **operator** will be set.
+
+#### Übungen 21 C - Buttons für die Operatoren - 10'
+* A21.5: Nun willen wir die vier Buttons erstellen für unsere Basis-Rechenarten <b>Plus, Minus, Mal</b> und <b>Geteilt</b>. 
+* A21.6: Beim <b>CLICK</b> des jeweiligen Buttons wird die Methode <b>setOperator</b> aufgerufen, die die Variable <b>operator</b> mit der Rechenoperation festlegt..
+
+#### Übungen 21 D - Buttons für diggit1 - 5'
+* A21.7: Erstellen Sie die Buttons 0 - 9 für die zweite Zahl diggit2. Beim <b>CLICK</b> wird der entsprechende Wert in die Variable <b>diggit2</b> geschrieben.
+
+#### Übungen 21 E - Buttons für diggit2 - 10'
+* A21.8: Jetzt brauchen wir noch einen Button <b>RESET</b>, was mittels der Methode <b>reset()</b> die Werte der Variable <b> diggit1, diggit2, operator</b> und <b>result</b> auf 0 setzt.
+* A21.9: Zum Abschluss brauchen wir noch einen Button <b>CALCULATE</b>, das die Berechnung mittels der Methode  <b>calc()</b> berechnet. Es speichert das Ergebnis in der Variablen <b>result</b>.
+* A21.10: Geben Sie die jeweiligen Werte der  <b> diggit1, diggit2, operator</b> und <b>result</b> am Monitor aus.
+
+
+===== Solution =====
+[[en:modul:m291:learningunits:lu07:loesungen:10|Lösung]]
+
+===== Vocabulary =====
+^ English ^ German ^ 
+| ... | ... |
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

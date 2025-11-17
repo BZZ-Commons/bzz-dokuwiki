@@ -1,0 +1,58 @@
+====== LU02d - Zeichenketten ======
+
+===== Grundlagen der Zeichenketten =====
+
+Wie du vielleicht schon bemerkt hast, sprechen wir in der Programmierung von "String" und nicht von "Text". 
+Der Begriff "String" ist eine Abkürzung für "Zeichenkette", die beschreibt, wie der Computer Text auf einer grundlegenderen Ebene sieht: als eine Folge von einzelnen Zeichen.
+
+Bislang haben wir Strings auf zwei Arten verwendet. 
+  * Beim Üben des Druckbefehls haben wir die zu druckende Zeichenkette in Hochkomma (single quotes) an den Druckbefehl übergeben.
+  * Beim Üben des Lesens von Eingaben haben wir die gelesene Zeichenkette in einer Variablen gespeichert.
+
+In der Praxis sind Variablen benannte Behälter, die Informationen eines bestimmten Typs enthalten und einen Namen haben. 
+Typischerweise, und in Python fast immer, wird einer Variablen bei ihrer Deklaration auch ein Wert zugewiesen. 
+Du kannst einen Wert zuweisen, indem du nach der Deklaration ein Gleichheitszeichen gefolgt von dem Wert setzt.
+
+Einer String-Variable namens ''message'', wird der Wert '' 'Hello world!' '' zugewiesen:
+
+{{de:modul:m319:learningunits:lu02:blockly_string01.png?400|}}
+
+<WRAP center round box 60%>
+<code python>
+message = 'Hello world!'
+</code>
+</WRAP>
+
+Wenn eine Variable erstellt wird, wird im Programm ein bestimmter Container zur Verfügung gestellt, auf dessen Inhalt später Bezug genommen werden kann. 
+Variablen werden über ihren Namen referenziert. 
+Das Erstellen und Ausdrucken einer String-Variable erfolgt beispielsweise wie unten dargestellt:
+
+{{de:modul:m319:learningunits:lu02:blockly_string02.png?400|}}
+
+<WRAP center round box 60%>
+<code python>
+message = 'Hello world!'
+print(message)
+</code>
+<code>
+Hello world!
+</code>
+</WRAP>
+
+Eine Zeichenkette, die in Hochkomma eingeschlossen ist, wird als "String-Literal" bezeichnet, d. h. eine Zeichenkette mit einem bestimmten Wert. 
+Ein häufiger Programmierfehler ist der Versuch, Variablennamen in Hochkomma oder Anführungszeichen zu setzen. 
+Würde man die String-Variable ''message'' in Hochkomma setzen, würde das Programm den Text "message" anstelle des Textes "Hello world!" ausgeben, der in der Variablen ''message'' enthalten ist.
+
+<WRAP center round box 60%>
+<code python>
+message = 'Hello world!'
+print('message')
+</code>
+<code>
+message
+</code>
+</WRAP>
+
+----
+{{tag>M319-LU01 M319-B1F M319-C1G}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter, Kevin Maurizi

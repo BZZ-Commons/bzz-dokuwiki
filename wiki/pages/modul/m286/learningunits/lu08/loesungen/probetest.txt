@@ -1,0 +1,33 @@
+====== LU08.L03 - Probetest ======
+
+**1. Was versteht man unter dem Begriff MAC-Adresse?**\\
+Die Media Access Control, ist die Adresse einer einmalig verfügbaren Hardwarekomponente für den Zugang zum Netzwerk (Netzwerkkarte).
+
+**2. Mit welchem Befehl können Sie die MAC-Adresse des eigenen Computers ausfindig machen?**\\
+Windows: ipconfig /all in Cmd-Terminal (unter „Physikalische Adresse“)\\
+Unix (u.a. Ubuntu, Mac): ifconfig
+
+**3. Skizzieren Sie den grundlegenden Aufbau eines IP-Pakets auf!**\\
+<code>
++--------+-----------+--------------+-----------+
+| - - - - - IP-Header - - - - - - - | Payload - |
++--------+-----------+--------------+-----------+
+| Grösse | IP Sender | IP Empfänger | Nutzdaten |
++--------+-----------+--------------+-----------+
+</code>
+
+**4. Bestimmen Sie die aktuelle IP-Adresse Ihres Rechners! wie sind Sie vorgegangen?**\\
+Windows: ipconfig /all in Cmd-Terminal (unter „Physikalische Adresse“)\\
+Unix (u.a. Ubuntu, Mac): ifconfig
+
+**5. Dürfen Sie die IP-Adresse 134.45.34.12 in Ihrem privaten Netzwerk verwenden? Begründen Sie die Antwort!**\\
+Nein, der Adressbereich 134.xxx.xxx.xxx gehört nicht zum privaten Bereich.
+
+**6. Wie können Sie die IP-Adresse einer URL finden?**\\
+Mit dem Befehl tracert (Windwos) bzw. traceroute (mac, unix) im Kommandofenster resp. Terminal.
+
+**7. Wie kann sich eine zu kurz gewählte Lease-Time in einem Netzwerk negativ auswirken?**\\
+Der Rechner muss sich laufend die IP bestätigen lassen bzw. die Leasetime wieder neu starten. Im schlimmsten Fall verliert der Rechner die IP-Adresse im Betrieb und die Adresse wird andersweitig neu vergeben.
+
+**8. Warum muss ein Router zwingend über 2 Netzwerkschnittstellen verfügen?**\\
+Ein Router verbindet mindestens 2 Netzwerke. Daher muss er für jedes Teilnetzwerk eine eigene Schnittstelle aufweisen.

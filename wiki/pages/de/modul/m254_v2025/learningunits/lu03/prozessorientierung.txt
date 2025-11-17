@@ -1,0 +1,108 @@
+====== LU03a - KVP/CPI vs. BPR ======
+
+===== Einleitung =====
+
+Fast alle grösseren Unternehmen haben in den letzten Jahren und Jahrzehnten Projekte in Richtung Geschäftsprozessorientierung durchgeführt, z.B.
+
+  * Bosch mit CIP CLEANING IN PLACE)
+  * Siemens mit TOP (Time Optimized Prozess)
+  * VW mit KVP (Kontinuierlicher Verbesserungsprozess).
+
+Durch KVP konnte VW z.B. durch eine einmalige Investition von CHF 73'000.00 in einem bestimmten Bereich eine jährliche Einsparung von CHF 480'000.00 erreichen.
+
+Einsparungen können erzielt werden, wenn Prozesse standardisiert werden. 
+Dieser Effekt stellt sich aber nur ein, wenn es sich um wiederholende Vorgänge handelt, da nur dann eine Standardisierung sinnvoll ist. 
+Standardisierung heisst, dass man beim Ablauf des Prozesses anfangs mehr Aufwand hat. 
+Dann aber relativ wenig, da dann die generellen Regeln der zeitlichen Einsparung durch Vereinheitlichung greifen. 
+Standardisierung sollte aber nicht zu Over-Engineering führen, z.B. müssen nicht alle Sonderfälle geregelt werden. 
+Die Leistung ist messbar und damit kann man über Benchmarking Vergleiche mit den Besten durchführen und ist dann lern- und verbesserungsfähig.
+
+**Hinweis:** Geschäftsprozesse orientieren sich nicht an Funktionen, sondern an der Wertschöpfungsreihenfolge.
+
+===== KVP/CPI =====
+
+==== Grundlagen ====
+
+KVP (**K**ontinuierlicher **V**erbesserungs**P**rozess) bzw. CPI (**C**ontinuous **P**rocess **I**mprovement) beschreibt die Optimierung der Prozesse durch kontinuierliche, inkrementelle Verbesserung. 
+Im Gegensatz zum "radikalen Bruch" anderer Vorgehensweisen, wie BPR, ist der CPI-Ansatz ein evolutionärer Teil des Arbeitsprozesses. 
+Er orientiert sich am Kunden und hat daher die Kundenzufriedenheit und die Qualität im Mittelpunkt.
+
+{{ :modul:m254:learningunits:lu02:deming-kreis.png?400 |PDCA bzw. Deming-Kreis}} {{ :modul:m254:learningunits:lu02:pdca_deming-kreis.png?400 |}}
+
+Der PDCA-Zyklus bzw. der Deming-Zyklus und/oder Kaizen/KVP sind einige Vertreter dieser sanften Methoden.
+
+
+===== Business Process Reengineering (BPR) =====
+
+Das BPR (**B**usiness **P**rocess **R**eengineering) befasst sich mit dem Ansatz, mit welchem ein Unternehmen von einer funktionalen, hin zu einer prozessorientierten, Organisation transformiert werden soll. 
+Sie legt den Fokus auf die wichtigsten Prozesse eines Unternehmens und orientiert sich bei der Optimierung an einer stetigen Kundenausrichtung. 
+Einen weiteren Fokus legt das BPR auf die Kernkompetenzen des Unternehmens.
+
+{{ :modul:m254:learningunits:lu02:business_process_reengineering.jpg?500&nolink |Change-Management mittels dem BPR-Ansatz}}
+
+**BPR ist fundamentales Überdenken und radikale, dramatische Neugestaltung der Unternehmensprozesse!**
+
+===== Fundamental =====
+Hinterfragen der bestehenden Grundannahmen und Abläufen, um für alle Aufgaben effiziente Lösungen zu finden.
+
+  * Warum machen wir die Dinge, die wir tun? 
+  * Weshalb machen wir sie auf diese Art und Weise?
+
+===== Radikal =====
+Eine funktionsübergreifende, wertschöpfende Optimierung der Abläufe unter Einbeziehung von Kunden und Lieferanten. 
+Zum Beispiel darf Qualität nicht im Nachhinein in die Produkte hineingeprüft werden, sondern muss prozessbegleitend gefertigt werden.
+
+  * völlige Neugestaltung 
+  * Missachtung aller bestehenden Strukturen u. Verfahrensweisen
+
+===== Dramatisch =====
+Es sollen nicht nur kleine Verbesserungen angestrebt, sondern Quantensprunge erreicht, werden. 
+Zum Beispiel lassen sich Auftragsdurchlaufzeiten durch Überlappung und Parallelisierung von Abläufen drastisch verkürzen.
+Eine Massnahme ist das frühe Einbeziehen des Einkaufes, um die Beschaffungszeiten für Rohmaterialien zu reduzieren und einen früheren Fertigungsstart zu ermöglichen. 
+Als Resultat sind Verbesserungen um Größenordnungen angestrebt
+
+===== Konsequent =====
+Im Fokus steht keine partiellen Verbesserungen von bestehenden Organisationsstrukturen, sondern die Schaffung umfassend und integrierend funktionierender Organisationseinheiten.
+Zum Beispiel durch Bildung von Teams als Träger der Prozesse.
+
+===== Fazit =====
+Zusammenfassend kann man definieren, dass die besagte Prozessmethode auf vier Grundaussagen beruht:
+
+  * Das Business Process Reengineering orientiert sich an den kritischen Geschäftsprozessen.
+  * Sämtliche Geschäftsprozesse richten sich auf Kundenbedürfnisse aus.
+  * Das Unternehmen konzentriert sich auf seine Kernkompetenzen.
+  * Aktuelle Informationstechnologien unterstützen die Prozesse.
+
+<WRAP center round tip 60%>
+BPR kann nur erfolgreich sein, wenn alle Grundaussagen berücksichtigt sind. Es nützt dem Unternehmen beispielsweise nichts, wenn es sich auf seine Kernkompetenz konzentriert und dabei seine Kunden außer Acht lässt.
+</WRAP>
+
+
+===== BPR Funktionsweise =====
+
+Das //Business Process Reengineering// läuft im Wesentlichen in vier aufeinanderfolgenden Phasen ab. 
+Nach dieser Definition von Michael Hammer und James Champy steht der Kunde im Mittelpunkt. 
+Anzustreben ist eine Optimierung von mehr als 30% der Zielgrößen Qualität, Zeit, Kosten und Service.
+
+{{ :modul:m254:learningunits:lu02:bpr_phasen.png?300&direct|Vier Phasen des BPR}}
+
+  - **Erneuerung (Renewing): **In der ersten Phase sind die Mitarbeiter des Unternehmens in den Prozess einzubinden. Hierbei finden Schulungen für die Mitarbeiter statt, um Sie organisatorisch gezielter in den Unternehmensprozess einzubinden. Dies dient als Grundlage für die zweite Phase.
+  - **Revitalisierung (Revitalizing): **In der nächsten Phase betrachtet das BPR die Prozesse. Hierbei findet eine Prozessanalyse statt und ein IST-Stand wird skizziert, um ein Potential für die Optimierung zu erkennen. Gleichzeitig sind Kernprozesse zu identifizieren und im BPR auszuwerten. In einem weiteren Schritt entsteht ein SOLL-Konzept, welches die bestehenden Prozesse umstrukturiert und optimiert.
+  - **Einstellungsänderungen (Reframing): **Die dritte Phase im BPR beschreibt die Anpassung der vorherrschenden Denkmuster der Mitarbeiter. Neue Methoden und Einstellungen werden im Unternehmen etabliert.
+  - **Restrukturierung (Restructuring): **Abschließend kommt es zur Umsetzung der neu gestalteten Prozesse. Des Weiteren ist eine Überwachung der Zielerreichung notwendig, um gegebenenfalls Anpassungen vornehmen zu können.
+
+Die vier beschriebenen Phasen kann das BPR in weitere Phasen untergliedern. Diese können entstehen, wenn das Unternehmen das BPR individuell auf die Bedürfnisse der Organisation anpasst.
+
+
+===== Vergleich CPI vs. BPR =====
+
+^ Kriterium ^ Evolution (CPI) ^ Innovation (BPR) ^ 
+| Veränderung | schrittweise | radikal |
+| Ausgangspunkt  | existierender Prozess  | völlig neuer Stand |
+| Änderungshäuftigkeit | selten/ständig  | selten/einmalig |
+| Erforderliche Zeit | kurz | lang |
+| Verbesserungsweise | bottom-up | top-down |
+| Reichweite | begrenzt  | unternehmensweit, funktionsübergreifend |
+| Häufiger Auslöser | statistische Kontrolle | IT |
+| Verbesserung | meist Aufgaben | Prozess bezüglich der gewünschten Ziele |
+

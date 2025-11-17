@@ -1,0 +1,34 @@
+====== LU05.S10 - v-if and functions ======
+
+===== Hints ====
+  * Download the file and copy the content into the code area of the W3School on the left hand side of the coding window.
+  * You can execute the code by pressing the //run// button
+  * The result will be presented in the right hand side of the window.
+
+===== Assignment 1 ======
+As we are now capable to use //v-if// with logical values (true/false), and furthermore check actual values e.g. numbers, this assignment is about hoch to check //string-values// (words). For this we are going to use the function //text.includes()// within the //v-if//.
+
+  - Execute the script. As you can see the content of the variable text is displayed on the screen as //text// contains the search-string //Pizza// with a kapital //P//.
+  - Now delete the word //Pizza// from the variable //text// in the script-area. Execute your script again. 
+  - Note your realisations as a comment.
+  - Save your script acordingly, whether in your W3School workspace or locally in your Webstorm code-editor
+
+===== Assignment 2 =====
+In the if paragraph there is a image of a pizza displayed as well. 
+
+  - Add a section //v-else// with a according //img-tag// which shows a different image than a pizza.
+  - Note your realisations as a code-comment.
+  - Save your script acordingly, whether in your W3School workspace or locally in your Webstorm code-editor
+
+===== Solution =====
+{{:en:modul:m291:learningunits:lu05:loesungen:lu05.s10.zip | Source-code of the solution}}
+
+{{:en:modul:m291:learningunits:lu05:loesungen:lu05.s10.png| }}
+
+
+
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir
+  

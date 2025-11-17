@@ -1,0 +1,55 @@
+====== LU07b - Testbericht und Testprotokoll ======
+
+===== Warum Software testen? =====
+
+Beispiel aus der Praxis:  
+Ein medizinisches Gerät zeigte Patientenwerte in einem schlecht lesbaren Farbschema an. In einem Notfall wurde ein kritischer Wert von der Pflegekraft nicht richtig erkannt – mit lebensgefährlichen Folgen.
+
+  * Frühzeitige Fehlererkennung spart Zeit & Kosten.
+  * Tests zeigen, ob die Software funktioniert und gut benutzbar ist.
+  * Besonders Oberflächenfehler wirken sich direkt auf die Usability aus und sollten in frühen Tests erkannt werden.
+  * Der Kontext entscheidet, wie kritisch ein Fehler ist – doch testen lohnt sich immer!
+
+Prototypen, Mockups oder Designs können schon vor der Programmierung getestet werden – z.B. in Usability-Tests mit echten oder potenziellen Nutzer\*innen.  
+Das spart Kosten, weil Fehler oder Missverständnisse im Konzept leichter zu korrigieren sind als im fertigen Produkt.
+
+**Das Ziel:**  
+Wir wollen frühzeitig erkennen, ob die Software verständlich, bedienbar und nützlich sein wird.
+
+===== Zweck von Testfällen =====
+
+Ziel bei der Beschreibung (Spezifikation) von Testfällen ist es, mit möglichst wenigen Testfällen möglichst viele Fehler herauszufinden respektive Fehlerquellen auszuschliessen.  
+In der Praxis werden funktional zusammenhängende Testfälle gruppiert und als Ganzes beschrieben.
+
+===== Merkmale von guten Testfällen =====
+
+  * Die Testfälle sollen minimalistisch sein: Zur Aufdeckung eines bestimmten Fehlers soll möglichst nur ein Testfall gebraucht werden.
+  * Die Testfälle sollen so zusammengestellt werden, dass das gesamte Testobjekt abgedeckt wird.
+  * Die Testfälle sollen nicht nur den Normalfall abdecken, sondern insbesondere auch Grenzfälle und Ausnahmesituationen testen.
+
+===== Kriterien für die Auswahl der Testfälle =====
+
+  * **Funktionsüberdeckung:** Jede spezifizierte Funktion wird mindestens von einem Testfall geprüft.
+  * **Eingabeüberdeckung:** Jedes Eingabedatum wird mindestens von einem Testfall verwendet.
+  * **Extremwerteingaben:** Jedes Eingabefeld wird mit mind. einer Extremwerteingabe getestet.
+  * **Falscheingaben:** Jedes Eingabefeld wird mit mind. einer Falscheingabe getestet und eine Fehlermeldung erwartet.
+  * **Ausgabedatum:** Jedes Ausgabedatum wird von mindestens einem Testfall erzeugt.
+
+===== Anleitung =====
+
+Als Beispiel dient uns die **Funktionsüberdeckung**:
+
+  - Lesen Sie die Spezifikationen des zu testenden Programms.
+  - Suchen Sie alle Funktionen und tragen diese in eine Tabelle ein.
+  - Suchen Sie nach den benötigten Eingabedaten und bestimmen daraus die zu erwartenden Ausgabedaten.
+  - Daraus stellen Sie die einzelnen Testfälle zusammen und vermerken in der Tabelle, welche Funktion er testet.
+
+===== Testbericht =====
+
+Nach der Durchführung eines Tests sollten die Testresultate dokumentiert werden.  
+Der Bericht umfasst folgende Punkte:
+
+  * Einzel protokollierte Testfallergebnisse mit Status (OK / NOK / Ausnahme)
+  * Evtl. Mängelliste mit möglicher Fehlerquelle
+  * Schlussstatus (Akzeptiert / nicht oder bedingt akzeptiert) mit Vorgehensempfehlung
+  * Datum und Unterschrift des/der Prüfer/s

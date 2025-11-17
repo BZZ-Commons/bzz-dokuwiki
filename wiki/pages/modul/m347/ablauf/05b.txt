@@ -1,0 +1,16 @@
+====== Programm LU05 - AP ======
+aus LU03:
+  - Nachfragen, ob das klar ist: 03/03_Solutions/03: Push und Pull eines Image in + aus der Registry demonstrieren.
+
+LU05 - Storage:
+  * Lesen und kurz die 3 Speicher-Varianten zus.fassen: LU05a - Einführung in Storage mit Containern
+LU05b - Arbeiten mit Volumes
+Demo aus
+  * 05/01_Intro/01_Working-with-volumes.md und
+  * 05/01_Intro/02_Volumes-applied.md
+  * 05/01_Intro/02b_Volumes-applied.mp4
+
+selbstständiges Arbeiten
+  * Übungen: Lösen Sie die Übung 05/02_Exercises/01_Volumes
+  * LU05c - Arbeiten mit Bind Mounts (kurzes Dokument)
+  * LU05d - 2048-Game mit Bind Mounts hosten

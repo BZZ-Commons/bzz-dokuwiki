@@ -1,0 +1,32 @@
+====== LU08b - UML Use Case Diagramm ======
+
+===== Basis =====
+
+Das UML Use Case Diagramm zeigt die Actors (Personen, externe Organisationen) und die Use Cases (Geschäftsprozesse).
+
+{{https://upload.wikimedia.org/wikipedia/commons/1/1d/Use_case_restaurant_model.svg|Quelle: Wikimedia}}
+
+Es zeigt keinen zeitlichen Ablauf der Elemente.
+Die Anordnung der Actors und Use Cases soll möglichst übersichtlich sein.
+
+===== Symbole =====
+^ Element ^ Symbol ^ Bedeutung ^
+| Actor | {{:de:modul:m254_v2025:learningunits:lu08:actor.png?50|}} | Repräsentiert eine Person, ein System oder eine Organisation, die mit dem System interagiert.|
+| Use Case | {{:de:modul:m254_v2025:learningunits:lu08:usecase.png?100|}} | Beschreibt eine Funktion oder ein Verhalten des Systems, das für einen Akteur von Nutzen ist. |
+| System Boundary | {{:de:modul:m254_v2025:learningunits:lu08:boundry.png?100|}} | Definiert den Umfang des Systems und grenzt es von externen Akteuren ab. |
+
+==== Beziehungen ====
+{{:de:modul:m254_v2025:learningunits:lu08:relation.png?200|}}
+Eine durchgezogene Linie zeigt eine Kommunikation oder Interaktion.
+
+{{:de:modul:m254_v2025:learningunits:lu08:include.png?200|}}
+''<<include>>'' zeigt an, dass ein Use Case die Funktionalität eines anderen Use Cases enthält.
+Wenn mehrere Use Cases gemeinsame Element haben, sollten diese als eigenes Element dargestellt und mittels ''include'' eingebettet werden.
+
+{{:de:modul:m254_v2025:learningunits:lu08:extend.png?200|}}
+''<<extend>>'' stellt einen optionalen Teil eines Use Cases dar.
+Im Beispiel oben auf der Seite ist die Bestellung von Wein ein optionaler Teil einer Essensbestellung.
+
+
+
+Siehe auch [[https://www.geeksforgeeks.org/use-case-diagram/|https://www.geeksforgeeks.org/use-case-diagram/]].

@@ -1,0 +1,29 @@
+====== LU04b - Flexbox ======
+
+CSS Flexbox ist ein leistungsstarkes Layoutmodell in CSS, das entwickelt wurde, um das Design von Webseiten und Webanwendungen zu vereinfachen und flexible, dynamische Layouts zu ermöglichen. Es bietet eine effiziente Möglichkeit, Elemente innerhalb eines Container-Elements zu organisieren, auszurichten und zu verteilen, unabhängig von ihrer Grösse oder Reihenfolge.
+
+===== Grundkonzept =====
+Die Grundkonzepte von Flexbox umfassen das Container-Element und die darin enthaltenen Items. Der Flex-Container fungiert als Rahmen für das Flexbox-Layout und organisiert die Flex-Items innerhalb. Diese Items können horizontal oder vertikal angeordnet werden, je nach Ausrichtung der Hauptachse. Die Hauptachse definiert die Richtung, in der die Flex-Items im Container angeordnet sind, während die Querachse senkrecht dazu steht und die Ausrichtung der Items in Bezug auf die Hauptachse beeinflusst. Das Verständnis dieser Grundkonzepte ist entscheidend für die effektive Nutzung von Flexbox zur Erstellung dynamischer und flexibler Layouts in CSS.
+
+{{:modul:m287:learningunits:lu04:flexbox.png?600|}}
+
+===== Eigenschaften des Containers =====
+^ Eigenschaft ^ Beschreibung ^
+| flex-direction | Bestimmt die Richtung der Hauptachse. Mögliche Werte sind: row, row-reverse, column, column-reverse. |
+| flex-wrap | Kontrolliert, ob die Items in einer einzigen Zeile bleiben oder bei Bedarf in mehrere Zeilen umgebrochen werden. Mögliche Werte sind: nowrap, wrap, wrap-reverse. |
+| justify-content | Definiert die Ausrichtung der Items entlang der Hauptachse. Dies beeinflusst, wie überschüssiger Platz auf der Hauptachse verteilt wird. |
+| align-items | Bestimmt die Ausrichtung der Items entlang der Querachse, wenn sie auf der Hauptachse nicht den gesamten verfügbaren Platz einnehmen. |
+| align-content | Steuert die Ausrichtung und Verteilung mehrerer Zeilen von Items entlang der Querachse. |
+
+===== Eigenschaften des Items =====
+^ Eigenschaft ^ Beschreibung ^
+| order | Ändert die Reihenfolge der Items innerhalb des Flex-Containers. Items mit einer niedrigeren Reihenfolge werden zuerst angezeigt. |
+| flex-grow | Legt fest, wie viel zusätzlichen Platz ein Flex-Item entlang der Hauptachse einnehmen kann, im Verhältnis zu anderen Flex-Items. |
+| flex-shrink | Definiert, wie stark ein Flex-Item kleiner werden kann, um sich an den verfügbaren Platz anzupassen, im Verhältnis zu anderen Flex-Items. |
+| flex-basis | Legt die bevorzugte Anfangsgrösse eines Flex-Items entlang der Hauptachse fest, bevor zusätzlicher Platz verteilt wird. |
+| flex | Eine verkürzte Schreibweise für flex-grow, flex-shrink und flex-basis in einem Wert. |
+| align-self | Überschreibt die Ausrichtungsvorgaben des Flex-Containers für ein einzelnes Flex-Item. |
+
+===== Ressourcen =====
+  * [[https://css-tricks.com/snippets/css/a-guide-to-flexbox/|CSS-Tricks: A Complete Guide to Flexbox]]
+  * [[https://www.w3schools.com/css/css3_flexbox.asp|W3S: CSS Flexbox]]

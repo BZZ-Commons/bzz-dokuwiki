@@ -1,0 +1,14 @@
+====== Programm LU06 - AP ======
+aus LU05: Demo Musterlösung
+  - 05/03_Solutions: 02-BindMounts.md + 03_Host-Game-2048.md 
+\\
+LU06 - Multi-Container
+     - Grundlagen Videoinput zusammen anschauen.
+     - LU06b - Docker-Compose-File: selbstständig lesen
+     - LU06c - Arbeiten mit Multi-Containern
+
+Demo 
+  * 06\01_Intro\01_Working-with-DockerCompose.md
+  * Repetition wie über ssh ein Webport mit -L gemappt wird.
+Übung
+  *  06/02_Exercises/

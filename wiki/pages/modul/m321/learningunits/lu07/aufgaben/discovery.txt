@@ -4,9 +4,6 @@ Erstelle einen einfachen Discovery Service auf Basis von Sockets.
 Die Programmvorlage basiert auf dem Code von [[https://realpython.com/python-sockets/]].
 </WRAP>
 
-**[[https://classroom.github.com/a/FyhZifkw|GitHub Classroom Assignment]]**
-
-
 
 ===== Ausgangslage =====
 Der Discovery-Service ist ein Python-Skript, welches die Services in unserem verteilten System verwaltet.

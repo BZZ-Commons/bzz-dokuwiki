@@ -1,0 +1,76 @@
+======= Lernziele LB01 ======
+\\
+\\
+====== LU01a - Begriffe und Konzepte ======
+===== Ziele =====
+  -Ich kann die vorausgesetzten Begriffe und Konzepte zum Modul in eigenen Worten wiedergeben.
+  -Ich kann ein passendes Beispiel zum Begriff resp. Konzept angeben und erklären.
+
+
+\\
+====== LU01b - Einführung in NoSQL-Datenbanken ======
+===== Ziele =====
+  -Ich kann Beispiele von NoSQL-Typen und Provider/Hersteller aufzählen.
+  -Ich kann umschreiben, wann eine relationale DBMS (RDBMS) verwendet wird.
+  -Ich kann umschreiben, wann eine NoSQL-DBMS verwendet wird.
+  -Ich kann Unterschiede zwischen RDBMS und NoSQL-DBMS hinsichtlich Schema, Datemodell, Speicherstruktur, Normalisierung und Scaling aufzählen und beschreiben.
+  -Ich kann die Eigenschaften und Vorteile von MongoDB als NoSQL-DB aufzählen?
+  -Ich kann die Editions von MongoDB aufzählen?
+  -Ich kann die Deployment-Typen von MongoDB aufzählen?
+
+\\
+====== LU01c - Setup Development-Umgebung ======
+===== Ziele =====
+  -Ich kann selbstständig die notwendigen Software installieren und konfigurieren.
+  -Mögliche Fehlern kann ich analysieren, eine erste Massnahme vorschlagen und diese ausprobieren (Troubleshooting).
+
+\\
+====== LU02a - Elemente von MongoDB ======
+===== Ziele =====
+  -Ich kann beschreiben, was ist ein Document ist.
+  -Ich kann beschreiben, was ist eine Collection ist.
+  -Ich kann beschreiben, woraus eine MongoDB-Datenbank besteht/sich zusammensetzt.
+
+\\
+====== LU02b - Verbindung und einfache Operationen mit MongoDB ======
+===== Ziele =====
+  -Ich kann eine Verbindung zu MongoDB über einen DBMS-Client herstellen.
+  -Ich kann eine Datenbank mit Collection und Documents erstellen und ausgeben.
+  -Ich kann eine Datenbank oder eine Collection löschen.
+
+\\
+====== LU02c - Einführung in JSON ======
+===== Ziele =====
+  -Ich kann den Begriff ''JSON'' in eigenen Worten erklären und wozu es eingesetzt werden kann.
+  -Ich kann die unterstützten Datentypen von ''JSON'' aufzählen.
+  -Ich kann die Syntax von ''JSON'' an einem Beispiel erklären.
+  -Ich kann die Syntax eines ''JSON''-Dokuments mit geeigneten Tools validieren.
+  -Ich kann Beispiele zu ''JSON''-Daten mit Praxisbezug erstellen, sinnvoll abändern und erweitern.
+  -Ich kann syntaktische (Aufbau) und semantische (Bedeutung) Programmfehler selbstständig erkennen und beheben.
+
+====== LU02d - Datentypen in MongoDB ======
+===== Ziele =====
+  -Ich kann die MongoDB-Datentypen syntaktisch  und (semantisch) korrekt programmieren und anwenden.
+  -Ich kann mögliche Programmierfehler selbstständig erkennen und beheben.
+  -Ich kann Beispiele zu den MongoDB-Datentypen mit Praxisbezug erstellen, sinnvoll abändern und erweitern.
+  -Ich kann die Limitierungen von MongoDB-Datentypen hinsichtlich Datenhaltung aufzählen und beschreiben.
+
+====== LU02e - Datentypen in MongoDB (Forts.) ======
+===== Ziele =====
+  -Ich kann die MongoDB-Datentypen syntaktisch  und (semantisch) korrekt programmieren und anwenden.
+  -Ich kann mögliche Programmierfehler selbstständig erkennen und beheben.
+  -Ich kann Beispiele zu den MongoDB-Datentypen mit Praxisbezug erstellen, sinnvoll abändern und erweitern.
+  -Ich kann die Limitierungen von MongoDB-Datentypen hinsichtlich Datenhaltung aufzählen und beschreiben.
+
+\\
+====== LU03a - Datenbank in MongoDB restoren (wiederherstellen)  ======
+===== Ziele =====
+  -Ich kann eine Datenbank in MongoDB importieren.
+  -Ich kann die MongoDB-Tools herunterladen und installieren.
+  -Ich kann die Pfad-Variable zu den MongoDB-Tools für meine Shell setzen.
+  -Ich kann das Repo mit den Sample-DB's clonen
+  -Ich kann eine MongoDB-Datenbank restoren (wiederherstellen)
+  -Ich kann den Restore überprüfen
+  -Ich kann eventuelle Fehler selbstständig erkennen, Massnahmen vorschlagen und mind. eine Massnahme umsetzen.
+
+\\

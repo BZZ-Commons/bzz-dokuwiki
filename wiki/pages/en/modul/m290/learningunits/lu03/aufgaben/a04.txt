@@ -1,0 +1,38 @@
+====== LU04.A04 - ERD: Travel DB ======
+
+After developing our conceptional data model, the next step to establish a physical data base is shape a ERD, the Entity Relationship Diagram. 
+
+===== Prerequisites  =====
+  * Work type: Peer
+  * Means of aid: only teaching materials, no use of ai.
+  * Timeframe: 10 Minutes
+  * Expected result: A Word/PDF file with an ERD that visualises the given business case.  
+
+====== LU03.A04 - ERD: Travel DB ======
+
+Below figure of a conceptual data-model illustrates  the basic database structure of a Travel_DB. It consists of three base tables and two relations.
+
+{{:modul:m290:learningunits:lu03:aufgaben:a04.drawio.png?1400|}}
+
+==== Task ====
+Your assignment is to analyze the given ERD (coneptual datamodel), which is in fact the last step before creating the actual db in our Mysql database system, and draw the ERD as a logial data model. The sub-tasks are:
+
+  - develop the logical datamodel (tables, attributes, data types, fk/pk) by using the Crow's Foot Notation
+  - realize the relation as relation tables (id, fk_tab1, fk_tab2, ...)
+  - finalize the ERM by adding the cardinalities (1:1, 1:many, ...)
+  - 
+
+===== Solution =====
+
+[[modul:m290:learningunits:lu03:loesungen:l04|Lösung]]
+
+
+
+===== Vocabulary =====
+^ English ^ German ^ 
+| prerequisite | Grundvoraussetzung |
+| given | gegebene, vorausgesetzt |
+| mandatory | zwingend |
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

@@ -1,0 +1,33 @@
+====== LU19e - Aufgabe 2 / Task 41: events ======
+
+===== Administration =====
+Füllen Sie die nachfolgenden Felder aus:
+
+**Klasse:** ....................................
+
+**Vorname:** .................................
+
+**Name:** ......................................
+
+===== Vorarbeit =====
+  * Verwenden Sie als Basis zu dieser Aufgabe die Lösung **LU06.S07.html**
+
+===== Ausgangslage =====
+Beim Auftrag **LU06.A07** haben wir mittels **events** Farbwerte von Farbfeldern manipuliert. Durch das Drücken der linken bzw. linken Maustaste über dem Farbfeld wurden dabei die Farbwerte um eine bestimmte Schrittweiter erhöht bzw. vermindert. 
+
+{{:en:modul:m291:learningunits:lu19:theorie:m291_lb2_a41.source.png?500|Ausgangslage dieser Aufgabe}}
+
+===== Auftrag =====
+  - Erweitern Sie das bestehende Script um ein weiteres Farbfeld.
+  - Der Startwert der Farbe im neuen Farbfeld ist dabei 1000.
+  - Die Schrittweiter beim event "mouseover" ist +100.
+  - Fügen Sie einen Button zum resetten aller Farben auf den Startwert ein.
+
+^Zielzustand 1 ^Zielzustand 2 ^
+| Farben werden wie in den Farbfeldern beschrieben, durch Maus-Events verändert. Der Button //Reset all colours// wurde noch nicht gedrückt. | Der Button //Reset all colours// wurde gedrückt, und damit alle Farben auf den Startwert gesetzt. |
+| {{:en:modul:m291:learningunits:lu19:theorie:t41_ziel1.png?600|}}| {{:en:modul:m291:learningunits:lu19:theorie:t41_ziel2.png?600|}} |
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir
+

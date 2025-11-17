@@ -12,15 +12,15 @@ Das ''<datalist>''-Element in HTML wird verwendet, um eine vordefinierte Liste v
     <label> Vogelart
       <input type="search" list="Voegel" />
       <datalist id="Voegel">
-        <option value="Amsel">
-        <option value="Buntspecht">
-        <option value="Drossel">
-        <option value="Eisvogel">
-        <option value="Fink">
-        <option value="Graugans">
-        <option value="Meise">
-        <option value="Spatz">
-        <option value="Specht">
+        <option value="Amsel"></option>
+        <option value="Buntspecht"></option>
+        <option value="Drossel"></option>
+        <option value="Eisvogel"></option>
+        <option value="Fink"></option>
+        <option value="Graugans"></option>
+        <option value="Meise"></option>
+        <option value="Spatz"></option>
+        <option value="Specht"></option>
       </datalist>
     </label>
     <button>finden!</button>

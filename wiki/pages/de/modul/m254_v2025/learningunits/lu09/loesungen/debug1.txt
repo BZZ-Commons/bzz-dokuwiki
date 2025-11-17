@@ -1,0 +1,15 @@
+====== LU09.L04: Debugging 1 ======
+{{:modul:m254:learningunits:lu04:loesungen:bpmn_debugging_1_solution.png?600|}}
+
+  - Ein Ereignisteilprozess (Teilprozess 1) darf keinen ein- und ausgehenden Sequenzfluss aufweisen.
+  - Ein Ereignisteilprozess (Teilprozess 1) darf nicht mit dem Marker Ad-Hoc modifiziert werden.
+  - Es wurde ein ereignisbasiertes Gateway (instanziierend) anstatt eines nichtinstanziierenden ereignisbasierten Gateways verwendet.
+  - Datenobjekte dürfen nicht mit Gruppen verknüpft werden.
+  - Ereignisse nach einem ereignisbasierten Gateway dürfen nicht mehrere eingehende Sequenz Flüsse aufweisen.
+  - Das Ereignis 2 darf mit Aufgabe 3 nur mit einem Sequenzfluss verbunden werden, anstatt mit einer gerichteten Assoziation.
+  - Die Aufgabe 3 darf mit Ereignis 3 nur mit einem Sequenzfluss verbunden werden, anstatt mit einem Nachrichtenfluss.
+  - Es dürfen nur typisierte Startereignisse (Nachricht, Timer, Eskalation, Bedingung, Fehler, Kompensation, Signal, Mehrfach, Mehrfach/Parallel) für den Ereignisteilprozess verwendet werden.
+  - Die Kompensationsaufgabe darf nicht im normalen Sequenzfluss verwendet werden, sondern nur in Verbindung mit dem Kompensationsereignis.
+  - Sofern ein Startereignis verwendet wird, muss auch ein Endereignis verwendet werden.
+  - An eine Gruppe darf kein Ereignis angeheftet werden. Ereignisse dürfen nur an Aktivitäten angeheftet werden.
+  - Ein Zwischenereignis (Ereignis 4 und Ereignis 6) muss mindestens einen ein bzw. ausgehenden Sequenzfluss aufweisen.

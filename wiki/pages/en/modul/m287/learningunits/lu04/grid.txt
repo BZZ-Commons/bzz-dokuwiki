@@ -1,0 +1,76 @@
+====== LU04c - Grid ======
+
+CSS Grid is a powerful layout model in CSS that was developed to improve the design of websites and web applications by providing a precise and flexible way to arrange elements in a two-dimensional grid.
+
+An HTML element becomes a grid container through the CSS property `display: grid;`, which forms the grid for the CSS grid layout. The direct child elements of this container are called grid items and are positioned within the grid. The grid is made up of horizontal and vertical lines. The numbers of the individual lines determine where an area begins and where it ends.
+
+==== Rows and columns ====
+
+With `grid-template-columns` or `grid-template-rows` we define the height and width of the rows. The value "fr" (fraction) defines an area in the grid. This can also be replaced by fixed values such as `100px`. The advantage of "fr" lies in its responsiveness. The width of the fraction adapts to the total width.
+
+An example with two rows and three columns:
+
+<code css>
+.grid-container {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-template-rows: 1fr 1fr;
+   width: 600px;
+   height: 400px;
+}
+</code>
+
+{{ modul:m287:learningunits:lu04:grid-1.svg?600 }}
+
+==== Placing elements in the grid ====
+
+We can now place an element in this grid as we wish. To do this, we can use `grid-column-start`, `grid-column-end`, `grid-row-start` and `grid-row-end` to specify the start and end of our element in the grid. As mentioned in the previous section, the grid is divided into numbers. For example, you can place an element in the centre of our grid:
+
+<code css>
+.grid-item {
+   grid-column-start: 2;
+   grid-column-end: 3;
+   grid-row-start: 2;
+   grid-row-end: 3;
+   background-color: blue;
+}
+</code>
+
+{{ modul:m287:learningunits:lu04:grid-2.svg?600 }}
+
+There is also a short form of the notation for the rows and columns. You can use the `grid-column` and `grid-row` statements to specify the start and end of an element in the grid, separated by a `/`.
+
+<code css>
+.grid-item {
+   grid-column: 2/3;
+   grid-row: 1/4;
+}
+</code>
+
+{{ modul:m287:learningunits:lu04:grid-3.svg?600 }}
+
+===== Grid Areas =====
+
+With `grid-template-areas` we have the possibility to define different areas in our grid. We can then use `grid-area` to place our elements within the specified areas.
+
+<code css>
+.grid-container {
+   grid-column-template: "1fr 1fr 1fr";
+   grid-template-areas: "header    header header"
+                        "thumbnail text   links "
+                        ".         text   .     ";
+}
+
+.article-title {
+   grid-area: header;
+}
+
+.article-img {
+   grid-area: thumbnail;
+}
+</code>
+
+==== Resources ====
+
+  * [[https://www.mediaevent.de/css/grid.html|Mediaevent: CSS Grid]]
+  * [[https://www.mediaevent.de/css/grid-template-areas.html|Mediaevent: CSS Grid Template Areas]]

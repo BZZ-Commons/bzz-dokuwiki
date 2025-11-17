@@ -1,0 +1,40 @@
+====== LU05.A13 - v-show applied to images ======
+
+===== Prerequisites  =====
+  * Work type: Individual
+  * Means of aid: only teaching materials, no websearch, no use of ai.
+  * Timeframe: 15 Minutes
+  * Expected result: A Vue script that fades-in and fades-out images.
+
+===== Learning objectives =====
+  -  Using v-show  to simple image examples. 
+
+===== Source =====
+  * [[https://www.w3schools.com/vue/tryit.php?filename=tryvue_v-show_div | v-show code-example]]
+  
+===== Assignment ======
+This assignment about fading-in and fading-out of images by using the vue-directive v-show in the concerning HTML-Tag. Similar to the previous assignment this is realized by changing the value of the v-show-attribute between //TRUE// and //FALSE//. 
+
+  - Click the link above to the code-exambpe to get to the W3School-TryOut area.
+  - Save the code with a suitable name, such as LU05.S13.html.
+  - Have it run by clicking the //run-button//.
+  - Search in the internet for images of bulbs and save it in your workspace in the director //media//
+  - Create a own image-tag.
+  - Use the v-show directive for the visibality of the bulb by stearing it with the //v-show// by changing the value of //showDiv// between //true// and //false//.
+  - Note the result as a html-comment und beobachten Sie die Reaktion der Applikation.
+  - Save your result, you may need it as a exam-preparation.
+
+
+===== Solution =====
+[[en:modul:m291:learningunits:lu05:loesungen:13|Lösung]]
+
+
+
+===== Vocabulary =====
+^ English ^ German ^ 
+| bulb | Glühbirne |
+
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

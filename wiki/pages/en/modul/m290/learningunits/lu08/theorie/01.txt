@@ -1,0 +1,64 @@
+====== LU10a - 3-Tiers-Webarchitecture ======
+
+===== Learning Objectives =====
+  - Describe the 3 tiers of a typical web communication
+  - Name the languages or software, which are used on each tier  
+
+===== WHAT is a 3 tiers web architecture? ====
+The 3-tier web architecture is a way of structuring a website or application to make it more organized, secure, and easy to manage. It splits everything into three main layers:
+
+{{:modul:m290:learningunits:lu08:theorie:3-tiers.png?500|}}
+
+Each layer has a specific job and only communicates with the layer directly next to it. This separation helps improve security (each layer only does what it's supposed to), makes it easier to update or fix issues, and allows each layer to be scaled independently if the app grows.
+
+{{ :modul:m290:learningunits:lu08:theorie:3_tier_architecture.mp4 |What is a 3 Tiers Architecture?}}
+
+==== 1. Presentation Layer/Tier (Frontend) ====
+  * This is the layer that users see and interact with, like a website or app screen.
+  * It’s built with HTML, CSS, and JavaScript to show things like buttons, text, images, and form fields.
+  * For example, on a social media app, the Presentation Layer is the feed where you see posts and pictures.
+
+**Popular programming languages on the 1st layer**
+  * HTML: For structuring web content.
+  * CSS: For styling and layout.
+  * JavaScript: For adding interactivity and dynamic behavior.
+  * TypeScript: A superset of JavaScript that adds static typing.
+  * Frameworks: React, Angular, and Vue are popular frontend frameworks built on JavaScript.
+
+==== 2. Application Layer/Tier (Backend) ====
+  * This layer handles the "thinking" part of the app. It takes care of things like processing requests, running calculations, and managing the app's logic.
+  * When you enter your login info, the Application Layer checks if it’s correct and decides what happens next.
+  * It’s built with programming languages like Python, Java, PHP, or frameworks like Node.js.
+
+**Popular programming languages on 2nd layer**
+  * JavaScript/Node.js: Used to build server-side applications with JavaScript.
+  * Python: Common for web development with frameworks like Django and Flask.
+  * Java: Widely used in large-scale applications, often with Spring Boot.
+  * Ruby: Often used with Ruby on Rails for rapid development.
+  * PHP: Common in web development, especially with systems like WordPress and Laravel.
+====  3. Data Layer/Tier ====
+  * This layer stores all the data the app needs, like user accounts, messages, or posts.
+  * When you log in, this layer is where your username and password are checked against stored data.
+  * It’s often managed with a database system like MySQL, PostgreSQL, or MongoDB.
+
+**Popular programming languages on 3rd layer**
+  * SQL-Based: Languages like SQL work with relational databases like MySQL, PostgreSQL, and Oracle.
+  * NoSQL-Based: MongoDB and Cassandra use JSON-like documents instead of traditional tables.
+  * Other Database Languages: PL/pgSQL for PostgreSQL and PL/SQL for Oracle are specialized SQL extensions that add procedural elements.
+
+===== The winner is .... JavaScript =====
+As you can see, the programm language JavaScript is used on both layers, presentation and logic layer. It is thereforeclear that we will also program our server in JavaScript in this Module 290. As we are already familiar with JavaScript, we do not have to explicitely learn a new programm language, but simply use the old one for a new purpose. The relevant JavaScript components are
+
+  * **Node.js:** Node.js is an open-source, cross-platform runtime environment built on the V8 JavaScript engine, designed to execute JavaScript code outside of a web browser. Node.js enables JavaScript to be used for server-side programming, which allows developers to build scalable and efficient backend services.
+
+  * **NPM:** NPM, or Node Package Manager, is a package manager specifically designed for JavaScript. It is an essential part of the Node.js ecosystem and is used by developers to manage dependencies and libraries in their projects. 
+
+  * **Express: **Express is a popular web application framework for Node.js. It was developed to facilitate the creation and management of server-side applications and APIs in JavaScript. It is also known as //middleware// because of its extensive capabilities, as it enables JavaScript to use some of the operating system's capabilities, such as listening to ports for web communication.
+                  
+==== Vocabulary ====
+^English ^ Deutsch ^
+| ... | ... |
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

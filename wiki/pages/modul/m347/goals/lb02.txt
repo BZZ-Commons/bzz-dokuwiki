@@ -1,0 +1,66 @@
+====== Lernziele LB02 ======
+[[modul:m347:goals:lb01|Lernziele LU01 bis LU03]] und
+\\
+\\
+====== LU04a - Images und Container verwalten ======
+===== Ziele =====
+  -Ich kann spezifisch nach Images auf Docker-Hub suchen (''search'').
+  -Ich kann Images von Docker-Hub holen (''pull'') und auflisten (''ls'')
+  -Ich kann Images inspizieren (''inspect'')
+  -Ich kann einen Container erzeugen (''create''), starten (''run'') und 
+erneut starten (''restart'').
+  -Ich kann einen Container umbenennen (''rename'').
+  -Ich kenne den Unterschied zwischen anbinden (''attach'') und ausführen (''exec'')
+  -Ich kann Container und Images löschen (''rm or rmi'').
+  -Ich kann mögliche Fehlermeldung lesen und interpretieren.
+  -Ich kann mindestens eine Massnahme bei Fehlermeldung vorschlagen und umsetzen.
+
+\\
+====== LU04b - Netzwerk von Containern verwalten ======
+===== Ziele =====
+  -Ich kann das Netzwerk für Container ausgeben (''network ls <filter>'').
+  -Ich kann die IP-Adresse eines Containers ausgeben (''inspect'').
+  -Ich kann den Port eines Containers explizit oder automatisch setzen (''-p <mapping-values> or -P'').
+  -Ich kann den Port eines Containers ausgeben (''port'').
+  -Ich kann eine Netzwerk-Bridge erzeugen (''--driver bridge <name> or <subnet>'').
+  -Ich kann mögliche Fehlermeldung lesen und interpretieren.
+  -Ich kann mindestens eine Massnahme bei Fehlermeldung vorschlagen und umsetzen.
+
+\\
+====== LU05a - Einführung in Storage mit Containern ======
+===== Ziele =====
+  -Ich kann erklären, warum ich explizit Storage (Speicher) anlegen muss.
+  -Ich kann Storage (Speicher) anlegen und verwalten.
+  -Ich kann mögliche Fehlermeldung lesen und interpretieren.
+  -Ich kann mindestens eine Massnahme bei Fehlermeldung vorschlagen und umsetzen.
+
+\\
+====== LU05b - Arbeiten mit Volumes ======
+===== Ziele =====
+  -Ich kann Volumes anlegen und entfernen.
+  -Ich kann mögliche Fehlermeldung lesen und interpretieren.
+  -Ich kann mindestens eine Massnahme bei Fehlermeldung vorschlagen und umsetzen.
+\\
+====== LU05c - Arbeiten mit Bind Mounts ======
+===== Ziele =====
+  -Ich kann Bind Mounts anlegen und entfernen.
+  -Ich kann mögliche Fehlermeldung lesen und interpretieren.
+  -Ich kann mindestens eine Massnahme bei Fehlermeldung vorschlagen und umsetzen.
+\\
+====== LU06a - Multicontainer mit Docker-Compose ======
+===== Ziele =====
+  -Ich kann den Zweck von Docker-Compose beschreiben.
+  -Ich kann die grundlegenden Komponenten von Docker aufzählen.
+\\
+====== LU06b - Docker-Compose-File  ======
+===== Ziele =====
+  -Ich verstehe die Struktur eines Docker-Compose-Files.
+  -Ich kann ein Docker-Compose-Files nach Vorgaben anpassen.
+  -Ich kann mögliche Fehlermeldung lesen und interpretieren.
+  -Ich kann mindestens eine Massnahme bei Fehlermeldung vorschlagen und umsetzen.
+\\
+====== LU06c - Arbeiten mit Multi-Containern ======
+===== Ziele =====
+  -Ich kann Multi-Containern anlegen und entfernen.
+  -Ich kann mögliche Fehlermeldung lesen und interpretieren.
+  -Ich kann mindestens eine Massnahme bei Fehlermeldung vorschlagen und umsetzen.

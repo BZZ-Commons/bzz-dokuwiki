@@ -1,5 +1,5 @@
 ====== LU10d - Anpassen und Erweitern ======
-<nodisp>TODO SuMa, PrRe: @override aus Python >= 3.12 prüfen</nodisp>
+/*TODO SuMa, PrRe: @override aus Python >= 3.12 prüfen*/
 Das Konzept der Vererbung weist zwei grundlegende Aspekte betreffend der Auswirkungen auf die Programmausgestaltung aus. Eine Unterklasse kann Code erweitern oder Code in angepasster Form ausführen.
 ===== Erweitern =====
 Das Wort "erweitern" sagt bereits klar aus, was hier Sache ist. 

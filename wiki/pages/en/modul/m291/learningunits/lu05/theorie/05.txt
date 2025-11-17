@@ -1,0 +1,44 @@
+====== LU05e - v-for ======
+
+===== Learning ojectives =====
+  - I can explain what function v-for directives fulfil within the DOM.
+  - I can explain which data types v-for is suitable for.
+  - I can name the list display variants that are possible with v-for.
+
+===== Source =====
+[[https://www.w3schools.com/vue/vue_v-for.php|W3School v-for]]
+===== Introduction ====
+The **v-for** directive in Vue.js is a powerful tool for rendering (the process of converting data, code or digital instructions into a visual representation on the screen) lists of elements in HTML templates. It allows developers to iterate through a data source and create a template element for each element in the data source (e.g. array). In addition to basic lists, **v-for** can also be used to iterate (loop through) a series of numbers, object properties or even nested structures. By combining it with other directives such as **v-bind** and **v-on**, **v-for** extends the possibilities of interactive data binding in Vue applications.
+
+
+  <template>
+    <ul>
+      <li v-for="(item, index) in items" :key="index">
+        {{ index + 1 }}. {{ item }}
+      </li>
+    </ul>
+  </template>
+
+  <script>
+  export default {
+    data() {
+      return {
+        items: ["Apple", "Banana", "Cherry"]
+      };
+    }
+  };
+  </script>
+
+**Explanation**
+  * The v-for="(item, index) in items" directive loops through the items array.
+  * :key="index" helps Vue track each element efficiently.
+  * The output will be a list displaying "Apple," "Banana," and "Cherry" in order.
+
+
+===== Vocabulary =====
+^ English ^ German ^ 
+| to render | ausgeben (Listen) |
+| to iterate | wiederholen, durchlaufen | 
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

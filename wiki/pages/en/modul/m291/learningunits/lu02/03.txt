@@ -1,0 +1,39 @@
+====== LU02c - LB2 - Administration ======
+
+===== Formalitäten =====
+  * Länge: ca. 30-40 Minuten
+  * Datum: Siehe Moodle
+  * Gewichtung: 60%
+  * Form: Individuell
+  * Typ: Codieraufgaben mit Abgabe in Moodle
+  * Hilfsmittel: 
+    * Alle ** Eigenen Unterlagen**, d.h. keine Scripts, die von Ihren Kollegen kopiert wurden. Erkennbar am Source-Code-Header. 
+    * AI-Tools
+    * **Keine Kamera/Smartphone**
+
+===== Hinweise ====
+  * **Zeitslot:** müssen nur zu einem der beiden genannten Daten (Tag und Gruppe) zur Prüfung erscheinen.
+  * **Eigenleistung:** Es wird nur die Eigenleistung bewertet, die Sie mit den entsprechenden Tools zur Prüfungszeit, liefern können.
+  * **Autorenschaft: **Ist die Autorenschaft im Code nicht klar, wird dieser Bewertungs-Aspekt mit 0 Punkten bewertet.
+  * **Fremdautorenschaft:** Aufträge, die im Code mit Fremdautorenschaft erkennbar sind, werden mit 0 Punkten bewertet, da die Eigenleistung als nicht vorhanden angenommen wird.
+
+===== Bewertungskriterien =====
+  * Eigenleistung!!!
+  * Sichtbares Ergebnis im Browser 
+  * Vollständigkeit der Auftragserledigung
+  * Formalitäten: Filename, Ordnerstruktur, Titel, Inline-Kommentare, Source-Code-Header (Auskunft über die Autorenschaft)
+
+===== Art der Fragen/Aufträge =====
+  * Ergänzen von bestehendem Code nach Vorgaben (Bestehende Aufträge aus dem Unterricht)
+  * Eine Variante des Codes in eine andere Variante überführen können.
+
+===== Vorbereitung =====
+  * Alle Lösungen zu den Aufträge sind im Webstorm in einer geeignet Ordnerstruktur abgelegt
+  * Es existiert ein //media//-ordner, der auf der gleichen Stufen wie die Aufgaben-Ordner ist.
+  * Alle Lösungen haben einen der Aufgabe entsprechenden Namen: //lu05.s03.html//
+  * Alle Lösungen haben den Filenamen und die Zielsetzung des Auftrages als //<h1>-tag// und eine kurze Beschreibung in als //<h3>-tag//
+  * Alle Files haben eine Header mit Autor, Datum, und einer kurzen Beschreibung (Beispielsweise als HTML-Code-Kommentar)
+  * Alle Lösungen sind im HTML und im Template-Bereich sinnvoll nach **best-practise** kommentiert
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

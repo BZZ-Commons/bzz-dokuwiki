@@ -1,7 +1,7 @@
 ====== LU01a - Java-Basics: Vom Programmcode zum ausführbaren Programm ======
 Das Prinzip der Erstellung eines Java-Programms wird am einfachsten deutlich, wenn man auf die folgende Abbildung blickt:
 
-{{ :modul:m319:learningunits:lu01:jvm.png?400 |}}
+{{ de:modul:m319:learningunits:lu01:jvm.png?400 |}}
 
 Java-Quellcode kann mit einem beliebigen Texteditor oder, wie in der Praxis üblich, mit einer umfassenden und komfortablen **IDE** (Integrated Development Environment) erstellt werden. Der Quellcode wird von einem **Compiler** in den so genannten Zwischencode (**Java-Bytecode**) überführt, welcher später in der jeweiligen virtuellen Maschine auf dem Zielbetriebssystem ausgeführt wird.
 

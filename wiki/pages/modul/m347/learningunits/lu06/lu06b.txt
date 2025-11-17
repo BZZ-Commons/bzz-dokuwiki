@@ -1,0 +1,92 @@
+====== LU06b - Docker-Compose-File  ======
+===== Ziele =====
+  -Ich verstehe die Struktur eines Docker-Compose-Files.
+  -Ich kann ein Docker-Compose-Files nach Vorgaben anpassen.
+  -Ich kann mögliche Fehlermeldung lesen und interpretieren.
+  -Ich kann mindestens eine Massnahme bei Fehlermeldung vorschlagen und umsetzen.
+\\
+===== Docker-Compose =====
+Create a collection of interconnected containers, networks, and volumes with a single command.</small>
+
+==== Command-Line-Interface (CLI) ====
+The most important commands regarding docker-compose:
+
+<code>
+docker-compose up: create all containers, networks and volumes described in our docker-compose file
+docker-compose up -d: same as above, but run containers in detached mode
+docker-compose -f <filename> up: create containers based on a different docker-compose file
+docker-compose down: remove all containers and networks
+docker-compose down -v: remove all containers, networks, and volumes
+</code>
+
+==== Docker-Compose file ====
+The docker-compose tool uses files written in a data-serialization language called YAML (extension is .yml)
+
+At the top level of each file, include the version of docker-compose, then you can list services (containers), plus any volumes or networks if necessary.
+
+<code>
+version: '3.8'
+
+services:
+  # any services go here
+networks:
+  # networks go here
+volumes:
+  # volumes
+services
+ # The next level down will be the name of the service/container.
+</code>
+
+=== Useful keywords ===
+Keyword Purpose
+  * ''build'': specify where to find the Dockerfile to build image
+  * ''image'': can name a newly built image, or specify name of image to build from
+  * ''volumes'': specify volumes or bind mounts to connect to image
+''networks''    will connect container to specified networks
+''environment'' add environment variables
+''ports''   publish ports
+
+<code>
+services:
+  service_name:
+    build:
+        context: ./folder_with_dockerfile
+        dockerfile: Dockerfile-alternate.Dockerfile
+    image: whatevername # like the -t flag when you are building your image
+    # if you don't have a build command, Docker will try to build from an existing image with that name
+    volumes: 
+        # with a named volume - also list name under top-level volumes
+        - volume_name:/path/to/volume/on/container
+        # for bind mounts
+        - ./path/locally:/path/to/bind/mount/on/container
+    # by default, docker-compose will create a single network for all containers
+    networks:
+        - network_name
+    environment:
+      DATABASE_URL: postgresql://username:password/localhost
+      ANOTHER_VARIABLE: more-stuff
+    ports:
+      # <external port>:<internal port>
+      -8000:80
+  second_service_name:
+    #... all the keywords for this service
+</code>
+
+=== Volumes ===
+If you include any named volumes, list their names under the top-level “volumes” key.<br
+Anonymous volumes and bind mounts don’t need to be listed.
+<code>
+volumes:
+  some_named_volume:
+  another_named_volume:
+</code>
+
+=== Networks ===
+If you don’t specify a network, all the containers in the docker-compose file will be put onto one network together.<br
+If you want multiple networks, specify all the names under the top-level volumes key.
+
+<code>
+networks:
+  network_name:
+  second_network_name:
+</code>

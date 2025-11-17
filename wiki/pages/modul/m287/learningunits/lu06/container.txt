@@ -1,0 +1,82 @@
+====== LU06b - Container und Spalten ======
+<WRAP center round info 60%>
+Bootstrap benötigt einen Container welcher die Inhalte einschliesst.
+Du hast die Wahl zwischen einem dynamischen Container und einem Container der immer die maximale Bildschirmbreite nutzt.
+
+Innerhalb des Containers arbeitet Bootstrap mit einem Layout das zwölf Spalten umfasst.
+Du kannst für jedes Element definieren, wieviel Spalten es belegen soll.
+</WRAP>
+
+===== Container =====
+//Siehe auch [[https://getbootstrap.com/docs/5.3/layout/containers/|bootstrap - containers]] und [[https://www.w3schools.com/bootstrap5/bootstrap_containers.php|w3schools - containers]]//
+
+Die Klassen ''.container'' und ''.container-fluid'' dienen als Basis für die Formatierung der Elemente in Bootstrap.
+Bei ''.container'' hat das HTML-Element eine vordefinierte Grösse, die sich abhängig von der Fenstergrösse anpasst.
+Falls du immer die ganze Breite des Fensters nutzen willst, wählst du die Klasse ''.container-fluid''.
+
+==== Welche(s) HTML-Element? ====
+Es stellt sich die Frage, welchem HTML-Element wir die Container-Klasse zuordnen sollen.
+In den meisten Beispielen wird ein separates ''<div>''-Element verwendet.
+Aus meiner Sicht ist es sinnvoller, die bereits vorhandenen Elemente wie ''<body>'', ''<main>'', ''<header>'', ''<nav>'', ... zu verwenden.
+
+Im einfachsten Fall haben alle Teile meiner Webseite die gleiche Breite.
+In diesem Fall kann ich die ''.container''-Klasse im ''<body>''-Tag zuweisen.
+<code html>
+<html>
+...
+<body class='container'>
+  <header>
+    ...
+  </header>
+  <main>
+    ...
+  </main>
+  <footer>
+  </footer>
+</body>
+</html>
+</code>
+
+Bei komplexeren Layouts soll vielleicht der Hauptinhalt eine fest Breite haben, die Kopf- und Fusszeilen aber die ganze Fensterbreite nutzen.
+Dies kannst du wie folgt umsetzen:
+
+<code html>
+<html>
+...
+<body>
+  <header class='container-fluid'>
+    ...
+  </header>
+  <main class='container'>
+    ...
+  </main>
+  <footer class='container-fluid'>
+  </footer>
+</body>
+</html>
+</code>
+
+===== Spalten =====
+//Siehe auch [[https://getbootstrap.com/docs/5.3/layout/grid/|bootstrap - grid]] und [[https://www.w3schools.com/bootstrap5/bootstrap_grid_basic.php|w3schools - grid basic]]//
+
+Innerhalb eines Containers arbeitet Bootstrap mit einem Raster von 12 Spalten.
+Du kannst für jedes HTML-Element definieren, wie viele Spalten es bei welcher Fenstergrösse es belegen soll.
+Dafür gibt es eine ganze Menge von Klassen, die mit ''col-'' anfangen.
+Dadurch passt sich dein Layout automatisch dem verfügbaren Platz an.
+
+Sollen zwei oder mehr Elemente nebeneinander stehen, so müssen sie in einem Eltern-Element mit der Klasse ''row'' eingebettet sein.
+Jedes HTML-Element mit einer ''col-nn-nn''-Klasse ist selber auch wieder in 12 Spalten aufgeteilt.
+
+=== Übung ===
+Am einfachsten kann man das Spalten-Layout anhand von Beispielen verstehen.
+
+  - Öffne die Webseite unter [[https://it.bzz.ch/demo/grid]] in deinem Webbrowser.
+  - Ändere nun die Breite des Fensters und experimentiere mit dem Zoom.
+  - Achte darauf, wie sich die Inhalte anordnen.
+
+Mit den Entwicklertools (meistens F12-Taste) kannst du den HTML-Code ansehen.
+Oder du lädst ihn mit einem Rechtsklick auf den Link herunter.
+
+----
+{{tag>m293-LU13}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Kevin Maurizi, Marcel Suter

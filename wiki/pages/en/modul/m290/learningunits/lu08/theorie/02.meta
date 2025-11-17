@@ -1,0 +1,15 @@
+a:2:{s:7:"current";a:9:{s:4:"date";a:2:{s:7:"created";i:1727860985;s:8:"modified";i:1731922284;}s:7:"creator";s:12:"Volkan Demir";s:4:"user";s:6:"vdemir";s:11:"last_change";a:9:{s:4:"date";i:1731922284;s:2:"ip";s:11:"213.3.48.35";s:4:"type";s:1:"E";s:2:"id";s:40:"modul:m290:learningunits:lu08:theorie:02";s:4:"user";s:8:"cbolzern";s:3:"sum";s:0:"";s:5:"extra";s:0:"";s:10:"sizechange";i:-1;s:4:"mode";s:4:"page";}s:11:"contributor";a:3:{s:6:"vdemir";s:12:"Volkan Demir";s:8:"kdemirci";s:13:"Kamil Demirci";s:8:"cbolzern";s:17:"Christian Bolzern";}s:5:"title";s:15:"LU10c - Node.js";s:11:"description";a:2:{s:15:"tableofcontents";a:6:{i:0;a:4:{s:3:"hid";s:14:"lu10c_-_nodejs";s:5:"title";s:15:"LU10c - Node.js";s:4:"type";s:2:"ul";s:5:"level";i:1;}i:1;a:4:{s:3:"hid";s:19:"learning_objectives";s:5:"title";s:19:"Learning Objectives";s:4:"type";s:2:"ul";s:5:"level";i:2;}i:2;a:4:{s:3:"hid";s:20:"additional_materials";s:5:"title";s:20:"Additional Materials";s:4:"type";s:2:"ul";s:5:"level";i:2;}i:3;a:4:{s:3:"hid";s:14:"what_is_nodejs";s:5:"title";s:16:"What is Node.js?";s:4:"type";s:2:"ul";s:5:"level";i:2;}i:4;a:4:{s:3:"hid";s:21:"our_first_node_server";s:5:"title";s:21:"Our first node server";s:4:"type";s:2:"ul";s:5:"level";i:2;}i:5;a:4:{s:3:"hid";s:10:"vocabulary";s:5:"title";s:10:"Vocabulary";s:4:"type";s:2:"ul";s:5:"level";i:3;}}s:8:"abstract";s:503:"LU10c - Node.js
+
+Learning Objectives
+
+	*  What a Node.js is
+	*  Which benefits a node server provides us
+	*  Program a node server
+
+Additional Materials
+
+	*  [ myFirstServer.js as ZIP-Download]
+
+What is Node.js?
+
+A Node.js server is a backend system built using Node.js, a runtime environment that allows you to write server-side applications in JavaScript. This server can handle incoming requests, process data, communicate with databases, and return responses to the client (such as a web browser …";}s:8:"relation";a:2:{s:5:"media";a:2:{s:55:"modul:m290:learningunits:lu08:theorie:myfirstserver.zip";b:1;s:61:"modul:m290:learningunits:lu08:theorie:nodejs-architecture.png";b:1;}s:10:"firstimage";s:61:"modul:m290:learningunits:lu08:theorie:nodejs-architecture.png";}s:8:"internal";a:2:{s:5:"cache";b:1;s:3:"toc";b:1;}}s:10:"persistent";a:5:{s:4:"date";a:2:{s:7:"created";i:1727860985;s:8:"modified";i:1731922284;}s:7:"creator";s:12:"Volkan Demir";s:4:"user";s:6:"vdemir";s:11:"last_change";a:9:{s:4:"date";i:1731922284;s:2:"ip";s:11:"213.3.48.35";s:4:"type";s:1:"E";s:2:"id";s:40:"modul:m290:learningunits:lu08:theorie:02";s:4:"user";s:8:"cbolzern";s:3:"sum";s:0:"";s:5:"extra";s:0:"";s:10:"sizechange";i:-1;s:4:"mode";s:4:"page";}s:11:"contributor";a:3:{s:6:"vdemir";s:12:"Volkan Demir";s:8:"kdemirci";s:13:"Kamil Demirci";s:8:"cbolzern";s:17:"Christian Bolzern";}}}

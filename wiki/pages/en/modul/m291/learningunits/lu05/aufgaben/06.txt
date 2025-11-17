@@ -1,0 +1,33 @@
+====== LU05.A06 - v-bind with shorthand ======
+
+===== Prerequisites  =====
+  * Work type: Individual
+  * Means of aid: only teaching materials, no websearch, no use of ai.
+  * Timeframe: 10 Minutes
+  * Expected result: Script that used the v-bind in the short-hand version.
+
+===== Learning objectives =====
+  - Be able to bind ressources with the shorthand version of v-bind
+  - Understanding the interaction of the SFC concept (single file component)
+
+===== Source =====
+  * [[https://www.w3schools.com/vue/tryit.php?filename=tryvue_v-bind_shorthand |Code-example: v-bind Directive shorthand]]
+
+===== Assignment ======
+  - Open the URL with the exercise, which is given above.
+  - Add to the //style-area// a new class //myClass2// with the //background-color: red//
+  - Add a new //div// which incorporates the second style element.
+  - **Toggle manually** within the //script// area with the values //true// and //false//, which activates and deactivates whether the style are being used or not. That means set the value manuelly to //true// or //false//
+  - Execute your script by having it //run//.
+  - Save your solution accordingly. Therefore you might need a W3-School-Account. 
+
+===== Solution =====
+[[en:modul:m291:learningunits:lu05:loesungen:06|Lösung]]
+
+===== Vocabulary =====
+^ English ^ German ^ 
+| to incorporate | einbauen, einbeziehen |
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

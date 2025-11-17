@@ -1,0 +1,32 @@
+====== LU06.A01 - Events - Introductory example ======
+
+===== Prerequisites  =====
+  * Work type: Individual
+  * Means of aid: only teaching materials, no websearch, no use of ai.
+  * Timeframe: 15 Minutes
+  * Expected result: A functional Vue script with incode-comments that explains the function of event-handling and can increment the counter by steps of 2 instead of 1.
+
+===== Source =====
+  * [[https://www.w3schools.com/vue/tryit.php?filename=tryvue_v-on_moose |Code-example: Example code for events]]
+
+===== Assignment 1 ======
+  - Test the code example provided to you. Describe the behaviour of the script using HTML comments.
+  - Which 3 lines of code are the core for incrementing the counter? Identify these and comment on them in a meaningful way.
+  - Change the increment of the counter to 2, i.e. it should count up in steps of 2.  
+
+===== Assignment 2 =====
+  - Establish in your webstorm a new directory and name it **06_events** and transfer the script in this directory.
+  - Make sure that you have the title <h1> correctly named: **lu06.s01.html**
+  - To make sure, that the moose is visible as well, safe the image of the image in the media-directory in webstorm 
+  - Adjust in your script the path to the moose-image in order to make it visible again
+
+===== Solution =====
+[[en:modul:m291:learningunits:lu06:loesungen:01|Lösung]]
+
+===== Vocabulary =====
+^ English ^ German ^ 
+| prerequisite | Grundvoraussetzung |
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

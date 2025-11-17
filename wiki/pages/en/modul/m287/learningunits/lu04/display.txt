@@ -1,0 +1,16 @@
+====== LU04a - Display ======
+
+The CSS instruction "display" determines how an HTML element is displayed on the website. It controls the layout and behaviour of the element in the browser window. 
+
+===== The different display values =====
+The selection of the correct "display" value depends on the requirements of the layout and the desired behaviour of the elements. By skilfully using "display", developers can effectively control the appearance and functionality of websites. Here is an overview of the most important values that can be used for "display":
+
+^ Value ^ Description ^
+| **block** (block element) | Block elements take up the entire available width of their parent element and start on a new line. Examples of block elements are `<div>`, `<p>`, `<h1>`-`<h6>`, `<header>`, `<footer>`. |
+| **inline** (inline element) | Inline elements only take up as much width as necessary and remain in the same paragraph or on the same line as neighbouring inline elements. Examples of inline elements are `<span>`, `<a>`, `<b>`. |
+| **inline-block** (inline block element) | Combines properties of block and inline elements. It only takes up as much width as necessary and can still be on the same line as other inline or block elements. Often used for elements that need to be formatted as a block but should remain on one line, e.g. `<button>`. |
+| **none** (Hidden element) | The element is not rendered and does not take up any space in the layout structure. It is useful for hiding or dynamically concealing elements. Used for elements that are temporarily not to be displayed, e.g. on different browser sizes. |
+| **flex** (flexbox element) | Activates the flexbox layout model for the element, which allows you to create flexible layouts by arranging and aligning the content in different ways. Flexbox is particularly useful for creating more complex layouts and improving the responsiveness of websites. |
+| **grid** (Grid element) | Activates the grid layout model for the element, which allows you to organise content in a two-dimensional grid arrangement. Grid is powerful for creating layouts with multiple columns and rows and provides precise control over the positioning of elements. |
+
+A complete list of all available values can be found [[https://www.w3schools.com/cssref/pr_class_display.php|hier]].

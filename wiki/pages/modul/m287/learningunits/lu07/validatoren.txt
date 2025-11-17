@@ -1,0 +1,35 @@
+====== LU07c - Validatoren ======
+
+===== Was sind Validatoren? =====
+Validatoren sind Tools (Programme oder Webdienste), die deinen **HTML-** oder **CSS-Code** überprüfen, um sicherzustellen, dass er den offiziellen **Webstandards** entspricht. Sie melden Fehler, Warnungen und geben oft Hinweise, wie man den Code verbessern kann.
+
+===== Warum gibt es Validatoren? =====
+
+  * **Standardkonformität**  
+    * Der Code wird mit den **W3C-Standards** verglichen (World Wide Web Consortium).  
+    * So stellst du sicher, dass deine Webseite sich korrekt und gleichmässig in allen modernen Browsern verhält.
+
+  * **Fehlersuche & Qualitätssicherung**  
+    * Tippfehler, vergessene Tags oder falsche CSS-Eigenschaften werden erkannt.  
+    * Validatoren helfen, *technische Fehler* zu vermeiden und sauberen Code zu schreiben.
+
+  * **Barrierefreiheit & SEO**  
+    * Sauberer Code ist besser zugänglich für Screenreader.  
+    * Suchmaschinen bevorzugen standardkonforme Webseiten.
+
+  * **Langfristige Wartbarkeit**  
+    * Sauberer und validierter Code ist einfacher zu pflegen und von anderen zu verstehen.
+
+===== Wie verwendet man Validatoren? =====
+
+==== HTML-Validator ====
+Der bekannteste Dienst ist der **W3C Markup Validation Service**: https://validator.w3.org  
+
+==== CSS-Validator ====
+Der passende Dienst ist der **W3C CSS Validation Service**: https://jigsaw.w3.org/css-validator  
+
+===== Was bedeuten die Ergebnisse? =====
+
+  * **Keine Fehler**: Der Code ist gültig nach W3C-Standard.
+  * **Warnungen**: Hinweise auf mögliche Probleme oder veraltete Elemente.
+  * **Fehler**: Möglicherweise funktioniert der Code nicht wie erwartet.

@@ -1,0 +1,71 @@
+====== LU07.S02 - SQL-DDL: Table Management ======
+
+===== Case studies / Assignments =====
+
+==== Task A: CREATE TABLE ====
+Create a table called employees with the following columns:
+
+  * employee_id (INT) as the primary key
+  * first_name (VARCHAR 50)
+  * last_name (VARCHAR 50)
+  * hire_date (DATE)
+  * salary (DECIMAL)
+
+  CREATE TABLE employees (
+    employee_id INT PRIMARY KEY,
+    first_name VARCHAR(50),
+    last_name VARCHAR(50),
+    hire_date DATE,
+    salary DECIMAL(10,2)
+  );
+
+
+==== Task B: CREATE TABLE ====
+Create a table called products to store inventory information. The table should have:
+
+  * product_id (INT) as an auto-incrementing primary key
+  * product_name (VARCHAR 100)
+  * category (VARCHAR 50)
+  * price (DECIMAL)
+  * stock_quantity (INT)
+
+  CREATE TABLE products (
+    product_id INT AUTO_INCREMENT PRIMARY KEY,
+    product_name VARCHAR(100),
+    category VARCHAR(50),
+    price DECIMAL(10,2),
+    stock_quantity INT
+  );
+
+
+==== Task C: ALTER TABLE ====
+Add a new column email (VARCHAR 100) to the employees table.
+
+  ALTER TABLE employees
+  ADD COLUMN email VARCHAR(100);
+
+==== TASK D: MODIFY COLUMN ====
+Change the salary column's data type to FLOAT in the employees table.
+
+  ALTER TABLE employees
+  MODIFY COLUMN salary FLOAT;
+
+==== TASK E: DROP COLUMN ====
+Remove the stock_quantity column from the products table.
+
+  ALTER TABLE products
+  DROP COLUMN stock_quantity;
+
+==== TASK F: DROP TABLE ====
+Completely remove the products table from the database.
+
+  DROP TABLE products;
+
+===== Vocabulary =====
+^ English ^ German ^ 
+| ... | ... |
+| ... | ... |
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

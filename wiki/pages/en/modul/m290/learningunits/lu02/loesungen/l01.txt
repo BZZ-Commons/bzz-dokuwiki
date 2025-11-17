@@ -1,0 +1,29 @@
+====== LU03.S01 - Answers: DBS, DBMS and DB ======
+
+1. TRUE or FASLE: DBMS = DBS and DB? 
+  * <color #ed1c24>FALSE, the second equation is correctc:  DBS =  DBMS and DB!</color>
+  
+2. TRUE or FASLE: DBS =  DBMS and DB! 
+  * <color #ed1c24>TRUE. </color>
+  * <color #ed1c24>A database system such as Oralce or MySQL consists of the data, stored in tables, and the database management system, that manages the data. </color>
+
+3. What is the purpose of the DBMS? Give an example.
+  * <color #ed1c24>The DBMS is a piece of software that manages the data. </color>
+  * <color #ed1c24>It consists of pre-preogrammed functions, that help managing the data.</color>
+  * <color #ed1c24>Without the DBMS companies such as Zalando or Digitech would no be able to store goods or deliver them to their customers.</color> 
+
+4. What is stored in the DB? How it is stored? Give an example?
+  * <color #ed1c24>In databases basicly the data is stored in tables that are linked to each other. </color>
+  * <color #ed1c24>This is done to avoid unintentional redundancies within the database.</color>
+  * <color #ed1c24>Each table (entity type: e.g. persons) is composed of columns (attributes: e.g. name, birthdate) and rows (entities: e.g. Max Müller, 12.11.1989)</color>
+
+===== Vocabulary =====
+^ English ^ German ^ 
+| respectively | beziehungsweise|
+| attribute | Eigenschaft |
+| entity type | Einheiten Typ |
+| entity | Einheit, Wesen |
+
+----
+
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

@@ -256,7 +256,7 @@ Dabei wird sichergestellt, dass nur mit dem privaten Schlüssel die Signatur ber
 Der öffentliche Schlüssel kann lediglich die Signatur entschlüsseln.
 Es ist ebenfalls unmöglich, aus dem öffentlichen Schlüssel den privaten Schlüssel zu berechnen.
 Sie können sich nicht vorstellen, dass dies möglich ist?
-Eine genaue Beschreibung und Begründung finden Sie im Kapitel [[/thema/ictgrundlagen/skript/rsa]].
+Eine genaue Beschreibung und Begründung finden Sie im Kapitel [[modul:m114:learningunits:lu06:rsa|RSA]].
 
   - Anna berechnet den Hashwert ihrer Nachricht.
   - Anna verschlüsselt diesen Hashwert wird nun mit ihrem privaten Schlüssel. Dieser verschlüsselte Hashwert ist die Signatur der Nachricht.

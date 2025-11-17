@@ -1,0 +1,43 @@
+====== LU05.A17 - v-for with 2-dimensional-arrays and v-if ======
+
+===== Prerequisites  =====
+  * Work type: Individual
+  * Means of aid: only teaching materials, no websearch, no use of ai.
+  * Timeframe: 20 Minutes
+  * Expected result: A Vue script that uses the v-for directive combined with v-if
+
+===== Learning objectives =====
+  - Display an multidimensional array using v-for and v-if
+
+===== Source =====
+You can take your solution from the recent assignment and extend it with the new features.
+
+===== Assignment  ======
+After successfully being able to manage 2-dimensional-arrays with the v-for directive, it is time to take next challenge: the combined usage of v-for and v-if. 
+
+Though the assignment is to display the pictures only, when they are liked. For that we need to check the status, it they are **OK** we display the image of the dish, if they are **NOK** we simply give out the name and the status of the dish, but no image of it. 
+
+  - Take your result from the previous assignment and safe it **lu05.s17.html**
+  - Add a <div>-tag just before the <img> for the **v-if**. Make shure that the image-tag is within the if-statement.
+    - The output is in that case of **OK**: <color #ed1c24>I like ... </color>
+    - close the div
+  - Execute your script. If everything was done properly you will receive a message what you like, in red letters AND the image of the dish.
+  - Add a second <div> for the **v-else**
+    - The output is in that case of **OK**: <color #22b14c>I don't like  </color>
+    - In that case there is no image to display!!!
+    - close the div
+  - Execute your script. If everything was done properly you will receive a message what you don't like, in green letters, but without the image of it.
+
+===== Solution =====
+[[en:modul:m291:learningunits:lu05:loesungen:17|Lösung]]
+
+
+
+===== Vocabulary =====
+^ English ^ German ^ 
+| to appease | Glühbirne |
+
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

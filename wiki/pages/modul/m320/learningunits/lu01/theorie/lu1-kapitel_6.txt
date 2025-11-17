@@ -1,7 +1,7 @@
 ==== 4. Ist Klasse gleich Klasse? ====
 Warum stellen wir uns diese Frage?\\
 \\
-Sie haben im Modul 319 in der LU12 ([[modul:m319:learningunits:lu12:|Link]]) einen ersten Einblick erhalten. Dabei haben Sie eine Klasse als Ansammlung vieler Attribute kennengelernt. Man nennt solche Klassen (informell) auch Datenklassen (POJO - Plain Old Java Object).\\
+Sie haben im Modul 319 in der LU12 ([[de:modul:m319:learningunits:lu12:|Link]]) einen ersten Einblick erhalten. Dabei haben Sie eine Klasse als Ansammlung vieler Attribute kennengelernt. Man nennt solche Klassen (informell) auch Datenklassen (POJO - Plain Old Java Object).\\
 In manchen Programmiersprachen oder Frameworks wird der Begriff "Datenklasse" verwendet, um eine Klasse zu beschreiben, die hauptsächlich dazu dient, Daten zu speichern, ohne viel Verhalten zu haben. Solche Klassen haben normalerweise private Datenfelder (Variablen) und öffentliche Getter- und Setter-Methoden, um auf die Daten zuzugreifen und sie zu setzen. Sie enthalten in der Regel keine komplexe Geschäftslogik oder speziellen Verhaltensmethoden.\\
 Eine "allgemeine" Klasse kann ein komplexeres Objekt mit verschiedenen Verhaltensmethoden aufweisen.\\
 \\

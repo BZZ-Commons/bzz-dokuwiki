@@ -1,0 +1,26 @@
+====== LU04b - Netzwerk von Containern verwalten ======
+===== Ziele =====
+  -Ich kann das Netzwerk für Container ausgeben (''network ls <filter>'').
+  -Ich kann die IP-Adresse eines Containers ausgeben (''inspect'').
+  -Ich kann den Port eines Containers explizit oder automatisch setzen (''-p <mapping-values> or -P'').
+  -Ich kann den Port eines Containers ausgeben (''port'').
+  -Ich kann eine Netzwerk-Bridge erzeugen (''--driver bridge <name> or <subnet>'').
+  -Ich kann mögliche Fehlermeldung lesen und interpretieren.
+  -Ich kann mindestens eine Massnahme bei Fehlermeldung vorschlagen und umsetzen.
+\\
+===== Grundlagen =====
+[[https://www.youtube.com/watch?v=5grbXvV_DSk |Docker Networking Tutorial]]: Dieses Video stellt Ihnen die verschiedenen Netzwerktypen vor, welche die Container verwenden.
+Es genügt, wenn Sie Introduction bis und mit The Host Network studieren.
+
+<code>
+00:00 - Introduction
+01:02 - Why should you configure Docker Networks?
+01:55 - The Default Bridge Network
+04:20 - The Custom Bridge Network
+08:52 - Bridge Networks and Container Isolation
+09:52 - The Host Network
+</code>
+
+===== Übungen =====
+  -Gehen Sie die Kommandos - Repository ''04/01_Intro/02_Container-Network.md'' - entsprechend den Lernzielen durch.
+  -Bei Fehler lesen Sie die Meldung genau durch, überlegen Sie sich eine Lösungsmassnahme und setzen diese um.

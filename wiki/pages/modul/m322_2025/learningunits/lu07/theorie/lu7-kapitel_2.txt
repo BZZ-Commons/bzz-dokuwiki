@@ -1,0 +1,119 @@
+==== 2. Validierungsmethoden ====
+Es finden sich hier ein paar Methoden, die der Validierung von UX Systemen dienen. Die Liste ist nicht abschliessend.
+===Walkthrough-Methode===
+<html><span style="font-size:8px">
+https://t2informatik.de/wissen-kompakt/walkthrough/ <br />
+t2informatik GmbH, Bülowstraße 66, Aufgang C, 1. OG, 10783 Berlin, E-Mail: internet@t2informatik.de
+</span></html>\\
+**Walkthroughs in der Produkt- und Softwareentwicklung**\\
+Die Verwendung von Walkthroughs in der Produktentwicklung und insbesondere in der Softwareentwicklung ist relativ weit verbreitet. Bekannt sind vor allem drei verschiedene Varianten:\\
+
+    * Beim Cognitive Walkthrough – auch bekannt als Ansatz zur Verbesserung der User Experience – werden typische Handlungsabläufe festgelegt, die im Rahmen der Evaluation durch einen „Experten“ zu untersuchen und Schritt für Schritt in chronologischer Reihenfolge durchzuspielen sind. Ein Experte kann ein realer Kunden oder Anwender, oder ein fiktiver Vertreter einer Zielgruppe sein bspw. also eine Persona. Der Experte fungiert als Tester, der versucht Probleme bei der Bedienung zu ermitteln und diese unmittelbar zu dokumentieren.
+    * Beim Pluralistic Usabiliy Walkthrough erfolgt die Evaluation nicht durch einen Experten, sondern gemeinsam im Team. Das Team besteht mindestens aus einem ausgewählten Kunden bzw. Anwender, einem Entwickler und idealerweise einem Usability-Experten. Auch Produktmanager oder Product Owner können an dieser Variante teilnehmen. Während der Kunde bzw. Anwender das Produkt und seine Bedienung bewertet, versuchen die anderen Teammitglieder die Perspektive des Kunden/Anwenders möglichst präzise zu verstehen. Meistens notieren die Entwickler gewonnene Erkenntnisse und dokumentieren Kommentare. Kommt es im Nachgang zu Diskussionen, fungiert der Usability-Experte als Vertreter des Kunden/Anwenders.
+    * Beim Jogthrough werden die Handlungsabläufe, die in chronologischer Reihenfolge durchgespielt werden, mittels Software und ggf. Video aufgezeichnet. Der materielle Aufwand ist im Vergleich zu den anderen Varianten etwas höher, die Aufzeichnung erleichtert aber die Dokumentation und ermöglicht es den teilnehmenden Entwicklern, Produktmanagern oder Product Owner, Fragen zu stellen und mit dem Kunden/Anwender über Ideen, Herausforderungen und Eindrücke zu diskutieren.
+\\
+**Vorteile und Nachteile bei einem Walkthrough**\\
+Je nach Anwendungsbereich und Variante bietet ein Walkthrough verschiedene Vorteile, aber auch einige Nachteile.\\
+Hier eine Liste mit Vorteilen:
+
+   * Im Vergleich zu empirischen oder heuristischen Verfahren ist die Durchführung von Walkthroughs kostengünstig und verursacht relativ wenig Aufwand.
+   * Die Anwendung ist bereits in frühen Phasen der Entwicklung möglich.
+   * Die Erkenntnisse liefern ein frühzeitiges „Proof of Concept“.
+   * Die zu testenden Handlungsabläufe lassen sich relativ einfach aus definieren Use Case Szenarien oder Wireframes ableiten.
+   * Die Durchführung lässt sich leicht mit anderen Experten wiederholen. So lassen sich Erkenntnisse schnell verifizieren.
+   * Die Durchführung fördert den Dialog mit Experten, liefert zügig Feedback und ermöglicht die Kommunikation auf Augenhöhe.
+   * Es gibt sehr viele Anwendungsmöglichkeiten, zumal sich die Aufgabenstellung variabel anpassen lässt. 
+Und hier einige Nachteile:
+
+   * Es macht einen Unterschied, ob das Feedback zur Bedienung einer Software oder eines Produkts von einem „echten“ Nutzer stammt, oder von jemanden, der sich „lediglich“ in die Rolle des Nutzers hineindenkt. Hier ist Vorsicht geboten, um aus dem Feedback ggf. keine falschen Schlüsse zu ziehen.
+   * Auch die Meinung eines Experten ist erst einmal eine Einzelmeinung. Walkthroughs sind keine empirischen Testmethoden. Es kann daher durchaus sinnvoll sein, die Handlungsabläufe mit verschiedenen Experten durchzugehen.
+   * Und last but not least kann es auch einen Unterschied machen, ob der Experte das Produkt und die Philosophie der Bedienung bereits kennt oder eben nicht. Aus diesem Grund gibt es immer wieder Unterschiede in der Beurteilung von Funktionen zwischen Entwicklern – die sich verständlicherweise gut in die Bedienung eines Programms hineinversetzen können – und Neukunden, für die alles an einem Produkt erst einmal Neuland ist. \\
+
+----
+
+//Beispiel 16: einfacher Walktrough betreffend Beschriftung //\\
+Mit einem Walkthrough könne so einfache Sachverhalte wie z.B. die Benennung von Elementen usw. überprüft werden.\\
+In den Abbildung 6-11 bis 6-14 findet sich folgende Bezeichung:\\
+<html><font color="#00B0F0"><b>&mdash;</b></font></html> schulfrei\\
+Beim Walktrough kommt die Frage auf, was unter dem Bergiff "schulfrei" zu verstehen ist. Es zeigt sich, dass hier nicht alle befragten Anwender das gleiche verstehen. Darum setzt sich die Erkenntnis durch, dass der Begriff "schulfrei" besser durch "Unterrichtsausfall" zu ersetzen ist.
+
+----
+
+[[https://www.youtube.com/watch?v=TxWSCgWFiBE| Was ist ein Cognitive Walkthrough?]]
+
+\\
+
+===Usability-Test===
+<html><span style="font-size:8px">
+auszugsweise aus Wikipedia
+</span></html>\\
+Usability-Tests umfassen in der Regel eine systematische Beobachtung unter kontrollierten Bedingungen, um festzustellen, wie gut die Anwender das Produkt nutzen können. Oft werden jedoch sowohl qualitative Tests als auch Usability-Tests in Kombination eingesetzt, um neben den Handlungen der Nutzer auch deren Motivationen/Wahrnehmungen besser zu verstehen.\\
+Anstatt den Benutzern einen groben Entwurf zu zeigen und sie zu fragen: "Verstehen Sie das?", beinhaltet das Usability-Testing die Beobachtung von Menschen, die versuchen, etwas für den beabsichtigten Zweck zu verwenden.
+----
+//Beispiel 17: Spielzeug Zusammenbau//\\
+Eine Anleitung für den Zusammenab ueines Speilzeugs soll getestet werden. Dazu erhalten die Testpersonen die Anleitung und eine Schachtel mit Teilen. Anstatt gebeten zu werden, die Teile und Materialien zu kommentieren, werden sie gebeten, das Spielzeug zusammenzubauen. Die Formulierung der Anleitungen, die Qualität der Illustrationen und das Design des Spielzeugs beeinflussen den Zusammenbau des Spielzeugs.
+
+----
+
+**Ablauf**\\
+Bei einem Usability-Test werden Versuchspersonen veranlasst, typische Aufgaben mit dem Testobjekt zu lösen, die sie später in ähnlicher Form mit diesem Produkt erledigen würden. Dabei wird geprüft, an welchen Stellen Schwierigkeiten bei der Benutzung auftreten.\\
+Die Versuchspersonen werden zum Lauten Denken aufgefordert, damit der Beobachter erfährt, wonach die Person gerade sucht und was sie sich unter den angebotenen Optionen vorstellt. Wichtig für ein Usability-Test ist 
+    - ein klarer Auftrag an den Benutzer
+    - ein lückenloses Protokoll der Tätigkeiten des Benutzers
+Nach dem Usability-Test werden die Schwachstellen analysiert und das Produkt so optimiert, dass es von möglichst vielen Personen als einfach zu bedienen empfunden wird und so die Benutzerfreundlichkeit verbessert wird.
+
+[[https://www.youtube.com/watch?v=q8IPHOlUbV0| Usability Test erklärt.]] \\
+[[https://www.youtube.com/watch?v=n3EVRBo64lo| Usability Test Phasen - Was muss beachtet werden?]] \\
+\\
+===KLM-Analyse===
+<html><span style="font-size:8px">
+aus Wikipedia
+</span></html>\\
+Das Keystroke-Level-Model (KLM) erlaubt es, Aussagen darüber zu treffen, wie lange ein Experte für die fehlerfreie Bearbeitung einer Aufgabe mit einem interaktiven Computersystem benötigt. Es umfasst sechs Operatoren, von denen die ersten vier Operatoren als physisch-motorische Operatoren definiert werden. Hinzu kommen ein mentaler Operator und ein Operator, der die Antwortzeit des Systems repräsentiert.
+
+| K \\  (Tastenanschlag oder Mausklick)| 0.2 Sekunden | Dies ist der häufigste Operator. Er beschreibt jedoch nicht nur Buchstaben, sondern jeden einzelnen Tastendruck (bspw. wird ein Tastendruck auf die Hochstelltaste (SHIFT) als einzelne K-Operation gewertet). Die benötigte Zeit hängt von den motorischen Fähigkeiten des Benutzers ab und wird mittels einminütiger Schreibtests bestimmt, wobei die Testzeit durch die Gesamtzahl fehlerfreier Tastenanschläge geteilt wird. |
+| P \\  (Zielerfassung auf einem Display mit Hilfe einer Maus)| 1.1 Sekunden | Diese Zeit ist abhängig von der Distanz zum Ziel und der Größe des Ziels. Ein Mausklick ist dabei nicht enthalten. Er zählt als separate K-Operation. |
+| H \\ (Wechsel der Hand oder der Hände zwischen unterschiedlichen Eingabegeräten) | 0.4 Sekunden | Die Zeit für diesen Operator beinhaltet die Bewegung beim Wechsel von Eingabegeräten oder die Feinpositionierung der Hand. |
+| M \\ (mentale Vorbereitung zur Ausführung physischer Aktionen) | 1.35 Sekunden | Beschreibt die Zeit, die ein Benutzer für Denkprozesse oder für die Entscheidungsfindung benötigt. Die Anzahl von M-Operatoren in einer Methode hängt vom Wissensstand und Können des Benutzers ab. Heuristiken geben Auskunft darüber, an welcher Stelle in einer Methode ein M-Operator gesetzt werden muss. Wird beispielsweise mit der Maus ein Ziel angesteuert, so wird gewöhnlich auch ein Mausklick vorausgesetzt, weshalb kein M-Operator zwischen diesen beiden Operatoren benötigt wird. |
+| R \\ (Antwortzeit des Systems) | Systemabhängig | Die Antwortzeit hängt vom System, dem Kommando und dem Kontext des Kommandos ab. Es wird nur dann benötigt, wenn der Benutzer tatsächlich auf das System warten muss. Bereitet der Benutzer beispielsweise seine nächste physikalische Aktion vor (M), so wird nur der nicht-überlappende Teil der Antwortzeit für R benötigt, da der Benutzer die Antwortzeit für die M-Operation benötigt (zum Beispiel R von 2 Sekunden - M für 1,35 Sekunden = R von 0,65 Sekunden). |
+//Tabelle 1: Auswahl von Aktionen nach GOMS-Theorie//\\
+
+Mit der KLM-Methode (Keystroke-Level-Model) lässt sich die Effektivität einer Anwendung z.B. anhand von Wireflows beurteilen. Es braucht hier für die Validierung nicht zwingend einen ausgearbeiteten Prototypen.\\
+
+----
+
+//Beispiel 18: Dispensation für 2 Schultage//\\
+Mittels KLM-Methode wird in einem Vergleich der alten Anwendung und einem Vorschlag aus dem Konzept des UX-Designs die Effektivität verglichen. Dazu muss zuerst ein klarer Auftrag formuliert werden. In diesem Fall also "Eintragen einer bewilligten Absenz an zwei sich folgenden Schultagen".\\
+Auf dieser Basis werden dann einzelen Schritte festgehalten und  mittels der KLM-Aktionen zeiltlich bewertet.\\
+\\
+**Ausgangslage**\\
+Die Aktion wird ab dem Moment betrachtet, in der der Benutzer den vollständigen Nachnamen eingetippt hat.\\\\
+
+| //Ausführung mit aktueller (alter) Programmversion// |||
+^ Schritt  ^ Aktion  ^ Zeitdauer  ^
+| Die Persona betätigt die ENTER-Taste | Key/Klick | 0.2 sec |
+| Sie verschafft sich einen Überblick über die Liste der Lernenden | Mentale Vorbereitung | 1.35 sec |
+| Sie selektiert die gewünschte Person | Pointing | 1.1 sec |
+| ... | ... | ... |
+| Sie selektiert die Speichern-Schaltfläche | Pointing | 1.1 sec |
+| Sie klickt die Speichern-Schaltfläche | Key/Klick | 0.2 sec |
+|  | Totalzeit | 21.85 sec |
+\\
+| //Ausführung mit geplanter Programmversion// |||
+^ Schritt  ^ Aktion  ^ Zeitdauer  ^
+| Die Persona betätigt das Suchen-Ikon | Key/Klick | 0.2 sec |
+| Sie verschafft sich einen Überblick über die Liste der Lernenden | Mentale Vorbereitung | 1.35 sec |
+| Sie selektiert die gewünschte Person | Pointing | 1.1 sec |
+| ... | ... | ... |
+| Sie selektiert die Speichern-Schaltfläche | Pointing | 1.1 sec |
+| Sie klickt die Speichern-Schaltfläche | Key/Klick | 0.2 sec |
+|  | Totalzeit | 20.99 sec |
+\\
+Der rein statische Vergleich zeigt auf, dass bezüglich der Bearbeitungsgeschwindigkeit keine markanten Änderungen zu erwarten sind. Erst ein Usability-Test mit einem Klick-Prototypen wird zeigen, ob durch die Neugestaltung der Oberfläche die Benutzer die Arbeit schneller und zuverlässiger erledigen können.
+----
+
+[[https://www.youtube.com/watch?v=oNYPvE7QNos| Das Keystroke-Level Modell]]
+
+----
+
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) René Probst

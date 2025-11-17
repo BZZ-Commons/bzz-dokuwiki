@@ -1,0 +1,47 @@
+====== LU05.A16 - v-for list with 2-dimensional arrays ======
+
+===== Prerequisites  =====
+  * Work type: Individual
+  * Means of aid: only teaching materials, no websearch, no use of ai.
+  * Timeframe: 20 Minutes
+  * Expected result: A Vue script that uses the v-for directive
+
+===== Learning objectives =====
+  - Be able to explain the objective of v-for
+  - Display the index and corresponding array entry using v-for.
+  - Display array elements and the corresponding images with v-for.
+
+===== Source =====
+[[https://www.w3schools.com/vue/tryit.php?filename=tryvue_v-for_foodImgs2 | v-for code-example]]
+
+===== Assignment 1 ======
+It can happen, that we need not only to display the images of our products, but want also to provide additional information to them. That invariably leads to having to have handle two or more arrays in our source code. 
+
+  - Click on the link above with the source and save it with the appropriate name in your W3School workspace.
+  - Change within the **v-for** the **x** to **z**. 
+  - Execute your script  --> The images will will disappear. Why?
+  - Then change **x** within the //<figcaption>// and the //<img>// from **x** to a **z** as well --> The images will appear again. Why?
+  - Note down for what the first respectively the second usage of **x/z** stands for. 
+
+===== Assignment 2 =====
+It can happen, that besides the image, we also want to display the description of our products on our website. Thus we want to handle a //multi-dimensional array//. 
+
+  - Add a column **comm**-column with comments to your food-list (array) in the script part. 
+    * If you like it: **OK**. 
+    * If not: **NOK**
+  - Display the comm-entries after the name of the dish by using **z.comm**
+  - Execute your script. If everything was done properly you will see the images as before AND the comment below the images.
+  - Comment your script accordingly an save it.
+ 
+===== Solution =====
+[[en:modul:m291:learningunits:lu05:loesungen:16|Lösung]]
+
+
+===== Vocabulary =====
+^ English ^ German ^ 
+| ... | ... |
+
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

@@ -1,0 +1,44 @@
+====== LU05.A15 - v-for list rendering ======
+
+===== Prerequisites  =====
+  * Work type: Individual
+  * Means of aid: only teaching materials, no websearch, no use of ai.
+  * Timeframe: 10 Minutes
+  * Expected result: A Vue script that uses the directives v-for with <ol> and <ul>
+
+===== Learning objectives =====
+  - Be able to explain the objective of v-for
+  - Displying the Index and corresponding array entry using v-for.
+  - Dispalying array elements and the corresponding images with v-for.
+
+===== Source =====
+[[https://www.w3schools.com/vue/tryit.php?filename=tryvue_v-for_foodText | v-for code-example]]
+
+===== Assignment ======
+Data is often available as lists/arrays (concatenation of persons, for example). Previously, we prepared these lists in JavaScript using a loop and passed them to HTML for display. With v-for, we can now use the loop directly in JS, which makes things a lot easier.
+
+  - Click on the provided link above and it with the appropriate name in your W3School workspace.
+  - Execute it with **Run**. You will see that the array data in the script part is now displayed numbered in the browser.   
+  - Add 3-4 more entries to your food list, at the beginning, the middle part, and the end.
+  - Change the <ol>-tag to  <ul>-tag.
+  - Note down your observation as code comments and save your work. 
+
+
+
+
+
+===== Solution =====
+[[en:modul:m291:learningunits:lu05:loesungen:15|Lösung]]
+
+
+
+
+
+===== Vocabulary =====
+^ English ^ German ^ 
+| ... | ... |
+
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

@@ -38,9 +38,7 @@ Damit Sie im Workshop mitarbeiten können, müssen Sie die Einführung zum jewei
 Insbesondere müssen Sie die Fachbegriffe und wichtigsten Schritte kennen. 
 
 ==== Workshopthema ====
-Das Thema eines Workshops wird aufgrund Ihrer Wünsche definiert.
-Im separaten [[https://moodle.bzz.ch/course/view.php?id=244|Moodle-Kurs]] für die Anmeldungen, finden Sie ein Wiki "Workshopthemen".
-Folgen Sie der Anleitung um neue Themen einzutragen oder ihr Interesse an einem Thema anzuzeigen.
+Das Thema eines Workshops wird aufgrund Ihrer Wünsche definiert. Ihre Lehrperson definiert wie Sie sich für Workshops anmelden können.
 
 ==== Anmeldung ====
 Es gibt pro Tag mehrere Zeitfenster für Workshops.
@@ -68,7 +66,6 @@ Sie können die Inhalte, Hilfsmittel und Zeitvorgaben der Abschlusstests vorgän
 
 === Anmeldung und Durchführung ===
 Es gibt pro Tag mehrere Zeitfenster um einen Abschlusstest zu absolvieren.
-Ausnahme: Am ersten und letzten Tag des Moduls gibt es nur ein einziges Zeitfenster.
 
   - Melden Sie sich rechtzeitig für einen Abschlusstest an (mindestens 10 Minuten vor dem Start).
     * Anmeldungen ohne klare Angabe der abzuschliessenden Learning Unit (z.B. LU03) sind ungültig.
@@ -81,14 +78,17 @@ Ausnahme: Am ersten und letzten Tag des Moduls gibt es nur ein einziges Zeitfens
 Die meisten Aufgaben werden automatisch korrigiert. 
 Direkt nach dem Test sehen Sie Ihre Punktzahl und die Musterlösung.
   * Sie erhalten die volle Punktzahl, wenn Ihre Lösung inhaltlich **und** formal korrekt ist.
-  * Sie erhalten Teilpunkte für formale Mängel oder kleinere inhaltliche Abweichungen.
+  /* 
+   * * Sie erhalten Teilpunkte für formale Mängel oder kleinere inhaltliche Abweichungen. 
+   */
 
 Eine manuelle Korrektur erfolgt, wenn ...
   * ... Moodle die Lösung nicht automatisch bewerten kann. \\ In diesem Fall wird Ihnen keine Punktzahl angezeigt und Ihre Lehrperson wird die Aufgabe manuell bewerten. Von Ihrer Seite ist **keine Aktion** erforderlich oder erwünscht.
+  /*
   * ... Sie **0 Punkte** erhalten haben, obwohl Ihre Lösung nur einen **minimalen** inhaltlichen oder einen formalen Mangel hat.
     - Markieren Sie die Frage in Ihrem Moodle-Test.
-    - Schreiben Sie eine Teams-Nachricht an Ihre Lehrperson mit dem Text: "Grüezi, bitte überprüfen Sie die markierten Fragen beim Abschlusstest der LUxy".
-
+    - Schreiben Sie eine Teams-Nachricht an Ihre Lehrperson mit dem Text: "Grüezi, bitte überprüfen Sie die markierten Fragen beim Abschlusstest der LUxy". 
+  */
 ==== LB2: Test über alle Learning Units ====
 Die Leistungsbeurteilung 2 ist ein Querschnittstest über Inhalte aller Learning Units.
 Dabei wird das Anwenden und Verknüpfen der Inhalte geprüft.

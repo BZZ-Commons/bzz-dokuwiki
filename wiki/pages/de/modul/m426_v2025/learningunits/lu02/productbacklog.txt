@@ -1,0 +1,86 @@
+====== LU02c - Product backlog ======
+
+
+Quelle: //[[https://scrumguides.org/docs/scrumguide/v2020/2020-Scrum-Guide-German.pdf]]//
+
+Das Product Backlog ist eine geordnete Liste von allem, was in dem Produkt enthalten sein kann.
+Es dient als einzige Anforderungsquelle für alle Änderungen am Produkt. 
+Der Product Owner ist für das Product Backlog, seine Inhalte, den Zugriff darauf 
+und die Reihenfolge der Einträge verantwortlich. 
+
+Ein Product Backlog ist niemals vollständig. 
+Während seiner ersten Entwicklungsschritte zeigt es nur die anfangs bekannten 
+und am besten verstandenen Anforderungen auf. 
+Das Product Backlog entwickelt sich mit dem Produkt und dessen Einsatz weiter. 
+Es ist dynamisch; es passt sich konstant an, um für das Produkt klar herauszustellen, 
+was es braucht, um seiner Aufgabe angemessen zu sein, im Wettbewerb zu bestehen 
+und den erforderlichen Nutzen zu bieten. 
+Das Product Backlog lebt so lange wie das dazugehörige Produkt.
+
+Im Product Backlog werden alle Features, Funktionalitäten, Verbesserungen und
+Fehlerbehebungen aufgelistet, die die Änderungen an dem Produkt in zukünftigen Releases ausmachen. 
+Ein Product Backlog-Eintrag enthält als Attribute 
+  * eine Beschreibung, 
+  * die Reihenfolge der Umsetzung, 
+  * die Schätzung des Aufwands
+  * und den Wert. 
+
+Das Product Backlog entwickelt sich mit dem Einsatz eines Produktes, dessen Wertsteigerung
+sowie durch das Feedback des Marktes zu einer längeren, ausführlicheren Liste. 
+Anforderungen werden nie aufhören, sich zu ändern. 
+Daher ist das Product Backlog ein lebendes Artefakt.
+Änderungen an den Geschäftsanforderungen, Marktbedingungen oder der Technologie 
+können Änderungen am Product Backlog nach sich ziehen.
+Häufig arbeiten mehrere Scrum Teams gemeinsam an einem Produkt. 
+Dann wird ein einziges Product Backlog benutzt, um die anstehende Arbeit am Produkt zu beschreiben. 
+In diesem Fall kann ein Gruppierungsattribut für die Product Backlog-Einträge verwendet werden.
+
+Als Verfeinerung [Refinement] des Product Backlogs wird der Vorgang angesehen, in dem
+Details zu Einträgen hinzugefügt, Schätzungen erstellt, oder die Reihenfolge der Einträge im
+Product Backlog bestimmt werden. 
+Die Verfeinerung ist ein kontinuierlicher Prozess, in dem der
+Product Owner und das Entwicklungsteam gemeinsam die Product Backlog-Einträge detaillieren.
+Bei der Verfeinerung des Product Backlogs werden die Einträge begutachtet und revidiert. 
+Das Scrum Team bestimmt, wann und wie diese Verfeinerungsarbeit erfolgt. 
+Sie sollte normalerweise nicht mehr als 10% der Kapazität des Entwicklungsteams beanspruchen. 
+Der Product Owner kann jedoch jederzeit die Einträge im Product Backlog aktualisieren oder
+aktualisieren lassen.
+
+Höher angeordnete Product Backlog-Einträge sind generell klarer und weisen mehr Details auf
+als niedrigere. 
+Präzisere Schätzungen entstehen auf der Basis von größerer Klarheit und
+Detailtiefe - je niedriger der Rang, desto weniger Details sind bekannt. 
+Die Product Backlog-Einträge, mit denen sich das Entwicklungsteam im kommenden Sprint beschäftigen soll, werden
+so weit verfeinert, dass jeder von ihnen innerhalb der Time Box des Sprints auf "Done" gebracht
+werden kann. 
+Die Product Backlog-Einträge, für die das der Fall ist, werden als "Ready"
+angesehen - bereit für die Auswahl durch das Entwicklungsteam in einem Sprint Planning. 
+Ein Product Backlog-Eintrag entwickelt diesen Transparenzgrad in der Regel durch die oben
+beschriebenen Verfeinerungs-Aktivitäten.
+
+Das Entwicklungsteam ist für alle Schätzungen verantwortlich. 
+Der Product Owner kann das
+Entwicklungsteam dahingehend beeinflussen, dass er ihm beim Verständnis der Einträge hilft
+oder Kompromisse eingeht. 
+Die endgültige Schätzung erfolgt immer von denen, die auch die
+Arbeit erledigen werden.
+
+==== Fortschrittskontrolle in Richtung eines Ziels ====
+
+Die verbleibende Arbeit zur Erreichung eines Ziels kann jederzeit aufsummiert werden. 
+Der Product Owner vermerkt diese gesamte verbleibende Arbeit mindestens zu jedem Sprint
+Review. 
+Er vergleicht diesen Betrag mit der verbleibenden Arbeit in früheren Sprint Reviews, um
+den Fortschritt der Arbeiten im Verhältnis zur restlichen Zeit zu begutachten. 
+Diese Information
+wird allen Stakeholdern präsentiert. 
+
+Zur Fortschrittsprognose werden diverse Planungspraktiken eingesetzt, wie Burndown- oder
+Burnupdiagramme. 
+Diese haben sich als nützlich erwiesen, allerdings ersetzen sie nicht die
+Wichtigkeit des empirischen Vorgehens. 
+In komplexen Umgebungen lassen sich zukünftige
+Ereignisse nicht vorherbestimmen. 
+Nur was geschehen ist, gibt Anhaltspunkte für die
+zukunftsgerichtete Entscheidungsfindung. 
+

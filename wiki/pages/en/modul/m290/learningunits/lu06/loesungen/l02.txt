@@ -1,0 +1,60 @@
+====== LU09.S02 - SQL- DCL: CREATE USER ======
+
+===== Task 2.1 =====
+**Create the User**: Create a user named //restrictedUser// with the password //SafePassword123// using the //mysql_native_password// plugin.
+
+  CREATE USER 'restrictedUser'@'localhost' IDENTIFIED WITH mysql_native_password BY 'SafePassword123';
+
+===== Task 2.2 =====
+** Overview of the current privileges**: Display all users.
+
+  SELECT user, host, plugin FROM mysql.user;
+
+The result set should look like:
+
+{{:modul:m290:learningunits:lu06:aufgaben:a2.png?800|}}
+
+===== Task 2.3 =====
+**Grant Privileges Without Table Management**: Grant the user //restrictedUser// the ability to read and write data but not to create, alter, or drop tables. Use the following commands to give only the required privileges.
+
+  GRANT SELECT, INSERT, UPDATE, DELETE ON myDatabase.* TO 'restrictedUser'@'localhost';
+
+===== Task 2.4 =====
+**Revoke Privileges**: To be certain that nothing unintended can happen revoke the CREATE, ALTER, and DROP privileges explicitly.
+
+  REVOKE CREATE, ALTER, DROP ON myDatabase.* FROM 'restrictedUser'@'localhost';
+
+===== Tasc 2.5 =====
+**View the User’s Privileges**: Check the privileges to ensure that the user cannot manage tables.
+
+  SHOW GRANTS FOR 'restrictedUser'@'localhost';
+  
+{{:modul:m290:learningunits:lu06:aufgaben:a3.png?800|}}
+
+===== Task 2.6 =====
+**Test the User’s Access**: Establish a new console connection to the database by using //restrictedUser + password//.
+
+{{:modul:m290:learningunits:lu06:aufgaben:a4.png?600|}}
+
+===== Task 2.7 ====
+
+Finally, try to perform a CREATE TABLE or DROP TABLE operation. The attempt should result in a permission error als displayed in the image below.
+
+{{:modul:m290:learningunits:lu06:aufgaben:a5.png?800|}}
+
+
+===== Task 2.8 =====
+**Delete the User (optional)**: After testing, you can delete the user if they are no longer needed.
+
+{{:modul:m290:learningunits:lu06:aufgaben:a6.png?800|}}
+
+
+
+===== Vocabulary =====
+^ English ^ German ^ 
+| .. | .. |
+
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

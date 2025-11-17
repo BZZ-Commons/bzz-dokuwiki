@@ -1,0 +1,48 @@
+~~NOTOC~~  
+====== Aufgabe: Türme von Hanoi ======  
+===== Auftrag =====  
+Implementieren Sie das bekannte mathematische Rätsel "Türme von Hanoi" in Java.  
+
+Das Spiel besteht aus drei Stäben und einer Anzahl von Scheiben, die unterschiedlich gross sind. Ziel ist es, alle Scheiben von einem Stab auf einen anderen zu verschieben, wobei folgende Regeln gelten:  
+  * Es darf immer nur eine Scheibe gleichzeitig bewegt werden.  
+  * Eine grössere Scheibe darf nie auf einer kleineren liegen.  
+
+Ihr Programm soll die Lösungsschritte berechnen und ausgeben.  
+
+===== Anforderungen =====  
+==== Variante 1: Automatische Lösung ====  
+Schreiben Sie ein Programm, das die Lösungsschritte für die Türme von Hanoi berechnet und auf der Konsole ausgibt.  
+
+Das Programm soll den Benutzer zu Beginn fragen, wie viele Scheiben verwendet werden sollen (z. B. zwischen 3 und 8).  
+Geben Sie anschliessend die Schritte zur Lösung aus, z. B.:  
+
+<code>
+Schritt 1: Verschiebe Scheibe 1 von Stab A nach Stab C  
+Schritt 2: Verschiebe Scheibe 2 von Stab A nach Stab B  
+Schritt 3: Verschiebe Scheibe 1 von Stab C nach Stab B  
+</code>  
+```
+
+==== Variante 2: Interaktive Lösung ====  
+Erstellen Sie ein interaktives Programm, bei dem der Benutzer das Spiel selbst lösen kann.  
+
+Das Programm soll den aktuellen Zustand der Türme nach jedem Zug anzeigen, z. B.:  
+<code>
+Aktueller Zustand:  
+Stab A: [3, 2, 1]  
+Stab B: []  
+Stab C: []  
+
+Geben Sie den Startstab und den Zielstab ein (z. B. "A C"):  
+</code> 
+
+Das Programm überprüft, ob der Benutzer gültige Züge macht (keine grössere Scheibe auf eine kleinere legen). Falls ein Zug ungültig ist, wird eine Fehlermeldung ausgegeben.  
+
+Zusätzlich soll das Programm am Ende anzeigen, wie viele Züge der Benutzer benötigt hat und ob er die minimale Anzahl an Zügen erreicht hat.
+Die minimale Anzahl an Zügen wird mit der Formel **2^n - 1** berechnet, wobei **n** die Anzahl der Scheiben ist.
+
+===== Abgabe =====  
+Laden Sie die Datei mit dem Sourcecode (.java) hoch.  
+
+----  
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/ch/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Tim Irmler  

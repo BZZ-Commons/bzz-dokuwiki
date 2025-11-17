@@ -1,0 +1,27 @@
+====== LU06.S04 - Events - mood measurement ======
+
+===== Code-Solution =====
+{{ :en:modul:m291:learningunits:lu06:loesungen:lu06.s04.zip | Codesolution }}
+
+===== Assignments  ======
+Create a small Vue app with the following features:
+  - Display a heading: "Choose Your Mood".
+  - Add three buttons, each representing a different mood:
+    * 😊 Happy
+    * 😢 Sad
+    * 😠 Angry
+  - Use the v-on directive to update a data property called mood based on the button clicked.
+  - Display a custom message below the buttons that changes based on the selected mood.
+  - When no mood is selected, show a default message prompting the user to pick one.
+
+{{:en:modul:m291:learningunits:lu06:loesungen:lu06.s04_1.png?1000|Solution executed in the W3School-Sandbox}}
+
+{{:en:modul:m291:learningunits:lu06:loesungen:lu06.s04_2.png?1000|Solution in Webstorm editor}}
+
+===== Vocabulary =====
+^ English ^ German ^ 
+| ...| ...|
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

@@ -1,0 +1,14 @@
+====== Modules ======
+~~NOCACHE~~
+==== Standardsprache ====
+<nspages :modul -subns -exclude -exclude:archiv: -h1 -textNS="" -simplelist -nopages>
+
+==== Deutsch ====
+<nspages :de:modul -subns -exclude -exclude:archiv: -h1 -textNS="" -simplelist -nopages>
+
+==== Englisch ====
+
+<nspages :en:modul -subns -exclude -exclude:archiv: -h1 -textNS="" -simplelist -nopages>
+
+===== Archiv =====
+<nspages .:archiv -subns -exclude -h1 -textNS="" -simplelist -nopages>

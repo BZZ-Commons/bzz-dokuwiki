@@ -1,0 +1,56 @@
+====== LU19a - Aufgabe 1 / Task 09: v-bind, v-for ======
+
+
+===== Administration =====
+Füllen Sie die nachfolgenden Felder aus:
+
+**Klasse:** ....................................
+
+**Vorname:** .................................
+
+**Name:** ......................................
+
+===== Vorarbeit =====
+  * Sie können als Vorlage für diese Aufgabe die Lösung **LU05.S17.html** verwenden
+
+===== Ausgangslage =====
+Beim Auftrag **LU05.S17.html** haben wir verschiedene Gerichte in einem Array verwaltet und mit der directive **v-for** ausgegeben. Manche Gerichte mochten wir, andere wiederum nicht.
+  * Status OK: rote Meldung
+  * Status NOK: grüne Meldung
+  * Alle relevanten Informationen wurden in einem mehrdimensionalen Array gespeichert.
+
+{{:en:modul:m291:learningunits:lu19:theorie:a04_start.png?500|}}
+
+===== Auftrag =====
+  * Zu jedem Gericht soll gespeichert werden, wie oft man das Gerichte genossen bzw. nicht gern gemocht hatte.
+  * Zu jedem Gericht soll der jeweilige Preis pro Portion gespeichert werden.
+  * Zu jedem Gericht muss berechnet werden, wieviel wir dafür bisher ausgegeben haben (Einzelpreis * wie oft gegessen)
+  * Die Bildschirm-Meldungen müssen entsprechend angepasst werden:
+    * Status OK: Ich genoss das .... mal zum jeweiligen Preis von ... = Summe!
+    * Status NOK: Ich hatte das ... mal nicht gerne zum jeweiligen Preis von ... = Summe!
+
+**Hinweis**
+  * Die verwendete Sprache kann Deutsch oder Englisch sein.
+  * Welche Gerichte gemocht, und welche Gerichte nicht gemocht wurden, kann ausgewählt werden.
+  * Die Höhe der jeweiligen Preise kann selbst bestimmt werden.
+  * Der jeweilige Preis und die Summe des Konsums muss in der Meldung ersichtlich sein.
+  * Am Ende müssen beide Stati OK und NOK im Ergebnis ersichtlich sein.
+  * Lediglich die Gerichte, dich ich mag, sollen mit dem Image gezeigt werden.
+
+
+==== Zielzustand ====
+
+In diesem Fall hatte ich 4 Gerichte gerne: 
+  * Burrito 3 mal für je 6.7 = 20.1 CHF  
+  * Salat 2 mal für je 8.3 = 16.6 CHF
+  * ...
+ 
+Hingegen hatte ich nicht gerne: 
+  * Suppe 3 mal für je 4.5 = 13.5 CHF
+  * Pizza 2 mal für je 9.9 = 19.8 CHF
+  * ... 
+
+==== Abbildung ====
+{{:en:modul:m291:learningunits:lu19:theorie:t09_ziel_.png?600|}}
+-----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

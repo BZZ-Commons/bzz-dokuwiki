@@ -1,0 +1,125 @@
+====== LU20.A04 - Eventmanager ======
+
+<WRAP center round todo 60%> 
+Erstellen Sie die verschiedenen Module (Funktionen, Klassen) für eine kleine Applikation "events", die Ereignisse (Events) mit Start- und Enddatum verwalten kann.
+Nutzen Sie in den Modulen ''event.py'' und ''management.py'' die entsprechenden Stubs und Tests, um Ihre Lösung zu überprüfen. 
+</WRAP>
+
+===== Allgemeine Infos =====
+
+Die Applikation soll über ein Terminal-Menü verfügen, über das man:
+
+  * Neue Events erfassen (Titel, Startdatum, Enddatum).
+  * Alle vorhandenen Events anzeigen.
+  * Das Programm beenden kann.
+
+==== Vorlage ==== 
+Im Vorlage-Repository sind alle benötigten Funktionen und Klassen als rudimentäre Stubs realisiert. Diese Stubs liefern – soweit nötig – einen statischen Return-Wert oder lediglich Platzhalter, um das Skript lauffähig zu machen.
+
+==== Vorgehen ====
+
+Implementieren Sie Schritt für Schritt die geforderten Funktionen / Methoden.
+Testen Sie Ihren Code jeweils mithilfe der beiliegenden Tests.
+Verwenden Sie dazu den Befehl:
+<code>pytest -vv</code>
+Immer wenn neue Testfälle erfolgreich laufen, committen & pushen Sie Ihren Code.
+===== Module =====
+==== Modul: event.py ====
+<WRAP center round box 100%>
+=== Dataclass - Rental ===
+
+  * Titel (String)
+  * Startdatum (datetime)
+  * Enddatum (datetime)
+</WRAP>
+
+<WRAP center round box 100%>
+=== @property duration() ===
+| Argumente | self |
+| Rückgabewerte | Die Dauer (in Tagen oder Stunden) (timedelta) |
+**Logik**
+Die Dauer des Events verfügbar machen.
+</WRAP>
+
+==== Modul: management.py  ====
+<WRAP center round box 100%>
+=== read_date ===
+| Argumente | prompt |
+| Rückgabewerte | ''datetime''-Objekt |
+**Logik**
+Zeigt dem User den ''prompt'' an. Liest ein Datum im Format "dd.mm.yyyy hh:mm" ein. Bei falschem Format wird eine Fehlermeldung ausgegeben und erneut abgefragt.
+</WRAP>
+
+
+<WRAP center round box 100%>
+=== create_event ===
+| Argumente | keine |
+| Rückgabewerte | ''Event''-Objekt |
+**Logik**
+Fragt den Benutzer nach dem Event-Titel, Startdatum und Enddatum.
+Erstelt ein ''Event''-Objekt und gibt dieses zurück.
+</WRAP>
+
+<WRAP center round box 100%>
+=== show_events ===
+| Argumente | ''Event''-Objekt-Liste |
+| Rückgabewerte | keine |
+**Logik**
+Gibt eine Liste von Events im Terminal aus (Titel, Startdatum, Enddatum, Dauer).
+</WRAP>
+
+<WRAP center round box 100%>
+=== main ===
+| Argumente | keine |
+| Rückgabewerte | keine |
+**Logik**
+Steuert das Terminal-Menü mit den Optionen "Neuen Event erstellen", "Alle Events anzeigen", "Beenden".
+Speichert erstellte Events in einer Liste
+
+**Userdialog**
+<code>
+1) Create Event
+2) Show Events
+3) Exit
+Enter your choice: 1
+Enter event title: Semester End Party
+Enter start date/time (dd.mm.yyyy hh:mm): 12.07.2025 17.00
+Invalid date/time format. Please try again.
+Enter start date/time (dd.mm.yyyy hh:mm): 12.07.2025 17:00
+Enter end date/time (dd.mm.yyyy hh:mm): 13.07.2025 01:00
+Event "Semester End Party" has been created.
+1) Create Event
+2) Show Events
+3) Exit
+Enter your choice: 2
+List of Events:
+--------------------------------------------------
+Title: Semester End Party
+Start: 12.07.2025 17:00
+End:   13.07.2025 01:00
+Duration: 8:00:00
+--------------------------------------------------
+1) Create Event
+2) Show Events
+3) Exit
+Enter your choice: 3
+Exiting the program. Goodbye!
+</code>
+
+</WRAP>
+
+
+----
+<details>
+<summary>//=> GitHub Repo für externe Besucher//</summary>
+GitHub Repository https://github.com/templates-python/m319-lu20-a04-eventmanager
+
+//Lernende am BZZ **müssen** den Link zum GitHub Classroom Assignment verwenden//
+</details>
+
+{{tag>m310-LU20}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Kevin Maurizi
+
+
+
+

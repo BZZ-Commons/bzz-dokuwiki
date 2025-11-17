@@ -1,0 +1,12 @@
+====== Programm LU02 ======
+aus LU01:
+  - 01/02_Exercises
+  - Lösungen besprechen im 01/03_Solutions (freigeben nach der Besprechung mit der Parallelklasse)
+
+aus LU02:
+  - LU02a - Unterschied ENTRYPOINT vs CMD
+  - LU02b - Dockerfile anpassen und ausführen
+      - 02/01_Demo: ENTRYPOINT, EXPOSE, ONBUILD RUN (Parent/Child Container)
+      - 02/01_Intro (freigeben nach der Besprechung mit der Parallelklasse)
+      - 02/02_Exercises
+      - Lösungen besprechen im 02/03_Solutions (freigeben nach der Besprechung mit der Parallelklasse)

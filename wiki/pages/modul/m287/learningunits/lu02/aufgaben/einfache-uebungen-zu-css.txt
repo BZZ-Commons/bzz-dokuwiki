@@ -1,0 +1,35 @@
+====== LU02.A01 - Übungen zu einfachen CSS-Selektoren ======
+
+===== Ausgangslage =====
+Sie haben die Grundlagen zu den einfach CSS-Selektoren gelesen und verstanden. Es soll nun die Anwendung der CSS-Selektoren an der Webseite (s. HTML-Code unten) geübt werden.
+
+<code html>
+<!doctype html>
+<html>
+  <head>
+    <title>Klassenselektor</title>
+    <meta charset="UTF-8">
+   <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+  <body>
+  <header>Kopfzeile</header>
+  <nav>Navigation</nav>
+  <h1>Klassenselektor</h1>
+  <p>1. Absatz</p>
+  <p>2. Absatz</p>
+  <p>3. Absatz</p>
+  <p>4. Absatz</p>
+  <footer>Fusszeile</footer>
+  </body>
+</html>
+</code>
+
+===== Aufgabenstellung =====
+  - Es soll einheitlich die Schriftfamilie Arial für alle Texte verwendet werden. 
+  - Der erste Absatz ist nicht gestyled.
+  - Der zweite Absatz wird mit dem Klassenselektor p.remark formatiert, wo der Absatz von links um 70 Pixel eingerückt und ebenfalls links ein blauer Rand mit 15 Pixeln Dicke hinzugefügt wird. Der Abstand zu diesem Rand beträgt 10 Pixel.
+  - Der dritte Absatz verwendet den Klassenselektor p.remark.warning, soll ein blauer Rahmen (durchgezogene Linie, Innenabstand links und rechts 9px, oben und unten 1.5px, der Text ist zentriert).
+  - Der vierte Absatz mit der Klasse warning soll die Schrift-Farbe blau sein und die Fontgrösse auf 130% eingestellt sein.
+  - Der Text im Header und Footer ist links ausgerichtet. Die Schriftgrösse im Header und Footer soll auf 80% verkleinert und den Farbcode 00b3ee als Hintergrundfarbe aufweisen.
+  - Die Schrift für Übertitel 1 + 2 haben die Farbe darkslateblue.
+  - Die Schriftgrösse in der Navigation soll auf 90% verkleinert, als Schriftfarbe weiss und den Farbcode 778899 als Hintergrund aufweisen. Der Text in der Navigation zentriert ausgerichtet.

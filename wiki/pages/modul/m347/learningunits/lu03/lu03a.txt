@@ -1,0 +1,18 @@
+====== LU03a - App als Container publizieren ======
+===== Ziele =====
+  -Ich kann eine Webapp (Pyhton) lokal auf meinem Rechner testen.
+  -Ich kann eine Webapp (Pyhton) als Container publizieren.
+  -Ich kann den Container ''HEALTHCHECK'' konfigurieren.
+  -Ich kann den Container ''STOPSIGNAL'' konfigurieren.
+  -Ich kann die demonstrierten Bereiche einer Docker-Datei nachvollziehen und in eigenen Worten beschreiben.
+  -Ich kann mindestens eine Massnahme bei Fehler im Build- oder Run-Prozess vorschlagen und umsetzen.
+
+
+===== Grundlagen =====
+  -[[modul:m347:learningunits:lu03:lu03a:healthcheck|What Is a Docker Health Check?]]
+  -Live-Demo: Siehe im Repository ''03/01_Intro''. In der Demo werden gezeigt,
+  * HEALTHCHECK
+  * STOPSIGNAL
+
+===== Übungen =====
+Siehe im Repository ''03/02_Exercises''.

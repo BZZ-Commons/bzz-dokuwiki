@@ -1,0 +1,44 @@
+====== LU06.A03 - SQL-DQL: Selects with Aggregate Functions ======
+
+===== Requirements  =====
+  * Work type: individual
+  * Timeframe: 30 Minutes
+  * Means of aid: 
+      * only teaching materials, no websearch, no use of ai.
+      * [[https://www.w3schools.com/sql/trysql.asp?filename=trysql_select_columns | W3Schools | SQL Editor]]
+  * Expected result: Semantically and syntactically correct SQL statements according to the requirements of the case studies. 
+
+===== Case studies / Assignments =====
+The following ERD describes a order database for a a shop. 
+
+===== Assignments =====
+The general assignment is to develop DQL commands that matches the requirements below:
+
+==== A: MIN ====
+We want to know which of our products actually the cheapest is.
+
+==== B: MAX ====
+What is the highest price for the products of the supplier with id = 12?
+
+==== C: AVG ====
+What is the average price for products of supplier 3?
+
+==== D: COUNT ====
+How many orders do we currently have in our data-base system from the customer with id = 5?
+  
+==== E: SUM ====
+What is the worth of the order 10255? Please note, that there are two tables involved in this select statement.
+
+==== F: GROUP BY ====
+For our anual report we need list of the orders, and the value of each, grouped by the OrderID.
+
+===== Solution =====
+[[modul:m290:learningunits:lu04:loesungen:l03|Lösung]]
+  
+===== Vocabulary =====
+^ English ^ German ^ 
+| ... | ...|
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

@@ -1,0 +1,25 @@
+====== LU05.S08 - v-if with numbers instead of bool ======
+
+===== Sourcecode of the solution =====
+
+{{ :en:modul:m291:learningunits:lu05:loesungen:m291_lu05_s08.zip | Sourcecode of the solution}}
+
+===== Assignment ======
+The first assignment checked by using v-if whether a certain variable was checked or not (true/false). Now, we want to go one step further and check not only whether it is true or false, but moreover which value it contains. By this, we would be able to tell the customer of how many typewriters we have in stock, which may be of some benefit for the customer as well as for us.
+
+  - Change the value of the variable //typewriter// to 0 und execute the script. 
+  - Note your realisations as a html-comment.
+  - Change the content of the variable //typeWriter// to -1. 
+  - What happens, if the value //typeWiter// has no value at all respectively is empty?
+  - Note your realisations as a js-comment or html-comment.
+  - Save your script acoordingly, whether in your W3School workspace or on you local computer in your code-editor Webstorm.
+
+{{:en:modul:m291:learningunits:lu05:loesungen:lu05.s08.png?1000|Codesolution}}
+
+===== Vocabulary =====
+^ English ^ German ^ 
+| ... | ... |
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

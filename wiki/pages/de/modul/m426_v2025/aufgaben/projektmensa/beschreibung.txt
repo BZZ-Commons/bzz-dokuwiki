@@ -1,0 +1,43 @@
+====== Projektbeschreibung: Mensa-Applikation ======
+
+
+Die Mensa-Applikation dient dazu, den Mensabetrieb für Studierende, Mitarbeitende und andere Gäste zu digitalisieren und effizienter zu gestalten.
+Nutzer können über die App das aktuelle und kommende Menü einsehen, Essen und Getränke vorbestellen, einen Abholzeitpunkt festlegen und ihre Bestellung direkt online bezahlen.
+
+===== Nutzen der Applikation =====
+Die App reduziert Wartezeiten, verbessert die Planbarkeit für die Mensaküche und erhöht den Komfort für die Nutzer durch einen modernen, digitalen Bestellprozess.
+
+===== Funktionen der Applikation: =====
+
+==== Menüanzeige: ====
+
+  * Darstellung des täglichen Speiseplans für die kommenden Tage.
+  * Informationen zu Gerichten (Zutaten, Allergene, vegetarisch/vegan, Preise).
+
+==== Bestellsystem: ====
+
+  * Auswahl von Gerichten und Getränken aus dem Menü.
+  * Möglichkeit zur Vorbestellung für bestimmte Tage und Uhrzeiten.
+  * Verwaltung und Übersicht über getätigte Bestellungen.
+
+==== Bezahlung: ====
+
+  * 
+  * Integration eines sicheren Online-Zahlungssystems.
+  * Bezahlvorgang im Anschluss an die Bestellung.
+  * Zahlungsbestätigung per App und optional per E-Mail.
+
+==== Benutzerkonto und Authentifizierung: ====
+
+
+  * Erstellung eines Nutzerkontos mit persönlichen Daten.
+  * Login-Funktion zur Authentifizierung mit optionaler MFA.
+  * Speicherung von Bestell- und Zahlungsdaten im Benutzerprofil.
+  * Datenschutzkonforme Handhabung aller persönlichen Informationen.
+
+
+
+===== Ziele =====
+  * Der Gast wartet maximal 5 Minuten auf sein vorbestelltes Menu.
+  * Mindestens 50% der verkauften Menus sind vorbestellt.
+  * Die Nutzer (Gäste, Mensapersonal) beurteilen die Usability mit einer Schulnote von 5 oder höher.

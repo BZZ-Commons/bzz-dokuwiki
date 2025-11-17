@@ -1,0 +1,74 @@
+====5. Gestaltungsaspekte====
+Die Platzierung von Elementen, der Ausgestaltung sowie Farbe und Rahmen können zu ganz unterschiedlichem Empfinden beim Benutzer führen. Diesen Aspekten ist bei der Anordnung und Gruppierung von Graphikelementen Rechnung zu tragen.
+===5.1 Kulturdenken===
+<WRAP column 15%>
+{{:modul:m322:learningunits:lu01:theorie:lu01-gestaltung-kultur_denken.png?150|}}\\
+//Abb. 1-18: Gleichmässige Platzierung von Flächen//
+</WRAP>
+<WRAP column 80%>
+Werden mehrere gleiche Flächen in regelmässigen Abständen angeordnet, so wird sich unser Auge – aus Sicht unserer Lernhistorie bedingt – von oben links nach unten rechts orientieren, d.h. dass uns die beiden Flächen im oberen linken bzw. unteren rechten Eck am stärksten auffallen.\\
+Dieses „Sehen“ ergibt sich aus der Art, wie westlich geschulte Menschen Texte lesen.
+(In der arabischen Kultur würde dieses Bild „anders“ gesehen!)
+</WRAP>
+<WRAP clear>
+</WRAP>
+===5.2 Räumliche nähe===
+<WRAP column 15%>
+{{:modul:m322:learningunits:lu01:theorie:lu01-gestaltung-naehe.png?150|}}\\
+//Abb. 1-19: Wirkung bei räumlicher Nähe//
+</WRAP>
+<WRAP column 80%>
+Platzieren wir die Flächen nicht mehr regelmässig, sondern führen einen vergrösserten Abstand ein, so nimmt unser Auge primär zwei Gruppen von Flächen wahr. \\
+Die jeweils näher beieinander liegenden Flächen bilden dabei eine Einheit.
+</WRAP>
+<WRAP clear></WRAP>
+===5.3 Formgebung===
+<WRAP column 15%>
+{{:modul:m322:learningunits:lu01:theorie:lu01-gestaltung-form.png?150|}}\\
+//Abb. 1-20: Auswirkung der Formgebung//
+</WRAP>
+<WRAP column 80%>
+Durch die Formgebung der Fläche kann ein ganz anderer Eindruck erweckt werden. So ist im nebenan gezeigten Bild die Diagonale von unten links nach oben rechts viel stärker, als das uns „angewohnte Sehen“ von oben links nach unten rechts.\\
+Die geometrisch andere Gestaltung der Fläche bewirkt hier diesen Effekt.
+</WRAP>
+<WRAP clear></WRAP>
+===5.4 Farbliche Ausprägung===
+<WRAP column 15%>
+{{:modul:m322:learningunits:lu01:theorie:lu01-gestaltung-farbe.png?150|}}\\
+//Abb 1-21: Wirkung von Farben bzw. Schattierungen//
+</WRAP>
+<WRAP column 80%>
+Weit stärker als Formen oder räumliche Nähe wirken aber Farben (oder Schattierungen) auf unser Auge. Im Bild werden klar drei Gruppen von zusammengehörenden Flächen ausgemacht, obwohl diese in Form und Platzierung unterschiedlich sind.
+</WRAP>
+<WRAP clear></WRAP>
+===5.5 Rahmen===
+<WRAP column 15%>
+{{:modul:m322:learningunits:lu01:theorie:lu01-gestaltung-rahmen.png?150|}}\\
+//Abb. 1-22: Wirkung von Rahmen//\\
+
+</WRAP>
+<WRAP column 80%>
+Die stärkste Wirkung wird durch den Einsatz von Rahmen oder Linien hervorgerufen. \\
+Die umrahmten Flächen werden als zusammengehörend erfasst, auch wenn sie unterschiedliche Farben aufweisen.
+</WRAP>
+<WRAP clear></WRAP>
+
+===5.6 Ein Beispiel===
+Bei der Gestaltung von graphischen Oberflächen sind nebst der Auswahl der korrekten Graphikelemente und der Berücksichtigung der Regeln der SW-Ergonomie auch die oben erwähnten Gestaöltungsaspekte zu beachten. Mit diesen Stilelementen kann das Erscheinungsbild eines GUI massiv beeinflusst werden.\\
+Als Beispiel wird hier (bewusst) ein alter Dialog aus einer Word-Version gezeigt, wie er im Original ausgebildet wurde und wie eine verbesserte Version aussehen könnte.\\
+<WRAP column 48%>
+{{:modul:m322:learningunits:lu01:theorie:lu01-gestaltung-beispiel1.png?300|}}\\
+//Abb 1-23: Original Dialog//\\
+Die Anordnung der Elemente wirkt etwas zufällig. Das fällt z.B. beim Radio-Button 'Seiten' auf. Hier ist das Eingabefeld unterhalb des Button platziert und verliert sich räumlich in der Gestaltung. Gleiches gilt für die Check-Box 'in Datei umleiten'.\\
+Durch die unterschiedliche Wahl der Grösse bei den Schaltflächen 'Abbrechen' und 'OK' wirkt 'Abbrechen' als wichtigeres Element, was natürlich nicht der Fall ist.
+</WRAP>
+<WRAP column 48%>
+{{:modul:m322:learningunits:lu01:theorie:lu01-gestaltung-beispiel2.png?300|}}\\
+//Abb. 1-24: Angepasster Dialog//\\
+Durch das Zusammenfassen sinnverwandter Elemente und der Hervorhebung mit einem (beschrifteten) Rahmen, ist hier viel klarer gezeigt, was gemacht werden kann.\\
+Auch die Auswahl des Bereichs für die Ausgabe ist mit einer vertikalen - statt horizontalen - Ausrichtung viel besser zu interpretieren. Wir sind es uns ja gewohnt, Aufzählungen zeilenweise darzustellen.
+</WRAP>
+<WRAP clear></WRAP>
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) René Probst

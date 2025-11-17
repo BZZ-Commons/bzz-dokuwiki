@@ -1,0 +1,55 @@
+====== LU02e - LB2 - Bewertungskriterien ======
+
+==== A - Formalitäten =====
+  * A1: 1 Pkt: Filename ist gemäss Vorgabe: Klasse_LB2_A?_NachnameVorname.html (Beispiel: ME22f_LB2_A1_DemirVolkan.html)
+  * A2: 1 Pkt: Titel ist im Script als <h1>-Tag ausgezeichnet.
+  * A3: 1 Pkt: Zielsetzung des Scripts ist als <h3>-Tag (kurzer Satz, in Englisch oder Deutsch) ausgezeichnet. 
+
+==== B - Coding-Standards =====
+  * B1: 1 Pkt: Einrücken (Lesbarkeit und Struktur des Codes)
+  * B2: 1 Pkt: Kommentare. Hinweis: Kommentieren Sie nicht was offensichtlich ist, sondern die Ursache bzw. die Wirkung oder Struktur des Codes (**WARUM**, nicht WAS).
+
+==== C - Header für Scripte bzw. Methoden - sofern relevant in der Aufgabe ====
+  * C1: 2 Pkt: Script (File) hat ein Header in der passenden HTML- bzw. JS-Notation mit 
+    * Autorenschaft
+    * Datum
+    * Kurzen Beschreibung der Zielsetzung als ganzen Satz.
+  * C2: 3: Pkt: Methoden haben einen Header 
+    * Beschreibung der Zielsetzung (Was ist Sinn der Methode)
+    * Input-Parameter
+    * Returnvalue
+
+==== D - Effektivität/ Zielerreichung ====
+  * 16 Pkt: Lösung ist inhaltlich identisch mit der Vorgabe.
+  * 12 Pkt: Grundfunktionalität wurde erreicht, jedoch ist ein wichtiges bzw. zwei weniger wichtigen Elemente abweichend von der Vorgabe.
+  * 08 Pkt: 2 oder mehr wichtige Aspekte abweichend von der Vorgabe.
+  * 04 Pkt: Lösung weist geringe Codeanpassung bzw. geringe Erreichung des Auftrages/Zielzustand auf.
+  * 00 Pkt: Keine Eigenleistung erkennbar bzw. nachweisbar.
+
+==== E - Malus  ====
+  * E1: 25%: Das Lösungsfile muss aus irgend einem Grund nachgereicht werden.
+  * E2: 05%: Das Lösungsfile wurde bei der falschen Aufgabe hochgeladen.
+  * E3: 05%: Nicht oder "falsch* komprimierte Lösungsfiles (Kompressionsformat MUSS ZIP sein, kein 7z, gzip, etc.)
+  * E4: 05%: Lösungsfile ist nicht im HTML-Format.
+
+===== Bewertungsfile als Excel-Datei====
+{{ :en:modul:m291:learningunits:lu02:m291_bewertungsraster_lb2.xlsx | Bewertungsraster als Excel-File}}
+
+
+===== Allgemeine Hinweise =====
+  * **Security: **
+    * Aus Sicherheitsgründen dürfen keine HTML-Files abgegeben werden. Es kann passieren, dass die kantonalen Sicherheitsrichtlinien den Upload verhindern.
+    * Daher muss die Ihre Lösung  vor dem Upload gezipped (komprimiert werden). 
+  * **Effektivität:** 
+    * Bewertet wird primär das im Browser sichtbare Ergebnis unter Berücksichtigung des Anteils an Eigenleistung (Codeergänzungen).
+  * **Gleiche Gewichtung der Aufgaben:** 
+    * Zum Vorteil der Lernenden, werden alle Aufgaben gleich gewichtet. Sprich beispielsweise bei 3 Aufgaben, wird jede Aufgabe mit 1/3 gewichtet. Dadurch ist es ist einfacher eine genügende Note (4.0) zu erreichen.
+  * **Fehlende oder nicht nachweisbare Eigenleistung:**
+    * Sollte die Eigenleistung nicht vorhanden, oder die Autorenschaft unklar sein bzw. auf Drittpersonen hindeutend, wird die Lösung mit 0 Punkten bewertet.
+  * **Zeitmanagement:** 
+      * Stellen Sie sicher, dass Sie rund 5 Minuten vor dem Ablauf der Prüfungszeit fertig sind. Dann haben Sie genug Zeit Ihre Dateien formal nochmals zu prüfen und zu komprimieren. 
+      * Auch der Upload benötigt Zeit, besonders, wenn alle gegen Ende der Prüfung Ihre Files hochladen wollen. 
+
+-----
+
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

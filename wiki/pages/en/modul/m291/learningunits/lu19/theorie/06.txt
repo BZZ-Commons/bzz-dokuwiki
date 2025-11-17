@@ -1,0 +1,52 @@
+====== LU19a - Aufgabe 1 / Task 06: v-bind, v-if, ... ======
+
+===== Administration =====
+Füllen Sie die nachfolgenden Felder aus:
+
+**Klasse:** ....................................
+
+**Vorname:** ...................................
+
+**Name:** ......................................
+
+===== Vorarbeit =====
+  * Sie können als Vorlage für diese Aufgabe die Lösung **LU05.S09.html** verwenden.
+  * Das entsprechende Bild, dass aktuell angezeigt wird, kann in Ihrer Lösung variieren (kann anders sein).
+
+
+===== Ausgangslage =====
+Beim Auftrag **LU05.A09.html** wurde der Lagerbestand von Schreibmaschinen in Gruppen ausgegeben: 
+  - //Plenty in Stock//
+  - //In Stock//
+  - //Very few left// 
+  - //Not in Stock//
+
+Die Hintergrundfarbe blieb bei allen Meldungen grün.
+
+{{:en:modul:m291:learningunits:lu19:theorie:lu09.s09_start.png?300|}}
+
+===== Auftrag =====
+  * Neu soll das Foto nur eingeblendet werden, wenn es Schreibmaschinen an Lager hat. 
+  * Zusätzlich soll die verfügbare Anzahl hinter der Meldung ausgegeben werden. 
+  * Realisieren sie die Farbanpassungen anhand von 2 neuen CSS-Klassen **outOfStockClass** und **lowStockClass**, die mittels v-bind beim entsprechenden <p>-Tag eingebaut werden müssen.
+    * Grün:  Es hat an Lager bzw. es hat reichlich an Lager  
+    * Orange: Es hat weniger an Lager
+    * rot: Es hat keine mehr an Lager
+
+
+**Hinweis**
+  * Das Bild und ist nicht relevant. 
+  * Die Position vom Bild ist nicht relevant.
+  * Der Farbton ist nicht relevant. 
+  
+
+^Zielzustand 1 | Wenn es **an Lager** oder **reichlich an Lager** hat, ist das Bild zu sehen und und die Meldung in grün. | {{:en:modul:m291:learningunits:lu19:theorie:t06_ziel1.png?500|}} |
+^Zielzustand 2 | Es hat nur noch **wenig an Lager**, das Bild ist immer noch zu sehen. Die Meldung ist orange. | {{:en:modul:m291:learningunits:lu19:theorie:t06_ziel2.png?500|}} | 
+^Zielzustand 3 | Schreibmaschinen hat es **keine an Lager**, das Bild wird ausgeblendet, die Meldung erfolgt in rot. | {{:en:modul:m291:learningunits:lu19:theorie:t06_ziel3.png?500|}} |
+
+-----
+
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir
+
+
+

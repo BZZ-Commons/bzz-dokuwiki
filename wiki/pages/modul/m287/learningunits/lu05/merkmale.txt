@@ -1,0 +1,20 @@
+====== LU05c - Responsive Webdesign - Medienmerkmale ======
+
+Die Ausgabegeräte verfügen über verschiedene Merkmale. Das häufigste Merkmal ist die Minimal- und Maximalbreite der Anzeigefläche. Nachfolgend sind die wichtigsten Medienmerkmale tabellarisch aufgeführt, welche mit den Media Queries abgefragt werden können.
+
+**Präfixe ''min-'' und ''max-''**\\
+Anstatt eine Media Query zu verwenden, bei der z.B. die exakte Breite mit ''width'' abgefragt wird, sollten ''min-width'' oder ''max-width'' bevorzugt werden. Diese reagieren bereits, wenn die Anzeigebreite mindestens oder höchstens dem übergebenen Wert entspricht.
+Ferner finden Sie hier eine Übersicht über alle Medienmerkmale.
+
+===== Übersicht Medienmerkmale =====
+
+^ Medienmerkmal ^ Bedeutung ^
+| **''width, min-width, max-width''** | Breite der Anzeigefläche (Viewport) des Webbrowsers. Mögliche Werte sind positive Längenangaben.\\ Beispiel: ''(min-width: 480px)'' |
+| **''height, min-height, max-height''** | Höhe der Anzeigefläche (Viewport) des Webbrowsers. Mögliche Werte sind positive Längenangaben.\\ Beispiel: ''(max-height: 720px)'' |
+| **''device-width, min-device-width, max-device-width''** | Breite des Geräts. Mögliche Werte sind positive Längenangaben. Auch wenn das Gerät diese Abmessung besitzt, können Sie sich nicht darauf verlassen, dass dieser verfügbare Bereich auch verwendet werden kann.\\ Beispiel: ''(device-min-width: 480px)'' |
+| **''device-height, min-device-height, max-device-height''** | Höhe des Geräts. Mögliche Werte sind positive Längenangaben. Auch wenn das Gerät diese Abmessung besitzt, können Sie sich nicht darauf verlassen, dass dieser verfügbare Bereich auch verwendet werden kann.\\ Beispiel: ''(device-max-width: 480px)'' |
+| **''orientation''** | Damit können Sie die Ausrichtung des Geräts abfragen. Die Orientierung kann Hochformat (portrait) oder Querformat (landscape) sein. Im Hochformat ist der Wert von height höher als von width. Beim Querformat ist es umgekehrt.\\ Beispiel: ''(orientation: landscape)'' |
+| **''aspect-ratio, min-aspect-ratio, max-aspect-ratio''** | Gibt das Seitenverhältnis von width und height zueinander an. Ein Wert von 1.280 × 720 entspricht einem Seitenverhältnis von 16:9, was Sie mit ''(aspect-ratio: 16/9)'' ansprechen können. Diese Angabe entspricht aber auch derselben wie die Angabe ''(aspect-ratio: 1280/720)''. |
+| **''device-aspect-ratio, min-device-aspect-ratio, max-device-aspect-ratio''** | Wie mit ''aspect-ratio'' (und den min- und max-Versionen), nur gilt hier jetzt das Seitenverhältnis des Geräts von device-width und device-height zueinander. |
+| **''color, min-color, max-color''** | Abfrage der Farbtiefe des Geräts |
+| **''resolution, min-resolution, max-resolution''** | Abfrage der Auflösung des Geräts\\ Beispiel: ''(resolution: 72dpi)'' |

@@ -1,0 +1,51 @@
+====== LU06b - v-on ======
+
+===== Learning ojectives =====
+  - Be able to explain the objectives of event handling and give examples.
+  - Be able to name actions that can follow events.
+  - Be able to use simple Vue events.
+
+===== Source =====
+  * [[https://www.w3schools.com/vue/vue_v-on.php|W3School-Events - v-on]]
+  * 
+===== Introduction =====
+After discussing the principle of events in VUE in the last chapter, this chapter goes a little further. In other words, more exciting exercises, e.g. 
+  * Mouseover, 
+  * Mousemove, 
+  * ...
+
+
+===== Example 1 =====
+  <div id="app">
+    <button v-on:click="count++">Clicked {{ count }} times</button>
+  </div>
+  <script>
+    new Vue({
+      el: '#app',
+      data: {
+        count: 0
+      }
+    })
+  </script>
+
+ 
+===== Example 2 ====
+  <div id="app">
+    <p v-on:mouseover="message = 'Mouse is over the text!'">{{ message }}</p>
+  </div>
+  <script>
+    new Vue({
+      el: '#app',
+      data: {
+        message: 'Hover over me!'
+      }
+    })
+  </script>
+
+
+===== Vocabulary =====
+^ English ^ German ^ 
+| further | weiter |
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

@@ -1,0 +1,41 @@
+====== LU06.S08 - Events - basic calculator ======
+
+===== Assignment =====
+This assignment compraises the programming of a tiny caculator for basic calculation operations, meaning two diggit have to be added together. To do the assignment we need two blocks of diggits-buttons and a operation-button "+" to execute the operation respectively to receive the result.
+
+==== Assignment A - 3' =====
+  * A01: Create in Webstorm in your directory **06_methods** a html file and name it correctly **LU06.S08**.
+  * A02: Copy the structure of the sfc (single file component) from a solution of your choice (in that way we don't have to type it manually --> easier and faster)
+  * A03: Make sure to have 
+    * the assignment number <h1>-titel and 
+    * the description in <h3>-format
+  * A04: Safe it.
+
+==== Assignment B - Variables - 5' ====
+  * B01: To make an addition work in our VUE instance we need threee variables with the corresponding initial values
+    * diggit1:0
+    * diggit2:0
+    * result:0  
+
+==== Assignment C - Button for diggit 1 - 10' ====
+  * C01: Create the buttons 1 to 4 (that shall suffice for our purpose)  
+  * C02: When clicking on one of them the content will be saved in the variable **diggit1** with the corresponding number 1-4, meaning when clicking the 1, the variable diggit will be set with 1.
+
+==== Assignment D - Button for diggit 2 - 2' ====
+  * D01: Create the second set of buttons 1 to 4 to set the second diggit. (4 of them shall suffice for our purpose)  
+  * D02: When clicking on one of them the content will be saved in the variable **diggit2**
+
+==== Assignment E: Implementation of the calculation - 10'  ====
+  * E01: To execute our addition-operation we finally need a button **Operator**-button.
+  * E02: Clicking this operator-Button adds diggit1 to diggit2 and displays the result (result = diggit1 + diggit2)
+
+==== Assignment F: Reset button - 5'  ====
+  * F01: Create finally a **reset**-button which sets all value to the initial ones.
+  * F02: Meaning clicking on the reset-button uses: result=0, diggit1=0, diggit2=0
+
+===== Solutions =====
+{{:en:modul:m291:learningunits:lu06:loesungen:lu06.s08.png| Source code for the basic calulator as a screenshot}}
+
+{{ :en:modul:m291:learningunits:lu06:loesungen:lu06.s08.zip?1200 | Source code for the basic calulator}}
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

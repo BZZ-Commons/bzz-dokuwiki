@@ -1,0 +1,62 @@
+====== LU04.A03 - Grid ======
+
+===== Aufgabe 1: Theorie ======
+
+==== Aufgabenstellung ====
+  - Was bewirkt die CSS-Eigenschaft ''display: grid''?
+  - Was ist der Unterschied zwischen einem Grid-Container und einem Grid-Item?
+  - Wofür stehen die Einheiten ''fr'' und ''px'' in CSS Grid?
+  - Wie viele Dimensionen unterstützt CSS Grid?
+  - Was passiert, wenn Sie ''grid-template-columns: 1fr 2fr'' setzen?
+  - Wie sieht die Kurzform für ''grid-column-start'' und ''grid-column-end'' aus?
+
+
+===== Aufgaben 2: Einfache Box-Platzierung =====
+
+==== Ausgangslage ====
+**HTML**
+<code html>
+<!-- HTML -->
+<div class="grid">
+  <div>Box 1</div>
+  <div>Box 2</div>
+  <div>Box 3</div>
+  <div>Box 4</div>
+  <div>Box 5</div>
+  <div>Box 6</div>
+</div>
+</code>
+
+==== Aufgabenstellung ====
+  - Setzen Sie ''display: grid'' auf ''.grid''
+  - Erstelle 3 Spalten und 2 Zeilen
+  - Geben Sie jeder Box eine andere Hintergrundfarbe
+
+===== Aufgaben 3: Verhalten eines Grids mit verschiedenen Spalten =====
+
+==== Aufgabenstellung ====
+  - Erstellen Sie ein Grid mit 3 Spalten: Die erste mit ''200px'', die zweite mit ''1fr'', die dritte mit ''2fr''
+  - Fügen Sie drei Grid-Items ein
+  - Beobachten Sie, wie sich die Spaltenbreiten verändern, wenn Sie die Fenstergrösse anpassen
+
+===== Aufgabe 4: Elemente gezielt platzieren =====
+
+==== Aufgabenstellung ====
+  - Erstelle Sie ein 4x4-Grid
+  - Fügen Sie ein Element ein, das Spalte 2 bis 4 und Zeile 1 bis 2 einnimmt
+  - Verwenden Sie ''grid-column-start'', ''grid-column-end'', ''grid-row-start'', ''grid-row-end''
+
+===== Aufgabe 5: Grid Template erstellen =====
+
+<code>
++---------+------------+
+| header  |  header    |
++---------+------------+
+| nav     |  content   |
++---------+------------+
+| footer  |  footer    |
++---------+------------+
+</code>
+
+==== Aufgabenstellung ====
+  - Erstellen Sie das Layout mithilfe von ''grid-template-areas''

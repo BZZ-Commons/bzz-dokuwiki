@@ -1,11 +1,11 @@
-====== LU07b - Vom eignen Datentyp zur Klasse ======
+====== LU07b - Vom eigenen Datentyp zur Klasse ======
 ===== Repetition eigene Datentypen =====
 Wir kennen bereits die eigenen Datentypen. Unsere eigenen Datentypen haben einen Namen und haben eigene Attribute/Eigenschaften.
 
 Der eigene Datentyp **Clubmitglied** weist z.B. die folgenden Attribute auf
 
 ^ Attribute ^ UML ^
-| Name, Vorname, Adresse, Ort: ''String''  | {{:modul:m319:learningunits:lu05:uml_clubmitglied.png?200|}} |
+| Name, Vorname, Adresse, Ort: ''String''  | {{de:modul:m319:learningunits:lu05:uml_clubmitglied.png?200|}} |
 | Postleitzahl, Eintrittsjahr, Geburtsjahr: ''int''   | ::: |
 | Ehrenmitglied: ''boolean''    | ::: |
 

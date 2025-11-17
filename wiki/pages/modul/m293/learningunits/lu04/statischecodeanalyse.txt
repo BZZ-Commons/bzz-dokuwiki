@@ -83,14 +83,14 @@ Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy Unrestricted -Force
 Öffnen Sie die das Terminal in Webstorm.
 {{ :modul:m293:learningunits:lu04:terminal.png?800 |}}
 Dieses Terminal öffnet sich automatisch im Workspace-Ordner.  
-Tippen Sie nun ''htmlhint --config .\.github\linters\.htmlhintrc'' ins Terminal-Fenster und hmtlhint wird ihren Code statisch analysieren und ihnen einen Bericht liefern.
+Tippen Sie nun ''htmlhint %%--%%config .\.github\linters\.htmlhintrc'' ins Terminal-Fenster und hmtlhint wird ihren Code statisch analysieren und ihnen einen Bericht liefern.
 
 <WRAP center round important 60%>
 Da wir eine an die BZZ-Standards angepasste htmlhint-Config verwenden müssen **wir den Pfad zur Config immer angeben**.
 
-**Windows:** ''htmlhint --config .\.github\linters\.htmlhintrc''
+**Windows:** ''htmlhint %%--%%config .\.github\linters\.htmlhintrc''
 
-**Unix:** ''htmlhint --config ./.github/linters/.htmlhintrc''
+**Unix:** ''htmlhint %%--%%config ./.github/linters/.htmlhintrc''
 </WRAP>
 
 {{ :modul:m293:learningunits:lu04:lintreport.png?800 |}}

@@ -1,0 +1,56 @@
+====== LU07.S01 - SQL-DDL: DB Management ======
+
+===== Solutions =====
+==== Task A ====
+Make sure, that your MySQL database system is running and connect with you webstorm editor to your database with your DBA credentials (user: root, password: yourPW).
+
+**Windows**
+
+CTRL + Shift + ESC --> Dienste --> Filtering the resultset to MySQL
+
+{{:modul:m290:learningunits:lu06:loesungen:m290_lu06.s01a.png?600|}}
+
+**MacOS**
+...
+
+==== Task B ====
+Display all instances which are currently running on our database.
+
+{{:modul:m290:learningunits:lu06:loesungen:m290_lu06.s01b.png?600|}}
+
+==== Task C ====
+Create the database instances 
+  * myDB_PERFECT
+  * myDB_OK
+  * myDB_OBSOLETE
+
+and display your result.
+
+{{:modul:m290:learningunits:lu06:loesungen:m290_lu06.s01c.png?600|}}
+
+==== Task D ====
+Drop the instance "myDB_obsolete", as it obviously obsolete (no longer needed). Display the result.
+
+{{:modul:m290:learningunits:lu06:loesungen:m290_lu06.s01d.png?600}}
+
+==== Task E ====
+Activate the instance "myDB_PERFECT" by using the USE command.
+
+{{:modul:m290:learningunits:lu06:loesungen:m290_lu06.s01e.png?600}}
+
+
+==== Task F ====
+Display the system date by using the command "SELECT sysdate();"
+ 
+{{:modul:m290:learningunits:lu06:loesungen:m290_lu06.s01f.png?600|}}
+
+Congratulations!! You have just received a first respond from your database "mydb_perfect".
+
+===== Vocabulary =====
+^ English ^ German ^ 
+| obsolete | überflüssig |
+| credential | Berechtigungsnachweis |
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

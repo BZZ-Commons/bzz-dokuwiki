@@ -1,0 +1,45 @@
+====== LU05.A18 - combined usage of several directives  ======
+
+===== Pre-requisites  =====
+  * Work type: Individual
+  * Means of aid: only teaching materials, no websearch, no use of ai.
+  * Timeframe: 80 Minutes
+  * Expected result: A Vue script that uses all issued directives: 
+    * v-bind (images and styles)
+    * v-if/v-else including logical operators 
+    * v-show and 
+    * v-for including arrays
+
+===== Learning objectives =====
+  * Make use of several directives in one script: 
+      * v-bind, 
+      * v-show, 
+      * v-if/v-else-if, v-else, 
+      * v-show, 
+      * v-for
+
+===== Source =====
+For this assignment there is no basic file, thus you need to start from the scratch. But mind, that you have already worked on several assignments and subsequently have the basic structure.
+
+===== Assignment  ======
+Create a vue script that uses all issued VUE directives in combination. 
+
+  - **v-bind**: image and style
+  - textoutput in the **{ {...} }** notation (double brackets)
+  - **a multi-dimensional array userList** containing the **userid, name, surename, email, password**
+  - array with at least 4 rows of data
+  - **v-for**: to iterate all data of the multi-dimensional array
+  - **v-if**: if the  user is matches with the search-person a image (**v-show**) of this person will be displayed, along with all the detail-data
+  - **v-else**: only username, name and surename are displayed, along with a different general user image (**v-show**)
+
+===== Solution =====
+[[en:modul:m291:learningunits:lu05:loesungen:18|Lösung]]
+
+===== Vocabulary =====
+^ English ^ German ^ 
+|  ...| ... |
+
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

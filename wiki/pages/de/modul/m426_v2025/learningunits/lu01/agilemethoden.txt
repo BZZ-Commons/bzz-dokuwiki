@@ -1,0 +1,56 @@
+====== LU01a - Agile Methoden ======
+
+===== Was sind agile Methoden? =====
+//[[wpde>Agile_Softwareentwicklung]]//
+
+Agile Methoden wollen die Prozesse bei der Softwareentwicklung möglichst schlank und effizient gestalten.
+Dabei wird versucht, den bürokratischen Aufwand zu minimieren und sich auf die menschliche Interaktion zu konzentrieren.
+Typisch für agile Methoden sind:
+  * Möglichst kurze Entwurfsphasen.
+  * Konzentration auf die frühzeitige Realisierung von lauffähiger Software.
+  * In regelmässigen, kurzen Abständen wird das Teilergebnis mit dem Kunden abgestimmt.
+
+
+==== Agile Werte ====
+
+Die Grundlage bilden die Werte im [[http://agilemanifesto.org/iso/de/manifesto.html|Manifest für agile Softwareentwicklung]]:
+
+//Wir erschliessen bessere Wege, Software zu entwickeln, indem wir es selbst tun und anderen dabei helfen.
+Durch diese Tätigkeit haben wir diese Werte zu schätzen gelernt://
+
+  * **Individuen und Interaktionen** mehr als Prozesse und Werkzeuge
+  * **Funktionierende Software** mehr als umfassende Dokumentation
+  * **Zusammenarbeit mit dem Kunden** mehr als Vertragsverhandlung
+  * **Reagieren auf Veränderung** mehr als das Befolgen eines Plans
+
+//Das heisst, obwohl wir die Werte auf der rechten Seite wichtig finden, schätzen wir die Werte auf der **linken Seite** höher ein.//
+
+==== Agile Prinzipien ====
+Die //agilen Prinzipien// basieren auf den //agilen Werten// und beschreiben Handlungsgrundsätze bei der Entwicklung von Software.
+In den [[http://agilemanifesto.org/iso/de/principles.html|Prinzipien hinter dem Agilen Manifest]] sind die 12 Prinzipien aufgelistet.
+
+===== Abgrenzung zu traditionellen Vorgehensmodellen =====
+Zu den traditionellen Vorgehensmodellen gehören unter anderem [[wpde>Rational_Unified_Process|Rational Unified Process]], 
+das [[wpde>V-Modell|V-Modell]] oder [[http://www.hermes.admin.ch/|HERMES]].
+Diese Modelle unterteilen den Entwicklungsprozess in inhaltlich und zeitlich klar abgegrenzte Phasen.
+
+=== Zum Beispiel: ===
+
+  - Anforderungen
+  - Entwurf
+  - Realisierung
+  - Testen
+  - Auslieferung, Einsatz
+  - Wartung
+
+Zu jeder Phase sind die Tätigkeiten und die zu erarbeiteten Resultate definiert.
+Eine der Schwierigkeiten der traditionellen Methoden ist, dass sehr früh im Projekt wichtige Entscheidungen zur Umsetzung getroffen werden.
+Zu diesem Zeitpunkt ist aber in der Regel noch wenig Wissen über die benötigte Software und deren Umfeld vorhanden.
+
+{{:modul:m426:learningunits:lu01:wissenentscheidung.png|}}
+
+Im Verlauf des Projekts steigt unser Wissen und Verständnis an, aber es können nur noch Details der Umsetzung beeinflusst werden.
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter 

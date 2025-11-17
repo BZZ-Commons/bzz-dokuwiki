@@ -1,0 +1,18 @@
+====== LU06d - Anpassungen ======
+
+Je nach Bedarf können wir das Design von Bootstrap an unsere Wünsche anpassen und um weitere Elemente erweitern.
+Auf den folgenden Seiten werden wir zwei Elemente anschauen.
+
+===== Farben, Schriften anpassen =====
+
+In aller Regel können wir die Designelemente des Bootstrap-Frameworks ohne grosse Anpassungen übernehmen.
+Die verschiedenen Elemente sind stimmig und gut aufeinander angepasst.
+Es kann jedoch sein, dass das CI/CD unseres Auftraggebers anderen Farben und Schriften vorgibt.
+
+===== Erweiterungen =====
+Für dynamische Elemente gibt es eine Reihe von Erweiterungen für Bootstrap.
+Diese bieten uns zusätzliche Möglichkeiten und können einfach eingebunden werden.
+
+----
+{{tag>m293-LU14}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Kevin Maurizi, Marcel Suter

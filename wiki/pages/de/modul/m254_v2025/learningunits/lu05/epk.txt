@@ -1,0 +1,73 @@
+====== LU05a - Prozessbeschreibung mit EPK ======
+<WRAP center round info 60%>
+**Lernziele**
+
+  * Sie können den Sinn und die Zielsetzung von EPK nennen und erläutern. 
+  * Sie kennen die EPK-Symbole und deren Verbinder.
+  * Sie kenne die wichtigsten Regeln für den Aufbau von EPK.
+  * Sie können mindestens drei Vor- und Nachteile für die EPK-Technik nennen.
+</WRAP>
+
+===== Einleitung =====
+{{:modul:m254:learningunits:lu04:epk_1.png?100 |}}EPK wurde 1992 von einer Arbeitsgruppe an der Universität Saarbrücken im Rahmen eines Forschungsprojektes mit der SAP zur semiformalen Beschreibung von Geschäftsprozessen entwickelt. 
+Die Methode wurde im Rahmen der Architektur Integrierter Informationssysteme (ARIS) zur sichtenorientierten Modellierung von Geschäftsprozessen entwickelt und ist ein wesentliches Element des ARIS-Konzepts.
+
+Die Ereignisgesteuerte Prozesskette (EPK) wird zur Darstellung und Analyse von Standardprozessen herangezogen. 
+Die einzelnen Elemente der Ereignisgesteuerten Prozesskette und die Verknüpfungsregeln dieser Elemente, sowie Vor- und Nachteile der Methode werden nachfolgend beschrieben.
+
+EPK stellen Arbeitsprozesse in einer semiformalen Modellierungssprache grafisch mit Syntaxregeln dar. 
+Dadurch sollen betriebliche Vorgänge systematisiert und parallelisiert werden, um Zeit und Geld einsparen zu können. Da innerhalb des Prozesses Entscheidungen auf Basis von Bedingungen und Regeln getroffen werden, gibt es in der EPK Verknüpfungsoperatoren (und, oder, exklusiv-oder). 
+
+Das Grundmodell der Ereignisgesteuerten Prozesskette umfasst neben diesen Operatoren auch Ereignisse und Funktionen. 
+Dazu werden Objekte in gerichteten Graphen mit Verknüpfungslinien und -pfeilen in einer 1:1-Zuordnung verbunden (Ausnahme bei logischen Verknüpfungen). 
+In einer solchen Verknüpfungskette wechseln die Objekte sich in ihrer Bedeutung zwischen Ereignis und Funktion ab, das heißt, sie bilden eine alternierende Folge.
+
+==== Objekte der EPK ====
+{{ :modul:m254:learningunits:lu04:epk_2.jpg?600 |}}
+
+=== Regeln ===
+{{ :modul:m254:learningunits:lu04:epk_3.png?400 |}}
+  - Die Ausrichtung der EPK sollte möglichst von oben nach unten verlaufen.
+  - Eine EPK darf entweder mit einem Ereignis oder einem Prozesswegweiser beginnen, aber niemals mit einer Funktion. 
+  - Eine EPK endet entweder mit einem Prozesswegweiser oder einem Ergebnis (Endereignis), aber nicht mit einer Funktion.
+  - Ein Ereignis kann nicht direkt einem anderen Ereignis folgen bzw. bevorstehen. Ein Ereignis folgt oder geht einer Funktion voraus und hat nur eine Ausgangs- und nur eine Eingangslinie.
+  - Eine Funktion kann nicht direkt mit einer anderen Funktion verbunden werden. Die Verbindung einer Funktion zu einem Prozesswegweiser ist ebenfalls ungültig. Mit Funktionen werden Organisationseinheiten und Informationsobjekte verknüpft. Hierzu werden Pfeile verwendet, wobei die Richtung der Pfeile den Informationsfluss beschreibt.
+  - Die Abbildung bietet ein Beispiel für einen Informationsfluss zwischen Informationsobjekten einer Funktion.
+  - Ein Prozesswegweiser kann nicht direkt mit einer Funktion verbunden werden, d.h. ein Prozessweg weiser folgt oder steht vor einem Ereignis und kann nur eine Ausgangs- und nur eine Eingangslinie haben.
+  - Alle Objekte einer EPK müssen miteinander entweder durch Pfeile, im Fall von Ereignissen, Prozesswegweisern, Funktionen, Operatoren und Daten, oder, im Fall von Organisationseinheiten, mit Linien verbunden werden. Lose Objekte sind ungültig.
+
+=== Die UND-Verknüpfung der EPK ===
+{{ :modul:m254:learningunits:lu04:epk_4.png?300 |}}
+Es ist möglich, dass mehrere Ereignisse einer Funktion bevorstehen bzw. folgen, oder, dass einem Ereignis mehrere Funktionen bevorstehen, von denen eins oder mehrere zum betrachteten Zeitpunkt ihre Gültigkeit haben. Diese Fälle werden mit Hilfe von logischen Verknüpfungen (Bedingungen) abgebildet:
+
+Die UND-Verknüpfung zeigt an, dass alle Ereignisse erfüllt sein müssen, damit eine Funktion ausgeführt werden kann, bzw. dass alle Funktionen abgeschlossen sein müssen, bevor ein Ergebnis, oder auch mehrere Ereignisse, eintritt, bzw. eintreten.
+In der Abbildung 2 b) ist ein Beispiel abgebildet, indem zwei Ereignisse eine Funktion anstossen, und eine Funktion zu zwei Ereignissen (Ergebnissen) führt. Abbildung 3 stellt alle möglichen UND-Verknüpfungen dar.
+
+=== Die ODER-Verknüpfung der EPK===
+{{ :modul:m254:learningunits:lu04:epk_5.png?600 |}}
+Die ODER-Verknüpfung gibt an, dass mindestens ein Ereignis eingetreten sein muss, damit eine Funktion angestoßen wird bzw. das Ausführen einer Funktion zu mindestens einem Ereignis führt. 
+Es schließt nicht aus, dass auch mehrere Ereignisse gleichzeitig eintreten kön-nen, damit eine Funktion angestoßen wird bzw. dass eine Funktion gleichzeitig zu mehreren Ereignissen führt. 
+
+=== Die XOR-Verknüpfung der EPK===
+Die XOR-Verknüpfung ist eine Ausschluss-Verknüpfung, d.h. aus mehreren Ereignissen, die eine Funktion anstoßen können, muss genau eins und nur eins von mehreren eintreten, damit eine Funktion ausgeführt wird. Wenn eine Funktion zu mehreren Ereignissen führen kann, so ist bei dieser Verknüpfung nur eins von mehreren Ereignissen gültig (Abbildung 2 a EPK: Wareneingangsbeschreibung)
+{{ :modul:m254:learningunits:lu04:epk_6.png?600 |}}
+Alle logischen Verknüpfungen können entweder mehrere Eingangs-, aber dann nur eine Ausganslinie, oder mehrere Ausgangs-, aber dann nur eine Eingangslinie haben.
+Im Gegensatz zur Funktion hat ein Ereignis keine Entscheidungskraft, d.h. nach einem Ereig-nis darf keine ODER- bzw. XOR-Verknüpfung zu mehreren Funktionen stattfinden. Die Abbildung gibt die verbotenen Verknüpfungen wieder.
+{{ :modul:m254:learningunits:lu04:epk_7.png?600 |}}
+
+
+==== Vor- und Nachteile der EPK ====
+Wie jedes Modle, hat auch die EPK Ihre Vor- und Nachteile. 
+^Vorteile ^Nachteile ^
+|EPK ist eine relativ flexible Abbildungsmöglichkeit für Standardprozesse.|Die Abbildung von kreativen und komplexen Abläufen, sowie von Überwachungstätigkeiten ist problematisch.|
+|EPK ist anwendungsübergreifend und verfügt über eine umfangreiche Toolunterstützung.|Die Top-Down-Modellierung kann unübersichtlich werden.|
+|EPK ist relativ leicht zu erlernen und ist für nicht IT-Fachleute verständlich.|Das Modell ist aufgrund der fehlenden Standardisierung wenig außerhalb Deutschlands verbreitet.|
+|EPK bietet eine gute Grundlage für Simulationen, Analysen und Prüfung von Sollkonzepten.| |
+
+<WRAP center round info 60%>
+Trotz der eben genannten Nachteile, ist das Modell für die Analyse und Optimierung von Standardprozessen zu empfehlen, vor allem wenn diese noch nicht beschrieben sind.
+</WRAP>
+
+----
+{{tag>M254-LU05}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir, Marcel Suter

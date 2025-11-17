@@ -1,0 +1,22 @@
+====== LU04.S01 - Control Questions ======
+
+  - What is the primary difference between how libraries and frameworks manage control in a project? (Hint: Think about who-calls-whom — your code or the framework/library.)
+    * In a library, you are in full control and call its methods as needed, and control is returned to your code. In a framework, control is inverted—your code is called by the framework, meaning the framework dictates the flow.
+  - Can a framework be seamlessly incorporated into an existing project? Why or why not?  
+    * No, a framework cannot be seamlessly incorporated into an existing project because it dictates the architecture and requires the project to conform to its structure, which is often better suited for new projects.
+  - Give an example of a library and explain its primary purpose.
+    - Example: jQuery is a JavaScript library designed to simplify DOM manipulation, event handling, and AJAX interactions.
+  - What does a framework provide that makes it suitable for starting a new project?
+    * A framework provides a standard way to build and deploy applications by defining the architecture, tools, and patterns, which helps streamline the development process.
+  - Why are libraries important in program linking and binding processes, and how do they differ from frameworks in this regard?
+    * Libraries are important because they provide reusable functions or modules that can be integrated into a program to add functionality without dictating the overall structure. Frameworks, on the other hand, impose a specific architecture and take control of the application flow.
+
+===== Vocabulary =====
+^ English ^ German ^ 
+| prerequisite | Grundvoraussetzung |
+| seamless | nahtlos | 
+| in this regard | diesbezüglich | 
+| to incorporate | einbauen (lassen) | 
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

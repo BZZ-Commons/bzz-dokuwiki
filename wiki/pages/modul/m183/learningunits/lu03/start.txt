@@ -1,13 +1,9 @@
-====== LU03 - Kryptographie ======
+====== LU03 - Themeneinführung ======
 
-<nspages . -h1  -exclude -simpleList -textPages="">
+<nspages . -h1  -exclude -simpleList -textPages=""> 
 
 ===== Aufgaben =====
-
-<nspages .:aufgaben -h1  -exclude:start -simpleList -textPages="">
+<nspages :modul:m183:learningunits:lu01:aufgaben -h1  -exclude -simpleList -textPages=""> 
 
 ===== Lösungen =====
-
-<nspages .:loesungen -h1  -exclude:start -simpleList -textPages="">
-
-
+<nspages :modul:m183:learningunits:lu01:loesungen -h1  -exclude -simpleList -textPages=""> 

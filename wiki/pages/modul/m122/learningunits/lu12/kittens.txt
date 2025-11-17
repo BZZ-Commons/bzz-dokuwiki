@@ -1,0 +1,53 @@
+====== LU12a - Exploding Kittens ======
+<WRAP center round todo 60%>
+Erstelle einen Bot, der im Kartenspiel "Exploding Kittens" gegen andere Bots antritt.
+</WRAP>
+===== Das Spiel =====
+Exploding Kittens ist ein Kartenspiel für 2-6 Spieler.
+Wer zuletzt noch lebt, hat die Spielrunde gewonnen.
+
+[[https://dumekj556jp75.cloudfront.net/exploding-kittens/English.pdf|Spielanleitung]]
+
+Für unsere vereinfachte Version gibt es "nur" folgende Karten:
+  * Exploding Kitten: Falls du keine "Defuse"-Karte spielst, bist du ausgeschieden.
+  * Skip: Du musst am Ende deines Zugs keine Karte ziehen.
+  * See the Future: Du siehst die nächsten drei Karten auf dem Stapel.
+  * Normal card: Eine Karte ohne besondere Eigenschaften
+
+===== Der Bot =====
+Dein Bot wird in einer eigenen Datei erstellt und sollte einen einmaligen Namen haben.
+Hier ein Beispiel:
+
+<file python cutekittybot.py >
+from bot import Bot
+from card import Card, CardType
+from game_handling.game_state import GameState
+
+
+class CuteKittyBot(Bot):
+    def __init__(self, name):
+        """ constructor: initialize all attributes """
+        super().__init__(name)
+        # set any attributes you will need
+        
+    def play(self, state: GameState) -> Optional[Card]:
+        """ your turn: play one card or don't """
+        return None
+    
+    def handle_exploding_kitten(self, state: GameState) -> int:
+        """ 
+        You drew an exploding kitten, but defuse saved you.
+        Now put the card back into the deck.
+        """
+        return 1
+        
+    def see_the_future(self, state: GameState, top_three: List[Card]):
+        """ You did play "see the future", these are the top three cards """
+        pass
+    
+    
+</file>
+
+Klone das Repository [[https://github.com/templates-python/exploding-kitten-bot-battle]] in deine Entwicklungsumgebung.
+Schaue dir den Beispielbot ''randombot.py'' an.
+

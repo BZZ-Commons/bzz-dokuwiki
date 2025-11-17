@@ -1,0 +1,17 @@
+====== LU04.S05 - ERD: SchoolGrades_DB ======
+  * The attribut must be taken over and added with data-types and constraints (primary keys)
+  * The relations must be realized as relation tables, that connect the base tables
+  * The attributes of the relation tables are: id, and the primary key of each base table as foreign key
+  * Finally, the cardinalities must be added, which show how the relationships between the tables actually are.
+
+{{:modul:m290:learningunits:lu03:loesungen:s05.drawio.png?1200|}}
+
+
+===== Vocabulary =====
+^ English ^ German ^ 
+| constraint | Einschränkung, Bedingung|
+| given | gegebene, vorausgesetzt |
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

@@ -1,0 +1,16 @@
+====== LU04a - Display ======
+
+Die CSS-Anweisung "display" bestimmt, wie ein HTML-Element auf der Webseite dargestellt wird. Sie kontrolliert das Layout und das Verhalten des Elements im Browserfenster. 
+
+===== Die verschiedene Display-Werte =====
+Die Auswahl des richtigen "display"-Werts hängt von den Anforderungen des Layouts und dem gewünschten Verhalten der Elemente ab. Durch die geschickte Verwendung von "display" können Entwickler das Erscheinungsbild und die Funktionalität von Webseiten effektiv steuern. Hier ist eine Übersicht über die wichtigsten Werte, die für "display" verwendet werden können:
+
+^ Wert ^ Beschreibung ^
+| **block** (Block-Element) | Block-Elemente nehmen die gesamte verfügbare Breite ihres übergeordneten Elements ein und beginnen auf einer neuen Zeile. Beispiele für Block-Elemente sind `<div>`, `<p>`, `<h1>`-`<h6>`, `<header>`, `<footer>`. |
+| **inline** (Inline-Element) | Inline-Elemente nehmen nur so viel Breite wie nötig ein und bleiben im selben Absatz oder auf derselben Zeile wie benachbarte Inline-Elemente. Beispiele für Inline-Elemente sind `<span>`, `<a>`, `<b>`. |
+| **inline-block** (Inline-Block-Element) | Kombiniert Eigenschaften von Block- und Inline-Elementen. Es nimmt nur so viel Breite wie nötig ein und kann dennoch mit anderen Inline- oder Block-Elementen in derselben Zeile stehen. Häufig verwendet für Elemente, die als Block formatiert werden müssen, aber in einer Zeile bleiben sollen, z. B. `<button>`. |
+| **none** (Ausgeblendetes Element) | Das Element wird nicht gerendert und nimmt keinen Platz in der Layout-Struktur ein. Es ist praktisch, um Elemente auszublenden oder dynamisch zu verbergen. Verwendet für Elemente, die vorübergehend nicht angezeigt werden sollen, z. B. auf verschiedenen Browsergrössen. |
+| **flex** (Flexbox-Element) | Aktiviert das Flexbox-Layoutmodell für das Element, mit dem Sie flexible Layouts erstellen können, indem Sie den Inhalt auf verschiedene Weise anordnen und ausrichten. Flexbox ist besonders nützlich, um komplexere Layouts zu erstellen und das Responsiveness von Websites zu verbessern. |
+| **grid** (Grid-Element) | Aktiviert das Grid-Layoutmodell für das Element, mit dem Sie Inhalte in einer zweidimensionalen Rasteranordnung organisieren können. Grid ist leistungsstark für die Erstellung von Layouts mit mehreren Spalten und Zeilen und bietet präzise Kontrolle über die Positionierung von Elementen. |
+
+Eine komplette Liste aller verfügbaren Werte finden Sie [[https://www.w3schools.com/cssref/pr_class_display.php|hier]].

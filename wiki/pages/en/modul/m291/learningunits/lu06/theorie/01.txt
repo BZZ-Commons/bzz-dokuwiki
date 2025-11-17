@@ -1,0 +1,27 @@
+====== LU06a - Events ======
+
+===== Learning ojectives =====
+  - Be able to explain the objectives of event handling and give examples.
+  - Be able to name actions that can follow events.
+  - Be able to use simple Vue events.
+
+
+===== Introduction =====
+After discussing the topic of //vue directives// in the last few weeks, the next chapter in the semester is **event-handling** in vue. Events are actions, that trigger further actions in the browser. For example, we press a button (event), which then performs a calculation.
+
+Or with other words **event handling** is a key concept in programming that allows applications to respond to user actions like clicks, key presses, or mouse movements. It works by detecting specific events and triggering corresponding functions, known as event handlers. This mechanism is essential for creating interactive and dynamic user interfaces in web and software development.
+
+===== Examples for events =====
+  * Forms: Open, display, input, change, delete, close
+  * Form input fields: when changed, when touched with mouse pointer, when clicked, when double-clicked, when UP or DOWN key pressed
+  * Command buttons: when approaching, clicking, double-clicking
+
+===== Source =====
+  * [[https://www.w3schools.com/vue/vue_events.php|W3School-Events]]
+
+===== Vocabulary =====
+^ English ^ German ^ 
+| ... | ... |
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

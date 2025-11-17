@@ -1,0 +1,79 @@
+====== LU03a - Box-Modell ======
+Als Grundlage für das Positionieren von Elementen und das Erstellen eines Layouts dient in CSS das Box-Model (oder auch Kastenmodell). In diesem Teil werden das //klassische// und das //neue, intuitivere// Box-Modell vorgestellt.
+
+===== Das klassische Box-Modell =====
+Das klassische Box-Modell besteht aus vier Bereichen:
+  * **Content** (Inhalt)
+  * **Padding** (Innenabstand)
+  * **Border** (Rahmen)
+  * **Margin** (Aussenabstand)
+
+{{:modul:m287:learningunits:lu03:box-modell_einfach.png?600|}}
+
+Jede dieser Boxen kann in **top**, **right**, **bottom** und **left** unterteilt werden.
+
+{{:modul:m287:learningunits:lu03:box-modell_detailliert.gif?600|}}
+
+===== Innenabstand angeben =====
+Die CSS-Eigenschaft ''padding'' legt den Innenabstand fest.
+
+**Beispiel:**
+<code>
+div {
+    padding: 10px;
+}
+</code>
+
+===== Den Rahmen erstellen =====
+Die CSS-Eigenschaft ''border'' bestimmt den Rahmen eines Elements.
+
+**Beispiel:**
+<code>
+div {
+    border: 2px solid black;
+}
+</code>
+
+===== Den Aussenabstand =====
+Die CSS-Eigenschaft ''margin'' legt den Aussenabstand zu anderen Elementen fest.
+
+**Beispiel:**
+<code>
+div {
+    margin: 20px;
+}
+</code>
+
+===== Zusammenfallende vertikale Aussenabstände (Collapsing Margins) =====
+Wenn sich zwei vertikale Margins treffen, verschmelzen sie zum grösseren Wert.
+
+{{:modul:m287:learningunits:lu03:box-modell_collapsing-margins.png?600|}}
+
+===== Das neue Box-Modell =====
+Im neuen Box-Modell wird ''padding'' und ''border'' in die Breite und Höhe eines Elements eingerechnet.
+
+{{:modul:m287:learningunits:lu03:box-modell_new.png?600|}}
+
+**Beispiel:**
+<code>
+div {
+    box-sizing: border-box;
+}
+</code>
+
+===== Das neue Box-Modell verwenden =====
+Das neue Box-Modell kann mit der CSS-Eigenschaft ''box-sizing: border-box'' aktiviert werden.
+
+**Beispiel 1 (Einzelne Elemente):**
+<code>
+div {
+    box-sizing: border-box;
+}
+</code>
+
+**Beispiel 2 (Alle Elemente):**
+<code>
+* {
+    box-sizing: border-box;
+}
+</code>

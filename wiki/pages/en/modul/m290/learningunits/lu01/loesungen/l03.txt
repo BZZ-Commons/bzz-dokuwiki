@@ -1,0 +1,33 @@
+====== LU01.S03 - Installation and configuration of the MySQL database ======
+  * The result is fully functional database which that runs on your PC. 
+  * The function test includes a sucessful login as a database-root user and a response from the database in form of a system date. 
+
+==== Hints for MacOS ====
+  -   create a file .bash_profile under home
+  -   create a export link to you mysql Installation
+  -   Connect with the db: mysql -u root -p 
+  -   Type in you root Password, which was chosen while the installation of mysql
+  -   Check the basic functionality of your installation by displaying all databases that are currently installed on the db. 
+  -   Command, which is needed in the terminal: "SHOW DATABASES;" 
+
+==== Hints for Windows ====
+In order to connect our operting system with our db we need to register the installation path from MySQL in the variables of Windows.
+  -   find the installation path of MySQL > bin and copy it, e.g. "C:\Program Files\MySQL\MySQL Server 8.0\bin"
+  - Press WINDOWS-Button + env
+  - Select the Button "Umgebungsvariablen", which is located on the bottom of the presented window.
+  - Create a new Variable by pressing the "Neu" Button. 
+  - Add PATH + the copied path of MySQL/bin + Save the new enviroment variable
+  - Open a cmd-box (commandline) and connect to the database with your database credentials by typing: "mysql -u root -p" + password + enter. Hopefully you were successful.
+
+  -   Check the basic functionality of your installation by displaying all databases that are currently installed on the db. Command, which is needed in the terminal: "SHOW DATABASES;" 
+
+===== Vocabulary =====
+^ English ^ German ^ 
+| response | Rückmeldung |
+| currently | gegenwärtig, aktuell |
+
+
+
+----
+
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

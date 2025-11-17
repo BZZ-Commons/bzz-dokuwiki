@@ -1,0 +1,36 @@
+====== LU05.S14 - v-show and v-if combined ======
+
+===== Hints ====
+  * Download the file and copy the content into the code area of the W3School on the left hand side of the coding window.
+  * You can execute the code by pressing the //run// button
+  * The result will be presented in the right hand side of the window.
+
+===== Assignment ======
+This assignment consists of using both, the v-if and the v-show, and comparing the html-dom reaktion.
+
+  - Click the link above to the code-exambpe to get to the W3School-TryOut area.
+  - Save the code with a suitable name, such as LU05.S14.html.
+  - Have it run by clicking the //run-button//.
+  - Just after the //div-tag// create a paragraph and move the current text in it (This text can be hidden).
+  - Move the v-show from div-tag into the paragraph-tag. 
+  - Change the variable in the //script-area// from //showDiv// to //showText//.
+  - Add another paragraph-tag for the //v-if// which contains a image and a suitable comment to it.
+  - The corresponding variable in the //script-area// for the v-if is called //showImage// which can also contain the values //true// and //false//.
+  - Now we can seperately control the visibility of the text and image ressource. 
+  - Try out all four values for the //showText// and //showImage//. Possible combination of values are 
+    * true / true
+    * true / false
+    * false / true
+    * false / false
+  - Note the result as a html-comment und beobachten Sie die Reaktion der Applikation.
+  - Save your result, you may need it as a exam-preparation.
+
+===== Solution =====
+
+{{ :en:modul:m291:learningunits:lu05:loesungen:lu05.s14.zip | Codesolution of v-show simple}}
+
+{{:en:modul:m291:learningunits:lu05:loesungen:lu05.s14_v-show.png?1200|Codesolution of v-show simple}}
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir
+  

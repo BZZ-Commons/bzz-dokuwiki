@@ -1,0 +1,30 @@
+====== LU02.L02 - Universalselektoren ======
+
+<code css>
+* {
+    margin: 5px;
+    padding: 3px;
+    border: 1px dotted black;
+    text-align: center;
+}
+
+body {
+    font-family: Arial;
+}
+
+header, footer * {
+    background-color: cornflowerblue;
+}
+
+main * {
+    background-color: lawngreen;
+}
+
+nav {
+    background-color: gold;
+}
+
+nav * {
+    background-color: orangered;
+}
+</code>

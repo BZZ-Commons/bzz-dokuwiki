@@ -1,0 +1,40 @@
+====== LU05.A04 - v-bind with css-class ======
+
+===== Prerequisites  =====
+  * Work type: Individual
+  * Means of aid: only teaching materials, no websearch, no use of ai.
+  * Timeframe: 10 Minutes
+  * Expected result: The background color im example code is adjusted as defined in the assignment.   
+
+===== Learning Objectives =====
+1. Be able to use media elements such as photos using v-bind scr.
+2. Interaction of the three areas in a SFC (single file component).
+3. Be able to make small code adjustments to an existing Vue script
+
+===== Source =====
+  * [[https://www.w3schools.com/vue/tryit.php?filename=tryvue_v-bind_src|Code-example: W3School v-bind src]]
+
+===== Assignment ======
+You will find at the W3School webseite a small script in which some photographs are being displayed. In this script we would like to make some changes as follows:
+
+  - If not already done, create a new directory //media// and save at least three photos of your choice in it. 
+  - Adjust the code to display this three photos. That means you need some new image-tags for this photos.
+  - Create withing the style area a second CSS class //#app2// with new values of your choice for the photo frame.
+  - Activate the css amendments by adjusting the template-code (div-element).
+  - Execute your script and check the correctness.
+  - Save your result either on your pc or in the W3Schools workspace (requires a W3Schoo profile).
+
+
+===== Solution =====
+[[en:modul:m291:learningunits:lu05:loesungen:04|Lösung]]
+
+===== Vocabulary =====
+^ English ^ German ^ 
+| within | innerhalb |
+| amendments | Ergänzung, Nachtrag | 
+| either ... or | entweder ... oder |
+| to require | benötigen |
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

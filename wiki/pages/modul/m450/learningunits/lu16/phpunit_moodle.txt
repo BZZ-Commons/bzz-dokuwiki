@@ -1,0 +1,31 @@
+====== LU16d - PHPUnit-Tests in Moodle ======
+
+[[https://moodledev.io/general/development/tools/phpunit|Dokumentation von Moodle]]
+
+===== Definition der Tests =====
+Jedes Plugin enthält einen Ordner ''tests/local'' mit den Unittests.
+In diesem Ordner befinden sich die einzelnen Dateien mit den Testdefinitionen.
+
+===== Tests ausführen =====
+==== Testkonfiguration aktualisieren ====
+Wenn du einen neuen Test geschrieben hast, musst du die Konfiguration aktualisieren.
+
+<code>
+php /home/bzz/moodles/stable_404/moodle/admin/tool/phpunit/cli/init.php
+</code>
+
+==== Behat-Tests ====
+In der Regel wollen wir nur bestimmte Tests durchführen.
+Ein vollständiger Test mit allen Features würde sehr lange dauern.
+
+Du kannst die Tests für ein bestimmtes Plugin mit dem Tag ''--testsuite'' ausführen.
+Zum Beispiel:
+
+<code>
+/home/bzz/moodles/stable_404/moodle/vendor/bin/phpunit --testsuite mod_externalassignment_testsuite
+</code>
+
+Um einen einzelnen Test auszuführen, kannst du ihn mit diesem Befehl auswählen:
+<code>
+/home/bzz/moodles/stable_404/moodle/vendor/bin/phpunit mod/externalassignment/tests/local/assign_test.php
+</code>

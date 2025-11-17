@@ -1,0 +1,18 @@
+====== LU02b - Dockerfile anpassen und ausführen ======
+
+===== Ziele =====
+  -Ich kann die demonstrierten Bereiche einer Docker-Datei nachvollziehen und in eigenen Worten beschreiben.
+  -Ich kann mindestens eine Massnahme bei Fehler im Build- oder Run-Prozess vorschlagen und umsetzen.
+\\
+
+===== Live-Demo =====
+Siehe im Repository ''02/01_Intro''. In der Demo werden gezeigt,
+  * ENTRYPOINT
+  * EXPOSE
+  * ONBUILD RUN (Parent/Child Container)
+
+===== Übungen =====
+Siehe im Repository ''02/02_Exercises''.
+
+===== Extras =====
+  * [[https://docs.docker.com/engine/reference/builder/|Dockerfile Reference]]

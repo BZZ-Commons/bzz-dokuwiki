@@ -1,14 +1,14 @@
 ====== 347 : Container anwenden ======
 
-^ Modulidentifikation | [[https://www.modulbaukasten.ch/module/c6b67ea8-5e85-eb11-a812-0022486f644f/de-DE?title=Applikationen-entwerfen-und-implementieren|319]] |
-^ Kompetenzraster | [[.:kompetenzraster|Kompetenzraster]] |
-^ Kompetenzübersicht | [[.:kompetenzuebersicht|Kompetenzuebersicht]] |
-
+^ Modulidentifikation | [[https://www.modulbaukasten.ch/module/347/1/de-DE?title=Dienst-mit-Container-anwenden|347]] |
+^ Kompetenzraster | [[https://kompetenzmatrix.ch/cluster-cloud/m347/|Kompetenzraster]] |
 
 ===== Inhalte =====
 
-Der Inhalt des Modul ist ist Learningunits gegliedert.
+Der Inhalt des Modul ist in Learningunits gegliedert.
 
 <nspages .:learningunits -subns -nopages -exclude -h1 -textNS="" -simplelist>
 
-
+=== Extras ===
+  * [[https://docs.docker.com/engine/reference/builder/|Dockerfile Reference]]
+  * [[https://dockerlabs.collabnix.com/docker/cheatsheet/ | Docker Commands Cheat-Sheet]]

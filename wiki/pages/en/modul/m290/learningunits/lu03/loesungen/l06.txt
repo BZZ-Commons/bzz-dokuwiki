@@ -1,0 +1,43 @@
+====== LU04.S06 - ERM vs. ERD ======
+
+===== Prerequisites  =====
+  * Work type: Peer
+  * Means of aid: only teaching materials, no use of ai.
+  * Timeframe: 5 Minutes
+  * Expected result: A Word/PDF file with an a comparison of the terms ERM vs. ERD. 
+
+===== Task  =====
+Compare both terms, ERM and ERD,  and describe the purpose of each, and find at least 2 similarities and 2 differences.
+
+**ERM**
+  * Description: First step to find the entities and the correlations between them.
+  * Purpose: Blueprint of the business cases
+
+**ERD**
+  * Description:Identification of details, such as data-types, relation-table and the cardinality 
+  * Purpose: construction plan, ready to build up the data-base physically
+
+**Similarties**
+  * Both notation methods are used to describe the data-base structure of the business cases
+  * Entity = rectangle
+  * Cardinalities: 1:1, 1:n, n:m
+  * Entities have attributes
+
+ **Differences:**
+  * Relations:
+    * ERM: rhomb
+    * ERD: relalation-table
+    * ERD: Described in the Crow's foot notation
+  * Attributes: 
+    * ERM: bubbles above, which are connected with the entity
+    * ERD: As details in the Entity, including data-type
+    * ERD: Memory amount is describes within the data-type defintion
+
+===== Vocabulary =====
+^ English ^ German ^ 
+| prerequisite | Grundvoraussetzung |
+| given| gegebene, vorausgesetzt |
+| blueprint | Entwurf |
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

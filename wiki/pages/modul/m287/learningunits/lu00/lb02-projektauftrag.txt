@@ -1,0 +1,51 @@
+====== LU00f - LB02 Projektarbeit ======
+
+===== Ziel =====
+Sie gestalten eine eigene, vollständig responsive Webseite zum vorgegebenen Thema. Es geht darum, Bootstrap sowie eigene CSS-Anpassungen gezielt anzuwenden.
+
+===== Auftrag =====
+
+Nachfolgend finden Sie eine Reihe von Projektbeschreibungen. Bearbeiten Sie das Ihnen zugewiesene Projekt, d.h. programmieren Sie eine Webseite und präsentieren Ihre Resultate am Ende des Moduls als Videocast von ca. 5 Minuten Länge. 
+
+===== Inhalt =====
+^ Titel ^ Bewertung ^ Beschreibung ^
+| **Konzept** | 15% | <WRAP>
+  * Sitemap
+  * Skizzen / Designentwurf
+  * Farbkonzept 
+</WRAP> |
+| **Realisierung** | 45% | <WRAP>
+  * Responsives Layout für Mobile, Tablet und Desktop (Grid-System von Bootstrap oder CSS Grid korrekt anwenden)
+  * Umsetzung mit Bootstrap Komponenten (z.B. Navbar, Cards, Buttons)
+  * Anpassung des Designs mit CSS
+  * Verwendung von mindestens 2 unterschiedliche Medientypen (z.B. Bilder, Videos, Audio)
+</WRAP> |
+| **Qualitätssicherung** | 20% | <WRAP>
+  * HTML/CSS-Validierung ([[https://validator.w3.org/|W3 HTML Validator]] und [[https://jigsaw.w3.org/css-validator/|W3 CSS Validator]])
+  * Responsives Verhalten prüfen
+  * Abgleich mit Konzept
+  * Testprotokoll führen
+</WRAP>  |
+| **Präsentation & Reflexion als Videocast** | 20% | <WRAP>
+  * Zielsetzung
+  * Konzept
+  * Demo
+    * Navigation 
+    * Responsives Layout
+    * Inhalt
+    * Besondere Funktionen
+    * Multimedia-Elemente
+  * Reflexion 
+</WRAP> |
+
+===== Abgabe - Zu liefernden Lernprodukte =====
+Das Projekt ist als ein ZIP-File in Moodle abzugeben. In diesem ZIP-File sind die nachfolgenden Ordner und Daten enthalten:
+
+  * Konzept
+  * Webseite
+  * Qualitätssicherung
+  * Videocast
+
+----
+
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Kamil Demirci

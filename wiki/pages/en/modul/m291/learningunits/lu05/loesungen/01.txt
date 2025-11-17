@@ -1,0 +1,31 @@
+====== LU05.S01 - Vue Directives - Control questions ======
+
+===== Notes =====
+  * You are free to use ChatGPT to summarize the content.
+  * Regardless which additional means you use, comrehending the content is crucial to developing your competence. 
+
+**1. Explain what is meant by the term directives**
+
+//directives// are special HTML-attributes which are helping us to programm website more easyly and reactively. 
+
+**2. Give some concrete examples for directives and explain them briefly **
+
+^Directive ^ Details ^
+| v-bind | Connects the HTML-attributes tags regarding data with the VUE Framework |
+| v-on   | Connects the HTML-attributes tags regarding events i.e. Mausclick, etc. with VUE |
+| v-if	 | Creates HTML tags that are based on conditions. v-if is often used in conjunction with v-else-if and v-else. |
+| v-show | Specific v-if statement that only visible if a condition is fulfilled. |
+| v-for	 | Creates a list of tags, which are sourced by a VUE array |
+| ...    | There are more directives  for which we unfortunately have not the time to explore. | 
+
+** 3. What are the major advantages of using directives? **
+
+Programming responsive websites is possible without JavaScript knowlege by outsourcing the JS-functionalities to HTML. That means that HTML is augmented by VUE in order to do it without JS.
+
+===== Vocabulary =====
+^ English ^ German ^ 
+| augmented| ergänzt, verbessert|
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir
+  

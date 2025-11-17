@@ -1,0 +1,66 @@
+====== LU02.L01 - Übungen zu einfachen CSS-Selektoren ======
+
+**HTML**
+<code html>
+<!doctype html>
+<html>
+<head>
+    <title>Klassenselektor</title>
+    <meta charset="UTF-8">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <header>Kopfzeile</header>
+    <nav>Navigation</nav>
+    <h1>Klassenselektor</h1>
+    <p>1. Absatz</p>
+    <p class="remark">2. Absatz</p>
+    <p class="remark warning">3. Absatz</p>
+    <p class="warning">4. Absatz</p>
+    <footer>Fusszeile</footer>
+</body>
+</html>
+</code>
+
+**CSS**
+<code css>
+body {
+    font-family: Arial;
+}
+
+p.remark {
+    margin-left: 70px;
+    border-left: 15px solid blue;
+    padding-left: 10px;
+}
+
+p.remark.warning {
+    border: 1px solid blue;
+    padding-left: 9px;
+    padding-right: 9px;
+    padding-top: 1.5px;
+    padding-bottom: 1.5px;
+    text-align: center;
+}
+
+p.warning {
+    color: blue;
+    font-size: 130%;
+}
+
+header, footer {
+    font-size: 80%;
+    background-color: #00b3ee;
+}
+
+h1, h2 {
+    color: darkslateblue;
+}
+
+nav {
+    font-size: 90%;
+    color: white;
+    background-color: #778899;
+    text-align: center;
+}
+</code>

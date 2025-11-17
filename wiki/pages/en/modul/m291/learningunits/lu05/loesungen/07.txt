@@ -1,0 +1,23 @@
+====== LU05.S07 - v-if (simple) ======
+
+===== Sourcecode of the solution =====
+{{ :en:modul:m291:learningunits:lu05:loesungen:m291_lu05_s07.zip | Sourcecode of the solution}}
+
+===== Assignment ======
+In the script area of the W3-School example (link above) you will find a variable //typewritersInStock// with the value //true//. In the html area of the same script there will be decided, what is supposed to happen in which case. In the //true-case// there are typewriters on stock, and in the else-case (v-else) they are not. 
+
+  - Change the value of the variable //typewritersInStock// to //false// and run the script. 
+  - Note your realisations as a html-comment?
+  - Save your script acoordingly, whether in your W3School workspace or on you local computer in your code-editor Webstorm.
+
+{{:en:modul:m291:learningunits:lu05:loesungen:lu05.s07.png?1200|Codesolution}}
+
+
+
+===== Vocabulary =====
+^ English ^ German ^ 
+| ... | ... |
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

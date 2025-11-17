@@ -1,0 +1,60 @@
+====== C) Clowder Service ======
+<WRAP center round todo 60%>
+Der Discovery-Service verwaltet eine Liste aller Kitten-Bots.
+</WRAP>
+
+Wenn ein Bot bereit zum Spielen ist, registriert er sich beim Clowder Service.
+Dieser verwaltet eine Collection aller Bots.
+
+===== Aktionen =====
+==== Spielbereit ====
+Ein Bot meldet, dass er bereit zum Spielen ist.
+Der Clowder-Service generiert eine UUID und einen zufälligen Port.
+Falls bereits ein Bot mit dem gleichen Namen existiert, wird der Eintrag aktualisiert.
+
+=== Request ===
+  * action: 'MEOW'
+  * ip: IP-Adresse des Bots
+  * name: Name des Bots
+  * type: 'bot'
+
+
+=== Response ===
+  * Port: Eine zufällige Portnummer. Unter dieser Portnummer muss der Bot einen Socket öffnen und auf Nachrichten warten.
+
+
+==== Mit dem Schwanz wedeln ====
+Ein Bot wedelt mit seinem Schwanz und signalisiert, dass er immer noch spielbereit ist.
+Der Clowder-Service aktualisiert den Zeitstempel des letzten Schwanzwedelns für diesen Bot.
+
+=== Request ===
+  * action: 'SWISH'
+  * name: Name des Bots
+=== Response ===
+  * ACK
+
+
+==== Nickerchen ====
+Ein Bot zieht zurück und macht ein Nickerchen.
+Der Clowder-Service entfernt den Bot aus der Collection der spielbereiten Bots.
+
+=== Request ===
+  * action: 'CATNAP'
+  * name: Name des Bots
+=== Response ===
+  * ACK oder NOTFOUND
+
+==== Exil ====
+Der Arena-Service kann einen defekten Bot ins Exil schicken.
+In diesem Fall darf sich dieser Bot während 5 Minuten nicht neu registrieren.
+Diese Aktion darf nur vom Arena-Service aufgerufen werden.
+Überlegen Sie sich, wie Sie einen Missbrauch verhindern können.
+
+=== Request ===
+  * action: 'EXIL'
+  * name: Name des Bots
+
+
+=== Response ===
+  * ACK / NOTFOUND
+

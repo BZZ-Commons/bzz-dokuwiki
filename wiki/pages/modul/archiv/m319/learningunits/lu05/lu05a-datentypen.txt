@@ -2,12 +2,12 @@
 
 ===== Deklaration =====
 
-Eigene Datentypen können aus den bereits bekannten [[:modul:m319:learningunits:lu02:lu02c-primitivedatentypen|Datentypen]] zusammengesetzt werden. 
+Eigene Datentypen können aus den bereits bekannten [[de:modul:m319:learningunits:lu02:lu02c-primitivedatentypen|Datentypen]] zusammengesetzt werden. 
 
 Ein **Clubmitglied** weist z. B. die folgenden Attribute auf
 
 ^ Attribute ^ UML ^
-| Name, Vorname, Adresse, Ort: ''String''  | {{:modul:m319:learningunits:lu05:uml_clubmitglied.png?200|}} |
+| Name, Vorname, Adresse, Ort: ''String''  | {{de:modul:m319:learningunits:lu05:uml_clubmitglied.png?200|}} |
 | Postleitzahl, Eintrittsjahr, Geburtsjahr: ''int''   | ::: |
 | Ehrenmitglied: ''boolean''    | ::: |
 

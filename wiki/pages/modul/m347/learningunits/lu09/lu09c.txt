@@ -1,0 +1,15 @@
+====== LU09c - Docker Swarm mit multipass anwenden ======
+===== Ziele =====
+  -Ich kann eine, für einen Cluster bestimmte, Anwendung aufsetzen, testen und in die Registry pushen.
+  -Ich kann die Vorgehensweise, um einen Cluster mit multipass zu skalieren, in eigenen Worten beschreiben.
+  -Ich kann mit multipass einen Cluster mit n Knoten skalieren.
+  -Ich kann mit multipass einen Cluster entfernen.
+  -Ich kann mindestens eine Massnahme bei Fehlermeldung vorschlagen und umsetzen.
+\\
+===== Grundlagen =====
+  -[[https://youtu.be/xX2l7TrO_pw |How to prepare an app for a Swarm cluster]] ((In diesem Erklärvideo wird eine beispielhafte Anwendung aufgesetzt, getestet und in die Registry für die spätere Verwendung aufgenommen))  
+  -[[https://youtu.be/OULlYYI6uWc |How to work with a Docker Swarm cluster]] ((In diesem Erklärvideo wird eine beispielhafte Anwendung in einem Cluster aufgesetzt und für eine Skalierung vorbereitet.))  
+
+===== Übungen =====
+  -Gehen Sie das Video nochmals durch repetieren Sie die Schritte.
+  -Erstellen Sie ein Bash-Script, welches Ihnen das Starten und Aufsetzen von Multipass-Cluster automatisiert. 

@@ -1,0 +1,39 @@
+====== LU19a - Aufgabe 1 / Task 01: v-bind, v-show ======
+
+===== Administration =====
+Füllen Sie die nachfolgenden Felder aus:
+
+**Klasse:** ....................................
+
+**Vorname:** .................................
+
+**Name:** ......................................
+
+===== Vorarbeit =====
+  * Verwenden Sie als Basis zu dieser Aufgabe die Lösung **LU05.S03.html**
+  * Importieren Sie das nachfolgende Bild (Volkanlandschaft) ins Webstorm, in Ihre Ordner **media**. Sie finden dieses Image im **Moodle-Kurs | heutiges Datum | Benötigte Medien zur LB2 - A01**
+  * {{:en:modul:m291:learningunits:lu19:theorie:maui_volcano.jpg?200|Volkanlandschaft auf Maui}}
+===== Ausgangslage =====
+Beim Auftrag **LU05.A03** wurden Bilder angezeigt, die mit der directive //v-bind// eingebunden wurden. Das Ergebnis des Aufrages sehen Sie nachfolgend.
+
+{{:en:modul:m291:learningunits:lu19:theorie:m291_lb2_a01.source.png?200|Ausgangslage dieser Aufgabe}}
+
+===== Auftrag =====
+  - Erweitern Sie die Anzeige um ein weiteres Foto (Volkanlandschaft). 
+  - Verwenden Sie zum ein- und ausblenden der Bilder eine einzige bool'ischen Variable //showImage//, die die Werte true/false haben kann.
+  - Der Status der Variable //showImage// muss, wie auf dem Image sichtbar ist, über den Bildern ausgegeben werden.
+  - Stellen Sie sicher, dass Sie die formalen Kriterien zum Script auch erfüllen. Diese Punkte sind "Gratispunkte!", die sie mit wenig Aufwand verdienen.
+
+**Hinweis**
+  - Die beiden Ausgangsbilder können abweichend sein. 
+  - Das Zielbild mit der Volkanlandschaft **muss** verwendet werden. 
+
+^ Zieluzustand 1 ^ Zielzustand 2 ^
+| Wird showImage auf //true// gesetzt, werden die Bilder angezeigt. | Wird showImage auf //false// gesetzt, werden die Bilder ausgeblendet. |
+| {{:en:modul:m291:learningunits:lu19:theorie:m291_lb2_a01.ziel1.png?200|}} | {{:en:modul:m291:learningunits:lu19:theorie:m291_lb2_a01.ziel2.png?300|}}|
+
+-----
+
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir
+
+

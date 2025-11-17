@@ -1,0 +1,33 @@
+====== LU05.A09 - v-else-if and v-else ======
+
+===== Prerequisites  =====
+  * Work type: Individual
+  * Means of aid: only teaching materials, no websearch, no use of ai.
+  * Timeframe: 15 Minutes
+  * Expected result: A Vue script that displays HTML elements based on input values.
+
+===== Learning objectives =====
+  - Explaining the The directive //v-if// in your own word.  
+  - Being able to apply v-if in combination wit e-else-if and v-else
+
+===== Source =====
+  * [[https://www.w3schools.com/vue/tryit.php?filename=tryvue_v-if_typewriters3 |Code-example: v-if directive src]]
+  
+===== Assignment ======
+In this assignment we are going to use //v-if// in compination with both //v-else-if// and //v-else-if//. This three selection elements of VUE allow us to check up to any number of values, e.g. //in stock//, //very few left// oder //not on stock//.
+
+  - Change the content of the variable //typewriter// to a value between 0 und 5. Run afterwords the script.   
+  - Introduce a additional paragraph with //plenty// for a stock more than 10.
+  - Note your realisations as a html-comment.
+  - Save your script acoordingly, whether in your W3School workspace or on you local computer in your code-editor Webstorm.
+===== Solution =====
+[[en:modul:m291:learningunits:lu05:loesungen:09|Lösung]]
+
+
+===== Vocabulary =====
+^ English ^ German ^ 
+| afterwards | anschliessend|
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

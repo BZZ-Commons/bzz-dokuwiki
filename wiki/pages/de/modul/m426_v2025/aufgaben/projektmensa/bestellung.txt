@@ -1,0 +1,11 @@
+====== User Story 2: Bestellung von Gerichten und Getränken ======
+
+
+Als registrierter und eingeloggter Benutzer\\
+möchte ich Gerichte und Getränke aus dem Speiseplan auswählen können, \\
+um eine Bestellung aufzugeben.
+
+===== Akzeptanzkriterien: =====
+  * Benutzer können einzelne Gerichte und Getränke auswählen.
+  * Die Auswahl kann in einem Warenkorb geprüft und bearbeitet werden.
+  * Es gibt eine Bestätigung der Auswahl bevor die Bestellung ausgelöst wird.

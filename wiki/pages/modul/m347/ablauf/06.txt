@@ -1,0 +1,19 @@
+====== Programm LU06 - IM ======
+Termin-Verschiebung: 
+  * Da die Notenabgabe vor 2.7. ist, wird die LB02 auf den 25.6. verschoben
+  * Am 2.7. bin ich am Vormittag an der KSH für den Notenkonvent
+  * Programm für den 2.7. ist noch offen: Modul ist eigentlich abgeschlossen -> Frage an die Klasse, ob es bei Ihnen Prüfungsvorbereitung an der KSH gibt?
+\\
+aus LU05: Demo Musterlösung
+  - 05/03_Solutions: 02-BindMounts.md + 03_Host-Game-2048.md 
+\\
+LU06 - Multi-Container
+     - Grundlagen Videoinput zusammen anschauen.
+     - LU06b - Docker-Compose-File: selbstständig lesen
+     - LU06c - Arbeiten mit Multi-Containern
+
+Demo 
+  * 06\01_Intro\01_Working-with-DockerCompose.md
+  * Repetition wie über ssh ein Webport mit -L gemappt wird.
+Übung
+  *  06/02_Exercises/

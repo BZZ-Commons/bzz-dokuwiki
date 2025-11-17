@@ -7,7 +7,7 @@
 ^ ::: | Artikelbezeichnung | Rundhaken |
 ^ ::: | Einheit | Stück |
 ^ ::: | Preis | 15.75 |
-^ Erwartetes Resultat ^ Meldung | Eingaben korrekt. Daten gespeichert. |
+^ Erwartetes Resultat | Meldung | Eingaben korrekt. Daten gespeichert. |
 | |||
 ^ Nr || 2 |
 ^ Klassen || 1, 2, 4, 7 |
@@ -15,7 +15,7 @@
 ^ ::: | Artikelbezeichnung | Dosenluft |
 ^ ::: | Einheit | Kilogramm |
 ^ ::: | Preis | 257.80 |
-^ Erwartetes Resultat ^ Meldung | Eingaben korrekt. Daten gespeichert. |
+^ Erwartetes Resultat | Meldung | Eingaben korrekt. Daten gespeichert. |
 | |||
 ^ Nr || 3 |
 ^ Klassen || 1, 2, 5, 7 |
@@ -23,7 +23,7 @@
 ^ ::: | Artikelbezeichnung | Blubberdidu  |
 ^ ::: | Einheit | Meter  |
 ^ ::: | Preis | 0.10 |
-^ Erwartetes Resultat ^ Meldung | Eingaben korrekt. Daten gespeichert. |
+^ Erwartetes Resultat | Meldung | Eingaben korrekt. Daten gespeichert. |
 | |||
 ^ Nr || 4 |
 ^ Klassen || 1, 2, 6, 7 |
@@ -31,8 +31,7 @@
 ^ ::: | Artikelbezeichnung | Donnergurgler  |
 ^ ::: | Einheit | Pack |
 ^ ::: | Preis | 924.53 |
-| |||
-^ Erwartetes Resultat ^ Meldung | Eingaben korrekt. Daten gespeichert. |
+^ Erwartetes Resultat | Meldung | Eingaben korrekt. Daten gespeichert. |
 
 ===== Testfälle für ungültige Daten =====
 
@@ -42,14 +41,15 @@
 ^ ::: | Artikelbezeichnung | laksdjfoiaf |
 ^ ::: | Einheit | Meter |
 ^ ::: | Preis | 12.00 |
-^ Erwartetes Resultat ^ Meldung | ungültige Artikelnummer |
+^ Erwartetes Resultat | Meldung | ungültige Artikelnummer |
+| |||
 ^ Nr || 11 |
 ^ Klassen || 9 |
 ^ Eingaben | Artikelnummer| 19 |
 ^ ::: | Artikelbezeichnung | earegawga|
 ^ ::: | Einheit | Pack  |
 ^ ::: | Preis | 7.77 |
-^ Erwartetes Resultat ^ Meldung | ungültige Artikelnummer |
+^ Erwartetes Resultat | Meldung | ungültige Artikelnummer |
 | |||
 ^ Nr || 12 |
 ^ Klassen || 10 |
@@ -57,7 +57,7 @@
 ^ ::: | Artikelbezeichnung | poiusa0gpjndas |
 ^ ::: | Einheit | Stück  |
 ^ ::: | Preis | 885.50 |
-^ Erwartetes Resultat ^ Meldung | ungültige Artikelnummer |
+^ Erwartetes Resultat | Meldung | ungültige Artikelnummer |
 | |||
 ^ Nr || 13 |
 ^ Klassen || 11 |
@@ -65,7 +65,7 @@
 ^ ::: | Artikelbezeichnung | a |
 ^ ::: | Einheit | Pack  |
 ^ ::: | Preis | 6 |
-^ Erwartetes Resultat ^ Meldung | Ungültige Artikelbezeichnung |
+^ Erwartetes Resultat | Meldung | Ungültige Artikelbezeichnung |
 | |||
 ^ Nr || 14 |
 ^ Klassen || 12 |
@@ -73,7 +73,7 @@
 ^ ::: | Artikelbezeichnung | EinhornSamtFigurMitGrünenAugenUndBlauenHufen |
 ^ ::: | Einheit | Meter |
 ^ ::: | Preis | 16.89 |
-^ Erwartetes Resultat ^ Meldung | Ungültige Artikelbezeichnung |
+^ Erwartetes Resultat | Meldung | Ungültige Artikelbezeichnung |
 | |||
 ^ Nr || 15 |
 ^ Klassen || 13 |
@@ -81,7 +81,7 @@
 ^ ::: | Artikelbezeichnung | Ein Huhn |
 ^ ::: | Einheit | Stück |
 ^ ::: | Preis | 765.40 |
-^ Erwartetes Resultat ^ Meldung | Ungültige Artikelbezeichnung |
+^ Erwartetes Resultat | Meldung | Ungültige Artikelbezeichnung |
 | |||
 ^ Nr || 16 |
 ^ Klassen || 14 |
@@ -89,7 +89,7 @@
 ^ ::: | Artikelbezeichnung | Ein_Huhn |
 ^ ::: | Einheit | Meters |
 ^ ::: | Preis | 0.05 |
-^ Erwartetes Resultat ^ Meldung | Ungültige Einheit |
+^ Erwartetes Resultat | Meldung | Ungültige Einheit |
 | |||
 ^ Nr || 17 |
 ^ Klassen || 15 |
@@ -97,7 +97,7 @@
 ^ ::: | Artikelbezeichnung | KeinHund |
 ^ ::: | Einheit | Pack |
 ^ ::: | Preis | -5.74 |
-^ Erwartetes Resultat ^ Meldung | Ungültiger Preis |
+^ Erwartetes Resultat | Meldung | Ungültiger Preis |
 | |||
 ^ Nr || 18 |
 ^ Klassen || 16 |
@@ -105,7 +105,7 @@
 ^ ::: | Artikelbezeichnung | Bond_James_Bond |
 ^ ::: | Einheit | Kilogramm |
 ^ ::: | Preis | 1750.35 |
-^ Erwartetes Resultat ^ Meldung | Ungültiger Preis |
+^ Erwartetes Resultat | Meldung | Ungültiger Preis |
 | |||
 ^ Nr || 19 |
 ^ Klassen || 17 |
@@ -113,7 +113,7 @@
 ^ ::: | Artikelbezeichnung | InspectorGordon |
 ^ ::: | Einheit | Meter |
 ^ ::: | Preis | 467.1258 |
-^ Erwartetes Resultat ^ Meldung | Ungültiger Preis |
+^ Erwartetes Resultat | Meldung | Ungültiger Preis |
 | |||
 ^ Nr || 20 |
 ^ Klassen || 18 |
@@ -121,7 +121,7 @@
 ^ ::: | Artikelbezeichnung | Batwoman |
 ^ ::: | Einheit | Pack |
 ^ ::: | Preis | 8-3/2 |
-^ Erwartetes Resultat ^ Meldung | Ungültiger Preis |
+^ Erwartetes Resultat | Meldung | Ungültiger Preis |
 | |||
 
 ----

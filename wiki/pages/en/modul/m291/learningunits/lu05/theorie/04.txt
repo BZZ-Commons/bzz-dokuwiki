@@ -1,0 +1,67 @@
+====== LU05d - v-show ======
+
+===== Learning ojectives =====
+  - I can explain what directive v-show fulfil within the DOM.
+  - I can prove the visibility of objects using v-show.
+  - I can use the v-show directive.
+
+====== Sources ======
+  * [[https://www.w3schools.com/vue/vue_v-show.php|W3School | W3School | Conditional Rendering - v-show]]
+  * [[https://vuejs.org/guide/essentials/conditional.html#v-show | Vuejs.org | Conditional Rendering - v-show]]
+ 
+===== Introduction ====
+The v-show directive in Vue.js is used to conditionally display elements based on a boolean expression. //Unlike v-if, which completely removes elements from the DOM when the condition is false//, v-show toggles the CSS display property, keeping the element in the DOM but hiding it visually. This makes v-show more efficient when elements need to be frequently shown or hidden without re-rendering. It is best suited for UI toggles, such as modals, dropdowns, or tooltips. 
+
+The syntax is simple: isVisible controls the visibility of the element dynamically
+
+  <div v-show="isVisible">Content</div>
+
+===== Example =====
+  <template>
+    <div>
+      <button @click="isVisible = !isVisible">
+        Toggle Message
+      </button>
+      <p v-show="isVisible">Hello, Vue.js!</p>
+    </div>
+  </template>
+
+  <script>
+    export default {
+      data() {
+        return {
+          isVisible: true
+        };
+      }
+    };
+  </script>
+
+**Explanation:**
+  * The v-show="isVisible" directive controls the visibility of the <p> element.
+  * Clicking the button toggles isVisible between true and false.
+  * Instead of removing the element from the DOM, Vue modifies its display property.
+
+===== v-if VS v-show =====
+Both, v-if and v-show are conditional rendering, but unlike v-if, the v-show directive **only** make the object of concern **invisible**, for it is yet hidden part of the HTML-DOM. 
+
+===== Demonstration =====
+
+[[https://www.w3schools.com/vue/tryit.php?filename=tryvue_v-show_div2 | v-show VS v-if]]
+
+  * **v-show:** Hides only an object, it is still accessible for fold-in or fold-out
+  * **v-if:** The object of concern is no longer existing, as it was destroyed from the HTML-DOM.
+
+
+^Feature	^v-if	^v-show ^
+| DOM Behavior | Completely adds/removes elements from the DOM | Only toggles the display property (keeps elements in the DOM) |
+| Performance | Better for infrequent changes (expensive re-rendering) | Better for frequent toggling (faster updates) |
+| Usage Case | When elements are rarely shown/hidden | When elements need to be toggled frequently | 
+ 
+
+===== Vocabulary =====
+^ English ^ German ^ 
+| conditionally | bedingt |
+| to fold in/out | einklppen/ausklappen |
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

@@ -10,7 +10,7 @@ Java liegt aktuell in der Version 17 vor, achten Sie für den Unterricht im Modu
 
 die korrekte Installation und die Version überprüfen:
 
-{{ :modul:m319:learningunits:lu01:jdk.png?600 |}}
+{{ de:modul:m319:learningunits:lu01:jdk.png?600 |}}
 
 Damit hat man die Voraussetzungen für das Übersetzen von Java-Anwendungen auf dem System geschaffen. Bitte achten Sie darauf, als Befehl javac -version einzugeben. Demgegenüber wird mittels java -version nur das Vorhandensein der Laufzeitumgebung geprüft! Wie gesagt, diese genügt um Programme auszuführen; um jedoch selbst zu entwickeln, wird das SDK gebraucht.
 

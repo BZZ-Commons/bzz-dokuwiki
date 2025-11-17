@@ -1,0 +1,41 @@
+====== LU07.A03 - Methods with several arguments ======
+
+===== Prerequisites  =====
+  * Work type: Individual
+  * Means of aid: only teaching materials, no websearch, no use of ai.
+  * Timeframe: 15 Minutes
+  * Expected result: A Vue-Script, which uses methods to display messages on the screen and increments and decrements a counter. 
+
+===== Learning Objectves =====
+  - Implementing VUE methods by using arguments. 
+  - Increment and decrement a counter within a method.
+  - Writing own methods and making use of them.
+
+===== Source =====
+  * [[https://www.w3schools.com/vue/tryit.php?filename=tryvue_methods_2args |Code-example: Methods in VUE]]
+
+===== Assignment ======
+  * 01: Test the code example above which was provided to you. Describe the behaviour of the script using HTML comments.
+  * 02: Make sure that everthing is working correctly: When clicking on the tiger image there must appear a text below the image "Hello, tiger".
+  * 03: Make sure that you have the title <h1> and have correctly named the file: **lu07.s03s.html**
+  * 04: : You need to wo more animals to the list and greet them correspondingly to the provided example.
+
+===== Hint =====
+  * Save 2 more pictures of animals in the media-directory
+  * Extend the arguments of the method: **myMethod(e, msg, opp)**
+  * Process the additional **opp** in the method.
+  * Finnaly adjust the calling of the method at the pictures
+ 
+===== Solution =====
+[[en:modul:m291:learningunits:lu07:loesungen:03|Lösung]]
+
+===== Vocabulary =====
+^ English ^ German ^ 
+| corresponding number of times | entsprechend oft |
+| to increment | erhöhen, hochzählen |
+| to decrement | vermindern, herunterzählen |
+| thus | somit, dadurch |
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

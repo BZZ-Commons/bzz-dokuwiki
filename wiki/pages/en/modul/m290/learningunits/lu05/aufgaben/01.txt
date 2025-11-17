@@ -1,0 +1,53 @@
+====== LU07.A01 - SQL-DDL: DB Management ======
+
+===== Requirements  =====
+  * Work type: Individual
+  * Timeframe: 15 Minutes
+  * Means of aid: 
+      * Only teaching materials, no websearch, no use of ai.
+      * [[https://dev.mysql.com/doc/refman/8.4/en/database-use.html | MySQL.com | CREATE and USE DATABASE]]
+      * [[https://www.w3schools.com/sql/sql_create_db.asp | W3Schools | CREATE DATABASE]]
+      * [[https://www.w3schools.com/sql/sql_drop_db.asp | W3Schools | DROP DATABASE]]
+  * Expected result: Sementically and syntactically correct SQL statements according to the requirements of the case studies. 
+
+===== Case studies / Assignments =====
+To deepen our new SQL knowledge, we need to practise. Our overall assingment at the beginning is to create, use and drop databases. In other words, in this task we will set up the "storerooms" for our "data storage".
+
+Let's get started 8-)
+
+===== Assignments =====
+==== Task A ====
+Make sure, that your MySQL database system is running and connect with you webstorm editor to your database with your DBA credentials (user: root, password: yourPW).
+
+==== Task B ====
+Display all instances which are currently running on our database.
+
+==== Task C ====
+Create the database instances 
+  * myDB_PERFECT
+  * myDB_OK
+  * myDB_OBSOLETE
+
+and display your result.
+
+==== Task D ====
+Drop the instance "myDB_obsolete", as it obviously obsolete (no longer needed). Display the result.
+
+==== Task E ====
+Activate the instance "myDB_PERFECT" by using the USE command.
+
+==== Task F ====
+Display the system date by using the command "SELECT sysdate();"
+ 
+===== Solution =====
+[[modul:m290:learningunits:lu05:loesungen:l01|Lösung]]
+
+
+===== Vocabulary =====
+^ English ^ German ^ 
+| obsolete | überflüssig |
+| credential | Berechtigungsnachweis |
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

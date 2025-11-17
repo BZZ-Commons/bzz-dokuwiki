@@ -1,0 +1,101 @@
+====== LU01c - Scrum Teams ======
+
+Quelle: //[[http://www.scrumguides.org/docs/scrumguide/v1/Scrum-Guide-DE.pdf]]//
+
+Das Scrum Team besteht aus dem Product Owner, dem Entwicklungsteam, sowie dem Scrum Master. 
+Scrum Teams sind selbstorganisierend und interdisziplinär. 
+**Selbstorganisierende** Teams entscheiden selbst, wie sie ihre Arbeit am besten erledigen, 
+anstatt dieses durch andere Personen außerhalb des Teams vorgegeben zu bekommen. 
+**Interdisziplinäre** Teams verfügen über alle Kompetenzen, die erforderlich sind, um die Arbeit zu erledigen, 
+ohne dabei von Personen ausserhalb des Entwicklungsteams abhängig zu sein. 
+Das Team-Modell in Scrum wurde konzipiert, um Flexibilität, Kreativität und Produktivität zu optimieren.
+
+Scrum Teams liefern Produkte iterativ und inkrementell und maximieren somit die Gelegenheiten für Feedback. 
+Die inkrementelle Auslieferung von "fertigem" [Done] Produkt sorgt dafür, dass stets eine potentiell nützliche Version des Produkts zur Verfügung steht.
+
+===== Der Product Owner =====
+
+Der Product Owner ist für die Wertmaximierung des Produkts sowie der Arbeit des Entwicklungsteams verantwortlich. 
+Wie dies geschieht, kann je nach Organisation, Scrum Team und Einzelpersonen stark variieren.
+Der Product Owner ist die einzige Person, die für das Management des Product Backlogs verantwortlich ist. 
+
+Das Product Backlog-Management umfasst:
+  * Product Backlog-Einträge klar zu formulieren;
+  * Die Einträge im Product Backlog so zu sortieren, dass Ziele und Missionen optimal erreicht werden können;
+  * Den Wert der Arbeit zu optimieren, die das Entwicklungsteam erledigt;
+  * Das Sicherstellen, dass das Product Backlog sichtbar, transparent und für alle klar ist sowie zeigt, woran das Scrum Team als nächstes arbeiten wird; und
+  * sicherzustellen, dass das Entwicklungsteam die Product Backlog-Einträge im erforderlichen Masse versteht.
+
+Der Product Owner kann die oben genannten Arbeiten selbst tun oder sie durch das Entwicklungsteam erledigen lassen. 
+Der Product Owner bleibt jedoch immer rechenschaftspflichtig [accountable].
+Der Product Owner ist eine einzelne Person, kein Komitee. 
+Er kann zwar die Wünsche eines Komitees im Product Backlog wiedergeben, 
+aber diejenigen, die einen Eintrag des Product Backlogs in seiner Priorität verändern möchten, müssen sich an den Product Owner wenden.
+Damit der Product Owner erfolgreich sein kann, muss die gesamte Organisation seine Entscheidungen respektieren. 
+Die Entscheidungen des Product Owners sind in Inhalt und Reihenfolge des Product Backlogs sichtbar. 
+Niemand darf vom Entwicklungsteam verlangen, andere Anforderungen zu bearbeiten. 
+Dem Entwicklungsteam ist es nicht erlaubt, nach den Angaben einer anderen Person als denen des Product Owners zu arbeiten.
+
+===== Das Entwicklungsteam =====
+
+Das Entwicklungsteam besteht aus Profis, die am Ende eines jeden Sprints ein fertiges Inkrement übergeben, welches potentiell auslieferbar ist. 
+Nur Mitglieder der Entwicklungsteams erstellen das Produkt-Inkrement. 
+
+Entwicklungsteams sind von der Organisation so strukturiert und befähigt, dass sie ihre eigene Arbeit selbst organisieren und managen. 
+Die daraus resultierende Synergie optimiert die Gesamteffizienz und -effektivität des Entwicklungsteams.
+Entwicklungsteams weisen die folgenden Eigenschaften auf:
+
+  * Sie sind selbstorganisierend. \\ Niemand (nicht einmal der Scrum Master) sagt dem Entwicklungsteam, wie es aus dem Product Backlog potentiell auslieferbare Funktionalität machen soll.
+  * Entwicklungsteams sind interdisziplinär tätig. \\ Sie haben als Team alle Fähigkeiten, die notwendig sind, um ein Produkt-Inkrement zu erstellen.
+  * Scrum kennt keine Titel außer "Entwickler" für Mitglieder des Entwicklungsteams. \\ Dies ist unabhängig von der Arbeit, die diese Personen erledigen. Es gibt keine Ausnahmen von dieser Regel.
+  * Scrum kennt keine weiteren Unterteilungen innerhalb des Entwicklungsteams, \\ ungeachtet von bestimmten zu adressierenden Domänen, wie "Test" oder "Analyse". Es gibt keine Ausnahmen von dieser Regel.
+  *  Individuelle Mitglieder des Entwicklungsteams können zwar spezialisierte Fähigkeiten oder Spezialgebiete haben, aber die Rechenschaftspflicht obliegt dem Team als Ganzem.
+
+===== Größe des Entwicklungsteams =====
+
+Die optimale Größe des Entwicklungsteams ist klein genug, um flink zu bleiben und groß genug, um bedeutende Arbeit innerhalb eines Sprints erledigen zu können. 
+
+Weniger als drei Mitglieder des Entwicklungsteams reduzieren die Interaktion und führen zu geringeren Produktivitätssteigerungen [als bei grösseren Teams]. 
+Kleinere Entwicklungsteams können eventuell kein potentiell auslieferbares Produkt-Inkrement liefern, da sie möglicherweise nicht über alle benötigten Fähigkeiten verfügen. 
+
+Mehr als neun Mitglieder erfordern zu viel Koordination. 
+Grosse Entwicklungsteams erzeugen eine zu hohe Komplexität, um durch einen empirischen Prozess gemanagt werden zu können. 
+Product Owner und Scrum Master zählen nicht zu dieser Zahl dazu, sofern sie nicht ebenso die Arbeit aus dem Sprint Backlog erledigen.
+
+===== Der Scrum Master =====
+
+Der Scrum Master ist für das Verständnis und die Durchführung von Scrum verantwortlich. 
+Er tut dies, indem er dafür sorgt, dass das Scrum Team die Theorie, Praktiken und Regeln von Scrum einhält.
+
+Der Scrum Master ist ein Servant Leader für das Scrum Team. 
+Der Scrum Master hilft denjenigen, die kein Teil des Scrum Teams sind, zu verstehen, welche ihrer Interaktionen mit
+dem Team sich hilfreich auswirken und welche nicht. 
+Der Scrum Master hilft dabei die Zusammenarbeit so zu optimieren, dass der durch das Scrum Team generierte Wert maximiert wird.
+
+==== Der Dienst des Scrum Masters für den Product Owner ====
+
+Der Scrum Master dient dem Product Owner auf verschiedene Arten, unter anderem durch das
+  * Vermitteln von Techniken für eine effektive Verwaltung des Product Backlogs;
+  * Vermitteln eines Verständnisses für die Notwendigkeit klarer, prägnanter Product Backlog Einträge im Scrum Team;
+  * Schaffen eines Verständnisses für Produktplanung in einem empirischen Arbeitsumfeld;
+  * Sicherstellen, dass der Product Owner weiß, wie er das Product Backlog so anordnet, dass es den größten Wert erzeugt;
+  * Vermitteln des richtigen Verständnisses von Agilität und ihrer Anwendung;
+  * Unterstützen bei Bedarf oder auf Anfrage bei der Durchführung von Scrum Ereignissen.
+
+==== Der Dienst des Scrum Masters für das Entwicklungsteam ====
+
+Der Scrum Master dient dem Entwicklungsteam auf verschiedene Arten, unter anderem durch:
+  * Coachen des Entwicklungsteams hin zu Selbstorganisation und funktionsübergreifender Teamarbeit;
+  * Unterstützung des Entwicklungsteams bei der Schaffung hochwertiger Produkte;
+  * Beseitigen von Hindernissen, die das Entwicklungsteam aufhalten;
+  * Unterstützen bei Bedarf oder auf Anfrage bei der Durchführung von Scrum Ereignissen;
+  * Coachen des Entwicklungsteams in Organisationen, in denen Scrum noch nicht vollständig angenommen und verstanden wird.
+
+==== Der Dienst des Scrum Masters an der Organisation ====
+
+Der Scrum Master dient der Organisation auf verschiedene Arten, unter anderem durch das:
+  * Leiten und Coachen der Organisation bei der Einführung von Scrum;
+  * Planen von Scrum-Implementierungen innerhalb der Organisation;
+  * Unterstützen von Kollegen und Stakeholdern, Scrum und empirische Produktentwicklung zu verstehen und umzusetzen;
+  * Auslösen von Veränderungen zur Produktivitätssteigerung des Teams;
+  * Zusammenarbeiten mit anderen Scrum Mastern, um die Effektivität von Scrum-Implementierungen innerhalb der Organisation zu verbessern.

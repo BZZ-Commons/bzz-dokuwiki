@@ -1,0 +1,17 @@
+====== LU09.A06: Debugging 3 ======
+
+===== Rahmenbedingungen =====
+
+  * Sozialform: Einzelarbeit/Partnerarbeit
+  * Zeitbudget: 15 Minuten
+  * Hilfsmittel: Unterrichtsunterlagen
+  * Abgabe: PDF mit Fehlerbeschreibung
+
+
+===== Ausgangslage =====
+Sie haben einiges über die BPMN-Notation gehört und kennen die wichtigen Regeln und Symbole. Nachfolgend finden Sie ein Modell, das Fehler enthält.
+
+===== Arbeitsauftrag ===== 
+Ein Prozess-Designer möchte einen Geschäftsprozess enden lassen, falls eine Aktivität nach einer Stunde nicht beendet ist. Dazu hat er den folgenden Geschäftsprozess modelliert. Welche Fehler hat der Modellierer begangen? Begründen Sie kurz ihre Antwort und modellieren Sie den Prozess korrekt.
+
+{{:modul:m254:learningunits:lu04:aufgaben:bpmn_debugging_3.png?600|}}

@@ -1,0 +1,76 @@
+====== LU04.A02 - Flexbox ======
+
+===== Starting position ======
+
+**HTML**
+<code html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">Item 1</div>
+        <div class="nav">
+            <div class="nav-item">Item 1</div>
+            <div class="nav-item">Item 2</div>
+            <div class="nav-item">Item 3</div>
+        </div>
+    </div>
+</body>
+</html>
+</code>
+
+**CSS**
+<code css>
+* {
+    font-family: Arial;
+    box-sizing: border-box;
+    font-size: 28px;
+}
+body {
+    padding: 20px;
+    margin: 0;
+}
+.container {
+    padding: 30px;
+    background-color: rgba(195, 0, 255, 0.4);
+    border: 2px solid rgb(195, 0, 255);
+    border-radius: 25px;
+}
+.logo {
+    padding: 40px;
+    background-color: rgba(0,0,255, 0.4);
+    border: 2px solid rgb(0,0,255);
+    border-radius: 25px;
+    color: blue;
+}
+.nav {
+    padding: 20px;
+    background-color: rgba(0,0,255, 0.4);
+    border: 2px solid rgb(0,0,255);
+    border-radius: 25px;
+}
+.nav-item {
+    padding: 20px;
+    background-color: rgba(255,0,0,0.4);
+    border: 2px solid rgb(255,0,0);
+    border-radius: 25px;
+    color: red;
+    margin: 10px;
+}
+</code>
+
+===== Task =====
+  - Design your HTML document according to the specifications.
+
+{{modul:m287:learningunits:lu04:aufgaben:vorgabe.png?600|}}
+
+==== Framework conditions ====
+^ What ^ Description ^
+| Product: | HTML page with CSS Flexbox |
+| Time: | 15 min. |
+| Social form: | Individual or partner work |
+| Resources: | Teaching materials, HTML editor, browser |

@@ -1,0 +1,12 @@
+====== D) Visualisierung ======
+<WRAP center round todo 60%>
+Dieser Service zeigt den Verlauf einer Spielrunde an.
+</WRAP>
+
+Der Service erhält nach Ende einer Spielrunde den vollständigen Ablauf mit allen Aktionen aller Bots.
+Er soll den Ablauf visualisieren:
+  * Anzeige der Karten jedes Bots
+  * Anzeige der gespielten Karte
+  * Falls ein Bot "See the future" spielt, Anzeige der nächsten 3 Karten des Stapels.
+
+Der Benutzer kann das Spiel automatisch ablaufen lassen (z.B. 1 Sekunde Wartezeit pro Zug) oder schrittweise.

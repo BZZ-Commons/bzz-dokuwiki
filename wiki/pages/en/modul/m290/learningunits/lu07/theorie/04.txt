@@ -1,0 +1,37 @@
+====== LU08d - SQL-DML: DELETE ======
+
+**Sources:**
+  * [[https://www.w3schools.com/sql/sql_delete.asp | W3Schools | DELETE ]]
+
+===== 3. DELETE Statement =====
+The DELETE command is used to remove records from a table. Like UPDATE, it can be run with or without a filter, making it vital to define the condition to avoid unintended data removal.
+
+===== DELETE with Filter (WHERE Clause) =====
+Using a WHERE clause ensures that only specific rows matching the condition will be deleted.
+
+**Syntax:**
+  DELETE FROM table_name 
+  WHERE condition;
+
+**Example**
+  DELETE FROM employees 
+  WHERE employee_id = 1;
+  
+  
+===== DELETE without Filter =====
+Omitting the WHERE clause removes all data from the table, so it must be used cautiously. This operation doesn’t remove the table structure, just the rows.
+
+**Syntax:**
+  DELETE FROM table_name;
+
+**Example:**
+  DELETE FROM employees;
+
+
+
+==== Vocabulary ====
+^English ^ Deutsch ^
+| ...| ... |
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

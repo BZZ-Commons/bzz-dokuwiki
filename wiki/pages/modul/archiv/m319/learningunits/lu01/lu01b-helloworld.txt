@@ -4,11 +4,11 @@ Sie erstellen nun in IntelliJ ihr erstes Java Programm.
 ===== Schritt 1: =====
 Fügen Sie eine neue Java-Klasse in den ''src'' Ordner im passenden Modul ein:
 
-{{:modul:m319:learningunits:lu01:src.png?600|}}
+{{de:modul:m319:learningunits:lu01:src.png?600|}}
 
 Benennen Sie die Klasse Beispielsweise ''HalloWelt''
 
-{{:modul:m319:learningunits:lu01:hallowelt.png?400|}}
+{{de:modul:m319:learningunits:lu01:hallowelt.png?400|}}
 
 <WRAP center round important 60%>
 Für Klassenbenennungen gibt es Konventionen:
@@ -18,7 +18,7 @@ Klassennamen sollten Nomen sein, in gemischter Großschreibung, wobei der erste 
 
 Sie haben nun Ihr HalloWelt.java im ''src'' Ordner des Moduls.
 
-{{:modul:m319:learningunits:lu01:worldinmodule.png?600|}}
+{{de:modul:m319:learningunits:lu01:worldinmodule.png?600|}}
 
 
 ===== Schritt 2: =====
@@ -108,16 +108,16 @@ Bevor Sie das Beispiel einfach kopieren, sollten Sie sich diesen Befehl kurz ans
 
 Nachdem Sie den Befehl (Syntax) recherchiert haben, ersetzen Sie Ihren Kommentar mit dem Befehl.
 
-{{:modul:m319:learningunits:lu01:javahallowelt.png?600|}}
+{{de:modul:m319:learningunits:lu01:javahallowelt.png?600|}}
 
 ===== Schritt 4 =====
 Als nächstes müssen wir unsere Programm kompilieren und ausführen. Ihre IDE macht das für Sie, die einzige Aufgabe für Sie ist, dass Sie der IDE sagen müssen welches Programm ausgeführt werden soll. Drücken Sie dazu auf den grünen Pfeil neben der main-Methode.
 
-{{:modul:m319:learningunits:lu01:run.png?600|}}
+{{de:modul:m319:learningunits:lu01:run.png?600|}}
 
 IntelliJ kompiliert nun Ihr File "HalloWelt.java" und führt es anschliessend aus:
 
-{{:modul:m319:learningunits:lu01:cmd.png?600|}}
+{{de:modul:m319:learningunits:lu01:cmd.png?600|}}
 
 
 Gratulation, Sie haben nun ihr erstes Java-Programm in IntelliJ geschrieben und gestartet.

@@ -1,0 +1,33 @@
+====== LU08a - SQL-DML: Basics ======
+
+===== Learning Objectives =====
+  - Understand and Apply Data Insertion Concepts
+  - Master the Use of UPDATE Statements with Filters
+  - Safely Delete Records Using SQL DELETE Statements:
+  - Demonstrate Practical Usage of SQL DML in Real-world Scenarios
+
+===== Introduction to DML =====
+To beginn with, the acronym DML stands for **Data Manipulation Language** and refers to how table contents are to be handled according to the rules of a relational database system such as MySQL. 
+
+===== Overview of MySQL DML =====
+MySQL DML is used to manage the data in tables, as opposed to the structure of the tables themselves (DDL commands). The three main operations are:
+
+  - INSERT: Used to add new records to a table.
+  - UPDATE: Modifies existing data within a table.
+  - DELETE: Removes data from a table.
+
+Each of these commands can be executed **with or without filtering conditions**, affecting either specific rows or all rows within a table.
+
+===== Conclusion =====
+MySQL DML commands provide robust mechanisms for managing data in relational databases. The INSERT, UPDATE, and DELETE commands can all be customized with filters to ensure that specific data is targeted for modification or removal. Careful use of these commands, particularly when filtering conditions are omitted, is critical for maintaining data integrity within a database.
+
+==== Vocabulary ====
+^English ^ Deutsch ^
+| to refer to | beziehen auf|
+| according | gemäss |
+| opposed to | im Gegensatz zu |
+| to omit | auslassen |
+| to customize | (bedarfsgerecht) anpassen |
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

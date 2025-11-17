@@ -1,0 +1,14 @@
+====== LU01d - Dockerfile anpassen und ausführen ======
+==== Ziele ====
+  -Ich kann die demonstrierten Bereiche einer Docker-Datei nachvollziehen und in eigenen Worten beschreiben.
+  -Ich kann mindestens eine Massnahme bei Fehler im Build- oder Run-Prozess vorschlagen und umsetzen.
+
+===== Live-Demo =====
+  - Siehe im Repository-Verzeichnis ''01/00_Demo'', wobei Sie mitschreiben sollten.
+  - Die Musterlösung finden Sie im Verzeichnis ''01/01_Intro'' nach dem Unterricht.
+
+===== Übungen =====
+Siehe im Repository ''01/02_Exercises''.
+
+===== Extras =====
+[[https://docs.docker.com/engine/reference/builder/|Dockerfile Reference]]

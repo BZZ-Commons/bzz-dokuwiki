@@ -1,0 +1,51 @@
+====== LU05.A11 - v-if, v-else ...  combined with AND/OR operators ======
+
+===== Prerequisites  =====
+  * Work type: Individual
+  * Means of aid: only teaching materials, no websearch, no use of ai.
+  * Timeframe: 20 Minutes
+  * Expected result: A Vue script that displays HTML elements based on input values.
+
+===== Learning objectives =====
+  - Explaining the The directive //v-if// in your own word.  
+  - Being able to apply v-if in combination with AND/OR operators
+
+===== Hint =====
+  * Use the following code-example since it provides you with the basic structure of a Vue file. 
+  * Delete first of all the image, and then begin from the scratch to build up your program logic following the requirements of the assigment.
+  * To meet the requirements you will need an additional variable //hasAdult//, which is from type //bool//.
+
+===== Sourcecode =====
+  * [[https://www.w3schools.com/vue/tryit.php?filename=tryvue_v-if_typewriters3 |Code-example]]
+  
+===== Assignment ======
+This assignment combines //-vif// with the using of local //AND/OR//-operators. That means that several rules must be obeyed in the if-clause.
+
+  - People under the age of 12 are not allowed to go to the cinema. 
+  - Execute your script and check the result. Proceed only, if the result is correct.
+  - Under 12 and with adult company they are allowed to up to 6 o'clock pm.
+  - Execute your script and check the result. Proceed only, if the result is correct.
+  - Between 12 and 16 they are allowed up to 6 o'clock pm, even without an adult company. 
+  - Execute your script and check the result. Proceed only, if the result is correct.
+  - Between 12 and 16 they may attend to screenings if they are accompanied by an adult.
+  - Execute your script and check the result. Proceed only, if the result is correct.
+  - Person older than 16 may go to the cinemas without time restriction.
+  - Execute your script and check the result. Proceed only, if the result is correct.
+  - Comment and save your script your results accordingly.
+
+===== Solution =====
+[[en:modul:m291:learningunits:lu05:loesungen:11|Lösung]]
+
+
+
+===== Vocabulary =====
+^ English ^ German ^ 
+| afterwards | anschliessend|
+| accordingly | entsprechend |
+| to obey | folgen, gehorchen |
+| requirement | Anforderung |
+| to proceed | weitermachen |
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

@@ -1,0 +1,47 @@
+====== LU04.S02 - ERM: Travel DB ======
+
+For this scenario, the following entity(-types) are identified:
+
+1. Country
+  * Attributes
+    * CountryID (Primary Key)
+    * CountryName
+    * ContinentName
+
+2. Trip
+  * Attributes
+    * TripID (Primary Key)
+    * CountryID (Foreign Key)
+    * StartDate
+    * EndDate
+    * Price
+  * Relationships:
+    * Country: A trip occurs in one country.
+    * Duration: Calculated as the difference between EndDate and StartDate.
+
+3. Continent
+  * Attributes: 
+    * ContinentID (Primary Key)
+    * ContinentName
+  * Relationships:
+    * Country: Each country is located on one continent.
+
+4. Relationships:
+  * One-to-Many:
+    * A Continent can have many Countries.
+    * A Country can have many Trips.
+
+
+5. ERM in Crow's feet notation 
+  * Continent (1) ————< has >———— (∞) Country
+  * Country (1) ————< hosts >———— (∞) Trip
+
+{{:modul:m290:learningunits:lu03:loesungen:lu03.l02.png?1000|}}
+
+===== Vocabulary =====
+^ English ^ German ^ 
+| prerequisite | Grundvoraussetzung |
+| given| gegebene, vorausgesetzt |
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

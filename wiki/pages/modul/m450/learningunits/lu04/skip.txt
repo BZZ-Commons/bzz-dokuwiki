@@ -53,7 +53,7 @@ Nebst den Dekorators können wir ''pytest.skip'' auch innerhalb der Testfunktion
 Tritt zum Beispiel beim Vorbereiten des Tests ein Problem auf, können wir die weitere Ausführung des Tests überspringen.
 Auch bei relativ komplexen Bedingungen ist diese Variante besser geeignet als der Dekorator mit ''pytest.mark.skipif''.
 
-<nodisp>TODO SuMa - Beispiel</nodisp>
+/*TODO SuMa - Beispiel*/
 <code python>
 def test_setup(monkeypatch, capsys, test_values):
     if isinstance(test_values, dict) and \

@@ -1,0 +1,42 @@
+====== LU19f - Aufgabe 2 / Task 53: methods ======
+
+===== Administration =====
+Füllen Sie die nachfolgenden Felder aus:
+
+**Klasse:** ....................................
+
+**Vorname:** ...................................
+
+**Name:** ......................................
+
+===== Vorarbeit =====
+  * **Vorschlag:** Sie können als Vorlage die die Lösung **LU07.S03.html** verwenden.
+
+===== Ausgangslage =====
+Auftrag **LU07.S03.html** bestand darin beim Klicken auf ein Tier-Bild, dieses Tier entsprechend zu kommentieren. Realisiert wurde dies, durch den Einsatz von **vue-events** und **vue-methoden**.
+ 
+{{:en:modul:m291:learningunits:lu19:theorie:t2_a52_ausgang.png?500|}}
+
+===== Auftrag =====
+  * Ergänzen Sie die Anzeige um ein weiteres Tierbild Ihrer Wahl und passen die Kommentare in der methode **myMethod** entsprechend an.
+  * Ergänzen Sie eine Methode **animalCnt(e)**, die zählt, we oft ein Tierbild geklickt wurde. 
+  * Erweitern Sie die Textausgabe der Methode **myMethod** um den Tierzähler
+
+===== Hinweis =====
+  * Die Art des Tieres ist nicht relevant.
+  * Es muss nicht gezählt werden, wie oft jedes Tier geklickt wurde. Es reicht also ein Gesamtzähler in der Methode **animalCount(e)**.
+
+^Zielzustand 1 | Startzustand: Kein Tier wurde geklickt | {{:en:modul:m291:learningunits:lu19:theorie:t53_ziel1.png?400|}} |
+^Zielzustand 2 | Danach wurde der Löwe geklickt | {{:en:modul:m291:learningunits:lu19:theorie:t53_ziel2.png?400|}}  | 
+^Zielzustand 3 | Der Kea wurde als 3. geklickt | {{:en:modul:m291:learningunits:lu19:theorie:t53_ziel3.png?400|}} | 
+^Zielzustand 4 | Der Grizzly wurde als 4. geklickt | {{:en:modul:m291:learningunits:lu19:theorie:t53_ziel4.png?400|}} | 
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir
+
+
+
+
+
+
+

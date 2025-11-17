@@ -72,7 +72,7 @@ Was passiert hier? Wir vergleichen den Kaufpreis von zwei Booten. Ist dieses Boo
 <code java>
 (int)(kaufpreis - o.getKaufpreis());
 </code>
-Die Methode ''compareTo'' muss ein ''int'' zurückgeben, da der Kaufpreis ein ''double'' ist, und das Resultat der Berechnung auch ein ''double'' ist muss das Resultat in ein ''int'' gecastet (Typumwandlung) werden. Mehr Infos zu Typumwandlungen finden Sie [[modul:m319:learningunits:lu08:lu08c-typecasting|hier]].
+Die Methode ''compareTo'' muss ein ''int'' zurückgeben, da der Kaufpreis ein ''double'' ist, und das Resultat der Berechnung auch ein ''double'' ist muss das Resultat in ein ''int'' gecastet (Typumwandlung) werden. Mehr Infos zu Typumwandlungen finden Sie [[de:modul:m319:learningunits:lu08:lu08c-typecasting|hier]].
 </WRAP>
 
 

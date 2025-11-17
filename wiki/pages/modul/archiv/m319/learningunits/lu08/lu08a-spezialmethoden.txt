@@ -123,7 +123,7 @@ In der Definition des Interface ''Comparable<T>'' sehen Sie die spitzen Klammern
 === 2. Die Methode ''compareTo()'' implementieren ===
 
 Nachdem Sie die Klassensignatur ''public class Boot implements Comparable<Boot>{}'' angepasst haben, wird sich Ihre IDE mit einer Fehlermeldung revanchieren. Die Fehlermeldung sagt aus, dass Sie ein Interface implementiert haben, aber die enthaltene Methode noch nicht implementiert haben. Eine einfach Lösung ist ein Autoimport der Methode mit ''Alt+Entr'' auf der Klasse und dann ''Implements methods''.
-{{ :modul:m319:learningunits:lu08:implementmethod.png?400 |}}
+{{ de:modul:m319:learningunits:lu08:implementmethod.png?400 |}}
 Die IDE wird Ihnen dann die leere Methode in der Klasse ergänzen. 
 <WRAP center round box 80%>
 <code java>
@@ -210,7 +210,7 @@ public class Person{
 </WRAP>
 
 <WRAP center round info 60%>
-Für das Speichern von Datumswerten ist der Datentyp ''LocalDate'' und für das Speichern von Zeitperioden der Datentyp ''Period'' aus der Bibliothek ''java.time'' hervorragend geeignet. Mehr dazu finden Sie im Kapitel [[modul:m319:learningunits:lu08:lu08b-javaunddiezeit|LU08b - Java und die Zeit]]
+Für das Speichern von Datumswerten ist der Datentyp ''LocalDate'' und für das Speichern von Zeitperioden der Datentyp ''Period'' aus der Bibliothek ''java.time'' hervorragend geeignet. Mehr dazu finden Sie im Kapitel [[de:modul:m319:learningunits:lu08:lu08b-javaunddiezeit|LU08b - Java und die Zeit]]
 </WRAP>
 
 

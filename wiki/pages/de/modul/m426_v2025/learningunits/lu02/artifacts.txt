@@ -1,0 +1,75 @@
+====== LU02b - Artefakte ======
+
+
+Quelle: //[[https://scrumguides.org/docs/scrumguide/v2020/2020-Scrum-Guide-German.pdf]]//
+
+===== Übersicht =====
+Anstelle einer Menge von Phasenpapieren, Checklisten, Planungen und Protokollen definiert Scrum 3 Artefakte:
+
+==== Product Backlog ====
+Das [[.:productbacklog]] ist eine geordnete Liste von allem, was in dem Produkt enthalten sein kann. 
+Es dient als einzige Anforderungsquelle für alle Änderungen am Produkt.
+
+==== Sprint Backlog ====
+Das [[.:sprintbacklog]] ist die Menge der für den Sprint ausgewählten Product Backlog-Einträge, 
+ergänzt um den Plan für die Lieferung des Produkt-Inkrements sowie zur Erfüllung des Sprint-Ziels.
+
+==== Inkrement ====
+Das [[.:increment]] ist das Ergebnis aus allen in einem Sprint fertiggestellten Product Backlog-Einträgen und dem Resultat der Inkremente aller früheren Sprints.
+
+===== Transparenz der Artefakte =====
+
+Scrum basiert auf Transparenz. Entscheidungen zur Wertoptimierung und Risikokontrolle
+werden auf der Basis des festgestellten Zustands der Artefakte vorgenommen. Diese
+Entscheidungen haben in dem Maß eine solide Basis, in dem die Transparenz der Artefakte
+umfassend ist. Bei einer unvollständigen Transparenz können Entscheidungen auf Sand gebaut
+sein, Wert kann gemindert und das Risiko erhöht werden.
+
+Der Scrum Master muss mit dem Product Owner, dem Entwicklungsteam und anderen
+Beteiligten herausfinden, ob die Artefakte wirklich vollkommen transparent sind. 
+Es gibt Methoden für den Umgang mit fehlender Transparenz; der Scrum Master muss jedem dabei
+helfen, die bestmöglichen Praktiken zu finden und anzuwenden, wenn vollständige Transparenz
+nicht gewährleistet werden kann. 
+
+Ein Scrum Master spürt mangelnde Transparenz durch die
+Überprüfung der Artefakte, die Erkennung von Mustern, intensives Zuhören, und die Erkennung
+von Abweichungen zwischen den erwarteten und den tatsächlichen Resultaten auf.
+Die Aufgabe des Scrum Masters ist es, mit dem Scrum Team und der Organisation an der
+Verbesserung der Transparenz der Artefakte zu arbeiten. Diese Arbeit bedeutet zumeist Lernen,
+Überzeugen und Verändern. Transparenz fällt einem nicht in den Schoß, sie ist ein Weg, den es
+zu beschreiten gilt.
+
+==== Definition of Done ====
+
+Es müssen alle verstehen, was „Done“ bedeutet, sobald ein Product Backlog-Eintrag oder ein
+Produkt-Inkrement als „Done“ bezeichnet wird. Obwohl sich dies erheblich von Scrum Team zu
+Scrum Team unterscheidet, müssen alle Teammitglieder ein gemeinsames Verständnis davon
+haben wann Arbeit fertig ist, um Transparenz zu gewährleisten. Dies erfolgt durch die Definition
+of Done des Scrum Teams und wird dazu verwendet festzustellen, wann die Arbeit an einem
+Produkt-Inkrement fertig ist.
+
+Die gleiche Definition leitet das Entwicklungsteam bei der Entscheidung, wie viele Product
+Backlog-Einträge es während des Sprint Plannings selektieren kann. Der Zweck eines jeden
+Sprints ist es, Inkremente potentiell auslieferbarer Funktionalität zu liefern, die der aktuellen
+Definition of Done des Scrum Teams entsprechen.
+
+Entwicklungsteams liefern jeden Sprint ein Inkrement an Produktfunktionalität. Dieses
+Inkrement ist vollständig verwendbar, so dass der Product Owner sich jederzeit dazu
+entscheiden kann, es zu releasen. Wenn die Definition of Done für ein Inkrement Teil der
+Konventionen, Standards oder Richtlinien der Entwicklungsorganisation ist, müssen alle Scrum
+Teams diese als Minimalziel befolgen. 
+
+Wenn "Done" für ein Inkrement nicht Teil der Konvention
+der Entwicklungsorganisation ist, muss das Entwicklungsteam des Scrum Teams eine für das
+Produkt geeignete Definition of Done formulieren [Anm. d. Übers.: Das heisst nicht, dass Product
+Owner und Scrum Master nicht eingebunden werden]. Wenn es mehrere Scrum Teams gibt, die
+am selben System- oder Produktrelease arbeiten, müssen alle Entwicklungsteams aller Scrum
+Teams gemeinsam eine Definition of Done erstellen.
+
+Jedes Inkrement ist additiv zu allen früheren Inkrementen und gründlich getestet, um
+sicherzustellen, dass alle Inkremente gemeinsam funktionieren.
+
+Von gereiften Scrum Teams wird erwartet, dass sie ihre jeweilige Definition of Done erweitern,
+um strengere Kriterien für eine höhere Qualität sicherzustellen. Jedes einzelne Produkt oder
+System sollte eine Definition of Done haben, welche den Standard für jegliche daran
+durchgeführte Arbeit darstellt. 

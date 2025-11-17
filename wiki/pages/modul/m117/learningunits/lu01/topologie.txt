@@ -5,32 +5,51 @@ Eine Netzwerk-Topologie beschreibt die physische oder logische Anordnung von Ger
 ==== Stern-Topologie ====
 In einer Stern-Topologie sind alle Geräte direkt mit einem zentralen Knotenpunkt, meistens einem Switch oder Hub, verbunden. Die Kommunikation zwischen den Geräten erfolgt über diesen zentralen Knotenpunkt. Diese Topologie ist einfach zu installieren und zu verwalten. Ein Nachteil ist jedoch, dass ein Ausfall des zentralen Knotenpunkts das gesamte Netzwerk beeinträchtigen kann.
 
+{{:modul:m117:learningunits:lu01:topologie_stern.jpg?nolink&200|}}
+
+
 ==== Ring-Topologie ====
 In einer Ring-Topologie sind die Geräte in Form eines geschlossenen Rings miteinander verbunden. Jedes Gerät ist mit genau zwei anderen Geräten verbunden. Daten werden im Uhrzeigersinn von einem Gerät zum nächsten übertragen. Ein Vorteil dieser Topologie ist, dass die Datenübertragung gut strukturiert ist. Ein Nachteil ist jedoch, dass der Ausfall eines einzelnen Geräts den gesamten Ring unterbrechen kann.
+
+{{:modul:m117:learningunits:lu01:topologie_ring.jpg?nolink&200|}}
+
 
 ==== Bus-Topologie ====
 In einer Bus-Topologie sind alle Geräte linear über ein gemeinsames Übertragungsmedium (Bus) verbunden. Daten werden von einer Quelle zu allen anderen Geräten gesendet, aber nur das gewünschte Gerät empfängt und verarbeitet die Daten. Diese Topologie ist einfach, aber anfällig für Störungen, da ein Problem im Bus die gesamte Kommunikation beeinträchtigen kann.
 
+{{:modul:m117:learningunits:lu01:topologie_bus.jpg?nolink&200|}}
+
+
 ==== Baum-Topologie ====
 Die Baum-Topologie kombiniert die Stern- und Bus-Topologien. Hierbei sind mehrere Stern-Topologien über einen Bus miteinander verbunden. Dadurch entsteht eine hierarchische Struktur, die Skalierbarkeit ermöglicht. Allerdings kann der Ausfall des zentralen Bus-Verbindungsstrangs das gesamte Netzwerk betreffen.
+
+{{:modul:m117:learningunits:lu01:topologie_baum.jpg?nolink&200|}}
+
 
 ==== Maschen-Topologie (Vollvermaschung) ====
 In einer Maschen-Topologie sind alle Geräte direkt mit allen anderen Geräten verbunden. Diese Topologie bietet hohe Redundanz und Ausfallsicherheit, da es viele mögliche Pfade für die Datenübertragung gibt. Sie ist jedoch teuer und komplex, da die Anzahl der Verbindungen schnell steigt.
 
+{{:modul:m117:learningunits:lu01:topologie_masche.jpg?nolink&200|}} {{:modul:m117:learningunits:lu01:topologie_masche_voll.jpg?nolink&200|}}
+
+
 ==== Hybride Topologie ====
 Eine hybride Topologie kombiniert mehrere der oben genannten Topologien. Dies kann nützlich sein, um die Vorteile verschiedener Topologien zu nutzen und deren Nachteile auszugleichen.
 
-
+\\
+\\
+\\
 ===== SPOF (Single point of failure) =====
 "SPOF" steht für "Single Point of Failure", was auf Deutsch so viel wie "Einzelstelle der Störung" oder "Einzelstelle des Ausfalls" bedeutet. Ein SPOF bezieht sich auf eine Komponente in einem System, sei es ein Netzwerk, eine Anwendung oder eine Infrastruktur, die so kritisch ist, dass ein Ausfall oder eine Störung dieser Komponente das gesamte System beeinträchtigen oder lahmlegen kann.
 
 SPOFs können in verschiedenen Kontexten auftreten, einschliesslich Netzwerken. In Bezug auf Netzwerk-Topologien können SPOFs in folgenden Fällen auftreten:
   * Stern-Topologie: In einer Stern-Topologie kann der zentrale Switch oder Hub als SPOF fungieren. Wenn dieser Knotenpunkt ausfällt, werden alle Kommunikationsverbindungen unterbrochen.
-  * Ring-Topologie: Jedes Gerät in einem Ring kann als SPOF betrachtet werden. Ein Ausfall eines einzelnen Geräts   * kann den gesamten Ring unterbrechen.
+  * Ring-Topologie: Jedes Gerät in einem Ring kann als SPOF betrachtet werden. Ein Ausfall eines einzelnen Geräts kann den gesamten Ring unterbrechen.
   * Bus-Topologie: Hier kann das gemeinsame Übertragungsmedium (der Bus) als SPOF betrachtet werden. Ein Ausfall des Busses beeinträchtigt die gesamte Kommunikation.
   * Baum-Topologie: Der zentrale Bus-Verbindungsstrang oder der zentrale Knotenpunkt können als SPOF dienen. Ein Ausfall kann das gesamte Netzwerk beeinträchtigen.
   * Maschen-Topologie: Da es viele Verbindungen gibt, ist die Ausfallwahrscheinlichkeit geringer. Dennoch könnten einige Verbindungen oder Knotenpunkte als SPOFs betrachtet werden.
   * Hybride und Hierarchische Topologien: Je nachdem, wie sie implementiert sind, können SPOFs in verschiedenen Teilen der Topologie auftreten.
+
+In den Grafiken der einzelnen Topologien sind die SPOF rot eingezeichnet
 
 ----
 {{tag>M117-LU01}}

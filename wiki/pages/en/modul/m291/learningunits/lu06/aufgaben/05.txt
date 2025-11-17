@@ -1,0 +1,26 @@
+====== LU06.A05 - Events - Input counting  ======
+
+===== Prerequisites  =====
+  * Work type: Individual
+  * Means of aid: only teaching materials, no websearch, no use of ai.
+  * Timeframe: 10 Minutes
+  * Expected result: a vue script, that counts how many letters were typed in by the user and decreases and resets the counter.
+===== Source =====
+  * [[https://www.w3schools.com/vue/tryit.php?filename=tryvue_v-on_textInput|Source-code for the assignment]]
+
+===== Assignments  ======
+  - Test the code example provided to you, if you type something into the input-field the counter must increase. Describe the behaviour of the script using HTML comments.
+  - Make sure that you have the title <h1> correctly named: **lu06.s05.html**  
+  - Add a button **InpCnt  -1** that decreases the counter by step-size 1
+  - Add another button to reset the counter to 0.
+
+===== Solution =====
+[[en:modul:m291:learningunits:lu06:loesungen:05|Lösung]]
+
+===== Vocabulary =====
+^ English ^ German ^ 
+| ... | ...|
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

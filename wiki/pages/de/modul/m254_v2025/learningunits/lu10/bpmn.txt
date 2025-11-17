@@ -1,0 +1,19 @@
+====== LU10c - BPMN (35%) ======
+<WRAP center round todo 60%>
+Basierend auf dem erstellten Business Use Case Diagramm entwickeln Sie alle relevanten Abläufe einen detaillierten Geschäftsprozess in BPMN (Business Process Model and Notation).
+</WRAP>
+
+
+===== Anforderungen =====
+
+  * Wählen Sie alle Anwendungsfälle aus Ihrem Use Case Diagramm aus, die sich für eine Prozessdarstellung eignen.
+  * Modellieren Sie die zugehörigen Prozesse mit BPMN 2.0, unter Verwendung der folgenden Elemente:
+    * Ereignisse (Start-, Zwischen- und Endereignisse)
+    * Aktivitäten (Tasks, ggf. Subprozesse)
+    * Gateways (z. B. exklusive oder parallele Verzweigungen)
+    * Swimlanes (Pools und Lanes), um beteiligte Akteure oder Abteilungen zu visualisieren
+  * Die Modelle sollen übersichtlich und klar strukturiert sein.
+
+
+===== Abgabe =====
+Laden Sie die Prozesse als PDF-Datei hier hoch.

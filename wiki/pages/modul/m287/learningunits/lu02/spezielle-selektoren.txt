@@ -1,0 +1,126 @@
+====== LU02c - Spezielle Selektoren ======
+
+===== Universalselektor =====
+
+Mit dem Universalselektor werden __alle__ HTML-Elemente auf einmal in einem Dokument markiert. Der Universalselektor wird mit dem Sternchen * notiert.
+
+**Beispiel 1**\\
+Der folgende Universal-Selektor setzt überall einen gepunkteten grünen Rahmen.
+
+<code css>
+/* Grüner, gepunkteter Rahmen für alle Elemente */
+* { 
+  margin: 5px;
+  padding: 3px;
+  border: 2px dotted green;
+  text-align: center; 
+}
+</code>
+
+===== Attributselektor =====
+HTML-Elemente können über ihre Attributnamen selektiert werden. In CSS muss der Attributnamen zwischen **eckigen Klammern** <color #ed1c24>[ ]</color> gesetzt werden.
+
+{{:modul:m287:learningunits:lu02:attribut_selektor_1.png?600|}}
+
+**Beispiel 1**\\
+Dieser Attributselektor wird in einem HTML-Dokument um jedes HTML-Element, das ein <color #ed1c24>title</color>-Attribut besitzt, einen Rahmen zeichnen.
+<code css>
+/* Styling für alle Elemente mit dem Attribut title */
+[title] {
+  border: 4px solid black;
+}
+</code>
+
+**Beispiel 2**\\
+Dieser Attributselektor kann auch auf bestimmte HTML-Elemente angewendet werden. Im Beispiel unten selektiert der Attributselektor alle <color #ed1c24>title</color>-Attribute des <color #ed1c24><a></color>-Elements.
+
+<code>
+/* Styling for alle a-Element mit dem Attribut title */
+a[title] { 
+  text-decoration: none;
+  color: red;
+  font-weight: bold;
+  border: 2px dotted red;
+}
+</code>
+
+
+===== Attributselektor mit einem bestimmten Attributwert =====
+Mit dem Attributselektor können Attribute mit einem bestimmten Wert selektiert werden. Es gibt drei Möglichkeiten einen bestimmten Attributwert auszuwählen:
+
+| **Selektor** | **Bezecihnung** | **Auswahl** | **HTML-Beispiel** |
+| [attr=wert] | Attributselektor (Attributwert) | jedes Element, bei dem das Attribut attr den Wert wert enthält | <color #ed1c24><elem attr="**wert**"></color> |
+| [attr<color #ed1c24>**~**</color>=wert] | Attributselektor (Attributwert) mit Tilde (<color #ed1c24>~</color>) | jedes Element, bei dem im Attribut attr der Wert wert als allein stehendes Wort vorkommt | <color #ed1c24><elem attr="abc **wert** xyz"></color> |
+| [attr<color #ed1c24>**|**</color>=wert] | Attributselektor (Attributwert) mit Verkettungszeichen | jedes Element, bei dem im Attribut attr der Wert valx am Anfang als eine durch Bindestrich getrennte Zeichenfolge steht | <color #ed1c24><elem attr="**valx**-valy"></color> |
+
+**Beispiel 1**\\
+<code css>
+/* Styling für alle HTML-Elemente wo title
+   den Attributwert deprecated besitzt
+ */
+[title=deprecated] {
+  color: red;
+  text-decoration: line-through;
+}
+</code>
+
+**Beispiel 2**\\
+<code css>
+/* Styling von HTML-Elemente wo title im
+   Attributwert das Wort "bzzlab" enthält
+ */
+[title~=bzzlab] { 
+	font-weight: bold; 
+	color: red; 
+}
+</code>
+
+**Beispiel 3**\\
+<code css>
+/* Styling von HTML-Elemente wo hreflang
+   mit dem Attributwert de, gefolgt von 
+   einem Bindestrich, beginnt
+ */
+[hreflang|=de] { 
+	font-weight: bold;
+	color: red; 
+}
+</code>
+
+===== Attributselektor mit einem bestimmten Teilwert =====
+In CSS3 wurden Attributselektoren erweitert, um auch Teilwerte auszuwählen. Dazu gibt es drei Attributselektoren tabellarisch dargestellt:
+
+| **Selektor** | **Bezecihnung** | **Auswahl** | **HTML-Beispiel** |
+| [attr<color #ed1c24>**^**</color>=wert] | Attributselektor (Teilwert) | jedes Element, bei dem das Attribut attr mit der Textfolge wert anfängt | <color #ed1c24><elem attr="**wert**er"></color> |
+| [attr<color #ed1c24>**$**</color>=wert] | Attributselektor (Teilwert) | jedes Element, bei dem das Attribut attr mit der Textfolge wert endet | <color #ed1c24><elem attr="end**wert**"></color> |
+| [attr<color #ed1c24>*****</color>=wert] | Attributselektor (Teilwert)	| jedes Element, bei dem das Attribut attr mit der Textfolge wert enthält | <color #ed1c24><elem attr="be**wert**ung"></color> |
+
+**Beispiel 1**\\
+<code css>
+/* Styling alle a-Elemente wo das Attribut href mit http:// beginnt */
+a[href^="http://"] {
+ text-decoration: none;
+ border-bottom: 2px dotted red;
+ color: red;
+}
+</code>
+
+**Beispiel 2**\\
+<code css>
+/* Styling für a-Elemente wo das Attribut href mit .pdf endet */
+a[href$=".pdf"] {
+  text-decoration: none;
+  color: red;
+  padding: 1px;
+  border: 2px dotted red;
+}
+</code>
+
+**Beispiel 3**\\
+<code css>
+/* Styling für a-Elemente wo im Attribut href die Textfolge mydomain enthalten ist */
+a[href*=mydomain] { 
+  font-weight: bold; 
+  color: red; 
+}
+</code>

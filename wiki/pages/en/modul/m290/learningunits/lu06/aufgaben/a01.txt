@@ -1,0 +1,66 @@
+====== LU09.A01 - SQL- DCL:  Preparatory Work ======
+It is high time to mess a litte around with our new SQL powers, don't you think? So, let's try it directly on our Webstorm. 
+
+As the database administrator, we want to create a new user and only grant this user the necessary rights to operate the web application, which includes DML operations such as INSERT, UPDATE, DELETE, but not DDL operations such as CREATE or DROP of tables. After all, we don't want the webapplication take control over our database, are we?
+
+===== Requirements  =====
+  * Work type: individual
+  * Timeframe: 10 Minutes
+  * Means of aid: 
+      * only teaching materials, no websearch, no use of ai.
+      * Webstorm with connection to the MySQL-DB
+  * Expected result: Prepare working enviroment, according to the requirements below.
+
+===== Case studies / Assignments =====
+Before we spend elbow grease, we need to prepare our working enviroment. Meaning we need to prepare our computer for the assignments later.
+
+==== Task 1.1 ====
+**Login as root**: Login in from Webstorm to your database as //root// (sysdba = systemadministrator for the datababase) with your a //root-password//.
+
+==== Task 1.2 ====
+**New Database**: Create a new database named //myDatabase//. 
+
+  CREATE DATABASE myDatabase;
+
+==== Task 1.3 ====
+**use db**: Use that newly created db.
+
+  USE myDatabase;
+
+==== Task 1.4: ====
+** Create a test table**: Create a table //users// with 3 columns of your choice as a test table.
+
+  CREATE TABLE users (
+    user_id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(50) NOT NULL,
+    email VARCHAR(100) NOT NULL
+  );
+  
+==== Task 1.5: ====
+**Content data for testing:** Fill the table user with some test data: 
+  
+  INSERT INTO users (username, email) 
+  VALUES  ('john_doe', 'john.doe@example.com'),
+        ('jane_smith', 'jane.smith@example.com'),
+        ('michael_brown', 'michael.brown@example.com'),
+        ('sarah_johnson', 'sarah.johnson@example.com'),
+        ('chris_williams', 'chris.williams@example.com'),
+        ('anna_lee', 'anna.lee@example.com'),
+        ('david_kim', 'david.kim@example.com'), 
+        ('laura_clark', 'laura.clark@example.com'), 
+        ('jake_lewis', 'jake.lewis@example.com'),
+        ('emily_martinez', 'emily.martinez@example.com');
+
+===== Solution =====
+[[modul:m290:learningunits:lu06:loesungen:l01|Lösung]]
+
+
+===== Vocabulary =====
+^ English ^ German ^ 
+| explicitely | ausdrücklich |
+| assignment | Auftrag |
+| to revoke | widerrufen, aufheben |
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

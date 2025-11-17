@@ -1,0 +1,67 @@
+====== LU06c - Quellenangaben in der Berufsschule ======
+
+In der Berufsschule ist es wichtig, dass du die Quellen deiner Arbeit angibst. Dies verleiht deinen Aussagen Glaubwürdigkeit und zeigt, dass du deine Recherche gründlich durchgeführt hast. Im Folgenden werden die verschiedenen Arten von Quellen und deren korrekte Angabe erläutert.
+
+===== Quellenangabe =====
+
+==== Websites ====
+
+Für Websites werden meistens nur die ''URL'' und das ''Zugriffsdatum'' benötigt.
+
+<code>
+URL (Zugriffsdatum)
+</code>
+
+Das Zugriffsdatum ist relevant, da der Inhalt der Webseite sich ändern könnte.
+==== Literatur ====
+
+In der Berufsschule verwenden wir häufig den Chicago-Stil für Literaturangaben:
+
+<code>
+Nachname, Vorname. Jahr. "Titel des Buches." Ort: Verlag.
+</code>
+==== AI-ChatGPT ====
+
+Bei Verwendung von ChatGPT solltest du den ''Prompt'', über den du die Information erhalten hast, zusammen mit dem Dienst und dem ''Zugriffsdatum'' angeben.
+
+<code>
+"Verwendeter Prompt." "Sprachmodell" . Zugriffsdatum.
+
+Bsp:
+"Verwendeter Prompt." OpenAI GPT-4. Zugriffsdatum.
+
+</code>
+
+Den ''Prompt'' anzugeben ist wichtig, um den Kontext der Antwort zu verstehen.
+
+==== AI-Bilder ====
+
+
+Für Bilder, die mit künstlicher Intelligenz generiert wurden, sollte der ''Prompt'', der verwendet wurde, zusammen mit dem Dienst und dem ''Erstellungsdatum'' angegeben werden.
+
+<code>
+"Verwendeter Prompt." "Modell". Erstellungsdatum.
+
+Bsp.:
+"Verwendeter Prompt." OpenAI DALL-E. Erstellungsdatum.
+</code>
+
+===== Angabe im Dokument =====
+==== Einfache Aufgabe ====
+  - Klicken Sie auf die Stelle, an der Sie auf die Fuß- oder Endnote verweisen möchten.
+  - Klicken Sie auf der Registerkarte Verweise in der Gruppe Fußnote einfügen oder Endnote einfügen. {{ de:modul:m431:learningunits:lu06:fussnote.png?400 |}}
+  - Geben Sie die gewünschte Fuß- oder Endnote ein.
+  - Kehren Sie zu Ihrer Ausgangsposition im Dokument zurück, indem Sie auf die Zahl oder das Symbol am Anfang der Notiz doppelklicken.
+
+
+
+
+==== Dokumentation ====
+Falls Sie ein Literaturverzeichnis oder ein Abbildungsverzeichnis erstellen möchten, finden Sie hier die Tutorials:
+  * [[https://support.microsoft.com/de-de/office/ein-literaturverzeichnis-zitate-und-verweise-erstellen-17686589-4824-4940-9c69-342c289fa2a5|Literaturverzeichnis]]
+  * [[https://support.microsoft.com/de-de/office/einf%C3%BCgen-eines-abbildungsverzeichnisses-c5ea59c5-487c-4fb2-bd48-e34dd57f0ec1#:~:text=Klicken%20Sie%20in%20Ihrem%20Dokument,Sie%20auf%20Verweise%20%3E%20Abbildungsverzeichnis%20einf%C3%BCgen.&text=Sie%20k%C3%B6nnen%20das%20Format%20und,Klicken%20Sie%20auf%20OK.|Abbildungsverzeichnis]]
+
+
+<WRAP center round info 60%>
+Auch in der Berufsschule ist es wichtig, deine Quellen korrekt anzugeben. Dadurch zeigst du, dass deine Arbeit auf soliden Informationen basiert und du die Urheberschaft anderer respektierst.
+</WRAP>

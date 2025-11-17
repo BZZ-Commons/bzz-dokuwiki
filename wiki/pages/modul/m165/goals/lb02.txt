@@ -1,0 +1,69 @@
+======= Lernziele LB02 ======
+[[modul:m165:goals:lb01|Lernziele LU01 bis LU03]] und
+\\
+\\
+====== LU04a - Datenbank in MongoDB abfragen ======
+===== Ziele =====
+  -Ich kann eine MongoDB (MDB) nach Documents mit und ohne Parameter suchen.
+  -Ich kann die Anzahl Documents einer MDB mit und ohne Parameter ermitteln.
+  -Ich kann in einer MDB die Unique Values von Feldern ermitteln (Distinct).
+  -Ich kann eine MDB mit Conditional Operators abfragen.
+  -Ich kann mit Logical Operators mehrere Abfragen verbinden.
+  -Ich kann die Ausgabe der Felder bei einer Abfrage angeben.
+  -Ich kann eine MDB mit Regular Expression abfragen.
+  -Ich kann eventuelle Fehler selbstständig erkennen, Massnahmen vorschlagen und mind. eine Massnahme umsetzen.
+
+====== LU04b - fortgeschrittene Abfragen in MongoDB ======
+===== Ziele =====
+  -Ich kann in einer MDB nach Array-Elementen abfragen.
+  -Ich kann in einer MDB mit Arrays als Kriterium nach Arrays abfragen.
+  -Ich kann den ''$all'' Operator korrekt und sinnvoll anwenden
+  -Ich kann ungewünschte Felder in der Ausgabe mit ''$'' unterdrücken.
+  -Ich kann ungewünschte Array-Elemente in der Ausgabe mit ''$slice'' unterdrücken.
+  -Ich kann verschachtelte Objekte (nested objects) abfragen.
+  -Ich kann eine Custom functions (ähnlich einer Stored Procedure) zur Kapselung von komplexen Abfragen erstellen
+  -Ich kann eventuelle Fehler selbstständig erkennen, Massnahmen vorschlagen und mind. eine Massnahme umsetzen.
+\\
+====== LU05a - Datenbanken in MongoDB mutieren ======
+===== Ziele =====
+  -Ich kann in einer MDB Dokumente einfügen und löschen.
+  -Ich kann in einer MDB Dokumente ersetzen.
+  -Ich kann in eigenen Worten erklären, was ein Upsert ist.
+  -Ich kann eventuelle Fehler selbstständig erkennen, Massnahmen vorschlagen und mind. eine Massnahme umsetzen.
+\\
+====== LU05b - fortgeschrittene Mutationen in MongoDB ======
+===== Ziele =====
+  -Ich kann einzelne Felder in einer MDB mutieren.
+  -Ich kann die Update-Operatoren von MDB gezielt einsetzen.
+  -Ich kann eventuelle Fehler selbstständig erkennen, Massnahmen vorschlagen und mind. eine Massnahme umsetzen.
+\\
+====== LU06a - Callbacks Basics ======
+===== Ziele =====
+  -Ich kann den Begriff ''Callback'' in eigenen Worten erklären.
+  -Ich kann - soweit wie möglich - Fehlermeldungen interpretieren und eine mögliche Lösung zur deren Behebung vorschlagen.
+\\
+====== LU06b - JavaScript Module ======
+===== Ziele =====
+  -Ich kann in eigenen Worten erklären, was JavaScript (JS) Module sind und welchen Zweck sie erfüllen.
+  -Ich kann in eigenen Worten erklären, wie ich JS Module von Dritt-Anbietern importieren kann.
+  -Ich kann in eigenen Worten erklären, wie ich JS Module von Dritt-Anbietern importieren kann.
+  -Ich kann JS eigene Module und Module von Dritt-Anbietern im eigenen Programm fehlerfrei importieren.
+  -Ich kann - soweit wie möglich - Fehlermeldungen interpretieren und eine mögliche Lösung zur deren Behebung vorschlagen.
+\\
+====== LU06c - Anwendung mit MongoDB (1) ======
+===== Ziele =====
+  -Ich kann eine Datenbank-Verbindung (DB-Connection) von meiner App zu MongoDB erstellen und prüfen.
+  -Ich kann Daten in MongoDB aus meinem Nodes-Script (Read-Queries) und ausgeben.
+  -Ich kann - soweit wie möglich - Fehlermeldungen interpretieren und eine mögliche Lösung zur deren Behebung vorschlagen.
+\\
+====== LU06d - Anwendung mit MongoDB (2) ======
+===== Ziele =====
+  -Ich kann eine Datenbank-Verbindung (DB-Connection) von meiner App zu MongoDB erstellen und prüfen.
+  -Ich kann Daten in MongoDB aus meinem Nodes-Script (Read-Queries) und ausgeben.
+  -Ich kann - so weit wie möglich - Fehlermeldungen interpretieren und eine mögliche Lösung zur deren Behebung vorschlagen.
+\\
+====== LU06e - Anwendung mit MongoDB (3) ======
+===== Ziele =====
+  -Ich kann eine Datenbank-Verbindung (DB-Connection) von meiner App zu MongoDB erstellen und prüfen.
+  -Ich kann Daten in MongoDB aus meiner App abfragen (Read-Queries) und ausgeben.
+  -Ich kann - soweit wie möglich - Fehlermeldungen interpretieren und eine mögliche Lösung zur deren Behebung vorschlagen.

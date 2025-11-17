@@ -1,0 +1,23 @@
+====== LU05b - Official MySQL.com - Documentation  ======
+
+**Source**: [[https://dev.mysql.com/doc/refman/8.4/en/sql-statements.html| Official MySQL.com Reference]]
+
+===== Learning Objectives =====
+  - Know how to access to the learning material.
+  - Identification of the structure/chapters of the learning material.
+
+===== Overview =====
+In addition to the W3School SQL tutorial, the official MySQL website can also provide valuable information including some practical examples of the SQL commands. In contrast to W3-Schools, the descriptions on MySQL.com are more technical and contain more details about the SQL sommand, and are therefore more useful for developers than the W3School tutorial.
+
+{{:modul:m290:learningunits:lu12:theorie:mysql.com_reference.png?600|Official MySQL.COM Reference}}
+
+  * Chapter 15.1 is about how to manage tables (structure, data-types,...)
+  * Chapter 15.2 consists description of how to add and manipulate content of tables
+  * Chapter 15.7 is dedicated to user administration, i.e. the question of who has access to the database and what authorizations they have been granted.
+
+==== Vocabulary ====
+^English ^ Deutsch ^
+| to dedicate | gewidmet |
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

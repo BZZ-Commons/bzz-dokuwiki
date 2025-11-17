@@ -1,0 +1,93 @@
+====== LU07.A02 - Pflichtenheft vervollständigen ======
+
+<WRAP center round todo 60%>
+Auf Basis des vorgegebenen Lastenhefts für die "AlpenExperience WanderApp" soll ein detailliertes Pflichtenheft erstellt werden. Die Vorlage des Pflichtenhefts ist bereits vorgegeben, jedoch müssen spezifische Abschnitte, insbesondere **Zielbestimmung** und **Produktfunktionen**, noch vervollständigt werden.
+</WRAP>
+
+
+===== Detaillierte Aufgabenstellung =====
+
+Das Projekt "AlpenExperience WanderApp" befindet sich in der Planungsphase. Als nächster Schritt muss auf Basis des Lastenhefts ein Pflichtenheft erstellt werden. Ein Großteil des Pflichtenhefts ist bereits vorbereitet, jedoch sind einige Abschnitte noch unvollständig. Ihre Aufgabe ist es, diese Abschnitte basierend auf den Informationen aus dem Lastenheft zu vervollständigen.
+
+1. Lesen Sie das Lastenheft aus [[de:modul:m431:learningunits:lu07:aufgaben:lastenheft|Aufgabe LU07.A01]] nochmals sorgfältig durch.
+2. Nutzen Sie die vorgegebene Vorlage des Pflichtenhefts.
+3. Vervollständigen Sie die Abschnitte **Zielbestimmung** und **Produktfunktionen** gemäß den Anforderungen und Informationen aus dem Lastenheft.
+4. Achten Sie darauf, dass Ihre Beschreibungen präzise, vollständig und verständlich sind.
+
+==== Vorlage Pflichtenheft ====
+
+<WRAP center round box 90%>
+====== Pflichtenheft "AlpenExperience WanderApp" ======
+
+**1. Einleitung:**
+
+Die "AlpenExperience WanderApp" ist ein Projekt, das darauf abzielt, Wanderern in der Alpenregion ein hilfreiches Tool zur Hand zu geben. Das Pflichtenheft dient als technische und funktionale Spezifikation des Projekts und definiert im Detail die Anforderungen und deren Umsetzung, die zuvor im Lastenheft grob umrissen wurden.
+
+**2. Globale Analyse:**
+
+Die App soll in einem Umfeld eingesetzt werden, das von Naturfreunden, Wanderern und Bergsteigern dominiert wird. Die Hauptzielgruppe sind Personen im Alter von 18 bis 65 Jahren, die entweder gelegentlich oder regelmäßig in den Alpen wandern. Sie benötigen ein zuverlässiges Tool, um Routen zu planen, sich über Wetterbedingungen zu informieren und andere Wanderer in der Nähe zu finden.
+
+**3. Zielbestimmung:**
+
+''[Hier fehlen Informationen, basierend auf dem "Ziel des Projekts" im Lastenheft]''
+
+**4. Produkteinsatz:**
+
+Die App ist für den privaten Einsatz gedacht und soll auf mobilen Endgeräten wie Smartphones und Tablets laufen. Als Progressive Web App ([[https://de.wikipedia.org/wiki/Progressive_Web_App|PWA]]) ist sie plattformunabhängig und kann somit sowohl auf Android- als auch auf iOS-Geräten genutzt werden.
+
+**5. Produktübersicht:**
+
+Die "AlpenExperience WanderApp" besteht aus mehreren Modulen:
+
+  * Routenplaner
+  * Wettervorhersage
+  * Community-Forum
+  * Offline-Kartenmaterial
+  * Notruf-Funktion
+
+**6. Produktfunktionen:**
+
+''[Hier fehlen Informationen, basierend auf den "Hauptfunktionen der App" im Lastenheft]''
+
+**7. Produktdaten:**
+
+Die App soll folgende Daten verarbeiten und speichern können:
+
+  * Benutzerprofile (Name, E-Mail, Profilbild, bevorzugte Wanderrouten)
+  * Wanderrouten (Startpunkt, Endpunkt, Dauer, Schwierigkeitsgrad)
+  * Wetterdaten (Temperatur, Niederschlag, Windstärke, Vorhersage)
+  * Forenbeiträge (Text, Bilder, Datum, Autor)
+
+**8. Nicht-funktionale Anforderungen:**
+
+  * Performance: Die App sollte auch in Gebieten mit schlechter Netzabdeckung flüssig laufen.
+  * Sicherheit: Datenübertragung muss verschlüsselt sein; persönliche Daten der Benutzer müssen geschützt werden.
+  * Usability: Intuitive Benutzeroberfläche, die auch für unerfahrene Benutzer leicht verständlich ist.
+
+**9. Technische Umsetzung:**
+
+Als PWA wird die "AlpenExperience WanderApp" hauptsächlich mit Webtechnologien wie HTML, CSS und JavaScript realisiert. Für die Offline-Funktionalität und das Zwischenspeichern von Daten kommt der Service Worker zum Einsatz. Das Backend wird in Python geschrieben und verwendet eine SQL-Datenbank zur Datenhaltung.
+
+**10. Schnittstellen:**
+
+Die App wird mit externen Wetterdatendiensten über eine API kommunizieren. Außerdem wird eine Schnittstelle zu einem Notrufdienst für den Fall von Unfällen oder anderen Notfällen während des Wanderns integriert.
+
+
+</WRAP>
+
+
+===== Schrittweises Vorgehen: =====
+
+  - Analysieren Sie die Anforderungen und Ziele aus dem Lastenheft.
+  - Definieren Sie die Ziele des Projekts im Abschnitt **Zielbestimmung** des Pflichtenhefts.
+  - Listen Sie die Hauptfunktionen der App im Abschnitt **Produktfunktionen** auf und beschreiben Sie diese detailliert.
+  - Stellen Sie sicher, dass alle Anforderungen aus dem Lastenheft im Pflichtenheft berücksichtigt wurden.
+  - Überprüfen Sie Ihre Arbeit auf Konsistenz und Vollständigkeit.
+
+===== Abgabe =====
+
+Exportiert (Druckt) das Pflichtenheft als PDF-Datei.
+Ladet dieses Dokument hier in Moodle hoch.
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Kevin Maurizi

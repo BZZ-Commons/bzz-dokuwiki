@@ -1,0 +1,41 @@
+====== LU05.S02 - VUE Directives warm up ======
+
+{{ :en:modul:m291:learningunits:lu05:loesungen:lu05.s02.zip | ZipFile with the HTML code-solution}}
+
+===== Hints ====
+  * You can download the file and copy the content into the code area of the W3School on the left hand side of the coding window.
+  * You can execute the code by pressing the //run// button
+  * The result will be presented in the right hand side of the window.
+
+===== Assignments  ======
+** 1. box-colour change **
+  - Test the given script
+  - Create a new CSS-Class <color #ed1c24>blueBG</color> in analogy to <color #ffaec9>pinkBG</color>. Make sure to belabour the DIVs within the script part as well. 
+  - Execute your script by clicking the //run-Button//.
+  - Toggle for testing purpose  within your VUE-APP (in the script part) between the blue and pink.
+
+** 2. extended CSS**
+  - create another css-class //.extended//
+  - redifine the bgColor
+  - add additional values for color, font-size, font-family, ...
+  - Bind this new css-class //.extended// into the HTML-Dom (script-part)
+  - Execute your script by having it //run//.
+
+** 3. Save the results **
+  - Comment your results as you find fit within the html-comment area
+  - Save your solution within W3-Save-Area. 
+      * Therefore you might need a W3-School-Account. 
+      * Be advised to name you script accordingly, i.e. //lu.s02//. This will be helpful while preparing for the exams.
+
+===== Solutions =====
+
+Your result is supposed to look like displayed in the following image:
+
+{{:en:modul:m291:learningunits:lu05:loesungen:lu05.s02.png?1000| Code-Solution}}
+
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir
+
+  

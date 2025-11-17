@@ -1,0 +1,23 @@
+====== LU05.S04 - v-bind with css-class ======
+
+{{ :en:modul:m291:learningunits:lu05:loesungen:lu05.s04.zip | Codesolution}}
+
+===== Hints ====
+  * Download the file and copy the content into the code area of the W3School on the left hand side of the coding window.
+  * You can execute the code by pressing the //run// button
+  * The result will be presented in the right hand side of the window.
+
+===== Assignment ======
+  - If not already done, create a new directory //media// and save at least three photos of your choice in it. 
+  - Adjust the code to display this three photos. That means you need some new image-tags for this photos.
+  - Create withing the style area a second CSS class //#app2// with new values of your choice for the photo frame.
+  - Activate the css amendments by adjusting the template-code (div-element).
+  - Execute your script and check the correctness.
+  - Save your result either on your pc or in the W3Schools workspace (requires a W3Schoo profile).
+
+
+{{:en:modul:m291:learningunits:lu05:loesungen:lu05.s04.png?1200|Solution of the assigment}}
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir
+  

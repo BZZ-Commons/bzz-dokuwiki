@@ -1,0 +1,25 @@
+====== LU01c - Required software & how to install them ======
+Before we get down to the practical work, we need to install various software. The following list contains the required tools and the purpose of each package: 
+
+===== Software from M290 ====
+The main part of the exercises during the mdoul 291 is conducted within the codeeditor Webstorm, which we already have installed during the modul 290. 
+
+^ Software ^ Description ^ Download-Source ^
+| Webstorm | Editor Code editor in order to program the source code such for database tables and server | [[https://www.jetbrains.com/webstorm/|Webstorm]] | 
+| MySQL | Database, storage and management of data. Please note, that the MySQL database is may be required in the second half of the modul and will therefore be topic in due course. | [[https://dev.mysql.com/downloads/|MySQL]] |
+| Vue.js | Vue.js locally installed. It is also possible to receive it from a CDN (Content Delivery Network). |[[https://vuejs.org/ | vuejs.org]] | 
+
+===== How to open a Vue-project in Webstorm =====
+{{ :en:modul:m291:learningunits:lu01:how_to_create_vue_js_projects_in_jetbrains_webstorm_ide.mp4 | How to create a vue project in Webstorm}}
+
+===== Vocabulary =====
+^ English ^ German ^ 
+| required | erforderlich |
+| various | verschiedene |
+| storage | Lagerung |
+| within | innerhalb |
+| require | benötigen | 
+| in due course | zu gegebener Zeit |
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

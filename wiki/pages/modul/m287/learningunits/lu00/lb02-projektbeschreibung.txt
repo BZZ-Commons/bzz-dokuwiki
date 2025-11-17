@@ -1,0 +1,170 @@
+====== LU00g - LB02 Projektbeschreibung ======
+===== Projekt 1: Kochrezepte-Plattform =====
+
+**Beschreibung:**  
+Auf dieser Plattform sollen Nutzer*innen eine Vielzahl von Rezepten entdecken, speichern und nachkochen können. Die Website richtet sich an Hobbyköch*innen und Feinschmecker*innen, die gerne neue Gerichte ausprobieren. Neben der klassischen Darstellung von Rezepten soll die Seite auch durch multimediale Inhalte, wie Videos oder Bildanleitungen, zum Kochen motivieren. Das Design soll frisch, zugänglich und strukturiert sein, sodass Besucher*innen sich schnell zurechtfinden.
+
+**Use Cases:**  
+  - Nutzer*innen können nach Kategorien (z. B. Vorspeise, Hauptgericht, Dessert) filtern und passende Rezepte anzeigen lassen.  
+  - Jede Rezeptseite zeigt ein ansprechendes Bild, eine Zutatenliste, eine Schritt-für-Schritt-Anleitung sowie ein eingebettetes Kochvideo.  
+  - Die Startseite präsentiert ausgewählte "Rezept des Tages"-Empfehlungen in einem Carousel (Bootstrap Carousel-Komponente).  
+  - Ein responsives Grid zeigt Rezeptkarten mit kurzen Teasern und einem "Mehr erfahren"-Button (z. B. Bootstrap Cards).  
+  - Eine Kontaktseite ermöglicht Nutzer*innen das Einsenden eigener Rezepte inklusive Bild-Upload.
+
+----
+
+===== Projekt 2: Portfolio für eine Künstlerin =====
+
+**Beschreibung:**  
+Die Website zeigt das Portfolio einer Künstlerin, die Malerei, Illustration oder digitale Kunst betreibt. Besucher*innen sollen ihre Werke entdecken, mehr über die Künstlerin erfahren und bei Interesse eine Anfrage stellen können. Die Seite legt besonderen Wert auf die visuelle Darstellung und eine minimalistische Gestaltung, die die Kunst in den Vordergrund stellt.
+
+**Use Cases:**  
+  - Eine Galerie zeigt Bilder der Werke, die beim Anklicken in einer Lightbox grösser dargestellt werden (z. B. Bootstrap Modal).  
+  - Eine Über-mich-Seite stellt die Künstlerin mit Foto, Biografie und künstlerischer Laufbahn vor.  
+  - Ein Bereich für aktuelle oder vergangene Ausstellungen mit Veranstaltungsdaten und Flyern als Download.  
+  - Kontaktformular mit Betreffauswahl (Anfrage für Ausstellung, Kaufanfrage, Presse).  
+  - Ein Blog-Bereich, in dem die Künstlerin Einblicke in ihren Schaffensprozess gibt (z. B. mit Bootstrap Accordion für Artikelübersicht).
+
+----
+
+===== Projekt 3: Lokales Café =====
+
+**Beschreibung:**  
+Die Website stellt ein charmantes, lokal verankertes Café vor. Ziel ist es, die Atmosphäre des Ortes digital einzufangen und Informationen zu Angebot, Lage und Öffnungszeiten bereitzustellen. Die Seite soll einladend wirken, Appetit machen und zur Kontaktaufnahme oder Reservierung animieren.
+
+**Use Cases:**  
+  - Speisekarte mit Tagesangeboten, dargestellt über stylische Karten-Elemente (z. B. Bootstrap Cards).  
+  - Startseite mit Hero-Bild des Cafés und einer kurzen Vorstellung (z. B. Jumbotron oder Grid-Layout).  
+  - Galerie mit Bildern vom Interieur, den Speisen und Getränken.  
+  - Google Maps Einbettung mit Anfahrtsbeschreibung.  
+  - Kontaktformular für Reservationen und Anfragen (z. B. mit Bootstrap Form Controls).
+
+----
+
+===== Projekt 4: Musikfestival =====
+
+**Beschreibung:**  
+Eine Website für ein mehrtägiges Musikfestival mit verschiedenen Bühnen, Bands, Foodtrucks und Rahmenprogramm. Sie informiert Besucher*innen umfassend und emotionalisiert durch Bilder, Trailer und Erfahrungsberichte. Auch organisatorische Aspekte wie Anreise oder Sicherheit werden behandelt.
+
+**Use Cases:**  
+  - Vorstellung des Line-ups mit Bandinfos und Spielzeiten pro Tag (z. B. mit Bootstrap Tabs oder Accordion).  
+  - Interaktive Festival-Karte mit Standorten von Bühnen, WC, Foodtrucks etc.  
+  - Video-Trailer und Aftermovies vergangener Festivals (z. B. eingebettetes YouTube-Video im Modal).  
+  - Ticketinfos mit Preisstaffelung, Link zur Bestellung und Rabatthinweisen.  
+  - Festivalguide als Download-PDF.
+
+----
+
+===== Projekt 5: Tierschutzverein =====
+
+**Beschreibung:**  
+Die Website stellt einen Tierschutzverein vor, der Tiere rettet, vermittelt und zu artgerechter Haltung aufklärt. Im Zentrum stehen die Tiere und ihre Geschichten. Neben Informationen zum Verein gibt es konkrete Aufrufe zur Adoption oder Spenden.
+
+**Use Cases:**  
+  - Vermittlungsseite mit Tierprofilen (Bild, Beschreibung, Verträglichkeit, Vermittlungsstatus; z. B. als Cards angelegt).  
+  - Vorstellung des Vereins mit Teamfotos und Jahresrückblick.  
+  - Spenden-Seite mit Formular und verschiedenen Unterstützungsoptionen (z. B. mit Bootstrap Input-Groups).  
+  - Erfahrungsberichte erfolgreicher Adoptionen.  
+  - Veranstaltungskalender für Infotage und Aktionen (z. B. als Table-Komponente).
+
+----
+
+===== Projekt 6: Fitness- und Gesundheits-Blog =====
+
+**Beschreibung:**  
+Die Website bietet fundierte Inhalte rund um Fitness, gesunde Ernährung, mentale Gesundheit und Bewegung. Zielgruppe sind gesundheitsbewusste Menschen, die sich regelmässig informieren und motivieren lassen wollen. Neben Blogartikeln sollen auch interaktive Inhalte wie Videos oder Challenges integriert sein.
+
+**Use Cases:**  
+  - Startseite mit neuesten Blogbeiträgen und motivierenden Zitaten (z. B. mit Bootstrap Card-Gruppen).  
+  - Artikel zu verschiedenen Themenkategorien mit Tags und Suchfunktion.  
+  - Eingebettete Workout-Videos oder Podcasts (z. B. über Bootstrap Responsive Embed).  
+  - Monats-Challenge mit Fortschrittsanzeige oder Downloadplan.  
+  - Kontaktseite für Fragen, Feedback oder Themenvorschläge (z. B. mit Bootstrap Formularelementen).
+
+----
+
+===== Projekt 7: Mode-Startup =====
+
+**Beschreibung:**  
+Diese Website dient einem jungen Modeunternehmen zur Vorstellung seiner Marke und Kollektionen. Im Vordergrund stehen Design, Trends und Nachhaltigkeit. Die Seite soll modern, dynamisch und trendbewusst gestaltet sein.
+
+**Use Cases:**  
+  - Kollektion präsentieren: Slideshow mit Looks und Beschreibung der Idee dahinter (z. B. mit Bootstrap Carousel).  
+  - Designer-Team vorstellen: Fotos, Kurzporträts und Statements.  
+  - Style-Beratung: Artikel oder Quiz zur Findung des passenden Stils (z. B. mit Bootstrap Cards und Buttons).  
+  - Blog mit Neuigkeiten zur Marke und Modetrends.  
+  - Kontaktseite mit Anfragemöglichkeit für Kooperationen oder Presse (z. B. Modal mit Kontaktformular).
+
+----
+
+===== Projekt 8: Tourismus =====
+
+**Beschreibung:**  
+Die Website führt Besucher*innen in eine attraktive Tourismusregion ein. Sie stellt Sehenswürdigkeiten, Aktivitäten, Unterkünfte und regionale Besonderheiten vor. Ziel ist es, Lust aufs Reisen zu machen und konkrete Informationen bereitzustellen.
+
+**Use Cases:**  
+  - Interaktive Karte mit Hotspots und Kurzinfos zu jedem Ort.  
+  - Themenspezifische Erlebniswelten (z. B. Natur, Kultur, Familie).  
+  - Galerie mit Impressionen der Region (z. B. im Card-Layout mit Bootstrap Grid).  
+  - Downloadbare PDF-Broschüre mit Reiserouten.  
+  - Kontaktformular für individuelle Fragen oder Gruppenanfragen (z. B. Bootstrap Form mit Validierung).
+
+----
+
+===== Projekt 9: News Plattform =====
+
+**Beschreibung:**  
+Diese Plattform bietet aktuelle Nachrichten zu verschiedenen Themenfeldern. Sie soll eine klare Struktur, leichte Navigation und multimediale Inhalte haben. Zielgruppe sind internetaffine Nutzer*innen, die sich regelmässig über das Tagesgeschehen informieren wollen.
+
+**Use Cases:**  
+  - Artikelvorschau auf Startseite mit Kategorie-Labels (z. B. als Cards mit Badges in Bootstrap).  
+  - Detaillierte Artikelseiten mit eingebetteten Medien.  
+  - Filterfunktion nach Datum, Thema oder Autor (z. B. mit Dropdowns und Selects).  
+  - Kommentare oder Reaktionen zu Beiträgen (optional).  
+  - Newsletter-Anmeldung für wöchentliche Zusammenfassungen (z. B. via Bootstrap Input Group mit Button).
+
+----
+
+===== Projekt 10: Online Museum =====
+
+**Beschreibung:**  
+Das Online Museum bietet Besucher*innen einen digitalen Zugang zu einer Sammlung von Exponaten, Ausstellungen und Hintergrundwissen. Ziel ist es, Bildung und Kultur niederschwellig zugänglich zu machen. Auch interaktive Formate sollen integriert werden.
+
+**Use Cases:**  
+  - Virtuelle Ausstellung mit interaktivem Rundgang.  
+  - Detailseiten für Exponate mit Bild, Text, Audioerklärung (z. B. mit Cards und Tabs).  
+  - Kalender für kommende Online-Events oder Workshops.  
+  - Downloadbereich für Arbeitsblätter oder Zusatzmaterial (z. B. über Bootstrap List-Groups).  
+  - Feedbackformular zur Verbesserung des digitalen Angebots.
+
+----
+
+===== Projekt 11: Indie-Games =====
+
+**Beschreibung:**  
+Diese Website widmet sich der Vorstellung und Promotion unabhängiger Computerspiele. Entwickler*innen präsentieren hier ihre Spiele mit Trailern, Screenshots und Infos zur Entwicklung. Die Plattform dient auch als Sprungbrett für Crowdfunding oder Community-Aufbau.
+
+**Use Cases:**  
+  - Spieleseiten mit Beschreibung, Screenshots, Trailer (z. B. mit Cards und Carousel für Screenshots).  
+  - Entwicklerporträts mit Biografie und Projektinfos.  
+  - Blog über Entwicklungsfortschritte und technische Hintergründe.  
+  - Kommentarfunktion für Feedback und Community-Austausch.  
+  - Bereich mit Download-Demos oder Links zu Plattformen (z. B. mit Badges und Buttons in Bootstrap).
+
+----
+
+===== Projekt 12: Architekturbüro =====
+
+**Beschreibung:**  
+Eine professionelle Website für ein Architekturbüro, die realisierte Projekte, Designphilosophie und Team vorstellt. Die Gestaltung soll klar, elegant und technisch anspruchsvoll wirken.
+
+**Use Cases:**  
+  - Projektgalerie mit Vorher-Nachher-Vergleichen (z. B. mit Bootstrap Grid oder Carousel).  
+  - Detaillierte Projektseiten mit Grundrissen, Fotos und Beschreibung.  
+  - Teamseite mit Kurzvorstellungen der Architekt*innen (z. B. als Cards mit Bildern und Text).  
+  - Newsbereich mit aktuellen Bauprojekten oder Wettbewerbsteilnahmen.  
+  - Kontaktformular mit Möglichkeit zur Projektanfrage oder Bewerbungen (z. B. mit Validierung und Input-Groups).
+
+----
+
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Kamil Demirci

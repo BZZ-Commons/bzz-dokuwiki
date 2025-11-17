@@ -1,0 +1,13 @@
+====== User Story 1: Darstellung des Speiseplans ======
+
+
+Als interessierter Benutzer \\
+möchte ich den Speiseplan der nächsten Tage sehen können, \\
+damit ich im Voraus planen kann, was ich essen möchte.
+
+===== Akzeptanzkriterien: =====
+
+  * Der Speiseplan zeigt mindestens die nächsten 5 Werktage.
+  * Zu jedem Gericht werden Name, Beschreibung, Preis, Allergene und Hinweise (z. B. vegetarisch/vegan) angezeigt.
+  * Der Speiseplan ist tagesweise strukturiert.
+  * Die Informationen sind auch ohne Login und Bestellung einsehbar.

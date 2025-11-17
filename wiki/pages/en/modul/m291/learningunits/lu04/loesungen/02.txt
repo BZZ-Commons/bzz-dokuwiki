@@ -1,0 +1,15 @@
+====== LU04.S02 - Examples for library-functions ======
+
+{{:en:modul:m291:learningunits:lu04:loesungen:lu04.s02_elemente_einer_library_loesung.png?800|Solution }}
+
+  - **freeShipmentAmount = calcFreeShipment(country)**: Calculates the free shipment amount regarding the country
+  - **shoppingCartItems = sumShoppingItems(customerNo, sessionNo):** Only the figure is relevant
+  - **shoppingCartItems = sumShoppingItems(customerNo, sessionNo):** differently presented (format)
+  - **currentShipmentCost = calcShipmentCost(CustomerNo, sessionNo, freeShipmentAmount):** Only relevant under the free-shipment limit
+  - **shippingDate = calcShippingDate(currentDate, availabilityTime):** regarding Swiss date format
+  - **shoppingCartSum = sumShoopingPrices(customerNo, sessionNo):** Sum of the current shopping cart value, regarding the Swiss VAT
+  - **currentPrice = calcActualPrice(price, discount):** If discount > 0, textcolour is red
+  - **priceDiscount = calcDiscount(originalPrice, currentPrice):** Calculates the discount as 
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

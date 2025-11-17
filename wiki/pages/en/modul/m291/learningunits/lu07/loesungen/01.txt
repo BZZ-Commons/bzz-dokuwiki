@@ -1,0 +1,47 @@
+====== LU07.S01 - Methods simple - Introductory example ======
+
+===== Assignment 1: Preparatory work =====
+  * 1.1: Establish in your webstorm a new directory and name it **07_methods**
+  * 1.2: Transfer the above provided script to this new directory.
+  * 1.3: Make sure that you have the title <h1> correctly named: **lu07.s01.html**
+  * 1.4: Execute the script. As a result, in the right window there will be a green rectangle. After clicking on that green area there  should be a message-box with the content **Hello World**
+
+===== Assignment 2: resetText =====
+  * 2.1: Add a method **resetText**, that sets the content of the variable //text// to '' (empties the content)
+  * 2.2: Use this new method //resetText// within a separate //div//
+  * 2.3: The text //Hello world// appears, when clicking the first area, and disapears when pushing the second area.
+
+===== Assignment 3: increment by 1 =====
+  * 3.1: Add a new variable //cnt1// and initialize it with 0.
+  * 3.2: Add a method **increment1**, that increments the //cnt1-variable// with step-size 1
+  * 3.3: Create in the HTML-area a //div//, which increments the //cnt1-variable// by making use of the //increment1-method//
+
+===== Assignment 4: increment by 2 =====
+  * 4.1: Add a new variable //cnt2// and initialize it with 0.
+  * 4.2: Add a method **increment2**, that increments the //cnt2-variable// with step-size 2
+  * 4.3: Create in the HTML-area a //div//, which increments the //cnt2-variable// by making use of the //increment2-method//
+ 
+===== Assignment 5: cascading use of methods =====
+  * A5.1: Create a new method **alltogether** which, in turn, uses the methods //setText, increment1, increment2// 
+  * A5.2: Add a variable //text2// to store the combined content of the variables text, cnt1 and cnt2
+  * A5.3: Create in the HTML-area a //div//, in which the content of the variable //text2// is displayed
+
+===== Assignment 6: Reset all variables =====
+  * A6.1: Define a final method //resetAll// which resets the content off all variables (text1, cnt1, cnt2, text2)
+  * A6.2: Create in the HTML-area a //div//, that resets all variables when clicked.
+
+===== Solution =====
+
+{{:en:modul:m291:learningunits:lu07:loesungen:lu07.s01.png?1000|}}
+
+{{ :en:modul:m291:learningunits:lu07:loesungen:lu07.s01.zip | Source-code of the solution}}
+
+
+===== Vocabulary =====
+^ English ^ German ^ 
+| ... | ... |
+
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

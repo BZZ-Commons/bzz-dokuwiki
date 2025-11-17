@@ -1,0 +1,43 @@
+====== LU08.S04 - DELETE ======
+
+===== A: Delete of one row =====
+Sarah Johnson has left the company and is therefore to be deleted from the table. Formulate the according DML DELETE statement.
+
+  DELETE FROM employees
+  WHERE name = 'Sarah'
+  AND surname = 'Johnson';
+
+Alternatively, the commands is likewise possible with using the employee_id.
+
+  DELETE FROM employees
+  WHERE employee_id = 4;
+  
+{{:modul:m290:learningunits:lu07:aufgaben:lu07.s04a.png?600|}}
+
+===== B: Delete of multiple rows =====
+It is common, that we retire when reaching a certain age. Remove all date from individuals who are older than 60 from the employees table.
+
+Hint: Before performing the deletion, make sure that you got the right resultset.
+
+Content of the table before deleting the concerned resultset:
+
+{{:modul:m290:learningunits:lu07:aufgaben:lu07.s04b.png?600|}}
+
+  SELECT * FROM employees
+  WHERE birthdate < '1964-01-01';
+
+  DELETE FROM employees
+  WHERE birthdate < '1964-01-01';
+  
+The result is visible in the next image below:
+
+{{:modul:m290:learningunits:lu07:aufgaben:lu07.s04c.png?600|}}
+
+===== Vocabulary =====
+^ English ^ German ^ 
+| ... | ... |
+
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

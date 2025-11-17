@@ -1,0 +1,35 @@
+====== LU07.S04 - Methods with arguments - Animal-count ======
+
+===== Assignment A - 3' ======
+  * A01: Test the code example above which was provided to you. Describe the behaviour of the script using HTML comments.
+  * A02: Check to basic function of the script. When clicking the tiger-image the a message which greets the tiger should appear in the green field below the image. 
+  * A03: Make sure that you have the title <h1> and have correctly named the file: **lu07.s03.html**
+  * A04: Safe it.
+
+===== Assignment B: Extend the argument list - 10' =====
+  * B01: Kindly as we are, we not only want to greet the tiger, but alse show a title to the image.
+  * B02: There must be a message commencef as well, "you look terrifying!!
+  * B03: Note: The signature of the method must therefore be extended by additional arguments: title and message.
+  * 
+===== Assignment C: Add more animals to greet - 7' =====
+  * C01: As we were able to greet the tiger properly, we are seeking new challanges. Add two more animals to be greeted with the corresponding title and message.
+
+===== Solution =====
+{{:en:modul:m291:learningunits:lu07:loesungen:lu07.s04.zip| Lsung }}
+{{:en:modul:m291:learningunits:lu07:loesungen:lu07.s04_1.png?1200 | Solution part 1 }}
+
+{{:en:modul:m291:learningunits:lu07:loesungen:lu07.s04_2.png?1200 | Solution part 2 }}
+
+{{:en:modul:m291:learningunits:lu07:loesungen:lu07.s04_3.png?1200 | Solution part 3 }}
+
+
+
+
+
+===== Vocabulary =====
+^ English ^ German ^ 
+| ... | ... |
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

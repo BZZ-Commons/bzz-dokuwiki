@@ -1,0 +1,38 @@
+====== LU07.A05 - Mood measurement, realized with methods======
+
+===== Prerequisites  =====
+  * Work type: Individual
+  * Means of aid: only teaching materials, no websearch, no use of ai.
+  * Timeframe: 20 Minutes
+  * Expected result: a vue application, that reflects the mood of the user.
+===== Source =====
+  * {{ :en:modul:m291:learningunits:lu06:lu06.s04.zip | Take the solution LU06.S04 and adjust it as required. }}
+
+===== Assignments  ======
+Realize the assignment **LU07.A05 - Events - Mood measuremen** by using methods:
+  - Display a heading: **Choose Your Mood**.
+  - Add three buttons, each representing a different mood, e.g:
+    * 😊 Happy
+    * 😢 Sad
+    * 😠 Angry
+    * 😢 Desperate
+    * 😕 Confused
+    * 😅 Glad
+  - Use the v-on directive to update a data property called mood based on the button clicked.
+  - Display a custom message below the buttons that changes based on the selected mood.
+  - When no mood is selected, show a default message prompting the user to pick one.
+
+===== Hint =====
+  - When clicking a button, just pass a number to the method with the messages.
+  - In that methods a if (selction) checks the content of the argument and displays the corresponding message. 
+
+===== Solution =====
+[[en:modul:m291:learningunits:lu07:loesungen:05|Lösung]]
+
+===== Vocabulary =====
+^ English ^ German ^ 
+| ... | ... |
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

@@ -1,0 +1,33 @@
+====== LU06.A06 - Events - food counting ======
+
+===== Prerequisites  =====
+  * Work type: Individual
+  * Means of aid: only teaching materials, no websearch, no use of ai.
+  * Timeframe: 15 Minutes
+  * Expected result: a vue script, that counts how many times a food was clicked and shows the result in a list.
+===== Source =====
+  * [[https://www.w3schools.com/vue/tryit.php?filename=tryvue_v-on_changeFoodImg|Source-code for the assignment]]
+
+===== Assignments  ======
+
+  - Test the code example provided to you: When moving the mouse over a list food elements each element must change the backgroundcolour to grey. After moving the mouse away from the food, the background colour must turn back to white.
+  - Make sure that you have the title <h1>  and have the correctl filename: **lu06.s06.html**  
+  - Additionally to the current features, we also want to count how many times each food was moved over by the mouse. This count must be shown after each food element. 
+  - And finally, count as well how many time the foods were clicked in total. 
+  - Save your result in Webstorm, too. 
+  - In order to display the food-images, you need to download them and save it in your media-directory. 
+  - Needless to say, that the image-path must be adjusted, e.g. "../media/image_burrito.svg"
+  - The result must look as following:
+
+{{:en:modul:m291:learningunits:lu06:aufgaben:lu06.a06.png?400|Result of the assignment}}
+
+===== Solution =====
+[[en:modul:m291:learningunits:lu06:loesungen:06|Lösung]]
+
+===== Vocabulary =====
+^ English ^ German ^ 
+| ... | ...|
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

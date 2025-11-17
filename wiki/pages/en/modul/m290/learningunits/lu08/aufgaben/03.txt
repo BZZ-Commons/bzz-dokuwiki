@@ -1,0 +1,25 @@
+====== LU10.A02 - Building a basic web server with node ======
+
+===== Requirements  =====
+  * Work type: Individual
+  * Timeframe: 30 Minutes
+  * Means of aid: 
+      * Only teaching materials, no websearch, no use of ai.
+      * Webstorm Codeeditor
+  * Expected result: 
+    * A basic web server, that can send data to the browser
+
+===== Assignments =====
+As we all know, a server provides data to users request. Let us build together a webserver, that can display an array of data on the browser. For that follow the instructions on the video tutorial.
+
+{{ :modul:m290:learningunits:lu08:aufgaben:build_a_basic_web_server_with_node_js.mp4 | Build a basic web server with node.js}}
+
+===== Solution =====
+[[modul:m290:learningunits:lu08:loesungen:l03|Lösung]]
+
+===== Vocabulary =====
+^ English ^ German ^ 
+| ... | ... |
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

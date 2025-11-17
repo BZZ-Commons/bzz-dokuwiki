@@ -1,0 +1,30 @@
+===== LU01.A01 - Aufbau einer URL =====
+
+===== Aufgabe 1: Bestandteile von URL's ermitteln ===== 
+
+==== Ausgangslage ====
+Nun sind folgende URL's gegeben:
+
+  - http://www.mydomain.com/bilder/foto.jpg
+  - ftp://www.example.ch/2018/audio/meinemusik.mp3
+
+==== Aufgabenstellung ====
+  - Ermitteln Sie sämtliche Bestandteile der URL's.
+
+===== Aufgabe 2: Korrekte URL ermitteln =====
+
+==== Ausgangslage ====
+Gegeben ist folgende URL:
+
+<code>http://www.erlebnisse.ch/2018/reisen/schweiz/index.html</code>
+
+Im index.html wird das <color #ed1c24><img></color>-Element verwendet.
+
+==== Aufgabenstellung ====
+Wo befindet sich das Bild - als komplette URL angegeben - wenn das src-Attribute wie folgt lautet:
+
+  - <color #ed1c24><img src="./bild1.jpg" alt="irgendein Bild"/></color>
+  - <color #ed1c24><img src="../bild2.jpg" alt="irgendein Bild"/></color>
+  - <color #ed1c24><img src="../../bild3.jpg" alt="irgendein Bild"/></color>
+  - <color #ed1c24><img src="/bild4.jpg" alt="irgendein Bild"/></color>
+

@@ -1,0 +1,65 @@
+====== Vorbereitung ======
+===== Dateien und Ordner =====
+  - Erstellen Sie einen Ordner ''c:\tempM122\vmware\''
+  - Laden Sie das Zip-Archiv herunter: {{ :modul:m122:m122lb02_2025.zip |}}
+  - Entpacken Sie das Zip-Archiv in den Ordner ''c:\tempM122\vmware\''
+
+Wenn Sie in **Windows Powershell** ''dir -s c:\tempM122\vmware'' eingeben, müssten Sie folgendes sehen:
+<code>
+PS C:\> dir -s c:\tempM122\vmware
+
+    Verzeichnis: C:\tempM122\vmware
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        16.01.2025     09:51                vmCopies
+d-----        16.01.2025     09:51                vmTemplates
+
+    Verzeichnis: C:\tempM122\vmware\vmCopies
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        15.01.2025     08:10                vmLinux
+d-----        15.01.2025     08:10                vmWindows
+
+    Verzeichnis: C:\tempM122\vmware\vmTemplates
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        16.01.2025     09:51                vmLinux
+d-----        16.01.2025     09:51                vmWindows
+
+    Verzeichnis: C:\tempM122\vmware\vmTemplates\vmLinux
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        31.10.2022     10:38           3875 vmLinux-s001.vmdk
+-a----        31.10.2022     10:38           3875 vmLinux-s002.vmdk
+-a----        31.10.2022     10:38           3875 vmLinux-s003.vmdk
+-a----        08.10.2022     10:26           8684 vmLinux.nvram
+-a----        31.10.2022     10:40            601 vmLinux.vmdk
+-a----        08.10.2022     10:26              0 vmLinux.vmsd
+-a----        31.10.2022     10:35           2980 vmLinux.vmx
+-a----        31.10.2022     10:40            262 vmLinux.vmxf
+-a----        08.10.2022     10:26         254415 vmware-1.log
+-a----        08.10.2022     10:26         245784 vmware.log
+
+    Verzeichnis: C:\tempM122\vmware\vmTemplates\vmWindows
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        08.10.2022     10:26         254415 vmware-1.log
+-a----        08.10.2022     10:26         245784 vmware.log
+-a----        31.10.2022     10:38           3875 vmWindows-s001.vmdk
+-a----        31.10.2022     10:38           3875 vmWindows-s002.vmdk
+-a----        31.10.2022     10:38           3875 vmWindows-s003.vmdk
+-a----        08.10.2022     10:26           8684 vmWindows.nvram
+-a----        31.10.2022     10:49            607 vmWindows.vmdk
+-a----        08.10.2022     10:26              0 vmWindows.vmsd
+-a----        31.10.2022     10:49           2994 vmWindows.vmx
+-a----        08.10.2022     10:26            270 vmWindows.vmxf
+</code>
+
+
+===== GitHub Classroom Assignment =====
+  - Akzeptieren Sie das [[https://classroom.github.com/a/0Frun3l9|GitHub Classroom Assignment]]
+  - Klonen Sie Ihr Repository in PyCharm.
+  - Prüfen Sie, ob das Projekt korrekt angelegt wurde:
+    - Ordner ''venv'' vorhanden
+    - ''(venv)'' im Eingabeprompt des Terminals
+    - Sie können das Script starten

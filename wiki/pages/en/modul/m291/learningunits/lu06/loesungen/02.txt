@@ -1,0 +1,29 @@
+====== LU06.S02 - Events - increment and decrement ======
+
+===== Source-code of the solution =====
+{{:en:modul:m291:learningunits:lu06:loesungen:lu06.s02.zip | Solution of the assignment}}
+
+===== Assignments  ======
+  - Test the code example provided to you. Describe the behaviour of the script using HTML comments.
+  - Make sure that you have the title <h1> correctly named: **lu06.s02.html**
+  - Change the caption of the //Moose-Button// to **+ 1 Moose **.
+  - Similiarily to the //Moose-Button// add another button **-1 Moose**which counts down.
+  - Add another 2 buttons **+5 Moose** and **-5 Moose** which count up respectively down by **step-size 5**
+  - Add another 2 buttons **+10 Moose** and **-10 Moose** which count up respectively down by **step-size 10**  
+  - Add another button **Reset** which resets the **counter to 0**.
+  - Save your script in webstorm in the directory **06_events** and adjust the path to the image.
+  - Test your script for correctness
+
+{{:en:modul:m291:learningunits:lu06:loesungen:lu06.s02_1.png?1000| Solution executed in the W3School-Sandbox}}
+
+{{:en:modul:m291:learningunits:lu06:loesungen:lu06.s02_2.png?1000| Solution executed in the Webstorm}}
+
+
+
+===== Vocabulary =====
+^ English ^ German ^ 
+| step-size| Schrittweite|
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

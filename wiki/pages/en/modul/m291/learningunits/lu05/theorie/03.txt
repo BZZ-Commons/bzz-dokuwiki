@@ -1,0 +1,74 @@
+====== LU05c - v-if ======
+
+===== Learning ojectives =====
+  - I can explain what the directive v-if fulfil within the DOM.
+  - I can name the three v-if variants that are possible in principle. 
+  - I can apply v-if to specific examples.
+
+===== Sources =====
+  * [[https://www.w3schools.com/vue/vue_v-if.php | W3School - v-if]]
+  * [[https://vuejs.org/guide/essentials/conditional.html | Vue.org - v-if ]]
+ 
+===== Introduction ====
+The v-if directive in Vue.js is used to conditionally render elements in the DOM. If the condition provided in the //v-if// evaluates to true, the element is rendered; otherwise, it is removed from the DOM entirely. This makes v-if a powerful tool for controlling the visibility of elements based on dynamic data.
+
+  <div id="app">
+    <button @click="toggleMessage">Toggle Message</button>
+    <p v-if="isVisible">Hello, Vue.js!</p>
+  </div>
+  <script>
+    new Vue({
+      el: '#app',
+      data: {
+        isVisible: true
+      },
+      methods: {
+        toggleMessage() { this.isVisible = !this.isVisible;
+      }
+    }
+    });
+  </script>
+
+In this example above, the paragraph element (<p>) is conditionally displayed based on the value of the //isVisible// data property. Clicking the button toggles the message's visibility.
+
+===== Variants =====
+There are basically three variants of //v-if//: 
+  - v-if
+  - v-else-if
+  - v-else
+
+==== 1. v-if ====
+  * Used to conditionally render an element based on whether the condition evaluates to //true//.
+  * If the condition is //false//, the element is completely removed from the DOM.
+
+**Example:**
+  
+  <p v-if="isVisible">This is visible when isVisible is true.</p>
+  
+==== 2. v-else-if ====
+  * Used to create an additional condition in conjunction with //v-if//.
+  * orks like an //else-if// statement in programming, allowing multiple conditions to be checked.
+
+  <p v-if="condition === 'A'">Condition A is true.</p>
+  <p v-else-if="condition === 'B'">Condition B is true.</p>
+
+==== 3. v-else ====
+  * Provides a fallback for when none of the //v-if// or //v-else-if// conditions are met.
+  * It does not accept any condition and must directly follow //v-if// or //v-else-if//.
+
+  <p v-if="condition === 'A'">Condition A is true.</p>
+  <p v-else-if="condition === 'B'">Condition B is true.</p>
+  <p v-else>Neither condition A nor B is true.</p>
+
+===== Additional Material =====
+
+{{:en:modul:m291:learningunits:lu05:theorie:vuejs_tutorial_10_v-if_v-else_v-else-if_conditional_rendering.mp4|Youtube-Tutorial: conditional rendering}}
+
+===== Vocabulary =====
+
+^ English ^ German ^ 
+| to render | ausführen, wiedergeben |
+| conjunction | verbindung |
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

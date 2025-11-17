@@ -2,8 +2,11 @@
 
 ====== Module ======
 ~~NOCACHE~~
-==== Deutsch ====
+==== Standardsprache ====
 <nspages :modul -subns -exclude -exclude:archiv: -h1 -textNS="" -simplelist -nopages>
+
+==== Deutsch ====
+<nspages :de:modul -subns -exclude -exclude:archiv: -h1 -textNS="" -simplelist -nopages>
 
 ==== Englisch ====
 
@@ -15,11 +18,6 @@
 <nspages :modul:archiv -subns -exclude -h1 -textNS="" -simplelist -nopages>
 
 
-===== Berufsbeschreibung =====
-<nspages :berufsbeschreibung -exclude -h1 -textNS="" -simplelist -textPages="">
-<nspages :lernenden-info -exclude -h1 -textNS="" -simplelist -textPages="">
-
-
 ===== Links =====
   * [[http://openbook.galileo-press.de/it_handbuch/|IT-Handbuch für Fachinformatiker - Galileo OpenBooks]]
 
@@ -27,5 +25,15 @@
 [[:modul:progaufgabe]]
 <nspages :howto -subns -exclude -h1 -textNS="" -simplelist -nopages>
 
+====== Dokumentationen =======
+
+
+<nspages :berufsbeschreibung -exclude -h1 -textNS="" -simplelist -textPages="">
+<nspages :lernenden-info -exclude -h1 -textNS="" -simplelist -textPages="">
+----
+<nspages :doku -exclude -h1 -textNS="" -simplelist -textPages="">
+
+===== API-Zugriffe =====
+https://wiki.bzz.ch/lib/exe/openapi.php#?route=overview
 ===== Impressum =====
 Hostmaster: [[http://www.bzz.ch|BZZ Horgen]], WebMaster: Kevin Maurizi <kevin.maurizi@bzz.ch>, Marcel Suter <marcel.suter@bzz.ch>

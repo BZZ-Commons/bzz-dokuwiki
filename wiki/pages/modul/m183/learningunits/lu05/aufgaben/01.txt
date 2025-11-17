@@ -1,0 +1,24 @@
+====== LU05.A01 - Binäre Codierung von Nachrichten ======
+
+===== Lernziele =====
+  * Ich kann Nachrichten in eine Binärdarstellung umwandeln.
+
+===== Rahmenbedingungen =====
+  * **Zeitbudget:** 10 Minuten
+  * **Sozialform:** Einzelarbeit
+  * **Hilfsmittel:** Dossier "Kryptographie_Theorie"
+  * **Erwartetes Ergebnis:** Schreiben Sie die Binärkodierung hier in der Aufgabe rein, verzichten Sie auf Trennzeichen zwischen den Zeichen.
+
+===== Ausgangslage =====
+Kodierung und Kryptographie sind technisch gesehen sehr nahe beieinander. Bei der Kodierung ist das Umwandlungsverfahren bekannt. Hingegeben ist bei der Verschlüsselung das Verfahren und/oder der Schlüssel der Kodierung unbekannt.
+
+===== Arbeitsauftrag =====
+Wie lautet die binäre Codierung der Zeichenkette «SOS»?** \\
+Der entsprechende Codewert in der ASCII Codetabelle ist wie folgt: S=83, O=79.
+
+===== Solution =====
+[[modul:m183:learningunits:lu05:loesungen:01|Lösung]]
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

@@ -1,0 +1,44 @@
+====== LU03.S02 - Answers: CRUD and SQL ======
+
+1. Explain what is behind the so-called CRUD operations and add an example.
+  * <color #ed1c24>CRUD is an acronym for Create, Read, Update, and Delete and represents the four fundamental operations for managing data in a database.</color> 
+  * <color #ed1c24>CRUD is a conceptual framework.</color>
+  * <color #ed1c24>It outlines the basic operations for data management but doesn't specify how these operations are implemented. </color>
+
+----
+2. What does the acronym SQL stand for?
+  - <color #ed1c24>Structured Query Language</color>
+  - Standard Query Language. It used to be that name bevor 2000, but changed in "Structured"
+  - Simple Quarrel Language. 
+
+-----
+
+3. Which of the following statements about CRUD and SQL is **not** correct?
+  - The CRUD approach is a prerequisite for all types of dynamic web applications.
+  - CRUD is realised in databases by SQL -statements, e.g. SELECT, CREATE, UPDATE and DELETE.
+  - The CRUD approach groups SQL-operations logically.
+  - <color #ed1c24>CRUD is an alternative to SQL and has to be applied, if we want to build stable web pages.</color>
+
+----
+
+4. Which of the following SQL subtypes does **not** exist? Explain the meaning of the other terms.
+  - DCL = <color #ed1c24>Data Control Language. Management of users and their permissions.</color> 
+  - DML = <color #ed1c24>Data Manipulation Language. Management of the content. Insert, Update, Delete. </color> 
+  - <color #ed1c24>DXL</color>
+  - DDL = <color #ed1c24>Data Definition Language. Manamegement of the tables and their structure.</color> 
+  - DQL = <color #ed1c24>Data Query Language. Structured reading and fetching of content.</color> 
+
+----
+
+===== Vocabulary =====
+^ English ^ German ^ 
+| conceptual | abstrakt, konzeptionell |
+| to outline | skizzieren, zusammenfassen |
+| to implement | anwenden |
+| query | Anfrage |
+| quarrel | Streit, Zank |
+
+
+----
+
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir
