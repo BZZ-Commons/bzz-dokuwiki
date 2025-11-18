@@ -1,0 +1,27 @@
+====== LU06.L01 - Funktionen Grundlagen ======
+
+===== Auftrag 1 =====
+Nachdem Sie die Theorie zum Thema "Funktionen in JavaScript bearbeitet haben, beantworten Sie die nachfolgenden Kontrollfragen.
+
+  - Was ist eine Funktion? Beschreibe in eigenen Worten, was eine Funktion ist und welchen Zweck sie erfüllt.
+    * Ein Block, der Code enthält und von mehreren Stellen aus aufgerufen werden kann.
+    * Eine Funktion kann Input und Outputwerte (returnvalue) haben (muss aber nicht).
+  - Welche Bestandteile gehören zur Funktionsdeklaration in JavaScript und wofür steht jeder davon?
+    * Schlüsselwort //function// + nameDerFunktion
+    * InputParameter
+    * Funktionsblock inkl. Returnvalue
+  - Wie unterscheidet sich der Aufruf einer Funktion von ihrer Definition?
+    - Bei der //Definition// wird die Funktion angelegt, ähnlich einem Kochrezept. Der Ablauf ist klar, aber das Gericht ist noch nicht gekocht.
+    - Beim Aufruf wird dann konkret der Funktionskode verwendet, um ein Resultat zu produzieren bzw. das Gericht tatsächlich zu kochen.
+  - Was passiert, wenn in einer Funktion kein return steht – und warum?
+    * Funktionen liefern immer Rückgabewerte.
+    * Falls es kein explizites Returnvalue gibt, wird //undefined// zurückgeben. Beim Ablauf lassen des Programms wird dieser Wert dann einfach ignoriert. 
+
+
+
+===== Lösungen =====
+[[de:modul:m288:learningunits:lu06:loesungen:01|LU06.L01]]
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

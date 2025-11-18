@@ -1,0 +1,56 @@
+====== LU05a - Funktionen======
+
+===== Einleitung  =====
+Funktionen gehören zu den zentralen Bausteinen in JavaScript. Sie bündeln Code, der mehr als einmal gebraucht wird, und geben dem Chaos im Projekt wenigstens eine kleine, wohltuende Struktur. Ohne Funktionen wäre jeder Klick-Handler, jede Berechnung und jeder API-Aufruf ein Copy-Paste-Festival, und darüber hinaus sehr fehlerbehaftet.
+
+
+===== Allgemeine Syntax =====
+Eine Funktion besteht aus dem Schlüsselwort //function// (oder moderner: einem Arrow-Function-Ausdruck), einem Namen, optional Parametern in Klammern und einem Funktionsblock in geschweiften Klammern. Klingt banal – und trotzdem schafft es jemand, die Klammern falsch zu setzen.
+
+{{:de:modul:m288:learningunits:lu06:funktionsjavascript.png?600|Allgemeine Syntax von Funktionen in JavaScript}}
+
+
+===== Aufruf =====
+Eine Funktion wird einfach über ihren Namen und runde Klammern aufgerufen. Werden Parameter benötigt, kommen sie in die Klammern – Null Gedanken über Typen notwendig, JavaScript regelt das schon… irgendwie.
+
+  funktionsName(5, "Hallo");
+  
+  
+===== Rückgabewert =====
+Mit return gibt die Funktion einen Wert zurück. Steht kein return im Code, dann gibt die Funktion eben undefined zurück – und tut so, als sei das völlig normal.
+
+  return ergebnis;
+
+===== Beispiele =====
+**Beispiel 1: Funktionsdeklaration**
+Die nachfolgende Funktion //addiere// addiert zwei Zahlen und liefert als //Rückgabewert// die Summe der beiden Zahlen.
+
+  function addiere(a, b) {
+    return a + b;
+  }
+  console.log(addiere(3, 5)); // 8
+  
+Wir reden hier von //Inputparameter// (a und b) und //Returnvalue// (Summe der beiden Zahlen).
+
+
+**Beispiel 2: Arrow-Funktion**
+Das nachfolgende Beispiel ist eine sogenannte //Arrow-Funktion// und funktioniert ähnlich wie eine klassische Funktion, ist einfach in der Schreibweise anders.
+
+  const begruessung = (name) => {
+    return `Hallo, ${name}!`;
+  };
+  console.log(begruessung("Sam")); // "Hallo, Sam!"
+  
+===== Lernvideos =====
+
+  * Lernvideo-Deutsch - 15 Minuten: {{:de:modul:m288:learningunits:lu06:js_funktionen_1_javascript_tutorial_deutsch_teil_5.mp4|Tutorial Deutsch - 15 Minuten}}  
+  * Lernvideo-Deutsch - 5 Minuten: {{:de:modul:m288:learningunits:lu06:was_sind_funktionen_javascript_grundlagen.mp4|Was sind Funktionen - 5 Minuten}}
+
+
+===== Zusatzmaterial =====
+  * [[https://www.w3schools.com/js/js_functions.asp|W3School- JavaScript Functions ]]
+  * [[https://wiki.selfhtml.org/wiki/Einstieg_in_JavaScript/Funktionen|SelfHTML - Funktionen]]
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir
+

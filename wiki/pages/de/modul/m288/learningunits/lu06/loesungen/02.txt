@@ -1,0 +1,42 @@
+====== LU06.L02 - Funktionen - Gruess Dich, Bro! ======
+
+===== Rahmenbedingungen =====
+  * Sozialform: individual
+  * Hilfsmittel: 
+    * Openbooks
+    * [[https://www.w3schools.com/js/js_functions.asp| Functions JavaScript]]
+  * Zeit: 10 Minutes
+  * Erwartetes JavaScript Programm, dass Dich selbst grüsst.
+
+===== Auftrag 1 =====
+Erstellen Sie eine Funktion namens //greetBro//, die "Gruess Dich DEIN NAME, Bro!" auf der Konsole ausgibt. Rufe Sie dann die Funktion auf, um die Begrüssung anzuzeigen.
+
+Beispiel für die Ausgabe:
+
+  Gruess Dich Volkan, Bro!
+
+{{:de:modul:m288:learningunits:lu06:loesungen:lu06_l02_1.jpg?800|Lösung Aufgabenteil 1}}
+
+===== Auftrag 2 =====
+Erstellen Sie eine //Index.html//-Datei und rufen Sie Ihr Script nun über den Browser auf. Als Vorlage können Sie den nachfolgenden HTML-Code verwenden.
+
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <title>Externes Script</title>
+      <link rel="icon" href="/favicon.ico" type="image/vnd.microsoft.icon">
+      <script src="./scripts/LU06/LU06_L02.js" defer></script>
+    </head>
+    <body>
+      <h1>Externes JavaScript</h1>
+    </body>
+  </html>
+  
+{{:de:modul:m288:learningunits:lu06:loesungen:lu06_l02_2.jpg?800| Aufgabenteil 2: Browserkonsolen-Ausgabe}}
+  
+  
+
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

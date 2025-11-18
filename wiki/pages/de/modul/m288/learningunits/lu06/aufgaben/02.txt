@@ -1,0 +1,27 @@
+====== LU06.A03 - Funktionen - Mit Parameter ======
+
+===== Rahmenbedingungen =====
+  * Sozialform: individual
+  * Hilfsmittel: 
+    * Nur Lehrmittel, keine Websuche oder AI
+    * [[https://www.w3schools.com/js/js_functions.asp| Functions JavaScript]]
+  * Zeit: 15 Minutes
+  * Erwartetes JavaScript Programm, dass Dich selbst grüsst.
+
+===== Auftrag 1 =====
+Schreiben sie eine Funktion namens //compose//add, die zwei Parameter a und b akzeptiert und die Summe der Konsole ausgibt. 
+
+Rufen sie nun die Funktion mit verschiedenen Argumenten auf.
+  * Die Zahl 5 und 3
+  * Die Zahl 3 und der String "3"
+  * Ihr Vorname und ihr Nachname
+
+===== Auftrag 2 =====
+Rufen Sie nun Ihr Script über die Index.html-Datei im Browser auf und analysieren Sie die Ausgabe in der Browser-Konsole.
+  
+===== Lösungen =====
+[[de:modul:m288:learningunits:lu06:loesungen:03|LU06.L03]]
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

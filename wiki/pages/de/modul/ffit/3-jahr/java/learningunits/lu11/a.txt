@@ -1,5 +1,7 @@
 ====== LU11a - ngrok ======
 
+<WRAP alert>Funktioniert nicht im Schulnetz :-(</WRAP>
+
 Bei der Library-App wurden Ihnen automatische Tests bequemerweise zur Verfügung gestellt. Bei der Club-Accounting-App waren Sie auf manuelle Tests angewiesen. 
 
 Die Authentication und die Komplexität der Schnittstelle und der übergebenen Daten macht es aber etwas komplizierter. Ein HTTPS-Request via Konsole oder Postman ist zwar möglich, lässt sich aber schlecht skalieren auf grössere Projekte. Daher wurde Ihnen ein Frontend zur Verfügung gestellt. Mit diesem können Sie Ihr eigenes Backend überprüfen. 
