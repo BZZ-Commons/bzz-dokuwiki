@@ -1,27 +1,41 @@
-====== LU06.A03 - Funktionen - Mit Parameter ======
+====== LU06.A02 - Funktionen - Gruess Dich, Bro! ======
 
 ===== Rahmenbedingungen =====
   * Sozialform: individual
   * Hilfsmittel: 
-    * Nur Lehrmittel, keine Websuche oder AI
+    * Openbooks
     * [[https://www.w3schools.com/js/js_functions.asp| Functions JavaScript]]
-  * Zeit: 15 Minutes
-  * Erwartetes JavaScript Programm, dass Dich selbst grüsst.
+  * Zeit: 10 Minutes
+  * Erwartetes Resultat: JavaScript Programm, das Sie selbst über die Konsole grüsst.
 
 ===== Auftrag 1 =====
-Schreiben sie eine Funktion namens //compose//add, die zwei Parameter a und b akzeptiert und die Summe der Konsole ausgibt. 
+Erstellen Sie eine Funktion namens //greetBro//, die "Gruess Dich DEIN NAME, Bro!" auf der Konsole ausgibt. Rufe Sie dann die Funktion auf, um die Begrüssung anzuzeigen.
 
-Rufen sie nun die Funktion mit verschiedenen Argumenten auf.
-  * Die Zahl 5 und 3
-  * Die Zahl 3 und der String "3"
-  * Ihr Vorname und ihr Nachname
+Beispiel für die Ausgabe:
+
+  Gruess Dich Volkan, Bro!
+
+{{:de:modul:m288:learningunits:lu06:loesungen:lu06_l02_1.jpg?800|Lösung Aufgabenteil 1}}
 
 ===== Auftrag 2 =====
-Rufen Sie nun Ihr Script über die Index.html-Datei im Browser auf und analysieren Sie die Ausgabe in der Browser-Konsole.
+Erstellen Sie eine //Index.html//-Datei und rufen Sie Ihr Script nun über den Browser auf. Als Vorlage können Sie den nachfolgenden HTML-Code verwenden.
+
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <title>Externes Script</title>
+      <link rel="icon" href="/favicon.ico" type="image/vnd.microsoft.icon">
+      <script src="./scripts/LU06/LU06_L02.js" defer></script>
+    </head>
+    <body>
+      <h1>Externes JavaScript</h1>
+    </body>
+  </html>
   
-===== Lösungen =====
-[[de:modul:m288:learningunits:lu06:loesungen:03|LU06.L03]]
+{{:de:modul:m288:learningunits:lu06:loesungen:lu06_l02_2.jpg?600|Aufgabenteil 2: Browserkonsolen-Ausgabe}}
 
 
 ----
-[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir
+
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] 
+Volkan Demir

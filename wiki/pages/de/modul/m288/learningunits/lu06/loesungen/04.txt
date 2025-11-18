@@ -1,0 +1,22 @@
+====== LU06.L04 - Funktionen - Mit Rückgabewert ======
+
+===== Auftrag 1 =====
+Kopiere die Funktion //compose// aus der vorherigen Aufgabe und ändere sie diese, sodass sie die Summe der beiden Parameter mittels //return// zurückgibt, anstatt sie direkt auszugeben.
+
+Die Ausgabe soll im //Hauptteil// geschehen, also ausserhaln der Funktion. * Rufe die Funktion auf und gib das Ergebnis mit console.log aus.
+
+Rufen sie nun die Funktion mit verschiedenen Argumenten auf.
+  * Die Zahl 5 und 3
+  * Die Zahl 3 und der String "3"
+  * Ihr Vorname und ihr Nachname
+
+{{:de:modul:m288:learningunits:lu06:loesungen:lu06_l04_1.jpg?800|}}
+
+
+===== Auftrag 2 =====
+Rufen Sie nun Ihr Script über die Index.html-Datei im Browser auf und analysieren Sie die Ausgabe in der Browser-Konsole.
+
+{{:de:modul:m288:learningunits:lu06:loesungen:lu06_l04_2.jpg?800|}}
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir
