@@ -1,4 +1,4 @@
-====== LU11a - Manuelles Testing ======
+====== LU11a - ngrok ======
 
 Bei der Library-App wurden Ihnen automatische Tests bequemerweise zur Verfügung gestellt. Bei der Club-Accounting-App waren Sie auf manuelle Tests angewiesen. 
 
@@ -6,15 +6,25 @@ Die Authentication und die Komplexität der Schnittstelle und der übergebenen D
 
 Interessant wird es jedoch, wenn jemand anderes die Implementierung überprüft. Damit das Backend nicht gehostet oder der Code extra ausgecheckt werden muss, kann man zum Beispiel ''ngrok'' verwenden.
 
-==== ngrok ====
-
-''ngrok'' öffnet einen Tunnel von Ihrem lokalen Rechner nach ''TODO''. Dadurch können Sie Ihr Backend für jemand anderen freigeben.
+''ngrok'' öffnet einen Tunnel von Ihrem lokalen Rechner ins Internet. Dadurch können Sie Ihr Backend für jemand anderen freigeben.
 
   - Account erstellen auf https://dashboard.ngrok.com/signup
   - Datei runterladen von https://ngrok.com/download/windows
   - ''ngrok.exe'' starten.
 
+Auth-Token des Accounts hinzufügen mit:
 <code cmd>
 ngrok config add-authtoken <APP_TOKEN>
+</code>
+
+Dann den Tunnel starten mit:
+<code cmd>
 ngrok http https://localhost:8443
 </code>
+
+Funktionsweise überprüfen mit:
+https://<YOUR_SUB_DOMAIN>.ngrok-free.dev/api/hello
+
+Anschliessend kann die Domain (https://<YOUR_SUB_DOMAIN>.ngrok-free.dev) auf https://alexanderpeter.github.io/ffit-lu08-club-accounting-website/ verwendet werden, um auf das Backend von jemand anderem zuzugreifen.
+
+

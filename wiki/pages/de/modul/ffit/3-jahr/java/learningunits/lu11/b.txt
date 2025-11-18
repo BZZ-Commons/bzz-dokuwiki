@@ -1,18 +1,36 @@
-====== LU11b - ??? ======
+====== LU11b - RAG Chatbot ======
 
-==== Git-Nachtrag? ====
-PGP-Schlüssel vs SSH-Schlüssel
+RAG (Retrieval-Augmented Generation) ist eine gängige Variante, um Fragen zu benutzerspezifischen Dokumenten zu beantworten.
 
-==== Patterns? ====
-...
+{{:de:modul:ffit:3-jahr:java:learningunits:lu11:aug-overview.png?600|}}
+© https://www.ridgerun.ai/post/how-to-evaluate-retrieval-augmented-generation-rag-systems
 
-==== File-Import & Import ====
-...
+Vorneweg muss man die gewünschten Daten (z.B. Lernunterlagen) ...
+  - ... in Chunks unterteilen
+  - ... "embedden"
+  - ... in die Vektordatenbank speichern
 
-==== How to AI ====
-...
+Der Ablauf funktioniert grob so:
+  - Der Benutzer gibt eine Frage ein, welche an die Applikation geschickt wird.
+  - Die Frage wird "Embedded" und an die Vektordatenbank geschickt
+  - Von der Vektordatenbank werden die n passendsten Chunks im Klartext an die Applikation zurückgegeben.
+  - Die Applikation schickt die originale Frage im Klartext mitsamt den Chunks an ein LLM-Model
+  - Das LLM-Model schickt eine Antwort zurück an die Applikation
+  - Die Applikation kann z.B. Quellen o. Ä. bei Bedarf ergänzen und die Antwort an den Benutzer zurückschicken.
 
+==== Vector-Embedding====
 
-<code java>
+Bei einem Vector-Embedding werden Daten (oftmals Textblöcke) in Vektoren mit hunderten von Dimensionen umgewandelt. 
 
-</code>
+{{:de:modul:ffit:3-jahr:java:learningunits:lu11:vector-embeddings.jpg?600|}}
+© https://qdrant.tech/articles/what-are-embeddings/
+
+==== Vektordatenbank ====
+
+In einer Vektordatenbank sind Objekte mit ähnlicher Bedeutung aufgrund des zuvor angewendeten Embeddings nahe beieinander.
+Im nachfolgenden Beispiel sieht man die Tiere links, während die Früchte rechts sind. 
+
+Nebst den Zielobjekten können auch Fragen embedded werden. Wird zum Beispiel nach "Kitten" gesucht, kann die Vektordatenbank mittels einer "Similarity search" die nächstgelegenen Objekte ermitteln und zurückgeben. In diesem Beispiel also "Cat".
+
+{{:de:modul:ffit:3-jahr:java:learningunits:lu11:vector-search.jpeg?600|}}
+© https://nlpcloud.com/de/fine-tuning-semantic-search-model-with-sentence-transformers-for-rag-application.html
