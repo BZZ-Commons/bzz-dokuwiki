@@ -1,4 +1,4 @@
-====== LU07.A01 - Ein Objekt anlegen ======
+====== LU07.A02 - Mehrere Objekte anlegen ======
 
 ===== Rahmenbedingungen =====
   * Sozialform: individual
@@ -30,11 +30,13 @@ Nachfolgend finden Sie die Vorlage des Personenobjekts //maxM//, das Sie als Vor
     }
   };
 
+===== Hinweis =====
+Der Einsatz von AI kann bei dieser Aufgabe sehr hilfreich sein.
 
 ===== Auftrag =====
   - Legen Sie drei weitere Personen gemäss Vorlage an.
   - Ergänzen Sie jede Person mit dem Attribut //beruf//
-  - Ergänzen Sie jede Person durch die Fähigkeit //wiederholen(zuWiederholendesWort, anzahlWiederholungen): Soll das gegegbene Wort so oft wiederholen, wie definiert.
+  - Ergänzen Sie jede Person durch die Fähigkeit //wiederholen(zuWiederholendesWort, anzahlWiederholungen)//: Soll das gegegbene Wort so oft wiederholen, wie definiert.
   - Lassen Sie die neuen Attribute aller Personen auf der Konsole ausgeben.
   - Lassen Sie eine Person ein bestimmte Wort eine beliebige Anzahl wiederholen. 
 

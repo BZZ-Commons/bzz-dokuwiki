@@ -1,0 +1,17 @@
+====== LU07.L03 - Mehrere Objekte verwalten in Schleifen ======
+
+===== Auftrag 1 + 2 =====
+  * Speichern Sie Ihre vier Personen in einem Array //mitarbeitende//
+  * Lassen Sie in der Schleife von allen Personen den Nachnamen und das Einkommen ausgeben.
+  * Summieren Sie die Einkommen aller Mitarbeitenden nach der Schleife und geben Sie diese aus
+
+{{:de:modul:m288:learningunits:lu07:loesungen:lu07_l03_1.jpg?800|}}
+
+===== Auftrag 3 =====
+  * Jede Mitarbeitende erhält eine Gehalterhöhung von 2000,- CHF. 
+  * Passen Sie die jeweiligen Jahreseinkommen in der Schleife an und geben die Summe am Ende wieder aus.
+
+{{:de:modul:m288:learningunits:lu07:loesungen:lu07_l03_2.jpg?600|}}
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

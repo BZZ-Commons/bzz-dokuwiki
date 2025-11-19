@@ -1,0 +1,32 @@
+====== LU07.A03 - Mehrere Objekte verwalten in Schleifen ======
+
+===== Rahmenbedingungen =====
+  * Sozialform: individual
+  * Hilfsmittel: 
+    * Open books
+    * [[https://www.w3schools.com/js/js_objects.asp| JavaScript Objects]]
+  * Zeit: 20 Minuten
+  * Erwartetes Resultat: Ein JavaScript-File mit mindestens 4 Personen-Objekt, das mittels Array und Schleife verwaltet wird. 
+
+===== Ausgangslage =====
+In den vorherigen Aufgaben habe Sie verschiedenen Personenobjekte angelegt und diese einzeln bearbeitet und ausgegeben. Das geht effizienter mit Arrays und Schleifen.
+===== Hinweis =====
+Der Einsatz von AI kann bei dieser Aufgabe sehr hilfreich sein.
+
+===== Auftrag 1 =====
+  * Speichern Sie Ihre vier Personen in einem Array //mitarbeitende//
+  * Lassen Sie in der Schleife von allen Personen den Nachnamen und das Einkommen ausgeben.
+
+===== Auftrag 2 =====
+  * Summieren Sie die Einkommen aller Mitarbeitenden nach der Schleife und geben Sie diese aus
+
+===== Auftrag 3 =====
+  * Jede Mitarbeitende erhält eine Gehalterhöhung von 2000,- CHF. 
+  * Passen Sie die jeweiligen Jahreseinkommen in der Schleife an und geben die Summe am Ende wieder aus.
+
+===== Lösungen =====
+[[de:modul:m288:learningunits:lu07:loesungen:03|LU07.L03]]
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir
