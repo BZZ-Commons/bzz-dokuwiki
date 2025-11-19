@@ -1,0 +1,57 @@
+====== LU07a - Objekte ======
+
+===== Einleitung  =====
+//Objekte// sind das zentrale Werkzeug in JavaScript, um Daten zu strukturieren und Funktionen zu bündeln. Sobald es um irgendetwas Komplexeres geht als simple Zahlen oder Zeichenketten, wird das Thema //Objekte// unumgänglich.
+
+===== Was ist ein Objekt =====
+Objekte sind Abbildung von realen Personen oder Gegenständen, allerdings abstrahiert auf die für das Programm relevanten Eigenschaften. Objekte bestehen aus eine Kombination aus 
+
+  * Key (Schlüssel) – der Name
+  * Value (Wert) – kann alles sein: Zahl, String, Funktion, Array, wieder ein Objekt …
+
+Objekte helfen, zusammengehörige Informationen sauber zu bündeln. Statt 10 lose Variablen separat behandeln zu müssen, wird alles einfach in Objekte reingepackt. Beispielsweise gehören **ARRAYS** zu den **Objekten**.
+
+Es gibt einige Wege, um Objekte zu erstellen. Innerhalb des Moduls 288 werden wir uns mit dem Standardweg beschäftigen, dem sogenannten **Object-Literal**.
+
+**Beispiel:**
+Das nachfolgende Objekt ist ein Tesla, Baujahr 22, und hat eine Methode, die "Wrrrumm!" macht, wenn es fährt. Wir sehen also, dass dieses Objket //auto//, ähnlich dem realen Objekt, aus Eigenschaften (Marke, bauhjahr)  und Fähigkeiten (fahren) besteht.
+
+  const auto = {
+    marke: "Tesla",
+    baujahr: 2022,
+    fahren() {
+      console.log("Wrrrumm!");
+    }
+  };
+  console.log(auto.fahren());
+  
+===== Warum sind Objekte so wichtig? =====
+  * Sie strukturieren Daten (z. B. User, Produkt, Bestellung …)
+  * Sie erlauben Verhalten (Methoden)
+  * Sie bilden die Grundlage von Arrays, Funktionen, DOM-Elementen, Maps, Sets usw.
+  * JavaScript selbst basiert intern auf Objekten
+
+Kurz: Man/Frau kommt nicht drum herum. Wirklich nicht!!
+
+===== Zugriff auf Objekte =====
+Es gibt zwei Moglichkeiten, um auf Objekte zuzugreifen.
+   * **Punktnotation:** Bsp.: auto.baujahr = 2020;
+   * **Klammernotation:** Besp.: auto['baujahr'] = 2020;
+
+===== Objekte manipulieren =====
+Objekte sind auch deswegen praktisch, weil man eine Manipulationen mit ihnen durchführen kann.
+
+  * **Eigenschaften ergänezen:** Bsp.: auto.farbe ="rot";
+  * **Löschen von Eigenschaften:** Bsp.: delete auto.baujahr;
+  
+===== Lernvideos =====
+  * Lernvideo "Was sind normale Objekte?" - 3 Minuten: {{:de:modul:m288:learningunits:lu07:was_sind_normale_objekte_javascript_grundlagen.mp4|Was sind normale Objekte?}}
+  * Lernvideo "Objekte in JavaScript - Basiswissen" - 16 Minuten: {{:de:modul:m288:learningunits:lu07:objekte_javascript_tutorial_deutsch_teil_13.mp4|Objekte in JavaScript - Basiswissen}}
+
+===== Zusatzmaterial =====
+  * [[https://www.w3schools.com/js/js_objects.asp|W3School- JavaScript Objects]]
+  * [[https://wiki.selfhtml.org/wiki/JavaScript/Tutorials/OOP/Objekte_und_ihre_Eigenschaften|SelfHTML - Objekte und Ihre Eigenschaften ]]
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir
+

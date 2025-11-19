@@ -1,0 +1,46 @@
+====== LU07.A01 - Ein Objekt anlegen ======
+
+===== Rahmenbedingungen =====
+  * Sozialform: individual
+  * Hilfsmittel: 
+    * Open books
+    * [[https://www.w3schools.com/js/js_objects.asp| JavaScript Objects]]
+  * Zeit: 20 Minuten
+  * Erwartetes Resultat: Ein JavaScript-File mit mindestens 5 Personen-Objekt anlegt und dessen Eigenschaften und Fährigkeiten auf der Konsole ausgibt.
+
+===== Ausgangslage =====
+Nachfolgend finden Sie die Vorlage des Personenobjekts //maxM//, das Sie als Vorlage für diese Aufgabe verwenden können. 
+
+  const maxM  = {
+    // Eigenscharten/Attribute einer Person
+    name: "Max",
+    nachname: "Mustermann",
+    alter: 29,
+    jahreseinkommen: 90000,
+    haarfarbe: "braun",
+    // Fähigkeiten einer Person
+    singen() { 
+      console.log("La la la… (mehr oder weniger schoen)"); 
+    },
+    fluchen(wort) { 
+      console.log(wort, "… schon wieder ein Bug!"); 
+    },
+    schlafen(dauer) { 
+      console.log("Zzz… endlich Ruhe für ", dauer, "Stunden"); 
+    }
+  };
+
+
+===== Auftrag =====
+  - Legen Sie drei weitere Personen gemäss Vorlage an.
+  - Ergänzen Sie jede Person mit dem Attribut //beruf//
+  - Ergänzen Sie jede Person durch die Fähigkeit //wiederholen(zuWiederholendesWort, anzahlWiederholungen): Soll das gegegbene Wort so oft wiederholen, wie definiert.
+  - Lassen Sie die neuen Attribute aller Personen auf der Konsole ausgeben.
+  - Lassen Sie eine Person ein bestimmte Wort eine beliebige Anzahl wiederholen. 
+
+===== Lösungen =====
+[[de:modul:m288:learningunits:lu07:loesungen:02|LU07.L02]]
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

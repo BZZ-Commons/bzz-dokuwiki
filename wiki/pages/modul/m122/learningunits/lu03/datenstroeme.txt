@@ -1,7 +1,7 @@
 ====== LU03a - Datenströme umleiten ======
 [[https://openbook.rheinwerk-verlag.de/shell_programmierung/shell_003_009.htm| Shell Programmierung: Kapitel 1.10.1 - 1.10.5]]
 
-Jedes Befehl und jedes Skript kennt 3 Hauptdatenströme:
+Jeder Befehl und jedes Skript kennt 3 Hauptdatenströme:
   * 0: Standard-Eingabe (stdin) 
   * 1: Standard-Ausgabe (stdout)
   * 2: Standard-Fehlerausgabe (stderr).

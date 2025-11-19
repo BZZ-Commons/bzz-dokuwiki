@@ -1,7 +1,7 @@
 ====== LU04.L01: Wildcard ======
 
 <code bash>
-suma> ls -l ./reading1[01]_[abc].txt
+ls -l ./reading1[01]_[abc].txt
 </code>
 
 ----

@@ -8,17 +8,17 @@ grep -r --include="data*.txt" "Bielefeld"
 
 ===== 2. Sortieren und ausgeben =====
 <code bash>
-suma> sort data20190827.txt
+sort data20190827.txt
 </code>
 
 ===== 3. Sortieren und speichern =====
 <code bash>
-suma> sort data20190827.txt -o sort20190827.txt;sort data20190828.txt -o sort20190828.txt
+sort data20190827.txt -o sort20190827.txt;sort data20190828.txt -o sort20190828.txt
 </code>
 
 ===== 4. Vergleichen =====
 <code bash>
-suma> comm -3 sort20190827.txt sort20190828.txt
+comm -3 sort20190827.txt sort20190828.txt
 </code>
 
 ----

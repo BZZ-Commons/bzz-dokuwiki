@@ -1,0 +1,34 @@
+====== LU07.A01 - Ein Objekt anlegen ======
+
+===== Rahmenbedingungen =====
+  * Sozialform: individual
+  * Hilfsmittel: 
+    * Open books
+    * [[https://www.w3schools.com/js/js_objects.asp| JavaScript Objects]]
+  * Zeit: 20 Minuten
+  * Erwartetes Resultat: Ein JavaScript-File, das ein Personen-Objekt anlegt und dessen Eigenschaften und Fährigkeiten abbildet.
+
+===== Ausgangslage =====
+Sie haben erfahren, dass das Konzept der //Objekte// versucht programmiertechnisch die Realität im Programm abzubilden. Relevant dabei sind die Eigenschaften und Fähigkeiten, die für die Applikation von Relevanz sind. 
+===== Auftrag =====
+  - Wählen Sie eine Person aus, die Sie als Objekt abbilden wollen (Sie selbst, Freunde, Famile, Arbeitskollegen, ....)
+  - Diese Person soll die nachfolgenden Eigenschaften haben. Die Werte dazu können Sie selbst festlegen.
+    * Vorname
+    * Nachname
+    * Alter
+    * Haaarfarbe
+    * Jahreseinkommen
+  - Die Person soll die nachfolgenden Fähigkeiten haben. Achten Sie auf die Parameter der Objektmethoden
+    * singen()
+    * fluchen(fluchwort) 
+    * schlafen(dauer) Achten Sie darauf, dass die Fähigkeiten //Funktionen// sind und eventuell Parameter erwarten, sprich wissen wollen, was Sie singen sollen.
+  - Legen Sie diese Person nun als Objekt an mit dem realen Namen als Objektname an. Beispielsweise //maxM//
+  - Geben Sie die Eigenschaften dieser Person auf der Konsole aus.
+  - Lassen Sie diese Person nun auch Ihre Fähigkeiten auf der Konsole demonstrieren, rufen Sie also die Objektmethoden nun auf.
+
+===== Lösungen =====
+[[de:modul:m288:learningunits:lu07:loesungen:01|LU07.L01]]
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir
