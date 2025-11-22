@@ -1,0 +1,80 @@
+====== LU13a: Datenimport & -export (CSV) ======
+
+===== Lernziele =====
+Sie können …
+  * CSV-Dateien mit dem WebStorm-Datenbank-Plugin **importieren** (in bestehende oder neue Tabellen).
+  * Tabellen- oder Abfrageergebnisse als **CSV/Excel/JSON** **exportieren**.
+  * typische Stolpersteine (Trennzeichen, Encoding, Datum/Zahlen, Header-Zeile) erkennen und beheben.
+  * Vor- und Nachteile von CSV vs. SQL-Skript benennen.
+
+===== Voraussetzungen =====
+  * WebStorm mit aktiviertem **Database Tools and SQL**-Plugin
+  * Datenquelle (MySQL) ist verbunden (Login, Treiber)
+  * Beispiel-Dateien:
+    * {{ :modul:m290_guko:learningunits:lu13:files:lernende.csv | lernende.csv (Beispiel) }}
+    * {{ :modul:m290_guko:learningunits:lu13:files:noten.csv | noten.csv (Beispiel) }}
+
+<WRAP center round box 80%>
+**Platzhalter Screencast**: CSV-Import Schritt für Schritt  
+{{ :modul:m290_guko:learningunits:lu13:media:csv_import_screencast.mp4 | CSV-Import (Video) }}
+</WRAP>
+
+===== 1) Varianten im Überblick =====
+<WRAP center round box 80%>
+^ Methode ^ Beschreibung ^ Vorteile ^ Nachteile ^
+| **CSV (GUI in WebStorm)** | Import/Export von reinen Daten | schnell, einfach, kein CLI | keine Struktur (Constraints), Datentypen/Format beachten |
+| **SQL-Skript** | Struktur + Daten in .sql | reproduzierbar, portabel | grösserer Aufwand, weniger geeignet für Massendaten |
+</WRAP>
+
+===== 2) CSV importieren (WebStorm GUI) =====
+**Ziel**: CSV-Datei (z. B. ''lernende.csv'') in Tabelle ''lernende'' laden.
+
+  * Rechtsklick auf **Schema** oder **Tabelle** → **Import/Export → Import Data from File(s)**.
+  * CSV auswählen → **Mapping** prüfen:
+    * **First row is header** (falls Kopfzeile vorhanden)
+    * **Delimiter/Separator** (z. B. ; oder ,)
+    * **Encoding** (UTF-8)
+    * **Ziel-Tabelle**: bestehend wählen oder **Create new table**
+  * Vorschau kontrollieren → **Apply/OK**.
+
+<WRAP center round box 80%>
+**Platzhalter Screenshot**: CSV-Import-Dialog (Mapping)  
+{{ :modul:m290_guko:learningunits:lu13:media:webstorm_import_csv_mapping.png?900 | CSV-Import: Mapping }}
+</WRAP>
+
+**Tipps**
+  * Dezimaltrennzeichen: CSV und Tabellenspalten-Typ (DECIMAL/DOUBLE) abstimmen.
+  * Datum/Uhrzeit-Formate (z. B. ''YYYY-MM-DD'').
+  * Leere Felder → ggf. **NULL** zulassen oder Default-Werte definieren.
+
+===== 3) CSV/Excel/JSON exportieren (WebStorm GUI) =====
+**Ziel**: Tabelleninhalte oder Abfrageergebnis exportieren.
+
+  * Tabelle öffnen **oder** SELECT-Resultat anzeigen.
+  * Toolbar: **Export Data** → Format wählen (CSV/Excel/JSON/Markdown …).
+  * Optionen:
+    * **Add column header** (Spaltennamen in erster Zeile)
+    * **Transpose** (optional)
+    * **Output file** wählen → **Export to File**.
+
+<WRAP center round box 80%>
+**Platzhalter Screenshot**: Export-Dialog  
+{{ :modul:m290_guko:learningunits:lu13:media:webstorm_export_data_dialog.png?900 | Export Data: Optionen }}
+</WRAP>
+
+===== 4) Mini-Übung =====
+  * Importieren Sie **''lernende.csv''** in **''lernende''**.
+  * Importieren Sie **''noten.csv''** in **''noten''**.
+  * Prüfen Sie mit:
+<WRAP center round box 80%>
+<code sql>
+SELECT COUNT(*) FROM lernende;
+SELECT * FROM noten ORDER BY geprueft_am DESC LIMIT 5;
+</code>
+</WRAP>
+  * Exportieren Sie die Tabelle **''lernende''** als **CSV** und als **Excel (xlsx)**.
+
+===== 5) Fazit =====
+  * CSV ist ideal für **Testdaten** und **schnelle Massenimporte**.
+  * Achten Sie auf **Trennzeichen, Encoding, Datentypen**.
+  * Für **Backups/Migration** ist das **SQL-Skript (LU13b)** besser geeignet (Struktur + Daten).

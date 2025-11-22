@@ -1,0 +1,95 @@
+====== LU13b: Ganze Datenbank exportieren & importieren (SQL) ======
+
+===== Lernziele =====
+Sie können …
+  * eine komplette Datenbank (Struktur + Daten) aus WebStorm heraus als **SQL-Skript** exportieren (GUI).
+  * ein SQL-Skript in WebStorm wieder **importieren** (''Run SQL Script'').
+  * Vorteile/Nachteile der GUI-Methode vs. mysqldump-Tool einordnen.
+
+===== Voraussetzungen =====
+  * WebStorm mit **Database Tools and SQL**-Plugin
+  * Datenquelle (MySQL) ist verbunden
+  * Beispiel: **''noten_db''** ist vorhanden
+  * Export-Zielordner ist beschreibbar
+
+<WRAP center round box 80%>
+**Platzhalter Screencast**: Gesamtexport & Wiederherstellung  
+{{ :modul:m290_guko:learningunits:lu13:media:db_full_export_import_screencast.mp4 | Full Dump & Restore (Video) }}
+</WRAP>
+
+===== 1) Varianten im Überblick =====
+<WRAP center round box 80%>
+^ Variante ^ Beschreibung ^ Vorteile ^ Nachteile ^
+| **GUI: SQL-Generator + Daten-Export** | Struktur (DDL) und Daten getrennt erzeugen | ohne CLI machbar, nachvollziehbar | zwei Schritte, mehr Dateien |
+| **GUI: Export mit ''mysqldump''** | WebStorm ruft ''mysqldump'' auf | ein File, kompletter Dump | Pfad zur EXE nötig, Tool muss lokal vorhanden sein |
+</WRAP>
+
+**Empfehlung Unterricht**: Nutzen Sie primär die **GUI-Variante ohne CLI** (reproduzierbar, keine PATH-Hürden). Die mysqldump-Option zeigen Sie als **Optional/Profi**.
+
+===== 2) Export (GUI ohne mysqldump) – Struktur + Daten =====
+**A. Struktur (DDL) erzeugen**
+  * Rechtsklick **Datenbank/Schema ''noten_db''** → **SQL Scripts → SQL Generator**.
+  * **Layout/Output** festlegen → **Save to file** (z. B. ''noten_db_ddl.sql'').
+
+<WRAP center round box 80%>
+**Platzhalter Screenshot**: SQL Generator (Schema → DDL)  
+{{ :modul:m290_guko:learningunits:lu13:media:sql_generator_schema.png?900 | SQL Generator: noten_db DDL }}
+</WRAP>
+
+**B. Daten exportieren**
+  * Tabellen öffnen **oder** mehrere Tabellen im Database-Toolfenster markieren.
+  * Rechtsklick → **Import/Export → Export Data to File**.
+  * Export-Format: **SQL** (falls verfügbar) **oder** CSV/Excel (pro Tabelle).
+  * Einzel-Exports pro Tabelle erzeugen (z. B. ''noten.sql'', ''lernende.sql'', ''module.sql'').
+
+**C. (Optional) Ein Skript bündeln**
+  * Öffnen Sie eine **neue Query Console** und fügen Sie nacheinander die erzeugten Dateien ein.
+  * Speichern als gesamtes Skript (z. B. **''noten_db_full.sql''**).
+
+===== 3) Export (Optional/Profi) – Full Dump via mysqldump-Dialog =====
+Voraussetzung: ''mysqldump'' ist lokal vorhanden (Pfad zur EXE bekannt).
+
+  * Rechtsklick **''noten_db''** → **Export with 'mysqldump'**.
+  * **Path to executable** setzen (z. B. ''C:\\Programme\\MySQL\\bin\\mysqldump.exe'').
+  * Optionen wählen (Struktur+Daten) → **Run** → erzeugt eine **''.sql''**-Datei.
+
+<WRAP center round box 80%>
+**Platzhalter Screenshot**: Export mit mysqldump (Dialog)  
+{{ :modul:m290_guko:learningunits:lu13:media:export_with_mysqldump.png?900 | mysqldump-Dialog }}
+</WRAP>
+
+===== 4) Import eines SQL-Skripts (Wiederherstellung) =====
+**Ziel**: Ein zuvor exportiertes **''.sql''** (z. B. ''noten_db_full.sql'') wieder einspielen.
+
+  * Rechtsklick auf **Data Source/Schema** → **SQL Scripts → Run SQL Script**.
+  * Datei wählen → **Open** → Ausführung abwarten → Output kontrollieren.
+  * Alternativ: Datei in Query Console öffnen → ausführen.
+
+<WRAP center round box 80%>
+**Platzhalter Screenshot**: Run SQL Script  
+{{ :modul:m290_guko:learningunits:lu13:media:run_sql_script_dialog.png?900 | Run SQL Script }}
+</WRAP>
+
+**Hinweise**
+  * Falls die DB im Skript **DROP/CREATE DATABASE** enthält, prüfen Sie die Ziel-Instanz.
+  * Zeichensatz **UTF-8** sicherstellen.
+  * Bei Fehlern: Reihenfolge der Tabellen (FKs) prüfen, ggf. Constraints temporär deaktivieren.
+
+===== 5) Mini-Übung =====
+  * Exportieren Sie **''noten_db''**:
+    * **Variante ohne CLI**: DDL mit SQL-Generator + Daten je Tabelle exportieren (und optional bündeln).
+  * Löschen Sie testweise die DB (oder legen Sie **''noten_db_kopie''** an).
+  * Importieren Sie die exportierten Skripte per **Run SQL Script**.
+  * Prüfen Sie:
+<WRAP center round box 80%>
+<code sql>
+SHOW DATABASES LIKE 'noten_db%';
+SELECT COUNT(*) FROM noten_db.lernende;
+SELECT COUNT(*) FROM noten_db.noten;
+</code>
+</WRAP>
+
+===== 6) Fazit =====
+  * Für **Backups/Migrationen** ist der Export als **SQL-Skript** ideal (Struktur + Daten).
+  * In WebStorm geht das ohne CLI – wahlweise komplett über GUI.
+  * **mysqldump** ist die Profi-Variante (ein File, robust), benötigt aber die Tool-EXE.
