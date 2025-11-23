@@ -15,7 +15,8 @@ Sie können …
     * {{ :modul:m290_guko:learningunits:lu13:files:noten.csv | noten.csv (Beispiel) }}
 
 <WRAP center round box 80%>
-**Platzhalter Screencast**: CSV-Import Schritt für Schritt  
+==== Video CSV-Daten importieren  ====
+Über die Webstorm-Benutzeroberfläche und via SQL-Code ''LOAD DATA LOCAL INFILE''
 {{ :modul:m290_guko:learningunits:lu13:theorie:m290_lu13_load_data.mp4?1040x585 | CSV-Import (Video) }}
 </WRAP>
 
@@ -39,7 +40,7 @@ Sie können …
 
 <WRAP center round box 80%>
 **Platzhalter Screenshot**: CSV-Import-Dialog (Mapping)  
-{{ :modul:m290_guko:learningunits:lu13:media:webstorm_import_csv_mapping.png?900 | CSV-Import: Mapping }}
+{{ :modul:m290_guko:learningunits:lu13:theorie:screenshot_2025-11-23_at_17.38.39.png?900&direct | CSV-Import: Mapping }}
 </WRAP>
 
 **Tipps**
