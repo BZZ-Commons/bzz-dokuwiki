@@ -2,80 +2,141 @@
 
 ===== Lernziele =====
 Sie können …
-  * CSV-Dateien mit dem WebStorm-Datenbank-Plugin **importieren** (in bestehende oder neue Tabellen).
-  * Tabellen- oder Abfrageergebnisse als **CSV/Excel/JSON** **exportieren**.
-  * typische Stolpersteine (Trennzeichen, Encoding, Datum/Zahlen, Header-Zeile) erkennen und beheben.
-  * Vor- und Nachteile von CSV vs. SQL-Skript benennen.
+
+  * CSV-Dateien mit dem Datenbank-Plugin von WebStorm in bestehende oder neue Tabellen importieren.
+  * Tabellen- oder Abfrageergebnisse als CSV-, Excel- oder JSON-Dateien exportieren.
+  * typische Stolpersteine beim CSV-Austausch (Trennzeichen, Encoding, Datum/Zahlen, Header-Zeile) erkennen und beheben.
+  * Vor- und Nachteile von CSV im Vergleich zu SQL-Skripten benennen.
+
+==== Warum verwenden wir CSV-Dateien? ====
+<WRAP center round box 80%>
+{{ :modul:m290_guko:learningunits:lu13:theorie:example.png?direct&600 | Bild CSV-Daten }}
+//Ausschnitt einer CSV-Datei mit (fiktiven) Daten über Mitarbeiter:innen eines Unternehmens.//
+</WRAP>
+
+CSV((CSV = Comma Separated Values)) sind einfache Textdateien (Dateiendung .csv).
+Die Daten werden zeilenweise gespeichert, die Spalten durch ein Trennzeichen (z. B. Komma oder Semikolon) getrennt.
+
+=== Vorteile von CSV ===
+
+  * **Universell**: Fast jede Anwendung (z. B. Excel, Google Sheets, Datenbanken) kann CSV-Daten importieren und exportieren.
+  * **Einfach & schnell**: Ideal für Importe mit vielen Daten. Die Dateien können ohne zusätzliche Spezialsoftware angezeigt werden.
+
+=== Eigenschaften von CSV ===
+
+  * **Trennzeichen**: Komma ('','') oder Semikolon ('';'') konsistent verwenden.
+  * **Encoding**: Möglichst **UTF-8** wählen, damit Umlaute und Sonderzeichen korrekt dargestellt werden.
+  * **Header-Zeile**: Beim Import die erste Zeile als Spaltenkopf markieren (''First row is header'').
+  * **Datentypen/Formate**: Beim Import Zahlen, Datumsformate (z. B. ''YYYY-MM-DD'') und Dezimaltrennzeichen (Punkt vs. Komma) prüfen.
+  * **Verknüpfungen in der Datenbank**: CSV enthält keine Constraints((Integritätsregeln wie Primär-/Fremdschlüssel)). Diese werden erst im RDBMS definiert und gepflegt.
 
 ===== Voraussetzungen =====
+
   * WebStorm mit aktiviertem **Database Tools and SQL**-Plugin
-  * Datenquelle (MySQL) ist verbunden (Login, Treiber)
-  * Beispiel-Dateien:
-    * {{ :modul:m290_guko:learningunits:lu13:files:lernende.csv | lernende.csv (Beispiel) }}
-    * {{ :modul:m290_guko:learningunits:lu13:files:noten.csv | noten.csv (Beispiel) }}
+  * Datenquelle (z. B. MySQL) ist verbunden (Login, Treiber eingerichtet)
+  * Beispiel-Dateien: Genres einer Filmdatenbank (Daten von letterboxd.com) {{ :modul:m290_guko:learningunits:lu13:theorie:genres.csv | Genres einer Filmdatenbank (Daten von letterboxd.com) }}
+    * Den vollständigen Datensatz können Sie auf Kaggle herunterladen: [[https://www.kaggle.com/datasets/gsimonx37/letterboxd/data|Link zum ganzen Datensatz]]
 
 <WRAP center round box 80%>
-==== Video CSV-Daten importieren  ====
-Über die Webstorm-Benutzeroberfläche und via SQL-Code ''LOAD DATA LOCAL INFILE''
+==== Video: CSV-Daten importieren ====
+Über die WebStorm-Benutzeroberfläche und via SQL-Befehl ''LOAD DATA LOCAL INFILE''
 {{ :modul:m290_guko:learningunits:lu13:theorie:m290_lu13_load_data.mp4?1040x585 | CSV-Import (Video) }}
 </WRAP>
 
+Hier eine sprachlich und didaktisch etwas gestraffte Version deines Abschnitts:
+
+
 ===== 1) Varianten im Überblick =====
+Daten können auf verschiedene Arten in eine Datenbank importiert bzw. aus ihr exportiert werden. In dieser Lerneinheit unterscheiden wir zwei typische Szenarien:
+
+  * **Reine Datensätze** (ohne Struktur): Import/Export über CSV-Dateien mit dem Datenbank-Plugin von WebStorm oder via SQL-Befehl ''LOAD DATA LOCAL INFILE''.
+  * **Ganze Datenbanken** inkl. Struktur und Daten: Export/Import als Dump über SQL-Skripte.
+
 <WRAP center round box 80%>
-^ Methode ^ Beschreibung ^ Vorteile ^ Nachteile ^
-| **CSV (GUI in WebStorm)** | Import/Export von reinen Daten | schnell, einfach, kein CLI | keine Struktur (Constraints), Datentypen/Format beachten |
-| **SQL-Skript** | Struktur + Daten in .sql | reproduzierbar, portabel | grösserer Aufwand, weniger geeignet für Massendaten |
+^ Methode ^ Was ist das? ^ Vorteile ^ Nachteile ^
+| **GUI in WebStorm** | Import/Export von Daten über CSV-Dateien | Schnell, einfach, keine CLI((CLI = Command Line Interface)) nötig | Keine Struktur/Constraints, Datentypen und Formate müssen sorgfältig geprüft werden |
+| **SQL-Skript**((Textdatei mit SQL-Befehlen; meist Endung ''.sql'')) | Enthält sowohl Struktur (DDL) als auch Daten (INSERT-Befehle) | Reproduzierbar ((bei erneutem Ausführen gleiches Ergebnis)), portabel((leicht auf andere Server/PCs übertragbar)) | Mehr Aufwand beim Erstellen, bei sehr vielen Datensätzen u. U. langsamer |
 </WRAP>
 
-===== 2) CSV importieren (WebStorm GUI) =====
-**Ziel**: CSV-Datei (z. B. ''lernende.csv'') in Tabelle ''lernende'' laden.
 
-  * Rechtsklick auf **Schema** oder **Tabelle** → **Import/Export → Import Data from File(s)**.
-  * CSV auswählen → **Mapping** prüfen:
-    * **First row is header** (falls Kopfzeile vorhanden)
-    * **Delimiter/Separator** (z. B. ; oder ,)
-    * **Encoding** (UTF-8)
-    * **Ziel-Tabelle**: bestehend wählen oder **Create new table**
-  * Vorschau kontrollieren → **Apply/OK**.
+
+===== 2) CSV importieren (WebStorm GUI) =====
+**Ziel**: Eine CSV-Datei (z. B. ''genres.csv'') in die Datenbank ''letterboxd_film_db'' laden (Datenbank vorher erstellen – siehe Video).
+
+  * Rechtsklick auf das gewünschte **Schema** → **Import/Export → Import Data from File(s)**.
+  * CSV-Datei auswählen → **Datentypen** prüfen und bei Bedarf anpassen (z. B. Spalte ''genre'' von ''TEXT'' zu ''VARCHAR(50)'' ändern).
+  * Vorschau kontrollieren → **Apply / OK**.
 
 <WRAP center round box 80%>
-**Platzhalter Screenshot**: CSV-Import-Dialog (Mapping)  
+==== Screenshot: CSV-Daten importieren  ====
+CSV-Import-Dialog (Mapping)
 {{ :modul:m290_guko:learningunits:lu13:theorie:screenshot_2025-11-23_at_17.38.39.png?900&direct | CSV-Import: Mapping }}
 </WRAP>
 
-**Tipps**
-  * Dezimaltrennzeichen: CSV und Tabellenspalten-Typ (DECIMAL/DOUBLE) abstimmen.
-  * Datum/Uhrzeit-Formate (z. B. ''YYYY-MM-DD'').
-  * Leere Felder → ggf. **NULL** zulassen oder Default-Werte definieren.
+===== 3) CSV-Import per SQL =====
+Wir laden die Datei ''genres.csv'' (z. B. aus einer letterboxd ((Film-Community-Plattform)) -Datenbank) in die Tabelle ''genres''.
 
-===== 3) CSV/Excel/JSON exportieren (WebStorm GUI) =====
-**Ziel**: Tabelleninhalte oder Abfrageergebnis exportieren.
+**Voraussetzungen**
 
-  * Tabelle öffnen **oder** SELECT-Resultat anzeigen.
-  * Toolbar: **Export Data** → Format wählen (CSV/Excel/JSON/Markdown …).
-  * Optionen:
-    * **Add column header** (Spaltennamen in erster Zeile)
-    * **Transpose** (optional)
-    * **Output file** wählen → **Export to File**.
+  * Verbindung in WebStorm ist aktiv.
+  * In den Data-Source-Eigenschaften ist **AllowLoadLocalInfile** auf **TRUE** gesetzt (im Video gezeigt).
+  * Der Pfad zur CSV-Datei ist korrekt (angepasst an Betriebssystem und Benutzerkonto).
 
-<WRAP center round box 80%>
-**Platzhalter Screenshot**: Export-Dialog  
-{{ :modul:m290_guko:learningunits:lu13:media:webstorm_export_data_dialog.png?900 | Export Data: Optionen }}
-</WRAP>
-
-===== 4) Mini-Übung =====
-  * Importieren Sie **''lernende.csv''** in **''lernende''**.
-  * Importieren Sie **''noten.csv''** in **''noten''**.
-  * Prüfen Sie mit:
+**Tabelle anlegen**
 <WRAP center round box 80%>
 <code sql>
-SELECT COUNT(*) FROM lernende;
-SELECT * FROM noten ORDER BY geprueft_am DESC LIMIT 5;
+CREATE TABLE IF NOT EXISTS genres (
+id INT NOT NULL,
+genre VARCHAR(50) NOT NULL
+);
 </code>
 </WRAP>
-  * Exportieren Sie die Tabelle **''lernende''** als **CSV** und als **Excel (xlsx)**.
+
+**Import mit ''LOAD DATA LOCAL INFILE''**
+Anstatt via der Webstorm-Oberfläche können wir die Daten auch via SQL-Befehl importieren:
+<WRAP center round box 80%>
+<code sql>
+LOAD DATA LOCAL INFILE '/Pfad/zu/genres.csv'
+INTO TABLE genres
+FIELDS TERMINATED BY ','
+ENCLOSED BY '"'
+LINES TERMINATED BY '\n'
+IGNORE 1 ROWS;
+</code>
+</WRAP>
+
+**Hinweise**
+
+  * **Header-Zeile**: Durch ''IGNORE 1 ROWS'' wird die Kopfzeile übersprungen.
+  * **Trennzeichen & Encoding**: Für dieses CSV wird ein Komma als Separator und UTF-8 als Zeichensatz verwendet.
+  * **Windows**: Falls nötig ''LINES TERMINATED BY '\r\n''' verwenden.
+  * **Mehrfach-Genres**: Ein Genre kann mehrfach vorkommen (z. B. ''Drama''). Das ist hier ein "Fehler" des Datensatzes – in der Praxis würde man nun hierfür eine Zwischentabelle zwischen der Tabelle movies und genres (movie_genre) erstellen.
+
+===== 4) CSV/Excel/JSON exportieren (WebStorm GUI) =====
+**Ziel**: Tabelleninhalte oder ein Abfrageergebnis aus WebStorm exportieren.
+
+  * Tabelle öffnen **oder** ein ''SELECT''-Resultat anzeigen lassen.
+  * In der Toolbar: **Export Data** → gewünschtes Format wählen (CSV, Excel, JSON, Markdown …).
+  * Wichtige Optionen:
+    * **Add column header** (Spaltennamen in der ersten Zeile mitexportieren)
+    * **Transpose** (optional, dreht Zeilen/Spalten)
+    * **Output file** wählen → **Export to File** ausführen.
+
+<WRAP center round box 80%>
+==== Screenshot: CSV-Daten exportieren ====
+Export von Resultaten einer SELECT-Abfrage
+{{ :modul:m290_guko:learningunits:lu13:theorie:screenshot_2025-11-23_at_19.04.23.png?direct&900 | Export Data: SELECT-Resultat }}
+
+Export einer ganzen Tabelle
+{{ :modul:m290_guko:learningunits:lu13:theorie:screenshot_2025-11-23_at_19.28.39.png?direct&900 | Export Data: ganze Tabelle }}
+
+Optionen für den CSV-Export
+{{ :modul:m290_guko:learningunits:lu13:theorie:screenshot_2025-11-23_at_19.25.04.png?direct&900 | Export Data: SELECT-Resultat – Optionen }}
+**Extractor:** hier können verschiedene Dateiformate fürs Abspeichern der Daten ausgewählt werden: Excel, JSON((JSON = JavaScript Object Notation; textbasiertes, leichtgewichtiges Datenformat zur Darstellung strukturierter Daten, z. B. für den Datenaustausch zwischen Web-APIs und Anwendungen.)), CSV ect.
+</WRAP>
 
 ===== 5) Fazit =====
-  * CSV ist ideal für **Testdaten** und **schnelle Massenimporte**.
-  * Achten Sie auf **Trennzeichen, Encoding, Datentypen**.
-  * Für **Backups/Migration** ist das **SQL-Skript (LU13b)** besser geeignet (Struktur + Daten).
+
+  * CSV eignet sich gut für Testdaten und schnelle Massenimporte.
+  * Achten Sie auf **Trennzeichen, Encoding und Datentypen**, um typische Fehler zu vermeiden.
+  * Für Backups und Migration ganzer Datenbanken ist ein Export als **SQL-Skript** (Dump mit Struktur und Daten) meist besser geeignet -> nächste Seite.
