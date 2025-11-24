@@ -44,14 +44,10 @@ Diese Lernziele decken die Inhalte der Learning Units **LU07 bis LU13** ab.
     * ''GRANT ... ON datenbank.* TO rolle;''  
   * Rollen **Benutzern zuweisen** und beim Login **automatisch aktivieren**:
     * ''GRANT rolle TO 'user'@'localhost';''  
-    * ''SET DEFAULT ROLE rolle TO 'user'@'localhost';''
+    * ''SET PERSIST activate_all_roles_on_login = ON;''
   * zugewiesene **Rechte anzeigen** und **entziehen**:
     * ''SHOW GRANTS FOR ...;''  
     * ''REVOKE ... FROM ...;''
 
 
-===== LU13 – Datenexport & -import =====
-  * Ich kann eine Datenbank mit **mysqldump** exportieren (struktur- und datenbezogene Optionen benennen) und aus einem Dump **wiederherstellen**.
-  * Ich kenne Varianten, wie ein SQL-Skript **importiert** wird (Client/IDE, Kommandozeile, ''SOURCE''/„Run SQL Script“).
-  * Ich kann **CSV**-Daten in Tabellen **importieren** (z. B. ''LOAD DATA INFILE'' / IDE-Assistent) und auf Datentyp-/Encoding-Fallen achten.
 

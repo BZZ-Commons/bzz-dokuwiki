@@ -42,8 +42,8 @@ Zuerst werden die Rollen in MySQL angelegt:
 
 <WRAP center round box 80%>
 <code sql>
-CREATE ROLE db_admin;
-CREATE ROLE lernende_role;
+CREATE ROLE db_admin@localhost;
+CREATE ROLE lernende_role@localhost;
 </code>
 </WRAP>
 
@@ -57,7 +57,7 @@ Nun legen Sie fest, was die beiden Rollen genau dürfen.
 <code sql>
 GRANT ALL PRIVILEGES
 ON noten_db.*
-TO db_admin
+TO db_admin@localhost
 WITH GRANT OPTION;
 </code>
 </WRAP>
@@ -76,7 +76,7 @@ Alle Lernenden sollen alle Noten sehen können, aber keine Noten verändern oder
 <code sql>
 GRANT SELECT
 ON noten_db.*
-TO lernende_role;
+TO lernende_role@localhost;
 </code>
 </WRAP>
 
@@ -113,10 +113,10 @@ Im nächsten Schritt weisen Sie den Benutzern ihre Rollen zu:
 
 <WRAP center round box 80%>
 <code sql>
-GRANT db_admin
+GRANT db_admin@localhost
 TO 'lehrperson_koch'@'localhost';
 
-GRANT lernende_role
+GRANT lernende_role@localhost
 TO 'lernende_caduff'@'localhost';
 </code>
 </WRAP>

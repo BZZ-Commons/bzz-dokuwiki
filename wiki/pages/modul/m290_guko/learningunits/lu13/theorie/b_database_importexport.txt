@@ -1,95 +1,201 @@
 ====== LU13b: Ganze Datenbank exportieren & importieren (SQL) ======
 
 ===== Lernziele =====
-Sie können …
-  * eine komplette Datenbank (Struktur + Daten) aus WebStorm heraus als **SQL-Skript** exportieren (GUI).
-  * ein SQL-Skript in WebStorm wieder **importieren** (''Run SQL Script'').
-  * Vorteile/Nachteile der GUI-Methode vs. mysqldump-Tool einordnen.
+Aufbauend auf **LU13a** (CSV-Import/-Export) können Sie …
+  * erklären, wann ein **CSV-Export** (nur Daten) und wann ein **SQL-Dump** (Struktur + Daten) sinnvoll ist.
+  * eine komplette Datenbank (Struktur + Daten) aus WebStorm heraus als **SQL-Skript** exportieren.
+  * ein SQL-Skript in WebStorm wieder **importieren** (''Run SQL Script'' bzw. ''Restore with mysql'').
+  * die GUI-Variante in WebStorm mit der Nutzung des CLI-Tools **mysqldump** vergleichen.
+  * grundlegend verstehen, wie Datenbanken auch direkt über die **CLI** mit ''mysqldump'' und ''mysql'' gesichert und wiederhergestellt werden können.
 
 ===== Voraussetzungen =====
   * WebStorm mit **Database Tools and SQL**-Plugin
   * Datenquelle (MySQL) ist verbunden
-  * Beispiel: **''noten_db''** ist vorhanden
+  * Beispiel-Datenbank **''travel_blog''** ist vorhanden  
+    * Tabellen: ''categories'', ''post_category'', ''posts'', ''users''
+    * enthält Beispielinhalte eines echten WordPress-Blogs (Auszug aus **wetraveltheworld.de**)
+    * Zip als SQL 
   * Export-Zielordner ist beschreibbar
+  * MySQL-Tools (''mysql'', ''mysqldump'') sind installiert
 
 <WRAP center round box 80%>
-==== Video Gesamtexport & Wiederherstellung einer Datenbank ====
+==== Video: Gesamtexport & Wiederherstellung einer Datenbank ====
 {{ :modul:m290_guko:learningunits:lu13:theorie:m290_lu13_dumps.mp4?1040x585 | Full Dump & Restore (Video) }}
+//Im Video wird die Datenbank ''travel_blog'' mit ''mysqldump'' exportiert und mit ''mysql'' wieder importiert.//
 </WRAP>
 
-===== 1) Varianten im Überblick =====
+
+
+===== 1) Kontext & Varianten im Überblick =====
+In **LU13a** haben wir Daten als CSV-Dateien importiert und exportiert – also **reine Datensätze** ohne Struktur.
+
+Wenn Sie jedoch eine **ganze Datenbank** sichern wollen (Tabellenstruktur + Inhalte), arbeiten Sie mit **SQL-Skripten** bzw. sogenannten **Dumps** ((Dump = Textdatei mit vielen SQL-Befehlen wie ''CREATE TABLE'', ''INSERT INTO'' usw.)).
+
+Typische Varianten:
+
 <WRAP center round box 80%>
 ^ Variante ^ Beschreibung ^ Vorteile ^ Nachteile ^
-| **GUI: SQL-Generator + Daten-Export** | Struktur (DDL) und Daten getrennt erzeugen | ohne CLI machbar, nachvollziehbar | zwei Schritte, mehr Dateien |
-| **GUI: Export mit ''mysqldump''** | WebStorm ruft ''mysqldump'' auf | ein File, kompletter Dump | Pfad zur EXE nötig, Tool muss lokal vorhanden sein |
+| **A) GUI: SQL-Generator + Daten-Export** | WebStorm erzeugt ein DDL-Skript für die Struktur und separate Skripte/CSV für die Daten | Ohne zusätzliche Tools, gut nachvollziehbar, ideal für Unterricht | Mehrere Dateien, bei vielen Tabellen unübersichtlich |
+| **B) GUI: Export mit ''mysqldump''** | WebStorm ruft im Hintergrund das CLI((CLI = Command Line Interface))-Tool ''mysqldump'' auf und schreibt einen vollständigen Dump | Ein File, Standard-Format für Backups/Migrationen | Pfad zur EXE nötig, MySQL-Tools müssen lokal installiert sein |
+| **C) CLI: ''mysqldump'' / ''mysql''** (optional) | Direkter Aufruf im Terminal ohne WebStorm | Unabhängig von IDE, eignet sich für Server (nur CLI-Zugriff) | CLI-Kenntnisse nötig, **PATH-Variable** muss korrekt gesetzt sein |
 </WRAP>
 
-**Empfehlung Unterricht**: Nutzen Sie primär die **GUI-Variante ohne CLI** (reproduzierbar, keine PATH-Hürden). Die mysqldump-Option zeigen Sie als **Optional/Profi**.
+Im Unterricht arbeiten wir primär mit den **GUI-Varianten (A und B)**.  
+Variante C (CLI) ist eine **Kurz-Vorschau für Fortgeschrittene**.
 
-===== 2) Export (GUI ohne mysqldump) – Struktur + Daten =====
-**A. Struktur (DDL) erzeugen**
-  * Rechtsklick **Datenbank/Schema ''noten_db''** → **SQL Scripts → SQL Generator**.
-  * **Layout/Output** festlegen → **Save to file** (z. B. ''noten_db_ddl.sql'').
+
+
+===== 2) mysqldump – Grundidee =====
+Das Utility-Tool **''mysqldump''** ist ein Kommandozeilenprogramm:
+
+  * Es erstellt aus einer Datenbank ein **SQL-File**, in dem alle nötigen Befehle stehen:
+    * Struktur: z. B. ''CREATE DATABASE'', ''CREATE TABLE …''
+    * Daten: viele ''INSERT INTO …''-Befehle
+  * Dieses File kann später mit **''mysql''** wieder eingelesen werden, um die Datenbank **komplett** aufzubauen.
+  * Auf produktiven Servern steht oft nur ein **CLI-Zugriff** zur Verfügung – dort ist ''mysqldump'' der Standardweg für Backups.
+
+
+
+===== 3) Variante A: Export (GUI ohne mysqldump) – Datenbank-Struktur =====
+Diese Variante nutzt nur WebStorm und ist unabhängig von ''mysqldump''. Sie ist gut geeignet, um das Prinzip von **Struktur vs. Daten** zu verstehen.
+
+**A. Datenbank-Struktur (DDL) erzeugen (ohne Daten export)**
+  * Rechtsklick auf das Schema **''travel_blog''** → **SQL Scripts → SQL Generator**.
+  * Im Dialog:
+    * ''Generate'': Creation script completely
+    * Speichern: Klick aufs Disketten-Symbol auf der rechten Seite (z. B. ''travel_blog_ddl.sql'').
+  * Datei speichern.
 
 <WRAP center round box 80%>
-**Platzhalter Screenshot**: SQL Generator (Schema → DDL)  
-{{ :modul:m290_guko:learningunits:lu13:media:sql_generator_schema.png?900 | SQL Generator: noten_db DDL }}
+{{ :modul:m290_guko:learningunits:lu13:theorie:screenshot_2025-11-24_at_08.16.55.png?direct&900 | SQL Generator: travel_blog DDL }}
+//SQL-Generator: erzeugt die CREATE TABLE-Befehle für ''travel_blog''.//
 </WRAP>
 
-**B. Daten exportieren**
-  * Tabellen öffnen **oder** mehrere Tabellen im Database-Toolfenster markieren.
+**B. Daten exportieren **
+  * Tabellen von **''travel_blog''** öffnen (''categories'', ''post_category'', ''posts'', ''users'') **oder** mehrere Tabellen im Database-Toolfenster markieren.
   * Rechtsklick → **Import/Export → Export Data to File**.
-  * Export-Format: **SQL** (falls verfügbar) **oder** CSV/Excel (pro Tabelle).
-  * Einzel-Exports pro Tabelle erzeugen (z. B. ''noten.sql'', ''lernende.sql'', ''module.sql'').
+  * Export-Format: **Extractor** auf //SQL-Inserts// setzen
+  * Dieses Vorgehen erzeugt ein SQL-File nur mit ''INSERT INTO''-Statements. Die Tabellenstruktur wird nicht erstellt. Mit der Option "Add table definition (DDL)" können die ''CREATE TABLE...'' Befehle zum Erstellen der Datenbankstruktur mit erzeugt werden.
+  * Pro Tabelle eine Datei erzeugen, z. B.:
+    * ''travel_blog_categories.sql''
+    * ''travel_blog_post_category.sql''
+    * ''travel_blog_posts.sql''
+    * ''travel_blog_users.sql''
 
-**C. (Optional) Ein Skript bündeln**
-  * Öffnen Sie eine **neue Query Console** und fügen Sie nacheinander die erzeugten Dateien ein.
-  * Speichern als gesamtes Skript (z. B. **''noten_db_full.sql''**).
-
-===== 3) Export (Optional/Profi) – Full Dump via mysqldump-Dialog =====
-Voraussetzung: ''mysqldump'' ist lokal vorhanden (Pfad zur EXE bekannt).
-
-  * Rechtsklick **''noten_db''** → **Export with 'mysqldump'**.
-  * **Path to executable** setzen (z. B. ''C:\\Programme\\MySQL\\bin\\mysqldump.exe'').
-  * Optionen wählen (Struktur+Daten) → **Run** → erzeugt eine **''.sql''**-Datei.
 
 <WRAP center round box 80%>
-**Platzhalter Screenshot**: Export mit mysqldump (Dialog)  
-{{ :modul:m290_guko:learningunits:lu13:media:export_with_mysqldump.png?900 | mysqldump-Dialog }}
+{{ :modul:m290_guko:learningunits:lu13:theorie:screenshot_2025-11-24_at_08.34.00.png?direct&900 | SQL Generator: travel_blog DDL }}
+//SQL-Generator: erzeugt die CREATE TABLE-Befehle für ''travel_blog''.//
 </WRAP>
 
-===== 4) Import eines SQL-Skripts (Wiederherstellung) =====
-**Ziel**: Ein zuvor exportiertes **''.sql''** (z. B. ''noten_db_full.sql'') wieder einspielen.
 
-  * Rechtsklick auf **Data Source/Schema** → **SQL Scripts → Run SQL Script**.
-  * Datei wählen → **Open** → Ausführung abwarten → Output kontrollieren.
-  * Alternativ: Datei in Query Console öffnen → ausführen.
+===== 4) Variante B: Full Dump via mysqldump-Dialog (wie im Video) =====
+
+In dieser Variante nutzt WebStorm das CLI-Tool **''mysqldump''** im Hintergrund.
+
+==== 4.1 Pfad zu mysqldump ermitteln ====
+Damit WebStorm ''mysqldump'' aufrufen kann, muss es den **vollständigen Pfad** zur ausführbaren Datei kennen.
+
+**macOS**
+  * ''Spotlight'' (=Suche) öffnen → nach **Terminal** suchen und starten.
+  * Befehl eingeben:
+    <code>
+    which mysqldump
+    </code>
+  * Den angezeigten Pfad (z. B. ''/usr/local/mysql/bin/mysqldump'') kopieren.
+
+**Windows**
+  * Im Programme-Ordner nach **MySQL** suchen (z. B. ''C:\Program Files\MySQL\MySQL Server 9.4\bin'').
+  * In diesem Ordner liegt die Datei **''mysqldump.exe''**.
+  * Den Ordnerpfad aus der Adressleiste kopieren und beim Einfügen in WebStorm mit **''\mysqldump.exe''** ergänzen.
+
+**Hinweis PATH-Variable**
+  * In der **CLI-Variante (ohne WebStorm)** ist es praktisch, wenn die Programme **''mysql''** und **''mysqldump''** über die **PATH-Variable** gefunden werden.
+  * macOS/Linux: PATH wird in der Shell-Konfiguration (z. B. ''.zshrc'') gesetzt.
+  * Windows: PATH wird in den **Umgebungsvariablen** (Systemsteuerung → System → Erweiterte Systemeinstellungen → Umgebungsvariablen) gepflegt.
+  * Für diese Lerneinheit genügt: Wenn der Befehl im Terminal **„not found“** meldet, ist meist der PATH nicht korrekt gesetzt.
+
+
+
+==== 4.2 Export mit ''mysqldump'' aus WebStorm ====
+Beispiel: Datenbank **''travel_blog''** als Dump exportieren (wie im Video).
+
+  * Rechtsklick auf **''travel_blog''** → **Import/Export → Export with 'mysqldump'**.
+  * Im Dialog:
+    * **Path to executable**: den zuvor ermittelten Pfad zu ''mysqldump'' einfügen.
+    * **Output result to**: Zielordner und Dateiname (z. B. ''travel_blog_dump.sql'') wählen.
+    * Optionen für Struktur + Daten beibehalten (Standardwerte sind meist OK).
+  * Mit **Run** den Export starten.
+  * Ergebnis: Ein SQL-Dump-File (z. B. **''travel_blog_dump.sql''**), das Struktur und Daten der Tabellen  
+    ''categories'', ''post_category'', ''posts'' und ''users'' enthält.
 
 <WRAP center round box 80%>
-**Platzhalter Screenshot**: Run SQL Script  
-{{ :modul:m290_guko:learningunits:lu13:media:run_sql_script_dialog.png?900 | Run SQL Script }}
+{{ :modul:m290_guko:learningunits:lu13:theorie:screenshot_2025-11-24_at_08.37.45.png?direct&900 | Export with 'mysqldump' }}
+//WebStorm-Dialog: Export der Datenbank ''travel_blog'' mit ''mysqldump''.//
 </WRAP>
 
-**Hinweise**
-  * Falls die DB im Skript **DROP/CREATE DATABASE** enthält, prüfen Sie die Ziel-Instanz.
-  * Zeichensatz **UTF-8** sicherstellen.
-  * Bei Fehlern: Reihenfolge der Tabellen (FKs) prüfen, ggf. Constraints temporär deaktivieren.
 
-===== 5) Mini-Übung =====
-  * Exportieren Sie **''noten_db''**:
-    * **Variante ohne CLI**: DDL mit SQL-Generator + Daten je Tabelle exportieren (und optional bündeln).
-  * Löschen Sie testweise die DB (oder legen Sie **''noten_db_kopie''** an).
-  * Importieren Sie die exportierten Skripte per **Run SQL Script**.
-  * Prüfen Sie:
+
+===== 5) Import eines SQL-Dumps (Wiederherstellung) =====
+
+Sie können sowohl ein **manuell erzeugtes SQL-Skript** (Variante A) als auch einen **mysqldump-Dump** (Variante B) wieder einspielen.
+
+==== 5.1 Import per Run SQL Script (Variante A) ====
+**Ziel**: Ein Skript wie **''travel_blog_full.sql''** aus Abschnitt 3 wieder importieren.
+
+  * Ggf. eine leere Datenbank **''travel_blog_copy''** anlegen.
+  * Rechtsklick auf die **Data Source** oder das gewünschte Schema → **SQL Scripts → Run SQL Script**.
+  * Datei auswählen (z. B. ''travel_blog_full.sql'') → **Open**.
+  * Ausführung abwarten und Output kontrollieren.
+  * Wird die neu erstellte Datenbank nicht angezeigt -> Rechtsklick auf die **Data Source** → Tools -> Manage Shown Schemas... -> Datenbank auswählen
+
+
+==== 5.2 Import (Restore) eines mysqldump-Files (Variante B) ====
+**Ziel**: Dump **''travel_blog_dump.sql''** (aus Abschnitt 4) in eine neue Datenbank importieren.
+
+  * Leere Datenbank anlegen (z. B. **''travel_blog_restore''**).
+  * Rechtsklick auf diese Datenbank → **Import/Export → Restore with 'mysql'…**.
+  * Im Dialog:
+    * Pfad zum Dump-File (z. B. ''travel_blog_dump.sql'') wählen.
+    * Prüfen, dass die Verbindung zur richtigen MySQL-Instanz zeigt.
+  * **Run** ausführen, bis der Import abgeschlossen ist.
+  * Anschliessend im Database-Toolfenster auf **Refresh** klicken, damit alle Tabellen sichtbar werden.
+
+**Allgemeine Hinweise**
+  * Enthält das Skript ''DROP/CREATE DATABASE'', immer prüfen, ob es auf die **richtige Instanz** angewendet wird.
+  * Zeichensatz möglichst **UTF-8** verwenden.
+  * Bei Fehlern:
+    * Reihenfolge der Tabellen (Fremdschlüssel) prüfen (z. B. ''posts'' vor ''post_category'').
+    * Ggf. Constraints temporär deaktivieren und später wieder aktivieren.
+
+
+
+===== 6) (Optional) Direkt über CLI: mysqldump & mysql =====
+Für Server ohne WebStorm oder für Automatisierung (z. B. Cron-Jobs) werden Datenbanken häufig **direkt im Terminal** gesichert.
+
+**Export der Datenbank ''travel_blog''**
 <WRAP center round box 80%>
-<code sql>
-SHOW DATABASES LIKE 'noten_db%';
-SELECT COUNT(*) FROM noten_db.lernende;
-SELECT COUNT(*) FROM noten_db.noten;
+<code>
+mysqldump -u BENUTZERNAME -p travel_blog > travel_blog_dump.sql
 </code>
 </WRAP>
 
-===== 6) Fazit =====
-  * Für **Backups/Migrationen** ist der Export als **SQL-Skript** ideal (Struktur + Daten).
-  * In WebStorm geht das ohne CLI – wahlweise komplett über GUI.
-  * **mysqldump** ist die Profi-Variante (ein File, robust), benötigt aber die Tool-EXE.
+**Import in eine (leere) Datenbank ''travel_blog_restore''**
+<WRAP center round box 80%>
+<code>
+mysql -u BENUTZERNAME -p travel_blog_restore < travel_blog_dump.sql
+</code>
+</WRAP>
+
+Voraussetzungen:
+
+  * Die Programme **''mysql''** und **''mysqldump''** sind installiert.
+  * Die **PATH-Variable** ist so gesetzt, dass beide Befehle im Terminal gefunden werden  
+    (ansonsten den **vollen Pfad** voranstellen, z. B. ''C:\Program Files\MySQL\...\mysqldump.exe'').
+
+
+
+===== 7) Fazit =====
+  * Für **Backups und Migrationen** ganzer Datenbanken sind **SQL-Dumps** ideal (Struktur + Daten in einem oder wenigen Files).
+  * In WebStorm können Sie sowohl ohne zusätzliche Tools (Variante A) als auch mit **mysqldump/mysql** (Variante B) arbeiten.
+  * Die reine **CLI-Variante** mit ''mysqldump'' und ''mysql'' ist der Standard auf Servern – setzt aber eine korrekt gesetzte **PATH-Variable** und etwas Terminal-Erfahrung voraus.
