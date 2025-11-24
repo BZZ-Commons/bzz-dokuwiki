@@ -1,0 +1,10 @@
+==== LU12.A04 pgVector in SpringAI verwenden ====
+
+Holen Sie sich die Tests mit einem Cherry-Pick auf ''f6c5bc4''.
+
+Studieren Sie die Änderungen gründlich und stellen Sie sicher, dass der Test ''StoreServiceTest.java'' ohne Fehler ausgeführt werden kann.
+<code bash>
+./gradlew test
+</code>
+
+An dieser Stelle sei angemerkt, dass der Test die echte Datenbank verwendet anstatt einer separaten Testdatenbank oder einem Mock. Damit nicht bei jeder Testausführung Duplikate hinzugefügt werden, wurde in der Klasse ''DocumentFactory'' die id deterministisch basierend auf dem Text erstellt. Dadurch werden Datensätze mit demselben Inhalt überschrieben anstatt neu angelegt.

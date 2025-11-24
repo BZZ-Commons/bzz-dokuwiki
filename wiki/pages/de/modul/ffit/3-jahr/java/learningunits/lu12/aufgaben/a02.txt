@@ -1,4 +1,4 @@
-==== LU11.A02 pgvector direkt testen (optional) ====
+==== LU12.A02 pgvector direkt testen (optional) ====
 
 Führen Sie die nachfolgenden Statements aus, um die Installation von ''pgvector'' zu überprüfen:
   * Erstellen Sie die Tabelle ''documents'' <WRAP><code psql>CREATE TABLE documents (

@@ -1,0 +1,11 @@
+==== LU12.A03 SpringAI-Projekt initialisieren ====
+
+Machen Sie einen Fork (**mit allen Branches!**) von folgendem Repository:
+https://github.com/bzz-templates-java/ffit-lu11-rag-ai-chatbot
+
+Klonen Sie Ihr Fork-Repository.
+
+Builden und starten Sie das Projekt mittels:
+<code bash>./gradlew bootRun</code>
+
+Überprüfen Sie zudem, ob alle Annotationen wie z.B. ''@Slf4j'' in ''ApplicationMain.java'' in Ihrer IDE importiert werden können.
