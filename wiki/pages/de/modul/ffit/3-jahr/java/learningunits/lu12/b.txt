@@ -1,0 +1,67 @@
+====== LU12b - Crawler ======
+
+Als Datenquelle für unseren Chatbot möchten wir https://wiki.bzz.ch/ nutzen. Dadurch wird der Chatbot Fragen zum Unterricht beantworten können. 
+Zudem ist beim Wiki im Gegensatz zu z.B. Moodle keine Authentisierung erforderlich, was das Vorhaben etwas vereinfacht.
+
+==== XML-RPC ====
+
+Mit RPC (Remote Procedure Call) lassen sich Befehle auf einem fremden System ausführen. XML-RPC nutzt RPC um Daten im XML-Format auszutauschen.
+
+<WRAP info 60%>
+**Notiz am Rande**
+
+Im Prinzip ist XML-RPC der Vorgänger von SOAP (Simple Object Access Protocol). SOAP nutzt ebenfalls ein erweitertes XML-Format wird aber heutzutage von REST, basierend auf JSON, verdrängt. Es gibt jedoch noch zahlreiche Systeme, die SOAP (historisch bedingt) nutzen.
+
+Ebenfalls gibt es JSON-RPC. Dieses wurde aber grösstenteils durch REST abgelöst.
+</WRAP>
+
+https://wiki.bzz.ch/ nutzt DokuWiki (https://www.dokuwiki.org/de:dokuwiki), welches XML-RPC und teilweise auch JSON-RPC unterstützt.
+
+^ Beispiel XML-RPC ^ Beispiel JSON-RPC ^
+| Request: <WRAP>
+<code bash>curl -X POST https://wiki.bzz.ch/lib/exe/xmlrpc.php \
+     -H "Content-Type: text/xml" \
+     --data '<?xml version="1.0"?>
+<methodCall>
+  <methodName>wiki.getPage</methodName>
+  <params>
+    <param>
+      <value><string>de:modul:ffit:3-jahr:start</string></value>
+    </param>
+  </params>
+</methodCall>'</code>
+</WRAP> | Request: <WRAP>
+<code bash>curl -X POST https://wiki.bzz.ch/lib/exe/jsonrpc.php \
+     -H "Content-Type: application/json" \
+     --data '{
+        "jsonrpc": "2.0",
+        "id": "1",
+        "method": "wiki.getPage",
+        "params": ["de:modul:ffit:3-jahr:start"]
+     }'</code>
+</WRAP> |
+| Response: <WRAP><code xml><?xml version="1.0"?>
+<methodResponse>
+    <params>
+        <param>
+            <value>
+                <string>====== 3. Lehrjahr =====
+
+===== Inhalte =====
+
+&lt;nspages . -subns -nopages -exclude -h1 -textNS=&quot;&quot; -simplelist&gt;</string>
+            </value>
+        </param>
+    </params>
+</methodResponse></code>
+</WRAP> | Response: <WRAP>
+<code json>{
+    "id": "1",
+    "jsonrpc": "2.0",
+    "result": "====== 3. Lehrjahr =====\n\n===== Inhalte =====\n\n<nspages . -subns -nopages -exclude -h1 -textNS=\"\" -simplelist>"
+}</code>
+</WRAP> |
+
+Man sieht, dass die Antwort im Prinzip dieselbe ist.
+
+Die von DokuWiki unterstützten Befehle sind aufgelistet auf https://www.dokuwiki.org/lib/exe/openapi.php#?route=overview

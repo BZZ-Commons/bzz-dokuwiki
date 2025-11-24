@@ -1,0 +1,14 @@
+====== 2. Semester: CI/CD ======
+===== Ablauf =====
+Software-Projekte mit praktischer Anwendungen von
+  * Formatter, Linter, Editorconfig, ...
+  * SonarQube/SonarCloud/SonarLint
+  * E2e-Testing
+  * Cloud-Publishing
+  * (JUnit,) Performance-Testing
+
+===== Inhalte =====
+
+Der Inhalt des Modul ist ist Learningunits gegliedert.
+
+<nspages .:learningunits -subns -nopages -exclude -h1 -textNS="" -simplelist>
