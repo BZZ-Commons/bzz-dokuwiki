@@ -12,9 +12,9 @@ Aufbauend auf **LU13a** (CSV-Import/-Export) können Sie …
   * WebStorm mit **Database Tools and SQL**-Plugin
   * Datenquelle (MySQL) ist verbunden
   * Beispiel-Datenbank **''travel_blog''** ist vorhanden  
+    * Falls Sie die Datenbank nochmals importieren möchten, laden Sie dazu dieses SQL-Skript (gezippt) herunter {{ :modul:m290_guko:learningunits:lu09:theorie:travel_blog_2025_10_26_19_39_40-dump.sql.zip | Travel Blog DB}} -> Anleitung zum Import in LU09.
     * Tabellen: ''categories'', ''post_category'', ''posts'', ''users''
-    * enthält Beispielinhalte eines echten WordPress-Blogs (Auszug aus **wetraveltheworld.de**)
-    * Zip als SQL 
+    * enthält Beispielinhalte eines echten WordPress-Blogs (Auszug aus //wetraveltheworld.de//)
   * Export-Zielordner ist beschreibbar
   * MySQL-Tools (''mysql'', ''mysqldump'') sind installiert
 

@@ -5,7 +5,7 @@
 Sie können …
 
   * in einer einfachen Noten-Datenbank zwei sinnvolle Rollen definieren (Administration und Lernende).
-  * mit den Befehlen ''CREATE USER'', ''CREATE ROLE'', ''GRANT'', ''SHOW GRANTS'', ''SET DEFAULT ROLE'' und ''REVOKE'' in MySQL umgehen.
+  * mit den Befehlen ''CREATE USER'', ''CREATE ROLE'', ''GRANT'', ''SHOW GRANTS'', ''SET PERSIST activate_all_roles_on_login'' und ''REVOKE'' bzw. ''DROP USER''/''DROP ROLE'' in MySQL umgehen.
   * erklären, wie das Prinzip der minimalen Privilegien mit Rollen umgesetzt werden kann.
 
 ===== Ausgangslage: Noten-Datenbank =====
