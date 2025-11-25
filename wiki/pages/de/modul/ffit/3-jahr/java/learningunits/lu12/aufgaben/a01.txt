@@ -4,7 +4,7 @@ Wie es der Zufall so will, gibt es eine Erweiterung für PostgreSQL names ''pgve
 
 Installieren Sie die Erweiterung für PostgreSQL 17 folgendermassen:
   * https://github.com/andreiramani/pgvector_pgsql_windows/releases/tag/0.8.1_17.6 runterladen und readme.txt lesen
-  * Im korrekten Verzeichnis entpacken
+  * Entpacken und ins korrekte Verzeichnis kopieren
   * Loggen Sie sich mit dem Superuser ein. <code bash>psql -U postgres</code>
   * Erstellen Sie den Datentyp ''vector'' <code psql>CREATE EXTENSION vector;</code>
   * Überprüfen Sie, ob die entsprechende Zeile vorhanden ist <code psql>SELECT extname,extrelocatable,extversion FROM pg_extension where extname='vector';</code>

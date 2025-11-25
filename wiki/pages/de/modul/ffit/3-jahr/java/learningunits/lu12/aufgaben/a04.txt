@@ -2,6 +2,25 @@
 
 Holen Sie sich die Tests mit einem Cherry-Pick auf ''f6c5bc4''.
 
+Erstellen Sie einen Datenbank-Benutzer und eine Database. Sie können dabei auch andere Namen bzw. Passwörter wählen.
+<code sql>
+CREATE DATABASE ragdb;
+\c ragdb;
+CREATE USER rag_user WITH PASSWORD 'secret';
+GRANT ALL PRIVILEGES ON DATABASE ragdb TO rag_user;
+GRANT USAGE, CREATE ON SCHEMA public TO rag_user;
+GRANT ALL PRIVILEGES ON SCHEMA public TO rag_user;
+</code>
+
+Erstellen Sie ein ''application.properties'' unter ''src/main/resources/'' mit folgenden Einstellungen.
+<code properties>
+spring.datasource.url=jdbc:postgresql://localhost:5432/ragdb
+spring.datasource.username=rag_user
+spring.datasource.password=secret
+</code>
+
+
+
 Studieren Sie die Änderungen gründlich und stellen Sie sicher, dass der Test ''StoreServiceTest.java'' ohne Fehler ausgeführt werden kann.
 <code bash>
 ./gradlew test
