@@ -1,0 +1,13 @@
+==== LU12.A05 Chunking implementieren ====
+
+Holen Sie sich die Tests mit einem Cherry-Pick auf ''6685a28''.
+
+Implementieren Sie die fehlende Logik in der Klasse ''DocumentService.java'' und stellen Sie dadurch sicher, dass die Tests in ''DocumentServiceTest.java'' fehlerfrei ausgeführt werden können.
+<code java>
+List<String> result = new ArrayList<>();
+
+// TODO: implement logic
+
+log.debug("Created {} chunks with chunkSize {} and overlap {}", result.size(), chunkSize, overlap);
+return result;
+</code>

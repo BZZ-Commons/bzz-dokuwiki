@@ -1,0 +1,5 @@
+==== LU12.A06 Manuelle XML-RPC-Abfrage ====
+
+Ermitteln Sie den Zeitstempel der letzten Änderung der Seite https://wiki.bzz.ch/de/modul/ffit/3-jahr/start via XML-RPC der Methode ''wiki.getPageInfo'';
+
+Geben Sie das gesamte Tag als Antwort an: <dateTime.iso8601>...</dateTime.iso8601>
