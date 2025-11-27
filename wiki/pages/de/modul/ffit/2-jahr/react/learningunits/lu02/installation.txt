@@ -1,0 +1,98 @@
+====== LU02a - Installation ======
+
+===== 1. Installation =====
+
+Um React Router in einem bestehenden Projekt zu nutzen, installierst du das Package:
+
+<code bash>
+npm install react-router-dom
+</code>
+
+===== 2. BrowserRouter im Einstiegspunkt einbinden =====
+
+Öffne **src/main.jsx** (bei Create React App heisst diese Datei meistens ''src/index.js'')  
+und wickle die App mit dem ''BrowserRouter'':
+
+<code jsx>
+import { BrowserRouter } from "react-router-dom";
+import ReactDOM from "react-dom/client";
+import App from "./App.jsx";
+
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>
+);
+</code>
+
+Damit aktivierst du das Routing für das gesamte Projekt.
+
+===== 3. Routen in App.jsx definieren =====
+
+In der Datei **App.jsx** legst du nun deine ersten Routen an:
+
+<code jsx>
+import { Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import About from "./pages/About";
+
+function App() {
+  return (
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/about" element={<About />} />
+    </Routes>
+  );
+}
+
+export default App;
+</code>
+
+===== Erklärung =====
+  * ''<Routes>'' enthält alle Routen.
+  * Jede ''<Route>'' definiert einen Pfad und die zugehörige Komponente.
+
+===== 4. Beispiel-Seiten =====
+
+Erstelle die Seiten unter ''src/pages/'':
+
+**Home.jsx**
+<code jsx>
+function Home() {
+  return <h1>Startseite</h1>;
+}
+export default Home;
+</code>
+
+**About.jsx**
+<code jsx>
+function About() {
+  return <h1>Über uns</h1>;
+}
+export default About;
+</code>
+
+===== 5. Navigation hinzufügen =====
+
+Benutze dafür ''<Link>'' statt ''<a>'':
+
+<code jsx>
+import { Link } from "react-router-dom";
+
+function Navbar() {
+  return (
+    <nav>
+      <Link to="/">Home</Link>
+      <Link to="/about">Über uns</Link>
+    </nav>
+  );
+}
+
+export default Navbar;
+</code>
+
+===== 6. 404-Seite (optional) =====
+
+<code jsx>
+<Route path="*" element={<h1>Seite nicht gefunden</h1>} />
+</code>

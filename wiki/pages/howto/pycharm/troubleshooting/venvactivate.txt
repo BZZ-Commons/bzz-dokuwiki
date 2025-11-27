@@ -4,7 +4,7 @@ Manchmal muss das Virtual Environment manuell aktiviert werden.
 </WRAP>
 
   - Öffne in PyCharm den Reiter "Terminal".
-  - Gib den Befehl ''.\venv\Scripts\activate.ps1'' ein.
+  - Gib den Befehl ''.\.venv\Scripts\activate.ps1'' bzw. ''.\venv\Scripts\activate.ps1'' ein.
 
 {{:howto:git:classroom_student_59.png?600|}}
 
