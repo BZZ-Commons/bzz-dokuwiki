@@ -1,0 +1,69 @@
+====== LB03 - Administratives ======
+
+===== Rahmenbedingungen =====
+
+<WRAP center round box 80%>
+**LB03 – Projektarbeit Backend & Datenbank**
+
+Sie entwickeln im Team einen kleinen **Backend-Server mit Node.js/Express**, der mit einer **MySQL-Datenbank** spricht und die **CRUD-Operationen** (Create, Read, Update, Delete) für einen gewählten Use Case bereitstellt.
+</WRAP>
+
+  * **Abgabe**
+    * Datum: Letzter Unterrichtstag des aktuellen Semesters  
+      * ME23abc: 19.01.2026  
+      * ME23def: 22.01.2026
+    * Zeit: jeweils **21:00 Uhr**
+    * Abgabeort: **Moodle-Kurs M290 – Abgabe LB03 (ZIP-File)**
+  * **Verfügbare Zeit im Unterricht**
+    * Pro Team: **7 Lektionen**  
+    * ME23c: **6 Lektionen** (wegen Ausflug am 08.12.2025)
+  * **Sozialform**
+    * Partnerarbeit (2 Personen pro Team)
+  * **Technologie**
+    * Backend: Node.js mit Express
+    * Datenbank: MySQL (lokal)
+    * Test/Simulation des Frontends: **Postman**
+
+<WRAP center round box 80%>
+**Input durch Lehrperson**  
+Zu Beginn jeder der kommenden Lektionen gibt es einen kurzen **Input** (z.B. zu Express, CRUD-Routen, REST, HTTP-Statuscodes).  
+Anschliessend steht die restliche Zeit zur Verfügung, um eigenständig an der Projektarbeit zu arbeiten.
+</WRAP>
+
+
+===== Projektablauf =====
+
+  - Partner finden (2er-Teams)
+  - Pro Klasse: **jedes Projekt-Thema / jeder Use Case nur einmal**
+  - Use Case auswählen und der Lehrperson via **Microsoft Teams** melden
+  - Die Lehrperson führt ein übersichtliches **Excel mit allen Teams und Use Cases**, für alle sichtbar
+  - Anschliessend:
+    - Grobe Skizze des **ERM** (Entitäten, Beziehungen, Kardinalitäten)
+    - Erstellen eines **ERD** (Crow’s-Foot) mit allen Tabellen und Schlüsseln
+    - Umsetzung des ERD in MySQL als SQL-Skript (DDL)
+    - Import von Startdaten (DML)
+    - Programmierung des **Node.js/Express-Backends** mit CRUD-Routen
+    - Test der Endpoints mit Postman
+    - Datenbank-Dump mit finaler Struktur und Datensätzen erstellen 
+    - Aufnahme des **Video-Tutorials** (ca. 15 Minuten, alle Team-Mitglieder müssen im Video vorkommen/sprechen)
+    - Zusammenstellung aller Abgabe-Dateien in einem ZIP-Archiv
+
+
+===== Hilfsmittel =====
+
+  * OpenBooks (alle Unterlagen, eigene Notizen, Internetquellen)
+  * Projektunterlagen und Beispiele aus dem Unterricht
+  * Dokumentation zu Node.js, Express und MySQL
+
+<WRAP center round box 80%>
+<color #ed1c24>Grundsätzlich wird die **Eigenleistung** bewertet.  
+Ergebnisse oder Produkte, die nicht fachlich korrekt und in ausreichender Tiefe begründet werden können,  
+werden mit **0 Punkten** bewertet, da hier die Eigenleistung nicht nachweisbar ist.</color>
+</WRAP>
+
+
+===== Hinweise =====
+
+  * Bei Fehlen an notenrelevanten Lektionen ist ein **Arztzeugnis** innert 2 Kalenderwochen der Lehrperson elektronisch zuzuschicken.
+  * Fehlende oder verspätet abgegebene Arztzeugnisse während einer notenrelevanten Unterrichtslektion können zur Note **1.0** führen.
+  * Beide Teammitglieder müssen den eigenen Code und das Datenmodell **mündlich erklären** können (z.B. bei Rückfragen zum Video).
