@@ -1,0 +1,45 @@
+====== LU09b - Knotentypen / Node-Types ======
+
+===== Lernziele =====
+  - Die wichtigsten vier Knotentypen/NodeTypes nennen können.
+  - Die Funktion der wichtigsten vier Nodetypes in eigenen Worten erklären können.
+
+===== Hierarchische Baumstruktur =====
+Im Kontext des HTML-DOM (Document Object Model) werden alle Bestandteile eines Dokuments als Knoten (Nodes) in einer hierarchischen Baumstruktur dargestellt. Jeder Knoten besitzt einen bestimmten Typ und eine definierte Funktion innerhalb der Dokumentstruktur. Die wichtigsten Knotentypen sind im Folgenden aufgeführt.
+
+{{:de:modul:m288:learningunits:lu09:htmldom_notetypes.png?800|}}
+
+===== NodeTypes =====
+==== 1. Document Node / Dokument Knoten ====
+{{:de:modul:m288:learningunits:lu09:documentnode.png?150|}}
+
+Der Document-Knoten stellt die Wurzel des DOM-Baums dar. Er repräsentiert das gesamte Dokument und dient als Einstiegspunkt für den Zugriff auf alle anderen Knoten.
+
+Beispiel: document in JavaScript.
+
+
+==== 2. Element Node ====
+{{:de:modul:m288:learningunits:lu09:elementknode.png?150|}}
+
+Element-Knoten entsprechen den HTML-Elementen eines Dokuments. Jedes HTML-Tag erzeugt einen Element-Knoten (z. B. <body>, <div>, <p>). Element-Knoten können untergeordnete Knoten enthalten und bilden den strukturellen Rahmen des DOM-Baums.
+
+==== 3. Attribute Node ====
+{{:de:modul:m288:learningunits:lu09:attributenode.png?150|}}
+
+Attribute-Knoten repräsentieren die Attribute eines HTML-Elements (z. B. id, class, href). Sie sind logisch einem Element-Knoten zugeordnet, erscheinen jedoch nicht als eigenständige Knoten im sichtbaren DOM-Baum. Attribute informieren über Zusatzinformationen eines Elements.
+
+==== 4. Text Node ====
+{{:de:modul:m288:learningunits:lu09:textnode.png?150|}}
+
+Text-Knoten enthalten den tatsächlichen Textinhalt innerhalb eines HTML-Elements. Beispiel: In <p>Beispieltext</p> ist „Beispieltext“ ein Text-Knoten, der dem entsprechenden <p>-Element untergeordnet ist.
+
+===== Lernvideos =====
+
+<color #ed1c24>TBD</color>
+
+===== Zusatzmaterial =====
+  * [[https://www.w3schools.com/js/js_htmldom.asp|W3School - HTML-DOM]]
+  * [[https://wiki.selfhtml.org/wiki/JavaScript/DOM|SelfHTML- HTML DOM]]
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir
