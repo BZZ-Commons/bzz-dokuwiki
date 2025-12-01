@@ -140,10 +140,12 @@ Vielleicht erkennen Sie beim Testen, dass ein Fehler nur bei bestimmten Werten a
 
 **Beispiel:** "Rundungsfehler treten nur bei Seitenlängen > 50 auf."
 
-<bootnote important>
+
+<WRAP center round tip 60%>
 Das Bemerkungsfeld soll nur Beobachtungen des Testers enthalten.
 Vermeiden Sie es, dem Programmierer die Lösung auf's Auge zu drücken.
-</bootnote>
+</WRAP>
+
 
 ==== Fazit ====
 

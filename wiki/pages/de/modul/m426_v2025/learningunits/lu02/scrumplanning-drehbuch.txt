@@ -1,4 +1,68 @@
-====== Scrum Planning Drehbuch ======
+====== Sprint Planning Drehbuch ======
 
-SM: Moderiert und eröffnet Meeting
-PO: 
+===== 1. Rollen und Aufgaben =====
+**Product Owner (PO)**\\
+  * Präsentiert die User Stories aus dem Product Backlog
+  * Klärt unklare Punkte zu Anforderungen
+  * Unterstützt bei der Priorisierung
+  * Geht auf Rückfragen der Entwickler ein\\
+
+
+**Scrum Master (SM)**\\
+  * Moderiert das Meeting
+  * Achtet auf die Time Box (max. 30 Minuten)
+  * Hilft dem Team, Scrum-Regeln einzuhalten und den Ablauf zu verstehen
+
+
+**Entwicklungsteam** (2–3 Entwickler)\\
+  * Prüft die User Stories
+  * Schätzt den Aufwand für die Umsetzung
+  * Bestimmt selbst, welche User Stories im Sprint umgesetzt werden können
+  * Plant die Umsetzung der Einträge im Sprint Backlog
+
+
+----
+
+===== Drehbuch =====
+
+**Kickoff:**\\
+  - Begrüßung durch den Scrum Master.
+  - Der Product Owner präsentiert das Sprintziel. Das Sprintziel beschreibt kurz, welchen Wert das Team im kommenden Sprint liefern soll.\\ "Was wollen wir in diesem Sprint erreichen?" Bspw. User Login / Registrierung finalisiert, Dashboard / Homepage gebaut, etc.
+  - Der PO zeigt die priorisierten Backlog-Einträge, die geeignet sind, das Sprintziel zu erfüllen.
+
+**Auswahl PBI:** 
+
+  - Das Team schätzt den Aufwand der vorgeschlagenen Backlog-Einträge (falls noch nicht geschehen).
+  - Das Team wählt die Backlog-Items aus, die in diesem Sprint erreicht werden können. 
+  - Der Product Owner beantwortet fachliche Fragen und verfeinert die Aufgaben mit den Entwickler*innen.\\
+
+
+**Struktur:** 
+
+  - Product Owner und Entwicklungsteam zerlegen unter der Moderation des Scrum Masters ausgewählte Items in kleinere Arbeitspakete und halten diese im Sprint-Backlog fest.\\
+  - Für jedes ausgewählte Backlog-Item wird besprochen: Was genau muss getan werden? Welche technischen Schritte sind notwendig? Welche Risiken bestehen
+  - Unter Moderation des Scrum Masters zerlegt das Team die Items in kleine, gut handhabbare Arbeitspakete.
+  - Das Team stellt sicher: alle Aufgaben sind klar benannt, Verantwortlichkeiten sind verständlich, Abhängigkeiten sind sichtbar.
+  - Ziel ist, dass die PBI so detailliert und klar beschrieben sind, dass allen alles klar ist und keine Fragen mehr im Raum stehen.
+  - Definition of Done (DoD): Hinweis auf die gültige DoD; zusätzliche Regeln, falls speziell für den Sprint aktualisiert
+
+
+**Visualisierung:** 
+  - Alle Arbeitspakete werden in den Sprint Backlog übertragen
+  - In der Spalte "Protokolle" steht eine Card für das Protokoll des Sprint Plannings\\
+
+
+**Umsetzung:** 
+  - Das Team startet mit dem Sprint, indem es Aufgaben von "To Do" über "Doing" nach "Done" bewegt.\\
+
+
+
+
+
+
+----
+----  
+Quellen: https://www.awork.com/de/templates/sprint-planung;\\ 
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Gaby Jenni
+
+
