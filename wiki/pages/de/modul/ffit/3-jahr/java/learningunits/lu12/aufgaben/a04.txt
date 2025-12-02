@@ -26,4 +26,15 @@ Studieren Sie die Änderungen gründlich und stellen Sie sicher, dass der Test '
 ./gradlew test
 </code>
 
+Ergänzen Sie allenfalls das application.yml, um sicherzustellen, dass beim Suchen dasselbe Embedding und diesselbe Distanz- beziehungsweise Ähnlichkeitsfunktion verwendet wird, wie beim Abspeichern.
+<code yaml>
+    vectorstore:
+      pgvector:
+        enabled: true
+        table-name: vector_store
+        indexType: "IVFFlat"
+        lists: 100
+        distance-type: "COSINE_DISTANCE"
+</code>
+
 An dieser Stelle sei angemerkt, dass der Test die echte Datenbank verwendet anstatt einer separaten Testdatenbank oder einem Mock. Damit nicht bei jeder Testausführung Duplikate hinzugefügt werden, wurde in der Klasse ''DocumentFactory'' die id deterministisch basierend auf dem Text erstellt. Dadurch werden Datensätze mit demselben Inhalt überschrieben anstatt neu angelegt.

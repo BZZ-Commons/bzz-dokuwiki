@@ -2,11 +2,11 @@
 
 ==== In den ARIS-Modellierungssichten werden folgende Diagramme zur Darstellung verwendet:====
 
-**Datensicht:** Hier werden in der Regel **Entity-Relationship-Modelle (ERM)** verwendet, um die Datenstrukturen und Beziehungen zwischen Daten zu visualisieren.
-
 **Funktionssicht:** Diese Sicht nutzt häufig **Funktionsdekompositionsdiagramme** oder Funktionsbäume, um die Hierarchie und Beziehungen zwischen verschiedenen betriebswirtschaftlichen Tätigkeiten darzustellen.
 
 **Organisationssicht:** In dieser Sicht wird die Organisationsstruktur meist durch **Organigramme** abgebildet, die die verschiedenen Organisationseinheiten und ihre Hierarchien zeigen.
+
+**Datensicht:** Hier werden in der Regel **Entity-Relationship-Modelle (ERM)** verwendet, um die Datenstrukturen und Beziehungen zwischen Daten zu visualisieren.
 
 **Steuerungssicht:** Hier werden **ereignisgesteuerte Prozessketten (EPK)** verwendet, um den Ablauf von Geschäftsprozessen und die Verknüpfungen zwischen Ereignissen und Funktionen zu modellieren.
 
