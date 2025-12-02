@@ -2,7 +2,7 @@
 
 Damit alle relevanten Seiten von DokuWiki (https://wiki.bzz.ch) heruntergeladen werden können, nutzen wir eine Kombination aus Collector, Downloader und Orchestrator. 
  
-=== WikiPageDownloaderService ===
+==== WikiPageDownloaderService ====
 Der ''WikiPageDownloaderService'' lädt den Inhalt einer Seite via XML-RPC herunter. Das hat mitunter zur Folge, dass kein HTML-Dokument, sondern direkt der DokuWiki-Markup-Code zurückgeschickt wird.
 
 Dieser Code ist einiges schlanker als das entsprechende HTML und macht das Interpretieren einfacher. Das HTML-Dokument enthält wiederkehrende Elemente wie Header und Footer, die nicht relevant sind. Ebenfalls ist viel Logik und Styling ebenfalls im HTML-Dokument enthalten. Das nachfolgende Beispiel zeigt den Unterschied.

@@ -1,0 +1,20 @@
+====== LU13d - Filter 2: JSONB ======
+
+Aktuell nutzen wir den Datentyp ''JSONB'', um die Metadatenzuspeichern.
+<code sql>
+CREATE TABLE IF NOT EXISTS vector_store (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    content TEXT NOT NULL,
+    embedding vector(%d),
+    metadata JSONB
+);</code>
+
+JSONB (Binary JSON) erlaubt es JSON-Objekte in optimierter Form abzuspeichern und in den SQL-Statements die Einträge innerhalb des JSON-Objektes zu verwenden.
+
+Das folgende Beispiel zeigt die erweiterte SQL-Schreibweise. Diese Abfrage kann in unserem Fall verwendet werden, um zu prüfen, ob bereits Seiten des Namespaces in der Datenbank gespeichet sind, ohne dass einzeln geprüft oder alle Datensätze zurückgegeben werden müssen.
+
+<code sql>
+SELECT metadata->>'source' AS source
+FROM vector_store
+WHERE metadata->>'source' LIKE ?
+</code>

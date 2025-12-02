@@ -1,0 +1,12 @@
+====== LU13c - Filter 1: Regex ======
+
+Ein Regex (regular expression) ist ein mächtiges Werkzeug, um einen Filter zu definieren.
+Der folgende Ausdruck trifft zum Beispiel auf alle Strings zu, die **nicht** auf "/start" enden.
+<code regex>^(?!.*\/start$).*</code>
+
+https://regex101.com/ ist eine sehr praktische Seite, um Regex zu erstellen, zu analysieren und zu testen.
+
+Probieren Sie Seite mit obenstehendem Regex doch mal aus. Und speichern Sie gegebenenfalls die Seite als Favorit.
+
+Bei Java gibt es eine kleine Besonderheit bei Backslashes (\). In Java-Strings benötigt es bei Regex immer zwei Backslashes anstatt einem. Der vorherige Regex würde man also folgendermassen definieren.
+<code java>String regexFilter = "^(?!.*\\/start$).*";</code>
