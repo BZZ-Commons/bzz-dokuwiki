@@ -1,43 +1,54 @@
-====== Auftrag: Daily Scrum ======
+Kurze Synchronisation des Entwicklungsteams über den Fortschritt in Richtung Sprintziel.
+Max. 15 Minuten, fokussiert, keine Problemdiskussionen im Meeting.
 
-===== Auftrag =====
-Führen Sie als Scrum Team einen Daily Scrum durch.
+===== Daily Scrum durchführen =====
 
-===== Vorgehen =====
-=== 1. Persönlicher Rückblick (5 Minuten) ===
-Damit der Daily Scrum effizient ist, bereiten sich jedes Mitglied auf das Meeting vor.
-Machen Sie sich stichwortartig Notizen zu den drei Themen:
+==== 1. Fortschritt seit dem letzten Daily ====
 
-== a) Was habe ich seit dem letzten Daily Scrum erreicht, das dem Entwicklungsteam hilft, das Sprint-Ziel zu erreichen? ==
-Zum Beispiel:
-  * Abgeschlossene / bearbeitete Tasks
-  * Fertige Teilergebnisse
-    * Entwurf eines Ablaufs oder einer Struktur
-    * Dokumentation einer Schnittstelle
-  * ...
+Kurze, sachliche Updates der Entwickler*innen: 
+  * Was wurde abgeschlossen? 
+  * Welche Tasks sind weitergekommen?
+	
 
-== b) Was werde ich bis zum nächsten Daily Scrum erledigen, um dem Entwicklungsteam bei der Erreichung des Sprint-Ziels zu helfen? ==
-Zum Beispiel:
-  * Geplante Teilergebnisse
-  * Fertig gestellte Tasks
-  * ...
+----
 
-== c) Sehe ich irgendwelche Hindernisse [Impediments], die mich oder das Entwicklungsteam vom Erreichen des Ziels abhalten? ==
-Mögliche Hindernisse sind:
-  * Fehlende Informationen zu einer User Story
-  * Fehlendes Know How
-  * Abhängigkeit von anderen Tasks, externen Schnittstellen
-  * ...
+	
+==== 2. Geplante Arbeit bis zum nächsten Daily ====
 
-=== 2. Daily Scrum (15 Minuten) ===
-Das Scrum Team trifft und führt den Daily Scrum durch.
-Das Ziel des Meetings ist der Austausch von Informationen.
-Es hat keinen Platz für umfangreiche Diskussionen oder gar Schuldzuweisungen.
+  * Welche Aufgaben werden heute oder bis morgen angegangen?
+  * Welche Items bewegen sich Richtung „Done“?
+	
+----
 
-Jedes Teammitglied informiert reihum anhand seiner Notizen.
-Andere Teammitglieder stellen Verständnisfragen, falls Ihnen etwas unklar ist.
-Allfällige Diskussionen und Gespräche zur Koordination der geplanten Arbeitsschritte finden im Anschluss an den Daily Scrum statt.
+	
+==== 3. Hindernisse (Impediments) ====
 
-=== 3. Diskussionen und Planung (nach Bedarf) ===
-Je nach Bedarf treffen sich kleinere Gruppen im Anschluss.
-Dabei werden Unklarheiten beseitigt und die Aktivitäten von abhängigen Tasks koordiniert.
+  * ListenpunktGibt es etwas, das die Arbeit blockiert oder verlangsamt?		
+		
+Hinweis: Hindernisse werden nicht im Daily diskutiert, sondern nach dem Meeting mit dem Scrum Master gelöst.
+
+----
+
+==== 4. Board-Update ====
+
+  * Ist die Definition of Done bei allen PBI eingehalten, jetzt auf "Done" gesetzt sind oder werden?
+  * Gibt es Items, die hängen bleiben?
+  * Passt alles noch zum Sprintziel?
+
+----
+
+
+==== 5. Status Sprintziel ====
+
+Kurze Einschätzung:
+
+  * Sprint auf Kurs?
+  * Risiko vorhanden? kurze Beschreibung des Risikos
+  * Ernsthafte Abweichung des Sprintziels? Wird nach dem Daily besprochen
+
+
+----
+
+==== 6. Abschluss ====
+
+Das Team bestätigt die nächsten Schritte und beendet das Daily pünktlich
