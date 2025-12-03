@@ -1,5 +1,5 @@
 ====== Protokolle im Scrum ======
-
+**Formalitäten:**
 Für alle Protokolle gilt: 
 Name der Trello-Card beinhaltet
   * Datum
@@ -11,8 +11,7 @@ Name der Trello-Card beinhaltet
 
 ==== Sprint Planning ====
 
-**1. Sprintziel („Sprint Goal“)
-**
+**1. Sprintziel („Sprint Goal“) **
 Ein klar formulierter Satz oder kurzer Absatz: Welchen Wert liefert der Sprint? Was soll am Ende des Sprints erreicht sein?
 
 **2. Ausgewählte Product Backlog Items (PBIs)**
@@ -30,11 +29,60 @@ Ein klar formulierter Satz oder kurzer Absatz: Welchen Wert liefert der Sprint? 
 
 
 ----
+
+==== 👉🏽 Beispiel-Protokoll: Sprint Planning ====
+
+Projekt: Study Buddy Finder
+Sprint: Sprint 2
+Datum: 03.12.2025
+Teilnehmende: PO, Scrum Master, Entwicklungsteam
+
+**1. Sprintziel („Sprint Goal“) **\\
+Sprintziel: „User können sich registrieren und ihr Benutzerprofil anreichern“
+
+**2. Ausgewählte Product Backlog Items (PBIs)**\\
+
+  - User Login (S)
+  - User Registration (S) 
+  - Initiales Benutzerprofil (L) -> muss in kleinere Tickets aufgeteilt werden (PO): Stärken / Schwächen (M), Lernzeiten (M), Profildaten (S)
+
+**3. Verantwortlichkeiten**\\
+Dev1: User Login (S) + Lernzeiten (M)\\
+Dev2: User Registration (S) + Profildaten (S)\\
+Dev3: Stärken / Schwächen (M)
+
+**4. Risiken & Offene Fragen**\\
+Abhängigkeit zur Datenbank (Speichern, Löschen): wer macht das?\\
+Stärken / Schwächen: Wie sollen Fächer dargestellt werden? Wie soll User Fächer auswählen? -> PO und Dev3\\
+Lernzeiten: Wie setzen wir das um? Wie sieht das aus? -> PO und Dev1
+
+
+----
 ==== Daily Scrum ====
 
   - Was wurde abgeschlossen? Welche Tasks sind weitergekommen?
   - Welche Aufgaben werden heute oder bis morgen angegangen?
   - Gibt es etwas, das die Arbeit blockiert oder verlangsamt?
+
+
+----
+==== 👉🏽 Beispiel-Protokoll: Daily Scrum ====
+
+Projekt: Study Buddy Finder
+Sprint: Sprint 2
+Datum: 10.12.2025
+Teilnehmende: PO, Scrum Master, Entwicklungsteam
+
+===  Was wurde abgeschlossen? Welche Tasks sind weitergekommen? ===
+Dev1: User Login ist umgesetzt und von Dev2 getestet
+Dev2: User Registration ist fast abgeschlossen, Anbindung an Datenbank steht noch aus.
+=== Welche Aufgaben werden heute oder bis morgen angegangen?===
+Dev2: Anbindung Datenbank
+===  Welche Items bewegen sich Richtung „Done“? ===
+Dev1: PO muss noch User Login testen
+=== Gibt es etwas, das die Arbeit blockiert oder verlangsamt?===
+Dev3 ist krank	
+
 
 
 ----
@@ -45,11 +93,64 @@ Ein klar formulierter Satz oder kurzer Absatz: Welchen Wert liefert der Sprint? 
   - Anpassungen am Product Backlog (Neue Anforderungen, Änderungen, Klarstellungen)
 
 ----
+
+==== 👉🏽 Beispiel-Protokoll: Sprint Review ====
+
+Projekt: Study Buddy Finder
+Sprint: Sprint 2
+Datum: 17.12.2025
+Teilnehmende: PO, Scrum Master, Entwicklungsteam
+
+
+=== 1. Präsentation des Inkrements ===
+
+Dev1: User kann sich mit Mail und Passwort einloggen und wird zur Startseite geleitet.
+Dev2: User kann sich registrieren. Anbindung an Datenbank ist komplexer als gedacht und noch nicht finalisiert.
+
+=== 2. Erfüllte Sprintziele ===
+
+Sprintziel: „User können sich registrieren und ihr Benutzerprofil anreichern“
+Ergebnis: teils erreicht, Datenbank-Problematik
+
+
+=== 3. Anpassungen am Product Backlog ===
+
+Neues Item für nächsten Sprint: Anbindung Datenbank → hoch priorisiert
+
+
+
+----
+
+
 ==== Sprint Retrospective ====
 
   - Rückblick auf den Sprint: Was lief gut? Was sollten wir beibehalten?
   - Was lief nicht gut?
   - Verbesserungsmassnahmen
+
+
+----
+==== 👉🏽 Beispiel-Protokoll: Sprint Retrospective ====
+
+=== 1. SWOT Analyse ===
+
+=== Strengths (Stärken) ===
+Das ganze Team hat einen hohen Qualitätsanspruch
+
+=== Weaknesses (Schwächen) ===
+Support im Team nur begrenzt angeboten
+
+=== Opportunities (Chancen) ===
+Team unterstützt sich proaktiv, wenn eigene Tasks erledigt sind.
+
+=== Threats (Risiken) ===
+Wenn sich die Teammitglieder nicht aktiv unterstützen, schaffen wir die übrig gebliebenen plus die neuen Stories nicht. Sprint 3 ist gefährdet.
+
+----
+
+=== 2. Massnahmen ===
+Jedes Teammitglied muss sich beim Scrum Master melden, wenn Task erledigt (Task nur erledigt, wenn Definition of Done erfüllt).\\
+Scrum Master koordiniert, wer Unterstützung benötigt.
 
 
 ----
