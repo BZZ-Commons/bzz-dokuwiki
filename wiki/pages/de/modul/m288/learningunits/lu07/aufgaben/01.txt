@@ -16,13 +16,13 @@ Sie haben erfahren, dass das Konzept der //Objekte// versucht programmiertechnis
     * Vorname
     * Nachname
     * Alter
-    * Haaarfarbe
+    * Haarfarbe
     * Jahreseinkommen
   - Die Person soll die nachfolgenden Fähigkeiten haben. Achten Sie auf die Parameter der Objektmethoden
     * singen()
     * fluchen(fluchwort) 
     * schlafen(dauer) Achten Sie darauf, dass die Fähigkeiten //Funktionen// sind und eventuell Parameter erwarten, sprich wissen wollen, was Sie singen sollen.
-  - Legen Sie diese Person nun als Objekt an mit dem realen Namen als Objektname an. Beispielsweise //maxM//
+  - Legen Sie diese Person nun als Objekt mit dem realen Namen als Objektname an. Beispielsweise //maxM//
   - Geben Sie die Eigenschaften dieser Person auf der Konsole aus.
   - Lassen Sie diese Person nun auch Ihre Fähigkeiten auf der Konsole demonstrieren, rufen Sie also die Objektmethoden nun auf.
 
