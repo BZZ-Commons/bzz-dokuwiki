@@ -1,4 +1,31 @@
-====== LU11a - ngrok (Optional) ======
+====== LU11a - localhost tunnel ======
+
+Nachfolgend sind einige Varianten gelistet, um Ihr lokales Backend im Internet zugänglich zu machen.
+
+===== Cloudflare Tunnel =====
+
+Laden Sie für Windows folgende Datei herunter.
+https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-windows-amd64.exe
+
+Navigieren Sie in das Verzeichnis, in welchem Sie die Datei abgelegt haben und führen Sie folgenden Befehl aus.
+<code cmd>
+cd ...
+.\cloudflared.exe tunnel --url https://localhost:8443/ --no-tls-verify
+</code>
+Kopieren Sie aus dem Terminal die URL.
+<code cmd>
+... INF +--------------------------------------------------------------------------------------------+
+... INF |  Your quick Tunnel has been created! Visit it at (it may take some time to be reachable):  |
+... INF |  https://YOUR_SUB_DOMAIN.trycloudflare.com                                                 |
+... INF +--------------------------------------------------------------------------------------------+
+</code>
+
+Funktionsweise überprüfen mit:
+https://YOUR_SUB_DOMAIN.trycloudflare.com/api/hello
+
+Anschliessend kann die Domain (https://YOUR_SUB_DOMAIN.trycloudflare.com) auf https://alexanderpeter.github.io/ffit-lu08-club-accounting-website/ verwendet werden, um auf das Backend von jemand anderem zuzugreifen.
+
+===== ngrok (Optional) =====
 
 <WRAP alert>Funktioniert nicht im Schulnetz :-(</WRAP>
 

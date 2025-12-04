@@ -14,6 +14,7 @@ Nehmen wir zum Beispiel an, Sie haben eine Datei namens ''mod.py'' erstellt, die
 
 <WRAP center round box 60%>
 <file python mod.py>
+""" example of a module with various stuff """
 s = "If Comrade Napoleon says it, it must be right."
 a = [100, 200, 300]
 
@@ -36,6 +37,7 @@ Vorausgesetzt, ''mod.py'' befindet sich an einem geeigneten Ort, über den Sie g
 
 <WRAP center round box 60%>
 <code python>
+""" example for using a module """
 import mod
 
 print(mod.s)
@@ -152,6 +154,7 @@ foo('quux')
 </code>
 Um im lokalen Kontext zugänglich zu sein, muss den Namen der im Modul definierten Objekte das Kürzel ''mod'' vorangestellt werden:
 <code python>
+""" example for using the module "mod" """
 import mod
 
 print(mod.s)
