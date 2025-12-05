@@ -1,0 +1,37 @@
+====== LU08.A02 ======
+
+===== Rahmenbedingungen =====
+  * Sozialform: individual
+  * Hilfsmittel: 
+    * Open books
+    * [[https://www.w3schools.com/js/js_htmldom.asp| JavaScript HTML-DOM]]
+  * Zeit: 20 Minuten
+  * Erwartetes Resultat: Ein JavaScript-File, das Zugriff auf HTML-Objekte Elemente mittels der HTML-DOM-Methode getElementbyClassname ermöglicht.
+
+===== Ausgangslage =====
+Sie finden den nachfolgend Quellcode, der Zugriff auf HTML-Elemente via der Methoden **getElementByClassname** durchführt
+
+{{:de:modul:m288:learningunits:lu08:aufgaben:lu08_l02_1.png?600|}} 
+
+
+
+
+===== Auftrag =====
+Erweitern Sie die bestehende HTML-/JavaScript-Seite, welche aktuell Texte mittels //getElementsByClassName()// verändert, um folgende Funktionen:
+
+  - Weitere Textabschnitte hinzufügen
+    * Ergänzen Sie mindestens zwei zusätzliche Textfelder (<p>-Elemente) mit je einem eigenen Button.
+    * Jeder Button soll beim Anklicken den zugehörigen Text individuell ändern.
+  - Globale Reset-Funktion erweitern
+    * Der bestehende Reset-Button soll nicht nur die ursprünglichen beiden Texte zurücksetzen, sondern alle vorhandenen Texte auf ihren Standardwert setzen.
+  - Bonus (optional, aber gern gesehen):
+    * Fügen Sie einen Button hinzu, der alle Textabschnitte gleichzeitig verändert.
+    * Beispiel: Klick → “Alle mögen Saft!” bei jedem Textabschnitt.
+
+
+===== Lösungen =====
+[[de:modul:m288:learningunits:lu08:loesungen:02|LU08.L02]]
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir
