@@ -83,13 +83,18 @@ Die folgenden Methoden dienen dazu, HTML-Elemente im Dokument (DOM) zu finden un
   <p class="b">2</p>
   <p class="b">3</p>
   <script>
-      document.querySelector(".b").style.fontWeight = "bold";  // trifft nur das erste .b
+      document.querySelector(".b").style.fontWeight = "bold";  
+      // triff nur das erste .b, alle anderen werden ignoriert    
   </script>
 
+**Codebeispiel**
 
-===== Lernvideos =====
+Damit wir alle p-Elemente verändern, braucht es eine Schleife.
 
-<color #ed1c24>TBD</color>
+      const alleP = document.querySelectorAll("p");
+      // jedem die neue Klasse geben
+      alleP.forEach(p => p.className = "beschreibungN");
+
 
 ===== Zusatzmaterial =====
   * [[https://www.w3schools.com/js/js_htmldom.asp|W3School - HTML-DOM]]

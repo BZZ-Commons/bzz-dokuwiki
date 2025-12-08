@@ -1,0 +1,41 @@
+====== LU08.A02 - Methode: getElementbyClassname ======
+
+===== Rahmenbedingungen =====
+  * Sozialform: individual
+  * Hilfsmittel: 
+    * Open books
+    * [[https://www.w3schools.com/js/js_htmldom.asp| JavaScript HTML-DOM]]
+  * Zeit: 20 Minuten
+  * Erwartetes Resultat: Ein JavaScript-File, das Zugriff auf HTML-Objekte Elemente mittels der HTML-DOM-Methode getElementbyTagname ermöglicht.
+
+===== Ausgangslage =====
+Sie finden den nachfolgend Quellcode, der Zugriff auf HTML-Elemente via der Methoden **getElementByTagName** durchführt.
+
+{{:de:modul:m288:learningunits:lu08:aufgaben:lu08_a03_1.jpg?400|}}
+
+Der Quellcode ist hier downloadbar: {{ :de:modul:m288:learningunits:lu08:aufgaben:lu08_a03_vorlage_getelementbytagname.zip |}}
+
+
+
+
+
+===== Auftrag =====
+Erweitern Sie die bestehende HTML-/JavaScript-Seite, welche aktuell Texte mittels //getElementsByTagName()// verändert, um folgende Funktionen:
+
+  - Legen Sie ein Array mit einer passenden Anzahl von Früchen an.
+  - Die aktuelen Default Texte sollen bei Knopdruck die Methode //machEtwas// aufgerufen werden, sodass neu //Ich liebe ...// und der Früchtename erscheint.
+  - Hinweise: 
+    * Die Anzahl Früchte im Array muss der zu anzeigenden Anzahl von Texten entsprechen.
+    * Zugriff auf die Arrayelemente erhalten Sie über eine zusätzlichen Index //i//, der in der Schleife inkrementiert wird (um eines hochgezählt durch i++)
+    * Den neuen Text dynamisch anpassen können Sie durch diese Zeile durchf^ühren //item.innerHTML = `Ich liebe ${fruechte[i]}`; //
+
+===== Zielzustand =====
+
+{{:de:modul:m288:learningunits:lu08:aufgaben:lu08_l03.jpg?400|}}
+
+===== Lösungen =====
+[[de:modul:m288:learningunits:lu08:loesungen:03|LU08.L03]]
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

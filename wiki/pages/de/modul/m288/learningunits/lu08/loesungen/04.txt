@@ -1,0 +1,18 @@
+====== LU08.L04 - DOM-Elemente manipulieren ======
+
+
+===== Auftrag =====
+Trennen Sie die beiden Textbereiche, d.h. es sollen neu zwei Text-Eingaben und zwei Buttons erscheinen. Je nachdem welcher Button gedrückt wird, soll der jeweils eingegebene Text im Browser oder als Alert-Box ausgegeben werden.
+
+===== Lösung=====
+Ihre Webseite sollte in etwa wie folgt aussehen bzw. reagieren:
+
+| Vor dem Drücken des Buttons | Nach dem Drücken des Browser-Buttons | Nach dem Drücken des Alert-Buttons |
+| {{:de:modul:m288:learningunits:lu08:aufgaben:lu08_l04_1.jpg?400|}} | {{:de:modul:m288:learningunits:lu08:aufgaben:lu08_l04_2.jpg?400|}} | {{:de:modul:m288:learningunits:lu08:aufgaben:lu08_l04_3.jpg?400|}} |
+
+Den Lösungscode finden Sie hier: {{ :de:modul:m288:learningunits:lu08:loesungen:lu08_l04.zip |}}
+
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

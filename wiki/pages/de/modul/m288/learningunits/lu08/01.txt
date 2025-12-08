@@ -18,43 +18,42 @@ JavaScript nutzt das DOM, um Inhalte einer Webseite dynamisch zu verändern, ohn
 ===== Zugriff auf DOM-Elemente =====
 JavaScript stellt verschiedene Methoden bereit, um auf Knoten im DOM zuzugreifen. Beispiele sind:
 
-document.getElementById("titel").textContent = "Neuer Titel";
-document.getElementById("box").style.backgroundColor = "lightgray";
+**Codebeispiel**
 
-  const neu = document.createElement("p");
-  neu.textContent = "Dynamisch erzeugter Absatz";
-  document.body.appendChild(neu);
+  <!DOCTYPE html>
+  <html lang="de">
+  <head>
+    <meta charset="UTF-8">
+    <title>Demo – DOM Manipulation</title>
+    <style>
+        #box {
+            width: 200px;
+            height: 100px;
+            background-color: salmon;
+            padding: 10px;
+            margin-top: 10px;
+        }
+    </style>  
+  </head>
+  <body>
+    <h1 id="titel">Alter Titel</h1>
+    <div id="box">
+        Dies ist eine Box.
+    </div>
+    <button onclick="machWas()">Klick mich</button>
+    <script>
+        function machWas() {
+            document.getElementById("titel").textContent = "Neuer Titel";
+            document.getElementById("box").style.backgroundColor = "lightgray";
+        }
+    </script>
+
   
-Diese Befehle geben Referenzen auf Elemente im DOM zurück, die anschliessend weiterverarbeitet werden können.
-
-===== Änderung von DOM-Inhalten =====
-Durch DOM-Manipulation lassen sich Struktur, Inhalt und Darstellung beeinflussen. 
-
-**Beispiele:**
-
-  document.getElementById("titel").textContent = "Neuer Titel";
-  document.getElementById("box").style.backgroundColor = "lightgray";
-
-  const neu = document.createElement("p");
-  neu.textContent = "Dynamisch erzeugter Absatz";
-  document.body.appendChild(neu);
-  
-In diesem Beispiel wird Text ersetzt, ein Stil angepasst und ein neues Element erzeugt und in das Dokument eingefügt.
-
-===== Ereignisverarbeitung (Event Handling) =====
-Das DOM ermöglicht die Verarbeitung von Benutzerinteraktionen. JavaScript kann sogenannte „Event Listener“ registrieren, die auf Ereignisse reagieren, beispielweise Mausklicks oder Tastatureingaben.
-
-  document.getElementById("button").addEventListener("click", function () {
-    alert("Schaltfläche wurde gedrückt.");
-  });
-
-
-
-
+Im obigen Code wird beim Drücken des Buttons die Farbe in der Box geändert und der Titel von //Alter Titel// in //Neuer Titel// geändert, wobei dafür die HTML-DOM-methode //getElementById// verwendet wird.
 
 ===== Lernvideos =====
 
-<color #ed1c24>TBD</color>
+{{:de:modul:m288:learningunits:lu08:the_dom_explained.mp4|HTML-DOM Explained}}
 
 ===== Zusatzmaterial =====
   * [[https://www.w3schools.com/js/js_htmldom.asp|W3School - HTML-DOM]]

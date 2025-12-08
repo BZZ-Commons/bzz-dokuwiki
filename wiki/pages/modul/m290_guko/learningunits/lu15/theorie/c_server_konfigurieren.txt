@@ -41,7 +41,7 @@ app.listen(port, () => {
       * führt Express die Callback-Funktion aus.
       * ''req'' = Request-Objekt (Infos über Anfrage),  
         ''res'' = Response-Objekt (Antwort, die Sie zurückschicken).
-      * ''res.send('test');'' → sendet den Text ''Hello World'' als Antwort zurück an den Browser oder Postman.
+      * ''res.send('Hello World');'' → sendet den Text ''Hello World'' als Antwort zurück an den Browser oder Postman.
   * ''app.listen(port, () => { ... });'' -> Startet den Server und gibt im Terminal eine kurze Meldung aus.
 
 {{:modul:m290_guko:learningunits:lu15:theorie:client_server_nodejs_http_req_response.png?direct&900|}}

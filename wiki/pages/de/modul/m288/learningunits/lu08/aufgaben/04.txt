@@ -1,0 +1,33 @@
+====== LU08.A04 - DOM-Elemente manipulieren ======
+
+===== Rahmenbedingungen =====
+  * Sozialform: individual
+  * Hilfsmittel: 
+    * Open books
+    * [[https://www.w3schools.com/js/js_htmldom.asp| JavaScript HTML-DOM]]
+  * Zeit: 20 Minuten
+  * Erwartetes Resultat: Ein JavaScript-File, mit dem Sie Texte in eine HTML-Seite (Textbox) eingeben und diese als Text und AlertBox ausgeben können.
+
+===== Ausgangslage =====
+Das HTML-DOM ist beschreib- und lesbar. Bisher haben wir nur Inhalte in JS-Erstellt und diese im HTML-DOM anzeigen lassen. Nun wollen wir auch Text vom User in eine HTML-Formuar eingeben und diese in verschiedener Form im Browser anzeigen lassen. Das nachfolgende Script gibt einen in eine Textbox eingegebene Nachricht im Brower direkt, und als Alert-Box-Aus.
+
+| Vor dem Drücken des Buttons | Nach dem Drücken des Buttons |
+| {{:de:modul:m288:learningunits:lu08:aufgaben:lu08_a04_1.jpg?400|}} | {{:de:modul:m288:learningunits:lu08:aufgaben:lu08_a04_2.jpg?400|}} |
+
+===== Auftrag =====
+Trennen Sie die beiden Textbereiche, d.h. es sollen neu zwei Text-Eingaben und zwei Buttons erscheinen. Je nachdem welcher Button gedrückt wird, soll der jeweils eingegebene Text im Browser oder als Alert-Box ausgegeben werden.
+
+===== Zielzustand =====
+Ihre Webseite sollte in etwa wie folgt aussehen bzw. reagieren:
+
+| Vor dem Drücken des Buttons | Nach dem Drücken des Browser-Buttons | Nach dem Drücken des Alert-Buttons |
+| {{:de:modul:m288:learningunits:lu08:aufgaben:lu08_l04_1.jpg?400|}} | {{:de:modul:m288:learningunits:lu08:aufgaben:lu08_l04_2.jpg?400|}} | {{:de:modul:m288:learningunits:lu08:aufgaben:lu08_l04_3.jpg?400|}} |
+
+
+
+===== Lösungen =====
+[[de:modul:m288:learningunits:lu08:loesungen:04|LU08.L04]]
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

@@ -33,9 +33,6 @@ Attribute-Knoten repräsentieren die Attribute eines HTML-Elements (z. B. id, cl
 
 Text-Knoten enthalten den tatsächlichen Textinhalt innerhalb eines HTML-Elements. Beispiel: In <p>Beispieltext</p> ist „Beispieltext“ ein Text-Knoten, der dem entsprechenden <p>-Element untergeordnet ist.
 
-===== Lernvideos =====
-
-<color #ed1c24>TBD</color>
 
 ===== Zusatzmaterial =====
   * [[https://www.w3schools.com/js/js_htmldom.asp|W3School - HTML-DOM]]

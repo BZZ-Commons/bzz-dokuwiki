@@ -15,10 +15,13 @@ Sie haben die Demo zu diesem Auftrag mitverfolgt. Das Ergebnis sehen Sie in den 
 | Button wurde noch nicht gedruckt. Default-Text ist sichtbar. | Button wurde gedruckt. Text wird verändert. |
 
 ===== Auftrag =====
-Sie finden hier den Code für die Demo: {{ :de:modul:m288:learningunits:lu08:aufgaben:lu08_l01_demo.html.zip | Quellcode-Vorlage für LU08.L01 }}.
+ {{ :de:modul:m288:learningunits:lu08:aufgaben:lu08_a01_vorlage.zip | Quellcode-Vorlage für LU08.L01}}
 
   - Ergänzen Sie, analog zum ersten Button, einen zweiten Button, der einen zweiten Text ausgibt. 
   - Legen Sie abschliessend einen Reset-Button an, der beide Text auf den Ausgangswert setzt, also eine RESET durchführt.
+
+===== Zielzustand =====
+Ihre Webseite sollte in etwa wie folgt aussehen bzw. reagieren:
 
 | {{:de:modul:m288:learningunits:lu08:aufgaben:lu08.l01_1.png?600|}} | {{:de:modul:m288:learningunits:lu08:aufgaben:lu08.l01_2.png?600|}} |
 

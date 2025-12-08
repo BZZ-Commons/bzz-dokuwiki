@@ -1,0 +1,21 @@
+====== LU08.L03 - Methode: getElementbyTagName ======
+
+===== Auftrag =====
+Erweitern Sie die bestehende HTML-/JavaScript-Seite, welche aktuell Texte mittels //getElementsByTagName()// verändert, um folgende Funktionen:
+
+  - Legen Sie ein Array mit einer passenden Anzahl von Früchen an.
+  - Die aktuelen Default Texte sollen bei Knopdruck die Methode //machEtwas// aufgerufen werden, sodass neu //Ich liebe ...// und der Früchtename erscheint.
+  - Hinweise: 
+    * Die Anzahl Früchte im Array muss der zu anzeigenden Anzahl von Texten entsprechen.
+    * Zugriff auf die Arrayelemente erhalten Sie über eine zusätzlichen Index //i//, der in der Schleife inkrementiert wird (um eines hochgezählt durch i++)
+    * Den neuen Text dynamisch anpassen können Sie durch diese Zeile durchf^ühren //item.innerHTML = `Ich liebe ${fruechte[i]}`; //
+
+===== Zielzustand =====
+
+| Vor dem Push  | Nach dem Push |
+| {{:de:modul:m288:learningunits:lu08:loesungen:lu08_a03_1.jpg?400|}} | {{:de:modul:m288:learningunits:lu08:loesungen:lu08_l03.jpg?400|}} |
+
+Der Quellcode der Lösung ist downloadbar: {{ :de:modul:m288:learningunits:lu08:loesungen:lu08_l03.zip |}}
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir
