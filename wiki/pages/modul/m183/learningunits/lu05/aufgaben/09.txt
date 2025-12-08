@@ -1,0 +1,45 @@
+====== LU05.A09 - Skytale programmieren - TBD ======
+
+==== Lernziele ====
+  * ???
+  * 
+==== Rahmenbedingungen ====
+  * **Zeitbudget:** 40 Minuten
+  * **Sozialform:** Einzelarbeit
+  * **Hilfsmittel:**
+    * Lernvideo [[https://studyflix.de/informatik/caesar-verschlusselung-1606|Studyflix: Cäsar-Verschlüsselung]]
+    * Programmierumgebung
+    * Codeeditor Ihrer Wahl
+    * Programmiersprachen: JS, Python, BASH, SHELL, ...
+    * <color #ed1c24>Keine AI oder Google-Suchen →  Sie haben genug Programmierkenntnisse, um den Algorithmus selbst zu programmieren.</color>
+  * **Erwartetes Ergebnis:** Script, das eine Cäsar-Verschlüsselung realisiert. In beide Richtungen: Klartext → Chiffretext, Chiffretext → Klartext.
+
+==== Ausgangslage ====
+???
+
+==== Arbeitsauftrag ====
+???
+
+**Anforderungen:**
+  - Das Programm soll
+    * vom Benutzer eine Nachricht (Text) einlesen.
+  
+ 
+** Beispiel:**
+  Eingabe:  Hallo Welt
+  Shift:    3
+  Verschlüsselt:  Kdoor Zhow
+  Entschlüsselt:  Hallo Welt
+  
+**Hinweis**
+  * Den Shift bekommen Sie hin, wenn Sie mit den Ordinalzahlen (Codewerte der Zeichen arbeiten).
+  * Codiert wird einfach, indem der Ordinalzahl ein Shift addiert wird.
+  * Bei Dekodieren wird einfach der Ordinalzahl der Shift abgezogen.
+
+
+===== Solution =====
+[[modul:m183:learningunits:lu05:loesungen:09|Lösung]]
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

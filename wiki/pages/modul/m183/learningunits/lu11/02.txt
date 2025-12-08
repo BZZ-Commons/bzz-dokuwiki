@@ -1,25 +1,54 @@
-====== LU11b - Angriffsvarianten BruteForce ======
+====== LU11b - SQLi Angriffsvarianten ======
 
-===== Alle Möglichkeiten testen =====
-Für viele Probleme in der Informatik sind keine effizienten Algorithmen bekannt. Der natürlichste und einfachste Ansatz zu einer algorithmischen Lösung eines Problems besteht darin, einfach alle potenziellen Lösungen durchzuprobieren, bis die richtige gefunden ist. Diese Methode nennt man //Brute Force Suche// (engl.  brute force search).
+===== Lernziele =====
+  - Die Grundlagende Funktionsweise von SQLi erklären und demonstrieren können
+  - Angriffsvektoren für SQLi nennen können.
+  - Nennen können wie SQLi gegen die das CIA-Triade durchgeführt wird
 
-{{:modul:m183:learningunits:lu11:lu11b_1.png?400|Gegen diese Form BruteForce müssen Gegenmassnahmen gefunden werden}}
+===== Grundlegende Funktionsweise =====
+Die Angriffstechnik //SQLI// verwendet Eingabemöglichkeiten aller Art (Angriffsvektoren) als Möglichkeit zu bestehenden SQL-Befehl zusätzliche einzuflechten. In der nachfolgenden Abbildung wird gezeigt, wie der im Programmcode bestehende SQL-Befehl durch eine vom Angreifer im Eingabefeld eingeschobenen SQL-Befehlserweiterung so verändert wird, dass der neue SQL-Befehl gültig und bleibt, die Gesamtlogik des SQL-Befehl aber massiv verändert wird.
 
+{{:modul:m183:learningunits:lu10:lu10b_1_sqli_funktionsweise.png?1000|SQLi = Ergänzung des bestehenden SQL-Befehls}}
 
-===== Parallelisiert =====
-Hohe Rechnerleistungen können in Form von Computerclustering kombiniert werden, was wiederrum das Auffinden von Passwörtern massiv verkürzt. Konkret können unterschiedliche Rechner unterschiedliche Teilbereiche der Kombinationenmenge unter sich aufteilen. Heute wird das mit sogenannten BotNets durchgeführt.
+Der neue Select-Befehl hat neu als Filterkriterium 
 
-{{:modul:m183:learningunits:lu11:lu11b_2.png?600|}}
+  …user_id=’’ OR 1=1’
+  
+Der erste Teil des Filters hat den Wahrheitswert //FALSE//, der zweite Teil hingegen TRUE. Die Datenbanklogik verknüpft diese beiden Werte durch eine OR-Verknüpfung, was logischer weise zu einem Filterwert //TRUE// führt. Alle Werte in der betroffenen Tabelle haben, sobald sie vorhanden sind, den Wert //TRUE//. Also wird der gesamte Datenbankinhalt herausgegeben.
 
-===== Dictionary / Wörterbuch =====
-Anstatt zufällige Symbolkombinationen zu erraten, können Hacker auch vorhandene Wörter aus einem Wörterbuch durchprobieren. Oft verwenden Menschen Wörter in ihren Passwörtern, um sich diese besser merken zu können – das erleichtert Hackern die Arbeit. Brute-Force-Software kann sogar die Wörterbuchpasswörter mutieren, um die Erfolgschancen zu erhöhen.
+===== CIA-Triad = Drei Dimensionen der IT-Sicherheit =====
+Eine Applikation im Business-Umfeld hat grundsätzlich drei Dimensionen bzw. Ziele der Sicherheit zu gewährleisten: 
 
-{{:modul:m183:learningunits:lu11:lu11b_4_dictionary.png?600|Angriff mittels Wörterbücher}}
+  * **Vertraulichkeit:** Userdaten sind weder bewusst noch unbewusst unbefugten zugänglich.
+  * **Verfügbarkeit:** Das System ist zu vereinbarten Zeiten vollumfänglich verfügbar.
+  * **Integrität:** Die Daten liegen unverfälscht vor.
 
-===== Rainbow Tables =====
-Rainbow tables sind vorberechnete Tabellen, die Hashwerte mit möglichen Klartextpassworten verknuepfen, um die inverse Suche zu beschleunigen. Statt jedes Passwort neu zu bruteforcen, schaut ein Angreifer den Hash nach in der Tabelle nach und findet so schnell das zugehoerige Passwort, wenn vorhanden. Die Methode erfordert grosse Rechen- und Speicherressourcen fuer die Erstellung, reduziert aber die Kosten beim Angriff.  Kurz gesagt: clever vorverarbeitetes Lookup.
+Durch die Attacke //SQLi// wird im besten Falle eine, und schlimmsten Falle alle drei Dimension dieser Sicherheitsziele verletzt.
 
-{{:modul:m183:learningunits:lu11:lu11b_3_rainboxtable.jpg?600|}}
+==== Angriff auf die Vertraulichkeit =====
+Ein Angriff auf die Vertraulichkeit der Daten bedeutet, dass vertrauliche Informationen in die falschen Hände geraten. Die Absicht möglicher Angreifer ist es zusätzliche Informationen zu erbeuten. Beispiele solcher Informationen wäre spezifische 
+
+  * Firmengeheimnisse
+  * Zugangsdaten
+  * Creditkarten-Informationen
+  * Etc.
+
+Eine-SQLI, die auf die Vertraulichkeit abzielt hönnte wie folgt aussehen:
+
+^Original-SQL-Befehl ^ Ergänzter SQL-Befehl ^
+| SELECT author, subject, text FROM artikel WHERE ID=42; | SELECT author, subject, text FROM artikel WHERE ID=42 <color #ed1c24>UNION SELECT login, password, 'x' FROM user</color>; |
+
+===== Angriff auf die Verfügbarkeit =====
+Je nach Geschäftsumfeld, ist die Verfügbarkeit von Business-Applikationen priorisiert. Der Lebensmittelladen um die Ecke kann sicherlich sein Geschäft auch ohne allzeit verfügbares IT-System betreiben. Ein Online-Shop hingegen kann sich nahezu keinen Ausfall leisten. Eine Verfügbarkeits-Attacke auf eine solche Applikation kann beispielsweise durch Löschen verschiedener Tabellen in der Datenbank erfolgen.
+
+^Original-SQL-Befehl ^ Ergänzter SQL-Befehl ^
+| SELECT * FROM user WHERE ID=105; | SELECT * FROM user WHERE ID=105;<color #ed1c24>+DROP TABLE suppliers;<color> FROM user</color>; |
+
+===== Angriff auf die Integrität =====
+Ein Angriff auf die Integrität der Daten bedeutet, dass die Verlässlichkeit der Informationen verletzt wurde. Hier werden Informationen, mit oder ohne das Wissen der Betroffenen verändert. Das nachfolgende Szenario soll dies verdeutlichen. Mit dem nachfolgenden SQL-Statement 
+
+^Original-SQL-Befehl ^ Ergänzter SQL-Befehl ^
+| SELECT author, subject, text FROM artikel WHERE ID=42; | SELECT author, subject, text FROM artikel WHERE ID=42;<color #ed1c24>UPDATE USER SET TYPE="admin" WHERE ID=23;</color> |
 
 
 ----

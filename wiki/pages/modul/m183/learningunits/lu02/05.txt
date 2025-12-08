@@ -1,66 +1,77 @@
-====== LU02e - LB2 - Projektauftrag ======
+====== LU02e - LB2 - Fokus: SQLi ======
 
-===== 1. Projektauftrag =====
-Ihr Auftrag besteht darin eine vulnerable Applikation zu programmieren und diese anschliessend mit geeigneten pogrammiertechnischen Massnahmen zu schützen.
+===== 1. Einleitung =====
+Dieses Thema ist gerade deswegen spannend, weil in dieser alle drei Schichten einer 3-Schichten-Architektur miteinbezogen werden müssen.
 
-==== Teil 1====
+  - Schicht: Sie benötigen eine Art Frontend-Simulation wie beispielsweise Postman oder Commandline-basiertes Backend-Script. Es braucht also keine schicke Oberfläche.
+  - Schicht: Sie müssen einen Node-Server programmieren.
+  - Schicht: Es braucht eine sinnvolle Datengrundlage, um SQL-Attacken durchführen zu können. 
 
-Programmieren Sie eine Applikation, die mit den nachfolgenden Techniken angreifbar ist (vulnerable). Der Angriffsvektor kann entweder über eine Front-End-Schnittstelle oder über ein Backend-Script/File erfolgen.
-
-**Teil 2**
-
-Programmieren Sie die gleiche Applikation als sichere Version (secured), in der Sie die definierten Sicherheitsmassnahmen programmiertechnisch umsetzen.
-
-===== 2. Metaziele =====
-Die Arbeit ist, gmäss Unterrichts-Input, bezüglich der CIA-Triad auszurichten. Idealerweise können Sie gegen alle 3 Meta-Ziele (Verfügbarkeit, Vertraulichkeit, Integrität) angreifen.
-
-Selbstverständlich erstellen Sie die Sicherheitsmassnahmen so aus, dass diese Angriffe im 2. Teilauftrag nicht mehr möglich sind.
-
-===== 3. Ablauf =====
-  * Es werden zufällig Teams zu je 2 Personen gebildet
-  * Die Lehrersperson kommuniziert:
-    * den Auftrag und den Umfang (Was ist zu liefern)
-    * die Themen
-    * die Zuteilung der Team zu den Themen
-  * Die Arbeitsaufteilung muss klar ersichtlich sein: Sie arbeiten am gleichen Projekt, jedoch an unterschiedlichen Teilen: Angriff VS. Verteidigung
-  * Die Leistungsüberprüfung geschieht durch ein Video-aufgezeichnetes Fachgespräch.
-  * Jedes Mitglied kann Auskunft über alle Codeteile geben, d.h. Wissenstransfer liegt in der Verantwortung der Lernenden
-  * Bewertet wird nach einem vorher definierten Bewertungsraster
-  * Je 2 Teams erhalten den gleichen Auftrag, das Team mit der besten Leistung erhält einen Bonus von 0.25 Notenpunkte
-
-===== 4. Themen =====
-
-Die nachfolgenden Themen stehen zur Verfügung:
-
-  - SQLi
-  - BruteForce
-  
-
-==== 5. Lieferumfang =====
-
-    * 1. Präsentionsschicht: Frontend oder Simulation
-      * Script für den Angriff
-      * Kann auch mit Postman o.ä. simuliert werden
-    * 2. Logikschicht: Businesslokig/Server 
-      * Script mit der unsicheren Variante
-      * Script mit der sicheren Variante (ungesetzte Sicherheitsmassnahmen)
-    * 3. Datenschicht: Persistente Datenhaltung
-      * Datenbank-Instanz
-      * Wörderbücher
-      * etc
-
+===== 2. SQLI-Angriffe =====
  
-===== 6. Erlaubte Technologien =====
-Die nachfolgenden Technologien stehen Ihnen zur Verfügung. 
+==== 2.1 Leicht umsetzbare Angriffe ====
+  * **Angriffe gegen die Vertraulichkeit:** Es können Daten aus einer Tabelle gelesen werden, die nicht gelesen werden dürften.
 
-  * HTML-CSS
-  * Programmiersprachen:
-    * JavaScript
-    * Python
-    * Shell/BASH
-  * Node.js Laufzeitumgebung (Analog andere  Programmiersprachen)
-  * CodeEditor Visual Studio Code, Webstorm oder Pycharm 
-  * Postman Frontend-Simulation
+==== 2.2 Mittel umsetzbare Angriffe ====
+  * **Angriffe gegen die Verfügbarkeit:** Das System wird zum Absturz gebraucht, sodass Online-Dienste nicht mehr angeboten werden können.
+
+==== 2.3 Schwer umsetzbare Angriffe ====
+  * **Angriffe gegen die Integrität:** Die Daten werden verändert, ohne dass die betroffene Person davon weiss.
+
+===== 3. Gegenmassnahmen gegen SQLi =====
+ 
+==== 3.1 Leichte Massnahmen ====
+  * **Escaping:** Spezielle Zeichen in Eingaben werden maskiert, damit sie von der Datenbank als Daten und nicht als Teil des SQL-Codes interpretiert werden.
+  * **Input Validation:** Überprüfung, ob Eingaben dem erwarteten Format, Typ oder Wertebereich entsprechen, bevor sie weiterverarbeitet werden.
+  
+==== 3.2 Mittel-Komplexe Massnahmen ====
+  * **Prepared Statement:** die technische Umsetzung auf DB-Seite (vorkompiliertes Statement, wiederverwendbar).
+  * **Parametrisierung:** das Konzept, Werte sauber von der SQL-Struktur zu trennen.
+
+==== 3.3 Komplexe Massnahmen ====
+  * **Stored Procedure:** Vorgefertigte und in der Datenbank gespeicherte SQL-Routinen, die mit Parametern aufgerufen werden können, statt dynamisch SQL zusammenzubauen.
+
+===== 4. Bewertung =====
+
+==== 4.1 Angriff ====
+^Noten ^Beschreibung ^Hinweis ^
+| 4.1.1 | <color #22b14c>+0.75</color> | Angriff gemäss einer Variante von 2.1 |
+| 4.1.2 | <color #22b14c>+0.75</color> | Angriff gemäss je einer Variante und 2.2 | 
+| 4.1.3 | <color #22b14c>+1.00</color> | Angriff gemäss je einer Variante 2.3 | 
+| 4.1.4 | <color #22b14c>+0.50</color> | Angriff ist jeweils in separaten Files untergebracht| 
+
+==== 4.2 Verteidigung====
+^Noten ^Beschreibung ^Hinweis ^
+| 4.2.1 | <color #22b14c>+0.75</color> | Verteidigung gemäss einer Variante von 3.1 |
+| 4.2.2 | <color #22b14c>+0.75</color> | Verteidigung gemäss je einer Variante und 3.2 | 
+| 4.2.3 | <color #22b14c>+1.00</color> | Verteidigung gemäss je einer Variante 3.3 | 
+| 4.2.4 | <color #22b14c>+0.50</color> | Verteidigung sind in jeweils separaten Files untergebracht| 
+
+==== 4.3 Bonus ====
+| 4.3.1 | <color #22b14c>+0.25</color> | Die Thementeams werden in Konkurenz zueinander treten. Sofern ein wesentzlicher Teambeitrag vorhanden ist, erhält jedes Gewinnerteam jeweils einen  Bonus von 0.25 Notenpunkten.| 
+| 4.3.2 | <color #22b14c>+0.50</color> | Für die 2. und 3. Angriffe oder Verteidigungen wird die Hälfte der vollen Punktezahl der jeweiligen Massnahme vergeben | 
+| 4.3.3 | <color #22b14c>+0.50</color> |SQLi Daten sind in einer XML oder JSON-Datei |
+
+
+==== 4.4 Malus ====
+^Noten ^Beschreibung ^Hinweis ^
+| 4.4.1 | <color #ed1c24>-1.00</color> | Die Best-Practice-Coding-Standard wurden nicht eingehalten | [[https://wiki.bzz.ch/howto/codingstandards/start|Python]] |
+| 4.4.2 | <color #ed1c24>-0.50</color> | Es wird nicht kollaborativ und Ausfallsicher (inkl. Versionierung) gearbeitet |
+| 4.4.3 | <color #ed1c24>-2.00</color> | Es können Fragen zum Lösungcode nicht korrekt oder gar nicht beantwortet werden. |
+| 4.4.4 | <color #ed1c24>-1.50</color> | Pro angefangenem Tag Verspätung | 
+| 4.4.5 | <color #ed1c24>-0.50</color> | Pro Downloadversuch: Link funktioniert nicht (abgelaufen, Berechtigungen fehlen, etc.) | 
+| 4.4.6 | <color #ed1c24>-0.50</color> | Schriftsprache: Die Lernenden verwenden nicht die offiziellen Schriftsprache. | 
+| 4.4.7 | <color #ed1c24>-0.10</color> | Verspäteter Anfang des Teams: pro Minute Verspätung | 
+| 4.4.8 | <color #ed1c24>-1.00</color> | Team oder Teammitglieder erscheinen nicht zum Gespräch (Ausnahme: Höhere Gewalt). Abzug erhalten nur betroffenen Personen | 
+| 4.4.9 | <color #ed1c24>-1.00</color> | Team ist nicht vorbereitet beim Fachgespräch| 
+
+==== 4.5 Hinweise ====
+  * Es braucht kein Frontend, sprich der Code kann entweder über Commandline oder als separates Angriffsscriptdurchgeführt werden.
+  * Jedes Teammate kann alle Fragen zum Fousthema beantworten, sprich der Wissentransfer im Tandem wird durch das Tandem sichergestellt.
+  * Bei Ungleicher Performance im Tandem wird individuell benotet.
+
 
 ----
+
 [[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir
+

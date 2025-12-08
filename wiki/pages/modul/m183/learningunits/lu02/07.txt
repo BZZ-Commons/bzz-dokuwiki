@@ -1,72 +1,58 @@
-====== LU02g - LB2 - Fokusthema: BruteForce ======
+====== LU02g - LB2 - Fokus: DoS / DDoS - TBD ======
 
 ===== 1. Einleitung =====
-BruteForce-Attacken beschränken sich häufig auf einzelne Dateien, sind aber auch im Interenet nicht so selten wie man meint. Und es gibt viele Varianten, weshalb wir uns auf die nachdfolgenden Angriffsvarianten beschränken
+...
 
-===== 2. Attacken =====
+===== 2. Angriffsvarianten =====
+...
 
-===== 2.1 Einfache ausführbare Angriffe =====
-  * **Mono-Alphabet:** Das Passwort ist bis zu 10 Zeichen lang und besteht aus einem Mono-Zeichensatz, sprich entweder 0..9, oder a..z, oder A..Z, etc.
+==== 2.1 Full: Simple and Plain ====
+...
 
-===== 2.2 Mittelschwer ausführbare Angriffe =====
-  * **Dictionaries:** Anstatt alle Versuche auszuprobieren, wird mit aus bestehenden Daten wie Email, Geburtstag, etc Permustationen des möglichen Passwortes ausprobiert.
-  * **Poly-Alphabet:** Das Passwort ist bis zu 10 Zeichen lang und besteht aus einem //Poly-Zeichensatz//, sprich einer Kombinatio aus 0..9, a..z, A..Z, Sonderzeichen. 
-===== 2.3 Komplexe Angriffe =====
-  * **Rainbow-Tables:** Die Attacke geschieht mit vorbereiteten Look-Up Dateien (Hash-Plain)
-  * **Paralellilisert:** Es wird mit mehreren Instanzen angegriffen, wobei jede Instanz einen bestimmten Wertebereich übernimmt. 
-  
+
 ===== 3. Gegenmassnahmen gegen Brute Force =====
-Unanhängig ob bei lokalen oder zentralen Systemen, gibt es die nachfolgenden Gegenmassnahmen gegen 
- 
-==== 3.1 Leichte Gegenmassnahmen ====
-  * **Lineare Latenzzeit/Linear Delay:** Nach jedem Versuch wird eine bestimmte Zeit (0.5 - 2 Sekunden) gewartet
-  * **Zunehmende Latenzzeit/Progressiv Delay:** Beim ersten Fehlversuch muss 10 Sekunden gewartet werden, danach 1 Minute, ....
+... 
+
+==== 3.1 Einfache Massnahmen ====
+...
    
-==== 3.2 Mittel-Komplexe Massnahmen ====
-  * **Counter-Limit:** Anzahl Versuche beschränken und anschliessend User sperren
-  * **UserInteraktion:** Captcha oder ähnliches einbauen
+==== Note 4.0 - 4.5 ==== 
 
-==== 3.3 Komplexe Massnahmen ====
-  * **Logging:** Fehlerversuche werden gelogged und ggfs. Alarm ausgelöst.
-===== 4. Bewertung =====
+**Software/Programmierung**
+  * Es ist eine vulnerabler (node.js oder python) Server vorhanden, dass überwunden werden muss
+  * Es können Angriffe mittels der unter 2.1 und 2.2 beschrieben Art durchgeführt werden
+  * Es gibt eine //secure-Version// der Software, bei der erfolge Angriff mittels eine der unter 3.1 genannten Massnahmen verunmöglicht wurde.     
+**Formale Aspekte**
+  * Die Best-Practice-Coding-Standard wurden eingehalten
+  * Es wird colaborativ gearbeitet inkl. einer Ausfallsicherheit und Versionierung
+**Abgrenzung**
+  * Es braucht kein Frontend, sprich der Angriff und die Verteidigung können im gleichen Script sein.
+  * Sprich der Fokus liegt auf dem Server
 
-==== 4.1 Angriff ====
-^Noten ^Beschreibung ^Hinweis ^
-| 4.1.1 | <color #22b14c>+0.75</color> | Angriff gemäss einer Variante von 2.1 |
-| 4.1.2 | <color #22b14c>+0.75</color> | Angriff gemäss je einer Variante und 2.2 | 
-| 4.1.3 | <color #22b14c>+1.00</color> | Angriff gemäss je einer Variante 2.3 | 
-| 4.1.4 | <color #22b14c>+0.50</color> | Angriff ist jeweils in separaten Files untergebracht| 
-
-==== 4.2 Verteidigung ====
-^Noten ^Beschreibung ^Hinweis ^
-| 4.2.1 | <color #22b14c>+0.75</color> | Verteidigung gemäss einer Variante von 3.1 |
-| 4.2.2 | <color #22b14c>+0.75</color> | Verteidigung gemäss je einer Variante und 3.2 | 
-| 4.2.3 | <color #22b14c>+1.00</color> | Verteidigung gemäss je einer Variante 3.3 | 
-| 4.2.4 | <color #22b14c>+1.00</color> | Angriff und Verteidigung sind in separaten Files untergebracht| 
-
-==== 4.3 Bonus ====
-^Noten ^Beschreibung ^Hinweis ^
-| 4.3.1 | <color #22b14c>+0.25</color> | Die Thementeams werden in Konkurenz zueinander treten. Sofern ein wesentzlicher Teambeitrag vorhanden ist, erhält jedes Gewinnerteam jeweils einen  Bonus von 0.25 Notenpunkten.| 
-| 4.3.2 | <color #22b14c>+0.50</color> | Für die 2. und 3. Angriffe oder Verteidigungen wird die Hälfte der vollen Punktezahl der jeweiligen Massnahme vergeben | 
-
-==== 4.4 Malus ====
-^Noten ^Beschreibung ^Hinweis ^
-| 4.4.1 | <color #ed1c24>-1.00</color> | Die Best-Practice-Coding-Standard wurden nicht eingehalten | [[https://wiki.bzz.ch/howto/codingstandards/start|Python]] |
-| 4.4.2 | <color #ed1c24>-0.50</color> | Es wird nicht kollaborativ und Ausfallsicher (inkl. Versionierung) gearbeitet |
-| 4.4.3 | <color #ed1c24>-2.00</color> | Es können Fragen zum Lösungcode nicht korrekt oder gar nicht beantwortet werden. |
-| 4.4.4 | <color #ed1c24>-1.50</color> | Pro angefangenem Tag Verspätung | 
-| 4.4.5 | <color #ed1c24>-0.50</color> | Pro Downloadversuch: Link funktioniert nicht (abgelaufen, Berechtigungen fehlen, etc.) | 
-| 4.4.6 | <color #ed1c24>-0.50</color> | Schriftsprache: Die Lernenden verwenden nicht die offiziellen Schriftsprache. | 
-| 4.4.7 | <color #ed1c24>-0.10</color> | Verspäteter Anfang des Teams: pro Minute Verspätung | 
-| 4.4.8 | <color #ed1c24>-1.00</color> | Team oder Teammitglieder erscheinen nicht zum Gespräch (Ausnahme: Höhere Gewalt). Abzug erhalten nur betroffenen Personen | 
-| 4.4.9 | <color #ed1c24>-1.00</color> | Team ist nicht vorbereitet beim Fachgespräch| 
-
-
-==== 4.5 Hinweise ====
+==== Note 4.5 - 5.2 =====
+**Software/Programmierung**
+  * Es ist eine vulnerabler (node.js oder python) Server vorhanden, dass überwunden werden muss
+  * Es können Angriffe mittels der unter 2.1, 2.2 und 2.3 beschrieben Art durchgeführt werden
+  * Es gibt eine //secure-Version// der Software, bei der erfolge Angriff mittels eine der unter 3.1 und 3.2 genannten Massnahmen verunmöglicht wurde.     
+**Formale Aspekte**
+  * Die Best-Practice-Coding-Standard wurden eingehalten
+  * Es wird colaborativ gearbeitet inkl. einer Ausfallsicherheit und Versionierung
+**Abgrenzung**
   * Es braucht kein Frontend, sprich der Code kann entweder über Commandline oder als separates Angriffsscriptdurchgeführt werden.
-  * Jedes Teammate kann alle Fragen zum Fousthema beantworten, sprich der Wissentransfer im Tandem wird durch das Tandem sichergestellt.
-  * Bei Ungleicher Performance im Tandem wird individuell benotet.
+  * Bei dieser Version gibt es den Server und ein Script, dass den Agriff durchführt
 
+==== Note 5.3 - 6.0 =====
+**Software/Programmierung**
+  * Es ist eine vulnerabler (node.js oder python) Server vorhanden, dass überwunden werden muss
+  * Es können Angriffe mittels der unter 2.1, 2.2, 2.3 und 2.4beschrieben Art durchgeführt werden
+  * Es gibt eine //secure-Version// der Software, bei der erfolge Angriff mittels eine der unter 3.1, 3.2 und 3.3 genannten Massnahmen verunmöglicht wurde.     
+**Formale Aspekte**
+  * Die Best-Practice-Coding-Standard wurden eingehalten
+  * Es wird colaborativ gearbeitet inkl. einer Ausfallsicherheit und Versionierung
+**Abgrenzung**
+  * Es braucht kein Frontend, sprich der Code kann entweder über Commandline oder als separates Angriffsscriptdurchgeführt werden.
+  * Bei dieser Version gibt es den Server und ein Script, dass den Agriff durchführt
 
 ----
 [[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir
+

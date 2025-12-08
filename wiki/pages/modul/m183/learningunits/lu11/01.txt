@@ -1,32 +1,58 @@
-====== LU11a - Grundlagen BruteForce ======
+====== LU11a - SQLi Grundlagen ======
 
 ===== Lernziele =====
-  * Den Unterschied zwischen einer Brute-Force-Methode (BFM) und Brute-Force-Attacke (BFA) erläutern.
-  * In eigenen Worten den Begriff und die Funktionsweise einer BFA erklären.
-  * Basierend auf der Varianz des Passworts die Kombinationsmöglichkeiten zu dessen Offenlegung berechnen.
+  - Erklären können was eine SQLi ist und welches grundlegende Ziel diese Attacke hat.
+  - Ursachen nennen können, warum SQLi auch in der Gegenwart ernstgenommen werden muss.
 
 ===== Einleitung =====
-Die Brute-Force-Methode (englisch für „rohe Gewalt“) bzw. Methode der rohen Gewalt ist eine Lösungsmethode für Probleme aus den Bereichen Informatik, Kryptologie und Spieltheorie, die auf dem Ausprobieren aller (oder vieler) möglichen Varianten beruht.
+Die //SQL-Injection// ist eine Technik, die sich auf der OWASP-Top10-Liste seit Jahren grösster Beliebtheit erfreuen darf. Die //Popularität// verdankt das  verdankt der Tatsache Attacken auf schlecht gesicherte Seiten einfach zu ermöglichen. 
 
-Ein wichtiger Anwendungsbereich findet sich in der Computersicherheit. Ein oft angeführtes Anwendungsbeispiel für die Brute-Force-Methode ist hier das
-Brechen oder umgangssprachlich //Knacken// von Passwörtern.
+Ein //Injection// bedeutet //Einspritzung//, bzw. //einschleusen//. Eine SQL-Injection startet also Angriffe auf Datenbanken mithilfe von SQL-Anweisungen mit dem Ziel unrechtmässig an den Datenbankinhalt zu gelangen. 
 
-{{:modul:m183:learningunits:lu11:lu12a_2.png?400|}}
+{{:modul:m183:learningunits:lu10:sqli2-1000x464.jpg?400|SQLi schleust zusätzliche SQL-Befehle ein}}
 
-Die Brute-Force-Suche ist einfach zu implementieren und dazu bestimmt, die korrekte Lösung zu finden. Allerdings steigt der Aufwand an Rechenoperationen proportional zur Anzahl der zu probierenden, möglichen Lösungen, wobei die Anzahl dieser möglichen Lösungen mit steigendem Umfang der Probleme häufig exponentiell ansteigt.
+===== Bekannte Attacken =====
 
-===== Mögliche Kombinationen =====
-Die mathematische Berechnungsformel der Kombinationsmöglichkeiten lautet:
+Diese nachfolgenden Beispiele zeigen, dass auch professionell erstellte Webapplikationen anfällig auf SQLI-Attacken sind.
 
-{{:modul:m183:learningunits:lu11:lu12a_4.png?600|Formel zur Berechnung der Kombinationsmöglichkeiten}}
+  * ListenpunktIm Oktober 2014 wturde in den Medien über einen Datenverlust bei der //PSN// (Playstation-Network) berichtet. Hinter der Schlagzeile «SQL-Injektion: Sicherheitslücke erlaubt Zugriff auf Sony-Kundendaten ...“ verbarg sich eine SQLI-Attacke. Die 7 Millionen Benutzerdaten, die seitens unberechtigten abgezogen wurden, führten zu einem massiven Imageverlust.
+  * ListenpunktDie Business-Socialmedia-Plattform //linkedin// hat auf die gleiche Art und Weise im Jahre 2012 6.5 Millionen Benutzerdaten verloren. 
+  * ListenpunktIm Juni 2016 verlor die „University of Greenich“ 2.7 GB vertraulicher Benutzerdaten ihrer Studenten und Mitarbeitende.
 
-**Rechenbeispiel:** 
-Unser Alphabet umfasst 26 Grossbuchstaben. Bei einer Passwortlänge von 7 Zeichen ergibt sich dann die folgende Rechnung:
+Die eben aufgeführten Beispiele sind nur einige aus der lange Liste der //SQLI Hall-of-Shame//. Man kann also daraus folgern, dass die SQLI-Vulnerability (Verwundbarkeit) auch in der Gegenwart ernstgenommen werden muss.
 
-  * Kombinationen = 26 * 26 * 26 * 26 * 26 * 26 * 26<
-  * = 8‘031‘810‘176 -> 8 Mrd. Kombinationen
-Je nach Rechenkapazität und Länge des Passwortes kann das Finden des Passwortes Wochen bis
-Monate dauern.
+===== Ursachensuche für SQLI-Verwundbarkeit =====
+Obwohl mittlerweile fast schon ein //alter Hut//, muss man sich fragen warum unsere heutigen Applikationen nicht per Default gegen diese Attacken geschützt werden bzw. diese verunmöglichen. Nachfolgend finden  Sie die wichtigsten Gründe.
+
+==== Ausbildungsniveau der Webentwickler ====
+Wenn man sich die Entwicklung der IT bzw. den Ausbildungstand der IT-Entwickler genauer ansieht, erscheint es diese Verwundbarkeit nicht mehr ganz so unerklärlich. Speziell in der Webentwicklung gibt es sehr viele Autodidakten, die sich das //Handwerk// selber beigebracht haben. Im Zentrum standen Lösungen, die unter Zeitdruck entwickelt wurden. Es ist verständlich, dass das Thema //Security//leicht übersehen wird, wenn enge  Projektvorgaben wenig Spielraum für Sicherheitsvorkehrungen lassen.
+
+===== Awareness =====
+Der Mensch ist in seinem Wesen //notwendigkeitsorientiert//. D.h. er macht grundsätzlich nichts, was nicht dringend notwendig ist. Beispielsweise werden Kurven auf Strassen nur bei einer entsprechenden Opferzahl gekennzeichnet, sehr bitter aber wahr.
+ 
+===== Risiken =====
+Im Gegensatz zum Strassenbau ist aber in der Softwareentwicklung eine Anpassung wegen Sicherheitslücken nur mit sehr grossen Aufwand möglich ist. Bei jeder Anpassung werden zudem Risiken eingegangen neue Fehler einzubauen. 
+
+Je nachdem wie vital (Lebenswichtig) die Applikation für das eigene Business ist, will kein Entscheidungsträger das Risiko eingehen, dass die Kernapplikation nach der //Verbesserung// nur noch teileweise, gar nicht mehr funktioniert oder, noch schlimmer, unbemerkte Fehler aufweisen.
+
+===== Kosten =====
+Security-Massnahmen verteuern die Entwicklung. Bei knappen Projektbudgets wird teilweise auf Funktionen verzichtet, die der Kunde nicht unmittelbar bemerkt.
+Eine nachträgliche Anpassung der Applikation kann sehr teuer werden. Wenn nicht wirklich von vitaler Bedeutung, werden solche Investitionen vertagt oder gescheut.
+ 
+===== Varianten =====
+Das nachfolgende Schaubild zeigt die verschiedenen Varianten/Hauptarten von SQL-Injection-Angriffen.
+
+{{:modul:m183:learningunits:lu10:lu10a_2.png?600|Varianten von SQLi}}
+
+Man unterscheidet dabei mehrere Ansätze:
+  * **Error Based SQL Injection:** Hierbei nutzen Angreifer bewusst Fehlermeldungen der Datenbank. Aus den detaillierten Fehlermeldungen lassen sich oft interne Strukturen wie Tabellennamen oder Spalten ableiten.
+  * **Union Based SQL Injection:** Dieser Ansatz verwendet den UNION-Operator, um zusätzliche Abfragen an die Datenbank anzuhängen. Auf diese Weise lassen sich sensible Informationen wie Benutzer- oder Kreditkartendaten direkt im regulären Antwortformat der Anwendung ausgeben.
+  * **Blind SQL Injection:** Wenn die Anwendung keine sichtbaren Fehlermeldungen liefert, setzen Angreifer auf indirekte Methoden. Dabei gibt es zwei Varianten:
+    * **Boolean Based SQL Injection:** Die Abfrage wird so verändert, dass sie unterschiedliche Antworten zurückliefert (z. B. wahr/falsch). Über diese Unterschiede lässt sich die Struktur der Datenbank Stück für Stück erschliessen.
+    * **Time Based SQL Injection:** Hier wird die Antwortzeit der Datenbank ausgenutzt. Angreifer fügen Befehle ein, die eine zeitliche Verzögerung auslösen. Anhand der Antwortdauer können sie Rückschlüsse auf die Gültigkeit bestimmter Annahmen ziehen.
+
+===== Quellennachweis =====
+  * [[https://portswigger.net/web-security/sql-injection#what-is-sql-injection-sqli|PortSwigger-What is SQLi?]]
 
 ----
 [[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir
