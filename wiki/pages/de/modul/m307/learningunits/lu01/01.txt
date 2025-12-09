@@ -1,4 +1,4 @@
-====== LU01a - JSON ======
+====== LU01a - JSON Basics ======
 
 ===== Lernziele =====
   - Den Begriff JSON bzw. JSON-Dateiformat in eigenen Worten beschreiben und erklären wozu es eingesetzt werden kann.
@@ -8,7 +8,15 @@
 ===== Einleitung =====
 **JSON** – dieses wundersame Ding, das jeder benutzt. Der Name bedeutet //JavaScript Object Notation// und verrät schon die Herkunft: ein Datenformat, das ursprünglich für JavaScript gedacht war, inzwischen aber von fast jeder Programmiersprache akzeptiert wird – weil JSON sehr flexibel und daher vielfältig eingesetzt werden kann. 
 
-===== JSON-Strucktur =====
+===== Was ist JSON =====
+JSON (JavaScript Object Notation) ist ein textbasiertes Datenformat, das haeufig fuer Konfigurationen, API-Antworten oder Datenaustausch verwendet wird.
+
+**Eigenschaften:**
+  * menschenlesbar
+  * schluessel–wert-basiert
+
+
+===== JSON-Struktur =====
 
 JSON speichert Daten in einer klar strukturierten, menschenlesbaren Form. Das ganze läuft über Schlüssel-Wert-Paare, hübsch sortiert in geschweiften Klammern { }. Texte kommen in Anführungszeichen, Zahlen ohne, Wahrheitswerte heißen true oder false, und null ist ebenfalls möglich, wenn man mal wieder nicht weiss, was man eigentlich speichern wollte. 
 
@@ -27,13 +35,17 @@ Eingesetzte Formate innerhalb von JSON sind streng begrenzt – einer der Gründ
   * **Array**: Eine geordnete Liste von Elementen beliebiger Typen
 
 ===== Einsatzgebiete =====
-JSON wird vor allem für Datenaustausch in Web-APIs genutzt – weil Computer in verschiedenen Programmiersprachen endlich mal ohne Drama miteinander sprechen sollen. Und im Gegensatz zu XML braucht man keinen Informatik-Doktortitel, um es zu lesen. Es ist kompakt und schnell zu parsen (einlesen für Verarbeitung).
+JSON wird vor allem für Datenaustausch in Web-APIs genutzt – weil Computer in verschiedenen Programmiersprachen ohne grossen Administraions- und Programmieraufwand miteinander sprechen sollen. Und im Gegensatz zu XML braucht man keinen Informatik-Doktortitel, um es zu lesen. Es ist kompakt und schnell zu parsen (einlesen für Verarbeitung).
 
 Kurz gesagt: JSON ist aktuell der Standard. JSON's Schlankheit einerseits, und die Flexibilität andererseits ist geradzu perfekt, wenn  es darum geht eine beschränkte Menge von Daten zwischen Computersystemen ausgetauscht. 
 
 ===== Lernvideos =====
 
-<color #ed1c24>TBD</color>
+| 5 Minuten - Grundverständnis |{{:de:modul:m307:learningunits:lu01:json_in_5_minuten.mp4|JSON Grundverständnis}} |
+| 16 Minuten - mit Codebeispielen |{{:de:modul:m307:learningunits:lu01:json_tutorial_fuer_anfaenger.mp4|JSON für Anfänger}} |
+
+
+
 
 ===== Zusatzmaterial =====
   * [[https://www.w3schools.com/js/js_json.asp|W3School - JSON]]

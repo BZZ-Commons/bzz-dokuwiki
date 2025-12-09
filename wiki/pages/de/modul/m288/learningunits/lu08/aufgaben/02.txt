@@ -1,4 +1,4 @@
-====== LU08.A02 - Methode: getElementbyClassname ======
+====== LU08.A02 - Methode: getElementbyClassName ======
 
 ===== Rahmenbedingungen =====
   * Sozialform: individual
@@ -6,10 +6,10 @@
     * Open books
     * [[https://www.w3schools.com/js/js_htmldom.asp| JavaScript HTML-DOM]]
   * Zeit: 20 Minuten
-  * Erwartetes Resultat: Ein JavaScript-File, das Zugriff auf HTML-Objekte Elemente mittels der HTML-DOM-Methode getElementbyClassname ermöglicht.
+  * Erwartetes Resultat: Ein JavaScript-File, das Zugriff auf HTML-Objekte Elemente mittels der HTML-DOM-Methode getElementbyClassName ermöglicht.
 
 ===== Ausgangslage =====
-Sie finden den nachfolgend Quellcode, der Zugriff auf HTML-Elemente via der Methoden **getElementByClassname** durchführt
+Sie finden den nachfolgend Quellcode, der Zugriff auf HTML-Elemente via der Methoden **getElementByClassName** durchführt
 
 {{:de:modul:m288:learningunits:lu08:aufgaben:lu08_l02_1.png?600|}} 
 

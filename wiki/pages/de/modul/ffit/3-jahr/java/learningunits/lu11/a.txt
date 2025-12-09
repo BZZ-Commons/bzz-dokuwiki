@@ -10,7 +10,7 @@ https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-w
 Navigieren Sie in das Verzeichnis, in welchem Sie die Datei abgelegt haben und führen Sie folgenden Befehl aus.
 <code cmd>
 cd ...
-.\cloudflared.exe tunnel --url https://localhost:8443/ --no-tls-verify
+.\cloudflared-windows-amd64.exe tunnel --url https://localhost:8443/ --no-tls-verify
 </code>
 Kopieren Sie aus dem Terminal die URL.
 <code cmd>

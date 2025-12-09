@@ -1,4 +1,4 @@
-====== LU08.A02 - Methode: getElementbyClassname ======
+====== LU08.A03 - Methode: getElementbyTagName ======
 
 ===== Rahmenbedingungen =====
   * Sozialform: individual
@@ -6,7 +6,7 @@
     * Open books
     * [[https://www.w3schools.com/js/js_htmldom.asp| JavaScript HTML-DOM]]
   * Zeit: 20 Minuten
-  * Erwartetes Resultat: Ein JavaScript-File, das Zugriff auf HTML-Objekte Elemente mittels der HTML-DOM-Methode getElementbyTagname ermöglicht.
+  * Erwartetes Resultat: Ein JavaScript-File, das Zugriff auf HTML-Objekte Elemente mittels der HTML-DOM-Methode getElementbyTagName ermöglicht.
 
 ===== Ausgangslage =====
 Sie finden den nachfolgend Quellcode, der Zugriff auf HTML-Elemente via der Methoden **getElementByTagName** durchführt.

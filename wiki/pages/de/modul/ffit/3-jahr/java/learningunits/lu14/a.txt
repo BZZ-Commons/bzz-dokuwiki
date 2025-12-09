@@ -2,7 +2,7 @@
 
 ==== Temperatur ====
 
-Die Temperatur bestimmt, wie "zufällig" eine Antwort ist. ''0.0'' bedeutet im Prinzip, dass die Antwort deterministisch geholt wird. 
+Die Temperatur bestimmt bei generativen Modellen, wie "zufällig" eine Antwort ist. ''0.0'' bedeutet im Prinzip, dass die Antwort deterministisch geholt wird. 
 Höhere Werte sind aufgrund der "Randomness" kreativer und ermöglichen Texte als Erklärung etc. 
 Zu hohe Werte ''>=1.0'' sind aber so "kreativ", dass sie oftmals nichts mehr mit der Frage zu tun haben.
 
