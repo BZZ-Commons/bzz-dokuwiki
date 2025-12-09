@@ -1,4 +1,101 @@
-====== LU01c - JSON-Datei verändern und speichern ======
+====== LU01c - JSON-Datei einlesen und ausgeben ======
+
+===== Was ist JSON? =====
+
+JSON (JavaScript Object Notation) ist ein textbasiertes Datenformat fuer Datenaustausch, Konfigurationen und API-Antworten.
+In JavaScript ist JSON besonders bequem, weil es der Objekt-Notation sehr aehnelt.
+
+**Typische JSON-Struktur (Datei person.json):**
+
+  {
+      "name": "Anna",
+      "alter": 30,
+      "ist_aktiv": true,
+      "hobbys": ["Lesen", "Radfahren"],
+      "adresse": {
+        "stadt": "Berlin",
+        "plz": "10115"
+      }
+  }
+  
+===== Das fs-Modul =====
+Grundsätzlich benötige wir das Modul //fs// (File System) um Daten aus Files ins JavaScript einlesen zu können. Damit müssem wir die Funktionen zum Einlesen der Daten aus der JSON-Datei nicht selbst schreiben. Das //fs-Modul// bietet uns verschiedene, sehr praktische Methoden wie //readFileSync//, die alle Werte aus der JSON-Datei in ein entsprechendes JS-Objekt einliest. 
+
+^ Funktion            ^ Zweck                          ^
+| fs.readFile()     | Datei asynchron lesen            |
+| fs.readFileSync() | Datei synchron lesen             |
+| fs.writeFile()    | Datei speichern/anlegen          |
+| fs.mkdir()        | Ordner erstellen                 |
+| fs.unlink()       | Datei loeschen                   |
+| fs.existsSync()   | Pruefen, ob eine Datei existiert |
+
+
+===== Synchrones Einlesen =====  
+
+
+
+
+
+  // Datei als Text einlesen
+  const jsonText = fs.readFileSync("person.json", "utf8");
+  //
+  // Text in JS-Objekt umwandeln
+  const daten = JSON.parse(jsonText);
+  // 
+  console.log(typeof daten); // "object"
+  console.log(daten);
+
+
+===== Asynchrones Einlesen =====
+
+  const fs = require("fs");
+  //
+  fs.readFile("person.json", "utf8", (err, data) => {
+    if (err) {
+      console.error("Fehler beim Lesen der Datei:", err.message);
+      return;
+    }
+    //
+    try {
+      const daten = JSON.parse(data);
+      console.log("JSON eingelesen:", daten);
+    } catch (parseError) {
+      console.error("Ungueltiges JSON:", parseError.message);
+    }
+  });
+
+
+===== Auf einzelne Werte zugreifen =====
+
+  console.log(daten.name);                   // Anna
+  console.log(daten.alter);                  // 30
+  console.log(daten.hobbys[0]);              // Lesen
+  console.log(daten.adresse.stadt);          // Berlin
+  //
+  // optionaler Zugriff mit optional chaining
+  console.log(daten.adresse?.stadt ?? "unbekannt");
+
+===== JSON formatiert ausgeben =====
+
+**Rohes Objekt:**
+
+  console.log(daten);
+  
+**Formatiert als JSON-String:**
+
+  const jsonString = JSON.stringify(daten, null, 4);
+  console.log(jsonString);
+  
+**Parameter bei JSON.stringify:**
+  - Argument: das Objekt
+  - Argument: Replacer (meist null)
+  - Argument: Anzahl Leerzeichen fuer Einrueckung (4 = gut lesbar, nicht komplett uebertrieben)
+
+
+
+
+
+
 
 ----
 [[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

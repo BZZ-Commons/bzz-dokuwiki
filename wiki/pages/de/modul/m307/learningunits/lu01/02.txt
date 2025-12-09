@@ -1,88 +1,38 @@
-====== LU01b - JSON-Datei einlesen und ausgeben ======
+====== LU01b - Synchrone VS Asynchrone Verarbeitung ======
 
-===== Was ist JSON? =====
+Grundsätzlich gibt es zwei Varianten in JS, wie Daten eingelesen werden können: 
 
-JSON (JavaScript Object Notation) ist ein textbasiertes Datenformat fuer Datenaustausch, Konfigurationen und API-Antworten.
-In JavaScript ist JSON besonders bequem, weil es der Objekt-Notation sehr aehnelt.
+  * Synchron
+  * Asychron
 
-**Typische JSON-Struktur (Datei person.json):**
+Beim synchronen Einlesen wartet JavaScript, bis die Datei komplett gelesen wurde – und macht in der Zeit gar nichts anderes. Beim asynchronen Einlesen liest Node.js die Datei im Hintergrund ein und kann waehrenddessen weiterarbeiten. Das eine blockiert, das andere nicht.
 
-  {
-      "name": "Anna",
-      "alter": 30,
-      "ist_aktiv": true,
-      "hobbys": ["Lesen", "Radfahren"],
-      "adresse": {
-        "stadt": "Berlin",
-        "plz": "10115"
-      }
-  }
-  
-===== Synchrones Einlesen =====  
-Grundsätzlich benötige wir das Modul //fs// (File System) um Daten aus Files ins JavaScript einlesen zu können. Damit müssem wir die Funktionen zum Einlesen der Daten aus der JSON-Datei nicht selbst schreiben. Das //fs-Modul// bietet uns verschiedene sehr praktische Methoden wie //readFileSync//, die alle Werte aus der JSON-Datei in ein entsprechendes JS-Objekt einliest. 
+{{:de:modul:m307:learningunits:lu01:synchronous-asynchronous.jpg?600|}}
+===== Vergleich Sync VS Async =====
 
-//Synchron// heisst hier, dass das Programm die gesamte JSON-Datei einliest und währenddessen blockiert ist, also nichts anderes macht bis es fertig mit dem Einlessen ist. Bei kleinen Dateien spielt das keine Rolle, bei grossen Dateien jedoch schon, da das Einlesen lange dauern kann, und das Programm in der Zeit blockert ist.
+Die nachfolgende Tabelle zeigt die wesentlichen Unterschiede
 
-  // Datei als Text einlesen
-  const jsonText = fs.readFileSync("person.json", "utf8");
-  //
-  // Text in JS-Objekt umwandeln
-  const daten = JSON.parse(jsonText);
-  // 
-  console.log(typeof daten); // "object"
-  console.log(daten);
+^Art ^Verhalten ^Vorteil ^Nachteil ^
+| **synchron (`readFileSync`)** | Programm pausiert, bis Datei fertig eingelesen ist        | einfach, gut fuers schnelle Rumprobieren       | blockiert den gesamten Ablauf – bei grossen Dateien oder vielen Zugriffen fatal |
+| **asynchron (`readFile`)**    | Datei wird im Hintergrund gelesen, Code kann weiterlaufen | performant, ideal fuer Server/mehrere Zugriffe | Rueckgabewert kommt erst spaeter per Callback/Promise                           |
 
-
-===== Asynchrones Einlesen =====
+**Beispiel für Synchrones Einlesen**
 
   const fs = require("fs");
-  //
-  fs.readFile("person.json", "utf8", (err, data) => {
-    if (err) {
-      console.error("Fehler beim Lesen der Datei:", err.message);
-      return;
-    }
-    //
-    try {
-      const daten = JSON.parse(data);
-      console.log("JSON eingelesen:", daten);
-    } catch (parseError) {
-      console.error("Ungueltiges JSON:", parseError.message);
-    }
+  const daten = fs.readFileSync("data.json", "utf8");
+  console.log("Weiter gehts erst, wenn das oben fertig ist.");
+
+**Beispiel für Asynchrones Einlesen**
+
+  const fs = require("fs");
+  fs.readFile("data.json", "utf8", (err, daten) => {
+      console.log("Ich komme spaeter – Datei ist jetzt fertig eingelesen.");
   });
+  console.log("Dieser Text erscheint direkt danach – ohne warten.");
 
-
-===== Auf einzelne Werte zugreifen =====
-
-  console.log(daten.name);                   // Anna
-  console.log(daten.alter);                  // 30
-  console.log(daten.hobbys[0]);              // Lesen
-  console.log(daten.adresse.stadt);          // Berlin
-  //
-  // optionaler Zugriff mit optional chaining
-  console.log(daten.adresse?.stadt ?? "unbekannt");
-
-===== JSON formatiert ausgeben =====
-
-**Rohes Objekt:**
-
-  console.log(daten);
-  
-**Formatiert als JSON-String:**
-
-  const jsonString = JSON.stringify(daten, null, 4);
-  console.log(jsonString);
-  
-**Parameter bei JSON.stringify:**
-  - Argument: das Objekt
-  - Argument: Replacer (meist null)
-  - Argument: Anzahl Leerzeichen fuer Einrueckung (4 = gut lesbar, nicht komplett uebertrieben)
-
-
-
-
-
-
+===== Lernvideo =====
+|Lernvideo - 5': What is asynchronous javascript-code?|{{:de:modul:m307:learningunits:lu01:what_is_asynchronous_javascript_code.mp4|}}|
+|Lernvideo - 8': Asynchronous Vs Synchronous Programming|{{:de:modul:m307:learningunits:lu01:asynchronous_vs_synchronous_programming.mp4|}}|
 
 ----
 [[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir
