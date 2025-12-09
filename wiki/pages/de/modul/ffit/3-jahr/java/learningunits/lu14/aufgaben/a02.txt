@@ -1,0 +1,7 @@
+==== LU14.A02 ChatService ====
+
+Machen Sie einen Cherry-Pick des Commits ''037e28a'', um den fertigen ''ChatService'' und sämtliche Hilfsklassen zu erhalten.
+
+Stellen Sie sicher, dass der Test ''ChatServiceTest.java'' fehlerfrei ausgeführt werden kann.
+
+Studieren Sie den Enum ''ChatMode.java''. Welche anderen Modi (ausser Fragen beantworten) könnte man einbauen?

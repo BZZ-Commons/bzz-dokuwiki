@@ -1,0 +1,46 @@
+====== LU14b - Enum ======
+
+In Java gibt es neben Klassen ''class'', Schnittstellen ''interface'' auch sogenannte Aufzählungstypen ''enum'' ("**enum**erated type"). 
+Enums sind im Grunde hartcodierte Objekte, die in ihrer Klasse als Konstanten (daher auch UPPER_CASE) zur Verfügung gestellt werden.
+
+Man sich immer genau überlegen, ob eine Entität sich als ''enum'' eignet oder nicht. Die Monate zum Beispiel kann man wie im folgenden Beispiel gut als Enum abbilden, weil die Monate eine abgeschlossene Aufzählung bilden.
+
+<code java>
+public enum Month {
+
+    JANUARY("January", "Jan", 1),
+    FEBRUARY("February", "Feb", 2),
+    MARCH("March", "Mar", 3),
+    APRIL("April", "Apr", 4),
+    MAY("May", "May", 5),
+    JUNE("June", "Jun", 6),
+    JULY("July", "Jul", 7),
+    AUGUST("August", "Aug", 8),
+    SEPTEMBER("September", "Sep", 9),
+    OCTOBER("October", "Oct", 10),
+    NOVEMBER("November", "Nov", 11),
+    DECEMBER("December", "Dec", 12);
+
+    private final String name;
+    private final String abbreviation;
+    private final int number;
+
+    Month(String name, String abbreviation, int number) {
+        this.name = name;
+        this.abbreviation = abbreviation;
+        this.number = number;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getAbbreviation() {
+        return abbreviation;
+    }
+
+    public int getNumber() {
+        return number;
+    }
+}
+</code>

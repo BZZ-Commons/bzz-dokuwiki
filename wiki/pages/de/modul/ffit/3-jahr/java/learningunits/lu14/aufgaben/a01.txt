@@ -1,14 +1,41 @@
-==== LU14.A01 API_KEY bekommen ====
+==== LU14.A01 API_KEY bekommen und hinterlegen ====
 
-Wählen Sie einen Anbieter, deren Voraussetzungen Sie erfüllen und erstellen Sie einen API-KEYY.
+Es gibt unterschiedliche Anbieter, die (kostenlose) LLM-API-Keys zur Verfügung stellen. 
+Wir können zum Beispiel OpenRouter nutzen. Ein grosser Vorteil dabei ist, dass die Anforderungen im Gegensatz zu anderen Anbietern keine Kreditkarte o. Ä. benötigen.
 
-^ OpenRouter ^ Gemini ^
-| <WRAP>Voraussetzungen:
-  * E-Mail-Verifikation
-</WRAP> | <WRAP>Voraussetzungen:
-  * Altersbeschränkung: >=18 Jahre
-  * Alter verifiziert mit Ausweis oder Kreditkarte
-</WRAP> |
-| https://openrouter.ai/ | https://aistudio.google.com/api-keys |
+Befolgen Sie folgende Schritte, um einen OpenRouter-API-Key zu bekommen.
+  - https://openrouter.ai/ öffnen
+  - "SignUp" klicken und Account erstellen
+  - Per E-Mail zugeschickter Link bestätigen und einloggen
+  - Unter https://openrouter.ai/settings/keys einen API-Key erstellen
+  - Den Key unbedingt kopieren, da er nachher nicht mehr sichtbar ist
 
-''TODO''
+Hinterlegen Sie den API-Key in Ihrer ''application.properties''-Datei.
+<code properties>
+spring.ai.openai.api-key=sk-or-v1-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+</code>
+
+Unter folgendem Link finden Sie alle möglichen Models. Da Sie nur einen Free-Account haben, können Sie entsprechend nur ein kostenloses Model wählen.
+
+https://openrouter.ai/models?fmt=table&order=pricing-low-to-high
+
+Überprüfen Sie Ihren Key mit dem folgenden cURD-Befehl. Ersetzen Sie dabei ''YOUR_API_KEY'' durch Ihren Key. Die ''max_tokens'' bestimmen, wie viele Zeichen die Antwort maximal haben darf. Der Rest wird einfach abgeschnitten.
+
+<code bash>
+curl https://openrouter.ai/api/v1/chat/completions \
+  -H "Authorization: Bearer YOUR_API_KEY" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "model": "mistralai/mistral-7b-instruct:free",
+    "messages": [
+      {
+        "role": "user",
+        "content": "What is the answer to life, the universe and everything?"
+      }
+    ],
+    "temperature": 0.4,
+    "max_tokens": 64
+  }'
+</code>
+
+Sie dürfen gerne auch mit anderen Werten (zum Beispiel Temperatur) ausprobieren.

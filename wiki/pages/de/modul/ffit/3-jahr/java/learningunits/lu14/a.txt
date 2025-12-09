@@ -1,7 +1,10 @@
-====== LU14a - Enum ======
+====== LU14a - Wissenswertes über LLM ======
 
-In Java gibt es neben Klassen ''class'', Schnittstellen ''interface'' auch sogenannte Aufzählungstypen ''enum'' ("**enum**erated type"). 
-Enums sind im Grunde hartcodierte Objekte, die in ihrer Klasse als Konstanten (daher auch UPPER_CASE) zur Verfügung gestellt werden.
+==== Temperatur ====
 
-''TODO'' 
-==== ??? ====
+Die Temperatur bestimmt, wie "zufällig" eine Antwort ist. ''0.0'' bedeutet im Prinzip, dass die Antwort deterministisch geholt wird. 
+Höhere Werte sind aufgrund der "Randomness" kreativer und ermöglichen Texte als Erklärung etc. 
+Zu hohe Werte ''>=1.0'' sind aber so "kreativ", dass sie oftmals nichts mehr mit der Frage zu tun haben.
+
+Für unsere Zwecke können wir Werte von etwa ''0.4'' bis ''0.6'' nutzen. Das ist ein guter Kompromiss und hat sich als nützlich erwiesen.
+
