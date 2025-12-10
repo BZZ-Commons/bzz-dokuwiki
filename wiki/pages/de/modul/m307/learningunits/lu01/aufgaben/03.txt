@@ -1,0 +1,89 @@
+====== LU01.A03 - JSON-File einlesen und dynamisch ausgeben ======
+
+===== Rahmenbedingungen =====
+  * Sozialform: Einzelarbeit
+  * Hilfsmittel: Openbooks
+  * Zeit: 30 Minuten
+  * Erwartetes Resultat: JavaScript-File, dass ein gegebenes JSON File einliest und auf der Computer-Konsole dynamisch ausgibt.
+
+===== Ausgangslage =====
+Das nachfolgende JSON-File //lernende2.json// mit 20 Lernenden ist gegeben. Sie können es hier herunterladen und in Ihre Entwicklungsumgebung einbetten.
+
+In diesen Falle sind es //nur// 20 Einträge, es könnte aber auch 200 oder 2'000 sein. Der Punkt ist, dass wir die Ausgabe dynamisch gestalten müssen, da es keinen Sinn mach die 20 Sätze statisch in eine File //hard-zu-kodieren//.
+
+Die dynamische Ausgabe erreichen wird mit einer Schleife, die die Daten vom ersten bis zum letzten Satz durchläuft und die Ausgabe in die Konsole bringt.
+
+
+**lernende2.json**
+
+  {
+    "lernende": [
+      { "name": "Anna", "nachname": "Keller", "alter": 19, "bms": true,  "hobbies": ["Lesen", "Joggen", "Kochen"] },
+      { "name": "Luca", "nachname": "Meier", "alter": 18, "bms": false, "hobbies": ["Gaming", "Mountainbike", "Musik"] },
+      { "name": "Sophie", "nachname": "Hofstetter", "alter": 20, "bms": true, "hobbies": ["Fotografie", "Yoga", "Reisen"] },
+      { "name": "Tim", "nachname": "Schwarz", "alter": 17, "bms": false, "hobbies": ["Fussball", "Schach", "Filme"] },
+      { "name": "Mia", "nachname": "Brunner", "alter": 18, "bms": true, "hobbies": ["Zeichnen", "Gitarre", "Backen"] },
+      { "name": "Jonas", "nachname": "Weber", "alter": 19, "bms": false, "hobbies": ["Schwimmen", "Fitness", "Spiele"] },
+      { "name": "Julia", "nachname": "Frei", "alter": 20, "bms": true, "hobbies": ["Tanzen", "Mode", "Fotobearbeitung"] },
+      { "name": "Noah", "nachname": "Kunz", "alter": 18, "bms": false, "hobbies": ["E-Sport", "Klettern", "Trompete"] },
+      { "name": "Emily", "nachname": "Gruber", "alter": 19, "bms": false, "hobbies": ["Lesen", "Kunst", "Volleyball"] },
+      { "name": "Nico", "nachname": "Hug", "alter": 21, "bms": true, "hobbies": ["Laufen", "Gaming", "Kochen"] },
+      { "name": "Leonie", "nachname": "Seiler", "alter": 18, "bms": false, "hobbies": ["Ballett", "Schreiben", "Reisen"] },
+      { "name": "David", "nachname": "Bachmann", "alter": 22, "bms": true, "hobbies": ["Kraftsport", "Wandern", "Barbecue"] },
+      { "name": "Laura", "nachname": "Zingg", "alter": 17, "bms": false, "hobbies": ["Serien", "Basteln", "Skifahren"] },
+      { "name": "Elias", "nachname": "Arnold", "alter": 19, "bms": true, "hobbies": ["Musik", "Nintendo", "Velo"] },
+      { "name": "Sarah", "nachname": "Fischer", "alter": 20, "bms": false, "hobbies": ["Fotografie", "Reiten", "Sprachen"] },
+      { "name": "Jan", "nachname": "Hess", "alter": 18, "bms": true, "hobbies": ["Fussball", "Tech", "Motorrad"] },
+      { "name": "Marie", "nachname": "Ammann", "alter": 19, "bms": false, "hobbies": ["K-Pop", "Zeichnen", "Kochen"] },
+      { "name": "Finn", "nachname": "Roth", "alter": 18, "bms": true, "hobbies": ["Schwimmen", "Skaten", "Gamen"] },
+      { "name": "Zoe", "nachname": "Marti", "alter": 17, "bms": false, "hobbies": ["Tanzen", "Make-up", "Reisen"] },
+      { "name": "Samuel", "nachname": "Ingold", "alter": 21, "bms": true, "hobbies": ["Basketball", "Filme", "Coding"] }
+    ]
+  }
+
+===== Auftrag =====
+Bauen Sie das nachfolgende statische Script um, sodass es dynamisch die JSON-Daten ausgibt, unabhängig von der Anzahl Daten, die es enthält. 
+
+Dies realisieren Sie durch eine Schleife, die JSON-Lernenden-Daten durchläuft. Wenn Sie diese dann erfolgreich implementiert haben, können Sie die Hobbies dann mit einer zeiten, inneren Schleife ausgeben lassen.
+
+
+**vorlage für lu01_l03.js**
+
+  const fs = require("fs");
+  //
+  fs.readFile("lernende.json", "utf8", (err, data) => {
+    if (err) {
+      console.error("Fehler beim Lesen:", err);
+      return;
+    }
+    //
+    const daten = JSON.parse(data);
+    //
+    console.log(typeof daten); // object
+    //
+    console.log("Anzahl Lernende:", daten.lernende.length);
+    //
+    console.log("\n--- Gesamte Daten als formatierter JSON-String ---");
+    console.log(JSON.stringify(daten, null, 2));  // << formatierte Ausgabe
+    //
+    console.log("\n--- Einzelwerte erster Datensatz ---");
+    // Hier muss die äussere Schleife eingebaut werde, die den Index der Lernenden enthält
+    console.log("Name:", daten.lernende[0].name);
+    console.log("Nachname:", daten.lernende[0].nachname);
+    console.log("Alter:", daten.lernende[0].alter);
+    console.log("BMS:", daten.lernende[0].bms);
+    // hier kommt die innere Schleife für die Hobbies
+    console.log("Hobbies:", daten.lernende[0].hobbies[0], daten.lernende[0].hobbies[1], daten.lernende[1].hobbies[2]);
+  });
+
+
+  
+    
+===== Lösungen =====
+[[de:modul:m307:learningunits:lu01:Lösungen:03|LU01.L03]]
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir
+
+
+

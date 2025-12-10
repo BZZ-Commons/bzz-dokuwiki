@@ -1,19 +1,39 @@
-====== LU02.A01 - TBD ======
+====== LU01.A01 - JSON-File anlegen======
 
 ===== Rahmenbedingungen =====
-  * Sozialform: individual
-  * Hilfsmittel: Nur Lehrmittel, keine Websuche oder AI
+  * Sozialform: Einzelarbeit
+  * Hilfsmittel: Openbooks
   * Zeit: 10 Minutes
-  * Erwartetes Resultat: Word/PDF Datei mit Kontrollfragen und Antworten
+  * Erwartetes Resultat: JSON-Datei mit 1+3 Lernenden
 
 ===== Ausgangslage =====
-???
+Wir wissen, dass JSON ein Standard ist, um Daten zwischen Computern auszutauschen. Das Einzige, was dabei beachtet werden muss ist eine saubere, JSON-konforme (gemäss der Regeln von JSOn) Struktur. Um das zu üben, wollen wir bei dieser Aufgabe eine eigene JSON-Datei anlegen.
 
-===== Kontrollfragen =====
-???
+===== Auftrag 1 =====
+Legen Sie eine JSON-Datei **lernende.json** mit den nachfolgenden Attributen an:
+    * name: String
+    * nachname: String
+    * alter: number
+    * bms: boolean
+    * hobbies: Array von Strings 
+
+===== Auftrag 2 =====
+Erstellen Sie einen konkrete Datensatz mit einer Person Ihrer Wahl unter Verwendung der im Auftrag 1 vorgegeben JSON-Struktur. Prüfen Sie die Korrektheit Ihrer Arbeit durch ein Online-Validierungstool: [[https://jsonlint.com/|JSON Online Validation]].
+
+**Hinweis**
+Validierungstools prüfen nur die formale, nicht aber die inhaltliche Korrektheit des Sourcecoces. D.h. es wird beispielsweise geprüft, 
+  * ob alle Klammern vorhanden und in der richtigen Reihenfolge sind 
+  * ob alle Attribute durch Werte belegt sind
+  * ob die Key-Value-Paare durch Kommata getrennt wurden
+  * ...
+
+Sie erkenne nicht, ob die Attribute korrekt geschrieben wurden oder ob die korrekten Werte den passenden Attributen zugeordnet wurden.
+
+===== Auftrag 3 =====
+Wenn Sie sicher sind, dass Ihre JSON nun die korrekte Struktur hat, legen Sie drei weitere Lernende an. Prüfen Sie am Ende Ihr Ergebnis mit dem Validierungstool.
 
 ===== Lösungen =====
-[[de:modul:m307:learningunits:lu02:Lösungen:01|LU02.A01]]
+[[de:modul:m307:learningunits:lu01:Lösungen:01|LU01.L01]]
 
 ----
 [[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

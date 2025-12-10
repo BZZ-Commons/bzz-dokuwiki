@@ -1,0 +1,49 @@
+====== LU01.L02 - JSON-File einlesen und ausgeben ======
+
+
+===== Auftrag =====
+Erstellen Sie ein JS-Script, das die JSON-Inhalt asynchron einliest und auf der Computerkonsole formatiert ausgibt. Das Ergebnis soll wie folgt aussehen.
+
+
+===== Lösungen =====
+
+  const fs = require("fs");
+  //
+  fs.readFile("lernende.json", "utf8", (err, data) => {
+    if (err) {
+      console.error("Fehler beim Lesen:", err);
+      return;
+    }
+    //
+    const daten = JSON.parse(data);
+    //
+    console.log(typeof daten); // object
+    //
+    console.log("Anzahl Lernende:", daten.lernende.length);
+    //
+    console.log("\n--- Gesamte Daten als formatierter JSON-String ---");
+    console.log(JSON.stringify(daten, null, 2));  // << formatierte Ausgabe
+    //  
+    console.log("\n--- Einzelwerte erster Datensatz ---");
+    console.log("Name:", daten.lernende[0].name);
+    console.log("Nachname:", daten.lernende[0].nachname);
+    console.log("Alter:", daten.lernende[0].alter);
+    console.log("BMS:", daten.lernende[0].bms);
+    console.log("Hobbies:", daten.lernende[0].hobbies[0], daten.lernende[0].hobbies[1], daten.lernende[1].hobbies[2]);
+    //
+    console.log("\n--- Einzelwerte zweiter Datensatz ---");
+    console.log("Name:", daten.lernende[1].name);
+    console.log("Nachname:", daten.lernende[1].nachname);
+    console.log("Alter:", daten.lernende[1].alter);
+    console.log("BMS:", daten.lernende[1].bms);
+    console.log("Hobbies:", daten.lernende[0].hobbies[0], daten.lernende[0].hobbies[1], daten.lernende[1].hobbies[2]);
+  });
+
+
+  
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir
+
+
+

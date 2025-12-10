@@ -1,0 +1,44 @@
+====== LU01.L03 - JSON-File einlesen und dynamisch ausgeben ======
+
+===== Auftrag =====
+Bauen Sie das nachfolgende statische Script um, sodass es dynamisch die JSON-Daten ausgibt, unabhängig von der Anzahl Daten, die es enthält. 
+
+Dies realisieren Sie durch eine Schleife, die JSON-Lernenden-Daten durchläuft. Eine zweite innere Schleife benötigen Sie für die Hobbies.
+    
+===== Lösungen =====
+
+  const fs = require("fs");
+  // JSON asynchron einlesen
+  fs.readFile("lernende.json", "utf8", (err, data) => {
+    if (err) {
+      console.error("Fehler beim Lesen:", err);
+      return;
+    }
+    //
+    const daten = JSON.parse(data);
+    //
+    console.log("\n--- Ausgabe aller Lernenden (mit for-Schleifen) ---\n");
+    //
+    // ÄUSSERE FOR-SCHLEIFE → alle Lernenden durchgehen
+    for (let i = 0; i < daten.lernende.length; i++) {
+      const person = daten.lernende[i];
+      console.log(`Lernende/r ${i + 1}:`);
+      console.log("Name:", person.name, person.nachname);
+      console.log("Alter:", person.alter);
+      console.log("BMS:", person.bms ? "Ja" : "Nein");
+      console.log("Hobbys:");
+      //
+      // INNERE FOR-SCHLEIFE → Hobbys ausgeben
+      for (let j = 0; j < person.hobbies.length; j++) {
+        console.log(" -", person.hobbies[j]);
+      }
+      //
+      console.log(); // Leerzeile für Übersicht
+    }
+  });
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir
+
+
+

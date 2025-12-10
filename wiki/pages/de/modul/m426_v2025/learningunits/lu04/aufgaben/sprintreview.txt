@@ -1,11 +1,17 @@
-====== LU04.A01 - Auftrag: Sprint-Review ======
+====== LU04.A01 - Auftrag: Sprint Review ======
 
-===== Auftrag =====
-Sie führen einen Sprint Review mit dem Product Owner und dem Steakholder durch.
+Sie führen einen Sprint Review mit dem Product Owner durch.
 Dabei demonstrieren Sie das Produktinkrement und zeigen auf, welche User Storys **done** (erledigt) sind.
+
+----
 
 
 ===== 1. Rollen und Aufgaben =====
+**Entwicklungsteam** (2–3 Entwickler:innen)\\
+  * Demonstriert die fertigen Inkremente („Done“) live und funktional.
+  * Erläutert technische Entscheidungen, Herausforderungen und Lösungswege.
+
+
 **Product Owner (PO)**\\
   * Präsentiert das Sprintziel und bewertet, ob dieses erreicht wurde.
   * Entscheidet über Anpassungen des Product Backlogs basierend auf Erkenntnissen im Review.\\
@@ -18,25 +24,24 @@ Dabei demonstrieren Sie das Produktinkrement und zeigen auf, welche User Storys 
   * Unterstützt PO und Team beim Festhalten der Ergebnisse.
 
 
-**Entwicklungsteam** (2–3 Entwickler)\\
-  * Demonstriert die fertigen Inkremente („Done“) live und funktional.
-  * Erläutert technische Entscheidungen, Herausforderungen und Lösungswege.
+----
 
 
 
 ===== Vorgehen =====
 
-Für jede User Story im Sprint Backlog 
+Jede:r Entwickler:in stellt die eigens erarbeiteten User Stories vor:
 
-  - Erläutern Sie die relevanten Aussagen in Ihrer Definition of Done.
-  - Demonstrieren Sie die einsatzbereiten Funktionen.
-  - Zeigen Sie auf, wie Sie die Akzeptanzkriterien erfüllen.
-  - Halten Sie Anregungen des Product Owners fest.
+  - Demonstrieren Sie die einsatzbereiten Funktionen/Arbeitsergebnisse aus dem aktuellen Sprint: Was lief gut, was gab es für Probleme und wie wurden sie gelöst?
+  - Zeigen Sie auf, wie Sie die Akzeptanzkriterien erfüllen
+  - Zeigen Sie auf, wie Sie die Definition of Done erfüllen.
+  - Zuletzt bewertet der Product Owner, ob das Arbeitsergebnis den zuvor definierten Akzeptanzkriterien gerecht wird. Wenn ja, dann wird die User Story auf "done" gesetzt.
 
 Anschliessend stellt der Product Owner das aktualisierte Product Backlog vor:
-  * Erledigte User Storys werden nach Done verschoben (falls nicht schon geschehen) und als erledigt markiert.
   * Bestehende, veränderte User Stories werden erläutert.
-  * Neue User Stories werden erläutert. 
+  * Falls es neue User Stories im Product Backlog gibt, werden diese erläutert. 
+
+----
 
 ===== Erwartete Resultate =====
   * Lauffähiges Produktinkrement

@@ -32,39 +32,63 @@ Grundsätzlich benötige wir das Modul //fs// (File System) um Daten aus Files i
 
 ===== Synchrones Einlesen =====  
 
+**einlesenSync.js**
 
-
-
-
-  // Datei als Text einlesen
+  const fs = require("fs"); // nicht vergessen
+  //
+  // Datei einlesen
   const jsonText = fs.readFileSync("person.json", "utf8");
   //
-  // Text in JS-Objekt umwandeln
+  // In Objekt umwandeln
   const daten = JSON.parse(jsonText);
-  // 
-  console.log(typeof daten); // "object"
+  //
+  console.log(typeof daten); // object
   console.log(daten);
+  //
+  // Einzelfelder ausgeben
+  console.log("Name:", daten.name);
+  console.log("Alter:", daten.alter);
+  console.log("Aktiv:", daten.ist_aktiv);
+  //
+  // Hobbys
+  console.log("Hobbys:");
+  daten.hobbys.forEach(hobby => console.log(" -", hobby));
+  //
+  // Adresse
+  console.log("Adresse:");
+  console.log("  Stadt:", daten.adresse.stadt);
+  console.log("  PLZ:", daten.adresse.plz);
 
 
-===== Asynchrones Einlesen =====
+===== Asynchrones Einlesen=====
+** einlesenAsync.js**
 
   const fs = require("fs");
   //
+  // Asynchrones Einlesen
   fs.readFile("person.json", "utf8", (err, data) => {
     if (err) {
-      console.error("Fehler beim Lesen der Datei:", err.message);
+      console.error("Fehler beim Lesen:", err);
       return;
     }
     //
-    try {
-      const daten = JSON.parse(data);
-      console.log("JSON eingelesen:", daten);
-    } catch (parseError) {
-      console.error("Ungueltiges JSON:", parseError.message);
-    }
+    // JSON umwandeln
+    const daten = JSON.parse(data);
+    //
+    console.log(typeof daten); // object
+    console.log(daten);
+    //
+    console.log("Name:", daten.name);
+    console.log("Alter:", daten.alter);
+    console.log("Aktiv:", daten.ist_aktiv);
+    //
+    console.log("Hobbys:");
+    daten.hobbys.forEach(hobby => console.log(" -", hobby));
+    //
+    console.log("Adresse:");
+    console.log("  Stadt:", daten.adresse.stadt);
+    console.log("  PLZ:", daten.adresse.plz);
   });
-
-
 ===== Auf einzelne Werte zugreifen =====
 
   console.log(daten.name);                   // Anna
@@ -91,10 +115,35 @@ Grundsätzlich benötige wir das Modul //fs// (File System) um Daten aus Files i
   - Argument: Replacer (meist null)
   - Argument: Anzahl Leerzeichen fuer Einrueckung (4 = gut lesbar, nicht komplett uebertrieben)
 
+**einlesenAsyncFormatiert.js**
 
-
-
-
+  const fs = require("fs");
+  //
+  fs.readFile("person.json", "utf8", (err, data) => {
+    if (err) {
+      console.error("Fehler beim Lesen:", err);
+      return;
+    }
+    //
+    const daten = JSON.parse(data);
+    //
+    console.log(typeof daten); // object
+    //
+    console.log("\n--- Gesamte Daten als formatierter JSON-String ---");
+    console.log(JSON.stringify(daten, null, 2));  // << formatierte Ausgabe
+    //
+    console.log("\n--- Einzelwerte ---");
+    console.log("Name:", daten.name);
+    console.log("Alter:", daten.alter);
+    console.log("Aktiv:", daten.ist_aktiv);
+    //
+    console.log("\nHobbys:");
+    daten.hobbys.forEach(hobby => console.log(" -", hobby));
+    //
+    console.log("\nAdresse:");
+    console.log("  Stadt:", daten.adresse.stadt);
+    console.log("  PLZ:", daten.adresse.plz);
+  });
 
 
 ----

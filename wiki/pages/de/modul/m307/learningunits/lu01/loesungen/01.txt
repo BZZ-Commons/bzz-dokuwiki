@@ -1,0 +1,52 @@
+====== LU01.L01 - JSON-File anlegen======
+
+===== Auftrag 1 =====
+  - Legen Sie eine JSON-Datei **lernende.json** an mit den nachfolgenden Attributen:
+    * name: String
+    * nachname: String
+    * alter: number
+    * bms: boolean
+    * hobbies: Array von Strings 
+  - Erstellen Sie einen konkrete Datensatz mit einer Person Iher Wahl unter Verwendung der im Auftrag 1 vorgegeben JSON-Struktur.
+  - Prüfen Sie die Korrektheit Ihrer Arbeit durch einen Online-Validierungstool: [[https://jsonlint.com/|JSON Online Validation]].
+  - Wenn Sie sicher sind, dass Ihr JSON nun die korrekte Struktur hat, legen Sie drei weitere Lernende an. 
+  - Prüfen Sie am Ende Ihr Ergebnis mit dem Validierungstool.
+
+**Lösungscode von lernende.json**
+
+  {
+    "lernende": [
+      {
+        "name": "Anna",
+        "nachname": "Keller",
+        "alter": 19,
+        "bms": true,
+        "hobbies": ["Lesen", "Joggen", "Kochen"]
+      },
+      {
+        "name": "Luca",
+        "nachname": "Meier",
+        "alter": 18,
+        "bms": false,
+        "hobbies": ["Gaming", "Mountainbike", "Musik"]
+      },
+      {
+        "name": "Sophie",
+        "nachname": "Hofstetter",
+        "alter": 20,
+        "bms": true,
+        "hobbies": ["Fotografie", "Yoga", "Reisen"]
+      },
+      {
+        "name": "Tim",
+        "nachname": "Schwarz",
+        "alter": 17,
+        "bms": false,
+        "hobbies": ["Fussball", "Schach", "Filme"]
+      }
+    ] 
+  }
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir
