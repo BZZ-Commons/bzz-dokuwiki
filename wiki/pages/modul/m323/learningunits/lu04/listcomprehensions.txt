@@ -17,7 +17,8 @@ newlist = [expression for item in iterable if condition == True]
 ==== Condition ====
 Ein optionaler Filter, um nur bestimmte Elemente einzuschließen.
 <code python>
-newlist = [x for x in cars if x != 'tesla']
+cars = ['audi', 'vw', 'seat', 'skoda', 'tesla']
+newlist = [car for car in cars if x != 'tesla']
 </code>
 Die Bedingung ''if x != 'tesla''' liefert ''True'' für alle Elemente außer ''tesla'', so dass die neue Liste alle Autos außer ''Tesla'' enthält.
 

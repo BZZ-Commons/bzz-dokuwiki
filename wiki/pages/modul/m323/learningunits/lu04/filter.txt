@@ -59,8 +59,8 @@ class Person:
         self.name = name
         self.age = age
         
-def is_adult(self):
-    return self.age >= 30
+    def is_adult(self):
+        return self.age >= 30
     
 persons = [Person('Anna', 25), Person('Bob', 30), Person('Charlie', 28)]
 adults = filter(lambda x: x.is_adult(), persons)
