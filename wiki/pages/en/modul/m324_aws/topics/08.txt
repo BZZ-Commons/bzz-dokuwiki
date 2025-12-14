@@ -69,14 +69,14 @@ pipeline {
         stage('build') {
             steps {
                 script {
-                    sh 
+                    sh """
                         if [ -z \${SKIP_BUILD} ]
                         then
                           echo starting build ...
                         else
                           echo skipped build ...
                         fi
-                    
+                    """
                 }
             }
         }
@@ -112,8 +112,7 @@ Finished: SUCCESS
 
 
 \\
-==== ''if-else'' within Groovy Script ====
-As an alternative Jenkins uses Groovy for writing the pipeline script. For more details read -> [[https://www.baeldung.com/linux/jenkins-conditional-constructs|here]].
+For more examples, see in your Course Repository.
 
 ----
 
