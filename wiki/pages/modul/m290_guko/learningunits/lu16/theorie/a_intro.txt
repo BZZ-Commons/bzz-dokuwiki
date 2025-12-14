@@ -1,11 +1,11 @@
 ====== LU16 – HTTP, CRUD & Postman ======
 
-===== Learning Objectives =====
-  * Sie können grob erklären, wie eine **HTTP-Anfrage** und eine **HTTP-Antwort** funktionieren.
+===== Lernziele =====
+  * Sie können erklären, wie eine **HTTP-Anfrage** und eine **HTTP-Antwort** funktionieren.
   * Sie können die vier wichtigsten HTTP-Methoden **GET, POST, PUT, DELETE** den CRUD-Operationen zuordnen.
   * Sie verstehen, was eine **API** und was eine **Route** in Express ist.
   * Sie können mit **Postman** einfache Requests an Ihren Express-Server schicken.
-  * Sie können erste **CRUD-Routen** für ''posts'' mit einer einfachen In-Memory-Liste erstellen (ohne Datenbank).
+  * Sie können erste **CRUD-Routen** für ''posts'' mit einer einfachen Liste erstellen (ohne Datenbank).
 
 
 ===== Von SQL-CRUD zu Web-CRUD =====
@@ -23,30 +23,30 @@ Jetzt übertragen wir diese Idee auf das **Web**:
 Statt direkt SQL zu tippen, schicken wir **HTTP-Anfragen** an einen **Backend-Server (Express)**,  
 und dieser Server führt für uns die passenden CRUD-Operationen aus.
 
-Wir bauen zuerst eine **Mini-API für Social-Media-Posts**, noch ohne Datenbank – nur mit Daten im Speicher.  
-So können Sie in Ruhe **HTTP, Routen und Postman** verstehen, bevor wir in LU17 MySQL anschliessen.
+Wir bauen zuerst eine **API für Social-Media-Posts**, noch ohne Datenbank – nur mit Daten in einem Javascript-Objekt.  
+So lernen wir **HTTP, Routen und Postman** verstehen, bevor wir in der nächsten Unterrichtseinheit MySQL an den Express-Server anschliessen.
 
 
-===== HTTP in einfachen Worten – Restaurant-Vergleich =====
+===== HTTP in einfachen Worten – wie Bestellungen in einem Restaurant =====
 
 Stellen Sie sich das so vor:
 
   * **Client** (Browser oder Postman) = Gast im Restaurant  
   * **Server** (Express/Node.js) = Küche  
-  * **HTTP-Anfrage** = Bestellung, die der Kellner zur Küche bringt  
+  * **HTTP-Anfrage** = Bestellung, die der Kellner/die Kellnerin zur Küche bringt  
   * **HTTP-Antwort** = fertiges Gericht, das der Kellner zurückbringt  
 
 Jede HTTP-Anfrage hat unter anderem:
 
   * eine **Methode** (z.B. ''GET'', ''POST'', ''PUT'', ''DELETE''),
   * einen **Pfad** (z.B. ''/posts'', ''/posts/3''),
-  * optional einen **Body** (z.B. JSON-Daten bei ''POST''/''PUT'').
+  * optional einen **Body** (z.B. JSON-Format bei ''POST''/''PUT'').
 
 Der Server reagiert auf eine Anfrage, indem er:
 
   1. eine passende **Route** findet (z.B. ''app.get('/posts', ...)''),  
   2. etwas ausführt (z.B. Daten holen oder speichern),  
-  3. genau **eine** Antwort zurückschickt (z.B. JSON oder Text).
+  3. genau **eine** Antwort zurückschickt (z.B. JSON oder Text -> 'Hello World!').
 
 
 ===== CRUD & HTTP-Methoden =====
@@ -56,7 +56,7 @@ CRUD-Operationen werden bei Web-APIs typischerweise folgenden HTTP-Methoden zuge
 ^ CRUD      ^ HTTP-Methode ^ Typisches Beispiel einer Route ^
 | Create    | **POST**     | ''POST /posts'' → Neuer Post wird angelegt |
 | Read      | **GET**      | ''GET /posts'' → Alle Posts anzeigen; ''GET /posts/5'' → Post mit ID 5 anzeigen |
-| Update    | **PUT**      | ''PUT /posts/5'' → Post mit ID 5 vollständig aktualisieren |
+| Update    | **PUT**      | ''PUT /posts/5'' → Post mit ID 5 aktualisieren |
 | Delete    | **DELETE**   | ''DELETE /posts/5'' → Post mit ID 5 löschen |
 
 Später werden Sie für Ihre eigenen Use Cases (Reisen, Filme, Bücher, …) genau solche Routen definieren,  
@@ -64,6 +64,7 @@ z.B. ''GET /trips'', ''POST /books'', usw.
 
 
 ===== Postman – unser „Frontend-Ersatz“ =====
+{{:modul:m290_guko:learningunits:lu16:theorie:postman-seeklogo.svg?150 | Postman logo}}
 
 Im Modul M290 programmieren wir **kein eigenes Browser-Frontend**.  
 Stattdessen benutzen wir **Postman** als Client:
@@ -75,7 +76,12 @@ Stattdessen benutzen wir **Postman** als Client:
     - den **Response-Body** (Text oder JSON).
   * Sie können im Body bequem JSON eingeben (z.B. neuen ''post'' anlegen).
 
-So können Sie Ihre API testen, als wäre schon ein fertiges Frontend vorhanden –  
+<WRAP center round info 60%>
+Postman können Sie hier downloaden -> [[https://www.postman.com/downloads/|Postman app]]
+</WRAP>
+
+
+So können wir die API testen, als wäre schon ein fertiges Frontend vorhanden –  
 nur viel einfacher und kontrollierter.
 
 
@@ -90,9 +96,12 @@ Wir verwenden das vereinfachte ''post''-Modell aus Ihrem Social-Media-ERD:
   * ''description'' (Beschreibungstext)
   * ''likes'' (Anzahl Likes)
 
-Ziel von LU16:
+===== Express-Server mit Endpoints erstellen =====
 
-  * Einen kleinen Express-Server mit einer **In-Memory-Liste** von Posts erstellen.
+Was heisst Endpoint / API / Route?
+
+Vorgehen: 
+  * Eine Express-Server mit einer Liste von Posts erstellen (ohne Datenbank).
   * Erste Routen:
     - ''GET /posts'' → alle Posts
     - ''GET /posts/:id'' → ein Post
@@ -101,7 +110,7 @@ Ziel von LU16:
 
 ==== 1. Start: Minimale Express-API für Posts ====
 
-Wir bauen auf Ihrem bekannten Grundserver aus LU15 auf.
+Wir bauen auf dem bekannten Server-Setup aus LU15 auf.
 
 <WRAP box round center 80%>
 <code javascript>
@@ -110,17 +119,17 @@ import express from 'express';
 const app = express();
 const port = 3000;
 
-// Middleware: JSON-Body einlesen (für POST/PUT)
+// Middleware: "Sitzt" zwischen Client und Server und konvertiert die gesendeten Daten im Body vom Client in JSON-Format
 app.use(express.json());
 
-// "Fake-Datenbank" im Arbeitsspeicher
+// "Test-Tabelle" lokal
 let posts = [
   {
     post_id: 1,
     user_id: 1,
-    title: 'Erster Post',
-    image_url: 'https://example.com/image1.jpg',
-    description: 'Hallo Welt aus unserem Backend!',
+    title: 'Morning Coffee',
+    image_url: 'https://picsum.photos/800/450?random=2',
+    description: 'Nothing beats starting the day with a warm cup of coffee.',
     likes: 10
   },
   {
