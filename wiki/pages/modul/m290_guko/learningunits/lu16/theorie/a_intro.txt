@@ -1,12 +1,12 @@
 ====== LU16 – HTTP, CRUD & Postman ======
 
 ===== Lernziele =====
-  * Sie können erklären, wie eine **HTTP-Anfrage** und eine **HTTP-Antwort** funktionieren.
+
+  * Sie können erklären, wie eine **HTTP-Anfrage** und eine **HTTP-Antwort** funktionieren. ((HTTP = „Hypertext Transfer Protocol“: ein Regelwerk, wie Clients und Server Daten austauschen.))
   * Sie können die vier wichtigsten HTTP-Methoden **GET, POST, PUT, DELETE** den CRUD-Operationen zuordnen.
   * Sie verstehen, was eine **API** und was eine **Route** in Express ist.
   * Sie können mit **Postman** einfache Requests an Ihren Express-Server schicken.
   * Sie können erste **CRUD-Routen** für ''posts'' mit einer einfachen Liste erstellen (ohne Datenbank).
-
 
 ===== Von SQL-CRUD zu Web-CRUD =====
 
@@ -14,40 +14,128 @@ Bisher im Modul M290:
 
   * Sie haben in **MySQL** Tabellen erstellt, Daten importiert und Abfragen geschrieben.
   * Sie kennen **CRUD**:
-    - **C**reate → ''INSERT''
-    - **R**ead → ''SELECT''
-    - **U**pdate → ''UPDATE''
-    - **D**elete → ''DELETE''
+    * **C**reate → ''INSERT''
+    * **R**ead → ''SELECT''
+    * **U**pdate → ''UPDATE''
+    * **D**elete → ''DELETE''
 
-Jetzt übertragen wir diese Idee auf das **Web**:  
-Statt direkt SQL zu tippen, schicken wir **HTTP-Anfragen** an einen **Backend-Server (Express)**,  
-und dieser Server führt für uns die passenden CRUD-Operationen aus.
+Jetzt übertragen wir diese Idee auf das **Web**:
+Statt direkt SQL zu tippen, schicken wir **HTTP-Anfragen** an einen **Backend-Server** ((Backend-Server = Programm, das Anfragen entgegennimmt und Antworten zurückschickt; oft mit Datenbank-Logik dahinter.)) – bei uns: **Express (Node.js)**.
+Der Server führt für uns die passenden CRUD-Operationen aus und sendet eine Antwort zurück.
 
-Wir bauen zuerst eine **API für Social-Media-Posts**, noch ohne Datenbank – nur mit Daten in einem Javascript-Objekt.  
-So lernen wir **HTTP, Routen und Postman** verstehen, bevor wir in der nächsten Unterrichtseinheit MySQL an den Express-Server anschliessen.
-
+Wir bauen zuerst eine **API für Social-Media-Posts**, noch ohne Datenbank – nur mit Daten in einem Javascript-Objekt.
+So verstehen wir **HTTP, Routen und Postman** sauber, bevor wir in LU17 MySQL an Express anbinden.
 
 ===== HTTP in einfachen Worten – wie Bestellungen in einem Restaurant =====
 
 Stellen Sie sich das so vor:
 
-  * **Client** (Browser oder Postman) = Gast im Restaurant  
-  * **Server** (Express/Node.js) = Küche  
-  * **HTTP-Anfrage** = Bestellung, die der Kellner/die Kellnerin zur Küche bringt  
-  * **HTTP-Antwort** = fertiges Gericht, das der Kellner zurückbringt  
+  * **Client** (Browser oder Postman) = Gast im Restaurant ((Client = Programm, das eine Anfrage sendet.))
+  * **Server** (Express/Node.js) = Küche ((Server = Programm, das Anfragen empfängt und Antworten liefert.))
+  * **HTTP-Anfrage** = Bestellung, die der Kellner/die Kellnerin zur Küche bringt
+  * **HTTP-Antwort** = fertiges Gericht, das der Kellner zurückbringt
 
 Jede HTTP-Anfrage hat unter anderem:
 
   * eine **Methode** (z.B. ''GET'', ''POST'', ''PUT'', ''DELETE''),
-  * einen **Pfad** (z.B. ''/posts'', ''/posts/3''),
-  * optional einen **Body** (z.B. JSON-Format bei ''POST''/''PUT'').
+  * einen **Pfad** (z.B. ''/posts'', ''/posts/3'') ((Pfad = der Teil der URL nach Domain/Port, z.B. ''/posts/3''.)),
+  * optional einen **Body** (z.B. JSON bei ''POST''/''PUT'') ((Body = „Datenkörper“ der Anfrage, z.B. ein JSON-Objekt.))
 
 Der Server reagiert auf eine Anfrage, indem er:
 
-  1. eine passende **Route** findet (z.B. ''app.get('/posts', ...)''),  
-  2. etwas ausführt (z.B. Daten holen oder speichern),  
-  3. genau **eine** Antwort zurückschickt (z.B. JSON oder Text -> 'Hello World!').
+1. eine passende **Route** findet (z.B. ''app.get('/posts', ...)''),
+2. etwas ausführt (z.B. Daten lesen oder speichern),
+3. genau **eine** Antwort zurückschickt (z.B. JSON oder Text).
 
+---
+
+===== UI vs. API – Was passiert bei ''/'' und warum kommt manchmal „Cannot GET /“? =====
+
+Viele kennen es von früheren (statischen) Webseiten:
+Wenn man im Browser ''/'' aufruft, bekommt man „automatisch“ eine Startseite wie ''index.html''.
+
+Das passiert aber **nur dann**, wenn ein Server so konfiguriert ist, dass er Dateien aus einem Ordner ausliefert.
+In **Express** passiert das **nicht automatisch**: Express reagiert nur auf Pfade, für die Sie **eine Route** programmiert haben.
+
+Darum passiert am Anfang oft Folgendes:
+
+* Sie starten nur den Server mit ''app.listen(...)'' → Express läuft, aber kennt noch keine Route.
+* Der Browser ruft ''GET /'' auf → Express findet keine passende Route → Antwort: **Cannot GET /** (404).
+
+Sobald Sie diese Route hinzufügen:
+
+<code javascript>
+app.get('/', (req, res) => {
+  res.send('Hello World');
+});
+</code>
+
+… gibt es eine passende Regel für ''GET /'' und der Server sendet den Text zurück.
+
+<WRAP center round info 70%>
+**Merksatz:** In Express ist ein Pfad wie ''/'' zuerst nur ein Text (String). Erst eine Route macht daraus „hier passiert etwas“. </WRAP>
+
+---
+
+===== Pfad vs. Ordnerstruktur – warum Routing nicht (mehr) „wie Dateien“ funktioniert =====
+
+Bei reinen HTML-Webseiten war der URL-Pfad oft ähnlich wie eine Ordner-/Dateistruktur:
+
+* ''/images/logo.png'' → Datei ''images/logo.png''
+* ''/about.html'' → Datei ''about.html''
+
+Bei Express ist ein Pfad aber zuerst **keine Datei** und **kein Ordner**, sondern ein „Match“ ((Match = „passt dazu“; Express prüft: passt Methode + Pfad zu einer Route?)).
+Sie können also Routen bauen, ohne dass es diese Ordner/Dateien überhaupt gibt:
+
+* ''GET /posts'' → wird von Ihrem Code verarbeitet (Daten liefern)
+* ''POST /posts'' → wird von Ihrem Code verarbeitet (Daten speichern)
+
+<WRAP center round tip 70%>
+**Für die Lernenden:**
+„URL-Pfad“ ist nicht automatisch „Ordnerpfad“. In Express bestimmt Ihr **Code**, was hinter einem Pfad passiert. </WRAP>
+
+---
+
+===== Route vs. Endpoint – und wo ist hier „UI“ und wo „API“? =====
+
+==== Route (Express) ====
+Eine **Route** ist die **Server-Regel im Code**, die beschreibt, was bei einer bestimmten Kombination passiert:
+
+* **HTTP-Methode + Pfad** (z.B. ''GET /posts'')
+* **Handler-Funktion** ((Handler = Funktion, die ausgeführt wird, wenn die Route passt.)) (z.B. Daten lesen, JSON senden)
+
+Beispiel: ''app.get('/posts', ...)'' ist eine Route.
+
+==== Endpoint (API) ====
+Ein **API-Endpoint** ist eine Route, die als **Daten-Schnittstelle** ((Schnittstelle = klar definierter „Zugang“: welche URL, welche Methode, welche Daten kommen rein/raus.)) für Clients gedacht ist.
+Meistens liefert sie **JSON** ((JSON = Datenformat, das wie ein JavaScript-Objekt aussieht; wird häufig in APIs verwendet.)) und ist Teil des „API-Vertrags“ (Dokumentation).
+
+Beispiel: ''GET /posts'' → liefert Post-Daten als JSON (API-Endpoint).
+
+---
+
+===== UI vs. API – praktische Unterscheidung =====
+
+In vielen Projekten unterscheidet man zwei Arten von Pfaden:
+
+* **UI (User Interface)**: Pfade, die Inhalte für Menschen liefern (z.B. HTML/Text)
+
+  * Beispiel: ''GET /'' → „API ist online“ oder später eine Webseite
+* **API**: Pfade, die Daten für Programme liefern (z.B. Postman, Frontend-App)
+
+  * Beispiel: ''GET /posts'' → JSON mit allen Posts
+
+Wichtig: ''GET /'' ist **trotzdem eine Route**.
+Ob man es „API-Endpoint“ nennt, hängt vom Zweck ab:
+
+* ''GET /'' als „Hello/Status“-Seite → eher UI/Info
+* ''GET /api/health'' als JSON → klarer API-Endpoint
+
+<WRAP center round tip 70%>
+**Empfehlung für Unterricht/Projekte:** API-Routen klar erkennbar machen, z.B. mit Prefix ''/api/...'' (optional).
+Dann ist für alle sofort sichtbar: „Das ist API (Daten), nicht UI (Seite)“. </WRAP>
+
+---
 
 ===== CRUD & HTTP-Methoden =====
 
@@ -59,241 +147,249 @@ CRUD-Operationen werden bei Web-APIs typischerweise folgenden HTTP-Methoden zuge
 | Update    | **PUT**      | ''PUT /posts/5'' → Post mit ID 5 aktualisieren |
 | Delete    | **DELETE**   | ''DELETE /posts/5'' → Post mit ID 5 löschen |
 
-Später werden Sie für Ihre eigenen Use Cases (Reisen, Filme, Bücher, …) genau solche Routen definieren,  
+Später werden Sie für Ihre eigenen Use Cases (Reisen, Filme, Bücher, …) genau solche Routen definieren,
 z.B. ''GET /trips'', ''POST /books'', usw.
 
+---
 
 ===== Postman – unser „Frontend-Ersatz“ =====
 {{:modul:m290_guko:learningunits:lu16:theorie:postman-seeklogo.svg?150 | Postman logo}}
 
-Im Modul M290 programmieren wir **kein eigenes Browser-Frontend**.  
+Im Modul M290 programmieren wir **kein eigenes Browser-Frontend**.
 Stattdessen benutzen wir **Postman** als Client:
 
-  * Postman kann ''GET'', ''POST'', ''PUT'', ''DELETE''-Requests an Ihre API senden.
-  * Sie sehen direkt:
-    - den **Statuscode** (z.B. 200, 201, 400, 404, 500),
-    - die **Response-Header**,
-    - den **Response-Body** (Text oder JSON).
-  * Sie können im Body bequem JSON eingeben (z.B. neuen ''post'' anlegen).
+* Postman kann ''GET'', ''POST'', ''PUT'', ''DELETE''-Requests an Ihre API senden.
+* Sie sehen direkt:
+
+  * den **Statuscode** (z.B. 200, 201, 400, 404, 500) ((Statuscode = Zahl, die beschreibt, ob die Anfrage erfolgreich war und warum/nicht.)),
+  * die **Response-Header** ((Header = Zusatzinfos zur Antwort, z.B. Inhaltstyp oder Caching.)),
+  * den **Response-Body** (Text oder JSON).
+* Sie können im Body bequem JSON eingeben (z.B. neuen ''post'' anlegen).
 
 <WRAP center round info 60%>
-Postman können Sie hier downloaden -> [[https://www.postman.com/downloads/|Postman app]]
-</WRAP>
+Postman können Sie hier downloaden → [[[https://www.postman.com/downloads/|Postman](https://www.postman.com/downloads/|Postman) App]] </WRAP>
 
-
-So können wir die API testen, als wäre schon ein fertiges Frontend vorhanden –  
+So können wir die API testen, als wäre schon ein fertiges Frontend vorhanden –
 nur viel einfacher und kontrollierter.
 
+---
 
 ===== Beispiel-API: Social-Media-Posts (ohne Datenbank) =====
 
 Wir verwenden das vereinfachte ''post''-Modell aus Ihrem Social-Media-ERD:
 
-  * ''post_id'' (PK, Nummer)
-  * ''user_id'' (FK zum User – hier nur als Zahl)
-  * ''title'' (Titel des Posts)
-  * ''image_url'' (Bild-URL)
-  * ''description'' (Beschreibungstext)
-  * ''likes'' (Anzahl Likes)
+* ''post_id'' (PK, Nummer) ((PK = Primary Key / Primärschlüssel: eindeutige ID.))
+* ''user_id'' (FK zum User – hier nur als Zahl) ((FK = Foreign Key / Fremdschlüssel: verweist auf eine ID in einer anderen Tabelle.))
+* ''title'' (Titel des Posts)
+* ''image_url'' (Bild-URL)
+* ''description'' (Beschreibungstext)
+* ''likes'' (Anzahl Likes)
+
+---
 
 ===== Express-Server mit Endpoints erstellen =====
 
-Was heisst Endpoint / API / Route?
+Wir erstellen einen Express-Server mit einer lokalen Liste von Posts (ohne Datenbank).
+Danach bauen wir die ersten Routen:
 
-Vorgehen: 
-  * Eine Express-Server mit einer Liste von Posts erstellen (ohne Datenbank).
-  * Erste Routen:
-    - ''GET /posts'' → alle Posts
-    - ''GET /posts/:id'' → ein Post
-    - ''POST /posts'' → neuen Post hinzufügen
+* ''GET /posts'' → alle Posts
+* ''GET /posts/:id'' → ein Post anhand der ID
+* ''POST /posts'' → neuen Post hinzufügen
 
+<WRAP center round info 70%>
+**Hinweis:** Wir nutzen hier bewusst ''/posts'' (ohne ''/api'') für den Einstieg.
+In echten Projekten sehen Sie oft ''/api/posts'' – das ist eine Konvention, keine Pflicht. </WRAP>
+
+---
 
 ==== 1. Start: Minimale Express-API für Posts ====
 
 Wir bauen auf dem bekannten Server-Setup aus LU15 auf.
 
-<WRAP box round center 80%>
-<code javascript>
+<WRAP box round center 80%> <code javascript>
 import express from 'express';
 
 const app = express();
 const port = 3000;
 
-// Middleware: "Sitzt" zwischen Client und Server und konvertiert die gesendeten Daten im Body vom Client in JSON-Format
+// Middleware: "sitzt" zwischen Anfrage und Route und verarbeitet Daten.
+// express.json() liest den Request-Body und macht daraus req.body (JSON).
 app.use(express.json());
 
-// "Test-Tabelle" lokal
+// "Test-Tabelle" lokal (In-Memory-Liste)
 let posts = [
-  {
-    post_id: 1,
-    user_id: 1,
-    title: 'Morning Coffee',
-    image_url: 'https://picsum.photos/800/450?random=2',
-    description: 'Nothing beats starting the day with a warm cup of coffee.',
-    likes: 10
-  },
-  {
-    post_id: 2,
-    user_id: 2,
-    title: 'Zweiter Post',
-    image_url: 'https://example.com/image2.jpg',
-    description: 'Noch ein Test-Post.',
-    likes: 5
-  }
+{
+post_id: 1,
+user_id: 1,
+title: 'Morning Coffee',
+image_url: '[https://picsum.photos/800/450?random=2](https://picsum.photos/800/450?random=2)',
+description: 'Nothing beats starting the day with a warm cup of coffee.',
+likes: 10
+},
+{
+post_id: 2,
+user_id: 2,
+title: 'Zweiter Post',
+image_url: '[https://example.com/image2.jpg](https://example.com/image2.jpg)',
+description: 'Noch ein Test-Post.',
+likes: 5
+}
 ];
 
-// TEST-Route
+// TEST-Route (UI/Info)
 app.get('/', (req, res) => {
-  res.send('API ist online');
+res.send('API ist online');
 });
 
 app.listen(port, () => {
-  console.log(`API läuft auf http://localhost:${port}`);
-});
-</code>
-</WRAP>
+console.log(`API läuft auf http://localhost:${port}`);
+}); </code> </WRAP>
 
-Wenn Sie diesen Server mit ''npm run dev'' starten, sollten Sie im Browser unter  
-''http://localhost:3000/'' den Text **„API ist online“** sehen.
+Wenn Sie diesen Server mit ''npm run dev'' starten, sollten Sie im Browser unter
+''[http://localhost:3000/](http://localhost:3000/)'' den Text **„API ist online“** sehen.
 
+---
 
 ==== 2. READ – Alle Posts abfragen: ''GET /posts'' ====
 
 Jetzt fügen wir eine Route hinzu, die alle Posts zurückliefert:
 
-<WRAP box round center 80%>
-<code javascript>
+<WRAP box round center 80%> <code javascript>
 // READ – alle Posts
 app.get('/posts', (req, res) => {
-  res.status(200).json(posts);
-});
-</code>
-</WRAP>
+res.status(200).json(posts);
+}); </code> </WRAP>
 
 **Test mit Postman oder Browser**
 
-  * Methode: ''GET''
-  * URL: ''http://localhost:3000/posts''  
-  * Erwartung:
-    - Status ''200 OK''
-    - JSON-Array mit den zwei Beispiel-Posts
+* Methode: ''GET''
+* URL: ''[http://localhost:3000/posts](http://localhost:3000/posts)''
+* Erwartung:
 
+  * Status ''200 OK''
+  * JSON-Array mit den Beispiel-Posts
+
+---
 
 ==== 3. READ – Einzelnen Post nach ID abfragen: ''GET /posts/:id'' ====
 
 Wir möchten einen einzelnen Post anhand der ''post_id'' holen.
 
-<WRAP box round center 80%>
-<code javascript>
+<WRAP box round center 80%> <code javascript>
 // READ – einzelner Post nach ID
 app.get('/posts/:id', (req, res) => {
-  const id = Number(req.params.id);     // Pfad-Parameter holen und in Zahl umwandeln
-  const post = posts.find(p => p.post_id === id);
+const id = Number(req.params.id);     // Pfad-Parameter (Route-Parameter) holen
+const post = posts.find(p => p.post_id === id);
 
-  if (!post) {
-    return res.status(404).send('Post nicht gefunden');
-  }
+if (!post) {
+return res.status(404).send('Post nicht gefunden');
+}
 
-  res.status(200).json(post);
-});
-</code>
-</WRAP>
+res.status(200).json(post);
+}); </code> </WRAP>
 
 **Test mit Postman**
 
-  * Methode: ''GET''
-  * URL: ''http://localhost:3000/posts/1''  
-  * Erwartung:
-    - Status ''200 OK''
-    - JSON-Objekt mit ''post_id: 1''  
+* Methode: ''GET''
 
-  * URL: ''http://localhost:3000/posts/999''  
-    - Status ''404 Not Found''
-    - Body: ''Post nicht gefunden''
+* URL: ''[http://localhost:3000/posts/1](http://localhost:3000/posts/1)''
 
+* Erwartung:
+
+  * Status ''200 OK''
+  * JSON-Objekt mit ''post_id: 1''
+
+* URL: ''[http://localhost:3000/posts/999](http://localhost:3000/posts/999)''
+
+  * Status ''404 Not Found''
+  * Body: ''Post nicht gefunden''
+
+((''req.params.id'' = Wert aus dem Pfad ''/posts/:id''. Beispiel: bei ''/posts/1'' ist ''id'' = ''"1"''.))
+
+---
 
 ==== 4. CREATE – Neuen Post anlegen: ''POST /posts'' ====
 
-Nun soll ein neuer Post erstellt werden.  
+Nun soll ein neuer Post erstellt werden.
 Dazu schicken wir einen JSON-Body mit den notwendigen Feldern.
 
-<WRAP box round center 80%>
-<code javascript>
+<WRAP box round center 80%> <code javascript>
 // CREATE – neuen Post anlegen
 app.post('/posts', (req, res) => {
-  const { user_id, title, image_url, description } = req.body;
+const { user_id, title, image_url, description } = req.body;
 
-  // ganz einfache Validierung
-  if (!user_id || !title) {
-    return res.status(400).send('Bitte mindestens user_id und title angeben.');
-  }
+// ganz einfache Validierung
+if (!user_id || !title) {
+return res.status(400).send('Bitte mindestens user_id und title angeben.');
+}
 
-  // neue ID bestimmen (hier: max + 1)
-  const newId = posts.length > 0 ? Math.max(...posts.map(p => p.post_id)) + 1 : 1;
+// neue ID bestimmen (hier: max + 1)
+const newId = posts.length > 0 ? Math.max(...posts.map(p => p.post_id)) + 1 : 1;
 
-  const newPost = {
-    post_id: newId,
-    user_id,
-    title,
-    image_url: image_url || '',
-    description: description || '',
-    likes: 0
-  };
+const newPost = {
+post_id: newId,
+user_id,
+title,
+image_url: image_url || '',
+description: description || '',
+likes: 0
+};
 
-  posts.push(newPost);
+posts.push(newPost);
 
-  res.status(201).json(newPost);
-});
-</code>
-</WRAP>
+res.status(201).json(newPost);
+}); </code> </WRAP>
 
 **Test mit Postman**
 
-  1. Methode: ''POST''
-  2. URL: ''http://localhost:3000/posts''
-  3. Tab ''Body'' → ''raw'' → ''JSON'' auswählen
-  4. Beispiel-Body:
+1. Methode: ''POST''
+2. URL: ''[http://localhost:3000/posts](http://localhost:3000/posts)''
+3. Tab ''Body'' → ''raw'' → ''JSON'' auswählen
+4. Beispiel-Body:
 
-<WRAP box round center 80%>
-<code json>
+<WRAP box round center 80%> <code json>
 {
-  "user_id": 3,
-  "title": "Mein erster echter Post",
-  "image_url": "https://example.com/image3.jpg",
-  "description": "Gerade mit Postman erstellt!"
-}
-</code>
-</WRAP>
+"user_id": 3,
+"title": "Mein erster echter Post",
+"image_url": "[https://example.com/image3.jpg](https://example.com/image3.jpg)",
+"description": "Gerade mit Postman erstellt!"
+} </code> </WRAP>
 
-  5. ''Send'' klicken  
-     * Erwartung:
-       - Status ''201 Created''
-       - JSON-Objekt mit neuer ''post_id'' (z.B. 3)
-  6. Anschliessend ''GET /posts'' erneut ausführen → der neue Post sollte in der Liste sein.
+5. ''Send'' klicken
 
+   * Erwartung:
+
+     * Status ''201 Created''
+     * JSON-Objekt mit neuer ''post_id'' (z.B. 3)
+6. Anschliessend ''GET /posts'' erneut ausführen → der neue Post sollte in der Liste sein.
+
+((Validierung = Überprüfung, ob Pflichtfelder vorhanden sind und „vernünftig“ aussehen.))
+
+---
 
 ===== Ausblick auf LU17 =====
 
 In dieser Learning Unit haben Sie:
 
-  * die **HTTP-Methoden** im Kontext von CRUD kennengelernt,
-  * mit **Postman** einfache Requests an Ihren Express-Server geschickt,
-  * eine kleine API mit einer In-Memory-Liste von ''posts'' erstellt (''GET /posts'', ''GET /posts/:id'', ''POST /posts'').
+* die **HTTP-Methoden** im Kontext von CRUD kennengelernt,
+* mit **Postman** einfache Requests an Ihren Express-Server geschickt,
+* eine kleine API mit einer In-Memory-Liste von ''posts'' erstellt (''GET /posts'', ''GET /posts/:id'', ''POST /posts'').
 
 In **LU17**:
 
-  * ersetzen wir die In-Memory-Liste durch eine **echte MySQL-Tabelle ''post''**,
-  * ergänzen **Update (PUT)** und **Delete (DELETE)** für vollständiges CRUD,
-  * bauen einfache **Validierung** und **Fehlerbehandlung** (HTTP-Statuscodes) ein,
-  * damit Sie diese Struktur für Ihren eigenen Projekt-Use-Case übernehmen können.
+* ersetzen wir die In-Memory-Liste durch eine **echte MySQL-Tabelle ''posts''**,
+* ergänzen **Update (PUT)** und **Delete (DELETE)** für vollständiges CRUD,
+* bauen einfache **Validierung** und **Fehlerbehandlung** (HTTP-Statuscodes) ein,
+* damit Sie diese Struktur für Ihren eigenen Projekt-Use-Case übernehmen können.
 
+---
 
 ==== Vocabulary ====
-^ English        ^ Deutsch                     ^
-| request        | Anfrage                     |
-| response       | Antwort                     |
-| endpoint / route | Endpunkt / Route         |
-| status code    | Statuscode                 |
-| body (request body) | (Request-)Body, Datenkörper |
-| to validate    | validieren, überprüfen      |
-
+^ English               ^ Deutsch                              ^
+| request               | Anfrage                              |
+| response              | Antwort                              |
+| endpoint / route      | Endpunkt / Route                      |
+| status code           | Statuscode                            |
+| body (request body)   | (Request-)Body, Datenkörper           |
+| middleware            | Middleware ((„Zwischenstation“ im Server, die Anfragen/Antworten verarbeitet.)) |
+| to validate           | validieren, überprüfen                |

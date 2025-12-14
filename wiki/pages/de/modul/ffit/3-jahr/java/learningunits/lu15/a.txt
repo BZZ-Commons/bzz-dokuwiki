@@ -1,0 +1,20 @@
+====== LU15a - Webserver ======
+
+==== Statische Webseite mit SpringBoot ====
+
+Bei ''SpringBoot'' werden statische Webseiten unter ''src/main/resources/static/index.html'' beim Start der ''SpringBootApplication'' automatisch unter http://localhost:8080/ bereitgestellt.
+
+<code java>
+@Slf4j
+@SpringBootApplication
+public class ApplicationMain {
+
+    public static void main(String[] args) {
+        SpringApplication.run(ApplicationMain.class, args);
+    }
+}
+</code>
+
+Gleichzeitig werden die REST-APIs in mit ''@RestController'' annotierten Klassen zur Verfügung gestellt.
+
+Gemeinsam lässt sich damit ein lokales Frontend bauen.
