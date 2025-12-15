@@ -1,0 +1,83 @@
+====== LU01.L06 - JSON-File einlesen und dynamsich im der Browser-Fenster ausgeben ======
+
+===== Auftrag =====
+Lassen Sie das nachfolgende Script laufen und kommentieren Ihre Erkenntnisse im Code durch entsprechende HTML- oder JS-Codeeinträge.
+
+===== Lösungen =====
+
+  <!DOCTYPE html>
+  <html lang="de">
+  <head>
+    <meta charset="UTF-8">
+    <title>Lernende Anzeige</title>
+  </head>
+  <body>
+  <h1>Lernende</h1>
+  <div id="ausgabe"></div> 
+  <!-- die id wird benötigt, damit js mittels getElementbyID die Daten hier im HTML-DOM platzieren kann-->
+  <script>
+    fetch("lernende2.json")
+    // daten werden gefechted (hergeholt aus der datei)
+      .then(response => response.json())
+      .then(data => {
+      const ausgabe = document.getElementById("ausgabe"); 
+      // verknüfung der daten mit dem div element der ID=ausgabe
+      //
+      for (let i = 0; i < data.lernende.length; i++) {
+      // schleife durchläuft das JSON-Daten, vom Anfang bis zum Ende
+        //
+        const lernenderDiv = document.createElement("div");
+        // wichtiger Teil. Hier wird das jeweilige ein DIV-Element für die Anzeige bereitgestellt. 
+        //
+        const ueberschrift = document.createElement("h2");
+        ueberschrift.textContent = "Lernende/r " + (i + 1);
+        // Das angelegte DIV erh$lt nun konkrete Daten. Die Überschrift 02 wird als Titel verwendet.
+        // Der Zähler i+1 zeigt die Reihenfolge. Da JS mit 0 anfängt, müssen wir immer +1 machen. 
+        //
+        const idP = document.createElement("p");
+        idP.textContent = "ID: " + data.lernende[i].id;
+        // Das angelegte DIV erhält nun konkrete Daten. Die Überschrift 02 wird als Titel verwendet
+        // die Lernende.id wird im p.tag ausgegeben
+        //
+        const nameP = document.createElement("p");
+        nameP.textContent = "Name: " + data.lernende[i].name + " " + data.lernende[i].nachname;
+        // Name und Vorname werden ebenfalls mit eine P-Tag ausgegeben
+        //
+        const hobbyTitel = document.createElement("p");
+        hobbyTitel.textContent = "Hobbies:";
+        //
+        // Anlegen unsorted List-Tag-Areas
+        const hobbyListe = document.createElement("ul");
+        // Da Hobbies ein array ist, sollte diese als Aufzählung bmit Butteltpoint ausgegeben werden
+        // Bei jedem Schleifendurchlauf wird ein eigenes Listen-Element angelegt und das entsprechende Hobby darin platziet.
+        for (let j = 0; j < data.lernende[i].hobbies.length; j++) {
+          const hobbyItem = document.createElement("li");
+          hobbyItem.textContent = data.lernende[i].hobbies[j];
+          hobbyListe.appendChild(hobbyItem);
+        }
+        //
+        // Am Ende wird das ganze Datenset, das wir oben angelegt haben, an das DIV-Tag als HTML-Dom-Unterknoten angehängt. 
+        // Das HTML-Dom ist parat, um an den Browser zur Anzeige geschicht zu werden.
+        lernenderDiv.appendChild(ueberschrift);
+        lernenderDiv.appendChild(idP);
+        lernenderDiv.appendChild(nameP);
+        lernenderDiv.appendChild(hobbyTitel);
+        lernenderDiv.appendChild(hobbyListe);
+        //
+        // Die Ausgabe wird Durchgeführt 
+        ausgabe.appendChild(lernenderDiv);
+      }
+    })
+    .catch(err => {
+      console.error("Fehler beim Laden:", err);
+    });
+  </script>
+  </body>
+  </html>
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir
+
+
+

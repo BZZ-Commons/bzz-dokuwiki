@@ -63,7 +63,7 @@ Will man Standardausgabe und Standardfehlerausgabe über denselben Kanal ausgebe
 
 Hier ist die Reihenfolge von ''> output.txt'' und '' 2>&1'' wichtig. Umgekehrt funktioniert es nicht wie erwünscht.
 
-Will man einen Ausgabekanal *ausschalten*, kann dieser nach ''/dev/null'' (der Linux-Daten-Schredder) umgeleitet werden:
+Will man einen Ausgabekanal //ausschalten//, kann dieser nach ''/dev/null'' (der Linux-Daten-Schredder) umgeleitet werden:
 
 <code>
 # Unterdrückt die Ausgabe von Fehlern
