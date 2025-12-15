@@ -1,0 +1,52 @@
+====== LU01.A04 - JSON-File einlesen und statisch im der Browser-Konsole ausgeben ======
+
+===== Rahmenbedingungen =====
+  * Sozialform: Einzelarbeit
+  * Hilfsmittel: Openbooks
+  * Zeit: 20 Minuten
+  * Erwartetes Resultat: 
+    * JavaScript-File, dass eine JSON-Datei einliest und ausgibt. 
+    * HTML-File, welches den Inhalt der JSON-Datei in der Browser-Konsole ausgibt.
+
+===== Ausgangslage =====
+Nachdem wir im Backend ein JSON-File angelegt und auf der Server-Konsole ausgeben habe, ist es jetzt an der Zeit den JSON-Inhalt auch im Frontend, mittels einer HTML-Datei ausgeben zu lassen, da das die Schnittstelle ist zum Endkunden. Ich meine, der Kunde sollte definitiv nicht direkt mit dem Backend arbeiten müssen, das fände ich als Endkunde gar nicht lustig und würde nie wieder etwas bei diesem Shop kaufen. 
+
+Wie dem auch sei, Ihre Lehrperson hat Ihnen demonstriert, wie 2 JSON-Datensätze in der Browserkonsole ausgegeben werden. 
+
+===== Auftrag =====
+Ihr Auftrag besteht darin den Inhalt der Datei //lernende2.json// mit 10 Datensätze in der Browser-Konsole ausgeben zu lassen. 
+
+Die benötigten Dateien finden Sie in dieser {{ :de:modul:m307:learningunits:lu01:aufgaben:lu01_l00_e_json_demo.zip | Zip-Datei mit den relevanten Arbeits-Files}}. 
+{{ :de:modul:m307:learningunits:lu01:aufgaben:lu01_l00_e_json_demo.zip |}}
+
+**Hinweis**
+Bei dieser Teilaufgabe reicht es, wenn Sie die Daten statisch auslesen. Es braucht also keine Schleife.
+
+**lernende2.json**
+
+  {
+    "lernende": [
+      { "id": "00", "name": "Anna", "nachname": "Keller", "alter": 19, "bms": true,  "hobbies": ["Lesen", "Joggen", "Kochen"] },
+      { "id": "01", "name": "Luca", "nachname": "Meier", "alter": 18, "bms": false, "hobbies": ["Gaming", "Mountainbike", "Musik"] },
+      { "id": "02", "name": "Sophie", "nachname": "Hofstetter", "alter": 20, "bms": true, "hobbies": ["Fotografie", "Yoga", "Reisen"] },
+      { "id": "03", "name": "Tim", "nachname": "Schwarz", "alter": 17, "bms": false, "hobbies": ["Fussball", "Schach", "Filme"] },
+      { "id": "04", "name": "Mia", "nachname": "Brunner", "alter": 18, "bms": true, "hobbies": ["Zeichnen", "Gitarre", "Backen"] },
+      { "id": "05", "name": "Jonas", "nachname": "Weber", "alter": 19, "bms": false, "hobbies": ["Schwimmen", "Fitness", "Spiele"] },
+      { "id": "06", "name": "Julia", "nachname": "Frei", "alter": 20, "bms": true, "hobbies": ["Tanzen", "Mode", "Fotobearbeitung"] },
+      { "id": "07", "name": "Noah", "nachname": "Kunz", "alter": 18, "bms": false, "hobbies": ["E-Sport", "Klettern", "Trompete"] },
+      { "id": "08", "name": "Emily", "nachname": "Gruber", "alter": 19, "bms": false, "hobbies": ["Lesen", "Kunst", "Volleyball"] },
+      { "id": "09", "name": "Nico", "nachname": "Hug", "alter": 21, "bms": true, "hobbies": ["Laufen", "Gaming", "Kochen"] },
+      { "id": "10", "name": "Leonie", "nachname": "Seiler", "alter": 18, "bms": false, "hobbies": ["Ballett", "Schreiben", "Reisen"] },
+      { "id": "11", "name": "David", "nachname": "Bachmann", "alter": 22, "bms": true, "hobbies": ["Kraftsport", "Wandern", "Barbecue"] }
+    ]  
+  }
+
+
+===== Lösungen =====
+[[de:modul:m307:learningunits:lu01:Lösungen:04|LU01.L04]]
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir
+
+
+

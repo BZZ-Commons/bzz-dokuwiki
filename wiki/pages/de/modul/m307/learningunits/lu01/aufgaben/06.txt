@@ -1,0 +1,84 @@
+====== LU01.A06 - JSON-File einlesen und dynamsich im der Browser-Fenster ausgeben ======
+
+===== Rahmenbedingungen =====
+  * Sozialform: Einzelarbeit
+  * Hilfsmittel: Openbooks
+  * Zeit: 20 Minuten
+  * Erwartetes Resultat: 
+    * JavaScript-File, dass eine JSON-Datei einliest und ausgibt. 
+    * HTML-File, welches den Inhalt der JSON-Datei in der Browser-Konsole ausgibt.
+
+===== Ausgangslage =====
+Bisher haben wir nur Daten in der Server- oder der Browserkonsole ausgegeben. Nun wollen wir Daten im tatäschlichen Fenster anzeigen lassen, also für den Endkunden einsehbar machen.
+
+Das nachfolgene Script //index.html// erzeugt die folgende Bildschirmausgabe.
+
+{{:de:modul:m307:learningunits:lu01:aufgaben:lu01_l06_1.jpg?600|}}
+
+===== Auftrag =====
+Lassen Sie das nachfolgende Script laufen und kommentieren Ihre Erkenntnisse im Code durch entsprechende HTML- oder JS-Codeeinträge.
+
+**index.html**
+
+  <!DOCTYPE html>
+  <html lang="de">
+  <head>
+    <meta charset="UTF-8">
+    <title>Lernende Anzeige</title>
+  </head>
+  <body>
+  <h1>Lernende</h1>
+  <div id="ausgabe"></div>
+  <script>
+    fetch("lernende2.json")
+      .then(response => response.json())
+      .then(data => {
+      //
+      const ausgabe = document.getElementById("ausgabe");
+      for (let i = 0; i < data.lernende.length; i++) {
+        const lernenderDiv = document.createElement("div");
+        const ueberschrift = document.createElement("h2");
+        ueberschrift.textContent = "Lernende/r " + (i + 1);
+        //
+        const idP = document.createElement("p");
+        idP.textContent = "ID: " + data.lernende[i].id;
+        //
+        const nameP = document.createElement("p");
+        nameP.textContent = "Name: " + data.lernende[i].name + " " + data.lernende[i].nachname;
+        //
+        const hobbyTitel = document.createElement("p");
+        hobbyTitel.textContent = "Hobbies:";
+        //
+        const hobbyListe = document.createElement("ul");
+        //
+        for (let j = 0; j < data.lernende[i].hobbies.length; j++) {
+          const hobbyItem = document.createElement("li");
+          hobbyItem.textContent = data.lernende[i].hobbies[j];
+          hobbyListe.appendChild(hobbyItem);
+        }
+        //
+        lernenderDiv.appendChild(ueberschrift);
+        lernenderDiv.appendChild(idP);
+        lernenderDiv.appendChild(nameP);
+        lernenderDiv.appendChild(hobbyTitel);
+        lernenderDiv.appendChild(hobbyListe);
+        //
+        ausgabe.appendChild(lernenderDiv);
+        }
+      })
+      .catch(err => {
+        console.error("Fehler beim Laden:", err);
+    });
+  </script>
+  </body>
+  </html>
+
+
+===== Lösungen =====
+[[de:modul:m307:learningunits:lu01:Lösungen:06|LU01.L06]]
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir
+
+
+

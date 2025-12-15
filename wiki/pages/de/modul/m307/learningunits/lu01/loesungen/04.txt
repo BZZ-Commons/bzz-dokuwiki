@@ -1,0 +1,150 @@
+====== LU01.L04 - JSON-File einlesen und statisch im der Browser-Konsole ausgeben ======
+
+===== Auftrag =====
+Ihr Auftrag besteht darin den Inhalt der Datei //lernende2.json// mit 10 Datensätze in der Browser-Konsole ausgeben zu lassen. 
+
+Die benötigten Dateien finden Sie in dieser {{ :de:modul:m307:learningunits:lu01:aufgaben:lu01_l00_e_json_demo.zip | Zip-Datei mit den relevanten Arbeits-Files}}. 
+
+**Hinweis**
+Bei dieser Teilaufgabe reicht es, wenn Sie die Daten statisch auslesen. Es braucht also keine Schleife.
+
+**lernende2.json**
+
+  {
+    "lernende": [
+      { "id": "00", "name": "Anna", "nachname": "Keller", "alter": 19, "bms": true,  "hobbies": ["Lesen", "Joggen", "Kochen"] },
+      { "id": "01", "name": "Luca", "nachname": "Meier", "alter": 18, "bms": false, "hobbies": ["Gaming", "Mountainbike", "Musik"] },
+      { "id": "02", "name": "Sophie", "nachname": "Hofstetter", "alter": 20, "bms": true, "hobbies": ["Fotografie", "Yoga", "Reisen"] },
+      { "id": "03", "name": "Tim", "nachname": "Schwarz", "alter": 17, "bms": false, "hobbies": ["Fussball", "Schach", "Filme"] },
+      { "id": "04", "name": "Mia", "nachname": "Brunner", "alter": 18, "bms": true, "hobbies": ["Zeichnen", "Gitarre", "Backen"] },
+      { "id": "04", "name": "Jonas", "nachname": "Weber", "alter": 19, "bms": false, "hobbies": ["Schwimmen", "Fitness", "Spiele"] },
+      { "id": "05", "name": "Julia", "nachname": "Frei", "alter": 20, "bms": true, "hobbies": ["Tanzen", "Mode", "Fotobearbeitung"] },
+      { "id": "06", "name": "Noah", "nachname": "Kunz", "alter": 18, "bms": false, "hobbies": ["E-Sport", "Klettern", "Trompete"] },
+      { "id": "07", "name": "Emily", "nachname": "Gruber", "alter": 19, "bms": false, "hobbies": ["Lesen", "Kunst", "Volleyball"] },
+      { "id": "08", "name": "Nico", "nachname": "Hug", "alter": 21, "bms": true, "hobbies": ["Laufen", "Gaming", "Kochen"] },
+      { "id": "09", "name": "Leonie", "nachname": "Seiler", "alter": 18, "bms": false, "hobbies": ["Ballett", "Schreiben", "Reisen"] },
+      { "id": "10", "name": "David", "nachname": "Bachmann", "alter": 22, "bms": true, "hobbies": ["Kraftsport", "Wandern", "Barbecue"] }
+    ]  
+  }
+
+
+===== Lösungen als Browsewr-Konsolen-Output =====
+Das Ergebnis der Ausgabe sieht dann wie folgt aus:
+
+{{:de:modul:m307:learningunits:lu01:loesungen:lu01_l04_1.jpg?600|}}
+
+===== Lösungen des HTML/JS-Sourcecodes =====
+
+  <!DOCTYPE html>
+  <html lang="de">
+  <head>
+    <meta charset="UTF-8">
+    <title>Lernende Konsole</title>
+  </head>
+  <body>
+    <script>
+      fetch("lernende.json")
+        .then(response => response.json())
+        .then(data => {
+          console.log("------- Lernende/r 1 ------- ");
+          console.log("id:", data.lernende[0].id); 
+          console.log("Name:", data.lernende[0].name, data.lernende[0].nachname);
+          console.log("Hobbies:", data.lernende[0].hobbies[0], 
+                                  data.lernende[0].hobbies[1],
+                                  data.lernende[0].hobbies[2]);
+          //                       
+          console.log("------- Lernende/r 2 ------- ");
+          console.log("id:", data.lernende[1].id); 
+          console.log("Name:", data.lernende[1].name, data.lernende[1].nachname);
+          console.log("Hobbies:", data.lernende[1].hobbies[0],
+                                  data.lernende[1].hobbies[1],
+                                  data.lernende[1].hobbies[2]);
+          //
+          console.log("------- Lernende/r 3 ------- ");
+          console.log("id:", data.lernende[2].id);
+          console.log("Name:", data.lernende[2].name, data.lernende[2].nachname);
+          console.log("Hobbies:", data.lernende[2].hobbies[0],
+                                  data.lernende[2].hobbies[1],
+                                  data.lernende[2].hobbies[2]);
+          //
+          console.log("------- Lernende/r 4 ------- ");
+          console.log("id:", data.lernende[3].id);
+          console.log("Name:", data.lernende[3].name, data.lernende[3].nachname);
+          console.log("Hobbies:", data.lernende[3].hobbies[0],
+                                 data.lernende[3].hobbies[1],
+                                 data.lernende[3].hobbies[2]);
+          //
+          console.log("------- Lernende/r 5 ------- ");
+          console.log("id:", data.lernende[4].id);
+          console.log("Name:", data.lernende[4].name, data.lernende[4].nachname);
+          console.log("Hobbies:", data.lernende[4].hobbies[0],
+                                 data.lernende[4].hobbies[1],
+                                 data.lernende[4].hobbies[2]);
+          //
+          console.log("------- Lernende/r 6 ------- ");
+          console.log("id:", data.lernende[5].id);
+          console.log("Name:", data.lernende[5].name, data.lernende[5].nachname);
+          console.log("Hobbies:", data.lernende[5].hobbies[0],
+                                 data.lernende[5].hobbies[1],
+                                 data.lernende[5].hobbies[2]);
+          //
+          console.log("------- Lernende/r 7 ------- ");
+          console.log("id:", data.lernende[6].id);
+          console.log("Name:", data.lernende[6].name, data.lernende[6].nachname);
+          console.log("Hobbies:", data.lernende[6].hobbies[0],
+                                  data.lernende[6].hobbies[1],
+                                 data.lernende[6].hobbies[2]);
+          //
+          console.log("------- Lernende/r 8 ------- ");
+          console.log("id:", data.lernende[7].id);
+          console.log("Name:", data.lernende[7].name, data.lernende[7].nachname);
+          console.log("Hobbies:", data.lernende[7].hobbies[0],
+                                 data.lernende[7].hobbies[1],
+                                 data.lernende[7].hobbies[2]);
+          //
+          console.log("------- Lernende/r 9 ------- ");
+          console.log("id:", data.lernende[8].id);
+          console.log("Name:", data.lernende[8].name, data.lernende[8].nachname);
+          console.log("Hobbies:", data.lernende[8].hobbies[0],
+                                 data.lernende[8].hobbies[1],
+                                 data.lernende[8].hobbies[2]);
+          //
+          console.log("------- Lernende/r 10 ------- ");
+          console.log("id:", data.lernende[9].id);
+          console.log("Name:", data.lernende[9].name, data.lernende[9].nachname);
+          console.log("Hobbies:", data.lernende[9].hobbies[0],
+                                 data.lernende[9].hobbies[1],
+                                 data.lernende[9].hobbies[2]);
+          //
+          console.log("------- Lernende/r 11 ------- ");
+          console.log("id:", data.lernende[10].id);
+          console.log("Name:", data.lernende[10].name, data.lernende[10].nachname);
+          console.log("Hobbies:", data.lernende[10].hobbies[0],
+                                 data.lernende[10].hobbies[1],
+                                 data.lernende[10].hobbies[2]);
+          //
+          console.log("------- Lernende/r 12 ------- ");
+          console.log("id:", data.lernende[11].id);
+          console.log("Name:", data.lernende[11].name, data.lernende[11].nachname);
+          console.log("Hobbies:", data.lernende[11].hobbies[0],
+                                 data.lernende[11].hobbies[1],
+                                 data.lernende[11].hobbies[2]);
+          //
+        })
+        .catch(err => {
+          console.error("Fehler beim Laden:", err);
+        });
+     </script>
+  </body>
+  </html>
+
+
+
+
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir
+
+
+

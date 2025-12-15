@@ -19,9 +19,9 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh 
+                sh """
                     test -z \$SKIP_BUILD && echo 'starting to build ...'
-                
+                """
             }
         }
     }

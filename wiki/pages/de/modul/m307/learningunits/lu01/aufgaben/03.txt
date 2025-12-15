@@ -44,7 +44,7 @@ Die dynamische Ausgabe erreichen wird mit einer Schleife, die die Daten vom erst
 ===== Auftrag =====
 Bauen Sie das nachfolgende statische Script um, sodass es dynamisch die JSON-Daten ausgibt, unabhängig von der Anzahl Daten, die es enthält. 
 
-Dies realisieren Sie durch eine Schleife, die JSON-Lernenden-Daten durchläuft. Wenn Sie diese dann erfolgreich implementiert haben, können Sie die Hobbies dann mit einer zeiten, inneren Schleife ausgeben lassen.
+Dies realisieren Sie durch eine Schleife, die JSON-Lernenden-Daten durchläuft. Wenn Sie diese dann erfolgreich implementiert haben, können Sie die Hobbies dann mit einer zweiten, inneren Schleife ausgeben lassen.
 
 
 **vorlage für lu01_l03.js**

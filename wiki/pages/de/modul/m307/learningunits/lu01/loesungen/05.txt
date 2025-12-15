@@ -1,0 +1,127 @@
+====== LU01.L05 - JSON-File einlesen und dynamsich im der Browser-Konsole ausgeben ======
+
+===== Rahmenbedingungen =====
+  * Sozialform: Einzelarbeit
+  * Hilfsmittel: Openbooks
+  * Zeit: 20 Minuten
+  * Erwartetes Resultat: 
+    * JavaScript-File, dass eine JSON-Datei einliest und ausgibt. 
+    * HTML-File, welches den Inhalt der JSON-Datei in der Browser-Konsole ausgibt.
+
+
+===== Auftrag =====
+Ersetzen Sie im nachfolgenden Script die Einzeleinträge durch Schleifen. 
+
+**index.html**
+
+  <!DOCTYPE html>
+  <html lang="de">
+  <head>
+    <meta charset="UTF-8">
+    <title>Lernende Konsole</title>
+  </head>
+  <body>
+    <script>
+      fetch("lernende.json")
+        .then(response => response.json())
+        .then(data => {
+          console.log("------- Lernende/r 1 ------- ");
+          console.log("id:", data.lernende[0].id); 
+          console.log("Name:", data.lernende[0].name, data.lernende[0].nachname);
+          console.log("Hobbies:", data.lernende[0].hobbies[0], 
+                                  data.lernende[0].hobbies[1],
+                                  data.lernende[0].hobbies[2]);
+          // ...                      
+          console.log("------- Lernende/r 12 ------- ");
+          console.log("id:", data.lernende[11].id);
+          console.log("Name:", data.lernende[11].name, data.lernende[11].nachname);
+          console.log("Hobbies:", data.lernende[11].hobbies[0],
+                                 data.lernende[11].hobbies[1],
+                                 data.lernende[11].hobbies[2]);
+          //
+        })
+        .catch(err => {
+          console.error("Fehler beim Laden:", err);
+        });
+     </script>
+  </body>
+  </html>
+
+
+===== Lösungssourcecode mit einer äuseren Schleife (alle Fileeinträge) =====
+  <!DOCTYPE html>
+  <html lang="de">
+  <head>
+    <meta charset="UTF-8">
+    <title>Lernende Konsole</title>
+  </head>
+  <body>
+    <script>
+    fetch("lernende2.json")
+      .then(response => response.json())
+      .then(data => {
+        for (let i = 0; i < data.lernende.length; i++) {
+          console.log("------- Lernende/r " + (i + 1) + " -------");
+          console.log("id:", data.lernende[i].id);
+          console.log(
+            "Name:",
+            data.lernende[i].name,
+            data.lernende[i].nachname
+          );
+          console.log(
+            "Hobbies:",
+            data.lernende[i].hobbies[0],
+            data.lernende[i].hobbies[1],
+            data.lernende[i].hobbies[2]
+          );
+        }
+      })
+      .catch(err => {
+        console.error("Fehler beim Laden:", err);
+      });
+    </script>
+  </body>
+  </html>
+
+
+===== Lösungssourcecode mit einer äuseren (alle Sätze) und innerer Schleife (Hobbies) =====
+
+  <!DOCTYPE html>
+  <html lang="de">
+  <head>
+    <meta charset="UTF-8">
+    <title>Lernende Konsole</title>
+  </head>
+  <body>
+  <script>
+    fetch("lernende.json")
+      .then(response => response.json())
+      .then(data => {  
+        for (let i = 0; i < data.lernende.length; i++) {
+          console.log("------- Lernende/r " + (i + 1) + " -------");
+          console.log("id:", data.lernende[i].id);
+          console.log(
+            "Name:",
+            data.lernende[i].name,
+            data.lernende[i].nachname
+          );
+          console.log("Hobbies:");
+          for (let j = 0; j < data.lernende[i].hobbies.length; j++) {
+            console.log(" -", data.lernende[i].hobbies[j]);
+          }
+        }
+      })
+      .catch(err => {
+        console.error("Fehler beim Laden:", err);
+      });
+    </script>
+  </body>
+  </html>
+
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir
+
+
+
