@@ -1,8 +1,9 @@
 ==== LU15.A02 Frontend ergänzen ====
 
-Mit dem Commit ''TODO'' bekommen Sie die Frontenddateien.
+Mit dem Commit ''49dfa5f'' bekommen Sie die Frontenddateien.
 
 Überprüfen Sie die Funktionen bei Ihrer lokalen Implementation nach dem Starten der Applikation auf http://localhost:8080/
 
-<code bash>
-</code>
+{{:de:modul:ffit:3-jahr:java:learningunits:lu15:aufgaben:rag_frontend_unstyled.png?600|}}
+
+Diese Version besitzt nur ein minimales Styling in ''style.css''. Ergänzen Sie die Formatierungen nach Ihren Geschmack, um die Applikation zu verschönern.
