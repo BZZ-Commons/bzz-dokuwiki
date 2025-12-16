@@ -1,6 +1,6 @@
 ==== LU15.A01 REST-APIs ergänzen ====
 
-Machen Sie ein Cherry-Pick der beiden Commits ''53c8892'' und ''ccec42d'', für einige kleinere Optimierungen und die RestController-Klassen.
+Machen Sie ein Cherry-Pick der beiden Commits ''53c8892'', ''ccec42d'' und ''bfa74e8'', für einige kleinere Optimierungen und die RestController-Klassen.
 
 Implementieren Sie die beiden REST-API's in ''ChatController.java'' und ''CrawlerController.java''.
 <code bash>

@@ -108,7 +108,8 @@ Stattdessen benutzen wir **Postman** als Client:
   * Sie können im Body bequem JSON eingeben (z.B. neuen ''post'' anlegen).
 
 <WRAP center round info 60%>
-Postman können Sie hier downloaden → [[[https://www.postman.com/downloads/|Postman](https://www.postman.com/downloads/|Postman) App]] </WRAP>
+Postman können Sie hier downloaden → [[https://www.postman.com/downloads/|Postman downloaden]]
+</WRAP>
 
 {{:modul:m290_guko:learningunits:lu16:theorie:postman-http-methods.png?direct&600| Screenshot Postman-Benutzeroberfläche mit den HTTP-Requests GET/POST/PUT/DELETE.}}
 //Screenshot Postman-Benutzeroberfläche mit den HTTP-Requests GET/POST/PUT/DELETE.//
@@ -188,7 +189,7 @@ app.listen(port, () => {
 </code>
 </WRAP>
 
-Wenn Sie diesen Server mit ''npm run dev'' starten, sollten Sie im Browser unter ''[http://localhost:3000/](http://localhost:3000/)'' den Text **„API ist online“** sehen.
+Wenn Sie diesen Server mit ''npm run dev'' starten (falls Nodemon -> s. LU15 installiert, sonst ''node index.js''), sollten Sie im Browser unter [[http://localhost:3000/]] den Text **„API ist online“** sehen.
 
 
 ==== 2. READ – Alle Posts abfragen ====

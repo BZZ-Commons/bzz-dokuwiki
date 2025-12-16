@@ -36,3 +36,13 @@ Ergänzen Sie allenfalls das application.yml, um sicherzustellen, dass beim Such
 </code>
 
 An dieser Stelle sei angemerkt, dass der Test die echte Datenbank verwendet anstatt einer separaten Testdatenbank oder einem Mock. Damit nicht bei jeder Testausführung Duplikate hinzugefügt werden, wurde in der Klasse ''DocumentFactory'' die id deterministisch basierend auf dem Text erstellt. Dadurch werden Datensätze mit demselben Inhalt überschrieben anstatt neu angelegt.
+
+Falls zu wenig oder völlig falsche Dokumente vom VectorStore zurückgegeben werden, könnte allenfalls die Indexierung fehlerhaft sein. Sie können diese manuell neu erstellen mit folgenden Befehlen.
+
+<code bash>
+psql -U postgres -d ragdb
+</code>
+<code sql>
+REINDEX TABLE vector_store;
+</code>
+
