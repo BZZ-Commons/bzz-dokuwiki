@@ -1,7 +1,30 @@
-==== LU15.A03 Prompt Engineering ====
+==== LU15.A03 Embedding optimieren ====
 
-Probieren Sie andere LLM-Modelle aus.
+Probieren Sie versuchsweise ein anderes Embedding aus. Idealerweise eines, das besser für deutsche Texte geeignet ist als "BAAI/bge-small-en".
 
-<code>
-...
+<code yaml>
+    transformers:
+      embedding:
+        enabled: true
+        model: "..."
 </code>
+
+Dazu können Sie kurzerhand eine separate DB erstellen.
+<code bash>
+ psql -U postgres
+</code>
+
+<code sql>
+CREATE DATABASE ragdb2;
+\c ragdb2;
+GRANT ALL PRIVILEGES ON DATABASE ragdb2 TO rag_user;
+</code>
+
+Und den Eintrag in der Properties-Datei anpassen.
+<code properties>
+spring.datasource.url=jdbc:postgresql://localhost:5432/ragdb2
+</code>
+
+Die Logik in ''VectorTableInitializer.java'' erstellt beim Starten, dann automatisch eine Datenbank mit der richtigen Dimension.
+
+Funktioniert ''ChatServiceTest.java'' noch immer? Wie ist die Qualität der Chat-Antworten im Vergleich zu vorher?

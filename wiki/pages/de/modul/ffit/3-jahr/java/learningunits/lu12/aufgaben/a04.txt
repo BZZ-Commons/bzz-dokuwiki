@@ -19,8 +19,6 @@ spring.datasource.username=rag_user
 spring.datasource.password=secret
 </code>
 
-
-
 Studieren Sie die Änderungen gründlich und stellen Sie sicher, dass der Test ''StoreServiceTest.java'' ohne Fehler ausgeführt werden kann.
 <code bash>
 ./gradlew test

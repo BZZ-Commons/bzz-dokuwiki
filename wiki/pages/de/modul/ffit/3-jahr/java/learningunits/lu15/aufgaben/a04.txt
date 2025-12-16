@@ -1,0 +1,14 @@
+==== LU15.A04 LLM-Modell optimieren ====
+
+Probieren Sie andere LLM-Modelle aus.
+https://openrouter.ai/models?fmt=table&order=pricing-low-to-high
+
+<code yaml>
+    openai:
+      base-url: https://openrouter.ai/api
+      chat:
+        options:
+          model: ...
+</code>
+
+Wie ist die Qualität der Chat-Antworten im Vergleich zu vorher?
