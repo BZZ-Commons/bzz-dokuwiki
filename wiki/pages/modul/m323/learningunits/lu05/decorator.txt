@@ -8,8 +8,10 @@ In Python sind Funktionen First-Class-Objekte, das bedeutet, sie können als Arg
 
 ==== Syntax ====
 
-Die grundlegende Syntax für einen Decorator in Python ist die folgende:
 
+<WRAP group>
+<WRAP half column>
+Die grundlegende Syntax für einen Decorator in Python ist die folgende:
 <code python>
 def decorator_function(original_function):
     def wrapper_function():
@@ -23,7 +25,30 @@ def display():
     print("Die Display-Funktion wurde aufgerufen")
 
 display()
+</code></WRAP>
+
+<WRAP half column>
+Semantisch ist ''@decorator_function'' genau das gleiche wie eine Zuweisung direkt nach der Funktionsdefinition.
+<code python>
+def decorator_function(original_function):
+    def wrapper_function():
+        # zusätzliche Funktionalitäten hier
+        original_function()
+        # weitere zusätzliche Funktionalitäten
+    return wrapper_function
+
+def display():
+    print("Die Display-Funktion wurde aufgerufen")
+
+# das macht @decorator_function:
+display = decorator_function(display)
+
+display()
 </code>
+</WRAP>
+</WRAP>
+
+
 
 In diesem Beispiel ist ''decorator_function'' der Decorator, der die ''display''-Funktion erweitert. Der "@"-Operator ist [[https://de.wikipedia.org/wiki/Syntaktischer_Zucker|syntaktischer Zucker]] für ''display = decorator_function(display)''.
 
