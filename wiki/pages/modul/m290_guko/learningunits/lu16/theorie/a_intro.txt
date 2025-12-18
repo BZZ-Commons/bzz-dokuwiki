@@ -339,15 +339,10 @@ In echten Projekten übernimmt das später die Datenbank (AUTO_INCREMENT).
 
 ===== Ausblick =====
 
-In dieser Learning Unit haben Sie:
+Auf der nächsten Seite sind die HTTP-Methoden PUT und DELETE am gleichen Beispiel (Social-Media-Posts) ausgeführt. Sie werden diese auch für Ihr Projekt brauchen.
 
-  * die **HTTP-Methoden** im Kontext von CRUD kennengelernt,
-  * mit **Postman** einfache Requests an Ihren Express-Server geschickt,
-  * eine kleine API mit einer lokalen JavaScript-Liste (Array) von ''posts'' erstellt (''GET /api/posts'', ''GET /api/posts/:id'', ''POST /api/posts'').
-
-In der nächsten Unterrichtseinheit:
+In der nächsten Unterrichtseinheit (LU17):
   * ersetzen wir die JavaScript-Liste durch eine **MySQL-Tabelle ''posts''**,
-  * ergänzen **Update (PUT)** und **Delete (DELETE)** für vollständiges CRUD,
   * bauen einfache **Validierung** und **Fehlerbehandlung** (HTTP-Statuscodes) ein,
   * damit Sie diese Struktur für Ihren eigenen Projekt-Use-Case übernehmen können.
 

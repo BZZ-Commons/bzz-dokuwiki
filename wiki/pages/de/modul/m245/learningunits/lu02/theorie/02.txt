@@ -1,56 +1,101 @@
-====== LU02b - LB2: PoC erbringen ======
+====== LU01b - Supervised Learning ======
 
-===== Rahmenbedingungen =====
-  * Sozialform: Gruppen zu je 3 Personen
-  * Typ: Praktische Forschungsarbeit
-  * Dauer: 20 + 1 Lektionen
-  * Gewichtung: 45%
+===== Superviced Learning VS Unsuperviced Learning =====
+**Supervised Learning** (ueberwachtes Lernen) ist die Disziplin im Machine Learning, bei der der Algorithmus mit Musterloesung lernt. Man zeigt dem Modell Eingaben und die richtigen Antworten, und es lernt die Zuordnung. Dabei nutzt es mit bekannten Zielwerten (Labels), das Modell lernt also anhand von vorgegebenen Loesungen.
 
-===== Hilfsmittel =====
-    * Eigene Unterlagen inkl. die zur Verfügung gestellten Lehrmittel in Moodle
+**Unsupervised Learning** arbeitet ohne Labels und sucht selbststaendig Strukturen oder Muster in den Daten.
 
-===== Hinweise =====
-  * Bei Fehlen ist ein Arztzeugnis innerhalb 2 Kalenderwochen der Lehrperson elektronisch zuzuschicken.
-  * Fehlende oder verspätet abgegebene Arztzeugnisse können zur Prüfungsnote Note 1.0.
-  * Fehlen während einer Projektarbeit kann zur Wiederholung des Moduls führen.
-
-===== Bewertungskriterien =====
-
-===== A. Formales ====
-  * A.1 Ort und Zeit des Fachgesprächs
-  * A.2 Protokollierung
-  * A.3 Adressatengerechte Begrüssung
-  * A.4 Aufbau/Struktur/Roter Faden
-  * A.5 Übergänge zwischen den Phasen
-  * A.6 Visuelle Hilsmittel
-  * A.7 Redeart: Geschwindigkeit, Lautstärke, Sprache - Stark gewichtet
-  * A.8 Auftreten
-
-===== B. Inhalt =====
-  * B.1 Einstieg / Einleitung
-  * B.2 Agenda
-  * B.3 UseCases C
-  * B.4 UseCases R
-  * B.5 UseCases U
-  * B.6 UseCases D
-  * B.7 Zusammenfassung  
-  * B.8 Fragen und Antworten
-  * B.9 Outtro
-
-===== C. Malus =====
-  * C.1 Verspäteter Start 
-  * C.2 Ungleiche Verteilung der Arbeit 
-  * C.3 Verspäteter Upload der Unterlagen/Files bzw. des Abgabelinks
-  * C.4 Fehlende oder falsche Berechtigung des Abgabelinks
-
-===== D. Bonus =====
-  * D.1 English während der Präsentation - for Non-Natives only
-  * D.2 English während der Q&A-Phase - for Non-Natives only
-
-====== Bewertungsraster ======
-{{de:modul:m245:learningunits:lu02:theorie:m245_lb2_bewertungsraster.png| Bewertungsraster für M245_LB2 }}
-
-{{de:modul:m245:learningunits:lu02:theorie:m245_bewertungsrasterlb2_poc_erstellen.xlsx | Bewertungsraster als Excel-File}}
+**Supervised Learning** weiss man genau, was vorhergesagt werden soll, beim Unsupervised Learning oft erst im Nachhinein, was die gefundenen Gruppen bedeuten.
 
 
-[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir
+**Long story short:** Oder kurz gesagt: Supervised Learning bekommt die Antworten mitgeliefert, Unsupervised Learning muss sie sich selbst zusammenreimen.
+
+
+----
+
+===== Grundidee hinter Superviced Learning =====
+
+Wir haben einen Datensatz aus (x, y)-Paaren:
+  * x = Eingabedaten = Features, z.B. Bildpixel, Messwerte, Texteigenschaften
+  * y = Zielwert / Label, z.B. „Katze“, „Hund“, Preis, Ja/Nein
+
+Das Modell sucht eine Funktion //y ≈ f(x)// und versucht, moeglichst wenig falsch zu liegen.
+
+===== Typische Aufgaben =====
+
+**1. Klassifikation**
+  * Ziel: Kategorie vorhersagen
+  * Beispiele:
+    * Spam / Nicht-Spam
+    * Katze / Hund
+    * Kredit genehmigt / abgelehnt
+
+**Typische Algorithmen:**
+  * Logistic Regression
+  * Decision Trees
+  * Random Forest
+  * Support Vector Machines
+  * Neuronale Netze
+
+===== 2. Regression =====
+
+  * Ziel: kontinuierlichen Zahlenwert vorhersagen
+  * Beispiele:
+    * Hauspreis
+    * Temperatur morgen
+    * Energieverbrauch
+
+Typische Algorithmen:
+	•	Lineare Regression
+	•	Polynomial Regression
+	•	Regression Trees
+	•	Neuronale Netze
+
+⸻
+
+Wie laeuft das Training ab?
+	1.	Daten sammeln
+	•	Mit korrekten Labels (der teuerste Teil, uebrigens)
+	2.	Modell initialisieren
+	•	Startet ahnungslos (wie Erstsemester)
+	3.	Vorhersage machen
+	•	Modell rät
+	4.	Fehler berechnen
+	•	z.B. Mean Squared Error, Cross-Entropy
+	5.	Modell anpassen
+	•	Gewichte korrigieren (Gradient Descent)
+	6.	Wiederholen
+	•	Bis Fehler klein genug oder Geduld am Ende
+
+⸻
+
+Wichtiges Vokabular (das man kennen sollte)
+	•	Trainingsdaten: Daraus lernt das Modell
+	•	Testdaten: Damit prueft man, ob es wirklich gelernt hat
+	•	Overfitting: Modell lernt auswendig, versteht aber nichts
+	•	Underfitting: Modell versteht gar nichts
+	•	Generalisation: Das eigentliche Ziel
+
+⸻
+
+Vorteile
+	•	Gute Ergebnisse, wenn viele korrekt gelabelte Daten da sind
+	•	Relativ gut interpretierbar (je nach Modell)
+	•	Industriestandard fuer viele Anwendungen
+
+Nachteile
+	•	Labels sind teuer und fehleranfaellig
+	•	Modell kann Bias der Trainingsdaten uebernehmen
+	•	Lernt nur das, was man ihm zeigt (keine Magie)
+
+⸻
+
+Merksatz (schultauglich)
+
+Supervised Learning lernt aus Beispielen mit bekannten Loesungen und versucht, fuer neue Eingaben moeglichst richtige Ausgaben vorherzusagen.
+
+Oder weniger paedagogisch:
+
+Ohne Labels kein Plan.
+
+Wenn du willst, erklaere ich das Ganze auch mit einem konkreten Python-Beispiel, Vergleich zu Unsupervised Learning oder didaktisch fuer den Unterricht aufbereitet.

@@ -12,6 +12,38 @@ Generator Expressions werden in Python vorwiegend zur "lazy" Transformation von 
 gen_expr = (expression for item in iterable if condition == True)
 </code>
 
+===== Beispiel: "lazy" Verhalten sichtbar machen =====
+
+Dieses Beispiel zeigt, dass eine Generator Expression Werte erst erzeugt, wenn sie wirklich gebraucht werden (z.B. mit ''next()'') und dass ein Generator nach dem Konsumieren nicht automatisch "neu startet".
+
+<code python>
+# Beispiel: Generator Expression ist "lazy" (Werte entstehen erst beim Iterieren)
+
+numbers = [1, 2, 3, 4, 5]
+
+squares_gen = (n**2 for n in numbers)   # Generator Expression
+squares_list = [n**2 for n in numbers]  # List Comprehension (sofort fertig berechnet)
+
+print(squares_gen)   # <generator object ...>
+print(squares_list)  # [1, 4, 9, 16, 25]
+
+# Lazy sichtbar machen: Der Generator liefert Werte erst, wenn man ihn "anzapft"
+print(next(squares_gen))  # 1
+print(next(squares_gen))  # 4
+
+# Jetzt sind schon 2 Werte "verbraucht" – übrig bleiben nur noch die restlichen:
+print(list(squares_gen))  # [9, 16, 25]
+
+# Wichtig: Ein Generator kann danach nicht nochmals von vorne iteriert werden:
+print(list(squares_gen))  # []
+</code>
+
+^ Punkt ^ Was man sieht ^ Merksatz ^
+| Lazy-Effekt | ''print(squares_gen)'' zeigt nur ein Generator-Objekt | "Noch nichts berechnet." |
+| Verbrauch | ''next()'' holt Werte einzeln | "Werte entstehen beim Bedarf." |
+| Einmaligkeit | zweites ''list(squares_gen)'' ist leer | "Generatoren kann man nicht resetten." |
+
+
 ===== Teile einer Generator Expression =====
 
 ==== Condition ====

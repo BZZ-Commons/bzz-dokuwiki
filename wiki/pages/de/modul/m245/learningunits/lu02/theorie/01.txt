@@ -1,44 +1,36 @@
-====== LU02a - LB1: PoC planen/vorbereiten ======
+====== LU01a - Basics of Machine Learning ======
 
-===== Rahmenbedingungen =====
-  * Sozialform: Gruppenarbeit 3 Personen
-  * Typ: Praktische Forschungsarbeit
-  * Dauer: 8-12 Lektionen
-  * Gewichtung: 15%
+===== What is Machine Learning? =====
 
-===== Hilfsmittel =====
-    * OpenBook
+The **father of Machine Learning Arthur Lee Samuel** in 50s defined Machine Learning like this: <wrap hi>Machine Learning is the subfield of Computer Science, that gives computers the ability to learn without being explicitly programmed. </wrap>
 
-===== Hinweise =====
-  * Bei Fehlen ist ein Arztzeugnis innerhalb 2 Kalenderwochen der Lehrperson elektronisch zuzuschicken.
-  * Fehlende oder verspätet abgegebene Arztzeugnisse können zur Prüfungsnote Note 1.0.
-  * Fehlen während einer Projektarbeit kann zur Wiederholung des Moduls führen.
 
-===== Bewertungskriterien =====
-==== A. Administration ====
-  * A.1 Dokumentformalitäten: Deckblatt, Titel, Autorenschaft, Header/Footer, Eigenständigkeitserklärung
-  * A.2 Dokumentformatierung: Korrekte Formatlemente, saubere Struktur
-  * A.3 Dokumentstruktur: Sinnvolle Einteilung, Index, Verzeichnisse
+{{:de:modul:m245:learningunits:lu02:theorie:arthurleesamuel.jpg?400|}}
 
-==== B. Inhalt ====
-  * B.1 Einleitung/Motivation
-  * B.2 UseCases: Umfang, Form und Inhalt
-  * B.3 Umsetzungskonzept
-  * B.4 Risikomanagement Formal
-  * B.5 Risikomanagement Inhalt
-  * B.6 Risikomanagement Heatmap
-  * 6.7 Risikomanagement Gegenmassnahmen
+Arthur Lee Samuel was an American pioneer in the field of artificial intelligence and computer gaming. Samuel worked for IBM for many years and is credited with creating the first computer program designed to play a game, specifically checkers. He developed the program in the early 1950s, and it was based on a technique called //machine learning//, where the computer was programmed to learn from its own experience and improve its performance over time. 
 
-==== C. Malus ====
-  * C.1 Falsches Dokumentformat 
-  * C.2 Filename
-  * C.3 Verspätete Abgabe 
+Later Tom Michael Mitchell, an American computer scientist and professor at Carnegie Mellon University, defined Machine Learning as <wrap hi>A computer program is said to learn from experience E with respect to some task T and some performance measure P, if its performance on T, as measured by P, improves with experience E. </wrap>
 
-==== Bewertungsraster ====
-{{de:modul:m245:learningunits:lu02:theorie:m245_lb1_bewertungsraster.png?1000|}}
 
-{{ de:modul:m245:learningunits:lu02:theorie:m245_bewertungsraster_lb1_poc_vorbereiten.xlsx | Bewertungsraster als XLS}}
+**Tom Michael Mitchell** is a professor at Carnegie Mellon University, where he is the Founders University Professor in the Machine Learning Department and the **head of the Machine Learning Department**. He is best known for his contributions to the fields of machine learning and artificial intelligence. He has authored several influential books on these topics, including //Machine Learning// and //The Discipline of Machine Learnin//.
+
+If we apply Tom Michael Mitchell’s definition to a checkers game, where computer finds the best
+wining startegy we can say that:
+
+  * **E = Experience**: The experience of having the program play tens of thousands of games itself
+  * **T = Task**: The task of playing checkers 
+  * **P = Probability**: The probability that wins the next game of checkers against some new opponent
+
+===== 2 Types of Machine Learning Algorithms =====
+There are basically three types of algorithms regarding Machine Learning
+
+  * Supervised Learning
+  * Unsupervised Learning
+  * Reinforsment Learning
 
 
 
+
+
+----
 [[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir
