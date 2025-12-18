@@ -8,6 +8,14 @@
 ===== JavaScript DOM-Selektoren kompakte Übersicht =====
 Die folgenden Methoden dienen dazu, HTML-Elemente im Dokument (DOM) zu finden und zu manipulieren. Jede Methode arbeitet etwas anders und eignet sich für unterschiedliche Zwecke. 
 
+  * getElementByID
+  * getElementsByClassName
+  * getElementsByTagName
+  * querySelector
+
+
+Die in der Demonstration verwendeten Beispielscripte finden Sie hier {{ :de:modul:m288:learningunits:lu08:lu08_demo.zip |}}
+
 ----
 
 ==== 1. document.getElementById() ====
@@ -93,7 +101,7 @@ Damit wir alle p-Elemente verändern, braucht es eine Schleife.
 
       const alleP = document.querySelectorAll("p");
       // jedem die neue Klasse geben
-      alleP.forEach(p => p.className = "beschreibungN");
+      alleP.forEach(p => p.className = "beschreibung");
 
 
 ===== Zusatzmaterial =====

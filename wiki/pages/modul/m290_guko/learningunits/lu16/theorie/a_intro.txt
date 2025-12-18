@@ -28,6 +28,10 @@ Der Server führt für uns die passenden CRUD-Operationen aus und sendet eine An
 Wir bauen zuerst eine **API für Social-Media-Posts**, noch ohne Datenbank – nur mit Daten in einem Javascript-Objekt.
 So können wir **HTTP, Routen und Postman** kennenlernen, bevor wir in in der nächsten Unterrichtseinheit MySQL an Express anbinden.
 
+<WRAP center round tip 70%>
+Schauen Sie sich das Video zum Unterricht an – Einführung in APIs und Umsetzung von CRUD mit express: [[https://bzzch-my.sharepoint.com/:v:/g/personal/guido_koch_bzz_ch/IQB1YVY2gQOpRLq-MepYlD29AYjnx6mzg2ci28avf1XljGA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=6g0Jem|Einführungs-Video API/CRUD]]
+</WRAP>
+
 ===== HTTP-Methoden – wie Bestellungen in einem Restaurant =====
 
 Stellen Sie sich das so vor:
@@ -310,7 +314,7 @@ In echten Projekten übernimmt das später die Datenbank (AUTO_INCREMENT).
 
 === Test mit Postman ===
 
-{{:modul:m290_guko:learningunits:lu16:theorie:post-request_new_post.png?direct&900| Screenshot: einen neuen Post hinzufügen.}}
+{{:modul:m290_guko:learningunits:lu16:theorie:screenshot_2025-12-18_at_11.26.12.png?direct&900| Screenshot: einen neuen Post hinzufügen.}}
 
   - Methode: ''POST''
   - URL: ''http://localhost:3000/api/posts''
