@@ -6,6 +6,12 @@ Generatoren sind eine einfache Möglichkeit, Iteratoren in Python zu erstellen. 
 
 Ein Generator ist ein spezieller Typ von Iterator, der mit einer Funktion und dem Schlüsselwort ''yield'' erstellt wird. Im Gegensatz zu normalen Funktionen, die einen Wert zurückgeben und dann beendet werden, "pausieren" Generatoren ihren Zustand und setzen die Ausführung fort, wenn der nächste Wert benötigt wird.
 
+===== Wichtige Eigenschaften =====
+
+  * **Lazy**: Werte werden erst erzeugt, wenn sie gebraucht werden (z.B. im ''for''-Loop oder mit ''next()'').
+  * **Einmal konsumierbar**: Ein Generator läuft von vorne nach hinten durch. Was "verbraucht" ist, ist weg.
+  * **Zustand bleibt erhalten**: Lokale Variablen behalten ihren Wert zwischen zwei ''yield''-Schritten.
+
 ===== Syntax =====
 
 Die Erstellung eines Generators ist ähnlich wie die einer normalen Funktion, aber anstelle des ''return''-Schlüsselworts verwenden wir ''yield'':
@@ -17,9 +23,28 @@ def my_generator():
     yield 3
 </code>
 
+===== Generator vs. normale Funktion =====
+
+Eine normale Funktion liefert genau einen Rückgabewert und endet. Ein Generator liefert mehrere Werte nacheinander:
+
+<code python>
+def normal_function():
+    return 1
+    return 2  # wird nie erreicht
+
+def generator_function():
+    yield 1
+    yield 2  # wird erreicht, wenn weiter iteriert wird
+
+print(normal_function())        # 1
+gen = generator_function()
+print(next(gen))                # 1
+print(next(gen))                # 2
+</code>
+
 ===== Beispiele =====
 
-=== Einfacher Generator ===
+==== Einfacher Generator ====
 
 Ein einfacher Generator, der die Zahlen 1 bis 3 zurückgibt:
 
@@ -30,18 +55,18 @@ def simple_generator():
     yield 3
 
 gen = simple_generator()
-print(next(gen))  # Output: 1
-print(next(gen))  # Output: 2
-print(next(gen))  # Output: 3
+print(next(gen))  # 1
+print(next(gen))  # 2
+print(next(gen))  # 3
 </code>
 
-=== Generator mit Schleife ===
+==== Generator mit Schleife ====
 
 Ein Generator, der die Quadrate der Zahlen von 1 bis n zurückgibt:
 
 <code python>
 def square_numbers(n):
-    for i in range(1, n+1):
+    for i in range(1, n + 1):
         yield i * i
 
 square = square_numbers(5)
@@ -52,14 +77,55 @@ print(next(square)) # 16
 print(next(square)) # 25
 </code>
 
-=== Generator Expression ===
+==== Generator Expression ====
 
 Generator Expressions sind eine kompaktere Art, Generatoren zu erstellen, ähnlich wie List Comprehensions:
 
 <code python>
-squared = (x*x for x in range(6))
-print(next(squared))  # Output: 0
-print(next(squared))  # Output: 1
+squared = (x * x for x in range(6))
+print(next(squared))  # 0
+print(next(squared))  # 1
+</code>
+
+===== Typische Verwendung: for-Loop statt next() =====
+
+In der Praxis nutzt man Generatoren meistens im ''for''-Loop, weil der Loop automatisch stoppt, wenn der Generator fertig ist:
+
+<code python>
+def countdown(n):
+    while n > 0:
+        yield n
+        n -= 1
+
+for value in countdown(3):
+    print(value)
+
+# Output:
+# 3
+# 2
+# 1
+</code>
+
+===== StopIteration: Was passiert, wenn der Generator fertig ist? =====
+
+Wenn ein Generator keine Werte mehr liefern kann, endet er. Bei ''next()'' führt das zu einer Exception ''StopIteration'':
+
+<code python>
+gen = (x for x in range(2))
+print(next(gen))  # 0
+print(next(gen))  # 1
+
+# nächster Aufruf -> StopIteration
+# print(next(gen))
+</code>
+
+===== Generatoren sind Iteratoren =====
+
+Ein Generator ist selbst ein Iterator: ''iter(gen)'' gibt den Generator zurück, und ''next(gen)'' liefert den nächsten Wert.
+
+<code python>
+gen = (x for x in range(3))
+print(iter(gen) is gen)  # True
 </code>
 
 ===== Vorteile von Generatoren =====
@@ -67,11 +133,20 @@ print(next(squared))  # Output: 1
   * **Speichereffizienz**: Generatoren speichern nicht alle Werte im Speicher, sondern generieren sie "on-the-fly". Dies ist besonders nützlich, wenn mit großen Datenmengen gearbeitet wird.
   * **Einfachheit**: Generatoren sind einfacher zu implementieren als benutzerdefinierte Iteratoren.
   * **Vielseitigkeit**: Generatoren können für jede Art von Datenquelle verwendet werden, nicht nur für Listen oder Sequenzen.
+  * **Abbruch möglich**: Man kann früh aufhören zu iterieren (z.B. nach dem ersten Treffer). Der Rest wird gar nie berechnet.
 
 ===== Verständnis des ''yield''-Schlüsselworts =====
 
-Das Schlüsselwort ''yield'' in Python wird verwendet, um einen Wert aus einer Funktion zurückzugeben und den aktuellen Zustand der Funktion zu speichern. Wenn die Funktion das nächste Mal aufgerufen wird, wird sie von der Stelle fortgesetzt, an der sie zuletzt angehalten wurde, und nicht von Anfang an. Dies ermöglicht es der Funktion, Werte "on-the-fly" zu generieren, ohne den gesamten Datensatz im Speicher zu halten.
+Das Schlüsselwort ''yield'' in Python wird verwendet, um einen Wert aus einer Funktion zurückzugeben und den aktuellen Zustand der Funktion zu speichern. Wenn die Funktion das nächste Mal weiter iteriert wird, wird sie von der Stelle fortgesetzt, an der sie zuletzt angehalten wurde, und nicht von Anfang an.
+
+===== Mini-Zusammenfassung =====
+
+^ Begriff ^ Bedeutung ^
+| ''yield'' | Liefert einen Wert und pausiert die Funktion (Zustand bleibt erhalten). |
+| Generator | Iterator, der Werte "lazy" erzeugt. |
+| ''next(gen)'' | Liefert den nächsten Wert (oder ''StopIteration'', wenn fertig). |
+| Generator Expression | Kurzform: ''(expression for item in iterable if condition)'' |
 
 ----
 {{tag>M323-LU04}}
-[[https://creativecommons.org/licenses/by-nc-sa/4.0/ch/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Kevin Maurizi 
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/ch/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Kevin Maurizi
