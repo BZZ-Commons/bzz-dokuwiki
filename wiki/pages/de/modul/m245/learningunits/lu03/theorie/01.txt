@@ -1,0 +1,70 @@
+====== LU03a - Plattform Kaggle.com  ======
+
+===== Worum geht es bei Kaggle ===== 
+Kaggle ist im Kern eine Lern-, Wettbewerbs- und Austauschplattform rund um Data Science und Machine Learning. Oder anders gesagt: der Ort, an dem Modelle gegeneinander antreten und Egos leise leiden.
+
+{{:de:modul:m245:learningunits:lu02:theorie:kaggle_com.png?800|}}
+
+===== Was stellt Kaggle zur Verfüfung =====
+
+**1. Datasets** - Kaggle stellt tausende offene Datensaetze bereit
+  * CSVs, Bilder, Text, Zeitreihen
+  * von trivial („Titanic“) bis brutal realistisch
+  * geeignet fuers Lernen, Ueben und Scheitern im geschuetzten Raum  
+  * Kurz: Daten, ohne erst wochenlang Datenschutzformulare auszufuellen.
+
+**2. Wettbewerbe** - das Herzstueck von Kaggle
+  * Man bekommt:
+    * einen Datensatz
+    * eine Aufgabenstellung (z. B. Klassifikation, Regression)
+    * eine Bewertungsmetrik (Accuracy, RMSE, Log Loss, …)
+  * Man liefert:
+    * ein Modell
+    * eine Vorhersagedatei
+    * und Lektio in Demut, wenn man auf Platz 12'348 landet
+  * Es gibt:
+    * Lern-Wettbewerbe (einsteigerfreundlich)
+    * Forschungsnahe Challenges
+    * Industrie-Wettbewerbe mit Preisgeld
+
+**3. Notebooks** 
+  * Interaktive Jupyter-Notebooks im Browser
+    * Python, R
+    * vorinstallierte Libraries
+    * direkter Zugriff auf Kaggle-Daten
+  * Man kann
+    * eigene Loesungen bauen
+    * Code anderer Leute lesen
+    * sich fragen, warum deren Feature Engineering funktioniert und das eigene nicht
+
+**4. Kurse** - Kostenlose Micro-Courses zu:
+  * Python
+  * Pandas
+  * Machine Learning
+  * Deep Learning
+  * Feature Engineering
+
+**5. Community**
+  * Diskussionen zu Modellen und Loesungen
+  * Erklaerungen zu Gewinneransaetzen
+  * Austausch ueber Best Practices
+
+Man lernt hier schnell:
+  * wie Profis denken
+  * wie viele Tricks es gibt
+  * wie wenig „einfach mal ein Modell trainieren“ wirklich ist
+
+**6. Was Kaggle liefert **: Kaggle ist ein Trainingslager fuer Data Science:
+  * echte Daten
+  * echte Probleme
+  * echte Metriken
+  * echter Realitaetsschock
+
+**7. Was Kaggle nicht liefert**
+  * Kein Ersatz fuer solides Statistik- oder ML-Verstaendnis
+  * Keine Garantie, dass dein Wettbewerbsmodell produktionsreif ist
+  * Kein Ort fuer „einfach nur Theorie“
+
+
+
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

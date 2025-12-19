@@ -1,101 +1,96 @@
-====== LU01b - Supervised Learning ======
+====== LU01a - Typen von Machine Learning ======
 
-===== Superviced Learning VS Unsuperviced Learning =====
-**Supervised Learning** (ueberwachtes Lernen) ist die Disziplin im Machine Learning, bei der der Algorithmus mit Musterloesung lernt. Man zeigt dem Modell Eingaben und die richtigen Antworten, und es lernt die Zuordnung. Dabei nutzt es mit bekannten Zielwerten (Labels), das Modell lernt also anhand von vorgegebenen Loesungen.
+===== Typen von Machine Learning =====
 
-**Unsupervised Learning** arbeitet ohne Labels und sucht selbststaendig Strukturen oder Muster in den Daten.
+==== Superviced Machine Learning ====
+//Supervised Learning// ist eine Art des maschinellen Lernens, bei dem Algorithmen **aus gekennzeichneten Datensätzen (Eingabe-Ausgabe-Paaren) lernen**, Eingaben den richtigen Ausgaben zuzuordnen, sodass sie genaue Vorhersagen oder Entscheidungen zu neuen, unbekannten Daten treffen können, beispielsweise zur Identifizierung von Spam oder zur Vorhersage von Immobilienpreisen. 
 
-**Supervised Learning** weiss man genau, was vorhergesagt werden soll, beim Unsupervised Learning oft erst im Nachhinein, was die gefundenen Gruppen bedeuten.
+{{:de:modul:m245:learningunits:lu02:theorie:supervicedlearning.png?800|}}
 
+Es funktioniert, indem ein Modell anhand von Beispielen trainiert und seine internen Parameter angepasst werden, um Fehler zu minimieren. Es lässt sich grob in Klassifizierungsaufgaben (Kategorisierung von Daten) und Regressionsaufgaben (Vorhersage numerischer Werte) unterteilen und wird häufig bei den nachfolgenden Aufgaben eingesetzt: 
 
-**Long story short:** Oder kurz gesagt: Supervised Learning bekommt die Antworten mitgeliefert, Unsupervised Learning muss sie sich selbst zusammenreimen.
+  * Klassifizierung
+  * Regression 
+  * Betrugserkennung 
+  * Bilderkennung 
+  * medizinischen Diagnos
+  * autonome Mobilität (Züge, Autos, ...)
 
+Innerhalb des Moduls 245 werden wir uns auf diese Methode fokussieren.
+
+==== Unsuperviced Machine Learning ====
+//Unsuperviced Learning// ist eine Art des maschinellen Lernens, bei dem **Algorithmen ohne menschliche Anleitung** Muster und Erkenntnisse in unbeschrifteten Daten finden und sich dabei auf die Entdeckung versteckter Strukturen, Gruppierungen (Clustering) oder Beziehungen (Assoziationsregeln) konzentrieren, indem sie Ähnlichkeiten und Unterschiede identifizieren. 
+
+{{:de:modul:m245:learningunits:lu02:theorie:unsupervicedlearning.png?800|}}
+
+Im Gegensatz zum überwachten Lernen sagt es keine bestimmten Ergebnisse voraus, sondern untersucht Daten, um inhärente (dazugehörige) Muster aufzudecken, wodurch es sich hervorragend für die nachfolgenden Aufgaben  eignet: 
+
+  * Kundensegmentierung
+  * Anomalieerkennung 
+  * Datenreduktion (Dimensionsreduktion)
+  * Clustering, 
+  * Marktsegmentierung 
+  * Empfehlungssysteme 
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir
+
+Innerhalb des Moduls 245 werden die diese Methode nicht angwenden.
+
+==== Reinforcement Learning ====
+Reinforcement Learning (RL) ist eine Art des maschinellen Lernens, bei dem ein Agent lernt, optimale Entscheidungen zu treffen, indem er mit einer Umgebung interagiert und für seine Handlungen Belohnungen (positives Feedback) oder Strafen (negatives Feedback) erhält, ähnlich wie beim menschlichen Lernen durch Versuch und Irrtum, um ein Ziel zu erreichen. Es ist eine leistungsstarke Methode für KI, um komplexe Verhaltensweisen wie das Spielen von Spielen oder die Steuerung von Robotern ohne explizite Programmierung zu erlernen, wobei der Schwerpunkt auf der Maximierung der kumulativen Belohnungen im Laufe der Zeit liegt. Zu den Schlüsselelementen gehören der Agent, die Umgebung, Aktionen, Zustände, Belohnungen und eine Richtlinie (Strategie). 
+
+Innerhalb des Moduls 245 werden die diese Methode nicht angwenden.
 
 ----
 
-===== Grundidee hinter Superviced Learning =====
+===== Superviced Learning im Detail =====
 
+===== Grundidee =====
 Wir haben einen Datensatz aus (x, y)-Paaren:
   * x = Eingabedaten = Features, z.B. Bildpixel, Messwerte, Texteigenschaften
   * y = Zielwert / Label, z.B. „Katze“, „Hund“, Preis, Ja/Nein
 
 Das Modell sucht eine Funktion //y ≈ f(x)// und versucht, moeglichst wenig falsch zu liegen.
 
-===== Typische Aufgaben =====
+**Typische Aufgaben**
 
-**1. Klassifikation**
-  * Ziel: Kategorie vorhersagen
-  * Beispiele:
-    * Spam / Nicht-Spam
-    * Katze / Hund
-    * Kredit genehmigt / abgelehnt
+^ # ^ Klassifikation ^ Merkmal(Feature) ^Ziel (Label) ^
+| 1. | E-Mail-Spam-Erkennung | Anzahl bestimmter Schlagwoerter (z. B. „gratis“, „jetzt kaufen“), Anzahl Links, Laenge der E-Mail, Absender-Domain | Spam / Kein Spam |
+| 2. | Kreditwuerdigkeit von Kunden | Einkommen, Alter, Anzahl bestehender Kredite, Zahlungsverzug in der Vergangenheit | Kredit genehmigt / Kredit abgelehnt |
+| 3. | Handschriftliche Ziffernerkennung | Pixelwerte eines Bildes (z. B. 28×28 Graustufen) | Ziffer 0–9 |
+| 4. | Krankheitsdiagnose (vereinfacht) | Koerpertemperatur, Blutdruck, Laborwerte, Alter | Krank, Gesund |
+| 5. | Kundenabwanderung (Churn Prediction) | Vertragslaufzeit, Monatliche Kosten,  Anzahl Support-Anfragen, Nutzungsintensitaet | Kunde bleibt, Kunde kuendigt |
 
-**Typische Algorithmen:**
-  * Logistic Regression
-  * Decision Trees
-  * Random Forest
-  * Support Vector Machines
-  * Neuronale Netze
 
-===== 2. Regression =====
+===== Wie laeuft das Training ab? =====
 
-  * Ziel: kontinuierlichen Zahlenwert vorhersagen
-  * Beispiele:
-    * Hauspreis
-    * Temperatur morgen
-    * Energieverbrauch
+  - **Daten sammeln**: Mit korrekten Labels (der teuerste Teil)
+  - **Modell initialisieren:** Startet ahnungslos (wie Erstsemester)
+  - **Vorhersage machen**: Modell rät
+  - **Fehler berechnen**: Mean Squared Error(Abweichung von der Vorhersage), Cross-Entropy (Genauigkeit mit der Vorhersage)
+  - **Modell anpassen**: Gewichte korrigieren (Gradient Descent)
+  - **Wiederholen**: Bis Fehler klein genug oder Geduld am Ende
 
-Typische Algorithmen:
-	•	Lineare Regression
-	•	Polynomial Regression
-	•	Regression Trees
-	•	Neuronale Netze
+===== Wichtiges Vokabular im Zusammenhang mit Machine Learning  =====
+  * **Trainingsdaten**: Daraus lernt das Modell
+  * **Testdaten**: Damit prueft man, ob es wirklich gelernt hat
+  * **Overfitting**: Modell lernt auswendig, versteht aber nichts
+  * **Underfitting**: Modell versteht gar nichts
+  * **Generalisation**: Das eigentliche Ziel
 
-⸻
+===== Vor- und Nachteile =====
 
-Wie laeuft das Training ab?
-	1.	Daten sammeln
-	•	Mit korrekten Labels (der teuerste Teil, uebrigens)
-	2.	Modell initialisieren
-	•	Startet ahnungslos (wie Erstsemester)
-	3.	Vorhersage machen
-	•	Modell rät
-	4.	Fehler berechnen
-	•	z.B. Mean Squared Error, Cross-Entropy
-	5.	Modell anpassen
-	•	Gewichte korrigieren (Gradient Descent)
-	6.	Wiederholen
-	•	Bis Fehler klein genug oder Geduld am Ende
+**Vorteile **
+  * Gute Ergebnisse, wenn viele korrekt gelabelte Daten da sind
+  * Relativ gut interpretierbar (je nach Modell)
+  * Industriestandard fuer viele Anwendungen
 
-⸻
+**Nachteile**
+  * Labels sind teuer und fehleranfaellig
+  * Modell kann Bias der Trainingsdaten uebernehmen
+  * Lernt nur das, was man ihm zeigt (keine Magie)
 
-Wichtiges Vokabular (das man kennen sollte)
-	•	Trainingsdaten: Daraus lernt das Modell
-	•	Testdaten: Damit prueft man, ob es wirklich gelernt hat
-	•	Overfitting: Modell lernt auswendig, versteht aber nichts
-	•	Underfitting: Modell versteht gar nichts
-	•	Generalisation: Das eigentliche Ziel
 
-⸻
-
-Vorteile
-	•	Gute Ergebnisse, wenn viele korrekt gelabelte Daten da sind
-	•	Relativ gut interpretierbar (je nach Modell)
-	•	Industriestandard fuer viele Anwendungen
-
-Nachteile
-	•	Labels sind teuer und fehleranfaellig
-	•	Modell kann Bias der Trainingsdaten uebernehmen
-	•	Lernt nur das, was man ihm zeigt (keine Magie)
-
-⸻
-
-Merksatz (schultauglich)
-
-Supervised Learning lernt aus Beispielen mit bekannten Loesungen und versucht, fuer neue Eingaben moeglichst richtige Ausgaben vorherzusagen.
-
-Oder weniger paedagogisch:
-
-Ohne Labels kein Plan.
-
-Wenn du willst, erklaere ich das Ganze auch mit einem konkreten Python-Beispiel, Vergleich zu Unsupervised Learning oder didaktisch fuer den Unterricht aufbereitet.
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir
