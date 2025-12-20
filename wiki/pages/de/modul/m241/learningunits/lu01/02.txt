@@ -1,13 +1,43 @@
-====== LU01a - Moduleinführung ======
+====== LU01b - Benotung & Gewichtung ======
 
 ===== Lernziele =====
-  - Kann erklären was die 5 übergeordneten Lernziele des Moduls 241 sind.
-  - Kann nennen aus welchen Elementen die Modulnote 241 zusammengesetzt wird.
+  - Die Standard-Notenformel zur Berechnung der Prüfungsnote anwendenden können.
+  - Anzahl Leistungsbeurteilungen des Moduls 241 nennen können.
+  - Gewichtungen jeder Leistungsbeurteilungen kennen.
 
-===== Modulidentifikation =====
-  * [[https://www.modulbaukasten.ch/module/241/1/de-DE?title=Innovative-ICT-L%C3%B6sungen-initialisieren | Modulidentifikation: M241]]  
+===== Berechnung der Prüfungsnote =====
+Grundsätzlich wird die Standard-Notenformel zur Berechnung der Prüfungsnote im Modul 241 angewendet
 
+  * Prüfungsnote = (5 * Erreichte Punktezahl / Maximale Punktezahl) + 1
+  * Es wird mathematisch, auf 1 Nachkommastelle gerundet
+  * Beispiel:
+    * In der letzte Prüfung hat Lea hat von 30 Punkten erreichen können. Setzten wird die Werte in die Standardnotenformel ein:
+    * Prüfungsnote von Lea = (5 * 22 Punkte / 30 Punkte) + 1 = 4.666... = __4.7__
 
+===== Berechnung der Modulnote =====
+Jede Prüfung kann unterschiedliche gewichtet werden. Grundsätzlich wird die Modulnote unter Miteinbezug der Gewichtung in die Modulbewertung berechnet. 
+  * Modulnote = LB1 * Gewichtung 1 + LB2 * Gewichtung 2 + LB3 * Gewichtung 3
+  * Die Modulnote wird am Ende auf 0.5 Noten mathematisch gerundet
+  * Beispiel:
+    * Die LB1 wird mit 25%, die LB2 mit 40% und die LB3 mit 35%  gewichtet. 
+    * Lea hat in der LB1 die 4.0, in der LB2 die mit 5.0, und in der LB3 die 5.3 erreichen können.
+    * Leas Modulnote wird daher wie folgt berechnet:  mit In der letzte Prüfung hat Lea hat von 30 Punkten erreichen können. Setzten wird die Werte in die Standardnotenformel ein:
+    * Modulnote von Lea = 0.25 * 4.0 + 0.4 * 5.0 + 0.35 * 5.3 = 1 + 2 + 1.855 = 1.855 = __4.9__ = 
+    * Die **gerundete Modulnote** von Lea ist daher _aufgerundet **5.0**
+
+===== Leistungsbeurteilungen und Gewichtung =====
+
+=== Exams 1 ===
+  * Dauer: 1 Lektionen
+  * Gewichtung: 1/3
+
+=== Exams 2 ===
+  * Dauer: 1 Lektionen
+  * Gewichtung: 1/3
+
+=== Exams 3 ===
+  * Dauer: 3-4 Lektionen + 1 Lektion Präsentationen
+  * Gewichtung: 1/3
 
 ----
 {{tag>M241-LU01}}
