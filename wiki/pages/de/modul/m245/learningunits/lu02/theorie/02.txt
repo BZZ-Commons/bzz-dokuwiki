@@ -1,4 +1,22 @@
-====== LU02a - Types of Machine Learning - TBD ======
+====== LU02a - Typen von Machine Learning - TBD ======
+
+===== Wichtiges Vokabular im Zusammenhang mit Machine Learning  =====
+Bevor wir tiefer in die Materie tauchen, sollten einige Begrifflichkeiten geklärt werden.
+
+**Trainingsdaten**
+Daraus lernt das Modell
+
+**Testdaten**
+Damit prueft man, ob es wirklich gelernt hat
+
+**Overfitting**
+Modell lernt auswendig, versteht aber nichts
+
+**Underfitting**
+Modell versteht gar nichts
+
+**Generalisation**
+Das eigentliche Ziel
 
 ===== Typen von Machine Learning =====
 
@@ -18,6 +36,8 @@ Es funktioniert, indem ein Modell anhand von Beispielen trainiert und seine inte
 
 Innerhalb des Moduls 245 werden wir uns auf diese Methode fokussieren.
 
+{{:de:modul:m245:learningunits:lu02:theorie:machine_learning_grundlagen_-_supervised_learning.mp4|}}
+
 ==== Unsuperviced Machine Learning ====
 //Unsuperviced Learning// ist eine Art des maschinellen Lernens, bei dem **Algorithmen ohne menschliche Anleitung** Muster und Erkenntnisse in unbeschrifteten Daten finden und sich dabei auf die Entdeckung versteckter Strukturen, Gruppierungen (Clustering) oder Beziehungen (Assoziationsregeln) konzentrieren, indem sie Ähnlichkeiten und Unterschiede identifizieren. 
 
@@ -32,28 +52,25 @@ Im Gegensatz zum überwachten Lernen sagt es keine bestimmten Ergebnisse voraus,
   * Marktsegmentierung 
   * Empfehlungssysteme 
 
-----
-[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir
+Innerhalb des Moduls 245 werden die diese Methode **nicht** angwenden.
 
-Innerhalb des Moduls 245 werden die diese Methode nicht angwenden.
+{{:de:modul:m245:learningunits:lu02:theorie:machine_learning_grundlagen_-_unsupervised_learning.mp4|}}
 
 ==== Reinforcement Learning ====
 Reinforcement Learning (RL) ist eine Art des maschinellen Lernens, bei dem ein Agent lernt, optimale Entscheidungen zu treffen, indem er mit einer Umgebung interagiert und für seine Handlungen Belohnungen (positives Feedback) oder Strafen (negatives Feedback) erhält, ähnlich wie beim menschlichen Lernen durch Versuch und Irrtum, um ein Ziel zu erreichen. Es ist eine leistungsstarke Methode für KI, um komplexe Verhaltensweisen wie das Spielen von Spielen oder die Steuerung von Robotern ohne explizite Programmierung zu erlernen, wobei der Schwerpunkt auf der Maximierung der kumulativen Belohnungen im Laufe der Zeit liegt. Zu den Schlüsselelementen gehören der Agent, die Umgebung, Aktionen, Zustände, Belohnungen und eine Richtlinie (Strategie). 
 
 Innerhalb des Moduls 245 werden die diese Methode nicht angwenden.
 
-----
-
 ===== Superviced Learning im Detail =====
 
-===== Grundidee =====
+==== Grundidee ====
 Wir haben einen Datensatz aus (x, y)-Paaren:
   * x = Eingabedaten = Features, z.B. Bildpixel, Messwerte, Texteigenschaften
   * y = Zielwert / Label, z.B. „Katze“, „Hund“, Preis, Ja/Nein
 
 Das Modell sucht eine Funktion //y ≈ f(x)// und versucht, moeglichst wenig falsch zu liegen.
 
-**Typische Aufgaben**
+==== Typische Aufgaben ====
 
 ^ # ^ Klassifikation ^ Merkmal(Feature) ^Ziel (Label) ^
 | 1. | E-Mail-Spam-Erkennung | Anzahl bestimmter Schlagwoerter (z. B. „gratis“, „jetzt kaufen“), Anzahl Links, Laenge der E-Mail, Absender-Domain | Spam / Kein Spam |
@@ -62,35 +79,21 @@ Das Modell sucht eine Funktion //y ≈ f(x)// und versucht, moeglichst wenig fal
 | 4. | Krankheitsdiagnose (vereinfacht) | Koerpertemperatur, Blutdruck, Laborwerte, Alter | Krank, Gesund |
 | 5. | Kundenabwanderung (Churn Prediction) | Vertragslaufzeit, Monatliche Kosten,  Anzahl Support-Anfragen, Nutzungsintensitaet | Kunde bleibt, Kunde kuendigt |
 
+==== Wie läuft das Training ab? ====
 
-===== Wie laeuft das Training ab? =====
+^ Schritt ^ Tätigkeit ^ Kommentar ^
+^ 1. ^ Daten sammeln | Mit korrekten Labels (der teuerste Teil) |
+^ 2. ^ Modell initialisieren | Startet ahnungslos (wie Erstsemester) |
+^ 3. ^ Vorhersage machen | Modell rät |
+^ 4. ^ Fehler berechnen | Mean Squared Error(Abweichung von der Vorhersage), Cross-Entropy (Genauigkeit mit der Vorhersage) |
+^ 5. ^ Modell anpassen | Gewichte korrigieren (Gradient Descent) | 
+^ 6. ^ Wiederholen | Bis Fehler klein genug oder Geduld am Ende |
 
-  - **Daten sammeln**: Mit korrekten Labels (der teuerste Teil)
-  - **Modell initialisieren:** Startet ahnungslos (wie Erstsemester)
-  - **Vorhersage machen**: Modell rät
-  - **Fehler berechnen**: Mean Squared Error(Abweichung von der Vorhersage), Cross-Entropy (Genauigkeit mit der Vorhersage)
-  - **Modell anpassen**: Gewichte korrigieren (Gradient Descent)
-  - **Wiederholen**: Bis Fehler klein genug oder Geduld am Ende
-
-===== Wichtiges Vokabular im Zusammenhang mit Machine Learning  =====
-  * **Trainingsdaten**: Daraus lernt das Modell
-  * **Testdaten**: Damit prueft man, ob es wirklich gelernt hat
-  * **Overfitting**: Modell lernt auswendig, versteht aber nichts
-  * **Underfitting**: Modell versteht gar nichts
-  * **Generalisation**: Das eigentliche Ziel
-
-===== Vor- und Nachteile =====
-
-**Vorteile **
-  * Gute Ergebnisse, wenn viele korrekt gelabelte Daten da sind
-  * Relativ gut interpretierbar (je nach Modell)
-  * Industriestandard fuer viele Anwendungen
-
-**Nachteile**
-  * Labels sind teuer und fehleranfaellig
-  * Modell kann Bias der Trainingsdaten uebernehmen
-  * Lernt nur das, was man ihm zeigt (keine Magie)
-
+==== Vor- und Nachteile ====
+^ <color #22b14c>Vorteile</color> ^ <color #ed1c24>Nachteile</color> ^
+| <color #22b14c>Gute Ergebnisse, wenn viele korrekt gelabelte Daten da sind </color>| <color #ed1c24>Labels sind teuer und fehleranfällig</color> |
+| <color #22b14c>Relativ gut interpretierbar (je nach Modell)</color> | <color #ed1c24>Modell kann Bias der Trainingsdaten uebernehmen</color> |
+| <color #22b14c>Industriestandard fuer viele Anwendungen</color> | <color #ed1c24>Lernt nur das, was man ihm zeigt (keine Magie)</color>|
 
 ----
 [[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir
