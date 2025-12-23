@@ -1,53 +1,60 @@
 ====== LU17 – CRUD mit Express & MySQL ======
 
-===== Learning Objectives =====
-  * Sie können eine **MySQL-Datenbank** aus Ihrem Express-Server heraus ansprechen.
-  * Sie können CRUD-Routen für ''posts'' so erweitern, dass sie mit einer **echten Tabelle ''post''** arbeiten.
+===== Lernziele =====
+  * Sie können Ihre **MySQL-Datenbank** aus einem Express-Server heraus ansprechen.
+  * Sie können die CRUD-Routen aus LU16 (''GET'', ''POST'', ''PUT'', ''DELETE'') so erweitern, dass sie mit einer **echten Tabelle ''post''** arbeiten.
   * Sie setzen einfache **Validierung** ein (Pflichtfelder prüfen).
   * Sie verwenden passende **HTTP-Statuscodes** (200, 201, 400, 404, 500).
   * Sie testen alle Operationen mit **Postman**.
 
+===== Rückblick auf LU16 =====
+In LU16 haben Sie eine API für Social-Media-Posts gebaut – aber noch ohne Datenbank:
 
-===== Ausgangslage =====
+  * Daten waren in einer **JavaScript-Liste ''posts''** gespeichert (In-Memory).
+  * Ihre Routen waren z.B.:
+    * ''GET /api/posts''
+    * ''GET /api/posts/:id''
+    * ''POST /api/posts''
 
-In LU16 haben Sie eine kleine API für Social-Media-Posts gebaut:
+In LU17 ersetzen Sie diese In-Memory-Liste durch eine echte Datenbank:
 
-  * In-Memory-Liste ''posts'' im Code,
-  * Routen wie:
-    - ''GET /posts''
-    - ''GET /posts/:id''
-    - ''POST /posts''
-
-Jetzt machen wir einen wichtigen Schritt in Richtung „echte“ Anwendung:
-
-  * Die Daten kommen nicht mehr aus einer JS-Liste,
-  * sondern aus einer **MySQL-Tabelle ''post''**,
-  * Ihr Express-Server wird zur **Brücke** zwischen Client (Postman/Browser) und Datenbank.
+  * Die Daten kommen aus der **MySQL-Tabelle ''post''**.
+  * Ihr Express-Server ist die **Brücke** zwischen Client (Postman) und Datenbank.
+  * Die gleiche Idee bleibt: **HTTP-Anfrage → Route → Logik/SQL → HTTP-Antwort**.
 
 
-===== Vorbereitung: MySQL-Tabelle ''post'' =====
+===== HTTP-Statuscodes =====
+Wenn Sie mit Postman testen, sehen Sie immer einen Statuscode. Dieser Code ist Ihr „Kurzfazit“, ob der Request geklappt hat.
 
+<WRAP center box round 80%>
+^ Situation ^ Typischer Statuscode ^ Bedeutung ^
+| Erfolgreich Daten gelesen (z.B. GET) | **200** | OK (Daten kommen zurück) |
+| Erfolgreich Datensatz erstellt (POST) | **201** | Created (Neuer Datensatz wurde erstellt) |
+| Erfolgreich aktualisiert (PUT) | **200** | OK (Update hat geklappt) |
+| Erfolgreich gelöscht (DELETE) | **200** | OK (Löschen hat geklappt; Sie können zur Kontrolle z.B. das gelöschte Objekt oder eine Message zurückgeben) |
+| Pflichtfelder fehlen / ungültige Eingabe | **400** | Bad Request (Client hat falsche/fehlende Daten geschickt) |
+| ID existiert nicht | **404** | Not Found (Datensatz wurde nicht gefunden) |
+| Datenbank-/Serverfehler | **500** | Internal Server Error (Problem auf Server/DB-Seite) |
+</WRAP>
+
+===== Vorbereitung: MySQL-Tabelle post =====
 Eine mögliche Tabellenstruktur (vereinfacht):
 
-^ Spalte          ^ Datentyp        ^ Beschreibung                ^
-| ''post_id''     | INT, PK, AI     | Primärschlüssel             |
-| ''user_id''     | INT             | Referenz auf User (FK)      |
-| ''title''       | VARCHAR(255)    | Titel des Posts             |
-| ''image_url''   | VARCHAR(512)    | Bild-URL                    |
-| ''description'' | TEXT            | Beschreibungstext           |
-| ''likes''       | INT             | Anzahl Likes                |
+<WRAP center box round 80%>
+^ Spalte ^ Datentyp ^ Beschreibung ^
+| ''post_id'' | INT, PK, AI | Primärschlüssel |
+| ''user_id'' | INT | Referenz auf User (FK) |
+| ''title'' | VARCHAR(255) | Titel des Posts |
+| ''image_url'' | VARCHAR(512) | Bild-URL |
+| ''description'' | TEXT | Beschreibung |
+| ''likes'' | INT | Anzahl Likes |
+</WRAP>
 
-Diese Tabelle können Sie wie gewohnt mit einem SQL-DDL-Skript anlegen.  
-(Entweder vorgegeben im Unterricht oder von Ihnen selbst erstellt.)
+Diese Tabelle legen Sie mit einem SQL-DDL-Skript an (wie bisher im Modul).  
+Importieren Sie zusätzlich Startdaten (DML), damit Sie direkt testen können.
 
-
-===== MySQL aus Node.js ansprechen =====
-
-Wir verwenden das Paket **''mysql2''** für die Verbindung:
-
-==== 1. Installation von mysql2 ====
-
-Im Projektordner (Terminal in WebStorm):
+===== Schritt 1: mysql2 installieren =====
+Damit Node.js mit MySQL sprechen kann, verwenden wir ''mysql2''.
 
 <WRAP box round center 80%>
 <code bash>
@@ -55,32 +62,25 @@ npm install mysql2
 </code>
 </WRAP>
 
-Dadurch wird die Bibliothek in ''node_modules'' installiert und in ''package.json'' als Abhängigkeit eingetragen.
-
-
-==== 2. Verbindung zur Datenbank herstellen ====
-
-Wir erweitern unseren Server aus LU16 um eine Datenbankverbindung.  
-Alles bleibt weiterhin in einer Datei (z.B. ''index.js''), um es für das Modul einfach zu halten.
+===== Schritt 2: connect.js erstellen (DB-Verbindung auslagern) =====
+Damit ''index.js'' übersichtlich bleibt, erstellen Sie eine eigene Datei ''connect.js''.
+Diese Datei erstellt **eine Verbindung** und exportiert sie, damit Sie sie in Ihren Routes mit ''db.query(...)'' verwenden können.
 
 <WRAP box round center 80%>
 <code javascript>
-import express from 'express';
 import mysql from 'mysql2';
 
-const app = express();
-const port = 3000;
-
-app.use(express.json());
-
-// Verbindung zur MySQL-Datenbank
+// Hinweis: Verwenden Sie hier Ihren AppUser (nicht root).
+// Port 3306 ist der Standard-Port für MySQL auf localhost.
 const db = mysql.createConnection({
   host: 'localhost',
-  database: 'social_media',        // Ihre DB
-  user: 'restrictedUser',          // AppUser, nicht root
-  password: 'SafePassword123'
+  user: 'app_user',
+  password: 'YOUR_PASSWORD_HERE',
+  port: 3306,
+  database: 'social_media',
 });
 
+// connect() öffnet die Verbindung und gibt bei Erfolg/Fehler eine Meldung aus.
 db.connect((err) => {
   if (err) {
     console.error('DB-Verbindung fehlgeschlagen:', err);
@@ -89,64 +89,138 @@ db.connect((err) => {
   console.log('Mit MySQL verbunden');
 });
 
-// Test-Route
+export { db };
+</code>
+</WRAP>
+
+**Was passiert hier?**
+  * ''db'' ist die offene Verbindung und kann in ''index.js'' importiert werden (z.B. ''import { db } from "./connect.js";'').
+  * In der LB03 sollen Sie **nicht** als ''root'' arbeiten → verwenden Sie einen AppUser.
+
+
+===== Schritt 3: index.js vorbereiten (Express + DB verwenden) =====
+Sie bauen auf dem Setup aus LU16 auf:
+
+  * ''app.use(express.json())'' bleibt wichtig (für ''req.body'').
+  * Sie importieren ''db'' aus ''connect.js''. Die Verbindung wird in ''connect.js'' bereits aufgebaut (''db.connect(...)'').
+  * __Löschen__ Sie die Test-Tabelle aus LU16 ''let posts = [{ post_id: 1, ... }];''
+
+
+
+<WRAP box round center 80%>
+<code javascript>
+import express from 'express';
+import { db } from './connect.js';
+
+const app = express();
+const port = 3000;
+
+app.use(express.json());
+
+// Test-Route: schnell prüfen, ob der Server läuft
 app.get('/', (req, res) => {
   res.send('API mit Datenbank ist online');
 });
 
+// Optional: kleine Test-Route für DB (zeigt Serverzeit aus MySQL)
+app.get('/api/db-test', (req, res) => {
+  db.query('SELECT NOW() AS server_time', (err, results) => {
+    if (err) {
+      console.error('DB-Fehler bei /api/db-test:', err);
+      return res.status(500).send('DB-Test fehlgeschlagen');
+    }
+    res.status(200).json(results[0]);
+  });
+});
+
+// Server starten
 app.listen(port, () => {
   console.log(`API läuft auf http://localhost:${port}`);
 });
 </code>
 </WRAP>
 
-Wenn Sie den Server starten (''npm run dev'') und im Terminal  
-**„Mit MySQL verbunden“** sehen, ist die Verbindung erfolgreich.
+**Was passiert hier?**
+  * ''db'' kommt aus ''connect.js'' und ist die MySQL-Verbindung.
+  * Ihre Routen können direkt ''db.query(...)'' verwenden.
+  * Mit ''/api/db-test'' prüfen Sie schnell, ob die DB erreichbar ist (Status ''200'' + JSON), ohne schon CRUD zu programmieren.
 
 
-===== READ – Posts aus der Datenbank holen =====
+**Server starten**
+Nicht alle Lernenden haben ''nodemon'' installiert. Beides ist möglich:
 
-Jetzt ersetzen wir die In-Memory-Liste durch echte SELECT-Abfragen.
+<WRAP box round center 80%>
+<code bash>
+node index.js
+</code>
+</WRAP>
 
-==== 1. Alle Posts – ''GET /posts'' ====
+oder (falls Sie ein dev-Script mit nodemon haben):
+
+<WRAP box round center 80%>
+<code bash>
+npm run dev
+</code>
+</WRAP>
+
+===== CRUD-Routen: posts jetzt mit echter MySQL-Tabelle =====
+Ab hier ersetzen Sie die In-Memory-Liste aus LU16 durch SQL.
+
+<WRAP box round center 80%>
+**Konvention:** Wir bleiben wie in LU16 bei ''/api/posts'' (statt nur ''/posts''), damit Ihre API klar erkennbar ist.
+</WRAP>
+
+==== READ: alle Posts (GET /api/posts) ====
 
 <WRAP box round center 80%>
 <code javascript>
 // READ – alle Posts aus der DB
-app.get('/posts', (req, res) => {
+// Route: GET http://localhost:3000/api/posts
+app.get('/api/posts', (req, res) => {
+
+  // SQL-Abfrage: alle Spalten, die wir zurückgeben möchten
   const sql = `
     SELECT post_id, user_id, title, image_url, description, likes
     FROM post
   `;
 
+  // db.query(...) führt die SQL-Abfrage aus
   db.query(sql, (err, results) => {
+
+    // Falls die DB einen Fehler liefert -> 500
     if (err) {
-      console.error('DB-Fehler bei GET /posts:', err);
+      console.error('DB-Fehler bei GET /api/posts:', err);
       return res.status(500).send('Serverfehler bei der Post-Abfrage');
     }
 
+    // results ist ein Array mit Zeilen (Rows)
     res.status(200).json(results);
   });
 });
 </code>
 </WRAP>
 
-**Test mit Postman**
-
+**Test in Postman**
   * Methode: ''GET''
-  * URL: ''http://localhost:3000/posts''
-  * Erwartung:
-    - Status ''200 OK''
-    - JSON-Array mit allen Zeilen aus der Tabelle ''post''
+  * URL: ''http://localhost:3000/api/posts''
+  * Erwartung: ''200'' + JSON-Liste
 
 
-==== 2. Einzelner Post – ''GET /posts/:id'' ====
+==== READ: einzelner Post (GET /api/posts/:id) ====
 
 <WRAP box round center 80%>
 <code javascript>
 // READ – einzelner Post nach ID aus der DB
-app.get('/posts/:id', (req, res) => {
+// Route: GET http://localhost:3000/api/posts/1
+app.get('/api/posts/:id', (req, res) => {
+
+  // Route-Parameter :id kommt immer als String -> Number(...) macht eine Zahl daraus
   const id = Number(req.params.id);
+
+  // Einfache Validierung: ist id überhaupt eine Zahl?
+  if (Number.isNaN(id)) {
+    return res.status(400).send('Ungültige ID (muss eine Zahl sein)');
+  }
 
   const sql = `
     SELECT post_id, user_id, title, image_url, description, likes
@@ -154,16 +228,20 @@ app.get('/posts/:id', (req, res) => {
     WHERE post_id = ?
   `;
 
+  // Platzhalter ? wird durch id ersetzt -> Schutz vor SQL-Injection
   db.query(sql, [id], (err, results) => {
+
     if (err) {
-      console.error('DB-Fehler bei GET /posts/:id:', err);
+      console.error('DB-Fehler bei GET /api/posts/:id:', err);
       return res.status(500).send('Serverfehler bei der Post-Abfrage');
     }
 
+    // Wenn keine Zeile gefunden -> 404
     if (results.length === 0) {
       return res.status(404).send('Post nicht gefunden');
     }
 
+    // results[0] ist der erste (und hier einzige) Treffer
     res.status(200).json(results[0]);
   });
 });
@@ -171,18 +249,22 @@ app.get('/posts/:id', (req, res) => {
 </WRAP>
 
 
-===== CREATE – Neuen Post in der DB speichern =====
-
-Jetzt bauen wir die ''POST /posts''-Route so um, dass sie **''INSERT''** in die MySQL-Tabelle ausführt.
+==== CREATE: neuen Post erstellen (POST /api/posts) ====
 
 <WRAP box round center 80%>
 <code javascript>
 // CREATE – neuen Post in der DB anlegen
-app.post('/posts', (req, res) => {
-  const { user_id, title, image_url, description } = req.body;
+// Route: POST http://localhost:3000/api/posts
+app.post('/api/posts', (req, res) => {
 
-  // Einfache Validierung der Pflichtfelder
-  if (!user_id || !title) {
+  // Daten kommen aus dem Request-Body (Postman: Body -> raw -> JSON)
+  const user_id = req.body.user_id;
+  const title = req.body.title;
+  const image_url = req.body.image_url;
+  const description = req.body.description; 
+
+  // Validierung: Pflichtfelder
+  if (user_id === undefined || user_id === null || title === undefined || title === null || title === '') {
     return res.status(400).send('Bitte mindestens user_id und title angeben.');
   }
 
@@ -198,13 +280,15 @@ app.post('/posts', (req, res) => {
     description || ''
   ];
 
+  // INSERT ausführen
   db.query(sql, values, (err, result) => {
+
     if (err) {
-      console.error('DB-Fehler bei POST /posts:', err);
+      console.error('DB-Fehler bei POST /api/posts:', err);
       return res.status(500).send('Serverfehler beim Erstellen des Posts');
     }
 
-    // Neu erzeugte ID steht in result.insertId
+    // insertId kommt von MySQL AUTO_INCREMENT
     const newPost = {
       post_id: result.insertId,
       user_id,
@@ -220,12 +304,7 @@ app.post('/posts', (req, res) => {
 </code>
 </WRAP>
 
-**Test mit Postman**
-
-  * Methode: ''POST''
-  * URL: ''http://localhost:3000/posts''
-  * Body (JSON):
-
+**Test-Body (Postman → Body → raw → JSON)**
 <WRAP box round center 80%>
 <code json>
 {
@@ -237,51 +316,38 @@ app.post('/posts', (req, res) => {
 </code>
 </WRAP>
 
-  * Erwartung:
-    - Status ''201 Created''
-    - JSON-Objekt mit neuer ''post_id''
-    - Eintrag ist in der Tabelle ''post'' sichtbar
 
-
-===== UPDATE – Bestehenden Post ändern (PUT /posts/:id) =====
-
-Wir implementieren jetzt ein ''UPDATE'' mit einfacher Validierung.
+==== UPDATE: Post ändern (PUT /api/posts/:id) ====
+Hier übernehmen Sie die Idee aus LU16 (Update) – aber jetzt mit SQL ''UPDATE''.
 
 <WRAP box round center 80%>
 <code javascript>
-// UPDATE – vorhandenen Post aktualisieren
-app.put('/posts/:id', (req, res) => {
+// UPDATE – Post vollständig ersetzen (PUT)
+app.put('/api/posts/:id', (req, res) => {
   const id = Number(req.params.id);
-  const { title, image_url, description, likes } = req.body;
-
-  // Mindestens ein Feld muss geändert werden
-  if (!title && !image_url && !description && likes === undefined) {
-    return res.status(400).send(
-      'Bitte mindestens eines der Felder title, image_url, description oder likes angeben.'
-    );
+  if (Number.isNaN(id)) {
+    return res.status(400).send('Ungültige ID (muss eine Zahl sein)');
   }
 
-  const sql = `
-    UPDATE post
-    SET
-      title = COALESCE(?, title),
-      image_url = COALESCE(?, image_url),
-      description = COALESCE(?, description),
-      likes = COALESCE(?, likes)
-    WHERE post_id = ?
-  `;
+  // Alle Felder werden erwartet
+  const user_id = req.body.user_id;
+  const title = req.body.title;
+  const image_url = req.body.image_url;
+  const description = req.body.description;
+  const likes = req.body.likes;
 
-  const values = [
-    title ?? null,
-    image_url ?? null,
-    description ?? null,
-    likes ?? null,
-    id
-  ];
+  // Validierung: alle Pflichtfelder vorhanden?
+  if (user_id === undefined || title === undefined || image_url === undefined || description === undefined || likes === undefined) {
+    return res.status(400).send('Bitte user_id, title, image_url, description und likes mitsenden (PUT ersetzt alles).');
+  }
+
+  const sql = UPDATE post SET user_id = ?, title = ?, image_url = ?, description = ?, likes = ? WHERE post_id = ? ;
+
+  const values = [user_id, title, image_url, description, likes, id];
 
   db.query(sql, values, (err, result) => {
     if (err) {
-      console.error('DB-Fehler bei PUT /posts/:id:', err);
+      console.error('DB-Fehler bei PUT /api/posts/:id:', err);
       return res.status(500).send('Serverfehler beim Aktualisieren des Posts');
     }
 
@@ -289,34 +355,42 @@ app.put('/posts/:id', (req, res) => {
       return res.status(404).send('Post nicht gefunden');
     }
 
-    res.status(200).send(`Post mit ID ${id} wurde aktualisiert.`);
+    // Update hat geklappt: Status 200 + das "neue" Objekt zurückgeben
+    res.status(200).json({
+      post_id: id,
+      user_id,
+      title,
+      image_url,
+      description,
+      likes
+    });
+
   });
 });
 </code>
 </WRAP>
 
-**Hinweise zur Validierung**
 
-  * Wenn gar keine Felder im Body sind → ''400 Bad Request''
-  * Wenn die ID in der DB nicht existiert → ''404 Not Found''
-  * Bei Datenbankfehler → ''500 Internal Server Error''
-
-
-===== DELETE – Post löschen (DELETE /posts/:id) =====
-
-Zum Schluss implementieren wir ''DELETE'':
+==== DELETE: Post löschen (DELETE /api/posts/:id) ====
 
 <WRAP box round center 80%>
 <code javascript>
 // DELETE – Post löschen
-app.delete('/posts/:id', (req, res) => {
+// Route: DELETE http://localhost:3000/api/posts/1
+app.delete('/api/posts/:id', (req, res) => {
+
   const id = Number(req.params.id);
+
+  if (Number.isNaN(id)) {
+    return res.status(400).send('Ungültige ID (muss eine Zahl sein)');
+  }
 
   const sql = 'DELETE FROM post WHERE post_id = ?';
 
   db.query(sql, [id], (err, result) => {
+
     if (err) {
-      console.error('DB-Fehler bei DELETE /posts/:id:', err);
+      console.error('DB-Fehler bei DELETE /api/posts/:id:', err);
       return res.status(500).send('Serverfehler beim Löschen des Posts');
     }
 
@@ -324,47 +398,30 @@ app.delete('/posts/:id', (req, res) => {
       return res.status(404).send('Post nicht gefunden');
     }
 
-    res.status(200).send(`Post mit ID ${id} wurde gelöscht.`);
+    // Statuscode: 200 + Message
+    res.status(200).json({ message: `Post mit post_id=${id} wurde gelöscht.` });
+
   });
 });
 </code>
 </WRAP>
 
 
-===== Zusammenfassung & Transfer auf Ihr Projekt =====
-
-In dieser Learning Unit haben Sie:
-
-  * Ihren Express-Server mit **MySQL** verbunden (''mysql2''),
-  * **CRUD-Routen** für ''posts'' so erweitert, dass sie auf die echte Tabelle ''post'' zugreifen,
-  * einfache **Validierung** eingebaut (Pflichtfelder, leere Updates),
-  * sinnvolle **HTTP-Statuscodes** verwendet:
-    - ''201'' für erfolgreiches Erstellen,
-    - ''200'' für erfolgreiche Lese-/Update-/Delete-Operationen,
-    - ''400'' bei falschen Eingaben,
-    - ''404'' bei nicht gefundenen Datensätzen,
-    - ''500'' bei Server-/Datenbankfehlern.
-
-**Nächster Schritt für Ihr Modulprojekt:**
-
-  * Erstellen Sie für Ihren eigenen Use Case (Reisen, Filme, Bücher, …) eine entsprechende Tabelle (oder mehrere Tabellen).
-  * Bauen Sie ähnliche Routen:
-    - ''GET /[ressource]'', ''GET /[ressource]/:id''
-    - ''POST /[ressource]''
-    - ''PUT /[ressource]/:id''
-    - ''DELETE /[ressource]/:id''
-  * Testen Sie alles mit **Postman**.
-  * Nutzen Sie diese Struktur als Grundlage für die LB3-Projektarbeit.
+===== Typische Fehlerquellen (aus LU16, jetzt noch wichtiger) =====
+  * ''req.params.id'' ist immer ein String → mit ''Number(...)'' umwandeln (und ''Number.isNaN(...)'' prüfen).
+  * Ohne ''app.use(express.json())'' ist ''req.body'' leer.
+  * SQL immer mit Platzhaltern ''?'' schreiben (Prepared Statements).
+  * Denken Sie bei ''db.query(...)'' immer an die drei Fälle:
+    * Eingaben ok? → sonst ''400''
+    * Datensatz gefunden? → sonst ''404'' (''results.length === 0'' oder ''affectedRows === 0'')
+    * DB-Fehler? → ''500''
 
 
-==== Vocabulary ====
-^ English          ^ Deutsch                          ^
-| query            | Abfrage (SQL)                   |
-| result set       | Resultatmenge (Abfrage-Ergebnis)|
-| to insert        | einfügen                        |
-| to update        | aktualisieren                   |
-| to delete        | löschen                         |
-| error handling   | Fehlerbehandlung                |
-| validation       | Validierung / Eingabeprüfung    |
+===== Transfer auf Ihr Projekt (LB03) =====
+Für Ihr Projekt ersetzen Sie ''post'' durch Ihre eigenen Tabellen (z.B. ''serie'', ''actor'', ''serie_actor''):
 
-
+  * Ressourcen-Route: z.B. ''/api/serien''
+  * CRUD: ''GET'', ''POST'', ''PUT'', ''DELETE''
+  * Zusätzlich:
+    * mindestens **eine JOIN-Route** (z.B. Serien inkl. Schauspieler:innen)
+    * mindestens **eine Aggregat-Route** (z.B. Durchschnittsbewertung pro Genre)
