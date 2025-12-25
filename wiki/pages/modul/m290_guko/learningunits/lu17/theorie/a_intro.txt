@@ -23,6 +23,8 @@ In LU17 ersetzen Sie diese In-Memory-Liste durch eine echte Datenbank:
   * Die gleiche Idee bleibt: **HTTP-Anfrage → Route → Logik/SQL → HTTP-Antwort**.
 
 
+{{:modul:m290_guko:learningunits:lu16:theorie:client_server_http_req_response_kitchen.png?direct&900|}}
+
 ===== HTTP-Statuscodes =====
 Wenn Sie mit Postman testen, sehen Sie immer einen Statuscode. Dieser Code ist Ihr „Kurzfazit“, ob der Request geklappt hat.
 
@@ -42,7 +44,7 @@ Eine mögliche Tabellenstruktur (vereinfacht):
 
 <WRAP center box round 80%>
 ^ Spalte ^ Datentyp ^ Beschreibung ^
-| ''post_id'' | INT, PK, AI | Primärschlüssel |
+| ''post_id'' | INT, PRIMARY KEY, AUTO_INCREMENT | Primärschlüssel |
 | ''user_id'' | INT | Referenz auf User (FK) |
 | ''title'' | VARCHAR(255) | Titel des Posts |
 | ''image_url'' | VARCHAR(512) | Bild-URL |
