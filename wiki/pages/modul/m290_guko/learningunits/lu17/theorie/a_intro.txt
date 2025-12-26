@@ -28,6 +28,8 @@ In LU17 ersetzen Sie diese In-Memory-Liste durch eine echte Datenbank:
 ===== HTTP-Statuscodes =====
 Wenn Sie mit Postman testen, sehen Sie immer einen Statuscode. Dieser Code ist Ihr „Kurzfazit“, ob der Request geklappt hat.
 
+{{ :modul:m290_guko:learningunits:lu17:theorie:http_statuscodes.png?direct&1100 | HTTP-Statuscodes }}
+
 <WRAP center box round 80%>
 ^ Situation ^ Typischer Statuscode ^ Bedeutung ^
 | Erfolgreich Daten gelesen (z.B. GET) | **200** | OK (Daten kommen zurück) |
