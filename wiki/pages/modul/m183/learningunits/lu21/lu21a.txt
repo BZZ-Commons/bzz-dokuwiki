@@ -1,0 +1,48 @@
+====== LU21a - Begriff "Webanwendung" ======
+
+Was ist unter einer „Webanwendung" konkret zu verstehen ist.
+Eine Webanwendung muss dabei keinesfalls über das Web erreichbar sein, wie der Name
+suggerieren mag. Webanwendungen werden heutzutage im großen Maße auch innerhalb
+von Unternehmen eingesetzt, etwa für die Abbildung des Intranets. Entscheidend dafür,
+dass wir eine Anwendung als Webanwendung bezeichnen, ist einzig der technologische
+Aspekt, nämlich der Einsatz von Webtechnologien. Als Grundlage soll daher die folgende,
+recht einfache Definition dienen:
+
+<color #22b14c>Definition **Webanwendung**: \\
+Eine Webanwendung ist eine Client-Server-Anwendung, die auf
+Webtechnologien (zum Beispiel HTTP, HTML, CSS, JavaScript, PHP) aufsetzt.</color>
+
+
+{{:modul:m183:learningunits:lu21:01-3.png?600|Abbildung Abb. 1: Webanwendung mit 3-Tier-Architektur}}
+
+Eine Webanwendung wird dabei meistens über einen Webbrowser (kurz Browser) aufgerufen,
+in dem der (serverseitig) generierte HTML-, JavaScript- und CSS-Code ausgewertet
+(//parsen//) und dargestellt wird. Da wir neben einem Browser auch auf andere Weise auf
+eine Webanwendung zugreifen können (z. B. mit einem Testtool von der Kommandozeile
+aus), wird oftmals allgemeiner von einem //User Agent// gesprochen. Zur Kommunikation
+zwischen Browser (also User Agent) und Server dient dabei vor allem das //HTTP-Protokoll//.
+Serverseitig werden Webanwendungen auf Web- und Applikationsservern ausgeführt,
+die dann wiederum in der Regel auf Hintergrundsysteme, z. B. eine Datenbank, zugreifen.
+\\
+\\
+Daraus ergibt sich eine sogenannte //3-Tier-Architektur// (dreischichtige Architektur), die in
+Abbildung Abb. 1 dargestellt ist. Zur Veranschaulichung wurden dabei exemplarische
+Technologien den jeweiligen Schichten zugeordnet.
+Für die Darstellung einer modernen Enterprise-Webanwendung reicht eine solche
+3-Tier-Architektur allerdings kaum mehr aus. Stattdessen finden wir dort in der Regel
+deutlich mehr als drei Schichten vor. So wird häufig nicht nur ein, sondern gleich eine
+ganze Vielzahl von Hintergrundsystemen (Datenbanken und ERP-Systeme wie etwa SAP-Systeme) angebunden,
+wozu wiederum unterschiedliche Technologien (allen voran XML-basierte Webservices)
+verwendet werden. Der serverseitige Code wird dabei auf Anwendungsservern (z.B.
+WebSphere) ausgeführt. Vorab übernimmt ein separater Webserver (z. B. Apache) die
+eigentliche HTTP-Kommunikation.
+\\
+\\
+Auch auf der Clientseite hat sich in den vergangenen Jahren einiges getan. Neben dem
+klassischen Webbrowser werden Webanwendungen auch von Smartphones und Tablets
+aufgerufen. Selbst native Apps, die nicht in JavaScript und HTML, sondern in Objective-C (iOS) oder Java (Android) geschrieben sind, greifen vielfach auf externe Schnittstellen
+von Webanwendungen zu und arbeiten damit als Webclients. Neben HTTP kommen
+weitere Protokolle und Datenaustauschformate (z.B. JSON, XML-RPC) sowie zukünftig auch WebSockets zum Einsatz.
+
+----  
+<sup>Quelle: Sicherheit von Webanwendungen in der Praxis: Wie sich Unternehmen schützen können – Hintergründe, Maßnahmen, Prüfverfahren und Prozesse (c) Matthias Rohr</sup>
