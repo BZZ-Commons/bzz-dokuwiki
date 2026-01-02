@@ -41,12 +41,22 @@ Wenn Sie mit Postman testen, sehen Sie immer einen Statuscode. Dieser Code ist I
 | Datenbank-/Serverfehler | **500** | Internal Server Error (Problem auf Server/DB-Seite) |
 </WRAP>
 
-===== Vorbereitung: MySQL-Tabelle post =====
-Eine mögliche Tabellenstruktur (vereinfacht):
+===== Vorbereitung: MySQL-Datenbank "social_media" =====
+Für die Verbindung mit MySQL benötigen wir eine bestehende Datenbank. Wir arbeiten mit der Datenbank "social_media", welche die Tabellen users und posts beinhaltet.
+
+<WRAP center round download 60%>
+Laden Sie hier den SQL-Dump herunter und lassen Sie das Skript in Webstorm laufen via //Run SQL Script...// (eine Anleitung, wie das prinzipiell geht finden Sie in LU09).
+{{ :modul:m290_guko:learningunits:lu17:theorie:social_media_db-dump.sql.zip |SQL-Dump einer fiktiven Social-Media-Datenbank}}
+</WRAP>
+
+Das ERD der Datenbank sieht so aus:
+{{ :modul:m290_guko:learningunits:lu17:theorie:social_media_crowsfoot_ids_updated.drawio.png?direct&900 | Crow's Foot Diagramm Social Media DB}}
+
+Eine mögliche Tabellenstruktur für die Tabelle "posts":
 
 <WRAP center box round 80%>
 ^ Spalte ^ Datentyp ^ Beschreibung ^
-| ''post_id'' | INT, PRIMARY KEY, AUTO_INCREMENT | Primärschlüssel |
+| ''id'' | INT, PRIMARY KEY, AUTO_INCREMENT | Primärschlüssel |
 | ''user_id'' | INT | Referenz auf User (FK) |
 | ''title'' | VARCHAR(255) | Titel des Posts |
 | ''image_url'' | VARCHAR(512) | Bild-URL |
@@ -54,8 +64,9 @@ Eine mögliche Tabellenstruktur (vereinfacht):
 | ''likes'' | INT | Anzahl Likes |
 </WRAP>
 
-Diese Tabelle legen Sie mit einem SQL-DDL-Skript an (wie bisher im Modul).  
-Importieren Sie zusätzlich Startdaten (DML), damit Sie direkt testen können.
+<WRAP center round important 60%>
+Achtung: Die Primär-Spalte heisst neu ''id'' und nicht mehr ''post_id'' wie in LU16.
+</WRAP>
 
 ===== Schritt 1: mysql2 installieren =====
 Damit Node.js mit MySQL sprechen kann, verwenden wir ''mysql2''.
@@ -184,8 +195,8 @@ app.get('/api/posts', (req, res) => {
 
   // SQL-Abfrage: alle Spalten, die wir zurückgeben möchten
   const sql = `
-    SELECT post_id, user_id, title, image_url, description, likes
-    FROM post
+    SELECT id, user_id, title, image_url, description, likes
+    FROM posts
   `;
 
   // db.query(...) führt die SQL-Abfrage aus
@@ -227,9 +238,9 @@ app.get('/api/posts/:id', (req, res) => {
   }
 
   const sql = `
-    SELECT post_id, user_id, title, image_url, description, likes
-    FROM post
-    WHERE post_id = ?
+    SELECT id, user_id, title, image_url, description, likes
+    FROM posts
+    WHERE id = ?
   `;
 
   // Platzhalter ? wird durch id ersetzt -> Schutz vor SQL-Injection
@@ -273,7 +284,7 @@ app.post('/api/posts', (req, res) => {
   }
 
   const sql = `
-    INSERT INTO post (user_id, title, image_url, description, likes)
+    INSERT INTO posts (user_id, title, image_url, description, likes)
     VALUES (?, ?, ?, ?, 0)
   `;
 
@@ -294,7 +305,7 @@ app.post('/api/posts', (req, res) => {
 
     // insertId kommt von MySQL AUTO_INCREMENT
     const newPost = {
-      post_id: result.insertId,
+      id: result.insertId,
       user_id,
       title,
       image_url: image_url || '',
@@ -345,7 +356,7 @@ app.put('/api/posts/:id', (req, res) => {
     return res.status(400).send('Bitte user_id, title, image_url, description und likes mitsenden (PUT ersetzt alles).');
   }
 
-  const sql = UPDATE post SET user_id = ?, title = ?, image_url = ?, description = ?, likes = ? WHERE post_id = ? ;
+  const sql = UPDATE posts SET user_id = ?, title = ?, image_url = ?, description = ?, likes = ? WHERE id = ? ;
 
   const values = [user_id, title, image_url, description, likes, id];
 
@@ -361,7 +372,7 @@ app.put('/api/posts/:id', (req, res) => {
 
     // Update hat geklappt: Status 200 + das "neue" Objekt zurückgeben
     res.status(200).json({
-      post_id: id,
+      id: id,
       user_id,
       title,
       image_url,
@@ -389,7 +400,7 @@ app.delete('/api/posts/:id', (req, res) => {
     return res.status(400).send('Ungültige ID (muss eine Zahl sein)');
   }
 
-  const sql = 'DELETE FROM post WHERE post_id = ?';
+  const sql = 'DELETE FROM posts WHERE id = ?';
 
   db.query(sql, [id], (err, result) => {
 
@@ -403,7 +414,7 @@ app.delete('/api/posts/:id', (req, res) => {
     }
 
     // Statuscode: 200 + Message
-    res.status(200).json({ message: `Post mit post_id=${id} wurde gelöscht.` });
+    res.status(200).json({ message: `Post mit id=${id} wurde gelöscht.` });
 
   });
 });
