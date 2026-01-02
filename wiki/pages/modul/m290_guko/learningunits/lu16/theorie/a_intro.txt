@@ -2,7 +2,7 @@
 
 ===== Lernziele =====
 
-  * Sie können erklären, wie eine **HTTP-Anfrage** und eine **HTTP-Antwort** funktionieren. ((HTTP = „Hypertext Transfer Protocol“: ein Regelwerk, wie Clients und Server Daten austauschen.))
+  * Sie können erklären, wie eine **HTTP-Anfrage** und eine **HTTP-Antwort** funktionieren.((HTTP = „Hypertext Transfer Protocol“: ein Regelwerk, wie Clients und Server Daten austauschen.))
   * Sie können die vier wichtigsten HTTP-Methoden **GET, POST, PUT, DELETE** den CRUD-Operationen zuordnen.
   * Sie verstehen, was eine **API** und was eine **Route** in Express ist.
   * Sie können mit **Postman** einfache Requests an Ihren Express-Server schicken.
@@ -22,10 +22,10 @@ Bisher im Modul M290:
 {{:modul:m290_guko:learningunits:lu16:theorie:crud.png?direct&600|}}
 
 Jetzt übertragen wir diese Idee auf das **Web**:
-Statt direkt SQL zu tippen, schicken wir **HTTP-Anfragen** an einen **Backend-Server** ((Backend-Server = Programm, das Anfragen entgegennimmt und Antworten zurückschickt; oft mit Datenbank-Logik dahinter.)) – bei uns: **Express (Node.js)**.
+Statt direkt SQL zu tippen, schicken wir **HTTP-Anfragen** an einen **Backend-Server**((Backend-Server = Programm, das Anfragen entgegennimmt und Antworten zurückschickt; oft mit Datenbank-Logik dahinter.)) – bei uns: **Express (Node.js)**.
 Der Server führt für uns die passenden CRUD-Operationen aus und sendet eine Antwort zurück.
 
-Wir bauen zuerst eine **API für Social-Media-Posts**, noch ohne Datenbank – nur mit Daten in einem Javascript-Objekt.
+Wir bauen zuerst eine **API für Social-Media-Posts**, noch ohne Datenbank – nur mit Daten in einem Javascript-Array.
 So können wir **HTTP, Routen und Postman** kennenlernen, bevor wir in in der nächsten Unterrichtseinheit MySQL an Express anbinden.
 
 <WRAP center round tip 70%>
@@ -36,16 +36,16 @@ Schauen Sie sich das Video zum Unterricht an – Einführung in APIs und Umsetzu
 
 Stellen Sie sich das so vor:
 
-  * **Client** (Browser oder Postman) = Gast im Restaurant ((Client = Programm, das eine Anfrage sendet.))
-  * **Server** (Express/Node.js) = Küche ((Server = Programm, das Anfragen empfängt und Antworten liefert.))
+  * **Client** (Browser oder Postman) = Gast im Restaurant((Client = Programm, das eine Anfrage sendet.))
+  * **Server** (Express/Node.js) = Küche((Server = Programm, das Anfragen empfängt und Antworten liefert.))
   * **HTTP-Anfrage** = Bestellung, die der Kellner/die Kellnerin zur Küche bringt
   * **HTTP-Antwort** = fertiges Gericht, das der Kellner zurückbringt
 
 Jede HTTP-Anfrage hat unter anderem:
 
   * eine **Methode** (z.B. ''GET'', ''POST'', ''PUT'', ''DELETE''),
-  * einen **Pfad**((Pfad = der Teil der URL nach Domain/Port, z.B. ''/food/1''.)) (z.B. ''/api/posts'', ''/api/food/1''),
-  * optional einen **Body**((Body = „Datenkörper“ der Anfrage, z.B. ein JSON-Objekt.)) (z.B. JSON bei ''POST''/''PUT'')
+  * einen **Pfad**((Pfad = der Teil der URL nach Domain/Port, z.B. ''/api/posts'', ''/api/food/1'')),
+  * optional einen **Body**((Body = „Datenkörper“ der Anfrage, z.B. ein JSON-Objekt bei ''POST''/''PUT''))
 
 Der Server reagiert auf eine Anfrage, indem er:
 
@@ -226,7 +226,7 @@ Wir möchten einen einzelnen Post anhand der ''post_id'' abfragen.
 <WRAP box round center 80%> <code javascript>
 // READ – einzelner Post nach ID
 app.get('/api/posts/:id', (req, res) => {
-  const id = Number(req.params.id);     // Pfad-Parameter (Route-Parameter) holen
+  const id = Number(req.params.id);     // Pfad-Parameter (Route-Parameter) holen. :id kommt immer als String -> Number(...) macht eine Zahl daraus
   const post = posts.find(p => p.post_id === id);
 
 if (!post) {
@@ -261,13 +261,13 @@ Dazu schicken wir einen im Request einen "Body" mit den notwendigen Daten mit (i
 <code javascript>
 app.post('/api/posts', (req, res) => {
 //Daten aus dem Anfrage-Objekt (Request) holen und in Variablen speichern
-const userId = req.body.user_id;
+const user_id = req.body.user_id;
 const title = req.body.title;
-const imageUrl = req.body.image_url;
+const image_url = req.body.image_url;
 const description = req.body.description;
 
 // ganz einfache Validierung (Pflichtfelder) - ohne titel oder user_id (wer post erstellt hat) können wir keinen neuen Post erstellen.
-if (!title || !userId) {
+if (!title || !user_id) {
     return res.status(400).send('Please enter a title and a user_id');
 }
 
@@ -278,9 +278,9 @@ const newPostId = lastPostId + 1;
 
 const newPost = {
     post_id: newPostId,
-    user_id: userId,
+    user_id: user_id,
     title: title,
-    image_url: imageUrl || '',
+    image_url: image_url || '',
     description: description || '',
     likes: 0
 };

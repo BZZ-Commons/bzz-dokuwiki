@@ -49,40 +49,32 @@ app.put('/api/posts/:id', (req, res) => {
     return res.status(404).send('Post nicht gefunden');
   }
 
-  // Neue Werte aus dem Body lesen
-  const userId = req.body.user_id;
+  // Alle Felder werden erwartet (PUT ersetzt alles)
+  const user_id = req.body.user_id;
   const title = req.body.title;
-  const imageUrl = req.body.image_url;
+  const image_url = req.body.image_url;
   const description = req.body.description;
   const likes = req.body.likes;
 
-  // Validierung: mindestens ein Feld muss vorhanden sein
+  // Validierung: sind wirklich alle Felder vorhanden?
+  // likes kann 0 sein -> deshalb auf undefined prüfen
   if (
-    userId === undefined &&
-    title === undefined &&
-    imageUrl === undefined &&
-    description === undefined &&
+    user_id === undefined ||
+    title === undefined ||
+    image_url === undefined ||
+    description === undefined ||
     likes === undefined
   ) {
-    return res.status(400).send('Bitte mindestens ein Feld zum Aktualisieren mitsenden.');
+    return res.status(400).send('Bitte user_id, title, image_url, description und likes mitsenden (PUT ersetzt alles).');
   }
 
-  // Update nur für Felder, die wirklich geschickt wurden
-  if (userId !== undefined) {
-    post.user_id = userId;
-  }
-  if (title !== undefined) {
-    post.title = title;
-  }
-  if (imageUrl !== undefined) {
-    post.image_url = imageUrl;
-  }
-  if (description !== undefined) {
-    post.description = description;
-  }
-  if (likes !== undefined) {
-    post.likes = likes;
-  }
+  // Post überschreiben
+  post.user_id = user_id;
+  post.title = title;
+  post.image_url = image_url;
+  post.description = description;
+  post.likes = likes;
+
 
   // Antwort: 200 OK + aktualisiertes Objekt
   res.status(200).json(post);

@@ -2,7 +2,7 @@
 
 ===== Lernziele =====
   * Sie können Ihre **MySQL-Datenbank** aus einem Express-Server heraus ansprechen.
-  * Sie können die CRUD-Routen aus LU16 (''GET'', ''POST'', ''PUT'', ''DELETE'') so erweitern, dass sie mit einer **echten Tabelle ''post''** arbeiten.
+  * Sie können die CRUD-Routen aus LU16 (''GET'', ''POST'', ''PUT'', ''DELETE'') so erweitern, dass sie mit einer **echten Tabelle ''posts''** arbeiten.
   * Sie setzen einfache **Validierung** ein (Pflichtfelder prüfen).
   * Sie verwenden passende **HTTP-Statuscodes** (200, 201, 400, 404, 500).
   * Sie testen alle Operationen mit **Postman**.
@@ -18,7 +18,7 @@ In LU16 haben Sie eine API für Social-Media-Posts gebaut – aber noch ohne Dat
 
 In LU17 ersetzen Sie diese In-Memory-Liste durch eine echte Datenbank:
 
-  * Die Daten kommen aus der **MySQL-Tabelle ''post''**.
+  * Die Daten kommen aus der **MySQL-Tabelle ''posts''**.
   * Ihr Express-Server ist die **Brücke** zwischen Client (Postman) und Datenbank.
   * Die gleiche Idee bleibt: **HTTP-Anfrage → Route → Logik/SQL → HTTP-Antwort**.
 
@@ -215,7 +215,7 @@ app.get('/api/posts', (req, res) => {
 </code>
 </WRAP>
 
-**Test in Postman**
+=== Test in Postman ===
   * Methode: ''GET''
   * URL: ''http://localhost:3000/api/posts''
   * Erwartung: ''200'' + JSON-Liste
@@ -306,8 +306,8 @@ app.post('/api/posts', (req, res) => {
     // insertId kommt von MySQL AUTO_INCREMENT
     const newPost = {
       id: result.insertId,
-      user_id,
-      title,
+      user_id: user_id,
+      title: title,
       image_url: image_url || '',
       description: description || '',
       likes: 0
@@ -318,6 +318,8 @@ app.post('/api/posts', (req, res) => {
 });
 </code>
 </WRAP>
+
+=== Test in Postman ===
 
 **Test-Body (Postman → Body → raw → JSON)**
 <WRAP box round center 80%>
@@ -333,33 +335,47 @@ app.post('/api/posts', (req, res) => {
 
 
 ==== UPDATE: Post ändern (PUT /api/posts/:id) ====
-Hier übernehmen Sie die Idee aus LU16 (Update) – aber jetzt mit SQL ''UPDATE''.
+
+In LU16b haben Sie einen Post so aktualisiert: Nur die Felder, die im Body wirklich mitgeschickt werden, werden geändert.
+Genau diese Logik übernehmen wir jetzt – der Unterschied ist nur: statt im Array ändern wir jetzt die MySQL-Tabelle ''posts''.
+
 
 <WRAP box round center 80%>
 <code javascript>
 // UPDATE – Post vollständig ersetzen (PUT)
+// Route: PUT http://localhost:3000/api/posts/1
 app.put('/api/posts/:id', (req, res) => {
+
   const id = Number(req.params.id);
+
   if (Number.isNaN(id)) {
     return res.status(400).send('Ungültige ID (muss eine Zahl sein)');
   }
 
-  // Alle Felder werden erwartet
+  // Alle Felder werden erwartet (PUT ersetzt alles)
   const user_id = req.body.user_id;
   const title = req.body.title;
   const image_url = req.body.image_url;
   const description = req.body.description;
   const likes = req.body.likes;
 
-  // Validierung: alle Pflichtfelder vorhanden?
-  if (user_id === undefined || title === undefined || image_url === undefined || description === undefined || likes === undefined) {
+  // Validierung: fehlen Felder?
+  // likes kann 0 sein -> deshalb auf undefined prüfen
+  if (
+    user_id === undefined ||
+    title === undefined ||
+    image_url === undefined ||
+    description === undefined ||
+    likes === undefined
+  ) {
     return res.status(400).send('Bitte user_id, title, image_url, description und likes mitsenden (PUT ersetzt alles).');
   }
 
   const sql = `
-     UPDATE posts
-     SET user_id = ?, title = ?, image_url = ?, description = ?, likes = ?
-     WHERE id = ?`;
+    UPDATE posts
+    SET user_id = ?, title = ?, image_url = ?, description = ?, likes = ?
+    WHERE id = ?
+  `;
 
   const values = [user_id, title, image_url, description, likes, id];
 
@@ -373,28 +389,44 @@ app.put('/api/posts/:id', (req, res) => {
       return res.status(404).send('Post nicht gefunden');
     }
 
-    // Update hat geklappt: Status 200 + das "neue" Objekt zurückgeben
+    // 200 OK + das "neue" Objekt zurückgeben
     res.status(200).json({
       id: id,
-      user_id,
-      title,
-      image_url,
-      description,
-      likes
+      user_id: user_id,
+      title: title,
+      image_url: image_url,
+      description: description,
+      likes: likes
     });
-
   });
 });
 </code>
 </WRAP>
 
+=== Test in Postman ===
+
+**Test-Body**
+<WRAP box round center 80%>
+<code json>
+{
+  "user_id": 1,
+  "title": "Titel (replaced)",
+  "image_url": "https://example.com/new.jpg",
+  "description": "Dieser Post wurde komplett ersetzt.",
+  "likes": 5
+}
+</code>
+</WRAP>
+
+Erwartung:
+  * Status ''200 OK''
+  * JSON-Objekt des aktualisierten Posts (inkl. neuem ''title'' und ''likes'')
+
 
 ==== DELETE: Post löschen (DELETE /api/posts/:id) ====
-
 <WRAP box round center 80%>
 <code javascript>
 // DELETE – Post löschen
-// Route: DELETE http://localhost:3000/api/posts/1
 app.delete('/api/posts/:id', (req, res) => {
 
   const id = Number(req.params.id);
@@ -406,7 +438,6 @@ app.delete('/api/posts/:id', (req, res) => {
   const sql = 'DELETE FROM posts WHERE id = ?';
 
   db.query(sql, [id], (err, result) => {
-
     if (err) {
       console.error('DB-Fehler bei DELETE /api/posts/:id:', err);
       return res.status(500).send('Serverfehler beim Löschen des Posts');
@@ -416,13 +447,23 @@ app.delete('/api/posts/:id', (req, res) => {
       return res.status(404).send('Post nicht gefunden');
     }
 
-    // Statuscode: 200 + Message
+    // Antwort: 200 + Message
     res.status(200).json({ message: `Post mit id=${id} wurde gelöscht.` });
 
   });
 });
 </code>
 </WRAP>
+
+=== Test mit Postman ===
+
+  * Methode: ''DELETE''
+  * URL: ''http://localhost:3000/api/posts/1''
+
+Erwartung:
+  * Status ''200 OK''
+  * JSON-Objekt des gelöschten Posts
+  * Danach ''GET /api/posts/1'' → ''404 Not Found''
 
 
 ===== Typische Fehlerquellen (aus LU16, jetzt noch wichtiger) =====
@@ -436,7 +477,7 @@ app.delete('/api/posts/:id', (req, res) => {
 
 
 ===== Transfer auf Ihr Projekt (LB03) =====
-Für Ihr Projekt ersetzen Sie ''post'' durch Ihre eigenen Tabellen (z.B. ''serie'', ''actor'', ''serie_actor''):
+Für Ihr Projekt ersetzen Sie ''posts'' durch Ihre eigenen Tabellen (z.B. ''serie'', ''actor'', ''serie_actor''):
 
   * Ressourcen-Route: z.B. ''/api/serien''
   * CRUD: ''GET'', ''POST'', ''PUT'', ''DELETE''
