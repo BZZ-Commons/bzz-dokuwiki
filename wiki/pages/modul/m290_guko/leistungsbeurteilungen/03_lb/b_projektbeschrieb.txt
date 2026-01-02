@@ -38,7 +38,7 @@ Zielpublikum des Tutorials sind Ihre Mit-Auszubildenden aus dem 2. Lehrjahr, die
 **Mindestanforderungen (MUSS)**
   * Backend läuft (Start über ''npm run dev'' oder ''npm start'' oder ''node index.js'')
   * Mindestens **2 Tabellen** in MySQL (mit PK/FK)
-  * Mindestens **eine API-Ressource** (z.B. ''/api/serien'')
+  * Mindestens **zwei API-Ressourcen** (z.B. ''/api/serien'', ''/api/serien/:id'')
   * **CRUD** vollständig über REST nachweisbar: ''GET'', ''POST'', ''PUT'', ''DELETE''
   * Mindestens **eine JOIN-Route** (Daten aus 2 Tabellen)
   * Mindestens **eine Aggregat-Route** (COUNT/AVG/SUM/MIN/MAX mit GROUP BY)
@@ -113,11 +113,11 @@ Im ZIP-File müssen enthalten sein:
 | **4. Startdaten (DML)** | **6** | Mehrere realistische Datensätze, gut testbar | Wenige/teilweise unpassende Daten | Keine Startdaten |
 | **5. AppUser & Rechte (DCL, Least Privilege)** | **6** | AppUser funktioniert, Rechte minimal sinnvoll, keine ''root''-Nutzung | AppUser vorhanden, aber Rechte unklar/zu breit | Kein AppUser / root verwendet |
 | **6. API Design & Struktur** | **8** | Konsistente Pfade (''/api/...''), sinnvolle Ressourcen, ''/:id'' korrekt | Routen vorhanden, aber inkonsistent/unsauber | Unklar/chaotisch |
-| **7. CRUD über Backend → MySQL** | **15** | ''GET/POST/PUT/DELETE'' funktionieren, DB ändert sich sichtbar, SQL sauber | CRUD teilweise fehlerhaft/unvollständig | CRUD nicht nachweisbar |
+| **7. CRUD über Backend → MySQL** | **10** | ''GET/POST/PUT/DELETE'' funktionieren, DB ändert sich sichtbar, SQL sauber | CRUD teilweise fehlerhaft/unvollständig | CRUD nicht nachweisbar |
 | **8. JOIN-Route** | **6** | Mindestens eine Route mit JOIN, Ergebnis sinnvoll | JOIN vorhanden, aber Ergebnis unklar/falsch | Kein JOIN |
 | **9. Aggregat-Route (GROUP BY)** | **6** | Mindestens eine Aggregat-Route korrekt (COUNT/AVG/SUM etc.) | Aggregat vorhanden, aber unklar/falsch | Kein Aggregat |
 | **10. Validierung, Fehlerbehandlung, HTTP-Statuscodes** | **8** | 400/404/500 sinnvoll, Pflichtfelder geprüft, verständliche Fehlermeldungen | Teilweise vorhanden, teils falsche Codes | Keine Validierung/Fehlerhandling |
-| **11. Video-Tutorial (Screencast) & Verständnisnachweis** | **15** | Struktur klar, beide erklären aktiv, Demo mit Postman + DB sichtbar, reflektiert | Video vorhanden, aber unklar/zu kurz/Teamanteil ungleich | Kein Video / Verständnis nicht nachweisbar |
+| **11. Video-Tutorial (Screencast) & Verständnisnachweis** | **20** | Struktur klar, beide erklären aktiv, Demo mit Postman + DB sichtbar, reflektiert | Video vorhanden, aber unklar/zu kurz/Teamanteil ungleich | Kein Video / Verständnis nicht nachweisbar |
 
 <WRAP box round center 80%>
 **Eigenleistung / Verständnis**
