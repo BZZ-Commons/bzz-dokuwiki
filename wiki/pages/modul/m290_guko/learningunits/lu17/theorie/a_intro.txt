@@ -356,7 +356,10 @@ app.put('/api/posts/:id', (req, res) => {
     return res.status(400).send('Bitte user_id, title, image_url, description und likes mitsenden (PUT ersetzt alles).');
   }
 
-  const sql = UPDATE posts SET user_id = ?, title = ?, image_url = ?, description = ?, likes = ? WHERE id = ? ;
+  const sql = `
+     UPDATE posts
+     SET user_id = ?, title = ?, image_url = ?, description = ?, likes = ?
+     WHERE id = ?`;
 
   const values = [user_id, title, image_url, description, likes, id];
 
