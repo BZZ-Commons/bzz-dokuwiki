@@ -38,10 +38,9 @@ Zielpublikum des Tutorials sind Ihre Mit-Auszubildenden aus dem 2. Lehrjahr, die
 **Mindestanforderungen (MUSS)**
   * Backend läuft (Start über ''npm run dev'' oder ''npm start'' oder ''node index.js'')
   * Mindestens **2 Tabellen** in MySQL (mit PK/FK)
-  * Mindestens **zwei API-Ressourcen** (z.B. ''/api/serien'', ''/api/serien/:id'')
-  * **CRUD** vollständig über REST nachweisbar: ''GET'', ''POST'', ''PUT'', ''DELETE''
+  * **CRUD** vollständig über API-Endpoints (z.B. ''/api/serien'', ''/api/serien/:id'' mit entsprechenden HTTP-Methoden GET, POST, PUT, DELETE)
   * Mindestens **eine JOIN-Route** (Daten aus 2 Tabellen)
-  * Mindestens **eine Aggregat-Route** (COUNT/AVG/SUM/MIN/MAX mit GROUP BY)
+  * Mindestens **eine Aggregat-Route** (COUNT/AVG/SUM/MIN/MAX)
   * Zugriff auf DB **nicht** als ''root'', sondern über einen **AppUser** (Least Privilege)
   * Video-Tutorial, wo alle Team-Mitglieder darin vorkommen und einen Teil erklären. 
 </WRAP>
@@ -82,6 +81,16 @@ Das Video soll strukturiert und nachvollziehbar sein und mindestens folgende Tei
   * Beide müssen je einen **eigenen Teil** erklären (z.B. Person A: DB/SQL/DCL, Person B: API-Routen/Postman/Statuscodes).
   * Sie müssen während dem Video zeigen, dass Sie Ihren eigenen Code verstehen (Warum dieser Endpoint? Warum dieser JOIN? Was bedeutet ''req.params.id''?).
 </WRAP>
+<WRAP center round info 60%>
+Ein Beispiel-Video können Sie sich hier anschauen:
+
+[[https://bzzch-my.sharepoint.com/:v:/g/personal/guido_koch_bzz_ch/IQAMJFvbSMhfQIVI9p8cxRT9ARThohsE9YX113Qo36bG0CM?e=XnvFVi&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D|Beispiel-Video]]
+\\
+Für das Erstellen des Screencasts empfiehlt sich eine entsprechende Software zu nutzen: Ich habe die Trial Version von **Camtasia** benutzt (darum die Wassermarke). Camtasia können sie hier downloaden: https://www.techsmith.com/download/camtasia/
+\\
+Alternativ bietet auch Microsoft in Office365 die Software **Clipchamp** an, welche ähnliche Funktionalitäten hat. Mit Ihrem BZZ-Account müssten Sie dazu gratis Zugriff haben: https://www.microsoft.com/de-ch/microsoft-365/clipchamp?market=ch
+</WRAP>
+
 
 
 ===== Abgabe – zu liefernde Lernprodukte (ZIP in Moodle) =====
@@ -117,7 +126,7 @@ Im ZIP-File müssen enthalten sein:
 | **8. JOIN-Route** | **6** | Mindestens eine Route mit JOIN, Ergebnis sinnvoll | JOIN vorhanden, aber Ergebnis unklar/falsch | Kein JOIN |
 | **9. Aggregat-Route (GROUP BY)** | **6** | Mindestens eine Aggregat-Route korrekt (COUNT/AVG/SUM etc.) | Aggregat vorhanden, aber unklar/falsch | Kein Aggregat |
 | **10. Validierung, Fehlerbehandlung, HTTP-Statuscodes** | **8** | 400/404/500 sinnvoll, Pflichtfelder geprüft, verständliche Fehlermeldungen | Teilweise vorhanden, teils falsche Codes | Keine Validierung/Fehlerhandling |
-| **11. Video-Tutorial (Screencast) & Verständnisnachweis** | **20** | Struktur klar, beide erklären aktiv, Demo mit Postman + DB sichtbar, reflektiert | Video vorhanden, aber unklar/zu kurz/Teamanteil ungleich | Kein Video / Verständnis nicht nachweisbar |
+| **11. Video-Tutorial (Screencast) & Verständnisnachweis** | **20** | Struktur klar, beide erklären aktiv, Demo mit Postman + DB sichtbar, reflektiert, alle APIs erklärt und vorgeführt | Video vorhanden, aber unklar/zu kurz/Teamanteil ungleich | Kein Video / Verständnis nicht nachweisbar |
 
 <WRAP box round center 80%>
 **Eigenleistung / Verständnis**

@@ -1,0 +1,16 @@
+====== LU16a - Die Zwölf-Faktoren-App ======
+
+In der Praxis haben sich verschiedene Vorgehen bewährt. Im Folgenden möchte ich die Grundsätze der Zwölf-Faktoren-App (https://12factor.net/de/) vorstellen.
+
+  - **Codebase** \\ Eine im Versionsmanagementsystem verwaltete Codebase, viele Deployments \\ ✅ Empfehlung: Git ⚠️ Auf Regelmässigkeit achten
+  - **Abhängigkeiten** \\ Abhängigkeiten explizit deklarieren und isolieren \\ ✅ Empfehlung: Maven(pom.xml) oder Gradle(build.gradle) bei Java, Pip(requirement.txt) bei Python, Npm/Yarn(package.json) bei JavaScript/TypeScript
+  - **Konfiguration** \\ Die Konfiguration in Umgebungsvariablen ablegen \\ ✅ Empfehlung: application.properties und application.yml bei Spring
+  - **Unterstützende Dienste** \\ Unterstützende Dienste als angehängte Ressourcen behandeln \\ ✅ Datenbank-Adresse nicht hartcoden. Empfehlung: .properties-Datei
+  - **Build, release, run** \\ Build- und Run-Phase strikt trennen \\ ℹ️ Das Thema wird im nächsten Semester behandelt.
+  - **Prozesse** \\ Die App als einen oder mehrere Prozesse ausführen \\ ✅ Zustandslosigkeit durch Persistierung sicherstellen
+  - **Bindung an Ports** Dienste durch das Binden von Ports exportieren \\ ✅ Ports in den Konfigurationen festlegen
+  - **Nebenläufigkeit** \\ Mit dem Prozess-Modell skalieren \\ ✅ Aufgrund Zustandslosigkeit kann Skaliert werden, ohne manuelle Thread-Manipulation
+  - **Einweggebrauch** \\ Robuster mit schnellem Start und problemlosen Stopp \\ ✅ Stopp durch Spring-Framework sichergestellt
+  - **Dev-Prod-Vergleichbarkeit** \\ Entwicklung, Staging und Produktion so ähnlich wie möglich halten \\ ℹ️ Das Thema wird im nächsten Semester behandelt.
+  - **Logs** \\ Logs als Strom von Ereignissen behandeln \\ ✅ SLF4J o. Ä. nutzen korrekt Streams, die man nach Bedarf umleiten kann.
+  - **Admin-Prozesse** \\ Admin/Management-Aufgaben als einmalige Vorgänge behandeln \\ ✅ Separate Skripte sind auf ein Minimum beschränkt.
