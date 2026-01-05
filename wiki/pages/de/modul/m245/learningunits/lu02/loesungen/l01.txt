@@ -1,0 +1,55 @@
+====== LU02.L01 - Fallstudio Machine Learning ======
+
+
+===== Auftrag A – Grundlagen (Theorie) =====
+
+**1.** Supervised Learning VS Unsupervised Learning
+  * **Supervised Learning:**Das Modell lernt mit gelabelten Daten, d. h. Eingabedaten und die richtige Antwort sind bekannt. Klassischer Frontalunterricht.
+  * **Unsupervised Learning:** Das Modell bekommt keine Zielvariable und versucht selbst, Muster oder Strukturen zu finden. Gruppenarbeit ohne Aufgabenstellung.
+
+**2.** Handelt es sich bei diesem Problem um (mit Begründung): Klassifikation oder Regression?
+  * **Klassifikation**
+  * Begruendung: Die Zielvariable Kaufentscheidung hat diskrete Werte (Ja / Nein). Zahlen vorhersagen waere Regression, hier geht es um Kategorien.
+
+**3. ** Nenne Sie zwei typische Algorithmen, die für dieses Problem geeignet waeren, und begründen Sie jeweils in einem Satz.
+  * **Logistische Regression:** Gut geeignet fuer binäre Klassifikationsprobleme und leicht interpretierbar (im Gegensatz zu manchem Buzzword-Modell).
+  * **Decision Tree: ** Trifft Entscheidungen anhand klarer Regeln und ist auch fuer Menschen nachvollziehbar – ein seltenes Gut.
+
+===== Auftrag B – Datenverstaendnis  =====
+**4. **Welche der oben genannten Merkmale sind numerisch, welche kategorisch?
+
+  * **Numerisch:**
+    * Alter
+    * Anzahl der bisherigen Einkaeufe
+    * Verweildauer auf der Produktseite
+  * **Kategorisch:**
+    * Kaufentscheidung (Ja / Nein)
+
+**5. **Warum ist es problematisch, die Zielvariable als Feature zu verwenden?
+  * Weil das Modell sonst die Antwort bereits kennt.
+  * Das nennt man Data Leakage und fuehrt zu beeindruckend guten Ergebnissen, die in der Realitaet genau gar nichts taugen.
+
+===== Auftrag C – Praxisdenken =====
+
+**6. **Beschreiben Sie in 4–5 Schritten den typischen Ablauf eines Machine-Learning-Projekts (von Daten bis Modellbewertung).
+  - Problem definieren (was soll vorhergesagt werden?)
+  - Daten sammeln und vorbereiten (bereinigen, skalieren, encoden)
+  - Daten in Trainings- und Testdaten aufteilen
+  - Modell trainieren
+  - Modell evaluieren und verbessern
+  - Optionaler Schritt 6: Erkennen, dass alles komplizierter ist als gedacht.
+
+**7. **Nennen Sie zwei Risiken, die auftreten koennen, wenn:
+  * zu wenige Trainingsdaten vorhanden sind
+    * Modell lernt keine stabilen Muster
+    * Schlechte Generalisierung auf neue Daten
+  * das Modell zu gut auf die Trainingsdaten passt
+    * Sehr gute Trainingsgenauigkeit
+    * Katastrophale Leistung bei neuen Daten 
+
+**8.** Was ist //Overfitting// – erklaert so, dass es auch jemand versteht, der glaubt, KI sei Bewusstsein.
+  * Overfitting bedeutet, dass ein Modell die Trainingsdaten auswendig lernt, inklusive Zufall und Rauschen, anstatt allgemeine Muster zu erkennen.
+  * Es ist wie jemand, der eine Matheaufgabe perfekt loest – solange sie exakt gleich aussieht wie im Heft.
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

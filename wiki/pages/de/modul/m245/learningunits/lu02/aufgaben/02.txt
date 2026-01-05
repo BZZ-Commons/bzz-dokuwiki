@@ -1,0 +1,47 @@
+====== LU02.A02 - ML Programmierung ======
+
+===== Lernziele =====
+  - Ablauf von Machine Learning anwenden können. 
+
+===== Rahmenbedingungen =====
+  * Sozialform: Partnerarbeit
+  * Zeitbudget: 40 Minuten
+  * Erwartetes Ergebnis: Python Script, dass auf Input-Daten Kaufentscheidungen des Kunden //vorhersagen// kann. 
+
+===== Ausgangslage =====
+Ein Online-Shop möchte vorhersagen, ob ein Kunde ein Produkt kaufen wird oder nicht. Gegeben seien die nachfolgenden Attribute:
+
+  * age (Alter)
+  * past_purchases (Anzahl bisheriger Einkaeufe)
+  * minutes_on_page (Verweildauer)
+  * buy (Zielvariable: 0/1)
+
+Die nachfolgende CSV-Datei mit 30 Muster-Datensätzen steht Ihnen zur Verfügung: {{ ::m245_lu02_a02_input.csv |}}
+
+
+===== Auftrag A – ML-Pipeline bauen =====
+Schreiben Sie ein Skript ml_basics_shop.py, das:
+
+  * die CSV einliest (pandas)
+  * Features (X) und Zielvariable (y) trennt
+  * Daten in Train/Test splittet (z. B. 80/20, random_state=42)
+  * eine Pipeline erstellt mit:
+    * Standardisierung (StandardScaler)
+    * Modell: Logistische Regression
+  * das Modell trainiert
+  * Vorhersagen fuer Testdaten berechnet
+
+===== Teil B - Bewertung =====
+Geben Sie die nachfolgende Kennzahlen aus:
+ 
+  * Accuracy
+  * Confusion Matrix
+  * Classification Report (Precision/Recall/F1)
+
+
+
+===== Lösung =====
+[[de:modul:m245:learningunits:lu02:loesungen:l02|Lösung]]
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

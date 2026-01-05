@@ -1,0 +1,51 @@
+====== LU02.A01 - Fallstudie Machine Learning ======
+
+===== Lernziele =====
+  - Grundverständnis für Machine Learning entwickeln.
+  - Geziehlt ML Strategien einsetzten können.
+
+===== Rahmenbedingungen =====
+  * Sozialform: Partnerarbeit
+  * Zeitbudget: 20 Minuten
+  * Erwartetes Ergebnis: Beantwortung der Fragen/Aufgabenstellung im nachvollziehbaren Schritten. 
+
+===== Ausgangslage =====
+Ein Online-Shop möchte vorhersagen, ob ein Kunde ein Produkt kaufen wird oder nicht. Ihnen stehen folgende Merkmale (Features) zur Verfuegung:
+
+  * Alter des Kunden
+  * Anzahl der bisherigen Einkaeufe
+  * Zeit (in Minuten), die der Kunde auf der Produktseite verbracht hat
+  * Kaufentscheidung (Ja/Nein) ← Zielvariable
+
+===== Auftrag A: – Grundlagen (Theorie) =====
+
+**1.** Erklaere Sie kurz den Unterschied zwischen
+    * Supervised Learning und
+    * Unsupervised Learning.
+**2.** Handelt es sich bei diesem Problem um (mit Begründung)
+    * Klassifikation oder
+    * Regression?
+**3. ** Nenne Sie zwei typische Algorithmen, die für dieses Problem geeignet waeren, und begründen Sie jeweils in einem Satz.
+
+===== Auftrag B: – Datenverstaendnis  =====
+**4. **Welche der oben genannten Merkmale sind numerisch, welche kategorisch?
+
+**5. **Warum ist es problematisch, die Zielvariable als Feature zu verwenden?
+
+===== Auftrag c: – Praxisdenken =====
+
+**6. **Beschreiben Sie in 4–5 Schritten den typischen Ablauf eines Machine-Learning-Projekts (von Daten bis Modellbewertung).
+
+**7. **Nennen Sie zwei Risiken, die auftreten koennen, wenn:
+  * zu wenige Trainingsdaten vorhanden sind
+  * das Modell zu gut auf die Trainingsdaten passt
+
+**8.** Was ist //Overfitting// – erklaert so, dass es auch jemand versteht, der glaubt, KI sei Bewusstsein.
+
+
+
+===== Lösung =====
+[[de:modul:m245:learningunits:lu02:loesungen:l01|Lösung]]
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir
