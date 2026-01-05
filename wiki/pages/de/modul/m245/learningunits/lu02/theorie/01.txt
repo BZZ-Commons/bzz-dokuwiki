@@ -1,38 +1,37 @@
-====== LU02a - Machine Learning Grundlagen - TBD ======
+====== LU02a - Machine Learning Grundlagen ======
 
-===== What is Machine Learning? =====
+===== Was ist Machine Learning? =====
 
-The **father of Machine Learning Arthur Lee Samuel** in 50s defined Machine Learning like this: <wrap hi>Machine Learning is the subfield of Computer Science, that gives computers the ability to learn without being explicitly programmed. </wrap>
+Der **Vater des maschinellen Lernens, Arthur Lee Samuel**, definierte maschinelles Lernen in den 50er Jahren wie folgt: <wrap hi>Maschinelles Lernen ist ein Teilgebiet der Informatik, das Computern die Fähigkeit verleiht, ohne explizite Programmierung zu lernen.</wrap>
 
 
 {{:de:modul:m245:learningunits:lu02:theorie:arthurleesamuel.jpg?400|}}
 
-Arthur Lee Samuel was an American pioneer in the field of artificial intelligence and computer gaming. Samuel worked for IBM for many years and is credited with creating the first computer program designed to play a game, specifically checkers. He developed the program in the early 1950s, and it was based on a technique called //machine learning//, where the computer was programmed to learn from its own experience and improve its performance over time. 
+Arthur Lee Samuel war ein amerikanischer Pionier auf dem Gebiet der künstlichen Intelligenz und Computerspiele. Samuel arbeitete viele Jahre für IBM und gilt als Schöpfer des ersten Computerprogramms, das für das Spielen eines Spiels, genauer gesagt für Dame, entwickelt wurde. Er entwickelte das Programm in den frühen 1950er Jahren, basierend auf einer Technik namens //maschinelles Lernen//, bei der der Computer so programmiert wurde, dass er aus seinen eigenen Erfahrungen lernte und seine Leistung im Laufe der Zeit verbesserte. 
 
-Later Tom Michael Mitchell, an American computer scientist and professor at Carnegie Mellon University, defined Machine Learning as <wrap hi>A computer program is said to learn from experience E with respect to some task T and some performance measure P, if its performance on T, as measured by P, improves with experience E. </wrap>
+Später beschrieb **Tom Michael Mitchell** maschinelles Lernen wie folgt: <wrap hi>Ein Computerprogramm lernt aus //Erfahrung E// in Bezug auf eine bestimmte //Aufgabe T// und eine bestimmte //Leistungsmessung P//, wenn sich seine Leistung bei T, gemessen anhand von P, mit der Erfahrung E verbessert. </wrap>
 
+Tom Michael Mitchell ist Professor an der Carnegie Mellon University, wo er als //Founders University Professor// im Fachbereich Maschinelles Lernen tätig ist und **Leiter des Fachbereichs Maschinelles Lernen** ist. Er ist vor allem für seine Beiträge auf den Gebieten des maschinellen Lernens und der künstlichen Intelligenz bekannt. Er hat mehrere einflussreiche Bücher zu diesen Themen verfasst, darunter //Machine Learning// und //The Discipline of Machine Learning//.
+*** Übersetzt mit www.DeepL.com/Translator (kostenlose Version) ***
 
-**Tom Michael Mitchell** is a professor at Carnegie Mellon University, where he is the Founders University Professor in the Machine Learning Department and the **head of the Machine Learning Department**. He is best known for his contributions to the fields of machine learning and artificial intelligence. He has authored several influential books on these topics, including //Machine Learning// and //The Discipline of Machine Learnin//.
+Wenn wir Tom Michael Mitchells Definition auf ein Dame-Spiel anwenden, bei dem der Computer die beste Gewinnstrategie findet, können wir sagen, dass:
 
-If we apply Tom Michael Mitchell’s definition to a checkers game, where computer finds the best
-wining startegy we can say that:
+  * **E = Erfahrung**: Die Erfahrung, dass das Programm selbst Zehntausende von Spielen gespielt hat.
+  * **T = Aufgabe**: Die Aufgabe, Dame zu spielen.
+  * **P = Wahrscheinlichkeit**: Die Wahrscheinlichkeit, dass das nächste Dame-Spiel gegen einen neuen Gegner gewonnen wird.
 
-  * **E = Experience**: The experience of having the program play tens of thousands of games itself
-  * **T = Task**: The task of playing checkers 
-  * **P = Probability**: The probability that wins the next game of checkers against some new opponent
+===== Wichtiges Vokabular im Zusammenhang mit Machine Learning  =====
+Bevor wir tiefer in die Materie tauchen, sollten einige Begrifflichkeiten geklärt werden.
 
-===== 2 Types of Machine Learning Algorithms =====
-There are basically three types of algorithms regarding Machine Learning
+  * **Trainingsdaten**: Daraus lernt das Modell
+  * **Testdaten**: Damit prueft man, ob es wirklich gelernt hat
+  * **Overfitting**: Modell lernt auswendig, versteht aber nichts
+  * **Underfitting**: Modell versteht gar nichts
+  * **Generalisation**: Das eigentliche Ziel
 
-  * **Supervised Learning** (focus within the course m245)
-  * Unsupervised Learning
-  * Reinforcement Learning
+===== Lernvideo =====
 
-{{:de:modul:m245:learningunits:lu02:theorie:machine_learning_types.png?600|}}
-
-
-
-
+{{ :de:modul:m245:learningunits:lu02:theorie:machine_learning_explained_in_100_seconds.mp4 | Machine Learning in 100 Sekunden }} 
 
 ----
 [[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

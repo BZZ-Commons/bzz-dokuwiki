@@ -1,24 +1,14 @@
-====== LU02a - Typen von Machine Learning - TBD ======
+====== LU02b - Typen von Machine Learning ======
 
-===== Wichtiges Vokabular im Zusammenhang mit Machine Learning  =====
-Bevor wir tiefer in die Materie tauchen, sollten einige Begrifflichkeiten geklärt werden.
+===== Varianten von Machine Learning Algorithmen =====
+Es gibt grundsätzlich drei Arten von Algorithmen im Bereich des maschinellen Lernens:
 
-**Trainingsdaten**
-Daraus lernt das Modell
+  * **Supervided Learning (Überwachtes Lernen(** (Schwerpunkt im Kurs M245)
+  * Unsupervided Learning (Unüberwachtes Lernen)
+  * Reinforcement Learning (Verstärkendes Lernen)
 
-**Testdaten**
-Damit prueft man, ob es wirklich gelernt hat
+{{:de:modul:m245:learningunits:lu02:theorie:machine_learning_types.png?800|}}
 
-**Overfitting**
-Modell lernt auswendig, versteht aber nichts
-
-**Underfitting**
-Modell versteht gar nichts
-
-**Generalisation**
-Das eigentliche Ziel
-
-===== Typen von Machine Learning =====
 
 ==== Superviced Machine Learning ====
 //Supervised Learning// ist eine Art des maschinellen Lernens, bei dem Algorithmen **aus gekennzeichneten Datensätzen (Eingabe-Ausgabe-Paaren) lernen**, Eingaben den richtigen Ausgaben zuzuordnen, sodass sie genaue Vorhersagen oder Entscheidungen zu neuen, unbekannten Daten treffen können, beispielsweise zur Identifizierung von Spam oder zur Vorhersage von Immobilienpreisen. 
