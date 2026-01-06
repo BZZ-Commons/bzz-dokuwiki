@@ -7,11 +7,12 @@ Erstellen Sie ein **Business Use Case Diagramm**, das eine Übersicht über alle
 
 ===== Anforderungen =====
   * Die Dokumentation enthält ein Inhaltsverzeichnis und passende Überschriften zu den verschiedenen Diagrammen und Beschreibungen.
-  * Das Diagramm muss mindestens vier Stakeholder enthalten.
-  * Es müssen mindestens fünf Anwendungsfälle dargestellt werden.
+  * Die Dokumentation muss mindestens zwei Use Case Diagramme enthalten. Erstellen Sie, falls sinnvoll, Pakete zur Gruppierung von Use Cases und Actors.
+  * Jedes Diagramm muss mindestens vier Stakeholder enthalten.
+  * Für jedes Diagramm müssen mindestens fünf Anwendungsfälle dargestellt werden.
   * Beziehungen zwischen Anwendungsfällen (z. B. «includes» oder «extends») sollen, falls sinnvoll, verwendet werden.
   * Verwenden Sie eine klare und lesbare Darstellung nach dem UML-Standard.
-  * Ergänzen Sie das Diagramm durch eine kurze strukturierte Beschreibung zu jedem Anwendungsfall (1–3 Sätze), in der die Zielsetzung und der Ablauf knapp erläutert werden.
+  * Ergänzen Sie mindestens ein Diagramm durch eine kurze strukturierte Beschreibung zu jedem Anwendungsfall (1–3 Sätze), in der die Zielsetzung und der Normalablauf knapp erläutert werden.
 
 ===== Abgabeformat =====
 
