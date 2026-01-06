@@ -35,3 +35,11 @@ public class ApplicationMain {
 }
 
 </code>
+
+
+Falls nicht 5 Resultate oder völlig falsche zurückgegeben werden, kann die an einem fehlerhaften Index liegen. In diesem Fall können Sie den Index mit folgendem Code löschen.
+
+Beim Start der Applikation sollte der Index automatisch wieder angelegt werden aufgrund der Implementation in ''VectorTableInitializer.java''.
+<code sql>
+DROP INDEX IF EXISTS vector_store_embedding_idx;
+</code>

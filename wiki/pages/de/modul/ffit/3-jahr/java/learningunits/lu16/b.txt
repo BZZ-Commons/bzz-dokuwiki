@@ -21,15 +21,22 @@ P.S.: SOLID steht für SRP, OCP, LSP, ISP, DIP
 
 Das Open/Closed Principle besagt, dass ein Programm, zwar offen sein soll für (sinnvolle) Weiterentwicklung, aber geschlossen für Änderungen (Manipulationen).
 
-Als Faustregel kann man Klassen tendenziell schliessen, während Interfaces geöffnet werden. Der Modifier ''public'' sollte bei Klassen also sparsam eingesetzt werden, während ''final'' bei vielen Implementierungsklassen in Frage kommt.
+Schlecht wäre in diese Hinsicht zum Beispiel ein zentrales Switch-Case-Konstrukt, welches man laufend ergänzen muss, wenn man die Applikation erweitert.
+
+Als Faustregel kann man Klassen tendenziell schliessen, während Interfaces geöffnet werden. Der Modifier ''public'' sollte bei Klassen also sparsam eingesetzt werden, während ''final'' bei vielen Implementierungsklassen in Frage kommt. (Bei einer Klasse mit ''final'' können keine anderen Klassen erben.)
 
 Der Modifier ''protected'' bei Klassenattributen ist oft ein Indiz für eine Offenheit gegenüber Änderungen via Vererbung. Sie sollten daher immer kritisch hinterfragt werden.
 
 ==== LoD ====
 
 Das Law of Demeter sagt aus, dass Objekte lediglich mit seinen unmittelbaren Abhängigkeiten interagieren sollte.
+
+Ein konkretes Beispiel finden Sie auf https://luiskueng.com/5-Publish/Blog/Clean+Code/Prinzipien+OO-Design/Law+of+Demeter
+
 Ein starkes Indiz, dass dieses Prinzip verletzt wurde sind (lange) Getter-Ketten.
 
 <code java>
 customer.getCart().getItems().get(0).getProduct().getPrice();
 </code>
+
+Solche Fälle sollten in mehrere kleinere Methoden in ihren jeweiligen Entitäten aufgeteilt werden, so dass keine Klasse alle Entitäten der Kette kennen muss.

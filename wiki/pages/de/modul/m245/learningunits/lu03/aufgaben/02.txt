@@ -1,0 +1,35 @@
+====== LU03.A02 - Kaggle-Kurs: Pandas-Challenge ======
+
+===== Rahmenbedingungen =====
+  * Sozialform: individual
+  * Hilfsmittel: 
+    * OpenBooks
+    * [[https://www.kaggle.com/learn/pandas | Kaggle.com | Pandas ]]
+  * Zeit: 4 Lektionen Stunden (Mittelwert, basierend Selbstkompetenz)
+  * Erwartetes Resultat: 
+    * Das Pandas-Challenge wurde sorgfältig und vollständig bearbeitet.
+    * Die Bearbeigung des Python-Kurses ist im Kaggle-Python-Notebook nachweisbar.
+
+===== Ausgangslage ===== 
+Python ist bekanntlich die beliebteste Programmiersprache im Bereich Machine Learning. Ein wichtiger Grund ist, dass es eine Reihe von sehr wichtigen Bibliotheken anbietet, darunter auch die PANDAS-Bibliothek.
+
+**Facts:** 
+  * PANDAS ist eine Python-Bibliothek zur Datenverarbeitung.
+  * Im Machine Learning ist sie nicht optional, sondern die Phase vor dem eigentlichen „KI-Teil“. 
+  * Kurzs: Ohne pandas - viel Hoffnung, wenig Ergebnisse
+  * Ein Werkzeug zum Einlesen, Verstehen, Bereinigen und Vorbereiten von Daten
+  * Arbeitet mit tabellarischen Daten (aehnlich Excel, nur reproduzierbar und ohne Maus)
+  * Zentrale Datenstruktur: DataFrame
+    * Tabelle mit Zeilen, 
+    * Spalten, 
+    * Spaltennamen und Datentypen
+
+===== Auftrag  =====
+Bearbeiten Sie die Pandas-Challenge, um die Grundlagen bezüglich Machine Learning aufzubauen. 
+
+**Hinweis:** 
+  * Das zur Verfügung stehende Zeitbudget ist ein Mittelwert. Wer konzentrierter arbeitet ist schneller, und vice versa.
+  * Das Ergebnis dieser Aufgabe ist Teil der LB1. 
+
+
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir
