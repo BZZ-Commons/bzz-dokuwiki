@@ -1,4 +1,5 @@
-=== 8. Audrucke minimieren mit dem KV-Diagramm ===
+=== 8. Ausdrucke minimieren mit dem KV-Diagramm ===
+
 **Was heisst minimieren?**\\
 Sie haben bis anhin die logischen Ausdrucke immer in kanonischer Form angeschrieben. Mit den Regeln der boolschen Algebra können aber gewisse Ausdrucke minimiert werden. Hier ein einfaches und wohl einleuchtendes Beispiel.\\
 Es liegt die Aussage X = (\(\neg\)A \(\wedge\) B) \(\vee\) (A \(\wedge\) B) vor. In die Wahrheitstabelle übertragen ergibt dies:

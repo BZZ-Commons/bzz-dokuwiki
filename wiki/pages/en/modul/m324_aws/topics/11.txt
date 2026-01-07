@@ -43,6 +43,8 @@ password: admin
 === Step 2: Create a new project ===
   * As Project type select ''Create a local Project''
   * Then set ''Project display name and key'' and the ''main branch name (default: main)''.
+  * Hit the button ''Next''
+  * Select ''Follows the instance's default''
   * Hit the button ''Create project''
 
 \\
@@ -51,12 +53,30 @@ password: admin
   * Generate the ''Token name'' (Expiration in 30 days is ok)
   * Save the generated token and handle it as password.
   * Hit the button ''Continue''
+  * Run analysis on your project: ''Other'' -> ''Linux''
+
+
 
 \\
 === Step 4: Download and unzip the scanner ===
   * Download the scanner for your platform.
-  * Unzip it either in your project directory or where your tools are usually stored. 
-  * Add the ''bin'' directory of the unzipped folder in your ''PATH'' variable.
+
+{{:en:modul:m324_aws:topics:01-sonar.png?direct&400|}}
+{{:en:modul:m324_aws:topics:02-sonar.png?direct&400|}}
+
+  * Unzip it either in your project directory or in your binary-directory.
+Example for Linux on AWS EC2
+<code>
+wget -N https://binaries.sonarsource.com/<whatever-path>/sonar-scanner-cli-<whatever-version>-linux-x64.zip
+sudo apt install unzip
+unzip -o sonar-scanner-cli-<whatever-version>-linux-x64.zip
+</code>
+
+  * Add the ''bin'' directory of the unzipped folder in your ''PATH'' variable and check with command ''whereis''. Example:
+<code>
+whereis sonar-scanner
+sonar-scanner: /home/ubuntu/sonar/bin/sonar-scanner
+</code> 
   * Check before running code coverage that your target app (i.e. traffic light api) has the following node package are installed.
 
 <code>
@@ -91,6 +111,7 @@ sonar.sourceEnconding=UTF-8
 
 \\
 === Step 5: Run the tests ===
+  * On Linux: Install jest with ''sudo npm i jest-cli -g''
   * Run first the code coverage with jest.
 
 <code>
@@ -98,19 +119,23 @@ jest --coverage --coverageDirectory='coverage' --collectCoverageFrom='src/**/*.j
 </code>
 
   * Execute the scanner as shown.
-In the example the scanner binaries are stored in the project folder. The path to the scanner is used in a bash script.
 
 <code>
-#!/usr/bin/env bash
+#!/usr/bin/bash
+# Attention:
+# Change CRLF (Windows) to LF (Unix on AWS) in your Editor
 #
-# set tool variable
-tool=??/M324_Code/sonar-scanner/bin/sonar-scanner.bat
-# run tool
-$tool
+sonar-scanner \
+  -Dsonar.projectKey=trafficlight-app-codecov \
+  -Dsonar.sources=src \
+  -Dsonar.host.url=http://localhost:9000 \
+  -Dsonar.token=sqp_6ee5a8843fc36e95825131e03f3ae1ec8d89226d \
+  -Dproject.settings=sonar-project.properties
 </code>
 
   * Analyse the generated report in SonarQube
 
+{{:en:modul:m324_aws:topics:03-sonar.png?direct&800|Sample report from sonar}}
 ---
 
 Based on this [[https://www.aviator.co/blog/implementing-sonarqube-code-coverage-in-a-simple-javascript-application/|Article]].
