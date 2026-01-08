@@ -186,7 +186,8 @@ class Car():
 
     def __lt__(self, other):
         if isinstance(other, Car):
-            return self.construction < other.construction
+            if self.construction < other.construction:
+                return True
         return False
 
     def __le__(self, other):
@@ -235,6 +236,22 @@ else:
 </WRAP>
 
 In diesem Beispiel wird die ''%%__lt__%%''-Methode der ''Car''-Klasse aufgerufen, um die beiden ''Car''-Objekte zu vergleichen, und sie gibt ''True'' zurück, wenn das Attribut ''construction''  des ersten ''Car''-Objekts kleiner ist als das Attribut ''construction'' des zweiten ''Car''-Objekts, und ''False'', wenn dies nicht der Fall ist.
+
+Die Logik einer Vergleichs-Methode kann auch umfangreicher sein, als nur der Vergleich eines Attributs.
+
+<code python>
+...
+    def __lt__(self, other):
+        if isinstance(other, Car):
+            if self.make < other.make:
+                return True 
+            if self.brand < other.brand:
+                return True
+        return False
+</code>
+Hier wird zuerst der Hersteller und falls beide gleich sind, das Modell verglichen.
+
+==== Sortieren ====
 
 Sobald Sie die Klasse ''Car'' sortierbar gemacht haben, können Sie sie auch mit der Funktion ''sorted()'' verwenden, um eine Liste von Car-Objekten zu sortieren. Zum Beispiel:
 
