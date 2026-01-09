@@ -1,11 +1,13 @@
-====== LU03h - Klassifizierung von Schwachpunkten ======
+====== LU03h - Ebenenmodell für Websicherheit ======
+<color #00a2e8>Immer mehr Geschäftsprozesse stehen und fallen mit der Verfügbarkeit entsprechender Webanwendungen. Deren Sicherheit sollten Unternehmen systematisch angehen und nicht auf die leichte Schulter nehmen.</color>
+\\
+\\
+===== 1. Klassifizierung von Schwachpunkten =====
+Ein Ebenenmodell wie die ''Klassifizierung von Schwachpunkten'' soll bei der Strukturierung des weiten Feldes der Web Application Security helfen. 
+Das Modell erweitert die Netzwerkebene um fünf weitere Schichten. 
 
-<color #00a2e8>Merke! ....</color>
+{{:modul:m183:learningunits:lu03:02-2.png?600|Klassifizierung von Schwachpunkten}}
 
-===== 1. Einleitung =====
-Ein Ebenenmodell wie in der Tabelle ''Klassifizierung von Schwachpunkten'' soll bei der Strukturierung des weiten Feldes der Web Application Security helfen. Es setzt auf die
-Netzwerkebene fünf weitere
-Schichten auf. 
   * **1:** Die Systemebene befasst sich mit der Sicherheit der zur Realisierung der Webanwendung benötigten Software.
   * **2:** Die Technologieebene behandelt Fragen wie die Wahl des richtigen Authentifizierungsverfahrens und der Softwarearchitektur.
   * **3:** Diese Ebene betrifft den Bereich der Kodierung und damit der Programmierfehler. Hier sind so namhafte Schwachstellen wie Cross-Site Scripting und SQLInjection angesiedelt.
@@ -14,13 +16,25 @@ Schichten auf.
 
 In der rechten Spalte sind jeweils Beispiele für typische Schwachstellen oder Angriffstechniken genannt.
 
+\\
+===== 2. Zuständigkeiten =====
 
+Die zu verteilenden Verantwortlichkeiten im Unternehmen lassen sich anhand des Ebenenmodells bestimmen.
 
+{{:modul:m183:learningunits:lu03:02-1.png?600|Zuständigkeiten}}
 
+    * **Ebene 1** ist Sache des Betriebs, Netzwerk- und Systemkenntnisse sind die benötigten Fähigkeiten. 
+    * **Ebene 2** wird von der Fachabteilung und Entwicklern mit Unterstützung des Betriebs verantwortet. 
+    * Um **Ebene 3** kümmert sich die Entwicklungsabteilung.
+    * Um **Ebene 4** ist vorwiegend von der Fachabteilung, die eine Anwendung benötigt, zu steuern.
+    * **Ebene 5** ist hinsichtlich der allgemeinen Grundsätze von der Zentrale und in puncto anwendungsspezifische von der Fachabteilung zu verantworten. 
 
+Die rechte Spalte fasst die Zuständigkeiten für Planung, Umsetzung und Betrieb (Plan, Build, Run) einer Anwendung zusammen.
 
-===== 2. Quellennachweis Bilder =====
-  * https://insights.mgm-tp.com/wp-content/uploads/2016/05/Best_Practices_fuer_sichere_Webanwendungen_iX0703.pdf
+---- 
 
 ----
+Quellennachweis Bilder \\
+  * https://insights.mgm-tp.com/wp-content/uploads/2016/05/Best_Practices_fuer_sichere_Webanwendungen_iX0703.pdf
+
 [[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Daniel Garavaldi
