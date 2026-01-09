@@ -1,5 +1,10 @@
 ====== LU14a - Python und die Zeit ======
-Das speichern von Zeit und Datumswerten ist in vielen Applikationen notwendig. Python bietet uns mit den Modul ''datetime'' ein eifach zu benutzendes Modul dafür. Es hat mehrere Klassen, aber die am häufigsten verwendeten sind:
+<details>
+<summary>//Notizen//</summary> Auf mehrere Seiten aufteilen (1 Seite DateTime, 1 Seite Delta, 1 Seite diverse Beispiele
+</details>
+Das Speichern von Zeit und Datumswerten ist in vielen Applikationen notwendig. 
+Python bietet uns mit den Modul ''datetime'' ein einfach zu benutzendes Modul dafür. 
+Das Modul enthält mehrere Klassen, aber die am häufigsten verwendeten sind:
 
 <WRAP center round info 90%>
 ''datetime'': Diese Klasse stellt einen einzelnen Zeitpunkt dar. Sie hat Attribute für Jahr, Monat, Tag, Stunde, Minute, Sekunde und Mikrosekunde.
