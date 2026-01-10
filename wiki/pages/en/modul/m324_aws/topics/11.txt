@@ -126,20 +126,20 @@ jest --coverage --coverageDirectory='coverage' --collectCoverageFrom='src/**/*.j
 # Change CRLF (Windows) to LF (Unix on AWS) in your Editor
 #
 sonar-scanner \
-  -Dsonar.projectKey=trafficlight-app-codecov \
-  -Dsonar.sources=src \
-  -Dsonar.host.url=http://localhost:9000 \
-  -Dsonar.token=sqp_6ee5a8843fc36e95825131e03f3ae1ec8d89226d \
-  -Dproject.settings=sonar-project.properties
+  -Dsonar.projectKey=<YOUR-PROJECT-KEY> \
+  -Dsonar.sources=. \
+  -Dsonar.host.url=<YOUR-HOST-URL> \
+  -Dsonar.token=<YOUR-TOKEN> \
+  -Dproject.settings=./sonar-project.properties
 </code>
 
   * Analyse the generated report in SonarQube
 
 {{:en:modul:m324_aws:topics:03-sonar.png?direct&800|Sample report from sonar}}
----
 
-Based on this [[https://www.aviator.co/blog/implementing-sonarqube-code-coverage-in-a-simple-javascript-application/|Article]].
+
 
 ----
+Source: [[https://www.aviator.co/blog/implementing-sonarqube-code-coverage-in-a-simple-javascript-application/]].
 
 [[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Daniel Garavaldi
