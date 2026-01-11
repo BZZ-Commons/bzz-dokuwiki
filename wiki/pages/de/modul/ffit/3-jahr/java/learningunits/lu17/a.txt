@@ -1,8 +1,63 @@
 ====== LU17a - Projektmethoden ======
 
-Traditionell / Wasserfall
+Als Repetition ist hier eine Übersicht der verschiedenen Vorgehensweisen beim Projektmanagement aufgeführt.
 
-Agil / Scrum
-
-V-Model
-
+^ ^ {{:de:modul:ffit:3-jahr:java:learningunits:lu17:project_method_waterfall.png?250|}} \\ ©[[https://www.linkedin.com/pulse/agile-vs-hybrid-waterfall-which-approach-wins-todays-world-kumar-yk95c|Sandeep Kumar]] ^ {{:de:modul:ffit:3-jahr:java:learningunits:lu17:project_method_hybrid.png?250|}} \\ ©[[https://www.linkedin.com/pulse/agile-vs-hybrid-waterfall-which-approach-wins-todays-world-kumar-yk95c|Sandeep Kumar]]^ {{:de:modul:ffit:3-jahr:java:learningunits:lu17:project_method_agile.png?250|Agil}} \\ ©[[https://www.linkedin.com/pulse/agile-vs-hybrid-waterfall-which-approach-wins-todays-world-kumar-yk95c|Sandeep Kumar]] ^
+| **Kurzbeschreibung** | Lineares, sequenzielles Vorgehen mit festen Phasen | Klassischer Projekt­rahmen mit agilen Umsetzungselementen | Iteratives, inkrementelles Vorgehen mit kurzen Feedbackzyklen |
+| **Geeignet wenn …** | <WRAP>
+  * Anforderungen stabil
+  * Änderungen selten
+  * Starke Regulierung
+</WRAP> | <WRAP>
+  * Rahmenbedingungen fix
+  * Umsetzung aber flexibel
+</WRAP> | <WRAP>
+  * Anforderungen unklar
+  * Änderungen häufig
+  * Schnelle Ergebnisse nötig
+</WRAP> |
+| **Vorteile / Nachteile** | <WRAP>
+<color #22b14c>✚</color> Hohe Planbarkeit \\ 
+<color #22b14c>✚</color> Klare Doku \\
+<color #ed1c24>➖︎</color> Unflexibel \\
+<color #ed1c24>➖︎</color> Spätes Feedback \\
+</WRAP> | <WRAP>
+<color #22b14c>✚</color> Balance aus Kontrolle & Flexibilität \\ 
+<color #ed1c24>➖︎</color> Komplexer, höherer Abstimmungsaufwand \\
+</WRAP> | <WRAP>
+<color #22b14c>✚</color> Hohe Flexibilität \\ 
+<color #22b14c>✚</color> Schnelles Nutzerfeedback \\ 
+<color #ed1c24>➖︎</color> Weniger Vorhersagbarkeit \\
+</WRAP> |
+| **Beispiele** | <WRAP>
+  * Wasserfallmodell
+  * V-Modell
+</WRAP> | <WRAP>
+  * HERMES
+  * Scrumfall
+  * SAFe
+</WRAP> | <WRAP>
+  * Scrum
+  * Kanban
+  * XP
+  * Lean 
+</WRAP> |
+| **Typische Produkte** | <WRAP>
+  * Lastenheft
+  * Pflichtenheft
+  * Fach-/Technikkonzept
+  * Testplan
+  * Abnahmeprotokoll 
+</WRAP> | <WRAP>
+  * Projektauftrag
+  * Grobkonzept
+  * Backlog
+  * Sprint-Ergebnisse
+  * Pflichtdokumente 
+</WRAP> | <WRAP>
+  * Product Backlog
+  * User Stories
+  * Sprint Backlog
+  * Inkrement
+  * Burndown Chart
+</WRAP> |
