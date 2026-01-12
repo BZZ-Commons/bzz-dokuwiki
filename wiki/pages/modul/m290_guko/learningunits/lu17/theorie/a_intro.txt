@@ -336,7 +336,7 @@ app.post('/api/posts', (req, res) => {
 
 ==== UPDATE: Post ändern (PUT /api/posts/:id) ====
 
-In LU16b haben Sie einen Post so aktualisiert: Nur die Felder, die im Body wirklich mitgeschickt werden, werden geändert.
+In LU16b haben Sie einen Post so aktualisiert: Der ganze Datensatz wird ersetzt, wenn wir ein Update machen.
 Genau diese Logik übernehmen wir jetzt – der Unterschied ist nur: statt im Array ändern wir jetzt die MySQL-Tabelle ''posts''.
 
 

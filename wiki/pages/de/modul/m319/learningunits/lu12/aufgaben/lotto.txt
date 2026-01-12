@@ -81,9 +81,12 @@ Trotzdem braucht es ein wenig Koordination zwischen den Mitarbeitern.
     * Entweder: Sie erstellen eine neue Gruppe.
     * Oder: Sie wählen eine bestehende Gruppe aus.
   - Setzen Sie sich mit Ihrer Gruppe an einen 4er-Tisch. Es ist **keine** Kommunikation über die Aufgabe ausserhalb Ihrer Gruppe erlaubt.
-  - Klonen Sie das Repository in PyCharm.
-  - Um die Issues zu erhalten, trage deinen Namen ins main.py ein und ''commit'' und ''push'' \\ {{de:modul:m319:learningunits:lu12:aufgaben:issues_lu12.png?600|}}
-  - Überprüfe dein Repo ob die Issues vorhanden sind (dauert etwa 2 Minuten, Seite aktualisieren nicht vergessen)
+  - **Eine** Person pro Gruppe:
+    * Bearbeiten Sie die Datei ''main.py'' in GitHub.
+    * Tragen Sie den Gruppennamen auf Zeile 2 ein.
+    * Speichern Sie die Änderung mittels Commit. Dies löst einen Workflow aus, der die Issues ins GitHub-Repository kopiert.
+    * Überprüfe das Repo ob die Issues vorhanden sind (dauert etwa 2 Minuten, Seite aktualisieren nicht vergessen)
+  - **Jedes** Gruppenmitglied: Klonen Sie das Repository in PyCharm.
   - Erstellen Sie eine neue Python-Datei ''my_test''. Falls PyCharm nachfragt, ob es die Datei mit Git verwalten soll, **Lehnen Sie dies ab**.
   - Kopieren Sie den unten stehenden Code in diese Datei.
 
