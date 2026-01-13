@@ -23,7 +23,7 @@ crontab -e
 Jeder Cronjob hat folgendes Format:
 
 <code>
-  * * * * * auszuführender Befehl
+* * * * * Befehl
 ┬ ┬ ┬ ┬ ┬
 │ │ │ │ │
 │ │ │ │ └──── Wochentag (0-7, Sonntag ist 0 oder 7)
@@ -33,22 +33,13 @@ Jeder Cronjob hat folgendes Format:
 └──────────── Minute (0-59)
 </code>
 
-Ein Stern ''*'' bedeutet Ausführung wird immer erfolgen, also zu jeder Minute, jeder Stunde, jedem Tag, jedem Monat oder jedem Wochentag. Um die einzelnen Stellen auseinander zu halten, hilft folgendes Diagram:
+Ein Stern ''*'' bedeutet Ausführung wird immer erfolgen, also zu jeder Minute, jeder Stunde, jedem Tag, jedem Monat oder jedem Wochentag.
 
-<code>
-1 2 3 4 5 Befehl
-1 = Minute (0-59)
-2 = Stunde (0-23)
-3 = Tag (0-31)
-4 = Monat (1-12)
-5 = Wochentag (0-7, Sonntag ist 0 oder 7)
-Befehl = Der auszuführende Befehl.
-</code>
-
-Für die ersten fünf Stellen, also die Zeitwerte sind folgende Optionen zusätzlich möglich:
+Für die ersten fünf Stellen (für die Zeitwerte) sind folgende Optionen zusätzlich möglich:
 <code>
 * = Ausführung immer (zu jeder…)
-*/n = Ausführung aller n, wobei n,x,y = Ausführung um/am n, x und y
+*/n = Ausführung alle n Mal (z.B. alle 15 Minuten)
+x,y = Ausführung um/am x und um/am y (Beispiel siehe unten)
 </code>
 
 \\
@@ -107,14 +98,14 @@ Zusätzlich zum crontab-Befehl gibt es je nach Distribution Dateien, die systemw
 Die System-Crontab-Datei, in der zusätzlich noch ein System-Benutzer, der den Befehl ausführen soll, mit angegeben werden muss:
 
 <code>
-1 2 3 4 5 Benutzer Befehl
-1 = Minute (0-59)
-2 = Stunde (0-23)
-3 = Tag (0-31)
-4 = Monat (1-12)
-5 = Wochentag (0-7, Sonntag ist 0 oder 7)
-Benutzer = Benutzername des Benutzers, unter dem der Befehl ausgeführt wird.
-Befehl = Der auszuführende Befehl.
+* * * * * Benutzer Befehl
+┬ ┬ ┬ ┬ ┬
+│ │ │ │ │
+│ │ │ │ └──── Wochentag (0-7, Sonntag ist 0 oder 7)
+│ │ │ └────── Monat (1-12)
+│ │ └──────── Tag (1-31)
+│ └────────── Stunde (0-23)
+└──────────── Minute (0-59)
 </code>
 
 Beispiel

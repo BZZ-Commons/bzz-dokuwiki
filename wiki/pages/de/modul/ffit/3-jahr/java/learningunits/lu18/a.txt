@@ -1,0 +1,37 @@
+====== LU18a - Arbeitspakete ======
+
+Ein sehr zentraler Aspekt bei Projekten ist das herunterbrechen des gesamten Projektes in einzelne Arbeitspakete/Stories/Tasks.
+
+==== Backlog ====
+
+Der Backlog enthält alle Tasks. Beim "Backlog grooming" werden die Tasks vorbereitet, geschätzt und nach Priorität sortiert. Falls der Aufwand zu gross ist für einen Sprint, sollte der Task weiter heruntergebrochen werden. Wichtig ist es auch allfällige Abhängigkeiten zwischen Tasks zu erkennen und zu berücksichtigen.
+
+==== Board ====
+Ein Projekt-Board dient dazu den Status der einzelnen Tasks abzubilden. Besonders bei agilem Projektmanagement sind die Sprint-Boards, Kanban-Boards etc. ein zentrales Werkzeug, um einen Überblick über die Fortschritt der Iteration zu erhalten.
+
+Die Spalten entsprechen quasi dem Status des der Tasks (Ready, In Progress, Done), wobei man diverse weitere Spalten definieren kann (ToDo, Verify/Test, ...). 
+Die Einzelnen Task wandern im Verlauf der Iteration (Sprint) von links nach rechts. Ein Kerngedanke bei Kanban ist es, nie zu viele Tasks miteinander zu bearbeiten, sondern nach Möglichkeit immer zuerst angefangene Tasks abzuschliessen.
+
+Oftmals wird auch definiert, welche Bedingungen erfüllt sein muss, damit ein bestimmter Status gesetzt werden kann.
+
+Beispiel Definition of Ready (DoR): 
+  * Der Aufwand wurde vom Entwicklungsteam geschätzt.
+  * Mindestens ein Akzeptanzkriterium ist definiert, das beschreibt, wann die Story als erledigt gilt.
+  * Alle internen und externen Abhängigkeiten sind identifiziert und geklärt.
+
+Beispiel Definition of Done (DoD):
+  * Der Code ist gemäss Richtlinien implementiert und formatiert.
+  * Die Build Pipeline ist grün, es gibt keine fehlerhaften Tests.
+  * Das Code-Review wurde durchgeführt.
+
+Häufig dafür verwendete Produkte sind zum Beispiel Atlassian Jira, Miro, Trello, ...
+
+^ ^ {{:de:modul:ffit:3-jahr:java:learningunits:lu18:project_board_jira.png?350|}} \\ ©[[https://www.atlassian.com/agile/project-management/scrum-board|Atlassian]] ^ {{:de:modul:ffit:3-jahr:java:learningunits:lu18:project_board_miro.png?350|}} \\ ©[[https://miro.com/agile/what-is-sprint-planning-and-review/|Miro]]^ {{:de:modul:ffit:3-jahr:java:learningunits:lu18:project_board_trello.png?350|Agil}} \\ ©[[https://planyway.com/blog/how-to-use-trello-for-project-management|Planway]] ^
+
+==== Dokumentation ====
+Es ist relativ fehleranfällig, wenn die Implementierung von Code und dessen Dokumentation getrennt sind.
+Sobald Änderungen nicht konsequent nachgetragen sind oder die Dokumentation eine kritische Grösse erreicht, wird es sehr mühsam Codeänderungen nachzuvollziehen.
+
+Daher ist es sehr empfohlen die einzelnen Commits mit den Tasks zu verknüpfen...
+
+''TODO'' 
