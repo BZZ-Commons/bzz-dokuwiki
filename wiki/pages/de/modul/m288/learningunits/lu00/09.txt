@@ -1,0 +1,97 @@
+====== LU00h - LB2 - Fragensammlung für Fachgespräch ======
+
+===== Rahmenbedingungen =====
+  * **Dauer**: Ca. 30-45 Minuten (abhängig von der Vorbereitung und der Expertise der Kandidaten)
+  * **Art**: Einzel-Fachgespräch basierend auf  verschiedene Fälle (Fragen siehe unten)
+  * **Medium**: Videorecoring via TEAMS
+  * **Hinweis**: 
+    * Es werden verschiedene Szenarien durchgegegangen, d.h. es muss programmiert werden.
+    * <color #ed1c24>Das Beherrschen der eigenen Intrastruktur (Editor, Filenamangement, Ausführen von JS-Code, Konsolenausgabe, Browswerausgabe) wird vorausgesetzt.
+</color>
+
+===== Bewertungskriterien =====
+  * Beherrschung der eigenen Infratstruktur (Grundlage für alles andere)
+  * Bearbeitung von je 2-3 Fragen aus den 8 Teilkapitel
+  * Für jede beantwortete Fragen wird bis zu 3 Punkte vergeben: 
+    * 3 Pkt: Vollständig und korrekt
+    * 2 Pkt: Grösstenteils vollständig/korrekt, kleinere formale Fehler
+    * 1 Pkt: Grundsätzlich korrekt, formale und inhaltliche Fehler, Antwort nicht vollständig
+    * 0 Pkt: Antworten inhaltlich falsch oder formal grob fehlerhaft
+
+Die nachfolgenden Stichworte/Fragen können als Grundlage für das Fachgespräch dienen.
+
+===== Teil 1: JS Allgemein =====
+  * 1.1 Zusammenhang zwischen Java und JavaScript.
+  * 1.2 Aktuelle Version von JS.
+  * 1.3 Erklärung einer Client-Server-Architektur.
+  * 1.4 Wo kann JS ausgeführt werden in einer CS Architektur.
+  * 1.5 Wofür wird JS im Frontend verwendet? Nennung von konkreten Einsatzbeispielen.
+
+===== Teil 2: Handling der eigenen Infrastruktur =====
+  * 2.1 Kann die Dateistruktur im Codeeditor aufzeigen.
+  * 2.2 Kann JS-Skripte im Codeditor ausführen (Commandline oder Editor-Menu).
+  * 2.3 Kann einfache Nachrichten via JS im Terminal ausgeben.
+  * 2.4 Kann Werte direkt beim Ausführungen des Scripts via Commandline an das Script übergeben.
+
+===== Teil 3: Keywords + Variablen =====
+  * 3.1 Was bewirken die Keywords und welche gibt es in JS?
+  * 3.2 Unterschied zwischen Deklaration und Initialisierung.
+  * 3.3 Ein Name soll gespeichert werden: Vollständige Codezeile.
+  * 3.4 Der Name //Muster// soll in einer entsprechenden Variable gespeichert werden. Vollständige Codezeile.
+  * 3.5 Die PLZ //8953// soll in einer entsprechenden Variable gespeichert werden. Vollständige Codezeile.
+  * 3.6 Der aktuelle //Mehrwersteuersatz// der Schweiz von 8.1% soll in einer entsprechenden Variable gespeichert werden. Vollständige Codezeile.
+
+===== Teil 4: Selections =====
+  * 4.1 Programmierung einfache Selektion - Beispielsweise: 
+    * Wenn mehr als 10 Zigaretten pro Tag: Konsolenmeldung //Sie rauchen zuviel!//
+  * 4.2 Programmierung zweifache Selektion - Beispielsweise: 
+    * Wenn mehr als 20 Zigaretten pro Tag: Konsolenmeldung //Sie rauchen zuviel!//
+    * Darunter Konsolenmeldung //Sie rauchen viel!//
+  * 4.3 Programmierung mehrfache Selektion - Beispielsweise: 
+    * Wenn mehr als 20 Zigaretten pro Tag: Konsolenmeldung //Sie rauchen zuviel!//
+    * Bei 20-10 Zigaretten: Konsolenmeldung //Sie rauchen viel!//
+    * Und darunter (9-1): //Ihr Rauchverhalten ist OK//bei  in der Konsole ausgegeben werden.
+    * Bei weniger als 1 (sonst): Konsolenmeldung //Nicht rauchen spart viel Geld!!//
+  * 4.4 Selektionen basierend auf mindestens 2 Kriterien mitttels AND (&&) umsetzten können.
+  * 4.5 Selektionen basierend auf mindestens 2 Kriterien mitttels OR (||) umsetzten können.
+
+===== Teil 5: Loops =====
+  * 5.1 (for) Zählerschleife umsetzten können (Summen oder Produkt bilden unter Verwendung der Laufvariablen
+  * 5.2 Schrittweiten grösser 2 Umsetzten können (bsp: alle geraden Zahlen)
+  * 5.3 Zählerschleife Rückwärts einsetzten können (bsp: 30 bis 15)
+  * 5.4 Wahrheitsbedingte Schleifen umsetzten können. 
+  * 5.5 Wahrheitsbedingte Schleifen basierend auf mindestens 2 Bedingungen umsetzten können (&& bzw. ||)
+
+===== Teil 6: Arrays =====
+  * 6.1 1-Dimensionale Arrays anlegen und als gesamtes oder mittels Index ausgeben und bearbeiten können.
+  * 6.2 2-Dimensionale Arrays anlegen und als gesamtes oder mittels Index ausgeben und bearbeiten können. 
+  * 6.3 3-Dimensionale Arrays anlegen und als gesamtes oder mittels Index ausgeben und bearbeiten können. 
+  * 6.4 Assoziative Arrays(Key) anlegen und als gesamtes oder mittels Index ausgeben und bearbeiten können.
+
+===== Teil 7: Functions =====
+  * Funktionen ohne Parameter nach Vorgabe erstellen und aufrufen können.
+  * Funktionen mit Parametern nach Vorgabe erstellen, aufrufen oder Rückgabewerte in direkt ausgeben oder in Variablen speichern können. 
+
+===== Teil 8: Objekte =====
+  * 8.1 Objekte nach Vorgaben anlegen und verwenden können.
+    * Attribute nach Vorgabe
+    * Fähigkeiten nach Vorgabe
+ 
+===== Teil 9: HTML-DOM Einbindung =====
+  * 9.1 Den Begriff HTML-DOM in eigenen Worten beschreiben
+  * 9.2 Zusammenhang zwischen JavaScript und HTML-DOM darlegen können.
+  * 9.3 Den Zugriff JS-Zugriff auf HTML-DOM Elemente beschreiben können.
+  * 9.4 Die wichtigsten vier Knotentypen/NodeTypes nennen können.
+  * 9.5 Die Funktion der wichtigsten vier Nodetypes in eigenen Worten erklären können.
+  * 9.6 Verschiedene DOM-Selektor-Methoden kennen und unterscheiden können.
+  * 9.7 HTML-Elemente gezielt auswählen und verändern können.
+  * 9.8 Situationsgerecht den passenden Selektor auswählen können.
+
+
+
+
+
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir
