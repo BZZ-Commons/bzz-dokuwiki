@@ -55,9 +55,9 @@ Je nach Status wird dieser von der Fach-Lehrperson oder der Nachprüfungs-Aufsic
 | Pnab | Der Lernende hat die Prüfung nicht absolviert. |  | X |
 | Gelöscht | Nachprüfung wurde gelöscht. | X | X |
 
-===== Arbeitsschritte für die Aufsicht =====
+===== Arbeitsschritte für die Hauptaufsicht =====
 ==== Eingang der Unterlagen prüfen ====
-Die Aufsicht prüft regelmässig, ob die Prüfungsunterlagen im Fach deponiert wurden.
+Die Hauptaufsicht prüft regelmässig, ob die Prüfungsunterlagen im Fach deponiert wurden.
 Sie stellt den Status auf "erhalten" und teilt dem Kandidaten ein Zimmer zu.
 
 ==== Erinnerung / Mahnung ====
@@ -84,10 +84,17 @@ Liefert die Fachlehrperson die nötigen Unterlagen kurzfristig, muss sie sich se
 
 ==== Am Nachprüfungstag ====
 Die Aufsichtspersonen ...
-  - ... weisen den Kandidaten ihr Zimmer / Sitzplatz zu. Sie drucken dazu die Deckblätter aus und verteilen diese auf die Tische.
+  - ... weisen den Kandidaten ihr Zimmer / Sitzplatz zu. Sie drucken dazu die Deckblätter aus und verteilen diese auf die Tische. 
   - ... überprüfen die Identität der Kandidaten.
   - ... geben die Prüfungsunterlagen ab und sammeln die Resultate ein.
   - ... füllen die Angaben "abgemeldet", "nicht abgemeldet" auf dem Deckblatt aus.
+
+<WRAP center round tip 60%>
+Es soll darauf geachtet werden dass LE mit gleichen Prüfungen etweder an separaten Tischen oder mit Karton getrennt an die Tische gesetzt werden. Smartphones, Watches, Googles und andere smarte Wearables müssen abgelegt werden.
+
+Die IT-Lehrperson ist am Prüfungstag für IS-Test und andere IT-Belange zuständig.
+</WRAP>
+
 
 Tritt ein Kandidat zur Prüfung an, so ändere den Status zu **"absolviert"**.
 Andernfalls ändere den Status zu **"pnab"**.
