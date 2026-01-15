@@ -1,5 +1,28 @@
 ====== LU12.L03 - Lotto ======
+===== authenticate.py =====
+~~NOCACHE~~
+{{gh>https://github.com/templates-python/m319-lu12-a03-lottery/blob/solution/authenticate.py}}
 
+===== lottery.py =====
+{{gh>https://github.com/templates-python/m319-lu12-a03-lottery/blob/solution/lottery.py}}
+
+===== main.py =====
+{{gh>https://github.com/templates-python/m319-lu12-a03-lottery/blob/solution/main.py}}
+
+===== menu.py =====
+{{gh>https://github.com/templates-python/m319-lu12-a03-lottery/blob/solution/menu.py}}
+
+===== money.py =====
+{{gh>https://github.com/templates-python/m319-lu12-a03-lottery/blob/solution/money.py}}
+
+===== numeric_input.py =====
+{{gh>https://github.com/templates-python/m319-lu12-a03-lottery/blob/solution/numeric_input.py}}
+
+===== person.py =====
+{{gh>https://github.com/templates-python/m319-lu12-a03-lottery/blob/solution/person.py}}
+
+===== ticket.py =====
+{{gh>https://github.com/templates-python/m319-lu12-a03-lottery/blob/solution/ticket.py}}
 
 {{tag>m319-AnG}}
 [[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter
