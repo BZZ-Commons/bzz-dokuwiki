@@ -1,0 +1,98 @@
+====== LB03 - Abgabe ======
+
+===== Was müssen Sie abgeben? =====
+Sie geben **zwei Dinge** ab:
+
+  - **Erklär-Video** (Link in Moodle)
+  - **ZIP-Datei** mit allen Projektdateien (Upload in Moodle)
+
+<WRAP center box round 80%>
+Pro Team muss nur eine Person die Abgabe einreichen. Sie können Ihr Team (sofern das funktioniert) hier in Moodle auswählen.
+</WRAP>
+
+===== 1) Erklär-Video abgeben (über OneDrive) =====
+  * Laden Sie Ihr Erklär-Video in Ihren **OneDrive (BZZ-Account)** hoch.
+  * Erstellen Sie danach einen **Freigabe-Link**.
+
+==== Freigabe richtig setzen ====
+Sie haben zwei Möglichkeiten:
+
+  - **Option A:** Mich persönlich hinzufügen: **Guido Koch**  
+    * Rechte: **Anschauen + Downloaden** (ich muss das Video downloaden können)
+  - **Option B:** Freigabe an alle innerhalb des **BZZ**  
+    * Rechte: **Anschauen + Downloaden**
+
+==== Link in Moodle einreichen ====
+  * Kopieren Sie den Freigabe-Link.
+  * Fügen Sie den Link in Moodle bei **„Texteingabe online“** ein.
+
+==== Datei-Benennung Video ====
+Benennen Sie die Videodatei so:
+
+<WRAP box round center 80%>
+Vorname1_Nachname1_Vorname2_Nachname2_(Vorname3_Nachname3)_Klasse_M290_LB03.mp4
+</WRAP>
+
+Beispiel (2er-Team):
+<WRAP box round center 80%>
+Max_Muster_Lena_Beispiel_ME23a_M290_LB03.mp4
+</WRAP>
+
+===== 2) ZIP-Datei abgeben (Upload in Moodle) =====
+Laden Sie in Moodle bei **„Dateiabgabe“** eine ZIP-Datei hoch.
+
+===== Inhalt der ZIP-Datei =====
+Die ZIP-Datei muss mindestens enthalten:
+
+  * **ERM/ERD** (PDF oder PNG oder Teil von Word-Doc mit DDL/DML/DCL-Code)
+  * **Datenbank-Dump** (''*.sql'')  
+    * Wiederherstellbar inkl. Tabellenstruktur und Daten
+  * **SQL-Dateien / Skripte** (Format frei: ''*.sql'', ''*.txt'', ''*.md'', ''*.pdf'', ''*.docx'')  
+    * DDL (Tabellen anlegen)  
+    * DML (Startdaten einfügen)  
+    * DCL (AppUser erstellen + Rechte vergeben)
+  * **Backend-Server-Projekt** (mindestens):
+    * ''index.js''
+    * ''connect.js''
+    * ''package.json''
+    * ''package-lock.json''
+    * optional: weitere Dateien (wenn Ihr Server sie braucht)
+    * optional: ''.env'' oder ''.env.example''
+  * **Nicht in die ZIP!**
+    * ''node_modules'' (muss nicht mit)
+    * ''.idea'' (muss nicht mit)
+
+<WRAP center box round 80%>
+**Tipp:** Ihr Projekt muss auf einem anderen Rechner mit \\ 
+''npm install'' und danach ''node index.js'' oder ''npm run dev'' oder ''npm start'' startbar sein.
+</WRAP>
+
+==== Datei-Benennung ZIP ====
+Benennen Sie die ZIP-Datei so:
+
+<WRAP box round center 80%>
+Vorname1_Nachname1_Vorname2_Nachname2_(Vorname3_Nachname3)_Klasse_M290_LB03.zip
+</WRAP>
+
+Beispiel:
+<WRAP box round center 80%>
+Max_Muster_Lena_Beispiel_ME23a_M290_LB03.zip
+</WRAP>
+
+===== Eigenleistung & Verständnis =====
+<WRAP center box round 80%>
+Sie müssen Ihre Lösung erklären können: \\ 
+**SQL, Datenmodell (ERM/ERD), API-Routen, Tests mit Postman.** \\ 
+Wenn zentrale Teile nicht fachlich korrekt begründet werden können, kann der entsprechende Bereich **mit 0 Punkten** bewertet werden.
+</WRAP>
+
+===== Verspätete Abgaben =====
+<WRAP center box round 80%>
+Bei verspäteter Abgabe wird pro **24 Stunden Verspätung** eine ganze Note abgezogen.
+</WRAP>
+
+===== Nicht-Abgabe =====
+<WRAP center box round 80%>
+Die Projektarbeit ist Teil der Modulnote und **nicht optional**. \\ 
+Bei Nicht-Abgabe (ohne Dispens/ärztliches Zeugnis) wird die Note **1.0** eingetragen.
+</WRAP>
