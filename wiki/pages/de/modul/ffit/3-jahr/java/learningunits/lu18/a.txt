@@ -1,6 +1,23 @@
-====== LU18a - Arbeitspakete ======
+====== LU18a - Arbeitspakete/Tasks ======
 
-Ein sehr zentraler Aspekt bei Projekten ist das herunterbrechen des gesamten Projektes in einzelne Arbeitspakete/Stories/Tasks.
+Ein sehr zentraler Aspekt bei Projekten ist das herunterbrechen des gesamten Projektes in einzelne Arbeitspakete (Work Packages) bzw. Aufgaben (Tasks).
+
+Je nach Projektmethode heissen diese Stücke etwas anders, aber das Prinzip bleibt ungefähr das gleiche.
+
+^ Wasserfall ^ Agil ^
+| <WRAP>
+  * Projekt
+  * Teilprojekt
+  * Arbeitspaket
+  * Arbeitsschritt
+</WRAP> | <WRAP>
+  * Epic
+  * (User) Story
+  * Task
+  * Bug
+</WRAP> |
+
+Für unsere Projekte werden wir in der Regel mit Epics und Stories arbeiten.
 
 ==== Backlog ====
 
@@ -9,8 +26,8 @@ Der Backlog enthält alle Tasks. Beim "Backlog grooming" werden die Tasks vorber
 ==== Board ====
 Ein Projekt-Board dient dazu den Status der einzelnen Tasks abzubilden. Besonders bei agilem Projektmanagement sind die Sprint-Boards, Kanban-Boards etc. ein zentrales Werkzeug, um einen Überblick über die Fortschritt der Iteration zu erhalten.
 
-Die Spalten entsprechen quasi dem Status des der Tasks (Ready, In Progress, Done), wobei man diverse weitere Spalten definieren kann (ToDo, Verify/Test, ...). 
-Die Einzelnen Task wandern im Verlauf der Iteration (Sprint) von links nach rechts. Ein Kerngedanke bei Kanban ist es, nie zu viele Tasks miteinander zu bearbeiten, sondern nach Möglichkeit immer zuerst angefangene Tasks abzuschliessen.
+Die Spalten entsprechen quasi dem Status der Tasks (Ready, In Progress, Done), wobei man diverse weitere Spalten definieren kann (ToDo, Verify/Test, ...). 
+Die einzelnen Task wandern im Verlauf der Iteration (Sprint) von links nach rechts. Ein Kerngedanke bei Kanban und weiteren agilen Vorgehensmethoden ist es, nie zu viele Tasks miteinander zu bearbeiten, sondern nach Möglichkeit immer zuerst angefangene Tasks abzuschliessen.
 
 Oftmals wird auch definiert, welche Bedingungen erfüllt sein muss, damit ein bestimmter Status gesetzt werden kann.
 
@@ -32,6 +49,4 @@ Häufig dafür verwendete Produkte sind zum Beispiel Atlassian Jira, Miro, Trell
 Es ist relativ fehleranfällig, wenn die Implementierung von Code und dessen Dokumentation getrennt sind.
 Sobald Änderungen nicht konsequent nachgetragen sind oder die Dokumentation eine kritische Grösse erreicht, wird es sehr mühsam Codeänderungen nachzuvollziehen.
 
-Daher ist es sehr empfohlen die einzelnen Commits mit den Tasks zu verknüpfen...
-
-''TODO'' 
+Daher ist es State of the Art, die einzelnen Commits mit den Tasks zu verknüpfen. Anstatt auf kommerzielle Produkte abhängig zu sein, können wir in unserem Fall dasselbe Ergebnis erzielen, indem wir die "Issues" von Github nutzen.
