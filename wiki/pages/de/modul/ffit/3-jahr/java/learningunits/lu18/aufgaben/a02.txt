@@ -1,0 +1,14 @@
+==== LU18.A02 Dummy-Issues lösen ====
+
+  - Wählen Sie einen Issue auf Ihrem Board aus
+  - Fügen Sie sich bei den "Assignes" hinzu. (Dies stellt in der Praxis sicher, dass nicht mehrere Personen unabhängig voneinander dieselben Stories umsetzen.)
+  - Ändern Sie den Status des Issues auf dem Board auf "In Progress". Entweder auf dem Board via Drag&Drop in die korrekte Spalte oder im Issue via Dropdown.
+  - Erstellen Sie einen Commit im entsprechenden Repository, wobei Sie die Commit-Message mit einer Raute, gefolgt von der Id des Issues beginnen. Beispiele: https://github.com/AlexanderPeter/cicd/commits/develop/
+  - Überprüfen Sie, ob beim Issue der Commit gelistet wird.
+  - Da Sie nun das Issue "gelöst" haben, können Sie den Status auf "In review" setzen.
+  - Machen Sie ein kleines "Code-Review" aller Commits des Issues und setzen Sie, sofern Sie keine Einwände haben, den Status auf Done.
+  - Schliessen Sie das Issue
+
+Glückwunsch, Sie haben erfolgreich eine Story abgearbeitet 🎉.
+
+Behalten Sie den Ablauf im Hinterkopf, da Sie bei den kommenden Projekten immer danach vorgehen werden.

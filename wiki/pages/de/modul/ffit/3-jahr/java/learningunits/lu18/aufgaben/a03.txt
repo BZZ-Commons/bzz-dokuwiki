@@ -1,0 +1,9 @@
+==== LU18.A03 Pipeline anlegen ====
+
+Leider funktioniert die AWS-Umgebung noch nicht, aber wir können diesen Schritt auch bei Github machen.
+
+  - Öffnen Sie Ihr LibraryApp-Projekt: https://github.com/<GITHUB_NAME>/ffit-lu02-library-app/actions
+  - Stellen Sie sicher, dass der Workflow "Java CI with Gradle" nicht mehr deaktiviert ist.
+  - Machen Sie einen Dummy-Commit, um den Workflow (bzw. die Pipeline) auszulösen.
+  - Stellen Sie sicher, dass der Workflow grün durchläuft und korrigieren Sie andernfalls.
+

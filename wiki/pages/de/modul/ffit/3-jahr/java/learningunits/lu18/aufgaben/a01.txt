@@ -1,0 +1,16 @@
+==== LU18.A01 Github-Project erstellen ====
+
+Schauen Sie sich das folgende Projekt-Board-Beispiel an und überlegen Sie sich welche Spalten in einem Teamprojekt Sinn ergeben:
+  * https://github.com/users/AlexanderPeter/projects/1
+
+Erstellen Sie in ihrem Github-Account ein "Project".
+  - https://github.com/<GITHUB_NAME>?tab=projects
+  - "New project" klicken
+  - Wählen Sie zum Beispiel "Kanban" oder "Iterative development" als Template, um ein typisches agiles Board zu erhalten. Alternativ können Sie natürlich auch unter "Start from scratch" ein leeres "Board" erstellen und nach Ihren Bedürfnissen anpassen.
+
+Fügen Sie bei mindestem einem Ihrer Repositories, welches kein Fork ist, einige Issues hinzu.
+  - https://github.com/<GITHUB_NAME>/<REPOSITORY_NAME>/issues öffnen
+  - "New issue" klicken
+  - Title, description und Projects abfüllen. Das Issue kann alternativ via dem Board dem Project hinzugefügt werden.
+
+Betrachten Sie Ihr Board und stellen Sie sicher, dass die Issues der verschiedenen Repositories angezeigt werden.
