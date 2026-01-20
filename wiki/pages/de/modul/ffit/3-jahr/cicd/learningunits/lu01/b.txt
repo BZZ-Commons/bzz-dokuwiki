@@ -1,7 +1,20 @@
 ====== LU01b - Linting & Formatting ======
 
-==== Linting ====
-''TODO''
 
 ==== Formatting ====
-''TODO''
+
+Gängige Formatter-Bibliotheken
+  * Javascript, Typescript, HTML, CSS, JSON -> Prettier
+  * Python -> black, pep8, ...
+
+==== Linting ====
+Linting (dt. "fusseln") bezeichnet das automatische finden und teilweise sogar korrigieren von möglichen Fehlern o.Ä. anhand von einem definierten Regelset. Entsprechende Bibliotheken sind für diverse Sprachen erhältlich.
+
+Gängige Linter-Bibliotheken
+  * Javascript, Typescript -> ESLint(https://eslint.org/) , \\ TSLint wurde eingestellt und ist daher nicht mehr empfohlen
+  * Python -> Pylint (https://www.pylint.org/)
+  * Java -> PMD
+  * Diverse Sprachen -> SonarLint
+
+
+

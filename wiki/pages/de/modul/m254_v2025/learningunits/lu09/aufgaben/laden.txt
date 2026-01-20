@@ -1,0 +1,42 @@
+====== LU09.A11: E-Auto-Ladevorgang modellieren ======
+
+===== Rahmenbedingungen =====
+
+  * Sozialform: Einzelarbeit/Partnerarbeit
+  * Zeitbudget: 30 Minuten
+  * Hilfsmittel: Unterrichtsunterlagen
+  * Abgabe: PDF mit Lösung des Geschäftsprozesses in der BPMN-Notation.
+
+
+===== Ausgangslage =====
+Sie haben eine neue E-Auto-Lade-App entwickelt, mit der Sie Ladestationen suchen und den Ladevorgang bezahlen können.
+
+===== Arbeitsauftrag ===== 
+Um potenzielle Investoren von Ihrer Lösung zu überzeugen, modellieren Sie einen typischen Ladevorgang mit Ihrer E-Auto-Lade-App in der BPMN-Notation.
+==== Vorgaben ====
+Der Geschäftsprozess soll den nachfolgenden Ablauf vollständig und logisch abbilden: 
+
+  - Der/die Fahrer:in stellt fest, dass der Ladestand des E-Autos niedrig ist.
+  - Mit der E-Auto-Lade-App wird nach Ladestationen in der Nähe gesucht.
+  - Die App zeigt eine Liste von Ladestationen mit aktuellen Verfügbarkeitsinformationen an.
+  - Der/die Fahrer:in wählt eine Ladestation mit freiem Ladepunkt aus und fährt dorthin.
+  - An der Ladestation wird überprüft, ob der gewählte Ladepunkt noch frei ist:
+  - Ist der Ladepunkt frei, startet der/die Fahrer:in den Ladevorgang über die App.
+  - Ist der Ladepunkt inzwischen belegt, sucht der/die Fahrer:in mit der App eine alternative Ladestation.
+  - Der Ladevorgang wird durchgeführt.
+  - Nach Abschluss wird der Ladevorgang über die App bezahlt.
+
+==== Hinweise zur Modellierung ====
+
+Verwenden Sie BPMN 2.0 mit:
+  * Start-, Zwischen- und Endereignissen
+  * Aktivitäten
+  * Exklusiven Gateways (XOR) für Entscheidungen
+
+Achten Sie auf:
+  * eine klare Abfolge der Aktivitäten,
+  * nachvollziehbare Entscheidungslogik,
+  * saubere Endzustände.
+
+Der Fokus liegt auf dem Geschäftsprozess, nicht auf der technischen Umsetzung der App.
+
