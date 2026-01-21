@@ -15,15 +15,59 @@ Die Lernenden erarbeiten ihr eigenes Portfolio (OneNote, Word, [[https://www.not
 === Praxisprojekt ===
 Erstellen Sie eine Flask-Applikation die möglichst viele Funktionale-Komponenten enthält. Es darf sich bei der Anwendung nicht um eine Todo-Liste oder um eine Einkaufsliste handeln.
 
+<WRAP center round tip 70%>
+**Tipp:** Wählen Sie ein Projekt, bei dem echte Daten verarbeitet werden (z.B. Suche/Filter/Sortierung, Statistiken, Imports/Exports, Berechnungen, Regeln). Dann können Sie die Kompetenzen B1–B4 einfacher belegen.
+</WRAP>
 
 === Portfolio ===
-
-Für jedes bearbeitete Kompetenzfeld (A1G, A1E, etc) müssen ein mindestens 1000 Zeichen (exkl. Leerschläge) langer Lernnachweis erstellt werden, **zusätzlich** muss ein Code-Beispiel (die Zeichen im Code zählen nicht zu den 1000 Zeichen dazu) zu diesem Kompetenzfeld eingefügt werden. Das verwendete Code-Beispiel dazu, muss aus der Flask-Applikation des Praxisprojektes sein. Ein Lernnachweis könnte folgendermassen aussehen --> [[modul:m323:leistungsbeurteilungen:lb02:lernnachweis|Beispiel]]
+Für jedes bearbeitete Kompetenzfeld (A1G, A1E, etc) müssen ein mindestens 1000 Zeichen (exkl. Leerschläge) langer Lernnachweis erstellt werden, **zusätzlich** muss ein Code-Beispiel (die Zeichen im Code zählen nicht zu den 1000 Zeichen dazu) zu diesem Kompetenzfeld eingefügt werden.
+Das verwendete Code-Beispiel dazu, muss aus der Flask-Applikation des Praxisprojektes sein.
+Ein Lernnachweis könnte folgendermassen aussehen --> [[modul:m323:leistungsbeurteilungen:lb02:lernnachweis|Beispiel]]
 
 <WRAP center round info 60%>
 Sie können auch einen Lernnachweis über ein ganzes Kompetenzband z.B ''A1G, A1F, A1E'' machen, dann muss dieser Nachweis allerdings 3000 Zeichen enthalten und auch 3 Beispiele. Laden Sie diesen Nachweis dann in jeder passenden Moodle-Abgabe hoch.
 </WRAP>
 
+===== Was gehört in einen Lernnachweis? =====
+Ein Lernnachweis soll zeigen, dass Sie ein Konzept **verstanden**, **im Projekt angewendet** und **reflektiert** haben.
+
+<WRAP round box 80%>
+**Pflichtbestandteile pro Kompetenzfeld**
+  * **Textteil:** mind. **1000 Zeichen** (ohne Leerzeichen) Beschreibung/Reflexion/Dokumentation
+  * **Code-Beispiel:** Auszug aus **Ihrem Flask-Projekt** (Code zählt nicht zu den 1000 Zeichen)
+  * **Bezug zur Kompetenz:** Im Text muss klar werden, *was* genau an Ihrem Beispiel die Kompetenz belegt
+</WRAP>
+
+==== Empfohlener Aufbau (Vorlage) ====
+<WRAP round box 80%>
+  * **Kompetenzfeld:** (z.B. B4F)
+  * **Feature im Flask-Projekt:** (z.B. Statistik-Seite, Suche/Filter, Import/Export, Auth, etc.)
+
+  - ** Kon text & Ziel:** Was soll das Feature lösen? Welche Inputs/Outputs gibt es?
+  - ** Konzept/Erklärung:** Erklären Sie das Konzept in eigenen Worten (nicht nur Definition).
+  - ** Umsetzung im Projekt:** Vorgehen, Entscheidungen, Alternativen (warum diese Lösung?).
+  - ** Code-Beispiel + Einordnung:** Codeauszug + 2–5 Sätze, *was* daran die Kompetenz zeigt.
+  - ** Test/Überprüfung:** Mind. 2 konkrete Testfälle (Input → erwarteter Output) oder Debugging-Nachweis.
+  - ** Reflexion & Transfer:** Was war schwierig? Was gelernt? Wie würden Sie es nächstes Mal besser machen?
+</WRAP>
+
+==== Hinweise pro Kompetenzband (M323) ====
+<WRAP center round info 80%>
+**A1 (Paradigmen / Konzepte)**: Begriff korrekt erklären + Vergleich zu OO/prozedural + Bezug zum Projekt (wo/wie angewendet oder bewusst nicht angewendet und warum).\\
+**B1 (Algorithmen)**: Algorithmus aus dem Projekt erklären; in Teilfunktionen zerlegen; zu einem Ablauf zusammensetzen.\\
+**B2 (Funktionen als Objekte / Higher-Order / Closures)**: Funktion speichern/weitergeben; Funktion als Argument; Closure sinnvoll einsetzen (z.B. Validator-/Formatter-Factory).\\
+**B3 (Lambda)**: Nur verwenden, wenn es lesbar bleibt (sonst lieber benannte Funktion). Lambdas können z.B. für Sortierung (key=...) genutzt werden.\\
+**B4 (Map/Filter/Reduce)**: Auf echte Projektdaten anwenden; kombinieren; komplexere Aufgaben wie Aggregation/Transformation dokumentieren.\\
+**C1 (Refactoring)**: Technik benennen; Vorher/Nachher beschreiben; sicherstellen, dass Verhalten gleich bleibt (Tests/Edge-Cases).
+</WRAP>
+
+==== Typische Fehler (vermeiden) ====
+<WRAP center round important 80%>
+  * Zu viel Theorie/Projektbeschreibung, zu wenig **Kompetenzbezug** und **Reflexion**
+  * Code-Snippet ohne Erklärung, **wo** es im Projekt hingehört (Route/Service/Helper/Template)
+  * Keine Überprüfung: "hat funktioniert" ohne Testfälle/Beleg
+  * 1000 Zeichen werden mit Fülltext erreicht statt mit konkreten Learnings/Entscheiden
+</WRAP>
 
 ==== Abgabe ====
 Laden Sie die die Lernnachweise nach Kompetenzfeld geordnet in Moodle hoch. Das genau Format der Abgabe klären Sie bitte mir Ihrer Lehrperson.
@@ -31,9 +75,9 @@ Laden Sie die die Lernnachweise nach Kompetenzfeld geordnet in Moodle hoch. Das 
 Achten Sie darauf die Kriterien zu erfüllen:
   * 1000 Zeichen Beschreibung/Reflexion/Dokumentation
   * Code-Beispiel aus Flask-Praxisprojekt
+  * Klarer Bezug zum Kompetenzfeld (A1G, B4F, ...)
 
 ==== Bewertung der Lernnachweise ====
-
 In diesem Kurs verwenden wir eine Punkteskala von 1 bis 3, um eure Lernnachweise im Kompetenzraster zu bewerten. Hier ist die Bedeutung jeder Punktzahl:
 
   * **1 Punkt**: Die Arbeit erfüllt minimale Anforderungen, aber es fehlen entscheidende Elemente oder es gibt mehrere Fehler. Es besteht deutliches Verbesserungspotenzial.
@@ -41,6 +85,14 @@ In diesem Kurs verwenden wir eine Punkteskala von 1 bis 3, um eure Lernnachweise
   * **2 Punkte**: Die Arbeit ist solide und erfüllt die meisten, wenn nicht alle Anforderungen. Kleinere Fehler könnten vorhanden sein, aber sie beeinträchtigen das Gesamtverständnis nicht wesentlich.
 
   * **3 Punkte**: Die Arbeit ist ausgezeichnet und übertrifft die Anforderungen. Sie zeigt ein tiefes Verständnis des Themas und/oder besondere Kreativität oder Eigeninitiative.
+
+<WRAP center round tip 80%>
+**Was braucht es typischerweise für 3 Punkte?**
+  * Begründete Entscheidungen (warum diese Lösung, welche Alternative?)
+  * Konkrete Nachweise (Testfälle, Edge-Cases, Debugging-Fix)
+  * Sauberer, passender Codeauszug mit kurzer Einordnung (nicht einfach reinkopiert)
+  * Reflexion + Transfer (wie wiederverwenden? was verbessern?)
+</WRAP>
 
 ==== Notengebung ====
 Total sind 18 Kompetenzbereiche zu belegen. 
