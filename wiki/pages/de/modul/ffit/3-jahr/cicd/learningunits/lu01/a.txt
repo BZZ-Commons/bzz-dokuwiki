@@ -1,5 +1,16 @@
 ====== LU01a - AWS Build-Environment ======
 
+==== Ports ====
+^ Port ^ Beschreibung ^
+| 80 | Standard bei HTTP im Browser |
+| 8080 | Alternativer HTTP-Port. Wird von vielen für Admin-Oberfläche verwendet |
+| 9000 | Standard-Port bei SonarQube |
+| 50000 | Port für Jenkins Build Agents |
+| ? | ... |
+
+==== Skizze ====
+
+<code html>
 <html>
 <iframe 
   src="https://viewer.diagrams.net/?url=HIER_DEINE_URL"
@@ -8,3 +19,4 @@
   frameborder="0">
 </iframe>
 </html>
+</code>
