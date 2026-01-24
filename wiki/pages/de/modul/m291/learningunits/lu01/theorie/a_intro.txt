@@ -1,0 +1,47 @@
+====== UI-Elemente lesen (Figma → HTML) ======
+
+<WRAP center round box 80%>
+**Ziel:** Sie können ein UI (z.B. Figma Design) in **Bausteine** zerlegen, diese **gruppieren** und daraus eine saubere HTML-Struktur ableiten.
+</WRAP>
+
+==== Lernziele ====
+  * Sie erkennen typische UI-Elementklassen: **Layout**, **Formular**, **Navigation**, **Anzeige**.
+  * Sie können UI-Teile sinnvoll gruppieren und **sprechende Namen** vergeben.
+  * Sie entscheiden, welche HTML-Elemente semantisch passen (z.B. ''header'', ''nav'', ''main'', ''section'').
+
+==== Vorgehen: In 6 Schritten “UI lesen” ====
+  - **Grobscan:** Was sind die Hauptbereiche? (Header / Main / Footer)
+  - **Navigation finden:** Logo, Menu-Items, evtl. Switch/Buttons.
+  - **Sections finden:** “Hero”, “Cards”, “FAQ”, “Player” usw.
+  - **Gruppieren:** Was gehört zusammen? (Buttons als Gruppe, Menu-Links als Liste, Features als Gruppe)
+  - **Layout überlegen:** 2-Spalten? Zentriert? Wrap auf Mobile? (meist Flexbox/Responsive)
+  - **Wiederholungen erkennen:** Komponenten (Button-Stile, Text-Stile, Spacing-Regeln, Farben)
+
+<WRAP center round box 80%>
+**Merksatz:** Erst **Struktur**, dann **Aussehen**, dann **Interaktivität**.
+</WRAP>
+
+==== UI → HTML Mapping (Mini-Tabelle) ====
+^ UI-Teil ^ Typ ^ Sinnvolles HTML ^ Layout-Idee ^
+| Logo | Anzeige | ''a'' + ''img'' | in Flexbox-Reihe im Header |
+| Menu-Items | Navigation | ''nav'' + ''ul/li/a'' | ''display:flex'' + ''gap'' |
+| Hero-Textblock | Anzeige | ''h1/h3/p'' in Container | Spalte links |
+| Buttons (2 Stück) | Formular/Interaktion | ''button'' in Wrapper | Wrapper: ''display:flex'' |
+| “Features” (2 Bulletpoints) | Anzeige | ''ul/li'' (oder ''div/span'') | Icons via ''::before'' |
+| Dark/Light Switch | Formular/Interaktion | ''input type=checkbox'' (role=switch) | CSS-Switch Pattern |
+| Hero-Bild | Anzeige | ''img'' (evtl. ''srcset'') | Spalte rechts |
+
+==== Übung (10–12 Min.) ====
+  * Markieren Sie im Design (Screenshot) mit Stift:
+    - Header
+    - Navigation
+    - Hero Section
+    - Button-Gruppe
+    - Feature-Gruppe
+  * Schreiben Sie daneben je einen möglichen **HTML-Klassen-Name oder ID-Name** (z.B. ''hero-content'', ''hero-actions'', ''site-nav'').
+
+==== Qualitätscheck (2 Min.) ====
+  - Sind Menu-Links als **Liste** umgesetzt?
+  - Gibt es pro Seite nur **1× h1**?
+  - Haben Bilder sinnvolle **alt**-Texte?
+  - Sind Gruppen wirklich **gruppiert** (Wrapper vorhanden)?

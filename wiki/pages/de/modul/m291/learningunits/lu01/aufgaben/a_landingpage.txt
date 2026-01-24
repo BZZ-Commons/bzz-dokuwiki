@@ -1,0 +1,84 @@
+====== Projekt 1: Landingpage Hero Section (Light/Dark Mode) ======
+
+<WRAP center round box 80%>
+{{ :de:modul:m291:learningunits:lu01:aufgaben:first6.gif?nolink | Landing Page preview}}
+\\
+**Projektziel:** Sie setzen eine Hero Section pixel-nah nach Figma um und bauen einen Light/Dark-Mode Switch mit JavaScript.
+</WRAP>
+
+
+[[m291:ui_elemente_lesen|→ Vorwissen: UI-Elemente lesen (Figma → HTML)]]
+
+==== Lernziele ====
+  * HTML-Struktur mit ''header/nav/main/section'' bauen
+  * CSS: Variablen, Typografie, Flexbox, Responsive (Media Query)
+  * JS: DOM-Elemente abfragen, EventListener, Klassen toggeln
+
+==== Material ====
+  * Figma-Design + Assets (SVG/PNG)
+  * Starter-Ordner (''index.html'', ''resources/'')
+  * Live Server / Preview im Browser
+
+==== Schrittweiser Aufbau ====
+
+=== A: Design analysieren (10 Min.) ===
+  - Identifizieren Sie: **Header**, **Navigation**, **Hero**, **2-Spalten-Layout**, **Switch**
+  - Messen Sie Abstände und Font-Sizes genau (nicht raten).
+  - Legen Sie eine Farbpalette gemäss dem Figma-Design fest → als CSS-Variablen.
+
+=== B: HTML-Struktur (25 Min.) ===
+  - ''<header>'' erstellen: Logo + ''<nav>'' + Switch
+  - ''<main>'' und ''<section>'' für Hero
+  - Textblock (''h3/h1/p'') und Button-Gruppe
+  - Hero-Bild mit ''srcset'' einbauen (um bei Mobile die kleinere Variante des Bildes zu laden)
+
+
+=== C: CSS-Basics (30 Min.) ===
+  - Reset: ''* { margin:0; padding:0; box-sizing:border-box }''
+  - '':root'' Variablen (Farben, Fontgrössen)
+  - Typografie: font-family, font-weight, line-height
+  - Max-Width + Padding in ''.main-wrapper''
+
+=== D: Layout mit Flexbox (30 Min.) ===
+  - Header: Logo links, Navigation mittig, Switch rechts
+  - Hero: 2 Spalten (Text links, Bild rechts)
+  - Buttons als Gruppe (''display:flex'', ''gap'')
+
+=== E: Responsive (30 Min.) ===
+<WRAP center round box 80%>
+{{ :de:modul:m291:learningunits:lu01:aufgaben:rest.gif?nolink | Landing Page responsive preview}}
+\\
+Setzen Sie nun mit CSS Media-Queries das Mobile-Design um.
+</WRAP>
+
+  - Ab einer Breite (z.B. < 1024px):
+    - Hero wird ''flex-direction: column-reverse''
+    - Abstände/Fontgrössen mit Variablen anpassen
+    - Menü wird zu Hamburger
+
+=== Etappe F: JS Interaktivität (30–45 Min.) ===
+1. Elemente abrufen:
+   - ''document.getElementById(...)''
+   - ''document.documentElement''
+2. Funktion ''applyTheme(...)'':
+   - Klasse ''theme-dark'' auf ''<html>'' toggeln
+   - Logo-Datei wechseln
+3. EventListener:
+   - ''change'' auf Checkbox
+
+
+==== Debugging-Checkliste ====
+  * Öffnen Sie DevTools → Console
+  * Prüfen Sie, ob Selektoren etwas finden (nicht ''null'')
+  * Prüfen Sie Pfade zu ''./resources/...''
+
+==== Abgabe-Kriterien ====
+  - Struktur semantisch (nav als Liste)
+  - Layout desktop + mobile korrekt
+  - Switch funktioniert und wechselt Farben + Logo
+  - Code lesbar: sprechende Namen, wenig “magische” Selektoren
+
+==== Stretch Goals ====
+  - Mobile Menu (Hamburger) als echtes ''button'' mit ''aria-expanded''
+  - “prefers-color-scheme” als Default berücksichtigen
+  - Features als ''ul/li'' statt ''span''
