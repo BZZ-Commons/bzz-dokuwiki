@@ -1,84 +1,225 @@
-====== Projekt 1: Landingpage Hero Section (Light/Dark Mode) ======
+====== Projekt 1: Landingpage Hero Section – LU01 (HTML + Grundlayout) ======
 
 <WRAP center round box 80%>
 {{ :de:modul:m291:learningunits:lu01:aufgaben:first6.gif?nolink | Landing Page preview}}
 \\
-**Projektziel:** Sie setzen eine Hero Section pixel-nah nach Figma um und bauen einen Light/Dark-Mode Switch mit JavaScript.
+**Projektziel (über mehrere LUs):** Sie setzen eine Hero Section pixel-nah nach Figma um und bauen später einen Light/Dark-Mode Switch mit JavaScript.
+\\
+**Fokus LU01:** __Zuerst HTML-Struktur__, danach __CSS-Grundlayout__ (Container + Flexbox). Noch kein Feinschliff bei Fonts/Farben/Interaktionen.
 </WRAP>
 
-
-[[m291:ui_elemente_lesen|→ Vorwissen: UI-Elemente lesen (Figma → HTML)]]
-
-==== Lernziele ====
-  * HTML-Struktur mit ''header/nav/main/section'' bauen
-  * CSS: Variablen, Typografie, Flexbox, Responsive (Media Query)
-  * JS: DOM-Elemente abfragen, EventListener, Klassen toggeln
+==== Lernziele (LU01) ====
+  * Sie bauen eine saubere HTML-Struktur mit ''header'', ''nav'', ''main'', ''section''.
+  * Sie gruppieren UI-Teile in sinnvolle Wrapper (z.B. ''.content-wrapper'', ''.button-wrapper'').
+  * Sie setzen ein Grundlayout mit Flexbox um (Header + 2-Spalten Hero).
+  * Sie nutzen relative Einheiten sinnvoll (%, vh, rem) und zentrieren einen Container mit ''max-width''.
 
 ==== Material ====
   * Figma-Design + Assets (SVG/PNG)
-  * Starter-Ordner (''index.html'', ''resources/'')
-  * Live Server / Preview im Browser
-
-==== Schrittweiser Aufbau ====
-
-=== A: Design analysieren (10 Min.) ===
-  - Identifizieren Sie: **Header**, **Navigation**, **Hero**, **2-Spalten-Layout**, **Switch**
-  - Messen Sie Abstände und Font-Sizes genau (nicht raten).
-  - Legen Sie eine Farbpalette gemäss dem Figma-Design fest → als CSS-Variablen.
-
-=== B: HTML-Struktur (25 Min.) ===
-  - ''<header>'' erstellen: Logo + ''<nav>'' + Switch
-  - ''<main>'' und ''<section>'' für Hero
-  - Textblock (''h3/h1/p'') und Button-Gruppe
-  - Hero-Bild mit ''srcset'' einbauen (um bei Mobile die kleinere Variante des Bildes zu laden)
+  * Starter-Template ''index.html'' (mit TODOs in LU01/LU02/LU03)
+  * Browser + DevTools + Live Server
+<WRAP center round download 60%>
+Laden Sie hier das Material herunter:
+{{ :de:modul:m291:learningunits:lu01:aufgaben:landing_page_alarado.zip |}}
+</WRAP>
 
 
-=== C: CSS-Basics (30 Min.) ===
-  - Reset: ''* { margin:0; padding:0; box-sizing:border-box }''
-  - '':root'' Variablen (Farben, Fontgrössen)
-  - Typografie: font-family, font-weight, line-height
-  - Max-Width + Padding in ''.main-wrapper''
+<WRAP center round important 80%>
+**Wichtig:** Halten Sie sich an die TODO-Markierungen im Template.
+\\
+In LU01 machen Sie nur, was mit **TODO in LU01** beschriftet ist. (Google Font, Favicon, Farben/Variablen und Hover-Styles kommen später.)
+</WRAP>
 
-=== D: Layout mit Flexbox (30 Min.) ===
-  - Header: Logo links, Navigation mittig, Switch rechts
-  - Hero: 2 Spalten (Text links, Bild rechts)
-  - Buttons als Gruppe (''display:flex'', ''gap'')
+==== Schrittweiser Aufbau (LU01) ====
 
-=== E: Responsive (30 Min.) ===
+===== 1) HTML zuerst: Struktur & Gruppen von Elementen =====
+
+=== 1.1 Header: Logo + Navigation + Switch-Platzhalter ===
+<WRAP center round box 80%>
+{{ :de:modul:m291:learningunits:lu01:aufgaben:screenshot_2026-01-25_at_23.31.39.png?nolink&800 |}}
+\\
+//Navigation Bar//
+</WRAP>
+
+**Aufgabe:** Bauen Sie den ''<header>'' gemäss Template auf.
+  * Logo als ''img'' einfügen (+ sinnvoller ''alt'')
+  * Navigation als ''nav.menu'' mit ''ul > li > a''
+  * Switch als Platzhalter einfügen (nur ''label'' + ''input type="checkbox"'')
+
+<WRAP center round box 80%>
+**Repetition: Semantische Grundstruktur**
+\\
+  - ''header'' = Kopfbereich der Seite (Logo, Navigation, Controls)
+  - ''nav'' = Navigation (Links als Liste)
+  - ''main'' = Hauptinhalt (pro Seite 1×)
+  - ''section'' = thematisch zusammenhängender Abschnitt (z.B. Hero)
+</WRAP>
+
+<WRAP center round tip 60%>
+Mehr Infos zum ''<nav>''-Tag finden Sie hier: [[https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/nav|MDN Nav-Tag]]
+</WRAP>
+
+
+{{:de:modul:m291:learningunits:lu01:aufgaben:5fc6d794-b765-4b9d-bcbf-acd2aa07f619.png.webp?nolink&800 |}}
+\\
+//Beispiel einer Navigation mit ''<nav>'', ''<ul>'' und ''<li>'' umgesetzt. Ihr HTML-Code unterscheidet sich von dem hier gezeigten.//
+
+**Checkliste**
+  * Ist die Navigation eine Liste (''ul/li'')?
+  * Gibt es pro Link ein ''a''-Element (nicht nur Text)?
+  * Hat das Logo einen passenden ''alt''-Text?
+
+=== 1.2 Hero Section: Inhalt links, Bild rechts ===
+
+<WRAP center round box 80%>
+{{ :de:modul:m291:learningunits:lu01:aufgaben:screenshot_2026-01-25_at_23.48.22.png?nolink&800 |}}
+\\
+//Hero-Section mit Element-Gruppen//
+</WRAP>
+**Aufgabe:** Ergänzen Sie in ''<section id="hero-section">'':
+  * Textblock: ''h3'', ''h1'', ''p''
+  * Buttons in ''.button-wrapper'' gruppieren
+  * Features/Infos in einer Gruppe (z.B. ''.info-wrapper'')
+
+
+**Checkliste**
+  * Sind Buttons in einem Wrapper gruppiert?
+  * Sind “Features” in einem Wrapper gruppiert?
+  * Ist die Struktur logisch lesbar, auch ohne CSS?
+
+
+=== 1.3 Hero-Bild ===
+**Aufgabe:** Fügen Sie das Bild gemäss Template ein. Nutzen Sie ''srcset'' für 1x/2x (Retina).
+
+<WRAP center round box 80%>
+**Repetition: ''srcset'' kurz erklärt**
+\\
+Mit ''srcset'' kann der Browser je nach Bildschirmauflösung die passende Datei wählen (z.B. @2x).
+\\
+Sie liefern mehrere Varianten – der Browser entscheidet.
+</WRAP>
+
+**Beispiel: Bild mit ''srcset''**
+<code html>
+<img
+  class="hero-image"
+  src="./resources/hero-image-simple-homepage.png"
+  srcset="./resources/hero-image-simple-homepage.png 1x,
+          ./resources/hero-image-simple-homepage@2x.png 2x"
+  alt="Illustration zur Landingpage"
+/>
+</code>
+
+**Checkliste**
+  * Stimmt der Pfad (''./resources/...''), und lädt das Bild?
+  * Haben Sie einen sinnvollen ''alt''-Text?
+
+===== 2) CSS: Grundlayout =====
+
+=== 2.1 Container zentrieren: ''.main-wrapper'' ===
+**Aufgabe:** Setzen Sie den Hauptcontainer mittig und begrenzen Sie die Breite (gemäss Figma).
+
+<WRAP center round box 80%>
+**Repetition: Container-Zentrierung**
+\\
+  * ''max-width'' begrenzt die Breite
+  * ''margin: 0 auto'' zentriert horizontal
+  * ''padding'' sorgt für Innenabstand (damit Inhalt nicht am Rand klebt)
+</WRAP>
+
+**Beispiel:**
+<code css>
+.main-wrapper {
+  max-width: 1100px;   /* Richtwert – gemäss Figma anpassen */
+  margin: 0 auto;
+  padding: 24px;
+}
+</code>
+
+=== 2.2 Header mit Flexbox ===
+<WRAP center round box 80%>
+{{ :de:modul:m291:learningunits:lu01:aufgaben:screenshot_2026-01-25_at_23.52.19.png?nolink&800 |}}
+\\
+//Flexbox-Layout//
+
+</WRAP>
+<WRAP center round tip 60%>
+Eine gute Übersicht zur Flexbox gibt es hier: [[https://css-tricks.com/snippets/css/a-guide-to-flexbox/|CSS-Tricks: a guide to flexbox]] 
+</WRAP>
+
+
+**Aufgabe:** Positionieren Sie Logo (links), Navigation (mitte) und Switch (rechts).
+
+<WRAP center round box 80%>
+**Repetition: Flexbox Basics**
+\\
+  * ''display: flex'' → Elemente in einer Reihe
+  * ''justify-content: space-between'' → links/mittig/rechts verteilen
+  * ''align-items: center'' → vertikal zentrieren
+  * ''gap'' → Abstand zwischen Items
+</WRAP>
+
+
+=== 2.3 Navigation: Menu-Items als Flex-Reihe ===
+**Aufgabe:** Lassen Sie die Menu-Items nebeneinander erscheinen (ohne Styling der Farben – das kommt in LU02).
+
+
+=== 2.4 Hero Section: 2-Spalten Flexbox ===
+**Aufgabe:** Textblock links, Bild rechts – nebeneinander.
+
+
+=== 2.5 Bild soll responsiv schrumpfen ===
+**Aufgabe:** Das Bild soll proportional kleiner werden, wenn das Fenster kleiner wird.
+
 <WRAP center round box 80%>
 {{ :de:modul:m291:learningunits:lu01:aufgaben:rest.gif?nolink | Landing Page responsive preview}}
 \\
-Setzen Sie nun mit CSS Media-Queries das Mobile-Design um.
+**Hinweis:** Das echte Responsive-Layout (Media Query + Hamburger) machen Sie in LU02/LU03.
 </WRAP>
 
-  - Ab einer Breite (z.B. < 1024px):
-    - Hero wird ''flex-direction: column-reverse''
-    - Abstände/Fontgrössen mit Variablen anpassen
-    - Menü wird zu Hamburger
+<WRAP center round box 80%>
+**Repetition: Responsive Images**
+\\
+  * ''width: 100%'' → Bild füllt den Container
+  * ''height: auto'' → Seitenverhältnis bleibt korrekt
+</WRAP>
 
-=== Etappe F: JS Interaktivität (30–45 Min.) ===
-1. Elemente abrufen:
-   - ''document.getElementById(...)''
-   - ''document.documentElement''
-2. Funktion ''applyTheme(...)'':
-   - Klasse ''theme-dark'' auf ''<html>'' toggeln
-   - Logo-Datei wechseln
-3. EventListener:
-   - ''change'' auf Checkbox
 
+=== 2.6 Buttons: als Gruppe mit Flexbox ===
+**Aufgabe:** Buttons nebeneinander, mit Abstand. (Details wie Farben/Fonts in LU02)
+
+{{:de:modul:m291:learningunits:lu01:aufgaben:screenshot_2026-01-25_at_23.57.10.png?nolink&400 |}}
+
+
+=== 2.7 Hamburger-Buttons (für LU01: ausblenden) ===
+**Aufgabe:** Im Desktop sollen Hamburger-Buttons unsichtbar sein (damit nichts “stört”).
+
+<code css>
+.hamburger-button,
+.hamburger-button-close {
+  display: none;
+}
+</code>
+
+
+
+
+==== Checkliste “LU01 fertig” ====
+  * HTML: Logo + Nav-Liste + Switch-Platzhalter sind vorhanden
+  * HTML: Hero-Text, Button-Gruppe, Info-Gruppe sind vorhanden
+  * HTML: Bild mit ''srcset'' lädt korrekt
+  * CSS: ''.main-wrapper'' zentriert mit ''max-width''
+  * CSS: Header als Flexbox (3 Bereiche verteilt)
+  * CSS: Hero als Flexbox (2 Spalten)
+  * CSS: Bild schrumpft responsiv (''width:100%'', ''height:auto'')
 
 ==== Debugging-Checkliste ====
-  * Öffnen Sie DevTools → Console
-  * Prüfen Sie, ob Selektoren etwas finden (nicht ''null'')
-  * Prüfen Sie Pfade zu ''./resources/...''
+  * Öffnen Sie DevTools → Console (gibt es rote Fehlermeldungen?)
+  * Prüfen Sie Pfade zu ''./resources/...'' (404?)
+  * Prüfen Sie im Elements-Tab: stimmen Klassen/IDs genau?
+  * Test: Browserfenster kleiner ziehen → Bild bleibt proportional
 
-==== Abgabe-Kriterien ====
-  - Struktur semantisch (nav als Liste)
-  - Layout desktop + mobile korrekt
-  - Switch funktioniert und wechselt Farben + Logo
-  - Code lesbar: sprechende Namen, wenig “magische” Selektoren
 
-==== Stretch Goals ====
-  - Mobile Menu (Hamburger) als echtes ''button'' mit ''aria-expanded''
-  - “prefers-color-scheme” als Default berücksichtigen
-  - Features als ''ul/li'' statt ''span''
+==== Ausblick (LU02 / LU03) ====
+  * LU02: Google Font, Farbvariablen (':root'), Typografie, Link-/Button-States, Media Query
+  * LU03: Favicon, Icons via ''::before'', Switch-Styling + JS für Theme-Toggle
