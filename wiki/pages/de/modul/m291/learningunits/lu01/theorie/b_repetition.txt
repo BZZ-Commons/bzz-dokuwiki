@@ -1,1 +1,41 @@
-====== Links zu Repetition Inhalten ======
+====== Modul 291: HTML/CSS/JS Basics ======
+
+Ziel: Sie frischen die wichtigsten Grundlagen auf, damit Sie perfekt für das Modul 291 vorbereitet sind.
+
+
+===== 1) JavaScript Basics (Syntax & Logik) =====
+  * **JS Hero (DE)** – interaktive Übungen zu Variablen, Datentypen, If/Else, Funktionen
+    * [[https://www.jshero.net/home.html|JS Hero – JavaScript interaktiv üben (Deutsch)]]
+  * **MDN Skill-Checks** – kurze Selbsttests (mit Live-Code) zu den Kern-Themen:
+    * [[https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting/Test_your_skills/Variables|MDN: Test your skills – Variables]]
+    * [[https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting/Test_your_skills/Conditionals|MDN: Test your skills – Conditionals]]
+    * [[https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting/Test_your_skills/Functions|MDN: Test your skills – Functions]]
+
+===== 2) DOM-Grundlagen (getElementById, Text/Style ändern) =====
+  * **Scrimba: Intro to the DOM** – interaktiv, inkl. *Selecting Elements – getElementById* & einfache Manipulationen
+    * [[https://scrimba.com/playlist/p7wk6TL|Scrimba – Intro to the DOM (inkl. getElementById)]]
+  * **MDN Skill-Check Events** – Klick/Events + DOM-Änderungen üben
+    * [[https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting/Test_your_skills/Events|MDN: Test your skills – Events]]
+
+===== 3) CSS Basics (Selektoren, Cascade, Box Model, Layout) =====
+  * **CSS Diner** – Game zu CSS-Selektoren
+    * [[https://flukeout.github.io/|CSS Diner – CSS Selectors Game]]
+  * **Coding Fantasy – Flexbox** – Game zu Flexbox
+    * [[https://codingfantasy.com/games/flexboxadventure|Coding Fantasy – Flexbox]]
+  * **Coding Fantasy – Grid Attack** – Game zu Grid
+    * [[https://codingfantasy.com/games/css-grid-attack|Coding Fantasy – Grid]]
+  * **Flexbox Froggy** – Game zu Flexbox (für Layout/Navigationsleisten extrem nützlich)
+    * [[https://flexboxfroggy.com/|Flexbox Froggy – Flexbox Game]]
+  * **MDN Skill-Checks (CSS)** – kurze Checks zu den Basics:
+    * [[https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/Test_your_skills/Selectors|MDN: Test your skills – Selectors]]
+    * [[https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/Test_your_skills/Cascade|MDN: Test your skills – The Cascade]]
+    * [[https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/Test_your_skills/Box_model|MDN: Test your skills – The box model]]
+
+===== 4) HTML Struktur (Elemente, Attribute, Links, Bilder, Forms) =====
+  * **MDN Skill-Checks (HTML)** – genau die Basics, die wir in Formular-/UI-Seiten brauchen:
+    * [[https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content/Test_your_skills/HTML_text_basics|MDN: Test your skills – HTML text basics]]
+    * [[https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content/Test_your_skills/Links|MDN: Test your skills – Links]]
+    * [[https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content/Test_your_skills/Images|MDN: Test your skills – HTML images]]
+    * [[https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content/Test_your_skills/Forms_and_buttons|MDN: Test your skills – Forms and buttons]]
+
+
