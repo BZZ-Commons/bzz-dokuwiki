@@ -1,0 +1,46 @@
+~~NOTOC~~ 
+====== LU01.A01 - Datenarten klassifizieren ======
+
+<WRAP round download center 60%>
+**Ziel:** Du kannst Variablen korrekt als **qualitativ/quantitativ** einordnen und das **Messniveau** (nominal/ordinal/intervall/ratio) bestimmen. Falls quantitativ: **diskret/stetig**.
+</WRAP>
+
+===== Kurztheorie (Merksätze) =====
+  * **Qualitativ (kategorisch):** Werte sind **Labels/Kategorien** (z.B. Betriebssystem). → Häufigkeiten, Modus
+  * **Quantitativ (numerisch):** Werte sind **Zahlenwerte zum Zählen/Messen** (z.B. Ladezeit). → Mittelwert/Median möglich
+  * **Nominal:** keine Reihenfolge (Browser, HTTP-Methode)
+  * **Ordinal:** Reihenfolge, aber Abstände unklar (Zufriedenheit 1–5)
+  * **Intervall:** Abstände sinnvoll, Nullpunkt willkürlich (°C)
+  * **Ratio:** Abstände + echtes Null (ms, MB, Anzahl)
+  * **Diskret:** gezählt (0,1,2,3,...)  |  **Stetig:** gemessen (beliebig fein)
+
+<WRAP center round important 60%>
+**Achtung:** Nur weil etwas wie eine Zahl aussieht, ist es nicht automatisch quantitativ.  
+**HTTP-Statuscodes** (200/404/500) sind meistens **Kategorien** → **nominal**.
+</WRAP>
+
+===== Auftrag =====
+Bestimme für jede Variable:
+  - **qualitativ oder quantitativ?**
+  - **Messniveau**: nominal / ordinal / intervall / ratio
+  - falls quantitativ: **diskret oder stetig?**
+  - **Begründung** in 3–8 Wörtern (z.B. „Kategorie ohne Reihenfolge“, „0 bedeutet nichts“, „gezählt“, „gemessen“)
+
+^ Nr. ^ Variable ^ qualit./quant. ^ Messniveau ^ diskret/stetig ^ Begründung ^
+| 1 | Betriebssystem (Windows/macOS/Linux) |  |  |  |  |
+| 2 | Anzahl Commits pro Woche |  |  |  |  |
+| 3 | Ladezeit einer Webseite (ms) |  |  |  |  |
+| 4 | HTTP-Statuscode (200/404/500) |  |  |  |  |
+| 5 | Zufriedenheit (1–5) |  |  |  |  |
+| 6 | CPU-Temperatur (°C) |  |  |  |  |
+| 7 | Dateigrösse (MB) |  |  |  |  |
+| 8 | Team-Rolle (Dev / Ops / QA) |  |  |  |  |
+| 9 | Build-Status (success / failed) |  |  |  |  |
+| 10 | Anzahl offene Tickets im Sprint |  |  |  |  |
+
+
+
+----
+
+{{tag>M3-LU01}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Kevin Maurizi

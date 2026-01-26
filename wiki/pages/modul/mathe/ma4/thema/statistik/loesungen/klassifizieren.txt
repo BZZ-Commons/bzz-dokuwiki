@@ -1,0 +1,27 @@
+====== LU01.L01 - Datenarten klassifizieren ======
+
+
+===== Musterlösung =====
+
+^ Nr. ^ Variable ^ qualit./quant. ^ Messniveau ^ diskret/stetig ^ Begründung ^
+| 1 | Betriebssystem (Windows/macOS/Linux) | qualitativ | nominal | – | Kategorie ohne Reihenfolge |
+| 2 | Anzahl Commits pro Woche | quantitativ | ratio | diskret | gezählt; 0 = nichts |
+| 3 | Ladezeit einer Webseite (ms) | quantitativ | ratio | stetig | gemessen; 0 = keine Zeit |
+| 4 | HTTP-Statuscode (200/404/500) | qualitativ | nominal | – | Code = Label/Kategorie |
+| 5 | Zufriedenheit (1–5) | qualitativ | ordinal | – | Reihenfolge; Abstände unklar |
+| 6 | CPU-Temperatur (°C) | quantitativ | intervall | stetig | 0°C willkürlich |
+| 7 | Dateigrösse (MB) | quantitativ | ratio | stetig | 0 MB = keine Daten |
+| 8 | Team-Rolle (Dev / Ops / QA) | qualitativ | nominal | – | Kategorie ohne Reihenfolge |
+| 9 | Build-Status (success / failed) | qualitativ | nominal | – | binäre Kategorie |
+| 10 | Anzahl offene Tickets im Sprint | quantitativ | ratio | diskret | gezählt; 0 = nichts |
+
+===== Kurzbegründungen =====
+  * **Statuscodes**: „200 > 404“ ist als Zahl wahr, aber als Bedeutung unsinnig → deshalb **nominal**.
+  * **Zufriedenheit 1–5**: Median ist ok; Mittelwert nur mit Vorsicht (didaktisch: Unterschied betonen).
+  * **°C**: Intervall, weil 0°C nicht „keine Temperatur“ ist (Vergleich: Kelvin wäre Ratio).
+  * **Diskret vs. Stetig**: Zählen (Tickets/Commits) vs. Messen (Zeit/Temperatur).
+
+----
+
+{{tag>M3-LU01}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Kevin Maurizi

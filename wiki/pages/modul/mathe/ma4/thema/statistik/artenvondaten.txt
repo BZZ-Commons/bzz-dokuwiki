@@ -1,0 +1,145 @@
+~~NOTOC~~ 
+====== LU01a - Arten von Daten ======
+
+<WRAP center round download 60%>
+**Ziel:** Du kannst Variablen korrekt als **qualitativ/quantitativ** einordnen und das **Messniveau** (nominal/ordinal/intervall/ratio) bestimmen. Falls quantitativ: **diskret/stetig**.
+</WRAP>
+
+===== Warum ist das wichtig? =====
+Bevor du Daten auswertest, musst du wissen, **welche Art von Daten** du hast.
+Die Datenart entscheidet, was sinnvoll ist:
+  * Darf ich **nur zählen** (Häufigkeiten) oder auch **rechnen**?
+  * Gibt es eine **Reihenfolge** (z.B. low/medium/high)?
+  * Ist „0“ wirklich **nichts** (z.B. 0 Tickets)?
+
+Diese Seite passt direkt zur Aufgabe: **LU01.A01 - Datenarten klassifizieren**.
+
+===== Kurztheorie (Merksätze) =====
+  * **Qualitativ (kategorisch):** Werte sind **Labels/Kategorien** (z.B. Betriebssystem).
+  * **Quantitativ (numerisch):** Werte sind **Zahlenwerte zum Zählen/Messen** (z.B. Ladezeit).
+  * **Nominal:** Kategorien **ohne** Reihenfolge.
+  * **Ordinal:** Kategorien **mit** Reihenfolge, aber Abstände unklar.
+  * **Intervall:** Abstände sinnvoll, Nullpunkt willkürlich (z.B. °C).
+  * **Ratio:** Abstände sinnvoll **und** echtes Null (z.B. ms, MB, Anzahl).
+  * **Diskret:** gezählt (0,1,2,3,...)
+  * **Stetig:** gemessen (beliebig fein)
+
+<WRAP center round important 60%>
+**Achtung:** Nur weil etwas wie eine Zahl aussieht, ist es nicht automatisch quantitativ.  \\
+**HTTP-Statuscodes** (200/404/500) sind meistens **Kategorien** → **nominal**.
+</WRAP>
+
+===== 1) Zwei Hauptarten von Daten =====
+
+==== 1.1 Qualitative Daten (kategorisch) ====
+Qualitative Daten sind **Kategorien/Labels**. Du arbeitest damit typischerweise so:
+  * **zählen**, wie oft etwas vorkommt (Häufigkeiten)
+  * vergleichen: **gleich / ungleich**
+  * manchmal ordnen (nur bei ordinal)
+
+**Informatik-Beispiele**
+  * Betriebssystem: Windows / macOS / Linux
+  * Team-Rolle: Dev / Ops / QA
+  * Build-Status: success / failed
+  * HTTP-Methode: GET / POST / PUT
+
+==== 1.2 Quantitative Daten (numerisch) ====
+Quantitative Daten sind **Zahlen**, die **zählen** oder **messen**.
+Du kannst damit rechnen (je nach Messniveau sinnvoll).
+
+**Informatik-Beispiele**
+  * Anzahl Commits pro Woche (gezählt)
+  * Anzahl offene Tickets im Sprint (gezählt)
+  * Ladezeit einer Webseite in ms (gemessen)
+  * Dateigrösse in MB (gemessen)
+
+<WRAP center round tip 60%>
+**Merksatz:**  \\
+**Qualitativ** = Kategorien/Labels.  \\
+**Quantitativ** = Zahlen zum Zählen/Messen.
+</WRAP>
+
+===== 2) Messniveau (Skalenniveau) =====
+Das Messniveau sagt dir, **was du über die Werte aussagen darfst**.
+
+==== 2.1 Nominal: Kategorien ohne Reihenfolge ====
+  * Es gibt **keine** natürliche Reihenfolge.
+  * Du kannst sagen: „gleich/ungleich“ und **wie oft** etwas vorkommt.
+
+**Informatik-Beispiele (nominal)**
+  * Betriebssystem (Windows/macOS/Linux)
+  * Browser (Chrome/Firefox/Safari)
+  * Team-Rolle (Dev/Ops/QA)
+  * HTTP-Statuscode (200/404/500) als Code/Kategorie
+
+==== 2.2 Ordinal: Kategorien mit Reihenfolge ====
+  * Es gibt eine Reihenfolge (z.B. low < medium < high).
+  * ABER: Der Abstand zwischen Stufen ist nicht exakt messbar.
+
+**Informatik-Beispiele (ordinal)**
+  * Priorität: low / medium / high
+  * Severity: minor / major / critical
+  * Zufriedenheit (1–5) als Rangskala
+
+==== 2.3 Intervall: Abstände sind sinnvoll, aber Nullpunkt ist willkürlich ====
+  * Unterschiede sind sinnvoll („+10“).
+  * Null bedeutet nicht „nichts“.
+  * Aussagen wie „doppelt so viel“ sind hier **nicht** sinnvoll.
+
+**Beispiel**
+  * Temperatur in **°C** (0°C ist nicht „keine Temperatur“)
+
+==== 2.4 Ratio: echtes Null (0 = nichts) ====
+  * Null bedeutet wirklich „nichts“.
+  * Aussagen wie „doppelt so viel“ sind sinnvoll.
+
+**Informatik-Beispiele (ratio)**
+  * Ladezeit in ms (0 ms = keine Zeit)
+  * Dateigrösse in MB (0 MB = keine Daten)
+  * Anzahl Tickets/Commits (0 = nichts)
+
+<WRAP center round tip 60%>
+**Quick-Check:**  \\
+Wenn **0** wirklich „nichts“ bedeutet → meistens **Ratio**.  \\
+Wenn Werte **nur Codes** sind → meistens **Nominal**.
+</WRAP>
+
+===== 3) Diskret vs. Stetig (nur bei quantitativen Daten) =====
+
+==== 3.1 Diskret (gezählt) ====
+  * Werte sind zählbar: 0,1,2,3,…
+  * entsteht durch **Zählen**
+
+**Informatik-Beispiele**
+  * Anzahl Commits
+  * Anzahl offene Tickets
+  * Anzahl Logins pro Tag
+
+==== 3.2 Stetig (gemessen) ====
+  * Werte können theoretisch beliebig fein sein (z.B. 12.3, 12.31, 12.312…)
+  * entsteht durch **Messen**
+
+**Informatik-Beispiele**
+  * Ladezeit in ms
+  * Downloadrate in Mbit/s
+  * CPU-Temperatur
+
+===== 4) Typische Stolpersteine =====
+  * **„Zahl = quantitativ“** → falsch bei Codes (HTTP 404, Fehlercodes, Postleitzahl).
+  * **Ordinal vs. Intervall**: Rangfolge heisst nicht automatisch „messbarer Abstand“.
+  * **Intervall vs. Ratio**: °C (Intervall) vs. ms/MB/Anzahl (Ratio).
+  * **Diskret vs. Stetig**: Zählen (diskret) vs. Messen (stetig).
+
+
+
+<WRAP center round todo 60%>
+  - Nenne ein Beispiel für **nominale** Daten aus der Informatik.
+  - Ist „HTTP-Statuscode“ eher **nominal** oder **quantitativ**? Warum?
+  - „Anzahl Commits“: **diskret** oder **stetig**? Begründe mit 1 Satz.
+  - Was ist der Unterschied zwischen **Intervall** und **Ratio**?
+</WRAP>
+
+----
+
+{{tag>M3-LU01}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Kevin Maurizi
