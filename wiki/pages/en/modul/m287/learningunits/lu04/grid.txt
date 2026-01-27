@@ -20,7 +20,7 @@ An example with two rows and three columns:
 }
 </code>
 
-{{ modul:m287:learningunits:lu04:grid-1.svg?600 }}
+{{ de:modul:m287:learningunits:lu04:grid-1.svg?600 }}
 
 ==== Placing elements in the grid ====
 
@@ -36,7 +36,7 @@ We can now place an element in this grid as we wish. To do this, we can use `gri
 }
 </code>
 
-{{ modul:m287:learningunits:lu04:grid-2.svg?600 }}
+{{ de:modul:m287:learningunits:lu04:grid-2.svg?600 }}
 
 There is also a short form of the notation for the rows and columns. You can use the `grid-column` and `grid-row` statements to specify the start and end of an element in the grid, separated by a `/`.
 
@@ -47,7 +47,7 @@ There is also a short form of the notation for the rows and columns. You can use
 }
 </code>
 
-{{ modul:m287:learningunits:lu04:grid-3.svg?600 }}
+{{ de:modul:m287:learningunits:lu04:grid-3.svg?600 }}
 
 ===== Grid Areas =====
 

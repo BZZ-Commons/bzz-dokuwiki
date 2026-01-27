@@ -1,0 +1,24 @@
+==== LU01.A02 Projekt-Base erstellen ====
+
+Erfassen Sie hierfür einen Task, sofern noch nicht. Verweisen Sie in allen Commit-Messages dieser Aufgabe auf den entsprechenden Task. 
+
+Erstellen Sie zuerst eine "README.md"-Datei im Root-Verzeichnis, sofern Sie noch keine haben
+
+Überlegen Sie sich, wie Ihr Repository aufgebaut werden soll. Bei getrenntem Back- und Frontend kann es Sinn ergeben, entsprechende Teile wie in nachfolgendem Beispiel in Unterordnern zu pflegen.
+ 
+{{:de:modul:ffit:3-jahr:cicd:learningunits:lu01:aufgaben:screenshot_project_structure.png?400|}}
+
+Legen Sie ihre Struktur an. Um leere Ordner in Git einzuchecken, können Sie bei Bedarf leere Dateien mit dem Namen ".gitkeep" verwenden. Idealerweise können Sie aber bereits eine ".gitignore"-Datei in den entsprechenden Unterordnern anlegen und mit den relevanten Einträgen vorbereiten. Dies ist oft praktischer als ein einzige ".gitignore"-Datei im Root-Verzeichnis, welche sehr projektspezifisch aufgebaut und nicht bei zukünftigen Projekten wiederverwendet werden kann.
+
+Fügen Sie in den Unterordnern die passenden Linter- und Formatting-Dateien hinzu. Beispiele finden Sie unter anderem auf:
+  * Prettier: https://github.com/AlexanderPeter/cicd/blob/develop/frontend/prettier.config.js
+  * .editorconfig: https://github.com/AlexanderPeter/cicd/blob/develop/.editorconfig
+  * EsLint: https://github.com/AlexanderPeter/cicd/blob/develop/frontend/eslint.config.js
+  * PyLint: https://github.com/AlexanderPeter/cicd/blob/develop/backend/.pylintrc
+  * Black-Konfiguration: https://github.com/AlexanderPeter/cicd/blob/develop/backend/pyproject.toml
+
+Vergessen Sie nicht die Änderungen zu commiten.
+
+
+
+

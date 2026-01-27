@@ -1,0 +1,200 @@
+====== LU05a - Responsive Webdesign - Medientypen ======
+
+===== Einleitung =====
+
+Der Zugriff auf das Internet ist vielseitiger geworden, weil nicht nur mit einem Desktop-PC oder Laptop Webseiten betrachtet werden. Heute sind weitere Geräte wie Tablets, Smartphones, E-Book-Reader, Spielekonsolen oder Fernsehgeräte hinzugekommen. Daraus ergibt sich die Herausforderung, dass die Bildschirmgrösse und die Bildschirmauflösung enorm variieren kann.
+Das Erscheinungsbild einer Webseite hängt deshalb stark vom verwendeten Endgerät ab, mit dem diese betrachtet wird.
+
+{{de:modul:m287:learningunits:lu05:responsive-webdesign-intro.jpg?600|}}
+
+===== Was ist Responsive Webdesign? =====
+
+Responsive Webdesign ist ein Ansatz, bei dem sich das Layout flexibel an die Eigenschaften des jeweiligen Endgeräts anpasst, wobei Inhalte und Benutzerfreundlichkeit stets im Fokus stehen. Schlüsselelemente sind ein flexibles Gridlayout, flexible Bilder/Medien und Media Queries.
+
+Anstatt unzählige Layoutversionen für dieselbe Webseite zu erstellen und zu warten, werden beim Responsive Webdesign (was so viel wie reagierendes oder reaktionsfähiges Webdesign bedeutet) die Eigenschaften des Endgeräts berücksichtigt, um eine optimale und benutzerfreundliche Darstellung zu erreichen. Das Hauptkriterium für ein solches angepasstes Layout ist die Bildschirmgrösse (meistens Breite) des Geräts und eventuell auch die vorhandenen Eingabemethoden (Maus oder Touchscreen). Bei Responsive Webdesign (oder auch Responsive Layout) passt sich also die Webseite den (technischen) Gegebenheiten wie zum Beispiel dem Bildschirm des Nutzers an. Das betrifft vor allem die Darstellungsgrösse (Viewport), meint aber auch weitere Optimierungen wie Bilder, Typografie, oder auch die Inhalte.
+
+Beispielsweise ist die Standardauflösung für Smartphones 320 bis 768 Pixel, für Tablets 768 bis 1.024 Pixel und für Desktop-PCs häufig über 1.024 Pixel. Responsive Webdesign erfordert daher ein Umdenken im Design-Prozess, so kann eine responsive Website beispielsweise Inhalte auf einem Smartphone in einer einzelnen Spalte, auf einem Tablet in zwei Spalten und auf einem Computer in drei oder vier Spalten anzeigen.
+
+{{de:modul:m287:learningunits:lu05:responsive-webdesign.jpg?600|}}
+
+==== Warum ist Responsive Webdesign wichtig? ====
+
+Da die meisten Menschen heute auf verschiedenen Geräten surfen, werden schlecht angepasste Webseiten schnell wieder verlassen – was unter anderem das Google-Ranking verschlechtert. Seit 2015 bewertet Google die Mobile-Friendliness und seit 2021 verwendet Google für alle Webseiten die mobile Version vorrangig für die Indexierung und das Ranking. Mit der Mobile-First-Indexierung werden Webseiten, die nur für den Desktop optimiert sind, gar nicht mehr in den Suchergebnissen angezeigt. Damit hat Google deutlich gemacht, dass Responsive Webdesign keine Wahl mehr ist, sondern Pflicht.
+
+==== Was ist der Viewport? ====
+
+Der Viewport ist der sichtbare Bereich des Webbrowsers ohne Menü- und Scrollleiste, in dem die Webseite angezeigt wird. Mehr dazu anhand eines Anwendungsbeispiel, welches später folgt.
+
+==== Responsive Webdesign umsetzen ====
+
+Wie wird eine Webanwendung nun responsive? Diese Anpassungsfähigkeit wird durch technische Elemente wie flexible Layouts, Media Queries und skalierbare Bilder ermöglicht. Eine einfache Lösung für die technische Umsetzung bietet CSS (zuerst mit Version 2 und anschliessend mit Version 3 dargelegt), welche nachfolgend anhand von Beispielen illustriert wird.
+
+===== Medientypen verwenden (CSS2) =====
+
+Schon bei CSS Level 2 gab es medienspezifische Stylesheets für bestimmte Ausgabegeräte. Dazu werden separate Stylesheets für die unterschiedlichen Ausgabemedien (z. B. den Bildschirm media="screen" oder den Drucker media="print") zur Verfügung gestellt.
+
+Das media-Attribut im link- und style-Tag war ursprünglich als eine einfache Methode gedacht, um spezielle Ausgabegeräte wie Monitor, Druck, Audio oder Braillezeile anzusprechen. Heute setzt die Entwicklung von Webseiten mit CSS3 auf Media Queries, die flexibler sind und besser differenzieren (mehr dazu später).
+
+Zuerst eine Übersicht über die medienspezifischen Ausgabegeräte für Stylesheets, die dem Attribut media zugewiesen werden können:
+
+===== Medientypen - Übersicht =====
+
+Es können mehrere Werte mit Kommata getrennt zugewiesen werden. Es wird der Attributwert all verwendet, wenn kein Attributwert angegeben wird (unabhängig vom verwendeten Ausgabemedium). Der Standard hatte ursprünglich eine lange Liste mit den folgenden Typen für media vorgesehen, wobei mit CSS3 einige davon als veraltet (deprecated) gelten und heute nicht mehr verwendet werden:
+
+^ Attributwert        ^ Ausgabegerät                                                                 ^
+| all                 | alle Ausgabegeräte                                                           |
+| print               | Drucker                                                                      |
+| screen              | Desktop-Computer                                                             |
+| speech              | Sprachausgabe                                                                |
+| aural (deprecated)  | Ausgabe für Screenreader                                                     |
+| braille (deprecated)| für Braille-Zeilen-basierte Ausgabegeräte, wie sie von blinden Benutzern verwendet werden |
+| embossed (deprecated)| für Braille-basierte Drucker, die Blindenschrift ausdrucken können         |
+| handheld (deprecated)| für Mobilfunkgeräte mit kleinen Bildschirmen und geringer Bandbreite       |
+| projection (deprecated)| für Projektoren und andere Geräte, die zur Präsentation an Leinwänden verwendet werden können |
+| tty (deprecated)    | Computerterminals, die keine speziellen Grafiken anzeigen können und bei denen auch keine Formatierungen der Schriften möglich sind |
+| tv (deprecated)     | für TV-Geräte und andere bildschirmorientierte Ausgabegeräte                |
+
+
+===== Medientypen - Beispiel =====
+
+Nachfolgend ein weiteres Beispiel, wobei deren Ausgabe auf dem Bildschrim resp. auf dem Drucker abgebildet sind, um die Auswirkungen bildlich darzustellen.
+
+Die dazu entsprechenden CSS-Styles für die
+
+  * Bildschirm-Ausgabe (screen) →  style.css
+  * und für die Drucker-Ausgabe (print) →  print.css sind unten aufgeführt.
+
+| {{de:modul:m287:learningunits:lu05:media_screen.png?400|}} | {{de:modul:m287:learningunits:lu05:media_print.png?400|}} | 
+
+**HTML**
+<code html>
+<!doctype html>
+<html>
+  <head>
+    <title>Medien-Typen in CSS2</title>
+    <meta charset="UTF-8">
+    <link href="style/screen.css" type="text/css" rel="stylesheet" media="screen" />
+    <link href="style/print.css" type="text/css" rel="stylesheet" media="print" />
+  </head>
+  <body>
+    <div id="wrapper">
+    <header>Medien-Typen in CSS2</header>
+    <nav id="mainnav"> 
+      <h3>Navigation</h3>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Links</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Kontakt</a></li>
+      </ul>
+    </nav>
+    <main>
+      <article>
+        <h1>Artikel 1</h1>
+        <p><img src="img/eye.jpg" alt="Pferdeauge">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut.</p>
+      </article>
+      <article>
+        <h1>Artikel 2</h1>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut.</p>
+      </article>
+      </main>
+      <aside id="sidebar">
+        <h3>Seitenleiste</h3>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. </p>
+        <ul>
+        <li><a href="#">Link 1</a></li>
+        <li><a href="#">Link 2</a></li>
+        <li><a href="#">Link 3</a></li>
+        </ul>
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+    </aside>
+    <footer class="clear">Fußzeile</footer>
+    </div>
+  </body>
+</html>
+</code>
+
+**CSS screen.css**
+<code css>
+* { 
+  margin: 0;
+  padding:0;
+}
+#wrapper {
+  margin: 5px auto;
+  width: 960px;
+}
+  header, footer {
+    border: 1px dotted gray;
+    padding: 5px;
+    text-align:center;
+    width: 98%;
+  }
+#mainnav {
+  float: left;
+  margin: 0;
+  margin-top: 10px;
+  padding: 2% 2%;
+  border: 0;
+  width: 16%;
+  background: #F5F5F5;
+}
+#sidebar {
+  float: right;
+  margin: 0;
+  margin-top: 10px;
+  padding: 2% 2%;
+  border: 0;
+  width: 20%;
+  background: #F5F5F5;
+}
+main {
+   float: left;
+   padding:  0 2%;
+   margin: 0;
+   margin-top: 10px;
+   border: 0;
+   width: 52%;
+}
+.clear { clear: both; }
+article img {
+   float: left;
+   margin-right: 10px;
+   margin-bottom: 10px;
+   border: 3px solid black;
+}
+article {
+  border: 1px dotted gray;
+  padding: 5px;
+  margin-bottom: 5px;
+  width: 100%;
+}
+</code>
+
+**CSS print.css**
+<code css>
+* {
+    color: black;
+    background: transparent;
+}
+
+header, nav, aside, footer { display: none; }
+
+article {
+  border: 0;
+  padding: 5px;
+  margin:0;
+  width: 100%;
+  font-size: 130%;
+}
+ 
+article img {
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border: 3px solid white;
+}
+ 
+main { width: 70%; }
+</code>

@@ -1,0 +1,40 @@
+====== LU00l - Benötigte Software - V2 ======
+
+Bevor wir uns an die praktische Arbeit machen, müssen wir verschiedene Software installieren. Die folgende Liste enthält die erforderlichen Tools und den Zweck der einzelnen Pakete:
+
+^ Software ^ Beschreibung ^ Download-Link ^
+| Visual Studio Code | IDE für Webentwicklung (Integrated Development Environment) | [[https://code.visualstudio.com/download|VS Studio Code]] | 
+
+Bevor Sie die Software herunterladen, müssen Sie prüfen welche Version Computer bzw. Chip Ihr Computer verwendet. 
+
+===== Hinweise MacOS =====
+
+  * Apfel-Symbol links oben im Monitor | About This Mac
+  * Es gibt Intel und Apple Chip-Set
+  * Die neueren Macs haben alle M-Chips von Apple, daher einfach den grossen blauen Button drücken
+
+
+===== Hinweise Windows =====
+
+  * Explorer öffnen | Desktop + rechte Maustaste 
+  * Die meisten neueren PCs haben einen 64-Bit Chip von Intel. In dem Falle können Sie einfach die Standard-Version mit dem grossen blauen Button herunterladen.
+
+===== Post-Installationsschritte =====
+Damit wir unser Ergebnis im Browser anschauen können müssen wir noch ein Paar Module im Visual Studio Code ergänzen. Folgen Sie die nachfolgenden Schritte, um diese zu installieren.
+
+  - Öffnen Sie VS Studio Code. 
+  - Mit **Generate New Workspace** werden Sie aufgefordert einen Namen für eine Arbeitsumgebung eingezugeben. Diese ist: **M287_HTML_CSS**
+  - Abschliessend müssen wir einige Extensions einrichten. Die Extensions finden wir in der linken Leiste, unter den 4 Vierecken. 
+    * Live Server
+    * JavaScript Snippits
+    * Standard Browser
+    * Bootstrap
+    * Open Browser Preview
+    * Open In Default Browser
+
+===== Installationsanleitung als Video =====
+[[https://www.youtube.com/watch?v=mL1IcxIUd5Y | Kurzanleitung Installation VS Studio Code]]
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Kamil Demirci

@@ -1,0 +1,76 @@
+====== LU04c - Grid ======
+
+CSS Grid ist ein leistungsstarkes Layoutmodell in CSS, das entwickelt wurde, um das Design von Webseiten und Webanwendungen zu verbessern, indem es eine präzise und flexible Möglichkeit bietet, Elemente in einem zweidimensionalen Raster anzuordnen.
+
+Ein HTML-Element wird durch die CSS-Eigenschaft `display: grid;` zu einem Grid-Container, der das Raster für das CSS Grid-Layout bildet. Die direkten Kind-Elemente dieses Containers werden als Grid-Items bezeichnet und innerhalb des Rasters positioniert. Der Raster bildet sich aus horizontalen und vertikalen Linien. Die Nummern der einzelnen Linien legen fest, wo ein Bereich anfängt und wo es endet.
+
+==== Zeilen und Spalten ====
+
+Mit `grid-template-columns` bzw. `grid-template-rows` legen wir die Höhe und Breite der Zeilen fest. Der Wert "fr" (fraction, Anteil) definiert einen Bereich im Grid. Dieser kann auch durch fixe Werte wie `100px` ersetzt werden. Der Vorteil von "fr" liegt in der Responsiveness. Die Breite des Anteils passt sich jeweils an die Gesamtbreite an.
+
+Ein Beispiel mit zwei Zeilen und drei Spalten:
+
+<code css>
+.grid-container {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-template-rows: 1fr 1fr;
+   width: 600px;
+   height: 400px;
+}
+</code>
+
+{{ de:modul:m287:learningunits:lu04:grid-1.svg?600 }}
+
+==== Platzieren von Elementen im Grid ====
+
+Nun können wir ein Element in diesem Raster platzieren, so wie wir es möchten. Dafür können wir mit `grid-column-start`, `grid-column-end`, `grid-row-start` und `grid-row-end` jeweils den Start und das Ende unseres Elements im Grid angeben. Wie im vorherigen Teil erwähnt, wird das Grid in Zahlen aufgeteilt. So kann man zum Beispiel ein Element mittig von unserem Grid-Raster platzieren:
+
+<code css>
+.grid-item {
+   grid-column-start: 2;
+   grid-column-end: 3;
+   grid-row-start: 2;
+   grid-row-end: 3;
+   background-color: blue;
+}
+</code>
+
+{{ de:modul:m287:learningunits:lu04:grid-2.svg?600 }}
+
+Es gibt auch eine Kurzform von der Schreibweise für die Reihen und Spalten. Mit den Anweisungen `grid-column` und `grid-row` können Sie jeweils getrennt mit einem `/` den Start und das Ende eines Elements im Raster angeben.
+
+<code css>
+.grid-item {
+   grid-column: 2/3;
+   grid-row: 1/4;
+}
+</code>
+
+{{ de:modul:m287:learningunits:lu04:grid-3.svg?600 }}
+
+===== Grid Areas =====
+
+Mit `grid-template-areas` haben wir die Möglichkeit, verschiedene Bereiche in unserem Grid zu definieren. Mit `grid-area` können wir dann unsere Elemente innerhalb der vorgegebenen Bereiche platzieren.
+
+<code css>
+.grid-container {
+   grid-column-template: "1fr 1fr 1fr";
+   grid-template-areas: "header    header header"
+                        "thumbnail text   links "
+                        ".         text   .     ";
+}
+
+.article-title {
+   grid-area: header;
+}
+
+.article-img {
+   grid-area: thumbnail;
+}
+</code>
+
+==== Ressourcen ====
+
+  * [[https://www.mediaevent.de/css/grid.html|Mediaevent: CSS Grid]]
+  * [[https://www.mediaevent.de/css/grid-template-areas.html|Mediaevent: CSS Grid Template Areas]]

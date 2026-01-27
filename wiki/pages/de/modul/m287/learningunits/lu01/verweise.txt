@@ -1,31 +1,31 @@
-====== LU01b - References and anchors ======
+====== LU01b - Verweise und Anker ======
 
-===== Learning objectives =====
-  - I can add references (hyperlinks) to a web page and customise them using the attributes (e.g. href, id). HTML elements/tags are <a>.
-  - I know the difference between absolute and relative references.
-  - I can create links syntactically correctly and can list characteristics and properties for the correct structure.
-  - I know the purpose of local references (anchors).
-  - I can create local references (anchors) correctly.
+===== Lernziele =====
+  - Ich kann Verweise (Hyperlinks) in einer Webseite hinzufügen und anhand der Attribute (z.B. href, id) anpassen kann. HTML-Elemente/Tags sind <a>.
+  - Ich kenne bei den Verweisen den Unterschied zwischen absoluter und relativer Verweis.
+  - Ich kann Verweise syntaktisch korrekt erstellen und kann Merkmale und Eigenschaften für den korrekten Aufbau aufzählen.
+  - Ich kenn den Zweck von lokalen Verweisen (Anker).
+  - Ich kann lokale Verweise (Anker) korrekt erstellen.
 
-===== Introduction =====
+===== Einleitung =====
 
-You can create a link in HTML with the <color #ed1c24><a></color>element (a = anchor) in HTML. The link text (or reference text) between the <a>-tags is activated if the href attribute has a valid value.
+Einen Link können Sie in HTML mit dem <color #ed1c24><a></color>-Element (a = anchor, deutsch: Anker) erstellen. Der Linktext (oder Verweistext) zwischen den <a>-Tags wird aktiviert, wenn das href-Attribut einen validen Wert hat.
 
-==== Example ====
-A link text is usually underlined by the web browser (usually in blue). However, you can (as always) change this at any time using CSS.
+==== Beispiel ====
+Ein Linktext wird gewöhnlich vom Webbrowser (meistens in Blau) unterstrichen. Dies können Sie aber (wie immer) mit CSS jederzeit ändern.
 
 <code><a href="http://www.bzz.ch">Bildungszentrum Zürichsee</a></code>
 
-===== Inserting links to other HTML documents on your own website =====
-The links connect the loose collections of HTML documents to form a coherent website. The so-called navigation of the website can be created from this. For a link to another page of the same website, it is sufficient to enter the relative (instead of the absolute) URL. More on this later.
+===== Links zu anderen HTML-Dokumenten der eigenen Webseite einfügen =====
+Die Verweise verbinden die losen Sammlungen von HTML-Dokumenten zu einer zusammenhängenden Webseite. Daraus lässt sich die sog. Navigation der Webseite erstellen. Bei einem Link zu einer anderen Seite derselben Webseite genügt es, die relative (statt der absoluten) URL anzugeben. Dazu später mehr.
 
-==== Example ====
+==== Beispiel ====
 
-The following directory structure shown in the illustration is given as an example.
+Folgende in der Abbildung abgedruckte Verzeichnisstruktur sei als Beispiel gegeben.
 
 {{de:modul:m287:learningunits:lu01:02.png?600|}}
 
-The link for the start page, here index.html, to the other pages <color #ed1c24>links.html</color>, <color #ed1c24>about.html</color> and <color #ed1c24>impressum.html</color> looks like this in practice:
+Die Verlinkung für die Startseite, hier index.html, zu den anderen Seiten <color #ed1c24>links.html</color>, <color #ed1c24>about.html</color> und <color #ed1c24>impressum.html</color> sieht demnach in der Praxis wie folgt aus:
 
 <code html>
 <!doctype html>
@@ -49,7 +49,7 @@ The link for the start page, here index.html, to the other pages <color #ed1c24>
 
 ---
 
-Of course, you must also include the links to the other pages, i.e. <color #ed1c24>links.html</color>, <color #ed1c24>about.html</color> and <color #ed1c24>impressum.html</color> to be adapted. The relative URLs should be specified. In relation to the page <color #ed1c24>links.html</color>page, the specifications for the href attribute would look like this:
+Natürlich müssen Sie auch die Links zu den anderen Seiten, also <color #ed1c24>links.html</color>, <color #ed1c24>about.html</color> und <color #ed1c24>impressum.html</color> anpassen. Dabei sollen die relativen URL angegeben werden. Bezogen auf die Seite <color #ed1c24>links.html</color>, würden die Angaben für das Attribut href wie folgt aussehen:
 
 <code html>
 <!doctype html>
@@ -71,11 +71,11 @@ Of course, you must also include the links to the other pages, i.e. <color #ed1c
 </html>
 </code>
 
-Navigate via the subfolder pages with <color #ed1c24>../</color> (here <color #ed1c24>../index.html</color>) to the parent folder, where <color #ed1c24>index.html</color> is located. The other two files <color #ed1c24>about.html</color>, <color #ed1c24>impressum.html</color> are located in the same folder as <color #ed1c24>links.html</color>so it is sufficient to specify only the file name. Similarly, you must also specify the files <color #ed1c24>about.html</color> and <color #ed1c24>impressum.html</color> files.
+Über den Unterordner seiten navigieren Sie mit <color #ed1c24>../</color> (hier <color #ed1c24>../index.html</color>) zum übergeordneten Ordner, wo sich <color #ed1c24>index.html</color> befindet. Die anderen beiden Dateien <color #ed1c24>about.html</color>, <color #ed1c24>impressum.html</color> befinden sich im selben Ordner wie <color #ed1c24>links.html</color>, daher reicht es aus, nur den Dateinamen anzugeben. Ähnlich müssen Sie auch die Dateien <color #ed1c24>about.html</color> und <color #ed1c24>impressum.html</color> verlinken.
 
-===== Insert links to other websites =====
+===== Links zu anderen Webseiten einfügen =====
 
-Links to other websites are noted in the same way as links to pages on the same website. The difference lies in the absolute URL (i.e. the complete address) in the href attribute.
+Links zu anderen Webseiten werden genauso notiert wie die Links zu den Seiten derselben Webseite. Der Unterschied liegt in der absolute URL (also die Angabe der kompletten Adresse) im Attribut href.
 
 <code>
 <nav>
@@ -87,51 +87,51 @@ Links to other websites are noted in the same way as links to pages on the same 
 </nav>
 </code>
 
-===== Open links in a new window ===== 
+===== Links in einem neuen Fenster öffnen ===== 
 
-With the HTML attribute <color #ed1c24>target="_blank"</color> opens the link in a new window or tab.
-The aim of using <color #ed1c24>target="_blank"</color> is not to lose the visitor to the page, but to leave the page open so that he returns there when he has read the page in the newly opened window or tab.
+Mit dem HTML-Attribut <color #ed1c24>target="_blank"</color> wird der Verweis in einem neuen Fenster oder Tab geöffnet wird.
+Ziel der Verwendung von <color #ed1c24>target="_blank"</color> ist den Besucher der Seite nicht zu verlieren, sondern die Seite offen zu lassen, damit er dort zurückkehrt, wenn er die Seite im neu geöffneten Fenster oder Tab gelesen hat.
 
-==== Example ====
+==== Beispiel ====
 <code html>
   <a target="_blank" href="http://www.w3.org/">Link in einem neuen Fenster öffnen</a>
 </code>
 
-If you were to activate the link text W3C in this example, the target address (here: http://www.w3.org) here) would actually be opened and loaded in a new window or tab. The aim of using the target="_blank" is of course primarily to open the
+Würden Sie in diesem Beispiel den Linktext W3C aktivieren, würde die Zieladresse (hier: http://www.w3.org) hier tatsächlich in einem neuen Fenster oder Tab geöffnet und geladen werden. Ziel der Verwendung von target="_blank" ist natürlich vorrangig, den
 
-===== e-mail links =====
+===== E-Mail-Links =====
 
-Email links start with <color #ed1c24>href="mailto:EMAIL-ADRESS"</color>. This opens the e-mail application with a specific e-mail address.
+E-Mail-Verweise beginnen bei <color #ed1c24>href="mailto:EMAIL-ADRESSE"</color>. Damit wird die E‐Mail-Anwendung mit einer bestimmten E-Mail-Adresse geöffnet.
 
 <code html>
   <a href="mailto:hans.muster@beispiel.ch">E-Mail senden</a> 
 </code>
 
-===== Phone links =====
+===== Telefon-Links =====
 
-Telephone links start with <color #ed1c24>href="tel:NUMBER"</color>. This is used to dial and call the number. (Desktop e.g. Facetime or online telephony)
+Telefon-Verweise beginnen bei <color #ed1c24>href="tel:NUMMER"</color>. Damit wird die Nummer gewählt und angerufen. (Desktop z.B. Facetime oder Online-Telefonie)
 
 <code html>
   <a href="tel:044 123 45 67">E-Mail senden</a> 
 </code>
 
-===== Download links =====
+===== Downloadlinks =====
 
-The download attribute enables links to be added as download links, regardless of the content type (MIME type).
+Das Attribut download ermöglicht Links als Downloadverweis hinzuzufügen und das unabhängig vom Inhaltstyp (MIME-Typ).
 
 <code html>
   <a href="dokument.pdf" download>Dokument herunterladen</a>
 </code>
 
-===== Anchor - set links to specific parts of a website =====
+===== Anker - Links zu bestimmten Teilen einer Webseite setzen =====
 
-Nothing can be more annoying for a visitor than having to read a very long scientific treatise on a specific topic on a website and having to scroll up and down for a very long time to get to a specific section. For such cases, you can set so-called anchors with the global attribute id, which you can then jump to with an ordinary link with the a element. Such target anchors are used, for example, in Wikipedia for the content index of a topic.
-To link to a specific area of a website, you only need:
+Nichts kann für den Besucher lästiger sein, als eine sehr lange wissenschaftliche Abhandlung eines speziellen Themas auf einer Webseite zu lesen und dabei sehr lange hoch- und herunterscrollen zu müssen, um zu einem speziellen Abschnitt zu gelangen. Für solche Fälle können Sie sogenannte Anker mit dem globalen Attribut id setzen, den Sie dann mit einem gewöhnlichen Link mit dem a-Element anspringen können. Vorbildlich werden solche Zielanker z. B. bei Wikipedia für das Inhaltsver- zeichnis eines Themas verwendet.
+Für eine Verlinkung zu einem bestimmten Bereich einer Webseite benötigen Sie nur:
 
-  * an anchor (jump marker), which you can assign with the attribute <color #ed1c24>id="ankername"</color> attribute. For example: <color #ed1c24><h1 id="ankername">Heading xyz</h1></color>
-  * a link that points to the anchor with <color #ed1c24>href="#ankername"</color> . To do this, the double cross character <color #ed1c24>#</color> is written in front of the anchor name. For example: <color #ed1c24><a href="#ankername">Jump to heading xyz</a></color>
+  * einen Anker (Sprungmarke), den Sie mit dem Attribut <color #ed1c24>id="ankername"</color> erstellen. Zum Beispiel: <color #ed1c24><h1 id="ankername">Überschrift xyz</h1></color>
+  * einen Link, der auf den Anker mit <color #ed1c24>href="#ankername"</color> verweist. Hierzu wird das Doppelkreuz-Zeichen <color #ed1c24>#</color> vor den Ankernamen geschrieben. Zum Beispiel: <color #ed1c24><a href="#ankername">Zur Überschrift xyz springen</a></color>
 
-===== Example: xyz =====
+===== Beispiel =====
 
 
 <code html>
