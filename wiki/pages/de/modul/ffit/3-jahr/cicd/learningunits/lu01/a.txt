@@ -12,14 +12,11 @@ http://54.80.83.95/
 | ? | ... |
 
 ==== Skizze ====
-
-<code html>
 <html>
 <iframe 
-  src="https://viewer.diagrams.net/?url=HIER_DEINE_URL"
+  src="https://viewer.diagrams.net/?url=https://raw.githubusercontent.com/AlexanderPeter/ffit-lu01-build-environment/refs/heads/master/diagram_build_environment.drawio"
   width="100%"
   height="600"
   frameborder="0">
 </iframe>
 </html>
-</code>
