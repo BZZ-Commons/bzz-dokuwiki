@@ -5,7 +5,7 @@ CSS Flexbox ist ein leistungsstarkes Layoutmodell in CSS, das entwickelt wurde, 
 ===== Grundkonzept =====
 Die Grundkonzepte von Flexbox umfassen das Container-Element und die darin enthaltenen Items. Der Flex-Container fungiert als Rahmen für das Flexbox-Layout und organisiert die Flex-Items innerhalb. Diese Items können horizontal oder vertikal angeordnet werden, je nach Ausrichtung der Hauptachse. Die Hauptachse definiert die Richtung, in der die Flex-Items im Container angeordnet sind, während die Querachse senkrecht dazu steht und die Ausrichtung der Items in Bezug auf die Hauptachse beeinflusst. Das Verständnis dieser Grundkonzepte ist entscheidend für die effektive Nutzung von Flexbox zur Erstellung dynamischer und flexibler Layouts in CSS.
 
-{{:modul:m287:learningunits:lu04:flexbox.png?600|}}
+{{de:modul:m287:learningunits:lu04:flexbox.png?600|}}
 
 ===== Eigenschaften des Containers =====
 ^ Eigenschaft ^ Beschreibung ^

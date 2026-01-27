@@ -20,7 +20,7 @@ Der folgende Universal-Selektor setzt überall einen gepunkteten grünen Rahmen.
 ===== Attributselektor =====
 HTML-Elemente können über ihre Attributnamen selektiert werden. In CSS muss der Attributnamen zwischen **eckigen Klammern** <color #ed1c24>[ ]</color> gesetzt werden.
 
-{{:modul:m287:learningunits:lu02:attribut_selektor_1.png?600|}}
+{{de:modul:m287:learningunits:lu02:attribut_selektor_1.png?600|}}
 
 **Beispiel 1**\\
 Dieser Attributselektor wird in einem HTML-Dokument um jedes HTML-Element, das ein <color #ed1c24>title</color>-Attribut besitzt, einen Rahmen zeichnen.

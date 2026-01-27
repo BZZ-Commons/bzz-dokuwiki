@@ -4,7 +4,7 @@
 
 Um eine Webseite aufzubereiten, werden HTML, Mediadateien (Bilder oder Videos), Skripte (z.B. JavaScript, PHP) und CSS (Stylen/Layouten/Animationen) verwendet. Alle diese Basistechnologien zusammen erlauben es moderne Webseiten im Webbrowser darzustellen.
 
-{{:modul:m287:learningunits:lu02:basis_tech.png?400|}}
+{{de:modul:m287:learningunits:lu02:basis_tech.png?400|}}
 
 Die Hauptrolle von CSS (oder Stylesheets) bei der Erstellung von Webseiten ist das Erscheinungsbild. Mit CSS werden Regeln erstellt, wie der Inhalt eines HTML-Elements dargestellt werden soll. An dieser Stelle macht es sich bezahlt, wenn Sie semantisch sinnvoll die einzelnen HTML-Elemente im HTML-Dokument notiert haben.\\
 CSS unterstützt die Trennung von Struktur und Gestaltung eines Dokuments. Im Idealfall werden die präsentierenden Aspekte komplett vom Inhalt der Webseite getrennt. Dies bedeutet:
@@ -14,7 +14,7 @@ CSS unterstützt die Trennung von Struktur und Gestaltung eines Dokuments. Im I
 
 Diese Bedeutung wird nachfolgend illustriert:
 
-{{:modul:m287:learningunits:lu02:seite_mit_css_final.png?400|}}
+{{de:modul:m287:learningunits:lu02:seite_mit_css_final.png?400|}}
 
 ===== Aufbau eines Selektors in CSS =====
 
@@ -34,7 +34,7 @@ Hiermit wird die CSS-Regel, dass die Schriftfarbe (engl. color) blau (engl. blue
 
 Mit der oder den Deklaration(en) legen Sie fest, wie Sie die mit dem Selektor ausgewählte HTML-Elemente formatieren wollen. Die Deklaration selbst besteht ebenfalls aus zwei Teilen, und zwar einer Eigenschaft und einem Wert. Die Eigenschaft wird vom Wert durch einen Doppelpunkt getrennt.
 
-{{:modul:m287:learningunits:lu02:css_dekla.png?400|}}
+{{de:modul:m287:learningunits:lu02:css_dekla.png?400|}}
 
 ===== Deklaration eines Selektors =====
 
