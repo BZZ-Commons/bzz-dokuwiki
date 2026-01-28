@@ -1,0 +1,55 @@
+====== LU01d - Diverse Zahlensysteme ======
+
+
+===== Römische Zahlen =====
+//[[https://de.wikipedia.org/wiki/R%C3%B6mische_Zahlschrift]]//
+
+Das römische Zahlensystem basiert ausschliesslich auf der Addition
+((Die Subtraktionsregel, dass man maximal 3 identische Symbole schreiben darf, stammt aus dem Mittelalter.)) der Symbole.
+Dabei werden immer möglichst wenige Symbole verwendet, um die Zahl zu notieren.
+
+== Römische Zahlzeichen ==
+| I | 1 |
+| V | 5 |
+| X | 10 |
+| L | 50 |
+| C | 100 |
+| D | 500 |
+| M | 1000 |
+
+==== Beispiele ====
+== DCCXIIII ==
+''500 + 100 + 100 + 10 + 1 + 1 + 1 + 1 = 714''
+
+== DCCXIV ==
+Im Mittelalter wurde eine Subtraktionsregel eingeführt:
+Steht ein Symbol mit einem kleineren Wert **vor** einem Symbol mit grösserem Wert, so wird der kleinere Wert subtrahiert: 
+''500 + 100 + 100 + 10 - 1 + 5 = 714''
+
+===== Jass-Tafel =====
+Beim Schieber werden die Punkte auf einer Jass-Tafel mit einem vorgedruckten "Z" festgehalten.
+Das einzige Symbol ist ein Strich.
+
+{{de:modul:m114:learningunits:lu01:jasstafel.png?400|}}
+
+  * Auf dem oberen horizontalen Strich werden die 100er festgehalten. Nachdem vier Striche geschrieben sind, wird der fünfte Strich quer über die Gruppe gezogen.
+  * Auf dem diagonalen Strich werden die 50er festgehalten. Zwei 50er-Striche bilden ein X
+  * Auf dem unteren horizontalen Strich werden die 20er festgehalten. Auch hier wird der fünfte Strich quer über die Gruppe gezogen.
+  * Einzelne Restpunkte werden im Dezimalsystem neben das **Z** geschrieben.
+
+
+=== Übung ===
+Eine Gruppe von Freunden spielt einige Runden Schieber.
+Halten Sie die Punkte der verschiedenen Runden fortlaufend auf der Jasstafel fest.
+Versuchen Sie dabei jede Runde mit möglichst wenigen Strichen zu notieren.
+  * 46
+  * 83
+  * 21
+  * 105
+
+[[de:modul:m114:learningunits:lu01:loesungen:jasstafel|Lösung]]
+
+
+----
+{{tag>m114-A1G m114-A1F}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

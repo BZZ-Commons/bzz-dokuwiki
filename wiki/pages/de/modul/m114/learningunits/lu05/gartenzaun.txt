@@ -1,0 +1,98 @@
+====== LU05e - Gartenzaun  ======
+
+//Mehr Verfahren zum Nachlesen und Ausprobieren [[http://www.cryptool-online.org/]]//
+
+===== Gartenzaun =====
+  * Kryptographie
+  * Transpositionsverfahren
+  * Symmetrische Verschlüsselung
+
+Dieses Verfahren wird auch **Zick-Zack** oder **Jägerzaun** genannt.
+
+==== Einfacher Gartenzaun mit 2 Zeilen ====
+
+  - Die Buchstaben einer Nachricht werden abwechselnd auf zwei Zeilen geschrieben:
+    * Der erste Buchstabe wird auf die **obere** Zeile geschrieben.
+    * Der zweite Buchstabe wird auf die **untere** Zeile geschrieben.
+    * Der dritte Buchstabe wird auf die **obere** Zeile geschrieben.
+    * ...
+  - Alle Leerzeichen innerhalb der Zeilen werden entfernt.
+  - Anschliessend wird die obere und die untere Zeile aneinander gehängt.
+
+<code>
+D E E T X I T I G R E Z U
+ I S R E T S E N A T N A N
+
+DEETXITIGREZUISRETSENATNAN
+</code>
+
+=== Entschlüsseln ===
+
+
+Zum Entschlüsseln der Nachricht wird das Verfahren umgekehrt:
+  - Zerlege den Chiffre-Text in zwei Hälften: DEETXITIGREZU ISRETSENATNAN
+  - Notiere die Buchstaben der ersten Hälfte mit jeweils einem Leerzeichen dazwischen: 
+    * D E E T X I T I G R E Z U
+  - Notiere die Buchstaben der zweiten Hälfte in die Lücken:
+    * D**I**E**S**E**R**T**E**X**T**I**S**T**E**I**N**G**A**R**T**E**N**Z**A**U**N**
+
+==== Gartenzaun mit mehr als 2 Zeilen ====
+Das Verfahren kann auch mit mehr als 2 Zeilen angewandt werden.
+Dabei werden die Buchstaben jeweils im Zick-Zack auf die Zeilen verteilt:
+
+<code>
+D     T     T     R     U 
+ I   R E   S E   A T   A N
+  E E   X I   I G   E Z   
+   S     T     N     N    
+</code>
+
+Anschliessend werden die einzelnen Zeilen aneinander gehängt:
+
+<code>
+DTTRUIRESEATANEEXIIGEZSTNN
+</code>
+
+==== Entschlüsseln ====
+Zum Entschlüsseln müssen Sie den Chiffretext wieder in die Zick-Zack-Form bringen.
+Betrachten wir dies an einem Beispiel:
+
+^ Chiffretext | ZHNIETEHCGDTAKKERGZCRAAG |
+^ Schlüssel | 6 |
+
+=== 1. Buchstaben zählen ===
+Zählen Sie die Anzahl der Buchstaben im Chiffretext.
+Merken Sie sich diese Zahl.
+
+** 24 Zeichen **
+
+
+=== 2. Horizontale Linien ===
+Zeichnen Sie so viele horizontale Linien, wie der Schlüssel angibt.
+
+{{de:modul:m114:learningunits:lu05:gartenzaunentschl01.png?400|}}
+
+=== 3. Zick-Zack-Muster ===
+Beginnen Sie nun, ein Zick-Zack-Muster über die Linien zu zeichnen.
+Zählen Sie die Anzahl der Schnittpunkte der beiden Linien (in der Abbildung rot markiert).
+
+{{de:modul:m114:learningunits:lu05:gartenzaunentschl02.png?400|}}
+
+
+Setzen Sie das Zick-Zack-Muster fort, bis die Anzahl Schnittpunkte der Länge des Chiffretextes entspricht.
+
+{{de:modul:m114:learningunits:lu05:gartenzaunentschl03.png?400|}}
+
+=== 4. Buchstaben einsetzen ===
+Setzen Sie nun jeweils einen Buchstaben auf jeden Schnittpunkt.
+Dabei gehen Sie von oben nach unten und von links nach rechts vor.
+
+{{de:modul:m114:learningunits:lu05:gartenzaunentschl04.png?400|}}
+
+{{de:modul:m114:learningunits:lu05:gartenzaunentschl05.png?400|}}
+
+Zum Schluss können Sie den Klartext ablesen.
+
+----
+{{tag>m114-A0G}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

@@ -1,0 +1,13 @@
+====== LU02.L04c - Schritt 3 ======
+Vereinfachung nur bedingt noch möglich.
+<code>
+Falls ( e=1          OR 
+        f=1 AND g=0  OR 
+        f=1 AND h=0  OR 
+        g=0 AND h=0
+</code>
+
+{{de:modul:m114:learningunits:lu02:loesungen:download.gif?600|}}
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

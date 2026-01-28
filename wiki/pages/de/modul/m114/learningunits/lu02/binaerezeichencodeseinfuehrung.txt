@@ -1,0 +1,49 @@
+====== LU02b- Binäre Zeichencodes: Einführung ======
+
+====== Binäre Zeichencodes - Einführung ======
+
+==== Was ist ein Zeichencode? ====
+Ein Zeichencode (oder: die Zeichencodierung) beschreibt die binäre Speicherung von Zeichen (''character'') fest.
+Dazu legt man für jedes Schriftzeichen einen eindeutigen Binärcode fest.
+
+{{de:modul:m114:learningunits:lu02:asciihex.png?400|}}
+
+//Quelle: praxistipps-images.chip.de //
+
+Im ASCII-Zeichencode wird dem Buchstaben **A** der hexadezimale Code 41<sub>16</sub> zugewiesen.
+Dies entspricht
+  * 0100 0001<sub>2</sub>
+  * 65<sub>10</sub>
+
+==== Gebräuchliche Zeichencodes ====
+=== ASCII ===
+Der ASCII-Code verwendet 7 Bits und umfasst 128 Buchstaben, Ziffern und Symbole der amerikanischen Tastatur.
+
+== ANSI-Codepage ==
+Da der ASCII-Code keine Umlaute (ä, é, ...) und nur die Währungssymbole für $ und £ enthält, war er für den Rest der Welt unzureichend.
+Daher wurden verschiedene Erweiterungen (sogenannte Codepages) für unterschiedliche Sprachräume entwickelt.
+Diese Erweiterungen umfassen 256 Zeichen, wobei die ersten 128 Zeichen mit dem ASCII-Code übereinstimmen.
+
+Für westeuropäische Sprachen ist die Codepage 850 bzw. [[wpde>ISO_8859-1|ISO 8859-1]] relevant.
+
+=== Unicode ===
+Unicode ist ein internationaler Standard mit dem Ziel, jedem Schriftzeichen der Welt einen eindeutigen Code zuzuweisen.
+Dadurch sollen unterschiedliche, inkompatible Zeichencodierungen abgeschafft werden.
+
+Die Zeichencodierung im Computer wird in verschiedenen Unicode Transformation Format (kurz UTF) festgelegt.
+
+== UTF-8 ==
+  * Mindestens 8 Bit pro Zeichen
+  * Maximal 32 Bit pro Zeichen
+  * Verwendung: WWW, Email
+
+== UTF-16 ==
+  * Mindestens 16 Bit pro Zeichen
+  * Maximal 32 Bit pro Zeichen
+  * Verwendung: Programmiersprachen (z.B. Java), Betriebssysteme
+
+
+
+----
+{{tag>m114-A1E}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

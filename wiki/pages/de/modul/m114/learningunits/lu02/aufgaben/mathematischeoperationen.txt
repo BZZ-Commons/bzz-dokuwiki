@@ -1,0 +1,77 @@
+====== LU02.A02 - Mathematische Operationen ======
+
+Führen Sie die Berechnungen mit binär codierten Ganzzahlen durch.
+Halten Sie jeweils den Lösungsweg fest.
+
+== Hinweise ==
+
+  * Einige Rechnungen lassen sich einfacher lösen, wenn Sie die Rechnung zunächst umformen.
+  * Alle Zahlen werden als 16-Bit lange binäre Ganzzahlen gespeichert.
+  * Negative Zahlen werden als Zweierkomplement gespeichert. 
+
+===== Hilfsmittel =====
+  * Papier und Schreibzeug
+  * Taschenrechner mit Grundfunktionen (+, -, *, /)
+
+===== Beispiel =====
+**639<sub>10</sub> / 17<sub>10</sub> = ????<sub>10</sub>**
+
+<code>
+    0000 0010 0111 1111 : 0000 0000 0001 0001
+    -----------------------------------------
+            10011        > 10001 = 1
+         + 101111                           (101111 ist das Zweierkomplement von 10001)
+         --------
+           000010
+               101       < 10001 = 0        (Hole nächste Ziffer herunter)
+               1011      < 10001 = 0
+               10111     > 10001 = 1        
+             +101111
+             -------
+              000110
+                 1101    < 10001 = 0
+                 11011   > 10001 = 1
+               +101111
+               -------
+        Rest    001010  wird verworfen
+</code>
+
+===== Aufträge =====
+Negative Zahlen sind zur Verdeutlichung jeweils in Klammern geschrieben.
+
+=== Addition ===
+
+  * 257 + 31
+  * 18 + 167
+  * 152 + (-51)
+  * 195 + (-297)
+[[de:modul:m114:learningunits:lu02:loesungen:addition|Lösung]]
+
+=== Subtraktion ===
+  * 125 - 63
+  * 28 - 103
+  * (-78) - 12
+  * (-32) - 67
+
+[[de:modul:m114:learningunits:lu02:loesungen:subtraktion|Lösung]]
+
+=== Multiplikation ===
+  * 57 * 17
+  * 204 * 6
+  * 34 * (-12)
+  * (-116) * 8
+
+[[de:modul:m114:learningunits:lu02:loesungen:multiplikation|Lösung]]
+
+=== Division ===
+  * 256 / 32
+  * 680 / 21
+  * 20 / (-5)
+  * (-124) / 7
+
+[[de:modul:m114:learningunits:lu02:loesungen:division|Lösung]]
+
+Stellen Sie sich selber oder einem Kollegen weitere Rechenaufgaben.
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

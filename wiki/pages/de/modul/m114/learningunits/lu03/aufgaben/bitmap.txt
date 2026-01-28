@@ -1,0 +1,25 @@
+====== LU03.A03 - Bitmap  ======
+
+
+===== Auftrag =====
+Unten finden Sie ein Archiv mit einige BMP-Dateien, die Sie herunterladen können.
+
+  - Öffnen Sie diese Dateien mit einem Hexeditor (z.B. bless).
+  - Ermitteln Sie folgende Informationen zu diesen Bildern:
+    * Breite in Pixeln
+    * Höhe in Pixeln
+    * Farbtiefe
+    * Grösse der Farbtabelle
+
+===== BMP-Dateien =====
+{{ de:modul:m114:learningunits:lu03:aufgaben:lu03.zip |}}
+
+  - Laden Sie das Archiv herunter
+  - Entpacken Sie die Bilddateien
+  - Öffnen Sie die Bilddateien mit einem Hexeditor (z.B. [[https://hexed.it/|HexEd]], [[https://github.com/afrantzis/bless|Bless]] oder Notepad++ mit dem Plugin"HexEditor" [[https://sourceforge.net/projects/npp-plugins/files/Hex%20Editor/|Hexeditor Plugin]])
+
+
+[[.:..:loesungen:bitmap|Lösungen]]
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

@@ -1,0 +1,107 @@
+====== LU02.A09 - LCD-Ziffern ======
+
+===== Hilfsmittel =====
+  * Schreibmaterial
+
+===== Einleitung =====
+==== Aufbau der Anzeige ====
+
+Viele elektronische Geräte (z.B. Digitaluhren) verwenden für die Anzeige von Ziffern eine Gruppe von LCD-Elementen.
+Abhängig von der anzuzeigenden Ziffer werden diese Elemente beleuchtet oder nicht.
+
+In der folgenden Grafik sehen Sie ein Beispiel für den Aufbau einer solchen Ziffer und welche Elemente für die Darstellung der Ziffern 0 - 9 beleuchtet werden.
+Wir bezeichnen die einzelnen Elemente mit den Ziffern 1 bis 7.
+
+{{de:modul:m114:learningunits:lu02:aufgaben:lcdziffern.png?400|}}
+
+==== Speicherung der Zahl ====
+In einem Gerät wird eine Zahl zwischen 0 und 9 als binär codierte Ganzzahl gespeichert.
+Die Variable zum Speichern der Zahl hat den Datentyp ''byte'' und ist somit 8 Bit lang.
+Wir bezeichnen die einzelnen Bits von links nach rechts mit einem Buchstaben "a" bis "h".
+
+^ Wert ^ Binäre Codierung ^^^^^^^^
+^ ::: ^ a ^ b ^ c ^ d ^ e ^ f ^ g ^ h ^
+|  0 |  0  |  0  |  0  |  0  |  0  |  0  |  0  |  0  |
+|  1 |  0  |  0  |  0  |  0  |  0  |  0  |  0  |  1  |
+|  2 |  0  |  0  |  0  |  0  |  0  |  0  |  1  |  0  |
+|  3 |  0  |  0  |  0  |  0  |  0  |  0  |  1  |  1  |
+|  4 |  0  |  0  |  0  |  0  |  0  |  1  |  0  |  0  |
+|  5 |  0  |  0  |  0  |  0  |  0  |  1  |  0  |  1  |
+|  6 |  0  |  0  |  0  |  0  |  0  |  1  |  1  |  0  |
+|  7 |  0  |  0  |  0  |  0  |  0  |  1  |  1  |  1  |
+|  8 |  0  |  0  |  0  |  0  |  1  |  0  |  0  |  0  |
+|  9 |  0  |  0  |  0  |  0  |  1  |  0  |  0  |  1  |
+
+===== Beispiel: LCD-Element 1 =====
+
+Ihre Aufgabe ist es, die Logik für die Anzeige der LCD-Elemente zu definieren.
+Wir betrachten jeweils nur ein einzelnes LCD-Element auf einmal.
+
+=== Schritt 1: Anzeigen Ja oder Nein ===
+Halten Sie zunächst fest, für welche Ziffern das Element 1 (horizontales Element ganz oben) angezeigt wird.
+
+^ Ziffer ^ Binäre Codierung ^^^^^^^^ Anzeigen ? ^
+^ ::: ^ a ^ b ^ c ^ d ^ e ^ f ^ g ^ h ^ ::: ^
+|  0 |  0  |  0  |  0  |  0  |  0  |  0  |  0  |  0  | Ja | 
+|  1 |  0  |  0  |  0  |  0  |  0  |  0  |  0  |  1  | Nein |
+|  2 |  0  |  0  |  0  |  0  |  0  |  0  |  1  |  0  | Ja | 
+|  3 |  0  |  0  |  0  |  0  |  0  |  0  |  1  |  1  | Ja | 
+|  4 |  0  |  0  |  0  |  0  |  0  |  1  |  0  |  0  | Nein |
+|  5 |  0  |  0  |  0  |  0  |  0  |  1  |  0  |  1  | Ja | 
+|  6 |  0  |  0  |  0  |  0  |  0  |  1  |  1  |  0  | Ja | 
+|  7 |  0  |  0  |  0  |  0  |  0  |  1  |  1  |  1  | Ja | 
+|  8 |  0  |  0  |  0  |  0  |  1  |  0  |  0  |  0  | Ja | 
+|  9 |  0  |  0  |  0  |  0  |  1  |  0  |  0  |  1  | Ja | 
+
+
+=== Schritt 2: Bedingung ===
+Formulieren Sie nun die logische Bedingung für die Bits "a" bis "h" mit AND, OR, XOR und NOT.
+Dabei tasten wir uns schrittweise heran:
+
+Das Element wird angezeigt, wenn ...
+  * ... das Bit "e" oder "g" gesetzt ist: ''Falls ( e=1 OR g=1 )''  \\ damit decken wir die Ziffern 2, 3, 6, 7, 8 und 9 ab
+  * ... das Bit "f" und  "h" gesetzt sind: ''Falls ( f=1 AND h=1 )'' \\ damit decken wir die Ziffern 5 und 7 ab
+
+<code>
+Falls ( (e=1 OR g=1) OR (f=1 AND h=1) )
+</code>
+
+=== Schritt 3: Bedingung kürzer schreiben ===
+In Schritt 2 erhalten Sie manchmal eine umfangreiche Bedingung mit vielen Teilbedingungen.
+In solchen Fällen versuchen wir, diese Bedingung möglichst kurz zu formulieren.
+
+== Bedingungen kürzen ==
+Aus der Algebra wissen Sie, dass man gleiche Faktoren zusammenfassen kann:
+
+''(a + b) * (a + c)'' wird zu ''a * (b + c)''
+
+Ähnlich können wir gleiche Teilbedingungen zusammenfassen:
+
+''(f=1 AND h=0) OR (g=0 AND h=0)'' wird zu ''( h=0 AND (f=1 OR g=0) )''
+
+== NOT ==
+In diesem Beispiel wird das LCD-Element 1 nur in zwei Fällen **nicht** angezeigt.
+Daher ist es hier vielleicht einfacher, die Bedingung für das "nicht-anzeigen" zu formulieren.
+
+Das Element 1 wird **nicht angezeigt**, wenn ...
+  * ''(f=1 AND g=0 AND h=0)''
+  * ''(h=1 AND g=0 AND f=0 AND e=0)''
+
+Nun verknüpfen wir die Bedingungen und setzen ein NOT davor:
+
+''Falls ( NOT ( (f=1 AND g=0 AND h=0) AND (h=1 AND g=0 AND f=0 AND e=0) ) )''
+
+===== Auftrag: LCD-Element 2 =====
+Führen Sie die Schritte 1 - 3 für das LCD-Element 2 aus.
+
+==== Schritt 1 ====
+[[de:modul:m114:learningunits:lu02:loesungen:lcd1|Lösung]]
+
+==== Schritt 2 ====
+[[de:modul:m114:learningunits:lu02:loesungen:lcd2|Lösung]]
+
+
+==== Schritt 3 ====
+[[de:modul:m114:learningunits:lu02:loesungen:lcd3|Lösung]]
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter

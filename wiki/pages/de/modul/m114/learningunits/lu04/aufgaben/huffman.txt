@@ -1,0 +1,90 @@
+====== LU04.A01 - Huffman  ======
+
+===== Aufgaben =====
+
+==== Texte komprimieren ====
+Codieren Sie die Texte mit der Huffman-Codierung.
+
+== Erwartete Resultate ==
+  * Code-Tabelle
+  * Codierter Text
+
+== Texte ==
+  * Kompression
+  * never change a winning team
+
+
+==== Komprimierte Texte entpacken ====
+Entpacken Sie die komprimierten Texte anhand der jeweils vorgegebenen Codetabelle.
+
+== Erwartete Resultate ==
+  * Entpackter Klartext
+
+==== Aufgabe 1 ====
+== Codierter Text ==
+
+<code>
+011101100100000101110111111011000110 
+</code>
+
+== Code-Tabelle ==
+
+^ Code ^ Zeichen ^
+| 000 | c |
+| 001 | m |
+| 010 | k |
+| 011 | B |
+| 10 | a |
+| 1100 | r |
+| 1101 | b |
+| 1110 | (Leerzeichen) |
+| 1111 | O |
+
+
+
+===== Aufgabe 2 =====
+
+=== Codierter Text ===
+<code>
+0101011000000011101011010110000011110011011000000101011110111110111111111100011011010011010010011110100001011101101001010011000111010001010111100110111001110101111100101010011101111001100100011011001
+</code>
+
+== Code-Tabelle ==
+
+^ Code ^ Zeichen ^
+| 101 | (Leerzeichen) |
+| 1101 | E |
+| 0101 | D |
+| 0110 | A |
+| 0111 | I |
+| 1000 | R |
+| 1001 | N |
+| 1100 | O |
+| 11100 | B |
+| 11101 | H |
+| 11110 | U |
+| 11111 | F |
+| 00000 | V |
+| 00001 | L |
+| 00010 | T |
+| 00011 | M |
+| 00100 | W |
+| 00101 | 1 |
+| 00110 | 9 |
+| 00111 | 2 |
+| 01000 | 5 |
+| 01001 | G |
+
+
+===== Lösungen =====
+==== Texte komprimieren ====
+Je nach Anordnung der Buchstaben sind verschiedene korrekte Lösungen möglich.
+Zur Kontrolle können Sie eines der Tools verwenden:
+  * [[https://spyrosoft.com/tools/huffman-encoder.html]]
+
+==== Komprimierte Texte entpacken ====
+[[de:modul:m114:learningunits:lu04:loesungen:entpacken|LU04.L01a - Texte entpacken]]
+
+----
+{{tag>m114-A0G}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter
