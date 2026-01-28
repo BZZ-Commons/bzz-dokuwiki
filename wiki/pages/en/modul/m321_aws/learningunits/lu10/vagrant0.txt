@@ -1,0 +1,202 @@
+~~NOTOC~~
+====== LU10a - Setup: VirtualBox & Vagrant installieren ======
+
+<WRAP center round download 60%>
+**Ziel:** Du kannst die nötigen Tools (**VirtualBox**, **Vagrant**) korrekt installieren, die **Hardware-Virtualisierung** prüfen/aktivieren und ein erstes **Vagrant-Testprojekt** starten, um das Setup zu verifizieren.
+</WRAP>
+
+===== Übersicht =====
+
+Bevor wir mit **Multi-Node Labs** (LU10b) und **Provisioning mit Ansible** (LU10c) starten, muss dein Rechner als „Host“ bereit sein:
+  * Virtualisierung ist aktiv (CPU/BIOS/UEFI)
+  * VirtualBox läuft
+  * Vagrant ist installiert und im Terminal verfügbar
+  * Ein Test-VM-Start funktioniert
+
+===== Was muss installiert sein? =====
+
+^ Bestandteil ^ Pflicht? ^ Wozu? ^
+| **VirtualBox** | Ja | Virtualisierung (Provider) für unsere VMs |
+| **VirtualBox Extension Pack** | Optional | Zusätze wie USB/weitere Features (nicht zwingend für Basics) |
+| **Vagrant** | Ja | VMs als Code (Vagrantfile), Multi-VM-Labs, Lifecycle-Commands |
+| **Git** | Optional | Projekte/Unterlagen klonen, Versionsverwaltung |
+| **Editor (VS Code o.ä.)** | Optional | Vagrantfile/Playbooks bearbeiten |
+
+<WRAP info>
+**Wichtig:** Für LU10b verwenden wir (empfohlen) **ansible_local**. Dann muss Ansible **nicht** auf deinem Host installiert sein, sondern wird in der VM genutzt.
+</WRAP>
+
+===== Schritt 0: Hardware-Virtualisierung prüfen (sehr häufige Fehlerquelle) =====
+
+==== Windows (10/11) ====
+  * Task-Manager → **Leistung** → **CPU** → „**Virtualisierung: Aktiviert**“
+  * Wenn dort „Deaktiviert“ steht: im BIOS/UEFI einschalten (Intel VT-x / AMD-V)
+
+==== macOS ====
+  * Intel-Macs: Virtualisierung ist in der Regel ok.
+  * Apple Silicon (M1/M2/M3…): VirtualBox Support ist erst in neueren Versionen da – achte darauf, dass du eine passende VirtualBox-Version verwendest.
+
+==== Linux ====
+  * Quick-Check im Terminal:
+<code bash>
+egrep -c '(vmx|svm)' /proc/cpuinfo
+</code>
+  * Ergebnis > 0 bedeutet: CPU unterstützt Virtualisierung.
+
+<WRAP warning>
+Wenn Virtualisierung im BIOS/UEFI aus ist, funktionieren VMs oft gar nicht oder extrem langsam. Das ist der #1-Showstopper.
+</WRAP>
+
+===== Schritt 1: VirtualBox installieren =====
+
+==== Download (offiziell) ====
+  * VirtualBox von der offiziellen Download-Seite beziehen.
+  * Nach Installation: VirtualBox einmal starten.
+
+==== Windows ====
+  1) Installer ausführen  
+  2) Standard-Optionen ok  
+  3) Nach der Installation VirtualBox starten → es soll ohne Fehlermeldung öffnen
+
+==== macOS ====
+  * Intel & Apple Silicon: achte darauf, dass du das richtige Paket für deine Plattform installierst.
+  * Falls macOS Sicherheitsdialoge zeigt: System-Einstellungen → Datenschutz/Sicherheit → Systemerweiterung erlauben (falls verlangt).
+
+==== Linux ====
+  * Je nach Distribution gibt es Pakete/Repos.  
+  * Wichtig: Kernel-Module müssen korrekt gebaut/geladen sein (Fehler zeigen sich beim Start der VM).
+
+===== Schritt 2 (optional): VirtualBox Extension Pack =====
+
+Das Extension Pack kann nützlich sein, ist für unseren Standard-Workflow aber meist nicht nötig.
+
+<WRAP tip>
+Für Unterricht/Labs gilt: **Installiere das Extension Pack nur, wenn du es wirklich brauchst** (z.B. USB-Passthrough).
+</WRAP>
+
+===== Schritt 3: Vagrant installieren =====
+
+==== Installation (offiziell) ====
+  * Installiere Vagrant mit dem offiziellen Installer für dein OS.
+  * Danach Terminal neu öffnen (damit PATH/Umgebungsvariablen sauber geladen sind).
+
+==== Verifikation ====
+<code bash>
+vagrant --version
+</code>
+
+Wenn du eine Versionsausgabe bekommst, ist Vagrant korrekt installiert.
+
+<WRAP warning>
+Wenn `vagrant` „nicht gefunden“ wird: Terminal neu starten oder ab-/anmelden. Unter Windows ist das der häufigste Stolperstein.
+</WRAP>
+
+===== Schritt 4: Testprojekt erstellen (Smoke Test) =====
+
+Wir erstellen ein Minimalprojekt und starten eine VM.
+
+==== 1) Projektordner anlegen ====
+<code bash>
+mkdir vagrant-test
+cd vagrant-test
+</code>
+
+==== 2) Vagrantfile initialisieren ====
+Variante A (Standard-Box, wenn verfügbar):
+<code bash>
+vagrant init ubuntu/jammy64
+</code>
+
+==== 3) VM starten ====
+<code bash>
+vagrant up
+</code>
+
+==== 4) Einloggen ====
+<code bash>
+vagrant ssh
+</code>
+
+==== 5) In der VM prüfen ====
+<code bash>
+uname -a
+ip a
+ls -la /vagrant
+</code>
+
+==== 6) Beenden ====
+<code bash>
+exit
+vagrant halt
+</code>
+
+<WRAP info>
+**Erwartung:**  
+  * `vagrant up` lädt beim ersten Mal eine Box (kann dauern)  
+  * `vagrant ssh` funktioniert  
+  * `/vagrant` enthält deinen Projektordner
+</WRAP>
+
+===== Schritt 5: Häufige Fehler & Fixes =====
+
+==== Problem: „VT-x/AMD-V not available“ oder VM startet nicht ====
+Ursache: Virtualisierung im BIOS/UEFI aus (oder Hypervisor-Konflikt).  
+Fix:
+  * BIOS/UEFI: Intel VT-x / AMD-V aktivieren
+  * Danach neu starten
+
+==== Problem (Windows): Hyper-V / WSL / Windows Hypervisor blockiert VirtualBox ====
+Symptome:
+  * VM startet extrem langsam oder gar nicht
+  * Fehlermeldungen rund um Hypervisor
+
+Fix-Ideen (je nach Schulgerät/Policy):
+  * Windows-Features: Hyper-V / Virtual Machine Platform / Windows Hypervisor Platform prüfen
+  * Falls nötig: deaktivieren (und neu starten)
+
+<WRAP warning>
+In Schulumgebungen kann das durch Policies eingeschränkt sein. Wenn du keine Adminrechte hast: früh melden, damit wir eine Lösung finden (Alternativ-Setup / Schulgeräte / Remote-VM).
+</WRAP>
+
+==== Problem: „Port already in use“ ====
+Ursache: Port-Forwarding kollidiert mit einem Dienst auf deinem Host.  
+Fix:
+  * anderen Host-Port wählen
+  * oder den belegenden Dienst stoppen
+
+==== Problem: Download/Box-Fehler ====
+Fix:
+  * Internet/Proxy prüfen
+  * `vagrant box list` ansehen
+  * Box neu laden:
+<code bash>
+vagrant box remove ubuntu/jammy64
+vagrant up
+</code>
+
+===== Apple Silicon Hinweis (M1/M2/M3/…) =====
+
+Auf Apple Silicon ist Virtualisierung grundsätzlich möglich – aber:
+  * Du brauchst eine VirtualBox-Version, die Apple Silicon unterstützt.
+  * Deine Vagrant-Box muss zur Architektur passen (ARM64 vs x86_64).
+
+<WRAP tip>
+Wenn du auf Apple Silicon Probleme hast, melde dich früh: Dann entscheiden wir gemeinsam, ob du
+  * mit kompatiblen ARM-Boxen arbeitest,
+  * oder einen alternativen Provider/Remote-Setup nutzt.
+</WRAP>
+
+===== Abgabe/Checkliste (Selbstkontrolle) =====
+
+^ Check ^ OK? ^
+| Virtualisierung aktiv (Windows Task-Manager / Linux vmx/svm) | ☐ |
+| VirtualBox startet ohne Fehler | ☐ |
+| `vagrant --version` funktioniert | ☐ |
+| `vagrant up` im Testprojekt klappt | ☐ |
+| `vagrant ssh` klappt | ☐ |
+| `/vagrant` ist in der VM vorhanden | ☐ |
+
+----
+{{tag>M321-LU10}}
+
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Kevin Maurizi
