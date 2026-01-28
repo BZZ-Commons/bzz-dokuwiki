@@ -1,5 +1,5 @@
 ====== LU04.A03 - WebGoat in Betrieb nehmen ======
-
+<sup>Internal reference: exer/04-3.md</sup>
 ===== Was ist WebGoat? =====
 WebGoat ist eine bewusst unsichere Webanwendung, die von OWASP betreut wird und dazu dient, Lektionen zur Sicherheit von Webanwendungen zu vermitteln.
 Dieses Programm demonstriert häufige Schwachstellen serverseitiger Anwendungen. Die Übungen sind dazu gedacht, Anwendern die Grundlagen der Anwendungssicherheit und Penetrationstests näherzubringen.
@@ -21,5 +21,7 @@ Bearbeiten Sie die Übung in Kurs-Repository <color #00a2e8>01/02_Exercises/01 b
 
 ----
 Source: https://github.com/WebGoat/WebGoat/blob/main/README.md
+
+----
 
 [[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Daniel Garavaldi

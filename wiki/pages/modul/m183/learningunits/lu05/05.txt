@@ -1,0 +1,61 @@
+====== LU05e - Checksum von Software erstellen ======
+<sup>Internal reference: lu/05-5.md</sup>
+\\
+===== Was ist eine Checksum? =====
+Eine Checksum (eng. Checksum) ist ein Wert, der mithilfe eines Algorithmus aus einer Ursprungsdatei berechnet wird. <mark>Er ist quasi der Fingerabdruck einer Datei</mark>. Wie ein Fingerabdruck sollte eine Checksum eindeutig sein, also ein Wert exakt zu einer Datei gehören.
+Es gibt eine ganze Reihe an Algorithmen, die Checksums berechnen und sich in Ihrer Komplexität, aber auch der Verlässlichkeit unterscheiden.
+In der Regel werden <mark>MD5, SHA-1 oder SHA-2 Checksums</mark> verwendet und angegeben.
+
+
+\\
+===== Wofür ist eine Checksum gut? =====
+Mithilfe von Checksums kann die <mark>Integrität von Daten</mark> überprüft werden. Wenn man z.B. eine größere Datei herunterlädt, dann kann es bei der Übertragung zu Fehlern kommen (es können „Bits umkippen“, also ihren Wert ändern), die die heruntergeladene Datei verändern. Da die Checksums direkt aus der jeweiligen Datei berechnet werden und bereits kleinste Veränderungen die resultierende Checksum verändern, reicht es aus, einfach die Checksum der Datei auf dem bereitstellenden Server mit der heruntergeladenen Datei zu vergleichen. Stimmen die Checksums überein, ist die heruntergeladene Datei konsistent und die Datei vollständig.
+
+\\
+===== Aber Checksums können mehr! =====
+Je nach verwendetem Algorithmus zeigen Checksums also bereits kleinste Unterschiede zwischen Dateien. So sollte man bei Downloads aus Drittquellen oder bei kritischen Daten immer die Checksumme der heruntergeladenen Datei mit der vom Urheber der Datei bereitgestellten Checksum verglichen werden. Alle Entwickler von Betriebssystemen haben z.B. die Checksums aktueller Downloadversionen veröffentlicht. So kann sichergestellt werden, dass Nutzer nicht von Dritten ein manipuliertes und möglicherweise mit Schadsoftware versehenes Image erhalten.
+
+{{:modul:m183::learningunits:lu05:checksum-example-01.png?600|Abb-01: Beispiel von Checksums für VmWare Player}}
+
+\\
+===== Checksums sind nicht uneingeschränkt vertrauenswürdig =====
+In der Regel werden bei Checksum die Algorithmen SHA-1 oder MD5 verwendet.
+Allerdings sind diese Algorithmen verwundbar, sodass es potenziellen Angreifern möglich ist, eine Datei zu manipulieren und so zu verändern, dass sie trotzdem die gleiche Checksumme hat, wie die Ausgangsdatei.
+Um dieser Problematik aus dem Weg zu gehen, und auch bei sensitiven Daten die Integrität sicherstellen zu können, ist es empfehlenswert, nach Möglichkeit moderne Algorithmen, wie SHA-2 zu benutzen.
+
+\\
+===== Wie kann ich eine Checksum erstellen? =====
+
+In Unix-Betriebssystemen (z.B. wie Linux, Ubuntu) kann eine Checksum einer beliebigen Datei ganz einfach mittels folgender Kommandozeilenbefehle erstellt werden:
+
+<code>
+md5sum -c datei.iso
+sha1sum -c datei.iso
+</code>
+
+unter OS X kann man folgende Kommandozeilen-Befehle nutzen:
+
+<code>
+md5 datei.iso
+shasum -a 1 datei.iso
+shasum -a 256 datei.iso
+</code>
+
+Unter Windows kann man ebenfalls die Kommandozeile nutzen:
+
+<code>
+certUtil -hashfile datei.iso MD5
+certUtil -hashfile datei.iso SHA1
+certUtil -hashfile datei.iso SHA256
+</code>
+
+
+Alternativ gibt es eine Vielzahl an kostenlosen Tools, die das Berechnen von Hashes erlauben und eine grafische Oberfläche bieten.
+
+---
+
+Quelle: https://www.it-talents.de/blog/it-talents/was-sind-pruefsummen-checksums
+
+----
+
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Daniel Garavaldi
