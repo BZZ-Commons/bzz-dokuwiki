@@ -22,9 +22,9 @@ Eine Variante des BCD-Codes weist den 4 Bits die Werte 8, 4, 2 und 1 zu.
 === 2-4-2-1 ===
 Eine andere Variante weist den 4 Bits die Werte 2, 4, 2 und 1 zu.
 ^ Dezimal ^ BCD ^^ Dezimal ^ BCD ^
-| 0 | 0000<sub>2</sub> | | 5 | 0101<sub>2</sub> |
-| 1 | 0001<sub>2</sub> | | 6 | 0110<sub>2</sub> |
-| 2 | 0010<sub>2</sub> | | 7 | 0111<sub>2</sub> |
+| 0 | 0000<sub>2</sub> | | 5 | 1011<sub>2</sub> |
+| 1 | 0001<sub>2</sub> | | 6 | 1100<sub>2</sub> |
+| 2 | 0010<sub>2</sub> | | 7 | 1101<sub>2</sub> |
 | 3 | 0011<sub>2</sub> | | 8 | 1110<sub>2</sub> |
 | 4 | 0100<sub>2</sub> | | 9 | 1111<sub>2</sub> |
 
@@ -64,6 +64,10 @@ dcl summe dec fixed(15,3);
   * ''15'': Die Zahl hat insgesamt 15 Stellen.
   * ''3'': Die Zahl hat 3 Stellen nach dem Komma (somit also 12 Stellen vor dem Komma).
 
+In MySQL würde das gleiche Format so definiert:
+<code sql>
+summe DECIMAL(15,3)
+</code>
 ----
 {{tag>m114-A1G m114-A1F}}
 [[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Marcel Suter
