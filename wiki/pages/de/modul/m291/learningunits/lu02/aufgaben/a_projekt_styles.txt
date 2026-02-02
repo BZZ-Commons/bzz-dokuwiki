@@ -1,0 +1,236 @@
+====== Projekt 1: Landingpage Alarado – Fonts, Variablen und Responsive ======
+
+<WRAP center round box 80%>
+**Ziel:** Sie ergänzen im bestehenden LU01-Projekt die **TODO in LU02**:
+\\
+  - Google Font einbinden
+  - CSS-Variablen in '':root'' definieren und verwenden
+  - Typografie, Navigation und Buttons gemäss Design stylen
+  - Responsive Anpassungen mit einer Media Query umsetzen
+
+Ziel-Layout:
+{{:de:modul:m291:learningunits:lu02:aufgaben:screenshot_2026-02-01_at_23.07.59.png?direct&600|}}
+</WRAP>
+
+==== Voraussetzungen ====
+  * Sie arbeiten im bereitgestellten ''index.html'' Template aus LU01 weiter.
+
+<WRAP center round download 80%>
+Ausgangslage:
+{{:de:modul:m291:learningunits:lu02:aufgaben:screenshot_2026-02-01_at_23.02.30.png?direct&600|}}
+
+Falls Sie in der letzten Unterrichtseinheit nicht weit gekommen sind, laden Sie sich dieses HTML-File herunter und verbessern Sie Ihren Code nach dieser Vorlage.
+{{ :de:modul:m291:learningunits:lu02:aufgaben:index_lu02_start.zip | Code nach LU01}}
+</WRAP>
+
+
+==== Arbeitsweise ====
+  * Arbeiten Sie von oben nach unten im Template.
+  * Nach jedem Schritt: speichern → Browser aktualisieren → Ergebnis prüfen. (oder mit Live-Server – aktualisiert automatisch)
+  * Wenn etwas nicht funktioniert: DevTools öffnen → Console und Elements prüfen.
+
+<WRAP center round tip 70%>
+**Hilfreiche Links**
+\\
+  * Google Fonts: [[https://fonts.google.com/|fonts.google.com]]
+  * MDN: CSS Custom Properties: [[https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Cascading_variables/Using_custom_properties|MDN CSS Variables]]
+  * MDN: Media Queries: [[https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_media_queries/Using_media_queries|MDN Media Queries]]
+  * DevTools Responsive Mode: [[https://developer.chrome.com/docs/devtools/device-mode/|Chrome DevTools Device Mode]]
+</WRAP>
+
+
+===== Schritt 1: Google Font Poppins einbinden =====
+
+**Aufgabe**
+  * Öffnen Sie [[https://fonts.google.com/|Google Fonts]] und suchen Sie **Poppins**.
+  * Klicken Sie auf //Get Font//
+  * Kopieren Sie den vorgeschlagenen ''<link>'' Code und fügen Sie ihn im ''<head>'' an der Stelle **TODO in LU02** ein.
+  * Setzen Sie im ''body'' (CSS) die ''font-family'' auf Poppins mit einem Fallback auf //sans-serif// 
+
+
+===== Schritt 2: CSS-Variablen in :root definieren =====
+
+**Aufgabe**
+  * Füllen Sie den Block '':root'' im CSS.
+  * Definieren Sie Variablen für:
+    - Farben für Hintergrund und Text
+    - Aktive Linkfarbe
+    - Schriftgrössen und Schriftschnitte (=font-weight) für Navigation, h1, h3, Buttons
+  * Werte nehmen Sie aus dem Figma-Design.
+  * Nutzen Sie ''rem''-Werte und nicht ''px''-Werte für die Schriftgrössen. Einen Umrechner finden Sie hier: [[https://nekocalc.com/px-to-rem-converter|PX To REM converter]] oder via VS-Code Extension [[https://marketplace.visualstudio.com/items?itemName=sainoba.px-to-rem|VS Code Extension px-to-rem]] -> Umrechnung: pixel wert markieren und dann ''Alt-Z'' drücken.
+
+<WRAP center round box 80%>
+**Beispielstruktur für :root**
+<code css>
+:root {
+  /* Farben */
+  --color-bg-light: ...;
+  --color-text-light: ...;
+  --color-accent: ...;
+
+  /* Typografie */
+  --size-h1-desktop: ...;
+  --size-h1-mobile: ...;
+  --weight-h1: ...;
+
+  --size-h3: ...;
+  --weight-h3: ...;
+
+  --size-nav: ...;
+  --weight-nav: ...;
+
+  --size-button: ...;
+  --weight-button: ...;
+}
+</code>
+</WRAP>
+
+<WRAP center round important 80%>
+**Regel:** Ab jetzt verwenden Sie im CSS möglichst oft ''var(--...)'' statt einzelne Zahlen zu kopieren.
+</WRAP>
+
+===== Schritt 3: Grundstyles im body setzen =====
+
+**Aufgabe**
+  * Setzen Sie im ''body'':
+    - ''background-color'' und ''color'' über Ihre Variablen
+
+<WRAP center round box 80%>
+**Beispiel welche Eigenschaften erwartet werden**
+<code css>
+body {
+  font-family: ...;
+  background-color: var(...);
+  color: var(...);
+  height: 100vh; 
+}
+</code>
+</WRAP>
+
+**Überprüfen Sie Folgendes:**
+  * Text wirkt sichtbar in der neuen Schrift.
+  * Hintergrund und Textfarbe stimmen mit dem Design überein.
+
+
+===== Schritt 4: Navigation stylen =====
+
+{{:de:modul:m291:learningunits:lu02:aufgaben:screenshot_2026-01-25_at_23.31.39.png?nolink&800|}}
+
+**Aufgabe**
+  * Stylen Sie die Navigation so, dass:
+    - die ''li'' eine definierte Schriftgrösse und ein Schriftschnitt (=font-weight) erhalten (über Variablen)
+    - Links standardmässig keine Unterstreichung haben
+    - der aktive Link als aktiv erkennbar ist (Farbe und Unterstreichung gemäss Design)
+  * Achten Sie darauf, dass nur der aktive Link speziell gestylt ist.
+
+<WRAP center round tip 70%>
+Für „alle Links ausser active“ eignet sich ein Selektor wie ''a:not(.active)''. ((Der Selektor trifft alle Links, die nicht die Klasse active haben.))
+</WRAP>
+
+
+===== Schritt 5: Typografie für h3 und h1 =====
+
+**Aufgabe**
+  * Setzen Sie bei ''h3'':
+    - Schriftgrösse und //font-weight// über Variablen
+    - Grossschreibung mit ''text-transform: uppercase''
+    - passende Abstände (margin)
+  * Setzen Sie bei ''h1'':
+    - Schriftgrösse und //font-weight// über Variablen
+    - passende Abstände gemäss Design
+
+<WRAP center round box 80%>
+**Beispiel welche Eigenschaften erwartet werden**
+<code css>
+h3 {
+  font-size: var(...);
+  font-weight: var(...);
+  text-transform: uppercase;
+  margin-bottom: ...;
+}
+
+h1 {
+  font-size: var(...);
+  font-weight: var(...);
+  margin-bottom: ...;
+}
+</code>
+</WRAP>
+
+===== Schritt 6: Buttons stylen =====
+
+{{:de:modul:m291:learningunits:lu02:aufgaben:screenshot_2026-01-25_at_23.57.10.png?nolink&500|}}
+
+**Aufgabe**
+  * Definieren Sie Basis-Styles für alle ''button'':
+    - Schriftgrösse und //font-weight// über Variablen
+    - Cursor-Verhalten
+  * Stylen Sie anschliessend die Varianten:
+    - ''.highlight'' als primärer Button (Padding, Hintergrundfarbe, Radius, Textfarbe)
+    - ''.active'' als sekundärer Button (transparent, keine Border)
+
+<WRAP center round box 80%>
+**Beispiel welche Bereiche Sie umsetzen sollen**
+<code css>
+button { ... }
+button:hover { ... }
+
+button.highlight { ... }
+button.active { ... }
+</code>
+</WRAP>
+
+**Überprüfen Sie folgendes**
+  * „Get Started“ wirkt wie ein Hauptbutton.
+  * „Get live demo“ wirkt eher wie ein Link.
+
+===== Schritt 7: Responsive Regeln mit Media Query =====
+
+{{:de:modul:m291:learningunits:lu02:aufgaben:screenshot_2026-02-01_at_23.09.10.png?nolink&400|}}
+
+**Aufgabe**
+  * Ergänzen Sie im Template den ''@media'' Block so, dass das Mobile-Layout funktioniert:
+    - Hero wird einspaltig
+    - Bild kommt oben, Text darunter
+    - Innenabstände werden kleiner
+    - Navigation-Liste und Switch verschwinden
+    - Hamburger-Icon wird sichtbar
+    - h1 wird kleiner
+
+<WRAP center round box 80%>
+**Gerüst für den Media Query Block**
+<code css>
+@media screen and (width < 1024px) {
+  /* Hero Layout anpassen */
+  /* Content-Wrapper Breite anpassen */
+  /* Container Padding anpassen */
+  /* Typografie Mobile anpassen */
+  /* Navigation/Switch ausblenden, Hamburger einblenden */
+}
+</code>
+</WRAP>
+
+<WRAP center round tip 70%>
+**Kaskade merken:** Wenn ein Selektor im ''@media'' Block gleich ist wie oben, überschreibt die Regel im ''@media'' Block die vorherige Regel, sobald die Bedingung stimmt.
+</WRAP>
+
+**Überprüfen Sie Folgendes:**
+  * Über 1024px: 2-Spalten Layout.
+  * Unter 1024px: 1-Spalten Layout mit Bild oben.
+  * Hamburger sichtbar, Menu und Switch versteckt.
+
+===== Schritt 8: Responsive testen mit DevTools =====
+{{:de:modul:m291:learningunits:lu02:aufgaben:screenshot_2026-02-02_at_00.23.31.png?direct&1100|}}
+
+**Aufgabe**
+  * Öffnen Sie DevTools und aktivieren Sie den Device Toolbar Modus.
+  * Testen Sie mindestens:
+    - Breite knapp über 1024px
+    - Breite knapp unter 1024px
+    - ein Smartphone-Preset (z.B. iPhone)
+
+**Achten Sie besonders auf Folgendes:**
+  * Kein horizontales Scrollen.
+  * Keine überlappenden Elemente.
+  * Text bleibt gut lesbar.
+

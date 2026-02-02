@@ -5,43 +5,53 @@
 \\
   - die Schrift (Google Font) einbinden,
   - Designwerte als CSS-Variablen definieren und
-  - Mit Media Queries das Responsive-Layout für Mobile umsetzen.
+  - mit Media Queries das Responsive-Layout für Mobile umsetzen.
 </WRAP>
 
 ==== Lernziele ====
-  * Sie können eine Google Font per ''<link>'' einbinden und sinnvoll als ''font-family'' verwenden.
-  * Sie verstehen den Unterschied zwischen ''px'', ''em'' und ''rem'' und setzen Schriftgrössen konsistent um.
-  * Sie können CSS-Variablen in '':root'' definieren und mit ''var(...)'' wiederverwenden.
-  * Sie verstehen die CSS-**Cascade** (Reihenfolge/Überschreiben/Vererbung).
+  * Sie können eine Google Font per ''<link>'' einbinden und als ''font-family'' verwenden.
+  * Sie verstehen ''px'', ''em'' und ''rem'' und setzen Schriftgroessen konsistent um.
+  * Sie können CSS-Variablen in '':root'' definieren und mit ''var(...)'' einsetzen.
+  * Sie verstehen die CSS-**Kaskade** (Vererbung, Spezifität, Reihenfolge).
   * Sie können Media Queries für Responsive Design nutzen und mit DevTools testen.
 
+----
 
-===== Fonts im Web =====
+===== 1) Fonts im Web =====
+{{:de:modul:m291:learningunits:lu02:theorie:jon-tyson-x5bnzeywcug-unsplash_700.jpg?nolink&400|}}
 
 ==== Google Fonts via CDN ====
-In vielen Projekten werden Fonts schnell über ein CDN eingebunden (z.B. Google Fonts) – das ist praktisch für Prototypen und Schulprojekte.
+In vielen Projekten werden Fonts schnell über ein CDN eingebunden (z.B. Google Fonts). Das ist praktisch für Schulprojekte und schnelle Prototypen.
 
-**Typischer Aufbau im ''<head>''**:
+<WRAP center round box 80%>
+**Typischer Aufbau im ''<head>''** (hier mit **Poppins**):
 <code html>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link
+  href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+  rel="stylesheet"
+/>
 </code>
+</WRAP>
 
+<WRAP center round box 80%>
 **Dann im CSS verwenden:**
 <code css>
 body {
   font-family: "Poppins", sans-serif;
 }
 </code>
-
-<WRAP center round box 80%>
-**Hinweis zur Praxis:** In professionellen Projekten werden Fonts häufig **lokal** im Projekt gespeichert (Datenschutz/Performance/Offline-Fähigkeit). Für dieses Modul genügt zu Beginn das Einbinden via ''<link>''.
 </WRAP>
 
-==== Besser in der Praxis: Fonts lokal speichern (kurz) ====
-Mit ''@font-face'' können Sie eine Schrift von Ihrer eigenen Projekt-URL laden und einen Namen vergeben.
+<WRAP center round tip 70%>
+**Praxis-Hinweis:** In professionellen Projekten werden Fonts oft **lokal** gespeichert (Datenschutz, Performance, Offline-Fähigkeit). Für dieses Modul genügt zu Beginn das Einbinden via ''<link>''. ((CDN-Fonts sind bequem, aber Sie sind abhängig von einem externen Dienst.))
+</WRAP>
 
+==== Fonts lokal speichern ====
+Wenn Fonts lokal im Projekt liegen, werden sie mit ''@font-face'' eingebunden.
+
+<WRAP center round box 80%>
 <code css>
 @font-face {
   font-family: "Poppins";
@@ -50,187 +60,231 @@ Mit ''@font-face'' können Sie eine Schrift von Ihrer eigenen Projekt-URL laden 
   font-style: normal;
 }
 </code>
+</WRAP>
 
-==== Wichtige Font-Eigenschaften (Repetition) ====
-  * ''font-family'': Schrift-Familie (immer mit Fallbacks arbeiten, z.B. ''sans-serif'')
-  * ''font-weight'': Schriftschnitt – "Dicke" (z.B. 400 normal, 700 bold – nicht jede Schrift hat alle Stufen)
-  * ''font-style'': normal/italic
-  * ''text-transform'': Darstellung (uppercase/lowercase/capitalize)
-  * ''line-height'': Zeilenhöhe (Best Practice: **ohne Einheit**, z.B. 1.4)
+((Für lokale Fonts brauchen Sie die Font-Dateien im Projekt, idealerweise ''woff2''.))
 
-==== Einheiten bei Fonts: px vs em vs rem (mit Accessibility) ====
+==== Wichtige Font-Eigenschaften ====
+  * ''font-family'': Schriftfamilie mit Fallback (z.B. ''sans-serif'')
+  * ''font-weight'': Schriftschnitt (400 normal, 700 bold) ((Nicht jede Font bietet jede Weight-Stufe.))
+  * ''font-style'': normal oder italic
+  * ''text-transform'': Darstellung (z.B. ''uppercase'') ((Der Inhalt bleibt gleich, nur die Darstellung ändert sich.))
+  * ''line-height'': Zeilenhöhe (Best Practice: **einheitenlos**, z.B. ''1.4'')
 
-=== Kurzdefinitionen ===
-  * **px**: „fixe“ Design-Einheit. ''16px'' bleibt rechnerisch 16px.
-  * **em**: relativ zur **berechneten Schriftgrösse** (''font-size'') des **aktuellen Elements**.((Historisch stammt „em“ aus der Typografie (em-square / „M“-Breite). In CSS ist die Definition jedoch eindeutig: 1em entspricht der aktuell berechneten `font-size`-Grösse – nicht der Buchstabenbreite.))
-  * **rem**: relativ zur **Root-Schriftgrösse** (''font-size'' von ''html'').
+----
 
+==== Einheiten bei Schriftgroessen ====
 
+<WRAP center round box 80%>
+**Wichtig:** Bei Schriftgroessen geht es nicht nur um „schön“, sondern auch um **Skalierung, Wartbarkeit und Accessibility**.
+\\
+Viele Menschen nutzen Browser-Zoom oder haben eine grössere Standard-Schrift eingestellt.
+</WRAP>
 
-=== Warum em/rem oft besser sind als px ===
+=== px ===
+  * ''px'' ist eine „fixe“ Design-Einheit: ''16px'' bleibt rechnerisch 16px.
+  * Vorteil: direkt und einfach.
+  * Nachteil: In grossen Projekten wird es schnell unübersichtlich, weil Anpassungen an vielen Stellen nötig werden.
 
-==== 1) Skalierung & Nutzer-Einstellungen (Accessibility) ====
-Viele Nutzerinnen und Nutzer verändern bewusst die **Standard-Schriftgrösse** im Browser oder verwenden **Zoom** bzw. Betriebssystem-Einstellungen (z.B. Sehhilfe, grosse Schrift).
+((Browser-Zoom vergrössert zwar alles. Trotzdem ist ''px'' oft weniger flexibel, wenn Sie ein Designsystem skalieren oder mehrere Breakpoints sauber pflegen wollen.))
 
-  * Mit **rem/em** „gehen“ Ihre Schriftgrössen **automatisch** mit dieser Einstellung mit, weil sie relativ gerechnet werden.
-  * Mit **px** bleiben Sie oft näher an einem „fixen“ Design – das kann dazu führen, dass Text im Verhältnis zu Layout-Abständen schlechter skaliert.
+<WRAP center round box 80%>
+<code css>
+h1 { font-size: 64px; }
+p  { font-size: 18px; }
+</code>
+</WRAP>
 
-==== 2) Konsistenz über das ganze Projekt (Designsystem) ====
-Mit **rem** können Sie ein klares System bauen:
-  * Basis ist ''html { font-size: ... }''
-  * Alles andere wird in rem definiert (z.B. h1 = 4rem, p = 1.125rem)
+=== em ===
+  * ''1em'' entspricht der **berechneten Schriftgroesse** (''font-size'') des aktuellen Elements.
+  * ''em'' wirkt wie ein Faktor: ''2em'' ist doppelt so gross wie die Schriftgroesse des Eltern-Elements.
 
-Damit können Sie das „Gesamtbild“ sehr kontrolliert skalieren, ohne jedes Element einzeln anzufassen.
+((Historisch stammt „em“ aus der Typografie. In CSS ist ''em'' eine Recheneinheit: 1em = aktuelle ''font-size''.))
 
+<WRAP center round box 80%>
+<code css>
+body { font-size: 16px; }  /* Basis */
+h1   { font-size: 2em; }   /* 2 × 16px = 32px */
+</code>
+</WRAP>
 
-==== 3) Robustheit bei Komponenten ====
-**em** ist besonders nützlich innerhalb von Komponenten:
-  * Buttons, Badges, Cards können Abstände (padding/margins) in ''em'' bekommen,
-  * so bleiben sie proportional zur Textgrösse der Komponente.
+**Die typische EM-Falle**
+Wenn mehrere Eltern-Elemente die Schrift bereits verändern, multipliziert sich der Effekt:
 
-Beispiel: Wenn ein Button-Text grösser wird, wächst das Padding automatisch mit – das wirkt typografisch sauber und verhindert „gequetschte“ Buttons.
+<WRAP center round box 80%>
+<code css>
+body { font-size: 1.2em; }  /* 1.2 × 16px = 19.2px */
+div  { font-size: 1.3em; }  /* 1.3 × 19.2px = 24.96px */
+h1   { font-size: 2em; }    /* 2 × 24.96px = 49.92px */
+</code>
+</WRAP>
 
+((Darum ist ''em'' für globale Typografie manchmal schwerer zu kontrollieren, wenn viel verschachtelt wird.))
 
-=== px – wann ist es trotzdem okay? ===
-**px ist nicht „verboten“**, aber Sie sollten wissen, wofür:
-  * **sehr feine Linien** (z.B. 1px border)
-  * **pixelgenaue Details**, wenn es wirklich fix sein muss
-  * einzelne Sonderfälle im Layout
+**Wann ist em sinnvoll**
+  * Für Proportionen innerhalb einer Komponente: Padding, Icon-Grössen, Abstände, die mit dem Text mitwachsen sollen.
 
-Viele moderne Designsysteme nutzen rem für Typografie + Spacing und px nur für kleine, technische Details.
+<WRAP center round box 80%>
+<code css>
+button {
+  font-size: 1rem;
+  padding: 0.8em 1.2em; /* wächst mit der Button-Schrift */
+}
+</code>
+</WRAP>
 
+=== rem ===
+  * ''1rem'' ist relativ zur Schriftgroesse des Root-Elements ''html''.
+  * Vorteil: bleibt konsistent, egal wie tief ein Element verschachtelt ist.
 
-=== em vs rem – wann welches? ===
-  * **rem**: für **globale Typografie** (h1, p, nav, Standardtext) → konsistent im ganzen Projekt
-  * **em**: für **komponenten-interne Proportionen** (Padding, Icon-Grösse, kleine Abstände) → skaliert mit der Komponente
+<WRAP center round box 80%>
+<code css>
+html { font-size: 16px; }
+h1   { font-size: 4rem; }      /* 64px */
+p    { font-size: 1.125rem; }  /* 18px */
+</code>
+</WRAP>
 
+((Mit ''rem'' vermeiden Sie „Schriftgroessenvermehrung“ durch verschachtelte Elemente.))
 
-=== line-height ===
-Für Lesbarkeit ist eine passende Zeilenhöhe zentral.
-  * Best Practice: **einheitenlos**, z.B. ''line-height: 1.4;''
+==== Empfehlung für dieses Modul ====
+  * Für Schriftgroessen überwiegend **rem** verwenden.
+  * **em** gezielt innerhalb von Komponenten einsetzen.
+  * **px** sparsam einsetzen, z.B. für 1px Linien oder sehr feine Details.
 
-Einheitenlose line-height skaliert automatisch mit der Schriftgrösse und ist darum sehr stabil – besonders bei Responsive und bei Nutzer-Zoom.
+==== line-height ====
+Setzen Sie ''line-height'' möglichst **einheitenlos**, z.B.:
 
+<WRAP center round box 80%>
+<code css>
+body { line-height: 1.4; }
+</code>
+</WRAP>
 
-===== CSS-Variablen (Custom Properties) =====
+((Einheitenlose ''line-height'' skaliert automatisch mit der Schriftgroesse.))
 
-==== Was sind CSS-Variablen? ====
-CSS-Variablen (korrekt: Custom Properties) sind benannte Werte, die Sie **einmal zentral** definieren und dann überall mit ''var(...)'' verwenden. Das spart Copy/Paste und macht Anpassungen viel einfacher.
+----
 
-**Beispiel:**
+===== 2) CSS-Variablen =====
+
+==== Was sind CSS-Variablen ====
+CSS-Variablen sind benannte Werte, die Sie einmal zentral definieren und dann überall wiederverwenden.
+
+<WRAP center round box 80%>
 <code css>
 :root {
   --primary: #263fa9;
   --text: #223344;
+  --h1-size: 4rem;
 }
-body {
-  color: var(--text);
-}
-button {
-  background: var(--primary);
-}
+
+body { color: var(--text); }
+button { background: var(--primary); }
+h1 { font-size: var(--h1-size); }
 </code>
-
-==== Warum ist das nützlich? ====
-  * **Wiederverwendbarkeit**: Farben/Grössen müssen nicht überall kopiert werden.
-  * **Wartbarkeit**: Eine Änderung in '':root'' wirkt im ganzen Projekt.
-  * **Semantik**: ''--main-text-color'' ist verständlicher als ''#223344''.
-
-<WRAP center round box 80%>
-**Vergleich zu Print-Design (z.B. InDesign):**
-\\
-CSS-Variablen sind ähnlich wie **Absatz-/Zeichenstile** oder ein **Designsystem**: Sie definieren Regeln einmal zentral und wenden sie überall an.
 </WRAP>
 
-
-===== CSS Cascade (Kaskade) – verständlich & wichtig =====
+==== Warum lohnt sich das ====
+  * **Wiederverwendbarkeit:** weniger Copy/Paste, weniger Fehler
+  * **Wartbarkeit:** 1 Änderung in '':root'' wirkt im ganzen Projekt
+  * **Lesbarkeit:** Namen sind verständlicher als zufällige Hex-Zahlen
 
 <WRAP center round box 80%>
-**Was ist die Kaskade?**
+**Vergleich zu Print-Design**
 \\
-Die CSS-Kaskade ist das Regelwerk, das entscheidet, **welche CSS-Regel am Ende wirklich angewendet wird**, wenn mehrere Regeln dasselbe Element betreffen.
-\\
-Kurz: Wenn CSS „streitet“, sagt die Kaskade, **wer gewinnt**.
+CSS-Variablen funktionieren ähnlich wie Absatz- und Zeichenstile: Sie definieren Werte zentral und wenden sie konsistent an.
 </WRAP>
 
-==== Warum ist das wichtig? ====
-In echten Projekten schreiben Sie nicht nur 1 Regel pro Element:
-  * Sie haben Basis-Styles (z.B. ''body'')
-  * Komponenten-Styles (z.B. ''.menu a'')
-  * Zustände (z.B. ''.active'', '':hover'')
-  * Responsive Regeln (Media Queries)
-  * und manchmal überschreibt man später etwas gezielt
+----
 
-Ohne Kaskade wäre unklar, was am Ende gilt.
+===== 3) CSS Cascade =====
+{{:de:modul:m291:learningunits:lu02:theorie:ezgi-kimball-jg8jcmefhdg-unsplash_700.jpg?nolink&500|}}
+\\
+//Viele CSS-Regeln funktionieren nach dem Prinzip "Wasserfall" -> Styles, die für Elemente ganz "oben" im HTML definiert wurden, vererben sich an Elemente weiter "unten" in der HTML-Struktur (gemeint sind Kinder-Elemente)//
 
-==== 1) Vererbung (Inheritance): Was „erbt“ ein Element? ====
-Einige CSS-Eigenschaften werden vom Eltern-Element an Kinder **weitergegeben**, wenn das Kind selbst nichts anderes definiert.
+<WRAP center round box 80%>
+**Was ist die Kaskade**
+\\
+Die CSS-Kaskade entscheidet, welche CSS-Regel am Ende wirklich angewendet wird, wenn mehrere Regeln dasselbe Element betreffen.
+</WRAP>
 
-**Typisch vererbt (sehr häufig):**
-  * ''color''
-  * ''font-family'', ''font-size'', ''font-weight'', ''font-style''
-  * ''line-height''
-  * ''text-transform''
+==== Vererbung ====
+Einige Eigenschaften werden von Eltern an Kinder **vererbt**.
 
-**Typisch NICHT vererbt:**
-  * ''background-color'' / ''background-image''
-  * ''margin'' / ''padding''
-  * ''border''
-  * ''width'' / ''height''
-  * ''display''
+  * Häufig vererbt: ''color'', ''font-*'', ''line-height'', ''text-transform''
+  * Meist nicht vererbt: ''background-*'', ''margin/padding'', ''border'', ''width/height'', ''display''
 
-**Beispiel:**
+<WRAP center round box 80%>
 <code css>
-body { 
+body {
   font-family: "Poppins", sans-serif;
   color: #223344;
   line-height: 1.4;
 }
 </code>
+</WRAP>
 
-Alle Textelemente im Body erhalten diese Werte, solange sie nicht selbst etwas anderes setzen.
+==== Überschreiben ====
+Wenn zwei Regeln dieselbe Eigenschaft setzen, gilt diese Reihenfolge:
 
-==== 2) Überschreiben (Overriding): Wer gewinnt bei Konflikten? ====
-Wenn mehrere Regeln dieselbe Eigenschaft setzen (z.B. ''color''), muss CSS entscheiden, welche gilt.
-Das passiert in dieser Reihenfolge:
+  - **Wichtigkeit:** ''!important'' gewinnt ((Nur im Ausnahmefall verwenden.))
+  - **Spezifität:** ID schlägt Klasse, Klasse schlägt Element
+  - **Reihenfolge:** bei gleicher Spezifität gewinnt die spätere Regel
 
-=== Regel 1: Wichtigkeit (''!important'') ===
-  * ''!important'' gewinnt fast immer – wird aber nur in Ausnahmefällen empfohlen.
-
-((In diesem Modul: ''!important'' nur, wenn Sie genau wissen, warum – sonst vermeiden.))
-
-=== Regel 2: Spezifität (Specificity) ===
-Je „genauer“ ein Selektor ist, desto stärker ist er.
-
-**Grob von schwach nach stark:**
-  - Elementselektor: ''p'' , ''a'' , ''header'' (schwach)
-  - Klassenselektor: ''.menu'', ''.active'' (stärker)
-  - ID-Selektor: ''#hero-section'' (sehr stark)
-
-**Beispiel:**
+<WRAP center round box 80%>
 <code css>
-a { color: black; }          /* schwach */
-.menu a { color: gray; }     /* stärker */
-a.active { color: blue; }    /* ähnlich stark wie .menu a (Klasse + Element) */
-#special a { color: red; }   /* sehr stark */
+a { color: black; }
+.menu a { color: gray; }
+a.active { color: blue; }
+#special a { color: red; }
 </code>
+</WRAP>
 
-=== Regel 3: Reihenfolge im CSS (Last Rule Wins) ===
-Wenn zwei Regeln **gleich spezifisch** sind, gewinnt die Regel, die **später im CSS** steht.
+==== Reihenfolge im CSS ====
+Bei gleicher Spezifität gewinnt die Regel, die später im CSS steht.
 
-**Beispiel:**
+<WRAP center round box 80%>
 <code css>
 .menu a { color: gray; }
 .menu a { color: green; } /* gewinnt, weil später */
 </code>
+</WRAP>
 
+Für ein vertieftes Verständnis schauen Sie sich diese interaktive Darstellung an:
+[[https://2019.wattenberger.com/blog/css-cascade|CSS Cascade]]
 
+----
 
-==== Media Queries und Kaskade: „CSS gilt nur wenn Bedingung stimmt“ ====
-Media Queries sind keine „eigene Welt“ – sie folgen denselben Regeln wie oben.
-Sie sind wie zusätzliche Regeln, die nur aktiv werden, wenn die Bedingung erfüllt ist.
+===== 4) Media Queries und Responsive Design =====
+{{:de:modul:m291:learningunits:lu02:theorie:media-queries.webp| Responsive Media Queries: Desktop, Tablet, Mobile}}
 
-**Beispiel:**
+==== Was macht eine Media Query ====
+Media Queries passen die Darstellung an verschiedene Bildschirmbreiten an. Der Inhalt bleibt gleich, nur das Layout ändert sich.
+
+==== Breakpoints ====
+Ein Breakpoint ist eine Breite, bei der Sie das Layout anpassen, weil es sonst nicht mehr sauber wirkt.
+
+<WRAP center round box 80%>
+<code css>
+@media (width < 1024px) { ... }
+</code>
+</WRAP>
+
+Typische Hinweise, dass ein Breakpoint nötig ist:
+  * Elemente überlappen oder stossen sich
+  * Navigation passt nicht mehr
+  * 2 Spalten werden zu eng
+  * horizontales Scrollen entsteht
+
+<WRAP center round tip 70%>
+**Merksatz:** Ein Breakpoint ist ein Layout-Umbruchpunkt, nicht ein „Handy-Mass“.
+</WRAP>
+
+==== Beispiel aus unserem Projekt ====
+Desktop: Text links, Bild rechts.
+Mobile: Bild oben, Text darunter.
+
+<WRAP center round box 80%>
 <code css>
 #hero-section { flex-direction: row; }
 
@@ -238,53 +292,31 @@ Sie sind wie zusätzliche Regeln, die nur aktiv werden, wenn die Bedingung erfü
   #hero-section { flex-direction: column-reverse; }
 }
 </code>
-
-Was passiert?
-  * Über 1024px gilt: ''row''
-  * Unter 1024px wird die zweite Regel aktiv und überschreibt ''flex-direction''
-
-Media Query überschreibt nur dann, wenn sie „an“ ist. Und auch dort gilt: Spezifität + Reihenfolge entscheiden.
-
-
-<WRAP center round box 80%>
-**CSS debuggen**
-\\
-Wenn etwas „komisch“ aussieht, schauen Sie in DevTools: Welche Regel ist durchgestrichen? Wer gewinnt? Genau das ist die Kaskade.
 </WRAP>
 
-
-===== Media Queries & Responsive Design =====
-
-==== Was macht eine Media Query? ====
-Media Queries erlauben, dass sich das Layout an verschiedene Bildschirmgrössen anpasst, ohne den Inhalt zu ändern – nur die Darstellung wird angepasst.
-
-==== Breakpoints: nach Inhalt, nicht nach Geräten ====
-Setzen Sie Breakpoints dann, wenn Ihr Layout **„kaputt“** aussieht – nicht weil ein bestimmtes Handy angeblich 390px breit ist.
-
-==== Beispiel aus unserem Projekt ====
-Unser Desktop-Layout ist 2-spaltig (Text links, Bild rechts).
-Auf Mobile wird es 1-spaltig, mit dem Bild zuerst:
-<code css>
-@media screen and (width < 1024px) {
-  #hero-section {
-    flex-direction: column-reverse; /* Bild oben, Text unten */
-  }
-}
-</code>
-
 ==== Media Queries und Kaskade ====
-  * Innerhalb der Media Query überschreiben Sie **nur** die Eigenschaften, die sich ändern sollen.
-  * Wenn ein Selektor gleich bleibt (z.B. ''#hero-section''), gewinnt bei aktiver Media Query die Regel, die **später** kommt (also im ''@media''-Block).
+Media Queries folgen denselben Regeln wie normales CSS:
+  * Bei aktivem Breakpoint überschreiben Sie nur die Eigenschaften, die sich ändern.
+  * Bei gleicher Spezifität gewinnt die Regel, die später kommt.
 
-===== Responsive Testing mit DevTools =====
+----
+
+===== 5) Responsive Testing mit DevTools =====
+{{:de:modul:m291:learningunits:lu02:theorie:screenshot_2026-02-02_at_00.23.31.png?direct&1100| Screenshot Chromebrowser mit Dev-Tools }}
+
   * Öffnen Sie DevTools (Chrome/Edge: F12)
-  * Aktivieren Sie den **Device Toolbar** (Handy/Tablet Symbol)
+  * Aktivieren Sie Device Toolbar (Handy/Tablet Symbol)
   * Testen Sie:
-    - Breitenwechsel über/unter **1024px**
-    - verschiedene Presets (z.B. iPhone, iPad)
-    - Landscape/Portrait
-  * Prüfen Sie auch:
-    - ob Elemente verschwinden/überlappen
-    - ob Text zu klein/gross wirkt
-    - ob es horizontales Scrollen gibt (meist ein Zeichen für zu grosse Breiten)
+    - Breitenwechsel über/unter 1024px
+    - Presets (z.B. iPhone, iPad)
+    - Hoch-/Querformat
+  * Prüfen Sie:
+    - Überlappungen oder abgeschnittene Bereiche
+    - horizontales Scrollen
+    - Lesbarkeit der Schrift
 
+<WRAP center round box 80%>
+**Praxis-Tipp**
+\\
+Wenn etwas nicht greift: DevTools → „Styles“ öffnen und schauen, welche Regel durchgestrichen ist. Das ist Kaskade in Aktion.
+</WRAP>
