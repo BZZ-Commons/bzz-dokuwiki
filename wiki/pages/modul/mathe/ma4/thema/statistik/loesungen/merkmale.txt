@@ -1,0 +1,23 @@
+====== S.185 - Charakteristik von Merkmalen ======
+
+<WRAP center round box 70%>
+**Hinweis:**  \\
+**nominal/ordinal** nutzt man bei **qualitativen** Merkmalen.  \\
+**diskret/stetig** nutzt man bei **quantitativen** Merkmalen.  \\
+Die jeweils andere Kategorie ist dann **–**.
+</WRAP>
+
+^ Merkmal ^ qualitativ ^ quantitativ ^ nominal ^ ordinal ^ diskret ^ stetig ^
+| Körpergrösse in cm | – | ✅ | – | – | – | ✅ |
+| Wohnort | ✅ | – | ✅ | – | – | – |
+| Anzahl Haustiere | – | ✅ | – | – | ✅ | – |
+| Augenfarbe | ✅ | – | ✅ | – | – | – |
+| Wohnungsgrösse in m² | – | ✅ | – | – | – | ✅ |
+| Kleidergrössen (XS, S, M, L, XL, XXL) | ✅ | – | – | ✅ | – | – |
+| Muttersprache | ✅ | – | ✅ | – | – | – |
+| Anzahl Schulbücher | – | ✅ | – | – | ✅ | – |
+
+----
+
+{{tag>M3-LU01}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Kevin Maurizi

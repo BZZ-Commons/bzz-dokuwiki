@@ -1,0 +1,74 @@
+====== S.190 - Beispiel „Buchtyp“ ======
+
+<WRAP center round box 70%>
+**Gegeben:** Befragung „Welchen Buchtyp bevorzugen Sie?“ (n = 20)  
+**Gesucht:** Häufigkeitstabelle, Fragen a–d, grafische Darstellung, Kennzahl aus Diagramm
+</WRAP>
+
+===== 1) Urliste (gegeben) =====
+Biografie / Sachbuch / Hörbuch / Krimi / Roman / Krimi / Krimi / Roman / Krimi / Roman / 
+Krimi / Hörbuch / Roman / Roman / Sachbuch / Roman / Krimi / Krimi / Krimi / Hörbuch
+
+===== 2) Strichliste (Zählen) =====
+  * Biografie: |
+  * Sachbuch: ||
+  * Hörbuch: |||
+  * Krimi: ||||||||
+  * Roman: ||||||
+
+===== 3) Häufigkeitstabelle =====
+Merkmal: **Buchtyp (bevorzugt)**
+
+^ i ^ x_i ^ n_i ^ h_i = n_i / n ^ Prozent ^
+| 1 | Biografie | 1 | 1/20 = 0.05 | 5% |
+| 2 | Sachbuch  | 2 | 2/20 = 0.10 | 10% |
+| 3 | Hörbuch   | 3 | 3/20 = 0.15 | 15% |
+| 4 | Krimi     | 8 | 8/20 = 0.40 | 40% |
+| 5 | Roman     | 6 | 6/20 = 0.30 | 30% |
+^  ^ **Summe** ^ **20** ^ **1.00** ^ **100%** ^
+
+===== 4) Beantwortung der Fragen =====
+a) Welcher Buchtyp wird von den meisten Befragten bevorzugt?  
+→ **Krimi**
+
+b) Wie viele Befragte bevorzugen diesen Buchtyp?  
+→ **8**
+
+c) Wie viele Prozent der Befragten bevorzugen diesen Buchtyp?  
+→ **40%**
+
+d) Welcher Buchtyp ist bei den wenigsten Befragten beliebt? Wie viele Prozent haben diesen genannt?  
+→ **Biografie**, **5%**
+
+===== 5) Grafische Darstellung =====
+
+==== Variante A: Säulendiagramm ====
+Trage auf der x-Achse die Buchtypen ein und als Säulenhöhe die **absolute Häufigkeit n_i**:
+
+^ Buchtyp ^ n_i ^
+| Biografie | 1 |
+| Sachbuch  | 2 |
+| Hörbuch   | 3 |
+| Krimi     | 8 |
+| Roman     | 6 |
+
+==== Variante B: Kreisdiagramm ====
+Winkel_i = h_i · 360°  (oder Prozent · 3.6°)
+
+^ Buchtyp ^ Prozent ^ Winkel ^
+| Biografie | 5%  | 18°  |
+| Sachbuch  | 10% | 36°  |
+| Hörbuch   | 15% | 54°  |
+| Krimi     | 40% | 144° |
+| Roman     | 30% | 108° |
+^ Summe ^ 100% ^ 360° ^
+
+===== 6) Kennzahl direkt aus dem Diagramm =====
+Aus dem Säulendiagramm lässt sich direkt der **Modus** ablesen:
+  * **Modus = Krimi**
+  * (und seine Häufigkeit: **8** bzw. **40%**)
+
+----
+
+{{tag>M3-LU01}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Kevin Maurizi

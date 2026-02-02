@@ -1,0 +1,29 @@
+====== S.187 - Rangliste erstellen ======
+
+<WRAP center round box 70%>
+**Hinweis:** Rangliste basiert auf der **geordneten Stichprobe** x(1)…x(n).  
+Bei Mehrfachwerten erhalten alle gleichen Werte den **Durchschnittsrang**.
+</WRAP>
+
+===== Aufgabe: Rangliste zu Messwerten =====
+Gegebene Messwerte (Urliste):  
+54 / 33 / 55 / 12 / 61 / 61 / 54 / 40 / 62 / 61
+
+==== 1) Geordnete Stichprobe ====
+x(1) bis x(10) (aufsteigend sortiert):
+
+^ i ^ 1 ^ 2 ^ 3 ^ 4 ^ 5 ^ 6 ^ 7 ^ 8 ^ 9 ^ 10 ^
+| x(i) | 12 | 33 | 40 | 54 | 54 | 55 | 61 | 61 | 61 | 62 |
+
+==== 2) Rangliste (Rangwertfolge) ====
+^ i ^ 1 ^ 2 ^ 3 ^ 4 ^ 5 ^ 6 ^ 7 ^ 8 ^ 9 ^ 10 ^
+| Rang | 1 | 2 | 3 | 4.5 | 4.5 | 6 | 8 | 8 | 8 | 10 |
+
+==== 3) Rangberechnung (Mehrfachwerte) ====
+  * Wert **54** kommt 2× vor → belegt Rang **4** und **5** → Durchschnittsrang: (4+5)/2 = **4.5**
+  * Wert **61** kommt 3× vor → belegt Rang **7**, **8**, **9** → Durchschnittsrang: (7+9)/2 = **8**
+
+----
+{{tag>M3-LU01}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Kevin Maurizi
+

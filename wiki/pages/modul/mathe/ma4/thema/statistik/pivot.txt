@@ -1,0 +1,140 @@
+~~NOTOC~~
+====== LU01c - Pivot-Tabellen ======
+
+<WRAP center round download 60%>
+**Ziel:** Du kannst aus einer Urliste eine **Pivot-Tabelle** erstellen, sinnvoll konfigurieren (Zeilen/Spalten/Werte/Filter) und daraus **Häufigkeiten** sowie einfache Kennzahlen ableiten und interpretieren.
+</WRAP>
+
+===== 1) Was ist eine Pivot-Tabelle? =====
+Eine **Pivot-Tabelle** ist ein Werkzeug in Excel/Google Sheets, um eine grosse Datenliste schnell zu:
+  * **gruppieren** (z.B. nach Browser, OS, Team-Rolle)
+  * **zählen** (Häufigkeiten)
+  * **summieren** (Totals)
+  * **Anteile** berechnen (Prozent)
+  * nach **Bedingungen filtern** (z.B. nur Klasse BM24)
+
+Du „drehst“ (pivotierst) die Sicht auf die Daten, ohne die Originaldaten zu verändern.
+
+===== 2) Wann benutzt man Pivot-Tabellen? =====
+Immer dann, wenn du viele Zeilen hast und Fragen beantworten willst wie:
+  * „Wie viele Lernende nutzen welchen Browser?“
+  * „Wie viele Tickets pro Status (open/in progress/done)?“
+  * „Wie verteilt sich die Zufriedenheit pro Klasse?“
+  * „Wie viele Commits pro Woche und pro Team?“
+
+<WRAP round box 80%>
+**Merksatz:** Pivot = schnelle Häufigkeitstabelle / Kreuztabelle auf Knopfdruck.
+</WRAP>
+
+===== 3) Voraussetzungen: Wie müssen die Daten aussehen? =====
+Pivot-Tabellen funktionieren am besten mit „sauberen“ **Tabellendaten**:
+
+  * **1 Zeile = 1 Datensatz** (eine Beobachtung)
+  * **1 Spalte = 1 Variable** (Merkmal)
+  * **1 Kopfzeile** mit Spaltennamen
+  * keine Leerzeilen, keine zusammengefügten Zellen
+  * Werte in einer Spalte haben **gleichen Datentyp** (nicht gemischt)
+
+==== Beispiel-Datensatz (Informatik-Kontext) ====
+^ Person ^ Klasse ^ Browser ^ OS ^ Zufriedenheit (1–5) ^
+| A01 | BM24 | Chrome  | Windows | 4 |
+| A02 | BM24 | Edge    | Windows | 3 |
+| A03 | BM24 | Safari  | macOS   | 5 |
+| A04 | BM23 | Firefox | Linux   | 4 |
+| A05 | BM23 | Chrome  | Windows | 2 |
+
+===== 4) Die 4 Pivot-Bereiche (das „Baukastenprinzip“) =====
+Fast überall heissen die Bereiche ähnlich:
+
+  * **Zeilen (Rows):** welche Kategorien links untereinander stehen
+  * **Spalten (Columns):** welche Kategorien oben nebeneinander stehen
+  * **Werte (Values):** was gerechnet wird (zählen, summe, mittelwert, …)
+  * **Filter (Filters):** welche Daten du ein-/ausblenden willst
+
+<WRAP round box 80%>
+**Merksatz:**  
+Zeilen = „Was will ich vergleichen?“  
+Werte = „Was will ich wissen?“ (z.B. Anzahl)
+</WRAP>
+
+===== 5) Pivot für Häufigkeiten=====
+
+==== 5.1 Häufigkeitstabelle: „Browser-Häufigkeiten“ ====
+**Fragestellung:** Wie oft kommt jeder Browser vor?
+
+**Pivot-Konfiguration:**
+  * Zeilen: Browser
+  * Werte: Person → **Anzahl** (Count)
+
+**Ergebnis (Beispiel):**
+^ Browser ^ Anzahl ^
+| Chrome | 2 |
+| Edge | 1 |
+| Safari | 1 |
+| Firefox | 1 |
+
+==== 5.2 Relative Häufigkeit (Prozent) ====
+Oft gibt es eine Option wie:
+  * „Werte anzeigen als“ → **% des Gesamtergebnisses**
+
+Dann bekommst du statt Anzahl direkt den Anteil.
+
+**Interpretation:**
+  * 40% Chrome bedeutet: 40% der Datensätze in der Stichprobe sind Chrome.
+
+===== 6) Pivot als Kreuztabelle (2 Variablen) =====
+
+==== 6.1 Browser nach OS ====
+**Fragestellung:** Welche Browser werden auf welchen Betriebssystemen genutzt?
+
+**Pivot-Konfiguration:**
+  * Zeilen: OS
+  * Spalten: Browser
+  * Werte: Person → Anzahl
+
+**Typisches Ergebnis:**
+^ OS \ Browser ^ Chrome ^ Edge ^ Firefox ^ Safari ^
+| Windows | 10 | 6 | 2 | 0 |
+| macOS   | 4  | 0 | 1 | 8 |
+| Linux   | 3  | 1 | 5 | 0 |
+
+So siehst du sofort Muster (z.B. Safari fast nur macOS).
+
+==== 6.2 Filter setzen (z.B. nur eine Klasse) ====
+  * Filter: Klasse = BM24  
+Damit ändert sich die Tabelle, aber die Rohdaten bleiben gleich.
+
+===== 7) Welche „Werte“-Berechnungen sind sinnvoll? =====
+Je nach Datenart:
+
+  * **Zählen (Count):** für Kategorien (Browser, Status, Kontinent)
+  * **Summe (Sum):** für Mengen (z.B. „Tickets“ wenn pro Zeile eine Zahl steht)
+  * **Durchschnitt (Average):** erst später sinnvoll (wenn Kennzahlen eingeführt sind)
+
+<WRAP round box 80%>
+**Achtung:** Wenn eine Spalte eigentlich Kategorien enthält, aber als Zahl codiert ist, kann Excel fälschlicherweise Summen bilden.
+Beispiel: Statuscodes 200/404/500 → besser als **Text** behandeln, dann zählt man korrekt.
+</WRAP>
+
+===== 8) Typische Fehler und wie du sie vermeidest =====
+  * **Leere Kopfzeilen** → Pivot kann Spalten nicht sauber erkennen
+  * **Gemischte Datentypen** in einer Spalte → Pivot rechnet komisch (Text/Zahl gemischt)
+  * **„Summe“ statt „Anzahl“** → bei Kategorien immer auf **Anzahl** umstellen
+  * **Datenbereich zu klein** → neue Zeilen fehlen in Pivot
+
+===== 9) Schritt-für-Schritt in Excel =====
+
+1) In eine Zelle der Daten klicken  
+2) **Einfügen → PivotTable**  
+3) Datenbereich prüfen (am besten als Tabelle formatiert)  
+4) Pivot-Felder ziehen: Zeilen/Spalten/Werte/Filter  
+5) In „Werte“ die Berechnung einstellen: Anzahl / Summe / …
+
+{{ youtube>6zaq-9Z4poE?large }}
+
+
+
+----
+
+{{tag>M3-LU01}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Kevin Maurizi

@@ -1,0 +1,150 @@
+====== S.246 - Aufgabe 16.3 ======
+
+<WRAP center round box 80%>
+**Hinweis:** Vorgehen immer gleich:
+1) Strichliste (zählen) → 2) Häufigkeitstabelle (n_i, h_i, %) → 3) Fragen beantworten → 4) Grafik (meist Säulendiagramm) → 5) Kennzahl aus Diagramm: **Modus**
+</WRAP>
+
+===== a) Lieblingssportart =====
+Urliste (n = 20):
+Fussball / Tennis / Velofahren / Tennis / Joggen / Fussball / Tennis / Fussball / Reiten / Velofahren / Joggen /
+Fussball / Fussball / Velofahren / Tennis / Fussball / Tennis / Fussball / Velofahren / Fussball
+
+==== 1) Strichliste ====
+  * Fussball:    ||||||||   (8)
+  * Tennis:      |||||      (5)
+  * Velofahren:  ||||       (4)
+  * Joggen:      ||         (2)
+  * Reiten:      |          (1)
+
+==== 2) Häufigkeitstabelle ====
+^ i ^ Sportart ^ n_i ^ h_i = n_i / 20 ^ Prozent ^
+| 1 | Fussball   | 8 | 0.40 | 40% |
+| 2 | Tennis     | 5 | 0.25 | 25% |
+| 3 | Velofahren | 4 | 0.20 | 20% |
+| 4 | Joggen     | 2 | 0.10 | 10% |
+| 5 | Reiten     | 1 | 0.05 | 5% |
+^  ^ **Summe** ^ **20** ^ **1.00** ^ **100%** ^
+
+==== 3) Fragen ====
+1) Beliebteste Sportart: **Fussball**  
+2) Anzahl Nennungen: **8**  
+3) Prozent: **40%**  
+4) Am wenigsten beliebt: **Reiten**, **5%**
+
+==== 4) Grafische Darstellung ====
+**Säulendiagramm (empfohlen):** Säulenhöhen = n_i (oder Prozent)
+
+Optional Kreisdiagramm-Winkel (Winkel = Prozent · 3.6°):
+  * Fussball: 40% → 144°
+  * Tennis: 25% → 90°
+  * Velofahren: 20% → 72°
+  * Joggen: 10% → 36°
+  * Reiten: 5% → 18°
+
+==== 5) Kennzahl aus Diagramm ====
+**Modus = Fussball** (n_i = 8 bzw. 40%)
+
+
+
+
+
+===== b) Kontinent der letzten Ferien =====
+Urliste (n = 30):
+Europa / Amerika / Europa / Australien / Europa / Amerika / Europa / Amerika / Afrika / Europa / Amerika / Europa /
+Asien / Europa / Amerika / Europa / Europa / Australien / Amerika / Europa / Amerika / Europa / Australien / Amerika /
+Europa / Europa / Asien / Amerika / Australien / Europa
+
+==== 1) Strichliste ====
+  * Europa:      ||||||||||||||  (14)
+  * Amerika:     |||||||||       (9)
+  * Australien:  ||||            (4)
+  * Asien:       ||              (2)
+  * Afrika:      |               (1)
+
+==== 2) Häufigkeitstabelle ====
+^ i ^ Kontinent ^ n_i ^ h_i = n_i / 30 ^ Prozent ^
+| 1 | Europa     | 14 | 0.4667 | 46.67% |
+| 2 | Amerika    | 9  | 0.3000 | 30.00% |
+| 3 | Australien | 4  | 0.1333 | 13.33% |
+| 4 | Asien      | 2  | 0.0667 | 6.67% |
+| 5 | Afrika     | 1  | 0.0333 | 3.33% |
+^  ^ **Summe** ^ **30** ^ **1.0000** ^ **100%** ^
+
+==== 3) Fragen ====
+1) Am häufigsten besucht: **Europa**  
+2) Anzahl: **14**  
+3) Prozent: **46.67%**  
+4) Am seltensten: **Afrika**, **3.33%**  
+5) Ausserhalb Europa: (30 - 14) = **16 von 30** → 16/30 = 0.5333 → **53.33%**
+
+==== 4) Grafische Darstellung ====
+**Säulendiagramm (empfohlen)**
+
+Optional Kreisdiagramm-Winkel (Winkel = h_i · 360°):
+  * Europa: 0.4667 · 360° ≈ 168°
+  * Amerika: 0.3000 · 360° = 108°
+  * Australien: 0.1333 · 360° ≈ 48°
+  * Asien: 0.0667 · 360° ≈ 24°
+  * Afrika: 0.0333 · 360° ≈ 12°
+
+==== 5) Kennzahl aus Diagramm ====
+**Modus = Europa** (n_i = 14 bzw. 46.67%)
+
+
+
+
+
+===== c) Frühstück (Hauptbestandteil) =====
+Urliste (n = 40):
+Brot / Müesli / Brot / Nichts / Früchte / Brot / Flakes / Brot / Flakes / Brot / Brot /
+Flakes / Brot / Müesli / Brot / Brot / Brot / Flakes / Nichts / Flakes / Brot / Früchte /
+Flakes / Nichts / Müesli / Brot / Anderes / Brot / Flakes / Flakes / Brot / Müesli /
+Nichts / Flakes / Müesli / Brot / Müesli / Nichts / Flakes / Früchte
+
+==== 1) Strichliste ====
+  * Brot:     |||||||||||||||  (15)
+  * Flakes:   ||||||||||       (10)
+  * Müesli:   ||||||           (6)
+  * Nichts:   |||||            (5)
+  * Früchte:  |||              (3)
+  * Anderes:  |                (1)
+
+==== 2) Häufigkeitstabelle ====
+^ i ^ Frühstück ^ n_i ^ h_i = n_i / 40 ^ Prozent ^
+| 1 | Brot     | 15 | 0.375 | 37.5% |
+| 2 | Flakes   | 10 | 0.250 | 25.0% |
+| 3 | Müesli   | 6  | 0.150 | 15.0% |
+| 4 | Nichts   | 5  | 0.125 | 12.5% |
+| 5 | Früchte  | 3  | 0.075 | 7.5% |
+| 6 | Anderes  | 1  | 0.025 | 2.5% |
+^  ^ **Summe** ^ **40** ^ **1.000** ^ **100%** ^
+
+==== 3) Fragen ====
+1) Die meisten essen: **Brot**  
+2) Prozent: **37.5%**  
+3) Flakes **oder** Müesli (Kategorien sind getrennt, daher addieren):
+   10 + 6 = **16 Befragte**
+4) Prozent Flakes oder Müesli:
+   16/40 = 0.40 → **40%**
+5) Prozent „Nichts oder nur Früchte“:
+   (5 + 3)/40 = 8/40 = 0.20 → **20%**
+
+==== 4) Grafische Darstellung ====
+**Säulendiagramm (empfohlen)**
+
+Optional Kreisdiagramm-Winkel (Winkel = Prozent · 3.6°):
+  * Brot: 37.5% → 135°
+  * Flakes: 25% → 90°
+  * Müesli: 15% → 54°
+  * Nichts: 12.5% → 45°
+  * Früchte: 7.5% → 27°
+  * Anderes: 2.5% → 9°
+
+==== 5) Kennzahl aus Diagramm ====
+**Modus = Brot** (n_i = 15 bzw. 37.5%)
+
+----
+
+{{tag>M3-LU01}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Kevin Maurizi
