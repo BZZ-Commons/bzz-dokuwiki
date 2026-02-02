@@ -2,22 +2,61 @@
 
 Ziel: Auffrischen der HTML-/CSS- und Javascript-Basics.
 
+===== 1) HTML Struktur (Elemente, Attribute, Links, Bilder, Forms) =====
 
-===== 1) JavaScript Basics (Syntax & Logik) =====
-  * **JS Hero (DE)** – interaktive Übungen zu Variablen, Datentypen, If/Else, Funktionen
-    * [[https://www.jshero.net/home.html|JS Hero – JavaScript interaktiv üben (Deutsch)]]
-  * **MDN Skill-Checks** – kurze Selbsttests (mit Live-Code) zu den Kern-Themen:
-    * [[https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting/Test_your_skills/Variables|MDN: Test your skills – Variables]]
-    * [[https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting/Test_your_skills/Conditionals|MDN: Test your skills – Conditionals]]
-    * [[https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting/Test_your_skills/Functions|MDN: Test your skills – Functions]]
+==== HTML repetieren: ====
 
-===== 2) DOM-Grundlagen (getElementById, Text/Style ändern) =====
-  * **Scrimba: Intro to the DOM** – interaktiv, inkl. *Selecting Elements – getElementById* & einfache Manipulationen
-    * [[https://scrimba.com/playlist/p7wk6TL|Scrimba – Intro to the DOM (inkl. getElementById)]]
-  * **MDN Skill-Check Events** – Klick/Events + DOM-Änderungen üben
-    * [[https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting/Test_your_skills/Events|MDN: Test your skills – Events]]
+{{youtube>BvJYXl2ywUE?}}
+//YouTube Playlist: HTML Basics (englisch)//
 
-===== 3) CSS Basics (Selektoren, Cascade, Box Model, Layout) =====
+==== Tests zur Selbstkontrolle ====
+
+  * **MDN Skill-Checks (HTML)** – genau die Basics, die wir in Formular-/UI-Seiten brauchen:
+    * [[https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content/Test_your_skills/HTML_text_basics|MDN: Test your skills – HTML text basics]]
+    * [[https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content/Test_your_skills/Links|MDN: Test your skills – Links]]
+    * [[https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content/Test_your_skills/Images|MDN: Test your skills – HTML images]]
+    * [[https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content/Test_your_skills/Forms_and_buttons|MDN: Test your skills – Forms and buttons]]
+
+
+===== 2) CSS Basics (Selektoren, Cascade, Box Model, Layout) =====
+
+==== CSS repetieren Selektoren: ====
+
+{{youtube>l1mER1bV0N0?}}
+//YouTube Video: Learn Every CSS Selector In 20 Minutes (englisch)//
+
+==== CSS repetieren Vererbung: ====
+
+{{youtube>N8tFrMZp_wA?}}
+//YouTube Video: Do You Really Understand CSS Inheritance? (englisch)//
+
+==== CSS repetieren Box Model: ====
+
+{{youtube>rIO5326FgPE?}}
+//YouTube Video: Learn CSS Box Model In 8 Minutes (englisch)//
+
+==== CSS repetieren Positionieren: ====
+
+{{youtube>jx5jmI0UlXU?}}
+//YouTube Video: Learn CSS Position In 9 Minutes (englisch)//
+
+==== CSS repetieren Display: ====
+
+{{youtube>Qf-wVa9y9V4?}}
+//YouTube Video: Learn CSS Display Property In 4 Minutes (englisch)//
+
+==== CSS repetieren Flexbox: ====
+
+{{youtube>fYq5PXgSsbE?}}
+//YouTube Video: Learn Flexbox in 15 Minutes (englisch)//
+
+==== CSS repetieren Grid: ====
+
+{{youtube>9zBsdzdE4sM?}}
+//YouTube Video: Learn CSS Grid in 20 Minutes (englisch)//
+
+==== Spiele und Tests zur Selbstkontrolle ====
+
   * **CSS Diner** – Game zu CSS-Selektoren
     * [[https://flukeout.github.io/|CSS Diner – CSS Selectors Game]]
   * **Coding Fantasy – Flexbox** – Game zu Flexbox
@@ -31,11 +70,38 @@ Ziel: Auffrischen der HTML-/CSS- und Javascript-Basics.
     * [[https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/Test_your_skills/Cascade|MDN: Test your skills – The Cascade]]
     * [[https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/Test_your_skills/Box_model|MDN: Test your skills – The box model]]
 
-===== 4) HTML Struktur (Elemente, Attribute, Links, Bilder, Forms) =====
-  * **MDN Skill-Checks (HTML)** – genau die Basics, die wir in Formular-/UI-Seiten brauchen:
-    * [[https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content/Test_your_skills/HTML_text_basics|MDN: Test your skills – HTML text basics]]
-    * [[https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content/Test_your_skills/Links|MDN: Test your skills – Links]]
-    * [[https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content/Test_your_skills/Images|MDN: Test your skills – HTML images]]
-    * [[https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content/Test_your_skills/Forms_and_buttons|MDN: Test your skills – Forms and buttons]]
+
+===== 3) JavaScript Basics (Syntax & Logik) =====
+
+==== JS repetieren Variablen: var, let, const: ====
+
+{{youtube>9WIJQDvt4Us?}}
+//YouTube Video: Differences Between Var, Let, and Const (englisch)//
+
+
+==== JS repetieren Variablen, Konstanten, Zeichenketten, Zahlen, Arrays, Objekte, Funktionen: ====
+
+{{youtube>W6NZfCO5SIk?}}
+//YouTube Video: JavaScript Course for Beginners – Your First Step to Web Development (englisch)//
+
+
+==== Spiele und Tests zur Selbstkontrolle ====
+
+  * **JS Hero (DE)** – interaktive Übungen zu Variablen, Datentypen, If/Else, Funktionen
+    * [[https://www.jshero.net/home.html|JS Hero – JavaScript interaktiv üben (Deutsch)]]
+  * **MDN Skill-Checks** – kurze Selbsttests (mit Live-Code) zu den Kern-Themen:
+    * [[https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting/Test_your_skills/Variables|MDN: Test your skills – Variables]]
+    * [[https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting/Test_your_skills/Conditionals|MDN: Test your skills – Conditionals]]
+    * [[https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting/Test_your_skills/Functions|MDN: Test your skills – Functions]]
+
+===== 4) DOM-Grundlagen (getElementById, Text/Style ändern) =====
+  * **Scrimba: Intro to the DOM** – interaktiv, inkl. *Selecting Elements – getElementById* & einfache Manipulationen
+    * [[https://scrimba.com/playlist/p7wk6TL|Scrimba – Intro to the DOM (inkl. getElementById)]]
+  * **MDN Skill-Check Events** – Klick/Events + DOM-Änderungen üben
+    * [[https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting/Test_your_skills/Events|MDN: Test your skills – Events]]
+
+
+
+
 
 

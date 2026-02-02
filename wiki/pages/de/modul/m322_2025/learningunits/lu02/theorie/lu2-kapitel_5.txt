@@ -1,0 +1,37 @@
+==== 05 CUT-Analyse ====
+Zusätzlich kann eine Persona durch eine sogenannte CUT-Analyse (Context – User – Tasks) erweitert werden. Dabei werden der Nutzungskontext, die typischen Aufgaben sowie die Rahmenbedingungen der Nutzung systematisch erfasst:
+  *  Context (Kontext): In welcher Situation wird das Produkt verwendet? (Ort, Zeit, Umgebung, Gerät, Stressfaktoren)
+  *  User (Benutzer): Welche Vorkenntnisse, Erwartungen und Einschränkungen hat die Persona?
+  *  Tasks (Aufgaben): Welche konkreten Aufgaben möchte die Persona mit dem System erledigen?
+
+Durch die Kombination von Persona und CUT-Analyse wird nicht nur sichtbar, wer die Nutzer sind, sondern auch in welchem Umfeld und unter welchen realen Bedingungen das Produkt genutzt wird, welche Ziele verfolgt werden und welche Ressourcen nötig sind. Dadurch können Anforderungen realistischer abgeleitet und Benutzerschnittstellen gezielter gestaltet werden. 
+----
+Hier ist die detaillierte Aufschlüsselung der CUT-Komponenten:\\
+**1. Context (Kontext) – Die Situation**\\
+
+Beschreibt das Umfeld, in dem das Produkt genutzt wird:
+
+  *  Ort & Umgebung: Physische Umgebung (z. B. laut, hell, unterwegs, Büro, Landwirtschaft).
+  *  Zeit & Dauer: Wann, wie oft und wie lange wird es genutzt?
+  *  Gerät & Technik: Genutzte Hardware, Software, Verbindungsqualität.
+  *  Stressfaktoren/Einflüsse: Zeitdruck, Ablenkungen, körperliche Belastung, Lichtverhältnisse. 
+
+**2. User (Benutzer) – Die Persona**\\
+
+Definiert die Eigenschaften der Zielgruppe:
+
+  *  Vorkenntnisse: Technische Affinität, Erfahrung mit ähnlichen Systemen, Fachwissen.
+  *  Erwartungen & Bedürfnisse: Was erhofft sich der Nutzer vom Produkt?
+  *  Einschränkungen: Physische Limits, kognitive Last, Einschränkungen durch Sprache oder Kultur. 
+
+**3. Tasks (Aufgaben) – Die Ziele**\\
+
+Die konkreten Handlungen, die erledigt werden müssen:
+
+  *  Hauptziele: Was muss am Ende erreicht sein?
+  *  Teilaufgaben: Welche Einzelschritte sind nötig?
+  *  Häufigkeit/Kritikalität: Welche Aufgaben sind essenziell oder besonders oft nötig?
+
+Warum die Kombination wichtig ist:
+Durch die Verknüpfung von Persona (User) mit ihrer spezifischen Umgebung (Context) und ihren Zielen (Tasks) entstehen echte Nutzungsanforderungen. Dies verhindert die Entwicklung am Bedarf vorbei und sichert eine hohe Produktqualität und Benutzerfreundlichkeit. 
+
