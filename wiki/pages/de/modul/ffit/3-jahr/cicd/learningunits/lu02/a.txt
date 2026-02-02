@@ -1,13 +1,42 @@
-====== LU02a - Testing Doubles ======
+====== LU02a - Pipeline Phasen & Trigger ======
 
-==== Übersicht ====
-^ Name ^ Beschreibung ^ Beispiel ^
-| Mock | ... | ... |
-| Fake | ... | ... |
-| Spy | ... | ... |
-| Dummy | ... | ... |
-| Stub | ... | ... |
-| Fake | ... | ... |
+In einer Build-Pipeline sind in der Regel verschiedene Phasen(Stages), die seriell oder parallel durchlaufen werden. 
 
+==== Phasen ====
 
-''TODO''
+^ Stage ^ Beschreibung ^ Allfällige Umsysteme ^
+| Checkout | Kopieren des Codes in lokales Verzeichnis als Vorbereitung für die folgenden Phasen. | Code-Repository(Github, Gitlab, ...) | 
+| Abhängigkeiten installieren | ''npm install'', ''pip install -r requirements.txt'', ''gradlew build --refresh-dependencies''| Artifactory(JFrog, ...) |
+| Linting | 🟡 | 🟢 |
+| Build/Compile | 🟢 | 🟢 |
+| Unit Tests | 🟡 | 🟢 |
+| Integration Tests | 🟡 | 🟢 |
+| E2E Tests | 🔴| 🟢 |
+| Test Coverage | 🔴| 🟢 |
+| Package / Artifact bauen | 🟡 | 🟢 |
+| Deploy auf Dev/Test | 🟡 | 🟢 |
+| Deploy auf Prod | 🔴| 🟡 |
+
+==== Trigger ====
+
+Je nach Anzahl der Commits und Zeitbedarf der einzelnen Schritte, ist es sinnvoll verschiedene Trigger einzusetzen und nicht immer alle Phasen 
+auszuführen.
+
+Nachfolgend eine mögliche Aufteilung, welche Phasen in welchem Fall beziehungsweise mit welchem Trigger ausgeführt werden können. Bedenken Sie, dass dies explizit nur ein Vorschlag ist und nach Bedarf völlig anders aussehen kann.
+
+🟢 Wahrscheinlich
+🟡 Möglich
+🔴 Eher unwahrscheinlich
+
+^ Stage ^ Bei Commit/Merge Request ^ CRON(z.B. nightly, weekly) ^
+| Checkout | 🟢 | 🟢 | 
+| Abhängigkeiten installieren | 🟢 | 🟢 |
+| Linting | 🟡 | 🟢 |
+| Build/Compile | 🟢 | 🟢 |
+| Unit Tests | 🟡 | 🟢 |
+| Integration Tests | 🟡 | 🟢 |
+| E2E Tests | 🔴| 🟢 |
+| Test Coverage | 🔴| 🟢 |
+| Package / Artifact bauen | 🟡 | 🟢 |
+| Deploy auf Dev/Test | 🟡 | 🟢 |
+| Deploy auf Prod | 🔴| 🟡 |
