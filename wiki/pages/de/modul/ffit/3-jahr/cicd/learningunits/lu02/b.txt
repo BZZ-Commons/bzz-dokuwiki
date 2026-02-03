@@ -1,1 +1,31 @@
-====== LU02b - Placeholder ======
+====== LU02b - Pipeline Triggers ======
+
+Je nach Anzahl der Commits und Zeitbedarf der einzelnen Schritte, ist es sinnvoll verschiedene Trigger einzusetzen und nicht immer alle Phasen 
+auszuführen. 
+
+Folgende Triggers sind gebräuchlich und sollten Sie verstehen.
+
+^ Trigger ^ Beschreibung ^ 
+| Manuell | Wird manuell angestossen werden. Eignet sich für grosse Pipelines wie Deployments. Schadet selten als Ergänzung. |
+| Commit | Wird gestartet, wenn neue Commits gepushed werden. Kann zusätzlich auf Unterordner eingeschränkt werden. |
+| Merge-Request | Analog Commit, für Code-Änderungen, welche von einem anderen Branch kommen. |
+| CRON | Zeittrigger. Stündliche/nächtliche/wöchentliche Builds machen besonders dann Sinn, wenn der Build zu komplex wäre, um ihn bei häufigen Commits jedes Mal zu starten. |
+
+Nachfolgend eine mögliche Aufteilung, welche Phasen in welchem Fall beziehungsweise mit welchem Trigger ausgeführt werden können. Bedenken Sie, dass dies explizit nur ein Vorschlag ist und nach Bedarf völlig anders aussehen kann.
+
+🟢 Wahrscheinlich
+🟡 Möglich
+🔴 Eher unwahrscheinlich
+
+^ Stage ^ Bei Commit/Merge Request ^ CRON(z.B. nightly, weekly) ^
+| Checkout | 🟢 | 🟢 | 
+| Abhängigkeiten installieren | 🟢 | 🟢 |
+| Linting | 🟡 | 🟢 |
+| Build/Compile | 🟢 | 🟢 |
+| Unit Tests | 🟡 | 🟢 |
+| Integration Tests | 🟡 | 🟢 |
+| E2E Tests | 🔴| 🟢 |
+| Test Coverage | 🔴| 🟢 |
+| Package / Artifact bauen | 🟡 | 🟢 |
+| Deploy auf Dev/Test | 🟡 | 🟢 |
+| Deploy auf Prod | 🔴| 🟡 |

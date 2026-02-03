@@ -1,0 +1,40 @@
+==== LU02.A02 Erste Github-Pipeline ====
+
+Erfassen Sie hierfür einen Task, sofern noch keiner existiert. Verweisen Sie in allen Commit-Messages dieser Aufgabe auf den entsprechenden Task. 
+
+Fügen Sie folgende Zeile ihrer ''README.md''-Datei hinzu.
+
+<code md>
+[![Build Frontend](https://github.com/<USERNAME>/<REPO>/actions/workflows/frontend_job.yml/badge.svg)](https://github.com/<USERNAME>/<REPO>/actions/workflows/frontend_job.yml)
+</code>
+Wobei Sie natürlich ''<USERNAME>/<REPO>'' mit Ihren Angaben ersetzen.
+
+Erstellen Sie eine Datei ''.github/workflows/frontend_job.yml'' mit folgendem Inhalt:
+
+<code yml>
+name: Build frontend
+
+on:
+  workflow_call:
+  workflow_dispatch:
+
+jobs:
+  job_build_frontend:
+    name: Build frontend code
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: frontend # Falls Frontend sich im Unterordner "Frontend" befindet
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+</code>
+
+Checken Sie die Pipeline ein und pushen Sie Ihren Commit.
+
+Erlauben Sie auf Github die Actions unter https://github.com/<USERNAME>/<REPO>/settings/actions
+
+Starten Sie die Pipeline manuell und schauen Sie sich anschliessend das Log an.
+
+Wird der Badge im ''README.md'' korrekt angezeigt?

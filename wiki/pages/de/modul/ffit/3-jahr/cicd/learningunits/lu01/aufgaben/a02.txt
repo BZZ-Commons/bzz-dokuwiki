@@ -1,8 +1,8 @@
 ==== LU01.A02 Projekt-Base erstellen ====
 
-Erfassen Sie hierfür einen Task, sofern noch nicht. Verweisen Sie in allen Commit-Messages dieser Aufgabe auf den entsprechenden Task. 
+Erfassen Sie hierfür einen Task, sofern noch keiner existiert. Verweisen Sie in allen Commit-Messages dieser Aufgabe auf den entsprechenden Task. 
 
-Erstellen Sie zuerst eine "README.md"-Datei im Root-Verzeichnis, sofern Sie noch keine haben
+Erstellen Sie zuerst eine "README.md"-Datei im Root-Verzeichnis, sofern Sie noch keine haben.
 
 Überlegen Sie sich, wie Ihr Repository aufgebaut werden soll. Bei getrenntem Back- und Frontend kann es Sinn ergeben, entsprechende Teile wie in nachfolgendem Beispiel in Unterordnern zu pflegen.
  
