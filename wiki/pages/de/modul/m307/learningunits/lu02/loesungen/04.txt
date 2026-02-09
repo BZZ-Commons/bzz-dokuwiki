@@ -1,20 +1,39 @@
-====== LU01.A05 - JSON-File einlesen und dynamsich im der Browser-Konsole ausgeben ======
-
-===== Rahmenbedingungen =====
-  * Sozialform: Einzelarbeit
-  * Hilfsmittel: Openbooks
-  * Zeit: 20 Minuten
-  * Erwartetes Resultat: 
-    * JavaScript-File, dass eine JSON-Datei einliest und ausgibt. 
-    * HTML-File, welches den Inhalt der JSON-Datei in der Browser-Konsole ausgibt.
-
-===== Ausgangslage =====
-Bei der A04 haben wir statisch rund 10 Datensätze in der Browserkonsole statisch ausgeben lassen. Das hat den grossen Nachteil, dass jeder Neuzugang bei in der JSON-Datei im HTML neu programiert werden muss. Wir wollen nun unser Script dynamisch gestalten, sodass alle gespeicherten JSON-Daten, unabhängig von Ihrer Anzahl, ausgegeben werden. 
+====== LU02.L04 - JSON-File einlesen und statisch im der Browser-Konsole ausgeben ======
 
 ===== Auftrag =====
-Ersetzen Sie im nachfolgenden Script die Einzeleinträge durch Schleifen. 
+Ihr Auftrag besteht darin den Inhalt der Datei //lernende2.json// mit 10 Datensätze in der Browser-Konsole ausgeben zu lassen. 
 
-**index.html**
+Die benötigten Dateien finden Sie in dieser {{ :de:modul:m307:learningunits:lu01:aufgaben:lu01_l00_e_json_demo.zip | Zip-Datei mit den relevanten Arbeits-Files}}. 
+
+**Hinweis**
+Bei dieser Teilaufgabe reicht es, wenn Sie die Daten statisch auslesen. Es braucht also keine Schleife.
+
+**lernende2.json**
+
+  {
+    "lernende": [
+      { "id": "00", "name": "Anna", "nachname": "Keller", "alter": 19, "bms": true,  "hobbies": ["Lesen", "Joggen", "Kochen"] },
+      { "id": "01", "name": "Luca", "nachname": "Meier", "alter": 18, "bms": false, "hobbies": ["Gaming", "Mountainbike", "Musik"] },
+      { "id": "02", "name": "Sophie", "nachname": "Hofstetter", "alter": 20, "bms": true, "hobbies": ["Fotografie", "Yoga", "Reisen"] },
+      { "id": "03", "name": "Tim", "nachname": "Schwarz", "alter": 17, "bms": false, "hobbies": ["Fussball", "Schach", "Filme"] },
+      { "id": "04", "name": "Mia", "nachname": "Brunner", "alter": 18, "bms": true, "hobbies": ["Zeichnen", "Gitarre", "Backen"] },
+      { "id": "04", "name": "Jonas", "nachname": "Weber", "alter": 19, "bms": false, "hobbies": ["Schwimmen", "Fitness", "Spiele"] },
+      { "id": "05", "name": "Julia", "nachname": "Frei", "alter": 20, "bms": true, "hobbies": ["Tanzen", "Mode", "Fotobearbeitung"] },
+      { "id": "06", "name": "Noah", "nachname": "Kunz", "alter": 18, "bms": false, "hobbies": ["E-Sport", "Klettern", "Trompete"] },
+      { "id": "07", "name": "Emily", "nachname": "Gruber", "alter": 19, "bms": false, "hobbies": ["Lesen", "Kunst", "Volleyball"] },
+      { "id": "08", "name": "Nico", "nachname": "Hug", "alter": 21, "bms": true, "hobbies": ["Laufen", "Gaming", "Kochen"] },
+      { "id": "09", "name": "Leonie", "nachname": "Seiler", "alter": 18, "bms": false, "hobbies": ["Ballett", "Schreiben", "Reisen"] },
+      { "id": "10", "name": "David", "nachname": "Bachmann", "alter": 22, "bms": true, "hobbies": ["Kraftsport", "Wandern", "Barbecue"] }
+    ]  
+  }
+
+
+===== Lösungen als Browsewr-Konsolen-Output =====
+Das Ergebnis der Ausgabe sieht dann wie folgt aus:
+
+{{:de:modul:m307:learningunits:lu01:loesungen:lu01_l04_1.jpg?600|}}
+
+===== Lösungen des HTML/JS-Sourcecodes =====
 
   <!DOCTYPE html>
   <html lang="de">
@@ -123,10 +142,6 @@ Ersetzen Sie im nachfolgenden Script die Einzeleinträge durch Schleifen.
 
 
 
-
-
-===== Lösungen =====
-[[de:modul:m307:learningunits:lu01:Lösungen:05|LU01.L05]]
 
 ----
 [[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

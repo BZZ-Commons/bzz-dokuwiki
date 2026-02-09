@@ -1,77 +1,117 @@
-====== LU01.A02 - JSON-File einlesen und ausgeben ======
+====== LU01.A02 - myGeometryCalculator ======
 
 ===== Rahmenbedingungen =====
   * Sozialform: Einzelarbeit
   * Hilfsmittel: Openbooks
-  * Zeit: 15 Minutes
-  * Erwartetes Resultat: JavaScript-File, dass ein gegebenes JSON File einliest und auf der Computer-Konsole ausgibt.
+  * Zeit: 45 Minuten
+  * Erwartetes Resultat: JavaScript-File, dass die nachfolgend genannten geometrischen Operationen durchführen kann.
+    - kreisfläche
+    - kreisUmfang
+    - dreiecksFlaech
+    - dreieckUmfang
+    - quadratFlaeche
+    - quadratUmfang
+    - rechteckFlaeche
+    - recheckUmfang
 
-===== Ausgangslage =====
-Das nachfolgende JSON-File //lernende.json// ist gegeben. Kopieren Sie dieses mit Copy-Paste in Ihre Entwicklungsumgebung.
+===== Hinweise =====
+Wichtig bei der Umsetzung Ihrer Lösung ist, dass sie nach best-practise programmieren. Konkret heisst das: 
+  * Ihr Script, sowie die verwendeten Subroutinen (Funktionen, Methoden) müssen ei-nen Header haben: Autor, Datum, Angaben zur Input-, und Output-Parameter, eine kurze Beschreibung zum Verhalten der Funktion.  
+  * Bei fehlenden Parametern wird die eingebende Person entsprechend über das HTML-Formular oder der Kommandozeile informiert.
+  * Verwenden Sie die unbedingt die passenden Datentypen (primitive oder komplexe).
+  * Verwenden Sie keine JS-Bibliotheken, sondern programmieren Sie alle relevanten Funktionen selbst. Letztendlich ist das das eigentliche Ziel dieser Übung.
+  * Aus Gründen der Datenkapselung und der umsichtigen Programmierung realisieren sie Ihre Funktionen ausschliesslich mit Inputparameter und Return-Values. Es wird also möglichst nicht auf globale Werte innerhalb der Methoden zugegriffen.
+  * Die für die Berechnung benötigten Werte können über Commandline, als Variable oder über ein simples HTML-Formular eingegeben werden. Verschwenden Sie keine Zeit in eine „schöne“ Oberflächengestaltung, weil es aktuell um Programmie-rung und nicht um Gestaltung geht.
+  * Listenpunkt
+  * 
+===== Auftrag =====
+Programmieren Sie einen Rechner //myGeometryCalculator.js//, der die genannten geometrischen Funktionen ausführen kann. Testen Sie anschliessend Ihre Lösung auf Funktion, indem Sie diese ausführen und das Ergebnis auf der Kommandozeile ausgeben lassen.
 
-**lernende.json**
+==== Teilauftrag 1: Kreisfläche =====
 
-  {
-    "lernende": [
-      {
-        "name": "Anna",
-        "nachname": "Keller",
-        "alter": 19,
-        "bms": false,
-        "hobbies": ["Lesen", "Joggen", "Kochen"]
-      },
-      {
-        "name": "Sophie",
-        "nachname": "Hofstetter",
-        "alter": 20,
-        "bms": true,
-        "hobbies": ["Fotografie", "Yoga", "Reisen"]
-      }
-    ] 
+  // Autor: 
+  // Datum: 
+  // Beschreibung: Flaeche = pi * r * r, fuer pi können Sie 3.14 als constante einsetzten.
+  function kreisFlaeche(radius) {
+    ....
+    return kreisFlaeche
+  }
+  
+==== Teilauftrag 2: Kreisumfang =====
+
+  // Autor: 
+  // Datum: 
+  // Beschreibung: Umfang = 2 * pi * r, fuer pi können Sie 3.14 als constante einsetzten.
+  function kreisUmfang(radius) {
+    ....
+    return kreisUmfang
   }
 
+==== Teilauftrag 3: Dreiecksfläche =====
 
-===== Auftrag =====
-Erstellen Sie ein JS-Script, das die JSON-Inhalt asynchron einliest und auf der Computerkonsole formatiert ausgibt. Das Ergebnis soll wie folgt aussehen.
+  // Autor: 
+  // Datum: 
+  // Beschreibung: Damit es einfacher wird, verwenden Sie hier das rechtwinkelige Dreieck. Flaeche = seite * hoehe / 2
+  function dreiecksFlaeche(seite, hoehe) {
+    ....
+    return dreiecksFlaeche
+  }
+  
+==== Teilauftrag 4: Dreiecksumfang =====
 
-{{:de:modul:m307:learningunits:lu01:aufgaben:lu01_l02_1.jpg?600|}}
+  // Autor: 
+  // Datum: 
+  // Beschreibung: Damit es einfacher wird, geben wir alle drei Seiten als Inputparamter ein. Schliesslich ist das kein Geometriekurs.
+  function dreiecksUmfang(seiteA, seiteB, seiteC) {
+    ....
+    return dreiecksUmfang
+  }
+  
+==== Teilauftrag 5: quadratFlaeche =====
 
-Als Vorlage für Ihr JavaScript, können Sie die nachfolgende JS-Datei verwenden, die die Grundstruktur für das Einlesen bereitstellt.
+  // Autor: 
+  // Datum: 
+  // Beschreibung: Flache A = seite * seite
+  function quadratFlaeche(seite) {
+    ....
+    return dreiecksUmfang
+  }  
+  
+==== Teilauftrag 6: quadratUmfang =====
 
-**vorlage für lu01_l02.js**
+  // Autor: 
+  // Datum: 
+  // Beschreibung: Flache A = 4 * seite 
+  function quadratUmfang (seite) {
+    ....
+    return quadratUmfang
+  }  
+  
+  ==== Teilauftrag 7: rechtEckFlaeche =====
 
-  const fs = require("fs");
-  //
-  fs.readFile("lernende.json", "utf8", (err, data) => {
-    if (err) {
-      console.error("Fehler beim Lesen:", err);
-      return;
-    }
-    //
-    const daten = JSON.parse(data);
-    //
-    console.log(typeof daten); // object
-    //
-    console.log("Anzahl Lernende:", daten.lernende.length);
-    //
-    console.log("\n--- Gesamte Daten als formatierter JSON-String ---");
-    console.log(JSON.stringify(daten, null, 2));  // << formatierte Ausgabe
-    //
-    console.log("\n--- Einzelwerte erster Datensatz ---");
-    console.log("Name:", daten.lernende[0].name);
-    // hier müssen die restlichen Attribute des ersten Datensatzes ausgegeben werden
-    // das erste Atttribut ist bereits als vorlage vorhanden
-    //
-    console.log("\n--- Einzelwerte zweiter Datensatz ---");
-    // hier muss, nach Vorlage des ersten Satzes, der zweite Satz ebenfalls ausgeben werden.
-    //   
-  });
+  // Autor: 
+  // Datum: 
+  // Beschreibung: Flache A = seiteA * seiteB
+  function rechteckFlaeche(seiteA, seiteB) {
+    ....
+    return rechteckFlaeche
+  }  
+  
+==== Teilauftrag 6: rechteckUmfang =====
+
+  // Autor: 
+  // Datum: 
+  // Beschreibung: Flache A = 2 * seite + 2 * seiteB 
+  function quadratUmfang (seiteA, seiteB) {
+    ....
+    return rechteckUmfang
+  }  
+
   
 ===== Lösungen =====
 [[de:modul:m307:learningunits:lu01:Lösungen:02|LU01.L02]]
 
+
+
 ----
 [[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir
-
-
-

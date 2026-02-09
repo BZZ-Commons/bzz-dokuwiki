@@ -1,55 +1,21 @@
-====== LU01a - JSON Basics ======
+====== LU01a - Pracise! Practise! Praktise! ======
 
 ===== Lernziele =====
-  - Den Begriff JSON bzw. JSON-Dateiformat in eigenen Worten beschreiben und erklären wozu es eingesetzt werden kann.
-  - Die unterstützten Datentypen von JSON aufzählen.
-  - Die Syntax von JSON an konkreten Beispielen aufzeigen und erklären.
+  - Üben!
+  - Üben!
+  - Üben!
+  - 
+===== Ausgangslage =====
+Programmierung ist im Wesentlichen mehr Handwerk als Kunst. Das bedeutet, dass die Professionalität mit (viel) Übung kommt. Umgekehrt bedeutet das, dass auch die Besten von uns nicht weiterkommen, wenn die Übung fehlt. 
 
-===== Einleitung =====
-**JSON** – dieses wundersame Ding, das jeder benutzt. Der Name bedeutet //JavaScript Object Notation// und verrät schon die Herkunft: ein Datenformat, das ursprünglich für JavaScript gedacht war, inzwischen aber von fast jeder Programmiersprache akzeptiert wird – weil JSON sehr flexibel und daher vielfältig eingesetzt werden kann. 
+  * **Wie werden Sie Meister**: Practise! Practise! Practise! 
+  * **Wie bleiben Sie Meister**: Practise! Practise! Practise! 
+  * Oder anders gesagt: **Use it or lose it!**
 
-===== Was ist JSON =====
-JSON (JavaScript Object Notation) ist ein textbasiertes Datenformat, das haeufig fuer Konfigurationen, API-Antworten oder Datenaustausch verwendet wird.
+Nachfolgend finden Sie einige Standard-Programmieraufgaben aus der Geometrie, der Optimierung oder der Algebra, die Ihnen mehr Sicherheit in Programmierung vermitteln sollen.
 
-**Eigenschaften:**
-  * menschenlesbar
-  * schluessel–wert-basiert
+//Viel Spass beim Lösen.//
 
-
-===== JSON-Struktur =====
-
-JSON speichert Daten in einer klar strukturierten, menschenlesbaren Form. Das ganze läuft über Schlüssel-Wert-Paare, hübsch sortiert in geschweiften Klammern { }. Texte kommen in Anführungszeichen, Zahlen ohne, Wahrheitswerte heißen true oder false, und null ist ebenfalls möglich, wenn man mal wieder nicht weiss, was man eigentlich speichern wollte. 
-
-{{:de:modul:m307:learningunits:lu01:lu01_1_nested-json.png?800|Verschachteltes JSON-format}}
-
-Mehrdimensional wird das Ganze mit Arrays [...], also Listen von Elementen. Programme freuen sich darüber, weil sie die Struktur ohne grosses Raten einlesen können, und Entwickler freuen sich… na ja, weil es schlimmere Alternativen gibt.
-
-===== JSON-Dateiformate =====
-Eingesetzte Formate innerhalb von JSON sind streng begrenzt – einer der Gründe, warum das Format so beliebt ist: kein unnötiger Schnickschnack. Die grundlegenden Datentypen sind:
-
-  * **String**: Also Text, natürlich in Anführungszeichen
-  * **Number**: Ganzzahlen oder Fließkommazahlen, wie es eben gerade passt
-  * **Boolean**: true oder false, schwarz-weiss, keine Graustufen
-  * **Null**: für alles, was man nicht definieren will
-  * **Object**: eine Sammlung von Schlüssel-Wert-Paaren
-  * **Array**: Eine geordnete Liste von Elementen beliebiger Typen
-
-===== Einsatzgebiete =====
-JSON wird vor allem für Datenaustausch in Web-APIs genutzt – weil Computer in verschiedenen Programmiersprachen ohne grossen Administraions- und Programmieraufwand miteinander sprechen sollen. Und im Gegensatz zu XML braucht man keinen Informatik-Doktortitel, um es zu lesen. Es ist kompakt und schnell zu parsen (einlesen für Verarbeitung).
-
-Kurz gesagt: JSON ist aktuell der Standard. JSON's Schlankheit einerseits, und die Flexibilität andererseits ist geradzu perfekt, wenn  es darum geht eine beschränkte Menge von Daten zwischen Computersystemen ausgetauscht. 
-
-===== Lernvideos =====
-
-| 5 Minuten - Grundverständnis |{{:de:modul:m307:learningunits:lu01:json_in_5_minuten.mp4|JSON Grundverständnis}} |
-| 16 Minuten - mit Codebeispielen |{{:de:modul:m307:learningunits:lu01:json_tutorial_fuer_anfaenger.mp4|JSON für Anfänger}} |
-
-
-
-
-===== Zusatzmaterial =====
-  * [[https://www.w3schools.com/js/js_json.asp|W3School - JSON]]
-  * [[https://wiki.selfhtml.org/wiki/JSON|SelfHTML- JSON]]
 
 ----
 [[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

@@ -1,39 +1,119 @@
-====== LU01.A01 - JSON-File anlegen======
+====== LU01.A01 - myAlgebraCalculator ======
 
 ===== Rahmenbedingungen =====
   * Sozialform: Einzelarbeit
   * Hilfsmittel: Openbooks
-  * Zeit: 10 Minutes
-  * Erwartetes Resultat: JSON-Datei mit 1+3 Lernenden
+  * Zeit: 45 Minuten
+  * Erwartetes Resultat: JavaScript-File, dass die nachfolgend genannten Taschenrechner-Operationen durchführen kann.
+    - plus
+    - minus
+    - mal
+    - geteilt
+    - quadrat
+    - wurzel
+    - potenz
 
-===== Ausgangslage =====
-Wir wissen, dass JSON ein Standard ist, um Daten zwischen Computern auszutauschen. Das Einzige, was dabei beachtet werden muss ist eine saubere, JSON-konforme (gemäss der Regeln von JSOn) Struktur. Um das zu üben, wollen wir bei dieser Aufgabe eine eigene JSON-Datei anlegen.
 
-===== Auftrag 1 =====
-Legen Sie eine JSON-Datei **lernende.json** mit den nachfolgenden Attributen an:
-    * name: String
-    * nachname: String
-    * alter: number
-    * bms: boolean
-    * hobbies: Array von Strings 
+===== Hinweise =====
+Wichtig bei der Umsetzung Ihrer Lösung ist, dass sie nach best-practise programmieren. Konkret heisst das: 
+  * Ihr Script, sowie die verwendeten Subroutinen (Funktionen, Methoden) müssen ei-nen Header haben: Autor, Datum, Angaben zur Input-, und Output-Parameter, eine kurze Beschreibung zum Verhalten der Funktion.  
+  * Bei fehlenden Parametern wird die eingebende Person entsprechend über das HTML-Formular oder der Kommandozeile informiert.
+  * Verwenden Sie die unbedingt die passenden Datentypen (primitive oder komplexe).
+  * Verwenden Sie keine JS-Bibliotheken, sondern programmieren Sie alle relevanten Funktionen selbst. Letztendlich ist das das eigentliche Ziel dieser Übung.
+  * Aus Gründen der Datenkapselung und der umsichtigen Programmierung realisieren sie Ihre Funktionen ausschliesslich mit Inputparameter und Return-Values. Es wird also möglichst nicht auf globale Werte innerhalb der Methoden zugegriffen.
+  * Die für die Berechnung benötigten Werte können über Commandline, als Variable oder über ein simples HTML-Formular eingegeben werden. Verschwenden Sie keine Zeit in eine „schöne“ Oberflächengestaltung, weil es aktuell um Programmie-rung und nicht um Gestaltung geht.
+  * Listenpunkt
+  * 
+===== Auftrag =====
+Programmieren Sie einen Rechner //myAlgebraCalculator.js//, der nicht nur die Grundrechenarten durchführt, sondern auch quadrieren, potenzieren und die Wurzeln ziehen kann. Testen Sie anschliessend Ihre Lösung auf Funktion, indem Sie die Funktionen ausführen und das Ergebnis auf der Kommandozeile ausgeben lassen.
 
-===== Auftrag 2 =====
-Erstellen Sie einen konkrete Datensatz mit einer Person Ihrer Wahl unter Verwendung der im Auftrag 1 vorgegeben JSON-Struktur. Prüfen Sie die Korrektheit Ihrer Arbeit durch ein Online-Validierungstool: [[https://jsonlint.com/|JSON Online Validation]].
+{{:de:modul:m307:learningunits:lu01:aufgaben:a9815ecb04ff8d81bf8ff91f349456b2.png?600|}}
 
-**Hinweis**
-Validierungstools prüfen nur die formale, nicht aber die inhaltliche Korrektheit des Sourcecoces. D.h. es wird beispielsweise geprüft, 
-  * ob alle Klammern vorhanden und in der richtigen Reihenfolge sind 
-  * ob alle Attribute durch Werte belegt sind
-  * ob die Key-Value-Paare durch Kommata getrennt wurden
-  * ...
+Der Rechner soll die nachfolgenden Funktionen realisieren:
 
-Sie erkenne nicht, ob die Attribute korrekt geschrieben wurden oder ob die korrekten Werte den passenden Attributen zugeordnet wurden.
+==== Teilauftrag 1: Plus =====
 
-===== Auftrag 3 =====
-Wenn Sie sicher sind, dass Ihre JSON nun die korrekte Struktur hat, legen Sie drei weitere Lernende an. Prüfen Sie am Ende Ihr Ergebnis mit dem Validierungstool.
+  // Autor: 
+  // Datum: 
+  // Beschreibung: Zwei eingegebene summand1 und summand2 werden als Summe zurückgegeben.
+  // Hinweis: Die beiden Summande sind vertrauschbar.
+  function plus(summand1, summand2) {
+    ....
+    return summe
+  }
+  
+==== Teilauftrag 2: Minus =====
+
+  // Autor: 
+  // Datum: 
+  // Beschreibung: Der eingegebene minuend wird von subrahend abgezogen und die differenz zurückgegeben
+  // Hinweis: Minuend und Subrahend sind nicht vertauschbar.
+  function minus(minuend, subrahend ){
+    ....
+    return differenz
+  }
+
+==== Teilauftrag 3: Mal =====
+
+  // Autor: 
+  // Datum: 
+  // Beschreibung: Zwei eingegebene Zahlen faktor1 und faktor2 werden multipliziert und als produkt zurückgegeben.
+  // Hinweis: faktor1 und faktor2 sind vertauschbar.
+  function mal(faktor1, faktor2) {
+    ....
+    return produkt
+  }
+
+  
+==== Teilauftrag 4: Geteilt =====
+
+  // Autor: 
+  // Datum: 
+  // Beschreibung: Der eingegebene dividend wird durch den divisor geteilt und als quotient zurückgegeben.
+  // Hinweis: dividend und divisor sind nicht vertauschbar.
+  function geteilt(dividend, divisior) {
+    ....
+    return quotient
+  }
+
+==== Teilauftrag 5: Quadrat =====
+
+  // Autor: 
+  // Datum: 
+  // Beschreibung: Eine Zahl basis soll mit sich selbst multipliziert und das Ergebnis als produkt zurückgegeben werden.
+  // Hinweis: basis und exponent sind nicht vertauschbar.
+  function quadrat(basis){
+    ....
+    return produkt
+  }
+  
+==== Teilauftrag 6: Wurzel =====
+
+  // Autor: 
+  // Datum: 
+  // Beschreibung: Aus einer Zahl basis soll die Quadratwurzuel gezogen werden. 
+  // Hinweis: Die Operation wurzel wird mit **Math.sqrt** realisiert. 
+  function wurzel(basis){
+    ....
+    return produkt
+  }
+    
+==== Teilauftrag 7: Potenz =====
+
+  // Autor: 
+  // Datum: 
+  // Beschreibung: zu einer zahl soll die Pozent gebildet werden. Dies erledigen wir in einer Schleife mit dem exponenten im Schleifenkopf, wobei die basis mit sich selbst entsprechend oft multipliziert wird. 
+  // Hinweis: Potenz und Exponent sind nicht vertauschbar
+  function potenz( basis, exponent) {
+    ....
+    return produkt
+  }
+
 
 ===== Lösungen =====
 [[de:modul:m307:learningunits:lu01:Lösungen:01|LU01.L01]]
+
+
 
 ----
 [[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir
