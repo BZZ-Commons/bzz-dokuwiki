@@ -15,7 +15,6 @@ Die dynamische Ausgabe erreichen wird mit einer Schleife, die die Daten vom erst
 
 
 **lernende2.json**
-
   {
     "lernende": [
       { "name": "Anna", "nachname": "Keller", "alter": 19, "bms": true,  "hobbies": ["Lesen", "Joggen", "Kochen"] },
@@ -80,7 +79,7 @@ Dies realisieren Sie durch eine Schleife, die JSON-Lernenden-Daten durchläuft. 
   
     
 ===== Lösungen =====
-[[de:modul:m307:learningunits:lu02:loesungen:03|LU01.L03]]
+[[de:modul:m307:learningunits:lu02:loesungen:03|LU02.L03]]
 
 ----
 [[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

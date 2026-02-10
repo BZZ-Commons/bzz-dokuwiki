@@ -1,13 +1,4 @@
-====== LU02.L05 - JSON-File einlesen und dynamsich im der Browser-Konsole ausgeben ======
-
-===== Rahmenbedingungen =====
-  * Sozialform: Einzelarbeit
-  * Hilfsmittel: Openbooks
-  * Zeit: 20 Minuten
-  * Erwartetes Resultat: 
-    * JavaScript-File, dass eine JSON-Datei einliest und ausgibt. 
-    * HTML-File, welches den Inhalt der JSON-Datei in der Browser-Konsole ausgibt.
-
+====== LU02.L05 - JSON-File einlesen und dynamisch mittels Browser-Konsole ausgeben ======
 
 ===== Auftrag =====
 Ersetzen Sie im nachfolgenden Script die Einzeleinträge durch Schleifen. 
@@ -47,7 +38,6 @@ Ersetzen Sie im nachfolgenden Script die Einzeleinträge durch Schleifen.
   </body>
   </html>
 
-
 ===== Lösungssourcecode mit einer äuseren Schleife (alle Fileeinträge) =====
   <!DOCTYPE html>
   <html lang="de">
@@ -84,7 +74,7 @@ Ersetzen Sie im nachfolgenden Script die Einzeleinträge durch Schleifen.
   </html>
 
 
-===== Lösungssourcecode mit einer äuseren (alle Sätze) und innerer Schleife (Hobbies) =====
+===== Lösungssourcecode mit einer äusseren (alle Sätze) und innerer Schleife (Hobbies) =====
 
   <!DOCTYPE html>
   <html lang="de">

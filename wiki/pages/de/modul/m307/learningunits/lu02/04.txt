@@ -1,7 +1,7 @@
 ====== LU02d - JSON-Datei verändern und speichern ======
 Nachdem wir JSON-Dateien ins JS eingelesen und im Browser oder in der Konsole ausgeben konnte, wird es Zeit JSON-Inhalte zu verändern und diese wieder in JSON-Dateien zu schreiben. Auch hier benötigen wir unser //fs-Modul//. 
 
-===== Geaenderte Daten wieder in eine JSON-Datei schreiben =====
+===== Geänderte Daten wieder in eine JSON-Datei schreiben =====
 Das nachfolgende Codebeispiel zeigt, wie Daten aus dem JS in eine lokale JSON-Datei geschrieben werden.
 
 **Codebeispiel**
