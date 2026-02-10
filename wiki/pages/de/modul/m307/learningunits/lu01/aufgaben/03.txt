@@ -12,7 +12,8 @@ Wichtig bei der Umsetzung Ihrer Lösung ist, dass sie nach best-practise program
   * Verwenden Sie die unbedingt die passenden Datentypen (primitive oder komplexe).
   * Verwenden Sie keine JS-Bibliotheken, sondern programmieren Sie alle relevanten Funktionen selbst. Letztendlich ist das das eigentliche Ziel dieser Übung.
   * Aus Gründen der Datenkapselung und der umsichtigen Programmierung realisieren sie Ihre Funktionen ausschliesslich mit Inputparameter und Return-Values. Es wird also möglichst nicht auf globale Werte innerhalb der Methoden zugegriffen.
-  * Die für die Berechnung benötigten Werte können über Commandline, als Variable oder über ein simples HTML-Formular eingegeben werden. Verschwenden Sie keine Zeit in eine „schöne“ Oberflächengestaltung, weil es aktuell um Programmie-rung und nicht um Gestaltung geht.
+  * Die für die Berechnung benötigten Werte können über Commandline, als Variable oder über ein simples HTML-Formular eingegeben werden.
+  * Verschwenden Sie keine Zeit in eine //schöne“ Oberflächengestaltung//, weil es aktuell um Programmier-Praxis, und nicht um Gestaltung geht.
 
 ===== Auftrag =====
 Sortierungen finden wir überall in unserem Alltag. Beispielsweise sind unsere Kontakte alphabetisch sortiert, in der Regel aufsteigend. Der **BubbleSort-Algorithmus** ist ein solcher Sortieralgorithmus, der sehr gut zu Schulungszwecken verwendet werden kann. 

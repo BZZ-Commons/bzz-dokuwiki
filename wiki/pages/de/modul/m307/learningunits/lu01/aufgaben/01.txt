@@ -21,9 +21,9 @@ Wichtig bei der Umsetzung Ihrer Lösung ist, dass sie nach best-practise program
   * Verwenden Sie die unbedingt die passenden Datentypen (primitive oder komplexe).
   * Verwenden Sie keine JS-Bibliotheken, sondern programmieren Sie alle relevanten Funktionen selbst. Letztendlich ist das das eigentliche Ziel dieser Übung.
   * Aus Gründen der Datenkapselung und der umsichtigen Programmierung realisieren sie Ihre Funktionen ausschliesslich mit Inputparameter und Return-Values. Es wird also möglichst nicht auf globale Werte innerhalb der Methoden zugegriffen.
-  * Die für die Berechnung benötigten Werte können über Commandline, als Variable oder über ein simples HTML-Formular eingegeben werden. Verschwenden Sie keine Zeit in eine „schöne“ Oberflächengestaltung, weil es aktuell um Programmie-rung und nicht um Gestaltung geht.
-  * Listenpunkt
-  * 
+  * Die für die Berechnung benötigten Werte können über Commandline, als Variable oder über ein simples HTML-Formular eingegeben werden.
+  * Verschwenden Sie keine Zeit in eine //schöne// Oberflächengestaltung, weil es aktuell um Programmierung, und nicht um Gestaltung geht.
+
 ===== Auftrag =====
 Programmieren Sie einen Rechner //myAlgebraCalculator.js//, der nicht nur die Grundrechenarten durchführt, sondern auch quadrieren, potenzieren und die Wurzeln ziehen kann. Testen Sie anschliessend Ihre Lösung auf Funktion, indem Sie die Funktionen ausführen und das Ergebnis auf der Kommandozeile ausgeben lassen.
 
@@ -71,6 +71,7 @@ Der Rechner soll die nachfolgenden Funktionen realisieren:
   // Datum: 
   // Beschreibung: Der eingegebene dividend wird durch den divisor geteilt und als quotient zurückgegeben.
   // Hinweis: dividend und divisor sind nicht vertauschbar.
+  // Hinweis: Divisor darf nicht 0 sein, d.h. definitionsgemäss darf nicht durch 9 geteilt werden.
   function geteilt(dividend, divisior) {
     ....
     return quotient
