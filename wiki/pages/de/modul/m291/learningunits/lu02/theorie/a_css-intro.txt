@@ -195,6 +195,10 @@ h1 { font-size: var(--h1-size); }
 CSS-Variablen funktionieren ähnlich wie Absatz- und Zeichenstile: Sie definieren Werte zentral und wenden sie konsistent an.
 </WRAP>
 
+
+{{ :de:modul:m291:learningunits:lu02:theorie:m291_lu02_css_variables_responsiveness_final_small.mp4?1040x585 | CSS-Variablen und Media-Queries anschaulich erklärt. }}
+//Das Video zeigt anschaulich, wie CSS-Variablen eingesetzt werden und responsive Designs mit Media-Queries (Details weiter unten auf der Seite) umgesetzt werden.//
+
 ----
 
 ===== 3) CSS Cascade =====
