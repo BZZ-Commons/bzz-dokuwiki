@@ -1,0 +1,87 @@
+====== LU01.A03 - Pivot: Property Data (Calculated Field + Grouping) ======
+
+<WRAP center round download 60%>
+**Ziel:** Du kannst eine PivotTable aus einer Datenliste erstellen, ein **berechnetes Feld** anlegen, Kategorien **gruppieren** und Werte als **Prozentanteile** darstellen.
+</WRAP>
+
+===== Material =====
+  * Übungsdatei:  {{ :modul:mathe:ma4:thema:statistik:aufgaben:property.xlsx | Property-Daten}}
+
+===== Auftrag =====
+Erstelle aus den Property-Daten eine Pivot-Auswertung mit:
+
+Einem **Calculated Field** (berechnetes Feld) für die Gesamtzimmeranzahl, das der Gesamtzahl der Schlafzimmer, Badezimmer und Empfangsräume entspricht, und zeigen Sie dies in der folgenden Pivot-Tabelle (nach Gartengrösse geordnet) an:
+
+{{:modul:mathe:ma4:thema:statistik:aufgaben:image_0003.webp|}}
+
+Einer **Gruppierung** der Lage in städtisch (d. h. Stadt oder Dorf --> Town or Village) und nicht-städtisch (d. h. ländlich oder abgelegen --> Countryside or Remote):
+
+{{:modul:mathe:ma4:thema:statistik:aufgaben:image_0004.webp|}}
+
+Einer Darstellung von **Prozentanteilen** nach Garten-Grösse innerhalb jeder Lage-Gruppe
+
+{{:modul:mathe:ma4:thema:statistik:aufgaben:image_0005.webp|}}
+
+===== Erwartete Ausgabe =====
+Du hast am Schluss:
+
+  * Pivot A: **Total Rooms** nach Location und Garden Size (mit berechnetem Feld)
+  * Pivot B: **Urban vs. Non-Urban** und pro Garden Size der **Prozentanteil** innerhalb der Gruppe
+
+===== Abgabe =====
+  * Speichere die Datei als: **Throw-er pivot chart.xlsx** und geben Sie das File in Moodle ab.
+
+
+<WRAP center round tip 100%>
+===== Hinweise =====
+
+
+==== Teil 1: PivotTable mit berechnetem Feld ====
+
+=== 1) PivotTable erstellen ===
+  - Öffne das Workbook aus dem Übungsordner.
+  - Erstelle eine **leere PivotTable** basierend auf der Property-Tabelle (ganzer Datenbereich).
+
+=== 2) Calculated Field anlegen ===
+Lege in der PivotTable ein berechnetes Feld an:
+
+  * Name: **Total Rooms**
+  * Formel: **Bedrooms + Bathrooms + Reception Rooms**
+
+=== 3) Pivot so anordnen ===
+Baue die PivotTable so, dass du **Total Rooms** nach **Location** und **Garden Size** auswertest:
+
+  * **Zeilen:** Location
+  * **Spalten:** Garden Size
+  * **Werte:** Total Rooms (Summe)
+
+==== Teil 2: Location gruppieren (Urban / Non-Urban) ====
+
+=== 4) Gruppierung erstellen ===
+Gruppiere die Werte im Feld **Location** in zwei Gruppen:
+
+  * **Urban:** Town, Village
+  * **Non-Urban:** Countryside, Remote
+
+Hinweis: Danach gibt es ein neues Feld / neue Gruppennamen (Urban / Non-Urban).
+
+==== Teil 3: Prozentanteile pro Lage-Gruppe ====
+
+=== 5) Pivot umbauen auf Prozentdarstellung ===
+Nutze die gruppierte Location, um zu zeigen:
+„Welchen Anteil hat jede Garden Size am Total der jeweiligen Lage-Gruppe?“
+
+  * **Zeilen:** Urban / Non-Urban (gruppierte Location)
+  * **Spalten:** Garden Size
+  * **Werte:** Anzahl Properties (Count) ODER ein geeignetes Zählfeld
+  * Stelle bei den Werten um auf:
+    - **Werte anzeigen als → % des Zeilengesamtergebnisses** (Row Total %)
+</WRAP>
+
+
+
+
+----
+
+{{tag>M3-LU01}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Kevin Maurizi

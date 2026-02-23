@@ -1,0 +1,83 @@
+====== LU01.A02 - PivotChart: Durchschnittliche Oscar-Nominations nach Certificate ======
+
+<WRAP center round download 60%>
+**Ziel:** Du kannst aus einer Liste eine Pivot-Tabelle + PivotChart erstellen, den Wert **Average** (Durchschnitt) einstellen und mit einem **Slicer** (Genre) filtern.
+</WRAP>
+
+
+===== Material =====
+  * Datei: {{ :modul:mathe:ma4:thema:statistik:aufgaben:movies.xlsx | Movies.xlsx}}  (Sheet: **Films**)
+
+
+===== Auftrag =====
+Öffnen Sie die Arbeitsmappe und erstellen Sie ein Pivot-Diagramm auf der Grundlage der Daten, die die **durchschnittliche Anzahl der Oscar-Nominierungen pro Altersfreigabe** für ein bestimmtes Genre anzeigen.
+
+{{:modul:mathe:ma4:thema:statistik:aufgaben:image_0001.webp|}}
+
+
+
+===== Vorgaben =====
+  * Das Diagramm zeigt auf der x-Achse: **Certificate**
+  * Als Kennzahl verwendest du: **Average of Nominations**
+  * Du erstellst einen **Genre-Slicer**, um nach Genre zu filtern
+  * Diagrammtyp: **Säulen/Column chart** (PivotChart)
+
+===== Was bedeutet „Certificate“? =====
+**Certificate** = **Altersfreigabe / Filmrating** (für welches Alter ein Film geeignet ist).
+
+In dieser Datei kommen folgende Werte vor:
+  * **U** (Universal)
+  * **PG** (Parental Guidance)
+  * **12**, **12A**
+  * **15**
+  * **18**
+  * **Unknown** (keine Angabe im Datensatz)
+
+
+===== Abgabe =====
+  - Speichere die Datei als: **Movies_Pivot_YourName.xlsx** und laden Sie das File in Moodle hoch.
+  - PivotTable + PivotChart + Genre-Slicer müssen enthalten sein.
+
+<WRAP center round tip 100%>
+===== Hinweise =====
+
+==== 1) PivotTable erstellen ====
+  - Öffne **Movies.xlsx**
+  - Klicke in eine Zelle der Tabelle im Sheet **Films**
+  - Menü: **Einfügen → PivotTable**
+  - Quelle: gesamte Tabelle (alle Spalten)
+  - PivotTable auf **neuem Arbeitsblatt** erstellen
+
+==== 2) PivotTable konfigurieren ====
+Ziehe die Felder in die Pivot-Bereiche:
+
+  * **Zeilen (Rows):** Certificate
+  * **Werte (Values):** Nominations
+
+Dann:
+  - Klicke bei „Werte“ auf **Nominations** → **Wertfeldeinstellungen**
+  - Stelle um von „Summe“ auf **Mittelwert (Average)**
+
+Erwartung: Du siehst jetzt pro Certificate einen Durchschnittswert.
+
+==== 3) PivotChart erstellen ====
+  - Klicke in die PivotTable
+  - Menü: **PivotTable-Analyse → PivotChart** (oder Einfügen → Diagramm)
+  - Wähle **Säulendiagramm** (Clustered Column)
+
+==== 4) Slicer (Genre) hinzufügen ====
+  - Menü: **PivotTable-Analyse → Datenschnitt (Slicer)**
+  - Wähle **Genre**
+  - Platziere den Slicer oberhalb/links vom Diagramm
+
+==== 5) PivotChart „schön“ machen (Minimal) ====
+  - Diagrammtitel: **Average number of nominations by certificate**
+  - Achsenbeschriftung prüfen (Certificate sichtbar)
+  - Optional: Werte nach Grösse sortieren (grösste zuerst)
+
+</WRAP>
+
+----
+
+{{tag>M3-LU01}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Kevin Maurizi
