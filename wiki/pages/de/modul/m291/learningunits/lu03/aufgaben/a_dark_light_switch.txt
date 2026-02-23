@@ -46,7 +46,7 @@ Ihr Stand nach LU02 ist vorhanden und funktioniert im Desktop und Mobile Layout.
 </WRAP>
 
 **Checkliste**
-  * Das Icon erscheint im Browser-Tab.
+  * Das Icon erscheint im Browser-Tab (auf Chrome oder Firefox testen, Safari zeigt das Favicon nicht an (weil File lokal gespeichert ist)).
   * In DevTools → Network gibt es keinen 404 Fehler für das Favicon.
 
 ===== Schritt 2 Feature-Icons mit Pseudo-Elementen umsetzen =====
@@ -56,23 +56,25 @@ Ihr Stand nach LU02 ist vorhanden und funktioniert im Desktop und Mobile Layout.
 Sie haben in Ihrer Info-Zeile zwei Feature-Texte, z.B. „No credit card required". Vor jedem Text soll ein Icon erscheinen.
 
 <WRAP center round box 80%>
+**Beispiel für das Anwenden von Pseudo-Elementen** (nicht so umzusetzen im Projekt Landingpage Alarado, sondern wie oben abgebildet -> Feature-Texte mit grünem Haken)
 {{:de:modul:m291:learningunits:lu03:aufgaben:1_p0ryo3ias6k1zbyv9kusva.png?nolink&400|}}
 \\
 //Wenn wir vor oder nach einem Text ein Icon oder Emoji einblenden möchten, eignen sich Pseudo-Elemente sehr gut.//
-</WRAP>
 
-**Umsetzung des im Bild oben gezeigten Designs mit HTML und CSS:**
 
-<WRAP center box round 80%>
+**Umsetzung des im Bild oben gezeigten Designs (The Div Soup) mit HTML und CSS:**
+
 <code html>
 <body>
   <h1>The Div Soup</h1>
 </body>
 </code>
-</WRAP>
 
-<WRAP center box round 80%>
 <code css>
+body {
+  background-color: #000000;
+}
+
 h1 {
   color: #fff;
 }

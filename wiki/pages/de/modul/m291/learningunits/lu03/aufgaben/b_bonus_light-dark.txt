@@ -1,0 +1,118 @@
+===== LU03b - 🚀 Bonusauftrag: CSS-nativer Dark Mode =====
+
+<WRAP center round box 80%>
+**Für wen ist das?** Sie haben alle Schritte abgeschlossen und möchten tiefer einsteigen. Dieser Bonusauftrag zeigt Ihnen, wie modernes CSS den Dark Mode eleganter löst – ganz ohne JavaScript.
+</WRAP>
+
+In den Schritten 1–9 haben Sie den Dark Mode mit JavaScript und einer CSS-Klasse umgesetzt. Das funktioniert gut, hat aber einen Nachteil: Die Seite kennt die Systemeinstellung des Users nicht automatisch. Wer sein Betriebssystem auf Dark Mode gestellt hat, sieht trotzdem zuerst Light Mode – bis er den Switch betätigt.
+
+Moderneres CSS bietet zwei Werkzeuge, die das eleganter lösen:
+
+  - Die Media Query ''%%@media (prefers-color-scheme: dark)%%'' liest die Systemeinstellung des Users aus.
+  - Die CSS-Funktion ''%%light-dark()%%'' erlaubt es, beide Farbwerte direkt in einer Deklaration zu definieren.
+
+Quelle und Vertiefung: [[https://www.bram.us/2023/10/09/the-future-of-css-easy-light-dark-mode-color-switching-with-light-dark/|The Future of CSS: Easy Light-Dark Mode Color Switching with light-dark() – bram.us]]
+
+==== Schritt A: Systemfarbe mit prefers-color-scheme auslesen ====
+
+Ohne JavaScript lässt sich der Dark Mode über eine Media Query aktivieren. Der Browser fragt dabei das Betriebssystem ab.
+
+<WRAP center box round 80%>
+<code css>
+:root {
+  --text-color: #333;
+  --bg-color: #ffffff;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text-color: #cccccc;
+    --bg-color: #1a1a1a;
+  }
+}
+
+body {
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+</code>
+</WRAP>
+
+Was passiert hier: Im Light Mode gelten die Standardwerte aus '':root''. Sobald das Betriebssystem des Users auf Dark Mode steht, überschreibt die Media Query die CSS-Variablen – der Rest der Seite bekommt davon nichts mit und verwendet weiterhin ''var(--text-color)''.
+
+**Testen:** Wechseln Sie in den Systemeinstellungen Ihres Computers zwischen Light und Dark Mode. Die Seite sollte automatisch reagieren – ohne Klick, ohne JavaScript.
+
+==== Schritt B: light-dark() Funktion einsetzen ====
+
+Seit 2024 unterstützen alle modernen Browser die Funktion ''%%light-dark()%%''. Sie nimmt zwei Farbwerte entgegen und gibt je nach aktivem Farbschema den ersten (Light) oder den zweiten (Dark) zurück.
+
+**Wichtig:** Damit ''%%light-dark()%%'' funktioniert, muss zwingend ''%%color-scheme: light dark%%'' auf '':root'' gesetzt sein. Ohne diese Deklaration weiss der Browser nicht, welches Schema aktiv ist.
+
+<WRAP center box round 80%>
+<code css>
+:root {
+  /* Pflicht: Ohne diese Zeile funktioniert light-dark() nicht! */
+  color-scheme: light dark;
+
+  --text-color: light-dark(#333333, #cccccc);
+  --bg-color:   light-dark(#ffffff, #1a1a1a);
+  --nav-color:  light-dark(#000000, #ffffff);
+}
+
+body {
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+</code>
+</WRAP>
+
+Der Vorteil gegenüber dem Media-Query-Ansatz: Beide Werte stehen direkt nebeneinander. Das macht den Code lesbarer und vermeidet doppelte Variablenblöcke.
+
+==== Schritt C: Beide Ansätze kombinieren ====
+
+In der Praxis kombiniert man beide Techniken: ''%%light-dark()%%'' für die Farbdefinitionen und ''%%prefers-color-scheme%%'' als Fallback für ältere Browser. Das vollständige Beispiel unten zeigt, wie Sie Ihre bisherige Lösung mit CSS-Variablen und ''%%light-dark()%%'' umschreiben könnten:
+
+<WRAP center box round 80%>
+<code css>
+/* 1. color-scheme deklarieren – Pflicht für light-dark() */
+:root {
+  color-scheme: light dark;
+}
+
+/* 2. Farben mit light-dark() definieren */
+:root {
+  --text-color: light-dark(#1a1a1a, #f0f0f0);
+  --bg-color:   light-dark(#ffffff, #1a1a1a);
+  --nav-link:   light-dark(#333333, #dddddd);
+}
+
+/* 3. Fallback für Browser ohne light-dark()-Support */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text-color: #f0f0f0;
+    --bg-color:   #1a1a1a;
+    --nav-link:   #dddddd;
+  }
+}
+
+/* 4. Styles verwenden – identisch wie bisher */
+body {
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+
+.menu li a:not(.active) {
+  color: var(--nav-link);
+}
+</code>
+</WRAP>
+
+<WRAP center round tip 70%>
+Mit diesem Ansatz brauchen Sie für den systemgesteuerten Dark Mode **kein JavaScript** mehr. Der Switch aus den Schritten 1–9 kann weiterhin existieren und zusätzlich einen manuellen Override ermöglichen – das ist eine bewusste Designentscheidung.
+</WRAP>
+
+**Checkliste Bonusauftrag**
+  * ''%%color-scheme: light dark%%'' ist auf '':root'' gesetzt.
+  * ''%%light-dark()%%'' wird für mindestens Hintergrund- und Textfarbe verwendet.
+  * Die Seite reagiert automatisch auf die Systemeinstellung (kein Klick nötig).
+  * Der bestehende JavaScript-Switch funktioniert weiterhin.
