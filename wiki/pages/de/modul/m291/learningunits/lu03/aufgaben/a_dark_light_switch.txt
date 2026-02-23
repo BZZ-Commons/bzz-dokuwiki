@@ -1,0 +1,353 @@
+====== LU03 Auftrag: Light Dark Mode Switch mit JavaScript ======
+
+<WRAP center round box 80%>
+**Ziel von LU03:** Sie erweitern Ihre Landingpage um drei Dinge:
+\\
+  - Favicon verlinken
+  - Feature-Icons mit CSS Pseudo-Elementen umsetzen
+  - Light Dark Mode Switch stylen und mit JavaScript funktional machen
+</WRAP>
+
+<WRAP center round important 80%>
+**Wichtig:** Ihr Code darf sich von den Beispielen unterscheiden. Entscheidend ist, dass Ihr Ergebnis im Browser korrekt funktioniert und Ihr Code verständlich bleibt.
+</WRAP>
+
+----
+
+===== Video =====
+<WRAP center round box 80%>
+{{ :de:modul:m291:learningunits:lu03:aufgaben:m291_lu03_dark-light-switch.mp4?1040x585 | Video mit Erklärung zum Dark-Light-Mode. }}
+\\
+//Video mit Erklärung zum Dark-Light-Mode und dessen Umsetzung.//
+</WRAP>
+
+----
+
+===== Voraussetzungen =====
+  * Ihr Stand nach LU02 ist vorhanden und funktioniert im Desktop und Mobile Layout.
+
+<WRAP center round tip 70%>
+**Hilfreiche Links**
+\\
+  * MDN Favicon: [[https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/rel#icon|rel="icon"]]
+  * MDN Pseudo-Elemente: [[https://developer.mozilla.org/en-US/docs/Web/CSS/::before|::before]]
+  * MDN classList: [[https://developer.mozilla.org/en-US/docs/Web/API/Element/classList|classList]]
+  * MDN addEventListener: [[https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener|addEventListener]]
+  * MDN Checkbox change event: [[https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/change_event|change event]]
+</WRAP>
+
+----
+
+===== Schritt 1 Favicon verlinken =====
+
+**Aufgabe**
+  * Ergänzen Sie im ''<head>'' Ihrer HTML-Datei ein Favicon.
+  * Verwenden Sie dazu ein ''<link>'' Tag mit ''rel="icon"''.
+  * Achten Sie darauf, dass der Pfad zu Ihrer Datei stimmt (z.B. ''./resources/favicon.ico'').
+
+<WRAP center round box 80%>
+<code html>
+<!-- Aufgabe: Favicon im head verlinken -->
+<!-- Tipp: Prüfen Sie den Pfad im Browser-Netzwerk-Tab (Network) -->
+<link rel="icon" href="PFAD_ZUR_DATEI" />
+</code>
+</WRAP>
+
+**Checkliste**
+  * Das Icon erscheint im Browser-Tab.
+  * In DevTools → Network gibt es keinen 404 Fehler für das Favicon.
+
+----
+
+===== Schritt 2 Feature-Icons mit Pseudo-Elementen umsetzen =====
+
+Sie haben in Ihrer Info-Zeile zwei Feature-Texte, z.B. „No credit card required“. Vor jedem Text soll ein Icon erscheinen.
+
+**Aufgabe**
+  * Ergänzen Sie bei ''.icon-ok'' sinnvolle Innenabstände links, damit Platz für ein Icon entsteht.
+  * Setzen Sie ''.icon-ok'' auf ''position: relative''.
+  * Nutzen Sie ''.icon-ok::before'', um das Icon einzufügen.
+  * Positionieren Sie das Icon mit ''position: absolute'' links neben dem Text.
+
+<WRAP center round tip 70%>
+Bei Pseudo-Elementen können Sie Icons z.B. über ''content: url(...)'' einfügen. Alternativ geht auch ein Hintergrundbild. ((Beide Varianten sind erlaubt, solange das Resultat stimmt.))
+</WRAP>
+
+<WRAP center round box 80%>
+<code css>
+/* Aufgabe: Platz schaffen und Positionierung vorbereiten */
+.icon-ok {
+  /* z.B. padding-left setzen */
+  /* position: relative */
+}
+
+/* Aufgabe: Icon einfügen und positionieren */
+.icon-ok::before {
+  /* content: url("PFAD_ZUM_ICON") */
+  /* position: absolute */
+  /* left: 0; top: ... */
+}
+</code>
+</WRAP>
+
+**Checkliste**
+  * Vor beiden Feature-Texten steht ein Icon.
+  * Das Icon überlappt den Text nicht.
+  * Der Abstand wirkt im Desktop und Mobile sauber.
+
+----
+
+===== Schritt 3 Switch Styling einbauen =====
+
+Jetzt stylen Sie die Checkbox als Switch. Den folgenden Code dürfen Sie 1 zu 1 übernehmen.
+
+**Aufgabe**
+  * Fügen Sie den CSS-Block unterhalb Ihrer bestehenden Styles ein, dort wo im Template „Switch Styles“ vorgesehen sind.
+  * Kontrollieren Sie die Pfade zu den Icons im ''url(...)'' (''./resources/'').
+
+<WRAP center box round 80%>
+<code css>
+/* Following: Styles Checkbox as Switch */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 48px;
+  height: 24px;
+  cursor: pointer;
+}
+
+/* Hide the checkbox input */
+.switch input {
+  display: none;
+}
+
+/* Describe slider's look and position. */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--main-text-color-light);
+  transition: 0.4s;
+  border-radius: 20px;
+}
+
+/* Describe the white ball's location 
+        and appearance in the slider. */
+.slider:before {
+  position: absolute;
+  content: '';
+  height: 20px;
+  width: 20px;
+  left: 2px;
+  bottom: 2px;
+  background: var(--main-text-color-dark);
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+/* When the checkbox is checked, shift the 
+        white ball towards the right within the slider. */
+input:checked + .slider:before {
+  transform: translateX(24px);
+}
+
+.switch-icons {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background:
+    4px / 16px no-repeat url('./resources/Moon_fill.svg'),
+    28px / 16px no-repeat url('./resources/Sun_fill.svg');
+}
+
+/* Modify the icons once the checkbox has been selected. */
+input:checked ~ .switch-icons {
+  background:
+    4px / 16px no-repeat url('./resources/Moon_fill_light.svg'),
+    28px / 16px no-repeat url('./resources/Sun_fill_light.svg');
+}
+</code>
+</WRAP>
+
+**Checkliste**
+  * Der Switch sieht aus wie ein Schalter (Slider + Kreis + Icons).
+  * Beim Anklicken bewegt sich der Kreis (Animation).
+  * Wenn Icons nicht erscheinen: Pfade in ''url(...)'' prüfen.
+
+----
+
+===== Schritt 4 Dark Mode Klasse vorbereiten =====
+
+Sie steuern den Dark Mode über eine Klasse auf dem ''<html>'' Element.
+
+**Aufgabe**
+  * Definieren Sie eine Klasse ''.theme-dark'' (z.B. fürs Farbschema).
+  * Schreiben Sie CSS-Regeln, die nur gelten, wenn ''html'' diese Klasse hat.
+  * Mindestens sollen sich ändern:
+    - Hintergrundfarbe
+    - Textfarbe
+    - Navigation-Linkfarben (nicht-active)
+    - optional: aktive Linkfarbe
+
+<WRAP center round tip 70%>
+Schreiben Sie die Regeln so, dass Sie **nicht** überall neue Farben kopieren, sondern Ihre Variablen verwenden. ((So bleibt es wartbar.))
+</WRAP>
+
+<WRAP center box round 80%>
+<code css>
+/* Aufgabe: Klasse definieren */
+.theme-dark {
+  /* optional: color-scheme: dark; */
+}
+
+/* Aufgabe: Wenn html theme-dark hat, Farben umstellen */
+html.theme-dark body {
+  /* background-color: var(--...-dark); */
+  /* color: var(--...-dark); */
+}
+
+/* Aufgabe: Navigation Links im Dark Mode lesbar machen */
+html.theme-dark .menu li a:not(.active) {
+  /* color: var(--...-dark); */
+}
+</code>
+</WRAP>
+
+**Checkliste**
+  * Wenn ''theme-dark'' am ''<html>'' steht, wird die Seite dunkel.
+  * Text bleibt gut lesbar.
+  * Navigation bleibt sichtbar.
+
+----
+
+===== Schritt 5 JavaScript Elemente aus dem DOM abrufen =====
+
+Damit Sie den Switch funktional machen können, brauchen Sie Zugriff auf:
+  * die Checkbox im Switch
+  * das Root-Element ''<html>''
+  * das Logo-''<img>''
+
+**Aufgabe**
+  * Geben Sie dem Logo eine ID, falls noch nicht vorhanden (z.B. ''id="logo"'').
+  * Holen Sie das Logo mit ''getElementById''.
+  * Holen Sie das Root-Element mit ''document.documentElement''.
+  * Holen Sie die Checkbox entweder mit einer ID oder über einen passenden Selektor.
+
+<WRAP center round tip 70%>
+Best Practice: Geben Sie der Checkbox eine ID, z.B. ''id="theme-toggle"''. Dann ist Ihr Code stabiler, sobald später weitere Inputs auf der Seite dazu kommen.
+</WRAP>
+
+<WRAP center box round 80%>
+<code javascript>
+// Aufgabe: DOM-Elemente abrufen und in Variablen speichern
+// - checkbox (Switch)
+// - html (Root-Element)
+// - logo (img)
+</code>
+</WRAP>
+
+----
+
+===== Schritt 6 Funktion zum Umschalten schreiben =====
+
+Jetzt schreiben Sie eine Funktion, die beim Umschalten drei Dinge erledigt:
+  - entscheidet anhand der Checkbox, ob Dark Mode aktiv sein soll
+  - fügt die Klasse ''theme-dark'' hinzu oder entfernt sie
+  - tauscht das Logo aus, indem Sie ''logo.src'' anpassen
+
+<WRAP center round tip 70%>
+Nutzen Sie für die Klasse ''classList.add'' und ''classList.remove''. Sie können auch ''classList.toggle'' verwenden, wenn Sie es sauber begründen können. ((Alle Varianten sind erlaubt.))
+</WRAP>
+
+<WRAP center box round 80%>
+<code javascript>
+// Aufgabe: Funktion toggleTheme()
+// - wenn checkbox aktiv: theme-dark setzen oder entfernen (je nach Logik)
+// - Logo wechseln: logo.src auf light oder dark setzen
+</code>
+</WRAP>
+
+**Checkliste**
+  * Dark Mode verändert Background und Textfarben.
+  * Logo wechselt passend.
+  * Keine Fehlermeldung in der Console.
+
+----
+
+===== Schritt 7 Event Listener für den Switch =====
+
+**Aufgabe**
+  * Setzen Sie auf die Checkbox einen Event Listener.
+  * Reagieren Sie auf das Ereignis ''change'' (empfohlen für Checkbox). ((click funktioniert auch, change ist aber semantisch passender für Form-Inputs.))
+  * Rufen Sie in der Callback-Funktion Ihre Toggle-Funktion auf.
+
+<WRAP center box round 80%>
+<code javascript>
+// Aufgabe: checkbox.addEventListener("change", ...)
+// In der Callback-Funktion: toggleTheme() aufrufen
+</code>
+</WRAP>
+
+----
+
+===== Schritt 8 Initialzustand beim Laden prüfen =====
+
+Wenn die Seite neu lädt, soll der Zustand korrekt sein:
+  * Switch-Position passt zum Theme
+  * Logo passt zum Theme
+  * Farben passen zum Theme
+
+**Aufgabe**
+  * Rufen Sie Ihre Toggle-Funktion einmal beim Laden auf, oder schreiben Sie eine kleine Initial-Funktion.
+  * Test: Seite neu laden, ohne zu klicken.
+
+<WRAP center box round 80%>
+<code javascript>
+// Aufgabe: Initialzustand setzen
+// - toggleTheme() beim Laden einmal ausführen
+</code>
+</WRAP>
+
+----
+
+===== Schritt 9 Testen und Debugging =====
+
+==== Testfälle ====
+  * Switch klicken: Dark Mode ein, dann wieder aus
+  * Seite neu laden: Zustand bleibt konsistent (keine „falsche“ Startfarbe)
+  * Mobile Ansicht: Layout bleibt korrekt, Switch ist je nach Ihrem CSS sichtbar oder ausgeblendet
+
+==== Debugging Tipps ====
+  * DevTools Console: Fehlermeldungen lesen
+  * Prüfen, ob Selektoren ein Element finden ((Wenn eine Variable ''null'' ist, stimmt meist der Selektor oder die ID nicht.))
+  * Pfade zu Bildern prüfen (Logo, Icons, Favicon)
+
+<WRAP center round tip 70%>
+Wenn etwas nicht geht, geben Sie testweise Ausgaben in die Console aus, z.B. ob ''checkbox.checked'' true oder false ist.
+</WRAP>
+
+----
+
+===== Abgabe LU03 =====
+
+<WRAP center round box 80%>
+**Zwischenabgabe**
+\\
+  * Commit-Message Vorschlag: ''LU03: favicon icons switch darkmode js''
+  * Zeigen Sie kurz:
+    - Favicon sichtbar
+    - Icons vor den Features
+    - Switch animiert und wechselt Theme
+    - Logo wechselt passend
+</WRAP>
+
+----
+
+===== Stretch Goals =====
+  * Theme speichern mit localStorage, sodass es nach dem Neuladen gleich bleibt. ((Kommt in einer späteren Einheit als Bonus wieder.))
+  * Dark Mode auch für weitere Elemente konsequent umsetzen (z.B. Button-Text, Linkfarben, evtl. zusätzliche Variablen).
