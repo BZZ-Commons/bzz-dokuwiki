@@ -1,0 +1,12 @@
+==== LU03.A01 Linter ====
+
+Erfassen Sie hierfür einen Task, sofern noch keiner existiert. Verweisen Sie in allen Commit-Messages dieser Aufgabe auf den entsprechenden Task. 
+
+''.github/workflows/frontend_job.yml'' mit folgendem Inhalt:
+
+<code yml>
+...
+</code>
+
+Checken Sie die Pipeline ein und pushen Sie Ihren Commit.
+
