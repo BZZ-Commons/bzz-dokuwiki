@@ -1,16 +1,94 @@
 ====== LU03b - Linter & Formatter Best Practices ======
 
-==== Übersicht ====
+==== Checkliste ====
 
-''TODO'' (Inhalt wird gemeinsam in der Klasse erarbeitet.)
+  * **Encoding**: Unbedingt UTF-8!
+  * **Spacing/Indentation**: Spaces anstatt Tabs, Anzahl Spaces (2 oder 4) pro Sprache festlegen: Z.B. 2 bei JS/TS, 4 bei Java,Python
+  * **Anführungszeichen/Quotes**: Double/Single Quotes pro Sprache festlegen: Black (Python-Formatter) bevorzugt Double Quotes, Frontend-Community tendenziell eher Single Quotes
+  * **Zeilenlänge**: Zeilenlänge (häufig 80, 100 oder 120) zumindest pro Sprache festlegen. Standard bei ESLint ist 80, bei Black (Python-Formatter) 88, bei PEP8 (Python-Formatter) 79
+  * **Ignorierter Code**: Unbedingt Dependencies (.venv, node_modules, etc.) und generierter Code ignorieren
 
-Stichwörter:
-  * Encoding
-  * Einrückungen (Tab/Spaces, Anzahl)
-  * Anführungszeichen (Quotes)
+==== Beispiele Overall ====
+''.editorconfig'' (wird von Prettier native unterstützt)
+<code ini>
+# Global settings (applied to all files unless overridden)
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+indent_style = space
+indent_size = 4
+trim_trailing_whitespace = true
+
+# Python files
+[*.py]
+indent_size = 4
+
+# JavaScript/TypeScript files
+[*.{js,ts,jsx,tsx,cjs,mjs}]
+indent_size = 2
+
+# HTML/CSS
+[*.{html,css,scss}]
+indent_size = 2
+
+# JSON / YAML / config
+[*.{json,yml,yaml}]
+indent_size = 2
+</code>
+
+==== Beispiele Frontend ====
+''prettier.config.js'' 
+<code javascript>
+export default {
+  semi: true,
+  singleQuote: true,
+  trailingComma: 'all',
+  printWidth: 100,
+};
+</code>
+
+''eslint.config.js''
+Für die ganze Konfigurationsdatei inklusive TSLint: https://github.com/AlexanderPeter/cicd/blob/develop/frontend/eslint.config.js
+<code javascript>
+...
+ignores: ['node_modules/**', 'dist/**'],
+...
+quotes: ['error', 'single'],
+...
+prettierConfig.default,
+...
+</code>
 
 
+==== Beispiele Python ====
+''pyproject.toml''
+<code ini>
+[tool.black]
+line-length = 100
+target-version = ['py311']
+skip-string-normalization = true
+extend-exclude = '''
+/(
+    generated
+)/
+'''
+</code>
 
+''.pylintrc'' 
+<code ini>
+[MASTER]
+ignore=.venv,generated
+
+[MESSAGES CONTROL]
+
+# Disable the message, report, category or checker with the given id(s).
+disable=
+      invalid-name, # C0103
+      C0114,  # Missing module docstring
+      C0115,  # Missing class docstring
+      C0116,  # Missing function or method docstring
+</code>
 
 
 
