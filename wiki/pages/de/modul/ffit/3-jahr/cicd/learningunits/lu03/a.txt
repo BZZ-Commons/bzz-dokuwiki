@@ -1,8 +1,26 @@
-====== LU03a - Formatter ======
+====== LU03a - Agile Meetings ======
 
-==== Übersicht ====
-Encoding, Einrückungen
+In der Agilen Software-Entwicklung gibt es diverse Meetings. Im Folgenden werden die wichtigsten kurz zusammengefasst.
 
-Best Practises
+==== Daily Standup ====
 
-''TODO''
+Das Daily Standup (oft auch einfach kurz "Daily") ist ein kurzer (idealerweise maximal 15 min) Austausch mit dem Ziel, dass die Teilnehmer einen groben Überblick über die Lage haben und bei Problemen Unterstützung bekommen kann.
+In der Regel erzählt jeder Teilnehmer (kurz und knapp)
+  * Was habe ich gestern erreicht / erledigt?
+  * Woran arbeite ich heute?
+  * Wobei brauche ich Unterstützung? Was hat mich bei der Arbeit blockiert? (Impediments)
+
+==== Sprint Planning ====
+
+Bei diesem Meeting wird geplant, welche Stories im nächsten Stories umgesetzt werden sollen.
+
+==== Sprint Review ====
+
+Beim Sprint Review werden die Ergebnisse des Sprint gezeigt und besprochen. 
+Dieses Meeting kann bei Bedarf auch für Stakeholdern ausserhalb des Teams geöffnet werden. 
+
+Das Ende eines Sprint ist oft auch ein guter Zeitpunkt, um eine neue Version der Software zu releasen, die dann von Stakeholdern getestet werden kann.
+
+==== Retrospektive  ====
+
+Dieses Meeting dienst hautsächlich dazu, zu reflektieren, was gut beziehungsweise schlecht gelaufen ist und wie man sich als Team verbessern könnte.
