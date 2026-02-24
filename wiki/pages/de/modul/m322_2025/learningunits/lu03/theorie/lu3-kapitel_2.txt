@@ -1,22 +1,32 @@
 ==== 03 Persona validieren ====
-Im Scoping-Prozess haben Sie sich auf eine Persona festgelegt, die mit der Anwendung interagiert. Wie weit diese Annahmen der Tatsache entsprechen, muss für den weiteren Verlauf des Projektes zwingend validiert (überprüft) werden.\\
-Um Personas zu erstellen, finden sich im Web diverse Hilfsmittel, so z.B. [[https://www.canva.com/templates/s/user-persona/|Canva]] oder [[https://www.figma.com/community/search?resource_type=mixed&sort_by=relevancy&query=user+persona&editor_type=all&price=all&creators=all|Figma]].
-\\
-Für den UX-Prozess fokussieren wir klar auf Fragen rund um die Anwendung, die zu erarbeiten ist. Darum sind Themen wie
-   * Aufgaben
-   * Bedürfnisse
-   * Probleme
-   * Nutzungskontext (in welcher Situation wird das Gerät genutzt?)
-im Kontext der Anwendung von hohem Interesse. Daneben soll auch klar sein, in welchem Umfeld sich die Persona bewegt, welche Fähigkeiten sie hat bzw. nutzt im Umfeld von Computer, Smartphone usw.\\
-Um an all diese Informationen zu gelangen, sind Interviews mit potenziellen Nutzerinnen eine probates Werkzeug.\\
+Im Scoping-Prozess haben Sie sich auf eine Persona festgelegt, die mit der Anwendung interagiert. Wie weit diese Annahmen tatsächlich der realen Zielgruppe entsprechen, muss für den weiteren Verlauf des Projektes zwingend validiert (überprüft) werden. Eine Persona ist erst dann valide, wenn sie nicht nur auf Annahmen, sondern auf strukturiert erhobenen Nutzerdaten basiert.\\
+===Interviews als Validierungswerkzeug===
+Interviews gehören zu den zentralen Methoden der qualitativen UX-Forschung. Sie ermöglichen es, subjektive Sichtweisen, Erwartungen und Nutzungserfahrungen direkt aus erster Hand zu erfassen.\\ 
+
+Im UX-Prozess konzentrieren sich Interviews gezielt auf die zukünftige oder bestehende Anwendung. Im Mittelpunkt stehen dabei insbesondere:
+   * Aufgaben, die Nutzer:innen erledigen möchten
+   * Bedürfnisse und Ziele, die sie mit der Anwendung verfolgen
+   * Probleme und Herausforderungen, die dabei auftreten\\ 
+
+Ebenso wichtig ist der Nutzungskontext: 
+   * In welcher Situation wird die Anwendung verwendet? 
+   * In welchem Umfeld bewegt sich die Persona? 
+   * Welche technischen Voraussetzungen und digitalen Kompetenzen bringt sie mit (z.B. Geräte, Programme, etc.)?
+
+Durch diese kontextbezogene Betrachtung entsteht ein ganzheitliches Bild der Nutzerinnen und Nutzer. Dieses bildet die Grundlage für fundierte Anforderungen und eine benutzerzentrierte Gestaltung der Anwendung.\\
 ===Interview durchführen===
 Ein Interview muss gut vorbereitet sein, damit vergleichbare Ergebnisse gesammelt werden können. Die Fragen müssen zielgerichtet sein und vorteilhafte folgende Merkmale beachten:
-   * Offene Fragen stellen.\\ Kann eine Frage nur mit ja oder nein beantwortet werden, ergeben sich keine neuen Aspekte im Umgang mit der Anwendung. Es enstehen wo möglich blinde Flecken. 
-   * Fragen sollen keine Synthese verlangen.\\ Die befragte Person soll keine Schlussfolgerungen ziehen müssen, um eine Frage zu beantworten.
-   * Nicht nach Fachbregriffen fragen.\\ Die Frage nach z.B. "Benutzerfreundlichkeit" kann von der befragten Person kaum oder nicht beantwortet werden, weil sie nicht zwingend das nötige know how hat, eine Beurteilung zu machen.
+   * Offene und narrative Fragen stellen („Können Sie Ihre letzte Erfahrung mit dem Absenzentool beschreiben?“).\\ Kann eine Frage nur mit ja oder nein beantwortet werden, ergeben sich keine neuen Aspekte im Umgang mit der Anwendung, da sie nur oberflächliche Antworten provozieren. Es enstehen wo möglich blinde Flecken. 
+   * Keine Suggestivfragen stellen („Sie fanden die Funktion also eher schlecht?“)\\ Statt offen Informationen zu sammeln, wird durch Wortwahl, Tonfall oder implizite Bewertung eine Antwort nahegelegt und lenken die befragte Person in eine bestimmte Richtung. Dadurch entstehen verzerrte Ergebnisse, die nicht mehr die tatsächliche Meinung oder Erfahrung der Nutzer:innen widerspiegeln.
+   * Neutrale Fragen stellen und keine Synthese verlangen. („Wie haben Sie die Funktion erlebt? Wie sind Sie mit der Navigation zurechtgekommen? Was ist Ihnen positiv oder negativ aufgefallen?“)\\ Die befragte Person soll keine Schlussfolgerungen ziehen müssen, um eine Frage zu beantworten. Je neutraler die Frage, desto zuverlässiger die Erkenntnisse. 
    * Nicht nach Lösungen fragen.\\ Das Erarbeiten von Lösungen ist Sache der Entwicklungsteams und nicht der Anwender. Es könnten so Erwartungshaltungen geweckt werden, die sich nicht umsetzen lassen.
    * Folgefragen gut einplanen.\\ Fragen sollen top-down auf einanderabgestimmt sein. Zuerst werden generelle Aspekte gefragt, um dann auf spezifische Punkte einzugehen.
 
+===Auswertung qualitativer Interviewdaten===
+Nach der Durchführung beginnt die systematische Analyse. Häufig werden die Interviews transkribiert (also verschriftlicht) und anschliessend codiert. Das heisst, bestimmte Aussagen werden thematisch markiert und in Kategorien eingeordnet.\\
 
+Ein Beispiel: In Interviews mit Nutzer:innen einer Mobilitäts-App taucht mehrfach der Wunsch nach besserer Haltestellenanzeige auf. Diese Aussagen lassen sich unter dem Code „Informationsbedürfnis unterwegs“ zusammenfassen und bilden eine evidenzbasierte Grundlage für Designentscheidungen.\\
 ----
-[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) René Probst
+Ressourcen: https://www.softwareevaluation.de/de/methoden/interviews-im-ux-kontext/ \\
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) René Probst / Elena Mastrandrea
