@@ -3,7 +3,7 @@
 ===== Rahmenbedingungen =====
   * Sozialform: Einzelarbeit
   * Hilfsmittel: Openbooks
-  * Zeit: 45 Minuten
+  * Zeit: 70 Minuten
   * Erwartetes Resultat: JavaScript-File, dass die nachfolgend genannten Taschenrechner-Operationen durchführen kann.
     - plus
     - minus
@@ -103,8 +103,9 @@ Der Rechner soll die nachfolgenden Funktionen realisieren:
 
   // Autor: 
   // Datum: 
-  // Beschreibung: zu einer zahl soll die Pozent gebildet werden. Dies erledigen wir in einer Schleife mit dem exponenten im Schleifenkopf, wobei die basis mit sich selbst entsprechend oft multipliziert wird. 
+  // Beschreibung: zu einer zahl soll die Pozent gebildet werden. Dies erledigen wir in einer Schleife (for oder while) mit dem Exponenten im Schleifenkopf, wobei die Basis mit sich selbst entsprechend oft multipliziert wird. 
   // Hinweis: Potenz und Exponent sind nicht vertauschbar
+  // Advanced: Erledigen Sie die Aufgaben in 2 Versionen, mit einer for- und mit einer while-Schleife.
   function potenz( basis, exponent) {
     ....
     return produkt
