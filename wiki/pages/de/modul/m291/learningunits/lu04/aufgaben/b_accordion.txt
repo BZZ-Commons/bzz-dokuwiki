@@ -1,0 +1,85 @@
+====== LU04b – FAQ Accordion ======
+
+===== FAQ Accordion Starter Kit =====
+
+Laden Sie hier das Figma-File, die Start-HTML und das Readme herunter:
+
+<WRAP center round download 60%>
+{{ :de:modul:m291:learningunits:lu04:aufgaben:faq-accordion_m291.zip | Accordion Starter}}
+</WRAP>
+
+
+===== Das FAQ Accordion bauen – Referenz-Code =====
+
+==== HTML-Struktur ====
+<WRAP center round box 80%>
+<code html>
+<div class="accordion">
+
+  <div class="accordion-item">
+    <button class="accordion-btn" aria-expanded="false">
+      Frage 1
+    </button>
+    <div class="panel">
+      Antwort 1...
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <button class="accordion-btn" aria-expanded="false">
+      Frage 2
+    </button>
+    <div class="panel">
+      Antwort 2...
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <button class="accordion-btn" aria-expanded="false">
+      Frage 3
+    </button>
+    <div class="panel">
+      Antwort 3...
+    </div>
+  </div>
+  
+  <div class="accordion-item">
+    <button class="accordion-btn" aria-expanded="false">
+      Frage 4
+    </button>
+    <div class="panel">
+      Antwort 4...
+    </div>
+  </div>
+
+</div>
+</code>
+</WRAP>
+
+===== Ihre Aufgabe =====
+
+Bauen Sie Ihr eigenes FAQ Accordion. Ziel für heute: HTML-Struktur und CSS.
+
+**Schritt 1 – Neues Projekt anlegen**
+
+Erstellen Sie den Ordner ''faq-accordion/'' mit folgenden Dateien:
+  * ''index.html''
+  * ''style.css''
+  * ''script.js''
+
+Verlinken Sie CSS und JS in Ihrer HTML-Datei (''<link>'' und ''<script src="...">'').
+
+**Schritt 2 – HTML-Struktur bauen**
+
+Erstellen Sie die 4 FAQ-Items mit der Struktur aus dem Abschnitt oben. Denken Sie an ''aria-expanded="false"'' an jedem Button.
+
+**Schritt 3 – CSS stylen**
+
+  * Panel standardmässig mit ''display: none'' ausblenden
+  * Klasse ''.open'' mit ''display: block'' definieren
+  * Button gestalten: ''width: 100%'', ''padding'', ''border'', ''cursor: pointer''
+
+
+<WRAP center round 80% important>
+**Kein AI-generierter Code!** Schreiben Sie Ihren Code selbst. Sie können diese Seite als Referenz nutzen und Teile übernehmen – aber tippen Sie selbst und verstehen Sie, was Sie schreiben. Das Ziel ist, dass Sie das Muster verinnerlichen.
+</WRAP>

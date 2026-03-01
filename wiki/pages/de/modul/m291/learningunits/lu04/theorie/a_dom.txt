@@ -1,0 +1,103 @@
+====== LU04a – Das DOM (Document Object Model) ======
+
+
+===== Was ist das DOM? =====
+
+Das DOM ist die Art und Weise, wie JavaScript Ihr HTML-Dokument «sieht». Es repräsentiert die gesamte Seite als einen **Baum aus Objekten**. Jedes HTML-Element wird zu einem Objekt, das Sie lesen und verändern können.
+
+> **Einfach erklärt:** HTML schreiben Sie als Text. Das DOM ist die «lebendige» Version davon – eine Datenstruktur, mit der JavaScript arbeiten kann. Ändern Sie etwas im DOM, sehen Sie es sofort im Browser.
+
+==== Der DOM-Baum ====
+
+Jede Verschachtelung in HTML wird im DOM zu einer Eltern-Kind-Beziehung:
+<WRAP round center box 60%>
+<code>
+document
+└── <html>
+    ├── <head>
+    │   └── <title> "Meine Seite"
+    └── <body>
+        ├── <header>
+        │   └── <nav>
+        └── <main>
+            └── <section>
+                └── <p> "Hallo Welt"
+</code>
+</WRAP>
+
+===== Elemente auswählen =====
+
+Um ein Element zu verändern, müssen Sie es zuerst «abholen»:
+
+<WRAP round center box 80%>
+^ Methode ^ Beschreibung ^ Hinweis ^
+| ''querySelector()'' | Erstes Element, das dem CSS-Selektor entspricht | Flexibelste Methode |
+| ''querySelectorAll()'' | Alle passenden Elemente als NodeList | Für mehrere Elemente mit Schleife |
+| ''getElementById()'' | Element mit bestimmter ID | Kein ''#'' im Parameter nötig |
+| ''getElementsByClassName()'' | Alle Elemente einer Klasse | Kein ''.'' im Parameter nötig |
+
+<code javascript>
+// Ein einzelnes Element holen
+const btn = document.querySelector('#mein-button');
+const logo = document.getElementById('logo');
+
+// Mehrere Elemente ansprechen
+const allePanels = document.querySelectorAll('.panel');
+
+// Mit NodeList arbeiten (forEach)
+allePanels.forEach(panel => {
+  panel.classList.add('hidden');
+});
+</code>
+</WRAP>
+
+===== Elemente verändern =====
+
+==== classList ====
+
+Die sauberste Methode für Style-Änderungen – Sie definieren den Stil im CSS und schalten die Klasse per JS:
+<WRAP round center box 60%>
+<code javascript>
+const panel = document.querySelector('.panel');
+
+panel.classList.add('open');      // Klasse hinzufügen
+panel.classList.remove('open');   // Klasse entfernen
+panel.classList.toggle('open');   // Umschalten (add ↔ remove)
+panel.classList.contains('open'); // true oder false zurückgeben
+</code>
+</WRAP>
+
+==== Attribute setzen und lesen ====
+<WRAP round center box 60%>
+<code javascript>
+// Attribut setzen
+btn.setAttribute('aria-expanded', 'true');
+
+// Attribut lesen
+btn.getAttribute('aria-expanded'); // → 'true'
+</code>
+</WRAP>
+
+==== Elemente ein- und ausblenden ====
+
+Die eleganteste Methode: den Zustand im CSS definieren und per JS die Klasse togglen.
+<WRAP round center box 60%>
+<code css>
+/* CSS: standardmässig versteckt */
+.panel {
+  display: none;
+}
+
+/* CSS: sichtbar wenn Klasse 'open' gesetzt */
+.panel.open {
+  display: block;
+}
+</code>
+
+<code javascript>
+// JS: Klasse togglen
+const panel = document.querySelector('.panel');
+panel.classList.toggle('open'); // ein ↔ aus
+</code>
+
+</WRAP>
