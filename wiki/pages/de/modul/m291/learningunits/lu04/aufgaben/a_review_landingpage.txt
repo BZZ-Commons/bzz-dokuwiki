@@ -1,0 +1,155 @@
+====== LU04 – Peer Review: Landingpage Alarado ======
+
+**Modul:** M291 Web-Frontend \\ 
+**Block:** 4 \\ 
+**Zeit:** ca. 30 Minuten \\ 
+**Abgabe über:** Moodle Peer Assessment
+
+In diesem Teil bewerten Sie die Arbeit einer Mitschülerin oder eines Mitschülers anhand einer Bewertungsmatrix – und werden selbst bewertet. Sowohl Ihre Abgabe als auch Ihre Bewertung fliessen in die Modulnote (20%-Teil) ein.
+
+> **Noch nicht fertig?** Sie haben Zeit bis zur Pause, um Ihr Projekt zu vervollständigen und hochzuladen. Danach sofort mit dem Review starten.
+
+
+
+===== 1. Ihre Abgabe hochladen =====
+
+==== Schritt 1 – Projektordner prüfen ====
+
+Stellen Sie sicher, dass Ihr Ordner folgende Struktur enthält:
+<WRAP box round center 60%>
+<code>
+alarado/
+├── index.html
+├── (optional styles.css / script.js)
+└── resources/
+    ├── logo-light.svg
+    ├── logo-dark.svg
+    ├── hero-image-simple-homepage.png
+    └── ... (alle weiteren Bilder/SVGs)
+</code>
+</WRAP>
+
+Öffnen Sie ''index.html'' im Browser und prüfen Sie kurz: Sieht alles korrekt aus?
+
+==== Schritt 2 – ZIP erstellen ====
+
+Komprimieren Sie den gesamten Projektordner als ZIP-Datei. Benennen Sie die Datei:
+
+//vorname_nachname_alarado.zip//
+
+**Beispiel:** ''anna_muster_alarado.zip''
+
+==== Schritt 3 – Upload auf Moodle ====
+
+Öffnen Sie Moodle → Modul 291 → LU04 → Aufgabe **«Abgabe Alarado Landingpage»** und laden Sie Ihr ZIP hoch.
+
+
+===== 2. Peer Review durchführen =====
+
+==== Schritt 4 – Zuweisung abwarten ====
+
+Moodle weist Ihnen automatisch die Arbeit einer anderen Person zu. Sie sehen dies in der Peer-Assessment-Aufgabe, sobald Sie Ihre eigene Abgabe eingereicht haben.
+
+==== Schritt 5 – ZIP herunterladen & öffnen ====
+
+  - ZIP auf Ihren Computer herunterladen
+  - ZIP entpacken
+  - ''index.html'' direkt im Browser öffnen
+
+==== Schritt 6 – Review durchführen ====
+
+Gehen Sie die Bewertungsmatrix Kriterium für Kriterium durch. Öffnen Sie dazu auch die Browser-DevTools (''F12'' oder ''Cmd+Option+I''), um Farben und Schriftgrössen präzise zu prüfen. Vergleichen Sie die Farben, Schriftgrössen und Schriftweights mit den Angeben im Figma-File.
+
+==== Schritt 7 – Feedback & Note eintragen ====
+
+Tragen Sie Ihre Punktzahl und Ihren Feedback-Text direkt in Moodle ein. Nutzen Sie die Vorlage weiter unten.
+
+===== 3. Bewertungsmatrix =====
+<WRAP box round center 80%>
+Prüfen Sie jedes Kriterium sorgfältig. **Total: 16 Punkte.**
+
+^ Kriterium ^ Was wird geprüft? ^ Max. Punkte ^
+| **Design-Treue** | Entspricht das Layout dem Figma-Design? Sind alle Bereiche vorhanden und korrekt positioniert: Header (Logo, Nav, Toggle), Hero (H3, H1, P, Buttons, Icons), Hero-Bild rechts? | 0–3 |
+| **Farben** | Stimmen die Hex-Werte der verwendeten Farben? ''#223344'' (Text) · ''#f2f9fe'' (Hintergrund hell) · ''#263fa9'' (Akzent) · ''#111729'' (Hintergrund dunkel). Tipp: Im DevTools Elements-Panel nachschauen. | 0–2 |
+| **Typografie** | Stimmen ''font-size'' und ''font-weight''? h1: 4rem / 700 · h3: 0.875rem / 600 · p: 1.125rem / 500 · Nav-Links: 0.875rem / 600 | 0–2 |
+| **rem statt px** | Sind **alle** ''font-size''-Angaben in ''rem'' (nicht ''px'')? Test: Im Browser Einstellungen → Schriftgrösse erhöhen. Skalieren alle Texte mit? | 0–2 |
+| **Responsiveness** | Funktioniert der Breakpoint bei ''1024px''? Mobile: Bild oben / Text unten, Hamburger-Icon sichtbar, Navigation ausgeblendet, Toggle ausgeblendet. Tipp: DevTools → Device Toolbar. | 0–3 |
+| **Dark/Light Mode** | Funktioniert der Toggle-Switch? Wechseln Hintergrundfarbe, Textfarbe und Logo (light ↔ dark) korrekt? Wird der Startzustand beim Laden korrekt gesetzt? | 0–2 |
+| **Code-Qualität** | Werden CSS-Variablen (''%%:root%%'') für Farben, Schriftgrössen und Abstände eingesetzt? Ist der Code lesbar und strukturiert? | 0–2 |
+| **TOTAL** | | **16** |
+
+</WRAP>
+
+===== 4. Was bedeuten die Punkte? =====
+<WRAP box round center 60%>
+Bei Kriterien mit 0–3 Punkten gilt:
+
+^ Punkte ^ Bedeutung ^
+| 0 | Nicht vorhanden oder völlig falsch umgesetzt |
+| 1 | Ansatz vorhanden, aber grössere Fehler |
+| 2 | Mehrheitlich korrekt, kleine Mängel |
+| 3 | Vollständig und korrekt umgesetzt |
+
+Bei Kriterien mit 0–2 Punkten: 0 = fehlt, 1 = teilweise, 2 = korrekt.
+</WRAP>
+
+==== Checkliste für eine faire Bewertung ====
+
+Bevor Sie die Note eintragen, prüfen Sie:
+
+  * Ich habe die Seite im Browser geöffnet und getestet
+  * Ich habe den Breakpoint bei 1024px mit den DevTools geprüft
+  * Ich habe die Farben mit den DevTools nachgeprüft (nicht nur optisch eingeschätzt)
+  * Ich habe die Schriftgrösse im Browser verändert und geprüft, ob rem korrekt skaliert
+  * Ich habe den Dark/Light Toggle mehrfach geklickt
+  * Mein Feedback ist konkret und begründet
+  * Ich habe **keine AI** verwendet für die Bewertung
+
+
+
+===== 5. Feedback-Vorlage =====
+
+Kopieren Sie diese Vorlage in das Moodle-Textfeld und füllen Sie sie aus:
+<WRAP box round center 80%>
+<code>
+Design-Treue (__/3):
+[Was war gut? Was fehlte oder war falsch positioniert?]
+
+Farben (__/2):
+[Stimmten die Hex-Werte? Falls nicht: Was war falsch?]
+
+Typografie (__/2):
+[Stimmten font-size und font-weight für alle Textelemente?]
+
+rem statt px (__/2):
+[Wurden rem verwendet? Skaliert der Text beim Vergrössern?]
+
+Responsiveness (__/3):
+[Funktioniert der Breakpoint? Ist die Mobile-Ansicht korrekt?]
+
+Dark/Light Toggle (__/2):
+[Funktioniert der Toggle? Wechselt Logo und Farben korrekt?]
+
+Code-Qualität (__/2):
+[CSS-Variablen vorhanden? Lesbarkeit und Struktur?]
+
+TOTAL: __ / 16
+
+Allgemeines Feedback:
+[Was war besonders stark? Was würden Sie als erstes verbessern?]
+</code>
+</WRAP>
+
+> **Gutes Feedback ist konkret.** \\
+> Statt //«Die Farben sind falsch»// → //«Der Hintergrund hat den Wert #e0e8f0 statt #f2f9fe. Im Dark Mode fehlt die Hintergrundfarbe #111729.»//
+
+
+===== 6. Wichtige Regeln =====
+
+<WRAP center round tip 80%>
+  * **Kein AI für die Bewertung!** Ihr Feedback muss aus eigener Analyse stammen. Die Lehrperson prüft die Bewertungen nach.
+  * **Fair und sachlich bleiben.** Beurteilen Sie die Arbeit, nicht die Person. Seien Sie kritisch, aber konstruktiv. Übermässig tiefe oder hohe Noten werden von der Lehrperson korrigiert.
+  * **Lehrperson-Review.** Die Lehrperson schaut sich die Reviews durch. Noten werden angepasst, wenn sie auf falschen Annahmen basieren oder offensichtlich zu hoch/tief sind.
+</WRAP>
+
+
