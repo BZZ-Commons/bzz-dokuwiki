@@ -33,9 +33,7 @@ alarado/
 
 Komprimieren Sie den gesamten Projektordner als ZIP-Datei. Benennen Sie die Datei:
 
-//vorname_nachname_alarado.zip//
-
-**Beispiel:** ''anna_muster_alarado.zip''
+//alarado.zip//
 
 ==== Schritt 3 – Upload auf Moodle ====
 
@@ -107,7 +105,7 @@ Bevor Sie die Note eintragen, prüfen Sie:
 
 ===== Feedback-Vorlage =====
 
-Kopieren Sie diese Vorlage in das Moodle-Textfeld und füllen Sie sie aus:
+Vorlage für die Bewertung der einzelnen Kriterien.
 <WRAP box round center 80%>
 <code>
 Design-Treue (__/3):
@@ -134,7 +132,7 @@ Code-Qualität (__/2):
 TOTAL: __ / 16
 
 Allgemeines Feedback:
-[Was war besonders stark? Was würden Sie als erstes verbessern?]
+[Was war besonders gut? Was würden Sie als erstes verbessern?]
 </code>
 </WRAP>
 
