@@ -1,0 +1,8 @@
+==== LU04.A02 SonarQube Issue beheben ====
+
+  - Loggen Sie sich gemäss Teams-Nachricht auf der SonarQube-Instanz ein.
+  - Schauen Sie sich die Issues Ihres Projektes an.
+  - Wählen Sie mindestens 1 Issue aus und reparieren Sie dieses in ihrem Code.
+  - Committen und Pushen Sie Ihre Reparatur.
+  - Führen Sie die Jenkins-Pipeline nochmals aus.
+  - Schauen Sie das Ergebnis auf SonarQube an. Ist das Issue nun als erledigt markiert?
