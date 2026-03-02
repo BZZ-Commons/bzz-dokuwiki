@@ -1,0 +1,204 @@
+
+====== LU01.A04 - Pivot Training ======
+
+<WRAP center round download 60%>
+**Ziel:** Du kannst verschiedene PivotTables aus einer Datenliste erstellen.
+</WRAP>
+
+===== Material =====
+  * Übungsdatei:  {{ :modul:mathe:ma4:thema:statistik:aufgaben:pivot_training.xlsx | Trainings-Datei}}
+
+===== Auftrag =====
+Öffne die Trainings-Datei und erstelle die folgenden PivotTables.  
+**Wichtig:** Jede Aufgabe bekommt ein **eigenes Pivot-Sheet** (z.B. „Sales By Region“, „Count Transactions By Month“, …) und eine saubere Beschriftung.
+
+<WRAP round box 80%>
+**Allgemeine Regeln (für alle Aufgaben):**
+  * Datenbereich markieren → **Einfügen → PivotTable**
+  * Feldzuordnung immer prüfen: **Zeilen / Spalten / Werte / Filter**
+  * Werte richtig einstellen (Summe vs. Anzahl vs. Durchschnitt)
+  * Formatierung passend wählen (Währung, ganze Zahlen, Prozent mit 1 Dezimalstelle)
+</WRAP>
+
+===== Aufgaben =====
+**Beginner**\\
+1. Summarize Sales by Region - Create a pivot showing total sales per region.\\
+2. Count Transactions by Month - Group by month and count the number of transactions.\\
+3. Total Expenses by Category - Show total spend by expense category.\\
+4. Filter by a Specific Value - Show sales by product for only the 'West' region.\\
+\\
+**Intermediate**\\
+5. Trial Balance Summarization - Show net balances for each account.\\
+6. Group Accounts by Statement Type - Show totals by Statement type.\\
+7. Year-over-Year Revenue Comparison - Compare each year's revenue side by side.\\
+8. Expense Breakdown by Department - Department in rows, Expense Category in columns.\\
+\\
+**Advanced**\\
+9. Multi-Level P&L Statement - Statement → Line Item hierarchy, grouped by month.\\
+10. Balance Sheet as of Month-End - Show as-of balances for each month-end.\\
+11. Retained Earnings Calculation - Display retained earnings in a pivot.\\
+12. Margin Analysis by Product - Calculate Gross Margin % per product.\\
+13. Variance Analysis - Show variance amount and variance % in a pivot table.\\
+\\
+**Expert**\\
+14. Custom Sorting of P&L Lines - Apply a custom order in the pivot.\\
+15. Multi-Dimensional Cube Simulation - Slice and dice data by different combinations of dimensions.\\
+
+===== Abgabe =====
+  * Speichere die Datei als: **pivot_training_NACHNAME_Vorname.xlsx**
+  * Laden Sie das File auf Moodle hoch
+
+
+<WRAP center round info 80%>
+===== Begriffe (Erklärungen) =====
+
+^ Begriff (EN) ^ Deutsch (kurz) ^ Bedeutung im Excel / Pivot ^
+| **P&L** (Profit & Loss) | Erfolgsrechnung / GuV | Bericht über **Ertrag und Aufwand** über eine Periode (zeigt Gewinn/Verlust). |
+| **Balance Sheet** | Bilanz | Bericht über **Vermögen, Schulden, Eigenkapital** zu einem Stichtag (Bestand). |
+| **Revenue** | Umsatz / Erlös | Einnahmen aus Verkäufen (Ertrag). |
+| **COGS** (Cost of Goods Sold) | Wareneinsatz / Herstellkosten | Kosten, die **direkt** für verkaufte Produkte anfallen (z.B. Material/Produktion). |
+| **Gross Profit** | Bruttogewinn | Grobe Rechnung: **Revenue – COGS**. |
+| **Operating Expenses** | Betriebskosten (OPEX) | Laufende Kosten des Betriebs (z.B. Marketing, Administration, Miete). |
+| **Net Income** | Nettogewinn | Grobe Rechnung: **Gross Profit – Operating Expenses** (in echt können noch weitere Posten dazugehören). |
+| **Department** | Abteilung | Organisatorische Einheit (z.B. Sales, Marketing, Operations). |
+| **Category** | Kategorie | Art der Buchung/Position (z.B. Revenue, COGS, Operating Expenses). |
+| **Statement** | Abschluss/Report | Zu welchem Bericht gehört der Datensatz (z.B. **P&L** oder **Balance Sheet**). |
+| **Statement Line Item** | Position im Report | Konkrete Zeile/Position im Report (z.B. Revenue, COGS, Gross Profit, Net Income). |
+| **Amount** | Betrag | Zahlenwert der Buchung/Transaktion (wird in Pivot meist **summiert**). |
+| **Transaction ID** | Transaktions-ID | Eindeutige Nummer pro Datensatz/Zeile (gut zum **Zählen**). |
+| **Date** | Datum | Datum der Buchung/Transaktion (wichtig fürs **Gruppieren** nach Monat/Jahr). |
+| **Region** | Region | Gebiet (z.B. East, North, South, West) für Auswertungen nach Standort/Markt. |
+| **Product** | Produkt | Produktgruppe (z.B. Product A/B/C) für Auswertungen nach Produkt. |
+
+===== Zusammenhänge (vereinfacht, so wie im Training) =====
+  * **Gross Profit = Revenue – COGS**
+  * **Net Income = Gross Profit – Operating Expenses**
+
+<WRAP round box 80%>
+**Hinweis:** In echten Finanzberichten gibt es zusätzliche Positionen (z.B. Steuern, Zinsen).  
+Im Pivot-Training reicht das vereinfachte Modell.
+</WRAP>
+</WRAP>
+
+
+<WRAP center round tip 100%>
+====== Lösungshinweise ======
+
+===== Aufgabe 1 – Sales nach Region (gelöst im Workbook, nur nachvollziehen) =====
+**Ziel:** Gesamter Umsatz pro Region.
+
+  * **Zeilen:** Region
+  * **Werte:** Amount → **Summe**
+  * Amount als **Währung** formatieren
+
+===== Aufgabe 2 – Transaktionen nach Monat (gelöst im Workbook, nur nachvollziehen =====
+**Ziel:** Wie viele Transaktionen pro Monat?
+
+  * **Zeilen:** Date → **Gruppieren nach Monaten** (und falls nötig Jahren)
+  * **Werte:** Transaction ID → **Anzahl (Count)**
+
+===== Aufgabe 3 – Total Expenses nach Kategorie =====
+**Ziel:** Gesamtausgaben nach Kategorie.
+
+  * **Filter:** Category = **Expenses**
+  * **Zeilen:** Category
+  * **Werte:** Amount → **Summe**
+
+===== Aufgabe 4 – Sales nur Region „West“ =====
+**Ziel:** Umsatz pro Produkt, aber nur für eine Region.
+
+  * **Filter:** Region = **West**
+  * **Zeilen:** Product
+  * **Werte:** Amount → **Summe**
+
+===== Aufgabe 5 – Trial Balance Summary =====
+**Ziel:** Summe pro Position in der Trial Balance.
+
+  * **Zeilen:** Statement Line Item
+  * **Werte:** Amount → **Summe**
+
+===== Aufgabe 6 – Accounts nach Statement =====
+**Ziel:** Summen nach Statement (z.B. P&L / Balance Sheet).
+
+  * **Zeilen:** Statement
+  * **Werte:** Amount → **Summe**
+
+===== Aufgabe 7 – Year-over-Year Revenue =====
+**Ziel:** Jahresumsatz (Revenue) pro Jahr.
+
+  * **Filter:** Category = **Revenue**
+  * **Zeilen:** Date → **Gruppieren nach Jahren**
+  * **Werte:** Amount → **Summe**
+
+===== Aufgabe 8 – Expense Breakdown nach Department =====
+**Ziel:** Ausgaben nach Abteilung und Kategorie als Kreuztabelle.
+
+  * **Zeilen:** Department
+  * **Spalten:** Category
+  * **Werte:** Amount → **Summe**
+
+===== Aufgabe 9 – Multi-Level P&L Statement =====
+**Ziel:** P&L mit Hierarchie und Monatsansicht.
+
+  * **Zeilen:** Statement → Statement Line Item (beides untereinander)
+  * **Spalten:** Date → **Gruppieren nach Monaten**
+  * **Werte:** Amount → **Summe**
+
+===== Aufgabe 10 – Balance Sheet nach Monat-End =====
+**Ziel:** Nur Balance Sheet und nach Monaten gruppiert.
+
+  * **Filter:** Statement = **Balance Sheet**
+  * **Zeilen:** Date → **Gruppieren nach Monaten**
+  * **Werte:** Amount → **Summe**
+
+===== Aufgabe 11 – Retained Earnings (Calculated Field) =====
+**Ziel:** Berechnetes Feld erstellen.
+
+  * PivotTable erstellen (passende Felder für Kontext anzeigen)
+  * **Calculated Field hinzufügen:**
+    - Retained Earnings Roll-Forward = Prior Retained Earnings + Current Net Income
+  * Das berechnete Feld als Wert anzeigen
+
+===== Aufgabe 12 – Margin nach Product (Calculated Field) =====
+**Ziel:** Marge pro Produkt berechnen.
+
+  * **Zeilen:** Product
+  * **Calculated Field hinzufügen:**
+    - Margin = (Revenue – COGS) / Revenue
+  * Margin als **Prozent** formatieren (1 Dezimalstelle)
+
+===== Aufgabe 13 – Variance Analysis (Calculated Fields) =====
+**Ziel:** Abweichung zwischen Actual und Budget.
+
+  * **Werte:** Actual, Budget (beide als Werte hinzufügen)
+  * **Calculated Field:**
+    - Variance = Actual – Budget
+  * **Calculated Field:**
+    - % Variance = Variance / Budget
+  * % Variance als Prozent formatieren
+
+===== Aufgabe 14 – Custom Sort P&L Lines =====
+**Ziel:** Pivot-Zeilen nach eigener Sortierung ordnen.
+
+  * Sicherstellen: Datensatz enthält eine Spalte **Sort Order**
+  * **Zeilen:** Statement Line Item
+  * Sortierung nach **Sort Order** (aufsteigend)
+
+===== Aufgabe 15 – Multi-Dimensional Cube Simulation =====
+**Ziel:** Mehrdimensionale Pivot + Slicer zum Drilldown.
+
+  * **Zeilen:** Region → Department → Product (Hierarchie)
+  * **Werte:** Amount → **Summe**
+  * **Slicer hinzufügen:** Region, Department, Product
+  * Mit Slicern filtern und zwei Beispiele ausprobieren:
+    - Beispiel 1: eine Region + eine Abteilung
+    - Beispiel 2: ein Produkt über alle Regionen
+
+</WRAP>
+
+
+
+----
+
+{{tag>M3-LU01}}
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Kevin Maurizi

@@ -94,6 +94,9 @@ box.addEventListener('pointerdown', (event) => {
 **Ältere Alternativen:** ''mousedown'' / ''mousemove'' / ''mouseup'' funktionieren nur mit der Maus. ''touchstart'' / ''touchmove'' / ''touchend'' nur auf Touchscreens. Pointer Events ersetzen beide – verwenden Sie in neuen Projekten immer Pointer Events.
 </WRAP>
 
+<WRAP round center 60% info>
+Eine vertiefte Beschreibung von Events mit interaktiven Code-Beispielen finden Sie hier: [[https://javascript.info/events|Javascript.info – Events]]
+</WRAP>
 
 ===== Das Event-Objekt =====
 
