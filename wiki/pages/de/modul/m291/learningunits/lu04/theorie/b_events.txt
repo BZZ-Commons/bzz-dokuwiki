@@ -15,6 +15,11 @@ btn.addEventListener('click', () => {
 </code>
 </WRAP>
 
+<WRAP round center box 60%>
+{{ youtube>x70HZ70TFkQ? }}
+//Video zum Thema Events und Eventlisteners//
+</WRAP>
+
 <WRAP round center tip 80%>
 **Verbindung zum Alarado-Projekt:** Beim Dark/Light Toggle haben Sie bereits ''addEventListener'' verwendet: ''checkbox.addEventListener('change', toggleTheme)''. Heute nutzen wir dasselbe Muster für das Accordion.
 </WRAP>
@@ -150,30 +155,4 @@ btn.addEventListener('click', () => {
 </code>
 </WRAP>
 
-==== Alle anderen Panels schliessen ====
 
-Bei einem klassischen Accordion soll immer nur ein Panel offen sein:
-<WRAP box round center 80%>
-<code javascript>
-const buttons = document.querySelectorAll('.accordion-btn');
-
-buttons.forEach(btn => {
-  btn.addEventListener('click', () => {
-    const panel = btn.nextElementSibling;
-    const istOffen = panel.classList.contains('open');
-
-    // Alle Panels schliessen
-    buttons.forEach(andererBtn => {
-      andererBtn.nextElementSibling.classList.remove('open');
-      andererBtn.setAttribute('aria-expanded', 'false');
-    });
-
-    // Dieses Panel öffnen (nur wenn es vorher zu war)
-    if (!istOffen) {
-      panel.classList.add('open');
-      btn.setAttribute('aria-expanded', 'true');
-    }
-  });
-});
-</code>
-</WRAP>

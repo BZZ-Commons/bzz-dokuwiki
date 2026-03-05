@@ -12,7 +12,7 @@
     - quadratFlaeche
     - quadratUmfang
     - rechteckFlaeche
-    - recheckUmfang
+    - rechteckUmfang
 
 ===== Hinweise =====
 Wichtig bei der Umsetzung Ihrer Lösung ist, dass sie nach best-practise programmieren. Konkret heisst das: 
@@ -87,7 +87,7 @@ Programmieren Sie einen Rechner //myGeometryCalculator.js//, der die genannten g
     return quadratUmfang
   }  
   
-  ==== Teilauftrag 7: rechtEckFlaeche =====
+==== Teilauftrag 7: rechtEckFlaeche =====
 
   // Autor: 
   // Datum: 
@@ -97,7 +97,7 @@ Programmieren Sie einen Rechner //myGeometryCalculator.js//, der die genannten g
     return rechteckFlaeche
   }  
   
-==== Teilauftrag 6: rechteckUmfang =====
+==== Teilauftrag 8: rechteckUmfang =====
 
   // Autor: 
   // Datum: 
