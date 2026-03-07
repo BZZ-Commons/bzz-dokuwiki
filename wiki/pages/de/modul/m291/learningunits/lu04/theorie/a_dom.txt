@@ -7,6 +7,12 @@ Das DOM ist die Art und Weise, wie JavaScript Ihr HTML-Dokument «sieht». Es re
 
 > **Einfach erklärt:** HTML schreiben Sie als Text. Das DOM ist die «lebendige» Version davon – eine Datenstruktur, mit der JavaScript arbeiten kann. Ändern Sie etwas im DOM, sehen Sie es sofort im Browser.
 
+<WRAP center round box 60%>
+[[https://scrimba.com/learn-javascript-c0v/~0g|{{ :de:modul:m291:learningunits:lu04:theorie:scrimba_dom.png?600 | Video zum DOM auf Scrimba.com }}]]
+//Schauen Sie sich dieses Video auf scrimba.com an, wo das DOM einfach erklärt wird (englisch). [[https://scrimba.com/learn-javascript-c0v/~0g|DOM Scrimba.com]]//
+</WRAP>
+
+
 ==== Der DOM-Baum ====
 
 Jede Verschachtelung in HTML wird im DOM zu einer Eltern-Kind-Beziehung:
