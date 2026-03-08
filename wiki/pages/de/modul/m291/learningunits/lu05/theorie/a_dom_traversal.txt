@@ -5,17 +5,17 @@
 
 In diesem Block bauen Sie ein interaktives FAQ Accordion.
 
-<WRAP center round box 60%>
-{{ :de:modul:m291:learningunits:lu05:theorie:faq-toggle.gif?nolink&800 |FAQ Accordion}}
+<WRAP center round box 80%>
+{{ :de:modul:m291:learningunits:lu05:theorie:faq-toggle.gif?nolink |FAQ Accordion}}
 </WRAP>
 
 Laden Sie hier das Figma-File, die Start-HTML und das Readme herunter:
 
-<WRAP center round download 60%>
+<WRAP center round download 80%>
 {{ :de:modul:m291:learningunits:lu04:aufgaben:faq-accordion_m291.zip | Accordion Starter}}
 </WRAP>
 
-<WRAP tip round center 60%>
+<WRAP tip round center 80%>
 **Projektaufbau:** Erstellen Sie drei Dateien: ''index.html'', ''script.js'' und ''style.css''.
 {{:de:modul:m291:learningunits:lu05:theorie:screenshot_2026-03-08_at_16.20.42.png?nolink&400 |}}
 \\
@@ -69,7 +69,7 @@ Anschliessend sollte es so aussehen im Browser:
 
 Bevor wir JavaScript schreiben, definieren wir die zwei möglichen Zustände im CSS. Die Klasse ''open'' wird später per JS gesetzt oder entfernt – das CSS übernimmt das An- und Ausblenden:
 
-<WRAP center round box 60%>
+<WRAP center round box 80%>
 Dieser Code kommt ins ''style.css''.
 
 <code css>
@@ -85,15 +85,15 @@ Dieser Code kommt ins ''style.css''.
 </code>
 Was macht dieser Code (später)?
 Er blendet nicht aktive Antworten aus und blended das aktive Element ein (div mit Klasse ''.panel'' bekommt eine zweite Klasse ''.open'' sobald es geklickt wird.):
-{{:de:modul:m291:learningunits:lu05:theorie:faq-class-toggle.gif?nolink&800 |}}
+{{:de:modul:m291:learningunits:lu05:theorie:faq-class-toggle.gif?nolink |}}
 </WRAP>
 
 ===== Schritt 2: querySelector vs. querySelectorAll =====
 
-{{:de:modul:m291:learningunits:lu05:theorie:queryselector_all_0.4x.png?direct&1100| Vergleich querySelector() vs. querySelectorAll()}}
+{{:de:modul:m291:learningunits:lu05:theorie:queryselector_all_0.4x.png?direct&1200| Vergleich querySelector() vs. querySelectorAll()}}
 
 Als Erstes selektieren wir die Elemente im DOM. Was passiert, wenn wir ''querySelector()'' verwenden?
-<WRAP center round box 60%>
+<WRAP center round box 80%>
 <code javascript>
 const panel = document.querySelector('.panel');
 const btn   = document.querySelector('.accordion-btn');
@@ -108,7 +108,7 @@ console.log(btn);   // → <button class="accordion-btn">...</button>   NUR das 
 
 Die Lösung: ''querySelectorAll()'' gibt **alle** passenden Elemente zurück:
 
-<WRAP center round box 60%>
+<WRAP center round box 80%>
 <code javascript>
 const panels  = document.querySelectorAll('.panel');
 const buttons = document.querySelectorAll('.accordion-btn');
@@ -136,7 +136,7 @@ Was eine NodeList **kann:**
 Was eine NodeList standardmässig **nicht** kann (anders als ein echtes Array):
   * ''.map()'', ''.filter()'', ''.reduce()''
 
-<WRAP center round box 60%>
+<WRAP center round box 80%>
 <code javascript>
 const buttons = document.querySelectorAll('.accordion-btn');
 
@@ -149,9 +149,11 @@ console.log(buttons[0]);     // → <button class="accordion-btn">...</button>
 
 ===== Schritt 3: forEach() – EventListener auf alle Buttons setzen =====
 
+{{:de:modul:m291:learningunits:lu05:theorie:eventlistner_0.5x.png?direct&500| Eventlistener Symbolbild}}
+
 Auf einen **einzelnen Button** einen EventListener setzen würde so aussehen:
 
-<WRAP center round box 60%>
+<WRAP center round box 80%>
 <code javascript>
 button.addEventListener('click', () => {
   console.log('Geklickt!');
@@ -161,7 +163,7 @@ button.addEventListener('click', () => {
 
 Da wir aber eine NodeList haben, iterieren wir mit ''forEach()'' über alle Elemente und setzen auf jedem einen Listener:
 
-<WRAP center round box 60%>
+<WRAP center round box 80%>
 <code javascript>
 buttons.forEach(b => {
   b.addEventListener('click', (e) => {
@@ -174,13 +176,44 @@ buttons.forEach(b => {
 Öffnen Sie die DevTools-Console und klicken Sie auf verschiedene Buttons. ''e.target'' sollte immer den jeweiligen geklickten Button ausgeben.
 
 
-===== Schritt 4: DOM Traversal – nextSibling vs. nextElementSibling =====
+===== Schritt 4: Das richtige Panel finden – DOM Traversal =====
 
-Wenn ein Button geklickt wird, müssen wir zum benachbarten ''<p class="panel">'' navigieren. Diese Technik nennt man **DOM Traversal** – das gezielte Durchqueren des DOM-Baums.
+{{:de:modul:m291:learningunits:lu05:theorie:siblings.jpg?direct&600|}}
 
-Der naheliegende erste Versuch mit ''nextSibling'' schlägt fehl:
+Wir haben jetzt EventListener auf allen Buttons. Wenn ein Button geklickt wird, müssen wir das zugehörige ''<p class="panel">'' öffnen. Die Frage ist: **Wie wissen wir, welches Panel zu welchem Button gehört?** –> Button und Panel sind Geschwister im HTML:
 
-<WRAP center round box 60%>
+{{:de:modul:m291:learningunits:lu05:theorie:screenshot_2026-03-08_at_23.15.46.png?direct&600|}}
+
+==== DOM Traversal mit nextElementSibling ====
+
+Die sauberere Lösung nutzt die **Struktur des DOMs** selbst. Im HTML ist jedes Panel das direkte Geschwister-Element des zugehörigen Buttons:
+<WRAP center round box 80%>
+<code html>
+<div class="accordion-item">
+  <button class="accordion-btn">...</button>   ← Button
+  <p class="panel">...</p>                     ← direkt daneben: das Panel
+</div>
+</code>
+</WRAP>
+
+Mit ''nextElementSibling'' navigieren wir direkt vom geklickten Button zu seinem Panel:
+
+<WRAP center round box 80%>
+<code javascript>
+buttons.forEach((b) => {
+  b.addEventListener('click', (e) => {
+    const panelElement = e.target.nextElementSibling; // ✅ direkt das zugehörige Panel
+    panelElement.classList.add('open');
+  });
+});
+</code>
+</WRAP>
+
+==== Warum nicht einfach nextSibling? ====
+
+Der erste Versuch mit ''nextSibling'' scheitert:
+
+<WRAP center round box 80%>
 <code javascript>
 buttons.forEach((b) => {
   b.addEventListener('click', (e) => {
@@ -192,25 +225,9 @@ buttons.forEach((b) => {
 </code>
 </WRAP>
 
-**Warum klappt das nicht?** Im HTML-Quellcode sind Zeilenumbrüche und Leerzeichen zwischen Tags eigenständige DOM-Nodes (sog. **Text-Nodes**). ''nextSibling'' gibt den allernächsten Node zurück – das ist in unserem Fall der Zeilenumbruch nach ''<button>'', kein HTML-Element.
+**Warum?** Im HTML-Quellcode sind Zeilenumbrüche und Leerzeichen zwischen Tags eigenständige DOM-Nodes (sog. **Text-Nodes**). ''nextSibling'' gibt den allernächsten Node zurück – das ist der Zeilenumbruch nach ''<button>'', kein HTML-Element. ''nextElementSibling'' überspringt Text-Nodes und gibt immer das nächste **HTML-Element** zurück.
 
-Die richtige Methode: ''nextElementSibling'' überspringt Text-Nodes und gibt das nächste **HTML-Element** zurück:
-<WRAP center round box 60%>
-<code javascript>
-buttons.forEach((b) => {
-  b.addEventListener('click', (e) => {
-    const panelElement = e.target.nextElementSibling; // ✅ korrekt
-    panelElement.classList.add('open');
-  });
-});
-</code>
-</WRAP>
-
-Testen Sie: Alle Panels sollten sich jetzt öffnen lassen – aber noch nicht schliessen.
-
-==== Übersicht: Traversal-Eigenschaften ====
-
-<WRAP center round box 60%>
+<WRAP center round box 80%>
 ^ Eigenschaft ^ Beschreibung ^
 | ''element.nextElementSibling'' | Nächstes Geschwister-Element |
 | ''element.previousElementSibling'' | Vorheriges Geschwister-Element |
@@ -219,72 +236,41 @@ Testen Sie: Alle Panels sollten sich jetzt öffnen lassen – aber noch nicht sc
 | ''element.lastElementChild'' | Letztes Kind-Element |
 </WRAP>
 
-===== Schritt 5: Alle anderen Panels schliessen =====
+Testen Sie: Alle Panels sollten sich jetzt öffnen lassen – aber noch nicht schliessen.
 
-Beim klassischen Accordion soll immer nur ein Panel offen sein. Vor dem Öffnen des geklickten Panels schliessen wir deshalb alle:
-<WRAP center round box 60%>
-<code javascript>
-buttons.forEach((b) => {
-  b.addEventListener('click', (e) => {
-    const panelElement = e.target.nextElementSibling;
+===== Schritt 5 & 6: Zum finalen Script =====
 
-    // Alle Panels schliessen
-    buttons.forEach((andererBtn) => {
-      andererBtn.nextElementSibling.classList.remove('open');
-      andererBtn.setAttribute('aria-expanded', 'false');
-    });
+{{:de:modul:m291:learningunits:lu05:theorie:screenshot_2026-03-08_at_18.28.50.png?direct&600| Ein einziges Panel soll offen sein.}}
 
-    // Geklicktes Panel öffnen
-    panelElement.classList.add('open');
-  });
-});
-</code>
-</WRAP>
+Jetzt bauen wir den Code Schritt für Schritt zum finalen Script aus. Drei Dinge müssen noch gelöst werden:
 
-Testen Sie: Ein Panel öffnen schliesst nun alle anderen.
+  - Alle anderen Panels schliessen, wenn eines geöffnet wird
+  - Ein geöffnetes Panel beim erneuten Klick wieder schliessen (Toggle)
+  - Sicherstellen, dass wir immer den ''<button>'' ansprechen – nicht ein Kind-Element davon
 
-Das ''setAttribute('aria-expanded', ...)'' erklären wir ausführlich in den folgenden Seiten.
+==== Problem: e.target kann das falsche Element sein ====
 
+Wenn der Button ein Icon enthält (bei uns: das ''+'' und ''−'' via ''::after''), kann ein Klick genau auf dieses Icon landen. Dann zeigt ''e.target'' auf das Icon – nicht auf den Button selbst.
 
-===== Schritt 6: e.target vs. e.currentTarget =====
-
-Unser Code funktioniert – hat aber noch eine versteckte Schwachstelle. Sobald wir Icons innerhalb des Buttons hinzufügen (z.B. als Pseudo-Elemente via CSS, was wir beim Styling noch tun), kann ''e.target'' auf das Icon zeigen, nicht auf den Button selbst.
-
-<WRAP center round box 60%>
+<WRAP center round box 80%>
 ^ Eigenschaft ^ Beschreibung ^
 | ''event.target'' | Das Element, das das Event **ursprünglich ausgelöst** hat – kann ein Kind-Element (wie ein Icon) sein |
 | ''event.currentTarget'' | Das Element, an dem der **EventListener registriert** wurde – immer der Button |
-
-<code javascript>
-// Im finalen Projekt: Button enthält ein SVG-Icon via CSS ::after
-// <button class="accordion-btn">Frage...</button>  +  .accordion-btn::after { content: url(...) }
-
-buttons.forEach((b) => {
-  b.addEventListener('click', (e) => {
-
-    console.log(e.target);
-    // → Kann das ::after-Pseudo-Element oder ein inneres Element sein
-
-    console.log(e.currentTarget);
-    // → Immer der <button> – weil dort addEventListener() registriert wurde ✅
-
-  });
-});
-</code>
 </WRAP>
 
-==== Das finale Script (script.js) ====
+Die Lösung: Wir lesen den Button immer via ''e.currentTarget'' aus und speichern ihn in einer Variable. Damit haben wir auch die stabile Basis für ''nextElementSibling''.
 
-Im abgeschlossenen Accordion-Projekt sieht das vollständige Script so aus. Beachten Sie die Verwendung von ''e.currentTarget'' und die zusätzliche Toggle-Logik (Klick auf ein offenes Panel schliesst es):
+==== Das finale Script ====
 
+<WRAP center round box 80%>
 <code javascript>
 const buttons = document.querySelectorAll('.accordion-btn');
 
 buttons.forEach((button) => {
   button.addEventListener('click', (e) => {
-    const btn = e.currentTarget;
-    const panelElement = btn.nextElementSibling;
-    const panelIsOpen  = panelElement.classList.contains('open');
+    const btn          = e.currentTarget;           // immer der <button>
+    const panelElement = btn.nextElementSibling;    // direkt das zugehörige Panel
+    const panelIsOpen  = panelElement.classList.contains('open'); // aktuellen Zustand lesen
 
     // Alle Panels schliessen
     buttons.forEach((andererBtn) => {
@@ -300,8 +286,17 @@ buttons.forEach((button) => {
   });
 });
 </code>
+</WRAP>
 
+**Was passiert bei jedem Klick?**
 
+  - ''e.currentTarget'' gibt uns sicher den ''<button>'', egal ob auf Text oder Icon geklickt wurde
+  - ''btn.nextElementSibling'' gibt das direkt zugehörige Panel zurück
+  - ''classList.contains('open')'' liest den aktuellen Zustand, bevor wir alles schliessen
+  - Das innere ''forEach()'' schliesst alle Panels und setzt ''aria-expanded'' auf ''false''
+  - Die ''if''-Bedingung öffnet das geklickte Panel nur dann, wenn es vorher zu war – so funktioniert auch der Toggle (zweimal klicken schliesst)
+
+Das ''setAttribute('aria-expanded', ...)'' erklären wir ausführlich in den folgenden Seiten.
 
 
 

@@ -1,0 +1,21 @@
+====== LU05d - Unit-Testing mit Java ======
+
+==== JUnit ====
+
+Bei Java ist JUnit der klare Standard. Nach Möglichkeit sollte man bereits schon JUnit5 (Jupiter) verwenden anstatt noch die ältere JUnit4.
+
+Beispiele Java: 
+  * https://github.com/bzz-templates-java/ffit-lu01-a01-palindrome/blob/main/src/test/java/ch/bzz/PalindromeCheckerTest.java
+  * https://github.com/bzz-templates-java/ffit-lu02-library-app/tree/tests/src/test/java/ch/bzz
+  * https://github.com/bzz-templates-java/ffit-lu11-rag-ai-chatbot/tree/tests/src/test/java/ch/bzz/rag
+
+Bedenken Sie dabei, dass einige der Tests bereits Fake, Stubs oder Mocks verwenden. Diese werden wir jedoch erst bei den Integration-Tests behandeln.
+
+In der Pipeline sieht das entsprechende Snippet in etwas so aus:
+<code yml>
+      - name: Compile Java
+        run: ./gradlew compileJava
+
+      - name: Run tests
+        run: ./gradlew test --info
+</code>

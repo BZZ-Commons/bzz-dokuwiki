@@ -1,3 +1,15 @@
-====== LU05b - Unit-Testing mit Python ======
+====== LU05b - Unit-Testing mit JavaScript/Typescript ======
 
-''TODO''
+Es gibt zahlreiche ES-basierte Testing-Frameworks. Im folgenden werden einige gebräuchliche vorgestellt.
+
+===== Vitest =====
+
+Vitest ist das Standard-Testframework bei Angular, kann aber natürlich auch eigenständig eingesetzt werden.
+
+Beispiel Javascript: https://github.com/AlexanderPeter/ffit-lu08-club-accounting-website
+
+===== Jest =====
+
+Jest ist das Standard-Testframework bei React, ist aber auch bei Angular-Applikation etc. oft im Einsatz.
+
+Beispiel TypeScript (React): https://github.com/AlexanderPeter/cicd/tree/develop/frontend

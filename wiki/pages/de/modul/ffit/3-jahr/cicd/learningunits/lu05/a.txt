@@ -1,17 +1,23 @@
-====== LU05a - Unit-Testing mit JavaScript/Typescript ======
+====== LU05a - Teststufen ======
+Es gibt unzählige Grafiken von Testpyramiden mit den unterschiedlichsten Begriffen, Achsen, Stufen etc. Das Essenzielle haben sie aber alle gemeinsam:
+  * Schnelle/günstige Tests sind Unten und sollten in der grössten Anzahl geschrieben werden.
+  * Langsame/teure Tests sind Oben und sollten sparsam eingesetzt werden.
 
-Es gibt zahlreiche ES-basierte Testing-Frameworks. Im folgenden werden einige gebräuchliche vorgestellt.
-
-===== Vitest =====
-
-===== Jest =====
-
-Jest ist das Standard-Testframework bei React und auch bei Angular-Applikation oft im Einsatz.
+{{:de:modul:ffit:3-jahr:cicd:learningunits:lu05:graphic_test_pyramid.png?800|}}
+© https://juliocasal.com/blog/Should-You-Write-Unit-Tests
 
 
-Beispiel JavaScript 
+Mögliche weitere Stufen wären zum Beispiel: "Smoke Tests", "Manuelle Tests", "User Acceptance Tests", "System Tests".
 
-Beispiel TypeScript (React): https://github.com/AlexanderPeter/cicd/tree/develop/frontend
+Wir konzentrieren uns jedoch vorerst auf die folgenden 3.
 
+===== Unit-Testing =====
+Ein Unit-Test testet idR eine einzelne Funktion (die natürlich andere Funktionen aufrufen kann). Das wichtigste Abgrenzungsmerkmal ist aber, dass ein Unit-Test keine Datenbank, Datei, Storage oder dergleichen verwendet. Dadurch ist er schnell und unabhängig und kann //en masse// eingesetzt werden.
 
-''TODO''
+===== Integration-Testing =====
+
+Die Integration-Tests überprüfen in der Regel das Zusammenspiel mehrerer Einheiten. Dies kann kann zum Beispiel ein Service sein. Umsysteme, Datenbanken, Dateien etc. können bei Bedarf auch gemockt werden. 
+
+===== E2e-Testing =====
+
+End-to-end-Tests rufen direkt direkt die Benutzeroberfläche auf und testen zum Beispiel einen Use-Case oder gar einen Prozess. Die Eingaben sind dabei oft einem Benutzer nachempfunden. Anstatt Mocks werden oftmals Testinstanzen verwendet. Dadurch kann man überprüfen, ob der gesamte Stack (Datenbank, Backend und Frontend) als Ganzes funktioniert.

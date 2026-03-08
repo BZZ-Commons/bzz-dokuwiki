@@ -1,3 +1,15 @@
-====== LU05c - Unit-Testing mit Java ======
+====== LU05c - Unit-Testing mit Python ======
 
-''TODO''
+Natürlich gibt es auch Python verschiedene Test-Bibliotheken. Der Einfachheit wird hier nur ''Pytest'' gezeigt. Die Prinzipien sind aber übergreifend gültig.
+
+==== Pytest ====
+
+Beispiel Pytest: https://github.com/AlexanderPeter/cicd/tree/develop/backend
+
+Die entsprechende Verwendung in der Pipeline sieht dann so aus:
+<code yml>
+      - name: Run tests
+        run: |
+          source .venv/bin/activate
+          pytest --cov --cov-report=xml
+</code>

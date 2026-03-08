@@ -1,0 +1,9 @@
+==== LU05.A02 Backend Unit-Testing ergänzen ====
+
+Erfassen Sie hierfür einen Task, sofern noch keiner existiert. Verweisen Sie in allen Commit-Messages dieser Aufgabe auf den entsprechenden Task.
+
+Erstellen Sie analog dem Frontend auch einen Backend-Test, sofern Sie überhaupt ein Backend besitzen. 
+
+**Falls Sie nur einen Frontend haben, fügen Sie einen weiteren Unit-Test dem Frontend hinzu!**
+
+Überprüfen Sie, ob der Test auch in der Pipeline ausgeführt wird und fehlerfrei durchläuft.
