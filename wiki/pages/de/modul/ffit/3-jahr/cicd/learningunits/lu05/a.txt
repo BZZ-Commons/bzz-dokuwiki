@@ -1,15 +1,17 @@
-====== LU05a - Testing Doubles ======
+====== LU05a - Unit-Testing mit JavaScript/Typescript ======
 
-Notiz PeAl: Security der Build-Environment anschauen. Kleine "Hack-Challenge" 8-)
+Es gibt zahlreiche ES-basierte Testing-Frameworks. Im folgenden werden einige gebräuchliche vorgestellt.
 
-==== Übersicht ====
-^ Name ^ Beschreibung ^ Beispiel ^
-| Mock | ... | ... |
-| Fake | ... | ... |
-| Spy | ... | ... |
-| Dummy | ... | ... |
-| Stub | ... | ... |
-| Fake | ... | ... |
+===== Vitest =====
+
+===== Jest =====
+
+Jest ist das Standard-Testframework bei React und auch bei Angular-Applikation oft im Einsatz.
+
+
+Beispiel JavaScript 
+
+Beispiel TypeScript (React): https://github.com/AlexanderPeter/cicd/tree/develop/frontend
 
 
 ''TODO''

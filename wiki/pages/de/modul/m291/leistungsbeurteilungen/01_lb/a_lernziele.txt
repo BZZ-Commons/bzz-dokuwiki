@@ -1,0 +1,85 @@
+====== Lernziele Leistungsbeurteilung 01 (LB01) ======
+
+**Modul:** M291 Web-Frontend \\
+**Prüfungsform:** Moodle-Test (Multiple Choice / Single Choice)
+
+Die LB01 deckt sowohl das repetierte Vorwissen aus den vorbereitenden Videos als auch die neuen Inhalte aus dem Unterricht ab.
+
+
+===== 1. UI-Analyse und HTML-Struktur =====
+
+==== Elementklassen erkennen ====
+Sie können UI-Designs in funktionale Bausteine zerlegen und diese den Klassen **Layout**, **Formular**, **Navigation** oder **Anzeige** zuordnen.
+
+==== Semantik ====
+Sie wählen für UI-Bereiche die korrekten semantischen HTML-Tags aus, z. B. ''<header>'', ''<nav>'', ''<main>'', ''<section>'', ''<footer>''.
+
+==== Strukturierung ====
+Sie können Elemente sinnvoll gruppieren und für die Strukturierung sprechende Klassennamen vergeben.
+
+==== Bilder ====
+Sie verstehen den Einsatz von ''srcset'', um Bilder responsiv für verschiedene Bildschirmauflösungen bereitzustellen.
+
+===== 2. CSS Layout und Styling =====
+
+==== Box-Modell ====
+Sie beherrschen die Konzepte von Content, Padding, Border und Margin und wissen, wie ''box-sizing: border-box'' die Grössenberechnung beeinflusst.
+
+==== Selektoren ====
+Sie können komplexe CSS-Selektoren gezielt einsetzen: Klassen, IDs, Kind- und Geschwister-Elemente sowie Pseudo-Klassen wie '':hover'' oder '':not()''.
+
+==== Layout-Techniken ====
+
+**Flexbox:** Sie können Elemente mit ''display: flex'' ausrichten, Abstände mit ''gap'' definieren und die Verteilung mit ''justify-content'' und ''align-items'' steuern.
+
+**Grid:** Sie verstehen die Grundlagen von CSS Grid, insbesondere die Spaltendefinition mit ''fr'' und ''repeat()''.
+
+==== Positionierung ====
+Sie kennen den Unterschied zwischen ''static'', ''relative'', ''absolute'', ''fixed'' und ''sticky''.
+
+==== Kaskade und Vererbung ====
+Sie verstehen, wie Styles vererbt oder überschrieben werden (Spezifität), und kennen die Schlüsselwörter ''initial'', ''inherit'', ''unset'' und ''revert''.
+
+==== Variablen und Fonts ====
+Sie können CSS-Variablen in '':root'' definieren und wissen, wie man externe Fonts (z. B. Google Fonts) korrekt einbindet.
+
+==== Responsive Design ====
+Sie können Media Queries einsetzen, um Layouts an verschiedene Breakpoints anzupassen.
+
+===== 3. JavaScript Grundlagen und DOM-Manipulation =====
+
+==== Variablen ====
+Sie kennen den Unterschied zwischen ''let'', ''const'' und dem veralteten ''var'' sowie die Konzepte von Block-Scope und Function-Scope.
+
+==== Datentypen ====
+Sie können mit primitiven Datentypen (String, Number, Boolean) sowie mit Arrays und Objekten umgehen.
+
+==== Funktionen ====
+Sie können Funktionen deklarieren, Parameter übergeben und Rückgabewerte verarbeiten.
+
+==== DOM-Zugriff ====
+Sie wissen, wie man Elemente mit ''getElementById()'', ''querySelector()'' oder ''querySelectorAll()'' aus dem DOM ausliest.
+
+==== Manipulation ====
+Sie können Klassen dynamisch mit ''classList'' (''add'', ''remove'', ''toggle'') verändern sowie Attribute und Inhalte von Elementen anpassen.
+
+
+===== 4. Events, State und Accessibility (A11y) =====
+
+==== Events ====
+Sie können auf Benutzerinteraktionen reagieren (z. B. ''click'', ''change'', ''input'') und verstehen das Konzept der Pointer Events (''pointerdown'', ''pointermove'', ''pointerup'').
+
+==== Zustand (State) ====
+Sie verstehen, wie man den Zustand einer UI – z. B. «offen/geschlossen» bei einem Accordion oder den Dark Mode – über CSS-Klassen im DOM abbildet und verwaltet.
+
+==== Barrierefreiheit ====
+Sie kennen die Bedeutung von ''aria-expanded'' für die Kommunikation von Zuständen an Screenreader und achten auf Tastaturbedienbarkeit (Fokus-Stile, semantische Elemente).
+
+
+===== 5. Formulare und Debugging =====
+
+==== Formulare ====
+Sie kennen verschiedene Input-Typen (z. B. ''text'', ''email'', ''checkbox'', ''radio'') und die Grundlagen der clientseitigen Validierung mit den Attributen ''required'' und ''pattern''.
+
+==== Fehlersuche ====
+Sie können die Browser-DevTools (Console, Elements-Tab) nutzen, um HTML-Strukturen zu prüfen und JavaScript-Fehler zu finden und zu beheben.
