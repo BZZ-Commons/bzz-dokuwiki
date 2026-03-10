@@ -14,6 +14,8 @@ Wir konzentrieren uns jedoch vorerst auf die folgenden 3.
 ===== Unit-Testing =====
 Ein Unit-Test testet idR eine einzelne Funktion (die natürlich andere Funktionen aufrufen kann). Das wichtigste Abgrenzungsmerkmal ist aber, dass ein Unit-Test keine Datenbank, Datei, Storage oder dergleichen verwendet. Dadurch ist er schnell und unabhängig und kann //en masse// eingesetzt werden.
 
+Unit-Tests eignen sich auch für Testing First einsetzen, was bei komplexeren Tests teilweise nicht mehr möglich ist.
+
 ===== Integration-Testing =====
 
 Die Integration-Tests überprüfen in der Regel das Zusammenspiel mehrerer Einheiten. Dies kann kann zum Beispiel ein Service sein. Umsysteme, Datenbanken, Dateien etc. können bei Bedarf auch gemockt werden. 

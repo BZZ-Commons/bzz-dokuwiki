@@ -1,7 +1,12 @@
 ====== LU01a - AWS Build-Environment ======
 
+==== Grundidee ====
+Es gibt eine zentrale Build Environment für die gesamte Doppelklasse. Dadurch sind Gruppenarbeiten möglich und es gibt eine Gesamtübersicht über die gesamte Klasse.
+
+Um die Build-Environment (Instanzen, Container etc.) müssen Sie sich selber nicht kümmern. Sie können sie einfach nutzen.
+
 ==== Zugriff ====
-http://54.80.83.95/
+IP-Adresse und Zugangsdaten in Teams.
 
 ==== Ports ====
 ^ Port ^ Beschreibung ^
