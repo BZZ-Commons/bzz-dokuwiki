@@ -1,27 +1,19 @@
-====== LU01.L02 - myGeometryCalculator ======
+====== LU01.A03 - myBubbleSort ======
 
-==== Teilauftrag 1: Kreisfläche =====
+==== Teilauftrag 1: Statisch =====
+In zwei FOR-Schleifen wird ein unsortiertes Array eine feste Anzahl mal durchlaufen. Die Anzahl der Schleifendurchlaeufe ist abhaengig von der Anzahl unsortierter Array-Elemente.
 
-{{:de:modul:m307:learningunits:lu01:loesungen:m307_lu01_l02_t1.png?600|}}
-  
-==== Teilauftrag 2: Kreisumfang =====
-{{:de:modul:m307:learningunits:lu01:loesungen:m307_lu01.l02_t2.png?600|}}
-==== Teilauftrag 3: Dreiecksfläche =====
-{{:de:modul:m307:learningunits:lu01:loesungen:m307_lu01_02_t3.png?600|}}
-==== Teilauftrag 4: Dreiecksumfang =====
-{{:de:modul:m307:learningunits:lu01:loesungen:m307_lu01_02_t4.png?600|}}
-==== Teilauftrag 5: quadratFlaeche =====
-{{:de:modul:m307:learningunits:lu01:loesungen:m307_lu01_02_t5.png?600|}}
-  
-==== Teilauftrag 6: quadratUmfang =====
-{{:de:modul:m307:learningunits:lu01:loesungen:m307_lu01_02_t6.png?600|}}
-==== Teilauftrag 7: rechtEckFlaeche =====
-{{:de:modul:m307:learningunits:lu01:loesungen:m307_lu01_02_t7.png?600|}}
-  
-==== Teilauftrag 8: rechteckUmfang =====
-{{:de:modul:m307:learningunits:lu01:loesungen:m307_lu01_02_t8.png?600|}}
+{{:de:modul:m307:learningunits:lu01:loesungen:lu01_l03_v1.png|Lösung Bubblesort Variante 1 - Statisch}}
 
-  
+==== Teilauftrag 2: Flag =====
+Variante 2 arbeitet intelligenter als die Variante 1. Mittels eines //Flag// (Ampel) wird bei jedem Durchlauf des Arrays ermittelt, ob die korrekte Sortierung vorliegt. Falls nicht wird ein weiterer Durchlauf gestartet.
+
+
+{{:de:modul:m307:learningunits:lu01:loesungen:lu01_l03_v2.png|Variante 2 mit Fertig-Flag}}
+
+
+
+
 
 ----
 [[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir
