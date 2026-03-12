@@ -17,11 +17,11 @@ Laden Sie hier das Figma-File, die Start-HTML und das Readme herunter:
 
 <WRAP tip round center 80%>
 **Projektaufbau:** Erstellen Sie drei Dateien: ''index.html'', ''script.js'' und ''style.css''.
-{{:de:modul:m291:learningunits:lu05:theorie:screenshot_2026-03-08_at_16.20.42.png?nolink&400 |}}
+{{:de:modul:m291:learningunits:lu05:theorie:screenshot_2026-03-08_at_16.20.42.png?nolink&400|}}
 \\
 Verlinken Sie CSS- und JavaScript-File im HTML:
-  - **CSS:** im ''<head>'' mit ''<link href="style.css" rel="stylesheet">''
-  - **JS-Script:** am Ende des ''<body>'' mit ''<script src="script.js"></script>''.
+  - **CSS:** im ''<head>'' mit <code html><link href="style.css" rel="stylesheet"></code>
+  - **JS-Script:** am Ende des ''<body>'' mit <code html><script src="script.js"></script></code>.
 \\
 Testen Sie zuerst, ob die Verlinkung klappt – dieser Code gehört in ''script.js'':
 <code javascript>

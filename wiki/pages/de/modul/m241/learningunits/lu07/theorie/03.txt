@@ -18,13 +18,13 @@ Um das Risikomass berechnen zu können, müssen wir unsere Risiken bezüglich Ei
 
 Gut geeignet ist hier die Nutzwertanalyse bzw. Schadenswertanalyse mit den Spalten:
   * Titel
-  * Eintrittswahrscheinlichkeit [1-5]
-  * Auswirkung [1-5]
-  * RiskValue
+  * EW / Eintrittswahrscheinlichkeit [1-5]
+  * AW / Auswirkung [1-5]
+  * RV - RiskValue
 
 **Beispiel**
 
-^# ^Schaden ^EW	^A ^RV ^
+^# ^Schaden ^EW	^AW ^RV ^
 ^ 1. | Währungsschwankungen | 3	| 3 | 9 |
 ^ 2. | 	| | | 			
 
