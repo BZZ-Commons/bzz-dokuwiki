@@ -1,4 +1,4 @@
-====== LU05c – Accessibility Basics (A11y) ======
+====== LU06a – Accessibility Basics (A11y) ======
 
 {{:de:modul:m291:learningunits:lu05:theorie:1655410107982.jpeg?nolink&800| Illustration for Accessibility}}
 
@@ -47,21 +47,23 @@ Die WCAG sind um vier Grundprinzipien aufgebaut, die unter dem Kürzel **POUR** 
 
 === 1. Wahrnehmbarkeit (Perceivable) ===
 
-{{:de:modul:m291:learningunits:lu05:theorie:chatgpt_image_mar_8_2026_09_46_15_pm.png?nolink&300|}}
+{{:de:modul:m291:learningunits:lu06:theorie:venngage-3.png?nolink&500|}}
 
 Inhalte müssen für Augen, Ohren oder Screenreader erkennbar sein.
 
   * Bilder brauchen aussagekräftige ''alt''-Attribute
   * Videos benötigen Untertitel oder Transkripte
-  * Texte müssen ausreichend Kontrast zum Hintergrund haben (Mindest-Verhältnis: **4,5:1** für Fliesstext)
+  * Texte müssen ausreichend Kontrast zum Hintergrund haben (Mindest-Verhältnis: **4.5:1** für Fliesstext) -> das Kontrastverhältnis von zwei Farben kann z.B. mittels diesem Online-Tools herausgefunden werden: [[https://colorffy.com/contrast-checker|colorffy.com Text-Hintergrund-Kontrast-Checker]]
+
+{{:de:modul:m291:learningunits:lu06:theorie:screenshot_2026-03-14_at_22.51.18.png?nolink&600|}}
 
 === 2. Bedienbarkeit (Operable) ===
 
-{{:de:modul:m291:learningunits:lu05:theorie:focus-indicators-example-2048x768.png?nolink&600|}}
+{{:de:modul:m291:learningunits:lu06:theorie:tab_browsing.gif?nolink| Alarado Homepage interagieren mit Tastatur}}
 
 Die Website muss ohne Maus – also nur mit Tastatur oder Sprachsteuerung – vollständig nutzbar sein.
 
-  * Focus-Styles beibehalten (nie ''outline: none'' setzen)
+  * Focus-Styles beibehalten
   * Keine blinkenden Inhalte, die Anfälle auslösen könnten
   * In unserem Projekt: ''aria-expanded'' beim Accordion und ''aria-checked'' beim Switch machen Zustände für Screenreader lesbar
 
@@ -74,6 +76,8 @@ Sprache und Aufbau müssen logisch und vorhersehbar sein.
   * Fehlermeldungen in Formularen müssen präzise erklären, was falsch ist (statt kryptischer Codes)
   * Die Sprache des Dokuments muss im ''<html>'' deklariert sein: ''<html lang="de">''
   * Interaktionen sollen sich erwartungsgemäss verhalten
+
+{{:de:modul:m291:learningunits:lu05:theorie:focus-indicators-example-2048x768.png?nolink&800|}}
 
 === 4. Robustheit (Robust) ===
 
