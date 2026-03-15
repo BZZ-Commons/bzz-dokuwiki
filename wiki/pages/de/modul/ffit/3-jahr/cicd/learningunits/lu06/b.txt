@@ -1,0 +1,42 @@
+====== LU06b - Hinweise zu Teststufen und Test Doubles ======
+
+==== Hinweis 1 ====
+Testing Doubles können sowohl in Unit-, als auch in Integrationtests vorkommen. Jedoch können kommen die unterschiedlichen Typen aufgrund ihrer Charakteristik unterschiedlich oft vor.
+
+Bei vielen Unittests kann man ganz auf Doubles verzichten, bei den Integrationstests sind Doubles in der Regel jedoch oft notwendig.
+
+^ Double ^ Unit Test ^ Integration Test ^
+| Dummy | sehr häufig | selten |
+| Stub | häufig | gelegentlich |
+| Fake | gelegentlich | sehr häufig |
+| Spy | häufig | möglich |
+| Mock | möglich | möglich |
+
+==== Hinweis 2 ====
+In der Praxis ist es nicht unüblich die Ausführung von Unittests und Integrationstests zu separieren.
+
+Jedoch gibt es die verschiedensten Arten dies umzusetzen:
+  * Separate Verzeichnisse
+  * Naming Pattern der Testdateien
+  * Parent-Klassen
+  * Tagging (z.B. in JUnit5)
+  * ...
+
+Beispiel von Tagging:
+<code java>
+@Test
+@Tag("IntegrationTest")
+public void testAddEmployeeUsingSimpelJdbcInsert() {
+    ...
+}
+
+@Test
+@Tag("UnitTest")
+public void givenNumberOfEmployeeWhenCountEmployeeThenCountMatch() {
+    ...
+}
+</code>
+
+Je nach Sprache/Framework sind auch verschiedene Verzeichnisstrukturen üblich. Zum Beispiel ist es bei Angular üblich die Tests in demselben Ordner anzulegen wie die Komponenten selbst. Bei React wird jedoch oft ein separates Verzeichnis ''tests'' verwendet. 
+
+Daher ist es Ihnen überlassen, ob und falls, wie Sie die Tests separieren wollen. Der Einfachheit können Sie bei einfachen Projekten die Unit- und die Integrationtests gemischt lassen und jeweils immer gemeinsam ausführen. Seien Sie sich aber bewusst, dass bei den grösseren Projekten in der Regel eine Art von Trennung üblich ist.

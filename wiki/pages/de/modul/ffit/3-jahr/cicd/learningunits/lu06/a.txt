@@ -69,7 +69,7 @@ const service = new UserService(repo)
 
 expect(service.getUser(1).name).toBe("Alice")
 </code>
-Oft ersetzen Fakes in Tests Services wie Datenbanken mit einer einfacheren In-Memory-DB wie auch in diesem Beispiel. Die Objekte sind dadurch nur zur Laufzeit vorhanden, was aber für die Ausführung des Tests vollkommen ausreicht.
+Wie auch in diesem Beispiel, ersetzen Fakes oft in Tests Services wie Datenbanken mit einer einfacheren In-Memory-DB. Die Objekte sind dadurch nur zur Laufzeit vorhanden, was aber für die Ausführung des Tests vollkommen ausreicht.
 
 ==== Spy ====
 Ein ''Spy'' enthält Logik, um den Testverlauf zu überwachen. Zum Beispiel merkt er sich, wie oft oder mit welchen Argumenten eine Methode aufgerufen wurde.

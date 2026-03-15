@@ -1,0 +1,14 @@
+==== LU06.A02 Integration-Tests erstellen & Testing Doubles auslagern ====
+
+Erfassen Sie hierfür einen Task, sofern noch keiner existiert. Verweisen Sie in allen Commit-Messages dieser Aufgabe auf den entsprechenden Task.
+
+Nutzen Sie wieder das Testframework Ihrer Wahl (Bsp. Jest, Vitest) analog den Unit-Tests.
+
+  - Fügen Sie in Ihrem Projekt mehrere Integration-Tests hinzu. 
+  - Lagern Sie dabei Ihre Doubles in separate Klassen aus benennen Sie diese entsprechend. Dadurch können diese Test-Doubles in mehreren Tests verwendet werden.
+  - Stellen Sie sicher, dass sie mindestens 3 solcher Test-Double-Klassen haben.
+  - Überprüfen Sie, ob die Test auch in der Pipeline ausgeführt wird und fehlerfrei durchläuft.
+
+Beispiel Struktur und Namensgebung:
+https://github.com/bzz-templates-java/ffit-lu11-rag-ai-chatbot/blob/tests/src/test/java/ch/bzz/rag/doubles/ChatModelFake.java 
+

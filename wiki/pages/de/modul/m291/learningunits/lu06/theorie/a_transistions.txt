@@ -1,4 +1,4 @@
-====== LU05b – CSS Transitions ======
+====== LU06a – CSS Transitions ======
 
 {{:de:modul:m291:learningunits:lu05:theorie:faq-toggle-transistion.gif?nolink|}}
 
@@ -6,6 +6,10 @@
 
 Eine CSS Transition animiert den Übergang zwischen zwei Zuständen eines Elements. Sie definieren, **welche Eigenschaft** animiert wird, **wie lange** die Animation dauert und nach welcher **Timing-Kurve**.
 <WRAP center round box 80%>
+{{:de:modul:m291:learningunits:lu05:theorie:transition_hover_rect.gif?nolink|}}
+\\
+//Hover-Transition der Hintergrundfarbe//
+
 <code css>
 .element {
   background-color: blue;
@@ -33,6 +37,122 @@ Mehrere Eigenschaften gleichzeitig animieren:
 </code>
 </WRAP>
 
+
+===== Trigger: Was löst eine Transition aus? =====
+
+Damit eine Transition aktiviert wird, braucht es zwei Dinge: eine **Eigenschaft, die sich ändert**, und ein **Ereignis, das diese Änderung auslöst**. Die häufigsten Trigger in CSS:
+<WRAP center round box 80%>
+^ Trigger ^ Beschreibung ^
+| '':hover'' | Cursor befindet sich über dem Element |
+| '':focus'' | Element ist fokussiert (z.B. per Tab-Taste) |
+| '':focus-within'' | Element oder eines seiner Kind-Elemente ist fokussiert |
+| '':active'' | Element wird gerade aktiviert (Maustaste gedrückt) |
+| '':target'' | URL-Fragment stimmt mit der ''id'' des Elements überein |
+| **Klasse via JavaScript** | Eine CSS-Klasse wird per ''classList.add/remove/toggle'' geändert |
+\\
+{{:de:modul:m291:learningunits:lu05:theorie:focus_transition_input.gif?nolink| Focus-within Transition}}
+\\
+//Durch Klicken ins Formular-Feld erhält das Element den Fokus -> Ein Trigger für eine Transition der Transparenz.//
+</WRAP>
+
+Der letzte Punkt ist für unser Accordion entscheidend: Wir setzen per JavaScript die Klasse ''open'' – und CSS übernimmt die Animation vollständig. JavaScript steuert den **Zustand**, CSS steuert die **Animation**.
+
+===== Was kann (und was kann nicht) animiert werden? =====
+
+Nicht jede CSS-Eigenschaft lässt sich animieren. Die Grundregel: Eine Eigenschaft ist animierbar, wenn zwischen Start- und Endwert ein **Zwischenwert berechnet werden kann**.
+
+<WRAP round box 80%>
+**Beispiel:** ''font-size: 12px'' → ''font-size: 24px'' ✅ – jeder Pixelwert dazwischen ist berechenbar.
+
+**Gegenbeispiel:** ''font-family: serif'' → ''font-family: monospace'' ❌ – was wäre eine Schriftart-Mitte?
+</WRAP>
+
+==== Gut animierbare Eigenschaften ====
+
+=== transform ===
+
+''transform'' ist die am häufigsten eingesetzte Eigenschaft für Transitions. Sie wird direkt von der **GPU** berechnet – das ergibt flüssigere Animationen und belastet den Browser weniger als Layout-Eigenschaften.
+
+<WRAP center round box 80%>
+{{:de:modul:m291:learningunits:lu05:theorie:rotate_scale_rect.gif?nolink|}}
+
+<code css>
+.box {
+  transition: transform 400ms ease-out;
+}
+
+.box:hover {
+  transform: scale(1.2) rotate(5deg) translateY(-8px);
+}
+</code>
+</WRAP>
+
+Einzelne Transform-Eigenschaften können auch separat animiert werden:
+
+<WRAP center round box 80%>
+<code css>
+.box {
+  transition:
+    scale     300ms ease-out,
+    rotate    300ms ease-in-out,
+    translate 300ms ease-out;
+}
+
+.box:hover {
+  scale: 1.2;
+  rotate: 5deg;
+  translate: 0 -8px;
+}
+</code>
+</WRAP>
+
+=== Farbe ===
+
+''color'', ''background-color'' und ''border-color'' sind häufige Transition-Kandidaten – sie geben bei Interaktion visuelles Feedback, z.B. wenn ein Button beim Hovern die Farbe wechselt.
+
+<WRAP center round box 80%>
+<code css>
+.btn {
+  background-color: steelblue;
+  transition: background-color 250ms ease-in-out;
+}
+
+.btn:hover {
+  background-color: royalblue;
+}
+</code>
+</WRAP>
+
+=== opacity ===
+
+Sanftes Ein- und Ausblenden – das Element **bleibt aber im Layout** (es nimmt weiterhin Platz ein).
+
+=== Weitere animierbare Eigenschaften ===
+<WRAP center round box 80%>
+^ Eigenschaft ^ Einsatz ^
+| ''width'', ''height'' | Zwischen zwei fixen Werten (z.B. ''0'' → ''200px'') |
+| ''margin'', ''padding'' | Layout-Animationen |
+| ''border-radius'' | Formen weich überblenden |
+| ''box-shadow'' | Elevation-Effekte (z.B. bei Fokus) |
+| ''filter'' | ''blur()'', ''brightness()'', ''saturate()'' etc. |
+| ''font-size'', ''letter-spacing'' | Typografische Animationen |
+</WRAP>
+
+==== Nicht animierbar ====
+
+<WRAP center round box 80%>
+^ Eigenschaft ^ Warum nicht? ^
+| ''display'' | Kein Mittelwert zwischen ''none'' und ''block'' möglich |
+| ''font-family'' | Kein Mittelwert zwischen Schriftarten möglich |
+| ''position'' | Kategoriewechsel, kein kontinuierlicher Übergang |
+| ''visibility'' | Binärer Wert (sichtbar/unsichtbar) |
+</WRAP>
+
+
+<WRAP round tip 80%>
+Eine vollständige Liste animierbarer Eigenschaften: [[https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties|MDN – Animatable CSS properties]]
+</WRAP>
+
 ===== Antworten Ein- und Ausblenden mit 'display' =====
 
 Im ersten Schritt haben wir die Panels mit ''display: none'' / ''display: block'' ein- und ausgeblendet. Das funktioniert – aber es gibt **keinen Übergang**, das Element erscheint und verschwindet abrupt.
@@ -50,7 +170,6 @@ Im ersten Schritt haben wir die Panels mit ''display: none'' / ''display: block'
 }
 </code>
 </WRAP>
-
 
 
 ===== Das Problem: height von 0 zu auto =====
@@ -115,57 +234,18 @@ Damit funktioniert ''height: 0'' → ''height: auto'' mit einer Transition wie e
 
 Das Öffnen und Schliessen wird weiterhin per JavaScript durch ''classList.add('open')'' / ''classList.remove('open')'' gesteuert – die Animation läuft vollständig in CSS.
 
-
-
-===== Neueste Entwicklung: @starting-style =====
-
-In sehr modernen Browsern gibt es eine noch elegantere Variante mit ''@starting-style'' und ''display allow-discrete''. Diese Technik erlaubt Transitionen auch beim **ersten Erscheinen** eines Elements, also direkt von ''display: none'' zu ''display: block'':
-<WRAP center round box 80%>
-<code css>
-:root {
-  interpolate-size: allow-keywords;
-}
-
-/* Startzustand beim ersten Einblenden */
-@starting-style {
-  .panel {
-    opacity: 0;
-    height: 0;
-  }
-}
-
-/* Standardmässig versteckt */
-.panel {
-  height: 0;
-  overflow: hidden;
-  opacity: 0;
-  transition:
-    height  1100ms ease-in-out,
-    opacity 1100ms ease-in-out,
-    display 0.5s allow-discrete;
-}
-
-/* Sichtbar wenn Klasse 'open' gesetzt */
-.panel.open {
-  display: block;
-  height: auto;
-  opacity: 1;
-}
-</code>
-</WRAP>
-
 <WRAP important round center 80%>
-**Browser-Support:** ''@starting-style'' und ''display allow-discrete'' werden **in allen modernen Browsern unterstützt** (Chrome, Firefox, Safari).
-
-Das eigentliche Kompatibilitätsproblem liegt bei ''interpolate-size: allow-keywords'': Diese Eigenschaft wird aktuell **nur von Chrome/Edge** unterstützt – Safari und Firefox kennen sie noch nicht. In diesen Browsern springt das Panel beim Öffnen abrupt auf ''height: auto'', ohne Animation.
+**Browser-Support:** ''interpolate-size: allow-keywords'' wird aktuell **nur von Chrome/Edge** unterstützt – Safari und Firefox kennen sie noch nicht. In diesen Browsern springt das Panel beim Öffnen abrupt auf ''height: auto'', ohne Animation.
 
 Aktuellen Support prüfen: [[https://caniuse.com/mdn-css_properties_interpolate-size|caniuse.com – interpolate-size]]
 </WRAP>
+
 
 ===== Timing-Funktionen =====
 
 Der dritte Parameter von ''transition'' steuert die Beschleunigungskurve der Animation:
 
+<WRAP center round box 80%>
 ^ Wert ^ Beschreibung ^
 | ''ease'' | Langsam starten, beschleunigen, langsam enden (Standard) |
 | ''ease-in'' | Langsam starten, schnell enden |
@@ -173,15 +253,11 @@ Der dritte Parameter von ''transition'' steuert die Beschleunigungskurve der Ani
 | ''ease-in-out'' | Langsam starten und enden, in der Mitte schnell |
 | ''linear'' | Konstante Geschwindigkeit |
 | ''cubic-bezier(x,x,x,x)'' | Vollständig selbst definierte Kurve |
+</WRAP>
 
 Im Accordion-Projekt verwenden wir ''ease-in-out'' – das Panel öffnet und schliesst sich jeweils mit einer leichten Verzögerung am Anfang und Ende, was natürlicher wirkt.
-
 
 <WRAP center round box 80%>
 Interaktives Beispiel mit Beispiel-Code: [[https://css-transitions.vercel.app|Externe Seite erkunden.]]
 [[https://css-transitions.vercel.app|{{ :de:modul:m291:learningunits:lu05:theorie:screenshot_2026-03-09_at_00.26.55.png?600 |}}]]
 </WRAP>
-
-
-
-
