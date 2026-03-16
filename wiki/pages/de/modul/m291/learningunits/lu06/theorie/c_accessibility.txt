@@ -93,6 +93,11 @@ Inhalte müssen auf verschiedenen Geräten und mit Hilfstechnologien (Screenread
 
 Ein **Screenreader** ist ein Hilfsprogramm, das den Bildschirminhalt vorliest. Der Browser baut parallel zum DOM-Baum einen **Accessibility Tree** auf – eine vereinfachte Darstellung der Seite mit Rollen, Zuständen und Namen aller Elemente. Der Screenreader liest diesen Tree aus. Unter Mac gibt es in den System-Einstellungen zur "Accessibility" (Bedienungshilfen) die Möglichkeit VoiceOver zu aktivieren. Unter Windows heisst es Sprachausgabe.
 
+<WRAP center round info 80%>
+**Windows**: Sprachausgabe einschalten -> https://support.microsoft.com/de-de/windows/kapitel-1-einf%C3%BChrung-in-die-sprachausgabe-7fe8fd72-541f-4536-7658-bfc37ddaf9c6\\
+**Mac**: VoiceOver einschalten -> https://support.apple.com/de-ch/guide/voiceover/mchlp2687/mac
+</WRAP>
+
 
 
 

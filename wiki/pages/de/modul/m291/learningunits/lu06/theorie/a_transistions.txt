@@ -67,6 +67,8 @@ Nicht jede CSS-Eigenschaft lässt sich animieren. Die Grundregel: Eine Eigenscha
 **Gegenbeispiel:** ''font-family: serif'' → ''font-family: monospace'' ❌ – was wäre eine Schriftart-Mitte?
 </WRAP>
 
+{{:de:modul:m291:learningunits:lu06:theorie:diagram-shapes-transitio-b51956d49a4c_1920.jpg?direct| Schema mit animierbaren CSS-Eigenschaften.}}
+
 ==== Gut animierbare Eigenschaften ====
 
 === transform ===
