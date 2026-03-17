@@ -1,0 +1,103 @@
+====== LU03.L01 - Box-Modell ======
+
+===== Aufgabe 1: Theoriefragen zum CSS-Box-Modell =====
+
+Beantworten Sie die folgenden Fragen:
+**1. Was versteht man unter dem CSS-Box-Modell und welche Bestandteile umfasst es?**
+  * Das CSS-Box-Modell beschreibt, wie jedes HTML-Element als rechteckige Box aufgebaut ist. 
+  * Es besteht aus vier Bereichen: Content (Inhalt), Padding (Innenabstand), Border (Rahmen) und Margin (Aussenabstand). 
+  * Diese bestimmen gemeinsam die Grösse und den Abstand eines Elements im Layout.
+   
+**2. Wie unterscheidet sich das klassische vom neuen Box-Modell in Bezug auf die Berechnung der Elementbreite?**
+  * Beim klassischen Modell (content-box) bezieht sich die Breite nur auf den Inhalt, Padding und Border werden zusätzlich addiert. 
+  * Beim neuen Modell (border-box) sind Padding und Border bereits in der angegebenen Breite enthalten. Dadurch bleibt die Gesamtbreite konstant und besser berechenbar. 
+  
+**3. Was passiert, wenn zwei vertikale Aussenabstände (Margins) aufeinandertreffen?**
+  * Treffen zwei vertikale Margins aufeinander, werden sie nicht addiert, sondern //kollabieren//. 
+  * Es gilt dann nur der grössere der beiden Abstände. 
+  * Dieses Verhalten nennt man Margin-Collapsing und tritt nur bei vertikalen Abständen auf. 
+
+----
+
+===== Aufgabe 2: Übung zum CSS-Box-Modell =====
+
+==== Ausgangslage ====
+Erstellen Sie eine Datei ''index.html'' mit folgendem Inhalt:
+
+<code html>
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-Box-Modell Uebung</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="wrapper">
+  <div class="container">
+    <h2>Klassisches Modell</h2>
+    <p>
+      Dieser Absatz demonstriert das klassische Box-Modell. 
+      Durch Padding und Border wird die Box breiter als die angegebenen 400px (ca. 520px).
+      Nachweis: 400 + der Rest
+    </p>
+  </div>
+
+  <div class="container new-box">
+    <h2>Border-Box</h2>
+    <p>
+      Dieser Absatz demonstriert das neue Box-Modell. Die Gesamtbreite bleibt gleich bei 400px, 
+      egal wie gross Padding und Border sind.
+      Nachweiss: 400 inkl. dem Rest
+    </p>
+  </div>
+</div>
+
+    
+</body>
+</html></code>
+
+==== Aufgabenstellung ====
+
+  - Erstellen Sie eine CSS-Datei ''styles.css'' und verknüpfen Sie die CSS-Datei mit der HTML-Datei.
+  - Weisen Sie der Klasse ''.container'' eine feste Breite von 400px, einen Innenabstand (''padding'') von 20px und einen Rahmen von 2px solid schwarz zu.
+  - Erstellen Sie eine zweite CSS-Regel für ''.new-box'', die das neue Box-Modell (''box-sizing: border-box'') verwendet und sich in der Breite von der Standardbox unterscheidet.
+  - Weisen Sie dem gesamten ''<body>'' eine Hintergrundfarbe zu, um den Unterschied zwischen den Box-Modellen besser sichtbar zu machen.
+  - Testen Sie das Verhalten der Boxen mit und ohne das neue Box-Modell.
+<code css>
+body {
+  background: red;
+}
+body {
+  background-color: lightgray;
+  font-family: Arial, sans-serif;
+}
+
+/* nebeneinander */
+.wrapper {
+  display: flex;
+  gap: 40px;
+  margin: 40px;
+}
+
+/* beide Boxen */
+.container {
+  width: 400px;
+  padding: 50px;
+  border: 10px solid black;
+  background-color: white;
+}
+
+/* neues Boxmodell */
+.new-box {
+  width: 400px;
+  padding: 50px;
+  box-sizing: border-box;
+  background-color: #d9edf7;
+}
+</code>
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir
