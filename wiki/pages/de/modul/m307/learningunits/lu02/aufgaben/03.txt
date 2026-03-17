@@ -3,13 +3,13 @@
 ===== Rahmenbedingungen =====
   * Sozialform: Einzelarbeit
   * Hilfsmittel: Openbooks
-  * Zeit: 30 Minuten
+  * Zeit: 20 Minuten
   * Erwartetes Resultat: JavaScript-File, dass ein gegebenes JSON File einliest und auf der Computer-Konsole dynamisch ausgibt.
 
 ===== Ausgangslage =====
 Das nachfolgende JSON-File //lernende2.json// mit 20 Lernenden ist gegeben. Sie können es hier herunterladen und in Ihre Entwicklungsumgebung einbetten.
 
-In diesen Falle sind es //nur// 20 Einträge, es könnte aber auch 200 oder 2'000 sein. Der Punkt ist, dass wir die Ausgabe dynamisch gestalten müssen, da es keinen Sinn mach die 20 Sätze statisch in eine File //hard-zu-kodieren//.
+In diesen Falle sind es //nur// 20 Einträge, es könnte aber auch 200 oder 2'000 sein. Der Punkt ist, dass wir die Ausgabe dynamisch gestalten müssen, da es keinen Sinn macht die 20 Sätze statisch in eine File //hard-zu-kodieren//.
 
 Die dynamische Ausgabe erreichen wird mit einer Schleife, die die Daten vom ersten bis zum letzten Satz durchläuft und die Ausgabe in die Konsole bringt.
 

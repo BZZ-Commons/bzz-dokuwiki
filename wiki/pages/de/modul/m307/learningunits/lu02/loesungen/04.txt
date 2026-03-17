@@ -36,6 +36,11 @@ Das Ergebnis der Ausgabe sieht dann wie folgt aus:
 ===== Lösungen des HTML/JS-Sourcecodes =====
 
   <!DOCTYPE html>
+  <!-- 
+     Author: Volkan Demir, 17.03.26
+     LU01.l04: Dynamischer Ausgabe von JSON-Daten mittels einer Schleife
+     Das Ergebnis ist dann in der Browserkonsole sichtbar
+  -->
   <html lang="de">
   <head>
     <meta charset="UTF-8">
