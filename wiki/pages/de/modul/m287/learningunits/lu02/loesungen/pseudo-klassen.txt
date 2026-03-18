@@ -1,0 +1,121 @@
+====== LU02.A03 - Pseudo-Klassen =======
+
+===== Aufgabe 1: Theoriefragen zu Pseudo-Klassen =====
+
+Beantworten Sie die folgenden Fragen zu CSS-Pseudo-Klassen:
+
+**1. Was ist eine CSS-Pseudo-Klasse? Erkläre den Unterschied zwischen einer normalen Klasse und einer Pseudo-Klasse?**
+  * Eine Pseudo-Klasse beschreibt einen bestimmten Zustand eines Elements (z. B. Hover oder Fokus), ohne dass HTML angepasst wird. 
+  * Eine normale Klasse wird dagegen explizit im HTML vergeben (class="...") und ist dauerhaft.
+
+**2. Welche Pseudo-Klasse wird verwendet, um das Styling eines Links zu ändern, wenn die Maus darüberfährt?**
+  * Die Pseudo-Klasse lautet :hover und wird aktiviert, wenn sich die Maus über dem Element befindet.
+
+** 3. Mit welcher Pseudo-Klasse kann ein Element gezielt werden, das den Fokus hat (z. B. ein Input-Feld)?**
+  * Dafür wird :focus verwendet; sie greift, wenn ein Element aktiv ausgewählt ist (z. B. durch Klick oder Tab).
+
+** 4. Welche Pseudo-Klassen ermöglichen es, das erste und das letzte Kind eines übergeordneten Elements zu stylen?**
+  * //:first-child// wählt das erste Kind eines Elements
+  * //:last-child// das letzte
+
+**5. Erkläre den Unterschied zwischen ''nth-child(n)'' und ''nth-of-type(n)''.**
+  * //nth-child(n)// zählt alle Kindelemente unabhängig vom Typ
+  * //nth-of-type(n)// berücksichtigt nur Elemente desselben Typs (z. B. nur <li>)
+
+----
+
+===== Index.html =====
+
+<code html>
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-Klassen Übung</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Pseudo-Klassen in Aktion</h1>
+    <button>Klick mich</button>
+    <input type="text" placeholder="Fokus mich">
+    <ul>
+        <li>Element 1</li>
+        <li>Element 2</li>
+        <li>Element 3</li>
+        <li>Element 4</li>
+    </ul>
+</body>
+</html>
+</code>
+
+==== Aufgabenstellung ====
+
+  - Erstellen Sie eine CSS-Datei ''styles.css'' und verknüpfe sie die CSS-Datei mit der HTML-Datei.
+  - Fügen Sie eine Regel hinzu, die das ''<button>''-Element verändert, wenn die Maus darüberfährt (''hover'').
+  - Erstellen Sie eine Regel für ''button:active'', sodass sich das Aussehen ändert, wenn der Button geklickt wird.
+  - Gestalten Sie das ''<input>''-Feld so, dass sich die Rahmenfarbe ändert, wenn es fokussiert wird (''focus'').
+  - Setzen Sie eine Regel, die den ersten ''<li>'' fett macht und den letzten ''<li>'' grau färbt.
+  - Verwenden Sie ''nth-child(n)'', um das zweite ''<li>''-Element in einer anderen Farbe darzustellen.
+  - Fügen Sie eine Deklaration hinzu, sodass das ''<h1>''-Element eine andere Farbe bekommt, wenn man mit der Maus darüberfährt.
+  - Testen Sie Ihre Lösung, indem Sie die HTML-Datei in einem Browser öffnen und mit den Elementen interagiert!
+
+==== Lösung ''styles.css'' ====
+
+<code CSS>
+/* Grundlayout */
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+button {
+    padding: 10px 16px;
+    border: none;
+    background-color: steelblue;
+    color: white;
+    cursor: pointer;
+}
+
+/* Teil 2: Fügen Sie eine Regel hinzu, die das <button>-Element verändert, wenn die Maus darüberfährt (hover). */
+button:hover {
+    background-color: darkorange;
+}
+
+/* Teil 3: Erstellen Sie eine Regel für button:active, sodass sich das Aussehen ändert, wenn der Button geklickt wird. */
+button:active {
+    background-color: crimson;
+    transform: scale(0.97);
+}
+
+/* Teil 4: Gestalten Sie das <input>-Feld so, dass sich die Rahmenfarbe ändert, wenn es fokussiert wird (focus). */
+input {
+    padding: 8px;
+    border: 2px solid pink;
+    outline: none;
+}
+input:focus {
+    border-color: seagreen;
+}
+
+/* Teil 5: Setzen Sie eine Regel, die den ersten <li> fett macht und den letzten <li> grau färbt. */
+li:first-child {
+    font-weight: bold;
+}
+li:last-child {
+    color: gray;
+}
+
+/* Teil 6: Verwenden Sie nth-child(n), um das zweite <li>-Element in einer anderen Farbe darzustellen. */
+li:nth-child(2) {
+    color: blue;
+}
+
+/* Teil 7: Fügen Sie eine Deklaration hinzu, sodass das <h1>-Element eine andere Farbe bekommt, wenn man mit der Maus darüberfährt. */
+h1:hover {
+    color: purple;
+}
+</code>
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir
