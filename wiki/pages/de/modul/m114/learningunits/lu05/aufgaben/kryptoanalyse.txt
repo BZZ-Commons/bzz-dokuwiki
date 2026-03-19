@@ -2,7 +2,12 @@
 
 ===== Aufgaben =====
 Sie kennen nur den Chiffretext und das Verfahren.
-Versuchen Sie durch ausprobieren den Schlüssel zu ermitteln.
+Versuchen Sie durch ausprobieren den Schlüssel zu finden.
+
+<WRAP center round help 60%>
+Wie schwierig ist es, den Klartext zu ermitteln?
+</WRAP>
+
 
 === Caesar ===
   * Chiffretext: **HEWKILXVIGLXIMRJEGL**
@@ -11,6 +16,7 @@ Versuchen Sie durch ausprobieren den Schlüssel zu ermitteln.
   * Chiffretext: **MEDMNZIGDLKMTAZMILTUOMUE**
 
 === Unbekannte Verschlüsselungsmethode ===
+In diesem Fall wissen Sie nicht, welches Verfahren angewandt wurde.
 **KAOLLVSCJSZSAEWLLZBZAYAWYLL**
 ===== Lösungen =====
 [[de:modul:m114:learningunits:lu05:loesungen:kryptoanalyse]]

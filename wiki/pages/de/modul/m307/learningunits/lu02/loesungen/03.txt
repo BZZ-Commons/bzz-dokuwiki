@@ -6,7 +6,7 @@ Bauen Sie das nachfolgende statische Script um, sodass es dynamisch die JSON-Dat
 Dies realisieren Sie durch eine Schleife, die JSON-Lernenden-Daten durchläuft. Eine zweite innere Schleife benötigen Sie für die Hobbies.
     
 ===== Lösungen =====
-
+<code JS>
   const fs = require("fs");
   // JSON asynchron einlesen
   fs.readFile("lernende.json", "utf8", (err, data) => {
@@ -36,7 +36,7 @@ Dies realisieren Sie durch eine Schleife, die JSON-Lernenden-Daten durchläuft. 
       console.log(); // Leerzeile für Übersicht
     }
   });
-
+</code>
 ----
 [[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir
 
