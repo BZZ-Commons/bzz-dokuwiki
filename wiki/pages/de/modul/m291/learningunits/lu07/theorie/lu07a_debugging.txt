@@ -193,7 +193,7 @@ buttons.forEach((button) => {
 });
 </code>
 
-{{:de:modul:m291:learningunits:lu07:theorie:screenshot_2026-03-22_at_14.49.40.png?nolink&800| Screenshot mit Fehlermeldung in Entwicklertools}}
+{{:de:modul:m291:learningunits:lu07:theorie:screenshot_2026-03-22_at_14.49.40.png?direct&900| Screenshot mit Fehlermeldung in Entwicklertools}}
 
 **Was passiert:**
   * **Read**: Console zeigt ''Uncaught ReferenceError: e is not defined''
@@ -250,26 +250,21 @@ Wenn ''document.querySelector(...)'' ''null'' zurückgibt, obwohl das Element im
 
 Der Elements-Tab zeigt, was der Browser **tatsächlich** aus Ihrem Code gemacht hat – nicht was Sie geschrieben haben, sondern was nach dem Parsen und Rendern übrig bleibt.
 
+{{:de:modul:m291:learningunits:lu07:theorie:screenshot_2026-03-22_at_21.53.20.png?nolink&800| Elements-Tab im Browser}}
+
 ==== CSS live ausprobieren ====
 
 Workflow:
   - Elements-Tab öffnen (F12 → Elements)
   - Rechts: Styles-Panel
   - Eigenschaft anklicken und Wert ändern
-  - **Sofortiges Feedback** – ohne die Datei zu speichern
+  - Änderung wird direkt im Browser gerendert und sichtbar
 
 Wenn der Look stimmt: dann erst in die CSS-Datei übertragen.
 
 <WRAP center round tip 80%>
-Deaktivierte CSS-Regeln (durchgestrichen) bedeuten: eine andere Regel mit höherer Spezifität gewinnt. Der **Computed-Tab** zeigt den tatsächlich angewendeten Wert.
+Deaktivierte CSS-Regeln (durchgestrichen) bedeuten: eine andere Regel mit höherer Spezifität (s. CSS Kaskade LU02) gewinnt oder es gibt ein Syntax-Fehler.
 </WRAP>
-
-==== Der Computed-Tab ====
-
-Wenn ''height: auto'' im CSS steht, aber die Transition nicht funktioniert:\\
-→ Computed-Tab öffnen → dort steht der **berechnete Pixelwert**.
-
-Das erklärt, warum ''transition: height'' auf ''auto'' nicht direkt funktioniert – der Browser kennt den Zielwert nicht. (Lösung: ''interpolate-size: allow-keywords;'')
 
 
 ===== Das Debugging-Protokoll =====

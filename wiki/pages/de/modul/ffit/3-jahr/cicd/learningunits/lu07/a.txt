@@ -1,0 +1,30 @@
+====== LU07a - Einleitung E2e-Testing ======
+
+Unter End-to-End-Testing versteht man das Testen des Gesamtsystems mit allen Schichten (Frontend, Backend, DB).
+
+Der Testfall ist dabei oft einem Prozess oder Use-Case angelehnt. Zum Beispiel:
+  - Voraussetzungen: Benutzer existiert noch nicht (bei der Überprüfung der Ausgangslage kann bei Bedarf auch abgekürzt werden, das heisst, direkt das Backend oder gar die DB gefragt werden.
+  - Neuen Benutzer anlegen
+  - Mit neuem Benutzer einloggen.
+  - Ausloggen
+  - Repetierbarkeit sicherstellen (Entweder Benutzer löschen oder Benutzernamen jeweils dynamisch generieren.)
+
+Empfehlung: Zur Auswertung und Nachvollziehbarkeit ist es oft sinnvoll Objekte nur zu löschen, wenn dies zwingend nötig ist und ansonsten stehenzulassen. Dadurch können im Nachhinein allfällige Fehler besser analysiert werden, sofern das System bestehen bleibt.
+
+==== E2e-Frameworks ====
+Es gibt zahlreiche Frameworks und Bibliotheken für das E2e-Testing. Für Webapplikationen sind die bekanntesten:
+  * Selenium (Tests können in Java, Python, etc. geschrieben werden, je nach Webdriver)
+  * Cypress
+  * Protractor (Ehemals Standard bei Angular, mittlerweile nicht mehr unterhalten, weil das basierende WebdriverJS/Selenium-Webdriver veraltet ist)
+  * WebdriverIO
+  * Testcafé
+  * Playwright
+  * Puppeteer
+  * Appium
+
+{{:de:modul:ffit:3-jahr:cicd:learningunits:lu07:pie_chart_e2e_frameworks.png?600|}}
+© Michael Mintz
+
+Das Beispiel mit Protractor zeigt, dass die Beliebtheit und sogar ganze Standards innerhalb weniger Monate oder Jahre ändern können. Entsprechend ist die Verteilung der obigen Grafik mit grosser Wahrscheinlichkeit bereits nicht mehr aktuell.
+
+Ein Beispiel eines Tests mit TestCafé finden Sie unter https://github.com/AlexanderPeter/cicd/blob/develop/frontend/e2e/poll-creation.test.ts

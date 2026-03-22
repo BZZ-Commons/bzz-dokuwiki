@@ -1,25 +1,10 @@
-====== LU07: Übungsaufgabe – Accordion debuggen ======
+====== LU07: Übungsaufgaben – Accordion debuggen ======
 
-In dieser Aufgabe erhalten Sie ein **absichtlich fehlerhaftes Accordion-Projekt**. Ihre Aufgabe ist es, alle Fehler zu finden und zu beheben – ohne die Lösung nachzuschauen.
+
+In diesen Aufgaben erhalten Sie ein **absichtlich fehlerhaftes Accordion-Projekt**. Ihre Aufgabe ist es, alle Fehler zu finden und zu beheben.
 
 <WRAP center round tip 80%>
-**Vorgehen:** Öffnen Sie die Dateien im Editor und im Browser. Schauen Sie nicht einfach den Code an – **untersuchen** Sie mit den Entwickler-Tools und mit den richtigen Werkzeugen (Webstorm/VS-Code + HTMHint etc).
-</WRAP>
-
-<WRAP center round download 60%>
-{{ :de:modul:m291:learningunits:lu07:aufgaben:lu07_aufgabe.zip | Übungs-Dateien downloaden }}
-</WRAP>
-
-
-===== Das Projekt =====
-
-Das Projekt besteht aus drei Dateien:
-
-<WRAP round box 80% center>
-^ Datei ^ Inhalt ^
-| ''index.html'' | Struktur des Accordions mit 4 Fragen |
-| ''style.css'' | Styling und Transitions |
-| ''script.js'' | Interaktivität (Öffnen/Schliessen) |
+**Vorgehen:** Öffnen Sie die Dateien im Editor und im Browser. Schauen Sie nicht einfach den Code an – **untersuchen** Sie mit den Entwickler-Tools und mit den richtigen Werkzeugen (WebStorm / VS Code + HTMLHint etc.).
 </WRAP>
 
 **Erwartetes Verhalten** (wenn alles korrekt ist):
@@ -31,31 +16,74 @@ Das Projekt besteht aus drei Dateien:
 {{:de:modul:m291:learningunits:lu07:aufgaben:debugging_solution.gif?nolink| Wie es nach dem Debuggen aussehen sollte.}}
 
 
+===== Variante A =====
 
-
-===== Aufgabe =====
+<WRAP center round download 60%>
+{{ :de:modul:m291:learningunits:lu07:aufgaben:lu07_aufgabe_a.zip | Variante A downloaden }}
+</WRAP>
 
 Das Projekt enthält **5 absichtliche Bugs**. Finden und beheben Sie alle.
 
-==== Hinweise ====
-
 <WRAP round box 80% center>
 ^ Bug ^ Symptom ^ Werkzeug ^
-| Bug 1 | Die Seite hat kein Styling – sie sieht aus wie reines HTML ohne CSS | Editor (WebStorm / HTMLHint) |
-| Bug 2 | Script wird ausgeführt bevor der Browser das HTML gelesen hat | Editor + Console |
+| Bug 1 | Die Seite hat kein Styling – sie sieht aus wie reines HTML ohne CSS | Editor |
+| Bug 2 | Script wird ausgeführt bevor der Browser das HTML gelesen hat | Editor + Console |
 | Bug 3 | Die Buttons reagieren auf keinen Klick – keine Fehlermeldung in der Console | Editor + Console (''console.log'') |
-| Bug 4 | Die Panels öffnen sich, aber mit keiner Transition / bleiben hängen | Editor |
+| Bug 4 | Die Panels öffnen sich, aber mit keiner Transition / bleiben hängen | Editor (WebStorm / Stylelint) – Elements-Tab |
 | Bug 5 | Die Panels lassen sich zwar öffnen, aber nicht mehr schliessen | Console – Logikfehler im Code |
 </WRAP>
 
-<WRAP center round important 80%>
-**Wichtig:** Nicht alle Bugs erzeugen eine rote Fehlermeldung in der Console. Manche sind "lautlos" – das macht sie schwieriger zu finden. Nutzen Sie ''console.log()'' und die Fehlermeldungen im Code-Editor.
+===== Variante B =====
+
+<WRAP center round download 60%>
+{{ :de:modul:m291:learningunits:lu07:aufgaben:lu07_aufgabe_b.zip | Variante B downloaden }}
+</WRAP>
+
+Das Projekt enthält **5 absichtliche Bugs**. Finden und beheben Sie alle.
+
+<WRAP round box 80% center>
+^ Bug ^ Symptom ^ Werkzeug ^
+| Bug 1 | Die Seite hat kein Styling – sie sieht aus wie reines HTML ohne CSS | Editor |
+| Bug 2 | Script wird ausgeführt bevor der Browser das HTML gelesen hat | Editor + Console |
+| Bug 3 | Die Panels öffnen sich (der Button-Pfeil dreht sich), aber der Inhalt bleibt unsichtbar | Editor – Elements-Tab |
+| Bug 4 | Nur der erste Button reagiert auf Klicks – die anderen drei tun nichts | Console (''console.log'') |
+| Bug 5 | Nach dem Klick erscheint sofort ein ''ReferenceError'' in der Console | Console – Fehlermeldung lesen |
+</WRAP>
+
+
+===== Variante C =====
+
+<WRAP center round download 60%>
+{{ :de:modul:m291:learningunits:lu07:aufgaben:lu07_aufgabe_c.zip | Variante C downloaden }}
+</WRAP>
+
+Das Projekt enthält **5 absichtliche Bugs**. Finden und beheben Sie alle.
+
+
+<WRAP round box 80% center>
+^ Bug ^ Symptom ^ Werkzeug ^
+| Bug 1 | Die Seite hat kein Styling – sie sieht aus wie reines HTML ohne CSS | Editor |
+| Bug 2 | Script wird ausgeführt bevor der Browser das HTML gelesen hat | Editor + Console |
+| Bug 3 | Gar nichts passiert beim Klick – die Console zeigt sofort beim Laden einen ''SyntaxError'' | Console – Fehlermeldung lesen und Zeilennummer anklicken |
+| Bug 4 | Nach dem Beheben von Bug 3: Alle Panels sind von Anfang an sichtbar | Editor – Elements-Tab |
+| Bug 5 | Nach dem Beheben von Bug 4: Klick auf einen Button → sofortiger ''TypeError'' in der Console | Console + Elements-Tab |
 </WRAP>
 
 
 ===== Debugging-Protokoll =====
 
-Füllen Sie für **jeden gefundenen Bug** das Protokoll "Moodle: LU07 – Protokoll-Abgabe" aus. Geben Sie es am Ende der Stunde ab.
+Füllen Sie für **jeden gefundenen Bug** das folgende Protokoll in der Moodle-Abgabe Seite aus. Geben Sie es 10 Minuten vor Ende der Unterrichtseinheit ab.
+
+<WRAP round box 80% center>
+^ Schritt ^ Ihre Antwort ^
+| **Bug Nr.** | |
+| **1. Beobachten** – Was passiert genau? | |
+| **2. Hypothese** – Was könnte die Ursache sein? | |
+| **3. Testen** – Wie haben Sie es geprüft? (welches Tool, was haben Sie gemacht) | |
+| **4. Fix** – Was haben Sie geändert? | |
+</WRAP>
+
+Eine Vorlage dieser Tabelle finden Sie in der Moodle Abgabe.
 
 ===== Hilfestellungen =====
 
@@ -67,7 +95,3 @@ Falls Sie nicht weiterkommen, gehen Sie diese Reihenfolge durch:
   - Schauen Sie im Elements-Tab nach, ob CSS-Regeln durchgestrichen sind
   - Prüfen Sie die Zeilennummer in der Fehlermeldung – klicken Sie darauf
 
-<WRAP center round info 80%>
-**Erinnerung an die Debugging-Reihenfolge:**\\
-1. Formatter / Linter → 2. Console → 3. Elements-Tab
-</WRAP>
