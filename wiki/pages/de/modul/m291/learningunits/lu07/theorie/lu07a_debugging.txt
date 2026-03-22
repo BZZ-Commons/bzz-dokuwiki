@@ -1,0 +1,341 @@
+====== LU07a: Debugging – Fehler finden und verstehen ======
+
+Debugging bedeutet den Browser (oder den Editor) zu **befragen** – mit den richtigen Werkzeugen, in der richtigen Reihenfolge.
+
+<WRAP center round tip 60%>
+Ein Fehler, den man nicht reproduzieren kann, ist schwer zu beheben.
+Fangen Sie immer immer damit an, den Fehler genau zu beschreiben – nicht „es funktioniert nicht", sondern „wenn ich auf den Button klicke, passiert X statt Y".
+</WRAP>
+
+{{:de:modul:m291:learningunits:lu07:theorie:funny-coding-memes-4-2-24-986569915.jpg?direct| Meme: Ein Teddybär sitzt vor dem Computer. Darüber die Aussage "Me When I Copy Exact Same Code From Tutorial And It Doesn't Work". Rechts davon eine Wegverzweigung: auf dem linken Weg steht der Variablennamen "itemID" und auf dem rechten Weg "itemId" (Unterschied in Gross-Kleinschreibung.}}
+//Bildunterschrift: Memes über debugging und Code finden im Internet, der dann nicht funktioniert.//
+
+
+
+
+===== Die Debugging-Reihenfolge =====
+
+Nicht jedes Werkzeug hilft bei jedem Fehler. Gehen Sie diese Reihenfolge durch:
+
+<WRAP round box 80% center>
+^ Schritt ^ Werkzeug ^ Hilft bei ^
+| 1 | Formatter / Linter | Syntaxfehler (fehlende Klammern, Semikolons, falsch geschachteltes HTML) |
+| 2 | Console / Breakpoints | Laufzeitfehler (was passiert, während der Code läuft) |
+| 3 | Elements-Tab | Rendering-Fehler (was macht der Browser aus Ihrem CSS/HTML) |
+</WRAP>
+
+
+===== Werkzeug 1: Formatter & Linter =====
+
+Bevor Sie die DevTools öffnen: Schauen Sie in den **Code-Editor**.
+
+Sometimes it’s the tiniest things, a missing closing tag, a sneaky typo in a class name, or wonky indentation, that bring your UI crashing down. In today’s world of fast-growing front-end ecosystems, where teams, tools, and frameworks collide, it’s all too easy for these little gremlins to slip through unnoticed. Enter linting: your new (or renewed?) best friend!
+
+1.1 What is Linting?
+Linting is the process of running a program that analyzes your code for potential errors, bad practices, or deviations from coding standards. Think of it as a spellchecker, but for code. It doesn't just look for typos; it enforces structure, style, and semantics.
+
+The term “lint” originated from a Unix utility written in 1978 to flag suspicious C code. Today, it’s evolved into a vital part of modern development, helping developers write clean, readable, and consistent code across languages like HTML, CSS, and JavaScript.
+
+Reference: Wikipedia - Lint (software)
+
+1.2 Why It Matters in Front-End Development
+Unlike compiled languages, HTML, CSS, and JavaScript don’t always scream at you when something goes wrong. Browsers tend to silently ignore mistakes or fallback to default behavior. That might seem forgiving,until you spend hours hunting down why your layout broke or why your JavaScript silently fails on mobile.
+
+Linting helps catch these issues early, ideally right in your code editor before the file is even saved.
+
+Some real benefits of linting:
+
+Cleaner Code: Catch unclosed tags, unused variables, and bad syntax as you type.
+Team Consistency: Enforce a shared style guide automatically,no more nitpicking in code reviews.
+Faster Debugging: Errors become visible before they reach the browser.
+Fewer Production Bugs: Lint rules reduce chances of semantic and runtime issues going unnoticed.
+1.3 How Linting Works in VS Code
+Modern editors like Visual Studio Code integrate beautifully with linting tools through extensions and configuration files. As you write code, the editor will underline potential issues in real time,offering suggestions, auto-fixes, and sometimes even refactoring help.
+
+Examples:
+
+In HTML, linters like HTMLHint will warn you if an image lacks an alt attribute.
+For CSS, Stylelint can catch duplicate properties, invalid values, or even vendor prefix issues.
+In JavaScript, ESLint highlights everything from unused variables to deprecated syntax,and integrates seamlessly with modern tooling like Prettier.
+1.4 A Quick Real-Life Example
+Imagine you're building a product landing page. Your teammate uses 2-space indentation in HTML, while you prefer tabs. One developer forgets to add alt tags to images, another uses a var instead of const in JavaScript. By the time you merge your branches, the code works,but it’s a readability and maintainability nightmare.
+
+Now imagine this instead:
+
+Linting runs the moment you hit save. Errors and warnings appear inline. Code formatting aligns instantly. No more subjective code review debates,your team agrees on code style through config, not discussion.
+
+“An ounce of prevention is worth a pound of cure.”
+
+– Ben Franklin (and probably every senior dev ever)
+
+==== WebStorm ====
+
+WebStorm prüft den Code automatisch im Hintergrund. Farbige Unterwellungen bedeuten:
+  * **Rot** → Fehler (Der Code wird nicht funktionieren)
+  * **Gelb** → Warnung (sollte behoben werden)
+  * **Grau** → Hinweis (Stil-Empfehlung)
+
+Hover über die Markierung – Sie sehen eine Erklärung des Problems.\\
+Mit **Ctrl+Alt+L** (Windows) / **Cmd+Alt+L** (Mac) formatieren Sie die ganze Datei.
+
+==== VS Code + Prettier ====
+
+Prettier ist eine Extension, die den Code beim Speichern automatisch formatiert.
+
+**Einmalige Einrichtung:**
+  - Extensions-Tab öffnen (Ctrl+Shift+X / Cmd+Shift+X)
+  - Suchen: **Prettier – Code formatter**
+  - Installieren
+  - Settings öffnen (Ctrl+, / Cmd+,), suchen nach ''format on save'', Checkbox aktivieren
+
+Ab jetzt: **Ctrl+S / Cmd+S** → Code wird automatisch schön eingerückt.
+
+==== Warum das wichtig ist ====
+
+Das folgende Beispiel wirft **keinen Fehler in der Console** – der Browser korrigiert den HTML-Fehler
+stillschweigend. Aber das Layout verhält sich seltsam:
+
+<WRAP round box 80% center>
+<code html>
+<div class="faq-item">
+  <button class="faq-btn">Frage 1</button>
+  <div class="faq-answer">Antwort 1</div>
+<!-- ↑ .faq-item wurde nicht geschlossen – Browser „repariert" das selbst -->
+
+<div class="faq-item">
+  <button class="faq-btn">Frage 2</button>
+  <div class="faq-answer">Antwort 2</div>
+</div>
+</code>
+</WRAP>
+
+Und dieser CSS-Fehler ist in DevTools **unsichtbar** – Prettier findet ihn sofort:
+
+<WRAP round box 80% center>
+<code css>
+.faq-item {
+  border: 1px solid #ccc;
+  margin-bottom: 8px    /* ← Semikolon fehlt – die nächste Zeile wird ignoriert */
+  padding: 12px;
+}
+</code>
+</WRAP>
+
+<WRAP center round info 80%>
+Formatter und Linter finden Fehler, **bevor der Code überhaupt läuft**.\\
+''console.log'' hilft hier nicht.
+</WRAP>
+
+
+===== Werkzeug 2: Die Browser-Console =====
+
+Die Console ist der direkte Draht zum laufenden (JavaScript-)Code.
+
+Erklären, was console.log macht: 
+
+==== console.log richtig einsetzen ====
+
+Besserer Code und einfacher und ausführlicher beschreiben, was console.log, console.error etc machen und wie sie eingesetzt werden.
+
+
+<WRAP round box 80% center>
+<code js>
+// ❌ Wenig hilfreich – was ist das genau?
+console.log(items);
+console.log('faq items:', items);
+console.log('Anzahl:', items.length);
+
+// ✅ Für Arrays von Objekten – tabellarisch anzeigen
+console.table([...items].map((el, i) => ({
+  index: i,
+  text: el.querySelector('.faq-btn').textContent,
+  open: el.classList.contains('is-open')
+})));
+
+// ✅ Fehler bewusst kennzeichnen
+console.error('Kein Element gefunden für Selector:', selector);
+</code>
+</WRAP>
+
+==== Fehler untersuchen ====
+
+<WRAP round box 80% center>
+<code js>
+document.querySelector('.faq-btn').addEventListener('click', () => {
+   console.log('e.target:', e.target);
+});
+</code>
+
+Dieser Code gibt in der Browser-Konsole einen Fehler aus: ''Uncaught ReferenceError: e is not defined at HTMLButtonElement.<anonymous> (index.html:31:38)''. Sehen Sie sich dazu folgender Screenshot an.
+    
+    {{:de:modul:m291:learningunits:lu07:theorie:screenshot_2026-03-22_at_11.31.39.png?direct| Fehlermeldung im Browser und wie sie uns hilft den Fehler zu finden.}}
+</WRAP>
+
+
+==== this in Event-Handlern ====
+
+''this'' verhält sich unterschiedlich je nach Funktion:
+
+<WRAP round box 80% center>
+<code js>
+const btn = document.querySelector('.faq-btn');
+
+// Normale Funktion: this = das Element mit dem Listener (btn)
+btn.addEventListener('click', function(e) {
+  console.log(this);        // <button class="faq-btn">
+  console.log(e.target);    // meistens dasselbe – ausser bei verschachtelten Elementen
+});
+
+// Pfeilfunktion: this = window (oder der äussere Kontext)
+btn.addEventListener('click', (e) => {
+  console.log(this);        // Window-Objekt – nicht der Button!
+  console.log(e.target);    // <button class="faq-btn"> – hier e.target nutzen
+});
+</code>
+</WRAP>
+
+**Faustregel**: In Event-Handlern nutze ''e.target'' oder ''e.currentTarget'' statt ''this'' –
+das funktioniert zuverlässig in beiden Schreibweisen.
+
+==== Häufige Console-Fehler verstehen ====
+
+<WRAP round box 80% center>
+^ Fehlermeldung ^ Bedeutung ^ Häufige Ursache ^
+| ''TypeError: Cannot read properties of null'' | Du versuchst, auf ein Element zuzugreifen, das nicht existiert | Falscher Selector, Element noch nicht geladen |
+| ''ReferenceError: x is not defined'' | Variable ''x'' existiert an dieser Stelle nicht | Tippfehler, falsche Scope-Ebene |
+| ''ReferenceError: Cannot access 'x' before initialization'' | Variable wird vor ihrer Deklaration benutzt | ''let'' / ''const'' zu weit unten im Code |
+| ''addEventListener is not a function'' | Das Objekt ist kein DOM-Element | ''querySelector'' hat ''null'' zurückgegeben |
+</WRAP>
+
+----
+
+===== Werkzeug 3: Der Elements-Tab =====
+
+Der Elements-Tab zeigt dir, was der Browser **tatsächlich** aus deinem Code gemacht hat –
+nicht was du geschrieben hast, sondern was nach dem Parsen und Rendern übrig bleibt.
+
+==== CSS live ausprobieren ====
+
+Workflow:
+  - Elements-Tab öffnen (F12 → Elements)
+  - Rechts: Styles-Panel
+  - Eigenschaft anklicken und Wert ändern
+  - **Sofortiges Feedback** – ohne Datei zu speichern
+
+Wenn der Look stimmt: dann erst in die CSS-Datei übertragen.
+
+<note tip>
+Deaktivierte CSS-Regeln (durchgestrichen) bedeuten: eine andere Regel mit höherer Spezifität
+gewinnt. Das Computed-Tab zeigt dir den tatsächlich angewendeten Wert.
+</note>
+
+==== Der Computed-Tab ====
+
+Wenn ''height: auto'' im CSS steht, aber die Transition nicht funktioniert:\\
+→ Computed-Tab öffnen → dort steht der **berechnete Pixelwert**.
+
+Das ist der Grund, warum ''transition: height'' auf ''auto'' nicht direkt funktioniert –
+der Browser kennt den Zielwert nicht. (Lösung: Grid-Trick oder ''max-height''.)
+
+==== nextSibling vs. nextElementSibling ====
+
+Ein häufiger Fehler, den der Elements-Tab sichtbar macht:
+
+<WRAP round box 80% center>
+<code js>
+// ❌ nextSibling gibt oft einen Text-Node zurück (Leerzeichen zwischen Tags)
+this.nextSibling.style.display = 'block'; // → TypeError
+
+// ✅ nextElementSibling gibt das nächste HTML-Element zurück
+this.nextElementSibling.style.display = 'block'; // → funktioniert
+</code>
+</WRAP>
+
+Im Elements-Tab kannst du sehen, dass zwischen zwei Tags oft ein Text-Node steht –
+der ist für das Auge unsichtbar, aber für JavaScript vorhanden.
+
+----
+
+===== Breakpoints setzen =====
+
+Manchmal reicht ''console.log'' nicht. Breakpoints stoppen den Code an einer bestimmten Stelle
+und lassen dich den Zustand genau untersuchen.
+
+**So geht's:**
+  - DevTools öffnen → Tab **Sources**
+  - Deine JS-Datei links in der Dateiliste anklicken
+  - Zeilennummer links anklicken → blauer Punkt = Breakpoint gesetzt
+  - Seite neu laden oder Aktion ausführen → Code stoppt an dieser Stelle
+  - Rechts siehst du alle aktuellen Variablenwerte
+
+**Navigieren:**
+  * **Step over** (F10): Nächste Zeile ausführen
+  * **Step into** (F11): In eine Funktion hineinsteigen
+  * **Resume** (F8): Weiter bis zum nächsten Breakpoint
+
+<note>
+Für den Anfang reicht: Breakpoint setzen, einmal F10 drücken, Variablenwert rechts ablesen.\\
+Den Rest lernst du automatisch, wenn du ihn brauchst.
+</note>
+
+----
+
+===== Das Debugging-Protokoll =====
+
+Dieses Format hilft dir, strukturiert vorzugehen – und aus Fehlern zu lernen:
+
+<WRAP round box 80% center>
+^ Schritt ^ Frage ^ Beispiel ^
+| 1. Beobachten | Was passiert genau? | „Wenn ich auf Frage 2 klicke, öffnet sich Frage 1" |
+| 2. Hypothese | Was könnte die Ursache sein? | „Der Selector trifft vielleicht das falsche Element" |
+| 3. Testen | Wie prüfe ich das? | ''console.log(e.target)'' im Click-Handler |
+| 4. Fazit | Was habe ich gelernt? | „e.target war das Icon, nicht der Button" |
+</WRAP>
+
+----
+
+===== Übungsaufgabe: Bugs finden =====
+
+Der folgende Code enthält **3 absichtliche Bugs**. Öffne DevTools und finde sie –
+ohne den Code anzustarren. Benutze Console, Elements-Tab oder Breakpoints.
+
+<WRAP round box 80% center>
+<code js>
+// BUG-DATEI – debug_exercise.js
+
+// Irgendwas stimmt hier nicht...
+const faqItems = document.querySelectorAll('.faq-iten');
+
+faqItems.forEach(item => {
+  const btn = item.querySelector('.faq-btn');
+
+  btn.addEventListener('klick', function(e) {
+    item.classList.toggle('is-open');
+    console.log('toggled:', item.classList.contains('is-open'));
+  });
+});
+
+console.log('Anzahl offene Items:', openCount);
+const openCount = document.querySelectorAll('.faq-item.is-open').length;
+</code>
+</WRAP>
+
+**Tipps:**
+  * Bug 1 erzeugt keinen roten Fehler – aber ''faqItems.length'' verrät ihn
+  * Bug 2 ist vollkommen lautlos – ein Breakpoint hilft
+  * Bug 3 wirft einen ''ReferenceError'' in der Console
+
+----
+
+===== Zusammenfassung =====
+
+  - **Formatter zuerst** (Prettier / WebStorm): Syntaxfehler finden, bevor der Code läuft
+  - **Console** mit Labels und ''console.table'': Laufzeitwerte sichtbar machen
+  - **Elements-Tab**: CSS live ausprobieren, Computed-Werte prüfen
+  - **Breakpoints**: Code stoppen und Zustand genau untersuchen
+  - **Protokoll**: Beobachten → Hypothese → Testen → Fazit
+
+<note important>
+Der häufigste Debugging-Fehler: Den Code anstarren und auf Inspiration warten.\\
+Öffne DevTools. Stelle dem Browser eine Frage. Dann antwortet er.
+</note>
