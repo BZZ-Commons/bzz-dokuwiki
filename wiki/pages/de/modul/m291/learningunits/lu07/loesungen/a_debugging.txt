@@ -1,0 +1,137 @@
+==== Häufige JS-Bugs aus dem Accordion-Projekt ====
+
+**Bug: Fehlende Dateiendung**:
+
+<WRAP round box 80% center>
+<code html>
+<!-- ❌ Dateiendung fehlt – Browser findet die Datei nicht, kein Console-Fehler -->
+<link href="style" rel="stylesheet">
+<script src="script"></script>
+
+<!-- ✅ Korrekt -->
+<link href="style.css" rel="stylesheet">
+<script src="script.js"></script>
+</code>
+</WRAP>
+
+**Bug: querySelector statt querySelectorAll**
+
+<WRAP round box 80% center>
+<code js>
+// ❌ Wählt nur den ersten Button – forEach funktioniert, aber nur 1 Element reagiert
+const buttons = document.querySelector('.accordion-btn');
+
+// ✅ Wählt alle Buttons
+const buttons = document.querySelectorAll('.accordion-btn');
+</code>
+</WRAP>
+
+**Bug: Fehlender Punkt vor dem Klassennamen**
+
+<WRAP round box 80% center>
+<code js>
+// ❌ Sucht nach einem HTML-Tag <accordion-btn> – findet nichts, gibt leere NodeList zurück
+const buttons = document.querySelectorAll('accordion-btn');
+
+// ✅ Punkt vor Klassennamen nicht vergessen
+const buttons = document.querySelectorAll('.accordion-btn');
+</code>
+</WRAP>
+
+Dieser Fehler erzeugt **keinen roten Fehler** in der Console. Prüfen Sie mit:
+<WRAP round box 80% center>
+<code js>
+console.log('Gefundene Buttons:', buttons.length); // → 0 zeigt das Problem
+</code>
+</WRAP>
+
+**Bug: Variablenname-Konflikt in forEach**
+
+<WRAP round box 80% center>
+<code js>
+// ❌ Aussen heisst die Variable 'button' (singular) – innen im forEach auch 'button'
+// → der äussere 'button' wird überschrieben, setAttribute betrifft immer den letzten
+button.forEach((button) => {
+  button.addEventListener('click', (e) => {
+    // ...
+    if (!panelIsOpen) {
+      panelElement.classList.add('open');
+      button.setAttribute('aria-expanded', 'true'); // ← welches 'button' ist das jetzt?
+    }
+  });
+});
+
+// ✅ Klare, unterschiedliche Namen
+buttons.forEach((button) => {
+  button.addEventListener('click', (e) => {
+    // ...
+    if (!panelIsOpen) {
+      panelElement.classList.add('open');
+      button.setAttribute('aria-expanded', 'true'); // ← eindeutig: der geklickte Button
+    }
+  });
+});
+</code>
+</WRAP>
+
+**Bug: Doppeltes classList.add – Panel lässt sich nicht schliessen**
+
+<WRAP round box 80% center>
+<code js>
+// ❌ classList.add('open') steht doppelt – einmal ausserhalb, einmal im if-Block
+// → Panel wird immer geöffnet, nie geschlossen
+buttons.forEach((button) => {
+  button.addEventListener('click', (e) => {
+    const panelElement = e.target.nextElementSibling;
+    const panelIsOpen = panelElement.classList.contains('open');
+
+    buttons.forEach((andererButton) => {
+      andererButton.nextElementSibling.classList.remove('open');
+      andererButton.setAttribute('aria-expanded', 'false');
+    });
+
+    panelElement.classList.add('open'); // ← diese Zeile wurde vergessen zu löschen
+
+    if (!panelIsOpen) {
+      panelElement.classList.add('open');
+      button.setAttribute('aria-expanded', 'true');
+    }
+  });
+});
+
+// ✅ Nur innerhalb des if-Blocks
+buttons.forEach((button) => {
+  button.addEventListener('click', (e) => {
+    const panelElement = e.target.nextElementSibling;
+    const panelIsOpen = panelElement.classList.contains('open');
+
+    buttons.forEach((andererButton) => {
+      andererButton.nextElementSibling.classList.remove('open');
+      andererButton.setAttribute('aria-expanded', 'false');
+    });
+
+    if (!panelIsOpen) {
+      panelElement.classList.add('open');
+      button.setAttribute('aria-expanded', 'true');
+    }
+  });
+});
+</code>
+</WRAP>
+
+**Bug: Syntaxfehler in forEach – fehlende öffnende Klammer**
+
+<WRAP round box 80% center>
+<code js>
+// ❌ Syntaxfehler: '(' fehlt vor 'andererButton'
+// → Console: Uncaught SyntaxError: Unexpected token '=>'
+buttons.forEach(andererButton) => {
+  andererButton.nextElementSibling.classList.remove('open');
+});
+
+// ✅ Korrekt
+buttons.forEach((andererButton) => {
+  andererButton.nextElementSibling.classList.remove('open');
+});
+</code>
+</WRAP>

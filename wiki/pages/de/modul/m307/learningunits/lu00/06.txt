@@ -1,23 +1,63 @@
 ====== LU00d - LB01 Inhalt  ======
 
-Das Fachgespräch LB1 wird die nachfolgenden Themen behandeln:
+Das Fachgespräch LB1 wird die nachfolgenden Themen vertieft behandeln:
   * LU01: Script4Fun
   * LU02: JSON 
 
-Zur Vorbereitung können Sie sich an den nachfolgenden Vorgaben bzw. Aufgabenstellungen orientieren.
+Zur Vorbereitung können Sie sich an den nachfolgenden Vorgaben bzw. Aufgabenstellungen orientieren. Jede/r Kandidat/in muss innerhalb der Zeitvorgabe je eine Aufgabe aus den nachfolgenden Kapiteln bearbeiten.
 
-  - **Einstieg**
-    - Sie sind rechtzeitig vor Ort
-    - Sie haben alle Ihre Scripte bzw. Scripte aus dem Unterricht offen bzw. wissen wo sich diesese befinden.
-    - Sie verfügen über die erforderliche Fachsprache (siehe nächstes Kapitel //Fachvobular//) 
-  - **Fachvokabular**
-    * Geschweifte Klammer Runde Klammer, Programmblock, Scope/Gültigkeitsbereich
-    * Methode/Funktion, Inputparameter, lokaler Parameter, Schlüsselwörter zur Variablendeklaration, Returnvalue/Rückgabewert, Konstante, Variable, Gültigkeitsbereich
-    * Schleife, Startbedingung, Laufbedingung, Endbedingung, Selektion, Vergleichsoperator, Vergleich Zuweisung 
 
-  - **LU01: Script4Fun**
-    - Funktionen erstellen können ohne Inputparameter
-    - 
+**1. Benötigtes Fachvokabular**
+  - Schlüsselwörter zur Variablendeklaration, Returnvalue/Rückgabewert, Konstante, Variable
+  - Geschweifte Klammer Runde Klammer, Programmblock, Scope/Gültigkeitsbereich
+  - Methode/Funktion, Inputparameter, lokaler Parameter
+  - Schleife, Startbedingung, Laufbedingung, Endbedingung, Schrittweite
+  - Selektion, Vergleichsoperator, Vergleich, Zuweisung 
+
+**2. LU01 - Script4Fun - Allgemein**
+  - Erstellen Sie eine Methode/Funktion, die bei Aufruf einen Gruss auf der Konsole ausgibt.
+  - Ergänzen Sie die Methode/Funktion xyz, die eine bestimmte Person grüsst. Der Name wird als Inputparameter übergeben.
+  - Erstellen Sie eine Methode mit dem Namen und eine Zahl x (zwischen 1 und 10) als Inputparameter. In der Methode wird die Person x mal gegrüsst. Ausgabe: "Hallo Volkan, zum x. Mal". Die Anzahl ist Aufsteigend.
+  - Erstellen Sie eine Methode mit dem Namen und eine Zahl y (zwischen 10 und 1) als Inputparameter. In der Methode wird die Person x mal gegrüsst. Ausgabe: "Hallo Volkan, zum y. Mal". Die Anzahl ist absteigend.
+
+**3. LU01 - Script4Fun - Geometrie**
+  - Methode: Kreisfläche mit dem Radius als Inputparameter.
+  - Methode: Kreisumfang mit dem Radius als Inputparameter.
+  - Methode: Kugelvolumen mit dem Radius als Inputparameter. 
+  - Methode: Kugeloberfläche mit dem Radius als Inputparameter. 
+  - Methode: Dreiecksfläche mit dem Grundfläche und der Höhe als Inputparameter.
+  - Methode: Dreiecksumfang mit dem Seitenlängen als Inputparameter.
+  - Methode: Pyramidenfläche mit dem Grundfläche, Anzahl der Mantelflächen und der Mantelfläche als Inputparameter. 
+  - Methode: Pyramidenoberfläche mit dem Radius als Inputparameter muss berechnet und auf der Konsolen ausgegeben werden.
+  - Methode: Rechteckfläche mit den 2 Seitenlängen als Inputparameter.
+  - Methode: Rechteckumfang mit den 2 Seitenlängen als Inputparameter
+  - Methode: Quarderoberfläche mit den 3 Seitenlängen als Inputparameter
+  - Methode: Quardervolumen mit den 3 Seiten als Inputparameter. 
+  - Methode: Quadratumfang mit der Seitenlänge als Inputparameter.
+  - Methode: Quadratfläche mit der Seitenlänge als Inputparameter
+  - Methode: Würfeloberfläche mit der Seitenlänge als Inputparameter.
+  - Methode: Würfelvolumen mit der Seitenlänge als Inputparameter.
+  - Methode: Fakultät (Produkt aus 1 .. n) mit dem Zielnummer als Inputparameter.
+**4. LU01 - Script4Fun - Arithmetik**
+  - Methode: Summen als zwei Zahlen bilden. 
+  - Methode: Differenz aus zwei Zahlen bilden.
+  - Methode: Produkt aus zwei Zahlen bilden.
+  - Methode: Quotienten aus zwei Zahlen bilden können. (Division durch Null nicht erlaubt)
+  - Methode: Gauss'sche Summenfunktion, also die Summer der Zahlen 1 .. n mit der Zielzahl n als Inputparameter
+**5. LU01 - Script4Fun - Sortierung**
+  - Methode: Bestehende Sortier-Methode umbauen können. Aufsteigende --> absteigend sortieren
+  - Methode: Bestehende Sortier-Methode umbauen können. Absteigende --> aufsteigend sortieren
+  - Methode: Bestehende Methode zur Ausgabe eines Arrays verändern: Ausgabereihenfolge, Schrittweite
+
+**7. LU02 - JSON**
+  - JSON-File nach Vorgaben anlegen.
+  - Bestehendes JSON-File ergänzen durch weitere Datensätze, beispielsweise weitere Personen ergänzen.
+  - Bestehendes JSON-File ergänzen durch Spezifizierung (Array in Array), beispielweise hat eine Person mehr als ein Hobby.
+  - Statische Verarbeitung von JSON-Daten dynamisch durchführen können durch eine Schleife (Personen) oder 2 Schleifen (Hobbies einer Person) .
+  - JSON-Daten einlesen und Browser-Konsole ausgeben 
+
+
+ 
 
   
 

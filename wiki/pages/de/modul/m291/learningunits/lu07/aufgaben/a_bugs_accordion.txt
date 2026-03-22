@@ -1,0 +1,73 @@
+====== LU07: Übungsaufgabe – Accordion debuggen ======
+
+In dieser Aufgabe erhalten Sie ein **absichtlich fehlerhaftes Accordion-Projekt**. Ihre Aufgabe ist es, alle Fehler zu finden und zu beheben – ohne die Lösung nachzuschauen.
+
+<WRAP center round tip 80%>
+**Vorgehen:** Öffnen Sie die Dateien im Editor und im Browser. Schauen Sie nicht einfach den Code an – **untersuchen** Sie mit den Entwickler-Tools und mit den richtigen Werkzeugen (Webstorm/VS-Code + HTMHint etc).
+</WRAP>
+
+<WRAP center round download 60%>
+{{ :de:modul:m291:learningunits:lu07:aufgaben:lu07_aufgabe.zip | Übungs-Dateien downloaden }}
+</WRAP>
+
+
+===== Das Projekt =====
+
+Das Projekt besteht aus drei Dateien:
+
+<WRAP round box 80% center>
+^ Datei ^ Inhalt ^
+| ''index.html'' | Struktur des Accordions mit 4 Fragen |
+| ''style.css'' | Styling und Transitions |
+| ''script.js'' | Interaktivität (Öffnen/Schliessen) |
+</WRAP>
+
+**Erwartetes Verhalten** (wenn alles korrekt ist):
+  * Die Seite sieht gestylt aus (Hintergrundfarbe, Abstände, Rahmen)
+  * Ein Klick auf eine Frage öffnet die Antwort mit Transition
+  * Ein zweiter Klick schliesst sie wieder
+  * Immer nur eine Antwort ist gleichzeitig offen
+
+{{:de:modul:m291:learningunits:lu07:aufgaben:debugging_solution.gif?nolink| Wie es nach dem Debuggen aussehen sollte.}}
+
+
+
+
+===== Aufgabe =====
+
+Das Projekt enthält **5 absichtliche Bugs**. Finden und beheben Sie alle.
+
+==== Hinweise ====
+
+<WRAP round box 80% center>
+^ Bug ^ Symptom ^ Werkzeug ^
+| Bug 1 | Die Seite hat kein Styling – sie sieht aus wie reines HTML ohne CSS | Editor (WebStorm / HTMLHint) |
+| Bug 2 | Script wird ausgeführt bevor der Browser das HTML gelesen hat | Editor + Console |
+| Bug 3 | Die Buttons reagieren auf keinen Klick – keine Fehlermeldung in der Console | Editor + Console (''console.log'') |
+| Bug 4 | Die Panels öffnen sich, aber mit keiner Transition / bleiben hängen | Editor |
+| Bug 5 | Die Panels lassen sich zwar öffnen, aber nicht mehr schliessen | Console – Logikfehler im Code |
+</WRAP>
+
+<WRAP center round important 80%>
+**Wichtig:** Nicht alle Bugs erzeugen eine rote Fehlermeldung in der Console. Manche sind "lautlos" – das macht sie schwieriger zu finden. Nutzen Sie ''console.log()'' und die Fehlermeldungen im Code-Editor.
+</WRAP>
+
+
+===== Debugging-Protokoll =====
+
+Füllen Sie für **jeden gefundenen Bug** das Protokoll "Moodle: LU07 – Protokoll-Abgabe" aus. Geben Sie es am Ende der Stunde ab.
+
+===== Hilfestellungen =====
+
+Falls Sie nicht weiterkommen, gehen Sie diese Reihenfolge durch:
+
+  - Öffnen Sie den Editor und schauen Sie nach farbigen Unterwellungen
+  - Öffnen Sie die Console (F12) – gibt es Fehlermeldungen?
+  - Fügen Sie ''console.log()'' an strategischen Stellen ein
+  - Schauen Sie im Elements-Tab nach, ob CSS-Regeln durchgestrichen sind
+  - Prüfen Sie die Zeilennummer in der Fehlermeldung – klicken Sie darauf
+
+<WRAP center round info 80%>
+**Erinnerung an die Debugging-Reihenfolge:**\\
+1. Formatter / Linter → 2. Console → 3. Elements-Tab
+</WRAP>
