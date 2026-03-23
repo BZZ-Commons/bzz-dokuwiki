@@ -1,5 +1,23 @@
-====== LU03a - - TBD ======
+====== LU03a - POST & GET - TBD ======
 
+===== Einleitung  =====
+In modernen Webanwendungen spielt die Kommunikation zwischen Client und Server eine zentrale Rolle. Dabei kommen standardisierte HTTP-Methoden zum Einsatz, von denen GET und POST zu den wichtigsten gehören. Sie definieren, wie Daten zwischen einem Client – etwa einem Webbrowser mit JavaScript – und einem Server ausgetauscht werden. Ohne diese Mechanismen wäre das Internet im Grunde nur eine statische Ansammlung von Dokumenten.
+
+===== 1. Grundidee: Client und Server =====
+Nachfolgend sehen Sie das Client-Servermodell, die zwei Bestandteile, auf die Informationsaustausch im www möglich macht.
+
+{{:de:modul:m307:learningunits:lu03:client-server-architecture-1.png|}}
+
+
+In einer CS-Umgebung bedeutet das meistens:
+
+  * Client = Browser oder Frontend mit JavaScript
+  * Server = Webserver / API, die Anfragen entgegennimmt und Antworten zurückgibt 
+
+Wenn JavaScript mit einem Server kommuniziert, passiert das oft per fetch()-Methode.
+
+===== Die GET-METHODE =====
+GET is used to request data from a specified resource. It can retrieve any visible data to a client, such as HTML documents, images, and videos:
 
 ----
 [[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

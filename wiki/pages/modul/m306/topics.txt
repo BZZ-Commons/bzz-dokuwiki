@@ -1,3 +1,4 @@
 ===== Topics =====
 
 <nspages .:topics -simplelist -h1 -textNS="" -textPages="">
+<nspages .:topics -subns -nopages -exclude -h1 -textNS="" -simplelist>
