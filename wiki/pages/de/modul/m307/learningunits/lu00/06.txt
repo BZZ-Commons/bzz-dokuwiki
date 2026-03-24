@@ -4,12 +4,12 @@ Das Fachgespräch LB1 wird die nachfolgenden Themen vertieft behandeln:
   * LU01: Script4Fun
   * LU02: JSON 
 
-Zur Vorbereitung können Sie sich an den nachfolgenden Vorgaben bzw. Aufgabenstellungen orientieren. Jede/r Kandidat/in muss innerhalb der Zeitvorgabe je eine Aufgabe aus den nachfolgenden Kapiteln bearbeiten.
+Zur Vorbereitung können Sie sich an den nachfolgenden Vorgaben bzw. Aufgabenstellungen orientieren. Jede/r Kandidat/in muss innerhalb der Zeitvorgabe je eine Aufgabe aus den nachfolgenden Kapiteln bearbeiten. <color #ed1c24>Die Auswahl der Aufgaben wird im Fachgespräch zufällig ausgewählt.</color>
 
 
 **1. Benötigtes Fachvokabular**
-  - Schlüsselwörter zur Variablendeklaration, Returnvalue/Rückgabewert, Konstante, Variable
-  - Geschweifte Klammer Runde Klammer, Programmblock, Scope/Gültigkeitsbereich
+  - Schlüsselwörter zur Variablendeklaration, Initialisierung/Initialwert, Returnvalue/Rückgabewert, Konstante, Variable
+  - Geschweifte Klammer, runde Klammer, eckige Klammer, Programmblock, Scope/Gültigkeitsbereich
   - Methode/Funktion, Inputparameter, lokaler Parameter
   - Schleife, Startbedingung, Laufbedingung, Endbedingung, Schrittweite
   - Selektion, Vergleichsoperator, Vergleich, Zuweisung 
@@ -37,13 +37,14 @@ Zur Vorbereitung können Sie sich an den nachfolgenden Vorgaben bzw. Aufgabenste
   - Methode: Quadratfläche mit der Seitenlänge als Inputparameter
   - Methode: Würfeloberfläche mit der Seitenlänge als Inputparameter.
   - Methode: Würfelvolumen mit der Seitenlänge als Inputparameter.
-  - Methode: Fakultät (Produkt aus 1 .. n) mit dem Zielnummer als Inputparameter.
+
 **4. LU01 - Script4Fun - Arithmetik**
   - Methode: Summen als zwei Zahlen bilden. 
   - Methode: Differenz aus zwei Zahlen bilden.
   - Methode: Produkt aus zwei Zahlen bilden.
   - Methode: Quotienten aus zwei Zahlen bilden können. (Division durch Null nicht erlaubt)
   - Methode: Gauss'sche Summenfunktion, also die Summer der Zahlen 1 .. n mit der Zielzahl n als Inputparameter
+  - Methode: Fakultät (Produkt aus 1 .. n) mit dem Zielnummer als Inputparameter.
 **5. LU01 - Script4Fun - Sortierung**
   - Methode: Bestehende Sortier-Methode umbauen können. Aufsteigende --> absteigend sortieren
   - Methode: Bestehende Sortier-Methode umbauen können. Absteigende --> aufsteigend sortieren

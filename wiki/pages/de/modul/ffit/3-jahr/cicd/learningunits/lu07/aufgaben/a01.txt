@@ -1,3 +1,21 @@
-==== LU07.A01 Wikipedia-Klicker ====
+==== LU07.A01 Wikipedia-Klicker (path to philosophy) ====
 
-''TODO''
+Wenn man auf dem englischsprachigen Wikipedia auf einer Zufälligen Seite immer auf den ersten Link klickt, landet man häufig nach einer Weile bei "Philosophy".
+
+Dieses Phänomen wurde sogar in wissenschaftlichen Arbeiten untersucht. Ebenso hat sich daraus ein Spiel entwickelt:
+  * https://en.wikipedia.org/wiki/Wikipedia_philosophy_phenomenon
+  * https://en.wikipedia.org/wiki/Wikipedia:Getting_to_Philosophy
+  * https://pathtophilosophy.com/
+
+Manuelles Vorgehen
+  - https://en.wikipedia.org/wiki/Special:Random öffnen
+  - Ersten Link im Artikel klicken (Ausgenommen: "Redirected from", disambiguations, Referenzen und andere kursive Anmerkungen.)
+  - Seitentitel / URL merken
+  - Schritt 2 und 3  so lange wiederholen, bis man auf der Seite "Philosophy" landet oder auf einer Seite, die man in dem Durchgang bereits aufgerufen hat (Schleife).
+
+Nun möchten wir das mit dem Testing-Framework ''TestCafé'' automatisieren.
+  - TestCafé installieren
+  - Test umsetzen
+  - Test mehrmals ausführen
+
+Geben Sie auf Moodle den Begriff mit der längsten Kette ein, den Sie gefunden haben.
