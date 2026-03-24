@@ -299,3 +299,6 @@ p.hinweis.warnung {
 
 ===== Klassenselektor vs. ID-Selektor =====
 Der Klassenselektor ist der Selektor mit dem Punkt, und der ID-Selektor ist der Selektor mit der Raute. Ebenso sollten Sie sich merken, dass Sie zwar jedes HTML-Element mit einer oder auch mehreren Klassen versehen können, aber grundsätzlich nur mit einer ID. Im Gegensatz zu Klassen müssen IDs in einem HTML-Dokument immer einzigartig sein. Daher darf eine bestimmte ID auch nur einmal in einem HTML-Dokument vorkommen. Auch ist es nicht erlaubt, einem HTML-Element mehr als eine ID zuzuweisen.
+
+===== Zusatzmaterial =====
+  * [[https://www.youtube.com/watch?v=w7NM0bJHyVk|Deutsches Youtube-Video]]

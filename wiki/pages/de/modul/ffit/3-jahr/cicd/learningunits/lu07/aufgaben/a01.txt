@@ -15,7 +15,43 @@ Manuelles Vorgehen
 
 Nun möchten wir das mit dem Testing-Framework ''TestCafé'' automatisieren.
   - TestCafé installieren
-  - Test umsetzen
+  - Test implementieren
   - Test mehrmals ausführen
+
+Folgendes Code-Snippet dient Ihnen allenfalls als Starthilfe:
+<code javascript>
+import { Selector } from 'testcafe';
+
+fixture('Wikipedia Random Page Test').page('https://en.wikipedia.org/wiki/Special:Random');
+
+test('Follow first Wikipedia links until Philosophy or loop', async (t) => {
+  // TODO: implement!
+});
+
+const getTitleText = async (t) => {
+  const title = Selector('#firstHeading');
+  await t.expect(title.exists).ok({ timeout: 10000 });
+  return await title.innerText;
+};
+
+const getFirstValidLink = async (t) => {
+  const content = Selector('#mw-content-text');
+  await t.expect(content.exists).ok({ timeout: 10000 });
+
+  const firstValidLink = await content
+    .find('p a')
+    .filter((node) => {
+      return (
+        !node.closest('i') &&
+        !node.closest('sup') &&
+        !node.closest('.infobox') &&
+        node.getAttribute('href')?.startsWith('/wiki/')
+      );
+    })
+    .nth(0);
+  await t.expect(firstValidLink.exists).ok({ timeout: 10000 });
+  return firstValidLink;
+};
+</code>
 
 Geben Sie auf Moodle den Begriff mit der längsten Kette ein, den Sie gefunden haben.

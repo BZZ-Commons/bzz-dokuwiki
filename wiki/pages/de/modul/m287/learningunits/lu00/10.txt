@@ -1,20 +1,58 @@
-====== LU00j - LB01 - V2 - Bewertungsraster - Stand 27.02.26 ======
+====== LU00j - LB01_V2 - Admin & Ablauf ======
 
 
-Die LB2 wird nach dem Kompetenzmodell nach Dreyfuss bewertet. Jede Kompetenz wird dabei in vier Gütestufen eingeteilt: 
+Die LB1 wird nach dem Kompetenzmodell nach Dreyfuss bewertet. Jede Kompetenz wird dabei in vier Gütestufen eingeteilt: 
 
 ===== Gütestufen =====
 
 ^ Stufe   ^ Bescchreibung ^
-^ Experte | Handelt intuitiv, erkennt Probleme frueh und findet auch fuer neue Situationen passende Loesungen. |
-^ Profi | Versteht Zusammenhaenge, trifft fundierte Entscheidungen und arbeitet effizient. |
-^ Anwender | Kann Aufgaben selbststaendig erledigen, braucht aber noch klare Vorgaben. |
+^ Experte | Handelt intuitiv, erkennt Probleme früh und findet auch für neue Situationen passende Lösungen. |
+^ Profi | Versteht Zusammenhänge, trifft fundierte Entscheidungen und arbeitet effizient. |
+^ Anwender | Kann Aufgaben selbstständig erledigen, braucht aber noch klare Vorgaben. |
 ^ Novize | Hat keine oder kaum Ahnung und folgt Regeln, ohne sie wirklich zu verstehen. |
 
+===== Administration =====
+  * Länge: ca. 20 Minuten 
+  * Gewichtung: 40%
+  * Zeitpunkt: Sie Moodle-Planung
+  * Typ: Partnerarbeit
+  * Form: Fachgespräch mit Videoaufzeichnung zwecks Nachvollziehbarkeit
+  * **Hilfsmittel:** 
+    * Eigenen Unterlagen inkl. Moodle
+    * Eigener Script-Code auf dem eigenen Notebook
+    * Browser für die Anzeige von eigenem Content
+    * Nachschlageseite Selfhtml und W3School
+    * <color #ed1c24>Andere Hilfsmittel sind nicht erlaubt</color>
+  * **Hinweis:** 
+    * Bei Fehlen ist ein Arztzeugnis innert 14 Kalendertagen unaufgefordert der Lehrperson elektronisch zu schicken. 
+    * Danach wird Ihnen die LP einen neuen Termin für das Fachgespräch mitteilen.
 
 ===== Bewertungsraster LB1 =====
+  * {{:de:modul:m287:learningunits:lu00:m287_me25def_lb1_bewertungsraster.pdf | M287_LB1_Bewertungsraster.pdf}}
 
-{{ :de:modul:m287:learningunits:lu00:m287_me25def_lb1_bewertungsraster.pdf | M287_LB1_Bewertungsraster.pdf}}
+===== Vorbereitungsmaterial =====
+  * Die Kandidaten können sich unter uneingeschränkter Verwendung aller  Hilsmittel vorbereiten. 
+  * Dies beinhaltet auch AI oder Fremdscripte.
+
+===== Vor dem Fachgespräch =====
+  * Zum Prüfungszeitpunkt sind Sie rechtzeitig vorort.
+  * Ihre Computer ist bereit für das Fachgespräch, d.h. alle benötigten Scripte sind im Codeditor geladen.
+  * Ihre Entwicklungsumgebung ist vorbereitet, sodass das Gespräch sofort beginnen kann.
+
+===== Durchführung =====
+  - Gemäss dem Formel <color #ed1c24>Leistung = Arbeit / Zeit</color> weisen die Lernenden in der zur Verfügung stehenden Zeit Ihre Kompetenzen.
+  - Jede Kandidaten stehen ca. 10 Minuten zur Verfügung, um die gestellten <color #ed1c24> 4 - 5 Aufgaben live zu demonstrieren</color>. 
+  - Die Aufgaben sind auf dem eigenen Rechner zu lösen.
+===== Hinweise =====
+  * Wie in jeder Prüfung, müssen alle definierte Aufgaben innerhalb der definierten Zeit behandelt werden.
+  * Wenn Sie gut Vorbereitet sind und Aufträge effektiv und effizient nachweisen können, reicht die Zeit gut für alle Inhalte.
+  * Wie Sie sicherlich gemerkt haben, ist das Fachgespräch nicht schwierig, solange Sie sich gut vorbereiten.
+  * **Remember:** <color #ed1c24>die beste Vorbereitung fängt mit einer aktiven Teilnahme am Unterricht an!!</color>
+  * Nach Ablauf der Zeit werden ungelöste Aufgaben mit 0 Punkten bewertet. 
+  * Die Auswahl der Aufgaben erfolgt zufüllig. 
+  * Die Liste der Aufgaben wird Ihne vorgängig bekanntgegeben.
+  * Während der Prüfung ist grundsätzlich nur Visual-Studio Code mit allen Plugins und Scripten/Codesnipptes erlaubt. Also kein Google oder AI!!!
+
 
 ----
 [[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

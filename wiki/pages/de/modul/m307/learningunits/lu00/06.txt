@@ -1,68 +1,65 @@
-====== LU00d - LB01 Inhalt  ======
+====== LU00e - LB02 Admin - TBD ======
 
-Das Fachgespräch LB1 wird die nachfolgenden Themen vertieft behandeln:
-  * LU01: Script4Fun
-  * LU02: JSON 
+===== Administration =====
+  * Länge: 25 Minuten 
+  * Gewichtung: 60%
+  * Zeitpunkt: Ca: Lektion 15
+  * Typ: Einzelarbeit
+  * Form: Fachgespräch über TEAMS mit Videoaufzeichnung (Nachvollziehbarkeit)
+  * **Hilfsmittel** - während der Prüfung: 
+    * Eigenes Notebook
+    * Eigener JavaScript-Code
+    * <color #ed1c24>Andere Hilfsmittel sind nicht erlaubt</color>
+  * **Hinweis:** 
+    * Bei Fehlen ist ein Arztzeugnis innert 14 Kalendertagen unaufgefordert der Lehrperson elektronisch zu schicken. 
+    * Danach wird Ihnen die LP einen neuen Termin für das Fachgespräch mitteilen
 
-Zur Vorbereitung können Sie sich an den nachfolgenden Vorgaben bzw. Aufgabenstellungen orientieren. Jede/r Kandidat/in muss innerhalb der Zeitvorgabe je eine Aufgabe aus den nachfolgenden Kapiteln bearbeiten. <color #ed1c24>Die Auswahl der Aufgaben wird im Fachgespräch zufällig ausgewählt.</color>
+===== Vorbereitungsmaterial =====
+  * Die Kandidaten können sich unter uneingeschräkter Verwendung aller Hilsmittel vorbereiten. 
+  * Alle verwendeten Scripte (JavaScript/HTML/....) Dateien müssen mit der eigene Autorenschaft des Prüfungskanditen versehen sein.
+  * Scripte mit Fremd-Autorenschaft dürfen nicht verwendet werden. In diesem Falle wird der entsprechende Prüfungsteil mit 0 Punkten bewerten.
+
+===== Vor dem Fachgespräch =====
+  * Zum Prüfungszeitpunkt sind Sie rechtzeitig vorort.
+  * Ihre Computer ist bereit für das Fachgespräch, d.h. alle benötigten Scripte sind im Codeditor geladen.
+  * Ihre Entwicklungsumgebung ist vorbereitet, sodass das Gespräch sofort beginnen kann.
+
+===== Durchführung =====
+  * Das Fachgespräch wird grundsätzlich von Ihnen geleitet, sprich Sie haben die Verantwortung die unten genannten Fachkompetenzen nachzuweisen.
+  * In jedem Script wird zuerst die Autorenschaft gezeigt (Scriptheader).
+  * Innerhalb der vorgesehenen Zeit demonstriert die Kanditin Ihre Fachkenntnisse, unter aktiver verwendung der eigenen Scripte und des Fachvokabulars.
+  * Abschliessend beantworten Sie alle Fragen bzw. klären Unklarheiten.
+  * Unabhänig vom Resultat, ist die Prüfung durch den Ablauf der Zeit abgeschlossen
+
+===== Hinweise =====
+  * Wie in jeder Prüfung, müssen innerhaln der definierten Zeit alle definierte Themen behandelt werden.
+  * Wenn Sie gut Vorbereitet sind und Fragen effektiv und effizient beantworten können, reicht die Zeit gut für alle Inhalte.
+  * Wie Sie sicherlich gemerkt haben ist das Fachgespräch nicht schwierig, solange Sie sich gut vorbereiten.
+  * Uns **gute Vorbereitung fängt mit einer aktiven Teilnahme am Unterricht an**
+
+===== Themen und Bewertungsraster =====
+
+Die Fokusthemen der LB1 sind:
+
+  * LU03: GET/POST
+    * Demo:  2 Min.
+    * Fragen: 2 Min.
+  * LU04: REST
+    * Demo:  2 Min.
+    * Fragen: 2 Min.
+  * LU05: Asynchrone Verarbeitung 
+    * Demo:  4 Min.
+    * Fragen: 2 Min.
+  * LU06: Websockets
+    * Demo:  4 Min.
+    * Fragen: 2 Min.
+  * LU07: Callbacks
+    * Demo:  4 Min.
+    * Fragen: 2 Min.
+  * LU08: Promisses
+    * Demo:  4 Min.
+    * Fragen: 2 Min.
 
 
-**1. Benötigtes Fachvokabular**
-  - Schlüsselwörter zur Variablendeklaration, Initialisierung/Initialwert, Returnvalue/Rückgabewert, Konstante, Variable
-  - Geschweifte Klammer, runde Klammer, eckige Klammer, Programmblock, Scope/Gültigkeitsbereich
-  - Methode/Funktion, Inputparameter, lokaler Parameter
-  - Schleife, Startbedingung, Laufbedingung, Endbedingung, Schrittweite
-  - Selektion, Vergleichsoperator, Vergleich, Zuweisung 
-
-**2. LU01 - Script4Fun - Allgemein**
-  - Erstellen Sie eine Methode/Funktion, die bei Aufruf einen Gruss auf der Konsole ausgibt.
-  - Ergänzen Sie die Methode/Funktion xyz, die eine bestimmte Person grüsst. Der Name wird als Inputparameter übergeben.
-  - Erstellen Sie eine Methode mit dem Namen und eine Zahl x (zwischen 1 und 10) als Inputparameter. In der Methode wird die Person x mal gegrüsst. Ausgabe: "Hallo Volkan, zum x. Mal". Die Anzahl ist Aufsteigend.
-  - Erstellen Sie eine Methode mit dem Namen und eine Zahl y (zwischen 10 und 1) als Inputparameter. In der Methode wird die Person x mal gegrüsst. Ausgabe: "Hallo Volkan, zum y. Mal". Die Anzahl ist absteigend.
-
-**3. LU01 - Script4Fun - Geometrie**
-  - Methode: Kreisfläche mit dem Radius als Inputparameter.
-  - Methode: Kreisumfang mit dem Radius als Inputparameter.
-  - Methode: Kugelvolumen mit dem Radius als Inputparameter. 
-  - Methode: Kugeloberfläche mit dem Radius als Inputparameter. 
-  - Methode: Dreiecksfläche mit dem Grundfläche und der Höhe als Inputparameter.
-  - Methode: Dreiecksumfang mit dem Seitenlängen als Inputparameter.
-  - Methode: Pyramidenfläche mit dem Grundfläche, Anzahl der Mantelflächen und der Mantelfläche als Inputparameter. 
-  - Methode: Pyramidenoberfläche mit dem Radius als Inputparameter muss berechnet und auf der Konsolen ausgegeben werden.
-  - Methode: Rechteckfläche mit den 2 Seitenlängen als Inputparameter.
-  - Methode: Rechteckumfang mit den 2 Seitenlängen als Inputparameter
-  - Methode: Quarderoberfläche mit den 3 Seitenlängen als Inputparameter
-  - Methode: Quardervolumen mit den 3 Seiten als Inputparameter. 
-  - Methode: Quadratumfang mit der Seitenlänge als Inputparameter.
-  - Methode: Quadratfläche mit der Seitenlänge als Inputparameter
-  - Methode: Würfeloberfläche mit der Seitenlänge als Inputparameter.
-  - Methode: Würfelvolumen mit der Seitenlänge als Inputparameter.
-
-**4. LU01 - Script4Fun - Arithmetik**
-  - Methode: Summen als zwei Zahlen bilden. 
-  - Methode: Differenz aus zwei Zahlen bilden.
-  - Methode: Produkt aus zwei Zahlen bilden.
-  - Methode: Quotienten aus zwei Zahlen bilden können. (Division durch Null nicht erlaubt)
-  - Methode: Gauss'sche Summenfunktion, also die Summer der Zahlen 1 .. n mit der Zielzahl n als Inputparameter
-  - Methode: Fakultät (Produkt aus 1 .. n) mit dem Zielnummer als Inputparameter.
-**5. LU01 - Script4Fun - Sortierung**
-  - Methode: Bestehende Sortier-Methode umbauen können. Aufsteigende --> absteigend sortieren
-  - Methode: Bestehende Sortier-Methode umbauen können. Absteigende --> aufsteigend sortieren
-  - Methode: Bestehende Methode zur Ausgabe eines Arrays verändern: Ausgabereihenfolge, Schrittweite
-
-**7. LU02 - JSON**
-  - JSON-File nach Vorgaben anlegen.
-  - Bestehendes JSON-File ergänzen durch weitere Datensätze, beispielsweise weitere Personen ergänzen.
-  - Bestehendes JSON-File ergänzen durch Spezifizierung (Array in Array), beispielweise hat eine Person mehr als ein Hobby.
-  - Statische Verarbeitung von JSON-Daten dynamisch durchführen können durch eine Schleife (Personen) oder 2 Schleifen (Hobbies einer Person) .
-  - JSON-Daten einlesen und Browser-Konsole ausgeben 
-
-
- 
-
-  
-
-----
-[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir
 
 

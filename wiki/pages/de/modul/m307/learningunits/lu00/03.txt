@@ -1,9 +1,19 @@
 ====== LU00c - LB01  Admin & Ablauf ======
 
+
+===== Gütestufen =====
+Die LB1 wird nach dem Kompetenzmodell nach Dreyfuss bewertet. Jede Kompetenz wird dabei in vier Gütestufen eingeteilt: 
+
+^ Stufe   ^ Bescchreibung ^
+^ Experte | Handelt intuitiv, erkennt Probleme früh und findet auch für neue Situationen passende Lösungen. |
+^ Profi | Versteht Zusammenhänge, trifft fundierte Entscheidungen und arbeitet effizient. |
+^ Anwender | Kann Aufgaben selbstständig erledigen, braucht aber noch klare Vorgaben. |
+^ Novize | Hat keine oder kaum Ahnung und folgt Regeln, ohne sie wirklich zu verstehen. |
+
 ===== Administration =====
   * Länge: ca. 20 Minuten 
   * Gewichtung: 40%
-  * Zeitpunkt: Ca: Lektion 7-8
+  * Zeitpunkt: Sie Moodle-Planung
   * Typ: Partnerarbeit
   * Form: Fachgespräch mit Videoaufzeichnung zwecks Nachvollziehbarkeit
   * **Hilfsmittel:** 
@@ -14,23 +24,21 @@
     * Bei Fehlen ist ein Arztzeugnis innert 14 Kalendertagen unaufgefordert der Lehrperson elektronisch zu schicken. 
     * Danach wird Ihnen die LP einen neuen Termin für das Fachgespräch mitteilen.
 
+===== Bewertungsraster =====
+  * {{:de:modul:m307:learningunits:lu00:m307_me24def_lb1_bewertungsraster.pdf| M307_LB1_Bewertungsraster}}
 ===== Vorbereitungsmaterial =====
   * Die Kandidaten können sich unter uneingeschränkter Verwendung aller  Hilsmittel vorbereiten. 
-  * Die beinhaltet auch AI oder Fremdscripte.
-  * **Wichtig**: Während der Prüfung ist grundsätzlich nur Visual-Studio Code mit allen Plugins und Scripten und der bereits verhandende Coder erlaubt.
+  * Dies beinhaltet auch AI oder Fremdscripte.
+
 ===== Vor dem Fachgespräch =====
   * Zum Prüfungszeitpunkt sind Sie rechtzeitig vorort.
   * Ihre Computer ist bereit für das Fachgespräch, d.h. alle benötigten Scripte sind im Codeditor geladen.
   * Ihre Entwicklungsumgebung ist vorbereitet, sodass das Gespräch sofort beginnen kann.
 
 ===== Durchführung =====
-  - Die Kandidaten und Kandidatinnen erhalten bei Beginn des Gespräches von der Lehrperson die für das Gespräch relevanten Script-Files. 
-  - Diese Vorlagen-Files müssen in die eigene Entwicklungsumgebung importiert werden. 
   - Gemäss dem Formel <color #ed1c24>Leistung = Arbeit / Zeit</color> weisen die Lernenden in der zur Verfügung stehenden Zeit Ihre Kompetenzen.
-  - Jede Kandidaten stehen ca. 10 Minuten zur Verfügung, um die gestellten <color #ed1c24>3 - 4 Aufgaben live zu demonstrieren</color>. 
-  - Hinweis: 
-    - Die Auswahl der Aufgaben erfolgt zufüllig. 
-    - Die Liste der Aufgaben wird Ihne vorgängig bekanntgegeben.
+  - Jede Kandidaten stehen ca. 10 Minuten zur Verfügung, um die gestellten <color #ed1c24> 4 - 5 Aufgaben live zu demonstrieren</color>. 
+  - Die Aufgaben sind auf dem eigenen Rechner zu lösen.
 
 
 ===== Hinweise =====
@@ -38,6 +46,10 @@
   * Wenn Sie gut Vorbereitet sind und Aufträge effektiv und effizient nachweisen können, reicht die Zeit gut für alle Inhalte.
   * Wie Sie sicherlich gemerkt haben, ist das Fachgespräch nicht schwierig, solange Sie sich gut vorbereiten.
   * **Remember:** <color #ed1c24>die beste Vorbereitung fängt mit einer aktiven Teilnahme am Unterricht an!!</color>
+  * Nach Ablauf der Zeit werden ungelöste Aufgaben mit 0 Punkten bewertet. 
+  * Die Auswahl der Aufgaben erfolgt zufüllig. 
+  * Die Liste der Aufgaben wird Ihne vorgängig bekanntgegeben.
+  * Während der Prüfung ist grundsätzlich nur Visual-Studio Code mit allen Plugins und Scripten/Codesnipptes erlaubt. Also kein Google oder AI!!!
 
 ----
 [[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir
