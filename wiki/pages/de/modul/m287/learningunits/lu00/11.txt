@@ -1,6 +1,63 @@
 ====== LU00k - LB01 V2 - Inhalt ======
 
 
+Das Fachgespräch LB1 wird die nachfolgenden Themen vertieft behandeln:
+  * LU01: Verweise und URL-Aufbau
+  * LU02: CSS-Selektoren
+  * LU03: Box-Modell
+  * LU04: Displays
+
+Zur Vorbereitung können Sie sich an den nachfolgenden Vorgaben bzw. Aufgabenstellungen orientieren. Jede/r Kandidat/in muss innerhalb der Zeitvorgabe je eine Aufgabe aus den nachfolgenden Kapiteln bearbeiten. <color #ed1c24>Die Auswahl der Aufgaben wird am Anfang des Fachgesprächs zufällig ausgewählt.</color>
+
+**1. Benötigtes Fachvokabular**
+  - HTML-Kommentar-Start, HTML-Kommentar-Ende, CSS-Kommentar-Start, CSS-Kommentar-Ende
+  - HTML-Elemente/Tags, Property, Property-Wert
+  - Typselektor, Klassenselektor, ID-Selektor, Pseudo-Klasse
+  - Box-Modell, margin, padding, border, width, top, bottom, right, left
+  - font-size, font-type, font-family, Border-Styles, solid, dotted, double, dashed, inset, outset, ridge, grove
+  - Verweise, Anker-Tag, relativer Pfad, absoluter Pfad, root-Verzeichnis/directory, sub-directory/Unterverzeichnis, top-directory/Oberverzeichnis
+  - White-Spaces
+
+**2. Formales**
+  - Codestruktur ist nach Best-Practise (Codeebenen, Klammerung, ...)
+  - Script-Header: Kann HTMl- und CSS-Script nach Best-Practise (Autor, Datum, Beschreibung, ...) kommentieren.
+  - Script-Code: Kann HTMl- und CSS-Script nach Best-Practise incode (abschnitte, Seiteneffekte, Aufgabenteile, ...) kommentieren.
+
+**3. LU01 - Verweise und URL-Aufbau**
+  - Aufbau von relativen und absoluten Pfaden darlegen und exemplarisch aufzeigen können
+  - Ressourcen (Bilder, Videos) auf dem eigenen Computer, unter Verwendung von relativen Pfaden ins HTML einbinden können.
+  - Ressourcen (Bilder, Videos) auf dem eigenen Computer, unter Verwendung von absoluten Pfaden ins HTML einbinden können.
+  - Problematik von White-Spaces im File- oder Pfadnamen erklären und Lösung vorschlagen können.
+  - White-Space-Fehler in File- und Pfadnamen erkennen und beheben können.
+
+**4. LU02 - CSS-Selektoren **
+  - Typ-Selektoren erklären und auf HTML-Elemente anwenden können.
+  - Klassen-Selektoren erklären und auf HTML-Elemente anwenden können.
+  - ID-Selektoren erklären und auf HTML-Elemente anwenden können.
+  - Pseuden-Klassen erklären und auf HTML-Elemente anwenden können: 
+    - hover
+    - active
+    - focus
+    - first-child
+    - last-child
+    - nthchild
+
+**5. LU03 - Box-Modell**
+  - Kann die zwei im Unterricht behandelten Box-Modell nennen und die Unterschiede erklären.
+  - Kann die vier Bereiche der Box-Modelle nennen und diese nach vorgaben manipulieren.
+  - Kann den Effekt erklären und demonstrieren, was passiert, wenn horizonale und vertikale margins zusammenfallen.
+
+**6. LU04 - Display**
+  - Kann darlegen welchen Effekt die CSS-Anweisung //display// erziehlt.
+  - Kann die im Unterricht behandelten (6) Werte des Propertiy //display// nennen, erklären und demonstrieren.
+
+
+
+ 
+
+  
 
 ----
 [[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir
+
+

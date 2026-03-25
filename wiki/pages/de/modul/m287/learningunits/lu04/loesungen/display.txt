@@ -1,0 +1,63 @@
+====== LU04.L01 - Display ======
+
+===== Aufgabenstellung =====
+  - Beschreiben Sie den Unterschied zwischen Block- und Inline-Elementen in HTML und geben Sie jeweils ein Beispiel für ein Block-Element und ein Inline-Element an.
+  - Ändern Sie das Anzeigeverhalten eines Elements mit der CSS-Eigenschaft "display" von "block" auf "inline" und umgekehrt. Erläutern Sie, wie sich das Layout des Elements ändert.
+
+===== Lösung 1 =====
+
+**Block-Elemente**
+  * Beginnen immer in einer neuen Zeile
+  * Nehmen standardmässig die gesamte verfügbare Breite ein
+  * Können Breite, Höhe, Margin, Padding vollständig nutzen
+
+<code HTML>
+<div>Block-Element</div>
+</code>
+
+**Inline-Elemente**
+  * Bleiben in der gleichen Zeile
+  * Nehmen nur so viel Platz ein wie ihr Inhalt
+  * Breite und Höhe lassen sich nicht sinnvoll setzen
+
+<code>
+<span>Inline-Element</span>
+</code>
+
+===== Teil 2 =====
+Die CSS-Eigenschaft //display// bestimmt, wie ein Element dargestellt wird.
+
+**Von block zu inline**
+<code>
+div {
+  display: inline;
+}
+</code>
+
+**Auswirkung:**
+  * Element steht nicht mehr in einer neuen Zeile
+  * Breite passt sich dem Inhalt an
+  * Layout wird „textähnlich“
+
+**Von inline zu block**
+
+<code>
+span {
+  display: block;
+}
+</code>
+
+**Auswirkung:**
+  * Element beginnt in neuer Zeile
+  * Nimmt volle Breite ein
+  * Kann Breite, Höhe, Abstände sauber nutzen
+
+===== Aha-Effekt =====
+  * **block:** strukturiert Layout (untereinander)
+  * **inline:** fliesst im Text (nebeneinander)
+  * **Effekt:** 
+    * Block-Elemente bauen das Gerüst,
+    * Inline-Elemente füllen es
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

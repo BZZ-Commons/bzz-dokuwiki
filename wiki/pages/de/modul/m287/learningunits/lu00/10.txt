@@ -9,7 +9,7 @@ Die LB1 wird nach dem Kompetenzmodell nach Dreyfuss bewertet. Jede Kompetenz wir
 ^ Experte | Handelt intuitiv, erkennt Probleme früh und findet auch für neue Situationen passende Lösungen. |
 ^ Profi | Versteht Zusammenhänge, trifft fundierte Entscheidungen und arbeitet effizient. |
 ^ Anwender | Kann Aufgaben selbstständig erledigen, braucht aber noch klare Vorgaben. |
-^ Novize | Hat keine oder kaum Ahnung und folgt Regeln, ohne sie wirklich zu verstehen. |
+^ Novize | Hat keine oder kaum Kenntnisse und folgt Regeln, ohne sie wirklich zu verstehen. |
 
 ===== Administration =====
   * Länge: ca. 20 Minuten 
@@ -28,7 +28,11 @@ Die LB1 wird nach dem Kompetenzmodell nach Dreyfuss bewertet. Jede Kompetenz wir
     * Danach wird Ihnen die LP einen neuen Termin für das Fachgespräch mitteilen.
 
 ===== Bewertungsraster LB1 =====
-  * {{:de:modul:m287:learningunits:lu00:m287_me25def_lb1_bewertungsraster.pdf | M287_LB1_Bewertungsraster.pdf}}
+  * {{ :de:modul:m287:learningunits:lu00:m287_me25def_lb1_bewertungsraster.pdf | M287_LB1 Bewertungsraster}}
+
+
+
+
 
 ===== Vorbereitungsmaterial =====
   * Die Kandidaten können sich unter uneingeschränkter Verwendung aller  Hilsmittel vorbereiten. 
@@ -43,6 +47,8 @@ Die LB1 wird nach dem Kompetenzmodell nach Dreyfuss bewertet. Jede Kompetenz wir
   - Gemäss dem Formel <color #ed1c24>Leistung = Arbeit / Zeit</color> weisen die Lernenden in der zur Verfügung stehenden Zeit Ihre Kompetenzen.
   - Jede Kandidaten stehen ca. 10 Minuten zur Verfügung, um die gestellten <color #ed1c24> 4 - 5 Aufgaben live zu demonstrieren</color>. 
   - Die Aufgaben sind auf dem eigenen Rechner zu lösen.
+  - Jede Aufgabe besteht aus einem Programmierteil und einem Frageteil mit Verständnisfragen.
+
 ===== Hinweise =====
   * Wie in jeder Prüfung, müssen alle definierte Aufgaben innerhalb der definierten Zeit behandelt werden.
   * Wenn Sie gut Vorbereitet sind und Aufträge effektiv und effizient nachweisen können, reicht die Zeit gut für alle Inhalte.
@@ -51,7 +57,8 @@ Die LB1 wird nach dem Kompetenzmodell nach Dreyfuss bewertet. Jede Kompetenz wir
   * Nach Ablauf der Zeit werden ungelöste Aufgaben mit 0 Punkten bewertet. 
   * Die Auswahl der Aufgaben erfolgt zufüllig. 
   * Die Liste der Aufgaben wird Ihne vorgängig bekanntgegeben.
-  * Während der Prüfung ist grundsätzlich nur Visual-Studio Code mit allen Plugins und Scripten/Codesnipptes erlaubt. Also kein Google oder AI!!!
+  * Während der Prüfung ist grundsätzlich nur Visual-Studio Code mit allen Plugins und **eigene Scripte/Codesnipptes** erlaubt. 
+  * Also kein Google oder AI!!! Dass die AI das kann, wissen wir letztendlich alle, oder?
 
 
 ----
