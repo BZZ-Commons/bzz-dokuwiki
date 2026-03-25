@@ -135,6 +135,7 @@ button {
 
 === rem ===
   * ''1rem'' ist relativ zur Schriftgroesse des Root-Elements ''html''.
+  * Falls keine Schriftgrösse auf ''html'' gesetzt ist, wird die Browsereinstellung genutzt. Das ist besonders für Menschen mit Seh-Einschränkungen wichtig, da sie damit die Schriftgrösse selbstständig vergrössern können.
   * Vorteil: bleibt konsistent, egal wie tief ein Element verschachtelt ist.
 
 <WRAP center round box 80%>
@@ -145,7 +146,16 @@ p    { font-size: 1.125rem; }  /* 18px */
 </code>
 </WRAP>
 
-((Mit ''rem'' vermeiden Sie „Schriftgroessenvermehrung“ durch verschachtelte Elemente.))
+
+<WRAP center round box 80%>
+{{:de:modul:m291:learningunits:lu02:theorie:customize-chrome-font.png?nolink&600 | Schriftgrösse ändern im Browser}}
+//Ohne setzen der Schriftgrösse aufs HTML-Tag via CSS, wird mit ''rem'' die Browsereinstellung multipliziert.//
+<code css>
+h1   { font-size: 4rem; }      /* 4x Browsereinsteillung */
+p    { font-size: 1.125rem; }  /* 1.125x Browsereinstellung (Default-Einstellung im Browser ist 16px) */
+</code>
+</WRAP>
+
 
 ==== Empfehlung für dieses Modul ====
   * Für Schriftgroessen überwiegend **rem** verwenden.
@@ -163,7 +173,6 @@ body { line-height: 1.4; }
 
 ((Einheitenlose ''line-height'' skaliert automatisch mit der Schriftgroesse.))
 
-----
 
 ===== 2) CSS-Variablen =====
 
@@ -199,7 +208,6 @@ CSS-Variablen funktionieren ähnlich wie Absatz- und Zeichenstile: Sie definiere
 {{ :de:modul:m291:learningunits:lu02:theorie:m291_lu02_css_variables_responsiveness_final_small.mp4?1040x585 | CSS-Variablen und Media-Queries anschaulich erklärt. }}
 //Das Video zeigt anschaulich, wie CSS-Variablen eingesetzt werden und responsive Designs mit Media-Queries (Details weiter unten auf der Seite) umgesetzt werden.//
 
-----
 
 ===== 3) CSS Cascade =====
 {{:de:modul:m291:learningunits:lu02:theorie:ezgi-kimball-jg8jcmefhdg-unsplash_700.jpg?nolink&500|}}
