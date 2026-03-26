@@ -45,9 +45,9 @@ Das Projekt enthält **5 absichtliche Bugs**. Finden und beheben Sie alle.
 ^ Bug ^ Symptom ^ Werkzeug ^
 | Bug 1 | Die Seite hat kein Styling – sie sieht aus wie reines HTML ohne CSS | Editor |
 | Bug 2 | Script wird ausgeführt bevor der Browser das HTML gelesen hat | Editor + Console |
-| Bug 3 | Die Panels öffnen sich (der Button-Pfeil dreht sich), aber der Inhalt bleibt unsichtbar | Editor – Elements-Tab |
-| Bug 4 | Nur der erste Button reagiert auf Klicks – die anderen drei tun nichts | Console (''console.log'') |
-| Bug 5 | Nach dem Klick erscheint sofort ein ''ReferenceError'' in der Console | Console – Fehlermeldung lesen |
+| Bug 3 | Die Buttons reagieren nicht auf Klicks – TypeError | Console (''console.log'') |
+| Bug 4 | Nach dem Klick erscheint sofort ein ''ReferenceError'' in der Console | Console – Fehlermeldung lesen |
+| Bug 5 | Die Panels öffnen sich (der Button-Pfeil dreht sich), aber der Inhalt bleibt unsichtbar | Editor – Elements-Tab |
 </WRAP>
 
 

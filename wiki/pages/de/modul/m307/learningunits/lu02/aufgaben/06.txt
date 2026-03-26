@@ -16,7 +16,14 @@ Das nachfolgene Script //index.html// erzeugt die folgende Bildschirmausgabe.
 {{:de:modul:m307:learningunits:lu01:aufgaben:lu01_l06_1.jpg?600|}}
 
 ===== Auftrag =====
-Lassen Sie das nachfolgende Script laufen und kommentieren Ihre Erkenntnisse im Code durch entsprechende HTML- oder JS-Codeeinträge.
+  - **Aufgabe**
+    * Lassen Sie das nachfolgende Script laufen und analysieren die einzelnen Codeteile. 
+  - **Aufgabe**
+    *Kommentieren Ihre Erkenntnisse im Code durch entsprechende HTML- oder JS-Codeeinträge.
+  - **Experiementiertips**
+    * Ergänzen Sie das JSON-File durch weitere Zeilen und lassen Sie es sich im Browser anzeigen.
+    * Ergänzen Sie das JSON-File durch weitere Subarrays, z.b. jeder Person erhält eine Adresse, oder die Lieblingslieder einer Person, ...
+    * Verändern Sie die HTML-Formatierung, sodass die Daten anders dargestellt werden. Versuchen Sie also Ihr Wissen aus dem 1. Lehrjahr hier anzuwenden.
 
 **index.html**
 <code html>
