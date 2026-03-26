@@ -33,10 +33,9 @@ Zur Vorbereitung können Sie sich an den nachfolgenden Vorgaben bzw. Aufgabenste
   - Methode: Dreiecksfläche mit dem Grundfläche und der Höhe als Inputparameter.
   - Methode: Dreiecksumfang mit dem Seitenlängen als Inputparameter.
   - Methode: Pyramidenfläche mit dem Grundfläche, Anzahl der Mantelflächen und der Mantelfläche als Inputparameter. 
-  - Methode: Pyramidenoberfläche mit dem Radius als Inputparameter muss berechnet und auf der Konsolen ausgegeben werden.
   - Methode: Rechteckfläche mit den 2 Seitenlängen als Inputparameter.
   - Methode: Rechteckumfang mit den 2 Seitenlängen als Inputparameter
-  - Methode: Quarderoberfläche mit den 3 Seitenlängen als Inputparameter
+  - Methode: Quarderoberfläche mit den 3 Seitenlängen als Inputparameter.
   - Methode: Quardervolumen mit den 3 Seiten als Inputparameter. 
   - Methode: Quadratumfang mit der Seitenlänge als Inputparameter.
   - Methode: Quadratfläche mit der Seitenlänge als Inputparameter
@@ -44,23 +43,24 @@ Zur Vorbereitung können Sie sich an den nachfolgenden Vorgaben bzw. Aufgabenste
   - Methode: Würfelvolumen mit der Seitenlänge als Inputparameter.
 
 **5. LU01 - Script4Fun - Arithmetik**
-  - Methode: Summen als zwei Zahlen bilden. 
-  - Methode: Differenz aus zwei Zahlen bilden.
+  - Methode: Summen als zwei-n Zahlen bilden. 
+  - Methode: Differenz aus zwei-n Zahlen bilden.
   - Methode: Produkt aus zwei Zahlen bilden.
-  - Methode: Quotienten aus zwei Zahlen bilden können. (Division durch Null nicht erlaubt)
-  - Methode: Gauss'sche Summenfunktion, also die Summer der Zahlen 1 .. n mit der Zielzahl n als Inputparameter
+  - Methode: Quotienten aus zwei-n Zahlen bilden. (Division durch Null nicht erlaubt).
+  - Methode: Gauss'sche Summenfunktion, also die Summer der Zahlen 1 .. n mit der Zielzahl n als Inputparameter.
   - Methode: Fakultät (Produkt aus 1 .. n) mit dem Zielnummer als Inputparameter.
+
 **6. LU01 - Script4Fun - Sortierung**
-  - Methode: Bestehende Sortier-Methode umbauen können. Aufsteigende --> absteigend sortieren
-  - Methode: Bestehende Sortier-Methode umbauen können. Absteigende --> aufsteigend sortieren
-  - Methode: Bestehende Methode zur Ausgabe eines Arrays verändern: Ausgabereihenfolge, Schrittweite
+  - Methode: Bestehende Sortier-Methode umbauen können. Aufsteigende --> absteigend sortieren.
+  - Methode: Bestehende Sortier-Methode umbauen können. Absteigende --> aufsteigend sortieren.
+  - Methode: Bestehende Methode zur Ausgabe eines Arrays verändern: Ausgabereihenfolge, Schrittweite.
 
 **7. LU02 - JSON**
   - JSON-File nach Vorgaben anlegen.
   - Bestehendes JSON-File ergänzen durch weitere Datensätze, beispielsweise weitere Personen ergänzen.
   - Bestehendes JSON-File ergänzen durch Spezifizierung (Array in Array), beispielweise hat eine Person mehr als ein Hobby.
   - Statische Verarbeitung von JSON-Daten dynamisch durchführen können durch eine Schleife (Personen) oder 2 Schleifen (Hobbies einer Person) .
-  - JSON-Daten einlesen und Browser-Konsole ausgeben 
+  - JSON-Daten einlesen und Browser-Konsole ausgeben.
 
 
  
