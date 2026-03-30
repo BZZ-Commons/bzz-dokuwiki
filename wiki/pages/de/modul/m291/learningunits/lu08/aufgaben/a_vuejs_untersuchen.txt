@@ -1,0 +1,100 @@
+====== LU08b – Auftrag: Vue.js Accordion erkunden ======
+
+<WRAP info round>
+**Ziel:** Sie begegnen zum ersten Mal Vue.js-Code. Es geht noch nicht darum, alles zu verstehen – sondern darum, Fragen zu stellen, Muster zu erkennen und zu entdecken, was anders ist als in Vanilla JS.
+</WRAP>
+
+===== Vorbereitung =====
+
+Öffnen Sie das folgende StackBlitz-Projekt:
+
+[[https://stackblitz.com/edit/vitejs-vite-gf1kjrts?file=src%2Fcomponents%2FAccordion.vue|→ StackBlitz: FAQ Accordion in Vue.js öffnen]]
+
+Sie sehen drei Dateien:
+  * ''App.vue'' – der Einstiegspunkt der Applikation
+  * ''Accordion.vue'' – die Accordion-Komponente mit den FAQ-Daten
+  * ''AccordionItem.vue'' – eine einzelne Frage-Antwort-Einheit
+
+
+{{:de:modul:m291:learningunits:lu08:aufgaben:screenshot_2026-03-30_at_09.56.48.png?nolink&400| Ordner Struktur in Vuejs}}
+
+===== Aufgabe 1 – Unbekanntes entdecken (5 Min.) =====
+
+Lesen Sie den Code aller drei Dateien durch. Notieren Sie:
+
+  - **Mindestens drei Dinge**, die Sie nicht kennen oder nicht verstehen.
+  - **Mindestens zwei HTML-Attribute oder Tags**, die Sie so noch nie gesehen haben (Hinweis: schauen Sie im Template-Bereich).
+
+<WRAP tip round>
+Es ist völlig normal, wenn vieles noch unklar ist. Notieren Sie Ihre Fragen – wir besprechen sie danach gemeinsam.
+</WRAP>
+
+
+===== Aufgabe 2 – ref() untersuchen (5 Min.) =====
+
+In ''AccordionItem.vue'' und ''Accordion.vue'' kommt ''ref()'' vor:
+
+<WRAP box center round 80%>
+<code javascript>
+const isOpen = ref(false);
+
+const faqData = ref([...]);
+</code>
+</WRAP>
+
+Beantworten Sie folgende Fragen schriftlich:
+
+  - Was könnte ''ref()'' bewirken? Was passiert wohl, wenn sich der Wert von ''isOpen'' ändert?
+  - Was ist der Unterschied zu einer normalen Variable wie ''const isOpen = false''?
+
+
+===== Aufgabe 3 – Daten erweitern (5 Min.) =====
+
+Fügen Sie in ''Accordion.vue'' im ''faqData''-Array eine **fünfte Frage** mit einer eigenen Antwort hinzu:
+
+<WRAP box center round 80%>
+<code javascript>
+{
+  question: 'Ihre eigene Frage hier?',
+  answer: 'Ihre eigene Antwort hier.',
+},
+</code>
+</WRAP>
+
+Beobachten Sie, was im Browser passiert, und beantworten Sie:
+
+  - Was erscheint im Browser, ohne dass Sie das HTML angepasst haben?
+  - Wie haben wir beim alten Vanilla-JS-Accordion ein neues FAQ-Item hinzugefügt? Was ist der Unterschied?
+
+
+===== Aufgabe 4 – Zustand verstehen (5 Min.) =====
+
+Vergleichen Sie, wie der Zustand («offen» oder «geschlossen») gesteuert wird:
+
+<WRAP box center round 80%>
+^ ^ Vanilla JS (alt) ^ Vue.js (neu) ^
+| Wie wird das Element gefunden? | ''document.querySelectorAll('.accordion-btn')'' | ? |
+| Wo lebt der Zustand? | Im DOM (''classList.contains('open')'') | ? |
+| Wie wird umgeschaltet? | ''classList.add('open')'' | ? |
+</WRAP>
+
+Füllen Sie die rechte Spalte mit dem aus, was Sie im Vue-Code finden.
+
+
+===== Aufgabe 5 – Den Fehler entdecken (5 Min.) =====
+
+Testen Sie das Accordion im Browser: Öffnen Sie mehrere Panels nacheinander.
+
+  - Was funktioniert **noch nicht** wie erwartet?
+  - Warum könnte das so sein? Schauen Sie sich an, wo ''isOpen'' definiert ist – in welcher Datei, und für welche Einheit gilt es?
+  - Was müsste sich ändern, damit immer nur ein Panel offen ist?
+
+<WRAP important round>
+Sie müssen das Problem noch **nicht lösen** – nur erkennen und beschreiben. Das lösen wir gemeinsam in LU09.
+</WRAP>
+
+===== Zusammenfassung =====
+
+Halten Sie zum Abschluss in 2–3 Sätzen fest:
+
+> **Was ist der grösste Unterschied zwischen dem Vanilla-JS-Accordion und dem Vue-Accordion?**
