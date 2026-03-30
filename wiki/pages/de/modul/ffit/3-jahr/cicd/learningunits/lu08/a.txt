@@ -1,0 +1,3 @@
+====== LU08a - Container in der Pipeline ======
+
+Um die E2e-Tests in der Pipeline auszuführen müssen oft Services (Zum Beispiel eine Datenbank und/oder ein Backend) in der Testumgebung bereitgestellt werden.
