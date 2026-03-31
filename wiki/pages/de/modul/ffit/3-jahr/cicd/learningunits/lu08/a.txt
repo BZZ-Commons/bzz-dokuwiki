@@ -1,3 +1,80 @@
 ====== LU08a - Container in der Pipeline ======
 
-Um die E2e-Tests in der Pipeline auszuführen müssen oft Services (Zum Beispiel eine Datenbank und/oder ein Backend) in der Testumgebung bereitgestellt werden.
+Um die Integration und E2e-Tests in der Pipeline auszuführen müssen oft Services (Zum Beispiel eine Datenbank und/oder ein Backend) in der Testumgebung bereitgestellt werden.
+
+Im nachfolgenden Code-Block sehen Sie ein Beispiel einer PostgreSQL-Datenbank. Der gesamte Code befindet sich auf: https://github.com/AlexanderPeter/cicd/blob/develop/.github/workflows/nightly_trigger.yml
+
+<code yaml>
+    services:
+      postgres:
+        image: postgres:15
+        env:
+          POSTGRES_USER: localuser
+          POSTGRES_PASSWORD: localpass
+          POSTGRES_DB: localdb
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+
+    env:
+      DATABASE_URL: postgresql://localuser:localpass@127.0.0.1:5432/localdb
+</code>
+
+Analog dazu gibt es auch ein Beispiel für einen Python-Backend-Server ebenfalls auf: https://github.com/AlexanderPeter/cicd/blob/develop/.github/workflows/nightly_trigger.yml
+
+<code yaml>
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Initialize database schema
+        working-directory: database
+        run: |
+          psql postgresql://localuser:localpass@127.0.0.1:5432/localdb -f schema.sql
+
+      - name: Set up python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11.9'
+
+      - name: Install dependencies
+        working-directory: backend
+        run: |
+          python -m venv .venv
+          source .venv/bin/activate
+          pip install -r requirements.txt
+          pip install -r requirements-dev.txt
+      
+      ...    
+
+      - name: Start backend server
+        working-directory: backend
+        run: |
+          source .venv/bin/activate
+          python app.py > backend.log 2>&1 &
+
+      - name: Wait for backend
+        run: |
+          until curl --silent http://localhost:5000/; do
+            echo "Waiting for backend..."
+            sleep 2
+          done
+
+      - name: Wait for frontend
+        run: |
+          until curl --silent http://localhost:3000; do
+          echo "Waiting for frontend..."
+          sleep 2
+          done
+
+      - name: Run e2e tests
+        working-directory: frontend
+        run: npm run e2e-headless
+
+</code>

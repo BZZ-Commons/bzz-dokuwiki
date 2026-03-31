@@ -1,0 +1,33 @@
+==== LU08.A01 Testing in Pipeline integrieren ====
+
+Erstellen Sie für diese Aufgabe bei Bedarf einen Github-Task.
+
+Erweitern Sie Ihre Github-Pipeline so, dass zusätzlich auch E2e-Tests ausgeführt werden. Nutzen Sie dafür jedoch eine separate workflow-Datei ''e2e_job.yml''.
+Sofern Sie ein Backend haben, sollte Ihre Workflow-Dateien die folgenden Schritte enthalten.
+
+^ ''frontend_job.yml'' ^ ''backend_trigger.yml'' ^ ''e2e_job.yml'' ^
+|<WRAP>
+  * Checkout Code
+  * Install Node
+  * Install Dependencies
+  * Run Formatter
+  * Run Linter
+  * Run Frontend Tests (Unit & Integration)
+</WRAP> | <WRAP>
+  * Checkout Code
+  * Install Python/Java/Node/...
+  * Install Dependencies
+  * Run Formatter
+  * Run Linter
+  * Run Backend Tests (Unit & Integration)
+</WRAP> | <WRAP>
+  * Prepare Database
+  * Prepare Backend (analog ''backend_trigger.yml'')
+  * Prepare Frontend (analog ''frontend_job.yml'')
+  * Wait until Ready
+  * Run E2e-Tests
+</WRAP> |
+<code yaml>
+
+</code>
+
