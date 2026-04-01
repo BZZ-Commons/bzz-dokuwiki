@@ -1,0 +1,103 @@
+====== LU04.L02 - Flexbox ======
+
+===== Aufgabenstellung =====
+Gestalten Sie Ihr HTML-Dokument gemäss Vorgabe.
+
+===== Lösungen =====
+
+**index.html**
+
+<code html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+        <!-- CSS einbinden -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="logo">Item 1</div>
+        <div class="nav">
+            <div class="nav-item">Item 1</div>
+            <div class="nav-item">Item 2</div>
+            <div class="nav-item">Item 3</div>
+        </div>
+    </div>
+</body>
+</html>
+</code>
+
+**styles.css**
+
+<code css>
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    font-size: 28px;
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+}
+
+/* Aussencontainer */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 30px;
+    background-color: rgba(195, 0, 255, 0.3);
+    border: 3px solid rgb(195, 0, 255);
+    border-radius: 25px;
+}
+
+/* Linker Block */
+.logo {
+    width: 200px;
+    height: 150px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgba(0, 0, 255, 0.4);
+    border: 3px solid rgb(0, 0, 255);
+    border-radius: 25px;
+    color: blue;
+}
+
+/* Navigationsbereich */
+.nav {
+    display: flex;
+    gap: 25px;
+
+    padding: 20px;
+
+    background-color: rgba(0, 0, 255, 0.4);
+    border: 3px solid rgb(0, 0, 255);
+    border-radius: 25px;
+}
+
+/* Einzelne Nav-Elemente */
+.nav-item {
+    width: 140px;
+    height: 70px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgba(255, 0, 0, 0.2);
+    border: 3px solid rgb(255, 0, 0);
+    border-radius: 25px;
+    color: red;
+}
+</code>
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir
+

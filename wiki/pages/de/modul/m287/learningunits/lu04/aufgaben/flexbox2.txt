@@ -1,0 +1,67 @@
+====== LU04.A04 - Flexbox 2======
+
+==== Rahmenbedingungen ====
+^ Was ^ Beschreibung ^
+| Produkt: | HTML-Seite mit CSS Flexbox |
+| Zeit: | 40 Min. |
+| Sozialform: | Einzel- oder Partnerarbeit |
+| Arbeitsmittel: | Unterrichtsunterlagen, HTML-Editor, Browser |
+
+
+===== Ausgangslage ======
+Sie wissen, was eine Flexbox ist, und wie diese angewendet wird. Das nachfolgende Video geht etwas mehr in die Materie, gibt Ihnen also Einblick in die Möglichkeiten der Anwendungen der Flexbox.
+
+===== Auftrag =====
+Schauen Sie sich das nachfolgende Video an, und bauen das gezeigte Beispiel, Schritt für Schritt, nach. Falls es zu schnell geht, können Sie die betroffene Stelle anhalten bzw. wiederholen.
+
+{{:de:modul:m287:learningunits:lu04:aufgaben:cssflexboxtutorial_english.mp4|Flexbox_Tutorial_English}}
+
+===== Codevorlagen =====
+
+**index.html**
+
+<code html>
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Tutorial!</title>
+
+    <link rel="stylesheet" href="styles_vorlage.css">
+</head>
+<body>
+    <div class="flex-container">
+        <div class="box box1">1</div>
+        <div class="box bos2">2</div>
+        <div class="box box3">3</div>
+        <div class="box box4">4</div>
+        <div class="box box5">5</div>
+    </div>
+</body>
+</html>
+</code>
+
+**styles_vorlage.css**
+<code CSS>
+* {
+  margin: 0;
+  padding: 0;   
+    box-sizing: border-box;
+}
+body {
+    background: #fff;
+}
+.box {
+    height: 100px;
+    width: 100px;
+    background-color: skyblue;
+    font-size: 1.5rem;
+}
+</code>
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir
