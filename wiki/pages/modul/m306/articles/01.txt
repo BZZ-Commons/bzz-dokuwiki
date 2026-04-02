@@ -1,0 +1,125 @@
+{{:modul:m306:articles:01.png?300 | Software-Anforderungen}}
+
+====== Software-Anforderungen richtig dokumentieren ======
+
+Wenn Abteilungen eines Unternehmens zusammenarbeiten, die normalerweise wenig miteinander zu tun haben, kann es schnell zur Herausforderung werden, alle Beteiligten auf dem gleichen Stand zu halten. Dokumente zur Spezifikation von Softwareanforderungen helfen Projektmanagern, Produktmanagern und Geschäftsanalysten dabei, übergeordnete Konzepte in konkrete Aktionspunkte aufzuteilen, an denen sich jedes Teammitglied während des Entwicklungsprozesses orientieren kann.
+
+\\
+\\
+===== Was ist eine Spezifikation von Softwareanforderungen (SRS)? ===== 
+Eine **Spezifikation von Softwareanforderungen** (englisch: //Software Requirements Specification//, kurz **SRS**) fasst alle Anforderungen, Erwartungen, Designvorgaben und Standards für ein geplantes Softwareprojekt zusammen. Es enthält:
+
+  * die übergeordneten **Geschäftsanforderungen**, die das Projektziel definieren,
+  * die **Anforderungen und Bedürfnisse der Endnutzer** sowie
+  * die **technische Funktionalität** des Produkts.
+
+Kurz gesagt beschreibt ein SRS-Dokument detailliert, wie ein Softwareprodukt funktionieren soll und wie das Entwicklungsteam es umsetzen soll. Es zeigt außerdem auf, welche Anforderungen priorisiert werden sollten, damit die Entwicklung möglichst effizient und pragmatisch verläuft.
+
+> **Beispiel:** Wer eine neue App entwickeln möchte, hat oft eine klare Vorstellung davon, wie sie aussehen und funktionieren soll – kann diese Vision aber nicht einfach mündlich an das Entwicklungsteam übergeben und erwarten, dass alle Erwartungen sofort verstanden und umgesetzt werden. Genau hier setzt das SRS-Dokument an.
+
+
+\\
+===== Warum sind Software-Anforderungen wichtig? =====
+
+Ohne klare Anweisungen an das Entwicklungsteam besteht die Gefahr, dass die Umsetzung eines neuen Produkts deutlich mehr Zeit und Kosten verursacht als geplant. Ein SRS-Dokument hilft dabei, die Projektvision schriftlich festzuhalten und die Anforderungen präzise zu formulieren. Es dient als **zentrale Informationsquelle** für alle beteiligten Teams – vom Marketing bis zur Wartung.
+
+Da sich Softwareanforderungen im Laufe eines Projekts häufig weiterentwickeln, funktioniert ein SRS-Dokument als **lebendes Dokument**: Alle Änderungen werden darin erfasst, sodass sämtliche Beteiligten jederzeit den aktuellen Stand einsehen und mögliche Unklarheiten bezüglich der Produktanforderungen vermieden werden können.
+
+
+\\
+===== Was beinhaltet eine Spezifikation von Softwareanforderungen? =====
+
+Ein grundlegendes SRS-Dokument gliedert sich in **vier Hauptbereiche**:
+
+\\
+==== 1. Einleitung ====
+
+Die Einleitung bietet einen Gesamtüberblick über das Projekt aus der Vogelperspektive. Sie beschreibt Zweck, Zielgruppe und geplante Nutzung des Produkts. Folgende Elemente sollten enthalten sein:
+
+  * **Produktumfang:** Bezug zu den allgemeinen Geschäftszielen; Nutzen, Zielsetzungen und angestrebte Ziele des Produkts.
+  * **Produktwert:** Warum ist das Produkt wichtig? Welches Problem löst es für die Zielgruppe?
+  * **Zielgruppe:** Beschreibung der idealen Nutzerinnen und Nutzer, die das Erscheinungsbild und die Vermarktung des Produkts bestimmt.
+  * **Verwendungszweck:** Auflistung aller verfügbaren Funktionen sowie möglicher Anwendungsszenarien je nach Aufgabenbereich.
+  * **Definitionen und Abkürzungen:** Erklärung der im Dokument verwendeten Fachbegriffe und Abkürzungen, damit alle Beteiligten dasselbe Verständnis haben.
+  * **Inhaltsverzeichnis:** Für umfangreiche SRS-Dokumente unverzichtbar, damit Lesende schnell die gesuchten Abschnitte finden.
+
+\\
+==== 2. System- und Funktionsanforderungen ====
+
+Die funktionalen Anforderungen beschreiben, welche Systemeigenschaften und -funktionen notwendig sind, damit das System wie vorgesehen arbeitet. Häufige funktionale Anforderungen umfassen unter anderem:
+
+  * Wenn/Dann-Verhalten
+  * Datenverarbeitungslogik
+  * Systemabläufe
+  * Transaktionsabwicklung
+  * Administrative Funktionen
+  * Regulierungs- und Compliance-Anforderungen
+  * Leistungsanforderungen
+  * Ausführbare Aktionen pro Bildschirm
+
+Je mehr Details in die Anforderungsspezifikation einfließen, desto weniger Aufwand entsteht später bei der Fehlersuche.
+
+\\
+==== 3. Anforderungen an externe Schnittstellen ====
+
+Externe Schnittstellenanforderungen stellen sicher, dass das System korrekt mit externen Komponenten kommuniziert. Dazu gehören:
+
+  * **Benutzeroberflächen:** Darstellung von Inhalten, Navigation und Nutzerunterstützung.
+  * **Hardware-Schnittstellen:** Unterstützte Gerätetypen und Kommunikationsprotokolle.
+  * **Software-Schnittstellen:** Verbindungen zu Datenbanken, Bibliotheken und Betriebssystemen.
+  * **Kommunikationsschnittstellen:** Anforderungen an Kommunikationsfunktionen wie E-Mails oder eingebettete Formulare.
+
+Bei eingebetteten Systemen sollten zudem Bildschirmlayouts, Tastenfunktionen und Abhängigkeiten von anderen Systemen berücksichtigt werden.
+
+\\
+==== 4. Nicht-funktionale Anforderungen ====
+
+Während funktionale Anforderungen beschreiben, **was** ein System tun soll, legen nicht-funktionale Anforderungen fest, **wie** das System diese Funktionen umsetzen soll. Typische nicht-funktionale Anforderungen betreffen:
+
+  * **Sicherheit:** Schutz sensibler Nutzerdaten.
+  * **Kapazität:** Aktueller und künftiger Speicherbedarf sowie Skalierungsstrategie.
+  * **Kompatibilität:** Mindestanforderungen an Hardware, Betriebssysteme und deren Versionen.
+  * **Zuverlässigkeit und Verfügbarkeit:** Erwartete Nutzungshäufigkeit und tolerierbare Ausfallzeiten.
+  * **Skalierbarkeit:** Maximale Arbeitslast, bei der das System noch die erwartete Leistung erbringt.
+  * **Wartungsfähigkeit:** Einsatz von Continuous Integration für schnelle Updates und Fehlerbehebungen.
+  * **Benutzerfreundlichkeit:** Wie intuitiv das Produkt zu bedienen sein soll.
+
+Weitere gängige nicht-funktionale Anforderungen umfassen Leistungs-, Regulierungs- und Umweltanforderungen.
+
+
+\\
+
+===== Bewährte Vorgehensweisen beim Verfassen eines SRS-Dokuments =====
+\\
+==== Visuelle Elemente einbinden ====
+
+Diagramme, Schemata und Modelle helfen Teammitgliedern, Prozesse besser zu verstehen – besonders wenn es darum geht, die Hauptfunktionen und die Bedienbarkeit der Software zu veranschaulichen. Eine nützliche Technik ist das **Mind Mapping**: Damit lassen sich Ideen, Merkmale und Szenarien strukturieren und miteinander in Verbindung bringen, bevor die Details im SRS-Dokument ausgearbeitet werden.
+\\
+==== Klar und präzise formulieren ====
+
+Entwicklungsteams brauchen eindeutige Anweisungen. Folgende Formulierungsfehler sollten vermieden werden:
+
+  * Vage Begriffe wie //„grundsätzlich"// oder //„ungefähr"//
+  * Schrägstriche (/) bei Begriffen, die als „und" oder „oder" interpretiert werden könnten
+  * Komplizierte Grenzwertangaben
+  * Doppelte oder dreifache Verneinungen
+
+Eine formelle Prüfung durch Kolleginnen und Kollegen ist empfehlenswert, um Unklarheiten frühzeitig zu erkennen und zu beseitigen.
+\\
+==== Den Endnutzer kennen ====
+
+Marktforschungsergebnisse und Nutzerinterviews sollten in das SRS-Dokument einfließen, um ein klares Bild der Anforderungen, Erwartungen und Bedürfnisse der Endnutzerinnen und -nutzer zu zeichnen. Alle möglichen Nutzungsszenarien und Sonderfälle sollten berücksichtigt werden – denn das Entwicklungsteam setzt genau das um, was im Dokument steht.
+\\
+==== Flexibilität einplanen ====
+
+Ein SRS-Dokument ist ein lebendes Dokument: Bei jeder Iteration können neue Funktionen und Änderungen hinzukommen. Anforderungen sollten daher flexibel formuliert werden, und alle Änderungen am Dokument sind sorgfältig zu protokollieren. Beteiligte sollten jede Anforderung bis zu ihrer ursprünglichen Version zurückverfolgen und nachvollziehen können, wer wann welche Änderung aus welchem Grund vorgenommen hat.
+
+
+\\
+===== Fazit: SRS-Dokumente zur Klärung der Vision einsetzen =====
+
+Das Verfassen eines Dokuments zur Spezifikation von Softwareanforderungen ist anspruchsvoll – aber weitaus weniger aufwändig als eine langwierige Fehlersuche oder endlose Diskussionen zwischen Teammitgliedern im Nachhinein. Die Arbeit, die in ein umfassendes SRS-Dokument investiert wird, zahlt sich durch ein überzeugendes Endprodukt aus, auf das alle Beteiligten stolz sein können.
+
+
+
+//Quelle: [[https://asana.com/de/resources/software-requirement-document-template|Asana – Software-Anforderungen richtig dokumentieren]] · © 2026 Asana, Inc.//
