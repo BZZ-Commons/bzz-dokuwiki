@@ -1,0 +1,57 @@
+====== Projektstrukturplan (PSP) ======
+
+Der erste Schritt, ein Projekt zu planen, ist die Erstellung eines Projektstrukturplans. Der ''Projektstrukturplan PSP'' – (engl. Work-Breakdown-Structure – WBS) – zerlegt die grosse Projektaufgabe in kleinere, delegierbare Teile, die so genannten Arbeitspakete.
+
+
+===== Einleitung ===== 
+
+Der Projektstrukturplan (PSP) ist der Masterplan, von dem alle wesentlichen Projektpläne ausgehen, und stellt einen unverzichtbaren Orientierungsraster und ein Ordnungssystem für die Projektabwicklung dar. Nur mit einem sauber geordneten und vollständigen Projektstrukturplan behält der Projektleiter sein Projekt im Griff. Nachträgliche Änderungen im Projektstrukturplan können einen hohen zusätzlichen Planungsaufwand bedeuten. Deshalb sollten möglichst frühzeitig alle relevanten Aufgaben ermittelt und eingeordnet werden.
+
+Im Projektstrukturplan sind die geplanten Projektaufgaben hierarchisch angeordnet. Der Aufbau gleicht dem eines Organigramms. Jede Gliederungsebene wird durch eine eindeutige Nummer, die so genannte Codierung, identifiziert. Dieses Nummernsystem ermöglicht die Zuordnung der Arbeitspakete zum kompletten Projekt.
+
+Das oberste Kästchen entspricht dem Projekt. Die zweite Ebene beinhaltet, falls benötigt, die Teilprojekte. Bei kleineren Projekten kann die zweite Ebene auch entfallen. In der dritten Ebene werden die Teilaufgaben beschrieben. Diese können auf verschiedene Arten aufgegliedert werden. In der vierten und letzten Ebene werden die Arbeitspakete aufgezählt.
+
+{{ :modul:m306:articles:psp1.svg?500 |Abb-1: Projektstrukturplan}}
+
+===== Gliederungsarten =====
+
+Bei jeder Zerlegung in die nächste Ebene sollte nach einem einheitlichen Gliederungsprinzip vorgegangen werden. Dieses Gliederungsprinzip kann von Stufe zu Stufe beibehalten oder im Wechsel eingesetzt werden. Entscheidend ist die Zweckmässigkeit. <wrap hi>Es gibt keine falschen, sondern nur mehr oder weniger zweckmässige Projektstrukturpläne.</wrap>
+
+Es werden folgende Gliederungsprinzipien unterschieden:
+
+  * Phasen- oder ablauforientierter Strukturplan
+  * Objektorientierter Strukturplan
+  * Funktions- oder verrichtungsorientierter Projektstrukturplan
+
+==== Phasen- oder ablauforientierter Strukturplan ====
+
+Viele Projekte laufen immer nach dem gleichen Muster ab. Damit bietet sich das standardisierte Vorgehen aufgeteilt in Phasen an. Meist ist zu Beginn der effektive Projektumfang unklar, es sind wichtige Entscheidungspunkte zu setzen und die Teilergebnisse bauen sehr stark aufeinander auf. Somit kann das Projektergebnis immer detaillierter erarbeitet werden.
+
+In der Regel beginnt man ein Projekt mit der Vorstudie, in der zuerst ein grober Überblick gewonnen wird. Anschliessend wird dieses Wissen in der Haupt- und Detailstudie verfeinert. Nachdem alles definiert und spezifiziert wurde, wird mit der Realisierung begonnen, um das Ergebnis anschliessend einzuführen. Der ''phasenorientierte'' Projektstrukturplan hat sich in vielen Organisationsprojekten durchgesetzt und wird in der Praxis häufig verwendet.
+
+{{ :modul:m306:articles:psp_phasen.svg?500 |Abb-2: Phasen- oder ablauforientierter Strukturplan ohne Codierung}}
+
+==== Objektorientierter Strukturplan ====
+
+Bei grossen Projekten, insbesondere beim Bau von Objekten (Häuser, Maschinen etc.), ist es zunächst wichtig, den Projektgegenstand in seiner vollen Komplexität zu begreifen. Mit dem ''objektorientierten'' Projektstrukturplan wird das komplexe System in seine Einzelteile gegliedert. Bei einem Hausbau könnten so die einzelnen Objekte Schritt für Schritt geplant werden.
+
+{{ :modul:m306:articles:psp_oo.svg?500 |Abb-3: Objektorientierter Strukturplan ohne Codierung}}
+
+
+==== Funktions- oder verrichtungsorientierter Projektstrukturplan ====
+
+In Projekten, bei denen die Arbeitsteilung stark im Vordergrund steht, eignet sich der ''funktionsorientierte'' Projektstrukturplan. Dabei werden von Spezialkräften immer die gleichen Funktionen ausgeführt. Aufgrund der verschiedenen Funktionen ergibt sich eine natürliche Reihenfolge der Verrichtungen, zwischen denen oft bestimmte zeitliche Abstände liegen. Auch beim Hausbau könnte diese Art von Projektstrukturplan sinnvoll sein.
+
+{{ :modul:m306:articles:psp_funktion.svg?500|Abb-4: Funktions- oder verrichtungsorientierter Strukturplan ohne Codierung}}
+
+
+===== Codierung =====
+
+Die //Kästchen// im Projektstrukturplan können eindeutig bezeichnet werden. Eine Codierung trägt zur eindeutigen Kommunikation im Projekt bei. Neben der identifizierenden Funktion innerhalb eines Projektstrukturplanes kann eine Codierung auch noch Informationen über die Zugehörigkeit zu Projektarten, Phasen, Abteilungen, Kostenträgern und Tätigkeitsarten beinhalten.
+
+{{ :modul:m306:articles:psp_codierung.svg?500|Abb-5: Beispiel einer Codierung}}
+
+
+----  
+
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] (c) Daniel Garavaldi

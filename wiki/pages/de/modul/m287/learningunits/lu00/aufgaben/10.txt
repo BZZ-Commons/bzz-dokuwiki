@@ -1,13 +1,4 @@
-====== LU00k - LB01 V2 - Inhalt ======
-
-
-Das Fachgespräch LB1 wird die nachfolgenden Themen vertieft behandeln:
-  * LU01: Verweise und URL-Aufbau
-  * LU02: CSS-Selektoren
-  * LU03: Box-Modell
-  * LU04: Displays
-
-Zur Vorbereitung können Sie sich an den nachfolgenden Vorgaben bzw. Aufgabenstellungen orientieren. Jede/r Kandidat/in muss innerhalb der Zeitvorgabe je eine Aufgabe aus den nachfolgenden Kapiteln bearbeiten. <color #ed1c24>Die Auswahl der Aufgaben wird am Anfang des Fachgesprächs zufällig ausgewählt.</color>
+====== LU00.A10: Fragen Fachgespräch ======
 
 **1. Benötigtes Fachvokabular**
   - HTML-Kommentar-Start, HTML-Kommentar-Ende, CSS-Kommentar-Start, CSS-Kommentar-Ende
@@ -15,23 +6,24 @@ Zur Vorbereitung können Sie sich an den nachfolgenden Vorgaben bzw. Aufgabenste
   - Typselektor, Klassenselektor, ID-Selektor, Pseudo-Klasse
   - Box-Modell, margin, padding, border, width, top, bottom, right, left
   - font-size, font-type, font-family, Border-Styles, solid, dotted, double, dashed, inset, outset, ridge, grove
-  - Verweise, Anker-Tag, relativer Pfad, absoluter Pfad, ROOT-directory/Wurzuelverzeichnis/, Sub-Directory/Unterverzeichnis, Top-Directory/Oberverzeichnis
+  - Verweise, Anker-Tag, relativer Pfad, absoluter Pfad
+  - ROOT-directory/Wurzuelverzeichnis/, Sub-Directory/Unterverzeichnis, Top-Directory/Oberverzeichnis
   - White-Spaces
 
 **2. Formales**
-  - Codestruktur ist nach Best-Practise (Codeebenen, Klammerung, ...)
+  - <color #ed1c24>Codestruktur ist nach Best-Practise (Codeebenen, Klammerung, ...)</color>
   - Script-Header: Kann HTMl- und CSS-Script nach Best-Practise (Autor, Datum, Beschreibung, ...) kommentieren.
   - Script-Code: Kann HTMl- und CSS-Script nach Best-Practise incode (Abschnitte, Seiteneffekte, Aufgabenteile, ...) kommentieren.
 
 **3. LU01 - Verweise und URL-Aufbau**
-  - Aufbau von relativen und absoluten Pfaden darlegen und exemplarisch aufzeigen können
+  - <color #ed1c24>Aufbau von relativen und absoluten Pfaden darlegen und exemplarisch aufzeigen können.</color>
   - Ressourcen (Bilder, Videos) auf dem eigenen Computer, unter Verwendung von relativen Pfaden ins HTML einbinden können.
-  - Ressourcen (Bilder, Videos) auf dem eigenen Computer, unter Verwendung von absoluten Pfaden ins HTML einbinden können.
+  - <color #ed1c24>Ressourcen (Bilder, Videos) auf dem eigenen Computer, unter Verwendung von absoluten Pfaden ins HTML einbinden können.</color>
   - Problematik von White-Spaces im File- oder Pfadnamen erklären und Lösung vorschlagen können.
   - White-Space-Fehler in File- und Pfadnamen erkennen und beheben können.
 
 **4. LU02 - CSS-Selektoren **
-  - Typ-Selektoren erklären und auf HTML-Elemente anwenden können.
+  - <color #ed1c24>Typ-Selektoren erklären und auf HTML-Elemente anwenden können.</color>
   - Klassen-Selektoren erklären und auf HTML-Elemente anwenden können.
   - ID-Selektoren erklären und auf HTML-Elemente anwenden können.
   - Pseuden-Klassen erklären und auf HTML-Elemente anwenden können: 
@@ -43,8 +35,8 @@ Zur Vorbereitung können Sie sich an den nachfolgenden Vorgaben bzw. Aufgabenste
     - nthchild
 
 **5. LU03 - Box-Modell**
-  - Kann die zwei im Unterricht behandelten Box-Modell nennen und die Unterschiede erklären.
-  - Kann die vier Bereiche der Box-Modelle nennen und diese nach vorgaben manipulieren.
+  - <color #ed1c24>Kann die zwei im Unterricht behandelten Box-Modell nennen und die Unterschiede erklären.</color>
+  - <color #ed1c24>Kann die vier Bereiche der Box-Modelle nennen und diese nach vorgaben manipulieren.</color>
   - Kann den Effekt erklären und demonstrieren, was passiert, wenn horizonale und vertikale margins zusammenfallen.
 
 **6. LU04 - Display**
