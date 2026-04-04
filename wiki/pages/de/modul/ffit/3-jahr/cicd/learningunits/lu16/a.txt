@@ -1,0 +1,64 @@
+====== LU16a - Weitere Werkzeuge ======
+
+Notiz PeAl: Security der Build-Environment anschauen. Kleine "Hack-Challenge" :-)
+
+==== Pipelines und Umgebungen ====
+
+**Projekt-Board / Issue-Tracking**
+  * 🆓 GitHub Projects (gut integriert in Commits/PRs; für Education i.d.R. gratis)
+  * 🆓 GitLab Issue Boards (voll integriert; auch self-hosted möglich)
+  * 💰 Atlassian Jira (sehr mächtig; Education-Lizenz möglich, ansonsten limitiertes Free Tier)
+  * 🆓 Miro (Kanban/Whiteboard; eingeschränkt im Free Tier)
+  * 🆓 Trello (Limitierte Automation im Free Tier)
+  * 🆓 Taiga (Open-Source, gutes Scrum-Board)
+  * 🆓 YouTrack (Free für kleine Teams; sehr starkes Issue-Tracking)
+  * 🆓 OpenProject (Open-Source, selbst hostbar; Kanban + Scrum)
+
+**Build-Pipeline / CI-Server**
+  * 🆓 GitHub Actions (Free-Minutes begrenzt; Education meist großzügig)
+  * 🆓 GitLab CI/CD (Free Tier gut; self-hosted unbegrenzt)
+  * 🆓 Jenkins (Open-Source; erfordert eigenen Server)
+  * 🆓 Azure Pipelines (kostenlos für Public; Private mit Limits)
+  * 🆓 CircleCI (Free Tier limitiert)
+  * 🆓 Travis CI (Public gratis; Private limitiert)
+  * 🆓 Drone CI (Open-Source; self-hosted möglich)
+  * 🆓 Bitbucket Pipelines (Free Tier limitiert)
+
+**Code-Analyse / Qualität**
+  * 🆓 SonarCloud (nur Public repos)
+  * 💰 SonarCloud (Private Repos)
+  * 🆓 SonarQube (self-hosted) (Community Edition gratis; eigener Server nötig)
+  * 🆓 ESLint / Prettier (Frontend/Node-Linting; super leicht in CI)
+  * 🆓 Flake8 / Black (Python Linting & Formatting)
+  * 🆓 Checkstyle / PMD (Java Code-Analyse)
+  * 🆓 Bandit (Python Security Scan)
+  * 🆓 OWASP ZAP (Sicherheitsanalyse; E2E-Security)
+  * 🆓 Snyk (Free Tier) (Dependency-Vulnerabilities; limitiert)
+
+**Hosting / Deployment**
+
+Frontend
+  * 🆓 GitHub Pages (nur statisch)
+  * 🆓 Netlify (ideal für React/Angular; Free Tier limitiert)
+  * 🆓 Vercel (sehr gut für Next.js/React; Free Tier limitiert)
+  * 🆓 Firebase Hosting (schnell + serverless; Free Tier gut)
+  * 🆓 Cloudflare Pages (statisch oder Functions; Free Tier sehr großzügig)
+
+Backend
+  * 🆓 Render (Free Tier schläft nach Inaktivität)
+  * 🆓 Railway (Free Tier begrenzt)
+  * 🆓 Fly.io (global deploy; Free Tier begrenzt)
+  * 🆓 Firebase Cloud Functions (serverless; Free Tier großzügig)
+  * 💰 AWS (EC2, Lambda, Elastic Beanstalk) (Free Tier 12 Monate)
+  * 💰 Azure App Service (Free Tier sehr minimal)
+  * 💰 Google Cloud Run / App Engine (Free Tier ok)
+
+Datenbanken
+  * 🆓 Firebase Firestore (NoSQL; Free Tier)
+  * 🆓 Supabase (Postgres; Free Tier limitiert)
+  * 🆓 MongoDB Atlas (Shared Cluster gratis)
+  * 🆓 Neon.tech (Postgres; Free Tier sehr gut)
+  * 💰 AWS RDS / DynamoDB (Free Tier eingeschränkt/zeitlich begrenzt)
+  * 💰 Azure SQL / CosmosDB (Free Tier eingeschränkt)
+
+''TODO''
