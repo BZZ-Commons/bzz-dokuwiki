@@ -2,8 +2,43 @@
 
 ==== Github-Pages ====
 
-''TODO''
+Das Deployment von statischen Webseiten via Github-Pages ist denkbar einfach. Dazu müssen nur unter "Settings" > "Pages" die Source und der Branch ausgewählt werden.
+
+{{:de:modul:ffit:3-jahr:cicd:learningunits:lu09:screenshot_github_pages.png?900|}}
+
+Beispiel Zusammensetzung der Links:
+  * Repository: https://github.com/AlexanderPeter/ffit-lu08-club-accounting-website 
+  * Github-Pages: https://alexanderpeter.github.io/ffit-lu08-club-accounting-website/
+
+<WRAP center round info 60%>
+Es ist auch möglich die Applikation in der Pipeline zu bauen und die resultierenden Seiten dann zu deployen.
+</WRAP>
 
 ==== AWS-Umgebung ====
+Bei benutzerdefinierten Deployments variiert die Art und Weise der Implementation. Für die unsere AWS-Build-Umgebung können die Dateien einfach in ein Verzeichnis kopiert werden. Nginx stellt die Dateien in dem Verzeichnis als Webseiten dar.
 
-''TODO''
+<code yaml>
+pipeline {
+    agent any
+
+    environment {
+        PROJECT_NAME       = "ffit-lu08-club-accounting-website"
+        BRANCH_NAME        = "master"
+        TARGET_DIR         = "/var/jenkins_home/projects/${PROJECT_NAME}/${BRANCH_NAME}"        
+    }
+
+...
+        
+        stage('Deploy') {
+            steps {
+                sh """
+                    echo "Deploying to $TARGET_DIR"
+                    mkdir -p "$TARGET_DIR"
+                    rm -rf "$TARGET_DIR"/*
+                    cp -r * "$TARGET_DIR"/
+                """
+            }
+        }
+</code>
+
+Anschliessend ist die Webseite unter http://<BUILD_ENVIRONMENT>/projects/ffit-lu08-club-accounting-website/master/ verfügbar.
