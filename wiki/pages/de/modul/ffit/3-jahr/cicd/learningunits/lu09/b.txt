@@ -4,4 +4,59 @@
 
 Der einfachste Weg, um Datenbank und Backend zu hosten, ist ein entsprechender Docker-Container zu erstellen. In der AWS-Buildumgebung ist der Zugriff auf die zugrundeliegende Docker-Instanz gewährt.
 
+Damit man von ausserhalb der AWS-Umgebung auf diesen Backend-Container zugriefen kann wurde in der BZZ-AWS-Build-Umgebung ein Forwarding aktiviert, welches HTTP-Anfragen, die dem erwarteten Muster entsprechend an den Port 5000 des entsprechenden Containers weiterleitet.
+
+Allgemein: ''${BASE_URL}/api/${PROJECT_NAME}/${BRANCH_NAME}/${PATH}'' -> ''${PROJECT_NAME}_${BRANCH_NAME}_backend:5000/${PATH}''
+
+Konkrete Beispiele:
+  * "http://54.80.83.95/api/cicd/develop/polls" -> "cicd_develop_backend:5000/polls"
+  * "http://54.80.83.95/api/cicd/develop/votes" -> "cicd_develop_backend:5000/votes"
+
+<code ini>
+    location ~ ^/api/([^/]+)/([^/]+)/(.*)$ {
+        proxy_pass http://$1_$2_backend:5000/$3;
+    }
+</code>
+
+Das bedeutet, dass im Frontend sichergestellt werden muss, dass Aufrufe des Backends die richtige URL verwenden.
+^ Pipeline ^ Frontend ^
+| <WRAP>
+<code bash>
+npm install
+REACT_APP_API_BASE=/api/${PROJECT_NAME}/${BRANCH_NAME} \
+npm run build
+</code>
+</WRAP> | <WRAP>
+<code javascript>
+const API_BASE = process.env.REACT_APP_API_BASE;
+...
+fetch(`${API_BASE}/votes?poll_id=${pollId}`)
+fetch(`${API_BASE}/votes`,... )
+fetch(`${API_BASE}/polls/${code}`)
+fetch(`${API_BASE}/polls`,... )
+</code>
+</WRAP> |
+
+Dasselbe gilt natürlich auch für das Backend, dessen Container richtig benannt und dessen Port korrekt gesetzt werden muss.
+
+^ Pipeline ^ Backend ^
+| <WRAP>
+<code bash>
+BACKEND_CONTAINER  = "${PROJECT_NAME}_${BRANCH_NAME}_backend"
+...
+docker build -t $BACKEND_CONTAINER -f Dockerfile.backend .
+docker run -d \
+    --name $BACKEND_CONTAINER \
+</code>
+</WRAP> | <WRAP>
+<code python>
+flask_app = create_app()
+flask_app.run(debug=True, host="0.0.0.0", port=5000)
+</code>
+</WRAP> |
+
+<WRAP round info 60%>
+**Hinweis:** Es ist gebräuchlich die Datenbank und das Backend in separaten Containern laufen zu lassen. Im Beispiel wird aus Gründen von Speicherplatz nur ein Container verwendet. Das Prinzip bleibt jedoch dasselbe.
+</WRAP>
+
 ''TODO''
