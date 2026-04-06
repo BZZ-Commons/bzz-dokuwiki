@@ -23,7 +23,7 @@ Das bedeutet, dass im Frontend sichergestellt werden muss, dass Aufrufe des Back
 | <WRAP>
 <code bash>
 npm install
-REACT_APP_API_BASE=/api/${PROJECT_NAME}/${BRANCH_NAME} \
+REACT_APP_API_BASE=/api/${PROJECT_NAME}/${BRANCH_NAME}/api \
 npm run build
 </code>
 </WRAP> | <WRAP>
