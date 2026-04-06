@@ -1,7 +1,7 @@
 ====== LU09b - Deployment von Datenbanken & Backends ======
 
-==== Datenbanken  ====
-''TODO''
+==== AWS-Umgebung (Docker)  ====
 
-==== Backends ====
+Der einfachste Weg, um Datenbank und Backend zu hosten, ist ein entsprechender Docker-Container zu erstellen. In der AWS-Buildumgebung ist der Zugriff auf die zugrundeliegende Docker-Instanz gewährt.
+
 ''TODO''
