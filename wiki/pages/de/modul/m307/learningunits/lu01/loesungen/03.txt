@@ -1,0 +1,19 @@
+====== LU01.L03 - myBubbleSort ======
+
+==== Teilauftrag 1: Statisch =====
+In zwei FOR-Schleifen wird ein unsortiertes Array eine feste Anzahl mal durchlaufen. Die Anzahl der Schleifendurchlaeufe ist abhaengig von der Anzahl unsortierter Array-Elemente.
+
+{{:de:modul:m307:learningunits:lu01:loesungen:lu01_l03_v1.png|Lösung Bubblesort Variante 1 - Statisch}}
+
+==== Teilauftrag 2: Flag =====
+Variante 2 arbeitet intelligenter als die Variante 1. Mittels eines //Flag// (Ampel) wird bei jedem Durchlauf des Arrays ermittelt, ob die korrekte Sortierung vorliegt. Falls nicht wird ein weiterer Durchlauf gestartet.
+
+
+{{:de:modul:m307:learningunits:lu01:loesungen:lu01_l03_v2.png|Variante 2 mit Fertig-Flag}}
+
+
+
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir
