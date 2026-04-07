@@ -3,7 +3,7 @@
 ===== Rahmenbedingungen =====
   * Sozialform: Einzelarbeit
   * Hilfsmittel: Openbooks
-  * Zeit: 40 Minuten
+  * Zeit: 30 Minuten
   * Erwartetes Resultat: 
     * JavaScript-File, dass eine JSON-Datei einliest und ausgibt. 
     * HTML-File, welches den Inhalt der JSON-Datei in der Browser-Konsole ausgibt.
@@ -25,7 +25,6 @@ Ihr Auftrag besteht aus Teilaufgaben:
   - JSON-Daten ergänzen (mehr Datensätze) - 5 Min.
   - JSON-Daten erweiteren (weitere Hobbies) - 5 Min.
   - Scripte auf JSON-Erweiterungen anpassen - 10 Min.
-  - Neues Filterfeld anlegen - 10 Min.
 
 ==== Teil 1: Code importieren + Inhalt testen ====
 
@@ -35,7 +34,7 @@ Ihr Auftrag besteht aus Teilaufgaben:
   - Filtern Sie die Liste nach //Namen// und Hobbies.
 
 ==== Teil 2: JSON-Daten ergänzen ====
-  - Aktuell sind 10 Datensätze im JSON-File. Legen Sie weitere mindestens 10 Datensätze (Personen an).  
+  - Aktuell sind ca. 10 Datensätze im JSON-File. Legen Sie weitere mindestens 10 Datensätze (Personen an).  
   - Testen Sie die Änderung im Browserfenster (anzeigen + filtern).
 
 ==== Teil 3: JSON-Daten erweiteren ====

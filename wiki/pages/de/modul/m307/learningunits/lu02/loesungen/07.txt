@@ -1,0 +1,65 @@
+====== LU02.L07 - JSON-Daten im Webformularen ausgeben ======
+
+===== Auftrag =====
+Bei dieser Aufgabe geht es darum sich mit den verschiedenen Technologien wie HTML, CSS und JavaScript **in Kombination** vertraut zu machen.
+
+Ihr Auftrag besteht aus Teilaufgaben:
+
+  - Code importieren + Inhalt testen - 10 Min.
+  - JSON-Daten ergänzen (mehr Datensätze) - 5 Min.
+  - JSON-Daten erweiteren (weitere Hobbies) - 5 Min.
+  - Scripte auf JSON-Erweiterungen anpassen - 10 Min.
+  - Neues Filterfeld anlegen - 10 Min.
+
+**Erklärvideo: Einleitung + Aufgabenvorbesprechung**
+
+{{:de:modul:m307:learningunits:lu02:loesungen:m307_lu02_l07_0.mp4|Einleitung + Aufgabenvorbesprechung}}
+
+**Erklärvideo: Erklärungen zu den Files**
+
+{{:de:modul:m307:learningunits:lu02:loesungen:m307_lu02_l07_0_1.mp4|Erklärungen zu den Files}}
+
+==== Code importieren + Inhalt testen ====
+
+  - Legen Sie im VS Code einen Ordner mit dem Namen lu02_l07 an.
+  - Copieren Sie die den Inhalt dieses nachfolgenden {{:de:modul:m307:learningunits:lu02:aufgaben:lu02_l07.zip | komprimierten Zip-Files}} in diesen Ordner: data.json, script.js, styles.css und index.html. 
+  - Führen Sie das File //index.html// im Browser aus bzw. lassen Sie sich die Liste im Browser-Fenster ausgeben.
+  - Filtern Sie die Liste nach //Namen// und Hobbies.
+
+**Erklärvideo: Importieren und testen**
+
+{{:de:modul:m307:learningunits:lu02:loesungen:m307_lu02_l07_1.mp4|Importieren und testen}}
+
+==== JSON-Daten ergänzen ====
+  - Aktuell sind 10 Datensätze im JSON-File. Legen Sie weitere mindestens 10 Datensätze (Personen an).  
+  - Testen Sie die Änderung im Browserfenster (anzeigen + filtern).
+
+**Erklärvideo: Neue Datensätze anlegen**
+
+{{:de:modul:m307:learningunits:lu02:loesungen:m307_lu02_l07_2.mp4|Neue Datensätze anlegen}}
+
+==== Teil 3: JSON-Daten erweiteren ====
+  - Aktuell sind 4 Hobbies vorhanden: Lesen, Fussball, Malen, Schwimmen.
+  - Überschreiben Sie die einige Datensätze Ihrer Wahl mit den neuen Hobbies //Gamen// und //Reisen//.
+  - Hinweis: Die neuen Hobbies werden zwar angezeigt, man kann aber aktuell nicht nach diesen Filtern, weil die Filter noch nicht angepasst wurden.
+
+**Erklärvideo: Daten erweiteren durch weitere Hobbies**
+
+{{:de:modul:m307:learningunits:lu02:loesungen:m307_lu02_l07_3.mp4|Teil 3: Daten erweiteren durch weitere Hobbies}}
+
+==== Teil 4:  Filterliste ergänzen ====
+  - Damit wir nach den Hobbies filtern können, müssen wir uns //index.html// anpassen.
+  - Ergänzen Sie also im entsprechenden div des HTML-Formulars die Liste der Checkboxen mit den neuen Hobbies //Gamen// und //Reisen//. 
+  - Testen Sie die Filter-Erweitung: die Filter-Liste sollte nun die zwei neuen Hobbies //Gamen// und //Reisen// enthalten.
+  - Testen Sie die Funktion des Filters: Die Liste sollten nun auch nach den Hobbies //Gamen// und //Reisen// gefiltert werden können.
+
+**Erklärvideo: Filterliste ergänzen**
+
+{{:de:modul:m307:learningunits:lu02:loesungen:m307_lu02_l07_4.mp4|Filterliste ergänzen}}
+
+
+----
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir
+
+
+
