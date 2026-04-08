@@ -2,7 +2,7 @@
 
 ===== Lernziele =====
   - Grundverständnis für Machine Learning entwickeln.
-  - Geziehlt ML Strategien einsetzten können.
+  - Geziehlt ML Strategien einsetzen können.
 
 ===== Rahmenbedingungen =====
   * Sozialform: Partnerarbeit
@@ -17,7 +17,7 @@ Ein Online-Shop möchte vorhersagen, ob ein Kunde ein Produkt kaufen wird oder n
   * Zeit (in Minuten), die der Kunde auf der Produktseite verbracht hat
   * Kaufentscheidung (Ja/Nein) ← Zielvariable
 
-===== Auftrag A: – Grundlagen/Theorie =====
+===== Auftrag A: Grundlagen/Theorie =====
 
 **1.** Erkläre Sie kurz den Unterschied zwischen
     * Supervised Learning und
@@ -25,22 +25,22 @@ Ein Online-Shop möchte vorhersagen, ob ein Kunde ein Produkt kaufen wird oder n
 **2.** Handelt es sich bei diesem Problem um (mit Begründung)
     * Klassifikation oder
     * Regression?
-**3. ** Nenne Sie zwei typische Algorithmen, die für dieses Problem geeignet waeren, und begründen Sie jeweils in einem Satz.
+**3. ** Nenne Sie zwei typische Algorithmen, die für dieses Problem geeignet wären, und begründen Sie jeweils in einem Satz.
 
-===== Auftrag B: – Datenverständnis  =====
+===== Auftrag B: Datenverständnis  =====
 **4. **Welche der oben genannten Merkmale sind numerisch, welche kategorisch?
 
 **5. **Warum ist es problematisch, die Zielvariable als Feature zu verwenden?
 
-===== Auftrag c: – Praxisdenken =====
+===== Auftrag C: Praxisdenken =====
 
 **6. **Beschreiben Sie in 4–5 Schritten den typischen Ablauf eines Machine-Learning-Projekts (von Daten bis Modellbewertung).
 
-**7. **Nennen Sie zwei Risiken, die auftreten koennen, wenn:
+**7. **Nennen Sie zwei Risiken, die auftreten können, wenn:
   * zu wenige Trainingsdaten vorhanden sind
   * das Modell zu gut auf die Trainingsdaten passt
 
-**8.** Was ist //Overfitting// – erklärt Sie so, dass es auch jemand versteht, der glaubt, KI sei Bewusstsein.
+**8.** Was ist //Overfitting// – erklären Sie so, dass es auch jemand versteht, der glaubt, KI sei Bewusstsein.
 
 ===== Lösung =====
 [[de:modul:m245:learningunits:lu02:loesungen:l01|LU02.L01]]

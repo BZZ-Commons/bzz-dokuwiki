@@ -7,13 +7,13 @@ Es gibt grundsätzlich drei Arten von Algorithmen im Bereich des maschinellen Le
   * Unsupervided Learning (Unüberwachtes Lernen)
   * Reinforcement Learning (Verstärkendes Lernen)
 
-{{:de:modul:m245:learningunits:lu02:theorie:machine_learning_types.png?800|}}
+{{:de:modul:m245:learningunits:lu02:theorie:machine_learning_types.png?600|}}
 
 
 ==== Superviced Machine Learning ====
 //Supervised Learning// ist eine Art des maschinellen Lernens, bei dem Algorithmen **aus gekennzeichneten Datensätzen (Eingabe-Ausgabe-Paaren) lernen**, Eingaben den richtigen Ausgaben zuzuordnen, sodass sie genaue Vorhersagen oder Entscheidungen zu neuen, unbekannten Daten treffen können, beispielsweise zur Identifizierung von Spam oder zur Vorhersage von Immobilienpreisen. 
 
-{{:de:modul:m245:learningunits:lu02:theorie:supervicedlearning.png?800|}}
+{{:de:modul:m245:learningunits:lu02:theorie:supervicedlearning.png?600|}}
 
 Es funktioniert, indem ein Modell anhand von Beispielen trainiert und seine internen Parameter angepasst werden, um Fehler zu minimieren. Es lässt sich grob in Klassifizierungsaufgaben (Kategorisierung von Daten) und Regressionsaufgaben (Vorhersage numerischer Werte) unterteilen und wird häufig bei den nachfolgenden Aufgaben eingesetzt: 
 
@@ -49,7 +49,7 @@ Innerhalb des Moduls 245 werden die diese Methode **nicht** angwenden.
 ==== Reinforcement Learning ====
 Reinforcement Learning (RL) ist eine Art des maschinellen Lernens, bei dem ein Agent lernt, optimale Entscheidungen zu treffen, indem er mit einer Umgebung interagiert und für seine Handlungen Belohnungen (positives Feedback) oder Strafen (negatives Feedback) erhält, ähnlich wie beim menschlichen Lernen durch Versuch und Irrtum, um ein Ziel zu erreichen. Es ist eine leistungsstarke Methode für KI, um komplexe Verhaltensweisen wie das Spielen von Spielen oder die Steuerung von Robotern ohne explizite Programmierung zu erlernen, wobei der Schwerpunkt auf der Maximierung der kumulativen Belohnungen im Laufe der Zeit liegt. Zu den Schlüsselelementen gehören der Agent, die Umgebung, Aktionen, Zustände, Belohnungen und eine Richtlinie (Strategie). 
 
-Innerhalb des Moduls 245 werden die diese Methode nicht angwenden.
+Innerhalb des Moduls 245 werden die diese Methode **nicht** angwenden.
 
 ===== Superviced Learning im Detail =====
 
