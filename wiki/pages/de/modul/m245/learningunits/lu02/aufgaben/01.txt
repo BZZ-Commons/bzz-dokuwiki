@@ -10,16 +10,16 @@
   * Erwartetes Ergebnis: Beantwortung der Fragen/Aufgabenstellung im nachvollziehbaren Schritten. 
 
 ===== Ausgangslage =====
-Ein Online-Shop möchte vorhersagen, ob ein Kunde ein Produkt kaufen wird oder nicht. Ihnen stehen folgende Merkmale (Features) zur Verfuegung:
+Ein Online-Shop möchte vorhersagen, ob ein Kunde ein Produkt kaufen wird oder nicht. Ihnen stehen folgende Merkmale (Features) zur Verfügung:
 
   * Alter des Kunden
-  * Anzahl der bisherigen Einkaeufe
+  * Anzahl der bisherigen Einkäufe
   * Zeit (in Minuten), die der Kunde auf der Produktseite verbracht hat
   * Kaufentscheidung (Ja/Nein) ← Zielvariable
 
-===== Auftrag A: – Grundlagen (Theorie) =====
+===== Auftrag A: – Grundlagen/Theorie =====
 
-**1.** Erklaere Sie kurz den Unterschied zwischen
+**1.** Erkläre Sie kurz den Unterschied zwischen
     * Supervised Learning und
     * Unsupervised Learning.
 **2.** Handelt es sich bei diesem Problem um (mit Begründung)
@@ -27,7 +27,7 @@ Ein Online-Shop möchte vorhersagen, ob ein Kunde ein Produkt kaufen wird oder n
     * Regression?
 **3. ** Nenne Sie zwei typische Algorithmen, die für dieses Problem geeignet waeren, und begründen Sie jeweils in einem Satz.
 
-===== Auftrag B: – Datenverstaendnis  =====
+===== Auftrag B: – Datenverständnis  =====
 **4. **Welche der oben genannten Merkmale sind numerisch, welche kategorisch?
 
 **5. **Warum ist es problematisch, die Zielvariable als Feature zu verwenden?
@@ -40,12 +40,10 @@ Ein Online-Shop möchte vorhersagen, ob ein Kunde ein Produkt kaufen wird oder n
   * zu wenige Trainingsdaten vorhanden sind
   * das Modell zu gut auf die Trainingsdaten passt
 
-**8.** Was ist //Overfitting// – erklaert so, dass es auch jemand versteht, der glaubt, KI sei Bewusstsein.
-
-
+**8.** Was ist //Overfitting// – erklärt Sie so, dass es auch jemand versteht, der glaubt, KI sei Bewusstsein.
 
 ===== Lösung =====
-[[de:modul:m245:learningunits:lu02:loesungen:l01|Lösung]]
+[[de:modul:m245:learningunits:lu02:loesungen:l01|LU02.L01]]
 
 ----
 [[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir

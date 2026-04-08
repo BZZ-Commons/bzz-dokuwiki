@@ -12,13 +12,12 @@ Arthur Lee Samuel war ein amerikanischer Pionier auf dem Gebiet der künstlichen
 Später beschrieb **Tom Michael Mitchell** maschinelles Lernen wie folgt: <wrap hi>Ein Computerprogramm lernt aus //Erfahrung E// in Bezug auf eine bestimmte //Aufgabe T// und eine bestimmte //Leistungsmessung P//, wenn sich seine Leistung bei T, gemessen anhand von P, mit der Erfahrung E verbessert. </wrap>
 
 Tom Michael Mitchell ist Professor an der Carnegie Mellon University, wo er als //Founders University Professor// im Fachbereich Maschinelles Lernen tätig ist und **Leiter des Fachbereichs Maschinelles Lernen** ist. Er ist vor allem für seine Beiträge auf den Gebieten des maschinellen Lernens und der künstlichen Intelligenz bekannt. Er hat mehrere einflussreiche Bücher zu diesen Themen verfasst, darunter //Machine Learning// und //The Discipline of Machine Learning//.
-*** Übersetzt mit www.DeepL.com/Translator (kostenlose Version) ***
 
 Wenn wir Tom Michael Mitchells Definition auf ein Dame-Spiel anwenden, bei dem der Computer die beste Gewinnstrategie findet, können wir sagen, dass:
 
-  * **E = Erfahrung**: Die Erfahrung, dass das Programm selbst Zehntausende von Spielen gespielt hat.
-  * **T = Aufgabe**: Die Aufgabe, Dame zu spielen.
-  * **P = Wahrscheinlichkeit**: Die Wahrscheinlichkeit, dass das nächste Dame-Spiel gegen einen neuen Gegner gewonnen wird.
+  * **E = Experience/Erfahrung**: Die Erfahrung, dass das Programm selbst Zehntausende von Spielen gespielt hat.
+  * **T = Task/Aufgabe**: Die Aufgabe, Dame zu spielen.
+  * **P = Probability/Wahrscheinlichkeit**: Die Wahrscheinlichkeit, dass das nächste Dame-Spiel gegen einen neuen Gegner gewonnen wird.
 
 ===== Wichtiges Vokabular im Zusammenhang mit Machine Learning  =====
 Bevor wir tiefer in die Materie tauchen, sollten einige Begrifflichkeiten geklärt werden.
@@ -31,7 +30,7 @@ Bevor wir tiefer in die Materie tauchen, sollten einige Begrifflichkeiten geklä
 
 ===== Lernvideo =====
 
-{{ :de:modul:m245:learningunits:lu02:theorie:machine_learning_explained_in_100_seconds.mp4 | Machine Learning in 100 Sekunden }} 
+{{:de:modul:m245:learningunits:lu02:theorie:machine_learning_explained_in_100_seconds.mp4| Machine Learning in 100 Sekunden}} 
 
 ----
 [[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png}}]] Volkan Demir
