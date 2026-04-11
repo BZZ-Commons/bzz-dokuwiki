@@ -2,6 +2,8 @@
 
 ===== Eine schwierige Beziehung =====
 
+{{:de:modul:m291:learningunits:lu09:theorie:html_js.png?nolink|HTML und JS kommunizieren nur über das DOM}}
+
 Stellen Sie sich vor: HTML und JavaScript sitzen im selben Raum, aber sie sprechen nicht miteinander. JavaScript muss jedes Mal den Umweg über den DOM nehmen – wie eine Nachricht, die über mehrere Umwege zur Empfängerin gelangt.
 
 <WRAP box center round 80%>
@@ -17,11 +19,12 @@ panel.setAttribute('aria-expanded', 'true');
 
 HTML weiss nichts von JavaScript. JavaScript weiss nichts von HTML. Das funktioniert – aber es ist schwerfällig, fehleranfällig und wird mit jedem weiteren Baustein unübersichtlicher.
 
-----
 
 ===== Die Liebesbeziehung: Wie Vue.js die beiden zusammenbringt =====
 
-Dann kommt Vue.js und baut eine Brücke. HTML und JavaScript sprechen plötzlich **direkt** miteinander. Das Template ist kein stummes HTML mehr – es ist angereichert mit JavaScript-Logik, direkt dort wo sie gebraucht wird.
+{{:de:modul:m291:learningunits:lu09:theorie:html_js_-_vue_1.4x.png?nolink| Vuejs bringt HTML und JS näher zusammen}}
+
+Vue.js kommt ins Spiel und bringt die beiden näher zusammen. HTML und JavaScript sprechen plötzlich **direkt** miteinander. Das Template ist kein stummes HTML mehr – es ist angereichert mit JavaScript-Logik, direkt dort wo sie gebraucht wird.
 
 ==== ref() – Daten, die Vue beobachtet ====
 
