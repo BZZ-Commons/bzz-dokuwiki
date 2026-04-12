@@ -34,7 +34,7 @@ const isOpen = ref(false);
 </code>
 </WRAP>
 
-Mit ''ref()'' wird eine Variable **reaktiv**. Sobald sich ihr Wert ändert, weiss Vue sofort, welche Teile des Templates neu gerendert werden müssen – ganz ohne dass Sie selbst mit ''querySelector'' nach Elementen suchen. Der Zustand lebt an einem einzigen, klar definierten Ort.
+Mit ''ref()'' wird eine Variable **reaktiv**. Sobald sich ihr Wert ändert, weiss Vue sofort, welche Teile des Templates (=HTML) neu gerendert werden müssen – ganz ohne dass Sie selbst mit ''querySelector'' nach Elementen suchen.
 
 
 ==== : (v-bind) – HTML-Attribute an JavaScript-Werte binden ====
