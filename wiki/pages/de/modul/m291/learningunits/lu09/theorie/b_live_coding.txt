@@ -71,6 +71,8 @@ npm run dev
 
 Öffnen Sie ''http://localhost:5173/'' im Browser.
 
+{{:de:modul:m291:learningunits:lu09:theorie:screenshot_2026-04-11_at_22.47.31.png?direct&700|}}
+
 ==== 3. VS Code einrichten ====
 
 Damit Syntax-Highlighting funktioniert, installieren Sie zwei Extensions in VS Code (Webstorm braucht das nicht):
@@ -110,6 +112,10 @@ Erstellen Sie darin die Datei ''components/Accordion.vue'' mit folgendem Grundge
 </code>
 </WRAP>
 
+
+{{:de:modul:m291:learningunits:lu09:theorie:screenshot_2026-04-11_at_22.11.14.png?direct&700|}}
+//Accordion.vue erstellen//
+
 Fügen Sie im ''<template>''-Bereich das HTML-Grundgerüst ein – Sie können es aus dem bestehenden FAQ-Accordion übernehmen:
 
 <WRAP box center round 80%>
@@ -128,6 +134,7 @@ Fügen Sie im ''<template>''-Bereich das HTML-Grundgerüst ein – Sie können e
 </template>
 </code>
 </WRAP>
+
 
 ==== Schritt 2: Komponente in App.vue einbinden ====
 
@@ -148,6 +155,8 @@ import Accordion from './components/Accordion.vue';
 <WRAP tip round>
 **Was haben wir gemacht?** Wir haben eine eigene **Komponente** erstellt – ein abgeschlossenes UI-Baustein, der einmal gebaut und beliebig oft eingesetzt werden kann. ''App.vue'' importiert und rendert ihn. Das ist das Komponentenprinzip von Vue.
 </WRAP>
+
+{{:de:modul:m291:learningunits:lu09:theorie:screenshot_2026-04-11_at_22.47.31.png?direct|}}
 
 ==== Schritt 3: CSS hinzufügen ====
 

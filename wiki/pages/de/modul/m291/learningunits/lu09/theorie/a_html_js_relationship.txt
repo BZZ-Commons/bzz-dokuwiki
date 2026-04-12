@@ -36,15 +36,6 @@ const isOpen = ref(false);
 
 Mit ''ref()'' wird eine Variable **reaktiv**. Sobald sich ihr Wert ändert, weiss Vue sofort, welche Teile des Templates neu gerendert werden müssen – ganz ohne dass Sie selbst mit ''querySelector'' nach Elementen suchen. Der Zustand lebt an einem einzigen, klar definierten Ort.
 
-==== {{ }} – Ein Fenster direkt ins JavaScript ====
-
-<WRAP box center round 80%>
-<code html>
-<p>{{ isOpen }}</p>
-</code>
-</WRAP>
-
-Doppelte geschweifte Klammern betten einen JavaScript-Wert direkt ins HTML ein. Ändert sich der Wert der ''ref()''-Variable, aktualisiert sich die Anzeige automatisch – ohne manuelles ''element.textContent = ...'' .
 
 ==== : (v-bind) – HTML-Attribute an JavaScript-Werte binden ====
 
@@ -84,7 +75,19 @@ Das funktioniert mit **jedem** HTML-Attribut:
 
 ''@'' ist die Kurzform von ''v-on:''. Anstatt in JavaScript erst ''querySelector'' aufzurufen und dann ''addEventListener'' zu setzen, schreibt man das Event direkt am Element im Template – dort wo es passiert, dort wo es hingehört.
 
-----
+{{:de:modul:m291:learningunits:lu09:theorie:vuejs_connect_js_html.png?direct| Übersichtsgrafik zu v-bind und v-on}}
+
+==== {{ }} – Ein Fenster direkt ins JavaScript ====
+
+<WRAP box center round 80%>
+<code html>
+<h1>{{ faqTitle }}</h1>
+</code>
+</WRAP>
+
+Doppelte geschweifte Klammern betten einen JavaScript-Wert direkt ins HTML ein. Ändert sich der Wert der ''ref()''-Variable, aktualisiert sich die Anzeige automatisch – ohne manuelles ''element.textContent = ...'' .
+
+{{:de:modul:m291:learningunits:lu09:theorie:m291_lu09_vuejs_komponenten_reaktivitaet.001.png?direct&900|Wie funktioniert Moustache-Schreibweise?}}
 
 ===== Das Muster dahinter: Von getrennten Welten zu einer einzigen =====
 
