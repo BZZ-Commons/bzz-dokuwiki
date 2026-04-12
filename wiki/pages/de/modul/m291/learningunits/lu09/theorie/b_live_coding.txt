@@ -1,0 +1,279 @@
+====== LU09b – Vue.js: Reaktive Variablen, v-bind und Mustache ======
+
+===== Lernziele =====
+
+  * Sie verstehen, was reaktive Variablen sind, wie ''ref()'' funktioniert und warum wir sie brauchen.
+  * Sie kennen die wichtigsten Vue-Direktiven: ''v-bind'' und ''v-on''.
+  * Sie können JavaScript-Werte direkt im HTML-Template mit ''%%{{ }}%%'' ausgeben.
+  * Sie sind vertraut mit der Struktur einer Vue-Komponente (''<script setup>'', ''<template>'', ''<style>'').
+
+
+===== Projektaufbau: Was ist was? =====
+
+Nach dem Setup mit Vue CLI entsteht folgende Ordnerstruktur:
+
+<WRAP box center round 80%>
+<code>
+my-first-vue-app/
+├── src/
+│   ├── App.vue          ← Haupt-Komponente, rendert alles
+│   ├── components/      ← Eigene Komponenten kommen hier rein
+│   └── assets/          ← Bilder, Fonts, globale CSS-Dateien
+├── index.html           ← Einstiegspunkt der App
+└── package.json         ← Projektinformationen und Dependencies
+</code>
+</WRAP>
+
+<WRAP tip round>
+''App.vue'' ist das Fenster zu unserer Applikation. Alles, was auf der Seite erscheint, wird direkt oder indirekt von ''App.vue'' gerendert.
+</WRAP>
+
+
+===== Vue-Projekt erstellen =====
+
+==== 1. Projekt anlegen ====
+
+Öffnen Sie das Terminal im Ordner, in dem Sie das Projekt erstellen möchten:
+
+  * **Mac:** Rechtsklick auf den Ordner im Finder → //Dienste// → //Neues Terminal beim Ordner//
+  * **Windows 11:** Rechtsklick auf den Ordner im Explorer → //In Terminal öffnen//
+  * **Windows 10:** Rechtsklick auf den Ordner im Explorer → //PowerShell-Fenster hier öffnen// (falls nicht sichtbar: Shift + Rechtsklick)
+
+{{:de:modul:m291:learningunits:lu09:theorie:screenshot_2026-04-12_at_09.06.00.png?direct&600| in Mac Terminal at Folder öffnen}}
+
+<WRAP box center round 80%>
+<code bash>
+npm create vue@latest
+</code>
+</WRAP>
+
+Folgen Sie dem Setup-Assistenten:
+
+  * **Project name:** ''my-first-vue-app''
+  * **TypeScript:** No
+  * **Features:** Nichts auswählen (Enter)
+  * **Experimental features:** Nichts auswählen (Enter)
+  * **Skip all example code:** Yes
+
+{{:de:modul:m291:learningunits:lu09:theorie:screenshot_2026-04-12_at_09.01.57.png?direct&700|Installation von Vue.js}}
+
+==== 2. Projekt starten ====
+
+<WRAP box center round 80%>
+<code bash>
+cd my-first-vue-app
+npm install
+npm run dev
+</code>
+</WRAP>
+
+{{:de:modul:m291:learningunits:lu09:theorie:screenshot_2026-04-12_at_09.02.50.png?direct&700|Starten von vuejs}}
+
+Öffnen Sie ''http://localhost:5173/'' im Browser.
+
+==== 3. VS Code einrichten ====
+
+Damit Syntax-Highlighting funktioniert, installieren Sie zwei Extensions in VS Code (Webstorm braucht das nicht):
+
+  * **Vue (Official)** – Syntax-Highlighting für ''.vue''-Dateien
+  * **Auto Close Tag** – schliesst HTML-Tags automatisch
+<WRAP center round box 80%>
+{{:de:modul:m291:learningunits:lu09:theorie:screenshot_2026-04-11_at_22.02.40.png?direct&400|Vue VS-Code extension für Syntax-Highlighting}}
+{{:de:modul:m291:learningunits:lu09:theorie:screenshot_2026-04-11_at_22.04.07.png?direct&500|Vue extension installieren}}
+{{:de:modul:m291:learningunits:lu09:theorie:screenshot_2026-04-11_at_22.17.48.png?direct&600|Auto close Tags installieren}}
+</WRAP>
+
+
+
+
+===== FAQ Accordion in Vue =====
+
+==== Schritt 1: Komponente erstellen ====
+
+Erstellen Sie im ''src/''-Ordner zwei neue Unterordner: ''components/'' und ''assets/''.
+
+Erstellen Sie darin die Datei ''components/Accordion.vue'' mit folgendem Grundgerüst:
+
+<WRAP box center round 80%>
+<code html>
+<script setup>
+
+</script>
+
+<template>
+
+</template>
+
+<style>
+
+</style>
+</code>
+</WRAP>
+
+Fügen Sie im ''<template>''-Bereich das HTML-Grundgerüst ein – Sie können es aus dem bestehenden FAQ-Accordion übernehmen:
+
+<WRAP box center round 80%>
+<code html>
+<template>
+  <div class="accordion">
+    <h1>FAQs</h1>
+    <button class="accordion-btn">
+      What is this project, and how will it help me?
+    </button>
+    <div class="panel">
+      It's a small but mighty mission: you'll build an FAQ accordion with
+      panels that open and close.
+    </div>
+  </div>
+</template>
+</code>
+</WRAP>
+
+==== Schritt 2: Komponente in App.vue einbinden ====
+
+Damit die Komponente im Browser erscheint, muss sie in ''App.vue'' importiert und gerendert werden:
+
+<WRAP box center round 80%>
+<code html>
+<script setup>
+import Accordion from './components/Accordion.vue';
+</script>
+
+<template>
+  <Accordion />
+</template>
+</code>
+</WRAP>
+
+<WRAP tip round>
+**Was haben wir gemacht?** Wir haben eine eigene **Komponente** erstellt – ein abgeschlossenes UI-Baustein, der einmal gebaut und beliebig oft eingesetzt werden kann. ''App.vue'' importiert und rendert ihn. Das ist das Komponentenprinzip von Vue.
+</WRAP>
+
+==== Schritt 3: CSS hinzufügen ====
+
+Im ''<style>''-Bereich von ''Accordion.vue'' fügen wir die bekannten CSS-Regeln ein:
+
+<WRAP box center round 80%>
+<code css>
+.panel {
+  display: none;
+}
+
+.panel.open {
+  display: block;
+}
+</code>
+</WRAP>
+
+==== Schritt 4: Interaktivität – zuerst mit einer normalen Variable ====
+
+Wir versuchen es zuerst mit einer gewöhnlichen Variable:
+
+<WRAP box center round 80%>
+<code html>
+<script setup>
+let isOpen = false;
+
+function toggleOpen() {
+  isOpen = !isOpen;
+  console.log('isOpen', isOpen);
+}
+</script>
+
+<template>
+  <div class="accordion">
+    <h1>FAQs</h1>
+    <button v-on:click="toggleOpen" class="accordion-btn">
+      What is this project, and how will it help me?
+    </button>
+    <div class="panel" v-bind:class="{ open: isOpen }">
+      It's a small but mighty mission...
+    </div>
+  </div>
+</template>
+</code>
+</WRAP>
+
+Testen Sie im Browser: Die Console zeigt den richtigen Wert – aber die Klasse ''open'' wird nicht gesetzt. **Warum?**
+
+Die Variable ist nicht reaktiv. Vue weiss nicht, dass sie sich geändert hat, und rendert das Template nicht neu.
+
+==== Schritt 5: ref() – die reaktive Variable ====
+
+<WRAP box center round 80%>
+<code javascript>
+import { ref } from 'vue';
+const isOpen = ref(false);
+</code>
+</WRAP>
+
+''ref()'' macht die Variable reaktiv – Vue beobachtet sie. Ändert sich ihr Wert, aktualisiert Vue automatisch alle Stellen im Template, die davon abhängen.
+
+**Wichtig:** Innerhalb von JavaScript greift man auf den Wert mit ''.value'' zu:
+
+<WRAP box center round 80%>
+<code javascript>
+function toggleOpen() {
+  isOpen.value = !isOpen.value;
+}
+</code>
+</WRAP>
+
+Im ''<template>'' verwendet man ''isOpen'' direkt – ohne ''.value''.
+
+==== Schritt 6: Mustache {{ }} – JavaScript direkt im HTML ====
+
+Mit doppelten geschweiften Klammern können JavaScript-Werte direkt ins HTML eingebettet werden:
+
+<WRAP box center round 80%>
+<code html>
+<script setup>
+const faqTitle = 'FAQs';
+</script>
+
+<template>
+  <h1>{{ faqTitle }}</h1>
+</template>
+</code>
+</WRAP>
+
+''%%{{ faqTitle }}%%'' wird durch den aktuellen Wert der Variable ersetzt. Ändert sich der Wert (bei einer ''ref()''-Variable), aktualisiert sich die Anzeige automatisch.
+
+==== Finaler Code ====
+
+<WRAP box center round 80%>
+<code html>
+<script setup>
+import { ref } from 'vue';
+
+const isOpen = ref(false);
+const faqTitle = 'FAQs';
+
+function toggleOpen() {
+  isOpen.value = !isOpen.value;
+}
+</script>
+
+<template>
+  <div class="accordion">
+    <h1>{{ faqTitle }}</h1>
+    <button v-on:click="toggleOpen" class="accordion-btn">
+      What is this project, and how will it help me?
+    </button>
+    <div class="panel" v-bind:class="{ open: isOpen }">
+      It's a small but mighty mission: you'll build an FAQ accordion with
+      panels that open and close.
+    </div>
+  </div>
+</template>
+
+<style>
+.panel {
+  display: none;
+}
+.panel.open {
+  display: block;
+}
+</style>
+</code>
+</WRAP>

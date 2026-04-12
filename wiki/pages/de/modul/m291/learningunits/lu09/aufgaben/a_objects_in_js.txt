@@ -1,0 +1,51 @@
+====== LU09b – Aufgabe: JavaScript-Objekte und Vue ======
+
+===== Theorie: JavaScript-Objekte =====
+
+Bevor Sie mit der Aufgabe beginnen, eine kurze Repetition zu **Objekten** in JavaScript.
+
+Ein Objekt fasst zusammengehörende Daten unter einem Namen zusammen:
+
+<WRAP box center round 80%>
+<code javascript>
+// Ein Objekt mit zwei Eigenschaften
+const person = {
+  name: 'Anna',
+  age: 22,
+};
+
+// Eigenschaften auslesen (Punkt-Notation)
+console.log(person.name); // → 'Anna'
+console.log(person.age);  // → 22
+</code>
+</WRAP>
+
+Für unsere FAQ-Daten erstellen wir ein Objekt mit den Eigenschaften ''question'' und ''answer'':
+
+<WRAP box center round 80%>
+<code javascript>
+const faqData = {
+  question: 'What is this project?',
+  answer:   "It's a small but mighty mission...",
+};
+</code>
+</WRAP>
+
+----
+
+===== Aufgabe =====
+
+==== Auftrag ====
+
+  - Lesen Sie die Theorie zu ''ref()'' und ''v-bind'' auf Moodle (LU09a – Theorie).
+  - Erstellen Sie im ''<script setup>'' ein Objekt ''faqData'' mit den Eigenschaften ''question'' und ''answer''.
+  - Ersetzen Sie den hartcodierten Text im ''<template>'' durch ''%%{{ faqData.question }}%%'' und ''%%{{ faqData.answer }}%%''.
+  - Ersetzen Sie ''v-on:click'' durch die Kurzform ''@click'' und ''v-bind:class'' durch die Kurzform '':class''.
+  - **(Bonus)** Fügen Sie Transitions für ''height'' und ''opacity'' hinzu (wie im bisherigen FAQ-Accordion).
+  - **(Bonus)** Übernehmen Sie das vollständige Styling aus dem bisherigen FAQ-Accordion.
+
+==== Erwartetes Ergebnis ====
+
+  * Das Panel öffnet und schliesst sich per Klick.
+  * Frage und Antwort werden aus dem ''faqData''-Objekt gelesen.
+  * Der Code verwendet die Vue-Kurzformen ('':'' und ''@'').
