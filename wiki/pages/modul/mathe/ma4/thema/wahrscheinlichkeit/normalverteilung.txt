@@ -1,0 +1,88 @@
+====== LU02a – Normalverteilung ======
+
+**Ziel:** Du kannst erklären, was eine Normalverteilung ist, ihre Eigenschaften benennen und reale Beispiele dafür nennen.
+
+----
+
+===== Kurztheorie (Merksätze) =====
+
+  * Viele reale Datensätze häufen sich um einen **zentralen Wert** – die Normalverteilung beschreibt genau diese Form.
+  * Die Kurve sieht aus wie eine **Glocke** → wird auch „Glockenkurve" genannt.
+  * **Mittelwert = Median = Modus** – alle drei Lagemasse fallen auf denselben Punkt.
+  * Die Kurve ist **symmetrisch**: 50 % der Werte liegen links, 50 % rechts vom Mittelwert.
+  * Reale Daten sind selten //perfekt// normalverteilt – die Normalverteilung ist ein nützliches **Modell**.
+
+----
+
+===== 1) Wie können Daten verteilt sein? =====
+
+Daten lassen sich auf ganz verschiedene Arten verteilt sein:
+
+{{:modul:mathe:ma4:thema:wahrscheinlichkeit:normalverteilung_intro.png?800|Vergleich: linksschief, normalverteilt, rechtsschief}}
+
+^ Typ ^ Beschreibung ^ Beispiel ^
+| **Linksschief** | Schweif zeigt nach links, Häufungen rechts | Sterbealter in entwickelten Ländern |
+| **Normalverteilt** | Symmetrische Glocke, Häufung in der Mitte | Körpergrösse, Testergebnisse |
+| **Rechtsschief** | Schweif zeigt nach rechts, Häufungen links | Einkommen, Wartezeiten |
+
+In der Praxis begegnet uns die Normalverteilung sehr häufig – entweder weil Daten tatsächlich so verteilt sind, oder weil sie als **Modell** für Berechnungen dient.
+
+----
+
+===== 2) Eigenschaften der Normalverteilung =====
+
+{{:modul:mathe:ma4:thema:wahrscheinlichkeit:normalverteilung_eigenschaften.png?700|Eigenschaften der Normalverteilung}}
+
+Die Normalverteilung hat drei wichtige Eigenschaften:
+
+==== 2.1 Mittelwert = Median = Modus ====
+
+Bei einer perfekten Normalverteilung fallen alle drei zentralen Lagemasse zusammen:
+
+  * **Mittelwert (μ):** arithmetischer Durchschnitt aller Werte
+  * **Median:** der mittlere Wert (50. Perzentil)
+  * **Modus:** der am häufigsten vorkommende Wert
+
+Dies passiert genau dann, wenn die Verteilung **perfekt symmetrisch** ist.
+
+==== 2.2 Symmetrie ====
+
+Die Glockenform ist **links-rechts-symmetrisch** um den Mittelwert μ. Das bedeutet:
+
+  * Genau **50 %** der Werte liegen //unterhalb// des Mittelwerts.
+  * Genau **50 %** der Werte liegen //oberhalb// des Mittelwerts.
+
+==== 2.3 Asymptotisch gegen null ====
+
+Die Kurve nähert sich der x-Achse immer mehr an, **erreicht sie aber nie** (asymptotisch). Theoretisch können Werte beliebig weit vom Mittelwert entfernt sein – aber ihre Wahrscheinlichkeit wird extrem klein.
+
+----
+
+===== 3) Beispiele aus der Praxis =====
+
+Viele reale Phänomene folgen näherungsweise einer Normalverteilung:
+
+^ Phänomen ^ Mittelwert (typisch) ^ Bemerkung ^
+| Körpergrösse (Frauen CH) | ≈ 165 cm | Grosse wie kleine Frauen seltener |
+| IQ-Werte | 100 | σ = 15 per Definition |
+| Blutdruck (diastolisch) | ≈ 80 mmHg | Natürliche biologische Streuung |
+| Produktionsmasse (Industrie) | Sollmass | Maschinen schwanken leicht |
+| Testergebnisse | Klassenmittel | Bei gut konstruierten Tests |
+
+> **Wichtig:** Die meisten realen Daten sind nur **näherungsweise** normalverteilt. Das Modell ist trotzdem sehr nützlich, weil sich damit Wahrscheinlichkeiten berechnen lassen.
+
+----
+
+
+===== Verständnisfragen =====
+
+  - Nenne **drei reale Phänomene**, die näherungsweise normalverteilt sind.
+  - Was passiert mit der Glockenform, wenn der Mittelwert μ grösser wird?
+  - Warum sind Mittelwert, Median und Modus bei einer Normalverteilung gleich?
+  - Ist ein Datensatz mit einer kleinen Erhebung (z.B. 10 Messungen) schon normalverteilt? Begründe.
+
+
+
+----
+
+[[https://creativecommons.org/licenses/by-nc-sa/4.0/|{{ https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png }}]] Bearbeitet nach [[https://www.mathsisfun.com/data/standard-normal-distribution.html|mathsisfun.com]]
