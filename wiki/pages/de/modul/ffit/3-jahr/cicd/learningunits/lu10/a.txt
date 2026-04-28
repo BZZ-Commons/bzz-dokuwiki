@@ -1,0 +1,76 @@
+====== LU10a - Statische Webseiten veröffentlichen (Nachtrag) ======
+
+==== Definitionen / Unterscheidung ====
+
+| <WRAP> **Browser**
+  * Applikation, um Webinhalte (HTML, CSS, JS) darzustellen
+</WRAP> | <WRAP> **Webserver**
+  * Nimmt HTTP(S)-Requests entgegen und liefert Antworten zurück an den Browser
+  * Die Inhalte können statisch oder dynamisch sein
+</WRAP> |
+
+| <WRAP> **Frontend**
+  * Der Teil der Webseite, der an den Aufrufer ausgeliefert wird und im Browser läuft 
+</WRAP> | <WRAP>**Backend**
+  * Läuft auf dem Server und verarbeitet Anfragen
+  * Stellt Daten oder Funktionen über APIs bereit
+</WRAP> |
+
+| <WRAP> **Statische Webseite**
+  * Besteht aus fertigen Dateien (HTML, CSS, JS), die direkt ausgeliefert werden
+</WRAP> | <WRAP> **Dynamische Webseite**
+  * Inhalte werden abhängig vom Request zur Laufzeit erzeugt (.php-> .html, ...)
+</WRAP> |
+
+==== Static vs dynamic hosting ====
+
+Ob etwas statisch deploybar ist, hängt nicht von den Features ab, sondern davon, ob der Server zur Laufzeit am Rendering beteiligt ist.
+
+Es ist also eine Architekturfrage, ob man Server-Side-Rendering (SSR) einsetzt oder nicht.
+
+Salopp gesagt, können die meisten Webapplikationen in ein statisches Frontend und ein (allfälliges) dynamisches Backend aufgeteilt werden.
+
+Statische Webseiten sind möglich bei
+  * Vanilla
+  * Angular
+  * React
+  * Vite
+  * Astro (default)
+
+Ausnahmen sind 
+  * PHP
+      * .php
+  * Next.js mit API/SSR
+      * getServerSideProps
+      * Routing (route.js, route.ts, "/api/*")
+      * NextResponse
+      * cookies()
+      * headers()
+  * Express mit Templates
+      * .ejs
+      * .pug
+      * .hbs
+
+==== Next.js ====
+
+''next.config.js''
+<code javascript>
+const nextConfig = {
+  output: 'export',
+};
+
+module.exports = nextConfig;
+</code>
+
+Nach dem erfolgreichen Ausführen von folgendem Befehl, sind die fertigen Dateien unter ''/out'' verfügbar.
+<code bash>
+npm run build
+</code>
+
+<code bash>
+npx serve out
+</code>
+
+Mögliche Fehler:
+  * „Route Handlers are not supported with output: export“
+  * „Dynamic server usage“
